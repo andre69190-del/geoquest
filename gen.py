@@ -5480,6 +5480,20 @@ function updateOrientationWarning(){
   ow.style.display=(isPortrait&&isMapMode)?"flex":"none";
   const txt=ow.querySelector(".gq-ow-txt");if(txt)txt.textContent=t("rotate_device");
 }
+function renderBottomNav(){
+  const tabs = [
+    {id:"home",icon:"🏠",label:"Home"},
+    {id:"lernen",icon:"📚",label:"Lernen"},
+    {id:"liga",icon:"🏆",label:"Liga"},
+    {id:"profil",icon:"👤",label:"Profil"},
+    {id:"album",icon:"📷",label:"Album"}
+  ];
+  return '<div class="bottom-nav">' + tabs.map(t => {
+    const active = S.tab === t.id ? " active" : "";
+    return '<button class="bn-item' + active + '" onclick="S.tab=\''+t.id+'\';render()"><span class="bn-icon">'+t.icon+'</span><span class="bn-lbl">'+t.label+'</span></button>';
+  }).join('') + '</div>';
+}
+
 function render(){
   updateHdrGuest();
   const app=document.getElementById("app");
