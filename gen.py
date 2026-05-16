@@ -2411,7 +2411,7 @@ function getCountryName(cc,lang){
 /* displayCountry(name) – translate country display name for current language */
 function displayCountry(cc){
   if(!cc||typeof cc!=="string")return cc||"";
-  const co=COUNTRIES.find(c=>c.cc===cc);
+  const co=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc));
   if(!co)return cc;
   const lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
   try { return getCountryName(cc,lang) || co.c; } catch(e) { return co.c; }
@@ -5248,7 +5248,7 @@ function showPtsPopup(pts){const el=document.createElement("div");el.className="
 function showStampToast(cc){
   clearTimeout(toastTo);const old=document.getElementById("stamp-toast");if(old)old.remove();
   const el=document.createElement("div");el.id="stamp-toast";el.className="stamp-toast";
-  const cn=COUNTRIES.find(c=>c.cc===cc)?.c||cc.toUpperCase();
+  const cn=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc))?.c||cc.toUpperCase();
   el.innerHTML=`<img src="https://flagcdn.com/w40/${cc}.png" style="width:22px;height:auto;border-radius:2px"> Neuer Stempel: ${cn}`;
   document.body.appendChild(el);soundStamp();toastTo=setTimeout(()=>el.remove(),3000);
 }
@@ -5288,7 +5288,7 @@ function updateHdrGuest(){
   if(hdr)hdr.innerHTML=`<span class="g-logo">GEO<span>QUEST</span></span><div class="g-stats">${_uname?`<span class="g-stat" style="color:#10b981">\uD83D\uDC64 ${esc(_uname)}</span>`:""}<span class="g-stat">\u{1F525} ${S.st}</span><span class="g-stat">\u{1F4B0} ${(sbProfile?.geo_coins||0).toLocaleString()}</span><button class="hdr-gear" onclick="S.settingsModal=!S.settingsModal;render()" title="Einstellungen">\u2699\ufe0f</button></div>`;
 }
 function stampHtml(cc,rank,rot){
-  const cn=COUNTRIES.find(c=>c.cc===cc)?.c||cc.toUpperCase();
+  const cn=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc))?.c||cc.toUpperCase();
   return `<div class="stamp-cell" onclick="S.modal='${cc}';render()" title="${cn}"><div class="stamp-ink ${rank}" style="transform:rotate(${rot}deg)"><img class="stamp-flag" src="https://flagcdn.com/w40/${cc}.png" alt="${cn}"><span>${cc.toUpperCase()}</span></div></div>`;
 }
 
@@ -5571,7 +5571,7 @@ app.innerHTML=`<div class="scr">
     const isGuest=sbOK&&\!sbProfile?.username;
     const mastery=loadMastery();const totalStamps=Object.values(mastery).filter(m=>getMasteryRank(m.v,m.p)).length;
     const stampBanners=S.newStamps.map(({cc,rank})=>{
-      const cn=COUNTRIES.find(c=>c.cc===cc)?.c||cc.toUpperCase();
+      const cn=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc))?.c||cc.toUpperCase();
       const rl={gold:"\u{1F947} Gold-Stempel",silver:"\u{1F948} Silber-Stempel",bronze:"\u{1F949} Bronze-Stempel"}[rank]||"Stempel";
       return`<div class="new-stamp-banner"><img src="https://flagcdn.com/w40/${cc}.png" style="width:28px;height:auto;border-radius:3px"><div><div style="color:#34d399;font-weight:900;font-size:.88rem">NEUER STEMPEL\!</div><div style="color:var(--text2);font-size:.78rem">${rl} \u2022 ${cn}</div></div></div>`;
     }).join("");
