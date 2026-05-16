@@ -4350,7 +4350,7 @@ function genPlateQ(hardcore){
   const disPool=sameCountry.length>=3?sameCountry:pool.filter(p=>p.region\!==cor.region);
   const picked=sh([...disPool]).slice(0,3).map(p=>p.region);
   const opts=sh([cor.region,...picked]);
-  const cc_map={Deutschland:"de",Ã–sterreich:"at",Schweiz:"ch",Polen:"pl",Frankreich:"fr",Italien:"it",RumÃ¤nien:"ro"};
+  const cc_map={"Deutschland":"de","Österreich":"at","Schweiz":"ch","Polen":"pl","Frankreich":"fr","Italien":"it","Rumänien":"ro"};
   const cc=cc_map[cor.country]||"de";
   return{
     type:hardcore?"plate_hard":"plate_casual",
@@ -8451,38 +8451,6 @@ print(f'Written: {len(HTML):,} chars â†’ {out}')
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print('Also written \u2192 index.html (Netlify deploy target)')
-
-# PHASE 181a: Event Delegation System
-js += '''
-// ============================================================================
-// PHASE 181a: DECLARATIVE EVENT DELEGATION SYSTEM (ANTI-CHEAT SECURED)
-// ============================================================================
-function handleQuizButtonClickDelegated(event){
-  const btn=event.target.closest('[data-quiz-answer]');
-  if(!btn) return;
-  event.preventDefault();
-  event.stopPropagation();
-  const selectedIdx=parseInt(btn.dataset.quizAnswer);
-  const quizType=btn.closest('[data-quiz-type]')?.dataset.quizType||'unknown';
-  if(S.isProcessing) return;
-  S.isProcessing=true;
-  try{
-    // Nutze den sicheren Index-Check aus Phase 171 statt der geloeschten Variable!
-    const isCorrect = validateAnswerByIndex(selectedIdx);
-    switch(quizType){
-      case 'food':case 'climate':case 'landmark':case 'versus':case 'logic-grid':case 'travel-route':case 'flag-fusion':
-        if(isCorrect){S.correct++;S.score+=15;}else{S.score-=5;}
-        break;
-      default:return;
-    }
-    showMessage(isCorrect?'Richtig!':'Falsch!');
-    setTimeout(function(){startNextRound();},1500);
-  }finally{
-    setTimeout(function(){S.isProcessing=false;},600);
-  }
-}
-document.addEventListener('click',handleQuizButtonClickDelegated);
-'''
 
 
 
