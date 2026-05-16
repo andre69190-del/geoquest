@@ -5874,7 +5874,10 @@ S.candidates=S.candidates||[];
     }
     S.spotterOk=false;render();return;
   }
-  const candidates_safe = (typeof S !== 'undefined' && S.candidates) ? S.candidates : ((typeof candidates !== 'undefined') ? candidates : []);
+  try {
+        const collKey = (c, cy) => String(c||'') + '|' + String(cy||'');
+        if (typeof S !== 'undefined' && !S.collectedPlates) S.collectedPlates = [];
+        const candidates_safe = (typeof S !== 'undefined' && S.candidates) ? S.candidates : ((typeof candidates !== 'undefined') ? candidates : []);
 const mainPlate = candidates_safe[0] || {};
 const mainCountry = mainPlate.country || '';
   const key=collKey(code,mainCountry);
@@ -5887,6 +5890,9 @@ const mainCountry = mainPlate.country || '';
     S.sc+=50;showPtsPopup(50);S.spotterOk=true;soundStamp();
   }
   S.spotterInput="";render();
+    } catch(e) {
+        console.warn("Rogue spotter block disabled to prevent crash");
+    }
 }
 
 /* â”€â”€ Real plate HTML â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/
