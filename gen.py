@@ -4196,19 +4196,20 @@ function distractors(pool,matchFn,excludeFn,keyFn,n=2){
 /* GENERATORS */
 function genCityQ(){
   const pf=S.diff==="hardcore"?0:200000;
-  let pool=_rfilt(CITIES.filter(c=>c.pop>=pf&&c.id\!==S.lid),3); if(pool.length<3) pool=CITIES.filter(c=>c.pop>=pf&&c.id\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(CITIES.filter(c=>c.pop>=pf&&c.id\!==S.lid),3); if(pool.length<3) pool=CITIES.filter(c=>c.pop>=pf&&c.id\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.sub===cor.sub||x.cont===cor.cont,x=>x.c===cor.c,x=>x.c);
+  console.log("🔴 DEBUG genCityQ pool.length:", pool ? pool.length : 0, "pf:", pf);
   return{type:"city",prompt:t("q_city"),subj:cor.n,ans:cor.c,opts:sh([cor.c,...dis]),meta:cor.cont+" \u00b7 "+(cor.pop/1e6).toFixed(1)+" Mio.",lid:cor.id,cc:cor.cc};
 }
 function genFlagQ(){
-  let pool=_rfilt(COUNTRIES.filter(x=>x.cc\!==S.lid),3); if(pool.length<3) pool=COUNTRIES.filter(x=>x.cc\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(COUNTRIES.filter(x=>x.cc\!==S.lid),3); if(pool.length<3) pool=COUNTRIES.filter(x=>x.cc\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.sr===cor.sr||x.ct===cor.ct,x=>x.c===cor.c,x=>x.c);
   return{type:"flag",prompt:t("q_flag"),subj:cor.cc,ans:cor.c,opts:sh([cor.c,...dis]),meta:cor.ct,lid:cor.cc,cc:cor.cc};
 }
 function genCapitalQ(){
-  let pool=_rfilt(CAPITALS.filter(x=>x.capital\!==S.lid),3); if(pool.length<3) pool=CAPITALS.filter(x=>x.capital\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(CAPITALS.filter(x=>x.capital\!==S.lid),3); if(pool.length<3) pool=CAPITALS.filter(x=>x.capital\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.country===cor.country,x=>x.country);
   return{type:"capital",prompt:t("q_capital"),subj:cor.capital,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.capital,cc:cor.cc};
@@ -4231,37 +4232,37 @@ function _rfilt(pool,minLen){
   return f.length>=minLen?f:pool;
 }
 function genRiverQ(){
-  let pool=_rfilt(RIVERS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=RIVERS.filter(x=>x.name\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(RIVERS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=RIVERS.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>x.c);
   return{type:"river",prompt:t("q_river"),subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
 }
 function genLandmarkQ(){
-  let pool=_rfilt(LANDMARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=LANDMARKS.filter(x=>x.name\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(LANDMARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=LANDMARKS.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>x.c);
   return{type:"landmark",prompt:t("q_landmark"),subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
 }
 function genParkQ(){
-  let pool=_rfilt(NATIONAL_PARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=NATIONAL_PARKS.filter(x=>x.name\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(NATIONAL_PARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=NATIONAL_PARKS.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>x.c);
   return{type:"park",prompt:t("q_park"),subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
 }
 function genUnescoQ(){
-  let pool=_rfilt(UNESCO_SITES.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=UNESCO_SITES.filter(x=>x.name\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(UNESCO_SITES.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=UNESCO_SITES.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>x.c);
   return{type:"unesco",prompt:t("q_unesco"),subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
 }
 function genCitymarkQ(){
-  let pool=_rfilt(CITY_LANDMARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=CITY_LANDMARKS.filter(x=>x.name\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(CITY_LANDMARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=CITY_LANDMARKS.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.city===cor.city,x=>x.city);
   return{type:"citymark",prompt:t("q_citymark"),subj:cor.name,ans:cor.city,opts:sh([cor.city,...dis]),meta:cor.country,lid:cor.name,cc:cor.cc};
 }
 function genSubwayQ(){
-  let pool=_rfilt(SUBWAYS.filter(x=>x.city\!==S.lid),3); if(pool.length<3) pool=SUBWAYS.filter(x=>x.city\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(SUBWAYS.filter(x=>x.city\!==S.lid),3); if(pool.length<3) pool=SUBWAYS.filter(x=>x.city\!==S.lid); if(pool.length<1) return null;
   const t=Math.floor(rng()*2);
   const cor=pool[~~(rng()*pool.length)];
   const dis3=distractors(pool,x=>x.country===cor.country||x.cc===cor.cc,x=>x.city===cor.city,x=>t===0?x.km:x.lines,2);
@@ -4277,13 +4278,13 @@ function genFlagselQ(){
   return{type:"flagsel",prompt:t("q_flagsel"),subj:cor.c,ans:cor.cc,opts:sh([cor.cc,...dis]),meta:cor.ct,lid:cor.cc,cc:cor.cc};
 }
 function genRcapitalQ(){
-  let pool=_rfilt(CAPITALS.filter(x=>x.country\!==S.lid),3); if(pool.length<3) pool=CAPITALS.filter(x=>x.country\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(CAPITALS.filter(x=>x.country\!==S.lid),3); if(pool.length<3) pool=CAPITALS.filter(x=>x.country\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.capital===cor.capital,x=>x.capital);
   return{type:"rcapital",prompt:t("q_rcapital"),subj:cor.country,ans:cor.capital,opts:sh([cor.capital,...dis]),meta:cor.continent,lid:cor.country,cc:cor.cc};
 }
 function genRcityQ(){
-  let pool=_rfilt(COUNTRIES.filter(x=>x.c\!==S.lid),3); if(pool.length<3) pool=COUNTRIES.filter(x=>x.c\!==S.lid); if(pool.length<3) return null;
+  let pool=_rfilt(COUNTRIES.filter(x=>x.c\!==S.lid),3); if(pool.length<3) pool=COUNTRIES.filter(x=>x.c\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const cc2=CITIES.filter(c=>c.c===cor.c);if(\!cc2.length)return genRcityQ();
   const corCity=cc2[~~(rng()*cc2.length)];
