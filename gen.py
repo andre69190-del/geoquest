@@ -3360,7 +3360,7 @@ function mpCreate(){
       S.mp.phase="ready";
       render();
       /* Acknowledge the join */
-      mpSend("host_ack",{name:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||"Host"});
+      mpSend("host_ack",{name:sbProfile?.username||"Host"});
     })
     .on("broadcast",{event:"player_ready"},({payload})=>{
       mpLog("guest ready");
@@ -3410,7 +3410,7 @@ function mpJoin(code){
     .subscribe((status)=>{
       mpLog("guest channel status:",status);
       if(status==="SUBSCRIBED"){
-        mpSend("player_joined",{name:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||"Spieler"});
+        mpSend("player_joined",{name:sbProfile?.username||"Spieler"});
         render();
       }
     });
@@ -3419,7 +3419,7 @@ function mpJoin(code){
 /* Ready button */
 function mpReady(){
   S.mp.myReady=true;render();
-  mpSend("player_ready",{name:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||"Ich"});
+  mpSend("player_ready",{name:sbProfile?.username||"Ich"});
   /* Host: if guest was already ready */
   if(S.mp.role==="host"&&S.mp.oppReady){
     const seed=~~(Math.random()*1e9);
@@ -3830,7 +3830,7 @@ async function loadProfile(){
     .catch(e=>console.warn("[GQ] evaluateWeeklyLeague error:",e?.message||e));
 }
 /* Helper: get display name */
-function getDisplayName(){return (typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||localStorage.getItem("gq_username")||null;}
+function getDisplayName(){return sbProfile?.username||localStorage.getItem("gq_username")||null;}
 
 async function saveUsername(n){
   if(!n.trim())return;
@@ -4016,11 +4016,11 @@ async function saveSession(mode,score,bs,correct,durationMs){
   /* Phase 33 Teil 2: notify opponent at game end */
   if(window.mpGameCh&&S.mpOpponent){
     window.mpGameCh.send({type:"broadcast",event:"game_over",
-      payload:{score,name:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||"Ich",correct}}).then(()=>{},()=>{});
+      payload:{score,name:sbProfile?.username||"Ich",correct}}).then(()=>{},()=>{});
     window.mpGameCh=null;
   }
   if(!sb||!sbUser?.id)return;
-  await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||null});
+  await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:sbProfile?.username||null});
   /* Use RPC to prevent client-side score tampering */
   await sb.rpc("add_score",{p_user_id:sbUser.id,p_score:score,p_coins:Math.floor(score/100),p_rounds:ROUNDS,p_duration_ms:durationMs||0});
   if(sbProfile){sbProfile.total_score=(sbProfile.total_score||0)+score;sbProfile.games_played=(sbProfile.games_played||0)+1;}
@@ -5010,12 +5010,12 @@ const correctClimate=correctData.climate;
 const correctKeywords=getClimateKeywords(correctClimate);
 const allCodes=Object.keys(globalCultureData);
 // First pass: Get same region + climate match
-const candidates=allCodes?allCodes.filter(code=>{
+const candidates=allCodes.filter(code=>{
 if(code===correctCode)return false;
 const data=globalCultureData[code];
 if(!hasClimateMatch(correctClimate,data.climate))return false;
 return true;
-}):[correctCode];
+});
 // If we have enough candidates with climate match, use them
 if(candidates.length>=count){
 return candidates.sort(()=>Math.random()-0.5).slice(0,count);
@@ -5277,7 +5277,7 @@ function shareGame(){
 }
 function updateHdrGuest(){
   const hdr=document.getElementById("g-hdr");
-  const _uname=(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||localStorage.getItem("gq_username")||null;
+  const _uname=sbProfile?.username||localStorage.getItem("gq_username")||null;
   if(hdr)hdr.innerHTML=`<span class="g-logo">GEO<span>QUEST</span></span><div class="g-stats">${_uname?`<span class="g-stat" style="color:#10b981">\uD83D\uDC64 ${esc(_uname)}</span>`:""}<span class="g-stat">\u{1F525} ${S.st}</span><span class="g-stat">\u{1F4B0} ${(sbProfile?.geo_coins||0).toLocaleString()}</span><button class="hdr-gear" onclick="S.settingsModal=!S.settingsModal;render()" title="Einstellungen">\u2699\ufe0f</button></div>`;
 }
 function stampHtml(cc,rank,rot){
@@ -5480,38 +5480,7 @@ function updateOrientationWarning(){
   ow.style.display=(isPortrait&&isMapMode)?"flex":"none";
   const txt=ow.querySelector(".gq-ow-txt");if(txt)txt.textContent=t("rotate_device");
 }
-function renderBottomNav(){
-  const tabs = [
-    {id:"home",icon:"🏠",label:"Home"},
-    {id:"lernen",icon:"📚",label:"Lernen"},
-    {id:"liga",icon:"🏆",label:"Liga"},
-    {id:"profil",icon:"👤",label:"Profil"},
-    {id:"album",icon:"📷",label:"Album"}
-  ];
-  return '<div class="bottom-nav">' + tabs.map(t => {
-    const active = S.tab === t.id ? " active" : "";
-    return '<button class="bn-item' + active + '" onclick="S.tab=\''+t.id+'\';render()"><span class="bn-icon">'+t.icon+'</span><span class="bn-lbl">'+t.label+'</span></button>';
-  }).join('') + '</div>';
-}
-
-function renderBottomNav(){
-  const tabs = [
-    {id:"home",icon:"🏠",label:"Home"},
-    {id:"lernen",icon:"📚",label:"Lernen"},
-    {id:"liga",icon:"🏆",label:"Liga"},
-    {id:"profil",icon:"👤",label:"Profil"},
-    {id:"album",icon:"📷",label:"Album"}
-  ];
-  return '<div class="bottom-nav">' + tabs.map(t => {
-    const active = S.tab === t.id ? " active" : "";
-    return '<button class="bn-item' + active + '" onclick="S.tab=\''+t.id+'\';render()"><span class="bn-icon">'+t.icon+'</span><span class="bn-lbl">'+t.label+'</span></button>';
-  }).join('') + '</div>';
-}
-
 function render(){
-    /* ENCAPSULATION GUARD */
-    let candidates = (typeof S !== "undefined" && S && S.candidates) ? S.candidates : [];
-S.candidates=S.candidates||[];
   updateHdrGuest();
   const app=document.getElementById("app");
   if(\!app)return;
@@ -5592,7 +5561,7 @@ S.candidates=S.candidates||[];
     const _gThr=S.diff==="hardcore"?[350,280,200,100]:S.diff==="survival"?[300,150,70,30]:[96,80,60,30];const g=S.sc>=_gThr[0]?"S":S.sc>=_gThr[1]?"A":S.sc>=_gThr[2]?"B":S.sc>=_gThr[3]?"C":"D";
     const gc={S:"#fbbf24",A:"#34d399",B:"#60a5fa",C:"#fb923c",D:"#f87171"}[g];
     const ml=modeTitle(MODES.find(m=>m.id===S.mode))||"";const mm=isSurv?2:S.diff==="hardcore"?3:1;
-    const isGuest=sbOK&&\!(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null);
+    const isGuest=sbOK&&\!sbProfile?.username;
     const mastery=loadMastery();const totalStamps=Object.values(mastery).filter(m=>getMasteryRank(m.v,m.p)).length;
     const stampBanners=S.newStamps.map(({cc,rank})=>{
       const cn=COUNTRIES.find(c=>c.cc===cc)?.c||cc.toUpperCase();
@@ -5818,7 +5787,10 @@ S.candidates=S.candidates||[];
             else if(cc === sel) cls += " ng";
             else cls += " dm";
         }
-        return '<button class="' + cls + '" onclick="checkAns(&quot;' + cc + '&quot;)"><img src="https://flagcdn.com/h80/' + cc.toLowerCase() + '.png" style="max-height:50px; border-radius:4px; pointer-events:none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></button>';
+        // Wandelt ISO Code (z.B. DE) in Emoji Flagge um
+        const getFlagEmoji = (countryCode) => countryCode.toUpperCase().replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397));
+
+        return '<button class="' + cls + '" onclick="checkAns(&quot;' + cc + '&quot;)" style="font-size: 3rem; line-height: 1; padding: 10px;">' + getFlagEmoji(cc) + '</button>';
     }).join('');
     answerHtml = '<div class="flag-grid">' + fb2 + '</div>';
 }else{
@@ -5858,41 +5830,296 @@ S.candidates=S.candidates||[];
     }
   }
   let fb="";
-  if(S.ph==="feedback"){const cls=ok?"fb ok":"fb ng";let al=q.ans;if(q.type==="flagsel"){
-    const fb2 = q.opts.map(cc => {
-        let cls = "btn-base";
-        if(typeof sel !== 'undefined' && sel !== null){
-            if(cc === q.ans) cls += " ok";
-            else if(cc === sel) cls += " ng";
-            else cls += " dm";
-        }
-        return '<button class="' + cls + '" onclick="checkAns(&quot;' + cc + '&quot;)"><img src="https://flagcdn.com/h80/' + cc.toLowerCase() + '.png" style="max-height:50px; border-radius:4px; pointer-events:none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></button>';
-    }).join('');
-    answerHtml = '<div class="flag-grid">' + fb2 + '</div>';
-}else{
+  if(S.ph==="feedback"){const cls=ok?"fb ok":"fb ng";let al=q.ans;if(q.type==="flagsel"){const co=COUNTRIES.find(c=>c.cc===q.ans);al=co?co.c:q.ans;}const al_d=displayCountry(al);const msg=ok?t("fb_correct",{pts}):sel==="__t"?t("fb_time",{ans:al_d}):t("fb_wrong",{ans:al_d});fb=`<div class="${cls}">${msg}</div>${plateReveal}`;}
+  /* Power-up bar (Phase 26) */
+  const pu=loadPU();
+  /* P136-fix: 50/50 disabled for comp_ modes -- pre-declared vars, no nested escaping */
+  const _is2ans=S.q&&S.q.type&&S.q.type.startsWith('comp_');
+  const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
+  const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
+  const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';
+  const puBar=`<div class="pu-bar">
+    <button class="pu-btn${S.half_removed?" pu-used":""}" onclick="useFiveO()" ${(S.half_removed||(pu.five0||0)===0||_is2ans)?"disabled":""} style="${_j5sty}" title="${_j5title}">\u2702 50/50 <span style="font-size:.62rem">${_j5label}</span></button>
+    <button class="pu-btn${S.freezeActive?" freeze-on":""}" onclick="useFreeze()" ${(S.freezeActive||(pu.freeze||0)===0)?"disabled":""} title="Zeit-Stopp (${pu.freeze||0} \u00fcbrig)">\u{1F9CA} Freeze <span style="font-size:.62rem">(${pu.freeze||0})</span></button>
+  </div>`;
+  app.innerHTML=`<div class="scr">
+    <div class="hud">
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
+        ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        ${diff==="survival"
+          ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
+          :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
+        <button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">\u00d7</button>
+      </div>
+    </div>
+    ${S.mpOpponent?`<div class="duell-bar-wrap"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
+    ${st>=3?`<div style="text-align:center;font-size:.76rem;font-weight:700;color:#fb923c;margin-bottom:6px">${_tr.l}</div>`:""}
+    <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
+    <div class="qcard">${qBody}<div class="qtimer" style="color:${col}">${tm}</div></div>
+    ${sel===null?puBar:""}
+    ${answerHtml}${fb}
+  </div>`;
+  /* Phase 35: draw country outline after DOM update */
+  if(q.type==="outline")requestAnimationFrame(()=>drawCountryOutline(q.subj,"gq-outline-svg"));
+}
+
+/* Phase 35: draw single-country D3 silhouette for outline mode */
+function drawCountryOutline(cc,targetId){
+  const el=document.getElementById(targetId);
+  if(\!el)return;
+  if(typeof d3==='undefined'||typeof topojson==='undefined'||\!window.WORLD_TOPO){
+    el.innerHTML='<span style="font-size:3rem">'+cc.toUpperCase()+'</span>';
+    return;
+  }
+  const countries=topojson.feature(window.WORLD_TOPO,window.WORLD_TOPO.objects.countries);
+  /* Map cc to TopoJSON name via MAP_COUNTRIES */
+  const entry=MAP_COUNTRIES.find(x=>x.cc===cc);
+  if(\!entry){el.innerHTML='<span style="font-size:1rem;color:var(--text3)">?</span>';return;}
+  const feat=countries.features.find(f=>f.properties.name===entry.name);
+  if(\!feat){el.innerHTML='<span style="font-size:1rem;color:var(--text3)">?</span>';return;}
+  const W=el.clientWidth||200,H=el.clientHeight||140;
+  const proj=d3.geoMercator().fitSize([W,H],feat);
+  const path=d3.geoPath().projection(proj);
+  d3.select(el).html('').append('svg')
+    .attr('width','100%').attr('height','100%')
+    .attr('viewBox',`0 0 ${W} ${H}`)
+    .append('path')
+    .datum(feat)
+    .attr('d',path)
+    .attr('fill','var(--text,#1e293b)')
+    .attr('stroke','none');
+}
+
+
+/* Phase 34 – D3 World Map component */
+function drawWorldMap(targetName,sel,ok){
+  const container=document.getElementById('gq-map-svg');
+  if(\!container||typeof d3==='undefined'||typeof topojson==='undefined'){
+    if(container)container.innerHTML='<p style="color:var(--text3);text-align:center;padding:2rem">'+t('map_unavail')+'</p>';
+    return;
+  }
+  if(\!window.WORLD_TOPO){
+    container.innerHTML='<p style="color:var(--text3);text-align:center;padding:2rem">'+t('map_loading')+'</p>';
+    return;
+  }
+  const W=container.clientWidth||(window.innerWidth||360),H=Math.min(W*.56,290);
+  const svg=d3.select(container).html('').append('svg')
+    .attr('width','100%').attr('height',H)
+    .attr('viewBox',`0 0 ${W} ${H}`)
+    .style('background','var(--bg2)');
+
+  const proj=d3.geoNaturalEarth1().scale(W/6.2).translate([W/2,H/2]);
+  const path=d3.geoPath().projection(proj);
+  const countries=topojson.feature(window.WORLD_TOPO,window.WORLD_TOPO.objects.countries);
+
+  const g=svg.append('g');
+
+  /* Zoom + pan */
+  const zoom=d3.zoom().scaleExtent([1,10])
+    .on('zoom',ev=>{
+      if(sel\!==null)return; /* lock zoom during feedback so user sees the result */
+      g.attr('transform',ev.transform);
+    });
+  svg.call(zoom);
+
+  /* Sphere backdrop */
+  g.append('path').datum({type:'Sphere'}).attr('d',path)
+    .attr('fill','#bfdbfe').attr('stroke','none');
+
+  /* Country paths */
+  g.selectAll('path.ctry')
+    .data(countries.features)
+    .enter().append('path')
+    .attr('class','ctry')
+    .attr('d',path)
+    .attr('data-n',d=>d.properties.name)
+    .attr('fill',d=>{
+      const n=d.properties.name;
+      if(sel\!==null){
+        if(n===targetName)return'#10b981';
+        if(n===sel&&\!ok)return'#ef4444';
+        return'#d1d5db';
+      }
+      return'var(--bg3,#e2e8f0)';
+    })
+    .attr('stroke','var(--border,#94a3b8)')
+    .attr('stroke-width',.35)
+    .on('mouseover',function(_,d){
+      if(sel\!==null)return;
+      d3.select(this).attr('fill','#93c5fd');
+    })
+    .on('mouseout',function(_,d){
+      if(sel\!==null)return;
+      d3.select(this).attr('fill','var(--bg3,#e2e8f0)');
+    })
+    .on('click',function(ev,d){
+      if(sel\!==null)return;
+      ev.stopPropagation();
+      answer(d.properties.name);
+    });
+
+  /* Pulse correct country after feedback */
+  if(sel\!==null){
+    const cp=g.selectAll('path.ctry').filter(d=>d.properties.name===targetName);
+    let n=ok?2:4;
+    function pulse(){
+      if(n--<=0)return;
+      cp.transition().duration(300).attr('fill','#6ee7b7')
+        .transition().duration(300).attr('fill','#10b981').on('end',pulse);
+    }
+    pulse();
+    /* Zoom to correct country */
+    const feat=countries.features.find(d=>d.properties.name===targetName);
+    if(feat){
+      const[[x0,y0],[x1,y1]]=path.bounds(feat);
+      const cw=x1-x0,ch=y1-y0;
+      const s=Math.max(1,Math.min(8,.8/Math.max(cw/W,ch/H)));
+      const tx=W/2-(x0+x1)/2*s,ty=H/2-(y0+y1)/2*s;
+      svg.transition().duration(700)
+        .call(zoom.transform,d3.zoomIdentity.translate(tx,ty).scale(s));
+    }
+  }
+}
+
+
+/* BOTTOM NAV */
+function renderBottomNav(){
+  const tabs=[
+    {id:"home",   icon:"\u{1F3E0}", lbl:"Home"},
+    {id:"lernen", icon:"\u{1F4DA}", lbl:"Lernen"},
+    {id:"liga",   icon:"\u{1F3C6}", lbl:"Liga"},
+    {id:"profil", icon:"\u{1F464}", lbl:"Profil"},
+    {id:"album",  icon:"\u{1F4D4}", lbl:"Album"},
+  ];
+  return`<nav class="bottom-nav">${tabs.map(t=>`<button class="bn-item${S.tab===t.id?" active":""}" onclick="S.tab='${t.id}';render()"><span class="bn-icon">${t.icon}</span><span class="bn-lbl">${t.lbl}</span></button>`).join("")}</nav>`;
+}
+
+
+/* â”€â”€â”€ Phase 43: Kennzeichen-Album â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+/* Country name →’ English for world-110m matching */
+const PLATE_COUNTRY_EN={
+  "Deutschland":"Germany","ß–sterreich":"Austria","Frankreich":"France",
+  "Italien":"Italy","Spanien":"Spain","Polen":"Poland","Tschechien":"Czechia",
+  "Ungarn":"Hungary","Schweiz":"Switzerland","Belgien":"Belgium",
+  "Niederlande":"Netherlands","Dänemark":"Denmark","Schweden":"Sweden",
+  "Norwegen":"Norway","Finnland":"Finland","Portugal":"Portugal",
+  "Griechenland":"Greece","Rumänien":"Romania","Bulgarien":"Bulgaria",
+  "Kroatien":"Croatia","Slowenien":"Slovenia","Slowakei":"Slovakia",
+  "Luxemburg":"Luxembourg","Irland":"Ireland","Litauen":"Lithuania",
+  "Lettland":"Latvia","Estland":"Estonia","Zypern":"Cyprus","Malta":"Malta",
+  "Vereinigtes Königreich":"United Kingdom","Russland":"Russia",
+  "Türkei":"Turkey","Ukraine":"Ukraine","Serbien":"Serbia",
+  "Bosnien und Herzegowina":"Bosnia and Herzegovina"
+};
+function plateCountryToEn(c){return PLATE_COUNTRY_EN[c]||c;}
+
+/* â”€â”€ Collection key helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   collectedPlates stores "CODE::Country" keys to handle cross-country dups
+   e.g. "HD::Germany" and "HD::Romania" are separate entries
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+function collKey(code,country){return code+"::"+country;}
+function parseCollKey(k){const i=k.indexOf("::");return i<0?{code:k,country:"?"}:{code:k.slice(0,i),country:k.slice(i+2)};}
+function isCollected(code,country){return S.collectedPlates.includes(collKey(code,country));}
+
+/* Migrate old plain-code format →’ code::country */
+function migrateCollectedPlates(){
+  if(\!PLATES_DATA.length)return;
+  let changed=false;
+  S.collectedPlates=S.collectedPlates.map(entry=>{
+    if(entry.includes("::"))return entry; /* already new format */
+    const code=entry.toUpperCase();
+    const matches=[...new Set(PLATES_DATA.filter(p=>p.code===code).map(p=>p.country))];
+    if(matches.length===1){changed=true;return collKey(code,matches[0]);}
+    if(matches.length>1){changed=true;return collKey(code,matches[0]);} /* take first if ambiguous */
+    return null; /* unknown code – discard */
+  }).filter(Boolean);
+  /* Deduplicate */
+  S.collectedPlates=[...new Set(S.collectedPlates)];
+  if(changed)saveCollectedPlates(S.collectedPlates);
+}
+
+/* â”€â”€ Unique deduped plate view per country â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   PLATES_DATA may have 61 rows for "HD" in Germany (61 municipalities).
+   We want ONE entry per code per country in the album.
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+function getUniquePlatesForCountry(country){
+  /* Returns [{code, mainRegion, extraCount}] – one entry per unique code */
+  const codeMap={};
+  PLATES_DATA.filter(p=>p.country===country).forEach(p=>{
+    if(\!codeMap[p.code])codeMap[p.code]={code:p.code,mainRegion:p.region,count:0};
+    codeMap[p.code].count++;
+  });
+  return Object.values(codeMap).sort((a,b)=>a.code.localeCompare(b.code));
+}
+
+/* Total unique code::country combos (= album size) */
+function totalUniquePlates(){
+  const seen=new Set();
+  PLATES_DATA.forEach(p=>seen.add(collKey(p.code,p.country)));
+  return seen.size;
+}
+
+/* â”€â”€ Spotter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/
+function spotterCollect(){
+  const code=(S.spotterInput||"").toUpperCase().trim();
+  if(\!code){S.spotterMsg="Bitte Kennzeichen eingeben\!";S.spotterOk=null;render();return;}
+  const country=S.spotterCountry&&S.spotterCountry\!=="all"?S.spotterCountry:null;
+  /* Phase 104: Fuzzy-Lookup – normalisiere zuerst (0→’O, 1→’I) */
+  const _norm=s=>s.replace(/0/g,'O').replace(/1/g,'I').replace(/ßœ/g,'UE').replace(/ß–/g,'OE').replace(/ß„/g,'AE');
+  const codeNorm=_norm(code);
+  /* Find matching plates: exact →’ normalisiert →’ prefix */
+  const _match=(c,p)=>p.code===c&&(country===null||p.country===country);
+  let candidates=PLATES_DATA.filter(p=>_match(code,p));
+  /* Fallback 1: Normalisierung (0→”O, Umlaute) */
+  if(\!candidates.length&&codeNorm\!==code){
+    candidates=PLATES_DATA.filter(p=>_match(codeNorm,p));
+    if(candidates.length)S.spotterInput=codeNorm;
+  }
+  /* Fallback 2: Prefix-Match (min 2 Zeichen) – zeige Vorschläge */
+  let prefixSuggestions=[];
+  if(\!candidates.length&&code.length>=2){
+    prefixSuggestions=[...new Set(
+      PLATES_DATA.filter(p=>(country===null||p.country===country)&&p.code.startsWith(code)&&p.code\!==code)
+        .map(p=>p.code).slice(0,8)
+    )];
+  }
+  if(\!candidates.length){
+    /* Phase 105b: TYPE_COUNTRY – Länder ohne Regionen */
+    if(country){
+      const _cEnt=PLATES_DATA.filter(p=>p.country===country);
+      if(_cEnt.length===1&&_cEnt[0].region==='Nationales Kennzeichen'){
+        S.spotterMsg="â„¹ï¸ "+displayCountry(country)+" "+t("spotter_no_region",{code:_cEnt[0].code});
+        S.spotterOk=false;render();return;
+      }
+    }
+    /* Check if code exists in other countries */
+    const elsewhere=PLATES_DATA.filter(p=>p.code===code||p.code===codeNorm);
+    if(elsewhere.length){
+      const others=[...new Set(elsewhere.map(p=>p.country))].join(", ");
+      S.spotterMsg="â“ '"+esc(code)+"' "+t("spotter_not_in")+" "+(country?displayCountry(country):t("spotter_all"))+" – "+t("spotter_but_in")+": "+esc(others);
+    }else if(prefixSuggestions.length){
+      S.spotterMsg="ðŸ” Meintest du: "+prefixSuggestions.join(", ")+"?";
+    }else{
       S.spotterMsg="âŒ "+t("spotter_unknown")+": "+esc(code);
     }
     S.spotterOk=false;render();return;
   }
-  try {
-        const collKey = (c, cy) => String(c||'') + '|' + String(cy||'');
-        if (typeof S !== 'undefined' && !S.collectedPlates) S.collectedPlates = [];
-        const candidates_safe = (typeof S !== 'undefined' && S.candidates) ? S.candidates : ((typeof candidates !== 'undefined') ? candidates : []);
-const mainPlate = candidates_safe[0] || {};
-const mainCountry = mainPlate.country || '';
+  const mainPlate=candidates[0];
+  const mainCountry=mainPlate.country;
   const key=collKey(code,mainCountry);
   if(S.collectedPlates.includes(key)){
     S.spotterMsg=t("spotter_dup",{code:esc(code),country:displayCountry(mainCountry)});S.spotterOk=null;
   }else{
     S.collectedPlates.push(key);saveCollectedPlates(S.collectedPlates);saveCollectedTs(key,Date.now());
-    const extras=candidates_safe.length-1;
+    const extras=candidates.length-1;
     S.spotterMsg="\u{1F389} "+code+(mainPlate.region?" – "+esc(mainPlate.region):"")+(" ("+esc(displayCountry(mainCountry))+")")+(extras?" +"+extras+" weitere":"")+"\!";
     S.sc+=50;showPtsPopup(50);S.spotterOk=true;soundStamp();
   }
   S.spotterInput="";render();
-    } catch(e) {
-        console.warn("Rogue spotter block disabled to prevent crash");
-    }
 }
 
 /* â”€â”€ Real plate HTML â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/
@@ -6861,8 +7088,8 @@ function renderHomeTab(){
     </div>`;
   }
   /* Dynamic Home Header */
-  const _li=sbUser&&(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null);
-  const _un=(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||(sbUser?.email?.split('@')[0]||'Gast');
+  const _li=sbUser&&sbProfile?.username;
+  const _un=sbProfile?.username||(sbUser?.email?.split('@')[0]||'Gast');
   const _gc=(sbProfile?.geo_coins||0).toLocaleString();
   const _hdr=_li
     ?`<div style="display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
@@ -6989,7 +7216,7 @@ async function loadLiga(){
 /* PROFIL TAB – Auth + Passport + Stats */
 function promptNameChange(){
   if(!sbUser?.email){showToast("Nur für angemeldete Nutzer.");return;}
-  const cur=(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||localStorage.getItem("gq_username")||"";
+  const cur=sbProfile?.username||localStorage.getItem("gq_username")||"";
   const raw=window.prompt("Neuer Benutzername (max. 20 Zeichen):",cur);
   if(raw===null)return; /* Abgebrochen */
   const n=raw.trim().slice(0,20);
@@ -7019,7 +7246,7 @@ function renderProfilTab(){
   const pu=loadPU();
   const history=loadHistory();
   const isAnon=\!sbUser?.email;
-  const hasName=\!\!((typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||localStorage.getItem("gq_username"));
+  const hasName=\!\!(sbProfile?.username||localStorage.getItem("gq_username"));
   const rots=[-12,-8,-5,-3,0,3,5,8,12,15,-15];
   const passGrid=COUNTRIES.map(co=>{const m=mastery[co.cc]||{v:0,p:0};const r=getMasteryRank(m.v,m.p);if(\!r)return`<div class="stamp-cell locked" title="${co.c}"><span>?</span></div>`;const rot=rots[co.cc.charCodeAt(0)%rots.length];return stampHtml(co.cc,r,rot);}).join("");
   const regionBars=REGIONS.map(rg=>{const total=rg.cc.length;const done=rg.cc.filter(cc=>getMasteryRank((mastery[cc]||{v:0}).v,(mastery[cc]||{p:0}).p)).length;const pct2=total>0?Math.round(done/total*100):0;const complete=pct2===100;return`<div class="region-bar"><div class="region-bar-lbl"><span>${rg.name}${complete?` <span style="color:#f59e0b;font-size:.6rem">+500</span>`:""}</span><span>${done}/${total}</span></div><div class="region-bar-track"><div class="region-bar-fill${complete?" done":""}" style="width:${pct2}%"></div></div></div>`;}).join("");
