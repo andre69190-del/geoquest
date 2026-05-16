@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Berlin",
+    "country": "DE",
+    "country_code": "DE"
+  },
+  {
+    "name": "München",
+    "country": "DE",
+    "country_code": "DE"
+  },
+  {
+    "name": "Hamburg",
+    "country": "DE",
+    "country_code": "DE"
+  },
+  {
+    "name": "Walldorf",
+    "country": "DE",
+    "country_code": "DE"
+  },
+  {
+    "name": "Paris",
+    "country": "FR",
+    "country_code": "FR"
+  },
+  {
+    "name": "Rom",
+    "country": "IT",
+    "country_code": "IT"
+  },
+  {
+    "name": "Madrid",
+    "country": "ES",
+    "country_code": "ES"
+  },
+  {
+    "name": "London",
+    "country": "GB",
+    "country_code": "GB"
+  },
+  {
+    "name": "Tokio",
+    "country": "JP",
+    "country_code": "JP"
+  },
+  {
+    "name": "New York",
+    "country": "US",
+    "country_code": "US"
+  },
+  {
+    "name": "Rio de Janeiro",
+    "country": "BR",
+    "country_code": "BR"
+  },
+  {
+    "name": "São Paulo",
+    "country": "BR",
+    "country_code": "BR"
+  },
+  {
+    "name": "Kairo",
+    "country": "EG",
+    "country_code": "EG"
+  },
+  {
+    "name": "Nairobi",
+    "country": "KE",
+    "country_code": "KE"
+  },
+  {
+    "name": "Krakau",
+    "country": "PL",
+    "country_code": "PL"
+  },
+  {
+    "name": "Prag",
+    "country": "CZ",
+    "country_code": "CZ"
+  }
+]
