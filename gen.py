@@ -5494,7 +5494,7 @@ function renderBottomNav(){
   }).join('') + '</div>';
 }
 
-function render(){
+function render(){S.candidates=S.candidates||[];
   updateHdrGuest();
   const app=document.getElementById("app");
   if(\!app)return;
