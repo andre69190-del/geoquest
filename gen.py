@@ -3642,7 +3642,7 @@ function useFreeze(){
     S.freezeActive=false;
     const b2=document.querySelector(".tbar");if(b2)b2.classList.remove("frozen");
     if(S.ph==="playing"&&S.sel===null){
-      if(S.diff==="survival"){tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}else },1000);}
+      if(S.diff==="survival"){tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);}
     }
   },10000);
 }
@@ -4625,7 +4625,7 @@ function lq(){
   S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
   S.half_removed=false;S.freezeActive=false;
   render();
-  tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}else },1000);
+  tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);
 }
 
 /* â”€â”€ Phase 42: Index-based answer dispatch (hides answer strings from DOM) â”€â”€ */
