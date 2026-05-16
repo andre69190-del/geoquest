@@ -4196,7 +4196,7 @@ function distractors(pool,matchFn,excludeFn,keyFn,n=2){
 /* GENERATORS */
 function genCityQ(){
   const pf=S.diff==="hardcore"?0:200000;
-  let pool=_rfilt(CITIES.filter(c=>c.pop>=pf&&c.id\!==S.lid),3); if(pool.length<3) pool=CITIES.filter(c=>c.pop>=pf&&c.id\!==S.lid); if(pool.length<1) return null;
+  let pool=_rfilt(CITIES.filter(c=>c.pop>=pf&&c.id\!==S.lid),3); if(pool.length<3) pool=CITIES.filter(c=>c.pop>=pf&&c.id\!==S.lid); console.log("🔴 DEBUG genCityQ pool.length:", pool.length, "pf:", pf); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.sub===cor.sub||x.cont===cor.cont,x=>x.c===cor.c,x=>x.c);
   console.log("🔴 DEBUG genCityQ pool.length:", pool ? pool.length : 0, "pf:", pf);
