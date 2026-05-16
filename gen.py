@@ -3334,7 +3334,7 @@ function mpCountdown(seed,mode){
       /* Tag session as multiplayer */
       S.mpSeed=seed;S.mpOpponent=_oppName;
       S.mpOppScore=0;S.mpOppRd=0;S.mpOppFinal=null;
-    }else render();
+    }else {}
   },1000);
 }
 
@@ -3678,7 +3678,7 @@ let sb=null,sbUser=null,sbProfile=null,sbStamps=new Set();
 /* CURR_REAL, CAPS_POP, RIVERS_REAL populated by loadGameData() */
 /* Helper: country name â†’ cc */
 function ccFromCountry(name){const c=COUNTRIES.find(x=>x.c===name);return c?c.cc:null;}
-function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://flagcdn.com/w40/${cc}.png" style="height:22px;vertical-align:middle;border-radius:2px" alt="${name}" onerror="this.style.display='none'">`:"";}
+function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://flagcdn.com/w40/${cc}.png" style="height:22px;vertical-align:middle;border-radius:2px" alt="${name}">`:"";}
 
 /* Phase 97-1: Zombie-SW-Killer â€” läuft vor Supabase-Init */
 /* Tötet veraltete Service Worker, die Updates blockieren   */
@@ -5282,7 +5282,7 @@ function updateHdrGuest(){
 }
 function stampHtml(cc,rank,rot){
   const cn=COUNTRIES.find(c=>c.cc===cc)?.c||cc.toUpperCase();
-  return `<div class="stamp-cell" onclick="S.modal='${cc}';render()" title="${cn}"><div class="stamp-ink ${rank}" style="transform:rotate(${rot}deg)"><img class="stamp-flag" src="https://flagcdn.com/w40/${cc}.png" alt="${cn}" onerror="this.style.display='none'"><span>${cc.toUpperCase()}</span></div></div>`;
+  return `<div class="stamp-cell" onclick="S.modal='${cc}';render()" title="${cn}"><div class="stamp-ink ${rank}" style="transform:rotate(${rot}deg)"><img class="stamp-flag" src="https://flagcdn.com/w40/${cc}.png" alt="${cn}"><span>${cc.toUpperCase()}</span></div></div>`;
 }
 
 /* DAILY CHALLENGE */
@@ -5527,7 +5527,7 @@ function render(){
     const rl={gold:"\u{1F947} Gold",silver:"\u{1F948} Silber",bronze:"\u{1F949} Bronze"}[rank]||"Gesperrt";
     const rc={gold:"#d97706",silver:"#94a3b8",bronze:"#c2410c"}[rank]||"var(--text3)";
     app.innerHTML=`<div class="modal-overlay" onclick="if(event.target===this){S.modal=null;render()}"><div class="modal-box">
-      <img src="https://flagcdn.com/w80/${S.modal}.png" style="height:44px;width:auto;border-radius:4px;margin-bottom:.75rem" onerror="this.style.display='none'">
+      <img src="https://flagcdn.com/w80/${S.modal}.png" style="height:44px;width:auto;border-radius:4px;margin-bottom:.75rem">
       <div style="font-size:1.2rem;font-weight:900;color:var(--text);margin-bottom:4px">${cn}</div>
       <div style="font-size:.82rem;font-weight:700;color:${rc};margin-bottom:.85rem">${rl}</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1rem">
@@ -5566,7 +5566,7 @@ function render(){
     const stampBanners=S.newStamps.map(({cc,rank})=>{
       const cn=COUNTRIES.find(c=>c.cc===cc)?.c||cc.toUpperCase();
       const rl={gold:"\u{1F947} Gold-Stempel",silver:"\u{1F948} Silber-Stempel",bronze:"\u{1F949} Bronze-Stempel"}[rank]||"Stempel";
-      return`<div class="new-stamp-banner"><img src="https://flagcdn.com/w40/${cc}.png" style="width:28px;height:auto;border-radius:3px" onerror="this.style.display='none'"><div><div style="color:#34d399;font-weight:900;font-size:.88rem">NEUER STEMPEL\!</div><div style="color:var(--text2);font-size:.78rem">${rl} \u2022 ${cn}</div></div></div>`;
+      return`<div class="new-stamp-banner"><img src="https://flagcdn.com/w40/${cc}.png" style="width:28px;height:auto;border-radius:3px"><div><div style="color:#34d399;font-weight:900;font-size:.88rem">NEUER STEMPEL\!</div><div style="color:var(--text2);font-size:.78rem">${rl} \u2022 ${cn}</div></div></div>`;
     }).join("");
     const survivalPanel=isSurv?`
       ${isNewRecord?`<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b);border:2px solid #ef4444;border-radius:12px;padding:.85rem;text-align:center;margin-bottom:.75rem">
@@ -5665,7 +5665,7 @@ function render(){
   const col=tc(),p=pct(),_tr=tier(st);
   let qBody="";
   if(q.type==="flag"){
-    qBody=`<div class="qprompt">${q.prompt}</div><div class="qflag"><img src="https://flagcdn.com/w80/${q.subj}.png" alt="Flagge" onerror="this.style.display='none'"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div class="qflag"><img src="https://flagcdn.com/w80/${q.subj}.png" alt="Flagge"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="outline"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="outline-wrap" id="gq-outline-svg"></div>`;
   }else if(q.type==="food"){
@@ -5731,7 +5731,7 @@ function render(){
       <div class="qmain">${q.subj}</div>
       ${sel\!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="wappen"){
-    qBody=`<div class="qprompt">${q.prompt}</div><div class="wappen-img-wrap"><img src="${q.img}" alt="Wappen" class="wappen-img" onerror="this.style.opacity='.25'"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div class="wappen-img-wrap"><img src="${q.img}" alt="Wappen" class="wappen-img"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="neighbor"){
     qBody=`<div class="qprompt" style="font-size:1rem">${q.prompt}</div>
       <div style="text-align:center;margin:10px 0 6px">
@@ -5780,7 +5780,7 @@ function render(){
   const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">Ã—${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">ðŸ’€ SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">âˆž</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">Ã—</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
-    const fb2=q.opts.map(cc=>{let cls="btn-flag";if(sel\!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}return '<button class="'+cls+'" onclick="sel=\''+cc+'\';render()" data-quiz-answer="'+q.opts.indexOf(cc)+'"><img src="https://flagcdn.com/w120/'+cc.toLowerCase()+'.png" style="height:40px; border-radius:4px; display:block;" onerror="this.style.display=\'none\'; this.parentNode.textContent=\''+cc.toUpperCase()+'\'"><img src="https://flagcdn.com/w120/'+cc.toLowerCase()+'.png" style="height:50px;border-radius:8px; display:block;" onerror="this.style.display=\'none\'; this.parentNode.style.fontSize=\'1.2rem\'; this.parentNode.textContent=\''+cc.toUpperCase()+'\'"><span style="display:none">'+cc.toUpperCase()+'</span></button>';}).join('');
+    const fb2=q.opts.map(cc=>{let cls="btn-flag";if(sel\!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}return '<button class="'+cls+'" onclick="sel=\''+cc+'\';render()" data-quiz-answer="'+q.opts.indexOf(cc)+'"><img src="https://flagcdn.com/w120/'+cc.toLowerCase()+'.png" style="height:40px; border-radius:4px; pointer-events:none;"><img src="https://flagcdn.com/w120/'+cc.toLowerCase()+'.png" style="height:40px; border-radius:4px; pointer-events:none;"><span style="display:none">'+cc.toUpperCase()+'</span></button>';}).join('');
     answerHtml=`<div class="flag-grid">${fb2}</div>`;
   }else{
     // Population comparison: special subj rendering
@@ -6912,7 +6912,7 @@ function initSLF(){
     if(\!S.slfData||S.slfData.phase\!=="input")return;
     S.slfData.timeLeft--;
     if(S.slfData.timeLeft<=0){clearInterval(tIv);handleSLFSubmit();}
-    else render();
+    else {}
   },1000);
 }
 function handleLandHauptstadtSubmit(){
@@ -7711,7 +7711,7 @@ document.addEventListener("visibilitychange",()=>{
   S._hiddenAt=null;
   if(elapsed>0){
     S.tm=Math.max(0,S.tm-elapsed);
-    if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}else render();
+    if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}else {}
   }
 });
 
