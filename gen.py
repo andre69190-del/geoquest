@@ -5787,7 +5787,10 @@ function render(){
             else if(cc === sel) cls += " ng";
             else cls += " dm";
         }
-        return '<button class="' + cls + '" onclick="checkAns(&quot;' + cc + '&quot;)"><img src="https://flagcdn.com/w120/' + cc.toLowerCase() + '.png" style="height:40px; border-radius:4px; pointer-events:none;"></button>';
+        // Wandelt ISO Code (z.B. DE) in Emoji Flagge um
+        const getFlagEmoji = (countryCode) => countryCode.toUpperCase().replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397));
+
+        return '<button class="' + cls + '" onclick="checkAns(&quot;' + cc + '&quot;)" style="font-size: 3rem; line-height: 1; padding: 10px;">' + getFlagEmoji(cc) + '</button>';
     }).join('');
     answerHtml = '<div class="flag-grid">' + fb2 + '</div>';
 }else{
