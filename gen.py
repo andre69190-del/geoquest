@@ -5508,7 +5508,10 @@ function renderBottomNav(){
   }).join('') + '</div>';
 }
 
-function render(){S.candidates=S.candidates||[];
+function render(){
+    /* ENCAPSULATION GUARD */
+    let candidates = (typeof S !== "undefined" && S && S.candidates) ? S.candidates : [];
+S.candidates=S.candidates||[];
   updateHdrGuest();
   const app=document.getElementById("app");
   if(\!app)return;
