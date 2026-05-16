@@ -2,8 +2,8 @@
 
 # â”€â”€ CITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 cities_raw = json.load(open('cities_clean.json', 'r', encoding='utf-8'))
-cities_slim = [{'id':c['id'],'n':c.get('name') or c.get('asciiName') or '',
-                'c':c.get('country',''),'cc':(c.get('countryCode','') or '').lower(),
+cities_slim = [{'id':c.get('id', c.get('name', 'unknown')),'n':c.get('name') or c.get('asciiName') or '',
+                'c':c.get('country',''),'cc':(c.get('countryCode','') or c.get('country_code','') or '').lower(),
                 'cont':c.get('continent',''),'sub':c.get('subregion') or c.get('continent',''),
                 'pop':c.get('population',0)}
                for c in cities_raw]
