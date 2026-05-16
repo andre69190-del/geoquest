@@ -3360,7 +3360,7 @@ function mpCreate(){
       S.mp.phase="ready";
       render();
       /* Acknowledge the join */
-      mpSend("host_ack",{name:sbProfile?.username||"Host"});
+      mpSend("host_ack",{name:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||"Host"});
     })
     .on("broadcast",{event:"player_ready"},({payload})=>{
       mpLog("guest ready");
@@ -3410,7 +3410,7 @@ function mpJoin(code){
     .subscribe((status)=>{
       mpLog("guest channel status:",status);
       if(status==="SUBSCRIBED"){
-        mpSend("player_joined",{name:sbProfile?.username||"Spieler"});
+        mpSend("player_joined",{name:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||"Spieler"});
         render();
       }
     });
@@ -3419,7 +3419,7 @@ function mpJoin(code){
 /* Ready button */
 function mpReady(){
   S.mp.myReady=true;render();
-  mpSend("player_ready",{name:sbProfile?.username||"Ich"});
+  mpSend("player_ready",{name:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||"Ich"});
   /* Host: if guest was already ready */
   if(S.mp.role==="host"&&S.mp.oppReady){
     const seed=~~(Math.random()*1e9);
@@ -3830,7 +3830,7 @@ async function loadProfile(){
     .catch(e=>console.warn("[GQ] evaluateWeeklyLeague error:",e?.message||e));
 }
 /* Helper: get display name */
-function getDisplayName(){return sbProfile?.username||localStorage.getItem("gq_username")||null;}
+function getDisplayName(){return (typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||localStorage.getItem("gq_username")||null;}
 
 async function saveUsername(n){
   if(!n.trim())return;
@@ -4016,11 +4016,11 @@ async function saveSession(mode,score,bs,correct,durationMs){
   /* Phase 33 Teil 2: notify opponent at game end */
   if(window.mpGameCh&&S.mpOpponent){
     window.mpGameCh.send({type:"broadcast",event:"game_over",
-      payload:{score,name:sbProfile?.username||"Ich",correct}}).then(()=>{},()=>{});
+      payload:{score,name:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||"Ich",correct}}).then(()=>{},()=>{});
     window.mpGameCh=null;
   }
   if(!sb||!sbUser?.id)return;
-  await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:sbProfile?.username||null});
+  await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||null});
   /* Use RPC to prevent client-side score tampering */
   await sb.rpc("add_score",{p_user_id:sbUser.id,p_score:score,p_coins:Math.floor(score/100),p_rounds:ROUNDS,p_duration_ms:durationMs||0});
   if(sbProfile){sbProfile.total_score=(sbProfile.total_score||0)+score;sbProfile.games_played=(sbProfile.games_played||0)+1;}
@@ -5277,7 +5277,7 @@ function shareGame(){
 }
 function updateHdrGuest(){
   const hdr=document.getElementById("g-hdr");
-  const _uname=sbProfile?.username||localStorage.getItem("gq_username")||null;
+  const _uname=(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||localStorage.getItem("gq_username")||null;
   if(hdr)hdr.innerHTML=`<span class="g-logo">GEO<span>QUEST</span></span><div class="g-stats">${_uname?`<span class="g-stat" style="color:#10b981">\uD83D\uDC64 ${esc(_uname)}</span>`:""}<span class="g-stat">\u{1F525} ${S.st}</span><span class="g-stat">\u{1F4B0} ${(sbProfile?.geo_coins||0).toLocaleString()}</span><button class="hdr-gear" onclick="S.settingsModal=!S.settingsModal;render()" title="Einstellungen">\u2699\ufe0f</button></div>`;
 }
 function stampHtml(cc,rank,rot){
@@ -5592,7 +5592,7 @@ S.candidates=S.candidates||[];
     const _gThr=S.diff==="hardcore"?[350,280,200,100]:S.diff==="survival"?[300,150,70,30]:[96,80,60,30];const g=S.sc>=_gThr[0]?"S":S.sc>=_gThr[1]?"A":S.sc>=_gThr[2]?"B":S.sc>=_gThr[3]?"C":"D";
     const gc={S:"#fbbf24",A:"#34d399",B:"#60a5fa",C:"#fb923c",D:"#f87171"}[g];
     const ml=modeTitle(MODES.find(m=>m.id===S.mode))||"";const mm=isSurv?2:S.diff==="hardcore"?3:1;
-    const isGuest=sbOK&&\!sbProfile?.username;
+    const isGuest=sbOK&&\!(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null);
     const mastery=loadMastery();const totalStamps=Object.values(mastery).filter(m=>getMasteryRank(m.v,m.p)).length;
     const stampBanners=S.newStamps.map(({cc,rank})=>{
       const cn=COUNTRIES.find(c=>c.cc===cc)?.c||cc.toUpperCase();
@@ -6861,8 +6861,8 @@ function renderHomeTab(){
     </div>`;
   }
   /* Dynamic Home Header */
-  const _li=sbUser&&sbProfile?.username;
-  const _un=sbProfile?.username||(sbUser?.email?.split('@')[0]||'Gast');
+  const _li=sbUser&&(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null);
+  const _un=(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||(sbUser?.email?.split('@')[0]||'Gast');
   const _gc=(sbProfile?.geo_coins||0).toLocaleString();
   const _hdr=_li
     ?`<div style="display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
@@ -6989,7 +6989,7 @@ async function loadLiga(){
 /* PROFIL TAB – Auth + Passport + Stats */
 function promptNameChange(){
   if(!sbUser?.email){showToast("Nur für angemeldete Nutzer.");return;}
-  const cur=sbProfile?.username||localStorage.getItem("gq_username")||"";
+  const cur=(typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||localStorage.getItem("gq_username")||"";
   const raw=window.prompt("Neuer Benutzername (max. 20 Zeichen):",cur);
   if(raw===null)return; /* Abgebrochen */
   const n=raw.trim().slice(0,20);
@@ -7019,7 +7019,7 @@ function renderProfilTab(){
   const pu=loadPU();
   const history=loadHistory();
   const isAnon=\!sbUser?.email;
-  const hasName=\!\!(sbProfile?.username||localStorage.getItem("gq_username"));
+  const hasName=\!\!((typeof sbProfile !== 'undefined' && sbProfile ? sbProfile.username : null)||localStorage.getItem("gq_username"));
   const rots=[-12,-8,-5,-3,0,3,5,8,12,15,-15];
   const passGrid=COUNTRIES.map(co=>{const m=mastery[co.cc]||{v:0,p:0};const r=getMasteryRank(m.v,m.p);if(\!r)return`<div class="stamp-cell locked" title="${co.c}"><span>?</span></div>`;const rot=rots[co.cc.charCodeAt(0)%rots.length];return stampHtml(co.cc,r,rot);}).join("");
   const regionBars=REGIONS.map(rg=>{const total=rg.cc.length;const done=rg.cc.filter(cc=>getMasteryRank((mastery[cc]||{v:0}).v,(mastery[cc]||{p:0}).p)).length;const pct2=total>0?Math.round(done/total*100):0;const complete=pct2===100;return`<div class="region-bar"><div class="region-bar-lbl"><span>${rg.name}${complete?` <span style="color:#f59e0b;font-size:.6rem">+500</span>`:""}</span><span>${done}/${total}</span></div><div class="region-bar-track"><div class="region-bar-fill${complete?" done":""}" style="width:${pct2}%"></div></div></div>`;}).join("");
