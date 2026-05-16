@@ -4200,6 +4200,7 @@ function genCityQ(){
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.sub===cor.sub||x.cont===cor.cont,x=>x.c===cor.c,x=>x.c);
   console.log("🔴 DEBUG genCityQ pool.length:", pool ? pool.length : 0, "pf:", pf);
+  console.log("🔴 DEBUG genCityQ pool.length:", pool ? pool.length : 0, "pf:", pf);
   return{type:"city",prompt:t("q_city"),subj:cor.n,ans:cor.c,opts:sh([cor.c,...dis]),meta:cor.cont+" \u00b7 "+(cor.pop/1e6).toFixed(1)+" Mio.",lid:cor.id,cc:cor.cc};
 }
 function genFlagQ(){
