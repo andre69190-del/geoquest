@@ -5842,7 +5842,6 @@ app.innerHTML=`<div class="scr">
     <button class="pu-btn${S.half_removed?" pu-used":""}" onclick="useFiveO()" ${(S.half_removed||(pu.five0||0)===0||_is2ans)?"disabled":""} style="${_j5sty}" title="${_j5title}">\u2702 50/50 <span style="font-size:.62rem">${_j5label}</span></button>
     <button class="pu-btn${S.freezeActive?" freeze-on":""}" onclick="useFreeze()" ${(S.freezeActive||(pu.freeze||0)===0)?"disabled":""} title="Zeit-Stopp (${pu.freeze||0} \u00fcbrig)">\u{1F9CA} Freeze <span style="font-size:.62rem">(${pu.freeze||0})</span></button>
   </div>`;
-  console.log("🔥 GEOQUEST RENDER DEBUG:", { type: q.type, opts: q.opts, html: answerHtml });
   app.innerHTML=`<div class="scr">
     <div class="hud">
       <div style="display:flex;gap:8px;align-items:center">
