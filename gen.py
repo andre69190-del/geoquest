@@ -432,7 +432,7 @@ import os as _os
 _css_path = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'geoquest_css.txt')
 CSS = open(_css_path,'r',encoding='utf-8').read()
 
-# Phase 28 data payloads "” loaded at runtime via fetch()
+# Phase 28 data payloads – loaded at runtime via fetch()
 print('CSS ready:', len(CSS), 'chars')
 # JS TEMPLATE
 JS = r'''
@@ -1376,7 +1376,7 @@ document.addEventListener('keydown', function(e) {
 
 const SUPABASE_URL  = "https://lpwcqvxajahiftvwxovq.supabase.co";
 const SUPABASE_ANON = "sb_publishable_HL6cIlPOtVAdkjycaiceGQ_CBNFF-dG";
-/* ADMIN_EMAIL removed "” use Supabase trigger instead */
+/* ADMIN_EMAIL removed – use Supabase trigger instead */
 
 /* PAYMENT CONFIG */
 const STRIPE_PK = "";
@@ -1392,7 +1392,7 @@ const PAY_PRODUCTS = [
 ];
 
 /* LANGUAGE */
-/* â”€â”€ Phase 47/48: i18n "” DE / EN / PL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* â”€â”€ Phase 47/48: i18n – DE / EN / PL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const LANG={
 de:{
   play:"SPIELEN",again:"NOCHMAL",menu:"Hauptmenü",board:"Bestenliste",pass:"Reisepass",
@@ -1402,9 +1402,9 @@ de:{
   spotter_title:"\u{1F697} Roadtrip-Spotter",
   spotter_hint:"Kennzeichen gesehen? Sofort eintragen!",
   spotter_all:"Alle Länder",spotter_unknown:"Unbekanntes Kennzeichen",
-  spotter_not_in:"nicht in",spotter_but_in:"aber in",spotter_no_region:"hat keine Regionen "” gib \"{code}\" ein\!",
+  spotter_not_in:"nicht in",spotter_but_in:"aber in",spotter_no_region:"hat keine Regionen – gib \"{code}\" ein\!",
   album_title:"\u{1F4D4} Kennzeichen-Album",album_list:"\u{1F4DD} Liste",album_map:"\u{1F5FA} Karte",
-  album_empty_country:"Noch nichts aus {country} gesammelt "” nutze den Spotter!",
+  album_empty_country:"Noch nichts aus {country} gesammelt – nutze den Spotter!",
   album_empty:"Noch nichts gesammelt!\nSpiele EU-Kennzeichen oder benutze den Spotter.",
   album_codes:"Kürzel",
   hl_higher:"⬆️ Mehr / Länger / Größer",hl_lower:"⬇️ Weniger / Kürzer / Kleiner",
@@ -1423,14 +1423,14 @@ de:{
   q_pop_compare:"Mehr oder weniger Einwohner?",
   q_hl_pop:"Mehr Einwohner als {a}?",q_hl_river:"Länger als {a}?",q_hl_area:"Größer als {a}?",
   q_neighbor:"Welches Land grenzt an…?",q_neighbor_not:"Grenzt NICHT an…?",
-  q_plates_casual:"Woher kommt dieses Kennzeichen?",q_plates_hard:"Region erkennen "” kein Tipp!",
+  q_plates_casual:"Woher kommt dieses Kennzeichen?",q_plates_hard:"Region erkennen – kein Tipp!",
   q_river_real:"Durch welches Land fließt dieser Fluss?",q_map_guess:"Finde das Land auf der Karte",
   fb_correct:"✓“ Richtig! +{pts}",fb_wrong:"✗ Falsch â–’ {ans}",fb_time:"â± Zeit! â–’ {ans}",
   plates_more:"+{n} weitere",pct_complete:"{pct}% vollständig",
   spotter_dup:"ðŸ“‹ {code} ({country}) bereits gesammelt!",
   map_unavail:"Karte nicht verfügbar",map_loading:"Kartendaten werden geladen…",
   q_subway_km:"Wie lang ist das U-Bahn-Netz … (km)?",q_subway_lines:"Wie viele U-Bahn-Linien hat …?",
-  ob_welcome:"Willkommen bei GeoQuest",ob_sub1:"Das Geografie-Quiz "” sammle Stempel, steige in der Liga auf!",ob_difficulty:"Schwierigkeitsgrad",ob_diff_sub:"W\u00e4hle deinen Stil. \u00c4nderbar jederzeit.",
+  ob_welcome:"Willkommen bei GeoQuest",ob_sub1:"Das Geografie-Quiz – sammle Stempel, steige in der Liga auf!",ob_difficulty:"Schwierigkeitsgrad",ob_diff_sub:"W\u00e4hle deinen Stil. \u00c4nderbar jederzeit.",
   ob_diff_casual_desc:"Gro\u00dfe St\u00e4dte \u2022 12 Sek.",ob_diff_hc_desc:"Alle St\u00e4dte \u2022 8 Sek.",ob_back:"\u2190 Zur\u00fcck",ob_modes_title:"Spielmodi",
   ob_modes_sub:"19 Modi, ein Ziel: Die Welt kennenlernen.",ob_more_modes:"\u2026 und 16 weitere Modi",ob_start:"\u{1F680} Los geht's!",ob_have_account:"Ich habe bereits einen Account",ob_register:"Neu hier? Registrieren",
   home_hi:"Hallo, {name} \u{1F44B}",home_guest:"Willkommen, Gast \u{1F30D}",home_save:"\u{1F510} Fortschritt sichern",home_pvp_sub:"Echtzeit gegen einen Freund spielen",
@@ -1449,9 +1449,9 @@ en:{
   spotter_title:"\u{1F697} Road Trip Spotter",
   spotter_hint:"Spotted a plate? Log it now!",
   spotter_all:"All Countries",spotter_unknown:"Unknown plate",
-  spotter_not_in:"not in",spotter_but_in:"but found in",spotter_no_region:"has no regions "” enter \"{code}\" to collect\!",
+  spotter_not_in:"not in",spotter_but_in:"but found in",spotter_no_region:"has no regions – enter \"{code}\" to collect\!",
   album_title:"\u{1F4D4} Plate Collection",album_list:"\u{1F4DD} List",album_map:"\u{1F5FA} Map",
-  album_empty_country:"Nothing from {country} yet "” use the Spotter!",
+  album_empty_country:"Nothing from {country} yet – use the Spotter!",
   album_empty:"Nothing collected yet!\nPlay EU plates or use the Spotter above.",
   album_codes:"codes",
   hl_higher:"⬆️ More / Longer / Larger",hl_lower:"⬇️ Less / Shorter / Smaller",
@@ -1470,14 +1470,14 @@ en:{
   q_pop_compare:"More or fewer inhabitants?",
   q_hl_pop:"More inhabitants than {a}?",q_hl_river:"Longer than {a}?",q_hl_area:"Larger than {a}?",
   q_neighbor:"Which country borders…?",q_neighbor_not:"Does NOT border…?",
-  q_plates_casual:"Which country has this plate?",q_plates_hard:"Identify the region "” no hint!",
+  q_plates_casual:"Which country has this plate?",q_plates_hard:"Identify the region – no hint!",
   q_river_real:"Which country does this river flow through?",q_map_guess:"Find the country on the map",
   fb_correct:"✓“ Correct! +{pts}",fb_wrong:"✗ Wrong â–’ {ans}",fb_time:"â± Time! â–’ {ans}",
   plates_more:"+{n} more",pct_complete:"{pct}% complete",
   spotter_dup:"ðŸ“‹ {code} ({country}) already collected!",
   map_unavail:"Map not available",map_loading:"Loading map data…",
   q_subway_km:"How long is the metro network … (km)?",q_subway_lines:"How many metro lines does … have?",
-  ob_welcome:"Welcome to GeoQuest",ob_sub1:"The geography quiz "” collect stamps, climb the league!",ob_difficulty:"Difficulty",ob_diff_sub:"Choose your style. Changeable at any time.",
+  ob_welcome:"Welcome to GeoQuest",ob_sub1:"The geography quiz – collect stamps, climb the league!",ob_difficulty:"Difficulty",ob_diff_sub:"Choose your style. Changeable at any time.",
   ob_diff_casual_desc:"Major cities \u2022 12 sec.",ob_diff_hc_desc:"All cities \u2022 8 sec.",ob_back:"\u2190 Back",ob_modes_title:"Game Modes",
   ob_modes_sub:"19 modes, one goal: know the world.",ob_more_modes:"\u2026 and 16 more modes",ob_start:"\u{1F680} Let's go!",ob_have_account:"I already have an account",ob_register:"New here? Register",
   home_hi:"Hi, {name} \u{1F44B}",home_guest:"Welcome, Guest \u{1F30D}",home_save:"\u{1F510} Save progress",home_pvp_sub:"Play in real time against a friend",
@@ -1498,7 +1498,7 @@ pl:{
   spotter_all:"Wszystkie kraje",spotter_unknown:"Nieznana tablica",
   spotter_not_in:"nie ma w",spotter_but_in:"ale jest w",
   album_title:"\u{1F4D4} Album Tablic",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mapa",
-  album_empty_country:"Nic z {country} jeszcze "” uÅ¼yj Spottera!",
+  album_empty_country:"Nic z {country} jeszcze – uÅ¼yj Spottera!",
   album_empty:"Nic jeszcze nie zebrano!\nGraj w tablice EU lub uÅ¼yj Spottera.",
   album_codes:"kodÃ³w",
   hl_higher:"⬆️ WiÄ™cej / DÅ‚uÅ¼ej / WiÄ™kszy",hl_lower:"⬇️ Mniej / KrÃ³cej / Mniejszy",
@@ -1524,7 +1524,7 @@ pl:{
   map_unavail:"Mapa niedostÄ™pna",map_loading:"Åadowanie mapy…",
   q_subway_km:"Jak dÅ‚uga jest sieÄ‡ metra … (km)?",q_subway_lines:"Ile linii metra ma …?",
   hl_longer:"⬆️ DÅ‚uÅ¼szy",hl_shorter:"⬇️ KrÃ³tszy",hl_bigger:"⬆️ WiÄ™kszy (obszar)",hl_smaller:"⬇️ Mniejszy (obszar)",
-  ob_welcome:"Witaj w GeoQuest",ob_sub1:"Quiz geograficzny "” zbieraj stemple, awansuj w lidze!",ob_difficulty:"Poziom trudnoÅ›ci",ob_diff_sub:"Wybierz swÃ³j styl. ZmieÅ„ w dowolnym momencie.",
+  ob_welcome:"Witaj w GeoQuest",ob_sub1:"Quiz geograficzny – zbieraj stemple, awansuj w lidze!",ob_difficulty:"Poziom trudnoÅ›ci",ob_diff_sub:"Wybierz swÃ³j styl. ZmieÅ„ w dowolnym momencie.",
   ob_diff_casual_desc:"DuÅ¼e miasta "¢ 12 sek.",ob_diff_hc_desc:"Wszystkie miasta "¢ 8 sek.",ob_back:"â– WrÃ³Ä‡",ob_modes_title:"Tryby gry",
   ob_modes_sub:"19 trybÃ³w, jeden cel: poznaÄ‡ Å›wiat.",ob_more_modes:"… i 16 kolejnych trybÃ³w",ob_start:"\u{1F680} Zaczynamy!",ob_have_account:"Mam juÅ¼ konto",ob_register:"Nowy? Zarejestruj siÄ™",
   home_hi:"CzeÅ›Ä‡, {name} \u{1F44B}",home_guest:"Witaj, GoÅ›ciu \u{1F30D}",home_save:"\u{1F510} Zapisz postÄ™p",home_pvp_sub:"Graj w czasie rzeczywistym z przyjacielem",
@@ -1554,7 +1554,7 @@ fr:{
   spotter_all:"Tous les pays",spotter_unknown:"Plaque inconnue",
   spotter_not_in:"pas dans",spotter_but_in:"mais dans",
   album_title:"\u{1F4D4} Collection de plaques",album_list:"\u{1F4DD} Liste",album_map:"\u{1F5FA} Carte",
-  album_empty_country:"Rien de {country} encore "” utilisez le Spotter !",
+  album_empty_country:"Rien de {country} encore – utilisez le Spotter !",
   album_empty:"Rien collecté encore !\nJouez aux plaques UE ou utilisez le Spotter.",
   album_codes:"codes",
   hl_higher:"⬆️ Plus / Plus long / Plus grand",hl_lower:"⬇️ Moins / Plus court / Plus petit",
@@ -1572,7 +1572,7 @@ fr:{
   q_pop_compare:"Plus ou moins d'habitants ?",
   q_hl_pop:"Plus d'habitants que {a} ?",q_hl_river:"Plus long que {a} ?",q_hl_area:"Plus grand que {a} ?",
   q_neighbor:"Quel pays borde… ?",q_neighbor_not:"Ne borde PAS… ?",
-  q_plates_casual:"De quel pays est cette plaque ?",q_plates_hard:"Identifier la région "” aucun indice !",
+  q_plates_casual:"De quel pays est cette plaque ?",q_plates_hard:"Identifier la région – aucun indice !",
   q_river_real:"Dans quel pays coule ce fleuve ?",q_map_guess:"Trouver le pays sur la carte",
   fb_correct:"✓“ Correct ! +{pts}",fb_wrong:"✗ Faux â–’ {ans}",fb_time:"â± Temps ! â–’ {ans}",
   plates_more:"+{n} de plus",pct_complete:"{pct}% terminé",
@@ -1580,7 +1580,7 @@ fr:{
   map_unavail:"Carte non disponible",map_loading:"Chargement de la carte…",
   q_subway_km:"Quelle longueur a le réseau métro … (km)?",q_subway_lines:"Combien de lignes de métro a … ?",
   hl_longer:"⬆️ Plus long",hl_shorter:"⬇️ Plus court",hl_bigger:"⬆️ Plus grand (superficie)",hl_smaller:"⬇️ Plus petit (superficie)",
-  ob_welcome:"Bienvenue sur GeoQuest",ob_sub1:"Le quiz de géographie "” collectez des tampons, montez en ligueÂ !",ob_difficulty:"Niveau de difficulté",ob_diff_sub:"Choisissez votre style. Modifiable Ã  tout moment.",
+  ob_welcome:"Bienvenue sur GeoQuest",ob_sub1:"Le quiz de géographie – collectez des tampons, montez en ligueÂ !",ob_difficulty:"Niveau de difficulté",ob_diff_sub:"Choisissez votre style. Modifiable Ã  tout moment.",
   ob_diff_casual_desc:"Grandes villes "¢ 12 sec.",ob_diff_hc_desc:"Toutes les villes "¢ 8 sec.",ob_back:"â– Retour",ob_modes_title:"Modes de jeu",
   ob_modes_sub:"19 modes, un objectifÂ : connaÃ®tre le monde.",ob_more_modes:"… et 16 autres modes",ob_start:"\u{1F680} C'est partiÂ !",ob_have_account:"J'ai déjÃ  un compte",ob_register:"NouveauÂ ? S'inscrire",
   home_hi:"Salut, {name} \u{1F44B}",home_guest:"Bienvenue, invité \u{1F30D}",home_save:"\u{1F510} Sauvegarder la progression",home_pvp_sub:"Jouer en temps réel contre un ami",
@@ -1610,7 +1610,7 @@ es:{
   spotter_all:"Todos los paÃ­ses",spotter_unknown:"MatrÃ­cula desconocida",
   spotter_not_in:"no en",spotter_but_in:"pero en",
   album_title:"\u{1F4D4} ColecciÃ³n de matrÃ­culas",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mapa",
-  album_empty_country:"Nada de {country} aÃºn "” Â¡usa el Spotter!",
+  album_empty_country:"Nada de {country} aÃºn – Â¡usa el Spotter!",
   album_empty:"Â¡Nada recopilado aÃºn!\nJuega a matrÃ­culas UE o usa el Spotter.",
   album_codes:"cÃ³digos",
   hl_higher:"⬆️ MÃ¡s / MÃ¡s largo / MÃ¡s grande",hl_lower:"⬇️ Menos / MÃ¡s corto / MÃ¡s pequeÃ±o",
@@ -1628,7 +1628,7 @@ es:{
   q_pop_compare:"Â¿MÃ¡s o menos habitantes?",
   q_hl_pop:"Â¿MÃ¡s habitantes que {a}?",q_hl_river:"Â¿MÃ¡s largo que {a}?",q_hl_area:"Â¿MÃ¡s grande que {a}?",
   q_neighbor:"Â¿Qué paÃ­s limita con…?",q_neighbor_not:"Â¿NO limita con…?",
-  q_plates_casual:"Â¿De qué paÃ­s es esta matrÃ­cula?",q_plates_hard:"Identificar la regiÃ³n "” Â¡sin pista!",
+  q_plates_casual:"Â¿De qué paÃ­s es esta matrÃ­cula?",q_plates_hard:"Identificar la regiÃ³n – Â¡sin pista!",
   q_river_real:"Â¿Por qué paÃ­s pasa este rÃ­o?",q_map_guess:"Encuentra el paÃ­s en el mapa",
   fb_correct:"✓“ Â¡Correcto! +{pts}",fb_wrong:"✗ Incorrecto â–’ {ans}",fb_time:"â± Â¡Tiempo! â–’ {ans}",
   plates_more:"+{n} mÃ¡s",pct_complete:"{pct}% completado",
@@ -1636,7 +1636,7 @@ es:{
   map_unavail:"Mapa no disponible",map_loading:"Cargando mapa…",
   q_subway_km:"Â¿CuÃ¡nto mide la red de metro … (km)?",q_subway_lines:"Â¿CuÃ¡ntas lÃ­neas de metro tiene …?",
   hl_longer:"⬆️ MÃ¡s largo",hl_shorter:"⬇️ MÃ¡s corto",hl_bigger:"⬆️ MÃ¡s grande (Ã¡rea)",hl_smaller:"⬇️ MÃ¡s pequeÃ±o (Ã¡rea)",
-  ob_welcome:"Bienvenido a GeoQuest",ob_sub1:"El quiz de geografÃ­a "” colecciona sellos, sube en la liga.",ob_difficulty:"Nivel de dificultad",ob_diff_sub:"Elige tu estilo. Cambiable en cualquier momento.",
+  ob_welcome:"Bienvenido a GeoQuest",ob_sub1:"El quiz de geografÃ­a – colecciona sellos, sube en la liga.",ob_difficulty:"Nivel de dificultad",ob_diff_sub:"Elige tu estilo. Cambiable en cualquier momento.",
   ob_diff_casual_desc:"Ciudades grandes "¢ 12 seg.",ob_diff_hc_desc:"Todas las ciudades "¢ 8 seg.",ob_back:"â– Volver",ob_modes_title:"Modos de juego",
   ob_modes_sub:"19 modos, un objetivo: conocer el mundo.",ob_more_modes:"… y 16 modos mÃ¡s",ob_start:"\u{1F680} Â¡Vamos!",ob_have_account:"Ya tengo una cuenta",ob_register:"Â¿Nuevo? RegsÃ­strate",
   home_hi:"Hola, {name} \u{1F44B}",home_guest:"Bienvenido, invitado \u{1F30D}",home_save:"\u{1F510} Guardar progreso",home_pvp_sub:"Jugar en tiempo real contra un amigo",
@@ -1666,7 +1666,7 @@ it:{
   spotter_all:"Tutti i paesi",spotter_unknown:"Targa sconosciuta",
   spotter_not_in:"non in",spotter_but_in:"ma in",
   album_title:"\u{1F4D4} Raccolta targhe",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mappa",
-  album_empty_country:"Niente da {country} ancora "” usa lo Spotter!",
+  album_empty_country:"Niente da {country} ancora – usa lo Spotter!",
   album_empty:"Niente ancora raccolto!\nGioca alle targhe UE o usa lo Spotter.",
   album_codes:"codici",
   hl_higher:"⬆️ Di piÃ¹ / PiÃ¹ lungo / PiÃ¹ grande",hl_lower:"⬇️ Di meno / PiÃ¹ corto / PiÃ¹ piccolo",
@@ -1684,7 +1684,7 @@ it:{
   q_pop_compare:"PiÃ¹ o meno abitanti?",
   q_hl_pop:"PiÃ¹ abitanti di {a}?",q_hl_river:"PiÃ¹ lungo di {a}?",q_hl_area:"PiÃ¹ grande di {a}?",
   q_neighbor:"Quale paese confina con…?",q_neighbor_not:"NON confina con…?",
-  q_plates_casual:"Da quale paese viene questa targa?",q_plates_hard:"Identificare la regione "” nessun indizio!",
+  q_plates_casual:"Da quale paese viene questa targa?",q_plates_hard:"Identificare la regione – nessun indizio!",
   q_river_real:"Attraverso quale paese scorre questo fiume?",q_map_guess:"Trova il paese sulla mappa",
   fb_correct:"✓“ Corretto! +{pts}",fb_wrong:"✗ Sbagliato â–’ {ans}",fb_time:"â± Tempo! â–’ {ans}",
   plates_more:"+{n} altri",pct_complete:"{pct}% completato",
@@ -1692,7 +1692,7 @@ it:{
   map_unavail:"Mappa non disponibile",map_loading:"Caricamento mappa…",
   q_subway_km:"Quanto Ã¨ lungo il metrÃ² … (km)?",q_subway_lines:"Quante linee metro ha …?",
   hl_longer:"⬆️ PiÃ¹ lungo",hl_shorter:"⬇️ PiÃ¹ corto",hl_bigger:"⬆️ PiÃ¹ grande (superficie)",hl_smaller:"⬇️ PiÃ¹ piccolo (superficie)",
-  ob_welcome:"Benvenuto su GeoQuest",ob_sub1:"Il quiz di geografia "” colleziona timbri, sali in classifica!",ob_difficulty:"Livello di difficoltÃ ",ob_diff_sub:"Scegli il tuo stile. Modificabile in qualsiasi momento.",
+  ob_welcome:"Benvenuto su GeoQuest",ob_sub1:"Il quiz di geografia – colleziona timbri, sali in classifica!",ob_difficulty:"Livello di difficoltÃ ",ob_diff_sub:"Scegli il tuo stile. Modificabile in qualsiasi momento.",
   ob_diff_casual_desc:"CittÃ  principali "¢ 12 sec.",ob_diff_hc_desc:"Tutte le cittÃ  "¢ 8 sec.",ob_back:"â– Indietro",ob_modes_title:"ModalitÃ  di gioco",
   ob_modes_sub:"19 modalitÃ , un obiettivo: conoscere il mondo.",ob_more_modes:"… e altre 16 modalitÃ ",ob_start:"\u{1F680} Andiamo!",ob_have_account:"Ho giÃ  un account",ob_register:"Nuovo? Registrati",
   home_hi:"Ciao, {name} \u{1F44B}",home_guest:"Benvenuto, ospite \u{1F30D}",home_save:"\u{1F510} Salva i progressi",home_pvp_sub:"Gioca in tempo reale contro un amico",
@@ -1722,7 +1722,7 @@ nl:{
   spotter_all:"Alle landen",spotter_unknown:"Onbekend kenteken",
   spotter_not_in:"niet in",spotter_but_in:"maar in",
   album_title:"\u{1F4D4} Kentekenalbum",album_list:"\u{1F4DD} Lijst",album_map:"\u{1F5FA} Kaart",
-  album_empty_country:"Nog niets uit {country} "” gebruik de Spotter!",
+  album_empty_country:"Nog niets uit {country} – gebruik de Spotter!",
   album_empty:"Nog niets verzameld!\nSpeel EU-kentekens of gebruik de Spotter.",
   album_codes:"codes",
   hl_higher:"⬆️ Meer / Langer / Groter",hl_lower:"⬇️ Minder / Korter / Kleiner",
@@ -1740,7 +1740,7 @@ nl:{
   q_pop_compare:"Meer of minder inwoners?",
   q_hl_pop:"Meer inwoners dan {a}?",q_hl_river:"Langer dan {a}?",q_hl_area:"Groter dan {a}?",
   q_neighbor:"Welk land grenst aan…?",q_neighbor_not:"Grenst NIET aan…?",
-  q_plates_casual:"Uit welk land komt dit kenteken?",q_plates_hard:"Identificeer de regio "” geen hint!",
+  q_plates_casual:"Uit welk land komt dit kenteken?",q_plates_hard:"Identificeer de regio – geen hint!",
   q_river_real:"Door welk land stroomt deze rivier?",q_map_guess:"Vind het land op de kaart",
   fb_correct:"✓“ Correct! +{pts}",fb_wrong:"✗ Fout â–’ {ans}",fb_time:"â± Tijd! â–’ {ans}",
   plates_more:"+{n} meer",pct_complete:"{pct}% voltooid",
@@ -1759,7 +1759,7 @@ pt:{
   spotter_all:"Todos os paÃ­ses",spotter_unknown:"Placa desconhecida",
   spotter_not_in:"nÃ£o em",spotter_but_in:"mas em",
   album_title:"\u{1F4D4} ColeÃ§Ã£o de placas",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mapa",
-  album_empty_country:"Nada de {country} ainda "” use o Spotter!",
+  album_empty_country:"Nada de {country} ainda – use o Spotter!",
   album_empty:"Nada coletado ainda!\nJogue placas UE ou use o Spotter.",
   album_codes:"cÃ³digos",
   hl_higher:"⬆️ Mais / Mais longo / Maior",hl_lower:"⬇️ Menos / Mais curto / Menor",
@@ -1777,7 +1777,7 @@ pt:{
   q_pop_compare:"Mais ou menos habitantes?",
   q_hl_pop:"Mais habitantes que {a}?",q_hl_river:"Mais longo que {a}?",q_hl_area:"Maior que {a}?",
   q_neighbor:"Qual paÃ­s faz fronteira com…?",q_neighbor_not:"NÃƒO faz fronteira com…?",
-  q_plates_casual:"De qual paÃ­s é esta placa?",q_plates_hard:"Identificar a regiÃ£o "” sem dica!",
+  q_plates_casual:"De qual paÃ­s é esta placa?",q_plates_hard:"Identificar a regiÃ£o – sem dica!",
   q_river_real:"Por qual paÃ­s corre este rio?",q_map_guess:"Encontre o paÃ­s no mapa",
   fb_correct:"✓“ Correto! +{pts}",fb_wrong:"✗ Errado â–’ {ans}",fb_time:"â± Tempo! â–’ {ans}",
   plates_more:"+{n} mais",pct_complete:"{pct}% completo",
@@ -1796,7 +1796,7 @@ ro:{
   spotter_all:"Toate È›Äƒrile",spotter_unknown:"PlÄƒcuÈ›Äƒ necunoscutÄƒ",
   spotter_not_in:"nu Ã®n",spotter_but_in:"dar Ã®n",
   album_title:"\u{1F4D4} ColecÈ›ie de plÄƒcuÈ›e",album_list:"\u{1F4DD} ListÄƒ",album_map:"\u{1F5FA} HartÄƒ",
-  album_empty_country:"Nimic din {country} Ã®ncÄƒ "” foloseÈ™te Spotter-ul!",
+  album_empty_country:"Nimic din {country} Ã®ncÄƒ – foloseÈ™te Spotter-ul!",
   album_empty:"Nimic colectat Ã®ncÄƒ!\nJoacÄƒ plÄƒcuÈ›e UE sau foloseÈ™te Spotter-ul.",
   album_codes:"coduri",
   hl_higher:"⬆️ Mai mult / Mai lung / Mai mare",hl_lower:"⬇️ Mai puÈ›in / Mai scurt / Mai mic",
@@ -1814,7 +1814,7 @@ ro:{
   q_pop_compare:"Mai mulÈ›i sau mai puÈ›ini locuitori?",
   q_hl_pop:"Mai mulÈ›i locuitori decÃ¢t {a}?",q_hl_river:"Mai lung decÃ¢t {a}?",q_hl_area:"Mai mare decÃ¢t {a}?",
   q_neighbor:"Ce È›arÄƒ se Ã®nvecineazÄƒ cu…?",q_neighbor_not:"NU se Ã®nvecineazÄƒ cu…?",
-  q_plates_casual:"Din ce È›arÄƒ este aceastÄƒ plÄƒcuÈ›Äƒ?",q_plates_hard:"IdentificaÈ›i regiunea "” fÄƒrÄƒ indiciu!",
+  q_plates_casual:"Din ce È›arÄƒ este aceastÄƒ plÄƒcuÈ›Äƒ?",q_plates_hard:"IdentificaÈ›i regiunea – fÄƒrÄƒ indiciu!",
   q_river_real:"Prin ce È›arÄƒ curge acest rÃ¢u?",q_map_guess:"GÄƒseÈ™te È›ara pe hartÄƒ",
   fb_correct:"✓“ Corect! +{pts}",fb_wrong:"✗ GreÈ™it â–’ {ans}",fb_time:"â± Timp! â–’ {ans}",
   plates_more:"+{n} mai mult",pct_complete:"{pct}% complet",
@@ -1833,7 +1833,7 @@ hu:{
   spotter_all:"Ã–sszes orszÃ¡g",spotter_unknown:"Ismeretlen rendszÃ¡m",
   spotter_not_in:"nem szerepel",spotter_but_in:"de szerepel",
   album_title:"\u{1F4D4} RendszÃ¡m Album",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Térkép",
-  album_empty_country:"Még semmi {country}-bÃ³l "” hasznÃ¡ld a Spotter-t!",
+  album_empty_country:"Még semmi {country}-bÃ³l – hasznÃ¡ld a Spotter-t!",
   album_empty:"Még semmi összegyÅ±jtve!\nJÃ¡tssz EU rendszÃ¡mokat vagy hasznÃ¡ld a Spotter-t.",
   album_codes:"kÃ³dok",
   hl_higher:"⬆️ Több / Hosszabb / Nagyobb",hl_lower:"⬇️ Kevesebb / Rövidebb / Kisebb",
@@ -1851,7 +1851,7 @@ hu:{
   q_pop_compare:"Több vagy kevesebb lakos?",
   q_hl_pop:"Több lakos, mint {a}?",q_hl_river:"Hosszabb, mint {a}?",q_hl_area:"Nagyobb, mint {a}?",
   q_neighbor:"Melyik orszÃ¡g hatÃ¡ros…-val?",q_neighbor_not:"NEM hatÃ¡ros…-val?",
-  q_plates_casual:"Melyik orszÃ¡g rendszÃ¡ma ez?",q_plates_hard:"AzonosÃ­tsa a régiÃ³t "” nincs tipp!",
+  q_plates_casual:"Melyik orszÃ¡g rendszÃ¡ma ez?",q_plates_hard:"AzonosÃ­tsa a régiÃ³t – nincs tipp!",
   q_river_real:"Melyik orszÃ¡gon folyik Ã¡t ez a folyÃ³?",q_map_guess:"Keresse meg az orszÃ¡got a térképen",
   fb_correct:"✓“ Helyes! +{pts}",fb_wrong:"✗ Rossz â–’ {ans}",fb_time:"â± IdÅ‘! â–’ {ans}",
   plates_more:"+{n} több",pct_complete:"{pct}% kész",
@@ -1870,7 +1870,7 @@ cs:{
   spotter_all:"VÅ¡echny zemÄ›",spotter_unknown:"NeznÃ¡mÃ¡ SPZ",
   spotter_not_in:"nenÃ­ v",spotter_but_in:"ale je v",
   album_title:"\u{1F4D4} Album SPZ",album_list:"\u{1F4DD} Seznam",album_map:"\u{1F5FA} Mapa",
-  album_empty_country:"ZatÃ­m nic z {country} "” pouÅ¾ij Spotter!",
+  album_empty_country:"ZatÃ­m nic z {country} – pouÅ¾ij Spotter!",
   album_empty:"ZatÃ­m nic neshromÃ¡Å¾dÄ›no!\nHraj EU SPZ nebo pouÅ¾ij Spotter.",
   album_codes:"kÃ³dy",
   hl_higher:"⬆️ VÃ­ce / DelÅ¡Ã­ / VÄ›tÅ¡Ã­",hl_lower:"⬇️ MénÄ› / KratÅ¡Ã­ / MenÅ¡Ã­",
@@ -1888,7 +1888,7 @@ cs:{
   q_pop_compare:"VÃ­ce nebo ménÄ› obyvatel?",
   q_hl_pop:"VÃ­ce obyvatel neÅ¾ {a}?",q_hl_river:"DelÅ¡Ã­ neÅ¾ {a}?",q_hl_area:"VÄ›tÅ¡Ã­ neÅ¾ {a}?",
   q_neighbor:"KterÃ¡ zemÄ› sousedÃ­ s…?",q_neighbor_not:"NESOUSEDÃ s…?",
-  q_plates_casual:"Ze které zemÄ› je tato SPZ?",q_plates_hard:"UrÄete region "” Å¾Ã¡dnÃ¡ nÃ¡povÄ›da!",
+  q_plates_casual:"Ze které zemÄ› je tato SPZ?",q_plates_hard:"UrÄete region – Å¾Ã¡dnÃ¡ nÃ¡povÄ›da!",
   q_river_real:"PÅ™es kterou zemi teÄe tato Å™eka?",q_map_guess:"Najdi zemi na mapÄ›",
   fb_correct:"✓“ SprÃ¡vnÄ›! +{pts}",fb_wrong:"✗ ChybnÄ› â–’ {ans}",fb_time:"â± ÄŒas! â–’ {ans}",
   plates_more:"+{n} dalÅ¡Ã­ch",pct_complete:"{pct}% hotovo",
@@ -1907,7 +1907,7 @@ sk:{
   spotter_all:"VÅ¡etky krajiny",spotter_unknown:"NeznÃ¡ma EÄŒV",
   spotter_not_in:"nie je v",spotter_but_in:"ale je v",
   album_title:"\u{1F4D4} Album EÄŒV",album_list:"\u{1F4DD} Zoznam",album_map:"\u{1F5FA} Mapa",
-  album_empty_country:"ZatiaÄ¾ niÄ z {country} "” pouÅ¾i Spotter!",
+  album_empty_country:"ZatiaÄ¾ niÄ z {country} – pouÅ¾i Spotter!",
   album_empty:"ZatiaÄ¾ niÄ nezbierane!\nHraj EÃš EÄŒV alebo pouÅ¾i Spotter.",
   album_codes:"kÃ³dy",
   hl_higher:"⬆️ Viac / DlhÅ¡Ã­ / VäÄÅ¡Ã­",hl_lower:"⬇️ Menej / KratÅ¡Ã­ / MenÅ¡Ã­",
@@ -1925,7 +1925,7 @@ sk:{
   q_pop_compare:"Viac alebo menej obyvateÄ¾ov?",
   q_hl_pop:"Viac obyvateÄ¾ov ako {a}?",q_hl_river:"DlhÅ¡Ã­ ako {a}?",q_hl_area:"VäÄÅ¡Ã­ ako {a}?",
   q_neighbor:"KtorÃ¡ krajina susedÃ­ s…?",q_neighbor_not:"NESUSEDÃ s…?",
-  q_plates_casual:"Z ktorej krajiny je tÃ¡to EÄŒV?",q_plates_hard:"Identifikujte regiÃ³n "” Å¾iadna nÃ¡poveda!",
+  q_plates_casual:"Z ktorej krajiny je tÃ¡to EÄŒV?",q_plates_hard:"Identifikujte regiÃ³n – Å¾iadna nÃ¡poveda!",
   q_river_real:"Cez ktorÃº krajinu teÄie tÃ¡to rieka?",q_map_guess:"NÃ¡jdi krajinu na mape",
   fb_correct:"✓“ SprÃ¡vne! +{pts}",fb_wrong:"✗ NesprÃ¡vne â–’ {ans}",fb_time:"â± ÄŒas! â–’ {ans}",
   plates_more:"+{n} ÄalÅ¡Ã­ch",pct_complete:"{pct}% hotovo",
@@ -1944,7 +1944,7 @@ hr:{
   spotter_all:"Sve drÅ¾ave",spotter_unknown:"Nepoznata registracija",
   spotter_not_in:"nije u",spotter_but_in:"ali je u",
   album_title:"\u{1F4D4} Album registracija",album_list:"\u{1F4DD} Popis",album_map:"\u{1F5FA} Karta",
-  album_empty_country:"JoÅ¡ niÅ¡ta iz {country} "” koristi Spotter!",
+  album_empty_country:"JoÅ¡ niÅ¡ta iz {country} – koristi Spotter!",
   album_empty:"JoÅ¡ niÅ¡ta skupljeno!\nIgraj EU registracije ili koristi Spotter.",
   album_codes:"kodovi",
   hl_higher:"⬆️ ViÅ¡e / DuÅ¾e / VeÄ‡e",hl_lower:"⬇️ Manje / KraÄ‡e / Manje",
@@ -1962,7 +1962,7 @@ hr:{
   q_pop_compare:"ViÅ¡e ili manje stanovnika?",
   q_hl_pop:"ViÅ¡e stanovnika od {a}?",q_hl_river:"DuÅ¾e od {a}?",q_hl_area:"VeÄ‡e od {a}?",
   q_neighbor:"Koja drÅ¾ava graniÄi s…?",q_neighbor_not:"NE graniÄi s…?",
-  q_plates_casual:"Iz koje drÅ¾ave je ova registracija?",q_plates_hard:"Identificirajte regiju "” nema naznake!",
+  q_plates_casual:"Iz koje drÅ¾ave je ova registracija?",q_plates_hard:"Identificirajte regiju – nema naznake!",
   q_river_real:"Kroz koju drÅ¾avu teÄe ova rijeka?",q_map_guess:"PronaÄ‘i drÅ¾avu na karti",
   fb_correct:"✓“ ToÄno! +{pts}",fb_wrong:"✗ PogreÅ¡no â–’ {ans}",fb_time:"â± Kraj vremena! â–’ {ans}",
   plates_more:"+{n} viÅ¡e",pct_complete:"{pct}% dovrÅ¡eno",
@@ -1981,7 +1981,7 @@ sl:{
   spotter_all:"Vse drÅ¾ave",spotter_unknown:"Neznana tablica",
   spotter_not_in:"ni v",spotter_but_in:"ampak je v",
   album_title:"\u{1F4D4} Album tablic",album_list:"\u{1F4DD} Seznam",album_map:"\u{1F5FA} Karta",
-  album_empty_country:"Å e niÄ iz {country} "” uporabi Spotter!",
+  album_empty_country:"Å e niÄ iz {country} – uporabi Spotter!",
   album_empty:"Å e niÄ zbrano!\nIgraj EU tablice ali uporabi Spotter.",
   album_codes:"kode",
   hl_higher:"⬆️ VeÄ / DaljÅ¡i / VeÄji",hl_lower:"⬇️ Manj / KrajÅ¡i / ManjÅ¡i",
@@ -1999,7 +1999,7 @@ sl:{
   q_pop_compare:"VeÄ ali manj prebivalcev?",
   q_hl_pop:"VeÄ prebivalcev kot {a}?",q_hl_river:"DaljÅ¡i kot {a}?",q_hl_area:"VeÄji kot {a}?",
   q_neighbor:"Katera drÅ¾ava meji na…?",q_neighbor_not:"NE meji na…?",
-  q_plates_casual:"Iz katere drÅ¾ave je ta tablica?",q_plates_hard:"Identificirajte regijo "” brez namiga!",
+  q_plates_casual:"Iz katere drÅ¾ave je ta tablica?",q_plates_hard:"Identificirajte regijo – brez namiga!",
   q_river_real:"Skozi katero drÅ¾avo teÄe ta reka?",q_map_guess:"PoiÅ¡Äi drÅ¾avo na karti",
   fb_correct:"✓“ Pravilno! +{pts}",fb_wrong:"✗ NapaÄno â–’ {ans}",fb_time:"â± ÄŒas! â–’ {ans}",
   plates_more:"+{n} veÄ",pct_complete:"{pct}% dokonÄano",
@@ -2018,7 +2018,7 @@ bg:{
   spotter_all:"Ð’ÑÐ¸Ñ‡ÐºÐ¸ ÑÑ‚Ñ€Ð°Ð½Ð¸",spotter_unknown:"ÐÐµÐ¿Ð¾Ð·Ð½Ð°Ñ‚Ð° Ñ‚Ð°Ð±ÐµÐ»Ð°",
   spotter_not_in:"Ð½Ðµ Ðµ Ð²",spotter_but_in:"Ð½Ð¾ Ðµ Ð²",
   album_title:"\u{1F4D4} ÐÐ»Ð±ÑƒÐ¼ Ñ Ñ‚Ð°Ð±ÐµÐ»Ð¸",album_list:"\u{1F4DD} Ð¡Ð¿Ð¸ÑÑŠÐº",album_map:"\u{1F5FA} ÐšÐ°Ñ€Ñ‚Ð°",
-  album_empty_country:"ÐÐ¸Ñ‰Ð¾ Ð¾Ñ‚ {country} Ð²ÑÐµ Ð¾Ñ‰Ðµ "” Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¹ Ð¡Ð¿Ð¾Ñ‚ÑŠÑ€Ð°!",
+  album_empty_country:"ÐÐ¸Ñ‰Ð¾ Ð¾Ñ‚ {country} Ð²ÑÐµ Ð¾Ñ‰Ðµ – Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¹ Ð¡Ð¿Ð¾Ñ‚ÑŠÑ€Ð°!",
   album_empty:"Ð’ÑÐµ Ð¾Ñ‰Ðµ Ð½Ð¸Ñ‰Ð¾ ÑÑŠÐ±Ñ€Ð°Ð½Ð¾!\nÐ˜Ð³Ñ€Ð°Ð¹ Ð•Ð¡ Ñ‚Ð°Ð±ÐµÐ»Ð¸ Ð¸Ð»Ð¸ Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¹ Ð¡Ð¿Ð¾Ñ‚ÑŠÑ€Ð°.",
   album_codes:"ÐºÐ¾Ð´Ð¾Ð²Ðµ",
   hl_higher:"⬆️ ÐŸÐ¾Ð²ÐµÑ‡Ðµ / ÐŸÐ¾-Ð´ÑŠÐ»Ð³Ð¾ / ÐŸÐ¾-Ð³Ð¾Ð»ÑÐ¼Ð¾",hl_lower:"⬇️ ÐŸÐ¾-Ð¼Ð°Ð»ÐºÐ¾ / ÐŸÐ¾-ÐºÑ€Ð°Ñ‚ÐºÐ¾ / ÐŸÐ¾-Ð¼Ð°Ð»ÐºÐ¾",
@@ -2036,7 +2036,7 @@ bg:{
   q_pop_compare:"ÐŸÐ¾Ð²ÐµÑ‡Ðµ Ð¸Ð»Ð¸ Ð¿Ð¾-Ð¼Ð°Ð»ÐºÐ¾ Ð¶Ð¸Ñ‚ÐµÐ»Ð¸?",
   q_hl_pop:"ÐŸÐ¾Ð²ÐµÑ‡Ðµ Ð¶Ð¸Ñ‚ÐµÐ»Ð¸ Ð¾Ñ‚ {a}?",q_hl_river:"ÐŸÐ¾-Ð´ÑŠÐ»Ð³Ð° Ð¾Ñ‚ {a}?",q_hl_area:"ÐŸÐ¾-Ð³Ð¾Ð»ÑÐ¼Ð° Ð¾Ñ‚ {a}?",
   q_neighbor:"ÐšÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð³Ñ€Ð°Ð½Ð¸Ñ‡Ð¸ Ñ…?",q_neighbor_not:"ÐÐ• Ð³Ñ€Ð°Ð½Ð¸Ñ‡Ð¸ Ñ…?",
-  q_plates_casual:"ÐžÑ‚ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ðµ Ñ‚Ð°Ð·Ð¸ Ñ‚Ð°Ð±ÐµÐ»Ð°?",q_plates_hard:"Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸Ñ–Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð° "” Ð±ÐµÐ· Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ°!",
+  q_plates_casual:"ÐžÑ‚ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ðµ Ñ‚Ð°Ð·Ð¸ Ñ‚Ð°Ð±ÐµÐ»Ð°?",q_plates_hard:"Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸Ñ–Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð° – Ð±ÐµÐ· Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ°!",
   q_river_real:"ÐŸÑ€ÐµÐ· ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ñ‚ÐµÑ‡Ðµ Ñ‚Ð°Ð·Ð¸ Ñ€ÐµÐºÐ°?",q_map_guess:"ÐÐ°Ð¼ÐµÑ€Ð¸ ÑÑ‚Ñ€Ð°Ð½Ð°Ñ‚Ð° Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð°Ñ‚Ð°",
   fb_correct:"✓“ ÐŸÑ€Ð°Ð²Ð¸Ð»Ð½Ð¾! +{pts}",fb_wrong:"✗ Ð“Ñ€ÐµÑˆÐ½Ð¾ â–’ {ans}",fb_time:"â± Ð’Ñ€ÐµÐ¼ÐµÑ‚Ð¾ Ð¸Ð·Ñ‚ÐµÑ‡Ðµ! â–’ {ans}",
   plates_more:"+{n} oÑ‰e",pct_complete:"{pct}% Ð·Ð°Ð²ÑŠÑ€ÑˆÐµÐ½Ð¾",
@@ -2055,7 +2055,7 @@ el:{
   spotter_all:"ÎŒÎ»ÎµÏ‚ Î¿Î¹ Ï‡ÏŽÏÎµÏ‚",spotter_unknown:"Î–Î³Î½Ï‰ÏƒÏ„Î· Ï€Î¹Î½Î±ÎºÎ¯Î´Î±",
   spotter_not_in:"Î´ÎµÎ½ ÎµÎ¯Î½Î±Î¹ ÏƒÎµ",spotter_but_in:"Î±Î»Î»Î¬ ÏƒÎµ",
   album_title:"\u{1F4D4} Î£Ï…Î»Î»Î¿Î³Î® Ï€Î¹Î½Î±ÎºÎ¯Î´Ï‰Î½",album_list:"\u{1F4DD} Î›Î¯ÏƒÏ„Î±",album_map:"\u{1F5FA} Î§Î¬ÏÏ„Î·Ï‚",
-  album_empty_country:"Î¤Î¯Ï€Î¿Ï„Î± Î±Ï€ÏŒ {country} Î±ÎºÏŒÎ¼Î± "” Ï‡ÏÎ·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¯Î·ÏƒÎµ Ï„Î¿ Spotter!",
+  album_empty_country:"Î¤Î¯Ï€Î¿Ï„Î± Î±Ï€ÏŒ {country} Î±ÎºÏŒÎ¼Î± – Ï‡ÏÎ·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¯Î·ÏƒÎµ Ï„Î¿ Spotter!",
   album_empty:"Î”ÎµÎ½ Î­Ï‡ÎµÎ¹Ï‚ ÏƒÏ…Î»Î»Î­Î¾ÎµÎ¹ Ï„Î¯Ï€Î¿Ï„Î± Î±ÎºÏŒÎ¼Î±!\nÎ Î±Î¯Î¾Îµ Ï€Î¹Î½Î±ÎºÎ¯Î´ÎµÏ‚ Î•Î• Î® Ï‡ÏÎ·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¯Î·ÏƒÎµ Ï„Î¿ Spotter.",
   album_codes:"ÎºÏ‰Î´Î¹ÎºÎ¿Î¯",
   hl_higher:"⬆️ Î ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÎ¿ / ÎœÎµÎ³Î±Î»ÏÏ„ÎµÏÎ¿ / ÎœÎµÎ³Î±Î»ÏÏ„ÎµÏÎ¿",hl_lower:"⬇️ Î›Î¹Î³ÏŒÏ„ÎµÏÎ¿ / ÎœÎ¹ÎºÏÏŒÏ„ÎµÏÎ¿ / ÎœÎ¹ÎºÏÏŒÏ„ÎµÏÎ¿",
@@ -2073,7 +2073,7 @@ el:{
   q_pop_compare:"Î ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÎ¿Î¹ Î® Î»Î¹Î³ÏŒÏ„ÎµÏÎ¿Î¹ ÎºÎ¬Ï„Î¿Î¹ÎºÎ¿Î¹;",
   q_hl_pop:"Î ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÎ¿Î¹ ÎºÎ¬Ï„Î¿Î¹ÎºÎ¿Î¹ Î±Ï€ÏŒ Ï„Î·/Ï„Î¿Î½ {a};",q_hl_river:"ÎœÎµÎ³Î±Î»ÏÏ„ÎµÏÎ¿ Î±Ï€ÏŒ Ï„Î·/Ï„Î¿Î½ {a};",q_hl_area:"ÎœÎµÎ³Î±Î»ÏÏ„ÎµÏÎ· Î±Ï€ÏŒ Ï„Î·/Ï„Î¿Î½ {a};",
   q_neighbor:"Î Î¿Î¹Î± Ï‡ÏŽÏÎ± ÏƒÏ…Î½Î¿ÏÎµÏÎµÎ¹ Î¼Îµ Ï„Î·/Ï„Î¿…;",q_neighbor_not:"Î”Î•Î ÏƒÏ…Î½Î¿ÏÎµÏÎµÎ¹ Î¼Îµ Ï„Î·/Ï„Î¿…;",
-  q_plates_casual:"Î‘Ï€ÏŒ Ï€Î¿Î¹Î± Ï‡ÏŽÏÎ± ÎµÎ¯Î½Î±Î¹ Î±Ï…Ï„Î® Î· Ï€Î¹Î½Î±ÎºÎ¯Î´Î±;",q_plates_hard:"Î‘Î½Î±Î³Î½Ï‰ÏÎ¯ÏƒÏ„Îµ Ï„Î·Î½ Ï€ÎµÏÎ¹Î¿Ï‡Î® "” Ï‡Ï‰ÏÎ¯Ï‚ Ï…Ï€ÏŒÎ´ÎµÎ¹Î¾Î·!",
+  q_plates_casual:"Î‘Ï€ÏŒ Ï€Î¿Î¹Î± Ï‡ÏŽÏÎ± ÎµÎ¯Î½Î±Î¹ Î±Ï…Ï„Î® Î· Ï€Î¹Î½Î±ÎºÎ¯Î´Î±;",q_plates_hard:"Î‘Î½Î±Î³Î½Ï‰ÏÎ¯ÏƒÏ„Îµ Ï„Î·Î½ Ï€ÎµÏÎ¹Î¿Ï‡Î® – Ï‡Ï‰ÏÎ¯Ï‚ Ï…Ï€ÏŒÎ´ÎµÎ¹Î¾Î·!",
   q_river_real:"ÎœÎ­ÏƒÎ± Î±Ï€ÏŒ Ï€Î¿Î¹Î± Ï‡ÏŽÏÎ± Î´Î¹Î±ÏÏÎ­ÎµÎ¹ Î±Ï…Ï„ÏŒ Ï„Î¿ Ï€Î¿Ï„Î¬Î¼Î¹;",q_map_guess:"Î’ÏÎµÏ‚ Ï„Î· Ï‡ÏŽÏÎ± ÏƒÏ„Î¿Î½ Ï‡Î¬ÏÏ„Î·",
   fb_correct:"✓“ Î£Ï‰ÏƒÏ„ÏŒ! +{pts}",fb_wrong:"✗ Î›Î¬Î¸Î¿Ï‚ â–’ {ans}",fb_time:"â± Î¤Î­Î»Î¿Ï‚ Ï‡ÏÏŒÎ½Î¿Ï…! â–’ {ans}",
   plates_more:"+{n} Î±ÎºÏŒÎ¼Î±",pct_complete:"{pct}% Î¿Î»Î¿ÎºÎ»Î·ÏÏŽÎ¸Î·ÎºÎµ",
@@ -2092,7 +2092,7 @@ da:{
   spotter_all:"Alle lande",spotter_unknown:"Ukendt nummerplade",
   spotter_not_in:"ikke i",spotter_but_in:"men i",
   album_title:"\u{1F4D4} Nummerplade-album",album_list:"\u{1F4DD} Liste",album_map:"\u{1F5FA} Kort",
-  album_empty_country:"Intet fra {country} endnu "” brug Spotter!",
+  album_empty_country:"Intet fra {country} endnu – brug Spotter!",
   album_empty:"Intet indsamlet endnu!\nSpil EU-nummerplader eller brug Spotter.",
   album_codes:"koder",
   hl_higher:"⬆️ Mere / LÃ¦ngere / StÃ¸rre",hl_lower:"⬇️ Mindre / Kortere / Mindre",
@@ -2110,7 +2110,7 @@ da:{
   q_pop_compare:"Flere eller fÃ¦rre indbyggere?",
   q_hl_pop:"Flere indbyggere end {a}?",q_hl_river:"LÃ¦ngere end {a}?",q_hl_area:"StÃ¸rre end {a}?",
   q_neighbor:"Hvilket land grÃ¦nser op til…?",q_neighbor_not:"GrÃ¦nser IKKE op til…?",
-  q_plates_casual:"Fra hvilket land er denne nummerplade?",q_plates_hard:"Identificér regionen "” ingen hint!",
+  q_plates_casual:"Fra hvilket land er denne nummerplade?",q_plates_hard:"Identificér regionen – ingen hint!",
   q_river_real:"Gennem hvilket land lÃ¸ber denne flod?",q_map_guess:"Find landet pÃ¥ kortet",
   fb_correct:"✓“ Korrekt! +{pts}",fb_wrong:"✗ Forkert â–’ {ans}",fb_time:"â± Tid! â–’ {ans}",
   plates_more:"+{n} mere",pct_complete:"{pct}% fuldfÃ¸rt",
@@ -2129,7 +2129,7 @@ sv:{
   spotter_all:"Alla länder",spotter_unknown:"Okänd skylt",
   spotter_not_in:"inte i",spotter_but_in:"men i",
   album_title:"\u{1F4D4} Skyltalbum",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Karta",
-  album_empty_country:"Inget frÃ¥n {country} ännu "” använd Spotter!",
+  album_empty_country:"Inget frÃ¥n {country} ännu – använd Spotter!",
   album_empty:"Inget samlat ännu!\nSpela EU-skyltar eller använd Spotter.",
   album_codes:"koder",
   hl_higher:"⬆️ Mer / Längre / Större",hl_lower:"⬇️ Mindre / Kortare / Mindre",
@@ -2147,7 +2147,7 @@ sv:{
   q_pop_compare:"Fler eller färre invÃ¥nare?",
   q_hl_pop:"Fler invÃ¥nare än {a}?",q_hl_river:"Längre än {a}?",q_hl_area:"Större än {a}?",
   q_neighbor:"Vilket land gränsar till…?",q_neighbor_not:"Gränsar INTE till…?",
-  q_plates_casual:"FrÃ¥n vilket land är den här skylten?",q_plates_hard:"Identifiera regionen "” inget tips!",
+  q_plates_casual:"FrÃ¥n vilket land är den här skylten?",q_plates_hard:"Identifiera regionen – inget tips!",
   q_river_real:"Genom vilket land flödar den här floden?",q_map_guess:"Hitta landet pÃ¥ kartan",
   fb_correct:"✓“ Rätt! +{pts}",fb_wrong:"✗ Fel â–’ {ans}",fb_time:"â± Tid! â–’ {ans}",
   plates_more:"+{n} till",pct_complete:"{pct}% klart",
@@ -2166,7 +2166,7 @@ fi:{
   spotter_all:"Kaikki maat",spotter_unknown:"Tuntematon rekisterikilpi",
   spotter_not_in:"ei kohteessa",spotter_but_in:"mutta kohteessa",
   album_title:"\u{1F4D4} Rekisterikilpialbumi",album_list:"\u{1F4DD} Luettelo",album_map:"\u{1F5FA} Kartta",
-  album_empty_country:"Ei vielä mitään kohteesta {country} "” käytä Spotteria!",
+  album_empty_country:"Ei vielä mitään kohteesta {country} – käytä Spotteria!",
   album_empty:"Ei vielä kerätty mitään!\nPelaa EU-rekisterikilpiä tai käytä Spotteria.",
   album_codes:"koodit",
   hl_higher:"⬆️ Enemmän / Pidempi / Suurempi",hl_lower:"⬇️ Vähemmän / Lyhyempi / Pienempi",
@@ -2184,7 +2184,7 @@ fi:{
   q_pop_compare:"Enemmän vai vähemmän asukkaita?",
   q_hl_pop:"Enemmän asukkaita kuin {a}?",q_hl_river:"Pidempi kuin {a}?",q_hl_area:"Suurempi kuin {a}?",
   q_neighbor:"Mikä maa rajoittuu…?",q_neighbor_not:"EI rajoitu…?",
-  q_plates_casual:"Minkä maan rekisterikilpi tämä on?",q_plates_hard:"Tunnista alue "” ei vihjettä!",
+  q_plates_casual:"Minkä maan rekisterikilpi tämä on?",q_plates_hard:"Tunnista alue – ei vihjettä!",
   q_river_real:"Minkä maan läpi tämä joki virtaa?",q_map_guess:"Etsi maa kartalta",
   fb_correct:"✓“ Oikein! +{pts}",fb_wrong:"✗ Väärin â–’ {ans}",fb_time:"â± Aika! â–’ {ans}",
   plates_more:"+{n} lisää",pct_complete:"{pct}% valmis",
@@ -2203,7 +2203,7 @@ et:{
   spotter_all:"KÃµik riigid",spotter_unknown:"Tundmatu numbrimärk",
   spotter_not_in:"ei ole",spotter_but_in:"aga on",
   album_title:"\u{1F4D4} Numbrimärkide album",album_list:"\u{1F4DD} Nimekiri",album_map:"\u{1F5FA} Kaart",
-  album_empty_country:"Veel midagi {country} "” kasuta Spotterit!",
+  album_empty_country:"Veel midagi {country} – kasuta Spotterit!",
   album_empty:"Veel midagi kogutud!\nMängi EL-i numbrimärke vÃµi kasuta Spotterit.",
   album_codes:"koodid",
   hl_higher:"⬆️ Rohkem / Pikem / Suurem",hl_lower:"⬇️ Vähem / Lühem / Väiksem",
@@ -2221,7 +2221,7 @@ et:{
   q_pop_compare:"Rohkem vÃµi vähem elanikke?",
   q_hl_pop:"Rohkem elanikke kui {a}?",q_hl_river:"Pikem kui {a}?",q_hl_area:"Suurem kui {a}?",
   q_neighbor:"Milline riik piirneb…?",q_neighbor_not:"EI piirne…?",
-  q_plates_casual:"Millisest riigist see numbrimärk on?",q_plates_hard:"Tuvasta piirkond "” vihjeta!",
+  q_plates_casual:"Millisest riigist see numbrimärk on?",q_plates_hard:"Tuvasta piirkond – vihjeta!",
   q_river_real:"Läbi millise riigi see jÃµgi voolab?",q_map_guess:"Leia riik kaardilt",
   fb_correct:"✓“ Ã•ige! +{pts}",fb_wrong:"✗ Vale â–’ {ans}",fb_time:"â± Aeg! â–’ {ans}",
   plates_more:"+{n} veel",pct_complete:"{pct}% täidetud",
@@ -2240,7 +2240,7 @@ lv:{
   spotter_all:"Visas valstis",spotter_unknown:"NezinÄma numura zÄ«me",
   spotter_not_in:"nav",spotter_but_in:"bet ir",
   album_title:"\u{1F4D4} Numuru zÄ«mju albums",album_list:"\u{1F4DD} Saraksts",album_map:"\u{1F5FA} Karte",
-  album_empty_country:"VÄ“l nekas no {country} "” izmanto Spotter!",
+  album_empty_country:"VÄ“l nekas no {country} – izmanto Spotter!",
   album_empty:"VÄ“l nekas savÄkts!\nSpÄ“lÄ“ ES numura zÄ«mes vai izmanto Spotter.",
   album_codes:"kodi",
   hl_higher:"⬆️ VairÄk / GarÄks / LielÄks",hl_lower:"⬇️ MazÄk / ÄªsÄks / MazÄks",
@@ -2258,7 +2258,7 @@ lv:{
   q_pop_compare:"VairÄk vai mazÄk iedzÄ«votÄju?",
   q_hl_pop:"VairÄk iedzÄ«votÄju nekÄ {a}?",q_hl_river:"GarÄka nekÄ {a}?",q_hl_area:"LielÄka nekÄ {a}?",
   q_neighbor:"Kura valsts robeÅ¾ojas ar…?",q_neighbor_not:"NAV robeÅ¾as ar…?",
-  q_plates_casual:"No kuras valsts ir Å¡Ä« numura zÄ«me?",q_plates_hard:"IdentificÄ“t reÄ£ionu "” bez padoma!",
+  q_plates_casual:"No kuras valsts ir Å¡Ä« numura zÄ«me?",q_plates_hard:"IdentificÄ“t reÄ£ionu – bez padoma!",
   q_river_real:"Caur kuru valsti tek Å¡Ä« upe?",q_map_guess:"Atrodi valsti kartÄ“",
   fb_correct:"✓“ Pareizi! +{pts}",fb_wrong:"✗ Nepareizi â–’ {ans}",fb_time:"â± Laiks beidzies! â–’ {ans}",
   plates_more:"+{n} vairÄk",pct_complete:"{pct}% pabeigts",
@@ -2277,7 +2277,7 @@ lt:{
   spotter_all:"Visos Å¡alys",spotter_unknown:"NeÅ¾inomas numeris",
   spotter_not_in:"nÄ—ra",spotter_but_in:"bet yra",
   album_title:"\u{1F4D4} NumeriÅ³ albumas",album_list:"\u{1F4DD} SÄ…raÅ¡as",album_map:"\u{1F5FA} Å½emÄ—lapis",
-  album_empty_country:"Dar nieko iÅ¡ {country} "” naudok Spotter!",
+  album_empty_country:"Dar nieko iÅ¡ {country} – naudok Spotter!",
   album_empty:"Dar nieko surinkta!\nÅ½aisk ES numerius arba naudok Spotter.",
   album_codes:"kodai",
   hl_higher:"⬆️ Daugiau / Ilgesnis / Didesnis",hl_lower:"⬇️ MaÅ¾iau / Trumpesnis / MaÅ¾esnis",
@@ -2295,7 +2295,7 @@ lt:{
   q_pop_compare:"Daugiau ar maÅ¾iau gyventojÅ³?",
   q_hl_pop:"Daugiau gyventojÅ³ nei {a}?",q_hl_river:"Ilgesnis nei {a}?",q_hl_area:"Didesnis nei {a}?",
   q_neighbor:"Kuri Å¡alis ribojasi su…?",q_neighbor_not:"NERIBOJASI su…?",
-  q_plates_casual:"IÅ¡ kurios Å¡alies yra Å¡is numeris?",q_plates_hard:"Nustatyti regionÄ… "” be uÅ¾uominos!",
+  q_plates_casual:"IÅ¡ kurios Å¡alies yra Å¡is numeris?",q_plates_hard:"Nustatyti regionÄ… – be uÅ¾uominos!",
   q_river_real:"Per kuriÄ… Å¡alÄ¯ teka Å¡i upÄ—?",q_map_guess:"Rask Å¡alÄ¯ Å¾emÄ—lapyje",
   fb_correct:"✓“ Teisingai! +{pts}",fb_wrong:"✗ Neteisingai â–’ {ans}",fb_time:"â± Laikas! â–’ {ans}",
   plates_more:"+{n} daugiau",pct_complete:"{pct}% baigta",
@@ -2314,7 +2314,7 @@ mt:{
   spotter_all:"PajjiÅ¼i kollha",spotter_unknown:"PjanÄ‹a mhux magÄ§rufa",
   spotter_not_in:"mhux fi",spotter_but_in:"imma fi",
   album_title:"\u{1F4D4} Kollezzjoni tal-PjanÄ‹i",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mappa",
-  album_empty_country:"Xejn minn {country} s'issa "” uÅ¼a s-Spotter!",
+  album_empty_country:"Xejn minn {country} s'issa – uÅ¼a s-Spotter!",
   album_empty:"Xejn miÄ¡bur s'issa!\nIlgÄ§ab il-pjanÄ‹i tal-UE jew uÅ¼a s-Spotter.",
   album_codes:"kodiÄ‹i",
   hl_higher:"⬆️ Aktar / Itwal / Akbar",hl_lower:"⬇️ Inqas / Iqsar / IÅ¼gÄ§ar",
@@ -2332,7 +2332,7 @@ mt:{
   q_pop_compare:"Aktar jew inqas abitanti?",
   q_hl_pop:"Aktar abitanti minn {a}?",q_hl_river:"Itwal minn {a}?",q_hl_area:"Akbar minn {a}?",
   q_neighbor:"Liema pajjiÅ¼ jibbordjja ma'…?",q_neighbor_not:"MA jibbordjjax ma'…?",
-  q_plates_casual:"Minn liema pajjiÅ¼ hija din il-pjanÄ‹a?",q_plates_hard:"Identifika r-reÄ¡jun "” l-ebda indikazzjoni!",
+  q_plates_casual:"Minn liema pajjiÅ¼ hija din il-pjanÄ‹a?",q_plates_hard:"Identifika r-reÄ¡jun – l-ebda indikazzjoni!",
   q_river_real:"Minn liema pajjiÅ¼ jgÄ§addi dan ix-xmara?",q_map_guess:"Sib il-pajjiÅ¼ fuq il-mappa",
   fb_correct:"✓“ Korretti! +{pts}",fb_wrong:"✗ Ä¦aÅ¼in â–’ {ans}",fb_time:"â± Ä¦in! â–’ {ans}",
   plates_more:"+{n} aktar",pct_complete:"{pct}% lest",
@@ -2351,7 +2351,7 @@ ga:{
   spotter_all:"Gach tÃ­r",spotter_unknown:"PlÃ¡ta anaithnid",
   spotter_not_in:"nÃ­l i",spotter_but_in:"ach tÃ¡ i",
   album_title:"\u{1F4D4} Cnuasach PlÃ¡ta",album_list:"\u{1F4DD} Liosta",album_map:"\u{1F5FA} LéarscÃ¡il",
-  album_empty_country:"FÃ³s aon rud Ã³ {country} "” ÃºsÃ¡id an Spotter!",
+  album_empty_country:"FÃ³s aon rud Ã³ {country} – ÃºsÃ¡id an Spotter!",
   album_empty:"FÃ³s aon rud bailithe!\nImir plÃ¡ta AE nÃ³ ÃºsÃ¡id an Spotter.",
   album_codes:"cÃ³id",
   hl_higher:"⬆️ NÃ­os mÃ³ / NÃ­os faide / NÃ­os mÃ³",hl_lower:"⬇️ NÃ­os lÃº / NÃ­os giorra / NÃ­os lÃº",
@@ -2369,7 +2369,7 @@ ga:{
   q_pop_compare:"NÃ­os mÃ³ nÃ³ nÃ­os lÃº cÃ³naitheoirÃ­?",
   q_hl_pop:"NÃ­os mÃ³ cÃ³naitheoirÃ­ nÃ¡ {a}?",q_hl_river:"NÃ­os faide nÃ¡ {a}?",q_hl_area:"NÃ­os mÃ³ nÃ¡ {a}?",
   q_neighbor:"Cén tÃ­r a bhfuil teorainn le…?",q_neighbor_not:"NÃL teorainn le…?",
-  q_plates_casual:"Cén tÃ­r ar as an plÃ¡ta seo?",q_plates_hard:"Aithin an réigiÃºn "” gan leid!",
+  q_plates_casual:"Cén tÃ­r ar as an plÃ¡ta seo?",q_plates_hard:"Aithin an réigiÃºn – gan leid!",
   q_river_real:"TrÃ­ cén tÃ­r a ritheann an abhainn seo?",q_map_guess:"Aimsigh an tÃ­r ar an léarscÃ¡il",
   fb_correct:"✓“ Ceart! +{pts}",fb_wrong:"✗ MÃ­cheart â–’ {ans}",fb_time:"â± Am! â–’ {ans}",
   plates_more:"+{n} nÃ­os mÃ³",pct_complete:"{pct}% crÃ­ochnaithe",
@@ -2379,7 +2379,7 @@ ga:{
   diff_desc_casual:"\u{1F7E2} Casual: Socair Â· Gan teorainn ama Â· âˆž Saol",diff_desc_hc:"\u{1F525} Hardcore: ClÃ¡sach Â· Gan teorainn Â· 3 Saol",diff_desc_surv:"\u{1F480} Survival: In aghaidh an chloig Â· 8s Â· 3 Saol",hud_lives:"SAOLTA",score_mult_max:"Iolraitheoir Uasméid",score_time_bonus:"BÃ³nas Ama",pts_abbr:"p.",score_correct_lbl:"ceart",mode_wappen:"Armas",mode_slf:"Cathair-TÃ­r-Abhainn",mode_euro:"Boinn Euro"
 }
 };
-/* t(key, vars) "” translate + interpolate */
+/* t(key, vars) – translate + interpolate */
 function t(key,vars){
   const lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
   let s=(LANG[lang]&&LANG[lang][key])||(LANG.en&&LANG.en[key])||(LANG.de&&LANG.de[key])||key;
@@ -2389,14 +2389,14 @@ function t(key,vars){
 }
 /* Backwards-compat alias */
 function T(k){return t(k);}
-/* setLanguage "” persists choice, marks as manual override */
+/* setLanguage – persists choice, marks as manual override */
 function setLanguage(lang){
   if(typeof S!=='undefined')S.language=lang;
   localStorage.setItem('gq_lang',lang);
   localStorage.setItem('geoquest_lang_manual','1');
   render();
 }
-/* getCountryName(cc, lang) "” Intl.DisplayNames for all 25 locales */
+/* getCountryName(cc, lang) – Intl.DisplayNames for all 25 locales */
 function getCountryName(cc,lang){
   if(!cc||typeof cc!=="string")return cc||"";
   try{
@@ -2408,7 +2408,7 @@ function getCountryName(cc,lang){
     return new Intl.DisplayNames([locale],{type:'region'}).of(cc.toUpperCase())||cc;
   }catch(e){return cc;}
 }
-/* displayCountry(name) "” translate country display name for current language */
+/* displayCountry(name) – translate country display name for current language */
 function displayCountry(name){
   if(!name||typeof name!=="string")return name||"";
   const lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
@@ -2530,7 +2530,7 @@ const MODES=[
   {id:"pop_compare",icon:"\u{1F465}",title:"Mehr Einwohner?",      group:"lifestyle",prompt:"Hat [Land B] mehr oder weniger Einwohner?",desc:"Vergleiche Einwohnerzahlen zweier L\u00e4nder"},
   /* ---- EU Plates ---- */
   {id:"plate_casual",icon:"\u{1F697}",title:"EU-Kennzeichen",      group:"eu_plates",prompt:"Woher kommt dieses Kennzeichen?",          desc:"EU-Kennzeichen mit Hinweisen erkennen"},
-  {id:"plate_hard",  icon:"\u{1F6A6}",title:"Kennzeichen Pro",     group:"eu_plates",prompt:"Region erkennen "” kein Tipp\!",    desc:"EU-Kennzeichen ohne Hinweise "” Profi-Level"},
+  {id:"plate_hard",  icon:"\u{1F6A6}",title:"Kennzeichen Pro",     group:"eu_plates",prompt:"Region erkennen – kein Tipp\!",    desc:"EU-Kennzeichen ohne Hinweise – Profi-Level"},
   /* ---- Higher / Lower (existing) ---- */
   {id:"hl_pop",   icon:"\u{1F465}",title:"H/L Einwohner",  group:"hl_compare",prompt:"Mehr Einwohner?",   desc:"Welches Land hat mehr Einwohner?"},
   {id:"hl_river", icon:"\u{1F30A}",title:"H/L Flussl\u00e4nge", group:"hl_compare",prompt:"L\u00e4ngerer Fluss?",desc:"Welcher Fluss ist l\u00e4nger?"},
@@ -2602,7 +2602,7 @@ function genCurrRealQ(){
   const _crSrc=_crPool.length>=2?_crPool:CURR_REAL;
   const idx=~~(rng()*_crSrc.length);
   const cor=_crSrc[idx];
-  /* Show only currency name+ISO "” NOT country name (would give away the answer) */
+  /* Show only currency name+ISO – NOT country name (would give away the answer) */
   const dis=CURR_REAL.filter((_,i)=>i!==idx).sort(()=>rng()-.5).slice(0,3).map(x=>x.n+" ("+x.iso+")");
   const ans=cor.n+" ("+cor.iso+")";
   return{type:"curr_real",prompt:"Welche W\u00e4hrung hat …",subj:cor.c,ans,opts:sh([ans,...dis]),meta:cor.n,lid:cor.c,cc:ccFromCountry(cor.c)};
@@ -2634,8 +2634,8 @@ function genRiverRealQ(){
   return{type:"river_real",prompt:t("q_river_real"),subj:cor.n,ans:cor.c,opts:sh([cor.c,...dis]),meta,lid:cor.n,cc:ccFromCountry(cor.c)};
 }
 
-/* Phase 30 "” Default neighbor map (fallback when neighbors.json is empty/broken) */
-/* Phase 91+92: static comparison data "” 96 countries */
+/* Phase 30 – Default neighbor map (fallback when neighbors.json is empty/broken) */
+/* Phase 91+92: static comparison data – 96 countries */
 /* keys match COUNTRIES[].c exactly */
 /* lat=northernmost latitude, gdp=GDP/capita USD, elev=highest m, */
 /* coast=coastline km, life=life expectancy, age=median age, */
@@ -2797,7 +2797,7 @@ const _DEFAULT_NEIGHBORS={
   "Kroatien":["Slowenien","Ungarn","Serbien","Bosnien","Montenegro"],
   "Slowenien":["Italien","Ã–sterreich","Ungarn","Kroatien"],
 };
-/* Phase 86 "” Grenzkarte (nur Laender aus COUNTRIES) */
+/* Phase 86 – Grenzkarte (nur Laender aus COUNTRIES) */
 const ROUTE_BORDERS={
  "Germany":["France","Belgium","Netherlands","Denmark","Poland","Czech Republic","Austria","Switzerland"],
  "France":["Germany","Belgium","Switzerland","Italy","Spain"],
@@ -2883,7 +2883,7 @@ const ROUTE_BORDERS={
  "Bangladesh":["India","Myanmar"],
  "UAE":["Saudi Arabia"],
 };
-/* Phase 144 "” Grid-Kriterien (Diversity Overhaul) */
+/* Phase 144 – Grid-Kriterien (Diversity Overhaul) */
 /* Lookup sets for new criterion types */
 const _ISLAND_STATES=new Set(["Australia","Cuba","Iceland","Indonesia","Ireland","Jamaica","Japan","Madagascar","New Zealand","Philippines","Singapore","Sri Lanka","Taiwan","United Kingdom","Trinidad and Tobago","Cyprus","Malta","Sri Lanka"]);
 const _LANDLOCKED_SET=new Set(["Afghanistan","Austria","Bolivia","Botswana","Bulgaria","Czech Republic","Ethiopia","Hungary","Kazakhstan","Laos","Macedonia","Mali","Mongolia","Nepal","Paraguay","Serbia","Slovakia","Switzerland","Uganda","Zambia","Zimbabwe"]);
@@ -3114,7 +3114,7 @@ function genHLAreaQ(){
   const ans=b.area>a.area?"higher":"lower";
   return{type:"hl_area",prompt:t("q_hl_area",{a:a.c}),nameA:a.c,valA:fmt(a.area),nameB:b.c,valB:fmt(b.area),ans,opts:["higher","lower"],lid:b.c,cc:ccFromCountry(b.c)};
 }
-/* Phase 95: inline area (kmÂ²) + population (millions) "” self-contained, no external files */
+/* Phase 95: inline area (kmÂ²) + population (millions) – self-contained, no external files */
 const COMP_AREA={
 "Afghanistan":652230,"Algeria":2381741,"Angola":1246700,"Argentina":2780400,
 "Australia":7692024,"Austria":83871,"Bangladesh":147570,"Belgium":30528,
@@ -3186,7 +3186,7 @@ function _compQ(type,prompt,a,b,aVal,bVal,fmtFn){
   return{type,prompt,subj:'',opts:[a,b],ans,meta,lid:a+'|'+b,cc:ccFromCountry(ans)};
 }
 function genCompAreaQ(){
-  /* Phase 95: uses inline COMP_AREA "” no external file needed */
+  /* Phase 95: uses inline COMP_AREA – no external file needed */
   const keys=Object.keys(COMP_AREA);
   if(keys.length<2)return null;
   const _fc=_rfilt(COUNTRIES,4);const _cc=new Set(_fc.map(x=>x.cc));
@@ -3198,7 +3198,7 @@ function genCompAreaQ(){
   return _compQ('comp_area','Welches Land ist größer?',a,b,COMP_AREA[a],COMP_AREA[b],fmt);
 }
 function genCompPopQ(){
-  /* Phase 95: uses inline COMP_POP (millions) "” no external file needed */
+  /* Phase 95: uses inline COMP_POP (millions) – no external file needed */
   const keys=Object.keys(COMP_POP);
   if(keys.length<2)return null;
   const _fc=_rfilt(COUNTRIES,4);const _cc=new Set(_fc.map(x=>x.cc));
@@ -3290,7 +3290,7 @@ function genNeighborQ(){
 }
 
 /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   PHASE 33 "” REALTIME 1vs1 MULTIPLAYER  (Supabase Broadcast)
+   PHASE 33 – REALTIME 1vs1 MULTIPLAYER  (Supabase Broadcast)
    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 /* Helpers */
@@ -3328,7 +3328,7 @@ function mpCountdown(seed,mode){
         if(S.ph==="gameover")render();
       });
       S.mp=null;
-      /* Sync start "” same seed on both sides */
+      /* Sync start – same seed on both sides */
       initRng(seed);
       startGame(mode||"city");
       /* Tag session as multiplayer */
@@ -3471,7 +3471,7 @@ function renderMultiplayerLobby(){
       <h2 style="font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:.5rem">Warte auf Gegner…</h2>
       <p style="color:var(--text3);font-size:.82rem;margin-bottom:1.4rem">Gib diesen Code an deinen Freund:</p>
       <div style="display:inline-block;background:var(--bg3);border:3px solid #7c3aed;border-radius:16px;padding:1rem 2rem;font-size:3rem;font-weight:900;letter-spacing:10px;color:#7c3aed;margin-bottom:1rem">${esc(mp.code)}</div>
-      <p style="color:var(--text3);font-size:.74rem">Verbunden "” Channel aktiv</p>
+      <p style="color:var(--text3);font-size:.74rem">Verbunden – Channel aktiv</p>
       <div style="margin-top:1.5rem;display:flex;justify-content:center">
         <div class="spinner"></div>
       </div>
@@ -3487,7 +3487,7 @@ function renderMultiplayerLobby(){
     </div>`;
   }
 
-  /* â”€â”€ Phase: both in room "” ready check â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* â”€â”€ Phase: both in room – ready check â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   if(mp.phase==="ready"){
     const myR=mp.myReady,oppR=mp.oppReady;
     return`<div class="scr" style="text-align:center">
@@ -3543,7 +3543,7 @@ function getDailyStreakCount(){
 
 function loadUnlocked(){return _gqLoad("gq_unlocked",["pure_geo"]);}
 function saveUnlocked(arr){_gqSave("gq_unlocked",arr);}
-function isCategoryUnlocked(catId){return true;/* TEST MODE "” all categories unlocked */}
+function isCategoryUnlocked(catId){return true;/* TEST MODE – all categories unlocked */}
 function buyCategory(catId){
   if(!sb||!sbUser?.id){showToast("Bitte einloggen\!"); return;}
   const cat=MODE_CATS[catId];if(!cat)return;
@@ -3648,7 +3648,7 @@ function useFreeze(){
 }
 
 const ROUNDS=10,BASE=100,TB=10;
-/* Phase 81 "” Titel-Schwellenwerte */
+/* Phase 81 – Titel-Schwellenwerte */
 const TITLE_THRESHOLDS=[
   {min:750000,title:"Meister",  coins:500, icon:"\u{1F451}"},
   {min:300000,title:"Platin",   coins:250, icon:"\u{1F48E}"},
@@ -3667,9 +3667,9 @@ const LEAGUES=[
 function getLeague(id){return LEAGUES.find(l=>l.id===id)||LEAGUES[0];}
 
 const TIERS=[
-  {m:10,x:3.0,l:"\u{1F525}\u{1F525}\u{1F525} LEGEND\u00c4R "” 3\u00d7"},
-  {m:5, x:2.0,l:"\u{1F525}\u{1F525} ON FIRE "” 2\u00d7"},
-  {m:3, x:1.5,l:"\u{1F525} HEISS "” 1.5\u00d7"},
+  {m:10,x:3.0,l:"\u{1F525}\u{1F525}\u{1F525} LEGEND\u00c4R – 3\u00d7"},
+  {m:5, x:2.0,l:"\u{1F525}\u{1F525} ON FIRE – 2\u00d7"},
+  {m:3, x:1.5,l:"\u{1F525} HEISS – 1.5\u00d7"},
   {m:0, x:1.0,l:""},
 ];
 
@@ -3680,12 +3680,12 @@ let sb=null,sbUser=null,sbProfile=null,sbStamps=new Set();
 function ccFromCountry(name){const c=COUNTRIES.find(x=>x.c===name);return c?c.cc:null;}
 function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://flagcdn.com/w40/${cc}.png" style="height:22px;vertical-align:middle;border-radius:2px" alt="${name}">`:"";}
 
-/* Phase 97-1: Zombie-SW-Killer "” läuft vor Supabase-Init */
+/* Phase 97-1: Zombie-SW-Killer – läuft vor Supabase-Init */
 /* Tötet veraltete Service Worker, die Updates blockieren   */
 (function _zombieKiller(){
   var SW_VER='gq-v9',LS_KEY='__gq_sw_ver';
   try{
-    if(localStorage.getItem(LS_KEY)===SW_VER)return; /* aktuell "” nichts zu tun */
+    if(localStorage.getItem(LS_KEY)===SW_VER)return; /* aktuell – nichts zu tun */
     if(!('serviceWorker' in navigator)){localStorage.setItem(LS_KEY,SW_VER);return;}
     navigator.serviceWorker.getRegistrations().then(function(regs){
       if(regs.length===0){localStorage.setItem(LS_KEY,SW_VER);return;}
@@ -3705,7 +3705,7 @@ function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://
         ?caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k);}));})
         :Promise.resolve();
       Promise.all(kills.concat([cacheClear])).then(function(){
-        location.reload(true); /* Hard-Reload "” erzwingt frisches HTML vom Server */
+        location.reload(true); /* Hard-Reload – erzwingt frisches HTML vom Server */
       });
     });
   }catch(e){console.warn('[GQ] zombieKiller error:',e);}
@@ -3715,7 +3715,7 @@ const sbOK=SUPABASE_URL.includes("supabase.co");
 let sbAuthPending=sbOK; /* Phase 81: true until getSession() resolves */
 if(sbOK){
   try{
-    /* Phase 100: auth.lock bypass "” verhindert navigator.locks Deadlock bei _initialize() */
+    /* Phase 100: auth.lock bypass – verhindert navigator.locks Deadlock bei _initialize() */
     sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON,{auth:{lock:async function(n,t,fn){return await fn();}}});
     initAuth();
   }catch(e){
@@ -3728,10 +3728,10 @@ if(sbOK){
 }
 
 async function initAuth(){
-  /* Phase 89: interner Wächter "” falls getSession()/signInAnonymously() nie settled */
+  /* Phase 89: interner Wächter – falls getSession()/signInAnonymously() nie settled */
   const _authTO=setTimeout(()=>{
     if(sbAuthPending){
-      console.warn("[GQ] initAuth: 4s Wächter ausgelöst "” bereinige Auth-Tokens...");
+      console.warn("[GQ] initAuth: 4s Wächter ausgelöst – bereinige Auth-Tokens...");
       /* Phase 93: korrupte Supabase-Tokens aus localStorage löschen */
       try{
         Object.keys(localStorage)
@@ -3752,12 +3752,12 @@ async function initAuth(){
     }
     if((event==="TOKEN_REFRESHED"||event==="SIGNED_IN")&&session?.user){
       if(S.authMode==="new_password")return;/* keep recovery modal open */
-      /* Phase 101: loadProfile ohne await "” sonst blockiert _notifyAllSubscribers */
+      /* Phase 101: loadProfile ohne await – sonst blockiert _notifyAllSubscribers */
       if(\!sbUser||sbUser.id\!==session.user.id){sbUser=session.user;loadProfile();}
     }
   });
   try{
-    /* Phase 97-2: getSession mit 3s Timeout "” kein endloses Hängen */
+    /* Phase 97-2: getSession mit 3s Timeout – kein endloses Hängen */
     const _gsTmo=new Promise((_,rej)=>setTimeout(()=>rej(new Error('getSession 3s timeout')),3000));
     const{data:{session}}=await Promise.race([sb.auth.getSession(),_gsTmo]);
     if(session){sbUser=session.user;await loadProfile();}
@@ -3771,9 +3771,9 @@ async function initAuth(){
     console.warn("[GQ] initAuth error:",e?.message||e);
   }finally{
     clearTimeout(_authTO); /* Phase 89: Wächter stoppen */
-    /* ALWAYS unblock render "” even if Supabase throws */
+    /* ALWAYS unblock render – even if Supabase throws */
     sbAuthPending=false;
-    console.log("[GQ] initAuth() finally "” sbAuthPending=false, calling render()");
+    console.log("[GQ] initAuth() finally – sbAuthPending=false, calling render()");
     render();
   }
 }
@@ -3791,7 +3791,7 @@ async function loadProfile(){
       if(data.last_daily_date===_today){const _dk=getDailyKey();if(\!localStorage.getItem(_dk)){try{localStorage.setItem(_dk,JSON.stringify({score:0,ts:Date.now()}));}catch(_e){}}}
     }
   }
-  /* Phase 93: Smart-Merge Kennzeichen "” Cloud âˆª Lokal */
+  /* Phase 93: Smart-Merge Kennzeichen – Cloud âˆª Lokal */
   if(data&&typeof data.plates_collected==="string"){
     try{
       const _cp=JSON.parse(data.plates_collected||"[]");
@@ -3806,7 +3806,7 @@ async function loadProfile(){
             .eq("id",sbUser.id).then(()=>{},()=>{});
         }
       }else if(!data.plates_collected||data.plates_collected==="[]"){
-        /* Noch keine Cloud-Daten "” lokale Daten hochladen */
+        /* Noch keine Cloud-Daten – lokale Daten hochladen */
         const _lp2=_gqLoad("gq_coll",[]);
         if(_lp2.length>0){
           sb.from("profiles").update({plates_collected:JSON.stringify(_lp2)})
@@ -3815,7 +3815,7 @@ async function loadProfile(){
       }
     }catch(_e){console.warn("[GQ] plates-merge Fehler",_e);}
   }else if(data&&!data.plates_collected){
-    /* Spalte fehlt noch (vor Migration) "” lokale Daten sind maßgeblich */
+    /* Spalte fehlt noch (vor Migration) – lokale Daten sind maßgeblich */
     const _lp3=_gqLoad("gq_coll",[]);
     S.collectedPlates=_lp3.length>0?_lp3:S.collectedPlates;
   }
@@ -3962,7 +3962,7 @@ async function doLogout(){
   await sb.auth.signOut();
   sbUser=null;sbProfile=null;sbStamps=new Set();
   try{localStorage.removeItem("gq_username");}catch(e){}
-  /* Reset UI state "” prevents stale mid-game or modal views after logout */
+  /* Reset UI state – prevents stale mid-game or modal views after logout */
   S.ph="menu";S.tab="home";S.mpModal=false;S.payModal=false;S.lockModal=null;
   S.authEmail="";S.authPassword="";S.authConfirm="";S.authError="";
   const{data}=await sb.auth.signInAnonymously();
@@ -4005,10 +4005,10 @@ async function doSetNewPassword(){
     render();
   }
 }
-/* Phase 85 "” Coming Soon toast */
+/* Phase 85 – Coming Soon toast */
 function showComingSoonToast(name){showToast("\u{1F680} "+name+" kommt bald\! Bleib gespannt.");}
 async function saveSession(mode,score,bs,correct,durationMs){
-  /* Sanity-cap score before submitting "” max honest = ROUNDS*(BASE+12*TB)*3*3 */
+  /* Sanity-cap score before submitting – max honest = ROUNDS*(BASE+12*TB)*3*3 */
   const _maxScore=Math.ceil(ROUNDS*(BASE+12*TB)*3*3*1.1);
   score=Math.min(score,_maxScore);
   bs=Math.min(bs,ROUNDS);
@@ -4031,7 +4031,7 @@ async function fetchLeaderboard(mode){
   const{data}=await sb.from("leaderboard_weekly").select("*").eq("mode",mode).order("rank",{ascending:true}).limit(30);
   return data||[];
 }
-/* Phase 81 "” Titel-System */
+/* Phase 81 – Titel-System */
 function getTitleForScore(ts){
   return(TITLE_THRESHOLDS.find(t=>ts>=t.min)||TITLE_THRESHOLDS[TITLE_THRESHOLDS.length-1]).title;
 }
@@ -4138,7 +4138,7 @@ let S={
 };
 let tIv=null,fTo=null,toastTo=null;
 
-/* â”€â”€ Phase 42: Anti-Cheat "” Proxy wrapper for S in console â”€â”€ */
+/* â”€â”€ Phase 42: Anti-Cheat – Proxy wrapper for S in console â”€â”€ */
 (function(){
   const GUARDED=new Set(["sc","correct","st","bs","pts","collectedPlates","sbProfile"]);
   if(typeof Proxy==="undefined")return;
@@ -4341,7 +4341,7 @@ function genOutlineQ(){
   const picked=sh2(dis).slice(0,3);
   return{type:"outline",prompt:t("q_outline"),subj:corCC,ans:corC,opts:sh2([corC,...picked]),lid:corCC,cc:corCC};
 }
-/* EU-KENNZEICHEN GENERATORS (Phase 23B) "” smart same-country distractors */
+/* EU-KENNZEICHEN GENERATORS (Phase 23B) – smart same-country distractors */
 function genPlateQ(hardcore){
   const pool=PLATES_DATA;
   if(\!pool||pool.length<5)return null;
@@ -4434,7 +4434,7 @@ function genTimezoneQ(){
   if(wrongs.length<3)return null;
   const opts=sh([correct,...wrongs.slice(0,3)]);
   return{type:"beta_timezone",
-    prompt:"[BETA] \u23F0 Wenn es in "+cA+" 12:00 Uhr ist "” wie sp\u00e4t ist es in "+cB+"?",
+    prompt:"[BETA] \u23F0 Wenn es in "+cA+" 12:00 Uhr ist – wie sp\u00e4t ist es in "+cB+"?",
     subj:cA+" \u2192 "+cB,ans:correct,opts,meta:"",lid:cA,cc:null,cat:"geo"};
 }
 function genClimateQ(){
@@ -4681,7 +4681,7 @@ function answer(a){
       if(\!S.collectedPlates.includes(_key)){
         S.collectedPlates.push(_key);saveCollectedPlates(S.collectedPlates);saveCollectedTs(_key,Date.now());
         const _allR=PLATES_DATA.filter(p=>p.code===_code&&p.country===_pc.country);
-        showToast("â­ Neu: "+_code+" "” "+_pc.region+(_allR.length>1?" +"+(_allR.length-1)+" weitere":"")+"!");
+        showToast("â­ Neu: "+_code+" – "+_pc.region+(_allR.length>1?" +"+(_allR.length-1)+" weitere":"")+"!");
       }
     }
   }
@@ -5228,7 +5228,7 @@ function startGame(m){
     scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,
     half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),
     survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,lives:S.diff==="casual"?999:3});
-  /* Phase 86 "” custom puzzle modes */
+  /* Phase 86 – custom puzzle modes */
   if(_m==="logic_grid"){initLogikGitter();render();return;}
   if(_m==="travel_route"){initReiseroute();render();return;}
   if(_m==="slf"){initSLF();render();return;}
@@ -5256,14 +5256,14 @@ function shareResult(){
   const text=`\u{1F30D} GeoQuest: ${S.sc.toLocaleString()} Punkte\! ${stars}\n${S.correct}/${ROUNDS} richtig \u2022 Streak: ${S.bs}\u00d7\nKannst du das toppen? \u{1F3C6}`;
   navigator.clipboard.writeText(text).then(showCopyToast).catch(()=>{});
 }
-/* Phase 60: Ad hook "” swap in real adsbygoogle.push({}) when AdSense is live */
+/* Phase 60: Ad hook – swap in real adsbygoogle.push({}) when AdSense is live */
 /* Phase 151: flip to true when AdSense is approved and banners are configured */
 const ENABLE_ADS=false;
 function loadAd(){
   if(!ENABLE_ADS)return; /* P151: ads off */
   /* adsbygoogle.push({}); */
 }
-/* Phase 61: Viral share "” Web Share API with clipboard fallback */
+/* Phase 61: Viral share – Web Share API with clipboard fallback */
 function shareGame(){
   const text=`Ich habe gerade ${S.sc.toLocaleString()} Punkte in GeoQuest erreicht\! Schaffst du mehr?`;
   const url=window.location.href;
@@ -5310,7 +5310,7 @@ function _gqLoad(key,fallback){
     if(w===null||typeof w!=="object"||!("d" in w))return w||fallback;
     const expected=_fnv1a(JSON.stringify(w.d)+_GQ_SALT);
     if(w.c!==expected){
-      console.warn("GeoQuest: Integritätsfehler für",key,""” Daten zurückgesetzt");
+      console.warn("GeoQuest: Integritätsfehler für",key,"– Daten zurückgesetzt");
       localStorage.removeItem(key);
       return fallback;
     }
@@ -5363,7 +5363,7 @@ function timeAgo(ts){
 }
 function saveCollectedPlates(arr){
   _gqSave("gq_coll",arr);
-  /* Phase 93: Dual-Save "” Kennzeichen auch in Supabase sichern */
+  /* Phase 93: Dual-Save – Kennzeichen auch in Supabase sichern */
   if(sb&&sbUser){
     sb.from("profiles").update({plates_collected:JSON.stringify(arr)})
       .eq("id",sbUser.id).then(()=>{},()=>{});
@@ -5433,7 +5433,7 @@ function renderDailyHero(){
   </div>`;
 }
 
-/* RENDER "” main dispatcher */
+/* RENDER – main dispatcher */
 /* Phase 33 T2 helper: percentage for duell bar */
 function duellPct(a,b){const mx=Math.max(a,b,1);return Math.round(a/mx*100);}
 
@@ -5645,7 +5645,7 @@ function render(){
 
   /* PLAYING / FEEDBACK */
   const{sc,st,bs,rd,tm,q,sel,ok,pts,mode,diff}=S;
-  /* Phase 86 "” custom puzzle modes */
+  /* Phase 86 – custom puzzle modes */
   if(mode==="logic_grid"&&S.ph==="playing"){
     app.innerHTML=renderLogikGitter(sc);
     requestAnimationFrame(()=>{document.getElementById("lg-inp")?.focus();});
@@ -5747,7 +5747,7 @@ function render(){
     const pc=PLATES_DATA.find(p=>p.code===q.subj);
     if(pc)plateReveal=`<div style="text-align:center;color:var(--text2);font-size:.8rem;margin-top:4px">${pc.region} \u00b7 ${pc.country}${pc.state?" \u00b7 "+pc.state:""}</div>`;
   }
-  /* Phase 34: Map-Guesser "” early return, D3 map replaces answer buttons */
+  /* Phase 34: Map-Guesser – early return, D3 map replaces answer buttons */
   if(q.type==="map_guess"){
     const mapFb=sel===null?"":ok
       ?`<div class="fb ok">\u2713 Richtig\! +${pts}</div>`
@@ -5825,7 +5825,7 @@ function render(){
   /* P136-fix: 50/50 disabled for comp_ modes -- pre-declared vars, no nested escaping */
   const _is2ans=S.q&&S.q.type&&S.q.type.startsWith('comp_');
   const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
-  const _j5label=_is2ans?'"”':'('+(pu.five0||0)+')';
+  const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
   const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';
   const puBar=`<div class="pu-bar">
     <button class="pu-btn${S.half_removed?" pu-used":""}" onclick="useFiveO()" ${(S.half_removed||(pu.five0||0)===0||_is2ans)?"disabled":""} style="${_j5sty}" title="${_j5title}">\u2702 50/50 <span style="font-size:.62rem">${_j5label}</span></button>
@@ -5883,7 +5883,7 @@ function drawCountryOutline(cc,targetId){
 }
 
 
-/* Phase 34 "” D3 World Map component */
+/* Phase 34 – D3 World Map component */
 function drawWorldMap(targetName,sel,ok){
   const container=document.getElementById('gq-map-svg');
   if(\!container||typeof d3==='undefined'||typeof topojson==='undefined'){
@@ -6024,7 +6024,7 @@ function migrateCollectedPlates(){
     const matches=[...new Set(PLATES_DATA.filter(p=>p.code===code).map(p=>p.country))];
     if(matches.length===1){changed=true;return collKey(code,matches[0]);}
     if(matches.length>1){changed=true;return collKey(code,matches[0]);} /* take first if ambiguous */
-    return null; /* unknown code "” discard */
+    return null; /* unknown code – discard */
   }).filter(Boolean);
   /* Deduplicate */
   S.collectedPlates=[...new Set(S.collectedPlates)];
@@ -6036,7 +6036,7 @@ function migrateCollectedPlates(){
    We want ONE entry per code per country in the album.
    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 function getUniquePlatesForCountry(country){
-  /* Returns [{code, mainRegion, extraCount}] "” one entry per unique code */
+  /* Returns [{code, mainRegion, extraCount}] – one entry per unique code */
   const codeMap={};
   PLATES_DATA.filter(p=>p.country===country).forEach(p=>{
     if(\!codeMap[p.code])codeMap[p.code]={code:p.code,mainRegion:p.region,count:0};
@@ -6057,7 +6057,7 @@ function spotterCollect(){
   const code=(S.spotterInput||"").toUpperCase().trim();
   if(\!code){S.spotterMsg="Bitte Kennzeichen eingeben\!";S.spotterOk=null;render();return;}
   const country=S.spotterCountry&&S.spotterCountry\!=="all"?S.spotterCountry:null;
-  /* Phase 104: Fuzzy-Lookup "” normalisiere zuerst (0â–’O, 1â–’I) */
+  /* Phase 104: Fuzzy-Lookup – normalisiere zuerst (0â–’O, 1â–’I) */
   const _norm=s=>s.replace(/0/g,'O').replace(/1/g,'I').replace(/Ãœ/g,'UE').replace(/Ã–/g,'OE').replace(/Ã„/g,'AE');
   const codeNorm=_norm(code);
   /* Find matching plates: exact â–’ normalisiert â–’ prefix */
@@ -6068,7 +6068,7 @@ function spotterCollect(){
     candidates=PLATES_DATA.filter(p=>_match(codeNorm,p));
     if(candidates.length)S.spotterInput=codeNorm;
   }
-  /* Fallback 2: Prefix-Match (min 2 Zeichen) "” zeige Vorschläge */
+  /* Fallback 2: Prefix-Match (min 2 Zeichen) – zeige Vorschläge */
   let prefixSuggestions=[];
   if(\!candidates.length&&code.length>=2){
     prefixSuggestions=[...new Set(
@@ -6077,7 +6077,7 @@ function spotterCollect(){
     )];
   }
   if(\!candidates.length){
-    /* Phase 105b: TYPE_COUNTRY "” Länder ohne Regionen */
+    /* Phase 105b: TYPE_COUNTRY – Länder ohne Regionen */
     if(country){
       const _cEnt=PLATES_DATA.filter(p=>p.country===country);
       if(_cEnt.length===1&&_cEnt[0].region==='Nationales Kennzeichen'){
@@ -6089,7 +6089,7 @@ function spotterCollect(){
     const elsewhere=PLATES_DATA.filter(p=>p.code===code||p.code===codeNorm);
     if(elsewhere.length){
       const others=[...new Set(elsewhere.map(p=>p.country))].join(", ");
-      S.spotterMsg="â“ '"+esc(code)+"' "+t("spotter_not_in")+" "+(country?displayCountry(country):t("spotter_all"))+" "” "+t("spotter_but_in")+": "+esc(others);
+      S.spotterMsg="â“ '"+esc(code)+"' "+t("spotter_not_in")+" "+(country?displayCountry(country):t("spotter_all"))+" – "+t("spotter_but_in")+": "+esc(others);
     }else if(prefixSuggestions.length){
       S.spotterMsg="ðŸ” Meintest du: "+prefixSuggestions.join(", ")+"?";
     }else{
@@ -6105,7 +6105,7 @@ function spotterCollect(){
   }else{
     S.collectedPlates.push(key);saveCollectedPlates(S.collectedPlates);saveCollectedTs(key,Date.now());
     const extras=candidates.length-1;
-    S.spotterMsg="\u{1F389} "+code+(mainPlate.region?" "” "+esc(mainPlate.region):"")+(" ("+esc(displayCountry(mainCountry))+")")+(extras?" +"+extras+" weitere":"")+"\!";
+    S.spotterMsg="\u{1F389} "+code+(mainPlate.region?" – "+esc(mainPlate.region):"")+(" ("+esc(displayCountry(mainCountry))+")")+(extras?" +"+extras+" weitere":"")+"\!";
     S.sc+=50;showPtsPopup(50);S.spotterOk=true;soundStamp();
   }
   S.spotterInput="";render();
@@ -6133,7 +6133,7 @@ function renderCollectionScreen(){
   const pct=Math.round(coll.length/Math.max(total,1)*100);
   const countries=[...new Set(PLATES_DATA.map(p=>p.country))].sort();
   const view=S.albumView||"list";
-  /* P126: reset legacy "all" state "” spotter dropdown no longer has "all" */
+  /* P126: reset legacy "all" state – spotter dropdown no longer has "all" */
   if(S.albumCountry==="all"||\!S.albumCountry){S.albumCountry=_smartDefaultCountry()||"Deutschland";S.spotterCountry=S.albumCountry;localStorage.setItem('geoquest_pref_country',S.albumCountry);}
   const acF=S.albumCountry||"all";
   const sCountry=S.spotterCountry||"all";
@@ -6158,24 +6158,24 @@ function renderCollectionScreen(){
     'T\u00fcrkei':{ph:'Nummer (z.B. 06, 34...)',info:'Nummer links = Provinz (34=Istanbul)',tp:'tr',ex:'34',lbl:'34 steht f\u00fcr Istanbul',cc:'TR',nums:'34 ABC 12'},
     'Kroatien':{ph:'K\u00fcrzel (z.B. ZG, ST...)',info:'2 Buchst. links = Gespanschaft',tp:'de',ex:'ZG',lbl:'ZG steht f\u00fcr Zagreb',cc:'HR',nums:'ZG 123-AB'},
     'Slowenien':{ph:'K\u00fcrzel (z.B. LJ, MB...)',info:'2 Buchst. links = Region',tp:'de',ex:'LJ',lbl:'LJ steht f\u00fcr Ljubljana',cc:'SLO',nums:'LJ 123-AB'},
-    'Niederlande':{ph:'NL',info:'Kein Regionalk\u00fcrzel "” Oval-Code "NL" eingeben',tp:'nat',ex:'NL',lbl:'NL = Niederlande',cc:'NL',nums:''},
-    'Belgien':{ph:'B',info:'Kein Regionalk\u00fcrzel "” Oval-Code "B" eingeben',tp:'nat',ex:'B',lbl:'B = Belgien',cc:'B',nums:''},
-    'D\u00e4nemark':{ph:'DK',info:'Kein Regionalk\u00fcrzel "” Oval-Code "DK" eingeben',tp:'nat',ex:'DK',lbl:'DK = D\u00e4nemark',cc:'DK',nums:''},
-    'Schweden':{ph:'S',info:'Kein Regionalk\u00fcrzel "” Oval-Code "S" eingeben',tp:'nat',ex:'S',lbl:'S = Schweden',cc:'S',nums:''},
-    'Norwegen':{ph:'N',info:'Kein Regionalk\u00fcrzel "” Oval-Code "N" eingeben',tp:'nat',ex:'N',lbl:'N = Norwegen',cc:'N',nums:''},
-    'Spanien':{ph:'E',info:'Kein Regionalk\u00fcrzel "” Oval-Code "E" eingeben',tp:'nat',ex:'E',lbl:'E = Spanien',cc:'E',nums:''},
-    'Portugal':{ph:'P',info:'Kein Regionalk\u00fcrzel "” Oval-Code "P" eingeben',tp:'nat',ex:'P',lbl:'P = Portugal',cc:'P',nums:''},
-    'Finnland':{ph:'FIN',info:'Kein Regionalk\u00fcrzel "” Oval-Code "FIN" eingeben',tp:'nat',ex:'FIN',lbl:'FIN = Finnland',cc:'FIN',nums:''},
-    'Irland':{ph:'IRL',info:'Kein Regionalk\u00fcrzel "” Oval-Code "IRL" eingeben',tp:'nat',ex:'IRL',lbl:'IRL = Irland',cc:'IRL',nums:''},
-    'Gro\u00dfbritannien':{ph:'GB',info:'Kein Regionalk\u00fcrzel "” Oval-Code "GB" eingeben',tp:'nat',ex:'GB',lbl:'GB = Gro\u00dfbritannien',cc:'GB',nums:''},
-    'Ungarn':{ph:'H',info:'Kein Regionalk\u00fcrzel "” Oval-Code "H" eingeben',tp:'nat',ex:'H',lbl:'H = Ungarn',cc:'H',nums:''},
-    'Slowakei':{ph:'SK',info:'Kein Regionalk\u00fcrzel "” Oval-Code "SK" eingeben',tp:'nat',ex:'SK',lbl:'SK = Slowakei',cc:'SK',nums:''},
-    'Tschechien':{ph:'CZ',info:'Kein Regionalk\u00fcrzel "” Oval-Code "CZ" eingeben',tp:'nat',ex:'CZ',lbl:'CZ = Tschechien',cc:'CZ',nums:''},
-    'Luxemburg':{ph:'L',info:'Kein Regionalk\u00fcrzel "” Oval-Code "L" eingeben',tp:'nat',ex:'L',lbl:'L = Luxemburg',cc:'L',nums:''},
-    'Litauen':{ph:'LT',info:'Kein Regionalk\u00fcrzel "” Oval-Code "LT" eingeben',tp:'nat',ex:'LT',lbl:'LT = Litauen',cc:'LT',nums:''},
-    'Lettland':{ph:'LV',info:'Kein Regionalk\u00fcrzel "” Oval-Code "LV" eingeben',tp:'nat',ex:'LV',lbl:'LV = Lettland',cc:'LV',nums:''},
-    'Estland':{ph:'EST',info:'Kein Regionalk\u00fcrzel "” Oval-Code "EST" eingeben',tp:'nat',ex:'EST',lbl:'EST = Estland',cc:'EST',nums:''},
-    'Ukraine':{ph:'UA',info:'Kein Regionalk\u00fcrzel "” Oval-Code "UA" eingeben',tp:'nat',ex:'UA',lbl:'UA = Ukraine',cc:'UA',nums:''},
+    'Niederlande':{ph:'NL',info:'Kein Regionalk\u00fcrzel – Oval-Code "NL" eingeben',tp:'nat',ex:'NL',lbl:'NL = Niederlande',cc:'NL',nums:''},
+    'Belgien':{ph:'B',info:'Kein Regionalk\u00fcrzel – Oval-Code "B" eingeben',tp:'nat',ex:'B',lbl:'B = Belgien',cc:'B',nums:''},
+    'D\u00e4nemark':{ph:'DK',info:'Kein Regionalk\u00fcrzel – Oval-Code "DK" eingeben',tp:'nat',ex:'DK',lbl:'DK = D\u00e4nemark',cc:'DK',nums:''},
+    'Schweden':{ph:'S',info:'Kein Regionalk\u00fcrzel – Oval-Code "S" eingeben',tp:'nat',ex:'S',lbl:'S = Schweden',cc:'S',nums:''},
+    'Norwegen':{ph:'N',info:'Kein Regionalk\u00fcrzel – Oval-Code "N" eingeben',tp:'nat',ex:'N',lbl:'N = Norwegen',cc:'N',nums:''},
+    'Spanien':{ph:'E',info:'Kein Regionalk\u00fcrzel – Oval-Code "E" eingeben',tp:'nat',ex:'E',lbl:'E = Spanien',cc:'E',nums:''},
+    'Portugal':{ph:'P',info:'Kein Regionalk\u00fcrzel – Oval-Code "P" eingeben',tp:'nat',ex:'P',lbl:'P = Portugal',cc:'P',nums:''},
+    'Finnland':{ph:'FIN',info:'Kein Regionalk\u00fcrzel – Oval-Code "FIN" eingeben',tp:'nat',ex:'FIN',lbl:'FIN = Finnland',cc:'FIN',nums:''},
+    'Irland':{ph:'IRL',info:'Kein Regionalk\u00fcrzel – Oval-Code "IRL" eingeben',tp:'nat',ex:'IRL',lbl:'IRL = Irland',cc:'IRL',nums:''},
+    'Gro\u00dfbritannien':{ph:'GB',info:'Kein Regionalk\u00fcrzel – Oval-Code "GB" eingeben',tp:'nat',ex:'GB',lbl:'GB = Gro\u00dfbritannien',cc:'GB',nums:''},
+    'Ungarn':{ph:'H',info:'Kein Regionalk\u00fcrzel – Oval-Code "H" eingeben',tp:'nat',ex:'H',lbl:'H = Ungarn',cc:'H',nums:''},
+    'Slowakei':{ph:'SK',info:'Kein Regionalk\u00fcrzel – Oval-Code "SK" eingeben',tp:'nat',ex:'SK',lbl:'SK = Slowakei',cc:'SK',nums:''},
+    'Tschechien':{ph:'CZ',info:'Kein Regionalk\u00fcrzel – Oval-Code "CZ" eingeben',tp:'nat',ex:'CZ',lbl:'CZ = Tschechien',cc:'CZ',nums:''},
+    'Luxemburg':{ph:'L',info:'Kein Regionalk\u00fcrzel – Oval-Code "L" eingeben',tp:'nat',ex:'L',lbl:'L = Luxemburg',cc:'L',nums:''},
+    'Litauen':{ph:'LT',info:'Kein Regionalk\u00fcrzel – Oval-Code "LT" eingeben',tp:'nat',ex:'LT',lbl:'LT = Litauen',cc:'LT',nums:''},
+    'Lettland':{ph:'LV',info:'Kein Regionalk\u00fcrzel – Oval-Code "LV" eingeben',tp:'nat',ex:'LV',lbl:'LV = Lettland',cc:'LV',nums:''},
+    'Estland':{ph:'EST',info:'Kein Regionalk\u00fcrzel – Oval-Code "EST" eingeben',tp:'nat',ex:'EST',lbl:'EST = Estland',cc:'EST',nums:''},
+    'Ukraine':{ph:'UA',info:'Kein Regionalk\u00fcrzel – Oval-Code "UA" eingeben',tp:'nat',ex:'UA',lbl:'UA = Ukraine',cc:'UA',nums:''},
   };
   const r=M[c]||{ph:'K\u00fcrzel eingeben',info:'',tp:'de',ex:'AB',lbl:'Regionales K\u00fcrzel',cc:'EU',nums:'1234'};
   /* Phase 105b: NAT dynamic ph+info aus PLATES_DATA */
@@ -6183,7 +6183,7 @@ function renderCollectionScreen(){
     const _ne=PLATES_DATA.filter(p=>p.country===c);
     if(_ne.length===1){const _nc=_ne[0].code;
       r.ph='"'+_nc+'" eingeben';
-      r.info='Keine Regionen "” "'+_nc+'" eingeben, um das Land zu sammeln';
+      r.info='Keine Regionen – "'+_nc+'" eingeben, um das Land zu sammeln';
       r.ex=_nc;r.lbl=_nc+' = '+c;r.cc=_nc;}
   }
   return r;};
@@ -6219,16 +6219,16 @@ function renderCollectionScreen(){
       +'<text x="'+(24+bw/2)+'" y="24" text-anchor="middle" fill="#1a1a1a" font-size="'+fs+'" font-family="Arial" font-weight="bold">'+ex+'</text>';
     const numsX=24+bw+10;
     const numsEl='<text x="'+numsX+'" y="24" text-anchor="start" fill="#aaa" font-size="9.5" font-family="Arial">'+nums+'</text>';
-    /* DE / AT / IT / PL ... "” EU stripe left, yellow box, number right */
+    /* DE / AT / IT / PL ... – EU stripe left, yellow box, number right */
     if(tp==='de')return wrap(euStripe+yBox+numsEl);
-    /* CH "” Swiss cross left (red/white), yellow box, number right */
+    /* CH – Swiss cross left (red/white), yellow box, number right */
     if(tp==='ch'){
       const chCross='<rect x="2" y="5" width="16" height="28" rx="3" fill="#D00"/>'
         +'<rect x="7" y="8" width="6" height="22" rx="1" fill="white"/>'
         +'<rect x="3" y="16" width="14" height="6" rx="1" fill="white"/>';
       return wrap(chCross+yBox+numsEl);
     }
-    /* FR "” EU stripe [F] left, example centre, dept number right (blue box) */
+    /* FR – EU stripe [F] left, example centre, dept number right (blue box) */
     if(tp==='fr'){
       const deptBox='<rect x="130" y="0" width="32" height="38" rx="4" fill="#002699" opacity=".9"/>'
         +'<rect x="126" y="4" width="32" height="30" rx="3" fill="none" stroke="#f59e0b" stroke-width="2"/>'
@@ -6236,7 +6236,7 @@ function renderCollectionScreen(){
       const frNums='<text x="76" y="24" text-anchor="middle" fill="#bbb" font-size="9.5" font-family="Arial">'+nums+'</text>';
       return wrap(euStripe+frNums+deptBox);
     }
-    /* TR "” yellow box left, pipe, number right */
+    /* TR – yellow box left, pipe, number right */
     if(tp==='tr'){
       return wrap(
         '<rect x="4" y="5" width="36" height="28" rx="3" fill="#fffacc" stroke="#f59e0b" stroke-width="2"/>'
@@ -6244,7 +6244,7 @@ function renderCollectionScreen(){
         +'<line x1="45" y1="9" x2="45" y2="29" stroke="#ddd" stroke-width="1"/>'
         +'<text x="104" y="24" text-anchor="middle" fill="#aaa" font-size="9.5" font-family="Arial">'+nums+'</text>');
     }
-    /* NAT "” oval badge */
+    /* NAT – oval badge */
     if(tp==='nat'){
       const nfs=ex.length>3?12:ex.length===3?14:17;
       return'<svg width="82" height="52" viewBox="0 0 82 52"'
@@ -6255,7 +6255,7 @@ function renderCollectionScreen(){
         +' font-family="Arial" font-weight="900">'+ex+'</text>'
         +'</svg>';
     }
-    /* default "” EU fallback */
+    /* default – EU fallback */
     return wrap(euStripe+yBox+numsEl);
   })();
   const spotVal=S.spotterInput||"";
@@ -6340,7 +6340,7 @@ function renderCollectionScreen(){
       </div>`;
     }
     /* Part B: Akkordeon-Archiv (P127: bulletproof <details>/<summary>) */
-    /* FIX: summary must NOT use display:flex or list-style:none "”        */
+    /* FIX: summary must NOT use display:flex or list-style:none –        */
     /* those CSS properties break the native toggle in WebKit/iOS.         */
     const showCountries=(acF==="all"||acF==="nat")?countries:[acF];
     const archiveRows=showCountries.map(country=>{
@@ -6350,12 +6350,12 @@ function renderCollectionScreen(){
         const collHere=uPlates.filter(u=>isCollected(u.code,country));
         if(\!collHere.length)return"";
         const cPct=Math.round(collHere.length/Math.max(uPlates.length,1)*100);
-        /* Render plates "” use mainRegion||region fallback so nothing is dropped */
+        /* Render plates – use mainRegion||region fallback so nothing is dropped */
         const plateHtml=collHere
           .map(u=>renderRealPlate(u.code,u.mainRegion||u.region||"",u.count-1||0))
           .join("");
         return`<details style="margin-bottom:.5rem;border:1px solid var(--border);border-radius:10px;overflow:hidden">
-          <summary style="padding:.5rem .75rem;cursor:pointer;font-weight:700;font-size:.82rem;user-select:none;background:var(--bg2)">${esc(country)} "” ${collHere.length}/${uPlates.length} \u00b7 ${cPct}%</summary>
+          <summary style="padding:.5rem .75rem;cursor:pointer;font-weight:700;font-size:.82rem;user-select:none;background:var(--bg2)">${esc(country)} – ${collHere.length}/${uPlates.length} \u00b7 ${cPct}%</summary>
           <div style="padding:.6rem .75rem;background:var(--bg)">
             <div style="height:3px;background:var(--bg4);border-radius:2px;overflow:hidden;margin-bottom:.6rem"><div style="height:100%;width:${cPct}%;background:#10b981;border-radius:2px"></div></div>
             <div class="real-plate-grid">${plateHtml}</div>
@@ -6501,7 +6501,7 @@ function drawAlbumMap(){
 
 /* HOME TAB */
 /* ===================================================================
-   PHASE 86 "” Logik-Gitter + Reiseroute
+   PHASE 86 – Logik-Gitter + Reiseroute
    =================================================================== */
 
 /* Shared: save score and transition to gameover screen */
@@ -6666,7 +6666,7 @@ function renderLogikGitter(sc){
       if(cell.country){
         gridHtml+=`<div class="lg-cell lg-filled">${flagOf(cell.country)}<div class="lg-cell-name">${esc(displayCountry(cell.country))}</div></div>`;
       }else if(gd.solved||gd.failed){
-        gridHtml+='<div class="lg-cell lg-empty-done">"”</div>';
+        gridHtml+='<div class="lg-cell lg-empty-done">–</div>';
       }else{
         const act=isAct?' lg-active':'';
         gridHtml+=`<div class="lg-cell lg-empty${act}" data-r="${r}" data-c="${c}" style="background:#f8f9fa;border:2px dashed #adb5bd;border-radius:8px;display:flex;align-items:center;justify-content:center;height:50px;font-weight:bold;color:#20c997;font-size:1.5em;cursor:pointer"
@@ -6940,7 +6940,7 @@ function renderLandHauptstadt(sc){
   const timerCol=timeLeft<=10?"#ef4444":timeLeft<=20?"#f59e0b":"#10b981";
   if(phase==="result"){
     const{cityValid,countryValid,riverValid}=S.slfData.results||{};
-    const rowHtml=(label,val,valid)=>`<div class="slf-result-row"><span class="slf-result-label">${label}</span><span class="slf-result-val">${esc(val)||""”"}</span><span style="font-size:1rem">${valid?"✓…":"âŒ"}</span></div>`;
+    const rowHtml=(label,val,valid)=>`<div class="slf-result-row"><span class="slf-result-label">${label}</span><span class="slf-result-val">${esc(val)||"–"}</span><span style="font-size:1rem">${valid?"✓…":"âŒ"}</span></div>`;
     return`<div class="scr"><div class="panel">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
         <div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">ERGEBNIS</div><div style="font-size:1.4rem;font-weight:900">ðŸ“ ${letter}</div></div>
@@ -7122,7 +7122,7 @@ function renderHomeTab(){
   return _homeHTML;
 }
 
-/* LERNEN TAB "” Flashcards (Phase 23C) */
+/* LERNEN TAB – Flashcards (Phase 23C) */
 function renderLernenTab(){
   const pool=(()=>{
     let p=PLATES_DATA;
@@ -7163,7 +7163,7 @@ function renderLernenTab(){
   </div>`;
 }
 
-/* LIGA TAB "” Leaderboard */
+/* LIGA TAB – Leaderboard */
 function renderLigaTab(){
   const isGuest=!sbUser?.email;
   const _wkStart=new Date();_wkStart.setDate(_wkStart.getDate()-(_wkStart.getDay()||7)+1);_wkStart.setHours(0,0,0,0);
@@ -7202,7 +7202,7 @@ async function loadLiga(){
   S.ligaData=data||[];S.ligaLoading=false;render();
 }
 
-/* PROFIL TAB "” Auth + Passport + Stats */
+/* PROFIL TAB – Auth + Passport + Stats */
 function promptNameChange(){
   if(!sbUser?.email){showToast("Nur für angemeldete Nutzer.");return;}
   const cur=sbProfile?.username||localStorage.getItem("gq_username")||"";
@@ -7372,7 +7372,7 @@ function renderProfilTab(){
         <span style="color:var(--text3);font-size:.75rem">â–¾</span></div>
       </summary>
       <div style="padding:0 .85rem .85rem">
-        <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.5rem">MASTERY MAP "” ${totalStamps} Länder</div>
+        <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.5rem">MASTERY MAP – ${totalStamps} Länder</div>
         <div style="font-size:.62rem;color:var(--text3);margin-bottom:.5rem"><span style="color:#10b981">â– </span> Gold Â· <span style="color:#3b82f6">â– </span> Silber Â· <span style="color:#f59e0b">â– </span> Bronze</div>
         <div class="mastery-tiles">${tileHtml}</div>
         ${modeBars?`<div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin:.75rem 0 .55rem">GENAUIGKEIT PRO MODUS</div>${modeBars}`:""}
@@ -7554,7 +7554,7 @@ function renderPayModal(){
   return`<div class="modal-overlay" onclick="if(event.target===this){S.payModal=false;render()}"><div class="modal-box" style="max-width:360px">
     <div style="font-size:1.2rem;font-weight:900;color:var(--text);margin-bottom:.35rem">\u{1F4B3} Shop</div>
     ${prem?`<div style="background:rgba(16,185,129,.1);border:1px solid #10b981;border-radius:8px;padding:.45rem .7rem;font-size:.74rem;color:#34d399;margin-bottom:.6rem">\u{1F451} Premium aktiv${until?" "¢ bis "+until:""}</div>`:""}
-    <div style="color:var(--text3);font-size:.7rem;margin-bottom:.7rem">${STRIPE_PK?"Stripe aktiv":"Testmodus "” kein echtes Geld"}</div>
+    <div style="color:var(--text3);font-size:.7rem;margin-bottom:.7rem">${STRIPE_PK?"Stripe aktiv":"Testmodus – kein echtes Geld"}</div>
     ${PAY_PRODUCTS.map(p=>`<div class="pay-product${p.featured?" featured":""}" onclick="processMockPayment('${p.id}')"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px"><div class="pay-product-name">${p.name}${p.featured?" â­":""}</div><div class="pay-product-price">${p.price}</div></div><div class="pay-product-desc">${p.desc}</div></div>`).join("")}
     <button class="btn-g" style="margin-bottom:0;margin-top:.35rem" onclick="S.payModal=false;render()">Schließen</button>
   </div></div>`;
@@ -7679,7 +7679,7 @@ async function loadGameData(){
   const loaded=[PLATES_DATA.length,'plates',CURR_REAL.length,'curr',CAPS_POP.length,'caps',RIVERS_REAL.length,'rivers',Object.keys(NEIGHBORS).length,'nb',AREA_DATA.length,'areas'];
   console.log('GeoQuest data:',loaded.join(' '));
   if(\!PLATES_DATA.length||\!CURR_REAL.length||\!CAPS_POP.length){
-    /* core files missing "” show toast after render but still render */
+    /* core files missing – show toast after render but still render */
     setTimeout(()=>showToast('Fehler beim Laden einiger Datensätze.'),800);
   }
   await new Promise(r=>setTimeout(r,120));
@@ -7689,7 +7689,7 @@ async function loadGameData(){
 if("serviceWorker"in navigator){
   try{
     const swSrc=`const CACHE='gq-v9';
-/* Phase 99: passiver SW "” kein fetch-Handler, blockt NIE Netzwerk-Requests */
+/* Phase 99: passiver SW – kein fetch-Handler, blockt NIE Netzwerk-Requests */
 self.addEventListener('install',function(){self.skipWaiting();});
 self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k);}));}).then(function(){return self.clients.claim();}));});`;
     const blob=new Blob([swSrc],{type:"application/javascript"});
@@ -7697,7 +7697,7 @@ self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(func
   }catch(e){}
   window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();S.pwaPrompt=e;const b=document.getElementById("pwa-banner");if(b)b.style.display="flex";});
 }
-/* Phase 32: Tab-focus anti-cheat "” timer keeps running in background */
+/* Phase 32: Tab-focus anti-cheat – timer keeps running in background */
 document.addEventListener("visibilitychange",()=>{
   if(!document.hidden)return;          /* only fire when going hidden */
   if(S.ph!=="playing"||S.sel!==null)return; /* not mid-question */
@@ -7771,7 +7771,7 @@ async function detectUserCountry(){
     const tid=setTimeout(()=>ctrl.abort(),6000);
     const res=await fetch('https://ipapi.co/json/',{signal:ctrl.signal,cache:'no-store'});
     clearTimeout(tid);
-    if(!res.ok){console.warn('[GQ] ipapi.co HTTP '+res.status+' "” Ländererkennung übersprungen');return;}
+    if(!res.ok){console.warn('[GQ] ipapi.co HTTP '+res.status+' – Ländererkennung übersprungen');return;}
     const d=await res.json();
     const enName=d.country_name||'';
     const deCountry=_GQ_IP_DE_MAP[enName]||enName;
@@ -7821,10 +7821,10 @@ loadGameData().then(()=>{
   console.log("[GQ] loadGameData done, sbAuthPending=",sbAuthPending);
   if(!sbAuthPending)render();
   setTimeout(detectUserCountry,2000);
-  /* Phase 89: Hard-Override "” falls initAuth() nach 1s noch hängt */
+  /* Phase 89: Hard-Override – falls initAuth() nach 1s noch hängt */
   setTimeout(()=>{
     if(sbAuthPending){
-      console.warn("[GQ] 4.5s Kill-Switch: sbAuthPending noch true "” erzwinge render()");
+      console.warn("[GQ] 4.5s Kill-Switch: sbAuthPending noch true – erzwinge render()");
       sbAuthPending=false;
       render();
     }
@@ -7868,10 +7868,10 @@ _HTML_HEAD = '''<!DOCTYPE html>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>GeoQuest "” Das Geografie-Quiz</title>
-<meta name="description" content="GeoQuest "” Das Geografie-Quiz. Erkenne Länder an Flaggen, Kennzeichen und Hauptstädten. Sammle Stempel und steige in der Liga auf!">
-<meta property="og:title" content="GeoQuest "” Das Geografie-Quiz">
-<meta property="og:description" content="Flags, Kennzeichen, Hauptstädte "” teste dein Geografie-Wissen kostenlos!">
+<title>GeoQuest – Das Geografie-Quiz</title>
+<meta name="description" content="GeoQuest – Das Geografie-Quiz. Erkenne Länder an Flaggen, Kennzeichen und Hauptstädten. Sammle Stempel und steige in der Liga auf!">
+<meta property="og:title" content="GeoQuest – Das Geografie-Quiz">
+<meta property="og:description" content="Flags, Kennzeichen, Hauptstädte – teste dein Geografie-Wissen kostenlos!">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#10b981">
 <meta name="keywords" content="Geografie Quiz, Länder Quiz, Flaggen Quiz, Kennzeichen Quiz, GeoQuest">
@@ -7945,7 +7945,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .mode-card.locked-card{opacity:.35;filter:grayscale(.8);pointer-events:none}
 .mode-desc{color:var(--text3);font-size:.58rem;margin-top:3px;line-height:1.25;font-weight:400;word-break:break-word;overflow-wrap:break-word}
 .coming-soon-card{opacity:.7;cursor:pointer;position:relative;overflow:hidden}
-/* Phase 86 "” Logik-Gitter */
+/* Phase 86 – Logik-Gitter */
 .lg-grid{display:grid;grid-template-columns:minmax(72px,1fr) repeat(3,minmax(62px,1fr));gap:4px;margin:.4rem 0}
 .lg-corner{display:flex;align-items:center;justify-content:center;padding:.2rem}
 .lg-header{background:var(--bg2);border-radius:8px;padding:.3rem .25rem;font-size:.6rem;font-weight:700;color:var(--text2);text-align:center;display:flex;align-items:center;justify-content:center;min-height:52px;line-height:1.25;word-break:break-word}
@@ -7962,7 +7962,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .lg-sugg-item{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:.28rem .55rem;font-size:.75rem;cursor:pointer;display:flex;align-items:center;gap:4px;transition:border-color .1s}
 .lg-sugg-item:hover{border-color:#10b981}
 @keyframes lgPulse{0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{box-shadow:0 0 0 5px rgba(16,185,129,0)}}
-/* Phase 86 "” Reiseroute */
+/* Phase 86 – Reiseroute */
 .rr-step{display:inline-flex;align-items:center;gap:3px;font-size:.74rem;font-weight:700;color:var(--text)}
 .rr-sn{color:var(--text)}
 .rr-arrow{color:var(--text3);margin:0 2px;font-size:.8rem}
@@ -8170,7 +8170,7 @@ input[type=text]::placeholder{color:var(--text3)}
 @media(max-width:360px){.qmain{font-size:1.65rem}.btn-a{font-size:.88rem;padding:.65rem .85rem}.qcard{padding:.9rem .9rem .8rem}.mode-grid-4{grid-template-columns:repeat(3,1fr)}.hud{margin-bottom:6px}.tbar{margin-bottom:10px}}
 @media(max-height:620px){.qcard{padding:.8rem 1rem}.btn-a{min-height:44px;padding:.6rem .9rem;font-size:.88rem}.answers{gap:5px}.hud{margin-bottom:6px}.tbar{margin-bottom:8px}.qmain{font-size:1.65rem}}
 
-/* Phase 27 "” Auth Card */
+/* Phase 27 – Auth Card */
 .auth-card{background:var(--bg2);border:1.5px solid var(--border);border-radius:16px;padding:1.1rem;margin-bottom:.85rem}
 .auth-tabs{display:flex;gap:4px;margin-bottom:.85rem;background:var(--bg3);border-radius:10px;padding:3px}
 .auth-tab{flex:1;padding:.45rem;border:none;background:transparent;border-radius:8px;font-weight:700;font-size:.82rem;color:var(--text2);cursor:pointer;transition:.15s}
@@ -8189,7 +8189,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .pop-country{font-weight:900;font-size:1.3rem;color:var(--text);margin-bottom:.3rem}
 .pop-value{color:#10b981;font-size:1rem;font-weight:700}
 
-/* Phase 30 "” Higher/Lower cards */
+/* Phase 30 – Higher/Lower cards */
 .hl-wrap{display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0 6px;flex-wrap:nowrap}
 .hl-card{background:var(--bg3);border:2px solid var(--border);border-radius:14px;padding:.7rem .9rem;text-align:center;min-width:110px;max-width:180px;flex:1;transition:border-color .25s}
 .hl-card.hl-known{border-color:#10b981}
@@ -8199,10 +8199,10 @@ input[type=text]::placeholder{color:var(--text3)}
 .hl-val{color:#10b981;font-size:1.05rem;font-weight:700}
 .hl-hidden .hl-val{color:var(--text3);font-size:1.4rem}
 .hl-vs{font-size:1.5rem;flex-shrink:0;color:var(--text3)}
-/* Phase 30 "” Survival diff button */
+/* Phase 30 – Survival diff button */
 .diff-btn.active[onclick*="survival"]{background:#7f1d1d;color:#fca5a5;border-color:#ef4444}
 
-/* Phase 33 "” Multiplayer */
+/* Phase 33 – Multiplayer */
 .pvp-hero{background:linear-gradient(135deg,#1e1b4b 0%,#312e81 100%);border:1.5px solid #7c3aed;border-radius:14px;padding:.85rem 1rem;margin-bottom:.65rem;cursor:pointer;transition:opacity .15s}
 .pvp-hero:active{opacity:.8}
 .spinner{width:28px;height:28px;border:3px solid var(--border);border-top-color:#7c3aed;border-radius:50%;animation:spin .7s linear infinite}
