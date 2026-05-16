@@ -5506,7 +5506,8 @@ function render(){
   /* Challenge welcome */
   if(CHALLENGE&&S.ph==="menu"&&\!S.challengeStarted){
     const ml=modeTitle(MODES.find(m=>m.id===CHALLENGE.mode))||CHALLENGE.mode;
-    app.innerHTML=`<div class="scr"><div style="background:var(--bg2);border-radius:20px;padding:1.5rem;text-align:center;margin-top:2rem">
+    console.log("🔥 GEOQUEST RENDER DEBUG:", { type: q.type, opts: q.opts, html: answerHtml });
+  app.innerHTML=`<div class="scr"><div style="background:var(--bg2);border-radius:20px;padding:1.5rem;text-align:center;margin-top:2rem">
       <div style="font-size:2rem;margin-bottom:.5rem">\u{1F3C6}</div>
       <div style="font-weight:900;font-size:1.2rem;margin-bottom:4px">Herausforderung\!</div>
       <div style="color:var(--text2);font-size:.82rem;margin-bottom:.85rem">Modus: ${ml}</div>
@@ -5541,7 +5542,8 @@ function render(){
 
   if(S.ph==="menu"){
     console.log("[GQ] rendering menu tab:",S.tab);
-    app.innerHTML=`<div class="scr">
+    console.log("🔥 GEOQUEST RENDER DEBUG:", { type: q.type, opts: q.opts, html: answerHtml });
+  app.innerHTML=`<div class="scr">
       ${S.tab==="home"?renderHomeTab():""}
       ${S.tab==="lernen"?renderLernenTab():""}
       ${S.tab==="liga"?renderLigaTab():""}
@@ -5578,7 +5580,8 @@ function render(){
         <div style="background:var(--bg3);border-radius:12px;padding:.75rem .5rem;text-align:center"><div style="font-size:1.5rem;font-weight:900;color:#ef4444">${survived}</div><div style="font-size:.64rem;color:var(--text3)">\u00dcberlebt</div></div>
         <div style="background:var(--bg3);border-radius:12px;padding:.75rem .5rem;text-align:center"><div style="font-size:1.5rem;font-weight:900;color:#fbbf24">${survBest}</div><div style="font-size:.64rem;color:var(--text3)">Rekord</div></div>
       </div>`:"";
-    app.innerHTML=`<div class="scr">
+    console.log("🔥 GEOQUEST RENDER DEBUG:", { type: q.type, opts: q.opts, html: answerHtml });
+  app.innerHTML=`<div class="scr">
       <div style="font-size:2.5rem;text-align:center">${isSurv?"\ud83d\udc80":"\u{1F3C6}"}</div>
       <h2 style="text-align:center;font-size:1.7rem;font-weight:900;color:var(--text);margin:3px 0">GAME OVER</h2>
       <p style="text-align:center;color:var(--text3);font-size:.78rem;margin-bottom:.85rem">${ml} \u00b7 ${isSurv?"Survival":ROUNDS+" Runden"}</p>
@@ -5842,6 +5845,7 @@ function render(){
     <button class="pu-btn${S.half_removed?" pu-used":""}" onclick="useFiveO()" ${(S.half_removed||(pu.five0||0)===0||_is2ans)?"disabled":""} style="${_j5sty}" title="${_j5title}">\u2702 50/50 <span style="font-size:.62rem">${_j5label}</span></button>
     <button class="pu-btn${S.freezeActive?" freeze-on":""}" onclick="useFreeze()" ${(S.freezeActive||(pu.freeze||0)===0)?"disabled":""} title="Zeit-Stopp (${pu.freeze||0} \u00fcbrig)">\u{1F9CA} Freeze <span style="font-size:.62rem">(${pu.freeze||0})</span></button>
   </div>`;
+  console.log("🔥 GEOQUEST RENDER DEBUG:", { type: q.type, opts: q.opts, html: answerHtml });
   app.innerHTML=`<div class="scr">
     <div class="hud">
       <div style="display:flex;gap:8px;align-items:center">
