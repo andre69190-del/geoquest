@@ -3642,7 +3642,7 @@ function useFreeze(){
     S.freezeActive=false;
     const b2=document.querySelector(".tbar");if(b2)b2.classList.remove("frozen");
     if(S.ph==="playing"&&S.sel===null){
-      if(S.diff==="survival"){tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);}
+      if(S.diff==="survival"){if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);}
     }
   },10000);
 }
@@ -4625,7 +4625,7 @@ function lq(){
   S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
   S.half_removed=false;S.freezeActive=false;
   render();
-  tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);
+  if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);
 }
 
 /* â”€â”€ Phase 42: Index-based answer dispatch (hides answer strings from DOM) â”€â”€ */
@@ -5780,9 +5780,17 @@ function render(){
   const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">ß—${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">ðŸ’€ SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">âˆž</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">ß—</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
-    const fb2=q.opts.map(cc=>{let cls="btn-flag";if(sel\!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}return '<button class="'+cls+'" onclick="sel=\''+cc+'\';render()" data-quiz-answer="'+q.opts.indexOf(cc)+'"><img src="https://flagcdn.com/w120/'+cc.toLowerCase()+'.png" style="height:40px; border-radius:4px; pointer-events:none;"><img src="https://flagcdn.com/w120/'+cc.toLowerCase()+'.png" style="height:40px; border-radius:4px; pointer-events:none;"><span style="display:none">'+cc.toUpperCase()+'</span></button>';}).join('');
-    answerHtml=`<div class="flag-grid">${fb2}</div>`;
-  }else{
+    const fb2 = q.opts.map(cc => {
+        let cls = "btn-base";
+        if(typeof sel !== 'undefined' && sel !== null){
+            if(cc === q.ans) cls += " ok";
+            else if(cc === sel) cls += " ng";
+            else cls += " dm";
+        }
+        return '<button class="' + cls + '" onclick="checkAns(&quot;' + cc + '&quot;)"><img src="https://flagcdn.com/w120/' + cc.toLowerCase() + '.png" style="height:40px; border-radius:4px; pointer-events:none;"></button>';
+    }).join('');
+    answerHtml = '<div class="flag-grid">' + fb2 + '</div>';
+}else{
     // Population comparison: special subj rendering
     if(q.type==="pop_compare"&&q.subj&&typeof q.subj==='object'){
       const pcDis=sel!==null?"disabled":"";
@@ -6637,7 +6645,7 @@ function initLogikGitter(){
   /* P150: 90s countdown for Logic Grid */
   S.tm=90;S.dur=90;
   clearInterval(tIv);
-  tIv=setInterval(()=>{
+  if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{
     S.tm--;
     if(S.tm<=0){
       clearInterval(tIv);
@@ -6908,7 +6916,7 @@ function initSLF(){
   S.slfData={letter,answers:{city:"",country:"",river:""},phase:"input",timeLeft:30};
   S.gameStartTime=Date.now();
   S.ph="playing";
-  tIv=setInterval(()=>{
+  if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{
     if(\!S.slfData||S.slfData.phase\!=="input")return;
     S.slfData.timeLeft--;
     if(S.slfData.timeLeft<=0){clearInterval(tIv);handleSLFSubmit();}
