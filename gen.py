@@ -5487,7 +5487,10 @@ function updateOrientationWarning(){
   ow.style.display=(isPortrait&&isMapMode)?"flex":"none";
   const txt=ow.querySelector(".gq-ow-txt");if(txt)txt.textContent=t("rotate_device");
 }
-function render(){ console.log("🟢 [TRACKER] 3. render gestartet. Aktuelle Phase:", typeof S !== "undefined" ? S.ph : "S is null");
+function render(){
+  /* Surgical Scope Guard for candidates */
+  const candidates_safe = (typeof S !== "undefined" && S.candidates) ? S.candidates : ((typeof candidates !== "undefined") ? candidates : []);
+ console.log("🟢 [TRACKER] 3. render gestartet. Aktuelle Phase:", typeof S !== "undefined" ? S.ph : "S is null");
   updateHdrGuest();
   const app=document.getElementById("app");
   if(\!app)return;
