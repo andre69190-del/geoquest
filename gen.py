@@ -4604,7 +4604,7 @@ function nextRound(){
     render();
   }else{S.rd=nr;lq();}
 }
-function lq(){
+function lq(){ console.log("🟢 [TRACKER] 2. lq (loadQuestion) gestartet.");
   clearInterval(tIv);
   if(\!S.queueExtra)S.queueExtra=[];
   if(\!S.askedLids)S.askedLids=new Set();
@@ -5220,7 +5220,7 @@ showMessage(isCorrect?'Richtig!':'Falsch!');
 setTimeout(startNextRound,1500);
 }
 
-function startGame(m){
+function startGame(m){ console.log("🟢 [TRACKER] 1. startGame gestartet. Mode:", m);
   clr();
   const survBest=parseInt(localStorage.getItem('gq_surv_best')||'0');
   const _m=m||S.mode;
@@ -5480,7 +5480,7 @@ function updateOrientationWarning(){
   ow.style.display=(isPortrait&&isMapMode)?"flex":"none";
   const txt=ow.querySelector(".gq-ow-txt");if(txt)txt.textContent=t("rotate_device");
 }
-function render(){
+function render(){ console.log("🟢 [TRACKER] 3. render gestartet. Aktuelle Phase:", typeof S !== "undefined" ? S.ph : "S is null");
   updateHdrGuest();
   const app=document.getElementById("app");
   if(\!app)return;
@@ -5838,6 +5838,7 @@ app.innerHTML=`<div class="scr">
   const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
   const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
   const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';
+  console.log("🟢 [TRACKER] 4. Erreiche HTML-Zuweisung. Antwort-Block Länge:", typeof answerHtml !== "undefined" ? answerHtml.length : "UNDEFINED");
   const puBar=`<div class="pu-bar">
     <button class="pu-btn${S.half_removed?" pu-used":""}" onclick="useFiveO()" ${(S.half_removed||(pu.five0||0)===0||_is2ans)?"disabled":""} style="${_j5sty}" title="${_j5title}">\u2702 50/50 <span style="font-size:.62rem">${_j5label}</span></button>
     <button class="pu-btn${S.freezeActive?" freeze-on":""}" onclick="useFreeze()" ${(S.freezeActive||(pu.freeze||0)===0)?"disabled":""} title="Zeit-Stopp (${pu.freeze||0} \u00fcbrig)">\u{1F9CA} Freeze <span style="font-size:.62rem">(${pu.freeze||0})</span></button>
