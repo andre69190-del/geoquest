@@ -5782,7 +5782,7 @@ function render(){
   if(q.type==="flagsel"){
     const fb2=q.opts.map(cc=>{let cls="btn-flag";if(sel\!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const flagEmoji=cc.toUpperCase().replace(/./g,c=>String.fromCodePoint(c.charCodeAt(0)+127397));
       const fallback='<span style="font-size:3rem;display:inline-block">' + flagEmoji + '</span>';
-      return '<button class="' + cls + '" ' + (sel?'disabled':'') + ' onclick="answer(\'' + cc + '\')" style="padding:0;border:none;background:none;cursor:pointer"><img src="https://flagcdn.com/w120/' + cc.toLowerCase() + '.png" alt="' + cc + '" style="height:60px;width:auto;border-radius:8px" data-fallback="'" + cls + "'" onerror="this.replaceWith(this.getAttribute('data-fallback'))"'" + fallback + "'" + '"></button>';}).join("");
+        html += '<img src="https://flagcdn.com/w120/' + cc.toLowerCase() + '.png" style="height:50px;border-radius:8px;">';
     answerHtml=`<div class="flag-grid">${fb2}</div>`;
   }else{
     // Population comparison: special subj rendering
