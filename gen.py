@@ -2409,12 +2409,12 @@ function getCountryName(cc,lang){
   }catch(e){return cc;}
 }
 /* displayCountry(name) – translate country display name for current language */
-function displayCountry(name){
-  if(!name||typeof name!=="string")return name||"";
+function displayCountry(cc){
+  if(!cc||typeof cc!=="string")return cc||"";
+  const co=COUNTRIES.find(c=>c.cc===cc);
+  if(!co)return cc;
   const lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
-  const co=COUNTRIES.find(c=>c.c===name);
-  if(!co)return name;
-  return getCountryName(co.cc,lang);
+  return getCountryName(cc,lang);
 }
 
 /* SEEDED RNG */
