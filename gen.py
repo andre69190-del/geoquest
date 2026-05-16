@@ -5874,8 +5874,9 @@ S.candidates=S.candidates||[];
     }
     S.spotterOk=false;render();return;
   }
-  const candidates_safe=candidates||[];const mainPlate=candidates_safe[0];
-  const mainCountry=mainPlate.country;
+  const candidates_safe = (typeof S !== 'undefined' && S.candidates) ? S.candidates : ((typeof candidates !== 'undefined') ? candidates : []);
+const mainPlate = candidates_safe[0] || {};
+const mainCountry = mainPlate.country || '';
   const key=collKey(code,mainCountry);
   if(S.collectedPlates.includes(key)){
     S.spotterMsg=t("spotter_dup",{code:esc(code),country:displayCountry(mainCountry)});S.spotterOk=null;
