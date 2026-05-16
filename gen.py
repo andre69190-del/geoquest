@@ -5010,12 +5010,12 @@ const correctClimate=correctData.climate;
 const correctKeywords=getClimateKeywords(correctClimate);
 const allCodes=Object.keys(globalCultureData);
 // First pass: Get same region + climate match
-const candidates=allCodes.filter(code=>{
+const candidates=allCodes?allCodes.filter(code=>{
 if(code===correctCode)return false;
 const data=globalCultureData[code];
 if(!hasClimateMatch(correctClimate,data.climate))return false;
 return true;
-});
+}):[correctCode];
 // If we have enough candidates with climate match, use them
 if(candidates.length>=count){
 return candidates.sort(()=>Math.random()-0.5).slice(0,count);
@@ -5857,14 +5857,14 @@ function render(){
     }
     S.spotterOk=false;render();return;
   }
-  const mainPlate=candidates[0];
+  const candidates_safe=candidates||[];const mainPlate=candidates_safe[0];
   const mainCountry=mainPlate.country;
   const key=collKey(code,mainCountry);
   if(S.collectedPlates.includes(key)){
     S.spotterMsg=t("spotter_dup",{code:esc(code),country:displayCountry(mainCountry)});S.spotterOk=null;
   }else{
     S.collectedPlates.push(key);saveCollectedPlates(S.collectedPlates);saveCollectedTs(key,Date.now());
-    const extras=candidates.length-1;
+    const extras=candidates_safe.length-1;
     S.spotterMsg="\u{1F389} "+code+(mainPlate.region?" – "+esc(mainPlate.region):"")+(" ("+esc(displayCountry(mainCountry))+")")+(extras?" +"+extras+" weitere":"")+"\!";
     S.sc+=50;showPtsPopup(50);S.spotterOk=true;soundStamp();
   }
