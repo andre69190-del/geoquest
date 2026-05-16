@@ -2414,7 +2414,7 @@ function displayCountry(cc){
   const co=COUNTRIES.find(c=>c.cc===cc);
   if(!co)return cc;
   const lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
-  return getCountryName(cc,lang);
+  try { return getCountryName(cc,lang) || co.c; } catch(e) { return co.c; }
 }
 
 /* SEEDED RNG */
@@ -3642,7 +3642,7 @@ function useFreeze(){
     S.freezeActive=false;
     const b2=document.querySelector(".tbar");if(b2)b2.classList.remove("frozen");
     if(S.ph==="playing"&&S.sel===null){
-      if(S.diff==="survival"){if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);}
+      if(S.diff==="survival"){if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);}
     }
   },10000);
 }
@@ -4632,7 +4632,7 @@ function lq(){ console.log("🟢 [TRACKER] 2. lq (loadQuestion) gestartet.");
   S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
   S.half_removed=false;S.freezeActive=false;
   render();
-  if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);
+  if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);
 }
 
 /* â”€â”€ Phase 42: Index-based answer dispatch (hides answer strings from DOM) â”€â”€ */
