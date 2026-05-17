@@ -1532,9 +1532,9 @@ pl:{
   language_select:"Jń˜ZYK",
   badge_beta:"Beta",beta_warning:"Grywalny, ale mogń… wystń…pić błędy.",
   rotate_device:"Obróć urzń…dzenie poziomo \u{1F4F1}\u27A1\u{1F5FA}",
-  diff_desc_casual:"\u{1F7E2} Casual: Relaks Â· Bez limitu czasu Â· âˆž życia",
-  diff_desc_hc:"\u{1F525} Hardcore: Klasyk Â· Bez limitu czasu Â· 3 Ś»ycia",
-  diff_desc_surv:"\u{1F480} Survival: Na czas Â· 8 sekund Â· 3 życia",
+  diff_desc_casual:"\u{1F7E2} Casual: Relaks · Bez limitu czasu · ∞ życia",
+  diff_desc_hc:"\u{1F525} Hardcore: Klasyk · Bez limitu czasu · 3 Ś»ycia",
+  diff_desc_surv:"\u{1F480} Survival: Na czas · 8 sekund · 3 życia",
   hud_lives:"Ś»YCIA",
   score_mult_max:"Maks Mnożnik",
   score_time_bonus:"Bonus Czasu",
@@ -1588,9 +1588,9 @@ fr:{
   language_select:"LANGUE",
   badge_beta:"B\u00eata",beta_warning:"Jouable, mais peut contenir des bugs.",
   rotate_device:"Veuillez faire pivoter votre appareil \u{1F4F1}\u27A1\u{1F5FA}",
-  diff_desc_casual:"\u{1F7E2} Casual: Détendu Â· Sans limite de temps Â· âˆž Vies",
-  diff_desc_hc:"\u{1F525} Hardcore: Classique Â· Sans limite de temps Â· 3 Vies",
-  diff_desc_surv:"\u{1F480} Survival: Contre la montre Â· 8s Â· 3 Vies",
+  diff_desc_casual:"\u{1F7E2} Casual: Détendu · Sans limite de temps · ∞ Vies",
+  diff_desc_hc:"\u{1F525} Hardcore: Classique · Sans limite de temps · 3 Vies",
+  diff_desc_surv:"\u{1F480} Survival: Contre la montre · 8s · 3 Vies",
   hud_lives:"VIES",
   score_mult_max:"Multiplicateur Max",
   score_time_bonus:"Bonus Temps",
@@ -1644,9 +1644,9 @@ es:{
   language_select:"IDIOMA",
   badge_beta:"Beta",beta_warning:"Jugable, pero puede contener errores.",
   rotate_device:"Por favor, gira tu dispositivo al modo horizontal \u{1F4F1}\u27A1\u{1F5FA}",
-  diff_desc_casual:"\u{1F7E2} Casual: Relajado Â· Sin lß­mite Â· âˆž Vidas",
-  diff_desc_hc:"\u{1F525} Hardcore: Clásico Â· Sin lß­mite Â· 3 Vidas",
-  diff_desc_surv:"\u{1F480} Survival: Contrarreloj Â· 8s Â· 3 Vidas",
+  diff_desc_casual:"\u{1F7E2} Casual: Relajado · Sin lß­mite · ∞ Vidas",
+  diff_desc_hc:"\u{1F525} Hardcore: Clásico · Sin lß­mite · 3 Vidas",
+  diff_desc_surv:"\u{1F480} Survival: Contrarreloj · 8s · 3 Vidas",
   hud_lives:"VIDAS",
   score_mult_max:"Multiplicador Máx.",
   score_time_bonus:"Bono de Tiempo",
@@ -1700,9 +1700,9 @@ it:{
   language_select:"LINGUA",
   badge_beta:"Beta",beta_warning:"Giocabile, ma potrebbe contenere bug.",
   rotate_device:"Ruota il dispositivo in modalit\u00e0 orizzontale \u{1F4F1}\u27A1\u{1F5FA}",
-  diff_desc_casual:"\u{1F7E2} Casual: Rilassato Â· Senza limite Â· âˆž Vite",
-  diff_desc_hc:"\u{1F525} Hardcore: Classico Â· Senza limite Â· 3 Vite",
-  diff_desc_surv:"\u{1F480} Survival: Contro il tempo Â· 8s Â· 3 Vite",
+  diff_desc_casual:"\u{1F7E2} Casual: Rilassato · Senza limite · ∞ Vite",
+  diff_desc_hc:"\u{1F525} Hardcore: Classico · Senza limite · 3 Vite",
+  diff_desc_surv:"\u{1F480} Survival: Contro il tempo · 8s · 3 Vite",
   hud_lives:"VITE",
   score_mult_max:"Moltiplicatore Max",
   score_time_bonus:"Bonus Tempo",
@@ -1747,7 +1747,7 @@ nl:{
   spotter_dup:"ðŸ“‹ {code} ({country}) al verzameld!",
   map_unavail:"Kaart niet beschikbaar",map_loading:"Kaart laden…",
   q_subway_km:"Hoe lang is het metronetwerk … (km)?",q_subway_lines:"Hoeveel metrolijnen heeft …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Ontspannen Â· Geen tijdslimiet Â· âˆž Levens",diff_desc_hc:"\u{1F525} Hardcore: Klassiek Â· Geen tijdslimiet Â· 3 Levens",diff_desc_surv:"\u{1F480} Survival: Tegen de klok Â· 8s Â· 3 Levens",hud_lives:"LEVENS",score_mult_max:"Max Vermenigvuldiger",score_time_bonus:"Tijdbonus",pts_abbr:"pt.",score_correct_lbl:"correct",mode_wappen:"Wapens",mode_slf:"Stad-Land-Rivier",mode_euro:"Euromunt"
+  diff_desc_casual:"\u{1F7E2} Casual: Ontspannen · Geen tijdslimiet · ∞ Levens",diff_desc_hc:"\u{1F525} Hardcore: Klassiek · Geen tijdslimiet · 3 Levens",diff_desc_surv:"\u{1F480} Survival: Tegen de klok · 8s · 3 Levens",hud_lives:"LEVENS",score_mult_max:"Max Vermenigvuldiger",score_time_bonus:"Tijdbonus",pts_abbr:"pt.",score_correct_lbl:"correct",mode_wappen:"Wapens",mode_slf:"Stad-Land-Rivier",mode_euro:"Euromunt"
 },
 pt:{
   play:"JOGAR",again:"JOGAR NOVAMENTE",menu:"Menu principal",board:"Classificaçß£o",pass:"Passaporte",
@@ -1784,7 +1784,7 @@ pt:{
   spotter_dup:"ðŸ“‹ {code} ({country}) já coletado!",
   map_unavail:"Mapa nß£o disponß­vel",map_loading:"Carregando mapa…",
   q_subway_km:"Qual o comprimento da rede de metro … (km)?",q_subway_lines:"Quantas linhas de metro tem …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Relaxado Â· Sem limite Â· âˆž Vidas",diff_desc_hc:"\u{1F525} Hardcore: Clássico Â· Sem limite Â· 3 Vidas",diff_desc_surv:"\u{1F480} Survival: Contra o relógio Â· 8s Â· 3 Vidas",hud_lives:"VIDAS",score_mult_max:"Multiplicador Máx.",score_time_bonus:"Bónus de Tempo",pts_abbr:"pts.",score_correct_lbl:"corretas",mode_wappen:"Brasßµes",mode_slf:"Cidade-Paß­s-Rio",mode_euro:"Moedas Euro"
+  diff_desc_casual:"\u{1F7E2} Casual: Relaxado · Sem limite · ∞ Vidas",diff_desc_hc:"\u{1F525} Hardcore: Clássico · Sem limite · 3 Vidas",diff_desc_surv:"\u{1F480} Survival: Contra o relógio · 8s · 3 Vidas",hud_lives:"VIDAS",score_mult_max:"Multiplicador Máx.",score_time_bonus:"Bónus de Tempo",pts_abbr:"pts.",score_correct_lbl:"corretas",mode_wappen:"Brasßµes",mode_slf:"Cidade-Paß­s-Rio",mode_euro:"Moedas Euro"
 },
 ro:{
   play:"JOACń‚",again:"JOACń‚ DIN NOU",menu:"Meniu principal",board:"Clasament",pass:"PaÈ™aport",
@@ -1821,7 +1821,7 @@ ro:{
   spotter_dup:"ðŸ“‹ {code} ({country}) deja colectat!",
   map_unavail:"Hartńƒ indisponibilńƒ",map_loading:"Se ßªncarcńƒ harta…",
   q_subway_km:"Cß¢t de lungńƒ este reÈ›eaua de metrou … (km)?",q_subway_lines:"Cß¢te linii de metrou are …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Relaxat Â· Fńƒrńƒ limitńƒ Â· âˆž VieÈ›i",diff_desc_hc:"\u{1F525} Hardcore: Clasic Â· Fńƒrńƒ limitńƒ Â· 3 VieÈ›i",diff_desc_surv:"\u{1F480} Survival: Contra cronometru Â· 8s Â· 3 VieÈ›i",hud_lives:"VIEÈžI",score_mult_max:"Multiplicator Max",score_time_bonus:"Bonus Timp",pts_abbr:"pct.",score_correct_lbl:"corecte",mode_wappen:"Steme",mode_slf:"OraŚŸ-Èšarńƒ-Rß¢u",mode_euro:"Monede Euro"
+  diff_desc_casual:"\u{1F7E2} Casual: Relaxat · Fńƒrńƒ limitńƒ · ∞ VieÈ›i",diff_desc_hc:"\u{1F525} Hardcore: Clasic · Fńƒrńƒ limitńƒ · 3 VieÈ›i",diff_desc_surv:"\u{1F480} Survival: Contra cronometru · 8s · 3 VieÈ›i",hud_lives:"VIEÈžI",score_mult_max:"Multiplicator Max",score_time_bonus:"Bonus Timp",pts_abbr:"pct.",score_correct_lbl:"corecte",mode_wappen:"Steme",mode_slf:"OraŚŸ-Èšarńƒ-Rß¢u",mode_euro:"Monede Euro"
 },
 hu:{
   play:"JßTß‰K",again:"ßšJRA JßTSZANI",menu:"FŚ‘menü",board:"Rangsor",pass:"ßštlevél",
@@ -1858,7 +1858,7 @@ hu:{
   spotter_dup:"ðŸ“‹ {code} ({country}) már összegyŚ±jtve!",
   map_unavail:"Térkép nem elérhetŚ‘",map_loading:"Térkép betöltése…",
   q_subway_km:"Milyen hosszßº a metróhálózat … (km)?",q_subway_lines:"Hány metróvonal van …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Lazulás Â· Nincs idŚ‘limit Â· âˆž ß‰let",diff_desc_hc:"\u{1F525} Hardcore: Klasszikus Â· Nincs idŚ‘limit Â· 3 ß‰let",diff_desc_surv:"\u{1F480} Survival: Verseny az idŚ‘vel Â· 8mp Â· 3 ß‰let",hud_lives:"ß‰LETEK",score_mult_max:"Max Szorzó",score_time_bonus:"IdŚ‘bónusz",pts_abbr:"pt.",score_correct_lbl:"helyes",mode_wappen:"Cß­merek",mode_slf:"Város-Ország-Folyó",mode_euro:"Euróérmék"
+  diff_desc_casual:"\u{1F7E2} Casual: Lazulás · Nincs idŚ‘limit · ∞ ß‰let",diff_desc_hc:"\u{1F525} Hardcore: Klasszikus · Nincs idŚ‘limit · 3 ß‰let",diff_desc_surv:"\u{1F480} Survival: Verseny az idŚ‘vel · 8mp · 3 ß‰let",hud_lives:"ß‰LETEK",score_mult_max:"Max Szorzó",score_time_bonus:"IdŚ‘bónusz",pts_abbr:"pt.",score_correct_lbl:"helyes",mode_wappen:"Cß­merek",mode_slf:"Város-Ország-Folyó",mode_euro:"Euróérmék"
 },
 cs:{
   play:"HRßT",again:"HRßT ZNOVU",menu:"Hlavnß­ menu",board:"Ś½ebŚ™ß­ńek",pass:"Pas",
@@ -1895,7 +1895,7 @@ cs:{
   spotter_dup:"ðŸ“‹ {code} ({country}) jiŚ¾ sbß­ráno!",
   map_unavail:"Mapa nenß­ k dispozici",map_loading:"Nańß­tánß­ mapy…",
   q_subway_km:"Jak dlouhé je metro … (km)?",q_subway_lines:"Kolik metrovß½ch linek má …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Uvolnń›nß½ Â· Bez ńasového limitu Â· âˆž Ś½ivotŚ¯",diff_desc_hc:"\u{1F525} Hardcore: Klasika Â· Bez limitu Â· 3 Ś½ivoty",diff_desc_surv:"\u{1F480} Survival: Proti ńasu Â· 8s Â· 3 Ś½ivoty",hud_lives:"Ś½IVOTY",score_mult_max:"Max Multiplikátor",score_time_bonus:"časovß½ Bonus",pts_abbr:"bd.",score_correct_lbl:"správnń›",mode_wappen:"Erby",mode_slf:"Mń›sto-Stát-Ś˜eka",mode_euro:"Euromince"
+  diff_desc_casual:"\u{1F7E2} Casual: Uvolnń›nß½ · Bez ńasového limitu · ∞ Ś½ivotŚ¯",diff_desc_hc:"\u{1F525} Hardcore: Klasika · Bez limitu · 3 Ś½ivoty",diff_desc_surv:"\u{1F480} Survival: Proti ńasu · 8s · 3 Ś½ivoty",hud_lives:"Ś½IVOTY",score_mult_max:"Max Multiplikátor",score_time_bonus:"časovß½ Bonus",pts_abbr:"bd.",score_correct_lbl:"správnń›",mode_wappen:"Erby",mode_slf:"Mń›sto-Stát-Ś˜eka",mode_euro:"Euromince"
 },
 sk:{
   play:"HRAŚ¤",again:"HRAŚ¤ ZNOVA",menu:"Hlavné menu",board:"Rebrß­ńek",pass:"Pas",
@@ -1932,7 +1932,7 @@ sk:{
   spotter_dup:"ðŸ“‹ {code} ({country}) uŚ¾ zozbierané!",
   map_unavail:"Mapa nie je dostupná",map_loading:"Nańß­távanie mapy…",
   q_subway_km:"Aká dlhá je sieŚ¥ metra … (km)?",q_subway_lines:"Koń¾ko liniek metra má …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Uvolnń›nß½ Â· Bez ńasového limitu Â· âˆž Ś½ivotov",diff_desc_hc:"\u{1F525} Hardcore: Klasika Â· Bez limitu Â· 3 Ś½ivoty",diff_desc_surv:"\u{1F480} Survival: Proti ńasu Â· 8s Â· 3 Ś½ivoty",hud_lives:"Ś½IVOTY",score_mult_max:"Max Multiplikátor",score_time_bonus:"časovß½ Bonus",pts_abbr:"b.",score_correct_lbl:"správne",mode_wappen:"Erby",mode_slf:"Mesto-Krajina-Rieka",mode_euro:"Euromince"
+  diff_desc_casual:"\u{1F7E2} Casual: Uvolnń›nß½ · Bez ńasového limitu · ∞ Ś½ivotov",diff_desc_hc:"\u{1F525} Hardcore: Klasika · Bez limitu · 3 Ś½ivoty",diff_desc_surv:"\u{1F480} Survival: Proti ńasu · 8s · 3 Ś½ivoty",hud_lives:"Ś½IVOTY",score_mult_max:"Max Multiplikátor",score_time_bonus:"časovß½ Bonus",pts_abbr:"b.",score_correct_lbl:"správne",mode_wappen:"Erby",mode_slf:"Mesto-Krajina-Rieka",mode_euro:"Euromince"
 },
 hr:{
   play:"IGRAJ",again:"IGRAJ PONOVO",menu:"Glavni izbornik",board:"Ljestvica",pass:"Putovnica",
@@ -1969,7 +1969,7 @@ hr:{
   spotter_dup:"ðŸ“‹ {code} ({country}) već skupljeno!",
   map_unavail:"Karta nije dostupna",map_loading:"Uńitavanje karte…",
   q_subway_km:"Koliko duga je mreŚ¾a metroa … (km)?",q_subway_lines:"Koliko linija metroa ima …?",
-  diff_desc_casual:"\u{1F7E2} Casual: OpuŚ¡teno Â· Bez vremenskog limita Â· âˆž Ś½ivota",diff_desc_hc:"\u{1F525} Hardcore: Klasik Â· Bez limita Â· 3 Ś½ivota",diff_desc_surv:"\u{1F480} Survival: Protiv sata Â· 8s Â· 3 Ś½ivota",hud_lives:"Ś½IVOTI",score_mult_max:"Maks MnoŚ¾itelj",score_time_bonus:"Vremenski Bonus",pts_abbr:"bod.",score_correct_lbl:"tońno",mode_wappen:"Grbovi",mode_slf:"Grad-Zemlja-Rijeka",mode_euro:"Euro Kovanice"
+  diff_desc_casual:"\u{1F7E2} Casual: OpuŚ¡teno · Bez vremenskog limita · ∞ Ś½ivota",diff_desc_hc:"\u{1F525} Hardcore: Klasik · Bez limita · 3 Ś½ivota",diff_desc_surv:"\u{1F480} Survival: Protiv sata · 8s · 3 Ś½ivota",hud_lives:"Ś½IVOTI",score_mult_max:"Maks MnoŚ¾itelj",score_time_bonus:"Vremenski Bonus",pts_abbr:"bod.",score_correct_lbl:"tońno",mode_wappen:"Grbovi",mode_slf:"Grad-Zemlja-Rijeka",mode_euro:"Euro Kovanice"
 },
 sl:{
   play:"IGRAJ",again:"IGRAJ ZNOVA",menu:"Glavni meni",board:"Lestvica",pass:"Potni list",
@@ -2006,7 +2006,7 @@ sl:{
   spotter_dup:"ðŸ“‹ {code} ({country}) Ś¾e zbrano!",
   map_unavail:"Karta ni na voljo",map_loading:"Nalaganje karte…",
   q_subway_km:"Kako dolgo je metrojsko omreŚ¾je … (km)?",q_subway_lines:"Koliko metrojskih linij ima …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Sprostitveno Â· Brez ńasovne omejitve Â· âˆž Ś½ivljenj",diff_desc_hc:"\u{1F525} Hardcore: Klasińno Â· Brez omejitve Â· 3 Ś½ivljenja",diff_desc_surv:"\u{1F480} Survival: Dirka s ńasom Â· 8s Â· 3 Ś½ivljenja",hud_lives:"Ś½IVLJENJA",score_mult_max:"Maks MnoŚ¾itelj",score_time_bonus:"časovni Bonus",pts_abbr:"t.",score_correct_lbl:"pravilno",mode_wappen:"Grbi",mode_slf:"Mesto-DeŚ¾ela-Reka",mode_euro:"Eurokovanice"
+  diff_desc_casual:"\u{1F7E2} Casual: Sprostitveno · Brez ńasovne omejitve · ∞ Ś½ivljenj",diff_desc_hc:"\u{1F525} Hardcore: Klasińno · Brez omejitve · 3 Ś½ivljenja",diff_desc_surv:"\u{1F480} Survival: Dirka s ńasom · 8s · 3 Ś½ivljenja",hud_lives:"Ś½IVLJENJA",score_mult_max:"Maks MnoŚ¾itelj",score_time_bonus:"časovni Bonus",pts_abbr:"t.",score_correct_lbl:"pravilno",mode_wappen:"Grbi",mode_slf:"Mesto-DeŚ¾ela-Reka",mode_euro:"Eurokovanice"
 },
 bg:{
   play:"Ð˜Ð“Ð ÐÐ™",again:"Ð˜Ð“Ð ÐÐ™ ÐžÐ¢ÐÐžÐ’Ðž",menu:"Ð“Ð»Ð°Ð²Ð½Ð¾ Ð¼ÐµÐ½ÑŽ",board:"ÐšÐ»Ð°ÑÐ°Ñ–Ð¸Ñ",pass:"ÐŸÐ°ÑÐ¿Ð¾Ñ€Ñ‚",
@@ -2043,7 +2043,7 @@ bg:{
   spotter_dup:"ðŸ“‹ {code} ({country}) Ð²ÐµÑ‡e ÑÑŠÐ±Ñ€Ð°Ð½Ð¾!",
   map_unavail:"ÐšÐ°Ñ€Ñ‚Ð°Ñ‚Ð° Ð½Ðµ Ðµ Ð´Ð¾ÑÑ‚ÑŠÐ¿Ð½Ð°",map_loading:"Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð°Ñ‚Ð°…",
   q_subway_km:"ÐšÐ¾Ð»ÐºÐ¾ Ð´ÑŠÐ»Ð³Ð° Ðµ Ð¼ÐµÑ‚Ñ€Ð¾Ñ‚Ð¾ … (km)?",q_subway_lines:"ÐšÐ¾Ð»ÐºÐ¾ Ð¼ÐµÑ‚Ñ€Ð¾Ð»Ð¸Ð½Ð¸Ð¸ Ð¸Ð¼Ð° …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Ð Ð°Ð·Ñ…Ð¾Ð´ÐµÐ½ Â· Ð‘ÐµÐ· Ð»Ð¸Ð¼Ð¸Ñ‚ Â· âˆž Ð–Ð¸Ð²Ð¾Ñ‚Ð°",diff_desc_hc:"\u{1F525} Hardcore: ÐšÐ»Ð°ÑÐ¸Ðº Â· Ð‘ÐµÐ· Ð»Ð¸Ð¼Ð¸Ñ‚ Â· 3 Ð–Ð¸Ð²Ð¾Ñ‚Ð°",diff_desc_surv:"\u{1F480} Survival: Ð¡Ñ€ÐµÑ‰Ñƒ Ð²Ñ€ÐµÐ¼ÐµÑ‚Ð¾ Â· 8Ñ Â· 3 Ð–Ð¸Ð²Ð¾Ñ‚Ð°",hud_lives:"Ð–Ð˜Ð’ÐžÐ¢Ð",score_mult_max:"ÐœÐ°ÐºÑ ÐœÐ½Ð¾Ð¶Ð¸Ñ‚ÐµÐ»",score_time_bonus:"Ð’Ñ€ÐµÐ¼ÐµÐ² Ð‘Ð¾Ð½ÑƒÑ",pts_abbr:"Ñ‚.",score_correct_lbl:"Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð½Ð¾",mode_wappen:"Ð“ÐµÑ€Ð±Ð¾Ð²Ðµ",mode_slf:"Ð“Ñ€Ð°Ð´-Ð¡Ñ‚Ñ€Ð°Ð½Ð°-Ð ÐµÐºÐ°",mode_euro:"Ð•Ð²Ñ€Ð¾Ð¼Ð¾Ð½ÐµÑ‚Ð¸"
+  diff_desc_casual:"\u{1F7E2} Casual: Ð Ð°Ð·Ñ…Ð¾Ð´ÐµÐ½ · Ð‘ÐµÐ· Ð»Ð¸Ð¼Ð¸Ñ‚ · ∞ Ð–Ð¸Ð²Ð¾Ñ‚Ð°",diff_desc_hc:"\u{1F525} Hardcore: ÐšÐ»Ð°ÑÐ¸Ðº · Ð‘ÐµÐ· Ð»Ð¸Ð¼Ð¸Ñ‚ · 3 Ð–Ð¸Ð²Ð¾Ñ‚Ð°",diff_desc_surv:"\u{1F480} Survival: Ð¡Ñ€ÐµÑ‰Ñƒ Ð²Ñ€ÐµÐ¼ÐµÑ‚Ð¾ · 8Ñ · 3 Ð–Ð¸Ð²Ð¾Ñ‚Ð°",hud_lives:"Ð–Ð˜Ð’ÐžÐ¢Ð",score_mult_max:"ÐœÐ°ÐºÑ ÐœÐ½Ð¾Ð¶Ð¸Ñ‚ÐµÐ»",score_time_bonus:"Ð’Ñ€ÐµÐ¼ÐµÐ² Ð‘Ð¾Ð½ÑƒÑ",pts_abbr:"Ñ‚.",score_correct_lbl:"Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð½Ð¾",mode_wappen:"Ð“ÐµÑ€Ð±Ð¾Ð²Ðµ",mode_slf:"Ð“Ñ€Ð°Ð´-Ð¡Ñ‚Ñ€Ð°Ð½Ð°-Ð ÐµÐºÐ°",mode_euro:"Ð•Ð²Ñ€Ð¾Ð¼Ð¾Ð½ÐµÑ‚Ð¸"
 },
 el:{
   play:"Î Î‘Î™ÎžÎ•",again:"Î Î‘Î™ÎžÎ• ÎžÎ‘ÎÎ‘",menu:"ÎšÏÏÎ¹Î¿ Î¼ÎµÎ½Î¿Ï",board:"ÎšÎ±Ï„Î¬Ï„Î±Î¾Î·",pass:"Î”Î¹Î±Î²Î±Ï„Î®ÏÎ¹Î¿",
@@ -2080,7 +2080,7 @@ el:{
   spotter_dup:"ðŸ“‹ {code} ({country}) Î®Î´Î· ÏƒÏ…Î»Î»Î­Ï‡Î¸Î·ÎºÎµ!",
   map_unavail:"Î§Î¬ÏÏ„Î·Ï‚ Î¼Î· Î´Î¹Î±Î¸Î­ÏƒÎ¹Î¼Î¿Ï‚",map_loading:"Î¦ÏŒÏÏ„Ï‰ÏƒÎ· Ï‡Î¬ÏÏ„Î·…",
   q_subway_km:"Î ÏŒÏƒÎ¿ Î¼Î±ÎºÏÏ ÎµÎ¯Î½Î±Î¹ Ï„Î¿ Î¼ÎµÏ„ÏÏŒ … (km)?",q_subway_lines:"Î ÏŒÏƒÎµÏ‚ Î³ÏÎ±Î¼Î¼Î­Ï‚ Î¼ÎµÏ„ÏÏŒ Î­Ï‡ÎµÎ¹ …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Î‘Î½ÎµÏ„Î¿ Â· Î§Ï‰ÏÎ¯Ï‚ ÏŒÏÎ¹Î¿ Â· âˆž Î–Ï‰Î­Ï‚",diff_desc_hc:"\u{1F525} Hardcore: ÎšÎ»Î±ÏƒÎ¹ÎºÏŒ Â· Î§Ï‰ÏÎ¯Ï‚ ÏŒÏÎ¹Î¿ Â· 3 Î–Ï‰Î­Ï‚",diff_desc_surv:"\u{1F480} Survival: Î•Î½Î±Î½Ï„Î¯Î¿Î½ Ï‡ÏÏŒÎ½Î¿Ï… Â· 8Î´Î» Â· 3 Î–Ï‰Î­Ï‚",hud_lives:"Î–Î©Î•Î£",score_mult_max:"ÎœÎ­Î³Î¹ÏƒÏ„Î¿Ï‚ Î Î¿Î»Î»Î±Ï€Î»Î±ÏƒÎ¹Î±ÏƒÏ„Î®Ï‚",score_time_bonus:"ÎœÏ€ÏŒÎ½Î¿Ï…Ï‚ Î§ÏÏŒÎ½Î¿Ï…",pts_abbr:"Î¼ÏŒÏ.",score_correct_lbl:"ÏƒÏ‰ÏƒÏ„Î¬",mode_wappen:"Î•Î¸Î½ÏŒÏƒÎ·Î¼Î±",mode_slf:"Î ÏŒÎ»Î·-Î§ÏŽÏÎ±-Î Î¿Ï„Î¬Î¼Î¹",mode_euro:"ÎšÎ­ÏÎ¼Î±Ï„Î± Î•Ï…ÏÏŽ"
+  diff_desc_casual:"\u{1F7E2} Casual: Î‘Î½ÎµÏ„Î¿ · Î§Ï‰ÏÎ¯Ï‚ ÏŒÏÎ¹Î¿ · ∞ Î–Ï‰Î­Ï‚",diff_desc_hc:"\u{1F525} Hardcore: ÎšÎ»Î±ÏƒÎ¹ÎºÏŒ · Î§Ï‰ÏÎ¯Ï‚ ÏŒÏÎ¹Î¿ · 3 Î–Ï‰Î­Ï‚",diff_desc_surv:"\u{1F480} Survival: Î•Î½Î±Î½Ï„Î¯Î¿Î½ Ï‡ÏÏŒÎ½Î¿Ï… · 8Î´Î» · 3 Î–Ï‰Î­Ï‚",hud_lives:"Î–Î©Î•Î£",score_mult_max:"ÎœÎ­Î³Î¹ÏƒÏ„Î¿Ï‚ Î Î¿Î»Î»Î±Ï€Î»Î±ÏƒÎ¹Î±ÏƒÏ„Î®Ï‚",score_time_bonus:"ÎœÏ€ÏŒÎ½Î¿Ï…Ï‚ Î§ÏÏŒÎ½Î¿Ï…",pts_abbr:"Î¼ÏŒÏ.",score_correct_lbl:"ÏƒÏ‰ÏƒÏ„Î¬",mode_wappen:"Î•Î¸Î½ÏŒÏƒÎ·Î¼Î±",mode_slf:"Î ÏŒÎ»Î·-Î§ÏŽÏÎ±-Î Î¿Ï„Î¬Î¼Î¹",mode_euro:"ÎšÎ­ÏÎ¼Î±Ï„Î± Î•Ï…ÏÏŽ"
 },
 da:{
   play:"SPIL",again:"SPIL IGEN",menu:"Hovedmenu",board:"Rangliste",pass:"Pas",
@@ -2117,7 +2117,7 @@ da:{
   spotter_dup:"ðŸ“‹ {code} ({country}) allerede indsamlet!",
   map_unavail:"Kort ikke tilgß¦ngeligt",map_loading:"Indlß¦ser kort…",
   q_subway_km:"Hvor lang er metronetvß¦rket … (km)?",q_subway_lines:"Hvor mange metrolinjer har …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Afslappet Â· Ingen tidsgrß¦nse Â· âˆž Liv",diff_desc_hc:"\u{1F525} Hardcore: Klassisk Â· Ingen tidsgrß¦nse Â· 3 Liv",diff_desc_surv:"\u{1F480} Survival: Mod uret Â· 8s Â· 3 Liv",hud_lives:"LIV",score_mult_max:"Maks Multiplikator",score_time_bonus:"Tidsbonus",pts_abbr:"pt.",score_correct_lbl:"korrekt",mode_wappen:"Vß¥benskjolde",mode_slf:"By-Land-Flod",mode_euro:"Euromß¸nter"
+  diff_desc_casual:"\u{1F7E2} Casual: Afslappet · Ingen tidsgrß¦nse · ∞ Liv",diff_desc_hc:"\u{1F525} Hardcore: Klassisk · Ingen tidsgrß¦nse · 3 Liv",diff_desc_surv:"\u{1F480} Survival: Mod uret · 8s · 3 Liv",hud_lives:"LIV",score_mult_max:"Maks Multiplikator",score_time_bonus:"Tidsbonus",pts_abbr:"pt.",score_correct_lbl:"korrekt",mode_wappen:"Vß¥benskjolde",mode_slf:"By-Land-Flod",mode_euro:"Euromß¸nter"
 },
 sv:{
   play:"SPELA",again:"SPELA IGEN",menu:"Huvudmeny",board:"Rankningslista",pass:"Pass",
@@ -2154,7 +2154,7 @@ sv:{
   spotter_dup:"ðŸ“‹ {code} ({country}) redan insamlat!",
   map_unavail:"Karta ej tillgänglig",map_loading:"Laddar karta…",
   q_subway_km:"Hur lß¥ng är tunnelbanenätet … (km)?",q_subway_lines:"Hur mß¥nga tunnelbanelinjer har …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Avslappnad Â· Ingen tidsgräns Â· âˆž Liv",diff_desc_hc:"\u{1F525} Hardcore: Klassisk Â· Ingen tidsgräns Â· 3 Liv",diff_desc_surv:"\u{1F480} Survival: Mot klockan Â· 8s Â· 3 Liv",hud_lives:"LIV",score_mult_max:"Max Multiplikator",score_time_bonus:"Tidsbonus",pts_abbr:"pt.",score_correct_lbl:"rätt",mode_wappen:"Vapen",mode_slf:"Stad-Land-Flod",mode_euro:"Euromynt"
+  diff_desc_casual:"\u{1F7E2} Casual: Avslappnad · Ingen tidsgräns · ∞ Liv",diff_desc_hc:"\u{1F525} Hardcore: Klassisk · Ingen tidsgräns · 3 Liv",diff_desc_surv:"\u{1F480} Survival: Mot klockan · 8s · 3 Liv",hud_lives:"LIV",score_mult_max:"Max Multiplikator",score_time_bonus:"Tidsbonus",pts_abbr:"pt.",score_correct_lbl:"rätt",mode_wappen:"Vapen",mode_slf:"Stad-Land-Flod",mode_euro:"Euromynt"
 },
 fi:{
   play:"PELAA",again:"PELAA UUDELLEEN",menu:"Päävalikko",board:"Tulostaulukko",pass:"Passi",
@@ -2191,7 +2191,7 @@ fi:{
   spotter_dup:"ðŸ“‹ {code} ({country}) jo kerätty!",
   map_unavail:"Kartta ei saatavilla",map_loading:"Ladataan karttaa…",
   q_subway_km:"Kuinka pitkä on metroverkosto … (km)?",q_subway_lines:"Kuinka monta metrolinjaa on …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Rento Â· Ei aikarajaa Â· âˆž Elämää",diff_desc_hc:"\u{1F525} Hardcore: Klassinen Â· Ei aikarajaa Â· 3 Elämää",diff_desc_surv:"\u{1F480} Survival: Aikaa vastaan Â· 8s Â· 3 Elämää",hud_lives:"ELß„Mß„T",score_mult_max:"Maks Kerroin",score_time_bonus:"Aikabonus",pts_abbr:"p.",score_correct_lbl:"oikein",mode_wappen:"Vaakunat",mode_slf:"Kaupunki-Maa-Joki",mode_euro:"Eurokolikot"
+  diff_desc_casual:"\u{1F7E2} Casual: Rento · Ei aikarajaa · ∞ Elämää",diff_desc_hc:"\u{1F525} Hardcore: Klassinen · Ei aikarajaa · 3 Elämää",diff_desc_surv:"\u{1F480} Survival: Aikaa vastaan · 8s · 3 Elämää",hud_lives:"ELß„Mß„T",score_mult_max:"Maks Kerroin",score_time_bonus:"Aikabonus",pts_abbr:"p.",score_correct_lbl:"oikein",mode_wappen:"Vaakunat",mode_slf:"Kaupunki-Maa-Joki",mode_euro:"Eurokolikot"
 },
 et:{
   play:"Mß„NGI",again:"Mß„NGI UUESTI",menu:"Peamenüü",board:"Edetabel",pass:"Pass",
@@ -2228,7 +2228,7 @@ et:{
   spotter_dup:"ðŸ“‹ {code} ({country}) juba kogutud!",
   map_unavail:"Kaart pole saadaval",map_loading:"Kaardi laadimine…",
   q_subway_km:"Kui pikk on metroovßµrk … (km)?",q_subway_lines:"Kui palju metroliine on …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Lßµßµgastav Â· Pole ajalimiiti Â· âˆž Elu",diff_desc_hc:"\u{1F525} Hardcore: Klassikaline Â· Pole limiiti Â· 3 Elu",diff_desc_surv:"\u{1F480} Survival: Aja vastu Â· 8s Â· 3 Elu",hud_lives:"ELUD",score_mult_max:"Max Kordaja",score_time_bonus:"Ajaboonus",pts_abbr:"pt.",score_correct_lbl:"ßµige",mode_wappen:"Vapid",mode_slf:"Linn-Maa-Jßµgi",mode_euro:"Euromündid"
+  diff_desc_casual:"\u{1F7E2} Casual: Lßµßµgastav · Pole ajalimiiti · ∞ Elu",diff_desc_hc:"\u{1F525} Hardcore: Klassikaline · Pole limiiti · 3 Elu",diff_desc_surv:"\u{1F480} Survival: Aja vastu · 8s · 3 Elu",hud_lives:"ELUD",score_mult_max:"Max Kordaja",score_time_bonus:"Ajaboonus",pts_abbr:"pt.",score_correct_lbl:"ßµige",mode_wappen:"Vapid",mode_slf:"Linn-Maa-Jßµgi",mode_euro:"Euromündid"
 },
 lv:{
   play:"SPń’Lń’T",again:"SPń’Lń’T Vń’LREIZ",menu:"Galvenń izvń“lne",board:"Vń“rtń“jums",pass:"Pase",
@@ -2265,7 +2265,7 @@ lv:{
   spotter_dup:"ðŸ“‹ {code} ({country}) jau savńkts!",
   map_unavail:"Karte nav pieejama",map_loading:"Karte ielńdń“…",
   q_subway_km:"Cik garŚ¡ ir metro tń«kls … (km)?",q_subway_lines:"Cik metro lń«niju ir …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Relaksń“joŚ¡s Â· Nav laika ierobeŚ¾ojuma Â· âˆž Dzń«ves",diff_desc_hc:"\u{1F525} Hardcore: Klasń«kais Â· Nav ierobeŚ¾ojuma Â· 3 Dzń«ves",diff_desc_surv:"\u{1F480} Survival: Pret laiku Â· 8s Â· 3 Dzń«ves",hud_lives:"DZńªBVES",score_mult_max:"Maks Reizinńtńjs",score_time_bonus:"Laika Bonuss",pts_abbr:"pts.",score_correct_lbl:"pareizi",mode_wappen:"ń¢erboŚ–i",mode_slf:"Pilsń“ta-Valsts-Upe",mode_euro:"Eiro Monń“tas"
+  diff_desc_casual:"\u{1F7E2} Casual: Relaksń“joŚ¡s · Nav laika ierobeŚ¾ojuma · ∞ Dzń«ves",diff_desc_hc:"\u{1F525} Hardcore: Klasń«kais · Nav ierobeŚ¾ojuma · 3 Dzń«ves",diff_desc_surv:"\u{1F480} Survival: Pret laiku · 8s · 3 Dzń«ves",hud_lives:"DZńªBVES",score_mult_max:"Maks Reizinńtńjs",score_time_bonus:"Laika Bonuss",pts_abbr:"pts.",score_correct_lbl:"pareizi",mode_wappen:"ń¢erboŚ–i",mode_slf:"Pilsń“ta-Valsts-Upe",mode_euro:"Eiro Monń“tas"
 },
 lt:{
   play:"Ś½AISTI",again:"Ś½AISTI IŚ  NAUJO",menu:"Pagrindinis meniu",board:"Reitingas",pass:"Pasas",
@@ -2302,7 +2302,7 @@ lt:{
   spotter_dup:"ðŸ“‹ {code} ({country}) jau surinkta!",
   map_unavail:"Ś½emń—lapis neprieinamas",map_loading:"Kraunamas Ś¾emń—lapis…",
   q_subway_km:"Kiek ilgas metro tinklas … (km)?",q_subway_lines:"Kiek metro linijŚ³ yra …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Atsipalaidavęs Â· Be laiko limito Â· âˆž GyvybiŚ³",diff_desc_hc:"\u{1F525} Hardcore: Klasikinis Â· Be limito Â· 3 Gyvybń—s",diff_desc_surv:"\u{1F480} Survival: PrieŚ¡ laikń… Â· 8s Â· 3 Gyvybń—s",hud_lives:"GYVYBń–S",score_mult_max:"Maks Daugintojas",score_time_bonus:"Laiko Premija",pts_abbr:"tŚ¡k.",score_correct_lbl:"teisingai",mode_wappen:"Herbai",mode_slf:"Miestas-Ś alis-Upń—",mode_euro:"Euro Monetos"
+  diff_desc_casual:"\u{1F7E2} Casual: Atsipalaidavęs · Be laiko limito · ∞ GyvybiŚ³",diff_desc_hc:"\u{1F525} Hardcore: Klasikinis · Be limito · 3 Gyvybń—s",diff_desc_surv:"\u{1F480} Survival: PrieŚ¡ laikń… · 8s · 3 Gyvybń—s",hud_lives:"GYVYBń–S",score_mult_max:"Maks Daugintojas",score_time_bonus:"Laiko Premija",pts_abbr:"tŚ¡k.",score_correct_lbl:"teisingai",mode_wappen:"Herbai",mode_slf:"Miestas-Ś alis-Upń—",mode_euro:"Euro Monetos"
 },
 mt:{
   play:"ILGń¦AB",again:"ILGń¦AB MILL-ń DID",menu:"Menu Prinń‹ipali",board:"Klassifika",pass:"Passaport",
@@ -2339,7 +2339,7 @@ mt:{
   spotter_dup:"ðŸ“‹ {code} ({country}) diń¡ß  miń¡bur!",
   map_unavail:"Mappa mhux disponibbli",map_loading:"Qed jń¡ń§abbi l-mappa…",
   q_subway_km:"Kemm hi twila n-netwerk tal-metro … (km)?",q_subway_lines:"Kemm gń§andha linji tal-metro …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Rilassat Â· Ebda limitu ta' ń§in Â· âˆž ń¦ajjiet",diff_desc_hc:"\u{1F525} Hardcore: Klassiku Â· Ebda limitu Â· 3 ń¦ajjiet",diff_desc_surv:"\u{1F480} Survival: Kontra l-ń§in Â· 8s Â· 3 ń¦ajjiet",hud_lives:"ń¦AJJIET",score_mult_max:"Multiplikatur Massimu",score_time_bonus:"Bonus tal-ń¦in",pts_abbr:"pt.",score_correct_lbl:"korretti",mode_wappen:"Armi",mode_slf:"Belt-Pajń§iż-Xmara",mode_euro:"Muniti Ewro"
+  diff_desc_casual:"\u{1F7E2} Casual: Rilassat · Ebda limitu ta' ń§in · ∞ ń¦ajjiet",diff_desc_hc:"\u{1F525} Hardcore: Klassiku · Ebda limitu · 3 ń¦ajjiet",diff_desc_surv:"\u{1F480} Survival: Kontra l-ń§in · 8s · 3 ń¦ajjiet",hud_lives:"ń¦AJJIET",score_mult_max:"Multiplikatur Massimu",score_time_bonus:"Bonus tal-ń¦in",pts_abbr:"pt.",score_correct_lbl:"korretti",mode_wappen:"Armi",mode_slf:"Belt-Pajń§iż-Xmara",mode_euro:"Muniti Ewro"
 },
 ga:{
   play:"IMIR",again:"IMIR ARßS",menu:"Prß­omh-roghchlár",board:"Clár na mBuaiteoirß­",pass:"Pas",
@@ -2376,7 +2376,7 @@ ga:{
   spotter_dup:"ðŸ“‹ {code} ({country}) bailithe cheana!",
   map_unavail:"Léarscáil nach bhfuil ar fáil",map_loading:"Ag lódáil léarscáil…",
   q_subway_km:"Cé chomh fada leis an ngréasán meitreó … (km)?",q_subway_lines:"Cé mhéad lß­ne meitreó atá ag …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Socair Â· Gan teorainn ama Â· âˆž Saol",diff_desc_hc:"\u{1F525} Hardcore: Clásach Â· Gan teorainn Â· 3 Saol",diff_desc_surv:"\u{1F480} Survival: In aghaidh an chloig Â· 8s Â· 3 Saol",hud_lives:"SAOLTA",score_mult_max:"Iolraitheoir Uasméid",score_time_bonus:"Bónas Ama",pts_abbr:"p.",score_correct_lbl:"ceart",mode_wappen:"Armas",mode_slf:"Cathair-Tß­r-Abhainn",mode_euro:"Boinn Euro"
+  diff_desc_casual:"\u{1F7E2} Casual: Socair · Gan teorainn ama · ∞ Saol",diff_desc_hc:"\u{1F525} Hardcore: Clásach · Gan teorainn · 3 Saol",diff_desc_surv:"\u{1F480} Survival: In aghaidh an chloig · 8s · 3 Saol",hud_lives:"SAOLTA",score_mult_max:"Iolraitheoir Uasméid",score_time_bonus:"Bónas Ama",pts_abbr:"p.",score_correct_lbl:"ceart",mode_wappen:"Armas",mode_slf:"Cathair-Tß­r-Abhainn",mode_euro:"Boinn Euro"
 }
 };
 /* t(key, vars) – translate + interpolate */
@@ -3182,7 +3182,7 @@ function _compPick(key,filterFn){
 }
 function _compQ(type,prompt,a,b,aVal,bVal,fmtFn){
   const ans=bVal>aVal?b:a;
-  const meta=displayCountry(a)+': '+fmtFn(aVal)+' Â· '+displayCountry(b)+': '+fmtFn(bVal);
+  const meta=displayCountry(a)+': '+fmtFn(aVal)+' · '+displayCountry(b)+': '+fmtFn(bVal);
   return{type,prompt,subj:'',opts:[a,b],ans,meta,lid:a+'|'+b,cc:ccFromCountry(ans)};
 }
 function genCompAreaQ(){
@@ -4599,6 +4599,11 @@ const GEN={
 };
 
 /* GAME LOOP */
+/* P154: Global error boundary — prevents silent white-screen crashes */
+window.onerror=function(m,u,l,c,e){
+  console.error("🛑 CRASH SHIELD:",m,"at",u+":"+l);
+  return false; /* let browser also log it */
+};
 function clr(){clearInterval(tIv);clearTimeout(fTo);clearTimeout(S.freezeTimer);S.freezeTimer=null;}
 function nextRound(){
   clr();
@@ -5787,7 +5792,7 @@ app.innerHTML=`<div class="scr">
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">ß—${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">ðŸ’€ SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">âˆž</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">ß—</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">ß—${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">ðŸ’€ SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">ß—</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -7006,7 +7011,7 @@ function showAd(){if(!ENABLE_ADS||\!sbProfile?.is_premium)return; /* P151 */S.ad
 function closeAd(){S.adModal=false;render();}
 function renderAdModal(){
   return`<div class="modal-overlay" onclick="closeAd()" style="z-index:500"><div class="modal-box" style="max-width:320px;padding:1.25rem">
-    <div style="text-align:center;font-size:.6rem;color:var(--text3);letter-spacing:1.2px;margin-bottom:.6rem">ANZEIGE Â· UNTERSTßœTZT GEOQUEST</div>
+    <div style="text-align:center;font-size:.6rem;color:var(--text3);letter-spacing:1.2px;margin-bottom:.6rem">ANZEIGE · UNTERSTßœTZT GEOQUEST</div>
     <div style="min-height:100px;background:var(--bg3);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text3);border:1.5px dashed var(--border);margin-bottom:.85rem;padding:1rem">
       <div style="font-size:1.8rem;margin-bottom:.35rem">ðŸ“¢</div>
       <div style="font-size:.8rem;font-weight:700">Werbung</div>
@@ -7349,7 +7354,7 @@ function renderProfilTab(){
   const modeAcc={};
   history.forEach(g=>{if(\!modeAcc[g.mode])modeAcc[g.mode]={c:0,t:0};modeAcc[g.mode].c+=g.correct;modeAcc[g.mode].t+=g.rounds;});
   const modeBars=MODES.map(m=>{const s=modeAcc[m.id];if(\!s||\!s.t)return"";const p=Math.round(s.c/s.t*100);return`<div class="stat-bar-row"><div class="stat-bar-lbl">${m.icon} ${modeTitle(m).slice(0,11)}</div><div class="stat-bar-track"><div class="stat-bar-fill ${p<50?"low":p<80?"mid":""}" style="width:${p}%"></div></div><div class="stat-bar-pct">${p}%</div></div>`;}).filter(Boolean).join("");
-  const tileHtml=COUNTRIES.map(co=>{const m=mastery[co.cc]||{v:0,p:0};const r=getMasteryRank(m.v,m.p);const cls=r==="gold"?"mc-done":r==="silver"?"mc-learn":r==="bronze"?"mc-new":"";return`<div class="mc-tile${cls?" "+cls:""}" title="${co.c} Â· ${m.v} richtig" onclick="S.modal='${co.cc}';render()"></div>`;}).join("");
+  const tileHtml=COUNTRIES.map(co=>{const m=mastery[co.cc]||{v:0,p:0};const r=getMasteryRank(m.v,m.p);const cls=r==="gold"?"mc-done":r==="silver"?"mc-learn":r==="bronze"?"mc-new":"";return`<div class="mc-tile${cls?" "+cls:""}" title="${co.c} · ${m.v} richtig" onclick="S.modal='${co.cc}';render()"></div>`;}).join("");
   if(history.length>=2){
     const last10=history.slice(0,10).reverse();const maxSc=Math.max(...last10.map(g=>g.score),1);
     const W=300,H=72;
@@ -7365,7 +7370,7 @@ function renderProfilTab(){
     <details style="background:var(--bg2);border-radius:14px;border:1px solid var(--border);overflow:hidden;margin-bottom:.5rem">
       <summary style="padding:.75rem 1rem;font-weight:900;font-size:.88rem;cursor:pointer;user-select:none"><div style="display:flex;align-items:center;justify-content:space-between">
         <span>ðŸ“” Reisepass &amp; Regionen</span>
-        <span style="color:var(--text3);font-size:.75rem">${totalStamps} Stempel Â· ${rank} →¾</span></div>
+        <span style="color:var(--text3);font-size:.75rem">${totalStamps} Stempel · ${rank} →¾</span></div>
       </summary>
       <div style="padding:0 .85rem .85rem">
         <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.65rem">REGIONEN-FORTSCHRITT</div>
@@ -7390,7 +7395,7 @@ function renderProfilTab(){
       </summary>
       <div style="padding:0 .85rem .85rem">
         <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.5rem">MASTERY MAP – ${totalStamps} Länder</div>
-        <div style="font-size:.62rem;color:var(--text3);margin-bottom:.5rem"><span style="color:#10b981">→ </span> Gold Â· <span style="color:#3b82f6">→ </span> Silber Â· <span style="color:#f59e0b">→ </span> Bronze</div>
+        <div style="font-size:.62rem;color:var(--text3);margin-bottom:.5rem"><span style="color:#10b981">→ </span> Gold · <span style="color:#3b82f6">→ </span> Silber · <span style="color:#f59e0b">→ </span> Bronze</div>
         <div class="mastery-tiles">${tileHtml}</div>
         ${modeBars?`<div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin:.75rem 0 .55rem">GENAUIGKEIT PRO MODUS</div>${modeBars}`:""}
         ${detailStats}
