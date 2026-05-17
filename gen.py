@@ -1292,7 +1292,7 @@ de:{
   q_neighbor:"Welches Land grenzt an…?",q_neighbor_not:"Grenzt NICHT an…?",
   q_plates_casual:"Woher kommt dieses Kennzeichen?",q_plates_hard:"Region erkennen – kein Tipp!",
   q_river_real:"Durch welches Land fließt dieser Fluss?",q_map_guess:"Finde das Land auf der Karte",
-  fb_correct:"✓“ Richtig! +{pts}",fb_wrong:"✗ Falsch →’ {ans}",fb_time:"⏱ Zeit! →’ {ans}",
+  fb_correct:"✓“ Richtig! +{pts}",fb_wrong:"✗ Falsch → {ans}",fb_time:"⏱ Zeit! → {ans}",
   plates_more:"+{n} weitere",pct_complete:"{pct}% vollständig",
   spotter_dup:"ðŸ“‹ {code} ({country}) bereits gesammelt!",
   map_unavail:"Karte nicht verfügbar",map_loading:"Kartendaten werden geladen…",
@@ -1339,7 +1339,7 @@ en:{
   q_neighbor:"Which country borders…?",q_neighbor_not:"Does NOT border…?",
   q_plates_casual:"Which country has this plate?",q_plates_hard:"Identify the region – no hint!",
   q_river_real:"Which country does this river flow through?",q_map_guess:"Find the country on the map",
-  fb_correct:"✓“ Correct! +{pts}",fb_wrong:"✗ Wrong →’ {ans}",fb_time:"⏱ Time! →’ {ans}",
+  fb_correct:"✓“ Correct! +{pts}",fb_wrong:"✗ Wrong → {ans}",fb_time:"⏱ Time! → {ans}",
   plates_more:"+{n} more",pct_complete:"{pct}% complete",
   spotter_dup:"ðŸ“‹ {code} ({country}) already collected!",
   map_unavail:"Map not available",map_loading:"Loading map data…",
@@ -1385,7 +1385,7 @@ pl:{
   q_neighbor:"Który kraj graniczy z…?",q_neighbor_not:"NIE graniczy z…?",
   q_plates_casual:"Do jakiego kraju należy ta tablica?",q_plates_hard:"Jaki region ma tę tablicę?",
   q_river_real:"Przez jaki kraj płynie ta rzeka?",q_map_guess:"ZnajdŚº kraj na mapie",
-  fb_correct:"✓“ Dobrze! +{pts}",fb_wrong:"✗ Błąd →’ {ans}",fb_time:"⏱ Czas! →’ {ans}",
+  fb_correct:"✓“ Dobrze! +{pts}",fb_wrong:"✗ Błąd → {ans}",fb_time:"⏱ Czas! → {ans}",
   plates_more:"+{n} więcej",pct_complete:"{pct}% ukoŚ„czono",
   spotter_dup:"ðŸ“‹ {code} ({country}) już zebrane!",
   map_unavail:"Mapa niedostępna",map_loading:"Śadowanie mapy…",
@@ -1441,7 +1441,7 @@ fr:{
   q_neighbor:"Quel pays borde… ?",q_neighbor_not:"Ne borde PAS… ?",
   q_plates_casual:"De quel pays est cette plaque ?",q_plates_hard:"Identifier la région – aucun indice !",
   q_river_real:"Dans quel pays coule ce fleuve ?",q_map_guess:"Trouver le pays sur la carte",
-  fb_correct:"✓“ Correct ! +{pts}",fb_wrong:"✗ Faux →’ {ans}",fb_time:"⏱ Temps ! →’ {ans}",
+  fb_correct:"✓“ Correct ! +{pts}",fb_wrong:"✗ Faux → {ans}",fb_time:"⏱ Temps ! → {ans}",
   plates_more:"+{n} de plus",pct_complete:"{pct}% terminé",
   spotter_dup:"ðŸ“‹ {code} ({country}) déjß  collecté !",
   map_unavail:"Carte non disponible",map_loading:"Chargement de la carte…",
@@ -1497,7 +1497,7 @@ es:{
   q_neighbor:"Â¿Qué paß­s limita con…?",q_neighbor_not:"Â¿NO limita con…?",
   q_plates_casual:"Â¿De qué paß­s es esta matrß­cula?",q_plates_hard:"Identificar la región – Â¡sin pista!",
   q_river_real:"Â¿Por qué paß­s pasa este rß­o?",q_map_guess:"Encuentra el paß­s en el mapa",
-  fb_correct:"✓“ Â¡Correcto! +{pts}",fb_wrong:"✗ Incorrecto →’ {ans}",fb_time:"⏱ Â¡Tiempo! →’ {ans}",
+  fb_correct:"✓“ Â¡Correcto! +{pts}",fb_wrong:"✗ Incorrecto → {ans}",fb_time:"⏱ Â¡Tiempo! → {ans}",
   plates_more:"+{n} más",pct_complete:"{pct}% completado",
   spotter_dup:"ðŸ“‹ {code} ({country}) ya coleccionado!",
   map_unavail:"Mapa no disponible",map_loading:"Cargando mapa…",
@@ -1553,7 +1553,7 @@ it:{
   q_neighbor:"Quale paese confina con…?",q_neighbor_not:"NON confina con…?",
   q_plates_casual:"Da quale paese viene questa targa?",q_plates_hard:"Identificare la regione – nessun indizio!",
   q_river_real:"Attraverso quale paese scorre questo fiume?",q_map_guess:"Trova il paese sulla mappa",
-  fb_correct:"✓“ Corretto! +{pts}",fb_wrong:"✗ Sbagliato →’ {ans}",fb_time:"⏱ Tempo! →’ {ans}",
+  fb_correct:"✓“ Corretto! +{pts}",fb_wrong:"✗ Sbagliato → {ans}",fb_time:"⏱ Tempo! → {ans}",
   plates_more:"+{n} altri",pct_complete:"{pct}% completato",
   spotter_dup:"ðŸ“‹ {code} ({country}) giß  raccolto!",
   map_unavail:"Mappa non disponibile",map_loading:"Caricamento mappa…",
@@ -1609,7 +1609,7 @@ nl:{
   q_neighbor:"Welk land grenst aan…?",q_neighbor_not:"Grenst NIET aan…?",
   q_plates_casual:"Uit welk land komt dit kenteken?",q_plates_hard:"Identificeer de regio – geen hint!",
   q_river_real:"Door welk land stroomt deze rivier?",q_map_guess:"Vind het land op de kaart",
-  fb_correct:"✓“ Correct! +{pts}",fb_wrong:"✗ Fout →’ {ans}",fb_time:"⏱ Tijd! →’ {ans}",
+  fb_correct:"✓“ Correct! +{pts}",fb_wrong:"✗ Fout → {ans}",fb_time:"⏱ Tijd! → {ans}",
   plates_more:"+{n} meer",pct_complete:"{pct}% voltooid",
   spotter_dup:"ðŸ“‹ {code} ({country}) al verzameld!",
   map_unavail:"Kaart niet beschikbaar",map_loading:"Kaart laden…",
@@ -1646,7 +1646,7 @@ pt:{
   q_neighbor:"Qual paß­s faz fronteira com…?",q_neighbor_not:"NßƒO faz fronteira com…?",
   q_plates_casual:"De qual paß­s é esta placa?",q_plates_hard:"Identificar a regiß£o – sem dica!",
   q_river_real:"Por qual paß­s corre este rio?",q_map_guess:"Encontre o paß­s no mapa",
-  fb_correct:"✓“ Correto! +{pts}",fb_wrong:"✗ Errado →’ {ans}",fb_time:"⏱ Tempo! →’ {ans}",
+  fb_correct:"✓“ Correto! +{pts}",fb_wrong:"✗ Errado → {ans}",fb_time:"⏱ Tempo! → {ans}",
   plates_more:"+{n} mais",pct_complete:"{pct}% completo",
   spotter_dup:"ðŸ“‹ {code} ({country}) já coletado!",
   map_unavail:"Mapa nß£o disponß­vel",map_loading:"Carregando mapa…",
@@ -1683,7 +1683,7 @@ ro:{
   q_neighbor:"Ce È›arńƒ se ß®nvecineazńƒ cu…?",q_neighbor_not:"NU se ß®nvecineazńƒ cu…?",
   q_plates_casual:"Din ce È›arńƒ este aceastńƒ plńƒcuÈ›ńƒ?",q_plates_hard:"IdentificaÈ›i regiunea – fńƒrńƒ indiciu!",
   q_river_real:"Prin ce È›arńƒ curge acest rß¢u?",q_map_guess:"GńƒseÈ™te È›ara pe hartńƒ",
-  fb_correct:"✓“ Corect! +{pts}",fb_wrong:"✗ GreÈ™it →’ {ans}",fb_time:"⏱ Timp! →’ {ans}",
+  fb_correct:"✓“ Corect! +{pts}",fb_wrong:"✗ GreÈ™it → {ans}",fb_time:"⏱ Timp! → {ans}",
   plates_more:"+{n} mai mult",pct_complete:"{pct}% complet",
   spotter_dup:"ðŸ“‹ {code} ({country}) deja colectat!",
   map_unavail:"Hartńƒ indisponibilńƒ",map_loading:"Se ßªncarcńƒ harta…",
@@ -1720,7 +1720,7 @@ hu:{
   q_neighbor:"Melyik ország határos…-val?",q_neighbor_not:"NEM határos…-val?",
   q_plates_casual:"Melyik ország rendszáma ez?",q_plates_hard:"Azonosß­tsa a régiót – nincs tipp!",
   q_river_real:"Melyik országon folyik át ez a folyó?",q_map_guess:"Keresse meg az országot a térképen",
-  fb_correct:"✓“ Helyes! +{pts}",fb_wrong:"✗ Rossz →’ {ans}",fb_time:"⏱ IdŚ‘! →’ {ans}",
+  fb_correct:"✓“ Helyes! +{pts}",fb_wrong:"✗ Rossz → {ans}",fb_time:"⏱ IdŚ‘! → {ans}",
   plates_more:"+{n} több",pct_complete:"{pct}% kész",
   spotter_dup:"ðŸ“‹ {code} ({country}) már összegyŚ±jtve!",
   map_unavail:"Térkép nem elérhetŚ‘",map_loading:"Térkép betöltése…",
@@ -1757,7 +1757,7 @@ cs:{
   q_neighbor:"Která zemń› sousedß­ s…?",q_neighbor_not:"NESOUSEDß s…?",
   q_plates_casual:"Ze které zemń› je tato SPZ?",q_plates_hard:"Urńete region – Ś¾ádná nápovń›da!",
   q_river_real:"PŚ™es kterou zemi teńe tato Ś™eka?",q_map_guess:"Najdi zemi na mapń›",
-  fb_correct:"✓“ Správnń›! +{pts}",fb_wrong:"✗ Chybnń› →’ {ans}",fb_time:"⏱ čas! →’ {ans}",
+  fb_correct:"✓“ Správnń›! +{pts}",fb_wrong:"✗ Chybnń› → {ans}",fb_time:"⏱ čas! → {ans}",
   plates_more:"+{n} dalŚ¡ß­ch",pct_complete:"{pct}% hotovo",
   spotter_dup:"ðŸ“‹ {code} ({country}) jiŚ¾ sbß­ráno!",
   map_unavail:"Mapa nenß­ k dispozici",map_loading:"Nańß­tánß­ mapy…",
@@ -1794,7 +1794,7 @@ sk:{
   q_neighbor:"Ktorá krajina susedß­ s…?",q_neighbor_not:"NESUSEDß s…?",
   q_plates_casual:"Z ktorej krajiny je táto EČV?",q_plates_hard:"Identifikujte región – Ś¾iadna nápoveda!",
   q_river_real:"Cez ktorßº krajinu teńie táto rieka?",q_map_guess:"Nájdi krajinu na mape",
-  fb_correct:"✓“ Správne! +{pts}",fb_wrong:"✗ Nesprávne →’ {ans}",fb_time:"⏱ čas! →’ {ans}",
+  fb_correct:"✓“ Správne! +{pts}",fb_wrong:"✗ Nesprávne → {ans}",fb_time:"⏱ čas! → {ans}",
   plates_more:"+{n} ńalŚ¡ß­ch",pct_complete:"{pct}% hotovo",
   spotter_dup:"ðŸ“‹ {code} ({country}) uŚ¾ zozbierané!",
   map_unavail:"Mapa nie je dostupná",map_loading:"Nańß­távanie mapy…",
@@ -1831,7 +1831,7 @@ hr:{
   q_neighbor:"Koja drŚ¾ava granińi s…?",q_neighbor_not:"NE granińi s…?",
   q_plates_casual:"Iz koje drŚ¾ave je ova registracija?",q_plates_hard:"Identificirajte regiju – nema naznake!",
   q_river_real:"Kroz koju drŚ¾avu teńe ova rijeka?",q_map_guess:"Pronań‘i drŚ¾avu na karti",
-  fb_correct:"✓“ Tońno! +{pts}",fb_wrong:"✗ PogreŚ¡no →’ {ans}",fb_time:"⏱ Kraj vremena! →’ {ans}",
+  fb_correct:"✓“ Tońno! +{pts}",fb_wrong:"✗ PogreŚ¡no → {ans}",fb_time:"⏱ Kraj vremena! → {ans}",
   plates_more:"+{n} viŚ¡e",pct_complete:"{pct}% dovrŚ¡eno",
   spotter_dup:"ðŸ“‹ {code} ({country}) već skupljeno!",
   map_unavail:"Karta nije dostupna",map_loading:"Uńitavanje karte…",
@@ -1868,7 +1868,7 @@ sl:{
   q_neighbor:"Katera drŚ¾ava meji na…?",q_neighbor_not:"NE meji na…?",
   q_plates_casual:"Iz katere drŚ¾ave je ta tablica?",q_plates_hard:"Identificirajte regijo – brez namiga!",
   q_river_real:"Skozi katero drŚ¾avo teńe ta reka?",q_map_guess:"PoiŚ¡ńi drŚ¾avo na karti",
-  fb_correct:"✓“ Pravilno! +{pts}",fb_wrong:"✗ Napańno →’ {ans}",fb_time:"⏱ čas! →’ {ans}",
+  fb_correct:"✓“ Pravilno! +{pts}",fb_wrong:"✗ Napańno → {ans}",fb_time:"⏱ čas! → {ans}",
   plates_more:"+{n} veń",pct_complete:"{pct}% dokonńano",
   spotter_dup:"ðŸ“‹ {code} ({country}) Ś¾e zbrano!",
   map_unavail:"Karta ni na voljo",map_loading:"Nalaganje karte…",
@@ -1905,7 +1905,7 @@ bg:{
   q_neighbor:"ÐšÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð³Ñ€Ð°Ð½Ð¸Ñ‡Ð¸ Ñ…?",q_neighbor_not:"ÐÐ• Ð³Ñ€Ð°Ð½Ð¸Ñ‡Ð¸ Ñ…?",
   q_plates_casual:"ÐžÑ‚ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ðµ Ñ‚Ð°Ð·Ð¸ Ñ‚Ð°Ð±ÐµÐ»Ð°?",q_plates_hard:"Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸Ñ–Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð° – Ð±ÐµÐ· Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ°!",
   q_river_real:"ÐŸÑ€ÐµÐ· ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ñ‚ÐµÑ‡Ðµ Ñ‚Ð°Ð·Ð¸ Ñ€ÐµÐºÐ°?",q_map_guess:"ÐÐ°Ð¼ÐµÑ€Ð¸ ÑÑ‚Ñ€Ð°Ð½Ð°Ñ‚Ð° Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð°Ñ‚Ð°",
-  fb_correct:"✓“ ÐŸÑ€Ð°Ð²Ð¸Ð»Ð½Ð¾! +{pts}",fb_wrong:"✗ Ð“Ñ€ÐµÑˆÐ½Ð¾ →’ {ans}",fb_time:"⏱ Ð’Ñ€ÐµÐ¼ÐµÑ‚Ð¾ Ð¸Ð·Ñ‚ÐµÑ‡Ðµ! →’ {ans}",
+  fb_correct:"✓“ ÐŸÑ€Ð°Ð²Ð¸Ð»Ð½Ð¾! +{pts}",fb_wrong:"✗ Ð“Ñ€ÐµÑˆÐ½Ð¾ → {ans}",fb_time:"⏱ Ð’Ñ€ÐµÐ¼ÐµÑ‚Ð¾ Ð¸Ð·Ñ‚ÐµÑ‡Ðµ! → {ans}",
   plates_more:"+{n} oÑ‰e",pct_complete:"{pct}% Ð·Ð°Ð²ÑŠÑ€ÑˆÐµÐ½Ð¾",
   spotter_dup:"ðŸ“‹ {code} ({country}) Ð²ÐµÑ‡e ÑÑŠÐ±Ñ€Ð°Ð½Ð¾!",
   map_unavail:"ÐšÐ°Ñ€Ñ‚Ð°Ñ‚Ð° Ð½Ðµ Ðµ Ð´Ð¾ÑÑ‚ÑŠÐ¿Ð½Ð°",map_loading:"Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð°Ñ‚Ð°…",
@@ -1942,7 +1942,7 @@ el:{
   q_neighbor:"Î Î¿Î¹Î± Ï‡ÏŽÏÎ± ÏƒÏ…Î½Î¿ÏÎµÏÎµÎ¹ Î¼Îµ Ï„Î·/Ï„Î¿…;",q_neighbor_not:"Î”Î•Î ÏƒÏ…Î½Î¿ÏÎµÏÎµÎ¹ Î¼Îµ Ï„Î·/Ï„Î¿…;",
   q_plates_casual:"Î‘Ï€ÏŒ Ï€Î¿Î¹Î± Ï‡ÏŽÏÎ± ÎµÎ¯Î½Î±Î¹ Î±Ï…Ï„Î® Î· Ï€Î¹Î½Î±ÎºÎ¯Î´Î±;",q_plates_hard:"Î‘Î½Î±Î³Î½Ï‰ÏÎ¯ÏƒÏ„Îµ Ï„Î·Î½ Ï€ÎµÏÎ¹Î¿Ï‡Î® – Ï‡Ï‰ÏÎ¯Ï‚ Ï…Ï€ÏŒÎ´ÎµÎ¹Î¾Î·!",
   q_river_real:"ÎœÎ­ÏƒÎ± Î±Ï€ÏŒ Ï€Î¿Î¹Î± Ï‡ÏŽÏÎ± Î´Î¹Î±ÏÏÎ­ÎµÎ¹ Î±Ï…Ï„ÏŒ Ï„Î¿ Ï€Î¿Ï„Î¬Î¼Î¹;",q_map_guess:"Î’ÏÎµÏ‚ Ï„Î· Ï‡ÏŽÏÎ± ÏƒÏ„Î¿Î½ Ï‡Î¬ÏÏ„Î·",
-  fb_correct:"✓“ Î£Ï‰ÏƒÏ„ÏŒ! +{pts}",fb_wrong:"✗ Î›Î¬Î¸Î¿Ï‚ →’ {ans}",fb_time:"⏱ Î¤Î­Î»Î¿Ï‚ Ï‡ÏÏŒÎ½Î¿Ï…! →’ {ans}",
+  fb_correct:"✓“ Î£Ï‰ÏƒÏ„ÏŒ! +{pts}",fb_wrong:"✗ Î›Î¬Î¸Î¿Ï‚ → {ans}",fb_time:"⏱ Î¤Î­Î»Î¿Ï‚ Ï‡ÏÏŒÎ½Î¿Ï…! → {ans}",
   plates_more:"+{n} Î±ÎºÏŒÎ¼Î±",pct_complete:"{pct}% Î¿Î»Î¿ÎºÎ»Î·ÏÏŽÎ¸Î·ÎºÎµ",
   spotter_dup:"ðŸ“‹ {code} ({country}) Î®Î´Î· ÏƒÏ…Î»Î»Î­Ï‡Î¸Î·ÎºÎµ!",
   map_unavail:"Î§Î¬ÏÏ„Î·Ï‚ Î¼Î· Î´Î¹Î±Î¸Î­ÏƒÎ¹Î¼Î¿Ï‚",map_loading:"Î¦ÏŒÏÏ„Ï‰ÏƒÎ· Ï‡Î¬ÏÏ„Î·…",
@@ -1979,7 +1979,7 @@ da:{
   q_neighbor:"Hvilket land grß¦nser op til…?",q_neighbor_not:"Grß¦nser IKKE op til…?",
   q_plates_casual:"Fra hvilket land er denne nummerplade?",q_plates_hard:"Identificér regionen – ingen hint!",
   q_river_real:"Gennem hvilket land lß¸ber denne flod?",q_map_guess:"Find landet pß¥ kortet",
-  fb_correct:"✓“ Korrekt! +{pts}",fb_wrong:"✗ Forkert →’ {ans}",fb_time:"⏱ Tid! →’ {ans}",
+  fb_correct:"✓“ Korrekt! +{pts}",fb_wrong:"✗ Forkert → {ans}",fb_time:"⏱ Tid! → {ans}",
   plates_more:"+{n} mere",pct_complete:"{pct}% fuldfß¸rt",
   spotter_dup:"ðŸ“‹ {code} ({country}) allerede indsamlet!",
   map_unavail:"Kort ikke tilgß¦ngeligt",map_loading:"Indlß¦ser kort…",
@@ -2016,7 +2016,7 @@ sv:{
   q_neighbor:"Vilket land gränsar till…?",q_neighbor_not:"Gränsar INTE till…?",
   q_plates_casual:"Frß¥n vilket land är den här skylten?",q_plates_hard:"Identifiera regionen – inget tips!",
   q_river_real:"Genom vilket land flödar den här floden?",q_map_guess:"Hitta landet pß¥ kartan",
-  fb_correct:"✓“ Rätt! +{pts}",fb_wrong:"✗ Fel →’ {ans}",fb_time:"⏱ Tid! →’ {ans}",
+  fb_correct:"✓“ Rätt! +{pts}",fb_wrong:"✗ Fel → {ans}",fb_time:"⏱ Tid! → {ans}",
   plates_more:"+{n} till",pct_complete:"{pct}% klart",
   spotter_dup:"ðŸ“‹ {code} ({country}) redan insamlat!",
   map_unavail:"Karta ej tillgänglig",map_loading:"Laddar karta…",
@@ -2053,7 +2053,7 @@ fi:{
   q_neighbor:"Mikä maa rajoittuu…?",q_neighbor_not:"EI rajoitu…?",
   q_plates_casual:"Minkä maan rekisterikilpi tämä on?",q_plates_hard:"Tunnista alue – ei vihjettä!",
   q_river_real:"Minkä maan läpi tämä joki virtaa?",q_map_guess:"Etsi maa kartalta",
-  fb_correct:"✓“ Oikein! +{pts}",fb_wrong:"✗ Väärin →’ {ans}",fb_time:"⏱ Aika! →’ {ans}",
+  fb_correct:"✓“ Oikein! +{pts}",fb_wrong:"✗ Väärin → {ans}",fb_time:"⏱ Aika! → {ans}",
   plates_more:"+{n} lisää",pct_complete:"{pct}% valmis",
   spotter_dup:"ðŸ“‹ {code} ({country}) jo kerätty!",
   map_unavail:"Kartta ei saatavilla",map_loading:"Ladataan karttaa…",
@@ -2090,7 +2090,7 @@ et:{
   q_neighbor:"Milline riik piirneb…?",q_neighbor_not:"EI piirne…?",
   q_plates_casual:"Millisest riigist see numbrimärk on?",q_plates_hard:"Tuvasta piirkond – vihjeta!",
   q_river_real:"Läbi millise riigi see jßµgi voolab?",q_map_guess:"Leia riik kaardilt",
-  fb_correct:"✓“ ß•ige! +{pts}",fb_wrong:"✗ Vale →’ {ans}",fb_time:"⏱ Aeg! →’ {ans}",
+  fb_correct:"✓“ ß•ige! +{pts}",fb_wrong:"✗ Vale → {ans}",fb_time:"⏱ Aeg! → {ans}",
   plates_more:"+{n} veel",pct_complete:"{pct}% täidetud",
   spotter_dup:"ðŸ“‹ {code} ({country}) juba kogutud!",
   map_unavail:"Kaart pole saadaval",map_loading:"Kaardi laadimine…",
@@ -2127,7 +2127,7 @@ lv:{
   q_neighbor:"Kura valsts robeŚ¾ojas ar…?",q_neighbor_not:"NAV robeŚ¾as ar…?",
   q_plates_casual:"No kuras valsts ir Ś¡ń« numura zń«me?",q_plates_hard:"Identificń“t reń£ionu – bez padoma!",
   q_river_real:"Caur kuru valsti tek Ś¡ń« upe?",q_map_guess:"Atrodi valsti kartń“",
-  fb_correct:"✓“ Pareizi! +{pts}",fb_wrong:"✗ Nepareizi →’ {ans}",fb_time:"⏱ Laiks beidzies! →’ {ans}",
+  fb_correct:"✓“ Pareizi! +{pts}",fb_wrong:"✗ Nepareizi → {ans}",fb_time:"⏱ Laiks beidzies! → {ans}",
   plates_more:"+{n} vairńk",pct_complete:"{pct}% pabeigts",
   spotter_dup:"ðŸ“‹ {code} ({country}) jau savńkts!",
   map_unavail:"Karte nav pieejama",map_loading:"Karte ielńdń“…",
@@ -2164,7 +2164,7 @@ lt:{
   q_neighbor:"Kuri Ś¡alis ribojasi su…?",q_neighbor_not:"NERIBOJASI su…?",
   q_plates_casual:"IŚ¡ kurios Ś¡alies yra Ś¡is numeris?",q_plates_hard:"Nustatyti regionń… – be uŚ¾uominos!",
   q_river_real:"Per kuriń… Ś¡alń¯ teka Ś¡i upń—?",q_map_guess:"Rask Ś¡alń¯ Ś¾emń—lapyje",
-  fb_correct:"✓“ Teisingai! +{pts}",fb_wrong:"✗ Neteisingai →’ {ans}",fb_time:"⏱ Laikas! →’ {ans}",
+  fb_correct:"✓“ Teisingai! +{pts}",fb_wrong:"✗ Neteisingai → {ans}",fb_time:"⏱ Laikas! → {ans}",
   plates_more:"+{n} daugiau",pct_complete:"{pct}% baigta",
   spotter_dup:"ðŸ“‹ {code} ({country}) jau surinkta!",
   map_unavail:"Ś½emń—lapis neprieinamas",map_loading:"Kraunamas Ś¾emń—lapis…",
@@ -2201,7 +2201,7 @@ mt:{
   q_neighbor:"Liema pajjiż jibbordjja ma'…?",q_neighbor_not:"MA jibbordjjax ma'…?",
   q_plates_casual:"Minn liema pajjiż hija din il-pjanń‹a?",q_plates_hard:"Identifika r-reń¡jun – l-ebda indikazzjoni!",
   q_river_real:"Minn liema pajjiż jgń§addi dan ix-xmara?",q_map_guess:"Sib il-pajjiż fuq il-mappa",
-  fb_correct:"✓“ Korretti! +{pts}",fb_wrong:"✗ ń¦ażin →’ {ans}",fb_time:"⏱ ń¦in! →’ {ans}",
+  fb_correct:"✓“ Korretti! +{pts}",fb_wrong:"✗ ń¦ażin → {ans}",fb_time:"⏱ ń¦in! → {ans}",
   plates_more:"+{n} aktar",pct_complete:"{pct}% lest",
   spotter_dup:"ðŸ“‹ {code} ({country}) diń¡ß  miń¡bur!",
   map_unavail:"Mappa mhux disponibbli",map_loading:"Qed jń¡ń§abbi l-mappa…",
@@ -2238,7 +2238,7 @@ ga:{
   q_neighbor:"Cén tß­r a bhfuil teorainn le…?",q_neighbor_not:"NßL teorainn le…?",
   q_plates_casual:"Cén tß­r ar as an pláta seo?",q_plates_hard:"Aithin an réigißºn – gan leid!",
   q_river_real:"Trß­ cén tß­r a ritheann an abhainn seo?",q_map_guess:"Aimsigh an tß­r ar an léarscáil",
-  fb_correct:"✓“ Ceart! +{pts}",fb_wrong:"✗ Mß­cheart →’ {ans}",fb_time:"⏱ Am! →’ {ans}",
+  fb_correct:"✓“ Ceart! +{pts}",fb_wrong:"✗ Mß­cheart → {ans}",fb_time:"⏱ Am! → {ans}",
   plates_more:"+{n} nß­os mó",pct_complete:"{pct}% crß­ochnaithe",
   spotter_dup:"ðŸ“‹ {code} ({country}) bailithe cheana!",
   map_unavail:"Léarscáil nach bhfuil ar fáil",map_loading:"Ag lódáil léarscáil…",
@@ -2498,7 +2498,7 @@ function genRiverRealQ(){
   const countries=[...new Set(RIVERS_REAL.map(r=>r.c))];
   const dis=countries.filter(c=>c!==cor.c).sort(()=>rng()-.5).slice(0,3);
   const meta=cor.len>0?cor.len+" km":"";
-  return{type:"river_real",prompt:t("q_river_real"),subj:cor.n,ans:cor.c,opts:sh([cor.c,...dis]),meta,lid:cor.n,cc:ccFromCountry(cor.c)};
+  return{type:"river_real",prompt:t("q_river_real"),subj:cor.n,ans:displayCountry(ccFromCountry(cor.c))||cor.c,opts:sh([displayCountry(ccFromCountry(cor.c))||cor.c,...dis.map(c=>displayCountry(ccFromCountry(c))||c)]),meta,lid:cor.n,cc:ccFromCountry(cor.c)};
 }
 
 /* Phase 30 – Default neighbor map (fallback when neighbors.json is empty/broken) */
@@ -4072,22 +4072,22 @@ function genCityQ(){
   let pool = _rfilt(filtered, 3);
   if(pool.length < 1) return null;
   const cor = pool[~~(rng()*pool.length)];
-  const dis=distractors(pool,x=>x.sub===cor.sub||x.cont===cor.cont,x=>x.c===cor.c,x=>x.c);
+  const dis=distractors(pool,x=>x.sub===cor.sub||x.cont===cor.cont,x=>x.c===cor.c,x=>displayCountry(x.cc)||x.c);
   console.log("🔴 DEBUG genCityQ pool.length:", pool ? pool.length : 0, "pf:", pf);
   console.log("🔴 DEBUG genCityQ pool.length:", pool ? pool.length : 0, "pf:", pf);
-  return{type:"city",prompt:t("q_city"),subj:cor.n,ans:cor.c,opts:sh([cor.c,...dis]),meta:cor.cont+" \u00b7 "+(cor.pop/1e6).toFixed(1)+" Mio.",lid:cor.id,cc:cor.cc};
+  return{type:"city",prompt:t("q_city"),subj:cor.n,ans:displayCountry(cor.cc)||cor.c,opts:sh([displayCountry(cor.cc)||cor.c,...dis]),meta:cor.cont+" \u00b7 "+(cor.pop/1e6).toFixed(1)+" Mio.",lid:cor.id,cc:cor.cc};
 }
 function genFlagQ(){
   let pool=_rfilt(COUNTRIES.filter(x=>x.cc\!==S.lid),3); if(pool.length<3) pool=COUNTRIES.filter(x=>x.cc\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
-  const dis=distractors(pool,x=>x.sr===cor.sr||x.ct===cor.ct,x=>x.c===cor.c,x=>x.c);
-  return{type:"flag",prompt:t("q_flag"),subj:cor.cc,ans:cor.c,opts:sh([cor.c,...dis]),meta:cor.ct,lid:cor.cc,cc:cor.cc};
+  const dis=distractors(pool,x=>x.sr===cor.sr||x.ct===cor.ct,x=>x.c===cor.c,x=>displayCountry(x.cc)||x.c);
+  return{type:"flag",prompt:t("q_flag"),subj:cor.cc,ans:displayCountry(cor.cc)||cor.c,opts:sh([displayCountry(cor.cc)||cor.c,...dis]),meta:cor.ct,lid:cor.cc,cc:cor.cc};
 }
 function genCapitalQ(){
   let pool=_rfilt(CAPITALS.filter(x=>x.capital\!==S.lid),3); if(pool.length<3) pool=CAPITALS.filter(x=>x.capital\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
-  const dis=distractors(pool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.country===cor.country,x=>x.country);
-  return{type:"capital",prompt:t("q_capital"),subj:cor.capital,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.capital,cc:cor.cc};
+  const dis=distractors(pool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.country===cor.country,x=>displayCountry(x.cc)||x.country);
+  return{type:"capital",prompt:t("q_capital"),subj:cor.capital,ans:displayCountry(cor.cc)||cor.country,opts:sh([displayCountry(cor.cc)||cor.country,...dis]),meta:cor.continent,lid:cor.capital,cc:cor.cc};
 }
 /* Phase 62: region filter helpers */
 function _regionOk(cc,cont){
@@ -4109,26 +4109,26 @@ function _rfilt(pool,minLen){
 function genRiverQ(){
   let pool=_rfilt(RIVERS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=RIVERS.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
-  const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>x.c);
-  return{type:"river",prompt:t("q_river"),subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
+  const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>displayCountry(x.cc)||x.c);
+  return{type:"river",prompt:t("q_river"),subj:cor.name,ans:displayCountry(cor.cc)||cor.country,opts:sh([displayCountry(cor.cc)||cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
 }
 function genLandmarkQ(){
   let pool=_rfilt(LANDMARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=LANDMARKS.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
-  const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>x.c);
-  return{type:"landmark",prompt:t("q_landmark"),subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
+  const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>displayCountry(x.cc)||x.c);
+  return{type:"landmark",prompt:t("q_landmark"),subj:cor.name,ans:displayCountry(cor.cc)||cor.country,opts:sh([displayCountry(cor.cc)||cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
 }
 function genParkQ(){
   let pool=_rfilt(NATIONAL_PARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=NATIONAL_PARKS.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
-  const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>x.c);
-  return{type:"park",prompt:t("q_park"),subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
+  const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>displayCountry(x.cc)||x.c);
+  return{type:"park",prompt:t("q_park"),subj:cor.name,ans:displayCountry(cor.cc)||cor.country,opts:sh([displayCountry(cor.cc)||cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
 }
 function genUnescoQ(){
   let pool=_rfilt(UNESCO_SITES.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=UNESCO_SITES.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
-  const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>x.c);
-  return{type:"unesco",prompt:t("q_unesco"),subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
+  const _cpool=_rfilt(COUNTRIES,4);const dis=distractors(_cpool,x=>x.sr===cor.subregion||x.ct===cor.continent,x=>x.c===cor.country,x=>displayCountry(x.cc)||x.c);
+  return{type:"unesco",prompt:t("q_unesco"),subj:cor.name,ans:displayCountry(cor.cc)||cor.country,opts:sh([displayCountry(cor.cc)||cor.country,...dis]),meta:cor.continent,lid:cor.name,cc:cor.cc};
 }
 function genCitymarkQ(){
   let pool=_rfilt(CITY_LANDMARKS.filter(x=>x.name\!==S.lid),3); if(pool.length<3) pool=CITY_LANDMARKS.filter(x=>x.name\!==S.lid); if(pool.length<1) return null;
@@ -4156,7 +4156,7 @@ function genRcapitalQ(){
   let pool=_rfilt(CAPITALS.filter(x=>x.country\!==S.lid),3); if(pool.length<3) pool=CAPITALS.filter(x=>x.country\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.capital===cor.capital,x=>x.capital);
-  return{type:"rcapital",prompt:t("q_rcapital"),subj:cor.country,ans:cor.capital,opts:sh([cor.capital,...dis]),meta:cor.continent,lid:cor.country,cc:cor.cc};
+  return{type:"rcapital",prompt:t("q_rcapital"),subj:displayCountry(cor.cc)||cor.country,ans:cor.capital,opts:sh([cor.capital,...dis]),meta:cor.continent,lid:cor.country,cc:cor.cc};
 }
 function genRcityQ(){
   let pool=_rfilt(COUNTRIES.filter(x=>x.c\!==S.lid),3); if(pool.length<3) pool=COUNTRIES.filter(x=>x.c\!==S.lid); if(pool.length<1) return null;
@@ -4164,7 +4164,7 @@ function genRcityQ(){
   const cc2=CITIES.filter(c=>c.c===cor.c);if(\!cc2.length)return genRcityQ();
   const corCity=cc2[~~(rng()*cc2.length)];
   const _citpool=_rfilt(CITIES,4);const dis=distractors(_citpool,x=>x.sub===corCity.sub||x.cont===corCity.cont,x=>x.c===cor.c,x=>x.n);
-  return{type:"rcity",prompt:t("q_rcity"),subj:cor.c,ans:corCity.n,opts:sh([corCity.n,...dis]),meta:cor.ct,lid:cor.c,cc:cor.cc};
+  return{type:"rcity",prompt:t("q_rcity"),subj:displayCountry(cor.cc)||cor.c,ans:corCity.n,opts:sh([corCity.n,...dis]),meta:cor.ct,lid:cor.c,cc:cor.cc};
 }
 function genRriverQ(){
   const _rpool=_rfilt(RIVERS,3);
@@ -4173,7 +4173,7 @@ function genRriverQ(){
   const cRivers=_rpool.filter(r=>r.country===corC);
   const cor=cRivers[~~(rng()*cRivers.length)];
   const dis=distractors(_rpool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.country===corC,x=>x.name);
-  return{type:"rriver",prompt:t("q_rriver"),subj:corC,ans:cor.name,opts:sh([cor.name,...dis]),meta:cor.continent,lid:corC,cc:cor.cc};
+  return{type:"rriver",prompt:t("q_rriver"),subj:displayCountry(cor.cc)||corC,ans:cor.name,opts:sh([cor.name,...dis]),meta:cor.continent,lid:corC,cc:cor.cc};
 }
 function genFoodQ(){
   if(\!FOOD_DATA.length)return null;
@@ -4182,7 +4182,7 @@ function genFoodQ(){
   const _fDisR=[...new Set(_fp.filter(f=>f.country\!==corC).map(f=>f.country))];
   const _fDisAll=[...new Set(FOOD_DATA.filter(f=>f.country\!==corC).map(f=>f.country))];
   const picked=sh(_fDisR.length>=3?_fDisR:_fDisAll).slice(0,3);
-  return{type:"food",prompt:t("q_food"),subj:item.dish,emoji:item.emoji,ans:corC,opts:sh([corC,...picked]),lid:item.cc,cc:item.cc};
+  return{type:"food",prompt:t("q_food"),subj:item.dish,emoji:item.emoji,ans:displayCountry(item.cc)||corC,opts:sh([displayCountry(item.cc)||corC,...picked.map(c=>displayCountry(ccFromCountry(c))||c)]),lid:item.cc,cc:item.cc};
 }
 function genBrandQ(){
   if(\!BRANDS_DATA.length)return null;
@@ -4193,7 +4193,7 @@ function genBrandQ(){
   const _pool=[...new Set(sameSub.length>=3?sameSub:fallback)];
   const pool=_pool.length>=3?_pool:[...new Set(BRANDS_DATA.filter(b=>b.country\!==corC).map(b=>b.country))];
   const picked=sh(pool).slice(0,3);
-  return{type:"brand",prompt:t("q_brand"),subj:item.brand,industry:item.industry,ans:corC,opts:sh([corC,...picked]),lid:item.cc,cc:item.cc};
+  return{type:"brand",prompt:t("q_brand"),subj:item.brand,industry:item.industry,ans:displayCountry(item.cc)||corC,opts:sh([displayCountry(item.cc)||corC,...picked.map(c=>displayCountry(ccFromCountry(c))||c)]),lid:item.cc,cc:item.cc};
 }
 function genCurrencyQ(){
   if(\!CURRENCIES_DATA.length)return null;
@@ -4204,16 +4204,16 @@ function genCurrencyQ(){
   const _pool=[...new Set(sameSub.length>=3?sameSub:fallback)];
   const pool=_pool.length>=3?_pool:[...new Set(CURRENCIES_DATA.filter(c=>c.country\!==corC).map(c=>c.country))];
   const picked=sh(pool).slice(0,3);
-  return{type:"currency",prompt:t("q_currency"),subj:item.currency,symbol:item.symbol,ans:corC,opts:sh([corC,...picked]),lid:item.cc,cc:item.cc};
+  return{type:"currency",prompt:t("q_currency"),subj:item.currency,symbol:item.symbol,ans:displayCountry(item.cc)||corC,opts:sh([displayCountry(item.cc)||corC,...picked.map(c=>displayCountry(ccFromCountry(c))||c)]),lid:item.cc,cc:item.cc};
 }
 function genOutlineQ(){
   let pool=_rfilt(COUNTRIES.filter(c=>c.cc&&c.cc.length===2),4); if(pool.length<4) pool=COUNTRIES.filter(c=>c.cc&&c.cc.length===2); if(pool.length<4) return null;
   const sh2=arr=>{const a=[...arr];for(let i=a.length-1;i>0;i--){const j=~~(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
   const idx=~~(rng()*pool.length);const item=pool[idx];
   const corC=item.c;const corCC=item.cc;
-  const dis=pool.filter(c=>c.cc\!==corCC).map(c=>c.c);
+  const dis=pool.filter(c=>c.cc\!==corCC).map(c=>displayCountry(c.cc)||c.c);
   const picked=sh2(dis).slice(0,3);
-  return{type:"outline",prompt:t("q_outline"),subj:corCC,ans:corC,opts:sh2([corC,...picked]),lid:corCC,cc:corCC};
+  return{type:"outline",prompt:t("q_outline"),subj:corCC,ans:displayCountry(corCC)||corC,opts:sh2([displayCountry(corCC)||corC,...picked]),lid:corCC,cc:corCC};
 }
 /* EU-KENNZEICHEN GENERATORS (Phase 23B) – smart same-country distractors */
 function genPlateQ(hardcore){
@@ -6747,8 +6747,8 @@ function genWappenQ(){
   const wrongs=[];const used=new Set([correct.cc]);
   while(wrongs.length<3&&others.length>wrongs.length){const w=_r(others);if(\!used.has(w.cc)){used.add(w.cc);wrongs.push(w);}}
   if(wrongs.length<3)return null;
-  const opts=[correct,...wrongs].sort(()=>rng()-.5).map(w=>w.c);
-  return{type:"wappen",prompt:"Welchem Land gehört dieses Wappen?",subj:correct.c,img:correct.img,opts,ans:correct.c,lid:correct.cc,cc:correct.cc,meta:"ðŸ›¡ï¸ Wappen von "+correct.c};
+  const opts=[correct,...wrongs].sort(()=>rng()-.5).map(w=>displayCountry(w.cc)||w.c);
+  return{type:"wappen",prompt:"Welchem Land gehört dieses Wappen?",subj:displayCountry(correct.cc)||correct.c,img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"ðŸ›¡ï¸ Wappen von "+correct.c};
 }
 
 /* P153: Fallback when Wappen SVG fails to load */
