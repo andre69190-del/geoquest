@@ -548,8 +548,9 @@ input[type=text]::placeholder{color:var(--text3)}
 }
 
 /* ══ Phase 106: Wappen + SLF + Ad-Modal CSS ══ */
-.wappen-img-wrap{display:flex;justify-content:center;align-items:center;min-height:120px;margin:6px 0 10px;background:var(--bg3);border-radius:14px;padding:.75rem;border:1px solid var(--border)}
-.wappen-img{max-width:120px;max-height:110px;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.18))}
+.wappen-img-wrap{display:flex;justify-content:center;align-items:center;min-height:160px;margin:6px 0 10px;background:var(--bg3);border-radius:14px;padding:.75rem;border:1px solid var(--border)}
+.wappen-img{max-width:100%;max-height:180px;width:auto;height:auto;object-fit:contain;display:block;margin:0 auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.18))}
+.wappen-fallback{font-size:.8rem;color:var(--text3);text-align:center;padding:.5rem;line-height:1.5}
 /* P136: safety rule -- all dynamic images stay within their container */
 .qcard img,.scr img{max-width:100%;height:auto;object-fit:contain}
 /* P136: Logik-Gitter empty cell as dashed button */

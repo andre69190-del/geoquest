@@ -5741,7 +5741,7 @@ app.innerHTML=`<div class="scr">
       <div class="qmain">${q.subj}</div>
       ${sel\!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="wappen"){
-    qBody=`<div class="qprompt">${q.prompt}</div><div class="wappen-img-wrap"><img src="${q.img}" alt="Wappen" class="wappen-img"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div class="wappen-img-wrap"><img src="${q.img}" alt="Wappen" class="wappen-img" onerror="wappenErr(this)"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="neighbor"){
     qBody=`<div class="qprompt" style="font-size:1rem">${q.prompt}</div>
       <div style="text-align:center;margin:10px 0 6px">
@@ -6909,6 +6909,14 @@ function genWappenQ(){
   return{type:"wappen",prompt:"Welchem Land gehört dieses Wappen?",subj:correct.c,img:correct.img,opts,ans:correct.c,lid:correct.cc,cc:correct.cc,meta:"ðŸ›¡ï¸ Wappen von "+correct.c};
 }
 
+/* P153: Fallback when Wappen SVG fails to load */
+function wappenErr(img){
+  img.style.display="none";
+  const fb=document.createElement("div");
+  fb.className="wappen-fallback";
+  fb.textContent="🛡 Wappen nicht verfügbar";
+  if(img.parentNode)img.parentNode.appendChild(fb);
+}
 /* â”€â”€ STADT-LAND-FLUSS (SLF) â”€â”€ (Phase 106) */
 const SLF_LETTERS="ABCDEFGHIKLMNOPRSTW";
 function initSLF(){
