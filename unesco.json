@@ -1,0 +1,1045 @@
+[
+  {
+    "name": "Altstadt von Dubrovnik",
+    "country": "Croatia",
+    "cc": "hr",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Plitvicer Seen",
+    "country": "Croatia",
+    "cc": "hr",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Stari Most Mostar",
+    "country": "Bosnia and Herzegovina",
+    "cc": "ba",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Altstadt von Tallinn",
+    "country": "Estonia",
+    "cc": "ee",
+    "continent": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "name": "Lahemaa Nationalpark",
+    "country": "Estonia",
+    "cc": "ee",
+    "continent": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "name": "Altstadt von Riga",
+    "country": "Latvia",
+    "cc": "lv",
+    "continent": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "name": "Struve-Bogen",
+    "country": "Latvia",
+    "cc": "lv",
+    "continent": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "name": "Vilnius Altstadt",
+    "country": "Lithuania",
+    "cc": "lt",
+    "continent": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "name": "Valletta Altstadt",
+    "country": "Malta",
+    "cc": "mt",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Akropolis von Athen",
+    "country": "Greece",
+    "cc": "gr",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Meteora-Klöster",
+    "country": "Greece",
+    "cc": "gr",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Delphi",
+    "country": "Greece",
+    "cc": "gr",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Olympia",
+    "country": "Greece",
+    "cc": "gr",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Knossos Kreta",
+    "country": "Greece",
+    "cc": "gr",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Mystras",
+    "country": "Greece",
+    "cc": "gr",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Venedig und Lagune",
+    "country": "Italy",
+    "cc": "it",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Pompeji",
+    "country": "Italy",
+    "cc": "it",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Kolosseum Rom",
+    "country": "Italy",
+    "cc": "it",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Florenz Historisches Zentrum",
+    "country": "Italy",
+    "cc": "it",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Cinque Terre",
+    "country": "Italy",
+    "cc": "it",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Vatikanstadt",
+    "country": "Vatican City",
+    "cc": "va",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Amalfiküste",
+    "country": "Italy",
+    "cc": "it",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Matera",
+    "country": "Italy",
+    "cc": "it",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Alhambra Granada",
+    "country": "Spain",
+    "cc": "es",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Santiago de Compostela",
+    "country": "Spain",
+    "cc": "es",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Burgos Kathedrale",
+    "country": "Spain",
+    "cc": "es",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Altamira Höhlen",
+    "country": "Spain",
+    "cc": "es",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Óbidos",
+    "country": "Portugal",
+    "cc": "pt",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Sintra Kulturlandschaft",
+    "country": "Portugal",
+    "cc": "pt",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Porto Altstadt",
+    "country": "Portugal",
+    "cc": "pt",
+    "continent": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "name": "Palais Idéal Hauterives",
+    "country": "France",
+    "cc": "fr",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Schloss Versailles",
+    "country": "France",
+    "cc": "fr",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Mont-Saint-Michel",
+    "country": "France",
+    "cc": "fr",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Carcassonne",
+    "country": "France",
+    "cc": "fr",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Pont du Gard",
+    "country": "France",
+    "cc": "fr",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Elsässische Weinstraße",
+    "country": "France",
+    "cc": "fr",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Kölner Dom",
+    "country": "Germany",
+    "cc": "de",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Schloss Sanssouci",
+    "country": "Germany",
+    "cc": "de",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Bamberg",
+    "country": "Germany",
+    "cc": "de",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Quedlinburg",
+    "country": "Germany",
+    "cc": "de",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Luthergedenkstätten",
+    "country": "Germany",
+    "cc": "de",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Neuschwanstein-Umgebung",
+    "country": "Germany",
+    "cc": "de",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Altstadt von Salzburg",
+    "country": "Austria",
+    "cc": "at",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Schönbrunn",
+    "country": "Austria",
+    "cc": "at",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Hallstatt",
+    "country": "Austria",
+    "cc": "at",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Altstadt von Bern",
+    "country": "Switzerland",
+    "cc": "ch",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Jungfrau-Aletsch",
+    "country": "Switzerland",
+    "cc": "ch",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Kloster St. Gallen",
+    "country": "Switzerland",
+    "cc": "ch",
+    "continent": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "name": "Altstadt von Prag",
+    "country": "Czech Republic",
+    "cc": "cz",
+    "continent": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "name": "Český Krumlov",
+    "country": "Czech Republic",
+    "cc": "cz",
+    "continent": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "name": "Telč",
+    "country": "Czech Republic",
+    "cc": "cz",
+    "continent": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "name": "Altstadt von Krakau",
+    "country": "Poland",
+    "cc": "pl",
+    "continent": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "name": "Auschwitz-Birkenau",
+    "country": "Poland",
+    "cc": "pl",
+    "continent": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "name": "Wieliczka Salzbergwerk",
+    "country": "Poland",
+    "cc": "pl",
+    "continent": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "name": "Schloss Buda Budapest",
+    "country": "Hungary",
+    "cc": "hu",
+    "continent": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "name": "Holóko",
+    "country": "Hungary",
+    "cc": "hu",
+    "continent": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "name": "Trojanisches Erbe Troja",
+    "country": "Turkey",
+    "cc": "tr",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Göreme Kappadokien",
+    "country": "Turkey",
+    "cc": "tr",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Ephesus",
+    "country": "Turkey",
+    "cc": "tr",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Nemrut Dagi",
+    "country": "Turkey",
+    "cc": "tr",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Hagia Sophia Istanbul",
+    "country": "Turkey",
+    "cc": "tr",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Chinesische Mauer",
+    "country": "China",
+    "cc": "cn",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Verbotene Stadt",
+    "country": "China",
+    "cc": "cn",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Terrakotta-Armee",
+    "country": "China",
+    "cc": "cn",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Altstadt von Pingyao",
+    "country": "China",
+    "cc": "cn",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Huangshan",
+    "country": "China",
+    "cc": "cn",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Jiuzhaigou",
+    "country": "China",
+    "cc": "cn",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Potala-Palast Lhasa",
+    "country": "China",
+    "cc": "cn",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "West-See Hangzhou",
+    "country": "China",
+    "cc": "cn",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Fuji-Berg",
+    "country": "Japan",
+    "cc": "jp",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Hiroshima-Friedensdenkmal",
+    "country": "Japan",
+    "cc": "jp",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Fushimi-Inari-Umgebung",
+    "country": "Japan",
+    "cc": "jp",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Nara-Tempel",
+    "country": "Japan",
+    "cc": "jp",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Nikko",
+    "country": "Japan",
+    "cc": "jp",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Yakushima",
+    "country": "Japan",
+    "cc": "jp",
+    "continent": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "name": "Taj Mahal",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Rotes Fort Delhi",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Qutb Minar",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Ajanta-Höhlen",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Ellora-Höhlen",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Khajuraho",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Fatehpur Sikri",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Sundarbans",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Hampi",
+    "country": "India",
+    "cc": "in",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Angkor Wat",
+    "country": "Cambodia",
+    "cc": "kh",
+    "continent": "Asia",
+    "subregion": "Southeast Asia"
+  },
+  {
+    "name": "Borobudur",
+    "country": "Indonesia",
+    "cc": "id",
+    "continent": "Asia",
+    "subregion": "Southeast Asia"
+  },
+  {
+    "name": "Prambanan",
+    "country": "Indonesia",
+    "cc": "id",
+    "continent": "Asia",
+    "subregion": "Southeast Asia"
+  },
+  {
+    "name": "Halong-Bucht",
+    "country": "Vietnam",
+    "cc": "vn",
+    "continent": "Asia",
+    "subregion": "Southeast Asia"
+  },
+  {
+    "name": "Hoi An Altstadt",
+    "country": "Vietnam",
+    "cc": "vn",
+    "continent": "Asia",
+    "subregion": "Southeast Asia"
+  },
+  {
+    "name": "Hue Kaiserstadt",
+    "country": "Vietnam",
+    "cc": "vn",
+    "continent": "Asia",
+    "subregion": "Southeast Asia"
+  },
+  {
+    "name": "Sigiriya",
+    "country": "Sri Lanka",
+    "cc": "lk",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Dambulla Goldener Tempel",
+    "country": "Sri Lanka",
+    "cc": "lk",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Kandy-Tempel",
+    "country": "Sri Lanka",
+    "cc": "lk",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Kathmandu-Tal",
+    "country": "Nepal",
+    "cc": "np",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Sagarmatha Nationalpark",
+    "country": "Nepal",
+    "cc": "np",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Lumbini",
+    "country": "Nepal",
+    "cc": "np",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Persepolis",
+    "country": "Iran",
+    "cc": "ir",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Isfahan Naghsh-e Jahan Platz",
+    "country": "Iran",
+    "cc": "ir",
+    "continent": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "name": "Felsendom Jerusalem",
+    "country": "Israel",
+    "cc": "il",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Masada",
+    "country": "Israel",
+    "cc": "il",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Akko Altstadt",
+    "country": "Israel",
+    "cc": "il",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Petra",
+    "country": "Jordan",
+    "cc": "jo",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Wadi Rum",
+    "country": "Jordan",
+    "cc": "jo",
+    "continent": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "name": "Pyramiden von Gizeh",
+    "country": "Egypt",
+    "cc": "eg",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Abu Simbel",
+    "country": "Egypt",
+    "cc": "eg",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Karnak",
+    "country": "Egypt",
+    "cc": "eg",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Luxor-Tempel",
+    "country": "Egypt",
+    "cc": "eg",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Theben",
+    "country": "Egypt",
+    "cc": "eg",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Djemaa el Fna Marrakesch",
+    "country": "Morocco",
+    "cc": "ma",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Ait Benhaddou",
+    "country": "Morocco",
+    "cc": "ma",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Fes Medina",
+    "country": "Morocco",
+    "cc": "ma",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Volubilis",
+    "country": "Morocco",
+    "cc": "ma",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Karthago",
+    "country": "Tunisia",
+    "cc": "tn",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Dougga",
+    "country": "Tunisia",
+    "cc": "tn",
+    "continent": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "name": "Djenné Große Moschee",
+    "country": "Mali",
+    "cc": "ml",
+    "continent": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "name": "Timbuktu",
+    "country": "Mali",
+    "cc": "ml",
+    "continent": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "name": "Bandiagara-Steilwand",
+    "country": "Mali",
+    "cc": "ml",
+    "continent": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "name": "Victoria Falls",
+    "country": "Zimbabwe",
+    "cc": "zw",
+    "continent": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "name": "Kilimandscharo-Nationalpark",
+    "country": "Tanzania",
+    "cc": "tz",
+    "continent": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "name": "Serengeti",
+    "country": "Tanzania",
+    "cc": "tz",
+    "continent": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "name": "Ngorongoro-Krater",
+    "country": "Tanzania",
+    "cc": "tz",
+    "continent": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "name": "Freiheitsstatue",
+    "country": "United States",
+    "cc": "us",
+    "continent": "North America",
+    "subregion": "Northern America"
+  },
+  {
+    "name": "Grand Canyon",
+    "country": "United States",
+    "cc": "us",
+    "continent": "North America",
+    "subregion": "Northern America"
+  },
+  {
+    "name": "Yellowstone",
+    "country": "United States",
+    "cc": "us",
+    "continent": "North America",
+    "subregion": "Northern America"
+  },
+  {
+    "name": "Yosemite",
+    "country": "United States",
+    "cc": "us",
+    "continent": "North America",
+    "subregion": "Northern America"
+  },
+  {
+    "name": "Everglades",
+    "country": "United States",
+    "cc": "us",
+    "continent": "North America",
+    "subregion": "Northern America"
+  },
+  {
+    "name": "Independence Hall",
+    "country": "United States",
+    "cc": "us",
+    "continent": "North America",
+    "subregion": "Northern America"
+  },
+  {
+    "name": "Chichen Itza",
+    "country": "Mexico",
+    "cc": "mx",
+    "continent": "North America",
+    "subregion": "Central America"
+  },
+  {
+    "name": "Teotihuacan",
+    "country": "Mexico",
+    "cc": "mx",
+    "continent": "North America",
+    "subregion": "Central America"
+  },
+  {
+    "name": "Oaxaca Historisches Zentrum",
+    "country": "Mexico",
+    "cc": "mx",
+    "continent": "North America",
+    "subregion": "Central America"
+  },
+  {
+    "name": "Monte Albán",
+    "country": "Mexico",
+    "cc": "mx",
+    "continent": "North America",
+    "subregion": "Central America"
+  },
+  {
+    "name": "Palenque",
+    "country": "Mexico",
+    "cc": "mx",
+    "continent": "North America",
+    "subregion": "Central America"
+  },
+  {
+    "name": "Uxmal",
+    "country": "Mexico",
+    "cc": "mx",
+    "continent": "North America",
+    "subregion": "Central America"
+  },
+  {
+    "name": "Machu Picchu",
+    "country": "Peru",
+    "cc": "pe",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Nazca-Linien",
+    "country": "Peru",
+    "cc": "pe",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Chan Chan",
+    "country": "Peru",
+    "cc": "pe",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Iguazú-Nationalpark",
+    "country": "Argentina",
+    "cc": "ar",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Jesuiten-Missionen Argentinien",
+    "country": "Argentina",
+    "cc": "ar",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Christ Erlöser - nicht UNESCO, sondern Zuckerhut-Umgebung",
+    "country": "Brazil",
+    "cc": "br",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Iguaçu-Nationalpark",
+    "country": "Brazil",
+    "cc": "br",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Olinda Historisches Zentrum",
+    "country": "Brazil",
+    "cc": "br",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Galápagos-Inseln",
+    "country": "Ecuador",
+    "cc": "ec",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Salar de Uyuni Umgebung – Tiwanaku",
+    "country": "Bolivia",
+    "cc": "bo",
+    "continent": "South America",
+    "subregion": "South America"
+  },
+  {
+    "name": "Sydney Opera House",
+    "country": "Australia",
+    "cc": "au",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "name": "Uluru-Kata Tjuta",
+    "country": "Australia",
+    "cc": "au",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "name": "Great Barrier Reef",
+    "country": "Australia",
+    "cc": "au",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "name": "Kakadu",
+    "country": "Australia",
+    "cc": "au",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "name": "Tongariro",
+    "country": "New Zealand",
+    "cc": "nz",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "name": "Te Wahipounamu",
+    "country": "New Zealand",
+    "cc": "nz",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand"
+  }
+]

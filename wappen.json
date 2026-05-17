@@ -1,0 +1,862 @@
+[
+  {
+    "cc": "de",
+    "c": "Deutschland",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Germany.svg"
+  },
+  {
+    "cc": "fr",
+    "c": "Frankreich",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_France.svg"
+  },
+  {
+    "cc": "at",
+    "c": "Österreich",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Austria.svg"
+  },
+  {
+    "cc": "ch",
+    "c": "Schweiz",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Switzerland.svg"
+  },
+  {
+    "cc": "nl",
+    "c": "Niederlande",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Netherlands.svg"
+  },
+  {
+    "cc": "be",
+    "c": "Belgien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Belgium.svg"
+  },
+  {
+    "cc": "lu",
+    "c": "Luxemburg",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Luxembourg.svg"
+  },
+  {
+    "cc": "li",
+    "c": "Liechtenstein",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Liechtenstein.svg"
+  },
+  {
+    "cc": "mc",
+    "c": "Monaco",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Monaco.svg"
+  },
+  {
+    "cc": "ad",
+    "c": "Andorra",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Andorra.svg"
+  },
+  {
+    "cc": "gb",
+    "c": "Vereinigtes Königreich",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Coat_of_Arms_of_the_United_Kingdom.svg"
+  },
+  {
+    "cc": "ie",
+    "c": "Irland",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg"
+  },
+  {
+    "cc": "se",
+    "c": "Schweden",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Sweden.svg"
+  },
+  {
+    "cc": "no",
+    "c": "Norwegen",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Norway.svg"
+  },
+  {
+    "cc": "dk",
+    "c": "Dänemark",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Denmark.svg"
+  },
+  {
+    "cc": "fi",
+    "c": "Finnland",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Finland.svg"
+  },
+  {
+    "cc": "is",
+    "c": "Island",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Iceland.svg"
+  },
+  {
+    "cc": "ee",
+    "c": "Estland",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Estonia.svg"
+  },
+  {
+    "cc": "lv",
+    "c": "Lettland",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Latvia.svg"
+  },
+  {
+    "cc": "lt",
+    "c": "Litauen",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Lithuania.svg"
+  },
+  {
+    "cc": "it",
+    "c": "Italien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Italy.svg"
+  },
+  {
+    "cc": "es",
+    "c": "Spanien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Spain.svg"
+  },
+  {
+    "cc": "pt",
+    "c": "Portugal",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Portugal.svg"
+  },
+  {
+    "cc": "gr",
+    "c": "Griechenland",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Greece.svg"
+  },
+  {
+    "cc": "hr",
+    "c": "Kroatien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Croatia.svg"
+  },
+  {
+    "cc": "si",
+    "c": "Slowenien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovenia.svg"
+  },
+  {
+    "cc": "ba",
+    "c": "Bosnien und Herzegowina",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Bosnia_and_Herzegovina.svg"
+  },
+  {
+    "cc": "rs",
+    "c": "Serbien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Serbia.svg"
+  },
+  {
+    "cc": "me",
+    "c": "Montenegro",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Montenegro.svg"
+  },
+  {
+    "cc": "mk",
+    "c": "Nordmazedonien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_North_Macedonia.svg"
+  },
+  {
+    "cc": "al",
+    "c": "Albanien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Albania.svg"
+  },
+  {
+    "cc": "mt",
+    "c": "Malta",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Malta.svg"
+  },
+  {
+    "cc": "sm",
+    "c": "San Marino",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_San_Marino.svg"
+  },
+  {
+    "cc": "va",
+    "c": "Vatikanstadt",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Vatican_City.svg"
+  },
+  {
+    "cc": "cy",
+    "c": "Zypern",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Cyprus.svg"
+  },
+  {
+    "cc": "pl",
+    "c": "Polen",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Poland.svg"
+  },
+  {
+    "cc": "cz",
+    "c": "Tschechien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Czech_Republic.svg"
+  },
+  {
+    "cc": "sk",
+    "c": "Slowakei",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovakia.svg"
+  },
+  {
+    "cc": "hu",
+    "c": "Ungarn",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Hungary.svg"
+  },
+  {
+    "cc": "ro",
+    "c": "Rumänien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Romania.svg"
+  },
+  {
+    "cc": "bg",
+    "c": "Bulgarien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Bulgaria.svg"
+  },
+  {
+    "cc": "ua",
+    "c": "Ukraine",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ukraine.svg"
+  },
+  {
+    "cc": "by",
+    "c": "Belarus",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Belarus.svg"
+  },
+  {
+    "cc": "md",
+    "c": "Moldau",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Moldova.svg"
+  },
+  {
+    "cc": "ru",
+    "c": "Russland",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Russia.svg"
+  },
+  {
+    "cc": "cn",
+    "c": "China",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg"
+  },
+  {
+    "cc": "jp",
+    "c": "Japan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Seal_of_Japan.svg"
+  },
+  {
+    "cc": "kr",
+    "c": "Südkorea",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_South_Korea.svg"
+  },
+  {
+    "cc": "kp",
+    "c": "Nordkorea",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_North_Korea.svg"
+  },
+  {
+    "cc": "mn",
+    "c": "Mongolei",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mongolia.svg"
+  },
+  {
+    "cc": "in",
+    "c": "Indien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_India.svg"
+  },
+  {
+    "cc": "pk",
+    "c": "Pakistan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Pakistan.svg"
+  },
+  {
+    "cc": "bd",
+    "c": "Bangladesch",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/National_emblem_of_Bangladesh.svg"
+  },
+  {
+    "cc": "lk",
+    "c": "Sri Lanka",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Sri_Lanka.svg"
+  },
+  {
+    "cc": "np",
+    "c": "Nepal",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Nepal.svg"
+  },
+  {
+    "cc": "bt",
+    "c": "Bhutan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Bhutan.svg"
+  },
+  {
+    "cc": "mv",
+    "c": "Malediven",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Maldives.svg"
+  },
+  {
+    "cc": "af",
+    "c": "Afghanistan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Afghanistan.svg"
+  },
+  {
+    "cc": "th",
+    "c": "Thailand",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Thailand.svg"
+  },
+  {
+    "cc": "vn",
+    "c": "Vietnam",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Vietnam.svg"
+  },
+  {
+    "cc": "id",
+    "c": "Indonesien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/National_emblem_of_Indonesia_Garuda_Pancasila.svg"
+  },
+  {
+    "cc": "my",
+    "c": "Malaysia",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Malaysia.svg"
+  },
+  {
+    "cc": "ph",
+    "c": "Philippinen",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Philippines.svg"
+  },
+  {
+    "cc": "sg",
+    "c": "Singapur",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Singapore.svg"
+  },
+  {
+    "cc": "mm",
+    "c": "Myanmar",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Myanmar.svg"
+  },
+  {
+    "cc": "kh",
+    "c": "Kambodscha",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Cambodia.svg"
+  },
+  {
+    "cc": "la",
+    "c": "Laos",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Laos.svg"
+  },
+  {
+    "cc": "tl",
+    "c": "Osttimor",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_East_Timor.svg"
+  },
+  {
+    "cc": "bn",
+    "c": "Brunei",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Brunei.svg"
+  },
+  {
+    "cc": "tr",
+    "c": "Türkei",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Turkey.svg"
+  },
+  {
+    "cc": "ir",
+    "c": "Iran",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Iran.svg"
+  },
+  {
+    "cc": "iq",
+    "c": "Irak",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Iraq.svg"
+  },
+  {
+    "cc": "sa",
+    "c": "Saudi-Arabien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Saudi_Arabia.svg"
+  },
+  {
+    "cc": "ae",
+    "c": "Vereinigte Arabische Emirate",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_United_Arab_Emirates.svg"
+  },
+  {
+    "cc": "il",
+    "c": "Israel",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Israel.svg"
+  },
+  {
+    "cc": "jo",
+    "c": "Jordanien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Jordan.svg"
+  },
+  {
+    "cc": "lb",
+    "c": "Libanon",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Lebanon.svg"
+  },
+  {
+    "cc": "sy",
+    "c": "Syrien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Syria.svg"
+  },
+  {
+    "cc": "ye",
+    "c": "Jemen",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Yemen.svg"
+  },
+  {
+    "cc": "kw",
+    "c": "Kuwait",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kuwait.svg"
+  },
+  {
+    "cc": "bh",
+    "c": "Bahrain",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Bahrain.svg"
+  },
+  {
+    "cc": "qa",
+    "c": "Katar",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Qatar.svg"
+  },
+  {
+    "cc": "om",
+    "c": "Oman",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Oman.svg"
+  },
+  {
+    "cc": "ge",
+    "c": "Georgien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Georgia.svg"
+  },
+  {
+    "cc": "am",
+    "c": "Armenien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Armenia.svg"
+  },
+  {
+    "cc": "az",
+    "c": "Aserbaidschan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Azerbaijan.svg"
+  },
+  {
+    "cc": "kz",
+    "c": "Kasachstan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kazakhstan.svg"
+  },
+  {
+    "cc": "uz",
+    "c": "Usbekistan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Uzbekistan.svg"
+  },
+  {
+    "cc": "tm",
+    "c": "Turkmenistan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Turkmenistan.svg"
+  },
+  {
+    "cc": "kg",
+    "c": "Kirgisistan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kyrgyzstan.svg"
+  },
+  {
+    "cc": "tj",
+    "c": "Tadschikistan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tajikistan.svg"
+  },
+  {
+    "cc": "eg",
+    "c": "Ägypten",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Egypt.svg"
+  },
+  {
+    "cc": "ma",
+    "c": "Marokko",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Morocco.svg"
+  },
+  {
+    "cc": "dz",
+    "c": "Algerien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Algeria.svg"
+  },
+  {
+    "cc": "tn",
+    "c": "Tunesien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tunisia.svg"
+  },
+  {
+    "cc": "ly",
+    "c": "Libyen",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Libya.svg"
+  },
+  {
+    "cc": "sd",
+    "c": "Sudan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Sudan.svg"
+  },
+  {
+    "cc": "ng",
+    "c": "Nigeria",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Nigeria.svg"
+  },
+  {
+    "cc": "gh",
+    "c": "Ghana",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ghana.svg"
+  },
+  {
+    "cc": "sn",
+    "c": "Senegal",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Senegal.svg"
+  },
+  {
+    "cc": "ci",
+    "c": "Elfenbeinküste",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ivory_Coast.svg"
+  },
+  {
+    "cc": "ml",
+    "c": "Mali",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mali.svg"
+  },
+  {
+    "cc": "ne",
+    "c": "Niger",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Niger.svg"
+  },
+  {
+    "cc": "bf",
+    "c": "Burkina Faso",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Burkina_Faso.svg"
+  },
+  {
+    "cc": "gn",
+    "c": "Guinea",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Guinea.svg"
+  },
+  {
+    "cc": "sl",
+    "c": "Sierra Leone",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Sierra_Leone.svg"
+  },
+  {
+    "cc": "lr",
+    "c": "Liberia",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Liberia.svg"
+  },
+  {
+    "cc": "tg",
+    "c": "Togo",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Togo.svg"
+  },
+  {
+    "cc": "bj",
+    "c": "Benin",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Benin.svg"
+  },
+  {
+    "cc": "mr",
+    "c": "Mauretanien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mauritania.svg"
+  },
+  {
+    "cc": "cv",
+    "c": "Kap Verde",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Cape_Verde.svg"
+  },
+  {
+    "cc": "gm",
+    "c": "Gambia",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Gambia.svg"
+  },
+  {
+    "cc": "ke",
+    "c": "Kenia",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kenya.svg"
+  },
+  {
+    "cc": "tz",
+    "c": "Tansania",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tanzania.svg"
+  },
+  {
+    "cc": "et",
+    "c": "Äthiopien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ethiopia.svg"
+  },
+  {
+    "cc": "ug",
+    "c": "Uganda",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Uganda.svg"
+  },
+  {
+    "cc": "rw",
+    "c": "Ruanda",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Rwanda.svg"
+  },
+  {
+    "cc": "mz",
+    "c": "Mosambik",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mozambique.svg"
+  },
+  {
+    "cc": "mg",
+    "c": "Madagaskar",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Madagascar.svg"
+  },
+  {
+    "cc": "zm",
+    "c": "Sambia",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Zambia.svg"
+  },
+  {
+    "cc": "zw",
+    "c": "Simbabwe",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Zimbabwe.svg"
+  },
+  {
+    "cc": "so",
+    "c": "Somalia",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Somalia.svg"
+  },
+  {
+    "cc": "dj",
+    "c": "Dschibuti",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Djibouti.svg"
+  },
+  {
+    "cc": "er",
+    "c": "Eritrea",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Eritrea.svg"
+  },
+  {
+    "cc": "ss",
+    "c": "Südsudan",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_South_Sudan.svg"
+  },
+  {
+    "cc": "cm",
+    "c": "Kamerun",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Cameroon.svg"
+  },
+  {
+    "cc": "cd",
+    "c": "DR Kongo",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo.svg"
+  },
+  {
+    "cc": "cg",
+    "c": "Republik Kongo",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Republic_of_the_Congo.svg"
+  },
+  {
+    "cc": "ao",
+    "c": "Angola",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Angola.svg"
+  },
+  {
+    "cc": "ga",
+    "c": "Gabun",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Gabon.svg"
+  },
+  {
+    "cc": "cf",
+    "c": "Zentralafrikanische Republik",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Central_African_Republic.svg"
+  },
+  {
+    "cc": "td",
+    "c": "Tschad",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Chad.svg"
+  },
+  {
+    "cc": "gq",
+    "c": "Äquatorialguinea",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Equatorial_Guinea.svg"
+  },
+  {
+    "cc": "za",
+    "c": "Südafrika",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_South_Africa.svg"
+  },
+  {
+    "cc": "bw",
+    "c": "Botswana",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Botswana.svg"
+  },
+  {
+    "cc": "na",
+    "c": "Namibia",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Namibia.svg"
+  },
+  {
+    "cc": "ls",
+    "c": "Lesotho",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Lesotho.svg"
+  },
+  {
+    "cc": "sz",
+    "c": "Eswatini",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Eswatini.svg"
+  },
+  {
+    "cc": "mw",
+    "c": "Malawi",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Malawi.svg"
+  },
+  {
+    "cc": "us",
+    "c": "Vereinigte Staaten",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_United_States.svg"
+  },
+  {
+    "cc": "ca",
+    "c": "Kanada",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Canada.svg"
+  },
+  {
+    "cc": "mx",
+    "c": "Mexiko",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg"
+  },
+  {
+    "cc": "br",
+    "c": "Brasilien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Brazil.svg"
+  },
+  {
+    "cc": "ar",
+    "c": "Argentinien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Argentina.svg"
+  },
+  {
+    "cc": "cl",
+    "c": "Chile",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Chile.svg"
+  },
+  {
+    "cc": "co",
+    "c": "Kolumbien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Colombia.svg"
+  },
+  {
+    "cc": "pe",
+    "c": "Peru",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Peru.svg"
+  },
+  {
+    "cc": "ve",
+    "c": "Venezuela",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Venezuela.svg"
+  },
+  {
+    "cc": "ec",
+    "c": "Ecuador",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ecuador.svg"
+  },
+  {
+    "cc": "bo",
+    "c": "Bolivien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Bolivia.svg"
+  },
+  {
+    "cc": "py",
+    "c": "Paraguay",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Paraguay.svg"
+  },
+  {
+    "cc": "uy",
+    "c": "Uruguay",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Uruguay.svg"
+  },
+  {
+    "cc": "gt",
+    "c": "Guatemala",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Guatemala.svg"
+  },
+  {
+    "cc": "hn",
+    "c": "Honduras",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Honduras.svg"
+  },
+  {
+    "cc": "ni",
+    "c": "Nicaragua",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Nicaragua.svg"
+  },
+  {
+    "cc": "cr",
+    "c": "Costa Rica",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Costa_Rica.svg"
+  },
+  {
+    "cc": "pa",
+    "c": "Panama",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Panama.svg"
+  },
+  {
+    "cc": "cu",
+    "c": "Kuba",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Cuba.svg"
+  },
+  {
+    "cc": "do",
+    "c": "Dominikanische Republik",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Dominican_Republic.svg"
+  },
+  {
+    "cc": "jm",
+    "c": "Jamaika",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Jamaica.svg"
+  },
+  {
+    "cc": "ht",
+    "c": "Haiti",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Haiti.svg"
+  },
+  {
+    "cc": "tt",
+    "c": "Trinidad und Tobago",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Trinidad_and_Tobago.svg"
+  },
+  {
+    "cc": "bb",
+    "c": "Barbados",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Barbados.svg"
+  },
+  {
+    "cc": "bs",
+    "c": "Bahamas",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Bahamas.svg"
+  },
+  {
+    "cc": "au",
+    "c": "Australien",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Australia.svg"
+  },
+  {
+    "cc": "nz",
+    "c": "Neuseeland",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_New_Zealand.svg"
+  },
+  {
+    "cc": "pg",
+    "c": "Papua-Neuguinea",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Papua_New_Guinea.svg"
+  },
+  {
+    "cc": "fj",
+    "c": "Fidschi",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Fiji.svg"
+  },
+  {
+    "cc": "sb",
+    "c": "Salomonen",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Solomon_Islands.svg"
+  },
+  {
+    "cc": "vu",
+    "c": "Vanuatu",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Vanuatu.svg"
+  },
+  {
+    "cc": "ws",
+    "c": "Samoa",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Samoa.svg"
+  },
+  {
+    "cc": "to",
+    "c": "Tonga",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tonga.svg"
+  }
+]

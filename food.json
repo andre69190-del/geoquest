@@ -1,0 +1,1328 @@
+[
+  {
+    "dish": "Sushi",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Ramen",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Tempura",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Sashimi",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Miso-Suppe",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Onigiri",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Tonkatsu",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Takoyaki",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Okonomiyaki",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Yakitori",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Gyoza",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Udon",
+    "country": "Japan",
+    "cc": "jp",
+    "emoji": "🇩🇯"
+  },
+  {
+    "dish": "Dim Sum",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Peking-Ente",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Kung Pao Chicken",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Mapo Tofu",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Xiaolongbao",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Char Siu",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Chow Mein",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Hot Pot",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Zongzi",
+    "country": "China",
+    "cc": "cn",
+    "emoji": "🇢🇭"
+  },
+  {
+    "dish": "Kimchi",
+    "country": "South Korea",
+    "cc": "kr",
+    "emoji": "🇪🇱"
+  },
+  {
+    "dish": "Bibimbap",
+    "country": "South Korea",
+    "cc": "kr",
+    "emoji": "🇪🇱"
+  },
+  {
+    "dish": "Bulgogi",
+    "country": "South Korea",
+    "cc": "kr",
+    "emoji": "🇪🇱"
+  },
+  {
+    "dish": "Tteokbokki",
+    "country": "South Korea",
+    "cc": "kr",
+    "emoji": "🇪🇱"
+  },
+  {
+    "dish": "Samgyeopsal",
+    "country": "South Korea",
+    "cc": "kr",
+    "emoji": "🇪🇱"
+  },
+  {
+    "dish": "Japchae",
+    "country": "South Korea",
+    "cc": "kr",
+    "emoji": "🇪🇱"
+  },
+  {
+    "dish": "Sundubu-jjigae",
+    "country": "South Korea",
+    "cc": "kr",
+    "emoji": "🇪🇱"
+  },
+  {
+    "dish": "Butter Chicken",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Biryani",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Samosa",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Naan",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Dal Makhani",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Paneer Tikka",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Chaat",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Idli",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Dosa",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Vindaloo",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Palak Paneer",
+    "country": "India",
+    "cc": "in",
+    "emoji": "🇨🇭"
+  },
+  {
+    "dish": "Pad Thai",
+    "country": "Thailand",
+    "cc": "th",
+    "emoji": "🇳🇧"
+  },
+  {
+    "dish": "Tom Yum",
+    "country": "Thailand",
+    "cc": "th",
+    "emoji": "🇳🇧"
+  },
+  {
+    "dish": "Mango Sticky Rice",
+    "country": "Thailand",
+    "cc": "th",
+    "emoji": "🇳🇧"
+  },
+  {
+    "dish": "Massaman Curry",
+    "country": "Thailand",
+    "cc": "th",
+    "emoji": "🇳🇧"
+  },
+  {
+    "dish": "Pho",
+    "country": "Vietnam",
+    "cc": "vn",
+    "emoji": "🇵🇭"
+  },
+  {
+    "dish": "Banh Mi",
+    "country": "Vietnam",
+    "cc": "vn",
+    "emoji": "🇵🇭"
+  },
+  {
+    "dish": "Goi Cuon",
+    "country": "Vietnam",
+    "cc": "vn",
+    "emoji": "🇵🇭"
+  },
+  {
+    "dish": "Nasi Goreng",
+    "country": "Indonesia",
+    "cc": "id",
+    "emoji": "🇨🇣"
+  },
+  {
+    "dish": "Rendang",
+    "country": "Indonesia",
+    "cc": "id",
+    "emoji": "🇨🇣"
+  },
+  {
+    "dish": "Satay",
+    "country": "Indonesia",
+    "cc": "id",
+    "emoji": "🇨🇣"
+  },
+  {
+    "dish": "Gado-Gado",
+    "country": "Indonesia",
+    "cc": "id",
+    "emoji": "🇨🇣"
+  },
+  {
+    "dish": "Laksa",
+    "country": "Malaysia",
+    "cc": "my",
+    "emoji": "🇬🇸"
+  },
+  {
+    "dish": "Nasi Lemak",
+    "country": "Malaysia",
+    "cc": "my",
+    "emoji": "🇬🇸"
+  },
+  {
+    "dish": "Char Kway Teow",
+    "country": "Malaysia",
+    "cc": "my",
+    "emoji": "🇬🇸"
+  },
+  {
+    "dish": "Chicken Rice",
+    "country": "Singapore",
+    "cc": "sg",
+    "emoji": "🇲🇦"
+  },
+  {
+    "dish": "Chilli Crab",
+    "country": "Singapore",
+    "cc": "sg",
+    "emoji": "🇲🇦"
+  },
+  {
+    "dish": "Kaya Toast",
+    "country": "Singapore",
+    "cc": "sg",
+    "emoji": "🇲🇦"
+  },
+  {
+    "dish": "Adobo",
+    "country": "Philippines",
+    "cc": "ph",
+    "emoji": "🇯🇧"
+  },
+  {
+    "dish": "Sinigang",
+    "country": "Philippines",
+    "cc": "ph",
+    "emoji": "🇯🇧"
+  },
+  {
+    "dish": "Lechon",
+    "country": "Philippines",
+    "cc": "ph",
+    "emoji": "🇯🇧"
+  },
+  {
+    "dish": "Halo-Halo",
+    "country": "Philippines",
+    "cc": "ph",
+    "emoji": "🇯🇧"
+  },
+  {
+    "dish": "Hummus",
+    "country": "Israel",
+    "cc": "il",
+    "emoji": "🇨🇫"
+  },
+  {
+    "dish": "Falafel",
+    "country": "Israel",
+    "cc": "il",
+    "emoji": "🇨🇫"
+  },
+  {
+    "dish": "Shakshuka",
+    "country": "Israel",
+    "cc": "il",
+    "emoji": "🇨🇫"
+  },
+  {
+    "dish": "Mansaf",
+    "country": "Jordan",
+    "cc": "jo",
+    "emoji": "🇩🇮"
+  },
+  {
+    "dish": "Maqluba",
+    "country": "Jordan",
+    "cc": "jo",
+    "emoji": "🇩🇮"
+  },
+  {
+    "dish": "Kebab",
+    "country": "Turkey",
+    "cc": "tr",
+    "emoji": "🇳🇱"
+  },
+  {
+    "dish": "Börek",
+    "country": "Turkey",
+    "cc": "tr",
+    "emoji": "🇳🇱"
+  },
+  {
+    "dish": "Baklava",
+    "country": "Turkey",
+    "cc": "tr",
+    "emoji": "🇳🇱"
+  },
+  {
+    "dish": "Lahmacun",
+    "country": "Turkey",
+    "cc": "tr",
+    "emoji": "🇳🇱"
+  },
+  {
+    "dish": "Köfte",
+    "country": "Turkey",
+    "cc": "tr",
+    "emoji": "🇳🇱"
+  },
+  {
+    "dish": "Mezze",
+    "country": "Lebanon",
+    "cc": "lb",
+    "emoji": "🇫🇡"
+  },
+  {
+    "dish": "Kibbeh",
+    "country": "Lebanon",
+    "cc": "lb",
+    "emoji": "🇫🇡"
+  },
+  {
+    "dish": "Tabbouleh",
+    "country": "Lebanon",
+    "cc": "lb",
+    "emoji": "🇫🇡"
+  },
+  {
+    "dish": "Kabsa",
+    "country": "Saudi Arabia",
+    "cc": "sa",
+    "emoji": "🇲🇠"
+  },
+  {
+    "dish": "Harees",
+    "country": "United Arab Emirates",
+    "cc": "ae",
+    "emoji": "🇠🇤"
+  },
+  {
+    "dish": "Ful Medames",
+    "country": "Egypt",
+    "cc": "eg",
+    "emoji": "🇤🇦"
+  },
+  {
+    "dish": "Kushari",
+    "country": "Egypt",
+    "cc": "eg",
+    "emoji": "🇤🇦"
+  },
+  {
+    "dish": "Om Ali",
+    "country": "Egypt",
+    "cc": "eg",
+    "emoji": "🇤🇦"
+  },
+  {
+    "dish": "Pizza",
+    "country": "Italy",
+    "cc": "it",
+    "emoji": "🇨🇳"
+  },
+  {
+    "dish": "Pasta Carbonara",
+    "country": "Italy",
+    "cc": "it",
+    "emoji": "🇨🇳"
+  },
+  {
+    "dish": "Risotto",
+    "country": "Italy",
+    "cc": "it",
+    "emoji": "🇨🇳"
+  },
+  {
+    "dish": "Tiramisu",
+    "country": "Italy",
+    "cc": "it",
+    "emoji": "🇨🇳"
+  },
+  {
+    "dish": "Lasagne",
+    "country": "Italy",
+    "cc": "it",
+    "emoji": "🇨🇳"
+  },
+  {
+    "dish": "Gelato",
+    "country": "Italy",
+    "cc": "it",
+    "emoji": "🇨🇳"
+  },
+  {
+    "dish": "Arancini",
+    "country": "Italy",
+    "cc": "it",
+    "emoji": "🇨🇳"
+  },
+  {
+    "dish": "Bruschetta",
+    "country": "Italy",
+    "cc": "it",
+    "emoji": "🇨🇳"
+  },
+  {
+    "dish": "Croissant",
+    "country": "France",
+    "cc": "fr",
+    "emoji": "🇥🇱"
+  },
+  {
+    "dish": "Quiche Lorraine",
+    "country": "France",
+    "cc": "fr",
+    "emoji": "🇥🇱"
+  },
+  {
+    "dish": "Bouillabaisse",
+    "country": "France",
+    "cc": "fr",
+    "emoji": "🇥🇱"
+  },
+  {
+    "dish": "Ratatouille",
+    "country": "France",
+    "cc": "fr",
+    "emoji": "🇥🇱"
+  },
+  {
+    "dish": "Crème Brûlée",
+    "country": "France",
+    "cc": "fr",
+    "emoji": "🇥🇱"
+  },
+  {
+    "dish": "Coq au Vin",
+    "country": "France",
+    "cc": "fr",
+    "emoji": "🇥🇱"
+  },
+  {
+    "dish": "Paella",
+    "country": "Spain",
+    "cc": "es",
+    "emoji": "🇤🇲"
+  },
+  {
+    "dish": "Gazpacho",
+    "country": "Spain",
+    "cc": "es",
+    "emoji": "🇤🇲"
+  },
+  {
+    "dish": "Churros",
+    "country": "Spain",
+    "cc": "es",
+    "emoji": "🇤🇲"
+  },
+  {
+    "dish": "Tortilla Española",
+    "country": "Spain",
+    "cc": "es",
+    "emoji": "🇤🇲"
+  },
+  {
+    "dish": "Patatas Bravas",
+    "country": "Spain",
+    "cc": "es",
+    "emoji": "🇤🇲"
+  },
+  {
+    "dish": "Jamón",
+    "country": "Spain",
+    "cc": "es",
+    "emoji": "🇤🇲"
+  },
+  {
+    "dish": "Pastel de Nata",
+    "country": "Portugal",
+    "cc": "pt",
+    "emoji": "🇯🇳"
+  },
+  {
+    "dish": "Bacalhau",
+    "country": "Portugal",
+    "cc": "pt",
+    "emoji": "🇯🇳"
+  },
+  {
+    "dish": "Francesinha",
+    "country": "Portugal",
+    "cc": "pt",
+    "emoji": "🇯🇳"
+  },
+  {
+    "dish": "Bratwurst",
+    "country": "Germany",
+    "cc": "de",
+    "emoji": "🇣🇤"
+  },
+  {
+    "dish": "Sauerbraten",
+    "country": "Germany",
+    "cc": "de",
+    "emoji": "🇣🇤"
+  },
+  {
+    "dish": "Pretzeln",
+    "country": "Germany",
+    "cc": "de",
+    "emoji": "🇣🇤"
+  },
+  {
+    "dish": "Kartoffelpuffer",
+    "country": "Germany",
+    "cc": "de",
+    "emoji": "🇣🇤"
+  },
+  {
+    "dish": "Schnitzel",
+    "country": "Austria",
+    "cc": "at",
+    "emoji": "🇠🇳"
+  },
+  {
+    "dish": "Apfelstrudel",
+    "country": "Austria",
+    "cc": "at",
+    "emoji": "🇠🇳"
+  },
+  {
+    "dish": "Sachertorte",
+    "country": "Austria",
+    "cc": "at",
+    "emoji": "🇠🇳"
+  },
+  {
+    "dish": "Kaiserschmarrn",
+    "country": "Austria",
+    "cc": "at",
+    "emoji": "🇠🇳"
+  },
+  {
+    "dish": "Fondue",
+    "country": "Switzerland",
+    "cc": "ch",
+    "emoji": "🇢🇧"
+  },
+  {
+    "dish": "Raclette",
+    "country": "Switzerland",
+    "cc": "ch",
+    "emoji": "🇢🇧"
+  },
+  {
+    "dish": "Rösti",
+    "country": "Switzerland",
+    "cc": "ch",
+    "emoji": "🇢🇧"
+  },
+  {
+    "dish": "Waffel",
+    "country": "Belgium",
+    "cc": "be",
+    "emoji": "🇡🇤"
+  },
+  {
+    "dish": "Moules-Frites",
+    "country": "Belgium",
+    "cc": "be",
+    "emoji": "🇡🇤"
+  },
+  {
+    "dish": "Witloof",
+    "country": "Belgium",
+    "cc": "be",
+    "emoji": "🇡🇤"
+  },
+  {
+    "dish": "Stroopwafel",
+    "country": "Netherlands",
+    "cc": "nl",
+    "emoji": "🇭🇫"
+  },
+  {
+    "dish": "Hutspot",
+    "country": "Netherlands",
+    "cc": "nl",
+    "emoji": "🇭🇫"
+  },
+  {
+    "dish": "Stamppot",
+    "country": "Netherlands",
+    "cc": "nl",
+    "emoji": "🇭🇫"
+  },
+  {
+    "dish": "Smørrebrød",
+    "country": "Denmark",
+    "cc": "dk",
+    "emoji": "🇣🇪"
+  },
+  {
+    "dish": "Æbleskiver",
+    "country": "Denmark",
+    "cc": "dk",
+    "emoji": "🇣🇪"
+  },
+  {
+    "dish": "Surströmming",
+    "country": "Sweden",
+    "cc": "se",
+    "emoji": "🇲🇤"
+  },
+  {
+    "dish": "Meatballs",
+    "country": "Sweden",
+    "cc": "se",
+    "emoji": "🇲🇤"
+  },
+  {
+    "dish": "Knäckebröd",
+    "country": "Sweden",
+    "cc": "se",
+    "emoji": "🇲🇤"
+  },
+  {
+    "dish": "Lutefisk",
+    "country": "Norway",
+    "cc": "no",
+    "emoji": "🇭🇮"
+  },
+  {
+    "dish": "Rakfisk",
+    "country": "Norway",
+    "cc": "no",
+    "emoji": "🇭🇮"
+  },
+  {
+    "dish": "Fårikål",
+    "country": "Norway",
+    "cc": "no",
+    "emoji": "🇭🇮"
+  },
+  {
+    "dish": "Sülze",
+    "country": "Finland",
+    "cc": "fi",
+    "emoji": "🇥🇨"
+  },
+  {
+    "dish": "Reindeer stew",
+    "country": "Finland",
+    "cc": "fi",
+    "emoji": "🇥🇨"
+  },
+  {
+    "dish": "Karjalanpiirakka",
+    "country": "Finland",
+    "cc": "fi",
+    "emoji": "🇥🇨"
+  },
+  {
+    "dish": "Fish and Chips",
+    "country": "United Kingdom",
+    "cc": "gb",
+    "emoji": "🇦🇡"
+  },
+  {
+    "dish": "Full English Breakfast",
+    "country": "United Kingdom",
+    "cc": "gb",
+    "emoji": "🇦🇡"
+  },
+  {
+    "dish": "Shepherd's Pie",
+    "country": "United Kingdom",
+    "cc": "gb",
+    "emoji": "🇦🇡"
+  },
+  {
+    "dish": "Haggis",
+    "country": "United Kingdom",
+    "cc": "gb",
+    "emoji": "🇦🇡"
+  },
+  {
+    "dish": "Scones",
+    "country": "United Kingdom",
+    "cc": "gb",
+    "emoji": "🇦🇡"
+  },
+  {
+    "dish": "Colcannon",
+    "country": "Ireland",
+    "cc": "ie",
+    "emoji": "🇨🇤"
+  },
+  {
+    "dish": "Irish Stew",
+    "country": "Ireland",
+    "cc": "ie",
+    "emoji": "🇨🇤"
+  },
+  {
+    "dish": "Goulash",
+    "country": "Hungary",
+    "cc": "hu",
+    "emoji": "🇧🇴"
+  },
+  {
+    "dish": "Lángos",
+    "country": "Hungary",
+    "cc": "hu",
+    "emoji": "🇧🇴"
+  },
+  {
+    "dish": "Kürtőskalács",
+    "country": "Hungary",
+    "cc": "hu",
+    "emoji": "🇧🇴"
+  },
+  {
+    "dish": "Pierogi",
+    "country": "Poland",
+    "cc": "pl",
+    "emoji": "🇯🇫"
+  },
+  {
+    "dish": "Bigos",
+    "country": "Poland",
+    "cc": "pl",
+    "emoji": "🇯🇫"
+  },
+  {
+    "dish": "Żurek",
+    "country": "Poland",
+    "cc": "pl",
+    "emoji": "🇯🇫"
+  },
+  {
+    "dish": "Kielbasa",
+    "country": "Poland",
+    "cc": "pl",
+    "emoji": "🇯🇫"
+  },
+  {
+    "dish": "Svíčková",
+    "country": "Czech Republic",
+    "cc": "cz",
+    "emoji": "🇢🇹"
+  },
+  {
+    "dish": "Trdelník",
+    "country": "Czech Republic",
+    "cc": "cz",
+    "emoji": "🇢🇹"
+  },
+  {
+    "dish": "Knedlíky",
+    "country": "Czech Republic",
+    "cc": "cz",
+    "emoji": "🇢🇹"
+  },
+  {
+    "dish": "Sarmale",
+    "country": "Romania",
+    "cc": "ro",
+    "emoji": "🇱🇮"
+  },
+  {
+    "dish": "Mămăligă",
+    "country": "Romania",
+    "cc": "ro",
+    "emoji": "🇱🇮"
+  },
+  {
+    "dish": "Mici",
+    "country": "Romania",
+    "cc": "ro",
+    "emoji": "🇱🇮"
+  },
+  {
+    "dish": "Banitsa",
+    "country": "Bulgaria",
+    "cc": "bg",
+    "emoji": "🇡🇦"
+  },
+  {
+    "dish": "Shkembe Chorba",
+    "country": "Bulgaria",
+    "cc": "bg",
+    "emoji": "🇡🇦"
+  },
+  {
+    "dish": "Borscht",
+    "country": "Ukraine",
+    "cc": "ua",
+    "emoji": "🇴🇠"
+  },
+  {
+    "dish": "Varenyky",
+    "country": "Ukraine",
+    "cc": "ua",
+    "emoji": "🇴🇠"
+  },
+  {
+    "dish": "Salo",
+    "country": "Ukraine",
+    "cc": "ua",
+    "emoji": "🇴🇠"
+  },
+  {
+    "dish": "Pelmeni",
+    "country": "Russia",
+    "cc": "ru",
+    "emoji": "🇱🇴"
+  },
+  {
+    "dish": "Blini",
+    "country": "Russia",
+    "cc": "ru",
+    "emoji": "🇱🇴"
+  },
+  {
+    "dish": "Beef Stroganoff",
+    "country": "Russia",
+    "cc": "ru",
+    "emoji": "🇱🇴"
+  },
+  {
+    "dish": "Okroshka",
+    "country": "Russia",
+    "cc": "ru",
+    "emoji": "🇱🇴"
+  },
+  {
+    "dish": "Tacos",
+    "country": "Mexico",
+    "cc": "mx",
+    "emoji": "🇬🇷"
+  },
+  {
+    "dish": "Tamales",
+    "country": "Mexico",
+    "cc": "mx",
+    "emoji": "🇬🇷"
+  },
+  {
+    "dish": "Enchiladas",
+    "country": "Mexico",
+    "cc": "mx",
+    "emoji": "🇬🇷"
+  },
+  {
+    "dish": "Guacamole",
+    "country": "Mexico",
+    "cc": "mx",
+    "emoji": "🇬🇷"
+  },
+  {
+    "dish": "Pozole",
+    "country": "Mexico",
+    "cc": "mx",
+    "emoji": "🇬🇷"
+  },
+  {
+    "dish": "Chiles en Nogada",
+    "country": "Mexico",
+    "cc": "mx",
+    "emoji": "🇬🇷"
+  },
+  {
+    "dish": "Feijoada",
+    "country": "Brazil",
+    "cc": "br",
+    "emoji": "🇡🇱"
+  },
+  {
+    "dish": "Brigadeiro",
+    "country": "Brazil",
+    "cc": "br",
+    "emoji": "🇡🇱"
+  },
+  {
+    "dish": "Pão de Queijo",
+    "country": "Brazil",
+    "cc": "br",
+    "emoji": "🇡🇱"
+  },
+  {
+    "dish": "Caipirinha",
+    "country": "Brazil",
+    "cc": "br",
+    "emoji": "🇡🇱"
+  },
+  {
+    "dish": "Asado",
+    "country": "Argentina",
+    "cc": "ar",
+    "emoji": "🇠🇱"
+  },
+  {
+    "dish": "Empanadas",
+    "country": "Argentina",
+    "cc": "ar",
+    "emoji": "🇠🇱"
+  },
+  {
+    "dish": "Chimichurri",
+    "country": "Argentina",
+    "cc": "ar",
+    "emoji": "🇠🇱"
+  },
+  {
+    "dish": "Dulce de Leche",
+    "country": "Argentina",
+    "cc": "ar",
+    "emoji": "🇠🇱"
+  },
+  {
+    "dish": "Ceviche",
+    "country": "Peru",
+    "cc": "pe",
+    "emoji": "🇯🇤"
+  },
+  {
+    "dish": "Lomo Saltado",
+    "country": "Peru",
+    "cc": "pe",
+    "emoji": "🇯🇤"
+  },
+  {
+    "dish": "Anticuchos",
+    "country": "Peru",
+    "cc": "pe",
+    "emoji": "🇯🇤"
+  },
+  {
+    "dish": "Ajiaco",
+    "country": "Colombia",
+    "cc": "co",
+    "emoji": "🇢🇮"
+  },
+  {
+    "dish": "Bandeja Paisa",
+    "country": "Colombia",
+    "cc": "co",
+    "emoji": "🇢🇮"
+  },
+  {
+    "dish": "Arepa",
+    "country": "Colombia",
+    "cc": "co",
+    "emoji": "🇢🇮"
+  },
+  {
+    "dish": "Chupe de Mariscos",
+    "country": "Chile",
+    "cc": "cl",
+    "emoji": "🇢🇫"
+  },
+  {
+    "dish": "Cazuela",
+    "country": "Chile",
+    "cc": "cl",
+    "emoji": "🇢🇫"
+  },
+  {
+    "dish": "Empanadas chilenas",
+    "country": "Chile",
+    "cc": "cl",
+    "emoji": "🇢🇫"
+  },
+  {
+    "dish": "Hamburger",
+    "country": "United States",
+    "cc": "us",
+    "emoji": "🇴🇲"
+  },
+  {
+    "dish": "Apple Pie",
+    "country": "United States",
+    "cc": "us",
+    "emoji": "🇴🇲"
+  },
+  {
+    "dish": "BBQ Ribs",
+    "country": "United States",
+    "cc": "us",
+    "emoji": "🇴🇲"
+  },
+  {
+    "dish": "Clam Chowder",
+    "country": "United States",
+    "cc": "us",
+    "emoji": "🇴🇲"
+  },
+  {
+    "dish": "Lobster Roll",
+    "country": "United States",
+    "cc": "us",
+    "emoji": "🇴🇲"
+  },
+  {
+    "dish": "Cheesecake",
+    "country": "United States",
+    "cc": "us",
+    "emoji": "🇴🇲"
+  },
+  {
+    "dish": "Poutine",
+    "country": "Canada",
+    "cc": "ca",
+    "emoji": "🇢🇠"
+  },
+  {
+    "dish": "Butter Tart",
+    "country": "Canada",
+    "cc": "ca",
+    "emoji": "🇢🇠"
+  },
+  {
+    "dish": "Nanaimo Bar",
+    "country": "Canada",
+    "cc": "ca",
+    "emoji": "🇢🇠"
+  },
+  {
+    "dish": "Jollof Rice",
+    "country": "Nigeria",
+    "cc": "ng",
+    "emoji": "🇭🇦"
+  },
+  {
+    "dish": "Egusi-Suppe",
+    "country": "Nigeria",
+    "cc": "ng",
+    "emoji": "🇭🇦"
+  },
+  {
+    "dish": "Puff Puff",
+    "country": "Nigeria",
+    "cc": "ng",
+    "emoji": "🇭🇦"
+  },
+  {
+    "dish": "Ndole",
+    "country": "Cameroon",
+    "cc": "cm",
+    "emoji": "🇢🇬"
+  },
+  {
+    "dish": "Poulet DG",
+    "country": "Cameroon",
+    "cc": "cm",
+    "emoji": "🇢🇬"
+  },
+  {
+    "dish": "Injera",
+    "country": "Ethiopia",
+    "cc": "et",
+    "emoji": "🇤🇳"
+  },
+  {
+    "dish": "Doro Wat",
+    "country": "Ethiopia",
+    "cc": "et",
+    "emoji": "🇤🇳"
+  },
+  {
+    "dish": "Tibs",
+    "country": "Ethiopia",
+    "cc": "et",
+    "emoji": "🇤🇳"
+  },
+  {
+    "dish": "Ugali",
+    "country": "Kenya",
+    "cc": "ke",
+    "emoji": "🇪🇤"
+  },
+  {
+    "dish": "Nyama Choma",
+    "country": "Kenya",
+    "cc": "ke",
+    "emoji": "🇪🇤"
+  },
+  {
+    "dish": "Sukuma Wiki",
+    "country": "Kenya",
+    "cc": "ke",
+    "emoji": "🇪🇤"
+  },
+  {
+    "dish": "Bobotie",
+    "country": "South Africa",
+    "cc": "za",
+    "emoji": "🇹🇠"
+  },
+  {
+    "dish": "Biltong",
+    "country": "South Africa",
+    "cc": "za",
+    "emoji": "🇹🇠"
+  },
+  {
+    "dish": "Braai",
+    "country": "South Africa",
+    "cc": "za",
+    "emoji": "🇹🇠"
+  },
+  {
+    "dish": "Bunny Chow",
+    "country": "South Africa",
+    "cc": "za",
+    "emoji": "🇹🇠"
+  },
+  {
+    "dish": "Tagine",
+    "country": "Morocco",
+    "cc": "ma",
+    "emoji": "🇬🇠"
+  },
+  {
+    "dish": "Couscous",
+    "country": "Morocco",
+    "cc": "ma",
+    "emoji": "🇬🇠"
+  },
+  {
+    "dish": "Harira",
+    "country": "Morocco",
+    "cc": "ma",
+    "emoji": "🇬🇠"
+  },
+  {
+    "dish": "Pastilla",
+    "country": "Morocco",
+    "cc": "ma",
+    "emoji": "🇬🇠"
+  },
+  {
+    "dish": "Koshari",
+    "country": "Egypt",
+    "cc": "eg",
+    "emoji": "🇤🇦"
+  },
+  {
+    "dish": "Thieboudienne",
+    "country": "Senegal",
+    "cc": "sn",
+    "emoji": "🇲🇭"
+  },
+  {
+    "dish": "Yassa",
+    "country": "Senegal",
+    "cc": "sn",
+    "emoji": "🇲🇭"
+  },
+  {
+    "dish": "Matoke",
+    "country": "Uganda",
+    "cc": "ug",
+    "emoji": "🇴🇦"
+  },
+  {
+    "dish": "Rolex",
+    "country": "Uganda",
+    "cc": "ug",
+    "emoji": "🇴🇦"
+  },
+  {
+    "dish": "Pavlova",
+    "country": "Australia",
+    "cc": "au",
+    "emoji": "🇠🇴"
+  },
+  {
+    "dish": "Lamington",
+    "country": "Australia",
+    "cc": "au",
+    "emoji": "🇠🇴"
+  },
+  {
+    "dish": "Meat Pie",
+    "country": "Australia",
+    "cc": "au",
+    "emoji": "🇠🇴"
+  },
+  {
+    "dish": "Tim Tam",
+    "country": "Australia",
+    "cc": "au",
+    "emoji": "🇠🇴"
+  },
+  {
+    "dish": "Hangi",
+    "country": "New Zealand",
+    "cc": "nz",
+    "emoji": "🇭🇹"
+  },
+  {
+    "dish": "Pavlova",
+    "country": "New Zealand",
+    "cc": "nz",
+    "emoji": "🇭🇹"
+  },
+  {
+    "dish": "Hokey Pokey",
+    "country": "New Zealand",
+    "cc": "nz",
+    "emoji": "🇭🇹"
+  }
+]

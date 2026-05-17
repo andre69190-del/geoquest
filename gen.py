@@ -162,153 +162,16 @@ RIVERS = [
 ]
 RJ = json.dumps(RIVERS, separators=(',',':'), ensure_ascii=False)
 
-LANDMARKS = [
-  {"name":"Eiffelturm","country":"France","cc":"fr","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Kolosseum","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Big Ben","country":"United Kingdom","cc":"gb","continent":"Europe","subregion":"Northern Europe"},
-  {"name":"Sagrada Familia","country":"Spain","cc":"es","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Akropolis","country":"Greece","cc":"gr","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Stonehenge","country":"United Kingdom","cc":"gb","continent":"Europe","subregion":"Northern Europe"},
-  {"name":"Schiefer Turm von Pisa","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Brandenburger Tor","country":"Germany","cc":"de","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Trevi-Brunnen","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Tower Bridge","country":"United Kingdom","cc":"gb","continent":"Europe","subregion":"Northern Europe"},
-  {"name":"Alhambra","country":"Spain","cc":"es","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Schloss Neuschwanstein","country":"Germany","cc":"de","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Atomium","country":"Belgium","cc":"be","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Louvre","country":"France","cc":"fr","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Vatikan","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Hagia Sophia","country":"Turkey","cc":"tr","continent":"Europe","subregion":"Western Asia"},
-  {"name":"Blaue Moschee","country":"Turkey","cc":"tr","continent":"Europe","subregion":"Western Asia"},
-  {"name":"Kappadokien","country":"Turkey","cc":"tr","continent":"Europe","subregion":"Western Asia"},
-  {"name":"Freiheitsstatue","country":"United States","cc":"us","continent":"North America","subregion":"Northern America"},
-  {"name":"Grand Canyon","country":"United States","cc":"us","continent":"North America","subregion":"Northern America"},
-  {"name":"Golden Gate Bridge","country":"United States","cc":"us","continent":"North America","subregion":"Northern America"},
-  {"name":"Mount Rushmore","country":"United States","cc":"us","continent":"North America","subregion":"Northern America"},
-  {"name":"CN Tower","country":"Canada","cc":"ca","continent":"North America","subregion":"Northern America"},
-  {"name":"Chichen Itza","country":"Mexico","cc":"mx","continent":"North America","subregion":"Central America"},
-  {"name":"Teotihuacan","country":"Mexico","cc":"mx","continent":"North America","subregion":"Central America"},
-  {"name":"Christus der Erloser","country":"Brazil","cc":"br","continent":"South America","subregion":"South America"},
-  {"name":"Machu Picchu","country":"Peru","cc":"pe","continent":"South America","subregion":"South America"},
-  {"name":"Galapagos-Inseln","country":"Ecuador","cc":"ec","continent":"South America","subregion":"South America"},
-  {"name":"Iguazu-Wasserfaelle","country":"Argentina","cc":"ar","continent":"South America","subregion":"South America"},
-  {"name":"Osterinsel","country":"Chile","cc":"cl","continent":"South America","subregion":"South America"},
-  {"name":"Grosse Mauer","country":"China","cc":"cn","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Verbotene Stadt","country":"China","cc":"cn","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Terrakotta-Armee","country":"China","cc":"cn","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Mount Fuji","country":"Japan","cc":"jp","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Fushimi Inari","country":"Japan","cc":"jp","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Angkor Wat","country":"Cambodia","cc":"kh","continent":"Asia","subregion":"Southeast Asia"},
-  {"name":"Taj Mahal","country":"India","cc":"in","continent":"Asia","subregion":"Southern Asia"},
-  {"name":"Rotes Fort","country":"India","cc":"in","continent":"Asia","subregion":"Southern Asia"},
-  {"name":"Borobudur","country":"Indonesia","cc":"id","continent":"Asia","subregion":"Southeast Asia"},
-  {"name":"Petronas Towers","country":"Malaysia","cc":"my","continent":"Asia","subregion":"Southeast Asia"},
-  {"name":"Burj Khalifa","country":"UAE","cc":"ae","continent":"Asia","subregion":"Western Asia"},
-  {"name":"Burj Al Arab","country":"UAE","cc":"ae","continent":"Asia","subregion":"Western Asia"},
-  {"name":"Petra","country":"Jordan","cc":"jo","continent":"Asia","subregion":"Western Asia"},
-  {"name":"Pyramiden von Gizeh","country":"Egypt","cc":"eg","continent":"Africa","subregion":"Northern Africa"},
-  {"name":"Abu Simbel","country":"Egypt","cc":"eg","continent":"Africa","subregion":"Northern Africa"},
-  {"name":"Kilimandscharo","country":"Tanzania","cc":"tz","continent":"Africa","subregion":"Eastern Africa"},
-  {"name":"Victoriafaelle","country":"Zimbabwe","cc":"zw","continent":"Africa","subregion":"Eastern Africa"},
-  {"name":"Tafelberg","country":"South Africa","cc":"za","continent":"Africa","subregion":"Southern Africa"},
-  {"name":"Grosse Barriereriff","country":"Australia","cc":"au","continent":"Oceania","subregion":"Australia and New Zealand"},
-  {"name":"Oper von Sydney","country":"Australia","cc":"au","continent":"Oceania","subregion":"Australia and New Zealand"},
-  {"name":"Uluru","country":"Australia","cc":"au","continent":"Oceania","subregion":"Australia and New Zealand"},
-  {"name":"Milford Sound","country":"New Zealand","cc":"nz","continent":"Oceania","subregion":"Australia and New Zealand"},
-  {"name":"Niagara-Faelle","country":"Canada","cc":"ca","continent":"North America","subregion":"Northern America"},
-  {"name":"Bagan-Tempel","country":"Myanmar","cc":"mm","continent":"Asia","subregion":"Southeast Asia"},
-]
+# Phase 155: loaded from landmarks.json (content expansion)
+LANDMARKS = json.load(open(os.path.join(os.path.dirname(__file__), 'landmarks.json'), encoding='utf-8'))
 LMJ = json.dumps(LANDMARKS, separators=(',',':'), ensure_ascii=False)
 
-NATIONAL_PARKS = [
-  {"name":"Yellowstone","country":"United States","cc":"us","continent":"North America","subregion":"Northern America"},
-  {"name":"Yosemite","country":"United States","cc":"us","continent":"North America","subregion":"Northern America"},
-  {"name":"Everglades","country":"United States","cc":"us","continent":"North America","subregion":"Northern America"},
-  {"name":"Banff","country":"Canada","cc":"ca","continent":"North America","subregion":"Northern America"},
-  {"name":"Jasper","country":"Canada","cc":"ca","continent":"North America","subregion":"Northern America"},
-  {"name":"Kruger","country":"South Africa","cc":"za","continent":"Africa","subregion":"Southern Africa"},
-  {"name":"Serengeti-Nationalpark","country":"Tanzania","cc":"tz","continent":"Africa","subregion":"Eastern Africa"},
-  {"name":"Masai Mara","country":"Kenya","cc":"ke","continent":"Africa","subregion":"Eastern Africa"},
-  {"name":"Virunga","country":"DR Congo","cc":"cd","continent":"Africa","subregion":"Middle Africa"},
-  {"name":"Bwindi Impenetrable Forest","country":"Uganda","cc":"ug","continent":"Africa","subregion":"Eastern Africa"},
-  {"name":"Pantanal","country":"Brazil","cc":"br","continent":"South America","subregion":"South America"},
-  {"name":"Torres del Paine","country":"Chile","cc":"cl","continent":"South America","subregion":"South America"},
-  {"name":"Los Glaciares","country":"Argentina","cc":"ar","continent":"South America","subregion":"South America"},
-  {"name":"Galapagos-Nationalpark","country":"Ecuador","cc":"ec","continent":"South America","subregion":"South America"},
-  {"name":"Manu","country":"Peru","cc":"pe","continent":"South America","subregion":"South America"},
-  {"name":"Kakadu","country":"Australia","cc":"au","continent":"Oceania","subregion":"Australia and New Zealand"},
-  {"name":"Blue Mountains","country":"Australia","cc":"au","continent":"Oceania","subregion":"Australia and New Zealand"},
-  {"name":"Fiordland","country":"New Zealand","cc":"nz","continent":"Oceania","subregion":"Australia and New Zealand"},
-  {"name":"Tongariro","country":"New Zealand","cc":"nz","continent":"Oceania","subregion":"Australia and New Zealand"},
-  {"name":"Jim Corbett","country":"India","cc":"in","continent":"Asia","subregion":"Southern Asia"},
-  {"name":"Kaziranga","country":"India","cc":"in","continent":"Asia","subregion":"Southern Asia"},
-  {"name":"Komodo","country":"Indonesia","cc":"id","continent":"Asia","subregion":"Southeast Asia"},
-  {"name":"Zhangjiajie","country":"China","cc":"cn","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Jiuzhaigou","country":"China","cc":"cn","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Sagarmatha","country":"Nepal","cc":"np","continent":"Asia","subregion":"Southern Asia"},
-  {"name":"Sundarbans","country":"Bangladesh","cc":"bd","continent":"Asia","subregion":"Southern Asia"},
-  {"name":"Pyrenaaen-Nationalpark","country":"France","cc":"fr","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Bayerischer Wald","country":"Germany","cc":"de","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Lake District","country":"United Kingdom","cc":"gb","continent":"Europe","subregion":"Northern Europe"},
-  {"name":"Bialowieza-Wald","country":"Poland","cc":"pl","continent":"Europe","subregion":"Eastern Europe"},
-  {"name":"Plitvicer Seen","country":"Croatia","cc":"hr","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Teide","country":"Spain","cc":"es","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Donana","country":"Spain","cc":"es","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Gran Paradiso","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Sarek","country":"Sweden","cc":"se","continent":"Europe","subregion":"Northern Europe"},
-  {"name":"Thingvellir","country":"Iceland","cc":"is","continent":"Europe","subregion":"Northern Europe"},
-  {"name":"Rwenzori-Berge","country":"Uganda","cc":"ug","continent":"Africa","subregion":"Eastern Africa"},
-  {"name":"Etosha","country":"Namibia","cc":"na","continent":"Africa","subregion":"Southern Africa"},
-  {"name":"Goreme","country":"Turkey","cc":"tr","continent":"Europe","subregion":"Western Asia"},
-  {"name":"Khao Yai","country":"Thailand","cc":"th","continent":"Asia","subregion":"Southeast Asia"},
-  {"name":"Chitwan","country":"Nepal","cc":"np","continent":"Asia","subregion":"Southern Asia"},
-]
+# Phase 155: loaded from parks.json (content expansion)
+NATIONAL_PARKS = json.load(open(os.path.join(os.path.dirname(__file__), 'parks.json'), encoding='utf-8'))
 NPJ = json.dumps(NATIONAL_PARKS, separators=(',',':'), ensure_ascii=False)
 
-UNESCO_SITES = [
-  {"name":"Altstadt von Dubrovnik","country":"Croatia","cc":"hr","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Meteora","country":"Greece","cc":"gr","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Delphi","country":"Greece","cc":"gr","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Venedig und Lagune","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Pompeji","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Cinque Terre","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Amalfikueste","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Dolomiten","country":"Italy","cc":"it","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Altstadt von Toledo","country":"Spain","cc":"es","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Altamira-Hoehle","country":"Spain","cc":"es","continent":"Europe","subregion":"Southern Europe"},
-  {"name":"Historisches Zentrum von Prag","country":"Czech Republic","cc":"cz","continent":"Europe","subregion":"Eastern Europe"},
-  {"name":"Krakauer Altstadt","country":"Poland","cc":"pl","continent":"Europe","subregion":"Eastern Europe"},
-  {"name":"Wieliczka-Salzbergwerk","country":"Poland","cc":"pl","continent":"Europe","subregion":"Eastern Europe"},
-  {"name":"Auschwitz-Birkenau","country":"Poland","cc":"pl","continent":"Europe","subregion":"Eastern Europe"},
-  {"name":"Historisches Tallinn","country":"Estonia","cc":"ee","continent":"Europe","subregion":"Northern Europe"},
-  {"name":"Historisches Riga","country":"Latvia","cc":"lv","continent":"Europe","subregion":"Northern Europe"},
-  {"name":"Altstadt von Bruegge","country":"Belgium","cc":"be","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Koelner Dom","country":"Germany","cc":"de","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Bamberger Altstadt","country":"Germany","cc":"de","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Schloss Sanssouci","country":"Germany","cc":"de","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Wachau","country":"Austria","cc":"at","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Hallstatt","country":"Austria","cc":"at","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Palast von Versailles","country":"France","cc":"fr","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Mont-Saint-Michel","country":"France","cc":"fr","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Pont du Gard","country":"France","cc":"fr","continent":"Europe","subregion":"Western Europe"},
-  {"name":"Timbuktu","country":"Mali","cc":"ml","continent":"Africa","subregion":"Western Africa"},
-  {"name":"Felsenkirchen von Lalibela","country":"Ethiopia","cc":"et","continent":"Africa","subregion":"Eastern Africa"},
-  {"name":"Historisches Kairo","country":"Egypt","cc":"eg","continent":"Africa","subregion":"Northern Africa"},
-  {"name":"Tal der Koenige","country":"Egypt","cc":"eg","continent":"Africa","subregion":"Northern Africa"},
-  {"name":"Medina von Fes","country":"Morocco","cc":"ma","continent":"Africa","subregion":"Northern Africa"},
-  {"name":"Medina von Marrakesch","country":"Morocco","cc":"ma","continent":"Africa","subregion":"Northern Africa"},
-  {"name":"Potala-Palast","country":"China","cc":"cn","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Lijiang-Altstadt","country":"China","cc":"cn","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Altstadt von Kyoto","country":"Japan","cc":"jp","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Horyu-ji-Tempel","country":"Japan","cc":"jp","continent":"Asia","subregion":"Eastern Asia"},
-  {"name":"Historisches Hoi An","country":"Vietnam","cc":"vn","continent":"Asia","subregion":"Southeast Asia"},
-  {"name":"Ajanta-Hoehlen","country":"India","cc":"in","continent":"Asia","subregion":"Southern Asia"},
-  {"name":"Hampi","country":"India","cc":"in","continent":"Asia","subregion":"Southern Asia"},
-  {"name":"Bagan","country":"Myanmar","cc":"mm","continent":"Asia","subregion":"Southeast Asia"},
-  {"name":"Chan Chan","country":"Peru","cc":"pe","continent":"South America","subregion":"South America"},
-  {"name":"Historisches Cartagena","country":"Colombia","cc":"co","continent":"South America","subregion":"South America"},
-  {"name":"Chaco Culture","country":"United States","cc":"us","continent":"North America","subregion":"Northern America"},
-]
+# Phase 155: loaded from unesco.json (content expansion)
+UNESCO_SITES = json.load(open(os.path.join(os.path.dirname(__file__), 'unesco.json'), encoding='utf-8'))
 UNJ = json.dumps(UNESCO_SITES, separators=(',',':'), ensure_ascii=False)
 
 CITY_LANDMARKS = [
@@ -414,11 +277,15 @@ print('Data prepared. Cities:', len(cities_slim), '| Subways:', len(SUBWAYS))
 
 
 # â”€â”€ LIFESTYLE DATA (Phases 22) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-FOOD = [{'dish': 'Sushi', 'country': 'Japan', 'cc': 'jp', 'emoji': 'ðŸ£'}, {'dish': 'Pizza', 'country': 'Italy', 'cc': 'it', 'emoji': 'ðŸ•'}, {'dish': 'Tacos', 'country': 'Mexico', 'cc': 'mx', 'emoji': 'ðŸŒ®'}, {'dish': 'Croissant', 'country': 'France', 'cc': 'fr', 'emoji': 'ðŸ¥'}, {'dish': 'Paella', 'country': 'Spain', 'cc': 'es', 'emoji': 'ðŸ¥˜'}, {'dish': 'Kimchi', 'country': 'South Korea', 'cc': 'kr', 'emoji': 'ðŸ¥¬'}, {'dish': 'Pho', 'country': 'Vietnam', 'cc': 'vn', 'emoji': 'ðŸœ'}, {'dish': 'Pad Thai', 'country': 'Thailand', 'cc': 'th', 'emoji': 'ðŸœ'}, {'dish': 'Peking Duck', 'country': 'China', 'cc': 'cn', 'emoji': 'ðŸ¦–'}, {'dish': 'Biryani', 'country': 'India', 'cc': 'in', 'emoji': 'ðŸ›'}, {'dish': 'Samosa', 'country': 'India', 'cc': 'in', 'emoji': 'ðŸ§–'}, {'dish': 'Rendang', 'country': 'Indonesia', 'cc': 'id', 'emoji': 'ðŸ–'}, {'dish': 'Nasi Goreng', 'country': 'Indonesia', 'cc': 'id', 'emoji': 'ðŸš'}, {'dish': 'Jollof Rice', 'country': 'Nigeria', 'cc': 'ng', 'emoji': 'ðŸš'}, {'dish': 'Injera', 'country': 'Ethiopia', 'cc': 'et', 'emoji': 'ðŸ§‡'}, {'dish': 'Tagine', 'country': 'Morocco', 'cc': 'ma', 'emoji': 'ðŸ²'}, {'dish': 'Borscht', 'country': 'Ukraine', 'cc': 'ua', 'emoji': 'ðŸ±'}, {'dish': 'Pierogi', 'country': 'Poland', 'cc': 'pl', 'emoji': 'ðŸ¥Ÿ'}, {'dish': 'Goulash', 'country': 'Hungary', 'cc': 'hu', 'emoji': 'ðŸ²'}, {'dish': 'Moussaka', 'country': 'Greece', 'cc': 'gr', 'emoji': 'ðŸ•'}, {'dish': 'Fish and Chips', 'country': 'United Kingdom', 'cc': 'gb', 'emoji': 'ðŸŸ'}, {'dish': 'Poutine', 'country': 'Canada', 'cc': 'ca', 'emoji': 'ðŸŸ'}, {'dish': 'Ceviche', 'country': 'Peru', 'cc': 'pe', 'emoji': 'ðŸŸ'}, {'dish': 'Empanada', 'country': 'Argentina', 'cc': 'ar', 'emoji': 'ðŸ¥ª'}, {'dish': 'Feijoada', 'country': 'Brazil', 'cc': 'br', 'emoji': 'ðŸ²'}, {'dish': 'Fondue', 'country': 'Switzerland', 'cc': 'ch', 'emoji': 'ðŸ§€'}, {'dish': 'Wiener Schnitzel', 'country': 'Austria', 'cc': 'at', 'emoji': 'ðŸ–'}, {'dish': 'Bacalhau', 'country': 'Portugal', 'cc': 'pt', 'emoji': 'ðŸŸ'}, {'dish': 'Shakshuka', 'country': 'Israel', 'cc': 'il', 'emoji': 'ðŸ³'}, {'dish': 'Bibimbap', 'country': 'South Korea', 'cc': 'kr', 'emoji': 'ðŸ±'}, {'dish': 'Stroganoff', 'country': 'Russia', 'cc': 'ru', 'emoji': 'ðŸ¥©'}, {'dish': 'Bobotie', 'country': 'South Africa', 'cc': 'za', 'emoji': 'ðŸ–'}, {'dish': 'Tom Yum', 'country': 'Thailand', 'cc': 'th', 'emoji': 'ðŸ§…'}, {'dish': 'Churros', 'country': 'Spain', 'cc': 'es', 'emoji': 'ðŸ©'}, {'dish': 'Smorgasbord', 'country': 'Sweden', 'cc': 'se', 'emoji': 'ðŸ¥ª'}]
+# Phase 155: loaded from food.json (content expansion)
+FOOD = json.load(open(os.path.join(os.path.dirname(__file__), 'food.json'), encoding='utf-8'))
 FJ  = json.dumps(FOOD,   separators=(',',':'), ensure_ascii=False)
 
 BRANDS = [{'brand': 'Samsung', 'country': 'South Korea', 'cc': 'kr', 'industry': 'Elektronik', 'sub': 'Eastern Asia'}, {'brand': 'LG', 'country': 'South Korea', 'cc': 'kr', 'industry': 'Elektronik', 'sub': 'Eastern Asia'}, {'brand': 'Hyundai', 'country': 'South Korea', 'cc': 'kr', 'industry': 'Autos', 'sub': 'Eastern Asia'}, {'brand': 'Kia', 'country': 'South Korea', 'cc': 'kr', 'industry': 'Autos', 'sub': 'Eastern Asia'}, {'brand': 'Nintendo', 'country': 'Japan', 'cc': 'jp', 'industry': 'Gaming', 'sub': 'Eastern Asia'}, {'brand': 'Sony', 'country': 'Japan', 'cc': 'jp', 'industry': 'Elektronik', 'sub': 'Eastern Asia'}, {'brand': 'Toyota', 'country': 'Japan', 'cc': 'jp', 'industry': 'Autos', 'sub': 'Eastern Asia'}, {'brand': 'Honda', 'country': 'Japan', 'cc': 'jp', 'industry': 'Autos', 'sub': 'Eastern Asia'}, {'brand': 'Yamaha', 'country': 'Japan', 'cc': 'jp', 'industry': 'Musik/Autos', 'sub': 'Eastern Asia'}, {'brand': 'Lenovo', 'country': 'China', 'cc': 'cn', 'industry': 'Elektronik', 'sub': 'Eastern Asia'}, {'brand': 'Alibaba', 'country': 'China', 'cc': 'cn', 'industry': 'E-Commerce', 'sub': 'Eastern Asia'}, {'brand': 'Xiaomi', 'country': 'China', 'cc': 'cn', 'industry': 'Elektronik', 'sub': 'Eastern Asia'}, {'brand': 'Huawei', 'country': 'China', 'cc': 'cn', 'industry': 'Telekommunikation', 'sub': 'Eastern Asia'}, {'brand': 'IKEA', 'country': 'Sweden', 'cc': 'se', 'industry': 'Moebel', 'sub': 'Northern Europe'}, {'brand': 'H&M', 'country': 'Sweden', 'cc': 'se', 'industry': 'Mode', 'sub': 'Northern Europe'}, {'brand': 'Volvo', 'country': 'Sweden', 'cc': 'se', 'industry': 'Autos', 'sub': 'Northern Europe'}, {'brand': 'Spotify', 'country': 'Sweden', 'cc': 'se', 'industry': 'Streaming', 'sub': 'Northern Europe'}, {'brand': 'LEGO', 'country': 'Denmark', 'cc': 'dk', 'industry': 'Spielzeug', 'sub': 'Northern Europe'}, {'brand': 'Bang & Olufsen', 'country': 'Denmark', 'cc': 'dk', 'industry': 'Elektronik', 'sub': 'Northern Europe'}, {'brand': 'Nokia', 'country': 'Finland', 'cc': 'fi', 'industry': 'Telekommunikation', 'sub': 'Northern Europe'}, {'brand': 'Volkswagen', 'country': 'Germany', 'cc': 'de', 'industry': 'Autos', 'sub': 'Western Europe'}, {'brand': 'BMW', 'country': 'Germany', 'cc': 'de', 'industry': 'Autos', 'sub': 'Western Europe'}, {'brand': 'Porsche', 'country': 'Germany', 'cc': 'de', 'industry': 'Autos', 'sub': 'Western Europe'}, {'brand': 'ALDI', 'country': 'Germany', 'cc': 'de', 'industry': 'Einzelhandel', 'sub': 'Western Europe'}, {'brand': 'Airbus', 'country': 'France', 'cc': 'fr', 'industry': 'Luftfahrt', 'sub': 'Western Europe'}, {'brand': 'Renault', 'country': 'France', 'cc': 'fr', 'industry': 'Autos', 'sub': 'Western Europe'}, {'brand': 'Louis Vuitton', 'country': 'France', 'cc': 'fr', 'industry': 'Luxus', 'sub': 'Western Europe'}, {'brand': 'Ferrari', 'country': 'Italy', 'cc': 'it', 'industry': 'Autos', 'sub': 'Southern Europe'}, {'brand': 'Maserati', 'country': 'Italy', 'cc': 'it', 'industry': 'Autos', 'sub': 'Southern Europe'}, {'brand': 'Zara', 'country': 'Spain', 'cc': 'es', 'industry': 'Mode', 'sub': 'Southern Europe'}, {'brand': 'Shell', 'country': 'Netherlands', 'cc': 'nl', 'industry': 'Energie', 'sub': 'Western Europe'}, {'brand': 'Philips', 'country': 'Netherlands', 'cc': 'nl', 'industry': 'Elektronik', 'sub': 'Western Europe'}, {'brand': 'Heineken', 'country': 'Netherlands', 'cc': 'nl', 'industry': 'Bier', 'sub': 'Western Europe'}, {'brand': 'Nestle', 'country': 'Switzerland', 'cc': 'ch', 'industry': 'Lebensmittel', 'sub': 'Western Europe'}, {'brand': 'Rolex', 'country': 'Switzerland', 'cc': 'ch', 'industry': 'Uhren', 'sub': 'Western Europe'}, {'brand': 'Skoda', 'country': 'Czech Republic', 'cc': 'cz', 'industry': 'Autos', 'sub': 'Eastern Europe'}, {'brand': 'Emirates', 'country': 'UAE', 'cc': 'ae', 'industry': 'Luftfahrt', 'sub': 'Western Asia'}, {'brand': 'Petronas', 'country': 'Malaysia', 'cc': 'my', 'industry': 'Energie', 'sub': 'Southeast Asia'}, {'brand': 'Tata', 'country': 'India', 'cc': 'in', 'industry': 'Konglomerat', 'sub': 'Southern Asia'}, {'brand': 'Corona', 'country': 'Mexico', 'cc': 'mx', 'industry': 'Bier', 'sub': 'Central America'}, {'brand': 'Embraer', 'country': 'Brazil', 'cc': 'br', 'industry': 'Luftfahrt', 'sub': 'South America'}, {'brand': 'MTN', 'country': 'South Africa', 'cc': 'za', 'industry': 'Telekommunikation', 'sub': 'Southern Africa'}]
 BJ  = json.dumps(BRANDS, separators=(',',':'), ensure_ascii=False)
+# Phase 155: Wappen from wappen.json
+WAPPEN_JSON = json.load(open(os.path.join(os.path.dirname(__file__), 'wappen.json'), encoding='utf-8'))
+WPJ = json.dumps(WAPPEN_JSON, separators=(',',':'), ensure_ascii=False)
 
 CURRENCIES = [{'currency': 'Yen', 'symbol': 'Â¥', 'country': 'Japan', 'cc': 'jp', 'sub': 'Eastern Asia'}, {'currency': 'Won', 'symbol': 'â‚©', 'country': 'South Korea', 'cc': 'kr', 'sub': 'Eastern Asia'}, {'currency': 'Renminbi', 'symbol': 'Â¥', 'country': 'China', 'cc': 'cn', 'sub': 'Eastern Asia'}, {'currency': 'Rupee', 'symbol': 'â‚¹', 'country': 'India', 'cc': 'in', 'sub': 'Southern Asia'}, {'currency': 'Taka', 'symbol': 'à§³', 'country': 'Bangladesh', 'cc': 'bd', 'sub': 'Southern Asia'}, {'currency': 'Baht', 'symbol': 'à¸¿', 'country': 'Thailand', 'cc': 'th', 'sub': 'Southeast Asia'}, {'currency': 'Dong', 'symbol': 'â‚«', 'country': 'Vietnam', 'cc': 'vn', 'sub': 'Southeast Asia'}, {'currency': 'Ringgit', 'symbol': 'RM', 'country': 'Malaysia', 'cc': 'my', 'sub': 'Southeast Asia'}, {'currency': 'Peso', 'symbol': 'â‚±', 'country': 'Philippines', 'cc': 'ph', 'sub': 'Southeast Asia'}, {'currency': 'Pound', 'symbol': 'Â£', 'country': 'United Kingdom', 'cc': 'gb', 'sub': 'Northern Europe'}, {'currency': 'Krone', 'symbol': 'kr', 'country': 'Denmark', 'cc': 'dk', 'sub': 'Northern Europe'}, {'currency': 'Krone', 'symbol': 'kr', 'country': 'Norway', 'cc': 'no', 'sub': 'Northern Europe'}, {'currency': 'Krona', 'symbol': 'kr', 'country': 'Sweden', 'cc': 'se', 'sub': 'Northern Europe'}, {'currency': 'Forint', 'symbol': 'Ft', 'country': 'Hungary', 'cc': 'hu', 'sub': 'Eastern Europe'}, {'currency': 'Zloty', 'symbol': 'zł', 'country': 'Poland', 'cc': 'pl', 'sub': 'Eastern Europe'}, {'currency': 'Koruna', 'symbol': 'Kń', 'country': 'Czech Republic', 'cc': 'cz', 'sub': 'Eastern Europe'}, {'currency': 'Hryvnia', 'symbol': 'â‚´', 'country': 'Ukraine', 'cc': 'ua', 'sub': 'Eastern Europe'}, {'currency': 'Leu', 'symbol': 'lei', 'country': 'Romania', 'cc': 'ro', 'sub': 'Eastern Europe'}, {'currency': 'Ruble', 'symbol': 'â‚½', 'country': 'Russia', 'cc': 'ru', 'sub': 'Eastern Europe'}, {'currency': 'Lira', 'symbol': 'â‚º', 'country': 'Turkey', 'cc': 'tr', 'sub': 'Western Asia'}, {'currency': 'Shekel', 'symbol': 'â‚ª', 'country': 'Israel', 'cc': 'il', 'sub': 'Western Asia'}, {'currency': 'Riyal', 'symbol': 'SAR', 'country': 'Saudi Arabia', 'cc': 'sa', 'sub': 'Western Asia'}, {'currency': 'Dirham', 'symbol': 'AED', 'country': 'UAE', 'cc': 'ae', 'sub': 'Western Asia'}, {'currency': 'Dinar', 'symbol': 'RSD', 'country': 'Serbia', 'cc': 'rs', 'sub': 'Southern Europe'}, {'currency': 'Tenge', 'symbol': 'â‚¸', 'country': 'Kazakhstan', 'cc': 'kz', 'sub': 'Central Asia'}, {'currency': 'Real', 'symbol': 'R$', 'country': 'Brazil', 'cc': 'br', 'sub': 'South America'}, {'currency': 'Peso', 'symbol': '$', 'country': 'Mexico', 'cc': 'mx', 'sub': 'Central America'}, {'currency': 'Peso', 'symbol': '$', 'country': 'Argentina', 'cc': 'ar', 'sub': 'South America'}, {'currency': 'Sol', 'symbol': 'S/', 'country': 'Peru', 'cc': 'pe', 'sub': 'South America'}, {'currency': 'Rand', 'symbol': 'R', 'country': 'South Africa', 'cc': 'za', 'sub': 'Southern Africa'}, {'currency': 'Naira', 'symbol': 'â‚¦', 'country': 'Nigeria', 'cc': 'ng', 'sub': 'Western Africa'}, {'currency': 'Birr', 'symbol': 'Br', 'country': 'Ethiopia', 'cc': 'et', 'sub': 'Eastern Africa'}, {'currency': 'Shilling', 'symbol': 'Sh', 'country': 'Kenya', 'cc': 'ke', 'sub': 'Eastern Africa'}, {'currency': 'Pound', 'symbol': 'EÂ£', 'country': 'Egypt', 'cc': 'eg', 'sub': 'Northern Africa'}, {'currency': 'Dirham', 'symbol': 'MAD', 'country': 'Morocco', 'cc': 'ma', 'sub': 'Northern Africa'}]
 CUJ = json.dumps(CURRENCIES, separators=(',',':'), ensure_ascii=False)
@@ -6870,38 +6737,7 @@ function renderReiseroute(sc){
 
 
 /* â”€â”€ WAPPEN-MEISTER DATA â”€â”€ (Phase 106) */
-const WAPPEN_DATA=[
-  {cc:"de",c:"Deutschland",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Germany.svg"},
-  {cc:"fr",c:"Frankreich",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_France.svg"},
-  {cc:"es",c:"Spanien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Spain.svg"},
-  {cc:"it",c:"Italien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Italy.svg"},
-  {cc:"pt",c:"Portugal",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Portugal.svg"},
-  {cc:"at",c:"ß–sterreich",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Austria.svg"},
-  {cc:"ch",c:"Schweiz",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Switzerland.svg"},
-  {cc:"pl",c:"Polen",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Poland.svg"},
-  {cc:"cz",c:"Tschechien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Czech_Republic.svg"},
-  {cc:"hu",c:"Ungarn",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Hungary.svg"},
-  {cc:"ro",c:"Rumänien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Romania.svg"},
-  {cc:"bg",c:"Bulgarien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Bulgaria.svg"},
-  {cc:"gr",c:"Griechenland",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Greece.svg"},
-  {cc:"hr",c:"Kroatien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Croatia.svg"},
-  {cc:"sk",c:"Slowakei",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovakia.svg"},
-  {cc:"si",c:"Slowenien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovenia.svg"},
-  {cc:"be",c:"Belgien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Belgium.svg"},
-  {cc:"nl",c:"Niederlande",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Netherlands.svg"},
-  {cc:"dk",c:"Dänemark",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Denmark.svg"},
-  {cc:"se",c:"Schweden",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Sweden.svg"},
-  {cc:"fi",c:"Finnland",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Finland.svg"},
-  {cc:"no",c:"Norwegen",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Norway.svg"},
-  {cc:"ie",c:"Irland",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg"},
-  {cc:"lu",c:"Luxemburg",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Luxembourg.svg"},
-  {cc:"rs",c:"Serbien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Serbia.svg"},
-  {cc:"ua",c:"Ukraine",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ukraine.svg"},
-  {cc:"al",c:"Albanien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Albania.svg"},
-  {cc:"me",c:"Montenegro",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Montenegro.svg"},
-  {cc:"ba",c:"Bosnien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Bosnia_and_Herzegovina.svg"},
-  {cc:"mk",c:"Nordmazedonien",img:"https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_North_Macedonia.svg"},
-];
+const WAPPEN_DATA=PLACEHOLDER_WPJ
 function genWappenQ(){
   if(\!WAPPEN_DATA||WAPPEN_DATA.length<4)return null;
   const _r=arr=>arr[~~(rng()*arr.length)];
@@ -7873,6 +7709,7 @@ JS = (JS
   .replace('PLACEHOLDER_FJ',  FJ)
   .replace('PLACEHOLDER_BJ',  BJ)
   .replace('PLACEHOLDER_CUJ', CUJ)
+  .replace('PLACEHOLDER_WPJ', WPJ)
 )
 remaining = __import__('re').findall(r'PLACEHOLDER_\w+', JS)
 if remaining:
