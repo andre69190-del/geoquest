@@ -1294,7 +1294,7 @@ de:{
   q_river_real:"Durch welches Land fließt dieser Fluss?",q_map_guess:"Finde das Land auf der Karte",
   fb_correct:"✓“ Richtig! +{pts}",fb_wrong:"✗ Falsch → {ans}",fb_time:"⏱ Zeit! → {ans}",
   plates_more:"+{n} weitere",pct_complete:"{pct}% vollständig",
-  spotter_dup:"ðŸ“‹ {code} ({country}) bereits gesammelt!",
+  spotter_dup:"📋 {code} ({country}) bereits gesammelt!",
   map_unavail:"Karte nicht verfügbar",map_loading:"Kartendaten werden geladen…",
   q_subway_km:"Wie lang ist das U-Bahn-Netz … (km)?",q_subway_lines:"Wie viele U-Bahn-Linien hat …?",
   ob_welcome:"Willkommen bei GeoQuest",ob_sub1:"Das Geografie-Quiz – sammle Stempel, steige in der Liga auf!",ob_difficulty:"Schwierigkeitsgrad",ob_diff_sub:"W\u00e4hle deinen Stil. \u00c4nderbar jederzeit.",
@@ -1341,7 +1341,7 @@ en:{
   q_river_real:"Which country does this river flow through?",q_map_guess:"Find the country on the map",
   fb_correct:"✓“ Correct! +{pts}",fb_wrong:"✗ Wrong → {ans}",fb_time:"⏱ Time! → {ans}",
   plates_more:"+{n} more",pct_complete:"{pct}% complete",
-  spotter_dup:"ðŸ“‹ {code} ({country}) already collected!",
+  spotter_dup:"📋 {code} ({country}) already collected!",
   map_unavail:"Map not available",map_loading:"Loading map data…",
   q_subway_km:"How long is the metro network … (km)?",q_subway_lines:"How many metro lines does … have?",
   ob_welcome:"Welcome to GeoQuest",ob_sub1:"The geography quiz – collect stamps, climb the league!",ob_difficulty:"Difficulty",ob_diff_sub:"Choose your style. Changeable at any time.",
@@ -1387,7 +1387,7 @@ pl:{
   q_river_real:"Przez jaki kraj płynie ta rzeka?",q_map_guess:"ZnajdŚº kraj na mapie",
   fb_correct:"✓“ Dobrze! +{pts}",fb_wrong:"✗ Błąd → {ans}",fb_time:"⏱ Czas! → {ans}",
   plates_more:"+{n} więcej",pct_complete:"{pct}% ukoŚ„czono",
-  spotter_dup:"ðŸ“‹ {code} ({country}) już zebrane!",
+  spotter_dup:"📋 {code} ({country}) już zebrane!",
   map_unavail:"Mapa niedostępna",map_loading:"Śadowanie mapy…",
   q_subway_km:"Jak długa jest sieć metra … (km)?",q_subway_lines:"Ile linii metra ma …?",
   hl_longer:"⬆️ Dłuższy",hl_shorter:"⬇️ Krótszy",hl_bigger:"⬆️ Większy (obszar)",hl_smaller:"⬇️ Mniejszy (obszar)",
@@ -1443,7 +1443,7 @@ fr:{
   q_river_real:"Dans quel pays coule ce fleuve ?",q_map_guess:"Trouver le pays sur la carte",
   fb_correct:"✓“ Correct ! +{pts}",fb_wrong:"✗ Faux → {ans}",fb_time:"⏱ Temps ! → {ans}",
   plates_more:"+{n} de plus",pct_complete:"{pct}% terminé",
-  spotter_dup:"ðŸ“‹ {code} ({country}) déjß  collecté !",
+  spotter_dup:"📋 {code} ({country}) déjß  collecté !",
   map_unavail:"Carte non disponible",map_loading:"Chargement de la carte…",
   q_subway_km:"Quelle longueur a le réseau métro … (km)?",q_subway_lines:"Combien de lignes de métro a … ?",
   hl_longer:"⬆️ Plus long",hl_shorter:"⬇️ Plus court",hl_bigger:"⬆️ Plus grand (superficie)",hl_smaller:"⬇️ Plus petit (superficie)",
@@ -1499,7 +1499,7 @@ es:{
   q_river_real:"Â¿Por qué paß­s pasa este rß­o?",q_map_guess:"Encuentra el paß­s en el mapa",
   fb_correct:"✓“ Â¡Correcto! +{pts}",fb_wrong:"✗ Incorrecto → {ans}",fb_time:"⏱ Â¡Tiempo! → {ans}",
   plates_more:"+{n} más",pct_complete:"{pct}% completado",
-  spotter_dup:"ðŸ“‹ {code} ({country}) ya coleccionado!",
+  spotter_dup:"📋 {code} ({country}) ya coleccionado!",
   map_unavail:"Mapa no disponible",map_loading:"Cargando mapa…",
   q_subway_km:"Â¿Cuánto mide la red de metro … (km)?",q_subway_lines:"Â¿Cuántas lß­neas de metro tiene …?",
   hl_longer:"⬆️ Más largo",hl_shorter:"⬇️ Más corto",hl_bigger:"⬆️ Más grande (área)",hl_smaller:"⬇️ Más pequeño (área)",
@@ -1555,7 +1555,7 @@ it:{
   q_river_real:"Attraverso quale paese scorre questo fiume?",q_map_guess:"Trova il paese sulla mappa",
   fb_correct:"✓“ Corretto! +{pts}",fb_wrong:"✗ Sbagliato → {ans}",fb_time:"⏱ Tempo! → {ans}",
   plates_more:"+{n} altri",pct_complete:"{pct}% completato",
-  spotter_dup:"ðŸ“‹ {code} ({country}) giß  raccolto!",
+  spotter_dup:"📋 {code} ({country}) giß  raccolto!",
   map_unavail:"Mappa non disponibile",map_loading:"Caricamento mappa…",
   q_subway_km:"Quanto ß¨ lungo il metrß² … (km)?",q_subway_lines:"Quante linee metro ha …?",
   hl_longer:"⬆️ Piß¹ lungo",hl_shorter:"⬇️ Piß¹ corto",hl_bigger:"⬆️ Piß¹ grande (superficie)",hl_smaller:"⬇️ Piß¹ piccolo (superficie)",
@@ -1611,7 +1611,7 @@ nl:{
   q_river_real:"Door welk land stroomt deze rivier?",q_map_guess:"Vind het land op de kaart",
   fb_correct:"✓“ Correct! +{pts}",fb_wrong:"✗ Fout → {ans}",fb_time:"⏱ Tijd! → {ans}",
   plates_more:"+{n} meer",pct_complete:"{pct}% voltooid",
-  spotter_dup:"ðŸ“‹ {code} ({country}) al verzameld!",
+  spotter_dup:"📋 {code} ({country}) al verzameld!",
   map_unavail:"Kaart niet beschikbaar",map_loading:"Kaart laden…",
   q_subway_km:"Hoe lang is het metronetwerk … (km)?",q_subway_lines:"Hoeveel metrolijnen heeft …?",
   diff_desc_casual:"\u{1F7E2} Casual: Ontspannen · Geen tijdslimiet · ∞ Levens",diff_desc_hc:"\u{1F525} Hardcore: Klassiek · Geen tijdslimiet · 3 Levens",diff_desc_surv:"\u{1F480} Survival: Tegen de klok · 8s · 3 Levens",hud_lives:"LEVENS",score_mult_max:"Max Vermenigvuldiger",score_time_bonus:"Tijdbonus",pts_abbr:"pt.",score_correct_lbl:"correct",mode_wappen:"Wapens",mode_slf:"Stad-Land-Rivier",mode_euro:"Euromunt"
@@ -1648,7 +1648,7 @@ pt:{
   q_river_real:"Por qual paß­s corre este rio?",q_map_guess:"Encontre o paß­s no mapa",
   fb_correct:"✓“ Correto! +{pts}",fb_wrong:"✗ Errado → {ans}",fb_time:"⏱ Tempo! → {ans}",
   plates_more:"+{n} mais",pct_complete:"{pct}% completo",
-  spotter_dup:"ðŸ“‹ {code} ({country}) já coletado!",
+  spotter_dup:"📋 {code} ({country}) já coletado!",
   map_unavail:"Mapa nß£o disponß­vel",map_loading:"Carregando mapa…",
   q_subway_km:"Qual o comprimento da rede de metro … (km)?",q_subway_lines:"Quantas linhas de metro tem …?",
   diff_desc_casual:"\u{1F7E2} Casual: Relaxado · Sem limite · ∞ Vidas",diff_desc_hc:"\u{1F525} Hardcore: Clássico · Sem limite · 3 Vidas",diff_desc_surv:"\u{1F480} Survival: Contra o relógio · 8s · 3 Vidas",hud_lives:"VIDAS",score_mult_max:"Multiplicador Máx.",score_time_bonus:"Bónus de Tempo",pts_abbr:"pts.",score_correct_lbl:"corretas",mode_wappen:"Brasßµes",mode_slf:"Cidade-Paß­s-Rio",mode_euro:"Moedas Euro"
@@ -1685,7 +1685,7 @@ ro:{
   q_river_real:"Prin ce È›arńƒ curge acest rß¢u?",q_map_guess:"GńƒseÈ™te È›ara pe hartńƒ",
   fb_correct:"✓“ Corect! +{pts}",fb_wrong:"✗ GreÈ™it → {ans}",fb_time:"⏱ Timp! → {ans}",
   plates_more:"+{n} mai mult",pct_complete:"{pct}% complet",
-  spotter_dup:"ðŸ“‹ {code} ({country}) deja colectat!",
+  spotter_dup:"📋 {code} ({country}) deja colectat!",
   map_unavail:"Hartńƒ indisponibilńƒ",map_loading:"Se ßªncarcńƒ harta…",
   q_subway_km:"Cß¢t de lungńƒ este reÈ›eaua de metrou … (km)?",q_subway_lines:"Cß¢te linii de metrou are …?",
   diff_desc_casual:"\u{1F7E2} Casual: Relaxat · Fńƒrńƒ limitńƒ · ∞ VieÈ›i",diff_desc_hc:"\u{1F525} Hardcore: Clasic · Fńƒrńƒ limitńƒ · 3 VieÈ›i",diff_desc_surv:"\u{1F480} Survival: Contra cronometru · 8s · 3 VieÈ›i",hud_lives:"VIEÈžI",score_mult_max:"Multiplicator Max",score_time_bonus:"Bonus Timp",pts_abbr:"pct.",score_correct_lbl:"corecte",mode_wappen:"Steme",mode_slf:"OraŚŸ-Èšarńƒ-Rß¢u",mode_euro:"Monede Euro"
@@ -1722,7 +1722,7 @@ hu:{
   q_river_real:"Melyik országon folyik át ez a folyó?",q_map_guess:"Keresse meg az országot a térképen",
   fb_correct:"✓“ Helyes! +{pts}",fb_wrong:"✗ Rossz → {ans}",fb_time:"⏱ IdŚ‘! → {ans}",
   plates_more:"+{n} több",pct_complete:"{pct}% kész",
-  spotter_dup:"ðŸ“‹ {code} ({country}) már összegyŚ±jtve!",
+  spotter_dup:"📋 {code} ({country}) már összegyŚ±jtve!",
   map_unavail:"Térkép nem elérhetŚ‘",map_loading:"Térkép betöltése…",
   q_subway_km:"Milyen hosszßº a metróhálózat … (km)?",q_subway_lines:"Hány metróvonal van …?",
   diff_desc_casual:"\u{1F7E2} Casual: Lazulás · Nincs idŚ‘limit · ∞ ß‰let",diff_desc_hc:"\u{1F525} Hardcore: Klasszikus · Nincs idŚ‘limit · 3 ß‰let",diff_desc_surv:"\u{1F480} Survival: Verseny az idŚ‘vel · 8mp · 3 ß‰let",hud_lives:"ß‰LETEK",score_mult_max:"Max Szorzó",score_time_bonus:"IdŚ‘bónusz",pts_abbr:"pt.",score_correct_lbl:"helyes",mode_wappen:"Cß­merek",mode_slf:"Város-Ország-Folyó",mode_euro:"Euróérmék"
@@ -1759,7 +1759,7 @@ cs:{
   q_river_real:"PŚ™es kterou zemi teńe tato Ś™eka?",q_map_guess:"Najdi zemi na mapń›",
   fb_correct:"✓“ Správnń›! +{pts}",fb_wrong:"✗ Chybnń› → {ans}",fb_time:"⏱ čas! → {ans}",
   plates_more:"+{n} dalŚ¡ß­ch",pct_complete:"{pct}% hotovo",
-  spotter_dup:"ðŸ“‹ {code} ({country}) jiŚ¾ sbß­ráno!",
+  spotter_dup:"📋 {code} ({country}) jiŚ¾ sbß­ráno!",
   map_unavail:"Mapa nenß­ k dispozici",map_loading:"Nańß­tánß­ mapy…",
   q_subway_km:"Jak dlouhé je metro … (km)?",q_subway_lines:"Kolik metrovß½ch linek má …?",
   diff_desc_casual:"\u{1F7E2} Casual: Uvolnń›nß½ · Bez ńasového limitu · ∞ Ś½ivotŚ¯",diff_desc_hc:"\u{1F525} Hardcore: Klasika · Bez limitu · 3 Ś½ivoty",diff_desc_surv:"\u{1F480} Survival: Proti ńasu · 8s · 3 Ś½ivoty",hud_lives:"Ś½IVOTY",score_mult_max:"Max Multiplikátor",score_time_bonus:"časovß½ Bonus",pts_abbr:"bd.",score_correct_lbl:"správnń›",mode_wappen:"Erby",mode_slf:"Mń›sto-Stát-Ś˜eka",mode_euro:"Euromince"
@@ -1796,7 +1796,7 @@ sk:{
   q_river_real:"Cez ktorßº krajinu teńie táto rieka?",q_map_guess:"Nájdi krajinu na mape",
   fb_correct:"✓“ Správne! +{pts}",fb_wrong:"✗ Nesprávne → {ans}",fb_time:"⏱ čas! → {ans}",
   plates_more:"+{n} ńalŚ¡ß­ch",pct_complete:"{pct}% hotovo",
-  spotter_dup:"ðŸ“‹ {code} ({country}) uŚ¾ zozbierané!",
+  spotter_dup:"📋 {code} ({country}) uŚ¾ zozbierané!",
   map_unavail:"Mapa nie je dostupná",map_loading:"Nańß­távanie mapy…",
   q_subway_km:"Aká dlhá je sieŚ¥ metra … (km)?",q_subway_lines:"Koń¾ko liniek metra má …?",
   diff_desc_casual:"\u{1F7E2} Casual: Uvolnń›nß½ · Bez ńasového limitu · ∞ Ś½ivotov",diff_desc_hc:"\u{1F525} Hardcore: Klasika · Bez limitu · 3 Ś½ivoty",diff_desc_surv:"\u{1F480} Survival: Proti ńasu · 8s · 3 Ś½ivoty",hud_lives:"Ś½IVOTY",score_mult_max:"Max Multiplikátor",score_time_bonus:"časovß½ Bonus",pts_abbr:"b.",score_correct_lbl:"správne",mode_wappen:"Erby",mode_slf:"Mesto-Krajina-Rieka",mode_euro:"Euromince"
@@ -1833,7 +1833,7 @@ hr:{
   q_river_real:"Kroz koju drŚ¾avu teńe ova rijeka?",q_map_guess:"Pronań‘i drŚ¾avu na karti",
   fb_correct:"✓“ Tońno! +{pts}",fb_wrong:"✗ PogreŚ¡no → {ans}",fb_time:"⏱ Kraj vremena! → {ans}",
   plates_more:"+{n} viŚ¡e",pct_complete:"{pct}% dovrŚ¡eno",
-  spotter_dup:"ðŸ“‹ {code} ({country}) već skupljeno!",
+  spotter_dup:"📋 {code} ({country}) već skupljeno!",
   map_unavail:"Karta nije dostupna",map_loading:"Uńitavanje karte…",
   q_subway_km:"Koliko duga je mreŚ¾a metroa … (km)?",q_subway_lines:"Koliko linija metroa ima …?",
   diff_desc_casual:"\u{1F7E2} Casual: OpuŚ¡teno · Bez vremenskog limita · ∞ Ś½ivota",diff_desc_hc:"\u{1F525} Hardcore: Klasik · Bez limita · 3 Ś½ivota",diff_desc_surv:"\u{1F480} Survival: Protiv sata · 8s · 3 Ś½ivota",hud_lives:"Ś½IVOTI",score_mult_max:"Maks MnoŚ¾itelj",score_time_bonus:"Vremenski Bonus",pts_abbr:"bod.",score_correct_lbl:"tońno",mode_wappen:"Grbovi",mode_slf:"Grad-Zemlja-Rijeka",mode_euro:"Euro Kovanice"
@@ -1870,7 +1870,7 @@ sl:{
   q_river_real:"Skozi katero drŚ¾avo teńe ta reka?",q_map_guess:"PoiŚ¡ńi drŚ¾avo na karti",
   fb_correct:"✓“ Pravilno! +{pts}",fb_wrong:"✗ Napańno → {ans}",fb_time:"⏱ čas! → {ans}",
   plates_more:"+{n} veń",pct_complete:"{pct}% dokonńano",
-  spotter_dup:"ðŸ“‹ {code} ({country}) Ś¾e zbrano!",
+  spotter_dup:"📋 {code} ({country}) Ś¾e zbrano!",
   map_unavail:"Karta ni na voljo",map_loading:"Nalaganje karte…",
   q_subway_km:"Kako dolgo je metrojsko omreŚ¾je … (km)?",q_subway_lines:"Koliko metrojskih linij ima …?",
   diff_desc_casual:"\u{1F7E2} Casual: Sprostitveno · Brez ńasovne omejitve · ∞ Ś½ivljenj",diff_desc_hc:"\u{1F525} Hardcore: Klasińno · Brez omejitve · 3 Ś½ivljenja",diff_desc_surv:"\u{1F480} Survival: Dirka s ńasom · 8s · 3 Ś½ivljenja",hud_lives:"Ś½IVLJENJA",score_mult_max:"Maks MnoŚ¾itelj",score_time_bonus:"časovni Bonus",pts_abbr:"t.",score_correct_lbl:"pravilno",mode_wappen:"Grbi",mode_slf:"Mesto-DeŚ¾ela-Reka",mode_euro:"Eurokovanice"
@@ -1907,7 +1907,7 @@ bg:{
   q_river_real:"ÐŸÑ€ÐµÐ· ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ñ‚ÐµÑ‡Ðµ Ñ‚Ð°Ð·Ð¸ Ñ€ÐµÐºÐ°?",q_map_guess:"ÐÐ°Ð¼ÐµÑ€Ð¸ ÑÑ‚Ñ€Ð°Ð½Ð°Ñ‚Ð° Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð°Ñ‚Ð°",
   fb_correct:"✓“ ÐŸÑ€Ð°Ð²Ð¸Ð»Ð½Ð¾! +{pts}",fb_wrong:"✗ Ð“Ñ€ÐµÑˆÐ½Ð¾ → {ans}",fb_time:"⏱ Ð’Ñ€ÐµÐ¼ÐµÑ‚Ð¾ Ð¸Ð·Ñ‚ÐµÑ‡Ðµ! → {ans}",
   plates_more:"+{n} oÑ‰e",pct_complete:"{pct}% Ð·Ð°Ð²ÑŠÑ€ÑˆÐµÐ½Ð¾",
-  spotter_dup:"ðŸ“‹ {code} ({country}) Ð²ÐµÑ‡e ÑÑŠÐ±Ñ€Ð°Ð½Ð¾!",
+  spotter_dup:"📋 {code} ({country}) Ð²ÐµÑ‡e ÑÑŠÐ±Ñ€Ð°Ð½Ð¾!",
   map_unavail:"ÐšÐ°Ñ€Ñ‚Ð°Ñ‚Ð° Ð½Ðµ Ðµ Ð´Ð¾ÑÑ‚ÑŠÐ¿Ð½Ð°",map_loading:"Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð°Ñ‚Ð°…",
   q_subway_km:"ÐšÐ¾Ð»ÐºÐ¾ Ð´ÑŠÐ»Ð³Ð° Ðµ Ð¼ÐµÑ‚Ñ€Ð¾Ñ‚Ð¾ … (km)?",q_subway_lines:"ÐšÐ¾Ð»ÐºÐ¾ Ð¼ÐµÑ‚Ñ€Ð¾Ð»Ð¸Ð½Ð¸Ð¸ Ð¸Ð¼Ð° …?",
   diff_desc_casual:"\u{1F7E2} Casual: Ð Ð°Ð·Ñ…Ð¾Ð´ÐµÐ½ · Ð‘ÐµÐ· Ð»Ð¸Ð¼Ð¸Ñ‚ · ∞ Ð–Ð¸Ð²Ð¾Ñ‚Ð°",diff_desc_hc:"\u{1F525} Hardcore: ÐšÐ»Ð°ÑÐ¸Ðº · Ð‘ÐµÐ· Ð»Ð¸Ð¼Ð¸Ñ‚ · 3 Ð–Ð¸Ð²Ð¾Ñ‚Ð°",diff_desc_surv:"\u{1F480} Survival: Ð¡Ñ€ÐµÑ‰Ñƒ Ð²Ñ€ÐµÐ¼ÐµÑ‚Ð¾ · 8Ñ · 3 Ð–Ð¸Ð²Ð¾Ñ‚Ð°",hud_lives:"Ð–Ð˜Ð’ÐžÐ¢Ð",score_mult_max:"ÐœÐ°ÐºÑ ÐœÐ½Ð¾Ð¶Ð¸Ñ‚ÐµÐ»",score_time_bonus:"Ð’Ñ€ÐµÐ¼ÐµÐ² Ð‘Ð¾Ð½ÑƒÑ",pts_abbr:"Ñ‚.",score_correct_lbl:"Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð½Ð¾",mode_wappen:"Ð“ÐµÑ€Ð±Ð¾Ð²Ðµ",mode_slf:"Ð“Ñ€Ð°Ð´-Ð¡Ñ‚Ñ€Ð°Ð½Ð°-Ð ÐµÐºÐ°",mode_euro:"Ð•Ð²Ñ€Ð¾Ð¼Ð¾Ð½ÐµÑ‚Ð¸"
@@ -1944,7 +1944,7 @@ el:{
   q_river_real:"ÎœÎ­ÏƒÎ± Î±Ï€ÏŒ Ï€Î¿Î¹Î± Ï‡ÏŽÏÎ± Î´Î¹Î±ÏÏÎ­ÎµÎ¹ Î±Ï…Ï„ÏŒ Ï„Î¿ Ï€Î¿Ï„Î¬Î¼Î¹;",q_map_guess:"Î’ÏÎµÏ‚ Ï„Î· Ï‡ÏŽÏÎ± ÏƒÏ„Î¿Î½ Ï‡Î¬ÏÏ„Î·",
   fb_correct:"✓“ Î£Ï‰ÏƒÏ„ÏŒ! +{pts}",fb_wrong:"✗ Î›Î¬Î¸Î¿Ï‚ → {ans}",fb_time:"⏱ Î¤Î­Î»Î¿Ï‚ Ï‡ÏÏŒÎ½Î¿Ï…! → {ans}",
   plates_more:"+{n} Î±ÎºÏŒÎ¼Î±",pct_complete:"{pct}% Î¿Î»Î¿ÎºÎ»Î·ÏÏŽÎ¸Î·ÎºÎµ",
-  spotter_dup:"ðŸ“‹ {code} ({country}) Î®Î´Î· ÏƒÏ…Î»Î»Î­Ï‡Î¸Î·ÎºÎµ!",
+  spotter_dup:"📋 {code} ({country}) Î®Î´Î· ÏƒÏ…Î»Î»Î­Ï‡Î¸Î·ÎºÎµ!",
   map_unavail:"Î§Î¬ÏÏ„Î·Ï‚ Î¼Î· Î´Î¹Î±Î¸Î­ÏƒÎ¹Î¼Î¿Ï‚",map_loading:"Î¦ÏŒÏÏ„Ï‰ÏƒÎ· Ï‡Î¬ÏÏ„Î·…",
   q_subway_km:"Î ÏŒÏƒÎ¿ Î¼Î±ÎºÏÏ ÎµÎ¯Î½Î±Î¹ Ï„Î¿ Î¼ÎµÏ„ÏÏŒ … (km)?",q_subway_lines:"Î ÏŒÏƒÎµÏ‚ Î³ÏÎ±Î¼Î¼Î­Ï‚ Î¼ÎµÏ„ÏÏŒ Î­Ï‡ÎµÎ¹ …?",
   diff_desc_casual:"\u{1F7E2} Casual: Î‘Î½ÎµÏ„Î¿ · Î§Ï‰ÏÎ¯Ï‚ ÏŒÏÎ¹Î¿ · ∞ Î–Ï‰Î­Ï‚",diff_desc_hc:"\u{1F525} Hardcore: ÎšÎ»Î±ÏƒÎ¹ÎºÏŒ · Î§Ï‰ÏÎ¯Ï‚ ÏŒÏÎ¹Î¿ · 3 Î–Ï‰Î­Ï‚",diff_desc_surv:"\u{1F480} Survival: Î•Î½Î±Î½Ï„Î¯Î¿Î½ Ï‡ÏÏŒÎ½Î¿Ï… · 8Î´Î» · 3 Î–Ï‰Î­Ï‚",hud_lives:"Î–Î©Î•Î£",score_mult_max:"ÎœÎ­Î³Î¹ÏƒÏ„Î¿Ï‚ Î Î¿Î»Î»Î±Ï€Î»Î±ÏƒÎ¹Î±ÏƒÏ„Î®Ï‚",score_time_bonus:"ÎœÏ€ÏŒÎ½Î¿Ï…Ï‚ Î§ÏÏŒÎ½Î¿Ï…",pts_abbr:"Î¼ÏŒÏ.",score_correct_lbl:"ÏƒÏ‰ÏƒÏ„Î¬",mode_wappen:"Î•Î¸Î½ÏŒÏƒÎ·Î¼Î±",mode_slf:"Î ÏŒÎ»Î·-Î§ÏŽÏÎ±-Î Î¿Ï„Î¬Î¼Î¹",mode_euro:"ÎšÎ­ÏÎ¼Î±Ï„Î± Î•Ï…ÏÏŽ"
@@ -1981,7 +1981,7 @@ da:{
   q_river_real:"Gennem hvilket land lß¸ber denne flod?",q_map_guess:"Find landet pß¥ kortet",
   fb_correct:"✓“ Korrekt! +{pts}",fb_wrong:"✗ Forkert → {ans}",fb_time:"⏱ Tid! → {ans}",
   plates_more:"+{n} mere",pct_complete:"{pct}% fuldfß¸rt",
-  spotter_dup:"ðŸ“‹ {code} ({country}) allerede indsamlet!",
+  spotter_dup:"📋 {code} ({country}) allerede indsamlet!",
   map_unavail:"Kort ikke tilgß¦ngeligt",map_loading:"Indlß¦ser kort…",
   q_subway_km:"Hvor lang er metronetvß¦rket … (km)?",q_subway_lines:"Hvor mange metrolinjer har …?",
   diff_desc_casual:"\u{1F7E2} Casual: Afslappet · Ingen tidsgrß¦nse · ∞ Liv",diff_desc_hc:"\u{1F525} Hardcore: Klassisk · Ingen tidsgrß¦nse · 3 Liv",diff_desc_surv:"\u{1F480} Survival: Mod uret · 8s · 3 Liv",hud_lives:"LIV",score_mult_max:"Maks Multiplikator",score_time_bonus:"Tidsbonus",pts_abbr:"pt.",score_correct_lbl:"korrekt",mode_wappen:"Vß¥benskjolde",mode_slf:"By-Land-Flod",mode_euro:"Euromß¸nter"
@@ -2018,7 +2018,7 @@ sv:{
   q_river_real:"Genom vilket land flödar den här floden?",q_map_guess:"Hitta landet pß¥ kartan",
   fb_correct:"✓“ Rätt! +{pts}",fb_wrong:"✗ Fel → {ans}",fb_time:"⏱ Tid! → {ans}",
   plates_more:"+{n} till",pct_complete:"{pct}% klart",
-  spotter_dup:"ðŸ“‹ {code} ({country}) redan insamlat!",
+  spotter_dup:"📋 {code} ({country}) redan insamlat!",
   map_unavail:"Karta ej tillgänglig",map_loading:"Laddar karta…",
   q_subway_km:"Hur lß¥ng är tunnelbanenätet … (km)?",q_subway_lines:"Hur mß¥nga tunnelbanelinjer har …?",
   diff_desc_casual:"\u{1F7E2} Casual: Avslappnad · Ingen tidsgräns · ∞ Liv",diff_desc_hc:"\u{1F525} Hardcore: Klassisk · Ingen tidsgräns · 3 Liv",diff_desc_surv:"\u{1F480} Survival: Mot klockan · 8s · 3 Liv",hud_lives:"LIV",score_mult_max:"Max Multiplikator",score_time_bonus:"Tidsbonus",pts_abbr:"pt.",score_correct_lbl:"rätt",mode_wappen:"Vapen",mode_slf:"Stad-Land-Flod",mode_euro:"Euromynt"
@@ -2055,7 +2055,7 @@ fi:{
   q_river_real:"Minkä maan läpi tämä joki virtaa?",q_map_guess:"Etsi maa kartalta",
   fb_correct:"✓“ Oikein! +{pts}",fb_wrong:"✗ Väärin → {ans}",fb_time:"⏱ Aika! → {ans}",
   plates_more:"+{n} lisää",pct_complete:"{pct}% valmis",
-  spotter_dup:"ðŸ“‹ {code} ({country}) jo kerätty!",
+  spotter_dup:"📋 {code} ({country}) jo kerätty!",
   map_unavail:"Kartta ei saatavilla",map_loading:"Ladataan karttaa…",
   q_subway_km:"Kuinka pitkä on metroverkosto … (km)?",q_subway_lines:"Kuinka monta metrolinjaa on …?",
   diff_desc_casual:"\u{1F7E2} Casual: Rento · Ei aikarajaa · ∞ Elämää",diff_desc_hc:"\u{1F525} Hardcore: Klassinen · Ei aikarajaa · 3 Elämää",diff_desc_surv:"\u{1F480} Survival: Aikaa vastaan · 8s · 3 Elämää",hud_lives:"ELß„Mß„T",score_mult_max:"Maks Kerroin",score_time_bonus:"Aikabonus",pts_abbr:"p.",score_correct_lbl:"oikein",mode_wappen:"Vaakunat",mode_slf:"Kaupunki-Maa-Joki",mode_euro:"Eurokolikot"
@@ -2092,7 +2092,7 @@ et:{
   q_river_real:"Läbi millise riigi see jßµgi voolab?",q_map_guess:"Leia riik kaardilt",
   fb_correct:"✓“ ß•ige! +{pts}",fb_wrong:"✗ Vale → {ans}",fb_time:"⏱ Aeg! → {ans}",
   plates_more:"+{n} veel",pct_complete:"{pct}% täidetud",
-  spotter_dup:"ðŸ“‹ {code} ({country}) juba kogutud!",
+  spotter_dup:"📋 {code} ({country}) juba kogutud!",
   map_unavail:"Kaart pole saadaval",map_loading:"Kaardi laadimine…",
   q_subway_km:"Kui pikk on metroovßµrk … (km)?",q_subway_lines:"Kui palju metroliine on …?",
   diff_desc_casual:"\u{1F7E2} Casual: Lßµßµgastav · Pole ajalimiiti · ∞ Elu",diff_desc_hc:"\u{1F525} Hardcore: Klassikaline · Pole limiiti · 3 Elu",diff_desc_surv:"\u{1F480} Survival: Aja vastu · 8s · 3 Elu",hud_lives:"ELUD",score_mult_max:"Max Kordaja",score_time_bonus:"Ajaboonus",pts_abbr:"pt.",score_correct_lbl:"ßµige",mode_wappen:"Vapid",mode_slf:"Linn-Maa-Jßµgi",mode_euro:"Euromündid"
@@ -2129,7 +2129,7 @@ lv:{
   q_river_real:"Caur kuru valsti tek Ś¡ń« upe?",q_map_guess:"Atrodi valsti kartń“",
   fb_correct:"✓“ Pareizi! +{pts}",fb_wrong:"✗ Nepareizi → {ans}",fb_time:"⏱ Laiks beidzies! → {ans}",
   plates_more:"+{n} vairńk",pct_complete:"{pct}% pabeigts",
-  spotter_dup:"ðŸ“‹ {code} ({country}) jau savńkts!",
+  spotter_dup:"📋 {code} ({country}) jau savńkts!",
   map_unavail:"Karte nav pieejama",map_loading:"Karte ielńdń“…",
   q_subway_km:"Cik garŚ¡ ir metro tń«kls … (km)?",q_subway_lines:"Cik metro lń«niju ir …?",
   diff_desc_casual:"\u{1F7E2} Casual: Relaksń“joŚ¡s · Nav laika ierobeŚ¾ojuma · ∞ Dzń«ves",diff_desc_hc:"\u{1F525} Hardcore: Klasń«kais · Nav ierobeŚ¾ojuma · 3 Dzń«ves",diff_desc_surv:"\u{1F480} Survival: Pret laiku · 8s · 3 Dzń«ves",hud_lives:"DZńªBVES",score_mult_max:"Maks Reizinńtńjs",score_time_bonus:"Laika Bonuss",pts_abbr:"pts.",score_correct_lbl:"pareizi",mode_wappen:"ń¢erboŚ–i",mode_slf:"Pilsń“ta-Valsts-Upe",mode_euro:"Eiro Monń“tas"
@@ -2166,7 +2166,7 @@ lt:{
   q_river_real:"Per kuriń… Ś¡alń¯ teka Ś¡i upń—?",q_map_guess:"Rask Ś¡alń¯ Ś¾emń—lapyje",
   fb_correct:"✓“ Teisingai! +{pts}",fb_wrong:"✗ Neteisingai → {ans}",fb_time:"⏱ Laikas! → {ans}",
   plates_more:"+{n} daugiau",pct_complete:"{pct}% baigta",
-  spotter_dup:"ðŸ“‹ {code} ({country}) jau surinkta!",
+  spotter_dup:"📋 {code} ({country}) jau surinkta!",
   map_unavail:"Ś½emń—lapis neprieinamas",map_loading:"Kraunamas Ś¾emń—lapis…",
   q_subway_km:"Kiek ilgas metro tinklas … (km)?",q_subway_lines:"Kiek metro linijŚ³ yra …?",
   diff_desc_casual:"\u{1F7E2} Casual: Atsipalaidavęs · Be laiko limito · ∞ GyvybiŚ³",diff_desc_hc:"\u{1F525} Hardcore: Klasikinis · Be limito · 3 Gyvybń—s",diff_desc_surv:"\u{1F480} Survival: PrieŚ¡ laikń… · 8s · 3 Gyvybń—s",hud_lives:"GYVYBń–S",score_mult_max:"Maks Daugintojas",score_time_bonus:"Laiko Premija",pts_abbr:"tŚ¡k.",score_correct_lbl:"teisingai",mode_wappen:"Herbai",mode_slf:"Miestas-Ś alis-Upń—",mode_euro:"Euro Monetos"
@@ -2203,7 +2203,7 @@ mt:{
   q_river_real:"Minn liema pajjiż jgń§addi dan ix-xmara?",q_map_guess:"Sib il-pajjiż fuq il-mappa",
   fb_correct:"✓“ Korretti! +{pts}",fb_wrong:"✗ ń¦ażin → {ans}",fb_time:"⏱ ń¦in! → {ans}",
   plates_more:"+{n} aktar",pct_complete:"{pct}% lest",
-  spotter_dup:"ðŸ“‹ {code} ({country}) diń¡ß  miń¡bur!",
+  spotter_dup:"📋 {code} ({country}) diń¡ß  miń¡bur!",
   map_unavail:"Mappa mhux disponibbli",map_loading:"Qed jń¡ń§abbi l-mappa…",
   q_subway_km:"Kemm hi twila n-netwerk tal-metro … (km)?",q_subway_lines:"Kemm gń§andha linji tal-metro …?",
   diff_desc_casual:"\u{1F7E2} Casual: Rilassat · Ebda limitu ta' ń§in · ∞ ń¦ajjiet",diff_desc_hc:"\u{1F525} Hardcore: Klassiku · Ebda limitu · 3 ń¦ajjiet",diff_desc_surv:"\u{1F480} Survival: Kontra l-ń§in · 8s · 3 ń¦ajjiet",hud_lives:"ń¦AJJIET",score_mult_max:"Multiplikatur Massimu",score_time_bonus:"Bonus tal-ń¦in",pts_abbr:"pt.",score_correct_lbl:"korretti",mode_wappen:"Armi",mode_slf:"Belt-Pajń§iż-Xmara",mode_euro:"Muniti Ewro"
@@ -2240,7 +2240,7 @@ ga:{
   q_river_real:"Trß­ cén tß­r a ritheann an abhainn seo?",q_map_guess:"Aimsigh an tß­r ar an léarscáil",
   fb_correct:"✓“ Ceart! +{pts}",fb_wrong:"✗ Mß­cheart → {ans}",fb_time:"⏱ Am! → {ans}",
   plates_more:"+{n} nß­os mó",pct_complete:"{pct}% crß­ochnaithe",
-  spotter_dup:"ðŸ“‹ {code} ({country}) bailithe cheana!",
+  spotter_dup:"📋 {code} ({country}) bailithe cheana!",
   map_unavail:"Léarscáil nach bhfuil ar fáil",map_loading:"Ag lódáil léarscáil…",
   q_subway_km:"Cé chomh fada leis an ngréasán meitreó … (km)?",q_subway_lines:"Cé mhéad lß­ne meitreó atá ag …?",
   diff_desc_casual:"\u{1F7E2} Casual: Socair · Gan teorainn ama · ∞ Saol",diff_desc_hc:"\u{1F525} Hardcore: Clásach · Gan teorainn · 3 Saol",diff_desc_surv:"\u{1F480} Survival: In aghaidh an chloig · 8s · 3 Saol",hud_lives:"SAOLTA",score_mult_max:"Iolraitheoir Uasméid",score_time_bonus:"Bónas Ama",pts_abbr:"p.",score_correct_lbl:"ceart",mode_wappen:"Armas",mode_slf:"Cathair-Tß­r-Abhainn",mode_euro:"Boinn Euro"
@@ -2412,17 +2412,21 @@ const MODES=[
   {id:"hl_median_age",icon:"\u{1F4C5}",title:"H/L Medianalter",    group:"hl_compare",prompt:"H\u00f6heres Medianalter?",     desc:"Welches Land hat ein h\u00f6heres Medianalter?",   comingSoon:true},
   {id:"hl_forest",    icon:"\u{1F333}",title:"H/L Waldf\u00e4che",  group:"hl_compare",prompt:"Mehr Wald?",                   desc:"Welches Land hat mehr Wald?",                      comingSoon:true},
   /* ---- Neighbors ---- */
-  {id:"neighbor", icon:"\u{1F91D}",title:"Grenzg\u00e4nger",     group:"neighbors", prompt:"Grenzt an\u2026?",               desc:"Grenzt dieses Land an jenes?"},
+  {id:"neighbor",      icon:"\u{1F91D}",title:"Grenzg\u00e4nger",     group:"neighbors", prompt:"Grenzt an\u2026?",               desc:"Grenzt dieses Land an jenes?"},
+  {id:"neighbor_fake", icon:"\u{1F47A}",title:"Falscher Nachbar",  group:"neighbors", prompt:"Grenzt NICHT an\u2026?",         desc:"Welches Land grenzt NICHT an das gezeigte?"},
+  {id:"neighbor_count",icon:"\u{1F522}",title:"Nachbar-Z\u00e4hler",group:"neighbors", prompt:"Wie viele Nachbarn?",               desc:"Z\u00e4hle die Nachbarl\u00e4nder des Landes"},
   /* ---- Map ---- */
-  {id:"map_guess",icon:"\u{1F5FA}",title:"Finde das Land",group:"map_mode",prompt:"Klick auf das gesuchte Land",             desc:"Klicke das gesuchte Land auf der Weltkarte",beta:true},
+  {id:"map_guess",  icon:"\u{1F5FA}",title:"Finde das Land",    group:"map_mode",prompt:"Klick auf das gesuchte Land",         desc:"Klicke das gesuchte Land auf der Weltkarte",beta:true},
+  {id:"map_reverse",icon:"\u{1F3AF}",title:"Wer bin ich?",        group:"map_mode",prompt:"Welches Land ist markiert?",          desc:"Erkenne das markierte Land auf der Weltkarte",beta:true},
+  {id:"map_capital",icon:"\u{1F3D9}",title:"Hauptstadt-Radar",   group:"map_mode",prompt:"Tippe auf das Land der Hauptstadt",  desc:"Klicke auf das Land mit der genannten Hauptstadt",beta:true},
   /* ---- New Game Modes (coming soon) ---- */
   {id:"logic_grid",    icon:"\u{1F9E9}",title:"Logik-Gitter",          group:"new_modes",prompt:"L\u00f6se das R\u00e4tsel",                desc:"L\u00f6se geografische Logik-R\u00e4tsel",       beta:true},
   {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten",beta:true},
   {id:"flag_fusion",   icon:"\u{1F3C1}",title:"Flaggen-Fusion",        group:"new_modes",prompt:"Welche zwei L\u00e4nder?",                  desc:"Erkenne L\u00e4nder aus verschmolzenen Flaggen",beta:true},
   {id:"climate_mystery",icon:"\u{1F326}",title:"Klima-Krimi",          group:"new_modes",prompt:"[BETA] Welches Land versteckt sich hinter diesen Klima-Hinweisen?",                             desc:"Land anhand von Klima-Clues erraten",                  beta:true},
-  {id:"alpha_sprint",  icon:"ðŸ“",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben",     comingSoon:true},
+  {id:"alpha_sprint",  icon:"📍",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben",     comingSoon:true},
   {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen",beta:true},
-  {id:"slf",           icon:"ðŸ“",title:"Land & Hauptstadt",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Kenne die Hauptstädte",  beta:true},
+  {id:"slf",           icon:"📍",title:"Land & Hauptstadt",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Kenne die Hauptstädte",  beta:true},
   {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt",beta:true},
   /* ---- Vergleiche / Comparisons (Phase 91+92) ---- */
   {id:"comp_area",      icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",      group:"comparisons",prompt:"Welches Land ist gr\u00f6\u00dfer?",       desc:"Fl\u00e4che zweier L\u00e4nder vergleichen",beta:true},
@@ -3152,8 +3156,39 @@ function genNeighborQ(){
   }else{
     const ans=neighborList[~~(rng()*neighborList.length)];
     const dis=nonNb.slice().sort(()=>rng()-.5).slice(0,3);
-    return{type:"neighbor",prompt:"Welches Land grenzt an\u2026?",subj:country,ans,opts:sh([ans,...dis.slice(0,3)]),lid:country+'|'+ans,cc:ccFromCountry(country)||''};
+    return{type:"neighbor",prompt:"Welches Land grenzt an…?",subj:country,ans,opts:sh([ans,...dis.slice(0,3)]),lid:country+'|'+ans,cc:ccFromCountry(country)||''};
   }
+}
+
+function genNeighborFakeQ(){
+  const nb=NEIGHBORS;
+  const valid=Object.keys(nb).filter(c=>nb[c]&&nb[c].length>=3);
+  if(\!valid.length)return null;
+  const country=valid[~~(rng()*valid.length)];
+  const neighbors=nb[country];
+  const realNbs=sh([...neighbors]).slice(0,3);
+  const allKeys=Object.keys(nb);
+  const fakePool=allKeys.filter(c=>c\!==country&&\!neighbors.includes(c));
+  if(\!fakePool.length)return null;
+  const fake=fakePool[~~(rng()*fakePool.length)];
+  return{type:"neighbor_fake",prompt:"Welches Land grenzt NICHT an …?",
+    subj:country,ans:fake,opts:sh([...realNbs,fake]),meta:"",
+    lid:country+'|fake|'+fake,cc:ccFromCountry(country)||''};
+}
+
+function genNeighborCountQ(){
+  const nb=NEIGHBORS;
+  const valid=Object.keys(nb).filter(c=>nb[c]&&nb[c].length>0);
+  if(valid.length<4)return null;
+  const country=valid[~~(rng()*valid.length)];
+  const realCount=nb[country].length;
+  const wrongs=new Set();
+  let att=0;
+  while(wrongs.size<3&&att<60){att++;const w=Math.max(0,realCount+~~(rng()*7)-3);if(w\!==realCount)wrongs.add(w);}
+  const opts=sh([String(realCount),...[...wrongs].map(String)]);
+  const meta=nb[country].slice(0,5).join(", ")+(nb[country].length>5?"…":"");
+  return{type:"neighbor_count",prompt:"Wie viele Nachbarländer hat dieses Land?",
+    subj:country,ans:String(realCount),opts,meta,lid:country+'|count',cc:ccFromCountry(country)||''};
 }
 
 /* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
@@ -4020,7 +4055,7 @@ let tIv=null,fTo=null,toastTo=null;
             "checkMastery","spotterCollect","saveSession","loadData","initAuth"];
           const ok=trusted.some(fn=>stk.includes(fn));
           if(!ok){
-            console.warn("%cðŸš« GeoQuest: Schummeln erkannt! Feld '"+k+"' ist geschützt.",
+            console.warn("%c🚫 GeoQuest: Schummeln erkannt! Feld '"+k+"' ist geschützt.",
               "color:#ef4444;font-weight:bold;font-size:14px");
             return true; /* silent block */
           }
@@ -4249,6 +4284,29 @@ function genMapGuessQ(){
   return{type:"map_guess",prompt:t("q_map_guess"),subj:co.name,
     ans:co.name,opts:[],meta:"",lid:co.cc,cc:co.cc};
 }
+
+function genMapReverseQ(){
+  if(\!MAP_COUNTRIES.length)return null;
+  const idx=~~(rng()*MAP_COUNTRIES.length);
+  const co=MAP_COUNTRIES[idx];if(\!co)return null;
+  const others=MAP_COUNTRIES.filter(c=>c.cc\!==co.cc);
+  const dis=sh([...others]).slice(0,3).map(c=>displayCountry(c.cc)||c.name);
+  const ansLabel=displayCountry(co.cc)||co.name;
+  return{type:"map_reverse",prompt:"Welches Land ist hervorgehoben?",
+    subj:co.name,ans:ansLabel,opts:sh([ansLabel,...dis]),meta:"",lid:co.cc,cc:co.cc};
+}
+
+function genMapCapitalQ(){
+  if(\!CAPITALS||\!CAPITALS.length)return null;
+  const pool=CAPITALS.filter(c=>c.cc&&MAP_COUNTRIES.some(m=>m.cc===c.cc));
+  if(\!pool.length)return null;
+  const cor=pool[~~(rng()*pool.length)];
+  const mapCo=MAP_COUNTRIES.find(m=>m.cc===cor.cc);
+  if(\!mapCo)return null;
+  return{type:"map_capital",
+    prompt:"Tippe auf das Land, in dem "+esc(cor.capital)+" liegt…",
+    subj:cor.capital,ans:mapCo.name,opts:[],meta:cor.capital,lid:cor.cc,cc:cor.cc};
+}
 /* Phase 129: Airport Trivia generators */
 function genAirportCompareQ(){
   const keys=Object.keys(_AIRPORTS);
@@ -4444,7 +4502,11 @@ const GEN={
   comp_coast:genCompCoastQ,comp_borders:genCompBordersQ,
   comp_life:genCompLifeQ,comp_age:genCompAgeQ,comp_forest:genCompForestQ,
   neighbor:genNeighborQ,
+  neighbor_fake:genNeighborFakeQ,
+  neighbor_count:genNeighborCountQ,
   map_guess:genMapGuessQ,
+  map_reverse:genMapReverseQ,
+  map_capital:genMapCapitalQ,
   logic_grid:()=>null,
   travel_route:()=>null,
   wappen_meister:genWappenQ,
@@ -5044,9 +5106,9 @@ let html='<div style="padding:20px;text-align:center;">';
 html+='<h2>Flaggen-Fusion</h2>';
 html+='<div style="background:#f0f0f0;padding:20px;margin:20px 0;border-radius:8px;">';
 html+='<div style="display:flex;justify-content:center;gap:10px;margin-bottom:10px;">';
-html+='<div style="opacity:0.7;font-size:60px;">ðŸ‡¹ðŸ‡·</div>';
+html+='<div style="opacity:0.7;font-size:60px;">🇹🇷</div>';
 html+='<div style="font-size:40px;color:#ccc;">+</div>';
-html+='<div style="opacity:0.7;font-size:60px;">ðŸ‡¸ðŸ‡ª</div>';
+html+='<div style="opacity:0.7;font-size:60px;">🇸🇪</div>';
 html+='</div>';
 html+='<p style="color:#666;font-size:12px;">(Flaggen sind kombiniert)</p>';
 html+='</div>';
@@ -5480,7 +5542,7 @@ app.innerHTML=`<div class="scr">
           <div style="color:#34d399;font-weight:900;font-size:.9rem">Daily Challenge\!</div>
           <div style="color:#fbbf24;font-size:1rem;font-weight:900">+100 GeoCoins</div>
         </div>`:""}
-        ${S.diff==="hardcore"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">âš¡ ${t("score_mult_max")}: <strong style="color:#f59e0b">${(S.hcMaxMult||1).toFixed(1)}ß—</strong></div>`:S.diff==="survival"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">⏱ ${t("score_time_bonus")}: <strong style="color:#34d399">+${S.survTimeBonusTotal||0} ${t("pts_abbr")}</strong></div>`:`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">ðŸ“‹ ${S.correct}/${ROUNDS} ${t("score_correct_lbl")} ß— 10 ${t("pts_abbr")} = <strong style="color:#60a5fa">${S.sc} ${t("pts_abbr")}</strong></div>`}
+        ${S.diff==="hardcore"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">âš¡ ${t("score_mult_max")}: <strong style="color:#f59e0b">${(S.hcMaxMult||1).toFixed(1)}ß—</strong></div>`:S.diff==="survival"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">⏱ ${t("score_time_bonus")}: <strong style="color:#34d399">+${S.survTimeBonusTotal||0} ${t("pts_abbr")}</strong></div>`:`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">📋 ${S.correct}/${ROUNDS} ${t("score_correct_lbl")} ß— 10 ${t("pts_abbr")} = <strong style="color:#60a5fa">${S.sc} ${t("pts_abbr")}</strong></div>`}
         ${sbOK?`<div style="font-size:.76rem;color:${S.scoreSaved?"#34d399":"var(--text3)"}">${S.scoreSaved?"\u2713 Score gespeichert":"Speichere \u2026"}</div>`:""}
       </div>
       ${isGuest&&S.correct>0&&S.convModal?`<div class="conv-modal-bg" onclick="if(event.target===this){S.convModal=false;render()}">
@@ -5614,7 +5676,7 @@ app.innerHTML=`<div class="scr">
       ${sel\!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="wappen"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="wappen-img-wrap"><img src="${q.img}" alt="Wappen" class="wappen-img" onerror="wappenErr(this)"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
-  }else if(q.type==="neighbor"){
+  }else if(q.type==="neighbor"||q.type==="neighbor_fake"||q.type==="neighbor_count"){
     qBody=`<div class="qprompt" style="font-size:1rem">${q.prompt}</div>
       <div style="text-align:center;margin:10px 0 6px">
         <div class="qmain" style="font-size:2.2rem">${q.subj}</div>
@@ -5630,7 +5692,40 @@ app.innerHTML=`<div class="scr">
     if(pc)plateReveal=`<div style="text-align:center;color:var(--text2);font-size:.8rem;margin-top:4px">${pc.region} \u00b7 ${pc.country}${pc.state?" \u00b7 "+pc.state:""}</div>`;
   }
   /* Phase 34: Map-Guesser – early return, D3 map replaces answer buttons */
-  if(q.type==="map_guess"){
+  if(q.type==="map_reverse"){
+    const mapFb=sel===null?"":ok
+      ?`<div class="fb ok">✓ Richtig\! +${pts}</div>`
+      :`<div class="fb ng">✗ Falsch → ${q.ans}</div>`;
+    const disabled=sel\!==null?"disabled":"";
+    const optHtml=q.opts.map(o=>{
+      const cls=sel\!==null?(o===q.ans?" opt-ok":o===sel?" opt-ng":""):"";
+      return`<button class="opt-btn${cls}" onclick="answer(${JSON.stringify(o)})" ${disabled}>${esc(o)}</button>`;
+    }).join("");
+    app.innerHTML=`<div class="scr map-scr">
+      <div class="hud">
+        <div style="display:flex;gap:8px;align-items:center">
+          <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
+          ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          ${diff==="survival"
+            ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
+            :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
+          <button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">×</button>
+        </div>
+      </div>
+      <div class="q-area" style="padding:0 8px 8px">
+        <div style="text-align:center;margin:6px 0 6px">
+          <div class="qprompt">${q.prompt}</div>
+        </div>
+        ${mapFb}
+        <div id="gq-map-svg" style="width:100%;aspect-ratio:2/1;background:var(--bg2);border-radius:12px;overflow:hidden;margin-bottom:8px"></div>
+        <div class="opts">${optHtml}</div>
+      </div></div>`;
+    requestAnimationFrame(()=>drawWorldMap(q.subj,sel,ok,true));
+    return;
+  }
+  if(q.type==="map_guess"||q.type==="map_capital"){
     const mapFb=sel===null?"":ok
       ?`<div class="fb ok">\u2713 Richtig\! +${pts}</div>`
       :`<div class="fb ng">\u2717 Falsch \u2192 ${q.ans}</div>`;
@@ -5659,7 +5754,7 @@ app.innerHTML=`<div class="scr">
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">ß—${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">ðŸ’€ SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">ß—</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">ß—${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">ß—</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -5765,7 +5860,7 @@ function drawCountryOutline(cc,targetId){
 
 
 /* Phase 34 – D3 World Map component */
-function drawWorldMap(targetName,sel,ok){
+function drawWorldMap(targetName,sel,ok,preHL){
   const container=document.getElementById('gq-map-svg');
   if(\!container||typeof d3==='undefined'||typeof topojson==='undefined'){
     if(container)container.innerHTML='<p style="color:var(--text3);text-align:center;padding:2rem">'+t('map_unavail')+'</p>';
@@ -5813,6 +5908,7 @@ function drawWorldMap(targetName,sel,ok){
         if(n===sel&&\!ok)return'#ef4444';
         return'#d1d5db';
       }
+      if(preHL&&n===targetName)return'#3b82f6';
       return'var(--bg3,#e2e8f0)';
     })
     .attr('stroke','var(--border,#94a3b8)')
@@ -5962,7 +6058,7 @@ function spotterCollect(){
     if(country){
       const _cEnt=PLATES_DATA.filter(p=>p.country===country);
       if(_cEnt.length===1&&_cEnt[0].region==='Nationales Kennzeichen'){
-        S.spotterMsg="â„¹ï¸ "+displayCountry(country)+" "+t("spotter_no_region",{code:_cEnt[0].code});
+        S.spotterMsg="ℹ️ "+displayCountry(country)+" "+t("spotter_no_region",{code:_cEnt[0].code});
         S.spotterOk=false;render();return;
       }
     }
@@ -5972,7 +6068,7 @@ function spotterCollect(){
       const others=[...new Set(elsewhere.map(p=>p.country))].join(", ");
       S.spotterMsg="â“ '"+esc(code)+"' "+t("spotter_not_in")+" "+(country?displayCountry(country):t("spotter_all"))+" – "+t("spotter_but_in")+": "+esc(others);
     }else if(prefixSuggestions.length){
-      S.spotterMsg="ðŸ” Meintest du: "+prefixSuggestions.join(", ")+"?";
+      S.spotterMsg="🔍 Meintest du: "+prefixSuggestions.join(", ")+"?";
     }else{
       S.spotterMsg="âŒ "+t("spotter_unknown")+": "+esc(code);
     }
@@ -6161,7 +6257,7 @@ function renderCollectionScreen(){
           .map(c=>`<option value="${esc(c)}" ${acF===c?"selected":""}>${esc(c)}</option>`)
           .join("");
         const _natSep='<option disabled style="opacity:.4">\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500</option>';
-        const _natOpt='<option value="nat" '+(acF==="nat"?"selected":"")+'>ðŸŒ Andere L\u00e4nder (L\u00e4nderk\u00fcrzel)</option>';
+        const _natOpt='<option value="nat" '+(acF==="nat"?"selected":"")+'>🌍 Andere L\u00e4nder (L\u00e4nderk\u00fcrzel)</option>';
         return _pinOpt+_sep+_rOpts+_natSep+_natOpt;
       })()}
     </select>
@@ -6568,8 +6664,9 @@ function renderLogikGitter(sc){
       return `<div class="lg-sugg-item" data-name="${esc(s)}" onclick="handleGridAnswer(S.gridData.activeCell.r,S.gridData.activeCell.c,this.dataset.name)">${flagOf(s)} ${esc(_sDn)}</div>`;
     }).join("");
     inputHtml=`<div class="lg-inp-wrap">
-      <div style="font-size:.88rem;font-weight:800;color:var(--text);margin-bottom:4px">\u{1F30D} Welches Land passt zu beiden Kriterien?</div>
-      <div style="font-size:.75rem;color:var(--text3);margin-bottom:7px;padding:.3rem .5rem;background:var(--bg2);border-radius:8px">\u{1F4CD} <strong>${esc(gd.rowCrit[r].label)}</strong> &amp; <strong>${esc(gd.colCrit[c].label)}</strong></div>
+      <div style="font-size:.88rem;font-weight:800;color:var(--text);margin-bottom:4px">\u{1F30D} Welches Konzept passt zu beiden Kriterien?</div>
+      <div style="font-size:.75rem;color:var(--text3);margin-bottom:4px;padding:.3rem .5rem;background:var(--bg2);border-radius:8px">\u{1F4CD} <strong>${esc(gd.rowCrit[r].label)}</strong> &amp; <strong>${esc(gd.colCrit[c].label)}</strong></div>
+      <div style="font-size:.72rem;font-weight:700;color:var(--text3);margin-bottom:5px">\u{1F3AF} GESUCHT: LAND</div>
       <input type="text" id="lg-inp" placeholder="Land eingeben\u2026" value="${esc(S.gridInput||'')}"
         oninput="lgUpdate(this.value)"
         onkeydown="if(event.key==='Enter'&&S.gridSugg&&S.gridSugg[0])handleGridAnswer(S.gridData.activeCell.r,S.gridData.activeCell.c,S.gridSugg[0])"
@@ -6748,7 +6845,7 @@ function genWappenQ(){
   while(wrongs.length<3&&others.length>wrongs.length){const w=_r(others);if(\!used.has(w.cc)){used.add(w.cc);wrongs.push(w);}}
   if(wrongs.length<3)return null;
   const opts=[correct,...wrongs].sort(()=>rng()-.5).map(w=>displayCountry(w.cc)||w.c);
-  return{type:"wappen",prompt:"Welchem Land gehört dieses Wappen?",subj:displayCountry(correct.cc)||correct.c,img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"ðŸ›¡ï¸ Wappen von "+correct.c};
+  return{type:"wappen",prompt:"Welchem Land gehört dieses Wappen?",subj:displayCountry(correct.cc)||correct.c,img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"🛡️ Wappen von "+correct.c};
 }
 
 /* P153: Fallback when Wappen SVG fails to load */
@@ -6802,14 +6899,14 @@ function renderLandHauptstadt(sc){
     const rowHtml=(label,val,valid)=>`<div class="slf-result-row"><span class="slf-result-label">${label}</span><span class="slf-result-val">${esc(val)||"–"}</span><span style="font-size:1rem">${valid?"✓…":"âŒ"}</span></div>`;
     return`<div class="scr"><div class="panel">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
-        <div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">ERGEBNIS</div><div style="font-size:1.4rem;font-weight:900">ðŸ“ ${letter}</div></div>
+        <div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">ERGEBNIS</div><div style="font-size:1.4rem;font-weight:900">📍 ${letter}</div></div>
         <div style="text-align:right"><div style="font-size:.6rem;color:var(--text3)">PUNKTE</div><div style="font-size:1.6rem;font-weight:900;color:#10b981">+${(cityValid?10:0)+(countryValid?10:0)+(riverValid?10:0)}</div></div>
       </div>
       ${rowHtml("Stadt",answers.city,cityValid)}
       ${rowHtml("Land",answers.country,countryValid)}
       ${rowHtml("Fluss",answers.river,riverValid)}
       <div style="margin-top:1rem;font-size:.72rem;color:var(--text3);text-align:center">Gesamt: ${sc.toLocaleString()} Punkte</div>
-      <button class="btn-p" style="margin-top:.85rem" onclick="initSLF()">ðŸ“ Neue Runde</button>
+      <button class="btn-p" style="margin-top:.85rem" onclick="initSLF()">📍 Neue Runde</button>
       <button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph='menu';S.tab='home';render()">Beenden</button>
     </div></div>`;
   }
@@ -6850,12 +6947,12 @@ function renderAdModal(){
   return`<div class="modal-overlay" onclick="closeAd()" style="z-index:500"><div class="modal-box" style="max-width:320px;padding:1.25rem">
     <div style="text-align:center;font-size:.6rem;color:var(--text3);letter-spacing:1.2px;margin-bottom:.6rem">ANZEIGE · UNTERSTßœTZT GEOQUEST</div>
     <div style="min-height:100px;background:var(--bg3);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text3);border:1.5px dashed var(--border);margin-bottom:.85rem;padding:1rem">
-      <div style="font-size:1.8rem;margin-bottom:.35rem">ðŸ“¢</div>
+      <div style="font-size:1.8rem;margin-bottom:.35rem">📢</div>
       <div style="font-size:.8rem;font-weight:700">Werbung</div>
       <div style="font-size:.68rem;margin-top:2px">Hier könnte deine Anzeige stehen</div>
     </div>
     <button class="btn-p" onclick="closeAd()">Weiter spielen →’</button>
-    <button class="btn-g" style="margin-bottom:0;font-size:.76rem;color:#f59e0b;border-color:#f59e0b" onclick="S.payModal=true;closeAd()">ðŸ‘‘ Werbung entfernen (Premium)</button>
+    <button class="btn-g" style="margin-bottom:0;font-size:.76rem;color:#f59e0b;border-color:#f59e0b" onclick="S.payModal=true;closeAd()">👑 Werbung entfernen (Premium)</button>
   </div></div>`;
 }
 
@@ -6967,7 +7064,7 @@ function renderHomeTab(){
       ${catSection("neighbors")}
       ${catSection("map_mode")}
     </div>
-    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">â„¹ï¸</span></div>
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>
       <button class="diff-btn ${S.diff==="hardcore"?"active":""}" onclick="S.diff='hardcore';render()">Hardcore</button>
@@ -7107,7 +7204,7 @@ function renderProfilTab(){
     const isReg=S.authMode==="register";
     const isForgot=S.authMode==="forgot";
     const isNewPw=S.authMode==="new_password";
-    const _aIcon=isReg?"ðŸŒ±":"ðŸ”‘";
+    const _aIcon=isReg?"🌱":"🔑";
     const _aTitle=isReg?"Konto erstellen":isForgot?"Passwort vergessen":isNewPw?"Neues Passwort":"Anmelden";
     const _aSub=isReg?"Dein Fortschritt wird gesichert.":isForgot?"Wir senden dir einen Reset-Link.":isNewPw?"Wähle ein neues Passwort.":"Willkommen zurück!";
     block1=`<div class="auth-card">
@@ -7122,11 +7219,11 @@ function renderProfilTab(){
       ${isNewPw?`
         <div class="auth-field"><label>NEUES PASSWORT</label><div style="position:relative"><input id="pw-main" type="password" style="padding-right:2.4rem" placeholder="Mind. 6 Zeichen" value="${S.authPassword}" oninput="S.authPassword=this.value" onkeydown="if(event.key==='Enter')doSetNewPassword();"><button type="button" onclick="togglePw('pw-main',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>
         <div class="auth-field"><label>PASSWORT BESTß„TIGEN</label><div style="position:relative"><input id="pw-confirm" type="password" style="padding-right:2.4rem" placeholder="Passwort wiederholen" value="${S.authConfirm}" oninput="S.authConfirm=this.value" onkeydown="if(event.key==='Enter')doSetNewPassword();"><button type="button" onclick="togglePw('pw-confirm',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>
-        <button class="btn-p" onclick="doSetNewPassword()" ${S.authLoading?"disabled":""}>${S.authLoading?"Bitte warten …":"ðŸ”‘ Passwort setzen"}</button>
+        <button class="btn-p" onclick="doSetNewPassword()" ${S.authLoading?"disabled":""}>${S.authLoading?"Bitte warten …":"🔑 Passwort setzen"}</button>
         <button class="btn-g" style="margin-bottom:0;background:transparent;border:none;color:var(--text3);font-size:.78rem;text-decoration:underline;cursor:pointer" onclick="S.authMode='login';S.authError='';render()">Zurück zum Login</button>
       `:isForgot?`
         <div class="auth-field"><label>E-MAIL</label><input type="email" placeholder="deine@email.de" value="${S.authEmail}" oninput="S.authEmail=this.value" onkeydown="if(event.key==='Enter')doForgotPassword()"></div>
-        <button class="btn-p" onclick="doForgotPassword()" ${S.authLoading?"disabled":""}>${S.authLoading?"Bitte warten …":"ðŸ“§ Reset-Link senden"}</button>
+        <button class="btn-p" onclick="doForgotPassword()" ${S.authLoading?"disabled":""}>${S.authLoading?"Bitte warten …":"📧 Reset-Link senden"}</button>
         <button class="btn-g" style="margin-bottom:0;background:transparent;border:none;color:var(--text3);font-size:.78rem;text-decoration:underline;cursor:pointer" onclick="S.authMode='login';S.authError='';render()">Zurück zum Login</button>
       `:`
         ${isReg?`<div class="auth-field"><label>BENUTZERNAME</label><input type="text" placeholder="Dein Spielername" maxlength="20" value="${S.authUsername}" oninput="S.authUsername=this.value"></div>`:""}
@@ -7134,9 +7231,9 @@ function renderProfilTab(){
         <div class="auth-field"><label>PASSWORT</label><div style="position:relative"><input id="pw-main" type="password" style="padding-right:2.4rem" placeholder="${isReg?"Mind. 6 Zeichen":"••••••"}" value="${S.authPassword}" oninput="S.authPassword=this.value" onkeydown="if(event.key==='Enter'){${isReg?"doRegister":"doLogin"}();}"><button type="button" onclick="togglePw('pw-main',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>
         ${isReg?`<div class="auth-field"><label>PASSWORT BESTß„TIGEN</label><div style="position:relative"><input id="pw-confirm" type="password" style="padding-right:2.4rem" placeholder="Passwort wiederholen" value="${S.authConfirm}" oninput="S.authConfirm=this.value" onkeydown="if(event.key==='Enter')doRegister();"><button type="button" onclick="togglePw('pw-confirm',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>`:""}
         <button class="btn-p" onclick="${isReg?"doRegister":"doLogin"}()" ${S.authLoading?"disabled":""}>
-          ${S.authLoading?"Bitte warten …":isReg?"ðŸŒ± Konto erstellen &amp; Fortschritt sichern":"ðŸ”‘ Anmelden"}
+          ${S.authLoading?"Bitte warten …":isReg?"🌱 Konto erstellen &amp; Fortschritt sichern":"🔑 Anmelden"}
         </button>
-        ${isAnon&&isReg&&totalStamps>0?`<div style="background:rgba(16,185,129,.08);border:1px solid #10b981;border-radius:8px;padding:.5rem .75rem;font-size:.74rem;color:#10b981;margin-top:.25rem">ðŸ’¾ ${totalStamps} Stempel &amp; deine Punkte werden übernommen.</div>`:""}
+        ${isAnon&&isReg&&totalStamps>0?`<div style="background:rgba(16,185,129,.08);border:1px solid #10b981;border-radius:8px;padding:.5rem .75rem;font-size:.74rem;color:#10b981;margin-top:.25rem">💾 ${totalStamps} Stempel &amp; deine Punkte werden übernommen.</div>`:""}
         ${\!isReg?`<button class="btn-g" style="margin-top:.25rem;margin-bottom:0;background:transparent;border:none;color:var(--text3);font-size:.78rem;text-decoration:underline;cursor:pointer" onclick="S.authMode='forgot';S.authError='';render()">Passwort vergessen?</button>`:""}
       `}
     </div>`;
@@ -7145,8 +7242,8 @@ function renderProfilTab(){
     const _lg=getLeague(sbProfile?.current_league||"Bronze");
     block1=`<div class="auth-card">
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem">
-        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#10b981,#0891b2);display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:#fff;flex-shrink:0">${name?name[0].toUpperCase():"ðŸ‘¤"}</div>
-        <div><div style="font-size:1rem;font-weight:900;color:var(--text);display:flex;align-items:center;gap:6px">${name||"Spieler"}<button onclick="promptNameChange()" title="Namen ändern" style="background:none;border:none;cursor:pointer;font-size:.8rem;color:var(--text3);padding:0;line-height:1;vertical-align:middle;opacity:.65;transition:opacity .15s" onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='.65'">✓ï¸</button></div><div style="font-size:.72rem;color:var(--text3)">${sbUser?.email||"Gast-Konto"}</div>${sbProfile?.current_title&&sbProfile.current_title\!=="Erkunder"?`<div style="display:inline-block;margin-top:3px;background:rgba(167,139,250,.15);border:1px solid #a78bfa;border-radius:20px;padding:1px 8px;font-size:.68rem;color:#a78bfa;font-weight:700">${sbProfile.current_title}</div>`:""}</div>
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#10b981,#0891b2);display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:#fff;flex-shrink:0">${name?name[0].toUpperCase():"👤"}</div>
+        <div><div style="font-size:1rem;font-weight:900;color:var(--text);display:flex;align-items:center;gap:6px">${name||"Spieler"}<button onclick="promptNameChange()" title="Namen ändern" style="background:none;border:none;cursor:pointer;font-size:.8rem;color:var(--text3);padding:0;line-height:1;vertical-align:middle;opacity:.65;transition:opacity .15s" onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='.65'">✓</button></div><div style="font-size:.72rem;color:var(--text3)">${sbUser?.email||"Gast-Konto"}</div>${sbProfile?.current_title&&sbProfile.current_title\!=="Erkunder"?`<div style="display:inline-block;margin-top:3px;background:rgba(167,139,250,.15);border:1px solid #a78bfa;border-radius:20px;padding:1px 8px;font-size:.68rem;color:#a78bfa;font-weight:700">${sbProfile.current_title}</div>`:""}</div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;margin-bottom:.85rem">
         <div style="background:var(--bg3);border-radius:10px;padding:.6rem"><div style="color:#34d399;font-size:1.2rem;font-weight:700">${(sbProfile?.total_score||0).toLocaleString()}</div><div style="color:var(--text3);font-size:.65rem">Punkte</div></div>
@@ -7158,14 +7255,14 @@ function renderProfilTab(){
         <div><div style="font-size:.72rem;color:var(--text3);font-weight:700;letter-spacing:.5px">AKTUELLE LIGA</div><div style="font-weight:900;color:${_lg.color};font-size:.92rem">${_lg.id}-Liga</div></div>
         <div style="margin-left:auto;font-size:.62rem;color:var(--text3);max-width:90px;text-align:right">${_lg.next}</div>
       </div>
-      ${sbProfile?.is_premium?`<div style="background:rgba(16,185,129,.1);border:1px solid #10b981;border-radius:8px;padding:.45rem .7rem;font-size:.74rem;color:#34d399;margin-top:.65rem">ðŸ‘‘ Premium aktiv</div>`:""}
+      ${sbProfile?.is_premium?`<div style="background:rgba(16,185,129,.1);border:1px solid #10b981;border-radius:8px;padding:.45rem .7rem;font-size:.74rem;color:#34d399;margin-top:.65rem">👑 Premium aktiv</div>`:""}
     </div>`;
   }
 
   /* â”€â”€ Block 2: Economy & Inventory â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   const block2=`<div class="panel" style="padding:.85rem">
     <div style="margin-bottom:.75rem">
-      <div style="color:var(--text);font-weight:700;font-size:.85rem">ðŸ’° GeoCoins</div>
+      <div style="color:var(--text);font-weight:700;font-size:.85rem">💰 GeoCoins</div>
       <div style="color:#fbbf24;font-size:1.4rem;font-weight:900">${(sbProfile?.geo_coins||0).toLocaleString()}</div>
     </div>
     <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.55rem">JOKER</div>
@@ -7174,13 +7271,13 @@ function renderProfilTab(){
         <div style="font-size:1.4rem">✓‚</div>
         <div style="font-weight:900;font-size:.82rem;color:var(--text)">50/50</div>
         <div style="color:#34d399;font-size:.75rem;font-weight:700">${pu.five0||0} übrig</div>
-        <button class="joker-buy-btn" onclick="buyJoker('five0')">+3 für 50 ðŸ’°</button>
+        <button class="joker-buy-btn" onclick="buyJoker('five0')">+3 für 50 💰</button>
       </div>
       <div class="joker-card">
         <div style="font-size:1.4rem">\u{1F9CA}</div>
         <div style="font-weight:900;font-size:.82rem;color:var(--text)">Freeze</div>
         <div style="color:#60a5fa;font-size:.75rem;font-weight:700">${pu.freeze||0} übrig</div>
-        <button class="joker-buy-btn" onclick="buyJoker('freeze')">+3 für 75 ðŸ’°</button>
+        <button class="joker-buy-btn" onclick="buyJoker('freeze')">+3 für 75 💰</button>
       </div>
     </div>
   </div>`;
@@ -7206,7 +7303,7 @@ function renderProfilTab(){
   const block3=`<div style="margin-bottom:.65rem">
     <details style="background:var(--bg2);border-radius:14px;border:1px solid var(--border);overflow:hidden;margin-bottom:.5rem">
       <summary style="padding:.75rem 1rem;font-weight:900;font-size:.88rem;cursor:pointer;user-select:none"><div style="display:flex;align-items:center;justify-content:space-between">
-        <span>ðŸ“” Reisepass &amp; Regionen</span>
+        <span>📔 Reisepass &amp; Regionen</span>
         <span style="color:var(--text3);font-size:.75rem">${totalStamps} Stempel · ${rank} →¾</span></div>
       </summary>
       <div style="padding:0 .85rem .85rem">
@@ -7218,7 +7315,7 @@ function renderProfilTab(){
     </details>
     <details style="background:var(--bg2);border-radius:14px;border:1px solid var(--border);overflow:hidden;margin-bottom:.5rem">
       <summary style="padding:.75rem 1rem;font-weight:900;font-size:.88rem;cursor:pointer;user-select:none"><div style="display:flex;align-items:center;justify-content:space-between">
-        <span>ðŸ– Erfolge &amp; Achievements</span>
+        <span>🏖 Erfolge &amp; Achievements</span>
         <span style="color:var(--text3);font-size:.75rem">→¾</span></div>
       </summary>
       <div style="padding:0 .85rem .85rem">
@@ -7227,7 +7324,7 @@ function renderProfilTab(){
     </details>
     <details style="background:var(--bg2);border-radius:14px;border:1px solid var(--border);overflow:hidden">
       <summary style="padding:.75rem 1rem;font-weight:900;font-size:.88rem;cursor:pointer;user-select:none"><div style="display:flex;align-items:center;justify-content:space-between">
-        <span>ðŸ“Š Detaillierte Statistiken</span>
+        <span>📊 Detaillierte Statistiken</span>
         <span style="color:var(--text3);font-size:.75rem">→¾</span></div>
       </summary>
       <div style="padding:0 .85rem .85rem">
@@ -7248,11 +7345,11 @@ function renderProfilTab(){
   const block4=`<div class="panel" style="padding:.85rem;margin-top:.15rem">
     <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.75rem">EINSTELLUNGEN</div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.65rem">
-      <div style="color:var(--text);font-size:.88rem;font-weight:700">${S.darkMode?"ðŸŒ™ Dunkles Design":"â˜€ï¸ Helles Design"}</div>
+      <div style="color:var(--text);font-size:.88rem;font-weight:700">${S.darkMode?"🌙 Dunkles Design":"☀️ Helles Design"}</div>
       <button onclick="S.darkMode=\!S.darkMode;applyTheme();render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">Wechseln</button>
     </div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
-      <div style="color:var(--text);font-size:.88rem;font-weight:700">ðŸŒ ${t("language_select")}</div>
+      <div style="color:var(--text);font-size:.88rem;font-weight:700">🌐 ${t("language_select")}</div>
       ${langSelect}
     </div>
     <hr style="border:none;border-top:1px solid var(--border);margin:.65rem 0 .75rem">
@@ -7264,8 +7361,8 @@ function renderProfilTab(){
     ${sbUser?.email?`
     <hr style="border:none;border-top:1px solid rgba(239,68,68,.25);margin:.1rem 0 .75rem">
     <div style="color:var(--text3);font-size:.62rem;font-weight:700;letter-spacing:1px;margin-bottom:.6rem">GEFAHRENZONE</div>
-    <button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">ðŸšª Abmelden</button>
-    <button class="btn-g" style="margin-bottom:0;font-size:.75rem;background:#dc3545;color:#fff;border-color:#dc3545" onclick="doDeleteAccount()">ðŸ—‘ï¸ Konto löschen (DSGVO)</button>
+    <button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">🚪 Abmelden</button>
+    <button class="btn-g" style="margin-bottom:0;font-size:.75rem;background:#dc3545;color:#fff;border-color:#dc3545" onclick="doDeleteAccount()">🗑️ Konto löschen (DSGVO)</button>
     `:""}
   </div>`;
 
