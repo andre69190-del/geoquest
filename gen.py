@@ -4343,8 +4343,8 @@ function genFlagColorQ(){
   if(uniqueReal.length<3)return null;
   const opts=sh([correct,...uniqueReal]);
   return{type:"beta_flagcolor",
-    prompt:"[BETA] \U0001F3F3\uFE0F Welche Farbe kommt auf der Flagge von "+displayCountry(country)+" NICHT vor?",
-    subj:displayCountry(country),ans:correct,opts,meta:flagCols.join(", "),
+    prompt:"[BETA] 🎨 Welche Farbe kommt auf der Flagge von "+displayCountry(ccFromCountry(country))+" NICHT vor?",
+    subj:displayCountry(ccFromCountry(country)),ans:correct,opts,meta:flagCols.join(", "),
     lid:country,cc:ccFromCountry(country),cat:"geo"};
 }
 function genFlightDistanceCompareQ(){
@@ -6568,7 +6568,8 @@ function renderLogikGitter(sc){
       return `<div class="lg-sugg-item" data-name="${esc(s)}" onclick="handleGridAnswer(S.gridData.activeCell.r,S.gridData.activeCell.c,this.dataset.name)">${flagOf(s)} ${esc(_sDn)}</div>`;
     }).join("");
     inputHtml=`<div class="lg-inp-wrap">
-      <div style="font-size:.75rem;color:var(--text3);margin-bottom:5px"><strong>${esc(gd.rowCrit[r].label)}</strong> + <strong>${esc(gd.colCrit[c].label)}</strong></div>
+      <div style="font-size:.88rem;font-weight:800;color:var(--text);margin-bottom:4px">\u{1F30D} Welches Land passt zu beiden Kriterien?</div>
+      <div style="font-size:.75rem;color:var(--text3);margin-bottom:7px;padding:.3rem .5rem;background:var(--bg2);border-radius:8px">\u{1F4CD} <strong>${esc(gd.rowCrit[r].label)}</strong> &amp; <strong>${esc(gd.colCrit[c].label)}</strong></div>
       <input type="text" id="lg-inp" placeholder="Land eingeben\u2026" value="${esc(S.gridInput||'')}"
         oninput="lgUpdate(this.value)"
         onkeydown="if(event.key==='Enter'&&S.gridSugg&&S.gridSugg[0])handleGridAnswer(S.gridData.activeCell.r,S.gridData.activeCell.c,S.gridSugg[0])"
