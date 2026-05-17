@@ -2461,8 +2461,8 @@ const MODE_CATS={
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_flight","comp_mountain","comp_nsextent","comp_olympics"],cost:0},
   airports_beta:{label:"Airports & BETA",icon:"\u2708\uFE0F",modes:["iata","beta_timezone","beta_climate","beta_flagcolor","beta_landlocked"],cost:0},
-  neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor"],cost:0},
-  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess"],cost:0},
+  neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
+  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
