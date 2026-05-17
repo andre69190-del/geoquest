@@ -1306,7 +1306,7 @@ de:{
   badge_beta:"Beta",beta_warning:"Spielbar, aber es k\u00f6nnen noch Fehler auftreten.",
   rotate_device:"Bitte drehe dein Ger\u00e4t ins Querformat \u{1F4F1}\u27A1\u{1F5FA}",
   diff_desc_casual:"\u{1F7E2} Casual: Entspannt \u00b7 Kein Zeitlimit \u00b7 \u221e Leben",diff_desc_hc:"\u{1F525} Hardcore: Der Klassiker \u00b7 Kein Zeitlimit \u00b7 3 Leben",diff_desc_surv:"\u{1F480} Survival: Gegen die Uhr \u00b7 8 Sekunden \u00b7 3 Leben",
-  hud_lives:"LEBEN",score_mult_max:"Max-Multiplikator",score_time_bonus:"Zeit-Bonus",pts_abbr:"Pkt.",score_correct_lbl:"richtig",mode_wappen:"Wappen-Meister",mode_slf:"Land & Hauptstadt",mode_euro:"Euro-M\u00fcnzen"
+  hud_lives:"LEBEN",score_mult_max:"Max-Multiplikator",score_time_bonus:"Zeit-Bonus",pts_abbr:"Pkt.",score_correct_lbl:"richtig",mode_wappen:"Wappen-Meister",mode_slf:"Stadt, Land, Fluss",mode_euro:"Euro-M\u00fcnzen"
 },
 en:{
   play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
@@ -2426,7 +2426,7 @@ const MODES=[
   {id:"climate_mystery",icon:"\u{1F326}",title:"Klima-Krimi",          group:"new_modes",prompt:"[BETA] Welches Land versteckt sich hinter diesen Klima-Hinweisen?",                             desc:"Land anhand von Klima-Clues erraten",                  beta:true},
   {id:"alpha_sprint",  icon:"📍",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben",     comingSoon:true},
   {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen",beta:true},
-  {id:"slf",           icon:"📍",title:"Land & Hauptstadt",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Kenne die Hauptstädte",  beta:true},
+  {id:"slf",           icon:"📍",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Kenne die Hauptstädte",  beta:true},
   {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt",beta:true},
   /* ---- Vergleiche / Comparisons (Phase 91+92) ---- */
   {id:"comp_area",      icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",      group:"comparisons",prompt:"Welches Land ist gr\u00f6\u00dfer?",       desc:"Fl\u00e4che zweier L\u00e4nder vergleichen",beta:true},
@@ -6645,7 +6645,7 @@ function renderLogikGitter(sc){
   if(!gd)return '<div class="scr"></div>';
   const hearts='\u2764\ufe0f'.repeat(gd.lives)+'\uD83D\uDDA4'.repeat(3-gd.lives);
   /* P136: instruction above grid */
-  const _lgInstr='<p style="font-size:.8rem;color:var(--text2);text-align:center;margin-bottom:.6rem;line-height:1.4">Tippe auf ein <b>+</b>-Feld und w\u00e4hle ein Land, das zur <b>Zeile</b> und <b>Spalte</b> passt!</p>';
+  const _lgInstr='<p style="font-size:.8rem;color:var(--text2);text-align:center;margin-bottom:.6rem;line-height:1.4">Tippe auf ein <b>+</b>-Feld und w\u00e4hle den passenden Begriff, der zur <b>Zeile</b> und <b>Spalte</b> passt!</p>';
   let gridHtml=_lgInstr+'<div class="lg-grid" style="display:grid;grid-template-columns:max-content repeat(3,1fr);gap:8px;margin-top:15px;align-items:stretch">';
   gridHtml+='<div class="lg-corner"><span style="font-size:.6rem;color:var(--text3)">\u2193 Zeile / Spalte \u2192</span></div>';
   for(let c=0;c<3;c++)gridHtml+=`<div class="lg-header">${gd.colCrit[c].label}</div>`;
@@ -6933,8 +6933,8 @@ function renderLandHauptstadt(sc){
     <div class="slf-field"><label class="slf-label">\u{1F3D9} STADT</label><input id="slf-city" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Stadt mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.city)}" oninput="S.slfData.answers.city=this.value" onkeydown="if(event.key==='Enter')document.getElementById('slf-country')?.focus()"></div>
     <div class="slf-field"><label class="slf-label">\u{1F30D} LAND</label><input id="slf-country" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Land mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.country)}" oninput="S.slfData.answers.country=this.value" onkeydown="if(event.key==='Enter')document.getElementById('slf-river')?.focus()"></div>
     <div class="slf-field"><label class="slf-label">\u{1F4A7} FLUSS</label><input id="slf-river" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Fluss mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.river)}" oninput="S.slfData.answers.river=this.value" onkeydown="if(event.key==='Enter')handleSLFSubmit()"></div>
-    <button class="btn-p" style="margin-top:.85rem" onclick="handleSLFSubmit()">✓” Auswerten</button>
-    <button class="btn-g" style="margin-bottom:0;font-size:.78rem" onclick="clr();S.ph='menu';S.tab='home';render()">Abbrechen</button>
+    <button class="btn-p" style="margin-top:.85rem" onclick="handleSLFSubmit()">✓ Auswerten</button>
+    <button class="btn-g" style="margin-bottom:0;font-size:.78rem" onclick="clr();S.ph='menu';S.tab='home';render()">✖ Schließen</button>
   </div></div>`;
 }
 
