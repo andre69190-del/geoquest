@@ -1697,7 +1697,7 @@ hu:{
   btn_again:"ßšjra játszani",btn_menu:"FŚ‘menü",btn_adapt:"Módosß­t",
   spotter_title:"\u{1F697} Utazó Spotter",
   spotter_hint:"Rendszámot láttál? Jegyezd fel azonnal!",
-  spotter_all:"ß–sszes ország",spotter_unknown:"Ismeretlen rendszám",
+  spotter_all:"Összes ország",spotter_unknown:"Ismeretlen rendszám",
   spotter_not_in:"nem szerepel",spotter_but_in:"de szerepel",
   album_title:"\u{1F4D4} Rendszám Album",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Térkép",
   album_empty_country:"Még semmi {country}-ból – használd a Spotter-t!",
@@ -2610,14 +2610,14 @@ const COMP_DATA={
 "Zimbabwe":{lat:-15,gdp:1600,elev:2592,coast:0,life:62,age:20,forest:39,bord:4,dens:35},
 };
 const _DEFAULT_NEIGHBORS={
-  "Deutschland":["Frankreich","Belgien","Niederlande","Luxemburg","Schweiz","ß–sterreich","Tschechien","Polen","Dänemark"],
+  "Deutschland":["Frankreich","Belgien","Niederlande","Luxemburg","Schweiz","Österreich","Tschechien","Polen","Dänemark"],
   "Frankreich":["Deutschland","Belgien","Luxemburg","Schweiz","Italien","Spanien","Andorra","Monaco"],
   "Polen":["Deutschland","Tschechien","Slowakei","Ukraine","Belarus","Litauen","Russland"],
-  "ß–sterreich":["Deutschland","Schweiz","Liechtenstein","Italien","Slowenien","Ungarn","Slowakei","Tschechien"],
-  "Schweiz":["Deutschland","Frankreich","Italien","ß–sterreich","Liechtenstein"],
+  "Österreich":["Deutschland","Schweiz","Liechtenstein","Italien","Slowenien","Ungarn","Slowakei","Tschechien"],
+  "Schweiz":["Deutschland","Frankreich","Italien","Österreich","Liechtenstein"],
   "Spanien":["Frankreich","Andorra","Portugal"],
   "Portugal":["Spanien"],
-  "Italien":["Frankreich","Schweiz","ß–sterreich","Slowenien","San Marino"],
+  "Italien":["Frankreich","Schweiz","Österreich","Slowenien","San Marino"],
   "Russland":["Norwegen","Finnland","Estland","Lettland","Belarus","Ukraine","Georgien","Kasachstan","China","Mongolei","Nordkorea"],
   "China":["Russland","Mongolei","Kasachstan","Kirgisistan","Tadschikistan","Afghanistan","Pakistan","Indien","Nepal","Bhutan","Myanmar","Laos","Vietnam","Nordkorea"],
   "Indien":["Pakistan","China","Nepal","Bhutan","Bangladesh","Myanmar"],
@@ -2642,7 +2642,7 @@ const _DEFAULT_NEIGHBORS={
   "Demokratische Republik Kongo":["Republik Kongo","Angola","Sambia","Tansania","Ruanda","Burundi","Uganda","Zentralafrikanische Republik","Südsudan"],
   "Südafrika":["Namibia","Botswana","Simbabwe","Mosambik","Eswatini","Lesotho"],
   "Kenia":["ß„thiopien","Somalia","Tansania","Uganda","Südsudan"],
-  "Ungarn":["ß–sterreich","Slowakei","Ukraine","Rumänien","Serbien","Kroatien","Slowenien"],
+  "Ungarn":["Österreich","Slowakei","Ukraine","Rumänien","Serbien","Kroatien","Slowenien"],
   "Rumänien":["Ungarn","Ukraine","Moldawien","Bulgarien","Serbien"],
   "Griechenland":["Albanien","Nordmazedonien","Bulgarien","Türkei"],
   "Schweden":["Norwegen","Finnland","Dänemark"],
@@ -2661,12 +2661,12 @@ const _DEFAULT_NEIGHBORS={
   "Marokko":["Algerien","Mauretanien","Spanien"],
   "Algerien":["Marokko","Tunesien","Libyen","Niger","Mali","Mauretanien"],
   "Tunesien":["Algerien","Libyen"],
-  "Tschechien":["Deutschland","Polen","Slowakei","ß–sterreich"],
-  "Slowakei":["Tschechien","Polen","Ukraine","Ungarn","ß–sterreich"],
+  "Tschechien":["Deutschland","Polen","Slowakei","Österreich"],
+  "Slowakei":["Tschechien","Polen","Ukraine","Ungarn","Österreich"],
   "Bulgarien":["Rumänien","Serbien","Nordmazedonien","Griechenland","Türkei"],
   "Serbien":["Ungarn","Rumänien","Bulgarien","Nordmazedonien","Kosovo","Montenegro","Bosnien","Kroatien"],
   "Kroatien":["Slowenien","Ungarn","Serbien","Bosnien","Montenegro"],
-  "Slowenien":["Italien","ß–sterreich","Ungarn","Kroatien"],
+  "Slowenien":["Italien","Österreich","Ungarn","Kroatien"],
 };
 /* Phase 86 – Grenzkarte (nur Laender aus COUNTRIES) */
 const ROUTE_BORDERS={
@@ -3168,12 +3168,26 @@ function genNeighborFakeQ(){
   const neighbors=nb[country];
   const realNbs=sh([...neighbors]).slice(0,3);
   const allKeys=Object.keys(nb);
-  const fakePool=allKeys.filter(c=>c\!==country&&\!neighbors.includes(c));
+  const basePool=allKeys.filter(c=>c\!==country&&\!neighbors.includes(c));
+  /* Build name→cc lookup for both English and current-language names */
+  const _n2cc={};
+  COUNTRIES.forEach(c=>{_n2cc[c.c]=c.cc;const dn=displayCountry(c.cc);if(dn)_n2cc[dn]=c.cc;});
+  const _ccT=_n2cc[country];
+  const _ctT=_ccT?(COUNTRIES.find(c=>c.cc===_ccT)||{}).ct:null;
+  /* Filter to same continent; fall back to global pool if needed */
+  let fakePool=basePool;
+  if(_ctT){
+    const sameC=basePool.filter(c=>{
+      const _cc2=_n2cc[c];
+      return _cc2&&(COUNTRIES.find(x=>x.cc===_cc2)||{}).ct===_ctT;
+    });
+    if(sameC.length>=1)fakePool=sameC;
+  }
   if(\!fakePool.length)return null;
   const fake=fakePool[~~(rng()*fakePool.length)];
   return{type:"neighbor_fake",prompt:"Welches Land grenzt NICHT an …?",
     subj:country,ans:fake,opts:sh([...realNbs,fake]),meta:"",
-    lid:country+'|fake|'+fake,cc:ccFromCountry(country)||''};
+    lid:country+'|fake|'+fake,cc:_ccT||''};
 }
 
 function genNeighborCountQ(){
@@ -5265,7 +5279,7 @@ function _smartDefaultCountry(){
   if(saved&&saved!=="all")return saved;
   const lang=(navigator.language||"de-DE").toLowerCase();
   const langMap={
-    "de-de":"Deutschland","de-at":"ß–sterreich","de-ch":"Schweiz","de-li":"Liechtenstein",
+    "de-de":"Deutschland","de-at":"Österreich","de-ch":"Schweiz","de-li":"Liechtenstein",
     "fr-fr":"Frankreich","fr-be":"Belgien","fr-ch":"Schweiz","fr-lu":"Luxemburg",
     "nl-nl":"Niederlande","nl-be":"Belgien",
     "pl-pl":"Polen","it-it":"Italien","es-es":"Spanien","pt-pt":"Portugal",
@@ -5542,7 +5556,7 @@ app.innerHTML=`<div class="scr">
           <div style="color:#34d399;font-weight:900;font-size:.9rem">Daily Challenge\!</div>
           <div style="color:#fbbf24;font-size:1rem;font-weight:900">+100 GeoCoins</div>
         </div>`:""}
-        ${S.diff==="hardcore"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">âš¡ ${t("score_mult_max")}: <strong style="color:#f59e0b">${(S.hcMaxMult||1).toFixed(1)}ß—</strong></div>`:S.diff==="survival"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">⏱ ${t("score_time_bonus")}: <strong style="color:#34d399">+${S.survTimeBonusTotal||0} ${t("pts_abbr")}</strong></div>`:`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">📋 ${S.correct}/${ROUNDS} ${t("score_correct_lbl")} ß— 10 ${t("pts_abbr")} = <strong style="color:#60a5fa">${S.sc} ${t("pts_abbr")}</strong></div>`}
+        ${S.diff==="hardcore"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">âš¡ ${t("score_mult_max")}: <strong style="color:#f59e0b">${(S.hcMaxMult||1).toFixed(1)}×</strong></div>`:S.diff==="survival"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">⏱ ${t("score_time_bonus")}: <strong style="color:#34d399">+${S.survTimeBonusTotal||0} ${t("pts_abbr")}</strong></div>`:`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">📋 ${S.correct}/${ROUNDS} ${t("score_correct_lbl")} × 10 ${t("pts_abbr")} = <strong style="color:#60a5fa">${S.sc} ${t("pts_abbr")}</strong></div>`}
         ${sbOK?`<div style="font-size:.76rem;color:${S.scoreSaved?"#34d399":"var(--text3)"}">${S.scoreSaved?"\u2713 Score gespeichert":"Speichere \u2026"}</div>`:""}
       </div>
       ${isGuest&&S.correct>0&&S.convModal?`<div class="conv-modal-bg" onclick="if(event.target===this){S.convModal=false;render()}">
@@ -5754,7 +5768,7 @@ app.innerHTML=`<div class="scr">
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">ß—${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">ß—</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">×</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -5968,7 +5982,7 @@ function renderBottomNav(){
 
 /* Country name →’ English for world-110m matching */
 const PLATE_COUNTRY_EN={
-  "Deutschland":"Germany","ß–sterreich":"Austria","Frankreich":"France",
+  "Deutschland":"Germany","Österreich":"Austria","Frankreich":"France",
   "Italien":"Italy","Spanien":"Spain","Polen":"Poland","Tschechien":"Czechia",
   "Ungarn":"Hungary","Schweiz":"Switzerland","Belgien":"Belgium",
   "Niederlande":"Netherlands","Dänemark":"Denmark","Schweden":"Sweden",
@@ -6035,7 +6049,7 @@ function spotterCollect(){
   if(\!code){S.spotterMsg="Bitte Kennzeichen eingeben\!";S.spotterOk=null;render();return;}
   const country=S.spotterCountry&&S.spotterCountry\!=="all"?S.spotterCountry:null;
   /* Phase 104: Fuzzy-Lookup – normalisiere zuerst (0→’O, 1→’I) */
-  const _norm=s=>s.replace(/0/g,'O').replace(/1/g,'I').replace(/ßœ/g,'UE').replace(/ß–/g,'OE').replace(/ß„/g,'AE');
+  const _norm=s=>s.replace(/0/g,'O').replace(/1/g,'I').replace(/ßœ/g,'UE').replace(/Ö/g,'OE').replace(/ß„/g,'AE');
   const codeNorm=_norm(code);
   /* Find matching plates: exact →’ normalisiert →’ prefix */
   const _match=(c,p)=>p.code===c&&(country===null||p.country===country);
@@ -6924,7 +6938,7 @@ function renderLandHauptstadt(sc){
   </div></div>`;
 }
 
-/* â”€â”€ ACCOUNT Lß–SCHEN (DSGVO) â”€â”€ (Phase 106) */
+/* â”€â”€ ACCOUNT LÖSCHEN (DSGVO) â”€â”€ (Phase 106) */
 async function doDeleteAccount(){
   if(\!sbUser)return;
   const conf1=confirm("Konto wirklich löschen? Alle Daten gehen verloren.");
@@ -7674,7 +7688,7 @@ document.addEventListener("visibilitychange",()=>{
 
 /* â”€â”€ Phase 46: Smart Location Detection (IP-based, silent) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const _GQ_IP_DE_MAP={
-  "Germany":"Deutschland","Austria":"ß–sterreich","Switzerland":"Schweiz",
+  "Germany":"Deutschland","Austria":"Österreich","Switzerland":"Schweiz",
   "Liechtenstein":"Liechtenstein","France":"Frankreich","Belgium":"Belgien",
   "Netherlands":"Niederlande","Luxembourg":"Luxemburg","Italy":"Italien",
   "Spain":"Spanien","Portugal":"Portugal","Poland":"Polen",
@@ -8325,7 +8339,7 @@ input[type=text]::placeholder{color:var(--text3)}
   /* Spiel: Frage-Karte + Antworten zentriert, max 600px */
   .qcard{max-width:600px;margin-left:auto;margin-right:auto}
   .answers{max-width:600px;margin-left:auto;margin-right:auto}
-  /* 4 Antworten →’ 2ß—2 Grid auf PC */
+  /* 4 Antworten →’ 2×2 Grid auf PC */
   .answers:not(.two-opts):not(.flag-grid){display:grid;grid-template-columns:1fr 1fr;gap:9px}
   /* 2 Antworten →’ nebeneinander */
   .answers.two-opts{display:flex;flex-direction:row;gap:9px}
