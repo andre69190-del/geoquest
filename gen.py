@@ -5667,7 +5667,7 @@ app.innerHTML=`<div class="scr">
     return;
   }
   if(mode==="slf"&&S.ph==="playing"){
-    app.innerHTML=renderStadtLandFluss(sc);
+    app.innerHTML=renderLandHauptstadt(sc);
     requestAnimationFrame(()=>{document.getElementById("slf-city")?.focus();});
     return;
   }
