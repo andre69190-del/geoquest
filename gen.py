@@ -6709,9 +6709,10 @@ function handleGridAnswer(r,c,name){
 }
 function initLogikGitter(){
   function _shuf(a){const b=a.slice();for(let i=b.length-1;i>0;i--){const j=~~(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
-  /* P161: weighted type selection */
+  /* P161/P164: type selection -- honour S.gridTypeMode when not "random" */
+  const _gtm=(typeof S!=="undefined"&&S.gridTypeMode&&S.gridTypeMode!=="random")?S.gridTypeMode:null;
   const _types=["land","land","land","stadt","wahrzeichen","unesco"];
-  const gtype=_types[~~(Math.random()*_types.length)];
+  const gtype=_gtm||_types[~~(Math.random()*_types.length)];
   let rowPool,colPool,fallback,checkFn;
   if(gtype==="land"){
     rowPool=GRID_ROW_POOL;colPool=GRID_COL_POOL;
@@ -6763,6 +6764,12 @@ function initLogikGitter(){
       }
     }
   },1000);
+}
+function changeGridType(newType){
+  if(typeof S==="undefined")return;
+  S.gridTypeMode=newType;
+  initLogikGitter();
+  render();
 }
 function renderLogikGitter(sc){
   const gd=S.gridData;
@@ -6841,6 +6848,15 @@ function renderLogikGitter(sc){
     </div>
     <div class="tbar"><div class="tfill" style="width:${pct()}%;background:${tc()}"></div></div>
     <div style="text-align:center;font-size:.92rem;font-weight:900;color:var(--text);padding:.4rem 0 .2rem">${_typeLbl}</div>
+    <div style="text-align:center;margin:.1rem 0 .45rem">
+      <select onchange="changeGridType(this.value)" style="padding:5px 12px;border-radius:8px;border:1.5px solid var(--primary,#6366f1);background:var(--bg2);color:var(--text);font-size:.8rem;outline:none;cursor:pointer">
+        <option value="random" ${(!S.gridTypeMode||S.gridTypeMode==="random")?"selected":""}>🎲 Zufall (Mix)</option>
+        <option value="land" ${S.gridTypeMode==="land"?"selected":""}>🌍 Länder</option>
+        <option value="stadt" ${S.gridTypeMode==="stadt"?"selected":""}>🏙 Städte</option>
+        <option value="wahrzeichen" ${S.gridTypeMode==="wahrzeichen"?"selected":""}>🏛 Wahrzeichen</option>
+        <option value="unesco" ${S.gridTypeMode==="unesco"?"selected":""}>🌎 UNESCO</option>
+      </select>
+    </div>
     ${gridHtml}${statusHtml}${inputHtml}${endHtml}
     <div style="height:1.5rem"></div>
   </div>`;
