@@ -4649,7 +4649,7 @@ function lq(){ console.log("🟢 [TRACKER] 2. lq (loadQuestion) gestartet.");
   S.half_removed=false;S.freezeActive=false;
   render();
   /* P167: for landscape-required modes, defer timer until device is rotated */
-  if(_LANDSCAPE_MODES_SET.has(S.mode)&&window.matchMedia("(orientation:portrait)").matches){
+  if(_LANDSCAPE_MODES_SET.has(S.mode)&&_isPortrait()){
     S.waitingForLandscape=true;
   }else{
     S.waitingForLandscape=false;
@@ -5501,12 +5501,12 @@ async function evaluateWeeklyLeague(){
 }
 
 const _LANDSCAPE_MODES_SET=new Set(["map_guess","map_reverse","map_capital"]);
+function _isPortrait(){return window.innerHeight>window.innerWidth;}
 function updateOrientationWarning(){
   const ow=document.getElementById("gq-orient-warn");
   if(\!ow)return false;
-  const isPortrait=window.matchMedia("(orientation:portrait)").matches;
   const needsLandscape=_LANDSCAPE_MODES_SET.has(S.mode)&&S.ph==="playing";
-  const show=isPortrait&&needsLandscape;
+  const show=_isPortrait()&&needsLandscape;
   ow.style.display=show?"flex":"none";
   const txt=ow.querySelector(".gq-ow-txt");if(txt)txt.textContent=t("rotate_device");
   return show;
@@ -7897,18 +7897,25 @@ window.addEventListener('load',function(){initAntiCheat();});
 /* P167: start deferred timer when device rotates to landscape */
 (function(){
   function _onOrientChange(){
-    updateOrientationWarning();
-    if(S.waitingForLandscape&&!window.matchMedia("(orientation:portrait)").matches){
-      S.waitingForLandscape=false;
-      clearInterval(tIv);
-      tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}},1000);
-    }
+    /* delay 120ms — layout must settle before innerWidth/Height are correct */
+    setTimeout(function(){
+      updateOrientationWarning();
+      if(S.waitingForLandscape&&!_isPortrait()){
+        S.waitingForLandscape=false;
+        clearInterval(tIv);
+        tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}},1000);
+      }
+    },120);
   }
+  /* use both APIs for max compatibility */
   if(screen.orientation&&screen.orientation.addEventListener){
     screen.orientation.addEventListener("change",_onOrientChange);
-  }else{
-    window.addEventListener("orientationchange",_onOrientChange);
   }
+  window.addEventListener("orientationchange",_onOrientChange);
+  /* matchMedia listener as additional fallback (Chrome desktop resize) */
+  try{window.matchMedia("(orientation:landscape)").addEventListener("change",function(e){
+    if(e.matches)_onOrientChange();
+  });}catch(e){}
 })();
 
   const old=document.getElementById('gq-loc-toast');if(old)old.remove();
