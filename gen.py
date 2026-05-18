@@ -2413,12 +2413,12 @@ const MODES=[
   {id:"hl_forest",    icon:"\u{1F333}",title:"H/L Waldf\u00e4che",  group:"hl_compare",prompt:"Mehr Wald?",                   desc:"Welches Land hat mehr Wald?",                      comingSoon:true},
   /* ---- Neighbors ---- */
   {id:"neighbor",      icon:"\u{1F91D}",title:"Grenzg\u00e4nger",     group:"neighbors", prompt:"Grenzt an\u2026?",               desc:"Grenzt dieses Land an jenes?"},
-  {id:"neighbor_fake", icon:"\u{1F47A}",title:"Falscher Nachbar",  group:"neighbors", prompt:"Grenzt NICHT an\u2026?",         desc:"Welches Land grenzt NICHT an das gezeigte?"},
-  {id:"neighbor_count",icon:"\u{1F522}",title:"Nachbar-Z\u00e4hler",group:"neighbors", prompt:"Wie viele Nachbarn?",               desc:"Z\u00e4hle die Nachbarl\u00e4nder des Landes"},
+  {id:"neighbor_fake", icon:"\u{1F47A}",title:"Falscher Nachbar",  group:"neighbors", prompt:"Grenzt NICHT an\u2026?",         desc:"Welches Land grenzt NICHT an das gezeigte?",time:20},
+  {id:"neighbor_count",icon:"\u{1F522}",title:"Nachbar-Z\u00e4hler",group:"neighbors", prompt:"Wie viele Nachbarn?",               desc:"Z\u00e4hle die Nachbarl\u00e4nder des Landes",time:20},
   /* ---- Map ---- */
   {id:"map_guess",  icon:"\u{1F5FA}",title:"Finde das Land",    group:"map_mode",prompt:"Klick auf das gesuchte Land",         desc:"Klicke das gesuchte Land auf der Weltkarte",beta:true},
-  {id:"map_reverse",icon:"\u{1F3AF}",title:"Wer bin ich?",        group:"map_mode",prompt:"Welches Land ist markiert?",          desc:"Erkenne das markierte Land auf der Weltkarte",beta:true},
-  {id:"map_capital",icon:"\u{1F3D9}",title:"Hauptstadt-Radar",   group:"map_mode",prompt:"Tippe auf das Land der Hauptstadt",  desc:"Klicke auf das Land mit der genannten Hauptstadt",beta:true},
+  {id:"map_reverse",icon:"\u{1F3AF}",title:"Wer bin ich?",        group:"map_mode",prompt:"Welches Land ist markiert?",          desc:"Erkenne das markierte Land auf der Weltkarte",beta:true,time:25},
+  {id:"map_capital",icon:"📍",title:"Hauptstadt-Radar",   group:"map_mode",prompt:"Tippe auf das Land der Hauptstadt",  desc:"Kenne die Hauptstädte",beta:true,time:25},
   /* ---- New Game Modes (coming soon) ---- */
   {id:"logic_grid",    icon:"\u{1F9E9}",title:"Logik-Gitter",          group:"new_modes",prompt:"L\u00f6se das R\u00e4tsel",                desc:"L\u00f6se geografische Logik-R\u00e4tsel",       beta:true},
   {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten",beta:true},
@@ -2426,7 +2426,7 @@ const MODES=[
   {id:"climate_mystery",icon:"\u{1F326}",title:"Klima-Krimi",          group:"new_modes",prompt:"[BETA] Welches Land versteckt sich hinter diesen Klima-Hinweisen?",                             desc:"Land anhand von Klima-Clues erraten",                  beta:true},
   {id:"alpha_sprint",  icon:"📍",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben",     comingSoon:true},
   {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen",beta:true},
-  {id:"slf",           icon:"📍",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Kenne die Hauptstädte",  beta:true},
+  {id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker",  beta:true},
   {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt",beta:true},
   /* ---- Vergleiche / Comparisons (Phase 91+92) ---- */
   {id:"comp_area",      icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",      group:"comparisons",prompt:"Welches Land ist gr\u00f6\u00dfer?",       desc:"Fl\u00e4che zweier L\u00e4nder vergleichen",beta:true},
@@ -4304,8 +4304,9 @@ function genMapReverseQ(){
   const idx=~~(rng()*MAP_COUNTRIES.length);
   const co=MAP_COUNTRIES[idx];if(\!co)return null;
   const others=MAP_COUNTRIES.filter(c=>c.cc\!==co.cc);
-  const dis=sh([...others]).slice(0,3).map(c=>displayCountry(c.cc)||c.name);
-  const ansLabel=displayCountry(co.cc)||co.name;
+  const _mLbl=c=>{const d=displayCountry(c.cc);return(d&&d!==c.cc)?d:c.name;};
+  const dis=sh([...others]).slice(0,3).map(_mLbl);
+  const ansLabel=_mLbl(co);
   return{type:"map_reverse",prompt:"Welches Land ist hervorgehoben?",
     subj:co.name,ans:ansLabel,opts:sh([ansLabel,...dis]),meta:"",lid:co.cc,cc:co.cc};
 }
@@ -4563,7 +4564,7 @@ function lq(){ console.log("🟢 [TRACKER] 2. lq (loadQuestion) gestartet.");
   clearInterval(tIv);
   if(\!S.queueExtra)S.queueExtra=[];
   if(\!S.askedLids)S.askedLids=new Set();
-  const dur=S.diff==="survival"?8:12;
+  const _mCfg=(typeof GAME_MODES!=="undefined"?GAME_MODES:[]).find(m=>m.id===S.mode);const dur=S.diff==="survival"?8:(_mCfg&&_mCfg.time)||12;
   /* Try up to 25 times to get a question whose lid hasn't appeared this round */
   let q=null,_att=0;
   while(_att<25){
@@ -5426,7 +5427,7 @@ async function evaluateWeeklyLeague(){
   }
 }
 
-const _MAP_MODES_SET=new Set(["map_guess"]);
+const _MAP_MODES_SET=new Set(["map_guess","map_reverse","map_capital"]);
 function updateOrientationWarning(){
   const ow=document.getElementById("gq-orient-warn");
   if(\!ow)return;
@@ -5728,6 +5729,7 @@ app.innerHTML=`<div class="scr">
           <button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">×</button>
         </div>
       </div>
+      <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
       <div class="q-area" style="padding:0 8px 8px">
         <div style="text-align:center;margin:6px 0 6px">
           <div class="qprompt">${q.prompt}</div>
@@ -5736,7 +5738,7 @@ app.innerHTML=`<div class="scr">
         <div id="gq-map-svg" style="width:100%;aspect-ratio:2/1;background:var(--bg2);border-radius:12px;overflow:hidden;margin-bottom:8px"></div>
         <div class="opts">${optHtml}</div>
       </div></div>`;
-    requestAnimationFrame(()=>drawWorldMap(q.subj,sel,ok,true));
+    requestAnimationFrame(()=>drawWorldMap(q.subj,sel,ok,true,true));
     return;
   }
   if(q.type==="map_guess"||q.type==="map_capital"){
@@ -5874,7 +5876,7 @@ function drawCountryOutline(cc,targetId){
 
 
 /* Phase 34 – D3 World Map component */
-function drawWorldMap(targetName,sel,ok,preHL){
+function drawWorldMap(targetName,sel,ok,preHL,readOnly){
   const container=document.getElementById('gq-map-svg');
   if(\!container||typeof d3==='undefined'||typeof topojson==='undefined'){
     if(container)container.innerHTML='<p style="color:var(--text3);text-align:center;padding:2rem">'+t('map_unavail')+'</p>';
@@ -5928,15 +5930,15 @@ function drawWorldMap(targetName,sel,ok,preHL){
     .attr('stroke','var(--border,#94a3b8)')
     .attr('stroke-width',.35)
     .on('mouseover',function(_,d){
-      if(sel\!==null)return;
+      if(readOnly||sel\!==null)return;
       d3.select(this).attr('fill','#93c5fd');
     })
     .on('mouseout',function(_,d){
-      if(sel\!==null)return;
+      if(readOnly||sel\!==null)return;
       d3.select(this).attr('fill','var(--bg3,#e2e8f0)');
     })
     .on('click',function(ev,d){
-      if(sel\!==null)return;
+      if(readOnly||sel\!==null)return;
       ev.stopPropagation();
       answer(d.properties.name);
     });
