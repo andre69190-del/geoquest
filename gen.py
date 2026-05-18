@@ -4648,7 +4648,13 @@ function lq(){ console.log("🟢 [TRACKER] 2. lq (loadQuestion) gestartet.");
   S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
   S.half_removed=false;S.freezeActive=false;
   render();
-  if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);
+  /* P167: for landscape-required modes, defer timer until device is rotated */
+  if(_LANDSCAPE_MODES_SET.has(S.mode)&&window.matchMedia("(orientation:portrait)").matches){
+    S.waitingForLandscape=true;
+  }else{
+    S.waitingForLandscape=false;
+    if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);
+  }
 }
 
 /* â”€â”€ Phase 42: Index-based answer dispatch (hides answer strings from DOM) â”€â”€ */
@@ -5494,14 +5500,16 @@ async function evaluateWeeklyLeague(){
   }
 }
 
-const _MAP_MODES_SET=new Set(["map_guess","map_reverse","map_capital"]);
+const _LANDSCAPE_MODES_SET=new Set(["map_guess","map_reverse","map_capital"]);
 function updateOrientationWarning(){
   const ow=document.getElementById("gq-orient-warn");
-  if(\!ow)return;
+  if(\!ow)return false;
   const isPortrait=window.matchMedia("(orientation:portrait)").matches;
-  const isMapMode=_MAP_MODES_SET.has(S.mode)&&S.ph==="playing";
-  ow.style.display=(isPortrait&&isMapMode)?"flex":"none";
+  const needsLandscape=_LANDSCAPE_MODES_SET.has(S.mode)&&S.ph==="playing";
+  const show=isPortrait&&needsLandscape;
+  ow.style.display=show?"flex":"none";
   const txt=ow.querySelector(".gq-ow-txt");if(txt)txt.textContent=t("rotate_device");
+  return show;
 }
 function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
   /* Surgical Scope Guard for candidates */
@@ -7886,6 +7894,22 @@ console.log('[GeoQuest Anti-Cheat] User navigated while processing - logged');
 });
 }
 window.addEventListener('load',function(){initAntiCheat();});
+/* P167: start deferred timer when device rotates to landscape */
+(function(){
+  function _onOrientChange(){
+    updateOrientationWarning();
+    if(S.waitingForLandscape&&!window.matchMedia("(orientation:portrait)").matches){
+      S.waitingForLandscape=false;
+      clearInterval(tIv);
+      tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}},1000);
+    }
+  }
+  if(screen.orientation&&screen.orientation.addEventListener){
+    screen.orientation.addEventListener("change",_onOrientChange);
+  }else{
+    window.addEventListener("orientationchange",_onOrientChange);
+  }
+})();
 
   const old=document.getElementById('gq-loc-toast');if(old)old.remove();
   const el=document.createElement('div');
