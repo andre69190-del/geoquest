@@ -5691,7 +5691,7 @@ app.innerHTML=`<div class="scr">
   const col=tc(),p=pct(),_tr=tier(st);
   let qBody="";
   if(q.type==="flag"||q.type==="beta_flagcolor"){
-    qBody=`<div class="qprompt">${q.prompt}</div><div class="qflag"><img src="https://flagcdn.com/w80/${q.subj}.png" alt="Flagge"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div class="qflag"><img src="https://flagcdn.com/w80/${q.subj}.png" alt="Flagge" style="max-height:25vh;width:auto;max-width:100%;object-fit:contain;display:block;margin:0 auto"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="outline"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="outline-wrap" id="gq-outline-svg"></div>`;
   }else if(q.type==="food"){
@@ -5757,7 +5757,7 @@ app.innerHTML=`<div class="scr">
       <div class="qmain">${q.subj}</div>
       ${sel\!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="wappen"){
-    qBody=`<div class="qprompt">${q.prompt}</div><div class="wappen-img-wrap"><img src="${q.img}" alt="Wappen" class="wappen-img" onerror="wappenErr(this)"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div class="wappen-img-wrap"><img src="${q.img}" alt="Wappen" class="wappen-img" onerror="wappenErr(this)" style="max-height:25vh;width:auto;max-width:100%;object-fit:contain;display:block;margin:0 auto"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="neighbor"||q.type==="neighbor_fake"||q.type==="neighbor_count"){
     qBody=`<div class="qprompt" style="font-size:1rem">${q.prompt}</div>
       <div style="text-align:center;margin:10px 0 6px">
