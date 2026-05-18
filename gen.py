@@ -4484,7 +4484,7 @@ function genFlagColorQ(){
   const opts=sh([correct,...uniqueReal]);
   return{type:"beta_flagcolor",
     prompt:"[BETA] 🎨 Welche Farbe kommt auf der Flagge von "+displayCountry(ccFromCountry(country))+" NICHT vor?",
-    subj:ccFromCountry(country),ans:correct,opts,meta:flagCols.join(", "),
+    subj:displayCountry(ccFromCountry(country)),ans:correct,opts,meta:flagCols.join(", "),
     lid:country,cc:ccFromCountry(country),cat:"geo"};
 }
 function genFlightDistanceCompareQ(){
@@ -5690,7 +5690,7 @@ app.innerHTML=`<div class="scr">
   if(!q){S.ph="menu";S.q=null;render();return;}  /* guard: q not yet set */
   const col=tc(),p=pct(),_tr=tier(st);
   let qBody="";
-  if(q.type==="flag"||q.type==="beta_flagcolor"){
+  if(q.type==="flag"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="qflag"><img src="https://flagcdn.com/w80/${q.subj}.png" alt="Flagge" style="max-height:25vh;width:auto;max-width:100%;object-fit:contain;display:block;margin:0 auto"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="outline"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="outline-wrap" id="gq-outline-svg"></div>`;
