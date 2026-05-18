@@ -2419,41 +2419,41 @@ const MODES=[
   {id:"neighbor_fake", icon:"\u{1F47A}",title:"Falscher Nachbar",  group:"neighbors", prompt:"Grenzt NICHT an\u2026?",         desc:"Welches Land grenzt NICHT an das gezeigte?",time:20},
   {id:"neighbor_count",icon:"\u{1F522}",title:"Nachbar-Z\u00e4hler",group:"neighbors", prompt:"Wie viele Nachbarn?",               desc:"Z\u00e4hle die Nachbarl\u00e4nder des Landes",time:20},
   /* ---- Map ---- */
-  {id:"map_guess",  icon:"\u{1F5FA}",title:"Finde das Land",    group:"map_mode",prompt:"Klick auf das gesuchte Land",         desc:"Klicke das gesuchte Land auf der Weltkarte",beta:true},
-  {id:"map_reverse",icon:"\u{1F3AF}",title:"Wer bin ich?",        group:"map_mode",prompt:"Welches Land ist markiert?",          desc:"Erkenne das markierte Land auf der Weltkarte",beta:true,time:25},
-  {id:"map_capital",icon:"📍",title:"Hauptstadt-Radar",   group:"map_mode",prompt:"Tippe auf das Land der Hauptstadt",  desc:"Kenne die Hauptstädte",beta:true,time:25},
+  {id:"map_guess",  icon:"\u{1F5FA}",title:"Finde das Land",    group:"map_mode",prompt:"Klick auf das gesuchte Land",         desc:"Klicke das gesuchte Land auf der Weltkarte"},
+  {id:"map_reverse",icon:"\u{1F3AF}",title:"Wer bin ich?",        group:"map_mode",prompt:"Welches Land ist markiert?",          desc:"Erkenne das markierte Land auf der Weltkarte",time:25},
+  {id:"map_capital",icon:"📍",title:"Hauptstadt-Radar",   group:"map_mode",prompt:"Tippe auf das Land der Hauptstadt",  desc:"Kenne die Hauptstädte",time:25},
   /* ---- New Game Modes (coming soon) ---- */
-  {id:"logic_grid",    icon:"\u{1F9E9}",title:"Logik-Gitter",          group:"new_modes",prompt:"L\u00f6se das R\u00e4tsel",                desc:"L\u00f6se geografische Logik-R\u00e4tsel",       beta:true},
-  {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten",beta:true},
-  {id:"flag_fusion",   icon:"\u{1F3C1}",title:"Flaggen-Fusion",        group:"new_modes",prompt:"Welche zwei L\u00e4nder?",                  desc:"Erkenne L\u00e4nder aus verschmolzenen Flaggen",beta:true},
-  {id:"climate_mystery",icon:"\u{1F326}",title:"Klima-Krimi",          group:"new_modes",prompt:"[BETA] Welches Land versteckt sich hinter diesen Klima-Hinweisen?",                             desc:"Land anhand von Klima-Clues erraten",                  beta:true},
+  {id:"logic_grid",    icon:"\u{1F9E9}",title:"Logik-Gitter",          group:"new_modes",prompt:"L\u00f6se das R\u00e4tsel",                desc:"L\u00f6se geografische Logik-R\u00e4tsel"},
+  {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten"},
+  {id:"flag_fusion",   icon:"\u{1F3C1}",title:"Flaggen-Fusion",        group:"new_modes",prompt:"Welche zwei L\u00e4nder?",                  desc:"Erkenne L\u00e4nder aus verschmolzenen Flaggen"},
+  {id:"climate_mystery",icon:"\u{1F326}",title:"Klima-Krimi",          group:"new_modes",prompt:"Welches Land versteckt sich hinter diesen Klima-Hinweisen?",                             desc:"Land anhand von Klima-Clues erraten"},
   {id:"alpha_sprint",  icon:"📍",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben",     comingSoon:true},
-  {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen",beta:true},
-  {id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker",  beta:true},
-  {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt",beta:true},
+  {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen"},
+  {id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker"},
+  {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt"},
   /* ---- Vergleiche / Comparisons (Phase 91+92) ---- */
-  {id:"comp_area",      icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",      group:"comparisons",prompt:"Welches Land ist gr\u00f6\u00dfer?",       desc:"Fl\u00e4che zweier L\u00e4nder vergleichen",beta:true},
-  {id:"comp_pop",       icon:"\u{1F465}",title:"Mehr Einwohner?",               group:"comparisons",prompt:"Welches Land hat mehr Einwohner?",       desc:"Bev\u00f6lkerung zweier L\u00e4nder vergleichen",beta:true},
-  {id:"comp_north",     icon:"\u2b06\ufe0f",title:"Weiter n\u00f6rdlich?",     group:"comparisons",prompt:"Welches Land liegt n\u00f6rdlicher?",    desc:"Zwei L\u00e4nder nach Breitengrad",beta:true},
-  {id:"comp_gdp",       icon:"\u{1F4B0}",title:"H\u00f6heres BIP?",            group:"comparisons",prompt:"H\u00f6heres BIP pro Kopf?",              desc:"BIP pro Kopf vergleichen",beta:true},
-  {id:"comp_density",   icon:"\u{1F3D8}",title:"Dichter besiedelt?",            group:"comparisons",prompt:"Welches Land ist dichter besiedelt?",    desc:"Bev\u00f6lkerungsdichte vergleichen",beta:true},
-  {id:"comp_elevation", icon:"\u26F0",   title:"H\u00f6herer Gipfel?",         group:"comparisons",prompt:"Welches Land hat den h\u00f6heren Gipfel?",desc:"H\u00f6chste Erhebung vergleichen",beta:true},
-  {id:"comp_coast",     icon:"\u{1F3D6}",title:"L\u00e4ngere K\u00fcste?",    group:"comparisons",prompt:"Welches Land hat die l\u00e4ngere K\u00fcste?",desc:"K\u00fcstenl\u00e4nge vergleichen",beta:true},
-  {id:"comp_borders",   icon:"\u{1F30F}",title:"Mehr Nachbarn?",               group:"comparisons",prompt:"Welches Land hat mehr Nachbarl\u00e4nder?",desc:"Anzahl der Nachbarn vergleichen",beta:true},
-  {id:"comp_life",      icon:"\u2764",   title:"L\u00e4nger leben?",           group:"comparisons",prompt:"In welchem Land lebt man l\u00e4nger?",  desc:"Lebenserwartung vergleichen",beta:true},
-  {id:"comp_age",       icon:"\u{1F4C5}",title:"H\u00f6heres Medianalter?",   group:"comparisons",prompt:"H\u00f6heres Medianalter?",               desc:"Medianalter zweier L\u00e4nder",beta:true},
-  {id:"comp_forest",    icon:"\u{1F333}",title:"Mehr Wald?",                   group:"comparisons",prompt:"Welches Land hat mehr Waldfl\u00e4che?",  desc:"Waldfl\u00e4che vergleichen",beta:true},
+  {id:"comp_area",      icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",      group:"comparisons",prompt:"Welches Land ist gr\u00f6\u00dfer?",       desc:"Fl\u00e4che zweier L\u00e4nder vergleichen"},
+  {id:"comp_pop",       icon:"\u{1F465}",title:"Mehr Einwohner?",               group:"comparisons",prompt:"Welches Land hat mehr Einwohner?",       desc:"Bev\u00f6lkerung zweier L\u00e4nder vergleichen"},
+  {id:"comp_north",     icon:"\u2b06\ufe0f",title:"Weiter n\u00f6rdlich?",     group:"comparisons",prompt:"Welches Land liegt n\u00f6rdlicher?",    desc:"Zwei L\u00e4nder nach Breitengrad"},
+  {id:"comp_gdp",       icon:"\u{1F4B0}",title:"H\u00f6heres BIP?",            group:"comparisons",prompt:"H\u00f6heres BIP pro Kopf?",              desc:"BIP pro Kopf vergleichen"},
+  {id:"comp_density",   icon:"\u{1F3D8}",title:"Dichter besiedelt?",            group:"comparisons",prompt:"Welches Land ist dichter besiedelt?",    desc:"Bev\u00f6lkerungsdichte vergleichen"},
+  {id:"comp_elevation", icon:"\u26F0",   title:"H\u00f6herer Gipfel?",         group:"comparisons",prompt:"Welches Land hat den h\u00f6heren Gipfel?",desc:"H\u00f6chste Erhebung vergleichen"},
+  {id:"comp_coast",     icon:"\u{1F3D6}",title:"L\u00e4ngere K\u00fcste?",    group:"comparisons",prompt:"Welches Land hat die l\u00e4ngere K\u00fcste?",desc:"K\u00fcstenl\u00e4nge vergleichen"},
+  {id:"comp_borders",   icon:"\u{1F30F}",title:"Mehr Nachbarn?",               group:"comparisons",prompt:"Welches Land hat mehr Nachbarl\u00e4nder?",desc:"Anzahl der Nachbarn vergleichen"},
+  {id:"comp_life",      icon:"\u2764",   title:"L\u00e4nger leben?",           group:"comparisons",prompt:"In welchem Land lebt man l\u00e4nger?",  desc:"Lebenserwartung vergleichen"},
+  {id:"comp_age",       icon:"\u{1F4C5}",title:"H\u00f6heres Medianalter?",   group:"comparisons",prompt:"H\u00f6heres Medianalter?",               desc:"Medianalter zweier L\u00e4nder"},
+  {id:"comp_forest",    icon:"\u{1F333}",title:"Mehr Wald?",                   group:"comparisons",prompt:"Welches Land hat mehr Waldfl\u00e4che?",  desc:"Waldfl\u00e4che vergleichen"},
   /* Phase 129+130 BETA modes */
   {id:"comp_airports",  icon:"\u2708\uFE0F",title:"Mehr Flugh\u00e4fen?",    group:"comparisons",prompt:"Welches Land hat mehr Flugh\u00e4fen?",             desc:"Flughafenanzahl zweier L\u00e4nder vergleichen"},
   {id:"comp_flight",    icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",  group:"comparisons",prompt:"L\u00e4ngster m\u00f6glicher Inlandsflug?",          desc:"Fl\u00e4che als Proxy f\u00fcr Inlandsflugdistanz"},
   {id:"comp_mountain",  icon:"\u26F0",  title:"H\u00f6herer Gipfel?",          group:"comparisons",prompt:"Welches Land hat den h\u00f6heren Gipfel?",        desc:"H\u00f6chste Erhebung (erweiterter Datensatz)"},
   {id:"comp_nsextent",  icon:"\u{1F9ED}",title:"L\u00e4nger Nord-S\u00fcd?", group:"comparisons",prompt:"Welches Land erstreckt sich weiter von Nord nach S\u00fcd?",         desc:"Nord-S\u00fcd-Ausdehnung vergleichen"},
   {id:"comp_olympics",  icon:"\u{1F3C5}",title:"Mehr Olympia-Gold?",           group:"comparisons",prompt:"Welches Land hat mehr Olympia-Goldmedaillen?",         desc:"Sommerolympiade-Goldmedaillen vergleichen"},
-  {id:"iata",           icon:"\u2708\uFE0F",title:"IATA-Code?",               group:"airports_beta",prompt:"[BETA] Zu welcher Stadt geh\u00f6rt dieser Flughafen-Code?", desc:"IATA-Codes der gro\u00dfen Flugh\u00e4fen kennen",beta:true},
-  {id:"beta_timezone",  icon:"\u23F0",  title:"Welche Uhrzeit?",               group:"airports_beta",prompt:"[BETA] Wie sp\u00e4t ist es gerade in dieser Stadt?", desc:"UTC-Offsets und Zeitzonen",beta:true},
-  {id:"beta_climate",   icon:"\u{1F321}\uFE0F",title:"Klima-Krimi?",          group:"airports_beta",prompt:"[BETA] Welches Land versteckt sich hinter diesen Klima-Hinweisen?", desc:"Land anhand von Klima-Clues erraten",beta:true},
-  {id:"beta_flagcolor", icon:"\u{1F6A9}",title:"Flaggen-Farben?",              group:"airports_beta",prompt:"[BETA] Welche Farbe fehlt in dieser Flagge?",     desc:"Flaggenfarben auswendig kennen",beta:true},
-  {id:"beta_landlocked",icon:"\u{1F30A}",title:"Binnenstaat?",                 group:"airports_beta",prompt:"[BETA] Welches Land hat keinen Meereszugang?",    desc:"Binnenstaaten von K\u00fcstenl\u00e4ndern unterscheiden",beta:true},
+  {id:"iata",           icon:"\u2708\uFE0F",title:"IATA-Code?",               group:"airports",prompt:"Zu welcher Stadt geh\u00f6rt dieser Flughafen-Code?", desc:"IATA-Codes der gro\u00dfen Flugh\u00e4fen kennen"},
+  {id:"tz_quiz",  icon:"\u23F0",  title:"Welche Uhrzeit?",               group:"airports",prompt:"Wie sp\u00e4t ist es gerade in dieser Stadt?", desc:"UTC-Offsets und Zeitzonen"},
+  {id:"climate_quiz",   icon:"\u{1F321}\uFE0F",title:"Klima-Krimi",          group:"airports",prompt:"Welches Land versteckt sich hinter diesen Klima-Hinweisen?", desc:"Land anhand von Klima-Clues erraten"},
+  {id:"flagcolor", icon:"\u{1F6A9}",title:"Flaggen-Farben",              group:"airports",prompt:"Welche Farbe fehlt in dieser Flagge?",     desc:"Flaggenfarben auswendig kennen"},
+  {id:"landlocked_quiz",icon:"\u{1F30A}",title:"Binnenstaat?",                 group:"airports",prompt:"Welches Land hat keinen Meereszugang?",    desc:"Binnenstaaten von K\u00fcstenl\u00e4ndern unterscheiden"},
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
@@ -2463,7 +2463,7 @@ const MODE_CATS={
   eu_plates:{label:"EU-Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_flight","comp_mountain","comp_nsextent","comp_olympics"],cost:0},
-  airports_beta:{label:"Airports & BETA",icon:"\u2708\uFE0F",modes:["iata","beta_timezone","beta_climate","beta_flagcolor","beta_landlocked"],cost:0},
+  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital"],cost:0},
 };
@@ -4437,7 +4437,7 @@ function genIataQ(){
   if(dis.length<3)return null;
   const opts=sh([correct,...dis]);
   return{type:"iata",
-    prompt:"\u2708\uFE0F [BETA] Welcher Flughafen-Code geh\u00f6rt zu welcher Stadt?",
+    prompt:"\u2708\uFE0F Welcher Flughafen-Code geh\u00f6rt zu welcher Stadt?",
     subj:iata,ans:correct,opts,meta:"IATA-Code",lid:iata,cc:null,cat:"trivia"};
 }
 /* Phase 130: 8 BETA generators */
@@ -4465,8 +4465,8 @@ function genTimezoneQ(){
   }
   if(wrongs.length<3)return null;
   const opts=sh([correct,...wrongs.slice(0,3)]);
-  return{type:"beta_timezone",
-    prompt:"[BETA] \u23F0 Wenn es in "+cA+" 12:00 Uhr ist – wie sp\u00e4t ist es in "+cB+"?",
+  return{type:"tz_quiz",
+    prompt:"\u23F0 Wenn es in "+cA+" 12:00 Uhr ist – wie sp\u00e4t ist es in "+cB+"?",
     subj:cA+" \u2192 "+cB,ans:correct,opts,meta:"",lid:cA,cc:null,cat:"geo"};
 }
 function genClimateQ(){
@@ -4486,7 +4486,7 @@ function genClimateQ(){
   if(dis.length<3)return null;
   const opts=sh([correctCc,...dis.map(k=>ccFromCountry(k))]);
   const hint=clues.join(" \u00b7 ");
-  return{type:"beta_climate",
+  return{type:"climate_quiz",
     prompt:"\u{1F326}\uFE0F Klima-Krimi: "+hint,
     subj:"Welches Land?",ans:correctCc,opts,meta:"",lid:correctCc,
     cc:correctCc,cat:"geo"};
@@ -4507,8 +4507,8 @@ function genFlagColorQ(){
   const uniqueReal=[...new Set(realCols)].slice(0,3);
   if(uniqueReal.length<3)return null;
   const opts=sh([correct,...uniqueReal]);
-  return{type:"beta_flagcolor",
-    prompt:"[BETA] 🎨 Welche Farbe kommt auf der Flagge von "+displayCountry(ccFromCountry(country))+" NICHT vor?",
+  return{type:"flagcolor",
+    prompt:"🎨 Welche Farbe kommt auf der Flagge von "+displayCountry(ccFromCountry(country))+" NICHT vor?",
     subj:displayCountry(ccFromCountry(country)),ans:correct,opts,meta:flagCols.join(", "),
     lid:country,cc:ccFromCountry(country),cat:"geo"};
 }
@@ -4554,8 +4554,8 @@ function genLandlockedQ(){
     .sort(()=>rng()-.5).slice(0,3);
   if(dis.length<3)return null;
   const opts=sh([correct,...dis]);
-  return{type:"beta_landlocked",
-    prompt:"[BETA] \U0001F30A Welches dieser L\u00e4nder hat KEINEN Zugang zum Meer?",
+  return{type:"landlocked_quiz",
+    prompt:"\u{1F30A} Welches dieser L\u00e4nder hat KEINEN Zugang zum Meer?",
     subj:"",ans:correct,opts,meta:"",lid:correct,
     cc:ccFromCountry(correct),cat:"geo"};
 }
@@ -4620,12 +4620,12 @@ const GEN={
   slf:()=>null,
   comp_airports:genAirportCompareQ,
   iata:genIataQ,
-  beta_timezone:genTimezoneQ,
-  beta_climate:genClimateQ,
-  beta_flagcolor:genFlagColorQ,
+  tz_quiz:genTimezoneQ,
+  climate_quiz:genClimateQ,
+  flagcolor:genFlagColorQ,
   comp_flight:genFlightDistanceCompareQ,
   comp_mountain:genHighestPointCompareQ,
-  beta_landlocked:genLandlockedQ,
+  landlocked_quiz:genLandlockedQ,
   comp_nsextent:genNorthSouthCompareQ,
   comp_olympics:genOlympicCompareQ,
   /* P139: newly-activated new_modes entries wired to existing generators */
@@ -4747,7 +4747,7 @@ function answer(a){
   }
   /* P133: longer delay for text-heavy beta/IATA questions */
   const _qt=S.q&&S.q.type||"";
-  const _fd=(_qt.startsWith("beta_")||_qt==="iata")?2800:1900;
+  const _fd=_qt==="iata"?2800:1900;
   fTo=setTimeout(()=>{
     const nr=S.rd+1;
     if(S.diff\!=="survival"&&nr>=ROUNDS){
@@ -7222,7 +7222,7 @@ function renderHomeTab(){
     const catModes=MODES.filter(m=>cat.modes.includes(m.id)&&\!m.comingSoon);
     const cards=catModes.map(m=>{
       const cs=m.comingSoon===true;
-      const bt=m.beta===true&&\!cs;
+      const bt=false; /* v1.0: no more beta badges */
       const active=S.mode===m.id&&\!cs;
       const cardCls="mode-card"+(active?" active":"")+(cs?" coming-soon-card":"")+(bt?" beta-card":"")+(\!unlocked&&\!cs?" locked-card":"");
       const clickAct=cs?"showComingSoonToast('"+m.title+"')":unlocked?"startGame('"+m.id+"')":"S.lockModal='"+catId+"';render()";
