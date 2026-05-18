@@ -2278,10 +2278,13 @@ function getCountryName(cc,lang){
 /* displayCountry(name) – translate country display name for current language */
 function displayCountry(cc){
   if(!cc||typeof cc!=="string")return cc||"";
-  const co=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc));
+  let co=COUNTRIES.find(c=>c.cc===(cc?cc.toLowerCase():cc));
+  /* P168: also accept English country names (comp_ modes store English keys) */
+  if(!co)co=COUNTRIES.find(c=>c.c===cc||c.c.toLowerCase()===cc.toLowerCase());
   if(!co)return cc;
+  const _cc=co.cc;
   const lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
-  try { return getCountryName(cc,lang) || co.c; } catch(e) { return co.c; }
+  try{return getCountryName(_cc,lang)||co.c;}catch(e){return co.c;}
 }
 
 /* SEEDED RNG */
@@ -2871,6 +2874,21 @@ const GRID_UNESCO_ROW_POOL=[
   {id:"ueu",type:"un_continent",value:"Europe", label:"In Europa"},
   {id:"uas",type:"un_continent",value:"Asia",   label:"In Asien"},
   {id:"uaf",type:"un_continent",value:"Africa", label:"In Afrika"},
+];
+/* P168: Food grid pools */
+const GRID_FOOD_ROW_POOL=[
+  {id:"feu",type:"food_continent",value:"Europe",     label:"Europ\u00e4isch"},
+  {id:"fas",type:"food_continent",value:"Asia",       label:"Asiatisch"},
+  {id:"fam",type:"food_continent",value:"Americas",   label:"Amerikanisch"},
+  {id:"faf",type:"food_continent",value:"Africa",     label:"Afrikanisch"},
+];
+const GRID_FOOD_COL_POOL=[
+  {id:"flb",type:"food_letter",value:"B",label:"Beginnt mit B"},
+  {id:"flc",type:"food_letter",value:"C",label:"Beginnt mit C"},
+  {id:"flg",type:"food_letter",value:"G",label:"Beginnt mit G"},
+  {id:"flp",type:"food_letter",value:"P",label:"Beginnt mit P"},
+  {id:"flt",type:"food_letter",value:"T",label:"Beginnt mit T"},
+  {id:"fls",type:"food_letter",value:"S",label:"Beginnt mit S"},
 ];
 const GRID_UNESCO_COL_POOL=[
   {id:"ula",type:"un_letter",value:"A",label:"Beginnt mit A"},
@@ -4298,7 +4316,7 @@ function genFoodQ(){
   const _fDisR=[...new Set(_fp.filter(f=>f.country\!==corC).map(f=>f.country))];
   const _fDisAll=[...new Set(FOOD_DATA.filter(f=>f.country\!==corC).map(f=>f.country))];
   const picked=sh(_fDisR.length>=3?_fDisR:_fDisAll).slice(0,3);
-  return{type:"food",prompt:t("q_food"),subj:item.dish,emoji:item.emoji,ans:displayCountry(item.cc)||corC,opts:sh([displayCountry(item.cc)||corC,...picked.map(c=>displayCountry(ccFromCountry(c))||c)]),lid:item.cc,cc:item.cc};
+  return{type:"food",prompt:t("q_food"),subj:item.dish,emoji:null,ans:displayCountry(item.cc)||corC,opts:sh([displayCountry(item.cc)||corC,...picked.map(c=>displayCountry(ccFromCountry(c))||c)]),lid:item.cc,cc:item.cc};
 }
 function genBrandQ(){
   if(\!BRANDS_DATA.length)return null;
@@ -4456,15 +4474,22 @@ function genClimateQ(){
   if(keys.length<4)return null;
   const ci=~~(rng()*keys.length);
   const correct=keys[ci];
+  const correctCc=ccFromCountry(correct)||"";
+  if(\!correctCc)return null;
   const clues=_CLIMATE_CLUES[correct];
-  const dis=keys.filter(k=>k\!==correct).sort(()=>rng()-.5).slice(0,3);
+  /* P168: smart distractors — prefer same continent */
+  const _ct=cc=>(COUNTRIES.find(c=>c.cc===cc)||{}).ct||null;
+  const corCt=_ct(correctCc);
+  let pool=keys.filter(k=>k\!==correct&&ccFromCountry(k));
+  if(corCt){const sc=pool.filter(k=>{const kcc=ccFromCountry(k);return kcc&&_ct(kcc)===corCt;});if(sc.length>=3)pool=sc;}
+  const dis=pool.slice().sort(()=>rng()-.5).slice(0,3);
   if(dis.length<3)return null;
-  const opts=sh([correct,...dis]);
+  const opts=sh([correctCc,...dis.map(k=>ccFromCountry(k))]);
   const hint=clues.join(" \u00b7 ");
   return{type:"beta_climate",
-    prompt:"[BETA] \U0001F321\uFE0F Klima-Krimi: "+hint,
-    subj:"Welches Land?",ans:correct,opts,meta:"",lid:correct,
-    cc:ccFromCountry(correct),cat:"geo"};
+    prompt:"\u{1F326}\uFE0F Klima-Krimi: "+hint,
+    subj:"Welches Land?",ans:correctCc,opts,meta:"",lid:correctCc,
+    cc:correctCc,cat:"geo"};
 }
 function genFlagColorQ(){
   const allColours=["Schwarz","Rot","Gold","Blau","Wei\u00df","Gelb","Gr\u00fcn","Lila","Orange","Pink","Braun","T\u00fcrkis"];
@@ -6594,6 +6619,9 @@ function checkGridCriterion(name,crit,item){
   /* P161: UNESCO */
   if(crit.type==="un_continent")  {const u=item||UNESCO_SITES.find(x=>x.name===name);return u?u.continent===crit.value:false;}
   if(crit.type==="un_letter")     {return(name[0]||"").toUpperCase()===crit.value;}
+  /* P168: Food */
+  if(crit.type==="food_continent"){const f=item||FOOD_DATA.find(x=>x.dish===name);if(\!f)return false;const co=COUNTRIES.find(c=>c.cc===f.cc);if(\!co)return false;if(crit.value==="Americas")return co.ct==="North America"||co.ct==="South America";return co.ct===crit.value;}
+  if(crit.type==="food_letter")   {return(name[0]||"").toUpperCase()===crit.value;}
   /* original Land logic */
   const co=COUNTRIES.find(c=>c.c===name);
   if(!co)return false;
@@ -6632,6 +6660,12 @@ function getGridSugg(txt){
     return UNESCO_SITES
       .filter(u=>!used.has(u.name)&&u.name.toLowerCase().startsWith(t))
       .slice(0,12).map(u=>u.name);
+  }
+  /* P168: Food */
+  if(gtype==="food"){
+    return (FOOD_DATA||[])
+      .filter(f=>!used.has(f.dish)&&f.dish.toLowerCase().startsWith(t))
+      .map(f=>f.dish).slice(0,12);
   }
   /* original Land logic */
   const lang=(typeof S!=="undefined"&&S.language)||localStorage.getItem("gq_lang")||"de";
@@ -6692,6 +6726,7 @@ function handleGridAnswer(r,c,name){
   if(gtype==="stadt")         item=CITIES.find(x=>x.name===name);
   else if(gtype==="wahrzeichen")item=LANDMARKS.find(x=>x.name===name);
   else if(gtype==="unesco")   item=UNESCO_SITES.find(x=>x.name===name);
+  else if(gtype==="food")     item=(FOOD_DATA||[]).find(x=>x.dish===name);
   const ok=checkGridCriterion(name,gd.rowCrit[r],item)&&checkGridCriterion(name,gd.colCrit[c],item);
   if(ok){
     cell.country=name;
@@ -6719,7 +6754,7 @@ function initLogikGitter(){
   function _shuf(a){const b=a.slice();for(let i=b.length-1;i>0;i--){const j=~~(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
   /* P161/P164: type selection -- honour S.gridTypeMode when not "random" */
   const _gtm=(typeof S!=="undefined"&&S.gridTypeMode&&S.gridTypeMode!=="random")?S.gridTypeMode:null;
-  const _types=["land","land","land","stadt","wahrzeichen","unesco"];
+  const _types=["land","land","land","stadt","wahrzeichen","unesco","food"];
   const gtype=_gtm||_types[~~(Math.random()*_types.length)];
   let rowPool,colPool,fallback,checkFn;
   if(gtype==="land"){
@@ -6735,6 +6770,10 @@ function initLogikGitter(){
     rowPool=GRID_LM_ROW_POOL;colPool=GRID_LM_COL_POOL;
     fallback={r:["leu","las","laf"],c:["lla","llk","lls"]};
     checkFn=(_,rc,cc)=>LANDMARKS.some(l=>checkGridCriterion(l.name,rc,l)&&checkGridCriterion(l.name,cc,l));
+  }else if(gtype==="food"){
+    rowPool=GRID_FOOD_ROW_POOL;colPool=GRID_FOOD_COL_POOL;
+    fallback={r:["feu","fas","fam"],c:["flb","flc","flp"]};
+    checkFn=(_,rc,cc)=>(FOOD_DATA||[]).some(f=>checkGridCriterion(f.dish,rc,f)&&checkGridCriterion(f.dish,cc,f));
   }else{
     rowPool=GRID_UNESCO_ROW_POOL;colPool=GRID_UNESCO_COL_POOL;
     fallback={r:["ueu","uas","uaf"],c:["ula","ulk","ulp"]};
@@ -6822,7 +6861,7 @@ function renderLogikGitter(sc){
       <div style="font-size:.88rem;font-weight:800;color:var(--text);margin-bottom:4px">\u{1F30D} Welches Konzept passt zu beiden Kriterien?</div>
       <div style="font-size:.75rem;color:var(--text3);margin-bottom:4px;padding:.3rem .5rem;background:var(--bg2);border-radius:8px">\u{1F4CD} <strong>${esc(gd.rowCrit[r].label)}</strong> &amp; <strong>${esc(gd.colCrit[c].label)}</strong></div>
       <div style="font-size:.72rem;font-weight:700;color:var(--text3);margin-bottom:5px">${_gtype==="land"?"\u{1F3AF} GESUCHT: LAND":_gtype==="stadt"?"\uD83C\uDFD9 GESUCHT: STADT":_gtype==="wahrzeichen"?"\uD83C\uDFDB GESUCHT: WAHRZEICHEN":"\uD83C\uDF0E GESUCHT: UNESCO-ST\u00c4TTE"}</div>
-      <input type="text" id="lg-inp" placeholder="Land eingeben\u2026" value="${esc(S.gridInput||'')}"
+      <input type="text" id="lg-inp" placeholder="${gd.gridType==='food'?'Gericht eingeben\u2026':gd.gridType==='stadt'?'Stadt eingeben\u2026':gd.gridType==='wahrzeichen'?'Wahrzeichen eingeben\u2026':gd.gridType==='unesco'?'UNESCO-St\u00e4tte\u2026':'Land eingeben\u2026'}" value="${esc(S.gridInput||'')}"
         oninput="lgUpdate(this.value)"
         onkeydown="if(event.key==='Enter'&&S.gridSugg&&S.gridSugg[0])handleGridAnswer(S.gridData.activeCell.r,S.gridData.activeCell.c,S.gridSugg[0])"
         dir="ltr" style="width:100%;box-sizing:border-box;direction:ltr;text-align:left;padding-left:15px">
@@ -6863,6 +6902,7 @@ function renderLogikGitter(sc){
         <option value="stadt" ${S.gridTypeMode==="stadt"?"selected":""}>🏙 Städte</option>
         <option value="wahrzeichen" ${S.gridTypeMode==="wahrzeichen"?"selected":""}>🏛 Wahrzeichen</option>
         <option value="unesco" ${S.gridTypeMode==="unesco"?"selected":""}>🌎 UNESCO</option>
+    <option value="food" ${S.gridTypeMode==="food"?"selected":""}>🍽️ Gerichte</option>
       </select>
     </div>
     ${gridHtml}${statusHtml}${inputHtml}${endHtml}
@@ -7008,8 +7048,10 @@ function genWappenQ(){
   const wrongs=[];const used=new Set([correct.cc]);
   while(wrongs.length<3&&others.length>wrongs.length){const w=_r(others);if(\!used.has(w.cc)){used.add(w.cc);wrongs.push(w);}}
   if(wrongs.length<3)return null;
-  const opts=[correct,...wrongs].sort(()=>rng()-.5).map(w=>displayCountry(w.cc)||w.c);
-  return{type:"wappen",prompt:"Welchem Land gehört dieses Wappen?",subj:displayCountry(correct.cc)||correct.c,img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"🛡️ Wappen von "+correct.c};
+  /* P168: fall back to curated w.c when cc not in COUNTRIES */
+  const _wdc=w=>{const r=displayCountry(w.cc);return(r&&r!==w.cc)?r:w.c;};
+  const opts=[correct,...wrongs].sort(()=>rng()-.5).map(_wdc);
+  return{type:"wappen",prompt:"Welchem Land gehört dieses Wappen?",subj:_wdc(correct),img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"🛡️ Wappen von "+correct.c};
 }
 
 /* P153: Fallback when Wappen SVG fails to load */
