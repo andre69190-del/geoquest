@@ -2815,6 +2815,73 @@ const GRID_COL_POOL=[
 
 /* Backward-compat alias */
 const GRID_CRIT=GRID_ROW_POOL.concat(GRID_COL_POOL);
+/* P161: Stadt pools */
+const GRID_CITY_ROW_POOL=[
+  {id:"ceu",type:"city_continent",value:"Europe",        label:"In Europa"},
+  {id:"cas",type:"city_continent",value:"Asia",          label:"In Asien"},
+  {id:"caf",type:"city_continent",value:"Africa",        label:"In Afrika"},
+  {id:"csa",type:"city_continent",value:"South America", label:"In S\u00fcdamerika"},
+  {id:"cna",type:"city_continent",value:"North America", label:"In Nordamerika"},
+  {id:"cde",type:"city_country",  value:"Germany",       label:"In Deutschland"},
+  {id:"cfr",type:"city_country",  value:"France",        label:"In Frankreich"},
+  {id:"cus",type:"city_country",  value:"United States", label:"In den USA"},
+  {id:"cbr",type:"city_country",  value:"Brazil",        label:"In Brasilien"},
+  {id:"ccn",type:"city_country",  value:"China",         label:"In China"},
+  {id:"cin",type:"city_country",  value:"India",         label:"In Indien"},
+  {id:"cjp",type:"city_country",  value:"Japan",         label:"In Japan"},
+  {id:"cmx",type:"city_country",  value:"Mexico",        label:"In Mexiko"},
+  {id:"cru",type:"city_country",  value:"Russia",        label:"In Russland"},
+  {id:"ctr",type:"city_country",  value:"Turkey",        label:"In der T\u00fcrkei"},
+  {id:"car",type:"city_country",  value:"Argentina",     label:"In Argentinien"},
+];
+const GRID_CITY_COL_POOL=[
+  {id:"cla",type:"city_letter",value:"A",label:"Beginnt mit A"},
+  {id:"clb",type:"city_letter",value:"B",label:"Beginnt mit B"},
+  {id:"clc",type:"city_letter",value:"C",label:"Beginnt mit C"},
+  {id:"cld",type:"city_letter",value:"D",label:"Beginnt mit D"},
+  {id:"clg",type:"city_letter",value:"G",label:"Beginnt mit G"},
+  {id:"clh",type:"city_letter",value:"H",label:"Beginnt mit H"},
+  {id:"clk",type:"city_letter",value:"K",label:"Beginnt mit K"},
+  {id:"cll",type:"city_letter",value:"L",label:"Beginnt mit L"},
+  {id:"clm",type:"city_letter",value:"M",label:"Beginnt mit M"},
+  {id:"cln",type:"city_letter",value:"N",label:"Beginnt mit N"},
+  {id:"clp",type:"city_letter",value:"P",label:"Beginnt mit P"},
+  {id:"clr",type:"city_letter",value:"R",label:"Beginnt mit R"},
+  {id:"cls",type:"city_letter",value:"S",label:"Beginnt mit S"},
+  {id:"clt",type:"city_letter",value:"T",label:"Beginnt mit T"},
+  {id:"clw",type:"city_letter",value:"W",label:"Beginnt mit W"},
+];
+/* P161: Wahrzeichen pools */
+const GRID_LM_ROW_POOL=[
+  {id:"leu",type:"lm_continent",value:"Europe", label:"In Europa"},
+  {id:"las",type:"lm_continent",value:"Asia",   label:"In Asien"},
+  {id:"laf",type:"lm_continent",value:"Africa", label:"In Afrika"},
+];
+const GRID_LM_COL_POOL=[
+  {id:"lla",type:"lm_letter",value:"A",label:"Beginnt mit A"},
+  {id:"llb",type:"lm_letter",value:"B",label:"Beginnt mit B"},
+  {id:"llh",type:"lm_letter",value:"H",label:"Beginnt mit H"},
+  {id:"llk",type:"lm_letter",value:"K",label:"Beginnt mit K"},
+  {id:"llp",type:"lm_letter",value:"P",label:"Beginnt mit P"},
+  {id:"lls",type:"lm_letter",value:"S",label:"Beginnt mit S"},
+  {id:"llt",type:"lm_letter",value:"T",label:"Beginnt mit T"},
+];
+/* P161: UNESCO pools */
+const GRID_UNESCO_ROW_POOL=[
+  {id:"ueu",type:"un_continent",value:"Europe", label:"In Europa"},
+  {id:"uas",type:"un_continent",value:"Asia",   label:"In Asien"},
+  {id:"uaf",type:"un_continent",value:"Africa", label:"In Afrika"},
+];
+const GRID_UNESCO_COL_POOL=[
+  {id:"ula",type:"un_letter",value:"A",label:"Beginnt mit A"},
+  {id:"uld",type:"un_letter",value:"D",label:"Beginnt mit D"},
+  {id:"ulf",type:"un_letter",value:"F",label:"Beginnt mit F"},
+  {id:"ulk",type:"un_letter",value:"K",label:"Beginnt mit K"},
+  {id:"ulp",type:"un_letter",value:"P",label:"Beginnt mit P"},
+  {id:"uls",type:"un_letter",value:"S",label:"Beginnt mit S"},
+  {id:"ult",type:"un_letter",value:"T",label:"Beginnt mit T"},
+  {id:"ulv",type:"un_letter",value:"V",label:"Beginnt mit V"},
+];
 /* Phase 129: Airport data */
 const _AIRPORTS={
 "United States":13513,"Brazil":4093,"Mexico":1714,"Canada":1467,
@@ -6508,19 +6575,28 @@ function finishCustomGame(){
 }
 
 /* ---- Logik-Gitter ---- */
-function checkGridCriterion(name,crit){
+function checkGridCriterion(name,crit,item){
+  /* P161: Stadt */
+  if(crit.type==="city_continent"){const c=item||CITIES.find(x=>x.name===name);return c?c.continent===crit.value:false;}
+  if(crit.type==="city_country")  {const c=item||CITIES.find(x=>x.name===name);return c?c.country===crit.value:false;}
+  if(crit.type==="city_letter")   {return(name[0]||"").toUpperCase()===crit.value;}
+  /* P161: Wahrzeichen */
+  if(crit.type==="lm_continent")  {const l=item||LANDMARKS.find(x=>x.name===name);return l?l.continent===crit.value:false;}
+  if(crit.type==="lm_letter")     {return(name[0]||"").toUpperCase()===crit.value;}
+  /* P161: UNESCO */
+  if(crit.type==="un_continent")  {const u=item||UNESCO_SITES.find(x=>x.name===name);return u?u.continent===crit.value:false;}
+  if(crit.type==="un_letter")     {return(name[0]||"").toUpperCase()===crit.value;}
+  /* original Land logic */
   const co=COUNTRIES.find(c=>c.c===name);
   if(!co)return false;
   if(crit.type==="continent")return co.ct===crit.value;
-  /* P148: check localized first letter, fall back to English */
   if(crit.type==="letter"){
     const _lang=(typeof S!=="undefined"&&S.language)||"de";
     let _ln=name;
     try{if(co)_ln=getCountryName(co.cc,_lang)||name;}catch(e){}
-    return (_ln[0]||"").toUpperCase()===crit.value;
+    return(_ln[0]||"").toUpperCase()===crit.value;
   }
   if(crit.type==="has_border"){const nbs=ROUTE_BORDERS[crit.value]||[];return nbs.includes(name);}
-  /* P144: new types */
   if(crit.type==="subregion")return co.sr===crit.value;
   if(crit.type==="island")return _ISLAND_STATES.has(name);
   if(crit.type==="landlocked")return _LANDLOCKED_SET.has(name);
@@ -6530,11 +6606,27 @@ function checkGridCriterion(name,crit){
 function getGridSugg(txt){
   if(!txt||txt.length<1)return[];
   const t=txt.toLowerCase();
+  const gtype=(S.gridData&&S.gridData.gridType)||"land";
+  const used=(S.gridData&&S.gridData.usedCountries instanceof Set)?S.gridData.usedCountries:new Set();
+  /* P161: type-specific search */
+  if(gtype==="stadt"){
+    return CITIES
+      .filter(c=>!used.has(c.name)&&(c.name.toLowerCase().startsWith(t)||(c.asciiName||"").toLowerCase().startsWith(t)))
+      .sort((a,b)=>b.population-a.population)
+      .slice(0,12).map(c=>c.name);
+  }
+  if(gtype==="wahrzeichen"){
+    return LANDMARKS
+      .filter(l=>!used.has(l.name)&&l.name.toLowerCase().startsWith(t))
+      .slice(0,12).map(l=>l.name);
+  }
+  if(gtype==="unesco"){
+    return UNESCO_SITES
+      .filter(u=>!used.has(u.name)&&u.name.toLowerCase().startsWith(t))
+      .slice(0,12).map(u=>u.name);
+  }
+  /* original Land logic */
   const lang=(typeof S!=="undefined"&&S.language)||localStorage.getItem("gq_lang")||"de";
-  /* P147: defensive Set */
-  const _uc=S.gridData?S.gridData.usedCountries:null;
-  const used=(_uc instanceof Set)?_uc:new Set(_uc?Array.from(_uc):[]);
-  /* P147: match English OR localized name */
   return COUNTRIES
     .filter(c=>{
       if(!c.ct||used.has(c.c))return false;
@@ -6558,26 +6650,47 @@ function lgUpdate(val){
   if(!el)return;
   const gd=S.gridData;
   if(!gd||!gd.activeCell){el.innerHTML="";return;}
-  /* P147: show localized name, keep English key in data-name */
-  const _lang=(typeof S!=="undefined"&&S.language)||"de";
+  const gtype=gd.gridType||"land";
   el.innerHTML=(S.gridSugg||[]).slice(0,12).map(s=>{
-    const _co=COUNTRIES.find(c=>c.c===s);
-    const _dn=_co?getCountryName(_co.cc,_lang):s;
-    return `<div class="lg-sugg-item" data-name="${esc(s)}" onclick="handleGridAnswer(S.gridData.activeCell.r,S.gridData.activeCell.c,this.dataset.name)">${flagOf(s)} ${esc(_dn)}</div>`;
+    let icon="",label=s;
+    if(gtype==="stadt"){
+      const ci=CITIES.find(c=>c.name===s);
+      icon=ci?flagOf(ci.country||ci.cc||""):"";
+      label=s+(ci?" ("+displayCountry(ci.countryCode||ci.cc||"")+")":" ");
+    }else if(gtype==="wahrzeichen"){
+      icon="";
+      const lm=LANDMARKS.find(l=>l.name===s);
+      label=s+(lm?" \u00b7 "+displayCountry(lm.cc):"");
+    }else if(gtype==="unesco"){
+      icon="";
+      const un=UNESCO_SITES.find(u=>u.name===s);
+      label=s+(un?" \u00b7 "+displayCountry(un.cc):"");
+    }else{
+      const _co=COUNTRIES.find(c=>c.c===s);
+      const _lang=(typeof S!=="undefined"&&S.language)||"de";
+      icon=flagOf(s);
+      label=_co?getCountryName(_co.cc,_lang):s;
+    }
+    return `<div class="lg-sugg-item" data-name="${esc(s)}" onclick="handleGridAnswer(S.gridData.activeCell.r,S.gridData.activeCell.c,this.dataset.name)">${icon} ${esc(label)}</div>`;
   }).join("");
 }
-function handleGridAnswer(r,c,country){
+function handleGridAnswer(r,c,name){
   const gd=S.gridData;
   if(!gd||gd.solved||gd.failed)return;
   const cell=gd.cells[r*3+c];
   if(cell.country)return;
-  const ok=checkGridCriterion(country,gd.rowCrit[r])&&checkGridCriterion(country,gd.colCrit[c]);
+  const gtype=gd.gridType||"land";
+  let item=null;
+  if(gtype==="stadt")         item=CITIES.find(x=>x.name===name);
+  else if(gtype==="wahrzeichen")item=LANDMARKS.find(x=>x.name===name);
+  else if(gtype==="unesco")   item=UNESCO_SITES.find(x=>x.name===name);
+  const ok=checkGridCriterion(name,gd.rowCrit[r],item)&&checkGridCriterion(name,gd.colCrit[c],item);
   if(ok){
-    cell.country=country;
-    gd.usedCountries.add(country);
+    cell.country=name;
+    gd.usedCountries.add(name);
     gd.correctCount++;
     gd.score+=500+gd.lives*50;
-    gd.lastMsg="\u2713 Richtig! "+country;
+    gd.lastMsg="\u2713 Richtig! "+name;
     gd.lastOk=true;
     gd.activeCell=null;
     S.gridInput="";
@@ -6585,7 +6698,7 @@ function handleGridAnswer(r,c,country){
     if(gd.correctCount>=9)gd.solved=true;
   }else{
     gd.lives--;
-    gd.lastMsg="\u2717 "+country+" passt nicht zu beiden Kriterien.";
+    gd.lastMsg="\u2717 "+name+" passt nicht zu beiden Kriterien.";
     gd.lastOk=false;
     if(gd.lives<=0){gd.failed=true;gd.activeCell=null;}
   }
@@ -6595,33 +6708,43 @@ function handleGridAnswer(r,c,country){
   render();
 }
 function initLogikGitter(){
-  const allCo=COUNTRIES.filter(c=>c.ct);
-  /* P144: helper -- Fisher-Yates shuffle returning new array */
   function _shuf(a){const b=a.slice();for(let i=b.length-1;i>0;i--){const j=~~(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
-  /* P144: check all 9 cells have >=1 valid country */
-  function _ok(rc,cc){for(let r=0;r<3;r++)for(let c=0;c<3;c++)if(!allCo.some(co=>checkGridCriterion(co.c,rc[r])&&checkGridCriterion(co.c,cc[c])))return false;return true;}
+  /* P161: weighted type selection */
+  const _types=["land","land","land","stadt","wahrzeichen","unesco"];
+  const gtype=_types[~~(Math.random()*_types.length)];
+  let rowPool,colPool,fallback,checkFn;
+  if(gtype==="land"){
+    rowPool=GRID_ROW_POOL;colPool=GRID_COL_POOL;
+    fallback={r:["eu","as","af"],c:["ls","lm","lp"]};
+    const allCo=COUNTRIES.filter(c=>c.ct);
+    checkFn=(_,rc,cc)=>allCo.some(co=>checkGridCriterion(co.c,rc)&&checkGridCriterion(co.c,cc));
+  }else if(gtype==="stadt"){
+    rowPool=GRID_CITY_ROW_POOL;colPool=GRID_CITY_COL_POOL;
+    fallback={r:["ceu","cas","cna"],c:["clb","clm","cls"]};
+    checkFn=(_,rc,cc)=>CITIES.some(ci=>checkGridCriterion(ci.name,rc,ci)&&checkGridCriterion(ci.name,cc,ci));
+  }else if(gtype==="wahrzeichen"){
+    rowPool=GRID_LM_ROW_POOL;colPool=GRID_LM_COL_POOL;
+    fallback={r:["leu","las","laf"],c:["lla","llk","lls"]};
+    checkFn=(_,rc,cc)=>LANDMARKS.some(l=>checkGridCriterion(l.name,rc,l)&&checkGridCriterion(l.name,cc,l));
+  }else{
+    rowPool=GRID_UNESCO_ROW_POOL;colPool=GRID_UNESCO_COL_POOL;
+    fallback={r:["ueu","uas","uaf"],c:["ula","ulk","ulp"]};
+    checkFn=(_,rc,cc)=>UNESCO_SITES.some(u=>checkGridCriterion(u.name,rc,u)&&checkGridCriterion(u.name,cc,u));
+  }
+  function _ok(rc,cc){for(let r=0;r<3;r++)for(let c=0;c<3;c++)if(!checkFn(null,rc[r],cc[c]))return false;return true;}
   let rowCrit,colCrit,found=false;
-  /* 60 attempts: each picks 3 random rows + 3 random cols from separate pools */
   for(let t=0;t<60&&!found;t++){
-    const rows=_shuf(GRID_ROW_POOL);
-    const cols=_shuf(GRID_COL_POOL);
+    const rows=_shuf(rowPool);
+    const cols=_shuf(colPool);
     const rc=[rows[0],rows[1],rows[2]];
     const cc=[cols[0],cols[1],cols[2]];
     if(_ok(rc,cc)){rowCrit=rc;colCrit=cc;found=true;}
   }
-  /* P144 fallback: 5 diverse known-good combos (not always EU/AS/AF + A/B/C) */
   if(!found){
-    const _fb=[
-      {r:["eu","as","af"],  c:["ls","lm","lp"]},
-      {r:["eu","af","sa"],  c:["la","li","lt"]},
-      {r:["as","af","na"],  c:["lb","ln","ls"]},
-      {r:["eu","as","sa"],  c:["la","lc","lm"]},
-      {r:["eu","af","as"],  c:["li","ls","lt"]},
-    ][~~(Math.random()*5)];
-    const byId=id=>GRID_ROW_POOL.find(x=>x.id===id)||GRID_COL_POOL.find(x=>x.id===id);
-    rowCrit=_fb.r.map(byId);colCrit=_fb.c.map(byId);
+    const byId=id=>[...rowPool,...colPool].find(x=>x.id===id);
+    rowCrit=fallback.r.map(byId);colCrit=fallback.c.map(byId);
   }
-  S.gridData={rowCrit,colCrit,
+  S.gridData={rowCrit,colCrit,gridType:gtype,
     cells:Array(9).fill(null).map(()=>({country:null})),
     lives:3,activeCell:null,solved:false,failed:false,
     correctCount:0,score:0,lastMsg:"",lastOk:true,usedCountries:new Set()};
@@ -6630,7 +6753,7 @@ function initLogikGitter(){
   /* P150: 90s countdown for Logic Grid */
   S.tm=90;S.dur=90;
   clearInterval(tIv);
-  if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{
+  tIv=setInterval(()=>{
     S.tm--;
     if(S.tm<=0){
       clearInterval(tIv);
@@ -6639,7 +6762,6 @@ function initLogikGitter(){
         S.gridData.lastMsg="\u23f1 Zeit abgelaufen!";
       }
     }
-    
   },1000);
 }
 function renderLogikGitter(sc){
@@ -6647,6 +6769,8 @@ function renderLogikGitter(sc){
   if(!gd)return '<div class="scr"></div>';
   const hearts='\u2764\ufe0f'.repeat(gd.lives)+'\uD83D\uDDA4'.repeat(3-gd.lives);
   /* P136: instruction above grid */
+  const _gtype=gd.gridType||"land";
+  const _typeLbl=_gtype==="land"?"\uD83C\uDF0D Land":_gtype==="stadt"?"\uD83C\uDFD9 Stadt":_gtype==="wahrzeichen"?"\uD83C\uDFDB Wahrzeichen":"\uD83C\uDF0E UNESCO";
   const _lgInstr='<p style="font-size:.8rem;color:var(--text2);text-align:center;margin-bottom:.6rem;line-height:1.4">Tippe auf ein <b>+</b>-Feld und w\u00e4hle den passenden Begriff, der zur <b>Zeile</b> und <b>Spalte</b> passt!</p>';
   let gridHtml=_lgInstr+'<div class="lg-grid" style="display:grid;grid-template-columns:max-content repeat(3,1fr);gap:8px;margin-top:15px;align-items:stretch">';
   gridHtml+='<div class="lg-corner"><span style="font-size:.6rem;color:var(--text3)">\u2193 Zeile / Spalte \u2192</span></div>';
@@ -6657,7 +6781,7 @@ function renderLogikGitter(sc){
       const cell=gd.cells[r*3+c];
       const isAct=gd.activeCell&&gd.activeCell.r===r&&gd.activeCell.c===c;
       if(cell.country){
-        gridHtml+=`<div class="lg-cell lg-filled">${flagOf(cell.country)}<div class="lg-cell-name">${esc(displayCountry(cell.country))}</div></div>`;
+        gridHtml+=`<div class="lg-cell lg-filled">${(()=>{if(_gtype==="land")return flagOf(cell.country)+'<div class="lg-cell-name">'+esc(displayCountry(cell.country))+'</div>';if(_gtype==="stadt"){const _ci=CITIES.find(c=>c.name===cell.country);return (_ci?flagOf(_ci.country||_ci.cc||""):"\uD83C\uDFD9")+'<div class="lg-cell-name">'+esc(cell.country)+'</div>';}if(_gtype==="wahrzeichen")return "\uD83C\uDFDB"+'<div class="lg-cell-name">'+esc(cell.country)+'</div>';return "\uD83C\uDF0E"+'<div class="lg-cell-name">'+esc(cell.country)+'</div>';})()}</div>`;
       }else if(gd.solved||gd.failed){
         gridHtml+='<div class="lg-cell lg-empty-done">–</div>';
       }else{
@@ -6682,7 +6806,7 @@ function renderLogikGitter(sc){
     inputHtml=`<div class="lg-inp-wrap">
       <div style="font-size:.88rem;font-weight:800;color:var(--text);margin-bottom:4px">\u{1F30D} Welches Konzept passt zu beiden Kriterien?</div>
       <div style="font-size:.75rem;color:var(--text3);margin-bottom:4px;padding:.3rem .5rem;background:var(--bg2);border-radius:8px">\u{1F4CD} <strong>${esc(gd.rowCrit[r].label)}</strong> &amp; <strong>${esc(gd.colCrit[c].label)}</strong></div>
-      <div style="font-size:.72rem;font-weight:700;color:var(--text3);margin-bottom:5px">\u{1F3AF} GESUCHT: LAND</div>
+      <div style="font-size:.72rem;font-weight:700;color:var(--text3);margin-bottom:5px">${_gtype==="land"?"\u{1F3AF} GESUCHT: LAND":_gtype==="stadt"?"\uD83C\uDFD9 GESUCHT: STADT":_gtype==="wahrzeichen"?"\uD83C\uDFDB GESUCHT: WAHRZEICHEN":"\uD83C\uDF0E GESUCHT: UNESCO-ST\u00c4TTE"}</div>
       <input type="text" id="lg-inp" placeholder="Land eingeben\u2026" value="${esc(S.gridInput||'')}"
         oninput="lgUpdate(this.value)"
         onkeydown="if(event.key==='Enter'&&S.gridSugg&&S.gridSugg[0])handleGridAnswer(S.gridData.activeCell.r,S.gridData.activeCell.c,S.gridSugg[0])"
@@ -6716,7 +6840,7 @@ function renderLogikGitter(sc){
       </div>
     </div>
     <div class="tbar"><div class="tfill" style="width:${pct()}%;background:${tc()}"></div></div>
-    <div style="text-align:center;font-size:.92rem;font-weight:900;color:var(--text);padding:.4rem 0 .2rem">\u{1F9E9} Logik-Gitter</div>
+    <div style="text-align:center;font-size:.92rem;font-weight:900;color:var(--text);padding:.4rem 0 .2rem">${_typeLbl}</div>
     ${gridHtml}${statusHtml}${inputHtml}${endHtml}
     <div style="height:1.5rem"></div>
   </div>`;
