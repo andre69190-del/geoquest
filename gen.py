@@ -4484,7 +4484,7 @@ function genFlagColorQ(){
   const opts=sh([correct,...uniqueReal]);
   return{type:"beta_flagcolor",
     prompt:"[BETA] 🎨 Welche Farbe kommt auf der Flagge von "+displayCountry(ccFromCountry(country))+" NICHT vor?",
-    subj:displayCountry(ccFromCountry(country)),ans:correct,opts,meta:flagCols.join(", "),
+    subj:ccFromCountry(country),ans:correct,opts,meta:flagCols.join(", "),
     lid:country,cc:ccFromCountry(country),cat:"geo"};
 }
 function genFlightDistanceCompareQ(){
@@ -5690,7 +5690,7 @@ app.innerHTML=`<div class="scr">
   if(!q){S.ph="menu";S.q=null;render();return;}  /* guard: q not yet set */
   const col=tc(),p=pct(),_tr=tier(st);
   let qBody="";
-  if(q.type==="flag"){
+  if(q.type==="flag"||q.type==="beta_flagcolor"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="qflag"><img src="https://flagcdn.com/w80/${q.subj}.png" alt="Flagge"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="outline"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="outline-wrap" id="gq-outline-svg"></div>`;
@@ -7011,6 +7011,29 @@ function initSLF(){
     else {}
   },1000);
 }
+function handleSLFSubmit(){
+  clearInterval(tIv);
+  if(!S.slfData||S.slfData.phase!=="input")return;
+  const{letter,answers}=S.slfData;
+  const L=letter.toUpperCase();
+  const norm=s=>(s||"").trim().toLowerCase();
+  const startsOk=(s,L)=>!!s&&s.charAt(0).toUpperCase()===L;
+  /* Stadt: match against CITIES dataset */
+  const cityAns=norm(answers.city);
+  const cityValid=startsOk(cityAns,L)&&(typeof CITIES!=="undefined")&&CITIES.some(c=>norm(c.name)===cityAns||(c.asciiName&&norm(c.asciiName)===cityAns));
+  /* Land: match against COUNTRIES with localized names */
+  const countryAns=norm(answers.country);
+  const countryValid=startsOk(countryAns,L)&&COUNTRIES.some(c=>norm(c.c)===countryAns||norm(displayCountry(c.cc)||"")===countryAns);
+  /* Fluss: match against RIVERS dataset */
+  const riverAns=norm(answers.river);
+  const riverValid=startsOk(riverAns,L)&&(typeof RIVERS!=="undefined")&&RIVERS.some(r=>norm(r.name)===riverAns);
+  const pts=(cityValid?10:0)+(countryValid?10:0)+(riverValid?10:0);
+  S.slfData={...S.slfData,results:{cityValid,countryValid,riverValid},phase:"result"};
+  S.sc+=pts;
+  S.correct+=(cityValid?1:0)+(countryValid?1:0)+(riverValid?1:0);
+  if(window.mpGameCh)mpSend("score_update",{score:S.sc,rd:S.rd||0,correct:S.correct||0});
+  render();
+}
 function handleLandHauptstadtSubmit(){
   clearInterval(tIv);
   if(!S.lhData||S.lhData.phase!=="input")return;
@@ -7036,7 +7059,7 @@ function renderLandHauptstadt(sc){
   const timerCol=timeLeft<=10?"#ef4444":timeLeft<=20?"#f59e0b":"#10b981";
   if(phase==="result"){
     const{cityValid,countryValid,riverValid}=S.slfData.results||{};
-    const rowHtml=(label,val,valid)=>`<div class="slf-result-row"><span class="slf-result-label">${label}</span><span class="slf-result-val">${esc(val)||"–"}</span><span style="font-size:1rem">${valid?"✓…":"âŒ"}</span></div>`;
+    const rowHtml=(label,val,valid)=>`<div class="slf-result-row"><span class="slf-result-label">${label}</span><span class="slf-result-val">${esc(val)||"–"}</span><span style="font-size:1rem">${valid?"✓":"❌"}</span></div>`;
     return`<div class="scr"><div class="panel">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
         <div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">ERGEBNIS</div><div style="font-size:1.4rem;font-weight:900">📍 ${letter}</div></div>
