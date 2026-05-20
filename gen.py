@@ -4758,9 +4758,30 @@ const GEN={
 
 /* GAME LOOP */
 /* P154: Global error boundary — prevents silent white-screen crashes */
+function _sendBugMail(subject, body){
+  /* ── KONFIG: Ersetze diese Adresse mit deiner echten E-Mail ── */
+  const _BUG_MAIL="deine-email@beispiel.de"; /* <<< HIER E-MAIL EINTRAGEN */
+  window.location.href="mailto:"+_BUG_MAIL
+    +"?subject="+encodeURIComponent(subject)
+    +"&body="+encodeURIComponent(body);
+}
 window.onerror=function(m,u,l,c,e){
   console.error("🛑 CRASH SHIELD:",m,"at",u+":"+l);
-  return false; /* let browser also log it */
+  const app=document.getElementById("app");
+  if(!app)return false;
+  const stateSnap=(typeof S!=="undefined")?JSON.stringify({mode:S.mode,ph:S.ph,rd:S.rd,sc:S.sc,diff:S.diff}).substring(0,400):"(kein State)";
+  const errTxt=String(m)+(u?" @ "+u+":"+l:"");
+  app.innerHTML=`<div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;background:#0f172a;text-align:center">
+    <div style="font-size:3rem;margin-bottom:1rem">🛑</div>
+    <div style="font-size:1.1rem;font-weight:900;color:#f87171;margin-bottom:.5rem">GeoQuest ist abgestürzt</div>
+    <div style="font-size:.78rem;color:#94a3b8;margin-bottom:1.2rem;max-width:320px;word-break:break-word">${errTxt}</div>
+    <button onclick="(function(){
+      const body='Hallo Entwickler,\n\nmein Spiel ist gerade abgestürzt.\nBitte hänge hier ggf. einen Screenshot an.\n\n--- TECHNISCHE DATEN ---\nFehler: ${errTxt.replace(/'/g,'\\x27')}\nState: ${stateSnap.replace(/'/g,'\\x27')}';
+      _sendBugMail('GeoQuest Crash-Report', body);
+    })()" style="background:#ef4444;color:#fff;border:none;border-radius:12px;padding:.7rem 1.4rem;font-size:.88rem;font-weight:700;cursor:pointer;margin-bottom:.75rem">🐞 Fehlerbericht senden</button>
+    <button onclick="location.reload()" style="background:#1e293b;color:#94a3b8;border:1px solid #334155;border-radius:12px;padding:.6rem 1.2rem;font-size:.82rem;cursor:pointer">🔄 Neu laden</button>
+  </div>`;
+  return true; /* prevent default browser error */
 };
 function clr(){clearInterval(tIv);clearTimeout(fTo);clearTimeout(S.freezeTimer);S.freezeTimer=null;}
 function nextRound(){
@@ -7424,6 +7445,7 @@ function renderHomeTab(){
     <p style="text-align:center;color:var(--text2);font-size:.72rem;font-weight:600;margin:.3rem 0 .5rem">${
       t(S.diff==="casual"?"diff_desc_casual":S.diff==="hardcore"?"diff_desc_hc":"diff_desc_surv")
     }</p>
+    <div style="margin:.6rem 0 .5rem;text-align:center"><button onclick="(function(){const body='Hallo Entwickler,\n\nich habe folgendes Feedback / einen Fehler gefunden:\n\n[Bitte beschreibe den Fehler und h\u00e4nge ggf. einen Screenshot an]\n\n';_sendBugMail('GeoQuest Feedback',body);})()" style="background:transparent;color:var(--text3);border:none;font-size:.72rem;cursor:pointer;text-decoration:underline;padding:.3rem .5rem">🐞 Feedback oder Fehler melden</button></div>
     <div style="height:5rem"></div>`;
   console.log("[GQ] renderHomeTab() returning length:",_homeHTML.length);
   return _homeHTML;
@@ -7464,9 +7486,9 @@ function renderLernenTab(){
     </div>
     <div style="display:flex;gap:8px;margin-top:.85rem">
       <button class="btn-g" style="margin-bottom:0;flex:1" onclick="S.fcIdx=Math.max(0,S.fcIdx-1);S.fcFlipped=false;render()" ${idx===0?"disabled":""}>\u2190 Zur\u00fcck</button>
-      <button class="btn-p" style="margin-bottom:0;flex:1" onclick="S.fcIdx=Math.min(pool.length-1,S.fcIdx+1);S.fcFlipped=false;render()" ${idx>=pool.length-1?"disabled":""}>Weiter \u2192</button>
+      <button class="btn-p" style="margin-bottom:0;flex:1" onclick="S.fcIdx++;S.fcFlipped=false;render()" ${idx>=pool.length-1?"disabled":""}>Weiter \u2192</button>
     </div>
-    <button class="btn-g" style="margin-top:.5rem" onclick="S.fcIdx=~~(Math.random()*pool.length);S.fcFlipped=false;render()">\u{1F500} Zuf\u00e4llig</button>
+    <button class="btn-g" style="margin-top:.5rem" onclick="S.fcIdx=~~(Math.random()*999999);S.fcFlipped=false;render()">\u{1F500} Zuf\u00e4llig</button>
   </div>`;
 }
 
