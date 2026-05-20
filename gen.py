@@ -4696,15 +4696,35 @@ function genIvrQ(){
   if(allCCs.length<4)return null;
   const corCC=allCCs[~~(rng()*allCCs.length)];
   const corIVR=_IVR_CODES[corCC];
-  const otherIVRs=allCCs.filter(cc=>cc!==corCC).map(cc=>_IVR_CODES[cc]);
+  // Build combined DE+EN name string for anagram subset check
+  const corEntry=COUNTRIES.find(c=>c.cc===corCC)||{};
+  const nameDe=(displayCountry(corCC)||"").toLowerCase();
+  const nameEn=(corEntry.c||"").toLowerCase();
+  const searchPool=nameDe+nameEn;  // e.g. "österreichaustria" for AT
+  // Score a candidate IVR code: every letter must appear in searchPool
+  function isAnagramSubset(ivr){
+    const used={};
+    for(const ch of ivr.toLowerCase()){
+      used[ch]=(used[ch]||0)+1;
+      const available=(searchPool.split(ch).length-1);
+      if(used[ch]>available)return false;
+    }
+    return true;
+  }
+  const others=allCCs.filter(cc=>cc!==corCC);
+  const otherIVRs=others.map(cc=>_IVR_CODES[cc]);
+  // Tier 1: anagram subsets of the combined DE+EN name
+  const tier1=otherIVRs.filter(ivr=>ivr!==corIVR&&isAnagramSubset(ivr));
+  // Tier 2: same first letter as correct answer
   const p1=corIVR.slice(0,1);
-  const sameStart=otherIVRs.filter(ivr=>ivr.startsWith(p1)&&ivr!==corIVR);
-  const sameLen=otherIVRs.filter(ivr=>ivr.length===corIVR.length&&ivr!==corIVR&&!sameStart.includes(ivr));
-  let pool=sameStart.length>=3?sameStart:[...sameStart,...sameLen];
-  if(pool.length<3)pool=[...pool,...otherIVRs.filter(ivr=>!pool.includes(ivr)&&ivr!==corIVR)];
-  const picked=sh([...pool]).slice(0,3);
+  const tier2=otherIVRs.filter(ivr=>ivr!==corIVR&&!tier1.includes(ivr)&&ivr.startsWith(p1));
+  // Tier 3: same length
+  const tier3=otherIVRs.filter(ivr=>ivr!==corIVR&&!tier1.includes(ivr)&&!tier2.includes(ivr)&&ivr.length===corIVR.length);
+  // Build pool with priority tiers, shuffle each tier
+  let pool=[...sh([...tier1]),...sh([...tier2]),...sh([...tier3]),...sh(otherIVRs.filter(ivr=>ivr!==corIVR&&!tier1.includes(ivr)&&!tier2.includes(ivr)&&!tier3.includes(ivr)))];
+  const picked=pool.slice(0,3);
   const opts=sh([corIVR,...picked]);
-  const subj=displayCountry(corCC)||corCC.toUpperCase();
+  const subj=nameDe?nameDe.charAt(0).toUpperCase()+nameDe.slice(1):corCC.toUpperCase();
   return{type:"map_ivr",
     prompt:"\u{1F697}\u{1F194} Kennzeichen für "+subj+"?",
     subj,ans:corIVR,opts,meta:"IVR: "+corIVR,lid:corCC,cc:corCC};
@@ -8461,6 +8481,13 @@ input[type=text]::placeholder{color:var(--text3)}
 .fc-arr{background:var(--bg2);border:1.5px solid var(--border);border-radius:8px;padding:.3rem .65rem;font-size:1rem;cursor:pointer;color:var(--text)}
 .fc-arr:hover{border-color:var(--accent)}
 .flashcard{background:var(--bg2);border-radius:18px;padding:1.75rem 1.5rem;text-align:center;box-shadow:var(--shadow);border:1px solid var(--border);min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;margin-bottom:.75rem;position:relative}
+.fc-front{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%}
+.fc-back{display:none;flex-direction:column;align-items:center;justify-content:center;width:100%}
+.flashcard.flipped .fc-front{display:none}
+.flashcard.flipped .fc-back{display:flex}
+.fc-label{font-size:.65rem;font-weight:700;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;margin-bottom:.5rem}
+.fc-region{font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:.3rem}
+.fc-country{font-size:.75rem;color:#10b981;font-weight:700;margin-top:4px}
 .fc-hint{font-size:.65rem;color:var(--text3);position:absolute;bottom:.7rem;right:.9rem}
 .fc-front-lbl{font-size:.65rem;font-weight:700;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;margin-bottom:.5rem}
 .fc-plate{font-size:2.5rem;font-weight:900;color:#0f172a;letter-spacing:2px;background:#f0f4f8;border:3px solid #334155;border-radius:10px;padding:.3rem 1rem;margin-bottom:.4rem;display:inline-block}
