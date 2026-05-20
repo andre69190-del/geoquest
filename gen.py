@@ -2503,7 +2503,7 @@ const MODES=[
   {id:"map_guess",  icon:"\u{1F5FA}",title:"Finde das Land",    group:"map_mode",prompt:"Klick auf das gesuchte Land",         desc:"Klicke das gesuchte Land auf der Weltkarte"},
   {id:"map_reverse",icon:"\u{1F3AF}",title:"Wer bin ich?",        group:"map_mode",prompt:"Welches Land ist markiert?",          desc:"Erkenne das markierte Land auf der Weltkarte",time:25},
   {id:"map_capital",icon:"📍",title:"Hauptstadt-Radar",   group:"map_mode",prompt:"Tippe auf das Land der Hauptstadt",  desc:"Kenne die Hauptstädte",time:25},
-  {id:"map_ivr",icon:"\u{1F697}\u{1F194}",title:"Kennzeichen-Knacker",group:"map_mode",prompt:"IVR-Quiz",desc:"Finde das internationale L\u00e4nderkennzeichen",time:20},
+  {id:"map_ivr",icon:"\u{1F697}\u{1F194}",title:"Kennzeichen-Knacker",group:"eu_plates",prompt:"IVR-Quiz",desc:"Finde das internationale L\u00e4nderkennzeichen",time:20},
   /* ---- New Game Modes (coming soon) ---- */
   {id:"logic_grid",    icon:"\u{1F9E9}",title:"Logik-Gitter",          group:"new_modes",prompt:"L\u00f6se das R\u00e4tsel",                desc:"L\u00f6se geografische Logik-R\u00e4tsel"},
   {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten"},
@@ -2542,12 +2542,12 @@ function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
 const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare"],cost:1000},
-  eu_plates:{label:"EU-Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard"],cost:500},
+  eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_flight","comp_mountain","comp_nsextent","comp_olympics"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
-  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","map_ivr"],cost:0},
+  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
