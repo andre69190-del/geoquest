@@ -4692,23 +4692,21 @@ const _IVR_CODES={
   "kw":"KWT","qa":"Q","om":"OM","bh":"BRN","kz":"KZ","uz":"UZ",
 };
 function genIvrQ(){
-  const ccs=Object.keys(_IVR_CODES);
-  if(ccs.length<4)return null;
-  const ci=~~(rng()*ccs.length);
-  const corCC=ccs[ci];
+  const allCCs=Object.keys(_IVR_CODES);
+  if(allCCs.length<4)return null;
+  const corCC=allCCs[~~(rng()*allCCs.length)];
   const corIVR=_IVR_CODES[corCC];
-  /* smart distractors: same first char OR same code length */
-  const allPairs=Object.entries(_IVR_CODES).filter(([cc])=>cc!==corCC);
+  const otherIVRs=allCCs.filter(cc=>cc!==corCC).map(cc=>_IVR_CODES[cc]);
   const p1=corIVR.slice(0,1);
-  const similar=allPairs.filter(([,ivr])=>
-    (ivr.startsWith(p1)||Math.abs(ivr.length-corIVR.length)<=1)&&ivr!==corIVR
-  );
-  const pool=similar.length>=3?similar:allPairs;
-  const picked=sh([...pool]).slice(0,3).map(([,ivr])=>ivr);
+  const sameStart=otherIVRs.filter(ivr=>ivr.startsWith(p1)&&ivr!==corIVR);
+  const sameLen=otherIVRs.filter(ivr=>ivr.length===corIVR.length&&ivr!==corIVR&&!sameStart.includes(ivr));
+  let pool=sameStart.length>=3?sameStart:[...sameStart,...sameLen];
+  if(pool.length<3)pool=[...pool,...otherIVRs.filter(ivr=>!pool.includes(ivr)&&ivr!==corIVR)];
+  const picked=sh([...pool]).slice(0,3);
   const opts=sh([corIVR,...picked]);
   const subj=displayCountry(corCC)||corCC.toUpperCase();
   return{type:"map_ivr",
-    prompt:"\u{1F697}\u{1F194} Kennzeichen f\u00fcr "+subj+"?",
+    prompt:"\u{1F697}\u{1F194} Kennzeichen für "+subj+"?",
     subj,ans:corIVR,opts,meta:"IVR: "+corIVR,lid:corCC,cc:corCC};
 }
 
@@ -6047,7 +6045,7 @@ app.innerHTML=`<div class="scr">
     if(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"){
       answerHtml="";
     }else{
-      const btns=q.opts.map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${esc(displayCountry(o))}${mk}</button>`;}).join("");
+      const btns=q.opts.map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${esc(q.type==="map_ivr"?o:displayCountry(o))}${mk}</button>`;}).join("");
       const _twoOpts=q.opts&&q.opts.length===2?' two-opts':'';
       answerHtml=`<div class="answers${_twoOpts}">${btns}</div>`;
     }
