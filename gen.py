@@ -2503,6 +2503,7 @@ const MODES=[
   {id:"map_guess",  icon:"\u{1F5FA}",title:"Finde das Land",    group:"map_mode",prompt:"Klick auf das gesuchte Land",         desc:"Klicke das gesuchte Land auf der Weltkarte"},
   {id:"map_reverse",icon:"\u{1F3AF}",title:"Wer bin ich?",        group:"map_mode",prompt:"Welches Land ist markiert?",          desc:"Erkenne das markierte Land auf der Weltkarte",time:25},
   {id:"map_capital",icon:"📍",title:"Hauptstadt-Radar",   group:"map_mode",prompt:"Tippe auf das Land der Hauptstadt",  desc:"Kenne die Hauptstädte",time:25},
+  {id:"map_ivr",icon:"\u{1F697}\u{1F194}",title:"Kennzeichen-Knacker",group:"map_mode",prompt:"IVR-Quiz",desc:"Finde das internationale L\u00e4nderkennzeichen",time:20},
   /* ---- New Game Modes (coming soon) ---- */
   {id:"logic_grid",    icon:"\u{1F9E9}",title:"Logik-Gitter",          group:"new_modes",prompt:"L\u00f6se das R\u00e4tsel",                desc:"L\u00f6se geografische Logik-R\u00e4tsel"},
   {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten"},
@@ -2546,7 +2547,7 @@ const MODE_CATS={
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_flight","comp_mountain","comp_nsextent","comp_olympics"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
-  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital"],cost:0},
+  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","map_ivr"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
@@ -2560,7 +2561,7 @@ function genCurrRealQ(){
   /* Show only currency name+ISO – NOT country name (would give away the answer) */
   const dis=CURR_REAL.filter((_,i)=>i!==idx).sort(()=>rng()-.5).slice(0,3).map(x=>x.n+" ("+x.iso+")");
   const ans=cor.n+" ("+cor.iso+")";
-  return{type:"curr_real",prompt:"Welche W\u00e4hrung hat …",subj:cor.c,ans,opts:sh([ans,...dis]),meta:cor.n,lid:cor.c,cc:ccFromCountry(cor.c)};
+  return{type:"curr_real",prompt:"Welche W\u00e4hrung hat …",subj:displayCountry(ccFromCountry(cor.c))||cor.c,ans,opts:sh([ans,...dis]),meta:cor.n,lid:cor.c,cc:ccFromCountry(cor.c)};
 }
 function genPopCompareQ(){
   if(!CAPS_POP||CAPS_POP.length<2)return null;
@@ -4365,7 +4366,7 @@ function genFlagselQ(){
   let pool=_rfilt(COUNTRIES.filter(x=>x.cc\!==S.lid),4); if(pool.length<4) pool=COUNTRIES.filter(x=>x.cc\!==S.lid); if(pool.length<4) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.sr===cor.sr||x.ct===cor.ct,x=>x.cc===cor.cc,x=>x.cc,3);
-  return{type:"flagsel",prompt:t("q_flagsel"),subj:cor.c,ans:cor.cc,opts:sh([cor.cc,...dis]),meta:cor.ct,lid:cor.cc,cc:cor.cc};
+  return{type:"flagsel",prompt:t("q_flagsel"),subj:displayCountry(cor.cc)||cor.c,ans:cor.cc,opts:sh([cor.cc,...dis]),meta:cor.ct,lid:cor.cc,cc:cor.cc};
 }
 function genRcapitalQ(){
   let pool=_rfilt(CAPITALS.filter(x=>x.country\!==S.lid),3); if(pool.length<3) pool=CAPITALS.filter(x=>x.country\!==S.lid); if(pool.length<1) return null;
@@ -4474,7 +4475,7 @@ function genMapReverseQ(){
   const dis=sh([...others]).slice(0,3).map(_mLbl);
   const ansLabel=_mLbl(co);
   return{type:"map_reverse",prompt:"Welches Land ist hervorgehoben?",
-    subj:co.name,ans:ansLabel,opts:sh([ansLabel,...dis]),meta:"",lid:co.cc,cc:co.cc};
+    subj:_mLbl(co),ans:ansLabel,opts:sh([ansLabel,...dis]),meta:"",lid:co.cc,cc:co.cc};
 }
 
 function genMapCapitalQ(){
@@ -4672,6 +4673,45 @@ function genOlympicCompareQ(){
     prompt:"\U0001F3C5 Welches Land hat mehr Olympia-Gold (Sommer)?",
     subj:"",opts:[a,b],ans,meta,lid:a+"|"+b,cc:ccFromCountry(ans),cat:"stats"};
 }
+
+/* ── IVR: International Vehicle Registration codes (Phase 170) ── */
+const _IVR_CODES={
+  "de":"D","at":"A","ch":"CH","fr":"F","it":"I","es":"E","pt":"P","gb":"GB",
+  "nl":"NL","be":"B","lu":"L","dk":"DK","se":"S","no":"N","fi":"FIN",
+  "is":"IS","ie":"IRL","pl":"PL","cz":"CZ","sk":"SK","hu":"H","ro":"RO",
+  "bg":"BG","gr":"GR","tr":"TR","hr":"HR","si":"SLO","ba":"BIH","rs":"SRB",
+  "me":"MNE","mk":"NMK","al":"AL","cy":"CY","mt":"M","mc":"MC","li":"FL",
+  "sm":"RSM","ad":"AND","va":"V","lt":"LT","lv":"LV","ee":"EST",
+  "by":"BY","ua":"UA","md":"MD","ru":"RUS","ge":"GE","am":"AM","az":"AZ",
+  "us":"USA","ca":"CDN","mx":"MEX","br":"BR","ar":"RA","cl":"RCH",
+  "co":"CO","pe":"PE","ve":"YV","uy":"ROU","bo":"BOL","py":"PY","ec":"EC",
+  "au":"AUS","nz":"NZ","jp":"J","kr":"ROK","tw":"RC","in":"IND","pk":"PK",
+  "th":"T","id":"RI","my":"MAL","sg":"SGP","za":"ZA","eg":"ET","ma":"MA",
+  "tn":"TN","ng":"WAN","ke":"EAK","tz":"EAT","il":"IL","sa":"KSA",
+  "ae":"UAE","ir":"IR","iq":"IRQ","jo":"HKJ","sy":"SYR","lb":"RL",
+  "kw":"KWT","qa":"Q","om":"OM","bh":"BRN","kz":"KZ","uz":"UZ",
+};
+function genIvrQ(){
+  const ccs=Object.keys(_IVR_CODES);
+  if(ccs.length<4)return null;
+  const ci=~~(rng()*ccs.length);
+  const corCC=ccs[ci];
+  const corIVR=_IVR_CODES[corCC];
+  /* smart distractors: same first char OR same code length */
+  const allPairs=Object.entries(_IVR_CODES).filter(([cc])=>cc!==corCC);
+  const p1=corIVR.slice(0,1);
+  const similar=allPairs.filter(([,ivr])=>
+    (ivr.startsWith(p1)||Math.abs(ivr.length-corIVR.length)<=1)&&ivr!==corIVR
+  );
+  const pool=similar.length>=3?similar:allPairs;
+  const picked=sh([...pool]).slice(0,3).map(([,ivr])=>ivr);
+  const opts=sh([corIVR,...picked]);
+  const subj=displayCountry(corCC)||corCC.toUpperCase();
+  return{type:"map_ivr",
+    prompt:"\u{1F697}\u{1F194} Kennzeichen f\u00fcr "+subj+"?",
+    subj,ans:corIVR,opts,meta:"IVR: "+corIVR,lid:corCC,cc:corCC};
+}
+
 const GEN={
   city:genCityQ,flag:genFlagQ,capital:genCapitalQ,river:genRiverQ,
   landmark:genLandmarkQ,park:genParkQ,unesco:genUnescoQ,citymark:genCitymarkQ,
@@ -4695,6 +4735,7 @@ const GEN={
   map_guess:genMapGuessQ,
   map_reverse:genMapReverseQ,
   map_capital:genMapCapitalQ,
+  map_ivr:genIvrQ,
   logic_grid:()=>null,
   travel_route:()=>null,
   wappen_meister:genWappenQ,
@@ -5663,7 +5704,7 @@ function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.can
   /* Stamp detail modal */
   if(S.modal){
     const mastery=loadMastery();const m=mastery[S.modal]||{v:0,p:0};const rank=getMasteryRank(m.v,m.p);
-    const cn=COUNTRIES.find(c=>c.cc===S.modal)?.c||S.modal.toUpperCase();
+    const cn=displayCountry(S.modal)||COUNTRIES.find(c=>c.cc===S.modal)?.c||S.modal.toUpperCase();
     const rl={gold:"\u{1F947} Gold",silver:"\u{1F948} Silber",bronze:"\u{1F949} Bronze"}[rank]||"Gesperrt";
     const rc={gold:"#d97706",silver:"#94a3b8",bronze:"#c2410c"}[rank]||"var(--text3)";
     app.innerHTML=`<div class="modal-overlay" onclick="if(event.target===this){S.modal=null;render()}"><div class="modal-box">
@@ -7598,7 +7639,7 @@ function renderProfilTab(){
   const modeAcc={};
   history.forEach(g=>{if(\!modeAcc[g.mode])modeAcc[g.mode]={c:0,t:0};modeAcc[g.mode].c+=g.correct;modeAcc[g.mode].t+=g.rounds;});
   const modeBars=MODES.map(m=>{const s=modeAcc[m.id];if(\!s||\!s.t)return"";const p=Math.round(s.c/s.t*100);return`<div class="stat-bar-row"><div class="stat-bar-lbl">${m.icon} ${modeTitle(m).slice(0,11)}</div><div class="stat-bar-track"><div class="stat-bar-fill ${p<50?"low":p<80?"mid":""}" style="width:${p}%"></div></div><div class="stat-bar-pct">${p}%</div></div>`;}).filter(Boolean).join("");
-  const tileHtml=COUNTRIES.map(co=>{const m=mastery[co.cc]||{v:0,p:0};const r=getMasteryRank(m.v,m.p);const cls=r==="gold"?"mc-done":r==="silver"?"mc-learn":r==="bronze"?"mc-new":"";return`<div class="mc-tile${cls?" "+cls:""}" title="${co.c} · ${m.v} richtig" onclick="S.modal='${co.cc}';render()"></div>`;}).join("");
+  const tileHtml=COUNTRIES.map(co=>{const m=mastery[co.cc]||{v:0,p:0};const r=getMasteryRank(m.v,m.p);const cls=r==="gold"?"mc-done":r==="silver"?"mc-learn":r==="bronze"?"mc-new":"";return`<div class="mc-tile${cls?" "+cls:""}" title="${displayCountry(co.cc)||co.c} · ${m.v} richtig" onclick="S.modal='${co.cc}';render()"></div>`;}).join("");
   if(history.length>=2){
     const last10=history.slice(0,10).reverse();const maxSc=Math.max(...last10.map(g=>g.score),1);
     const W=300,H=72;
