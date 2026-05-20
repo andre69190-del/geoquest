@@ -4696,32 +4696,30 @@ function genIvrQ(){
   if(allCCs.length<4)return null;
   const corCC=allCCs[~~(rng()*allCCs.length)];
   const corIVR=_IVR_CODES[corCC];
-  // Build combined DE+EN name string for anagram subset check
   const corEntry=COUNTRIES.find(c=>c.cc===corCC)||{};
   const nameDe=(displayCountry(corCC)||"").toLowerCase();
   const nameEn=(corEntry.c||"").toLowerCase();
-  const searchPool=nameDe+nameEn+corIVR.toLowerCase();  // e.g. "österreichaustria" for AT
-  // Score a candidate IVR code: every letter must appear in searchPool
-  function isAnagramSubset(ivr){
-    const used={};
-    for(const ch of ivr.toLowerCase()){
-      used[ch]=(used[ch]||0)+1;
-      const available=(searchPool.split(ch).length-1);
-      if(used[ch]>available)return false;
+  // Subsequence check: letters of `code` must appear in `word` in order
+  function isSub(code,word){
+    let i=0;
+    for(let j=0;j<word.length&&i<code.length;j++){
+      if(code[i].toLowerCase()===word[j])i++;
     }
-    return true;
+    return i===code.length;
+  }
+  function isGoodFake(ivr){
+    return isSub(ivr,nameDe)||isSub(ivr,nameEn)||isSub(ivr,corIVR.toLowerCase());
   }
   const others=allCCs.filter(cc=>cc!==corCC);
   const otherIVRs=others.map(cc=>_IVR_CODES[cc]);
-  // Tier 1: anagram subsets of the combined DE+EN name
-  const tier1=otherIVRs.filter(ivr=>ivr!==corIVR&&isAnagramSubset(ivr));
-  // Tier 2: same first letter as correct answer
-  const p1=corIVR.slice(0,1);
-  const tier2=otherIVRs.filter(ivr=>ivr!==corIVR&&!tier1.includes(ivr)&&ivr.startsWith(p1));
-  // Tier 3: same length
-  const tier3=otherIVRs.filter(ivr=>ivr!==corIVR&&!tier1.includes(ivr)&&!tier2.includes(ivr)&&ivr.length===corIVR.length);
-  // Build pool with priority tiers, shuffle each tier
-  let pool=[...sh([...tier1]),...sh([...tier2]),...sh([...tier3]),...sh(otherIVRs.filter(ivr=>ivr!==corIVR&&!tier1.includes(ivr)&&!tier2.includes(ivr)&&!tier3.includes(ivr)))];
+  const p1=corIVR.slice(0,1).toLowerCase();
+  // Tier 1: subsequence of DE name, EN name, or correct IVR
+  const tier1=sh(otherIVRs.filter(ivr=>ivr!==corIVR&&isGoodFake(ivr)));
+  // Tier 2: same first letter, no subsequence match
+  const tier2=sh(otherIVRs.filter(ivr=>ivr!==corIVR&&!isGoodFake(ivr)&&ivr.toLowerCase().startsWith(p1)));
+  // Tier 3: everything else
+  const tier3=sh(otherIVRs.filter(ivr=>ivr!==corIVR&&!isGoodFake(ivr)&&!ivr.toLowerCase().startsWith(p1)));
+  const pool=[...tier1,...tier2,...tier3];
   const picked=pool.slice(0,3);
   const opts=sh([corIVR,...picked]);
   const subj=nameDe?nameDe.charAt(0).toUpperCase()+nameDe.slice(1):corCC.toUpperCase();
