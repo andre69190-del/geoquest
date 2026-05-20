@@ -4700,7 +4700,7 @@ function genIvrQ(){
   const corEntry=COUNTRIES.find(c=>c.cc===corCC)||{};
   const nameDe=(displayCountry(corCC)||"").toLowerCase();
   const nameEn=(corEntry.c||"").toLowerCase();
-  const searchPool=nameDe+nameEn;  // e.g. "österreichaustria" for AT
+  const searchPool=nameDe+nameEn+corIVR.toLowerCase();  // e.g. "österreichaustria" for AT
   // Score a candidate IVR code: every letter must appear in searchPool
   function isAnagramSubset(ivr){
     const used={};
