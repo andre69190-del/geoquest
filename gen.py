@@ -4697,32 +4697,34 @@ function genIvrQ(){
   const corCC=allCCs[~~(rng()*allCCs.length)];
   const corIVR=_IVR_CODES[corCC];
   const corEntry=COUNTRIES.find(c=>c.cc===corCC)||{};
-  const nameDe=(displayCountry(corCC)||"").toLowerCase();
-  const nameEn=(corEntry.c||"").toLowerCase();
-  // Subsequence check: letters of `code` must appear in `word` in order
-  function isSub(code,word){
-    let i=0;
-    for(let j=0;j<word.length&&i<code.length;j++){
-      if(code[i].toLowerCase()===word[j])i++;
-    }
-    return i===code.length;
+  const nameDe=(displayCountry(corCC)||"").toUpperCase().replace(/[^A-ZÀ-ɏ]/g,"");
+  const nameEn=(corEntry.c||"").toUpperCase().replace(/[^A-ZÀ-ɏ]/g,"");
+  // Derive plausible abbreviations from a name string
+  function deriveFakes(name){
+    if(!name)return[];
+    const out=[];
+    // Prefixes: first 1, 2, 3 letters
+    for(let n=1;n<=3;n++) if(name.length>=n) out.push(name.slice(0,n));
+    // Consonant skeleton: strip vowels, take first 3
+    const cons=name.replace(/[AEIOUÀ-ÖØ-Þ]/g,"").slice(0,3);
+    if(cons.length>=2) out.push(cons);
+    return out;
   }
-  function isGoodFake(ivr){
-    return isSub(ivr,nameDe)||isSub(ivr,nameEn)||isSub(ivr,corIVR.toLowerCase());
+  // Generate candidates from both DE and EN names, dedupe, remove correct answer
+  const raw=[...deriveFakes(nameDe),...deriveFakes(nameEn)];
+  const seen=new Set([corIVR]);
+  const fakes=[];
+  for(const f of raw){
+    if(f&&!seen.has(f)){seen.add(f);fakes.push(f);}
   }
-  const others=allCCs.filter(cc=>cc!==corCC);
-  const otherIVRs=others.map(cc=>_IVR_CODES[cc]);
-  const p1=corIVR.slice(0,1).toLowerCase();
-  // Tier 1: subsequence of DE name, EN name, or correct IVR
-  const tier1=sh(otherIVRs.filter(ivr=>ivr!==corIVR&&isGoodFake(ivr)));
-  // Tier 2: same first letter, no subsequence match
-  const tier2=sh(otherIVRs.filter(ivr=>ivr!==corIVR&&!isGoodFake(ivr)&&ivr.toLowerCase().startsWith(p1)));
-  // Tier 3: everything else
-  const tier3=sh(otherIVRs.filter(ivr=>ivr!==corIVR&&!isGoodFake(ivr)&&!ivr.toLowerCase().startsWith(p1)));
-  const pool=[...tier1,...tier2,...tier3];
-  const picked=pool.slice(0,3);
-  const opts=sh([corIVR,...picked]);
-  const subj=nameDe?nameDe.charAt(0).toUpperCase()+nameDe.slice(1):corCC.toUpperCase();
+  // Fallback: pad with first-letter + X/Z/N if somehow < 3
+  while(fakes.length<3){
+    const pad=(nameDe[0]||"X")+(["X","Z","N"][fakes.length]||"Q");
+    if(!seen.has(pad)){seen.add(pad);fakes.push(pad);}
+    else break;
+  }
+  const opts=sh([corIVR,...fakes.slice(0,3)]);
+  const subj=displayCountry(corCC)||(corEntry.c||corCC.toUpperCase());
   return{type:"map_ivr",
     prompt:"\u{1F697}\u{1F194} Kennzeichen für "+subj+"?",
     subj,ans:corIVR,opts,meta:"IVR: "+corIVR,lid:corCC,cc:corCC};
