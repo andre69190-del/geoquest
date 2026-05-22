@@ -8511,6 +8511,55 @@ document.addEventListener('DOMContentLoaded',function(){
     window.filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
   },200);
 });
+function toggleFavorite(modeId,ev){
+  if(ev){ev.preventDefault();ev.stopPropagation();}
+  var favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
+  var idx=favs.indexOf(modeId);
+  if(idx>=0){favs.splice(idx,1);}else{favs.push(modeId);}
+  localStorage.setItem('geoquest_favorites',JSON.stringify(favs));
+  // Update button opacity without re-render
+  document.querySelectorAll('[data-fav-id="'+modeId+'"]').forEach(function(btn){
+    btn.style.opacity=favs.includes(modeId)?'1':'.35';
+  });
+}
+window.toggleFavorite=toggleFavorite;
+function showFavorites(){
+  var favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
+  if(!favs.length){
+    // Toast: keine Favoriten
+    var t=document.createElement('div');
+    t.textContent='Noch keine Favoriten gespeichert';
+    t.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;padding:10px 18px;border-radius:20px;font-size:.82rem;font-weight:600;z-index:99999;pointer-events:none';
+    document.body.appendChild(t);
+    setTimeout(function(){t.remove();},2500);
+    return;
+  }
+  document.querySelectorAll('.accordion-section').forEach(function(section){
+    section.style.removeProperty('display');
+    var content=section.querySelector('.accordion-content');
+    var arrow=section.querySelector('.acc-arrow');
+    var hasMatch=false;
+    section.querySelectorAll('.mode-card').forEach(function(card){
+      if(favs.includes(card.dataset.modeId)){
+        card.style.removeProperty('display');
+        hasMatch=true;
+      } else {
+        card.style.setProperty('display','none','important');
+      }
+    });
+    if(hasMatch){
+      if(content){
+        var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
+        content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
+        content.classList.add('open');
+      }
+      if(arrow){arrow.style.transform='rotate(180deg)';}
+    } else {
+      section.style.setProperty('display','none','important');
+    }
+  });
+}
+window.showFavorites=showFavorites;
 function playRandomGame(){
   const pool=MODES.filter(m=>!m.comingSoon);
   if(!pool.length)return;
@@ -8569,6 +8618,7 @@ function renderHomeTab(){
   const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode"];
 
   // Build accordion sections — Pure Geo auto-open, others closed
+  const _favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
   const _accordionHTML=_CAT_ORDER.map(catId=>{
     const cat=MODE_CATS[catId];if(!cat)return'';
     const unlocked=isCategoryUnlocked(catId);
@@ -8580,11 +8630,13 @@ function renderHomeTab(){
       const isLocked=!unlocked&&!cs;
       const cardCls='mode-card'+(active?' active':'')+(cs?' coming-soon-card':'')+(isLocked?' locked-card':'');
       const clickAct=cs?"showComingSoonToast('"+m.title+"')":unlocked?"startGame('"+m.id+"')":"S.lockModal='"+catId+"';render()";
-      return`<div class="${cardCls}" onclick="${clickAct}" role="button" data-title="${modeTitle(m)}" data-desc="${(m.desc||'')+' '+m.id}" data-category="${catId}">
+      const isFav=_favs.includes(m.id);
+      return`<div class="${cardCls}" onclick="${clickAct}" role="button" data-title="${modeTitle(m)}" data-desc="${(m.desc||'')+' '+m.id}" data-category="${catId}" data-mode-id="${m.id}">
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${isLocked?`<span style="position:absolute;top:4px;right:4px;font-size:.75rem">\u{1F512}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:8px;right:8px;z-index:99999;width:28px;height:28px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:900;cursor:pointer;line-height:1;padding:0">i</button>`:""}
+        ${!cs&&unlocked?`<button type="button" class="fav-btn" data-fav-id="${m.id}" onclick="event.preventDefault();event.stopPropagation();window.toggleFavorite('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:6px;left:6px;z-index:99999;width:22px;height:22px;background:transparent;border:none;font-size:.7rem;cursor:pointer;line-height:1;padding:0;opacity:${isFav?'1':'.35'}">❤️</button>`:""}
+        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:6px;right:6px;z-index:99999;width:22px;height:22px;background:#3b82f6;color:#fff;border:none;border-radius:6px;font-size:.72rem;font-weight:900;cursor:pointer;line-height:1;padding:0">i</button>`:""}
       </div>`;
     }).join('');
     const albumCard=catId==='eu_plates'?`<div class="mode-card" data-category="eu_plates" onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6">
@@ -8635,7 +8687,7 @@ function renderHomeTab(){
     </div>
     <div class="menu-search-container" style="display:flex;gap:8px;margin:15px 15px 12px;align-items:center;flex-wrap:nowrap">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">
-      <button onclick="" style="background:var(--bg2);color:#ef4444;border:2px solid var(--border);padding:10px 12px;border-radius:10px;font-size:1.1rem;cursor:pointer;flex-shrink:0;line-height:1" title="Favoriten (demnächst)">❤️</button>
+      <button onclick="window.showFavorites()" style="background:var(--bg2);color:#ef4444;border:2px solid var(--border);padding:8px 11px;border-radius:10px;font-size:1rem;cursor:pointer;flex-shrink:0;line-height:1" title="Favoriten">❤️</button>
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
     <div id="mainGamesGrid" style="padding:0 15px">${_accordionHTML}</div>
