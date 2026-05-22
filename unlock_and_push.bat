@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Phase 192: Remove filter chips, .open class for accordion grid, unified layout for all categories"
+git commit -m "Phase 193: Revert to classic filter-chip flat grid, remove accordion, no nuclear CSS"
 echo.
 git push origin main
 echo.

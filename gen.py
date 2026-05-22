@@ -8434,7 +8434,7 @@ function filterGames(){
     filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
     return;
   }
-  // Searching: deactivate chips
+  // Searching: deactivate all chips
   document.querySelectorAll('.filter-chip').forEach(function(c){
     c.classList.remove('active');
     c.style.background='';
@@ -8443,94 +8443,50 @@ function filterGames(){
   var catLabels={pure_geo:'pure geo',lifestyle:'lifestyle',eu_plates:'kennzeichen plates',
     sport:'sport',hl_compare:'higher lower',comparisons:'vergleiche',
     airports:'airports flughaefen',neighbors:'nachbarlaender',map_mode:'weltkarte map'};
-  // Search all accordion sections
-  document.querySelectorAll('.accordion-section').forEach(function(section){
-    section.style.removeProperty('display');
-    var content=section.querySelector('.accordion-content');
-    var arrow=section.querySelector('.acc-arrow');
-    var header=section.querySelector('.accordion-header');
-    var hasMatch=false;
-    section.querySelectorAll('.mode-card').forEach(function(card){
-      var title=(card.dataset.title||'').toLowerCase();
-      var desc=(card.dataset.desc||'').toLowerCase();
-      var cat=(card.dataset.category||'').toLowerCase();
-      var catLabel=(catLabels[card.dataset.category]||'');
-      var match=(title+' '+desc+' '+cat+' '+catLabel).includes(q);
-      if(match){
-        card.style.removeProperty('display');
-        hasMatch=true;
-      } else {
-        card.style.setProperty('display','none','important');
-      }
-    });
-    if(hasMatch){
-      if(content){
-        var _gcF=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-        content.style.cssText='display:grid;grid-template-columns:repeat('+_gcF+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
-      }
-      if(arrow){arrow.style.transform='rotate(180deg)';}
-      if(header){header.style.marginBottom='10px';}
+  // Search all mode-cards directly (flat grid)
+  document.querySelectorAll('#mainGamesGrid .mode-card').forEach(function(card){
+    var title=(card.dataset.title||'').toLowerCase();
+    var desc=(card.dataset.desc||'').toLowerCase();
+    var cat=(card.dataset.category||'').toLowerCase();
+    var catLabel=(catLabels[card.dataset.category]||'');
+    var match=(title+' '+desc+' '+cat+' '+catLabel).includes(q);
+    if(match){
+      card.style.removeProperty('display');
     } else {
-      section.style.setProperty('display','none','important');
+      card.style.setProperty('display','none','important');
     }
   });
 }
 window.filterGames=filterGames;
 function filterByCategory(cat){
-  console.log('[GQ] filterByCategory:',cat);
   if(typeof S!=='undefined')S.filterCat=cat;
-  // Chip active states
+  // Update chip active states
   document.querySelectorAll('.filter-chip').forEach(function(c){
     var isActive=c.dataset.cat===cat;
     c.classList.toggle('active',isActive);
     c.style.background=isActive?'#3b82f6':'';
     c.style.color=isActive?'#fff':'';
+    c.style.borderColor=isActive?'#3b82f6':'';
   });
-  // Show/hide accordion sections
-  document.querySelectorAll('.accordion-section').forEach(function(section){
-    var sectionCat=section.dataset.cat;
-    if(cat==='all'){
-      section.style.removeProperty('display');
-    } else if(sectionCat===cat){
-      section.style.removeProperty('display');
-      var content=section.querySelector('.accordion-content');
-      var arrow=section.querySelector('.acc-arrow');
-      var header=section.querySelector('.accordion-header');
-      if(content){content.style.display='grid';}
-      if(arrow){arrow.style.transform='rotate(180deg)';}
-      if(header){header.style.marginBottom='10px';}
+  // Show/hide individual cards by data-category
+  document.querySelectorAll('#mainGamesGrid .mode-card').forEach(function(card){
+    if(cat==='all'||card.dataset.category===cat){
+      card.style.removeProperty('display');
     } else {
-      section.style.setProperty('display','none','important');
+      card.style.setProperty('display','none','important');
     }
   });
+  // Clear search input
   var gs=document.getElementById('gameSearch');
   if(gs)gs.value='';
 }
 window.filterByCategory=filterByCategory;
-window.toggleAccordion=function(header,catId){
-  var content=header.nextElementSibling;
-  var arrow=header.querySelector('.acc-arrow');
-  var isOpen=content.style.display==='grid'||content.style.display.indexOf('grid')>-1;
-  if(isOpen){
-    content.classList.remove('open');
-    content.style.display='none';
-    if(arrow)arrow.style.transform='rotate(0deg)';
-    header.style.marginBottom='0';
-  } else {
-    content.style.cssText='';
-    var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-    content.style.gridTemplateColumns='repeat('+gc+',1fr)';
-    content.classList.add('open');
-    if(arrow)arrow.style.transform='rotate(180deg)';
-    header.style.marginBottom='10px';
-  }
-};
 
 // Apply default filter on load via DOMContentLoaded
 document.addEventListener('DOMContentLoaded',function(){
   setTimeout(function(){
     window.filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
-  },300);
+  },200);
 });
 function playRandomGame(){
   const pool=MODES.filter(m=>!m.comingSoon);
@@ -8589,10 +8545,10 @@ function renderHomeTab(){
   console.log("[GQ] renderHomeTab() filterCat=",S.filterCat);
   const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode"];
 
-  const _accordionHTML=_CAT_ORDER.map(catId=>{
+  // Flat cards for ALL categories (no accordion)
+  const _flatCardsHTML=_CAT_ORDER.map(catId=>{
     const cat=MODE_CATS[catId];if(!cat)return'';
     const unlocked=isCategoryUnlocked(catId);
-    const isDefault=catId===(S.filterCat||'pure_geo');
     const catModes=MODES.filter(m=>cat.modes.includes(m.id)&&!m.comingSoon);
     const cards=catModes.map(m=>{
       const cs=m.comingSoon===true;
@@ -8612,68 +8568,25 @@ function renderHomeTab(){
         <div class="mode-title" style="color:#fff">Album</div>
         <div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div>
       </div>`:'';
-    const lockPill=!unlocked?`<span style="font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:10px;margin-left:4px">\u{1F512} ${cat.cost?cat.cost.toLocaleString():'?'} Coins</span>`:'';
-    const _gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-    const _accOpenStyle=`display:grid;grid-template-columns:repeat(${_gc},1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box`;
-    const _accStyle=isDefault?_accOpenStyle:'display:none';
-    return`<div class="accordion-section" data-cat="${catId}"${!isDefault?' style="display:none"':''}>
-      <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;margin-bottom:${isDefault?'10px':'0'};font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
-        <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
-        <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
-      </div>
-      <div class="accordion-content${isDefault?' open':''}" style="${_accStyle}">
-        ${cards}${albumCard}
-      </div>
-    </div>`;
+    return cards+albumCard;
   }).join('');
-  function catSection(catId){
-    const cat=MODE_CATS[catId];
-    if(\!cat){console.warn("[GQ] catSection: unknown catId",catId);return"";}
-    const unlocked=isCategoryUnlocked(catId);
-    const isOpen=S.activeCategory===catId;
-    const catModes=MODES.filter(m=>cat.modes.includes(m.id)&&\!m.comingSoon);
-    const cards=catModes.map(m=>{
-      const cs=m.comingSoon===true;
-      const bt=false; /* v1.0: no more beta badges */
-      const active=S.mode===m.id&&\!cs;
-      const cardCls="mode-card"+(active?" active":"")+(cs?" coming-soon-card":"")+(bt?" beta-card":"")+(\!unlocked&&\!cs?" locked-card":"");
-      const clickAct=cs?"showComingSoonToast('"+m.title+"')":unlocked?"startGame('"+m.id+"')":"S.lockModal='"+catId+"';render()";
-      return`<div class="${cardCls}" onclick="${clickAct}" role="button" data-title="${modeTitle(m)}" data-desc="${(m.desc||'')+' '+m.id}">
-        ${cs?`<span class="cs-badge">Bald</span>`:""}
-        ${bt?`<span class="beta-badge" title="${t('beta_warning')}">${t('badge_beta')}</span>`:""}
-        <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${!cs&&unlocked?`<span class="info-icon" onclick="event.stopPropagation();showGameInfo('${m.id}')">ℹ️</span>`:""}
-      </div>`;
-    }).join("");
-    const lockOverlay=\!unlocked?`<div class="cat-lock-overlay" onclick="S.lockModal='${catId}';render()">
-      <div style="text-align:center">
-        <div style="font-size:2rem;margin-bottom:6px">\u{1F512}</div>
-        <div style="color:var(--text);font-weight:900;font-size:.88rem">${cat.label}</div>
-        <div style="color:var(--text2);font-size:.75rem;margin:4px 0 10px">\u{1F4B0} ${cat.cost.toLocaleString()} GeoCoins</div>
-        <button class="btn-p" style="width:auto;padding:.4rem .9rem;font-size:.78rem;margin-bottom:0" onclick="event.stopPropagation();S.lockModal='${catId}';render()">Freischalten</button>
-      </div>
-    </div>`:"";
-    const chv=`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="transition:transform .22s;transform:${isOpen?"rotate(180deg)":"rotate(0deg)"}"><polyline points="6 9 12 15 18 9"/></svg>`;
-    return`<div class="acc-item${isOpen?" acc-open":""}">
-      <div class="acc-header" role="button" tabindex="0" onclick="S.activeCategory=S.activeCategory==='${catId}'?null:'${catId}';render()" aria-expanded="${isOpen}">
-        <div style="display:flex;align-items:center;gap:8px">
-          <span style="font-size:1.15rem;flex-shrink:0">${cat.icon}</span>
-          <span class="acc-label">${cat.label}</span>
-          ${\!unlocked?`<span class="acc-lock-pill">\u{1F512} ${cat.cost.toLocaleString()} Coins</span>`:""}
-        </div>
-        <span style="color:var(--text3);display:flex;align-items:center">${chv}</span>
-      </div>
-      <div class="acc-body" data-open="${isOpen}" style="${isOpen?'':'display:none'}">
-        <div style="position:relative"><div class="mode-grid" style="opacity:${unlocked?1:.4}">${cards}</div>${lockOverlay}</div>
-        ${catId==="eu_plates"?`<div style="background:var(--bg2);border:2px solid #3b82f6;border-radius:14px;padding:.8rem;margin-top:.5rem;cursor:pointer;display:flex;align-items:center;gap:12px;box-shadow:0 2px 10px rgba(59,130,246,.12);transition:opacity .15s" onclick="S.tab='album';render()" onmousedown="this.style.opacity='.7'" onmouseup="this.style.opacity='1'">
-          <div style="width:38px;height:38px;background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">\u{1F4D4}</div>
-          <div style="flex:1;min-width:0"><div style="font-weight:900;font-size:.83rem;color:var(--text)">Kennzeichen-Album & Spotter</div><div style="font-size:.68rem;color:var(--text3);margin-top:1px">${S.collectedPlates.length} von ${totalUniquePlates()||"?"} gesammelt</div></div>
-          <div style="color:#3b82f6;font-size:1rem;font-weight:700">\u2192</div>
-        </div>`:""}
-      </div>
-    </div>`;
-  }
+  // Filter chips (active chip = S.filterCat or 'pure_geo')
+  const _activeChip=(S.filterCat||'pure_geo');
+  const _chipDefs=[
+    {cat:'pure_geo',label:'\u{1F30D} Pure Geo'},
+    {cat:'lifestyle',label:'\u{1F3AD} Lifestyle'},
+    {cat:'eu_plates',label:'\u{1F697} Kennzeichen'},
+    {cat:'sport',label:'\u{1F3C6} Sport'},
+    {cat:'hl_compare',label:'\u{1F4CA} Höher/Niedriger'},
+    {cat:'comparisons',label:'⚖️ Vergleiche'},
+    {cat:'airports',label:'✈️ Airports'},
+    {cat:'neighbors',label:'\u{1F5FA}️ Nachbarn'},
+    {cat:'map_mode',label:'\u{1F5FA}️ Weltkarte'}
+  ];
+  const _chipsHTML='<button class="filter-chip'+(_activeChip==='all'?' active':'')+'" data-cat="all" onclick="window.filterByCategory(\'all\')" style="'+(_activeChip==='all'?'background:#3b82f6;color:#fff;border-color:#3b82f6':'')+'">Alle</button>'+
+    _chipDefs.map(c=>'<button class="filter-chip'+(c.cat===_activeChip?' active':'')+'" data-cat="'+c.cat+'" onclick="window.filterByCategory(\''+c.cat+'\')" style="'+(c.cat===_activeChip?'background:#3b82f6;color:#fff;border-color:#3b82f6':'')+'">'+(c.label)+'</button>').join('');
   /* Dynamic Home Header */
+
   const _li=sbUser&&sbProfile?.username;
   const _un=sbProfile?.username||(sbUser?.email?.split('@')[0]||'Gast');
   const _gc=(sbProfile?.geo_coins||0).toLocaleString();
@@ -8702,22 +8615,13 @@ function renderHomeTab(){
       <div style="flex:1"><div style="font-size:.9rem;font-weight:900;color:#fff">Lokal 1:1 Hot-Seat</div><div style="font-size:.7rem;color:rgba(255,255,255,.75)">Zwei Spieler · Ein Gerät · 10 Runden</div></div>
       <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:.25rem .75rem;font-size:.72rem;font-weight:700">► Los</div>
     </div>
-<style id="gq-nuclear">
-  :root{--grid-cols:4}
-  .games-grid{display:grid !important;grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;gap:15px !important;padding:0 15px 20px 15px !important}
-  #mainGamesGrid{display:block !important;padding:0 15px !important}
-  .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;align-items:center !important;text-align:center !important}
-  .mode-card:not([style*='display:none']){display:flex !important;flex-direction:column !important}
-  .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:10px !important;align-items:center !important}
-  #gameSearch{flex:1 !important;min-width:0 !important}
-  .btn-random-game{flex-shrink:0 !important;cursor:pointer !important}
-  .accordion-header:hover{opacity:.9 !important}
-</style>
+
     <div class="menu-search-container" style="display:flex;gap:10px;margin:15px;align-items:center;flex-wrap:nowrap">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
-    <div id="mainGamesGrid" style="padding:0 15px">${_accordionHTML}</div>
+    <div class="filter-chips-container">${_chipsHTML}</div>
+    <div id="mainGamesGrid">${_flatCardsHTML}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>
@@ -10106,4 +10010,4 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print('Also written -> index.html (Netlify deploy target)')
-                      
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
