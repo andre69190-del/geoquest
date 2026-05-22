@@ -6478,10 +6478,9 @@ app.innerHTML=`<div class="scr">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
+          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
         </div>
       </div>
-      <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
-      <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
       <div class="q-area" style="padding:0 8px 8px">
         <div style="text-align:center;margin:6px 0 6px">
           <div class="qprompt">${q.prompt}</div>
@@ -6666,8 +6665,15 @@ function drawWorldMap(targetName,sel,ok,preHL,readOnly){
   const zoom=d3.zoom().scaleExtent([1,10])
     .on('zoom',ev=>{
       g.attr('transform',ev.transform); /* zoom always enabled */
+      window._mapZoom=ev.transform; /* persist for redraw restore */
     });
   svg.call(zoom);
+  /* Restore zoom on timer-triggered redraws (sel===null = pre-answer) */
+  if(sel===null&&window._mapZoom&&window._mapZoom.k>1){
+    svg.call(zoom.transform,window._mapZoom);
+  } else if(sel!==null){
+    window._mapZoom=null; /* clear after answer so zoom-to-country starts clean */
+  }
 
   /* Sphere backdrop */
   g.append('path').datum({type:'Sphere'}).attr('d',path)
@@ -8959,7 +8965,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .btn-g:hover{border-color:var(--text3);color:var(--text)}
 .btn-cancel{background:rgba(239,68,68,.12);border:1.5px solid rgba(239,68,68,.4);color:#f87171;border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:700;cursor:pointer}
 .btn-cancel:hover{color:#f87171;border-color:#f87171}
-.btn-exit-global{position:absolute;top:10px;right:10px;z-index:1000;background:#ff4757;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:.82rem;font-weight:800;cursor:pointer;box-shadow:0 2px 8px rgba(255,71,87,.45);letter-spacing:.3px;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.btn-exit-global{background:#ff4757;color:#fff;border:none;border-radius:8px;padding:5px 11px;font-size:.76rem;font-weight:800;cursor:pointer;box-shadow:0 2px 6px rgba(255,71,87,.35);white-space:nowrap;flex-shrink:0;line-height:1.2}
 .btn-exit-global:hover{background:#ff2f43;box-shadow:0 3px 12px rgba(255,71,87,.6)}
 .btn-exit-global:active{transform:scale(.96)}
 .diff-toggle{display:flex;background:var(--bg3);border-radius:10px;padding:3px;margin-bottom:.75rem;border:1px solid var(--border)}

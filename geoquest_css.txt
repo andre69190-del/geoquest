@@ -41,7 +41,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .btn-g:hover{border-color:var(--text3);color:var(--text)}
 .btn-cancel{background:rgba(239,68,68,.12);border:1.5px solid rgba(239,68,68,.4);color:#f87171;border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:700;cursor:pointer}
 .btn-cancel:hover{color:#f87171;border-color:#f87171}
-.btn-exit-global{position:absolute;top:10px;right:10px;z-index:1000;background:#ff4757;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:.82rem;font-weight:800;cursor:pointer;box-shadow:0 2px 8px rgba(255,71,87,.45);letter-spacing:.3px;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.btn-exit-global{background:#ff4757;color:#fff;border:none;border-radius:8px;padding:5px 11px;font-size:.76rem;font-weight:800;cursor:pointer;box-shadow:0 2px 6px rgba(255,71,87,.35);white-space:nowrap;flex-shrink:0;line-height:1.2}
 .btn-exit-global:hover{background:#ff2f43;box-shadow:0 3px 12px rgba(255,71,87,.6)}
 .btn-exit-global:active{transform:scale(.96)}
 

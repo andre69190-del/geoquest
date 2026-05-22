@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "UI/UX: Global Exit Button Overhaul — Beenden-Button in allen Spielmodi (Phase 161)"
+git commit -m "FIX: Exit-Button Flex-Layout + HL_BETA Flags + D3 Zoom Snap-Back (Phase 162+163)"
 echo.
 git push origin main
 echo.
