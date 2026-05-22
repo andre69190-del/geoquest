@@ -5051,22 +5051,30 @@ function genPlateCompareQ(){
   const meta=kA+": "+m.fmt(vA)+" · "+kB+": "+m.fmt(vB);
   return{type:"plate_compare",prompt:m.prompt,subj:"",opts:[kA,kB],ans,meta,lid:kA+"|"+kB,cc:ccA,_codeA:codeA,_codeB:codeB};
 }
+/* Phase 170: Unique opts helper — prevents correct answer appearing in distractors */
+function _uOpts(ans,pool,n){
+  /* pool: array of distractor values; ans: correct answer string */
+  const seen=new Set([String(ans)]);
+  const out=[];
+  for(const v of pool){const s=String(v);if(!seen.has(s)){seen.add(s);out.push(v);if(out.length>=n)break;}}
+  return sh([ans,...out]);
+}
 function genFootballQ(mode){
   const type=mode||"stadium";
   if(type==="stadium"){
     const d=_footballData.stadiums,idx=~~(Math.random()*d.length),cor=d[idx];
-    const dis=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.country);
-    return{type:"stadium",prompt:"\u26BD In welchem Land steht dieses Stadion?",subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.city+", "+cor.cap.toLocaleString()+" Pl\u00e4tze",cc:cor.cc};
+    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).map(x=>x.country);
+    return{type:"stadium",prompt:"\u26BD In welchem Land steht dieses Stadion?",subj:cor.name,ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:cor.city+", "+cor.cap.toLocaleString()+" Pl\u00e4tze",cc:cor.cc};
   }
   if(type==="jersey"){
     const d=_footballData.jerseys,idx=~~(Math.random()*d.length),cor=d[idx];
-    const dis=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.country);
-    return{type:"jersey",prompt:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",subj:{cc:cor.cc,color:cor.color,style:cor.style},ans:cor.country,opts:sh([cor.country,...dis]),meta:"",cc:cor.cc};
+    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).map(x=>x.country);
+    return{type:"jersey",prompt:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",subj:{cc:cor.cc,color:cor.color,style:cor.style},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",cc:cor.cc};
   }
   if(type==="crest"){
     const d=_footballData.crests,idx=~~(Math.random()*d.length),cor=d[idx];
-    const dis=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.country);
-    return{type:"crest",prompt:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",subj:{shape:cor.shape,color:cor.color},ans:cor.country,opts:sh([cor.country,...dis]),meta:"",cc:cor.cc};
+    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).map(x=>x.country);
+    return{type:"crest",prompt:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",subj:{shape:cor.shape,color:cor.color},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",cc:cor.cc};
   }
   return null;
 }
@@ -5253,7 +5261,7 @@ function genBetaMCQ(bId){
   if(!pool||!pool.length)return null;
   const d=pool[~~(rng()*pool.length)];
   if(!d||!d.a||!d.fakes)return null;
-  const opts=sh([d.a,...d.fakes.slice(0,3)]);
+  const opts=_uOpts(d.a,d.fakes,3);
   return{type:"beta_mcq",prompt:"\u{1F9EA} [BETA] "+d.q,subj:d.subj||"",ans:d.a,opts,meta:d.meta||"",lid:"bmcq_"+bId,cc:ccFromCountry(d.a)||"de"};
 }
 
@@ -5433,7 +5441,7 @@ function renderLVModal(){
   const optsHtml=q&&q.opts?q.opts.map(o=>{
     let cls="btn-base";
     if(isFb){if(o===q.ans)cls+=" ok";else if(o===lv.sel&&o!==q.ans)cls+=" ng";else cls+=" dm";}
-    return `<button class="${cls}" onclick="lvAnswer(${JSON.stringify(o)})" ${isFb?"disabled":""}>${displayCountry(o)||o}</button>`;
+    return `<button class="${cls}" data-lv="${(o||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;')}" onclick="lvAnswer(this.dataset.lv)" ${isFb?"disabled":""}>${displayCountry(o)||o}</button>`;
   }).join(""):"";
   const tCol=lv.timer<=5?"#ef4444":lv.timer<=10?"#f59e0b":"#10b981";
   /* Build question body depending on type */
@@ -6721,7 +6729,7 @@ app.innerHTML=`<div class="scr">
     const disabled=sel\!==null?"disabled":"";
     const optHtml=q.opts.map(o=>{
       const cls=sel\!==null?(o===q.ans?" opt-ok":o===sel?" opt-ng":""):"";
-      return`<button class="opt-btn${cls}" onclick="answer(${JSON.stringify(o)},_secretGameToken)" ${disabled}>${esc(o)}</button>`;
+      return`<button class="opt-btn${cls}" data-av="${(o||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;')}" onclick="answer(this.dataset.av,_secretGameToken)" ${disabled}>${esc(o)}</button>`;
     }).join("");
     app.innerHTML=`<div class="scr map-scr">
       <div class="hud">
