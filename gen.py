@@ -8642,15 +8642,13 @@ function renderHomeTab(){
   .filter-chips-container::-webkit-scrollbar{display:none !important}
   .filter-chip{font-size:.85rem !important;padding:9px 18px !important;white-space:nowrap !important;flex-shrink:0 !important;border-radius:22px !important}
   .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center !important}
-  .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:8px !important;align-items:center !important}
-  #gameSearch{flex:1 !important;min-width:50px !important}
-  .btn-random-game,.settings-btn{flex-shrink:0 !important;cursor:pointer !important}
-  .settings-btn{background:#e2e8f0 !important;border:none !important;width:45px !important;height:45px !important;border-radius:8px !important;font-size:1.35rem !important;display:flex !important;align-items:center !important;justify-content:center !important}
+  .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:10px !important;align-items:center !important}
+  #gameSearch{flex:1 !important;min-width:0 !important}
+  .btn-random-game{flex-shrink:0 !important;cursor:pointer !important}
 </style>
-    <div class="menu-search-container" style="display:flex;gap:8px;margin:10px;align-items:center;width:calc(100% - 20px);box-sizing:border-box;flex-wrap:nowrap">
-      <input type="text" id="gameSearch" placeholder="🔍 Suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:8px;font-size:16px;min-width:0;outline:none;box-sizing:border-box">
-      <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 14px;border-radius:8px;font-weight:700;font-size:1.25rem;cursor:pointer;flex-shrink:0;white-space:nowrap">🎲</button>
-      <button onclick="if(typeof renderSettingsModal==='function')renderSettingsModal();" style="background:#e2e8f0;border:none;padding:0;border-radius:8px;font-size:1.4rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;width:45px;height:45px">⚙️</button>
+    <div class="menu-search-container" style="display:flex;gap:10px;margin:15px;align-items:center;flex-wrap:nowrap">
+      <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">
+      <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
     <div class="filter-chips-container">${_chips}</div>
     <div class="games-grid" id="mainGamesGrid">${_allCards}</div>
@@ -8957,7 +8955,18 @@ function renderProfilTab(){
     `:""}
   </div>`;
 
-  return '<div style="padding-bottom:100px">'+block1+block2+block3+block4+'</div>';
+  var block5=`<div style="margin:0 15px 20px 15px;padding:20px;background:var(--bg2);border-radius:15px;border:1px solid var(--border)">
+    <div style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:1px;margin-bottom:12px">APP-EINSTELLUNGEN</div>
+    <button onclick="if(typeof renderSettingsModal==='function'){renderSettingsModal();}" style="width:100%;background:var(--card-bg,var(--bg));border:2px solid var(--border);border-radius:10px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer;text-align:left">
+      <span style="font-size:1.4rem">⚙️</span>
+      <div style="flex:1">
+        <div style="font-size:.88rem;font-weight:700;color:var(--text)">Layout & Raster</div>
+        <div style="font-size:.72rem;color:var(--text3);margin-top:2px">Spaltenanzahl, Darstellung</div>
+      </div>
+      <span style="color:var(--text3);font-size:1rem">›</span>
+    </button>
+  </div>`;
+  return '<div style="padding-bottom:100px">'+block1+block2+block3+block4+block5+'</div>';
 }
 
 /* SETTINGS MODAL */
