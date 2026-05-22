@@ -2562,9 +2562,9 @@ const MODES=[
   /* Phase 166: 28 BETA modes */
   {id:"b1", icon:"\u26BD",title:"\u{1F9EA} Ausreisser-Farben",    group:"sport",   prompt:"Welches Land traegt unerwartete Trikotfarben?",      desc:"Trikotfarben vs. Flaggenfarben"},
   {id:"b2", icon:"\u{1F3CE}",title:"\u{1F9EA} F1-Spotter",           group:"sport",   prompt:"In welchem Land liegt diese Rennstrecke?",             desc:"Formel-1-Strecken auf der Karte finden"},
-  {id:"b4", icon:"\u{1F3C5}",title:"\u{1F9EA} Olympia-Zeitmaschine",group:"sport",   prompt:"Wer war Gastgeber der Sommerspiele?",                   desc:"Olympia-Gastgeberlaender erraten"},
+  {id:"b4", icon:"\u{1F3C5}",title:"\u{1F9EA} Olympia-Zeitmaschine",group:"sport",   prompt:"Wer war Gastgeber der Sommerspiele?",                   desc:"Olympia-Gastgeberländer erraten"},
   {id:"b6", icon:"\u{1F94A}",title:"\u{1F9EA} Nationalsportarten",   group:"sport",   prompt:"Aus welchem Land stammt dieser Sport?",                desc:"Nationale Sportarten zuordnen"},
-  {id:"b7", icon:"\u{1F3DF}",title:"\u{1F9EA} Hoehenluft-Stadien",  group:"sport",   prompt:"Welches Stadion liegt hoeher?",                         desc:"Stadien nach Hoehe vergleichen"},
+  {id:"b7", icon:"\u{1F3DF}",title:"\u{1F9EA} Höhenluft-Stadien",  group:"sport",   prompt:"Welches Stadion liegt höher?",                         desc:"Stadien nach Hoehe vergleichen"},
   {id:"b9", icon:"\u{1F30D}",title:"\u{1F9EA} Sport-Ursprung",       group:"sport",   prompt:"Wo wurde diese Sportart erfunden?",                    desc:"Geburtsort von Sportarten kennen"},
   {id:"b11",icon:"\u2694\uFE0F",title:"\u{1F9EA} Rivalen-Distanz",  group:"sport",   prompt:"Wie weit liegen Derby-Gegner auseinander?",             desc:"Entfernung zwischen Rivalenstadien schaetzen"},
   {id:"b17",icon:"\u{1F947}",title:"\u{1F9EA} Medaillen-Spiegel",    group:"sport",   prompt:"Welches Land hat mehr Winter-Gold?",                   desc:"Winter-Olympia-Goldmedaillen vergleichen"},
@@ -2574,10 +2574,10 @@ const MODES=[
   {id:"b22",icon:"\u{1F697}",title:"\u{1F9EA} Transit-Route",         group:"neighbors",prompt:"Welches Land muss man durchqueren?",                  desc:"Pflicht-Transitlaender kennen"},
   {id:"b23",icon:"\u{1F30A}",title:"\u{1F9EA} Kueste oder Inland?",  group:"neighbors",prompt:"Hat dieser Nachbarstaat Meereszugang?",              desc:"Binnenstaaten vs. Kuestenlaender"},
   {id:"b25",icon:"\u{1F914}",title:"\u{1F9EA} Fehlender Nachbar",     group:"neighbors",prompt:"Welcher Nachbar fehlt in der Liste?",                 desc:"Vollstaendige Nachbarschaftslisten kennen"},
-  {id:"b29",icon:"\u{1F4CF}",title:"\u{1F9EA} Laengste Grenze",       group:"neighbors",prompt:"Mit wem teilt dieses Land die laengste Grenze?",      desc:"Laengste Landgrenzen kennen"},
+  {id:"b29",icon:"\u{1F4CF}",title:"\u{1F9EA} Längste Grenze",       group:"neighbors",prompt:"Mit wem teilt dieses Land die längste Grenze?",      desc:"Längste Landgrenzen kennen"},
   {id:"b37",icon:"\u{1F4CD}",title:"\u{1F9EA} Hauptstadt-Naehe",      group:"neighbors",prompt:"Welches Hauptstadtpaar liegt naeher beieinander?",    desc:"Entfernung zwischen Hauptstaedten vergleichen"},
   {id:"b40",icon:"\u{1F91D}",title:"\u{1F9EA} Meiste Nachbarn",       group:"neighbors",prompt:"Welches Land hat mehr Landgrenzen?",                  desc:"Anzahl der Landgrenzen vergleichen"},
-  {id:"b41",icon:"\u{1F310}",title:"\u{1F9EA} Aequator-Schuetze",    group:"map_mode",prompt:"Klicke auf ein Aequator-Land",                          desc:"Aequatorlaender auf der Karte finden"},
+  {id:"b41",icon:"\u{1F310}",title:"\u{1F9EA} Äquator-Schuetze",    group:"map_mode",prompt:"Klicke auf ein Äquator-Land",                          desc:"Äquatorlaender auf der Karte finden"},
   {id:"b42",icon:"\u{1F333}",title:"\u{1F9EA} Klimazonen-Spotter",    group:"map_mode",prompt:"Finde das Land mit Tropenwald",                         desc:"Tropenwaldlaender auf der Karte anklicken"},
   {id:"b44",icon:"\u{1F9ED}",title:"\u{1F9EA} Breitengrad-Duell",    group:"map_mode",prompt:"Was liegt weiter noerdlich?",                            desc:"Breitengrade schätzen"},
   {id:"b45",icon:"\u26A1",   title:"\u{1F9EA} E-Mobility-Hotspot",    group:"map_mode",prompt:"Klicke auf das EV-fuehrende Land",                      desc:"Elektromobilitaets-Vorreiterlaender"},
@@ -5180,10 +5180,10 @@ b40:[
   {nameA:"Brazil",nameB:"Australia",prompt:"Welches Land hat mehr direkte Landgrenzen?",ans:"Brazil",metaA:"10 Nachbarn",metaB:"0 Nachbarn"}
 ],
 b41:[
-  {q:"Klicke auf ein Land das vom Aequator durchquert wird (Tipp: Westafrika).",answer:"Gabon"},
-  {q:"Klicke auf ein Land das vom Aequator durchquert wird (Tipp: Suedamerika).",answer:"Brazil"},
-  {q:"Klicke auf ein Land das vom Aequator durchquert wird (Tipp: Suedostasien).",answer:"Indonesia"},
-  {q:"Klicke auf ein Land das vom Aequator durchquert wird (Tipp: Ostafrika).",answer:"Kenya"}
+  {q:"Klicke auf ein Land das vom Äquator durchquert wird (Tipp: Westafrika).",answer:"Gabon"},
+  {q:"Klicke auf ein Land das vom Äquator durchquert wird (Tipp: Suedamerika).",answer:"Brazil"},
+  {q:"Klicke auf ein Land das vom Äquator durchquert wird (Tipp: Suedostasien).",answer:"Indonesia"},
+  {q:"Klicke auf ein Land das vom Äquator durchquert wird (Tipp: Ostafrika).",answer:"Kenya"}
 ],
 b42:[
   {q:"Klicke auf das Land mit dem groessten Tropenwald der Welt (Amazonas).",answer:"Brazil"},
@@ -8400,6 +8400,55 @@ function renderAdminTab(){
   </div>`;
 }
 
+function filterGames(){
+  const q=(document.getElementById('gameSearch')?.value||'').toLowerCase().trim();
+  const accList=document.querySelector('.acc-list');
+  if(!accList)return;
+  if(q){
+    accList.querySelectorAll('.acc-body').forEach(b=>b.style.display='block');
+    accList.querySelectorAll('.mode-card').forEach(card=>{
+      const text=((card.dataset.title||'')+(card.dataset.desc||'')).toLowerCase();
+      card.style.display=text.includes(q)?'':'none';
+    });
+    accList.querySelectorAll('.acc-item').forEach(item=>{
+      const vis=[...item.querySelectorAll('.mode-card')].some(c=>c.style.display!=='none');
+      item.style.display=vis?'':'none';
+    });
+  }else{
+    accList.querySelectorAll('.acc-body').forEach(b=>b.style.display='');
+    accList.querySelectorAll('.mode-card').forEach(c=>c.style.display='');
+    accList.querySelectorAll('.acc-item').forEach(i=>i.style.display='');
+  }
+}
+function playRandomGame(){
+  const pool=MODES.filter(m=>!m.comingSoon);
+  if(!pool.length)return;
+  const m=pool[~~(Math.random()*pool.length)];
+  startGame(m.id);
+}
+function showGameInfo(modeId){
+  const m=MODES.find(x=>x.id===modeId);
+  if(!m)return;
+  const title=modeTitle(m);
+  const desc=m.desc||'Kein Beschreibungstext vorhanden.';
+  const el=document.createElement('div');
+  el.id='game-info-modal';
+  el.innerHTML=`<div class="gim-backdrop" onclick="closeGameInfo()"></div>
+    <div class="gim-box">
+      <div style="font-size:2.8rem;margin-bottom:.4rem">${m.icon}</div>
+      <div style="font-size:1.05rem;font-weight:900;color:var(--text);margin-bottom:.6rem;line-height:1.3">${title}</div>
+      <div style="font-size:.82rem;color:var(--text2);line-height:1.55;margin-bottom:1.1rem">${desc}</div>
+      <div style="display:flex;gap:8px">
+        <button class="btn-p" onclick="closeGameInfo();startGame('${modeId}')" style="flex:1;margin-bottom:0">▶ Spielen</button>
+        <button onclick="closeGameInfo()" style="flex:1;background:var(--bg2);color:var(--text);border:2px solid var(--border);border-radius:10px;padding:.5rem;font-size:.85rem;font-weight:700;cursor:pointer">✕</button>
+      </div>
+    </div>`;
+  document.body.appendChild(el);
+}
+function closeGameInfo(){
+  const el=document.getElementById('game-info-modal');
+  if(el)el.remove();
+}
 function renderHomeTab(){
   console.log("[GQ] renderHomeTab() activeCategory=",S.activeCategory);
   function catSection(catId){
@@ -8414,11 +8463,12 @@ function renderHomeTab(){
       const active=S.mode===m.id&&\!cs;
       const cardCls="mode-card"+(active?" active":"")+(cs?" coming-soon-card":"")+(bt?" beta-card":"")+(\!unlocked&&\!cs?" locked-card":"");
       const clickAct=cs?"showComingSoonToast('"+m.title+"')":unlocked?"startGame('"+m.id+"')":"S.lockModal='"+catId+"';render()";
-      return`<div class="${cardCls}" onclick="${clickAct}" role="button">
+      return`<div class="${cardCls}" onclick="${clickAct}" role="button" data-title="${modeTitle(m)}" data-desc="${(m.desc||'')+' '+m.id}">
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${bt?`<span class="beta-badge" title="${t('beta_warning')}">${t('badge_beta')}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
         ${m.desc?`<div class="mode-desc">${m.desc}</div>`:""}
+        ${!cs&&unlocked?`<span class="info-icon" onclick="event.stopPropagation();showGameInfo('${m.id}')">ℹ️</span>`:""}
       </div>`;
     }).join("");
     const lockOverlay=\!unlocked?`<div class="cat-lock-overlay" onclick="S.lockModal='${catId}';render()">
@@ -8477,6 +8527,10 @@ function renderHomeTab(){
       <div style="font-size:2rem">⚔️</div>
       <div style="flex:1"><div style="font-size:.9rem;font-weight:900;color:#fff">Lokal 1:1 Hot-Seat</div><div style="font-size:.7rem;color:rgba(255,255,255,.75)">Zwei Spieler · Ein Gerät · 10 Runden</div></div>
       <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:.25rem .75rem;font-size:.72rem;font-weight:700">► Los</div>
+    </div>
+    <div class="menu-header-tools">
+      <input type="text" id="gameSearch" class="game-search-input" placeholder="🔍 Spiel suchen..." oninput="filterGames()">
+      <button class="btn-random-game" onclick="playRandomGame()">🎲 Zufall</button>
     </div>
     <div class="acc-list">
       ${catSection("pure_geo")}

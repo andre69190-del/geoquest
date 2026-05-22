@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT+FIX: Phase 165-168 — 28 beta modes, Admin Dashboard, Bug Reporter + Crash fix (SyntaxError), Stadium/Jersey/Crest buttons, Local MP btn-base CSS"
+git commit -m "FEAT+FIX: Phase 165-169 — 28 beta modes, Admin Dashboard, Bug Reporter, Crash fix, Stadium buttons fix, Local MP CSS + Menu Overhaul (Search, Random, Info-Modal, Umlaute, line-clamp)"
 echo.
 git push origin main
 echo.

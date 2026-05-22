@@ -466,7 +466,11 @@ input[type=text]::placeholder{color:var(--text3)}
   line-height:1.25;
   margin-top:2px;
   word-break:break-word;
-  overflow-wrap:break-word
+  overflow-wrap:break-word;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden
 }
 
 /* ── Phase 92: Vergleichs-Modi two-opts Layout ──────────────────────────── */
@@ -575,3 +579,19 @@ input[type=text]::placeholder{color:var(--text3)}
 .btn-bug:hover{background:#d97706;box-shadow:0 3px 12px rgba(245,158,11,.6)}
 .btn-bug:active{transform:scale(.96)}
 .btn-base{background:#fff;color:#0f172a;border:2px solid #e2e8f0;border-radius:13px;padding:.65rem 1rem;font-size:.9rem;font-weight:700;cursor:pointer;width:100%;text-align:center;transition:border-color .12s,background .12s;min-height:44px}.btn-base:active{background:#f1f5f9}.btn-base.ok{background:#dcfce7;border-color:#22c55e;color:#166534}.btn-base.ng{background:#fee2e2;border-color:#ef4444;color:#991b1b}.btn-base.dm{opacity:.45}[data-theme=dark] .btn-base{background:var(--bg2);color:var(--text);border-color:var(--border)}[data-theme=dark] .btn-base.ok{background:#14532d;border-color:#22c55e;color:#bbf7d0}[data-theme=dark] .btn-base.ng{background:#450a0a;border-color:#ef4444;color:#fecaca}
+
+/* ── Phase 169: Menu header tools ───────────────────────────────────────── */
+.menu-header-tools{display:flex;gap:8px;align-items:center;padding:.3rem 0 .55rem;margin-bottom:.15rem}
+.game-search-input{flex:1;min-width:0;border:2px solid var(--border);border-radius:10px;padding:.5rem .75rem;font-size:.84rem;background:var(--bg2);color:var(--text);outline:none;transition:border-color .15s}
+.game-search-input:focus{border-color:#6366f1;background:var(--bg)}
+.game-search-input::placeholder{color:var(--text3)}
+.btn-random-game{background:linear-gradient(135deg,#f59e0b,#f97316);color:#fff;border:none;border-radius:10px;padding:.5rem .8rem;font-size:.78rem;font-weight:800;cursor:pointer;white-space:nowrap;box-shadow:0 2px 8px rgba(249,115,22,.3);flex-shrink:0;line-height:1.2}
+.btn-random-game:active{transform:scale(.95)}
+/* Info icon on mode cards */
+.info-icon{position:absolute;bottom:2px;right:3px;font-size:.65rem;line-height:1;opacity:.4;cursor:pointer;padding:2px;border-radius:4px;transition:opacity .15s}
+.info-icon:hover{opacity:1;background:var(--bg3)}
+/* Game info modal */
+.gim-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:900;animation:fadeIn .15s ease}
+.gim-box{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:901;background:var(--bg);border:2px solid var(--border);border-radius:18px;padding:1.4rem 1.2rem;max-width:310px;width:90%;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.3);animation:slideUp .18s ease}
+@keyframes slideUp{from{opacity:0;transform:translate(-50%,-44%)}to{opacity:1;transform:translate(-50%,-50%)}}
+[data-theme=dark] .game-search-input{background:var(--bg2);border-color:var(--border)}
