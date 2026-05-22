@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Phase 165-176: Filter chips + flat grid + no mode-desc + info-icon z-index + grid-cols CSS var + saveGridCols() in settings modal + high-contrast search CSS"
+git commit -m "Phase 177: Nuclear inline style override - 4-col grid, nowrap chips, bulletproof info-btn"
 echo.
 git push origin main
 echo.

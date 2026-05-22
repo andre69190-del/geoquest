@@ -6423,8 +6423,14 @@ function saveGridCols(val){
   localStorage.setItem('geoquest_grid_cols',String(val));
   document.documentElement.style.setProperty('--grid-cols',String(val));
 }
-// Apply saved grid cols on load
-(function(){const _v=parseInt(localStorage.getItem('geoquest_grid_cols'))||4;document.documentElement.style.setProperty('--grid-cols',String(_v));})();
+// Apply saved grid cols on load (robust version)
+(function(){
+  let _sv=parseInt(localStorage.getItem('geoquest_grid_cols'));
+  if(isNaN(_sv)||_sv<2||_sv>5){_sv=4;localStorage.setItem('geoquest_grid_cols','4');}
+  document.documentElement.style.setProperty('--grid-cols',String(_sv));
+  const _el=document.getElementById('gq-nuclear');
+  if(_el)_el.textContent=_el.textContent.replace('--grid-cols:4','--grid-cols:'+_sv);
+})();
 function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
   /* Surgical Scope Guard for candidates */
   const candidates_safe = (typeof S !== "undefined" && S.candidates) ? S.candidates : ((typeof candidates !== "undefined") ? candidates : []);
@@ -8493,7 +8499,7 @@ function renderHomeTab(){
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${isLocked?`<span style="position:absolute;top:4px;right:4px;font-size:.75rem">\u{1F512}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${!cs&&unlocked?`<span class="info-icon" style="position:absolute;bottom:10px;right:10px;font-size:1.5rem;cursor:pointer;z-index:100" onclick="showGameInfo('${m.id}',event)">ℹ️</span>`:""}
+        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" style="position:absolute;bottom:8px;right:8px;z-index:99999;width:28px;height:28px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:900;cursor:pointer;line-height:1;padding:0">i</button>`:""}
       </div>`;
     });
     const albumCard=catId==='eu_plates'?[`<div class="mode-card" data-category="eu_plates"${hide?' style="display:none"':''} onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" data-desc="Album Spotter Sammlung eu_plates" style="${hide?'display:none;':''}background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6">
@@ -8579,6 +8585,14 @@ function renderHomeTab(){
       <div style="flex:1"><div style="font-size:.9rem;font-weight:900;color:#fff">Lokal 1:1 Hot-Seat</div><div style="font-size:.7rem;color:rgba(255,255,255,.75)">Zwei Spieler · Ein Gerät · 10 Runden</div></div>
       <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:.25rem .75rem;font-size:.72rem;font-weight:700">► Los</div>
     </div>
+<style id="gq-nuclear">
+  :root{--grid-cols:4}
+  #mainGamesGrid,.games-grid{display:grid !important;grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;gap:15px !important;padding:0 15px 20px 15px !important}
+  .filter-chips-container{display:flex !important;flex-wrap:nowrap !important;gap:12px !important;overflow-x:auto !important;padding-bottom:15px !important;scrollbar-width:none !important}
+  .filter-chips-container::-webkit-scrollbar{display:none !important}
+  .filter-chip{font-size:.85rem !important;padding:9px 18px !important;white-space:nowrap !important;flex-shrink:0 !important;border-radius:22px !important}
+  .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center !important}
+</style>
     <div class="menu-search-container">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="filterGames()">
       <button class="btn-random-game" onclick="playRandomGame()">🎲 Zufall</button>
