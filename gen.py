@@ -6419,6 +6419,12 @@ function updateOrientationWarning(){
   const txt=ow.querySelector(".gq-ow-txt");if(txt)txt.textContent=t("rotate_device");
   return show;
 }
+function saveGridCols(val){
+  localStorage.setItem('geoquest_grid_cols',String(val));
+  document.documentElement.style.setProperty('--grid-cols',String(val));
+}
+// Apply saved grid cols on load
+(function(){const _v=parseInt(localStorage.getItem('geoquest_grid_cols'))||4;document.documentElement.style.setProperty('--grid-cols',String(_v));})();
 function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
   /* Surgical Scope Guard for candidates */
   const candidates_safe = (typeof S !== "undefined" && S.candidates) ? S.candidates : ((typeof candidates !== "undefined") ? candidates : []);
@@ -8487,8 +8493,7 @@ function renderHomeTab(){
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${isLocked?`<span style="position:absolute;top:4px;right:4px;font-size:.75rem">\u{1F512}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${m.desc?`<div class="mode-desc">${m.desc}</div>`:""}
-        ${!cs&&unlocked?`<span class="info-icon" onclick="showGameInfo('${m.id}',event)">ℹ️</span>`:""}
+        ${!cs&&unlocked?`<span class="info-icon" style="position:absolute;bottom:10px;right:10px;font-size:1.5rem;cursor:pointer;z-index:100" onclick="showGameInfo('${m.id}',event)">ℹ️</span>`:""}
       </div>`;
     });
     const albumCard=catId==='eu_plates'?[`<div class="mode-card" data-category="eu_plates"${hide?' style="display:none"':''} onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" data-desc="Album Spotter Sammlung eu_plates" style="${hide?'display:none;':''}background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6">
@@ -8514,7 +8519,6 @@ function renderHomeTab(){
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${bt?`<span class="beta-badge" title="${t('beta_warning')}">${t('badge_beta')}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${m.desc?`<div class="mode-desc">${m.desc}</div>`:""}
         ${!cs&&unlocked?`<span class="info-icon" onclick="event.stopPropagation();showGameInfo('${m.id}')">ℹ️</span>`:""}
       </div>`;
     }).join("");
@@ -8580,7 +8584,7 @@ function renderHomeTab(){
       <button class="btn-random-game" onclick="playRandomGame()">🎲 Zufall</button>
     </div>
     <div class="filter-chips-container">${_chips}</div>
-    <div class="games-grid" id="mainGamesGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:15px">${_allCards}</div>
+    <div class="games-grid" id="mainGamesGrid">${_allCards}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>
@@ -8906,7 +8910,8 @@ function renderSettingsModal(){
       <div style="font-weight:700">\u{1F319} Dark Mode</div>
       <button onclick="S.darkMode=!S.darkMode;applyTheme();render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.darkMode?'An':'Aus'}</button>
     </div>
-    ${sbUser?.email?`<button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">\u{1F6AA} Abmelden</button><button class="btn-g" style="margin-bottom:.5rem;font-size:.75rem;color:#94a3b8;border-color:#94a3b8" onclick="doDeleteAccount()">\u{1F5D1}\uFE0F Konto l\u00f6schen (DSGVO)</button>`:''}
+    ${(()=>{const _gc=parseInt(localStorage.getItem('geoquest_grid_cols'))||4;return`<div style="margin:20px 0;padding-top:15px;border-top:1px solid var(--border)"><div style="font-weight:700;margin-bottom:10px">\u{1F4CA} Spiele nebeneinander (Raster)</div><div style="display:flex;justify-content:center;gap:8px">${[2,3,4,5].map(n=>`<button onclick="saveGridCols(${n});render()" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gc===n?'#3b82f6':'var(--bg3)'};color:${_gc===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div></div>`;})()}
+        ${sbUser?.email?`<button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">\u{1F6AA} Abmelden</button><button class="btn-g" style="margin-bottom:.5rem;font-size:.75rem;color:#94a3b8;border-color:#94a3b8" onclick="doDeleteAccount()">\u{1F5D1}\uFE0F Konto l\u00f6schen (DSGVO)</button>`:''}
     <button class="btn-g" style="margin-bottom:0" onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
   </div></div>`;
 }

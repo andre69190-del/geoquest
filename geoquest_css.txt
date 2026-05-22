@@ -614,7 +614,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .filter-chip.active{background:#3b82f6 !important;color:#fff !important;box-shadow:0 2px 8px rgba(59,130,246,.4) !important}
 [data-theme=dark] .filter-chip{background:#1e293b !important;color:#94a3b8 !important;border:1px solid #334155 !important}
 [data-theme=dark] .filter-chip.active{background:#3b82f6 !important;color:#fff !important;border-color:#3b82f6 !important}
-.games-grid{display:grid !important;grid-template-columns:repeat(auto-fill,minmax(100px,1fr)) !important;gap:12px !important;padding:0 0 20px 0 !important}
+.games-grid{display:grid !important;grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;gap:15px !important;padding:0 15px 20px 15px !important}
 /* EMERGENCY HIGH-CONTRAST OVERRIDE - search + random button */
 .menu-search-container{display:flex !important;gap:10px !important;margin:0 0 15px 0 !important;align-items:center !important}
 #gameSearch{flex:1 !important;background-color:#ffffff !important;border:2px solid #475569 !important;color:#0f172a !important;padding:14px 15px !important;border-radius:10px !important;font-size:16px !important;outline:none !important}
