@@ -8430,55 +8430,89 @@ function renderAdminTab(){
 function filterGames(){
   var input=document.getElementById('gameSearch');
   var q=input?input.value.toLowerCase().trim():'';
-  var grid=document.getElementById('mainGamesGrid');
-  if(!grid)return;
   if(!q){
-    // Restore category filter when search is cleared
     filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
     return;
   }
-  // Searching: deactivate chips visually
+  // Searching: deactivate chips
   document.querySelectorAll('.filter-chip').forEach(function(c){
     c.classList.remove('active');
     c.style.background='';
     c.style.color='';
   });
-  // Search across title, desc, category ID and category label
-  var catLabels={pure_geo:'pure geo',lifestyle:'lifestyle',eu_plates:'kennzeichen plates',sport:'sport',hl_compare:'higher lower',comparisons:'vergleiche',airports:'airports flughäfen',neighbors:'nachbarländer',map_mode:'weltkarte map'};
-  grid.querySelectorAll('.mode-card').forEach(function(card){
-    var title=(card.dataset.title||'').toLowerCase();
-    var desc=(card.dataset.desc||'').toLowerCase();
-    var cat=(card.dataset.category||'').toLowerCase();
-    var catLabel=(catLabels[card.dataset.category]||'');
-    var combined=title+' '+desc+' '+cat+' '+catLabel;
-    card.style.display=combined.includes(q)?'':'none';
+  var catLabels={pure_geo:'pure geo',lifestyle:'lifestyle',eu_plates:'kennzeichen plates',
+    sport:'sport',hl_compare:'higher lower',comparisons:'vergleiche',
+    airports:'airports flughaefen',neighbors:'nachbarlaender',map_mode:'weltkarte map'};
+  // Search all accordion sections
+  document.querySelectorAll('.accordion-section').forEach(function(section){
+    section.style.removeProperty('display');
+    var content=section.querySelector('.accordion-content');
+    var arrow=section.querySelector('.acc-arrow');
+    var header=section.querySelector('.accordion-header');
+    var hasMatch=false;
+    section.querySelectorAll('.mode-card').forEach(function(card){
+      var title=(card.dataset.title||'').toLowerCase();
+      var desc=(card.dataset.desc||'').toLowerCase();
+      var cat=(card.dataset.category||'').toLowerCase();
+      var catLabel=(catLabels[card.dataset.category]||'');
+      var match=(title+' '+desc+' '+cat+' '+catLabel).includes(q);
+      if(match){
+        card.style.removeProperty('display');
+        hasMatch=true;
+      } else {
+        card.style.setProperty('display','none','important');
+      }
+    });
+    if(hasMatch){
+      if(content){content.style.display='grid';}
+      if(arrow){arrow.style.transform='rotate(180deg)';}
+      if(header){header.style.marginBottom='10px';}
+    } else {
+      section.style.setProperty('display','none','important');
+    }
   });
 }
 window.filterGames=filterGames;
 function filterByCategory(cat){
   console.log('[GQ] filterByCategory:',cat);
   if(typeof S!=='undefined')S.filterCat=cat;
-  // Update chip active states
+  // Chip active states
   document.querySelectorAll('.filter-chip').forEach(function(c){
     var isActive=c.dataset.cat===cat;
     c.classList.toggle('active',isActive);
     c.style.background=isActive?'#3b82f6':'';
     c.style.color=isActive?'#fff':'';
   });
-  // Show/hide cards by data-category (strict direct match, !important-safe)
-  document.querySelectorAll('[data-category]').forEach(function(card){
-    var cardCat=card.getAttribute('data-category');
-    var show=(cat==='all'||cardCat===cat);
-    if(show){
-      card.style.removeProperty('display');
+  // Show/hide accordion sections
+  document.querySelectorAll('.accordion-section').forEach(function(section){
+    var sectionCat=section.dataset.cat;
+    if(cat==='all'){
+      section.style.removeProperty('display');
+    } else if(sectionCat===cat){
+      section.style.removeProperty('display');
+      var content=section.querySelector('.accordion-content');
+      var arrow=section.querySelector('.acc-arrow');
+      var header=section.querySelector('.accordion-header');
+      if(content){content.style.display='grid';}
+      if(arrow){arrow.style.transform='rotate(180deg)';}
+      if(header){header.style.marginBottom='10px';}
     } else {
-      card.style.setProperty('display','none','important');
+      section.style.setProperty('display','none','important');
     }
   });
   var gs=document.getElementById('gameSearch');
   if(gs)gs.value='';
 }
 window.filterByCategory=filterByCategory;
+window.toggleAccordion=function(header,catId){
+  var content=header.nextElementSibling;
+  var arrow=header.querySelector('.acc-arrow');
+  var isOpen=content.style.display==='grid';
+  content.style.display=isOpen?'none':'grid';
+  if(arrow){arrow.style.transform=isOpen?'rotate(0deg)':'rotate(180deg)';}
+  header.style.marginBottom=isOpen?'0':'10px';
+};
+
 // Apply default filter on load via DOMContentLoaded
 document.addEventListener('DOMContentLoaded',function(){
   setTimeout(function(){
@@ -8543,30 +8577,39 @@ function renderHomeTab(){
   const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode"];
   const _chips=`<button class="filter-chip${S.filterCat==='all'?' active':''}" data-cat="all" onclick="window.filterByCategory('all')">\u{1F3AE} Alle</button>`+
     _CAT_ORDER.map(cid=>{const c=MODE_CATS[cid];if(!c)return'';return`<button class="filter-chip${S.filterCat===cid?' active':''}" data-cat="${cid}" onclick="window.filterByCategory('${cid}')">${c.icon} ${c.label}</button>`;}).join('');
-  const _allCards=_CAT_ORDER.flatMap(catId=>{
-    const cat=MODE_CATS[catId];if(!cat)return[];
+  const _accordionHTML=_CAT_ORDER.map(catId=>{
+    const cat=MODE_CATS[catId];if(!cat)return'';
     const unlocked=isCategoryUnlocked(catId);
+    const isDefault=catId===(S.filterCat||'pure_geo');
     const catModes=MODES.filter(m=>cat.modes.includes(m.id)&&!m.comingSoon);
-    const hide=S.filterCat!=='all'&&S.filterCat!==catId;
     const cards=catModes.map(m=>{
       const cs=m.comingSoon===true;
       const active=S.mode===m.id&&!cs;
       const isLocked=!unlocked&&!cs;
-      const cardCls="mode-card"+(active?" active":"")+(cs?" coming-soon-card":"")+(isLocked?" locked-card":"");
+      const cardCls='mode-card'+(active?' active':'')+(cs?' coming-soon-card':'')+(isLocked?' locked-card':'');
       const clickAct=cs?"showComingSoonToast('"+m.title+"')":unlocked?"startGame('"+m.id+"')":"S.lockModal='"+catId+"';render()";
-      return`<div class="${cardCls}" onclick="${clickAct}" role="button" data-title="${modeTitle(m)}" data-desc="${(m.desc||'')+' '+m.id}" data-category="${catId}"${hide?' style="display:none"':''}>
+      return`<div class="${cardCls}" onclick="${clickAct}" role="button" data-title="${modeTitle(m)}" data-desc="${(m.desc||'')+' '+m.id}" data-category="${catId}">
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${isLocked?`<span style="position:absolute;top:4px;right:4px;font-size:.75rem">\u{1F512}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:8px;right:8px;z-index:99999;width:28px;height:28px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:900;cursor:pointer;line-height:1;padding:0;-webkit-tap-highlight-color:transparent">i</button>`:""}
+        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:8px;right:8px;z-index:99999;width:28px;height:28px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:900;cursor:pointer;line-height:1;padding:0">i</button>`:""}
       </div>`;
-    });
-    const albumCard=catId==='eu_plates'?[`<div class="mode-card" data-category="eu_plates"${hide?' style="display:none"':''} onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" data-desc="Album Spotter Sammlung eu_plates" style="${hide?'display:none;':''}background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6">
+    }).join('');
+    const albumCard=catId==='eu_plates'?`<div class="mode-card" data-category="eu_plates" onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6">
         <span class="mode-icon">\u{1F4D4}</span>
         <div class="mode-title" style="color:#fff">Album</div>
         <div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div>
-      </div>`]:[];
-    return [...cards,...albumCard];
+      </div>`:'';
+    const lockPill=!unlocked?`<span style="font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:10px;margin-left:4px">\u{1F512} ${cat.cost?cat.cost.toLocaleString():'?'} Coins</span>`:'';
+    return`<div class="accordion-section" data-cat="${catId}"${!isDefault?' style="display:none"':''}>
+      <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;margin-bottom:${isDefault?'10px':'0'};font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
+        <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
+        <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
+      </div>
+      <div class="accordion-content" style="display:${isDefault?'grid':'none'};grid-template-columns:repeat(var(--grid-cols,4),1fr);gap:12px;padding:0 0 15px 0">
+        ${cards}${albumCard}
+      </div>
+    </div>`;
   }).join('');
   function catSection(catId){
     const cat=MODE_CATS[catId];
@@ -8655,13 +8698,15 @@ function renderHomeTab(){
   .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:10px !important;align-items:center !important}
   #gameSearch{flex:1 !important;min-width:0 !important}
   .btn-random-game{flex-shrink:0 !important;cursor:pointer !important}
+  .accordion-header:hover{opacity:.9 !important}
+  .accordion-content{grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;gap:12px !important}
 </style>
     <div class="menu-search-container" style="display:flex;gap:10px;margin:15px;align-items:center;flex-wrap:nowrap">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
     <div class="filter-chips-container">${_chips}</div>
-    <div class="games-grid" id="mainGamesGrid">${_allCards}</div>
+    <div id="mainGamesGrid" style="padding:0 15px">${_accordionHTML}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>

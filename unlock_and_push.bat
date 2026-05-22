@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Phase 187: Fix filter blocked by display:flex !important in nuclear CSS - use setProperty important"
+git commit -m "Phase 188: Accordion-Grid hybrid - grouped sections, Pure Geo auto-open, search expands matches"
 echo.
 git push origin main
 echo.
