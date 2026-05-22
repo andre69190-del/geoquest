@@ -2497,23 +2497,23 @@ const MODES=[
   {id:"hl_forest",    icon:"\u{1F333}",title:"H/L Waldf\u00e4che",  group:"hl_compare",prompt:"Mehr Wald?",                   desc:"Welches Land hat mehr Wald?"},
 
   /* HL Beta */
-  {id:"hl_b_rain",  icon:"\u{1F327}",title:"\u{1F9EA} Niederschlag",  group:"comparisons",prompt:"Mehr Regen?",              desc:"Mehr Jahresniederschlag?"},
-  {id:"hl_b_temp",  icon:"\u{1F321}",title:"\u{1F9EA} Temperatur",    group:"comparisons",prompt:"W\u00e4rmer?",            desc:"H\u00f6here Durchschnittstemp.?"},
-  {id:"hl_b_sun",   icon:"\u2600",   title:"\u{1F9EA} Sonnenstunden", group:"comparisons",prompt:"Mehr Sonne?",              desc:"Mehr Sonnenstunden/Jahr?"},
-  {id:"hl_b_vulc",  icon:"\u{1F30B}",title:"\u{1F9EA} Vulkane",       group:"comparisons",prompt:"Mehr Vulkane?",            desc:"Mehr aktive Vulkane?"},
+  {id:"hl_b_rain",  icon:"\u{1F327}",title:"\u{1F9EA} Niederschlag",  group:"pure_geo",prompt:"Mehr Regen?",              desc:"Mehr Jahresniederschlag?"},
+  {id:"hl_b_temp",  icon:"\u{1F321}",title:"\u{1F9EA} Temperatur",    group:"pure_geo",prompt:"W\u00e4rmer?",            desc:"H\u00f6here Durchschnittstemp.?"},
+  {id:"hl_b_sun",   icon:"\u2600",   title:"\u{1F9EA} Sonnenstunden", group:"pure_geo",prompt:"Mehr Sonne?",              desc:"Mehr Sonnenstunden/Jahr?"},
+  {id:"hl_b_vulc",  icon:"\u{1F30B}",title:"\u{1F9EA} Vulkane",       group:"pure_geo",prompt:"Mehr Vulkane?",            desc:"Mehr aktive Vulkane?"},
   {id:"hl_b_parks", icon:"\u{1F333}",title:"\u{1F9EA} Nationalparks", group:"comparisons",prompt:"Mehr Parks?",              desc:"Mehr Nationalparks?"},
   {id:"hl_b_roads", icon:"\u{1F6E3}",title:"\u{1F9EA} Stra\u00dfennetz",group:"comparisons",prompt:"L\u00e4ngeres Stra\u00dfennetz?",desc:"Km Stra\u00dfen?"},
   {id:"hl_b_rail",  icon:"\u{1F686}",title:"\u{1F9EA} Schienennetz",  group:"comparisons",prompt:"L\u00e4ngeres Schienennetz?",desc:"Km Gleise?"},
   {id:"hl_b_net",   icon:"\u{1F4F6}",title:"\u{1F9EA} Internetspeed", group:"comparisons",prompt:"Schnelleres Internet?",    desc:"Schnelleres Breitband?"},
   {id:"hl_b_ev",    icon:"\u26A1",   title:"\u{1F9EA} E-Ladesäulen",  group:"comparisons",prompt:"Mehr E-Ladesäulen?",       desc:"E-Ladesäulen?"},
   {id:"hl_b_urban", icon:"\u{1F3D9}",title:"\u{1F9EA} Urbanisierung", group:"comparisons",prompt:"Mehr verst\u00e4dtert?",  desc:"Urbanisierungsrate?"},
-  {id:"hl_b_lang",  icon:"\u{1F5E3}",title:"\u{1F9EA} Amtssprachen",  group:"comparisons",prompt:"Mehr Amtssprachen?",       desc:"Anzahl Amtssprachen?"},
-  {id:"hl_b_isl",   icon:"\u{1F3DD}",title:"\u{1F9EA} Inseln",        group:"comparisons",prompt:"Mehr Inseln?",             desc:"Anzahl Inseln?"},
-  {id:"hl_b_tz",    icon:"\u{1F550}",title:"\u{1F9EA} Zeitzonen",     group:"comparisons",prompt:"Mehr Zeitzonen?",          desc:"Anzahl Zeitzonen?"},
-  {id:"hl_b_founded",icon:"\u{1F3DB}",title:"\u{1F9EA} \u00c4ltestes Land",group:"comparisons",prompt:"\u00c4lteres Land?",desc:"Fr\u00fcheres Gr\u00fcndungsjahr?"},
-  {id:"hl_b_unesco",icon:"\u{1F3DB}",title:"\u{1F9EA} UNESCO",        group:"comparisons",prompt:"Mehr UNESCO?",             desc:"UNESCO-Welterbest\u00e4tten?"},
-  {id:"hl_b_tour",  icon:"\u{1F9F3}",title:"\u{1F9EA} Tourismus",     group:"comparisons",prompt:"Mehr Touristen?",          desc:"Touristen/Jahr?"},
-  {id:"hl_b_wm",    icon:"\u26BD",   title:"\u{1F9EA} WM-Teilnahmen", group:"comparisons",prompt:"Mehr WM-Teilnahmen?",      desc:"Fu\u00dfball-WM-Teilnahmen?"},
+  {id:"hl_b_lang",  icon:"\u{1F5E3}",title:"\u{1F9EA} Amtssprachen",  group:"lifestyle",prompt:"Mehr Amtssprachen?",       desc:"Anzahl Amtssprachen?"},
+  {id:"hl_b_isl",   icon:"\u{1F3DD}",title:"\u{1F9EA} Inseln",        group:"pure_geo",prompt:"Mehr Inseln?",             desc:"Anzahl Inseln?"},
+  {id:"hl_b_tz",    icon:"\u{1F550}",title:"\u{1F9EA} Zeitzonen",     group:"pure_geo",prompt:"Mehr Zeitzonen?",          desc:"Anzahl Zeitzonen?"},
+  {id:"hl_b_founded",icon:"\u{1F3DB}",title:"\u{1F9EA} \u00c4ltestes Land",group:"pure_geo",prompt:"\u00c4lteres Land?",desc:"Fr\u00fcheres Gr\u00fcndungsjahr?"},
+  {id:"hl_b_unesco",icon:"\u{1F3DB}",title:"\u{1F9EA} UNESCO",        group:"lifestyle",prompt:"Mehr UNESCO?",             desc:"UNESCO-Welterbest\u00e4tten?"},
+  {id:"hl_b_tour",  icon:"\u{1F9F3}",title:"\u{1F9EA} Tourismus",     group:"lifestyle",prompt:"Mehr Touristen?",          desc:"Touristen/Jahr?"},
+  {id:"hl_b_wm",    icon:"\u26BD",   title:"\u{1F9EA} WM-Teilnahmen", group:"sport",prompt:"Mehr WM-Teilnahmen?",      desc:"Fu\u00dfball-WM-Teilnahmen?"},
   /* ---- Neighbors ---- */
   {id:"neighbor",      icon:"\u{1F91D}",title:"Grenzg\u00e4nger",     group:"neighbors", prompt:"Grenzt an\u2026?",               desc:"Grenzt dieses Land an jenes?"},
   {id:"neighbor_fake", icon:"\u{1F47A}",title:"Falscher Nachbar",  group:"neighbors", prompt:"Grenzt NICHT an\u2026?",         desc:"Welches Land grenzt NICHT an das gezeigte?",time:20},
@@ -2563,16 +2563,15 @@ const MODES=[
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
 const MODE_CATS={
-  pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf"],cost:0},
-  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare"],cost:1000},
+  pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded"],cost:0},
+  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
-  hl_beta:{label:"H/L Beta \u{1F9EA}",icon:"\u{1F9EA}",modes:["hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","hl_b_lang","hl_b_isl","hl_b_tz","hl_b_founded","hl_b_unesco","hl_b_tour","hl_b_wm"],cost:0},
-  comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","hl_b_lang","hl_b_isl","hl_b_tz","hl_b_founded","hl_b_unesco","hl_b_tour","hl_b_wm","plate_compare"],cost:0},
+  comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital"],cost:0},
-  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight"],cost:0},
+  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
@@ -5100,7 +5099,10 @@ function _lvNext(){
     if(!S.lv)return clearInterval(tIv);
     S.lv.timer--;
     const te=document.getElementById("lv-timer");
-    if(te)te.textContent=S.lv.timer+"s";
+    if(te){
+      te.textContent=S.lv.timer+"s";
+      te.style.color=S.lv.timer<=5?"#ef4444":S.lv.timer<=10?"#f59e0b":"#10b981";
+    }
     if(S.lv.timer<=0){clearInterval(tIv);lvAnswer(null);}
   },1000);
 }
@@ -5125,9 +5127,27 @@ function renderLVModal(){
   const optsHtml=q&&q.opts?q.opts.map(o=>{
     let cls="btn-base";
     if(isFb){if(o===q.ans)cls+=" ok";else if(o===lv.sel&&o!==q.ans)cls+=" ng";else cls+=" dm";}
-    return `<button class="${cls}" onclick="lvAnswer(${JSON.stringify(o)})" ${isFb?"disabled":""}>${o}</button>`;
+    return `<button class="${cls}" onclick="lvAnswer(${JSON.stringify(o)})" ${isFb?"disabled":""}>${displayCountry(o)||o}</button>`;
   }).join(""):"";
   const tCol=lv.timer<=5?"#ef4444":lv.timer<=10?"#f59e0b":"#10b981";
+  /* Build question body depending on type */
+  const isFlag=q&&(q.type==="flag"||q.type==="flagsel");
+  const isComp=q&&(q.type&&(q.type.startsWith("comp_")||q.type.startsWith("hl_b_")));
+  let qDisplay="";
+  if(isFlag&&q.subj){
+    const _lcc=String(q.subj||"").toLowerCase();
+    qDisplay=`<img src="https://flagcdn.com/h80/${_lcc}.png" style="max-height:70px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.15);margin:.3rem 0">`;
+  }else if(isComp){
+    /* comp modes: show the two country names + flags inline */
+    const _oA=q.opts&&q.opts[0]||"",_oB=q.opts&&q.opts[1]||"";
+    qDisplay=`<div style="display:flex;gap:1rem;justify-content:center;align-items:center;margin:.3rem 0">
+      <div style="text-align:center"><div style="font-size:1.6rem">${flagOf(_oA)}</div><div style="font-size:.7rem;font-weight:700;color:var(--text2)">${esc(displayCountry(_oA)||_oA)}</div></div>
+      <div style="font-weight:900;color:var(--text3)">VS</div>
+      <div style="text-align:center"><div style="font-size:1.6rem">${flagOf(_oB)}</div><div style="font-size:.7rem;font-weight:700;color:var(--text2)">${esc(displayCountry(_oB)||_oB)}</div></div>
+    </div>`;
+  }else if(q&&q.subj){
+    qDisplay=`<div class="qmain" style="font-size:1.5rem;font-weight:900;color:var(--text);margin:.25rem 0">${esc(q.subj)}</div>`;
+  }
   return `<div style="min-height:100vh;background:var(--bg);padding:1rem;display:flex;flex-direction:column">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
       <button class="btn-cancel" onclick="clearInterval(tIv);S.lvModal=false;S.lv=null;render()">\u00d7 Beenden</button>
@@ -5135,21 +5155,21 @@ function renderLVModal(){
       <div id="lv-timer" style="font-size:1.2rem;font-weight:900;color:${tCol}">${lv.timer}s</div>
     </div>
     <div style="display:flex;gap:.5rem;margin-bottom:.75rem">
-      <div style="flex:1;padding:.5rem;border-radius:10px;background:${lv.current===1?"rgba(99,102,241,.2)":"var(--bg2)"};border:2px solid ${lv.current===1?"#6366f1":"transparent"};text-align:center">
-        <div style="font-size:.65rem;color:var(--text3)">${lv.p1.name}</div>
+      <div style="flex:1;padding:.5rem;border-radius:10px;background:${lv.current===1?"rgba(99,102,241,.2)":"var(--bg2)"};border:2px solid ${lv.current===1?"#6366f1":"transparent"};text-align:center;cursor:pointer" onclick="const n=prompt('Name Spieler 1:',lv.p1.name);if(n&&n.trim())lv.p1.name=n.trim();render()">
+        <div style="font-size:.6rem;color:var(--text3)">\u270F\uFE0F ${lv.p1.name}</div>
         <div style="font-size:1.4rem;font-weight:900;color:var(--text)">${lv.p1.sc}</div>
       </div>
-      <div style="flex:1;padding:.5rem;border-radius:10px;background:${lv.current===2?"rgba(236,72,153,.2)":"var(--bg2)"};border:2px solid ${lv.current===2?"#ec4899":"transparent"};text-align:center">
-        <div style="font-size:.65rem;color:var(--text3)">${lv.p2.name}</div>
+      <div style="flex:1;padding:.5rem;border-radius:10px;background:${lv.current===2?"rgba(236,72,153,.2)":"var(--bg2)"};border:2px solid ${lv.current===2?"#ec4899":"transparent"};text-align:center;cursor:pointer" onclick="const n=prompt('Name Spieler 2:',lv.p2.name);if(n&&n.trim())lv.p2.name=n.trim();render()">
+        <div style="font-size:.6rem;color:var(--text3)">\u270F\uFE0F ${lv.p2.name}</div>
         <div style="font-size:1.4rem;font-weight:900;color:var(--text)">${lv.p2.sc}</div>
       </div>
     </div>
     <div style="background:var(--bg2);border-radius:12px;padding:.75rem;margin-bottom:.75rem;text-align:center">
-      <div style="font-size:.7rem;font-weight:700;color:${lv.current===1?"#6366f1":"#ec4899"};margin-bottom:.3rem">\u{1F3AE} ${pl.name} ist dran</div>
-      ${q?`<div class="qprompt" style="font-size:1rem;margin-bottom:.5rem">${q.prompt}</div><div class="qmain" style="font-size:1.6rem;font-weight:900">${q.subj}</div>`:""}
+      <div style="font-size:.7rem;font-weight:700;color:${lv.current===1?"#6366f1":"#ec4899"};margin-bottom:.3rem">\u{1F3AE} ${esc(pl.name)} ist dran</div>
+      ${q?`<div class="qprompt" style="font-size:.95rem;margin-bottom:.35rem">${q.prompt}</div>${qDisplay}`:""}
     </div>
     <div class="ans-grid">${optsHtml}</div>
-    ${isFb?`<div style="text-align:center;margin-top:.5rem;font-size:.8rem;color:${lv.sel===q.ans?"#10b981":"#ef4444"};font-weight:700">${lv.sel===q.ans?"\u2705 Richtig!":"\u274C Falsch \u2013 "+q.ans}</div>`:""}
+    ${isFb?`<div style="text-align:center;margin-top:.5rem;font-size:.8rem;color:${lv.sel===q.ans?"#10b981":"#ef4444"};font-weight:700">${lv.sel===q.ans?"\u2705 Richtig!":"\u274C Falsch \u2013 "+(displayCountry(q.ans)||q.ans)}</div>`:""}
   </div>`;
 }
 function renderLVSetup(){
@@ -8036,7 +8056,6 @@ function renderHomeTab(){
       ${catSection("lifestyle")}
       ${catSection("eu_plates")}
       ${catSection("sport")}
-      ${catSection("hl_beta")}
       ${catSection("comparisons")}
       ${catSection("neighbors")}
       ${catSection("map_mode")}
