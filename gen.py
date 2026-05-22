@@ -7247,7 +7247,7 @@ function initSLF(){
     if(\!S.slfData||S.slfData.phase\!=="input")return;
     S.slfData.timeLeft--;
     if(S.slfData.timeLeft<=0){clearInterval(tIv);handleSLFSubmit();}
-    else {}
+    else render();
   },1000);
 }
 function handleSLFSubmit(){
@@ -7308,7 +7308,7 @@ function renderLandHauptstadt(sc){
       ${rowHtml("Land",answers.country,countryValid)}
       ${rowHtml("Fluss",answers.river,riverValid)}
       <div style="margin-top:1rem;font-size:.72rem;color:var(--text3);text-align:center">Gesamt: ${sc.toLocaleString()} Punkte</div>
-      <button class="btn-p" style="margin-top:.85rem" onclick="initSLF()">📍 Neue Runde</button>
+      <button class="btn-p" style="margin-top:.85rem" onclick="initSLF();render()">📍 Neue Runde</button>
       <button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph='menu';S.tab='home';render()">Beenden</button>
     </div></div>`;
   }
