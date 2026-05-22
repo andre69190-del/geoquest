@@ -631,3 +631,22 @@ input[type=text]::placeholder{color:var(--text3)}
 .bn-item{min-height:64px !important;display:flex !important;flex-direction:column !important;align-items:center !important;justify-content:center !important;font-size:.72rem !important;gap:3px !important;padding:6px 4px !important}
 .bn-icon{font-size:1.55rem !important;line-height:1 !important}
 .bn-lbl{font-size:.7rem !important;font-weight:700 !important}
+
+/* Phase 188/189: Accordion-Grid styles */
+.accordion-section{margin-bottom:10px}
+.accordion-content{
+  grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;
+  gap:15px !important;
+  padding:10px 0 15px 0 !important;
+  width:100% !important;
+  box-sizing:border-box !important
+}
+.accordion-content[style*="display: grid"],
+.accordion-content[style*="display:grid"]{
+  display:grid !important
+}
+.accordion-content .mode-card{
+  width:100% !important;
+  min-width:0 !important;
+  box-sizing:border-box !important
+}

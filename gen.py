@@ -8699,7 +8699,6 @@ function renderHomeTab(){
   #gameSearch{flex:1 !important;min-width:0 !important}
   .btn-random-game{flex-shrink:0 !important;cursor:pointer !important}
   .accordion-header:hover{opacity:.9 !important}
-  .accordion-content{grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;gap:12px !important}
 </style>
     <div class="menu-search-container" style="display:flex;gap:10px;margin:15px;align-items:center;flex-wrap:nowrap">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">

@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Phase 188: Accordion-Grid hybrid - grouped sections, Pure Geo auto-open, search expands matches"
+git commit -m "Phase 189: Accordion grid fix - CSS moved to stylesheet, attribute selector prevents display:none conflict"
 echo.
 git push origin main
 echo.
