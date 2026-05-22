@@ -2513,6 +2513,9 @@ const MODES=[
   {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen"},
   {id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker"},
   {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt"},
+  {id:"stadium",icon:"\u26BD",title:"Stadion-Quiz",group:"football",prompt:"In welchem Land steht dieses Stadion?",desc:"Fu\u00dfballstadien zuordnen"},
+  {id:"jersey",icon:"\u{1F455}",title:"Trikot-Quiz",group:"football",prompt:"Welches Land tr\u00e4gt dieses Trikot?",desc:"Nationalteam-Trikots erkennen"},
+  {id:"crest",icon:"\u{1F6E1}",title:"Wappen-Quiz",group:"football",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Verbandswappen zuordnen"},
   /* ---- Vergleiche / Comparisons (Phase 91+92) ---- */
   {id:"comp_area",      icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",      group:"comparisons",prompt:"Welches Land ist gr\u00f6\u00dfer?",       desc:"Fl\u00e4che zweier L\u00e4nder vergleichen"},
   {id:"comp_pop",       icon:"\u{1F465}",title:"Mehr Einwohner?",               group:"comparisons",prompt:"Welches Land hat mehr Einwohner?",       desc:"Bev\u00f6lkerung zweier L\u00e4nder vergleichen"},
@@ -2548,6 +2551,7 @@ const MODE_CATS={
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital"],cost:0},
+  football:{label:"Fu\u00dfball-Geo",icon:"\u26BD",modes:["stadium","jersey","crest"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
@@ -4217,6 +4221,7 @@ let S={
   fcIdx:0,fcFlipped:false,fcSearch:"",fcCountry:"all",
   darkMode:false,
   authMode:"login",authEmail:"",authPassword:"",authConfirm:"",authUsername:"",authError:"",authLoading:false,
+  lvModal:false,lv:null,lvSetupMode:"random",
   settingsModal:false,
   convModal:false,
   collectedPlates:loadCollectedPlates(),
@@ -4661,7 +4666,7 @@ function genNorthSouthCompareQ(){
   const ans=_NS_EXTENT[b]>_NS_EXTENT[a]?b:a;
   const meta=displayCountry(a)+": "+fmt(_NS_EXTENT[a])+" \u00b7 "+displayCountry(b)+": "+fmt(_NS_EXTENT[b]);
   return{type:"comp_nsextent",
-    prompt:"\U0001F9ED Welches Land ist von Nord nach S\u00fcd l\u00e4nger?",
+    prompt:"\u{1F9ED} Welches Land ist von Nord nach S\u00fcd l\u00e4nger?",
     subj:"",opts:[a,b],ans,meta,lid:a+"|"+b,cc:ccFromCountry(ans),cat:"geo"};
 }
 function genOlympicCompareQ(){
@@ -4677,7 +4682,7 @@ function genOlympicCompareQ(){
   const ans=_OLYMPICS[b]>_OLYMPICS[a]?b:a;
   const meta=displayCountry(a)+": "+fmt(_OLYMPICS[a])+" \u00b7 "+displayCountry(b)+": "+fmt(_OLYMPICS[b]);
   return{type:"comp_olympics",
-    prompt:"\U0001F3C5 Welches Land hat mehr Olympia-Gold (Sommer)?",
+    prompt:"\u{1F3C5} Welches Land hat mehr Olympia-Gold (Sommer)?",
     subj:"",opts:[a,b],ans,meta,lid:a+"|"+b,cc:ccFromCountry(ans),cat:"stats"};
 }
 
@@ -4737,6 +4742,97 @@ function genIvrQ(){
     subj,ans:corIVR,opts,meta:"IVR: "+corIVR,lid:corCC,cc:corCC};
 }
 
+
+/* ─── FOOTBALL-GEO DATA ─── */
+const _footballData={
+  stadiums:[
+    {name:"Allianz Arena",city:"M\u00fcnchen",country:"Deutschland",cc:"de",cap:75024},
+    {name:"Signal Iduna Park",city:"Dortmund",country:"Deutschland",cc:"de",cap:81365},
+    {name:"Santiago Bern\u00e9bau",city:"Madrid",country:"Spanien",cc:"es",cap:81044},
+    {name:"Camp Nou",city:"Barcelona",country:"Spanien",cc:"es",cap:99354},
+    {name:"Wembley Stadium",city:"London",country:"England",cc:"gb",cap:90000},
+    {name:"San Siro",city:"Mailand",country:"Italien",cc:"it",cap:75923},
+    {name:"Stade de France",city:"Saint-Denis",country:"Frankreich",cc:"fr",cap:81338},
+    {name:"Johan Cruyff ArenA",city:"Amsterdam",country:"Niederlande",cc:"nl",cap:54990},
+    {name:"Est\u00e1dio da Luz",city:"Lissabon",country:"Portugal",cc:"pt",cap:64642},
+    {name:"Olimpiyskiy",city:"Kiew",country:"Ukraine",cc:"ua",cap:70050},
+    {name:"Luzhniki",city:"Moskau",country:"Russland",cc:"ru",cap:81000},
+    {name:"Maracan\u00e3",city:"Rio de Janeiro",country:"Brasilien",cc:"br",cap:78838},
+    {name:"Aztekenstadion",city:"Mexiko-Stadt",country:"Mexiko",cc:"mx",cap:87500},
+    {name:"Melbourne Cricket Ground",city:"Melbourne",country:"Australien",cc:"au",cap:100024},
+    {name:"Lusail Iconic Stadium",city:"Lusail",country:"Katar",cc:"qa",cap:88966},
+  ],
+  jerseys:[
+    {country:"Deutschland",cc:"de",color:"#FFFFFF",style:"classic"},
+    {country:"Brasilien",cc:"br",color:"#FDEF42",style:"classic"},
+    {country:"Argentinien",cc:"ar",color:"#74ACDF",style:"stripes_v"},
+    {country:"Niederlande",cc:"nl",color:"#FF6600",style:"classic"},
+    {country:"Portugal",cc:"pt",color:"#CC0000",style:"classic"},
+    {country:"Frankreich",cc:"fr",color:"#003399",style:"classic"},
+    {country:"England",cc:"gb",color:"#FFFFFF",style:"classic"},
+    {country:"Spanien",cc:"es",color:"#CC0000",style:"classic"},
+    {country:"Italien",cc:"it",color:"#003399",style:"classic"},
+    {country:"Kroatien",cc:"hr",color:"#FF0000",style:"checkered"},
+    {country:"Jamaika",cc:"jm",color:"#009B3A",style:"split"},
+    {country:"Mexiko",cc:"mx",color:"#006847",style:"classic"},
+    {country:"Japan",cc:"jp",color:"#00235D",style:"classic"},
+    {country:"Marokko",cc:"ma",color:"#C1272D",style:"classic"},
+    {country:"Argentinien 2",cc:"ar",color:"#003366",style:"stripes_v"},
+  ],
+  crests:[
+    {country:"Deutschland",cc:"de",shape:"eagle",color:"#000000"},
+    {country:"Frankreich",cc:"fr",shape:"rooster",color:"#003399"},
+    {country:"England",cc:"gb",shape:"lion",color:"#CC0000"},
+    {country:"Spanien",cc:"es",shape:"shield",color:"#CC0000"},
+    {country:"Italien",cc:"it",shape:"shield",color:"#003399"},
+    {country:"Brasilien",cc:"br",shape:"diamond",color:"#009C3B"},
+    {country:"Argentinien",cc:"ar",shape:"sun",color:"#74ACDF"},
+    {country:"Portugal",cc:"pt",shape:"cross",color:"#006600"},
+    {country:"Niederlande",cc:"nl",shape:"lion",color:"#FF6600"},
+    {country:"Kroatien",cc:"hr",shape:"checker",color:"#FF0000"},
+  ],
+};
+function _drawJersey(cc,color,style){
+  const body=`<rect x="15" y="10" width="70" height="75" rx="5" fill="${color}"/><rect x="0" y="10" width="20" height="50" rx="3" fill="${color}"/><rect x="80" y="10" width="20" height="50" rx="3" fill="${color}"/>`;
+  let overlay="";
+  if(style==="stripes_v")overlay=`<rect x="15" y="10" width="14" height="75" fill="rgba(255,255,255,.5)"/><rect x="43" y="10" width="14" height="75" fill="rgba(255,255,255,.5)"/><rect x="71" y="10" width="14" height="75" rx="0 5 5 0" fill="rgba(255,255,255,.5)"/>`;
+  else if(style==="checkered")overlay=`<rect x="15" y="10" width="35" height="37" fill="rgba(255,255,255,.5)"/><rect x="50" y="47" width="35" height="38" fill="rgba(255,255,255,.5)"/>`;
+  else if(style==="split")overlay=`<rect x="50" y="10" width="35" height="75" rx="0 5 5 0" fill="rgba(0,0,0,.25)"/>`;
+  else if(style==="stripes_h")overlay=`<rect x="15" y="28" width="70" height="14" fill="rgba(255,255,255,.5)"/><rect x="15" y="57" width="70" height="14" fill="rgba(255,255,255,.5)"/>`;
+  const collar=`<path d="M40,10 Q50,22 60,10" fill="none" stroke="rgba(0,0,0,.3)" stroke-width="3"/>`;
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:90px;height:90px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))">${body}${overlay}${collar}</svg>`;
+}
+function _drawCrest(shape,color){
+  const s={"shield":`<polygon points="50,8 88,20 88,58 50,88 12,58 12,20" fill="${color}"/>`,
+    "eagle":`<ellipse cx="50" cy="50" rx="32" ry="38" fill="${color}"/><polygon points="18,18 38,8 50,28 62,8 82,18 66,34 50,24 34,34" fill="${color}"/>`,
+    "rooster":`<ellipse cx="50" cy="58" rx="28" ry="32" fill="${color}"/><ellipse cx="50" cy="22" rx="14" ry="16" fill="${color}"/>`,
+    "lion":`<ellipse cx="50" cy="52" rx="32" ry="36" fill="${color}"/><path d="M30,28 Q50,12 70,28" fill="${color}"/>`,
+    "diamond":`<polygon points="50,8 88,50 50,88 12,50" fill="${color}"/>`,
+    "sun":`<circle cx="50" cy="50" r="28" fill="${color}"/><line x1="50" y1="8" x2="50" y2="20" stroke="${color}" stroke-width="5"/><line x1="50" y1="80" x2="50" y2="92" stroke="${color}" stroke-width="5"/><line x1="8" y1="50" x2="20" y2="50" stroke="${color}" stroke-width="5"/><line x1="80" y1="50" x2="92" y2="50" stroke="${color}" stroke-width="5"/><line x1="22" y1="22" x2="30" y2="30" stroke="${color}" stroke-width="5"/><line x1="70" y1="70" x2="78" y2="78" stroke="${color}" stroke-width="5"/><line x1="78" y1="22" x2="70" y2="30" stroke="${color}" stroke-width="5"/><line x1="30" y1="70" x2="22" y2="78" stroke="${color}" stroke-width="5"/>`,
+    "cross":`<rect x="42" y="5" width="16" height="90" fill="${color}"/><rect x="5" y="42" width="90" height="16" fill="${color}"/>`,
+    "checker":`<rect x="12" y="12" width="32" height="32" fill="${color}"/><rect x="56" y="12" width="32" height="32" fill="${color}"/><rect x="12" y="56" width="32" height="32" fill="${color}"/><rect x="56" y="56" width="32" height="32" fill="${color}"/>`,
+  };
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:90px;height:90px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))">${s[shape]||s.shield}</svg>`;
+}
+function genFootballQ(mode){
+  const type=mode||"stadium";
+  if(type==="stadium"){
+    const d=_footballData.stadiums,idx=~~(Math.random()*d.length),cor=d[idx];
+    const dis=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.country);
+    return{type:"stadium",prompt:"\u26BD In welchem Land steht dieses Stadion?",subj:cor.name,ans:cor.country,opts:sh([cor.country,...dis]),meta:cor.city+", "+cor.cap.toLocaleString()+" Pl\u00e4tze",cc:cor.cc};
+  }
+  if(type==="jersey"){
+    const d=_footballData.jerseys,idx=~~(Math.random()*d.length),cor=d[idx];
+    const dis=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.country);
+    return{type:"jersey",prompt:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",subj:{cc:cor.cc,color:cor.color,style:cor.style},ans:cor.country,opts:sh([cor.country,...dis]),meta:"",cc:cor.cc};
+  }
+  if(type==="crest"){
+    const d=_footballData.crests,idx=~~(Math.random()*d.length),cor=d[idx];
+    const dis=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.country);
+    return{type:"crest",prompt:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",subj:{shape:cor.shape,color:cor.color},ans:cor.country,opts:sh([cor.country,...dis]),meta:"",cc:cor.cc};
+  }
+  return null;
+}
 const GEN={
   city:genCityQ,flag:genFlagQ,capital:genCapitalQ,river:genRiverQ,
   landmark:genLandmarkQ,park:genParkQ,unesco:genUnescoQ,citymark:genCitymarkQ,
@@ -4779,6 +4875,9 @@ const GEN={
   climate_mystery:genClimateQ,
   flag_fusion:genFlagColorQ,
   timezone_jumper:genTimezoneQ,
+  stadium:()=>genFootballQ("stadium"),
+  jersey:()=>genFootballQ("jersey"),
+  crest:()=>genFootballQ("crest"),
 };
 
 /* GAME LOOP */
@@ -4809,6 +4908,122 @@ window.onerror=function(m,u,l,c,e){
   return true; /* prevent default browser error */
 };
 function clr(){clearInterval(tIv);clearTimeout(fTo);clearTimeout(S.freezeTimer);S.freezeTimer=null;}
+
+/* ─── LOCAL 1:1 HOT-SEAT MODE ─── */
+const LV_ROUNDS=10,LV_TIME=15;
+const LV_MODES=[
+  {id:"random",label:"Zuf\u00e4llig \u{1F500}"},
+  {id:"flag",label:"Flaggen \u{1F3F3}"},
+  {id:"capital",label:"Hauptst\u00e4dte \u{1F3DB}"},
+  {id:"comp_area",label:"Fl\u00e4che \u{1F30F}"},
+  {id:"comp_pop",label:"Einwohner \u{1F465}"},
+];
+function initLV(){
+  const mode=S.lvSetupMode==="random"?null:S.lvSetupMode;
+  S.lv={round:0,phase:"q",p1:{name:"Spieler 1",sc:0},p2:{name:"Spieler 2",sc:0},current:1,q:null,sel:null,timer:LV_TIME,mode};
+  _lvNext();
+}
+function _lvNext(){
+  if(!S.lv)return;
+  clearInterval(tIv);
+  const lv=S.lv;
+  if(lv.round>=LV_ROUNDS){lv.phase="gameover";render();return;}
+  lv.phase="q";lv.sel=null;lv.timer=LV_TIME;
+  const modeId=lv.mode||(["flag","capital","city","comp_area","comp_pop","comp_north"][~~(Math.random()*6)]);
+  const genFn=GEN[modeId]||genFlagQ;
+  lv.q=genFn()||genFlagQ();
+  render();
+  tIv=setInterval(()=>{
+    if(!S.lv)return clearInterval(tIv);
+    S.lv.timer--;
+    const te=document.getElementById("lv-timer");
+    if(te)te.textContent=S.lv.timer+"s";
+    if(S.lv.timer<=0){clearInterval(tIv);lvAnswer(null);}
+  },1000);
+}
+function lvAnswer(ans){
+  if(!S.lv||S.lv.phase!=="q")return;
+  clearInterval(tIv);
+  const lv=S.lv;
+  lv.sel=ans;lv.phase="fb";
+  const correct=ans!==null&&ans===lv.q.ans;
+  if(correct){if(lv.current===1)lv.p1.sc++;else lv.p2.sc++;}
+  render();
+  setTimeout(()=>{
+    if(!S.lv)return;
+    if(lv.current===1){lv.current=2;}else{lv.current=1;lv.round++;}
+    _lvNext();
+  },1800);
+}
+function renderLVModal(){
+  if(!S.lv)return renderLVSetup();
+  if(S.lv.phase==="gameover")return renderLVGameover();
+  const lv=S.lv,q=lv.q,isFb=lv.phase==="fb",pl=lv.current===1?lv.p1:lv.p2;
+  const optsHtml=q&&q.opts?q.opts.map(o=>{
+    let cls="btn-base";
+    if(isFb){if(o===q.ans)cls+=" ok";else if(o===lv.sel&&o!==q.ans)cls+=" ng";else cls+=" dm";}
+    return `<button class="${cls}" onclick="lvAnswer(${JSON.stringify(o)})" ${isFb?"disabled":""}>${o}</button>`;
+  }).join(""):"";
+  const tCol=lv.timer<=5?"#ef4444":lv.timer<=10?"#f59e0b":"#10b981";
+  return `<div style="min-height:100vh;background:var(--bg);padding:1rem;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
+      <button class="btn-cancel" onclick="clearInterval(tIv);S.lvModal=false;S.lv=null;render()">\u00d7 Beenden</button>
+      <div style="font-size:.75rem;color:var(--text3);font-weight:700">RUNDE ${lv.round+1}/${LV_ROUNDS}</div>
+      <div id="lv-timer" style="font-size:1.2rem;font-weight:900;color:${tCol}">${lv.timer}s</div>
+    </div>
+    <div style="display:flex;gap:.5rem;margin-bottom:.75rem">
+      <div style="flex:1;padding:.5rem;border-radius:10px;background:${lv.current===1?"rgba(99,102,241,.2)":"var(--bg2)"};border:2px solid ${lv.current===1?"#6366f1":"transparent"};text-align:center">
+        <div style="font-size:.65rem;color:var(--text3)">${lv.p1.name}</div>
+        <div style="font-size:1.4rem;font-weight:900;color:var(--text)">${lv.p1.sc}</div>
+      </div>
+      <div style="flex:1;padding:.5rem;border-radius:10px;background:${lv.current===2?"rgba(236,72,153,.2)":"var(--bg2)"};border:2px solid ${lv.current===2?"#ec4899":"transparent"};text-align:center">
+        <div style="font-size:.65rem;color:var(--text3)">${lv.p2.name}</div>
+        <div style="font-size:1.4rem;font-weight:900;color:var(--text)">${lv.p2.sc}</div>
+      </div>
+    </div>
+    <div style="background:var(--bg2);border-radius:12px;padding:.75rem;margin-bottom:.75rem;text-align:center">
+      <div style="font-size:.7rem;font-weight:700;color:${lv.current===1?"#6366f1":"#ec4899"};margin-bottom:.3rem">\u{1F3AE} ${pl.name} ist dran</div>
+      ${q?`<div class="qprompt" style="font-size:1rem;margin-bottom:.5rem">${q.prompt}</div><div class="qmain" style="font-size:1.6rem;font-weight:900">${q.subj}</div>`:""}
+    </div>
+    <div class="ans-grid">${optsHtml}</div>
+    ${isFb?`<div style="text-align:center;margin-top:.5rem;font-size:.8rem;color:${lv.sel===q.ans?"#10b981":"#ef4444"};font-weight:700">${lv.sel===q.ans?"\u2705 Richtig!":"\u274C Falsch \u2013 "+q.ans}</div>`:""}
+  </div>`;
+}
+function renderLVSetup(){
+  const modesHtml=LV_MODES.map(m=>`<button class="btn-base${S.lvSetupMode===m.id?" ok":""}" onclick="S.lvSetupMode='${m.id}';render()">${m.label}</button>`).join("");
+  return `<div style="min-height:100vh;background:var(--bg);padding:1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center">
+    <button class="btn-cancel" style="align-self:flex-start;margin-bottom:1rem" onclick="S.lvModal=false;render()">\u00d7 Zur\u00fcck</button>
+    <div style="font-size:2rem;margin-bottom:.5rem">\u{1F3AE}</div>
+    <div style="font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:.3rem">Lokal 1:1</div>
+    <div style="font-size:.78rem;color:var(--text3);margin-bottom:1.5rem">Zwei Spieler \u00b7 Ein Ger\u00e4t \u00b7 ${LV_ROUNDS} Runden</div>
+    <div style="width:100%;max-width:360px">
+      <div style="font-size:.7rem;font-weight:700;color:var(--text3);margin-bottom:.5rem">MODUS W\u00c4HLEN</div>
+      <div class="ans-grid" style="margin-bottom:1rem">${modesHtml}</div>
+      <button class="btn-p" style="width:100%" onclick="initLV()">\u{1F680} Spiel starten</button>
+    </div>
+  </div>`;
+}
+function renderLVGameover(){
+  const lv=S.lv;
+  const winner=lv.p1.sc>lv.p2.sc?lv.p1:lv.p2.sc>lv.p1.sc?lv.p2:null;
+  return `<div style="min-height:100vh;background:var(--bg);padding:1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+    <div style="font-size:3rem;margin-bottom:.5rem">${winner?"\u{1F3C6}":"\u{1F91D}"}</div>
+    <div style="font-size:1.5rem;font-weight:900;color:var(--text);margin-bottom:.25rem">${winner?winner.name+" gewinnt!":"Unentschieden!"}</div>
+    <div style="display:flex;gap:1rem;margin:1.5rem 0">
+      <div style="flex:1;background:var(--bg2);border-radius:12px;padding:1rem">
+        <div style="font-size:.7rem;color:var(--text3)">${lv.p1.name}</div>
+        <div style="font-size:2.5rem;font-weight:900;color:${lv.p1.sc>lv.p2.sc?"#10b981":"var(--text)"}">${lv.p1.sc}</div>
+      </div>
+      <div style="flex:1;background:var(--bg2);border-radius:12px;padding:1rem">
+        <div style="font-size:.7rem;color:var(--text3)">${lv.p2.name}</div>
+        <div style="font-size:2.5rem;font-weight:900;color:${lv.p2.sc>lv.p1.sc?"#10b981":"var(--text)"}">${lv.p2.sc}</div>
+      </div>
+    </div>
+    <button class="btn-p" style="width:100%;max-width:320px;margin-bottom:.75rem" onclick="initLV()">\u{1F504} Nochmal spielen</button>
+    <button class="btn-g" style="width:100%;max-width:320px" onclick="S.lvModal=false;S.lv=null;render()">Hauptmen\u00fc</button>
+  </div>`;
+}
+
 function nextRound(){
   clr();
   const nr=S.rd+1;
@@ -5726,6 +5941,7 @@ function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.can
     app.innerHTML=renderOnboarding(S.obStep);return;
   }
   if(S.leagueEvalResult){app.innerHTML=renderLeagueEvalModal(S.leagueEvalResult);return;}
+  if(S.lvModal){app.innerHTML=renderLVModal();return;}
   if(S.mpModal){app.innerHTML=renderMultiplayerLobby();return;}
   if(S.payModal){app.innerHTML=renderPayModal();return;}
   if(S.lockModal){app.innerHTML=renderLockModal(S.lockModal);return;}
@@ -5891,7 +6107,7 @@ app.innerHTML=`<div class="scr">
     return;
   }
   if(!q){S.ph="menu";S.q=null;render();return;}  /* guard: q not yet set */
-  const col=tc(),p=pct(),_tr=tier(st);
+  const col=tc(),p=pct(),_tr=tier(st);const tm=diff==='survival'?S.tm+'s':`${rd+1}/${ROUNDS}`;const _tmSecs=diff!=='survival'?`<span style='font-size:.55rem;opacity:.7;margin-left:3px'>${S.tm}s</span>`:'';
   let qBody="";
   if(q.type==="flag"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="qflag"><img src="https://flagcdn.com/w80/${q.subj}.png" alt="Flagge" style="max-height:25vh;width:auto;max-width:100%;object-fit:contain;display:block;margin:0 auto"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
@@ -6074,7 +6290,16 @@ app.innerHTML=`<div class="scr">
     if(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"){
       answerHtml="";
     }else{
-      const btns=q.opts.map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${esc(q.type==="map_ivr"?o:displayCountry(o))}${mk}</button>`;}).join("");
+      if(q.type==="stadium"){
+        qBody=`<div class="qprompt">${q.prompt}</div><div class="qmain" style="font-size:1.3rem;font-weight:900">${q.subj}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+      }else if(q.type==="jersey"){
+        const _jsvg=_drawJersey(q.subj.cc,q.subj.color,q.subj.style);
+        qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;margin:.75rem 0">${_jsvg}</div>`;
+      }else if(q.type==="crest"){
+        const _csvg=_drawCrest(q.subj.shape,q.subj.color);
+        qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;margin:.75rem 0">${_csvg}</div>`;
+      }else { const _isFootball=(q.type==="stadium"||q.type==="jersey"||q.type==="crest");
+  const btns=q.opts.map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${_isFootball&&String(o).length===2?`<img src="https://flagcdn.com/w40/${String(o).toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:""}${esc(q.type==="map_ivr"?o:_isFootball?(displayCountry(String(o))||String(o)):displayCountry(o))}${mk}</button>`;}).join("");
       const _twoOpts=q.opts&&q.opts.length===2?' two-opts':'';
       answerHtml=`<div class="answers${_twoOpts}">${btns}</div>`;
     }
@@ -6171,8 +6396,7 @@ function drawWorldMap(targetName,sel,ok,preHL,readOnly){
   /* Zoom + pan */
   const zoom=d3.zoom().scaleExtent([1,10])
     .on('zoom',ev=>{
-      if(sel\!==null)return; /* lock zoom during feedback so user sees the result */
-      g.attr('transform',ev.transform);
+      g.attr('transform',ev.transform); /* zoom always enabled */
     });
   svg.call(zoom);
 
@@ -7240,7 +7464,7 @@ const SLF_LETTERS="ABCDEFGHIKLMNOPRSTW";
 function initSLF(){
   clearInterval(tIv);
   const letter=SLF_LETTERS[~~(rng()*SLF_LETTERS.length)];
-  S.slfData={letter,answers:{city:"",country:"",river:""},phase:"input",timeLeft:30};
+  S.slfData={letter,answers:{city:"",country:"",river:""},phase:"input",timeLeft:60};
   S.gameStartTime=Date.now();
   S.ph="playing";
   if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{
@@ -7298,7 +7522,7 @@ function handleLandHauptstadtSubmit(){
 function renderLandHauptstadt(sc){
   if(\!S.slfData)return'<div class="scr"></div>';
   const{letter,answers,phase,timeLeft}=S.slfData;
-  const timerCol=timeLeft<=10?"#ef4444":timeLeft<=20?"#f59e0b":"#10b981";
+  const timerCol=timeLeft<=15?"#ef4444":timeLeft<=30?"#f59e0b":"#10b981";
   if(phase==="result"){
     const{cityValid,countryValid,riverValid}=S.slfData.results||{};
     const rowHtml=(label,val,valid)=>`<div class="slf-result-row"><span class="slf-result-label">${label}</span><span class="slf-result-val">${esc(val)||"–"}</span><span style="font-size:1rem">${valid?"✓":"❌"}</span></div>`;
@@ -7320,7 +7544,7 @@ function renderLandHauptstadt(sc){
       <div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">BUCHSTABE</div><div style="font-size:2.6rem;font-weight:900;line-height:1">${letter}</div></div>
       <div style="text-align:right"><div style="font-size:.6rem;color:var(--text3)">ZEIT</div><div id="slf-timer-val" style="font-size:2rem;font-weight:900;color:${timerCol}">${timeLeft}s</div></div>
     </div>
-    <div class="tbar" style="margin-bottom:1rem"><div class="tfill" style="width:${Math.round(timeLeft/30*100)}%;background:${timerCol}"></div></div>
+    <div class="tbar" style="margin-bottom:1rem"><div class="tfill" style="width:${Math.round(timeLeft/60*100)}%;background:${timerCol}"></div></div>
     <div class="slf-field"><label class="slf-label">\u{1F3D9} STADT</label><input id="slf-city" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Stadt mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.city)}" oninput="S.slfData.answers.city=this.value" onkeydown="if(event.key==='Enter')document.getElementById('slf-country')?.focus()"></div>
     <div class="slf-field"><label class="slf-label">\u{1F30D} LAND</label><input id="slf-country" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Land mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.country)}" oninput="S.slfData.answers.country=this.value" onkeydown="if(event.key==='Enter')document.getElementById('slf-river')?.focus()"></div>
     <div class="slf-field"><label class="slf-label">\u{1F4A7} FLUSS</label><input id="slf-river" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Fluss mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.river)}" oninput="S.slfData.answers.river=this.value" onkeydown="if(event.key==='Enter')handleSLFSubmit()"></div>
@@ -7611,10 +7835,16 @@ function renderHomeTab(){
         <div style="margin-left:auto;background:#7c3aed;color:#fff;border-radius:20px;padding:.3rem .85rem;font-size:.76rem;font-weight:700">\u25ba Spielen</div>
       </div>
     </div>
+    <div style="background:linear-gradient(135deg,#4f46e5,#7c3aed);border-radius:14px;padding:.7rem 1rem;margin-bottom:.55rem;cursor:pointer;display:flex;align-items:center;gap:12px;box-shadow:0 2px 10px rgba(99,102,241,.25)" onclick="S.lvModal=true;S.lv=null;render()" role="button">
+      <div style="font-size:2rem">⚔️</div>
+      <div style="flex:1"><div style="font-size:.9rem;font-weight:900;color:#fff">Lokal 1:1 Hot-Seat</div><div style="font-size:.7rem;color:rgba(255,255,255,.75)">Zwei Spieler · Ein Gerät · 10 Runden</div></div>
+      <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:.25rem .75rem;font-size:.72rem;font-weight:700">► Los</div>
+    </div>
     <div class="acc-list">
       ${catSection("pure_geo")}
       ${catSection("lifestyle")}
       ${catSection("eu_plates")}
+      ${catSection("football")}
       ${catSection("comparisons")}
       ${catSection("neighbors")}
       ${catSection("map_mode")}
@@ -7643,7 +7873,7 @@ function renderLernenTab(){
     return p;
   })();
   if(\!pool.length)return`<div class="panel" style="text-align:center;padding:2rem"><div style="font-size:2rem">\u{1F50D}</div><p style="color:var(--text3);margin-top:.5rem">Keine Karten gefunden.</p></div>`;
-  const idx=Math.min(S.fcIdx,pool.length-1);
+  const idx=((S.fcIdx%pool.length)+pool.length)%pool.length;
   const card=pool[idx];
   const countries=[...new Set(PLATES_DATA.map(p=>p.country))].sort();
   return`<div>
@@ -8458,7 +8688,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .btn-p:disabled{background:var(--bg4);color:var(--text3);cursor:default}
 .btn-g{width:100%;background:transparent;color:var(--text2);border:1.5px solid var(--border);border-radius:12px;padding:.7rem;font-size:.9rem;font-weight:700;cursor:pointer;transition:border-color .15s;margin-bottom:.5rem}
 .btn-g:hover{border-color:var(--text3);color:var(--text)}
-.btn-cancel{background:transparent;border:1.5px solid var(--border);color:var(--text3);border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:700;cursor:pointer}
+.btn-cancel{background:rgba(239,68,68,.12);border:1.5px solid rgba(239,68,68,.4);color:#f87171;border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:700;cursor:pointer}
 .btn-cancel:hover{color:#f87171;border-color:#f87171}
 .diff-toggle{display:flex;background:var(--bg3);border-radius:10px;padding:3px;margin-bottom:.75rem;border:1px solid var(--border)}
 .diff-btn{flex:1;background:transparent;color:var(--text3);border:none;border-radius:8px;padding:.5rem;font-size:.82rem;font-weight:700;cursor:pointer;transition:background .15s,color .15s}

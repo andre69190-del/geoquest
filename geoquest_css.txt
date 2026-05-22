@@ -39,7 +39,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .btn-p:disabled{background:var(--bg4);color:var(--text3);cursor:default}
 .btn-g{width:100%;background:transparent;color:var(--text2);border:1.5px solid var(--border);border-radius:12px;padding:.7rem;font-size:.9rem;font-weight:700;cursor:pointer;transition:border-color .15s;margin-bottom:.5rem}
 .btn-g:hover{border-color:var(--text3);color:var(--text)}
-.btn-cancel{background:transparent;border:1.5px solid var(--border);color:var(--text3);border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:700;cursor:pointer}
+.btn-cancel{background:rgba(239,68,68,.12);border:1.5px solid rgba(239,68,68,.4);color:#f87171;border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:700;cursor:pointer}
 .btn-cancel:hover{color:#f87171;border-color:#f87171}
 .diff-toggle{display:flex;background:var(--bg3);border-radius:10px;padding:3px;margin-bottom:.75rem;border:1px solid var(--border)}
 .diff-btn{flex:1;background:transparent;color:var(--text3);border:none;border-radius:8px;padding:.5rem;font-size:.82rem;font-weight:700;cursor:pointer;transition:background .15s,color .15s}
