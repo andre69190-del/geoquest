@@ -6431,6 +6431,11 @@ function saveGridCols(val){
   const _el=document.getElementById('gq-nuclear');
   if(_el)_el.textContent=_el.textContent.replace('--grid-cols:4','--grid-cols:'+_sv);
 })();
+function _scheduleFilterRefresh(){
+  if(typeof window.filterByCategory==="function"&&document.getElementById("mainGamesGrid")){
+    window.filterByCategory((typeof S!=="undefined"&&S.filterCat)||"pure_geo");
+  }
+}
 function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
   /* Surgical Scope Guard for candidates */
   const candidates_safe = (typeof S !== "undefined" && S.candidates) ? S.candidates : ((typeof candidates !== "undefined") ? candidates : []);
@@ -6510,6 +6515,7 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="admin"?renderAdminTab():""}
       ${S.settingsModal?renderSettingsModal():""}${S.adModal?renderAdModal():""}
     </div>${renderBottomNav()}`;
+    if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
     return;
   }
 
@@ -8660,7 +8666,6 @@ function renderHomeTab(){
     </div>
     <div class="filter-chips-container">${_chips}</div>
     <div class="games-grid" id="mainGamesGrid">${_allCards}</div>
-    <script>setTimeout(function(){window.filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');},80);</script>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>
