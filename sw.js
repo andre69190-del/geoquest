@@ -1,5 +1,5 @@
 /* GeoQuest – Service Worker v1.0 */
-const CACHE = "geoquest-v1";
+const CACHE = "geoquest-v2";
 const ASSETS = [
   "./GeoQuest.html",
   "./manifest.json",

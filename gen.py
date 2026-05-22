@@ -4785,7 +4785,7 @@ const GEN={
 /* P154: Global error boundary — prevents silent white-screen crashes */
 function _sendBugMail(subject, body){
   /* ── KONFIG: Ersetze diese Adresse mit deiner echten E-Mail ── */
-  const _BUG_MAIL="deine-email@beispiel.de"; /* <<< HIER E-MAIL EINTRAGEN */
+  const _BUG_MAIL="farndt691@gmail.com"; /* <<< HIER E-MAIL EINTRAGEN */
   window.location.href="mailto:"+_BUG_MAIL
     +"?subject="+encodeURIComponent(subject)
     +"&body="+encodeURIComponent(body);
