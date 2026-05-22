@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT: Massive content drop - 28 new beta game modes (Sport/Nachbarn/Weltkarte) via unified data-driven engine with genBetaMCQ/HL/Spotter (Phase 165+166)"
+git commit -m "FEAT: Phase 165+166+167 — Security patches, 28 beta modes, Admin Dashboard (device tracking/hourly chart/full mode list/split unique users) + Global Bug Reporter (reportBug/btn-bug/Supabase)"
 echo.
 git push origin main
 echo.

@@ -4294,9 +4294,10 @@ async function doSetNewPassword(){
 function showComingSoonToast(name){showToast("\u{1F680} "+name+" kommt bald\! Bleib gespannt.");}
 async function saveSession(mode,score,bs,correct,durationMs){
   /* Local fallback – always write so guests keep history too */
+  const _device=/Mobi|Android|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)?"mobile":"desktop";
   try{
     const _loc=JSON.parse(localStorage.getItem("gq_sessions_local")||"[]");
-    _loc.push({mode,score,max:bs,correct,duration_ms:durationMs||0,date:new Date().toISOString()});
+    _loc.push({mode,score,max:bs,correct,duration_ms:durationMs||0,date:new Date().toISOString(),device_type:_device});
     localStorage.setItem("gq_sessions_local",JSON.stringify(_loc.slice(-50)));
   }catch(e){}
   /* Sanity-cap score before submitting – max honest = ROUNDS*(BASE+12*TB)*3*3 */
@@ -4311,7 +4312,7 @@ async function saveSession(mode,score,bs,correct,durationMs){
     window.mpGameCh=null;
   }
   if(!sb||!sbUser?.id)return;
-  await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:sbProfile?.username||null});
+  try{await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:sbProfile?.username||null,device_type:_device});}catch(_e){await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:sbProfile?.username||null});}
   /* Use RPC to prevent client-side score tampering */
   await sb.rpc("add_score",{p_user_id:sbUser.id,p_score:score,p_coins:Math.floor(score/100),p_rounds:ROUNDS,p_duration_ms:durationMs||0});
   if(sbProfile){sbProfile.total_score=(sbProfile.total_score||0)+score;sbProfile.games_played=(sbProfile.games_played||0)+1;}
@@ -6732,7 +6733,7 @@ app.innerHTML=`<div class="scr">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
+          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
         </div>
       </div>
       <div class="q-area" style="padding:0 8px 8px">
@@ -6761,7 +6762,7 @@ app.innerHTML=`<div class="scr">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
+          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
         </div>
       </div>
       ${S.mpOpponent?`<div class="duell-bar-wrap" style="margin:0 0 4px"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -6802,7 +6803,7 @@ app.innerHTML=`<div class="scr">
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -6875,7 +6876,7 @@ app.innerHTML=`<div class="scr">
         ${diff==="survival"
           ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
           :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
+        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
       </div>
     </div>
     ${S.mpOpponent?`<div class="duell-bar-wrap"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -7845,7 +7846,7 @@ function renderLogikGitter(sc){
       <div style="display:flex;align-items:center;gap:8px">
         <div style="font-size:.75rem;color:var(--text3)">${gd.correctCount}/9</div>
         <div style="font-size:.85rem;font-weight:700;min-width:2.2rem;text-align:right;color:${tc()}">${S.tm}s</div>
-        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
+        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
       </div>
     </div>
     <div class="tbar"><div class="tfill" style="width:${pct()}%;background:${tc()}"></div></div>
@@ -7968,7 +7969,7 @@ function renderReiseroute(sc){
       </div>
       <div style="display:flex;align-items:center;gap:8px">
         <div style="font-size:.75rem;color:var(--text3)">${rd.steps} Schr.</div>
-        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
+        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
       </div>
     </div>
     <div style="background:var(--bg2);border-radius:12px;padding:.6rem .75rem;margin:.3rem 0">
@@ -8251,6 +8252,26 @@ function renderStatsTab(){
 }
 
 /* ─── ADMIN TAB ──────────────────────────────────────────────────── */
+/* Phase 167B: Global Bug Reporter */
+async function reportBug(){
+  const msg=window.prompt("\u{1F41E} Was stimmt nicht? (Modus, Frage, Fehler beschreiben)");
+  if(msg===null||!msg.trim())return;
+  showToast("\u{1F4E4} Sende Fehlermeldung\u2026");
+  const ctx={mode:S.mode||"unknown",diff:S.diff,rd:S.rd,ph:S.ph,
+    q:S.q?{type:S.q.type,prompt:(S.q.prompt||"").slice(0,200),subj:String(S.q.subj||"").slice(0,100),ans:S.q.ans}:null};
+  if(sb){
+    try{
+      await sb.from("bug_reports").insert({user_id:sbUser?.id||null,mode:S.mode||"unknown",context:JSON.stringify(ctx),message:msg.trim()});
+      showToast("\u2705 Danke! Fehler wurde gemeldet.");
+    }catch(e){
+      _sendBugMail("GeoQuest Bug: "+(S.mode||"?"),msg+"\n\nKontext: "+JSON.stringify(ctx));
+      showToast("\u{1F4E7} Per E-Mail gesendet (DB nicht erreichbar).");
+    }
+  }else{
+    _sendBugMail("GeoQuest Bug: "+(S.mode||"?"),msg+"\n\nKontext: "+JSON.stringify(ctx));
+    showToast("\u{1F4E7} Per E-Mail gesendet.");
+  }
+}
 async function loadAdminData(){
   if(sbUser?.email!=="andre69190@gmail.com")return;
   S.adminLoading=true;S.adminData=null;render();
@@ -8263,28 +8284,69 @@ function renderAdminTab(){
   if(S.adminLoading)return`<div style="text-align:center;padding:3rem;color:var(--text3)">Lade Admin-Daten…</div>`;
   if(!S.adminData){setTimeout(loadAdminData,0);return`<div style="text-align:center;padding:3rem;color:var(--text3)">Lade…</div>`;}
   const rows=S.adminData;
-  const today=new Date().toISOString().slice(0,10);
+  const now=new Date();
+  const today=now.toISOString().slice(0,10);
+  const d7=new Date(now);d7.setDate(d7.getDate()-6);const d7str=d7.toISOString().slice(0,10);
   const todayRows=rows.filter(r=>(r.created_at||"").startsWith(today));
-  const uids=new Set(rows.map(r=>r.user_id||r.username).filter(Boolean));
+  const week7Rows=rows.filter(r=>(r.created_at||"").slice(0,10)>=d7str);
+  const uidsAll=new Set(rows.map(r=>r.user_id||r.username).filter(Boolean));
+  const uidsToday=new Set(todayRows.map(r=>r.user_id||r.username).filter(Boolean));
+  const uids7d=new Set(week7Rows.map(r=>r.user_id||r.username).filter(Boolean));
   const modeCount={};rows.forEach(r=>{modeCount[r.mode]=(modeCount[r.mode]||0)+1;});
-  const sorted=Object.entries(modeCount).sort((a,b)=>b[1]-a[1]);
-  const topModes=sorted.slice(0,5);
+  const allModes=Object.entries(modeCount).sort((a,b)=>b[1]-a[1]);
   const totalScore=rows.reduce((a,r)=>a+(r.score||0),0);
   const avgScore=rows.length?Math.round(totalScore/rows.length):0;
-  // Sessions per day (last 7 days)
+  const devCount={mobile:0,desktop:0,unknown:0};
+  rows.forEach(r=>{const d=(r.device_type||"").toLowerCase();
+    if(d==="mobile")devCount.mobile++;else if(d==="desktop")devCount.desktop++;else devCount.unknown++;});
+  const devTotal=rows.length||1;
+  const mPct=Math.round(devCount.mobile/devTotal*100);
+  const dPct=Math.round(devCount.desktop/devTotal*100);
+  const uPct=100-mPct-dPct;
+  const hourCount=Array(24).fill(0);
+  rows.forEach(r=>{if(r.created_at){const h=new Date(r.created_at).getHours();if(h>=0&&h<24)hourCount[h]++;}});
+  const maxHour=Math.max(1,...hourCount);
   const dayCounts={};
   for(let i=6;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);const k=d.toISOString().slice(0,10);dayCounts[k]=0;}
   rows.forEach(r=>{const k=(r.created_at||"").slice(0,10);if(dayCounts[k]!==undefined)dayCounts[k]++;});
   const maxDay=Math.max(1,...Object.values(dayCounts));
-  const dayBars=Object.entries(dayCounts).map(([d,n])=>{
+  const dayBarsArr=Object.entries(dayCounts);
+  const maxDayVal=Math.max(...dayBarsArr.map(([,n])=>n));
+  const dayBars=dayBarsArr.map(([d,n])=>{
     const pct=Math.round(n/maxDay*100);
     const label=new Date(d).toLocaleDateString("de-DE",{weekday:"short",day:"2-digit"});
     return`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px">
-      <div style="font-size:.6rem;color:${n===Math.max(...Object.values(dayCounts))?"#34d399":"var(--text3)"};font-weight:700">${n}</div>
+      <div style="font-size:.6rem;color:${n===maxDayVal?"#34d399":"var(--text3)"};font-weight:700">${n}</div>
       <div style="width:100%;background:var(--bg3);border-radius:4px;height:50px;display:flex;align-items:flex-end">
         <div style="width:100%;height:${pct}%;background:#10b981;border-radius:4px;min-height:2px"></div>
       </div>
       <div style="font-size:.55rem;color:var(--text3);text-align:center">${label}</div>
+    </div>`;
+  }).join("");
+  const hourBars=hourCount.map((n,h)=>{
+    const pct=Math.round(n/maxHour*100);
+    const isNight=h<6||h>=22;const isPeak=n===maxHour&&n>0;
+    return`<div style="flex:1;display:flex;flex-direction:column;align-items:center" title="${h}:00 — ${n}">
+      <div style="width:100%;background:var(--bg3);border-radius:3px;height:40px;display:flex;align-items:flex-end">
+        <div style="width:100%;height:${pct}%;background:${isPeak?"#f59e0b":isNight?"#6366f1":"#60a5fa"};border-radius:3px;min-height:${n?2:0}px"></div>
+      </div>
+      ${h%4===0?`<div style="font-size:.45rem;color:var(--text3)">${h}h</div>`:"<div style='height:.6rem'></div>"}
+    </div>`;
+  }).join("");
+  const adminColors=["#10b981","#60a5fa","#f59e0b","#a78bfa","#f87171","#34d399","#38bdf8","#fb923c","#c084fc","#f43f5e"];
+  const modeRows=allModes.map(([mid,cnt],i)=>{
+    const m=MODES.find(x=>x.id===mid);
+    const pct=Math.round(cnt/rows.length*100);
+    const col=adminColors[i%adminColors.length];
+    return`<div style="display:flex;align-items:center;gap:8px;margin-bottom:.38rem">
+      <span style="min-width:1.1rem;text-align:center;font-size:.82rem">${m?.icon||"\u{1F3AE}"}</span>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;justify-content:space-between;font-size:.67rem;color:var(--text);margin-bottom:1px">
+          <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:130px">${m?modeTitle(m):mid}</span>
+          <span style="color:var(--text3);flex-shrink:0;margin-left:4px">${cnt} (${pct}%)</span>
+        </div>
+        <div style="background:var(--bg3);border-radius:3px;height:5px"><div style="background:${col};border-radius:3px;height:5px;width:${pct}%"></div></div>
+      </div>
     </div>`;
   }).join("");
   return`<div>
@@ -8293,28 +8355,45 @@ function renderAdminTab(){
       <button onclick="S.adminData=null;render()" style="background:none;border:1.5px solid var(--border);border-radius:8px;padding:.25rem .6rem;font-size:.72rem;color:var(--text3);cursor:pointer">↺</button>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:.85rem">
-      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#34d399">${rows.length.toLocaleString()}</div><div style="font-size:.65rem;color:var(--text3)">Sessions gesamt</div></div>
-      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#f59e0b">${todayRows.length}</div><div style="font-size:.65rem;color:var(--text3)">Heute</div></div>
-      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#60a5fa">${uids.size}</div><div style="font-size:.65rem;color:var(--text3)">Einz. Spieler</div></div>
-      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#a78bfa">${avgScore.toLocaleString()}</div><div style="font-size:.65rem;color:var(--text3)">Ø Score</div></div>
+      <div class="panel" style="text-align:center;padding:.65rem .4rem"><div style="font-size:1.5rem;font-weight:900;color:#34d399">${rows.length.toLocaleString()}</div><div style="font-size:.6rem;color:var(--text3)">Sessions gesamt</div></div>
+      <div class="panel" style="text-align:center;padding:.65rem .4rem"><div style="font-size:1.5rem;font-weight:900;color:#f59e0b">${todayRows.length}</div><div style="font-size:.6rem;color:var(--text3)">Sessions heute</div></div>
+      <div class="panel" style="text-align:center;padding:.65rem .4rem"><div style="font-size:1.3rem;font-weight:900;color:#60a5fa">${uids7d.size}</div><div style="font-size:.6rem;color:var(--text3)">Unique (7 Tage)</div></div>
+      <div class="panel" style="text-align:center;padding:.65rem .4rem"><div style="font-size:1.3rem;font-weight:900;color:#a78bfa">${uidsToday.size}</div><div style="font-size:.6rem;color:var(--text3)">Unique (heute)</div></div>
+      <div class="panel" style="text-align:center;padding:.65rem .4rem"><div style="font-size:1.3rem;font-weight:900;color:#fb923c">${uidsAll.size}</div><div style="font-size:.6rem;color:var(--text3)">Unique (gesamt)</div></div>
+      <div class="panel" style="text-align:center;padding:.65rem .4rem"><div style="font-size:1.3rem;font-weight:900;color:#f43f5e">${avgScore.toLocaleString()}</div><div style="font-size:.6rem;color:var(--text3)">Ø Score</div></div>
     </div>
     <div class="panel" style="margin-bottom:.85rem;padding:.85rem">
       <div style="font-size:.7rem;font-weight:700;color:var(--text3);letter-spacing:.5px;margin-bottom:.65rem">SPIELE PRO TAG (7 TAGE)</div>
       <div style="display:flex;gap:4px;align-items:flex-end;height:80px">${dayBars}</div>
     </div>
     <div class="panel" style="margin-bottom:.85rem;padding:.85rem">
-      <div style="font-size:.7rem;font-weight:700;color:var(--text3);letter-spacing:.5px;margin-bottom:.65rem">TOP MODI</div>
-      ${topModes.map(([mid,cnt],i)=>{
-        const m=MODES.find(x=>x.id===mid);
-        const pct=Math.round(cnt/rows.length*100);
-        return`<div style="display:flex;align-items:center;gap:8px;margin-bottom:.45rem">
-          <span style="min-width:1.2rem;text-align:center">${m?.icon||"\u{1F3AE}"}</span>
-          <div style="flex:1">
-            <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--text);margin-bottom:2px"><span>${m?modeTitle(m).slice(0,16):mid}</span><span style="color:var(--text3)">${cnt}</span></div>
-            <div style="background:var(--bg3);border-radius:4px;height:6px"><div style="background:${"#10b981,#60a5fa,#f59e0b,#a78bfa,#f87171".split(",")[i]};border-radius:4px;height:6px;width:${pct}%"></div></div>
-          </div>
-        </div>`;
-      }).join("")}
+      <div style="font-size:.7rem;font-weight:700;color:var(--text3);letter-spacing:.5px;margin-bottom:.65rem">AKTIVITÄT PRO STUNDE (0-23h)</div>
+      <div style="display:flex;gap:2px;align-items:flex-end;height:52px">${hourBars}</div>
+      <div style="font-size:.5rem;color:var(--text3);margin-top:4px">&#x1F4A4; Nacht · &#x1F535; Tag · &#x1F7E1; Peak</div>
+    </div>
+    <div class="panel" style="margin-bottom:.85rem;padding:.85rem">
+      <div style="font-size:.7rem;font-weight:700;color:var(--text3);letter-spacing:.5px;margin-bottom:.65rem">GERÄTE</div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.8rem;min-width:1.4rem">📱</span>
+          <div style="flex:1;background:var(--bg3);border-radius:4px;height:10px"><div style="background:#60a5fa;border-radius:4px;height:10px;width:${mPct}%"></div></div>
+          <span style="font-size:.65rem;color:var(--text3);min-width:3rem">${devCount.mobile} (${mPct}%)</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.8rem;min-width:1.4rem">💻</span>
+          <div style="flex:1;background:var(--bg3);border-radius:4px;height:10px"><div style="background:#34d399;border-radius:4px;height:10px;width:${dPct}%"></div></div>
+          <span style="font-size:.65rem;color:var(--text3);min-width:3rem">${devCount.desktop} (${dPct}%)</span>
+        </div>
+        ${uPct>0?`<div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.8rem;min-width:1.4rem">❓</span>
+          <div style="flex:1;background:var(--bg3);border-radius:4px;height:10px"><div style="background:#6b7280;border-radius:4px;height:10px;width:${uPct}%"></div></div>
+          <span style="font-size:.65rem;color:var(--text3);min-width:3rem">${devCount.unknown} (${uPct}%)</span>
+        </div>`:""}
+      </div>
+    </div>
+    <div class="panel" style="margin-bottom:.85rem;padding:.85rem">
+      <div style="font-size:.7rem;font-weight:700;color:var(--text3);letter-spacing:.5px;margin-bottom:.65rem">ALLE MODI (${allModes.length})</div>
+      <div style="max-height:260px;overflow-y:auto;padding-right:2px">${modeRows}</div>
     </div>
     <div style="font-size:.65rem;color:var(--text3);text-align:center">Letzte 2000 Sessions · Nur sichtbar für dich</div>
   </div>`;
@@ -8416,7 +8495,7 @@ function renderHomeTab(){
     <p style="text-align:center;color:var(--text2);font-size:.72rem;font-weight:600;margin:.3rem 0 .5rem">${
       t(S.diff==="casual"?"diff_desc_casual":S.diff==="hardcore"?"diff_desc_hc":"diff_desc_surv")
     }</p>
-    <div style="margin:.6rem 0 .5rem;text-align:center"><button onclick="(function(){const body='Hallo Entwickler,\n\nich habe folgendes Feedback / einen Fehler gefunden:\n\n[Bitte beschreibe den Fehler und h\u00e4nge ggf. einen Screenshot an]\n\n';_sendBugMail('GeoQuest Feedback',body);})()" style="background:transparent;color:var(--text3);border:none;font-size:.72rem;cursor:pointer;text-decoration:underline;padding:.3rem .5rem">🐞 Feedback oder Fehler melden</button></div>
+    <div style="margin:.6rem 0 .5rem;text-align:center"><button onclick="reportBug()" style="background:transparent;color:var(--text3);border:none;font-size:.72rem;cursor:pointer;text-decoration:underline;padding:.3rem .5rem">🐞 Fehler melden</button></div>
     <div style="height:5rem"></div>`;
   console.log("[GQ] renderHomeTab() returning length:",_homeHTML.length);
   return _homeHTML;
