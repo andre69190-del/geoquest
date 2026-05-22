@@ -8465,10 +8465,15 @@ function filterByCategory(cat){
     c.style.background=isActive?'#3b82f6':'';
     c.style.color=isActive?'#fff':'';
   });
-  // Show/hide cards by data-category (strict direct match)
+  // Show/hide cards by data-category (strict direct match, !important-safe)
   document.querySelectorAll('[data-category]').forEach(function(card){
     var cardCat=card.getAttribute('data-category');
-    card.style.display=(cat==='all'||cardCat===cat)?'':'none';
+    var show=(cat==='all'||cardCat===cat);
+    if(show){
+      card.style.removeProperty('display');
+    } else {
+      card.style.setProperty('display','none','important');
+    }
   });
   var gs=document.getElementById('gameSearch');
   if(gs)gs.value='';
@@ -8645,7 +8650,8 @@ function renderHomeTab(){
   .filter-chips-container{display:flex !important;flex-wrap:nowrap !important;gap:12px !important;overflow-x:auto !important;padding-bottom:15px !important;scrollbar-width:none !important}
   .filter-chips-container::-webkit-scrollbar{display:none !important}
   .filter-chip{font-size:.85rem !important;padding:9px 18px !important;white-space:nowrap !important;flex-shrink:0 !important;border-radius:22px !important}
-  .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center !important}
+  .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;align-items:center !important;text-align:center !important}
+  .mode-card:not([style*='display:none']){display:flex !important;flex-direction:column !important}
   .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:10px !important;align-items:center !important}
   #gameSearch{flex:1 !important;min-width:0 !important}
   .btn-random-game{flex-shrink:0 !important;cursor:pointer !important}

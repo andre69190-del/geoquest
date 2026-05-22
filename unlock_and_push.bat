@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Phase 185: Strict data-category filter sync, DOMContentLoaded trigger, console.log debug"
+git commit -m "Phase 187: Fix filter blocked by display:flex !important in nuclear CSS - use setProperty important"
 echo.
 git push origin main
 echo.
