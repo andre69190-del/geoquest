@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "UX/UI: Final Zihamonika-Grid-Hybrid - accordion categories with forced grid, search auto-expand, favourites placeholder"
+git commit -m "Fix: Accordion grid guaranteed via cssText + important, header inline styles"
 echo.
 git push origin main
 echo.

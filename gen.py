@@ -8473,7 +8473,11 @@ function filterByCategory(cat){
       section.style.removeProperty('display');
       var content=section.querySelector('.accordion-content');
       var arrow=section.querySelector('.acc-arrow');
-      if(content){content.classList.add('open');}
+      if(content){
+        var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
+        content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
+        content.classList.add('open');
+      }
       if(arrow){arrow.style.transform='rotate(180deg)';}
     } else {
       section.style.setProperty('display','none','important');
@@ -8489,8 +8493,11 @@ window.toggleAccordion=function(header,catId){
   var isOpen=content.classList.contains('open');
   if(isOpen){
     content.classList.remove('open');
+    content.style.display='none';
     if(arrow)arrow.style.transform='rotate(0deg)';
   } else {
+    var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
+    content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
     content.classList.add('open');
     if(arrow)arrow.style.transform='rotate(180deg)';
   }
@@ -8585,7 +8592,7 @@ function renderHomeTab(){
       </div>`:'';
     const lockPill=!unlocked?`<span style="font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:10px;margin-left:4px">\u{1F512} ${cat.cost?cat.cost.toLocaleString():'?'} Coins</span>`:'';
     return`<div class="accordion-section" data-cat="${catId}"${!isDefault?' style="display:none"':''}>
-      <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')">
+      <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
         <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
         <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
       </div>

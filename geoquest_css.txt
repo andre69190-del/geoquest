@@ -651,15 +651,15 @@ input[type=text]::placeholder{color:var(--text3)}
   transition:opacity .15s !important
 }
 .accordion-header:hover{opacity:.85 !important}
-.accordion-content{
-  display:none;
-  grid-template-columns:repeat(var(--grid-cols,4),1fr);
-  gap:15px;
-  padding:10px 0 15px 0;
-  width:100%;
-  box-sizing:border-box
+.accordion-content{display:none;width:100%;box-sizing:border-box}
+.accordion-content.open{
+  display:grid !important;
+  grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;
+  gap:15px !important;
+  padding:10px 0 15px 0 !important;
+  width:100% !important;
+  box-sizing:border-box !important
 }
-.accordion-content.open{display:grid !important}
 .mode-card,.game-card{
   width:100% !important;
   min-width:0 !important;
