@@ -3188,7 +3188,7 @@ function _genHLComp(type,key,fmtFn,promptKey){
   const ans=vB>vA?"higher":"lower";
   const dA=displayCountry(ccFromCountry(kA))||kA;
   const dB=displayCountry(ccFromCountry(kB))||kB;
-  return{type,prompt:t(promptKey,{a:dA}),nameA:dA,valA:fmtFn(vA),nameB:dB,valB:fmtFn(vB),ans,opts:["higher","lower"],lid:kB,cc:ccFromCountry(kB)};
+  return{type,prompt:t(promptKey,{a:dA}),subj:dB,nameA:dA,valA:fmtFn(vA),nameB:dB,valB:fmtFn(vB),ans,opts:["higher","lower"],lid:kB,cc:ccFromCountry(kB)};
 }
 function genHLGdpQ(){return _genHLComp("hl_gdp","gdp",v=>"$"+v.toLocaleString(),"q_hl_gdp");}
 function genHLDensityQ(){return _genHLComp("hl_density","dens",v=>v+" Ew/km²","q_hl_density");}
@@ -3267,7 +3267,7 @@ function genHLBeta(modeId){
   const ans=isOlder?(vB<vA?"higher":"lower"):(vB>vA?"higher":"lower");
   const promptTpl=HL_BETA_PROMPTS[modeId]||"Höherer Wert als {a}?";
   const prompt="\u{1F9EA} [BETA] "+promptTpl.replace("{a}",kA);
-  return{type:modeId,prompt,nameA:kA,valA:m.fmt(vA),nameB:kB,valB:m.fmt(vB),ans,opts:["higher","lower"],lid:kB,cc:ccFromCountry(kB)||"de"};
+  return{type:modeId,prompt,subj:kB,nameA:kA,valA:m.fmt(vA),nameB:kB,valB:m.fmt(vB),ans,opts:["higher","lower"],lid:kB,cc:ccFromCountry(kB)||"de"};
 }
 /* Phase 95: inline area (kmÂ²) + population (millions) – self-contained, no external files */
 const COMP_AREA={
