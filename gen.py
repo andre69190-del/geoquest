@@ -8464,7 +8464,10 @@ function filterGames(){
       }
     });
     if(hasMatch){
-      if(content){content.style.display='grid';}
+      if(content){
+        var _gcF=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
+        content.style.cssText='display:grid;grid-template-columns:repeat('+_gcF+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
+      }
       if(arrow){arrow.style.transform='rotate(180deg)';}
       if(header){header.style.marginBottom='10px';}
     } else {
@@ -8507,10 +8510,17 @@ window.filterByCategory=filterByCategory;
 window.toggleAccordion=function(header,catId){
   var content=header.nextElementSibling;
   var arrow=header.querySelector('.acc-arrow');
-  var isOpen=content.style.display==='grid';
-  content.style.display=isOpen?'none':'grid';
-  if(arrow){arrow.style.transform=isOpen?'rotate(0deg)':'rotate(180deg)';}
-  header.style.marginBottom=isOpen?'0':'10px';
+  var isOpen=content.style.display==='grid'||content.style.display.indexOf('grid')>-1;
+  if(isOpen){
+    content.style.display='none';
+    if(arrow)arrow.style.transform='rotate(0deg)';
+    header.style.marginBottom='0';
+  } else {
+    var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
+    content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
+    if(arrow)arrow.style.transform='rotate(180deg)';
+    header.style.marginBottom='10px';
+  }
 };
 
 // Apply default filter on load via DOMContentLoaded
@@ -8601,12 +8611,15 @@ function renderHomeTab(){
         <div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div>
       </div>`:'';
     const lockPill=!unlocked?`<span style="font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:10px;margin-left:4px">\u{1F512} ${cat.cost?cat.cost.toLocaleString():'?'} Coins</span>`:'';
+    const _gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
+    const _accOpenStyle=`display:grid;grid-template-columns:repeat(${_gc},1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box`;
+    const _accStyle=isDefault?_accOpenStyle:'display:none';
     return`<div class="accordion-section" data-cat="${catId}"${!isDefault?' style="display:none"':''}>
       <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;margin-bottom:${isDefault?'10px':'0'};font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
         <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
         <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
       </div>
-      <div class="accordion-content" style="display:${isDefault?'grid':'none'};grid-template-columns:repeat(var(--grid-cols,4),1fr);gap:12px;padding:0 0 15px 0">
+      <div class="accordion-content" style="${_accStyle}">
         ${cards}${albumCard}
       </div>
     </div>`;

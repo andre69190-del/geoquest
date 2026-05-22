@@ -632,21 +632,9 @@ input[type=text]::placeholder{color:var(--text3)}
 .bn-icon{font-size:1.55rem !important;line-height:1 !important}
 .bn-lbl{font-size:.7rem !important;font-weight:700 !important}
 
-/* Phase 188/189: Accordion-Grid styles */
+/* Phase 190: Accordion - inline styles do the grid, CSS just ensures card sizing */
 .accordion-section{margin-bottom:10px}
-.accordion-content{
-  grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;
-  gap:15px !important;
-  padding:10px 0 15px 0 !important;
-  width:100% !important;
-  box-sizing:border-box !important
-}
-.accordion-content[style*="display: grid"],
-.accordion-content[style*="display:grid"]{
-  display:grid !important
-}
-.accordion-content .mode-card{
-  width:100% !important;
-  min-width:0 !important;
-  box-sizing:border-box !important
+.accordion-content{width:100% !important;box-sizing:border-box !important}
+.accordion-content .mode-card,.accordion-content .game-card{
+  width:100% !important;min-width:0 !important;margin:0 !important;box-sizing:border-box !important
 }
