@@ -2497,23 +2497,23 @@ const MODES=[
   {id:"hl_forest",    icon:"\u{1F333}",title:"H/L Waldf\u00e4che",  group:"hl_compare",prompt:"Mehr Wald?",                   desc:"Welches Land hat mehr Wald?"},
 
   /* HL Beta */
-  {id:"hl_b_rain",  icon:"\u{1F327}",title:"\u{1F9EA} Niederschlag",  group:"hl_beta",prompt:"Mehr Regen?",              desc:"Mehr Jahresniederschlag?"},
-  {id:"hl_b_temp",  icon:"\u{1F321}",title:"\u{1F9EA} Temperatur",    group:"hl_beta",prompt:"W\u00e4rmer?",            desc:"H\u00f6here Durchschnittstemp.?"},
-  {id:"hl_b_sun",   icon:"\u2600",   title:"\u{1F9EA} Sonnenstunden", group:"hl_beta",prompt:"Mehr Sonne?",              desc:"Mehr Sonnenstunden/Jahr?"},
-  {id:"hl_b_vulc",  icon:"\u{1F30B}",title:"\u{1F9EA} Vulkane",       group:"hl_beta",prompt:"Mehr Vulkane?",            desc:"Mehr aktive Vulkane?"},
-  {id:"hl_b_parks", icon:"\u{1F333}",title:"\u{1F9EA} Nationalparks", group:"hl_beta",prompt:"Mehr Parks?",              desc:"Mehr Nationalparks?"},
-  {id:"hl_b_roads", icon:"\u{1F6E3}",title:"\u{1F9EA} Stra\u00dfennetz",group:"hl_beta",prompt:"L\u00e4ngeres Stra\u00dfennetz?",desc:"Km Stra\u00dfen?"},
-  {id:"hl_b_rail",  icon:"\u{1F686}",title:"\u{1F9EA} Schienennetz",  group:"hl_beta",prompt:"L\u00e4ngeres Schienennetz?",desc:"Km Gleise?"},
-  {id:"hl_b_net",   icon:"\u{1F4F6}",title:"\u{1F9EA} Internetspeed", group:"hl_beta",prompt:"Schnelleres Internet?",    desc:"Schnelleres Breitband?"},
-  {id:"hl_b_ev",    icon:"\u26A1",   title:"\u{1F9EA} E-Ladesäulen",  group:"hl_beta",prompt:"Mehr E-Ladesäulen?",       desc:"E-Ladesäulen?"},
-  {id:"hl_b_urban", icon:"\u{1F3D9}",title:"\u{1F9EA} Urbanisierung", group:"hl_beta",prompt:"Mehr verst\u00e4dtert?",  desc:"Urbanisierungsrate?"},
-  {id:"hl_b_lang",  icon:"\u{1F5E3}",title:"\u{1F9EA} Amtssprachen",  group:"hl_beta",prompt:"Mehr Amtssprachen?",       desc:"Anzahl Amtssprachen?"},
-  {id:"hl_b_isl",   icon:"\u{1F3DD}",title:"\u{1F9EA} Inseln",        group:"hl_beta",prompt:"Mehr Inseln?",             desc:"Anzahl Inseln?"},
-  {id:"hl_b_tz",    icon:"\u{1F550}",title:"\u{1F9EA} Zeitzonen",     group:"hl_beta",prompt:"Mehr Zeitzonen?",          desc:"Anzahl Zeitzonen?"},
-  {id:"hl_b_founded",icon:"\u{1F3DB}",title:"\u{1F9EA} \u00c4ltestes Land",group:"hl_beta",prompt:"\u00c4lteres Land?",desc:"Fr\u00fcheres Gr\u00fcndungsjahr?"},
-  {id:"hl_b_unesco",icon:"\u{1F3DB}",title:"\u{1F9EA} UNESCO",        group:"hl_beta",prompt:"Mehr UNESCO?",             desc:"UNESCO-Welterbest\u00e4tten?"},
-  {id:"hl_b_tour",  icon:"\u{1F9F3}",title:"\u{1F9EA} Tourismus",     group:"hl_beta",prompt:"Mehr Touristen?",          desc:"Touristen/Jahr?"},
-  {id:"hl_b_wm",    icon:"\u26BD",   title:"\u{1F9EA} WM-Teilnahmen", group:"hl_beta",prompt:"Mehr WM-Teilnahmen?",      desc:"Fu\u00dfball-WM-Teilnahmen?"},
+  {id:"hl_b_rain",  icon:"\u{1F327}",title:"\u{1F9EA} Niederschlag",  group:"comparisons",prompt:"Mehr Regen?",              desc:"Mehr Jahresniederschlag?"},
+  {id:"hl_b_temp",  icon:"\u{1F321}",title:"\u{1F9EA} Temperatur",    group:"comparisons",prompt:"W\u00e4rmer?",            desc:"H\u00f6here Durchschnittstemp.?"},
+  {id:"hl_b_sun",   icon:"\u2600",   title:"\u{1F9EA} Sonnenstunden", group:"comparisons",prompt:"Mehr Sonne?",              desc:"Mehr Sonnenstunden/Jahr?"},
+  {id:"hl_b_vulc",  icon:"\u{1F30B}",title:"\u{1F9EA} Vulkane",       group:"comparisons",prompt:"Mehr Vulkane?",            desc:"Mehr aktive Vulkane?"},
+  {id:"hl_b_parks", icon:"\u{1F333}",title:"\u{1F9EA} Nationalparks", group:"comparisons",prompt:"Mehr Parks?",              desc:"Mehr Nationalparks?"},
+  {id:"hl_b_roads", icon:"\u{1F6E3}",title:"\u{1F9EA} Stra\u00dfennetz",group:"comparisons",prompt:"L\u00e4ngeres Stra\u00dfennetz?",desc:"Km Stra\u00dfen?"},
+  {id:"hl_b_rail",  icon:"\u{1F686}",title:"\u{1F9EA} Schienennetz",  group:"comparisons",prompt:"L\u00e4ngeres Schienennetz?",desc:"Km Gleise?"},
+  {id:"hl_b_net",   icon:"\u{1F4F6}",title:"\u{1F9EA} Internetspeed", group:"comparisons",prompt:"Schnelleres Internet?",    desc:"Schnelleres Breitband?"},
+  {id:"hl_b_ev",    icon:"\u26A1",   title:"\u{1F9EA} E-Ladesäulen",  group:"comparisons",prompt:"Mehr E-Ladesäulen?",       desc:"E-Ladesäulen?"},
+  {id:"hl_b_urban", icon:"\u{1F3D9}",title:"\u{1F9EA} Urbanisierung", group:"comparisons",prompt:"Mehr verst\u00e4dtert?",  desc:"Urbanisierungsrate?"},
+  {id:"hl_b_lang",  icon:"\u{1F5E3}",title:"\u{1F9EA} Amtssprachen",  group:"comparisons",prompt:"Mehr Amtssprachen?",       desc:"Anzahl Amtssprachen?"},
+  {id:"hl_b_isl",   icon:"\u{1F3DD}",title:"\u{1F9EA} Inseln",        group:"comparisons",prompt:"Mehr Inseln?",             desc:"Anzahl Inseln?"},
+  {id:"hl_b_tz",    icon:"\u{1F550}",title:"\u{1F9EA} Zeitzonen",     group:"comparisons",prompt:"Mehr Zeitzonen?",          desc:"Anzahl Zeitzonen?"},
+  {id:"hl_b_founded",icon:"\u{1F3DB}",title:"\u{1F9EA} \u00c4ltestes Land",group:"comparisons",prompt:"\u00c4lteres Land?",desc:"Fr\u00fcheres Gr\u00fcndungsjahr?"},
+  {id:"hl_b_unesco",icon:"\u{1F3DB}",title:"\u{1F9EA} UNESCO",        group:"comparisons",prompt:"Mehr UNESCO?",             desc:"UNESCO-Welterbest\u00e4tten?"},
+  {id:"hl_b_tour",  icon:"\u{1F9F3}",title:"\u{1F9EA} Tourismus",     group:"comparisons",prompt:"Mehr Touristen?",          desc:"Touristen/Jahr?"},
+  {id:"hl_b_wm",    icon:"\u26BD",   title:"\u{1F9EA} WM-Teilnahmen", group:"comparisons",prompt:"Mehr WM-Teilnahmen?",      desc:"Fu\u00dfball-WM-Teilnahmen?"},
   /* ---- Neighbors ---- */
   {id:"neighbor",      icon:"\u{1F91D}",title:"Grenzg\u00e4nger",     group:"neighbors", prompt:"Grenzt an\u2026?",               desc:"Grenzt dieses Land an jenes?"},
   {id:"neighbor_fake", icon:"\u{1F47A}",title:"Falscher Nachbar",  group:"neighbors", prompt:"Grenzt NICHT an\u2026?",         desc:"Welches Land grenzt NICHT an das gezeigte?",time:20},
@@ -2532,9 +2532,10 @@ const MODES=[
   {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen"},
   {id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker"},
   {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt"},
-  {id:"stadium",icon:"\u26BD",title:"Stadion-Quiz",group:"football",prompt:"In welchem Land steht dieses Stadion?",desc:"Fu\u00dfballstadien zuordnen"},
-  {id:"jersey",icon:"\u{1F455}",title:"Trikot-Quiz",group:"football",prompt:"Welches Land tr\u00e4gt dieses Trikot?",desc:"Nationalteam-Trikots erkennen"},
-  {id:"crest",icon:"\u{1F6E1}",title:"Wappen-Quiz",group:"football",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Verbandswappen zuordnen"},
+  {id:"plate_compare",icon:"\u{1F9EA}\u{1F697}",title:"\u{1F9EA} Kenn. Vergleich",group:"comparisons",prompt:"Kennzeichen-Vergleich",desc:"Zwei Kennzeichen – welches Land gewinnt?",comingSoon:false},
+  {id:"stadium",icon:"\u26BD",title:"Stadion-Quiz",group:"sport",prompt:"In welchem Land steht dieses Stadion?",desc:"Fu\u00dfballstadien zuordnen"},
+  {id:"jersey",icon:"\u{1F455}",title:"Trikot-Quiz",group:"sport",prompt:"Welches Land tr\u00e4gt dieses Trikot?",desc:"Nationalteam-Trikots erkennen"},
+  {id:"crest",icon:"\u{1F6E1}",title:"Wappen-Quiz",group:"sport",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Verbandswappen zuordnen"},
   /* ---- Vergleiche / Comparisons (Phase 91+92) ---- */
   {id:"comp_area",      icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",      group:"comparisons",prompt:"Welches Land ist gr\u00f6\u00dfer?",       desc:"Fl\u00e4che zweier L\u00e4nder vergleichen"},
   {id:"comp_pop",       icon:"\u{1F465}",title:"Mehr Einwohner?",               group:"comparisons",prompt:"Welches Land hat mehr Einwohner?",       desc:"Bev\u00f6lkerung zweier L\u00e4nder vergleichen"},
@@ -2549,10 +2550,10 @@ const MODES=[
   {id:"comp_forest",    icon:"\u{1F333}",title:"Mehr Wald?",                   group:"comparisons",prompt:"Welches Land hat mehr Waldfl\u00e4che?",  desc:"Waldfl\u00e4che vergleichen"},
   /* Phase 129+130 BETA modes */
   {id:"comp_airports",  icon:"\u2708\uFE0F",title:"Mehr Flugh\u00e4fen?",    group:"comparisons",prompt:"Welches Land hat mehr Flugh\u00e4fen?",             desc:"Flughafenanzahl zweier L\u00e4nder vergleichen"},
-  {id:"comp_flight",    icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",  group:"comparisons",prompt:"L\u00e4ngster m\u00f6glicher Inlandsflug?",          desc:"Fl\u00e4che als Proxy f\u00fcr Inlandsflugdistanz"},
+  {id:"comp_flight_TMP",    icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",  group:"comparisons",prompt:"L\u00e4ngster m\u00f6glicher Inlandsflug?",          desc:"Fl\u00e4che als Proxy f\u00fcr Inlandsflugdistanz"},
   {id:"comp_mountain",  icon:"\u26F0",  title:"H\u00f6herer Gipfel?",          group:"comparisons",prompt:"Welches Land hat den h\u00f6heren Gipfel?",        desc:"H\u00f6chste Erhebung (erweiterter Datensatz)"},
   {id:"comp_nsextent",  icon:"\u{1F9ED}",title:"L\u00e4nger Nord-S\u00fcd?", group:"comparisons",prompt:"Welches Land erstreckt sich weiter von Nord nach S\u00fcd?",         desc:"Nord-S\u00fcd-Ausdehnung vergleichen"},
-  {id:"comp_olympics",  icon:"\u{1F3C5}",title:"Mehr Olympia-Gold?",           group:"comparisons",prompt:"Welches Land hat mehr Olympia-Goldmedaillen?",         desc:"Sommerolympiade-Goldmedaillen vergleichen"},
+  {id:"comp_olympics_TMP",  icon:"\u{1F3C5}",title:"Mehr Olympia-Gold?",           group:"comparisons",prompt:"Welches Land hat mehr Olympia-Goldmedaillen?",         desc:"Sommerolympiade-Goldmedaillen vergleichen"},
   {id:"iata",           icon:"\u2708\uFE0F",title:"IATA-Code?",               group:"airports",prompt:"Zu welcher Stadt geh\u00f6rt dieser Flughafen-Code?", desc:"IATA-Codes der gro\u00dfen Flugh\u00e4fen kennen"},
   {id:"tz_quiz",  icon:"\u23F0",  title:"Welche Uhrzeit?",               group:"airports",prompt:"Wie sp\u00e4t ist es gerade in dieser Stadt?", desc:"UTC-Offsets und Zeitzonen"},
   {id:"climate_quiz",   icon:"\u{1F321}\uFE0F",title:"Klima-Krimi",          group:"airports",prompt:"Welches Land versteckt sich hinter diesen Klima-Hinweisen?", desc:"Land anhand von Klima-Clues erraten"},
@@ -2567,11 +2568,11 @@ const MODE_CATS={
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   hl_beta:{label:"H/L Beta \u{1F9EA}",icon:"\u{1F9EA}",modes:["hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","hl_b_lang","hl_b_isl","hl_b_tz","hl_b_founded","hl_b_unesco","hl_b_tour","hl_b_wm"],cost:0},
-  comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_flight","comp_mountain","comp_nsextent","comp_olympics"],cost:0},
+  comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","hl_b_lang","hl_b_isl","hl_b_tz","hl_b_founded","hl_b_unesco","hl_b_tour","hl_b_wm","plate_compare"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital"],cost:0},
-  football:{label:"Fu\u00dfball-Geo",icon:"\u26BD",modes:["stadium","jersey","crest"],cost:0},
+  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
@@ -3237,23 +3238,23 @@ const HL_BETA_METRICS={
   hl_b_wm:      {key:"wm",     fmt:function(v){return v+"x WM";}},
 };
 const HL_BETA_PROMPTS={
-  hl_b_rain:"Mehr Jahresniederschlag als {a}?",
-  hl_b_temp:"Wärmer im Jahresschnitt als {a}?",
-  hl_b_sun:"Mehr Sonnenstunden als {a}?",
-  hl_b_vulc:"Mehr aktive Vulkane als {a}?",
-  hl_b_parks:"Mehr Nationalparks als {a}?",
-  hl_b_roads:"Längeres Straßennetz als {a}?",
-  hl_b_rail:"Längeres Schienennetz als {a}?",
-  hl_b_net:"Schnelleres Internet als {a}?",
-  hl_b_ev:"Mehr E-Ladesäulen als {a}?",
-  hl_b_urban:"Stärker urbanisiert als {a}?",
-  hl_b_lang:"Mehr Amtssprachen als {a}?",
-  hl_b_isl:"Mehr Inseln als {a}?",
-  hl_b_tz:"Mehr Zeitzonen als {a}?",
-  hl_b_founded:"Älteres Land als {a}?",
-  hl_b_unesco:"Mehr UNESCO-Welterbe als {a}?",
-  hl_b_tour:"Mehr Touristen als {a}?",
-  hl_b_wm:"Mehr WM-Teilnahmen als {a}?",
+  hl_b_rain:"Welches Land hat mehr Jahresniederschlag?",
+  hl_b_temp:"Welches Land ist wärmer im Jahresschnitt?",
+  hl_b_sun:"Welches Land hat mehr Sonnenstunden?",
+  hl_b_vulc:"Welches Land hat mehr aktive Vulkane?",
+  hl_b_parks:"Welches Land hat mehr Nationalparks?",
+  hl_b_roads:"Welches Land hat das längere Straßennetz?",
+  hl_b_rail:"Welches Land hat das längere Schienennetz?",
+  hl_b_net:"Welches Land hat schnelleres Internet?",
+  hl_b_ev:"Welches Land hat mehr E-Ladesäulen?",
+  hl_b_urban:"Welches Land ist stärker urbanisiert?",
+  hl_b_lang:"Welches Land hat mehr Amtssprachen?",
+  hl_b_isl:"Welches Land hat mehr Inseln?",
+  hl_b_tz:"Welches Land hat mehr Zeitzonen?",
+  hl_b_founded:"Welches Land ist älter?",
+  hl_b_unesco:"Welches Land hat mehr UNESCO-Welterbe?",
+  hl_b_tour:"Welches Land hat mehr Touristen?",
+  hl_b_wm:"Welches Land hat mehr WM-Teilnahmen?",
 };
 function genHLBeta(modeId){
   const m=HL_BETA_METRICS[modeId];if(!m)return null;
@@ -3264,10 +3265,10 @@ function genHLBeta(modeId){
   const kA=countries[ai],kB=countries[bi];
   const vA=HL_BETA_DATA[kA][m.key],vB=HL_BETA_DATA[kB][m.key];
   const isOlder=modeId==="hl_b_founded";
-  const ans=isOlder?(vB<vA?"higher":"lower"):(vB>vA?"higher":"lower");
-  const promptTpl=HL_BETA_PROMPTS[modeId]||"Höherer Wert als {a}?";
-  const prompt="\u{1F9EA} [BETA] "+promptTpl.replace("{a}",kA);
-  return{type:modeId,prompt,subj:kB,nameA:kA,valA:m.fmt(vA),nameB:kB,valB:m.fmt(vB),ans,opts:["higher","lower"],lid:kB,cc:ccFromCountry(kB)||"de"};
+  const ans=isOlder?(vA<vB?kA:kB):(vA>vB?kA:kB);
+  const prompt="\u{1F9EA} [BETA] "+(HL_BETA_PROMPTS[modeId]||"Vergleich?");
+  const meta=kA+": "+m.fmt(vA)+" · "+kB+": "+m.fmt(vB);
+  return{type:modeId,prompt,subj:"",opts:[kA,kB],ans,meta,lid:kA+"|"+kB,cc:ccFromCountry(ans)||"de"};
 }
 /* Phase 95: inline area (kmÂ²) + population (millions) – self-contained, no external files */
 const COMP_AREA={
@@ -4927,6 +4928,42 @@ function _drawCrest(shape,color){
   };
   return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:90px;height:90px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))">${s[shape]||s.shield}</svg>`;
 }
+
+/* ─── Beta Kennzeichen-Vergleich ─── */
+function genPlateCompareQ(){
+  const pool=Object.keys(COMP_DATA).filter(k=>{
+    const cc=ccFromCountry(k);
+    return cc&&COMP_DATA[k].dens>0;
+  });
+  if(pool.length<2)return null;
+  const METRICS=[
+    {key:"gdp",  prompt:"\u{1F9EA} [BETA] Welches Land hat das höhere BIP pro Kopf?", fmt:v=>"$"+v.toLocaleString()},
+    {key:"dens", prompt:"\u{1F9EA} [BETA] Welches Land ist dichter besiedelt?",        fmt:v=>v+" Ew/km²"},
+    {key:"life", prompt:"\u{1F9EA} [BETA] In welchem Land lebt man länger?",           fmt:v=>v+" Jahre"},
+    {key:"age",  prompt:"\u{1F9EA} [BETA] Welches Land hat das höhere Medianalter?",   fmt:v=>v+" Jahre"},
+    {key:"forest",prompt:"\u{1F9EA} [BETA] Welches Land hat mehr Waldfläche?",        fmt:v=>v+" %"},
+  ];
+  const m=METRICS[~~(rng()*METRICS.length)];
+  const valid=pool.filter(k=>COMP_DATA[k][m.key]!=null&&COMP_DATA[k][m.key]>0);
+  if(valid.length<2)return null;
+  let ai=~~(rng()*valid.length),bi=~~(rng()*valid.length);
+  while(bi===ai)bi=~~(rng()*valid.length);
+  const kA=valid[ai],kB=valid[bi];
+  const ccA=ccFromCountry(kA)||"",ccB=ccFromCountry(kB)||"";
+  /* Get plate codes for display */
+  const _getCode=cc=>{
+    const p=PLATES_DATA.find(x=>x.code&&ccFromPlateCountry(x.country)===cc);
+    if(p)return p.code;
+    const e=Object.entries(PLATE_COUNTRY_EN||{}).find(([de])=>ccFromCountry(de)===cc);
+    return e?e[0].substring(0,3).toUpperCase():cc.toUpperCase();
+  };
+  const codeA=_getCode(ccA)||kA.substring(0,3).toUpperCase();
+  const codeB=_getCode(ccB)||kB.substring(0,3).toUpperCase();
+  const vA=COMP_DATA[kA][m.key],vB=COMP_DATA[kB][m.key];
+  const ans=vA>vB?kA:kB;
+  const meta=kA+": "+m.fmt(vA)+" · "+kB+": "+m.fmt(vB);
+  return{type:"plate_compare",prompt:m.prompt,subj:"",opts:[kA,kB],ans,meta,lid:kA+"|"+kB,cc:ccA,_codeA:codeA,_codeB:codeB};
+}
 function genFootballQ(mode){
   const type=mode||"stadium";
   if(type==="stadium"){
@@ -5000,6 +5037,7 @@ const GEN={
   climate_mystery:genClimateQ,
   flag_fusion:genFlagColorQ,
   timezone_jumper:genTimezoneQ,
+  plate_compare:genPlateCompareQ,
   stadium:()=>genFootballQ("stadium"),
   jersey:()=>genFootballQ("jersey"),
   crest:()=>genFootballQ("crest"),
@@ -6279,7 +6317,30 @@ app.innerHTML=`<div class="scr">
         <button class="hl-btn hl-higher${sel\!==null?(q.ans==="higher"?" ok":(sel==="higher"?" ng":" dm")):""}" ${hlDis} onclick="answer('higher')">${hlBtnH}</button>
         <button class="hl-btn hl-lower${sel\!==null?(q.ans==="lower"?" ok":(sel==="lower"?" ng":" dm")):""}" ${hlDis} onclick="answer('lower')">${hlBtnL}</button>
       </div>`;
-  }else if(q.type&&q.type.startsWith('comp_')){
+  }else if(q.type==="plate_compare"){
+    /* Beta Kennzeichen-Vergleich: show plate codes + flags */
+    const _cfA=flagOf(q.opts[0])||'\u{1F30D}';
+    const _cfB=flagOf(q.opts[1])||'\u{1F30D}';
+    const _cnA=displayCountry(q.opts[0])||q.opts[0];
+    const _cnB=displayCountry(q.opts[1])||q.opts[1];
+    const _pA=q._codeA||"??";
+    const _pB=q._codeB||"??";
+    qBody=`<div class="qprompt">${q.prompt}</div>
+      <div style="display:flex;justify-content:center;align-items:center;gap:1.8rem;margin:.55rem 0 .25rem">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:3px">
+          <div style="background:#003399;color:#fff;font-size:1.1rem;font-weight:900;padding:.2rem .6rem;border-radius:4px;border:2px solid #fff;letter-spacing:1px">${_pA}</div>
+          <span style="font-size:2rem">${_cfA}</span>
+          <span style="font-size:.7rem;font-weight:700;color:var(--text2);max-width:90px;text-align:center;line-height:1.2">${esc(_cnA)}</span>
+        </div>
+        <span style="color:var(--text3);font-weight:900;font-size:.82rem;letter-spacing:1px">VS</span>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:3px">
+          <div style="background:#003399;color:#fff;font-size:1.1rem;font-weight:900;padding:.2rem .6rem;border-radius:4px;border:2px solid #fff;letter-spacing:1px">${_pB}</div>
+          <span style="font-size:2rem">${_cfB}</span>
+          <span style="font-size:.7rem;font-weight:700;color:var(--text2);max-width:90px;text-align:center;line-height:1.2">${esc(_cnB)}</span>
+        </div>
+      </div>
+      ${sel!==null?`<div class="qmeta" style="text-align:center;margin:.3rem 0 .1rem;font-size:.77rem">${q.meta||""}</div>`:""}`;
+  }else if(q.type&&(q.type.startsWith('comp_')||q.type.startsWith('hl_b_'))){
     /* Phase 102-A: Flaggen-Header + Prompt, Werte nach Antwort */
     const _cfA=q.opts&&q.opts[0]?flagOf(q.opts[0]):'\u{1F30D}';
     const _cfB=q.opts&&q.opts[1]?flagOf(q.opts[1]):'\u{1F30D}';
@@ -6439,7 +6500,7 @@ app.innerHTML=`<div class="scr">
   /* Power-up bar (Phase 26) */
   const pu=loadPU();
   /* P136-fix: 50/50 disabled for comp_ modes -- pre-declared vars, no nested escaping */
-  const _is2ans=S.q&&S.q.type&&S.q.type.startsWith('comp_');
+  const _is2ans=S.q&&S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_'));
   const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
   const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
   const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';
@@ -7974,7 +8035,7 @@ function renderHomeTab(){
       ${catSection("pure_geo")}
       ${catSection("lifestyle")}
       ${catSection("eu_plates")}
-      ${catSection("football")}
+      ${catSection("sport")}
       ${catSection("hl_beta")}
       ${catSection("comparisons")}
       ${catSection("neighbors")}
