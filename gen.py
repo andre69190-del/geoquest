@@ -7247,7 +7247,7 @@ function initSLF(){
     if(\!S.slfData||S.slfData.phase\!=="input")return;
     S.slfData.timeLeft--;
     if(S.slfData.timeLeft<=0){clearInterval(tIv);handleSLFSubmit();}
-    else render();
+    else{const _te=document.getElementById("slf-timer-val");if(_te)_te.textContent=S.slfData.timeLeft+"s";}
   },1000);
 }
 function handleSLFSubmit(){
@@ -7259,13 +7259,16 @@ function handleSLFSubmit(){
   const startsOk=(s,L)=>!!s&&s.charAt(0).toUpperCase()===L;
   /* Stadt: match against CITIES dataset */
   const cityAns=norm(answers.city);
-  const cityValid=startsOk(cityAns,L)&&(typeof CITIES!=="undefined")&&CITIES.some(c=>norm(c.name)===cityAns||(c.asciiName&&norm(c.asciiName)===cityAns));
+  /* City: accept any answer starting with correct letter (DB is English-only) */
+  const cityValid=startsOk(cityAns,L)&&cityAns.length>=2;
   /* Land: match against COUNTRIES with localized names */
   const countryAns=norm(answers.country);
   const countryValid=startsOk(countryAns,L)&&COUNTRIES.some(c=>norm(c.c)===countryAns||norm(displayCountry(c.cc)||"")===countryAns);
   /* Fluss: match against RIVERS dataset */
   const riverAns=norm(answers.river);
-  const riverValid=startsOk(riverAns,L)&&(typeof RIVERS!=="undefined")&&RIVERS.some(r=>norm(r.name)===riverAns);
+  /* River: check DB (uses German labels) + fallback to first-letter-only */
+  const riverDbMatch=(typeof RIVERS!=="undefined")&&RIVERS.some(r=>norm(r.riverLabel||r.name||"")===riverAns||norm(r.riverLabel||r.name||"").startsWith(riverAns));
+  const riverValid=startsOk(riverAns,L)&&riverAns.length>=2&&(riverDbMatch||true);
   const pts=(cityValid?10:0)+(countryValid?10:0)+(riverValid?10:0);
   S.slfData={...S.slfData,results:{cityValid,countryValid,riverValid},phase:"result"};
   S.sc+=pts;
@@ -7315,7 +7318,7 @@ function renderLandHauptstadt(sc){
   return`<div class="scr"><div class="panel">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
       <div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">BUCHSTABE</div><div style="font-size:2.6rem;font-weight:900;line-height:1">${letter}</div></div>
-      <div style="text-align:right"><div style="font-size:.6rem;color:var(--text3)">ZEIT</div><div style="font-size:2rem;font-weight:900;color:${timerCol}">${timeLeft}s</div></div>
+      <div style="text-align:right"><div style="font-size:.6rem;color:var(--text3)">ZEIT</div><div id="slf-timer-val" style="font-size:2rem;font-weight:900;color:${timerCol}">${timeLeft}s</div></div>
     </div>
     <div class="tbar" style="margin-bottom:1rem"><div class="tfill" style="width:${Math.round(timeLeft/30*100)}%;background:${timerCol}"></div></div>
     <div class="slf-field"><label class="slf-label">\u{1F3D9} STADT</label><input id="slf-city" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Stadt mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.city)}" oninput="S.slfData.answers.city=this.value" onkeydown="if(event.key==='Enter')document.getElementById('slf-country')?.focus()"></div>
