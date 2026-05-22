@@ -8456,25 +8456,49 @@ function playRandomGame(){
   const m=pool[~~(Math.random()*pool.length)];
   startGame(m.id);
 }
-function showGameInfo(modeId,ev){if(ev&&ev.stopPropagation)ev.stopPropagation();
-  const m=MODES.find(x=>x.id===modeId);
-  if(!m)return;
-  const title=modeTitle(m);
-  const desc=m.desc||'Kein Beschreibungstext vorhanden.';
-  const el=document.createElement('div');
-  el.id='game-info-modal';
-  el.innerHTML=`<div class="gim-backdrop" onclick="closeGameInfo()"></div>
-    <div class="gim-box">
-      <div style="font-size:2.8rem;margin-bottom:.4rem">${m.icon}</div>
-      <div style="font-size:1.05rem;font-weight:900;color:var(--text);margin-bottom:.6rem;line-height:1.3">${title}</div>
-      <div style="font-size:.82rem;color:var(--text2);line-height:1.55;margin-bottom:1.1rem">${desc}</div>
-      <div style="display:flex;gap:8px">
-        <button class="btn-p" onclick="closeGameInfo();startGame('${modeId}')" style="flex:1;margin-bottom:0">▶ Spielen</button>
-        <button onclick="closeGameInfo()" style="flex:1;background:var(--bg2);color:var(--text);border:2px solid var(--border);border-radius:10px;padding:.5rem;font-size:.85rem;font-weight:700;cursor:pointer">✕</button>
-      </div>
-    </div>`;
-  document.body.appendChild(el);
-}
+window.showGameInfo = function(modeId, ev) {
+  if (ev) { ev.preventDefault(); ev.stopPropagation(); }
+  var m = (typeof MODES !== 'undefined' ? MODES : []).find(function(x) { return x.id === modeId; });
+  if (!m) return;
+  var existingModal = document.getElementById('game-info-modal');
+  if (existingModal) existingModal.remove();
+  var overlay = document.createElement('div');
+  overlay.id = 'game-info-modal';
+  overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.75);z-index:999999;display:flex;justify-content:center;align-items:center;';
+  overlay.onclick = function() { overlay.remove(); };
+  var box = document.createElement('div');
+  box.style.cssText = 'background:var(--bg,#fff);padding:24px;border-radius:16px;max-width:380px;width:90%;max-height:80vh;overflow-y:auto;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.4);';
+  box.onclick = function(e) { e.stopPropagation(); };
+  var iconEl = document.createElement('div');
+  iconEl.style.cssText = 'font-size:2.8rem;margin-bottom:.4rem';
+  iconEl.textContent = m.icon || '';
+  var titleEl = document.createElement('div');
+  titleEl.style.cssText = 'font-size:1.05rem;font-weight:900;color:var(--text,#0f172a);margin-bottom:.6rem;line-height:1.3';
+  titleEl.textContent = (typeof modeTitle === 'function' ? modeTitle(m) : m.title) || modeId;
+  var descEl = document.createElement('div');
+  descEl.style.cssText = 'font-size:.82rem;color:var(--text2,#475569);line-height:1.55;margin-bottom:1.1rem;text-align:left';
+  descEl.textContent = m.desc || 'Kein Beschreibungstext vorhanden.';
+  var btnRow = document.createElement('div');
+  btnRow.style.cssText = 'display:flex;gap:8px;';
+  var playBtn = document.createElement('button');
+  playBtn.className = 'btn-p';
+  playBtn.style.cssText = 'flex:1;margin-bottom:0';
+  playBtn.textContent = '► Spielen';
+  playBtn.onclick = function() { overlay.remove(); if (typeof startGame === 'function') startGame(modeId); };
+  var closeBtn = document.createElement('button');
+  closeBtn.style.cssText = 'flex:1;background:var(--bg2,#f1f5f9);color:var(--text,#0f172a);border:2px solid var(--border,#e2e8f0);border-radius:10px;padding:.5rem;font-size:.85rem;font-weight:700;cursor:pointer';
+  closeBtn.textContent = '✕';
+  closeBtn.onclick = function() { overlay.remove(); };
+  btnRow.appendChild(playBtn);
+  btnRow.appendChild(closeBtn);
+  box.appendChild(iconEl);
+  box.appendChild(titleEl);
+  box.appendChild(descEl);
+  box.appendChild(btnRow);
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+};
+function showGameInfo(modeId, ev) { window.showGameInfo(modeId, ev); }
 function closeGameInfo(){
   const el=document.getElementById('game-info-modal');
   if(el)el.remove();
@@ -8499,7 +8523,7 @@ function renderHomeTab(){
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${isLocked?`<span style="position:absolute;top:4px;right:4px;font-size:.75rem">\u{1F512}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" style="position:absolute;bottom:8px;right:8px;z-index:99999;width:28px;height:28px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:900;cursor:pointer;line-height:1;padding:0">i</button>`:""}
+        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:8px;right:8px;z-index:99999;width:28px;height:28px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:900;cursor:pointer;line-height:1;padding:0;-webkit-tap-highlight-color:transparent">i</button>`:""}
       </div>`;
     });
     const albumCard=catId==='eu_plates'?[`<div class="mode-card" data-category="eu_plates"${hide?' style="display:none"':''} onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" data-desc="Album Spotter Sammlung eu_plates" style="${hide?'display:none;':''}background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6">
@@ -8592,6 +8616,9 @@ function renderHomeTab(){
   .filter-chips-container::-webkit-scrollbar{display:none !important}
   .filter-chip{font-size:.85rem !important;padding:9px 18px !important;white-space:nowrap !important;flex-shrink:0 !important;border-radius:22px !important}
   .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center !important}
+  .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:8px !important;align-items:center !important;overflow-x:auto !important;padding:0 15px 10px 15px !important}
+  #gameSearch{flex:1 !important;min-width:120px !important}
+  .btn-random-game,.settings-btn{white-space:nowrap !important;flex-shrink:0 !important}
 </style>
     <div class="menu-search-container">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="filterGames()">

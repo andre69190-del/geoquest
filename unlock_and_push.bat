@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Phase 177: Nuclear inline style override - 4-col grid, nowrap chips, bulletproof info-btn"
+git commit -m "Phase 178: Bulletproof showGameInfo (DOM createElement) + header nowrap + ontouchstart fix"
 echo.
 git push origin main
 echo.
