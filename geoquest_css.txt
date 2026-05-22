@@ -636,14 +636,14 @@ input[type=text]::placeholder{color:var(--text3)}
 .accordion-section{margin-bottom:10px;width:100%}
 #mainGamesGrid{display:block !important}
 .accordion-content{
-  display:grid !important;
-  grid-template-columns:repeat(4,1fr) !important;
-  gap:10px !important;
   width:100% !important;
-  box-sizing:border-box !important
+  box-sizing:border-box !important;
+  gap:10px !important
 }
-.accordion-content[style*="display: none"]{display:none !important}
-.accordion-content[style="display:none"]{display:none !important}
+.accordion-content.open{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important
+}
 .mode-card,.game-card{
   width:100% !important;
   min-width:0 !important;

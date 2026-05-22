@@ -8512,12 +8512,15 @@ window.toggleAccordion=function(header,catId){
   var arrow=header.querySelector('.acc-arrow');
   var isOpen=content.style.display==='grid'||content.style.display.indexOf('grid')>-1;
   if(isOpen){
+    content.classList.remove('open');
     content.style.display='none';
     if(arrow)arrow.style.transform='rotate(0deg)';
     header.style.marginBottom='0';
   } else {
+    content.style.cssText='';
     var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-    content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
+    content.style.gridTemplateColumns='repeat('+gc+',1fr)';
+    content.classList.add('open');
     if(arrow)arrow.style.transform='rotate(180deg)';
     header.style.marginBottom='10px';
   }
@@ -8585,8 +8588,7 @@ function closeGameInfo(){
 function renderHomeTab(){
   console.log("[GQ] renderHomeTab() filterCat=",S.filterCat);
   const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode"];
-  const _chips=`<button class="filter-chip${S.filterCat==='all'?' active':''}" data-cat="all" onclick="window.filterByCategory('all')">\u{1F3AE} Alle</button>`+
-    _CAT_ORDER.map(cid=>{const c=MODE_CATS[cid];if(!c)return'';return`<button class="filter-chip${S.filterCat===cid?' active':''}" data-cat="${cid}" onclick="window.filterByCategory('${cid}')">${c.icon} ${c.label}</button>`;}).join('');
+
   const _accordionHTML=_CAT_ORDER.map(catId=>{
     const cat=MODE_CATS[catId];if(!cat)return'';
     const unlocked=isCategoryUnlocked(catId);
@@ -8619,7 +8621,7 @@ function renderHomeTab(){
         <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
         <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
       </div>
-      <div class="accordion-content" style="${_accStyle}">
+      <div class="accordion-content${isDefault?' open':''}" style="${_accStyle}">
         ${cards}${albumCard}
       </div>
     </div>`;
@@ -8704,9 +8706,6 @@ function renderHomeTab(){
   :root{--grid-cols:4}
   .games-grid{display:grid !important;grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;gap:15px !important;padding:0 15px 20px 15px !important}
   #mainGamesGrid{display:block !important;padding:0 15px !important}
-  .filter-chips-container{display:flex !important;flex-wrap:nowrap !important;gap:12px !important;overflow-x:auto !important;padding-bottom:15px !important;scrollbar-width:none !important}
-  .filter-chips-container::-webkit-scrollbar{display:none !important}
-  .filter-chip{font-size:.85rem !important;padding:9px 18px !important;white-space:nowrap !important;flex-shrink:0 !important;border-radius:22px !important}
   .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;align-items:center !important;text-align:center !important}
   .mode-card:not([style*='display:none']){display:flex !important;flex-direction:column !important}
   .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:10px !important;align-items:center !important}
@@ -8718,7 +8717,6 @@ function renderHomeTab(){
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
-    <div class="filter-chips-container">${_chips}</div>
     <div id="mainGamesGrid" style="padding:0 15px">${_accordionHTML}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
