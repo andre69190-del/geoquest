@@ -8702,7 +8702,8 @@ function renderHomeTab(){
     </div>
 <style id="gq-nuclear">
   :root{--grid-cols:4}
-  #mainGamesGrid,.games-grid{display:grid !important;grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;gap:15px !important;padding:0 15px 20px 15px !important}
+  .games-grid{display:grid !important;grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;gap:15px !important;padding:0 15px 20px 15px !important}
+  #mainGamesGrid{display:block !important;padding:0 15px !important}
   .filter-chips-container{display:flex !important;flex-wrap:nowrap !important;gap:12px !important;overflow-x:auto !important;padding-bottom:15px !important;scrollbar-width:none !important}
   .filter-chips-container::-webkit-scrollbar{display:none !important}
   .filter-chip{font-size:.85rem !important;padding:9px 18px !important;white-space:nowrap !important;flex-shrink:0 !important;border-radius:22px !important}

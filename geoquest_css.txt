@@ -632,9 +632,24 @@ input[type=text]::placeholder{color:var(--text3)}
 .bn-icon{font-size:1.55rem !important;line-height:1 !important}
 .bn-lbl{font-size:.7rem !important;font-weight:700 !important}
 
-/* Phase 190: Accordion - inline styles do the grid, CSS just ensures card sizing */
-.accordion-section{margin-bottom:10px}
-.accordion-content{width:100% !important;box-sizing:border-box !important}
-.accordion-content .mode-card,.accordion-content .game-card{
-  width:100% !important;min-width:0 !important;margin:0 !important;box-sizing:border-box !important
+/* Phase 191: Accordion grid + responsive cards */
+.accordion-section{margin-bottom:10px;width:100%}
+#mainGamesGrid{display:block !important}
+.accordion-content{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  width:100% !important;
+  box-sizing:border-box !important
+}
+.accordion-content[style*="display: none"]{display:none !important}
+.accordion-content[style="display:none"]{display:none !important}
+.mode-card,.game-card{
+  width:100% !important;
+  min-width:0 !important;
+  margin:0 !important;
+  box-sizing:border-box !important
+}
+@media(max-width:600px){
+  .accordion-content{grid-template-columns:repeat(2,1fr) !important}
 }
