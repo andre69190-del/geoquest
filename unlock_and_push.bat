@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX+FEAT: Landscape-Exit, 8 HL-Generatoren (COMP_DATA), 17 HL-Beta-Modi, Fussball-Modi, Lokal-1:1, SLF-Timer-60s, Zoom-Fix, X-Button, Emoji-Fix, Flashcard-Modulo"
+git commit -m "FIX+FEAT: SyntaxFix + Landscape-Exit + 8 HL-Gen + 17 HL-Beta + Fussball-Modi + Lokal-1:1 + SLF-60s + Zoom + X-Button + Emoji + Flashcard-Modulo"
 echo.
 git push origin main
 echo.

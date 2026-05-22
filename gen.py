@@ -6218,7 +6218,7 @@ app.innerHTML=`<div class="scr">
   }
 
   /* PLAYING / FEEDBACK */
-  const{sc,st,bs,rd,tm,q,sel,ok,pts,mode,diff}=S;
+  const{sc,st,bs,rd,q,sel,ok,pts,mode,diff}=S;
   /* Phase 86 – custom puzzle modes */
   if(mode==="logic_grid"&&S.ph==="playing"){
     app.innerHTML=renderLogikGitter(sc);
@@ -6432,6 +6432,7 @@ app.innerHTML=`<div class="scr">
       const _twoOpts=q.opts&&q.opts.length===2?' two-opts':'';
       answerHtml=`<div class="answers${_twoOpts}">${btns}</div>`;
     }
+  }
   }
   let fb="";
   if(S.ph==="feedback"){const cls=ok?"fb ok":"fb ng";let al=q.ans;if(q.type==="flagsel"){const co=COUNTRIES.find(c=>c.cc===q.ans);al=co?co.c:q.ans;}const al_d=displayCountry(al);const msg=ok?t("fb_correct",{pts}):sel==="__t"?t("fb_time",{ans:al_d}):t("fb_wrong",{ans:al_d});fb=`<div class="${cls}">${msg}</div>${plateReveal}`;}
