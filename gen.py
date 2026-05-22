@@ -3898,7 +3898,7 @@ function useFreeze(){
     S.freezeActive=false;
     const b2=document.querySelector(".tbar");if(b2)b2.classList.remove("frozen");
     if(S.ph==="playing"&&S.sel===null){
-      if(S.diff==="survival"){if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);}
+      if(S.diff==="survival"){if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null,_secretGameToken);} },1000);}
     }
   },10000);
 }
@@ -4369,6 +4369,7 @@ function soundOver(){[392,330,262].forEach((f,i)=>setTimeout(()=>playTone(f,"saw
 function soundStamp(){[880,1047,1320].forEach((f,i)=>setTimeout(()=>playTone(f,"sine",.15,.15),i*80));}
 
 /* STATE */
+let _secretGameToken=null; /* Anti-Cheat: new token each game */
 let S={
   ph:"menu",tab:"home",mode:"city",diff:"casual",
   sc:0,st:0,bs:0,rd:0,correct:0,tm:12,dur:12,
@@ -4414,7 +4415,8 @@ let tIv=null,fTo=null,toastTo=null;
           /* Check if call is from our own code (has game functions in stack) */
           const stk=(new Error()).stack||"";
           const trusted=["answer","startGame","mpCountdown","lq","nextRound",
-            "checkMastery","spotterCollect","saveSession","loadData","initAuth"];
+            "checkMastery","spotterCollect","saveSession","loadData","initAuth",
+            "handleGridAnswer","finishCustomGame","submitGridResult"];
           const ok=trusted.some(fn=>stk.includes(fn));
           if(!ok){
             console.warn("%c🚫 GeoQuest: Schummeln erkannt! Feld '"+k+"' ist geschützt.",
@@ -5300,14 +5302,14 @@ function lq(){ console.log("🟢 [TRACKER] 2. lq (loadQuestion) gestartet.");
     S.waitingForLandscape=true;
   }else{
     S.waitingForLandscape=false;
-    if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);} },1000);
+    if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null,_secretGameToken);} },1000);
   }
 }
 
 /* â”€â”€ Phase 42: Index-based answer dispatch (hides answer strings from DOM) â”€â”€ */
 function answerByIdx(i){
   if(!S.q||!S.q.opts||i<0||i>=S.q.opts.length)return;
-  answer(S.q.opts[i]);
+  answer(S.q.opts[i],_secretGameToken);
 }
 document.addEventListener("keydown",function(e){
   if(S.ph==="playing"&&S.q&&S.sel===null&&!["INPUT","TEXTAREA","SELECT"].includes(document.activeElement?.tagName)){
@@ -5315,7 +5317,8 @@ document.addEventListener("keydown",function(e){
     if(k>=1&&k<=4){e.preventDefault();answerByIdx(k-1);}
   }
 });
-function answer(a){
+function answer(a,tok){
+  if(tok!==_secretGameToken){if(typeof tok!=="undefined")console.warn("%c\uD83D\uDEAB GeoQuest Anti-Cheat: invalid token","color:#ef4444;font-weight:bold");return;}
   if(!S||!S.q)return; /* P143: guard against missing question */
   if(S.sel\!==null)return;
   if(S.qRenderedAt&&Date.now()-S.qRenderedAt<250)return; /* anti-cheat: ignore clicks <250ms after render */
@@ -5904,6 +5907,7 @@ function startGame(m){ console.log("🟢 [TRACKER] 1. startGame gestartet. Mode:
     scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,
     half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),
     survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,lives:S.diff==="casual"?999:3});
+  _secretGameToken=Math.random().toString(36).substring(2,15);
   /* Phase 86 – custom puzzle modes */
   if(_m==="logic_grid"){initLogikGitter();render();return;}
   if(_m==="travel_route"){initReiseroute();render();return;}
@@ -6390,8 +6394,8 @@ app.innerHTML=`<div class="scr">
         </div>
       </div>
       <div class="hl-btn-row">
-        <button class="hl-btn hl-higher${sel\!==null?(q.ans==="higher"?" ok":(sel==="higher"?" ng":" dm")):""}" ${hlDis} onclick="answer('higher')">${hlBtnH}</button>
-        <button class="hl-btn hl-lower${sel\!==null?(q.ans==="lower"?" ok":(sel==="lower"?" ng":" dm")):""}" ${hlDis} onclick="answer('lower')">${hlBtnL}</button>
+        <button class="hl-btn hl-higher${sel\!==null?(q.ans==="higher"?" ok":(sel==="higher"?" ng":" dm")):""}" ${hlDis} onclick="answer('higher',_secretGameToken)">${hlBtnH}</button>
+        <button class="hl-btn hl-lower${sel\!==null?(q.ans==="lower"?" ok":(sel==="lower"?" ng":" dm")):""}" ${hlDis} onclick="answer('lower',_secretGameToken)">${hlBtnL}</button>
       </div>`;
   }else if(q.type==="plate_compare"){
     /* Beta Kennzeichen-Vergleich: show plate codes + flags */
@@ -6418,11 +6422,14 @@ app.innerHTML=`<div class="scr">
       ${sel!==null?`<div class="qmeta" style="text-align:center;margin:.3rem 0 .1rem;font-size:.77rem">${q.meta||""}</div>`:""}`;
   }else if(q.type&&(q.type.startsWith('comp_')||q.type.startsWith('hl_b_'))){
     /* Phase 102-A: Flaggen-Header + Prompt, Werte nach Antwort */
-    const _cfA=q.opts&&q.opts[0]?flagOf(q.opts[0]):'\u{1F30D}';
-    const _cfB=q.opts&&q.opts[1]?flagOf(q.opts[1]):'\u{1F30D}';
+    /* HL_BETA opts are German names → look up cc via HL_BETA_CC */
+    const _hlbCC=o=>q.type&&q.type.startsWith('hl_b_')?HL_BETA_CC[o]||null:null;
+    const _hlbFlag=o=>{const cc=_hlbCC(o)||ccFromCountry(o);return cc?`<img src="https://flagcdn.com/w40/${cc}.png" style="height:22px;vertical-align:middle;border-radius:2px" alt="">`:'\u{1F30D}';};
+    const _cfA=q.opts&&q.opts[0]?_hlbFlag(q.opts[0]):'\u{1F30D}';
+    const _cfB=q.opts&&q.opts[1]?_hlbFlag(q.opts[1]):'\u{1F30D}';
     /* P136: show country names below flags */
-    const _cnA=q.opts&&q.opts[0]?displayCountry(q.opts[0]):"";
-    const _cnB=q.opts&&q.opts[1]?displayCountry(q.opts[1]):"";
+    const _cnA=q.opts&&q.opts[0]?(displayCountry(_hlbCC(q.opts[0])||q.opts[0])||q.opts[0]):"";
+    const _cnB=q.opts&&q.opts[1]?(displayCountry(_hlbCC(q.opts[1])||q.opts[1])||q.opts[1]):"";
     qBody=`<div class="qprompt">${q.prompt}</div>
       <div style="display:flex;justify-content:center;align-items:center;gap:1.8rem;margin:.55rem 0 .25rem">
         <div style="display:flex;flex-direction:column;align-items:center;gap:3px">
@@ -6466,7 +6473,7 @@ app.innerHTML=`<div class="scr">
     const disabled=sel\!==null?"disabled":"";
     const optHtml=q.opts.map(o=>{
       const cls=sel\!==null?(o===q.ans?" opt-ok":o===sel?" opt-ng":""):"";
-      return`<button class="opt-btn${cls}" onclick="answer(${JSON.stringify(o)})" ${disabled}>${esc(o)}</button>`;
+      return`<button class="opt-btn${cls}" onclick="answer(${JSON.stringify(o)},_secretGameToken)" ${disabled}>${esc(o)}</button>`;
     }).join("");
     app.innerHTML=`<div class="scr map-scr">
       <div class="hud">
@@ -6524,7 +6531,7 @@ app.innerHTML=`<div class="scr">
   const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
-    answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
+    answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
     // Population comparison: special subj rendering
     if(q.type==="pop_compare"&&q.subj&&typeof q.subj==='object'){
       const pcDis=sel!==null?"disabled":"";
@@ -6544,8 +6551,8 @@ app.innerHTML=`<div class="scr">
         </div>
         <div style="color:var(--text3);font-size:.82rem;text-align:center;margin:.5rem 0">${q.prompt}</div>
         <div class="hl-btn-row">
-          <button class="${moreCls}" ${pcDis} onclick="answer('more')">${t("hl_more")}</button>
-          <button class="${lessCls}" ${pcDis} onclick="answer('less')">${t("hl_less")}</button>
+          <button class="${moreCls}" ${pcDis} onclick="answer('more',_secretGameToken)">${t("hl_more")}</button>
+          <button class="${lessCls}" ${pcDis} onclick="answer('less',_secretGameToken)">${t("hl_less")}</button>
         </div>
         ${sel\!==null?`<div class="meta-line">${q.meta||""}</div>`:""}
         ${sel\!==null?`<button class="btn-p" onclick="nextRound()">Weiter →’</button>`:""}
@@ -6709,7 +6716,7 @@ function drawWorldMap(targetName,sel,ok,preHL,readOnly){
     .on('click',function(ev,d){
       if(readOnly||sel\!==null)return;
       ev.stopPropagation();
-      answer(d.properties.name);
+      answer(d.properties.name,_secretGameToken);
     });
 
   /* Pulse correct country after feedback */
@@ -7270,6 +7277,7 @@ function drawAlbumMap(){
    =================================================================== */
 
 /* Shared: save score and transition to gameover screen */
+function submitGridResult(){if(S.gridData){S.sc=S.gridData.score;S.correct=S.gridData.correctCount;S.rd=S.gridData.correctCount;}finishCustomGame();}
 function finishCustomGame(){
   soundOver();
   S.ph="gameover";S.scoreSaved=false;S.convModal=true;
@@ -7366,7 +7374,7 @@ function lgUpdate(val){
   if(!gd||!gd.activeCell){el.innerHTML="";return;}
   const gtype=gd.gridType||"land";
   el.innerHTML=(S.gridSugg||[]).slice(0,12).map(s=>{
-    let icon="",label=s;
+    let icon="",label=esc(s); /* XSS defense */
     if(gtype==="stadt"){
       const ci=CITIES.find(c=>c.name===s);
       icon=ci?flagOf(ci.country||ci.cc||""):"";
@@ -7423,6 +7431,7 @@ function handleGridAnswer(r,c,name){
   render();
 }
 function initLogikGitter(){
+  _secretGameToken=Math.random().toString(36).substring(2,15);
   function _shuf(a){const b=a.slice();for(let i=b.length-1;i>0;i--){const j=~~(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
   /* P161/P164: type selection -- honour S.gridTypeMode when not "random" */
   const _gtm=(typeof S!=="undefined"&&S.gridTypeMode&&S.gridTypeMode!=="random")?S.gridTypeMode:null;
@@ -7551,7 +7560,7 @@ function renderLogikGitter(sc){
           :'<div style="color:#ef4444;font-weight:900">\u{1F480} Keine Leben mehr!</div>'}
         <div style="color:var(--text3);font-size:.75rem;margin:.2rem 0">${gd.correctCount} von 9 richtig \u00b7 ${gd.score.toLocaleString()} Punkte</div>
       </div>
-      <button class="btn-p" onclick="S.sc=S.gridData.score;S.correct=S.gridData.correctCount;S.rd=S.gridData.correctCount;finishCustomGame()">Ergebnis ansehen</button>`
+      <button class="btn-p" onclick="submitGridResult()">Ergebnis ansehen</button>`
     :"";
   return `<div class="scr">
     <div class="hud">
@@ -8728,7 +8737,7 @@ document.addEventListener("visibilitychange",()=>{
   S._hiddenAt=null;
   if(elapsed>0){
     S.tm=Math.max(0,S.tm-elapsed);
-    if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}else {}
+    if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null,_secretGameToken);}else {}
   }
 });
 
