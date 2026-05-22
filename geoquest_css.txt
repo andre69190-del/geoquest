@@ -596,3 +596,13 @@ input[type=text]::placeholder{color:var(--text3)}
 .gim-box{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:901;background:var(--bg);border:2px solid var(--border);border-radius:18px;padding:1.4rem 1.2rem;max-width:310px;width:90%;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.3);animation:slideUp .18s ease}
 @keyframes slideUp{from{opacity:0;transform:translate(-50%,-44%)}to{opacity:1;transform:translate(-50%,-50%)}}
 [data-theme=dark] .game-search-input{background:var(--bg2);border-color:var(--border)}
+/* Phase 173: High-contrast search+random override */
+.menu-search-container{display:flex !important;gap:10px !important;margin:0 15px 20px 15px !important;align-items:center !important}
+#gameSearch{flex:1 !important;background:#ffffff !important;border:2px solid #94a3b8 !important;color:#1e293b !important;padding:12px 15px !important;border-radius:10px !important;font-size:16px !important;box-shadow:0 2px 5px rgba(0,0,0,.05) !important;outline:none !important}
+#gameSearch::placeholder{color:#64748b !important}
+#gameSearch:focus{border-color:#6366f1 !important;box-shadow:0 0 0 3px rgba(99,102,241,.15) !important}
+[data-theme=dark] #gameSearch{background:#1e293b !important;border-color:#475569 !important;color:#f1f5f9 !important}
+[data-theme=dark] #gameSearch::placeholder{color:#94a3b8 !important}
+.btn-random-game{background-color:#6366f1 !important;color:#fff !important;border:none !important;padding:12px 20px !important;border-radius:10px !important;font-weight:700 !important;font-size:16px !important;cursor:pointer !important;box-shadow:0 4px 6px rgba(99,102,241,.3) !important;transition:transform .1s,background-color .2s !important;white-space:nowrap !important;flex-shrink:0 !important}
+.btn-random-game:hover{background-color:#4f46e5 !important;transform:translateY(-1px) !important;box-shadow:0 6px 12px rgba(99,102,241,.4) !important}
+.btn-random-game:active{transform:scale(.95) !important}

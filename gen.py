@@ -8542,8 +8542,8 @@ function renderHomeTab(){
       <div style="flex:1"><div style="font-size:.9rem;font-weight:900;color:#fff">Lokal 1:1 Hot-Seat</div><div style="font-size:.7rem;color:rgba(255,255,255,.75)">Zwei Spieler · Ein Gerät · 10 Runden</div></div>
       <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:.25rem .75rem;font-size:.72rem;font-weight:700">► Los</div>
     </div>
-    <div class="menu-header-tools">
-      <input type="text" id="gameSearch" class="game-search-input" placeholder="🔍 Spiel suchen..." oninput="filterGames()">
+    <div class="menu-search-container">
+      <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="filterGames()">
       <button class="btn-random-game" onclick="playRandomGame()">🎲 Zufall</button>
     </div>
     <div class="acc-list">
