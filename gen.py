@@ -4417,7 +4417,7 @@ let S={
   half_removed:false,
   freezeActive:false,
   filter:"all",
-  activeCategory:"pure_geo",
+  activeCategory:null,
   fcIdx:0,fcFlipped:false,fcSearch:"",fcCountry:"all",
   darkMode:false,
   authMode:"login",authEmail:"",authPassword:"",authConfirm:"",authUsername:"",authError:"",authLoading:false,
@@ -8413,17 +8413,23 @@ function filterGames(){
   const accList=document.querySelector('.acc-list');
   if(!accList)return;
   if(q){
-    accList.querySelectorAll('.acc-body').forEach(b=>b.style.display='block');
-    accList.querySelectorAll('.mode-card').forEach(card=>{
-      const text=((card.dataset.title||'')+(card.dataset.desc||'')).toLowerCase();
-      card.style.display=text.includes(q)?'':'none';
-    });
     accList.querySelectorAll('.acc-item').forEach(item=>{
-      const vis=[...item.querySelectorAll('.mode-card')].some(c=>c.style.display!=='none');
-      item.style.display=vis?'':'none';
+      const body=item.querySelector('.acc-body');
+      if(!body)return;
+      let hasMatch=false;
+      body.querySelectorAll('.mode-card').forEach(card=>{
+        const text=((card.dataset.title||'')+(card.dataset.desc||'')).toLowerCase();
+        const match=text.includes(q);
+        card.style.display=match?'':'none';
+        if(match)hasMatch=true;
+      });
+      body.style.display=hasMatch?'block':'none';
+      item.style.display=hasMatch?'':'none';
     });
   }else{
-    accList.querySelectorAll('.acc-body').forEach(b=>b.style.display='');
+    accList.querySelectorAll('.acc-body').forEach(b=>{
+      b.style.display=b.dataset.open==='true'?'':'none';
+    });
     accList.querySelectorAll('.mode-card').forEach(c=>c.style.display='');
     accList.querySelectorAll('.acc-item').forEach(i=>i.style.display='');
   }
@@ -8497,14 +8503,14 @@ function renderHomeTab(){
         </div>
         <span style="color:var(--text3);display:flex;align-items:center">${chv}</span>
       </div>
-      ${isOpen?`<div class="acc-body">
+      <div class="acc-body" data-open="${isOpen}" style="${isOpen?'':'display:none'}">
         <div style="position:relative"><div class="mode-grid" style="opacity:${unlocked?1:.4}">${cards}</div>${lockOverlay}</div>
         ${catId==="eu_plates"?`<div style="background:var(--bg2);border:2px solid #3b82f6;border-radius:14px;padding:.8rem;margin-top:.5rem;cursor:pointer;display:flex;align-items:center;gap:12px;box-shadow:0 2px 10px rgba(59,130,246,.12);transition:opacity .15s" onclick="S.tab='album';render()" onmousedown="this.style.opacity='.7'" onmouseup="this.style.opacity='1'">
           <div style="width:38px;height:38px;background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">\u{1F4D4}</div>
           <div style="flex:1;min-width:0"><div style="font-weight:900;font-size:.83rem;color:var(--text)">Kennzeichen-Album & Spotter</div><div style="font-size:.68rem;color:var(--text3);margin-top:1px">${S.collectedPlates.length} von ${totalUniquePlates()||"?"} gesammelt</div></div>
           <div style="color:#3b82f6;font-size:1rem;font-weight:700">\u2192</div>
         </div>`:""}
-      </div>`:"" }
+      </div>
     </div>`;
   }
   /* Dynamic Home Header */
@@ -9920,8 +9926,8 @@ HTML = HTML.replace('\\!', '!')
 out = 'GeoQuest.html'
 with open(out, 'w', encoding='utf-8') as _f:
     _f.write(HTML)
-print(f'Written: {len(HTML):,} chars →’ {out}')
+print(f"Written: {len(HTML):,} chars -> {out}")
 # Also write index.html for Netlify / direct hosting
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
-print('Also written → index.html (Netlify deploy target)')
+print('Also written -> index.html (Netlify deploy target)')
