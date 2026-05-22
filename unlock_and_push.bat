@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT: HL-Beta→Vergleiche-Style + Beta Kennzeichen-Vergleich + Sport-Kategorie (Stadion/Trikot/Wappen/Olympia)"
+git commit -m "UI/UX: Global Exit Button Overhaul — Beenden-Button in allen Spielmodi (Phase 161)"
 echo.
 git push origin main
 echo.

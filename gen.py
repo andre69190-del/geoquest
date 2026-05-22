@@ -3149,8 +3149,11 @@ function genHLPopQ(){
   const _fcp=_rfilt(COUNTRIES,4);const _ccp=new Set(_fcp.map(x=>x.cc));
   let pool=CAPS_POP.filter(x=>x.pop>500000&&_ccp.has(ccFromCountry(x.c)));
   if(pool.length<2)pool=CAPS_POP.filter(x=>x.pop>500000);if(pool.length<2)return null;
-  const ai=~~(rng()*pool.length);let bi=~~(rng()*pool.length);while(bi===ai)bi=~~(rng()*pool.length);
-  const a=pool[ai],b=pool[bi];
+  const ai=~~(rng()*pool.length);
+  const a=pool[ai];
+  const restP=pool.filter((_,i)=>i!==ai);
+  const b=getSmartMatch(restP,ccFromCountry(a.c),a.pop,x=>ccFromCountry(x.c),x=>x.pop)||restP[~~(rng()*restP.length)];
+  if(!b)return null;
   const fmt=(p)=>p>=1e9?(p/1e9).toFixed(2)+" Mrd.":p>=1e6?(p/1e6).toFixed(1)+" Mio.":(p/1e3).toFixed(0)+" Tsd.";
   const ans=b.pop>a.pop?"higher":"lower";
   return{type:"hl_pop",prompt:t("q_hl_pop",{a:a.c}),nameA:a.c,valA:fmt(a.pop),nameB:b.c,valB:fmt(b.pop),ans,opts:["higher","lower"],lid:b.c,cc:ccFromCountry(b.c)};
@@ -3160,8 +3163,11 @@ function genHLRiverQ(){
   const _fcr=_rfilt(COUNTRIES,4);const _ccr=new Set(_fcr.map(x=>x.cc));
   let pool=RIVERS_REAL.filter(r=>r.len>100&&_ccr.has(ccFromCountry(r.c)));
   if(pool.length<2)pool=RIVERS_REAL.filter(r=>r.len>100);if(pool.length<2)return null;
-  const ai=~~(rng()*pool.length);let bi=~~(rng()*pool.length);while(bi===ai)bi=~~(rng()*pool.length);
-  const a=pool[ai],b=pool[bi];
+  const ai=~~(rng()*pool.length);
+  const a=pool[ai];
+  const restR=pool.filter((_,i)=>i!==ai);
+  const b=getSmartMatch(restR,a.cc||ccFromCountry(a.c),a.len,x=>x.cc||ccFromCountry(x.c),x=>x.len)||restR[~~(rng()*restR.length)];
+  if(!b)return null;
   const ans=b.len>a.len?"higher":"lower";
   return{type:"hl_river",prompt:t("q_hl_river",{a:a.n}),nameA:a.n,valA:a.len+" km",nameB:b.n,valB:b.len+" km",ans,opts:["higher","lower"],lid:b.n,cc:ccFromCountry(b.c)};
 }
@@ -3170,8 +3176,11 @@ function genHLAreaQ(){
   const _fca=_rfilt(COUNTRIES,4);const _cca=new Set(_fca.map(x=>x.cc));
   let pool=AREA_DATA.filter(x=>_cca.has(ccFromCountry(x.c)));
   if(pool.length<2)pool=AREA_DATA.slice();if(pool.length<2)return null;
-  const ai=~~(rng()*pool.length);let bi=~~(rng()*pool.length);while(bi===ai)bi=~~(rng()*pool.length);
-  const a=pool[ai],b=pool[bi];
+  const ai=~~(rng()*pool.length);
+  const a=pool[ai];
+  const restA2=pool.filter((_,i)=>i!==ai);
+  const b=getSmartMatch(restA2,ccFromCountry(a.c),a.area,x=>ccFromCountry(x.c),x=>x.area)||restA2[~~(rng()*restA2.length)];
+  if(!b)return null;
   const fmt=(x)=>x>=1e6?(x/1e6).toFixed(2)+" Mio. kmÂ²":(x/1000).toFixed(0)+" Tsd. kmÂ²";
   const ans=b.area>a.area?"higher":"lower";
   return{type:"hl_area",prompt:t("q_hl_area",{a:a.c}),nameA:a.c,valA:fmt(a.area),nameB:b.c,valB:fmt(b.area),ans,opts:["higher","lower"],lid:b.c,cc:ccFromCountry(b.c)};
@@ -3181,10 +3190,13 @@ function genHLAreaQ(){
 function _genHLComp(type,key,fmtFn,promptKey){
   const keys=Object.keys(COMP_DATA).filter(k=>COMP_DATA[k][key]!=null&&COMP_DATA[k][key]>0);
   if(keys.length<2)return null;
-  let ai=~~(rng()*keys.length),bi=~~(rng()*keys.length);
-  while(bi===ai)bi=~~(rng()*keys.length);
-  const kA=keys[ai],kB=keys[bi];
-  const vA=COMP_DATA[kA][key],vB=COMP_DATA[kB][key];
+  const ai=~~(rng()*keys.length);
+  const kA=keys[ai];
+  const vA=COMP_DATA[kA][key];
+  const rest=keys.filter(k=>k!==kA);
+  const kB=getSmartMatch(rest,ccFromCountry(kA),vA,k=>ccFromCountry(k),k=>COMP_DATA[k][key]);
+  if(!kB)return null;
+  const vB=COMP_DATA[kB][key];
   const ans=vB>vA?"higher":"lower";
   const dA=displayCountry(ccFromCountry(kA))||kA;
   const dB=displayCountry(ccFromCountry(kB))||kB;
@@ -3255,14 +3267,48 @@ const HL_BETA_PROMPTS={
   hl_b_tour:"Welches Land hat mehr Touristen?",
   hl_b_wm:"Welches Land hat mehr WM-Teilnahmen?",
 };
+
+/* ─── Phase 160: CC-Map für HL_BETA_DATA (German name → ISO-2) ─── */
+const HL_BETA_CC={
+  "Deutschland":"de","Frankreich":"fr","USA":"us","Brasilien":"br","Japan":"jp",
+  "Australien":"au","China":"cn","Kanada":"ca","Indien":"in","Russland":"ru",
+  "Spanien":"es","Italien":"it","Norwegen":"no","Mexiko":"mx","Suedkorea":"kr"
+};
+
+/* ─── Phase 160: Smart Matchmaking Helper ─── */
+/* Wählt einen Vergleichspartner aus candidates[] mit:
+   Prio 1 – gleicher Kontinent (via COUNTRIES.ct)
+   Prio 2 – numerische Nähe (|valA - valK| sortiert, Top-8)
+   ccFn(candidate) → ISO-2  |  valFn(candidate) → Zahl              */
+function getSmartMatch(candidates,ccA,valA,ccFn,valFn){
+  if(!candidates||candidates.length===0)return null;
+  const ctA=ccA?(COUNTRIES.find(c=>c.cc===ccA)||{}).ct:null;
+  let pool=candidates;
+  if(ctA&&candidates.length>3){
+    const sameC=candidates.filter(k=>{
+      const cc2=ccFn(k);
+      return cc2&&(COUNTRIES.find(c=>c.cc===cc2)||{}).ct===ctA;
+    });
+    if(sameC.length>=2)pool=sameC;
+  }
+  if(valA!=null&&pool.length>2){
+    pool=pool.slice().sort((a,b)=>
+      Math.abs(valFn(a)-valA)-Math.abs(valFn(b)-valA)
+    ).slice(0,8);
+  }
+  return pool[~~(rng()*pool.length)];
+}
 function genHLBeta(modeId){
   const m=HL_BETA_METRICS[modeId];if(!m)return null;
   const countries=Object.keys(HL_BETA_DATA).filter(k=>HL_BETA_DATA[k][m.key]!=null);
   if(countries.length<2)return null;
-  let ai=~~(rng()*countries.length),bi=~~(rng()*countries.length);
-  while(bi===ai)bi=~~(rng()*countries.length);
-  const kA=countries[ai],kB=countries[bi];
-  const vA=HL_BETA_DATA[kA][m.key],vB=HL_BETA_DATA[kB][m.key];
+  const ai=~~(rng()*countries.length);
+  const kA=countries[ai];
+  const vA=HL_BETA_DATA[kA][m.key];
+  const rest=countries.filter(k=>k!==kA);
+  const kB=getSmartMatch(rest,HL_BETA_CC[kA]||null,vA,k=>HL_BETA_CC[k]||null,k=>HL_BETA_DATA[k][m.key]);
+  if(!kB)return null;
+  const vB=HL_BETA_DATA[kB][m.key];
   const isOlder=modeId==="hl_b_founded";
   const ans=isOlder?(vA<vB?kA:kB):(vA>vB?kA:kB);
   const prompt="\u{1F9EA} [BETA] "+(HL_BETA_PROMPTS[modeId]||"Vergleich?");
@@ -3332,8 +3378,12 @@ function _compPick(key,filterFn){
   });
   if(pool.length<2)pool=Object.keys(COMP_DATA).filter(k=>{const d=COMP_DATA[k];return d&&d[key]!==undefined&&(!filterFn||filterFn(d));});
   if(pool.length<2)return null;
-  const ai=~~(rng()*pool.length);let bi=~~(rng()*pool.length);while(bi===ai)bi=~~(rng()*pool.length);
-  return[pool[ai],pool[bi]];
+  const ai=~~(rng()*pool.length);
+  const kA=pool[ai];
+  const restC=pool.filter(k=>k!==kA);
+  const kB=getSmartMatch(restC,ccFromCountry(kA),COMP_DATA[kA]&&COMP_DATA[kA][key],k=>ccFromCountry(k),k=>COMP_DATA[k]&&COMP_DATA[k][key]);
+  if(!kB)return null;
+  return[kA,kB];
 }
 function _compQ(type,prompt,a,b,aVal,bVal,fmtFn){
   const ans=bVal>aVal?b:a;
@@ -3347,8 +3397,11 @@ function genCompAreaQ(){
   const _fc=_rfilt(COUNTRIES,4);const _cc=new Set(_fc.map(x=>x.cc));
   let pool=keys.filter(k=>_cc.has(ccFromCountry(k)));
   if(pool.length<2)pool=keys.slice();if(pool.length<2)return null;
-  const ai=~~(rng()*pool.length);let bi=~~(rng()*pool.length);while(bi===ai)bi=~~(rng()*pool.length);
-  const a=pool[ai],b=pool[bi];
+  const ai=~~(rng()*pool.length);
+  const a=pool[ai];
+  const restCA=pool.filter(k=>k!==a);
+  const b=getSmartMatch(restCA,ccFromCountry(a),COMP_AREA[a],k=>ccFromCountry(k),k=>COMP_AREA[k]);
+  if(!b)return null;
   const fmt=(x)=>x>=1e6?(x/1e6).toFixed(2)+' Mio. kmÂ²':(x/1000).toFixed(0)+' Tsd. kmÂ²';
   return _compQ('comp_area','Welches Land ist größer?',a,b,COMP_AREA[a],COMP_AREA[b],fmt);
 }
@@ -3359,8 +3412,11 @@ function genCompPopQ(){
   const _fc=_rfilt(COUNTRIES,4);const _cc=new Set(_fc.map(x=>x.cc));
   let pool=keys.filter(k=>COMP_POP[k]>0.5&&_cc.has(ccFromCountry(k)));
   if(pool.length<2)pool=keys.filter(k=>COMP_POP[k]>0.5);if(pool.length<2)return null;
-  const ai=~~(rng()*pool.length);let bi=~~(rng()*pool.length);while(bi===ai)bi=~~(rng()*pool.length);
-  const a=pool[ai],b=pool[bi];
+  const ai=~~(rng()*pool.length);
+  const a=pool[ai];
+  const restCP=pool.filter(k=>k!==a);
+  const b=getSmartMatch(restCP,ccFromCountry(a),COMP_POP[a],k=>ccFromCountry(k),k=>COMP_POP[k]);
+  if(!b)return null;
   const pa=COMP_POP[a]*1e6,pb=COMP_POP[b]*1e6;
   const fmt=(p)=>p>=1e9?(p/1e9).toFixed(2)+' Mrd.':p>=1e6?(p/1e6).toFixed(1)+' Mio.':(p/1e3).toFixed(0)+' Tsd.';
   return _compQ('comp_pop','Welches Land hat mehr Einwohner?',a,b,pa,pb,fmt);
@@ -3429,8 +3485,8 @@ function genCompForestQ(){
   return _compQ('comp_forest','Welches Land hat mehr Waldfläche?',a,b,COMP_DATA[a].forest,COMP_DATA[b].forest,fmt);
 }
 function genNeighborQ(){
-  const nb=NEIGHBORS;const valid=Object.keys(nb).filter(c=>nb[c]&&nb[c].length>=2);if(\!valid.length)return null;
-  const country=valid[~~(rng()*valid.length)];const neighborList=nb[country];
+  const nb=NEIGHBORS;const valid=Object.keys(nb).filter(c=>Array.isArray(nb[c])&&nb[c].length>=2);if(\!valid.length)return null;
+  const country=valid[~~(rng()*valid.length)];const neighborList=Array.isArray(nb[country])?nb[country]:[];
   const allC=Object.keys(nb);const nonNb=allC.filter(c=>c\!==country&&\!neighborList.includes(c));if(\!nonNb.length)return null;
   const type2=rng()>.5;
   if(type2&&neighborList.length>=2){
@@ -3446,10 +3502,10 @@ function genNeighborQ(){
 
 function genNeighborFakeQ(){
   const nb=NEIGHBORS;
-  const valid=Object.keys(nb).filter(c=>nb[c]&&nb[c].length>=3);
+  const valid=Object.keys(nb).filter(c=>Array.isArray(nb[c])&&nb[c].length>=3);
   if(\!valid.length)return null;
   const country=valid[~~(rng()*valid.length)];
-  const neighbors=nb[country];
+  const neighbors=Array.isArray(nb[country])?nb[country]:[];
   const realNbs=sh([...neighbors]).slice(0,3);
   const allKeys=Object.keys(nb);
   const basePool=allKeys.filter(c=>c\!==country&&\!neighbors.includes(c));
@@ -6125,7 +6181,7 @@ function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.can
   }
   if(S.leagueEvalResult){app.innerHTML=renderLeagueEvalModal(S.leagueEvalResult);return;}
   if(S.waitingForLandscape){
-    app.innerHTML=`<div style="min-height:100vh;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem"><div style="font-size:3rem;margin-bottom:1rem">\u{1F4F1}\u27A1\u{1F5FA}</div><div style="font-size:1.1rem;font-weight:900;color:var(--text);margin-bottom:.5rem">Bitte Ger\u00e4t drehen</div><div style="font-size:.8rem;color:var(--text3);margin-bottom:1.5rem">Dieser Modus ben\u00f6tigt das Querformat</div><button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';S.waitingForLandscape=false;render()" style="font-size:.9rem;padding:.6rem 1.4rem">\u00d7 Beenden</button></div>`;
+    app.innerHTML=`<div style="min-height:100vh;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem"><div style="font-size:3rem;margin-bottom:1rem">\u{1F4F1}\u27A1\u{1F5FA}</div><div style="font-size:1.1rem;font-weight:900;color:var(--text);margin-bottom:.5rem">Bitte Ger\u00e4t drehen</div><div style="font-size:.8rem;color:var(--text3);margin-bottom:1.5rem">Dieser Modus ben\u00f6tigt das Querformat</div><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';S.waitingForLandscape=false;render()">🚪 Beenden</button></div>`;
     return;
   }
   if(S.lvModal){app.innerHTML=renderLVModal();return;}
@@ -6422,9 +6478,9 @@ app.innerHTML=`<div class="scr">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">×</button>
         </div>
       </div>
+      <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
       <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
       <div class="q-area" style="padding:0 8px 8px">
         <div style="text-align:center;margin:6px 0 6px">
@@ -6452,7 +6508,7 @@ app.innerHTML=`<div class="scr">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">\u00d7</button>
+          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
         </div>
       </div>
       ${S.mpOpponent?`<div class="duell-bar-wrap" style="margin:0 0 4px"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -6466,7 +6522,7 @@ app.innerHTML=`<div class="scr">
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">×</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -6539,7 +6595,7 @@ app.innerHTML=`<div class="scr">
         ${diff==="survival"
           ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
           :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-        <button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">\u00d7</button>
+        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
       </div>
     </div>
     ${S.mpOpponent?`<div class="duell-bar-wrap"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -6596,7 +6652,9 @@ function drawWorldMap(targetName,sel,ok,preHL,readOnly){
   const svg=d3.select(container).html('').append('svg')
     .attr('width','100%').attr('height',H)
     .attr('viewBox',`0 0 ${W} ${H}`)
-    .style('background','var(--bg2)');
+    .style('background','var(--bg2)')
+    .style('touch-action','none')
+    .style('user-select','none');
 
   const proj=d3.geoNaturalEarth1().scale(W/6.2).translate([W/2,H/2]);
   const path=d3.geoPath().projection(proj);
@@ -7498,7 +7556,7 @@ function renderLogikGitter(sc){
       <div style="display:flex;align-items:center;gap:8px">
         <div style="font-size:.75rem;color:var(--text3)">${gd.correctCount}/9</div>
         <div style="font-size:.85rem;font-weight:700;min-width:2.2rem;text-align:right;color:${tc()}">${S.tm}s</div>
-        <button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">\u00d7</button>
+        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
       </div>
     </div>
     <div class="tbar"><div class="tfill" style="width:${pct()}%;background:${tc()}"></div></div>
@@ -7621,7 +7679,7 @@ function renderReiseroute(sc){
       </div>
       <div style="display:flex;align-items:center;gap:8px">
         <div style="font-size:.75rem;color:var(--text3)">${rd.steps} Schr.</div>
-        <button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';render()">\u00d7</button>
+        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button>
       </div>
     </div>
     <div style="background:var(--bg2);border-radius:12px;padding:.6rem .75rem;margin:.3rem 0">
@@ -8864,7 +8922,7 @@ _HTML_HEAD = '''<!DOCTYPE html>
 html,body{height:100%;background:var(--bg);font-family:system-ui,-apple-system,sans-serif;color:var(--text);-webkit-tap-highlight-color:transparent;transition:background .25s,color .25s}
 body{padding-top:50px;padding-bottom:68px}
 #app{min-height:calc(100dvh - 118px);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:1rem 1rem .5rem}
-.scr{width:100%;max-width:420px}
+.scr{width:100%;max-width:420px;position:relative}
 .panel{background:var(--bg2);border-radius:16px;padding:1.25rem;margin-bottom:1rem;box-shadow:var(--shadow);border:1px solid var(--border)}
 input[type=text]{width:100%;background:var(--bg);color:var(--text);border:1.5px solid var(--border);border-radius:8px;padding:.5rem .75rem;font-size:.88rem}
 input[type=text]:focus{outline:none;border-color:var(--accent)}
@@ -8901,6 +8959,9 @@ input[type=text]::placeholder{color:var(--text3)}
 .btn-g:hover{border-color:var(--text3);color:var(--text)}
 .btn-cancel{background:rgba(239,68,68,.12);border:1.5px solid rgba(239,68,68,.4);color:#f87171;border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:700;cursor:pointer}
 .btn-cancel:hover{color:#f87171;border-color:#f87171}
+.btn-exit-global{position:absolute;top:10px;right:10px;z-index:1000;background:#ff4757;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:.82rem;font-weight:800;cursor:pointer;box-shadow:0 2px 8px rgba(255,71,87,.45);letter-spacing:.3px;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.btn-exit-global:hover{background:#ff2f43;box-shadow:0 3px 12px rgba(255,71,87,.6)}
+.btn-exit-global:active{transform:scale(.96)}
 .diff-toggle{display:flex;background:var(--bg3);border-radius:10px;padding:3px;margin-bottom:.75rem;border:1px solid var(--border)}
 .diff-btn{flex:1;background:transparent;color:var(--text3);border:none;border-radius:8px;padding:.5rem;font-size:.82rem;font-weight:700;cursor:pointer;transition:background .15s,color .15s}
 .diff-btn.active{background:var(--bg2);color:var(--text);box-shadow:var(--shadow);font-weight:900}
@@ -9199,7 +9260,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .map-prompt strong{color:#3b82f6}
 .map-container{flex:1;min-height:200px;max-height:300px;width:100%;
   background:var(--bg2);border-radius:14px;overflow:hidden;
-  touch-action:pan-x pan-y;margin-bottom:.5rem}
+  touch-action:none;user-select:none;margin-bottom:.5rem}
 .map-container svg{display:block;width:100%;height:100%}
 .map-container .ctry{cursor:pointer;transition:fill .15s}
 .map-weiter{margin:.25rem .8rem .4rem}
