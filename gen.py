@@ -8434,55 +8434,69 @@ function filterGames(){
     filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
     return;
   }
-  // Searching: deactivate all chips
-  document.querySelectorAll('.filter-chip').forEach(function(c){
-    c.classList.remove('active');
-    c.style.background='';
-    c.style.color='';
-  });
   var catLabels={pure_geo:'pure geo',lifestyle:'lifestyle',eu_plates:'kennzeichen plates',
     sport:'sport',hl_compare:'higher lower',comparisons:'vergleiche',
     airports:'airports flughaefen',neighbors:'nachbarlaender',map_mode:'weltkarte map'};
-  // Search all mode-cards directly (flat grid)
-  document.querySelectorAll('#mainGamesGrid .mode-card').forEach(function(card){
-    var title=(card.dataset.title||'').toLowerCase();
-    var desc=(card.dataset.desc||'').toLowerCase();
-    var cat=(card.dataset.category||'').toLowerCase();
-    var catLabel=(catLabels[card.dataset.category]||'');
-    var match=(title+' '+desc+' '+cat+' '+catLabel).includes(q);
-    if(match){
-      card.style.removeProperty('display');
+  // Search: show all sections, auto-expand those with matches
+  document.querySelectorAll('.accordion-section').forEach(function(section){
+    section.style.removeProperty('display');
+    var content=section.querySelector('.accordion-content');
+    var arrow=section.querySelector('.acc-arrow');
+    var hasMatch=false;
+    section.querySelectorAll('.mode-card').forEach(function(card){
+      var title=(card.dataset.title||'').toLowerCase();
+      var desc=(card.dataset.desc||'').toLowerCase();
+      var cat=(card.dataset.category||'').toLowerCase();
+      var catLabel=(catLabels[card.dataset.category]||'');
+      var match=(title+' '+desc+' '+cat+' '+catLabel).includes(q);
+      if(match){card.style.removeProperty('display');hasMatch=true;}
+      else{card.style.setProperty('display','none','important');}
+    });
+    if(hasMatch){
+      if(content){content.classList.add('open');}
+      if(arrow){arrow.style.transform='rotate(180deg)';}
     } else {
-      card.style.setProperty('display','none','important');
+      section.style.setProperty('display','none','important');
     }
   });
 }
 window.filterGames=filterGames;
 function filterByCategory(cat){
   if(typeof S!=='undefined')S.filterCat=cat;
-  // Update chip active states
-  document.querySelectorAll('.filter-chip').forEach(function(c){
-    var isActive=c.dataset.cat===cat;
-    c.classList.toggle('active',isActive);
-    c.style.background=isActive?'#3b82f6':'';
-    c.style.color=isActive?'#fff':'';
-    c.style.borderColor=isActive?'#3b82f6':'';
-  });
-  // Show/hide individual cards by data-category
-  document.querySelectorAll('#mainGamesGrid .mode-card').forEach(function(card){
-    if(cat==='all'||card.dataset.category===cat){
-      card.style.removeProperty('display');
+  document.querySelectorAll('.accordion-section').forEach(function(section){
+    var sectionCat=section.dataset.cat;
+    // Reset all cards in this section to visible
+    section.querySelectorAll('.mode-card').forEach(function(c){c.style.removeProperty('display');});
+    if(cat==='all'){
+      section.style.removeProperty('display');
+    } else if(sectionCat===cat){
+      section.style.removeProperty('display');
+      var content=section.querySelector('.accordion-content');
+      var arrow=section.querySelector('.acc-arrow');
+      if(content){content.classList.add('open');}
+      if(arrow){arrow.style.transform='rotate(180deg)';}
     } else {
-      card.style.setProperty('display','none','important');
+      section.style.setProperty('display','none','important');
     }
   });
-  // Clear search input
   var gs=document.getElementById('gameSearch');
   if(gs)gs.value='';
 }
 window.filterByCategory=filterByCategory;
+window.toggleAccordion=function(header,catId){
+  var content=header.nextElementSibling;
+  var arrow=header.querySelector('.acc-arrow');
+  var isOpen=content.classList.contains('open');
+  if(isOpen){
+    content.classList.remove('open');
+    if(arrow)arrow.style.transform='rotate(0deg)';
+  } else {
+    content.classList.add('open');
+    if(arrow)arrow.style.transform='rotate(180deg)';
+  }
+};
 
-// Apply default filter on load via DOMContentLoaded
+// Apply default filter on DOMContentLoaded
 document.addEventListener('DOMContentLoaded',function(){
   setTimeout(function(){
     window.filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
@@ -8545,10 +8559,11 @@ function renderHomeTab(){
   console.log("[GQ] renderHomeTab() filterCat=",S.filterCat);
   const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode"];
 
-  // Flat cards for ALL categories (no accordion)
-  const _flatCardsHTML=_CAT_ORDER.map(catId=>{
+  // Build accordion sections — Pure Geo auto-open, others closed
+  const _accordionHTML=_CAT_ORDER.map(catId=>{
     const cat=MODE_CATS[catId];if(!cat)return'';
     const unlocked=isCategoryUnlocked(catId);
+    const isDefault=catId===(S.filterCat||'pure_geo');
     const catModes=MODES.filter(m=>cat.modes.includes(m.id)&&!m.comingSoon);
     const cards=catModes.map(m=>{
       const cs=m.comingSoon===true;
@@ -8568,25 +8583,19 @@ function renderHomeTab(){
         <div class="mode-title" style="color:#fff">Album</div>
         <div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div>
       </div>`:'';
-    return cards+albumCard;
+    const lockPill=!unlocked?`<span style="font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:10px;margin-left:4px">\u{1F512} ${cat.cost?cat.cost.toLocaleString():'?'} Coins</span>`:'';
+    return`<div class="accordion-section" data-cat="${catId}"${!isDefault?' style="display:none"':''}>
+      <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')">
+        <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
+        <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
+      </div>
+      <div class="accordion-content${isDefault?' open':''}">
+        ${cards}${albumCard}
+      </div>
+    </div>`;
   }).join('');
-  // Filter chips (active chip = S.filterCat or 'pure_geo')
-  const _activeChip=(S.filterCat||'pure_geo');
-  const _chipDefs=[
-    {cat:'pure_geo',label:'\u{1F30D} Pure Geo'},
-    {cat:'lifestyle',label:'\u{1F3AD} Lifestyle'},
-    {cat:'eu_plates',label:'\u{1F697} Kennzeichen'},
-    {cat:'sport',label:'\u{1F3C6} Sport'},
-    {cat:'hl_compare',label:'\u{1F4CA} Höher/Niedriger'},
-    {cat:'comparisons',label:'⚖️ Vergleiche'},
-    {cat:'airports',label:'✈️ Airports'},
-    {cat:'neighbors',label:'\u{1F5FA}️ Nachbarn'},
-    {cat:'map_mode',label:'\u{1F5FA}️ Weltkarte'}
-  ];
-  const _chipsHTML='<button class="filter-chip'+(_activeChip==='all'?' active':'')+'" data-cat="all" onclick="window.filterByCategory(\'all\')" style="'+(_activeChip==='all'?'background:#3b82f6;color:#fff;border-color:#3b82f6':'')+'">Alle</button>'+
-    _chipDefs.map(c=>'<button class="filter-chip'+(c.cat===_activeChip?' active':'')+'" data-cat="'+c.cat+'" onclick="window.filterByCategory(\''+c.cat+'\')" style="'+(c.cat===_activeChip?'background:#3b82f6;color:#fff;border-color:#3b82f6':'')+'">'+(c.label)+'</button>').join('');
-  /* Dynamic Home Header */
 
+  /* Dynamic Home Header */
   const _li=sbUser&&sbProfile?.username;
   const _un=sbProfile?.username||(sbUser?.email?.split('@')[0]||'Gast');
   const _gc=(sbProfile?.geo_coins||0).toLocaleString();
@@ -8602,12 +8611,12 @@ function renderHomeTab(){
   const _homeHTML=`${_hdr}${renderDailyHero()}
     <div class="pvp-hero" onclick="S.mpModal=true;render()" role="button" aria-label="Live 1vs1 starten">
       <div style="display:flex;align-items:center;gap:14px">
-        <div style="font-size:2.2rem">\u2694\uFE0F</div>
+        <div style="font-size:2.2rem">⚔️</div>
         <div>
           <div style="font-size:1rem;font-weight:900;color:#fff">Live 1vs1 Duell</div>
           <div style="font-size:.74rem;color:rgba(255,255,255,.75);margin-top:2px">${t("home_pvp_sub")}</div>
         </div>
-        <div style="margin-left:auto;background:#7c3aed;color:#fff;border-radius:20px;padding:.3rem .85rem;font-size:.76rem;font-weight:700">\u25ba Spielen</div>
+        <div style="margin-left:auto;background:#7c3aed;color:#fff;border-radius:20px;padding:.3rem .85rem;font-size:.76rem;font-weight:700">► Spielen</div>
       </div>
     </div>
     <div style="background:linear-gradient(135deg,#4f46e5,#7c3aed);border-radius:14px;padding:.7rem 1rem;margin-bottom:.55rem;cursor:pointer;display:flex;align-items:center;gap:12px;box-shadow:0 2px 10px rgba(99,102,241,.25)" onclick="S.lvModal=true;S.lv=null;render()" role="button">
@@ -8615,18 +8624,17 @@ function renderHomeTab(){
       <div style="flex:1"><div style="font-size:.9rem;font-weight:900;color:#fff">Lokal 1:1 Hot-Seat</div><div style="font-size:.7rem;color:rgba(255,255,255,.75)">Zwei Spieler · Ein Gerät · 10 Runden</div></div>
       <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:.25rem .75rem;font-size:.72rem;font-weight:700">► Los</div>
     </div>
-
-    <div class="menu-search-container" style="display:flex;gap:10px;margin:15px;align-items:center;flex-wrap:nowrap">
+    <div class="menu-search-container" style="display:flex;gap:8px;margin:15px 15px 12px;align-items:center;flex-wrap:nowrap">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">
+      <button onclick="" style="background:var(--bg2);color:#ef4444;border:2px solid var(--border);padding:10px 12px;border-radius:10px;font-size:1.1rem;cursor:pointer;flex-shrink:0;line-height:1" title="Favoriten (demnächst)">❤️</button>
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
-    <div class="filter-chips-container">${_chipsHTML}</div>
-    <div id="mainGamesGrid">${_flatCardsHTML}</div>
+    <div id="mainGamesGrid" style="padding:0 15px">${_accordionHTML}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>
       <button class="diff-btn ${S.diff==="hardcore"?"active":""}" onclick="S.diff='hardcore';render()">Hardcore</button>
-      <button class="diff-btn ${S.diff==="survival"?"active":""}" onclick="S.diff='survival';render()">\ud83d\udc80 Survival</button>
+      <button class="diff-btn ${S.diff==="survival"?"active":""}" onclick="S.diff='survival';render()">💀 Survival</button>
     </div>
     <p style="text-align:center;color:var(--text2);font-size:.72rem;font-weight:600;margin:.3rem 0 .5rem">${
       t(S.diff==="casual"?"diff_desc_casual":S.diff==="hardcore"?"diff_desc_hc":"diff_desc_surv")
@@ -8636,8 +8644,6 @@ function renderHomeTab(){
   console.log("[GQ] renderHomeTab() returning length:",_homeHTML.length);
   return _homeHTML;
 }
-
-/* LERNEN TAB – Flashcards (Phase 23C) */
 function renderLernenTab(){
   const pool=(()=>{
     let p=PLATES_DATA;
