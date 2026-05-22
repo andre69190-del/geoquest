@@ -2559,6 +2559,35 @@ const MODES=[
   {id:"climate_quiz",   icon:"\u{1F321}\uFE0F",title:"Klima-Krimi",          group:"airports",prompt:"Welches Land versteckt sich hinter diesen Klima-Hinweisen?", desc:"Land anhand von Klima-Clues erraten"},
   {id:"flagcolor", icon:"\u{1F6A9}",title:"Flaggen-Farben",              group:"airports",prompt:"Welche Farbe fehlt in dieser Flagge?",     desc:"Flaggenfarben auswendig kennen"},
   {id:"landlocked_quiz",icon:"\u{1F30A}",title:"Binnenstaat?",                 group:"airports",prompt:"Welches Land hat keinen Meereszugang?",    desc:"Binnenstaaten von K\u00fcstenl\u00e4ndern unterscheiden"},
+  /* Phase 166: 28 BETA modes */
+  {id:"b1", icon:"\u26BD",title:"\u{1F9EA} Ausreisser-Farben",    group:"sport",   prompt:"Welches Land traegt unerwartete Trikotfarben?",      desc:"Trikotfarben vs. Flaggenfarben"},
+  {id:"b2", icon:"\u{1F3CE}",title:"\u{1F9EA} F1-Spotter",           group:"sport",   prompt:"In welchem Land liegt diese Rennstrecke?",             desc:"Formel-1-Strecken auf der Karte finden"},
+  {id:"b4", icon:"\u{1F3C5}",title:"\u{1F9EA} Olympia-Zeitmaschine",group:"sport",   prompt:"Wer war Gastgeber der Sommerspiele?",                   desc:"Olympia-Gastgeberlaender erraten"},
+  {id:"b6", icon:"\u{1F94A}",title:"\u{1F9EA} Nationalsportarten",   group:"sport",   prompt:"Aus welchem Land stammt dieser Sport?",                desc:"Nationale Sportarten zuordnen"},
+  {id:"b7", icon:"\u{1F3DF}",title:"\u{1F9EA} Hoehenluft-Stadien",  group:"sport",   prompt:"Welches Stadion liegt hoeher?",                         desc:"Stadien nach Hoehe vergleichen"},
+  {id:"b9", icon:"\u{1F30D}",title:"\u{1F9EA} Sport-Ursprung",       group:"sport",   prompt:"Wo wurde diese Sportart erfunden?",                    desc:"Geburtsort von Sportarten kennen"},
+  {id:"b11",icon:"\u2694\uFE0F",title:"\u{1F9EA} Rivalen-Distanz",  group:"sport",   prompt:"Wie weit liegen Derby-Gegner auseinander?",             desc:"Entfernung zwischen Rivalenstadien schaetzen"},
+  {id:"b17",icon:"\u{1F947}",title:"\u{1F9EA} Medaillen-Spiegel",    group:"sport",   prompt:"Welches Land hat mehr Winter-Gold?",                   desc:"Winter-Olympia-Goldmedaillen vergleichen"},
+  {id:"b19",icon:"\u274C",   title:"\u{1F9EA} WM-Fehltritte",         group:"sport",   prompt:"Wer war nie bei der WM dabei?",                        desc:"Laender die sich nie qualifiziert haben"},
+  {id:"b20",icon:"\u{1F3C6}",title:"\u{1F9EA} Sport-Wappen",          group:"sport",   prompt:"Zu welcher Stadt gehoert dieses Team?",                desc:"Sport-Teams ihrer Heimat zuordnen"},
+  {id:"b21",icon:"\u{1F5FA}",title:"\u{1F9EA} Sandwich-Laender",     group:"neighbors",prompt:"Welches Land ist von diesen umschlossen?",            desc:"Eingeschlossene Laender erkennen"},
+  {id:"b22",icon:"\u{1F697}",title:"\u{1F9EA} Transit-Route",         group:"neighbors",prompt:"Welches Land muss man durchqueren?",                  desc:"Pflicht-Transitlaender kennen"},
+  {id:"b23",icon:"\u{1F30A}",title:"\u{1F9EA} Kueste oder Inland?",  group:"neighbors",prompt:"Hat dieser Nachbarstaat Meereszugang?",              desc:"Binnenstaaten vs. Kuestenlaender"},
+  {id:"b25",icon:"\u{1F914}",title:"\u{1F9EA} Fehlender Nachbar",     group:"neighbors",prompt:"Welcher Nachbar fehlt in der Liste?",                 desc:"Vollstaendige Nachbarschaftslisten kennen"},
+  {id:"b29",icon:"\u{1F4CF}",title:"\u{1F9EA} Laengste Grenze",       group:"neighbors",prompt:"Mit wem teilt dieses Land die laengste Grenze?",      desc:"Laengste Landgrenzen kennen"},
+  {id:"b37",icon:"\u{1F4CD}",title:"\u{1F9EA} Hauptstadt-Naehe",      group:"neighbors",prompt:"Welches Hauptstadtpaar liegt naeher beieinander?",    desc:"Entfernung zwischen Hauptstaedten vergleichen"},
+  {id:"b40",icon:"\u{1F91D}",title:"\u{1F9EA} Meiste Nachbarn",       group:"neighbors",prompt:"Welches Land hat mehr Landgrenzen?",                  desc:"Anzahl der Landgrenzen vergleichen"},
+  {id:"b41",icon:"\u{1F310}",title:"\u{1F9EA} Aequator-Schuetze",    group:"map_mode",prompt:"Klicke auf ein Aequator-Land",                          desc:"Aequatorlaender auf der Karte finden"},
+  {id:"b42",icon:"\u{1F333}",title:"\u{1F9EA} Klimazonen-Spotter",    group:"map_mode",prompt:"Finde das Land mit Tropenwald",                         desc:"Tropenwaldlaender auf der Karte anklicken"},
+  {id:"b44",icon:"\u{1F9ED}",title:"\u{1F9EA} Breitengrad-Duell",    group:"map_mode",prompt:"Was liegt weiter noerdlich?",                            desc:"Breitengrade schätzen"},
+  {id:"b45",icon:"\u26A1",   title:"\u{1F9EA} E-Mobility-Hotspot",    group:"map_mode",prompt:"Klicke auf das EV-fuehrende Land",                      desc:"Elektromobilitaets-Vorreiterlaender"},
+  {id:"b46",icon:"\u{1F4A7}",title:"\u{1F9EA} Naturwunder-Spotter",   group:"map_mode",prompt:"Wo liegen diese Naturwunder?",                           desc:"Naturwunder auf der Weltkarte finden"},
+  {id:"b47",icon:"\u{1F573}\uFE0F",title:"\u{1F9EA} Antipoden-Loch", group:"map_mode",prompt:"Wo kommst du auf der anderen Seite heraus?",             desc:"Antipoden der Erde kennen"},
+  {id:"b51",icon:"\u{1F3DC}",title:"\u{1F9EA} Wuesten-Fokus",         group:"map_mode",prompt:"Klicke auf das Wuestenland",                             desc:"Grosse Wuesten auf der Karte lokalisieren"},
+  {id:"b53",icon:"\u{1F6A2}",title:"\u{1F9EA} Meerengen & Kanaele",  group:"map_mode",prompt:"In welchem Land liegt dieser Kanal?",                   desc:"Wichtige Wasserstrassen kennen"},
+  {id:"b54",icon:"\u{1F3D4}",title:"\u{1F9EA} Gipfel-Spotter",        group:"map_mode",prompt:"Klicke auf das Land mit dem hoechsten Berg",             desc:"Berge ihren Laendern zuordnen"},
+  {id:"b58",icon:"\u{1F30A}",title:"\u{1F9EA} See-Spotter",            group:"map_mode",prompt:"Klicke auf das Land am grossen See",                    desc:"Grosse Seen auf der Karte finden"},
+  {id:"b60",icon:"\u{1F303}",title:"\u{1F9EA} Nacht-Satellit",         group:"map_mode",prompt:"Welche Region leuchtet nachts am hellsten?",             desc:"Lichtintensitaet auf Satellitenkarten"}
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
@@ -2569,9 +2598,9 @@ const MODE_CATS={
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
-  neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
-  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital"],cost:0},
-  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm"],cost:0},
+  neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40"],cost:0},
+  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60"],cost:0},
+  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
@@ -5040,6 +5069,212 @@ function genFootballQ(mode){
   }
   return null;
 }
+
+/* Phase 166 — BETA_GAMEDATA: 28 beta game modes */
+const BETA_GAMEDATA={
+b1:[
+  {q:"Welches Land spielt in Orange, obwohl die Flagge Rot/Weiß/Blau zeigt?",a:"Netherlands",fakes:["Belgium","Denmark","Croatia"]},
+  {q:"Welches Land trägt den Spitznamen 'Azzurri' und spielt in Blau (nicht in der Flagge)?",a:"Italy",fakes:["France","Greece","Portugal"]},
+  {q:"Welches Land ist für seine komplett schwarzen Rugby-Trikots ('All Blacks') weltberühmt?",a:"New Zealand",fakes:["Australia","South Africa","England"]},
+  {q:"Welches Land spielte in Weiß als Heimtrikot, obwohl die Flagge Schwarz/Rot/Gold trägt?",a:"Germany",fakes:["Austria","Poland","Switzerland"]}
+],
+b2:[
+  {q:"Silverstone – Heimat des Britischen Grand Prix. Klicke auf das Land.",answer:"United Kingdom"},
+  {q:"Interlagos – Heimat des Brasilianischen Grand Prix. Klicke auf das Land.",answer:"Brazil"},
+  {q:"Monza – Heimat des Italienischen Grand Prix. Klicke auf das Land.",answer:"Italy"},
+  {q:"Suzuka – Heimat des Japanischen Grand Prix. Klicke auf das Land.",answer:"Japan"},
+  {q:"Spa-Francorchamps – Heimat des Belgischen Grand Prix. Klicke auf das Land.",answer:"Belgium"}
+],
+b4:[
+  {q:"Welches Land war Gastgeber der Sommer-Olympiade 1996 (Atlanta)?",a:"United States",fakes:["Australia","Greece","Japan"]},
+  {q:"Welches Land richtete die Sommerspiele 2004 aus?",a:"Greece",fakes:["Australia","Spain","China"]},
+  {q:"Welches Land war Gastgeber der Sommerspiele 2016 (Rio)?",a:"Brazil",fakes:["Argentina","Japan","United States"]},
+  {q:"Welches Land richtete die Sommerspiele 2012 (London) aus?",a:"United Kingdom",fakes:["France","Germany","Spain"]},
+  {q:"Welches Land war Gastgeber der Sommerspiele 2008 (Peking)?",a:"China",fakes:["Japan","South Korea","India"]}
+],
+b6:[
+  {q:"Sumo ist die traditionelle Nationalsportart von ...?",a:"Japan",fakes:["China","South Korea","Mongolia"]},
+  {q:"Taekwondo wurde als moderner Sport in welchem Land entwickelt?",a:"South Korea",fakes:["Japan","China","Thailand"]},
+  {q:"Capoeira stammt ursprünglich aus ...?",a:"Brazil",fakes:["Angola","Cuba","Colombia"]},
+  {q:"Kabaddi gilt als inoffizieller Nationalsport von ...?",a:"India",fakes:["Bangladesh","Pakistan","Sri Lanka"]},
+  {q:"Welches Land gilt als Geburtsort des modernen Fußballs (FA-Regeln 1863)?",a:"England",fakes:["Germany","Scotland","Italy"]}
+],
+b7:[
+  {nameA:"Hernando Siles (La Paz)",nameB:"Allianz Arena (München)",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",ans:"Hernando Siles (La Paz)",metaA:"3.637 m",metaB:"517 m"},
+  {nameA:"Estadio Azteca (Mexiko-Stadt)",nameB:"Camp Nou (Barcelona)",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",ans:"Estadio Azteca (Mexiko-Stadt)",metaA:"2.210 m",metaB:"57 m"},
+  {nameA:"Stade de Suisse (Bern)",nameB:"Anfield (Liverpool)",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",ans:"Stade de Suisse (Bern)",metaA:"572 m",metaB:"26 m"},
+  {nameA:"Türk Telekom Stadyum (Istanbul)",nameB:"Wembley (London)",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",ans:"Türk Telekom Stadyum (Istanbul)",metaA:"212 m",metaB:"35 m"}
+],
+b9:[
+  {q:"Wo wurde Basketball erfunden (1891, James Naismith)?",a:"United States",fakes:["Canada","England","Australia"]},
+  {q:"In welchem Land entstand Judo als moderner Kampfsport (Kodokan, 1882)?",a:"Japan",fakes:["China","South Korea","Thailand"]},
+  {q:"Wo wurde Tischtennis (Ping-Pong) in den 1880ern erfunden?",a:"England",fakes:["China","Japan","Germany"]},
+  {q:"Volleyball wurde 1895 in welchem Land erfunden?",a:"United States",fakes:["Brazil","Canada","Germany"]},
+  {q:"Welches Land gilt als Geburtsort des modernen Rugby (Rugby School, 1823)?",a:"England",fakes:["France","Ireland","Scotland"]}
+],
+b11:[
+  {q:"Wie weit liegen Dortmund (Signal Iduna Park) und Schalke (Veltins-Arena) auseinander?",a:"Ca. 25 km",fakes:["Ca. 3 km","Ca. 100 km","Ca. 200 km"]},
+  {q:"Wie weit trennt Old Trafford (Man Utd) vom Etihad Stadium (Man City)?",a:"Ca. 4 km",fakes:["Ca. 500 m","Ca. 25 km","Ca. 15 km"]},
+  {q:"Wie weit sind Bernabéu (Real Madrid) und Metropolitano (Atlético)?",a:"Ca. 7 km",fakes:["Ca. 1 km","Ca. 30 km","Ca. 50 km"]},
+  {q:"Wie weit liegen La Bombonera (Boca Juniors) und El Monumental (River Plate) auseinander?",a:"Ca. 12 km",fakes:["Ca. 500 m","Ca. 50 km","Ca. 2 km"]}
+],
+b17:[
+  {nameA:"Norway",nameB:"Germany",prompt:"Welches Land hat mehr Winter-Olympia-Gold?",ans:"Norway",metaA:"ca. 148 Gold",metaB:"ca. 92 Gold"},
+  {nameA:"United States",nameB:"France",prompt:"Welches Land hat mehr Winter-Olympia-Gold?",ans:"United States",metaA:"ca. 107 Gold",metaB:"ca. 36 Gold"},
+  {nameA:"Norway",nameB:"Sweden",prompt:"Welches Land hat mehr Winter-Olympia-Gold?",ans:"Norway",metaA:"ca. 148 Gold",metaB:"ca. 57 Gold"},
+  {nameA:"Austria",nameB:"Netherlands",prompt:"Welches Land hat mehr Winter-Olympia-Gold?",ans:"Austria",metaA:"ca. 70 Gold",metaB:"ca. 45 Gold"}
+],
+b19:[
+  {q:"Welches Riesenland hat sich NOCH NIE für eine Fußball-WM qualifiziert?",a:"India",fakes:["Brazil","China","Mexico"]},
+  {q:"Welches europäische Schwergewicht scheiterte an der WM-Quali für Russland 2018?",a:"Italy",fakes:["Germany","Spain","France"]},
+  {q:"Welches Land qualifizierte sich bisher nur EINMAL für eine WM (2002)?",a:"China",fakes:["Japan","South Korea","Australia"]},
+  {q:"Welches Land scheiterte erneut an der WM-Quali für Katar 2022?",a:"Italy",fakes:["Portugal","Netherlands","Sweden"]}
+],
+b20:[
+  {q:"In welcher Stadt spielt das NBA-Team 'Lakers'?",a:"Los Angeles",fakes:["Chicago","Boston","Miami"]},
+  {q:"In welchem Land spielen die 'Springboks' Rugby?",a:"South Africa",fakes:["New Zealand","Australia","Argentina"]},
+  {q:"Das Baseball-Team 'Yankees' kommt aus ...?",a:"New York",fakes:["Chicago","Los Angeles","Boston"]},
+  {q:"In welchem Land spielt das Cricket-Team der 'Baggy Greens'?",a:"Australia",fakes:["England","India","South Africa"]}
+],
+b21:[
+  {q:"Welches Land ist komplett vom Territorium Italiens umschlossen (kein Meereszugang)?",a:"San Marino",fakes:["Monaco","Liechtenstein","Andorra"]},
+  {q:"Welches afrikanische Land ist vollständig von Südafrika umschlossen?",a:"Lesotho",fakes:["Eswatini","Botswana","Zambia"]},
+  {q:"Welches kleine Land liegt zwischen Deutschland, Österreich und der Schweiz?",a:"Liechtenstein",fakes:["Luxembourg","Andorra","Monaco"]},
+  {q:"Welches kleine Land grenzt genau an Belgien, Frankreich und Deutschland?",a:"Luxembourg",fakes:["Liechtenstein","Andorra","San Marino"]}
+],
+b22:[
+  {q:"Von Deutschland nach Kaliningrad (Russland) fährt man auf Landweg zwingend durch ...?",a:"Poland",fakes:["Czech Republic","Ukraine","Lithuania"]},
+  {q:"Von Frankreich nach Spanien durch die Pyrenäen liegt welcher Kleinstaat auf dem Weg?",a:"Andorra",fakes:["Monaco","Liechtenstein","San Marino"]},
+  {q:"Von Österreich in Richtung Türkei (direkter Landweg) kommt man zwingend durch ...?",a:"Hungary",fakes:["Poland","Switzerland","Italy"]},
+  {q:"Von Norwegen nach Portugal fährt man zwingend durch (südlichster Pflichtstaat) ...?",a:"Spain",fakes:["Belgium","Austria","Hungary"]}
+],
+b23:[
+  {q:"Hat die Schweiz einen direkten Zugang zum Meer?",a:"Nein – Binnenstaat",fakes:["Ja, via Bodensee","Ja, via Mittelmeer","Ja, via Rhein-Delta"]},
+  {q:"Hat Österreich einen Zugang zum Meer?",a:"Nein – Binnenstaat seit 1918",fakes:["Ja, Adria","Ja, Nordsee","Ja, Schwarzes Meer"]},
+  {q:"Hat Bolivien aktuell einen Meereszugang?",a:"Nein – Pazifik-Zugang 1879 verloren",fakes:["Ja, Pazifik","Ja, Atlantik","Ja, via Amazonas"]},
+  {q:"Hat die Mongolei einen Meereszugang?",a:"Nein – doppelt eingeschlossen",fakes:["Ja, Beringmeer","Ja, Chinesisches Meer","Ja, Kaspisee"]}
+],
+b25:[
+  {q:"Welcher Nachbar fehlt? Deutschland grenzt an: Dänemark, Polen, Tschechien, Österreich, Schweiz, Frankreich, Luxemburg, Belgien ...",a:"Netherlands",fakes:["Hungary","Slovakia","Slovenia"]},
+  {q:"Welcher Nachbar fehlt? Frankreich grenzt an: Belgien, Luxemburg, Deutschland, Schweiz, Italien, Monaco, Andorra ...",a:"Spain",fakes:["Portugal","Netherlands","Austria"]},
+  {q:"Welcher Nachbar fehlt? Polen grenzt an: Deutschland, Tschechien, Ukraine, Belarus, Russland, Litauen ...",a:"Slovakia",fakes:["Latvia","Moldova","Romania"]},
+  {q:"Welcher Nachbar fehlt? Türkei grenzt an: Griechenland, Bulgarien, Georgien, Armenien, Iran, Irak, Syrien ...",a:"Azerbaijan",fakes:["Russia","Ukraine","Kazakhstan"]}
+],
+b29:[
+  {q:"Mit welchem Land teilt Russland seine längste Landgrenze (~7.644 km)?",a:"Kazakhstan",fakes:["China","Mongolia","Belarus"]},
+  {q:"Mit welchem Land teilt China seine längste Landgrenze (~4.677 km)?",a:"Mongolia",fakes:["Russia","India","Kazakhstan"]},
+  {q:"Mit welchem Land teilt Indien seine längste Landgrenze (~4.156 km)?",a:"Bangladesh",fakes:["Pakistan","China","Nepal"]},
+  {q:"Mit welchem Land teilt Brasilien seine längste Landgrenze (~3.423 km)?",a:"Bolivia",fakes:["Argentina","Venezuela","Peru"]}
+],
+b37:[
+  {nameA:"Wien–Bratislava",nameB:"Paris–Madrid",prompt:"Welches Hauptstadtpaar liegt NAEHER beieinander?",ans:"Wien–Bratislava",metaA:"ca. 55 km",metaB:"ca. 1.274 km"},
+  {nameA:"Berlin–Warschau",nameB:"London–Dublin",prompt:"Welches Hauptstadtpaar liegt NAEHER beieinander?",ans:"London–Dublin",metaA:"ca. 574 km",metaB:"ca. 464 km"},
+  {nameA:"Lissabon–Madrid",nameB:"Prag–Wien",prompt:"Welches Hauptstadtpaar liegt NAEHER beieinander?",ans:"Prag–Wien",metaA:"ca. 503 km",metaB:"ca. 293 km"},
+  {nameA:"Oslo–Stockholm",nameB:"Rom–Berlin",prompt:"Welches Hauptstadtpaar liegt NAEHER beieinander?",ans:"Oslo–Stockholm",metaA:"ca. 416 km",metaB:"ca. 1.539 km"}
+],
+b40:[
+  {nameA:"China",nameB:"Brazil",prompt:"Welches Land hat mehr direkte Landgrenzen?",ans:"China",metaA:"14 Nachbarn",metaB:"10 Nachbarn"},
+  {nameA:"Germany",nameB:"France",prompt:"Welches Land hat mehr direkte Landgrenzen?",ans:"Germany",metaA:"9 Nachbarn",metaB:"8 Nachbarn"},
+  {nameA:"Russia",nameB:"United States",prompt:"Welches Land hat mehr direkte Landgrenzen?",ans:"Russia",metaA:"16 Nachbarn",metaB:"2 Nachbarn"},
+  {nameA:"Brazil",nameB:"Australia",prompt:"Welches Land hat mehr direkte Landgrenzen?",ans:"Brazil",metaA:"10 Nachbarn",metaB:"0 Nachbarn"}
+],
+b41:[
+  {q:"Klicke auf ein Land das vom Aequator durchquert wird (Tipp: Westafrika).",answer:"Gabon"},
+  {q:"Klicke auf ein Land das vom Aequator durchquert wird (Tipp: Suedamerika).",answer:"Brazil"},
+  {q:"Klicke auf ein Land das vom Aequator durchquert wird (Tipp: Suedostasien).",answer:"Indonesia"},
+  {q:"Klicke auf ein Land das vom Aequator durchquert wird (Tipp: Ostafrika).",answer:"Kenya"}
+],
+b42:[
+  {q:"Klicke auf das Land mit dem groessten Tropenwald der Welt (Amazonas).",answer:"Brazil"},
+  {q:"Klicke auf das suedostasiatische Land mit riesigen Tropenwaelder (Borneo/Sumatra).",answer:"Indonesia"},
+  {q:"Klicke auf dieses suedamerikanische Land – bekannt fuer Artenvielfalt und Tropenwald.",answer:"Colombia"},
+  {q:"Klicke auf das zentralafrikanische Land mit dem zweitgroessten Tropenwald der Welt.",answer:"Dem. Rep. Congo"}
+],
+b44:[
+  {q:"Was liegt weiter NOERDLICH: Rom oder New York?",a:"Rome (41.9N)",fakes:["New York (40.7N)","Beide gleich (40N)","Madrid (40.4N)"]},
+  {q:"Was liegt weiter NOERDLICH: Madrid oder Peking?",a:"Madrid (40.4N)",fakes:["Beijing (39.9N)","Beide gleich","Tokyo (35.7N)"]},
+  {q:"Was liegt weiter NOERDLICH: Moskau oder Oslo?",a:"Oslo (59.9N)",fakes:["Moscow (55.8N)","Beide gleich","Helsinki (60.2N)"]},
+  {q:"Was liegt weiter SUEDLICH: Sydney oder Buenos Aires?",a:"Buenos Aires (34.6S)",fakes:["Sydney (33.9S)","Beide gleich","Cape Town (33.9S)"]}
+],
+b45:[
+  {q:"Welches skandinavische Land hat den hoechsten EV-Neuwagen-Marktanteil (ueber 80 Prozent)?",answer:"Norway"},
+  {q:"Welches Land fuehrt weltweit bei der Gesamtzahl zugelassener Elektrofahrzeuge?",answer:"China"},
+  {q:"Welches europaeische Land hat die hoechste EV-Ladesaeulendichte pro km Strassennetz?",answer:"Netherlands"},
+  {q:"In welchem nordeuropaeischen Land war der EV-Marktanteil 2023 weltweit am hoechsten?",answer:"Norway"}
+],
+b46:[
+  {q:"Die Iguazu-Wasserfall-Anlage liegt an der Grenze von Argentinien und Brasilien. Klicke auf Argentinien.",answer:"Argentina"},
+  {q:"Der Grand Canyon liegt in welchem Land? Klicke auf die Karte.",answer:"United States of America"},
+  {q:"Das Great Barrier Reef liegt vor der Kueste welches Landes?",answer:"Australia"},
+  {q:"Der Kilimandscharo (hoechster Berg Afrikas) liegt in welchem Land?",answer:"Tanzania"}
+],
+b47:[
+  {q:"Wenn du in Spanien ein Loch durch den Erdmittelpunkt graebst, wo kommst du heraus?",a:"Pazifischer Ozean (nahe Neuseeland)",fakes:["In Australien","In China","In Argentinien"]},
+  {q:"Wenn du in Neuseeland durch die Erde graebst, wo kommst du heraus?",a:"Spanien / Portugal",fakes:["Brasilien","Marokko","Groenland"]},
+  {q:"Die Antipode von Peking liegt in der Naehe von ...?",a:"Patagonien (Argentinien/Chile)",fakes:["Australien","Atlantik","Madagaskar"]},
+  {q:"Die Antipode von Brasilien liegt im ...?",a:"Indischen Ozean / Suedostasien",fakes:["Atlantik","Suedafrika","Australien"]}
+],
+b51:[
+  {q:"Klicke auf das Land mit der Atacama-Wueste (trockenste Wueste der Welt).",answer:"Chile"},
+  {q:"Klicke auf das Land in dem die Namib-Wueste liegt.",answer:"Namibia"},
+  {q:"Klicke auf das Land in dem die Gobi-Wueste hauptsaechlich liegt.",answer:"Mongolia"},
+  {q:"Klicke auf das Land mit dem groessten Teil der Sahara-Wueste.",answer:"Algeria"}
+],
+b53:[
+  {q:"In welchem Land liegt der Panama-Kanal?",a:"Panama",fakes:["Mexico","Costa Rica","Colombia"]},
+  {q:"Die Strasse von Gibraltar liegt an den Kuesten von zwei Laendern. Welche?",a:"Spain und Morocco",fakes:["Portugal und Algeria","France und Tunisia","Gibraltar und Libya"]},
+  {q:"In welchem Land liegt der Suezkanal?",a:"Egypt",fakes:["Israel","Jordan","Saudi Arabia"]},
+  {q:"Die Strasse von Malakka liegt zwischen welchen Laendern?",a:"Malaysia und Indonesia",fakes:["India und Sri Lanka","Thailand und Vietnam","Philippines und China"]}
+],
+b54:[
+  {q:"Klicke auf das Land in dem der Mount Everest (8.849 m) liegt.",answer:"Nepal"},
+  {q:"Klicke auf das Land in dem der Elbrus (hoechster Berg Europas 5.642 m) liegt.",answer:"Russia"},
+  {q:"Klicke auf das Land in dem der Kilimandscharo (hoechster Berg Afrikas 5.895 m) liegt.",answer:"Tanzania"},
+  {q:"Klicke auf das Land in dem der Aconcagua (hoechster Berg Suedamerikas 6.961 m) liegt.",answer:"Argentina"}
+],
+b58:[
+  {q:"Klicke auf Tansania – eines der drei Laender am Viktoriasee (groesster See Afrikas).",answer:"Tanzania"},
+  {q:"Klicke auf das Land mit dem groessten Kuestenanteil am Kaspischen Meer.",answer:"Russia"},
+  {q:"Klicke auf das suedamerikanische Land mit dem groesseren Anteil am Titicacasee.",answer:"Peru"},
+  {q:"Klicke auf das Land in dem der Baikalsee (tiefster See der Welt 1.642 m) liegt.",answer:"Russia"}
+],
+b60:[
+  {q:"Welche Region leuchtet auf Nachtsatellitenaufnahmen am hellsten?",a:"Westeuropa und US-Ostkueste",fakes:["Sahara-Region","Amazonasbecken","Zentralasien"]},
+  {q:"Welches Land hat einen dunklen Norden und hellen Sueden (von Satelliten sichtbar)?",a:"North Korea vs. South Korea",fakes:["China vs. Mongolia","Egypt vs. Sudan","Mexico vs. Guatemala"]},
+  {q:"Welcher Kontinent leuchtet pro Flaeche am schwaechsten auf Nacht-Satellitenaufnahmen?",a:"Africa",fakes:["Australia","South America","Antarctica"]},
+  {q:"Welcher isolierte Lichtpunkt leuchtet mitten im Nordatlantik von Satelliten sichtbar?",a:"Iceland (Reykjavik)",fakes:["Azores (Portugal)","Faroe Islands","Greenland"]}
+]
+};
+
+/* Phase 166: genBetaMCQ */
+function genBetaMCQ(bId){
+  const pool=BETA_GAMEDATA["b"+bId];
+  if(!pool||!pool.length)return null;
+  const d=pool[~~(rng()*pool.length)];
+  if(!d||!d.a||!d.fakes)return null;
+  const opts=sh([d.a,...d.fakes.slice(0,3)]);
+  return{type:"beta_mcq",prompt:"\u{1F9EA} [BETA] "+d.q,subj:d.subj||"",ans:d.a,opts,meta:d.meta||"",lid:"bmcq_"+bId,cc:ccFromCountry(d.a)||"de"};
+}
+
+/* Phase 166: genBetaHL */
+function genBetaHL(bId){
+  const pool=BETA_GAMEDATA["b"+bId];
+  if(!pool||!pool.length)return null;
+  const d=pool[~~(rng()*pool.length)];
+  if(!d||!d.nameA||!d.nameB)return null;
+  const meta=d.nameA+": "+(d.metaA||"?")+" \u00b7 "+d.nameB+": "+(d.metaB||"?");
+  return{type:"beta_hl",prompt:"\u{1F9EA} [BETA] "+(d.prompt||"Welches ist mehr?"),subj:"",opts:[d.nameA,d.nameB],ans:d.ans,meta,lid:"bhl_"+bId,cc:ccFromCountry(d.ans)||"de"};
+}
+
+/* Phase 166: genBetaSpotter */
+function genBetaSpotter(bId){
+  const pool=BETA_GAMEDATA["b"+bId];
+  if(!pool||!pool.length)return null;
+  const d=pool[~~(rng()*pool.length)];
+  if(!d||!d.answer)return null;
+  return{type:"beta_spotter",prompt:"\u{1F9EA} [BETA] Weltkarte",subj:d.q,ans:d.answer,opts:[],meta:"",lid:"bspot_"+bId,cc:ccFromCountry(d.answer)||"de"};
+}
+
 const GEN={
   city:genCityQ,flag:genFlagQ,capital:genCapitalQ,river:genRiverQ,
   landmark:genLandmarkQ,park:genParkQ,unesco:genUnescoQ,citymark:genCitymarkQ,
@@ -5098,6 +5333,18 @@ const GEN={
   stadium:()=>genFootballQ("stadium"),
   jersey:()=>genFootballQ("jersey"),
   crest:()=>genFootballQ("crest"),
+  /* Phase 166: 28 beta modes */
+  b1:()=>genBetaMCQ(1),b2:()=>genBetaSpotter(2),b4:()=>genBetaMCQ(4),
+  b6:()=>genBetaMCQ(6),b7:()=>genBetaHL(7),b9:()=>genBetaMCQ(9),
+  b11:()=>genBetaMCQ(11),b17:()=>genBetaHL(17),b19:()=>genBetaMCQ(19),
+  b20:()=>genBetaMCQ(20),
+  b21:()=>genBetaMCQ(21),b22:()=>genBetaMCQ(22),b23:()=>genBetaMCQ(23),
+  b25:()=>genBetaMCQ(25),b29:()=>genBetaMCQ(29),b37:()=>genBetaHL(37),
+  b40:()=>genBetaHL(40),
+  b41:()=>genBetaSpotter(41),b42:()=>genBetaSpotter(42),b44:()=>genBetaMCQ(44),
+  b45:()=>genBetaSpotter(45),b46:()=>genBetaSpotter(46),b47:()=>genBetaMCQ(47),
+  b51:()=>genBetaSpotter(51),b53:()=>genBetaMCQ(53),b54:()=>genBetaSpotter(54),
+  b58:()=>genBetaSpotter(58),b60:()=>genBetaMCQ(60),
 };
 
 /* GAME LOOP */
@@ -6420,7 +6667,7 @@ app.innerHTML=`<div class="scr">
         </div>
       </div>
       ${sel!==null?`<div class="qmeta" style="text-align:center;margin:.3rem 0 .1rem;font-size:.77rem">${q.meta||""}</div>`:""}`;
-  }else if(q.type&&(q.type.startsWith('comp_')||q.type.startsWith('hl_b_'))){
+  }else if(q.type&&(q.type.startsWith('comp_')||q.type.startsWith('hl_b_')||q.type==='beta_hl')){
     /* Phase 102-A: Flaggen-Header + Prompt, Werte nach Antwort */
     /* HL_BETA opts are German names → look up cc via HL_BETA_CC */
     const _hlbCC=o=>q.type&&q.type.startsWith('hl_b_')?HL_BETA_CC[o]||null:null;
@@ -6527,6 +6774,33 @@ app.innerHTML=`<div class="scr">
     requestAnimationFrame(()=>drawWorldMap(q.ans,sel,ok));
     return;
   }
+  /* Phase 166: beta_spotter early-return (map click, like map_guess) */
+  if(q.type==="beta_spotter"){
+    const mapFb=sel===null?"":ok
+      ?`<div class="fb ok">\u2713 Richtig! +${pts}</div>`
+      :`<div class="fb ng">\u2717 Falsch \u2192 ${esc(q.ans)}</div>`;
+    app.innerHTML=`<div class="scr map-scr">
+      <div class="hud">
+        <div style="display:flex;gap:8px;align-items:center">
+          <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
+          ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          ${diff==="survival"
+            ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
+            :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
+          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">\u{1F6AA} Beenden</button>
+        </div>
+      </div>
+      <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
+      <div class="map-prompt">\u{1F9EA} ${esc(q.subj)}</div>
+      <div id="gq-map-svg" class="map-container"></div>
+      ${mapFb}
+      ${sel!==null?`<button class="btn-p map-weiter" onclick="clr();nextRound()">Weiter \u2192</button>`:""}
+    </div>`;
+    requestAnimationFrame(()=>drawWorldMap(q.ans,sel,ok));
+    return;
+  }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
   const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
@@ -6582,7 +6856,7 @@ app.innerHTML=`<div class="scr">
   /* Power-up bar (Phase 26) */
   const pu=loadPU();
   /* P136-fix: 50/50 disabled for comp_ modes -- pre-declared vars, no nested escaping */
-  const _is2ans=S.q&&S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_'));
+  const _is2ans=S.q&&S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_')||S.q.type==='beta_hl');
   const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
   const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
   const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';

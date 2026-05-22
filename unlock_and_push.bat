@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "SECURITY: Secret token auth for answer loops, proxy whitelist fix (LogikGitter score), XSS defense in typeahead (Phase 165)"
+git commit -m "FEAT: Massive content drop - 28 new beta game modes (Sport/Nachbarn/Weltkarte) via unified data-driven engine with genBetaMCQ/HL/Spotter (Phase 165+166)"
 echo.
 git push origin main
 echo.
