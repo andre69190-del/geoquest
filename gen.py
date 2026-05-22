@@ -1263,6 +1263,7 @@ const PAY_PRODUCTS = [
 const LANG={
 de:{
   play:"SPIELEN",again:"NOCHMAL",menu:"Hauptmenü",board:"Bestenliste",pass:"Reisepass",
+  fav_empty:"Noch keine Favoriten gespeichert",
   profile:"Profil",stats:"Statistik",casual:"Casual",hardcore:"Hardcore",rounds:"Runden",
   btn_collect:"Sammeln",btn_back:"Zurück zum Hauptmenü",btn_next:"Weiter →’",
   btn_again:"Nochmal",btn_menu:"Hauptmenü",btn_adapt:"Anpassen",
@@ -1310,6 +1311,7 @@ de:{
 },
 en:{
   play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
+  fav_empty:"No favourites saved yet",
   profile:"Profile",stats:"Stats",casual:"Casual",hardcore:"Hardcore",rounds:"Rounds",
   btn_collect:"Collect",btn_back:"Back to Main Menu",btn_next:"Next →’",
   btn_again:"Play Again",btn_menu:"Main Menu",btn_adapt:"Adapt",
@@ -1357,6 +1359,7 @@ en:{
 },
 pl:{
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",menu:"Menu",board:"Ranking",pass:"Paszport",
+  fav_empty:"Nie zapisano jeszcze ulubionych",
   profile:"Profil",stats:"Statystyki",casual:"Zwykły",hardcore:"Trudny",rounds:"Rundy",
   btn_collect:"Zbierz",btn_back:"Powrót do menu",btn_next:"Dalej →’",
   btn_again:"Zagraj ponownie",btn_menu:"Menu",btn_adapt:"Dostosuj",
@@ -1413,6 +1416,7 @@ pl:{
 },
 fr:{
   play:"JOUER",again:"REJOUER",menu:"Menu principal",board:"Classement",pass:"Passeport",
+  fav_empty:"Aucun favori enregistré pour l'instant",
   profile:"Profil",stats:"Statistiques",casual:"Casual",hardcore:"Hardcore",rounds:"Manches",
   btn_collect:"Collecter",btn_back:"Retour au menu",btn_next:"Suivant →’",
   btn_again:"Rejouer",btn_menu:"Menu principal",btn_adapt:"Adapter",
@@ -1469,6 +1473,7 @@ fr:{
 },
 es:{
   play:"JUGAR",again:"JUGAR DE NUEVO",menu:"Menßº principal",board:"Clasificación",pass:"Pasaporte",
+  fav_empty:"Aún no hay favoritos guardados",
   profile:"Perfil",stats:"Estadß­sticas",casual:"Casual",hardcore:"Hardcore",rounds:"Rondas",
   btn_collect:"Coleccionar",btn_back:"Volver al menßº",btn_next:"Siguiente →’",
   btn_again:"Jugar de nuevo",btn_menu:"Menßº principal",btn_adapt:"Adaptar",
@@ -1525,6 +1530,7 @@ es:{
 },
 it:{
   play:"GIOCA",again:"GIOCA ANCORA",menu:"Menu principale",board:"Classifica",pass:"Passaporto",
+  fav_empty:"Nessun preferito salvato ancora",
   profile:"Profilo",stats:"Statistiche",casual:"Casual",hardcore:"Hardcore",rounds:"Round",
   btn_collect:"Colleziona",btn_back:"Torna al menu",btn_next:"Avanti →’",
   btn_again:"Gioca ancora",btn_menu:"Menu principale",btn_adapt:"Adatta",
@@ -1581,6 +1587,7 @@ it:{
 },
 nl:{
   play:"SPELEN",again:"OPNIEUW SPELEN",menu:"Hoofdmenu",board:"Ranglijst",pass:"Paspoort",
+  fav_empty:"Nog geen favorieten opgeslagen",
   profile:"Profiel",stats:"Statistieken",casual:"Casual",hardcore:"Hardcore",rounds:"Rondes",
   btn_collect:"Verzamelen",btn_back:"Terug naar menu",btn_next:"Volgende →’",
   btn_again:"Opnieuw spelen",btn_menu:"Hoofdmenu",btn_adapt:"Aanpassen",
@@ -1618,6 +1625,7 @@ nl:{
 },
 pt:{
   play:"JOGAR",again:"JOGAR NOVAMENTE",menu:"Menu principal",board:"Classificaçß£o",pass:"Passaporte",
+  fav_empty:"Nenhum favorito guardado ainda",
   profile:"Perfil",stats:"Estatß­sticas",casual:"Casual",hardcore:"Hardcore",rounds:"Rodadas",
   btn_collect:"Coletar",btn_back:"Voltar ao menu",btn_next:"Próximo →’",
   btn_again:"Jogar novamente",btn_menu:"Menu principal",btn_adapt:"Adaptar",
@@ -1655,6 +1663,7 @@ pt:{
 },
 ro:{
   play:"JOACń‚",again:"JOACń‚ DIN NOU",menu:"Meniu principal",board:"Clasament",pass:"PaÈ™aport",
+  fav_empty:"Nu există favorite salvate încă",
   profile:"Profil",stats:"Statistici",casual:"Casual",hardcore:"Hardcore",rounds:"Runde",
   btn_collect:"Colecteazńƒ",btn_back:"ßŽnapoi la meniu",btn_next:"Urmńƒtor →’",
   btn_again:"Joacńƒ din nou",btn_menu:"Meniu principal",btn_adapt:"Adapteazńƒ",
@@ -1692,6 +1701,7 @@ ro:{
 },
 hu:{
   play:"JßTß‰K",again:"ßšJRA JßTSZANI",menu:"FŚ‘menü",board:"Rangsor",pass:"ßštlevél",
+  fav_empty:"Még nincsenek mentett kedvencek",
   profile:"Profil",stats:"Statisztikák",casual:"KönnyŚ±",hardcore:"Nehéz",rounds:"Körök",
   btn_collect:"GyŚ±jt",btn_back:"Vissza a fŚ‘menübe",btn_next:"Tovább →’",
   btn_again:"ßšjra játszani",btn_menu:"FŚ‘menü",btn_adapt:"Módosß­t",
@@ -1729,6 +1739,7 @@ hu:{
 },
 cs:{
   play:"HRßT",again:"HRßT ZNOVU",menu:"Hlavnß­ menu",board:"Ś½ebŚ™ß­ńek",pass:"Pas",
+  fav_empty:"Zatím žádné oblíbené uloženy",
   profile:"Profil",stats:"Statistiky",casual:"Casual",hardcore:"Hardcore",rounds:"Kola",
   btn_collect:"Sbß­rat",btn_back:"Zpń›t do menu",btn_next:"DalŚ¡ß­ →’",
   btn_again:"Hrát znovu",btn_menu:"Hlavnß­ menu",btn_adapt:"PŚ™izpŚ¯sobit",
@@ -1766,6 +1777,7 @@ cs:{
 },
 sk:{
   play:"HRAŚ¤",again:"HRAŚ¤ ZNOVA",menu:"Hlavné menu",board:"Rebrß­ńek",pass:"Pas",
+  fav_empty:"Zatiaľ žiadne obľúbené uložené",
   profile:"Profil",stats:"Ś tatistiky",casual:"Casual",hardcore:"Hardcore",rounds:"Kolá",
   btn_collect:"Zbierať",btn_back:"Späť do menu",btn_next:"ďalej →’",
   btn_again:"HraŚ¥ znova",btn_menu:"Hlavné menu",btn_adapt:"Prispß´sobiŚ¥",
@@ -1803,6 +1815,7 @@ sk:{
 },
 hr:{
   play:"IGRAJ",again:"IGRAJ PONOVO",menu:"Glavni izbornik",board:"Ljestvica",pass:"Putovnica",
+  fav_empty:"Još nema spremljenih favorita",
   profile:"Profil",stats:"Statistike",casual:"Casual",hardcore:"Hardcore",rounds:"Runde",
   btn_collect:"Sakupi",btn_back:"Natrag na izbornik",btn_next:"Sljedeće →’",
   btn_again:"Igraj ponovo",btn_menu:"Glavni izbornik",btn_adapt:"Prilagodi",
@@ -1840,6 +1853,7 @@ hr:{
 },
 sl:{
   play:"IGRAJ",again:"IGRAJ ZNOVA",menu:"Glavni meni",board:"Lestvica",pass:"Potni list",
+  fav_empty:"Še ni shranjenih priljubljenih",
   profile:"Profil",stats:"Statistike",casual:"Casual",hardcore:"Hardcore",rounds:"Runde",
   btn_collect:"Zberi",btn_back:"Nazaj v meni",btn_next:"Naprej →’",
   btn_again:"Igraj znova",btn_menu:"Glavni meni",btn_adapt:"Prilagodi",
@@ -8528,7 +8542,7 @@ function showFavorites(){
   if(!favs.length){
     // Toast: keine Favoriten
     var t=document.createElement('div');
-    t.textContent='Noch keine Favoriten gespeichert';
+    t.textContent=t('fav_empty')||'No favourites yet';
     t.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;padding:10px 18px;border-radius:20px;font-size:.82rem;font-weight:600;z-index:99999;pointer-events:none';
     document.body.appendChild(t);
     setTimeout(function(){t.remove();},2500);

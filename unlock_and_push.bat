@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Feature: Favorites - heart button per card, showFavorites() filter, localStorage persist"
+git commit -m "Feature: Favorites with full i18n (14 languages), heart per card, showFavorites filter"
 echo.
 git push origin main
 echo.
