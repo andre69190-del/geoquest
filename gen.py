@@ -4091,6 +4091,12 @@ async function doSetNewPassword(){
 /* Phase 85 – Coming Soon toast */
 function showComingSoonToast(name){showToast("\u{1F680} "+name+" kommt bald\! Bleib gespannt.");}
 async function saveSession(mode,score,bs,correct,durationMs){
+  /* Local fallback – always write so guests keep history too */
+  try{
+    const _loc=JSON.parse(localStorage.getItem("gq_sessions_local")||"[]");
+    _loc.push({mode,score,max:bs,correct,duration_ms:durationMs||0,date:new Date().toISOString()});
+    localStorage.setItem("gq_sessions_local",JSON.stringify(_loc.slice(-50)));
+  }catch(e){}
   /* Sanity-cap score before submitting – max honest = ROUNDS*(BASE+12*TB)*3*3 */
   const _maxScore=Math.ceil(ROUNDS*(BASE+12*TB)*3*3*1.1);
   score=Math.min(score,_maxScore);
@@ -4215,6 +4221,7 @@ let S={
   convModal:false,
   collectedPlates:loadCollectedPlates(),
   ligaData:[],ligaLoading:false,leagueEvalResult:null,
+  statsData:null,statsLoading:false,adminData:null,adminLoading:false,
   titleShop:false,
   language:(()=>{const _sl=localStorage.getItem("gq_lang");if(_sl&&LANG[_sl])return _sl;const _bl=(navigator.language||"de").substring(0,2).toLowerCase();return LANG[_bl]?_bl:"de";})(),spotterInput:"",spotterMsg:"",spotterOk:null,albumView:"list",albumCountry:_smartDefaultCountry(),spotterCountry:_smartDefaultCountry(),
   collFilter:"all",collRarity:"all",collSearch:"",
@@ -5767,6 +5774,8 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="liga"?renderLigaTab():""}
       ${S.tab==="profil"?renderProfilTab():""}
       ${S.tab==="album"?renderCollectionScreen():""}
+      ${S.tab==="stats"?renderStatsTab():""}
+      ${S.tab==="admin"?renderAdminTab():""}
       ${S.settingsModal?renderSettingsModal():""}${S.adModal?renderAdModal():""}
     </div>${renderBottomNav()}`;
     return;
@@ -6236,7 +6245,10 @@ function renderBottomNav(){
     {id:"liga",   icon:"\u{1F3C6}", lbl:"Liga"},
     {id:"profil", icon:"\u{1F464}", lbl:"Profil"},
     {id:"album",  icon:"\u{1F4D4}", lbl:"Album"},
+    {id:"stats",  icon:"\u{1F4CA}", lbl:"Stats"},
   ];
+  const isAdmin=sbUser?.email==="andre69190@gmail.com";
+  if(isAdmin)tabs.push({id:"admin",icon:"\u{1F6E1}\uFE0F",lbl:"Admin"});
   return`<nav class="bottom-nav">${tabs.map(t=>`<button class="bn-item${S.tab===t.id?" active":""}" onclick="S.tab='${t.id}';render()"><span class="bn-icon">${t.icon}</span><span class="bn-lbl">${t.lbl}</span></button>`).join("")}</nav>`;
 }
 
@@ -7370,6 +7382,156 @@ function renderLeagueEvalModal(ev){
     </div>
     <div style="font-size:.76rem;color:var(--text3);margin-bottom:1.5rem">${rankTxt}</div>
     <button class="btn-p" onclick="S.leagueEvalResult=null;render()">\u{1F680} Zur neuen Woche!</button>
+  </div>`;
+}
+
+
+/* ─── STATS TAB ──────────────────────────────────────────────────── */
+async function loadStatsData(){
+  S.statsLoading=true;S.statsData=null;render();
+  if(sbUser?.email&&sb){
+    const{data}=await sb.from("game_sessions").select("*").eq("user_id",sbUser.id).order("created_at",{ascending:false}).limit(100);
+    S.statsData=data||[];
+  }else{
+    try{S.statsData=JSON.parse(localStorage.getItem("gq_sessions_local")||"[]").reverse();}catch(e){S.statsData=[];}
+  }
+  S.statsLoading=false;render();
+}
+function _fmtDur(ms){
+  if(!ms||ms<=0)return"–";
+  const s=Math.round(ms/1000);
+  if(s<60)return s+"s";
+  return~~(s/60)+"m "+( s%60)+"s";
+}
+function _fmtDate(iso){
+  if(!iso)return"–";
+  const d=new Date(iso);
+  return d.toLocaleDateString("de-DE",{day:"2-digit",month:"2-digit"})+" "+d.toLocaleTimeString("de-DE",{hour:"2-digit",minute:"2-digit"});
+}
+function renderStatsTab(){
+  if(S.statsLoading)return`<div style="text-align:center;padding:3rem;color:var(--text3)">Lade Statistiken…</div>`;
+  if(!S.statsData){
+    /* trigger load, return spinner placeholder */
+    setTimeout(loadStatsData,0);
+    return`<div style="text-align:center;padding:3rem;color:var(--text3)">Lade…</div>`;
+  }
+  const rows=S.statsData;
+  const totalGames=rows.length;
+  const totalScore=rows.reduce((a,r)=>a+(r.score||0),0);
+  const avgScore=totalGames?Math.round(totalScore/totalGames):0;
+  const bestScore=totalGames?Math.max(...rows.map(r=>r.score||0)):0;
+  const avgAcc=totalGames?Math.round(rows.reduce((a,r)=>a+(r.accuracy||0),0)/totalGames):0;
+  const modeCount={};
+  rows.forEach(r=>{modeCount[r.mode]=(modeCount[r.mode]||0)+1;});
+  const favMode=Object.entries(modeCount).sort((a,b)=>b[1]-a[1])[0];
+  const favM=favMode?MODES.find(m=>m.id===favMode[0]):null;
+  const favLabel=favM?(favM.icon+" "+modeTitle(favM)):favMode?.[0]||"–";
+  return`<div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--text)">\u{1F4CA} Deine Statistiken</div>
+      <button onclick="S.statsData=null;render()" style="background:none;border:1.5px solid var(--border);border-radius:8px;padding:.25rem .6rem;font-size:.72rem;color:var(--text3);cursor:pointer">↺</button>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:.85rem">
+      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#34d399">${totalGames}</div><div style="font-size:.65rem;color:var(--text3)">Spiele gesamt</div></div>
+      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#fbbf24">${bestScore.toLocaleString()}</div><div style="font-size:.65rem;color:var(--text3)">Bester Score</div></div>
+      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#60a5fa">${avgScore.toLocaleString()}</div><div style="font-size:.65rem;color:var(--text3)">Ø Score</div></div>
+      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#a78bfa">${avgAcc}%</div><div style="font-size:.65rem;color:var(--text3)">Ø Genauigkeit</div></div>
+    </div>
+    ${favMode?`<div class="panel" style="display:flex;align-items:center;gap:10px;margin-bottom:.85rem;padding:.65rem .85rem"><div style="font-size:1.4rem">${favM?.icon||"\u{1F3AE}"}</div><div><div style="font-size:.65rem;color:var(--text3)">LIEBLINGS-MODUS</div><div style="font-weight:700;color:var(--text)">${favLabel}</div><div style="font-size:.68rem;color:var(--text3)">${favMode[1]}× gespielt</div></div></div>`:""}
+    ${!rows.length?`<div class="panel" style="text-align:center;padding:2rem;color:var(--text3)">Noch keine Spiele aufgezeichnet.\nSpiele eine Runde!</div>`:
+    `<div style="font-size:.72rem;font-weight:700;color:var(--text3);letter-spacing:.5px;margin-bottom:.4rem">LETZTE SPIELE</div>
+    <div style="display:flex;flex-direction:column;gap:5px">
+    ${rows.slice(0,30).map(r=>{
+      const m=MODES.find(x=>x.id===r.mode);
+      const icon=m?.icon||"\u{1F3AE}";
+      const label=m?modeTitle(m).slice(0,14):r.mode;
+      const acc=r.accuracy!=null?r.accuracy+"%":"–";
+      const dur=_fmtDur(r.duration_ms);
+      const dt=_fmtDate(r.created_at||r.date);
+      return`<div class="panel" style="display:flex;align-items:center;gap:8px;padding:.55rem .75rem">
+        <span style="font-size:1.3rem;min-width:1.5rem">${icon}</span>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:.8rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${label}</div>
+          <div style="font-size:.65rem;color:var(--text3)">${dt}</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0">
+          <div style="font-weight:900;color:#fbbf24;font-size:.9rem">${(r.score||0).toLocaleString()}</div>
+          <div style="font-size:.62rem;color:var(--text3)">${acc} · ${dur}</div>
+        </div>
+      </div>`;
+    }).join("")}
+    </div>`}
+    ${!sbUser?.email?`<div style="font-size:.72rem;color:var(--text3);text-align:center;margin-top:.85rem">\u{1F4BE} Lokal gespeichert (letzte 50 Spiele). <span style="color:#60a5fa;cursor:pointer" onclick="S.tab='profil';S.authMode='register';render()">Account erstellen</span> um alles zu sichern.</div>`:""}
+  </div>`;
+}
+
+/* ─── ADMIN TAB ──────────────────────────────────────────────────── */
+async function loadAdminData(){
+  if(sbUser?.email!=="andre69190@gmail.com")return;
+  S.adminLoading=true;S.adminData=null;render();
+  const{data}=await sb.from("game_sessions").select("*").order("created_at",{ascending:false}).limit(2000);
+  S.adminData=data||[];
+  S.adminLoading=false;render();
+}
+function renderAdminTab(){
+  if(sbUser?.email!=="andre69190@gmail.com")return`<div style="text-align:center;padding:3rem;color:#f87171">⛔ Kein Zugang.</div>`;
+  if(S.adminLoading)return`<div style="text-align:center;padding:3rem;color:var(--text3)">Lade Admin-Daten…</div>`;
+  if(!S.adminData){setTimeout(loadAdminData,0);return`<div style="text-align:center;padding:3rem;color:var(--text3)">Lade…</div>`;}
+  const rows=S.adminData;
+  const today=new Date().toISOString().slice(0,10);
+  const todayRows=rows.filter(r=>(r.created_at||"").startsWith(today));
+  const uids=new Set(rows.map(r=>r.user_id||r.username).filter(Boolean));
+  const modeCount={};rows.forEach(r=>{modeCount[r.mode]=(modeCount[r.mode]||0)+1;});
+  const sorted=Object.entries(modeCount).sort((a,b)=>b[1]-a[1]);
+  const topModes=sorted.slice(0,5);
+  const totalScore=rows.reduce((a,r)=>a+(r.score||0),0);
+  const avgScore=rows.length?Math.round(totalScore/rows.length):0;
+  // Sessions per day (last 7 days)
+  const dayCounts={};
+  for(let i=6;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);const k=d.toISOString().slice(0,10);dayCounts[k]=0;}
+  rows.forEach(r=>{const k=(r.created_at||"").slice(0,10);if(dayCounts[k]!==undefined)dayCounts[k]++;});
+  const maxDay=Math.max(1,...Object.values(dayCounts));
+  const dayBars=Object.entries(dayCounts).map(([d,n])=>{
+    const pct=Math.round(n/maxDay*100);
+    const label=new Date(d).toLocaleDateString("de-DE",{weekday:"short",day:"2-digit"});
+    return`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px">
+      <div style="font-size:.6rem;color:${n===Math.max(...Object.values(dayCounts))?"#34d399":"var(--text3)"};font-weight:700">${n}</div>
+      <div style="width:100%;background:var(--bg3);border-radius:4px;height:50px;display:flex;align-items:flex-end">
+        <div style="width:100%;height:${pct}%;background:#10b981;border-radius:4px;min-height:2px"></div>
+      </div>
+      <div style="font-size:.55rem;color:var(--text3);text-align:center">${label}</div>
+    </div>`;
+  }).join("");
+  return`<div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--text)">\u{1F6E1}️ Admin-Dashboard</div>
+      <button onclick="S.adminData=null;render()" style="background:none;border:1.5px solid var(--border);border-radius:8px;padding:.25rem .6rem;font-size:.72rem;color:var(--text3);cursor:pointer">↺</button>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:.85rem">
+      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#34d399">${rows.length.toLocaleString()}</div><div style="font-size:.65rem;color:var(--text3)">Sessions gesamt</div></div>
+      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#f59e0b">${todayRows.length}</div><div style="font-size:.65rem;color:var(--text3)">Heute</div></div>
+      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#60a5fa">${uids.size}</div><div style="font-size:.65rem;color:var(--text3)">Einz. Spieler</div></div>
+      <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#a78bfa">${avgScore.toLocaleString()}</div><div style="font-size:.65rem;color:var(--text3)">Ø Score</div></div>
+    </div>
+    <div class="panel" style="margin-bottom:.85rem;padding:.85rem">
+      <div style="font-size:.7rem;font-weight:700;color:var(--text3);letter-spacing:.5px;margin-bottom:.65rem">SPIELE PRO TAG (7 TAGE)</div>
+      <div style="display:flex;gap:4px;align-items:flex-end;height:80px">${dayBars}</div>
+    </div>
+    <div class="panel" style="margin-bottom:.85rem;padding:.85rem">
+      <div style="font-size:.7rem;font-weight:700;color:var(--text3);letter-spacing:.5px;margin-bottom:.65rem">TOP MODI</div>
+      ${topModes.map(([mid,cnt],i)=>{
+        const m=MODES.find(x=>x.id===mid);
+        const pct=Math.round(cnt/rows.length*100);
+        return`<div style="display:flex;align-items:center;gap:8px;margin-bottom:.45rem">
+          <span style="min-width:1.2rem;text-align:center">${m?.icon||"\u{1F3AE}"}</span>
+          <div style="flex:1">
+            <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--text);margin-bottom:2px"><span>${m?modeTitle(m).slice(0,16):mid}</span><span style="color:var(--text3)">${cnt}</span></div>
+            <div style="background:var(--bg3);border-radius:4px;height:6px"><div style="background:${"#10b981,#60a5fa,#f59e0b,#a78bfa,#f87171".split(",")[i]};border-radius:4px;height:6px;width:${pct}%"></div></div>
+          </div>
+        </div>`;
+      }).join("")}
+    </div>
+    <div style="font-size:.65rem;color:var(--text3);text-align:center">Letzte 2000 Sessions · Nur sichtbar für dich</div>
   </div>`;
 }
 
