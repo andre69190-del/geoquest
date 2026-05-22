@@ -606,3 +606,22 @@ input[type=text]::placeholder{color:var(--text3)}
 .btn-random-game{background-color:#6366f1 !important;color:#fff !important;border:none !important;padding:12px 20px !important;border-radius:10px !important;font-weight:700 !important;font-size:16px !important;cursor:pointer !important;box-shadow:0 4px 6px rgba(99,102,241,.3) !important;transition:transform .1s,background-color .2s !important;white-space:nowrap !important;flex-shrink:0 !important}
 .btn-random-game:hover{background-color:#4f46e5 !important;transform:translateY(-1px) !important;box-shadow:0 6px 12px rgba(99,102,241,.4) !important}
 .btn-random-game:active{transform:scale(.95) !important}
+
+/* Phase 174: Filter chips + flat games grid */
+.filter-chips-container{display:flex !important;gap:10px !important;overflow-x:auto !important;padding:0 0 15px 0 !important;scrollbar-width:none !important;-ms-overflow-style:none !important}
+.filter-chips-container::-webkit-scrollbar{display:none !important}
+.filter-chip{background:#e2e8f0 !important;color:#475569 !important;border:none !important;padding:8px 16px !important;border-radius:20px !important;font-weight:700 !important;white-space:nowrap !important;cursor:pointer !important;transition:all .2s !important;font-size:.82rem !important;flex-shrink:0 !important}
+.filter-chip.active{background:#3b82f6 !important;color:#fff !important;box-shadow:0 2px 8px rgba(59,130,246,.4) !important}
+[data-theme=dark] .filter-chip{background:#1e293b !important;color:#94a3b8 !important;border:1px solid #334155 !important}
+[data-theme=dark] .filter-chip.active{background:#3b82f6 !important;color:#fff !important;border-color:#3b82f6 !important}
+.games-grid{display:grid !important;grid-template-columns:repeat(auto-fill,minmax(100px,1fr)) !important;gap:12px !important;padding:0 0 20px 0 !important}
+/* EMERGENCY HIGH-CONTRAST OVERRIDE - search + random button */
+.menu-search-container{display:flex !important;gap:10px !important;margin:0 0 15px 0 !important;align-items:center !important}
+#gameSearch{flex:1 !important;background-color:#ffffff !important;border:2px solid #475569 !important;color:#0f172a !important;padding:14px 15px !important;border-radius:10px !important;font-size:16px !important;outline:none !important}
+#gameSearch::placeholder{color:#334155 !important;font-weight:500 !important;opacity:1 !important}
+#gameSearch:focus{border-color:#4f46e5 !important;box-shadow:0 0 0 3px rgba(79,70,229,.2) !important}
+[data-theme=dark] #gameSearch{background-color:#1e293b !important;border-color:#64748b !important;color:#f1f5f9 !important}
+[data-theme=dark] #gameSearch::placeholder{color:#94a3b8 !important}
+.btn-random-game{background-color:#4f46e5 !important;color:#ffffff !important;border:none !important;padding:14px 20px !important;border-radius:10px !important;font-weight:800 !important;font-size:16px !important;cursor:pointer !important;white-space:nowrap !important;box-shadow:0 4px 6px rgba(0,0,0,.2) !important;flex-shrink:0 !important}
+.btn-random-game:hover{background-color:#4338ca !important;transform:translateY(-1px) !important}
+.btn-random-game:active{transform:scale(.95) !important}

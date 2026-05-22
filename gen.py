@@ -4418,6 +4418,7 @@ let S={
   freezeActive:false,
   filter:"all",
   activeCategory:null,
+  filterCat:'all',
   fcIdx:0,fcFlipped:false,fcSearch:"",fcCountry:"all",
   darkMode:false,
   authMode:"login",authEmail:"",authPassword:"",authConfirm:"",authUsername:"",authError:"",authLoading:false,
@@ -8410,29 +8411,32 @@ function renderAdminTab(){
 
 function filterGames(){
   const q=(document.getElementById('gameSearch')?.value||'').toLowerCase().trim();
-  const accList=document.querySelector('.acc-list');
-  if(!accList)return;
-  if(q){
-    accList.querySelectorAll('.acc-item').forEach(item=>{
-      const body=item.querySelector('.acc-body');
-      if(!body)return;
-      let hasMatch=false;
-      body.querySelectorAll('.mode-card').forEach(card=>{
-        const text=((card.dataset.title||'')+(card.dataset.desc||'')).toLowerCase();
-        const match=text.includes(q);
-        card.style.display=match?'':'none';
-        if(match)hasMatch=true;
-      });
-      body.style.display=hasMatch?'block':'none';
-      item.style.display=hasMatch?'':'none';
-    });
-  }else{
-    accList.querySelectorAll('.acc-body').forEach(b=>{
-      b.style.display=b.dataset.open==='true'?'':'none';
-    });
-    accList.querySelectorAll('.mode-card').forEach(c=>c.style.display='');
-    accList.querySelectorAll('.acc-item').forEach(i=>i.style.display='');
+  const grid=document.getElementById('mainGamesGrid');
+  if(!grid)return;
+  if(!q){
+    filterByCategory(S.filterCat||'all');
+    return;
   }
+  // While searching: deactivate chips, search all cards
+  document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
+  grid.querySelectorAll('.mode-card').forEach(card=>{
+    const text=((card.dataset.title||'')+(card.dataset.desc||'')).toLowerCase();
+    card.style.display=text.includes(q)?'':'none';
+  });
+}
+function filterByCategory(cat){
+  S.filterCat=cat;
+  document.querySelectorAll('.filter-chip').forEach(c=>{
+    c.classList.toggle('active',c.dataset.cat===cat);
+  });
+  const grid=document.getElementById('mainGamesGrid');
+  if(!grid)return;
+  grid.querySelectorAll('.mode-card').forEach(card=>{
+    const show=cat==='all'||card.dataset.category===cat;
+    card.style.display=show?'':'none';
+  });
+  const gs=document.getElementById('gameSearch');
+  if(gs)gs.value='';
 }
 function playRandomGame(){
   const pool=MODES.filter(m=>!m.comingSoon);
@@ -8464,7 +8468,37 @@ function closeGameInfo(){
   if(el)el.remove();
 }
 function renderHomeTab(){
-  console.log("[GQ] renderHomeTab() activeCategory=",S.activeCategory);
+  console.log("[GQ] renderHomeTab() filterCat=",S.filterCat);
+  const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode"];
+  const _chips=`<button class="filter-chip${S.filterCat==='all'?' active':''}" data-cat="all" onclick="filterByCategory('all')">\u{1F3AE} Alle</button>`+
+    _CAT_ORDER.map(cid=>{const c=MODE_CATS[cid];if(!c)return'';return`<button class="filter-chip${S.filterCat===cid?' active':''}" data-cat="${cid}" onclick="filterByCategory('${cid}')">${c.icon} ${c.label}</button>`;}).join('');
+  const _allCards=_CAT_ORDER.flatMap(catId=>{
+    const cat=MODE_CATS[catId];if(!cat)return[];
+    const unlocked=isCategoryUnlocked(catId);
+    const catModes=MODES.filter(m=>cat.modes.includes(m.id)&&!m.comingSoon);
+    const hide=S.filterCat!=='all'&&S.filterCat!==catId;
+    const cards=catModes.map(m=>{
+      const cs=m.comingSoon===true;
+      const active=S.mode===m.id&&!cs;
+      const isLocked=!unlocked&&!cs;
+      const cardCls="mode-card"+(active?" active":"")+(cs?" coming-soon-card":"")+(isLocked?" locked-card":"");
+      const clickAct=cs?"showComingSoonToast('"+m.title+"')":unlocked?"startGame('"+m.id+"')":"S.lockModal='"+catId+"';render()";
+      return`<div class="${cardCls}" onclick="${clickAct}" role="button" data-title="${modeTitle(m)}" data-desc="${(m.desc||'')+' '+m.id}" data-category="${catId}"${hide?' style="display:none"':''}>
+        ${cs?`<span class="cs-badge">Bald</span>`:""}
+        ${isLocked?`<span style="position:absolute;top:4px;right:4px;font-size:.75rem">\u{1F512}</span>`:""}
+        <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
+        ${m.desc?`<div class="mode-desc">${m.desc}</div>`:""}
+        ${!cs&&unlocked?`<span class="info-icon" onclick="event.stopPropagation();showGameInfo('${m.id}')">ℹ️</span>`:""}
+      </div>`;
+    });
+    const albumCard=catId==='eu_plates'?[`<div class="mode-card" data-category="eu_plates"${hide?' style="display:none"':''} onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" data-desc="Album Spotter Sammlung eu_plates" style="${hide?'display:none;':''}background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6">
+        <span class="mode-icon">\u{1F4D4}</span>
+        <div class="mode-title" style="color:#fff">Album</div>
+        <div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div>
+      </div>`]:[];
+    return [...cards,...albumCard];
+  }).join('');
+  function catSection(){return'';}/* removed: now using flat grid */
   function catSection(catId){
     const cat=MODE_CATS[catId];
     if(\!cat){console.warn("[GQ] catSection: unknown catId",catId);return"";}
@@ -8546,15 +8580,8 @@ function renderHomeTab(){
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="filterGames()">
       <button class="btn-random-game" onclick="playRandomGame()">🎲 Zufall</button>
     </div>
-    <div class="acc-list">
-      ${catSection("pure_geo")}
-      ${catSection("lifestyle")}
-      ${catSection("eu_plates")}
-      ${catSection("sport")}
-      ${catSection("comparisons")}
-      ${catSection("neighbors")}
-      ${catSection("map_mode")}
-    </div>
+    <div class="filter-chips-container">${_chips}</div>
+    <div class="games-grid" id="mainGamesGrid">${_allCards}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>
@@ -9931,3 +9958,4 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print('Also written -> index.html (Netlify deploy target)')
+                      
