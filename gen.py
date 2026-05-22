@@ -8593,7 +8593,7 @@ function renderHomeTab(){
         <div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div>
       </div>`:'';
     const lockPill=!unlocked?`<span style="font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:10px;margin-left:4px">\u{1F512} ${cat.cost?cat.cost.toLocaleString():'?'} Coins</span>`:'';
-    return`<div class="accordion-section" data-cat="${catId}"${!isDefault?' style="display:none"':''}>
+    return`<div class="accordion-section" data-cat="${catId}">
       <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
         <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
         <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
