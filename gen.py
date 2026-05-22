@@ -1288,7 +1288,7 @@ de:{
   q_food:"Aus welchem Land kommt dieses Gericht?",q_brand:"Aus welchem Land kommt diese Marke?",
   q_currency:"Zu welchem Land gehört diese Währung?",q_curr_real:"Welche Währung hat …",
   q_pop_compare:"Mehr oder weniger Einwohner?",
-  q_hl_pop:"Mehr Einwohner als {a}?",q_hl_river:"Länger als {a}?",q_hl_area:"Größer als {a}?",
+  q_hl_pop:"Mehr Einwohner als {a}?",q_hl_river:"Länger als {a}?",q_hl_area:"Größer als {a}?",q_hl_gdp:"Höheres BIP/Kopf als {a}?",q_hl_density:"Dichter besiedelt als {a}?",q_hl_elevation:"Höherer Gipfel als {a}?",q_hl_coastline:"Längere Küste als {a}?",q_hl_borders:"Mehr Nachbarn als {a}?",q_hl_lifeexp:"Länger leben als in {a}?",q_hl_median_age:"Höheres Medianalter als {a}?",q_hl_forest:"Mehr Wald als {a}?",
   q_neighbor:"Welches Land grenzt an…?",q_neighbor_not:"Grenzt NICHT an…?",
   q_plates_casual:"Woher kommt dieses Kennzeichen?",q_plates_hard:"Region erkennen – kein Tipp!",
   q_river_real:"Durch welches Land fließt dieser Fluss?",q_map_guess:"Finde das Land auf der Karte",
@@ -1335,7 +1335,7 @@ en:{
   q_food:"Which country does this dish come from?",q_brand:"Which country does this brand come from?",
   q_currency:"Which country uses this currency?",q_curr_real:"What currency does…",
   q_pop_compare:"More or fewer inhabitants?",
-  q_hl_pop:"More inhabitants than {a}?",q_hl_river:"Longer than {a}?",q_hl_area:"Larger than {a}?",
+  q_hl_pop:"More inhabitants than {a}?",q_hl_river:"Longer than {a}?",q_hl_area:"Larger than {a}?",q_hl_gdp:"Higher GDP/capita than {a}?",q_hl_density:"More densely populated than {a}?",q_hl_elevation:"Higher peak than {a}?",q_hl_coastline:"Longer coastline than {a}?",q_hl_borders:"More neighbours than {a}?",q_hl_lifeexp:"Longer life expectancy than {a}?",q_hl_median_age:"Higher median age than {a}?",q_hl_forest:"More forest than {a}?",
   q_neighbor:"Which country borders…?",q_neighbor_not:"Does NOT border…?",
   q_plates_casual:"Which country has this plate?",q_plates_hard:"Identify the region – no hint!",
   q_river_real:"Which country does this river flow through?",q_map_guess:"Find the country on the map",
@@ -2487,14 +2487,33 @@ const MODES=[
   {id:"hl_river", icon:"\u{1F30A}",title:"H/L Flussl\u00e4nge", group:"hl_compare",prompt:"L\u00e4ngerer Fluss?",desc:"Welcher Fluss ist l\u00e4nger?"},
   {id:"hl_area",  icon:"\u{1F5FA}",title:"H/L Landfl\u00e4che",  group:"hl_compare",prompt:"Gr\u00f6\u00dferes Land?",desc:"Welches Land ist gr\u00f6\u00dfer?"},
   /* ---- Higher / Lower (coming soon) ---- */
-  {id:"hl_gdp",       icon:"\u{1F4B0}",title:"H/L BIP",              group:"hl_compare",prompt:"H\u00f6heres BIP?",         desc:"Welches Land hat ein h\u00f6heres BIP?",           comingSoon:true},
-  {id:"hl_density",   icon:"\u{1F3D8}",title:"H/L Bev\u00f6lkerungsdichte",group:"hl_compare",prompt:"Dichter besiedelt?",    desc:"Welches Land ist dichter besiedelt?",              comingSoon:true},
-  {id:"hl_elevation", icon:"\u{26F0}",title:"H/L H\u00f6chster Punkt",group:"hl_compare",prompt:"H\u00f6herer Gipfel?",      desc:"Welches Land hat den h\u00f6heren Gipfel?",        comingSoon:true},
-  {id:"hl_coastline", icon:"\u{1F3D6}",title:"H/L K\u00fcstÐµÐ½l\u00e4nge",group:"hl_compare",prompt:"L\u00e4ngere K\u00fcste?",desc:"Welches Land hat die l\u00e4ngere K\u00fcste?",   comingSoon:true},
-  {id:"hl_borders",   icon:"\u{1F30F}",title:"H/L Nachbarl\u00e4nder",group:"hl_compare",prompt:"Mehr Nachbarn?",             desc:"Welches Land hat mehr Nachbarl\u00e4nder?",        comingSoon:true},
-  {id:"hl_lifeexp",   icon:"\u2764",title:"H/L Lebenserwartung",   group:"hl_compare",prompt:"L\u00e4nger leben?",            desc:"In welchem Land lebt man l\u00e4nger?",            comingSoon:true},
-  {id:"hl_median_age",icon:"\u{1F4C5}",title:"H/L Medianalter",    group:"hl_compare",prompt:"H\u00f6heres Medianalter?",     desc:"Welches Land hat ein h\u00f6heres Medianalter?",   comingSoon:true},
-  {id:"hl_forest",    icon:"\u{1F333}",title:"H/L Waldf\u00e4che",  group:"hl_compare",prompt:"Mehr Wald?",                   desc:"Welches Land hat mehr Wald?",                      comingSoon:true},
+  {id:"hl_gdp",       icon:"\u{1F4B0}",title:"H/L BIP",              group:"hl_compare",prompt:"H\u00f6heres BIP?",         desc:"Welches Land hat ein h\u00f6heres BIP?"},
+  {id:"hl_density",   icon:"\u{1F3D8}",title:"H/L Bev\u00f6lkerungsdichte",group:"hl_compare",prompt:"Dichter besiedelt?",    desc:"Welches Land ist dichter besiedelt?"},
+  {id:"hl_elevation", icon:"\u{26F0}",title:"H/L H\u00f6chster Punkt",group:"hl_compare",prompt:"H\u00f6herer Gipfel?",      desc:"Welches Land hat den h\u00f6heren Gipfel?"},
+  {id:"hl_coastline", icon:"\u{1F3D6}",title:"H/L K\u00fcstÐµÐ½l\u00e4nge",group:"hl_compare",prompt:"L\u00e4ngere K\u00fcste?",desc:"Welches Land hat die l\u00e4ngere K\u00fcste?"},
+  {id:"hl_borders",   icon:"\u{1F30F}",title:"H/L Nachbarl\u00e4nder",group:"hl_compare",prompt:"Mehr Nachbarn?",             desc:"Welches Land hat mehr Nachbarl\u00e4nder?"},
+  {id:"hl_lifeexp",   icon:"\u2764",title:"H/L Lebenserwartung",   group:"hl_compare",prompt:"L\u00e4nger leben?",            desc:"In welchem Land lebt man l\u00e4nger?"},
+  {id:"hl_median_age",icon:"\u{1F4C5}",title:"H/L Medianalter",    group:"hl_compare",prompt:"H\u00f6heres Medianalter?",     desc:"Welches Land hat ein h\u00f6heres Medianalter?"},
+  {id:"hl_forest",    icon:"\u{1F333}",title:"H/L Waldf\u00e4che",  group:"hl_compare",prompt:"Mehr Wald?",                   desc:"Welches Land hat mehr Wald?"},
+
+  /* HL Beta */
+  {id:"hl_b_rain",  icon:"\u{1F327}",title:"\u{1F9EA} Niederschlag",  group:"hl_beta",prompt:"Mehr Regen?",              desc:"Mehr Jahresniederschlag?"},
+  {id:"hl_b_temp",  icon:"\u{1F321}",title:"\u{1F9EA} Temperatur",    group:"hl_beta",prompt:"W\u00e4rmer?",            desc:"H\u00f6here Durchschnittstemp.?"},
+  {id:"hl_b_sun",   icon:"\u2600",   title:"\u{1F9EA} Sonnenstunden", group:"hl_beta",prompt:"Mehr Sonne?",              desc:"Mehr Sonnenstunden/Jahr?"},
+  {id:"hl_b_vulc",  icon:"\u{1F30B}",title:"\u{1F9EA} Vulkane",       group:"hl_beta",prompt:"Mehr Vulkane?",            desc:"Mehr aktive Vulkane?"},
+  {id:"hl_b_parks", icon:"\u{1F333}",title:"\u{1F9EA} Nationalparks", group:"hl_beta",prompt:"Mehr Parks?",              desc:"Mehr Nationalparks?"},
+  {id:"hl_b_roads", icon:"\u{1F6E3}",title:"\u{1F9EA} Stra\u00dfennetz",group:"hl_beta",prompt:"L\u00e4ngeres Stra\u00dfennetz?",desc:"Km Stra\u00dfen?"},
+  {id:"hl_b_rail",  icon:"\u{1F686}",title:"\u{1F9EA} Schienennetz",  group:"hl_beta",prompt:"L\u00e4ngeres Schienennetz?",desc:"Km Gleise?"},
+  {id:"hl_b_net",   icon:"\u{1F4F6}",title:"\u{1F9EA} Internetspeed", group:"hl_beta",prompt:"Schnelleres Internet?",    desc:"Schnelleres Breitband?"},
+  {id:"hl_b_ev",    icon:"\u26A1",   title:"\u{1F9EA} E-Ladesäulen",  group:"hl_beta",prompt:"Mehr E-Ladesäulen?",       desc:"E-Ladesäulen?"},
+  {id:"hl_b_urban", icon:"\u{1F3D9}",title:"\u{1F9EA} Urbanisierung", group:"hl_beta",prompt:"Mehr verst\u00e4dtert?",  desc:"Urbanisierungsrate?"},
+  {id:"hl_b_lang",  icon:"\u{1F5E3}",title:"\u{1F9EA} Amtssprachen",  group:"hl_beta",prompt:"Mehr Amtssprachen?",       desc:"Anzahl Amtssprachen?"},
+  {id:"hl_b_isl",   icon:"\u{1F3DD}",title:"\u{1F9EA} Inseln",        group:"hl_beta",prompt:"Mehr Inseln?",             desc:"Anzahl Inseln?"},
+  {id:"hl_b_tz",    icon:"\u{1F550}",title:"\u{1F9EA} Zeitzonen",     group:"hl_beta",prompt:"Mehr Zeitzonen?",          desc:"Anzahl Zeitzonen?"},
+  {id:"hl_b_founded",icon:"\u{1F3DB}",title:"\u{1F9EA} \u00c4ltestes Land",group:"hl_beta",prompt:"\u00c4lteres Land?",desc:"Fr\u00fcheres Gr\u00fcndungsjahr?"},
+  {id:"hl_b_unesco",icon:"\u{1F3DB}",title:"\u{1F9EA} UNESCO",        group:"hl_beta",prompt:"Mehr UNESCO?",             desc:"UNESCO-Welterbest\u00e4tten?"},
+  {id:"hl_b_tour",  icon:"\u{1F9F3}",title:"\u{1F9EA} Tourismus",     group:"hl_beta",prompt:"Mehr Touristen?",          desc:"Touristen/Jahr?"},
+  {id:"hl_b_wm",    icon:"\u26BD",   title:"\u{1F9EA} WM-Teilnahmen", group:"hl_beta",prompt:"Mehr WM-Teilnahmen?",      desc:"Fu\u00dfball-WM-Teilnahmen?"},
   /* ---- Neighbors ---- */
   {id:"neighbor",      icon:"\u{1F91D}",title:"Grenzg\u00e4nger",     group:"neighbors", prompt:"Grenzt an\u2026?",               desc:"Grenzt dieses Land an jenes?"},
   {id:"neighbor_fake", icon:"\u{1F47A}",title:"Falscher Nachbar",  group:"neighbors", prompt:"Grenzt NICHT an\u2026?",         desc:"Welches Land grenzt NICHT an das gezeigte?",time:20},
@@ -2509,7 +2528,7 @@ const MODES=[
   {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten"},
   {id:"flag_fusion",   icon:"\u{1F3C1}",title:"Flaggen-Fusion",        group:"new_modes",prompt:"Welche zwei L\u00e4nder?",                  desc:"Erkenne L\u00e4nder aus verschmolzenen Flaggen"},
   {id:"climate_mystery",icon:"\u{1F326}",title:"Klima-Krimi",          group:"new_modes",prompt:"Welches Land versteckt sich hinter diesen Klima-Hinweisen?",                             desc:"Land anhand von Klima-Clues erraten"},
-  {id:"alpha_sprint",  icon:"📍",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben",     comingSoon:true},
+  {id:"alpha_sprint",  icon:"📍",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben"},
   {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen"},
   {id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker"},
   {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt"},
@@ -2547,6 +2566,7 @@ const MODE_CATS={
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
+  hl_beta:{label:"H/L Beta \u{1F9EA}",icon:"\u{1F9EA}",modes:["hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","hl_b_lang","hl_b_isl","hl_b_tz","hl_b_founded","hl_b_unesco","hl_b_tour","hl_b_wm"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_flight","comp_mountain","comp_nsextent","comp_olympics"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count"],cost:0},
@@ -3155,6 +3175,99 @@ function genHLAreaQ(){
   const fmt=(x)=>x>=1e6?(x/1e6).toFixed(2)+" Mio. kmÂ²":(x/1000).toFixed(0)+" Tsd. kmÂ²";
   const ans=b.area>a.area?"higher":"lower";
   return{type:"hl_area",prompt:t("q_hl_area",{a:a.c}),nameA:a.c,valA:fmt(a.area),nameB:b.c,valB:fmt(b.area),ans,opts:["higher","lower"],lid:b.c,cc:ccFromCountry(b.c)};
+}
+
+/* ─── HL COMP_DATA generators ─── */
+function _genHLComp(type,key,fmtFn,promptKey){
+  const keys=Object.keys(COMP_DATA).filter(k=>COMP_DATA[k][key]!=null&&COMP_DATA[k][key]>0);
+  if(keys.length<2)return null;
+  let ai=~~(rng()*keys.length),bi=~~(rng()*keys.length);
+  while(bi===ai)bi=~~(rng()*keys.length);
+  const kA=keys[ai],kB=keys[bi];
+  const vA=COMP_DATA[kA][key],vB=COMP_DATA[kB][key];
+  const ans=vB>vA?"higher":"lower";
+  const dA=displayCountry(ccFromCountry(kA))||kA;
+  const dB=displayCountry(ccFromCountry(kB))||kB;
+  return{type,prompt:t(promptKey,{a:dA}),nameA:dA,valA:fmtFn(vA),nameB:dB,valB:fmtFn(vB),ans,opts:["higher","lower"],lid:kB,cc:ccFromCountry(kB)};
+}
+function genHLGdpQ(){return _genHLComp("hl_gdp","gdp",v=>"$"+v.toLocaleString(),"q_hl_gdp");}
+function genHLDensityQ(){return _genHLComp("hl_density","dens",v=>v+" Ew/km²","q_hl_density");}
+function genHLElevationQ(){return _genHLComp("hl_elevation","elev",v=>v.toLocaleString()+" m","q_hl_elevation");}
+function genHLCoastlineQ(){return _genHLComp("hl_coastline","coast",v=>v.toLocaleString()+" km","q_hl_coastline");}
+function genHLBordersQ(){return _genHLComp("hl_borders","bord",v=>v+" Länder","q_hl_borders");}
+function genHLLifeexpQ(){return _genHLComp("hl_lifeexp","life",v=>v+" Jahre","q_hl_lifeexp");}
+function genHLMedianAgeQ(){return _genHLComp("hl_median_age","age",v=>v+" Jahre","q_hl_median_age");}
+function genHLForestQ(){return _genHLComp("hl_forest","forest",v=>v+" %","q_hl_forest");}
+
+/* ─── HL BETA DATA (17 Metriken, 15 Laender) ─── */
+const HL_BETA_DATA={
+  "Deutschland":  {rain:700, temp:10,sun:1700,vulc:0,  parks:16, roads:645000, rail:33400, net:75,  ev:90000, urban:77,lang:1, isl:70,   tz:1, founded:1871,unesco:52,tour:39, wm:20},
+  "Frankreich":   {rain:867, temp:12,sun:2000,vulc:0,  parks:11, roads:1100000,rail:29000, net:190, ev:60000, urban:81,lang:1, isl:20,   tz:12,founded:843, unesco:52,tour:90, wm:16},
+  "USA":          {rain:715, temp:12,sun:2500,vulc:161,parks:63, roads:6586610,rail:257722,net:242, ev:170000,urban:83,lang:1, isl:18617,tz:11,founded:1776,unesco:24,tour:79, wm:22},
+  "Brasilien":    {rain:1761,temp:25,sun:2500,vulc:7,  parks:67, roads:1720700,rail:29850, net:95,  ev:3000,  urban:87,lang:1, isl:10000,tz:4, founded:1822,unesco:23,tour:6,  wm:22},
+  "Japan":        {rain:1668,temp:14,sun:1900,vulc:111,parks:34, roads:1218772,rail:27311, net:162, ev:300000,urban:92,lang:1, isl:6852, tz:1, founded:660, unesco:25,tour:32, wm:22},
+  "Australien":   {rain:534, temp:22,sun:3200,vulc:3,  parks:685,roads:873573, rail:33343, net:56,  ev:5500,  urban:86,lang:1, isl:8222, tz:8, founded:1901,unesco:20,tour:9,  wm:22},
+  "China":        {rain:645, temp:7, sun:2200,vulc:14, parks:56, roads:5200000,rail:150000,net:283, ev:520000,urban:64,lang:7, isl:7600, tz:5, founded:1949,unesco:57,tour:56, wm:16},
+  "Kanada":       {rain:537, temp:2, sun:1900,vulc:5,  parks:48, roads:1042300,rail:40000, net:196, ev:20000, urban:82,lang:2, isl:52455,tz:6, founded:1867,unesco:22,tour:22, wm:22},
+  "Indien":       {rain:1083,temp:25,sun:2800,vulc:5,  parks:106,roads:5897671,rail:68103, net:50,  ev:6000,  urban:35,lang:22,isl:1208, tz:1, founded:1947,unesco:40,tour:18, wm:12},
+  "Russland":     {rain:460, temp:2, sun:1700,vulc:68, parks:112,roads:1283387,rail:86600, net:100, ev:4000,  urban:75,lang:35,isl:600,  tz:11,founded:1991,unesco:30,tour:24, wm:11},
+  "Spanien":      {rain:640, temp:14,sun:2800,vulc:3,  parks:15, roads:683175, rail:15333, net:195, ev:20000, urban:81,lang:4, isl:154,  tz:2, founded:1479,unesco:50,tour:84, wm:16},
+  "Italien":      {rain:832, temp:14,sun:2300,vulc:14, parks:24, roads:841800, rail:16788, net:30,  ev:36000, urban:71,lang:1, isl:450,  tz:1, founded:1861,unesco:58,tour:57, wm:18},
+  "Norwegen":     {rain:1414,temp:2, sun:1600,vulc:0,  parks:47, roads:94902,  rail:3979,  net:228, ev:20000, urban:83,lang:2, isl:50000,tz:1, founded:1814,unesco:8, tour:6,  wm:22},
+  "Mexiko":       {rain:758, temp:17,sun:2500,vulc:14, parks:182,roads:374512, rail:20825, net:28,  ev:2000,  urban:81,lang:69,isl:200,  tz:4, founded:1821,unesco:35,tour:45, wm:17},
+  "Suedkorea":    {rain:1274,temp:12,sun:2100,vulc:1,  parks:22, roads:100428, rail:3918,  net:312, ev:200000,urban:82,lang:1, isl:3170, tz:1, founded:1948,unesco:16,tour:17, wm:10},
+};
+const HL_BETA_METRICS={
+  hl_b_rain:    {key:"rain",   fmt:function(v){return v+" mm";}},
+  hl_b_temp:    {key:"temp",   fmt:function(v){return v+"°C";}},
+  hl_b_sun:     {key:"sun",    fmt:function(v){return v+" Std/Jahr";}},
+  hl_b_vulc:    {key:"vulc",   fmt:function(v){return v+" Vulkane";}},
+  hl_b_parks:   {key:"parks",  fmt:function(v){return v+" Parks";}},
+  hl_b_roads:   {key:"roads",  fmt:function(v){return v.toLocaleString()+" km";}},
+  hl_b_rail:    {key:"rail",   fmt:function(v){return v.toLocaleString()+" km";}},
+  hl_b_net:     {key:"net",    fmt:function(v){return v+" Mbit/s";}},
+  hl_b_ev:      {key:"ev",     fmt:function(v){return v.toLocaleString()+" Säulen";}},
+  hl_b_urban:   {key:"urban",  fmt:function(v){return v+" %";}},
+  hl_b_lang:    {key:"lang",   fmt:function(v){return v+" Amtsspr.";}},
+  hl_b_isl:     {key:"isl",    fmt:function(v){return v.toLocaleString()+" Inseln";}},
+  hl_b_tz:      {key:"tz",     fmt:function(v){return v+" Zeitzonen";}},
+  hl_b_founded: {key:"founded",fmt:function(v){return "gegr. "+v;}},
+  hl_b_unesco:  {key:"unesco", fmt:function(v){return v+" Stätten";}},
+  hl_b_tour:    {key:"tour",   fmt:function(v){return v+" Mio.";}},
+  hl_b_wm:      {key:"wm",     fmt:function(v){return v+"x WM";}},
+};
+const HL_BETA_PROMPTS={
+  hl_b_rain:"Mehr Jahresniederschlag als {a}?",
+  hl_b_temp:"Wärmer im Jahresschnitt als {a}?",
+  hl_b_sun:"Mehr Sonnenstunden als {a}?",
+  hl_b_vulc:"Mehr aktive Vulkane als {a}?",
+  hl_b_parks:"Mehr Nationalparks als {a}?",
+  hl_b_roads:"Längeres Straßennetz als {a}?",
+  hl_b_rail:"Längeres Schienennetz als {a}?",
+  hl_b_net:"Schnelleres Internet als {a}?",
+  hl_b_ev:"Mehr E-Ladesäulen als {a}?",
+  hl_b_urban:"Stärker urbanisiert als {a}?",
+  hl_b_lang:"Mehr Amtssprachen als {a}?",
+  hl_b_isl:"Mehr Inseln als {a}?",
+  hl_b_tz:"Mehr Zeitzonen als {a}?",
+  hl_b_founded:"Älteres Land als {a}?",
+  hl_b_unesco:"Mehr UNESCO-Welterbe als {a}?",
+  hl_b_tour:"Mehr Touristen als {a}?",
+  hl_b_wm:"Mehr WM-Teilnahmen als {a}?",
+};
+function genHLBeta(modeId){
+  const m=HL_BETA_METRICS[modeId];if(!m)return null;
+  const countries=Object.keys(HL_BETA_DATA).filter(k=>HL_BETA_DATA[k][m.key]!=null);
+  if(countries.length<2)return null;
+  let ai=~~(rng()*countries.length),bi=~~(rng()*countries.length);
+  while(bi===ai)bi=~~(rng()*countries.length);
+  const kA=countries[ai],kB=countries[bi];
+  const vA=HL_BETA_DATA[kA][m.key],vB=HL_BETA_DATA[kB][m.key];
+  const isOlder=modeId==="hl_b_founded";
+  const ans=isOlder?(vB<vA?"higher":"lower"):(vB>vA?"higher":"lower");
+  const promptTpl=HL_BETA_PROMPTS[modeId]||"Höherer Wert als {a}?";
+  const prompt="\u{1F9EA} [BETA] "+promptTpl.replace("{a}",kA);
+  return{type:modeId,prompt,nameA:kA,valA:m.fmt(vA),nameB:kB,valB:m.fmt(vB),ans,opts:["higher","lower"],lid:kB,cc:ccFromCountry(kB)||"de"};
 }
 /* Phase 95: inline area (kmÂ²) + population (millions) – self-contained, no external files */
 const COMP_AREA={
@@ -4846,6 +4959,18 @@ const GEN={
   hl_pop:genHLPopQ,
   hl_river:genHLRiverQ,
   hl_area:genHLAreaQ,
+  hl_gdp:genHLGdpQ,hl_density:genHLDensityQ,hl_elevation:genHLElevationQ,
+  hl_coastline:genHLCoastlineQ,hl_borders:genHLBordersQ,hl_lifeexp:genHLLifeexpQ,
+  hl_median_age:genHLMedianAgeQ,hl_forest:genHLForestQ,
+  hl_b_rain:()=>genHLBeta("hl_b_rain"),hl_b_temp:()=>genHLBeta("hl_b_temp"),
+  hl_b_sun:()=>genHLBeta("hl_b_sun"),hl_b_vulc:()=>genHLBeta("hl_b_vulc"),
+  hl_b_parks:()=>genHLBeta("hl_b_parks"),hl_b_roads:()=>genHLBeta("hl_b_roads"),
+  hl_b_rail:()=>genHLBeta("hl_b_rail"),hl_b_net:()=>genHLBeta("hl_b_net"),
+  hl_b_ev:()=>genHLBeta("hl_b_ev"),hl_b_urban:()=>genHLBeta("hl_b_urban"),
+  hl_b_lang:()=>genHLBeta("hl_b_lang"),hl_b_isl:()=>genHLBeta("hl_b_isl"),
+  hl_b_tz:()=>genHLBeta("hl_b_tz"),hl_b_founded:()=>genHLBeta("hl_b_founded"),
+  hl_b_unesco:()=>genHLBeta("hl_b_unesco"),hl_b_tour:()=>genHLBeta("hl_b_tour"),
+  hl_b_wm:()=>genHLBeta("hl_b_wm"),
   comp_area:genCompAreaQ,comp_pop:genCompPopQ,comp_north:genCompNorthQ,
   comp_gdp:genCompGdpQ,comp_density:genCompDensityQ,comp_elevation:genCompElevQ,
   comp_coast:genCompCoastQ,comp_borders:genCompBordersQ,
@@ -5941,6 +6066,10 @@ function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.can
     app.innerHTML=renderOnboarding(S.obStep);return;
   }
   if(S.leagueEvalResult){app.innerHTML=renderLeagueEvalModal(S.leagueEvalResult);return;}
+  if(S.waitingForLandscape){
+    app.innerHTML=`<div style="min-height:100vh;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem"><div style="font-size:3rem;margin-bottom:1rem">\u{1F4F1}\u27A1\u{1F5FA}</div><div style="font-size:1.1rem;font-weight:900;color:var(--text);margin-bottom:.5rem">Bitte Ger\u00e4t drehen</div><div style="font-size:.8rem;color:var(--text3);margin-bottom:1.5rem">Dieser Modus ben\u00f6tigt das Querformat</div><button class="btn-cancel" onclick="clr();S.ph='menu';S.tab='home';S.waitingForLandscape=false;render()" style="font-size:.9rem;padding:.6rem 1.4rem">\u00d7 Beenden</button></div>`;
+    return;
+  }
   if(S.lvModal){app.innerHTML=renderLVModal();return;}
   if(S.mpModal){app.innerHTML=renderMultiplayerLobby();return;}
   if(S.payModal){app.innerHTML=renderPayModal();return;}
@@ -7845,6 +7974,7 @@ function renderHomeTab(){
       ${catSection("lifestyle")}
       ${catSection("eu_plates")}
       ${catSection("football")}
+      ${catSection("hl_beta")}
       ${catSection("comparisons")}
       ${catSection("neighbors")}
       ${catSection("map_mode")}
