@@ -8422,20 +8422,33 @@ function renderAdminTab(){
 }
 
 function filterGames(){
-  const q=(document.getElementById('gameSearch')?.value||'').toLowerCase().trim();
-  const grid=document.getElementById('mainGamesGrid');
+  var input=document.getElementById('gameSearch');
+  var q=input?input.value.toLowerCase().trim():'';
+  var grid=document.getElementById('mainGamesGrid');
   if(!grid)return;
   if(!q){
-    filterByCategory(S.filterCat||'all');
+    // Restore category filter when search is cleared
+    filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
     return;
   }
-  // While searching: deactivate chips, search all cards
-  document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
-  grid.querySelectorAll('.mode-card').forEach(card=>{
-    const text=((card.dataset.title||'')+(card.dataset.desc||'')).toLowerCase();
-    card.style.display=text.includes(q)?'':'none';
+  // Searching: deactivate chips visually
+  document.querySelectorAll('.filter-chip').forEach(function(c){
+    c.classList.remove('active');
+    c.style.background='';
+    c.style.color='';
+  });
+  // Search across title, desc, category ID and category label
+  var catLabels={pure_geo:'pure geo',lifestyle:'lifestyle',eu_plates:'kennzeichen plates',sport:'sport',hl_compare:'higher lower',comparisons:'vergleiche',airports:'airports flughäfen',neighbors:'nachbarländer',map_mode:'weltkarte map'};
+  grid.querySelectorAll('.mode-card').forEach(function(card){
+    var title=(card.dataset.title||'').toLowerCase();
+    var desc=(card.dataset.desc||'').toLowerCase();
+    var cat=(card.dataset.category||'').toLowerCase();
+    var catLabel=(catLabels[card.dataset.category]||'');
+    var combined=title+' '+desc+' '+cat+' '+catLabel;
+    card.style.display=combined.includes(q)?'':'none';
   });
 }
+window.filterGames=filterGames;
 function filterByCategory(cat){
   // Accept both internal IDs ('pure_geo') and 'all'
   if(typeof S!=='undefined')S.filterCat=cat;
@@ -8629,15 +8642,15 @@ function renderHomeTab(){
   .filter-chips-container::-webkit-scrollbar{display:none !important}
   .filter-chip{font-size:.85rem !important;padding:9px 18px !important;white-space:nowrap !important;flex-shrink:0 !important;border-radius:22px !important}
   .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center !important}
-  .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:8px !important;align-items:center !important;overflow-x:auto !important;padding:0 15px 10px 15px !important}
-  #gameSearch{flex:1 !important;min-width:120px !important}
-  .btn-random-game,.settings-btn{white-space:nowrap !important;flex-shrink:0 !important;cursor:pointer !important}
-  .settings-btn{background:#e2e8f0 !important;border:none !important;padding:10px 13px !important;border-radius:8px !important;font-size:1.35rem !important;line-height:1 !important}
+  .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:8px !important;align-items:center !important}
+  #gameSearch{flex:1 !important;min-width:50px !important}
+  .btn-random-game,.settings-btn{flex-shrink:0 !important;cursor:pointer !important}
+  .settings-btn{background:#e2e8f0 !important;border:none !important;width:45px !important;height:45px !important;border-radius:8px !important;font-size:1.35rem !important;display:flex !important;align-items:center !important;justify-content:center !important}
 </style>
-    <div class="menu-search-container">
-      <input type="text" id="gameSearch" placeholder="🔍 Suchen..." oninput="filterGames()">
-      <button class="btn-random-game" onclick="playRandomGame()">🎲 Zufall</button>
-      <button class="settings-btn" onclick="renderSettingsModal()" aria-label="Einstellungen">⚙️</button>
+    <div class="menu-search-container" style="display:flex;gap:8px;margin:10px;align-items:center;width:calc(100% - 20px);box-sizing:border-box;flex-wrap:nowrap">
+      <input type="text" id="gameSearch" placeholder="🔍 Suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:8px;font-size:16px;min-width:0;outline:none;box-sizing:border-box">
+      <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 14px;border-radius:8px;font-weight:700;font-size:1.25rem;cursor:pointer;flex-shrink:0;white-space:nowrap">🎲</button>
+      <button onclick="if(typeof renderSettingsModal==='function')renderSettingsModal();" style="background:#e2e8f0;border:none;padding:0;border-radius:8px;font-size:1.4rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;width:45px;height:45px">⚙️</button>
     </div>
     <div class="filter-chips-container">${_chips}</div>
     <div class="games-grid" id="mainGamesGrid">${_allCards}</div>
