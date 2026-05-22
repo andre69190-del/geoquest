@@ -6760,7 +6760,7 @@ app.innerHTML=`<div class="scr">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
         </div>
       </div>
       <div class="q-area" style="padding:0 8px 8px">
@@ -6789,7 +6789,7 @@ app.innerHTML=`<div class="scr">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
         </div>
       </div>
       ${S.mpOpponent?`<div class="duell-bar-wrap" style="margin:0 0 4px"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -6830,7 +6830,7 @@ app.innerHTML=`<div class="scr">
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -6904,7 +6904,7 @@ app.innerHTML=`<div class="scr">
         ${diff==="survival"
           ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
           :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
       </div>
     </div>
     ${S.mpOpponent?`<div class="duell-bar-wrap"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -7874,7 +7874,7 @@ function renderLogikGitter(sc){
       <div style="display:flex;align-items:center;gap:8px">
         <div style="font-size:.75rem;color:var(--text3)">${gd.correctCount}/9</div>
         <div style="font-size:.85rem;font-weight:700;min-width:2.2rem;text-align:right;color:${tc()}">${S.tm}s</div>
-        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
       </div>
     </div>
     <div class="tbar"><div class="tfill" style="width:${pct()}%;background:${tc()}"></div></div>
@@ -7997,7 +7997,7 @@ function renderReiseroute(sc){
       </div>
       <div style="display:flex;align-items:center;gap:8px">
         <div style="font-size:.75rem;color:var(--text3)">${rd.steps} Schr.</div>
-        <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()">🐞</button>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
       </div>
     </div>
     <div style="background:var(--bg2);border-radius:12px;padding:.6rem .75rem;margin:.3rem 0">
@@ -8455,41 +8455,31 @@ function filterGames(){
   });
 }
 window.filterGames=filterGames;
-var _CAT_NAME_MAP={'Alle':'all','Pure Geo':'pure_geo','Kultur & Lifestyle':'lifestyle',
-  'Kennzeichen':'eu_plates','Sport':'sport','Higher / Lower':'hl_compare',
-  'Vergleiche':'comparisons','Airports & Spezial':'airports',
-  'Nachbarlaender':'neighbors','Weltkarte':'map_mode'};
 function filterByCategory(cat){
-  var resolvedCat=_CAT_NAME_MAP[cat]||cat;
-  if(typeof S!=='undefined')S.filterCat=resolvedCat;
+  console.log('[GQ] filterByCategory:',cat);
+  if(typeof S!=='undefined')S.filterCat=cat;
+  // Update chip active states
   document.querySelectorAll('.filter-chip').forEach(function(c){
-    var isActive=c.dataset.cat===resolvedCat;
+    var isActive=c.dataset.cat===cat;
     c.classList.toggle('active',isActive);
     c.style.background=isActive?'#3b82f6':'';
     c.style.color=isActive?'#fff':'';
   });
-  var grid=document.getElementById('mainGamesGrid');
-  if(!grid)return;
-  grid.querySelectorAll('.mode-card').forEach(function(card){
-    var show=resolvedCat==='all'||card.dataset.category===resolvedCat;
-    card.style.display=show?'':'none';
+  // Show/hide cards by data-category (strict direct match)
+  document.querySelectorAll('[data-category]').forEach(function(card){
+    var cardCat=card.getAttribute('data-category');
+    card.style.display=(cat==='all'||cardCat===cat)?'':'none';
   });
   var gs=document.getElementById('gameSearch');
   if(gs)gs.value='';
 }
 window.filterByCategory=filterByCategory;
-// Apply default category filter after render
-(function(){
-  function _applyDefaultCat(){
-    var cat=(typeof S!=='undefined'&&S.filterCat)||'pure_geo';
-    window.filterByCategory(cat);
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',function(){setTimeout(_applyDefaultCat,100);});
-  } else {
-    setTimeout(_applyDefaultCat,100);
-  }
-})();
+// Apply default filter on load via DOMContentLoaded
+document.addEventListener('DOMContentLoaded',function(){
+  setTimeout(function(){
+    window.filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
+  },300);
+});
 function playRandomGame(){
   const pool=MODES.filter(m=>!m.comingSoon);
   if(!pool.length)return;
