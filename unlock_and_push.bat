@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Phase 178: Bulletproof showGameInfo (DOM createElement) + header nowrap + ontouchstart fix"
+git commit -m "Phase 179: Gear button restored + pure_geo default + filterByCategory fixed + bottom nav enlarged"
 echo.
 git push origin main
 echo.

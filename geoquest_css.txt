@@ -625,3 +625,9 @@ input[type=text]::placeholder{color:var(--text3)}
 .btn-random-game{background-color:#4f46e5 !important;color:#ffffff !important;border:none !important;padding:14px 20px !important;border-radius:10px !important;font-weight:800 !important;font-size:16px !important;cursor:pointer !important;white-space:nowrap !important;box-shadow:0 4px 6px rgba(0,0,0,.2) !important;flex-shrink:0 !important}
 .btn-random-game:hover{background-color:#4338ca !important;transform:translateY(-1px) !important}
 .btn-random-game:active{transform:scale(.95) !important}
+
+/* Phase 179: Larger bottom nav */
+.bottom-nav{min-height:72px !important;padding-bottom:env(safe-area-inset-bottom,8px) !important}
+.bn-item{min-height:64px !important;display:flex !important;flex-direction:column !important;align-items:center !important;justify-content:center !important;font-size:.72rem !important;gap:3px !important;padding:6px 4px !important}
+.bn-icon{font-size:1.55rem !important;line-height:1 !important}
+.bn-lbl{font-size:.7rem !important;font-weight:700 !important}

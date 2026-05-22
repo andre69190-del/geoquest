@@ -4418,7 +4418,7 @@ let S={
   freezeActive:false,
   filter:"all",
   activeCategory:null,
-  filterCat:'all',
+  filterCat:'pure_geo',
   fcIdx:0,fcFlipped:false,fcSearch:"",fcCountry:"all",
   darkMode:false,
   authMode:"login",authEmail:"",authPassword:"",authConfirm:"",authUsername:"",authError:"",authLoading:false,
@@ -8437,9 +8437,12 @@ function filterGames(){
   });
 }
 function filterByCategory(cat){
-  S.filterCat=cat;
+  // Accept both internal IDs ('pure_geo') and 'all'
+  if(typeof S!=='undefined')S.filterCat=cat;
   document.querySelectorAll('.filter-chip').forEach(c=>{
     c.classList.toggle('active',c.dataset.cat===cat);
+    if(c.dataset.cat===cat){c.style.background='#3b82f6';c.style.color='#fff';}
+    else{c.style.background='';c.style.color='';}
   });
   const grid=document.getElementById('mainGamesGrid');
   if(!grid)return;
@@ -8450,6 +8453,16 @@ function filterByCategory(cat){
   const gs=document.getElementById('gameSearch');
   if(gs)gs.value='';
 }
+window.filterByCategory=filterByCategory;
+// Apply default category filter once DOM is ready
+(function(){
+  function _applyDefaultCat(){
+    var cat=(typeof S!=='undefined'&&S.filterCat)||'pure_geo';
+    filterByCategory(cat);
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',_applyDefaultCat);}
+  else{setTimeout(_applyDefaultCat,150);}
+})();
 function playRandomGame(){
   const pool=MODES.filter(m=>!m.comingSoon);
   if(!pool.length)return;
@@ -8618,11 +8631,13 @@ function renderHomeTab(){
   .mode-card{position:relative !important;padding:.65rem .5rem 36px !important;min-height:90px !important;display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center !important}
   .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:8px !important;align-items:center !important;overflow-x:auto !important;padding:0 15px 10px 15px !important}
   #gameSearch{flex:1 !important;min-width:120px !important}
-  .btn-random-game,.settings-btn{white-space:nowrap !important;flex-shrink:0 !important}
+  .btn-random-game,.settings-btn{white-space:nowrap !important;flex-shrink:0 !important;cursor:pointer !important}
+  .settings-btn{background:#e2e8f0 !important;border:none !important;padding:10px 13px !important;border-radius:8px !important;font-size:1.35rem !important;line-height:1 !important}
 </style>
     <div class="menu-search-container">
-      <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="filterGames()">
+      <input type="text" id="gameSearch" placeholder="🔍 Suchen..." oninput="filterGames()">
       <button class="btn-random-game" onclick="playRandomGame()">🎲 Zufall</button>
+      <button class="settings-btn" onclick="renderSettingsModal()" aria-label="Einstellungen">⚙️</button>
     </div>
     <div class="filter-chips-container">${_chips}</div>
     <div class="games-grid" id="mainGamesGrid">${_allCards}</div>
