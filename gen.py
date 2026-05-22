@@ -8449,32 +8449,40 @@ function filterGames(){
   });
 }
 window.filterGames=filterGames;
+var _CAT_NAME_MAP={'Alle':'all','Pure Geo':'pure_geo','Kultur & Lifestyle':'lifestyle',
+  'Kennzeichen':'eu_plates','Sport':'sport','Higher / Lower':'hl_compare',
+  'Vergleiche':'comparisons','Airports & Spezial':'airports',
+  'Nachbarlaender':'neighbors','Weltkarte':'map_mode'};
 function filterByCategory(cat){
-  // Accept both internal IDs ('pure_geo') and 'all'
-  if(typeof S!=='undefined')S.filterCat=cat;
-  document.querySelectorAll('.filter-chip').forEach(c=>{
-    c.classList.toggle('active',c.dataset.cat===cat);
-    if(c.dataset.cat===cat){c.style.background='#3b82f6';c.style.color='#fff';}
-    else{c.style.background='';c.style.color='';}
+  var resolvedCat=_CAT_NAME_MAP[cat]||cat;
+  if(typeof S!=='undefined')S.filterCat=resolvedCat;
+  document.querySelectorAll('.filter-chip').forEach(function(c){
+    var isActive=c.dataset.cat===resolvedCat;
+    c.classList.toggle('active',isActive);
+    c.style.background=isActive?'#3b82f6':'';
+    c.style.color=isActive?'#fff':'';
   });
-  const grid=document.getElementById('mainGamesGrid');
+  var grid=document.getElementById('mainGamesGrid');
   if(!grid)return;
-  grid.querySelectorAll('.mode-card').forEach(card=>{
-    const show=cat==='all'||card.dataset.category===cat;
+  grid.querySelectorAll('.mode-card').forEach(function(card){
+    var show=resolvedCat==='all'||card.dataset.category===resolvedCat;
     card.style.display=show?'':'none';
   });
-  const gs=document.getElementById('gameSearch');
+  var gs=document.getElementById('gameSearch');
   if(gs)gs.value='';
 }
 window.filterByCategory=filterByCategory;
-// Apply default category filter once DOM is ready
+// Apply default category filter after render
 (function(){
   function _applyDefaultCat(){
     var cat=(typeof S!=='undefined'&&S.filterCat)||'pure_geo';
-    filterByCategory(cat);
+    window.filterByCategory(cat);
   }
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',_applyDefaultCat);}
-  else{setTimeout(_applyDefaultCat,150);}
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',function(){setTimeout(_applyDefaultCat,100);});
+  } else {
+    setTimeout(_applyDefaultCat,100);
+  }
 })();
 function playRandomGame(){
   const pool=MODES.filter(m=>!m.comingSoon);
@@ -8532,8 +8540,8 @@ function closeGameInfo(){
 function renderHomeTab(){
   console.log("[GQ] renderHomeTab() filterCat=",S.filterCat);
   const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode"];
-  const _chips=`<button class="filter-chip${S.filterCat==='all'?' active':''}" data-cat="all" onclick="filterByCategory('all')">\u{1F3AE} Alle</button>`+
-    _CAT_ORDER.map(cid=>{const c=MODE_CATS[cid];if(!c)return'';return`<button class="filter-chip${S.filterCat===cid?' active':''}" data-cat="${cid}" onclick="filterByCategory('${cid}')">${c.icon} ${c.label}</button>`;}).join('');
+  const _chips=`<button class="filter-chip${S.filterCat==='all'?' active':''}" data-cat="all" onclick="window.filterByCategory('all')">\u{1F3AE} Alle</button>`+
+    _CAT_ORDER.map(cid=>{const c=MODE_CATS[cid];if(!c)return'';return`<button class="filter-chip${S.filterCat===cid?' active':''}" data-cat="${cid}" onclick="window.filterByCategory('${cid}')">${c.icon} ${c.label}</button>`;}).join('');
   const _allCards=_CAT_ORDER.flatMap(catId=>{
     const cat=MODE_CATS[catId];if(!cat)return[];
     const unlocked=isCategoryUnlocked(catId);
@@ -8652,6 +8660,7 @@ function renderHomeTab(){
     </div>
     <div class="filter-chips-container">${_chips}</div>
     <div class="games-grid" id="mainGamesGrid">${_allCards}</div>
+    <script>setTimeout(function(){window.filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');},80);</script>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>

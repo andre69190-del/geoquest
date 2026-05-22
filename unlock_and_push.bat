@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Phase 181-182: Compact header, gear moved to profile tab settings section, clean search+Zufall only"
+git commit -m "Phase 183: Filter chips window.filterByCategory, display-name mapping, post-render setTimeout"
 echo.
 git push origin main
 echo.
