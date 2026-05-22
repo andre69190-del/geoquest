@@ -8465,14 +8465,14 @@ function filterByCategory(cat){
   if(typeof S!=='undefined')S.filterCat=cat;
   document.querySelectorAll('.accordion-section').forEach(function(section){
     var sectionCat=section.dataset.cat;
-    // Reset all cards in this section to visible
+    var content=section.querySelector('.accordion-content');
+    var arrow=section.querySelector('.acc-arrow');
+    // All section HEADERS always visible — accordion IS the navigation
+    section.style.removeProperty('display');
+    // Reset all cards visible
     section.querySelectorAll('.mode-card').forEach(function(c){c.style.removeProperty('display');});
-    if(cat==='all'){
-      section.style.removeProperty('display');
-    } else if(sectionCat===cat){
-      section.style.removeProperty('display');
-      var content=section.querySelector('.accordion-content');
-      var arrow=section.querySelector('.acc-arrow');
+    if(cat==='all'||sectionCat===cat){
+      // Expand this section
       if(content){
         var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
         content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
@@ -8480,7 +8480,9 @@ function filterByCategory(cat){
       }
       if(arrow){arrow.style.transform='rotate(180deg)';}
     } else {
-      section.style.setProperty('display','none','important');
+      // Collapse content — but keep header visible
+      if(content){content.classList.remove('open');content.style.display='none';}
+      if(arrow){arrow.style.transform='rotate(0deg)';}
     }
   });
   var gs=document.getElementById('gameSearch');

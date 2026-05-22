@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Fix: Accordion grid guaranteed via cssText + important, header inline styles"
+git commit -m "Fix: All accordion headers always visible, only content collapses"
 echo.
 git push origin main
 echo.
