@@ -7143,7 +7143,7 @@ function totalUniquePlates(){
 
 /* â”€â”€ Spotter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/
 function spotterCollect(){
-  const code=(S.spotterInput||"").toUpperCase().trim();
+  const code=(S.spotterInput||"").toUpperCase().replace(/\s+/g,"").trim();
   if(\!code){S.spotterMsg="Bitte Kennzeichen eingeben\!";S.spotterOk=null;render();return;}
   const country=S.spotterCountry&&S.spotterCountry\!=="all"?S.spotterCountry:null;
   /* Phase 104: Fuzzy-Lookup – normalisiere zuerst (0→’O, 1→’I) */
@@ -7238,7 +7238,7 @@ function renderCollectionScreen(){
   const _CHLP=c=>{const M={
     'Deutschland':{ph:'K\u00fcrzel (z.B. B, M, S...)',info:'K\u00fcrzel links (vorne) = Landkreis/Stadt',tp:'de',ex:'M',lbl:'Das M vorne steht f\u00fcr Stadt/Landkreis',cc:'D',nums:'MW 123'},
     '\u00d6sterreich':{ph:'K\u00fcrzel (z.B. W, S, I...)',info:'1\u20133 Buchst. links = Bezirk',tp:'de',ex:'W',lbl:'Das W vorne steht f\u00fcr Stadt/Bezirk',cc:'A',nums:'12345 AB'},
-    'Schweiz':{ph:'K\u00fcrzel (z.B. ZH, BE...)',info:'2 Buchst. links = Kanton',tp:'ch',ex:'ZH',lbl:'ZH steht f\u00fcr den Kanton',cc:'CH',nums:'123 456'},
+    'Schweiz':{ph:'Kanton (z.B. AG, ZH, BE...)',info:'2-Buchstaben Kantonskürzel eingeben',tp:'ch',ex:'AG',lbl:'AG = Kanton Aargau',cc:'CH',nums:'123 456'},
     'Frankreich':{ph:'D\u00e9partement (z.B. 75, 13...)',info:'2-stellige D\u00e9partement-Nummer rechts',tp:'fr',ex:'75',lbl:'Die 75 rechts steht f\u00fcr das D\u00e9partement',cc:'F',nums:'AB-123-CD'},
     'Italien':{ph:'K\u00fcrzel (z.B. RM, MI...)',info:'2 Buchst. links = Provinz',tp:'de',ex:'RM',lbl:'RM steht f\u00fcr Rom',cc:'I',nums:'RM 123 AB'},
     'Polen':{ph:'K\u00fcrzel (z.B. W, KR...)',info:'Links = Woiwodschaft/Stadt-K\u00fcrzel',tp:'de',ex:'W',lbl:'W steht f\u00fcr Warschau',cc:'PL',nums:'KR 12345'},
@@ -7375,7 +7375,7 @@ function renderCollectionScreen(){
     </select>
     <div style="display:flex;gap:8px">
       <input type="text" maxlength="6" placeholder="${_cPH}" value="${esc(spotVal)}" autocapitalize="characters" autocorrect="off" autocomplete="off" spellcheck="false"
-        oninput="S.spotterInput=this.value.toUpperCase();this.value=this.value.toUpperCase();S.spotterMsg=''"
+        oninput="var _v=this.value.toUpperCase().replace(/\s+/g,'');S.spotterInput=_v;this.value=_v;S.spotterMsg=''"
         class="spotter-input">
       <button class="btn-p" style="width:auto;padding:.5rem 1rem;margin-bottom:0" onclick="spotterCollect()">${t("btn_collect")}</button>
     </div>
