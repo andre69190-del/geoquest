@@ -6476,8 +6476,12 @@ window._carouselGoTo=function(innerEl,pageIdx){
   var pages=innerEl.querySelectorAll('.carousel-page');
   var n=Math.max(0,Math.min(pages.length-1,pageIdx));
   innerEl._cPage=n;
-  /* pixel width from clipping wrapper (parentElement) */
-  var w=(innerEl.parentElement?innerEl.parentElement.clientWidth:0)||window.innerWidth;
+  /* pixel width — same robust fallback as _getW() */
+  var wrapper=innerEl.parentElement;
+  var w=(wrapper?wrapper.clientWidth:0)
+      ||(document.getElementById('mainGamesGrid')||{}).clientWidth
+      ||(document.documentElement.clientWidth-30)
+      ||window.innerWidth;
   innerEl.style.transform='translateX('+(-n*w)+'px)';
   /* update dots — sibling of wrapper, i.e. previousSibling of parentElement */
   var wrapper=innerEl.parentElement;
@@ -6493,17 +6497,25 @@ window._carouselInit=function(innerEl){
   innerEl._cInit=true;
   innerEl._cPage=0;
   innerEl.style.transition='transform 0.28s cubic-bezier(.4,0,.2,1)';
-  /* fix page widths to parent pixel width */
-  function _fixW(){
+  /* fix page widths to parent pixel width — with multi-fallback + RAF retry */
+  function _getW(){
     var wrapper=innerEl.parentElement;
-    if(!wrapper)return;
-    var w=wrapper.clientWidth;
-    if(!w)return;
+    var w=(wrapper?wrapper.clientWidth:0)
+        ||(document.getElementById('mainGamesGrid')||{}).clientWidth
+        ||(document.documentElement.clientWidth-30);
+    return w||0;
+  }
+  function _fixW(){
+    var w=_getW();
+    if(!w){requestAnimationFrame(_fixW);return;}
     var pages=innerEl.querySelectorAll('.carousel-page');
     innerEl.style.width=(w*pages.length)+'px';
     pages.forEach(function(p){p.style.width=w+'px';p.style.minWidth=w+'px';});
+    /* re-apply current position after resize */
+    window._carouselGoTo(innerEl,innerEl._cPage||0);
   }
   _fixW();
+  window.addEventListener('resize',_fixW,{passive:true});
   /* touch swipe */
   var sx=0,sy=0,moved=false;
   innerEl.addEventListener('touchstart',function(e){
@@ -9143,7 +9155,6 @@ function renderSettingsModal(){
       <button onclick="S.darkMode=!S.darkMode;applyTheme();render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.darkMode?'An':'Aus'}</button>
     </div>
     ${(()=>{const _gc=parseInt(localStorage.getItem('geoquest_grid_cols'))||4;const _gr=parseInt(localStorage.getItem('geoquest_grid_rows'))||6;return`<div style="margin:20px 0;padding-top:15px;border-top:1px solid var(--border)"><div style="font-weight:700;margin-bottom:10px">\u{1F4CA} Spiele nebeneinander (Raster)</div><div style="display:flex;justify-content:center;gap:8px;margin-bottom:14px">${[2,3,4,5].map(n=>`<button onclick="saveGridCols(${n});render()" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gc===n?'#3b82f6':'var(--bg3)'};color:${_gc===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div><div style="font-weight:700;margin-bottom:10px">\u{1F4D6} Reihen pro Seite (Carousel)</div><div style="display:flex;justify-content:center;gap:8px">${[3,4,5,6,8].map(n=>`<button onclick="saveGridRows(${n})" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gr===n?'#10b981':'var(--bg3)'};color:${_gr===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div></div>`;})()}
-        ${sbUser?.email?`<button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">\u{1F6AA} Abmelden</button><button class="btn-g" style="margin-bottom:.5rem;font-size:.75rem;color:#94a3b8;border-color:#94a3b8" onclick="doDeleteAccount()">\u{1F5D1}\uFE0F Konto l\u00f6schen (DSGVO)</button>`:''}
     <button class="btn-g" style="margin-bottom:0" onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
   </div></div>`;
 }
@@ -10194,4 +10205,4 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print('Also written -> index.html (Netlify deploy target)')
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
