@@ -6470,12 +6470,52 @@ function saveGridRows(val){
   localStorage.setItem('geoquest_grid_rows',String(val));
   render();
 }
-window.updateCarouselDots=function(track){
-  if(!track)return;
-  const pageIndex=Math.round(track.scrollLeft/Math.max(1,track.clientWidth));
-  const dots=track.previousElementSibling&&track.previousElementSibling.classList.contains('carousel-dots')?track.previousElementSibling.querySelectorAll('.dot'):[];
-  dots.forEach(function(dot,i){dot.style.background=i===pageIndex?'#10b981':'#cbd5e1';});
+/* ── JS-Transform Carousel Engine ───────────────────────────────────────── */
+window._carouselGoTo=function(trackEl,pageIdx){
+  if(!trackEl)return;
+  var pages=trackEl.querySelectorAll('.carousel-page');
+  var n=Math.max(0,Math.min(pages.length-1,pageIdx));
+  trackEl._cPage=n;
+  trackEl.style.transform='translateX('+(-n*100)+'%)';
+  var dotsEl=trackEl.previousElementSibling;
+  if(dotsEl&&dotsEl.classList.contains('carousel-dots')){
+    dotsEl.querySelectorAll('.dot').forEach(function(dot,i){
+      dot.style.background=i===n?'#10b981':'#cbd5e1';
+    });
+  }
 };
+window._carouselInit=function(trackEl){
+  if(!trackEl||trackEl._cInit)return;
+  trackEl._cInit=true;
+  trackEl._cPage=0;
+  trackEl.style.transition='transform 0.28s cubic-bezier(.4,0,.2,1)';
+  var sx=0,sy=0,moved=false;
+  trackEl.addEventListener('touchstart',function(e){
+    sx=e.touches[0].clientX;sy=e.touches[0].clientY;moved=false;
+  },{passive:true});
+  trackEl.addEventListener('touchmove',function(){moved=true;},{passive:true});
+  trackEl.addEventListener('touchend',function(e){
+    if(!moved)return;
+    var dx=sx-e.changedTouches[0].clientX;
+    var dy=sy-e.changedTouches[0].clientY;
+    if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>35){
+      window._carouselGoTo(trackEl,trackEl._cPage+(dx>0?1:-1));
+    }
+  },{passive:true});
+  /* desktop mouse swipe */
+  var msx=0,mdown=false;
+  trackEl.addEventListener('mousedown',function(e){msx=e.clientX;mdown=true;});
+  trackEl.addEventListener('mouseup',function(e){
+    if(!mdown)return;mdown=false;
+    var dx=msx-e.clientX;
+    if(Math.abs(dx)>35)window._carouselGoTo(trackEl,trackEl._cPage+(dx>0?1:-1));
+  });
+};
+window._initAllCarousels=function(){
+  document.querySelectorAll('.carousel-track').forEach(function(t){window._carouselInit(t);});
+};
+/* legacy compat */
+window.updateCarouselDots=function(){};
 // Apply saved grid cols on load (robust version)
 (function(){
   let _sv=parseInt(localStorage.getItem('geoquest_grid_cols'));
@@ -6489,6 +6529,7 @@ function _scheduleFilterRefresh(){
     var _gs=document.getElementById("gameSearch");
     if(!_gs||!_gs.value.trim())window.filterByCategory((typeof S!=="undefined"&&S.filterCat)||"pure_geo");
   }
+  setTimeout(function(){if(typeof window._initAllCarousels==="function")window._initAllCarousels();},120);
 }
 function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
   /* Surgical Scope Guard for candidates */
@@ -8529,7 +8570,7 @@ function filterByCategory(cat){
       // Expand this section
       if(content){
         var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-        content.style.cssText='display:block;padding:0;width:100%;max-width:100%;overflow:hidden;box-sizing:border-box';
+        content.style.cssText='display:block;padding:0;width:100%;box-sizing:border-box';
         content.classList.add('open');
       }
       if(arrow){arrow.style.transform='rotate(180deg)';}
@@ -8553,9 +8594,10 @@ window.toggleAccordion=function(header,catId){
     if(arrow)arrow.style.transform='rotate(0deg)';
   } else {
     var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-    content.style.cssText='display:block;padding:0;width:100%;max-width:100%;overflow:hidden;box-sizing:border-box';
+    content.style.cssText='display:block;padding:0;width:100%;box-sizing:border-box';
     content.classList.add('open');
     if(arrow)arrow.style.transform='rotate(180deg)';
+    setTimeout(function(){if(typeof window._initAllCarousels==="function")window._initAllCarousels();},50);
   }
 };
 
@@ -8604,7 +8646,7 @@ function showFavorites(){
     if(hasMatch){
       if(content){
         var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-        content.style.cssText='display:block;padding:0;width:100%;max-width:100%;overflow:hidden;box-sizing:border-box';
+        content.style.cssText='display:block;padding:0;width:100%;box-sizing:border-box';
         content.classList.add('open');
       }
       if(arrow){arrow.style.transform='rotate(180deg)';}
@@ -8700,7 +8742,7 @@ function renderHomeTab(){
     const _ipp=_cols*_rows;
     const _nPages=Math.ceil(cardArr.length/_ipp)||1;
     const _dots=_nPages>1?`<div class="carousel-dots">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" style="display:inline-block;width:7px;height:7px;background:${i===0?'#10b981':'#cbd5e1'};border-radius:50%;margin:0 3px;transition:background .3s"></span>`).join('')}</div>`:'';
-    const _track=`<div class="carousel-track" onscroll="window.updateCarouselDots(this)">${Array.from({length:_nPages}).map((_,pi)=>{
+    const _track=`<div class="carousel-track">${Array.from({length:_nPages}).map((_,pi)=>{
       const pg=cardArr.slice(pi*_ipp,(pi+1)*_ipp);
       return`<div class="carousel-page" style="display:grid !important;grid-template-columns:repeat(${_cols},1fr) !important;min-width:100%;flex-shrink:0;scroll-snap-align:start;gap:10px;align-content:start;padding:10px 0 15px;width:100%;box-sizing:border-box">${pg.join('')}</div>`;
     }).join('')}</div>`;
@@ -10135,4 +10177,4 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print('Also written -> index.html (Netlify deploy target)')
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
