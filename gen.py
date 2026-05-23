@@ -841,7 +841,7 @@ function renderWordGenerator() {
   html += '<p style="font-size:0.9rem;color:var(--text2)">Verfügbare Buchstaben:</p>';
   html += '<div class="available-letters">' + lettersHtml + '</div>';
   html += '<input type="text" class="word-generator-input" placeholder="Wort bilden..." />';
-  html += '<button onclick="checkWord(this.previousElementSibling.value)" style="width:100%;margin-top:8px">ßœberprüfen</button>';
+  html += '<button onclick="checkWord(this.previousElementSibling.value)" style="width:100%;margin-top:8px">Überprüfen</button>';
   html += '</div>';
 
   return html;
@@ -916,7 +916,7 @@ try {
 /* === MAP-MODE TIMER & TRANSLATION (Phase 155) === */
 
 /**
- * Render die ßœberschrift für Map-Mode mit übersetztem Länder-Namen
+ * Render die Überschrift für Map-Mode mit übersetztem Länder-Namen
  * @param {string} cc - Country Code (z.B. "LY")
  * @param {string} mode - Game Mode (z.B. "map_find")
  */
@@ -1139,7 +1139,7 @@ function highlightMapRegion(cc, found) {
 }
 
 /**
- * Initialisiere alle Karten-Marker mit ßœbersetzungen
+ * Initialisiere alle Karten-Marker mit Übersetzungen
  */
 function initMapMarkers() {
   const lang = (typeof S !== 'undefined' && S.language) || localStorage.getItem('gq_lang') || 'de';
@@ -2072,10 +2072,10 @@ fi:{
   spotter_dup:"📋 {code} ({country}) jo kerätty!",
   map_unavail:"Kartta ei saatavilla",map_loading:"Ladataan karttaa…",
   q_subway_km:"Kuinka pitkä on metroverkosto … (km)?",q_subway_lines:"Kuinka monta metrolinjaa on …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Rento · Ei aikarajaa · ∞ Elämää",diff_desc_hc:"\u{1F525} Hardcore: Klassinen · Ei aikarajaa · 3 Elämää",diff_desc_surv:"\u{1F480} Survival: Aikaa vastaan · 8s · 3 Elämää",hud_lives:"ELß„Mß„T",score_mult_max:"Maks Kerroin",score_time_bonus:"Aikabonus",pts_abbr:"p.",score_correct_lbl:"oikein",mode_wappen:"Vaakunat",mode_slf:"Kaupunki-Maa-Joki",mode_euro:"Eurokolikot"
+  diff_desc_casual:"\u{1F7E2} Casual: Rento · Ei aikarajaa · ∞ Elämää",diff_desc_hc:"\u{1F525} Hardcore: Klassinen · Ei aikarajaa · 3 Elämää",diff_desc_surv:"\u{1F480} Survival: Aikaa vastaan · 8s · 3 Elämää",hud_lives:"ELÄMÄT",score_mult_max:"Maks Kerroin",score_time_bonus:"Aikabonus",pts_abbr:"p.",score_correct_lbl:"oikein",mode_wappen:"Vaakunat",mode_slf:"Kaupunki-Maa-Joki",mode_euro:"Eurokolikot"
 },
 et:{
-  play:"Mß„NGI",again:"Mß„NGI UUESTI",menu:"Peamenüü",board:"Edetabel",pass:"Pass",
+  play:"MÄNGI",again:"MÄNGI UUESTI",menu:"Peamenüü",board:"Edetabel",pass:"Pass",
   profile:"Profiil",stats:"Statistika",casual:"Lihtne",hardcore:"Raske",rounds:"Voorud",
   btn_collect:"Kogu",btn_back:"Tagasi menüüsse",btn_next:"Järgmine →’",
   btn_again:"Mängi uuesti",btn_menu:"Peamenüü",btn_adapt:"Kohanda",
@@ -2787,13 +2787,13 @@ const _DEFAULT_NEIGHBORS={
   "Irak":["Türkei","Syrien","Jordanien","Saudi-Arabien","Kuwait","Iran"],
   "Syrien":["Türkei","Irak","Jordanien","Libanon","Israel"],
   "Saudi-Arabien":["Jordanien","Irak","Kuwait","Bahrain","Katar","VAE","Oman","Jemen"],
-  "ß„gypten":["Israel","Sudan","Libyen"],
-  "Sudan":["ß„gypten","Libyen","Tschad","Zentralafrikanische Republik","Südsudan","ß„thiopien","Eritrea"],
-  "ß„thiopien":["Eritrea","Dschibuti","Somalia","Kenia","Sudan","Südsudan"],
+  "Ägypten":["Israel","Sudan","Libyen"],
+  "Sudan":["Ägypten","Libyen","Tschad","Zentralafrikanische Republik","Südsudan","Äthiopien","Eritrea"],
+  "Äthiopien":["Eritrea","Dschibuti","Somalia","Kenia","Sudan","Südsudan"],
   "Nigeria":["Benin","Niger","Kamerun","Tschad"],
   "Demokratische Republik Kongo":["Republik Kongo","Angola","Sambia","Tansania","Ruanda","Burundi","Uganda","Zentralafrikanische Republik","Südsudan"],
   "Südafrika":["Namibia","Botswana","Simbabwe","Mosambik","Eswatini","Lesotho"],
-  "Kenia":["ß„thiopien","Somalia","Tansania","Uganda","Südsudan"],
+  "Kenia":["Äthiopien","Somalia","Tansania","Uganda","Südsudan"],
   "Ungarn":["Österreich","Slowakei","Ukraine","Rumänien","Serbien","Kroatien","Slowenien"],
   "Rumänien":["Ungarn","Ukraine","Moldawien","Bulgarien","Serbien"],
   "Griechenland":["Albanien","Nordmazedonien","Bulgarien","Türkei"],
@@ -5547,7 +5547,7 @@ function nextRound(){
     render();
   }else{S.rd=nr;lq();}
 }
-function lq(){ console.log("🟢 [TRACKER] 2. lq (loadQuestion) gestartet.");
+function lq(){
   clearInterval(tIv);
   if(\!S.queueExtra)S.queueExtra=[];
   if(\!S.askedLids)S.askedLids=new Set();
@@ -6170,7 +6170,7 @@ showMessage(isCorrect?'Richtig!':'Falsch!');
 setTimeout(startNextRound,1500);
 }
 
-function startGame(m){ console.log("🟢 [TRACKER] 1. startGame gestartet. Mode:", m);
+function startGame(m){
   clr();
   const survBest=parseInt(localStorage.getItem('gq_surv_best')||'0');
   const _m=m||S.mode;
@@ -6447,13 +6447,14 @@ function saveGridCols(val){
 })();
 function _scheduleFilterRefresh(){
   if(typeof window.filterByCategory==="function"&&document.getElementById("mainGamesGrid")){
-    window.filterByCategory((typeof S!=="undefined"&&S.filterCat)||"pure_geo");
+    var _gs=document.getElementById("gameSearch");
+    if(!_gs||!_gs.value.trim())window.filterByCategory((typeof S!=="undefined"&&S.filterCat)||"pure_geo");
   }
 }
 function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
   /* Surgical Scope Guard for candidates */
   const candidates_safe = (typeof S !== "undefined" && S.candidates) ? S.candidates : ((typeof candidates !== "undefined") ? candidates : []);
- console.log("🟢 [TRACKER] 3. render gestartet. Aktuelle Phase:", typeof S !== "undefined" ? S.ph : "S is null");
+
   updateHdrGuest();
   const app=document.getElementById("app");
   if(\!app)return;
@@ -6903,7 +6904,6 @@ app.innerHTML=`<div class="scr">
   const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
   const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
   const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';
-  console.log("🟢 [TRACKER] 4. Erreiche HTML-Zuweisung. Antwort-Block Länge:", typeof answerHtml !== "undefined" ? answerHtml.length : "UNDEFINED");
   const puBar=`<div class="pu-bar">
     <button class="pu-btn${S.half_removed?" pu-used":""}" onclick="useFiveO()" ${(S.half_removed||(pu.five0||0)===0||_is2ans)?"disabled":""} style="${_j5sty}" title="${_j5title}">\u2702 50/50 <span style="font-size:.62rem">${_j5label}</span></button>
     <button class="pu-btn${S.freezeActive?" freeze-on":""}" onclick="useFreeze()" ${(S.freezeActive||(pu.freeze||0)===0)?"disabled":""} title="Zeit-Stopp (${pu.freeze||0} \u00fcbrig)">\u{1F9CA} Freeze <span style="font-size:.62rem">(${pu.freeze||0})</span></button>
@@ -7147,7 +7147,7 @@ function spotterCollect(){
   if(\!code){S.spotterMsg="Bitte Kennzeichen eingeben\!";S.spotterOk=null;render();return;}
   const country=S.spotterCountry&&S.spotterCountry\!=="all"?S.spotterCountry:null;
   /* Phase 104: Fuzzy-Lookup – normalisiere zuerst (0→’O, 1→’I) */
-  const _norm=s=>s.replace(/0/g,'O').replace(/1/g,'I').replace(/ßœ/g,'UE').replace(/Ö/g,'OE').replace(/ß„/g,'AE');
+  const _norm=s=>s.replace(/0/g,'O').replace(/1/g,'I').replace(/Ü/g,'UE').replace(/Ö/g,'OE').replace(/Ä/g,'AE');
   const codeNorm=_norm(code);
   /* Find matching plates: exact →’ normalisiert →’ prefix */
   const _match=(c,p)=>p.code===c&&(country===null||p.country===country);
@@ -7178,11 +7178,11 @@ function spotterCollect(){
     const elsewhere=PLATES_DATA.filter(p=>p.code===code||p.code===codeNorm);
     if(elsewhere.length){
       const others=[...new Set(elsewhere.map(p=>p.country))].join(", ");
-      S.spotterMsg="â“ '"+esc(code)+"' "+t("spotter_not_in")+" "+(country?displayCountry(country):t("spotter_all"))+" – "+t("spotter_but_in")+": "+esc(others);
+      S.spotterMsg="❌ '"+esc(code)+"' "+t("spotter_not_in")+" "+(country?displayCountry(country):t("spotter_all"))+" – "+t("spotter_but_in")+": "+esc(others);
     }else if(prefixSuggestions.length){
       S.spotterMsg="🔍 Meintest du: "+prefixSuggestions.join(", ")+"?";
     }else{
-      S.spotterMsg="âŒ "+t("spotter_unknown")+": "+esc(code);
+      S.spotterMsg="❌ "+t("spotter_unknown")+": "+esc(code);
     }
     S.spotterOk=false;render();return;
   }
@@ -8175,7 +8175,7 @@ function showAd(){if(!ENABLE_ADS||\!sbProfile?.is_premium)return; /* P151 */S.ad
 function closeAd(){S.adModal=false;render();}
 function renderAdModal(){
   return`<div class="modal-overlay" onclick="closeAd()" style="z-index:500"><div class="modal-box" style="max-width:320px;padding:1.25rem">
-    <div style="text-align:center;font-size:.6rem;color:var(--text3);letter-spacing:1.2px;margin-bottom:.6rem">ANZEIGE · UNTERSTßœTZT GEOQUEST</div>
+    <div style="text-align:center;font-size:.6rem;color:var(--text3);letter-spacing:1.2px;margin-bottom:.6rem">ANZEIGE · UNTERSTÜTZT GEOQUEST</div>
     <div style="min-height:100px;background:var(--bg3);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text3);border:1.5px dashed var(--border);margin-bottom:.85rem;padding:1rem">
       <div style="font-size:1.8rem;margin-bottom:.35rem">📢</div>
       <div style="font-size:.8rem;font-weight:700">Werbung</div>
@@ -8541,11 +8541,11 @@ function showFavorites(){
   var favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
   if(!favs.length){
     // Toast: keine Favoriten
-    var t=document.createElement('div');
-    t.textContent=t('fav_empty')||'No favourites yet';
-    t.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;padding:10px 18px;border-radius:20px;font-size:.82rem;font-weight:600;z-index:99999;pointer-events:none';
-    document.body.appendChild(t);
-    setTimeout(function(){t.remove();},2500);
+    var toast=document.createElement('div');
+    toast.textContent=t('fav_empty')||'No favourites yet';
+    toast.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;padding:10px 18px;border-radius:20px;font-size:.82rem;font-weight:600;z-index:99999;pointer-events:none';
+    document.body.appendChild(toast);
+    setTimeout(function(){toast.remove();},2500);
     return;
   }
   document.querySelectorAll('.accordion-section').forEach(function(section){
@@ -8628,7 +8628,6 @@ function closeGameInfo(){
   if(el)el.remove();
 }
 function renderHomeTab(){
-  console.log("[GQ] renderHomeTab() filterCat=",S.filterCat);
   const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode"];
 
   // Build accordion sections — Pure Geo auto-open, others closed
@@ -8695,7 +8694,7 @@ function renderHomeTab(){
       </div>
     </div>
     <div style="background:linear-gradient(135deg,#4f46e5,#7c3aed);border-radius:14px;padding:.7rem 1rem;margin-bottom:.55rem;cursor:pointer;display:flex;align-items:center;gap:12px;box-shadow:0 2px 10px rgba(99,102,241,.25)" onclick="S.lvModal=true;S.lv=null;render()" role="button">
-      <div style="font-size:2rem">⚔️</div>
+      <div style="font-size:2rem">🕹️</div>
       <div style="flex:1"><div style="font-size:.9rem;font-weight:900;color:#fff">Lokal 1:1 Hot-Seat</div><div style="font-size:.7rem;color:rgba(255,255,255,.75)">Zwei Spieler · Ein Gerät · 10 Runden</div></div>
       <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:.25rem .75rem;font-size:.72rem;font-weight:700">► Los</div>
     </div>
@@ -8716,7 +8715,6 @@ function renderHomeTab(){
     }</p>
     <div style="margin:.6rem 0 .5rem;text-align:center"><button onclick="reportBug()" style="background:transparent;color:var(--text3);border:none;font-size:.72rem;cursor:pointer;text-decoration:underline;padding:.3rem .5rem">🐞 Fehler melden</button></div>
     <div style="height:5rem"></div>`;
-  console.log("[GQ] renderHomeTab() returning length:",_homeHTML.length);
   return _homeHTML;
 }
 function renderLernenTab(){
@@ -8858,7 +8856,7 @@ function renderProfilTab(){
       ${S.authError?`<div class="auth-err">${S.authError}</div>`:""}
       ${isNewPw?`
         <div class="auth-field"><label>NEUES PASSWORT</label><div style="position:relative"><input id="pw-main" type="password" style="padding-right:2.4rem" placeholder="Mind. 6 Zeichen" value="${S.authPassword}" oninput="S.authPassword=this.value" onkeydown="if(event.key==='Enter')doSetNewPassword();"><button type="button" onclick="togglePw('pw-main',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>
-        <div class="auth-field"><label>PASSWORT BESTß„TIGEN</label><div style="position:relative"><input id="pw-confirm" type="password" style="padding-right:2.4rem" placeholder="Passwort wiederholen" value="${S.authConfirm}" oninput="S.authConfirm=this.value" onkeydown="if(event.key==='Enter')doSetNewPassword();"><button type="button" onclick="togglePw('pw-confirm',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>
+        <div class="auth-field"><label>PASSWORT BESTÄTIGEN</label><div style="position:relative"><input id="pw-confirm" type="password" style="padding-right:2.4rem" placeholder="Passwort wiederholen" value="${S.authConfirm}" oninput="S.authConfirm=this.value" onkeydown="if(event.key==='Enter')doSetNewPassword();"><button type="button" onclick="togglePw('pw-confirm',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>
         <button class="btn-p" onclick="doSetNewPassword()" ${S.authLoading?"disabled":""}>${S.authLoading?"Bitte warten …":"🔑 Passwort setzen"}</button>
         <button class="btn-g" style="margin-bottom:0;background:transparent;border:none;color:var(--text3);font-size:.78rem;text-decoration:underline;cursor:pointer" onclick="S.authMode='login';S.authError='';render()">Zurück zum Login</button>
       `:isForgot?`
@@ -8869,7 +8867,7 @@ function renderProfilTab(){
         ${isReg?`<div class="auth-field"><label>BENUTZERNAME</label><input type="text" placeholder="Dein Spielername" maxlength="20" value="${S.authUsername}" oninput="S.authUsername=this.value"></div>`:""}
         <div class="auth-field"><label>E-MAIL</label><input type="email" placeholder="deine@email.de" value="${S.authEmail}" oninput="S.authEmail=this.value"></div>
         <div class="auth-field"><label>PASSWORT</label><div style="position:relative"><input id="pw-main" type="password" style="padding-right:2.4rem" placeholder="${isReg?"Mind. 6 Zeichen":"••••••"}" value="${S.authPassword}" oninput="S.authPassword=this.value" onkeydown="if(event.key==='Enter'){${isReg?"doRegister":"doLogin"}();}"><button type="button" onclick="togglePw('pw-main',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>
-        ${isReg?`<div class="auth-field"><label>PASSWORT BESTß„TIGEN</label><div style="position:relative"><input id="pw-confirm" type="password" style="padding-right:2.4rem" placeholder="Passwort wiederholen" value="${S.authConfirm}" oninput="S.authConfirm=this.value" onkeydown="if(event.key==='Enter')doRegister();"><button type="button" onclick="togglePw('pw-confirm',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>`:""}
+        ${isReg?`<div class="auth-field"><label>PASSWORT BESTÄTIGEN</label><div style="position:relative"><input id="pw-confirm" type="password" style="padding-right:2.4rem" placeholder="Passwort wiederholen" value="${S.authConfirm}" oninput="S.authConfirm=this.value" onkeydown="if(event.key==='Enter')doRegister();"><button type="button" onclick="togglePw('pw-confirm',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>`:""}
         <button class="btn-p" onclick="${isReg?"doRegister":"doLogin"}()" ${S.authLoading?"disabled":""}>
           ${S.authLoading?"Bitte warten …":isReg?"🌱 Konto erstellen &amp; Fortschritt sichern":"🔑 Anmelden"}
         </button>
@@ -8949,7 +8947,7 @@ function renderProfilTab(){
       <div style="padding:0 .85rem .85rem">
         <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.65rem">REGIONEN-FORTSCHRITT</div>
         ${regionBars}
-        <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin:.75rem 0 .5rem">ALLE Lß„NDER</div>
+        <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin:.75rem 0 .5rem">ALLE LÄNDER</div>
         <div class="stamp-grid">${passGrid}</div>
       </div>
     </details>
