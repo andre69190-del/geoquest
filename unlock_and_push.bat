@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Fix: Add regional plate codes for CH (26 cantons), HR, SI, TR (81 provinces), GR, RU; strip spaces in spotter input"
+git commit -m "Fix+UX: 8 bug fixes, 1v1 Hot-Seat same-question+handoff, SLF river fix, horizontal carousel with pagination dots"
 echo.
 git push origin main
 echo.
