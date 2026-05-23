@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Carousel JS-Transform-Engine — touchstart/touchend swipe, kein overflow-x:scroll"
+git commit -m "FIX: Carousel wrapper+inner pixel swipe; Profile App-Settings vor Gefahrenzone; Layout-Button repariert"
 echo.
 git push origin main
 echo.
