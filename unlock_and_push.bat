@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "Fix+UX: 8 bug fixes, 1v1 Hot-Seat same-question+handoff, SLF river fix, horizontal carousel with pagination dots"
+git commit -m "FIX: Forced display:grid !important inline on carousel pages; scoped card constraints to .carousel-page"
 echo.
 git push origin main
 echo.
