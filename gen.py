@@ -6470,51 +6470,66 @@ function saveGridRows(val){
   localStorage.setItem('geoquest_grid_rows',String(val));
   render();
 }
-/* ── JS-Transform Carousel Engine ───────────────────────────────────────── */
-window._carouselGoTo=function(trackEl,pageIdx){
-  if(!trackEl)return;
-  var pages=trackEl.querySelectorAll('.carousel-page');
+/* ── JS-Transform Carousel Engine (wrapper+inner, pixel-based) ──────────── */
+window._carouselGoTo=function(innerEl,pageIdx){
+  if(!innerEl)return;
+  var pages=innerEl.querySelectorAll('.carousel-page');
   var n=Math.max(0,Math.min(pages.length-1,pageIdx));
-  trackEl._cPage=n;
-  trackEl.style.transform='translateX('+(-n*100)+'%)';
-  var dotsEl=trackEl.previousElementSibling;
+  innerEl._cPage=n;
+  /* pixel width from clipping wrapper (parentElement) */
+  var w=(innerEl.parentElement?innerEl.parentElement.clientWidth:0)||window.innerWidth;
+  innerEl.style.transform='translateX('+(-n*w)+'px)';
+  /* update dots — sibling of wrapper, i.e. previousSibling of parentElement */
+  var wrapper=innerEl.parentElement;
+  var dotsEl=wrapper?wrapper.previousElementSibling:null;
   if(dotsEl&&dotsEl.classList.contains('carousel-dots')){
     dotsEl.querySelectorAll('.dot').forEach(function(dot,i){
       dot.style.background=i===n?'#10b981':'#cbd5e1';
     });
   }
 };
-window._carouselInit=function(trackEl){
-  if(!trackEl||trackEl._cInit)return;
-  trackEl._cInit=true;
-  trackEl._cPage=0;
-  trackEl.style.transition='transform 0.28s cubic-bezier(.4,0,.2,1)';
+window._carouselInit=function(innerEl){
+  if(!innerEl||innerEl._cInit)return;
+  innerEl._cInit=true;
+  innerEl._cPage=0;
+  innerEl.style.transition='transform 0.28s cubic-bezier(.4,0,.2,1)';
+  /* fix page widths to parent pixel width */
+  function _fixW(){
+    var wrapper=innerEl.parentElement;
+    if(!wrapper)return;
+    var w=wrapper.clientWidth;
+    if(!w)return;
+    var pages=innerEl.querySelectorAll('.carousel-page');
+    innerEl.style.width=(w*pages.length)+'px';
+    pages.forEach(function(p){p.style.width=w+'px';p.style.minWidth=w+'px';});
+  }
+  _fixW();
+  /* touch swipe */
   var sx=0,sy=0,moved=false;
-  trackEl.addEventListener('touchstart',function(e){
+  innerEl.addEventListener('touchstart',function(e){
     sx=e.touches[0].clientX;sy=e.touches[0].clientY;moved=false;
   },{passive:true});
-  trackEl.addEventListener('touchmove',function(){moved=true;},{passive:true});
-  trackEl.addEventListener('touchend',function(e){
+  innerEl.addEventListener('touchmove',function(){moved=true;},{passive:true});
+  innerEl.addEventListener('touchend',function(e){
     if(!moved)return;
     var dx=sx-e.changedTouches[0].clientX;
     var dy=sy-e.changedTouches[0].clientY;
     if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>35){
-      window._carouselGoTo(trackEl,trackEl._cPage+(dx>0?1:-1));
+      window._carouselGoTo(innerEl,innerEl._cPage+(dx>0?1:-1));
     }
   },{passive:true});
-  /* desktop mouse swipe */
+  /* desktop mouse drag */
   var msx=0,mdown=false;
-  trackEl.addEventListener('mousedown',function(e){msx=e.clientX;mdown=true;});
-  trackEl.addEventListener('mouseup',function(e){
+  innerEl.addEventListener('mousedown',function(e){msx=e.clientX;mdown=true;e.preventDefault();});
+  innerEl.addEventListener('mouseup',function(e){
     if(!mdown)return;mdown=false;
     var dx=msx-e.clientX;
-    if(Math.abs(dx)>35)window._carouselGoTo(trackEl,trackEl._cPage+(dx>0?1:-1));
+    if(Math.abs(dx)>35)window._carouselGoTo(innerEl,innerEl._cPage+(dx>0?1:-1));
   });
 };
 window._initAllCarousels=function(){
-  document.querySelectorAll('.carousel-track').forEach(function(t){window._carouselInit(t);});
+  document.querySelectorAll('.carousel-inner').forEach(function(t){window._carouselInit(t);});
 };
-/* legacy compat */
 window.updateCarouselDots=function(){};
 // Apply saved grid cols on load (robust version)
 (function(){
@@ -8742,10 +8757,10 @@ function renderHomeTab(){
     const _ipp=_cols*_rows;
     const _nPages=Math.ceil(cardArr.length/_ipp)||1;
     const _dots=_nPages>1?`<div class="carousel-dots">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" style="display:inline-block;width:7px;height:7px;background:${i===0?'#10b981':'#cbd5e1'};border-radius:50%;margin:0 3px;transition:background .3s"></span>`).join('')}</div>`:'';
-    const _track=`<div class="carousel-track">${Array.from({length:_nPages}).map((_,pi)=>{
+    const _track=`<div class="carousel-wrapper"><div class="carousel-inner">${Array.from({length:_nPages}).map((_,pi)=>{
       const pg=cardArr.slice(pi*_ipp,(pi+1)*_ipp);
       return`<div class="carousel-page" style="display:grid !important;grid-template-columns:repeat(${_cols},1fr) !important;min-width:100%;flex-shrink:0;scroll-snap-align:start;gap:10px;align-content:start;padding:10px 0 15px;width:100%;box-sizing:border-box">${pg.join('')}</div>`;
-    }).join('')}</div>`;
+    }).join('')}</div></div>`;
     return`<div class="accordion-section" data-cat="${catId}">
       <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
         <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
@@ -9084,17 +9099,12 @@ function renderProfilTab(){
       <a href="mailto:kontakt@geoquest.app" style="color:var(--text3);text-decoration:none">kontakt@geoquest.app</a><br>
       <span style="cursor:pointer;text-decoration:underline" onclick="showToast('Impressum folgt in Kürze')">Impressum</span> &middot; <span style="cursor:pointer;text-decoration:underline" onclick="showToast('Datenschutz: Keine Weitergabe persönlicher Daten an Dritte.')">Datenschutz</span>
     </div>
-    ${sbUser?.email?`
-    <hr style="border:none;border-top:1px solid rgba(239,68,68,.25);margin:.1rem 0 .75rem">
-    <div style="color:var(--text3);font-size:.62rem;font-weight:700;letter-spacing:1px;margin-bottom:.6rem">GEFAHRENZONE</div>
-    <button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">🚪 Abmelden</button>
-    <button class="btn-g" style="margin-bottom:0;font-size:.75rem;background:#dc3545;color:#fff;border-color:#dc3545" onclick="doDeleteAccount()">🗑️ Konto löschen (DSGVO)</button>
-    `:""}
   </div>`;
 
-  var block5=`<div style="margin:0 15px 20px 15px;padding:20px;background:var(--bg2);border-radius:15px;border:1px solid var(--border)">
+  /* ── Block 5: App-Einstellungen (Layout & Raster) ── */
+  var block5=`<div style="margin:0 15px 8px 15px;padding:20px;background:var(--bg2);border-radius:15px;border:1px solid var(--border)">
     <div style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:1px;margin-bottom:12px">APP-EINSTELLUNGEN</div>
-    <button onclick="if(typeof renderSettingsModal==='function'){renderSettingsModal();}" style="width:100%;background:var(--card-bg,var(--bg));border:2px solid var(--border);border-radius:10px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer;text-align:left">
+    <button onclick="S.settingsModal=true;render()" style="width:100%;background:var(--card-bg,var(--bg));border:2px solid var(--border);border-radius:10px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer;text-align:left">
       <span style="font-size:1.4rem">⚙️</span>
       <div style="flex:1">
         <div style="font-size:.88rem;font-weight:700;color:var(--text)">Layout & Raster</div>
@@ -9103,7 +9113,14 @@ function renderProfilTab(){
       <span style="color:var(--text3);font-size:1rem">›</span>
     </button>
   </div>`;
-  return '<div style="padding-bottom:100px">'+block1+block2+block3+block4+block5+'</div>';
+
+  /* ── Block 6: Gefahrenzone (immer am Ende) ── */
+  var block6=sbUser?.email?`<div style="margin:0 15px 20px 15px;padding:16px 20px;background:var(--bg2);border-radius:15px;border:1px solid rgba(239,68,68,.35)">
+    <div style="font-size:.62rem;color:#f87171;font-weight:700;letter-spacing:1px;margin-bottom:.75rem">⚠️ GEFAHRENZONE</div>
+    <button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">🚪 Abmelden</button>
+    <button class="btn-g" style="margin-bottom:0;font-size:.75rem;background:#dc3545;color:#fff;border-color:#dc3545" onclick="doDeleteAccount()">🗑️ Konto löschen (DSGVO)</button>
+  </div>`:'';
+  return '<div style="padding-bottom:100px">'+block1+block2+block3+block4+block5+block6+'</div>';
 }
 
 /* SETTINGS MODAL */

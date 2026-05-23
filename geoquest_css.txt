@@ -661,9 +661,11 @@ input[type=text]::placeholder{color:var(--text3)}
 }
 /* Carousel — JS-transform engine (no overflow-x:scroll, no snap) */
 .carousel-dots{text-align:center;padding:4px 0 8px}
-.carousel-track{display:flex;width:100%;max-width:100%;overflow:hidden;will-change:transform;user-select:none;cursor:grab}
-.carousel-track:active{cursor:grabbing}
-.carousel-page{min-width:100%;flex-shrink:0;display:grid !important;gap:10px;align-content:start;padding:10px 0 15px;box-sizing:border-box;width:100%}
+/* wrapper = clipping box; inner = translated flex strip */
+.carousel-wrapper{overflow:hidden;width:100%;max-width:100%}
+.carousel-inner{display:flex;will-change:transform;user-select:none;cursor:grab}
+.carousel-inner:active{cursor:grabbing}
+.carousel-page{flex-shrink:0;display:grid !important;gap:10px;align-content:start;padding:10px 0 15px;box-sizing:border-box}
 .carousel-page .mode-card,.carousel-page .game-card{
   width:100% !important;
   min-width:0 !important;
@@ -673,8 +675,4 @@ input[type=text]::placeholder{color:var(--text3)}
   flex-shrink:1 !important
 }
 .mode-card:not([style*='display:none']){display:flex !important;flex-direction:column !important}
-.menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:8px !important;align-items:center !important}
-#gameSearch{flex:1 !important;min-width:0 !important}
-@media(max-width:600px){
-  .carousel-page{grid-template-columns:repeat(2,1fr) !important}
-}
+.menu-search-container{display:flex !im
