@@ -6466,6 +6466,16 @@ function saveGridCols(val){
   localStorage.setItem('geoquest_grid_cols',String(val));
   document.documentElement.style.setProperty('--grid-cols',String(val));
 }
+function saveGridRows(val){
+  localStorage.setItem('geoquest_grid_rows',String(val));
+  render();
+}
+window.updateCarouselDots=function(track){
+  if(!track)return;
+  const pageIndex=Math.round(track.scrollLeft/Math.max(1,track.clientWidth));
+  const dots=track.previousElementSibling&&track.previousElementSibling.classList.contains('carousel-dots')?track.previousElementSibling.querySelectorAll('.dot'):[];
+  dots.forEach(function(dot,i){dot.style.background=i===pageIndex?'#10b981':'#cbd5e1';});
+};
 // Apply saved grid cols on load (robust version)
 (function(){
   let _sv=parseInt(localStorage.getItem('geoquest_grid_cols'));
@@ -8519,7 +8529,7 @@ function filterByCategory(cat){
       // Expand this section
       if(content){
         var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-        content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
+        content.style.cssText='display:block;padding:0';
         content.classList.add('open');
       }
       if(arrow){arrow.style.transform='rotate(180deg)';}
@@ -8543,7 +8553,7 @@ window.toggleAccordion=function(header,catId){
     if(arrow)arrow.style.transform='rotate(0deg)';
   } else {
     var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-    content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
+    content.style.cssText='display:block;padding:0';
     content.classList.add('open');
     if(arrow)arrow.style.transform='rotate(180deg)';
   }
@@ -8594,7 +8604,7 @@ function showFavorites(){
     if(hasMatch){
       if(content){
         var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-        content.style.cssText='display:grid;grid-template-columns:repeat('+gc+',1fr);gap:15px;padding:10px 0 15px 0;width:100%;box-sizing:border-box';
+        content.style.cssText='display:block;padding:0';
         content.classList.add('open');
       }
       if(arrow){arrow.style.transform='rotate(180deg)';}
@@ -8667,7 +8677,7 @@ function renderHomeTab(){
     const unlocked=isCategoryUnlocked(catId);
     const isDefault=catId===(S.filterCat||'pure_geo');
     const catModes=MODES.filter(m=>cat.modes.includes(m.id)&&!m.comingSoon);
-    const cards=catModes.map(m=>{
+    const cardArr=catModes.map(m=>{
       const cs=m.comingSoon===true;
       const active=S.mode===m.id&&!cs;
       const isLocked=!unlocked&&!cs;
@@ -8681,20 +8691,26 @@ function renderHomeTab(){
         ${!cs&&unlocked?`<button type="button" class="fav-btn" data-fav-id="${m.id}" onclick="event.preventDefault();event.stopPropagation();window.toggleFavorite('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:6px;left:6px;z-index:99999;width:22px;height:22px;background:transparent;border:none;font-size:.7rem;cursor:pointer;line-height:1;padding:0;opacity:${isFav?'1':'.35'}">❤️</button>`:""}
         ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:6px;right:6px;z-index:99999;width:22px;height:22px;background:#3b82f6;color:#fff;border:none;border-radius:6px;font-size:.72rem;font-weight:900;cursor:pointer;line-height:1;padding:0">i</button>`:""}
       </div>`;
-    }).join('');
-    const albumCard=catId==='eu_plates'?`<div class="mode-card" data-category="eu_plates" onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6">
-        <span class="mode-icon">\u{1F4D4}</span>
-        <div class="mode-title" style="color:#fff">Album</div>
-        <div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div>
-      </div>`:'';
+    });
+    if(catId==='eu_plates')cardArr.push(`<div class="mode-card" data-category="eu_plates" onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6"><span class="mode-icon">\u{1F4D4}</span><div class="mode-title" style="color:#fff">Album</div><div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div></div>`);
     const lockPill=!unlocked?`<span style="font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:10px;margin-left:4px">\u{1F512} ${cat.cost?cat.cost.toLocaleString():'?'} Coins</span>`:'';
+    /* Carousel pagination */
+    const _cols=S.gridCols||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
+    const _rows=S.gridRows||(parseInt(localStorage.getItem('geoquest_grid_rows'))||6);
+    const _ipp=_cols*_rows;
+    const _nPages=Math.ceil(cardArr.length/_ipp)||1;
+    const _dots=_nPages>1?`<div class="carousel-dots">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" style="display:inline-block;width:7px;height:7px;background:${i===0?'#10b981':'#cbd5e1'};border-radius:50%;margin:0 3px;transition:background .3s"></span>`).join('')}</div>`:'';
+    const _track=`<div class="carousel-track" onscroll="window.updateCarouselDots(this)">${Array.from({length:_nPages}).map((_,pi)=>{
+      const pg=cardArr.slice(pi*_ipp,(pi+1)*_ipp);
+      return`<div class="carousel-page" style="grid-template-columns:repeat(${_cols},1fr)">${pg.join('')}</div>`;
+    }).join('')}</div>`;
     return`<div class="accordion-section" data-cat="${catId}">
       <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
         <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
         <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
       </div>
       <div class="accordion-content${isDefault?' open':''}">
-        ${cards}${albumCard}
+        ${_dots}${_track}
       </div>
     </div>`;
   }).join('');
@@ -9067,7 +9083,7 @@ function renderSettingsModal(){
       <div style="font-weight:700">\u{1F319} Dark Mode</div>
       <button onclick="S.darkMode=!S.darkMode;applyTheme();render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.darkMode?'An':'Aus'}</button>
     </div>
-    ${(()=>{const _gc=parseInt(localStorage.getItem('geoquest_grid_cols'))||4;return`<div style="margin:20px 0;padding-top:15px;border-top:1px solid var(--border)"><div style="font-weight:700;margin-bottom:10px">\u{1F4CA} Spiele nebeneinander (Raster)</div><div style="display:flex;justify-content:center;gap:8px">${[2,3,4,5].map(n=>`<button onclick="saveGridCols(${n});render()" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gc===n?'#3b82f6':'var(--bg3)'};color:${_gc===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div></div>`;})()}
+    ${(()=>{const _gc=parseInt(localStorage.getItem('geoquest_grid_cols'))||4;const _gr=parseInt(localStorage.getItem('geoquest_grid_rows'))||6;return`<div style="margin:20px 0;padding-top:15px;border-top:1px solid var(--border)"><div style="font-weight:700;margin-bottom:10px">\u{1F4CA} Spiele nebeneinander (Raster)</div><div style="display:flex;justify-content:center;gap:8px;margin-bottom:14px">${[2,3,4,5].map(n=>`<button onclick="saveGridCols(${n});render()" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gc===n?'#3b82f6':'var(--bg3)'};color:${_gc===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div><div style="font-weight:700;margin-bottom:10px">\u{1F4D6} Reihen pro Seite (Carousel)</div><div style="display:flex;justify-content:center;gap:8px">${[3,4,5,6,8].map(n=>`<button onclick="saveGridRows(${n})" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gr===n?'#10b981':'var(--bg3)'};color:${_gr===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div></div>`;})()}
         ${sbUser?.email?`<button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">\u{1F6AA} Abmelden</button><button class="btn-g" style="margin-bottom:.5rem;font-size:.75rem;color:#94a3b8;border-color:#94a3b8" onclick="doDeleteAccount()">\u{1F5D1}\uFE0F Konto l\u00f6schen (DSGVO)</button>`:''}
     <button class="btn-g" style="margin-bottom:0" onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
   </div></div>`;

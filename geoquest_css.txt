@@ -653,13 +653,17 @@ input[type=text]::placeholder{color:var(--text3)}
 .accordion-header:hover{opacity:.85 !important}
 .accordion-content{display:none;width:100%;box-sizing:border-box}
 .accordion-content.open{
-  display:grid !important;
-  grid-template-columns:repeat(var(--grid-cols,4),1fr) !important;
-  gap:15px !important;
-  padding:10px 0 15px 0 !important;
+  display:block !important;
+  padding:0 !important;
   width:100% !important;
   box-sizing:border-box !important
 }
+/* Carousel */
+.carousel-dots{text-align:center;padding:4px 0 8px}
+.carousel-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;gap:0}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-page{min-width:100%;flex-shrink:0;scroll-snap-align:start;display:grid;gap:10px;align-content:start;padding:10px 0 15px}
+
 .mode-card,.game-card{
   width:100% !important;
   min-width:0 !important;
@@ -670,5 +674,5 @@ input[type=text]::placeholder{color:var(--text3)}
 .menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:8px !important;align-items:center !important}
 #gameSearch{flex:1 !important;min-width:0 !important}
 @media(max-width:600px){
-  .accordion-content.open{grid-template-columns:repeat(2,1fr) !important}
+  .carousel-page{grid-template-columns:repeat(2,1fr) !important}
 }
