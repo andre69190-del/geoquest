@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Carousel wrapper+inner pixel swipe; Profile App-Settings vor Gefahrenzone; Layout-Button repariert"
+git commit -m "FIX: Abmelden aus Modal; Carousel _fixW RAF-Retry + mainGamesGrid-Fallback"
 echo.
 git push origin main
 echo.
