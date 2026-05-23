@@ -107,6 +107,26 @@ CAPITALS = [
 ]
 CAPJ = json.dumps(CAPITALS, separators=(',',':'), ensure_ascii=False)
 
+# ── HARDCORE-ONLY data pools ────────────────────────────────────────────────
+HC_CAPITALS_EU = [
+  {"country":"Montenegro","capital":"Podgorica","cc":"me","continent":"Europe","subregion":"Southern Europe"},
+  {"country":"Moldau","capital":"Chișinău","cc":"md","continent":"Europe","subregion":"Eastern Europe"},
+  {"country":"Liechtenstein","capital":"Vaduz","cc":"li","continent":"Europe","subregion":"Western Europe"},
+  {"country":"Andorra","capital":"Andorra la Vella","cc":"ad","continent":"Europe","subregion":"Southern Europe"},
+  {"country":"Nordmazedonien","capital":"Skopje","cc":"mk","continent":"Europe","subregion":"Southern Europe"},
+  {"country":"Kosovo","capital":"Pristina","cc":"xk","continent":"Europe","subregion":"Southern Europe"},
+]
+HC_CITIES_CH = [
+  {"id":"sion_ch","n":"Sion","c":"Switzerland","cc":"ch","cont":"Europe","sub":"Western Europe","pop":35000},
+  {"id":"chur_ch","n":"Chur","c":"Switzerland","cc":"ch","cont":"Europe","sub":"Western Europe","pop":37000},
+  {"id":"delemont_ch","n":"Delémont","c":"Switzerland","cc":"ch","cont":"Europe","sub":"Western Europe","pop":12000},
+  {"id":"glarus_ch","n":"Glarus","c":"Switzerland","cc":"ch","cont":"Europe","sub":"Western Europe","pop":12000},
+  {"id":"bellinzona_ch","n":"Bellinzona","c":"Switzerland","cc":"ch","cont":"Europe","sub":"Western Europe","pop":44000},
+  {"id":"appenzell_ch","n":"Appenzell","c":"Switzerland","cc":"ch","cont":"Europe","sub":"Western Europe","pop":6000},
+]
+HCEUJ = json.dumps(HC_CAPITALS_EU, separators=(',',':'), ensure_ascii=False)
+HCCHJ = json.dumps(HC_CITIES_CH, separators=(',',':'), ensure_ascii=False)
+
 RIVERS = [
   {"name":"Nil","country":"Egypt","cc":"eg","continent":"Africa","subregion":"Northern Africa"},
   {"name":"Amazonas","country":"Brazil","cc":"br","continent":"South America","subregion":"South America"},
@@ -2450,6 +2470,8 @@ const COUNTRIES=[
   {c:"Yemen",cc:"ye",ct:"Asia",sr:"Western Asia"}
 ];
 const CAPITALS=PLACEHOLDER_CAPJ;
+const HC_CAPITALS_EU=PLACEHOLDER_HCEU;
+const HC_CITIES_CH=PLACEHOLDER_HCCH;
 const RIVERS=PLACEHOLDER_RJ;
 const LANDMARKS=PLACEHOLDER_LMJ;
 const NATIONAL_PARKS=PLACEHOLDER_NPJ;
@@ -4513,6 +4535,13 @@ function genCityQ(){
     filtered = CITIES.filter(c=>c.id!==S.lid);
     pf = 0;
   }
+  /* Hardcore/Survival: inject obscure Swiss cities not in main dataset */
+  const isHC = S.diff==="hardcore"||S.diff==="survival";
+  if(isHC && typeof HC_CITIES_CH!=="undefined" && HC_CITIES_CH.length){
+    const existingIds=new Set(filtered.map(c=>c.id));
+    const extras=HC_CITIES_CH.filter(c=>c.id!==S.lid&&!existingIds.has(c.id));
+    filtered=[...filtered,...extras];
+  }
   let pool = _rfilt(filtered, 3);
   if(pool.length < 1) return null;
   const cor = pool[~~(rng()*pool.length)];
@@ -4528,7 +4557,10 @@ function genFlagQ(){
   return{type:"flag",prompt:t("q_flag"),subj:cor.cc,ans:displayCountry(cor.cc)||cor.c,opts:sh([displayCountry(cor.cc)||cor.c,...dis]),meta:cor.ct,lid:cor.cc,cc:cor.cc};
 }
 function genCapitalQ(){
-  let pool=_rfilt(CAPITALS.filter(x=>x.capital\!==S.lid),3); if(pool.length<3) pool=CAPITALS.filter(x=>x.capital\!==S.lid); if(pool.length<1) return null;
+  /* Hardcore/Survival: merge obscure EU capitals into the pool */
+  const isHC=S.diff==="hardcore"||S.diff==="survival";
+  const allCaps=isHC&&typeof HC_CAPITALS_EU!=="undefined"?[...CAPITALS,...HC_CAPITALS_EU]:CAPITALS;
+  let pool=_rfilt(allCaps.filter(x=>x.capital\!==S.lid),3); if(pool.length<3) pool=allCaps.filter(x=>x.capital\!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.country===cor.country,x=>displayCountry(x.cc)||x.country);
   return{type:"capital",prompt:t("q_capital"),subj:cor.capital,ans:displayCountry(cor.cc)||cor.country,opts:sh([displayCountry(cor.cc)||cor.country,...dis]),meta:cor.continent,lid:cor.capital,cc:cor.cc};
@@ -8747,7 +8779,7 @@ function renderHomeTab(){
     const _dots=_nPages>1?`<div class="carousel-dots">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" style="display:inline-block;width:7px;height:7px;background:${i===0?'#10b981':'#cbd5e1'};border-radius:50%;margin:0 3px;transition:background .3s"></span>`).join('')}</div>`:'';
     const _track=`<div class="carousel-wrapper">${Array.from({length:_nPages}).map((_,pi)=>{
       const pg=cardArr.slice(pi*_ipp,(pi+1)*_ipp);
-      return`<div class="carousel-page" style="display:grid !important;grid-template-columns:repeat(${_cols},1fr) !important;min-width:100%;flex-shrink:0;scroll-snap-align:start;gap:10px;align-content:start;padding:10px 0 15px;width:100%;box-sizing:border-box">${pg.join('')}</div>`;
+      return`<div class="carousel-page" style="--cc:${_cols};min-width:100%;flex-shrink:0">${pg.join('')}</div>`;
     }).join('')}</div>`;
     return`<div class="accordion-section" data-cat="${catId}">
       <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
@@ -9573,6 +9605,8 @@ JS = (JS
   .replace('PLACEHOLDER_BJ',  BJ)
   .replace('PLACEHOLDER_CUJ', CUJ)
   .replace('PLACEHOLDER_WPJ', WPJ)
+  .replace('PLACEHOLDER_HCEU', HCEUJ)
+  .replace('PLACEHOLDER_HCCH', HCCHJ)
 )
 remaining = __import__('re').findall(r'PLACEHOLDER_\w+', JS)
 if remaining:
@@ -10181,4 +10215,3 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print('Also written -> index.html (Netlify deploy target)')
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
