@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Forced display:grid !important inline on carousel pages; scoped card constraints to .carousel-page"
+git commit -m "FIX: Carousel swipe — width:100%+overflow:scroll on track, overflow:hidden on accordion-content"
 echo.
 git push origin main
 echo.
