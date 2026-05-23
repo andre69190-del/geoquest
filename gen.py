@@ -5420,9 +5420,13 @@ function _lvNext(){
   const lv=S.lv;
   if(lv.round>=LV_ROUNDS){lv.phase="gameover";render();return;}
   lv.phase="q";lv.sel=null;lv.timer=LV_TIME;
-  const modeId=lv.mode||(["flag","capital","city","comp_area","comp_pop","comp_north"][~~(Math.random()*6)]);
-  const genFn=GEN[modeId]||genFlagQ;
-  lv.q=genFn()||genFlagQ();
+  /* Fix: P1 generates the question, P2 reuses it */
+  if(lv.current===1||!lv.roundQ){
+    const modeId=lv.mode||(["flag","capital","city","comp_area","comp_pop","comp_north"][~~(Math.random()*6)]);
+    const genFn=GEN[modeId]||genFlagQ;
+    lv.roundQ=genFn()||genFlagQ();
+  }
+  lv.q=lv.roundQ;
   render();
   tIv=setInterval(()=>{
     if(!S.lv)return clearInterval(tIv);
@@ -5445,13 +5449,20 @@ function lvAnswer(ans){
   render();
   setTimeout(()=>{
     if(!S.lv)return;
-    if(lv.current===1){lv.current=2;}else{lv.current=1;lv.round++;}
-    _lvNext();
+    if(lv.current===1){
+      lv.current=2;
+      lv.phase="handoff";
+      render();
+    }else{
+      lv.current=1;lv.round++;
+      _lvNext();
+    }
   },1800);
 }
 function renderLVModal(){
   if(!S.lv)return renderLVSetup();
   if(S.lv.phase==="gameover")return renderLVGameover();
+  if(S.lv.phase==="handoff")return renderLVHandoff();
   const lv=S.lv,q=lv.q,isFb=lv.phase==="fb",pl=lv.current===1?lv.p1:lv.p2;
   const optsHtml=q&&q.opts?q.opts.map(o=>{
     let cls="btn-base";
@@ -5501,6 +5512,24 @@ function renderLVModal(){
     ${isFb?`<div style="text-align:center;margin-top:.5rem;font-size:.8rem;color:${lv.sel===q.ans?"#10b981":"#ef4444"};font-weight:700">${lv.sel===q.ans?"\u2705 Richtig!":"\u274C Falsch \u2013 "+(displayCountry(q.ans)||q.ans)}</div>`:""}
   </div>`;
 }
+function renderLVHandoff(){
+  const lv=S.lv;
+  const pl=lv.current===1?lv.p1:lv.p2;
+  const plColor=lv.current===1?"#6366f1":"#ec4899";
+  const plBg=lv.current===1?"rgba(99,102,241,.15)":"rgba(236,72,153,.15)";
+  return`<div style="min-height:100vh;background:var(--bg);padding:1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+    <div style="font-size:3.5rem;margin-bottom:.75rem">&#x1F4F1;</div>
+    <div style="font-size:1.15rem;font-weight:900;color:var(--text);margin-bottom:.3rem">Ger&auml;t weitergeben</div>
+    <div style="font-size:.8rem;color:var(--text3);margin-bottom:1.5rem">Runde ${lv.round+1}/${LV_ROUNDS} &middot; Gleiche Frage</div>
+    <div style="background:${plBg};border:2px solid ${plColor};border-radius:14px;padding:1rem 2.5rem;margin-bottom:1.25rem">
+      <div style="font-size:.65rem;color:${plColor};font-weight:700;letter-spacing:.5px;margin-bottom:.3rem">JETZT DRAN</div>
+      <div style="font-size:1.4rem;font-weight:900;color:var(--text)">${esc(pl.name)}</div>
+    </div>
+    <div style="font-size:.75rem;color:var(--text3);margin-bottom:1.5rem">&#x1F440; Schau nicht hin, w&auml;hrend der andere spielt!</div>
+    <button class="btn-p" style="width:100%;max-width:280px;font-size:1rem" onclick="window._lvHandoffGo()">&#x25BA; Ich bin bereit</button>
+  </div>`;
+}
+window._lvHandoffGo=function(){_lvNext();};
 function renderLVSetup(){
   const modesHtml=LV_MODES.map(m=>`<button class="btn-base${S.lvSetupMode===m.id?" ok":""}" onclick="S.lvSetupMode='${m.id}';render()">${m.label}</button>`).join("");
   return `<div style="min-height:100vh;background:var(--bg);padding:1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center">
@@ -8093,7 +8122,8 @@ function handleSLFSubmit(){
   const riverAns=norm(answers.river);
   /* River: check DB (uses German labels) + fallback to first-letter-only */
   const riverDbMatch=(typeof RIVERS!=="undefined")&&RIVERS.some(r=>norm(r.riverLabel||r.name||"")===riverAns||norm(r.riverLabel||r.name||"").startsWith(riverAns));
-  const riverValid=startsOk(riverAns,L)&&riverAns.length>=2&&(riverDbMatch||true);
+  /* Fix: validate river against DB if loaded; graceful fallback if RIVERS empty */
+  const riverValid=startsOk(riverAns,L)&&riverAns.length>=2&&(!(typeof RIVERS!=="undefined"&&RIVERS.length>0)||riverDbMatch);
   const pts=(cityValid?10:0)+(countryValid?10:0)+(riverValid?10:0);
   S.slfData={...S.slfData,results:{cityValid,countryValid,riverValid},phase:"result"};
   S.sc+=pts;
