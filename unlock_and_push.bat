@@ -6,6 +6,6 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "UI/UX: Phase 215 — Smart language-aware hyphenation for game card titles. Replaced word-break:break-word with hyphens:auto + dynamic html[lang] sync for all 28 languages. Also Phase 214: Fixed Alphabet-Sprint crash, null-generator toasts, mobile tap targets."
+git commit -m "FIX: Phase 217 — H/L Proximity overhaul. getSmartMatch now uses log-ratio distance (scale-invariant) with 3x hard cap + top-6 cutoff so trivially obvious comparisons (London rain vs Cairo) are eliminated. genUniversalHLQ (Wolkenkratzer) now picks rank-adjacent buildings (+-4 positions) instead of fully random. Also: Phase 216 fake-country distractors, Phase 215 smart hyphenation, Phase 214 crash fixes."
 git push origin main
 pause

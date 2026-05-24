@@ -4033,6 +4033,7 @@ function getSmartMatch(candidates,ccA,valA,ccFn,valFn){
   if(!candidates||candidates.length===0)return null;
   const ctA=ccA?(COUNTRIES.find(c=>c.cc===ccA)||{}).ct:null;
   let pool=candidates;
+  /* Phase 217: same-continent preference (unchanged) */
   if(ctA&&candidates.length>3){
     const sameC=candidates.filter(k=>{
       const cc2=ccFn(k);
@@ -4040,10 +4041,15 @@ function getSmartMatch(candidates,ccA,valA,ccFn,valFn){
     });
     if(sameC.length>=2)pool=sameC;
   }
-  if(valA!=null&&pool.length>2){
-    pool=pool.slice().sort((a,b)=>
-      Math.abs(valFn(a)-valA)-Math.abs(valFn(b)-valA)
-    ).slice(0,8);
+  /* Phase 217: log-ratio proximity - 3x hard cap, top 6, fallback to closest 5 */
+  if(valA!=null&&valA>0&&pool.length>2){
+    const logA=Math.log(valA);
+    const inCap=pool.filter(x=>{const v=valFn(x);return v>0&&Math.max(valA,v)/Math.min(valA,v)<=3;});
+    if(inCap.length>=2){
+      pool=inCap.sort((a,b)=>Math.abs(Math.log(valFn(a))-logA)-Math.abs(Math.log(valFn(b))-logA)).slice(0,6);
+    } else {
+      pool=pool.slice().sort((a,b)=>Math.abs(Math.log(Math.max(valFn(a),1))-logA)-Math.abs(Math.log(Math.max(valFn(b),1))-logA)).slice(0,5);
+    }
   }
   return pool[~~(rng()*pool.length)];
 }
@@ -5400,6 +5406,48 @@ function genAirportMapQ(){
   const dis=distractors(disPot,x=>x.ct===(COUNTRIES.find(c=>c.cc===cor.cc)||{}).ct,x=>x.cc===cor.cc,x=>displayCountry(x.cc)||x.c);
   return{type:'airport_map',prompt:'In welchem Land liegt dieser Flughafen?',subj:cor.iata+' – '+cor.name,ans:corCountry,opts:sh([corCountry,...dis]),meta:cor.city+' · '+cor.lat.toFixed(1)+'°',lid:cor.iata,cc:cor.cc};
 }
+/* Phase 216: Fake country name generator — keeps first letter, mutates body */
+function _genFakeCountry(name,realNamesLC,variant){
+  if(!name||name.length<3)return name+'ia';
+  const first=name[0];
+  const body=name.slice(1);
+  const vNext={a:'o',o:'u',u:'e',e:'i',i:'a',A:'O',O:'U',U:'E',E:'I',I:'A',
+               ä:'ö',ö:'ü',ü:'ä',Ä:'Ö',Ö:'Ü',Ü:'Ä'};
+  const sfx=[
+    ['ien','ana'],['ien','istan'],['istan','sien'],['land','lon'],['landen','lona'],
+    ['ia','ien'],['ia','ona'],['ia','oa'],['a','ena'],['en','in'],['in','on'],
+    ['o','ia'],['e','ia'],['el','al'],['al','ol'],['on','an'],['an','in'],
+    ['esch','isch'],['isch','esch'],['urg','org'],['burg','bion'],
+    ['and','ond'],['stan','sien'],['ien','ia'],['ina','ien']
+  ];
+  const cands=[];
+  const bLow=body.toLowerCase();
+  /* 1. Suffix swaps */
+  for(const [fr,to] of sfx){
+    if(bLow.endsWith(fr)){
+      const c=first+body.slice(0,body.length-fr.length)+to;
+      if(c!==name&&!realNamesLC.has(c.toLowerCase()))cands.push(c);
+    }
+  }
+  /* 2. Vowel cycle at each position in body */
+  for(let i=0;i<body.length;i++){
+    if(vNext[body[i]]){
+      const c=first+body.slice(0,i)+vNext[body[i]]+body.slice(i+1);
+      if(c!==name&&!realNamesLC.has(c.toLowerCase()))cands.push(c);
+    }
+  }
+  /* 3. Consonant near-swap */
+  const cNear={r:'l',l:'r',n:'m',m:'n',b:'p',p:'b',d:'t',t:'d',s:'z',z:'s',
+               R:'L',L:'R',N:'M',M:'N',B:'P',P:'B',D:'T',T:'D',S:'Z',Z:'S'};
+  for(let i=0;i<body.length;i++){
+    if(cNear[body[i]]){
+      const c=first+body.slice(0,i)+cNear[body[i]]+body.slice(i+1);
+      if(c!==name&&!realNamesLC.has(c.toLowerCase()))cands.push(c);
+    }
+  }
+  if(!cands.length)return name+'ien';
+  return cands[(variant||0)%cands.length];
+}
 function genAlphaSprintQ(){
   const letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   const usedLetters=new Set([...S.askedLids].filter(l=>l.startsWith('alpha_')).map(l=>l.slice(6)));
@@ -5410,9 +5458,22 @@ function genAlphaSprintQ(){
   if(!matching.length)return null;
   const cor=matching[~~(rng()*matching.length)];
   const corName=displayCountry(cor.cc)||cor.c;
-  const others=COUNTRIES.filter(c=>{const n=(displayCountry(c.cc)||c.c).toUpperCase();return !n.startsWith(letter);});
-  const dis=distractors(others,x=>x.ct===cor.ct,x=>false,x=>displayCountry(x.cc)||x.c);
-  return{type:"alpha_sprint",prompt:'Land mit "'+letter+'" gesucht – welches?',subj:'🔤 '+letter,ans:corName,opts:sh([corName,...dis]),meta:cor.ct+' · '+cor.sr,lid:'alpha_'+letter,cc:cor.cc};
+  /* Phase 216: procedural fake distractors — all start with same letter */
+  const _sameL=sh(matching.filter(c=>c.cc!==cor.cc)).map(c=>displayCountry(c.cc)||c.c);
+  const _allLC=new Set(COUNTRIES.map(c=>(displayCountry(c.cc)||c.c).toLowerCase()));
+  const _bases=[..._sameL,...Array(3).fill(corName)].slice(0,3);
+  const _used=new Set([corName.toLowerCase()]);
+  const dis=[];
+  for(let _bi=0;_bi<_bases.length&&dis.length<3;_bi++){
+    for(let _v=0;_v<16;_v++){
+      const _fk=_genFakeCountry(_bases[_bi],_allLC,_v);
+      if(_fk&&!_used.has(_fk.toLowerCase())&&_fk[0].toUpperCase()===letter){
+        _used.add(_fk.toLowerCase());dis.push(_fk);break;
+      }
+    }
+  }
+  while(dis.length<3)dis.push(corName.slice(0,4)+(dis.length+1));
+  return{type:"alpha_sprint",prompt:'Welches ist ein echtes Land mit "'+letter+'"?',subj:'🔤 '+letter,ans:corName,opts:sh([corName,...dis]),meta:cor.ct+' · '+cor.sr,lid:'alpha_'+letter,cc:cor.cc};
 }
 function genRcityQ(){
   /* Phase 200: Use 30k worldCitiesData pool when available */
@@ -7461,14 +7522,18 @@ function genUniversalPinQ(cat){
 function genUniversalHLQ(){
   const data=KULTUR_DATA.wolkenkratzer;
   if(!data||data.length<2)return null;
-  const idxA=~~(rng()*data.length);
-  let idxB=~~(rng()*(data.length-1));
-  if(idxB>=idxA)idxB++;
-  const a=data[idxA],b=data[idxB];
+  /* Phase 217: rank-proximity - sort by val desc, pick B within +-4 rank positions */
+  const sorted=data.slice().sort((a,b)=>b.val-a.val);
+  const rankA=~~(rng()*sorted.length);
+  const lo=Math.max(0,rankA-4),hi=Math.min(sorted.length-1,rankA+4);
+  const neighs=[];
+  for(let i=lo;i<=hi;i++){if(i!==rankA)neighs.push(i);}
+  const rankB=neighs[~~(rng()*neighs.length)];
+  const a=sorted[rankA],b=sorted[rankB];
   const ans=b.val>a.val?"higher":"lower";
   return{type:"uk_hl",prompt:t("uk_hl_prompt")||"Welches Geb\u00e4ude ist h\u00f6her?",
     nameA:a.name,valA:a.val+" m",nameB:b.name,valB:b.val+" m",
-    ans,opts:["higher","lower"],lid:"ukh_"+idxA+"_"+idxB,cc:null};
+    ans,opts:["higher","lower"],lid:"ukh_"+rankA+"_"+rankB,cc:null};
 }
 
 const GEN={
