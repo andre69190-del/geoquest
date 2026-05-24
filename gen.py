@@ -1360,7 +1360,7 @@ de:{
   ws_duplicate:"\u2713 Schon gefunden!",ws_invalid:"\u2715 Kein g\u00fcltiges Wort",
   ws_lang_label:"Sprache",ws_letters_hint:"Bilde W\u00f6rter aus den Buchstaben der Stadt",
   q_airport_pin:"Wo liegt dieser Flughafen?",click_map:"Tippe auf die Karte",
-  q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193"
+  q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?"
 },
 en:{
   play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
@@ -1418,7 +1418,7 @@ en:{
   ws_duplicate:"\u2713 Already found!",ws_invalid:"\u2715 Not a valid word",
   ws_lang_label:"Language",ws_letters_hint:"Form words from the city's letters",
   q_airport_pin:"Where is this airport?",click_map:"Tap the map",
-  q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193"
+  q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193",uk_hl_prompt:"Which building is taller?"
 },
 pl:{
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",menu:"Menu",board:"Ranking",pass:"Paszport",
@@ -9231,8 +9231,8 @@ if(mode==="slf"&&S.ph==="playing"){
     requestAnimationFrame(()=>drawWorldMap(q.subj,sel,ok,true,true));
     return;
   }
-  /* Phase 209: Airport Pin — coordinate click on D3 map */
-  if(q.type==="airport_pin"){
+  /* Phase 209: Airport Pin + Phase 211: uk_pin — coordinate click on D3 map */
+  if(q.type==="airport_pin"||q.type==="uk_pin"){
     const apDist=S.airportPinDist||0;
     const apPts=S.airportPinPts||0;
     const apFb=sel===null?""
@@ -9251,7 +9251,7 @@ if(mode==="slf"&&S.ph==="playing"){
       ${apFb}
       ${sel!==null
         ?`<button class="btn-p map-weiter" onclick="clr();nextRound()">Weiter \u2192</button>`
-        :'<p style="font-size:.72rem;color:var(--text3);text-align:center;margin:.3rem 0">Tippe auf die Karte, um den Flughafen zu markieren</p>'}
+        :`<p style="font-size:.72rem;color:var(--text3);text-align:center;margin:.3rem 0">${t("click_map")}</p>`}
     </div>`;
     requestAnimationFrame(()=>drawAirportPinMap(sel!==null));
     return;
