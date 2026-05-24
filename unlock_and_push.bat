@@ -6,9 +6,6 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: 50/50 joker dynamic guard -- _is2ans now checks opts.length<=2 not hardcoded types; useFiveO() blocks with toast for binary modes; covers all Phase 204 binary games (Hauptstadt-Distanz, Insel/Festland, Flugrouten-Duell, Aequator etc)"
-echo.
+git commit -m "CHORE/SEC: Comprehensive system audit Phase 208. Fail-safe architecture (generator try/catch, null guards, state resets), memory leak fixes (clearInterval dedup, self-cancel guards), anti-cheat hardening (answerByIdx removes answers from DOM, 350ms debounce, Proxy get+set trap), i18n consistency (ws_* + mode_* keys in all 28 langs, renderWortSchmiede fully wired to t())."
 git push origin main
-echo.
-echo Fertig! Druecke eine Taste zum Schliessen.
 pause

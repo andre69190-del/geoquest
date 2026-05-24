@@ -5,7 +5,8 @@ html,body{height:100%;background:var(--bg);font-family:system-ui,-apple-system,s
 body{padding-top:50px;padding-bottom:68px}
 #app{min-height:calc(100dvh - 118px);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:1rem 1rem .5rem}
 .scr{width:100%;max-width:420px;position:relative}
-.panel{background:var(--bg2);border-radius:16px;padding:1.25rem;margin-bottom:1rem;box-shadow:var(--shadow);border:1px solid var(--border)}
+/* P208: panel overflow guard — prevents very long words/names from breaking layout */
+.panel{background:var(--bg2);border-radius:16px;padding:1.25rem;margin-bottom:1rem;box-shadow:var(--shadow);border:1px solid var(--border);overflow:hidden;word-break:break-word;overflow-wrap:break-word}
 input[type=text]{width:100%;background:var(--bg);color:var(--text);border:1.5px solid var(--border);border-radius:8px;padding:.5rem .75rem;font-size:.88rem}
 input[type=text]:focus{outline:none;border-color:var(--accent)}
 input[type=text]::placeholder{color:var(--text3)}
@@ -34,10 +35,11 @@ input[type=text]::placeholder{color:var(--text3)}
 .dh-cd{font-family:monospace;font-weight:700;font-size:.8rem}
 .dh-btn{background:rgba(255,255,255,.25);border:none;border-radius:8px;color:#fff;padding:.3rem .7rem;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap}
 .daily-hero.done .dh-btn{display:none}
-.btn-p{width:100%;background:#10b981;color:#fff;border:none;border-radius:12px;padding:.9rem;font-size:1rem;font-weight:900;cursor:pointer;transition:background .15s,transform .1s;margin-bottom:.5rem}
+/* P208: btn-p/btn-g — word-break so long Finnish/German labels don't overflow */
+.btn-p{width:100%;background:#10b981;color:#fff;border:none;border-radius:12px;padding:.9rem;font-size:1rem;font-weight:900;cursor:pointer;transition:background .15s,transform .1s;margin-bottom:.5rem;word-break:break-word;overflow-wrap:break-word}
 .btn-p:hover{background:#059669}.btn-p:active{transform:scale(.97)}
 .btn-p:disabled{background:var(--bg4);color:var(--text3);cursor:default}
-.btn-g{width:100%;background:transparent;color:var(--text2);border:1.5px solid var(--border);border-radius:12px;padding:.7rem;font-size:.9rem;font-weight:700;cursor:pointer;transition:border-color .15s;margin-bottom:.5rem}
+.btn-g{width:100%;background:transparent;color:var(--text2);border:1.5px solid var(--border);border-radius:12px;padding:.7rem;font-size:.9rem;font-weight:700;cursor:pointer;transition:border-color .15s;margin-bottom:.5rem;word-break:break-word;overflow-wrap:break-word}
 .btn-g:hover{border-color:var(--text3);color:var(--text)}
 .btn-cancel{background:rgba(239,68,68,.12);border:1.5px solid rgba(239,68,68,.4);color:#f87171;border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:700;cursor:pointer}
 .btn-cancel:hover{color:#f87171;border-color:#f87171}
@@ -584,7 +586,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .slf-input:focus{outline:none;border-color:var(--accent)}
 .slf-result-row{display:flex;align-items:center;gap:8px;padding:.45rem .6rem;background:var(--bg3);border-radius:10px;margin-bottom:.4rem}
 .slf-result-label{font-size:.62rem;font-weight:700;color:var(--text3);letter-spacing:.8px;width:40px;flex-shrink:0}
-.slf-result-val{flex:1;font-weight:700;font-size:.88rem;color:var(--text)}
+.slf-result-val{flex:1;font-weight:700;font-size:.88rem;color:var(--text);word-break:break-word;overflow-wrap:break-word;overflow:hidden;text-overflow:ellipsis}
 .ad-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;z-index:500;padding:1rem}
 [data-theme=dark] .btn-a{background:var(--bg2);color:var(--text);border-color:var(--border)}
 [data-theme=dark] .btn-a:hover:not(:disabled){border-color:#10b981;background:rgba(16,185,129,.08)}

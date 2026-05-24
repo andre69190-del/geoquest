@@ -1350,7 +1350,15 @@ de:{
   badge_beta:"Beta",beta_warning:"Spielbar, aber es k\u00f6nnen noch Fehler auftreten.",
   rotate_device:"Bitte drehe dein Ger\u00e4t ins Querformat \u{1F4F1}\u27A1\u{1F5FA}",
   diff_desc_casual:"\u{1F7E2} Casual: Entspannt \u00b7 Kein Zeitlimit \u00b7 \u221e Leben",diff_desc_hc:"\u{1F525} Hardcore: Der Klassiker \u00b7 Kein Zeitlimit \u00b7 3 Leben",diff_desc_surv:"\u{1F480} Survival: Gegen die Uhr \u00b7 8 Sekunden \u00b7 3 Leben",
-  hud_lives:"LEBEN",score_mult_max:"Max-Multiplikator",score_time_bonus:"Zeit-Bonus",pts_abbr:"Pkt.",score_correct_lbl:"richtig",mode_wappen:"Wappen-Meister",mode_slf:"Stadt, Land, Fluss",mode_euro:"Euro-M\u00fcnzen"
+  hud_lives:"LEBEN",score_mult_max:"Max-Multiplikator",score_time_bonus:"Zeit-Bonus",pts_abbr:"Pkt.",score_correct_lbl:"richtig",mode_wappen:"Wappen-Meister",mode_slf:"Stadt, Land, Fluss",mode_euro:"Euro-M\u00fcnzen",
+  /* P208: Phase 204/205 modes + WortSchmiede UI */
+  mode_wort_schmiede:"Wort-Schmiede",mode_hauptstadt_dist:"Hauptstadt-Distanz",
+  mode_flugrouten_duell:"Flugrouten-Duell",mode_insel_festland:"Insel oder Festland",
+  mode_aequator:"N\u00f6rdlich oder s\u00fcdlich?",
+  ws_found:"Gefunden",ws_enter_word:"Wort eingeben\u2026",ws_check:"Pr\u00fcfen",
+  ws_all_found:"Alle W\u00f6rter gefunden!",ws_next_city:"N\u00e4chste Stadt",
+  ws_duplicate:"\u2713 Schon gefunden!",ws_invalid:"\u2715 Kein g\u00fcltiges Wort",
+  ws_lang_label:"Sprache",ws_letters_hint:"Bilde W\u00f6rter aus den Buchstaben der Stadt"
 },
 en:{
   play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
@@ -1398,7 +1406,15 @@ en:{
   badge_beta:"Beta",beta_warning:"Playable, but may still contain bugs.",
   rotate_device:"Please rotate your device to landscape mode \u{1F4F1}\u27A1\u{1F5FA}",
   diff_desc_casual:"\u{1F7E2} Casual: Relaxed \u00b7 No time limit \u00b7 \u221e Lives",diff_desc_hc:"\u{1F525} Hardcore: Classic \u00b7 No time limit \u00b7 3 Lives",diff_desc_surv:"\u{1F480} Survival: Against the clock \u00b7 8s \u00b7 3 Lives",
-  hud_lives:"LIVES",score_mult_max:"Max Multiplier",score_time_bonus:"Time Bonus",pts_abbr:"pts.",score_correct_lbl:"correct",mode_wappen:"Coat of Arms",mode_slf:"City-Country-River",mode_euro:"Euro Coins"
+  hud_lives:"LIVES",score_mult_max:"Max Multiplier",score_time_bonus:"Time Bonus",pts_abbr:"pts.",score_correct_lbl:"correct",mode_wappen:"Coat of Arms",mode_slf:"City-Country-River",mode_euro:"Euro Coins",
+  /* P208: Phase 204/205 modes + WortSchmiede UI */
+  mode_wort_schmiede:"Word Forge",mode_hauptstadt_dist:"Capital Distance",
+  mode_flugrouten_duell:"Flight Route Duel",mode_insel_festland:"Island or Mainland",
+  mode_aequator:"North or South?",
+  ws_found:"Found",ws_enter_word:"Enter word\u2026",ws_check:"Check",
+  ws_all_found:"All words found!",ws_next_city:"Next City",
+  ws_duplicate:"\u2713 Already found!",ws_invalid:"\u2715 Not a valid word",
+  ws_lang_label:"Language",ws_letters_hint:"Form words from the city's letters"
 },
 pl:{
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",menu:"Menu",board:"Ranking",pass:"Paszport",
@@ -5098,31 +5114,42 @@ let S={
 };
 let tIv=null,fTo=null,toastTo=null;
 
-/* â”€â”€ Phase 42: Anti-Cheat – Proxy wrapper for S in console â”€â”€ */
+/* Phase 42 / P208: Anti-Cheat – Proxy wrapper for S (write-guard + read-warn) */
 (function(){
-  const GUARDED=new Set(["sc","correct","st","bs","pts","collectedPlates","sbProfile"]);
+  const GUARDED_WRITE=new Set(["sc","correct","st","bs","pts","collectedPlates","sbProfile"]);
+  const SENSITIVE_READ=new Set(["q"]);
   if(typeof Proxy==="undefined")return;
   try{
     const _real=S;
+    const _TRUSTED_FNS=["answer","startGame","mpCountdown","lq","nextRound",
+      "checkMastery","spotterCollect","saveSession","loadData","initAuth",
+      "handleGridAnswer","finishCustomGame","submitGridResult",
+      "render","renderWortSchmiede","renderLandHauptstadt","renderSLF",
+      "answerByIdx","handleWsCheck","handleSLFSubmit","handleLandHauptstadtSubmit","lvAnswer"];
+    const _isTrusted=()=>{
+      const stk=(new Error()).stack||"";
+      return _TRUSTED_FNS.some(fn=>stk.includes(fn));
+    };
     const _p=new Proxy(_real,{
+      get(t,k){
+        /* P208: warn on console reads of S.q (contains current answer) */
+        if(SENSITIVE_READ.has(k)&&!_isTrusted()){
+          console.warn("%c\u{1F6AB} GeoQuest Anti-Cheat: console read of S.q detected.",
+            "color:#f59e0b;font-weight:bold;font-size:13px");
+        }
+        return t[k];
+      },
       set(t,k,v){
-        if(GUARDED.has(k)){
-          /* Check if call is from our own code (has game functions in stack) */
-          const stk=(new Error()).stack||"";
-          const trusted=["answer","startGame","mpCountdown","lq","nextRound",
-            "checkMastery","spotterCollect","saveSession","loadData","initAuth",
-            "handleGridAnswer","finishCustomGame","submitGridResult"];
-          const ok=trusted.some(fn=>stk.includes(fn));
-          if(!ok){
-            console.warn("%c🚫 GeoQuest: Schummeln erkannt! Feld '"+k+"' ist geschützt.",
+        if(GUARDED_WRITE.has(k)){
+          if(!_isTrusted()){
+            console.warn("%c\u{1F6AB} GeoQuest: Schummeln erkannt! Feld '"+k+"' ist gesch\u00fctzt.",
               "color:#ef4444;font-weight:bold;font-size:14px");
-            return true; /* silent block */
+            return true;
           }
         }
         t[k]=v;return true;
       }
     });
-    /* Shadow window.S with the guarded proxy */
     Object.defineProperty(window,"S",{get:()=>_p,configurable:false,enumerable:false});
   }catch(e){}
 })();
@@ -6696,12 +6723,13 @@ function _lvNext(){
   if(lv.current===1||!lv.roundQ){
     const modeId=lv.mode||(["flag","capital","city","comp_area","comp_pop","comp_north"][~~(Math.random()*6)]);
     const genFn=GEN[modeId]||genFlagQ;
-    lv.roundQ=genFn()||genFlagQ();
+    /* P208: try/catch so broken generator never crashes LV */
+    try{lv.roundQ=genFn()||genFlagQ();}catch(_e){console.warn("[GeoQuest LV] generator error:",_e);lv.roundQ=genFlagQ();}
   }
   lv.q=lv.roundQ;
   render();
   tIv=setInterval(()=>{
-    if(!S.lv)return clearInterval(tIv);
+    if(!S.lv||!document.getElementById("lv-timer")){clearInterval(tIv);return;}  /* P208: self-cancel if LV modal gone */
     S.lv.timer--;
     const te=document.getElementById("lv-timer");
     if(te){
@@ -6874,7 +6902,7 @@ function lq(){
     S.waitingForLandscape=true;
   }else{
     S.waitingForLandscape=false;
-    if(typeof tIv !== 'undefined') clearInterval(tIv); tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null,_secretGameToken);} },1000);
+    tIv=setInterval(()=>{  /* P208: redundant clearInterval removed; self-cancel below */S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null,_secretGameToken);} },1000);
   }
 }
 
@@ -7489,7 +7517,8 @@ function startGame(m){
   Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",mode:_m,
     scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,
     half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),
-    survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,lives:S.diff==="casual"?999:3});
+    survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,lives:S.diff==="casual"?999:3,
+    slfData:null,wsData:null,lhData:null});  /* P208: always reset sub-game state on new game */
   _secretGameToken=Math.random().toString(36).substring(2,15);
   /* Phase 86 – custom puzzle modes */
   if(_m==="logic_grid"){initLogikGitter();render();return;}
@@ -7666,7 +7695,7 @@ function startDailyChallenge(){
   const seed=getDailySeed();
   initRng(seed);
   S.mode="city";S.diff="casual";S.isDailyRun=true;
-  Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,slfData:null,wsData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});
+  Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,slfData:null,wsData:null,lhData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});  /* P208: lhData reset */
   lq();
 }
 function renderDailyHero(){
@@ -8164,9 +8193,10 @@ if(mode==="slf"&&S.ph==="playing"){
       ?`<div class="fb ok">✓ Richtig\! +${pts}</div>`
       :`<div class="fb ng">✗ Falsch → ${q.ans}</div>`;
     const disabled=sel\!==null?"disabled":"";
-    const optHtml=q.opts.map(o=>{
+    /* P208: answerByIdx — option values not in DOM */
+    const optHtml=q.opts.map((o,_i)=>{
       const cls=sel\!==null?(o===q.ans?" opt-ok":o===sel?" opt-ng":""):"";
-      return`<button class="opt-btn${cls}" data-av="${(o||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;')}" onclick="answer(this.dataset.av,_secretGameToken)" ${disabled}>${esc(o)}</button>`;
+      return`<button class="opt-btn${cls}" onclick="answerByIdx(${_i})" ${disabled}>${esc(o)}</button>`;
     }).join("");
     app.innerHTML=`<div class="scr map-scr">
       <div class="hud">
@@ -9564,22 +9594,30 @@ function renderLandHauptstadt(sc){
 /* -- Phase 205: Wort-Schmiede ------------------------------------------------ */
 function initWortSchmiede(){
   clearInterval(tIv);
+  /* P208: guard against empty/malformed data */
+  if(!WORTSCHMIEDE_DATA||!WORTSCHMIEDE_DATA.length){console.warn('[GeoQuest] WORTSCHMIEDE_DATA empty');S.ph='menu';render();return;}
   const lang=S.language||localStorage.getItem('gq_lang')||'en';
   const idx=~~(rng()*WORTSCHMIEDE_DATA.length);
   const entry=WORTSCHMIEDE_DATA[idx];
+  if(!entry||!entry.city||!entry.validWords){console.warn('[GeoQuest] WS entry malformed',idx);S.ph='menu';render();return;}
   const words=(entry.validWords[lang]||entry.validWords['de']||entry.validWords['en']||Object.values(entry.validWords)[0]||[]).map(function(w){return w.toUpperCase();});
   S.wsData={cityIdx:idx,city:entry.city,lang:lang,allWords:words,foundWords:[],input:"",phase:"playing"};
   S.gameStartTime=Date.now();
   S.ph="playing";
 }
+/* P208: 350ms debounce */
+let _wsCheckLast=0;
 function handleWsCheck(){
   if(!S.wsData||S.wsData.phase!=="playing")return;
+  const _now=Date.now();
+  if(_now-_wsCheckLast<350)return;
+  _wsCheckLast=_now;
   const inp=(S.wsData.input||"").trim().toUpperCase();
   S.wsData.input="";
   const el=document.getElementById("ws-input");if(el)el.value="";
   if(!inp||inp.length<2)return;
-  if(S.wsData.foundWords.includes(inp)){showToast("\u2713 Schon gefunden!");return;}
-  if(!S.wsData.allWords.includes(inp)){showToast("\u2715 Kein g\u00fcltiges Wort");return;}
+  if(S.wsData.foundWords.includes(inp)){showToast(t("ws_duplicate"));return;}
+  if(!S.wsData.allWords.includes(inp)){showToast(t("ws_invalid"));return;}
   S.wsData.foundWords.push(inp);
   const pts=inp.length>=5?15:inp.length>=4?10:5;
   S.sc+=pts;
@@ -9597,13 +9635,43 @@ function renderWortSchmiede(sc){
   const barCol=pct>=100?"#10b981":pct>=60?"#3b82f6":"#f59e0b";
   const chips=foundWords.map(function(w){return'<span style="display:inline-flex;align-items:center;background:#10b981;color:#fff;border-radius:20px;padding:4px 12px;font-size:.82rem;font-weight:700;margin:3px 3px 3px 0">'+esc(w)+'</span>';}).join("");
   const letters=[...city].map(function(ch){return'<span style="display:inline-flex;align-items:center;justify-content:center;width:2.1rem;height:2.5rem;background:var(--bg3);border:2px solid var(--border);border-radius:8px;font-size:1.3rem;font-weight:900;color:var(--text);margin:0 3px">'+ch+'</span>';}).join("");
+  /* P208: all user-facing strings via t() */
   if(phase==="won"){
-    return'<div class="scr"><div class="panel"><div style="text-align:center;font-size:2.5rem;margin-bottom:.5rem">\u{1F3C6}</div><div style="text-align:center;font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:.3rem">Alle W\u00f6rter gefunden!</div><div style="text-align:center;font-size:.8rem;color:var(--text3);margin-bottom:1rem">'+city+' \u00b7 '+found+'/'+total+' W\u00f6rter \u00b7 '+sc.toLocaleString()+' Punkte</div><div style="display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:1rem">'+chips+'</div><button class="btn-p" style="margin-top:.5rem" onclick="initWortSchmiede();render()">\u{1F501} N\u00e4chste Stadt</button><button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u{1F6AA} Beenden</button></div></div>';
+    return'<div class="scr"><div class="panel">'+
+      '<div style="text-align:center;font-size:2.5rem;margin-bottom:.5rem">\u{1F3C6}</div>'+
+      '<div style="text-align:center;font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:.3rem">'+t("ws_all_found")+'</div>'+
+      '<div style="text-align:center;font-size:.8rem;color:var(--text3);margin-bottom:1rem">'+esc(city)+' \u00b7 '+found+'/'+total+' \u00b7 '+sc.toLocaleString()+' '+t("pts_abbr")+'</div>'+
+      '<div style="display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:1rem">'+chips+'</div>'+
+      '<button class="btn-p" style="margin-top:.5rem" onclick="initWortSchmiede();render()">\u{1F501} '+t("ws_next_city")+'</button>'+
+      '<button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u{1F6AA} '+t("menu")+'</button>'+
+      '</div></div>';
   }
-  return'<div class="scr"><div class="panel"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.75rem"><div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">WORT-SCHMIEDE</div><div style="display:flex;flex-wrap:wrap;margin-top:.35rem">'+letters+'</div></div><div style="text-align:right"><div style="font-size:.6rem;color:var(--text3)">PUNKTE</div><div style="font-size:1.5rem;font-weight:900;color:var(--text)">'+sc.toLocaleString()+'</div></div></div><div style="margin-bottom:.6rem"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:.72rem;color:var(--text3)">Gefunden: <strong style="color:var(--text)">'+found+'</strong> / '+total+'</span><span style="font-size:.72rem;color:'+barCol+';font-weight:700">'+pct+'%</span></div><div class="tbar"><div class="tfill" style="width:'+pct+'%;background:'+barCol+';transition:width .3s"></div></div></div><div style="display:flex;gap:8px;margin-bottom:.8rem"><input id="ws-input" type="text" dir="ltr" class="slf-input" style="flex:1;direction:ltr;text-align:left;padding-left:10px;text-transform:uppercase;font-weight:700;letter-spacing:1px" placeholder="Wort eingeben\u2026" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" value="'+esc(input)+'" oninput="S.wsData.input=this.value.toUpperCase()" onkeydown="if(event.key===\'Enter\'){handleWsCheck();event.preventDefault();}"><button class="btn-p" style="padding:.55rem 1rem;margin:0;min-width:80px" onclick="handleWsCheck()">\u2714 Pr\u00fcfen</button></div>'+
+  return'<div class="scr"><div class="panel">'+
+    '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.75rem">'+
+      '<div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">'+t("mode_wort_schmiede").toUpperCase()+'</div>'+
+        '<div style="display:flex;flex-wrap:wrap;margin-top:.35rem">'+letters+'</div></div>'+
+      '<div style="text-align:right"><div style="font-size:.6rem;color:var(--text3)">'+t("score_correct_lbl").toUpperCase()+'</div>'+
+        '<div style="font-size:1.5rem;font-weight:900;color:var(--text)">'+sc.toLocaleString()+'</div></div>'+
+    '</div>'+
+    '<div style="margin-bottom:.6rem">'+
+      '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">'+
+        '<span style="font-size:.72rem;color:var(--text3)">'+t("ws_found")+': <strong style="color:var(--text)">'+found+'</strong> / '+total+'</span>'+
+        '<span style="font-size:.72rem;color:'+barCol+';font-weight:700">'+pct+'%</span></div>'+
+      '<div class="tbar"><div class="tfill" style="width:'+pct+'%;background:'+barCol+';transition:width .3s"></div></div>'+
+    '</div>'+
+    '<div style="display:flex;gap:8px;margin-bottom:.8rem">'+
+      '<input id="ws-input" type="text" dir="ltr" class="slf-input" style="flex:1;direction:ltr;text-align:left;padding-left:10px;text-transform:uppercase;font-weight:700;letter-spacing:1px"'+
+        ' placeholder="'+t("ws_enter_word")+'" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false"'+
+        ' value="'+esc(input)+'" oninput="S.wsData.input=this.value.toUpperCase()"'+
+        ' onkeydown="if(event.key===\'Enter\'){handleWsCheck();event.preventDefault();}">\n'+
+      '<button class="btn-p" style="padding:.55rem 1rem;margin:0;min-width:80px" onclick="handleWsCheck()">\u2714 '+t("ws_check")+'</button>'+
+    '</div>'+
     (found>0?'<div style="display:flex;flex-wrap:wrap;margin-bottom:.6rem">'+chips+'</div>':"")+
-    '<div style="font-size:.7rem;color:var(--text3);text-align:center;margin-bottom:.5rem">Bilde W\u00f6rter aus den Buchstaben der Stadt \u00b7 Sprache: <strong>'+lang.toUpperCase()+'</strong></div><button class="btn-g" style="margin-bottom:0;font-size:.78rem" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u2716 Schlie\u00dfen</button></div></div>';
+    '<div style="font-size:.7rem;color:var(--text3);text-align:center;margin-bottom:.5rem">'+t("ws_letters_hint")+' \u00b7 '+t("ws_lang_label")+': <strong>'+lang.toUpperCase()+'</strong></div>'+
+    '<button class="btn-g" style="margin-bottom:0;font-size:.78rem" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u2716 '+t("menu")+'</button>'+
+    '</div></div>';
 }
+
 async function doDeleteAccount(){
   if(\!sbUser)return;
   const conf1=confirm("Konto wirklich löschen? Alle Daten gehen verloren.");
