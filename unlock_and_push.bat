@@ -6,6 +6,6 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Phase 217 — H/L Proximity overhaul. getSmartMatch now uses log-ratio distance (scale-invariant) with 3x hard cap + top-6 cutoff so trivially obvious comparisons (London rain vs Cairo) are eliminated. genUniversalHLQ (Wolkenkratzer) now picks rank-adjacent buildings (+-4 positions) instead of fully random. Also: Phase 216 fake-country distractors, Phase 215 smart hyphenation, Phase 214 crash fixes."
+git commit -m "RELEASE: Phase 218 — Beta-Labels entfernt. Alle 9 Stellen mit Emoji+[BETA]-Prompt-Prefix (genHLBeta, HL_BETA_METRICS, genBetaMCQ/HL/Spotter) bereinigt. Spiele sind produktionsreif. Also: Phase 217 H/L Proximity-Fix (log-ratio), Phase 216 Fake-Distractors, Phase 215 Hyphenation, Phase 214 Crash-Fixes."
 git push origin main
 pause

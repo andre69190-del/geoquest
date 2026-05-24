@@ -4066,7 +4066,7 @@ function genHLBeta(modeId){
   const vB=HL_BETA_DATA[kB][m.key];
   const isOlder=modeId==="hl_b_founded";
   const ans=isOlder?(vA<vB?kA:kB):(vA>vB?kA:kB);
-  const prompt="\u{1F9EA} [BETA] "+(HL_BETA_PROMPTS[modeId]||"Vergleich?");
+  const prompt=HL_BETA_PROMPTS[modeId]||"Vergleich?";
   const meta=kA+": "+m.fmt(vA)+" · "+kB+": "+m.fmt(vB);
   return{type:modeId,prompt,subj:"",opts:[kA,kB],ans,meta,lid:kA+"|"+kB,cc:ccFromCountry(ans)||"de"};
 }
@@ -6854,11 +6854,11 @@ function genPlateCompareQ(){
   });
   if(pool.length<2)return null;
   const METRICS=[
-    {key:"gdp",  prompt:"\u{1F9EA} [BETA] Welches Land hat das höhere BIP pro Kopf?", fmt:v=>"$"+v.toLocaleString()},
-    {key:"dens", prompt:"\u{1F9EA} [BETA] Welches Land ist dichter besiedelt?",        fmt:v=>v+" Ew/km²"},
-    {key:"life", prompt:"\u{1F9EA} [BETA] In welchem Land lebt man länger?",           fmt:v=>v+" Jahre"},
-    {key:"age",  prompt:"\u{1F9EA} [BETA] Welches Land hat das höhere Medianalter?",   fmt:v=>v+" Jahre"},
-    {key:"forest",prompt:"\u{1F9EA} [BETA] Welches Land hat mehr Waldfläche?",        fmt:v=>v+" %"},
+    {key:"gdp",  prompt:"Welches Land hat das höhere BIP pro Kopf?", fmt:v=>"$"+v.toLocaleString()},
+    {key:"dens", prompt:"Welches Land ist dichter besiedelt?",        fmt:v=>v+" Ew/km²"},
+    {key:"life", prompt:"In welchem Land lebt man länger?",           fmt:v=>v+" Jahre"},
+    {key:"age",  prompt:"Welches Land hat das höhere Medianalter?",   fmt:v=>v+" Jahre"},
+    {key:"forest",prompt:"Welches Land hat mehr Waldfläche?",        fmt:v=>v+" %"},
   ];
   const m=METRICS[~~(rng()*METRICS.length)];
   const valid=pool.filter(k=>COMP_DATA[k][m.key]!=null&&COMP_DATA[k][m.key]>0);
@@ -7092,7 +7092,7 @@ function genBetaMCQ(bId){
   const d=pool[~~(rng()*pool.length)];
   if(!d||!d.a||!d.fakes)return null;
   const opts=_uOpts(d.a,d.fakes,3);
-  return{type:"beta_mcq",prompt:"\u{1F9EA} [BETA] "+d.q,subj:d.subj||"",ans:d.a,opts,meta:d.meta||"",lid:"bmcq_"+bId,cc:ccFromCountry(d.a)||"de"};
+  return{type:"beta_mcq",prompt:d.q,subj:d.subj||"",ans:d.a,opts,meta:d.meta||"",lid:"bmcq_"+bId,cc:ccFromCountry(d.a)||"de"};
 }
 
 /* Phase 166: genBetaHL */
@@ -7102,7 +7102,7 @@ function genBetaHL(bId){
   const d=pool[~~(rng()*pool.length)];
   if(!d||!d.nameA||!d.nameB)return null;
   const meta=d.nameA+": "+(d.metaA||"?")+" \u00b7 "+d.nameB+": "+(d.metaB||"?");
-  return{type:"beta_hl",prompt:"\u{1F9EA} [BETA] "+(d.prompt||"Welches ist mehr?"),subj:"",opts:[d.nameA,d.nameB],ans:d.ans,meta,lid:"bhl_"+bId,cc:ccFromCountry(d.ans)||"de"};
+  return{type:"beta_hl",prompt:(d.prompt||"Welches ist mehr?"),subj:"",opts:[d.nameA,d.nameB],ans:d.ans,meta,lid:"bhl_"+bId,cc:ccFromCountry(d.ans)||"de"};
 }
 
 /* Phase 166: genBetaSpotter */
@@ -7111,7 +7111,7 @@ function genBetaSpotter(bId){
   if(!pool||!pool.length)return null;
   const d=pool[~~(rng()*pool.length)];
   if(!d||!d.answer)return null;
-  return{type:"beta_spotter",prompt:"\u{1F9EA} [BETA] Weltkarte",subj:d.q,ans:d.answer,opts:[],meta:"",lid:"bspot_"+bId,cc:ccFromCountry(d.answer)||"de"};
+  return{type:"beta_spotter",prompt:"Weltkarte",subj:d.q,ans:d.answer,opts:[],meta:"",lid:"bspot_"+bId,cc:ccFromCountry(d.answer)||"de"};
 }
 
 
