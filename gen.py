@@ -6283,7 +6283,7 @@ const GEN={
   b41:()=>genBetaSpotter(41),b42:()=>genBetaSpotter(42),b44:()=>genBetaMCQ(44),
   b45:()=>genBetaSpotter(45),b46:()=>genBetaSpotter(46),b47:()=>genBetaMCQ(47),
   b51:()=>genBetaSpotter(51),b53:()=>genBetaMCQ(53),b54:()=>genBetaSpotter(54),
-  b58:()=>genBetaSpotter(58),b60:()=>genBetaMCQ(60),,
+  b58:()=>genBetaSpotter(58),b60:()=>genBetaMCQ(60),
   f1_map:genF1MapQ,
   stadium_map:genStadiumMapQ,
   river_map:genRiverMapQ,

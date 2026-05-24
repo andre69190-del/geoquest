@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT: Phase 205 -- Wort-Schmiede: Multilingual city-scrabble mode (DE/EN/ES/FR), language-keyed validWords, green chip UI, progress bar, win screen"
+git commit -m "FIX+FEAT: Phase 205 -- Wort-Schmiede (DE/EN/ES/FR city-scrabble); Fix double-comma JS SyntaxError in GEN dispatcher; Fix vercel.json: add cities_data.js to builds+routes so 30k-city data is actually served"
 echo.
 git push origin main
 echo.
