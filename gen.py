@@ -2370,8 +2370,6 @@ let rngSeed=null,rngState=0;
 function initRng(seed){rngSeed=seed>>>0;rngState=rngSeed;}
 function seededRand(){rngState=(rngState+0x6D2B79F5)>>>0;let t=Math.imul(rngState^rngState>>>15,rngState|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;}
 function rng(){return rngSeed\!==null?seededRand():Math.random();}
-/* Phase 215: sync html[lang] on page load */
-document.documentElement.lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
 
 let PLATES_DATA=[],CURR_REAL=[],CAPS_POP=[],RIVERS_REAL=[],NEIGHBORS={},AREA_DATA=[];
 
@@ -11152,6 +11150,8 @@ window.toggleAccordion=function(header,catId){
 };
 
 // Apply default filter on DOMContentLoaded
+/* Phase 215: sync html[lang] on page load */
+document.documentElement.lang=localStorage.getItem('gq_lang')||'de';
 document.addEventListener('DOMContentLoaded',function(){
   setTimeout(function(){
     window.filterByCategory((typeof S!=='undefined'&&S.filterCat)||'pure_geo');
