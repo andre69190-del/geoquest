@@ -128,7 +128,14 @@ HCEUJ = json.dumps(HC_CAPITALS_EU, separators=(',',':'), ensure_ascii=False)
 HCCHJ = json.dumps(HC_CITIES_CH, separators=(',',':'), ensure_ascii=False)
 
 # ── Sport & Großevents POI games (18 games) ─────────────────────────────────
-SPORT_POI_GAMES = {'derby_hotspots': {'title': 'Derby-Hotspots', 'icon': '⚽', 'desc': 'Verorte die Städte der hitzigsten Fußball-Stadtderbys der Welt.', 'poi': [{'name': 'Superclásico: Boca Juniors vs. River Plate (Buenos Aires)', 'lat': -34.6356, 'lng': -58.3648, 'cc': 'ar'}, {'name': 'Old Firm: Celtic vs. Rangers (Glasgow)', 'lat': 55.8497, 'lng': -4.2055, 'cc': 'gb'}, {'name': 'Ewiges Derby: Roter Stern vs. Partizan (Belgrad)', 'lat': 44.8016, 'lng': 20.4651, 'cc': 'rs'}, {'name': 'Interkontinentales Derby: Galatasaray vs. Fenerbahçe (Istanbul)', 'lat': 41.0151, 'lng': 28.9795, 'cc': 'tr'}, {'name': 'Derby della Madonnina: Inter vs. AC Milan (Mailand)', 'lat': 45.4781, 'lng': 9.124, 'cc': 'it'}, {'name': 'El Clásico: Real Madrid vs. FC Barcelona', 'lat': 40.4531, 'lng': -3.6883, 'cc': 'es'}, {'name': 'Merseyside Derby: Liverpool vs. Everton', 'lat': 53.4308, 'lng': -2.9608, 'cc': 'gb'}, {'name': 'North London Derby: Arsenal vs. Tottenham', 'lat': 51.5549, 'lng': -0.1084, 'cc': 'gb'}, {'name': 'Derby della Capitale: AS Roma vs. Lazio', 'lat': 41.9341, 'lng': 12.4547, 'cc': 'it'}, {'name': 'El Gran Derbi: FC Sevilla vs. Real Betis', 'lat': 37.384, 'lng': -5.9705, 'cc': 'es'}, {'name': 'O Clássico: FC Porto vs. Benfica (Porto)', 'lat': 41.1496, 'lng': -8.6109, 'cc': 'pt'}, {'name': 'De Klassieker: Ajax vs. Feyenoord (Amsterdam/Rotterdam)', 'lat': 52.3676, 'lng': 4.9041, 'cc': 'nl'}, {'name': 'Revierderby: Borussia Dortmund vs. Schalke 04', 'lat': 51.4926, 'lng': 7.4519, 'cc': 'de'}, {'name': 'Clásico de Clasicos: Boca Juniors Stadion La Bombonera', 'lat': -34.6357, 'lng': -58.3643, 'cc': 'ar'}]}, 'eishockey_nationen': {'title': 'Eishockey-Nationen', 'icon': '🏒', 'desc': 'Finde die historischen Hochburgen und WM-Austragungsorte des Eishockeys.', 'poi': [{'name': 'Montreal (Heimat der Canadiens & erstes Hallenspiel)', 'lat': 45.5017, 'lng': -73.5673, 'cc': 'ca'}, {'name': 'Moskau (Historische KHL- & Nationalteam-Zentrale)', 'lat': 55.7558, 'lng': 37.6173, 'cc': 'ru'}, {'name': 'Stockholm (Avicii Arena / Globen)', 'lat': 59.2936, 'lng': 18.0831, 'cc': 'se'}, {'name': 'Helsinki (Nokia Arena / Hartwall Arena)', 'lat': 60.1699, 'lng': 24.9384, 'cc': 'fi'}, {'name': 'Prag (O2 Arena – Rekord-WM-Schauplatz)', 'lat': 50.0835, 'lng': 14.4341, 'cc': 'cz'}, {'name': 'Toronto (Scotiabank Arena – Maple Leafs, Original Six)', 'lat': 43.6435, 'lng': -79.3791, 'cc': 'ca'}, {'name': 'Detroit (Little Caesars Arena – Hockeytown USA)', 'lat': 42.341, 'lng': -83.055, 'cc': 'us'}, {'name': 'Boston (TD Garden – Bruins, Original Six)', 'lat': 42.3662, 'lng': -71.0621, 'cc': 'us'}, {'name': 'Bern (PostFinance Arena – SC Bern)', 'lat': 46.9481, 'lng': 7.4647, 'cc': 'ch'}, {'name': 'Bratislava (Steel Arena – WM-Gastgeber 2019)', 'lat': 48.1486, 'lng': 17.1077, 'cc': 'sk'}, {'name': 'Minsk (Chizhovka Arena – KHL-Hochburg Belarus)', 'lat': 53.8788, 'lng': 27.559, 'cc': 'by'}, {'name': 'Zürich (Swiss Life Arena – ZSC Lions)', 'lat': 47.3769, 'lng': 8.5417, 'cc': 'ch'}]}, 'f1_historisch': {'title': 'F1 Historische Strecken', 'icon': '🏎', 'desc': 'Finde legendäre, heute verlassene oder radikal umgebaute Formel-1-Rennstrecken.', 'poi': [{'name': 'Nürburgring Nordschleife (Deutschland)', 'lat': 50.3441, 'lng': 6.9653, 'cc': 'de'}, {'name': 'Jacarepaguá Autódromo (Rio de Janeiro, Brasilien)', 'lat': -22.9754, 'lng': -43.3934, 'cc': 'br'}, {'name': 'Circuito do Estoril (Portugal)', 'lat': 38.7506, 'lng': -9.3942, 'cc': 'pt'}, {'name': 'Autodromo Enzo e Dino Ferrari (Imola, Italien)', 'lat': 44.3439, 'lng': 11.7167, 'cc': 'it'}, {'name': 'Kyalami Grand Prix Circuit (Südafrika)', 'lat': -25.9982, 'lng': 28.0679, 'cc': 'za'}, {'name': 'Circuit de Reims-Gueux (Frankreich – erster F1-GP 1950)', 'lat': 49.2594, 'lng': 3.9308, 'cc': 'fr'}, {'name': 'Circuit Zandvoort (Niederlande)', 'lat': 52.3877, 'lng': 4.5441, 'cc': 'nl'}, {'name': 'Watkins Glen International (USA)', 'lat': 42.3368, 'lng': -76.9205, 'cc': 'us'}, {'name': 'Brands Hatch (England)', 'lat': 51.3612, 'lng': 0.262, 'cc': 'gb'}, {'name': 'Autodromo Nazionale Monza – Tempel der Geschwindigkeit (Italien)', 'lat': 45.6156, 'lng': 9.2814, 'cc': 'it'}, {'name': 'Circuit de Spa-Francorchamps (Belgien)', 'lat': 50.4372, 'lng': 5.9714, 'cc': 'be'}, {'name': 'Adelaide Street Circuit (Australien – 1985–1995)', 'lat': -34.9285, 'lng': 138.6007, 'cc': 'au'}, {'name': 'Ain Diab Circuit (Casablanca, Marokko – GP 1958)', 'lat': 33.5731, 'lng': -7.5898, 'cc': 'ma'}]}, 'tdf_paesse': {'title': 'Tour de France Pässe', 'icon': '🚴', 'desc': 'Markiere die legendärsten und am meisten gefürchteten Anstiege der Tour de France.', 'poi': [{'name': "Alpe d'Huez (21 Kehren)", 'lat': 45.0922, 'lng': 6.0694, 'cc': 'fr'}, {'name': 'Mont Ventoux (Der kahle Berg)', 'lat': 44.1736, 'lng': 5.2789, 'cc': 'fr'}, {'name': 'Col du Tourmalet (Pyrenäen-Klassiker)', 'lat': 42.9084, 'lng': 0.1412, 'cc': 'fr'}, {'name': 'Col du Galibier (Dach der Tour)', 'lat': 45.0642, 'lng': 6.4017, 'cc': 'fr'}, {'name': "Col d'Izoard (Hautes-Alpes)", 'lat': 44.8208, 'lng': 6.7319, 'cc': 'fr'}, {'name': "Col d'Aubisque (Pyrenäen – Eröffnungspass)", 'lat': 42.9776, 'lng': -0.3403, 'cc': 'fr'}, {'name': 'La Planche des Belles Filles (Vogesen – Sprinter-Killer)', 'lat': 47.7889, 'lng': 6.7716, 'cc': 'fr'}, {'name': 'Col du Grand Colombier (Jura – Vier-Seiten-Klassiker)', 'lat': 45.9086, 'lng': 5.6661, 'cc': 'fr'}, {'name': 'Col de la Colombière (Haute-Savoie)', 'lat': 45.9978, 'lng': 6.4678, 'cc': 'fr'}, {'name': 'Plateau de Beille (Ariège – Pyrenäen)', 'lat': 42.7708, 'lng': 1.6508, 'cc': 'fr'}, {'name': 'Passo dello Stelvio (Italien – gelegentlicher Gastauftritt)', 'lat': 46.5261, 'lng': 10.453, 'cc': 'it'}, {'name': 'Col de la Loze (Courchevel – neuester Super-Pass)', 'lat': 45.4167, 'lng': 6.6333, 'cc': 'fr'}]}, 'olympia_winter_historie': {'title': 'Olympische Winter-Historie', 'icon': '⛷', 'desc': 'Finde die traditionsreichen Städte, die jemals Winterspiele ausgetragen haben.', 'poi': [{'name': 'Chamonix (1924 – Erste Winterspiele überhaupt)', 'lat': 45.9227, 'lng': 6.8685, 'cc': 'fr'}, {'name': 'Lake Placid (1932 & 1980 – USA)', 'lat': 44.2795, 'lng': -73.9799, 'cc': 'us'}, {'name': "Cortina d'Ampezzo (1956 & 2026 – Italien)", 'lat': 46.5405, 'lng': 12.1357, 'cc': 'it'}, {'name': 'Innsbruck (1964 & 1976 – Doppel-Gastgeber)', 'lat': 47.2682, 'lng': 11.3923, 'cc': 'at'}, {'name': 'Grenoble (1968 – Frankreich)', 'lat': 45.1885, 'lng': 5.7245, 'cc': 'fr'}, {'name': 'Sapporo (1972 – Erste Winterspiele in Asien)', 'lat': 43.0618, 'lng': 141.3545, 'cc': 'jp'}, {'name': 'Lillehammer (1994 – Norwegen)', 'lat': 61.1153, 'lng': 10.4662, 'cc': 'no'}, {'name': 'Nagano (1998 – Japan)', 'lat': 36.6485, 'lng': 138.1942, 'cc': 'jp'}, {'name': 'Calgary (1988 – Kanada)', 'lat': 51.0447, 'lng': -114.0719, 'cc': 'ca'}, {'name': 'Salt Lake City (2002 – USA)', 'lat': 40.7608, 'lng': -111.891, 'cc': 'us'}, {'name': 'Turin (2006 – Italien)', 'lat': 45.0703, 'lng': 7.6869, 'cc': 'it'}, {'name': 'Vancouver (2010 – Kanada)', 'lat': 49.2827, 'lng': -123.1207, 'cc': 'ca'}, {'name': 'Pyeongchang (2018 – Südkorea)', 'lat': 37.8748, 'lng': 128.6361, 'cc': 'kr'}, {'name': 'Peking (2022 – Erste Stadt mit Sommer- und Winterspielen)', 'lat': 39.9042, 'lng': 116.4074, 'cc': 'cn'}]}, 'wm_gastgeber': {'title': 'WM-Gastgeber-Historie', 'icon': '🌍', 'desc': 'Finde die Austragungsländer historischer Fußball-Weltmeisterschaften.', 'poi': [{'name': 'Uruguay (Erste WM 1930)', 'lat': -32.5228, 'lng': -55.7658, 'cc': 'uy'}, {'name': 'Schweiz (WM 1954)', 'lat': 46.8182, 'lng': 8.2275, 'cc': 'ch'}, {'name': 'England (Mutterland des Fußballs – WM 1966)', 'lat': 52.3555, 'lng': -1.1743, 'cc': 'gb'}, {'name': 'Mexiko (WM 1970 & 1986 – einziges Doppel-Gastgeberland)', 'lat': 23.6345, 'lng': -102.5528, 'cc': 'mx'}, {'name': 'Argentinien (WM 1978)', 'lat': -38.4161, 'lng': -63.6167, 'cc': 'ar'}, {'name': 'Spanien (WM 1982)', 'lat': 40.4168, 'lng': -3.7038, 'cc': 'es'}, {'name': 'USA (WM 1994 – Rekordbesucherzahlen)', 'lat': 37.0902, 'lng': -95.7129, 'cc': 'us'}, {'name': 'Südafrika (Erste WM auf afrikanischem Boden 2010)', 'lat': -30.5595, 'lng': 22.9375, 'cc': 'za'}, {'name': 'Katar (Erste Winter-WM 2022)', 'lat': 25.3548, 'lng': 51.1839, 'cc': 'qa'}, {'name': 'Südkorea & Japan (Erste asiatische WM 2002)', 'lat': 37.5665, 'lng': 126.978, 'cc': 'kr'}, {'name': 'Russland (WM 2018)', 'lat': 55.7558, 'lng': 37.6173, 'cc': 'ru'}, {'name': 'Deutschland (WM 1974 & Sommermärchen 2006)', 'lat': 51.1657, 'lng': 10.4515, 'cc': 'de'}, {'name': 'Italien (WM 1934 & 1990)', 'lat': 41.8719, 'lng': 12.5674, 'cc': 'it'}, {'name': 'Frankreich (WM 1998 – Heimsieg)', 'lat': 46.2276, 'lng': 2.2137, 'cc': 'fr'}, {'name': 'Brasilien (WM 1950 & Maracanaço 2014)', 'lat': -14.235, 'lng': -51.9253, 'cc': 'br'}]}, 'wm_finalstadien': {'title': 'Legendäre WM-Finalstadien', 'icon': '🏟', 'desc': 'Verorte die exakten Standorte der berühmtesten WM-Endspielstätten der Geschichte.', 'poi': [{'name': 'Estádio do Maracanã (Rio de Janeiro, Brasilien)', 'lat': -22.9122, 'lng': -43.2302, 'cc': 'br'}, {'name': 'Estadio Azteca (Mexiko-Stadt, Mexiko)', 'lat': 19.3031, 'lng': -99.1506, 'cc': 'mx'}, {'name': 'Wembley-Stadion (London, England – Finale 1966)', 'lat': 51.556, 'lng': -0.2796, 'cc': 'gb'}, {'name': 'Stade de France (Paris/Saint-Denis, Frankreich – Finale 1998)', 'lat': 48.9244, 'lng': 2.3601, 'cc': 'fr'}, {'name': 'FNB-Stadion / Soccer City (Johannesburg, Südafrika – Finale 2010)', 'lat': -26.2347, 'lng': 27.9824, 'cc': 'za'}, {'name': 'Olympiastadion Berlin (Deutschland – Finale 2006)', 'lat': 52.5147, 'lng': 13.2394, 'cc': 'de'}, {'name': 'International Stadium Yokohama (Japan – Finale 2002)', 'lat': 35.5108, 'lng': 139.6062, 'cc': 'jp'}, {'name': 'Luzhniki-Stadion (Moskau, Russland – Finale 2018)', 'lat': 55.7323, 'lng': 37.5576, 'cc': 'ru'}, {'name': 'Rose Bowl (Pasadena, USA – Finale 1994)', 'lat': 34.1613, 'lng': -118.1676, 'cc': 'us'}, {'name': 'Estadio Nacional (Santiago, Chile – Finale 1962)', 'lat': -33.4647, 'lng': -70.6107, 'cc': 'cl'}, {'name': 'Estadio Monumental (Buenos Aires, Argentinien – Finale 1978)', 'lat': -34.5451, 'lng': -58.4498, 'cc': 'ar'}, {'name': 'Stadio Olimpico (Rom, Italien – Finale 1990)', 'lat': 41.9341, 'lng': 12.4547, 'cc': 'it'}, {'name': 'Lusail Iconic Stadium (Lusail, Katar – Finale 2022)', 'lat': 25.4366, 'lng': 51.5089, 'cc': 'qa'}]}, 'weltmeister_nationen': {'title': 'Weltmeister-Nationen', 'icon': '🏆', 'desc': 'Klicke auf die Länder, die jemals den WM-Titel der Männer gewonnen haben.', 'poi': [{'name': 'Brasilien (5 Titel – Rekord-Weltmeister)', 'lat': -14.235, 'lng': -51.9253, 'cc': 'br'}, {'name': 'Deutschland (4 Titel)', 'lat': 51.1657, 'lng': 10.4515, 'cc': 'de'}, {'name': 'Italien (4 Titel)', 'lat': 41.8719, 'lng': 12.5674, 'cc': 'it'}, {'name': 'Argentinien (3 Titel – 1978, 1986, 2022)', 'lat': -38.4161, 'lng': -63.6167, 'cc': 'ar'}, {'name': 'Frankreich (2 Titel – 1998, 2018)', 'lat': 46.2276, 'lng': 2.2137, 'cc': 'fr'}, {'name': 'Spanien (1 Titel – 2010)', 'lat': 40.4168, 'lng': -3.7038, 'cc': 'es'}, {'name': 'England (1 Titel – 1966)', 'lat': 52.3555, 'lng': -1.1743, 'cc': 'gb'}, {'name': 'Uruguay (2 Titel – 1930, 1950)', 'lat': -32.5228, 'lng': -55.7658, 'cc': 'uy'}]}, 'fussball_legenden': {'title': 'Heimat der Fußball-Legenden', 'icon': '⭐', 'desc': 'Wo wurden die Ikonen des Weltfußballs geboren? Finde ihre Geburtsorte.', 'poi': [{'name': 'Pelé (Geburtsort: Três Corações, Brasilien)', 'lat': -21.6936, 'lng': -45.2531, 'cc': 'br'}, {'name': 'Diego Maradona (Geburtsort: Lanús, Argentinien)', 'lat': -34.7045, 'lng': -58.397, 'cc': 'ar'}, {'name': 'Lionel Messi (Geburtsort: Rosario, Argentinien)', 'lat': -32.9442, 'lng': -60.6505, 'cc': 'ar'}, {'name': 'Cristiano Ronaldo (Geburtsort: Funchal/Madeira, Portugal)', 'lat': 32.6669, 'lng': -16.9241, 'cc': 'pt'}, {'name': 'Johan Cruyff (Geburtsort: Amsterdam, Niederlande)', 'lat': 52.3676, 'lng': 4.9041, 'cc': 'nl'}, {'name': 'Ronaldo Nazário (Geburtsort: Bento Ribeiro, Brasilien)', 'lat': -22.8817, 'lng': -43.3425, 'cc': 'br'}, {'name': 'Zinedine Zidane (Geburtsort: Marseille, Frankreich)', 'lat': 43.2965, 'lng': 5.3698, 'cc': 'fr'}, {'name': 'Ronaldinho (Geburtsort: Porto Alegre, Brasilien)', 'lat': -30.0346, 'lng': -51.2177, 'cc': 'br'}, {'name': 'Franz Beckenbauer (Geburtsort: München, Deutschland)', 'lat': 48.1351, 'lng': 11.582, 'cc': 'de'}, {'name': 'Eusébio (Geburtsort: Lourenço Marques/Maputo, Mosambik)', 'lat': -25.9692, 'lng': 32.5732, 'cc': 'mz'}, {'name': 'George Best (Geburtsort: Belfast, Nordirland)', 'lat': 54.5973, 'lng': -5.9301, 'cc': 'gb'}, {'name': 'Gerd Müller (Geburtsort: Nördlingen, Deutschland)', 'lat': 48.8517, 'lng': 10.4909, 'cc': 'de'}, {'name': 'Lev Yashin (Geburtsort: Moskau, Russland)', 'lat': 55.7558, 'lng': 37.6173, 'cc': 'ru'}]}, 'road_to_2026': {'title': 'Road to 2026', 'icon': '🗺', 'desc': 'Finde die weit verstreuten Austragungsorte der Dreiländer-WM 2026.', 'poi': [{'name': 'BC Place Stadium (Vancouver, Kanada)', 'lat': 49.2767, 'lng': -123.112, 'cc': 'ca'}, {'name': 'BMO Field (Toronto, Kanada)', 'lat': 43.6328, 'lng': -79.4186, 'cc': 'ca'}, {'name': 'MetLife Stadium (New York/New Jersey, USA)', 'lat': 40.8128, 'lng': -74.0742, 'cc': 'us'}, {'name': 'SoFi Stadium (Los Angeles/Inglewood, USA)', 'lat': 33.9535, 'lng': -118.339, 'cc': 'us'}, {'name': 'Estadio BBVA (Monterrey, Mexiko)', 'lat': 25.6692, 'lng': -100.2445, 'cc': 'mx'}, {'name': 'AT&T Stadium (Arlington/Dallas, USA)', 'lat': 32.748, 'lng': -97.093, 'cc': 'us'}, {'name': "Levi's Stadium (Santa Clara/San Francisco, USA)", 'lat': 37.4033, 'lng': -121.9694, 'cc': 'us'}, {'name': 'Lincoln Financial Field (Philadelphia, USA)', 'lat': 39.9008, 'lng': -75.1675, 'cc': 'us'}, {'name': 'NRG Stadium (Houston, USA)', 'lat': 29.6847, 'lng': -95.4107, 'cc': 'us'}, {'name': 'Arrowhead Stadium (Kansas City, USA)', 'lat': 39.0489, 'lng': -94.4839, 'cc': 'us'}, {'name': 'Estadio Akron (Guadalajara, Mexiko)', 'lat': 20.6721, 'lng': -103.4061, 'cc': 'mx'}, {'name': 'Estadio Azteca (Mexiko-Stadt, Mexiko)', 'lat': 19.3031, 'lng': -99.1506, 'cc': 'mx'}, {'name': 'Gillette Stadium (Boston/Foxborough, USA)', 'lat': 42.0909, 'lng': -71.2643, 'cc': 'us'}]}, 'frauen_wm_meilensteine': {'title': 'Frauen-WM-Meilensteine', 'icon': '👩', 'desc': 'Verorte die wichtigsten Meilensteine und Gastgeberländer der FIFA Frauen-WM.', 'poi': [{'name': 'China (Erste offizielle Frauen-WM 1991)', 'lat': 35.8617, 'lng': 104.1954, 'cc': 'cn'}, {'name': 'Schweden (WM 1995 – Norwegen wird Weltmeister)', 'lat': 60.1282, 'lng': 18.6435, 'cc': 'se'}, {'name': 'Rose Bowl, Pasadena (USA – Rekord-Finale 1999)', 'lat': 34.1613, 'lng': -118.1676, 'cc': 'us'}, {'name': 'Frankfurt am Main (Deutschland – WM 2011)', 'lat': 50.1109, 'lng': 8.6821, 'cc': 'de'}, {'name': 'Stadium Australia, Sydney (Australien/Neuseeland-WM 2023)', 'lat': -33.8472, 'lng': 151.0634, 'cc': 'au'}, {'name': 'Kanada (WM 2015 – Japan im Finale)', 'lat': 56.1304, 'lng': -106.3468, 'cc': 'ca'}, {'name': 'Frankreich (WM 2019 – USA gewinnt 4. Titel)', 'lat': 46.2276, 'lng': 2.2137, 'cc': 'fr'}, {'name': 'Norwegen (Weltmeister 1995 – erstes nicht-US-Team)', 'lat': 60.472, 'lng': 8.4689, 'cc': 'no'}, {'name': 'Japan (Weltmeister 2011 – erstes asiatisches Team)', 'lat': 36.2048, 'lng': 138.2529, 'cc': 'jp'}]}, 'sommerspiele_metropolen': {'title': 'Sommerspiele-Metropolen', 'icon': '🏅', 'desc': 'Markiere die legendären Austragungsorte der Olympischen Sommerspiele der Neuzeit.', 'poi': [{'name': 'Athen (Erste Spiele der Neuzeit 1896 & 2004)', 'lat': 37.9838, 'lng': 23.7275, 'cc': 'gr'}, {'name': 'Paris (1900, 1924 & 2024 – Dreifacher Gastgeber)', 'lat': 48.8566, 'lng': 2.3522, 'cc': 'fr'}, {'name': 'London (1908, 1948 & 2012 – Rekord-Gastgeber)', 'lat': 51.5074, 'lng': -0.1278, 'cc': 'gb'}, {'name': 'St. Louis (1904 – Erste Spiele außerhalb Europas)', 'lat': 38.627, 'lng': -90.1994, 'cc': 'us'}, {'name': 'Melbourne (1956 – Australien)', 'lat': -37.8136, 'lng': 144.9631, 'cc': 'au'}, {'name': 'Rom (1960 – Italien)', 'lat': 41.9028, 'lng': 12.4964, 'cc': 'it'}, {'name': 'Tokio (1964 & 2020/21 – Japan)', 'lat': 35.6762, 'lng': 139.6503, 'cc': 'jp'}, {'name': 'Mexiko-Stadt (1968 – erste Spiele in Lateinamerika)', 'lat': 19.4326, 'lng': -99.1332, 'cc': 'mx'}, {'name': 'München (1972 – Deutschland)', 'lat': 48.1351, 'lng': 11.582, 'cc': 'de'}, {'name': 'Montreal (1976 – Kanada)', 'lat': 45.5017, 'lng': -73.5673, 'cc': 'ca'}, {'name': 'Los Angeles (1932 & 1984 & 2028 – USA)', 'lat': 34.0522, 'lng': -118.2437, 'cc': 'us'}, {'name': 'Seoul (1988 – Südkorea)', 'lat': 37.5665, 'lng': 126.978, 'cc': 'kr'}, {'name': 'Barcelona (1992 – Spanien)', 'lat': 41.3851, 'lng': 2.1734, 'cc': 'es'}, {'name': 'Atlanta (1996 – USA)', 'lat': 33.749, 'lng': -84.388, 'cc': 'us'}, {'name': 'Sydney (2000 – Australien)', 'lat': -33.8688, 'lng': 151.2093, 'cc': 'au'}, {'name': 'Peking (2008 – China)', 'lat': 39.9042, 'lng': 116.4074, 'cc': 'cn'}, {'name': 'Rio de Janeiro (2016 – Erste Spiele in Südamerika)', 'lat': -22.9068, 'lng': -43.1729, 'cc': 'br'}]}, 'winter_exoten_klassiker': {'title': 'Winter-Exoten & Klassiker', 'icon': '🛷', 'desc': 'Finde geschichtsträchtige oder ungewöhnliche Austragungsorte von Winter-Olympia.', 'poi': [{'name': 'Chamonix (1924 – Allererste Winterspiele)', 'lat': 45.9227, 'lng': 6.8685, 'cc': 'fr'}, {'name': 'Garmisch-Partenkirchen (1936 – Nazi-Propaganda-Spiele)', 'lat': 47.4912, 'lng': 11.0957, 'cc': 'de'}, {'name': 'Sarajevo (1984 – Damaliges Jugoslawien, späteres Kriegsgebiet)', 'lat': 43.8563, 'lng': 18.4131, 'cc': 'ba'}, {'name': 'Sapporo (1972 – Erste Winterspiele in Asien)', 'lat': 43.0618, 'lng': 141.3545, 'cc': 'jp'}, {'name': 'Sotschi (2014 – Subtropischer Austragungsort am Schwarzen Meer)', 'lat': 43.6028, 'lng': 39.7342, 'cc': 'ru'}, {'name': 'Squaw Valley / Olympic Valley (1960 – USA, mitten in Sierra Nevada)', 'lat': 39.1963, 'lng': -120.2341, 'cc': 'us'}, {'name': 'Oslo (1952 – Geburtsort des Skisports)', 'lat': 59.9139, 'lng': 10.7522, 'cc': 'no'}, {'name': 'St. Moritz (1928 & 1948 – Schweizer Luxusort, Doppel-Gastgeber)', 'lat': 46.4908, 'lng': 9.8355, 'cc': 'ch'}, {'name': 'Innsbruck (1976 – Sprang für Denver ein, das ablehnte)', 'lat': 47.2682, 'lng': 11.3923, 'cc': 'at'}, {'name': 'Grenoble (1968 – Erste Spiele mit Farbfernsehen)', 'lat': 45.1885, 'lng': 5.7245, 'cc': 'fr'}, {'name': 'Calgary (1988 – Legendäre Jamaica-Bobteam-Premiere)', 'lat': 51.0447, 'lng': -114.0719, 'cc': 'ca'}, {'name': 'Lake Placid (1980 – Miracle on Ice USA vs. USSR)', 'lat': 44.2795, 'lng': -73.9799, 'cc': 'us'}]}, 'olympische_rekorde': {'title': 'Olympische Rekordhalter', 'icon': '🥇', 'desc': 'Finde das Heimatland oder den Geburtsort der erfolgreichsten Olympioniken aller Zeiten.', 'poi': [{'name': 'Michael Phelps (23x Gold – Geburtsort: Baltimore, USA)', 'lat': 39.2904, 'lng': -76.6122, 'cc': 'us'}, {'name': 'Usain Bolt (Sprint-Legende – Geburtsort: Sherwood Content, Jamaika)', 'lat': 18.4414, 'lng': -77.6744, 'cc': 'jm'}, {'name': 'Larissa Latynina (18 Medaillen – Geburtsort: Cherson, Ukraine)', 'lat': 46.6354, 'lng': 32.6169, 'cc': 'ua'}, {'name': 'Paavo Nurmi (9x Gold – Geburtsort: Turku, Finnland)', 'lat': 60.4518, 'lng': 22.2666, 'cc': 'fi'}, {'name': 'Simone Biles (Geburtsort: Columbus, Ohio, USA)', 'lat': 39.9612, 'lng': -82.9988, 'cc': 'us'}, {'name': 'Nadia Comaneci (Erste 10.0 – Geburtsort: Onești, Rumänien)', 'lat': 46.2586, 'lng': 26.7293, 'cc': 'ro'}, {'name': 'Carl Lewis (9x Gold – Geburtsort: Birmingham, Alabama, USA)', 'lat': 33.5207, 'lng': -86.8025, 'cc': 'us'}, {'name': 'Jesse Owens (4x Gold Berlin 1936 – Geburtsort: Oakville, Alabama, USA)', 'lat': 33.2034, 'lng': -87.3283, 'cc': 'us'}, {'name': 'Emil Zátopek (3x Gold 1952 – Geburtsort: Kopřivnice, Tschechien)', 'lat': 49.5998, 'lng': 18.1429, 'cc': 'cz'}, {'name': 'Birgit Fischer (8x Gold Kanu – Geburtsort: Brandenburg an der Havel, DDR)', 'lat': 52.4083, 'lng': 12.5533, 'cc': 'de'}, {'name': 'Mark Spitz (7x Gold München 1972 – Geburtsort: Modesto, USA)', 'lat': 37.639, 'lng': -120.9969, 'cc': 'us'}, {'name': 'Katarina Witt (2x Gold Eiskunstlauf – Geburtsort: Staaken, DDR/Deutschland)', 'lat': 52.5312, 'lng': 13.1208, 'cc': 'de'}]}, 'olympia_hoehe': {'title': 'Olympia in extremer Höhe', 'icon': '⛰', 'desc': 'Verorte Olympia-Austragungsorte auf extremen Höhenmetern über dem Meeresspiegel.', 'poi': [{'name': 'Mexiko-Stadt (Sommerspiele 1968 auf 2.240 m Höhe)', 'lat': 19.4326, 'lng': -99.1332, 'cc': 'mx'}, {'name': 'Salt Lake City (Winterspiele 2002 auf 1.300 m Höhe)', 'lat': 40.7608, 'lng': -111.891, 'cc': 'us'}, {'name': 'Albertville (Winterspiele 1992 inmitten der Savoyer Alpen)', 'lat': 45.6755, 'lng': 6.3927, 'cc': 'fr'}, {'name': 'Denver (lehnte 1976-Winterspiele ab – 1.609 m Höhe, Kostengründe)', 'lat': 39.7392, 'lng': -104.9903, 'cc': 'us'}, {'name': 'Innsbruck (sprang 1976 für Denver ein – 574 m Höhe)', 'lat': 47.2682, 'lng': 11.3923, 'cc': 'at'}, {'name': 'Pyeongchang (Winterspiele 2018 auf ~700 m Höhe)', 'lat': 37.8748, 'lng': 128.6361, 'cc': 'kr'}, {'name': 'Calgary (Winterspiele 1988 auf ~1.045 m Höhe)', 'lat': 51.0447, 'lng': -114.0719, 'cc': 'ca'}, {'name': 'La Paz, Bolivien (Sportveranstaltungen auf ~3.600 m – höchste Hauptstadt)', 'lat': -16.5, 'lng': -68.1193, 'cc': 'bo'}, {'name': 'Nairobi (Leichtathletik-Trainingszentrum auf ~1.795 m)', 'lat': -1.2921, 'lng': 36.8219, 'cc': 'ke'}]}, 'boykott_spiele': {'title': 'Die Boykott-Spiele', 'icon': '🚫', 'desc': 'Finde die Schauplätze der politisch am stärksten boykottierten Spiele des Kalten Krieges.', 'poi': [{'name': 'Moskau (Sommerspiele 1980 – Boykott durch den Westen wegen Afghanistan)', 'lat': 55.7558, 'lng': 37.6173, 'cc': 'ru'}, {'name': 'Los Angeles (Sommerspiele 1984 – Gegenboykott des Ostblocks)', 'lat': 34.0522, 'lng': -118.2437, 'cc': 'us'}, {'name': 'Melbourne (Spiele 1956 – Boykott wegen Sueskrise & Ungarn-Aufstand)', 'lat': -37.8136, 'lng': 144.9631, 'cc': 'au'}, {'name': 'Montreal (1976 – Afrikanischer Boykott wegen Neuseelands Rugbytour)', 'lat': 45.5017, 'lng': -73.5673, 'cc': 'ca'}, {'name': 'Berlin (1936 – Jüdischer Boykottaufruf wegen NS-Regime)', 'lat': 52.52, 'lng': 13.405, 'cc': 'de'}, {'name': 'München (1972 – PLO-Attentat auf israelische Athleten)', 'lat': 48.1351, 'lng': 11.582, 'cc': 'de'}, {'name': 'Tokio & Helsinki (1940/1952 – Spiele abgesagt bzw. teilboykottiert)', 'lat': 35.6762, 'lng': 139.6503, 'cc': 'jp'}, {'name': 'Seoul (1988 – Nordkorea & Kuba blieben fern)', 'lat': 37.5665, 'lng': 126.978, 'cc': 'kr'}]}, 'em_gastgeber_historie': {'title': 'EM-Gastgeber-Historie', 'icon': '🇪🇺', 'desc': 'Markiere die Länder, die jemals eine UEFA Fußball-Europameisterschaft ausgetragen haben.', 'poi': [{'name': 'Frankreich (Erste EM 1960 & EM 1984 & EM 2016)', 'lat': 46.2276, 'lng': 2.2137, 'cc': 'fr'}, {'name': 'Spanien (EM 1964)', 'lat': 40.4168, 'lng': -3.7038, 'cc': 'es'}, {'name': 'Italien (EM 1968 & EM 1980)', 'lat': 41.8719, 'lng': 12.5674, 'cc': 'it'}, {'name': 'Jugoslawien / Serbien (EM 1976 – Panenka-Finale)', 'lat': 44.8016, 'lng': 20.4651, 'cc': 'rs'}, {'name': 'Deutschland (EM 1988 & EM 2024)', 'lat': 51.1657, 'lng': 10.4515, 'cc': 'de'}, {'name': 'Schweden (EM 1992)', 'lat': 60.1282, 'lng': 18.6435, 'cc': 'se'}, {'name': "England (EM 1996 – It's coming home)", 'lat': 52.3555, 'lng': -1.1743, 'cc': 'gb'}, {'name': 'Belgien & Niederlande (Erste gemeinsame Doppel-EM 2000)', 'lat': 50.8503, 'lng': 4.3517, 'cc': 'be'}, {'name': 'Portugal (EM 2004)', 'lat': 39.3999, 'lng': -8.2245, 'cc': 'pt'}, {'name': 'Österreich & Schweiz (EM 2008)', 'lat': 47.5162, 'lng': 14.5501, 'cc': 'at'}, {'name': 'Polen & Ukraine (EM 2012)', 'lat': 51.9194, 'lng': 19.1451, 'cc': 'pl'}, {'name': 'Kiew / Ukraine (Co-Gastgeber EM 2012)', 'lat': 50.4501, 'lng': 30.5234, 'cc': 'ua'}, {'name': 'Gesamt-Europa 12 Städte (EM 2020/21 – wegen COVID)', 'lat': 51.5074, 'lng': -0.1278, 'cc': 'gb'}]}, 'em_finalstadien': {'title': 'Finalstadien der EM', 'icon': '🏟', 'desc': 'Verorte die Spielstätten, in denen europäische Fußball-Geschichte geschrieben wurde.', 'poi': [{'name': 'Olympiastadion Berlin (Finale EM 2024)', 'lat': 52.5147, 'lng': 13.2394, 'cc': 'de'}, {'name': 'Olimpijskyj-Stadion (Kiew, Ukraine – Finale 2012)', 'lat': 50.4332, 'lng': 30.5219, 'cc': 'ua'}, {'name': 'Ernst-Happel-Stadion / Praterstadion (Wien, Österreich – Finale 2008)', 'lat': 48.2074, 'lng': 16.4211, 'cc': 'at'}, {'name': 'Stadio Olimpico (Rom, Italien – Finale 1968 & 1980)', 'lat': 41.9341, 'lng': 12.4547, 'cc': 'it'}, {'name': 'Stadion Crvena Zvezda (Belgrad – Panenka-Elfmeter-Finale 1976)', 'lat': 44.8016, 'lng': 20.4651, 'cc': 'rs'}, {'name': 'Stade de France (Saint-Denis – Finale 2000 & 1984)', 'lat': 48.9244, 'lng': 2.3601, 'cc': 'fr'}, {'name': 'De Kuip / Feyenoord Stadion (Rotterdam, Niederlande – Finale 2000)', 'lat': 51.8942, 'lng': 4.5201, 'cc': 'nl'}, {'name': 'Luzhniki-Stadion (Moskau, Russland – Finale 1988)', 'lat': 55.7323, 'lng': 37.5576, 'cc': 'ru'}, {'name': 'Estadio da Luz (Lissabon, Portugal – Finale 2004)', 'lat': 38.7527, 'lng': -9.1846, 'cc': 'pt'}, {'name': 'Wanda Metropolitano (Madrid, Spanien – Finale 2020/21)', 'lat': 40.4363, 'lng': -3.5994, 'cc': 'es'}, {'name': 'Volksparkstadion (Hamburg – Halbfinale EM 2024)', 'lat': 53.5872, 'lng': 9.8985, 'cc': 'de'}, {'name': 'Olimpico di Roma (Rom – Finale 2020/21 ohne Italien-Fans)', 'lat': 41.9341, 'lng': 12.4547, 'cc': 'it'}]}}
+SPORT_POI_GAMES = {'derby_hotspots': {'title': 'Derby-Hotspots', 'icon': '⚽', 'desc': 'Verorte die Städte der hitzigsten Fußball-Stadtderbys der Welt.', 'poi': [{'name': 'Superclásico: Boca Juniors vs. River Plate (Buenos Aires)', 'lat': -34.6356, 'lng': -58.3648, 'cc': 'ar'}, {'name': 'Old Firm: Celtic vs. Rangers (Glasgow)', 'lat': 55.8497, 'lng': -4.2055, 'cc': 'gb'}, {'name': 'Ewiges Derby: Roter Stern vs. Partizan (Belgrad)', 'lat': 44.8016, 'lng': 20.4651, 'cc': 'rs'}, {'name': 'Interkontinentales Derby: Galatasaray vs. Fenerbahçe (Istanbul)', 'lat': 41.0151, 'lng': 28.9795, 'cc': 'tr'}, {'name': 'Derby della Madonnina: Inter vs. AC Milan (Mailand)', 'lat': 45.4781, 'lng': 9.124, 'cc': 'it'}, {'name': 'El Clásico: Real Madrid vs. FC Barcelona', 'lat': 40.4531, 'lng': -3.6883, 'cc': 'es'}, {'name': 'Merseyside Derby: Liverpool vs. Everton', 'lat': 53.4308, 'lng': -2.9608, 'cc': 'gb'}, {'name': 'North London Derby: Arsenal vs. Tottenham', 'lat': 51.5549, 'lng': -0.1084, 'cc': 'gb'}, {'name': 'Derby della Capitale: AS Roma vs. Lazio', 'lat': 41.9341, 'lng': 12.4547, 'cc': 'it'}, {'name': 'El Gran Derbi: FC Sevilla vs. Real Betis', 'lat': 37.384, 'lng': -5.9705, 'cc': 'es'}, {'name': 'O Clássico: FC Porto vs. Benfica (Porto)', 'lat': 41.1496, 'lng': -8.6109, 'cc': 'pt'}, {'name': 'De Klassieker: Ajax vs. Feyenoord (Amsterdam/Rotterdam)', 'lat': 52.3676, 'lng': 4.9041, 'cc': 'nl'}, {'name': 'Revierderby: Borussia Dortmund vs. Schalke 04', 'lat': 51.4926, 'lng': 7.4519, 'cc': 'de'}, {'name': 'Clásico de Clasicos: Boca Juniors Stadion La Bombonera', 'lat': -34.6357, 'lng': -58.3643, 'cc': 'ar'}]}, 'eishockey_nationen': {'title': 'Eishockey-Nationen', 'icon': '🏒', 'desc': 'Finde die historischen Hochburgen und WM-Austragungsorte des Eishockeys.', 'poi': [{'name': 'Montreal (Heimat der Canadiens & erstes Hallenspiel)', 'lat': 45.5017, 'lng': -73.5673, 'cc': 'ca'}, {'name': 'Moskau (Historische KHL- & Nationalteam-Zentrale)', 'lat': 55.7558, 'lng': 37.6173, 'cc': 'ru'}, {'name': 'Stockholm (Avicii Arena / Globen)', 'lat': 59.2936, 'lng': 18.0831, 'cc': 'se'}, {'name': 'Helsinki (Nokia Arena / Hartwall Arena)', 'lat': 60.1699, 'lng': 24.9384, 'cc': 'fi'}, {'name': 'Prag (O2 Arena – Rekord-WM-Schauplatz)', 'lat': 50.0835, 'lng': 14.4341, 'cc': 'cz'}, {'name': 'Toronto (Scotiabank Arena – Maple Leafs, Original Six)', 'lat': 43.6435, 'lng': -79.3791, 'cc': 'ca'}, {'name': 'Detroit (Little Caesars Arena – Hockeytown USA)', 'lat': 42.341, 'lng': -83.055, 'cc': 'us'}, {'name': 'Boston (TD Garden – Bruins, Original Six)', 'lat': 42.3662, 'lng': -71.0621, 'cc': 'us'}, {'name': 'Bern (PostFinance Arena – SC Bern)', 'lat': 46.9481, 'lng': 7.4647, 'cc': 'ch'}, {'name': 'Bratislava (Steel Arena – WM-Gastgeber 2019)', 'lat': 48.1486, 'lng': 17.1077, 'cc': 'sk'}, {'name': 'Minsk (Chizhovka Arena – KHL-Hochburg Belarus)', 'lat': 53.8788, 'lng': 27.559, 'cc': 'by'}, {'name': 'Zürich (Swiss Life Arena – ZSC Lions)', 'lat': 47.3769, 'lng': 8.5417, 'cc': 'ch'}]}, 'f1_historisch': {'title': 'F1 Historische Strecken', 'icon': '🏎', 'desc': 'Finde legendäre, heute verlassene oder radikal umgebaute Formel-1-Rennstrecken.', 'poi': [{'name': 'Nürburgring Nordschleife (Deutschland)', 'lat': 50.3441, 'lng': 6.9653, 'cc': 'de'}, {'name': 'Jacarepaguá Autódromo (Rio de Janeiro, Brasilien)', 'lat': -22.9754, 'lng': -43.3934, 'cc': 'br'}, {'name': 'Circuito do Estoril (Portugal)', 'lat': 38.7506, 'lng': -9.3942, 'cc': 'pt'}, {'name': 'Autodromo Enzo e Dino Ferrari (Imola, Italien)', 'lat': 44.3439, 'lng': 11.7167, 'cc': 'it'}, {'name': 'Kyalami Grand Prix Circuit (Südafrika)', 'lat': -25.9982, 'lng': 28.0679, 'cc': 'za'}, {'name': 'Circuit de Reims-Gueux (Frankreich – erster F1-GP 1950)', 'lat': 49.2594, 'lng': 3.9308, 'cc': 'fr'}, {'name': 'Circuit Zandvoort (Niederlande)', 'lat': 52.3877, 'lng': 4.5441, 'cc': 'nl'}, {'name': 'Watkins Glen International (USA)', 'lat': 42.3368, 'lng': -76.9205, 'cc': 'us'}, {'name': 'Brands Hatch (England)', 'lat': 51.3612, 'lng': 0.262, 'cc': 'gb'}, {'name': 'Autodromo Nazionale Monza – Tempel der Geschwindigkeit (Italien)', 'lat': 45.6156, 'lng': 9.2814, 'cc': 'it'}, {'name': 'Circuit de Spa-Francorchamps (Belgien)', 'lat': 50.4372, 'lng': 5.9714, 'cc': 'be'}, {'name': 'Adelaide Street Circuit (Australien – 1985–1995)', 'lat': -34.9285, 'lng': 138.6007, 'cc': 'au'}, {'name': 'Ain Diab Circuit (Casablanca, Marokko – GP 1958)', 'lat': 33.5731, 'lng': -7.5898, 'cc': 'ma'},
+    {'name':'Silverstone Circuit (Großbritannien)','lat':52.0733,'lng':-1.0146,'cc':'gb'},
+    {'name':'Hockenheimring (Deutschland)','lat':49.3278,'lng':8.5658,'cc':'de'},
+    {'name':'Red Bull Ring / Österreichring (Österreich)','lat':47.2197,'lng':14.7647,'cc':'at'},
+    {'name':'Hungaroring (Ungarn)','lat':47.5816,'lng':19.2486,'cc':'hu'},
+    {'name':'Circuit de Barcelona-Catalunya (Spanien)','lat':41.5700,'lng':2.2611,'cc':'es'},
+    {'name':'Suzuka International Racing Course (Japan)','lat':34.8431,'lng':136.5339,'cc':'jp'},
+    {'name':'Albert Park Circuit (Melbourne, Australien)','lat':-37.8497,'lng':144.9683,'cc':'au'}]}, 'tdf_paesse': {'title': 'Tour de France Pässe', 'icon': '🚴', 'desc': 'Markiere die legendärsten und am meisten gefürchteten Anstiege der Tour de France.', 'poi': [{'name': "Alpe d'Huez (21 Kehren)", 'lat': 45.0922, 'lng': 6.0694, 'cc': 'fr'}, {'name': 'Mont Ventoux (Der kahle Berg)', 'lat': 44.1736, 'lng': 5.2789, 'cc': 'fr'}, {'name': 'Col du Tourmalet (Pyrenäen-Klassiker)', 'lat': 42.9084, 'lng': 0.1412, 'cc': 'fr'}, {'name': 'Col du Galibier (Dach der Tour)', 'lat': 45.0642, 'lng': 6.4017, 'cc': 'fr'}, {'name': "Col d'Izoard (Hautes-Alpes)", 'lat': 44.8208, 'lng': 6.7319, 'cc': 'fr'}, {'name': "Col d'Aubisque (Pyrenäen – Eröffnungspass)", 'lat': 42.9776, 'lng': -0.3403, 'cc': 'fr'}, {'name': 'La Planche des Belles Filles (Vogesen – Sprinter-Killer)', 'lat': 47.7889, 'lng': 6.7716, 'cc': 'fr'}, {'name': 'Col du Grand Colombier (Jura – Vier-Seiten-Klassiker)', 'lat': 45.9086, 'lng': 5.6661, 'cc': 'fr'}, {'name': 'Col de la Colombière (Haute-Savoie)', 'lat': 45.9978, 'lng': 6.4678, 'cc': 'fr'}, {'name': 'Plateau de Beille (Ariège – Pyrenäen)', 'lat': 42.7708, 'lng': 1.6508, 'cc': 'fr'}, {'name': 'Passo dello Stelvio (Italien – gelegentlicher Gastauftritt)', 'lat': 46.5261, 'lng': 10.453, 'cc': 'it'}, {'name': 'Col de la Loze (Courchevel – neuester Super-Pass)', 'lat': 45.4167, 'lng': 6.6333, 'cc': 'fr'}]}, 'olympia_winter_historie': {'title': 'Olympische Winter-Historie', 'icon': '⛷', 'desc': 'Finde die traditionsreichen Städte, die jemals Winterspiele ausgetragen haben.', 'poi': [{'name': 'Chamonix (1924 – Erste Winterspiele überhaupt)', 'lat': 45.9227, 'lng': 6.8685, 'cc': 'fr'}, {'name': 'Lake Placid (1932 & 1980 – USA)', 'lat': 44.2795, 'lng': -73.9799, 'cc': 'us'}, {'name': "Cortina d'Ampezzo (1956 & 2026 – Italien)", 'lat': 46.5405, 'lng': 12.1357, 'cc': 'it'}, {'name': 'Innsbruck (1964 & 1976 – Doppel-Gastgeber)', 'lat': 47.2682, 'lng': 11.3923, 'cc': 'at'}, {'name': 'Grenoble (1968 – Frankreich)', 'lat': 45.1885, 'lng': 5.7245, 'cc': 'fr'}, {'name': 'Sapporo (1972 – Erste Winterspiele in Asien)', 'lat': 43.0618, 'lng': 141.3545, 'cc': 'jp'}, {'name': 'Lillehammer (1994 – Norwegen)', 'lat': 61.1153, 'lng': 10.4662, 'cc': 'no'}, {'name': 'Nagano (1998 – Japan)', 'lat': 36.6485, 'lng': 138.1942, 'cc': 'jp'}, {'name': 'Calgary (1988 – Kanada)', 'lat': 51.0447, 'lng': -114.0719, 'cc': 'ca'}, {'name': 'Salt Lake City (2002 – USA)', 'lat': 40.7608, 'lng': -111.891, 'cc': 'us'}, {'name': 'Turin (2006 – Italien)', 'lat': 45.0703, 'lng': 7.6869, 'cc': 'it'}, {'name': 'Vancouver (2010 – Kanada)', 'lat': 49.2827, 'lng': -123.1207, 'cc': 'ca'}, {'name': 'Pyeongchang (2018 – Südkorea)', 'lat': 37.8748, 'lng': 128.6361, 'cc': 'kr'}, {'name': 'Peking (2022 – Erste Stadt mit Sommer- und Winterspielen)', 'lat': 39.9042, 'lng': 116.4074, 'cc': 'cn'}]}, 'wm_gastgeber': {'title': 'WM-Gastgeber-Historie', 'icon': '🌍', 'desc': 'Finde die Austragungsländer historischer Fußball-Weltmeisterschaften.', 'poi': [{'name': 'Uruguay (Erste WM 1930)', 'lat': -32.5228, 'lng': -55.7658, 'cc': 'uy'}, {'name': 'Schweiz (WM 1954)', 'lat': 46.8182, 'lng': 8.2275, 'cc': 'ch'}, {'name': 'England (Mutterland des Fußballs – WM 1966)', 'lat': 52.3555, 'lng': -1.1743, 'cc': 'gb'}, {'name': 'Mexiko (WM 1970 & 1986 – einziges Doppel-Gastgeberland)', 'lat': 23.6345, 'lng': -102.5528, 'cc': 'mx'}, {'name': 'Argentinien (WM 1978)', 'lat': -38.4161, 'lng': -63.6167, 'cc': 'ar'}, {'name': 'Spanien (WM 1982)', 'lat': 40.4168, 'lng': -3.7038, 'cc': 'es'}, {'name': 'USA (WM 1994 – Rekordbesucherzahlen)', 'lat': 37.0902, 'lng': -95.7129, 'cc': 'us'}, {'name': 'Südafrika (Erste WM auf afrikanischem Boden 2010)', 'lat': -30.5595, 'lng': 22.9375, 'cc': 'za'}, {'name': 'Katar (Erste Winter-WM 2022)', 'lat': 25.3548, 'lng': 51.1839, 'cc': 'qa'}, {'name': 'Südkorea & Japan (Erste asiatische WM 2002)', 'lat': 37.5665, 'lng': 126.978, 'cc': 'kr'}, {'name': 'Russland (WM 2018)', 'lat': 55.7558, 'lng': 37.6173, 'cc': 'ru'}, {'name': 'Deutschland (WM 1974 & Sommermärchen 2006)', 'lat': 51.1657, 'lng': 10.4515, 'cc': 'de'}, {'name': 'Italien (WM 1934 & 1990)', 'lat': 41.8719, 'lng': 12.5674, 'cc': 'it'}, {'name': 'Frankreich (WM 1998 – Heimsieg)', 'lat': 46.2276, 'lng': 2.2137, 'cc': 'fr'}, {'name': 'Brasilien (WM 1950 & Maracanaço 2014)', 'lat': -14.235, 'lng': -51.9253, 'cc': 'br'}]}, 'wm_finalstadien': {'title': 'Legendäre WM-Finalstadien', 'icon': '🏟', 'desc': 'Verorte die exakten Standorte der berühmtesten WM-Endspielstätten der Geschichte.', 'poi': [{'name': 'Estádio do Maracanã (Rio de Janeiro, Brasilien)', 'lat': -22.9122, 'lng': -43.2302, 'cc': 'br'}, {'name': 'Estadio Azteca (Mexiko-Stadt, Mexiko)', 'lat': 19.3031, 'lng': -99.1506, 'cc': 'mx'}, {'name': 'Wembley-Stadion (London, England – Finale 1966)', 'lat': 51.556, 'lng': -0.2796, 'cc': 'gb'}, {'name': 'Stade de France (Paris/Saint-Denis, Frankreich – Finale 1998)', 'lat': 48.9244, 'lng': 2.3601, 'cc': 'fr'}, {'name': 'FNB-Stadion / Soccer City (Johannesburg, Südafrika – Finale 2010)', 'lat': -26.2347, 'lng': 27.9824, 'cc': 'za'}, {'name': 'Olympiastadion Berlin (Deutschland – Finale 2006)', 'lat': 52.5147, 'lng': 13.2394, 'cc': 'de'}, {'name': 'International Stadium Yokohama (Japan – Finale 2002)', 'lat': 35.5108, 'lng': 139.6062, 'cc': 'jp'}, {'name': 'Luzhniki-Stadion (Moskau, Russland – Finale 2018)', 'lat': 55.7323, 'lng': 37.5576, 'cc': 'ru'}, {'name': 'Rose Bowl (Pasadena, USA – Finale 1994)', 'lat': 34.1613, 'lng': -118.1676, 'cc': 'us'}, {'name': 'Estadio Nacional (Santiago, Chile – Finale 1962)', 'lat': -33.4647, 'lng': -70.6107, 'cc': 'cl'}, {'name': 'Estadio Monumental (Buenos Aires, Argentinien – Finale 1978)', 'lat': -34.5451, 'lng': -58.4498, 'cc': 'ar'}, {'name': 'Stadio Olimpico (Rom, Italien – Finale 1990)', 'lat': 41.9341, 'lng': 12.4547, 'cc': 'it'}, {'name': 'Lusail Iconic Stadium (Lusail, Katar – Finale 2022)', 'lat': 25.4366, 'lng': 51.5089, 'cc': 'qa'}]}, 'weltmeister_nationen': {'title': 'Weltmeister-Nationen', 'icon': '🏆', 'desc': 'Klicke auf die Länder, die jemals den WM-Titel der Männer gewonnen haben.', 'poi': [{'name': 'Brasilien (5 Titel – Rekord-Weltmeister)', 'lat': -14.235, 'lng': -51.9253, 'cc': 'br'}, {'name': 'Deutschland (4 Titel)', 'lat': 51.1657, 'lng': 10.4515, 'cc': 'de'}, {'name': 'Italien (4 Titel)', 'lat': 41.8719, 'lng': 12.5674, 'cc': 'it'}, {'name': 'Argentinien (3 Titel – 1978, 1986, 2022)', 'lat': -38.4161, 'lng': -63.6167, 'cc': 'ar'}, {'name': 'Frankreich (2 Titel – 1998, 2018)', 'lat': 46.2276, 'lng': 2.2137, 'cc': 'fr'}, {'name': 'Spanien (1 Titel – 2010)', 'lat': 40.4168, 'lng': -3.7038, 'cc': 'es'}, {'name': 'England (1 Titel – 1966)', 'lat': 52.3555, 'lng': -1.1743, 'cc': 'gb'}, {'name': 'Uruguay (2 Titel – 1930, 1950)', 'lat': -32.5228, 'lng': -55.7658, 'cc': 'uy'}]}, 'fussball_legenden': {'title': 'Heimat der Fußball-Legenden', 'icon': '⭐', 'desc': 'Wo wurden die Ikonen des Weltfußballs geboren? Finde ihre Geburtsorte.', 'poi': [{'name': 'Pelé (Geburtsort: Três Corações, Brasilien)', 'lat': -21.6936, 'lng': -45.2531, 'cc': 'br'}, {'name': 'Diego Maradona (Geburtsort: Lanús, Argentinien)', 'lat': -34.7045, 'lng': -58.397, 'cc': 'ar'}, {'name': 'Lionel Messi (Geburtsort: Rosario, Argentinien)', 'lat': -32.9442, 'lng': -60.6505, 'cc': 'ar'}, {'name': 'Cristiano Ronaldo (Geburtsort: Funchal/Madeira, Portugal)', 'lat': 32.6669, 'lng': -16.9241, 'cc': 'pt'}, {'name': 'Johan Cruyff (Geburtsort: Amsterdam, Niederlande)', 'lat': 52.3676, 'lng': 4.9041, 'cc': 'nl'}, {'name': 'Ronaldo Nazário (Geburtsort: Bento Ribeiro, Brasilien)', 'lat': -22.8817, 'lng': -43.3425, 'cc': 'br'}, {'name': 'Zinedine Zidane (Geburtsort: Marseille, Frankreich)', 'lat': 43.2965, 'lng': 5.3698, 'cc': 'fr'}, {'name': 'Ronaldinho (Geburtsort: Porto Alegre, Brasilien)', 'lat': -30.0346, 'lng': -51.2177, 'cc': 'br'}, {'name': 'Franz Beckenbauer (Geburtsort: München, Deutschland)', 'lat': 48.1351, 'lng': 11.582, 'cc': 'de'}, {'name': 'Eusébio (Geburtsort: Lourenço Marques/Maputo, Mosambik)', 'lat': -25.9692, 'lng': 32.5732, 'cc': 'mz'}, {'name': 'George Best (Geburtsort: Belfast, Nordirland)', 'lat': 54.5973, 'lng': -5.9301, 'cc': 'gb'}, {'name': 'Gerd Müller (Geburtsort: Nördlingen, Deutschland)', 'lat': 48.8517, 'lng': 10.4909, 'cc': 'de'}, {'name': 'Lev Yashin (Geburtsort: Moskau, Russland)', 'lat': 55.7558, 'lng': 37.6173, 'cc': 'ru'}]}, 'road_to_2026': {'title': 'Road to 2026', 'icon': '🗺', 'desc': 'Finde die weit verstreuten Austragungsorte der Dreiländer-WM 2026.', 'poi': [{'name': 'BC Place Stadium (Vancouver, Kanada)', 'lat': 49.2767, 'lng': -123.112, 'cc': 'ca'}, {'name': 'BMO Field (Toronto, Kanada)', 'lat': 43.6328, 'lng': -79.4186, 'cc': 'ca'}, {'name': 'MetLife Stadium (New York/New Jersey, USA)', 'lat': 40.8128, 'lng': -74.0742, 'cc': 'us'}, {'name': 'SoFi Stadium (Los Angeles/Inglewood, USA)', 'lat': 33.9535, 'lng': -118.339, 'cc': 'us'}, {'name': 'Estadio BBVA (Monterrey, Mexiko)', 'lat': 25.6692, 'lng': -100.2445, 'cc': 'mx'}, {'name': 'AT&T Stadium (Arlington/Dallas, USA)', 'lat': 32.748, 'lng': -97.093, 'cc': 'us'}, {'name': "Levi's Stadium (Santa Clara/San Francisco, USA)", 'lat': 37.4033, 'lng': -121.9694, 'cc': 'us'}, {'name': 'Lincoln Financial Field (Philadelphia, USA)', 'lat': 39.9008, 'lng': -75.1675, 'cc': 'us'}, {'name': 'NRG Stadium (Houston, USA)', 'lat': 29.6847, 'lng': -95.4107, 'cc': 'us'}, {'name': 'Arrowhead Stadium (Kansas City, USA)', 'lat': 39.0489, 'lng': -94.4839, 'cc': 'us'}, {'name': 'Estadio Akron (Guadalajara, Mexiko)', 'lat': 20.6721, 'lng': -103.4061, 'cc': 'mx'}, {'name': 'Estadio Azteca (Mexiko-Stadt, Mexiko)', 'lat': 19.3031, 'lng': -99.1506, 'cc': 'mx'}, {'name': 'Gillette Stadium (Boston/Foxborough, USA)', 'lat': 42.0909, 'lng': -71.2643, 'cc': 'us'}]}, 'frauen_wm_meilensteine': {'title': 'Frauen-WM-Meilensteine', 'icon': '👩', 'desc': 'Verorte die wichtigsten Meilensteine und Gastgeberländer der FIFA Frauen-WM.', 'poi': [{'name': 'China (Erste offizielle Frauen-WM 1991)', 'lat': 35.8617, 'lng': 104.1954, 'cc': 'cn'}, {'name': 'Schweden (WM 1995 – Norwegen wird Weltmeister)', 'lat': 60.1282, 'lng': 18.6435, 'cc': 'se'}, {'name': 'Rose Bowl, Pasadena (USA – Rekord-Finale 1999)', 'lat': 34.1613, 'lng': -118.1676, 'cc': 'us'}, {'name': 'Frankfurt am Main (Deutschland – WM 2011)', 'lat': 50.1109, 'lng': 8.6821, 'cc': 'de'}, {'name': 'Stadium Australia, Sydney (Australien/Neuseeland-WM 2023)', 'lat': -33.8472, 'lng': 151.0634, 'cc': 'au'}, {'name': 'Kanada (WM 2015 – Japan im Finale)', 'lat': 56.1304, 'lng': -106.3468, 'cc': 'ca'}, {'name': 'Frankreich (WM 2019 – USA gewinnt 4. Titel)', 'lat': 46.2276, 'lng': 2.2137, 'cc': 'fr'}, {'name': 'Norwegen (Weltmeister 1995 – erstes nicht-US-Team)', 'lat': 60.472, 'lng': 8.4689, 'cc': 'no'}, {'name': 'Japan (Weltmeister 2011 – erstes asiatisches Team)', 'lat': 36.2048, 'lng': 138.2529, 'cc': 'jp'}]}, 'sommerspiele_metropolen': {'title': 'Sommerspiele-Metropolen', 'icon': '🏅', 'desc': 'Markiere die legendären Austragungsorte der Olympischen Sommerspiele der Neuzeit.', 'poi': [{'name': 'Athen (Erste Spiele der Neuzeit 1896 & 2004)', 'lat': 37.9838, 'lng': 23.7275, 'cc': 'gr'}, {'name': 'Paris (1900, 1924 & 2024 – Dreifacher Gastgeber)', 'lat': 48.8566, 'lng': 2.3522, 'cc': 'fr'}, {'name': 'London (1908, 1948 & 2012 – Rekord-Gastgeber)', 'lat': 51.5074, 'lng': -0.1278, 'cc': 'gb'}, {'name': 'St. Louis (1904 – Erste Spiele außerhalb Europas)', 'lat': 38.627, 'lng': -90.1994, 'cc': 'us'}, {'name': 'Melbourne (1956 – Australien)', 'lat': -37.8136, 'lng': 144.9631, 'cc': 'au'}, {'name': 'Rom (1960 – Italien)', 'lat': 41.9028, 'lng': 12.4964, 'cc': 'it'}, {'name': 'Tokio (1964 & 2020/21 – Japan)', 'lat': 35.6762, 'lng': 139.6503, 'cc': 'jp'}, {'name': 'Mexiko-Stadt (1968 – erste Spiele in Lateinamerika)', 'lat': 19.4326, 'lng': -99.1332, 'cc': 'mx'}, {'name': 'München (1972 – Deutschland)', 'lat': 48.1351, 'lng': 11.582, 'cc': 'de'}, {'name': 'Montreal (1976 – Kanada)', 'lat': 45.5017, 'lng': -73.5673, 'cc': 'ca'}, {'name': 'Los Angeles (1932 & 1984 & 2028 – USA)', 'lat': 34.0522, 'lng': -118.2437, 'cc': 'us'}, {'name': 'Seoul (1988 – Südkorea)', 'lat': 37.5665, 'lng': 126.978, 'cc': 'kr'}, {'name': 'Barcelona (1992 – Spanien)', 'lat': 41.3851, 'lng': 2.1734, 'cc': 'es'}, {'name': 'Atlanta (1996 – USA)', 'lat': 33.749, 'lng': -84.388, 'cc': 'us'}, {'name': 'Sydney (2000 – Australien)', 'lat': -33.8688, 'lng': 151.2093, 'cc': 'au'}, {'name': 'Peking (2008 – China)', 'lat': 39.9042, 'lng': 116.4074, 'cc': 'cn'}, {'name': 'Rio de Janeiro (2016 – Erste Spiele in Südamerika)', 'lat': -22.9068, 'lng': -43.1729, 'cc': 'br'}]}, 'winter_exoten_klassiker': {'title': 'Winter-Exoten & Klassiker', 'icon': '🛷', 'desc': 'Finde geschichtsträchtige oder ungewöhnliche Austragungsorte von Winter-Olympia.', 'poi': [{'name': 'Chamonix (1924 – Allererste Winterspiele)', 'lat': 45.9227, 'lng': 6.8685, 'cc': 'fr'}, {'name': 'Garmisch-Partenkirchen (1936 – Nazi-Propaganda-Spiele)', 'lat': 47.4912, 'lng': 11.0957, 'cc': 'de'}, {'name': 'Sarajevo (1984 – Damaliges Jugoslawien, späteres Kriegsgebiet)', 'lat': 43.8563, 'lng': 18.4131, 'cc': 'ba'}, {'name': 'Sapporo (1972 – Erste Winterspiele in Asien)', 'lat': 43.0618, 'lng': 141.3545, 'cc': 'jp'}, {'name': 'Sotschi (2014 – Subtropischer Austragungsort am Schwarzen Meer)', 'lat': 43.6028, 'lng': 39.7342, 'cc': 'ru'}, {'name': 'Squaw Valley / Olympic Valley (1960 – USA, mitten in Sierra Nevada)', 'lat': 39.1963, 'lng': -120.2341, 'cc': 'us'}, {'name': 'Oslo (1952 – Geburtsort des Skisports)', 'lat': 59.9139, 'lng': 10.7522, 'cc': 'no'}, {'name': 'St. Moritz (1928 & 1948 – Schweizer Luxusort, Doppel-Gastgeber)', 'lat': 46.4908, 'lng': 9.8355, 'cc': 'ch'}, {'name': 'Innsbruck (1976 – Sprang für Denver ein, das ablehnte)', 'lat': 47.2682, 'lng': 11.3923, 'cc': 'at'}, {'name': 'Grenoble (1968 – Erste Spiele mit Farbfernsehen)', 'lat': 45.1885, 'lng': 5.7245, 'cc': 'fr'}, {'name': 'Calgary (1988 – Legendäre Jamaica-Bobteam-Premiere)', 'lat': 51.0447, 'lng': -114.0719, 'cc': 'ca'}, {'name': 'Lake Placid (1980 – Miracle on Ice USA vs. USSR)', 'lat': 44.2795, 'lng': -73.9799, 'cc': 'us'}]}, 'olympische_rekorde': {'title': 'Olympische Rekordhalter', 'icon': '🥇', 'desc': 'Finde das Heimatland oder den Geburtsort der erfolgreichsten Olympioniken aller Zeiten.', 'poi': [{'name': 'Michael Phelps (23x Gold – Geburtsort: Baltimore, USA)', 'lat': 39.2904, 'lng': -76.6122, 'cc': 'us'}, {'name': 'Usain Bolt (Sprint-Legende – Geburtsort: Sherwood Content, Jamaika)', 'lat': 18.4414, 'lng': -77.6744, 'cc': 'jm'}, {'name': 'Larissa Latynina (18 Medaillen – Geburtsort: Cherson, Ukraine)', 'lat': 46.6354, 'lng': 32.6169, 'cc': 'ua'}, {'name': 'Paavo Nurmi (9x Gold – Geburtsort: Turku, Finnland)', 'lat': 60.4518, 'lng': 22.2666, 'cc': 'fi'}, {'name': 'Simone Biles (Geburtsort: Columbus, Ohio, USA)', 'lat': 39.9612, 'lng': -82.9988, 'cc': 'us'}, {'name': 'Nadia Comaneci (Erste 10.0 – Geburtsort: Onești, Rumänien)', 'lat': 46.2586, 'lng': 26.7293, 'cc': 'ro'}, {'name': 'Carl Lewis (9x Gold – Geburtsort: Birmingham, Alabama, USA)', 'lat': 33.5207, 'lng': -86.8025, 'cc': 'us'}, {'name': 'Jesse Owens (4x Gold Berlin 1936 – Geburtsort: Oakville, Alabama, USA)', 'lat': 33.2034, 'lng': -87.3283, 'cc': 'us'}, {'name': 'Emil Zátopek (3x Gold 1952 – Geburtsort: Kopřivnice, Tschechien)', 'lat': 49.5998, 'lng': 18.1429, 'cc': 'cz'}, {'name': 'Birgit Fischer (8x Gold Kanu – Geburtsort: Brandenburg an der Havel, DDR)', 'lat': 52.4083, 'lng': 12.5533, 'cc': 'de'}, {'name': 'Mark Spitz (7x Gold München 1972 – Geburtsort: Modesto, USA)', 'lat': 37.639, 'lng': -120.9969, 'cc': 'us'}, {'name': 'Katarina Witt (2x Gold Eiskunstlauf – Geburtsort: Staaken, DDR/Deutschland)', 'lat': 52.5312, 'lng': 13.1208, 'cc': 'de'}]}, 'olympia_hoehe': {'title': 'Olympia in extremer Höhe', 'icon': '⛰', 'desc': 'Verorte Olympia-Austragungsorte auf extremen Höhenmetern über dem Meeresspiegel.', 'poi': [{'name': 'Mexiko-Stadt (Sommerspiele 1968 auf 2.240 m Höhe)', 'lat': 19.4326, 'lng': -99.1332, 'cc': 'mx'}, {'name': 'Salt Lake City (Winterspiele 2002 auf 1.300 m Höhe)', 'lat': 40.7608, 'lng': -111.891, 'cc': 'us'}, {'name': 'Albertville (Winterspiele 1992 inmitten der Savoyer Alpen)', 'lat': 45.6755, 'lng': 6.3927, 'cc': 'fr'}, {'name': 'Denver (lehnte 1976-Winterspiele ab – 1.609 m Höhe, Kostengründe)', 'lat': 39.7392, 'lng': -104.9903, 'cc': 'us'}, {'name': 'Innsbruck (sprang 1976 für Denver ein – 574 m Höhe)', 'lat': 47.2682, 'lng': 11.3923, 'cc': 'at'}, {'name': 'Pyeongchang (Winterspiele 2018 auf ~700 m Höhe)', 'lat': 37.8748, 'lng': 128.6361, 'cc': 'kr'}, {'name': 'Calgary (Winterspiele 1988 auf ~1.045 m Höhe)', 'lat': 51.0447, 'lng': -114.0719, 'cc': 'ca'}, {'name': 'La Paz, Bolivien (Sportveranstaltungen auf ~3.600 m – höchste Hauptstadt)', 'lat': -16.5, 'lng': -68.1193, 'cc': 'bo'}, {'name': 'Nairobi (Leichtathletik-Trainingszentrum auf ~1.795 m)', 'lat': -1.2921, 'lng': 36.8219, 'cc': 'ke'}]}, 'boykott_spiele': {'title': 'Die Boykott-Spiele', 'icon': '🚫', 'desc': 'Finde die Schauplätze der politisch am stärksten boykottierten Spiele des Kalten Krieges.', 'poi': [{'name': 'Moskau (Sommerspiele 1980 – Boykott durch den Westen wegen Afghanistan)', 'lat': 55.7558, 'lng': 37.6173, 'cc': 'ru'}, {'name': 'Los Angeles (Sommerspiele 1984 – Gegenboykott des Ostblocks)', 'lat': 34.0522, 'lng': -118.2437, 'cc': 'us'}, {'name': 'Melbourne (Spiele 1956 – Boykott wegen Sueskrise & Ungarn-Aufstand)', 'lat': -37.8136, 'lng': 144.9631, 'cc': 'au'}, {'name': 'Montreal (1976 – Afrikanischer Boykott wegen Neuseelands Rugbytour)', 'lat': 45.5017, 'lng': -73.5673, 'cc': 'ca'}, {'name': 'Berlin (1936 – Jüdischer Boykottaufruf wegen NS-Regime)', 'lat': 52.52, 'lng': 13.405, 'cc': 'de'}, {'name': 'München (1972 – PLO-Attentat auf israelische Athleten)', 'lat': 48.1351, 'lng': 11.582, 'cc': 'de'}, {'name': 'Tokio & Helsinki (1940/1952 – Spiele abgesagt bzw. teilboykottiert)', 'lat': 35.6762, 'lng': 139.6503, 'cc': 'jp'}, {'name': 'Seoul (1988 – Nordkorea & Kuba blieben fern)', 'lat': 37.5665, 'lng': 126.978, 'cc': 'kr'}]}, 'em_gastgeber_historie': {'title': 'EM-Gastgeber-Historie', 'icon': '🇪🇺', 'desc': 'Markiere die Länder, die jemals eine UEFA Fußball-Europameisterschaft ausgetragen haben.', 'poi': [{'name': 'Frankreich (Erste EM 1960 & EM 1984 & EM 2016)', 'lat': 46.2276, 'lng': 2.2137, 'cc': 'fr'}, {'name': 'Spanien (EM 1964)', 'lat': 40.4168, 'lng': -3.7038, 'cc': 'es'}, {'name': 'Italien (EM 1968 & EM 1980)', 'lat': 41.8719, 'lng': 12.5674, 'cc': 'it'}, {'name': 'Jugoslawien / Serbien (EM 1976 – Panenka-Finale)', 'lat': 44.8016, 'lng': 20.4651, 'cc': 'rs'}, {'name': 'Deutschland (EM 1988 & EM 2024)', 'lat': 51.1657, 'lng': 10.4515, 'cc': 'de'}, {'name': 'Schweden (EM 1992)', 'lat': 60.1282, 'lng': 18.6435, 'cc': 'se'}, {'name': "England (EM 1996 – It's coming home)", 'lat': 52.3555, 'lng': -1.1743, 'cc': 'gb'}, {'name': 'Belgien & Niederlande (Erste gemeinsame Doppel-EM 2000)', 'lat': 50.8503, 'lng': 4.3517, 'cc': 'be'}, {'name': 'Portugal (EM 2004)', 'lat': 39.3999, 'lng': -8.2245, 'cc': 'pt'}, {'name': 'Österreich & Schweiz (EM 2008)', 'lat': 47.5162, 'lng': 14.5501, 'cc': 'at'}, {'name': 'Polen & Ukraine (EM 2012)', 'lat': 51.9194, 'lng': 19.1451, 'cc': 'pl'}, {'name': 'Kiew / Ukraine (Co-Gastgeber EM 2012)', 'lat': 50.4501, 'lng': 30.5234, 'cc': 'ua'}, {'name': 'Gesamt-Europa 12 Städte (EM 2020/21 – wegen COVID)', 'lat': 51.5074, 'lng': -0.1278, 'cc': 'gb'}]}, 'em_finalstadien': {'title': 'Finalstadien der EM', 'icon': '🏟', 'desc': 'Verorte die Spielstätten, in denen europäische Fußball-Geschichte geschrieben wurde.', 'poi': [{'name': 'Olympiastadion Berlin (Finale EM 2024)', 'lat': 52.5147, 'lng': 13.2394, 'cc': 'de'}, {'name': 'Olimpijskyj-Stadion (Kiew, Ukraine – Finale 2012)', 'lat': 50.4332, 'lng': 30.5219, 'cc': 'ua'}, {'name': 'Ernst-Happel-Stadion / Praterstadion (Wien, Österreich – Finale 2008)', 'lat': 48.2074, 'lng': 16.4211, 'cc': 'at'}, {'name': 'Stadio Olimpico (Rom, Italien – Finale 1968 & 1980)', 'lat': 41.9341, 'lng': 12.4547, 'cc': 'it'}, {'name': 'Stadion Crvena Zvezda (Belgrad – Panenka-Elfmeter-Finale 1976)', 'lat': 44.8016, 'lng': 20.4651, 'cc': 'rs'}, {'name': 'Stade de France (Saint-Denis – Finale 2000 & 1984)', 'lat': 48.9244, 'lng': 2.3601, 'cc': 'fr'}, {'name': 'De Kuip / Feyenoord Stadion (Rotterdam, Niederlande – Finale 2000)', 'lat': 51.8942, 'lng': 4.5201, 'cc': 'nl'}, {'name': 'Luzhniki-Stadion (Moskau, Russland – Finale 1988)', 'lat': 55.7323, 'lng': 37.5576, 'cc': 'ru'}, {'name': 'Estadio da Luz (Lissabon, Portugal – Finale 2004)', 'lat': 38.7527, 'lng': -9.1846, 'cc': 'pt'}, {'name': 'Wanda Metropolitano (Madrid, Spanien – Finale 2020/21)', 'lat': 40.4363, 'lng': -3.5994, 'cc': 'es'}, {'name': 'Volksparkstadion (Hamburg – Halbfinale EM 2024)', 'lat': 53.5872, 'lng': 9.8985, 'cc': 'de'}, {'name': 'Olimpico di Roma (Rom – Finale 2020/21 ohne Italien-Fans)', 'lat': 41.9341, 'lng': 12.4547, 'cc': 'it'}]}}
 import json as _json
 SPORT_POI_J = _json.dumps(SPORT_POI_GAMES, separators=(',',':'), ensure_ascii=False)
 
@@ -246,56 +253,63 @@ CLJ = json.dumps(CITY_LANDMARKS, separators=(',',':'), ensure_ascii=False)
 
 # Phase 10: Top 50 subway systems (km, lines)
 SUBWAYS = [
-  {"city":"Shanghai","country":"China","cc":"cn","km":831,"lines":20},
-  {"city":"Beijing","country":"China","cc":"cn","km":783,"lines":27},
-  {"city":"Guangzhou","country":"China","cc":"cn","km":621,"lines":16},
-  {"city":"Shenzhen","country":"China","cc":"cn","km":559,"lines":16},
+  {"city":"Shanghai","country":"China","cc":"cn","km":831,"lines":20,"lat":31.2304,"lng":121.4737},
+  {"city":"Beijing","country":"China","cc":"cn","km":783,"lines":27,"lat":39.9042,"lng":116.4074},
+  {"city":"Guangzhou","country":"China","cc":"cn","km":621,"lines":16,"lat":23.1291,"lng":113.2644},
+  {"city":"Shenzhen","country":"China","cc":"cn","km":559,"lines":16,"lat":22.5431,"lng":114.0579},
   {"city":"Chengdu","country":"China","cc":"cn","km":518,"lines":13},
-  {"city":"Delhi","country":"India","cc":"in","km":391,"lines":12},
+  {"city":"Delhi","country":"India","cc":"in","km":391,"lines":12,"lat":28.6139,"lng":77.209},
   {"city":"Wuhan","country":"China","cc":"cn","km":439,"lines":14},
-  {"city":"London","country":"United Kingdom","cc":"gb","km":402,"lines":11},
-  {"city":"New York","country":"United States","cc":"us","km":380,"lines":36},
+  {"city":"London","country":"United Kingdom","cc":"gb","km":402,"lines":11,"lat":51.5074,"lng":-0.1278},
+  {"city":"New York","country":"United States","cc":"us","km":380,"lines":36,"lat":40.7128,"lng":-74.006},
   {"city":"Nanjing","country":"China","cc":"cn","km":378,"lines":11},
-  {"city":"Moscow","country":"Russia","cc":"ru","km":372,"lines":15},
+  {"city":"Moscow","country":"Russia","cc":"ru","km":372,"lines":15,"lat":55.7558,"lng":37.6173},
   {"city":"Chongqing","country":"China","cc":"cn","km":350,"lines":10},
   {"city":"Hangzhou","country":"China","cc":"cn","km":361,"lines":10},
-  {"city":"Seoul","country":"South Korea","cc":"kr","km":340,"lines":23},
-  {"city":"Tokyo","country":"Japan","cc":"jp","km":337,"lines":13},
+  {"city":"Seoul","country":"South Korea","cc":"kr","km":340,"lines":23,"lat":37.5665,"lng":126.978},
+  {"city":"Tokyo","country":"Japan","cc":"jp","km":337,"lines":13,"lat":35.6762,"lng":139.6503},
   {"city":"Qingdao","country":"China","cc":"cn","km":319,"lines":9},
-  {"city":"Madrid","country":"Spain","cc":"es","km":293,"lines":13},
-  {"city":"Kuala Lumpur","country":"Malaysia","cc":"my","km":213,"lines":9},
-  {"city":"Hong Kong","country":"China","cc":"cn","km":264,"lines":10},
-  {"city":"Singapore","country":"Singapore","cc":"sg","km":199,"lines":6},
-  {"city":"Washington D.C.","country":"United States","cc":"us","km":188,"lines":6},
-  {"city":"Istanbul","country":"Turkey","cc":"tr","km":190,"lines":7},
-  {"city":"Los Angeles","country":"United States","cc":"us","km":169,"lines":7},
-  {"city":"San Francisco","country":"United States","cc":"us","km":167,"lines":7},
-  {"city":"Chicago","country":"United States","cc":"us","km":171,"lines":8},
-  {"city":"Paris","country":"France","cc":"fr","km":226,"lines":16},
-  {"city":"Mexico City","country":"Mexico","cc":"mx","km":226,"lines":12},
-  {"city":"Taipei","country":"Taiwan","cc":"tw","km":131,"lines":6},
-  {"city":"Santiago","country":"Chile","cc":"cl","km":136,"lines":7},
-  {"city":"Jakarta","country":"Indonesia","cc":"id","km":168,"lines":2},
-  {"city":"Bangkok","country":"Thailand","cc":"th","km":127,"lines":4},
-  {"city":"Stockholm","country":"Sweden","cc":"se","km":110,"lines":3},
-  {"city":"Barcelona","country":"Spain","cc":"es","km":122,"lines":12},
-  {"city":"Osaka","country":"Japan","cc":"jp","km":137,"lines":9},
-  {"city":"Berlin","country":"Germany","cc":"de","km":155,"lines":9},
-  {"city":"Cairo","country":"Egypt","cc":"eg","km":90,"lines":3},
-  {"city":"Dubai","country":"UAE","cc":"ae","km":90,"lines":2},
-  {"city":"Mumbai","country":"India","cc":"in","km":87,"lines":3},
-  {"city":"Athens","country":"Greece","cc":"gr","km":85,"lines":3},
-  {"city":"Vienna","country":"Austria","cc":"at","km":83,"lines":5},
-  {"city":"Budapest","country":"Hungary","cc":"hu","km":40,"lines":4},
-  {"city":"Toronto","country":"Canada","cc":"ca","km":77,"lines":4},
-  {"city":"Boston","country":"United States","cc":"us","km":73,"lines":4},
-  {"city":"Prague","country":"Czech Republic","cc":"cz","km":65,"lines":3},
-  {"city":"Buenos Aires","country":"Argentina","cc":"ar","km":55,"lines":6},
-  {"city":"Amsterdam","country":"Netherlands","cc":"nl","km":53,"lines":4},
-  {"city":"Lisbon","country":"Portugal","cc":"pt","km":44,"lines":4},
-  {"city":"Brussels","country":"Belgium","cc":"be","km":39,"lines":4},
-  {"city":"Warsaw","country":"Poland","cc":"pl","km":36,"lines":2},
-  {"city":"Sao Paulo","country":"Brazil","cc":"br","km":101,"lines":6},
+  {"city":"Madrid","country":"Spain","cc":"es","km":293,"lines":13,"lat":40.4168,"lng":-3.7038},
+  {"city":"Kuala Lumpur","country":"Malaysia","cc":"my","km":213,"lines":9,"lat":2.7456,"lng":101.7099},
+  {"city":"Hong Kong","country":"China","cc":"cn","km":264,"lines":10,"lat":22.3193,"lng":114.1694},
+  {"city":"Singapore","country":"Singapore","cc":"sg","km":199,"lines":6,"lat":1.3521,"lng":103.8198},
+  {"city":"Washington D.C.","country":"United States","cc":"us","km":188,"lines":6,"lat":38.9072,"lng":-77.0369},
+  {"city":"Istanbul","country":"Turkey","cc":"tr","km":190,"lines":7,"lat":41.0082,"lng":28.9784},
+  {"city":"Los Angeles","country":"United States","cc":"us","km":169,"lines":7,"lat":34.0522,"lng":-118.2437},
+  {"city":"San Francisco","country":"United States","cc":"us","km":167,"lines":7,"lat":37.7749,"lng":-122.4194},
+  {"city":"Chicago","country":"United States","cc":"us","km":171,"lines":8,"lat":41.8781,"lng":-87.6298},
+  {"city":"Paris","country":"France","cc":"fr","km":226,"lines":16,"lat":48.8566,"lng":2.3522},
+  {"city":"Mexico City","country":"Mexico","cc":"mx","km":226,"lines":12,"lat":19.4326,"lng":-99.1332},
+  {"city":"Taipei","country":"Taiwan","cc":"tw","km":131,"lines":6,"lat":25.0329,"lng":121.5654},
+  {"city":"Santiago","country":"Chile","cc":"cl","km":136,"lines":7,"lat":-33.4489,"lng":-70.6693},
+  {"city":"Jakarta","country":"Indonesia","cc":"id","km":168,"lines":2,"lat":-6.2088,"lng":106.8456},
+  {"city":"Bangkok","country":"Thailand","cc":"th","km":127,"lines":4,"lat":13.7563,"lng":100.5018},
+  {"city":"Stockholm","country":"Sweden","cc":"se","km":110,"lines":3,"lat":59.3293,"lng":18.0686},
+  {"city":"Barcelona","country":"Spain","cc":"es","km":122,"lines":12,"lat":41.3851,"lng":2.1734},
+  {"city":"Osaka","country":"Japan","cc":"jp","km":137,"lines":9,"lat":34.6937,"lng":135.5023},
+  {"city":"Berlin","country":"Germany","cc":"de","km":155,"lines":9,"lat":52.52,"lng":13.405},
+  {"city":"Cairo","country":"Egypt","cc":"eg","km":90,"lines":3,"lat":30.0444,"lng":31.2357},
+  {"city":"Dubai","country":"UAE","cc":"ae","km":90,"lines":2,"lat":25.2048,"lng":55.2708},
+  {"city":"Mumbai","country":"India","cc":"in","km":87,"lines":3,"lat":19.076,"lng":72.8777},
+  {"city":"Athens","country":"Greece","cc":"gr","km":85,"lines":3,"lat":37.9838,"lng":23.7275},
+  {"city":"Vienna","country":"Austria","cc":"at","km":83,"lines":5,"lat":48.2082,"lng":16.3738},
+  {"city":"Budapest","country":"Hungary","cc":"hu","km":40,"lines":4,"lat":47.4979,"lng":19.0402},
+  {"city":"Toronto","country":"Canada","cc":"ca","km":77,"lines":4,"lat":43.651,"lng":-79.347},
+  {"city":"Boston","country":"United States","cc":"us","km":73,"lines":4,"lat":42.3601,"lng":-71.0589},
+  {"city":"Prague","country":"Czech Republic","cc":"cz","km":65,"lines":3,"lat":50.088,"lng":14.4208},
+  {"city":"Buenos Aires","country":"Argentina","cc":"ar","km":55,"lines":6,"lat":-34.6037,"lng":-58.3816},
+  {"city":"Amsterdam","country":"Netherlands","cc":"nl","km":53,"lines":4,"lat":52.3676,"lng":4.9041},
+  {"city":"Lisbon","country":"Portugal","cc":"pt","km":44,"lines":4,"lat":38.7223,"lng":-9.1393},
+  {"city":"Brussels","country":"Belgium","cc":"be","km":39,"lines":4,"lat":50.8503,"lng":4.3517},
+  {"city":"Warsaw","country":"Poland","cc":"pl","km":36,"lines":2,"lat":52.2297,"lng":21.0122},
+  {"city":"Sao Paulo","country":"Brazil","cc":"br","km":101,"lines":6,"lat":-23.5505,"lng":-46.6333},
+  {"city":"Munich","country":"Germany","cc":"de","km":95,"lines":8,"lat":48.1351,"lng":11.5820},
+  {"city":"Hamburg","country":"Germany","cc":"de","km":106,"lines":4,"lat":53.5511,"lng":9.9937},
+  {"city":"Oslo","country":"Norway","cc":"no","km":85,"lines":5,"lat":59.9139,"lng":10.7522},
+  {"city":"Busan","country":"South Korea","cc":"kr","km":128,"lines":4,"lat":35.1796,"lng":129.0756},
+  {"city":"Algiers","country":"Algeria","cc":"dz","km":18,"lines":1,"lat":36.7538,"lng":3.0588},
+  {"city":"Tehran","country":"Iran","cc":"ir","km":240,"lines":7,"lat":35.6892,"lng":51.3890},
+  {"city":"Montreal","country":"Canada","cc":"ca","km":69,"lines":4,"lat":45.5017,"lng":-73.5673}
 ]
 SWJ = json.dumps(SUBWAYS, separators=(',',':'), ensure_ascii=False)
 
@@ -2336,6 +2350,38 @@ function rng(){return rngSeed\!==null?seededRand():Math.random();}
 let PLATES_DATA=[],CURR_REAL=[],CAPS_POP=[],RIVERS_REAL=[],NEIGHBORS={},AREA_DATA=[];
 
 const CITIES=PLACEHOLDER_CJ;
+
+/* Phase 200: Dynamic city pool from 30k worldCitiesData dataset */
+(function(){
+  /* Build country→{cc,ct,sr} lookup from COUNTRIES array (runs after COUNTRIES defined below) */
+  window._buildCityLookup=function(){
+    if(window._cityLookupBuilt)return;
+    window._cityLookupBuilt=true;
+    window._ctryMap={};
+    COUNTRIES.forEach(function(c){window._ctryMap[c.c]=c;});
+  };
+  window.getCitiesByDifficulty=function(difficulty){
+    if(typeof worldCitiesData==='undefined')return null;
+    window._buildCityLookup();
+    var limit=difficulty==='survival'?999999:difficulty==='hardcore'?10000:1000;
+    var sliced=worldCitiesData.slice(0,limit);
+    return sliced.map(function(c,i){
+      var m=window._ctryMap[c.country]||{};
+      return {
+        id:'wc_'+i+'_'+c.name.replace(/\s+/g,'_'),
+        n:c.name,
+        c:c.country,
+        cc:m.cc||'',
+        cont:m.ct||'',
+        sub:m.sr||'',
+        pop:c.pop,
+        lat:c.lat,
+        lng:c.lng
+      };
+    }).filter(function(c){return c.cc;});
+  };
+})();
+
 /* Build CAPS_POP from aggregated city populations per country */
 (function(){const m={};CITIES.forEach(c=>{if(!m[c.c])m[c.c]=0;m[c.c]+=c.pop;});CAPS_POP=Object.entries(m).map(([c,pop])=>({c,pop})).filter(x=>x.pop>500000);})();
 
@@ -3118,8 +3164,455 @@ const _IATA={
 "SIN":"Singapur","BKK":"Bangkok","ORD":"Chicago","ATL":"Atlanta",
 "MEX":"Mexico-Stadt","GRU":"S\u00e3o Paulo","EZE":"Buenos Aires",
 "JNB":"Johannesburg","CAI":"Kairo","IST":"Istanbul",
-"PMI":"Palma de Mallorca","PEK":"Peking","BOM":"Mumbai","DFW":"Dallas"
+"PMI":"Palma de Mallorca","PEK":"Peking","BOM":"Mumbai","DFW":"Dallas",
+"DEN":"Denver","SFO":"San Francisco","YVR":"Vancouver","PVG":"Shanghai",
+"CAN":"Guangzhou","HKG":"Hongkong","DEL":"Delhi","KUL":"Kuala Lumpur",
+"SVO":"Moskau","CPH":"Kopenhagen","OSL":"Oslo","ARN":"Stockholm",
+"HEL":"Helsinki","AKL":"Auckland","NRT":"Tokio (Narita)"
 };
+/* Phase 200: Deutsche KFZ-Kennzeichen A-Z (204 Kennzeichen mit Koordinaten) */
+const DE_PLATES_DATA=[
+{"code":"A","region":"Augsburg","country":"Deutschland","lat":48.3715,"lng":10.8985},
+{"code":"AA","region":"Aalen (Ostalbkreis)","country":"Deutschland","lat":48.8378,"lng":10.0936},
+{"code":"AB","region":"Aschaffenburg","country":"Deutschland","lat":49.9770,"lng":9.1438},
+{"code":"ABG","region":"Altenburg (Altenburger Land)","country":"Deutschland","lat":50.9851,"lng":12.4336},
+{"code":"ABI","region":"Köthen (Anhalt-Bitterfeld)","country":"Deutschland","lat":51.7523,"lng":11.9749},
+{"code":"AC","region":"Aachen","country":"Deutschland","lat":50.7753,"lng":6.0839},
+{"code":"AIC","region":"Aichach (Aichach-Friedberg)","country":"Deutschland","lat":48.4593,"lng":11.1302},
+{"code":"AK","region":"Altenkirchen (Westerwald)","country":"Deutschland","lat":50.6874,"lng":7.6457},
+{"code":"AM","region":"Amberg","country":"Deutschland","lat":49.4447,"lng":11.8480},
+{"code":"AN","region":"Ansbach","country":"Deutschland","lat":49.3009,"lng":10.5716},
+{"code":"AÖ","region":"Altötting","country":"Deutschland","lat":48.2281,"lng":12.6775},
+{"code":"AP","region":"Apolda (Weimarer Land)","country":"Deutschland","lat":51.0229,"lng":11.5133},
+{"code":"AUR","region":"Aurich","country":"Deutschland","lat":53.4697,"lng":7.4815},
+{"code":"AW","region":"Bad Neuenahr-Ahrweiler","country":"Deutschland","lat":50.5450,"lng":7.1147},
+{"code":"AZ","region":"Alzey (Alzey-Worms)","country":"Deutschland","lat":49.7505,"lng":8.1143},
+{"code":"B","region":"Berlin","country":"Deutschland","lat":52.5200,"lng":13.4050},
+{"code":"BA","region":"Bamberg","country":"Deutschland","lat":49.8988,"lng":10.9028},
+{"code":"BAD","region":"Baden-Baden","country":"Deutschland","lat":48.7618,"lng":8.2407},
+{"code":"BAR","region":"Eberswalde (Barnim)","country":"Deutschland","lat":52.8331,"lng":13.8152},
+{"code":"BB","region":"Böblingen","country":"Deutschland","lat":48.6865,"lng":9.0116},
+{"code":"BC","region":"Biberach an der Riß","country":"Deutschland","lat":48.0974,"lng":9.7877},
+{"code":"BGL","region":"Bad Reichenhall (Berchtesgadener Land)","country":"Deutschland","lat":47.7297,"lng":12.8770},
+{"code":"BI","region":"Bielefeld","country":"Deutschland","lat":52.0302,"lng":8.5325},
+{"code":"BIR","region":"Birkenfeld","country":"Deutschland","lat":49.6496,"lng":7.1724},
+{"code":"BIT","region":"Bitburg (Eifelkreis Bitburg-Prüm)","country":"Deutschland","lat":49.9742,"lng":6.5262},
+{"code":"BL","region":"Balingen (Zollernalbkreis)","country":"Deutschland","lat":48.2731,"lng":8.8506},
+{"code":"BM","region":"Bergheim (Rhein-Erft-Kreis)","country":"Deutschland","lat":50.9535,"lng":6.6406},
+{"code":"BN","region":"Bonn","country":"Deutschland","lat":50.7374,"lng":7.0982},
+{"code":"BO","region":"Bochum","country":"Deutschland","lat":51.4818,"lng":7.2162},
+{"code":"BOR","region":"Borken","country":"Deutschland","lat":51.8439,"lng":6.8583},
+{"code":"BOT","region":"Bottrop","country":"Deutschland","lat":51.5239,"lng":6.9248},
+{"code":"BRB","region":"Brandenburg an der Havel","country":"Deutschland","lat":52.4125,"lng":12.5316},
+{"code":"BS","region":"Braunschweig","country":"Deutschland","lat":52.2689,"lng":10.5268},
+{"code":"BT","region":"Bayreuth","country":"Deutschland","lat":49.9456,"lng":11.5713},
+{"code":"BZ","region":"Bautzen","country":"Deutschland","lat":51.1814,"lng":14.4239},
+{"code":"C","region":"Chemnitz","country":"Deutschland","lat":50.8333,"lng":12.9167},
+{"code":"CB","region":"Cottbus","country":"Deutschland","lat":51.7561,"lng":14.3328},
+{"code":"CE","region":"Celle","country":"Deutschland","lat":52.6253,"lng":10.0825},
+{"code":"CHA","region":"Cham","country":"Deutschland","lat":49.2198,"lng":12.6646},
+{"code":"CLP","region":"Cloppenburg","country":"Deutschland","lat":52.8475,"lng":8.0416},
+{"code":"CO","region":"Coburg","country":"Deutschland","lat":50.2592,"lng":10.9606},
+{"code":"COC","region":"Cochem (Cochem-Zell)","country":"Deutschland","lat":50.1450,"lng":7.1678},
+{"code":"COE","region":"Coesfeld","country":"Deutschland","lat":51.9461,"lng":7.1683},
+{"code":"CUX","region":"Cuxhaven","country":"Deutschland","lat":53.8593,"lng":8.6874},
+{"code":"CW","region":"Calw","country":"Deutschland","lat":48.7144,"lng":8.7378},
+{"code":"D","region":"Düsseldorf","country":"Deutschland","lat":51.2277,"lng":6.7735},
+{"code":"DA","region":"Darmstadt","country":"Deutschland","lat":49.8728,"lng":8.6512},
+{"code":"DAH","region":"Dachau","country":"Deutschland","lat":48.2605,"lng":11.4339},
+{"code":"DEG","region":"Deggendorf","country":"Deutschland","lat":48.8354,"lng":12.9632},
+{"code":"DEL","region":"Delmenhorst","country":"Deutschland","lat":53.0483,"lng":8.6322},
+{"code":"DH","region":"Diepholz","country":"Deutschland","lat":52.6062,"lng":8.3712},
+{"code":"DLG","region":"Dillingen an der Donau","country":"Deutschland","lat":48.5772,"lng":10.4939},
+{"code":"DN","region":"Düren","country":"Deutschland","lat":50.8030,"lng":6.4816},
+{"code":"DO","region":"Dortmund","country":"Deutschland","lat":51.5136,"lng":7.4653},
+{"code":"DU","region":"Duisburg","country":"Deutschland","lat":51.4344,"lng":6.7623},
+{"code":"E","region":"Essen","country":"Deutschland","lat":51.4556,"lng":7.0116},
+{"code":"EA","region":"Eisenach","country":"Deutschland","lat":50.9740,"lng":10.3204},
+{"code":"EBE","region":"Ebersberg","country":"Deutschland","lat":48.0772,"lng":11.9686},
+{"code":"ED","region":"Erding","country":"Deutschland","lat":48.3060,"lng":11.9069},
+{"code":"EF","region":"Erfurt","country":"Deutschland","lat":50.9787,"lng":11.0328},
+{"code":"EI","region":"Eichstätt","country":"Deutschland","lat":48.8913,"lng":11.1852},
+{"code":"EL","region":"Meppen (Emsland)","country":"Deutschland","lat":52.6912,"lng":7.2917},
+{"code":"EM","region":"Emmendingen","country":"Deutschland","lat":48.1189,"lng":7.8485},
+{"code":"EMD","region":"Emden","country":"Deutschland","lat":53.3670,"lng":7.2058},
+{"code":"EN","region":"Schwelm (Ennepe-Ruhr-Kreis)","country":"Deutschland","lat":51.2842,"lng":7.2936},
+{"code":"ER","region":"Erlangen","country":"Deutschland","lat":49.5897,"lng":11.0039},
+{"code":"ES","region":"Esslingen am Neckar","country":"Deutschland","lat":48.7423,"lng":9.3082},
+{"code":"EU","region":"Euskirchen","country":"Deutschland","lat":50.6606,"lng":6.7865},
+{"code":"F","region":"Frankfurt am Main","country":"Deutschland","lat":50.1109,"lng":8.6821},
+{"code":"FD","region":"Fulda","country":"Deutschland","lat":50.5527,"lng":9.6775},
+{"code":"FDS","region":"Freudenstadt","country":"Deutschland","lat":48.4632,"lng":8.4116},
+{"code":"FF","region":"Frankfurt an der Oder","country":"Deutschland","lat":52.3425,"lng":14.5536},
+{"code":"FFB","region":"Fürstenfeldbruck","country":"Deutschland","lat":48.1778,"lng":11.2556},
+{"code":"FL","region":"Flensburg","country":"Deutschland","lat":54.7819,"lng":9.4367},
+{"code":"FN","region":"Friedrichshafen (Bodenseekreis)","country":"Deutschland","lat":47.6536,"lng":9.4735},
+{"code":"FO","region":"Forchheim","country":"Deutschland","lat":49.7196,"lng":11.0583},
+{"code":"FR","region":"Freiburg im Breisgau","country":"Deutschland","lat":47.9990,"lng":7.8421},
+{"code":"FS","region":"Freising","country":"Deutschland","lat":48.4028,"lng":11.7489},
+{"code":"FÜ","region":"Fürth","country":"Deutschland","lat":49.4774,"lng":10.9886},
+{"code":"G","region":"Gera","country":"Deutschland","lat":50.8850,"lng":12.0808},
+{"code":"GAP","region":"Garmisch-Partenkirchen","country":"Deutschland","lat":47.4917,"lng":11.0955},
+{"code":"GE","region":"Gelsenkirchen","country":"Deutschland","lat":51.5177,"lng":7.0857},
+{"code":"GI","region":"Gießen","country":"Deutschland","lat":50.5872,"lng":8.6747},
+{"code":"GL","region":"Bergisch Gladbach","country":"Deutschland","lat":50.9929,"lng":7.1287},
+{"code":"GM","region":"Gummersbach (Oberbergischer Kreis)","country":"Deutschland","lat":51.0294,"lng":7.5683},
+{"code":"GÖ","region":"Göttingen","country":"Deutschland","lat":51.5413,"lng":9.9158},
+{"code":"GP","region":"Göppingen","country":"Deutschland","lat":48.7024,"lng":9.6543},
+{"code":"GR","region":"Görlitz","country":"Deutschland","lat":51.1528,"lng":14.9872},
+{"code":"GS","region":"Goslar","country":"Deutschland","lat":51.9060,"lng":10.4292},
+{"code":"GT","region":"Gütersloh","country":"Deutschland","lat":51.9064,"lng":8.3782},
+{"code":"GZ","region":"Günzburg","country":"Deutschland","lat":48.4539,"lng":10.2747},
+{"code":"H","region":"Hannover","country":"Deutschland","lat":52.3759,"lng":9.7320},
+{"code":"HA","region":"Hagen","country":"Deutschland","lat":51.3592,"lng":7.4750},
+{"code":"HAL","region":"Halle (Saale)","country":"Deutschland","lat":51.4828,"lng":11.9698},
+{"code":"HAM","region":"Hamm","country":"Deutschland","lat":51.6811,"lng":7.8184},
+{"code":"HD","region":"Heidelberg","country":"Deutschland","lat":49.3988,"lng":8.6724},
+{"code":"HEI","region":"Heide (Dithmarschen)","country":"Deutschland","lat":54.1959,"lng":9.1014},
+{"code":"HER","region":"Herne","country":"Deutschland","lat":51.5344,"lng":7.2189},
+{"code":"HF","region":"Herford","country":"Deutschland","lat":52.1154,"lng":8.6695},
+{"code":"HGW","region":"Greifswald (Hansestadt)","country":"Deutschland","lat":54.0924,"lng":13.3831},
+{"code":"HH","region":"Hamburg","country":"Deutschland","lat":53.5511,"lng":9.9937},
+{"code":"HL","region":"Lübeck (Hansestadt)","country":"Deutschland","lat":53.8655,"lng":10.6866},
+{"code":"HM","region":"Hameln (Hameln-Pyrmont)","country":"Deutschland","lat":52.1032,"lng":9.3578},
+{"code":"HN","region":"Heilbronn","country":"Deutschland","lat":49.1426,"lng":9.2184},
+{"code":"HO","region":"Hof","country":"Deutschland","lat":50.3164,"lng":11.9146},
+{"code":"HOM","region":"Homburg (Saarpfalz-Kreis)","country":"Deutschland","lat":49.3235,"lng":7.3395},
+{"code":"HRO","region":"Rostock (Hansestadt)","country":"Deutschland","lat":54.0924,"lng":12.0991},
+{"code":"HS","region":"Heinsberg","country":"Deutschland","lat":51.0632,"lng":6.0963},
+{"code":"HST","region":"Stralsund (Hansestadt)","country":"Deutschland","lat":54.3161,"lng":13.0844},
+{"code":"HU","region":"Hanau (Main-Kinzig-Kreis)","country":"Deutschland","lat":50.1314,"lng":8.9207},
+{"code":"HX","region":"Höxter","country":"Deutschland","lat":51.7744,"lng":9.3825},
+{"code":"HZ","region":"Halberstadt (Harz)","country":"Deutschland","lat":51.8944,"lng":11.0456},
+{"code":"IN","region":"Ingolstadt","country":"Deutschland","lat":48.7665,"lng":11.4257},
+{"code":"IZ","region":"Itzehoe (Steinburg)","country":"Deutschland","lat":53.9221,"lng":9.5164},
+{"code":"J","region":"Jena","country":"Deutschland","lat":50.9271,"lng":11.5892},
+{"code":"K","region":"Köln","country":"Deutschland","lat":50.9375,"lng":6.9603},
+{"code":"KA","region":"Karlsruhe","country":"Deutschland","lat":49.0069,"lng":8.4037},
+{"code":"KC","region":"Kronach","country":"Deutschland","lat":50.2411,"lng":11.3243},
+{"code":"KE","region":"Kempten (Allgäu)","country":"Deutschland","lat":47.7286,"lng":10.3158},
+{"code":"L","region":"Leipzig","country":"Deutschland","lat":51.3397,"lng":12.3731},
+{"code":"LA","region":"Landshut","country":"Deutschland","lat":48.5442,"lng":12.1460},
+{"code":"LB","region":"Ludwigsburg","country":"Deutschland","lat":48.8975,"lng":9.1917},
+{"code":"LER","region":"Leer (Ostfriesland)","country":"Deutschland","lat":53.2308,"lng":7.4526},
+{"code":"LEV","region":"Leverkusen","country":"Deutschland","lat":51.0459,"lng":7.0192},
+{"code":"LG","region":"Lüneburg","country":"Deutschland","lat":53.2464,"lng":10.4115},
+{"code":"LI","region":"Lindau (Bodensee)","country":"Deutschland","lat":47.5541,"lng":9.6912},
+{"code":"LL","region":"Landsberg am Lech","country":"Deutschland","lat":48.0501,"lng":10.8712},
+{"code":"LM","region":"Limburg an der Lahn","country":"Deutschland","lat":50.3888,"lng":8.0504},
+{"code":"LÖ","region":"Lörrach","country":"Deutschland","lat":47.6156,"lng":7.6612},
+{"code":"LU","region":"Ludwigshafen am Rhein","country":"Deutschland","lat":49.4811,"lng":8.4354},
+{"code":"M","region":"München","country":"Deutschland","lat":48.1351,"lng":11.5820},
+{"code":"MA","region":"Mannheim","country":"Deutschland","lat":49.4875,"lng":8.4660},
+{"code":"MB","region":"Miesbach","country":"Deutschland","lat":47.7904,"lng":11.8331},
+{"code":"MD","region":"Magdeburg","country":"Deutschland","lat":52.1307,"lng":11.6289},
+{"code":"ME","region":"Mettmann","country":"Deutschland","lat":51.2505,"lng":6.9806},
+{"code":"MG","region":"Mönchengladbach","country":"Deutschland","lat":51.1854,"lng":6.4417},
+{"code":"MH","region":"Mülheim an der Ruhr","country":"Deutschland","lat":51.4271,"lng":6.8824},
+{"code":"MI","region":"Minden (Minden-Lübbecke)","country":"Deutschland","lat":52.2881,"lng":8.9164},
+{"code":"MK","region":"Lüdenscheid (Märkischer Kreis)","country":"Deutschland","lat":51.2198,"lng":7.6254},
+{"code":"MM","region":"Memmingen","country":"Deutschland","lat":47.9838,"lng":10.1812},
+{"code":"MR","region":"Marburg (Marburg-Biedenkopf)","country":"Deutschland","lat":50.8090,"lng":8.7710},
+{"code":"MS","region":"Münster","country":"Deutschland","lat":51.9607,"lng":7.6261},
+{"code":"MÜ","region":"Mühldorf am Inn","country":"Deutschland","lat":48.2431,"lng":12.5246},
+{"code":"MYK","region":"Mayen (Mayen-Koblenz)","country":"Deutschland","lat":50.3276,"lng":7.2212},
+{"code":"MZ","region":"Mainz (Mainz-Bingen)","country":"Deutschland","lat":49.9929,"lng":8.2473},
+{"code":"N","region":"Nürnberg","country":"Deutschland","lat":49.4521,"lng":11.0767},
+{"code":"NB","region":"Neubrandenburg","country":"Deutschland","lat":53.5568,"lng":13.2612},
+{"code":"NDH","region":"Nordhausen","country":"Deutschland","lat":51.5023,"lng":10.7937},
+{"code":"NE","region":"Neuss (Rhein-Kreis Neuss)","country":"Deutschland","lat":51.1985,"lng":6.6917},
+{"code":"NF","region":"Husum (Nordfriesland)","country":"Deutschland","lat":54.4764,"lng":9.0515},
+{"code":"NI","region":"Nienburg/Weser","country":"Deutschland","lat":52.6353,"lng":9.2075},
+{"code":"NM","region":"Neumarkt in der Oberpfalz","country":"Deutschland","lat":49.2811,"lng":11.4581},
+{"code":"NMS","region":"Neumünster","country":"Deutschland","lat":54.0712,"lng":9.9912},
+{"code":"NOH","region":"Nordhorn (Grafschaft Bentheim)","country":"Deutschland","lat":52.4354,"lng":7.0683},
+{"code":"NR","region":"Neuwied","country":"Deutschland","lat":50.4286,"lng":7.4615},
+{"code":"NU","region":"Neu-Ulm","country":"Deutschland","lat":48.3976,"lng":10.0035},
+{"code":"NW","region":"Neustadt an der Weinstraße","country":"Deutschland","lat":49.3501,"lng":8.1460},
+{"code":"OB","region":"Oberhausen","country":"Deutschland","lat":51.4700,"lng":6.8647},
+{"code":"OE","region":"Olpe","country":"Deutschland","lat":51.0298,"lng":7.8444},
+{"code":"OF","region":"Offenbach am Main","country":"Deutschland","lat":50.1055,"lng":8.7612},
+{"code":"OG","region":"Offenburg (Ortenaukreis)","country":"Deutschland","lat":48.4712,"lng":7.9405},
+{"code":"OL","region":"Oldenburg","country":"Deutschland","lat":53.1435,"lng":8.2146},
+{"code":"OS","region":"Osnabrück","country":"Deutschland","lat":52.2799,"lng":8.0472},
+{"code":"P","region":"Potsdam","country":"Deutschland","lat":52.3906,"lng":13.0645},
+{"code":"PA","region":"Passau","country":"Deutschland","lat":48.5665,"lng":13.4311},
+{"code":"PB","region":"Paderborn","country":"Deutschland","lat":51.7189,"lng":8.7575},
+{"code":"PE","region":"Peine","country":"Deutschland","lat":52.3238,"lng":10.2331},
+{"code":"PF","region":"Pforzheim (Enzkreis)","country":"Deutschland","lat":48.8922,"lng":8.7049},
+{"code":"PI","region":"Pinneberg","country":"Deutschland","lat":53.6601,"lng":9.7964},
+{"code":"PL","region":"Plauen (Vogtlandkreis)","country":"Deutschland","lat":50.4950,"lng":12.1383},
+{"code":"R","region":"Regensburg","country":"Deutschland","lat":49.0134,"lng":12.1016},
+{"code":"RA","region":"Rastatt","country":"Deutschland","lat":48.8572,"lng":8.2045},
+{"code":"RE","region":"Recklinghausen","country":"Deutschland","lat":51.6167,"lng":7.2000},
+{"code":"RO","region":"Rosenheim","country":"Deutschland","lat":47.8564,"lng":12.1289},
+{"code":"RS","region":"Remscheid","country":"Deutschland","lat":51.1799,"lng":7.1932},
+{"code":"RT","region":"Reutlingen","country":"Deutschland","lat":48.4914,"lng":9.2118},
+{"code":"RV","region":"Ravensburg","country":"Deutschland","lat":47.7812,"lng":9.6124},
+{"code":"RW","region":"Rottweil","country":"Deutschland","lat":48.1654,"lng":8.6281},
+{"code":"S","region":"Stuttgart","country":"Deutschland","lat":48.7758,"lng":9.1829},
+{"code":"SB","region":"Saarbrücken","country":"Deutschland","lat":49.2401,"lng":6.9969},
+{"code":"SG","region":"Solingen","country":"Deutschland","lat":51.1701,"lng":7.0838},
+{"code":"SHA","region":"Schwäbisch Hall","country":"Deutschland","lat":49.1122,"lng":9.7374},
+{"code":"SI","region":"Siegen (Siegen-Wittgenstein)","country":"Deutschland","lat":50.8749,"lng":8.0242},
+{"code":"SL","region":"Schleswig (Schleswig-Flensburg)","country":"Deutschland","lat":54.5137,"lng":9.5701},
+{"code":"SLS","region":"Saarlouis","country":"Deutschland","lat":49.3175,"lng":6.7501},
+{"code":"SN","region":"Schwerin","country":"Deutschland","lat":53.6336,"lng":11.4148},
+{"code":"SO","region":"Soest","country":"Deutschland","lat":51.5714,"lng":8.1091},
+{"code":"SP","region":"Speyer","country":"Deutschland","lat":49.3172,"lng":8.4312},
+{"code":"SR","region":"Straubing","country":"Deutschland","lat":48.8812,"lng":12.5684},
+{"code":"ST","region":"Steinfurt","country":"Deutschland","lat":52.1464,"lng":7.3400},
+{"code":"SU","region":"Suhl","country":"Deutschland","lat":50.6105,"lng":10.6931},
+{"code":"SW","region":"Schweinfurt","country":"Deutschland","lat":50.0485,"lng":10.2263},
+{"code":"SZ","region":"Salzgitter","country":"Deutschland","lat":52.1504,"lng":10.3593},
+{"code":"TR","region":"Trier","country":"Deutschland","lat":49.7499,"lng":6.6371},
+{"code":"TS","region":"Traunstein","country":"Deutschland","lat":47.8672,"lng":12.6455},
+{"code":"TÜ","region":"Tübingen","country":"Deutschland","lat":48.5216,"lng":9.0576},
+{"code":"TUT","region":"Tuttlingen","country":"Deutschland","lat":47.9839,"lng":8.8174},
+{"code":"UE","region":"Uelzen","country":"Deutschland","lat":52.9649,"lng":10.5657},
+{"code":"UL","region":"Ulm","country":"Deutschland","lat":48.3984,"lng":9.9915},
+{"code":"UN","region":"Unna","country":"Deutschland","lat":51.5348,"lng":7.6890},
+{"code":"VEC","region":"Vechta","country":"Deutschland","lat":52.7285,"lng":8.2831},
+{"code":"VER","region":"Verden (Aller)","country":"Deutschland","lat":52.9189,"lng":9.2272},
+{"code":"VIE","region":"Viersen","country":"Deutschland","lat":51.2559,"lng":6.3951},
+{"code":"VS","region":"Villingen-Schwenningen","country":"Deutschland","lat":48.0603,"lng":8.4586},
+{"code":"W","region":"Wuppertal","country":"Deutschland","lat":51.2562,"lng":7.1507},
+{"code":"WAF","region":"Warendorf","country":"Deutschland","lat":51.9535,"lng":7.9932},
+{"code":"WB","region":"Lutherstadt Wittenberg","country":"Deutschland","lat":51.8739,"lng":12.6391},
+{"code":"WE","region":"Weimar","country":"Deutschland","lat":50.9794,"lng":11.3235},
+{"code":"WEN","region":"Weiden in der Oberpfalz","country":"Deutschland","lat":49.6756,"lng":12.1555},
+{"code":"WES","region":"Wesel","country":"Deutschland","lat":51.6575,"lng":6.6174},
+{"code":"WF","region":"Wolfenbüttel","country":"Deutschland","lat":52.1627,"lng":10.5362},
+{"code":"WHV","region":"Wilhelmshaven","country":"Deutschland","lat":53.5230,"lng":8.1065},
+{"code":"WI","region":"Wiesbaden","country":"Deutschland","lat":50.0782,"lng":8.2397},
+{"code":"WN","region":"Waiblingen (Rems-Murr-Kreis)","country":"Deutschland","lat":48.8317,"lng":9.3114},
+{"code":"WO","region":"Worms","country":"Deutschland","lat":49.6327,"lng":8.3591},
+{"code":"WOB","region":"Wolfsburg","country":"Deutschland","lat":52.4226,"lng":10.7865},
+{"code":"WT","region":"Waldshut-Tiengen","country":"Deutschland","lat":47.6225,"lng":8.2144},
+{"code":"WÜ","region":"Würzburg","country":"Deutschland","lat":49.7913,"lng":9.9326},
+{"code":"WW","region":"Montabaur (Westerwaldkreis)","country":"Deutschland","lat":50.4374,"lng":7.8277},
+{"code":"Z","region":"Zwickau","country":"Deutschland","lat":50.7189,"lng":12.4939},
+{"code":"ZW","region":"Zweibrücken","country":"Deutschland","lat":49.2494,"lng":7.3592}
+];
+
+/* Phase 200: UNESCO Geo-Daten (70 Stätten mit Koordinaten für Kartenspiele) */
+const UNESCO_GEO_DATA=[
+{"name":"Kolosseum und historisches Zentrum Roms","cc":"it","lat":41.8902,"lng":12.4922},
+{"name":"Venedig und seine Lagune","cc":"it","lat":45.4408,"lng":12.3155},
+{"name":"Schiefer Turm und Piazza del Duomo, Pisa","cc":"it","lat":43.7228,"lng":10.3966},
+{"name":"Amalfiküste","cc":"it","lat":40.6333,"lng":14.6027},
+{"name":"Alhambra, Generalife und Albaicín, Granada","cc":"es","lat":37.1760,"lng":-3.5881},
+{"name":"Sagrada Família (Antoni Gaudí), Barcelona","cc":"es","lat":41.4036,"lng":2.1744},
+{"name":"Historisches Zentrum von Toledo","cc":"es","lat":39.8568,"lng":-4.0245},
+{"name":"Altstadt von Santiago de Compostela","cc":"es","lat":42.8806,"lng":-8.5446},
+{"name":"Akropolis von Athen","cc":"gr","lat":37.9715,"lng":23.7267},
+{"name":"Meteora-Klöster","cc":"gr","lat":39.7136,"lng":21.6310},
+{"name":"Ruinen von Delphi","cc":"gr","lat":38.4824,"lng":22.5010},
+{"name":"Kölner Dom","cc":"de","lat":50.9413,"lng":6.9583},
+{"name":"Schloss Sanssouci, Potsdam","cc":"de","lat":52.4042,"lng":13.0385},
+{"name":"Museumsinsel Berlin","cc":"de","lat":52.5169,"lng":13.3984},
+{"name":"Speicherstadt und Kontorhausviertel, Hamburg","cc":"de","lat":53.5436,"lng":9.9915},
+{"name":"Würzburger Residenz","cc":"de","lat":49.7927,"lng":9.9387},
+{"name":"Schloss und Park von Schönbrunn, Wien","cc":"at","lat":48.1849,"lng":16.3122},
+{"name":"Historisches Zentrum von Salzburg","cc":"at","lat":47.7994,"lng":13.0440},
+{"name":"Altstadt von Bern","cc":"ch","lat":46.9479,"lng":7.4474},
+{"name":"Schweizer Alpen Jungfrau-Aletsch","cc":"ch","lat":46.4883,"lng":8.0166},
+{"name":"Historisches Zentrum von Krakau","cc":"pl","lat":50.0614,"lng":19.9383},
+{"name":"Salzbergwerk Wieliczka","cc":"pl","lat":49.9831,"lng":20.0560},
+{"name":"Schloss und Altstadt von Český Krumlov","cc":"cz","lat":48.8109,"lng":14.3152},
+{"name":"Historisches Zentrum von Prag","cc":"cz","lat":50.0878,"lng":14.4205},
+{"name":"Donauufer und Burgviertel, Budapest","cc":"hu","lat":47.4950,"lng":19.0400},
+{"name":"Mont-Saint-Michel und seine Bucht","cc":"fr","lat":48.6360,"lng":-1.5115},
+{"name":"Schloss Versailles und Park","cc":"fr","lat":48.8048,"lng":2.1203},
+{"name":"Historisches Zentrum von Avignon","cc":"fr","lat":43.9493,"lng":4.8055},
+{"name":"Stonehenge, Avebury und assoziierte Stätten","cc":"gb","lat":51.1788,"lng":-1.8262},
+{"name":"Tower of London","cc":"gb","lat":51.5081,"lng":-0.0759},
+{"name":"Altstadt und Burg von Edinburgh","cc":"gb","lat":55.9486,"lng":-3.1999},
+{"name":"Giant's Causeway (Schwarzer Damm)","cc":"gb","lat":55.2408,"lng":-6.5115},
+{"name":"Grachtengürtel von Amsterdam","cc":"nl","lat":52.3670,"lng":4.8933},
+{"name":"Grand-Place von Brüssel","cc":"be","lat":50.8467,"lng":4.3524},
+{"name":"Geirangerfjord und Nærøyfjord","cc":"no","lat":62.1015,"lng":7.0940},
+{"name":"Hanseviertel Bryggen in Bergen","cc":"no","lat":60.3976,"lng":5.3236},
+{"name":"Festung Suomenlinna, Helsinki","cc":"fi","lat":60.1436,"lng":24.9844},
+{"name":"Altstadt von Riga","cc":"lv","lat":56.9496,"lng":24.1052},
+{"name":"Altstadt von Tallinn","cc":"ee","lat":59.4370,"lng":24.7454},
+{"name":"Nationalpark Plitvicer Seen","cc":"hr","lat":44.8654,"lng":15.5820},
+{"name":"Taj Mahal","cc":"in","lat":27.1751,"lng":78.0421},
+{"name":"Die Chinesische Mauer","cc":"cn","lat":40.4319,"lng":116.5704},
+{"name":"Archäologische Stätte Petra","cc":"jo","lat":30.3285,"lng":35.4444},
+{"name":"Tempelstadt Angkor Wat","cc":"kh","lat":13.4125,"lng":103.8670},
+{"name":"Historische Monumente des alten Kyoto","cc":"jp","lat":34.9856,"lng":135.7586},
+{"name":"Friedensdenkmal in Hiroshima (Genbaku Dome)","cc":"jp","lat":34.3948,"lng":132.4547},
+{"name":"Ruinen von Persepolis","cc":"ir","lat":29.9344,"lng":52.8914},
+{"name":"Historisches Zentrum von Buchara","cc":"uz","lat":39.7747,"lng":64.4286},
+{"name":"Grand-Canyon-Nationalpark","cc":"us","lat":36.0544,"lng":-112.1391},
+{"name":"Yosemite-Nationalpark","cc":"us","lat":37.8651,"lng":-119.5383},
+{"name":"Freiheitsstatue, New York","cc":"us","lat":40.6892,"lng":-74.0445},
+{"name":"Altstadt von Québec","cc":"ca","lat":46.8123,"lng":-71.2060},
+{"name":"Prehistorische Stadt Teotihuacán","cc":"mx","lat":19.6925,"lng":-98.8438},
+{"name":"Maya-Stadt Chichén Itzá","cc":"mx","lat":20.6843,"lng":-88.5678},
+{"name":"Nationalpark Tikal","cc":"gt","lat":17.2220,"lng":-89.6234},
+{"name":"Inka-Zitadelle Machu Picchu","cc":"pe","lat":-13.1631,"lng":-72.5450},
+{"name":"Linien und Geoglyphen von Nasca und Palpa","cc":"pe","lat":-14.7390,"lng":-75.1300},
+{"name":"Nationalpark Iguazú / Iguaçu","cc":"ar","lat":-25.6953,"lng":-54.4367},
+{"name":"Koloniales Zentrum von Cartagena","cc":"co","lat":10.4244,"lng":-75.5472},
+{"name":"Galápagos-Inseln","cc":"ec","lat":-0.9538,"lng":-90.9656},
+{"name":"Historische Stadt Ouro Preto","cc":"br","lat":-20.3856,"lng":-43.5035},
+{"name":"Hauptstadt Brasília","cc":"br","lat":-15.7938,"lng":-47.8828},
+{"name":"Nationalpark Los Glaciares / Perito-Moreno-Gletscher","cc":"ar","lat":-50.5000,"lng":-73.2500},
+{"name":"Rapa Nui Nationalpark / Osterinsel","cc":"cl","lat":-27.1127,"lng":-109.3497}
+];
+
+/* Phase 200: Flüsse mit Koordinaten und Länge (für Karten- und Vergleichsmodi) */
+const RIVERS_GEO_DATA=[
+{"name":"Nil","cc":"eg","length":6650,"lat":31.4667,"lng":31.8333},
+{"name":"Kongo","cc":"cd","length":4700,"lat":-6.0772,"lng":12.4225},
+{"name":"Niger","cc":"ng","length":4180,"lat":5.3167,"lng":6.4167},
+{"name":"Sambesi","cc":"zm","length":2574,"lat":-18.8333,"lng":36.2833},
+{"name":"Oranje","cc":"za","length":2200,"lat":-28.6333,"lng":16.4500},
+{"name":"Amazonas","cc":"br","length":6400,"lat":0.7167,"lng":-50.0000},
+{"name":"Río Paraná","cc":"ar","length":4880,"lat":-33.9500,"lng":-58.4000},
+{"name":"Rio São Francisco","cc":"br","length":3180,"lat":-10.5000,"lng":-36.4000},
+{"name":"Orinoco","cc":"ve","length":2250,"lat":8.5667,"lng":-60.4000},
+{"name":"Mississippi-Missouri","cc":"us","length":6275,"lat":29.1517,"lng":-89.2536},
+{"name":"Mackenzie River","cc":"ca","length":4241,"lat":69.3667,"lng":-133.9000},
+{"name":"Rio Grande","cc":"us","length":3051,"lat":25.9564,"lng":-97.1450},
+{"name":"Colorado River","cc":"us","length":2330,"lat":31.8153,"lng":-114.8028},
+{"name":"Columbia River","cc":"us","length":2000,"lat":46.2464,"lng":-124.0536},
+{"name":"Jangtsekiang (Yangtze)","cc":"cn","length":6300,"lat":31.3967,"lng":121.9800},
+{"name":"Gelber Fluss (Huang He)","cc":"cn","length":5464,"lat":37.7500,"lng":119.2500},
+{"name":"Mekong","cc":"vn","length":4350,"lat":10.0333,"lng":106.6333},
+{"name":"Lena","cc":"ru","length":4294,"lat":73.0167,"lng":126.9667},
+{"name":"Irtysch","cc":"ru","length":4248,"lat":61.0667,"lng":68.8667},
+{"name":"Brahmaputra","cc":"in","length":3848,"lat":23.9667,"lng":89.7500},
+{"name":"Ob","cc":"ru","length":3650,"lat":66.7500,"lng":69.5000},
+{"name":"Indus","cc":"pk","length":3180,"lat":23.9833,"lng":67.4333},
+{"name":"Ganges","cc":"in","length":2525,"lat":22.0833,"lng":90.8333},
+{"name":"Amur","cc":"ru","length":2824,"lat":52.9000,"lng":141.0833},
+{"name":"Tigris","cc":"iq","length":1900,"lat":31.0000,"lng":47.4167},
+{"name":"Wolga","cc":"ru","length":3530,"lat":45.7167,"lng":47.8833},
+{"name":"Donau","cc":"ro","length":2850,"lat":45.3333,"lng":29.6333},
+{"name":"Dnepr","cc":"ua","length":2201,"lat":46.5000,"lng":32.3000},
+{"name":"Don","cc":"ru","length":1870,"lat":47.0833,"lng":39.3000},
+{"name":"Rhein","cc":"nl","length":1230,"lat":51.9833,"lng":4.1000},
+{"name":"Elbe","cc":"de","length":1094,"lat":53.9167,"lng":8.7000},
+{"name":"Weichsel","cc":"pl","length":1047,"lat":54.3333,"lng":18.9500},
+{"name":"Loire","cc":"fr","length":1006,"lat":47.2667,"lng":-2.2500},
+{"name":"Murray River","cc":"au","length":2508,"lat":-35.5500,"lng":138.8833}
+];
+
+/* Phase 200: Flughafen-Geodaten (40 wichtigste Flughäfen mit IATA + Koordinaten)
+   BUG-FIX: GRU entry hatte fehlenden lng-Key (lat: -23.4356, -46.4731 → lng: -46.4731) */
+const AIRPORTS_GEO_DATA=[
+{"iata":"ATL","name":"Hartsfield-Jackson Atlanta International","city":"Atlanta","cc":"us","lat":33.6407,"lng":-84.4277},
+{"iata":"LAX","name":"Los Angeles International Airport","city":"Los Angeles","cc":"us","lat":33.9416,"lng":-118.4085},
+{"iata":"ORD","name":"Chicago O'Hare International Airport","city":"Chicago","cc":"us","lat":41.9742,"lng":-87.9073},
+{"iata":"DFW","name":"Dallas/Fort Worth International Airport","city":"Dallas","cc":"us","lat":32.8998,"lng":-97.0403},
+{"iata":"DEN","name":"Denver International Airport","city":"Denver","cc":"us","lat":39.8561,"lng":-104.6737},
+{"iata":"JFK","name":"John F. Kennedy International","city":"New York","cc":"us","lat":40.6413,"lng":-73.7781},
+{"iata":"SFO","name":"San Francisco International Airport","city":"San Francisco","cc":"us","lat":37.6213,"lng":-122.3790},
+{"iata":"YVR","name":"Vancouver International Airport","city":"Vancouver","cc":"ca","lat":49.1967,"lng":-123.1815},
+{"iata":"MEX","name":"Aeropuerto Internacional de la Ciudad de México","city":"Mexiko-Stadt","cc":"mx","lat":19.4361,"lng":-99.0719},
+{"iata":"PEK","name":"Beijing Capital International Airport","city":"Peking","cc":"cn","lat":40.0799,"lng":116.6031},
+{"iata":"DXB","name":"Dubai International Airport","city":"Dubai","cc":"ae","lat":25.2532,"lng":55.3657},
+{"iata":"HND","name":"Tokyo Haneda International Airport","city":"Tokio","cc":"jp","lat":35.5494,"lng":139.7798},
+{"iata":"PVG","name":"Shanghai Pudong International Airport","city":"Shanghai","cc":"cn","lat":31.1443,"lng":121.8083},
+{"iata":"CAN","name":"Guangzhou Baiyun International Airport","city":"Guangzhou","cc":"cn","lat":23.3924,"lng":113.2988},
+{"iata":"HKG","name":"Hong Kong International Airport","city":"Hongkong","cc":"hk","lat":22.3080,"lng":113.9185},
+{"iata":"ICN","name":"Seoul Incheon International Airport","city":"Seoul","cc":"kr","lat":37.4602,"lng":126.4407},
+{"iata":"SIN","name":"Singapore Changi Airport","city":"Singapur","cc":"sg","lat":1.3644,"lng":103.9915},
+{"iata":"BKK","name":"Suvarnabhumi Airport Bangkok","city":"Bangkok","cc":"th","lat":13.6900,"lng":100.7501},
+{"iata":"DEL","name":"Indira Gandhi International Airport","city":"Delhi","cc":"in","lat":28.5562,"lng":77.1000},
+{"iata":"KUL","name":"Kuala Lumpur International Airport","city":"Kuala Lumpur","cc":"my","lat":2.7456,"lng":101.7099},
+{"iata":"LHR","name":"London Heathrow Airport","city":"London","cc":"gb","lat":51.4700,"lng":-0.4543},
+{"iata":"CDG","name":"Paris Charles de Gaulle Airport","city":"Paris","cc":"fr","lat":49.0097,"lng":2.5479},
+{"iata":"FRA","name":"Frankfurt am Main Flughafen","city":"Frankfurt","cc":"de","lat":50.0379,"lng":8.5622},
+{"iata":"AMS","name":"Amsterdam Schiphol Airport","city":"Amsterdam","cc":"nl","lat":52.3105,"lng":4.7683},
+{"iata":"MAD","name":"Adolfo Suárez Madrid-Barajas","city":"Madrid","cc":"es","lat":40.4983,"lng":-3.5676},
+{"iata":"MUC","name":"Flughafen München Franz Josef Strauß","city":"München","cc":"de","lat":48.3538,"lng":11.7861},
+{"iata":"SVO","name":"Sheremetyevo International Airport","city":"Moskau","cc":"ru","lat":55.9726,"lng":37.4146},
+{"iata":"FCO","name":"Aeroporto di Roma-Fiumicino Leonardo da Vinci","city":"Rom","cc":"it","lat":41.8003,"lng":12.2389},
+{"iata":"IST","name":"Istanbul Airport","city":"Istanbul","cc":"tr","lat":41.2753,"lng":28.7519},
+{"iata":"CPH","name":"Flughafen Kopenhagen-Kastrup","city":"Kopenhagen","cc":"dk","lat":55.6180,"lng":12.6508},
+{"iata":"ZRH","name":"Flughafen Zürich","city":"Zürich","cc":"ch","lat":47.4582,"lng":8.5555},
+{"iata":"VIE","name":"Flughafen Wien-Schwechat","city":"Wien","cc":"at","lat":48.1103,"lng":16.5697},
+{"iata":"OSL","name":"Flughafen Oslo-Gardermoen","city":"Oslo","cc":"no","lat":60.1975,"lng":11.1004},
+{"iata":"ARN","name":"Flughafen Stockholm-Arlanda","city":"Stockholm","cc":"se","lat":59.6519,"lng":17.9186},
+{"iata":"HEL","name":"Flughafen Helsinki-Vantaa","city":"Helsinki","cc":"fi","lat":60.3172,"lng":24.9633},
+{"iata":"GRU","name":"Aeroporto Internacional de São Paulo-Guarulhos","city":"São Paulo","cc":"br","lat":-23.4356,"lng":-46.4731},
+{"iata":"EZE","name":"Aeropuerto Internacional Ministro Pistarini","city":"Buenos Aires","cc":"ar","lat":-34.8222,"lng":-58.5358},
+{"iata":"CAI","name":"Cairo International Airport","city":"Kairo","cc":"eg","lat":30.1219,"lng":31.4056},
+{"iata":"SYD","name":"Sydney Kingsford Smith Airport","city":"Sydney","cc":"au","lat":-33.9461,"lng":151.1772},
+{"iata":"AKL","name":"Auckland Airport","city":"Auckland","cc":"nz","lat":-37.0081,"lng":174.7917}
+];
+
+/* Phase 200: F1-Strecken (30 historische + aktuelle Strecken mit Koordinaten) */
+const F1_TRACKS_DATA=[
+{"name":"Autodromo Nazionale Monza","country":"Italien","cc":"it","lat":45.6156,"lng":9.2811},
+{"name":"Circuit de Spa-Francorchamps","country":"Belgien","cc":"be","lat":50.4372,"lng":5.9714},
+{"name":"Silverstone Circuit","country":"Großbritannien","cc":"gb","lat":52.0733,"lng":-1.0146},
+{"name":"Circuit de Monaco","country":"Monaco","cc":"mc","lat":43.7347,"lng":7.4206},
+{"name":"Nürburgring Nordschleife","country":"Deutschland","cc":"de","lat":50.3356,"lng":6.9475},
+{"name":"Hockenheimring","country":"Deutschland","cc":"de","lat":49.3278,"lng":8.5658},
+{"name":"Red Bull Ring / Österreichring","country":"Österreich","cc":"at","lat":47.2197,"lng":14.7647},
+{"name":"Hungaroring","country":"Ungarn","cc":"hu","lat":47.5816,"lng":19.2486},
+{"name":"Circuit Zandvoort","country":"Niederlande","cc":"nl","lat":52.3888,"lng":4.5446},
+{"name":"Autodromo Enzo e Dino Ferrari (Imola)","country":"Italien","cc":"it","lat":44.3439,"lng":11.7167},
+{"name":"Circuit de Barcelona-Catalunya","country":"Spanien","cc":"es","lat":41.5700,"lng":2.2611},
+{"name":"Circuit Paul Ricard (Le Castellet)","country":"Frankreich","cc":"fr","lat":43.2505,"lng":5.7916},
+{"name":"Circuito do Estoril","country":"Portugal","cc":"pt","lat":38.7506,"lng":-9.3942},
+{"name":"Suzuka International Racing Course","country":"Japan","cc":"jp","lat":34.8431,"lng":136.5339},
+{"name":"Sepang International Circuit","country":"Malaysia","cc":"my","lat":2.7608,"lng":101.7381},
+{"name":"Marina Bay Street Circuit","country":"Singapur","cc":"sg","lat":1.2915,"lng":103.8643},
+{"name":"Shanghai International Circuit","country":"China","cc":"cn","lat":31.3389,"lng":121.2225},
+{"name":"Bahrain International Circuit","country":"Bahrain","cc":"bh","lat":26.0325,"lng":50.5106},
+{"name":"Yas Marina Circuit (Abu Dhabi)","country":"VAE","cc":"ae","lat":24.4672,"lng":54.6031},
+{"name":"Buddh International Circuit (Indien)","country":"Indien","cc":"in","lat":28.3487,"lng":77.5305},
+{"name":"Autódromo José Carlos Pace (Interlagos)","country":"Brasilien","cc":"br","lat":-23.7011,"lng":-46.6972},
+{"name":"Circuit Gilles-Villeneuve (Kanada)","country":"Kanada","cc":"ca","lat":45.5000,"lng":-73.5228},
+{"name":"Circuit of the Americas (COTA)","country":"USA","cc":"us","lat":30.1328,"lng":-97.6411},
+{"name":"Indianapolis Motor Speedway","country":"USA","cc":"us","lat":39.7983,"lng":-86.2339},
+{"name":"Miami International Autodrome","country":"USA","cc":"us","lat":25.9581,"lng":-80.2389},
+{"name":"Autódromo Hermanos Rodríguez","country":"Mexiko","cc":"mx","lat":19.4042,"lng":-99.0889},
+{"name":"Autódromo Juan y Oscar Gálvez (Argentinien)","country":"Argentinien","cc":"ar","lat":-34.6943,"lng":-58.4593},
+{"name":"Albert Park Circuit (Australien)","country":"Australien","cc":"au","lat":-37.8497,"lng":144.9683},
+{"name":"Adelaide Street Circuit (Australien)","country":"Australien","cc":"au","lat":-34.9272,"lng":138.6175},
+{"name":"Kyalami Grand Prix Circuit (Südafrika)","country":"Südafrika","cc":"za","lat":-25.9982,"lng":28.0679}
+];
+
+/* Phase 200: Europäische Fußball-Tempel (28 Stadien mit Koordinaten)
+   Hinweis: Murrayfield (Edinburgh) ist primär ein Rugby-Stadion */
+const UEFA_STADIUMS_DATA=[
+{"name":"Signal Iduna Park / Westfalenstadion","city":"Dortmund","cc":"de","lat":51.4926,"lng":7.4518},
+{"name":"Allianz Arena","city":"München","cc":"de","lat":48.2188,"lng":11.6247},
+{"name":"Olympiastadion Berlin","city":"Berlin","cc":"de","lat":52.5147,"lng":13.2394},
+{"name":"Veltins-Arena","city":"Gelsenkirchen","cc":"de","lat":51.5545,"lng":7.0676},
+{"name":"Camp Nou","city":"Barcelona","cc":"es","lat":41.3809,"lng":2.1228},
+{"name":"Santiago Bernabéu","city":"Madrid","cc":"es","lat":40.4531,"lng":-3.6883},
+{"name":"Estadio Metropolitano","city":"Madrid","cc":"es","lat":40.4361,"lng":-3.5995},
+{"name":"Estadio Benito Villamarín","city":"Sevilla","cc":"es","lat":37.3565,"lng":-5.9818},
+{"name":"Wembley Stadium","city":"London","cc":"gb","lat":51.5560,"lng":-0.2795},
+{"name":"Old Trafford","city":"Manchester","cc":"gb","lat":53.4631,"lng":-2.2913},
+{"name":"Tottenham Hotspur Stadium","city":"London","cc":"gb","lat":51.6042,"lng":-0.0664},
+{"name":"Emirates Stadium","city":"London","cc":"gb","lat":51.5549,"lng":-0.1084},
+{"name":"Celtic Park","city":"Glasgow","cc":"gb","lat":55.8497,"lng":-4.2055},
+{"name":"San Siro / Giuseppe Meazza","city":"Mailand","cc":"it","lat":45.4781,"lng":9.1240},
+{"name":"Stadio Olimpico","city":"Rom","cc":"it","lat":41.9341,"lng":12.4547},
+{"name":"Stadio Diego Armando Maradona","city":"Neapel","cc":"it","lat":40.8280,"lng":14.1930},
+{"name":"Stade de France","city":"Saint-Denis/Paris","cc":"fr","lat":48.9244,"lng":2.3601},
+{"name":"Stade Vélodrome","city":"Marseille","cc":"fr","lat":43.2698,"lng":5.3959},
+{"name":"Groupama Stadium","city":"Lyon","cc":"fr","lat":45.7653,"lng":4.9820},
+{"name":"Luzhniki Stadion","city":"Moskau","cc":"ru","lat":55.7158,"lng":37.5536},
+{"name":"Gazprom Arena","city":"Sankt Petersburg","cc":"ru","lat":59.9727,"lng":30.2214},
+{"name":"Olimpijskyj-Stadion","city":"Kiew","cc":"ua","lat":50.4334,"lng":30.5218},
+{"name":"Atatürk-Olympiastadion","city":"Istanbul","cc":"tr","lat":41.0745,"lng":28.7657},
+{"name":"Puskás Aréna","city":"Budapest","cc":"hu","lat":47.5031,"lng":19.0975},
+{"name":"Nationalstadion","city":"Warschau","cc":"pl","lat":52.2394,"lng":21.0456},
+{"name":"Estádio da Luz","city":"Lissabon","cc":"pt","lat":38.7526,"lng":-9.1847},
+{"name":"Olympiastadion Spyros Louis","city":"Athen","cc":"gr","lat":38.0361,"lng":23.7878},
+{"name":"Stade Louis II","city":"Monaco","cc":"mc","lat":43.7272,"lng":7.4148}
+];
+
 /* Phase 130: BETA expansion data */
 /* UTC offsets (integer hours) */
 const _TIMEZONES={
@@ -4555,6 +5048,18 @@ function distractors(pool,matchFn,excludeFn,keyFn,n=2){
 
 /* GENERATORS */
 function genCityQ(){
+  /* Phase 200: Use 30k worldCitiesData pool when available, fallback to CITIES */
+  const worldPool=typeof getCitiesByDifficulty==='function'?getCitiesByDifficulty(S.diff):null;
+  if(worldPool&&worldPool.length>10){
+    let filtered=worldPool.filter(c=>c.id!==S.lid);
+    let pool=_rfilt(filtered,3);
+    if(pool.length<1)pool=filtered;
+    if(pool.length<1)return null;
+    const cor=pool[~~(rng()*pool.length)];
+    const dis=distractors(pool,x=>x.sub===cor.sub||x.cont===cor.cont,x=>x.c===cor.c,x=>displayCountry(x.cc)||x.c);
+    return{type:"city",prompt:t("q_city"),subj:cor.n,ans:displayCountry(cor.cc)||cor.c,opts:sh([displayCountry(cor.cc)||cor.c,...dis]),meta:cor.cont+" \u00b7 "+(cor.pop/1e6).toFixed(1)+" Mio.",lid:cor.id,cc:cor.cc};
+  }
+  /* Legacy fallback: original CITIES dataset */
   const pf_initial = S.diff==="hardcore"?0:200000;
   let filtered = CITIES.filter(c=>c.pop>=pf_initial&&c.id!==S.lid);
   let pf = pf_initial;
@@ -4562,7 +5067,6 @@ function genCityQ(){
     filtered = CITIES.filter(c=>c.id!==S.lid);
     pf = 0;
   }
-  /* Hardcore/Survival: inject obscure Swiss cities not in main dataset */
   const isHC = S.diff==="hardcore"||S.diff==="survival";
   if(isHC && typeof HC_CITIES_CH!=="undefined" && HC_CITIES_CH.length){
     const existingIds=new Set(filtered.map(c=>c.id));
@@ -4573,8 +5077,6 @@ function genCityQ(){
   if(pool.length < 1) return null;
   const cor = pool[~~(rng()*pool.length)];
   const dis=distractors(pool,x=>x.sub===cor.sub||x.cont===cor.cont,x=>x.c===cor.c,x=>displayCountry(x.cc)||x.c);
-  console.log("🔴 DEBUG genCityQ pool.length:", pool ? pool.length : 0, "pf:", pf);
-  console.log("🔴 DEBUG genCityQ pool.length:", pool ? pool.length : 0, "pf:", pf);
   return{type:"city",prompt:t("q_city"),subj:cor.n,ans:displayCountry(cor.cc)||cor.c,opts:sh([displayCountry(cor.cc)||cor.c,...dis]),meta:cor.cont+" \u00b7 "+(cor.pop/1e6).toFixed(1)+" Mio.",lid:cor.id,cc:cor.cc};
 }
 function genFlagQ(){
@@ -4662,11 +5164,14 @@ function genRcapitalQ(){
   return{type:"rcapital",prompt:t("q_rcapital"),subj:displayCountry(cor.cc)||cor.country,ans:cor.capital,opts:sh([cor.capital,...dis]),meta:cor.continent,lid:cor.country,cc:cor.cc};
 }
 function genRcityQ(){
-  let pool=_rfilt(COUNTRIES.filter(x=>x.c\!==S.lid),3); if(pool.length<3) pool=COUNTRIES.filter(x=>x.c\!==S.lid); if(pool.length<1) return null;
+  /* Phase 200: Use 30k worldCitiesData pool when available */
+  const worldPool=typeof getCitiesByDifficulty==='function'?getCitiesByDifficulty(S.diff):null;
+  const citySource=worldPool&&worldPool.length>10?worldPool:CITIES;
+  let pool=_rfilt(COUNTRIES.filter(x=>x.c!==S.lid),3); if(pool.length<3) pool=COUNTRIES.filter(x=>x.c!==S.lid); if(pool.length<1) return null;
   const cor=pool[~~(rng()*pool.length)];
-  const cc2=CITIES.filter(c=>c.c===cor.c);if(\!cc2.length)return genRcityQ();
+  const cc2=citySource.filter(c=>c.c===cor.c);if(!cc2.length)return genRcityQ();
   const corCity=cc2[~~(rng()*cc2.length)];
-  const _citpool=_rfilt(CITIES,4);const dis=distractors(_citpool,x=>x.sub===corCity.sub||x.cont===corCity.cont,x=>x.c===cor.c,x=>x.n);
+  const _citpool=_rfilt(citySource,4);const dis=distractors(_citpool,x=>x.sub===corCity.sub||x.cont===corCity.cont,x=>x.c===cor.c,x=>x.n);
   return{type:"rcity",prompt:t("q_rcity"),subj:displayCountry(cor.cc)||cor.c,ans:corCity.n,opts:sh([corCity.n,...dis]),meta:cor.ct,lid:cor.c,cc:cor.cc};
 }
 function genRriverQ(){
@@ -10282,7 +10787,7 @@ _se = _HTML_HEAD.find('</style>') + len('</style>')
 if _si >= 0 and _se > _si:
     _HTML_HEAD = _HTML_HEAD[:_si] + '<style>\n' + CSS + '\n</style>' + _HTML_HEAD[_se:]
 # === Build single script block (Phase 167 reverted - code integrity priority) ===
-HTML = _HTML_HEAD + '<script>\n' + JS + '\n' + _HTML_TAIL
+HTML = _HTML_HEAD + '<script src="cities_data.js"></script>\n<script>\n' + JS + '\n' + _HTML_TAIL
 HTML = HTML.replace('\\!', '!')
 out = 'GeoQuest.html'
 with open(out, 'w', encoding='utf-8') as _f:
