@@ -6,6 +6,6 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT/UI: Phase 209 — H/L river static fallback via RIVERS_GEO_DATA, new Airport-Pin mode (40 airports, D3 coordinate click, haversine scoring), WORTSCHMIEDE expanded to 13 cities (London, Barcelona, Tokio, NewYork, BuenosAires, Sydney, Istanbul, Mumbai, Vienna, Dubai — all words letter-validated), map mobile fix + pin drop-shadow visibility."
+git commit -m "FEAT: Phase 209 final — WortSchmiede 103 cities, Polish (pl) language added to 102/103 cities. All words Counter-validated across de/en/es/fr/pl."
 git push origin main
 pause
