@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Carousel dots klickbar + Desktop 2-Spalten-Layout + max-width 1100px" --allow-empty
+git commit -m "FEAT: Carousel Pfeil-Navigation + Sport-POI 219 POIs + Desktop Layout"
 echo.
 git push origin main
 echo.
