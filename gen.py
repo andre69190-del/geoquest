@@ -6676,6 +6676,7 @@ function updateOrientationWarning(){
 function saveGridCols(val){
   localStorage.setItem('geoquest_grid_cols',String(val));
   document.documentElement.style.setProperty('--grid-cols',String(val));
+  render();
 }
 function saveGridRows(val){
   localStorage.setItem('geoquest_grid_rows',String(val));
@@ -6684,10 +6685,19 @@ function saveGridRows(val){
 /* ── Carousel Engine: show/hide pages (no transform, no width-calc) ──────── */
 window._carouselGoTo=function(wrapEl,pageIdx){
   if(!wrapEl)return;
-  var pages=wrapEl.querySelectorAll(':scope>.carousel-page');
+  var pages=Array.from(wrapEl.children).filter(function(c){return c.classList.contains('carousel-page');});
   var n=Math.max(0,Math.min(pages.length-1,pageIdx));
   wrapEl._cPage=n;
-  pages.forEach(function(p,i){p.style.display=i===n?'':'none';});
+  pages.forEach(function(p,i){
+    if(i===n){
+      var cc=parseInt(p.style.getPropertyValue('--cc'))||4;
+      p.style.display='grid';
+      p.style.gridTemplateColumns='repeat('+cc+',1fr)';
+      p.style.gap='10px';
+    }else{
+      p.style.display='none';
+    }
+  });
   var dotsEl=wrapEl.previousElementSibling;
   if(dotsEl&&dotsEl.classList.contains('carousel-dots')){
     dotsEl.querySelectorAll('.dot').forEach(function(dot,i){
