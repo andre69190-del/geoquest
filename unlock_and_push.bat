@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Carousel grid — Array.from statt :scope> (iOS Safari), explicit display:grid, CSS restored" --allow-empty
+git commit -m "FIX: Carousel dots klickbar + Desktop 2-Spalten-Layout + max-width 1100px" --allow-empty
 echo.
 git push origin main
 echo.
