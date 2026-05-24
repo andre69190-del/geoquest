@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "ARCH: Carousel Pfeil-Nav + F1/UEFA/UNESCO/Airports/Rivers/Plates Datensaetze + 30k Staedte-Integration (Casual=1k, HC=10k, Survival=alle)"
+git commit -m "FIX: Emoji-Mojibake in Spielkarten + Ländername-Spoiler in Sport-POI-Fragen (Phase 201)"
 echo.
 git push origin main
 echo.

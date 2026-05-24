@@ -1,3 +1,4 @@
+import re
 import json, os, re
 
 # â”€â”€ CITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -5875,7 +5876,13 @@ function genSportPoiQ(gameId){
   const ccPool=_rfilt(COUNTRIES.filter(x=>x.cc\!==cor.cc),4);
   const dis=distractors(ccPool,x=>x.sr===((COUNTRIES.find(c=>c.cc===cor.cc)||{}).sr),x=>x.cc===cor.cc,x=>displayCountry(x.cc)||x.c);
   const corCountry=displayCountry(cor.cc)||((COUNTRIES.find(c=>c.cc===cor.cc)||{}).c)||cor.cc.toUpperCase();
-  return{type:"sport_poi",prompt:"In welchem Land liegt das?",subj:cor.name,ans:corCountry,opts:sh([corCountry,...dis]),meta:cor.lat.toFixed(1)+"°, "+cor.lng.toFixed(1)+"°",lid:cor.name,cc:cor.cc};
+  /* Phase 201: strip parenthetical country/location from display name */
+  const _nm=cor.name;
+  const _pIdx=_nm.indexOf('(');
+  const _base=_pIdx>0?_nm.slice(0,_pIdx).trim():_nm;
+  const _hint=_pIdx>0?_nm.slice(_pIdx):'';
+  const _meta=_hint||cor.lat.toFixed(1)+'\u00b0, '+cor.lng.toFixed(1)+'\u00b0';
+  return{type:"sport_poi",prompt:"In welchem Land liegt das?",subj:_base,ans:corCountry,opts:sh([corCountry,...dis]),meta:_meta,lid:cor.name,cc:cor.cc};
 }
 
 const GEN={
@@ -10190,6 +10197,8 @@ JS = (JS
   .replace('PLACEHOLDER_HCCH', HCCHJ)
   .replace('PLACEHOLDER_SPORTPOI', SPORT_POI_J)
 )
+# Phase 201: fix unicode escapes — JS=r'''...''' keeps \UXXXXXXXX literal
+JS = re.sub(r'\\U([0-9A-Fa-f]{8})', lambda m: chr(int(m.group(1), 16)), JS)
 remaining = __import__('re').findall(r'PLACEHOLDER_\w+', JS)
 if remaining:
     print('WARNING: unreplaced placeholders:', set(remaining))
