@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT: 18 Sport & Grossevents POI games + Carousel CSS var fix + HC datasets"
+git commit -m "FIX: Carousel grid — Array.from statt :scope> (iOS Safari), explicit display:grid, CSS restored" --allow-empty
 echo.
 git push origin main
 echo.
