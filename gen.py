@@ -6,7 +6,9 @@ cities_raw = json.load(open('cities.json', 'r', encoding='utf-8'))
 cities_slim = [{'id':c.get('id', c.get('name', 'unknown')),'n':c.get('name') or c.get('asciiName') or '',
                 'c':c.get('country',''),'cc':(c.get('countryCode','') or c.get('country_code','') or '').lower(),
                 'cont':c.get('continent',''),'sub':c.get('subregion') or c.get('continent',''),
-                'pop':c.get('population',0)}
+                'pop':c.get('population',0),
+                'lat':round(float(c.get('lat',0) or 0),4),
+                'lng':round(float(c.get('lon',c.get('lng',0)) or 0),4)}
                for c in cities_raw]
 CJ = json.dumps(cities_slim, separators=(',',':'), ensure_ascii=False)
 
@@ -6333,10 +6335,14 @@ function genHauptstadtDistanzQ(){
   do{
     city=pool[~~(rng()*pool.length)];
     var cname=city.country||city.c;
-    capEntry=CAPITALS.find(function(cap){return cap.country===cname||cap.c===cname;});
+    /* Phase 206 fix: match by cc (reliable) not country name string */
+    var cityCC=(city.cc||'').toLowerCase();
+    capEntry=cityCC?CAPITALS.find(function(cap){return (cap.cc||'').toLowerCase()===cityCC;}):
+             CAPITALS.find(function(cap){return cap.country===cname;});
     if(capEntry){
       var capN=capEntry.capital;
-      capCity=CITIES.find(function(c){return (c.n||c.name)===capN||(c.name||c.n)===capN;});
+      /* Look up capital by name OR by cc in CITIES */
+      capCity=CITIES.find(function(c){return (c.n||c.name||'').toLowerCase()===capN.toLowerCase();});
     }
     tries++;
     if(tries>80)return null;
