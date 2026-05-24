@@ -1343,7 +1343,7 @@ de:{
   ob_diff_casual_desc:"Gro\u00dfe St\u00e4dte \u2022 12 Sek.",ob_diff_hc_desc:"Alle St\u00e4dte \u2022 8 Sek.",ob_back:"\u2190 Zur\u00fcck",ob_modes_title:"Spielmodi",
   ob_modes_sub:"19 Modi, ein Ziel: Die Welt kennenlernen.",ob_more_modes:"\u2026 und 16 weitere Modi",ob_start:"\u{1F680} Los geht's!",ob_have_account:"Ich habe bereits einen Account",ob_register:"Neu hier? Registrieren",
   home_hi:"Hallo, {name} \u{1F44B}",home_guest:"Willkommen, Gast \u{1F30D}",home_save:"\u{1F510} Fortschritt sichern",home_pvp_sub:"Echtzeit gegen einen Freund spielen",
-  ob_mode1_name:"Stadt →’ Land",ob_mode1_desc:"Welchem Land gehört diese Stadt?",ob_mode2_name:"EU-Kennzeichen",ob_mode2_desc:"Woher kommt dieses Kennzeichen?",ob_mode3_name:"U-Bahn-Netz",ob_mode3_desc:"Linien und km der Metros.",
+  ob_mode1_name:"Stadt →’ Land",ob_mode1_desc:"Land zur Stadt \u00b7 Casual 1k, HC 10k, Survival 30k St\u00e4dte",ob_mode2_name:"EU-Kennzeichen",ob_mode2_desc:"Woher kommt dieses Kennzeichen?",ob_mode3_name:"U-Bahn-Netz",ob_mode3_desc:"Linien und km der Metros.",
   language_select:"SPRACHE",
   badge_beta:"Beta",beta_warning:"Spielbar, aber es k\u00f6nnen noch Fehler auftreten.",
   rotate_device:"Bitte drehe dein Ger\u00e4t ins Querformat \u{1F4F1}\u27A1\u{1F5FA}",
@@ -2721,11 +2721,11 @@ function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
 const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang"],cost:1000},
-  eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr"],cost:500},
+  eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
-  neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40"],cost:0},
+  neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60"],cost:0},
   sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20","derby_hotspots","eishockey_nationen","f1_historisch","tdf_paesse","olympia_winter_historie","wm_gastgeber","wm_finalstadien","weltmeister_nationen","fussball_legenden","road_to_2026","frauen_wm_meilensteine","sommerspiele_metropolen","winter_exoten_klassiker","olympische_rekorde","olympia_hoehe","boykott_spiele","em_gastgeber_historie","em_finalstadien"],cost:0},
 };
@@ -3411,6 +3411,75 @@ const DE_PLATES_DATA=[
 {"code":"WW","region":"Montabaur (Westerwaldkreis)","country":"Deutschland","lat":50.4374,"lng":7.8277},
 {"code":"Z","region":"Zwickau","country":"Deutschland","lat":50.7189,"lng":12.4939},
 {"code":"ZW","region":"Zweibrücken","country":"Deutschland","lat":49.2494,"lng":7.3592}
+,
+{"code":"DGF","region":"Dingolfing (Dingolfing-Landau)","country":"Deutschland","lat":48.629,"lng":12.4963},
+{"code":"FRG","region":"Freyung (Freyung-Grafenau)","country":"Deutschland","lat":48.8089,"lng":13.5497},
+{"code":"GD","region":"Schwäbisch Gmünd (Ostalbkreis)","country":"Deutschland","lat":48.7993,"lng":9.797},
+{"code":"GER","region":"Germersheim","country":"Deutschland","lat":49.2196,"lng":8.3681},
+{"code":"GF","region":"Gifhorn","country":"Deutschland","lat":52.4873,"lng":10.5458},
+{"code":"GRA","region":"Grafenau","country":"Deutschland","lat":48.8564,"lng":13.3984},
+{"code":"GRZ","region":"Greiz","country":"Deutschland","lat":50.6536,"lng":12.194},
+{"code":"HAS","region":"Haßfurt (Haßberge)","country":"Deutschland","lat":50.028,"lng":10.5161},
+{"code":"HBN","region":"Hildburghausen","country":"Deutschland","lat":50.4192,"lng":10.7287},
+{"code":"HI","region":"Hildesheim","country":"Deutschland","lat":52.1497,"lng":9.9502},
+{"code":"HOL","region":"Holzminden","country":"Deutschland","lat":51.8291,"lng":9.4487},
+{"code":"HP","region":"Heppenheim (Bergstrasse)","country":"Deutschland","lat":49.644,"lng":8.6341},
+{"code":"HR","region":"Bebra (Hersfeld-Rotenburg)","country":"Deutschland","lat":50.9817,"lng":9.7862},
+{"code":"IGB","region":"St. Ingbert (Saarpfalz)","country":"Deutschland","lat":49.2762,"lng":7.1054},
+{"code":"KG","region":"Bad Kissingen","country":"Deutschland","lat":50.1992,"lng":10.0716},
+{"code":"KL","region":"Kaiserslautern","country":"Deutschland","lat":49.444,"lng":7.769},
+{"code":"KN","region":"Konstanz","country":"Deutschland","lat":47.6779,"lng":9.1732},
+{"code":"KS","region":"Kassel","country":"Deutschland","lat":51.3127,"lng":9.4797},
+{"code":"KT","region":"Kitzingen","country":"Deutschland","lat":49.7395,"lng":10.1604},
+{"code":"KU","region":"Kulmbach","country":"Deutschland","lat":50.1057,"lng":11.4439},
+{"code":"KYF","region":"Sondershausen (Kyffhäuserkreis)","country":"Deutschland","lat":51.37,"lng":10.87},
+{"code":"LDS","region":"Lübben (Dahme-Spreewald)","country":"Deutschland","lat":51.939,"lng":13.9003},
+{"code":"MIL","region":"Miltenberg","country":"Deutschland","lat":49.704,"lng":9.2634},
+{"code":"MSP","region":"Karlstadt (Main-Spessart)","country":"Deutschland","lat":50.0057,"lng":9.772},
+{"code":"MZG","region":"Merzig","country":"Deutschland","lat":49.4416,"lng":6.6382},
+{"code":"NAB","region":"Nabburg","country":"Deutschland","lat":49.4551,"lng":12.1839},
+{"code":"NEA","region":"Neustadt a.d. Aisch","country":"Deutschland","lat":49.5794,"lng":10.6107},
+{"code":"NEW","region":"Neustadt a.d. Waldnaab","country":"Deutschland","lat":49.7389,"lng":12.1706},
+{"code":"NK","region":"Neunkirchen","country":"Deutschland","lat":49.3458,"lng":7.1797},
+{"code":"NOM","region":"Northeim","country":"Deutschland","lat":51.7068,"lng":9.9993},
+{"code":"OAL","region":"Marktoberdorf (Ostallgäu)","country":"Deutschland","lat":47.7794,"lng":10.6177},
+{"code":"OD","region":"Bad Oldesloe (Stormarn)","country":"Deutschland","lat":53.8117,"lng":10.3742},
+{"code":"OH","region":"Eutin (Ostholstein)","country":"Deutschland","lat":54.1327,"lng":10.6131},
+{"code":"OK","region":"Osterholz-Scharmbeck","country":"Deutschland","lat":53.227,"lng":8.7948},
+{"code":"OSL","region":"Senftenberg (Oberspreewald-Lausitz)","country":"Deutschland","lat":51.5311,"lng":14.0003},
+{"code":"PAN","region":"Pfarrkirchen (Rottal-Inn)","country":"Deutschland","lat":48.4315,"lng":12.9318},
+{"code":"PR","region":"Perleberg (Prignitz)","country":"Deutschland","lat":53.0745,"lng":11.8609},
+{"code":"REG","region":"Regen","country":"Deutschland","lat":48.9707,"lng":13.1273},
+{"code":"ROT","region":"Rotenburg a.d. Fulda","country":"Deutschland","lat":50.9988,"lng":9.7277},
+{"code":"ROW","region":"Rotenburg (Wümme)","country":"Deutschland","lat":53.1063,"lng":9.4048},
+{"code":"SAD","region":"Schwandorf","country":"Deutschland","lat":49.3253,"lng":12.1072},
+{"code":"SAL","region":"Merseburg (Saalekreis)","country":"Deutschland","lat":51.3567,"lng":12.0024},
+{"code":"SAW","region":"Salzwedel (Altmarkkreis)","country":"Deutschland","lat":52.8534,"lng":11.1542},
+{"code":"SHG","region":"Stadthagen (Schaumburg)","country":"Deutschland","lat":52.3239,"lng":9.0265},
+{"code":"SIG","region":"Sigmaringen","country":"Deutschland","lat":48.0887,"lng":9.216},
+{"code":"SK","region":"Pirna (Sächs. Schweiz-Osterzgebirge)","country":"Deutschland","lat":50.9593,"lng":13.938},
+{"code":"SOK","region":"Schleiz (Saale-Orla-Kreis)","country":"Deutschland","lat":50.5877,"lng":11.8082},
+{"code":"SON","region":"Sonneberg","country":"Deutschland","lat":50.3553,"lng":11.1614},
+{"code":"SPN","region":"Forst (Spree-Neiße)","country":"Deutschland","lat":51.7383,"lng":14.6347},
+{"code":"STA","region":"Starnberg","country":"Deutschland","lat":47.9985,"lng":11.3406},
+{"code":"STD","region":"Stade","country":"Deutschland","lat":53.5991,"lng":9.4793},
+{"code":"TBB","region":"Tauberbischofsheim (Main-Tauber)","country":"Deutschland","lat":49.6231,"lng":9.6638},
+{"code":"TE","region":"Luckenwalde (Teltow-Fläming)","country":"Deutschland","lat":51.8529,"lng":13.1696},
+{"code":"TIR","region":"Tirschenreuth","country":"Deutschland","lat":49.8812,"lng":12.3351},
+{"code":"VB","region":"Lauterbach (Vogelsbergkreis)","country":"Deutschland","lat":50.6387,"lng":9.3945},
+{"code":"VG","region":"Plauen (Vogtlandkreis)","country":"Deutschland","lat":50.4952,"lng":12.1306},
+{"code":"VK","region":"Völklingen","country":"Deutschland","lat":49.2516,"lng":6.857},
+{"code":"VR","region":"Bergen auf Rügen (Vorpommern-Rügen)","country":"Deutschland","lat":54.4152,"lng":13.4284},
+{"code":"WA","region":"Korbach (Waldeck-Frankenberg)","country":"Deutschland","lat":51.2748,"lng":8.8726},
+{"code":"WAK","region":"Bad Salzungen (Wartburgkreis)","country":"Deutschland","lat":50.8118,"lng":10.2282},
+{"code":"WIL","region":"Wittlich (Bernkastel-Wittlich)","country":"Deutschland","lat":49.9856,"lng":6.8909},
+{"code":"WL","region":"Winsen (Harburg)","country":"Deutschland","lat":53.3564,"lng":10.2178},
+{"code":"WM","region":"Weilheim i.OB","country":"Deutschland","lat":47.8396,"lng":11.151},
+{"code":"WND","region":"St. Wendel","country":"Deutschland","lat":49.4669,"lng":7.1706},
+{"code":"WST","region":"Westerstede (Ammerland)","country":"Deutschland","lat":53.2573,"lng":7.9238},
+{"code":"WUG","region":"Weißenburg i.Bay.","country":"Deutschland","lat":49.0298,"lng":10.9706},
+{"code":"WUN","region":"Wunsiedel i.Fichtelgebirge","country":"Deutschland","lat":50.0395,"lng":12.0036},
+{"code":"ZIG","region":"Schwalmstadt (Schwalm-Eder)","country":"Deutschland","lat":50.932,"lng":9.2199}
 ];
 
 /* Phase 200: UNESCO Geo-Daten (70 Stätten mit Koordinaten für Kartenspiele) */
@@ -5289,6 +5358,62 @@ function genOutlineQ(){
   return{type:"outline",prompt:t("q_outline"),subj:corCC,ans:displayCountry(corCC)||corC,opts:sh2([displayCountry(corCC)||corC,...picked]),lid:corCC,cc:corCC};
 }
 /* EU-KENNZEICHEN GENERATORS (Phase 23B) – smart same-country distractors */
+
+
+/* Phase 203: genBorderQ -- Grenze oder nicht? */
+function genBorderQ(){
+  if(!NEIGHBORS||Object.keys(NEIGHBORS).length<10)return null;
+  const withN=COUNTRIES.filter(c=>NEIGHBORS[c.c]&&NEIGHBORS[c.c].length>0);
+  if(withN.length<10)return null;
+  const realBorder=rng()<0.5;
+  let cA,cB,correct;
+  if(realBorder){
+    cA=withN[~~(rng()*withN.length)];
+    const nb=NEIGHBORS[cA.c];
+    const nbC=nb[~~(rng()*nb.length)];
+    cB=COUNTRIES.find(c=>c.c===nbC);
+    if(!cB)return null;
+    correct=true;
+  }else{
+    let tries=0;
+    do{
+      cA=withN[~~(rng()*withN.length)];
+      cB=withN[~~(rng()*withN.length)];
+      tries++;
+      if(tries>40)return null;
+    }while(cA===cB||(NEIGHBORS[cA.c]||[]).includes(cB.c)||(NEIGHBORS[cB.c]||[]).includes(cA.c));
+    correct=false;
+  }
+  const nameA=displayCountry(cA.cc)||cA.c;
+  const nameB=displayCountry(cB.cc)||cB.c;
+  const pairKey=cA.cc+"|"+cB.cc;
+  const ansYes="\u2713 Gemeinsame Grenze";
+  const ansNo="\u2717 Keine gemeinsame Grenze";
+  const ans=correct?ansYes:ansNo;
+  const wrong=correct?ansNo:ansYes;
+  const meta=correct?((NEIGHBORS[cA.c]||[]).length+" Nachbarn \u00b7 "+(NEIGHBORS[cB.c]||[]).length+" Nachbarn"):(cA.ct+" / "+cB.ct);
+  const optOrder=rng()<0.5?[ansYes,ansNo]:[ansNo,ansYes];
+  return{type:"border_q",prompt:"Teilen diese L\u00e4nder eine gemeinsame Grenze?",
+    subj:nameA+"\u00a0\u2194\u00a0"+nameB,
+    ans:ans,opts:optOrder,meta:meta,lid:pairKey,cc:cA.cc,
+    _ccA:cA.cc,_ccB:cB.cc,_nameA:nameA,_nameB:nameB};
+}
+/* Phase 203: genDePlateQ -- Deutsches KFZ-Kennzeichen -> Stadt/Region */
+function genDePlateQ(){
+  if(typeof DE_PLATES_DATA==='undefined'||!DE_PLATES_DATA.length)return null;
+  const pool=DE_PLATES_DATA.filter(x=>x.code!==S.lid);
+  if(pool.length<4)return null;
+  const cor=pool[~~(rng()*pool.length)];
+  const others=pool.filter(x=>x.code!==cor.code);
+  const nearby=others.filter(x=>Math.abs(x.lat-cor.lat)<3&&Math.abs(x.lng-cor.lng)<3);
+  const far=others.filter(x=>!(Math.abs(x.lat-cor.lat)<3&&Math.abs(x.lng-cor.lng)<3));
+  const pool2=nearby.concat(far).sort(()=>rng()-.5);
+  const dis=[];for(let i=0;i<pool2.length&&dis.length<3;i++){if(!dis.includes(pool2[i].region)&&pool2[i].region!==cor.region)dis.push(pool2[i].region);}
+  while(dis.length<3){const e=others.find(x=>!dis.includes(x.region)&&x.region!==cor.region);if(!e)break;dis.push(e.region);}
+  return{type:"de_plate",prompt:"Welche Stadt/Region hat dieses Kennzeichen?",
+    subj:cor.code,ans:cor.region,opts:[cor.region,...dis].sort(()=>rng()-.5),
+    meta:cor.country,lid:cor.code,cc:"de"};
+}
 function genPlateQ(hardcore){
   const pool=PLATES_DATA;
   if(\!pool||pool.length<5)return null;
@@ -5955,6 +6080,7 @@ const GEN={
   subway:genSubwayQ,flagsel:genFlagselQ,rcapital:genRcapitalQ,rcity:genRcityQ,
   rriver:genRriverQ,outline:genOutlineQ,food:genFoodQ,brand:genBrandQ,currency:genCurrencyQ,
   plate_casual:()=>genPlateQ(false),
+  de_plate:genDePlateQ,
   plate_hard:()=>genPlateQ(true),
   curr_real:genCurrRealQ,
   pop_compare:genPopCompareQ,
@@ -6003,6 +6129,7 @@ const GEN={
   climate_mystery:genClimateQ,
   flag_fusion:genFlagColorQ,
   alpha_sprint:genAlphaSprintQ,
+  border_q:genBorderQ,
   timezone_jumper:genTimezoneQ,
   plate_compare:genPlateCompareQ,
   stadium:()=>genFootballQ("stadium"),
@@ -7425,7 +7552,7 @@ app.innerHTML=`<div class="scr">
     qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;color:#94a3b8;font-size:.68rem;margin:2px 0 4px">${q.industry||""}</div><div class="qmain" style="font-size:2.2rem">${q.subj}</div>`;
   }else if(q.type==="currency"){
     qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;margin:6px 0 2px"><span class="currency-symbol">${q.symbol||""}</span></div><div class="qmain">${q.subj}</div>`;
-  }else if(q.type==="plate_casual"||q.type==="plate_hard"){
+  }else if(q.type==="de_plate"||q.type==="plate_casual"||q.type==="plate_hard"){
     qBody=`<div class="qprompt">${q.prompt}</div>
       <div style="text-align:center;margin:8px 0 10px">
         <div class="plate-badge">${q.subj}</div>
@@ -7515,10 +7642,29 @@ app.innerHTML=`<div class="scr">
         <div class="qmain" style="font-size:2.2rem">${q.subj}</div>
         <div style="font-size:1.2rem;margin-top:4px">${flagOf(q.subj)}</div>
       </div>`;
-  }else{
+  }else if(q.type==="border_q"){
+    const _fa=q._ccA?'<img src="https://flagcdn.com/w40/'+q._ccA+'.png" style="height:26px;vertical-align:middle;border-radius:3px" alt="">':'\u{1F30D}';
+    const _fb=q._ccB?'<img src="https://flagcdn.com/w40/'+q._ccB+'.png" style="height:26px;vertical-align:middle;border-radius:3px" alt="">':'\u{1F30D}';
+    qBody=`<div class="qprompt">${q.prompt}</div>
+      <div style="display:flex;justify-content:center;align-items:center;gap:1.4rem;margin:.7rem 0 .4rem">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+          ${_fa}<span style="font-size:.75rem;font-weight:700;color:var(--text);max-width:100px;text-align:center">${esc(q._nameA||"")}</span>
+        </div>
+        <span style="font-size:1.3rem;color:var(--text3)">\u2194</span>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+          ${_fb}<span style="font-size:.75rem;font-weight:700;color:var(--text);max-width:100px;text-align:center">${esc(q._nameB||"")}</span>
+        </div>
+      </div>
+      ${sel!==null?`<div class="qmeta" style="text-align:center;font-size:.77rem;margin-top:4px">${q.meta||""}</div>`:""}`;
+}else{
     qBody=`<div class="qprompt">${q.prompt}</div><div class="qmain">${q.subj}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }
-  /* After-answer reveal for plate casual */
+  /* Phase 203: sport_poi reveal */
+  let sportPoiReveal="";
+  if(sel!==null&&q.type==="sport_poi"&&q.meta&&q.meta.charAt(0)==="("){
+    sportPoiReveal=`<div style="text-align:center;color:var(--text2);font-size:.78rem;margin-top:5px;font-style:italic">${esc(q.subj)} ${esc(q.meta)}</div>`;
+  }
+/* After-answer reveal for plate casual */
   let plateReveal="";
   if(sel\!==null&&(q.type==="plate_casual"||q.type==="plate_hard")){
     const pc=PLATES_DATA.find(p=>p.code===q.subj);
@@ -7665,7 +7811,7 @@ app.innerHTML=`<div class="scr">
   }
   }
   let fb="";
-  if(S.ph==="feedback"){const cls=ok?"fb ok":"fb ng";let al=q.ans;if(q.type==="flagsel"){const co=COUNTRIES.find(c=>c.cc===q.ans);al=co?co.c:q.ans;}const al_d=displayCountry(al);const msg=ok?t("fb_correct",{pts}):sel==="__t"?t("fb_time",{ans:al_d}):t("fb_wrong",{ans:al_d});fb=`<div class="${cls}">${msg}</div>${plateReveal}`;}
+  if(S.ph==="feedback"){const cls=ok?"fb ok":"fb ng";let al=q.ans;if(q.type==="flagsel"){const co=COUNTRIES.find(c=>c.cc===q.ans);al=co?co.c:q.ans;}const al_d=displayCountry(al);const msg=ok?t("fb_correct",{pts}):sel==="__t"?t("fb_time",{ans:al_d}):t("fb_wrong",{ans:al_d});fb=`<div class="${cls}">${msg}</div>${sportPoiReveal}${plateReveal}`;}
   /* Power-up bar (Phase 26) */
   const pu=loadPU();
   /* P136-fix: 50/50 disabled for comp_ modes -- pre-declared vars, no nested escaping */

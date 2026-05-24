@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT: Phase 202 — Alpha-Sprint-Generator, 5 neue Map-Modi (F1/Stadien/Fluesse/UNESCO/Flughaefen), comp_flight+olympics TMP-Fix, CC-Alias-Map fuer 30k Cities"
+git commit -m "FEAT: Phase 203 — DE-Kennzeichen 221->289, de_plate-Modus, Grenze-oder-nicht-Modus, Sport-POI-Hint, Schwierigkeits-Label, Spieluebersicht aktualisiert (85 Modi)"
 echo.
 git push origin main
 echo.
