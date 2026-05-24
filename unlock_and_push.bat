@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT: Phase 204 — 15 neue Airport+Spezial-Modi: Flugrouten-Duell, Inlandsflug, Sunrise-Guesser, Aequator-Magnet, Kontinent-Klicker, Hauptstadt-Distanz, IATA-Reverse, Jetlag, Klima-Daten, Insel-Festland, Sprachen-Kompass + gqDist Haversine"
+git commit -m "FEAT: Phase 205 -- Wort-Schmiede: Multilingual city-scrabble mode (DE/EN/ES/FR), language-keyed validWords, green chip UI, progress bar, win screen"
 echo.
 git push origin main
 echo.

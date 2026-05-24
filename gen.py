@@ -2631,7 +2631,8 @@ const MODES=[
   {id:"climate_mystery",icon:"\u{1F326}",title:"Klima-Krimi",          group:"new_modes",prompt:"Welches Land versteckt sich hinter diesen Klima-Hinweisen?",                             desc:"Land anhand von Klima-Clues erraten"},
   {id:"alpha_sprint",  icon:"📍",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben"},
   {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen"},
-  {id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker"},
+    {id:"wort_schmiede",icon:"🔡",title:"Wort-Schmiede",group:"new_modes",noMultiplayer:true,prompt:"Bilde Wörter aus dem Stadtnamen!",desc:"Finde Wörter in Stadtbuchstaben – multilingual"},
+{id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker"},
   {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt"},
   {id:"plate_compare",icon:"\u{1F9EA}\u{1F697}",title:"\u{1F9EA} Kenn. Vergleich",group:"comparisons",prompt:"Kennzeichen-Vergleich",desc:"Zwei Kennzeichen – welches Land gewinnt?",comingSoon:false},
   {id:"stadium",icon:"\u26BD",title:"Stadion-Quiz",group:"sport",prompt:"In welchem Land steht dieses Stadion?",desc:"Fu\u00dfballstadien zuordnen"},
@@ -5442,6 +5443,28 @@ const SPRACHEN_DATA=[
   {word:"Sawasdee",lang:"Thailaendisch",country:"Thailand"},
   {word:"Xin chao",lang:"Vietnamesisch",country:"Vietnam"}
 ];
+/* -- Phase 205: WORTSCHMIEDE_DATA -- city-scrabble multilingual word lists -- */
+const WORTSCHMIEDE_DATA=[
+  {city:"BERLIN",validWords:{
+    "de":["BEIN","BEIL","BIER","BREI","REIN","LERN","EIL","BIN","LEIB","LEIN","NIL","RIEL"],
+    "en":["LINE","LINER","REIN","RILE","BIN","RIB","BILE","BRINE","LIEN","NIL","NILE"],
+    "es":["BIEN","RIEL","LIBRE","BRIN","NIL","NI","IR"],
+    "fr":["LIEN","RIEN","BIEN","BRIN","IL","REIN"]
+  }},
+  {city:"AMSTERDAM",validWords:{
+    "de":["DAME","TRAM","MARS","MAST","DARM","SMART","RAST","STAMM","DRAMA","MATER"],
+    "en":["DREAM","STEAM","TRAM","DAMES","MADE","STAR","TRADE","MAST","SMART","MASTER","DRAM"],
+    "es":["DRAMA","TRAMA","DAMA","ESTAR","MARES","TEMAS","DEMAS","MATER"],
+    "fr":["DRAME","TRAME","MATER","DAME","TRAMES","MARS"]
+  }},
+  {city:"PARIS",validWords:{
+    "de":["SPAR","RAPS","PAR","RAP","SPA"],
+    "en":["PAIR","RASP","SPAR","RAPS","PAIRS","AIRS"],
+    "es":["PRISA","IRAS","SARI","RAIS","PARIS"],
+    "fr":["PARIS","PARI","PAIR","RAIS","SPA"]
+  }}
+];
+
 const TIMEZONE_DATA=[
   {city:"Berlin",country:"Deutschland",utc:1},{city:"London",country:"Grossbritannien",utc:0},
   {city:"Moskau",country:"Russland",utc:3},{city:"Dubai",country:"VAE",utc:4},
@@ -7458,6 +7481,7 @@ function startGame(m){
   if(_m==="logic_grid"){initLogikGitter();render();return;}
   if(_m==="travel_route"){initReiseroute();render();return;}
   if(_m==="slf"){initSLF();render();return;}
+  if(_m==="wort_schmiede"){initWortSchmiede();render();return;}
   lq();
 }
 async function showLeaderboard(){S.ph="menu";S.tab="home";S.lbLoading=true;render();S.lbData=await fetchLeaderboard(S.mode);S.lbLoading=false;render();}
@@ -7628,7 +7652,7 @@ function startDailyChallenge(){
   const seed=getDailySeed();
   initRng(seed);
   S.mode="city";S.diff="casual";S.isDailyRun=true;
-  Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,slfData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});
+  Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,slfData:null,wsData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});
   lq();
 }
 function renderDailyHero(){
@@ -7979,7 +8003,12 @@ app.innerHTML=`<div class="scr">
     requestAnimationFrame(()=>{document.getElementById("rr-inp")?.focus();});
     return;
   }
-  if(mode==="slf"&&S.ph==="playing"){
+    if(mode==="wort_schmiede"&&S.ph==="playing"){
+    app.innerHTML=renderWortSchmiede(sc);
+    requestAnimationFrame(()=>{document.getElementById("ws-input")?.focus();});
+    return;
+  }
+if(mode==="slf"&&S.ph==="playing"){
     app.innerHTML=renderLandHauptstadt(sc);
     requestAnimationFrame(()=>{document.getElementById("slf-city")?.focus();});
     return;
@@ -9516,6 +9545,50 @@ function renderLandHauptstadt(sc){
 }
 
 /* â”€â”€ ACCOUNT LÖSCHEN (DSGVO) â”€â”€ (Phase 106) */
+
+/* -- Phase 205: Wort-Schmiede ------------------------------------------------ */
+function initWortSchmiede(){
+  clearInterval(tIv);
+  const lang=S.language||localStorage.getItem('gq_lang')||'en';
+  const idx=~~(rng()*WORTSCHMIEDE_DATA.length);
+  const entry=WORTSCHMIEDE_DATA[idx];
+  const words=(entry.validWords[lang]||entry.validWords['en']||[]).map(function(w){return w.toUpperCase();});
+  S.wsData={cityIdx:idx,city:entry.city,lang:lang,allWords:words,foundWords:[],input:"",phase:"playing"};
+  S.gameStartTime=Date.now();
+  S.ph="playing";
+}
+function handleWsCheck(){
+  if(!S.wsData||S.wsData.phase!=="playing")return;
+  const inp=(S.wsData.input||"").trim().toUpperCase();
+  S.wsData.input="";
+  const el=document.getElementById("ws-input");if(el)el.value="";
+  if(!inp||inp.length<2)return;
+  if(S.wsData.foundWords.includes(inp)){showToast("\u2713 Schon gefunden!");return;}
+  if(!S.wsData.allWords.includes(inp)){showToast("\u2715 Kein g\u00fcltiges Wort");return;}
+  S.wsData.foundWords.push(inp);
+  const pts=inp.length>=5?15:inp.length>=4?10:5;
+  S.sc+=pts;
+  S.correct+=1;
+  if(window.mpGameCh)mpSend("score_update",{score:S.sc,rd:S.rd||0,correct:S.correct||0});
+  if(S.wsData.foundWords.length>=S.wsData.allWords.length){S.wsData.phase="won";}
+  render();
+}
+function renderWortSchmiede(sc){
+  if(!S.wsData)return'<div class="scr"></div>';
+  const{city,allWords,foundWords,input,phase,lang}=S.wsData;
+  const total=allWords.length;
+  const found=foundWords.length;
+  const pct=total>0?Math.round(found/total*100):0;
+  const barCol=pct>=100?"#10b981":pct>=60?"#3b82f6":"#f59e0b";
+  const chips=foundWords.map(function(w){return'<span style="display:inline-flex;align-items:center;background:#10b981;color:#fff;border-radius:20px;padding:4px 12px;font-size:.82rem;font-weight:700;margin:3px 3px 3px 0">'+esc(w)+'</span>';}).join("");
+  const letters=[...city].map(function(ch){return'<span style="display:inline-flex;align-items:center;justify-content:center;width:2.1rem;height:2.5rem;background:var(--bg3);border:2px solid var(--border);border-radius:8px;font-size:1.3rem;font-weight:900;color:var(--text);margin:0 3px">'+ch+'</span>';}).join("");
+  if(phase==="won"){
+    return'<div class="scr"><div class="panel"><div style="text-align:center;font-size:2.5rem;margin-bottom:.5rem">\u{1F3C6}</div><div style="text-align:center;font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:.3rem">Alle W\u00f6rter gefunden!</div><div style="text-align:center;font-size:.8rem;color:var(--text3);margin-bottom:1rem">'+city+' \u00b7 '+found+'/'+total+' W\u00f6rter \u00b7 '+sc.toLocaleString()+' Punkte</div><div style="display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:1rem">'+chips+'</div><button class="btn-p" style="margin-top:.5rem" onclick="initWortSchmiede();render()">\u{1F501} N\u00e4chste Stadt</button><button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph=\\'menu\\';S.tab=\\'home\\';render()">\u{1F6AA} Beenden</button></div></div>';
+  }
+  return'<div class="scr"><div class="panel"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.75rem"><div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">WORT-SCHMIEDE</div><div style="display:flex;flex-wrap:wrap;margin-top:.35rem">'+letters+'</div></div><div style="text-align:right"><div style="font-size:.6rem;color:var(--text3)">PUNKTE</div><div style="font-size:1.5rem;font-weight:900;color:var(--text)">'+sc.toLocaleString()+'</div></div></div><div style="margin-bottom:.6rem"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:.72rem;color:var(--text3)">Gefunden: <strong style="color:var(--text)">'+found+'</strong> / '+total+'</span><span style="font-size:.72rem;color:'+barCol+';font-weight:700">'+pct+'%</span></div><div class="tbar"><div class="tfill" style="width:'+pct+'%;background:'+barCol+';transition:width .3s"></div></div></div><div style="display:flex;gap:8px;margin-bottom:.8rem"><input id="ws-input" type="text" dir="ltr" class="slf-input" style="flex:1;direction:ltr;text-align:left;padding-left:10px;text-transform:uppercase;font-weight:700;letter-spacing:1px" placeholder="Wort eingeben\u2026" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" value="'+esc(input)+'" oninput="S.wsData.input=this.value.toUpperCase()" onkeydown="if(event.key===\\'Enter\\'){handleWsCheck();event.preventDefault();}"><button class="btn-p" style="padding:.55rem 1rem;margin:0;min-width:80px" onclick="handleWsCheck()">\u2714 Pr\u00fcfen</button></div>'+
+    (found>0?'<div style="display:flex;flex-wrap:wrap;margin-bottom:.6rem">'+chips+'</div>':"")+
+    '<div style="font-size:.7rem;color:var(--text3);text-align:center;margin-bottom:.5rem">Bilde W\u00f6rter aus den Buchstaben der Stadt \u00b7 Sprache: <strong>'+lang.toUpperCase()+'</strong></div><button class="btn-g" style="margin-bottom:0;font-size:.78rem" onclick="clr();S.ph=\\'menu\\';S.tab=\\'home\\';render()">\u2716 Schlie\u00dfen</button></div></div>';
+}
 async function doDeleteAccount(){
   if(\!sbUser)return;
   const conf1=confirm("Konto wirklich löschen? Alle Daten gehen verloren.");
