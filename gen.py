@@ -2305,7 +2305,7 @@ ga:{
 function t(key,vars){
   const lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
   let s=(LANG[lang]&&LANG[lang][key])||(LANG.en&&LANG.en[key])||(LANG.de&&LANG.de[key])||key;
-  if(!s)return key;  /* never return undefined */
+  if(!s||typeof s!=='string')return String(key||'');  /* Phase 206: strict null/undefined guard */
   if(vars)Object.keys(vars).forEach(k=>{const rv=vars[k]??"-";s=s.replace(new RegExp('\\{'+k+'\\}','g'),String(rv));});
   return s;
 }
@@ -6655,7 +6655,14 @@ window.onerror=function(m,u,l,c,e){
   </div>`;
   return true; /* prevent default browser error */
 };
-function clr(){clearInterval(tIv);clearTimeout(fTo);clearTimeout(S.freezeTimer);S.freezeTimer=null;}
+function clr(){
+  clearInterval(tIv);clearTimeout(fTo);
+  clearTimeout(S.freezeTimer);S.freezeTimer=null;
+  /* Phase 206: also kill SLF / LandHauptstadt / WortSchmiede interval */
+  if(S.slfData)S.slfData.phase='done';
+  if(S.lhData)S.lhData.phase='done';
+  if(S.wsData)S.wsData.phase='done';
+}
 
 /* ─── LOCAL 1:1 HOT-SEAT MODE ─── */
 const LV_ROUNDS=10,LV_TIME=15;
@@ -6841,12 +6848,12 @@ function lq(){
   /* Try up to 25 times to get a question whose lid hasn't appeared this round */
   let q=null,_att=0;
   while(_att<25){
-    const _c=(GEN[S.mode]||genCityQ)();
-    if(_c&&\!S.askedLids.has(_c.lid)){q=_c;break;}
+    try{const _c=(GEN[S.mode]||genCityQ)();
+    if(_c&&!S.askedLids.has(_c.lid)){q=_c;break;}}catch(_e){console.warn('[GeoQuest] generator error (mode='+S.mode+'):', _e);}
     _att++;
   }
   /* Fallback: accept any valid question if pool is exhausted */
-  if(\!q)q=(GEN[S.mode]||genCityQ)()||null;
+  if(!q){try{q=(GEN[S.mode]||genCityQ)()||null;}catch(_e){console.warn('[GeoQuest] generator fallback error:',_e);q=null;}}
   /* Duolingo casual: once normal round exhausted, pull retries */
   if(\!q&&S.diff==="casual"&&S.queueExtra.length>0)q=S.queueExtra.shift();
   if(\!q){S.ph="menu";render();return;}
@@ -9551,7 +9558,7 @@ function initWortSchmiede(){
   const lang=S.language||localStorage.getItem('gq_lang')||'en';
   const idx=~~(rng()*WORTSCHMIEDE_DATA.length);
   const entry=WORTSCHMIEDE_DATA[idx];
-  const words=(entry.validWords[lang]||entry.validWords['en']||[]).map(function(w){return w.toUpperCase();});
+  const words=(entry.validWords[lang]||entry.validWords['de']||entry.validWords['en']||Object.values(entry.validWords)[0]||[]).map(function(w){return w.toUpperCase();});
   S.wsData={cityIdx:idx,city:entry.city,lang:lang,allWords:words,foundWords:[],input:"",phase:"playing"};
   S.gameStartTime=Date.now();
   S.ph="playing";

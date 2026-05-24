@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: 3 JS SyntaxErrors -- double-comma in GEN dispatcher; Phase 204 generator functions inside object literal (moved before const GEN); Wort-Schmiede escaped-quote bugs in single-quoted strings; Fix vercel.json cities_data.js missing from builds+routes"
+git commit -m "CHORE/SEC: Phase 206 System Audit -- try/catch in lq() generator loop; clr() kills SLF/WS/LH timers on exit; t() strict null-guard; wort_schmiede lang->de->en->first fallback; opt-btn CSS overflow protection; qprompt word-break hardening"
 echo.
 git push origin main
 echo.

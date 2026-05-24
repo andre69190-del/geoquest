@@ -86,7 +86,12 @@ input[type=text]::placeholder{color:var(--text3)}
 .tfill{height:100%;border-radius:99px;transition:width 1s linear,background .4s}
 .tbar.frozen .tfill{background:#3b82f6 !important;transition:none}
 .qcard{background:var(--qcard);border-radius:18px;padding:1.1rem 1.1rem 1rem;text-align:center;margin-bottom:10px;box-shadow:0 2px 24px rgba(0,0,0,.12)}
-.qprompt{color:var(--text2);font-size:1rem;font-weight:500;line-height:1.3;margin-bottom:8px}
+.qprompt{color:var(--text2);font-size:1rem;font-weight:500;line-height:1.3;margin-bottom:8px;word-break:break-word;overflow-wrap:break-word;hyphens:auto}
+/* Phase 206: opt-btn — map_reverse MCQ buttons, full overflow protection */
+.opt-btn{background:var(--bg3);color:var(--text);border:2px solid var(--border);border-radius:10px;padding:.55rem .8rem;font-size:.88rem;font-weight:700;cursor:pointer;min-height:44px;word-break:break-word;overflow-wrap:break-word;hyphens:auto;transition:border-color .12s,background .12s}
+.opt-btn:hover{border-color:var(--accent)}
+.opt-btn.opt-ok{background:rgba(16,185,129,.18);border-color:#10b981;color:#10b981}
+.opt-btn.opt-ng{background:rgba(239,68,68,.14);border-color:#ef4444;color:#ef4444}
 .qmain{color:var(--text);font-size:2.4rem;font-weight:900;line-height:1.2;margin-bottom:4px;word-break:break-word}
 .qsub{color:var(--text);font-size:1.2rem;font-weight:700;margin-bottom:4px}
 .qflag{margin:2px 0 8px;display:flex;justify-content:center;align-items:center;min-height:60px}
