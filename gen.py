@@ -1360,7 +1360,7 @@ de:{
   ws_duplicate:"\u2713 Schon gefunden!",ws_invalid:"\u2715 Kein g\u00fcltiges Wort",
   ws_lang_label:"Sprache",ws_letters_hint:"Bilde W\u00f6rter aus den Buchstaben der Stadt",
   q_airport_pin:"Wo liegt dieser Flughafen?",click_map:"Tippe auf die Karte",
-  q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?"
+  q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?"
 },
 en:{
   play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
@@ -1418,7 +1418,7 @@ en:{
   ws_duplicate:"\u2713 Already found!",ws_invalid:"\u2715 Not a valid word",
   ws_lang_label:"Language",ws_letters_hint:"Form words from the city's letters",
   q_airport_pin:"Where is this airport?",click_map:"Tap the map",
-  q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193",uk_hl_prompt:"Which building is taller?"
+  q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193",uk_hl_prompt:"Which building is taller?",uk_hl_prompt:"Which building is taller?"
 },
 pl:{
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",menu:"Menu",board:"Ranking",pass:"Paszport",
@@ -2791,7 +2791,7 @@ const MODES=[
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
 const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded"],cost:0},
-  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang"],cost:1000},
+  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_weinregionen","uk_museen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen","uk_wolkenkratzer"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare"],cost:0},
