@@ -5659,7 +5659,8 @@ const WORTSCHMIEDE_DATA=[
     "de":["ICH","CIAO","COACH"],
     "en":["CHIC","COG","COACH"],
     "es":["CHICA","CHICO","CAGO"],
-    "fr":["CHIC"]
+    "fr":["CHIC"],
+    "pl":["CICHA","GACH"]
   }},
   {city:"SEATTLE",validWords:{
     "de":["TEE","TAL","SEE","LEST","AST","TEST","SET","ESEL","LESE","ALT"],
@@ -6211,6 +6212,63 @@ const WORTSCHMIEDE_DATA=[
     "es":["MURAL","PUMA","LUPA","MALA","ALMA"],
     "fr":["MURAL","PALM","MAL","MUR"],
     "pl":["UL","RUM","LUK"]
+  }},
+  /* Phase 209i: 8 bonus cities with full de/en/es/fr/pl */
+  {city:"MELBOURNE",validWords:{
+    "de":["NEU","NUR","RUM","ROBE","OBER","BLUME","LUMEN","NORM"],
+    "en":["MORE","BORE","MOLE","MELON","LEMON","ROBE","ROLE","RULE","LUMBER","RUMBLE","NUMBER"],
+    "es":["MENOR","MOLER","REMO","NOBLE","RUMBO","NUMERO"],
+    "fr":["MER","MURE","ROBE","LUNE","LOUE","NOMBRE"],
+    "pl":["NUMER","MUREN","ROMB"]
+  }},
+  {city:"MANCHESTER",validWords:{
+    "de":["MARSCH","RAST","NEST","HAST","STERN","MAST","MACHT","NACHT","HERAN"],
+    "en":["MARCH","CHARM","SHARE","STARE","MATCH","RANCH","CHEST","CREAM","STEAM","SMEAR","CHANT","TEACHER"],
+    "es":["TREN","CENA","MENTA","MENTE"],
+    "fr":["MARCHE","CHARME","CHER","MANCHE","CRANE","MER","NET"],
+    "pl":["SEN","SER","TERA","CHAN"]
+  }},
+  {city:"MILANO",validWords:{
+    "de":["MAN","ALM","LOMA","AMIN"],
+    "en":["MAN","LAIN","MAIL","NAIL","MAIN","OIL","LOAN","LOIN"],
+    "es":["LONA","MANO","MALO","LIMA","LOMA","LIMO"],
+    "fr":["LION","LOI","MON","MAN","NOM"],
+    "pl":["ONA","LINA","MALI","MILA"]
+  }},
+  {city:"SHANGHAI",validWords:{
+    "de":["HAIN","GANS","SANG","AHN"],
+    "en":["SHIN","HANG","GAIN","SHAG","NIGH","SIGH","SANG","GNASH"],
+    "es":["HAN","SIGAN","ANSIA"],
+    "fr":["SAIN","ANS","GAIN"],
+    "pl":["NAGA","HANG"]
+  }},
+  {city:"HELSINKI",validWords:{
+    "de":["HEIL","KEIL","LINKE","KNIE"],
+    "en":["SKIN","SILK","SINK","LINK","SLINK","HIKE","LIKE","KILN"],
+    "es":["SIN","NIL"],
+    "fr":["SKI","LIS","ILS","LIN","NIL","LIEN"],
+    "pl":["SEN","SILNIK","KIN","LIS","NIL"]
+  }},
+  {city:"PALMA",validWords:{
+    "de":["PALM","ALM","LAMA"],
+    "en":["PALM","LAMP","LAMA","MAP","LAP","PAL"],
+    "es":["PALMA","MAPA","PALA","LAMA","ALMA"],
+    "fr":["MAL","PAL","LAM"],
+    "pl":["PALA","MAPA","LAMA"]
+  }},
+  {city:"ADELAIDE",validWords:{
+    "de":["ADEL","IDEE","EILE","LIED","EDEL","IDEAL"],
+    "en":["IDEAL","AIDED","DALE","LAID","DIAL","AIDE","IDEA","ALEE"],
+    "es":["IDEA","IDEAL","ALDEA"],
+    "fr":["AIDE","IDEAL","IDEE","AILE","LAIDE"],
+    "pl":["DALE","ILE","IDEA"]
+  }},
+  {city:"BRISTOL",validWords:{
+    "de":["ROST","LIST","BIST","ORT","BIS","ROT","LOS"],
+    "en":["BOIL","TOIL","SOIL","RIOT","STIR","BITS","BIT","BISTRO","BROIL","ORBIT"],
+    "es":["SOL","LOS","BISTRO","LIBRO"],
+    "fr":["LIS","BOL","LOT","BIS","TRIO"],
+    "pl":["LIS","LOS","STOL","SIL","BIL"]
   }}
 ];
 
@@ -10439,6 +10497,7 @@ function initWortSchmiede(){
   const entry=WORTSCHMIEDE_DATA[idx];
   if(!entry||!entry.city||!entry.validWords){console.warn('[GeoQuest] WS entry malformed',idx);S.ph='menu';render();return;}
   const words=(entry.validWords[lang]||entry.validWords['de']||entry.validWords['en']||Object.values(entry.validWords)[0]||[]).map(function(w){return w.toUpperCase();});
+  if(!words.length){console.warn('[GeoQuest] WS entry has no words for lang',lang,idx);S.ph='menu';render();return;}
   S.wsData={cityIdx:idx,city:entry.city,lang:lang,allWords:words,foundWords:[],input:"",phase:"playing"};
   S.gameStartTime=Date.now();
   S.ph="playing";
@@ -10471,7 +10530,7 @@ function renderWortSchmiede(sc){
   const found=foundWords.length;
   const pct=total>0?Math.round(found/total*100):0;
   const barCol=pct>=100?"#10b981":pct>=60?"#3b82f6":"#f59e0b";
-  const chips=foundWords.map(function(w){return'<span style="display:inline-flex;align-items:center;background:#10b981;color:#fff;border-radius:20px;padding:4px 12px;font-size:.82rem;font-weight:700;margin:3px 3px 3px 0">'+esc(w)+'</span>';}).join("");
+  const chips=foundWords.map(function(w){return'<span style="display:inline-flex;align-items:center;background:#10b981;color:#fff;border-radius:20px;padding:4px 12px;font-size:.82rem;font-weight:700;margin:3px 3px 3px 0;max-width:100%;overflow-wrap:break-word;word-break:break-word">'+esc(w)+'</span>';}).join("");
   const letters=[...city].map(function(ch){return'<span style="display:inline-flex;align-items:center;justify-content:center;width:2.1rem;height:2.5rem;background:var(--bg3);border:2px solid var(--border);border-radius:8px;font-size:1.3rem;font-weight:900;color:var(--text);margin:0 3px">'+ch+'</span>';}).join("");
   /* P208: all user-facing strings via t() */
   if(phase==="won"){
@@ -10499,7 +10558,7 @@ function renderWortSchmiede(sc){
     '</div>'+
     '<div style="display:flex;gap:8px;margin-bottom:.8rem">'+
       '<input id="ws-input" type="text" dir="ltr" class="slf-input" style="flex:1;direction:ltr;text-align:left;padding-left:10px;text-transform:uppercase;font-weight:700;letter-spacing:1px"'+
-        ' placeholder="'+t("ws_enter_word")+'" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false"'+
+        ' placeholder="'+t("ws_enter_word")+'" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" inputmode="text"'+
         ' value="'+esc(input)+'" oninput="S.wsData.input=this.value.toUpperCase()"'+
         ' onkeydown="if(event.key===\'Enter\'){handleWsCheck();event.preventDefault();}">\n'+
       '<button class="btn-p" style="padding:.55rem 1rem;margin:0;min-width:80px" onclick="handleWsCheck()">\u2714 '+t("ws_check")+'</button>'+

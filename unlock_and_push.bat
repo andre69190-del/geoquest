@@ -6,6 +6,6 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT: Phase 209 final — WortSchmiede 103 cities, Polish (pl) language added to 102/103 cities. All words Counter-validated across de/en/es/fr/pl."
+git commit -m "CHORE/FIX: Post-expansion audit. Fixed JSON syntax/formatting, hardened CSS for long word wrapping, and ensured pristine state resets for Wort-Schmiede levels."
 git push origin main
 pause
