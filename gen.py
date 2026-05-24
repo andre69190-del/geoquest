@@ -127,6 +127,131 @@ HC_CITIES_CH = [
 HCEUJ = json.dumps(HC_CAPITALS_EU, separators=(',',':'), ensure_ascii=False)
 HCCHJ = json.dumps(HC_CITIES_CH, separators=(',',':'), ensure_ascii=False)
 
+# ── Sport & Großevents POI games (18 games) ─────────────────────────────────
+SPORT_POI_GAMES = {
+  "derby_hotspots": {"title":"Derby-Hotspots","icon":"⚽","desc":"Verorte die Städte der hitzigsten Fußball-Stadtderbys der Welt.","poi":[
+    {"name":"Superclásico: Boca Juniors vs. River Plate (Buenos Aires)","lat":-34.6356,"lng":-58.3648,"cc":"ar"},
+    {"name":"Old Firm: Celtic vs. Rangers (Glasgow)","lat":55.8497,"lng":-4.2055,"cc":"gb"},
+    {"name":"Ewiges Derby: Roter Stern vs. Partizan (Belgrad)","lat":44.8016,"lng":20.4651,"cc":"rs"},
+    {"name":"Interkontinentales Derby: Galatasaray vs. Fenerbahçe (Istanbul)","lat":41.0151,"lng":28.9795,"cc":"tr"},
+    {"name":"Derby della Madonnina: Inter vs. AC Milan (Mailand)","lat":45.4781,"lng":9.1240,"cc":"it"}
+  ]},
+  "eishockey_nationen": {"title":"Eishockey-Nationen","icon":"🏒","desc":"Finde die historischen Hochburgen und WM-Austragungsorte des Eishockeys.","poi":[
+    {"name":"Montreal (Heimat der Canadiens & erstes Hallenspiel)","lat":45.5017,"lng":-73.5673,"cc":"ca"},
+    {"name":"Moskau (Historische KHL- & Nationalteam-Zentrale)","lat":55.7558,"lng":37.6173,"cc":"ru"},
+    {"name":"Stockholm (Avicii Arena / Globen)","lat":59.2936,"lng":18.0831,"cc":"se"},
+    {"name":"Helsinki (Nokia Arena / Hartwall Arena)","lat":60.1699,"lng":24.9384,"cc":"fi"},
+    {"name":"Prag (O2 Arena – Rekord-WM-Schauplatz)","lat":50.0835,"lng":14.4341,"cc":"cz"}
+  ]},
+  "f1_historisch": {"title":"F1 Historische Strecken","icon":"🏎","desc":"Finde legendäre, heute verlassene oder radikal umgebaute Formel-1-Rennstrecken.","poi":[
+    {"name":"Nürburgring Nordschleife (Deutschland)","lat":50.3441,"lng":6.9653,"cc":"de"},
+    {"name":"Jacarepaguá Autódromo (Rio de Janeiro, Brasilien)","lat":-22.9754,"lng":-43.3934,"cc":"br"},
+    {"name":"Circuito do Estoril (Portugal)","lat":38.7506,"lng":-9.3942,"cc":"pt"},
+    {"name":"Autodromo Enzo e Dino Ferrari (Imola, Italien)","lat":44.3439,"lng":11.7167,"cc":"it"},
+    {"name":"Kyalami Grand Prix Circuit (Südafrika)","lat":-25.9982,"lng":28.0679,"cc":"za"}
+  ]},
+  "tdf_paesse": {"title":"Tour de France Pässe","icon":"🚴","desc":"Markiere die legendärsten und am meisten gefürchteten Anstiege der Tour de France.","poi":[
+    {"name":"Alpe d'Huez (21 Kehren)","lat":45.0922,"lng":6.0694,"cc":"fr"},
+    {"name":"Mont Ventoux (Der kahle Berg)","lat":44.1736,"lng":5.2789,"cc":"fr"},
+    {"name":"Col du Tourmalet (Pyrenäen-Klassiker)","lat":42.9084,"lng":0.1412,"cc":"fr"},
+    {"name":"Col du Galibier (Dach der Tour)","lat":45.0642,"lng":6.4017,"cc":"fr"}
+  ]},
+  "olympia_winter_historie": {"title":"Olympische Winter-Historie","icon":"⛷","desc":"Finde die traditionsreichen Städte, die jemals Winterspiele ausgetragen haben.","poi":[
+    {"name":"Lillehammer (1994 – Norwegen)","lat":61.1153,"lng":10.4662,"cc":"no"},
+    {"name":"Nagano (1998 – Japan)","lat":36.6485,"lng":138.1942,"cc":"jp"},
+    {"name":"Lake Placid (1932 & 1980 – USA)","lat":44.2795,"lng":-73.9799,"cc":"us"},
+    {"name":"Chamonix (1924 – Erste Winterspiele überhaupt)","lat":45.9227,"lng":6.8685,"cc":"fr"},
+    {"name":"Cortina d'Ampezzo (1956 & 2026 – Italien)","lat":46.5405,"lng":12.1357,"cc":"it"}
+  ]},
+  "wm_gastgeber": {"title":"WM-Gastgeber-Historie","icon":"🌍","desc":"Finde die Austragungsländer historischer Fußball-Weltmeisterschaften.","poi":[
+    {"name":"Uruguay (Erste WM 1930)","lat":-32.5228,"lng":-55.7658,"cc":"uy"},
+    {"name":"England (Mutterland des Fußballs – WM 1966)","lat":52.3555,"lng":-1.1743,"cc":"gb"},
+    {"name":"Südafrika (Erste WM auf afrikanischem Boden 2010)","lat":-30.5595,"lng":22.9375,"cc":"za"},
+    {"name":"Katar (Erste Winter-WM 2022)","lat":25.3548,"lng":51.1839,"cc":"qa"},
+    {"name":"Schweiz (WM 1954)","lat":46.8182,"lng":8.2275,"cc":"ch"}
+  ]},
+  "wm_finalstadien": {"title":"Legendäre WM-Finalstadien","icon":"🏟","desc":"Verorte die exakten Standorte der berühmtesten WM-Endspielstätten der Geschichte.","poi":[
+    {"name":"Estádio do Maracanã (Rio de Janeiro, Brasilien)","lat":-22.9122,"lng":-43.2302,"cc":"br"},
+    {"name":"Estadio Azteca (Mexiko-Stadt, Mexiko)","lat":19.3031,"lng":-99.1506,"cc":"mx"},
+    {"name":"Wembley-Stadion (London, England)","lat":51.5560,"lng":-0.2796,"cc":"gb"},
+    {"name":"Stade de France (Paris/Saint-Denis, Frankreich)","lat":48.9244,"lng":2.3601,"cc":"fr"},
+    {"name":"FNB-Stadion / Soccer City (Johannesburg, Südafrika)","lat":-26.2347,"lng":27.9824,"cc":"za"}
+  ]},
+  "weltmeister_nationen": {"title":"Weltmeister-Nationen","icon":"🏆","desc":"Klicke auf die Länder, die jemals den WM-Titel der Männer gewonnen haben.","poi":[
+    {"name":"Brasilien (5 Titel)","lat":-14.2350,"lng":-51.9253,"cc":"br"},
+    {"name":"Deutschland (4 Titel)","lat":51.1657,"lng":10.4515,"cc":"de"},
+    {"name":"Italien (4 Titel)","lat":41.8719,"lng":12.5674,"cc":"it"},
+    {"name":"Argentinien (3 Titel)","lat":-38.4161,"lng":-63.6167,"cc":"ar"},
+    {"name":"Frankreich (2 Titel)","lat":46.2276,"lng":2.2137,"cc":"fr"}
+  ]},
+  "fussball_legenden": {"title":"Heimat der Fußball-Legenden","icon":"⭐","desc":"Wo wurden die Ikonen des Weltfußballs geboren? Finde ihre Geburtsorte.","poi":[
+    {"name":"Pelé (Geburtsort: Três Corações, Brasilien)","lat":-21.6936,"lng":-45.2531,"cc":"br"},
+    {"name":"Diego Maradona (Geburtsort: Lanús, Argentinien)","lat":-34.7045,"lng":-58.3970,"cc":"ar"},
+    {"name":"Lionel Messi (Geburtsort: Rosario, Argentinien)","lat":-32.9442,"lng":-60.6505,"cc":"ar"},
+    {"name":"Cristiano Ronaldo (Geburtsort: Funchal/Madeira, Portugal)","lat":32.6669,"lng":-16.9241,"cc":"pt"},
+    {"name":"Johan Cruyff (Geburtsort: Amsterdam, Niederlande)","lat":52.3676,"lng":4.9041,"cc":"nl"}
+  ]},
+  "road_to_2026": {"title":"Road to 2026","icon":"🗺","desc":"Finde die weit verstreuten Austragungsorte der Dreiländer-WM 2026.","poi":[
+    {"name":"BC Place Stadium (Vancouver, Kanada)","lat":49.2767,"lng":-123.1120,"cc":"ca"},
+    {"name":"BMO Field (Toronto, Kanada)","lat":43.6328,"lng":-79.4186,"cc":"ca"},
+    {"name":"MetLife Stadium (New York/New Jersey, USA)","lat":40.8128,"lng":-74.0742,"cc":"us"},
+    {"name":"SoFi Stadium (Los Angeles/Inglewood, USA)","lat":33.9535,"lng":-118.3390,"cc":"us"},
+    {"name":"Estadio BBVA (Monterrey, Mexiko)","lat":25.6692,"lng":-100.2445,"cc":"mx"}
+  ]},
+  "frauen_wm_meilensteine": {"title":"Frauen-WM-Meilensteine","icon":"👩","desc":"Verorte die wichtigsten Meilensteine und Gastgeberländer der FIFA Frauen-WM.","poi":[
+    {"name":"China (Erste offizielle Frauen-WM 1991)","lat":35.8617,"lng":104.1954,"cc":"cn"},
+    {"name":"Rose Bowl, Pasadena (USA – Rekord-Finale 1999)","lat":34.1613,"lng":-118.1676,"cc":"us"},
+    {"name":"Frankfurt am Main (Deutschland – WM 2011)","lat":50.1109,"lng":8.6821,"cc":"de"},
+    {"name":"Stadium Australia, Sydney (Australien/Neuseeland-WM 2023)","lat":-33.8472,"lng":151.0634,"cc":"au"}
+  ]},
+  "sommerspiele_metropolen": {"title":"Sommerspiele-Metropolen","icon":"🏅","desc":"Markiere die legendären Austragungsorte der Olympischen Sommerspiele der Neuzeit.","poi":[
+    {"name":"Athen (Erste Spiele der Neuzeit 1896)","lat":37.9838,"lng":23.7275,"cc":"gr"},
+    {"name":"Peking (Erste Stadt mit Sommer- und Winterspielen – 2008)","lat":39.9042,"lng":116.4074,"cc":"cn"},
+    {"name":"Sydney (Spiele im Jahr 2000 – Australien)","lat":-33.8688,"lng":151.2093,"cc":"au"},
+    {"name":"St. Louis (Spiele 1904 – Erste Spiele außerhalb Europas)","lat":38.6270,"lng":-90.1994,"cc":"us"},
+    {"name":"London (Dreifacher Gastgeber: 1908, 1948, 2012)","lat":51.5074,"lng":-0.1278,"cc":"gb"}
+  ]},
+  "winter_exoten_klassiker": {"title":"Winter-Exoten & Klassiker","icon":"🛷","desc":"Finde geschichtsträchtige oder ungewöhnliche Austragungsorte von Winter-Olympia.","poi":[
+    {"name":"Sarajevo (1984 – Damaliges Jugoslawien)","lat":43.8563,"lng":18.4131,"cc":"ba"},
+    {"name":"Sapporo (1972 – Erste Winterspiele in Asien)","lat":43.0618,"lng":141.3545,"cc":"jp"},
+    {"name":"Sotschi (2014 – Subtropischer Austragungsort am Meer)","lat":43.6028,"lng":39.7342,"cc":"ru"},
+    {"name":"Squaw Valley / Olympic Valley (1960 – USA)","lat":39.1963,"lng":-120.2341,"cc":"us"}
+  ]},
+  "olympische_rekorde": {"title":"Olympische Rekordhalter","icon":"🥇","desc":"Finde das Heimatland oder den Geburtsort der erfolgreichsten Olympioniken aller Zeiten.","poi":[
+    {"name":"Michael Phelps (23x Gold – Geburtsort: Baltimore, USA)","lat":39.2904,"lng":-76.6122,"cc":"us"},
+    {"name":"Usain Bolt (Sprint-Legende – Geburtsort: Sherwood Content, Jamaika)","lat":18.4414,"lng":-77.6744,"cc":"jm"},
+    {"name":"Larissa Latynina (18 Medaillen – Geburtsort: Cherson, Ukraine)","lat":46.6354,"lng":32.6169,"cc":"ua"},
+    {"name":"Paavo Nurmi (9x Gold – Geburtsort: Turku, Finnland)","lat":60.4518,"lng":22.2666,"cc":"fi"}
+  ]},
+  "olympia_hoehe": {"title":"Olympia in extremer Höhe","icon":"⛰","desc":"Verorte Olympia-Austragungsorte auf extremen Höhenmetern über dem Meeresspiegel.","poi":[
+    {"name":"Mexiko-Stadt (Sommerspiele 1968 auf 2.240 m Höhe)","lat":19.4326,"lng":-99.1332,"cc":"mx"},
+    {"name":"Salt Lake City (Winterspiele 2002 auf 1.300 m Höhe)","lat":40.7608,"lng":-111.8910,"cc":"us"},
+    {"name":"Albertville (Winterspiele 1992 inmitten der Savoyer Alpen)","lat":45.6755,"lng":6.3927,"cc":"fr"}
+  ]},
+  "boykott_spiele": {"title":"Die Boykott-Spiele","icon":"🚫","desc":"Finde die Schauplätze der politisch am stärksten boykottierten Spiele des Kalten Krieges.","poi":[
+    {"name":"Moskau (Sommerspiele 1980 – Boykott durch den Westen)","lat":55.7558,"lng":37.6173,"cc":"ru"},
+    {"name":"Los Angeles (Sommerspiele 1984 – Gegenboykott des Ostblocks)","lat":34.0522,"lng":-118.2437,"cc":"us"},
+    {"name":"Melbourne (Spiele 1956 – Boykott wegen Sueskrise & Ungarn-Aufstand)","lat":-37.8136,"lng":144.9631,"cc":"au"}
+  ]},
+  "em_gastgeber_historie": {"title":"EM-Gastgeber-Historie","icon":"🇪🇺","desc":"Markiere die Länder, die jemals eine UEFA Fußball-Europameisterschaft ausgetragen haben.","poi":[
+    {"name":"Frankreich (Erste EM 1960)","lat":46.2276,"lng":2.2137,"cc":"fr"},
+    {"name":"Portugal (EM 2004 mit dem Finale in Lissabon)","lat":39.3999,"lng":-8.2245,"cc":"pt"},
+    {"name":"Kiew (Ukraine – Co-Gastgeber der EM 2012)","lat":50.4501,"lng":30.5234,"cc":"ua"},
+    {"name":"Schweden (EM 1992)","lat":60.1282,"lng":18.6435,"cc":"se"},
+    {"name":"Belgien & Niederlande (Erste gemeinsame Doppel-EM 2000)","lat":50.8503,"lng":4.3517,"cc":"be"}
+  ]},
+  "em_finalstadien": {"title":"Finalstadien der EM","icon":"🏟","desc":"Verorte die Spielstätten, in denen europäische Fußball-Geschichte geschrieben wurde.","poi":[
+    {"name":"Olympiastadion Berlin (Finale EM 2024)","lat":52.5147,"lng":13.2394,"cc":"de"},
+    {"name":"Olimpijskyj-Stadion (Kiew, Ukraine – Finale 2012)","lat":50.4332,"lng":30.5219,"cc":"ua"},
+    {"name":"Ernst-Happel-Stadion / Praterstadion (Wien, Österreich – Finale 2008)","lat":48.2074,"lng":16.4211,"cc":"at"},
+    {"name":"Stadio Olimpico (Rom, Italien – Finale 1968 & 1980)","lat":41.9341,"lng":12.4547,"cc":"it"},
+    {"name":"Stadion Crvena Zvezda (Belgrad – Panenka-Elfmeter-Finale 1976)","lat":44.8016,"lng":20.4651,"cc":"rs"}
+  ]}
+}
+import json as _json
+SPORT_POI_J = _json.dumps(SPORT_POI_GAMES, separators=(',',':'), ensure_ascii=False)
+
+
 RIVERS = [
   {"name":"Nil","country":"Egypt","cc":"eg","continent":"Africa","subregion":"Northern Africa"},
   {"name":"Amazonas","country":"Brazil","cc":"br","continent":"South America","subregion":"South America"},
@@ -2472,6 +2597,7 @@ const COUNTRIES=[
 const CAPITALS=PLACEHOLDER_CAPJ;
 const HC_CAPITALS_EU=PLACEHOLDER_HCEU;
 const HC_CITIES_CH=PLACEHOLDER_HCCH;
+const SPORT_POI_GAMES=PLACEHOLDER_SPORTPOI;
 const RIVERS=PLACEHOLDER_RJ;
 const LANDMARKS=PLACEHOLDER_LMJ;
 const NATIONAL_PARKS=PLACEHOLDER_NPJ;
@@ -2606,6 +2732,26 @@ const MODES=[
   {id:"b17",icon:"\u{1F947}",title:"\u{1F9EA} Medaillen-Spiegel",    group:"sport",   prompt:"Welches Land hat mehr Winter-Gold?",                   desc:"Winter-Olympia-Goldmedaillen vergleichen"},
   {id:"b19",icon:"\u274C",   title:"\u{1F9EA} WM-Fehltritte",         group:"sport",   prompt:"Wer war nie bei der WM dabei?",                        desc:"Laender die sich nie qualifiziert haben"},
   {id:"b20",icon:"\u{1F3C6}",title:"\u{1F9EA} Sport-Wappen",          group:"sport",   prompt:"Zu welcher Stadt gehoert dieses Team?",                desc:"Sport-Teams ihrer Heimat zuordnen"},
+  /* Sport & Großevents POI games (Phase 200) */
+  {id:"derby_hotspots",      icon:"⚽", title:"\U0001F9EA Derby-Hotspots",         group:"sport",prompt:"In welchem Land liegt das?",desc:"Verorte die Städte der hitzigsten Fußball-Stadtderbys der Welt."},
+  {id:"eishockey_nationen",  icon:"\U0001F3D2",title:"\U0001F9EA Eishockey-Nationen",   group:"sport",prompt:"In welchem Land liegt das?",desc:"Finde die historischen Hochburgen und WM-Austragungsorte des Eishockeys."},
+  {id:"f1_historisch",       icon:"\U0001F3CE",title:"\U0001F9EA F1 Historische Strecken",group:"sport",prompt:"In welchem Land liegt das?",desc:"Finde legendäre, heute verlassene oder radikal umgebaute Formel-1-Rennstrecken."},
+  {id:"tdf_paesse",          icon:"\U0001F6B4",title:"\U0001F9EA Tour de France Pässe",  group:"sport",prompt:"In welchem Land liegt das?",desc:"Markiere die legendärsten Anstiege der Tour de France."},
+  {id:"olympia_winter_historie",icon:"⛷",title:"\U0001F9EA Olympische Winter-Historie",group:"sport",prompt:"In welchem Land liegt das?",desc:"Finde die traditionsreichen Städte mit Winterspielen."},
+  {id:"wm_gastgeber",        icon:"\U0001F30D",title:"\U0001F9EA WM-Gastgeber-Historie", group:"sport",prompt:"In welchem Land liegt das?",desc:"Finde die Austragungsländer historischer Fußball-Weltmeisterschaften."},
+  {id:"wm_finalstadien",     icon:"\U0001F3DF",title:"\U0001F9EA WM-Finalstadien",       group:"sport",prompt:"In welchem Land liegt das?",desc:"Verorte die berühmtesten WM-Endspielstätten der Geschichte."},
+  {id:"weltmeister_nationen",icon:"\U0001F3C6",title:"\U0001F9EA Weltmeister-Nationen",   group:"sport",prompt:"In welchem Land liegt das?",desc:"Die Länder, die jemals den WM-Titel der Männer gewonnen haben."},
+  {id:"fussball_legenden",   icon:"⭐",  title:"\U0001F9EA Heimat der Fußball-Legenden",group:"sport",prompt:"In welchem Land liegt das?",desc:"Wo wurden die Ikonen des Weltfußballs geboren?"},
+  {id:"road_to_2026",        icon:"\U0001F5FA",title:"\U0001F9EA Road to 2026",           group:"sport",prompt:"In welchem Land liegt das?",desc:"Finde die Austragungsorte der Dreiländer-WM 2026."},
+  {id:"frauen_wm_meilensteine",icon:"\U0001F469",title:"\U0001F9EA Frauen-WM-Meilensteine",group:"sport",prompt:"In welchem Land liegt das?",desc:"Meilensteine und Gastgeberländer der FIFA Frauen-WM."},
+  {id:"sommerspiele_metropolen",icon:"\U0001F3C5",title:"\U0001F9EA Sommerspiele-Metropolen",group:"sport",prompt:"In welchem Land liegt das?",desc:"Legendäre Austragungsorte der Olympischen Sommerspiele."},
+  {id:"winter_exoten_klassiker",icon:"\U0001F6F7",title:"\U0001F9EA Winter-Exoten & Klassiker",group:"sport",prompt:"In welchem Land liegt das?",desc:"Geschichtsträchtige oder ungewöhnliche Austragungsorte von Winter-Olympia."},
+  {id:"olympische_rekorde",  icon:"\U0001F947",title:"\U0001F9EA Olympische Rekordhalter",group:"sport",prompt:"In welchem Land liegt das?",desc:"Heimatland oder Geburtsort der erfolgreichsten Olympioniken aller Zeiten."},
+  {id:"olympia_hoehe",       icon:"⛰",  title:"\U0001F9EA Olympia in extremer Höhe", group:"sport",prompt:"In welchem Land liegt das?",desc:"Olympia-Austragungsorte auf extremen Höhenmetern über dem Meeresspiegel."},
+  {id:"boykott_spiele",      icon:"\U0001F6AB",title:"\U0001F9EA Die Boykott-Spiele",     group:"sport",prompt:"In welchem Land liegt das?",desc:"Die politisch am stärksten boykottierten Spiele des Kalten Krieges."},
+  {id:"em_gastgeber_historie",icon:"\U0001F1EA\U0001F1FA",title:"\U0001F9EA EM-Gastgeber-Historie",group:"sport",prompt:"In welchem Land liegt das?",desc:"Länder, die jemals eine UEFA-EM ausgetragen haben."},
+  {id:"em_finalstadien",     icon:"\U0001F3DF",title:"\U0001F9EA Finalstadien der EM",   group:"sport",prompt:"In welchem Land liegt das?",desc:"Spielstätten, in denen europäische Fußball-Geschichte geschrieben wurde."},
+
   {id:"b21",icon:"\u{1F5FA}",title:"\u{1F9EA} Sandwich-Laender",     group:"neighbors",prompt:"Welches Land ist von diesen umschlossen?",            desc:"Eingeschlossene Laender erkennen"},
   {id:"b22",icon:"\u{1F697}",title:"\u{1F9EA} Transit-Route",         group:"neighbors",prompt:"Welches Land muss man durchqueren?",                  desc:"Pflicht-Transitlaender kennen"},
   {id:"b23",icon:"\u{1F30A}",title:"\u{1F9EA} Kueste oder Inland?",  group:"neighbors",prompt:"Hat dieser Nachbarstaat Meereszugang?",              desc:"Binnenstaaten vs. Kuestenlaender"},
@@ -2636,7 +2782,7 @@ const MODE_CATS={
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60"],cost:0},
-  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20"],cost:0},
+  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20","derby_hotspots","eishockey_nationen","f1_historisch","tdf_paesse","olympia_winter_historie","wm_gastgeber","wm_finalstadien","weltmeister_nationen","fussball_legenden","road_to_2026","frauen_wm_meilensteine","sommerspiele_metropolen","winter_exoten_klassiker","olympische_rekorde","olympia_hoehe","boykott_spiele","em_gastgeber_historie","em_finalstadien"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
@@ -5331,6 +5477,21 @@ function genBetaSpotter(bId){
   return{type:"beta_spotter",prompt:"\u{1F9EA} [BETA] Weltkarte",subj:d.q,ans:d.answer,opts:[],meta:"",lid:"bspot_"+bId,cc:ccFromCountry(d.answer)||"de"};
 }
 
+
+/* ── Sport & Großevents POI generator ─────────────────────────────────────── */
+function genSportPoiQ(gameId){
+  if(typeof SPORT_POI_GAMES==="undefined")return null;
+  const game=SPORT_POI_GAMES[gameId];
+  if(\!game||\!game.poi||\!game.poi.length)return null;
+  const pool=game.poi.filter(p=>p.name\!==S.lid);
+  if(\!pool.length)return null;
+  const cor=pool[~~(rng()*pool.length)];
+  const ccPool=_rfilt(COUNTRIES.filter(x=>x.cc\!==cor.cc),4);
+  const dis=distractors(ccPool,x=>x.sr===((COUNTRIES.find(c=>c.cc===cor.cc)||{}).sr),x=>x.cc===cor.cc,x=>displayCountry(x.cc)||x.c);
+  const corCountry=displayCountry(cor.cc)||((COUNTRIES.find(c=>c.cc===cor.cc)||{}).c)||cor.cc.toUpperCase();
+  return{type:"sport_poi",prompt:"In welchem Land liegt das?",subj:cor.name,ans:corCountry,opts:sh([corCountry,...dis]),meta:cor.lat.toFixed(1)+"°, "+cor.lng.toFixed(1)+"°",lid:cor.name,cc:cor.cc};
+}
+
 const GEN={
   city:genCityQ,flag:genFlagQ,capital:genCapitalQ,river:genRiverQ,
   landmark:genLandmarkQ,park:genParkQ,unesco:genUnescoQ,citymark:genCitymarkQ,
@@ -5397,6 +5558,24 @@ const GEN={
   b21:()=>genBetaMCQ(21),b22:()=>genBetaMCQ(22),b23:()=>genBetaMCQ(23),
   b25:()=>genBetaMCQ(25),b29:()=>genBetaMCQ(29),b37:()=>genBetaHL(37),
   b40:()=>genBetaHL(40),
+  derby_hotspots:()=>genSportPoiQ("derby_hotspots"),
+  eishockey_nationen:()=>genSportPoiQ("eishockey_nationen"),
+  f1_historisch:()=>genSportPoiQ("f1_historisch"),
+  tdf_paesse:()=>genSportPoiQ("tdf_paesse"),
+  olympia_winter_historie:()=>genSportPoiQ("olympia_winter_historie"),
+  wm_gastgeber:()=>genSportPoiQ("wm_gastgeber"),
+  wm_finalstadien:()=>genSportPoiQ("wm_finalstadien"),
+  weltmeister_nationen:()=>genSportPoiQ("weltmeister_nationen"),
+  fussball_legenden:()=>genSportPoiQ("fussball_legenden"),
+  road_to_2026:()=>genSportPoiQ("road_to_2026"),
+  frauen_wm_meilensteine:()=>genSportPoiQ("frauen_wm_meilensteine"),
+  sommerspiele_metropolen:()=>genSportPoiQ("sommerspiele_metropolen"),
+  winter_exoten_klassiker:()=>genSportPoiQ("winter_exoten_klassiker"),
+  olympische_rekorde:()=>genSportPoiQ("olympische_rekorde"),
+  olympia_hoehe:()=>genSportPoiQ("olympia_hoehe"),
+  boykott_spiele:()=>genSportPoiQ("boykott_spiele"),
+  em_gastgeber_historie:()=>genSportPoiQ("em_gastgeber_historie"),
+  em_finalstadien:()=>genSportPoiQ("em_finalstadien"),
   b41:()=>genBetaSpotter(41),b42:()=>genBetaSpotter(42),b44:()=>genBetaMCQ(44),
   b45:()=>genBetaSpotter(45),b46:()=>genBetaSpotter(46),b47:()=>genBetaMCQ(47),
   b51:()=>genBetaSpotter(51),b53:()=>genBetaMCQ(53),b54:()=>genBetaSpotter(54),
@@ -9607,6 +9786,7 @@ JS = (JS
   .replace('PLACEHOLDER_WPJ', WPJ)
   .replace('PLACEHOLDER_HCEU', HCEUJ)
   .replace('PLACEHOLDER_HCCH', HCCHJ)
+  .replace('PLACEHOLDER_SPORTPOI', SPORT_POI_J)
 )
 remaining = __import__('re').findall(r'PLACEHOLDER_\w+', JS)
 if remaining:
