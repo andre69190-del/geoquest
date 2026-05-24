@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Emoji-Mojibake in Spielkarten + Ländername-Spoiler in Sport-POI-Fragen (Phase 201)"
+git commit -m "FEAT: Phase 202 — Alpha-Sprint-Generator, 5 neue Map-Modi (F1/Stadien/Fluesse/UNESCO/Flughaefen), comp_flight+olympics TMP-Fix, CC-Alias-Map fuer 30k Cities"
 echo.
 git push origin main
 echo.

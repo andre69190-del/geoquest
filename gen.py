@@ -2360,6 +2360,17 @@ const CITIES=PLACEHOLDER_CJ;
     window._cityLookupBuilt=true;
     window._ctryMap={};
     COUNTRIES.forEach(function(c){window._ctryMap[c.c]=c;});
+    /* Phase 202: Aliases für Abweichungen zwischen worldCitiesData und COUNTRIES */
+    var _al={'United States':'us','United States of America':'us','USA':'us',
+      'South Korea':'kr','North Korea':'kp','Taiwan':'tw','Hong Kong':'hk','Macau':'mo',
+      'Palestine':'ps','Kosovo':'xk','Ivory Coast':'ci',
+      'DR Congo':'cd','Congo':'cg','Republic of the Congo':'cg',
+      'Czechia':'cz','Moldova':'md','North Macedonia':'mk',
+      'Bosnia and Herzegovina':'ba','United Arab Emirates':'ae',
+      'Democratic Republic of the Congo':'cd'};
+    Object.keys(_al).forEach(function(k){
+      if(!window._ctryMap[k]){var f=COUNTRIES.find(function(c){return c.cc===_al[k];});if(f)window._ctryMap[k]=f;}
+    });
   };
   window.getCitiesByDifficulty=function(difficulty){
     if(typeof worldCitiesData==='undefined')return null;
@@ -2640,10 +2651,10 @@ const MODES=[
   {id:"comp_forest",    icon:"\u{1F333}",title:"Mehr Wald?",                   group:"comparisons",prompt:"Welches Land hat mehr Waldfl\u00e4che?",  desc:"Waldfl\u00e4che vergleichen"},
   /* Phase 129+130 BETA modes */
   {id:"comp_airports",  icon:"\u2708\uFE0F",title:"Mehr Flugh\u00e4fen?",    group:"comparisons",prompt:"Welches Land hat mehr Flugh\u00e4fen?",             desc:"Flughafenanzahl zweier L\u00e4nder vergleichen"},
-  {id:"comp_flight_TMP",    icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",  group:"comparisons",prompt:"L\u00e4ngster m\u00f6glicher Inlandsflug?",          desc:"Fl\u00e4che als Proxy f\u00fcr Inlandsflugdistanz"},
+  {id:"comp_flight",    icon:"\u{1F5FA}",title:"Gr\u00f6\u00dferes Land?",  group:"comparisons",prompt:"L\u00e4ngster m\u00f6glicher Inlandsflug?",          desc:"Fl\u00e4che als Proxy f\u00fcr Inlandsflugdistanz"},
   {id:"comp_mountain",  icon:"\u26F0",  title:"H\u00f6herer Gipfel?",          group:"comparisons",prompt:"Welches Land hat den h\u00f6heren Gipfel?",        desc:"H\u00f6chste Erhebung (erweiterter Datensatz)"},
   {id:"comp_nsextent",  icon:"\u{1F9ED}",title:"L\u00e4nger Nord-S\u00fcd?", group:"comparisons",prompt:"Welches Land erstreckt sich weiter von Nord nach S\u00fcd?",         desc:"Nord-S\u00fcd-Ausdehnung vergleichen"},
-  {id:"comp_olympics_TMP",  icon:"\u{1F3C5}",title:"Mehr Olympia-Gold?",           group:"comparisons",prompt:"Welches Land hat mehr Olympia-Goldmedaillen?",         desc:"Sommerolympiade-Goldmedaillen vergleichen"},
+  {id:"comp_olympics",  icon:"\u{1F3C5}",title:"Mehr Olympia-Gold?",           group:"comparisons",prompt:"Welches Land hat mehr Olympia-Goldmedaillen?",         desc:"Sommerolympiade-Goldmedaillen vergleichen"},
   {id:"iata",           icon:"\u2708\uFE0F",title:"IATA-Code?",               group:"airports",prompt:"Zu welcher Stadt geh\u00f6rt dieser Flughafen-Code?", desc:"IATA-Codes der gro\u00dfen Flugh\u00e4fen kennen"},
   {id:"tz_quiz",  icon:"\u23F0",  title:"Welche Uhrzeit?",               group:"airports",prompt:"Wie sp\u00e4t ist es gerade in dieser Stadt?", desc:"UTC-Offsets und Zeitzonen"},
   {id:"climate_quiz",   icon:"\u{1F321}\uFE0F",title:"Klima-Krimi",          group:"airports",prompt:"Welches Land versteckt sich hinter diesen Klima-Hinweisen?", desc:"Land anhand von Klima-Clues erraten"},
@@ -2679,6 +2690,12 @@ const MODES=[
   {id:"boykott_spiele",      icon:"\U0001F6AB",title:"\U0001F9EA Die Boykott-Spiele",     group:"sport",prompt:"In welchem Land liegt das?",desc:"Die politisch am stärksten boykottierten Spiele des Kalten Krieges."},
   {id:"em_gastgeber_historie",icon:"\U0001F1EA\U0001F1FA",title:"\U0001F9EA EM-Gastgeber-Historie",group:"sport",prompt:"In welchem Land liegt das?",desc:"Länder, die jemals eine UEFA-EM ausgetragen haben."},
   {id:"em_finalstadien",     icon:"\U0001F3DF",title:"\U0001F9EA Finalstadien der EM",   group:"sport",prompt:"In welchem Land liegt das?",desc:"Spielstätten, in denen europäische Fußball-Geschichte geschrieben wurde."},
+  /* Phase 202: Neue Map-Pinning-Modi aus Datenkonstanten */
+  {id:"f1_map",      icon:"\u{1F3CE}",title:"\u{1F9EA} F1 Strecken",        group:"sport",    prompt:"In welchem Land liegt diese Rennstrecke?",   desc:"Verorte alle 30 F1-Rennstrecken weltweit"},
+  {id:"stadium_map", icon:"\u{1F3DF}",title:"\u{1F9EA} Europastadien",      group:"sport",    prompt:"In welchem Land steht dieses Stadion?",       desc:"28 europ\u00e4ische Fu\u00dfball-Tempel pinnen"},
+  {id:"river_map",   icon:"\u{1F30A}",title:"\u{1F9EA} Fl\u00fcsse pinnen",group:"pure_geo", prompt:"In welchem Land entspringt dieser Fluss?",    desc:"Die gr\u00f6\u00dften Fl\u00fcsse der Welt zuordnen"},
+  {id:"unesco_map",  icon:"\u{1F3DB}",title:"\u{1F9EA} UNESCO Karte",       group:"pure_geo", prompt:"In welchem Land liegt dieses Welterbe?",      desc:"63 UNESCO-Welterbest\u00e4tten lokalisieren"},
+  {id:"airport_map", icon:"\u2708",   title:"\u{1F9EA} Flugh\u00e4fen",    group:"airports", prompt:"In welchem Land liegt dieser Flughafen?",     desc:"40 Weltflugh\u00e4fen per IATA-Code zuordnen"},
 
   {id:"b21",icon:"\u{1F5FA}",title:"\u{1F9EA} Sandwich-Laender",     group:"neighbors",prompt:"Welches Land ist von diesen umschlossen?",            desc:"Eingeschlossene Laender erkennen"},
   {id:"b22",icon:"\u{1F697}",title:"\u{1F9EA} Transit-Route",         group:"neighbors",prompt:"Welches Land muss man durchqueren?",                  desc:"Pflicht-Transitlaender kennen"},
@@ -5164,6 +5181,53 @@ function genRcapitalQ(){
   const dis=distractors(pool,x=>x.subregion===cor.subregion||x.continent===cor.continent,x=>x.capital===cor.capital,x=>x.capital);
   return{type:"rcapital",prompt:t("q_rcapital"),subj:displayCountry(cor.cc)||cor.country,ans:cor.capital,opts:sh([cor.capital,...dis]),meta:cor.continent,lid:cor.country,cc:cor.cc};
 }
+
+/* Phase 202: Alphabet-Sprint — ein Land pro Buchstabe A–Z */
+
+/* Phase 202: Generischer Map-Pinning-Generator für JS-Datenkonstanten */
+function genGeoConstQ(data,typeStr,promptTxt){
+  if(!data||!data.length)return null;
+  const pool=_rfilt(data.filter(x=>x.cc&&x.name!==S.lid),3);
+  if(pool.length<1)return null;
+  const cor=pool[~~(rng()*pool.length)];
+  const corCountry=displayCountry(cor.cc)||cor.cc;
+  const disPot=_rfilt(COUNTRIES.filter(x=>x.cc!==cor.cc),4);
+  const dis=distractors(disPot,x=>x.ct===(COUNTRIES.find(c=>c.cc===cor.cc)||{}).ct,x=>x.cc===cor.cc,x=>displayCountry(x.cc)||x.c);
+  const pIdx=cor.name.indexOf('(');
+  const base=pIdx>0?cor.name.slice(0,pIdx).trim():cor.name;
+  const hint=cor.city?' · '+cor.city:cor.length?' · '+cor.length+' km':'';
+  return{type:typeStr,prompt:promptTxt||"In welchem Land liegt das?",subj:base,ans:corCountry,opts:sh([corCountry,...dis]),meta:cor.lat.toFixed(1)+'°, '+cor.lng.toFixed(1)+'°'+hint,lid:cor.name,cc:cor.cc};
+}
+/* Phase 202: Spezifische Wrapper */
+function genF1MapQ(){return genGeoConstQ(typeof F1_TRACKS_DATA!=='undefined'?F1_TRACKS_DATA:[],'f1_map','In welchem Land liegt diese F1-Strecke?');}
+function genStadiumMapQ(){return genGeoConstQ(typeof UEFA_STADIUMS_DATA!=='undefined'?UEFA_STADIUMS_DATA:[],'stadium_map','In welchem Land steht dieses Stadion?');}
+function genRiverMapQ(){return genGeoConstQ(typeof RIVERS_GEO_DATA!=='undefined'?RIVERS_GEO_DATA:[],'river_map','In welchem Land entspringt dieser Fluss?');}
+function genUnescoMapQ(){return genGeoConstQ(typeof UNESCO_GEO_DATA!=='undefined'?UNESCO_GEO_DATA:[],'unesco_map','In welchem Land liegt dieses UNESCO-Welterbe?');}
+function genAirportMapQ(){
+  const data=typeof AIRPORTS_GEO_DATA!=='undefined'?AIRPORTS_GEO_DATA:[];
+  if(!data.length)return null;
+  const pool=_rfilt(data.filter(x=>x.cc&&x.iata!==S.lid),3);
+  if(!pool.length)return null;
+  const cor=pool[~~(rng()*pool.length)];
+  const corCountry=displayCountry(cor.cc)||cor.cc;
+  const disPot=_rfilt(COUNTRIES.filter(x=>x.cc!==cor.cc),4);
+  const dis=distractors(disPot,x=>x.ct===(COUNTRIES.find(c=>c.cc===cor.cc)||{}).ct,x=>x.cc===cor.cc,x=>displayCountry(x.cc)||x.c);
+  return{type:'airport_map',prompt:'In welchem Land liegt dieser Flughafen?',subj:cor.iata+' – '+cor.name,ans:corCountry,opts:sh([corCountry,...dis]),meta:cor.city+' · '+cor.lat.toFixed(1)+'°',lid:cor.iata,cc:cor.cc};
+}
+function genAlphaSprintQ(){
+  const letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const usedLetters=new Set([...S.askedLids].filter(l=>l.startsWith('alpha_')).map(l=>l.slice(6)));
+  const avail=letters.filter(l=>!usedLetters.has(l));
+  if(!avail.length)return null;
+  const letter=avail[~~(rng()*avail.length)];
+  const matching=COUNTRIES.filter(c=>{const n=(displayCountry(c.cc)||c.c).toUpperCase();return n.startsWith(letter);});
+  if(!matching.length)return null;
+  const cor=matching[~~(rng()*matching.length)];
+  const corName=displayCountry(cor.cc)||cor.c;
+  const others=COUNTRIES.filter(c=>{const n=(displayCountry(c.cc)||c.c).toUpperCase();return !n.startsWith(letter);});
+  const dis=distractors(others,x=>x.ct===cor.ct,null,x=>displayCountry(x.cc)||x.c);
+  return{type:"alpha_sprint",prompt:'Land mit "'+letter+'" gesucht – welches?',subj:'🔤 '+letter,ans:corName,opts:sh([corName,...dis]),meta:cor.ct+' · '+cor.sr,lid:'alpha_'+letter,cc:cor.cc};
+}
 function genRcityQ(){
   /* Phase 200: Use 30k worldCitiesData pool when available */
   const worldPool=typeof getCitiesByDifficulty==='function'?getCitiesByDifficulty(S.diff):null;
@@ -5938,6 +6002,7 @@ const GEN={
   /* P139: newly-activated new_modes entries wired to existing generators */
   climate_mystery:genClimateQ,
   flag_fusion:genFlagColorQ,
+  alpha_sprint:genAlphaSprintQ,
   timezone_jumper:genTimezoneQ,
   plate_compare:genPlateCompareQ,
   stadium:()=>genFootballQ("stadium"),
@@ -5972,7 +6037,12 @@ const GEN={
   b41:()=>genBetaSpotter(41),b42:()=>genBetaSpotter(42),b44:()=>genBetaMCQ(44),
   b45:()=>genBetaSpotter(45),b46:()=>genBetaSpotter(46),b47:()=>genBetaMCQ(47),
   b51:()=>genBetaSpotter(51),b53:()=>genBetaMCQ(53),b54:()=>genBetaSpotter(54),
-  b58:()=>genBetaSpotter(58),b60:()=>genBetaMCQ(60),
+  b58:()=>genBetaSpotter(58),b60:()=>genBetaMCQ(60),,
+  f1_map:genF1MapQ,
+  stadium_map:genStadiumMapQ,
+  river_map:genRiverMapQ,
+  unesco_map:genUnescoMapQ,
+  airport_map:genAirportMapQ,
 };
 
 /* GAME LOOP */
