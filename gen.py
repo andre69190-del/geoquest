@@ -1359,7 +1359,8 @@ de:{
   ws_all_found:"Alle W\u00f6rter gefunden!",ws_next_city:"N\u00e4chste Stadt",
   ws_duplicate:"\u2713 Schon gefunden!",ws_invalid:"\u2715 Kein g\u00fcltiges Wort",
   ws_lang_label:"Sprache",ws_letters_hint:"Bilde W\u00f6rter aus den Buchstaben der Stadt",
-  q_airport_pin:"Wo liegt dieser Flughafen?",click_map:"Tippe auf die Karte"
+  q_airport_pin:"Wo liegt dieser Flughafen?",click_map:"Tippe auf die Karte",
+  q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193"
 },
 en:{
   play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
@@ -1416,7 +1417,8 @@ en:{
   ws_all_found:"All words found!",ws_next_city:"Next City",
   ws_duplicate:"\u2713 Already found!",ws_invalid:"\u2715 Not a valid word",
   ws_lang_label:"Language",ws_letters_hint:"Form words from the city's letters",
-  q_airport_pin:"Where is this airport?",click_map:"Tap the map"
+  q_airport_pin:"Where is this airport?",click_map:"Tap the map",
+  q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193"
 },
 pl:{
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",menu:"Menu",board:"Ranking",pass:"Paszport",
@@ -2752,7 +2754,38 @@ const MODES=[
   {id:"b53",icon:"\u{1F6A2}",title:"\u{1F9EA} Meerengen & Kanaele",  group:"map_mode",prompt:"In welchem Land liegt dieser Kanal?",                   desc:"Wichtige Wasserstrassen kennen"},
   {id:"b54",icon:"\u{1F3D4}",title:"\u{1F9EA} Gipfel-Spotter",        group:"map_mode",prompt:"Klicke auf das Land mit dem hoechsten Berg",             desc:"Berge ihren Laendern zuordnen"},
   {id:"b58",icon:"\u{1F30A}",title:"\u{1F9EA} See-Spotter",            group:"map_mode",prompt:"Klicke auf das Land am grossen See",                    desc:"Grosse Seen auf der Karte finden"},
-  {id:"b60",icon:"\u{1F303}",title:"\u{1F9EA} Nacht-Satellit",         group:"map_mode",prompt:"Welche Region leuchtet nachts am hellsten?",             desc:"Lichtintensitaet auf Satellitenkarten"}
+  /* Phase 211: 27 Kultur & Lifestyle Universal-Engine Modi */
+  /* === MATCH ENGINE: Land erraten (19 Modi) === */
+  {id:"uk_getraenke",  icon:"\u{1F37A}",title:"Getr\u00e4nke & Herkunft",group:"kultur",prompt:"Aus welchem Land stammt dieses Getr\u00e4nk?",desc:"Mate, Sake, Guinness und Co. – woher kommen sie?"},
+  {id:"uk_streetfood", icon:"\u{1F32E}",title:"Streetfood-Klassiker",     group:"kultur",prompt:"In welchem Land isst man das?",desc:"Takoyaki, Currywurst, Arepas und mehr"},
+  {id:"uk_kaese",      icon:"\u{1F9C0}",title:"K\u00e4se & Herk.",       group:"kultur",prompt:"Woher kommt dieser K\u00e4se?",desc:"Feta, Gouda, Manchego und weitere Klassiker"},
+  {id:"uk_suessspeisen",icon:"\u{1F36E}",title:"S\u00fc\u00dfes aus aller Welt",group:"kultur",prompt:"Aus welchem Land stammt diese S\u00fc\u00dfspeise?",desc:"Baklava, Churros, Tiramisu"},
+  {id:"uk_kaffee",     icon:"\u{2615}",title:"Kaffee-Kulturen",           group:"kultur",prompt:"Aus welchem Land kommt diese Kaffeekultur?",desc:"Flat White, T\u00fcrkischer Mokka, Espresso"},
+  {id:"uk_taenze",     icon:"\u{1F483}",title:"T\u00e4nze & Herkunft",   group:"kultur",prompt:"In welchem Land hat dieser Tanz seinen Ursprung?",desc:"Tango, Flamenco, Sirtaki"},
+  {id:"uk_kleidung",   icon:"\u{1F458}",title:"Trachten & Kleidung",      group:"kultur",prompt:"Aus welchem Land kommt diese Kleidung?",desc:"Sari, Kimono, Kilt, Lederhosen"},
+  {id:"uk_instrumente",icon:"\u{1F3B8}",title:"Musikinstrumente",         group:"kultur",prompt:"Aus welchem Land stammt dieses Instrument?",desc:"Sitar, Balalaika, Didgeridoo"},
+  {id:"uk_literatur",  icon:"\u{1F4DA}",title:"Ber\u00fchmte Autoren",   group:"kultur",prompt:"Aus welchem Land kommt dieser Autor?",desc:"Grimm, Andersen, Twain, Garc\u00eda M\u00e1rquez"},
+  {id:"uk_wahrzeichen",icon:"\u{1F5FD}",title:"Weltliche Wahrzeichen",    group:"kultur",prompt:"In welchem Land steht dieses Wahrzeichen?",desc:"Taj Mahal, Colosseum, Machu Picchu"},
+  {id:"uk_feste",      icon:"\u{1F389}",title:"Weltber\u00fchmte Feste", group:"kultur",prompt:"In welchem Land feiert man das?",desc:"Oktoberfest, Diwali, La Tomatina"},
+  {id:"uk_begruessung",icon:"\u{1F44B}",title:"Begr\u00fc\u00dfungsrituale",group:"kultur",prompt:"In welchem Land begr\u00fc\u00dft man sich so?",desc:"Ojigi, Namaste, Hongi, La Bise"},
+  {id:"uk_feiertage",  icon:"\u{1F386}",title:"Nationale Feiertage",      group:"kultur",prompt:"Zu welchem Land geh\u00f6rt dieser Feiertag?",desc:"14. Juli, 4. Juli, Cinco de Mayo"},
+  {id:"uk_erfindungen",icon:"\u{1F4A1}",title:"Gro\u00dfe Erfindungen",  group:"kultur",prompt:"In welchem Land wurde das erfunden?",desc:"Papier, Buchdruck, Dynamit, Penicillin"},
+  {id:"uk_exporte",    icon:"\u{1F69A}",title:"Ber\u00fchmte Exporte",   group:"kultur",prompt:"Aus welchem Land kommt dieses Exportprodukt?",desc:"Ahornsirup, Safran, Olivenöl"},
+  {id:"uk_blumen",     icon:"\u{1F338}",title:"Nationalblumen",           group:"kultur",prompt:"In welchem Land ist diese Blume ein Symbol?",desc:"Kirschblüte, Tulpe, Lotus, Distel"},
+  {id:"uk_entdecker",  icon:"\u{1F9ED}",title:"Ber\u00fchmte Entdecker", group:"kultur",prompt:"Aus welchem Land stammte dieser Entdecker?",desc:"Marco Polo, James Cook, Amundsen"},
+  {id:"uk_sport",      icon:"\u{1F3C6}",title:"Nationalsportarten",       group:"kultur",prompt:"In welchem Land hat dieser Sport seinen Ursprung?",desc:"Sumo, Tejo, Cricket, Muay Thai"},
+  {id:"uk_brettspiele",icon:"\u{265F}",title:"Brettspiel-Urspr\u00fcnge",group:"kultur",prompt:"In welchem Land wurde dieses Spiel erfunden?",desc:"Schach, Mahjong, Go, Backgammon"},
+  /* === PIN ENGINE: Auf Karte pinnen (7 Modi) === */
+  {id:"uk_weinregionen",icon:"\u{1F377}",title:"Weinregionen pinnen",     group:"kultur",prompt:"\u{1F4CD} Pinne diese Weinregion:",desc:"Bordeaux, Mendoza, Napa Valley und mehr"},
+  {id:"uk_museen",     icon:"\u{1F3DB}",title:"Ber\u00fchmte Museen",    group:"kultur",prompt:"\u{1F4CD} Wo liegt dieses Museum?",desc:"Louvre, Prado, Eremitage, MoMA"},
+  {id:"uk_kunstwerke", icon:"\u{1F5BC}",title:"Kunstwerke \u2192 Ort",   group:"kultur",prompt:"\u{1F4CD} Wo befindet sich dieses Kunstwerk?",desc:"Mona Lisa, Sternennacht, Nachtwache"},
+  {id:"uk_filmsets",   icon:"\u{1F3AC}",title:"Ber\u00fchmte Filmsets",  group:"kultur",prompt:"\u{1F4CD} Wo wurde dieser Film gedreht?",desc:"Hobbiton, King's Landing, Tatooine"},
+  {id:"uk_ruinen",     icon:"\u{1F3DB}",title:"Historische Ruinen",       group:"kultur",prompt:"\u{1F4CD} Pinne diese historische Ruine:",desc:"Chichén Itzá, Petra, Angkor Wat"},
+  {id:"uk_bruecken",   icon:"\u{1F309}",title:"Ber\u00fchmte Br\u00fccken",group:"kultur",prompt:"\u{1F4CD} Wo liegt diese Br\u00fccke?",desc:"Golden Gate, Tower Bridge, Sydney Harbour"},
+  {id:"uk_kirchen",    icon:"\u{26EA}",title:"Sakralbauten der Welt",     group:"kultur",prompt:"\u{1F4CD} Wo steht dieses Gotteshaus?",desc:"Hagia Sophia, Sagrada Familia, Felsendom"},
+  /* === H/L ENGINE: H\u00f6her/Niedriger (1 Modus) === */
+  {id:"uk_wolkenkratzer",icon:"\u{1F3D9}",title:"Wolkenkratzer-Duell",   group:"kultur",prompt:"Welches Geb\u00e4ude ist h\u00f6her?",desc:"Burj Khalifa, Shanghai Tower und Co. nach H\u00f6he vergleichen"},
+    {id:"b60",icon:"\u{1F303}",title:"\u{1F9EA} Nacht-Satellit",         group:"map_mode",prompt:"Welche Region leuchtet nachts am hellsten?",             desc:"Lichtintensitaet auf Satellitenkarten"}
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
@@ -7335,6 +7368,81 @@ function genSprachenKompassQ(){
     ans:ans,meta:cor.lang,lid:cor.word,cc:''};
 }
 
+/* Phase 211: Kultur & Lifestyle universal data matrix */
+const KULTUR_DATA={
+  getraenke:[{n:"Mate",c:"Argentinien"},{n:"Pisco Sour",c:"Peru"},{n:"Guinness",c:"Irland"},{n:"Sake",c:"Japan"},{n:"Tequila",c:"Mexiko"}],
+  streetfood:[{n:"Takoyaki",c:"Japan"},{n:"Currywurst",c:"Deutschland"},{n:"Arepas",c:"Kolumbien"},{n:"Poutine",c:"Kanada"},{n:"Banh Mi",c:"Vietnam"}],
+  kaese:[{n:"Feta",c:"Griechenland"},{n:"Gouda",c:"Niederlande"},{n:"Manchego",c:"Spanien"},{n:"Roquefort",c:"Frankreich"},{n:"Parmigiano",c:"Italien"}],
+  suessspeisen:[{n:"Baklava",c:"Türkei"},{n:"Churros",c:"Spanien"},{n:"Pasteis de Nata",c:"Portugal"},{n:"Tiramisu",c:"Italien"},{n:"Macarons",c:"Frankreich"}],
+  kaffee:[{n:"Flat White",c:"Australien"},{n:"Türkischer Mokka",c:"Türkei"},{n:"Cafe de Olla",c:"Mexiko"},{n:"Espresso",c:"Italien"},{n:"Cafe Touba",c:"Senegal"}],
+  taenze:[{n:"Tango",c:"Argentinien"},{n:"Hula",c:"USA"},{n:"Flamenco",c:"Spanien"},{n:"Capoeira",c:"Brasilien"},{n:"Sirtaki",c:"Griechenland"}],
+  kleidung:[{n:"Sari",c:"Indien"},{n:"Kilt",c:"Großbritannien"},{n:"Kimono",c:"Japan"},{n:"Lederhosen",c:"Deutschland"},{n:"Poncho",c:"Peru"}],
+  instrumente:[{n:"Sitar",c:"Indien"},{n:"Balalaika",c:"Russland"},{n:"Didgeridoo",c:"Australien"},{n:"Dudelsack",c:"Großbritannien"},{n:"Marimba",c:"Guatemala"}],
+  literatur:[{n:"Brüder Grimm",c:"Deutschland"},{n:"Astrid Lindgren",c:"Schweden"},{n:"H.C. Andersen",c:"Dänemark"},{n:"Mark Twain",c:"USA"},{n:"Gabriel García Márquez",c:"Kolumbien"}],
+  wahrzeichen:[{n:"Taj Mahal",c:"Indien"},{n:"Colosseum",c:"Italien"},{n:"Machu Picchu",c:"Peru"},{n:"Petra",c:"Jordanien"},{n:"Christo Redentor",c:"Brasilien"}],
+  feste:[{n:"Oktoberfest",c:"Deutschland"},{n:"Diwali",c:"Indien"},{n:"La Tomatina",c:"Spanien"},{n:"Dia de los Muertos",c:"Mexiko"},{n:"Karneval",c:"Brasilien"}],
+  begruessung:[{n:"Ojigi (Verbeugung)",c:"Japan"},{n:"Namaste",c:"Indien"},{n:"Hongi",c:"Neuseeland"},{n:"Wai",c:"Thailand"},{n:"La Bise",c:"Frankreich"}],
+  feiertage:[{n:"14. Juli (Bastille)",c:"Frankreich"},{n:"4. Juli",c:"USA"},{n:"3. Oktober",c:"Deutschland"},{n:"17. Mai",c:"Norwegen"},{n:"Cinco de Mayo",c:"Mexiko"}],
+  erfindungen:[{n:"Papier",c:"China"},{n:"Buchdruck",c:"Deutschland"},{n:"Kompass",c:"China"},{n:"Dynamit",c:"Schweden"},{n:"Penicillin",c:"Großbritannien"}],
+  exporte:[{n:"Kaffee",c:"Brasilien"},{n:"Ahornsirup",c:"Kanada"},{n:"Safran",c:"Iran"},{n:"Olivenöl",c:"Spanien"},{n:"Mikrochips",c:"Taiwan"}],
+  blumen:[{n:"Kirschblüte",c:"Japan"},{n:"Tulpe",c:"Niederlande"},{n:"Lotus",c:"Indien"},{n:"Distel",c:"Großbritannien"},{n:"Hibiskus",c:"Malaysia"}],
+  entdecker:[{n:"Marco Polo",c:"Italien"},{n:"James Cook",c:"Großbritannien"},{n:"Roald Amundsen",c:"Norwegen"},{n:"Vasco da Gama",c:"Portugal"},{n:"Ferdinand Magellan",c:"Portugal"}],
+  sport:[{n:"Sumo",c:"Japan"},{n:"Tejo",c:"Kolumbien"},{n:"Cricket",c:"Indien"},{n:"Eishockey",c:"Kanada"},{n:"Muay Thai",c:"Thailand"}],
+  brettspiele:[{n:"Schach",c:"Indien"},{n:"Mahjong",c:"China"},{n:"Go",c:"China"},{n:"Backgammon",c:"Iran"},{n:"Mancala",c:"Äthiopien"}],
+  wein_regionen:[{n:"Bordeaux (FR)",lat:44.8,lng:-0.5},{n:"Mendoza (AR)",lat:-32.8,lng:-68.8},{n:"Barossa Valley (AU)",lat:-34.5,lng:138.9},{n:"Napa Valley (USA)",lat:38.5,lng:-122.3},{n:"Chianti (IT)",lat:43.4,lng:11.3}],
+  museen:[{n:"Louvre",lat:48.86,lng:2.33},{n:"Prado",lat:40.41,lng:-3.69},{n:"Eremitage",lat:59.93,lng:30.31},{n:"MoMA",lat:40.76,lng:-73.97},{n:"Rijksmuseum",lat:52.36,lng:4.88}],
+  kunstwerke:[{n:"Mona Lisa (Louvre)",lat:48.86,lng:2.33},{n:"Sternennacht (MoMA)",lat:40.76,lng:-73.97},{n:"Nachtwache (Rijksmuseum)",lat:52.36,lng:4.88},{n:"Guernica (Reina Sofía)",lat:40.40,lng:-3.69},{n:"Küssender Matrose (USA)",lat:40.75,lng:-73.98}],
+  filmsets:[{n:"Hobbiton (Neuseeland)",lat:-37.8,lng:175.7},{n:"King's Landing (Kroatien)",lat:42.6,lng:18.1},{n:"Tatooine (Tunesien)",lat:32.9,lng:10.4},{n:"Hogwarts-Viadukt (Schottland)",lat:56.87,lng:-5.43},{n:"Jurassic Park (Hawaii)",lat:22.2,lng:-159.5}],
+  ruinen:[{n:"Chichén Itzá",lat:20.68,lng:-88.56},{n:"Petra",lat:30.32,lng:35.44},{n:"Angkor Wat",lat:13.41,lng:103.86},{n:"Pompeji",lat:40.74,lng:14.48},{n:"Teotihuacán",lat:19.69,lng:-98.84}],
+  bruecken:[{n:"Golden Gate Bridge",lat:37.81,lng:-122.47},{n:"Tower Bridge",lat:51.50,lng:-0.07},{n:"Sydney Harbour Bridge",lat:-33.85,lng:151.21},{n:"Brooklyn Bridge",lat:40.70,lng:-73.99},{n:"Rialto-Brücke",lat:45.43,lng:12.33}],
+  gotteshaeuser:[{n:"Hagia Sophia",lat:41.00,lng:28.98},{n:"Kölner Dom",lat:50.94,lng:6.95},{n:"Meiji-Schrein",lat:35.67,lng:139.69},{n:"Sagrada Familia",lat:41.40,lng:2.17},{n:"Felsendom",lat:31.77,lng:35.23}],
+  wolkenkratzer:[{name:"Burj Khalifa (VAE)",val:828},{name:"Merdeka 118 (Malaysia)",val:678},{name:"Shanghai Tower (China)",val:632},{name:"Abraj Al Bait (SA)",val:601},{name:"One World Trade Center (USA)",val:541},{name:"Taipei 101 (Taiwan)",val:508},{name:"Empire State Building (USA)",val:381}]
+};
+
+/* Phase 211: Universal Match generator — "From which country does X come?" */
+function genUniversalMatchQ(cat){
+  const data=KULTUR_DATA[cat];
+  if(!data||!data.length)return null;
+  const item=data[~~(rng()*data.length)];
+  const cor=item.c;
+  /* Build distractor pool: all unique countries across ALL match categories */
+  const _matchCats=["getraenke","streetfood","kaese","suessspeisen","kaffee","taenze","kleidung",
+    "instrumente","literatur","wahrzeichen","feste","begruessung","feiertage","erfindungen",
+    "exporte","blumen","entdecker","sport","brettspiele"];
+  const allC=[...new Set(_matchCats.flatMap(k=>(KULTUR_DATA[k]||[]).map(d=>d.c)).filter(c=>c!==cor))];
+  const wrong=sh(allC).slice(0,3);
+  if(wrong.length<3)return null;
+  const opts=sh([cor,...wrong]);
+  const modeObj=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat)||{};
+  return{type:"uk_match",cat,prompt:modeObj.prompt||t("q_uk_match"),subj:item.n,ans:cor,opts,lid:"ukm_"+cat+"_"+item.n.replace(/\s+/g,"_"),cc:null};
+}
+
+/* Phase 211: Universal Pin generator — coordinate click on D3 map */
+function genUniversalPinQ(cat){
+  const data=KULTUR_DATA[cat];
+  if(!data||!data.length)return null;
+  const item=data[~~(rng()*data.length)];
+  const modeObj=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat.replace(/_/g,""))||
+    (typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat)||{};
+  return{type:"uk_pin",cat,prompt:modeObj.prompt||t("q_uk_pin"),subj:item.n,
+    targetLat:item.lat,targetLng:item.lng,ans:item.n,
+    lid:"ukp_"+cat+"_"+item.n.replace(/\s+/g,"_"),cc:null};
+}
+
+/* Phase 211: Universal H/L generator — skyscraper height duel */
+function genUniversalHLQ(){
+  const data=KULTUR_DATA.wolkenkratzer;
+  if(!data||data.length<2)return null;
+  const idxA=~~(rng()*data.length);
+  let idxB=~~(rng()*(data.length-1));
+  if(idxB>=idxA)idxB++;
+  const a=data[idxA],b=data[idxB];
+  const ans=b.val>a.val?"higher":"lower";
+  return{type:"uk_hl",prompt:t("uk_hl_prompt")||"Welches Geb\u00e4ude ist h\u00f6her?",
+    nameA:a.name,valA:a.val+" m",nameB:b.name,valB:b.val+" m",
+    ans,opts:["higher","lower"],lid:"ukh_"+idxA+"_"+idxB,cc:null};
+}
+
 const GEN={
   city:genCityQ,flag:genFlagQ,capital:genCapitalQ,river:genRiverQ,
   landmark:genLandmarkQ,park:genParkQ,unesco:genUnescoQ,citymark:genCitymarkQ,
@@ -7451,6 +7559,34 @@ const GEN={
   insel_festland:genInselFestlandQ,
   sprachen_kompass:genSprachenKompassQ,
   airport_map:genAirportMapQ,
+  /* Phase 211: 27 Universal Engines */
+  uk_getraenke:()=>genUniversalMatchQ("getraenke"),
+  uk_streetfood:()=>genUniversalMatchQ("streetfood"),
+  uk_kaese:()=>genUniversalMatchQ("kaese"),
+  uk_suessspeisen:()=>genUniversalMatchQ("suessspeisen"),
+  uk_kaffee:()=>genUniversalMatchQ("kaffee"),
+  uk_taenze:()=>genUniversalMatchQ("taenze"),
+  uk_kleidung:()=>genUniversalMatchQ("kleidung"),
+  uk_instrumente:()=>genUniversalMatchQ("instrumente"),
+  uk_literatur:()=>genUniversalMatchQ("literatur"),
+  uk_wahrzeichen:()=>genUniversalMatchQ("wahrzeichen"),
+  uk_feste:()=>genUniversalMatchQ("feste"),
+  uk_begruessung:()=>genUniversalMatchQ("begruessung"),
+  uk_feiertage:()=>genUniversalMatchQ("feiertage"),
+  uk_erfindungen:()=>genUniversalMatchQ("erfindungen"),
+  uk_exporte:()=>genUniversalMatchQ("exporte"),
+  uk_blumen:()=>genUniversalMatchQ("blumen"),
+  uk_entdecker:()=>genUniversalMatchQ("entdecker"),
+  uk_sport:()=>genUniversalMatchQ("sport"),
+  uk_brettspiele:()=>genUniversalMatchQ("brettspiele"),
+  uk_weinregionen:()=>genUniversalPinQ("wein_regionen"),
+  uk_museen:()=>genUniversalPinQ("museen"),
+  uk_kunstwerke:()=>genUniversalPinQ("kunstwerke"),
+  uk_filmsets:()=>genUniversalPinQ("filmsets"),
+  uk_ruinen:()=>genUniversalPinQ("ruinen"),
+  uk_bruecken:()=>genUniversalPinQ("bruecken"),
+  uk_kirchen:()=>genUniversalPinQ("gotteshaeuser"),
+  uk_wolkenkratzer:genUniversalHLQ,
 };
 
 /* GAME LOOP */
@@ -8144,7 +8280,7 @@ function haversineKm(lat1,lon1,lat2,lon2){
 
 function answerAirportPin(clickedLat,clickedLng,tok){
   if(tok!==_secretGameToken)return;
-  if(!S||!S.q||S.q.type!=="airport_pin")return;
+  if(!S||!S.q||(S.q.type!=="airport_pin"&&S.q.type!=="uk_pin"))return;
   if(S.sel!==null)return;
   const dist=haversineKm(clickedLat,clickedLng,S.q.targetLat,S.q.targetLng);
   /* Score: 500 at 0km, 0 at >=2500km — linear */
@@ -8937,7 +9073,10 @@ if(mode==="slf"&&S.ph==="playing"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="food-emoji">${q.emoji||"\u{1F37D}"}</div><div class="qmain">${q.subj}</div>`;
   }else if(q.type==="brand"){
     qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;color:#94a3b8;font-size:.68rem;margin:2px 0 4px">${q.industry||""}</div><div class="qmain" style="font-size:2.2rem">${q.subj}</div>`;
-  }else if(q.type==="currency"){
+  }else if(q.type==="uk_match"){
+    const _ukIcon={"getraenke":"\u{1F37A}","streetfood":"\u{1F32E}","kaese":"\u{1F9C0}","suessspeisen":"\u{1F36E}","kaffee":"\u2615","taenze":"\u{1F483}","kleidung":"\u{1F458}","instrumente":"\u{1F3B8}","literatur":"\u{1F4DA}","wahrzeichen":"\u{1F5FD}","feste":"\u{1F389}","begruessung":"\u{1F44B}","feiertage":"\u{1F386}","erfindungen":"\u{1F4A1}","exporte":"\u{1F69A}","blumen":"\u{1F338}","entdecker":"\u{1F9ED}","sport":"\u{1F3C6}","brettspiele":"\u265F"}[q.cat]||"\u{1F30D}";
+    qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;font-size:1.8rem;margin:6px 0 2px">${_ukIcon}</div><div class="qmain" style="font-size:1.6rem">${esc(q.subj)}</div>`;
+}else if(q.type==="currency"){
     qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;margin:6px 0 2px"><span class="currency-symbol">${q.symbol||""}</span></div><div class="qmain">${q.subj}</div>`;
   }else if(q.type==="de_plate"||q.type==="plate_casual"||q.type==="plate_hard"){
     qBody=`<div class="qprompt">${q.prompt}</div>
@@ -8945,15 +9084,15 @@ if(mode==="slf"&&S.ph==="playing"){
         <div class="plate-badge">${q.subj}</div>
         ${q.type==="plate_casual"&&q.meta&&sel\!==null?`<div style="color:var(--text3);font-size:.75rem;margin-top:6px">${q.meta}</div>`:""}
       </div>`;
-  }else if(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"){
+  }else if(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"||q.type==="uk_hl"){
     /* Higher/Lower card + dedicated answer buttons (clean "higher"/"lower" keys) */
     const revB=sel\!==null;
-    const hlIcon=q.type==="hl_pop"?"\u{1F465}":q.type==="hl_river"?"\u{1F4A7}":"\u{1F5FA}";
+    const hlIcon=q.type==="hl_pop"?"\u{1F465}":q.type==="hl_river"?"\u{1F4A7}":q.type==="uk_hl"?"\u{1F3D9}":"\u{1F5FA}";
     const hlFbH=sel===null?"":ok&&q.ans==="higher"?"ok":"ng";
     const hlFbL=sel===null?"":ok&&q.ans==="lower"?"ok":"ng";
     const hlDis=sel\!==null?"disabled":"";
-    const hlBtnH=q.type==="hl_pop"?t("hl_more"):q.type==="hl_river"?t("hl_longer"):t("hl_bigger");
-    const hlBtnL=q.type==="hl_pop"?t("hl_less"):q.type==="hl_river"?t("hl_shorter"):t("hl_smaller");
+    const hlBtnH=q.type==="hl_pop"?t("hl_more"):q.type==="hl_river"?t("hl_longer"):q.type==="uk_hl"?t("uk_hl_higher"):t("hl_bigger");
+    const hlBtnL=q.type==="hl_pop"?t("hl_less"):q.type==="hl_river"?t("hl_shorter"):q.type==="uk_hl"?t("uk_hl_lower"):t("hl_smaller");
     qBody=`<div class="qprompt">${hlIcon} ${q.prompt}</div>
       <div class="hl-wrap">
         <div class="hl-card hl-known">
@@ -9204,7 +9343,7 @@ if(mode==="slf"&&S.ph==="playing"){
       </div>`;
       app.innerHTML=pcHtml;return;
     }
-    if(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"){
+    if(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"||q.type==="uk_hl"){
       answerHtml="";
     }else{
       if(q.type==="stadium"){
@@ -9229,7 +9368,7 @@ if(mode==="slf"&&S.ph==="playing"){
   const pu=loadPU();
   /* P136-fix: 50/50 disabled for comp_ modes -- pre-declared vars, no nested escaping */
   /* Phase 207: dynamic — disabled for ANY question with <=2 options, regardless of mode */
-  const _is2ans=S.q&&(S.q.opts&&S.q.opts.length<=2||!!(S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_')||S.q.type==='beta_hl')));
+  const _is2ans=S.q&&(S.q.opts&&S.q.opts.length<=2||!!(S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_')||S.q.type==='beta_hl'||S.q.type==='airport_pin'||S.q.type==='uk_pin')));
   const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
   const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
   const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';
@@ -12520,4 +12659,4 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print('Also written -> index.html (Netlify deploy target)')
- 
+ 
