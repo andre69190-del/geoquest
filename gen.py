@@ -2647,14 +2647,14 @@ const MODES=[
   {id:"map_capital",icon:"📍",title:"Hauptstadt-Radar",   group:"map_mode",prompt:"Tippe auf das Land der Hauptstadt",  desc:"Kenne die Hauptstädte",time:25},
   {id:"map_ivr",icon:"\u{1F697}\u{1F194}",title:"Kennzeichen-Knacker",group:"eu_plates",prompt:"IVR-Quiz",desc:"Finde das internationale L\u00e4nderkennzeichen",time:20},
   /* ---- New Game Modes (coming soon) ---- */
-  {id:"logic_grid",    icon:"\u{1F9E9}",title:"Logik-Gitter",          group:"new_modes",prompt:"L\u00f6se das R\u00e4tsel",                desc:"L\u00f6se geografische Logik-R\u00e4tsel"},
-  {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten"},
+  {id:"logic_grid",    icon:"\u{1F9E9}",title:"Logik-Gitter",          group:"new_modes",comingSoon:true,prompt:"L\u00f6se das R\u00e4tsel",                desc:"L\u00f6se geografische Logik-R\u00e4tsel"},
+  {id:"travel_route",  icon:"\u{1F5FA}",title:"Reiseroute",            group:"new_modes",comingSoon:true,prompt:"K\u00fcrzeste Route?",                      desc:"Plane die k\u00fcrzeste Route zwischen St\u00e4dten"},
   {id:"flag_fusion",   icon:"\u{1F3C1}",title:"Flaggen-Fusion",        group:"new_modes",prompt:"Welche zwei L\u00e4nder?",                  desc:"Erkenne L\u00e4nder aus verschmolzenen Flaggen"},
   {id:"climate_mystery",icon:"\u{1F326}",title:"Klima-Krimi",          group:"new_modes",prompt:"Welches Land versteckt sich hinter diesen Klima-Hinweisen?",                             desc:"Land anhand von Klima-Clues erraten"},
   {id:"alpha_sprint",  icon:"📍",title:"Alphabet-Sprint",       group:"new_modes",prompt:"L\u00e4nder von A\u2013Z",                 desc:"Nenne L\u00e4nder f\u00fcr jeden Buchstaben"},
   {id:"wappen_meister",icon:"\u{1F6E1}",title:"Wappen-Meister",t_key:"mode_wappen",    group:"pure_geo",prompt:"Welchem Land geh\u00f6rt dieses Wappen?",desc:"Erkenne L\u00e4nder an ihrem Wappen"},
     {id:"wort_schmiede",icon:"🔡",title:"Wort-Schmiede",group:"new_modes",noMultiplayer:true,prompt:"Bilde Wörter aus dem Stadtnamen!",desc:"Finde Wörter in Stadtbuchstaben – multilingual"},
-{id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker"},
+{id:"slf",           icon:"📝",title:"Stadt, Land, Fluss",t_key:"mode_slf",noMultiplayer:true,  group:"pure_geo",comingSoon:true,prompt:"Nenne Land und Hauptstadt\u2026",    desc:"Der absolute Spiele-Klassiker"},
   {id:"timezone_jumper",icon:"\u23F0",title:"Zeitzonen-Jumper",       group:"new_modes",prompt:"Welche Zeitzone?",                            desc:"Meistere die Zeitzonen der Welt"},
   {id:"plate_compare",icon:"\u{1F9EA}\u{1F697}",title:"\u{1F9EA} Kenn. Vergleich",group:"comparisons",prompt:"Kennzeichen-Vergleich",desc:"Zwei Kennzeichen – welches Land gewinnt?",comingSoon:false},
   {id:"stadium",icon:"\u26BD",title:"Stadion-Quiz",group:"sport",prompt:"In welchem Land steht dieses Stadion?",desc:"Fu\u00dfballstadien zuordnen"},
@@ -4454,9 +4454,9 @@ function renderMultiplayerLobby(){
   if(\!mp){
     const joinInput=S._mpJoinCode||"";
     const mpST=S.mpSelType||"random",mpSC=S.mpSelCat||"",mpSM=S.mpSelMode||"";
-    const _mBtnSty=(a)=>`background:${a?"#6366f1":"var(--bg3)"};color:${a?"#fff":"var(--text2)"};border:1.5px solid ${a?"#6366f1":"var(--border)"};border-radius:8px;padding:.3rem .6rem;font-size:.73rem;font-weight:700;cursor:pointer`;
+    const _mBtnSty=(a)=>`background:${a?"#6366f1":"var(--bg3)"};color:${a?"#fff":"var(--text2)"};border:1.5px solid ${a?"#6366f1":"var(--border)"};border-radius:8px;padding:.35rem .7rem;font-size:.73rem;font-weight:700;cursor:pointer;min-height:36px;display:inline-flex;align-items:center`;
     const mpCatSec=mpST==="cat"?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:.5rem">${Object.entries(MODE_CATS).map(([k,v])=>`<button onclick="S.mpSelCat='${k}';render()" style="${_mBtnSty(mpSC===k)}">${v.icon} ${v.label}</button>`).join("")}</div>`:"";
-    const mpGameSec=mpST==="specific"?`<div style="max-height:120px;overflow-y:auto;display:flex;flex-wrap:wrap;gap:4px;margin-top:.5rem;padding:2px">${MODES.filter(m=>GEN[m.id]&&!m.comingSoon&&!m.noMultiplayer).map(m=>`<button onclick="S.mpSelMode='${m.id}';render()" style="${_mBtnSty(mpSM===m.id)}">${m.icon} ${(modeTitle(m)||m.id).slice(0,16)}</button>`).join("")}</div>`:"";
+    const mpGameSec=mpST==="specific"?`<div style="max-height:180px;overflow-y:auto;-webkit-overflow-scrolling:touch;display:flex;flex-wrap:wrap;gap:4px;margin-top:.5rem;padding:2px">${MODES.filter(m=>GEN[m.id]&&!m.comingSoon&&!m.noMultiplayer).map(m=>`<button onclick="S.mpSelMode='${m.id}';render()" style="${_mBtnSty(mpSM===m.id)}">${m.icon} ${(modeTitle(m)||m.id).slice(0,16)}</button>`).join("")}</div>`:"";
     const mpModeBlock=`<div style="background:var(--bg2);border:1.5px solid var(--border);border-radius:12px;padding:.85rem;margin-bottom:.85rem">
       <div style="font-size:.63rem;font-weight:700;color:var(--text3);margin-bottom:.4rem">\u{1F3AE} SPIELMODUS</div>
       <div style="display:flex;gap:6px">
@@ -5240,8 +5240,9 @@ function showToast(msg){
   document.body.appendChild(el);setTimeout(()=>el.remove(),2200);
 }
 function distractors(pool,matchFn,excludeFn,keyFn,n=2){
-  const pref=pool.filter(x=>matchFn(x)&&\!excludeFn(x));
-  const dp=pref.length>=n?pref:pool.filter(x=>\!excludeFn(x));
+  const _excl=excludeFn||function(){return false;};
+  const pref=pool.filter(x=>matchFn(x)&&\!_excl(x));
+  const dp=pref.length>=n?pref:pool.filter(x=>\!_excl(x));
   const seen=new Set(),dis=[];
   for(const x of sh([...dp])){const k=keyFn(x);if(k\!==undefined&&\!seen.has(k)){seen.add(k);dis.push(k);if(dis.length===n)break;}}
   if(dis.length<n){for(const x of sh([...pool])){const k=keyFn(x);if(\!excludeFn(x)&&\!seen.has(k)){seen.add(k);dis.push(k);if(dis.length===n)break;}}}
@@ -5409,7 +5410,7 @@ function genAlphaSprintQ(){
   const cor=matching[~~(rng()*matching.length)];
   const corName=displayCountry(cor.cc)||cor.c;
   const others=COUNTRIES.filter(c=>{const n=(displayCountry(c.cc)||c.c).toUpperCase();return !n.startsWith(letter);});
-  const dis=distractors(others,x=>x.ct===cor.ct,null,x=>displayCountry(x.cc)||x.c);
+  const dis=distractors(others,x=>x.ct===cor.ct,x=>false,x=>displayCountry(x.cc)||x.c);
   return{type:"alpha_sprint",prompt:'Land mit "'+letter+'" gesucht – welches?',subj:'🔤 '+letter,ans:corName,opts:sh([corName,...dis]),meta:cor.ct+' · '+cor.sr,lid:'alpha_'+letter,cc:cor.cc};
 }
 function genRcityQ(){
@@ -7802,13 +7803,13 @@ function renderLVSetup(){
     <div style="font-size:.65rem;font-weight:700;color:var(--text3);margin-bottom:.4rem">RUBRIK W\u00c4HLEN</div>
     <div style="display:flex;flex-wrap:wrap;gap:6px">${Object.entries(MODE_CATS).map(([k,v])=>{
       const active=sCat===k;
-      return`<button onclick="S.lvSetupCat='${k}';render()" style="background:${active?"#6366f1":"var(--bg3)"};color:${active?"#fff":"var(--text2)"};border:1.5px solid ${active?"#6366f1":"var(--border)"};border-radius:8px;padding:.3rem .6rem;font-size:.72rem;font-weight:600;cursor:pointer">${v.icon} ${v.label}</button>`;
+      return`<button onclick="S.lvSetupCat='${k}';render()" style="background:${active?"#6366f1":"var(--bg3)"};color:${active?"#fff":"var(--text2)"};border:1.5px solid ${active?"#6366f1":"var(--border)"};border-radius:8px;padding:.35rem .7rem;font-size:.72rem;font-weight:600;cursor:pointer;min-height:36px;display:inline-flex;align-items:center">${v.icon} ${v.label}</button>`;
     }).join("")}</div>
   </div>`:""
   /* Game picker */
   const gameSection=sT==="specific"?`<div style="margin-bottom:.75rem">
     <div style="font-size:.65rem;font-weight:700;color:var(--text3);margin-bottom:.4rem">SPIEL W\u00c4HLEN</div>
-    <div style="max-height:200px;overflow-y:auto;display:flex;flex-wrap:wrap;gap:5px;padding:2px">${MODES.filter(m=>GEN[m.id]&&!m.comingSoon).map(m=>{
+    <div style="max-height:200px;overflow-y:auto;-webkit-overflow-scrolling:touch;display:flex;flex-wrap:wrap;gap:5px;padding:2px">${MODES.filter(m=>GEN[m.id]&&!m.comingSoon).map(m=>{
       const active=sMod===m.id;
       return`<button onclick="S.lvSetupMode='${m.id}';render()" style="background:${active?"#6366f1":"var(--bg3)"};color:${active?"#fff":"var(--text2)"};border:1.5px solid ${active?"#6366f1":"var(--border)"};border-radius:8px;padding:.28rem .55rem;font-size:.68rem;font-weight:600;cursor:pointer;white-space:nowrap">${m.icon} ${(modeTitle(m)||m.id).slice(0,18)}</button>`;
     }).join("")}</div>
@@ -8574,6 +8575,7 @@ setTimeout(startNextRound,1500);
 
 function startGame(m){
   rngSeed=null;  /* Phase 212: prevent seed leak from daily/mp into solo games */
+  window._mapZoom=null; /* Phase 213: reset D3 map zoom on each new game */
   clr();
   const survBest=parseInt(localStorage.getItem('gq_surv_best')||'0');
   const _m=m||S.mode;
@@ -8742,6 +8744,16 @@ function markDailyDone(score){
   try{localStorage.setItem(getDailyKey(),JSON.stringify({score,ts:Date.now()}));}catch(e){}
   if(sb&&sbUser){const _d=new Date().toISOString().slice(0,10);sb.from("profiles").update({last_daily_date:_d}).eq("id",sbUser.id).then(()=>{},()=>{});}
 }
+function getDailyHistory(){
+  const hist=[];
+  for(let i=0;i<7;i++){
+    const d=new Date();d.setDate(d.getDate()-i);
+    const key="gq_daily_"+d.toISOString().slice(0,10);
+    const raw=localStorage.getItem(key);
+    if(raw){try{const o=JSON.parse(raw);hist.push({date:d.toISOString().slice(0,10),score:o.score||0});}catch(_){}}
+  }
+  return hist;
+}
 function getDailySeed(){
   const d=new Date().toISOString().slice(0,10).replace(/-/g,"");
   let h=0;for(let i=0;i<d.length;i++){h=(Math.imul(31,h)+d.charCodeAt(i))|0;}
@@ -8766,6 +8778,9 @@ function renderDailyHero(){
   const stored=done?JSON.parse(localStorage.getItem(getDailyKey())||"null"):null;
   const cd=getDailyCountdown();
   if(done){
+    const _hist=getDailyHistory();
+    const _today=new Date().toISOString().slice(0,10);
+    const _histHtml=_hist.length>1?`<div style="margin-top:.75rem;border-top:1px solid var(--border);padding-top:.6rem"><div style="font-size:.68rem;font-weight:700;color:var(--text3);letter-spacing:.05em;margin-bottom:.35rem">\u{1F4CA} LETZTE 7 TAGE</div>${_hist.map(_h=>`<div style="display:flex;justify-content:space-between;font-size:.78rem;padding:.12rem 0"><span style="color:var(--text2)">${_h.date.slice(5).replace('-','.')}</span><span style="font-weight:700;color:${_h.date===_today?'#6366f1':'var(--text)'}">${_h.score.toLocaleString()}</span></div>`).join("")}</div>`:"";
     return`<div class="daily-hero done">
       <div style="display:flex;align-items:center;gap:12px">
         <div style="font-size:2rem">\u{1F3C6}</div>
@@ -8774,6 +8789,7 @@ function renderDailyHero(){
           <div class="dh-sub" style="color:var(--text2)">Score: <b>${stored?.score?.toLocaleString()||"?"}</b> \u00b7 Neue Challenge in <span style="font-family:monospace;color:#f59e0b">${cd}</span></div>
         </div>
       </div>
+      ${_histHtml}
     </div>`;}
   return`<div class="daily-hero" onclick="startDailyChallenge()" role="button">
     <div style="display:flex;align-items:center;justify-content:space-between">
@@ -9119,7 +9135,7 @@ if(mode==="slf"&&S.ph==="playing"){
     requestAnimationFrame(()=>{document.getElementById("slf-city")?.focus();});
     return;
   }
-  if(!q){S.ph="menu";S.q=null;render();return;}  /* guard: q not yet set */
+  if(!q){showToast("\u26A0\uFE0F Dieser Modus ist gerade nicht verf\u00FCgbar.");S.ph="menu";S.q=null;render();return;}  /* guard: q not yet set */
   const col=tc(),p=pct(),_tr=tier(st);const tm=diff==='survival'?S.tm+'s':`${rd+1}/${ROUNDS}`;const _tmSecs=diff!=='survival'?`<span style='font-size:.55rem;opacity:.7;margin-left:3px'>${S.tm}s</span>`:'';
   let qBody="";
   if(q.type==="flag"){
@@ -11261,8 +11277,8 @@ function renderHomeTab(){
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${isLocked?`<span style="position:absolute;top:4px;right:4px;font-size:.75rem">\u{1F512}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${!cs&&unlocked?`<button type="button" class="fav-btn" data-fav-id="${m.id}" onclick="event.preventDefault();event.stopPropagation();window.toggleFavorite('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:6px;left:6px;z-index:99999;width:22px;height:22px;background:transparent;border:none;font-size:.7rem;cursor:pointer;line-height:1;padding:0;opacity:${isFav?'1':'.35'}">❤️</button>`:""}
-        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:6px;right:6px;z-index:99999;width:22px;height:22px;background:#3b82f6;color:#fff;border:none;border-radius:6px;font-size:.72rem;font-weight:900;cursor:pointer;line-height:1;padding:0">i</button>`:""}
+        ${!cs&&unlocked?`<button type="button" class="fav-btn" data-fav-id="${m.id}" onclick="event.preventDefault();event.stopPropagation();window.toggleFavorite('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:4px;left:4px;z-index:99999;width:28px;height:28px;background:transparent;border:none;font-size:.75rem;cursor:pointer;line-height:1;padding:0;touch-action:manipulation;opacity:${isFav?'1':'.35'}">❤️</button>`:""}
+        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:4px;right:4px;z-index:99999;width:32px;height:32px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.75rem;font-weight:900;cursor:pointer;line-height:1;padding:0;touch-action:manipulation">i</button>`:""}
       </div>`;
     });
     if(catId==='eu_plates')cardArr.push(`<div class="mode-card" data-category="eu_plates" onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6"><span class="mode-icon">\u{1F4D4}</span><div class="mode-title" style="color:#fff">Album</div><div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div></div>`);
