@@ -674,4 +674,8 @@ input[type=text]::placeholder{color:var(--text3)}
   box-sizing:border-box !important
 }
 .mode-card:not([style*='display:none']){display:flex !important;flex-direction:column !important}
-.menu-search-container{dis
+.menu-search-container{display:flex !important;flex-wrap:nowrap !important;gap:8px !important;align-items:center !important}
+#gameSearch{flex:1 !important;min-width:0 !important}
+@media(max-width:600px){
+  .carousel-page{grid-template-columns:repeat(2,1fr)}
+}
