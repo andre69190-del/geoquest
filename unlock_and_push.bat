@@ -6,6 +6,6 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "RELEASE: Phase 218 — Beta-Labels entfernt. Alle 9 Stellen mit Emoji+[BETA]-Prompt-Prefix (genHLBeta, HL_BETA_METRICS, genBetaMCQ/HL/Spotter) bereinigt. Spiele sind produktionsreif. Also: Phase 217 H/L Proximity-Fix (log-ratio), Phase 216 Fake-Distractors, Phase 215 Hyphenation, Phase 214 Crash-Fixes."
+git commit -m "FIX: Phase 219 — Catalog Integrity Audit. 7 verwaiste/fehlende Modus-Eintraege repariert: de_plate+border_q fehlten im MODES-Array; f1_map/stadium_map/river_map/unesco_map/wort_schmiede fehlten in MODE_CATS-Kategorien. Alle 187 Modi jetzt vollstaendig verknuepft (0 Orphans, 0 broken refs). Also: Phase 218 Beta-Labels raus, Phase 217 H/L Proximity, Phase 216-214."
 git push origin main
 pause
