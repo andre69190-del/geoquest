@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Carousel show/hide engine — display:none statt transform"
+git commit -m "FIX: Carousel grid CSS var + HC datasets"
 echo.
 git push origin main
 echo.
