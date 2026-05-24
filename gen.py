@@ -4565,8 +4565,10 @@ async function buyJoker(type){
   }
 }
 function useFiveO(){
-  if(S.sel\!==null||S.half_removed)return;
-  const pu=loadPU();if(\!(pu.five0>0)){showToast("Kein 50/50-Joker mehr\!");return;}
+  if(S.sel!==null||S.half_removed)return;
+  /* Phase 207: block joker if question has <=2 options — would expose answer */
+  if(S.q&&S.q.opts&&S.q.opts.length<=2){showToast("\u274C Joker hier nicht verf\u00fcgbar (nur 2 Optionen)");return;}
+  const pu=loadPU();if(!(pu.five0>0)){showToast("Kein 50/50-Joker mehr!");return;}
   pu.five0--;savePU(pu);
   if(sb&&sbUser)sb.from("profiles").update({joker_5050:pu.five0}).eq("id",sbUser.id).then(()=>{},()=>{pu.five0++;savePU(pu);showToast("\u26a0\ufe0f Joker-Sync fehlgeschlagen.");});
   const wrong=S.q.opts.filter(o=>o\!==S.q.ans);
@@ -8301,7 +8303,8 @@ if(mode==="slf"&&S.ph==="playing"){
   /* Power-up bar (Phase 26) */
   const pu=loadPU();
   /* P136-fix: 50/50 disabled for comp_ modes -- pre-declared vars, no nested escaping */
-  const _is2ans=S.q&&S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_')||S.q.type==='beta_hl');
+  /* Phase 207: dynamic — disabled for ANY question with <=2 options, regardless of mode */
+  const _is2ans=S.q&&(S.q.opts&&S.q.opts.length<=2||!!(S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_')||S.q.type==='beta_hl')));
   const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
   const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
   const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';
