@@ -8965,7 +8965,7 @@ function renderHomeTab(){
     const _rows=S.gridRows||(parseInt(localStorage.getItem('geoquest_grid_rows'))||6);
     const _ipp=_cols*_rows;
     const _nPages=Math.ceil(cardArr.length/_ipp)||1;
-    const _dots=_nPages>1?`<div class="carousel-dots">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" style="display:inline-block;width:7px;height:7px;background:${i===0?'#10b981':'#cbd5e1'};border-radius:50%;margin:0 3px;transition:background .3s"></span>`).join('')}</div>`:'';
+    const _dots=_nPages>1?`<div class="carousel-dots" style="padding:6px 0 10px;user-select:none">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" onclick="(function(d){var w=d.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,${i});})(this);event.stopPropagation()" style="display:inline-block;width:12px;height:12px;background:${i===0?'#10b981':'#cbd5e1'};border-radius:50%;margin:0 6px;cursor:pointer;transition:background .25s;-webkit-tap-highlight-color:transparent"></span>`).join('')}</div>`:'';
     const _track=`<div class="carousel-wrapper">${Array.from({length:_nPages}).map((_,pi)=>{
       const pg=cardArr.slice(pi*_ipp,(pi+1)*_ipp);
       return`<div class="carousel-page" style="--cc:${_cols};min-width:100%;flex-shrink:0">${pg.join('')}</div>`;
