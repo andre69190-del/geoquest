@@ -7685,7 +7685,7 @@ function lq(){
   if(\!q){S.ph="menu";render();return;}
   S.askedLids.add(q.lid);
   S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
-  S.half_removed=false;S.freezeActive=false;
+  S.half_removed=false;S.freezeActive=false;S.airportPinDist=0;S.airportPinPts=0;
   render();
   /* P167: for landscape-required modes, defer timer until device is rotated */
   if(_LANDSCAPE_MODES_SET.has(S.mode)&&_isPortrait()){
@@ -8388,7 +8388,7 @@ function startGame(m){
     scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,
     half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),
     survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,lives:S.diff==="casual"?999:3,
-    slfData:null,wsData:null,lhData:null});  /* P208: always reset sub-game state on new game */
+    slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0});  /* P208/P210: always reset sub-game state on new game */
   _secretGameToken=Math.random().toString(36).substring(2,15);
   /* Phase 86 – custom puzzle modes */
   if(_m==="logic_grid"){initLogikGitter();render();return;}
