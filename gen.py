@@ -1358,7 +1358,8 @@ de:{
   ws_found:"Gefunden",ws_enter_word:"Wort eingeben\u2026",ws_check:"Pr\u00fcfen",
   ws_all_found:"Alle W\u00f6rter gefunden!",ws_next_city:"N\u00e4chste Stadt",
   ws_duplicate:"\u2713 Schon gefunden!",ws_invalid:"\u2715 Kein g\u00fcltiges Wort",
-  ws_lang_label:"Sprache",ws_letters_hint:"Bilde W\u00f6rter aus den Buchstaben der Stadt"
+  ws_lang_label:"Sprache",ws_letters_hint:"Bilde W\u00f6rter aus den Buchstaben der Stadt",
+  q_airport_pin:"Wo liegt dieser Flughafen?",click_map:"Tippe auf die Karte"
 },
 en:{
   play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
@@ -1414,7 +1415,8 @@ en:{
   ws_found:"Found",ws_enter_word:"Enter word\u2026",ws_check:"Check",
   ws_all_found:"All words found!",ws_next_city:"Next City",
   ws_duplicate:"\u2713 Already found!",ws_invalid:"\u2715 Not a valid word",
-  ws_lang_label:"Language",ws_letters_hint:"Form words from the city's letters"
+  ws_lang_label:"Language",ws_letters_hint:"Form words from the city's letters",
+  q_airport_pin:"Where is this airport?",click_map:"Tap the map"
 },
 pl:{
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",menu:"Menu",board:"Ranking",pass:"Paszport",
@@ -2723,6 +2725,7 @@ const MODES=[
   {id:"kontinent_klicker",   icon:"\u{1F5FA}",    title:"Kontinent-Klicker",          group:"airports",prompt:"Auf welchem Kontinent liegt diese Stadt?",         desc:"Stadtname \u2192 Kontinent (5 Sek)"},
   {id:"hauptstadt_distanz",  icon:"\u{1F3DB}",    title:"Hauptstadt-Distanz",         group:"airports",prompt:"Wie weit liegt die Stadt von der Hauptstadt?",     desc:"\u00dcber oder unter 500 km zur Landeshauptstadt"},
   {id:"naechster_airport",   icon:"\u{1F6EC}",    title:"N\u00e4chster Flughafen",   group:"airports",prompt:"Welcher Flughafen liegt dieser Stadt am n\u00e4chsten?",desc:"Haversine-Distanz zu 40 Weltflugh\u00e4fen"},
+  {id:"airport_pin",         icon:"\u{1F4CD}",   title:"Airport Pinnen",   group:"airports",prompt:"Flughafen pinnen",desc:"Setze den Pin auf den richtigen Flughafen",time:30},
   {id:"iata_reverse",        icon:"\u{1F194}",    title:"IATA Reverse",               group:"airports",prompt:"Zu welcher Stadt geh\u00f6rt dieser IATA-Code?",  desc:"IATA-Badge \u2192 Stadtname"},
   {id:"jetlag_rechner",      icon:"\u23F0",        title:"Jetlag-Rechner",             group:"airports",prompt:"Wie sp\u00e4t ist es bei der Landung Ortszeit?",  desc:"Flugzeit + Zeitzone = Lokalzeit"},
   {id:"kuehlschrank_backofen",icon:"\u{1F321}\uFE0F",title:"K\u00fchlschrank vs. Backofen",group:"airports",prompt:"Welcher Ort ist w\u00e4rmer im Jahresmittel?",desc:"Jahresdurchschnittstemperaturen vergleichen"},
@@ -2759,7 +2762,7 @@ const MODE_CATS={
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare"],cost:0},
-  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","aequator_magnet","kontinent_klicker","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","insel_festland","sprachen_kompass"]/* PHASE204_CATS */,cost:0},
+  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","aequator_magnet","kontinent_klicker","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","insel_festland","sprachen_kompass"]/* PHASE204_CATS */,cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60"],cost:0},
   sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20","derby_hotspots","eishockey_nationen","f1_historisch","tdf_paesse","olympia_winter_historie","wm_gastgeber","wm_finalstadien","weltmeister_nationen","fussball_legenden","road_to_2026","frauen_wm_meilensteine","sommerspiele_metropolen","winter_exoten_klassiker","olympische_rekorde","olympia_hoehe","boykott_spiele","em_gastgeber_historie","em_finalstadien"],cost:0},
@@ -3866,7 +3869,12 @@ function genHLPopQ(){
   return{type:"hl_pop",prompt:t("q_hl_pop",{a:a.c}),nameA:a.c,valA:fmt(a.pop),nameB:b.c,valB:fmt(b.pop),ans,opts:["higher","lower"],lid:b.c,cc:ccFromCountry(b.c)};
 }
 function genHLRiverQ(){
-  if(\!RIVERS_REAL||RIVERS_REAL.length<2)return null;
+  /* Phase 209: use static RIVERS_GEO_DATA when live fetch not yet done */
+  const _rvPool=(RIVERS_REAL&&RIVERS_REAL.length>=2)?RIVERS_REAL
+    :RIVERS_GEO_DATA.map(r=>({n:r.name,c:r.cc,cc:r.cc,len:r.length}));
+  if(_rvPool.length<2)return null;
+  /* shadow RIVERS_REAL with merged pool for rest of function */
+  const RIVERS_REAL=_rvPool;  // eslint-disable-line no-shadow
   const _fcr=_rfilt(COUNTRIES,4);const _ccr=new Set(_fcr.map(x=>x.cc));
   let pool=RIVERS_REAL.filter(r=>r.len>100&&_ccr.has(ccFromCountry(r.c)));
   if(pool.length<2)pool=RIVERS_REAL.filter(r=>r.len>100);if(pool.length<2)return null;
@@ -5493,6 +5501,67 @@ const WORTSCHMIEDE_DATA=[
     "en":["PAIR","RASP","SPAR","RAPS","PAIRS","AIRS"],
     "es":["PRISA","IRAS","SARI","RAIS","PARIS"],
     "fr":["PARIS","PARI","PAIR","RAIS","SPA"]
+  }},
+  /* Phase 209: 10 additional multilingual cities (all words validated letter-by-letter) */
+  {city:"LONDON",validWords:{
+    "de":["DON","NON","LON"],
+    "en":["OLD","NOD","LOO","DON"],
+    "es":["DON","NON","ON","LO"],
+    "fr":["DON","NON","ON"]
+  }},
+  {city:"BARCELONA",validWords:{
+    "de":["ALOE","BAR","CLAN","RABE","REAL","LABOR"],
+    "en":["BAR","ALONE","BEAR","RACE","LACE","BONE","EARL","LANE","REAL","OCEAN"],
+    "es":["BARCA","REAL","CENA","BOLA","CLAN","BAR","CALOR","OBRA","BRONCA"],
+    "fr":["CAB","COR","BAL","CALE","CAR","COL","RACE"]
+  }},
+  {city:"TOKIO",validWords:{
+    "de":["KOT","KOI","TOI"],
+    "en":["TOO","KIT","KOI"],
+    "es":["TIO"],
+    "fr":["TOI","KOI"]
+  }},
+  {city:"NEWYORK",validWords:{
+    "de":["WER","KEY","NEW","WOK","YEN"],
+    "en":["NEW","ROW","KEY","WON","WORK","KEN","YEW","WORN"],
+    "es":["RENO","REY"],
+    "fr":["ROY","WOK"]
+  }},
+  {city:"BUENOSAIRES",validWords:{
+    "de":["REIS","BAU","EIS","SAU","EBER","ROSE","UNSER","BASE","NEU","NUR","SAUER"],
+    "en":["BONE","BEAR","SURE","BASE","NOSE","ROSE","OUR","SUN","SEA","BURN","BORN","SORE","ROUSE"],
+    "es":["BUENO","AIRE","BESO","SUERO","BASE","SOBRE","SER","SON"],
+    "fr":["BON","BRUN","ROBE","SOIE","OURS","BASE","RIEN","BIEN","RUSE"]
+  }},
+  {city:"SYDNEY",validWords:{
+    "de":["DEN","DYNE"],
+    "en":["YES","DEN","END","DYE","DENY"],
+    "es":["SED","DEN"],
+    "fr":["DES","NE","SE","EN"]
+  }},
+  {city:"ISTANBUL",validWords:{
+    "de":["STAU","LIST","ALT","TAL","BAST","TAUB","BLUT","LAUT","STAB","BAU","IST","TABU"],
+    "en":["LIST","STUN","TUB","LUST","AUNT","TUNA","SLIT","SUIT","SAIL","TAIL","BAT","SAT","SIT","SUN","BASIN"],
+    "es":["ISLA","LUNA","SUTIL","TINA","TAL","SAL","SITA"],
+    "fr":["BUT","BAL","SAUT","LUI","SU","TU","IL","SALUT","AIL","LA"]
+  }},
+  {city:"MUMBAI",validWords:{
+    "de":["MAI","BAUM","UM","MUM"],
+    "en":["BUM","AIM","MUM"],
+    "es":["MIA"],
+    "fr":["AMI","MAI"]
+  }},
+  {city:"VIENNA",validWords:{
+    "de":["INN","NEIN","VEIN","ANI"],
+    "en":["VEIN","VINE","NAVE","INN","VANE"],
+    "es":["VENA","NAVE"],
+    "fr":["VAIN","NEI"]
+  }},
+  {city:"DUBAI",validWords:{
+    "de":["BAU","AB","DA","DU","BAD"],
+    "en":["BAD","BID","DUB","AID","BUD"],
+    "es":["DIA","IDA"],
+    "fr":["BAU","BID"]
   }}
 ];
 
@@ -5596,6 +5665,19 @@ function genMapGuessQ(){
   const co=MAP_COUNTRIES[idx];if(\!co)return null;
   return{type:"map_guess",prompt:t("q_map_guess"),subj:co.name,
     ans:co.name,opts:[],meta:"",lid:co.cc,cc:co.cc};
+}
+
+/* Phase 209: Airport Pin — user clicks D3 map to pin airport location */
+function genAirportPinQ(){
+  if(!AIRPORTS_GEO_DATA||!AIRPORTS_GEO_DATA.length)return null;
+  const idx=~~(rng()*AIRPORTS_GEO_DATA.length);
+  const ap=AIRPORTS_GEO_DATA[idx];
+  return{type:"airport_pin",
+    prompt:t("q_airport_pin")||"Wo liegt dieser Flughafen?",
+    subj:ap.name+" ("+ap.iata+")",
+    ans:ap.iata,opts:[],meta:ap.city,
+    targetLat:ap.lat,targetLng:ap.lng,
+    lid:ap.iata,cc:ap.cc};
 }
 
 function genMapReverseQ(){
@@ -6582,6 +6664,7 @@ const GEN={
   map_guess:genMapGuessQ,
   map_reverse:genMapReverseQ,
   map_capital:genMapCapitalQ,
+  airport_pin:genAirportPinQ,
   map_ivr:genIvrQ,
   logic_grid:()=>null,
   travel_route:()=>null,
@@ -7344,6 +7427,86 @@ const a=Math.sin(dLat/2)*Math.sin(dLat/2)+Math.cos(lat1*Math.PI/180)*Math.cos(la
 const c=2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
 return Math.round(R*c);
 }
+/* Phase 209: Airport Pin — coordinate-based map click answer */
+function haversineKm(lat1,lon1,lat2,lon2){
+  const R=6371,toR=Math.PI/180;
+  const dLat=(lat2-lat1)*toR,dLon=(lon2-lon1)*toR;
+  const a=Math.sin(dLat/2)**2+Math.cos(lat1*toR)*Math.cos(lat2*toR)*Math.sin(dLon/2)**2;
+  return Math.round(R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a)));
+}
+
+function answerAirportPin(clickedLat,clickedLng,tok){
+  if(tok!==_secretGameToken)return;
+  if(!S||!S.q||S.q.type!=="airport_pin")return;
+  if(S.sel!==null)return;
+  const dist=haversineKm(clickedLat,clickedLng,S.q.targetLat,S.q.targetLng);
+  /* Score: 500 at 0km, 0 at >=2500km — linear */
+  const pts=Math.max(0,Math.round(500*(1-dist/2500)));
+  clr();
+  S.sel="coord";S.ok=dist<=250;  /* "correct" if within 250km */
+  S.airportPinDist=dist;
+  S.airportPinPts=pts;
+  if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:S.ok});
+  if(pts>0){S.sc+=pts;S.st=S.ok?S.st+1:0;S.correct+=S.ok?1:0;}
+  else{S.st=0;}
+  render();
+}
+
+function drawAirportPinMap(readOnly){
+  const container=document.getElementById("gq-map-svg");
+  if(!container||typeof d3==="undefined"||typeof topojson==="undefined")return;
+  if(!window.WORLD_TOPO){container.innerHTML='<p style="color:var(--text3);text-align:center;padding:2rem">'+t("map_loading")+"</p>";return;}
+  const W=container.clientWidth||(window.innerWidth||360),H=Math.min(W*.56,290);
+  const svg=d3.select(container).html("").append("svg")
+    .attr("width","100%").attr("height",H)
+    .attr("viewBox",`0 0 ${W} ${H}`)
+    .style("background","var(--bg2)")
+    .style("touch-action","none")
+    .style("user-select","none")
+    .style("cursor",readOnly?"default":"crosshair");
+  const proj=d3.geoNaturalEarth1().scale(W/6.2).translate([W/2,H/2]);
+  const path=d3.geoPath().projection(proj);
+  const countries=topojson.feature(window.WORLD_TOPO,window.WORLD_TOPO.objects.countries);
+  const g=svg.append("g");
+  const zoom=d3.zoom().scaleExtent([1,10]).on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom=ev.transform;});
+  svg.call(zoom);
+  if(window._mapZoom&&window._mapZoom.k>1)svg.call(zoom.transform,window._mapZoom);
+  g.append("path").datum({type:"Sphere"}).attr("d",path).attr("fill","#bfdbfe").attr("stroke","none");
+  g.selectAll("path.ctry").data(countries.features).enter().append("path")
+    .attr("class","ctry").attr("d",path)
+    .attr("fill","var(--bg3,#e2e8f0)").attr("stroke","var(--border,#94a3b8)").attr("stroke-width",.35);
+  /* Show correct airport pin after answer */
+  if(readOnly&&S.q&&S.q.targetLat!=null){
+    const [cx,cy]=proj([S.q.targetLng,S.q.targetLat])||[0,0];
+    /* Correct pin: green circle + drop-shadow */
+    g.append("circle").attr("cx",cx).attr("cy",cy).attr("r",10)
+      .attr("fill","#10b981").attr("stroke","#fff").attr("stroke-width",2)
+      .style("filter","drop-shadow(0 2px 4px rgba(0,0,0,.5))");
+    g.append("text").attr("x",cx).attr("y",cy-13)
+      .attr("text-anchor","middle").attr("font-size","10px").attr("fill","#10b981")
+      .attr("font-weight","900").text(S.q.ans);
+  }
+  /* Click handler: place user pin */
+  if(!readOnly){
+    svg.on("click",function(ev){
+      if(S.sel!==null)return;
+      const [sx,sy]=d3.pointer(ev,g.node());
+      /* invert zoom transform */
+      const tr=window._mapZoom||d3.zoomIdentity;
+      const [mx,my]=[(sx-tr.x)/tr.k,(sy-tr.y)/tr.k];
+      const coords=proj.invert([mx,my]);
+      if(!coords)return;
+      /* Visual user pin: red with drop-shadow */
+      g.selectAll(".user-pin").remove();
+      const pg=g.append("g").attr("class","user-pin").attr("transform",`translate(${mx},${my})`);
+      pg.append("circle").attr("r",8).attr("fill","#ef4444").attr("stroke","#fff").attr("stroke-width",2)
+        .style("filter","drop-shadow(0 2px 6px rgba(0,0,0,.6))");
+      pg.append("circle").attr("r",3).attr("fill","#fff");
+      answerAirportPin(coords[1],coords[0],_secretGameToken);
+    });
+  }
+}
+
 function getFlagFusionPairSafe(){
 // Get two countries for flag fusion
 const codes=Object.keys(globalCultureData);
@@ -8220,6 +8383,31 @@ if(mode==="slf"&&S.ph==="playing"){
         <div class="opts">${optHtml}</div>
       </div></div>`;
     requestAnimationFrame(()=>drawWorldMap(q.subj,sel,ok,true,true));
+    return;
+  }
+  /* Phase 209: Airport Pin — coordinate click on D3 map */
+  if(q.type==="airport_pin"){
+    const apDist=S.airportPinDist||0;
+    const apPts=S.airportPinPts||0;
+    const apFb=sel===null?""
+      :S.ok?`<div class="fb ok">\u2713 ${apDist} km entfernt · +${apPts} Pkt.</div>`
+      :`<div class="fb ng">\u2717 ${apDist} km entfernt · 0 Pkt.</div>`;
+    app.innerHTML=`<div class="scr map-scr">
+      <div class="hud"><div style="display:flex;gap:8px;align-items:center">
+        <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
+        ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
+        <div style="margin-left:auto"><button class="btn-exit-global" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()" style="background:#ef4444;color:#fff;border:none;padding:8px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F6AA}</button></div>
+      </div></div>
+      <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
+      <div style="text-align:center;padding:.5rem .5rem .2rem;font-size:.85rem;font-weight:700;color:var(--text3)">\u{1F4CD} ${q.prompt}</div>
+      <div style="text-align:center;font-size:1.05rem;font-weight:900;color:var(--text);margin:.1rem 0 .5rem">${esc(q.subj)}</div>
+      <div id="gq-map-svg" class="map-container" style="cursor:${sel!==null?'default':'crosshair'}"></div>
+      ${apFb}
+      ${sel!==null
+        ?`<button class="btn-p map-weiter" onclick="clr();nextRound()">Weiter \u2192</button>`
+        :'<p style="font-size:.72rem;color:var(--text3);text-align:center;margin:.3rem 0">Tippe auf die Karte, um den Flughafen zu markieren</p>'}
+    </div>`;
+    requestAnimationFrame(()=>drawAirportPinMap(sel!==null));
     return;
   }
   if(q.type==="map_guess"||q.type==="map_capital"){

@@ -6,6 +6,6 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "CHORE/SEC: Comprehensive system audit Phase 208. Fail-safe architecture (generator try/catch, null guards, state resets), memory leak fixes (clearInterval dedup, self-cancel guards), anti-cheat hardening (answerByIdx removes answers from DOM, 350ms debounce, Proxy get+set trap), i18n consistency (ws_* + mode_* keys in all 28 langs, renderWortSchmiede fully wired to t())."
+git commit -m "FEAT/UI: Phase 209 — H/L river static fallback via RIVERS_GEO_DATA, new Airport-Pin mode (40 airports, D3 coordinate click, haversine scoring), WORTSCHMIEDE expanded to 13 cities (London, Barcelona, Tokio, NewYork, BuenosAires, Sydney, Istanbul, Mumbai, Vienna, Dubai — all words letter-validated), map mobile fix + pin drop-shadow visibility."
 git push origin main
 pause

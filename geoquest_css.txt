@@ -306,9 +306,21 @@ input[type=text]::placeholder{color:var(--text3)}
 .map-prompt strong{color:#3b82f6}
 .map-container{flex:1;min-height:200px;max-height:300px;width:100%;
   background:var(--bg2);border-radius:14px;overflow:hidden;
-  touch-action:none;user-select:none;margin-bottom:.5rem}
-.map-container svg{display:block;width:100%;height:100%}
+  touch-action:none;user-select:none;margin-bottom:.5rem;
+  /* Phase 209: prevent map from shifting off-screen on mobile */
+  position:relative;box-sizing:border-box}
+.map-container svg{display:block;width:100%;height:100%;
+  /* Phase 209: ensure SVG fills container, no overflow drift on mobile */
+  max-width:100%;touch-action:none}
 .map-container .ctry{cursor:pointer;transition:fill .15s}
+/* Phase 209: airport pin markers — high visibility on all map styles */
+.map-container circle.user-pin-dot,
+.map-container .user-pin circle{
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,.65));
+  z-index:10}
+/* Phase 209: overflow protection for long airport/river names on H/L cards */
+.hl-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  max-width:100%;word-break:break-word}
 .map-weiter{margin:.25rem .8rem .4rem}
 
 /* ── Phase 33 Teil 2: MP result card ────────────────────────── */
@@ -711,32 +723,3 @@ input[type=text]::placeholder{color:var(--text3)}
   .map-container{height:calc(100vh - 160px)!important;max-height:none!important;min-height:320px!important}
   .map-scr{display:grid;grid-template-columns:1fr 280px;grid-template-rows:auto auto 1fr auto auto;column-gap:1.2rem;max-width:100%}
   .map-scr>.hud{grid-column:1/-1}
-  .map-scr>.tbar{grid-column:1/-1}
-  .map-scr>.map-prompt{grid-column:2;grid-row:2;font-size:1rem;font-weight:700;padding:.4rem 0}
-  .map-scr>.map-container{grid-column:1;grid-row:2/6;height:calc(100vh - 160px)!important}
-  .map-scr>.fb,.map-scr>[class*="fb "]{grid-column:2;grid-row:3;align-self:start}
-  .map-scr>.map-weiter{grid-column:2;grid-row:4;margin:0}
-  .map-prompt{font-size:1rem}
-  .bottom-nav{justify-content:center}
-  .bn-item{max-width:130px}
-  #mainGamesGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;padding:0 !important}
-  #mainGamesGrid .accordion-section{margin-bottom:0}
-  .diff-toggle{gap:12px}
-  .diff-btn{padding:.55rem 1.8rem;font-size:.88rem}
-}
-/* Phase 103: Carousel arrow buttons */
-.car-arrow{
-  background:none;
-  border:none;
-  font-size:1.05rem;
-  padding:2px 10px;
-  cursor:pointer;
-  color:var(--text);
-  transition:opacity .2s;
-  -webkit-tap-highlight-color:transparent;
-  line-height:1;
-  border-radius:6px;
-}
-.car-arrow:hover:not([style*="pointer-events:none"]){
-  background:var(--bg2);
-}
