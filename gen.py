@@ -2336,6 +2336,7 @@ function T(k){return t(k);}
 /* setLanguage – persists choice, marks as manual override */
 function setLanguage(lang){
   if(typeof S!=='undefined')S.language=lang;
+  document.documentElement.lang=lang;
   localStorage.setItem('gq_lang',lang);
   localStorage.setItem('geoquest_lang_manual','1');
   render();
@@ -2369,6 +2370,8 @@ let rngSeed=null,rngState=0;
 function initRng(seed){rngSeed=seed>>>0;rngState=rngSeed;}
 function seededRand(){rngState=(rngState+0x6D2B79F5)>>>0;let t=Math.imul(rngState^rngState>>>15,rngState|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;}
 function rng(){return rngSeed\!==null?seededRand():Math.random();}
+/* Phase 215: sync html[lang] on page load */
+document.documentElement.lang=(typeof S!=='undefined'&&S.language)||localStorage.getItem('gq_lang')||'de';
 
 let PLATES_DATA=[],CURR_REAL=[],CAPS_POP=[],RIVERS_REAL=[],NEIGHBORS={},AREA_DATA=[];
 
@@ -12076,7 +12079,7 @@ async function detectUserCountry(){
         'IE':'en','GB':'en','US':'en','AU':'en','CA':'en','NZ':'en','ZA':'en'
       };
       const _al=_ccMap[_cc]||'en';
-      S.language=_al;localStorage.setItem('gq_lang',_al);
+      S.language=_al;localStorage.setItem('gq_lang',_al);document.documentElement.lang=_al;
     }
     if(known&&last!==deCountry){showLocationBanner(deCountry);}
   }catch(e){
@@ -12217,7 +12220,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .mode-card.life .mode-title{font-size:.62rem}
 .mode-card.active{border-color:#10b981;background:rgba(16,185,129,.08)}
 .mode-icon{font-size:1.4rem;margin-bottom:3px;display:block}
-.mode-title{color:var(--text);font-size:.68rem;font-weight:700;line-height:1.2;word-break:break-word;overflow-wrap:break-word}
+.mode-title{color:var(--text);font-size:.68rem;font-weight:700;line-height:1.3;word-break:normal;overflow-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto}
 .mode-card.locked-card{opacity:.35;filter:grayscale(.8);pointer-events:none}
 .mode-desc{color:var(--text3);font-size:.58rem;margin-top:3px;line-height:1.25;font-weight:400;word-break:break-word;overflow-wrap:break-word}
 .coming-soon-card{opacity:.7;cursor:pointer;position:relative;overflow:hidden}
