@@ -2788,20 +2788,80 @@ const MODES=[
   {id:"uk_kirchen",    icon:"\u{26EA}",title:"Sakralbauten der Welt",     group:"kultur",prompt:"\u{1F4CD} Wo steht dieses Gotteshaus?",desc:"Hagia Sophia, Sagrada Familia, Felsendom"},
   /* === H/L ENGINE: H\u00f6her/Niedriger (1 Modus) === */
   {id:"uk_wolkenkratzer",icon:"\u{1F3D9}",title:"Wolkenkratzer-Duell",   group:"kultur",prompt:"Welches Geb\u00e4ude ist h\u00f6her?",desc:"Burj Khalifa, Shanghai Tower und Co. nach H\u00f6he vergleichen"},
+    /* === Phase 216 Schritt 1: Universal-Pin (9) === */
+    {id:"uk_wuesten",         icon:"\u{1F3DC}",title:"[BETA] W\u00fcsten pinnen",          group:"lifestyle",prompt:"\u{1F4CD} Wo liegt diese W\u00fcste?",            desc:"Sahara, Gobi, Atacama und mehr auf der Karte"},
+    {id:"uk_berggipfel",      icon:"\u{1F3D4}",title:"[BETA] Berggipfel pinnen",        group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Berggipfel?",        desc:"Everest, Aconcagua, Mont Blanc und Co."},
+    {id:"uk_meerengen",       icon:"\u{1F30A}",title:"[BETA] Meeren\u2019gen pinnen",   group:"lifestyle",prompt:"\u{1F4CD} Wo liegt diese Meere\u2019nge?",     desc:"Gibraltar, Bosporus, Malakka und mehr"},
+    {id:"uk_wasserfaelle",    icon:"\u{1F4A7}",title:"[BETA] Wasserf\u00e4lle pinnen", group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Wasserfall?",         desc:"Victoria, Niagara, Igua\u00azu und mehr"},
+    {id:"uk_canyons",         icon:"\u{26F0}",title:"[BETA] Canyons pinnen",            group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Canyon?",             desc:"Grand Canyon, Colca, Fish River Canyon"},
+    {id:"uk_hohe_stadien",    icon:"\u{1F3DF}",title:"[BETA] Hochgelegene Stadien",     group:"sport",   prompt:"\u{1F4CD} Wo liegt dieses hochgelegene Stadion?",desc:"Die h\u00f6chstgelegenen Fu\u00dfballstadien der Welt"},
+    {id:"uk_leichtathletik_wm",icon:"\u{1F3C3}",title:"[BETA] Leichtathletik-WM Orte", group:"sport",   prompt:"\u{1F4CD} Wo fand diese Leichtathletik-WM statt?",desc:"WM-Austragungsorte seit 1983"},
+    {id:"uk_surf_spots",      icon:"\u{1F3C4}",title:"[BETA] Surf-Spots pinnen",        group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Surf-Spot?",           desc:"Pipeline, Teahupo'o, Nazar\u00e9 und mehr"},
+    {id:"uk_kontinent_mitte", icon:"\u{1F30D}",title:"[BETA] Kontinent-Zentren",        group:"pure_geo",prompt:"\u{1F4CD} Wo liegt das Zentrum dieses Kontinents?",desc:"Geographische Mittelpunkte der Kontinente"},
+    /* === Phase 216 Schritt 2: Universal-H/L (9) === */
+    {id:"hl_b_total_lang",    icon:"\u{1F5E3}",title:"[BETA] Sprachen-Vielfalt",        group:"comparisons",prompt:"Welches Land hat mehr gesprochene Sprachen?",  desc:"Gesamtzahl gesprochener Sprachen pro Land"},
+    {id:"hl_b_nobel",         icon:"\u{1F3C5}",title:"[BETA] Nobelpreistr\u00e4ger",   group:"comparisons",prompt:"Welches Land hat mehr Nobelpreistr\u00e4ger?",  desc:"Nobelpreise nach Herkunftsland"},
+    {id:"hl_b_medals",        icon:"\u{1F947}",title:"[BETA] Olympia-Medaillen",        group:"comparisons",prompt:"Welches Land hat mehr Olympia-Medaillen?",      desc:"Sommerspiele-Medaillen aller Zeiten"},
+    {id:"hl_b_ns_km",         icon:"\u{2194}",title:"[BETA] Nord-S\u00fcd-Ausdehnung", group:"comparisons",prompt:"Welches Land erstreckt sich weiter N-S?",       desc:"Nord-S\u00fcd-Ausdehnung in km"},
+    {id:"hl_b_bikes",         icon:"\u{1F6B2}",title:"[BETA] Fahrrad-Nation",           group:"comparisons",prompt:"Welches Land hat mehr Fahrr\u00e4der/100 Einw.?",desc:"Fahrr\u00e4der pro 100 Einwohner"},
+    {id:"hl_b_land_border",   icon:"\u{1F6A7}",title:"[BETA] L\u00e4ngste Grenzen",    group:"comparisons",prompt:"Welches Land hat l\u00e4ngere Landesgrenzen?",   desc:"Gesamtl\u00e4nge aller Landesgrenzen in km"},
+    {id:"hl_b_coffee",        icon:"\u2615",   title:"[BETA] Kaffee-Nation",            group:"lifestyle",prompt:"Welches Land trinkt mehr Kaffee?",               desc:"Kaffeekonsum kg pro Kopf/Jahr"},
+    {id:"hl_b_military",      icon:"\u{1F6E1}",title:"[BETA] Milit\u00e4rausgaben",    group:"comparisons",prompt:"Welches Land gibt mehr f\u00fcr Milit\u00e4r aus?",desc:"Milit\u00e4rausgaben in Mrd. USD (2023)"},
+    {id:"hl_b_renewable",     icon:"\u{1F331}",title:"[BETA] Erneuerbare Energie",      group:"comparisons",prompt:"Welches Land hat mehr erneuerbare Energie?",     desc:"Anteil Erneuerbarer Energien an Stromerzeugung"},
+    /* === Phase 216 Schritt 3 A: Geo-Match (2) === */
+    {id:"uk_insel_match",     icon:"\u{1F3DD}",title:"[BETA] Inseln zuordnen",          group:"lifestyle",prompt:"Zu welchem Land geh\u00f6rt diese Insel?",       desc:"Gal\u00e1pagos, Gr\u00f6nland, Bali und mehr"},
+    {id:"uk_ehemalige_hauptstaedte",icon:"\u{1F3DB}",title:"[BETA] Ehemalige Hauptst\u00e4dte",group:"lifestyle",prompt:"In welchem Land war dies fr\u00fcher die Hauptstadt?",desc:"Bonn, Lagos, Kyoto und mehr"},
+    /* === Phase 216 Schritt 3 B: Kultur-Match (5) === */
+    {id:"uk_philosophen",     icon:"\u{1F9D0}",title:"[BETA] Philosophen",              group:"lifestyle",prompt:"Aus welchem Land stammt dieser Philosoph?",      desc:"Kant, Descartes, Konfuzius und mehr"},
+    {id:"uk_nationalpflanzen",icon:"\u{1F33A}",title:"[BETA] Nationalpflanzen",         group:"lifestyle",prompt:"Welches Land symbolisiert diese Pflanze?",       desc:"Kirschbl\u00fcte, Lotus, Ahorn und mehr"},
+    {id:"uk_nationaltiere",   icon:"\u{1F98A}",title:"[BETA] Nationaltiere",            group:"lifestyle",prompt:"F\u00fcr welches Land steht dieses Tier?",       desc:"K\u00e4nguru, Panda, Adler und mehr"},
+    {id:"uk_religionen",      icon:"\u{1F54D}",title:"[BETA] Religionen & Ursprung",    group:"lifestyle",prompt:"In welchem Land entstand diese Religion?",       desc:"Shinto, Hinduismus, Cao Dai und mehr"},
+    {id:"uk_schriften",       icon:"\u{270D}",title:"[BETA] Schriftsysteme",            group:"lifestyle",prompt:"In welchem Land wird diese Schrift verwendet?",  desc:"Hangul, Devanagari, Kyrillisch und mehr"},
+    /* === Phase 216 Schritt 3 C: Sport (1) === */
+    {id:"uk_nationalsport_off",icon:"\u{1F3C6}",title:"[BETA] Offizieller Nationalsport",group:"sport",  prompt:"Welches Land hat diesen Sport als Nationalsport?",desc:"Kabaddi, Muay Thai, Hurling und mehr"},
+    /* === Phase 216 Schritt 3 D: Nachbarn-Match (9) === */
+    {id:"uk_enklave",         icon:"\u{1F5FA}",title:"[BETA] Exklaven erkennen",        group:"neighbors",prompt:"In welchem Land liegt diese Exklave?",           desc:"Kaliningrad, Alaska, Ceuta und mehr"},
+    {id:"uk_grenzfluesse",    icon:"\u{1F4A7}",title:"[BETA] Grenzfl\u00fcsse",        group:"neighbors",prompt:"In welchem Land entspringt dieser Grenzfluss?",  desc:"Rhein, Rio Grande, Mekong und mehr"},
+    {id:"uk_halbinseln",      icon:"\u{1F30D}",title:"[BETA] Halbinseln zuordnen",      group:"neighbors",prompt:"In welchem Land liegt diese Halbinsel?",         desc:"Skandinavien, Iberia, Arabien und mehr"},
+    {id:"uk_deltamuendungen", icon:"\u{1F30A}",title:"[BETA] Flussdeltas",              group:"neighbors",prompt:"In welchem Land liegt dieses Flussdelta?",       desc:"Nil-Delta, Mekong-Delta, Niger-Delta"},
+    {id:"uk_kaps",            icon:"\u{26F3}",title:"[BETA] Kaps der Welt",             group:"neighbors",prompt:"In welchem Land liegt dieses Kap?",              desc:"Kap der Guten Hoffnung, Kap Hoorn, Nordkapp"},
+    {id:"uk_meerbusen",       icon:"\u{1F30A}",title:"[BETA] Meeresg\u00f6lfe",        group:"neighbors",prompt:"An welchem Land liegt dieser Golf?",             desc:"Golf von Mexiko, Bengalen, Persien"},
+    {id:"uk_inselgruppen",    icon:"\u{1F3DD}",title:"[BETA] Inselgruppen zuordnen",    group:"neighbors",prompt:"Zu welchem Land geh\u00f6rt diese Inselgruppe?", desc:"Azoren, F\u00e4r\u00f6er, Kerguelen"},
+    {id:"uk_gebirge_match",   icon:"\u{26F0}",title:"[BETA] Gebirge zuordnen",          group:"neighbors",prompt:"In welchem Land liegt dieses Gebirge?",          desc:"Himalaja, Andes, Ural und mehr"},
+    {id:"uk_seen_match",      icon:"\u{1F30A}",title:"[BETA] Seen zuordnen",            group:"neighbors",prompt:"In welchem Land liegt dieser See haupts\u00e4chlich?",desc:"Baikalsee, Victoriasee, Titicacasee"},
+    /* === Phase 216 Schritt 3 E: Mobilit\u00e4t-Match (9) === */
+    {id:"uk_automarken",      icon:"\u{1F697}",title:"[BETA] Automarken-Heimat",        group:"airports",prompt:"Aus welchem Land kommt diese Automarke?",         desc:"Toyota, BMW, Ferrari und mehr"},
+    {id:"uk_fluggesellschaften",icon:"\u2708",title:"[BETA] Airlines zuordnen",          group:"airports",prompt:"Aus welchem Land kommt diese Fluggesellschaft?",  desc:"Lufthansa, Emirates, Qantas und mehr"},
+    {id:"uk_bahnstrecken",    icon:"\u{1F686}",title:"[BETA] Ber\u00fchmte Bahnstrecken",group:"airports",prompt:"In welchem Land liegt diese Bahnstrecke?",       desc:"Trans-Sibirische, Shinkansen, TGV"},
+    {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"[BETA] Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
+    {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"[BETA] Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
+    {id:"uk_reedereien",      icon:"\u{1F6A2}",title:"[BETA] Reedereien zuordnen",      group:"airports",prompt:"Aus welchem Land kommt diese Reederei?",          desc:"Maersk, MSC, Hapag-Lloyd und mehr"},
+    {id:"uk_autobahnen_beruhmt",icon:"\u{1F6E3}",title:"[BETA] Autobahnsysteme",        group:"airports",prompt:"F\u00fcr welches Land steht dieses Autobahnsystem?",desc:"Autobahn, Autostrada, Interstate"},
+    {id:"uk_metrostaedte",    icon:"\u{1F687}",title:"[BETA] Metro-Systeme zuordnen",   group:"airports",prompt:"In welchem Land liegt dieses U-Bahn-System?",    desc:"Tokyo Metro, London Underground, U-Bahn Berlin"},
+    {id:"uk_luft_rekorde",    icon:"\u{1F6EB}",title:"[BETA] Luftfahrt-Rekorde",        group:"airports",prompt:"Welchem Land geh\u00f6rt dieser Luftfahrt-Rekord?",desc:"L\u00e4ngste Route, h\u00f6chster Flughafen"},
+    /* === Phase 216 Schritt 4: Custom/Spezial (8) === */
+    {id:"uk_sort_kontinente", icon:"\u{1F30D}",title:"[BETA] Kontinent zuordnen",       group:"pure_geo",prompt:"Auf welchem Kontinent liegt dieses Land?",        desc:"Alle Kontinente — schnell zuordnen"},
+    {id:"uk_sort_ozeane",     icon:"\u{1F30A}",title:"[BETA] Ozean zuordnen",           group:"pure_geo",prompt:"An welchem Ozean liegt dieses Land haupts\u00e4chlich?",desc:"Atlantik, Pazifik, Indischer Ozean"},
+    {id:"uk_schatten_gedreht",icon:"\u{1F5BC}",title:"[BETA] Silhouette gedreht",       group:"lifestyle",prompt:"Erkenne diesen Umriss — auch gedreht!",          desc:"L\u00e4nderumrisse in verschiedenen Winkeln"},
+    {id:"uk_mercator_illusion",icon:"\u{1F5FA}",title:"[BETA] Mercator-Illusion",       group:"map_mode",prompt:"Stimmt diese Gr\u00f6\u00dfenaussage? (Ja/Nein)",  desc:"Wie verzerrt Mercator unsere Weltsicht?"},
+    {id:"uk_kartenausschnitt",icon:"\u{1F50D}",title:"[BETA] Kartenausschnitt",         group:"map_mode",prompt:"Welches Land ist hier markiert?",                desc:"Detailkarte — erkenne das Land"},
+    {id:"uk_distanz_schaetzer",icon:"\u{1F4CF}",title:"[BETA] Distanz-Sch\u00e4tzer",  group:"airports",prompt:"Wie weit ist diese Strecke (ca.)?",               desc:"Sch\u00e4tze Entfernungen zwischen St\u00e4dten"},
+    {id:"uk_flugzeit_schaetzer",icon:"\u2708",title:"[BETA] Flugzeit-Sch\u00e4tzer",    group:"airports",prompt:"Wie lange dauert dieser Flug?",                   desc:"Sch\u00e4tze Flugzeiten zwischen Metropolen"},
+    {id:"uk_breitengrad_match",icon:"\u{1F4CD}",title:"[BETA] Breitengrad-Match",       group:"pure_geo",prompt:"Welche Stadt liegt auf dem gleichen Breitengrad?", desc:"Erstaunliche Breitengrad-Paare entdecken"},
     {id:"b60",icon:"\u{1F303}",title:"\u{1F9EA} Nacht-Satellit",         group:"map_mode",prompt:"Welche Region leuchtet nachts am hellsten?",             desc:"Lichtintensitaet auf Satellitenkarten"}
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
 const MODE_CATS={
-  pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede"],cost:0},
-  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_weinregionen","uk_museen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen","uk_wolkenkratzer"],cost:1000},
+  pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
+  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_weinregionen","uk_museen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","uk_sort_kontinente","hl_b_coffee"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
-  comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare"],cost:0},
-  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","aequator_magnet","kontinent_klicker","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","insel_festland","sprachen_kompass"]/* PHASE204_CATS */,cost:0},
-  neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q"],cost:0},
-  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60"],cost:0},
-  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20","derby_hotspots","eishockey_nationen","f1_historisch","tdf_paesse","olympia_winter_historie","wm_gastgeber","wm_finalstadien","weltmeister_nationen","fussball_legenden","road_to_2026","frauen_wm_meilensteine","sommerspiele_metropolen","winter_exoten_klassiker","olympische_rekorde","olympia_hoehe","boykott_spiele","em_gastgeber_historie","em_finalstadien","f1_map","stadium_map"],cost:0},
+  comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
+  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","aequator_magnet","kontinent_klicker","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","insel_festland","sprachen_kompass","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
+  neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q","uk_enklave","uk_grenzfluesse","uk_halbinseln","uk_deltamuendungen","uk_kaps","uk_meerbusen","uk_inselgruppen","uk_gebirge_match","uk_seen_match"],cost:0},
+  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60","uk_kartenausschnitt","uk_mercator_illusion"],cost:0},
+  sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20","derby_hotspots","eishockey_nationen","f1_historisch","tdf_paesse","olympia_winter_historie","wm_gastgeber","wm_finalstadien","weltmeister_nationen","fussball_legenden","road_to_2026","frauen_wm_meilensteine","sommerspiele_metropolen","winter_exoten_klassiker","olympische_rekorde","olympia_hoehe","boykott_spiele","em_gastgeber_historie","em_finalstadien","f1_map","stadium_map","uk_nationalsport_off","uk_hohe_stadien","uk_leichtathletik_wm"],cost:0},
 };
 
 /* Phase 28: New real-data mode generators */
@@ -3764,6 +3824,15 @@ const HL_BETA_METRICS={
   hl_b_unesco:  {key:"unesco", fmt:function(v){return v+" Stätten";}},
   hl_b_tour:    {key:"tour",   fmt:function(v){return v+" Mio.";}},
   hl_b_wm:      {key:"wm",     fmt:function(v){return v+"x WM";}},
+  hl_b_total_lang:{key:"tlang", fmt:function(v){return v+" Sprachen";}},
+  hl_b_nobel:   {key:"nobel",  fmt:function(v){return v+" Nobelpr.";}},
+  hl_b_medals:  {key:"medals", fmt:function(v){return v+" Medaillen";}},
+  hl_b_ns_km:   {key:"ns_km",  fmt:function(v){return v.toLocaleString()+" km";}},
+  hl_b_bikes:   {key:"bikes",  fmt:function(v){return v+" Fahrr\u00e4der/100";}},
+  hl_b_land_border:{key:"lborder",fmt:function(v){return v.toLocaleString()+" km Grenze";}},
+  hl_b_coffee:  {key:"coffee", fmt:function(v){return v+" kg/Kopf";}},
+  hl_b_military:{key:"military",fmt:function(v){return v+" Mrd. USD";}},
+  hl_b_renewable:{key:"renewable",fmt:function(v){return v+" % Erneuerbar";}},
 };
 const HL_BETA_PROMPTS={
   hl_b_rain:"Welches Land hat mehr Jahresniederschlag?",
@@ -3783,7 +3852,67 @@ const HL_BETA_PROMPTS={
   hl_b_unesco:"Welches Land hat mehr UNESCO-Welterbe?",
   hl_b_tour:"Welches Land hat mehr Touristen?",
   hl_b_wm:"Welches Land hat mehr WM-Teilnahmen?",
+  hl_b_total_lang:"Welches Land hat mehr gesprochene Sprachen?",
+  hl_b_nobel:"Welches Land hat mehr Nobelpreistr\u00e4ger?",
+  hl_b_medals:"Welches Land hat mehr Olympia-Medaillen (Sommer, gesamt)?",
+  hl_b_ns_km:"Welches Land erstreckt sich weiter von Nord nach S\u00fcd?",
+  hl_b_bikes:"Welches Land hat mehr Fahrr\u00e4der pro 100 Einwohner?",
+  hl_b_land_border:"Welches Land hat l\u00e4ngere Landesgrenzen insgesamt?",
+  hl_b_coffee:"Welches Land trinkt mehr Kaffee (kg pro Kopf/Jahr)?",
+  hl_b_military:"Welches Land hat h\u00f6here Milit\u00e4rausgaben?",
+  hl_b_renewable:"Welches Land erzeugt mehr Strom aus erneuerbaren Quellen?",
 };
+
+(function(){
+  var ext={
+    "Deutschland":  {tlang:67, nobel:110,medals:640, ns_km:900, bikes:80, lborder:3714, coffee:6.4, military:66,  renewable:58},
+    "Frankreich":   {tlang:75, nobel:70, medals:759, ns_km:1000,bikes:45, lborder:2889, coffee:5.4, military:61,  renewable:27},
+    "USA":          {tlang:430,nobel:400,medals:2638,ns_km:4500,bikes:30, lborder:19924,coffee:4.2, military:916, renewable:23},
+    "Brasilien":    {tlang:228,nobel:1,  medals:170, ns_km:4400,bikes:5,  lborder:16145,coffee:6.0, military:21,  renewable:85},
+    "Japan":        {tlang:15, nobel:29, medals:439, ns_km:3000,bikes:68, lborder:null, coffee:3.3, military:50,  renewable:24},
+    "Australien":   {tlang:250,nobel:15, medals:562, ns_km:3700,bikes:30, lborder:null, coffee:3.0, military:32,  renewable:35},
+    "China":        {tlang:302,nobel:12, medals:637, ns_km:4000,bikes:50, lborder:22457,coffee:0.3, military:296, renewable:35},
+    "Kanada":       {tlang:86, nobel:26, medals:318, ns_km:4600,bikes:25, lborder:8893, coffee:6.2, military:27,  renewable:67},
+    "Indien":       {tlang:780,nobel:12, medals:35,  ns_km:3200,bikes:10, lborder:15106,coffee:0.15,military:84,  renewable:25},
+    "Russland":     {tlang:105,nobel:32, medals:570, ns_km:4000,bikes:15, lborder:22408,coffee:1.8, military:109, renewable:20},
+    "Spanien":      {tlang:20, nobel:8,  medals:174, ns_km:900, bikes:40, lborder:1952, coffee:4.5, military:14,  renewable:55},
+    "Italien":      {tlang:34, nobel:20, medals:711, ns_km:1300,bikes:40, lborder:1836, coffee:5.9, military:33,  renewable:38},
+    "Norwegen":     {tlang:15, nobel:13, medals:155, ns_km:1700,bikes:70, lborder:2542, coffee:9.9, military:10,  renewable:98},
+    "Mexiko":       {tlang:68, nobel:3,  medals:90,  ns_km:3000,bikes:10, lborder:4602, coffee:0.7, military:8,   renewable:28},
+    "Suedkorea":    {tlang:4,  nobel:2,  medals:264, ns_km:500, bikes:20, lborder:238,  coffee:2.5, military:46,  renewable:10},
+    "Vereinigtes Koenigreich":{tlang:13,nobel:130,medals:901,ns_km:1000,bikes:40,lborder:497,coffee:2.8,military:75,renewable:45},
+    "Argentinien":  {tlang:15, nobel:5,  medals:88,  ns_km:3700,bikes:8,  lborder:9376, coffee:0.9, military:3,   renewable:42},
+    "Suedafrika":   {tlang:24, nobel:11, medals:104, ns_km:1600,bikes:5,  lborder:4862, coffee:0.4, military:3,   renewable:15},
+    "Nigeria":      {tlang:525,nobel:1,  medals:25,  ns_km:1100,bikes:3,  lborder:4047, coffee:0.05,military:3,   renewable:30},
+    "Aegypten":     {tlang:8,  nobel:4,  medals:31,  ns_km:1100,bikes:5,  lborder:2612, coffee:0.3, military:4,   renewable:12},
+    "Tuerkei":      {tlang:35, nobel:2,  medals:98,  ns_km:1200,bikes:10, lborder:2648, coffee:0.5, military:15,  renewable:45},
+    "Indonesien":   {tlang:706,nobel:1,  medals:35,  ns_km:1900,bikes:5,  lborder:2830, coffee:0.8, military:9,   renewable:15},
+    "Pakistan":     {tlang:74, nobel:1,  medals:10,  ns_km:1600,bikes:5,  lborder:7257, coffee:0.2, military:6,   renewable:35},
+    "Bangladesch":  {tlang:41, nobel:null,medals:null,ns_km:800, bikes:8,  lborder:4413, coffee:0.05,military:3,   renewable:5},
+    "Vietnam":      {tlang:110,nobel:null,medals:12,  ns_km:1700,bikes:25, lborder:4639, coffee:1.5, military:6,   renewable:45},
+    "Polen":        {tlang:10, nobel:18, medals:290, ns_km:650, bikes:15, lborder:3071, coffee:3.2, military:15,  renewable:20},
+    "Niederlande":  {tlang:10, nobel:21, medals:330, ns_km:300, bikes:130,lborder:1027, coffee:8.4, military:19,  renewable:40},
+    "Schweiz":      {tlang:12, nobel:28, medals:180, ns_km:300, bikes:60, lborder:1770, coffee:7.9, military:6,   renewable:70},
+    "Schweden":     {tlang:10, nobel:33, medals:651, ns_km:1600,bikes:70, lborder:2211, coffee:8.2, military:10,  renewable:75},
+    "Oesterreich":  {tlang:10, nobel:21, medals:320, ns_km:300, bikes:55, lborder:2524, coffee:6.1, military:4,   renewable:80},
+    "Daenemark":    {tlang:10, nobel:14, medals:179, ns_km:400, bikes:90, lborder:140,  coffee:8.7, military:5,   renewable:85},
+    "Finnland":     {tlang:12, nobel:5,  medals:302, ns_km:1200,bikes:70, lborder:2563, coffee:12.0,military:5,   renewable:45},
+    "Portugal":     {tlang:5,  nobel:1,  medals:42,  ns_km:600, bikes:15, lborder:1224, coffee:4.5, military:3,   renewable:62},
+    "Griechenland": {tlang:12, nobel:2,  medals:117, ns_km:700, bikes:5,  lborder:1110, coffee:3.5, military:6,   renewable:35},
+    "Chile":        {tlang:9,  nobel:2,  medals:13,  ns_km:4270,bikes:8,  lborder:6339, coffee:1.5, military:4,   renewable:50},
+    "Kolumbien":    {tlang:65, nobel:1,  medals:40,  ns_km:1800,bikes:5,  lborder:6672, coffee:2.5, military:10,  renewable:65},
+    "Peru":         {tlang:47, nobel:1,  medals:11,  ns_km:2000,bikes:5,  lborder:7461, coffee:0.5, military:3,   renewable:60},
+    "Iran":         {tlang:35, nobel:1,  medals:70,  ns_km:1650,bikes:5,  lborder:5894, coffee:0.4, military:10,  renewable:8},
+    "Saudi-Arabien":{tlang:5,  nobel:null,medals:2,   ns_km:1400,bikes:2,  lborder:4272, coffee:1.0, military:75,  renewable:3},
+    "Kasachstan":   {tlang:15, nobel:0,  medals:130, ns_km:1700,bikes:5,  lborder:13364,coffee:0.5, military:3,   renewable:10},
+    "Thailand":     {tlang:74, nobel:0,  medals:36,  ns_km:1700,bikes:20, lborder:4863, coffee:0.5, military:6,   renewable:20},
+    "Malaysia":     {tlang:140,nobel:0,  medals:14,  ns_km:700, bikes:5,  lborder:2742, coffee:1.5, military:4,   renewable:20},
+    "Marokko":      {tlang:8,  nobel:0,  medals:22,  ns_km:700, bikes:3,  lborder:2018, coffee:0.3, military:5,   renewable:20},
+    "Kenya":        {tlang:68, nobel:0,  medals:107, ns_km:800, bikes:3,  lborder:3457, coffee:0.2, military:1,   renewable:75},
+    "Aethiopien":   {tlang:90, nobel:1,  medals:60,  ns_km:1400,bikes:2,  lborder:5328, coffee:0.5, military:1,   renewable:90}
+  };
+  Object.keys(ext).forEach(function(k){if(HL_BETA_DATA[k])Object.assign(HL_BETA_DATA[k],ext[k]);});
+})();
 
 /* ─── Phase 160: CC-Map für HL_BETA_DATA (German name → ISO-2) ─── */
 const HL_BETA_CC={
@@ -3811,12 +3940,12 @@ function getSmartMatch(candidates,ccA,valA,ccFn,valFn){
   }
   /* Phase 217: log-ratio proximity - 3x hard cap, top 6, fallback to closest 5 */
   if(valA!=null&&valA>0&&pool.length>2){
-    const logA=Math.log(valA);
-    const inCap=pool.filter(x=>{const v=valFn(x);return v>0&&Math.max(valA,v)/Math.min(valA,v)<=3;});
+    const logA=Math.log(Math.max(valA,0.01));
+    const inCap=pool.filter(x=>{const v=valFn(x);return v!=null&&v>0&&valA>0&&Math.max(valA,v)/Math.min(valA,v)<=3;});
     if(inCap.length>=2){
       pool=inCap.sort((a,b)=>Math.abs(Math.log(valFn(a))-logA)-Math.abs(Math.log(valFn(b))-logA)).slice(0,6);
     } else {
-      pool=pool.slice().sort((a,b)=>Math.abs(Math.log(Math.max(valFn(a),1))-logA)-Math.abs(Math.log(Math.max(valFn(b),1))-logA)).slice(0,5);
+      pool=pool.slice().sort((a,b)=>Math.abs(Math.log(Math.max(valFn(a)||0.01,0.01))-logA)-Math.abs(Math.log(Math.max(valFn(b)||0.01,0.01))-logA)).slice(0,5);
     }
   }
   return pool[~~(rng()*pool.length)];
@@ -7253,8 +7382,66 @@ const KULTUR_DATA={
   ruinen:[],
   bruecken:[],
   gotteshaeuser:[],
-  wolkenkratzer:[{n:"Burj Khalifa",c:"Vereinigte Arabische Emirate",val:828},{n:"Merdeka 118",c:"Malaysia",val:679},{n:"Shanghai Tower",c:"China",val:632},{n:"Abraj Al-Bait Clock Tower",c:"Saudi-Arabien",val:601},{n:"Ping An Finance Centre",c:"China",val:599},{n:"Lotte World Tower",c:"Südkorea",val:555},{n:"One World Trade Center",c:"USA",val:541},{n:"Guangzhou CTF Finance Centre",c:"China",val:530},{n:"Tianjin CTF Finance Centre",c:"China",val:530},{n:"CITIC Tower",c:"China",val:528},{n:"Tianjin Chow Tai Fook Binhai Center",c:"China",val:530},{n:"Taipei 101",c:"Taiwan",val:508},{n:"Shanghai World Financial Center",c:"China",val:492},{n:"International Commerce Centre",c:"Hongkong",val:484},{n:"Landmark 81",c:"Vietnam",val:461},{n:"Changsha IFS Tower T1",c:"China",val:452},{n:"Petronas Tower 1",c:"Malaysia",val:452},{n:"Zifeng Tower",c:"China",val:450},{n:"Suzhou IFS",c:"China",val:450},{n:"Willis Tower",c:"USA",val:442},{n:"KK100",c:"China",val:442},{n:"Guangzhou International Finance Centre",c:"China",val:440},{n:"432 Park Avenue",c:"USA",val:426},{n:"Marina 101",c:"Vereinigte Arabische Emirate",val:425},{n:"Trump International Hotel and Tower",c:"USA",val:423},{n:"Jin Mao Tower",c:"China",val:421},{n:"Princess Tower",c:"Vereinigte Arabische Emirate",val:414},{n:"Al Hamra Tower",c:"Kuwait",val:413},{n:"Two International Finance Centre",c:"Hongkong",val:412},{n:"23 Marina",c:"Vereinigte Arabische Emirate",val:395},{n:"Skyline Tower",c:"USA",val:392},{n:"Akhmat Tower",c:"Russland",val:374},{n:"Shun Hing Square",c:"China",val:384},{n:"Empire State Building",c:"USA",val:381},{n:"Elite Residence",c:"Vereinigte Arabische Emirate",val:380},{n:"Central Park Tower",c:"USA",val:472},{n:"Sulafah Tower",c:"Vereinigte Arabische Emirate",val:360},{n:"Federation Tower East",c:"Russland",val:374},{n:"Chrysler Building",c:"USA",val:319},{n:"Eiffelturm",c:"Frankreich",val:330}]
+  wolkenkratzer:[{n:"Burj Khalifa",c:"Vereinigte Arabische Emirate",val:828},{n:"Merdeka 118",c:"Malaysia",val:679},{n:"Shanghai Tower",c:"China",val:632},{n:"Abraj Al-Bait Clock Tower",c:"Saudi-Arabien",val:601},{n:"Ping An Finance Centre",c:"China",val:599},{n:"Lotte World Tower",c:"Südkorea",val:555},{n:"One World Trade Center",c:"USA",val:541},{n:"Guangzhou CTF Finance Centre",c:"China",val:530},{n:"Tianjin CTF Finance Centre",c:"China",val:530},{n:"CITIC Tower",c:"China",val:528},{n:"Tianjin Chow Tai Fook Binhai Center",c:"China",val:530},{n:"Taipei 101",c:"Taiwan",val:508},{n:"Shanghai World Financial Center",c:"China",val:492},{n:"International Commerce Centre",c:"Hongkong",val:484},{n:"Landmark 81",c:"Vietnam",val:461},{n:"Changsha IFS Tower T1",c:"China",val:452},{n:"Petronas Tower 1",c:"Malaysia",val:452},{n:"Zifeng Tower",c:"China",val:450},{n:"Suzhou IFS",c:"China",val:450},{n:"Willis Tower",c:"USA",val:442},{n:"KK100",c:"China",val:442},{n:"Guangzhou International Finance Centre",c:"China",val:440},{n:"432 Park Avenue",c:"USA",val:426},{n:"Marina 101",c:"Vereinigte Arabische Emirate",val:425},{n:"Trump International Hotel and Tower",c:"USA",val:423},{n:"Jin Mao Tower",c:"China",val:421},{n:"Princess Tower",c:"Vereinigte Arabische Emirate",val:414},{n:"Al Hamra Tower",c:"Kuwait",val:413},{n:"Two International Finance Centre",c:"Hongkong",val:412},{n:"23 Marina",c:"Vereinigte Arabische Emirate",val:395},{n:"Skyline Tower",c:"USA",val:392},{n:"Akhmat Tower",c:"Russland",val:374},{n:"Shun Hing Square",c:"China",val:384},{n:"Empire State Building",c:"USA",val:381},{n:"Elite Residence",c:"Vereinigte Arabische Emirate",val:380},{n:"Central Park Tower",c:"USA",val:472},{n:"Sulafah Tower",c:"Vereinigte Arabische Emirate",val:360},{n:"Federation Tower East",c:"Russland",val:374},{n:"Chrysler Building",c:"USA",val:319},{n:"Eiffelturm",c:"Frankreich",val:330}],
+  /* === Phase 216: Pin-Kategorien (Schritt 1) === */
+  wuesten:[{n:"Sahara",lat:23,lng:13},{n:"Gobi",lat:42,lng:105},{n:"Atacama",lat:-23,lng:-68},{n:"Namib",lat:-24,lng:15},{n:"Arabische W\u00fcste",lat:25,lng:45},{n:"Kalahari",lat:-25,lng:22},{n:"Gro\u00dfe Victoriaaw\u00fcste",lat:-29,lng:128},{n:"Taklamakan",lat:39,lng:83},{n:"Patagonische W\u00fcste",lat:-45,lng:-68},{n:"Karakum",lat:39,lng:60}],
+  berggipfel:[{n:"Mount Everest",lat:27.988,lng:86.925},{n:"K2",lat:35.881,lng:76.514},{n:"Kangchendzönga",lat:27.703,lng:88.147},{n:"Aconcagua",lat:-32.653,lng:-70.011},{n:"Denali",lat:63.069,lng:-151.007},{n:"Kilimandscharo",lat:-3.067,lng:37.353},{n:"Mont Blanc",lat:45.833,lng:6.865},{n:"Elbrus",lat:43.355,lng:42.439},{n:"Puncak Jaya",lat:-4.078,lng:137.183},{n:"Zugspitze",lat:47.421,lng:10.985}],
+  meerengen:[{n:"Stra\u00dfe von Gibraltar",lat:35.98,lng:-5.47},{n:"Bosporus",lat:41.12,lng:29.08},{n:"Stra\u00dfe von Hormus",lat:26.6,lng:56.25},{n:"Stra\u00dfe von Malakka",lat:2.5,lng:101.0},{n:"Drakepassage",lat:-57.0,lng:-65.0},{n:"Taiwanstra\u00dfe",lat:24.5,lng:119.5},{n:"\u00c4rmelkanal",lat:51.0,lng:1.5},{n:"Bab al-Mandab",lat:12.6,lng:43.3},{n:"Floridastra\u00dfe",lat:25.0,lng:-80.0},{n:"Stra\u00dfe von Messina",lat:38.25,lng:15.6},{n:"Stra\u00dfe von Magellan",lat:-53.0,lng:-70.9}],
+  wasserfaelle:[{n:"Victoriafall\u00e4",lat:-17.924,lng:25.856},{n:"Niagaraf\u00e4lle",lat:43.082,lng:-79.075},{n:"Igua\u00azu-F\u00e4lle",lat:-25.686,lng:-54.444},{n:"Engelfall",lat:5.967,lng:-62.535},{n:"Kaieteur-Fall",lat:5.174,lng:-59.484},{n:"Tugela-F\u00e4lle",lat:-28.9,lng:29.2},{n:"Rheinfall",lat:47.679,lng:8.616},{n:"Yosemite-F\u00e4lle",lat:37.756,lng:-119.597},{n:"Gullfoss",lat:64.327,lng:-20.121},{n:"Sutherland-F\u00e4lle",lat:-44.8,lng:167.7}],
+  canyons:[{n:"Grand Canyon",lat:36.1,lng:-112.1},{n:"Colca-Canyon",lat:-15.45,lng:-71.9},{n:"Fish-River-Canyon",lat:-27.7,lng:17.6},{n:"Copper Canyon",lat:27.3,lng:-107.7},{n:"Gorges du Verdon",lat:43.8,lng:6.4},{n:"Yarlung-Tsangpo-Schlucht",lat:29.8,lng:95.0},{n:"Antelope Canyon",lat:36.86,lng:-111.37},{n:"Waimea Canyon",lat:22.06,lng:-159.66}],
+  hohe_stadien:[{n:"Estadio Hernando Siles 3637m",lat:-16.51,lng:-68.08},{n:"Estadio El Alto 4018m",lat:-16.50,lng:-68.19},{n:"Estadio Ol\u00edmpico Atahualpa 2819m",lat:-0.22,lng:-78.50},{n:"Estadio Garcilaso Cusco 3360m",lat:-13.53,lng:-71.97},{n:"Addis Abeba Stadium 2355m",lat:9.02,lng:38.75},{n:"Asmara Stadium 2325m",lat:15.34,lng:38.95},{n:"FNB Stadium Johannesburg 1753m",lat:-26.23,lng:27.98},{n:"Kasarani Nairobi 1600m",lat:-1.25,lng:36.88},{n:"Estadio Universitario M\u00e9xico 2240m",lat:19.30,lng:-99.19}],
+  leichtathletik_wm:[{n:"1983 Helsinki",lat:60.17,lng:24.93},{n:"1987 Rom",lat:41.9,lng:12.5},{n:"1991 Tokio",lat:35.69,lng:139.69},{n:"1993 Stuttgart",lat:48.78,lng:9.18},{n:"1997 Athen",lat:37.98,lng:23.73},{n:"1999 Sevilla",lat:37.38,lng:-5.98},{n:"2009 Berlin",lat:52.52,lng:13.41},{n:"2013 Moskau",lat:55.75,lng:37.62},{n:"2015 Peking",lat:39.91,lng:116.39},{n:"2017 London",lat:51.51,lng:-0.13},{n:"2019 Doha",lat:25.29,lng:51.53},{n:"2022 Eugene",lat:44.05,lng:-123.07},{n:"2023 Budapest",lat:47.49,lng:19.04}],
+  surf_spots:[{n:"Pipeline (Oahu)",lat:21.66,lng:-158.05},{n:"Teahupo'o (Tahiti)",lat:-17.86,lng:-149.24},{n:"Jeffreys Bay",lat:-34.05,lng:24.92},{n:"Nazar\u00e9 (Portugal)",lat:39.6,lng:-9.07},{n:"Bells Beach",lat:-38.37,lng:144.27},{n:"Mavericks (Kalifornien)",lat:37.49,lng:-122.49},{n:"Hossegor (Frankreich)",lat:43.67,lng:-1.42},{n:"Superbank (Queensland)",lat:-27.96,lng:153.44},{n:"Mundaka (Spanien)",lat:43.41,lng:-2.7},{n:"Cloudbreak (Fidschi)",lat:-17.8,lng:177.2}],
+  kontinent_mitte:[{n:"Zentrum Afrikas",lat:8.78,lng:25.51},{n:"Zentrum Asiens",lat:45.0,lng:100.0},{n:"Zentrum Europas",lat:54.9,lng:25.3},{n:"Zentrum Nordamerikas",lat:48.2,lng:-100.0},{n:"Zentrum S\u00fcdamerikas",lat:-14.2,lng:-51.0},{n:"Zentrum Ozeanien",lat:-27.0,lng:133.0}],
+  /* === Phase 216: Match-Kategorien (Schritt 3) === */
+  insel_match:[{n:"Gal\u00e1pagos-Inseln",c:"Ecuador"},{n:"Kanarische Inseln",c:"Spanien"},{n:"R\u00e9union",c:"Frankreich"},{n:"Gr\u00f6nland",c:"D\u00e4nemark"},{n:"Tasmanien",c:"Australien"},{n:"Bali",c:"Indonesien"},{n:"Korsika",c:"Frankreich"},{n:"Hokkaido",c:"Japan"},{n:"Luzon",c:"Philippinen"},{n:"Falklandinseln",c:"Vereinigtes K\u00f6nigreich"},{n:"R\u00fcgen",c:"Deutschland"},{n:"Sardinien",c:"Italien"},{n:"Kreta",c:"Griechenland"},{n:"Sizilien",c:"Italien"}],
+  ehemalige_hauptstaedte:[{n:"Bonn",c:"Deutschland"},{n:"Lagos",c:"Nigeria"},{n:"Almaty",c:"Kasachstan"},{n:"Yangon",c:"Myanmar"},{n:"Rio de Janeiro",c:"Brasilien"},{n:"Nanjing",c:"China"},{n:"Philadelphia",c:"USA"},{n:"Abidjan",c:"Elfenbeink\u00fcste"},{n:"Kyoto",c:"Japan"},{n:"St. Petersburg",c:"Russland"},{n:"Krakau",c:"Polen"},{n:"Karatschi",c:"Pakistan"},{n:"Melbourne",c:"Australien"},{n:"Samarkand",c:"Usbekistan"}],
+  philosophen:[{n:"Immanuel Kant",c:"Deutschland"},{n:"Ren\u00e9 Descartes",c:"Frankreich"},{n:"Platon",c:"Griechenland"},{n:"John Locke",c:"Vereinigtes K\u00f6nigreich"},{n:"Friedrich Nietzsche",c:"Deutschland"},{n:"Konfuzius",c:"China"},{n:"Karl Marx",c:"Deutschland"},{n:"David Hume",c:"Vereinigtes K\u00f6nigreich"},{n:"Ibn Sina (Avicenna)",c:"Iran"},{n:"Simone de Beauvoir",c:"Frankreich"},{n:"Jean-Paul Sartre",c:"Frankreich"},{n:"Sun Tzu",c:"China"},{n:"Baruch Spinoza",c:"Niederlande"},{n:"Ibn Rushd (Averroes)",c:"Marokko"},{n:"Socrates",c:"Griechenland"},{n:"Aristoteles",c:"Griechenland"}],
+  nationalpflanzen:[{n:"Kirschbl\u00fcte (Sakura)",c:"Japan"},{n:"Lotus",c:"Indien"},{n:"Ahorn",c:"Kanada"},{n:"Edelwei\u00df",c:"\u00d6sterreich"},{n:"Rose (Tudor)",c:"Vereinigtes K\u00f6nigreich"},{n:"Distel",c:"Schottland"},{n:"Hibiskus",c:"Malaysia"},{n:"Klee (Shamrock)",c:"Irland"},{n:"Sonnenblume",c:"Ukraine"},{n:"Orchidee (Vanda Miss Joaquim)",c:"Singapur"},{n:"Jasmin",c:"Tunesien"},{n:"Golden Wattle",c:"Australien"},{n:"Tulpe",c:"Niederlande"},{n:"Kaktus (Nopal)",c:"Mexiko"}],
+  nationaltiere:[{n:"K\u00e4nguru",c:"Australien"},{n:"Riesenpanda",c:"China"},{n:"Bengal-Tiger",c:"Indien"},{n:"Wei\u00dfkopfseeadler",c:"USA"},{n:"Biber",c:"Kanada"},{n:"Hahn (Gallo Gaulois)",c:"Frankreich"},{n:"Springbok",c:"S\u00fcdafrika"},{n:"Schneeleopard",c:"Pakistan"},{n:"Kiwi (Vogel)",c:"Neuseeland"},{n:"Elch",c:"Norwegen"},{n:"Jaguar",c:"Brasilien"},{n:"L\u00f6we",c:"Vereinigtes K\u00f6nigreich"},{n:"Braunb\u00e4r",c:"Russland"},{n:"Wei\u00dfer Elefant",c:"Thailand"},{n:"Adler",c:"Deutschland"}],
+  religionen:[{n:"Shinto",c:"Japan"},{n:"Hinduismus",c:"Indien"},{n:"Zoroastrismus",c:"Iran"},{n:"Sikhismus",c:"Indien"},{n:"Voodoo",c:"Benin"},{n:"Cao Dai",c:"Vietnam"},{n:"Bah\u00e1'\u00ed-Glaube",c:"Iran"},{n:"Jainismus",c:"Indien"},{n:"Taoismus",c:"China"},{n:"Tenrikyo",c:"Japan"},{n:"Aleviten",c:"T\u00fcrkei"},{n:"Yazidismus",c:"Irak"},{n:"Druzentum",c:"Libanon"}],
+  schriften:[{n:"Hangul",c:"S\u00fcdkorea"},{n:"Hiragana/Katakana",c:"Japan"},{n:"Devanagari",c:"Indien"},{n:"Arabische Schrift",c:"Saudi-Arabien"},{n:"Kyrillisch",c:"Russland"},{n:"Ge'ez-Schrift",c:"\u00c4thiopien"},{n:"Thai-Schrift",c:"Thailand"},{n:"Khmer-Schrift",c:"Kambodscha"},{n:"Armenische Schrift",c:"Armenien"},{n:"Georgische Schrift",c:"Georgien"},{n:"Hebr\u00e4isch",c:"Israel"},{n:"Sinhala",c:"Sri Lanka"},{n:"Burmesische Schrift",c:"Myanmar"},{n:"Mongolische Schrift",c:"Mongolei"}],
+  nationalsport_off:[{n:"Kabaddi (offiziell)",c:"Bangladesch"},{n:"Sumo (tradition.)",c:"Japan"},{n:"Tejo (offiziell)",c:"Kolumbien"},{n:"Muay Thai (offiziell)",c:"Thailand"},{n:"Polo (offiziell)",c:"Pakistan"},{n:"Hurling",c:"Irland"},{n:"Shinty",c:"Schottland"},{n:"Lacrosse (offiziell)",c:"Kanada"},{n:"Buzkashi",c:"Afghanistan"},{n:"Sepak Takraw",c:"Malaysia"},{n:"Basque Pelota",c:"Spanien"},{n:"Kendo",c:"Japan"}],
+  enklave:[{n:"Kaliningrad",c:"Russland"},{n:"Nakhchivan",c:"Aserbaidschan"},{n:"Ceuta",c:"Spanien"},{n:"Melilla",c:"Spanien"},{n:"Cabinda",c:"Angola"},{n:"Alaska",c:"USA"},{n:"B\u00fcsingen am Hochrhein",c:"Deutschland"},{n:"Campione d'Italia",c:"Italien"},{n:"Baarle-Hertog",c:"Belgien"},{n:"Vennbahn-Gebiet",c:"Belgien"}],
+  grenzfluesse:[{n:"Rhein (entspringt in)",c:"Schweiz"},{n:"Rio Grande (entspringt in)",c:"USA"},{n:"Mekong (entspringt in)",c:"China"},{n:"Amur (entspringt in)",c:"Russland"},{n:"Oder (entspringt in)",c:"Tschechien"},{n:"Uruguay (entspringt in)",c:"Brasilien"},{n:"Limpopo (entspringt in)",c:"S\u00fcdafrika"},{n:"Niger (entspringt in)",c:"Guinea"},{n:"Kongo (entspringt in)",c:"Sambia"},{n:"Tigris (entspringt in)",c:"T\u00fcrkei"},{n:"Euphrat (entspringt in)",c:"T\u00fcrkei"},{n:"Jordan (entspringt in)",c:"Syrien"}],
+  halbinseln:[{n:"Skandinavische Halbinsel",c:"Norwegen"},{n:"Iberische Halbinsel",c:"Spanien"},{n:"Arabische Halbinsel",c:"Saudi-Arabien"},{n:"Indische Halbinsel (Dekkan)",c:"Indien"},{n:"Koreanische Halbinsel",c:"S\u00fcdkorea"},{n:"Malaiische Halbinsel",c:"Malaysia"},{n:"Sinai-Halbinsel",c:"\u00c4gypten"},{n:"Krim-Halbinsel",c:"Ukraine"},{n:"Yucat\u00e1n-Halbinsel",c:"Mexiko"},{n:"Kamtschatka",c:"Russland"},{n:"Bretagne",c:"Frankreich"},{n:"Kola-Halbinsel",c:"Russland"}],
+  deltamuendungen:[{n:"Nil-Delta",c:"\u00c4gypten"},{n:"Mekong-Delta",c:"Vietnam"},{n:"Ganges-Brahmaputra-Delta",c:"Bangladesch"},{n:"Niger-Delta",c:"Nigeria"},{n:"Mississippi-Delta",c:"USA"},{n:"Okavango-Delta",c:"Botswana"},{n:"Irrawaddy-Delta",c:"Myanmar"},{n:"Indus-Delta",c:"Pakistan"},{n:"Donau-Delta",c:"Rum\u00e4nien"},{n:"Ebro-Delta",c:"Spanien"},{n:"Volga-Delta",c:"Russland"},{n:"Amazonas-M\u00fcndung",c:"Brasilien"}],
+  kaps:[{n:"Kap der Guten Hoffnung",c:"S\u00fcdafrika"},{n:"Kap Hoorn",c:"Chile"},{n:"Nordkapp",c:"Norwegen"},{n:"Kap Finisterre",c:"Spanien"},{n:"Kap Dezhnev",c:"Russland"},{n:"Kap Agulhas",c:"S\u00fcdafrika"},{n:"Cabo da Roca",c:"Portugal"},{n:"Kap York",c:"Australien"},{n:"Kap Matapan",c:"Griechenland"},{n:"Kap Canaveral",c:"USA"},{n:"Kap Columbia",c:"Kanada"},{n:"Ras Ben Sakka",c:"Tunesien"}],
+  meerbusen:[{n:"Golf von Mexiko",c:"Mexiko"},{n:"Golf von Guinea",c:"Nigeria"},{n:"Golf von Bengalen",c:"Indien"},{n:"Golf von Alaska",c:"USA"},{n:"Golf von Aden",c:"Jemen"},{n:"Golf von Tonkin",c:"Vietnam"},{n:"Bottnischer Meerbusen",c:"Finnland"},{n:"Hudsonbai",c:"Kanada"},{n:"Golf von Persien",c:"Iran"},{n:"Golf von Korinth",c:"Griechenland"},{n:"Biskaya",c:"Frankreich"},{n:"Golf von Oman",c:"Oman"}],
+  inselgruppen:[{n:"Azoren",c:"Portugal"},{n:"Spitzbergen (Svalbard)",c:"Norwegen"},{n:"F\u00e4r\u00f6er",c:"D\u00e4nemark"},{n:"Kerguelen-Inseln",c:"Frankreich"},{n:"Juan-Fern\u00e1ndez-Inseln",c:"Chile"},{n:"Weihnachtsinsel",c:"Australien"},{n:"Wallis und Futuna",c:"Frankreich"},{n:"Turks- und Caicosinseln",c:"Vereinigtes K\u00f6nigreich"},{n:"Neukaledonien",c:"Frankreich"},{n:"Cookinseln",c:"Neuseeland"},{n:"Amerikanische Samoa",c:"USA"},{n:"Clipperton",c:"Frankreich"}],
+  gebirge_match:[{n:"Himalaja",c:"Nepal"},{n:"Andes",c:"Peru"},{n:"Rocky Mountains",c:"USA"},{n:"Kaukasus",c:"Georgien"},{n:"Ural",c:"Russland"},{n:"Atlas",c:"Marokko"},{n:"Alpen",c:"Schweiz"},{n:"Pyren\u00e4en",c:"Spanien"},{n:"Skandinavische Gebirge",c:"Norwegen"},{n:"Pamir",c:"Tadschikistan"},{n:"Tian Shan",c:"Kirgisistan"},{n:"Sierra Madre",c:"Mexiko"},{n:"Drakensberg",c:"S\u00fcdafrika"}],
+  seen_match:[{n:"Baikalsee",c:"Russland"},{n:"Victoriasee",c:"Tansania"},{n:"Tanganjikasee",c:"Tansania"},{n:"Ontariosee",c:"Kanada"},{n:"Huronsee",c:"Kanada"},{n:"Balaton",c:"Ungarn"},{n:"Genfer See",c:"Schweiz"},{n:"Bodensee",c:"Deutschland"},{n:"Titicacasee",c:"Peru"},{n:"Chapala-See",c:"Mexiko"},{n:"Biwa-See",c:"Japan"},{n:"Malaŵisee",c:"Malawi"}],
+  automarken:[{n:"Toyota",c:"Japan"},{n:"BMW",c:"Deutschland"},{n:"Mercedes-Benz",c:"Deutschland"},{n:"Volkswagen",c:"Deutschland"},{n:"Ferrari",c:"Italien"},{n:"Renault",c:"Frankreich"},{n:"Volvo",c:"Schweden"},{n:"Hyundai",c:"S\u00fcdkorea"},{n:"Tata",c:"Indien"},{n:"SEAT",c:"Spanien"},{n:"\u0160koda",c:"Tschechien"},{n:"Dacia",c:"Rum\u00e4nien"},{n:"Lada",c:"Russland"},{n:"Fiat",c:"Italien"},{n:"Jeep",c:"USA"},{n:"Kia",c:"S\u00fcdkorea"},{n:"Subaru",c:"Japan"},{n:"MINI",c:"Vereinigtes K\u00f6nigreich"}],
+  fluggesellschaften:[{n:"Lufthansa",c:"Deutschland"},{n:"Emirates",c:"Vereinigte Arabische Emirate"},{n:"Singapore Airlines",c:"Singapur"},{n:"ANA",c:"Japan"},{n:"KLM",c:"Niederlande"},{n:"Air France",c:"Frankreich"},{n:"British Airways",c:"Vereinigtes K\u00f6nigreich"},{n:"Turkish Airlines",c:"T\u00fcrkei"},{n:"Ethiopian Airlines",c:"\u00c4thiopien"},{n:"Qantas",c:"Australien"},{n:"Air Canada",c:"Kanada"},{n:"LOT",c:"Polen"},{n:"Iberia",c:"Spanien"},{n:"Finnair",c:"Finnland"},{n:"Aer Lingus",c:"Irland"},{n:"LATAM",c:"Chile"},{n:"Garuda",c:"Indonesien"},{n:"Korean Air",c:"S\u00fcdkorea"}],
+  bahnstrecken:[{n:"Transsibirische Eisenbahn",c:"Russland"},{n:"Rocky Mountaineer",c:"Kanada"},{n:"Glacier Express",c:"Schweiz"},{n:"Bernina-Express",c:"Schweiz"},{n:"Shinkansen Tokio-Osaka",c:"Japan"},{n:"Indian Pacific",c:"Australien"},{n:"TGV Paris-Lyon",c:"Frankreich"},{n:"Darjeeling-Himalaya-Bahn",c:"Indien"},{n:"Inlandsbanen",c:"Norwegen"},{n:"Douro-Linie",c:"Portugal"},{n:"Death Railway",c:"Thailand"},{n:"Al-Hejaz-Bahn",c:"Saudi-Arabien"}],
+  hafen_world:[{n:"Hafen Rotterdam",c:"Niederlande"},{n:"Hafen Shanghai",c:"China"},{n:"Hafen Singapur",c:"Singapur"},{n:"Hafen Hamburg",c:"Deutschland"},{n:"Hafen Antwerpen",c:"Belgien"},{n:"Hafen Dubai (Jebel Ali)",c:"Vereinigte Arabische Emirate"},{n:"Port of Los Angeles",c:"USA"},{n:"Port of Santos",c:"Brasilien"},{n:"Hafen Busan",c:"S\u00fcdkorea"},{n:"Hafen Colombo",c:"Sri Lanka"},{n:"Hafen Piräus",c:"Griechenland"},{n:"Port Klang",c:"Malaysia"}],
+  kanaele:[{n:"Suezkanal",c:"\u00c4gypten"},{n:"Panamakanal",c:"Panama"},{n:"Kieler Kanal",c:"Deutschland"},{n:"Canal du Midi",c:"Frankreich"},{n:"Grand Canal",c:"China"},{n:"Karakum-Kanal",c:"Turkmenistan"},{n:"Korinth-Kanal",c:"Griechenland"},{n:"G\u00f6takanal",c:"Schweden"},{n:"Rideau-Kanal",c:"Kanada"},{n:"Main-Donau-Kanal",c:"Deutschland"},{n:"Albert-Kanal",c:"Belgien"}],
+  reedereien:[{n:"Maersk",c:"D\u00e4nemark"},{n:"MSC",c:"Schweiz"},{n:"CMA CGM",c:"Frankreich"},{n:"COSCO",c:"China"},{n:"Hapag-Lloyd",c:"Deutschland"},{n:"Evergreen",c:"Taiwan"},{n:"Yang Ming",c:"Taiwan"},{n:"HMM",c:"S\u00fcdkorea"},{n:"ZIM",c:"Israel"},{n:"Stena Line",c:"Schweden"},{n:"Pacific International Lines",c:"Singapur"}],
+  autobahnen_beruhmt:[{n:"Autobahn (unbegrenzt)",c:"Deutschland"},{n:"Autostrada",c:"Italien"},{n:"Autoroute",c:"Frankreich"},{n:"Motorway",c:"Vereinigtes K\u00f6nigreich"},{n:"Interstate Highway",c:"USA"},{n:"Autopista",c:"Spanien"},{n:"Snelweg",c:"Niederlande"},{n:"Autoput",c:"Serbien"},{n:"Expressway",c:"China"},{n:"Jalan Tol",c:"Indonesien"},{n:"Autoestrada",c:"Portugal"},{n:"Autostrada (A1 Amber Highway)",c:"Polen"}],
+  metrostaedte:[{n:"Tokyo Metro",c:"Japan"},{n:"Metro Moskau",c:"Russland"},{n:"London Underground",c:"Vereinigtes K\u00f6nigreich"},{n:"Metro Paris",c:"Frankreich"},{n:"Metro New York (MTA)",c:"USA"},{n:"Metro Seoul",c:"S\u00fcdkorea"},{n:"Metro Shanghai",c:"China"},{n:"Metro Madrid",c:"Spanien"},{n:"U-Bahn Berlin",c:"Deutschland"},{n:"Metro Kairo",c:"\u00c4gypten"},{n:"Metro S\u00e3o Paulo",c:"Brasilien"},{n:"Metro Buenos Aires",c:"Argentinien"},{n:"Metro Mumbai",c:"Indien"},{n:"Metro Peking",c:"China"}],
+  luft_rekorde:[{n:"L\u00e4ngste Nonstop-Strecke",c:"Singapur"},{n:"Erster Jet-Passagierflug (Comet)",c:"Vereinigtes K\u00f6nigreich"},{n:"H\u00f6chster Flughafen (4411m)",c:"China"},{n:"Tiefster Flughafen (Schiphol -4m)",c:"Niederlande"},{n:"Meiste Flugh\u00e4fen weltweit",c:"USA"},{n:"Erste \u00dcberschallpassagierflg. (Concorde)",c:"Frankreich"},{n:"Gr\u00f6\u00dfter Passagier-Jet (A380)",c:"Frankreich"},{n:"Meistgeflogene Route KUL-SIN",c:"Malaysia"}],
+  /* === Phase 216: Schritt 4 — Spezial-Kategorien === */
+  sort_kontinente:[{n:"Deutschland",c:"Europa"},{n:"Japan",c:"Asien"},{n:"Brasilien",c:"S\u00fcdamerika"},{n:"\u00c4gypten",c:"Afrika"},{n:"Kanada",c:"Nordamerika"},{n:"Australien",c:"Ozeanien"},{n:"China",c:"Asien"},{n:"Mexiko",c:"Nordamerika"},{n:"S\u00fcdafrika",c:"Afrika"},{n:"Indien",c:"Asien"},{n:"Frankreich",c:"Europa"},{n:"Argentinien",c:"S\u00fcdamerika"},{n:"USA",c:"Nordamerika"},{n:"Russland",c:"Asien"},{n:"Nigeria",c:"Afrika"},{n:"Norwegen",c:"Europa"},{n:"Neuseeland",c:"Ozeanien"},{n:"Peru",c:"S\u00fcdamerika"},{n:"Iran",c:"Asien"},{n:"Kenia",c:"Afrika"}],
+  sort_ozeane:[{n:"Brasilien",c:"Atlantik"},{n:"Japan",c:"Pazifik"},{n:"Indien",c:"Indischer Ozean"},{n:"Kanada",c:"Atlantik"},{n:"Australien",c:"Indischer Ozean"},{n:"USA",c:"Pazifik"},{n:"S\u00fcdafrika",c:"Atlantik"},{n:"Indonesien",c:"Pazifik"},{n:"Norwegen",c:"Atlantik"},{n:"Neuseeland",c:"Pazifik"},{n:"Thailand",c:"Pazifik"},{n:"Senegal",c:"Atlantik"},{n:"Oman",c:"Indischer Ozean"},{n:"Chile",c:"Pazifik"},{n:"Argentinien",c:"Atlantik"}],
+  mercator_illusion:[{n:"Gr\u00f6nland sieht auf Mercator gr\u00f6\u00dfer aus als Afrika",c:"Nein"},{n:"Russland ist auf Mercator verzerrt gr\u00f6\u00dfer als in Realit\u00e4t",c:"Ja"},{n:"Australien ist in Wirklichkeit kleiner als die USA",c:"Nein"},{n:"Alaska wirkt auf Mercator kleiner als Mexico",c:"Nein"},{n:"Skandinavien sieht gr\u00f6\u00dfer aus als Indien",c:"Ja"},{n:"Antarktika ist auf Mercator extrem vergr\u00f6\u00dfert",c:"Ja"},{n:"Kanada ist gr\u00f6\u00dfer als China",c:"Ja"},{n:"Greenland ist gr\u00f6\u00dfer als Mexiko in Wirklichkeit",c:"Nein"}],
+  distanz_schaetzer:[{n:"Berlin \u2192 Paris",c:"880 km"},{n:"New York \u2192 Los Angeles",c:"3940 km"},{n:"Sydney \u2192 Perth",c:"3290 km"},{n:"London \u2192 Tokio",c:"9560 km"},{n:"Kairo \u2192 Kapstadt",c:"7700 km"},{n:"Buenos Aires \u2192 Santiago",c:"1140 km"},{n:"Moskau \u2192 Wladiwostok",c:"6430 km"},{n:"Delhi \u2192 Mumbai",c:"1400 km"},{n:"Amsterdam \u2192 Madrid",c:"1760 km"},{n:"Toronto \u2192 Vancouver",c:"3360 km"}],
+  flugzeit_schaetzer:[{n:"Frankfurt \u2192 New York",c:"9 Std."},{n:"London \u2192 Sydney",c:"21 Std."},{n:"Paris \u2192 Tokio",c:"12 Std."},{n:"Dubai \u2192 Los Angeles",c:"16 Std."},{n:"Madrid \u2192 Buenos Aires",c:"14 Std."},{n:"Amsterdam \u2192 Singapur",c:"12 Std."},{n:"Moskau \u2192 Peking",c:"8 Std."},{n:"New York \u2192 S\u00e3o Paulo",c:"10 Std."},{n:"Berlin \u2192 Bangkok",c:"11 Std."},{n:"Istanbul \u2192 Tokio",c:"11 Std."}],
+  breitengrad_match:[{n:"Madrid & Peking",c:"Spanien"},{n:"Berlin & Moskau",c:"Deutschland"},{n:"New York & Madrid",c:"USA"},{n:"Buenos Aires & Sydney",c:"Argentinien"},{n:"Kairo & Los Angeles",c:"\u00c4gypten"},{n:"Mumbai & Nairobi",c:"Indien"},{n:"S\u00e3o Paulo & Melbourne",c:"Brasilien"},{n:"Tokio & Seoul",c:"Japan"},{n:"Oslo & Anchorage",c:"Norwegen"},{n:"Cape Town & Santiago",c:"S\u00fcdafrika"}]
 };
+
+/* Phase 216: Fixed-pool Match — distractors drawn from an explicit answer pool */
+function genFixedPoolMatchQ(cat,ansPool){
+  const data=KULTUR_DATA[cat];
+  if(!data||!data.length||!ansPool||ansPool.length<2)return null;
+  const idx=~~(rng()*data.length);
+  const item=data[idx];
+  const cor=item.c;
+  const dis=[...new Set(ansPool.filter(a=>a!==cor))].sort(()=>rng()-.5).slice(0,3);
+  if(dis.length<3){const extra=data.filter((_,i)=>i!==idx).map(d=>d.c).filter(c=>c!==cor);dis.push(...extra.slice(0,3-dis.length));}
+  if(dis.length<3)return null;
+  const modeObj=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id===("uk_"+cat)||m.id===cat)||{};
+  return{type:"uk_match",cat,prompt:modeObj.prompt||"",subj:item.n,ans:cor,opts:sh([cor,...dis.slice(0,3)]),lid:"ukfp_"+cat+"_"+idx,cc:null};
+}
 
 /* Phase 211: Universal Match generator — "From which country does X come?" */
 function genUniversalMatchQ(cat){
@@ -7265,7 +7452,11 @@ function genUniversalMatchQ(cat){
   /* Build distractor pool: all unique countries across ALL match categories */
   const _matchCats=["getraenke","streetfood","kaese","suessspeisen","kaffee","taenze","kleidung",
     "instrumente","literatur","wahrzeichen","feste","begruessung","feiertage","erfindungen",
-    "exporte","blumen","entdecker","sport","brettspiele"];
+    "exporte","blumen","entdecker","sport","brettspiele",
+    "insel_match","ehemalige_hauptstaedte","philosophen","nationalpflanzen","nationaltiere","religionen","schriften","nationalsport_off",
+    "enklave","grenzfluesse","halbinseln","deltamuendungen","kaps","meerbusen","inselgruppen","gebirge_match","seen_match",
+    "automarken","fluggesellschaften","bahnstrecken","hafen_world","kanaele","reedereien","autobahnen_beruhmt","metrostaedte","luft_rekorde",
+    "breitengrad_match"];
   const allC=[...new Set(_matchCats.flatMap(k=>(KULTUR_DATA[k]||[]).map(d=>d.c)).filter(c=>c!==cor))];
   const wrong=sh(allC).slice(0,3);
   if(wrong.length<3)return null;
@@ -7448,6 +7639,66 @@ const GEN={
   uk_bruecken:()=>genUniversalPinQ("bruecken"),
   uk_kirchen:()=>genUniversalPinQ("gotteshaeuser"),
   uk_wolkenkratzer:genUniversalHLQ,
+  /* Phase 216 Schritt 1: Pin */
+  uk_wuesten:()=>genUniversalPinQ("wuesten"),
+  uk_berggipfel:()=>genUniversalPinQ("berggipfel"),
+  uk_meerengen:()=>genUniversalPinQ("meerengen"),
+  uk_wasserfaelle:()=>genUniversalPinQ("wasserfaelle"),
+  uk_canyons:()=>genUniversalPinQ("canyons"),
+  uk_hohe_stadien:()=>genUniversalPinQ("hohe_stadien"),
+  uk_leichtathletik_wm:()=>genUniversalPinQ("leichtathletik_wm"),
+  uk_surf_spots:()=>genUniversalPinQ("surf_spots"),
+  uk_kontinent_mitte:()=>genUniversalPinQ("kontinent_mitte"),
+  /* Phase 216 Schritt 2: H/L Beta */
+  hl_b_total_lang:()=>genHLBeta("hl_b_total_lang"),
+  hl_b_nobel:()=>genHLBeta("hl_b_nobel"),
+  hl_b_medals:()=>genHLBeta("hl_b_medals"),
+  hl_b_ns_km:()=>genHLBeta("hl_b_ns_km"),
+  hl_b_bikes:()=>genHLBeta("hl_b_bikes"),
+  hl_b_land_border:()=>genHLBeta("hl_b_land_border"),
+  hl_b_coffee:()=>genHLBeta("hl_b_coffee"),
+  hl_b_military:()=>genHLBeta("hl_b_military"),
+  hl_b_renewable:()=>genHLBeta("hl_b_renewable"),
+  /* Phase 216 Schritt 3 A: Geo-Match */
+  uk_insel_match:()=>genUniversalMatchQ("insel_match"),
+  uk_ehemalige_hauptstaedte:()=>genUniversalMatchQ("ehemalige_hauptstaedte"),
+  /* Phase 216 Schritt 3 B: Kultur-Match */
+  uk_philosophen:()=>genUniversalMatchQ("philosophen"),
+  uk_nationalpflanzen:()=>genUniversalMatchQ("nationalpflanzen"),
+  uk_nationaltiere:()=>genUniversalMatchQ("nationaltiere"),
+  uk_religionen:()=>genUniversalMatchQ("religionen"),
+  uk_schriften:()=>genUniversalMatchQ("schriften"),
+  /* Phase 216 Schritt 3 C: Sport */
+  uk_nationalsport_off:()=>genUniversalMatchQ("nationalsport_off"),
+  /* Phase 216 Schritt 3 D: Nachbarn-Match */
+  uk_enklave:()=>genUniversalMatchQ("enklave"),
+  uk_grenzfluesse:()=>genUniversalMatchQ("grenzfluesse"),
+  uk_halbinseln:()=>genUniversalMatchQ("halbinseln"),
+  uk_deltamuendungen:()=>genUniversalMatchQ("deltamuendungen"),
+  uk_kaps:()=>genUniversalMatchQ("kaps"),
+  uk_meerbusen:()=>genUniversalMatchQ("meerbusen"),
+  uk_inselgruppen:()=>genUniversalMatchQ("inselgruppen"),
+  uk_gebirge_match:()=>genUniversalMatchQ("gebirge_match"),
+  uk_seen_match:()=>genUniversalMatchQ("seen_match"),
+  /* Phase 216 Schritt 3 E: Mobilitaet-Match */
+  uk_automarken:()=>genUniversalMatchQ("automarken"),
+  uk_fluggesellschaften:()=>genUniversalMatchQ("fluggesellschaften"),
+  uk_bahnstrecken:()=>genUniversalMatchQ("bahnstrecken"),
+  uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
+  uk_kanaele:()=>genUniversalMatchQ("kanaele"),
+  uk_reedereien:()=>genUniversalMatchQ("reedereien"),
+  uk_autobahnen_beruhmt:()=>genUniversalMatchQ("autobahnen_beruhmt"),
+  uk_metrostaedte:()=>genUniversalMatchQ("metrostaedte"),
+  uk_luft_rekorde:()=>genUniversalMatchQ("luft_rekorde"),
+  /* Phase 216 Schritt 4: Spezial */
+  uk_sort_kontinente:()=>genFixedPoolMatchQ("sort_kontinente",["Europa","Asien","Afrika","Nordamerika","S\u00fcdamerika","Ozeanien"]),
+  uk_sort_ozeane:()=>genFixedPoolMatchQ("sort_ozeane",["Atlantik","Pazifik","Indischer Ozean","Arktischer Ozean"]),
+  uk_schatten_gedreht:genOutlineQ,
+  uk_mercator_illusion:()=>genFixedPoolMatchQ("mercator_illusion",["Ja","Nein"]),
+  uk_kartenausschnitt:genMapReverseQ,
+  uk_distanz_schaetzer:()=>genFixedPoolMatchQ("distanz_schaetzer",["880 km","3940 km","3290 km","9560 km","7700 km","1140 km","6430 km","1400 km","1760 km","3360 km"]),
+  uk_flugzeit_schaetzer:()=>genFixedPoolMatchQ("flugzeit_schaetzer",["9 Std.","21 Std.","12 Std.","16 Std.","14 Std.","8 Std.","10 Std.","11 Std."]),
+  uk_breitengrad_match:()=>genUniversalMatchQ("breitengrad_match"),
 };
 
 /* GAME LOOP */
@@ -9275,7 +9526,7 @@ if(mode==="slf"&&S.ph==="playing"){
   const pu=loadPU();
   /* P136-fix: 50/50 disabled for comp_ modes -- pre-declared vars, no nested escaping */
   /* Phase 207: dynamic — disabled for ANY question with <=2 options, regardless of mode */
-  const _is2ans=S.q&&(S.q.opts&&S.q.opts.length<=2||!!(S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_')||S.q.type==='beta_hl'||S.q.type==='airport_pin'||S.q.type==='uk_pin')));
+  const _is2ans=S.q&&(S.q.opts&&S.q.opts.length<=2||!!(S.q.type&&(S.q.type.startsWith('comp_')||S.q.type.startsWith('hl_b_')||S.q.type==='beta_hl'||S.q.type==='airport_pin'||S.q.type==='uk_pin'||S.q.type==='uk_kartenausschnitt')));
   const _j5title=_is2ans?'Kein 50/50 (nur 2 Optionen)':'50/50-Joker ('+(pu.five0||0)+' \u00fcbrig)';
   const _j5label=_is2ans?'–':'('+(pu.five0||0)+')';
   const _j5sty=_is2ans?'opacity:.35;pointer-events:none':'';
@@ -10974,6 +11225,15 @@ window.toggleAccordion=function(header,catId){
     content.style.display='none';
     if(arrow)arrow.style.transform='rotate(0deg)';
   } else {
+    /* Phase 216: single-open accordion — close all others first */
+    document.querySelectorAll('.accordion-content.open,.acc-body.open').forEach(function(el){
+      if(el!==content){
+        el.classList.remove('open');
+        el.style.display='none';
+        var sib=el.previousElementSibling;
+        if(sib){var a=sib.querySelector('.acc-arrow');if(a)a.style.transform='rotate(0deg)';}
+      }
+    });
     var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
     content.style.cssText='display:block;padding:0;width:100%;box-sizing:border-box';
     content.classList.add('open');
