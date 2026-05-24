@@ -2696,6 +2696,22 @@ const MODES=[
   {id:"river_map",   icon:"\u{1F30A}",title:"\u{1F9EA} Fl\u00fcsse pinnen",group:"pure_geo", prompt:"In welchem Land entspringt dieser Fluss?",    desc:"Die gr\u00f6\u00dften Fl\u00fcsse der Welt zuordnen"},
   {id:"unesco_map",  icon:"\u{1F3DB}",title:"\u{1F9EA} UNESCO Karte",       group:"pure_geo", prompt:"In welchem Land liegt dieses Welterbe?",      desc:"63 UNESCO-Welterbest\u00e4tten lokalisieren"},
   {id:"airport_map", icon:"\u2708",   title:"\u{1F9EA} Flugh\u00e4fen",    group:"airports", prompt:"In welchem Land liegt dieser Flughafen?",     desc:"40 Weltflugh\u00e4fen per IATA-Code zuordnen"},
+  /* PHASE204_MODES */
+  {id:"flugrouten_duell",    icon:"\u2708\uFE0F",title:"Flugrouten-Duell",          group:"airports",prompt:"Welche Flugroute ist l\u00e4nger?",              desc:"Zwei Flugrouten per Haversine vergleichen"},
+  {id:"inlandsflug_intl",    icon:"\u{1F30D}",    title:"Inland oder International?",group:"airports",prompt:"Inlandsflug oder internationaler Flug?",          desc:"Zwei St\u00e4dte -- gleiche L\u00e4nder?"},
+  {id:"sunrise_guesser",     icon:"\u{1F305}",    title:"Fr\u00fchere Sonne?",       group:"airports",prompt:"In welcher Stadt geht die Sonne fr\u00fcher auf?",desc:"L\u00e4ngsgrad = Sonnenaufgang"},
+  {id:"aequator_magnet",     icon:"\u{1F4CD}",    title:"\u00c4quator-Magnet",       group:"airports",prompt:"Welche Stadt liegt n\u00e4her am \u00c4quator?",  desc:"Breitengrad-Abstand zum \u00c4quator"},
+  {id:"kontinent_klicker",   icon:"\u{1F5FA}",    title:"Kontinent-Klicker",          group:"airports",prompt:"Auf welchem Kontinent liegt diese Stadt?",         desc:"Stadtname \u2192 Kontinent (5 Sek)"},
+  {id:"hauptstadt_distanz",  icon:"\u{1F3DB}",    title:"Hauptstadt-Distanz",         group:"airports",prompt:"Wie weit liegt die Stadt von der Hauptstadt?",     desc:"\u00dcber oder unter 500 km zur Landeshauptstadt"},
+  {id:"naechster_airport",   icon:"\u{1F6EC}",    title:"N\u00e4chster Flughafen",   group:"airports",prompt:"Welcher Flughafen liegt dieser Stadt am n\u00e4chsten?",desc:"Haversine-Distanz zu 40 Weltflugh\u00e4fen"},
+  {id:"iata_reverse",        icon:"\u{1F194}",    title:"IATA Reverse",               group:"airports",prompt:"Zu welcher Stadt geh\u00f6rt dieser IATA-Code?",  desc:"IATA-Badge \u2192 Stadtname"},
+  {id:"jetlag_rechner",      icon:"\u23F0",        title:"Jetlag-Rechner",             group:"airports",prompt:"Wie sp\u00e4t ist es bei der Landung Ortszeit?",  desc:"Flugzeit + Zeitzone = Lokalzeit"},
+  {id:"kuehlschrank_backofen",icon:"\u{1F321}\uFE0F",title:"K\u00fchlschrank vs. Backofen",group:"airports",prompt:"Welcher Ort ist w\u00e4rmer im Jahresmittel?",desc:"Jahresdurchschnittstemperaturen vergleichen"},
+  {id:"regen_radar",         icon:"\u{1F327}\uFE0F",title:"Regen-Radar",            group:"airports",prompt:"Wo regnet es mehr Tage im Jahr?",                 desc:"Regentage pro Jahr vergleichen"},
+  {id:"hoehenmeter_schaetzer",icon:"\u26F0",       title:"H\u00f6henmeter-Sch\u00e4tzer",group:"airports",prompt:"Welcher Ort liegt h\u00f6her \u00fcber dem Meer?",desc:"Stadtaltitude vergleichen"},
+  {id:"klima_ausreisser",    icon:"\u{1F9ED}",    title:"Klima-Ausrei\u00dfer",      group:"airports",prompt:"Welche Stadt ist klimatisch der Ausrei\u00dfer?", desc:"Klimatischen Ausrei\u00dfer aus 4 St\u00e4dten finden"},
+  {id:"insel_festland",      icon:"\u{1F3DD}",    title:"Insel oder Festland?",       group:"airports",prompt:"Ist das ein Inselstaat oder Festlandsland?",      desc:"Inselstaaten von Festlandsstaaten unterscheiden"},
+  {id:"sprachen_kompass",    icon:"\u{1F4AC}",    title:"Sprachen-Kompass",           group:"airports",prompt:"In welchem Land sagt man so Hallo?",              desc:"Gru\u00dfwort \u2192 Herkunftsland"},
 
   {id:"b21",icon:"\u{1F5FA}",title:"\u{1F9EA} Sandwich-Laender",     group:"neighbors",prompt:"Welches Land ist von diesen umschlossen?",            desc:"Eingeschlossene Laender erkennen"},
   {id:"b22",icon:"\u{1F697}",title:"\u{1F9EA} Transit-Route",         group:"neighbors",prompt:"Welches Land muss man durchqueren?",                  desc:"Pflicht-Transitlaender kennen"},
@@ -2724,7 +2740,7 @@ const MODE_CATS={
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare"],cost:0},
-  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz"],cost:0},
+  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","aequator_magnet","kontinent_klicker","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","insel_festland","sprachen_kompass"]/* PHASE204_CATS */,cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60"],cost:0},
   sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20","derby_hotspots","eishockey_nationen","f1_historisch","tdf_paesse","olympia_winter_historie","wm_gastgeber","wm_finalstadien","weltmeister_nationen","fussball_legenden","road_to_2026","frauen_wm_meilensteine","sommerspiele_metropolen","winter_exoten_klassiker","olympische_rekorde","olympia_hoehe","boykott_spiele","em_gastgeber_historie","em_finalstadien"],cost:0},
@@ -5360,6 +5376,86 @@ function genOutlineQ(){
 /* EU-KENNZEICHEN GENERATORS (Phase 23B) – smart same-country distractors */
 
 
+/* PHASE204_DATA_CONSTANTS */
+const KLIMA_TEMP_DATA=[
+  {n:"Jakutsk (Russland)",temp:-8.8},{n:"Ulaanbaatar (Mongolei)",temp:-0.4},
+  {n:"Kairo",temp:22.1},{n:"Bangkok",temp:28.6},{n:"Dschidda (Saudi-Arab.)",temp:28.0},
+  {n:"Oslo",temp:5.7},{n:"Miami",temp:25.1},{n:"Nairobi",temp:19.2},
+  {n:"Singapur",temp:27.0},{n:"Moskau",temp:5.8},{n:"Reykjavik",temp:4.3},
+  {n:"Sydney",temp:17.7},{n:"Buenos Aires",temp:18.0}
+];
+const REGEN_DATA=[
+  {n:"Arica (Chile)",days:0.5},{n:"Mawsynram (Indien)",days:180},
+  {n:"London",days:110},{n:"Buenaventura (Kolumbien)",days:258},
+  {n:"Kairo",days:12},{n:"Singapur",days:178},{n:"Berlin",days:106},
+  {n:"Mumbai",days:72},{n:"Lima (Peru)",days:9},{n:"Bergen (Norwegen)",days:231}
+];
+const HOEHEN_DATA=[
+  {n:"La Paz (Bolivien)",alt:3640},{n:"Quito (Ecuador)",alt:2850},
+  {n:"Denver (USA)",alt:1609},{n:"Mexiko-Stadt",alt:2240},
+  {n:"Amsterdam",alt:-2},{n:"Baku",alt:-28},{n:"Zuerich",alt:408},
+  {n:"Nairobi",alt:1795},{n:"Lhasa (Tibet)",alt:3650},
+  {n:"Addis Abeba",alt:2355},{n:"Bogota",alt:2600},{n:"Madrid",alt:667}
+];
+const KLIMA_AUSREISSER_DATA=[
+  {q:"Welche Stadt ist klimatisch ein Ausreisser?",
+   cities:[{n:"Reykjavik"},{n:"Oslo"},{n:"Stockholm"},{n:"Dubai",t:true}]},
+  {q:"Welche Stadt passt klimatisch nicht dazu?",
+   cities:[{n:"Singapur"},{n:"Bangkok"},{n:"Kuala Lumpur"},{n:"Moskau",t:true}]},
+  {q:"Welche Stadt ist ein Klima-Ausreisser?",
+   cities:[{n:"Kairo"},{n:"Riad"},{n:"Doha"},{n:"London",t:true}]},
+  {q:"Welche Stadt ist klimatisch unpassend?",
+   cities:[{n:"Buenos Aires"},{n:"Santiago"},{n:"Lima"},{n:"Anchorage",t:true}]},
+  {q:"Welche Stadt ist klimatisch der Ausreisser?",
+   cities:[{n:"Nairobi"},{n:"Addis Abeba"},{n:"Kampala"},{n:"Jakutsk",t:true}]},
+  {q:"Welche Stadt passt nicht zum Rest?",
+   cities:[{n:"Vancouver"},{n:"Seattle"},{n:"Portland"},{n:"Phoenix",t:true}]}
+];
+const INSEL_DATA=[
+  {n:"Island",island:true},{n:"Australien",island:true},{n:"Neuseeland",island:true},
+  {n:"Japan",island:true},{n:"Kuba",island:true},{n:"Irland",island:true},
+  {n:"Sri Lanka",island:true},{n:"Indonesien",island:true},{n:"Philippinen",island:true},
+  {n:"Madagaskar",island:true},{n:"Taiwan",island:true},
+  {n:"Deutschland",island:false},{n:"Frankreich",island:false},{n:"Spanien",island:false},
+  {n:"Polen",island:false},{n:"Russland",island:false},{n:"China",island:false},
+  {n:"Brasilien",island:false},{n:"Indien",island:false},{n:"Kanada",island:false},
+  {n:"USA",island:false},{n:"Mexiko",island:false},{n:"Argentinien",island:false},
+  {n:"Kenia",island:false},{n:"Nigeria",island:false}
+];
+const SPRACHEN_DATA=[
+  {word:"Hej",lang:"Schwedisch",country:"Schweden"},
+  {word:"Ciao",lang:"Italienisch",country:"Italien"},
+  {word:"Bonjour",lang:"Franzoesisch",country:"Frankreich"},
+  {word:"Ola",lang:"Portugiesisch",country:"Brasilien"},
+  {word:"Privyet",lang:"Russisch",country:"Russland"},
+  {word:"Konnichiwa",lang:"Japanisch",country:"Japan"},
+  {word:"Merhaba",lang:"Tuerkisch",country:"Tuerkei"},
+  {word:"Shalom",lang:"Hebraeisch",country:"Israel"},
+  {word:"Anyoung",lang:"Koreanisch",country:"Suedkorea"},
+  {word:"Ni hao",lang:"Mandarin",country:"China"},
+  {word:"Namaste",lang:"Hindi",country:"Indien"},
+  {word:"Marhaba",lang:"Arabisch",country:"Aegypten"},
+  {word:"Salam",lang:"Persisch",country:"Iran"},
+  {word:"Sawubona",lang:"Zulu",country:"Suedafrika"},
+  {word:"Jambo",lang:"Swahili",country:"Kenia"},
+  {word:"Sabaidee",lang:"Laotisch",country:"Laos"},
+  {word:"Sawasdee",lang:"Thailaendisch",country:"Thailand"},
+  {word:"Xin chao",lang:"Vietnamesisch",country:"Vietnam"}
+];
+const TIMEZONE_DATA=[
+  {city:"Berlin",country:"Deutschland",utc:1},{city:"London",country:"Grossbritannien",utc:0},
+  {city:"Moskau",country:"Russland",utc:3},{city:"Dubai",country:"VAE",utc:4},
+  {city:"Mumbai",country:"Indien",utc:5.5},{city:"Bangkok",country:"Thailand",utc:7},
+  {city:"Singapur",country:"Singapur",utc:8},{city:"Tokio",country:"Japan",utc:9},
+  {city:"Sydney",country:"Australien",utc:10},{city:"Auckland",country:"Neuseeland",utc:12},
+  {city:"New York",country:"USA (Ost)",utc:-5},{city:"Chicago",country:"USA (Mitte)",utc:-6},
+  {city:"Denver",country:"USA (Berg)",utc:-7},{city:"Los Angeles",country:"USA (West)",utc:-8},
+  {city:"Honolulu",country:"Hawaii",utc:-10},{city:"Sao Paulo",country:"Brasilien",utc:-3},
+  {city:"Buenos Aires",country:"Argentinien",utc:-3},{city:"Kairo",country:"Aegypten",utc:2},
+  {city:"Lagos",country:"Nigeria",utc:1},{city:"Nairobi",country:"Kenia",utc:3}
+];
+/* PHASE204_DATA_CONSTANTS_END */
+
 /* Phase 203: genBorderQ -- Grenze oder nicht? */
 function genBorderQ(){
   if(!NEIGHBORS||Object.keys(NEIGHBORS).length<10)return null;
@@ -6169,6 +6265,344 @@ const GEN={
   stadium_map:genStadiumMapQ,
   river_map:genRiverMapQ,
   unesco_map:genUnescoMapQ,
+/* PHASE204_GENERATORS */
+
+/* -- Phase 204: flugrouten_duell ------------------------------------------- */
+function genFlugroutenDuellQ(){
+  var pool=null;
+  if(typeof worldCitiesData!=='undefined'&&worldCitiesData.length>100){
+    pool=worldCitiesData.filter(function(c){return c.lat&&c.lng&&c.pop&&c.pop>200000;});
+  }
+  if(!pool||pool.length<4){
+    pool=CITIES.filter(function(c){return c.lat&&c.lng;});
+  }
+  if(!pool||pool.length<4)return null;
+  var sh4=pool.slice().sort(function(){return rng()-.5;}).slice(0,4);
+  var cA=sh4[0],cB=sh4[1],cC=sh4[2],cD=sh4[3];
+  var dAB=gqDist(cA.lat,cA.lng||cA.lon||0,cB.lat,cB.lng||cB.lon||0);
+  var dCD=gqDist(cC.lat,cC.lng||cC.lon||0,cD.lat,cD.lng||cD.lon||0);
+  var nameA=cA.name||cA.n,nameB=cB.name||cB.n,nameC=cC.name||cC.n,nameD=cD.name||cD.n;
+  var labelAB=nameA+' → '+nameB;
+  var labelCD=nameC+' → '+nameD;
+  var ans=dAB>=dCD?labelAB:labelCD;
+  var meta='Route 1: '+dAB+' km · Route 2: '+dCD+' km';
+  return{type:'flugrouten_duell',
+    prompt:'Welche Flugroute ist länger?',
+    subj:'Zwei Flugrouten im Vergleich',
+    opts:[labelAB,labelCD].sort(function(){return rng()-.5;}),
+    ans:ans,meta:meta,lid:nameA+'|'+nameC,cc:''};
+}
+
+/* -- Phase 204: inlandsflug_intl ------------------------------------------- */
+function genInlandsflugIntlQ(){
+  var pool=null;
+  if(typeof worldCitiesData!=='undefined'&&worldCitiesData.length>100){
+    pool=worldCitiesData.filter(function(c){return c.lat&&c.lng&&c.country;});
+  }
+  if(!pool||pool.length<10)pool=CITIES.filter(function(c){return c.lat&&c.lng&&c.c;});
+  if(!pool||pool.length<4)return null;
+  var tries=0,cA,cB;
+  do{
+    cA=pool[~~(rng()*pool.length)];
+    cB=pool[~~(rng()*pool.length)];
+    tries++;
+    if(tries>60)return null;
+  }while(cA===cB||(cA.name||cA.n)===(cB.name||cB.n));
+  var coA=cA.country||cA.c,coB=cB.country||cB.c;
+  var inland=coA===coB;
+  var ans=inland?'Inlandsflug':'International';
+  var wrong=inland?'International':'Inlandsflug';
+  var nameA=cA.name||cA.n,nameB=cB.name||cB.n;
+  return{type:'inlandsflug_intl',
+    prompt:'Inlandsflug oder internationaler Flug?',
+    subj:nameA+' → '+nameB,
+    opts:[ans,wrong].sort(function(){return rng()-.5;}),
+    ans:ans,meta:coA+' / '+coB,lid:nameA+'|'+nameB,cc:''};
+}
+
+/* -- Phase 204: sunrise_guesser -------------------------------------------- */
+function genSunriseGuesserQ(){
+  var pool=null;
+  if(typeof worldCitiesData!=='undefined'&&worldCitiesData.length>100){
+    pool=worldCitiesData.filter(function(c){return c.lat&&c.lng&&c.pop&&c.pop>100000;});
+  }
+  if(!pool||pool.length<4)pool=CITIES.filter(function(c){return c.lat&&c.lng;});
+  if(!pool||pool.length<4)return null;
+  var tries=0,cA,cB;
+  do{
+    cA=pool[~~(rng()*pool.length)];
+    cB=pool[~~(rng()*pool.length)];
+    tries++;
+    if(tries>60)return null;
+  }while(Math.abs((cA.lng||cA.lon||0)-(cB.lng||cB.lon||0))<10);
+  var lngA=cA.lng||cA.lon||0,lngB=cB.lng||cB.lon||0;
+  var nameA=cA.name||cA.n,nameB=cB.name||cB.n;
+  var ans=lngA>=lngB?nameA:nameB;
+  var meta=nameA+': '+lngA.toFixed(1)+'° · '+nameB+': '+lngB.toFixed(1)+'°';
+  return{type:'sunrise_guesser',
+    prompt:'In welcher Stadt geht die Sonne früher auf?',
+    subj:nameA+' vs. '+nameB,
+    opts:[nameA,nameB].sort(function(){return rng()-.5;}),
+    ans:ans,meta:meta,lid:nameA+'|'+nameB,cc:''};
+}
+
+/* -- Phase 204: aequator_magnet -------------------------------------------- */
+function genAequatorMagnetQ(){
+  var pool=null;
+  if(typeof worldCitiesData!=='undefined'&&worldCitiesData.length>100){
+    pool=worldCitiesData.filter(function(c){return c.lat&&c.lng&&c.pop&&c.pop>100000;});
+  }
+  if(!pool||pool.length<4)pool=CITIES.filter(function(c){return c.lat&&c.lng;});
+  if(!pool||pool.length<4)return null;
+  var tries=0,cA,cB;
+  do{
+    cA=pool[~~(rng()*pool.length)];
+    cB=pool[~~(rng()*pool.length)];
+    tries++;
+    if(tries>60)return null;
+  }while(Math.abs(Math.abs(cA.lat)-Math.abs(cB.lat))<3);
+  var nameA=cA.name||cA.n,nameB=cB.name||cB.n;
+  var absA=Math.abs(cA.lat),absB=Math.abs(cB.lat);
+  var ans=absA<=absB?nameA:nameB;
+  var meta=nameA+': '+absA.toFixed(1)+'° · '+nameB+': '+absB.toFixed(1)+'°';
+  return{type:'aequator_magnet',
+    prompt:'Welche Stadt liegt näher am Äquator?',
+    subj:nameA+' vs. '+nameB,
+    opts:[nameA,nameB].sort(function(){return rng()-.5;}),
+    ans:ans,meta:meta,lid:nameA+'|'+nameB,cc:''};
+}
+
+/* -- Phase 204: kontinent_klicker ------------------------------------------ */
+function genKontinentKlickerQ(){
+  var pool=null;
+  if(typeof worldCitiesData!=='undefined'&&worldCitiesData.length>100&&window._ctryMap){
+    pool=worldCitiesData.filter(function(c){return c.country&&window._ctryMap[c.country]&&window._ctryMap[c.country].ct;});
+  }
+  if(!pool||pool.length<4)pool=CITIES.filter(function(c){return c.cont||c.ct;});
+  if(!pool||pool.length<4)return null;
+  var city=pool[~~(rng()*pool.length)];
+  var cityName=city.name||city.n;
+  var correctCont=city.cont||city.ct||(window._ctryMap&&city.country&&window._ctryMap[city.country]?window._ctryMap[city.country].ct:null);
+  if(!correctCont)return null;
+  var allConts=[];
+  COUNTRIES.forEach(function(c){if(c.ct&&allConts.indexOf(c.ct)<0)allConts.push(c.ct);});
+  var dis=allConts.filter(function(c){return c!==correctCont;}).sort(function(){return rng()-.5;}).slice(0,3);
+  while(dis.length<3)dis.push('Unknown');
+  return{type:'kontinent_klicker',
+    prompt:'Auf welchem Kontinent liegt diese Stadt?',
+    subj:cityName,
+    opts:([correctCont].concat(dis)).sort(function(){return rng()-.5;}),
+    ans:correctCont,meta:'',time:5,lid:cityName,cc:''};
+}
+
+/* -- Phase 204: hauptstadt_distanz ----------------------------------------- */
+function genHauptstadtDistanzQ(){
+  var pool=null;
+  if(typeof worldCitiesData!=='undefined'&&worldCitiesData.length>100){
+    pool=worldCitiesData.filter(function(c){return c.lat&&c.lng&&c.pop&&c.pop>200000&&c.country;});
+  }
+  if(!pool||pool.length<4)pool=CITIES.filter(function(c){return c.lat&&c.lng&&c.c;});
+  if(!pool||pool.length<4)return null;
+  var tries=0,city=null,capEntry=null,capCity=null;
+  do{
+    city=pool[~~(rng()*pool.length)];
+    var cname=city.country||city.c;
+    capEntry=CAPITALS.find(function(cap){return cap.country===cname||cap.c===cname;});
+    if(capEntry){
+      var capN=capEntry.capital;
+      capCity=CITIES.find(function(c){return (c.n||c.name)===capN||(c.name||c.n)===capN;});
+    }
+    tries++;
+    if(tries>80)return null;
+  }while(!capEntry||!capCity||!capCity.lat||!capCity.lng);
+  var dist=gqDist(city.lat,city.lng||city.lon||0,capCity.lat,capCity.lng);
+  var ans=dist>500?'Mehr als 500 km':'Weniger als 500 km';
+  var wrong=dist>500?'Weniger als 500 km':'Mehr als 500 km';
+  var cityName=city.name||city.n;
+  return{type:'hauptstadt_distanz',
+    prompt:'Wie weit liegt diese Stadt von der Landeshauptstadt entfernt?',
+    subj:cityName,
+    opts:[ans,wrong].sort(function(){return rng()-.5;}),
+    ans:ans,meta:Math.round(dist)+' km bis '+capEntry.capital,
+    lid:cityName,cc:capCity.cc||''};
+}
+
+/* -- Phase 204: naechster_airport ------------------------------------------ */
+function genNaechsterAirportQ(){
+  if(!AIRPORTS_GEO_DATA||AIRPORTS_GEO_DATA.length<4)return null;
+  if(!CITIES||CITIES.length<4)return null;
+  var city=CITIES[~~(rng()*CITIES.length)];
+  if(!city||!city.lat||!city.lng)return null;
+  var withDist=AIRPORTS_GEO_DATA.map(function(ap){
+    return{ap:ap,dist:gqDist(city.lat,city.lng,ap.lat,ap.lng)};
+  });
+  withDist.sort(function(a,b){return a.dist-b.dist;});
+  var nearest=withDist[0].ap;
+  var others=withDist.slice(1).sort(function(){return rng()-.5;}).slice(0,3).map(function(x){return x.ap;});
+  var fmt=function(ap){return ap.city+' ('+ap.iata+')';};
+  var ans=fmt(nearest);
+  var dis=others.map(fmt);
+  return{type:'naechster_airport',
+    prompt:'Welcher Flughafen liegt dieser Stadt am nächsten?',
+    subj:(city.n||city.name),
+    opts:([ans].concat(dis)).sort(function(){return rng()-.5;}),
+    ans:ans,meta:Math.round(withDist[0].dist)+' km',
+    lid:(city.n||city.name),cc:city.cc||''};
+}
+
+/* -- Phase 204: iata_reverse ----------------------------------------------- */
+function genIataReverseQ(){
+  if(!AIRPORTS_GEO_DATA||AIRPORTS_GEO_DATA.length<4)return null;
+  var cor=AIRPORTS_GEO_DATA[~~(rng()*AIRPORTS_GEO_DATA.length)];
+  var others=AIRPORTS_GEO_DATA.filter(function(a){return a.iata!==cor.iata;})
+    .sort(function(){return rng()-.5;}).slice(0,3);
+  var ans=cor.city;
+  var dis=others.map(function(a){return a.city;});
+  return{type:'iata_reverse',
+    prompt:'Zu welcher Stadt gehört dieser IATA-Code?',
+    subj:cor.iata,
+    opts:([ans].concat(dis)).sort(function(){return rng()-.5;}),
+    ans:ans,meta:cor.name,lid:cor.iata,cc:cor.cc};
+}
+
+/* -- Phase 204: jetlag_rechner --------------------------------------------- */
+function genJetlagRechnerQ(){
+  if(!TIMEZONE_DATA||TIMEZONE_DATA.length<4)return null;
+  var ai=~~(rng()*TIMEZONE_DATA.length),bi;
+  do{bi=~~(rng()*TIMEZONE_DATA.length);}while(bi===ai);
+  var dep=TIMEZONE_DATA[ai],arr=TIMEZONE_DATA[bi];
+  var tzDiff=arr.utc-dep.utc;
+  var flightH=Math.floor(rng()*10)+2;
+  var depHour=Math.floor(rng()*14)+6;
+  var arrLocal=((depHour+flightH+tzDiff)%24+24)%24;
+  var fmt=function(h){var hh=((Math.floor(h)%24)+24)%24;return(hh<10?'0':'')+hh+':00 Uhr';};
+  var correct=fmt(arrLocal);
+  var wrongs=[],offsets=[-2,-1,1,2,3,-3];
+  for(var i=0;i<offsets.length&&wrongs.length<3;i++){
+    var w=fmt((arrLocal+offsets[i]+24)%24);
+    if(w!==correct&&wrongs.indexOf(w)<0)wrongs.push(w);
+  }
+  while(wrongs.length<3)wrongs.push(fmt((arrLocal+wrongs.length+1+24)%24));
+  var subj='Abflug: '+dep.city+', '+fmt(depHour)+'\nFlugdauer: '+flightH+' h\nAnkunft: '+arr.city;
+  return{type:'jetlag_rechner',
+    prompt:'Wie spät ist es bei der Landung Ortszeit?',
+    subj:subj,
+    opts:([correct].concat(wrongs)).sort(function(){return rng()-.5;}),
+    ans:correct,
+    meta:'Zeitzone '+dep.city+': UTC'+(dep.utc>=0?'+':'')+dep.utc+' · '+arr.city+': UTC'+(arr.utc>=0?'+':'')+arr.utc,
+    lid:dep.city+'|'+arr.city,cc:''};
+}
+
+/* -- Phase 204: kuehlschrank_backofen -------------------------------------- */
+function genKuehlschrankBackofenQ(){
+  if(!KLIMA_TEMP_DATA||KLIMA_TEMP_DATA.length<2)return null;
+  var ai=~~(rng()*KLIMA_TEMP_DATA.length),bi;
+  do{bi=~~(rng()*KLIMA_TEMP_DATA.length);}while(bi===ai||KLIMA_TEMP_DATA[ai].temp===KLIMA_TEMP_DATA[bi].temp);
+  var a=KLIMA_TEMP_DATA[ai],b=KLIMA_TEMP_DATA[bi];
+  var ans=a.temp>b.temp?a.n:b.n;
+  var meta=a.n+': '+a.temp+'°C · '+b.n+': '+b.temp+'°C';
+  return{type:'kuehlschrank_backofen',
+    prompt:'Welcher Ort hat die höhere Jahresdurchschnittstemperatur?',
+    subj:a.n+' vs. '+b.n,
+    opts:[a.n,b.n].sort(function(){return rng()-.5;}),
+    ans:ans,meta:meta,lid:a.n+'|'+b.n,cc:''};
+}
+
+/* -- Phase 204: regen_radar ------------------------------------------------ */
+function genRegenRadarQ(){
+  if(!REGEN_DATA||REGEN_DATA.length<2)return null;
+  var ai=~~(rng()*REGEN_DATA.length),bi;
+  do{bi=~~(rng()*REGEN_DATA.length);}while(bi===ai||REGEN_DATA[ai].days===REGEN_DATA[bi].days);
+  var a=REGEN_DATA[ai],b=REGEN_DATA[bi];
+  var ans=a.days>b.days?a.n:b.n;
+  var meta=a.n+': '+a.days+' Regentage · '+b.n+': '+b.days+' Regentage';
+  return{type:'regen_radar',
+    prompt:'Wo regnet es mehr Tage im Jahr?',
+    subj:a.n+' vs. '+b.n,
+    opts:[a.n,b.n].sort(function(){return rng()-.5;}),
+    ans:ans,meta:meta,lid:a.n+'|'+b.n,cc:''};
+}
+
+/* -- Phase 204: hoehenmeter_schaetzer -------------------------------------- */
+function genHoehenmeterschaetzerQ(){
+  if(!HOEHEN_DATA||HOEHEN_DATA.length<2)return null;
+  var ai=~~(rng()*HOEHEN_DATA.length),bi;
+  do{bi=~~(rng()*HOEHEN_DATA.length);}while(bi===ai||HOEHEN_DATA[ai].alt===HOEHEN_DATA[bi].alt);
+  var a=HOEHEN_DATA[ai],b=HOEHEN_DATA[bi];
+  var ans=a.alt>b.alt?a.n:b.n;
+  var meta=a.n+': '+a.alt+' m · '+b.n+': '+b.alt+' m';
+  return{type:'hoehenmeter_schaetzer',
+    prompt:'Welcher Ort liegt höher über dem Meeresspiegel?',
+    subj:a.n+' vs. '+b.n,
+    opts:[a.n,b.n].sort(function(){return rng()-.5;}),
+    ans:ans,meta:meta,lid:a.n+'|'+b.n,cc:''};
+}
+
+/* -- Phase 204: klima_ausreisser ------------------------------------------- */
+function genKlimaAusreisserQ(){
+  if(!KLIMA_AUSREISSER_DATA||!KLIMA_AUSREISSER_DATA.length)return null;
+  var q=KLIMA_AUSREISSER_DATA[~~(rng()*KLIMA_AUSREISSER_DATA.length)];
+  var outlier=null;
+  for(var i=0;i<q.cities.length;i++){if(q.cities[i].t){outlier=q.cities[i];break;}}
+  if(!outlier)return null;
+  var opts=q.cities.map(function(c){return c.n;}).sort(function(){return rng()-.5;});
+  return{type:'klima_ausreisser',
+    prompt:q.q,
+    subj:'Klimatischer Ausreisser gesucht',
+    opts:opts,ans:outlier.n,meta:'',
+    lid:outlier.n,cc:''};
+}
+
+/* -- Phase 204: insel_festland --------------------------------------------- */
+function genInselFestlandQ(){
+  if(!INSEL_DATA||!INSEL_DATA.length)return null;
+  var item=INSEL_DATA[~~(rng()*INSEL_DATA.length)];
+  var ans=item.island?'Insel':'Festland';
+  var wrong=item.island?'Festland':'Insel';
+  return{type:'insel_festland',
+    prompt:'Ist das ein Inselstaat oder Festlandsland?',
+    subj:item.n,
+    opts:[ans,wrong].sort(function(){return rng()-.5;}),
+    ans:ans,meta:'',lid:item.n,cc:''};
+}
+
+/* -- Phase 204: sprachen_kompass ------------------------------------------- */
+function genSprachenKompassQ(){
+  if(!SPRACHEN_DATA||SPRACHEN_DATA.length<4)return null;
+  var idx=~~(rng()*SPRACHEN_DATA.length);
+  var cor=SPRACHEN_DATA[idx];
+  var others=SPRACHEN_DATA.filter(function(_,i){return i!==idx;})
+    .sort(function(){return rng()-.5;}).slice(0,3);
+  var ans=cor.country;
+  var dis=others.map(function(x){return x.country;});
+  var uniq=[];
+  dis.forEach(function(d){if(d!==ans&&uniq.indexOf(d)<0)uniq.push(d);});
+  while(uniq.length<3)uniq.push('Unbekannt');
+  return{type:'sprachen_kompass',
+    prompt:'In welchem Land sagt man so "Hallo"?',
+    subj:cor.word,
+    opts:([ans].concat(uniq.slice(0,3))).sort(function(){return rng()-.5;}),
+    ans:ans,meta:cor.lang,lid:cor.word,cc:''};
+}
+/* PHASE204_GENERATORS_END */
+
+  /* Phase 204: 15 neue Modi */
+  /* PHASE204_GEN_WIRING */
+  flugrouten_duell:genFlugroutenDuellQ,
+  inlandsflug_intl:genInlandsflugIntlQ,
+  sunrise_guesser:genSunriseGuesserQ,
+  aequator_magnet:genAequatorMagnetQ,
+  kontinent_klicker:genKontinentKlickerQ,
+  hauptstadt_distanz:genHauptstadtDistanzQ,
+  naechster_airport:genNaechsterAirportQ,
+  iata_reverse:genIataReverseQ,
+  jetlag_rechner:genJetlagRechnerQ,
+  kuehlschrank_backofen:genKuehlschrankBackofenQ,
+  regen_radar:genRegenRadarQ,
+  hoehenmeter_schaetzer:genHoehenmeterschaetzerQ,
+  klima_ausreisser:genKlimaAusreisserQ,
+  insel_festland:genInselFestlandQ,
+  sprachen_kompass:genSprachenKompassQ,
   airport_map:genAirportMapQ,
 };
 
@@ -6821,6 +7255,17 @@ if(correct.pop>others[1].pop)constraints.push(correct.country+' hat mehr Einwohn
 if(correct.a>others[2].a)constraints.push(correct.country+' ist größer als '+others[2].country);
 return{correct,options:countries,constraints};
 }
+/* PHASE204_GQDIST */
+function gqDist(lat1,lng1,lat2,lng2){
+  const R=6371;
+  const dLat=(lat2-lat1)*Math.PI/180;
+  const dLng=(lng2-lng1)*Math.PI/180;
+  const a=Math.sin(dLat/2)*Math.sin(dLat/2)+
+    Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*
+    Math.sin(dLng/2)*Math.sin(dLng/2);
+  return Math.round(R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a)));
+}
+
 function calculateCityDistance(city1,city2){
 // Simple Haversine distance calculation
 const lat1=city1.lat||0;
