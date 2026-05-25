@@ -2854,7 +2854,7 @@ const MODES=[
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
 const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
-  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_weinregionen","uk_museen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","uk_sort_kontinente","hl_b_coffee"],cost:1000},
+  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","uk_sort_kontinente","hl_b_coffee"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
@@ -5082,6 +5082,7 @@ let S={
   titleShop:false,
   language:(()=>{const _sl=localStorage.getItem("gq_lang");if(_sl&&LANG[_sl])return _sl;const _bl=(navigator.language||"de").substring(0,2).toLowerCase();return LANG[_bl]?_bl:"de";})(),spotterInput:"",spotterMsg:"",spotterOk:null,albumView:"list",albumCountry:_smartDefaultCountry(),spotterCountry:_smartDefaultCountry(),
   collFilter:"all",collRarity:"all",collSearch:"",
+  carouselPages:{},
 };
 let tIv=null,fTo=null,toastTo=null;
 
@@ -7491,7 +7492,7 @@ function genUniversalHLQ(){
   const a=sorted[rankA],b=sorted[rankB];
   const ans=b.val>a.val?"higher":"lower";
   return{type:"uk_hl",prompt:t("uk_hl_prompt")||"Welches Geb\u00e4ude ist h\u00f6her?",
-    nameA:a.name,valA:a.val+" m",nameB:b.name,valB:b.val+" m",
+    nameA:a.n,valA:a.val+" m",nameB:b.n,valB:b.val+" m",
     ans,opts:["higher","lower"],lid:"ukh_"+rankA+"_"+rankB,cc:null};
 }
 
@@ -8954,6 +8955,10 @@ window._carouselGoTo=function(wrapEl,pageIdx){
   var pages=Array.from(wrapEl.children).filter(function(c){return c.classList.contains('carousel-page');});
   var n=Math.max(0,Math.min(pages.length-1,pageIdx));
   wrapEl._cPage=n;
+  /* Phase 217: persist page for state restoration */
+  var _sec=wrapEl.closest&&wrapEl.closest('.accordion-section');
+  var _cid=_sec&&_sec.dataset&&_sec.dataset.cat;
+  if(_cid&&typeof S!=='undefined'&&S.carouselPages){S.carouselPages[_cid]=n;}
   pages.forEach(function(p,i){
     if(i===n){
       var cc=parseInt(p.style.getPropertyValue('--cc'))||4;
@@ -8978,9 +8983,13 @@ window._carouselGoTo=function(wrapEl,pageIdx){
 window._carouselInit=function(wrapEl){
   if(!wrapEl||wrapEl._cInit)return;
   wrapEl._cInit=true;
-  wrapEl._cPage=0;
-  /* show only first page */
-  window._carouselGoTo(wrapEl,0);
+  /* Phase 217: restore saved page position */
+  var _sec2=wrapEl.closest&&wrapEl.closest('.accordion-section');
+  var _cid2=_sec2&&_sec2.dataset&&_sec2.dataset.cat;
+  var _sp=(typeof S!=='undefined'&&S.carouselPages&&_cid2&&S.carouselPages[_cid2]!==undefined)?S.carouselPages[_cid2]:0;
+  wrapEl._cPage=_sp;
+  /* show saved page (or first page if no saved state) */
+  window._carouselGoTo(wrapEl,_sp);
   /* touch swipe */
   var sx=0,sy=0,moved=false;
   wrapEl.addEventListener('touchstart',function(e){
@@ -11385,8 +11394,10 @@ function renderHomeTab(){
     const _ipp=_cols*_rows;
     const _nPages=Math.ceil(cardArr.length/_ipp)||1;
     const _arrowStyle='background:none;border:none;font-size:1.1rem;padding:2px 8px;cursor:pointer;color:var(--text);transition:opacity .2s;-webkit-tap-highlight-color:transparent;line-height:1';
-    const _prevDisabled=`opacity:0.2;pointer-events:none`;
-    const _dots=_nPages>1?`<div class="carousel-dots" style="display:flex;align-items:center;justify-content:center;gap:4px;padding:6px 0 10px;user-select:none"><button class="car-arrow car-arrow-prev" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)-1);})(this);event.stopPropagation()" style="${_arrowStyle};${_prevDisabled}" title="Vorherige Seite">&#9664;</button><span style="display:flex;align-items:center;gap:4px">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" onclick="(function(d){var w=d.parentElement.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,${i});})(this);event.stopPropagation()" style="display:inline-block;width:12px;height:12px;background:${i===0?'#10b981':'#cbd5e1'};border-radius:50%;cursor:pointer;transition:background .25s;-webkit-tap-highlight-color:transparent"></span>`).join('')}</span><button class="car-arrow car-arrow-next" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)+1);})(this);event.stopPropagation()" style="${_arrowStyle};opacity:${_nPages<=1?'0.2':'1'};pointer-events:${_nPages<=1?'none':'auto'}" title="Nächste Seite">&#9654;</button></div>`:'';
+    /* Phase 217: restore saved page for correct initial dot/arrow state */
+    const _startPage=(S.carouselPages&&S.carouselPages[catId]!==undefined&&S.carouselPages[catId]<_nPages)?S.carouselPages[catId]:0;
+    const _prevDisabled=`opacity:${_startPage===0?'0.2':'1'};pointer-events:${_startPage===0?'none':'auto'}`;
+    const _dots=_nPages>1?`<div class="carousel-dots" style="display:flex;align-items:center;justify-content:center;gap:4px;padding:6px 0 10px;user-select:none"><button class="car-arrow car-arrow-prev" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)-1);})(this);event.stopPropagation()" style="${_arrowStyle};${_prevDisabled}" title="Vorherige Seite">&#9664;</button><span style="display:flex;align-items:center;gap:4px">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" onclick="(function(d){var w=d.parentElement.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,${i});})(this);event.stopPropagation()" style="display:inline-block;width:12px;height:12px;background:${i===_startPage?'#10b981':'#cbd5e1'};border-radius:50%;cursor:pointer;transition:background .25s;-webkit-tap-highlight-color:transparent"></span>`).join('')}</span><button class="car-arrow car-arrow-next" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)+1);})(this);event.stopPropagation()" style="${_arrowStyle};opacity:${_nPages<=1?'0.2':'1'};pointer-events:${_nPages<=1?'none':'auto'}" title="Nächste Seite">&#9654;</button></div>`:'';
     const _track=`<div class="carousel-wrapper">${Array.from({length:_nPages}).map((_,pi)=>{
       const pg=cardArr.slice(pi*_ipp,(pi+1)*_ipp);
       return`<div class="carousel-page" style="--cc:${_cols};min-width:100%;flex-shrink:0">${pg.join('')}</div>`;
