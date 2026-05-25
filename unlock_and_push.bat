@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT/DATA: Phase 217/218 — Wort-Schmiede Overhaul. DE-Woerter: 5.3 → 31.0 Ø (max 80 pro Stadt). i18n Leer-Array-Fix (London-Falle). Neues UI: Buchstaben-Kacheln, Inventar-Check, Laengen-Scoring (3=10/4=20/5=40/6+=60pts), EN-Fallback-Badge. 111 Staedte."
+git commit -m "FEAT/FIX: Phase 219+220 — Grand Finale Sprint. Audit-Fixes: HTML-Syntax (3 Modi), 6 neue Pin-Modi (Bruecken/Filmsets/Kirchen/Kunstwerke/Ruinen/Weinregionen) je 15 Eintraege mit GPS, museen lat/lng ergaenzt (30 Museen), Mojibake ES/FR/CS/BG geheilt. Streak-System: taegliche Serie mit Feuer-Badge im Homescreen. 52x [BETA]-Tags entfernt (Produktion-ready). Viewport user-scalable=no. Build: 1.44M chars."
 echo.
 echo Pushing to GitHub...
 git push origin main

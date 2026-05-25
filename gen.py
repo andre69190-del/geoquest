@@ -1514,11 +1514,11 @@ fr:{
   map_unavail:"Carte non disponible",map_loading:"Chargement de la carte…",
   q_subway_km:"Quelle longueur a le réseau métro … (km)?",q_subway_lines:"Combien de lignes de métro a … ?",
   hl_longer:"⬆️ Plus long",hl_shorter:"⬇️ Plus court",hl_bigger:"⬆️ Plus grand (superficie)",hl_smaller:"⬇️ Plus petit (superficie)",
-  ob_welcome:"Bienvenue sur GeoQuest",ob_sub1:"Le quiz de géographie – collectez des tampons, montez en ligueÂ !",ob_difficulty:"Niveau de difficulté",ob_diff_sub:"Choisissez votre style. Modifiable ß  tout moment.",
+  ob_welcome:"Bienvenue sur GeoQuest",ob_sub1:"Le quiz de géographie – collectez des tampons, montez en ligue !",ob_difficulty:"Niveau de difficulté",ob_diff_sub:"Choisissez votre style. Modifiable ß  tout moment.",
   ob_diff_casual_desc:"Grandes villes • 12 sec.",ob_diff_hc_desc:"Toutes les villes • 8 sec.",ob_back:"→ Retour",ob_modes_title:"Modes de jeu",
-  ob_modes_sub:"19 modes, un objectifÂ : connaß®tre le monde.",ob_more_modes:"… et 16 autres modes",ob_start:"\u{1F680} C'est partiÂ !",ob_have_account:"J'ai déjß  un compte",ob_register:"NouveauÂ ? S'inscrire",
+  ob_modes_sub:"19 modes, un objectif : connaß®tre le monde.",ob_more_modes:"… et 16 autres modes",ob_start:"\u{1F680} C'est parti !",ob_have_account:"J'ai déjß  un compte",ob_register:"Nouveau ? S'inscrire",
   home_hi:"Salut, {name} \u{1F44B}",home_guest:"Bienvenue, invité \u{1F30D}",home_save:"\u{1F510} Sauvegarder la progression",home_pvp_sub:"Jouer en temps réel contre un ami",
-  ob_mode1_name:"Ville →’ Pays",ob_mode1_desc:"ß€ quel pays appartient cette villeÂ ?",ob_mode2_name:"Plaques UE",ob_mode2_desc:"D'oß¹ vient cette plaqueÂ ?",ob_mode3_name:"Réseaux de métro",ob_mode3_desc:"Lignes et km des métros.",
+  ob_mode1_name:"Ville →’ Pays",ob_mode1_desc:"ß€ quel pays appartient cette ville ?",ob_mode2_name:"Plaques UE",ob_mode2_desc:"D'oß¹ vient cette plaque ?",ob_mode3_name:"Réseaux de métro",ob_mode3_desc:"Lignes et km des métros.",
   language_select:"LANGUE",
   badge_beta:"B\u00eata",beta_warning:"Jouable, mais peut contenir des bugs.",
   rotate_device:"Veuillez faire pivoter votre appareil \u{1F4F1}\u27A1\u{1F5FA}",
@@ -1535,52 +1535,52 @@ fr:{
   mode_euro:"Piß¨ces Euro"
 },
 es:{
-  play:"JUGAR",again:"JUGAR DE NUEVO",menu:"Menßº principal",board:"Clasificación",pass:"Pasaporte",
+  play:"JUGAR",again:"JUGAR DE NUEVO",menu:"Menú principal",board:"Clasificación",pass:"Pasaporte",
   fav_empty:"Aún no hay favoritos guardados",
-  profile:"Perfil",stats:"Estadß­sticas",casual:"Casual",hardcore:"Hardcore",rounds:"Rondas",
-  btn_collect:"Coleccionar",btn_back:"Volver al menßº",btn_next:"Siguiente →’",
-  btn_again:"Jugar de nuevo",btn_menu:"Menßº principal",btn_adapt:"Adaptar",
+  profile:"Perfil",stats:"Estadísticas",casual:"Casual",hardcore:"Hardcore",rounds:"Rondas",
+  btn_collect:"Coleccionar",btn_back:"Volver al menú",btn_next:"Siguiente →’",
+  btn_again:"Jugar de nuevo",btn_menu:"Menú principal",btn_adapt:"Adaptar",
   spotter_title:"\u{1F697} Spotter de viaje",
-  spotter_hint:"Â¿Has visto una matrß­cula? Â¡Anótala!",
-  spotter_all:"Todos los paß­ses",spotter_unknown:"Matrß­cula desconocida",
+  spotter_hint:"¿Has visto una matrícula? ¡Anótala!",
+  spotter_all:"Todos los países",spotter_unknown:"Matrícula desconocida",
   spotter_not_in:"no en",spotter_but_in:"pero en",
-  album_title:"\u{1F4D4} Colección de matrß­culas",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mapa",
-  album_empty_country:"Nada de {country} aßºn – Â¡usa el Spotter!",
-  album_empty:"Â¡Nada recopilado aßºn!\nJuega a matrß­culas UE o usa el Spotter.",
+  album_title:"\u{1F4D4} Colección de matrículas",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mapa",
+  album_empty_country:"Nada de {country} aún – ¡usa el Spotter!",
+  album_empty:"¡Nada recopilado aún!\nJuega a matrículas UE o usa el Spotter.",
   album_codes:"códigos",
   hl_higher:"⬆️ Más / Más largo / Más grande",hl_lower:"⬇️ Menos / Más corto / Más pequeño",
   hl_more:"⬆️ Más habitantes",hl_less:"⬇️ Menos habitantes",
   loc_detected:"Estás en {country}",loc_adapt:"Adaptar",
-  q_city:"Â¿En qué paß­s está esta ciudad?",q_flag:"Â¿Qué paß­s tiene esta bandera?",
-  q_capital:"Â¿A qué paß­s pertenece esta capital?",q_river:"Â¿En qué paß­s está este rß­o?",
-  q_landmark:"Â¿En qué paß­s está este monumento?",q_park:"Â¿En qué paß­s está este parque nacional?",
-  q_unesco:"Â¿En qué paß­s está este sitio UNESCO?",q_citymark:"Â¿A qué ciudad pertenece este monumento?",
-  q_subway:"Â¿En qué ciudad está este metro?",q_flagsel:"Â¿Qué bandera pertenece a…",
-  q_rcapital:"Â¿Cuál es la capital de…?",q_rcity:"Â¿Qué ciudad está en…?",
-  q_rriver:"Â¿Qué rß­o atraviesa…?",q_outline:"Â¿Qué paß­s tiene esta forma?",
-  q_food:"Â¿De qué paß­s viene este plato?",q_brand:"Â¿De qué paß­s viene esta marca?",
-  q_currency:"Â¿A qué paß­s pertenece esta moneda?",q_curr_real:"Â¿Qué moneda tiene…",
-  q_pop_compare:"Â¿Más o menos habitantes?",
-  q_hl_pop:"Â¿Más habitantes que {a}?",q_hl_river:"Â¿Más largo que {a}?",q_hl_area:"Â¿Más grande que {a}?",
-  q_neighbor:"Â¿Qué paß­s limita con…?",q_neighbor_not:"Â¿NO limita con…?",
-  q_plates_casual:"Â¿De qué paß­s es esta matrß­cula?",q_plates_hard:"Identificar la región – Â¡sin pista!",
-  q_river_real:"Â¿Por qué paß­s pasa este rß­o?",q_map_guess:"Encuentra el paß­s en el mapa",
-  fb_correct:"✓“ Â¡Correcto! +{pts}",fb_wrong:"✗ Incorrecto → {ans}",fb_time:"⏱ Â¡Tiempo! → {ans}",
+  q_city:"¿En qué país está esta ciudad?",q_flag:"¿Qué país tiene esta bandera?",
+  q_capital:"¿A qué país pertenece esta capital?",q_river:"¿En qué país está este río?",
+  q_landmark:"¿En qué país está este monumento?",q_park:"¿En qué país está este parque nacional?",
+  q_unesco:"¿En qué país está este sitio UNESCO?",q_citymark:"¿A qué ciudad pertenece este monumento?",
+  q_subway:"¿En qué ciudad está este metro?",q_flagsel:"¿Qué bandera pertenece a…",
+  q_rcapital:"¿Cuál es la capital de…?",q_rcity:"¿Qué ciudad está en…?",
+  q_rriver:"¿Qué río atraviesa…?",q_outline:"¿Qué país tiene esta forma?",
+  q_food:"¿De qué país viene este plato?",q_brand:"¿De qué país viene esta marca?",
+  q_currency:"¿A qué país pertenece esta moneda?",q_curr_real:"¿Qué moneda tiene…",
+  q_pop_compare:"¿Más o menos habitantes?",
+  q_hl_pop:"¿Más habitantes que {a}?",q_hl_river:"¿Más largo que {a}?",q_hl_area:"¿Más grande que {a}?",
+  q_neighbor:"¿Qué país limita con…?",q_neighbor_not:"¿NO limita con…?",
+  q_plates_casual:"¿De qué país es esta matrícula?",q_plates_hard:"Identificar la región – ¡sin pista!",
+  q_river_real:"¿Por qué país pasa este río?",q_map_guess:"Encuentra el país en el mapa",
+  fb_correct:"✓“ ¡Correcto! +{pts}",fb_wrong:"✗ Incorrecto → {ans}",fb_time:"⏱ ¡Tiempo! → {ans}",
   plates_more:"+{n} más",pct_complete:"{pct}% completado",
   spotter_dup:"📋 {code} ({country}) ya coleccionado!",
   map_unavail:"Mapa no disponible",map_loading:"Cargando mapa…",
-  q_subway_km:"Â¿Cuánto mide la red de metro … (km)?",q_subway_lines:"Â¿Cuántas lß­neas de metro tiene …?",
+  q_subway_km:"¿Cuánto mide la red de metro … (km)?",q_subway_lines:"¿Cuántas líneas de metro tiene …?",
   hl_longer:"⬆️ Más largo",hl_shorter:"⬇️ Más corto",hl_bigger:"⬆️ Más grande (área)",hl_smaller:"⬇️ Más pequeño (área)",
-  ob_welcome:"Bienvenido a GeoQuest",ob_sub1:"El quiz de geografß­a – colecciona sellos, sube en la liga.",ob_difficulty:"Nivel de dificultad",ob_diff_sub:"Elige tu estilo. Cambiable en cualquier momento.",
+  ob_welcome:"Bienvenido a GeoQuest",ob_sub1:"El quiz de geografía – colecciona sellos, sube en la liga.",ob_difficulty:"Nivel de dificultad",ob_diff_sub:"Elige tu estilo. Cambiable en cualquier momento.",
   ob_diff_casual_desc:"Ciudades grandes • 12 seg.",ob_diff_hc_desc:"Todas las ciudades • 8 seg.",ob_back:"→ Volver",ob_modes_title:"Modos de juego",
-  ob_modes_sub:"19 modos, un objetivo: conocer el mundo.",ob_more_modes:"… y 16 modos más",ob_start:"\u{1F680} Â¡Vamos!",ob_have_account:"Ya tengo una cuenta",ob_register:"Â¿Nuevo? Regsß­strate",
+  ob_modes_sub:"19 modos, un objetivo: conocer el mundo.",ob_more_modes:"… y 16 modos más",ob_start:"\u{1F680} ¡Vamos!",ob_have_account:"Ya tengo una cuenta",ob_register:"¿Nuevo? Regsístrate",
   home_hi:"Hola, {name} \u{1F44B}",home_guest:"Bienvenido, invitado \u{1F30D}",home_save:"\u{1F510} Guardar progreso",home_pvp_sub:"Jugar en tiempo real contra un amigo",
-  ob_mode1_name:"Ciudad →’ Paß­s",ob_mode1_desc:"Â¿A qué paß­s pertenece esta ciudad?",ob_mode2_name:"Matrß­culas UE",ob_mode2_desc:"Â¿De dónde viene esta matrß­cula?",ob_mode3_name:"Redes de metro",ob_mode3_desc:"Lß­neas y km de los metros.",
+  ob_mode1_name:"Ciudad →’ País",ob_mode1_desc:"¿A qué país pertenece esta ciudad?",ob_mode2_name:"Matrículas UE",ob_mode2_desc:"¿De dónde viene esta matrícula?",ob_mode3_name:"Redes de metro",ob_mode3_desc:"Líneas y km de los metros.",
   language_select:"IDIOMA",
   badge_beta:"Beta",beta_warning:"Jugable, pero puede contener errores.",
   rotate_device:"Por favor, gira tu dispositivo al modo horizontal \u{1F4F1}\u27A1\u{1F5FA}",
-  diff_desc_casual:"\u{1F7E2} Casual: Relajado · Sin lß­mite · ∞ Vidas",
-  diff_desc_hc:"\u{1F525} Hardcore: Clásico · Sin lß­mite · 3 Vidas",
+  diff_desc_casual:"\u{1F7E2} Casual: Relajado · Sin límite · ∞ Vidas",
+  diff_desc_hc:"\u{1F525} Hardcore: Clásico · Sin límite · 3 Vidas",
   diff_desc_surv:"\u{1F480} Survival: Contrarreloj · 8s · 3 Vidas",
   hud_lives:"VIDAS",
   score_mult_max:"Multiplicador Máx.",
@@ -1588,7 +1588,7 @@ es:{
   pts_abbr:"pts.",
   score_correct_lbl:"correctas",
   mode_wappen:"Escudos",
-  mode_slf:"Ciudad-Paß­s-Rß­o",
+  mode_slf:"Ciudad-País-Río",
   mode_euro:"Monedas Euro"
 },
 it:{
@@ -1801,42 +1801,42 @@ hu:{
   diff_desc_casual:"\u{1F7E2} Casual: Lazulás · Nincs idŚ‘limit · ∞ ß‰let",diff_desc_hc:"\u{1F525} Hardcore: Klasszikus · Nincs idŚ‘limit · 3 ß‰let",diff_desc_surv:"\u{1F480} Survival: Verseny az idŚ‘vel · 8mp · 3 ß‰let",hud_lives:"ß‰LETEK",score_mult_max:"Max Szorzó",score_time_bonus:"IdŚ‘bónusz",pts_abbr:"pt.",score_correct_lbl:"helyes",mode_wappen:"Cß­merek",mode_slf:"Város-Ország-Folyó",mode_euro:"Euróérmék"
 },
 cs:{
-  play:"HRßT",again:"HRßT ZNOVU",menu:"Hlavnß­ menu",board:"Ś½ebŚ™ß­ńek",pass:"Pas",
+  play:"HRÁT",again:"HRÁT ZNOVU",menu:"Hlavní menu",board:"Ś½ebŚ™íńek",pass:"Pas",
   fav_empty:"Zatím žádné oblíbené uloženy",
   profile:"Profil",stats:"Statistiky",casual:"Casual",hardcore:"Hardcore",rounds:"Kola",
-  btn_collect:"Sbß­rat",btn_back:"Zpń›t do menu",btn_next:"DalŚ¡ß­ →’",
-  btn_again:"Hrát znovu",btn_menu:"Hlavnß­ menu",btn_adapt:"PŚ™izpŚ¯sobit",
-  spotter_title:"\u{1F697} Cestovnß­ Spotter",
+  btn_collect:"Sbírat",btn_back:"Zpń›t do menu",btn_next:"DalŚ¡í →’",
+  btn_again:"Hrát znovu",btn_menu:"Hlavní menu",btn_adapt:"PŚ™izpŚ¯sobit",
+  spotter_title:"\u{1F697} Cestovní Spotter",
   spotter_hint:"Vidń›l jsi SPZ? ZapiŚ¡ ji hned!",
   spotter_all:"VŚ¡echny zemń›",spotter_unknown:"Neznámá SPZ",
-  spotter_not_in:"nenß­ v",spotter_but_in:"ale je v",
+  spotter_not_in:"není v",spotter_but_in:"ale je v",
   album_title:"\u{1F4D4} Album SPZ",album_list:"\u{1F4DD} Seznam",album_map:"\u{1F5FA} Mapa",
-  album_empty_country:"Zatß­m nic z {country} – pouŚ¾ij Spotter!",
-  album_empty:"Zatß­m nic neshromáŚ¾dń›no!\nHraj EU SPZ nebo pouŚ¾ij Spotter.",
+  album_empty_country:"Zatím nic z {country} – pouŚ¾ij Spotter!",
+  album_empty:"Zatím nic neshromáŚ¾dń›no!\nHraj EU SPZ nebo pouŚ¾ij Spotter.",
   album_codes:"kódy",
-  hl_higher:"⬆️ Vß­ce / DelŚ¡ß­ / Vń›tŚ¡ß­",hl_lower:"⬇️ Ménń› / KratŚ¡ß­ / MenŚ¡ß­",
-  hl_more:"⬆️ Vß­ce obyvatel",hl_less:"⬇️ Ménń› obyvatel",
+  hl_higher:"⬆️ Více / DelŚ¡í / Vń›tŚ¡í",hl_lower:"⬇️ Ménń› / KratŚ¡í / MenŚ¡í",
+  hl_more:"⬆️ Více obyvatel",hl_less:"⬇️ Ménń› obyvatel",
   loc_detected:"Jsi v {country}",loc_adapt:"PŚ™izpŚ¯sobit",
-  q_city:"Ve které zemi leŚ¾ß­ toto mń›sto?",q_flag:"Která zemń› má tuto vlajku?",
-  q_capital:"Které zemi patŚ™ß­ toto hlavnß­ mń›sto?",q_river:"Ve které zemi teńe tato Ś™eka?",
-  q_landmark:"Ve které zemi se nacházß­ tato památka?",q_park:"Ve které zemi se nacházß­ tento národnß­ park?",
-  q_unesco:"Ve které zemi se nacházß­ toto UNESCO dń›dictvß­?",q_citymark:"Ke kterému mń›stu patŚ™ß­ tato památka?",
-  q_subway:"Ve kterém mń›stń› je toto metro?",q_flagsel:"Která vlajka patŚ™ß­ k…",
-  q_rcapital:"Jaké je hlavnß­ mń›sto…?",q_rcity:"Které mń›sto leŚ¾ß­ v…?",
+  q_city:"Ve které zemi leŚ¾í toto mń›sto?",q_flag:"Která zemń› má tuto vlajku?",
+  q_capital:"Které zemi patŚ™í toto hlavní mń›sto?",q_river:"Ve které zemi teńe tato Ś™eka?",
+  q_landmark:"Ve které zemi se nachází tato památka?",q_park:"Ve které zemi se nachází tento národní park?",
+  q_unesco:"Ve které zemi se nachází toto UNESCO dń›dictví?",q_citymark:"Ke kterému mń›stu patŚ™í tato památka?",
+  q_subway:"Ve kterém mń›stń› je toto metro?",q_flagsel:"Která vlajka patŚ™í k…",
+  q_rcapital:"Jaké je hlavní mń›sto…?",q_rcity:"Které mń›sto leŚ¾í v…?",
   q_rriver:"Která Ś™eka protéká…?",q_outline:"Která zemń› má tento tvar?",
-  q_food:"Ze které zemń› pocházß­ toto jß­dlo?",q_brand:"Ze které zemń› pocházß­ tato znańka?",
-  q_currency:"Které zemi patŚ™ß­ tato mń›na?",q_curr_real:"Jakou mń›nu má…",
-  q_pop_compare:"Vß­ce nebo ménń› obyvatel?",
-  q_hl_pop:"Vß­ce obyvatel neŚ¾ {a}?",q_hl_river:"DelŚ¡ß­ neŚ¾ {a}?",q_hl_area:"Vń›tŚ¡ß­ neŚ¾ {a}?",
-  q_neighbor:"Která zemń› sousedß­ s…?",q_neighbor_not:"NESOUSEDß s…?",
+  q_food:"Ze které zemń› pochází toto jídlo?",q_brand:"Ze které zemń› pochází tato znańka?",
+  q_currency:"Které zemi patŚ™í tato mń›na?",q_curr_real:"Jakou mń›nu má…",
+  q_pop_compare:"Více nebo ménń› obyvatel?",
+  q_hl_pop:"Více obyvatel neŚ¾ {a}?",q_hl_river:"DelŚ¡í neŚ¾ {a}?",q_hl_area:"Vń›tŚ¡í neŚ¾ {a}?",
+  q_neighbor:"Která zemń› sousedí s…?",q_neighbor_not:"NESOUSEDÍ s…?",
   q_plates_casual:"Ze které zemń› je tato SPZ?",q_plates_hard:"Urńete region – Ś¾ádná nápovń›da!",
   q_river_real:"PŚ™es kterou zemi teńe tato Ś™eka?",q_map_guess:"Najdi zemi na mapń›",
   fb_correct:"✓“ Správnń›! +{pts}",fb_wrong:"✗ Chybnń› → {ans}",fb_time:"⏱ čas! → {ans}",
-  plates_more:"+{n} dalŚ¡ß­ch",pct_complete:"{pct}% hotovo",
-  spotter_dup:"📋 {code} ({country}) jiŚ¾ sbß­ráno!",
-  map_unavail:"Mapa nenß­ k dispozici",map_loading:"Nańß­tánß­ mapy…",
-  q_subway_km:"Jak dlouhé je metro … (km)?",q_subway_lines:"Kolik metrovß½ch linek má …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Uvolnń›nß½ · Bez ńasového limitu · ∞ Ś½ivotŚ¯",diff_desc_hc:"\u{1F525} Hardcore: Klasika · Bez limitu · 3 Ś½ivoty",diff_desc_surv:"\u{1F480} Survival: Proti ńasu · 8s · 3 Ś½ivoty",hud_lives:"Ś½IVOTY",score_mult_max:"Max Multiplikátor",score_time_bonus:"časovß½ Bonus",pts_abbr:"bd.",score_correct_lbl:"správnń›",mode_wappen:"Erby",mode_slf:"Mń›sto-Stát-Ś˜eka",mode_euro:"Euromince"
+  plates_more:"+{n} dalŚ¡ích",pct_complete:"{pct}% hotovo",
+  spotter_dup:"📋 {code} ({country}) jiŚ¾ sbíráno!",
+  map_unavail:"Mapa není k dispozici",map_loading:"Nańítání mapy…",
+  q_subway_km:"Jak dlouhé je metro … (km)?",q_subway_lines:"Kolik metrových linek má …?",
+  diff_desc_casual:"\u{1F7E2} Casual: Uvolnń›ný · Bez ńasového limitu · ∞ Ś½ivotŚ¯",diff_desc_hc:"\u{1F525} Hardcore: Klasika · Bez limitu · 3 Ś½ivoty",diff_desc_surv:"\u{1F480} Survival: Proti ńasu · 8s · 3 Ś½ivoty",hud_lives:"Ś½IVOTY",score_mult_max:"Max Multiplikátor",score_time_bonus:"časový Bonus",pts_abbr:"bd.",score_correct_lbl:"správnń›",mode_wappen:"Erby",mode_slf:"Mń›sto-Stát-Ś˜eka",mode_euro:"Euromince"
 },
 sk:{
   play:"HRAŚ¤",again:"HRAŚ¤ ZNOVA",menu:"Hlavné menu",board:"Rebrß­ńek",pass:"Pas",
@@ -1953,41 +1953,61 @@ sl:{
   diff_desc_casual:"\u{1F7E2} Casual: Sprostitveno · Brez ńasovne omejitve · ∞ Ś½ivljenj",diff_desc_hc:"\u{1F525} Hardcore: Klasińno · Brez omejitve · 3 Ś½ivljenja",diff_desc_surv:"\u{1F480} Survival: Dirka s ńasom · 8s · 3 Ś½ivljenja",hud_lives:"Ś½IVLJENJA",score_mult_max:"Maks MnoŚ¾itelj",score_time_bonus:"časovni Bonus",pts_abbr:"t.",score_correct_lbl:"pravilno",mode_wappen:"Grbi",mode_slf:"Mesto-DeŚ¾ela-Reka",mode_euro:"Eurokovanice"
 },
 bg:{
-  play:"Ð˜Ð“Ð ÐÐ™",again:"Ð˜Ð“Ð ÐÐ™ ÐžÐ¢ÐÐžÐ’Ðž",menu:"Ð“Ð»Ð°Ð²Ð½Ð¾ Ð¼ÐµÐ½ÑŽ",board:"ÐšÐ»Ð°ÑÐ°Ñ–Ð¸Ñ",pass:"ÐŸÐ°ÑÐ¿Ð¾Ñ€Ñ‚",
-  profile:"ÐŸÑ€Ð¾Ñ„Ð¸Ð»",stats:"Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸",casual:"Ð›ÐµÑÐµÐ½",hardcore:"Ð¢Ñ€ÑƒÐ´ÐµÐ½",rounds:"Ð ÑƒÐ½Ð´Ð¸",
-  btn_collect:"Ð¡ÑŠÐ±ÐµÑ€Ð¸",btn_back:"ÐžÐ±Ñ€Ð°Ñ‚Ð½Ð¾ Ð² Ð¼ÐµÐ½ÑŽÑ‚Ð¾",btn_next:"ÐÐ°Ð¿Ñ€ÐµÐ´ →’",
-  btn_again:"Ð˜Ð³Ñ€Ð°Ð¹ Ð¾Ñ‚Ð½Ð¾Ð²Ð¾",btn_menu:"Ð“Ð»Ð°Ð²Ð½Ð¾ Ð¼ÐµÐ½ÑŽ",btn_adapt:"ÐÐ´Ð°Ð¿Ñ‚Ð¸Ñ€Ð°Ð¹",
-  spotter_title:"\u{1F697} ÐŸÑŠÑ‚ÐµÐ½ Ð¡Ð¿Ð¾Ñ‚ÑŠÑ€",
-  spotter_hint:"Ð’Ð¸Ð´ÑÐ» Ñ‚Ð°Ð±ÐµÐ»Ð°? Ð—Ð°Ð¿Ð¸ÑˆÐ¸ Ñ Ð²ÐµÐ´Ð½Ð°Ð³Ð°!",
-  spotter_all:"Ð’ÑÐ¸Ñ‡ÐºÐ¸ ÑÑ‚Ñ€Ð°Ð½Ð¸",spotter_unknown:"ÐÐµÐ¿Ð¾Ð·Ð½Ð°Ñ‚Ð° Ñ‚Ð°Ð±ÐµÐ»Ð°",
-  spotter_not_in:"Ð½Ðµ Ðµ Ð²",spotter_but_in:"Ð½Ð¾ Ðµ Ð²",
-  album_title:"\u{1F4D4} ÐÐ»Ð±ÑƒÐ¼ Ñ Ñ‚Ð°Ð±ÐµÐ»Ð¸",album_list:"\u{1F4DD} Ð¡Ð¿Ð¸ÑÑŠÐº",album_map:"\u{1F5FA} ÐšÐ°Ñ€Ñ‚Ð°",
-  album_empty_country:"ÐÐ¸Ñ‰Ð¾ Ð¾Ñ‚ {country} Ð²ÑÐµ Ð¾Ñ‰Ðµ – Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¹ Ð¡Ð¿Ð¾Ñ‚ÑŠÑ€Ð°!",
-  album_empty:"Ð’ÑÐµ Ð¾Ñ‰Ðµ Ð½Ð¸Ñ‰Ð¾ ÑÑŠÐ±Ñ€Ð°Ð½Ð¾!\nÐ˜Ð³Ñ€Ð°Ð¹ Ð•Ð¡ Ñ‚Ð°Ð±ÐµÐ»Ð¸ Ð¸Ð»Ð¸ Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¹ Ð¡Ð¿Ð¾Ñ‚ÑŠÑ€Ð°.",
-  album_codes:"ÐºÐ¾Ð´Ð¾Ð²Ðµ",
-  hl_higher:"⬆️ ÐŸÐ¾Ð²ÐµÑ‡Ðµ / ÐŸÐ¾-Ð´ÑŠÐ»Ð³Ð¾ / ÐŸÐ¾-Ð³Ð¾Ð»ÑÐ¼Ð¾",hl_lower:"⬇️ ÐŸÐ¾-Ð¼Ð°Ð»ÐºÐ¾ / ÐŸÐ¾-ÐºÑ€Ð°Ñ‚ÐºÐ¾ / ÐŸÐ¾-Ð¼Ð°Ð»ÐºÐ¾",
-  hl_more:"⬆️ ÐŸÐ¾Ð²ÐµÑ‡Ðµ Ð¶Ð¸Ñ‚ÐµÐ»Ð¸",hl_less:"⬇️ ÐŸÐ¾-Ð¼Ð°Ð»ÐºÐ¾ Ð¶Ð¸Ñ‚ÐµÐ»Ð¸",
-  loc_detected:"ÐÐ°Ð¼Ð¸Ñ€Ð°Ñ‚Ðµ ÑÐµ Ð² {country}",loc_adapt:"ÐÐ´Ð°Ð¿Ñ‚Ð¸Ñ€Ð°Ð¹",
-  q_city:"Ð’ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° ÑÐµ Ð½Ð°Ð¼Ð¸Ñ€Ð° Ñ‚Ð¾Ð·Ð¸ Ð³Ñ€Ð°Ð´?",q_flag:"ÐšÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð¸Ð¼Ð° Ñ‚Ð¾Ð²Ð° Ð·Ð½Ð°Ð¼Ðµ?",
-  q_capital:"ÐÐ° ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð¿Ñ€Ð¸Ð½Ð°Ð´Ð»ÐµÐ¶Ð¸ Ñ‚Ð°Ð·Ð¸ ÑÑ‚Ð¾Ð»Ð¸Ñ–Ð°?",q_river:"Ð’ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ñ‚ÐµÑ‡Ðµ Ñ‚Ð°Ð·Ð¸ Ñ€ÐµÐºÐ°?",
-  q_landmark:"Ð’ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° ÑÐµ Ð½Ð°Ð¼Ð¸Ñ€Ð° Ñ‚Ð°Ð·Ð¸ Ð·Ð°Ð±ÐµÐ»ÐµÐ¶Ð¸Ñ‚ÐµÐ»Ð½Ð¾ÑÑ‚?",q_park:"Ð’ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° ÑÐµ Ð½Ð°Ð¼Ð¸Ñ€Ð° Ñ‚Ð¾Ð·Ð¸ Ð½Ð°Ñ–Ð¸Ð¾Ð½Ð°Ð»ÐµÐ½ Ð¿Ð°Ñ€Ðº?",
-  q_unesco:"Ð’ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° ÑÐµ Ð½Ð°Ð¼Ð¸Ñ€Ð° Ñ‚Ð¾Ð²Ð° Ð®ÐÐ•Ð¡ÐšÐž Ð½Ð°ÑÐ»ÐµÐ´ÑÑ‚Ð²Ð¾?",q_citymark:"ÐÐ° ÐºÐ¾Ð¹ Ð³Ñ€Ð°Ð´ Ð¿Ñ€Ð¸Ð½Ð°Ð´Ð»ÐµÐ¶Ð¸ Ñ‚Ð°Ð·Ð¸ Ð·Ð°Ð±ÐµÐ»ÐµÐ¶Ð¸Ñ‚ÐµÐ»Ð½Ð¾ÑÑ‚?",
-  q_subway:"Ð’ ÐºÐ¾Ð¹ Ð³Ñ€Ð°Ð´ Ðµ Ñ‚Ð¾Ð²Ð° Ð¼ÐµÑ‚Ñ€Ð¾?",q_flagsel:"ÐšÐ¾Ðµ Ð·Ð½Ð°Ð¼Ðµ Ð¿Ñ€Ð¸Ð½Ð°Ð´Ð»ÐµÐ¶Ð¸ Ð½Ð°…",
-  q_rcapital:"ÐšÐ°ÐºÐ²Ð° Ðµ ÑÑ‚Ð¾Ð»Ð¸Ñ–Ð°Ñ‚Ð° Ð½Ð°…?",q_rcity:"ÐšÐ¾Ð¹ Ð³Ñ€Ð°Ð´ ÑÐµ Ð½Ð°Ð¼Ð¸Ñ€Ð° Ð²…?",
-  q_rriver:"ÐšÐ¾Ñ Ñ€ÐµÐºÐ° Ñ‚ÐµÑ‡Ðµ Ð¿Ñ€ÐµÐ·…?",q_outline:"ÐšÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð¸Ð¼Ð° Ñ‚Ð°Ð·Ð¸ Ñ„Ð¾Ñ€Ð¼Ð°?",
-  q_food:"ÐžÑ‚ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð¸Ð´Ð²Ð° Ñ‚Ð¾Ð²Ð° ÑÑÑ‚Ð¸Ðµ?",q_brand:"ÐžÑ‚ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð¸Ð´Ð²Ð° Ñ‚Ð°Ð·Ð¸ Ð¼Ð°Ñ€ÐºÐ°?",
-  q_currency:"ÐÐ° ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð¿Ñ€Ð¸Ð½Ð°Ð´Ð»ÐµÐ¶Ð¸ Ñ‚Ð°Ð·Ð¸ Ð²Ð°Ð»ÑƒÑ‚Ð°?",q_curr_real:"ÐšÐ°ÐºÐ²Ð° Ð²Ð°Ð»ÑƒÑ‚Ð° Ð¸Ð¼Ð°…",
-  q_pop_compare:"ÐŸÐ¾Ð²ÐµÑ‡Ðµ Ð¸Ð»Ð¸ Ð¿Ð¾-Ð¼Ð°Ð»ÐºÐ¾ Ð¶Ð¸Ñ‚ÐµÐ»Ð¸?",
-  q_hl_pop:"ÐŸÐ¾Ð²ÐµÑ‡Ðµ Ð¶Ð¸Ñ‚ÐµÐ»Ð¸ Ð¾Ñ‚ {a}?",q_hl_river:"ÐŸÐ¾-Ð´ÑŠÐ»Ð³Ð° Ð¾Ñ‚ {a}?",q_hl_area:"ÐŸÐ¾-Ð³Ð¾Ð»ÑÐ¼Ð° Ð¾Ñ‚ {a}?",
-  q_neighbor:"ÐšÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ð³Ñ€Ð°Ð½Ð¸Ñ‡Ð¸ Ñ…?",q_neighbor_not:"ÐÐ• Ð³Ñ€Ð°Ð½Ð¸Ñ‡Ð¸ Ñ…?",
-  q_plates_casual:"ÐžÑ‚ ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ðµ Ñ‚Ð°Ð·Ð¸ Ñ‚Ð°Ð±ÐµÐ»Ð°?",q_plates_hard:"Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸Ñ–Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð° – Ð±ÐµÐ· Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ°!",
-  q_river_real:"ÐŸÑ€ÐµÐ· ÐºÐ¾Ñ ÑÑ‚Ñ€Ð°Ð½Ð° Ñ‚ÐµÑ‡Ðµ Ñ‚Ð°Ð·Ð¸ Ñ€ÐµÐºÐ°?",q_map_guess:"ÐÐ°Ð¼ÐµÑ€Ð¸ ÑÑ‚Ñ€Ð°Ð½Ð°Ñ‚Ð° Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð°Ñ‚Ð°",
-  fb_correct:"✓“ ÐŸÑ€Ð°Ð²Ð¸Ð»Ð½Ð¾! +{pts}",fb_wrong:"✗ Ð“Ñ€ÐµÑˆÐ½Ð¾ → {ans}",fb_time:"⏱ Ð’Ñ€ÐµÐ¼ÐµÑ‚Ð¾ Ð¸Ð·Ñ‚ÐµÑ‡Ðµ! → {ans}",
-  plates_more:"+{n} oÑ‰e",pct_complete:"{pct}% Ð·Ð°Ð²ÑŠÑ€ÑˆÐµÐ½Ð¾",
-  spotter_dup:"📋 {code} ({country}) Ð²ÐµÑ‡e ÑÑŠÐ±Ñ€Ð°Ð½Ð¾!",
-  map_unavail:"ÐšÐ°Ñ€Ñ‚Ð°Ñ‚Ð° Ð½Ðµ Ðµ Ð´Ð¾ÑÑ‚ÑŠÐ¿Ð½Ð°",map_loading:"Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð°Ñ‚Ð°…",
-  q_subway_km:"ÐšÐ¾Ð»ÐºÐ¾ Ð´ÑŠÐ»Ð³Ð° Ðµ Ð¼ÐµÑ‚Ñ€Ð¾Ñ‚Ð¾ … (km)?",q_subway_lines:"ÐšÐ¾Ð»ÐºÐ¾ Ð¼ÐµÑ‚Ñ€Ð¾Ð»Ð¸Ð½Ð¸Ð¸ Ð¸Ð¼Ð° …?",
-  diff_desc_casual:"\u{1F7E2} Casual: Ð Ð°Ð·Ñ…Ð¾Ð´ÐµÐ½ · Ð‘ÐµÐ· Ð»Ð¸Ð¼Ð¸Ñ‚ · ∞ Ð–Ð¸Ð²Ð¾Ñ‚Ð°",diff_desc_hc:"\u{1F525} Hardcore: ÐšÐ»Ð°ÑÐ¸Ðº · Ð‘ÐµÐ· Ð»Ð¸Ð¼Ð¸Ñ‚ · 3 Ð–Ð¸Ð²Ð¾Ñ‚Ð°",diff_desc_surv:"\u{1F480} Survival: Ð¡Ñ€ÐµÑ‰Ñƒ Ð²Ñ€ÐµÐ¼ÐµÑ‚Ð¾ · 8Ñ · 3 Ð–Ð¸Ð²Ð¾Ñ‚Ð°",hud_lives:"Ð–Ð˜Ð’ÐžÐ¢Ð",score_mult_max:"ÐœÐ°ÐºÑ ÐœÐ½Ð¾Ð¶Ð¸Ñ‚ÐµÐ»",score_time_bonus:"Ð’Ñ€ÐµÐ¼ÐµÐ² Ð‘Ð¾Ð½ÑƒÑ",pts_abbr:"Ñ‚.",score_correct_lbl:"Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð½Ð¾",mode_wappen:"Ð“ÐµÑ€Ð±Ð¾Ð²Ðµ",mode_slf:"Ð“Ñ€Ð°Ð´-Ð¡Ñ‚Ñ€Ð°Ð½Ð°-Ð ÐµÐºÐ°",mode_euro:"Ð•Ð²Ñ€Ð¾Ð¼Ð¾Ð½ÐµÑ‚Ð¸"
+  play:"ИГРАЙ",again:"ИГРАЙ ОТНОВО",menu:"Главно меню",board:"Класиране",pass:"Паспорт",
+  fav_empty:"Все още няма запазени любими",
+  profile:"Профил",stats:"Статистики",casual:"Лесен",hardcore:"Труден",rounds:"Рунди",
+  btn_collect:"Събери",btn_back:"Обратно към главното меню",btn_next:"Напред →",
+  btn_again:"Пак",btn_menu:"Главно меню",btn_adapt:"Адаптирай",
+  spotter_title:"\u{1F697} Пътен Спотър",
+  spotter_hint:"Видял табела? Запиши я веднага!",
+  spotter_all:"Всички държави",spotter_unknown:"Непозната табела",
+  spotter_not_in:"не е в",spotter_but_in:"но е в",spotter_no_region:"няма региони – въведи \"{code}\"",
+  album_title:"\u{1F4D4} Албум с табели",album_list:"\u{1F4DD} Списък",album_map:"\u{1F5FA} Карта",
+  album_empty_country:"Нищо от {country} – използвай Спотъра!",
+  album_empty:"Нищо събрано!\nИграй ЕС табели или използвай Спотъра.",
+  album_codes:"Кодове",
+  hl_higher:"⬆️ Повече / По-дълго / По-голямо",hl_lower:"⬇️ По-малко / По-кратко / По-малко",
+  hl_more:"⬆️ Повече жители",hl_less:"⬇️ По-малко жители",
+  hl_longer:"⬆️ По-дълго",hl_shorter:"⬇️ По-кратко",hl_bigger:"⬆️ По-голямо (площ)",hl_smaller:"⬇️ По-малко (площ)",
+  loc_detected:"Намирате се в {country}",loc_adapt:"Адаптирай",
+  q_city:"В коя държава се намира този град?",q_flag:"Коя държава има това знаме?",
+  q_capital:"На коя държава принадлежи тази столица?",q_river:"В коя държава тече тази река?",
+  q_landmark:"В коя държава е тази забележителност?",q_park:"В коя държава е този национален парк?",
+  q_unesco:"В коя държава е това UNESCO наследство?",q_citymark:"На кой град принадлежи тази забележителност?",
+  q_subway:"В кой град е това метро?",q_flagsel:"Кое знаме принадлежи на…",
+  q_rcapital:"Каква е столицата на…?",q_rcity:"Кой град се намира в…?",
+  q_rriver:"Коя река тече през…?",q_outline:"Коя държава има тази форма?",
+  q_food:"От коя държава идва това ястие?",q_brand:"От коя държава идва тази марка?",
+  q_currency:"На коя държава принадлежи тази валута?",q_curr_real:"Каква валута има…",
+  q_pop_compare:"Повече или по-малко жители?",
+  q_hl_pop:"Повече жители от {a}?",q_hl_river:"По-дълга от {a}?",q_hl_area:"По-голяма от {a}?",q_hl_gdp:"По-висок БВП/глава от {a}?",q_hl_density:"По-гъсто населена от {a}?",q_hl_elevation:"По-висок връх от {a}?",q_hl_coastline:"По-дълга брегова линия от {a}?",q_hl_borders:"Повече съседи от {a}?",q_hl_lifeexp:"По-дълъг живот от {a}?",q_hl_median_age:"По-висока средна възраст от {a}?",q_hl_forest:"Повече гора от {a}?",
+  q_neighbor:"Коя държава граничи с…?",q_neighbor_not:"НЕ граничи с…?",
+  q_plates_casual:"От коя държава е тази табела?",q_plates_hard:"Разпознай региона – без подсказка!",
+  q_river_real:"През коя държава тече тази река?",q_map_guess:"Намери държавата на картата",
+  fb_correct:"✓ Правилно! +{pts}",fb_wrong:"✗ Грешно → {ans}",fb_time:"⏱ Изтече! → {ans}",
+  plates_more:"+{n} още",pct_complete:"{pct}% завършено",
+  spotter_dup:"\u{1F4CB} {code} ({country}) вече събрано!",
+  map_unavail:"Картата не е достъпна",map_loading:"Зареждане на картата…",
+  q_subway_km:"Колко дълга е метро мрежата … (км)?",q_subway_lines:"Колко метролинии има …?",
+  ob_welcome:"Добре дошли в GeoQuest",ob_sub1:"Географският куиз – събирай печати, изкачвай се в лигата!",ob_difficulty:"Ниво на трудност",ob_diff_sub:"Избери своя стил. Може да се промени по всяко време.",
+  ob_diff_casual_desc:"Големи градове • 12 сек.",ob_diff_hc_desc:"Всички градове • 8 сек.",ob_back:"← Назад",ob_modes_title:"Игрови режими",
+  ob_modes_sub:"19 режима, една цел: Опознай света.",ob_more_modes:"… и 16 други режима",ob_start:"\u{1F680} Да тръгваме!",ob_have_account:"Вече имам акаунт",ob_register:"Нов потребител? Регистрирай се",
+  home_hi:"Здравей, {name} \u{1F44B}",home_guest:"Добре дошъл, Гост \u{1F30D}",home_save:"\u{1F510} Запази прогреса",home_pvp_sub:"Играй в реално време срещу приятел",
+  ob_mode1_name:"Град → Държава",ob_mode1_desc:"Държава за града · Casual 1k, HC 10k",ob_mode2_name:"ЕС Табели",ob_mode2_desc:"От коя държава е тази табела?",ob_mode3_name:"Метро мрежа",ob_mode3_desc:"Линии и км на метрото.",
+  language_select:"ЕЗИК",
+  badge_beta:"Бета",beta_warning:"Играбело, но може да има грешки.",
+  rotate_device:"Моля, завърти устройството \u{1F4F1}➡\u{1F5FA}",
+  diff_desc_casual:"\u{1F7E2} Casual: Релакс · Без лимит · ∞ живота",diff_desc_hc:"\u{1F525} Hardcore: Класика · Без лимит · 3 живота",diff_desc_surv:"\u{1F480} Survival: Срещу часовника · 8 сек · 3 живота",
+  hud_lives:"ЖИВОТА",score_mult_max:"Макс. множител",score_time_bonus:"Бонус за времето",pts_abbr:"т.",score_correct_lbl:"правилно",mode_wappen:"Гербове",mode_slf:"Град-Страна-Река",mode_euro:"Евромонети",
+  mode_wort_schmiede:"Словокуй",mode_hauptstadt_dist:"Разст. до столица",
+  mode_flugrouten_duell:"Дуел маршрути",mode_insel_festland:"Остров или континент",
+  mode_aequator:"Северно или южно?",
+  ws_found:"Намерено",ws_enter_word:"Въведи дума…",ws_check:"Провери",
+  ws_all_found:"Всички думи намерени!",ws_next_city:"Следващ град",
+  ws_duplicate:"✓ Вече намерено!",ws_invalid:"✕ Невалидна дума",
+  ws_lang_label:"Език",ws_letters_hint:"Формирай думи от буквите на града",
+  q_airport_pin:"Къде е този летище?",click_map:"Докосни картата",
+  q_uk_match:"От коя държава произхожда:",q_uk_pin:"Къде е това на картата?",uk_hl_higher:"По-висок ↑",uk_hl_lower:"По-нисък ↓",uk_hl_prompt:"Коя сграда е по-висока?"
 },
 el:{
   play:"Î Î‘Î™ÎžÎ•",again:"Î Î‘Î™ÎžÎ• ÎžÎ‘ÎÎ‘",menu:"ÎšÏÏÎ¹Î¿ Î¼ÎµÎ½Î¿Ï",board:"ÎšÎ±Ï„Î¬Ï„Î±Î¾Î·",pass:"Î”Î¹Î±Î²Î±Ï„Î®ÏÎ¹Î¿",
@@ -2789,72 +2809,72 @@ const MODES=[
   /* === H/L ENGINE: H\u00f6her/Niedriger (1 Modus) === */
   {id:"uk_wolkenkratzer",icon:"\u{1F3D9}",title:"Wolkenkratzer-Duell",   group:"kultur",prompt:"Welches Geb\u00e4ude ist h\u00f6her?",desc:"Burj Khalifa, Shanghai Tower und Co. nach H\u00f6he vergleichen"},
     /* === Phase 216 Schritt 1: Universal-Pin (9) === */
-    {id:"uk_wuesten",         icon:"\u{1F3DC}",title:"[BETA] W\u00fcsten pinnen",          group:"lifestyle",prompt:"\u{1F4CD} Wo liegt diese W\u00fcste?",            desc:"Sahara, Gobi, Atacama und mehr auf der Karte"},
-    {id:"uk_berggipfel",      icon:"\u{1F3D4}",title:"[BETA] Berggipfel pinnen",        group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Berggipfel?",        desc:"Everest, Aconcagua, Mont Blanc und Co."},
-    {id:"uk_meerengen",       icon:"\u{1F30A}",title:"[BETA] Meeren\u2019gen pinnen",   group:"lifestyle",prompt:"\u{1F4CD} Wo liegt diese Meere\u2019nge?",     desc:"Gibraltar, Bosporus, Malakka und mehr"},
-    {id:"uk_wasserfaelle",    icon:"\u{1F4A7}",title:"[BETA] Wasserf\u00e4lle pinnen", group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Wasserfall?",         desc:"Victoria, Niagara, Iguaz\u00FA und mehr"},
-    {id:"uk_canyons",         icon:"\u{26F0}",title:"[BETA] Canyons pinnen",            group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Canyon?",             desc:"Grand Canyon, Colca, Fish River Canyon"},
-    {id:"uk_hohe_stadien",    icon:"\u{1F3DF}",title:"[BETA] Hochgelegene Stadien",     group:"sport",   prompt:"\u{1F4CD} Wo liegt dieses hochgelegene Stadion?",desc:"Die h\u00f6chstgelegenen Fu\u00dfballstadien der Welt"},
-    {id:"uk_leichtathletik_wm",icon:"\u{1F3C3}",title:"[BETA] Leichtathletik-WM Orte", group:"sport",   prompt:"\u{1F4CD} Wo fand diese Leichtathletik-WM statt?",desc:"WM-Austragungsorte seit 1983"},
-    {id:"uk_surf_spots",      icon:"\u{1F3C4}",title:"[BETA] Surf-Spots pinnen",        group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Surf-Spot?",           desc:"Pipeline, Teahupo'o, Nazar\u00e9 und mehr"},
-    {id:"uk_kontinent_mitte", icon:"\u{1F30D}",title:"[BETA] Kontinent-Zentren",        group:"pure_geo",prompt:"\u{1F4CD} Wo liegt das Zentrum dieses Kontinents?",desc:"Geographische Mittelpunkte der Kontinente"},
+    {id:"uk_wuesten",         icon:"\u{1F3DC}",title:"W\u00fcsten pinnen",          group:"lifestyle",prompt:"\u{1F4CD} Wo liegt diese W\u00fcste?",            desc:"Sahara, Gobi, Atacama und mehr auf der Karte"},
+    {id:"uk_berggipfel",      icon:"\u{1F3D4}",title:"Berggipfel pinnen",        group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Berggipfel?",        desc:"Everest, Aconcagua, Mont Blanc und Co."},
+    {id:"uk_meerengen",       icon:"\u{1F30A}",title:"Meeren\u2019gen pinnen",   group:"lifestyle",prompt:"\u{1F4CD} Wo liegt diese Meere\u2019nge?",     desc:"Gibraltar, Bosporus, Malakka und mehr"},
+    {id:"uk_wasserfaelle",    icon:"\u{1F4A7}",title:"Wasserf\u00e4lle pinnen", group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Wasserfall?",         desc:"Victoria, Niagara, Iguaz\u00FA und mehr"},
+    {id:"uk_canyons",         icon:"\u{26F0}",title:"Canyons pinnen",            group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Canyon?",             desc:"Grand Canyon, Colca, Fish River Canyon"},
+    {id:"uk_hohe_stadien",    icon:"\u{1F3DF}",title:"Hochgelegene Stadien",     group:"sport",   prompt:"\u{1F4CD} Wo liegt dieses hochgelegene Stadion?",desc:"Die h\u00f6chstgelegenen Fu\u00dfballstadien der Welt"},
+    {id:"uk_leichtathletik_wm",icon:"\u{1F3C3}",title:"Leichtathletik-WM Orte", group:"sport",   prompt:"\u{1F4CD} Wo fand diese Leichtathletik-WM statt?",desc:"WM-Austragungsorte seit 1983"},
+    {id:"uk_surf_spots",      icon:"\u{1F3C4}",title:"Surf-Spots pinnen",        group:"lifestyle",prompt:"\u{1F4CD} Wo liegt dieser Surf-Spot?",           desc:"Pipeline, Teahupo'o, Nazar\u00e9 und mehr"},
+    {id:"uk_kontinent_mitte", icon:"\u{1F30D}",title:"Kontinent-Zentren",        group:"pure_geo",prompt:"\u{1F4CD} Wo liegt das Zentrum dieses Kontinents?",desc:"Geographische Mittelpunkte der Kontinente"},
     /* === Phase 216 Schritt 2: Universal-H/L (9) === */
-    {id:"hl_b_total_lang",    icon:"\u{1F5E3}",title:"[BETA] Sprachen-Vielfalt",        group:"comparisons",prompt:"Welches Land hat mehr gesprochene Sprachen?",  desc:"Gesamtzahl gesprochener Sprachen pro Land"},
-    {id:"hl_b_nobel",         icon:"\u{1F3C5}",title:"[BETA] Nobelpreistr\u00e4ger",   group:"comparisons",prompt:"Welches Land hat mehr Nobelpreistr\u00e4ger?",  desc:"Nobelpreise nach Herkunftsland"},
-    {id:"hl_b_medals",        icon:"\u{1F947}",title:"[BETA] Olympia-Medaillen",        group:"comparisons",prompt:"Welches Land hat mehr Olympia-Medaillen?",      desc:"Sommerspiele-Medaillen aller Zeiten"},
-    {id:"hl_b_ns_km",         icon:"\u{2194}",title:"[BETA] Nord-S\u00fcd-Ausdehnung", group:"comparisons",prompt:"Welches Land erstreckt sich weiter N-S?",       desc:"Nord-S\u00fcd-Ausdehnung in km"},
-    {id:"hl_b_bikes",         icon:"\u{1F6B2}",title:"[BETA] Fahrrad-Nation",           group:"comparisons",prompt:"Welches Land hat mehr Fahrr\u00e4der/100 Einw.?",desc:"Fahrr\u00e4der pro 100 Einwohner"},
-    {id:"hl_b_land_border",   icon:"\u{1F6A7}",title:"[BETA] L\u00e4ngste Grenzen",    group:"comparisons",prompt:"Welches Land hat l\u00e4ngere Landesgrenzen?",   desc:"Gesamtl\u00e4nge aller Landesgrenzen in km"},
-    {id:"hl_b_coffee",        icon:"\u2615",   title:"[BETA] Kaffee-Nation",            group:"lifestyle",prompt:"Welches Land trinkt mehr Kaffee?",               desc:"Kaffeekonsum kg pro Kopf/Jahr"},
-    {id:"hl_b_military",      icon:"\u{1F6E1}",title:"[BETA] Milit\u00e4rausgaben",    group:"comparisons",prompt:"Welches Land gibt mehr f\u00fcr Milit\u00e4r aus?",desc:"Milit\u00e4rausgaben in Mrd. USD (2023)"},
-    {id:"hl_b_renewable",     icon:"\u{1F331}",title:"[BETA] Erneuerbare Energie",      group:"comparisons",prompt:"Welches Land hat mehr erneuerbare Energie?",     desc:"Anteil Erneuerbarer Energien an Stromerzeugung"},
+    {id:"hl_b_total_lang",    icon:"\u{1F5E3}",title:"Sprachen-Vielfalt",        group:"comparisons",prompt:"Welches Land hat mehr gesprochene Sprachen?",  desc:"Gesamtzahl gesprochener Sprachen pro Land"},
+    {id:"hl_b_nobel",         icon:"\u{1F3C5}",title:"Nobelpreistr\u00e4ger",   group:"comparisons",prompt:"Welches Land hat mehr Nobelpreistr\u00e4ger?",  desc:"Nobelpreise nach Herkunftsland"},
+    {id:"hl_b_medals",        icon:"\u{1F947}",title:"Olympia-Medaillen",        group:"comparisons",prompt:"Welches Land hat mehr Olympia-Medaillen?",      desc:"Sommerspiele-Medaillen aller Zeiten"},
+    {id:"hl_b_ns_km",         icon:"\u{2194}",title:"Nord-S\u00fcd-Ausdehnung", group:"comparisons",prompt:"Welches Land erstreckt sich weiter N-S?",       desc:"Nord-S\u00fcd-Ausdehnung in km"},
+    {id:"hl_b_bikes",         icon:"\u{1F6B2}",title:"Fahrrad-Nation",           group:"comparisons",prompt:"Welches Land hat mehr Fahrr\u00e4der/100 Einw.?",desc:"Fahrr\u00e4der pro 100 Einwohner"},
+    {id:"hl_b_land_border",   icon:"\u{1F6A7}",title:"L\u00e4ngste Grenzen",    group:"comparisons",prompt:"Welches Land hat l\u00e4ngere Landesgrenzen?",   desc:"Gesamtl\u00e4nge aller Landesgrenzen in km"},
+    {id:"hl_b_coffee",        icon:"\u2615",   title:"Kaffee-Nation",            group:"lifestyle",prompt:"Welches Land trinkt mehr Kaffee?",               desc:"Kaffeekonsum kg pro Kopf/Jahr"},
+    {id:"hl_b_military",      icon:"\u{1F6E1}",title:"Milit\u00e4rausgaben",    group:"comparisons",prompt:"Welches Land gibt mehr f\u00fcr Milit\u00e4r aus?",desc:"Milit\u00e4rausgaben in Mrd. USD (2023)"},
+    {id:"hl_b_renewable",     icon:"\u{1F331}",title:"Erneuerbare Energie",      group:"comparisons",prompt:"Welches Land hat mehr erneuerbare Energie?",     desc:"Anteil Erneuerbarer Energien an Stromerzeugung"},
     /* === Phase 216 Schritt 3 A: Geo-Match (2) === */
-    {id:"uk_insel_match",     icon:"\u{1F3DD}",title:"[BETA] Inseln zuordnen",          group:"lifestyle",prompt:"Zu welchem Land geh\u00f6rt diese Insel?",       desc:"Gal\u00e1pagos, Gr\u00f6nland, Bali und mehr"},
-    {id:"uk_ehemalige_hauptstaedte",icon:"\u{1F3DB}",title:"[BETA] Ehemalige Hauptst\u00e4dte",group:"lifestyle",prompt:"In welchem Land war dies fr\u00fcher die Hauptstadt?",desc:"Bonn, Lagos, Kyoto und mehr"},
+    {id:"uk_insel_match",     icon:"\u{1F3DD}",title:"Inseln zuordnen",          group:"lifestyle",prompt:"Zu welchem Land geh\u00f6rt diese Insel?",       desc:"Gal\u00e1pagos, Gr\u00f6nland, Bali und mehr"},
+    {id:"uk_ehemalige_hauptstaedte",icon:"\u{1F3DB}",title:"Ehemalige Hauptst\u00e4dte",group:"lifestyle",prompt:"In welchem Land war dies fr\u00fcher die Hauptstadt?",desc:"Bonn, Lagos, Kyoto und mehr"},
     /* === Phase 216 Schritt 3 B: Kultur-Match (5) === */
-    {id:"uk_philosophen",     icon:"\u{1F9D0}",title:"[BETA] Philosophen",              group:"lifestyle",prompt:"Aus welchem Land stammt dieser Philosoph?",      desc:"Kant, Descartes, Konfuzius und mehr"},
-    {id:"uk_nationalpflanzen",icon:"\u{1F33A}",title:"[BETA] Nationalpflanzen",         group:"lifestyle",prompt:"Welches Land symbolisiert diese Pflanze?",       desc:"Kirschbl\u00fcte, Lotus, Ahorn und mehr"},
-    {id:"uk_nationaltiere",   icon:"\u{1F98A}",title:"[BETA] Nationaltiere",            group:"lifestyle",prompt:"F\u00fcr welches Land steht dieses Tier?",       desc:"K\u00e4nguru, Panda, Adler und mehr"},
-    {id:"uk_religionen",      icon:"\u{1F54D}",title:"[BETA] Religionen & Ursprung",    group:"lifestyle",prompt:"In welchem Land entstand diese Religion?",       desc:"Shinto, Hinduismus, Cao Dai und mehr"},
-    {id:"uk_schriften",       icon:"\u{270D}",title:"[BETA] Schriftsysteme",            group:"lifestyle",prompt:"In welchem Land wird diese Schrift verwendet?",  desc:"Hangul, Devanagari, Kyrillisch und mehr"},
+    {id:"uk_philosophen",     icon:"\u{1F9D0}",title:"Philosophen",              group:"lifestyle",prompt:"Aus welchem Land stammt dieser Philosoph?",      desc:"Kant, Descartes, Konfuzius und mehr"},
+    {id:"uk_nationalpflanzen",icon:"\u{1F33A}",title:"Nationalpflanzen",         group:"lifestyle",prompt:"Welches Land symbolisiert diese Pflanze?",       desc:"Kirschbl\u00fcte, Lotus, Ahorn und mehr"},
+    {id:"uk_nationaltiere",   icon:"\u{1F98A}",title:"Nationaltiere",            group:"lifestyle",prompt:"F\u00fcr welches Land steht dieses Tier?",       desc:"K\u00e4nguru, Panda, Adler und mehr"},
+    {id:"uk_religionen",      icon:"\u{1F54D}",title:"Religionen & Ursprung",    group:"lifestyle",prompt:"In welchem Land entstand diese Religion?",       desc:"Shinto, Hinduismus, Cao Dai und mehr"},
+    {id:"uk_schriften",       icon:"\u{270D}",title:"Schriftsysteme",            group:"lifestyle",prompt:"In welchem Land wird diese Schrift verwendet?",  desc:"Hangul, Devanagari, Kyrillisch und mehr"},
     /* === Phase 216 Schritt 3 C: Sport (1) === */
-    {id:"uk_nationalsport_off",icon:"\u{1F3C6}",title:"[BETA] Offizieller Nationalsport",group:"sport",  prompt:"Welches Land hat diesen Sport als Nationalsport?",desc:"Kabaddi, Muay Thai, Hurling und mehr"},
+    {id:"uk_nationalsport_off",icon:"\u{1F3C6}",title:"Offizieller Nationalsport",group:"sport",  prompt:"Welches Land hat diesen Sport als Nationalsport?",desc:"Kabaddi, Muay Thai, Hurling und mehr"},
     /* === Phase 216 Schritt 3 D: Nachbarn-Match (9) === */
-    {id:"uk_enklave",         icon:"\u{1F5FA}",title:"[BETA] Exklaven erkennen",        group:"neighbors",prompt:"In welchem Land liegt diese Exklave?",           desc:"Kaliningrad, Alaska, Ceuta und mehr"},
-    {id:"uk_grenzfluesse",    icon:"\u{1F4A7}",title:"[BETA] Grenzfl\u00fcsse",        group:"neighbors",prompt:"In welchem Land entspringt dieser Grenzfluss?",  desc:"Rhein, Rio Grande, Mekong und mehr"},
-    {id:"uk_halbinseln",      icon:"\u{1F30D}",title:"[BETA] Halbinseln zuordnen",      group:"neighbors",prompt:"In welchem Land liegt diese Halbinsel?",         desc:"Skandinavien, Iberia, Arabien und mehr"},
-    {id:"uk_deltamuendungen", icon:"\u{1F30A}",title:"[BETA] Flussdeltas",              group:"neighbors",prompt:"In welchem Land liegt dieses Flussdelta?",       desc:"Nil-Delta, Mekong-Delta, Niger-Delta"},
-    {id:"uk_kaps",            icon:"\u{26F3}",title:"[BETA] Kaps der Welt",             group:"neighbors",prompt:"In welchem Land liegt dieses Kap?",              desc:"Kap der Guten Hoffnung, Kap Hoorn, Nordkapp"},
-    {id:"uk_meerbusen",       icon:"\u{1F30A}",title:"[BETA] Meeresg\u00f6lfe",        group:"neighbors",prompt:"An welchem Land liegt dieser Golf?",             desc:"Golf von Mexiko, Bengalen, Persien"},
-    {id:"uk_inselgruppen",    icon:"\u{1F3DD}",title:"[BETA] Inselgruppen zuordnen",    group:"neighbors",prompt:"Zu welchem Land geh\u00f6rt diese Inselgruppe?", desc:"Azoren, F\u00e4r\u00f6er, Kerguelen"},
-    {id:"uk_gebirge_match",   icon:"\u{26F0}",title:"[BETA] Gebirge zuordnen",          group:"neighbors",prompt:"In welchem Land liegt dieses Gebirge?",          desc:"Himalaja, Andes, Ural und mehr"},
-    {id:"uk_seen_match",      icon:"\u{1F30A}",title:"[BETA] Seen zuordnen",            group:"neighbors",prompt:"In welchem Land liegt dieser See haupts\u00e4chlich?",desc:"Baikalsee, Victoriasee, Titicacasee"},
+    {id:"uk_enklave",         icon:"\u{1F5FA}",title:"Exklaven erkennen",        group:"neighbors",prompt:"In welchem Land liegt diese Exklave?",           desc:"Kaliningrad, Alaska, Ceuta und mehr"},
+    {id:"uk_grenzfluesse",    icon:"\u{1F4A7}",title:"Grenzfl\u00fcsse",        group:"neighbors",prompt:"In welchem Land entspringt dieser Grenzfluss?",  desc:"Rhein, Rio Grande, Mekong und mehr"},
+    {id:"uk_halbinseln",      icon:"\u{1F30D}",title:"Halbinseln zuordnen",      group:"neighbors",prompt:"In welchem Land liegt diese Halbinsel?",         desc:"Skandinavien, Iberia, Arabien und mehr"},
+    {id:"uk_deltamuendungen", icon:"\u{1F30A}",title:"Flussdeltas",              group:"neighbors",prompt:"In welchem Land liegt dieses Flussdelta?",       desc:"Nil-Delta, Mekong-Delta, Niger-Delta"},
+    {id:"uk_kaps",            icon:"\u{26F3}",title:"Kaps der Welt",             group:"neighbors",prompt:"In welchem Land liegt dieses Kap?",              desc:"Kap der Guten Hoffnung, Kap Hoorn, Nordkapp"},
+    {id:"uk_meerbusen",       icon:"\u{1F30A}",title:"Meeresg\u00f6lfe",        group:"neighbors",prompt:"An welchem Land liegt dieser Golf?",             desc:"Golf von Mexiko, Bengalen, Persien"},
+    {id:"uk_inselgruppen",    icon:"\u{1F3DD}",title:"Inselgruppen zuordnen",    group:"neighbors",prompt:"Zu welchem Land geh\u00f6rt diese Inselgruppe?", desc:"Azoren, F\u00e4r\u00f6er, Kerguelen"},
+    {id:"uk_gebirge_match",   icon:"\u{26F0}",title:"Gebirge zuordnen",          group:"neighbors",prompt:"In welchem Land liegt dieses Gebirge?",          desc:"Himalaja, Andes, Ural und mehr"},
+    {id:"uk_seen_match",      icon:"\u{1F30A}",title:"Seen zuordnen",            group:"neighbors",prompt:"In welchem Land liegt dieser See haupts\u00e4chlich?",desc:"Baikalsee, Victoriasee, Titicacasee"},
     /* === Phase 216 Schritt 3 E: Mobilit\u00e4t-Match (9) === */
-    {id:"uk_automarken",      icon:"\u{1F697}",title:"[BETA] Automarken-Heimat",        group:"airports",prompt:"Aus welchem Land kommt diese Automarke?",         desc:"Toyota, BMW, Ferrari und mehr"},
-    {id:"uk_fluggesellschaften",icon:"\u2708",title:"[BETA] Airlines zuordnen",          group:"airports",prompt:"Aus welchem Land kommt diese Fluggesellschaft?",  desc:"Lufthansa, Emirates, Qantas und mehr"},
-    {id:"uk_bahnstrecken",    icon:"\u{1F686}",title:"[BETA] Ber\u00fchmte Bahnstrecken",group:"airports",prompt:"In welchem Land liegt diese Bahnstrecke?",       desc:"Trans-Sibirische, Shinkansen, TGV"},
-    {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"[BETA] Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
-    {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"[BETA] Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
-    {id:"uk_reedereien",      icon:"\u{1F6A2}",title:"[BETA] Reedereien zuordnen",      group:"airports",prompt:"Aus welchem Land kommt diese Reederei?",          desc:"Maersk, MSC, Hapag-Lloyd und mehr"},
-    {id:"uk_autobahnen_beruhmt",icon:"\u{1F6E3}",title:"[BETA] Autobahnsysteme",        group:"airports",prompt:"F\u00fcr welches Land steht dieses Autobahnsystem?",desc:"Autobahn, Autostrada, Interstate"},
-    {id:"uk_metrostaedte",    icon:"\u{1F687}",title:"[BETA] Metro-Systeme zuordnen",   group:"airports",prompt:"In welchem Land liegt dieses U-Bahn-System?",    desc:"Tokyo Metro, London Underground, U-Bahn Berlin"},
-    {id:"uk_luft_rekorde",    icon:"\u{1F6EB}",title:"[BETA] Luftfahrt-Rekorde",        group:"airports",prompt:"Welchem Land geh\u00f6rt dieser Luftfahrt-Rekord?",desc:"L\u00e4ngste Route, h\u00f6chster Flughafen"},
+    {id:"uk_automarken",      icon:"\u{1F697}",title:"Automarken-Heimat",        group:"airports",prompt:"Aus welchem Land kommt diese Automarke?",         desc:"Toyota, BMW, Ferrari und mehr"},
+    {id:"uk_fluggesellschaften",icon:"\u2708",title:"Airlines zuordnen",          group:"airports",prompt:"Aus welchem Land kommt diese Fluggesellschaft?",  desc:"Lufthansa, Emirates, Qantas und mehr"},
+    {id:"uk_bahnstrecken",    icon:"\u{1F686}",title:"Ber\u00fchmte Bahnstrecken",group:"airports",prompt:"In welchem Land liegt diese Bahnstrecke?",       desc:"Trans-Sibirische, Shinkansen, TGV"},
+    {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
+    {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
+    {id:"uk_reedereien",      icon:"\u{1F6A2}",title:"Reedereien zuordnen",      group:"airports",prompt:"Aus welchem Land kommt diese Reederei?",          desc:"Maersk, MSC, Hapag-Lloyd und mehr"},
+    {id:"uk_autobahnen_beruhmt",icon:"\u{1F6E3}",title:"Autobahnsysteme",        group:"airports",prompt:"F\u00fcr welches Land steht dieses Autobahnsystem?",desc:"Autobahn, Autostrada, Interstate"},
+    {id:"uk_metrostaedte",    icon:"\u{1F687}",title:"Metro-Systeme zuordnen",   group:"airports",prompt:"In welchem Land liegt dieses U-Bahn-System?",    desc:"Tokyo Metro, London Underground, U-Bahn Berlin"},
+    {id:"uk_luft_rekorde",    icon:"\u{1F6EB}",title:"Luftfahrt-Rekorde",        group:"airports",prompt:"Welchem Land geh\u00f6rt dieser Luftfahrt-Rekord?",desc:"L\u00e4ngste Route, h\u00f6chster Flughafen"},
     /* === Phase 216 Schritt 4: Custom/Spezial (8) === */
-    {id:"uk_sort_kontinente", icon:"\u{1F30D}",title:"[BETA] Kontinent zuordnen",       group:"pure_geo",prompt:"Auf welchem Kontinent liegt dieses Land?",        desc:"Alle Kontinente — schnell zuordnen"},
-    {id:"uk_sort_ozeane",     icon:"\u{1F30A}",title:"[BETA] Ozean zuordnen",           group:"pure_geo",prompt:"An welchem Ozean liegt dieses Land haupts\u00e4chlich?",desc:"Atlantik, Pazifik, Indischer Ozean"},
-    {id:"uk_schatten_gedreht",icon:"\u{1F5BC}",title:"[BETA] Silhouette gedreht",       group:"lifestyle",prompt:"Erkenne diesen Umriss — auch gedreht!",          desc:"L\u00e4nderumrisse in verschiedenen Winkeln"},
-    {id:"uk_mercator_illusion",icon:"\u{1F5FA}",title:"[BETA] Mercator-Illusion",       group:"map_mode",prompt:"Stimmt diese Gr\u00f6\u00dfenaussage? (Ja/Nein)",  desc:"Wie verzerrt Mercator unsere Weltsicht?"},
-    {id:"uk_kartenausschnitt",icon:"\u{1F50D}",title:"[BETA] Kartenausschnitt",         group:"map_mode",prompt:"Welches Land ist hier markiert?",                desc:"Detailkarte — erkenne das Land"},
-    {id:"uk_distanz_schaetzer",icon:"\u{1F4CF}",title:"[BETA] Distanz-Sch\u00e4tzer",  group:"airports",prompt:"Wie weit ist diese Strecke (ca.)?",               desc:"Sch\u00e4tze Entfernungen zwischen St\u00e4dten"},
-    {id:"uk_flugzeit_schaetzer",icon:"\u2708",title:"[BETA] Flugzeit-Sch\u00e4tzer",    group:"airports",prompt:"Wie lange dauert dieser Flug?",                   desc:"Sch\u00e4tze Flugzeiten zwischen Metropolen"},
-    {id:"uk_breitengrad_match",icon:"\u{1F4CD}",title:"[BETA] Breitengrad-Match",       group:"pure_geo",prompt:"Welche Stadt liegt auf dem gleichen Breitengrad?", desc:"Erstaunliche Breitengrad-Paare entdecken"},
+    {id:"uk_sort_kontinente", icon:"\u{1F30D}",title:"Kontinent zuordnen",       group:"pure_geo",prompt:"Auf welchem Kontinent liegt dieses Land?",        desc:"Alle Kontinente — schnell zuordnen"},
+    {id:"uk_sort_ozeane",     icon:"\u{1F30A}",title:"Ozean zuordnen",           group:"pure_geo",prompt:"An welchem Ozean liegt dieses Land haupts\u00e4chlich?",desc:"Atlantik, Pazifik, Indischer Ozean"},
+    {id:"uk_schatten_gedreht",icon:"\u{1F5BC}",title:"Silhouette gedreht",       group:"lifestyle",prompt:"Erkenne diesen Umriss — auch gedreht!",          desc:"L\u00e4nderumrisse in verschiedenen Winkeln"},
+    {id:"uk_mercator_illusion",icon:"\u{1F5FA}",title:"Mercator-Illusion",       group:"map_mode",prompt:"Stimmt diese Gr\u00f6\u00dfenaussage? (Ja/Nein)",  desc:"Wie verzerrt Mercator unsere Weltsicht?"},
+    {id:"uk_kartenausschnitt",icon:"\u{1F50D}",title:"Kartenausschnitt",         group:"map_mode",prompt:"Welches Land ist hier markiert?",                desc:"Detailkarte — erkenne das Land"},
+    {id:"uk_distanz_schaetzer",icon:"\u{1F4CF}",title:"Distanz-Sch\u00e4tzer",  group:"airports",prompt:"Wie weit ist diese Strecke (ca.)?",               desc:"Sch\u00e4tze Entfernungen zwischen St\u00e4dten"},
+    {id:"uk_flugzeit_schaetzer",icon:"\u2708",title:"Flugzeit-Sch\u00e4tzer",    group:"airports",prompt:"Wie lange dauert dieser Flug?",                   desc:"Sch\u00e4tze Flugzeiten zwischen Metropolen"},
+    {id:"uk_breitengrad_match",icon:"\u{1F4CD}",title:"Breitengrad-Match",       group:"pure_geo",prompt:"Welche Stadt liegt auf dem gleichen Breitengrad?", desc:"Erstaunliche Breitengrad-Paare entdecken"},
     {id:"b60",icon:"\u{1F303}",title:"\u{1F9EA} Nacht-Satellit",         group:"map_mode",prompt:"Welche Region leuchtet nachts am hellsten?",             desc:"Lichtintensitaet auf Satellitenkarten"}
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
 const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
-  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","uk_sort_kontinente","hl_b_coffee"],cost:1000},
+  lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
@@ -4077,7 +4097,7 @@ function genCompNorthQ(){
   const r=_compPick('lat',null);if(!r)return null;
   const[a,b]=r;
   if(COMP_DATA[a].lat===COMP_DATA[b].lat)return null;
-  const fmt=(x)=>Math.abs(x).toFixed(0)+'Â° '+(x>=0?'N':'S');
+  const fmt=(x)=>Math.abs(x).toFixed(0)+'° '+(x>=0?'N':'S');
   return _compQ('comp_north','Welches Land liegt weiter nördlich?',a,b,COMP_DATA[a].lat,COMP_DATA[b].lat,fmt);
 }
 function genCompGdpQ(){
@@ -7377,13 +7397,13 @@ const KULTUR_DATA={
   entdecker:[{n:"Marco Polo",c:"Italien"},{n:"James Cook",c:"Großbritannien"},{n:"Roald Amundsen",c:"Norwegen"},{n:"Vasco da Gama",c:"Portugal"},{n:"Ferdinand Magellan",c:"Portugal"}],
   sport:[{n:"Sumo",c:"Japan"},{n:"Tejo",c:"Kolumbien"},{n:"Cricket",c:"Indien"},{n:"Eishockey",c:"Kanada"},{n:"Muay Thai",c:"Thailand"}],
   brettspiele:[{n:"Schach",c:"Indien"},{n:"Mahjong",c:"China"},{n:"Go",c:"China"},{n:"Backgammon",c:"Iran"},{n:"Mancala",c:"Äthiopien"}],
-  wein_regionen:[],
-  museen:[{n:"Louvre",c:"Frankreich"},{n:"British Museum",c:"Vereinigtes Königreich"},{n:"Vatikanische Museen",c:"Vatikan"},{n:"Metropolitan Museum of Art",c:"USA"},{n:"Hermitage",c:"Russland"},{n:"Prado",c:"Spanien"},{n:"Rijksmuseum",c:"Niederlande"},{n:"Uffizien",c:"Italien"},{n:"Pergamonmuseum",c:"Deutschland"},{n:"Smithsonian",c:"USA"},{n:"MoMA",c:"USA"},{n:"Tate Modern",c:"Vereinigtes Königreich"},{n:"Guggenheim Bilbao",c:"Spanien"},{n:"Acropolis Museum",c:"Griechenland"},{n:"Egyptian Museum Cairo",c:"Ägypten"},{n:"National Palace Museum",c:"Taiwan"},{n:"Musée d'Orsay",c:"Frankreich"},{n:"Topkapi-Palast",c:"Türkei"},{n:"Deutsches Museum",c:"Deutschland"},{n:"Naturhistorisches Museum Wien",c:"Österreich"},{n:"Kunsthistorisches Museum",c:"Österreich"},{n:"Nationalmuseum Stockholm",c:"Schweden"},{n:"Stedelijk Museum",c:"Niederlande"},{n:"Museu do Ipiranga",c:"Brasilien"},{n:"National Museum of China",c:"China"},{n:"Tokyo National Museum",c:"Japan"},{n:"Indian Museum Kolkata",c:"Indien"},{n:"Apartheid Museum",c:"Südafrika"},{n:"Auschwitz-Birkenau",c:"Polen"},{n:"Anne-Frank-Haus",c:"Niederlande"}],
-  kunstwerke:[],
-  filmsets:[],
-  ruinen:[],
-  bruecken:[],
-  gotteshaeuser:[],
+  wein_regionen:[{n:"Bordeaux",lat:44.837,lng:-0.579,c:"Frankreich"},{n:"Napa Valley",lat:38.502,lng:-122.364,c:"USA"},{n:"Toskana",lat:43.769,lng:11.256,c:"Italien"},{n:"Mendoza",lat:-32.890,lng:-68.827,c:"Argentinien"},{n:"Rioja",lat:42.465,lng:-2.445,c:"Spanien"},{n:"Mosel",lat:50.008,lng:7.122,c:"Deutschland"},{n:"Barossa Valley",lat:-34.530,lng:138.950,c:"Australien"},{n:"Champagne",lat:49.040,lng:3.960,c:"Frankreich"},{n:"Douro-Tal",lat:41.143,lng:-7.584,c:"Portugal"},{n:"Stellenbosch",lat:-33.935,lng:18.861,c:"Südafrika"},{n:"Bourgogne",lat:47.060,lng:4.837,c:"Frankreich"},{n:"Marlborough",lat:-41.513,lng:173.961,c:"Neuseeland"},{n:"Rheingau",lat:49.984,lng:8.028,c:"Deutschland"},{n:"Bekaa-Tal",lat:33.900,lng:36.300,c:"Libanon"},{n:"Priorat",lat:41.190,lng:0.764,c:"Spanien"}],
+  museen:[{n:"Louvre",lat:48.861,lng:2.336,c:"Frankreich"},{n:"British Museum",lat:51.519,lng:-0.127,c:"Vereinigtes Königreich"},{n:"Vatikanische Museen",lat:41.906,lng:12.454,c:"Vatikan"},{n:"Metropolitan Museum of Art",lat:40.779,lng:-73.963,c:"USA"},{n:"Hermitage",lat:59.94,lng:30.314,c:"Russland"},{n:"Prado",lat:40.414,lng:-3.692,c:"Spanien"},{n:"Rijksmuseum",lat:52.36,lng:4.885,c:"Niederlande"},{n:"Uffizien",lat:43.768,lng:11.255,c:"Italien"},{n:"Pergamonmuseum",lat:52.521,lng:13.397,c:"Deutschland"},{n:"Smithsonian",lat:38.891,lng:-77.026,c:"USA"},{n:"MoMA",lat:40.761,lng:-73.978,c:"USA"},{n:"Tate Modern",lat:51.507,lng:-0.099,c:"Vereinigtes Königreich"},{n:"Guggenheim Bilbao",lat:43.268,lng:-2.934,c:"Spanien"},{n:"Acropolis Museum",lat:37.969,lng:23.729,c:"Griechenland"},{n:"Egyptian Museum Cairo",lat:30.048,lng:31.234,c:"Ägypten"},{n:"National Palace Museum",lat:25.102,lng:121.548,c:"Taiwan"},{n:"Musée d\'Orsay",lat:48.86,lng:2.327,c:"Frankreich"},{n:"Topkapi-Palast",lat:41.012,lng:28.983,c:"Türkei"},{n:"Deutsches Museum",lat:48.13,lng:11.583,c:"Deutschland"},{n:"Naturhistorisches Museum Wien",lat:48.205,lng:16.36,c:"Österreich"},{n:"Kunsthistorisches Museum",lat:48.203,lng:16.362,c:"Österreich"},{n:"Nationalmuseum Stockholm",lat:59.331,lng:18.084,c:"Schweden"},{n:"Stedelijk Museum",lat:52.358,lng:4.879,c:"Niederlande"},{n:"Museu do Ipiranga",lat:-23.586,lng:-46.619,c:"Brasilien"},{n:"National Museum of China",lat:39.905,lng:116.397,c:"China"},{n:"Tokyo National Museum",lat:35.719,lng:139.776,c:"Japan"},{n:"Indian Museum Kolkata",lat:22.557,lng:88.351,c:"Indien"},{n:"Apartheid Museum",lat:-26.239,lng:27.974,c:"Südafrika"},{n:"Auschwitz-Birkenau",lat:50.034,lng:19.205,c:"Polen"},{n:"Anne-Frank-Haus",lat:52.375,lng:4.884,c:"Niederlande"}],
+  kunstwerke:[{n:"Mona Lisa (Louvre, Paris)",lat:48.861,lng:2.336,c:"Frankreich"},{n:"Das Abendmahl (Mailand)",lat:45.466,lng:9.171,c:"Italien"},{n:"Sixtinische Kapelle (Vatikan)",lat:41.903,lng:12.454,c:"Vatikan"},{n:"David (Florenz)",lat:43.777,lng:11.259,c:"Italien"},{n:"Guernica (Madrid)",lat:40.416,lng:-3.694,c:"Spanien"},{n:"Sunflowers (National Gallery, London)",lat:51.509,lng:-0.127,c:"Vereinigtes Königreich"},{n:"Die Nachtwache (Amsterdam)",lat:52.360,lng:4.885,c:"Niederlande"},{n:"Das Mädchen mit dem Perlenohrring (Den Haag)",lat:52.071,lng:4.313,c:"Niederlande"},{n:"Der Schrei (Oslo)",lat:59.928,lng:10.724,c:"Norwegen"},{n:"Frida Kahlo: Die zwei Fridas (Mexiko-Stadt)",lat:19.432,lng:-99.133,c:"Mexiko"},{n:"Die Geburt der Venus (Florenz)",lat:43.768,lng:11.256,c:"Italien"},{n:"The Starry Night (MoMA New York)",lat:40.762,lng:-73.978,c:"USA"},{n:"Venus von Milo (Louvre, Paris)",lat:48.861,lng:2.336,c:"Frankreich"},{n:"Der Denker (Rodin-Museum, Paris)",lat:48.855,lng:2.316,c:"Frankreich"},{n:"Las Meninas (Prado, Madrid)",lat:40.414,lng:-3.692,c:"Spanien"}],
+  filmsets:[{n:"Hobbiton (Herr der Ringe)",lat:-37.872,lng:175.682,c:"Neuseeland"},{n:"Dubrovnik (Game of Thrones)",lat:42.641,lng:18.109,c:"Kroatien"},{n:"Petra (Indiana Jones)",lat:30.329,lng:35.444,c:"Jordanien"},{n:"Wadi Rum (The Martian)",lat:29.573,lng:35.420,c:"Jordanien"},{n:"Skellig Michael (Star Wars)",lat:51.773,lng:-10.539,c:"Irland"},{n:"Cliffs of Moher (Princess Bride)",lat:52.973,lng:-9.427,c:"Irland"},{n:"Alhambra (diverse Filme)",lat:37.176,lng:-3.588,c:"Spanien"},{n:"Colosseum (Gladiator)",lat:41.890,lng:12.492,c:"Italien"},{n:"Machu Picchu (diverse Filme)",lat:-13.163,lng:-72.545,c:"Peru"},{n:"Preikestolen (Mission: Impossible)",lat:58.987,lng:6.190,c:"Norwegen"},{n:"Dark Hedges (Game of Thrones)",lat:55.108,lng:-6.393,c:"Vereinigtes Königreich"},{n:"Cappadocia (Star Wars)",lat:38.643,lng:34.828,c:"Türkei"},{n:"Plitvice-Seen (Winnetou)",lat:44.880,lng:15.616,c:"Kroatien"},{n:"Giza-Pyramiden (diverse Filme)",lat:29.979,lng:31.134,c:"Ägypten"},{n:"Whitby Abbey (Dracula)",lat:54.489,lng:-0.601,c:"Vereinigtes Königreich"}],
+  ruinen:[{n:"Petra",lat:30.329,lng:35.444,c:"Jordanien"},{n:"Machu Picchu",lat:-13.163,lng:-72.545,c:"Peru"},{n:"Chichén Itzá",lat:20.683,lng:-88.569,c:"Mexiko"},{n:"Pompeji",lat:40.751,lng:14.489,c:"Italien"},{n:"Colosseum",lat:41.890,lng:12.492,c:"Italien"},{n:"Akropolis Athen",lat:37.971,lng:23.727,c:"Griechenland"},{n:"Stonehenge",lat:51.180,lng:-1.826,c:"Vereinigtes Königreich"},{n:"Tikal",lat:17.222,lng:-89.623,c:"Guatemala"},{n:"Ephesus",lat:37.938,lng:27.341,c:"Türkei"},{n:"Karnak-Tempel",lat:25.720,lng:32.658,c:"Ägypten"},{n:"Baalbek",lat:34.004,lng:36.217,c:"Libanon"},{n:"Leptis Magna",lat:32.638,lng:14.294,c:"Libyen"},{n:"Palenque",lat:17.484,lng:-92.046,c:"Mexiko"},{n:"Persepolis",lat:29.935,lng:52.891,c:"Iran"},{n:"Chaco Canyon",lat:36.060,lng:-107.959,c:"USA"}],
+  bruecken:[{n:"Golden Gate Bridge",lat:37.819,lng:-122.479,c:"USA"},{n:"Tower Bridge",lat:51.505,lng:-0.076,c:"Vereinigtes Königreich"},{n:"Sydney Harbour Bridge",lat:-33.852,lng:151.211,c:"Australien"},{n:"Millau-Viadukt",lat:44.080,lng:3.013,c:"Frankreich"},{n:"Akashi-Kaikyō-Brücke",lat:34.628,lng:135.019,c:"Japan"},{n:"Karlsbrücke",lat:50.086,lng:14.411,c:"Tschechien"},{n:"Brooklyn Bridge",lat:40.706,lng:-73.997,c:"USA"},{n:"Rialtobrücke",lat:45.438,lng:12.336,c:"Italien"},{n:"Pont du Gard",lat:43.947,lng:4.535,c:"Frankreich"},{n:"Bosporus-Brücke",lat:41.046,lng:29.034,c:"Türkei"},{n:"Øresund-Brücke",lat:55.572,lng:12.880,c:"Schweden/Dänemark"},{n:"Forth Bridge",lat:56.001,lng:-3.387,c:"Vereinigtes Königreich"},{n:"Ponte 25 de Abril",lat:38.689,lng:-9.178,c:"Portugal"},{n:"Ha'penny Bridge",lat:53.346,lng:-6.264,c:"Irland"},{n:"Pont de Normandie",lat:49.430,lng:0.294,c:"Frankreich"}],
+  gotteshaeuser:[{n:"Hagia Sophia",lat:41.009,lng:28.980,c:"Türkei"},{n:"Petersdom",lat:41.902,lng:12.454,c:"Vatikan"},{n:"Sagrada Família",lat:41.404,lng:2.175,c:"Spanien"},{n:"Notre-Dame de Paris",lat:48.853,lng:2.350,c:"Frankreich"},{n:"Kölner Dom",lat:50.941,lng:6.957,c:"Deutschland"},{n:"Blaue Moschee",lat:41.005,lng:28.977,c:"Türkei"},{n:"Angkor Wat",lat:13.412,lng:103.867,c:"Kambodscha"},{n:"Himmelstempel Peking",lat:39.882,lng:116.406,c:"China"},{n:"Basilius-Kathedrale",lat:55.753,lng:37.622,c:"Russland"},{n:"Klagemauer",lat:31.777,lng:35.234,c:"Israel"},{n:"Meiji-Schrein",lat:35.677,lng:139.699,c:"Japan"},{n:"Shwedagon-Pagode",lat:16.799,lng:96.150,c:"Myanmar"},{n:"Chartres-Kathedrale",lat:48.448,lng:1.489,c:"Frankreich"},{n:"Goldener Tempel Amritsar",lat:31.620,lng:74.876,c:"Indien"},{n:"Borobudur",lat:-7.608,lng:110.204,c:"Indonesien"}],
   wolkenkratzer:[{n:"Burj Khalifa",c:"Vereinigte Arabische Emirate",val:828},{n:"Merdeka 118",c:"Malaysia",val:679},{n:"Shanghai Tower",c:"China",val:632},{n:"Abraj Al-Bait Clock Tower",c:"Saudi-Arabien",val:601},{n:"Ping An Finance Centre",c:"China",val:599},{n:"Lotte World Tower",c:"Südkorea",val:555},{n:"One World Trade Center",c:"USA",val:541},{n:"Guangzhou CTF Finance Centre",c:"China",val:530},{n:"Tianjin CTF Finance Centre",c:"China",val:530},{n:"CITIC Tower",c:"China",val:528},{n:"Tianjin Chow Tai Fook Binhai Center",c:"China",val:530},{n:"Taipei 101",c:"Taiwan",val:508},{n:"Shanghai World Financial Center",c:"China",val:492},{n:"International Commerce Centre",c:"Hongkong",val:484},{n:"Landmark 81",c:"Vietnam",val:461},{n:"Changsha IFS Tower T1",c:"China",val:452},{n:"Petronas Tower 1",c:"Malaysia",val:452},{n:"Zifeng Tower",c:"China",val:450},{n:"Suzhou IFS",c:"China",val:450},{n:"Willis Tower",c:"USA",val:442},{n:"KK100",c:"China",val:442},{n:"Guangzhou International Finance Centre",c:"China",val:440},{n:"432 Park Avenue",c:"USA",val:426},{n:"Marina 101",c:"Vereinigte Arabische Emirate",val:425},{n:"Trump International Hotel and Tower",c:"USA",val:423},{n:"Jin Mao Tower",c:"China",val:421},{n:"Princess Tower",c:"Vereinigte Arabische Emirate",val:414},{n:"Al Hamra Tower",c:"Kuwait",val:413},{n:"Two International Finance Centre",c:"Hongkong",val:412},{n:"23 Marina",c:"Vereinigte Arabische Emirate",val:395},{n:"Skyline Tower",c:"USA",val:392},{n:"Akhmat Tower",c:"Russland",val:374},{n:"Shun Hing Square",c:"China",val:384},{n:"Empire State Building",c:"USA",val:381},{n:"Elite Residence",c:"Vereinigte Arabische Emirate",val:380},{n:"Central Park Tower",c:"USA",val:472},{n:"Sulafah Tower",c:"Vereinigte Arabische Emirate",val:360},{n:"Federation Tower East",c:"Russland",val:374},{n:"Chrysler Building",c:"USA",val:319},{n:"Eiffelturm",c:"Frankreich",val:330}],
   /* === Phase 216: Pin-Kategorien (Schritt 1) === */
   wuesten:[{n:"Sahara",lat:23,lng:13},{n:"Gobi",lat:42,lng:105},{n:"Atacama",lat:-23,lng:-68},{n:"Namib",lat:-24,lng:15},{n:"Arabische W\u00fcste",lat:25,lng:45},{n:"Kalahari",lat:-25,lng:22},{n:"Gro\u00dfe Victoriaaw\u00fcste",lat:-29,lng:128},{n:"Taklamakan",lat:39,lng:83},{n:"Patagonische W\u00fcste",lat:-45,lng:-68},{n:"Karakum",lat:39,lng:60}],
@@ -7947,7 +7967,7 @@ function nextRound(){
   clr();
   const nr=S.rd+1;
   if(S.diff!=="survival"&&nr>=ROUNDS){
-    S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();
+    S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
     if(S.isDailyRun&&!isDailyDone()){markDailyDone(S.sc);if(sbProfile)sbProfile.geo_coins=(sbProfile.geo_coins||0)+100;if(sb&&sbUser)sb.rpc("add_coins",{p_user_id:sbUser.id,p_amount:100}).then(r=>{if(r.data!=null&&sbProfile)sbProfile.geo_coins=r.data;},()=>{});}
     saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:ROUNDS,date:Date.now(),answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});
     if(sbOK)saveSession(S.mode,S.sc,S.bs,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();});
@@ -8019,7 +8039,7 @@ function answer(a,tok){
           S.survivalBest=Math.max(survived,sb_prev);
           if(sb&&sbUser)sb.from("profiles").update({survival_best:Math.max(survived,sbProfile?.survival_best||0)}).eq("id",sbUser.id).then(()=>{},()=>{});
         }
-        S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();
+        S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
         saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:survived,date:Date.now(),diff:S.diff,answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});
         if(sbOK)saveSession(S.mode,S.sc,S.bs,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();});
         S.pts=pts;S.lid=S.q.lid;render();
@@ -8054,7 +8074,7 @@ function answer(a,tok){
   fTo=setTimeout(()=>{
     const nr=S.rd+1;
     if(S.diff\!=="survival"&&nr>=ROUNDS){
-      S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();
+      S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
       if(S.isDailyRun&&\!isDailyDone()){
         markDailyDone(S.sc);
         if(sbProfile)sbProfile.geo_coins=(sbProfile.geo_coins||0)+100;
@@ -8552,7 +8572,7 @@ for(let i=0;i<options.length;i++){
 const country=options[i];
 const isCorrect=country.country===correct.country;
 const btnStyle='padding:12px;font-size:16px;cursor:pointer;border:2px solid #ccc;border-radius:6px;background:#fff;transition:all 0.2s;';
-html+='<button style="'+btnStyle+'" data-quiz-type="logic-grid" data-quiz-answer="0")>';
+html+='<button style="'+btnStyle+'" data-quiz-type="logic-grid" data-quiz-answer="0">';
 html+=country.country;
 html+='</button>';
 }
@@ -8595,7 +8615,7 @@ for(let i=0;i<routes.length;i++){
 const route=routes[i];
 const isCorrect=route.correct;
 const btnStyle='padding:12px;font-size:14px;cursor:pointer;border:2px solid #ccc;border-radius:6px;background:#fff;transition:all 0.2s;';
-html+='<button style="'+btnStyle+'" data-quiz-type="travel-route" data-quiz-answer="0")>';
+html+='<button style="'+btnStyle+'" data-quiz-type="travel-route" data-quiz-answer="0">';
 html+=route.desc+'<br><span style="color:#999;font-size:12px;">~'+route.dist+' km</span>';
 html+='</button>';
 }
@@ -8639,7 +8659,7 @@ for(let i=0;i<allOptions.length;i++){
 const country=allOptions[i];
 const isCorrect=country.c===correctCode;
 const btnStyle='padding:12px;font-size:16px;cursor:pointer;border:2px solid #ccc;border-radius:6px;background:#fff;transition:all 0.2s;';
-html+='<button style="'+btnStyle+'" data-quiz-type="flag-fusion" data-quiz-answer="0")>';
+html+='<button style="'+btnStyle+'" data-quiz-type="flag-fusion" data-quiz-answer="0">';
 html+=country.country;
 html+='</button>';
 }
@@ -8788,6 +8808,28 @@ function _gqLoad(key,fallback){
     return w.d;
   }catch(e){return fallback;}
 }
+/* ===== Phase 220: Daily Streak System ===== */
+function updateDailyStreak(){
+  try{
+    /* Use en-CA locale for reliable YYYY-MM-DD without library */
+    const today=new Date().toLocaleDateString('en-CA');
+    const lastPlay=_gqLoad('gq_last_play',null);
+    let streak=_gqLoad('gq_streak',0)||0;
+    if(lastPlay===today)return streak;          /* same day — no change */
+    if(lastPlay){
+      const diffMs=new Date(today)-new Date(lastPlay);
+      const diffDays=Math.round(diffMs/86400000);
+      streak=(diffDays===1)?streak+1:1;         /* consecutive = +1, gap = reset */
+    }else{
+      streak=1;                                 /* first ever game */
+    }
+    _gqSave('gq_last_play',today);
+    _gqSave('gq_streak',streak);
+    return streak;
+  }catch(e){return 0;}
+}
+function getStreak(){return _gqLoad('gq_streak',0)||0;}
+
 
 function _smartDefaultCountry(){
   /* Priority: new unified pref →’ old spotter key →’ navigator.language →’ fallback */
@@ -10288,7 +10330,7 @@ function submitGridResult(){if(S.gridData){S.sc=S.gridData.score;S.correct=S.gri
 function finishCustomGame(){
   soundOver();
   S.ph="gameover";S.scoreSaved=false;S.convModal=true;
-  checkMastery();
+  checkMastery();updateDailyStreak();
   saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:S.correct,date:Date.now(),answers:[]});
   if(sbOK)saveSession(S.mode,S.sc,S.sc,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();});
   render();
@@ -11620,13 +11662,15 @@ function renderHomeTab(){
   const _li=sbUser&&sbProfile?.username;
   const _un=sbProfile?.username||(sbUser?.email?.split('@')[0]||'Gast');
   const _gc=(sbProfile?.geo_coins||0).toLocaleString();
+  const _streakN=getStreak();
+  const _streakBadge=_streakN>0?`<div style="display:flex;align-items:center;gap:3px;background:rgba(239,68,68,.13);border-radius:16px;padding:.18rem .55rem;font-size:.78rem;font-weight:700;color:#ef4444;border:1px solid rgba(239,68,68,.22)">\u{1F525} ${_streakN}${_streakN===1?' Tag':' Tage'}</div>`:'';
   const _hdr=_li
     ?`<div style="display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
-        <div style="font-size:1.05rem;font-weight:700;color:var(--text)">${t("home_hi",{name:_un})}</div>
+        <div style="display:flex;align-items:center;gap:8px"><div style="font-size:1.05rem;font-weight:700;color:var(--text)">${t("home_hi",{name:_un})}</div>${_streakBadge}</div>
         <div style="display:flex;align-items:center;gap:5px;background:var(--bg2);border-radius:20px;padding:.28rem .75rem;font-size:.82rem;font-weight:700;color:#f59e0b;border:1px solid rgba(245,158,11,.25)">\u{1FA99} ${_gc}</div>
       </div>`
     :`<div style="display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
-        <div style="font-size:1.05rem;font-weight:700;color:var(--text)">${t("home_guest")}</div>
+        <div style="display:flex;align-items:center;gap:8px"><div style="font-size:1.05rem;font-weight:700;color:var(--text)">${t("home_guest")}</div>${_streakBadge}</div>
         <button onclick="S.tab='profil';render()" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:20px;padding:.3rem .8rem;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap;box-shadow:0 2px 8px rgba(99,102,241,.35)">${t("home_save")}</button>
       </div>`;
   const _homeHTML=`${_hdr}${renderDailyHero()}
@@ -12447,7 +12491,7 @@ _HTML_HEAD = '''<!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
