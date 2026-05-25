@@ -8559,7 +8559,7 @@ function drawAirportPinMap(readOnly){
   svg.append("defs").append("clipPath").attr("id","_gqMapClip_"+W)
     .append("rect").attr("width",W).attr("height",H);
   const g=svg.append("g").attr("clip-path","url(#_gqMapClip_"+W+")");
-  const zoom=d3.zoom().scaleExtent([1,10]).on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom=ev.transform;});
+  const zoom=d3.zoom().scaleExtent([1,10]).translateExtent([[-W,-H],[2*W,2*H]]).on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom=ev.transform;});
   svg.call(zoom);
   if(window._mapZoom&&window._mapZoom.k>1){
     svg.call(zoom.transform,window._mapZoom);
@@ -9791,8 +9791,9 @@ function drawWorldMap(targetName,sel,ok,preHL,readOnly){
 
   const g=svg.append('g');
 
-  /* Zoom + pan */
+  /* Zoom + pan — translateExtent prevents panning map out of view */
   const zoom=d3.zoom().scaleExtent([1,10])
+    .translateExtent([[-W,-H],[2*W,2*H]])
     .on('zoom',ev=>{
       g.attr('transform',ev.transform); /* zoom always enabled */
       window._mapZoom=ev.transform; /* persist for redraw restore */
@@ -10390,7 +10391,7 @@ function drawAlbumMap(){
   svg.on("click",()=>d3.select(el).selectAll(".map-popup").remove());
 
   /* Pan/zoom (on g group, not pins layer) */
-  svg.call(d3.zoom().scaleExtent([1,10]).on("zoom",ev=>{
+  svg.call(d3.zoom().scaleExtent([1,10]).translateExtent([[-W,-H],[2*W,2*H]]).on("zoom",ev=>{
     g.attr("transform",ev.transform);
   }));
 }
@@ -11565,6 +11566,8 @@ window.toggleAccordion=function(header,catId){
     content.style.cssText='display:block;padding:0;width:100%;box-sizing:border-box';
     content.classList.add('open');
     if(arrow)arrow.style.transform='rotate(180deg)';
+    /* UX FIX: persist active category so menu restores to correct section after game */
+    if(typeof S!=='undefined')S.filterCat=catId;
     setTimeout(function(){if(typeof window._initAllCarousels==="function")window._initAllCarousels();},50);
     /* Phase 218 FIX: restore saved page after section becomes visible */
     setTimeout(function(){if(typeof window._restoreCarouselPages==="function")window._restoreCarouselPages();},100);
