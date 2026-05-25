@@ -9022,6 +9022,19 @@ window._carouselInit=function(wrapEl){
 window._initAllCarousels=function(){
   document.querySelectorAll('.carousel-wrapper').forEach(window._carouselInit);
 };
+/* Phase 218 FIX: direct carousel restore -- bypasses _cInit guard */
+window._restoreCarouselPages=function(){
+  if(typeof S==='undefined'||!S.carouselPages)return;
+  Object.keys(S.carouselPages).forEach(function(catId){
+    var pg=S.carouselPages[catId];
+    if(pg===undefined||pg===null)return;
+    var sec=document.querySelector('.accordion-section[data-cat="'+catId+'"]');
+    if(!sec)return;
+    var wrap=sec.querySelector('.carousel-wrapper');
+    if(!wrap)return;
+    window._carouselGoTo(wrap,pg);
+  });
+};
 window.updateCarouselDots=function(){};
 // Apply saved grid cols on load (robust version)
 (function(){
@@ -9037,6 +9050,8 @@ function _scheduleFilterRefresh(){
     if(!_gs||!_gs.value.trim())window.filterByCategory((typeof S!=="undefined"&&S.filterCat)||"pure_geo");
   }
   setTimeout(function(){if(typeof window._initAllCarousels==="function")window._initAllCarousels();},120);
+  /* Phase 218 FIX: final restore pass after all inits settle */
+  setTimeout(function(){if(typeof window._restoreCarouselPages==="function")window._restoreCarouselPages();},300);
 }
 function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
   /* Surgical Scope Guard for candidates */
@@ -11253,6 +11268,8 @@ window.toggleAccordion=function(header,catId){
     content.classList.add('open');
     if(arrow)arrow.style.transform='rotate(180deg)';
     setTimeout(function(){if(typeof window._initAllCarousels==="function")window._initAllCarousels();},50);
+    /* Phase 218 FIX: restore saved page after section becomes visible */
+    setTimeout(function(){if(typeof window._restoreCarouselPages==="function")window._restoreCarouselPages();},100);
   }
 };
 
