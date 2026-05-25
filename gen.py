@@ -7744,7 +7744,7 @@ function clr(){
   /* Phase 206: also kill SLF / LandHauptstadt / WortSchmiede interval */
   if(S.slfData)S.slfData.phase='done';
   if(S.lhData)S.lhData.phase='done';
-  if(S.wsData)S.wsData.phase='done';
+  if(S.wsData){S.wsData.phase='done';_wsDetachKb();}
 }
 
 /* ─── LOCAL 1:1 HOT-SEAT MODE ─── */
@@ -10847,89 +10847,173 @@ function renderLandHauptstadt(sc){
 
 /* â”€â”€ ACCOUNT LÖSCHEN (DSGVO) â”€â”€ (Phase 106) */
 
-/* -- Phase 205: Wort-Schmiede ------------------------------------------------ */
+/* -- Phase 205: Wort-Schmiede v2 ------------------------------------------- */
+const _WS_TIMER=60;
+const _WS_LANGS=new Set(["de","en","es","fr","pl"]);
+
+function _wsInventory(city){
+  const inv={};
+  for(const ch of city.toUpperCase()){inv[ch]=(inv[ch]||0)+1;}
+  return inv;
+}
+function _wsLetterOk(word,city){
+  const inv=_wsInventory(city);
+  for(const ch of word.toUpperCase()){
+    if(!inv[ch]||inv[ch]<=0)return false;
+    inv[ch]--;
+  }
+  return true;
+}
+function wsAddLetter(ch){
+  if(!S.wsData||S.wsData.phase!=="playing")return;
+  const candidate=(S.wsData.input||"")+ch.toUpperCase();
+  if(!_wsLetterOk(candidate,S.wsData.city))return;
+  S.wsData.input=candidate;
+  render();
+}
+function wsBackspace(){
+  if(!S.wsData||S.wsData.phase!=="playing")return;
+  S.wsData.input=(S.wsData.input||"").slice(0,-1);
+  render();
+}
+function _wsShake(){
+  const el=document.getElementById("ws-display");
+  if(!el)return;
+  el.style.animation="none";
+  void el.offsetHeight;
+  el.style.animation="wsShake .35s ease";
+}
+function _wsAttachKb(){
+  _wsDetachKb();
+  window._wsKbCb=function(e){
+    if(!S.wsData||S.wsData.phase!=="playing")return;
+    const k=e.key;
+    if(k==="Backspace"){e.preventDefault();wsBackspace();return;}
+    if(k==="Enter"){e.preventDefault();handleWsCheck();return;}
+    if(k.length===1&&/[A-Za-zÀ-ɏ]/i.test(k)){e.preventDefault();wsAddLetter(k);}
+  };
+  document.addEventListener("keydown",window._wsKbCb);
+}
+function _wsDetachKb(){
+  if(window._wsKbCb){document.removeEventListener("keydown",window._wsKbCb);window._wsKbCb=null;}
+}
 function initWortSchmiede(){
-  clearInterval(tIv);
-  /* P208: guard against empty/malformed data */
-  if(!WORTSCHMIEDE_DATA||!WORTSCHMIEDE_DATA.length){console.warn('[GeoQuest] WORTSCHMIEDE_DATA empty');S.ph='menu';render();return;}
-  const lang=S.language||localStorage.getItem('gq_lang')||'en';
+  clearInterval(tIv);_wsDetachKb();
+  if(!WORTSCHMIEDE_DATA||!WORTSCHMIEDE_DATA.length){console.warn("[GeoQuest] WS empty");S.ph="menu";render();return;}
+  const userLang=S.language||localStorage.getItem("gq_lang")||"en";
+  const wsLang=_WS_LANGS.has(userLang)?userLang:"en";
   const idx=~~(rng()*WORTSCHMIEDE_DATA.length);
   const entry=WORTSCHMIEDE_DATA[idx];
-  if(!entry||!entry.city||!entry.validWords){console.warn('[GeoQuest] WS entry malformed',idx);S.ph='menu';render();return;}
-  const words=(entry.validWords[lang]||entry.validWords['de']||entry.validWords['en']||Object.values(entry.validWords)[0]||[]).map(function(w){return w.toUpperCase();});
-  if(!words.length){console.warn('[GeoQuest] WS entry has no words for lang',lang,idx);S.ph='menu';render();return;}
-  S.wsData={cityIdx:idx,city:entry.city,lang:lang,allWords:words,foundWords:[],input:"",phase:"playing"};
-  S.gameStartTime=Date.now();
-  S.ph="playing";
+  if(!entry||!entry.city||!entry.validWords){console.warn("[GeoQuest] WS malformed",idx);S.ph="menu";render();return;}
+  const words=(entry.validWords[wsLang]||entry.validWords["en"]||[])
+    .map(function(w){return w.toUpperCase();}).filter(function(w){return w.length>=2;});
+  if(!words.length){console.warn("[GeoQuest] WS no words",wsLang,idx);S.ph="menu";render();return;}
+  S.wsData={cityIdx:idx,city:entry.city,lang:wsLang,usingFallback:wsLang!==userLang,
+    allWords:words,foundWords:[],input:"",phase:"playing",timeLeft:_WS_TIMER};
+  S.gameStartTime=Date.now();S.ph="playing";
+  tIv=setInterval(function(){
+    if(!S.wsData||S.wsData.phase!=="playing"){clearInterval(tIv);return;}
+    S.wsData.timeLeft=Math.max(0,(S.wsData.timeLeft||0)-1);
+    if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();}
+    render();
+  },1000);
+  _wsAttachKb();
 }
-/* P208: 350ms debounce */
 let _wsCheckLast=0;
 function handleWsCheck(){
   if(!S.wsData||S.wsData.phase!=="playing")return;
-  const _now=Date.now();
-  if(_now-_wsCheckLast<350)return;
-  _wsCheckLast=_now;
+  const _n=Date.now();if(_n-_wsCheckLast<300)return;_wsCheckLast=_n;
   const inp=(S.wsData.input||"").trim().toUpperCase();
   S.wsData.input="";
-  const el=document.getElementById("ws-input");if(el)el.value="";
-  if(!inp||inp.length<2)return;
-  if(S.wsData.foundWords.includes(inp)){showToast(t("ws_duplicate"));return;}
-  if(!S.wsData.allWords.includes(inp)){showToast(t("ws_invalid"));return;}
+  if(!inp||inp.length<2){render();return;}
+  if(!_wsLetterOk(inp,S.wsData.city)){_wsShake();showToast("❌ "+inp+" — ungültige Buchstaben");render();return;}
+  if(S.wsData.foundWords.includes(inp)){showToast(t("ws_duplicate"));render();return;}
+  if(!S.wsData.allWords.includes(inp)){_wsShake();showToast(t("ws_invalid"));render();return;}
   S.wsData.foundWords.push(inp);
-  const pts=inp.length>=5?15:inp.length>=4?10:5;
-  S.sc+=pts;
-  S.correct+=1;
+  const pts=inp.length>=6?60:inp.length>=5?40:inp.length>=4?20:10;
+  S.sc+=pts;S.correct+=1;
   if(window.mpGameCh)mpSend("score_update",{score:S.sc,rd:S.rd||0,correct:S.correct||0});
-  if(S.wsData.foundWords.length>=S.wsData.allWords.length){S.wsData.phase="won";}
+  if(S.wsData.foundWords.length>=S.wsData.allWords.length){
+    S.wsData.phase="perfect";clearInterval(tIv);_wsDetachKb();
+  }
   render();
 }
 function renderWortSchmiede(sc){
   if(!S.wsData)return'<div class="scr"></div>';
-  const{city,allWords,foundWords,input,phase,lang}=S.wsData;
-  const total=allWords.length;
-  const found=foundWords.length;
-  const pct=total>0?Math.round(found/total*100):0;
-  const barCol=pct>=100?"#10b981":pct>=60?"#3b82f6":"#f59e0b";
-  const chips=foundWords.map(function(w){return'<span style="display:inline-flex;align-items:center;background:#10b981;color:#fff;border-radius:20px;padding:4px 12px;font-size:.82rem;font-weight:700;margin:3px 3px 3px 0;max-width:100%;overflow-wrap:break-word;word-break:break-word">'+esc(w)+'</span>';}).join("");
-  const letters=[...city].map(function(ch){return'<span style="display:inline-flex;align-items:center;justify-content:center;width:2.1rem;height:2.5rem;background:var(--bg3);border:2px solid var(--border);border-radius:8px;font-size:1.3rem;font-weight:900;color:var(--text);margin:0 3px">'+ch+'</span>';}).join("");
-  const wsHud='<div class="hud"><div style="display:flex;gap:8px;align-items:center">'+
+  const{city,allWords,foundWords,input,phase,lang,usingFallback,timeLeft}=S.wsData;
+  const total=allWords.length,found=foundWords.length;
+  const tl=timeLeft||0;
+  const tPct=Math.round(tl/_WS_TIMER*100);
+  const tCol=tl<=10?"#ef4444":tl<=25?"#f59e0b":"#10b981";
+  /* Chips with pts label */
+  const chips=foundWords.map(function(w){
+    const pts=w.length>=6?60:w.length>=5?40:w.length>=4?20:10;
+    return'<span style="display:inline-flex;align-items:center;gap:3px;background:#10b981;color:#fff;border-radius:20px;padding:3px 10px;font-size:.78rem;font-weight:700;margin:2px">'+esc(w)+'<span style="opacity:.7;font-size:.65rem">+'+pts+'</span></span>';
+  }).join("");
+  /* Letter tiles — dim letters already used in current input */
+  const invFull=_wsInventory(city);
+  const invUsed={};for(const ch of input){invUsed[ch]=(invUsed[ch]||0)+1;}
+  const tiles=[...city].map(function(ch,i){
+    let usedSoFar=0;
+    for(let j=0;j<i;j++){if(city[j]===ch)usedSoFar++;}
+    const dim=(invUsed[ch]||0)>usedSoFar;
+    const sty=dim?"opacity:.25;transform:scale(.9)":"";
+    return'<button onclick="wsAddLetter(\''+ch+'\')" style="display:inline-flex;align-items:center;justify-content:center;min-width:2.5rem;height:3rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:1.4rem;font-weight:900;color:var(--text);margin:2px;cursor:pointer;transition:opacity .15s,transform .15s;'+sty+'" aria-label="'+ch+'">'+ch+'</button>';
+  }).join("");
+  /* Input display (custom — no native input for cleaner UX) */
+  const dispContent=input.length
+    ?'<span style="letter-spacing:4px;font-size:1.35rem;font-weight:900">'+esc(input)+'</span>'
+    :'<span style="font-size:.85rem;font-weight:400;color:var(--text3);letter-spacing:0">'+t("ws_enter_word")+'</span>';
+  const display='<div id="ws-display" style="min-height:3.2rem;background:var(--bg2);border:2.5px solid '+(input.length?"var(--text)":"var(--border)")+';border-radius:12px;display:flex;align-items:center;justify-content:center;padding:0 2.5rem 0 .75rem;position:relative;cursor:default">'+dispContent+
+    (input.length?'<button onclick="wsBackspace()" style="position:absolute;right:.5rem;top:50%;transform:translateY(-50%);background:none;border:none;font-size:1.2rem;color:var(--text3);cursor:pointer;padding:4px 8px;line-height:1">⌫</button>':"")+
+    '</div>';
+  /* Fallback badge */
+  const fbBadge=usingFallback?'<div style="text-align:center;font-size:.7rem;color:#f59e0b;font-weight:700;margin:.4rem 0">⚠️ Keine Wörter für deine Sprache – <span style="background:#f59e0b;color:#fff;border-radius:5px;padding:1px 6px">EN</span></div>':"";
+  /* Top HUD */
+  const hud='<div class="hud"><div style="display:flex;gap:8px;align-items:center">'+
     '<div class="pill"><div class="hlbl">SCORE</div><div class="hval">'+sc.toLocaleString()+'</div></div>'+
-    '<div class="pill-s"><div class="hlbl" style="color:#10b981">'+t("ws_found").toUpperCase()+'</div><div class="hval-s" style="color:#10b981">'+found+'/'+total+'</div></div>'+
+    '<div class="pill-s" style="background:rgba(239,68,68,.1)"><div class="hlbl" style="color:'+tCol+'">ZEIT</div><div class="hval-s" style="color:'+tCol+';font-weight:900">'+tl+'s</div></div>'+
+    '<div class="pill-s"><div class="hlbl" style="color:#10b981">WÖRTER</div><div class="hval-s" style="color:#10b981">'+found+'/'+total+'</div></div>'+
     '</div>'+
     '<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center">'+
       '<button class="btn-exit-global" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button>'+
       '<button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button>'+
     '</div>'+
   '</div>'+
-  '<div class="tbar"><div class="tfill" style="width:'+pct+'%;background:'+barCol+';transition:width .3s"></div></div>';
-  if(phase==="won"){
-    return'<div class="scr">'+wsHud+'<div class="panel" style="margin-top:.5rem">'+
-      '<div style="text-align:center;font-size:2.5rem;margin-bottom:.5rem">\u{1F3C6}</div>'+
-      '<div style="text-align:center;font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:.3rem">'+t("ws_all_found")+'</div>'+
-      '<div style="text-align:center;font-size:.8rem;color:var(--text3);margin-bottom:1rem">'+esc(city)+' · '+found+'/'+total+' · '+sc.toLocaleString()+' '+t("pts_abbr")+'</div>'+
-      '<div style="display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:1rem">'+chips+'</div>'+
+  '<div class="tbar"><div class="tfill" style="width:'+tPct+'%;background:'+tCol+';transition:width 1s linear"></div></div>';
+  /* Shake CSS (injected once) */
+  const shakeCSS='<style>@keyframes wsShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(4px)}}</style>';
+  /* End screens */
+  if(phase==="perfect"||phase==="timeout"){
+    const ok=phase==="perfect";
+    return'<div class="scr">'+hud+'<div class="panel" style="margin-top:.5rem">'+
+      '<div style="text-align:center;font-size:2.5rem;margin-bottom:.4rem">'+(ok?'\u{1F3C6}':'⏰')+'</div>'+
+      '<div style="text-align:center;font-size:1.2rem;font-weight:900;margin-bottom:.25rem">'+(ok?t("ws_all_found"):"Zeit abgelaufen!")+'</div>'+
+      '<div style="text-align:center;font-size:.8rem;color:var(--text3);margin-bottom:.8rem">'+esc(city)+' · '+found+'/'+total+' Wörter · +'+sc.toLocaleString()+' '+t("pts_abbr")+'</div>'+
+      (found>0?'<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2px;margin-bottom:.8rem">'+chips+'</div>':"")+
       '<button class="btn-p" style="margin-top:.5rem" onclick="initWortSchmiede();render()">\u{1F501} '+t("ws_next_city")+'</button>'+
       '<button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u{1F6AA} '+t("menu")+'</button>'+
       '</div></div>';
   }
-  return'<div class="scr">'+wsHud+
-    '<div class="panel" style="margin-top:.5rem">'+
-    '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.6rem">'+
-      '<div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">'+t("mode_wort_schmiede").toUpperCase()+'</div>'+
-        '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:.35rem">'+letters+'</div></div>'+
-      '<div style="font-size:.68rem;color:var(--text3);text-align:right;margin-top:.2rem">'+t("ws_lang_label")+': <strong>'+lang.toUpperCase()+'</strong></div>'+
-    '</div>'+
-    '<div style="display:flex;gap:8px;margin-bottom:.7rem">'+
-      '<input id="ws-input" type="text" dir="ltr" class="slf-input" style="flex:1;direction:ltr;text-align:left;padding-left:10px;text-transform:uppercase;font-weight:700;letter-spacing:1px"'+
-        ' placeholder="'+t("ws_enter_word")+'" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" inputmode="text"'+
-        ' value="'+esc(input)+'" oninput="S.wsData.input=this.value.toUpperCase()"'+
-        ' onkeydown="if(event.key===\'Enter\'){handleWsCheck();event.preventDefault();}">\n'+
-      '<button class="btn-p" style="padding:.55rem 1rem;margin:0;min-width:72px;font-weight:900" onclick="handleWsCheck()">✔ OK</button>'+
-    '</div>'+
-    '<div style="font-size:.7rem;color:var(--text3);text-align:center;margin-bottom:.5rem">'+t("ws_letters_hint")+' · '+t("ws_lang_label")+': <strong>'+lang.toUpperCase()+'</strong></div>'+
-    (found>0?'<div style="display:flex;flex-wrap:wrap;margin-bottom:.5rem">'+chips+'</div>':"")+
+  /* Playing state */
+  return'<div class="scr">'+hud+shakeCSS+
+    '<div class="panel" style="margin-top:.5rem;padding-bottom:.8rem">'+
+      '<div style="text-align:center;margin-bottom:.6rem">'+
+        '<div style="font-size:.58rem;letter-spacing:1.5px;color:var(--text3);font-weight:700;margin-bottom:.4rem">'+t("mode_wort_schmiede").toUpperCase()+'</div>'+
+        '<div style="display:flex;flex-wrap:wrap;justify-content:center">'+tiles+'</div>'+
+      '</div>'+
+      '<div style="margin-bottom:.55rem">'+display+'</div>'+
+      '<div style="display:flex;gap:8px;margin-bottom:.5rem">'+
+        '<button class="btn-p" style="flex:1;padding:.65rem;font-weight:900;font-size:1rem" onclick="handleWsCheck()">✔ OK</button>'+
+        '<button style="padding:.65rem 1rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:1rem;cursor:pointer;font-weight:900;color:var(--text)" onclick="wsBackspace()">⌫</button>'+
+        '<button style="padding:.65rem 1rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:.75rem;cursor:pointer;font-weight:700;color:var(--text3)" onclick="if(S.wsData)S.wsData.input=\'\';render()">×</button>'+
+      '</div>'+
+      fbBadge+
+      '<div style="font-size:.68rem;color:var(--text3);text-align:center;margin-bottom:.4rem">'+t("ws_letters_hint")+' · '+lang.toUpperCase()+'</div>'+
+      (found>0?'<div style="display:flex;flex-wrap:wrap;gap:2px;padding-top:.3rem;border-top:1px solid var(--border)">'+chips+'</div>':"")+
     '</div></div>';
 }
+
 
 async function doDeleteAccount(){
   if(\!sbUser)return;
