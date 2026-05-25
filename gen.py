@@ -1360,7 +1360,7 @@ de:{
   ws_duplicate:"\u2713 Schon gefunden!",ws_invalid:"\u2715 Kein g\u00fcltiges Wort",
   ws_lang_label:"Sprache",ws_letters_hint:"Bilde W\u00f6rter aus den Buchstaben der Stadt",
   q_airport_pin:"Wo liegt dieser Flughafen?",click_map:"Tippe auf die Karte",
-  q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?"
+  q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?"
 },
 en:{
   play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
@@ -1418,7 +1418,7 @@ en:{
   ws_duplicate:"\u2713 Already found!",ws_invalid:"\u2715 Not a valid word",
   ws_lang_label:"Language",ws_letters_hint:"Form words from the city's letters",
   q_airport_pin:"Where is this airport?",click_map:"Tap the map",
-  q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193",uk_hl_prompt:"Which building is taller?",uk_hl_prompt:"Which building is taller?"
+  q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193",uk_hl_prompt:"Which building is taller?"
 },
 pl:{
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",menu:"Menu",board:"Ranking",pass:"Paszport",
@@ -5051,6 +5051,7 @@ function soundStamp(){[880,1047,1320].forEach((f,i)=>setTimeout(()=>playTone(f,"
 
 /* STATE */
 let _secretGameToken=null; /* Anti-Cheat: new token each game */
+let _navLock=false;        /* Phase 217 QA: debounce rapid startGame() calls */
 let S={
   ph:"menu",tab:"home",mode:"city",diff:"casual",
   sc:0,st:0,bs:0,rd:0,correct:0,tm:12,dur:12,
@@ -8660,6 +8661,9 @@ setTimeout(startNextRound,1500);
 }
 
 function startGame(m){
+  /* Phase 217 QA: 300ms nav lock -- prevents stacked game-init on rapid taps */
+  if(_navLock)return;
+  _navLock=true;setTimeout(function(){_navLock=false;},300);
   rngSeed=null;  /* Phase 212: prevent seed leak from daily/mp into solo games */
   window._mapZoom=null; /* Phase 213: reset D3 map zoom on each new game */
   clr();
@@ -8669,7 +8673,9 @@ function startGame(m){
     scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,
     half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),
     survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,lives:S.diff==="casual"?999:3,
-    slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0});  /* P208/P210: always reset sub-game state on new game */
+    slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0,
+    /* Phase 217 QA: clear mp carry-over so solo games never show duell HUD */
+    mpOpponent:null,mpOppScore:0,mpOppFinal:null,mpOppRd:0});  /* P208/P210: always reset sub-game state on new game */
   _secretGameToken=Math.random().toString(36).substring(2,15);
   /* Phase 86 – custom puzzle modes */
   if(_m==="logic_grid"){initLogikGitter();render();return;}
@@ -11029,7 +11035,7 @@ function reportBug(){
     +"\nModus: "+_modeName+" ("+(_modeName!==S.mode?S.mode:"")+")"
     +"\nSchwierigkeit: "+(S.diff||"?")
     +"\nRunde: "+(S.rd||0)
-    +"\nScore: "+(S.score||0)
+    +"\nScore: "+(S.sc||0)
     +"\nPhase: "+(S.ph||"?");
   _sendBugMail(_subject,_body);
 }
@@ -12421,7 +12427,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .go-tile-val{font-size:1.5rem;font-weight:900;line-height:1.1}
 .go-tile-lbl{font-size:.64rem;color:var(--text3);margin-top:2px}
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:500;display:flex;align-items:center;justify-content:center;padding:1rem}
-.modal-box{background:var(--bg2);border-radius:20px;padding:1.5rem;max-width:320px;width:100%;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.25)}
+.modal-box{background:var(--bg2);border-radius:20px;padding:1.5rem;max-width:320px;width:100%;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.25);overflow-wrap:break-word;word-break:break-word}
 .unlock-box{background:var(--bg2);border:1.5px solid #7c3aed;border-radius:20px;padding:1.5rem;max-width:340px;width:100%;text-align:center}
 .unlock-btn{width:100%;border:none;border-radius:12px;padding:.85rem;font-size:.92rem;font-weight:900;cursor:pointer;margin-bottom:.5rem;transition:background .15s}
 .unlock-btn.coin{background:#f59e0b;color:#fff}.unlock-btn.coin:hover{background:#d97706}
