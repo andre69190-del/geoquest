@@ -7706,11 +7706,19 @@ const GEN={
 /* GAME LOOP */
 /* P154: Global error boundary — prevents silent white-screen crashes */
 function _sendBugMail(subject, body){
-  /* ── KONFIG: Ersetze diese Adresse mit deiner echten E-Mail ── */
-  const _BUG_MAIL="farndt691@gmail.com"; /* <<< HIER E-MAIL EINTRAGEN */
-  window.location.href="mailto:"+_BUG_MAIL
+  const _BUG_MAIL="farndt691@gmail.com";
+  var _url="mailto:"+_BUG_MAIL
     +"?subject="+encodeURIComponent(subject)
     +"&body="+encodeURIComponent(body);
+  /* Phase 218: <a> click is more reliable than location.href on mobile/PWA */
+  try{
+    var _a=document.createElement('a');
+    _a.href=_url;
+    _a.style.display='none';
+    document.body.appendChild(_a);
+    _a.click();
+    setTimeout(function(){if(_a.parentNode)_a.parentNode.removeChild(_a);},2000);
+  }catch(_e){window.location.href=_url;}
 }
 window.onerror=function(m,u,l,c,e){
   console.error("🛑 CRASH SHIELD:",m,"at",u+":"+l);
@@ -8964,7 +8972,10 @@ window._carouselGoTo=function(wrapEl,pageIdx){
   /* Phase 217: persist page for state restoration */
   var _sec=wrapEl.closest&&wrapEl.closest('.accordion-section');
   var _cid=_sec&&_sec.dataset&&_sec.dataset.cat;
-  if(_cid&&typeof S!=='undefined'&&S.carouselPages){S.carouselPages[_cid]=n;}
+  if(_cid&&typeof S!=='undefined'&&S.carouselPages){
+    S.carouselPages[_cid]=n;
+    try{localStorage.setItem('gq_cp_'+_cid,String(n));}catch(_e){}
+  }
   pages.forEach(function(p,i){
     if(i===n){
       var cc=parseInt(p.style.getPropertyValue('--cc'))||4;
@@ -8992,7 +9003,9 @@ window._carouselInit=function(wrapEl){
   /* Phase 217: restore saved page position */
   var _sec2=wrapEl.closest&&wrapEl.closest('.accordion-section');
   var _cid2=_sec2&&_sec2.dataset&&_sec2.dataset.cat;
-  var _sp=(typeof S!=='undefined'&&S.carouselPages&&_cid2&&S.carouselPages[_cid2]!==undefined)?S.carouselPages[_cid2]:0;
+  var _lsCp2=_cid2?parseInt(localStorage.getItem('gq_cp_'+_cid2)):NaN;
+  var _sp=(typeof S!=='undefined'&&S.carouselPages&&_cid2&&S.carouselPages[_cid2]!==undefined)
+    ?S.carouselPages[_cid2]:(!isNaN(_lsCp2)?_lsCp2:0);
   wrapEl._cPage=_sp;
   /* show saved page (or first page if no saved state) */
   window._carouselGoTo(wrapEl,_sp);
@@ -11036,23 +11049,39 @@ function renderStatsTab(){
 
 /* ─── ADMIN TAB ──────────────────────────────────────────────────── */
 /* Phase 218: Bug Reporter \u2014 mailto: transport, pre-filled mode name */
+/* Phase 218: in-app modal -- window.prompt() is blocked on many mobile/PWA contexts */
 function reportBug(){
-  /* resolve current mode title from MODES array */
   var _m=MODES.find(function(x){return x.id===S.mode;});
   var _modeName=_m?_m.title:(S.mode||"Unbekannt");
-  /* open native prompt pre-filled with mode context */
-  var _input=window.prompt("\ud83d\udc1e Was stimmt nicht? (Modus, Frage, Fehler beschreiben)","Fehler in Modus: "+_modeName+" \u2013 ");
-  if(_input===null||!_input.trim())return;
-  /* build subject + rich body */
-  var _subject="GeoQuest Bug: "+_modeName;
-  var _body=_input.trim()
-    +"\n\n--- System Info ---"
-    +"\nModus: "+_modeName+" ("+(_modeName!==S.mode?S.mode:"")+")"
-    +"\nSchwierigkeit: "+(S.diff||"?")
-    +"\nRunde: "+(S.rd||0)
-    +"\nScore: "+(S.sc||0)
-    +"\nPhase: "+(S.ph||"?");
-  _sendBugMail(_subject,_body);
+  var _ov=document.createElement('div');
+  _ov.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:99999;display:flex;align-items:center;justify-content:center;padding:1rem;box-sizing:border-box';
+  _ov.innerHTML='<div style="background:var(--bg2,#fff);border-radius:16px;padding:1.25rem;width:100%;max-width:340px;box-shadow:0 8px 40px rgba(0,0,0,.3);box-sizing:border-box">'  
+    +'<div style="font-weight:900;font-size:1rem;margin-bottom:.5rem">\ud83d\udc1e Fehler melden</div>'
+    +'<div style="font-size:.78rem;color:var(--text2);margin-bottom:.6rem">Modus: <b>'+_modeName+'</b></div>'
+    +'<textarea id="_bugTxt" placeholder="Was stimmt nicht? Kurz beschreiben\u2026" style="width:100%;height:90px;border:2px solid var(--border,#e2e8f0);border-radius:8px;padding:.5rem;font-size:.88rem;font-family:inherit;resize:none;box-sizing:border-box;outline:none"></textarea>'
+    +'<div style="display:flex;gap:8px;margin-top:.7rem">'
+    +'<button id="_bugSend" style="flex:1;background:#10b981;color:#fff;border:none;border-radius:10px;padding:.55rem;font-size:.88rem;font-weight:700;cursor:pointer">\ud83d\udce7 Senden</button>'
+    +'<button id="_bugCancel" style="flex:1;background:var(--bg3,#f1f5f9);color:var(--text);border:none;border-radius:10px;padding:.55rem;font-size:.88rem;font-weight:700;cursor:pointer">Abbrechen</button>'
+    +'</div></div>';
+  document.body.appendChild(_ov);
+  var _ta=document.getElementById('_bugTxt');
+  if(_ta)setTimeout(function(){_ta.focus();},50);
+  document.getElementById('_bugCancel').onclick=function(){_ov.remove();};
+  _ov.onclick=function(e){if(e.target===_ov)_ov.remove();};
+  document.getElementById('_bugSend').onclick=function(){
+    var _inp=(_ta?_ta.value:'').trim();
+    if(!_inp){if(_ta)_ta.style.border='2px solid #ef4444';return;}
+    _ov.remove();
+    var _subject="GeoQuest Bug: "+_modeName;
+    var _body=_inp
+      +"\n\n--- System Info ---"
+      +"\nModus: "+_modeName
+      +"\nSchwierigkeit: "+(S.diff||"?")
+      +"\nRunde: "+(S.rd||0)
+      +"\nScore: "+(S.sc||0)
+      +"\nPhase: "+(S.ph||"?");
+    _sendBugMail(_subject,_body);
+  };
 }
 async function loadAdminData(){
   if(sbUser?.email!=="andre69190@gmail.com")return;
@@ -11417,7 +11446,9 @@ function renderHomeTab(){
     const _nPages=Math.ceil(cardArr.length/_ipp)||1;
     const _arrowStyle='background:none;border:none;font-size:1.1rem;padding:2px 8px;cursor:pointer;color:var(--text);transition:opacity .2s;-webkit-tap-highlight-color:transparent;line-height:1';
     /* Phase 217: restore saved page for correct initial dot/arrow state */
-    const _startPage=(S.carouselPages&&S.carouselPages[catId]!==undefined&&S.carouselPages[catId]<_nPages)?S.carouselPages[catId]:0;
+    const _lsCpVal=parseInt(localStorage.getItem('gq_cp_'+catId));
+    const _savedCpVal=(S.carouselPages&&S.carouselPages[catId]!==undefined)?S.carouselPages[catId]:(!isNaN(_lsCpVal)?_lsCpVal:0);
+    const _startPage=(_savedCpVal>0&&_savedCpVal<_nPages)?_savedCpVal:0;
     const _prevDisabled=`opacity:${_startPage===0?'0.2':'1'};pointer-events:${_startPage===0?'none':'auto'}`;
     const _dots=_nPages>1?`<div class="carousel-dots" style="display:flex;align-items:center;justify-content:center;gap:4px;padding:6px 0 10px;user-select:none"><button class="car-arrow car-arrow-prev" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)-1);})(this);event.stopPropagation()" style="${_arrowStyle};${_prevDisabled}" title="Vorherige Seite">&#9664;</button><span style="display:flex;align-items:center;gap:4px">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" onclick="(function(d){var w=d.parentElement.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,${i});})(this);event.stopPropagation()" style="display:inline-block;width:12px;height:12px;background:${i===_startPage?'#10b981':'#cbd5e1'};border-radius:50%;cursor:pointer;transition:background .25s;-webkit-tap-highlight-color:transparent"></span>`).join('')}</span><button class="car-arrow car-arrow-next" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)+1);})(this);event.stopPropagation()" style="${_arrowStyle};opacity:${_nPages<=1?'0.2':'1'};pointer-events:${_nPages<=1?'none':'auto'}" title="Nächste Seite">&#9654;</button></div>`:'';
     /* Phase 218 FIX: bake correct display into HTML — avoids JS-timer race */
