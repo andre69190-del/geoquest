@@ -2858,9 +2858,9 @@ const MODE_CATS={
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
-  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","climate_quiz","flagcolor","landlocked_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","aequator_magnet","kontinent_klicker","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","insel_festland","sprachen_kompass","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
+  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q","uk_enklave","uk_grenzfluesse","uk_halbinseln","uk_deltamuendungen","uk_kaps","uk_meerbusen","uk_inselgruppen","uk_gebirge_match","uk_seen_match"],cost:0},
-  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60","uk_kartenausschnitt","uk_mercator_illusion"],cost:0},
+  map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","kontinent_klicker","insel_festland","landlocked_quiz","sprachen_kompass","flagcolor","climate_quiz","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60","uk_kartenausschnitt","uk_mercator_illusion"],cost:0},
   sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20","derby_hotspots","eishockey_nationen","f1_historisch","tdf_paesse","olympia_winter_historie","wm_gastgeber","wm_finalstadien","weltmeister_nationen","fussball_legenden","road_to_2026","frauen_wm_meilensteine","sommerspiele_metropolen","winter_exoten_klassiker","olympische_rekorde","olympia_hoehe","boykott_spiele","em_gastgeber_historie","em_finalstadien","f1_map","stadium_map","uk_nationalsport_off","uk_hohe_stadien","uk_leichtathletik_wm"],cost:0},
 };
 
@@ -7428,7 +7428,7 @@ const KULTUR_DATA={
   mercator_illusion:[{n:"Gr\u00f6nland sieht auf Mercator gr\u00f6\u00dfer aus als Afrika",c:"Nein"},{n:"Russland ist auf Mercator verzerrt gr\u00f6\u00dfer als in Realit\u00e4t",c:"Ja"},{n:"Australien ist in Wirklichkeit kleiner als die USA",c:"Nein"},{n:"Alaska wirkt auf Mercator kleiner als Mexico",c:"Nein"},{n:"Skandinavien sieht gr\u00f6\u00dfer aus als Indien",c:"Ja"},{n:"Antarktika ist auf Mercator extrem vergr\u00f6\u00dfert",c:"Ja"},{n:"Kanada ist gr\u00f6\u00dfer als China",c:"Ja"},{n:"Greenland ist gr\u00f6\u00dfer als Mexiko in Wirklichkeit",c:"Nein"}],
   distanz_schaetzer:[{n:"Berlin \u2192 Paris",c:"880 km"},{n:"New York \u2192 Los Angeles",c:"3940 km"},{n:"Sydney \u2192 Perth",c:"3290 km"},{n:"London \u2192 Tokio",c:"9560 km"},{n:"Kairo \u2192 Kapstadt",c:"7700 km"},{n:"Buenos Aires \u2192 Santiago",c:"1140 km"},{n:"Moskau \u2192 Wladiwostok",c:"6430 km"},{n:"Delhi \u2192 Mumbai",c:"1400 km"},{n:"Amsterdam \u2192 Madrid",c:"1760 km"},{n:"Toronto \u2192 Vancouver",c:"3360 km"}],
   flugzeit_schaetzer:[{n:"Frankfurt \u2192 New York",c:"9 Std."},{n:"London \u2192 Sydney",c:"21 Std."},{n:"Paris \u2192 Tokio",c:"12 Std."},{n:"Dubai \u2192 Los Angeles",c:"16 Std."},{n:"Madrid \u2192 Buenos Aires",c:"14 Std."},{n:"Amsterdam \u2192 Singapur",c:"12 Std."},{n:"Moskau \u2192 Peking",c:"8 Std."},{n:"New York \u2192 S\u00e3o Paulo",c:"10 Std."},{n:"Berlin \u2192 Bangkok",c:"11 Std."},{n:"Istanbul \u2192 Tokio",c:"11 Std."}],
-  breitengrad_match:[{n:"Madrid & Peking",c:"Spanien"},{n:"Berlin & Moskau",c:"Deutschland"},{n:"New York & Madrid",c:"USA"},{n:"Buenos Aires & Sydney",c:"Argentinien"},{n:"Kairo & Los Angeles",c:"\u00c4gypten"},{n:"Mumbai & Nairobi",c:"Indien"},{n:"S\u00e3o Paulo & Melbourne",c:"Brasilien"},{n:"Tokio & Seoul",c:"Japan"},{n:"Oslo & Anchorage",c:"Norwegen"},{n:"Cape Town & Santiago",c:"S\u00fcdafrika"}]
+  breitengrad_match:[{n:"Madrid",c:"Peking"},{n:"Berlin",c:"Moskau"},{n:"New York",c:"Lissabon"},{n:"Buenos Aires",c:"Sydney"},{n:"Kairo",c:"Los Angeles"},{n:"Mumbai",c:"Nairobi"},{n:"S\u00e3o Paulo",c:"Melbourne"},{n:"Tokio",c:"Seoul"},{n:"Oslo",c:"Anchorage"},{n:"Kapstadt",c:"Santiago de Chile"},{n:"Miami",c:"Riad"},{n:"Teheran",c:"Chicago"},{n:"Paris",c:"Calgary"},{n:"Lhasa",c:"Denver"}]
 };
 
 /* Phase 216: Fixed-pool Match — distractors drawn from an explicit answer pool */
@@ -8465,7 +8465,17 @@ function drawAirportPinMap(readOnly){
   const g=svg.append("g");
   const zoom=d3.zoom().scaleExtent([1,10]).on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom=ev.transform;});
   svg.call(zoom);
-  if(window._mapZoom&&window._mapZoom.k>1)svg.call(zoom.transform,window._mapZoom);
+  if(window._mapZoom&&window._mapZoom.k>1){
+    svg.call(zoom.transform,window._mapZoom);
+  } else if(!readOnly&&S.q&&S.q.targetLat!=null&&S.q.type==="uk_pin"){
+    /* Auto-zoom to target region for uk_pin modes so map isn't tiny world view */
+    const[px,py]=proj([S.q.targetLng,S.q.targetLat])||[W/2,H/2];
+    const _k=3.5;
+    const _tx=W/2-_k*px, _ty=H/2-_k*py;
+    const _tr=d3.zoomIdentity.translate(_tx,_ty).scale(_k);
+    svg.call(zoom.transform,_tr);
+    window._mapZoom=_tr;
+  }
   g.append("path").datum({type:"Sphere"}).attr("d",path).attr("fill","#bfdbfe").attr("stroke","none");
   g.selectAll("path.ctry").data(countries.features).enter().append("path")
     .attr("class","ctry").attr("d",path)
@@ -10879,40 +10889,42 @@ function renderWortSchmiede(sc){
   const barCol=pct>=100?"#10b981":pct>=60?"#3b82f6":"#f59e0b";
   const chips=foundWords.map(function(w){return'<span style="display:inline-flex;align-items:center;background:#10b981;color:#fff;border-radius:20px;padding:4px 12px;font-size:.82rem;font-weight:700;margin:3px 3px 3px 0;max-width:100%;overflow-wrap:break-word;word-break:break-word">'+esc(w)+'</span>';}).join("");
   const letters=[...city].map(function(ch){return'<span style="display:inline-flex;align-items:center;justify-content:center;width:2.1rem;height:2.5rem;background:var(--bg3);border:2px solid var(--border);border-radius:8px;font-size:1.3rem;font-weight:900;color:var(--text);margin:0 3px">'+ch+'</span>';}).join("");
-  /* P208: all user-facing strings via t() */
+  const wsHud='<div class="hud"><div style="display:flex;gap:8px;align-items:center">'+
+    '<div class="pill"><div class="hlbl">SCORE</div><div class="hval">'+sc.toLocaleString()+'</div></div>'+
+    '<div class="pill-s"><div class="hlbl" style="color:#10b981">'+t("ws_found").toUpperCase()+'</div><div class="hval-s" style="color:#10b981">'+found+'/'+total+'</div></div>'+
+    '</div>'+
+    '<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center">'+
+      '<button class="btn-exit-global" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button>'+
+      '<button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button>'+
+    '</div>'+
+  '</div>'+
+  '<div class="tbar"><div class="tfill" style="width:'+pct+'%;background:'+barCol+';transition:width .3s"></div></div>';
   if(phase==="won"){
-    return'<div class="scr"><div class="panel">'+
+    return'<div class="scr">'+wsHud+'<div class="panel" style="margin-top:.5rem">'+
       '<div style="text-align:center;font-size:2.5rem;margin-bottom:.5rem">\u{1F3C6}</div>'+
       '<div style="text-align:center;font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:.3rem">'+t("ws_all_found")+'</div>'+
-      '<div style="text-align:center;font-size:.8rem;color:var(--text3);margin-bottom:1rem">'+esc(city)+' \u00b7 '+found+'/'+total+' \u00b7 '+sc.toLocaleString()+' '+t("pts_abbr")+'</div>'+
+      '<div style="text-align:center;font-size:.8rem;color:var(--text3);margin-bottom:1rem">'+esc(city)+' · '+found+'/'+total+' · '+sc.toLocaleString()+' '+t("pts_abbr")+'</div>'+
       '<div style="display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:1rem">'+chips+'</div>'+
       '<button class="btn-p" style="margin-top:.5rem" onclick="initWortSchmiede();render()">\u{1F501} '+t("ws_next_city")+'</button>'+
       '<button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u{1F6AA} '+t("menu")+'</button>'+
       '</div></div>';
   }
-  return'<div class="scr"><div class="panel">'+
-    '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.75rem">'+
+  return'<div class="scr">'+wsHud+
+    '<div class="panel" style="margin-top:.5rem">'+
+    '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.6rem">'+
       '<div><div style="font-size:.6rem;letter-spacing:1px;color:var(--text3);font-weight:700">'+t("mode_wort_schmiede").toUpperCase()+'</div>'+
-        '<div style="display:flex;flex-wrap:wrap;margin-top:.35rem">'+letters+'</div></div>'+
-      '<div style="text-align:right"><div style="font-size:.6rem;color:var(--text3)">'+t("score_correct_lbl").toUpperCase()+'</div>'+
-        '<div style="font-size:1.5rem;font-weight:900;color:var(--text)">'+sc.toLocaleString()+'</div></div>'+
+        '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:.35rem">'+letters+'</div></div>'+
+      '<div style="font-size:.68rem;color:var(--text3);text-align:right;margin-top:.2rem">'+t("ws_lang_label")+': <strong>'+lang.toUpperCase()+'</strong></div>'+
     '</div>'+
-    '<div style="margin-bottom:.6rem">'+
-      '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">'+
-        '<span style="font-size:.72rem;color:var(--text3)">'+t("ws_found")+': <strong style="color:var(--text)">'+found+'</strong> / '+total+'</span>'+
-        '<span style="font-size:.72rem;color:'+barCol+';font-weight:700">'+pct+'%</span></div>'+
-      '<div class="tbar"><div class="tfill" style="width:'+pct+'%;background:'+barCol+';transition:width .3s"></div></div>'+
-    '</div>'+
-    '<div style="display:flex;gap:8px;margin-bottom:.8rem">'+
+    '<div style="display:flex;gap:8px;margin-bottom:.7rem">'+
       '<input id="ws-input" type="text" dir="ltr" class="slf-input" style="flex:1;direction:ltr;text-align:left;padding-left:10px;text-transform:uppercase;font-weight:700;letter-spacing:1px"'+
         ' placeholder="'+t("ws_enter_word")+'" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" inputmode="text"'+
         ' value="'+esc(input)+'" oninput="S.wsData.input=this.value.toUpperCase()"'+
         ' onkeydown="if(event.key===\'Enter\'){handleWsCheck();event.preventDefault();}">\n'+
-      '<button class="btn-p" style="padding:.55rem 1rem;margin:0;min-width:80px" onclick="handleWsCheck()">\u2714 '+t("ws_check")+'</button>'+
+      '<button class="btn-p" style="padding:.55rem 1rem;margin:0;min-width:72px;font-weight:900" onclick="handleWsCheck()">✔ OK</button>'+
     '</div>'+
-    (found>0?'<div style="display:flex;flex-wrap:wrap;margin-bottom:.6rem">'+chips+'</div>':"")+
-    '<div style="font-size:.7rem;color:var(--text3);text-align:center;margin-bottom:.5rem">'+t("ws_letters_hint")+' \u00b7 '+t("ws_lang_label")+': <strong>'+lang.toUpperCase()+'</strong></div>'+
-    '<button class="btn-g" style="margin-bottom:0;font-size:.78rem" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u2716 '+t("menu")+'</button>'+
+    '<div style="font-size:.7rem;color:var(--text3);text-align:center;margin-bottom:.5rem">'+t("ws_letters_hint")+' · '+t("ws_lang_label")+': <strong>'+lang.toUpperCase()+'</strong></div>'+
+    (found>0?'<div style="display:flex;flex-wrap:wrap;margin-bottom:.5rem">'+chips+'</div>':"")+
     '</div></div>';
 }
 
