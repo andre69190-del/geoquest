@@ -6,4 +6,4 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "DATA: Phase 215+215b — Massive Content Expansion + Master Audit. DE_PLATES: 289->709 (echte Altkennzeichen, deep-audited master list). AIRPORTS: 40->173 (Top-Weltflughaefen mit IATA+Koordinaten). CURR_REAL: 0->141 (alle aktiven Weltwaehrungen behoben). KULTUR_DATA: 5->30 Eintraege in 6 Kategorien (streetfood, wahrzeichen, museen, getraenke, feste, instrumente) + 40 Wolkenkratzer neu. HL_BETA_DATA: 15->112 Laender (rain/temp/sun/vulc/parks/roads/rail/net/ev/urban/lang/isl/tz/founded/unesco/tour/wm). Also: Phase 219 Catalog Audit, Phase 218 Beta-Labels raus, Phase 2
+git commit -m "FEAT+SEC: Phase 216 — 52 new [BETA] modes + Deep System Audit. Schritt 1-4 komplett: 9 Universal-Pin, 9 H-L-Beta, 26 Universal-Match, 8 Spezial-Modi. genFixedPoolMatchQ Engine neu. HL_BETA_DATA auf 44 Laender, 9 neue Metriken. getSmartMatch log(0)-Guard. Accordion Single-Open UX. See commit fa55f74 fuer Details."
