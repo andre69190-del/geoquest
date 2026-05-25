@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Phase 224 — Kuestenlaenge Mojibake, HL-Modi auf Deutsch (higher/lower), Sunrise 15-75deg Fenster (kein Manchester vs Philippinen mehr), Streak-Pill kleiner (RUNDE sichtbar), Karte-Sprung (_mapZoom lid-gebunden), Stadion-Dedup (28 unique Pairs). Build: 1.451M chars."
+git commit -m "FIX: Phase 225 — Suche repariert (inline display:none blockierte .open, removeProperty fix), Kuestenlaenge Mojibake, HL-Modi Deutsch, Sunrise 15-75deg Fenster, Streak-Pill kleiner, Karte-Sprung, Stadion-Dedup. Build: 1.451M chars."
 echo.
 echo Pushing to GitHub...
 git push origin main

@@ -11558,7 +11558,7 @@ function filterGames(){
       else{card.style.setProperty('display','none','important');}
     });
     if(hasMatch){
-      if(content){content.classList.add('open');}
+      if(content){content.style.removeProperty('display');content.classList.add('open');}
       if(arrow){arrow.style.transform='rotate(180deg)';}
     } else {
       section.style.setProperty('display','none','important');
