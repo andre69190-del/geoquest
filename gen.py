@@ -7060,7 +7060,7 @@ function genStadionHoeheQ(){
     var diff=higher.alt-lower.alt;
     if(diff<30)continue; /* skip nearly-identical altitudes */
     var meta=a.name+": "+a.alt+" m · "+b.name+": "+b.alt+" m";
-    return{type:"beta_hl",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",subj:"",opts:[a.name,b.name],ans:higher.name,meta:meta,lid:"stadion_hoehe",cc:higher.cc||"de"};
+    var _pLid="sh_"+Math.min(ai,sorted.indexOf(b))+"_"+Math.max(ai,sorted.indexOf(b));return{type:"beta_hl",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",subj:"",opts:[a.name,b.name],ans:higher.name,meta:meta,lid:_pLid,cc:higher.cc||"de"};
   }
   return null;
 }
@@ -8608,10 +8608,12 @@ function drawAirportPinMap(readOnly){
   svg.append("defs").append("clipPath").attr("id","_gqMapClip_"+W)
     .append("rect").attr("width",W).attr("height",H);
   const g=svg.append("g").attr("clip-path","url(#_gqMapClip_"+W+")");
-  const zoom=d3.zoom().scaleExtent([1,10]).translateExtent([[-W,-H],[2*W,2*H]]).on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom=ev.transform;});
+  let _pinMapDragged=false;
+  const zoom=d3.zoom().scaleExtent([1,10]).translateExtent([[-W,-H],[2*W,2*H]]).on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom={t:ev.transform,lid:S.q?S.q.lid:null};if(ev.sourceEvent)_pinMapDragged=true;});
   svg.call(zoom);
-  if(window._mapZoom&&window._mapZoom.k>1){
-    svg.call(zoom.transform,window._mapZoom);
+  const _savedZ=window._mapZoom;
+  if(_savedZ&&_savedZ.t&&_savedZ.t.k>1&&_savedZ.lid===(S.q?S.q.lid:null)){
+    svg.call(zoom.transform,_savedZ.t);
   } else if(!readOnly&&S.q&&S.q.targetLat!=null&&S.q.type==="uk_pin"){
     /* Auto-zoom to target region for uk_pin modes so map isn't tiny world view */
     const[px,py]=proj([S.q.targetLng,S.q.targetLat])||[W/2,H/2];
@@ -8619,7 +8621,7 @@ function drawAirportPinMap(readOnly){
     const _tx=W/2-_k*px, _ty=H/2-_k*py;
     const _tr=d3.zoomIdentity.translate(_tx,_ty).scale(_k);
     svg.call(zoom.transform,_tr);
-    window._mapZoom=_tr;
+    window._mapZoom={t:_tr,lid:S.q?S.q.lid:null};
   }
   g.append("path").datum({type:"Sphere"}).attr("d",path).attr("fill","#bfdbfe").attr("stroke","none");
   g.selectAll("path.ctry").data(countries.features).enter().append("path")
@@ -8638,11 +8640,12 @@ function drawAirportPinMap(readOnly){
   }
   /* Click handler: place user pin */
   if(!readOnly){
+    svg.on("pointerdown.pintrack",function(){_pinMapDragged=false;});
     svg.on("click",function(ev){
       if(S.sel!==null)return;
-      const [sx,sy]=d3.pointer(ev,g.node());
-      /* invert zoom transform */
-      const tr=window._mapZoom||d3.zoomIdentity;
+      if(_pinMapDragged){_pinMapDragged=false;return;} /* was a pan, not a tap */
+      const [sx,sy]=d3.pointer(ev,svg.node()); /* SVG-space coords — consistent on all mobile browsers */
+      const _savedZT=window._mapZoom;const tr=(_savedZT&&_savedZT.t)||d3.zoomIdentity;
       const [mx,my]=[(sx-tr.x)/tr.k,(sy-tr.y)/tr.k];
       const coords=proj.invert([mx,my]);
       if(!coords)return;
