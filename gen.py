@@ -2634,7 +2634,7 @@ const MODES=[
   {id:"hl_gdp",       icon:"\u{1F4B0}",title:"H/L BIP",              group:"hl_compare",prompt:"H\u00f6heres BIP?",         desc:"Welches Land hat ein h\u00f6heres BIP?"},
   {id:"hl_density",   icon:"\u{1F3D8}",title:"H/L Bev\u00f6lkerungsdichte",group:"hl_compare",prompt:"Dichter besiedelt?",    desc:"Welches Land ist dichter besiedelt?"},
   {id:"hl_elevation", icon:"\u{26F0}",title:"H/L H\u00f6chster Punkt",group:"hl_compare",prompt:"H\u00f6herer Gipfel?",      desc:"Welches Land hat den h\u00f6heren Gipfel?"},
-  {id:"hl_coastline", icon:"\u{1F3D6}",title:"H/L K\u00fcstÐµÐ½l\u00e4nge",group:"hl_compare",prompt:"L\u00e4ngere K\u00fcste?",desc:"Welches Land hat die l\u00e4ngere K\u00fcste?"},
+  {id:"hl_coastline", icon:"\u{1F3D6}",title:"H/L K\u00fcstenlänge",group:"hl_compare",prompt:"L\u00e4ngere K\u00fcste?",desc:"Welches Land hat die l\u00e4ngere K\u00fcste?"},
   {id:"hl_borders",   icon:"\u{1F30F}",title:"H/L Nachbarl\u00e4nder",group:"hl_compare",prompt:"Mehr Nachbarn?",             desc:"Welches Land hat mehr Nachbarl\u00e4nder?"},
   {id:"hl_lifeexp",   icon:"\u2764",title:"H/L Lebenserwartung",   group:"hl_compare",prompt:"L\u00e4nger leben?",            desc:"In welchem Land lebt man l\u00e4nger?"},
   {id:"hl_median_age",icon:"\u{1F4C5}",title:"H/L Medianalter",    group:"hl_compare",prompt:"H\u00f6heres Medianalter?",     desc:"Welches Land hat ein h\u00f6heres Medianalter?"},
@@ -7171,7 +7171,7 @@ function genSunriseGuesserQ(){
     cB=pool[~~(rng()*pool.length)];
     tries++;
     if(tries>60)return null;
-  }while(Math.abs((cA.lng||cA.lon||0)-(cB.lng||cB.lon||0))<10);
+  }while((function(){var d=Math.abs((cA.lng||cA.lon||0)-(cB.lng||cB.lon||0));return d<15||d>75;})());  /* Phase 224: 15-75° = 1-5h diff — not trivial, not obvious */
   var lngA=cA.lng||cA.lon||0,lngB=cB.lng||cB.lon||0;
   var nameA=cA.name||cA.n,nameB=cB.name||cB.n;
   var ans=lngA>=lngB?nameA:nameB;
@@ -9465,15 +9465,15 @@ if(mode==="slf"&&S.ph==="playing"){
         <div class="plate-badge">${q.subj}</div>
         ${q.type==="plate_casual"&&q.meta&&sel\!==null?`<div style="color:var(--text3);font-size:.75rem;margin-top:6px">${q.meta}</div>`:""}
       </div>`;
-  }else if(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"||q.type==="uk_hl"){
+  }else if(q.type&&(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"||q.type==="uk_hl"||(q.type.startsWith("hl_")&&!q.type.startsWith("hl_b_")))&&q.nameA&&q.nameB){
     /* Higher/Lower card + dedicated answer buttons (clean "higher"/"lower" keys) */
     const revB=sel\!==null;
     const hlIcon=q.type==="hl_pop"?"\u{1F465}":q.type==="hl_river"?"\u{1F4A7}":q.type==="uk_hl"?"\u{1F3D9}":"\u{1F5FA}";
     const hlFbH=sel===null?"":ok&&q.ans==="higher"?"ok":"ng";
     const hlFbL=sel===null?"":ok&&q.ans==="lower"?"ok":"ng";
     const hlDis=sel\!==null?"disabled":"";
-    const hlBtnH=q.type==="hl_pop"?t("hl_more"):q.type==="hl_river"?t("hl_longer"):q.type==="uk_hl"?t("uk_hl_higher"):t("hl_bigger");
-    const hlBtnL=q.type==="hl_pop"?t("hl_less"):q.type==="hl_river"?t("hl_shorter"):q.type==="uk_hl"?t("uk_hl_lower"):t("hl_smaller");
+    const hlBtnH=q.type==="hl_pop"?t("hl_more"):q.type==="hl_river"?t("hl_longer"):q.type==="uk_hl"?t("uk_hl_higher"):(q.type.startsWith("hl_")&&!q.type.startsWith("hl_b_"))?t("hl_higher"):t("hl_bigger");
+    const hlBtnL=q.type==="hl_pop"?t("hl_less"):q.type==="hl_river"?t("hl_shorter"):q.type==="uk_hl"?t("uk_hl_lower"):(q.type.startsWith("hl_")&&!q.type.startsWith("hl_b_"))?t("hl_lower"):t("hl_smaller");
     qBody=`<div class="qprompt">${hlIcon} ${q.prompt}</div>
       <div class="hl-wrap">
         <div class="hl-card hl-known">
@@ -9733,7 +9733,7 @@ if(mode==="slf"&&S.ph==="playing"){
       </div>`;
       app.innerHTML=pcHtml;return;
     }
-    if(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"||q.type==="uk_hl"){
+    if(q.type&&(q.type==="hl_pop"||q.type==="hl_river"||q.type==="hl_area"||q.type==="uk_hl"||(q.type.startsWith("hl_")&&!q.type.startsWith("hl_b_")))&&q.nameA&&q.nameB){
       answerHtml="";
     }else{
       if(q.type==="stadium"){
@@ -12756,10 +12756,10 @@ input[type=text]::placeholder{color:var(--text3)}
 .cat-lock-overlay{position:absolute;inset:-4px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(15,23,42,.72);border-radius:14px;z-index:10;cursor:pointer;gap:5px;backdrop-filter:blur(2px)}
 .hud{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 .pill{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:5px 14px;box-shadow:var(--shadow)}
-.pill-s{background:rgba(251,146,60,.1);border:1.5px solid rgba(251,146,60,.35);border-radius:10px;padding:5px 14px}
+.pill-s{background:rgba(251,146,60,.1);border:1.5px solid rgba(251,146,60,.35);border-radius:8px;padding:3px 8px}
 .hlbl{font-size:.6rem;font-weight:600;letter-spacing:1px;color:var(--text3)}
 .hval{font-size:1.2rem;font-weight:900;color:var(--text);line-height:1.2}
-.hval-s{font-size:1.2rem;font-weight:900;color:#fed7aa;line-height:1.2}
+.hval-s{font-size:.95rem;font-weight:900;color:#fed7aa;line-height:1.2}
 .tbar{height:6px;background:var(--bg4);border-radius:99px;overflow:hidden;margin-bottom:14px}
 .tfill{height:100%;border-radius:99px;transition:width 1s linear,background .4s}
 .tbar.frozen .tfill{background:#3b82f6 !important;transition:none}
