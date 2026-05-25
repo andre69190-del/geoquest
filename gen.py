@@ -8455,14 +8455,17 @@ function drawAirportPinMap(readOnly){
   const svg=d3.select(container).html("").append("svg")
     .attr("width","100%").attr("height",H)
     .attr("viewBox",`0 0 ${W} ${H}`)
-    .style("background","var(--bg2)")
+    .style("background","#bfdbfe") /* ocean color — visible when panning outside sphere */
     .style("touch-action","none")
     .style("user-select","none")
     .style("cursor",readOnly?"default":"crosshair");
   const proj=d3.geoNaturalEarth1().scale(W/6.2).translate([W/2,H/2]);
   const path=d3.geoPath().projection(proj);
   const countries=topojson.feature(window.WORLD_TOPO,window.WORLD_TOPO.objects.countries);
-  const g=svg.append("g");
+  /* ClipPath: prevents rendering outside SVG bounds — avoids white edges on pan */
+  svg.append("defs").append("clipPath").attr("id","_gqMapClip_"+W)
+    .append("rect").attr("width",W).attr("height",H);
+  const g=svg.append("g").attr("clip-path","url(#_gqMapClip_"+W+")");
   const zoom=d3.zoom().scaleExtent([1,10]).on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom=ev.transform;});
   svg.call(zoom);
   if(window._mapZoom&&window._mapZoom.k>1){
