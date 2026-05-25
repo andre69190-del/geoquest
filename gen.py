@@ -9440,11 +9440,18 @@ if(mode==="slf"&&S.ph==="playing"){
       :S.ok?`<div class="fb ok">\u2713 ${apDist} km entfernt · +${apPts} Pkt.</div>`
       :`<div class="fb ng">\u2717 ${apDist} km entfernt · 0 Pkt.</div>`;
     app.innerHTML=`<div class="scr map-scr">
-      <div class="hud"><div style="display:flex;gap:8px;align-items:center">
-        <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
-        ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
-        <div style="margin-left:auto"><button class="btn-exit-global" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()" style="background:#ef4444;color:#fff;border:none;padding:8px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F6AA}</button></div>
-      </div></div>
+      <div class="hud">
+        <div style="display:flex;gap:8px;align-items:center">
+          <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
+          ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          ${diff==="survival"
+            ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
+            :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button></div>
+        </div>
+      </div>
       <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
       <div style="text-align:center;padding:.5rem .5rem .2rem;font-size:.85rem;font-weight:700;color:var(--text3)">\u{1F4CD} ${q.prompt}</div>
       <div style="text-align:center;font-size:1.05rem;font-weight:900;color:var(--text);margin:.1rem 0 .5rem">${esc(q.subj)}</div>
@@ -9500,7 +9507,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()">\u{1F6AA} Beenden</button>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button></div>
         </div>
       </div>
       <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
