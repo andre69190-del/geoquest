@@ -3967,7 +3967,7 @@ function getSmartMatch(candidates,ccA,valA,ccFn,valFn){
   var vAN=Number(valA)||0;
   for(var i=0;i<sorted.length;i++){if(Number(valFn(sorted[i]))<=vAN)aIdx=i;}
   /* Dynamic window: ±5 for large arrays, ±2 for small (ensures challenge) */
-  var W=Math.max(2,Math.min(5,Math.floor(sorted.length/5)));
+  var W=Math.max(1,Math.floor(sorted.length*0.1)); /* Phase 222: 10% window */
   var lo=Math.max(0,aIdx-W),hi=Math.min(sorted.length-1,aIdx+W);
   var pool=sorted.slice(lo,hi+1);
   /* Continent preference within window */
@@ -6865,12 +6865,7 @@ b6:[
   {q:"Kabaddi gilt als inoffizieller Nationalsport von ...?",a:"India",fakes:["Bangladesh","Pakistan","Sri Lanka"]},
   {q:"Welches Land gilt als Geburtsort des modernen Fußballs (FA-Regeln 1863)?",a:"England",fakes:["Germany","Scotland","Italy"]}
 ],
-b7:[
-  {nameA:"Hernando Siles (La Paz)",nameB:"Allianz Arena (München)",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",ans:"Hernando Siles (La Paz)",metaA:"3.637 m",metaB:"517 m"},
-  {nameA:"Estadio Azteca (Mexiko-Stadt)",nameB:"Camp Nou (Barcelona)",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",ans:"Estadio Azteca (Mexiko-Stadt)",metaA:"2.210 m",metaB:"57 m"},
-  {nameA:"Stade de Suisse (Bern)",nameB:"Anfield (Liverpool)",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",ans:"Stade de Suisse (Bern)",metaA:"572 m",metaB:"26 m"},
-  {nameA:"Türk Telekom Stadyum (Istanbul)",nameB:"Wembley (London)",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",ans:"Türk Telekom Stadyum (Istanbul)",metaA:"212 m",metaB:"35 m"}
-],
+/* b7 replaced by genStadionHoeheQ — see Phase 222 */
 b9:[
   {q:"Wo wurde Basketball erfunden (1891, James Naismith)?",a:"United States",fakes:["Canada","England","Australia"]},
   {q:"In welchem Land entstand Judo als moderner Kampfsport (Kodokan, 1882)?",a:"Japan",fakes:["China","South Korea","Thailand"]},
@@ -7022,6 +7017,53 @@ function genBetaMCQ(bId){
   return{type:"beta_mcq",prompt:d.q,subj:d.subj||"",ans:d.a,opts,meta:d.meta||"",lid:"bmcq_"+bId,cc:ccFromCountry(d.a)||"de"};
 }
 
+/* Phase 222: Stadium Altitude dataset + dynamic proximity generator */
+const STADION_HOEHE_DATA=[
+  {name:"Hernando Siles (La Paz)",alt:3637,cc:"bo"},
+  {name:"El Campín (Bogotá)",alt:2600,cc:"co"},
+  {name:"Azteca (Mexiko-Stadt)",alt:2210,cc:"mx"},
+  {name:"Olímpico Universitario (Mexiko-Stadt)",alt:2240,cc:"mx"},
+  {name:"FNB Stadium (Johannesburg)",alt:1753,cc:"za"},
+  {name:"Loftus Versfeld (Pretoria)",alt:1344,cc:"za"},
+  {name:"Mané Garrincha (Brasília)",alt:1172,cc:"br"},
+  {name:"Morumbi (São Paulo)",alt:760,cc:"br"},
+  {name:"Stade de Suisse (Bern)",alt:572,cc:"ch"},
+  {name:"Monumental (Santiago de Chile)",alt:567,cc:"cl"},
+  {name:"Allianz Arena (München)",alt:517,cc:"de"},
+  {name:"Türk Telekom Stadyum (Istanbul)",alt:212,cc:"tr"},
+  {name:"Estadio Nacional (Lima)",alt:154,cc:"pe"},
+  {name:"Luzhniki (Moskau)",alt:145,cc:"ru"},
+  {name:"San Siro (Mailand)",alt:121,cc:"it"},
+  {name:"Signal Iduna Park (Dortmund)",alt:86,cc:"de"},
+  {name:"Camp Nou (Barcelona)",alt:57,cc:"es"},
+  {name:"Olympiastadion (Berlin)",alt:37,cc:"de"},
+  {name:"Wembley (London)",alt:35,cc:"gb"},
+  {name:"Anfield (Liverpool)",alt:26,cc:"gb"},
+  {name:"Maracanã (Rio de Janeiro)",alt:11,cc:"br"},
+  {name:"Monumental (Buenos Aires)",alt:9,cc:"ar"}
+];
+function genStadionHoeheQ(){
+  if(!STADION_HOEHE_DATA||STADION_HOEHE_DATA.length<2)return null;
+  var sorted=STADION_HOEHE_DATA.slice().sort(function(a,b){return a.alt-b.alt;});
+  var tries=0;
+  while(tries++<40){
+    var ai=~~(rng()*sorted.length);
+    var W=Math.max(1,Math.floor(sorted.length*0.1));
+    var lo=Math.max(0,ai-W),hi=Math.min(sorted.length-1,ai+W);
+    var pool=sorted.slice(lo,hi+1).filter(function(x){return x!==sorted[ai];});
+    if(!pool.length)continue;
+    var b=pool[~~(rng()*pool.length)];
+    var a=sorted[ai];
+    if(a.alt===b.alt)continue;
+    var higher=a.alt>b.alt?a:b;
+    var lower=a.alt>b.alt?b:a;
+    var diff=higher.alt-lower.alt;
+    if(diff<30)continue; /* skip nearly-identical altitudes */
+    var meta=a.name+": "+a.alt+" m · "+b.name+": "+b.alt+" m";
+    return{type:"beta_hl",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",subj:"",opts:[a.name,b.name],ans:higher.name,meta:meta,lid:"stadion_hoehe",cc:higher.cc||"de"};
+  }
+  return null;
+}
 /* Phase 166: genBetaHL */
 function genBetaHL(bId){
   const pool=BETA_GAMEDATA["b"+bId];
@@ -7660,7 +7702,7 @@ const GEN={
   crest:()=>genFootballQ("crest"),
   /* Phase 166: 28 beta modes */
   b1:()=>genBetaMCQ(1),b2:()=>genBetaSpotter(2),b4:()=>genBetaMCQ(4),
-  b6:()=>genBetaMCQ(6),b7:()=>genBetaHL(7),b9:()=>genBetaMCQ(9),
+  b6:()=>genBetaMCQ(6),b7:()=>genStadionHoeheQ(),b9:()=>genBetaMCQ(9),
   b11:()=>genBetaMCQ(11),b17:()=>genBetaHL(17),b19:()=>genBetaMCQ(19),
   b20:()=>genBetaMCQ(20),
   b21:()=>genBetaMCQ(21),b22:()=>genBetaMCQ(22),b23:()=>genBetaMCQ(23),
