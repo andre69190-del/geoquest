@@ -11014,25 +11014,24 @@ function renderStatsTab(){
 }
 
 /* ─── ADMIN TAB ──────────────────────────────────────────────────── */
-/* Phase 167B: Global Bug Reporter */
-async function reportBug(){
-  const msg=window.prompt("\u{1F41E} Was stimmt nicht? (Modus, Frage, Fehler beschreiben)");
-  if(msg===null||!msg.trim())return;
-  showToast("\u{1F4E4} Sende Fehlermeldung\u2026");
-  const ctx={mode:S.mode||"unknown",diff:S.diff,rd:S.rd,ph:S.ph,
-    q:S.q?{type:S.q.type,prompt:(S.q.prompt||"").slice(0,200),subj:String(S.q.subj||"").slice(0,100),ans:S.q.ans}:null};
-  if(sb){
-    try{
-      await sb.from("bug_reports").insert({user_id:sbUser?.id||null,mode:S.mode||"unknown",context:JSON.stringify(ctx),message:msg.trim()});
-      showToast("\u2705 Danke! Fehler wurde gemeldet.");
-    }catch(e){
-      _sendBugMail("GeoQuest Bug: "+(S.mode||"?"),msg+"\n\nKontext: "+JSON.stringify(ctx));
-      showToast("\u{1F4E7} Per E-Mail gesendet (DB nicht erreichbar).");
-    }
-  }else{
-    _sendBugMail("GeoQuest Bug: "+(S.mode||"?"),msg+"\n\nKontext: "+JSON.stringify(ctx));
-    showToast("\u{1F4E7} Per E-Mail gesendet.");
-  }
+/* Phase 218: Bug Reporter \u2014 mailto: transport, pre-filled mode name */
+function reportBug(){
+  /* resolve current mode title from MODES array */
+  var _m=MODES.find(function(x){return x.id===S.mode;});
+  var _modeName=_m?_m.title:(S.mode||"Unbekannt");
+  /* open native prompt pre-filled with mode context */
+  var _input=window.prompt("\ud83d\udc1e Was stimmt nicht? (Modus, Frage, Fehler beschreiben)","Fehler in Modus: "+_modeName+" \u2013 ");
+  if(_input===null||!_input.trim())return;
+  /* build subject + rich body */
+  var _subject="GeoQuest Bug: "+_modeName;
+  var _body=_input.trim()
+    +"\n\n--- System Info ---"
+    +"\nModus: "+_modeName+" ("+(_modeName!==S.mode?S.mode:"")+")"
+    +"\nSchwierigkeit: "+(S.diff||"?")
+    +"\nRunde: "+(S.rd||0)
+    +"\nScore: "+(S.score||0)
+    +"\nPhase: "+(S.ph||"?");
+  _sendBugMail(_subject,_body);
 }
 async function loadAdminData(){
   if(sbUser?.email!=="andre69190@gmail.com")return;
@@ -12839,4 +12838,4 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print('Also written -> index.html (Netlify deploy target)')
- 
+                                                                                                                                       
