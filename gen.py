@@ -7528,11 +7528,13 @@ function genFixedPoolMatchQ(cat,ansPool){
   const idx=~~(rng()*data.length);
   const item=data[idx];
   const cor=item.c;
-  const dis=[...new Set(ansPool.filter(a=>a!==cor))].sort(()=>rng()-.5).slice(0,3);
-  if(dis.length<3){const extra=data.filter((_,i)=>i!==idx).map(d=>d.c).filter(c=>c!==cor);dis.push(...extra.slice(0,3-dis.length));}
-  if(dis.length<3)return null;
+  /* FIX: binary pool (e.g. Ja/Nein) → only 1 wrong answer, not 3 */
+  const maxWrong=Math.min(3,ansPool.length-1);
+  const dis=[...new Set(ansPool.filter(a=>a!==cor))].sort(()=>rng()-.5).slice(0,maxWrong);
+  if(dis.length<maxWrong){const extra=data.filter((_,i)=>i!==idx).map(d=>d.c).filter(c=>c!==cor);dis.push(...extra.slice(0,maxWrong-dis.length));}
+  if(dis.length<1)return null;
   const modeObj=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id===("uk_"+cat)||m.id===cat)||{};
-  return{type:"uk_match",cat,prompt:modeObj.prompt||"",subj:item.n,ans:cor,opts:sh([cor,...dis.slice(0,3)]),lid:"ukfp_"+cat+"_"+idx,cc:null};
+  return{type:"uk_match",cat,prompt:modeObj.prompt||"",subj:item.n,ans:cor,opts:sh([cor,...dis.slice(0,maxWrong)]),lid:"ukfp_"+cat+"_"+idx,cc:null};
 }
 
 /* Phase 211: Universal Match generator — "From which country does X come?" */

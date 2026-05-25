@@ -11,5 +11,4 @@ echo.
 echo Pushing to GitHub...
 git push origin main
 echo.
-echo Done! Check Vercel for deployment.
-pause
+echo Done
