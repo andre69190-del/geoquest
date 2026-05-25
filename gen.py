@@ -3939,7 +3939,16 @@ const HL_BETA_PROMPTS={
 const HL_BETA_CC={
   "Deutschland":"de","Frankreich":"fr","USA":"us","Brasilien":"br","Japan":"jp",
   "Australien":"au","China":"cn","Kanada":"ca","Indien":"in","Russland":"ru",
-  "Spanien":"es","Italien":"it","Norwegen":"no","Mexiko":"mx","Suedkorea":"kr"
+  "Spanien":"es","Italien":"it","Norwegen":"no","Mexiko":"mx","Suedkorea":"kr",
+  /* Phase 222: complete the map so every HL_BETA_DATA country gets a flag */
+  "Vereinigtes Koenigreich":"gb","Argentinien":"ar","Suedafrika":"za",
+  "Nigeria":"ng","Aegypten":"eg","Tuerkei":"tr","Indonesien":"id",
+  "Pakistan":"pk","Bangladesch":"bd","Vietnam":"vn","Polen":"pl",
+  "Niederlande":"nl","Schweiz":"ch","Schweden":"se","Oesterreich":"at",
+  "Daenemark":"dk","Finnland":"fi","Portugal":"pt","Griechenland":"gr",
+  "Chile":"cl","Kolumbien":"co","Peru":"pe","Iran":"ir",
+  "Saudi-Arabien":"sa","Kasachstan":"kz","Thailand":"th","Malaysia":"my",
+  "Marokko":"ma","Kenya":"ke","Aethiopien":"et"
 };
 
 /* ─── Phase 160: Smart Matchmaking Helper ─── */
@@ -3949,25 +3958,23 @@ const HL_BETA_CC={
    ccFn(candidate) → ISO-2  |  valFn(candidate) → Zahl              */
 function getSmartMatch(candidates,ccA,valA,ccFn,valFn){
   if(!candidates||candidates.length===0)return null;
-  const ctA=ccA?(COUNTRIES.find(c=>c.cc===ccA)||{}).ct:null;
-  let pool=candidates;
-  /* Phase 217: same-continent preference (unchanged) */
-  if(ctA&&candidates.length>3){
-    const sameC=candidates.filter(k=>{
-      const cc2=ccFn(k);
-      return cc2&&(COUNTRIES.find(c=>c.cc===cc2)||{}).ct===ctA;
-    });
-    if(sameC.length>=2)pool=sameC;
-  }
-  /* Phase 217: log-ratio proximity - 3x hard cap, top 6, fallback to closest 5 */
-  if(valA!=null&&valA>0&&pool.length>2){
-    const logA=Math.log(Math.max(valA,0.01));
-    const inCap=pool.filter(x=>{const v=valFn(x);return v!=null&&v>0&&valA>0&&Math.max(valA,v)/Math.min(valA,v)<=3;});
-    if(inCap.length>=2){
-      pool=inCap.sort((a,b)=>Math.abs(Math.log(valFn(a))-logA)-Math.abs(Math.log(valFn(b))-logA)).slice(0,6);
-    } else {
-      pool=pool.slice().sort((a,b)=>Math.abs(Math.log(Math.max(valFn(a)||0.01,0.01))-logA)-Math.abs(Math.log(Math.max(valFn(b)||0.01,0.01))-logA)).slice(0,5);
-    }
+  /* Phase 222: strict index-rank proximity — sort by value, pick from ±W window */
+  var valid=candidates.filter(function(k){var v=Number(valFn(k));return v!=null&&!isNaN(v)&&isFinite(v);});
+  if(!valid.length)return null;
+  var sorted=valid.slice().sort(function(a,b){return Number(valFn(a))-Number(valFn(b));});
+  /* Find insertion rank of valA in sorted array */
+  var aIdx=0;
+  var vAN=Number(valA)||0;
+  for(var i=0;i<sorted.length;i++){if(Number(valFn(sorted[i]))<=vAN)aIdx=i;}
+  /* Dynamic window: ±5 for large arrays, ±2 for small (ensures challenge) */
+  var W=Math.max(2,Math.min(5,Math.floor(sorted.length/5)));
+  var lo=Math.max(0,aIdx-W),hi=Math.min(sorted.length-1,aIdx+W);
+  var pool=sorted.slice(lo,hi+1);
+  /* Continent preference within window */
+  var ctA=ccA?(COUNTRIES.find(function(c){return c.cc===ccA;})||{}).ct:null;
+  if(ctA&&pool.length>1){
+    var sameC=pool.filter(function(k){var cc2=ccFn(k);return cc2&&(COUNTRIES.find(function(c){return c.cc===cc2;})||{}).ct===ctA;});
+    if(sameC.length>=1)pool=sameC;
   }
   return pool[~~(rng()*pool.length)];
 }
