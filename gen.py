@@ -2746,6 +2746,7 @@ const MODES=[
   {id:"flugrouten_duell",    icon:"\u2708\uFE0F",title:"Flugrouten-Duell",          group:"airports",prompt:"Welche Flugroute ist l\u00e4nger?",              desc:"Zwei Flugrouten per Haversine vergleichen"},
   {id:"inlandsflug_intl",    icon:"\u{1F30D}",    title:"Inland oder International?",group:"airports",prompt:"Inlandsflug oder internationaler Flug?",          desc:"Zwei St\u00e4dte -- gleiche L\u00e4nder?"},
   {id:"sunrise_guesser",     icon:"\u{1F305}",    title:"Fr\u00fchere Sonne?",       group:"airports",prompt:"In welcher Stadt geht die Sonne fr\u00fcher auf?",desc:"L\u00e4ngsgrad = Sonnenaufgang"},
+  {id:"sonnen_kompass",      icon:"\u{1F9ED}",    title:"Sonnen-Kompass",             group:"airports",prompt:"Wohin geht die Sonne unter?",                    desc:"Sonnenuntergangs-Richtung nach Datum & Breitengrad"},
   {id:"aequator_magnet",     icon:"\u{1F4CD}",    title:"\u00c4quator-Magnet",       group:"airports",prompt:"Welche Stadt liegt n\u00e4her am \u00c4quator?",  desc:"Breitengrad-Abstand zum \u00c4quator"},
   {id:"kontinent_klicker",   icon:"\u{1F5FA}",    title:"Kontinent-Klicker",          group:"airports",prompt:"Auf welchem Kontinent liegt diese Stadt?",         desc:"Stadtname \u2192 Kontinent (5 Sek)"},
   {id:"hauptstadt_distanz",  icon:"\u{1F3DB}",    title:"Hauptstadt-Distanz",         group:"airports",prompt:"Wie weit liegt die Stadt von der Hauptstadt?",     desc:"\u00dcber oder unter 500 km zur Landeshauptstadt"},
@@ -2878,7 +2879,7 @@ const MODE_CATS={
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
-  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
+  airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q","uk_enklave","uk_grenzfluesse","uk_halbinseln","uk_deltamuendungen","uk_kaps","uk_meerbusen","uk_inselgruppen","uk_gebirge_match","uk_seen_match"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","kontinent_klicker","insel_festland","landlocked_quiz","sprachen_kompass","flagcolor","climate_quiz","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60","uk_kartenausschnitt","uk_mercator_illusion"],cost:0},
   sport:{label:"Sport",icon:"\u{1F3C6}",modes:["stadium","jersey","crest","comp_olympics","comp_flight","hl_b_wm","b1","b2","b4","b6","b7","b9","b11","b17","b19","b20","derby_hotspots","eishockey_nationen","f1_historisch","tdf_paesse","olympia_winter_historie","wm_gastgeber","wm_finalstadien","weltmeister_nationen","fussball_legenden","road_to_2026","frauen_wm_meilensteine","sommerspiele_metropolen","winter_exoten_klassiker","olympische_rekorde","olympia_hoehe","boykott_spiele","em_gastgeber_historie","em_finalstadien","f1_map","stadium_map","uk_nationalsport_off","uk_hohe_stadien","uk_leichtathletik_wm"],cost:0},
@@ -7133,6 +7134,75 @@ function genSunriseGuesserQ(){
     ans:ans,meta:meta,lid:nameA+'|'+nameB,cc:''};
 }
 
+/* -- Phase 221: SONNEN_KOMPASS_DATA -- 40 cities lat/lng for sunset quiz -- */
+const SONNEN_KOMPASS_DATA=[
+  {n:"Oslo",c:"NO",lat:59.9,lng:10.7},{n:"Helsinki",c:"FI",lat:60.2,lng:24.9},
+  {n:"Stockholm",c:"SE",lat:59.3,lng:18.1},{n:"Tromso",c:"NO",lat:69.7,lng:18.9},
+  {n:"Reykjavik",c:"IS",lat:64.1,lng:-21.9},{n:"London",c:"GB",lat:51.5,lng:-0.1},
+  {n:"Berlin",c:"DE",lat:52.5,lng:13.4},{n:"Paris",c:"FR",lat:48.9,lng:2.4},
+  {n:"Madrid",c:"ES",lat:40.4,lng:-3.7},{n:"Lissabon",c:"PT",lat:38.7,lng:-9.1},
+  {n:"Athen",c:"GR",lat:37.9,lng:23.7},{n:"Rom",c:"IT",lat:41.9,lng:12.5},
+  {n:"Warschau",c:"PL",lat:52.2,lng:21.0},{n:"Moskau",c:"RU",lat:55.8,lng:37.6},
+  {n:"Istanbul",c:"TR",lat:41.0,lng:28.9},{n:"Kairo",c:"EG",lat:30.1,lng:31.2},
+  {n:"Nairobi",c:"KE",lat:-1.3,lng:36.8},{n:"Lagos",c:"NG",lat:6.5,lng:3.4},
+  {n:"Casablanca",c:"MA",lat:33.6,lng:-7.6},{n:"Kapstadt",c:"ZA",lat:-33.9,lng:18.4},
+  {n:"Johannesburg",c:"ZA",lat:-26.2,lng:28.0},{n:"Daressalam",c:"TZ",lat:-6.8,lng:39.3},
+  {n:"Mumbai",c:"IN",lat:19.1,lng:72.9},{n:"Neu-Delhi",c:"IN",lat:28.6,lng:77.2},
+  {n:"Peking",c:"CN",lat:39.9,lng:116.4},{n:"Shanghai",c:"CN",lat:31.2,lng:121.5},
+  {n:"Tokio",c:"JP",lat:35.7,lng:139.7},{n:"Bangkok",c:"TH",lat:13.8,lng:100.5},
+  {n:"Singapur",c:"SG",lat:1.3,lng:103.8},{n:"Jakarta",c:"ID",lat:-6.2,lng:106.8},
+  {n:"Sydney",c:"AU",lat:-33.9,lng:151.2},{n:"Melbourne",c:"AU",lat:-37.8,lng:145.0},
+  {n:"Auckland",c:"NZ",lat:-36.9,lng:174.8},{n:"New York",c:"US",lat:40.7,lng:-74.0},
+  {n:"Los Angeles",c:"US",lat:34.1,lng:-118.2},{n:"Chicago",c:"US",lat:41.9,lng:-87.6},
+  {n:"Mexiko-Stadt",c:"MX",lat:19.4,lng:-99.1},{n:"Sao Paulo",c:"BR",lat:-23.5,lng:-46.6},
+  {n:"Buenos Aires",c:"AR",lat:-34.6,lng:-58.4},{n:"Lima",c:"PE",lat:-12.1,lng:-77.0}
+];
+/* genSonnenKompassQ: sunset direction quiz based on solar declination */
+function genSonnenKompassQ(){
+  const SK=SONNEN_KOMPASS_DATA;if(!SK||!SK.length)return null;
+  const DATES=[
+    {label:"21. März",doy:80},{label:"21. Juni",doy:172},
+    {label:"23. September",doy:266},{label:"21. Dezember",doy:355},
+    {label:"21. April",doy:111},{label:"21. Oktober",doy:294},
+    {label:"21. Mai",doy:141},{label:"21. November",doy:325}
+  ];
+  for(var _try=0;_try<30;_try++){
+    var item=SK[~~(rng()*SK.length)];
+    var scene=DATES[~~(rng()*DATES.length)];
+    var lat=item.lat;
+    var latRad=lat*Math.PI/180;
+    /* Spencer (1971) declination */
+    var B=2*Math.PI*(scene.doy-1)/365;
+    var decl=(180/Math.PI)*(0.006918-0.399912*Math.cos(B)+0.070257*Math.sin(B)-0.006758*Math.cos(2*B)+0.000907*Math.sin(2*B)-0.002697*Math.cos(3*B)+0.00148*Math.sin(3*B));
+    var declRad=decl*Math.PI/180;
+    var cosAz=Math.sin(declRad)/Math.cos(latRad);
+    if(Math.abs(cosAz)>=1)continue;/* polar skip */
+    var azRise=Math.acos(cosAz)*180/Math.PI;
+    var azSet=Math.round(360-azRise);
+    var dir;
+    if(azSet>=265&&azSet<=275)dir="Westen";
+    else if(azSet>275&&azSet<=340)dir="Nordwesten";
+    else if(azSet>340)dir="Norden";
+    else if(azSet>=220&&azSet<265)dir="Südwesten";
+    else dir="Süden";
+    var allDirs=["Nordwesten","Westen","Südwesten","Süden","Norden"];
+    var wrongs=allDirs.filter(function(d){return d!==dir;}).sort(function(){return rng()-.5;}).slice(0,3);
+    var opts=[dir].concat(wrongs).sort(function(){return rng()-.5;});
+    var latStr=(Math.abs(lat).toFixed(1)+"°")+(lat>=0?"N":"S");
+    return{
+      type:"sonnen_kompass",
+      prompt:"Am <b>"+scene.label+"</b> — wo geht die Sonne in <b>"+esc(item.n)+"</b> ("+latStr+") ungefähr unter?",
+      subj:item.n,
+      opts:opts,
+      ans:dir,
+      meta:"☀️ Azimut "+azSet+"° vom Norden (Westen=270°)",
+      lid:"sk_"+item.n+"_"+scene.doy,
+      cc:item.c
+    };
+  }
+  return null;
+}
+
 /* -- Phase 204: aequator_magnet -------------------------------------------- */
 function genAequatorMagnetQ(){
   var pool=null;
@@ -7620,6 +7690,7 @@ const GEN={
   flugrouten_duell:genFlugroutenDuellQ,
   inlandsflug_intl:genInlandsflugIntlQ,
   sunrise_guesser:genSunriseGuesserQ,
+  sonnen_kompass:genSonnenKompassQ,
   aequator_magnet:genAequatorMagnetQ,
   kontinent_klicker:genKontinentKlickerQ,
   hauptstadt_distanz:genHauptstadtDistanzQ,
@@ -9438,7 +9509,9 @@ if(mode==="slf"&&S.ph==="playing"){
         </div>
       </div>
       ${sel!==null?`<div class="qmeta" style="text-align:center;font-size:.77rem;margin-top:4px">${q.meta||""}</div>`:""}`;
-}else{
+}else if(q.type==="sonnen_kompass"){
+    qBody=`<div class="qprompt">${q.prompt}</div>`+`<div style="text-align:center;font-size:2.8rem;margin:8px 0 4px">\u{1F9ED}</div>`+`${sel!==null?'<div class="qmeta" style="text-align:center;font-size:.77rem;color:var(--text3);margin-top:4px">'+esc(q.meta||"")+'</div>':''}`;
+  }else{
     qBody=`<div class="qprompt">${q.prompt}</div><div class="qmain">${q.subj}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }
   /* Phase 203: sport_poi reveal */
@@ -10984,7 +11057,11 @@ function handleWsCheck(){
   if(!S.wsData.allWords.includes(inp)){_wsShake();showToast(t("ws_invalid"));render();return;}
   S.wsData.foundWords.push(inp);
   const pts=inp.length>=6?60:inp.length>=5?40:inp.length>=4?20:10;
-  S.sc+=pts;S.correct+=1;
+  /* Phase 221: Multilingual Bonus +10 when word valid in both DE & EN */
+  let _wsBonusPts=0;
+  try{const _cL=S.wsData.lang==="de"?"en":"de";const _cE=(WORTSCHMIEDE_DATA[S.wsData.cityIdx]||{}).validWords;const _cW=_cE&&Array.isArray(_cE[_cL])?_cE[_cL].map(function(w){return w.toUpperCase();}):[];if(_cW.includes(inp))_wsBonusPts=10;}catch(e){}
+  S.sc+=pts+_wsBonusPts;S.correct+=1;
+  if(_wsBonusPts>0)showToast("\uD83C\uDF0D "+esc(inp)+" — Multilingual! +"+pts+" +"+_wsBonusPts+" Bonus");
   if(window.mpGameCh)mpSend("score_update",{score:S.sc,rd:S.rd||0,correct:S.correct||0});
   if(S.wsData.foundWords.length>=S.wsData.allWords.length){
     S.wsData.phase="perfect";clearInterval(tIv);_wsDetachKb();
@@ -12286,10 +12363,11 @@ async function loadGameData(){
 
 if("serviceWorker"in navigator){
   try{
-    const swSrc=`const CACHE='gq-v9';
-/* Phase 99: passiver SW – kein fetch-Handler, blockt NIE Netzwerk-Requests */
+    const swSrc=`const CACHE='gq-v10';
+/* Phase 221: Offline-Modus — network-first mit Cache-Fallback */
 self.addEventListener('install',function(){self.skipWaiting();});
-self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k);}));}).then(function(){return self.clients.claim();}));});`;
+self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.filter(function(k){return k!==CACHE;}).map(function(k){return caches.delete(k);}));}).then(function(){return self.clients.claim();}));});
+self.addEventListener('fetch',function(e){if(e.request.mode==='navigate'||e.request.destination==='document'){e.respondWith(fetch(e.request).then(function(resp){var r=resp.clone();caches.open(CACHE).then(function(c){c.put(e.request,r);});return resp;}).catch(function(){return caches.match(e.request).then(function(r){return r||new Response('<h2>GeoQuest — Offline</h2><p>Keine Verbindung. Bitte zuerst mit Internet starten.</p>',{headers:{'Content-Type':'text/html'}});});}));}});\`;`;
     const blob=new Blob([swSrc],{type:"application/javascript"});
     navigator.serviceWorker.register(URL.createObjectURL(blob),{scope:"./"}).catch(()=>{});
   }catch(e){}
