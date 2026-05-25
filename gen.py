@@ -11420,9 +11420,11 @@ function renderHomeTab(){
     const _startPage=(S.carouselPages&&S.carouselPages[catId]!==undefined&&S.carouselPages[catId]<_nPages)?S.carouselPages[catId]:0;
     const _prevDisabled=`opacity:${_startPage===0?'0.2':'1'};pointer-events:${_startPage===0?'none':'auto'}`;
     const _dots=_nPages>1?`<div class="carousel-dots" style="display:flex;align-items:center;justify-content:center;gap:4px;padding:6px 0 10px;user-select:none"><button class="car-arrow car-arrow-prev" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)-1);})(this);event.stopPropagation()" style="${_arrowStyle};${_prevDisabled}" title="Vorherige Seite">&#9664;</button><span style="display:flex;align-items:center;gap:4px">${Array.from({length:_nPages}).map((_,i)=>`<span class="dot" onclick="(function(d){var w=d.parentElement.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,${i});})(this);event.stopPropagation()" style="display:inline-block;width:12px;height:12px;background:${i===_startPage?'#10b981':'#cbd5e1'};border-radius:50%;cursor:pointer;transition:background .25s;-webkit-tap-highlight-color:transparent"></span>`).join('')}</span><button class="car-arrow car-arrow-next" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)+1);})(this);event.stopPropagation()" style="${_arrowStyle};opacity:${_nPages<=1?'0.2':'1'};pointer-events:${_nPages<=1?'none':'auto'}" title="Nächste Seite">&#9654;</button></div>`:'';
+    /* Phase 218 FIX: bake correct display into HTML — avoids JS-timer race */
     const _track=`<div class="carousel-wrapper">${Array.from({length:_nPages}).map((_,pi)=>{
       const pg=cardArr.slice(pi*_ipp,(pi+1)*_ipp);
-      return`<div class="carousel-page" style="--cc:${_cols};min-width:100%;flex-shrink:0">${pg.join('')}</div>`;
+      const _pgDisp=pi!==_startPage?";display:none":"";
+      return`<div class="carousel-page" style="--cc:${_cols};min-width:100%;flex-shrink:0${_pgDisp}">${pg.join('')}</div>`;
     }).join('')}</div>`;
     return`<div class="accordion-section" data-cat="${catId}">
       <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
