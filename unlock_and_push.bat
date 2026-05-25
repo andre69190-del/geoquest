@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT+SEC: Phase 216 — 52 new [BETA] modes + Deep System Audit. Schritt 1-4 komplett: 9 Universal-Pin, 9 H-L-Beta, 26 Universal-Match, 8 Spezial-Modi. genFixedPoolMatchQ Engine neu. HL_BETA_DATA auf 44 Laender, 9 neue Metriken. getSmartMatch log(0)-Guard. Accordion Single-Open UX. See commit fa55f74 fuer Details."
+git commit -m "DATA: Phase 217 — Wort-Schmiede Datenanreicherung. DE-Woerter: Ø 5.3 → 10.8 pro Stadt (111 Staedte). Wordfreq-basierte Anreicherung + 300 kuratierte Kernwoerter. Min 1 / Max 15. Spiele wie FRANKFURT(15), ISTANBUL(15), AMSTERDAM(15) voll ausgebaut."
 echo.
 echo Pushing to GitHub...
 git push origin main

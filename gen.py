@@ -5506,21 +5506,21 @@ const SPRACHEN_DATA=[
 /* -- Phase 205: WORTSCHMIEDE_DATA -- city-scrabble multilingual word lists -- */
 const WORTSCHMIEDE_DATA=[
   {city:"BERLIN",validWords:{
-    "de":["BEIN","BEIL","BIER","BREI","REIN","LERN","EIL","BIN","LEIB","LEIN","NIL","RIEL"],
+    "de":["BIRNE","ERBIN","LERN","BLEI","BREI","BIER","LIEB","LEIB","REIN","IREN","BEI","BEIL","BIN","BERN","BEIN"],
     "en":["LINE","LINER","REIN","RILE","BIN","RIB","BILE","BRINE","LIEN","NIL","NILE"],
     "es":["BIEN","RIEL","LIBRE","BRIN","NIL","NI","IR"],
     "fr":["LIEN","RIEN","BIEN","BRIN","IL","REIN"],
     "pl":["NIE","ILE","LEN","REN"]
   }},
   {city:"AMSTERDAM",validWords:{
-    "de":["DAME","TRAM","MARS","MAST","DARM","SMART","RAST","STAMM","DRAMA","MATER"],
+    "de":["STAMM","DARM","ATEM","RAST","SAAR","DAME","MAST","STAMME","STRAMM","ARM","RAT","RAMMTE","RAD","AMTES","MAR"],
     "en":["DREAM","STEAM","TRAM","DAMES","MADE","STAR","TRADE","MAST","SMART","MASTER","DRAM"],
     "es":["DRAMA","TRAMA","DAMA","ESTAR","MARES","TEMAS","DEMAS","MATER"],
     "fr":["DRAME","TRAME","MATER","DAME","TRAMES","MARS"],
     "pl":["DAMA","MASA","TAMA","SAM","TAM","DAR","MAT"]
   }},
   {city:"PARIS",validWords:{
-    "de":["SPA","SPAR","RAPS","PAR","RAP","PARS"],
+    "de":["SPAR","RAPS"],
     "en":["PAIR","PAIRS","RASP","SPAR","RAPS","AIRS","SIR","SPA"],
     "fr":["PARIS","PARI","PAIR","RAIS","SPA","SPAR","RAPS"],
     "pl":["PAS","PAR","PIS","SIR"],
@@ -5535,7 +5535,7 @@ const WORTSCHMIEDE_DATA=[
     "pl":["DON","DNO","ONO"]
   }},
   {city:"BARCELONA",validWords:{
-    "de":["ALOE","BAR","CLAN","RABE","REAL","LABOR"],
+    "de":["LERN","ALBANER","LABOREN","BERN","ALBERN","LABERN","ERB","LABORE","BANALE","OEL","ORALEN","LOB","LOBEN","AALEN","OBEN"],
     "en":["BAR","ALONE","BEAR","RACE","LACE","BONE","EARL","LANE","REAL","OCEAN"],
     "es":["BARCA","REAL","CENA","BOLA","CLAN","BAR","CALOR","OBRA","BRONCA"],
     "fr":["CAB","COR","BAL","CALE","CAR","COL","RACE"],
@@ -5549,42 +5549,42 @@ const WORTSCHMIEDE_DATA=[
     "pl":["TOK","KOT","KTO","OTO"]
   }},
   {city:"NEWYORK",validWords:{
-    "de":["WER","KEY","NEW","WOK","YEN"],
+    "de":["KRONE","WERK","KERN","KORN","KREN","YORK","KRON","WERN","KOEN","WER","WKO","KENO"],
     "en":["NEW","ROW","KEY","WON","WORK","KEN","YEW","WORN"],
     "es":["RENO","REY"],
     "fr":["ROY","WOK"],
     "pl":["KREW","ROK","KOR"]
   }},
   {city:"BUENOSAIRES",validWords:{
-    "de":["REIS","BAU","EIS","SAU","EBER","ROSE","UNSER","BASE","NEU","NUR","SAUER"],
+    "de":["BIRNE","NIERE","REISE","ERBIN","UNSERES","BREI","URNE","EINS","REISSEN","BIER","SERBIEN","SAUBERE","BASIEREN","ABREISE","BEISSEN"],
     "en":["BONE","BEAR","SURE","BASE","NOSE","ROSE","OUR","SUN","SEA","BURN","BORN","SORE","ROUSE"],
     "es":["BUENO","AIRE","BESO","SUERO","BASE","SOBRE","SER","SON"],
     "fr":["BON","BRUN","ROBE","SOIE","OURS","BASE","RIEN","BIEN","RUSE"],
     "pl":["SER","NOS","SEN","ROSA","SOBIE","RAS","BAS"]
   }},
   {city:"SYDNEY",validWords:{
-    "de":["DEN","DYNE"],
+    "de":["SEYN","DEN","DES"],
     "en":["YES","DEN","END","DYE","DENY"],
     "es":["SED","DEN"],
     "fr":["DES","NE","SE","EN"],
     "pl":["SYN","SEN"]
   }},
   {city:"ISTANBUL",validWords:{
-    "de":["STAU","LIST","ALT","TAL","BAST","TAUB","BLUT","LAUT","STAB","BAU","IST","TABU"],
+    "de":["STABIL","STAU","LAUT","BLUT","BLAU","LAUB","BAUSTIL","BIS","BIN","INS","STAB","SUBTIL","TAL","BAUST","TABUS"],
     "en":["LIST","STUN","TUB","LUST","AUNT","TUNA","SLIT","SUIT","SAIL","TAIL","BAT","SAT","SIT","SUN","BASIN"],
     "es":["ISLA","LUNA","SUTIL","TINA","TAL","SAL","SITA"],
     "fr":["BUT","BAL","SAUT","LUI","SU","TU","IL","SALUT","AIL","LA"],
     "pl":["LIS","BUT","STAL","LUB","LIST","LUNA","STAN","STU","BAL"]
   }},
   {city:"MUMBAI",validWords:{
-    "de":["MAI","BAUM","UM","MUM"],
+    "de":["BAUM","MAI","BUMM","MIAU","BUAM"],
     "en":["BUM","AIM","MUM"],
     "es":["MIA"],
     "fr":["AMI","MAI"],
     "pl":["MAM","BUM"]
   }},
   {city:"VIENNA",validWords:{
-    "de":["NIE","EIN","NAIV","INN"],
+    "de":["NAIVEN","NAIV","NEIN","NIVEA","INNE","ANNIE","NAIVE","EIN","NENA","ANNE","VENA","VENI"],
     "en":["VAN","VEIN","NINE","INN","VINE","ANNE"],
     "es":["NAVE","VENA","IVA","VAN"],
     "fr":["VIN","VAN","EN","NE","AN"],
@@ -5599,63 +5599,63 @@ const WORTSCHMIEDE_DATA=[
   }},
   /* Phase 209b: 9 additional cities (words validated with Counter) */
   {city:"MADRID",validWords:{
-    "de":["MAD","ARM","RAID","ARID","MID","AID","DRAM","RIM"],
+    "de":["DARM","MIR","DIR","MAI","ARM","RAD","MAR"],
     "en":["MAD","ARM","RAID","ARID","DRAM","AIM","RAM","RIM","MID"],
     "fr":["MAD","RAID","DARD","MARDI"],
     "pl":["DAR","RAD"],
     "es":["MAD","RAID","MIRA","DRAM"]
   }},
   {city:"BOSTON",validWords:{
-    "de":["BOT","SON","BOOT","SNOB","BOTS","BOON","TONS"],
+    "de":["BOOT","TON","NOT","OBST","BONS","SONT"],
     "en":["BOT","SON","SNOB","TONS","BOON","SNOT"],
     "fr":["BOT","SON","BONS","TONS","BOON","SNOB"],
     "pl":["STO","NOS","TON","OTO","BON"],
     "es":["SON","BOT","BONO","TONS","SNOB"]
   }},
   {city:"MANILA",validWords:{
-    "de":["MAN","ALMA","LAMA","MAIN","MANIA","MALIN"],
+    "de":["MAN","MAL","MAI","ALM","ALMAN","MALINA","LAIM","AIMAN","ALAIN","ALINA","MAIL","MALIN","ANIMA","AMINA"],
     "en":["MAN","LAIN","MAIL","NAIL","MAIN","MANIA","ANIMAL"],
     "fr":["MAN","LAIN","MAIL","MAIN","MANIA","ANIMAL"],
     "pl":["LAMA","ALAN","LINA","MALI"],
     "es":["MAN","LIMA","MAIN","MANIA","ANIMAL","MANI"]
   }},
   {city:"DUBLIN",validWords:{
-    "de":["BUND","BLIND","BILD","BIN","UND","DUB"],
+    "de":["BIN","BLIND","BILD","UND","BUND","UDN","BULI"],
     "en":["DUN","BUD","DUB","BUILD","BLIND","BIN","NUB"],
     "fr":["DUN","BUD","BUND","BIN","DUB"],
     "pl":["LUD","NIL","LUB"],
     "es":["DUN","BUD","BUND","DUB"]
   }},
   {city:"OSLO",validWords:{
-    "de":["SOL","SOLO","LOS"],
+    "de":["SOLO","LOS"],
     "en":["SOL","SOLO"],
     "fr":["SOL","SOLO"],
     "pl":["LOS","SOL","OSO"],
     "es":["SOL","SOLO","LOS"]
   }},
   {city:"MIAMI",validWords:{
-    "de":["MAI","MAIM","AIM"],
+    "de":["MAI"],
     "en":["AIM","MAIM","IMAM"],
     "fr":["AMI","MAIM"],
     "pl":["MAM","IMAM"],
     "es":["AMI","MAIM","MIMA"]
   }},
   {city:"BERN",validWords:{
-    "de":["ERB","BEN","REB"],
+    "de":["ERB"],
     "en":["BEN","ERB","REB"],
     "fr":["BEN","NEB","REB"],
     "pl":["NER"],
     "es":["BEN","REB"]
   }},
   {city:"LIMA",validWords:{
-    "de":["MAIL","MALI","ALM","LAM"],
+    "de":["MAL","MAI","ALM","LAIM","MAIL"],
     "en":["MAIL","MALI","AIM","LAM"],
     "fr":["MAIL","AMI","MALI"],
     "pl":["MALI","MILA"],
     "es":["LIMA","MAIL","AMI","MALI","MILA"]
   }},
   {city:"ROMA",validWords:{
-    "de":["OMA","ARM","OAR","MORA"],
+    "de":["ARM","ROM","OMA","MAR"],
     "en":["ARM","OAR","ROAM","MORA"],
     "fr":["ARM","OAR","AMOR","MORA"],
     "pl":["MORA","MARO","RAM"],
@@ -5663,105 +5663,105 @@ const WORTSCHMIEDE_DATA=[
   }},
   /* Phase 209c: 15 additional cities (Counter-validated) */
   {city:"DALLAS",validWords:{
-    "de":["DAS","ALL","ALS","SAAL"],
+    "de":["AAS","DALLA","SAAL","DAS","ALS","ALDA","LADA","DALL"],
     "en":["ALL","SAD","LAD","SALAD"],
     "es":["LAS","SAL","SALA","ALLA"],
     "fr":["AS","LA"],
     "pl":["SALA","LAS","SAL","DAL"]
   }},
   {city:"MONTREAL",validWords:{
-    "de":["REAL","ARM","TAL","ORT","NOT","TON","ROT","LERN","NORM","ALM","ALT","AMT"],
+    "de":["LERN","ATEM","NORMALE","ORT","MOLAREN","MONATE","MAN","MAL","MONA","ROT","AROMEN","OMAN","ARM","RAT","ARTEN"],
     "en":["REAL","TORN","RENT","MEAT","TEAM","RATE","LATE","TALE","MORE","NAME","TONE","NOTE","METAL","MORAL","NORMAL","MEAN","LEARN"],
     "es":["AMOR","RAMO","ROMA","LOMA","TELA","LATE","ROTA","RATO","MONTE","ALTO","LEON","REAL","TREN"],
     "fr":["MONT","NOM","MOT","MORT","RAT","ART","MENT","LENT","TOME","ORME","MER"],
     "pl":["LATO","RANO","TERA","RENT","NORA","TREN"]
   }},
   {city:"CHICAGO",validWords:{
-    "de":["ICH","CIAO","COACH"],
+    "de":["AHOI","AICH","ICH","CHICO","GOCH","OGH","CHICA","CHIO"],
     "en":["CHIC","COG","COACH"],
     "es":["CHICA","CHICO","CAGO"],
     "fr":["CHIC"],
     "pl":["CICHA","GACH"]
   }},
   {city:"SEATTLE",validWords:{
-    "de":["TEE","TAL","SEE","LEST","AST","TEST","SET","ESEL","LESE","ALT"],
+    "de":["ESEL","LASTETE","SATTEL","LASTET","TAL","SATTE","STETE","ALTES","SATT","ALTE","TESTE","STELE","ETATS","TALS","LESE"],
     "en":["SEA","SEE","TEA","EAT","LATE","TALE","TEST","SET","STATE","TASTE","STEAL","STALE","LEAST","SEAT","TEASE"],
     "es":["ESTE","TELA","LATE","SAL","TALES","SET","ESE"],
     "fr":["EST","TAS","SEL","TELE","LES","TES"],
     "pl":["SET","TES"]
   }},
   {city:"ATLANTA",validWords:{
-    "de":["ALT","TAL","AN"],
+    "de":["TAL"],
     "en":["ANT","TAN","NATAL"],
     "es":["ALTA","NATA","LATA"],
     "fr":["TANT","AN"],
     "pl":["LATA","NATA","ALT"]
   }},
   {city:"PRAGUE",validWords:{
-    "de":["GRAU","PUR","ARG","RAU","GAU"],
+    "de":["GRAU","GAR","GRAUE","RAUPE","GERAU","RAUE","AUGE","PERG","GAUE","PRAG","GERA","AUER","ARGE","RUGE","AGER"],
     "en":["PAGE","RAGE","GEAR","URGE","PURE","PEAR","REAP","RAG","GAP","AGE","APE"],
     "es":["PURA","RUEGA","PEGA"],
     "fr":["GARE","PEUR","RAGE","PAGE","GRUE","PAR","EAU"],
     "pl":["GRA","PAR"]
   }},
   {city:"SEOUL",validWords:{
-    "de":["LOS"],
+    "de":["OSEL","LOS","OEL","LOSE","OELS"],
     "en":["SOUL","USE","SUE","LOUSE","SOLE","LOSE"],
     "es":["LOS","USO","SOL"],
     "fr":["SOU","SEUL","LE","LES","OSE"],
     "pl":["SOL","LOS"]
   }},
   {city:"BOGOTA",validWords:{
-    "de":["BOT","GAB","BOOT","TAG","BOG"],
+    "de":["BOOT"],
     "en":["BAT","TAB","GOT","TOO","BOOT","GOAT","BOAT","BOG"],
     "es":["GOTA","BOTO","BOGA","GATO"],
     "fr":["BOT"],
     "pl":["BOTO","BOGA","GOTA","TOGA"]
   }},
   {city:"ORLANDO",validWords:{
-    "de":["RAND","RAD","LAND","DORN","NORD"],
+    "de":["NORD","RAD","RONALDO","ADORNO","DRAN","ROLAND","ARNOLD","RONALD","RADL","NALDO","ADLON","ANDOR","LAND","ARND","DORO"],
     "en":["LAND","LOAD","LORD","DOOR","ODOR","ROAN","LOAN","DARN","AND","NOD"],
     "es":["LORO","ORO","RALO","DONA","ONDA","ARDO","RODA","DOLO"],
     "fr":["DON","NORD","ROND","OR"],
     "pl":["NORA","RANO","LONA","ORAL"]
   }},
   {city:"DENVER",validWords:{
-    "de":["DER","DEN","NERVE","ENDE","REDEN","ERDE","NERD"],
+    "de":["VREDEN","ERDEN","DEREN","REDEN","VERDEN","ENDE","REDE","ERDE","ENEV","DNER","NERV","EDER","EDV","DER","DEN"],
     "en":["RED","END","NEVER","NERVE","DEER","REND","VEND","EVEN"],
     "es":["VER","RED","REN"],
     "fr":["VER","EN","REND"],
     "pl":["DREN"]
   }},
   {city:"VERONA",validWords:{
-    "de":["VOR","VON","NOVA","NERV"],
+    "de":["VON","VORNE","VORAN","VORN","NERV","RAVEN","ERNA","VOR","VENA"],
     "en":["OVER","ROVE","EARN","NEAR","OVEN","RAVE","VAN"],
     "es":["VER","ORA","RENA","NOVA","VENA","RENO","NAVE","VARO","RANO"],
     "fr":["EN","VER","ON","OR"],
     "pl":["NORA","RANO","ERA"]
   }},
   {city:"TORONTO",validWords:{
-    "de":["ROT","TON","NOT","ORT","TORT","TOR"],
+    "de":["ORT","ROT","TON","NOT","ROTT","OTTO"],
     "en":["ROOT","TOOT","NOT","ROT","TORN","TOO"],
     "es":["ROTO","TORO","TONO","NOTO","ORTO","TRONO"],
     "fr":["TON","TORT"],
     "pl":["TOR","OTO","TON","NOT","ROTO"]
   }},
   {city:"NAPOLI",validWords:{
-    "de":["POL","PLAN","PAN","PIN"],
+    "de":["PLAN","ALPIN","ILONA","POLIN","POLN","POLA"],
     "en":["LION","LOIN","PAIN","NAIL","PLAN","PLAIN","OIL","LIP","NAP","PAN","PIN"],
     "es":["PILA","PALO","LIO","PINO","LONA","PLANO","PIO","PAN","PIA"],
     "fr":["LION","PLAN","LOI","POIL","PIN","PLI"],
     "pl":["PALI","LIPA","PLAN","POLA","PION","LINA","PLON"]
   }},
   {city:"PALERMO",validWords:{
-    "de":["ALM","POL","OPAL","REAL","ARM","PRO","PERL","MORAL","OPER"],
+    "de":["MAL","ARM","ROM","OMA","OEL","POLARE","AMPEL","MAR","ALM","RAMPE","EMPOR","LEPRA","MALER","LAMPE","PALMER"],
     "en":["REAL","PALM","POLE","PEARL","MORAL","MORE","ROLE","POEM","ROAM","REAM","PALE","LAME","ROPE","PRO","MAP"],
     "es":["PALO","PELO","AMOR","RAMO","ROMA","MALO","MORA","LOMA","PERLA","LEPRA","REAL","PERA"],
     "fr":["MER","MAL","PAR","POLE","PRO","ROLE","ARME"],
     "pl":["POLA","MORA","ROLA","ROPA","PRO","ALE","LEPA"]
   }},
   {city:"VALENCIA",validWords:{
-    "de":["NAIV","VIA"],
+    "de":["LAIEN","AALEN","ANALE","CELINA","LANCIA","VIEL","NAIV","CALVIN","NIVEA","LIANE","AALE","CELAN","ALENA","LINEA","ELINA"],
     "en":["LACE","VAIN","VEIL","LAVA","ALIEN","CAVE","LINE","NAIL","VAN","ICE","ALE"],
     "es":["VALE","CENA","CANA","CALA","NACE","LAVA","AVE","LEVA","ALIA"],
     "fr":["CIEL","VAN","VAL","AIL","LAIC","CALIN"],
@@ -5769,84 +5769,84 @@ const WORTSCHMIEDE_DATA=[
   }},
   /* Phase 209d: 14 additional cities */
   {city:"MONACO",validWords:{
-    "de":["OMA"],
+    "de":["MAN","MONA","MONO","OMAN","OMA","COMAN"],
     "en":["MAN","MAC","MOO","MOON","CAMO","COMA","CON"],
     "es":["MONO","MANO","CONO","CANO","COMO"],
     "fr":["MON","NOM","MAC","CON"],
     "pl":["MOC","NOC","ONA","ONO","MAC"]
   }},
   {city:"HOUSTON",validWords:{
-    "de":["TON","NOT","SOHN","TUN"],
+    "de":["SOHN","TON","HUT","NOT","HUSO","HUST","HNO","TUNS","UNS","SONT","SUNT","NOTH"],
     "en":["OUT","SHOUT","SHOOT","SNOOT","SOUTH","TON","HOT","HUT","SUN","NUT"],
     "es":["TOS","SON","SOTO","UNO"],
     "fr":["NOUS","TOUS","TON","SON"],
     "pl":["STO","TON","STU","SNO"]
   }},
   {city:"CARACAS",validWords:{
-    "de":["AS"],
+    "de":["SAAR","AAS","ACCRA"],
     "en":["CAR","ARC","SCAR","SAC"],
     "es":["CARA","CASA","SACA","RACA","ARCA","CASCA","RASA","ASAR"],
     "fr":["CAS","CAR","SAC","RAS"],
     "pl":["RASA","SARA"]
   }},
   {city:"ATHENS",validWords:{
-    "de":["HASE","NEST","STEH","HAST","NAH","SAH"],
+    "de":["SAHNE","AHNTE","SENAT","ATHEN","HASEN","HANSE","NAHE","SAHEN","SEHNT","STEHN","HATEN","SEHT","ASTEN","AHNST","NAHES"],
     "en":["HENS","TENS","NETS","HATS","HATE","THAN","THEN","HEAT","SENT","NEAT","EAST","ANT","ASH","SEA"],
     "es":["TES","SAN","SEN","HAS"],
     "fr":["TES","TAS","NET"],
     "pl":["SEN","SET","STAN"]
   }},
   {city:"BEIJING",validWords:{
-    "de":["EIN","BEIN","GIB"],
+    "de":["BEI","BIN","BEIN","EINIG","GEN","JEIN","EIN","IGEN","GEB","BINE","BINI"],
     "en":["BEG","BIG","BINGE","BEING","JIG"],
     "es":["BIEN"],
     "fr":["BIEN"],
     "pl":["BIEG"]
   }},
   {city:"ALGIERS",validWords:{
-    "de":["GLAS","GRAS","SIEG","IGEL","REAL","GASE"],
+    "de":["SEIL","LAGE","GLAS","GIER","GRAS","GAR","LAG","ALGIER","EIS","GAS","AGILER","GLEIS","GISELA","GEL","LAGERS"],
     "en":["LAGS","RAGS","GEAR","RIGS","SIRE","RISE","LIAR","LAIR","RAIL","SAIL","SALE","SEAL","EAR","ERA","GAS","LEG"],
     "es":["GIRA","GILA","RISA","SERIAL","SIGA","LIGA","RIAL","ISLA","SAL","SER"],
     "fr":["GEL","GRIS","LIS","LIRA","RAGE","GARE","LARGE","SERA","SALE","SALIR"],
     "pl":["GRA","LIS","SER","SIL","LIGA","ILE"]
   }},
   {city:"NAIROBI",validWords:{
-    "de":["BAR","BIN"],
+    "de":["BIN","ORBAN","BORNA","ROBIN","BARON","BRIAN","BONI","IRINA","IBAN","IRAN","BINI"],
     "en":["RAIN","IRON","BRAN","BORN","BARON","BOAR","ROAN","BIN","RIB","RAN","AIR"],
     "es":["OBRA","ROBA","RABO","BONI","RIO","OIR","IRAN"],
     "fr":["NOIR","BRIO","BAR","ROI","RIO","BON"],
     "pl":["BAR","RAB","BONI","BORA","RANI"]
   }},
   {city:"SEVILLA",validWords:{
-    "de":["ALLE","SEIL","VIEL","ALL","ALS","VIA","VILLA"],
+    "de":["SEIL","EIS","ALLES","VLIES","VIEL","ALLE","SILLA","VILLA","VALLS","VILS","ELIAS","ELVIS","ILSE","SILVA","ELISA"],
     "en":["SELL","SILL","ILL","ALL","SEAL","SAIL","LIES","VILE","VEIL","VILLA"],
     "es":["VILLA","SILA","SALI","ELLA","SAL","VEA","LEA","ESA","ASI"],
     "fr":["SEL","IL","VAS","LIS","LIA","VIS"],
     "pl":["SILA","LIS","ILE","SAL"]
   }},
   {city:"DETROIT",validWords:{
-    "de":["DORT","TIER","ROTE","ROT","ORT"],
+    "de":["DREI","DOTIERT","ORT","DRITTE","TIER","DIR","TOD","ROT","DOTTER","TOTER","DRITT","ORTE","ROTTE","ORTET","DORT"],
     "en":["DIRT","RIOT","TIRO","TROT","TORE","TOTE","DOTE","RED","DOT","ROT"],
     "es":["RITO","RETO","DOTE","TITO"],
     "fr":["DROIT","DIRE","TOIT","TIRE","TORT","ROI","OR"],
     "pl":["TORT","TO","RET"]
   }},
   {city:"LISBON",validWords:{
-    "de":["SILO","LOB","LOS","BIN"],
+    "de":["BIS","BIN","INS","LOS","LOB","BLOS","INSB","NOBIS","INSO","BISL","SOLI","BONI","BISON","BONS","LINS"],
     "en":["LION","SOIL","BOIL","LOIN","SNOB","BINS","NIB","SON","SIN","ION"],
     "es":["SOL","SIN","LIO","LIS","NOS","BIS"],
     "fr":["LOI","BON","BOL","ILS","LIN","SON"],
     "pl":["LIS","NOS","SIL","BON"]
   }},
   {city:"CARDIFF",validWords:{
-    "de":["DARF"],
+    "de":["DARF","DIR","RAD","FAD"],
     "en":["CARD","FAIR","FAR","FIR","RID","CAD"],
     "es":["RICA","CRIA"],
     "fr":["CAR","FARD","CRI","RIF"],
     "pl":["DAR"]
   }},
   {city:"GENEVA",validWords:{
-    "de":["ENGE","VEGAN","GENE"],
+    "de":["VEGANE","GEN","VAGEN","EVANG","VAGE","ENGE","ENEV","EGEN","VEGAN","VENE","VEEN","VENA","EGV"],
     "en":["GENE","EVEN","VANE","NAVE","VEGAN","AGE","EVE"],
     "es":["NAVE","VENGA","VEAN","VENA"],
     "fr":["GENE","AVE","NAGE"],
@@ -5860,7 +5860,7 @@ const WORTSCHMIEDE_DATA=[
     "pl":["MOC"]
   }},
   {city:"TEHRAN",validWords:{
-    "de":["NAH","RAT","ART","TARN"],
+    "de":["AHNTE","ATHEN","NAHE","RAT","ARTEN","HARTEN","RATEN","HERAN","NAHER","HATEN","HER","REHA","EHRT","AHNT","HERTA"],
     "en":["RENT","NEAR","HEAR","TEAR","HARE","ANTE","RANT","RATE","EARN","HATE","ART","TEN","RAT","HAT"],
     "es":["TREN","ARTE","HARE","ENTRA"],
     "fr":["THE","RAT","NET","RATE","ANTRE"],
@@ -5868,49 +5868,49 @@ const WORTSCHMIEDE_DATA=[
   }},
   /* Phase 209e: 7 additional cities */
   {city:"ORLEANS",validWords:{
-    "de":["ROSE","LASER","SALON","REAL"],
+    "de":["LERN","AROLSEN","SOLAREN","OSEL","LOS","LASERN","OEL","ORALEN","SOLARE","SALERNO","LOSEN","LASEN","OASEN","RASEN","LOSE"],
     "en":["ROSE","SOLE","LANE","LORE","SALE","EARN","LOAN","SOLAR","SORE","LEAN","NEAR","ORAL"],
     "es":["ROSA","SOL","REA","ORA","SENO","SOLER","LASO","REAS"],
     "fr":["ROSE","SOL","AN","OR","EN","NE","SALON","REAL","SERA"],
     "pl":["SEN","NORA","RANO","LAS","LOS","SERA"]
   }},
   {city:"GRANADA",validWords:{
-    "de":["RAD","GAR","RANG"],
+    "de":["GARN","GAR","RAD","DARAN","DRAN","DRAGAN","DRANG","ADANA","GRAD","ARND","RANG","RAND","GARDA"],
     "en":["RAN","AND","RAG","NAG","GRAD","GRAND","DRAG"],
     "es":["GRANADA","GRAN","NADA","GARA","ARDA","GANA","RADA","ANDA","AGAR","DANA"],
     "fr":["RANG","RAD","AN"],
     "pl":["GRA","DAR","RADA","GARA","NAGA"]
   }},
   {city:"BOLOGNA",validWords:{
-    "de":["LOB","BOG"],
+    "de":["LANG","LAG","LOB","OBLAG","BALG","NAGL","BLOG","GLAN","BONGO","LOGO","GOLAN","AGON","GLOBO"],
     "en":["BAG","LOG","BOG","LAB","BAN","GOAL","BOON","LOON","LONG","BOLO"],
     "es":["BOLA","BOLO","BONO","LOBA","LAGO","ALGO"],
     "fr":["BAL","BOL","LONG"],
     "pl":["GOLA","BAL","NOGA","BOLA"]
   }},
   {city:"PORTO",validWords:{
-    "de":["ROT","ORT","TOR","TOP","PORT"],
+    "de":["ORT","ROT","PROTO"],
     "en":["ROT","TOP","POT","TOO","PORT","ROOT"],
     "es":["POR","ORO","OTRO","PORTO"],
     "fr":["TROP","PORT","POT","ROT","OR"],
     "pl":["PORT","TOR","POT"]
   }},
   {city:"CORDOBA",validWords:{
-    "de":["BAD","RAD","COBRA"],
+    "de":["RAD","BORD","BODO","COBRA","BROD","DORO","ORDO","RODA","DRACO"],
     "en":["COB","ROB","CAB","BAD","ROD","BAR","CAR","COBRA","CRAB","BOAR","CORD","DOOR","ODOR","ROAD"],
     "es":["COBRA","BOCA","ROCA","CABO","CORO","CODO","OBRA","ROBA","ARCO","ORO"],
     "fr":["BAC","BAR","ROC","CAB"],
     "pl":["OBA","BRODA","DOBRA","ROBA"]
   }},
   {city:"VALPARAISO",validWords:{
-    "de":["VIA","OPAL","POLAR","SOLAR","OPA","RAPS","VIP"],
+    "de":["PAAR","SAAR","SPAR","LOS","RAPS","PAROLI","VORLAS","PROSA","POLARIS","AAS","ALOIS","PALAIS","VORS","APRIL","PARIS"],
     "en":["SAIL","RAIL","PAIL","SOLAR","POLAR","ALSO","ALAS","LIP","RAP","SAP","PAR","SIP","SOAP","VISA","VIAL","OAR"],
     "es":["VALOR","VALIA","PARAISO","PAIS","RISA","PISA","VISA","SOL","SAL","LIRA","PIO","VIA","PAR","RASA","SALA","ALAS","OLA","ORA"],
     "fr":["VOIR","PAR","POIL","PLI","LIRA","VAL","AIR","RIVAL","PAROI"],
     "pl":["POLA","PAS","LAS","LIS","SOL","ROSA","PARA"]
   }},
   {city:"LIVERPOOL",validWords:{
-    "de":["VIEL","OPER","POOL","LIVE","VOR"],
+    "de":["VIER","VOLLER","VOLLE","OEL","POLLER","POLIER","PILLE","ROLLE","ORVILLE","OLIVER","VIEL","RILLE","LOIPE","ORELL","PILLER"],
     "en":["LIVE","EVIL","VILE","VEIL","LIVER","OLIVE","POOL","LOOP","POLE","ROLE","ROPE","PIER","RIPE","OVER","ROVE","LORE","LOVE","LOVER"],
     "es":["PELO","VER","PIO","LIO","LORO","VIO","PERO","PRO"],
     "fr":["IVRE","POIL","PLI","VOL","VOIR","VER"],
@@ -5918,14 +5918,14 @@ const WORTSCHMIEDE_DATA=[
   }},
   /* Phase 209f: Toledo–Victoria (15 cities) */
   {city:"TOLEDO",validWords:{
-    "de":["TOD","LOT"],
+    "de":["TOD","OEL","TODE"],
     "en":["TOOL","LOOT","DOLE","OLD","LED","DOT","TOO"],
     "es":["TODO","LODO","DOLO","LOTO","LEO"],
     "fr":["LOT","DOT","TEL"],
     "pl":["LOT","TO"]
   }},
   {city:"SOFIA",validWords:{
-    "de":["SO"],
+    "de":["SOFA"],
     "en":["SOFA","OAF","IF","AS","IS"],
     "es":["FOSA","ASI"],
     "fr":["FOI","OS","SA"],
@@ -5939,14 +5939,14 @@ const WORTSCHMIEDE_DATA=[
     "pl":["KIN","NISK"]
   }},
   {city:"BOMBAY",validWords:{
-    "de":["BOY","OMA"],
+    "de":["OMA","BABO"],
     "en":["BOMB","BABY","BOY","MOB","BAY","MAY"],
     "es":["BOMBA","BOYA","AMO"],
     "fr":["BOY"],
     "pl":["OBA","BOB"]
   }},
   {city:"OMAHA",validWords:{
-    "de":["OMA","AHA"],
+    "de":["OMA","OHM"],
     "en":["AHA","HAM","OHM"],
     "es":["AMA"],
     "fr":["OH","MA"],
@@ -5960,63 +5960,63 @@ const WORTSCHMIEDE_DATA=[
     "pl":["MAC","CUMA"]
   }},
   {city:"CALGARY",validWords:{
-    "de":["LAG","ARG","GAR"],
+    "de":["GAR","LAG","ACRYL","CLARA","CARLA","GRAL","ARAL","CARL"],
     "en":["CLAY","RAY","CRY","RAG","CAR","LACY","GALA"],
     "es":["CARA","RACA","CAGA","RAYA","LAGA","GALA"],
     "fr":["CAR","GALA"],
     "pl":["GRA","LAGA","RYGA"]
   }},
   {city:"JAKARTA",validWords:{
-    "de":["ART","RAT"],
+    "de":["RAT","KATJA","KATAR","JAAA","TJA","KARAT","JARA","KAJA"],
     "en":["JAR","ART","RAT","TAR","ARK"],
     "es":["RATA","TARA","TAJA","RAJA","JARA"],
     "fr":["RAT","ART"],
     "pl":["KATA","RATA","TAJA","TAKA","KRAJ","JARA","ARA","RAK"]
   }},
   {city:"SANTIAGO",validWords:{
-    "de":["GAST","SAGT","ANGST","TANGO","OST","NOT","TON","GANS"],
+    "de":["GAST","INS","TON","GAS","SINGT","AAS","SONTAG","SAGT","ANGST","GASTON","NOT","TANGA","SAIGON","NAGT","INSO"],
     "en":["GIANT","STING","SATIN","TANGO","GOAT","GAIN","INTO","ANTI"],
     "es":["TANGO","GASTO","GOTAS","GITANA","TASA","GATA","NATA","GOTA","GANO","SANO"],
     "fr":["GANT","SOIN","SANG","AGI","SON","TAS"],
     "pl":["NOGA","TAN","SAN","STO","OSA","NOS"]
   }},
   {city:"BANGKOK",validWords:{
-    "de":["BANK","GAB","BOG"],
+    "de":["BANK","ABK","AGON"],
     "en":["BANK","BANG","KNOB","BOG","NAB"],
     "es":["BOGA","ANO"],
     "fr":["BON"],
     "pl":["BANK","BOK","BOG"]
   }},
   {city:"SYRACUSE",validWords:{
-    "de":["RAU","AUS","SAU","ASS"],
+    "de":["AUSSER","SAURES","RASSE","SAURE","SAUSE","RUSSE","RAUS","RAUE","REUSS","AUSS","CARUS","SUCRE","SAUER","SACRE","ESSAY"],
     "en":["CURSE","SAUCE","RUSE","SURE","CURE","RAYS","EARS","CARS"],
     "es":["CURSA","USAR","SURA","CESA","ESAS"],
     "fr":["SUCER","CASE","SACS","CARS","RUSE","SUR","SUE"],
     "pl":["SER","RYS"]
   }},
   {city:"PHOENIX",validWords:{
-    "de":["EIN","IHN","PEN","HIN"],
+    "de":["HIN","IPHONE","OHNE","HEINO","IHNE","NIXE","IHN","EIN","HNO","PEIN"],
     "en":["HOPE","OPEN","PINE","PHONE","NIP","PIN","HOP","HEN","PEN","HEX","ION","ONE"],
     "es":["PON","PIO","ION"],
     "fr":["NOIX","PIE","PIN","ION"],
     "pl":["PIN","PION"]
   }},
   {city:"COLOMBO",validWords:{
-    "de":["LOB"],
+    "de":["LOB","COMBO","BLOM"],
     "en":["COOL","BOOM","LOOM","COB","MOB"],
     "es":["LOCO","COLO","COMO","LOMO"],
     "fr":["COL"],
     "pl":["MOC"]
   }},
   {city:"BEIRUT",validWords:{
-    "de":["TIER","TREU","BREI","BEI"],
+    "de":["BREI","BIER","BEI","TIER","ERB","TRIEB","REIBT","BREIT","TREIB","BIRTE","BEITR","BRITE","RUTE","ERBT","BETR"],
     "en":["TUBE","BRUTE","TRUE","RUB","TIE","BIT","BUT","TIRE","RITE","RIB"],
     "es":["RUBI","UBRE"],
     "fr":["BUT","TIRE","TRIE","BRUT"],
     "pl":["BUT","BRUT","TUB","TUR"]
   }},
   {city:"VICTORIA",validWords:{
-    "de":["ORT","ROT","VIA","TOR"],
+    "de":["ORT","ROT","RAT","VICTOR","VATI","VARIO","IVICA","VITRO","VOR","VOIT","VICO"],
     "en":["VICTOR","RATIO","ACTOR","CART","COAT","RIOT","ROTA","TACO","ART","OAR","VAT"],
     "es":["ROTA","RATO","TIRA","RICA","CITA","CORA","VOTA","RITO","TIO","TIA"],
     "fr":["VOIR","ROI","TOI","CAR","RAT","ART","COR"],
@@ -6024,105 +6024,105 @@ const WORTSCHMIEDE_DATA=[
   }},
   /* Phase 209g: Pretoria–Guatemala (15 cities) */
   {city:"PRETORIA",validWords:{
-    "de":["TOR","ORT","RATE","TIER","ROT","POET","OPA","ROTE","PARTEI","PORT"],
+    "de":["ORT","PARIERT","TIER","PORTIER","PARTEI","ROT","RAT","PARTIE","ROTER","PIRAT","PIERROT","PRATER","ARIER","IRRTE","ORTE"],
     "en":["TEAR","PEAR","REAP","PORT","PART","RATE","TARE","ROAR","TIRE","RITE","RAP","PET","PAT","PIT","RAT"],
     "es":["ROPA","PROA","ARTE","PIRA","ROTA","RATO","PERA","TIRA","TIPO"],
     "fr":["PORT","PIRE","TIRE","TROP","TAIRE","PRIE","PAIE","ROI","PAR"],
     "pl":["PORT","TOR","PIRE","TERA","TROP","PIRA","ROPA"]
   }},
   {city:"AUCKLAND",validWords:{
-    "de":["LAND","DANK","LACK","KLAU"],
+    "de":["DANK","KANAL","CALAU","LANDAU","KLAU","ADAC","LAND","AULA","KANU","UND","LAUDA","KUND","NADAL","KUALA","DAUN"],
     "en":["LAND","LACK","CLAN","DUCK","LUCK","LANK","DUAL"],
     "es":["CUNA","NADA","CALA","CADA","DUAL","NULA","LANA"],
     "fr":["NUL","LACA","DUC","CLAN"],
     "pl":["LUD","DAL","KLAN"]
   }},
   {city:"BUDAPEST",validWords:{
-    "de":["BAD","BAU","PEST","STAU","TAUB","PUSTE","AST","SET"],
+    "de":["STAU","TAUBE","STAB","UPDATES","STAUDE","BAUTE","DUBSTEP","STUBE","BAUST","TABUS","PUSTE","BADES","ABTES","BADET","BAUT"],
     "en":["DUST","BEST","BEAST","PASTE","PAST","BATS","TABS","TUB","BUT","SPAT","STEP","SEAT","BEAT"],
     "es":["PESA","ESTA","BASE","USTE"],
     "fr":["PEUT","BUT","PAS","TAS","TUBE","TAPE","BEAU","SAUT","PEAU"],
     "pl":["BUT","PAS","PEST","STU","SAD"]
   }},
   {city:"KINSHASA",validWords:{
-    "de":["SAH","SINK","HASS"],
+    "de":["INS","HIN","KAHN","SASKIA","AAS","KASAN","INKAS","HANSA","HASSAN","HANSI","ANSAH","ISAAK","HAKAN","SAHIN","ANIKA"],
     "en":["SINK","SHIN","SKIN","ASH","HAS","KIN","ASK"],
     "es":["SANA","ASNA","ASIA"],
     "fr":["SANS","ANS"],
     "pl":["KASA","NAS","HAS"]
   }},
   {city:"SINGAPORE",validWords:{
-    "de":["RING","SIEG","SORGE","OPA","ROSA","POSE","GANS","SANG","PERSON","PEIN","PREIS"],
+    "de":["PREIS","EINS","SPIONAGE","SPRINGE","GIER","GOISERN","REIN","IREN","SORGEN","OPENAIR","SPANIER","GARN","SPAREN","RING","GRAS"],
     "en":["RING","SING","PINE","SNIP","SIGN","PAGE","RAGE","GEAR","NOSE","ROSE","SORE","POSE","PERSON","REGION","PIGEON","SPRING","SPONGE","PRISON"],
     "es":["PESA","SANO","RISA","PIRA","ROSA","PRESA","PAGO","SOGA","PONGA","SORNA","OREN"],
     "fr":["POIRE","SOIR","PION","RANG","SANG","RAGE","PIGE","SON","PAGE","SERA"],
     "pl":["SEN","SER","SPOR","NOS","PRO","PAN","PION","SONA","RING"]
   }},
   {city:"BALTIMORE",validWords:{
-    "de":["ALT","TAL","TOR","ORT","ROT","LOT","TIER","LEIM","OBER","BOTE","RAT","TEIL","BREI","BROM","MILBE","ATOM"],
+    "de":["BLEI","BREI","BIER","BROT","LIEB","LEIB","MOBILER","BLAMIERT","ATEM","TEILBAR","ORT","OBERAMT","BEI","BEIL","MIR"],
     "en":["MORE","BORE","TARE","RATE","TALE","LATE","REAL","TILE","MEAT","TEAM","BOIL","TOIL","MOAT","BOAT","BALM","TOMB","BLARE","TAILOR","TRAIL","TRIAL"],
     "es":["AMOR","RAMO","ROMA","LOMA","TELA","LATE","ALTO","RATO","TIRA","RIMA","MIRA","MITO","BATO","ORLA"],
     "fr":["TOME","MORT","MOT","TIRE","TOILE","BOIRE","TIRA","MARI","ORME","TOI","ROI"],
     "pl":["BOLA","LOT","OBA","TERA"]
   }},
   {city:"MARSEILLE",validWords:{
-    "de":["ALL","ALLE","SEIL","REIS","ARME","MEER","RILLE","LEER","ESEL","LESE"],
+    "de":["REISE","ESEL","SEIL","MALEREI","EMAILLE","MEER","MIR","MAL","MARLIES","ALLEM","LEISER","ARIELLE","MAI","MALERS","MISERE"],
     "en":["SELL","SILL","ILL","ALL","SEAL","SALE","MEAL","SAME","LIES","RISE","SIRE","SMELL","SMILE","SLIME","REALM"],
     "es":["SER","RES","SAL","LAS","MIRA","RISA","MES","ELLA","RIMA","MESA","MIEL","MAR","REAL"],
     "fr":["SEL","MERE","MER","SERA","ELLES","ILS","MARE","LIS","AILE","EMAIL","MARI"],
     "pl":["MARS","SERIAL","LAS","LIS"]
   }},
   {city:"VANCOUVER",validWords:{
-    "de":["VOR","VON","NEU","NUR","RAU"],
+    "de":["URNE","VON","VORNE","COVERN","VORAN","RAUEN","VORN","VERONA","RAUE","AUEN","AEUV","NUOVA","EURO","NERV","URAN"],
     "en":["OVER","ROVE","CAVE","COVE","VAN","RUN","RAVE","OVEN","CORE","CORN","CURE","ONCE"],
     "es":["NUEVA","CUEVA","NUEVO","RONCA","ROCA","CENA","NAVE","VEN","CON","VER"],
     "fr":["COEUR","COUR","VEAU","NOUER","RUE","VUE","NOCE","AVEC"],
     "pl":["NORA","CAR"]
   }},
   {city:"CARTHAGE",validWords:{
-    "de":["TAG","ACHT","HART","RAGE","RAT"],
+    "de":["ECHT","GAR","ACHTER","RAT","HAAGER","HAARE","TRAGE","ACHTE","RECHT","CHARTA","AGATHE","RAGTE","GEHT","RACHE","TAGE"],
     "en":["HART","CHART","HATE","HEART","HEAT","GEAR","RAGE","TEAR","TARE","HARE","CART","CARE","RACE","ACHE","GRACE","GREAT"],
     "es":["HACER","TACHA","GATA","RATA","TARA","CARTA","TRAGA","GRATA"],
     "fr":["TACHE","RACE","CHAT","GARE","RAGE","TARE","ARCHE"],
     "pl":["TARC","CHAR","GERA","GRA"]
   }},
   {city:"BRISBANE",validWords:{
-    "de":["BASE","REB","RABEN","BAR","REIS","BIER","SIEB","BREI","BIN","BEIN"],
+    "de":["BIRNE","ERBIN","BREI","EINS","BIER","REIN","IREN","SABBERN","BEI","BIS","BIN","BERN","BEIN","INS","ERB"],
     "en":["BEAR","BARE","BEAN","BANE","BRAIN","BRAN","RAIN","BARN","BABE","BRIBES","EARN","NEAR"],
     "es":["BIEN","BESA","SABE","SERA","SABER","BASE","BEIS"],
     "fr":["BRISE","BIEN","BANI","BRAS","RAIS","BAIS","SERA","BARS"],
     "pl":["SEN","SER","RABE"]
   }},
   {city:"EDINBURGH",validWords:{
-    "de":["BURG","RUND","HUND","HIER","DING","RING","REIN","HURE","DER","DIE","DEN","BUND"],
+    "de":["BIRNE","DREHUNG","REIBUNG","DIEBURG","ERBIN","REIHUNG","DREI","RUND","BREI","BURG","URNE","RUHE","HUND","BIER","RUHIGEN"],
     "en":["BRIDE","BIRD","BURN","RUIN","RIDE","RING","HIDE","HIND","DUNG","DRUG","DIRE","HERD","HIRE","BURG"],
     "es":["RUBI","BIEN","UBRE"],
     "fr":["BRUN","DUR","RIE","NIE","HIER","DRU","GUIDE"],
     "pl":["BRUN","DRU","RUND"]
   }},
   {city:"ROTTERDAM",validWords:{
-    "de":["RAD","MODER","ROTE","ORTE","ROT","ORT","TOR","DORT","MORDE","TOTE","ATOM","ODER"],
+    "de":["DARM","MODERAT","ATEM","ORT","DAME","DERART","TOD","ROT","MARODE","ARM","RAT","ROM","OMA","RAD","MORDET"],
     "en":["ROAM","TEAR","TARE","RATE","DART","MART","TART","TOTE","DOTE","DEAR","DARE","READ","ROAD","TOAD","MATTER","MORE","DOT"],
     "es":["AMOR","RAMO","ROMA","TROTAR","DEMO","REMO","META","RATO","TEMA"],
     "fr":["MORT","MOT","TARD","TORD","RAME","AMER","TOME","ROTE","DORA"],
     "pl":["DAR","MAT","RAM","TART"]
   }},
   {city:"STOCKHOLM",validWords:{
-    "de":["STOCK","HOLM","LOCH","MOOS","KOHL"],
+    "de":["MOOS","LOCH","SOLO","LOS","SCHOKO","KOCHST","SOLCH","HOCKST","KOCHT","LOCKT","OHM","HOCKT","MOLOCH","HOOLS","HOLST"],
     "en":["STOCK","SHOCK","SOCK","MOCK","SOOT","MOOT","LOOT","TOOL","COOL","LOOK","COOK","SLOT","SLOTH","COLT","HOLM"],
     "es":["SOTO","MOTO","LOTO","COLO","LOCO","OLMO","COSO","TOCO"],
     "fr":["MOT","COL","CLOS","SOT","HOST","TOC"],
     "pl":["STO","LOT","KOS","TOK","MOT","SOK","KOC","MOC"]
   }},
   {city:"CAPETOWN",validWords:{
-    "de":["POET","NOT","TON","WEN"],
+    "de":["TON","ACETON","ETWA","NOTE","WATEN","PATEN","NOT","WOTAN","TEPCO","CAPONE","CETA","CONTE","ETW","PONTE","NATO"],
     "en":["CAPE","TOWN","COAT","TAPE","PATE","PANT","NOT","NOW","COW","PAT","POT","TOP","TOW","WON","CAT","COT","OAT"],
     "es":["CAPOTE","PATO","PACO","TOCA","NOTA","CAPO","COPA","CANO","PEON","PETA"],
     "fr":["COTE","POT","TOP","PACTE","PONT","TON","TOPE"],
     "pl":["POT","TO","PON","PAC"]
   }},
   {city:"GUATEMALA",validWords:{
-    "de":["GUT","LAUT","ALM","EGAL","LAMA","AUGE","LAGE","ALTE"],
+    "de":["LAUT","LAGE","ULME","ATEM","MAL","GUT","GEMALT","LAG","UMLAGE","LAUTEM","GUTEM","TAL","LAUTE","ALM","GEL"],
     "en":["GATE","LATE","TALE","MATE","TAME","MEAL","MELT","MALT","GLUT","GALE","LAMA"],
     "es":["GATA","MALA","ALMA","LAMA","LATA","ALTA","MATA","TEMA","META","MAGA","LEMA","TELA","GULA","AGUA"],
     "fr":["MAL","EGAL","MALE","LAME","TALE","ALGUE","GELA"],
@@ -6130,105 +6130,105 @@ const WORTSCHMIEDE_DATA=[
   }},
   /* Phase 209h: Washington–KualaLumpur (15 cities) */
   {city:"WASHINGTON",validWords:{
-    "de":["SONNTAG","NATION","HASTIG","WAHN","TON","NOT","SOHN"],
+    "de":["SOHN","GAST","SONNTAG","SINN","INS","WOHNST","HIN","SONNIG","NAHOST","HASTIG","WAGNIS","TON","GAS","WOHIN","WOHNT"],
     "en":["NOTHING","NIGHT","THING","GHOST","TOWN","SONG"],
     "es":["TANGO","SANTO","NOTAS","HOSTIA","SANO","GATO"],
     "fr":["SOIN","SANG","GANT","OINT"],
     "pl":["STAN","SAN","STO","TON","NOS","NOGA"]
   }},
   {city:"COPENHAGEN",validWords:{
-    "de":["POCHEN","PAGEN","ENGEN","NOCH","OHNE"],
+    "de":["NAHE","ANGEHEN","EPOCHEN","ECHO","EPOCHE","POCHEN","NAHEN","ANGEHE","GEN","GEHEN","AHNEN","HEGEN","GEHE","GENEN","NOCH"],
     "en":["CHEAPEN","CHANGE","PENANCE","OPEN","HOPE","COPE","PEACH"],
     "es":["PONGA","PECA","CENA","PAGO","CENO"],
     "fr":["CHANGE","POCHE","NAGE","PAGE","ANGE"],
     "pl":["NOGA","GEN","PAN","CEN"]
   }},
   {city:"CASABLANCA",validWords:{
-    "de":["SCALA","SAAL","BLAS","AAL"],
+    "de":["AAS","ALABA","CLAAS","BLANCA","SAAL","CLANS","BLANC","ALS","SCALA","BANAL","BLAS","ALBAN","ASLAN","SANAA","ACAB"],
     "en":["CANAL","CABAL","BASAL","SCAN","CLAN","SLAB"],
     "es":["CABALA","BLANCA","CASACA","ANCLA","CANAL","SALA","CASA"],
     "fr":["BLANC","CANAL","CABAL","BANC"],
     "pl":["SALA","BAL","BACA"]
   }},
   {city:"PHILADELPHIA",validWords:{
-    "de":["PILLE","HALLE","LILA","HELL","LIED"],
+    "de":["LIED","HAPPEL","PHILLIP","PILLE","APPELL","LILIE","HALDE","HIPPE","HAIDE","PHILIP","LIPPE","HAIE","HILDE","HIPPIE","LIEH"],
     "en":["PALLID","PEDAL","APHID","HELP","HEAD","HEAL","PILL","LIP"],
     "es":["ALDEA","HADA","PILA","PIEL","IDEAL"],
     "fr":["PILLE","HALLE","AIDE","PLAIE"],
     "pl":["PALI","LIPA","IDEA"]
   }},
   {city:"JOHANNESBURG",validWords:{
-    "de":["BRAUNES","HORNUNG","BOHREN","SAGEN","BOGEN","OHREN","HORN","GANS","ROH"],
+    "de":["NAHRUNG","SAHNE","BOHRUNG","ANHEBUNG","HAUSBERG","NEHRUNG","JAHR","AHNUNG","GENAUSO","JUNG","HASEN","SOHN","BURG","URNE","HANSE"],
     "en":["BURGEON","REASON","BOSUN","ROUGE","SHARE","SNARE","HORNS","BEARS"],
     "es":["GRANOS","BRUJA","JABON","RANGO","HOGAR","SOBRE","ROBAN","SABE"],
     "fr":["SONGE","ROUGE","JAUNE","ANGE","OURS","BASE","SANG"],
     "pl":["BORA","RANO","GEN"]
   }},
   {city:"BUCHAREST",validWords:{
-    "de":["BRAUCHST","TAUCHER","RAUSCH","TAUSCH","SCHUB","BAUSCH","BRUST","SUCHE","ASCHE","BART"],
+    "de":["BUCHE","TRAUBE","BRAUCHT","BRACHTE","STAU","BRAUCHE","BRAUCHST","TAUBE","BESUCHT","ECHT","URSACHE","BUCH","BACH","BRAUCHTE","RUHE"],
     "en":["BUTCHER","SEARCH","BURST","CHEST","TRASH","HEART","CURE","CARE"],
     "es":["TUERCA","SURCA","BUCHE","CARES","TACHE","RUTA","ARTE"],
     "fr":["BRUTE","CHUTE","CARTE","CHER","SAUT","BAC"],
     "pl":["CHAR","BUT","STU"]
   }},
   {city:"WELLINGTON",validWords:{
-    "de":["WOLLEN","NOT","TON","WEN"],
+    "de":["WOLLTEN","GEWINNT","GEWOLLT","WEIN","GEWILLT","WEG","WELT","TONNE","WOLLTE","GEWINN","TOLLEN","WOLLEN","LIEGT","TILGEN","WOLLT"],
     "en":["WELLING","TOWEL","GOWN","WELL","LION","TOLL","LENT"],
     "es":["TELON","LEON","LOTE","NIETO"],
     "fr":["ONGLET","LION","LENT"],
     "pl":["LOT","TON"]
   }},
   {city:"MONTEVIDEO",validWords:{
-    "de":["MOTIVEN","MEDIEN","DIVEN","IDEEN","MODE","MOTIV","MOND"],
+    "de":["IDEE","MOTIVEN","EVENTIM","DEMENTI","DEINEM","VON","MEINTE","MOND","MIETEN","DIENTE","MEIDEN","TOD","MEDIEN","INDEM","MONO"],
     "en":["DEMOTION","EMOTION","VENOM","VIDEO","OMEN","MIND","DOME","VOTE","TIDE"],
     "es":["DEMONIO","VIENTO","MIENTO","MONTE","VIDEO","MEDIO","MENTE"],
     "fr":["MONDE","DEMON","VIDEE","MOT","OIE"],
     "pl":["TO","DNO"]
   }},
   {city:"FRANKFURT",validWords:{
-    "de":["ANRUFT","FRANK","KRAFT","FUNK","RUFT","FRAU","NATUR"],
+    "de":["FRAKTUR","ANRUFT","KNURRT","KAUFT","ANRUF","NATUR","KAUF","RUFT","TRANK","AKUT","KRAUT","KRAFT","FRANK","KNAUF","RAT"],
     "en":["FRANK","KRAFT","RANK","TURF","TANK","FUR","RAN"],
     "es":["FRUTAR","FRUTA","RUTA"],
     "fr":["TURF","ART"],
     "pl":["TUR","KURA"]
   }},
   {city:"BRATISLAVA",validWords:{
-    "de":["VITAL","ATLAS","SALAT","BALSA","AST"],
+    "de":["STABIL","RAST","SAAR","BIS","STAB","RAT","STARB","RABIAT","TAL","BAVARIA","BARISTA","BATAVIA","TRAVAIL","STIRB","AAS"],
     "en":["ASTRAL","BASIL","AVAIL","BRAVA","ALIAS","RAIL","SAIL"],
     "es":["BARATA","TRIBAL","ALABAR","AVISA","SILBA","RISA"],
     "fr":["AVILA","RIVAL","ABRI"],
     "pl":["STAL","LIST","BATA","TARA"]
   }},
   {city:"SACRAMENTO",validWords:{
-    "de":["MONSTER","STROM","MANTRA","MORAST","AROME","ERNST","ROSA"],
+    "de":["SENAT","STERN","MATROSEN","ATEM","RASANTE","ATOMAREN","ATOMARE","RAST","MATROSE","ORT","SAAR","MONATE","ORTSNAME","MAN","MONATS"],
     "en":["ROMANCE","CAMERAS","MONSTER","MANTRA","CREAM","STEAM","SMEAR","ROAST"],
     "es":["MATARON","AMORES","CASAR","MENTAS","SANTO","ROSA","CARO"],
     "fr":["ROMANCE","CAMERA","CARTON","MENTAS","SAC","ARC"],
     "pl":["NOS","STO","TO","RAMA","MASA"]
   }},
   {city:"REYKJAVIK",validWords:{
-    "de":["KRAKE","KAI"],
+    "de":["VIKAR","KRAKE","VIER","IRAK"],
     "en":["JERK","YAK","RAY","ARK"],
     "es":["VIAJE","RIJA","REJA"],
     "fr":["IVRE","VRAI"],
     "pl":["KRAJ","KIJ"]
   }},
   {city:"JERUSALEM",validWords:{
-    "de":["MAUER","LEER","ESEL","LESE","MEER","SAUM","RAUM"],
+    "de":["MAUER","ESEL","EULE","ULME","MEER","MAL","JEMALS","RAUMES","MALERS","ARM","RUM","LESER","EUREM","MAR","ALM"],
     "en":["MEASURE","REALM","RULES","MUSE","SURE","SEAM"],
     "es":["MUERALES","SUMAR","USAR","LEER"],
     "fr":["MESURE","MEULES","JURAS","MERE"],
     "pl":["SER","SAM","RAM"]
   }},
   {city:"STUTTGART",validWords:{
-    "de":["TRUGST","STATT","START","GAST","RAST","STAU"],
+    "de":["STAU","GAST","GRAU","RAST","GUT","GRAS","GAR","TRAUST","STATUR","RAT","STATUT","GAS","TRAUT","STATT","TAUGT"],
     "en":["STRUT","TRUST","START","TART","GUST","TAUT","GUTS"],
     "es":["GRUTA","GUSTA","RUTA"],
     "fr":["GARS","ART"],
     "pl":["STU","TART","START"]
   }},
   {city:"KUALALUMPUR",validWords:{
-    "de":["LUMP","PARK","ULM","RUM","PUMA"],
+    "de":["KLAR","PAAR","MAL","ARM","RUM","KAP","MAR","ALM","PRALL","KRAMP","KAMPL","KAUM","PLURAL","RAUM","LUMPUR"],
     "en":["PULL","MURAL","PLUM","AURAL"],
     "es":["MURAL","PUMA","LUPA","MALA","ALMA"],
     "fr":["MURAL","PALM","MAL","MUR"],
@@ -6236,56 +6236,56 @@ const WORTSCHMIEDE_DATA=[
   }},
   /* Phase 209i: 8 bonus cities with full de/en/es/fr/pl */
   {city:"MELBOURNE",validWords:{
-    "de":["NEU","NUR","RUM","ROBE","OBER","BLUME","LUMEN","NORM"],
+    "de":["NEBEL","LERN","EULE","URNE","ULME","MEER","OBEREN","BLUMEN","BERN","ENORME","ERB","ROM","RUM","BEULEN","OEL"],
     "en":["MORE","BORE","MOLE","MELON","LEMON","ROBE","ROLE","RULE","LUMBER","RUMBLE","NUMBER"],
     "es":["MENOR","MOLER","REMO","NOBLE","RUMBO","NUMERO"],
     "fr":["MER","MURE","ROBE","LUNE","LOUE","NOMBRE"],
     "pl":["NUMER","MUREN","ROMB"]
   }},
   {city:"MANCHESTER",validWords:{
-    "de":["MARSCH","RAST","NEST","HAST","STERN","MAST","MACHT","NACHT","HERAN"],
+    "de":["SAHNE","NACHT","AHNTE","SENAT","ATHEN","RECHTEN","HASEN","MACHTEN","ECHT","MANCHER","RECHNET","HANSE","NAHE","MANCHES","STECHEN"],
     "en":["MARCH","CHARM","SHARE","STARE","MATCH","RANCH","CHEST","CREAM","STEAM","SMEAR","CHANT","TEACHER"],
     "es":["TREN","CENA","MENTA","MENTE"],
     "fr":["MARCHE","CHARME","CHER","MANCHE","CRANE","MER","NET"],
     "pl":["SEN","SER","TERA","CHAN"]
   }},
   {city:"MILANO",validWords:{
-    "de":["MAN","ALM","LOMA","AMIN"],
+    "de":["MAN","MAL","MONA","MAI","OMAN","OMA","ALM","ILONA","LAIM","MOLINA","MOIN","NAOMI","MAIL","MONI","MALIN"],
     "en":["MAN","LAIN","MAIL","NAIL","MAIN","OIL","LOAN","LOIN"],
     "es":["LONA","MANO","MALO","LIMA","LOMA","LIMO"],
     "fr":["LION","LOI","MON","MAN","NOM"],
     "pl":["ONA","LINA","MALI","MILA"]
   }},
   {city:"SHANGHAI",validWords:{
-    "de":["HAIN","GANS","SANG","AHN"],
+    "de":["INS","HIN","GAS","GHANAS","AAS","HAHNS","HANSA","HANSI","ANSAH","SAHIN","SIGNA","INSG","HAGIA","IHN","HAAG"],
     "en":["SHIN","HANG","GAIN","SHAG","NIGH","SIGH","SANG","GNASH"],
     "es":["HAN","SIGAN","ANSIA"],
     "fr":["SAIN","ANS","GAIN"],
     "pl":["NAGA","HANG"]
   }},
   {city:"HELSINKI",validWords:{
-    "de":["HEIL","KEIL","LINKE","KNIE"],
+    "de":["LINSE","INSEL","SEIL","EINS","KEIL","INS","HIN","LINKES","LINIE","EIS","KEINS","LINKE","KNIES","INKL","KNIE"],
     "en":["SKIN","SILK","SINK","LINK","SLINK","HIKE","LIKE","KILN"],
     "es":["SIN","NIL"],
     "fr":["SKI","LIS","ILS","LIN","NIL","LIEN"],
     "pl":["SEN","SILNIK","KIN","LIS","NIL"]
   }},
   {city:"PALMA",validWords:{
-    "de":["PALM","ALM","LAMA"],
+    "de":["MAL","ALM"],
     "en":["PALM","LAMP","LAMA","MAP","LAP","PAL"],
     "es":["PALMA","MAPA","PALA","LAMA","ALMA"],
     "fr":["MAL","PAL","LAM"],
     "pl":["PALA","MAPA","LAMA"]
   }},
   {city:"ADELAIDE",validWords:{
-    "de":["ADEL","IDEE","EILE","LIED","EDEL","IDEAL"],
+    "de":["IDEE","LIED","IDEALE","LEIDE","DIELE","EDLE","EILE","LEID","AALE","ADELA","IDEAL","LADE","EDDIE","EDEL","ADELE"],
     "en":["IDEAL","AIDED","DALE","LAID","DIAL","AIDE","IDEA","ALEE"],
     "es":["IDEA","IDEAL","ALDEA"],
     "fr":["AIDE","IDEAL","IDEE","AILE","LAIDE"],
     "pl":["DALE","ILE","IDEA"]
   }},
   {city:"BRISTOL",validWords:{
-    "de":["ROST","LIST","BIST","ORT","BIS","ROT","LOS"],
+    "de":["BROT","ORT","BIS","LOS","ROT","STROBL","TIROLS","LOB","STIRB","OBRIST","TIROL","BIST","LOBT","ORTS","BISTRO"],
     "en":["BOIL","TOIL","SOIL","RIOT","STIR","BITS","BIT","BISTRO","BROIL","ORBIT"],
     "es":["SOL","LOS","BISTRO","LIBRO"],
     "fr":["LIS","BOL","LOT","BIS","TRIO"],
