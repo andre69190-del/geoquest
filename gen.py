@@ -8132,8 +8132,9 @@ function _mkPinQ(DATA){
     if(!d||!d.items||!d.items.length)return null;
     var idx=~~(rng()*d.items.length);
     var item=d.items[idx];
-    return{type:"uk_pin",subj:item.n,lat:item.lat,lng:item.lng,
-      prompt:d.prompt,cat:cat,itemIdx:idx};
+    return{type:"uk_pin",subj:item.n,targetLat:item.lat,targetLng:item.lng,
+      ans:item.n,prompt:d.prompt,cat:cat,
+      lid:"mkp_"+cat+"_"+idx,cc:null};
   };
 }
 function _mkHL(DATA){
