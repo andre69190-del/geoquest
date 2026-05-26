@@ -2905,7 +2905,33 @@ const MODES=[
     {id:"uk_tiere_biolumineszenz",icon:"\u{1F4A1}",title:"[BETA] Biolumineszenz",           group:"tiere",prompt:"Wer leuchtet so?",                                 desc:"Gl\u00fchwurmchen, Anglerfisch und mehr"},
     {id:"uk_tiere_anatomie",      icon:"\u{1F9B4}",title:"[BETA] Skelett-Anatomie",         group:"tiere",prompt:"Welches Tier hat diese anatomische Besonderheit?",  desc:"Halswirbel, hohle Knochen, Zahnrekorde"},
     {id:"uk_tiere_laute",         icon:"\u{1F50A}",title:"[BETA] Tierlaute",                 group:"tiere",prompt:"Welches Tier macht diesen Laut?",                  desc:"R\u00f6hren, heulen, trompeten, zirpen"},
-    {id:"uk_tiere_sinne",         icon:"\u{1F441}",title:"[BETA] Sinnesleistungen",          group:"tiere",prompt:"Welches Tier hat diese Sinnesf\u00e4higkeit?",    desc:"UV-Sicht, Infraschall, Elektrorezeption"}
+    {id:"uk_tiere_sinne",         icon:"\u{1F441}",title:"[BETA] Sinnesleistungen",          group:"tiere",prompt:"Welches Tier hat diese Sinnesf\u00e4higkeit?",    desc:"UV-Sicht, Infraschall, Elektrorezeption"},
+    {id:"ws_tiere_schnabeltier",icon:"\u{1F9A6}",title:"[BETA] WS: Schnabeltier",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SCHNABELTIER!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
+    {id:"ws_tiere_gottesanbeterin",icon:"\u{1F99F}",title:"[BETA] WS: Gottesanbeterin",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus GOTTESANBETERIN!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
+    {id:"ws_tiere_komodowaran",icon:"\u{1F98E}",title:"[BETA] WS: Komodowaran",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus KOMODOWARAN!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+    {id:"ws_tiere_korallenriff",icon:"\u{1F420}",title:"[BETA] WS: Korallenriff",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus KORALLENRIFF!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
+    {id:"ws_tiere_silberruecken",icon:"\u{1F98D}",title:"[BETA] WS: Silberr\u00fccken",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SILBERRUECKEN!",desc:"Anagramm-R\u00e4tsel \u2014 13 Buchstaben"},
+    {id:"ws_tiere_wanderfalke",icon:"\u{1F985}",title:"[BETA] WS: Wanderfalke",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus WANDERFALKE!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+    {id:"ws_tiere_mauersegler",icon:"\u{1F426}",title:"[BETA] WS: Mauersegler",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus MAUERSEGLER!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+    {id:"ws_tiere_baertierchen",icon:"\u{1F43B}",title:"[BETA] WS: B\u00e4rtierchen",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BAERTIERCHEN!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
+    {id:"ws_tiere_lederschildkroete",icon:"\u{1F422}",title:"[BETA] WS: Lederschildkr\u00f6te",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus LEDERSCHILDKROETE!",desc:"Anagramm-R\u00e4tsel \u2014 17 Buchstaben"},
+    {id:"ws_tiere_pfeilgiftfrosch",icon:"\u{1F438}",title:"[BETA] WS: Pfeilgiftfrosch",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus PFEILGIFTFROSCH!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
+    {id:"uk_tiere_darwin_finken",icon:"\u{1F426}",title:"[BETA] Darwins Finken",group:"tiere",prompt:"Auf welcher Insel lebt dieser Finke?",desc:"Gal\u00e1pagos-Spezialisten \u2014 20 Darwinfinken"},
+    {id:"uk_tiere_schutzgebiete",icon:"\u{1F333}",title:"[BETA] Schutzgebiete",group:"tiere",prompt:"Wo liegt dieses Schutzgebiet?",desc:"Von Serengeti bis Great Barrier Reef"},
+    {id:"uk_tiere_zoos",icon:"\u{1F98D}",title:"[BETA] Zoos der Welt",group:"tiere",prompt:"Wo liegt dieser Zoo?",desc:"Die ber\u00fchmtesten Zoos auf 5 Kontinenten"},
+    {id:"uk_tiere_nutztier_rassen",icon:"\u{1F404}",title:"[BETA] Nutztier-Rassen",group:"tiere",prompt:"Wo wurde diese Rasse gez\u00fcchtet?",desc:"Wagyu bis Merino \u2014 Ursprungsl\u00e4nder der Rassen"},
+    {id:"uk_tiere_fossilien",icon:"\u{1F9B4}",title:"[BETA] Fossil-Fundst\u00e4tten",group:"tiere",prompt:"Wo liegt diese Fossil-Fundst\u00e4tte?",desc:"Von Solnhofen bis Hell Creek \u2014 Dino-Ausgrabungen"},
+    {id:"uk_tiere_arktis_antarktis",icon:"\u{1F9CA}",title:"[BETA] Arktis vs. Antarktis",group:"tiere",prompt:"Lebt dieses Tier in der Arktis oder Antarktis?",desc:"Eisb\u00e4r vs. Kaiserpinguin \u2014 Pol-Zuordnung"},
+    {id:"uk_tiere_forscher_eponyme",icon:"\u{1F52C}",title:"[BETA] Forscher-Eponyme",group:"tiere",prompt:"Nach welchem Forscher ist dieses Tier benannt?",desc:"Humboldt-Pinguin, Spix-Ara und Co."},
+    {id:"uk_tiere_pelagial",icon:"\u{1F40B}",title:"[BETA] Pelagial-Zonen",group:"tiere",prompt:"In welcher Tiefenzone lebt dieses Meerestier?",desc:"Epi- bis Abyssopelagial \u2014 Tiefsee-Zuordnung"},
+    {id:"uk_tiere_wuesten_spezialisten",icon:"\u{1F42B}",title:"[BETA] W\u00fcsten-Spezialisten",group:"tiere",prompt:"In welcher W\u00fcste lebt dieses Tier?",desc:"Kamel bis Roadrunner \u2014 W\u00fcsten-Fauna"},
+    {id:"uk_tiere_gift_hotspots",icon:"\u2620",title:"[BETA] Gift-Hotspots",group:"tiere",prompt:"Woher kommt dieses Giftier?",desc:"Inland-Taipan, Blauring-Oktopus und Co."},
+    {id:"uk_tiere_migranten",icon:"\u{1F5FA}",title:"[BETA] Tier-Migranten",group:"tiere",prompt:"Welche Route ist das Ziel dieses Wandertieres?",desc:"Aal, Monarchfalter, Storch \u2014 Zugwege der Welt"},
+    {id:"hl_tiere_haustier_dichte",icon:"\u{1F404}",title:"[BETA] H/L Rinder-Dichte",group:"tiere",prompt:"Welches Land hat mehr Rinder je 100 Einwohner?",desc:"Rinder je 100 Einwohner \u2014 Uruguay bis Japan"},
+    {id:"uk_pferde_rassen",icon:"\u{1F40E}",title:"[BETA] Pferderassen",group:"tiere",prompt:"Wo wurde diese Pferderasse gez\u00fcchtet?",desc:"Von Shire bis Lipizzaner \u2014 Ursprungsorte der Rassen"},
+    {id:"uk_pferde_fachbegriffe",icon:"\u{1F3A8}",title:"[BETA] Pferde-Fachbegriffe",group:"tiere",prompt:"Was bezeichnet dieser Fachbegriff beim Pferd?",desc:"Fellfarben und Reitlehre \u2014 das Pferde-ABC"},
+    {id:"hl_pferde_stockmass",icon:"\u{1F4CF}",title:"[BETA] H/L Stockma\u00df",group:"tiere",prompt:"Welches Pferd hat ein gr\u00f6\u00dferes Stockma\u00df?",desc:"Widerristhohe in cm \u2014 Falabella bis Shire"},
+    {id:"ws_pferde_fluesterer",icon:"\u{1F40E}",title:"[BETA] WS: Pferdefl\u00fcsterer",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SHIREHORSE!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben"}
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
@@ -2932,10 +2958,113 @@ const MODE_CATS={
     "uk_tiere_faehrten","uk_tiere_architekten","uk_tiere_tarnung",
     "uk_tiere_ernaehrung","uk_tiere_symbiose","uk_tiere_tauchtiefe",
     "uk_tiere_mimikry","uk_tiere_metamorphose","uk_tiere_biolumineszenz",
-    "uk_tiere_anatomie","uk_tiere_laute","uk_tiere_sinne"
+    "uk_tiere_anatomie","uk_tiere_laute","uk_tiere_sinne",
+    "ws_tiere_schnabeltier","ws_tiere_gottesanbeterin","ws_tiere_komodowaran",
+    "ws_tiere_korallenriff","ws_tiere_silberruecken","ws_tiere_wanderfalke",
+    "ws_tiere_mauersegler","ws_tiere_baertierchen","ws_tiere_lederschildkroete",
+    "ws_tiere_pfeilgiftfrosch","uk_tiere_darwin_finken","uk_tiere_schutzgebiete","uk_tiere_zoos","uk_tiere_nutztier_rassen","uk_tiere_fossilien","uk_tiere_arktis_antarktis","uk_tiere_forscher_eponyme","uk_tiere_pelagial","uk_tiere_wuesten_spezialisten","uk_tiere_gift_hotspots","uk_tiere_migranten","hl_tiere_haustier_dichte","uk_pferde_rassen","uk_pferde_fachbegriffe","hl_pferde_stockmass","ws_pferde_fluesterer"
   ],cost:0},
 };
 
+/* === Phase 227 Part 3: Tier-Wort-Schmiede (10 Tiere, words verified letter-by-letter) === */
+const TIER_WS_DATA={
+  schnabeltier:{word:"SCHNABELTIER",validWords:{
+    de:["TIER","BIER","HIER","SCHEIN","NICHTE","LICHT","RECHT","NICHT","BEREIT","BREITE",
+        "HEREIN","REIN","BEIN","LEIN","STEIN","ELCH","HEITER","LEITER","ERNTE","ENTE",
+        "BLECH","RICHTE","SICHERT","BEICHTEN","LACHE"],
+    en:["LITER","RAIN","TRAIL","SNAIL","SAINT","LINE","SHINE","SHRINE","LACE","SLICE",
+        "STALE","STEAL","SLAIN","CERTAIN","ALERT","ALTER","HIRE","BELT","BILE","CHAIN",
+        "SHALE","IRATE","STIR","LAIR","REIN"]}},
+  gottesanbeterin:{word:"GOTTESANBETERIN",validWords:{
+    de:["GOTT","BOTE","BOTEN","NOTEN","NIETE","RENTE","STERNE","TIGER","TROST","TENOR",
+        "BITTEN","TINTE","SEITE","BRATEN","BITTER","BITTE","NETTO","RATEN","GETROST",
+        "GRABEN","GROTTE","TORE","STERBEN","SORGE","ROTE"],
+    en:["STONE","ROTTEN","GOTTEN","BITTEN","BONE","TENOR","STORE","SNORE","STERN","NOTES",
+        "INNER","INERT","RETINA","INSANE","REASON","SENATE","ROTATE","ORIENT","RATION",
+        "NATION","SATIRE","SIREN","TIGER","INTENSE"]}},
+  komodowaran:{word:"KOMODOWARAN",validWords:{
+    de:["OMA","MOND","WAND","KORAN","KARMA","DANK","RANK","DRAMA","MORD","RADON",
+        "WORAN","DARAN","KOMA","NORM","WARD","WARM","DARM","NOMA","MONA"],
+    en:["WORD","WORN","WORM","WARD","WARM","MARK","DARK","MOAN","ROAD","DOOM",
+        "ROOM","WOOD","MOON","ROAN","DORM","NORM","RANDOM","MORON","MANOR","NOOK"]}},
+  korallenriff:{word:"KORALLENRIFF",validWords:{
+    de:["KOFFER","OFFEN","FALLEN","KNALL","ROLLEN","FALLE","LOKAL","FINAL","KORAN",
+        "FINK","LINK","RILLE","LINKER","KERN","IREN","REIN","ELF","FLAIR","FLANKE","FRANK"],
+    en:["RIFLE","RILE","FILL","FINE","FIRE","FAIL","FLAIR","FRILL","REFILL","FRAIL",
+        "FLORAL","RINK","LINK","FINAL","LINER","ELFIN","RIFE","KNOLL","FERN","FOIL",
+        "LORE","ROLE","LOIN","LION","ORAL","FRANK","FLANK"]}},
+  silberruecken:{word:"SILBERRUECKEN",validWords:{
+    de:["SILBER","RUCKEN","BIRKE","BIRKEN","NICKEL","SICKER","LINSE","REBUS","SEILE",
+        "REISEN","BEINE","LECKER","SEINER","LIEBE","KURBEL","KURSE","BLICKE","RUBEL",
+        "RUBIN","LINKER","BLINKER","KEULEN"],
+    en:["SNICKER","BICKER","BUNKER","LUCKIER","RESCUE","RULE","CURSE","NURSE","NICER",
+        "SINCE","RUIN","RUBLE","LURE","UNCLE","CLUE","LICK","SLICK","SLICKER","INSURE",
+        "BULKIER","LINKER","SILK"]}},
+  wanderfalke:{word:"WANDERFALKE",validWords:{
+    de:["WANDER","FALKE","FLANKE","ADLER","WALD","ANKER","RANKE","RANK","FRANK","FLAKE",
+        "KADER","WAND","LADER","NADEL","LANDER","RANDE","FALKEN","ANDER","WARE","RADE",
+        "FARN","WALE","ELEND","KANDARE"],
+    en:["WANDER","WARDEN","FLAKE","FRANK","FLANK","ANKLE","WANED","FLANKED","RANKLED",
+        "FERAL","NAKED","LANDER","DWARF","DRAKE","RAKED","FLARED","AWAKEN","EARNED"]}},
+  mauersegler:{word:"MAUERSEGLER",validWords:{
+    de:["RASER","LAGER","REGAL","REGEL","SEGLER","MALER","SERUM","MEERES","SAGE","MAGER",
+        "GALERE","LAUGE","SEGEL","MUSE","GRAL","GARE","LUGE","GREUEL","EURE","ERLAG"],
+    en:["LAGER","REGAL","LARGE","GLARE","SUGAR","EAGER","LURE","RUSE","URGE","SURGE",
+        "SMEAR","GRUEL","RULER","RULES","SLUR","MURAL","GLEAM","LASER","GALES","ERASE",
+        "EAGLE","REALM","MEAL","MALE","EARL","SEAM","MARGE"]}},
+  baertierchen:{word:"BAERTIERCHEN",validWords:{
+    de:["TIER","TIERE","HIER","BIER","NICHTE","RICHTE","NICHT","REITER","BREITE","BEREIT",
+        "HEITER","HEREIN","RECHT","REIN","BEIN","EINE","REITEN","BEICHTEN","ERREICHEN",
+        "BERICHTEN","RICHTEN","ERNTE","BRATEN","BART"],
+    en:["BARRIER","CHARTER","CHAIN","CRANE","CERTAIN","BEAR","BARE","HARE","CARE","CHAIR",
+        "RAIN","TRAIN","TERRAIN","RETAIN","INERT","HIRE","ENTIRE","BREACH","TEACH","REACH",
+        "RICH","BIRTH","BERTH","HEART","EARTH","ACHE","RICHER"]}},
+  lederschildkroete:{word:"LEDERSCHILDKROETE",validWords:{
+    de:["HELD","DICH","SICH","SCHILD","LOCKE","DRECK","STOCK","ROCK","ROTE","ROST",
+        "HOLDE","RIESE","LIEDER","LEDER","SEIDE","KREIDE","RECHT","REICHT","LEITER",
+        "LECKER","DICHTER","DICKER","KLEID","KLEIDER","DIREKT","SCHREIE"],
+    en:["ROCK","STOCK","RIDER","LORE","ELITE","OLDER","SHIELD","CHOIR","HIKE","STRIKE",
+        "DIKE","DISK","EDICT","SLED","SLID","SLICE","SLIDE","SLOTH","CLOSER","ELDER",
+        "ELDEST","DIESEL","CREDIT","CREST","DESK","THICK","DOCKET","LICK","SLICK",
+        "STICKER","DIRK","RELIC","HEIST","CLOTHE","CLOTHES"]}},
+  pfeilgiftfrosch:{word:"PFEILGIFTFROSCH",validWords:{
+    de:["FROSCH","PFEIL","GIFT","GIER","SCHLIFF","STICH","PILS","GRIFF","SCHRIFT",
+        "TRIFT","IGEL","PECH","REICH","SPIEL","FEIG","OPFER","FISCH","GLICH",
+        "GIPFEL","PROFIT","PROFIL","GOLF","GRIPS","OFT","TOPF","SPORT"],
+    en:["FROG","LIFT","GRIFT","FLIP","SCRIPT","CRISP","LISP","LOFT","SOFT","SPORT",
+        "SPOIL","SPORE","GRIPE","GLITCH","FILTH","STIFF","CLIFF","RIFE","LIFE","FIFE",
+        "PILOT","PROFIT","GRIEF","GHOST","CHOIR","SPLIT","SPRIG","FROLIC","GOLF","PORCH"]}},
+  pferde_fluesterer:{word:"SHIREHORSE",validWords:{
+    de:["EHRE","EHER","ROSE","HOSE","REISE","RIESE","REIHE","SHIRE","SHORE",
+        "SERIE","SIRE","HIER","HEER","HERR","IRRE","SEHER","ESSER","EROS","HOSE"],
+    en:["HORSE","SHORE","ROSE","HOSE","HIRE","SIRE","SHEER","HEROES","SHOE",
+        "SHIRE","HERE","SERIES","HIRER","SHIRES","SHEERS","HEIR","HEIRS","HIRES","OSIER","ROSHI"]
+  }}
+};
+function initTierWortSchmiede(key){
+  clearInterval(tIv);_wsDetachKb();
+  var entry=TIER_WS_DATA[key];
+  if(!entry||!entry.validWords){console.warn("[GeoQuest] TierWS missing:"+key);S.ph="menu";render();return;}
+  var userLang=S.language||localStorage.getItem("gq_lang")||"en";
+  var wsLang=_WS_LANGS.has(userLang)?userLang:"en";
+  var raw=entry.validWords[wsLang];
+  var hasOwn=Array.isArray(raw)&&raw.length>0;
+  var actualLang=hasOwn?wsLang:"en";
+  var src2=hasOwn?raw:(entry.validWords["en"]||[]);
+  var words=src2.map(function(w){return w.toUpperCase();}).filter(function(w){return w.length>=3;});
+  if(!words.length){console.warn("[GeoQuest] TierWS no words:"+key);S.ph="menu";render();return;}
+  var usingFallback=actualLang!==userLang;
+  S.wsData={tierWsKey:key,city:entry.word,lang:actualLang,usingFallback:usingFallback,
+    allWords:words,foundWords:[],input:"",phase:"playing",timeLeft:_WS_TIMER,shakeTs:0};
+  S.gameStartTime=Date.now();S.ph="playing";
+  tIv=setInterval(function(){
+    if(!S.wsData||S.wsData.phase!=="playing"){clearInterval(tIv);return;}
+    S.wsData.timeLeft=Math.max(0,(S.wsData.timeLeft||0)-1);
+    if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();}
+    render();
+  },1000);
+  _wsAttachKb();
+}
 /* Phase 28: New real-data mode generators */
 function genCurrRealQ(){
   if(!CURR_REAL||!CURR_REAL.length)return null;
@@ -7827,6 +7956,82 @@ const KULTUR_DATA={
     {n:"Eisbär (Franz-Josef-Land, Russland)",lat:80.5,lng:52.0}
   ],
 
+  /* === Phase 227 Part 4: Tiere Spezial Pin-Daten (5 Modi) === */
+  tiere_darwin_finken:{prompt:"Auf welcher Gal\u00e1pagos-Insel lebt dieser Fink?",items:[
+    {n:"Mangrovenfinke",lat:-0.94,lng:-90.97},{n:"Gro\u00dfer Kaktusfinke",lat:-1.39,lng:-89.67},
+    {n:"Genovesa-Grundfinke",lat:0.33,lng:-89.95},{n:"Spechtsfinke",lat:-0.74,lng:-90.31},
+    {n:"Mittelklein-Grundfinke",lat:-1.29,lng:-90.48},{n:"Vegetarierfinke",lat:-0.37,lng:-91.55},
+    {n:"Kleiner Baumfinke",lat:-0.82,lng:-90.05},{n:"Pinz\u00f3n-Warblerfink",lat:-0.63,lng:-90.67},
+    {n:"Marchena-Grundfinke",lat:0.02,lng:-90.47},{n:"San-Crist\u00f3bal-Grundfinke",lat:-0.83,lng:-89.43},
+    {n:"Dunkler Baumfinke",lat:-0.94,lng:-90.97},{n:"Isabela-Kaktusfinke",lat:-0.94,lng:-90.97},
+    {n:"Espa\u00f1ola-Kaktusfinke",lat:-1.39,lng:-89.67},{n:"Fernandina-Grundfinke",lat:-0.37,lng:-91.55},
+    {n:"Floreana-Baumfinke",lat:-1.29,lng:-90.48},{n:"Santa-Fe-Kaktusfinke",lat:-0.82,lng:-90.05},
+    {n:"Cocos-Finke",lat:5.53,lng:-87.07},{n:"Kleiner Grundfinke",lat:-0.74,lng:-90.31},
+    {n:"Mittelgrundfinke",lat:-0.74,lng:-90.31},{n:"Gro\u00dfschnabelfinke",lat:-0.74,lng:-90.31}
+  ]},
+  tiere_schutzgebiete:{prompt:"Wo liegt dieses Schutzgebiet?",items:[
+    {n:"Serengeti",lat:-2.33,lng:34.83},{n:"Yellowstone",lat:44.59,lng:-110.54},
+    {n:"Kruger-Nationalpark",lat:-23.99,lng:31.55},{n:"Gal\u00e1pagos",lat:-0.83,lng:-89.42},
+    {n:"Okavango-Delta",lat:-19.30,lng:22.87},{n:"Pantanal",lat:-18.00,lng:-57.00},
+    {n:"Great Barrier Reef",lat:-18.29,lng:147.70},{n:"Sundarbans",lat:21.94,lng:89.19},
+    {n:"Masai Mara",lat:-1.49,lng:35.14},{n:"Bialowieza-Urwald",lat:52.70,lng:23.88},
+    {n:"Sokotra",lat:12.47,lng:54.00},{n:"Daintree-Regenwald",lat:-16.17,lng:145.42},
+    {n:"Vald\u00e9s-Halbinsel",lat:-42.47,lng:-64.18},{n:"Kongo-Becken",lat:-0.23,lng:23.65},
+    {n:"Borneo-Regenwald",lat:1.00,lng:114.00},{n:"Himalaya-Nationalpark",lat:31.52,lng:78.11},
+    {n:"Nairobi-Nationalpark",lat:-1.36,lng:36.85},{n:"Patagonien",lat:-50.94,lng:-72.52},
+    {n:"Amazonas-Regenwald",lat:-3.47,lng:-62.22},{n:"Madagaskar-Regenwald",lat:-18.91,lng:47.54}
+  ]},
+  tiere_zoos:{prompt:"Wo liegt dieser Zoo?",items:[
+    {n:"Zoologischer Garten Berlin",lat:52.51,lng:13.34},{n:"San Diego Zoo",lat:32.74,lng:-117.15},
+    {n:"Singapore Zoo",lat:1.40,lng:103.79},{n:"Chester Zoo",lat:53.23,lng:-2.88},
+    {n:"Hagenbecks Tierpark Hamburg",lat:53.60,lng:9.93},{n:"Zoo Vincennes Paris",lat:48.83,lng:2.43},
+    {n:"Artis Amsterdam",lat:52.37,lng:4.92},{n:"Smithsonian National Zoo",lat:38.93,lng:-77.05},
+    {n:"Melbourne Zoo",lat:-37.78,lng:144.95},{n:"Taronga Zoo Sydney",lat:-33.84,lng:151.24},
+    {n:"Zoo Z\u00fcrich",lat:47.38,lng:8.57},{n:"Tiergarten Sch\u00f6nbrunn Wien",lat:48.18,lng:16.30},
+    {n:"Beijing Zoo",lat:39.94,lng:116.33},{n:"Toronto Zoo",lat:43.82,lng:-79.19},
+    {n:"Pretoria Zoo",lat:-25.74,lng:28.20},{n:"Rio de Janeiro Zoo",lat:-22.94,lng:-43.21},
+    {n:"Ueno-Zoo Tokio",lat:35.72,lng:139.77},{n:"Bioparc Valencia",lat:39.48,lng:-0.42},
+    {n:"Fuengirola Zoo",lat:36.54,lng:-4.62},{n:"Budapest Zoo",lat:47.51,lng:19.08}
+  ]},
+  tiere_nutztier_rassen:{prompt:"Wo wurde diese Rasse gez\u00fcchtet?",items:[
+    {n:"Wagyu-Rind",lat:34.68,lng:135.52},{n:"Hereford-Rind",lat:52.06,lng:-2.72},
+    {n:"Angus-Rind",lat:57.27,lng:-2.76},{n:"Holstein-Friesian",lat:54.19,lng:8.87},
+    {n:"Simmentaler",lat:46.67,lng:7.44},{n:"Merino-Schaf",lat:38.52,lng:-6.46},
+    {n:"Suffolk-Schaf",lat:52.05,lng:1.15},{n:"Angora-Ziege",lat:39.92,lng:32.85},
+    {n:"Duroc-Schwein",lat:41.65,lng:-72.69},{n:"Berkshire-Schwein",lat:51.45,lng:-1.00},
+    {n:"Yorkshire-Schwein",lat:53.96,lng:-1.08},{n:"Brahman-Rind",lat:22.91,lng:82.02},
+    {n:"Camargue-Pferd",lat:43.52,lng:4.56},{n:"Haflinger-Pferd",lat:46.68,lng:11.16},
+    {n:"Fjord-Pferd",lat:61.47,lng:7.46},{n:"Leghorn-Huhn",lat:43.55,lng:10.31},
+    {n:"Rhode-Island-Huhn",lat:41.58,lng:-71.50},{n:"Pekingente",lat:39.91,lng:116.39},
+    {n:"Saanenziege",lat:46.56,lng:7.25},{n:"Zebu-Rind",lat:11.00,lng:78.00}
+  ]},
+  tiere_fossilien:{prompt:"Wo liegt diese Fossil-Fundst\u00e4tte?",items:[
+    {n:"Solnhofen (Archaeopteryx)",lat:48.90,lng:11.09},{n:"Burgess-Schiefer",lat:51.44,lng:-116.47},
+    {n:"Dinosaur Provincial Park",lat:50.74,lng:-111.49},{n:"Liaoning (Gefiederter Dino)",lat:41.83,lng:123.43},
+    {n:"Hell Creek Formation",lat:47.80,lng:-104.35},{n:"Messel-Grube",lat:49.93,lng:8.80},
+    {n:"Olduvai-Schlucht",lat:-2.99,lng:35.35},{n:"Ediacara Hills",lat:-31.38,lng:138.23},
+    {n:"Ghost Ranch (Coelophysis)",lat:36.67,lng:-106.70},{n:"Flaming Cliffs Mongolei",lat:43.45,lng:100.52},
+    {n:"Tendaguru-Schichten",lat:-9.33,lng:38.10},{n:"Morrison Formation",lat:39.24,lng:-107.38},
+    {n:"Lyme Regis (Mary Anning)",lat:50.73,lng:-2.94},{n:"Bernissart (Iguanodon)",lat:50.48,lng:3.66},
+    {n:"Hadar (Lucy, Australopithecus)",lat:11.08,lng:40.57},{n:"Yixian Formation",lat:41.50,lng:120.65},
+    {n:"Cleveland Lloyd Quarry",lat:39.52,lng:-110.71},{n:"Santana Formation",lat:-7.23,lng:-39.41},
+    {n:"Val d Orbieu (Sauropoden)",lat:43.22,lng:2.68},{n:"Patagonien-Dino-Canyon",lat:-41.87,lng:-66.70}
+  ]},
+
+  /* === Pferde-DLC: Pin-Daten (1 Modus) === */
+  pferde_rassen:{prompt:"Wo wurde diese Pferderasse gez\u00fcchtet?",items:[
+    {n:"Shire",lat:52.50,lng:-1.50},{n:"Thoroughbred",lat:51.50,lng:-0.10},
+    {n:"Vollblutaraber",lat:24.00,lng:44.00},{n:"Andalusier",lat:37.80,lng:-5.00},
+    {n:"Friese",lat:53.10,lng:5.80},{n:"Lipizzaner",lat:45.80,lng:13.88},
+    {n:"Haflinger",lat:46.68,lng:11.16},{n:"Mustang",lat:39.00,lng:-105.00},
+    {n:"Appaloosa (Nez Perc\u00e9)",lat:46.41,lng:-117.00},{n:"Trakehner",lat:54.70,lng:21.10},
+    {n:"Hannoveraner",lat:52.37,lng:9.73},{n:"Quarter Horse",lat:30.00,lng:-100.00},
+    {n:"Przewalski-Pferd",lat:47.00,lng:102.00},{n:"Islandpferd",lat:64.00,lng:-19.00},
+    {n:"Connemara-Pony",lat:53.40,lng:-9.90},{n:"Welsh Pony",lat:52.10,lng:-3.80},
+    {n:"Shetlandpony",lat:60.14,lng:-1.20},{n:"Clydesdale",lat:55.70,lng:-3.90},
+    {n:"Camargue-Pferd",lat:43.52,lng:4.56},{n:"Paint Horse",lat:35.50,lng:-97.50}
+  ]},
+
   /* === Phase 216: Match-Kategorien (Schritt 3) === */
   insel_match:[{n:"Gal\u00e1pagos-Inseln",c:"Ecuador"},{n:"Kanarische Inseln",c:"Spanien"},{n:"R\u00e9union",c:"Frankreich"},{n:"Gr\u00f6nland",c:"D\u00e4nemark"},{n:"Tasmanien",c:"Australien"},{n:"Bali",c:"Indonesien"},{n:"Korsika",c:"Frankreich"},{n:"Hokkaido",c:"Japan"},{n:"Luzon",c:"Philippinen"},{n:"Falklandinseln",c:"Vereinigtes K\u00f6nigreich"},{n:"R\u00fcgen",c:"Deutschland"},{n:"Sardinien",c:"Italien"},{n:"Kreta",c:"Griechenland"},{n:"Sizilien",c:"Italien"}],
   ehemalige_hauptstaedte:[{n:"Bonn",c:"Deutschland"},{n:"Lagos",c:"Nigeria"},{n:"Almaty",c:"Kasachstan"},{n:"Yangon",c:"Myanmar"},{n:"Rio de Janeiro",c:"Brasilien"},{n:"Nanjing",c:"China"},{n:"Philadelphia",c:"USA"},{n:"Abidjan",c:"Elfenbeink\u00fcste"},{n:"Kyoto",c:"Japan"},{n:"St. Petersburg",c:"Russland"},{n:"Krakau",c:"Polen"},{n:"Karatschi",c:"Pakistan"},{n:"Melbourne",c:"Australien"},{n:"Samarkand",c:"Usbekistan"}],
@@ -8167,7 +8372,28 @@ const TIER_HL_DATA={
       {name:"Mensch (Erwachsener)",val:8},
       {name:"Wanderamsel",val:4}
     ]
-  }
+  },
+  haustier_dichte:{prompt:"Welches Land hat mehr Rinder je 100 Einwohner?",unit:"Rinder/100 Einw.",items:[
+    {name:"Uruguay",val:337},{name:"Australien",val:189},{name:"Argentinien",val:151},
+    {name:"Neuseeland",val:167},{name:"Paraguay",val:189},{name:"Brasilien",val:123},
+    {name:"Botswana",val:164},{name:"Mongolei",val:145},{name:"Nicaragua",val:98},
+    {name:"\u00c4thiopien",val:45},{name:"Kanada",val:39},{name:"USA",val:30},
+    {name:"Indien",val:29},{name:"Frankreich",val:18},{name:"Deutschland",val:16},
+    {name:"Russland",val:15},{name:"Mexiko",val:36},{name:"Kenia",val:41},
+    {name:"Japan",val:3},{name:"S\u00fcdkorea",val:2}
+  ]},
+  pferde_stockmass:{prompt:"Welches Pferd hat ein gr\u00f6\u00dferes Stockma\u00df?",unit:"cm",items:[
+    {name:"Falabella",val:80},{name:"Shetlandpony",val:100},
+    {name:"Welsh Pony",val:122},{name:"Connemara-Pony",val:148},
+    {name:"Islandpferd",val:140},{name:"Haflinger",val:148},
+    {name:"Appaloosa",val:155},{name:"Quarter Horse",val:157},
+    {name:"Andalusier",val:160},{name:"Hannoveraner",val:165},
+    {name:"Trakehner",val:165},{name:"Vollblutaraber",val:160},
+    {name:"Thoroughbred",val:163},{name:"Friese",val:165},
+    {name:"Paint Horse",val:157},{name:"Camargue-Pferd",val:148},
+    {name:"Mustang",val:150},{name:"Lipizzaner",val:158},
+    {name:"Clydesdale",val:175},{name:"Shire",val:185}
+  ]}
 };
 
 /* === Phase 227: genTiereHL — La-Paz-Trauma-Safe H/L Generator === */
@@ -8527,8 +8753,91 @@ const TIER_MATCH_DATA={
       {n:"Spuert Strahlung durch spezialisierte Lichtsensoren",c:"Nacktmulle"},
       {n:"Hat photosensitive Haut die Farbe ohne Augen wahrnimmt",c:"Tintenfisch"}
     ]
-  }
-
+  },
+  arktis_antarktis:{prompt:"Lebt dieses Tier in der Arktis oder Antarktis?",fixedOpts:["Arktis (Nordpol)","Antarktis (S\u00fcdpol)"],items:[
+    {n:"Eisb\u00e4r",c:"Arktis (Nordpol)"},{n:"Kaiserpinguin",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Narwal",c:"Arktis (Nordpol)"},{n:"Leopard-Robbe",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Walross",c:"Arktis (Nordpol)"},{n:"Adeliepinguin",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Polarfuchs",c:"Arktis (Nordpol)"},{n:"Weddell-Robbe",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Belugawal",c:"Arktis (Nordpol)"},{n:"Krabbenfresser-Robbe",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Moschus-Ochse",c:"Arktis (Nordpol)"},{n:"Elefanten-Robbe (S\u00fcd)",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Schneehase (Arktis)",c:"Arktis (Nordpol)"},{n:"Riesensturmvogel",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Schneeeule",c:"Arktis (Nordpol)"},{n:"Kohlsturmvogel",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Karibu",c:"Arktis (Nordpol)"},{n:"Eissturmvogel",c:"Antarktis (S\u00fcdpol)"},
+    {n:"Ringelrobbe",c:"Arktis (Nordpol)"},{n:"Lemminge",c:"Arktis (Nordpol)"}
+  ]},
+  forscher_eponyme:{prompt:"Nach welchem Forscher ist dieses Tier benannt?",items:[
+    {n:"Humboldt-Pinguin",c:"Alexander von Humboldt"},{n:"Humboldt-Tintenfisch",c:"Alexander von Humboldt"},
+    {n:"Spix-Ara",c:"Johann Baptist von Spix"},{n:"Cuvier-Schnabelwal",c:"Georges Cuvier"},
+    {n:"Temminck-Strandl\u00e4ufer",c:"Coenraad Temminck"},{n:"Gould-Plattschweifsittich",c:"John Gould"},
+    {n:"Forster-Pinguin",c:"Johann Reinhold Forster"},{n:"Audubon-Sturmtaucher",c:"John James Audubon"},
+    {n:"Lesson-Nektarvogel",c:"Ren\u00e9 Lesson"},{n:"Gurney-Adler",c:"John Henry Gurney"},
+    {n:"Fischer-Liebesvogel",c:"Gustav Fischer"},{n:"Gervais-Schnabelwal",c:"Paul Gervais"},
+    {n:"Blanford-Fuchs",c:"William T. Blanford"},{n:"Latham-Schnepfe",c:"John Latham"},
+    {n:"Darwin-Finken",c:"Charles Darwin"},{n:"Wallace-Flugechse",c:"Alfred Russel Wallace"},
+    {n:"Peters-Eichh\u00f6rnchen",c:"Wilhelm Peters"},{n:"Schlegel-Rennechse",c:"Hermann Schlegel"},
+    {n:"Mertens-Wasserwarane",c:"Robert Mertens"},{n:"Gray-Breitnassenb\u00e4r",c:"John E. Gray"}
+  ]},
+  pelagial:{prompt:"In welcher Tiefenzone lebt dieses Meerestier?",fixedOpts:["Epipelagial (0-200m)","Mesopelagial (200-1000m)","Bathypelagial (1000-4000m)","Abyssopelagial (4000-6000m)"],items:[
+    {n:"Blauer Hai",c:"Epipelagial (0-200m)"},{n:"Laternenfisch",c:"Mesopelagial (200-1000m)"},
+    {n:"Tiefsee-Anglerfisch",c:"Bathypelagial (1000-4000m)"},{n:"Riesenkalmar",c:"Bathypelagial (1000-4000m)"},
+    {n:"Viperfisch",c:"Mesopelagial (200-1000m)"},{n:"Seegurke (Abyssus)",c:"Abyssopelagial (4000-6000m)"},
+    {n:"Ruderf\u00fc\u00dfkrebs Calanus",c:"Epipelagial (0-200m)"},{n:"Fackelkalmar",c:"Mesopelagial (200-1000m)"},
+    {n:"Tiefseehai (Schlafhai)",c:"Bathypelagial (1000-4000m)"},{n:"Biolumineszenz-Qualle",c:"Mesopelagial (200-1000m)"},
+    {n:"Barracuda",c:"Epipelagial (0-200m)"},{n:"Abyssal-Polychaet",c:"Abyssopelagial (4000-6000m)"},
+    {n:"Blaulicht-Anglerfisch",c:"Bathypelagial (1000-4000m)"},{n:"Tiefsee-Garnele",c:"Bathypelagial (1000-4000m)"},
+    {n:"Seepferdchen",c:"Epipelagial (0-200m)"},{n:"Dragonfish",c:"Mesopelagial (200-1000m)"},
+    {n:"Riesenmanta",c:"Epipelagial (0-200m)"},{n:"Tintenfisch (Vampir)",c:"Bathypelagial (1000-4000m)"},
+    {n:"Polardorsch",c:"Epipelagial (0-200m)"},{n:"Schwarzer Schlund-Aal",c:"Bathypelagial (1000-4000m)"}
+  ]},
+  wuesten_spezialisten:{prompt:"In welcher W\u00fcste lebt dieses Tier?",items:[
+    {n:"Dromedar",c:"Sahara"},{n:"Fennekfuchs",c:"Sahara"},
+    {n:"Gila-Krustenechse",c:"Sonora-W\u00fcste"},{n:"Roadrunner",c:"Sonora-W\u00fcste"},
+    {n:"Namaqua-Cham\u00e4leon",c:"Namib"},{n:"Oryx (Oryxantilope)",c:"Namib"},
+    {n:"Baktrian-Kamel",c:"Gobi"},{n:"Schneeleopard (Rand)",c:"Gobi"},
+    {n:"Arabische Oryxantilope",c:"Arabische W\u00fcste"},{n:"Sandkatze",c:"Arabische W\u00fcste"},
+    {n:"Thorny Devil",c:"Australische W\u00fcste"},{n:"Emu",c:"Australische W\u00fcste"},
+    {n:"Guanako",c:"Atacama"},{n:"Vikunja",c:"Atacama"},
+    {n:"Tatarenpferd",c:"Gobi"},{n:"Wei\u00dfschwanz-Prairiedog",c:"Sonora-W\u00fcste"},
+    {n:"Kapuziner-Springmaus",c:"Sahara"},{n:"W\u00fcstenigel",c:"Arabische W\u00fcste"},
+    {n:"Sandboa",c:"Arabische W\u00fcste"},{n:"R\u00fcsselpfeifen-Echse",c:"Namib"}
+  ]},
+  gift_hotspots:{prompt:"Woher kommt dieses Giftier?",items:[
+    {n:"Inland-Taipan",c:"Australien"},{n:"Blauring-Oktopus",c:"Australien"},
+    {n:"Seewasp-Qualle (Box Jellyfish)",c:"Australien"},{n:"Schwarze Mamba",c:"Subsahara-Afrika"},
+    {n:"Gabunviper",c:"Subsahara-Afrika"},{n:"Stonefish",c:"Australien"},
+    {n:"Pfeilgiftfrosch",c:"Zentralamerika / Kolumbien"},{n:"Trichternetzspinne",c:"Australien"},
+    {n:"Indische Kobra",c:"S\u00fcdasien"},{n:"Kettenviper",c:"S\u00fcdasien"},
+    {n:"Giftpfeilfrosch",c:"Ecuador"},{n:"Brasilianische Wanderspinne",c:"Brasilien"},
+    {n:"Skorpionsfisch",c:"Indopazifik"},{n:"Kegel-Schnecke",c:"Indopazifik"},
+    {n:"Moray-Aal (Mur\u00e4ne)",c:"Mittelmeer / Indopazifik"},{n:"King Cobra",c:"S\u00fcdostasien"},
+    {n:"Banded Krait",c:"S\u00fcdostasien"},{n:"Komodo-Waran",c:"Indonesien"},
+    {n:"Andenkobra",c:"Ecuador"},{n:"Mamba (Schwarze)",c:"Subsahara-Afrika"}
+  ]},
+  migranten:{prompt:"Welche Route ist das Ziel dieses Wandertieres?",items:[
+    {n:"Monarchfalter",c:"Mexiko (\u00dcberwinterung)"},{n:"Europ\u00e4ischer Aal",c:"Sargassosee"},
+    {n:"Arktische K\u00fcstenseeschwalbe",c:"Arktis \u2192 Antarktis"},{n:"Wei\u00dfstorch",c:"Afrika (via Bosporus)"},
+    {n:"Buckelwal",c:"Hawaii \u2192 Alaska"},{n:"Atlantischer Lachs",c:"Nordatlantik \u2192 Heimatfluss"},
+    {n:"Karettschildkr\u00f6te",c:"Atlantik \u2192 Karibik-Nistpl\u00e4tze"},{n:"Pfuhlschnepfe",c:"Alaska \u2192 Neuseeland"},
+    {n:"Gnu (Serengeti)",c:"Serengeti-Masai-Mara-Zyklus"},{n:"Rothalsgans",c:"Sibirien \u2192 Schwarzmeer"},
+    {n:"Karibu",c:"N\u00f6rdliche Tundra"},{n:"Rote Krabbe (Weihnachtsinsel)",c:"Weihnachtsinsel-K\u00fcste"},
+    {n:"Pazifische Sardine",c:"Mexiko \u2192 Kanada"},{n:"Sibirische Kraniche",c:"Sibirien \u2192 Indien"},
+    {n:"Desert Locust",c:"Sahelzone \u2192 Nordafrika"},{n:"Gr\u00fcne Schildkr\u00f6te",c:"Ascension Island \u2192 Brasilien"},
+    {n:"Elefantenrobbe",c:"Baja California \u2192 Alaska"},{n:"S\u00fcdlicher Buckelwal",c:"Antarktis \u2192 Tropen"},
+    {n:"Bartgeier",c:"Pyr en\u00e4en \u2194 Maghreb"},{n:"Gnu (Botswana)",c:"Okavango-Linyanti-Zyklus"}
+  ]},
+  pferde_fachbegriffe:{prompt:"Was bezeichnet dieser Fachbegriff beim Pferd?",items:[
+    {n:"Rappe",c:"Komplett schwarzes Pferd"},{n:"Fuchs",c:"Rotbraunes Pferd"},
+    {n:"Schimmel",c:"Wei\u00dfes oder grauwei\u00dfes Pferd"},{n:"Brauner",c:"Dunkelbraunes Pferd"},
+    {n:"Falbe",c:"Sandfarben-graubraunes Pferd"},{n:"Isabelle",c:"Goldgelbes Pferd mit heller M\u00e4hne"},
+    {n:"Schecke",c:"Zweifarbig geschecktes Pferd"},{n:"Tigerschecke",c:"Wei\u00dfes Pferd mit dunklen Flecken"},
+    {n:"Stockma\u00df",c:"K\u00f6rpergr\u00f6\u00dfe am Widerrist gemessen"},{n:"Widerrist",c:"H\u00f6chster Punkt am Pferder\u00fccken"},
+    {n:"Blesse",c:"Wei\u00dfer Streifen \u00fcber die Pferdenase"},{n:"K\u00f6tenbehang",c:"Langes Haar \u00fcber dem Pferdehuf"},
+    {n:"Kanter",c:"Leichter, langsamer Galopp"},{n:"Piaffee",c:"Trabartiger Bewegung auf der Stelle"},
+    {n:"Passage",c:"Sehr getragener, federnder Trab"},{n:"Trense",c:"Leichtes Geb\u00dft am Pferdegebiss"},
+    {n:"Kandare",c:"Strenges Geb\u00dft mit zwei Geb\u00dftst\u00e4ngen"},{n:"Gurt",c:"Riemen zum Befestigen des Sattels"},
+    {n:"Streu",c:"Einstreumaterial im Pferdestall"},{n:"Halfter",c:"Kopfzeug ohne Geb\u00dft"}
+  ]},
 };
 
 /* === Phase 227 Part 2: genTiereMatchQ -- tiere-interner Distractor-Pool === */
@@ -8809,6 +9118,35 @@ const GEN={
   uk_tiere_anatomie:()=>genTiereMatchQ("anatomie"),
   uk_tiere_laute:()=>genTiereMatchQ("laute"),
   uk_tiere_sinne:()=>genTiereMatchQ("sinne"),
+  /* Phase 227 Part 3: Tiere Wort-Schmiede */
+  ws_tiere_schnabeltier:()=>{initTierWortSchmiede("schnabeltier");return null;},
+  ws_tiere_gottesanbeterin:()=>{initTierWortSchmiede("gottesanbeterin");return null;},
+  ws_tiere_komodowaran:()=>{initTierWortSchmiede("komodowaran");return null;},
+  ws_tiere_korallenriff:()=>{initTierWortSchmiede("korallenriff");return null;},
+  ws_tiere_silberruecken:()=>{initTierWortSchmiede("silberruecken");return null;},
+  ws_tiere_wanderfalke:()=>{initTierWortSchmiede("wanderfalke");return null;},
+  ws_tiere_mauersegler:()=>{initTierWortSchmiede("mauersegler");return null;},
+  ws_tiere_baertierchen:()=>{initTierWortSchmiede("baertierchen");return null;},
+  ws_tiere_lederschildkroete:()=>{initTierWortSchmiede("lederschildkroete");return null;},
+  ws_tiere_pfeilgiftfrosch:()=>{initTierWortSchmiede("pfeilgiftfrosch");return null;},
+  /* Phase 227 Part 4: Tiere Spezial-Modi */
+  uk_tiere_darwin_finken:()=>genUniversalPinQ("tiere_darwin_finken"),
+  uk_tiere_schutzgebiete:()=>genUniversalPinQ("tiere_schutzgebiete"),
+  uk_tiere_zoos:()=>genUniversalPinQ("tiere_zoos"),
+  uk_tiere_nutztier_rassen:()=>genUniversalPinQ("tiere_nutztier_rassen"),
+  uk_tiere_fossilien:()=>genUniversalPinQ("tiere_fossilien"),
+  uk_tiere_arktis_antarktis:()=>genTiereMatchQ("arktis_antarktis"),
+  uk_tiere_forscher_eponyme:()=>genTiereMatchQ("forscher_eponyme"),
+  uk_tiere_pelagial:()=>genTiereMatchQ("pelagial"),
+  uk_tiere_wuesten_spezialisten:()=>genTiereMatchQ("wuesten_spezialisten"),
+  uk_tiere_gift_hotspots:()=>genTiereMatchQ("gift_hotspots"),
+  uk_tiere_migranten:()=>genTiereMatchQ("migranten"),
+  hl_tiere_haustier_dichte:()=>genTiereHL("haustier_dichte"),
+  /* Pferde-DLC */
+  uk_pferde_rassen:()=>genUniversalPinQ("pferde_rassen"),
+  uk_pferde_fachbegriffe:()=>genTiereMatchQ("pferde_fachbegriffe"),
+  hl_pferde_stockmass:()=>genTiereHL("pferde_stockmass"),
+  ws_pferde_fluesterer:()=>{initTierWortSchmiede("pferde_fluesterer");return null;},
   uk_surf_spots:()=>genUniversalPinQ("surf_spots"),
   uk_kontinent_mitte:()=>genUniversalPinQ("kontinent_mitte"),
   /* Phase 216 Schritt 2: H/L Beta */
@@ -9867,6 +10205,7 @@ function startGame(m){
   if(_m==="travel_route"){initReiseroute();render();return;}
   if(_m==="slf"){initSLF();render();return;}
   if(_m==="wort_schmiede"){initWortSchmiede();render();return;}
+  if(_m&&_m.startsWith("ws_tiere_")){var _twk=_m.replace("ws_tiere_","");initTierWortSchmiede(_twk);render();return;}
   lq();
 }
 async function showLeaderboard(){S.ph="menu";S.tab="home";S.lbLoading=true;render();S.lbData=await fetchLeaderboard(S.mode);S.lbLoading=false;render();}
@@ -12131,7 +12470,7 @@ function handleWsCheck(){
   const pts=inp.length>=6?60:inp.length>=5?40:inp.length>=4?20:10;
   /* Phase 221: Multilingual Bonus +10 when word valid in both DE & EN */
   let _wsBonusPts=0;
-  try{const _cL=S.wsData.lang==="de"?"en":"de";const _cE=(WORTSCHMIEDE_DATA[S.wsData.cityIdx]||{}).validWords;const _cW=_cE&&Array.isArray(_cE[_cL])?_cE[_cL].map(function(w){return w.toUpperCase();}):[];if(_cW.includes(inp))_wsBonusPts=10;}catch(e){}
+  try{const _cL=S.wsData.lang==="de"?"en":"de";const _wsE=S.wsData.tierWsKey?TIER_WS_DATA[S.wsData.tierWsKey]:(WORTSCHMIEDE_DATA[S.wsData.cityIdx]||{});const _cE=(_wsE||{}).validWords;const _cW=_cE&&Array.isArray(_cE[_cL])?_cE[_cL].map(function(w){return w.toUpperCase();}):[];if(_cW.includes(inp))_wsBonusPts=10;}catch(e){}
   S.sc+=pts+_wsBonusPts;S.correct+=1;
   if(_wsBonusPts>0)showToast("\uD83C\uDF0D "+esc(inp)+" — Multilingual! +"+pts+" +"+_wsBonusPts+" Bonus");
   if(window.mpGameCh)mpSend("score_update",{score:S.sc,rd:S.rd||0,correct:S.correct||0});
@@ -12142,7 +12481,7 @@ function handleWsCheck(){
 }
 function renderWortSchmiede(sc){
   if(!S.wsData)return'<div class="scr"></div>';
-  const{city,allWords,foundWords,input,phase,lang,usingFallback,timeLeft}=S.wsData;
+  const{city,allWords,foundWords,input,phase,lang,usingFallback,timeLeft,tierWsKey}=S.wsData;
   const total=allWords.length,found=foundWords.length;
   const tl=timeLeft||0;
   const tPct=Math.round(tl/_WS_TIMER*100);
@@ -12216,7 +12555,7 @@ function renderWortSchmiede(sc){
       (found>0?'<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2px;margin-bottom:.8rem">'+chips+'</div>':
         '<div style="text-align:center;color:var(--text3);font-size:.8rem;margin-bottom:.8rem">Keine Wörter gefunden</div>')+
       (usingFallback?'<div style="text-align:center;font-size:.7rem;color:#d97706;margin-bottom:.5rem">⚠️ Englische Wörter wurden verwendet</div>':"")+
-      '<button class="btn-p" style="margin-top:.5rem" onclick="initWortSchmiede();render()">\u{1F501} Neue Stadt</button>'+
+      '<button class="btn-p" style="margin-top:.5rem" onclick="'+(tierWsKey?'initTierWortSchmiede(\''+tierWsKey+'\')':'initWortSchmiede()')+';render()">\u{1F501} '+(tierWsKey?'Nochmal':'Neue Stadt')+'</button>'+
       '<button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u{1F6AA} Menü</button>'+
       '</div></div>';
   }
