@@ -8,4 +8,4 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "FEAT: Phase 231 -- Archäologie & Verlorene Welten (60 neue Modi). 13 Pin-Modi + 12 H/L-Modi + 28 Match-Modi + 7 WS-Modi. Neue Kategorie: archaeologie. 4 JSON-Datendateien (archaeologie_*.json). MODES: 498->558. gen.py: 1.170M bytes. GeoQuest.html: 2.051M bytes. verify.py: 33/33 passed."
+git commit -m "FIX+FEAT: Phase 228-231 + Bugfixes + Polish WS + Refactoring. Tiere/Pflanzen in separate Kategorien aufgeteilt. Phase 229: Gastronomie (45 Modi). Phase 230: Tech & E-Mob (2 Kategorien, ~90 Modi). Phase 231: Archaeologie (60 Modi). BUGFIX: genUniversalPinQ fuer {prompt,items}-Format (6 Tiere-Modi hingen). Polish WS: 4680 polnische Woerter zu 54 WS-Eintraegen hinzugefuegt. Refactoring: 16 doppelte Generatoren durch 4 Factory-Funktionen ersetzt. MODES: 558->692. GeoQuest.html: 2.180M. verify.py: 53/53 passed."

@@ -4,18 +4,86 @@
     "unit": "Jahre v. Chr.",
     "higherWins": true,
     "items": [
-      {"name":"Löwenmensch von Hohlenstein","val":40000},
-      {"name":"Venus von Hohle Fels","val":35000},
-      {"name":"Knochen von Blombos (Gravierung)","val":75000},
-      {"name":"Himmelsscheibe von Nebra","val":3600},
-      {"name":"Antikythera-Mechanismus","val":150},
-      {"name":"Stein von Rosette","val":196},
-      {"name":"Maske des Tutanchamun","val":1323},
-      {"name":"Büste der Nofretete","val":1345},
-      {"name":"Venus von Willendorf","val":28000},
-      {"name":"Australopithecus-Schädel (Taung)","val":2500000},
-      {"name":"Olduvai-Chopper (ältestes Steinwerkzeug)","val":1700000},
-      {"name":"Laokoon-Gruppe","val":200}
+      {
+        "name": "Löwenmensch von Hohlenstein",
+        "val": 40000
+      },
+      {
+        "name": "Venus von Hohle Fels",
+        "val": 35000
+      },
+      {
+        "name": "Knochen von Blombos (Gravierung)",
+        "val": 75000
+      },
+      {
+        "name": "Himmelsscheibe von Nebra",
+        "val": 3600
+      },
+      {
+        "name": "Antikythera-Mechanismus",
+        "val": 150
+      },
+      {
+        "name": "Stein von Rosette",
+        "val": 196
+      },
+      {
+        "name": "Maske des Tutanchamun",
+        "val": 1323
+      },
+      {
+        "name": "Büste der Nofretete",
+        "val": 1345
+      },
+      {
+        "name": "Venus von Willendorf",
+        "val": 28000
+      },
+      {
+        "name": "Australopithecus-Schädel (Taung)",
+        "val": 2500000
+      },
+      {
+        "name": "Olduvai-Chopper (ältestes Steinwerkzeug)",
+        "val": 1700000
+      },
+      {
+        "name": "Laokoon-Gruppe",
+        "val": 200
+      },
+      {
+        "name": "Oetzi der Eismann",
+        "val": 5300
+      },
+      {
+        "name": "Newgrange-Anlage (Bau)",
+        "val": 5200
+      },
+      {
+        "name": "Gobekli Tepe (Erbauung)",
+        "val": 11500
+      },
+      {
+        "name": "Catalhoyuk (erste Besiedlung)",
+        "val": 9400
+      },
+      {
+        "name": "Vogelherd-Pferd (Elfenbein)",
+        "val": 40000
+      },
+      {
+        "name": "Chauvet-Malereien",
+        "val": 36000
+      },
+      {
+        "name": "Tabun-Hoehle Homo sapiens-Schaedel",
+        "val": 120000
+      },
+      {
+        "name": "Dolni Vestonice Venus",
+        "val": 29000
+      }
     ]
   },
   "gewicht_megalithen": {
@@ -23,18 +91,86 @@
     "unit": "Tonnen",
     "higherWins": true,
     "items": [
-      {"name":"Stonehenge Sarsen-Steine","val":25},
-      {"name":"Avebury Hauptstein","val":40},
-      {"name":"Breton Grand Menhir","val":280},
-      {"name":"Carnac Menhir","val":20},
-      {"name":"Göbekli Tepe T-Pfeiler","val":10},
-      {"name":"Mnajdra Tempelblocke","val":20},
-      {"name":"Easter Island Moai (Ahu Tongariki)","val":82},
-      {"name":"Baalbek Trilithon","val":800},
-      {"name":"Externsteine Felsblock","val":500},
-      {"name":"Obelisk von Luxor","val":227},
-      {"name":"Ahu Vinapu Steinblock","val":40},
-      {"name":"Newgrange Deckstein","val":200}
+      {
+        "name": "Stonehenge Sarsen-Steine",
+        "val": 25
+      },
+      {
+        "name": "Avebury Hauptstein",
+        "val": 40
+      },
+      {
+        "name": "Breton Grand Menhir",
+        "val": 280
+      },
+      {
+        "name": "Carnac Menhir",
+        "val": 20
+      },
+      {
+        "name": "Göbekli Tepe T-Pfeiler",
+        "val": 10
+      },
+      {
+        "name": "Mnajdra Tempelblocke",
+        "val": 20
+      },
+      {
+        "name": "Easter Island Moai (Ahu Tongariki)",
+        "val": 82
+      },
+      {
+        "name": "Baalbek Trilithon",
+        "val": 800
+      },
+      {
+        "name": "Externsteine Felsblock",
+        "val": 500
+      },
+      {
+        "name": "Obelisk von Luxor",
+        "val": 227
+      },
+      {
+        "name": "Ahu Vinapu Steinblock",
+        "val": 40
+      },
+      {
+        "name": "Newgrange Deckstein",
+        "val": 200
+      },
+      {
+        "name": "Dolmen de Bagneux Deckstein",
+        "val": 90
+      },
+      {
+        "name": "Callanish Hauptstein",
+        "val": 5
+      },
+      {
+        "name": "Ring of Brodgar Steine (je)",
+        "val": 10
+      },
+      {
+        "name": "Maeshowe Deckstein",
+        "val": 30
+      },
+      {
+        "name": "Rujm el-Hiri Megalith (gesamt)",
+        "val": 37000
+      },
+      {
+        "name": "Gobekli Tepe T-Pfeiler Zentrum",
+        "val": 20
+      },
+      {
+        "name": "Ahu Tongariki Moai (groesster)",
+        "val": 86
+      },
+      {
+        "name": "Menhir de Champ-Dolent (Bretagne)",
+        "val": 150
+      }
     ]
   },
   "entdeckungsjahr": {
@@ -42,18 +178,86 @@
     "unit": "Jahr",
     "higherWins": true,
     "items": [
-      {"name":"Höhle von Lascaux","val":1940},
-      {"name":"Tutanchamun-Grab","val":1922},
-      {"name":"Antikythera-Mechanismus","val":1901},
-      {"name":"Terrakotta-Armee","val":1974},
-      {"name":"Ötzi der Eismann","val":1991},
-      {"name":"Höhle von Chauvet","val":1994},
-      {"name":"Göbekli Tepe (Ausgrabung)","val":1995},
-      {"name":"Himmelsscheibe von Nebra","val":1999},
-      {"name":"Schriftrollen vom Toten Meer","val":1947},
-      {"name":"Sipán-Grab","val":1987},
-      {"name":"Endurance-Wrack","val":2022},
-      {"name":"Sanxingdui (Neue Opfergruben)","val":2021}
+      {
+        "name": "Höhle von Lascaux",
+        "val": 1940
+      },
+      {
+        "name": "Tutanchamun-Grab",
+        "val": 1922
+      },
+      {
+        "name": "Antikythera-Mechanismus",
+        "val": 1901
+      },
+      {
+        "name": "Terrakotta-Armee",
+        "val": 1974
+      },
+      {
+        "name": "Ötzi der Eismann",
+        "val": 1991
+      },
+      {
+        "name": "Höhle von Chauvet",
+        "val": 1994
+      },
+      {
+        "name": "Göbekli Tepe (Ausgrabung)",
+        "val": 1995
+      },
+      {
+        "name": "Himmelsscheibe von Nebra",
+        "val": 1999
+      },
+      {
+        "name": "Schriftrollen vom Toten Meer",
+        "val": 1947
+      },
+      {
+        "name": "Sipán-Grab",
+        "val": 1987
+      },
+      {
+        "name": "Endurance-Wrack",
+        "val": 2022
+      },
+      {
+        "name": "Sanxingdui (Neue Opfergruben)",
+        "val": 2021
+      },
+      {
+        "name": "Pompeji (erste Ausgrabungen)",
+        "val": 1748
+      },
+      {
+        "name": "Parthenon-Skulpturen (Elgin)",
+        "val": 1801
+      },
+      {
+        "name": "Rosetta-Stein",
+        "val": 1799
+      },
+      {
+        "name": "Venus von Willendorf",
+        "val": 1908
+      },
+      {
+        "name": "Machu Picchu",
+        "val": 1911
+      },
+      {
+        "name": "Laetoli-Fussspuren",
+        "val": 1976
+      },
+      {
+        "name": "Altamira (offizielle Anerkennung)",
+        "val": 1902
+      },
+      {
+        "name": "Gunung Padang (erste Beschreibung)",
+        "val": 1914
+      }
     ]
   },
   "fundtiefe": {
@@ -61,18 +265,86 @@
     "unit": "Meter Tiefe",
     "higherWins": true,
     "items": [
-      {"name":"Titanic-Wrack","val":3800},
-      {"name":"Pavlopetri (Unterwasserstadt)","val":3},
-      {"name":"Heraklion (Unterwasserstadt)","val":6},
-      {"name":"Atlit-Yam-Siedlung","val":10},
-      {"name":"Ötzi (unter Eis)","val":0},
-      {"name":"Sutton-Hoo-Grab","val":3},
-      {"name":"Endurance-Wrack","val":3008},
-      {"name":"Tutanchamun-Grab","val":6},
-      {"name":"Royal Tombs of Ur","val":8},
-      {"name":"SS Thistlegorm","val":30},
-      {"name":"Pompeji (Ascheschicht)","val":4},
-      {"name":"Antikythera-Wrack","val":45}
+      {
+        "name": "Titanic-Wrack",
+        "val": 3800
+      },
+      {
+        "name": "Pavlopetri (Unterwasserstadt)",
+        "val": 3
+      },
+      {
+        "name": "Heraklion (Unterwasserstadt)",
+        "val": 6
+      },
+      {
+        "name": "Atlit-Yam-Siedlung",
+        "val": 10
+      },
+      {
+        "name": "Ötzi (unter Eis)",
+        "val": 0
+      },
+      {
+        "name": "Sutton-Hoo-Grab",
+        "val": 3
+      },
+      {
+        "name": "Endurance-Wrack",
+        "val": 3008
+      },
+      {
+        "name": "Tutanchamun-Grab",
+        "val": 6
+      },
+      {
+        "name": "Royal Tombs of Ur",
+        "val": 8
+      },
+      {
+        "name": "SS Thistlegorm",
+        "val": 30
+      },
+      {
+        "name": "Pompeji (Ascheschicht)",
+        "val": 4
+      },
+      {
+        "name": "Antikythera-Wrack",
+        "val": 45
+      },
+      {
+        "name": "Pompeji Ascheschicht",
+        "val": 6
+      },
+      {
+        "name": "Herculaneum (Pyroklastit)",
+        "val": 20
+      },
+      {
+        "name": "Ur Koenigsgraeber",
+        "val": 12
+      },
+      {
+        "name": "Qin-Palastkomplex (unausgegraben)",
+        "val": 35
+      },
+      {
+        "name": "Maya-Cenoten-Funde (Mittelwert)",
+        "val": 15
+      },
+      {
+        "name": "Dolni Vestonice (Loesslehm)",
+        "val": 5
+      },
+      {
+        "name": "Clovis-Fund (New Mexico)",
+        "val": 2
+      },
+      {
+        "name": "Antikythera-Mechanismus-Wrack",
+        "val": 45
+      }
     ]
   },
   "groesse_ruinen": {
@@ -80,18 +352,86 @@
     "unit": "Hektar",
     "higherWins": true,
     "items": [
-      {"name":"Angkor Wat Tempelkomplex","val":162},
-      {"name":"Teotihuacán","val":2000},
-      {"name":"Pompeji","val":64},
-      {"name":"Chichen Itza","val":400},
-      {"name":"Tikal","val":5760},
-      {"name":"Stonehenge (Gesamtanlage)","val":11},
-      {"name":"Çatalhöyük","val":13},
-      {"name":"Chan Chan","val":2000},
-      {"name":"Timgad","val":50},
-      {"name":"Machu Picchu","val":530},
-      {"name":"Mohenjo-daro","val":250},
-      {"name":"Great Zimbabwe","val":722}
+      {
+        "name": "Angkor Wat Tempelkomplex",
+        "val": 162
+      },
+      {
+        "name": "Teotihuacán",
+        "val": 2000
+      },
+      {
+        "name": "Pompeji",
+        "val": 64
+      },
+      {
+        "name": "Chichen Itza",
+        "val": 400
+      },
+      {
+        "name": "Tikal",
+        "val": 5760
+      },
+      {
+        "name": "Stonehenge (Gesamtanlage)",
+        "val": 11
+      },
+      {
+        "name": "Çatalhöyük",
+        "val": 13
+      },
+      {
+        "name": "Chan Chan",
+        "val": 2000
+      },
+      {
+        "name": "Timgad",
+        "val": 50
+      },
+      {
+        "name": "Machu Picchu",
+        "val": 530
+      },
+      {
+        "name": "Mohenjo-daro",
+        "val": 250
+      },
+      {
+        "name": "Great Zimbabwe",
+        "val": 722
+      },
+      {
+        "name": "Borobudur (Java)",
+        "val": 2
+      },
+      {
+        "name": "Angkor Thom",
+        "val": 900
+      },
+      {
+        "name": "Great Zimbabwe",
+        "val": 722
+      },
+      {
+        "name": "Karnak-Tempelkomplex",
+        "val": 100
+      },
+      {
+        "name": "Palenque Gesamtflaeche",
+        "val": 1780
+      },
+      {
+        "name": "Caral (Peru)",
+        "val": 626
+      },
+      {
+        "name": "Tula (Tolteken)",
+        "val": 1400
+      },
+      {
+        "name": "Bogazkoy (Hethiter)",
+        "val": 180
+      }
     ]
   },
   "grabbeigaben": {
@@ -99,18 +439,86 @@
     "unit": "Anzahl Objekte (ca.)",
     "higherWins": true,
     "items": [
-      {"name":"Tutanchamun-Grab","val":5398},
-      {"name":"Terrakotta-Armee","val":8000},
-      {"name":"Sipán-Grab","val":400},
-      {"name":"Sutton-Hoo-Grab","val":263},
-      {"name":"Royal Tombs of Ur","val":1800},
-      {"name":"Hochdorf-Grabhügel","val":450},
-      {"name":"Vix-Grabhügel","val":600},
-      {"name":"Hallstatt-Gräberfeld","val":6000},
-      {"name":"Pazyryk-Grabhügel","val":200},
-      {"name":"Mawangdui-Grab","val":3000},
-      {"name":"Newgrange-Passage Tomb","val":5},
-      {"name":"Sanxingdui-Gruben","val":13000}
+      {
+        "name": "Tutanchamun-Grab",
+        "val": 5398
+      },
+      {
+        "name": "Terrakotta-Armee",
+        "val": 8000
+      },
+      {
+        "name": "Sipán-Grab",
+        "val": 400
+      },
+      {
+        "name": "Sutton-Hoo-Grab",
+        "val": 263
+      },
+      {
+        "name": "Royal Tombs of Ur",
+        "val": 1800
+      },
+      {
+        "name": "Hochdorf-Grabhügel",
+        "val": 450
+      },
+      {
+        "name": "Vix-Grabhügel",
+        "val": 600
+      },
+      {
+        "name": "Hallstatt-Gräberfeld",
+        "val": 6000
+      },
+      {
+        "name": "Pazyryk-Grabhügel",
+        "val": 200
+      },
+      {
+        "name": "Mawangdui-Grab",
+        "val": 3000
+      },
+      {
+        "name": "Newgrange-Passage Tomb",
+        "val": 5
+      },
+      {
+        "name": "Sanxingdui-Gruben",
+        "val": 13000
+      },
+      {
+        "name": "Qin Shi Huang (Gesamtanlage)",
+        "val": 40000
+      },
+      {
+        "name": "Vix-Grabhugel (Frankreich)",
+        "val": 600
+      },
+      {
+        "name": "Hochdorf-Fuerst (Sueddeutschland)",
+        "val": 450
+      },
+      {
+        "name": "Vergina-Grab (Philipp II.)",
+        "val": 300
+      },
+      {
+        "name": "Pazyryk-Kurgan (Sibirien)",
+        "val": 200
+      },
+      {
+        "name": "Tollund-Mann (nur Koerper)",
+        "val": 1
+      },
+      {
+        "name": "Tutankhamun Sarg Massivgold (einzeln)",
+        "val": 110
+      },
+      {
+        "name": "Mawangdui Grab Nr.1 (Han-Fuerstin)",
+        "val": 3000
+      }
     ]
   },
   "strassenlaenge": {
@@ -118,18 +526,86 @@
     "unit": "km Gesamtlänge",
     "higherWins": true,
     "items": [
-      {"name":"Inka-Straßennetz (Qhapaq Ñan)","val":40000},
-      {"name":"Römische Heerstraßen","val":400000},
-      {"name":"Persische Königsstraße","val":2699},
-      {"name":"Via Appia (ursprüngl.)","val":540},
-      {"name":"Silk Road (China-Abschnitt)","val":4000},
-      {"name":"Amber Road (Bernsteinstraße)","val":2500},
-      {"name":"Camino Real (Mexiko)","val":2600},
-      {"name":"Nabatäische Karawanenrouten","val":2000},
-      {"name":"Griechische Handelsstraßen","val":12000},
-      {"name":"Hadrians-Wall-Straße","val":135},
-      {"name":"Mykenische Straßen","val":200},
-      {"name":"Chinesische Hauptstraßen (Han)","val":16000}
+      {
+        "name": "Inka-Straßennetz (Qhapaq Ñan)",
+        "val": 40000
+      },
+      {
+        "name": "Römische Heerstraßen",
+        "val": 400000
+      },
+      {
+        "name": "Persische Königsstraße",
+        "val": 2699
+      },
+      {
+        "name": "Via Appia (ursprüngl.)",
+        "val": 540
+      },
+      {
+        "name": "Silk Road (China-Abschnitt)",
+        "val": 4000
+      },
+      {
+        "name": "Amber Road (Bernsteinstraße)",
+        "val": 2500
+      },
+      {
+        "name": "Camino Real (Mexiko)",
+        "val": 2600
+      },
+      {
+        "name": "Nabatäische Karawanenrouten",
+        "val": 2000
+      },
+      {
+        "name": "Griechische Handelsstraßen",
+        "val": 12000
+      },
+      {
+        "name": "Hadrians-Wall-Straße",
+        "val": 135
+      },
+      {
+        "name": "Mykenische Straßen",
+        "val": 200
+      },
+      {
+        "name": "Chinesische Hauptstraßen (Han)",
+        "val": 16000
+      },
+      {
+        "name": "Seidenstrasse (Gesamtroute)",
+        "val": 10000
+      },
+      {
+        "name": "Via Domitia (Suedfrankreich)",
+        "val": 160
+      },
+      {
+        "name": "Bernstein-Route (Mitteleuropa)",
+        "val": 1200
+      },
+      {
+        "name": "Grosser Inka-Weg (Qhapaq Nan)",
+        "val": 30000
+      },
+      {
+        "name": "Koenigsweg (Persien, Susa-Sardis)",
+        "val": 2699
+      },
+      {
+        "name": "Via Egnatia (Griechenland-Konstantinopel)",
+        "val": 1120
+      },
+      {
+        "name": "Via Aurelia (Rom-Arles)",
+        "val": 1060
+      },
+      {
+        "name": "Nabataische Weihrauchroute",
+        "val": 2400
+      }
     ]
   },
   "c14_alter": {
@@ -137,18 +613,86 @@
     "unit": "Jahre BP (vor heute)",
     "higherWins": true,
     "items": [
-      {"name":"Schädelknochen Atapuerca","val":780000},
-      {"name":"Blombos-Gravierungen","val":75000},
-      {"name":"Löwenmensch von Hohlenstein","val":40000},
-      {"name":"Lascaux-Malereien","val":17000},
-      {"name":"Çatalhöyük Siedlungsbeginn","val":9500},
-      {"name":"Stonehenge Errichtungsbeginn","val":5000},
-      {"name":"Göbekli Tepe Erbauung","val":11500},
-      {"name":"Ötzi der Eismann","val":5300},
-      {"name":"Tutanchamun-Grab","val":3300},
-      {"name":"Antikythera-Mechanismus","val":2100},
-      {"name":"Himmelsscheibe von Nebra","val":3600},
-      {"name":"Newgrange-Anlage","val":5200}
+      {
+        "name": "Schädelknochen Atapuerca",
+        "val": 780000
+      },
+      {
+        "name": "Blombos-Gravierungen",
+        "val": 75000
+      },
+      {
+        "name": "Löwenmensch von Hohlenstein",
+        "val": 40000
+      },
+      {
+        "name": "Lascaux-Malereien",
+        "val": 17000
+      },
+      {
+        "name": "Çatalhöyük Siedlungsbeginn",
+        "val": 9500
+      },
+      {
+        "name": "Stonehenge Errichtungsbeginn",
+        "val": 5000
+      },
+      {
+        "name": "Göbekli Tepe Erbauung",
+        "val": 11500
+      },
+      {
+        "name": "Ötzi der Eismann",
+        "val": 5300
+      },
+      {
+        "name": "Tutanchamun-Grab",
+        "val": 3300
+      },
+      {
+        "name": "Antikythera-Mechanismus",
+        "val": 2100
+      },
+      {
+        "name": "Himmelsscheibe von Nebra",
+        "val": 3600
+      },
+      {
+        "name": "Newgrange-Anlage",
+        "val": 5200
+      },
+      {
+        "name": "Gobekli Tepe erste Schicht",
+        "val": 11500
+      },
+      {
+        "name": "Altamira Malereien",
+        "val": 22000
+      },
+      {
+        "name": "Kennewick Man (USA)",
+        "val": 9000
+      },
+      {
+        "name": "Spirit Cave Mumie (Nevada)",
+        "val": 10600
+      },
+      {
+        "name": "Guitarrero-Hoehle (Peru, Textilien)",
+        "val": 12000
+      },
+      {
+        "name": "Pesse-Kanu (Niederlande)",
+        "val": 10000
+      },
+      {
+        "name": "Dolni Vestonice Venus",
+        "val": 29000
+      },
+      {
+        "name": "Ain Ghazal-Statuen (Jordanien)",
+        "val": 9200
+      }
     ]
   },
   "scandatenvolumen": {
@@ -156,18 +700,86 @@
     "unit": "GB Scandaten",
     "higherWins": true,
     "items": [
-      {"name":"Gesamtscan Pompeji","val":40000},
-      {"name":"British Museum 3D-Kollektion","val":3000},
-      {"name":"CyArk-Archiv Gesamtbestand","val":50000},
-      {"name":"Stonehenge 3D-Laser-Scan","val":150},
-      {"name":"Terrakotta-Armee Photogrammetrie","val":8000},
-      {"name":"Parthenon-Scan","val":500},
-      {"name":"Smithsonian Digitization","val":10000},
-      {"name":"Rome Reborn 3D-Modell","val":2000},
-      {"name":"Chauvet-Höhle Laserscan","val":3400},
-      {"name":"Angkor-Komplex LiDAR","val":25000},
-      {"name":"Nazca-Linien Drohnenscan","val":1200},
-      {"name":"Machu Picchu 3D-Survey","val":4500}
+      {
+        "name": "Gesamtscan Pompeji",
+        "val": 40000
+      },
+      {
+        "name": "British Museum 3D-Kollektion",
+        "val": 3000
+      },
+      {
+        "name": "CyArk-Archiv Gesamtbestand",
+        "val": 50000
+      },
+      {
+        "name": "Stonehenge 3D-Laser-Scan",
+        "val": 150
+      },
+      {
+        "name": "Terrakotta-Armee Photogrammetrie",
+        "val": 8000
+      },
+      {
+        "name": "Parthenon-Scan",
+        "val": 500
+      },
+      {
+        "name": "Smithsonian Digitization",
+        "val": 10000
+      },
+      {
+        "name": "Rome Reborn 3D-Modell",
+        "val": 2000
+      },
+      {
+        "name": "Chauvet-Höhle Laserscan",
+        "val": 3400
+      },
+      {
+        "name": "Angkor-Komplex LiDAR",
+        "val": 25000
+      },
+      {
+        "name": "Nazca-Linien Drohnenscan",
+        "val": 1200
+      },
+      {
+        "name": "Machu Picchu 3D-Survey",
+        "val": 4500
+      },
+      {
+        "name": "Colosseum Gesamtscan",
+        "val": 5000
+      },
+      {
+        "name": "Notre-Dame-de-Paris Scan (vor Brand)",
+        "val": 2000
+      },
+      {
+        "name": "Bamiyan-Buddhas Rekonstruktion",
+        "val": 800
+      },
+      {
+        "name": "Palmyra (nach ISIS) CyArk",
+        "val": 1500
+      },
+      {
+        "name": "Taj Mahal Laserscan",
+        "val": 1200
+      },
+      {
+        "name": "Gobekli Tepe 3D Survey",
+        "val": 600
+      },
+      {
+        "name": "Altamira Hoehlen-Scan",
+        "val": 400
+      },
+      {
+        "name": "Machu Picchu Drohnenkartierung",
+        "val": 4500
+      }
     ]
   },
   "bauzeit": {
@@ -175,18 +787,86 @@
     "unit": "Jahre Bauzeit (geschätzt)",
     "higherWins": true,
     "items": [
-      {"name":"Angkor Wat","val":37},
-      {"name":"Cheopspyramide","val":20},
-      {"name":"Hadrianswall","val":6},
-      {"name":"Stonehenge (Gesamtanlage)","val":1500},
-      {"name":"Colosseum","val":10},
-      {"name":"Parthenon","val":9},
-      {"name":"Machu Picchu","val":80},
-      {"name":"Chichen Itza El Castillo","val":300},
-      {"name":"Teotihuacán-Pyramiden","val":200},
-      {"name":"Mnajdra-Tempel","val":500},
-      {"name":"Göbekli Tepe","val":1000},
-      {"name":"Sagrada Família (Vergleich)","val":142}
+      {
+        "name": "Angkor Wat",
+        "val": 37
+      },
+      {
+        "name": "Cheopspyramide",
+        "val": 20
+      },
+      {
+        "name": "Hadrianswall",
+        "val": 6
+      },
+      {
+        "name": "Stonehenge (Gesamtanlage)",
+        "val": 1500
+      },
+      {
+        "name": "Colosseum",
+        "val": 10
+      },
+      {
+        "name": "Parthenon",
+        "val": 9
+      },
+      {
+        "name": "Machu Picchu",
+        "val": 80
+      },
+      {
+        "name": "Chichen Itza El Castillo",
+        "val": 300
+      },
+      {
+        "name": "Teotihuacán-Pyramiden",
+        "val": 200
+      },
+      {
+        "name": "Mnajdra-Tempel",
+        "val": 500
+      },
+      {
+        "name": "Göbekli Tepe",
+        "val": 1000
+      },
+      {
+        "name": "Sagrada Família (Vergleich)",
+        "val": 142
+      },
+      {
+        "name": "Forum Romanum (Gesamtentwicklung)",
+        "val": 900
+      },
+      {
+        "name": "Hagia Sophia (erste Fassung)",
+        "val": 5
+      },
+      {
+        "name": "Grosse Mauer Chinas (gesamt)",
+        "val": 1800
+      },
+      {
+        "name": "Koelner Dom (historisch)",
+        "val": 632
+      },
+      {
+        "name": "Newgrange-Anlage",
+        "val": 20
+      },
+      {
+        "name": "Tempel von Karnak (gesamt)",
+        "val": 2000
+      },
+      {
+        "name": "Acropolis von Athen (Perikles)",
+        "val": 15
+      },
+      {
+        "name": "Alhambra (Granada)",
+        "val": 200
+      }
     ]
   },
   "hoehe_bauwerke": {
@@ -194,18 +874,86 @@
     "unit": "Meter Höhe",
     "higherWins": true,
     "items": [
-      {"name":"Cheopspyramide (original)","val":146},
-      {"name":"Kolosseum","val":48},
-      {"name":"Parthenon","val":13},
-      {"name":"Leuchtturm von Alexandria","val":137},
-      {"name":"Colossus von Rhodos (geschätzt)","val":33},
-      {"name":"Moai (größter)","val":10},
-      {"name":"Stonehenge-Sarsensteine","val":6},
-      {"name":"Temple of the Sun (Teotihuacán)","val":71},
-      {"name":"El Castillo (Chichen Itza)","val":30},
-      {"name":"Tempel I Tikal","val":47},
-      {"name":"Borobudur (Java)","val":34},
-      {"name":"Pantheon-Kuppel (Innenraum)","val":43}
+      {
+        "name": "Cheopspyramide (original)",
+        "val": 146
+      },
+      {
+        "name": "Kolosseum",
+        "val": 48
+      },
+      {
+        "name": "Parthenon",
+        "val": 13
+      },
+      {
+        "name": "Leuchtturm von Alexandria",
+        "val": 137
+      },
+      {
+        "name": "Colossus von Rhodos (geschätzt)",
+        "val": 33
+      },
+      {
+        "name": "Moai (größter)",
+        "val": 10
+      },
+      {
+        "name": "Stonehenge-Sarsensteine",
+        "val": 6
+      },
+      {
+        "name": "Temple of the Sun (Teotihuacán)",
+        "val": 71
+      },
+      {
+        "name": "El Castillo (Chichen Itza)",
+        "val": 30
+      },
+      {
+        "name": "Tempel I Tikal",
+        "val": 47
+      },
+      {
+        "name": "Borobudur (Java)",
+        "val": 34
+      },
+      {
+        "name": "Pantheon-Kuppel (Innenraum)",
+        "val": 43
+      },
+      {
+        "name": "Stufenpyramide des Djoser",
+        "val": 62
+      },
+      {
+        "name": "Tempel I Tikal",
+        "val": 47
+      },
+      {
+        "name": "Mausoleum von Halikarnassos (Schaetzung)",
+        "val": 45
+      },
+      {
+        "name": "Pyramide von Cestius (Rom)",
+        "val": 36
+      },
+      {
+        "name": "Borobudur Hauptturm",
+        "val": 34
+      },
+      {
+        "name": "Teotihuacan Mondpyramide",
+        "val": 43
+      },
+      {
+        "name": "Chephren-Pyramide (original)",
+        "val": 143
+      },
+      {
+        "name": "El Castillo Chichen Itza",
+        "val": 30
+      }
     ]
   },
   "versicherungswert": {
@@ -213,18 +961,86 @@
     "unit": "Mio. EUR Schätzwert",
     "higherWins": true,
     "items": [
-      {"name":"Stein von Rosette (unbezahlbar/Schätzung)","val":10000},
-      {"name":"Terrakotta-Armee (gesamt)","val":10000},
-      {"name":"Tutanchamun-Maske","val":50000},
-      {"name":"Antikythera-Mechanismus","val":100},
-      {"name":"Himmelsscheibe von Nebra","val":1000},
-      {"name":"Ötzi der Eismann (Gesamtfund)","val":500},
-      {"name":"Venus von Willendorf","val":80},
-      {"name":"Büste der Nofretete","val":2500},
-      {"name":"Goldener Hut von Schifferstadt","val":120},
-      {"name":"Laokoon-Gruppe","val":3000},
-      {"name":"Vasa-Wrack (Schiff gesamt)","val":1200},
-      {"name":"Elgin Marbles (Parthenon)","val":8000}
+      {
+        "name": "Stein von Rosette (unbezahlbar/Schätzung)",
+        "val": 10000
+      },
+      {
+        "name": "Terrakotta-Armee (gesamt)",
+        "val": 10000
+      },
+      {
+        "name": "Tutanchamun-Maske",
+        "val": 50000
+      },
+      {
+        "name": "Antikythera-Mechanismus",
+        "val": 100
+      },
+      {
+        "name": "Himmelsscheibe von Nebra",
+        "val": 1000
+      },
+      {
+        "name": "Ötzi der Eismann (Gesamtfund)",
+        "val": 500
+      },
+      {
+        "name": "Venus von Willendorf",
+        "val": 80
+      },
+      {
+        "name": "Büste der Nofretete",
+        "val": 2500
+      },
+      {
+        "name": "Goldener Hut von Schifferstadt",
+        "val": 120
+      },
+      {
+        "name": "Laokoon-Gruppe",
+        "val": 3000
+      },
+      {
+        "name": "Vasa-Wrack (Schiff gesamt)",
+        "val": 1200
+      },
+      {
+        "name": "Elgin Marbles (Parthenon)",
+        "val": 8000
+      },
+      {
+        "name": "Benin-Bronzen (Gesamtkollektion)",
+        "val": 5000
+      },
+      {
+        "name": "Moai-Statue Ahu Tongariki (symbolisch)",
+        "val": 50
+      },
+      {
+        "name": "Goldmaske von Mykene",
+        "val": 2000
+      },
+      {
+        "name": "Lewis-Schachfiguren (Auktionswert)",
+        "val": 3
+      },
+      {
+        "name": "Jade-Totenmaske Pakal (Mexiko)",
+        "val": 200
+      },
+      {
+        "name": "Sutton-Hoo-Helm (Schaetzung)",
+        "val": 1500
+      },
+      {
+        "name": "Vix-Krater (Bronzegefaess)",
+        "val": 150
+      },
+      {
+        "name": "Hochdorf-Goldfunde",
+        "val": 100
+      }
     ]
   }
 }

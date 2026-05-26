@@ -163,7 +163,14 @@ else:
 
 # -- 10. JSON data files round-trip ---------------------------
 section("10. JSON data files validity")
-for fname in ['kultur.json', 'tiere_hl.json', 'tiere_match.json', 'tiere_ws.json']:
+for fname in [
+        'kultur.json', 'tiere_hl.json', 'tiere_match.json', 'tiere_ws.json',
+        'pflanzen_pin.json', 'pflanzen_hl.json', 'pflanzen_match.json', 'pflanzen_ws.json',
+        'gastro_pin.json', 'gastro_hl.json', 'gastro_match.json', 'gastro_ws.json',
+        'tech_pin.json', 'tech_hl.json', 'tech_match.json', 'tech_ws.json',
+        'emob_pin.json', 'emob_hl.json', 'emob_match.json', 'emob_ws.json',
+        'archaeologie_pin.json', 'archaeologie_hl.json', 'archaeologie_match.json', 'archaeologie_ws.json',
+    ]:
     path = os.path.join(DATA_DIR, fname)
     if not os.path.isfile(path):
         fail(path + " missing")

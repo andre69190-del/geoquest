@@ -2961,58 +2961,58 @@ const MODES=[
     {id:"ws_pferde_fluesterer",icon:"\u{1F40E}",title:"[BETA] WS: Pferdefl\u00fcsterer",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SHIREHORSE!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben"}
 ,
     /* === Phase 228: Pflanzen-Modi (Pin) === */
-    {id:"uk_pflanzen_nutzpflanzen",icon:"\u{1F33E}",title:"[BETA] Nutzpflanzen-Ursprung",group:"tiere",prompt:"Wo liegt dieser Nutzpflanzen-Ursprungsort?",desc:"Kaffee, Kakao, Weizen \u2014 Wo kamen sie urspr\u00fcnglich her?"},
-    {id:"uk_pflanzen_einzelbaeume",icon:"\u{1F333}",title:"[BETA] Ber\u00fchmte B\u00e4ume",group:"tiere",prompt:"Wo steht dieser ber\u00fchmte Baum?",desc:"General Sherman bis Methuselah \u2014 Legenden-B\u00e4ume der Welt"},
-    {id:"uk_pflanzen_botanische_gaerten",icon:"\u{1F33A}",title:"[BETA] Botanische G\u00e4rten",group:"tiere",prompt:"Wo liegt dieser Botanische Garten?",desc:"Kew Gardens bis Orto Botanico Padova \u2014 Gr\u00fcne Kathedralen der Welt"},
-    {id:"uk_pflanzen_tropenwald",icon:"\u{1F331}",title:"[BETA] Tropenwälder",group:"tiere",prompt:"Wo liegt dieser Tropenwald?",desc:"Amazon bis Daintree \u2014 die gr\u00fcnen Lungen der Erde"},
-    {id:"uk_pflanzen_weinanbau",icon:"\u{1F377}",title:"[BETA] Weinanbaugebiete",group:"tiere",prompt:"Wo liegt dieses Weinanbaugebiet?",desc:"Bordeaux bis Barossa \u2014 Weinregionen der Welt"},
-    {id:"uk_pflanzen_heilpflanzen",icon:"\u{1F33F}",title:"[BETA] Heilpflanzen-Regionen",group:"tiere",prompt:"Wo liegt diese Heilpflanzen-Region?",desc:"Argan bis Ayurveda \u2014 Medizinische Pflanzenzentren"},
-    {id:"uk_pflanzen_mangroven",icon:"\u{1F30A}",title:"[BETA] Mangrovenwälder",group:"tiere",prompt:"Wo liegt dieses Mangroven-Gebiet?",desc:"Sundarbans bis Everglades \u2014 K\u00fcstenw\u00e4lder der Tropen"},
-    {id:"uk_pflanzen_kakao_ursprung",icon:"\u{1F36B}",title:"[BETA] Kakao-Ursprungsgebiete",group:"tiere",prompt:"Wo liegt dieses Kakao-Anbaugebiet?",desc:"Tabasco bis Madagaskar \u2014 Die Welt des Kakaos"},
-    {id:"uk_pflanzen_reisanbau",icon:"\u{1F35A}",title:"[BETA] Reisanbauregionen",group:"tiere",prompt:"Wo liegt diese Reisanbauregion?",desc:"Mekong-Delta bis Bali-Terrassen \u2014 Reisfelder der Welt"},
-    {id:"uk_pflanzen_bambus",icon:"\u{1F38B}",title:"[BETA] Bambuswälder",group:"tiere",prompt:"Wo liegt dieser ber\u00fchmte Bambus-Ort?",desc:"Arashiyama bis Sichuan \u2014 Bambus-Paradiese der Welt"},
-    {id:"uk_pflanzen_endemisch",icon:"\u{1F9EC}",title:"[BETA] Endemische Pflanzenzonen",group:"tiere",prompt:"Wo liegt dieser endemische Pflanzen-Hotspot?",desc:"Kap-Florenregion bis Cerrado \u2014 Pflanzendiversit\u00e4t"},
-    {id:"uk_pflanzen_nationalblumen",icon:"\u{1F490}",title:"[BETA] Nationalblumen-Heimat",group:"tiere",prompt:"In welchem Land ist diese Pflanze Nationalblume?",desc:"Tulpe, Kirschbl\u00fcte, Protea \u2014 Nationalblumen pinnen"},
+    {id:"uk_pflanzen_nutzpflanzen",icon:"\u{1F33E}",title:"[BETA] Nutzpflanzen-Ursprung",group:"pflanzen",prompt:"Wo liegt dieser Nutzpflanzen-Ursprungsort?",desc:"Kaffee, Kakao, Weizen \u2014 Wo kamen sie urspr\u00fcnglich her?"},
+    {id:"uk_pflanzen_einzelbaeume",icon:"\u{1F333}",title:"[BETA] Ber\u00fchmte B\u00e4ume",group:"pflanzen",prompt:"Wo steht dieser ber\u00fchmte Baum?",desc:"General Sherman bis Methuselah \u2014 Legenden-B\u00e4ume der Welt"},
+    {id:"uk_pflanzen_botanische_gaerten",icon:"\u{1F33A}",title:"[BETA] Botanische G\u00e4rten",group:"pflanzen",prompt:"Wo liegt dieser Botanische Garten?",desc:"Kew Gardens bis Orto Botanico Padova \u2014 Gr\u00fcne Kathedralen der Welt"},
+    {id:"uk_pflanzen_tropenwald",icon:"\u{1F331}",title:"[BETA] Tropenwälder",group:"pflanzen",prompt:"Wo liegt dieser Tropenwald?",desc:"Amazon bis Daintree \u2014 die gr\u00fcnen Lungen der Erde"},
+    {id:"uk_pflanzen_weinanbau",icon:"\u{1F377}",title:"[BETA] Weinanbaugebiete",group:"pflanzen",prompt:"Wo liegt dieses Weinanbaugebiet?",desc:"Bordeaux bis Barossa \u2014 Weinregionen der Welt"},
+    {id:"uk_pflanzen_heilpflanzen",icon:"\u{1F33F}",title:"[BETA] Heilpflanzen-Regionen",group:"pflanzen",prompt:"Wo liegt diese Heilpflanzen-Region?",desc:"Argan bis Ayurveda \u2014 Medizinische Pflanzenzentren"},
+    {id:"uk_pflanzen_mangroven",icon:"\u{1F30A}",title:"[BETA] Mangrovenwälder",group:"pflanzen",prompt:"Wo liegt dieses Mangroven-Gebiet?",desc:"Sundarbans bis Everglades \u2014 K\u00fcstenw\u00e4lder der Tropen"},
+    {id:"uk_pflanzen_kakao_ursprung",icon:"\u{1F36B}",title:"[BETA] Kakao-Ursprungsgebiete",group:"pflanzen",prompt:"Wo liegt dieses Kakao-Anbaugebiet?",desc:"Tabasco bis Madagaskar \u2014 Die Welt des Kakaos"},
+    {id:"uk_pflanzen_reisanbau",icon:"\u{1F35A}",title:"[BETA] Reisanbauregionen",group:"pflanzen",prompt:"Wo liegt diese Reisanbauregion?",desc:"Mekong-Delta bis Bali-Terrassen \u2014 Reisfelder der Welt"},
+    {id:"uk_pflanzen_bambus",icon:"\u{1F38B}",title:"[BETA] Bambuswälder",group:"pflanzen",prompt:"Wo liegt dieser ber\u00fchmte Bambus-Ort?",desc:"Arashiyama bis Sichuan \u2014 Bambus-Paradiese der Welt"},
+    {id:"uk_pflanzen_endemisch",icon:"\u{1F9EC}",title:"[BETA] Endemische Pflanzenzonen",group:"pflanzen",prompt:"Wo liegt dieser endemische Pflanzen-Hotspot?",desc:"Kap-Florenregion bis Cerrado \u2014 Pflanzendiversit\u00e4t"},
+    {id:"uk_pflanzen_nationalblumen",icon:"\u{1F490}",title:"[BETA] Nationalblumen-Heimat",group:"pflanzen",prompt:"In welchem Land ist diese Pflanze Nationalblume?",desc:"Tulpe, Kirschbl\u00fcte, Protea \u2014 Nationalblumen pinnen"},
     /* === Phase 228: Pflanzen-Modi (H/L) === */
-    {id:"hl_pflanzen_wuchshoehe",icon:"\u{1F334}",title:"[BETA] H/L Wuchsh\u00f6he",group:"tiere",prompt:"Welcher Baum wird h\u00f6her?",desc:"H\u00f6he in Metern \u2014 Hyperion bis Birke"},
-    {id:"hl_pflanzen_alter",icon:"\u{1F9D3}",title:"[BETA] H/L Baumalter",group:"tiere",prompt:"Welcher Baum wird \u00e4lter?",desc:"Jahre \u2014 Bristlecone Pine bis Schwarzpappel"},
-    {id:"hl_pflanzen_fruchtgewicht",icon:"\u{1F34D}",title:"[BETA] H/L Fruchtgewicht",group:"tiere",prompt:"Welche Frucht ist schwerer?",desc:"Gramm \u2014 Jackfrucht bis Chiasamen"},
-    {id:"hl_pflanzen_samenlaenge",icon:"\u{1F33C}",title:"[BETA] H/L Samengr\u00f6\u00dfe",group:"tiere",prompt:"Welcher Samen ist l\u00e4nger?",desc:"Millimeter \u2014 Coco de Mer bis Mohnkorn"},
-    {id:"hl_pflanzen_kaffeeproduktion",icon:"\u2615",title:"[BETA] H/L Kaffeeproduktion",group:"tiere",prompt:"Welches Land produziert mehr Kaffee?",desc:"Tsd. S\u00e4cke/Jahr \u2014 Brasilien bis Ruanda"},
-    {id:"hl_pflanzen_weinproduktion",icon:"\u{1F377}",title:"[BETA] H/L Weinproduktion",group:"tiere",prompt:"Welches Land produziert mehr Wein?",desc:"Mio. Liter/Jahr \u2014 Italien bis England"},
-    {id:"hl_pflanzen_reisproduktion",icon:"\u{1F35A}",title:"[BETA] H/L Reisproduktion",group:"tiere",prompt:"Welches Land produziert mehr Reis?",desc:"Mio. Tonnen/Jahr \u2014 China bis Kolumbien"},
-    {id:"hl_pflanzen_waldflaeche",icon:"\u{1F332}",title:"[BETA] H/L Waldanteil",group:"tiere",prompt:"Welches Land hat mehr Waldanteil?",desc:"Prozent \u2014 Suriname bis \u00c4gypten"},
-    {id:"hl_pflanzen_stammumfang",icon:"\u{1F333}",title:"[BETA] H/L Stammumfang",group:"tiere",prompt:"Welcher Baum hat den gr\u00f6\u00dferen Stammumfang?",desc:"cm \u2014 Arbol del Tule bis Kirschbaum"},
-    {id:"hl_pflanzen_blattflaeche",icon:"\u{1F343}",title:"[BETA] H/L Blattfl\u00e4che",group:"tiere",prompt:"Welches Blatt hat die gr\u00f6\u00dfere Fl\u00e4che?",desc:"cm\u00b2 \u2014 Riesenpalme bis Rosmarin"},
-    {id:"hl_pflanzen_bluehdauer",icon:"\u{1F338}",title:"[BETA] H/L Bl\u00fchtdauer",group:"tiere",prompt:"Welche Pflanze bl\u00fcht l\u00e4nger pro Jahr?",desc:"Tage/Jahr \u2014 Bougainvillea bis Krokus"},
-    {id:"hl_pflanzen_genomgroesse",icon:"\u{1F9EC}",title:"[BETA] H/L Genomgr\u00f6\u00dfe",group:"tiere",prompt:"Welche Pflanze hat das gr\u00f6\u00dfere Genom?",desc:"Mbp \u2014 Paris japonica bis Arabidopsis"},
+    {id:"hl_pflanzen_wuchshoehe",icon:"\u{1F334}",title:"[BETA] H/L Wuchsh\u00f6he",group:"pflanzen",prompt:"Welcher Baum wird h\u00f6her?",desc:"H\u00f6he in Metern \u2014 Hyperion bis Birke"},
+    {id:"hl_pflanzen_alter",icon:"\u{1F9D3}",title:"[BETA] H/L Baumalter",group:"pflanzen",prompt:"Welcher Baum wird \u00e4lter?",desc:"Jahre \u2014 Bristlecone Pine bis Schwarzpappel"},
+    {id:"hl_pflanzen_fruchtgewicht",icon:"\u{1F34D}",title:"[BETA] H/L Fruchtgewicht",group:"pflanzen",prompt:"Welche Frucht ist schwerer?",desc:"Gramm \u2014 Jackfrucht bis Chiasamen"},
+    {id:"hl_pflanzen_samenlaenge",icon:"\u{1F33C}",title:"[BETA] H/L Samengr\u00f6\u00dfe",group:"pflanzen",prompt:"Welcher Samen ist l\u00e4nger?",desc:"Millimeter \u2014 Coco de Mer bis Mohnkorn"},
+    {id:"hl_pflanzen_kaffeeproduktion",icon:"\u2615",title:"[BETA] H/L Kaffeeproduktion",group:"pflanzen",prompt:"Welches Land produziert mehr Kaffee?",desc:"Tsd. S\u00e4cke/Jahr \u2014 Brasilien bis Ruanda"},
+    {id:"hl_pflanzen_weinproduktion",icon:"\u{1F377}",title:"[BETA] H/L Weinproduktion",group:"pflanzen",prompt:"Welches Land produziert mehr Wein?",desc:"Mio. Liter/Jahr \u2014 Italien bis England"},
+    {id:"hl_pflanzen_reisproduktion",icon:"\u{1F35A}",title:"[BETA] H/L Reisproduktion",group:"pflanzen",prompt:"Welches Land produziert mehr Reis?",desc:"Mio. Tonnen/Jahr \u2014 China bis Kolumbien"},
+    {id:"hl_pflanzen_waldflaeche",icon:"\u{1F332}",title:"[BETA] H/L Waldanteil",group:"pflanzen",prompt:"Welches Land hat mehr Waldanteil?",desc:"Prozent \u2014 Suriname bis \u00c4gypten"},
+    {id:"hl_pflanzen_stammumfang",icon:"\u{1F333}",title:"[BETA] H/L Stammumfang",group:"pflanzen",prompt:"Welcher Baum hat den gr\u00f6\u00dferen Stammumfang?",desc:"cm \u2014 Arbol del Tule bis Kirschbaum"},
+    {id:"hl_pflanzen_blattflaeche",icon:"\u{1F343}",title:"[BETA] H/L Blattfl\u00e4che",group:"pflanzen",prompt:"Welches Blatt hat die gr\u00f6\u00dfere Fl\u00e4che?",desc:"cm\u00b2 \u2014 Riesenpalme bis Rosmarin"},
+    {id:"hl_pflanzen_bluehdauer",icon:"\u{1F338}",title:"[BETA] H/L Bl\u00fchtdauer",group:"pflanzen",prompt:"Welche Pflanze bl\u00fcht l\u00e4nger pro Jahr?",desc:"Tage/Jahr \u2014 Bougainvillea bis Krokus"},
+    {id:"hl_pflanzen_genomgroesse",icon:"\u{1F9EC}",title:"[BETA] H/L Genomgr\u00f6\u00dfe",group:"pflanzen",prompt:"Welche Pflanze hat das gr\u00f6\u00dfere Genom?",desc:"Mbp \u2014 Paris japonica bis Arabidopsis"},
     /* === Phase 228: Pflanzen-Modi (Match) === */
-    {id:"uk_pflanzen_gewuerze",icon:"\u{1F9C2}",title:"[BETA] Gew\u00fcrze-Herkunft",group:"tiere",prompt:"Woher stammt dieses Gew\u00fcrz urspr\u00fcnglich?",desc:"Zimt, Safran, Vanille \u2014 Heimatl\u00e4nder der Gew\u00fcrze"},
-    {id:"uk_pflanzen_familien",icon:"\u{1F9EC}",title:"[BETA] Pflanzenfamilien",group:"tiere",prompt:"Zu welcher Familie geh\u00f6rt diese Art?",desc:"Rosaceae, Poaceae, Fabaceae \u2014 Botanische Familien"},
-    {id:"uk_pflanzen_bluetezeit",icon:"\u{1F338}",title:"[BETA] Bl\u00fctezeit",group:"tiere",prompt:"In welcher Jahreszeit bl\u00fcht diese Pflanze?",desc:"Fr\u00fchling, Sommer, Herbst, Winter \u2014 Bl\u00fctekalender"},
-    {id:"uk_pflanzen_giftstoffe",icon:"\u2620",title:"[BETA] Giftstoffe",group:"tiere",prompt:"Welcher Wirkstoff macht diese Pflanze giftig?",desc:"Atropin, Ricin, Taxin \u2014 Giftige Wirkstoffe"},
-    {id:"uk_pflanzen_fruchttyp",icon:"\u{1F34E}",title:"[BETA] Fruchttypen",group:"tiere",prompt:"Zu welchem Fruchttyp geh\u00f6rt diese Frucht?",desc:"Beere, Steinfrucht, Apfelfrucht \u2014 Botanische Fruchttypen"},
-    {id:"uk_pflanzen_vermehrung",icon:"\u{1F331}",title:"[BETA] Vermehrungsarten",group:"tiere",prompt:"Wie vermehrt sich diese Pflanze haupts\u00e4chlich?",desc:"Samen, vegetativ, Sporen \u2014 Fortpflanzungsstrategien"},
-    {id:"uk_pflanzen_lebensraum",icon:"\u{1F30D}",title:"[BETA] Pflanzen-Lebensraum",group:"tiere",prompt:"In welchem Lebensraum w\u00e4chst diese Pflanze?",desc:"W\u00fcste, Moor, K\u00fcste \u2014 Habitate der Pflanzenwelt"},
-    {id:"uk_pflanzen_bestuaeber",icon:"\u{1F41D}",title:"[BETA] Best\u00e4uber",group:"tiere",prompt:"Wer best\u00e4ubt diese Blume haupts\u00e4chlich?",desc:"Bienen, Wind, Kolibri, Flederm\u00e4use \u2014 Best\u00e4ubungsstrategien"},
-    {id:"uk_pflanzen_herkunft",icon:"\u{1F5FA}",title:"[BETA] Kulturpflanzen-Herkunft",group:"tiere",prompt:"Von welchem Kontinent stammt diese Kulturpflanze?",desc:"Kartoffel bis Kaffee \u2014 Kontinentale Urspr\u00fcnge"},
-    {id:"uk_pflanzen_nutzung",icon:"\u{1F527}",title:"[BETA] Pflanzennutzung",group:"tiere",prompt:"Wof\u00fcr wird diese Pflanze haupts\u00e4chlich genutzt?",desc:"Nahrung, Medizin, Textil, Zier \u2014 Nutzungskategorien"},
-    {id:"uk_pflanzen_blattform",icon:"\u{1F343}",title:"[BETA] Blattformen",group:"tiere",prompt:"Welche Blattform hat diese Pflanze?",desc:"Nadel, herzf\u00f6rmig, gefiedert, handf\u00f6rmig \u2014 Blattmorphologie"},
-    {id:"uk_pflanzen_klimazone",icon:"\u{1F321}",title:"[BETA] Klimazonen",group:"tiere",prompt:"In welcher Klimazone w\u00e4chst diese Pflanze nat\u00fcrlich?",desc:"Tropisch, mediterran, gem\u00e4\u00dfigt, arktisch \u2014 Klimaanpassung"},
-    {id:"uk_pflanzen_scheinfruchte",icon:"\u{1F347}",title:"[BETA] Scheinfrüchte",group:"tiere",prompt:"Wie klassifiziert die Botanik diese Frucht?",desc:"Echte Frucht oder Scheinfrucht? \u2014 Botanische Klassifikation"},
+    {id:"uk_pflanzen_gewuerze",icon:"\u{1F9C2}",title:"[BETA] Gew\u00fcrze-Herkunft",group:"pflanzen",prompt:"Woher stammt dieses Gew\u00fcrz urspr\u00fcnglich?",desc:"Zimt, Safran, Vanille \u2014 Heimatl\u00e4nder der Gew\u00fcrze"},
+    {id:"uk_pflanzen_familien",icon:"\u{1F9EC}",title:"[BETA] Pflanzenfamilien",group:"pflanzen",prompt:"Zu welcher Familie geh\u00f6rt diese Art?",desc:"Rosaceae, Poaceae, Fabaceae \u2014 Botanische Familien"},
+    {id:"uk_pflanzen_bluetezeit",icon:"\u{1F338}",title:"[BETA] Bl\u00fctezeit",group:"pflanzen",prompt:"In welcher Jahreszeit bl\u00fcht diese Pflanze?",desc:"Fr\u00fchling, Sommer, Herbst, Winter \u2014 Bl\u00fctekalender"},
+    {id:"uk_pflanzen_giftstoffe",icon:"\u2620",title:"[BETA] Giftstoffe",group:"pflanzen",prompt:"Welcher Wirkstoff macht diese Pflanze giftig?",desc:"Atropin, Ricin, Taxin \u2014 Giftige Wirkstoffe"},
+    {id:"uk_pflanzen_fruchttyp",icon:"\u{1F34E}",title:"[BETA] Fruchttypen",group:"pflanzen",prompt:"Zu welchem Fruchttyp geh\u00f6rt diese Frucht?",desc:"Beere, Steinfrucht, Apfelfrucht \u2014 Botanische Fruchttypen"},
+    {id:"uk_pflanzen_vermehrung",icon:"\u{1F331}",title:"[BETA] Vermehrungsarten",group:"pflanzen",prompt:"Wie vermehrt sich diese Pflanze haupts\u00e4chlich?",desc:"Samen, vegetativ, Sporen \u2014 Fortpflanzungsstrategien"},
+    {id:"uk_pflanzen_lebensraum",icon:"\u{1F30D}",title:"[BETA] Pflanzen-Lebensraum",group:"pflanzen",prompt:"In welchem Lebensraum w\u00e4chst diese Pflanze?",desc:"W\u00fcste, Moor, K\u00fcste \u2014 Habitate der Pflanzenwelt"},
+    {id:"uk_pflanzen_bestuaeber",icon:"\u{1F41D}",title:"[BETA] Best\u00e4uber",group:"pflanzen",prompt:"Wer best\u00e4ubt diese Blume haupts\u00e4chlich?",desc:"Bienen, Wind, Kolibri, Flederm\u00e4use \u2014 Best\u00e4ubungsstrategien"},
+    {id:"uk_pflanzen_herkunft",icon:"\u{1F5FA}",title:"[BETA] Kulturpflanzen-Herkunft",group:"pflanzen",prompt:"Von welchem Kontinent stammt diese Kulturpflanze?",desc:"Kartoffel bis Kaffee \u2014 Kontinentale Urspr\u00fcnge"},
+    {id:"uk_pflanzen_nutzung",icon:"\u{1F527}",title:"[BETA] Pflanzennutzung",group:"pflanzen",prompt:"Wof\u00fcr wird diese Pflanze haupts\u00e4chlich genutzt?",desc:"Nahrung, Medizin, Textil, Zier \u2014 Nutzungskategorien"},
+    {id:"uk_pflanzen_blattform",icon:"\u{1F343}",title:"[BETA] Blattformen",group:"pflanzen",prompt:"Welche Blattform hat diese Pflanze?",desc:"Nadel, herzf\u00f6rmig, gefiedert, handf\u00f6rmig \u2014 Blattmorphologie"},
+    {id:"uk_pflanzen_klimazone",icon:"\u{1F321}",title:"[BETA] Klimazonen",group:"pflanzen",prompt:"In welcher Klimazone w\u00e4chst diese Pflanze nat\u00fcrlich?",desc:"Tropisch, mediterran, gem\u00e4\u00dfigt, arktisch \u2014 Klimaanpassung"},
+    {id:"uk_pflanzen_scheinfruchte",icon:"\u{1F347}",title:"[BETA] Scheinfrüchte",group:"pflanzen",prompt:"Wie klassifiziert die Botanik diese Frucht?",desc:"Echte Frucht oder Scheinfrucht? \u2014 Botanische Klassifikation"},
     /* === Phase 228: Pflanzen-Modi (Spezial) === */
-    {id:"uk_pflanzen_baum_des_jahres",icon:"\u{1F3C6}",title:"[BETA] Baum des Jahres",group:"tiere",prompt:"In welchem Jahr war dieser Baum \"Baum des Jahres\"?",desc:"Rotbuche bis Bergahorn \u2014 Deutsche B\u00e4ume des Jahres"},
-    {id:"uk_pflanzen_giftpflanze_jahres",icon:"\u2620",title:"[BETA] Giftpflanze des Jahres",group:"tiere",prompt:"In welchem Jahr war dies die Giftpflanze des Jahres?",desc:"Tollkirsche bis Stechapfel \u2014 J\u00e4hrliche Giftwahl"},
+    {id:"uk_pflanzen_baum_des_jahres",icon:"\u{1F3C6}",title:"[BETA] Baum des Jahres",group:"pflanzen",prompt:"In welchem Jahr war dieser Baum \"Baum des Jahres\"?",desc:"Rotbuche bis Bergahorn \u2014 Deutsche B\u00e4ume des Jahres"},
+    {id:"uk_pflanzen_giftpflanze_jahres",icon:"\u2620",title:"[BETA] Giftpflanze des Jahres",group:"pflanzen",prompt:"In welchem Jahr war dies die Giftpflanze des Jahres?",desc:"Tollkirsche bis Stechapfel \u2014 J\u00e4hrliche Giftwahl"},
     /* === Phase 228: Pflanzen-Modi (WS) === */
-    {id:"ws_pflanzen_trauerweide",icon:"\u{1F333}",title:"[BETA] WS: Trauerweide",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus TRAUERWEIDE!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
-    {id:"ws_pflanzen_rhododendron",icon:"\u{1F33A}",title:"[BETA] WS: Rhododendron",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus RHODODENDRON!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
-    {id:"ws_pflanzen_sonnenblume",icon:"\u{1F33B}",title:"[BETA] WS: Sonnenblume",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SONNENBLUME!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
-    {id:"ws_pflanzen_pusteblume",icon:"\u{1F33C}",title:"[BETA] WS: Pusteblume",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus PUSTEBLUME!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben"},
-    {id:"ws_pflanzen_nachtschatten",icon:"\u2620",title:"[BETA] WS: Nachtschatten",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus NACHTSCHATTEN!",desc:"Anagramm-R\u00e4tsel \u2014 13 Buchstaben"},
-    {id:"ws_pflanzen_vergissmeinnicht",icon:"\u{1F49C}",title:"[BETA] WS: Vergissmeinnicht",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus VERGISSMEINNICHT!",desc:"Anagramm-R\u00e4tsel \u2014 16 Buchstaben"},
-    {id:"ws_pflanzen_kaffeebohne",icon:"\u2615",title:"[BETA] WS: Kaffeebohne",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus KAFFEEBOHNE!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
-    {id:"ws_pflanzen_weihnachtsstern",icon:"\u2B50",title:"[BETA] WS: Weihnachtsstern",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus WEIHNACHTSSTERN!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
-    {id:"ws_pflanzen_ginkgobaum",icon:"\u{1F333}",title:"[BETA] WS: Ginkgobaum",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus GINKGOBAUM!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben"},
+    {id:"ws_pflanzen_trauerweide",icon:"\u{1F333}",title:"[BETA] WS: Trauerweide",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus TRAUERWEIDE!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+    {id:"ws_pflanzen_rhododendron",icon:"\u{1F33A}",title:"[BETA] WS: Rhododendron",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus RHODODENDRON!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
+    {id:"ws_pflanzen_sonnenblume",icon:"\u{1F33B}",title:"[BETA] WS: Sonnenblume",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SONNENBLUME!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+    {id:"ws_pflanzen_pusteblume",icon:"\u{1F33C}",title:"[BETA] WS: Pusteblume",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus PUSTEBLUME!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben"},
+    {id:"ws_pflanzen_nachtschatten",icon:"\u2620",title:"[BETA] WS: Nachtschatten",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus NACHTSCHATTEN!",desc:"Anagramm-R\u00e4tsel \u2014 13 Buchstaben"},
+    {id:"ws_pflanzen_vergissmeinnicht",icon:"\u{1F49C}",title:"[BETA] WS: Vergissmeinnicht",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus VERGISSMEINNICHT!",desc:"Anagramm-R\u00e4tsel \u2014 16 Buchstaben"},
+    {id:"ws_pflanzen_kaffeebohne",icon:"\u2615",title:"[BETA] WS: Kaffeebohne",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus KAFFEEBOHNE!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+    {id:"ws_pflanzen_weihnachtsstern",icon:"\u2B50",title:"[BETA] WS: Weihnachtsstern",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus WEIHNACHTSSTERN!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
+    {id:"ws_pflanzen_ginkgobaum",icon:"\u{1F333}",title:"[BETA] WS: Ginkgobaum",group:"pflanzen",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus GINKGOBAUM!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben"},
   /* === Phase 229: Gastronomie-Update === */
   /* -- Pin Modi -- */
   {id:"uk_gastro_nationalgerichte",icon:"\u{1F37D}",title:"[BETA] Nationalgerichte pinnen",group:"gastronomie",prompt:"\u{1F4CD} Wo entstand dieses Nationalgericht?",desc:"Wiener Schnitzel, Paella, Kimchi und mehr"},
@@ -3070,174 +3070,174 @@ const MODES=[
   {id:"ws_gastro_schwarzwaelder",icon:"\u{1F370}",title:"[BETA] WS: Schwarzwälder",group:"gastronomie",noMultiplayer:true,prompt:"Bilde Wörter aus SCHWARZWAELDER!",desc:"Anagramm-Rätsel — 14 Buchstaben"},
   {id:"ws_gastro_kaltentsafter",icon:"\u{1F34A}",title:"[BETA] WS: Kaltentsafter",group:"gastronomie",noMultiplayer:true,prompt:"Bilde Wörter aus KALTENTSAFTER!",desc:"Anagramm-Rätsel — 13 Buchstaben"},
   /* -- Technologie & Robotik: Pin -- */
-  {id:"uk_tech_programmiersprachen",icon:"\u{1F5A5}\uFE0F",title:"Tech: Programmiersprachen",group:"technologie",prompt:"Wo wurde diese Programmiersprache erfunden?",desc:"Geburtsorte von Python, Java, Rust & Co."},
-  {id:"uk_tech_wettbewerbe",icon:"\u{1F3C6}",title:"Tech: Wettbewerbe",group:"technologie",prompt:"Wo findet dieser Tech-/Robotikwettbewerb statt?",desc:"FIRST Lego League, WRO und mehr"},
-  {id:"uk_tech_halbleiter",icon:"\u{1F52C}",title:"Tech: Halbleiter-Fabs",group:"technologie",prompt:"Wo befindet sich dieses Halbleiterwerk?",desc:"TSMC, Intel, Samsung & Co."},
-  {id:"uk_tech_heimcomputer",icon:"\u{1F4BB}",title:"Tech: Heimcomputer",group:"technologie",prompt:"Wo wurde dieser Heimcomputer entwickelt?",desc:"C64, ZX Spectrum, Amiga & Co."},
-  {id:"uk_tech_rechenzentren",icon:"\u{1F5C4}\uFE0F",title:"Tech: Rechenzentren",group:"technologie",prompt:"Wo befindet sich dieses Rechenzentrum?",desc:"Google, AWS, Equinix & Co."},
-  {id:"uk_tech_pioniere",icon:"\u{1F468}\u200D\u{1F4BB}",title:"Tech: Pioniere",group:"technologie",prompt:"Wo wurde dieser Tech-Pionier geboren?",desc:"Turing, Lovelace, Torvalds & Co."},
-  {id:"uk_tech_tech_museen",icon:"\u{1F3DB}\uFE0F",title:"Tech: Technologiemuseen",group:"technologie",prompt:"Wo befindet sich dieses Technologiemuseum?",desc:"Computer History Museum, Deutsches Museum & Co."},
-  {id:"uk_tech_supercomputer",icon:"\u26A1",title:"Tech: Supercomputer",group:"technologie",prompt:"Wo steht dieser Supercomputer?",desc:"Frontier, LUMI, Fugaku & Co."},
+  {id:"uk_tech_programmiersprachen",icon:"\u{1F5A5}\uFE0F",title:"[BETA] Tech: Programmiersprachen",group:"technologie",prompt:"Wo wurde diese Programmiersprache erfunden?",desc:"Geburtsorte von Python, Java, Rust & Co."},
+  {id:"uk_tech_wettbewerbe",icon:"\u{1F3C6}",title:"[BETA] Tech: Wettbewerbe",group:"technologie",prompt:"Wo findet dieser Tech-/Robotikwettbewerb statt?",desc:"FIRST Lego League, WRO und mehr"},
+  {id:"uk_tech_halbleiter",icon:"\u{1F52C}",title:"[BETA] Tech: Halbleiter-Fabs",group:"technologie",prompt:"Wo befindet sich dieses Halbleiterwerk?",desc:"TSMC, Intel, Samsung & Co."},
+  {id:"uk_tech_heimcomputer",icon:"\u{1F4BB}",title:"[BETA] Tech: Heimcomputer",group:"technologie",prompt:"Wo wurde dieser Heimcomputer entwickelt?",desc:"C64, ZX Spectrum, Amiga & Co."},
+  {id:"uk_tech_rechenzentren",icon:"\u{1F5C4}\uFE0F",title:"[BETA] Tech: Rechenzentren",group:"technologie",prompt:"Wo befindet sich dieses Rechenzentrum?",desc:"Google, AWS, Equinix & Co."},
+  {id:"uk_tech_pioniere",icon:"\u{1F468}\u200D\u{1F4BB}",title:"[BETA] Tech: Pioniere",group:"technologie",prompt:"Wo wurde dieser Tech-Pionier geboren?",desc:"Turing, Lovelace, Torvalds & Co."},
+  {id:"uk_tech_tech_museen",icon:"\u{1F3DB}\uFE0F",title:"[BETA] Tech: Technologiemuseen",group:"technologie",prompt:"Wo befindet sich dieses Technologiemuseum?",desc:"Computer History Museum, Deutsches Museum & Co."},
+  {id:"uk_tech_supercomputer",icon:"\u26A1",title:"[BETA] Tech: Supercomputer",group:"technologie",prompt:"Wo steht dieser Supercomputer?",desc:"Frontier, LUMI, Fugaku & Co."},
   /* -- Technologie & Robotik: H/L -- */
-  {id:"hl_tech_transistoren",icon:"\u{1F9EE}",title:"Tech: Transistorenanzahl",group:"technologie",prompt:"Welcher Chip hat mehr Transistoren?",desc:"Apple M2 vs NVIDIA H100"},
-  {id:"hl_tech_taktfrequenz",icon:"\u23F1\uFE0F",title:"Tech: Taktfrequenz",group:"technologie",prompt:"Welche CPU hat eine hoehere Taktfrequenz?",desc:"GHz-Battle: i9 vs Ryzen vs Apple"},
-  {id:"hl_tech_freiheitsgrade",icon:"\u{1F9BE}",title:"Tech: Freiheitsgrade",group:"technologie",prompt:"Welcher Roboter hat mehr Freiheitsgrade?",desc:"KUKA, ABB, Atlas"},
-  {id:"hl_tech_code_zeilen",icon:"\u{1F4C4}",title:"Tech: Codezeilen",group:"technologie",prompt:"Welches Projekt hat mehr Codezeilen?",desc:"Linux vs Windows vs Google"},
-  {id:"hl_tech_release_jahr",icon:"\u{1F4C5}",title:"Tech: Release-Jahr",group:"technologie",prompt:"Welche Sprache wurde frueher veroeffentlicht?",desc:"Fortran 1957 bis Zig 2016"},
-  {id:"hl_tech_rechenleistung",icon:"\u{1F4CA}",title:"Tech: Rechenleistung",group:"technologie",prompt:"Welche GPU hat mehr Rechenleistung?",desc:"TFLOPS: RTX 4090 vs H100 vs Frontier"},
-  {id:"hl_tech_internet_speed",icon:"\u{1F310}",title:"Tech: Internetgeschwindigkeit",group:"technologie",prompt:"Welches Land hat schnelleres Internet?",desc:"Singapur, Suedkorea, Deutschland"},
-  {id:"hl_tech_tdp",icon:"\u{1F321}\uFE0F",title:"Tech: TDP-Wert",group:"technologie",prompt:"Welche CPU/GPU hat einen hoeheren TDP?",desc:"Watt: i9 vs NVIDIA H100 vs Arduino"},
+  {id:"hl_tech_transistoren",icon:"\u{1F9EE}",title:"[BETA] Tech: Transistorenanzahl",group:"technologie",prompt:"Welcher Chip hat mehr Transistoren?",desc:"Apple M2 vs NVIDIA H100"},
+  {id:"hl_tech_taktfrequenz",icon:"\u23F1\uFE0F",title:"[BETA] Tech: Taktfrequenz",group:"technologie",prompt:"Welche CPU hat eine hoehere Taktfrequenz?",desc:"GHz-Battle: i9 vs Ryzen vs Apple"},
+  {id:"hl_tech_freiheitsgrade",icon:"\u{1F9BE}",title:"[BETA] Tech: Freiheitsgrade",group:"technologie",prompt:"Welcher Roboter hat mehr Freiheitsgrade?",desc:"KUKA, ABB, Atlas"},
+  {id:"hl_tech_code_zeilen",icon:"\u{1F4C4}",title:"[BETA] Tech: Codezeilen",group:"technologie",prompt:"Welches Projekt hat mehr Codezeilen?",desc:"Linux vs Windows vs Google"},
+  {id:"hl_tech_release_jahr",icon:"\u{1F4C5}",title:"[BETA] Tech: Release-Jahr",group:"technologie",prompt:"Welche Sprache wurde frueher veroeffentlicht?",desc:"Fortran 1957 bis Zig 2016"},
+  {id:"hl_tech_rechenleistung",icon:"\u{1F4CA}",title:"[BETA] Tech: Rechenleistung",group:"technologie",prompt:"Welche GPU hat mehr Rechenleistung?",desc:"TFLOPS: RTX 4090 vs H100 vs Frontier"},
+  {id:"hl_tech_internet_speed",icon:"\u{1F310}",title:"[BETA] Tech: Internetgeschwindigkeit",group:"technologie",prompt:"Welches Land hat schnelleres Internet?",desc:"Singapur, Suedkorea, Deutschland"},
+  {id:"hl_tech_tdp",icon:"\u{1F321}\uFE0F",title:"[BETA] Tech: TDP-Wert",group:"technologie",prompt:"Welche CPU/GPU hat einen hoeheren TDP?",desc:"Watt: i9 vs NVIDIA H100 vs Arduino"},
   /* -- Technologie & Robotik: Match -- */
-  {id:"uk_tech_sensoren",icon:"\u{1F4E1}",title:"Tech: Sensoren",group:"technologie",prompt:"Was misst dieser Sensor?",desc:"DHT22, PIR, BMP280 zuordnen"},
-  {id:"uk_tech_syntax",icon:"\u{1F4DD}",title:"Tech: Code-Syntax",group:"technologie",prompt:"In welcher Programmiersprache wird das verwendet?",desc:"Pybricks, JavaScript, Java, C++"},
-  {id:"uk_tech_linux",icon:"\u{1F427}",title:"Tech: Linux-Distros",group:"technologie",prompt:"Fuer welchen Einsatz ist diese Distro bekannt?",desc:"Ubuntu, Kali, Alpine, Yocto"},
-  {id:"uk_tech_osi",icon:"\u{1F4E1}",title:"Tech: OSI-Modell",group:"technologie",prompt:"Auf welchem OSI-Layer arbeitet dieses Protokoll?",desc:"HTTP, TCP, IP, Ethernet"},
-  {id:"uk_tech_bigo",icon:"\u{1F4C8}",title:"Tech: Big-O",group:"technologie",prompt:"Welche Big-O-Komplexitaet hat dieser Algorithmus?",desc:"O(1), O(n), O(n²), O(log n)"},
-  {id:"uk_tech_http",icon:"\u{1F4BB}",title:"Tech: HTTP-Statuscodes",group:"technologie",prompt:"Zu welcher Kategorie gehoert dieser HTTP-Code?",desc:"200, 301, 404, 500 einordnen"},
-  {id:"uk_tech_wahrheitstabellen",icon:"\u{1F9EE}",title:"Tech: Logikgatter",group:"technologie",prompt:"Welches Logikgatter erzeugt diesen Ausgang?",desc:"AND, OR, NOT, XOR"},
-  {id:"uk_tech_hardware",icon:"\u{1F4BE}",title:"Tech: Hardware-Komponenten",group:"technologie",prompt:"Zu welchem Computersystem gehoert diese Komponente?",desc:"CPU, RAM, Speicher, Netzwerk"},
-  {id:"uk_tech_erfinder",icon:"\u{1F4A1}",title:"Tech: Technik-Erfinder",group:"technologie",prompt:"Wer hat diese Technologie erfunden?",desc:"WWW, E-Mail, Linux & Co."},
-  {id:"uk_tech_portnummern",icon:"\u{1F50C}",title:"Tech: Portnummern",group:"technologie",prompt:"Welcher Dienst nutzt diese Portnummer?",desc:"80, 443, 22, 3306 & Co."},
-  {id:"uk_tech_dateiendungen",icon:"\u{1F4C1}",title:"Tech: Dateiendungen",group:"technologie",prompt:"Zu welcher Dateiart gehoert diese Endung?",desc:"Bild, Audio, Video, Dokument"},
-  {id:"uk_tech_smart_home",icon:"\u{1F3E0}",title:"Tech: Smart Home",group:"technologie",prompt:"Zu welchem Smart-Home-System gehoert das?",desc:"Home Assistant, Homematic, Shelly, HomeKit"},
-  {id:"uk_tech_akronyme",icon:"\u{1F524}",title:"Tech: Akronyme",group:"technologie",prompt:"Wofuer steht dieses Technik-Akronym?",desc:"API, GPU, DNS, IoT & Co."},
-  {id:"uk_tech_turing_award",icon:"\u{1F3C5}",title:"Tech: Turing Award",group:"technologie",prompt:"Wofuer erhielt diese Person den Turing Award?",desc:"Dijkstra, Knuth, LeCun & Co."},
-  {id:"uk_tech_erste_videospiele",icon:"\u{1F579}\uFE0F",title:"Tech: Erste Videospiele",group:"technologie",prompt:"In welchem Jahrzehnt erschien dieses Spiel?",desc:"Pong, Pac-Man, Doom & Co."},
-  {id:"uk_tech_malware",icon:"\u{1F9F9}",title:"Tech: Malware-Typen",group:"technologie",prompt:"Zu welcher Malware-Kategorie gehoert das?",desc:"Virus, Wurm, Trojaner, Ransomware"},
-  {id:"uk_tech_tech_ma",icon:"\u{1F4B0}",title:"Tech: Uebernahmen",group:"technologie",prompt:"Von wem wurde dieses Unternehmen uebernommen?",desc:"GitHub, YouTube, WhatsApp & Co."},
+  {id:"uk_tech_sensoren",icon:"\u{1F4E1}",title:"[BETA] Tech: Sensoren",group:"technologie",prompt:"Was misst dieser Sensor?",desc:"DHT22, PIR, BMP280 zuordnen"},
+  {id:"uk_tech_syntax",icon:"\u{1F4DD}",title:"[BETA] Tech: Code-Syntax",group:"technologie",prompt:"In welcher Programmiersprache wird das verwendet?",desc:"Pybricks, JavaScript, Java, C++"},
+  {id:"uk_tech_linux",icon:"\u{1F427}",title:"[BETA] Tech: Linux-Distros",group:"technologie",prompt:"Fuer welchen Einsatz ist diese Distro bekannt?",desc:"Ubuntu, Kali, Alpine, Yocto"},
+  {id:"uk_tech_osi",icon:"\u{1F4E1}",title:"[BETA] Tech: OSI-Modell",group:"technologie",prompt:"Auf welchem OSI-Layer arbeitet dieses Protokoll?",desc:"HTTP, TCP, IP, Ethernet"},
+  {id:"uk_tech_bigo",icon:"\u{1F4C8}",title:"[BETA] Tech: Big-O",group:"technologie",prompt:"Welche Big-O-Komplexitaet hat dieser Algorithmus?",desc:"O(1), O(n), O(n²), O(log n)"},
+  {id:"uk_tech_http",icon:"\u{1F4BB}",title:"[BETA] Tech: HTTP-Statuscodes",group:"technologie",prompt:"Zu welcher Kategorie gehoert dieser HTTP-Code?",desc:"200, 301, 404, 500 einordnen"},
+  {id:"uk_tech_wahrheitstabellen",icon:"\u{1F9EE}",title:"[BETA] Tech: Logikgatter",group:"technologie",prompt:"Welches Logikgatter erzeugt diesen Ausgang?",desc:"AND, OR, NOT, XOR"},
+  {id:"uk_tech_hardware",icon:"\u{1F4BE}",title:"[BETA] Tech: Hardware-Komponenten",group:"technologie",prompt:"Zu welchem Computersystem gehoert diese Komponente?",desc:"CPU, RAM, Speicher, Netzwerk"},
+  {id:"uk_tech_erfinder",icon:"\u{1F4A1}",title:"[BETA] Tech: Technik-Erfinder",group:"technologie",prompt:"Wer hat diese Technologie erfunden?",desc:"WWW, E-Mail, Linux & Co."},
+  {id:"uk_tech_portnummern",icon:"\u{1F50C}",title:"[BETA] Tech: Portnummern",group:"technologie",prompt:"Welcher Dienst nutzt diese Portnummer?",desc:"80, 443, 22, 3306 & Co."},
+  {id:"uk_tech_dateiendungen",icon:"\u{1F4C1}",title:"[BETA] Tech: Dateiendungen",group:"technologie",prompt:"Zu welcher Dateiart gehoert diese Endung?",desc:"Bild, Audio, Video, Dokument"},
+  {id:"uk_tech_smart_home",icon:"\u{1F3E0}",title:"[BETA] Tech: Smart Home",group:"technologie",prompt:"Zu welchem Smart-Home-System gehoert das?",desc:"Home Assistant, Homematic, Shelly, HomeKit"},
+  {id:"uk_tech_akronyme",icon:"\u{1F524}",title:"[BETA] Tech: Akronyme",group:"technologie",prompt:"Wofuer steht dieses Technik-Akronym?",desc:"API, GPU, DNS, IoT & Co."},
+  {id:"uk_tech_turing_award",icon:"\u{1F3C5}",title:"[BETA] Tech: Turing Award",group:"technologie",prompt:"Wofuer erhielt diese Person den Turing Award?",desc:"Dijkstra, Knuth, LeCun & Co."},
+  {id:"uk_tech_erste_videospiele",icon:"\u{1F579}\uFE0F",title:"[BETA] Tech: Erste Videospiele",group:"technologie",prompt:"In welchem Jahrzehnt erschien dieses Spiel?",desc:"Pong, Pac-Man, Doom & Co."},
+  {id:"uk_tech_malware",icon:"\u{1F9F9}",title:"[BETA] Tech: Malware-Typen",group:"technologie",prompt:"Zu welcher Malware-Kategorie gehoert das?",desc:"Virus, Wurm, Trojaner, Ransomware"},
+  {id:"uk_tech_tech_ma",icon:"\u{1F4B0}",title:"[BETA] Tech: Uebernahmen",group:"technologie",prompt:"Von wem wurde dieses Unternehmen uebernommen?",desc:"GitHub, YouTube, WhatsApp & Co."},
   /* -- Technologie & Robotik: WS -- */
-  {id:"ws_tech_mikrocontroller",icon:"\u{1F9F2}",title:"WS: Mikrocontroller",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus MIKROCONTROLLER!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
-  {id:"ws_tech_datenbankmanagement",icon:"\u{1F5C4}\uFE0F",title:"WS: Datenbankmanagement",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus DATENBANKMANAGEMENT!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
-  {id:"ws_tech_algorithmus",icon:"\u{1F4CA}",title:"WS: Algorithmus",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus ALGORITHMUS!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
-  {id:"ws_tech_quantencomputer",icon:"\u269B\uFE0F",title:"WS: Quantencomputer",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus QUANTENCOMPUTER!",desc:"Anagramm-R\u00e4tsel \u2014 14 Buchstaben"},
-  {id:"ws_tech_prozessorarchitektur",icon:"\u{1F4BB}",title:"WS: Prozessorarchitektur",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus PROZESSORARCHITEKTUR!",desc:"Anagramm-R\u00e4tsel \u2014 19 Buchstaben"},
-  {id:"ws_tech_grafikprozessor",icon:"\u{1F3AE}",title:"WS: Grafikprozessor",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus GRAFIKPROZESSOR!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
-  {id:"ws_tech_cybersicherheit",icon:"\u{1F512}",title:"WS: Cybersicherheit",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus CYBERSICHERHEIT!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
-  {id:"ws_tech_softwareentwicklung",icon:"\u{1F4BB}",title:"WS: Softwareentwicklung",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SOFTWAREENTWICKLUNG!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
-  {id:"ws_tech_compilerbau",icon:"\u{1F527}",title:"WS: Compilerbau",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus COMPILERBAU!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
-  {id:"ws_tech_betriebssystem",icon:"\u{1F4BB}",title:"WS: Betriebssystem",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BETRIEBSSYSTEM!",desc:"Anagramm-R\u00e4tsel \u2014 14 Buchstaben"},
+  {id:"ws_tech_mikrocontroller",icon:"\u{1F9F2}",title:"[BETA] WS: Mikrocontroller",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus MIKROCONTROLLER!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
+  {id:"ws_tech_datenbankmanagement",icon:"\u{1F5C4}\uFE0F",title:"[BETA] WS: Datenbankmanagement",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus DATENBANKMANAGEMENT!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
+  {id:"ws_tech_algorithmus",icon:"\u{1F4CA}",title:"[BETA] WS: Algorithmus",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus ALGORITHMUS!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+  {id:"ws_tech_quantencomputer",icon:"\u269B\uFE0F",title:"[BETA] WS: Quantencomputer",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus QUANTENCOMPUTER!",desc:"Anagramm-R\u00e4tsel \u2014 14 Buchstaben"},
+  {id:"ws_tech_prozessorarchitektur",icon:"\u{1F4BB}",title:"[BETA] WS: Prozessorarchitektur",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus PROZESSORARCHITEKTUR!",desc:"Anagramm-R\u00e4tsel \u2014 19 Buchstaben"},
+  {id:"ws_tech_grafikprozessor",icon:"\u{1F3AE}",title:"[BETA] WS: Grafikprozessor",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus GRAFIKPROZESSOR!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
+  {id:"ws_tech_cybersicherheit",icon:"\u{1F512}",title:"[BETA] WS: Cybersicherheit",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus CYBERSICHERHEIT!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
+  {id:"ws_tech_softwareentwicklung",icon:"\u{1F4BB}",title:"[BETA] WS: Softwareentwicklung",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SOFTWAREENTWICKLUNG!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
+  {id:"ws_tech_compilerbau",icon:"\u{1F527}",title:"[BETA] WS: Compilerbau",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus COMPILERBAU!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+  {id:"ws_tech_betriebssystem",icon:"\u{1F4BB}",title:"[BETA] WS: Betriebssystem",group:"technologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BETRIEBSSYSTEM!",desc:"Anagramm-R\u00e4tsel \u2014 14 Buchstaben"},
   /* -- E-Mobilitaet & Infrastruktur: Pin -- */
-  {id:"uk_emob_gigafactories",icon:"\u{1F50B}",title:"E-Mob: Gigafactories",group:"emobilitaet",prompt:"Wo befindet sich diese EV-Gigafactory?",desc:"Tesla, CATL, Northvolt & Co."},
-  {id:"uk_emob_ev_startups",icon:"\u{1F697}",title:"E-Mob: EV-Startups",group:"emobilitaet",prompt:"Wo hat dieses EV-Startup seinen Hauptsitz?",desc:"Rivian, NIO, Polestar & Co."},
-  {id:"uk_emob_ladeparks",icon:"\u26A1",title:"E-Mob: Ladeparks",group:"emobilitaet",prompt:"Wo befindet sich dieser Ladepark?",desc:"Ionity, EnBW, Tesla & Co."},
-  {id:"uk_emob_lithium",icon:"\u26CF\uFE0F",title:"E-Mob: Lithiumvorkommen",group:"emobilitaet",prompt:"Wo befindet sich dieses Lithiumvorkommen?",desc:"Atacama, Australien, Serbien & Co."},
-  {id:"uk_emob_historische_werke",icon:"\u{1F3ED}",title:"E-Mob: Historische Werke",group:"emobilitaet",prompt:"Wo fand dieser EV-Meilenstein statt?",desc:"EV1, Leaf, ID.3, Lohner-Porsche"},
-  {id:"uk_emob_formel_e",icon:"\u{1F3CE}\uFE0F",title:"E-Mob: Formel E",group:"emobilitaet",prompt:"In welcher Stadt findet dieser ePrix statt?",desc:"Berlin, Monaco, NYC, Diriyah"},
-  {id:"uk_emob_solarparks",icon:"\u2600\uFE0F",title:"E-Mob: Solarparks",group:"emobilitaet",prompt:"Wo befindet sich dieser Solarpark?",desc:"Bhadla, Benban, Mohammed bin Rashid"},
-  {id:"uk_emob_autonom_tests",icon:"\u{1F916}",title:"E-Mob: Autonome Tests",group:"emobilitaet",prompt:"Wo werden autonome Fahrzeuge getestet?",desc:"Waymo, MCity, A9, AstaZero"},
-  {id:"uk_emob_batterie_forschung",icon:"\u{1F9EA}",title:"E-Mob: Batterieforschung",group:"emobilitaet",prompt:"Wo befindet sich dieses Batterie-Institut?",desc:"Argonne, Fraunhofer, MEET & Co."},
-  {id:"uk_emob_ev_dichte_staedte",icon:"\u{1F3D9}\uFE0F",title:"E-Mob: EV-Dichte-Staedte",group:"emobilitaet",prompt:"Diese Stadt hat eine der hoechsten EV-Dichten — wo liegt sie?",desc:"Oslo, Shenzhen, Amsterdam & Co."},
-  {id:"uk_emob_recycling",icon:"\u267B\uFE0F",title:"E-Mob: Batterie-Recycling",group:"emobilitaet",prompt:"Wo befindet sich diese Recyclinganlage?",desc:"Redwood Materials, VW Salzgitter & Co."},
-  {id:"uk_emob_erste_evs",icon:"\u{1F4DC}",title:"E-Mob: Erste EVs",group:"emobilitaet",prompt:"Wo fand dieser Meilenstein der fruehen E-Mobilitaet statt?",desc:"La Jamais Contente, Detroit Electric & Co."},
-  {id:"uk_emob_roadtrips",icon:"\u{1F5FA}\uFE0F",title:"E-Mob: EV-Roadtrips",group:"emobilitaet",prompt:"Welcher EV-Ladekorridor fuehrt durch diesen Ort?",desc:"Route 66, Brenner, E6 Skandinavien"},
+  {id:"uk_emob_gigafactories",icon:"\u{1F50B}",title:"[BETA] E-Mob: Gigafactories",group:"emobilitaet",prompt:"Wo befindet sich diese EV-Gigafactory?",desc:"Tesla, CATL, Northvolt & Co."},
+  {id:"uk_emob_ev_startups",icon:"\u{1F697}",title:"[BETA] E-Mob: EV-Startups",group:"emobilitaet",prompt:"Wo hat dieses EV-Startup seinen Hauptsitz?",desc:"Rivian, NIO, Polestar & Co."},
+  {id:"uk_emob_ladeparks",icon:"\u26A1",title:"[BETA] E-Mob: Ladeparks",group:"emobilitaet",prompt:"Wo befindet sich dieser Ladepark?",desc:"Ionity, EnBW, Tesla & Co."},
+  {id:"uk_emob_lithium",icon:"\u26CF\uFE0F",title:"[BETA] E-Mob: Lithiumvorkommen",group:"emobilitaet",prompt:"Wo befindet sich dieses Lithiumvorkommen?",desc:"Atacama, Australien, Serbien & Co."},
+  {id:"uk_emob_historische_werke",icon:"\u{1F3ED}",title:"[BETA] E-Mob: Historische Werke",group:"emobilitaet",prompt:"Wo fand dieser EV-Meilenstein statt?",desc:"EV1, Leaf, ID.3, Lohner-Porsche"},
+  {id:"uk_emob_formel_e",icon:"\u{1F3CE}\uFE0F",title:"[BETA] E-Mob: Formel E",group:"emobilitaet",prompt:"In welcher Stadt findet dieser ePrix statt?",desc:"Berlin, Monaco, NYC, Diriyah"},
+  {id:"uk_emob_solarparks",icon:"\u2600\uFE0F",title:"[BETA] E-Mob: Solarparks",group:"emobilitaet",prompt:"Wo befindet sich dieser Solarpark?",desc:"Bhadla, Benban, Mohammed bin Rashid"},
+  {id:"uk_emob_autonom_tests",icon:"\u{1F916}",title:"[BETA] E-Mob: Autonome Tests",group:"emobilitaet",prompt:"Wo werden autonome Fahrzeuge getestet?",desc:"Waymo, MCity, A9, AstaZero"},
+  {id:"uk_emob_batterie_forschung",icon:"\u{1F9EA}",title:"[BETA] E-Mob: Batterieforschung",group:"emobilitaet",prompt:"Wo befindet sich dieses Batterie-Institut?",desc:"Argonne, Fraunhofer, MEET & Co."},
+  {id:"uk_emob_ev_dichte_staedte",icon:"\u{1F3D9}\uFE0F",title:"[BETA] E-Mob: EV-Dichte-Staedte",group:"emobilitaet",prompt:"Diese Stadt hat eine der hoechsten EV-Dichten — wo liegt sie?",desc:"Oslo, Shenzhen, Amsterdam & Co."},
+  {id:"uk_emob_recycling",icon:"\u267B\uFE0F",title:"[BETA] E-Mob: Batterie-Recycling",group:"emobilitaet",prompt:"Wo befindet sich diese Recyclinganlage?",desc:"Redwood Materials, VW Salzgitter & Co."},
+  {id:"uk_emob_erste_evs",icon:"\u{1F4DC}",title:"[BETA] E-Mob: Erste EVs",group:"emobilitaet",prompt:"Wo fand dieser Meilenstein der fruehen E-Mobilitaet statt?",desc:"La Jamais Contente, Detroit Electric & Co."},
+  {id:"uk_emob_roadtrips",icon:"\u{1F5FA}\uFE0F",title:"[BETA] E-Mob: EV-Roadtrips",group:"emobilitaet",prompt:"Welcher EV-Ladekorridor fuehrt durch diesen Ort?",desc:"Route 66, Brenner, E6 Skandinavien"},
   /* -- E-Mobilitaet: H/L -- */
-  {id:"hl_emob_kapazitaet",icon:"\u{1F50B}",title:"E-Mob: Batteriekapazitaet",group:"emobilitaet",prompt:"Welches EV hat eine groessere Batteriekapazitaet?",desc:"kWh: iX3, Mach-E, EQS & Co."},
-  {id:"hl_emob_ladeleistung",icon:"\u26A1",title:"E-Mob: Ladeleistung",group:"emobilitaet",prompt:"Welches EV laedt mit hoeherer Maximalleistung?",desc:"kW DC: Taycan 270 vs Dacia 30"},
-  {id:"hl_emob_wltp",icon:"\u{1F6E3}\uFE0F",title:"E-Mob: WLTP-Reichweite",group:"emobilitaet",prompt:"Welches EV hat eine groessere WLTP-Reichweite?",desc:"Lucid Air 836 km vs Dacia 225 km"},
-  {id:"hl_emob_0_100",icon:"\u{1F3CE}\uFE0F",title:"E-Mob: 0–100 km/h",group:"emobilitaet",prompt:"Welches EV beschleunigt schneller auf 100?",desc:"Rimac 1,97s vs Dacia Spring 19s"},
-  {id:"hl_emob_gewicht",icon:"\u2696\uFE0F",title:"E-Mob: Fahrzeuggewicht",group:"emobilitaet",prompt:"Welches EV ist schwerer?",desc:"Hummer EV 4111 kg vs Smart EQ 975 kg"},
-  {id:"hl_emob_ladezeit_10_80",icon:"\u23F1\uFE0F",title:"E-Mob: Ladezeit 10–80%",group:"emobilitaet",prompt:"Bei welchem EV dauert das Laden von 10–80% kuerzer?",desc:"Ioniq 6 18 min vs Smart EQ 160 min"},
-  {id:"hl_emob_cw_wert",icon:"\u{1F4A8}",title:"E-Mob: cw-Wert",group:"emobilitaet",prompt:"Welches Fahrzeug hat einen niedrigeren Luftwiderstand?",desc:"EQS 0,20 vs Hummer 0,42"},
-  {id:"hl_emob_systemspannung",icon:"\u{1F50C}",title:"E-Mob: Systemspannung",group:"emobilitaet",prompt:"Welches EV arbeitet mit hoeherer Systemspannung?",desc:"Lucid Air 900V vs Dacia 48V"},
-  {id:"hl_emob_ladeanschluesse",icon:"\u{1F50C}",title:"E-Mob: Ladeanschluesse",group:"emobilitaet",prompt:"Welches EV hat mehr Ladeanschluesse?",desc:"CHAdeMO + CCS + Swap vs nur Typ2"},
-  {id:"hl_emob_drehmoment",icon:"\u{1F527}",title:"E-Mob: Drehmoment",group:"emobilitaet",prompt:"Welches EV hat mehr Systemdrehmoment?",desc:"Hummer EV 15592 Nm vs Dacia 125 Nm"},
-  {id:"hl_emob_preis",icon:"\u{1F4B0}",title:"E-Mob: Basispreis",group:"emobilitaet",prompt:"Welches EV ist teurer?",desc:"Rimac Nevera 2,4 Mio EUR vs Dacia 17T"},
-  {id:"hl_emob_zell_anzahl",icon:"\u{1F9EE}",title:"E-Mob: Zellenanzahl",group:"emobilitaet",prompt:"Welches EV hat mehr Batteriezellen?",desc:"Tesla Model S 8256 vs Dacia 30"},
+  {id:"hl_emob_kapazitaet",icon:"\u{1F50B}",title:"[BETA] E-Mob: Batteriekapazitaet",group:"emobilitaet",prompt:"Welches EV hat eine groessere Batteriekapazitaet?",desc:"kWh: iX3, Mach-E, EQS & Co."},
+  {id:"hl_emob_ladeleistung",icon:"\u26A1",title:"[BETA] E-Mob: Ladeleistung",group:"emobilitaet",prompt:"Welches EV laedt mit hoeherer Maximalleistung?",desc:"kW DC: Taycan 270 vs Dacia 30"},
+  {id:"hl_emob_wltp",icon:"\u{1F6E3}\uFE0F",title:"[BETA] E-Mob: WLTP-Reichweite",group:"emobilitaet",prompt:"Welches EV hat eine groessere WLTP-Reichweite?",desc:"Lucid Air 836 km vs Dacia 225 km"},
+  {id:"hl_emob_0_100",icon:"\u{1F3CE}\uFE0F",title:"[BETA] E-Mob: 0–100 km/h",group:"emobilitaet",prompt:"Welches EV beschleunigt schneller auf 100?",desc:"Rimac 1,97s vs Dacia Spring 19s"},
+  {id:"hl_emob_gewicht",icon:"\u2696\uFE0F",title:"[BETA] E-Mob: Fahrzeuggewicht",group:"emobilitaet",prompt:"Welches EV ist schwerer?",desc:"Hummer EV 4111 kg vs Smart EQ 975 kg"},
+  {id:"hl_emob_ladezeit_10_80",icon:"\u23F1\uFE0F",title:"[BETA] E-Mob: Ladezeit 10–80%",group:"emobilitaet",prompt:"Bei welchem EV dauert das Laden von 10–80% kuerzer?",desc:"Ioniq 6 18 min vs Smart EQ 160 min"},
+  {id:"hl_emob_cw_wert",icon:"\u{1F4A8}",title:"[BETA] E-Mob: cw-Wert",group:"emobilitaet",prompt:"Welches Fahrzeug hat einen niedrigeren Luftwiderstand?",desc:"EQS 0,20 vs Hummer 0,42"},
+  {id:"hl_emob_systemspannung",icon:"\u{1F50C}",title:"[BETA] E-Mob: Systemspannung",group:"emobilitaet",prompt:"Welches EV arbeitet mit hoeherer Systemspannung?",desc:"Lucid Air 900V vs Dacia 48V"},
+  {id:"hl_emob_ladeanschluesse",icon:"\u{1F50C}",title:"[BETA] E-Mob: Ladeanschluesse",group:"emobilitaet",prompt:"Welches EV hat mehr Ladeanschluesse?",desc:"CHAdeMO + CCS + Swap vs nur Typ2"},
+  {id:"hl_emob_drehmoment",icon:"\u{1F527}",title:"[BETA] E-Mob: Drehmoment",group:"emobilitaet",prompt:"Welches EV hat mehr Systemdrehmoment?",desc:"Hummer EV 15592 Nm vs Dacia 125 Nm"},
+  {id:"hl_emob_preis",icon:"\u{1F4B0}",title:"[BETA] E-Mob: Basispreis",group:"emobilitaet",prompt:"Welches EV ist teurer?",desc:"Rimac Nevera 2,4 Mio EUR vs Dacia 17T"},
+  {id:"hl_emob_zell_anzahl",icon:"\u{1F9EE}",title:"[BETA] E-Mob: Zellenanzahl",group:"emobilitaet",prompt:"Welches EV hat mehr Batteriezellen?",desc:"Tesla Model S 8256 vs Dacia 30"},
   /* -- E-Mobilitaet: Match -- */
-  {id:"uk_emob_stecker",icon:"\u{1F50C}",title:"E-Mob: Ladestecker",group:"emobilitaet",prompt:"Welchem Ladestandard entspricht dieser Stecker?",desc:"CCS, CHAdeMO, Typ2, Tesla"},
-  {id:"uk_emob_plattformen",icon:"\u{1F697}",title:"E-Mob: EV-Plattformen",group:"emobilitaet",prompt:"Auf welcher Plattform basiert dieses EV-Modell?",desc:"MEB, E-GMP, J1, CLAR & Co."},
-  {id:"uk_emob_zellchemie",icon:"\u{1F9EA}",title:"E-Mob: Zellchemie",group:"emobilitaet",prompt:"Welcher Vorteil ist typisch fuer diese Batteriechemie?",desc:"NMC, LFP, NCA, Solid-State"},
-  {id:"uk_emob_akronyme",icon:"\u{1F524}",title:"E-Mob: Akronyme",group:"emobilitaet",prompt:"Wofuer steht dieses E-Mobilitaets-Akronym?",desc:"BEV, WLTP, SOC, V2G & Co."},
-  {id:"uk_emob_level_autonomy",icon:"\u{1F916}",title:"E-Mob: Autonomiegrade",group:"emobilitaet",prompt:"Welchem SAE-Autonomiegrad entspricht diese Funktion?",desc:"Level 1–5: Tempomat bis Robotaxi"},
-  {id:"uk_emob_motorentypen",icon:"\u26A1",title:"E-Mob: Motorentypen",group:"emobilitaet",prompt:"Auf welcher Technologie basiert dieser Elektromotor?",desc:"PMSM, Induktion, Reluktanz, DC"},
-  {id:"uk_emob_thermomanagement",icon:"\u{1F321}\uFE0F",title:"E-Mob: Thermomanagement",group:"emobilitaet",prompt:"Welche Funktion uebernimmt diese TMS-Komponente?",desc:"Kuehlen, Heizen, Isolieren, Regeln"},
-  {id:"uk_emob_bidirektional",icon:"\u{1F501}",title:"E-Mob: V2X-Technologie",group:"emobilitaet",prompt:"Welche V2X-Technologie beschreibt diese Interaktion?",desc:"V2H, V2G, V2L, V2V"},
-  {id:"uk_emob_ladekurven",icon:"\u{1F4CA}",title:"E-Mob: Ladekurven",group:"emobilitaet",prompt:"Welches Fahrzeug zeigt dieses Ladeverhalten?",desc:"Taycan, Ioniq 6, Dacia Spring & Co."},
-  {id:"uk_emob_smart_home",icon:"\u{1F3E0}",title:"E-Mob: EV & Smart Home",group:"emobilitaet",prompt:"Welches Protokoll ermoeglicht diese EV-Smart-Home-Funktion?",desc:"OCPP, ISO 15118, EEBus, OpenADR"},
-  {id:"uk_emob_privilegien",icon:"\u{1F4CB}",title:"E-Mob: EV-Privilegien",group:"emobilitaet",prompt:"In welchem Land gilt dieses EV-Privileg?",desc:"Norwegen, USA, Deutschland & Co."},
-  {id:"uk_emob_port_position",icon:"\u{1F50C}",title:"E-Mob: Ladeanschluss-Position",group:"emobilitaet",prompt:"Wo sitzt der Ladeanschluss bei diesem Fahrzeug?",desc:"iX3 hinten links, Mach-E vorne links"},
-  {id:"uk_emob_ev_reifen",icon:"\u{1F6DE}",title:"E-Mob: EV-Reifen",group:"emobilitaet",prompt:"Welchen Vorteil bietet dieses EV-Reifenmerkmal?",desc:"Geraeusch, Gewicht, Reichweite, Grip"},
-  {id:"uk_emob_roaming",icon:"\u{1F310}",title:"E-Mob: Lade-Roaming",group:"emobilitaet",prompt:"Mit welchem Partner kann dieses Ladenetzwerk roamen?",desc:"Ionity, EnBW, ChargePoint & OCPI"},
-  {id:"uk_emob_warnleuchten",icon:"\u{1F6A8}",title:"E-Mob: Warnleuchten",group:"emobilitaet",prompt:"Was bedeutet diese EV-Warnanzeige?",desc:"Batterie, Schildkroete, Thermometer & Co."},
-  {id:"uk_emob_startups_match",icon:"\u{1F30D}",title:"E-Mob: Startup-Laender",group:"emobilitaet",prompt:"Aus welchem Land stammt dieses EV-Startup?",desc:"Rivian, NIO, Rimac & Co."},
-  {id:"uk_emob_reichweiten_killer",icon:"\u{1F4C9}",title:"E-Mob: Reichweiten-Killer",group:"emobilitaet",prompt:"Welcher Faktor reduziert die EV-Reichweite hier?",desc:"Kaelte, Autobahn, Klima, Gewicht"},
-  {id:"uk_emob_avas",icon:"\u{1F50A}",title:"E-Mob: AVAS-Vorschriften",group:"emobilitaet",prompt:"Was schreibt die AVAS-Vorschrift hier vor?",desc:"Pflichtgeraeusch unter 20 km/h"},
-  {id:"uk_emob_subventionen",icon:"\u{1F4B6}",title:"E-Mob: Subventionen",group:"emobilitaet",prompt:"In welchem Land gilt diese EV-Foerderung?",desc:"Umweltbonus, IRA, Bonus Ecologique"},
-  {id:"uk_emob_etikette",icon:"\u{1F91D}",title:"E-Mob: Ladetikette",group:"emobilitaet",prompt:"Welche Verhaltensregel passt zu dieser Ladesituation?",desc:"Kabel wegraeuumen, nicht blockieren & Co."},
-  {id:"uk_emob_konzeptautos",icon:"\u{1F3CE}\uFE0F",title:"E-Mob: Konzeptfahrzeuge",group:"emobilitaet",prompt:"Von welchem Hersteller stammt dieses EV-Konzept?",desc:"Vision EQXX, i Vision Dee & Co."},
-  {id:"uk_emob_strommix",icon:"\u{1F4A1}",title:"E-Mob: Strommix",group:"emobilitaet",prompt:"In welche EE-Anteil-Kategorie faellt dieses Land?",desc:"Norwegen >80%, Polen <30%"},
+  {id:"uk_emob_stecker",icon:"\u{1F50C}",title:"[BETA] E-Mob: Ladestecker",group:"emobilitaet",prompt:"Welchem Ladestandard entspricht dieser Stecker?",desc:"CCS, CHAdeMO, Typ2, Tesla"},
+  {id:"uk_emob_plattformen",icon:"\u{1F697}",title:"[BETA] E-Mob: EV-Plattformen",group:"emobilitaet",prompt:"Auf welcher Plattform basiert dieses EV-Modell?",desc:"MEB, E-GMP, J1, CLAR & Co."},
+  {id:"uk_emob_zellchemie",icon:"\u{1F9EA}",title:"[BETA] E-Mob: Zellchemie",group:"emobilitaet",prompt:"Welcher Vorteil ist typisch fuer diese Batteriechemie?",desc:"NMC, LFP, NCA, Solid-State"},
+  {id:"uk_emob_akronyme",icon:"\u{1F524}",title:"[BETA] E-Mob: Akronyme",group:"emobilitaet",prompt:"Wofuer steht dieses E-Mobilitaets-Akronym?",desc:"BEV, WLTP, SOC, V2G & Co."},
+  {id:"uk_emob_level_autonomy",icon:"\u{1F916}",title:"[BETA] E-Mob: Autonomiegrade",group:"emobilitaet",prompt:"Welchem SAE-Autonomiegrad entspricht diese Funktion?",desc:"Level 1–5: Tempomat bis Robotaxi"},
+  {id:"uk_emob_motorentypen",icon:"\u26A1",title:"[BETA] E-Mob: Motorentypen",group:"emobilitaet",prompt:"Auf welcher Technologie basiert dieser Elektromotor?",desc:"PMSM, Induktion, Reluktanz, DC"},
+  {id:"uk_emob_thermomanagement",icon:"\u{1F321}\uFE0F",title:"[BETA] E-Mob: Thermomanagement",group:"emobilitaet",prompt:"Welche Funktion uebernimmt diese TMS-Komponente?",desc:"Kuehlen, Heizen, Isolieren, Regeln"},
+  {id:"uk_emob_bidirektional",icon:"\u{1F501}",title:"[BETA] E-Mob: V2X-Technologie",group:"emobilitaet",prompt:"Welche V2X-Technologie beschreibt diese Interaktion?",desc:"V2H, V2G, V2L, V2V"},
+  {id:"uk_emob_ladekurven",icon:"\u{1F4CA}",title:"[BETA] E-Mob: Ladekurven",group:"emobilitaet",prompt:"Welches Fahrzeug zeigt dieses Ladeverhalten?",desc:"Taycan, Ioniq 6, Dacia Spring & Co."},
+  {id:"uk_emob_smart_home",icon:"\u{1F3E0}",title:"[BETA] E-Mob: EV & Smart Home",group:"emobilitaet",prompt:"Welches Protokoll ermoeglicht diese EV-Smart-Home-Funktion?",desc:"OCPP, ISO 15118, EEBus, OpenADR"},
+  {id:"uk_emob_privilegien",icon:"\u{1F4CB}",title:"[BETA] E-Mob: EV-Privilegien",group:"emobilitaet",prompt:"In welchem Land gilt dieses EV-Privileg?",desc:"Norwegen, USA, Deutschland & Co."},
+  {id:"uk_emob_port_position",icon:"\u{1F50C}",title:"[BETA] E-Mob: Ladeanschluss-Position",group:"emobilitaet",prompt:"Wo sitzt der Ladeanschluss bei diesem Fahrzeug?",desc:"iX3 hinten links, Mach-E vorne links"},
+  {id:"uk_emob_ev_reifen",icon:"\u{1F6DE}",title:"[BETA] E-Mob: EV-Reifen",group:"emobilitaet",prompt:"Welchen Vorteil bietet dieses EV-Reifenmerkmal?",desc:"Geraeusch, Gewicht, Reichweite, Grip"},
+  {id:"uk_emob_roaming",icon:"\u{1F310}",title:"[BETA] E-Mob: Lade-Roaming",group:"emobilitaet",prompt:"Mit welchem Partner kann dieses Ladenetzwerk roamen?",desc:"Ionity, EnBW, ChargePoint & OCPI"},
+  {id:"uk_emob_warnleuchten",icon:"\u{1F6A8}",title:"[BETA] E-Mob: Warnleuchten",group:"emobilitaet",prompt:"Was bedeutet diese EV-Warnanzeige?",desc:"Batterie, Schildkroete, Thermometer & Co."},
+  {id:"uk_emob_startups_match",icon:"\u{1F30D}",title:"[BETA] E-Mob: Startup-Laender",group:"emobilitaet",prompt:"Aus welchem Land stammt dieses EV-Startup?",desc:"Rivian, NIO, Rimac & Co."},
+  {id:"uk_emob_reichweiten_killer",icon:"\u{1F4C9}",title:"[BETA] E-Mob: Reichweiten-Killer",group:"emobilitaet",prompt:"Welcher Faktor reduziert die EV-Reichweite hier?",desc:"Kaelte, Autobahn, Klima, Gewicht"},
+  {id:"uk_emob_avas",icon:"\u{1F50A}",title:"[BETA] E-Mob: AVAS-Vorschriften",group:"emobilitaet",prompt:"Was schreibt die AVAS-Vorschrift hier vor?",desc:"Pflichtgeraeusch unter 20 km/h"},
+  {id:"uk_emob_subventionen",icon:"\u{1F4B6}",title:"[BETA] E-Mob: Subventionen",group:"emobilitaet",prompt:"In welchem Land gilt diese EV-Foerderung?",desc:"Umweltbonus, IRA, Bonus Ecologique"},
+  {id:"uk_emob_etikette",icon:"\u{1F91D}",title:"[BETA] E-Mob: Ladetikette",group:"emobilitaet",prompt:"Welche Verhaltensregel passt zu dieser Ladesituation?",desc:"Kabel wegraeuumen, nicht blockieren & Co."},
+  {id:"uk_emob_konzeptautos",icon:"\u{1F3CE}\uFE0F",title:"[BETA] E-Mob: Konzeptfahrzeuge",group:"emobilitaet",prompt:"Von welchem Hersteller stammt dieses EV-Konzept?",desc:"Vision EQXX, i Vision Dee & Co."},
+  {id:"uk_emob_strommix",icon:"\u{1F4A1}",title:"[BETA] E-Mob: Strommix",group:"emobilitaet",prompt:"In welche EE-Anteil-Kategorie faellt dieses Land?",desc:"Norwegen >80%, Polen <30%"},
   /* -- E-Mobilitaet: WS -- */
-  {id:"ws_emob_schnellladestation",icon:"\u26A1",title:"WS: Schnellladestation",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SCHNELLLADESTATION!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
-  {id:"ws_emob_rekuperation",icon:"\u{1F501}",title:"WS: Rekuperation",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus REKUPERATION!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
-  {id:"ws_emob_reichweitenangst",icon:"\u{1F628}",title:"WS: Reichweitenangst",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus REICHWEITENANGST!",desc:"Anagramm-R\u00e4tsel \u2014 16 Buchstaben"},
-  {id:"ws_emob_fahrassistenzsystem",icon:"\u{1F916}",title:"WS: Fahrassistenzsystem",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus FAHRASSISTENZSYSTEM!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
-  {id:"ws_emob_bordnetzspannung",icon:"\u{1F50C}",title:"WS: Bordnetzspannung",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BORDNETZSPANNUNG!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
-  {id:"ws_emob_elektroantrieb",icon:"\u{1F697}",title:"WS: Elektroantrieb",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus ELEKTROANTRIEB!",desc:"Anagramm-R\u00e4tsel \u2014 14 Buchstaben"},
-  {id:"ws_emob_wechselstromladen",icon:"\u{1F4A1}",title:"WS: Wechselstromladen",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus WECHSELSTROMLADEN!",desc:"Anagramm-R\u00e4tsel \u2014 17 Buchstaben"},
-  {id:"ws_emob_gleichstromladen",icon:"\u26A1",title:"WS: Gleichstromladen",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus GLEICHSTROMLADEN!",desc:"Anagramm-R\u00e4tsel \u2014 16 Buchstaben"},
-  {id:"ws_emob_batteriemanagement",icon:"\u{1F50B}",title:"WS: Batteriemanagement",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BATTERIEMANAGEMENT!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
-  {id:"ws_emob_bidirektionalladen",icon:"\u{1F501}",title:"WS: Bidirektionalladen",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BIDIREKTIONALLADEN!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
+  {id:"ws_emob_schnellladestation",icon:"\u26A1",title:"[BETA] WS: Schnellladestation",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SCHNELLLADESTATION!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
+  {id:"ws_emob_rekuperation",icon:"\u{1F501}",title:"[BETA] WS: Rekuperation",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus REKUPERATION!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
+  {id:"ws_emob_reichweitenangst",icon:"\u{1F628}",title:"[BETA] WS: Reichweitenangst",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus REICHWEITENANGST!",desc:"Anagramm-R\u00e4tsel \u2014 16 Buchstaben"},
+  {id:"ws_emob_fahrassistenzsystem",icon:"\u{1F916}",title:"[BETA] WS: Fahrassistenzsystem",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus FAHRASSISTENZSYSTEM!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
+  {id:"ws_emob_bordnetzspannung",icon:"\u{1F50C}",title:"[BETA] WS: Bordnetzspannung",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BORDNETZSPANNUNG!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
+  {id:"ws_emob_elektroantrieb",icon:"\u{1F697}",title:"[BETA] WS: Elektroantrieb",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus ELEKTROANTRIEB!",desc:"Anagramm-R\u00e4tsel \u2014 14 Buchstaben"},
+  {id:"ws_emob_wechselstromladen",icon:"\u{1F4A1}",title:"[BETA] WS: Wechselstromladen",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus WECHSELSTROMLADEN!",desc:"Anagramm-R\u00e4tsel \u2014 17 Buchstaben"},
+  {id:"ws_emob_gleichstromladen",icon:"\u26A1",title:"[BETA] WS: Gleichstromladen",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus GLEICHSTROMLADEN!",desc:"Anagramm-R\u00e4tsel \u2014 16 Buchstaben"},
+  {id:"ws_emob_batteriemanagement",icon:"\u{1F50B}",title:"[BETA] WS: Batteriemanagement",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BATTERIEMANAGEMENT!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
+  {id:"ws_emob_bidirektionalladen",icon:"\u{1F501}",title:"[BETA] WS: Bidirektionalladen",group:"emobilitaet",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus BIDIREKTIONALLADEN!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
   /* === Phase 231: Arch\u00e4ologie & Verlorene Welten === */
-  {id:"uk_arch_artefakte",icon:"\u{1F3FA}",title:"Artefakt-Standorte",group:"archaeologie",prompt:"Wo wird dieses Artefakt aufbewahrt?",desc:"Ber\u00fchmte Artefakte & ihre Museen"},
-  {id:"uk_arch_megalithanlagen",icon:"\u{1FAA8}",title:"Megalith-Anlagen",group:"archaeologie",prompt:"Wo liegt diese Megalithanlage?",desc:"Steinkreise & Menhire weltweit"},
-  {id:"uk_arch_versunkene_staedte",icon:"\u{1F30A}",title:"Versunkene St\u00e4dte",group:"archaeologie",prompt:"Wo liegt diese versunkene Stadt?",desc:"Unterwasserfunde & verlorene Orte"},
-  {id:"uk_arch_hoehlenmalerien",icon:"\u{1F5BC}",title:"H\u00f6hlenmalereien",group:"archaeologie",prompt:"Wo befinden sich diese H\u00f6hlenmalereien?",desc:"Pr\u00e4historische Kunst weltweit"},
-  {id:"uk_arch_digitalprojekte",icon:"\u{1F4BB}",title:"Digital-Arch\u00e4ologie",group:"archaeologie",prompt:"Wo hat diese Institution ihren Sitz?",desc:"3D-Scanning & digitales Erbe"},
-  {id:"uk_arch_graberfelder",icon:"\u26B0",title:"Nekropolen",group:"archaeologie",prompt:"Wo liegt diese Nekropole?",desc:"Ber\u00fchmte Gr\u00e4berfelder & Gr\u00e4ber"},
-  {id:"uk_arch_schiffswracks",icon:"\u{1F6A2}",title:"Schiffswracks",group:"archaeologie",prompt:"Wo liegt dieses Schiffswrack?",desc:"Ber\u00fchmte Wracks weltweit"},
-  {id:"uk_arch_maya_inka",icon:"\u{1F333}",title:"Maya & Inka-Ruinen",group:"archaeologie",prompt:"Wo liegt diese Ruine?",desc:"Pr\u00e4kolumbische Kulturst\u00e4tten"},
-  {id:"uk_arch_roemische_limes",icon:"\u{1F6E1}",title:"R\u00f6mischer Limes",group:"archaeologie",prompt:"Wo liegt dieses Grenzkastell?",desc:"R\u00f6mische Grenzanlagen & Castra"},
-  {id:"uk_arch_pfahlbauten",icon:"\u{1F3DA}",title:"Pfahlbauten",group:"archaeologie",prompt:"Wo befinden sich diese Pfahlbauten?",desc:"Pr\u00e4historische Seesiedlungen"},
-  {id:"uk_arch_wuestenstaedte",icon:"\u{1F3DC}",title:"W\u00fcstenkulturen",group:"archaeologie",prompt:"Wo liegt diese Ruinenstadt?",desc:"Verlassene Karawanenstationen"},
-  {id:"uk_arch_fossilien",icon:"\u{1F9B4}",title:"Fossilienfundst\u00e4tten",group:"archaeologie",prompt:"Wo liegt diese Fossilienst\u00e4tte?",desc:"Dinosaurier & Fossilien weltweit"},
-  {id:"uk_arch_sensationsfunde",icon:"\u2728",title:"Sensationsfunde",group:"archaeologie",prompt:"Wo wurde dieser Sensationsfund gemacht?",desc:"Zuf\u00e4llige Entdeckungen der Geschichte"},
-  {id:"hl_arch_alter_artefakte",icon:"\u23F3",title:"H/L: Alter von Artefakten",group:"archaeologie",prompt:"Welches Artefakt ist \u00e4lter?",desc:"H\u00f6her/Niedriger: Alter in Jahren v. Chr."},
-  {id:"hl_arch_gewicht_megalithen",icon:"\u2696\uFE0F",title:"H/L: Megalith-Gewicht",group:"archaeologie",prompt:"Welcher Megalith ist schwerer?",desc:"H\u00f6her/Niedriger: Gewicht in Tonnen"},
-  {id:"hl_arch_entdeckungsjahr",icon:"\u{1F4C5}",title:"H/L: Entdeckungsjahr",group:"archaeologie",prompt:"Welche Entdeckung ist j\u00fcnger?",desc:"H\u00f6her/Niedriger: Jahr der Entdeckung"},
-  {id:"hl_arch_fundtiefe",icon:"\u{1F4CF}",title:"H/L: Fundtiefe",group:"archaeologie",prompt:"Welcher Fund liegt tiefer?",desc:"H\u00f6her/Niedriger: Tiefe in Metern"},
-  {id:"hl_arch_groesse_ruinen",icon:"\u{1F4D0}",title:"H/L: Gr\u00f6\u00dfe von Ruinen",group:"archaeologie",prompt:"Welche Ruine ist gr\u00f6\u00dfer?",desc:"H\u00f6her/Niedriger: Fl\u00e4che in Hektar"},
-  {id:"hl_arch_grabbeigaben",icon:"\u{1FAF4}",title:"H/L: Grabbeigaben",group:"archaeologie",prompt:"Wo wurden mehr Grabbeigaben gefunden?",desc:"H\u00f6her/Niedriger: Anzahl Objekte"},
-  {id:"hl_arch_strassenlaenge",icon:"\u{1F6E3}",title:"H/L: Antike Stra\u00dfenl\u00e4nge",group:"archaeologie",prompt:"Welches Stra\u00dfennetz ist l\u00e4nger?",desc:"H\u00f6her/Niedriger: Kilometer Netzl\u00e4nge"},
-  {id:"hl_arch_c14_alter",icon:"\u269B\uFE0F",title:"H/L: C14-Alter",group:"archaeologie",prompt:"Welches Objekt ist laut C14 \u00e4lter?",desc:"H\u00f6her/Niedriger: Jahre BP"},
-  {id:"hl_arch_scandatenvolumen",icon:"\u{1F4BE}",title:"H/L: 3D-Scan-Daten",group:"archaeologie",prompt:"Welches Scan-Projekt hat mehr Daten?",desc:"H\u00f6her/Niedriger: GB Scandaten"},
-  {id:"hl_arch_bauzeit",icon:"\u{1F3D7}",title:"H/L: Bauzeit",group:"archaeologie",prompt:"Wessen Bau dauerte l\u00e4nger?",desc:"H\u00f6her/Niedriger: Jahre Bauzeit"},
-  {id:"hl_arch_hoehe_bauwerke",icon:"\u{1F5FC}",title:"H/L: H\u00f6he antiker Bauwerke",group:"archaeologie",prompt:"Welches Bauwerk ist h\u00f6her?",desc:"H\u00f6her/Niedriger: Meter H\u00f6he"},
-  {id:"hl_arch_versicherungswert",icon:"\u{1F4B0}",title:"H/L: Artefakt-Wert",group:"archaeologie",prompt:"Welches Artefakt ist wertvoller?",desc:"H\u00f6her/Niedriger: Sch\u00e4tzwert in Mio. EUR"},
-  {id:"uk_arch_epochen",icon:"\u{1F4DC}",title:"Artefakt-Epochen",group:"archaeologie",prompt:"Welcher Epoche geh\u00f6rt dieses Artefakt an?",desc:"Stein-, Bronze-, Eisenzeit oder Antike"},
-  {id:"uk_arch_werkzeuge",icon:"\u{1FA93}",title:"Antike Werkzeuge",group:"archaeologie",prompt:"Aus welcher Zeit stammt dieses Werkzeug?",desc:"Werkzeuge & ihre Epochen"},
-  {id:"uk_arch_archaeologen",icon:"\u{1F9D1}\u200D\u{1F52C}",title:"Ber\u00fchmte Arch\u00e4ologen",group:"archaeologie",prompt:"Wer entdeckte diese Fundst\u00e4tte?",desc:"Entdeckungen & ihre Entdecker"},
-  {id:"uk_arch_datierungsmethoden",icon:"\u{1F9EA}",title:"Datierungsmethoden",group:"archaeologie",prompt:"Welche Methode passt hier?",desc:"C14, Dendro, TL, Stratigraphie"},
-  {id:"uk_arch_3d_methoden",icon:"\u{1F4F7}",title:"3D-Dokumentation",group:"archaeologie",prompt:"F\u00fcr welche Anwendung am besten?",desc:"Photogrammetrie, LiDAR & Co"},
-  {id:"uk_arch_schriften",icon:"\u270D\uFE0F",title:"Antike Schriften",group:"archaeologie",prompt:"Welcher Kultur entstammt diese Schrift?",desc:"Keilschrift, Hieroglyphen & mehr"},
-  {id:"uk_arch_goetter",icon:"\u26E9\uFE0F",title:"Antike G\u00f6tter",group:"archaeologie",prompt:"Zu welcher Kultur geh\u00f6rt diese Gottheit?",desc:"G\u00f6tter der Antike"},
-  {id:"uk_arch_bestattungsriten",icon:"\u26B0\uFE0F",title:"Bestattungsr\u00e4ten",group:"archaeologie",prompt:"Welcher Kultur geh\u00f6rt dieser Ritus?",desc:"Begr\u00e4bnispraktiken weltweit"},
-  {id:"uk_arch_stratigraphie",icon:"\u{1F4CA}",title:"Stratigraphie-Prinzipien",group:"archaeologie",prompt:"Welches Prinzip wird beschrieben?",desc:"Grundlagen der Schichtenlehre"},
-  {id:"uk_arch_keramikstile",icon:"\u{1FAD9}",title:"Keramikstile",group:"archaeologie",prompt:"Welcher Kultur geh\u00f6rt dieser Stil?",desc:"T\u00f6pferei durch die Epochen"},
-  {id:"uk_arch_numismatik",icon:"\u{1FA99}",title:"Antike M\u00fcnzen",group:"archaeologie",prompt:"Welcher Zivilisation geh\u00f6rt diese M\u00fcnze?",desc:"M\u00fcnzkunde der Antike"},
-  {id:"uk_arch_isotopenanalyse",icon:"\u269B\uFE0F",title:"Isotopenanalyse",group:"archaeologie",prompt:"Was verr\u00e4t diese Analyse?",desc:"Was Isotope \u00fcber die Vergangenheit sagen"},
-  {id:"uk_arch_museen",icon:"\u{1F3DB}",title:"Artefakte & Museen",group:"archaeologie",prompt:"In welcher Stadt wird das aufbewahrt?",desc:"Ber\u00fchmte Sammlungen & ihr Standort"},
-  {id:"uk_arch_archaeobotanik",icon:"\u{1F33F}",title:"Arch\u00e4obotanik",group:"archaeologie",prompt:"Was verr\u00e4t dieser Pflanzenfund?",desc:"Pflanzenreste als historische Quellen"},
-  {id:"uk_arch_handelsrouten",icon:"\u{1F9ED}",title:"Antike Handelsrouten",group:"archaeologie",prompt:"\u00dcber welche Route kam dieses Gut?",desc:"Seidenstra\u00dfe, Bernstein & mehr"},
-  {id:"uk_arch_waehrungen",icon:"\u{1FA99}",title:"Antike W\u00e4hrungen",group:"archaeologie",prompt:"Welcher Zivilisation geh\u00f6rte diese W\u00e4hrung?",desc:"Geldgeschichte der Antike"},
-  {id:"uk_arch_faelschungen",icon:"\u{1F575}\uFE0F",title:"Arch\u00e4ologische F\u00e4lschungen",group:"archaeologie",prompt:"Was behauptete diese F\u00e4lschung zu sein?",desc:"Ber\u00fchmte Betrugsf\u00e4lle"},
-  {id:"uk_arch_tempel_ordnungen",icon:"\u{1F3DB}\uFE0F",title:"Griechische Tempelordnungen",group:"archaeologie",prompt:"Welcher Ordnung geh\u00f6rt dieser Tempel?",desc:"Dorisch, Ionisch, Korinthisch"},
-  {id:"uk_arch_indus_tal",icon:"\u{1F30F}",title:"Indus-Tal-Kulturst\u00e4tten",group:"archaeologie",prompt:"In welchem Land liegt diese Fundst\u00e4tte?",desc:"Indus-Zivilisation & ihre Orte"},
-  {id:"uk_arch_wikinger",icon:"\u2694\uFE0F",title:"Wikinger-Siedlungen",group:"archaeologie",prompt:"Wo liegt diese Wikinger-Siedlung heute?",desc:"Nordm\u00e4nner & ihre Orte"},
-  {id:"uk_arch_repatriierung",icon:"\u{1F3F3}\uFE0F",title:"Repatriierung",group:"archaeologie",prompt:"Welches Land fordert dieses Artefakt zur\u00fcck?",desc:"Kulturgutr\u00fcckgabe weltweit"},
-  {id:"uk_arch_popkultur_vs_realitaet",icon:"\u{1F3AC}",title:"Popkultur vs. Realit\u00e4t",group:"archaeologie",prompt:"Wie korrekt ist diese Darstellung?",desc:"Hollywood-Arch\u00e4ologie unter der Lupe"},
-  {id:"uk_arch_welterbe_gefahr",icon:"\u26A0\uFE0F",title:"UNESCO: Bedrohte Welterbe",group:"archaeologie",prompt:"Welche Bedrohung gef\u00e4hrdet diese St\u00e4tte?",desc:"Krieg, Klima, Tourismus, Urbanisierung"},
-  {id:"uk_arch_zufallsfunde",icon:"\u{1F4A5}",title:"Zufallsfunde",group:"archaeologie",prompt:"Wie wurde diese Entdeckung gemacht?",desc:"Sensationen durch Zufall"},
-  {id:"uk_arch_digifund_epochen",icon:"\u{1F5A5}\uFE0F",title:"Digitalprojekte nach Epoche",group:"archaeologie",prompt:"Welche Epoche deckt dieses Projekt ab?",desc:"Digitale Arch\u00e4ologie & Zeitr\u00e4ume"},
-  {id:"uk_arch_antike_medizin",icon:"\u{1FA7A}",title:"Antike Medizin",group:"archaeologie",prompt:"Welcher Kultur entstammt diese Praxis?",desc:"Heilkunde in der Antike"},
-  {id:"uk_arch_schatzsuche_methoden",icon:"\u{1F4E1}",title:"Surveymethoden",group:"archaeologie",prompt:"Was erkennt diese Methode?",desc:"Magnetometrie, Radar, LiDAR & mehr"},
-  {id:"uk_arch_antike_astronomie",icon:"\u2604\uFE0F",title:"Antike Astronomie",group:"archaeologie",prompt:"Welcher Kultur geh\u00f6rt diese Beobachtung?",desc:"Sternkunde & astronomische Kultst\u00e4tten"},
-  {id:"ws_arch_ausgrabungsstaette",icon:"\u26CF\uFE0F",title:"WS: Ausgrabungsst\u00e4tte",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus AUSGRABUNGSSTAETTE!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
-  {id:"ws_arch_antiquitaet",icon:"\u{1F3FA}",title:"WS: Antiquit\u00e4t",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus ANTIQUITAET!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
-  {id:"ws_arch_dendrochronologie",icon:"\u{1F332}",title:"WS: Dendrochronologie",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus DENDROCHRONOLOGIE!",desc:"Anagramm-R\u00e4tsel \u2014 17 Buchstaben"},
-  {id:"ws_arch_hieroglyphen",icon:"\u{1F4DC}",title:"WS: Hieroglyphen",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus HIEROGLYPHEN!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
-  {id:"ws_arch_photogrammetrie",icon:"\u{1F4F8}",title:"WS: Photogrammetrie",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus PHOTOGRAMMETRIE!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
-  {id:"ws_arch_stratigraphie",icon:"\u{1F4CA}",title:"WS: Stratigraphie",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus STRATIGRAPHIE!",desc:"Anagramm-R\u00e4tsel \u2014 13 Buchstaben"},
-  {id:"ws_arch_radiocarbondatierung",icon:"\u269B\uFE0F",title:"WS: Radiocarbondatierung",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus RADIOCARBONDATIERUNG!",desc:"Anagramm-R\u00e4tsel \u2014 20 Buchstaben"}
+  {id:"uk_arch_artefakte",icon:"\u{1F3FA}",title:"[BETA] Artefakt-Standorte",group:"archaeologie",prompt:"Wo wird dieses Artefakt aufbewahrt?",desc:"Ber\u00fchmte Artefakte & ihre Museen"},
+  {id:"uk_arch_megalithanlagen",icon:"\u{1FAA8}",title:"[BETA] Megalith-Anlagen",group:"archaeologie",prompt:"Wo liegt diese Megalithanlage?",desc:"Steinkreise & Menhire weltweit"},
+  {id:"uk_arch_versunkene_staedte",icon:"\u{1F30A}",title:"[BETA] Versunkene St\u00e4dte",group:"archaeologie",prompt:"Wo liegt diese versunkene Stadt?",desc:"Unterwasserfunde & verlorene Orte"},
+  {id:"uk_arch_hoehlenmalerien",icon:"\u{1F5BC}",title:"[BETA] H\u00f6hlenmalereien",group:"archaeologie",prompt:"Wo befinden sich diese H\u00f6hlenmalereien?",desc:"Pr\u00e4historische Kunst weltweit"},
+  {id:"uk_arch_digitalprojekte",icon:"\u{1F4BB}",title:"[BETA] Digital-Arch\u00e4ologie",group:"archaeologie",prompt:"Wo hat diese Institution ihren Sitz?",desc:"3D-Scanning & digitales Erbe"},
+  {id:"uk_arch_graberfelder",icon:"\u26B0",title:"[BETA] Nekropolen",group:"archaeologie",prompt:"Wo liegt diese Nekropole?",desc:"Ber\u00fchmte Gr\u00e4berfelder & Gr\u00e4ber"},
+  {id:"uk_arch_schiffswracks",icon:"\u{1F6A2}",title:"[BETA] Schiffswracks",group:"archaeologie",prompt:"Wo liegt dieses Schiffswrack?",desc:"Ber\u00fchmte Wracks weltweit"},
+  {id:"uk_arch_maya_inka",icon:"\u{1F333}",title:"[BETA] Maya & Inka-Ruinen",group:"archaeologie",prompt:"Wo liegt diese Ruine?",desc:"Pr\u00e4kolumbische Kulturst\u00e4tten"},
+  {id:"uk_arch_roemische_limes",icon:"\u{1F6E1}",title:"[BETA] R\u00f6mischer Limes",group:"archaeologie",prompt:"Wo liegt dieses Grenzkastell?",desc:"R\u00f6mische Grenzanlagen & Castra"},
+  {id:"uk_arch_pfahlbauten",icon:"\u{1F3DA}",title:"[BETA] Pfahlbauten",group:"archaeologie",prompt:"Wo befinden sich diese Pfahlbauten?",desc:"Pr\u00e4historische Seesiedlungen"},
+  {id:"uk_arch_wuestenstaedte",icon:"\u{1F3DC}",title:"[BETA] W\u00fcstenkulturen",group:"archaeologie",prompt:"Wo liegt diese Ruinenstadt?",desc:"Verlassene Karawanenstationen"},
+  {id:"uk_arch_fossilien",icon:"\u{1F9B4}",title:"[BETA] Fossilienfundst\u00e4tten",group:"archaeologie",prompt:"Wo liegt diese Fossilienst\u00e4tte?",desc:"Dinosaurier & Fossilien weltweit"},
+  {id:"uk_arch_sensationsfunde",icon:"\u2728",title:"[BETA] Sensationsfunde",group:"archaeologie",prompt:"Wo wurde dieser Sensationsfund gemacht?",desc:"Zuf\u00e4llige Entdeckungen der Geschichte"},
+  {id:"hl_arch_alter_artefakte",icon:"\u23F3",title:"[BETA] H/L: Alter von Artefakten",group:"archaeologie",prompt:"Welches Artefakt ist \u00e4lter?",desc:"H\u00f6her/Niedriger: Alter in Jahren v. Chr."},
+  {id:"hl_arch_gewicht_megalithen",icon:"\u2696\uFE0F",title:"[BETA] H/L: Megalith-Gewicht",group:"archaeologie",prompt:"Welcher Megalith ist schwerer?",desc:"H\u00f6her/Niedriger: Gewicht in Tonnen"},
+  {id:"hl_arch_entdeckungsjahr",icon:"\u{1F4C5}",title:"[BETA] H/L: Entdeckungsjahr",group:"archaeologie",prompt:"Welche Entdeckung ist j\u00fcnger?",desc:"H\u00f6her/Niedriger: Jahr der Entdeckung"},
+  {id:"hl_arch_fundtiefe",icon:"\u{1F4CF}",title:"[BETA] H/L: Fundtiefe",group:"archaeologie",prompt:"Welcher Fund liegt tiefer?",desc:"H\u00f6her/Niedriger: Tiefe in Metern"},
+  {id:"hl_arch_groesse_ruinen",icon:"\u{1F4D0}",title:"[BETA] H/L: Gr\u00f6\u00dfe von Ruinen",group:"archaeologie",prompt:"Welche Ruine ist gr\u00f6\u00dfer?",desc:"H\u00f6her/Niedriger: Fl\u00e4che in Hektar"},
+  {id:"hl_arch_grabbeigaben",icon:"\u{1FAF4}",title:"[BETA] H/L: Grabbeigaben",group:"archaeologie",prompt:"Wo wurden mehr Grabbeigaben gefunden?",desc:"H\u00f6her/Niedriger: Anzahl Objekte"},
+  {id:"hl_arch_strassenlaenge",icon:"\u{1F6E3}",title:"[BETA] H/L: Antike Stra\u00dfenl\u00e4nge",group:"archaeologie",prompt:"Welches Stra\u00dfennetz ist l\u00e4nger?",desc:"H\u00f6her/Niedriger: Kilometer Netzl\u00e4nge"},
+  {id:"hl_arch_c14_alter",icon:"\u269B\uFE0F",title:"[BETA] H/L: C14-Alter",group:"archaeologie",prompt:"Welches Objekt ist laut C14 \u00e4lter?",desc:"H\u00f6her/Niedriger: Jahre BP"},
+  {id:"hl_arch_scandatenvolumen",icon:"\u{1F4BE}",title:"[BETA] H/L: 3D-Scan-Daten",group:"archaeologie",prompt:"Welches Scan-Projekt hat mehr Daten?",desc:"H\u00f6her/Niedriger: GB Scandaten"},
+  {id:"hl_arch_bauzeit",icon:"\u{1F3D7}",title:"[BETA] H/L: Bauzeit",group:"archaeologie",prompt:"Wessen Bau dauerte l\u00e4nger?",desc:"H\u00f6her/Niedriger: Jahre Bauzeit"},
+  {id:"hl_arch_hoehe_bauwerke",icon:"\u{1F5FC}",title:"[BETA] H/L: H\u00f6he antiker Bauwerke",group:"archaeologie",prompt:"Welches Bauwerk ist h\u00f6her?",desc:"H\u00f6her/Niedriger: Meter H\u00f6he"},
+  {id:"hl_arch_versicherungswert",icon:"\u{1F4B0}",title:"[BETA] H/L: Artefakt-Wert",group:"archaeologie",prompt:"Welches Artefakt ist wertvoller?",desc:"H\u00f6her/Niedriger: Sch\u00e4tzwert in Mio. EUR"},
+  {id:"uk_arch_epochen",icon:"\u{1F4DC}",title:"[BETA] Artefakt-Epochen",group:"archaeologie",prompt:"Welcher Epoche geh\u00f6rt dieses Artefakt an?",desc:"Stein-, Bronze-, Eisenzeit oder Antike"},
+  {id:"uk_arch_werkzeuge",icon:"\u{1FA93}",title:"[BETA] Antike Werkzeuge",group:"archaeologie",prompt:"Aus welcher Zeit stammt dieses Werkzeug?",desc:"Werkzeuge & ihre Epochen"},
+  {id:"uk_arch_archaeologen",icon:"\u{1F9D1}\u200D\u{1F52C}",title:"[BETA] Ber\u00fchmte Arch\u00e4ologen",group:"archaeologie",prompt:"Wer entdeckte diese Fundst\u00e4tte?",desc:"Entdeckungen & ihre Entdecker"},
+  {id:"uk_arch_datierungsmethoden",icon:"\u{1F9EA}",title:"[BETA] Datierungsmethoden",group:"archaeologie",prompt:"Welche Methode passt hier?",desc:"C14, Dendro, TL, Stratigraphie"},
+  {id:"uk_arch_3d_methoden",icon:"\u{1F4F7}",title:"[BETA] 3D-Dokumentation",group:"archaeologie",prompt:"F\u00fcr welche Anwendung am besten?",desc:"Photogrammetrie, LiDAR & Co"},
+  {id:"uk_arch_schriften",icon:"\u270D\uFE0F",title:"[BETA] Antike Schriften",group:"archaeologie",prompt:"Welcher Kultur entstammt diese Schrift?",desc:"Keilschrift, Hieroglyphen & mehr"},
+  {id:"uk_arch_goetter",icon:"\u26E9\uFE0F",title:"[BETA] Antike G\u00f6tter",group:"archaeologie",prompt:"Zu welcher Kultur geh\u00f6rt diese Gottheit?",desc:"G\u00f6tter der Antike"},
+  {id:"uk_arch_bestattungsriten",icon:"\u26B0\uFE0F",title:"[BETA] Bestattungsr\u00e4ten",group:"archaeologie",prompt:"Welcher Kultur geh\u00f6rt dieser Ritus?",desc:"Begr\u00e4bnispraktiken weltweit"},
+  {id:"uk_arch_stratigraphie",icon:"\u{1F4CA}",title:"[BETA] Stratigraphie-Prinzipien",group:"archaeologie",prompt:"Welches Prinzip wird beschrieben?",desc:"Grundlagen der Schichtenlehre"},
+  {id:"uk_arch_keramikstile",icon:"\u{1FAD9}",title:"[BETA] Keramikstile",group:"archaeologie",prompt:"Welcher Kultur geh\u00f6rt dieser Stil?",desc:"T\u00f6pferei durch die Epochen"},
+  {id:"uk_arch_numismatik",icon:"\u{1FA99}",title:"[BETA] Antike M\u00fcnzen",group:"archaeologie",prompt:"Welcher Zivilisation geh\u00f6rt diese M\u00fcnze?",desc:"M\u00fcnzkunde der Antike"},
+  {id:"uk_arch_isotopenanalyse",icon:"\u269B\uFE0F",title:"[BETA] Isotopenanalyse",group:"archaeologie",prompt:"Was verr\u00e4t diese Analyse?",desc:"Was Isotope \u00fcber die Vergangenheit sagen"},
+  {id:"uk_arch_museen",icon:"\u{1F3DB}",title:"[BETA] Artefakte & Museen",group:"archaeologie",prompt:"In welcher Stadt wird das aufbewahrt?",desc:"Ber\u00fchmte Sammlungen & ihr Standort"},
+  {id:"uk_arch_archaeobotanik",icon:"\u{1F33F}",title:"[BETA] Arch\u00e4obotanik",group:"archaeologie",prompt:"Was verr\u00e4t dieser Pflanzenfund?",desc:"Pflanzenreste als historische Quellen"},
+  {id:"uk_arch_handelsrouten",icon:"\u{1F9ED}",title:"[BETA] Antike Handelsrouten",group:"archaeologie",prompt:"\u00dcber welche Route kam dieses Gut?",desc:"Seidenstra\u00dfe, Bernstein & mehr"},
+  {id:"uk_arch_waehrungen",icon:"\u{1FA99}",title:"[BETA] Antike W\u00e4hrungen",group:"archaeologie",prompt:"Welcher Zivilisation geh\u00f6rte diese W\u00e4hrung?",desc:"Geldgeschichte der Antike"},
+  {id:"uk_arch_faelschungen",icon:"\u{1F575}\uFE0F",title:"[BETA] Arch\u00e4ologische F\u00e4lschungen",group:"archaeologie",prompt:"Was behauptete diese F\u00e4lschung zu sein?",desc:"Ber\u00fchmte Betrugsf\u00e4lle"},
+  {id:"uk_arch_tempel_ordnungen",icon:"\u{1F3DB}\uFE0F",title:"[BETA] Griechische Tempelordnungen",group:"archaeologie",prompt:"Welcher Ordnung geh\u00f6rt dieser Tempel?",desc:"Dorisch, Ionisch, Korinthisch"},
+  {id:"uk_arch_indus_tal",icon:"\u{1F30F}",title:"[BETA] Indus-Tal-Kulturst\u00e4tten",group:"archaeologie",prompt:"In welchem Land liegt diese Fundst\u00e4tte?",desc:"Indus-Zivilisation & ihre Orte"},
+  {id:"uk_arch_wikinger",icon:"\u2694\uFE0F",title:"[BETA] Wikinger-Siedlungen",group:"archaeologie",prompt:"Wo liegt diese Wikinger-Siedlung heute?",desc:"Nordm\u00e4nner & ihre Orte"},
+  {id:"uk_arch_repatriierung",icon:"\u{1F3F3}\uFE0F",title:"[BETA] Repatriierung",group:"archaeologie",prompt:"Welches Land fordert dieses Artefakt zur\u00fcck?",desc:"Kulturgutr\u00fcckgabe weltweit"},
+  {id:"uk_arch_popkultur_vs_realitaet",icon:"\u{1F3AC}",title:"[BETA] Popkultur vs. Realit\u00e4t",group:"archaeologie",prompt:"Wie korrekt ist diese Darstellung?",desc:"Hollywood-Arch\u00e4ologie unter der Lupe"},
+  {id:"uk_arch_welterbe_gefahr",icon:"\u26A0\uFE0F",title:"[BETA] UNESCO: Bedrohte Welterbe",group:"archaeologie",prompt:"Welche Bedrohung gef\u00e4hrdet diese St\u00e4tte?",desc:"Krieg, Klima, Tourismus, Urbanisierung"},
+  {id:"uk_arch_zufallsfunde",icon:"\u{1F4A5}",title:"[BETA] Zufallsfunde",group:"archaeologie",prompt:"Wie wurde diese Entdeckung gemacht?",desc:"Sensationen durch Zufall"},
+  {id:"uk_arch_digifund_epochen",icon:"\u{1F5A5}\uFE0F",title:"[BETA] Digitalprojekte nach Epoche",group:"archaeologie",prompt:"Welche Epoche deckt dieses Projekt ab?",desc:"Digitale Arch\u00e4ologie & Zeitr\u00e4ume"},
+  {id:"uk_arch_antike_medizin",icon:"\u{1FA7A}",title:"[BETA] Antike Medizin",group:"archaeologie",prompt:"Welcher Kultur entstammt diese Praxis?",desc:"Heilkunde in der Antike"},
+  {id:"uk_arch_schatzsuche_methoden",icon:"\u{1F4E1}",title:"[BETA] Surveymethoden",group:"archaeologie",prompt:"Was erkennt diese Methode?",desc:"Magnetometrie, Radar, LiDAR & mehr"},
+  {id:"uk_arch_antike_astronomie",icon:"\u2604\uFE0F",title:"[BETA] Antike Astronomie",group:"archaeologie",prompt:"Welcher Kultur geh\u00f6rt diese Beobachtung?",desc:"Sternkunde & astronomische Kultst\u00e4tten"},
+  {id:"ws_arch_ausgrabungsstaette",icon:"\u26CF\uFE0F",title:"[BETA] WS: Ausgrabungsst\u00e4tte",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus AUSGRABUNGSSTAETTE!",desc:"Anagramm-R\u00e4tsel \u2014 18 Buchstaben"},
+  {id:"ws_arch_antiquitaet",icon:"\u{1F3FA}",title:"[BETA] WS: Antiquit\u00e4t",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus ANTIQUITAET!",desc:"Anagramm-R\u00e4tsel \u2014 11 Buchstaben"},
+  {id:"ws_arch_dendrochronologie",icon:"\u{1F332}",title:"[BETA] WS: Dendrochronologie",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus DENDROCHRONOLOGIE!",desc:"Anagramm-R\u00e4tsel \u2014 17 Buchstaben"},
+  {id:"ws_arch_hieroglyphen",icon:"\u{1F4DC}",title:"[BETA] WS: Hieroglyphen",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus HIEROGLYPHEN!",desc:"Anagramm-R\u00e4tsel \u2014 12 Buchstaben"},
+  {id:"ws_arch_photogrammetrie",icon:"\u{1F4F8}",title:"[BETA] WS: Photogrammetrie",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus PHOTOGRAMMETRIE!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben"},
+  {id:"ws_arch_stratigraphie",icon:"\u{1F4CA}",title:"[BETA] WS: Stratigraphie",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus STRATIGRAPHIE!",desc:"Anagramm-R\u00e4tsel \u2014 13 Buchstaben"},
+  {id:"ws_arch_radiocarbondatierung",icon:"\u269B\uFE0F",title:"[BETA] WS: Radiocarbondatierung",group:"archaeologie",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus RADIOCARBONDATIERUNG!",desc:"Anagramm-R\u00e4tsel \u2014 20 Buchstaben"}
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
@@ -8125,68 +8125,82 @@ function genTiereMatchQ(cat){
 }
 
 /* === Phase 231: Archaeologie-Generatoren === */
-function genArchPinQ(cat){
-  var d=ARCH_PIN_DATA[cat];
-  if(!d||!d.items||!d.items.length)return null;
-  var idx=~~(rng()*d.items.length);
-  var item=d.items[idx];
-  return {type:"uk_pin",subj:item.n,lat:item.lat,lng:item.lng,
-    prompt:d.prompt,cat:cat,itemIdx:idx};
+/* === Phase QC: Generic category-engine factories (Tech/Gastro/Arch/Emob) === */
+function _mkPinQ(DATA){
+  return function(cat){
+    var d=DATA[cat];
+    if(!d||!d.items||!d.items.length)return null;
+    var idx=~~(rng()*d.items.length);
+    var item=d.items[idx];
+    return{type:"uk_pin",subj:item.n,lat:item.lat,lng:item.lng,
+      prompt:d.prompt,cat:cat,itemIdx:idx};
+  };
 }
-function genArchHL(dataKey){
-  var d=ARCH_HL_DATA[dataKey];
-  if(!d||!d.items||d.items.length<2)return null;
-  var len=d.items.length;
-  var W=Math.max(1,Math.floor(len*0.1));
-  var iA,iB;
-  do{iA=~~(rng()*len);iB=~~(rng()*len);}while(iA===iB||Math.abs(iA-iB)<W);
-  var a=d.items[iA],b=d.items[iB];
-  return {type:"hl",a:{name:a.name,val:a.val},b:{name:b.name,val:b.val},
-    unit:d.unit,prompt:d.prompt,higherWins:true};
+function _mkHL(DATA){
+  return function(key){
+    var d=DATA[key];
+    if(!d||!d.items||d.items.length<2)return null;
+    var len=d.items.length;
+    var W=Math.max(1,Math.floor(len*0.1));
+    var iA,iB;
+    do{iA=~~(rng()*len);iB=~~(rng()*len);}while(iA===iB||Math.abs(iA-iB)<W);
+    var a=d.items[iA],b=d.items[iB];
+    return{type:"hl",a:{name:a.name,val:a.val},b:{name:b.name,val:b.val},
+      unit:d.unit,prompt:d.prompt,higherWins:true};
+  };
 }
-function genArchMatchQ(cat){
-  var d=ARCH_MATCH_DATA[cat];
-  if(!d||!d.items||!d.items.length)return null;
-  var items=d.items;
-  var idx=~~(rng()*items.length);
-  var correct=items[idx];
-  var opts;
-  if(d.fixedOpts){
-    opts=d.fixedOpts.slice();
-  } else {
-    var pool=items.map(function(x){return x.c;}).filter(function(c){return c!==correct.c;});
-    var seen=new Set();pool=pool.filter(function(c){if(seen.has(c))return false;seen.add(c);return true;});
-    while(pool.length<3)pool.push(pool[~~(rng()*pool.length)]||correct.c);
-    pool=pool.sort(function(){return rng()-0.5;}).slice(0,3);
-    opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
-  }
-  return {type:"uk_match",subj:correct.n,correct:correct.c,opts:opts,
-    prompt:d.prompt||"Ordne richtig zu:"};
+function _mkMatchQ(DATA){
+  return function(cat){
+    var d=DATA[cat];
+    if(!d||!d.items||!d.items.length)return null;
+    var items=d.items;
+    var idx=~~(rng()*items.length);
+    var correct=items[idx];
+    var opts;
+    if(d.fixedOpts){
+      opts=d.fixedOpts.slice();
+    } else {
+      var pool=items.map(function(x){return x.c;}).filter(function(c){return c!==correct.c;});
+      var seen=new Set();
+      pool=pool.filter(function(c){if(seen.has(c))return false;seen.add(c);return true;});
+      while(pool.length<3)pool.push(pool[~~(rng()*pool.length)]||correct.c);
+      pool=pool.sort(function(){return rng()-0.5;}).slice(0,3);
+      opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
+    }
+    return{type:"uk_match",subj:correct.n,correct:correct.c,opts:opts,
+      prompt:d.prompt||"Ordne richtig zu:"};
+  };
 }
-function initArchWS(key){
-  clearInterval(tIv);_wsDetachKb();
-  var entry=ARCH_WS_DATA[key];
-  if(!entry||!entry.validWords){console.warn("[GeoQuest] ArchWS missing:"+key);S.ph="menu";render();return;}
-  var userLang=S.language||localStorage.getItem("gq_lang")||"en";
-  var wsLang=_WS_LANGS.has(userLang)?userLang:"en";
-  var raw=entry.validWords[wsLang];
-  var hasOwn=Array.isArray(raw)&&raw.length>0;
-  var actualLang=hasOwn?wsLang:"en";
-  var src2=hasOwn?raw:(entry.validWords["en"]||[]);
-  var words=src2.map(function(w){return w.toUpperCase();}).filter(function(w){return w.length>=3;});
-  if(!words.length){console.warn("[GeoQuest] ArchWS no words:"+key);S.ph="menu";render();return;}
-  var usingFallback=actualLang!==userLang;
-  S.wsData={tierWsKey:key,city:entry.word,lang:actualLang,usingFallback:usingFallback,
-    allWords:words,foundWords:[],input:"",phase:"playing",timeLeft:_WS_TIMER,shakeTs:0};
-  S.gameStartTime=Date.now();S.ph="playing";
-  tIv=setInterval(function(){
-    if(!S.wsData||S.wsData.phase!=="playing"){clearInterval(tIv);return;}
-    S.wsData.timeLeft=Math.max(0,(S.wsData.timeLeft||0)-1);
-    if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();}
-    render();
-  },1000);
-  _wsAttachKb();
+function _mkWS(DATA,tag){
+  return function(key){
+    clearInterval(tIv);_wsDetachKb();
+    var entry=DATA[key];
+    if(!entry||!entry.validWords){console.warn("[GeoQuest] "+tag+" WS missing:"+key);S.ph="menu";render();return;}
+    var userLang=S.language||localStorage.getItem("gq_lang")||"en";
+    var wsLang=_WS_LANGS.has(userLang)?userLang:"en";
+    var raw=entry.validWords[wsLang];
+    var hasOwn=Array.isArray(raw)&&raw.length>0;
+    var actualLang=hasOwn?wsLang:"en";
+    var src2=hasOwn?raw:(entry.validWords["en"]||[]);
+    var words=src2.map(function(w){return w.toUpperCase();}).filter(function(w){return w.length>=3;});
+    if(!words.length){console.warn("[GeoQuest] "+tag+" WS no words:"+key);S.ph="menu";render();return;}
+    var usingFallback=actualLang!==userLang;
+    S.wsData={tierWsKey:key,city:entry.word,lang:actualLang,usingFallback:usingFallback,
+      allWords:words,foundWords:[],input:"",phase:"playing",timeLeft:_WS_TIMER,shakeTs:0};
+    S.gameStartTime=Date.now();S.ph="playing";
+    tIv=setInterval(function(){
+      if(!S.wsData||S.wsData.phase!=="playing"){clearInterval(tIv);return;}
+      S.wsData.timeLeft=Math.max(0,(S.wsData.timeLeft||0)-1);
+      if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();}
+      render();
+    },1000);
+    _wsAttachKb();
+  };
 }
+var genArchPinQ=_mkPinQ(ARCH_PIN_DATA);
+var genArchHL=_mkHL(ARCH_HL_DATA);
+var genArchMatchQ=_mkMatchQ(ARCH_MATCH_DATA);
+var initArchWS=_mkWS(ARCH_WS_DATA,"Arch");
 
 /* === Phase 228: Pflanzen-Generatoren === */
 function genPflanzenPinQ(cat){
@@ -8293,193 +8307,19 @@ function initPflanzenWS(key){
   _wsAttachKb();
 }
 /* === Phase 230: Technologie & E-Mobilitaet Generatoren === */
-function genTechPinQ(cat){
-  var d=TECH_PIN_DATA[cat];
-  if(!d||!d.items||!d.items.length)return null;
-  var idx=~~(rng()*d.items.length);
-  var item=d.items[idx];
-  return {type:"uk_pin",subj:item.n,lat:item.lat,lng:item.lng,
-    prompt:d.prompt,cat:cat,itemIdx:idx};
-}
-function genTechHL(dataKey){
-  var d=TECH_HL_DATA[dataKey];
-  if(!d||!d.items||d.items.length<2)return null;
-  var len=d.items.length;
-  var W=Math.max(1,Math.floor(len*0.1));
-  var iA,iB;
-  do{iA=~~(rng()*len);iB=~~(rng()*len);}while(iA===iB||Math.abs(iA-iB)<W);
-  var a=d.items[iA],b=d.items[iB];
-  return {type:"hl",a:{name:a.name,val:a.val},b:{name:b.name,val:b.val},
-    unit:d.unit,prompt:d.prompt,higherWins:true};
-}
-function genTechMatchQ(cat){
-  var d=TECH_MATCH_DATA[cat];
-  if(!d||!d.items||!d.items.length)return null;
-  var items=d.items;
-  var idx=~~(rng()*items.length);
-  var correct=items[idx];
-  var opts;
-  if(d.fixedOpts){
-    opts=d.fixedOpts.slice();
-  } else {
-    var pool=items.map(function(x){return x.c;}).filter(function(cc){return cc!==correct.c;});
-    var seen=new Set();pool=pool.filter(function(cc){if(seen.has(cc))return false;seen.add(cc);return true;});
-    while(pool.length<3)pool.push(pool[~~(rng()*pool.length)]||correct.c);
-    pool=pool.sort(function(){return rng()-0.5;}).slice(0,3);
-    opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
-  }
-  return {type:"uk_match",subj:correct.n,correct:correct.c,opts:opts,
-    prompt:d.prompt||"Ordne richtig zu:"};
-}
-function initTechWS(key){
-  clearInterval(tIv);_wsDetachKb();
-  var entry=TECH_WS_DATA[key];
-  if(!entry||!entry.validWords){console.warn("[GeoQuest] TechWS missing:"+key);S.ph="menu";render();return;}
-  var userLang=S.language||localStorage.getItem("gq_lang")||"en";
-  var wsLang=_WS_LANGS.has(userLang)?userLang:"en";
-  var raw=entry.validWords[wsLang];
-  var hasOwn=Array.isArray(raw)&&raw.length>0;
-  var actualLang=hasOwn?wsLang:"en";
-  var src2=hasOwn?raw:(entry.validWords["en"]||[]);
-  var words=src2.map(function(w){return w.toUpperCase();}).filter(function(w){return w.length>=3;});
-  if(!words.length){console.warn("[GeoQuest] TechWS no words:"+key);S.ph="menu";render();return;}
-  var usingFallback=actualLang!==userLang;
-  S.wsData={tierWsKey:key,city:entry.word,lang:actualLang,usingFallback:usingFallback,
-    allWords:words,foundWords:[],input:"",phase:"playing",timeLeft:_WS_TIMER,shakeTs:0};
-  S.gameStartTime=Date.now();S.ph="playing";
-  tIv=setInterval(function(){
-    if(!S.wsData||S.wsData.phase!=="playing"){clearInterval(tIv);return;}
-    S.wsData.timeLeft=Math.max(0,(S.wsData.timeLeft||0)-1);
-    if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();}
-    render();
-  },1000);
-  _wsAttachKb();
-}
-function genEmobPinQ(cat){
-  var d=EMOB_PIN_DATA[cat];
-  if(!d||!d.items||!d.items.length)return null;
-  var idx=~~(rng()*d.items.length);
-  var item=d.items[idx];
-  return {type:"uk_pin",subj:item.n,lat:item.lat,lng:item.lng,
-    prompt:d.prompt,cat:cat,itemIdx:idx};
-}
-function genEmobHL(dataKey){
-  var d=EMOB_HL_DATA[dataKey];
-  if(!d||!d.items||d.items.length<2)return null;
-  var len=d.items.length;
-  var W=Math.max(1,Math.floor(len*0.1));
-  var iA,iB;
-  do{iA=~~(rng()*len);iB=~~(rng()*len);}while(iA===iB||Math.abs(iA-iB)<W);
-  var a=d.items[iA],b=d.items[iB];
-  return {type:"hl",a:{name:a.name,val:a.val},b:{name:b.name,val:b.val},
-    unit:d.unit,prompt:d.prompt,higherWins:true};
-}
-function genEmobMatchQ(cat){
-  var d=EMOB_MATCH_DATA[cat];
-  if(!d||!d.items||!d.items.length)return null;
-  var items=d.items;
-  var idx=~~(rng()*items.length);
-  var correct=items[idx];
-  var opts;
-  if(d.fixedOpts){
-    opts=d.fixedOpts.slice();
-  } else {
-    var pool=items.map(function(x){return x.c;}).filter(function(cc){return cc!==correct.c;});
-    var seen=new Set();pool=pool.filter(function(cc){if(seen.has(cc))return false;seen.add(cc);return true;});
-    while(pool.length<3)pool.push(pool[~~(rng()*pool.length)]||correct.c);
-    pool=pool.sort(function(){return rng()-0.5;}).slice(0,3);
-    opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
-  }
-  return {type:"uk_match",subj:correct.n,correct:correct.c,opts:opts,
-    prompt:d.prompt||"Ordne richtig zu:"};
-}
-function initEmobWS(key){
-  clearInterval(tIv);_wsDetachKb();
-  var entry=EMOB_WS_DATA[key];
-  if(!entry||!entry.validWords){console.warn("[GeoQuest] EmobWS missing:"+key);S.ph="menu";render();return;}
-  var userLang=S.language||localStorage.getItem("gq_lang")||"en";
-  var wsLang=_WS_LANGS.has(userLang)?userLang:"en";
-  var raw=entry.validWords[wsLang];
-  var hasOwn=Array.isArray(raw)&&raw.length>0;
-  var actualLang=hasOwn?wsLang:"en";
-  var src2=hasOwn?raw:(entry.validWords["en"]||[]);
-  var words=src2.map(function(w){return w.toUpperCase();}).filter(function(w){return w.length>=3;});
-  if(!words.length){console.warn("[GeoQuest] EmobWS no words:"+key);S.ph="menu";render();return;}
-  var usingFallback=actualLang!==userLang;
-  S.wsData={tierWsKey:key,city:entry.word,lang:actualLang,usingFallback:usingFallback,
-    allWords:words,foundWords:[],input:"",phase:"playing",timeLeft:_WS_TIMER,shakeTs:0};
-  S.gameStartTime=Date.now();S.ph="playing";
-  tIv=setInterval(function(){
-    if(!S.wsData||S.wsData.phase!=="playing"){clearInterval(tIv);return;}
-    S.wsData.timeLeft=Math.max(0,(S.wsData.timeLeft||0)-1);
-    if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();}
-    render();
-  },1000);
-  _wsAttachKb();
-}
+var genTechPinQ=_mkPinQ(TECH_PIN_DATA);
+var genTechHL=_mkHL(TECH_HL_DATA);
+var genTechMatchQ=_mkMatchQ(TECH_MATCH_DATA);
+var initTechWS=_mkWS(TECH_WS_DATA,"Tech");
+var genEmobPinQ=_mkPinQ(EMOB_PIN_DATA);
+var genEmobHL=_mkHL(EMOB_HL_DATA);
+var genEmobMatchQ=_mkMatchQ(EMOB_MATCH_DATA);
+var initEmobWS=_mkWS(EMOB_WS_DATA,"Emob");
 
-function genGastroPinQ(cat){
-  var d=GASTRO_PIN_DATA[cat];
-  if(!d||!d.items||!d.items.length)return null;
-  var idx=~~(rng()*d.items.length);
-  var item=d.items[idx];
-  return {type:"uk_pin",subj:item.n,lat:item.lat,lng:item.lng,
-    prompt:d.prompt,cat:cat,itemIdx:idx};
-}
-function genGastroHL(dataKey){
-  var d=GASTRO_HL_DATA[dataKey];
-  if(!d||!d.items||d.items.length<2)return null;
-  var len=d.items.length;
-  var W=Math.max(1,Math.floor(len*0.1));
-  var iA,iB;
-  do{iA=~~(rng()*len);iB=~~(rng()*len);}while(iA===iB||Math.abs(iA-iB)<W);
-  var a=d.items[iA],b=d.items[iB];
-  return {type:"hl",a:{name:a.name,val:a.val},b:{name:b.name,val:b.val},
-    unit:d.unit,prompt:d.prompt,higherWins:true};
-}
-function genGastroMatchQ(cat){
-  var d=GASTRO_MATCH_DATA[cat];
-  if(!d||!d.items||!d.items.length)return null;
-  var items=d.items;
-  var idx=~~(rng()*items.length);
-  var correct=items[idx];
-  var opts;
-  if(d.fixedOpts){
-    opts=d.fixedOpts.slice();
-  } else {
-    var pool=items.map(function(x){return x.c;}).filter(function(c){return c!==correct.c;});
-    var seen=new Set();pool=pool.filter(function(c){if(seen.has(c))return false;seen.add(c);return true;});
-    while(pool.length<3)pool.push(pool[~~(rng()*pool.length)]||correct.c);
-    pool=pool.sort(function(){return rng()-0.5;}).slice(0,3);
-    opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
-  }
-  return {type:"uk_match",subj:correct.n,correct:correct.c,opts:opts,
-    prompt:d.prompt||"Ordne richtig zu:"};
-}
-function initGastroWS(key){
-  clearInterval(tIv);_wsDetachKb();
-  var entry=GASTRO_WS_DATA[key];
-  if(!entry||!entry.validWords){console.warn("[GeoQuest] GastroWS missing:"+key);S.ph="menu";render();return;}
-  var userLang=S.language||localStorage.getItem("gq_lang")||"en";
-  var wsLang=_WS_LANGS.has(userLang)?userLang:"en";
-  var raw=entry.validWords[wsLang];
-  var hasOwn=Array.isArray(raw)&&raw.length>0;
-  var actualLang=hasOwn?wsLang:"en";
-  var src2=hasOwn?raw:(entry.validWords["en"]||[]);
-  var words=src2.map(function(w){return w.toUpperCase();}).filter(function(w){return w.length>=3;});
-  if(!words.length){console.warn("[GeoQuest] GastroWS no words:"+key);S.ph="menu";render();return;}
-  var usingFallback=actualLang!==userLang;
-  S.wsData={tierWsKey:key,city:entry.word,lang:actualLang,usingFallback:usingFallback,
-    allWords:words,foundWords:[],input:"",phase:"playing",timeLeft:_WS_TIMER,shakeTs:0};
-  S.gameStartTime=Date.now();S.ph="playing";
-  tIv=setInterval(function(){
-    if(!S.wsData||S.wsData.phase!=="playing"){clearInterval(tIv);return;}
-    S.wsData.timeLeft=Math.max(0,(S.wsData.timeLeft||0)-1);
-    if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();}
-    render();
-  },1000);
-  _wsAttachKb();
-}
+var genGastroPinQ=_mkPinQ(GASTRO_PIN_DATA);
+var genGastroHL=_mkHL(GASTRO_HL_DATA);
+var genGastroMatchQ=_mkMatchQ(GASTRO_MATCH_DATA);
+var initGastroWS=_mkWS(GASTRO_WS_DATA,"Gastro");
 function genUniversalMatchQ(cat){
   const data=KULTUR_DATA[cat];
   if(!data||!data.length)return null;
@@ -8503,8 +8343,12 @@ function genUniversalMatchQ(cat){
 
 /* Phase 211: Universal Pin generator — coordinate click on D3 map */
 function genUniversalPinQ(cat){
-  const data=KULTUR_DATA[cat];
-  if(!data||!data.length)return null;
+  const raw=KULTUR_DATA[cat];
+  if(!raw)return null;
+  /* Support both plain array and {prompt,items} object format (Phase 227+) */
+  const data=Array.isArray(raw)?raw:(raw.items||[]);
+  const storedPrompt=Array.isArray(raw)?null:raw.prompt;
+  if(!data.length)return null;
   const item=data[~~(rng()*data.length)];
   const modeObj=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat.replace(/_/g,""))||
     (typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat)||{};
@@ -8513,7 +8357,7 @@ function genUniversalPinQ(cat){
   const _displaySubj=_isTiere
     ?item.n.replace(/\s*\(.*?\)/g,"").replace(/\s*\u2192.*$/,"").trim()
     :item.n;
-  return{type:"uk_pin",cat,prompt:modeObj.prompt||t("q_uk_pin"),subj:_displaySubj,
+  return{type:"uk_pin",cat,prompt:storedPrompt||modeObj.prompt||t("q_uk_pin"),subj:_displaySubj,
     targetLat:item.lat,targetLng:item.lng,ans:item.n,
     lid:"ukp_"+cat+"_"+item.n.replace(/\s+/g,"_"),cc:null};
 }

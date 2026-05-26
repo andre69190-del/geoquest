@@ -1,495 +1,2484 @@
 {
   "epochen": {
     "prompt": "Welcher Epoche gehört dieses Artefakt an?",
-    "fixedOpts": ["Steinzeit","Bronzezeit","Eisenzeit","Antike"],
+    "fixedOpts": [
+      "Steinzeit",
+      "Bronzezeit",
+      "Eisenzeit",
+      "Antike"
+    ],
     "items": [
-      {"n":"Löwenmensch von Hohlenstein","c":"Steinzeit"},
-      {"n":"Venus von Willendorf","c":"Steinzeit"},
-      {"n":"Lascaux-Höhlenmalereien","c":"Steinzeit"},
-      {"n":"Himmelsscheibe von Nebra","c":"Bronzezeit"},
-      {"n":"Ötzi der Eismann","c":"Steinzeit"},
-      {"n":"Keltischer Torques (Vix)","c":"Eisenzeit"},
-      {"n":"Antikythera-Mechanismus","c":"Antike"},
-      {"n":"Hallstatt-Schwert","c":"Eisenzeit"},
-      {"n":"Laokoon-Gruppe","c":"Antike"},
-      {"n":"Stonehenge-Errichtung","c":"Steinzeit"},
-      {"n":"Tutanchamun-Maske","c":"Antike"},
-      {"n":"Goldhut von Schifferstadt","c":"Bronzezeit"}
+      {
+        "n": "Löwenmensch von Hohlenstein",
+        "c": "Steinzeit"
+      },
+      {
+        "n": "Venus von Willendorf",
+        "c": "Steinzeit"
+      },
+      {
+        "n": "Lascaux-Höhlenmalereien",
+        "c": "Steinzeit"
+      },
+      {
+        "n": "Himmelsscheibe von Nebra",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Ötzi der Eismann",
+        "c": "Steinzeit"
+      },
+      {
+        "n": "Keltischer Torques (Vix)",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Antikythera-Mechanismus",
+        "c": "Antike"
+      },
+      {
+        "n": "Hallstatt-Schwert",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Laokoon-Gruppe",
+        "c": "Antike"
+      },
+      {
+        "n": "Stonehenge-Errichtung",
+        "c": "Steinzeit"
+      },
+      {
+        "n": "Tutanchamun-Maske",
+        "c": "Antike"
+      },
+      {
+        "n": "Goldhut von Schifferstadt",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Tutanchamun-Maske",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Antikythera-Mechanismus",
+        "c": "Antike"
+      },
+      {
+        "n": "Vasa-Wrack",
+        "c": "Fruehe Neuzeit"
+      },
+      {
+        "n": "Sutton-Hoo-Helm",
+        "c": "Voelkerwanderungszeit"
+      },
+      {
+        "n": "Oetzi der Eismann",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Himmelsscheibe von Nebra",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Tollund-Mann",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Stein von Rosette",
+        "c": "Antike"
+      }
     ]
   },
   "werkzeuge": {
     "prompt": "Aus welcher Zeit stammt dieses Werkzeug?",
-    "fixedOpts": ["Paläolithikum","Neolithikum","Bronzezeit","Eisenzeit"],
+    "fixedOpts": [
+      "Paläolithikum",
+      "Neolithikum",
+      "Bronzezeit",
+      "Eisenzeit"
+    ],
     "items": [
-      {"n":"Faustkeil (Biface)","c":"Paläolithikum"},
-      {"n":"Feuerstein-Pfeilspitze","c":"Neolithikum"},
-      {"n":"Polierte Steinaxt","c":"Neolithikum"},
-      {"n":"Bronzeschwert","c":"Bronzezeit"},
-      {"n":"Knochenharpune","c":"Paläolithikum"},
-      {"n":"Keramiksichel","c":"Neolithikum"},
-      {"n":"Eisenzange","c":"Eisenzeit"},
-      {"n":"Bronzespiegel","c":"Bronzezeit"},
-      {"n":"Eisenpflug","c":"Eisenzeit"},
-      {"n":"Obsidianklinge","c":"Neolithikum"},
-      {"n":"Rentiergeweih-Hacke","c":"Paläolithikum"},
-      {"n":"Latène-Fibel","c":"Eisenzeit"}
+      {
+        "n": "Faustkeil (Biface)",
+        "c": "Paläolithikum"
+      },
+      {
+        "n": "Feuerstein-Pfeilspitze",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Polierte Steinaxt",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Bronzeschwert",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Knochenharpune",
+        "c": "Paläolithikum"
+      },
+      {
+        "n": "Keramiksichel",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Eisenzange",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Bronzespiegel",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Eisenpflug",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Obsidianklinge",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Rentiergeweih-Hacke",
+        "c": "Paläolithikum"
+      },
+      {
+        "n": "Latène-Fibel",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Drehherd-Toepferscheibe",
+        "c": "Chalkolithikum"
+      },
+      {
+        "n": "Bronzesichel",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Eisenpflug",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Obsidian-Skalpell",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Kupferbeil (Oetzi-Typ)",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Schilfstift (Calamus) fuer Keilschrift",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Schmiedezange (Eisenzeit-Typ)",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Steinmetzwerkzeug Dolerit-Pounder",
+        "c": "Neolithikum"
+      }
     ]
   },
   "archaeologen": {
     "prompt": "Wer entdeckte oder ergrub diese Fundstätte?",
     "items": [
-      {"n":"Grab des Tutanchamun","c":"Howard Carter"},
-      {"n":"Troja","c":"Heinrich Schliemann"},
-      {"n":"Machu Picchu","c":"Hiram Bingham"},
-      {"n":"Terrakotta-Armee (wiss. Ausgrabung)","c":"Zhao Kangmin"},
-      {"n":"Pompeji (systematisch)","c":"Giuseppe Fiorelli"},
-      {"n":"Sutton-Hoo-Schiff","c":"Basil Brown"},
-      {"n":"Knossos","c":"Arthur Evans"},
-      {"n":"Sipán-Grab","c":"Walter Alva"},
-      {"n":"Laetoli-Fußspuren","c":"Mary Leakey"},
-      {"n":"Altamira-Höhle","c":"Marcelino Sanz de Sautuola"},
-      {"n":"Olduvai-Gorge","c":"Louis Leakey"},
-      {"n":"Çatalhöyük","c":"James Mellaart"}
+      {
+        "n": "Grab des Tutanchamun",
+        "c": "Howard Carter"
+      },
+      {
+        "n": "Troja",
+        "c": "Heinrich Schliemann"
+      },
+      {
+        "n": "Machu Picchu",
+        "c": "Hiram Bingham"
+      },
+      {
+        "n": "Terrakotta-Armee (wiss. Ausgrabung)",
+        "c": "Zhao Kangmin"
+      },
+      {
+        "n": "Pompeji (systematisch)",
+        "c": "Giuseppe Fiorelli"
+      },
+      {
+        "n": "Sutton-Hoo-Schiff",
+        "c": "Basil Brown"
+      },
+      {
+        "n": "Knossos",
+        "c": "Arthur Evans"
+      },
+      {
+        "n": "Sipán-Grab",
+        "c": "Walter Alva"
+      },
+      {
+        "n": "Laetoli-Fußspuren",
+        "c": "Mary Leakey"
+      },
+      {
+        "n": "Altamira-Höhle",
+        "c": "Marcelino Sanz de Sautuola"
+      },
+      {
+        "n": "Olduvai-Gorge",
+        "c": "Louis Leakey"
+      },
+      {
+        "n": "Çatalhöyük",
+        "c": "James Mellaart"
+      },
+      {
+        "n": "Pompeji (erste Ausgrabungen)",
+        "c": "Karl Weber"
+      },
+      {
+        "n": "Knossos",
+        "c": "Arthur Evans"
+      },
+      {
+        "n": "Ur (Koenigsgraeber)",
+        "c": "Leonard Woolley"
+      },
+      {
+        "n": "Olduvai Gorge",
+        "c": "Louis Leakey"
+      },
+      {
+        "n": "Machu Picchu",
+        "c": "Hiram Bingham"
+      },
+      {
+        "n": "Sipan-Grab",
+        "c": "Walter Alva"
+      },
+      {
+        "n": "Sutton Hoo",
+        "c": "Basil Brown"
+      },
+      {
+        "n": "Sanxingdui",
+        "c": "Guanghan-Museum-Team"
+      }
     ]
   },
   "datierungsmethoden": {
     "prompt": "Welche Datierungsmethode ist hier am besten geeignet?",
-    "fixedOpts": ["C14","Dendrochronologie","Thermolumineszenz","Stratigraphie"],
+    "fixedOpts": [
+      "C14",
+      "Dendrochronologie",
+      "Thermolumineszenz",
+      "Stratigraphie"
+    ],
     "items": [
-      {"n":"Verkohlte Holzbalken eines Gebäudes","c":"C14"},
-      {"n":"Alter eines Eichenholz-Schiffswracks","c":"Dendrochronologie"},
-      {"n":"Brandgebrannte Tonscherben","c":"Thermolumineszenz"},
-      {"n":"Zeitliche Abfolge verschiedener Fundschichten","c":"Stratigraphie"},
-      {"n":"Knochen eines Mammuts","c":"C14"},
-      {"n":"Baumstämme eines Pfahlbaus","c":"Dendrochronologie"},
-      {"n":"Gebrannte Lehmziegel eines Ofens","c":"Thermolumineszenz"},
-      {"n":"Relative Zeitstellung eines Grabes","c":"Stratigraphie"},
-      {"n":"Organisches Material aus Sumpffund","c":"C14"},
-      {"n":"Holzbalken in einem Megalithgrab","c":"Dendrochronologie"},
-      {"n":"Feuerstein-Artefakte aus Feuerstelle","c":"Thermolumineszenz"},
-      {"n":"Schichtfolge in einem Siedlungshügel (Tell)","c":"Stratigraphie"}
+      {
+        "n": "Verkohlte Holzbalken eines Gebäudes",
+        "c": "C14"
+      },
+      {
+        "n": "Alter eines Eichenholz-Schiffswracks",
+        "c": "Dendrochronologie"
+      },
+      {
+        "n": "Brandgebrannte Tonscherben",
+        "c": "Thermolumineszenz"
+      },
+      {
+        "n": "Zeitliche Abfolge verschiedener Fundschichten",
+        "c": "Stratigraphie"
+      },
+      {
+        "n": "Knochen eines Mammuts",
+        "c": "C14"
+      },
+      {
+        "n": "Baumstämme eines Pfahlbaus",
+        "c": "Dendrochronologie"
+      },
+      {
+        "n": "Gebrannte Lehmziegel eines Ofens",
+        "c": "Thermolumineszenz"
+      },
+      {
+        "n": "Relative Zeitstellung eines Grabes",
+        "c": "Stratigraphie"
+      },
+      {
+        "n": "Organisches Material aus Sumpffund",
+        "c": "C14"
+      },
+      {
+        "n": "Holzbalken in einem Megalithgrab",
+        "c": "Dendrochronologie"
+      },
+      {
+        "n": "Feuerstein-Artefakte aus Feuerstelle",
+        "c": "Thermolumineszenz"
+      },
+      {
+        "n": "Schichtfolge in einem Siedlungshügel (Tell)",
+        "c": "Stratigraphie"
+      },
+      {
+        "n": "Jahresringe einer Eiche im Schiff",
+        "c": "Dendrochronologie"
+      },
+      {
+        "n": "Pollenspektrum in Moorschicht",
+        "c": "Palynologie"
+      },
+      {
+        "n": "Thermo-Lumineszenz von gebranntem Ton",
+        "c": "TL-Datierung"
+      },
+      {
+        "n": "Stratigraphische Position der Scherbe",
+        "c": "Stratigraphie"
+      },
+      {
+        "n": "Uran-Thorium in Korallenriff",
+        "c": "U/Th-Datierung"
+      },
+      {
+        "n": "Magnetisierung von Lehmziegeln",
+        "c": "Archaeomagnetismus"
+      },
+      {
+        "n": "Optisch stimulierte Lumineszenz im Quarz",
+        "c": "OSL-Datierung"
+      },
+      {
+        "n": "Aminosaeure-Racemisierung in Muscheln",
+        "c": "AAR-Datierung"
+      }
     ]
   },
   "3d_methoden": {
     "prompt": "Für welche Anwendung ist diese 3D-Methode am besten?",
-    "fixedOpts": ["Photogrammetrie","LiDAR","Laserscanning","RTI"],
+    "fixedOpts": [
+      "Photogrammetrie",
+      "LiDAR",
+      "Laserscanning",
+      "RTI"
+    ],
     "items": [
-      {"n":"Freigelegte Waldstrukturen unter Dschungel","c":"LiDAR"},
-      {"n":"Detailgenaue Oberflächenstruktur einer Münze","c":"RTI"},
-      {"n":"3D-Modell aus Drohnenfotos","c":"Photogrammetrie"},
-      {"n":"Präziser Innenraumscan eines Grabes","c":"Laserscanning"},
-      {"n":"Verdorgene Maya-Stadtstrukturen","c":"LiDAR"},
-      {"n":"Feine Ritzungen auf Stein","c":"RTI"},
-      {"n":"Rekonstruktion aus Amateurfotos","c":"Photogrammetrie"},
-      {"n":"Millimetergenaue Keramikvermessung","c":"Laserscanning"},
-      {"n":"Landschaftserfassung großer Ausgrabung","c":"LiDAR"},
-      {"n":"Sichtbarmachung unsichtbarer Inschriften","c":"RTI"},
-      {"n":"Dokumentation durch Taucher-Fotos","c":"Photogrammetrie"},
-      {"n":"Digitaler Zwilling eines Tempels","c":"Laserscanning"}
+      {
+        "n": "Freigelegte Waldstrukturen unter Dschungel",
+        "c": "LiDAR"
+      },
+      {
+        "n": "Detailgenaue Oberflächenstruktur einer Münze",
+        "c": "RTI"
+      },
+      {
+        "n": "3D-Modell aus Drohnenfotos",
+        "c": "Photogrammetrie"
+      },
+      {
+        "n": "Präziser Innenraumscan eines Grabes",
+        "c": "Laserscanning"
+      },
+      {
+        "n": "Verdorgene Maya-Stadtstrukturen",
+        "c": "LiDAR"
+      },
+      {
+        "n": "Feine Ritzungen auf Stein",
+        "c": "RTI"
+      },
+      {
+        "n": "Rekonstruktion aus Amateurfotos",
+        "c": "Photogrammetrie"
+      },
+      {
+        "n": "Millimetergenaue Keramikvermessung",
+        "c": "Laserscanning"
+      },
+      {
+        "n": "Landschaftserfassung großer Ausgrabung",
+        "c": "LiDAR"
+      },
+      {
+        "n": "Sichtbarmachung unsichtbarer Inschriften",
+        "c": "RTI"
+      },
+      {
+        "n": "Dokumentation durch Taucher-Fotos",
+        "c": "Photogrammetrie"
+      },
+      {
+        "n": "Digitaler Zwilling eines Tempels",
+        "c": "Laserscanning"
+      },
+      {
+        "n": "Unterirdische Mauern unter Acker",
+        "c": "Bodenradar (GPR)"
+      },
+      {
+        "n": "Farbabweichungen in Ernte",
+        "c": "Luftfotografie"
+      },
+      {
+        "n": "Reliefkarte unter Baumkronen",
+        "c": "LiDAR"
+      },
+      {
+        "n": "Detailmodell einer Steininschrift",
+        "c": "Photogrammetrie"
+      },
+      {
+        "n": "Magnetische Anomalie einer Grube",
+        "c": "Magnetometrie"
+      },
+      {
+        "n": "Leitfaehigkeitsmessung Pfostenreihe",
+        "c": "EM-Survey"
+      },
+      {
+        "n": "3D-Farbdruck eines Gefaessfragments",
+        "c": "3D-Druck"
+      },
+      {
+        "n": "Multispektralfoto verblasster Inschrift",
+        "c": "RTI / DStretch"
+      }
     ]
   },
   "schriften": {
     "prompt": "Welcher Kultur entstammt diese Schrift?",
     "items": [
-      {"n":"Keilschrift","c":"Mesopotamien"},
-      {"n":"Hieroglyphen","c":"Ägypten"},
-      {"n":"Linear B","c":"Mykene"},
-      {"n":"Rongorongo","c":"Osterinsel"},
-      {"n":"Indus-Skript","c":"Induskultur"},
-      {"n":"Maya-Glyphen","c":"Maya"},
-      {"n":"Proto-Sinaitisch","c":"Kanaanäer"},
-      {"n":"Orakelknochen-Schrift","c":"China"},
-      {"n":"Phönizisch","c":"Phönizier"},
-      {"n":"Runen (Älteres Futhark)","c":"Germanen"},
-      {"n":"Linear A","c":"Minoer"},
-      {"n":"Ogham","c":"Kelten"}
+      {
+        "n": "Keilschrift",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Hieroglyphen",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Linear B",
+        "c": "Mykene"
+      },
+      {
+        "n": "Rongorongo",
+        "c": "Osterinsel"
+      },
+      {
+        "n": "Indus-Skript",
+        "c": "Induskultur"
+      },
+      {
+        "n": "Maya-Glyphen",
+        "c": "Maya"
+      },
+      {
+        "n": "Proto-Sinaitisch",
+        "c": "Kanaanäer"
+      },
+      {
+        "n": "Orakelknochen-Schrift",
+        "c": "China"
+      },
+      {
+        "n": "Phönizisch",
+        "c": "Phönizier"
+      },
+      {
+        "n": "Runen (Älteres Futhark)",
+        "c": "Germanen"
+      },
+      {
+        "n": "Linear A",
+        "c": "Minoer"
+      },
+      {
+        "n": "Ogham",
+        "c": "Kelten"
+      },
+      {
+        "n": "Rongorongo",
+        "c": "Osterinsel"
+      },
+      {
+        "n": "Lineares A",
+        "c": "Minoisch (undechiffriert)"
+      },
+      {
+        "n": "Indus-Schrift",
+        "c": "Indus-Tal-Zivilisation"
+      },
+      {
+        "n": "Nahuatl-Piktogramme",
+        "c": "Azteken"
+      },
+      {
+        "n": "Ogham-Schrift",
+        "c": "Keltisch / Irland"
+      },
+      {
+        "n": "Nabataeische Schrift",
+        "c": "Nabataeer"
+      },
+      {
+        "n": "Phoenizisches Alphabet",
+        "c": "Phoenizier"
+      },
+      {
+        "n": "Meroitische Schrift",
+        "c": "Meroe / Kush"
+      }
     ]
   },
   "goetter": {
     "prompt": "Zu welcher Kultur gehört diese Gottheit?",
     "items": [
-      {"n":"Osiris","c":"Ägypten"},
-      {"n":"Marduk","c":"Babylonien"},
-      {"n":"Quetzalcoatl","c":"Azteken"},
-      {"n":"Thor","c":"Wikinger"},
-      {"n":"Inti","c":"Inka"},
-      {"n":"Baal","c":"Kanaanäer"},
-      {"n":"Wotan / Odin","c":"Germanen"},
-      {"n":"Enlil","c":"Sumer"},
-      {"n":"Huitzilopochtli","c":"Azteken"},
-      {"n":"Amun-Re","c":"Ägypten"},
-      {"n":"Poseidon","c":"Griechenland"},
-      {"n":"Ahura Mazda","c":"Persien"}
+      {
+        "n": "Osiris",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Marduk",
+        "c": "Babylonien"
+      },
+      {
+        "n": "Quetzalcoatl",
+        "c": "Azteken"
+      },
+      {
+        "n": "Thor",
+        "c": "Wikinger"
+      },
+      {
+        "n": "Inti",
+        "c": "Inka"
+      },
+      {
+        "n": "Baal",
+        "c": "Kanaanäer"
+      },
+      {
+        "n": "Wotan / Odin",
+        "c": "Germanen"
+      },
+      {
+        "n": "Enlil",
+        "c": "Sumer"
+      },
+      {
+        "n": "Huitzilopochtli",
+        "c": "Azteken"
+      },
+      {
+        "n": "Amun-Re",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Poseidon",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Ahura Mazda",
+        "c": "Persien"
+      },
+      {
+        "n": "Quetzalcoatl",
+        "c": "Azteken"
+      },
+      {
+        "n": "Inanna",
+        "c": "Sumer"
+      },
+      {
+        "n": "Thor",
+        "c": "Wikinger"
+      },
+      {
+        "n": "Amaterasu",
+        "c": "Japan"
+      },
+      {
+        "n": "Pachamama",
+        "c": "Inka"
+      },
+      {
+        "n": "Huitzilopochtli",
+        "c": "Azteken"
+      },
+      {
+        "n": "Enlil",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Lugh",
+        "c": "Keltisch"
+      }
     ]
   },
   "bestattungsriten": {
     "prompt": "Welcher Kultur gehört dieser Bestattungsritus an?",
     "items": [
-      {"n":"Mumifizierung mit Canope","c":"Ägypten"},
-      {"n":"Bootsgrab mit Reichtümern","c":"Wikinger"},
-      {"n":"Brandbestattung auf Scheiterhaufen","c":"Hindus"},
-      {"n":"Terrakotta-Armee als Grabbeigabe","c":"China"},
-      {"n":"Hügelgrab (Barrow) mit Schmuck","c":"Kelten"},
-      {"n":"Katakomben-Bestattung","c":"Römer"},
-      {"n":"Turmgrab der Stille","c":"Zoroastrier"},
-      {"n":"Opferbestattung (Menschenopfer)","c":"Azteken"},
-      {"n":"Dolmen-Kollektivgrab","c":"Neolithikum"},
-      {"n":"Brandgrab in Urne","c":"Bronzezeit"},
-      {"n":"Streckbestattung mit Ochren","c":"Homo sapiens (Jungpaläolithikum)"},
-      {"n":"Trepanierter Schädel im Grab","c":"Inka"}
+      {
+        "n": "Mumifizierung mit Canope",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Bootsgrab mit Reichtümern",
+        "c": "Wikinger"
+      },
+      {
+        "n": "Brandbestattung auf Scheiterhaufen",
+        "c": "Hindus"
+      },
+      {
+        "n": "Terrakotta-Armee als Grabbeigabe",
+        "c": "China"
+      },
+      {
+        "n": "Hügelgrab (Barrow) mit Schmuck",
+        "c": "Kelten"
+      },
+      {
+        "n": "Katakomben-Bestattung",
+        "c": "Römer"
+      },
+      {
+        "n": "Turmgrab der Stille",
+        "c": "Zoroastrier"
+      },
+      {
+        "n": "Opferbestattung (Menschenopfer)",
+        "c": "Azteken"
+      },
+      {
+        "n": "Dolmen-Kollektivgrab",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Brandgrab in Urne",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Streckbestattung mit Ochren",
+        "c": "Homo sapiens (Jungpaläolithikum)"
+      },
+      {
+        "n": "Trepanierter Schädel im Grab",
+        "c": "Inka"
+      },
+      {
+        "n": "Hockerbestattung mit Ocker",
+        "c": "Jungsteinzeit"
+      },
+      {
+        "n": "Brandbestattung auf Scheiterhaufen",
+        "c": "Wikinger / Hindu"
+      },
+      {
+        "n": "Baumbestattung (Luftbestattung)",
+        "c": "Nordamerikanische Staemme"
+      },
+      {
+        "n": "Exkarnation (Sky Burial)",
+        "c": "Tibet"
+      },
+      {
+        "n": "Mumifizierung mit Natron",
+        "c": "Aegypten"
+      },
+      {
+        "n": "Bootsgrab mit Waffen und Schmuck",
+        "c": "Wikinger"
+      },
+      {
+        "n": "Urnenfeldgrab",
+        "c": "Urnenfelderkultur"
+      },
+      {
+        "n": "Kammergrab mit Dromos",
+        "c": "Mykene / Griechenland"
+      }
     ]
   },
   "stratigraphie": {
     "prompt": "Welches stratigraphische Grundprinzip wird hier beschrieben?",
-    "fixedOpts": ["Superposition","Horizontalität","Original Continuity","Cross-Cutting"],
+    "fixedOpts": [
+      "Superposition",
+      "Horizontalität",
+      "Original Continuity",
+      "Cross-Cutting"
+    ],
     "items": [
-      {"n":"Jüngere Schichten liegen über älteren","c":"Superposition"},
-      {"n":"Ungestörte Schichten wurden waagrecht abgelagert","c":"Horizontalität"},
-      {"n":"Sedimentschichten erstreckten sich ursprünglich in alle Richtungen","c":"Original Continuity"},
-      {"n":"Ein Graben durchschneidet ältere Schichten","c":"Cross-Cutting"},
-      {"n":"Fundschicht 3 ist älter als Schicht 2","c":"Superposition"},
-      {"n":"Schrägstehende Schichten waren einst horizontal","c":"Horizontalität"},
-      {"n":"Abgebrochene Schichten laufen anderswo weiter","c":"Original Continuity"},
-      {"n":"Eine jüngere Mauer durchtrennt einen älteren Boden","c":"Cross-Cutting"},
-      {"n":"Unterste Schicht = älteste Epoche","c":"Superposition"},
-      {"n":"Deltaablagerungen sind eben","c":"Horizontalität"},
-      {"n":"Schicht setzt sich jenseits des Aufschlusses fort","c":"Original Continuity"},
-      {"n":"Jüngeres Gestein intrudiert älteres","c":"Cross-Cutting"}
+      {
+        "n": "Jüngere Schichten liegen über älteren",
+        "c": "Superposition"
+      },
+      {
+        "n": "Ungestörte Schichten wurden waagrecht abgelagert",
+        "c": "Horizontalität"
+      },
+      {
+        "n": "Sedimentschichten erstreckten sich ursprünglich in alle Richtungen",
+        "c": "Original Continuity"
+      },
+      {
+        "n": "Ein Graben durchschneidet ältere Schichten",
+        "c": "Cross-Cutting"
+      },
+      {
+        "n": "Fundschicht 3 ist älter als Schicht 2",
+        "c": "Superposition"
+      },
+      {
+        "n": "Schrägstehende Schichten waren einst horizontal",
+        "c": "Horizontalität"
+      },
+      {
+        "n": "Abgebrochene Schichten laufen anderswo weiter",
+        "c": "Original Continuity"
+      },
+      {
+        "n": "Eine jüngere Mauer durchtrennt einen älteren Boden",
+        "c": "Cross-Cutting"
+      },
+      {
+        "n": "Unterste Schicht = älteste Epoche",
+        "c": "Superposition"
+      },
+      {
+        "n": "Deltaablagerungen sind eben",
+        "c": "Horizontalität"
+      },
+      {
+        "n": "Schicht setzt sich jenseits des Aufschlusses fort",
+        "c": "Original Continuity"
+      },
+      {
+        "n": "Jüngeres Gestein intrudiert älteres",
+        "c": "Cross-Cutting"
+      },
+      {
+        "n": "Eine Muenze datiert die Schicht, in der sie liegt",
+        "c": "Terminus post quem"
+      },
+      {
+        "n": "Spaetere Grube schneidet aeltere Schicht",
+        "c": "Stratigraphischer Kontakt"
+      },
+      {
+        "n": "Alle Schichten in Sequenz folgen aufeinander",
+        "c": "Superposition"
+      },
+      {
+        "n": "Gleicher Fundtyp in zwei raeumlich getrennten Schichten",
+        "c": "Korrelation"
+      },
+      {
+        "n": "Schicht wird durch Baumwurzel gestoert",
+        "c": "Postdepositionaler Prozess"
+      },
+      {
+        "n": "Scherbe aus tieferer Schicht in juengerer Position",
+        "c": "Intrusion"
+      },
+      {
+        "n": "Abfolge von Ascheschichten nach Vulkanausbruch",
+        "c": "Tephra-Chronologie"
+      },
+      {
+        "n": "Schnittstelle zwischen Baugrube und Planum",
+        "c": "Befundgrenze"
+      }
     ]
   },
   "keramikstile": {
     "prompt": "Welcher Kultur gehört dieser Keramikstil an?",
     "items": [
-      {"n":"Schwarzfigurige Vasenmalerei","c":"Griechenland"},
-      {"n":"Terra Sigillata (Glanztonware)","c":"Römer"},
-      {"n":"Schnurkeramik","c":"Neolithikum Europa"},
-      {"n":"Jōmon-Keramik","c":"Japan"},
-      {"n":"Mimbres-Schüsseln","c":"Ancestral Puebloans"},
-      {"n":"Bandkeramik","c":"Linearbandkeramik-Kultur"},
-      {"n":"Majolika","c":"Renaissance Europa"},
-      {"n":"Chavin-Zeremonialgefäße","c":"Chavin-Kultur"},
-      {"n":"Nasca-Polychromkeramik","c":"Nasca-Kultur"},
-      {"n":"Rote Bemalte Ware (Indus-Tal)","c":"Induskultur"},
-      {"n":"Corded Ware","c":"Schnurkeramik-Kultur"},
-      {"n":"Fayyum-Keramik","c":"Ägypten"}
+      {
+        "n": "Schwarzfigurige Vasenmalerei",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Terra Sigillata (Glanztonware)",
+        "c": "Römer"
+      },
+      {
+        "n": "Schnurkeramik",
+        "c": "Neolithikum Europa"
+      },
+      {
+        "n": "Jōmon-Keramik",
+        "c": "Japan"
+      },
+      {
+        "n": "Mimbres-Schüsseln",
+        "c": "Ancestral Puebloans"
+      },
+      {
+        "n": "Bandkeramik",
+        "c": "Linearbandkeramik-Kultur"
+      },
+      {
+        "n": "Majolika",
+        "c": "Renaissance Europa"
+      },
+      {
+        "n": "Chavin-Zeremonialgefäße",
+        "c": "Chavin-Kultur"
+      },
+      {
+        "n": "Nasca-Polychromkeramik",
+        "c": "Nasca-Kultur"
+      },
+      {
+        "n": "Rote Bemalte Ware (Indus-Tal)",
+        "c": "Induskultur"
+      },
+      {
+        "n": "Corded Ware",
+        "c": "Schnurkeramik-Kultur"
+      },
+      {
+        "n": "Fayyum-Keramik",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Schnurkeramik (Corded Ware)",
+        "c": "Mitteleuropa Spaetneolithikum"
+      },
+      {
+        "n": "Bandkeramik (LBK)",
+        "c": "Fruehneolithikum Europa"
+      },
+      {
+        "n": "Beaker-Kultur-Becher",
+        "c": "Westeuropa Bronzezeit"
+      },
+      {
+        "n": "Majolika-Fayence",
+        "c": "Islamisch / Renaissance"
+      },
+      {
+        "n": "Nazca-Polychromkeramik",
+        "c": "Peru (Nazca-Kultur)"
+      },
+      {
+        "n": "Joemon-Keramik",
+        "c": "Japan"
+      },
+      {
+        "n": "Yangshao-Spiraldekor",
+        "c": "China (Neolithikum)"
+      },
+      {
+        "n": "Raku-Glasur (Teeschale)",
+        "c": "Japan"
+      }
     ]
   },
   "numismatik": {
     "prompt": "Welcher Zivilisation gehört diese Münze?",
     "items": [
-      {"n":"Athenische Tetradrachme (Eule)","c":"Griechenland"},
-      {"n":"Denarius (Silber)","c":"Römer"},
-      {"n":"Electrum-Stater aus Lydien","c":"Lydien"},
-      {"n":"Daric (Persischer Goldstater)","c":"Persien"},
-      {"n":"Sestertius (Messing)","c":"Römer"},
-      {"n":"Obol (Fährmannsgeld)","c":"Griechenland"},
-      {"n":"Potosi-Piece of Eight","c":"Spanien / Kolonialzeit"},
-      {"n":"Ban Liang (Chinesisch-rund mit Loch)","c":"China"},
-      {"n":"Aureus (Gold)","c":"Römer"},
-      {"n":"Philip II-Goldstater","c":"Makedonien"},
-      {"n":"Cowrie-Schale als Währung","c":"China / Westafrika"},
-      {"n":"Shekel (Silber-Halbmond)","c":"Mesopotamien"}
+      {
+        "n": "Athenische Tetradrachme (Eule)",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Denarius (Silber)",
+        "c": "Römer"
+      },
+      {
+        "n": "Electrum-Stater aus Lydien",
+        "c": "Lydien"
+      },
+      {
+        "n": "Daric (Persischer Goldstater)",
+        "c": "Persien"
+      },
+      {
+        "n": "Sestertius (Messing)",
+        "c": "Römer"
+      },
+      {
+        "n": "Obol (Fährmannsgeld)",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Potosi-Piece of Eight",
+        "c": "Spanien / Kolonialzeit"
+      },
+      {
+        "n": "Ban Liang (Chinesisch-rund mit Loch)",
+        "c": "China"
+      },
+      {
+        "n": "Aureus (Gold)",
+        "c": "Römer"
+      },
+      {
+        "n": "Philip II-Goldstater",
+        "c": "Makedonien"
+      },
+      {
+        "n": "Cowrie-Schale als Währung",
+        "c": "China / Westafrika"
+      },
+      {
+        "n": "Shekel (Silber-Halbmond)",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Obol des Charon (Bestattungsmuenze)",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Aureus (Goldmuenze)",
+        "c": "Roemer"
+      },
+      {
+        "n": "Dirham (Silber)",
+        "c": "Islamisch"
+      },
+      {
+        "n": "Stater (Elektrum)",
+        "c": "Lydien"
+      },
+      {
+        "n": "Daric (Goldmuenze)",
+        "c": "Persien"
+      },
+      {
+        "n": "Solidus (Byzanz)",
+        "c": "Byzanz"
+      },
+      {
+        "n": "Cash (quadratisches Loch)",
+        "c": "China"
+      },
+      {
+        "n": "Schekel (Silber-Gewichtseinheit)",
+        "c": "Phoenizien / Israel"
+      }
     ]
   },
   "isotopenanalyse": {
     "prompt": "Was verrät diese Isotopenanalyse?",
-    "fixedOpts": ["Herkunft","Ernährung","Alter","Klima"],
+    "fixedOpts": [
+      "Herkunft",
+      "Ernährung",
+      "Alter",
+      "Klima"
+    ],
     "items": [
-      {"n":"Strontium-87/86-Verhältnis im Zahn","c":"Herkunft"},
-      {"n":"Kohlenstoff-13/12-Verhältnis im Knochen","c":"Ernährung"},
-      {"n":"C14-Gehalt in organischem Material","c":"Alter"},
-      {"n":"Sauerstoff-18/16-Verhältnis im Eisbohrern","c":"Klima"},
-      {"n":"Blei-Isotope in Bronzeobjekten","c":"Herkunft"},
-      {"n":"Stickstoff-15-Anteil im Kollagen","c":"Ernährung"},
-      {"n":"Uran-Thorium-Verhältnis in Knochen","c":"Alter"},
-      {"n":"Deuterium-Verhältnis in Pflanzenfunden","c":"Klima"},
-      {"n":"Sauerstoff-Isotope in Zahnschmelz","c":"Herkunft"},
-      {"n":"C13-Wert: Mais vs. Hirse dominiert","c":"Ernährung"},
-      {"n":"Kalium-Argon-Datierung Vulkangestein","c":"Alter"},
-      {"n":"Baumring-Isotope als Klimaarchiv","c":"Klima"}
+      {
+        "n": "Strontium-87/86-Verhältnis im Zahn",
+        "c": "Herkunft"
+      },
+      {
+        "n": "Kohlenstoff-13/12-Verhältnis im Knochen",
+        "c": "Ernährung"
+      },
+      {
+        "n": "C14-Gehalt in organischem Material",
+        "c": "Alter"
+      },
+      {
+        "n": "Sauerstoff-18/16-Verhältnis im Eisbohrern",
+        "c": "Klima"
+      },
+      {
+        "n": "Blei-Isotope in Bronzeobjekten",
+        "c": "Herkunft"
+      },
+      {
+        "n": "Stickstoff-15-Anteil im Kollagen",
+        "c": "Ernährung"
+      },
+      {
+        "n": "Uran-Thorium-Verhältnis in Knochen",
+        "c": "Alter"
+      },
+      {
+        "n": "Deuterium-Verhältnis in Pflanzenfunden",
+        "c": "Klima"
+      },
+      {
+        "n": "Sauerstoff-Isotope in Zahnschmelz",
+        "c": "Herkunft"
+      },
+      {
+        "n": "C13-Wert: Mais vs. Hirse dominiert",
+        "c": "Ernährung"
+      },
+      {
+        "n": "Kalium-Argon-Datierung Vulkangestein",
+        "c": "Alter"
+      },
+      {
+        "n": "Baumring-Isotope als Klimaarchiv",
+        "c": "Klima"
+      },
+      {
+        "n": "Blei-206/204-Verhaeltnis in Bronze",
+        "c": "Rohstoffherkunft"
+      },
+      {
+        "n": "Stickstoff-15-Anreicherung im Knochen",
+        "c": "Proteinanteil Ernaehrung"
+      },
+      {
+        "n": "Sauerstoff-18-Verhaeltnis in Zahnschmelz",
+        "c": "Klimarekonstruktion"
+      },
+      {
+        "n": "Kupfer-Isotope in Bronzewaffe",
+        "c": "Bergbauregion"
+      },
+      {
+        "n": "Kohlenstoff-13 in Mais",
+        "c": "C4-Pflanzen Ernaehrung"
+      },
+      {
+        "n": "Schwefel-34 in Meeresknochen",
+        "c": "Kuestennahe Ernaehrung"
+      },
+      {
+        "n": "Uran-Thorium in Kalzit-Schicht",
+        "c": "Altersdatierung"
+      },
+      {
+        "n": "Argon-40-Verhaeltnis in Vulkangestein",
+        "c": "K-Ar Datierung"
+      }
     ]
   },
   "museen": {
     "prompt": "In welcher Stadt wird diese berühmte Sammlung aufbewahrt?",
     "items": [
-      {"n":"Stein von Rosette","c":"London"},
-      {"n":"Büste der Nofretete","c":"Berlin"},
-      {"n":"Elgin Marbles (Parthenon-Skulpturen)","c":"London"},
-      {"n":"Venus de Milo","c":"Paris"},
-      {"n":"Maske des Tutanchamun","c":"Kairo"},
-      {"n":"Antikythera-Mechanismus","c":"Athen"},
-      {"n":"Himmelsscheibe von Nebra","c":"Halle"},
-      {"n":"Ötzi der Eismann","c":"Bozen"},
-      {"n":"Laokoon-Gruppe","c":"Rom"},
-      {"n":"Tollund-Mann","c":"Silkeborg"},
-      {"n":"Vasa-Wrack","c":"Stockholm"},
-      {"n":"Terrakotta-Armee","c":"Xi'an"}
+      {
+        "n": "Stein von Rosette",
+        "c": "London"
+      },
+      {
+        "n": "Büste der Nofretete",
+        "c": "Berlin"
+      },
+      {
+        "n": "Elgin Marbles (Parthenon-Skulpturen)",
+        "c": "London"
+      },
+      {
+        "n": "Venus de Milo",
+        "c": "Paris"
+      },
+      {
+        "n": "Maske des Tutanchamun",
+        "c": "Kairo"
+      },
+      {
+        "n": "Antikythera-Mechanismus",
+        "c": "Athen"
+      },
+      {
+        "n": "Himmelsscheibe von Nebra",
+        "c": "Halle"
+      },
+      {
+        "n": "Ötzi der Eismann",
+        "c": "Bozen"
+      },
+      {
+        "n": "Laokoon-Gruppe",
+        "c": "Rom"
+      },
+      {
+        "n": "Tollund-Mann",
+        "c": "Silkeborg"
+      },
+      {
+        "n": "Vasa-Wrack",
+        "c": "Stockholm"
+      },
+      {
+        "n": "Terrakotta-Armee",
+        "c": "Xi'an"
+      },
+      {
+        "n": "Antikythera-Mechanismus",
+        "c": "Athen"
+      },
+      {
+        "n": "Himmelsscheibe von Nebra",
+        "c": "Halle (Saale)"
+      },
+      {
+        "n": "Goldmaske von Mykene",
+        "c": "Athen"
+      },
+      {
+        "n": "Jade-Maske Pakal",
+        "c": "Mexiko City"
+      },
+      {
+        "n": "Tollund-Mann",
+        "c": "Silkeborg"
+      },
+      {
+        "n": "Benin-Bronzen (Hauptbestand)",
+        "c": "London"
+      },
+      {
+        "n": "Lewis-Schachfiguren",
+        "c": "London / Edinburgh"
+      },
+      {
+        "n": "Terrakotta-Armee",
+        "c": "Xi'an"
+      }
     ]
   },
   "archaeobotanik": {
     "prompt": "Welche Information liefert dieser Pflanzenfund in der Archäologie?",
-    "fixedOpts": ["Landwirtschaft","Handel","Klima","Religion"],
+    "fixedOpts": [
+      "Landwirtschaft",
+      "Handel",
+      "Klima",
+      "Religion"
+    ],
     "items": [
-      {"n":"Verkohle Getreidekörner in Siedlung","c":"Landwirtschaft"},
-      {"n":"Exotische Gewürze fern ihrer Heimat","c":"Handel"},
-      {"n":"Pollen in Sedimentschichten","c":"Klima"},
-      {"n":"Weihrauch-Reste in Tempelareal","c":"Religion"},
-      {"n":"Olivenöl-Amphoren entlang Handelsroute","c":"Handel"},
-      {"n":"Wildgetreide neben Kulturweizen","c":"Landwirtschaft"},
-      {"n":"Holzkohle aus Baumarten vergangener Epochen","c":"Klima"},
-      {"n":"Lotusblüten in Grabkammer","c":"Religion"},
-      {"n":"Säbelzahn-Körner in frühem Ackerboden","c":"Landwirtschaft"},
-      {"n":"Schwarzer Pfeffer in nordeuropäischem Grab","c":"Handel"},
-      {"n":"Farnsporen als Indikator für feuchtes Klima","c":"Klima"},
-      {"n":"Cannabis-Reste in Schamanen-Grab","c":"Religion"}
+      {
+        "n": "Verkohle Getreidekörner in Siedlung",
+        "c": "Landwirtschaft"
+      },
+      {
+        "n": "Exotische Gewürze fern ihrer Heimat",
+        "c": "Handel"
+      },
+      {
+        "n": "Pollen in Sedimentschichten",
+        "c": "Klima"
+      },
+      {
+        "n": "Weihrauch-Reste in Tempelareal",
+        "c": "Religion"
+      },
+      {
+        "n": "Olivenöl-Amphoren entlang Handelsroute",
+        "c": "Handel"
+      },
+      {
+        "n": "Wildgetreide neben Kulturweizen",
+        "c": "Landwirtschaft"
+      },
+      {
+        "n": "Holzkohle aus Baumarten vergangener Epochen",
+        "c": "Klima"
+      },
+      {
+        "n": "Lotusblüten in Grabkammer",
+        "c": "Religion"
+      },
+      {
+        "n": "Säbelzahn-Körner in frühem Ackerboden",
+        "c": "Landwirtschaft"
+      },
+      {
+        "n": "Schwarzer Pfeffer in nordeuropäischem Grab",
+        "c": "Handel"
+      },
+      {
+        "n": "Farnsporen als Indikator für feuchtes Klima",
+        "c": "Klima"
+      },
+      {
+        "n": "Cannabis-Reste in Schamanen-Grab",
+        "c": "Religion"
+      },
+      {
+        "n": "Weintraubenkerne in Amphore",
+        "c": "Handel"
+      },
+      {
+        "n": "Opium-Mohnrueckstaende in Gefaess",
+        "c": "Medizin / Ritual"
+      },
+      {
+        "n": "Feigenreste an Strandmarkt-Funde",
+        "c": "Nahrungsmittel"
+      },
+      {
+        "n": "Palmenbluetenstaub in aegyptischer Grabkammer",
+        "c": "Ritual / Religion"
+      },
+      {
+        "n": "Korianderreste in Pompeji-Speicher",
+        "c": "Gewuerze / Kueche"
+      },
+      {
+        "n": "Birkenpech als Klebstoff (Neandertaler)",
+        "c": "Werkzeugherstellung"
+      },
+      {
+        "n": "Leinensamen in jungsteinzeitlicher Grube",
+        "c": "Textilproduktion"
+      },
+      {
+        "n": "Kaffeepollen in osmanischer Schicht",
+        "c": "Handels- / Kulturkontakt"
+      }
     ]
   },
   "handelsrouten": {
     "prompt": "Über welche Handelsroute kam dieses Gut?",
-    "fixedOpts": ["Seidenstraße","Bernsteinstraße","Weihrauchstraße","Atlantikhandel"],
+    "fixedOpts": [
+      "Seidenstraße",
+      "Bernsteinstraße",
+      "Weihrauchstraße",
+      "Atlantikhandel"
+    ],
     "items": [
-      {"n":"Chinesische Seide in Palmyra","c":"Seidenstraße"},
-      {"n":"Baltischer Bernstein in Rom","c":"Bernsteinstraße"},
-      {"n":"Weihrauch aus Hadramaut in Petra","c":"Weihrauchstraße"},
-      {"n":"Silber aus Potosí in Sevilla","c":"Atlantikhandel"},
-      {"n":"Jade aus China in Zentralasien","c":"Seidenstraße"},
-      {"n":"Nordischer Bernstein in Mykene","c":"Bernsteinstraße"},
-      {"n":"Myrrhe aus Äthiopien in Alexandria","c":"Weihrauchstraße"},
-      {"n":"Sklaven aus Westafrika in der Karibik","c":"Atlantikhandel"},
-      {"n":"Glas aus Syrien in Japan","c":"Seidenstraße"},
-      {"n":"Bernstein-Perlen in ägyptischen Gräbern","c":"Bernsteinstraße"},
-      {"n":"Gewürznelken aus Arabien in Byzanz","c":"Weihrauchstraße"},
-      {"n":"Zucker aus Brasilien in Lissabon","c":"Atlantikhandel"}
+      {
+        "n": "Chinesische Seide in Palmyra",
+        "c": "Seidenstraße"
+      },
+      {
+        "n": "Baltischer Bernstein in Rom",
+        "c": "Bernsteinstraße"
+      },
+      {
+        "n": "Weihrauch aus Hadramaut in Petra",
+        "c": "Weihrauchstraße"
+      },
+      {
+        "n": "Silber aus Potosí in Sevilla",
+        "c": "Atlantikhandel"
+      },
+      {
+        "n": "Jade aus China in Zentralasien",
+        "c": "Seidenstraße"
+      },
+      {
+        "n": "Nordischer Bernstein in Mykene",
+        "c": "Bernsteinstraße"
+      },
+      {
+        "n": "Myrrhe aus Äthiopien in Alexandria",
+        "c": "Weihrauchstraße"
+      },
+      {
+        "n": "Sklaven aus Westafrika in der Karibik",
+        "c": "Atlantikhandel"
+      },
+      {
+        "n": "Glas aus Syrien in Japan",
+        "c": "Seidenstraße"
+      },
+      {
+        "n": "Bernstein-Perlen in ägyptischen Gräbern",
+        "c": "Bernsteinstraße"
+      },
+      {
+        "n": "Gewürznelken aus Arabien in Byzanz",
+        "c": "Weihrauchstraße"
+      },
+      {
+        "n": "Zucker aus Brasilien in Lissabon",
+        "c": "Atlantikhandel"
+      },
+      {
+        "n": "Pfefferkoerner aus Indien in Rom",
+        "c": "Gewuerzroute"
+      },
+      {
+        "n": "Lapislazuli aus Afghanistan in Aegypten",
+        "c": "Lapislazuli-Route"
+      },
+      {
+        "n": "Zinn aus Cornwall in Bronzezeit-Europa",
+        "c": "Zinnhandelsroute"
+      },
+      {
+        "n": "Obsidian aus Anatolien auf Zypern",
+        "c": "Aegaeischer Seehandel"
+      },
+      {
+        "n": "Elfenbein aus Afrika in phoenizischen Staedten",
+        "c": "Transsahararoute"
+      },
+      {
+        "n": "Rohseide in Palmyra",
+        "c": "Seidenstrasse"
+      },
+      {
+        "n": "Kupfer von Zypern in der Aegaeis",
+        "c": "Ostmediterraner Seehandel"
+      },
+      {
+        "n": "Bernstein aus Ostsee in Mykene",
+        "c": "Bernsteinstrasse"
+      }
     ]
   },
   "waehrungen": {
     "prompt": "Welcher Zivilisation gehörte diese Währung?",
     "items": [
-      {"n":"Siliquae","c":"Byzanz"},
-      {"n":"Cowrie-Muscheln","c":"China (Shang)"},
-      {"n":"Taler","c":"Heiliges Römisches Reich"},
-      {"n":"Shekel (Gewichtseinheit)","c":"Mesopotamien"},
-      {"n":"Drachme","c":"Griechenland"},
-      {"n":"Sestertius","c":"Römer"},
-      {"n":"Dinar","c":"Islamisches Kalifat"},
-      {"n":"Wampum","c":"Nordamerika (Indigene)"},
-      {"n":"Cacao-Bohnen","c":"Maya"},
-      {"n":"Maravedi","c":"Spanien"},
-      {"n":"Talent (Metallgewicht)","c":"Griechenland"},
-      {"n":"Rixdollar","c":"Niederlande"}
+      {
+        "n": "Siliquae",
+        "c": "Byzanz"
+      },
+      {
+        "n": "Cowrie-Muscheln",
+        "c": "China (Shang)"
+      },
+      {
+        "n": "Taler",
+        "c": "Heiliges Römisches Reich"
+      },
+      {
+        "n": "Shekel (Gewichtseinheit)",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Drachme",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Sestertius",
+        "c": "Römer"
+      },
+      {
+        "n": "Dinar",
+        "c": "Islamisches Kalifat"
+      },
+      {
+        "n": "Wampum",
+        "c": "Nordamerika (Indigene)"
+      },
+      {
+        "n": "Cacao-Bohnen",
+        "c": "Maya"
+      },
+      {
+        "n": "Maravedi",
+        "c": "Spanien"
+      },
+      {
+        "n": "Talent (Metallgewicht)",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Rixdollar",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Wampum-Perlen",
+        "c": "Nordamerika (Irokesen)"
+      },
+      {
+        "n": "Kauri-Muscheln",
+        "c": "Suedostasien / Afrika"
+      },
+      {
+        "n": "Sesterz (Bronzemuenze)",
+        "c": "Roemer"
+      },
+      {
+        "n": "Maravedi",
+        "c": "Spanien (Mittelalter)"
+      },
+      {
+        "n": "Golddinar",
+        "c": "Islamisch"
+      },
+      {
+        "n": "Hacksilber (Gewichtsgeld)",
+        "c": "Wikinger"
+      },
+      {
+        "n": "Kakaobaum-Samen als Waehrung",
+        "c": "Azteken / Maya"
+      },
+      {
+        "n": "Kaurischnecken als Standardgeld",
+        "c": "China (Shang-Dynastie)"
+      }
     ]
   },
   "faelschungen": {
     "prompt": "Was behauptete diese berühmte Fälschung zu sein?",
     "items": [
-      {"n":"Piltdown Man","c":"Frühmensch-Schädel"},
-      {"n":"Hitler-Tagebücher","c":"Historisches Dokument"},
-      {"n":"Nazca-Alien-Mumien","c":"Außerirdischer Körper"},
-      {"n":"Ossuary of James","c":"Jakobs-Ossuarium aus der Bibel"},
-      {"n":"Shroud of Turin (Turiner Grabtuch)","c":"Grablinnen Jesu"},
-      {"n":"Kensington Runenstein","c":"Wikinger-Inschrift in Amerika"},
-      {"n":"Vinland Map","c":"Mittelalterliche Karte Nordamerikas"},
-      {"n":"Tanit-Figurine (Glozel-Fälschung)","c":"Prähistorisches Artefakt"},
-      {"n":"Crystal Skull (Anna Mitchell-Hedges)","c":"Aztekisches Ritual-Objekt"},
-      {"n":"Echt-Antikythera-Zwillingsstück","c":"Antiker Mechanismus"},
-      {"n":"Fujiwara Shinichi Funde","c":"Altsteinzeitliche Artefakte Japan"},
-      {"n":"Drake Plate","c":"Elizabethanische Besitzurkunde"}
+      {
+        "n": "Piltdown Man",
+        "c": "Frühmensch-Schädel"
+      },
+      {
+        "n": "Hitler-Tagebücher",
+        "c": "Historisches Dokument"
+      },
+      {
+        "n": "Nazca-Alien-Mumien",
+        "c": "Außerirdischer Körper"
+      },
+      {
+        "n": "Ossuary of James",
+        "c": "Jakobs-Ossuarium aus der Bibel"
+      },
+      {
+        "n": "Shroud of Turin (Turiner Grabtuch)",
+        "c": "Grablinnen Jesu"
+      },
+      {
+        "n": "Kensington Runenstein",
+        "c": "Wikinger-Inschrift in Amerika"
+      },
+      {
+        "n": "Vinland Map",
+        "c": "Mittelalterliche Karte Nordamerikas"
+      },
+      {
+        "n": "Tanit-Figurine (Glozel-Fälschung)",
+        "c": "Prähistorisches Artefakt"
+      },
+      {
+        "n": "Crystal Skull (Anna Mitchell-Hedges)",
+        "c": "Aztekisches Ritual-Objekt"
+      },
+      {
+        "n": "Echt-Antikythera-Zwillingsstück",
+        "c": "Antiker Mechanismus"
+      },
+      {
+        "n": "Fujiwara Shinichi Funde",
+        "c": "Altsteinzeitliche Artefakte Japan"
+      },
+      {
+        "n": "Drake Plate",
+        "c": "Elizabethanische Besitzurkunde"
+      },
+      {
+        "n": "Protokoll der Weisen von Zion",
+        "c": "Antisemitisches Pamphlet"
+      },
+      {
+        "n": "Karte von Vinland",
+        "c": "Mittelalterliche Karte"
+      },
+      {
+        "n": "Glozel-Funde (Frankreich)",
+        "c": "Neolithische Tafeln"
+      },
+      {
+        "n": "Tasaday (Philippinen)",
+        "c": "Steinzeitvolk"
+      },
+      {
+        "n": "James Ossuary Inschrift",
+        "c": "Knochenkiste"
+      },
+      {
+        "n": "Archaeoraptor (National Geographic)",
+        "c": "Dinosaurier-Vogel-Hybrid"
+      },
+      {
+        "n": "Crystal Skull Smithsonian",
+        "c": "Maya-Artefakt"
+      },
+      {
+        "n": "Acambaro-Figuren (Mexiko)",
+        "c": "Dinosaurier-Terrakotten"
+      }
     ]
   },
   "tempel_ordnungen": {
     "prompt": "Welcher griechischen Ordnung gehört dieser Tempel an?",
-    "fixedOpts": ["Dorisch","Ionisch","Korinthisch","Toskanisch"],
+    "fixedOpts": [
+      "Dorisch",
+      "Ionisch",
+      "Korinthisch",
+      "Toskanisch"
+    ],
     "items": [
-      {"n":"Parthenon (Athen)","c":"Dorisch"},
-      {"n":"Erechtheion (Athen, Karyatiden)","c":"Ionisch"},
-      {"n":"Olympieion (Athen)","c":"Korinthisch"},
-      {"n":"Heratempel von Olympia","c":"Dorisch"},
-      {"n":"Tempel der Artemis in Sardes","c":"Ionisch"},
-      {"n":"Tempel des Zeus Olympios","c":"Korinthisch"},
-      {"n":"Apollontempel in Bassae","c":"Dorisch"},
-      {"n":"Tempel der Athena Nike","c":"Ionisch"},
-      {"n":"Rundtempel in Tivoli","c":"Korinthisch"},
-      {"n":"Maison Carrée (Nîmes)","c":"Korinthisch"},
-      {"n":"Poseidontempel Paestum","c":"Dorisch"},
-      {"n":"Didymaion (Milet)","c":"Ionisch"}
+      {
+        "n": "Parthenon (Athen)",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Erechtheion (Athen, Karyatiden)",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Olympieion (Athen)",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Heratempel von Olympia",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Tempel der Artemis in Sardes",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Tempel des Zeus Olympios",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Apollontempel in Bassae",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Tempel der Athena Nike",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Rundtempel in Tivoli",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Maison Carrée (Nîmes)",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Poseidontempel Paestum",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Didymaion (Milet)",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Tempel von Segesta",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Tempel der Artemis Ephesos",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Erechtheion Nordportikus",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Tempel des Zeus Olympia",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Lysikrates-Monument (Athen)",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Pantheon (Rom) -- Frontsaeulen",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Stoa von Attalos",
+        "c": "Ionisch / Dorisch"
+      },
+      {
+        "n": "Olympieion (Athen)",
+        "c": "Korinthisch"
+      }
     ]
   },
   "indus_tal": {
     "prompt": "In welchem modernen Land liegt diese Indus-Tal-Stätte?",
-    "fixedOpts": ["Pakistan","Indien","Afghanistan","Iran"],
+    "fixedOpts": [
+      "Pakistan",
+      "Indien",
+      "Afghanistan",
+      "Iran"
+    ],
     "items": [
-      {"n":"Mohenjo-daro","c":"Pakistan"},
-      {"n":"Harappa","c":"Pakistan"},
-      {"n":"Dholavira","c":"Indien"},
-      {"n":"Rakhigarhi","c":"Indien"},
-      {"n":"Shortugai","c":"Afghanistan"},
-      {"n":"Kalibangan","c":"Indien"},
-      {"n":"Chanhu-daro","c":"Pakistan"},
-      {"n":"Lothal","c":"Indien"},
-      {"n":"Mehrgarh","c":"Pakistan"},
-      {"n":"Surkotada","c":"Indien"},
-      {"n":"Mundigak","c":"Afghanistan"},
-      {"n":"Banawali","c":"Indien"}
+      {
+        "n": "Mohenjo-daro",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Harappa",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Dholavira",
+        "c": "Indien"
+      },
+      {
+        "n": "Rakhigarhi",
+        "c": "Indien"
+      },
+      {
+        "n": "Shortugai",
+        "c": "Afghanistan"
+      },
+      {
+        "n": "Kalibangan",
+        "c": "Indien"
+      },
+      {
+        "n": "Chanhu-daro",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Lothal",
+        "c": "Indien"
+      },
+      {
+        "n": "Mehrgarh",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Surkotada",
+        "c": "Indien"
+      },
+      {
+        "n": "Mundigak",
+        "c": "Afghanistan"
+      },
+      {
+        "n": "Banawali",
+        "c": "Indien"
+      },
+      {
+        "n": "Lothal",
+        "c": "Indien (Gujarat)"
+      },
+      {
+        "n": "Dholavira",
+        "c": "Indien (Gujarat)"
+      },
+      {
+        "n": "Rakhigarhi",
+        "c": "Indien (Haryana)"
+      },
+      {
+        "n": "Kalibangan",
+        "c": "Indien (Rajasthan)"
+      },
+      {
+        "n": "Chanhu-daro",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Sutkagen Dor",
+        "c": "Pakistan (Baluchistan)"
+      },
+      {
+        "n": "Alamgirpur",
+        "c": "Indien (Uttar Pradesh)"
+      },
+      {
+        "n": "Banawali",
+        "c": "Indien (Haryana)"
+      }
     ]
   },
   "wikinger": {
     "prompt": "Wo liegt diese Wikinger-Siedlung heute?",
     "items": [
-      {"n":"Haithabu","c":"Deutschland"},
-      {"n":"L'Anse aux Meadows","c":"Kanada"},
-      {"n":"Birka","c":"Schweden"},
-      {"n":"Jorvik (York)","c":"England"},
-      {"n":"Hedeby","c":"Deutschland"},
-      {"n":"Kaupang","c":"Norwegen"},
-      {"n":"Ribe","c":"Dänemark"},
-      {"n":"Dublin (Dublinn)","c":"Irland"},
-      {"n":"Gorodische (Nowgorod-Vorläufer)","c":"Russland"},
-      {"n":"Reykjavik (Erste Siedler)","c":"Island"},
-      {"n":"Trelleborg Ringburg","c":"Dänemark"},
-      {"n":"Gnezdovo","c":"Russland"}
+      {
+        "n": "Haithabu",
+        "c": "Deutschland"
+      },
+      {
+        "n": "L'Anse aux Meadows",
+        "c": "Kanada"
+      },
+      {
+        "n": "Birka",
+        "c": "Schweden"
+      },
+      {
+        "n": "Jorvik (York)",
+        "c": "England"
+      },
+      {
+        "n": "Hedeby",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Kaupang",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Ribe",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Dublin (Dublinn)",
+        "c": "Irland"
+      },
+      {
+        "n": "Gorodische (Nowgorod-Vorläufer)",
+        "c": "Russland"
+      },
+      {
+        "n": "Reykjavik (Erste Siedler)",
+        "c": "Island"
+      },
+      {
+        "n": "Trelleborg Ringburg",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Gnezdovo",
+        "c": "Russland"
+      },
+      {
+        "n": "Jorvik (York)",
+        "c": "Grossbritannien"
+      },
+      {
+        "n": "Birka",
+        "c": "Schweden"
+      },
+      {
+        "n": "Kaupang",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Trelleborg (Ringburg)",
+        "c": "Daenemark"
+      },
+      {
+        "n": "Hedeby (Haithabu)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Ribe",
+        "c": "Daenemark"
+      },
+      {
+        "n": "Dublin (Dyflin)",
+        "c": "Irland"
+      },
+      {
+        "n": "Novgorod (Wikinger-Schicht)",
+        "c": "Russland"
+      }
     ]
   },
   "repatriierung": {
     "prompt": "Welches Land fordert dieses Artefakt zurück?",
     "items": [
-      {"n":"Elgin Marbles (Parthenon)","c":"Griechenland"},
-      {"n":"Büste der Nofretete","c":"Ägypten"},
-      {"n":"Benin-Bronzen","c":"Nigeria"},
-      {"n":"Rosetta-Stein","c":"Ägypten"},
-      {"n":"Kohinoor-Diamant","c":"Indien"},
-      {"n":"Priam-Schatz (Troja)","c":"Türkei"},
-      {"n":"Humboldt-Federkrone","c":"Mexiko"},
-      {"n":"Maori-Tatauierten-Köpfe (Toi Moko)","c":"Neuseeland"},
-      {"n":"Kwakwaka'wakw-Masken","c":"Kanada"},
-      {"n":"Seated Scribe (Paris)","c":"Ägypten"},
-      {"n":"Zink-Krieger (Riace)","c":"Kalabrien / Italien"},
-      {"n":"Axum-Obelisk","c":"Äthiopien"}
+      {
+        "n": "Elgin Marbles (Parthenon)",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Büste der Nofretete",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Benin-Bronzen",
+        "c": "Nigeria"
+      },
+      {
+        "n": "Rosetta-Stein",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Kohinoor-Diamant",
+        "c": "Indien"
+      },
+      {
+        "n": "Priam-Schatz (Troja)",
+        "c": "Türkei"
+      },
+      {
+        "n": "Humboldt-Federkrone",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Maori-Tatauierten-Köpfe (Toi Moko)",
+        "c": "Neuseeland"
+      },
+      {
+        "n": "Kwakwaka'wakw-Masken",
+        "c": "Kanada"
+      },
+      {
+        "n": "Seated Scribe (Paris)",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Zink-Krieger (Riace)",
+        "c": "Kalabrien / Italien"
+      },
+      {
+        "n": "Axum-Obelisk",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Obelisk von Axum (war in Rom)",
+        "c": "Aethiopien"
+      },
+      {
+        "n": "Moai aus Chile (im Britischen Museum)",
+        "c": "Chile / Osterinsel"
+      },
+      {
+        "n": "Skull of Hoa Hakananai'a",
+        "c": "Osterinsel"
+      },
+      {
+        "n": "Lusatian Treasures (in Berlin)",
+        "c": "Polen"
+      },
+      {
+        "n": "Lydian Hoard (in NY Metropolitan)",
+        "c": "Tuerkei"
+      },
+      {
+        "n": "Priams Treasure (in Moskau)",
+        "c": "Tuerkei / Deutschland"
+      },
+      {
+        "n": "Kennewick Man (USA -- Repatriierung 2017)",
+        "c": "Colville-Stamm"
+      },
+      {
+        "n": "Benin-Bronzen (Einigung 2022)",
+        "c": "Nigeria"
+      }
     ]
   },
   "popkultur_vs_realitaet": {
     "prompt": "Wie historisch korrekt ist diese Darstellung?",
-    "fixedOpts": ["Stark vereinfacht","Historisch falsch","Weitgehend korrekt","Komplett erfunden"],
+    "fixedOpts": [
+      "Stark vereinfacht",
+      "Historisch falsch",
+      "Weitgehend korrekt",
+      "Komplett erfunden"
+    ],
     "items": [
-      {"n":"Indiana Jones: Arche des Bundes existiert","c":"Stark vereinfacht"},
-      {"n":"Gladiator: Römer benutzten Daumen-runter-Geste","c":"Historisch falsch"},
-      {"n":"300: Leonidas führte 300 Spartaner an","c":"Weitgehend korrekt"},
-      {"n":"Asterix: Römer mochten Gallier nicht","c":"Stark vereinfacht"},
-      {"n":"Mumie: Ägyptische Fluch-Inschriften auf Gräbern","c":"Stark vereinfacht"},
-      {"n":"National Treasure: Freimaurer hüteten Schätze","c":"Komplett erfunden"},
-      {"n":"Da Vinci Code: Maria Magdalena in Abendmahl","c":"Stark vereinfacht"},
-      {"n":"Braveheart: Schotten trugen Kilts im 13. Jh.","c":"Historisch falsch"},
-      {"n":"Viking: Wikinger trugen Gehörnte Helme","c":"Historisch falsch"},
-      {"n":"Troja: Trojanischer Krieg existierte wohl","c":"Weitgehend korrekt"},
-      {"n":"Apocalypto: Maya-Menschenopfer praktiziert","c":"Weitgehend korrekt"},
-      {"n":"Prince of Persia: Darius war mächtiger König","c":"Weitgehend korrekt"}
+      {
+        "n": "Indiana Jones: Arche des Bundes existiert",
+        "c": "Stark vereinfacht"
+      },
+      {
+        "n": "Gladiator: Römer benutzten Daumen-runter-Geste",
+        "c": "Historisch falsch"
+      },
+      {
+        "n": "300: Leonidas führte 300 Spartaner an",
+        "c": "Weitgehend korrekt"
+      },
+      {
+        "n": "Asterix: Römer mochten Gallier nicht",
+        "c": "Stark vereinfacht"
+      },
+      {
+        "n": "Mumie: Ägyptische Fluch-Inschriften auf Gräbern",
+        "c": "Stark vereinfacht"
+      },
+      {
+        "n": "National Treasure: Freimaurer hüteten Schätze",
+        "c": "Komplett erfunden"
+      },
+      {
+        "n": "Da Vinci Code: Maria Magdalena in Abendmahl",
+        "c": "Stark vereinfacht"
+      },
+      {
+        "n": "Braveheart: Schotten trugen Kilts im 13. Jh.",
+        "c": "Historisch falsch"
+      },
+      {
+        "n": "Viking: Wikinger trugen Gehörnte Helme",
+        "c": "Historisch falsch"
+      },
+      {
+        "n": "Troja: Trojanischer Krieg existierte wohl",
+        "c": "Weitgehend korrekt"
+      },
+      {
+        "n": "Apocalypto: Maya-Menschenopfer praktiziert",
+        "c": "Weitgehend korrekt"
+      },
+      {
+        "n": "Prince of Persia: Darius war mächtiger König",
+        "c": "Weitgehend korrekt"
+      },
+      {
+        "n": "Mumienfluche (Tutanchamun)",
+        "c": "Legende"
+      },
+      {
+        "n": "Atlantis (Platon)",
+        "c": "Literarische Allegorie"
+      },
+      {
+        "n": "Pyramiden als Getreidespeicher",
+        "c": "Historisch falsch"
+      },
+      {
+        "n": "Roemer trugen Sandalen im Schnee",
+        "c": "Vereinfacht"
+      },
+      {
+        "n": "Wikinger hatten Hoernerhelme",
+        "c": "Historisch falsch"
+      },
+      {
+        "n": "Cleopatra war ptolemaeisch, nicht aegyptisch",
+        "c": "Historisch korrekt"
+      },
+      {
+        "n": "Gladiatoren kaempften selten bis zum Tod",
+        "c": "Historisch korrekt"
+      },
+      {
+        "n": "Stonehenge wurde von Druiden gebaut",
+        "c": "Historisch falsch"
+      }
     ]
   },
   "welterbe_gefahr": {
     "prompt": "Welche Bedrohung gefährdet diese UNESCO-Welterbestätte?",
-    "fixedOpts": ["Krieg","Klimawandel","Tourismus","Urbanisierung"],
+    "fixedOpts": [
+      "Krieg",
+      "Klimawandel",
+      "Tourismus",
+      "Urbanisierung"
+    ],
     "items": [
-      {"n":"Palmyra (Syrien)","c":"Krieg"},
-      {"n":"Venezianische Lagune (Venedig)","c":"Klimawandel"},
-      {"n":"Stonehenge Umgebung","c":"Tourismus"},
-      {"n":"Angkor Wat (Kambodscha)","c":"Tourismus"},
-      {"n":"Altstadt von Sanaa (Jemen)","c":"Krieg"},
-      {"n":"Great Barrier Reef","c":"Klimawandel"},
-      {"n":"Galapagos-Inseln","c":"Tourismus"},
-      {"n":"Chan Chan (Peru)","c":"Klimawandel"},
-      {"n":"Hatra (Irak)","c":"Krieg"},
-      {"n":"Leptis Magna (Libyen)","c":"Krieg"},
-      {"n":"Timbuktu (Mali)","c":"Krieg"},
-      {"n":"Gebel Barkal (Sudan)","c":"Klimawandel"}
+      {
+        "n": "Palmyra (Syrien)",
+        "c": "Krieg"
+      },
+      {
+        "n": "Venezianische Lagune (Venedig)",
+        "c": "Klimawandel"
+      },
+      {
+        "n": "Stonehenge Umgebung",
+        "c": "Tourismus"
+      },
+      {
+        "n": "Angkor Wat (Kambodscha)",
+        "c": "Tourismus"
+      },
+      {
+        "n": "Altstadt von Sanaa (Jemen)",
+        "c": "Krieg"
+      },
+      {
+        "n": "Great Barrier Reef",
+        "c": "Klimawandel"
+      },
+      {
+        "n": "Galapagos-Inseln",
+        "c": "Tourismus"
+      },
+      {
+        "n": "Chan Chan (Peru)",
+        "c": "Klimawandel"
+      },
+      {
+        "n": "Hatra (Irak)",
+        "c": "Krieg"
+      },
+      {
+        "n": "Leptis Magna (Libyen)",
+        "c": "Krieg"
+      },
+      {
+        "n": "Timbuktu (Mali)",
+        "c": "Krieg"
+      },
+      {
+        "n": "Gebel Barkal (Sudan)",
+        "c": "Klimawandel"
+      },
+      {
+        "n": "Nimrud (Irak)",
+        "c": "Terrorismus / Krieg"
+      },
+      {
+        "n": "Timbuktu (Mali)",
+        "c": "Islamistischer Extremismus"
+      },
+      {
+        "n": "Machu Picchu",
+        "c": "Massentourismus"
+      },
+      {
+        "n": "Lascaux (Original)",
+        "c": "Schimmel durch Tourismus"
+      },
+      {
+        "n": "Sanaa (Jemen)",
+        "c": "Krieg"
+      },
+      {
+        "n": "Everglades (Florida)",
+        "c": "Entwaesserung / Klima"
+      },
+      {
+        "n": "Rapa Nui / Osterinsel",
+        "c": "Klimawandel / Erosion"
+      },
+      {
+        "n": "Palmyra (Syrien)",
+        "c": "Krieg / ISIS"
+      }
     ]
   },
   "zufallsfunde": {
     "prompt": "Wie wurde diese archäologische Entdeckung gemacht?",
-    "fixedOpts": ["Bauarbeiten","Landwirt","Taucher","Wanderer"],
+    "fixedOpts": [
+      "Bauarbeiten",
+      "Landwirt",
+      "Taucher",
+      "Wanderer"
+    ],
     "items": [
-      {"n":"Terrakotta-Armee","c":"Landwirt"},
-      {"n":"Schriftrollen vom Toten Meer","c":"Wanderer"},
-      {"n":"Lascaux-Höhle","c":"Wanderer"},
-      {"n":"Antikythera-Mechanismus","c":"Taucher"},
-      {"n":"Ötzi der Eismann","c":"Wanderer"},
-      {"n":"Himmelsscheibe von Nebra","c":"Wanderer"},
-      {"n":"Uluburun-Schiffswrack","c":"Taucher"},
-      {"n":"Vix-Grabhügel","c":"Bauarbeiten"},
-      {"n":"Nok-Kulturfigurinen","c":"Landwirt"},
-      {"n":"Avebury-Steinkreis (Entdeckung moderner Umfang)","c":"Bauarbeiten"},
-      {"n":"Endurance-Wrack","c":"Taucher"},
-      {"n":"Pompeji (Wiederentdeckung 18. Jh.)","c":"Bauarbeiten"}
+      {
+        "n": "Terrakotta-Armee",
+        "c": "Landwirt"
+      },
+      {
+        "n": "Schriftrollen vom Toten Meer",
+        "c": "Wanderer"
+      },
+      {
+        "n": "Lascaux-Höhle",
+        "c": "Wanderer"
+      },
+      {
+        "n": "Antikythera-Mechanismus",
+        "c": "Taucher"
+      },
+      {
+        "n": "Ötzi der Eismann",
+        "c": "Wanderer"
+      },
+      {
+        "n": "Himmelsscheibe von Nebra",
+        "c": "Wanderer"
+      },
+      {
+        "n": "Uluburun-Schiffswrack",
+        "c": "Taucher"
+      },
+      {
+        "n": "Vix-Grabhügel",
+        "c": "Bauarbeiten"
+      },
+      {
+        "n": "Nok-Kulturfigurinen",
+        "c": "Landwirt"
+      },
+      {
+        "n": "Avebury-Steinkreis (Entdeckung moderner Umfang)",
+        "c": "Bauarbeiten"
+      },
+      {
+        "n": "Endurance-Wrack",
+        "c": "Taucher"
+      },
+      {
+        "n": "Pompeji (Wiederentdeckung 18. Jh.)",
+        "c": "Bauarbeiten"
+      },
+      {
+        "n": "Goldschatz von Varna",
+        "c": "Baggerfuehrer"
+      },
+      {
+        "n": "Hoxne-Schatz",
+        "c": "Metalldetektorist"
+      },
+      {
+        "n": "Staffordshire Hoard",
+        "c": "Metalldetektorist"
+      },
+      {
+        "n": "Willendorf-Venus",
+        "c": "Eisenbahnarbeiter"
+      },
+      {
+        "n": "Nag-Hammadi-Kodizes",
+        "c": "Bauer"
+      },
+      {
+        "n": "Oetzi der Eismann",
+        "c": "Wanderer"
+      },
+      {
+        "n": "Schriftrollen vom Toten Meer",
+        "c": "Beduinen-Hirte"
+      },
+      {
+        "n": "Lascaux-Hoehle",
+        "c": "Kinder beim Spielen"
+      }
     ]
   },
   "digifund_epochen": {
     "prompt": "Welche Epoche deckt dieses Digitalprojekt ab?",
-    "fixedOpts": ["Urgeschichte","Antike","Mittelalter","Neuzeit"],
+    "fixedOpts": [
+      "Urgeschichte",
+      "Antike",
+      "Mittelalter",
+      "Neuzeit"
+    ],
     "items": [
-      {"n":"Chauvet-Höhlenscan","c":"Urgeschichte"},
-      {"n":"Digital Karnak Project","c":"Antike"},
-      {"n":"Rome Reborn","c":"Antike"},
-      {"n":"Virtual Cluny Abbey","c":"Mittelalter"},
-      {"n":"Blombos-Cave 3D-Dokumentation","c":"Urgeschichte"},
-      {"n":"Digital Pompeii","c":"Antike"},
-      {"n":"Virtual Carcassonne","c":"Mittelalter"},
-      {"n":"Waterloo Battlefield LiDAR","c":"Neuzeit"},
-      {"n":"Lascaux-Virtualtour","c":"Urgeschichte"},
-      {"n":"Parthenon 3D-Rekonstruktion","c":"Antike"},
-      {"n":"Digitale Alhambra-Tour","c":"Mittelalter"},
-      {"n":"Titanic-Wrack 3D-Scan","c":"Neuzeit"}
+      {
+        "n": "Chauvet-Höhlenscan",
+        "c": "Urgeschichte"
+      },
+      {
+        "n": "Digital Karnak Project",
+        "c": "Antike"
+      },
+      {
+        "n": "Rome Reborn",
+        "c": "Antike"
+      },
+      {
+        "n": "Virtual Cluny Abbey",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Blombos-Cave 3D-Dokumentation",
+        "c": "Urgeschichte"
+      },
+      {
+        "n": "Digital Pompeii",
+        "c": "Antike"
+      },
+      {
+        "n": "Virtual Carcassonne",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Waterloo Battlefield LiDAR",
+        "c": "Neuzeit"
+      },
+      {
+        "n": "Lascaux-Virtualtour",
+        "c": "Urgeschichte"
+      },
+      {
+        "n": "Parthenon 3D-Rekonstruktion",
+        "c": "Antike"
+      },
+      {
+        "n": "Digitale Alhambra-Tour",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Titanic-Wrack 3D-Scan",
+        "c": "Neuzeit"
+      },
+      {
+        "n": "Virtual Stonehenge (360 Grad)",
+        "c": "Jungsteinzeit"
+      },
+      {
+        "n": "Pompeji 3D-Rekonstruktion",
+        "c": "Roemerzeit"
+      },
+      {
+        "n": "Angkor Wat LiDAR-Survey",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Gobekli Tepe VR-Tour",
+        "c": "Praeneolithikum"
+      },
+      {
+        "n": "Notre-Dame-de-Paris Scan (2019)",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Herculaneum Scroll Entzifferung (AI)",
+        "c": "Antike"
+      },
+      {
+        "n": "Teotihuacan Tunnelscan",
+        "c": "Praeklassik"
+      },
+      {
+        "n": "Versailles 3D (Barock)",
+        "c": "Fruehe Neuzeit"
+      }
     ]
   },
   "antike_medizin": {
     "prompt": "Welcher antiken Kultur entstammt diese medizinische Praxis?",
-    "fixedOpts": ["Ägypten","Griechenland","Mesopotamien","China"],
+    "fixedOpts": [
+      "Ägypten",
+      "Griechenland",
+      "Mesopotamien",
+      "China"
+    ],
     "items": [
-      {"n":"Trepanation (Schädelbohrung) mit Kupferwerkzeug","c":"Ägypten"},
-      {"n":"Hippokratischer Eid","c":"Griechenland"},
-      {"n":"Kräuterliste auf Tontafeln","c":"Mesopotamien"},
-      {"n":"Akupunktur als Heilmethode","c":"China"},
-      {"n":"Ebers-Papyrus (Heilpflanzen)","c":"Ägypten"},
-      {"n":"Asklepion-Tempel-Heilung","c":"Griechenland"},
-      {"n":"Diagnose durch Harnschau","c":"Mesopotamien"},
-      {"n":"Moxa-Therapie (Wärmebehandlung)","c":"China"},
-      {"n":"Zahnextraktion mit Bronzezange","c":"Ägypten"},
-      {"n":"Vier-Säfte-Lehre","c":"Griechenland"},
-      {"n":"Beschwörungs-Ritual gegen Dämonen-Krankheiten","c":"Mesopotamien"},
-      {"n":"Pulsdiagnose und Qi-Konzept","c":"China"}
+      {
+        "n": "Trepanation (Schädelbohrung) mit Kupferwerkzeug",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Hippokratischer Eid",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Kräuterliste auf Tontafeln",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Akupunktur als Heilmethode",
+        "c": "China"
+      },
+      {
+        "n": "Ebers-Papyrus (Heilpflanzen)",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Asklepion-Tempel-Heilung",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Diagnose durch Harnschau",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Moxa-Therapie (Wärmebehandlung)",
+        "c": "China"
+      },
+      {
+        "n": "Zahnextraktion mit Bronzezange",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Vier-Säfte-Lehre",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Beschwörungs-Ritual gegen Dämonen-Krankheiten",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Pulsdiagnose und Qi-Konzept",
+        "c": "China"
+      },
+      {
+        "n": "Edwin Smith Papyrus (chirurgische Anweisungen)",
+        "c": "Aegypten"
+      },
+      {
+        "n": "Galenus' Vier-Saefte-Lehre",
+        "c": "Roemer / Griechenland"
+      },
+      {
+        "n": "Ayurveda (Charaka Samhita)",
+        "c": "Indien"
+      },
+      {
+        "n": "Imhotep als Arzt-Gottheit",
+        "c": "Aegypten"
+      },
+      {
+        "n": "Akupunktur (Bian Que Tradition)",
+        "c": "China"
+      },
+      {
+        "n": "Hammurabi-Kodex Arzt-Paragraphen",
+        "c": "Babylonien"
+      },
+      {
+        "n": "Inka-Trepanation (Schaedeloperation)",
+        "c": "Peru"
+      },
+      {
+        "n": "Epidauros-Asklepion (Tempel-Heilung)",
+        "c": "Griechenland"
+      }
     ]
   },
   "schatzsuche_methoden": {
     "prompt": "Was erkennt diese archäologische Surveymethode?",
-    "fixedOpts": ["Magnetometrie","Bodenradar","LiDAR","Metalldetektoren"],
+    "fixedOpts": [
+      "Magnetometrie",
+      "Bodenradar",
+      "LiDAR",
+      "Metalldetektoren"
+    ],
     "items": [
-      {"n":"Versteckte Metallobjekte tief im Boden","c":"Metalldetektoren"},
-      {"n":"Unterirdische Gruben und Strukturen","c":"Magnetometrie"},
-      {"n":"Wandstrukturen ohne Ausgrabung","c":"Bodenradar"},
-      {"n":"Tempelanlagen unter Dschungel","c":"LiDAR"},
-      {"n":"Eiserne Werkzeuge in Ackerboden","c":"Metalldetektoren"},
-      {"n":"Brandgruben und Öfen","c":"Magnetometrie"},
-      {"n":"Fundamente unter Stadtpflaster","c":"Bodenradar"},
-      {"n":"Kanalsysteme im Tiefland","c":"LiDAR"},
-      {"n":"Münzschätze in Tiefe bis 50cm","c":"Metalldetektoren"},
-      {"n":"Verfärbungen im Boden (Phosphat)","c":"Magnetometrie"},
-      {"n":"Überreste von Holzstrukturen","c":"Bodenradar"},
-      {"n":"Verteilung von Siedlungen in Bergregionen","c":"LiDAR"}
+      {
+        "n": "Versteckte Metallobjekte tief im Boden",
+        "c": "Metalldetektoren"
+      },
+      {
+        "n": "Unterirdische Gruben und Strukturen",
+        "c": "Magnetometrie"
+      },
+      {
+        "n": "Wandstrukturen ohne Ausgrabung",
+        "c": "Bodenradar"
+      },
+      {
+        "n": "Tempelanlagen unter Dschungel",
+        "c": "LiDAR"
+      },
+      {
+        "n": "Eiserne Werkzeuge in Ackerboden",
+        "c": "Metalldetektoren"
+      },
+      {
+        "n": "Brandgruben und Öfen",
+        "c": "Magnetometrie"
+      },
+      {
+        "n": "Fundamente unter Stadtpflaster",
+        "c": "Bodenradar"
+      },
+      {
+        "n": "Kanalsysteme im Tiefland",
+        "c": "LiDAR"
+      },
+      {
+        "n": "Münzschätze in Tiefe bis 50cm",
+        "c": "Metalldetektoren"
+      },
+      {
+        "n": "Verfärbungen im Boden (Phosphat)",
+        "c": "Magnetometrie"
+      },
+      {
+        "n": "Überreste von Holzstrukturen",
+        "c": "Bodenradar"
+      },
+      {
+        "n": "Verteilung von Siedlungen in Bergregionen",
+        "c": "LiDAR"
+      },
+      {
+        "n": "Waermeanomalie ueber Hohlraum im Fels",
+        "c": "Thermografie"
+      },
+      {
+        "n": "Seismische Reflexion fuer tiefe Strukturen",
+        "c": "Seismik"
+      },
+      {
+        "n": "Anomalie durch Metallgehalt im Boden",
+        "c": "Metalldetektoren"
+      },
+      {
+        "n": "Farbkontrast Reifespuren im Luftbild",
+        "c": "Luftfotografie"
+      },
+      {
+        "n": "Leitfaehigkeitsmessung von Steinmauern",
+        "c": "EM-Survey"
+      },
+      {
+        "n": "Magnetische Abweichung durch Eisenerzfunde",
+        "c": "Magnetometrie"
+      },
+      {
+        "n": "Unterwasserstruktur im Sonar-Echolot",
+        "c": "Side-Scan-Sonar"
+      },
+      {
+        "n": "Mikrovibration im Boden durch Hohlraum",
+        "c": "Mikrogravimetrie"
+      }
     ]
   },
   "antike_astronomie": {
     "prompt": "Welcher Kultur gehört diese astronomische Stätte oder Beobachtung?",
-    "fixedOpts": ["Maya","Ägypten","Stonehenge-Kultur","Mesopotamien"],
+    "fixedOpts": [
+      "Maya",
+      "Ägypten",
+      "Stonehenge-Kultur",
+      "Mesopotamien"
+    ],
     "items": [
-      {"n":"El Castillo — Sonnenschlangen-Effekt Äquinoktium","c":"Maya"},
-      {"n":"Ausrichtung der Cheopspyramide nach Norden","c":"Ägypten"},
-      {"n":"Heelstone Sommersonnenwend-Ausrichtung","c":"Stonehenge-Kultur"},
-      {"n":"MUL.APIN — Sternenkatalog auf Tontafeln","c":"Mesopotamien"},
-      {"n":"Dresden-Codex — Venuskalender","c":"Maya"},
-      {"n":"Abu Simbel — Sonnenstrahl trifft Götterstatue","c":"Ägypten"},
-      {"n":"Sarsen-Kreis und Mondzyklen","c":"Stonehenge-Kultur"},
-      {"n":"Mondfinsternis-Vorhersagen","c":"Mesopotamien"},
-      {"n":"Xibalbá — astronomische Unterwelt","c":"Maya"},
-      {"n":"Karnak-Tempel Sonnenwenden-Ausrichtung","c":"Ägypten"},
-      {"n":"Bluestone-Transport nach Astronomie","c":"Stonehenge-Kultur"},
-      {"n":"Enlil-Stern = Nordpol-Stern Konzept","c":"Mesopotamien"}
+      {
+        "n": "El Castillo — Sonnenschlangen-Effekt Äquinoktium",
+        "c": "Maya"
+      },
+      {
+        "n": "Ausrichtung der Cheopspyramide nach Norden",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Heelstone Sommersonnenwend-Ausrichtung",
+        "c": "Stonehenge-Kultur"
+      },
+      {
+        "n": "MUL.APIN — Sternenkatalog auf Tontafeln",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Dresden-Codex — Venuskalender",
+        "c": "Maya"
+      },
+      {
+        "n": "Abu Simbel — Sonnenstrahl trifft Götterstatue",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Sarsen-Kreis und Mondzyklen",
+        "c": "Stonehenge-Kultur"
+      },
+      {
+        "n": "Mondfinsternis-Vorhersagen",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Xibalbá — astronomische Unterwelt",
+        "c": "Maya"
+      },
+      {
+        "n": "Karnak-Tempel Sonnenwenden-Ausrichtung",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Bluestone-Transport nach Astronomie",
+        "c": "Stonehenge-Kultur"
+      },
+      {
+        "n": "Enlil-Stern = Nordpol-Stern Konzept",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Sonnenwende-Ausrichtung bei Newgrange",
+        "c": "Keltisch / Neolithisch"
+      },
+      {
+        "n": "Plejaden-Zaehlung auf Himmelsscheibe Nebra",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Heliacal Rising des Sirius -- Nilflut",
+        "c": "Aegypten"
+      },
+      {
+        "n": "Venustafeln des Ammi-saduqa",
+        "c": "Babylonien"
+      },
+      {
+        "n": "Dresden Codex -- Maya Astronomie",
+        "c": "Maya"
+      },
+      {
+        "n": "Antikythera-Mechanismus Mondphase",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Bighorn Medicine Wheel -- Sonnenwende",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Abu Simbel Tempel -- Aequinoktium-Licht",
+        "c": "Aegypten"
+      }
     ]
   }
 }

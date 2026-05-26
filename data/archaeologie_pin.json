@@ -2,222 +2,1366 @@
   "artefakte": {
     "prompt": "Wo wird dieses Artefakt aufbewahrt?",
     "items": [
-      {"n":"Stein von Rosette","lat":51.5194,"lng":-0.1270},
-      {"n":"Himmelsscheibe von Nebra","lat":51.4833,"lng":11.9667},
-      {"n":"Büste der Nofretete","lat":52.5196,"lng":13.3474},
-      {"n":"Maske des Tutanchamun","lat":30.0478,"lng":31.2336},
-      {"n":"Venus von Willendorf","lat":48.2082,"lng":16.3738},
-      {"n":"Laokoon-Gruppe","lat":41.9022,"lng":12.4539},
-      {"n":"Elgin Marbles (Parthenon-Skulpturen)","lat":51.5194,"lng":-0.1270},
-      {"n":"Antikythera-Mechanismus","lat":37.9714,"lng":23.7258},
-      {"n":"Goldener Hut von Schifferstadt","lat":48.9425,"lng":8.3789},
-      {"n":"Tollund-Mann","lat":56.1333,"lng":9.7500},
-      {"n":"Ötzi der Eismann","lat":46.4975,"lng":11.3548},
-      {"n":"Terrakotta-Armee (Hauptfund)","lat":34.3844,"lng":109.2738}
+      {
+        "n": "Stein von Rosette",
+        "lat": 51.5194,
+        "lng": -0.127
+      },
+      {
+        "n": "Himmelsscheibe von Nebra",
+        "lat": 51.4833,
+        "lng": 11.9667
+      },
+      {
+        "n": "Büste der Nofretete",
+        "lat": 52.5196,
+        "lng": 13.3474
+      },
+      {
+        "n": "Maske des Tutanchamun",
+        "lat": 30.0478,
+        "lng": 31.2336
+      },
+      {
+        "n": "Venus von Willendorf",
+        "lat": 48.2082,
+        "lng": 16.3738
+      },
+      {
+        "n": "Laokoon-Gruppe",
+        "lat": 41.9022,
+        "lng": 12.4539
+      },
+      {
+        "n": "Elgin Marbles (Parthenon-Skulpturen)",
+        "lat": 51.5194,
+        "lng": -0.127
+      },
+      {
+        "n": "Antikythera-Mechanismus",
+        "lat": 37.9714,
+        "lng": 23.7258
+      },
+      {
+        "n": "Goldener Hut von Schifferstadt",
+        "lat": 48.9425,
+        "lng": 8.3789
+      },
+      {
+        "n": "Tollund-Mann",
+        "lat": 56.1333,
+        "lng": 9.75
+      },
+      {
+        "n": "Ötzi der Eismann",
+        "lat": 46.4975,
+        "lng": 11.3548
+      },
+      {
+        "n": "Terrakotta-Armee (Hauptfund)",
+        "lat": 34.3844,
+        "lng": 109.2738
+      },
+      {
+        "n": "Benin-Bronzen (British Museum)",
+        "lat": 51.5194,
+        "lng": -0.127
+      },
+      {
+        "n": "Nefertari-Papyrus (Turin)",
+        "lat": 45.0703,
+        "lng": 7.6869
+      },
+      {
+        "n": "Lewis-Schachfiguren (Edinburgh)",
+        "lat": 55.9468,
+        "lng": -3.1883
+      },
+      {
+        "n": "Goldmaske von Mykene (Athen)",
+        "lat": 37.9714,
+        "lng": 23.7258
+      },
+      {
+        "n": "Voynich-Manuskript (Yale)",
+        "lat": 41.3163,
+        "lng": -72.9223
+      },
+      {
+        "n": "Ludovisi-Thron (Rom)",
+        "lat": 41.9022,
+        "lng": 12.4539
+      },
+      {
+        "n": "Jade-Totenmaske (Mexiko City)",
+        "lat": 19.4326,
+        "lng": -99.1332
+      },
+      {
+        "n": "Sutton-Hoo-Helm (British Museum)",
+        "lat": 51.5194,
+        "lng": -0.127
+      }
     ]
   },
   "megalithanlagen": {
     "prompt": "Wo liegt diese Megalithanlage?",
     "items": [
-      {"n":"Stonehenge","lat":51.1789,"lng":-1.8262},
-      {"n":"Carnac (Menhire)","lat":47.5892,"lng":-3.0692},
-      {"n":"Avebury","lat":51.4285,"lng":-1.8544},
-      {"n":"Göbekli Tepe","lat":37.2231,"lng":38.9225},
-      {"n":"Newgrange","lat":53.6947,"lng":-6.4755},
-      {"n":"Callanish Stones","lat":58.1979,"lng":-6.7442},
-      {"n":"Almendres Cromlech","lat":38.5492,"lng":-8.0711},
-      {"n":"Ring of Brodgar","lat":59.0011,"lng":-3.2297},
-      {"n":"Externsteine","lat":51.8678,"lng":8.9178},
-      {"n":"Rujm el-Hiri","lat":32.9042,"lng":35.7819},
-      {"n":"Gunung Padang","lat":-6.9937,"lng":107.0571},
-      {"n":"Mnajdra-Tempel","lat":35.8269,"lng":14.4361}
+      {
+        "n": "Stonehenge",
+        "lat": 51.1789,
+        "lng": -1.8262
+      },
+      {
+        "n": "Carnac (Menhire)",
+        "lat": 47.5892,
+        "lng": -3.0692
+      },
+      {
+        "n": "Avebury",
+        "lat": 51.4285,
+        "lng": -1.8544
+      },
+      {
+        "n": "Göbekli Tepe",
+        "lat": 37.2231,
+        "lng": 38.9225
+      },
+      {
+        "n": "Newgrange",
+        "lat": 53.6947,
+        "lng": -6.4755
+      },
+      {
+        "n": "Callanish Stones",
+        "lat": 58.1979,
+        "lng": -6.7442
+      },
+      {
+        "n": "Almendres Cromlech",
+        "lat": 38.5492,
+        "lng": -8.0711
+      },
+      {
+        "n": "Ring of Brodgar",
+        "lat": 59.0011,
+        "lng": -3.2297
+      },
+      {
+        "n": "Externsteine",
+        "lat": 51.8678,
+        "lng": 8.9178
+      },
+      {
+        "n": "Rujm el-Hiri",
+        "lat": 32.9042,
+        "lng": 35.7819
+      },
+      {
+        "n": "Gunung Padang",
+        "lat": -6.9937,
+        "lng": 107.0571
+      },
+      {
+        "n": "Mnajdra-Tempel",
+        "lat": 35.8269,
+        "lng": 14.4361
+      },
+      {
+        "n": "Skara Brae (Orkney)",
+        "lat": 59.0486,
+        "lng": -3.3416
+      },
+      {
+        "n": "Bru na Boinne (Knowth)",
+        "lat": 53.7011,
+        "lng": -6.4867
+      },
+      {
+        "n": "Men-an-Tol (Cornwall)",
+        "lat": 50.1614,
+        "lng": -5.6072
+      },
+      {
+        "n": "Nabta Playa (Aegypten)",
+        "lat": 22.5267,
+        "lng": 30.7244
+      },
+      {
+        "n": "Lough Gur (Irland)",
+        "lat": 52.515,
+        "lng": -8.535
+      },
+      {
+        "n": "Recumbent Stone Circle (Aberdeenshire)",
+        "lat": 57.15,
+        "lng": -2.6833
+      },
+      {
+        "n": "Dolmen von Bagneux (Frankreich)",
+        "lat": 47.4667,
+        "lng": -0.0667
+      },
+      {
+        "n": "Monte d'Accoddi (Sardinien)",
+        "lat": 40.7667,
+        "lng": 8.5
+      }
     ]
   },
   "versunkene_staedte": {
     "prompt": "Wo liegt diese versunkene Stadt?",
     "items": [
-      {"n":"Heraklion (Thonis)","lat":31.2833,"lng":30.1000},
-      {"n":"Pavlopetri","lat":36.4667,"lng":22.9333},
-      {"n":"Port Royal","lat":17.9378,"lng":-76.8406},
-      {"n":"Yonaguni-Monument","lat":24.4542,"lng":123.0006},
-      {"n":"Dwarka (Unterwasserruinen)","lat":22.2394,"lng":68.9678},
-      {"n":"Atlit Yam","lat":32.6986,"lng":34.9272},
-      {"n":"Kekova (Simena)","lat":36.1806,"lng":29.8439},
-      {"n":"Caesarea Maritima (Hafenbecken)","lat":32.5000,"lng":34.9000},
-      {"n":"Baiae (Unterwasservilla)","lat":40.8411,"lng":14.0736},
-      {"n":"Lion City (Qiandao-See)","lat":29.6050,"lng":119.0072},
-      {"n":"Alexandria (Pharos-Bereich)","lat":31.2001,"lng":29.8856},
-      {"n":"Nan Madol","lat":6.8452,"lng":158.3285}
+      {
+        "n": "Heraklion (Thonis)",
+        "lat": 31.2833,
+        "lng": 30.1
+      },
+      {
+        "n": "Pavlopetri",
+        "lat": 36.4667,
+        "lng": 22.9333
+      },
+      {
+        "n": "Port Royal",
+        "lat": 17.9378,
+        "lng": -76.8406
+      },
+      {
+        "n": "Yonaguni-Monument",
+        "lat": 24.4542,
+        "lng": 123.0006
+      },
+      {
+        "n": "Dwarka (Unterwasserruinen)",
+        "lat": 22.2394,
+        "lng": 68.9678
+      },
+      {
+        "n": "Atlit Yam",
+        "lat": 32.6986,
+        "lng": 34.9272
+      },
+      {
+        "n": "Kekova (Simena)",
+        "lat": 36.1806,
+        "lng": 29.8439
+      },
+      {
+        "n": "Caesarea Maritima (Hafenbecken)",
+        "lat": 32.5,
+        "lng": 34.9
+      },
+      {
+        "n": "Baiae (Unterwasservilla)",
+        "lat": 40.8411,
+        "lng": 14.0736
+      },
+      {
+        "n": "Lion City (Qiandao-See)",
+        "lat": 29.605,
+        "lng": 119.0072
+      },
+      {
+        "n": "Alexandria (Pharos-Bereich)",
+        "lat": 31.2001,
+        "lng": 29.8856
+      },
+      {
+        "n": "Nan Madol",
+        "lat": 6.8452,
+        "lng": 158.3285
+      },
+      {
+        "n": "Dunwich (Suffolk, UK)",
+        "lat": 52.2764,
+        "lng": 1.6283
+      },
+      {
+        "n": "Vineta (Ostsee, Deutschland)",
+        "lat": 53.9667,
+        "lng": 14.25
+      },
+      {
+        "n": "Epidaurus Limera (Griechenland)",
+        "lat": 36.7667,
+        "lng": 23.0833
+      },
+      {
+        "n": "Canopus (Abuqir-Bucht, Aegypten)",
+        "lat": 31.3333,
+        "lng": 30.0833
+      },
+      {
+        "n": "Olbia (Ukraine, Schwarzes Meer)",
+        "lat": 46.6333,
+        "lng": 31.9
+      },
+      {
+        "n": "Phanagoria (Schwarzes Meer)",
+        "lat": 45.2167,
+        "lng": 36.9333
+      },
+      {
+        "n": "Kaupang (Norwegen, versunkener Hafen)",
+        "lat": 59.0,
+        "lng": 10.2
+      },
+      {
+        "n": "Shi Cheng (Qiandao-See, China)",
+        "lat": 29.605,
+        "lng": 119.0072
+      }
     ]
   },
   "hoehlenmalerien": {
     "prompt": "Wo befinden sich diese prähistorischen Höhlenmalereien?",
     "items": [
-      {"n":"Lascaux","lat":45.0542,"lng":1.0817},
-      {"n":"Altamira","lat":43.3786,"lng":-4.1147},
-      {"n":"Chauvet","lat":44.3833,"lng":4.4167},
-      {"n":"Cueva de las Manos","lat":-47.1653,"lng":-70.6608},
-      {"n":"Laas Geel","lat":9.5564,"lng":44.2044},
-      {"n":"Bhimbetka","lat":22.9375,"lng":77.6125},
-      {"n":"Serra da Capivara","lat":-8.8306,"lng":-42.3431},
-      {"n":"Kakadu-Felsmalereien","lat":-12.8636,"lng":132.8806},
-      {"n":"Magura-Höhle","lat":43.6881,"lng":22.6297},
-      {"n":"Tassili n'Ajjer","lat":25.4978,"lng":8.5736},
-      {"n":"Lubang Jeriji Saléh","lat":0.9833,"lng":116.0667},
-      {"n":"Font-de-Gaume","lat":44.9397,"lng":1.0203}
+      {
+        "n": "Lascaux",
+        "lat": 45.0542,
+        "lng": 1.0817
+      },
+      {
+        "n": "Altamira",
+        "lat": 43.3786,
+        "lng": -4.1147
+      },
+      {
+        "n": "Chauvet",
+        "lat": 44.3833,
+        "lng": 4.4167
+      },
+      {
+        "n": "Cueva de las Manos",
+        "lat": -47.1653,
+        "lng": -70.6608
+      },
+      {
+        "n": "Laas Geel",
+        "lat": 9.5564,
+        "lng": 44.2044
+      },
+      {
+        "n": "Bhimbetka",
+        "lat": 22.9375,
+        "lng": 77.6125
+      },
+      {
+        "n": "Serra da Capivara",
+        "lat": -8.8306,
+        "lng": -42.3431
+      },
+      {
+        "n": "Kakadu-Felsmalereien",
+        "lat": -12.8636,
+        "lng": 132.8806
+      },
+      {
+        "n": "Magura-Höhle",
+        "lat": 43.6881,
+        "lng": 22.6297
+      },
+      {
+        "n": "Tassili n'Ajjer",
+        "lat": 25.4978,
+        "lng": 8.5736
+      },
+      {
+        "n": "Lubang Jeriji Saléh",
+        "lat": 0.9833,
+        "lng": 116.0667
+      },
+      {
+        "n": "Font-de-Gaume",
+        "lat": 44.9397,
+        "lng": 1.0203
+      },
+      {
+        "n": "El Castillo (Kantabrien, Spanien)",
+        "lat": 43.3833,
+        "lng": -4.0
+      },
+      {
+        "n": "Pettakere (Sulawesi, Indonesien)",
+        "lat": -4.9322,
+        "lng": 119.7117
+      },
+      {
+        "n": "Cueva de El Pindal (Asturien)",
+        "lat": 43.3833,
+        "lng": -4.5167
+      },
+      {
+        "n": "Pech Merle (Lot, Frankreich)",
+        "lat": 44.4917,
+        "lng": 1.6833
+      },
+      {
+        "n": "Rouffignac (Dordogne)",
+        "lat": 45.05,
+        "lng": 0.9833
+      },
+      {
+        "n": "Gabarnmung (Arnhem Land, Australien)",
+        "lat": -12.3333,
+        "lng": 134.2167
+      },
+      {
+        "n": "Wadi Sura II (Libysches Massiv)",
+        "lat": 23.0,
+        "lng": 25.1667
+      },
+      {
+        "n": "Cueva de la Pileta (Malaga)",
+        "lat": 36.7,
+        "lng": -5.1
+      }
     ]
   },
   "digitalprojekte": {
     "prompt": "Wo hat diese digitale Archäologie-Institution ihren Sitz?",
     "items": [
-      {"n":"CyArk (Digitales Erbe-Archiv)","lat":37.8044,"lng":-122.2712},
-      {"n":"British Museum 3D-Digitalisierung","lat":51.5194,"lng":-0.1270},
-      {"n":"Smithsonian 3D Digitization Program","lat":38.8921,"lng":-77.0241},
-      {"n":"Österreichische Akademie der Wissenschaften (ACDH)","lat":48.2082,"lng":16.3738},
-      {"n":"Fraunhofer IGD (3D-Heritage)","lat":51.0167,"lng":13.7333},
-      {"n":"CNRS ArScan (Archéologie et Sciences)","lat":48.8566,"lng":2.3522},
-      {"n":"Digital Karnak Project (UCLA)","lat":34.0689,"lng":-118.4452},
-      {"n":"Rome Reborn (Université Laval)","lat":46.7833,"lng":-71.2803},
-      {"n":"ADS (Archaeology Data Service)","lat":53.9591,"lng":-1.0815},
-      {"n":"Zamani Project (UCT)","lat":-33.9567,"lng":18.4603},
-      {"n":"DigVentures (London)","lat":51.5074,"lng":-0.1278},
-      {"n":"Digital Heritage Lab (Brown University)","lat":41.8268,"lng":-71.4025}
+      {
+        "n": "CyArk (Digitales Erbe-Archiv)",
+        "lat": 37.8044,
+        "lng": -122.2712
+      },
+      {
+        "n": "British Museum 3D-Digitalisierung",
+        "lat": 51.5194,
+        "lng": -0.127
+      },
+      {
+        "n": "Smithsonian 3D Digitization Program",
+        "lat": 38.8921,
+        "lng": -77.0241
+      },
+      {
+        "n": "Österreichische Akademie der Wissenschaften (ACDH)",
+        "lat": 48.2082,
+        "lng": 16.3738
+      },
+      {
+        "n": "Fraunhofer IGD (3D-Heritage)",
+        "lat": 51.0167,
+        "lng": 13.7333
+      },
+      {
+        "n": "CNRS ArScan (Archéologie et Sciences)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "Digital Karnak Project (UCLA)",
+        "lat": 34.0689,
+        "lng": -118.4452
+      },
+      {
+        "n": "Rome Reborn (Université Laval)",
+        "lat": 46.7833,
+        "lng": -71.2803
+      },
+      {
+        "n": "ADS (Archaeology Data Service)",
+        "lat": 53.9591,
+        "lng": -1.0815
+      },
+      {
+        "n": "Zamani Project (UCT)",
+        "lat": -33.9567,
+        "lng": 18.4603
+      },
+      {
+        "n": "DigVentures (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Digital Heritage Lab (Brown University)",
+        "lat": 41.8268,
+        "lng": -71.4025
+      },
+      {
+        "n": "Europeana (Den Haag)",
+        "lat": 52.08,
+        "lng": 4.31
+      },
+      {
+        "n": "Google Arts & Culture (Mountain View)",
+        "lat": 37.4192,
+        "lng": -122.0574
+      },
+      {
+        "n": "3D-Museo Nazionale Romano (Rom)",
+        "lat": 41.9022,
+        "lng": 12.4539
+      },
+      {
+        "n": "Virtual Museum of Iraq (Bagdad)",
+        "lat": 33.3406,
+        "lng": 44.4009
+      },
+      {
+        "n": "Institut national du patrimoine (Paris)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "Heritage Foundation of Pakistan (Lahore)",
+        "lat": 31.5546,
+        "lng": 74.3572
+      },
+      {
+        "n": "Egyptian Heritage Archive (Kairo)",
+        "lat": 30.0444,
+        "lng": 31.2357
+      },
+      {
+        "n": "ARIADNE Research Infrastructure (Florenz)",
+        "lat": 43.7696,
+        "lng": 11.2558
+      }
     ]
   },
   "graberfelder": {
     "prompt": "Wo liegt diese berühmte Nekropole?",
     "items": [
-      {"n":"Tal der Könige","lat":25.7402,"lng":32.6014},
-      {"n":"Sutton Hoo","lat":52.0933,"lng":1.3378},
-      {"n":"Cerro Sechín","lat":-9.8972,"lng":-78.2578},
-      {"n":"Sipán-Grab","lat":-6.6919,"lng":-79.9261},
-      {"n":"Royal Tombs of Ur","lat":30.9628,"lng":46.1033},
-      {"n":"Terrakotta-Armee (Nekropole)","lat":34.3844,"lng":109.2738},
-      {"n":"Vergina (Makedonische Gräber)","lat":40.4819,"lng":22.3194},
-      {"n":"Newgrange (Passage Tomb)","lat":53.6947,"lng":-6.4755},
-      {"n":"Hochdorf-Grabhügel","lat":48.9167,"lng":9.0667},
-      {"n":"Hallstatt-Gräberfeld","lat":47.5622,"lng":13.6493},
-      {"n":"Paracas-Nekropole","lat":-13.7833,"lng":-76.2833},
-      {"n":"Sanxingdui Opfergruben","lat":30.9894,"lng":104.1942}
+      {
+        "n": "Tal der Könige",
+        "lat": 25.7402,
+        "lng": 32.6014
+      },
+      {
+        "n": "Sutton Hoo",
+        "lat": 52.0933,
+        "lng": 1.3378
+      },
+      {
+        "n": "Cerro Sechín",
+        "lat": -9.8972,
+        "lng": -78.2578
+      },
+      {
+        "n": "Sipán-Grab",
+        "lat": -6.6919,
+        "lng": -79.9261
+      },
+      {
+        "n": "Royal Tombs of Ur",
+        "lat": 30.9628,
+        "lng": 46.1033
+      },
+      {
+        "n": "Terrakotta-Armee (Nekropole)",
+        "lat": 34.3844,
+        "lng": 109.2738
+      },
+      {
+        "n": "Vergina (Makedonische Gräber)",
+        "lat": 40.4819,
+        "lng": 22.3194
+      },
+      {
+        "n": "Newgrange (Passage Tomb)",
+        "lat": 53.6947,
+        "lng": -6.4755
+      },
+      {
+        "n": "Hochdorf-Grabhügel",
+        "lat": 48.9167,
+        "lng": 9.0667
+      },
+      {
+        "n": "Hallstatt-Gräberfeld",
+        "lat": 47.5622,
+        "lng": 13.6493
+      },
+      {
+        "n": "Paracas-Nekropole",
+        "lat": -13.7833,
+        "lng": -76.2833
+      },
+      {
+        "n": "Sanxingdui Opfergruben",
+        "lat": 30.9894,
+        "lng": 104.1942
+      },
+      {
+        "n": "Pompeji (Nekropole vor den Toren)",
+        "lat": 40.7508,
+        "lng": 14.4897
+      },
+      {
+        "n": "Kerameikos (Athen)",
+        "lat": 37.9773,
+        "lng": 23.7184
+      },
+      {
+        "n": "Tenochtitlan Templo Mayor Opferplatz",
+        "lat": 19.4352,
+        "lng": -99.1316
+      },
+      {
+        "n": "Huaca Pucllana (Lima)",
+        "lat": -12.1117,
+        "lng": -77.0333
+      },
+      {
+        "n": "Banditaccia-Nekropole (Cerveteri)",
+        "lat": 42.0,
+        "lng": 12.1
+      },
+      {
+        "n": "Mound of the Hostages (Tara, Irland)",
+        "lat": 53.5833,
+        "lng": -6.6167
+      },
+      {
+        "n": "Vetulonia (Etruskische Graeber)",
+        "lat": 42.7833,
+        "lng": 11.1333
+      },
+      {
+        "n": "Pazyryk-Kurgane (Sibirien)",
+        "lat": 50.2,
+        "lng": 87.9
+      }
     ]
   },
   "schiffswracks": {
     "prompt": "Wo liegt dieses berühmte Schiffswrack?",
     "items": [
-      {"n":"Vasa (Museum Stockholm)","lat":59.3281,"lng":18.0915},
-      {"n":"Mary Rose (Museum Portsmouth)","lat":50.7984,"lng":-1.1100},
-      {"n":"Titanic (Wrack Nordatlantik)","lat":41.7260,"lng":-49.9469},
-      {"n":"SS Thistlegorm (Rotes Meer)","lat":27.8167,"lng":32.6500},
-      {"n":"Uluburun-Wrack (Kas, Türkei)","lat":36.2000,"lng":29.6500},
-      {"n":"Antikythera-Wrack","lat":35.8667,"lng":23.3167},
-      {"n":"Vasa-Expedition (Vor-Bergung)","lat":59.3281,"lng":18.0915},
-      {"n":"Monitor-Wrack (Cape Hatteras)","lat":35.0000,"lng":-75.4167},
-      {"n":"Batavia-Wrack (Australien)","lat":-28.4831,"lng":113.7992},
-      {"n":"Kronan-Wrack (Ostsee)","lat":56.4000,"lng":16.2000},
-      {"n":"Endurance-Wrack (Weddellmeer)","lat":-68.7000,"lng":-52.9000},
-      {"n":"Black Sea Projekt (UNESCO-Wracks)","lat":43.3200,"lng":28.1800}
+      {
+        "n": "Vasa (Museum Stockholm)",
+        "lat": 59.3281,
+        "lng": 18.0915
+      },
+      {
+        "n": "Mary Rose (Museum Portsmouth)",
+        "lat": 50.7984,
+        "lng": -1.11
+      },
+      {
+        "n": "Titanic (Wrack Nordatlantik)",
+        "lat": 41.726,
+        "lng": -49.9469
+      },
+      {
+        "n": "SS Thistlegorm (Rotes Meer)",
+        "lat": 27.8167,
+        "lng": 32.65
+      },
+      {
+        "n": "Uluburun-Wrack (Kas, Türkei)",
+        "lat": 36.2,
+        "lng": 29.65
+      },
+      {
+        "n": "Antikythera-Wrack",
+        "lat": 35.8667,
+        "lng": 23.3167
+      },
+      {
+        "n": "Vasa-Expedition (Vor-Bergung)",
+        "lat": 59.3281,
+        "lng": 18.0915
+      },
+      {
+        "n": "Monitor-Wrack (Cape Hatteras)",
+        "lat": 35.0,
+        "lng": -75.4167
+      },
+      {
+        "n": "Batavia-Wrack (Australien)",
+        "lat": -28.4831,
+        "lng": 113.7992
+      },
+      {
+        "n": "Kronan-Wrack (Ostsee)",
+        "lat": 56.4,
+        "lng": 16.2
+      },
+      {
+        "n": "Endurance-Wrack (Weddellmeer)",
+        "lat": -68.7,
+        "lng": -52.9
+      },
+      {
+        "n": "Black Sea Projekt (UNESCO-Wracks)",
+        "lat": 43.32,
+        "lng": 28.18
+      },
+      {
+        "n": "Helike (Korinthischer Golf)",
+        "lat": 38.2333,
+        "lng": 22.1333
+      },
+      {
+        "n": "San Jose-Wrack (Kolumbien)",
+        "lat": 9.7,
+        "lng": -75.8
+      },
+      {
+        "n": "Nanhai Nr. 1 (China, Guangdong)",
+        "lat": 21.4667,
+        "lng": 111.7167
+      },
+      {
+        "n": "Bronze-Age Dover-Boat (Aermelkanal)",
+        "lat": 51.1279,
+        "lng": 1.3134
+      },
+      {
+        "n": "Kinneret Fischerboot (Genezareth)",
+        "lat": 32.8342,
+        "lng": 35.5347
+      },
+      {
+        "n": "Bodrum-Wrack Kos-Kanal (Tuerkei)",
+        "lat": 36.9,
+        "lng": 27.3
+      },
+      {
+        "n": "Herculaneum Boote (unterirdisch)",
+        "lat": 40.8058,
+        "lng": 14.3483
+      },
+      {
+        "n": "Cabrera-Archipel Wrack (Mallorca)",
+        "lat": 39.15,
+        "lng": 2.9333
+      }
     ]
   },
   "maya_inka": {
     "prompt": "Wo liegt diese Maya- oder Inka-Ruine?",
     "items": [
-      {"n":"Chichen Itza","lat":20.6829,"lng":-88.5686},
-      {"n":"Tikal","lat":17.2219,"lng":-89.6235},
-      {"n":"Machu Picchu","lat":-13.1631,"lng":-72.5450},
-      {"n":"Palenque","lat":17.4842,"lng":-92.0469},
-      {"n":"Uxmal","lat":20.3597,"lng":-89.7711},
-      {"n":"Copán","lat":14.8383,"lng":-89.1419},
-      {"n":"Chan Chan","lat":-8.1053,"lng":-79.0742},
-      {"n":"Sacsayhuamán","lat":-13.5094,"lng":-71.9819},
-      {"n":"Tulum","lat":20.2147,"lng":-87.4289},
-      {"n":"Teotihuacán","lat":19.6925,"lng":-98.8438},
-      {"n":"Pisac","lat":-13.4158,"lng":-71.8444},
-      {"n":"Bonampak","lat":16.7022,"lng":-91.0650}
+      {
+        "n": "Chichen Itza",
+        "lat": 20.6829,
+        "lng": -88.5686
+      },
+      {
+        "n": "Tikal",
+        "lat": 17.2219,
+        "lng": -89.6235
+      },
+      {
+        "n": "Machu Picchu",
+        "lat": -13.1631,
+        "lng": -72.545
+      },
+      {
+        "n": "Palenque",
+        "lat": 17.4842,
+        "lng": -92.0469
+      },
+      {
+        "n": "Uxmal",
+        "lat": 20.3597,
+        "lng": -89.7711
+      },
+      {
+        "n": "Copán",
+        "lat": 14.8383,
+        "lng": -89.1419
+      },
+      {
+        "n": "Chan Chan",
+        "lat": -8.1053,
+        "lng": -79.0742
+      },
+      {
+        "n": "Sacsayhuamán",
+        "lat": -13.5094,
+        "lng": -71.9819
+      },
+      {
+        "n": "Tulum",
+        "lat": 20.2147,
+        "lng": -87.4289
+      },
+      {
+        "n": "Teotihuacán",
+        "lat": 19.6925,
+        "lng": -98.8438
+      },
+      {
+        "n": "Pisac",
+        "lat": -13.4158,
+        "lng": -71.8444
+      },
+      {
+        "n": "Bonampak",
+        "lat": 16.7022,
+        "lng": -91.065
+      },
+      {
+        "n": "Caral (Peru, aelteste Stadt Amerikas)",
+        "lat": -10.8908,
+        "lng": -77.5206
+      },
+      {
+        "n": "Tiwanaku (Bolivien)",
+        "lat": -16.5544,
+        "lng": -68.6731
+      },
+      {
+        "n": "Xochicalco (Mexiko)",
+        "lat": 18.8,
+        "lng": -99.2833
+      },
+      {
+        "n": "Monte Alban (Oaxaca)",
+        "lat": 17.0437,
+        "lng": -96.7675
+      },
+      {
+        "n": "Chavín de Huantar (Peru)",
+        "lat": -9.5939,
+        "lng": -77.1769
+      },
+      {
+        "n": "Ek Balam (Yucatan)",
+        "lat": 20.8792,
+        "lng": -88.2481
+      },
+      {
+        "n": "Ollantaytambo (Peru)",
+        "lat": -13.2589,
+        "lng": -72.2639
+      },
+      {
+        "n": "Comalcalco (Tabasco -- Backstein-Maya)",
+        "lat": 18.2764,
+        "lng": -93.2047
+      }
     ]
   },
   "roemische_limes": {
     "prompt": "Wo liegt dieses römische Grenzkastell oder dieser Limesabschnitt?",
     "items": [
-      {"n":"Hadrianswall (Housesteads Fort)","lat":55.0108,"lng":-2.3283},
-      {"n":"Limes Germanicus (Saalburg)","lat":50.2614,"lng":8.6350},
-      {"n":"Kastell Welzheim","lat":48.8731,"lng":9.6328},
-      {"n":"Castra Regina (Regensburg)","lat":49.0194,"lng":12.1028},
-      {"n":"Vindonissa (Windisch)","lat":47.4833,"lng":8.2167},
-      {"n":"Legio II Augusta (Isca)","lat":51.5889,"lng":-2.9972},
-      {"n":"Caerleon-Amphitheater","lat":51.6078,"lng":-2.9553},
-      {"n":"Kastell Zugmantel","lat":50.2667,"lng":8.2167},
-      {"n":"Pfahlgraben-Wachturm WP 13/23","lat":50.4500,"lng":9.0833},
-      {"n":"Kastell Aalen","lat":48.8361,"lng":10.0942},
-      {"n":"Dacia Limes (Bumbesti)","lat":45.1667,"lng":23.5167},
-      {"n":"Rätischer Limes (Kipfenberg)","lat":48.9500,"lng":11.3833}
+      {
+        "n": "Hadrianswall (Housesteads Fort)",
+        "lat": 55.0108,
+        "lng": -2.3283
+      },
+      {
+        "n": "Limes Germanicus (Saalburg)",
+        "lat": 50.2614,
+        "lng": 8.635
+      },
+      {
+        "n": "Kastell Welzheim",
+        "lat": 48.8731,
+        "lng": 9.6328
+      },
+      {
+        "n": "Castra Regina (Regensburg)",
+        "lat": 49.0194,
+        "lng": 12.1028
+      },
+      {
+        "n": "Vindonissa (Windisch)",
+        "lat": 47.4833,
+        "lng": 8.2167
+      },
+      {
+        "n": "Legio II Augusta (Isca)",
+        "lat": 51.5889,
+        "lng": -2.9972
+      },
+      {
+        "n": "Caerleon-Amphitheater",
+        "lat": 51.6078,
+        "lng": -2.9553
+      },
+      {
+        "n": "Kastell Zugmantel",
+        "lat": 50.2667,
+        "lng": 8.2167
+      },
+      {
+        "n": "Pfahlgraben-Wachturm WP 13/23",
+        "lat": 50.45,
+        "lng": 9.0833
+      },
+      {
+        "n": "Kastell Aalen",
+        "lat": 48.8361,
+        "lng": 10.0942
+      },
+      {
+        "n": "Dacia Limes (Bumbesti)",
+        "lat": 45.1667,
+        "lng": 23.5167
+      },
+      {
+        "n": "Rätischer Limes (Kipfenberg)",
+        "lat": 48.95,
+        "lng": 11.3833
+      },
+      {
+        "n": "Vindolanda (Hadrianswall)",
+        "lat": 54.9942,
+        "lng": -2.3608
+      },
+      {
+        "n": "Masada (Israel -- roem. Belagerungsring)",
+        "lat": 31.3156,
+        "lng": 35.3534
+      },
+      {
+        "n": "Dura-Europos (Syrien)",
+        "lat": 34.75,
+        "lng": 40.7333
+      },
+      {
+        "n": "Aquincum (Budapest)",
+        "lat": 47.5556,
+        "lng": 19.0417
+      },
+      {
+        "n": "Carnuntum (Niederoesterreich)",
+        "lat": 48.1167,
+        "lng": 16.8667
+      },
+      {
+        "n": "Xanten (Colonia Ulpia Traiana)",
+        "lat": 51.6578,
+        "lng": 6.4533
+      },
+      {
+        "n": "Gerasa (Jerash, Jordanien)",
+        "lat": 32.2817,
+        "lng": 35.8917
+      },
+      {
+        "n": "Timgad Limes-Naehe (Algerien)",
+        "lat": 35.4833,
+        "lng": 6.4667
+      }
     ]
   },
   "pfahlbauten": {
     "prompt": "Wo befinden sich diese prähistorischen Pfahlbauten?",
     "items": [
-      {"n":"Unteruhldingen (Pfahlbaumuseum)","lat":47.7667,"lng":9.1667},
-      {"n":"Mondsee (Mondseeland)","lat":47.8564,"lng":13.3550},
-      {"n":"Bodensee-Konstanz","lat":47.6603,"lng":9.1758},
-      {"n":"Zürichsee (Kleiner Hafner)","lat":47.3769,"lng":8.5417},
-      {"n":"Bielersee (La Tène)","lat":47.0167,"lng":7.0333},
-      {"n":"Federsee-Siedlung","lat":48.0833,"lng":9.6500},
-      {"n":"Attersee","lat":47.8833,"lng":13.5333},
-      {"n":"Robenhausen (Pfäffikon)","lat":47.3833,"lng":8.8000},
-      {"n":"Wangen im Allgäu","lat":47.6933,"lng":9.8333},
-      {"n":"Dispilio (Kastoria-See)","lat":40.5000,"lng":21.2667},
-      {"n":"Ohrid-See Siedlung","lat":41.1167,"lng":20.8000},
-      {"n":"Gardensee Pfahlbauten","lat":45.6167,"lng":10.6833}
+      {
+        "n": "Unteruhldingen (Pfahlbaumuseum)",
+        "lat": 47.7667,
+        "lng": 9.1667
+      },
+      {
+        "n": "Mondsee (Mondseeland)",
+        "lat": 47.8564,
+        "lng": 13.355
+      },
+      {
+        "n": "Bodensee-Konstanz",
+        "lat": 47.6603,
+        "lng": 9.1758
+      },
+      {
+        "n": "Zürichsee (Kleiner Hafner)",
+        "lat": 47.3769,
+        "lng": 8.5417
+      },
+      {
+        "n": "Bielersee (La Tène)",
+        "lat": 47.0167,
+        "lng": 7.0333
+      },
+      {
+        "n": "Federsee-Siedlung",
+        "lat": 48.0833,
+        "lng": 9.65
+      },
+      {
+        "n": "Attersee",
+        "lat": 47.8833,
+        "lng": 13.5333
+      },
+      {
+        "n": "Robenhausen (Pfäffikon)",
+        "lat": 47.3833,
+        "lng": 8.8
+      },
+      {
+        "n": "Wangen im Allgäu",
+        "lat": 47.6933,
+        "lng": 9.8333
+      },
+      {
+        "n": "Dispilio (Kastoria-See)",
+        "lat": 40.5,
+        "lng": 21.2667
+      },
+      {
+        "n": "Ohrid-See Siedlung",
+        "lat": 41.1167,
+        "lng": 20.8
+      },
+      {
+        "n": "Gardensee Pfahlbauten",
+        "lat": 45.6167,
+        "lng": 10.6833
+      },
+      {
+        "n": "La Motte aux Magnins (Chalain-See)",
+        "lat": 46.6667,
+        "lng": 5.75
+      },
+      {
+        "n": "Zug-Sumpf (Zuerich)",
+        "lat": 47.1667,
+        "lng": 8.5167
+      },
+      {
+        "n": "Luokesas (Litauen)",
+        "lat": 54.1167,
+        "lng": 25.6333
+      },
+      {
+        "n": "Molino San Vincenzo (Varese-See)",
+        "lat": 45.8,
+        "lng": 8.7167
+      },
+      {
+        "n": "Sutz-Lattrigen (Bielersee)",
+        "lat": 47.1167,
+        "lng": 7.1833
+      },
+      {
+        "n": "Pestenacker (Bayern)",
+        "lat": 48.1833,
+        "lng": 10.95
+      },
+      {
+        "n": "Burgaschisee-Sued (Schweiz)",
+        "lat": 47.1167,
+        "lng": 7.65
+      },
+      {
+        "n": "Dispilio Erweiterung (Kastoria)",
+        "lat": 40.5,
+        "lng": 21.2667
+      }
     ]
   },
   "wuestenstaedte": {
     "prompt": "Wo liegt diese verlassene Wüstenstadt?",
     "items": [
-      {"n":"Petra","lat":30.3285,"lng":35.4444},
-      {"n":"Palmyra","lat":34.5503,"lng":38.2694},
-      {"n":"Timgad","lat":35.4833,"lng":6.4667},
-      {"n":"Leptis Magna","lat":32.6381,"lng":14.2939},
-      {"n":"Dougga","lat":36.4228,"lng":9.2186},
-      {"n":"Jerash","lat":32.2817,"lng":35.8917},
-      {"n":"Volubilis","lat":34.0736,"lng":-5.5553},
-      {"n":"Hatra","lat":35.5881,"lng":42.7233},
-      {"n":"Ubar (Iram of the Pillars)","lat":18.2578,"lng":53.5544},
-      {"n":"Merv (Sultan Kala)","lat":37.6667,"lng":62.1833},
-      {"n":"Ani (Armenische Hauptstadt)","lat":40.5053,"lng":43.5733},
-      {"n":"Mohenjo-daro","lat":27.3242,"lng":68.1381}
+      {
+        "n": "Petra",
+        "lat": 30.3285,
+        "lng": 35.4444
+      },
+      {
+        "n": "Palmyra",
+        "lat": 34.5503,
+        "lng": 38.2694
+      },
+      {
+        "n": "Timgad",
+        "lat": 35.4833,
+        "lng": 6.4667
+      },
+      {
+        "n": "Leptis Magna",
+        "lat": 32.6381,
+        "lng": 14.2939
+      },
+      {
+        "n": "Dougga",
+        "lat": 36.4228,
+        "lng": 9.2186
+      },
+      {
+        "n": "Jerash",
+        "lat": 32.2817,
+        "lng": 35.8917
+      },
+      {
+        "n": "Volubilis",
+        "lat": 34.0736,
+        "lng": -5.5553
+      },
+      {
+        "n": "Hatra",
+        "lat": 35.5881,
+        "lng": 42.7233
+      },
+      {
+        "n": "Ubar (Iram of the Pillars)",
+        "lat": 18.2578,
+        "lng": 53.5544
+      },
+      {
+        "n": "Merv (Sultan Kala)",
+        "lat": 37.6667,
+        "lng": 62.1833
+      },
+      {
+        "n": "Ani (Armenische Hauptstadt)",
+        "lat": 40.5053,
+        "lng": 43.5733
+      },
+      {
+        "n": "Mohenjo-daro",
+        "lat": 27.3242,
+        "lng": 68.1381
+      },
+      {
+        "n": "Jiaohe (Xinjiang, China)",
+        "lat": 42.8667,
+        "lng": 89.0167
+      },
+      {
+        "n": "Ctesiphon (Irak)",
+        "lat": 33.0944,
+        "lng": 44.5806
+      },
+      {
+        "n": "Nisa (Turkmenistan -- Parther)",
+        "lat": 37.9167,
+        "lng": 58.3333
+      },
+      {
+        "n": "Hegra (Al-Ula, Saudi-Arabien)",
+        "lat": 26.7833,
+        "lng": 37.95
+      },
+      {
+        "n": "Shahr-e Sokhteh (Iran)",
+        "lat": 30.5833,
+        "lng": 61.3333
+      },
+      {
+        "n": "Karakorum (Mongolei)",
+        "lat": 47.1844,
+        "lng": 102.8381
+      },
+      {
+        "n": "Timbuktu (Mali) -- historische Kernstadt",
+        "lat": 16.7667,
+        "lng": -3.0
+      },
+      {
+        "n": "Gebel Barkal (Sudan)",
+        "lat": 18.5333,
+        "lng": 31.8167
+      }
     ]
   },
   "fossilien": {
     "prompt": "Wo liegt diese bedeutende Fossilien-Fundstätte?",
     "items": [
-      {"n":"Tendaguru (Dinosaurier-Fundstätte)","lat":-10.0000,"lng":39.2167},
-      {"n":"Hell Creek Formation","lat":47.3944,"lng":-106.5167},
-      {"n":"Liaoning (Gefiederter Dinosaurier)","lat":41.8333,"lng":120.8333},
-      {"n":"Messel-Grube","lat":49.9258,"lng":8.7553},
-      {"n":"Burgess Shale","lat":51.4400,"lng":-116.4900},
-      {"n":"Ediacara Hills","lat":-31.3667,"lng":138.3333},
-      {"n":"Morrison Formation (Dinosaur NM)","lat":40.4394,"lng":-108.9761},
-      {"n":"Solnhofen (Archaeopteryx)","lat":48.9000,"lng":11.0000},
-      {"n":"Karoo Basin (Permische Fauna)","lat":-31.9167,"lng":24.5833},
-      {"n":"Gobi-Wüste (Mongolei)","lat":43.6667,"lng":103.8333},
-      {"n":"Triassic Ghost Ranch","lat":36.3528,"lng":-106.4711},
-      {"n":"La Brea Tar Pits","lat":34.0639,"lng":-118.3558}
+      {
+        "n": "Tendaguru (Dinosaurier-Fundstätte)",
+        "lat": -10.0,
+        "lng": 39.2167
+      },
+      {
+        "n": "Hell Creek Formation",
+        "lat": 47.3944,
+        "lng": -106.5167
+      },
+      {
+        "n": "Liaoning (Gefiederter Dinosaurier)",
+        "lat": 41.8333,
+        "lng": 120.8333
+      },
+      {
+        "n": "Messel-Grube",
+        "lat": 49.9258,
+        "lng": 8.7553
+      },
+      {
+        "n": "Burgess Shale",
+        "lat": 51.44,
+        "lng": -116.49
+      },
+      {
+        "n": "Ediacara Hills",
+        "lat": -31.3667,
+        "lng": 138.3333
+      },
+      {
+        "n": "Morrison Formation (Dinosaur NM)",
+        "lat": 40.4394,
+        "lng": -108.9761
+      },
+      {
+        "n": "Solnhofen (Archaeopteryx)",
+        "lat": 48.9,
+        "lng": 11.0
+      },
+      {
+        "n": "Karoo Basin (Permische Fauna)",
+        "lat": -31.9167,
+        "lng": 24.5833
+      },
+      {
+        "n": "Gobi-Wüste (Mongolei)",
+        "lat": 43.6667,
+        "lng": 103.8333
+      },
+      {
+        "n": "Triassic Ghost Ranch",
+        "lat": 36.3528,
+        "lng": -106.4711
+      },
+      {
+        "n": "La Brea Tar Pits",
+        "lat": 34.0639,
+        "lng": -118.3558
+      },
+      {
+        "n": "Miguasha (Kanada -- Devonische Fische)",
+        "lat": 48.1,
+        "lng": -66.35
+      },
+      {
+        "n": "Joggins Fossil Cliffs (Nova Scotia)",
+        "lat": 45.6944,
+        "lng": -64.4428
+      },
+      {
+        "n": "Ischigualasto (Argentinien -- Trias)",
+        "lat": -29.9333,
+        "lng": -67.8833
+      },
+      {
+        "n": "Sichuan Zigong Dinosauriermuseum",
+        "lat": 29.35,
+        "lng": 104.7667
+      },
+      {
+        "n": "Florissant (Colorado -- Eozaen)",
+        "lat": 38.9133,
+        "lng": -105.2836
+      },
+      {
+        "n": "Riversleigh (Queensland -- Saeugetiere)",
+        "lat": -19.0833,
+        "lng": 138.7167
+      },
+      {
+        "n": "Tsagaan Khushuu (Mongolei -- Protoceratops)",
+        "lat": 43.8,
+        "lng": 100.4
+      },
+      {
+        "n": "Joggins Fossil Cliffs (Canada)",
+        "lat": 45.6944,
+        "lng": -64.4428
+      }
     ]
   },
   "sensationsfunde": {
     "prompt": "Wo wurde dieser Sensationsfund gemacht?",
     "items": [
-      {"n":"Lascaux-Höhle (Entdeckung durch Kinder)","lat":45.0542,"lng":1.0817},
-      {"n":"Terrakotta-Armee (Brunnenbohrer)","lat":34.3844,"lng":109.2738},
-      {"n":"Schriftrollen vom Toten Meer","lat":31.7000,"lng":35.4500},
-      {"n":"Ötzi-Fundstelle (Wanderer)","lat":46.7767,"lng":10.8450},
-      {"n":"Altamira (Entdeckung durch Kind)","lat":43.3786,"lng":-4.1147},
-      {"n":"Himmelsscheibe von Nebra (Raubgräber)","lat":51.2944,"lng":11.4458},
-      {"n":"Venus de Milo (Bauern auf Melos)","lat":36.7139,"lng":24.4194},
-      {"n":"Rosetta-Stein (Französische Truppen)","lat":31.4128,"lng":30.4172},
-      {"n":"Laetoli-Fußspuren (Mary Leakey)","lat":-2.9958,"lng":35.3522},
-      {"n":"Nok-Kulturfigurinen (Zinnarbeiter)","lat":9.8667,"lng":8.4167},
-      {"n":"Sutton-Hoo-Schiff (Grundbesitzerin)","lat":52.0933,"lng":1.3378},
-      {"n":"Tollund-Mann (Torfstecher)","lat":56.1333,"lng":9.7500}
+      {
+        "n": "Lascaux-Höhle (Entdeckung durch Kinder)",
+        "lat": 45.0542,
+        "lng": 1.0817
+      },
+      {
+        "n": "Terrakotta-Armee (Brunnenbohrer)",
+        "lat": 34.3844,
+        "lng": 109.2738
+      },
+      {
+        "n": "Schriftrollen vom Toten Meer",
+        "lat": 31.7,
+        "lng": 35.45
+      },
+      {
+        "n": "Ötzi-Fundstelle (Wanderer)",
+        "lat": 46.7767,
+        "lng": 10.845
+      },
+      {
+        "n": "Altamira (Entdeckung durch Kind)",
+        "lat": 43.3786,
+        "lng": -4.1147
+      },
+      {
+        "n": "Himmelsscheibe von Nebra (Raubgräber)",
+        "lat": 51.2944,
+        "lng": 11.4458
+      },
+      {
+        "n": "Venus de Milo (Bauern auf Melos)",
+        "lat": 36.7139,
+        "lng": 24.4194
+      },
+      {
+        "n": "Rosetta-Stein (Französische Truppen)",
+        "lat": 31.4128,
+        "lng": 30.4172
+      },
+      {
+        "n": "Laetoli-Fußspuren (Mary Leakey)",
+        "lat": -2.9958,
+        "lng": 35.3522
+      },
+      {
+        "n": "Nok-Kulturfigurinen (Zinnarbeiter)",
+        "lat": 9.8667,
+        "lng": 8.4167
+      },
+      {
+        "n": "Sutton-Hoo-Schiff (Grundbesitzerin)",
+        "lat": 52.0933,
+        "lng": 1.3378
+      },
+      {
+        "n": "Tollund-Mann (Torfstecher)",
+        "lat": 56.1333,
+        "lng": 9.75
+      },
+      {
+        "n": "Goldschatz von Varna (Baggerfuehrer)",
+        "lat": 43.2042,
+        "lng": 27.9106
+      },
+      {
+        "n": "Hoxne-Schatz (Bauer sucht Hammer)",
+        "lat": 52.3489,
+        "lng": 1.1756
+      },
+      {
+        "n": "Willendorf-Venus (Eisenbahnarbeiter)",
+        "lat": 48.3578,
+        "lng": 15.3944
+      },
+      {
+        "n": "Staffordshire Hoard (Metalldetektor)",
+        "lat": 52.7333,
+        "lng": -2.0167
+      },
+      {
+        "n": "Nag-Hammadi-Kodizes (Bauer beim Graeben)",
+        "lat": 26.0333,
+        "lng": 32.2333
+      },
+      {
+        "n": "Vogelherd-Figurinen (Hoehlengrabung 1931)",
+        "lat": 48.5167,
+        "lng": 10.1667
+      },
+      {
+        "n": "Sipan-Grab (Archaeologe Alva 1987)",
+        "lat": -6.6919,
+        "lng": -79.9261
+      },
+      {
+        "n": "Lydischer Schatz -- Karun Hoard (Bauer)",
+        "lat": 38.6,
+        "lng": 27.8333
+      }
     ]
   }
 }
