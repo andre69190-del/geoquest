@@ -5,8 +5,10 @@ if exist ".git\index.lock" del /f /q ".git\index.lock"
 if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
+python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
+echo.
 git add -A
-git commit -m "FEAT+FIX: Phase 227-223-224 — Tiere & Natur + Pferde-DLC + Data Expansion + Greenlight Audit. Phase 227: 45 Tiere-Modi (15 Pin + 12 HL + 18 Match), Pferde-DLC (Rassen-Pin, Fachbegriffe-Match, Stockmass-HL, Pferdfluesterer-WS). QA-Hotfix: genUniversalPinQ strips location hints (Parens+Pfeil) from tiere-group subjects. Phase 223: Tiere/Pferde datasets scaled 20->29-68 entries (real data, no hallucinations). Search catLabels: tiere/natur/animals keywords added. Phase 224 Greenlight Audit: 0 KRITISCH/HOCH/MITTEL/LOW findings. Build: 1.581M chars."
+git commit -m "REFACTOR: Phase 225 + Suggestions 1+2+3 — Data-Logic Separation + Patches System + Build Selftest. Phase 225: Extracted KULTUR_DATA+TIER_WS/HL/MATCH_DATA to data/*.json (118 KB out of gen.py). gen.py: 1.19MB -> 1.07MB. Suggestion 1: patches/ directory with PATCHES.md convention + run_patch.py runner (validate+patch+build+verify, auto-rollback on failure). Suggestion 2: JSON separation complete (Node.js round-trip validated). Suggestion 3: verify.py selftest (33 checks: JS syntax, data objects, MODES count, generators, anti-cheat, mojibake, JSON validity, _GQ_SALT). verify.py now hooked into unlock_and_push.bat as pre-push gate. Build: 1.640M chars."
 echo.
 echo Pushing to GitHub...
 git push origin main

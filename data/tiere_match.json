@@ -1,0 +1,2193 @@
+{
+  "faehrten": {
+    "prompt": "Zu welchem Tier gehoert diese Spur?",
+    "items": [
+      {
+        "n": "4 Zehen ohne Krallen, grosser Handballen - Raubkatze",
+        "c": "Loewe"
+      },
+      {
+        "n": "5 Zehen, Krallen sichtbar, handgross - Grossbaer",
+        "c": "Braunbaer"
+      },
+      {
+        "n": "Gespaltener Hufabdruck, tief im Schlamm - Paarhufer",
+        "c": "Wildschwein"
+      },
+      {
+        "n": "4 schlanke Zehen in V-Form, mittelgross - Canide",
+        "c": "Rotfuchs"
+      },
+      {
+        "n": "3 Vorderzehen + Krallen, Vogelabdruck klein",
+        "c": "Taube"
+      },
+      {
+        "n": "Runder Hufabdruck, ungespalten - Unpaarhufer",
+        "c": "Pferd"
+      },
+      {
+        "n": "Kleiner Handabdruck mit 5 Fingern im Schlamm",
+        "c": "Waschbaer"
+      },
+      {
+        "n": "Breite Schwanzschleifspur + 5-Zehen-Abdruck",
+        "c": "Biber"
+      },
+      {
+        "n": "Sehr tiefer 5-Zehen-Abdruck, menschenaehnlich",
+        "c": "Gorilla"
+      },
+      {
+        "n": "Breiter Plattfuss-Abdruck, 5 Zehen, schwere Last",
+        "c": "Afrikanischer Elefant"
+      },
+      {
+        "n": "Spiralfoermige Rutschspur am Flussufer + schmale Pfoten",
+        "c": "Fischotter"
+      },
+      {
+        "n": "Winzige 4-Zehen-Abdrucke im Zickzack-Muster",
+        "c": "Hausmaus"
+      },
+      {
+        "n": "3 Zehen vorwaerts + 1 Hinterzehe, grosser Vogel",
+        "c": "Storch"
+      },
+      {
+        "n": "Zickzack-Spur im Schnee, 4 Pfoten hintereinander",
+        "c": "Schneehase"
+      },
+      {
+        "n": "Tiefer Huffabdruck, gespalten, klein wie Handflaeche",
+        "c": "Gemse"
+      },
+      {
+        "n": "Dreieckige Krallenspur, 3 grosse Vorderzehen",
+        "c": "Steinadler"
+      },
+      {
+        "n": "Lange parallele Kratzspuren an Baumrinde",
+        "c": "Schwarzbaer"
+      },
+      {
+        "n": "Flacher Gleitstreifen im Schlamm + Hinterflosse",
+        "c": "Nil-Krokodil"
+      },
+      {
+        "n": "Sehr kleine 4-Zehen-Abdruecke, nah beieinander",
+        "c": "Eichoernchen"
+      },
+      {
+        "n": "Breite 4-Zehen-Spur ohne Krallen, gross wie Teller",
+        "c": "Tiger"
+      }
+    ]
+  },
+  "architekten": {
+    "prompt": "Wer baut dieses Bauwerk?",
+    "items": [
+      {
+        "n": "Bis zu 9m hoher Lehmhuegel mit Pilzkammern innen",
+        "c": "Termite"
+      },
+      {
+        "n": "Damm aus Holzstaemmen und Aesten quer ueber Bach",
+        "c": "Biber"
+      },
+      {
+        "n": "Perfektes Sechseck-Wachsnetz mit Honig- und Brutkammern",
+        "c": "Honigbiene"
+      },
+      {
+        "n": "Kunstvoll geflochtenes Haengenest aus Grashalmen",
+        "c": "Webervogel"
+      },
+      {
+        "n": "Trichterfoermige Sandgrube als Fangfalle",
+        "c": "Ameisenloew"
+      },
+      {
+        "n": "Unterirdisches Tunnelsystem mit 300 Kammern, Gemeinschaft",
+        "c": "Erdmaennchen"
+      },
+      {
+        "n": "Kugelfoermiges Blaetternest hoch in Baumkrone",
+        "c": "Schimpanse"
+      },
+      {
+        "n": "Spinnseide-Trichternetz mit Wohnroehre hinten",
+        "c": "Trichterspinne"
+      },
+      {
+        "n": "Seifenblasen-aehnliches Schaumnest auf Wasseroberflaeche",
+        "c": "Fadenfisch"
+      },
+      {
+        "n": "Halbkugelfoermige Kuppel aus Moos und Spinnweben",
+        "c": "Zaunkoenig"
+      },
+      {
+        "n": "Kreisfoermige Mandala-Skulptur im Sand als Balz",
+        "c": "Japanischer Kugelfisch"
+      },
+      {
+        "n": "Roehren aus Kalk und Schleim am Meeresboden",
+        "c": "Roehrenwurm"
+      },
+      {
+        "n": "Nadel-Kissen aus Kiefernnadeln, bis 1m hoch",
+        "c": "Rote Waldameise"
+      },
+      {
+        "n": "Flaschenfoermiges Haengenest an duennem Ast",
+        "c": "Beutelmeise"
+      },
+      {
+        "n": "Spiralfoermiges Gehaeuse aus Kalk, mobil getragen",
+        "c": "Weinbergschnecke"
+      },
+      {
+        "n": "Lehmkugel-Nest an Felswand, einseitig offene Kuppel",
+        "c": "Rauchschwalbe"
+      },
+      {
+        "n": "Mulde im Kiesbett, kreisrund ausgescharrt",
+        "c": "Lachs"
+      },
+      {
+        "n": "Grosses Reisignest auf Strommasten, jahrelang genutzt",
+        "c": "Weissstorch"
+      },
+      {
+        "n": "Blatt zu Roehre gerollt und mit Spinnfaeden fixiert",
+        "c": "Blattwespe"
+      },
+      {
+        "n": "Erdhoehle bis 3m tief, Eingang verborgen",
+        "c": "Erdwolf"
+      }
+    ]
+  },
+  "tarnung": {
+    "prompt": "Welches Tier tarnt sich so?",
+    "items": [
+      {
+        "n": "Erscheint perfekt wie ein gruenes Blatt mit Blattadern",
+        "c": "Wandelndes Blatt"
+      },
+      {
+        "n": "Sieht aus wie ein moosbedeckter Stein am Meeresboden, hochgiftig",
+        "c": "Steinfisch"
+      },
+      {
+        "n": "Wechselt Farbe und Muster in Sekundenbruchteilen",
+        "c": "Chamaeleon"
+      },
+      {
+        "n": "Koerper identisch mit Ast inkl. Knospen und Narben",
+        "c": "Gespenstschrecke"
+      },
+      {
+        "n": "Weissfell verschmilzt mit Schnee und Eis",
+        "c": "Eisbjaer im Winter"
+      },
+      {
+        "n": "Streifenmuster bricht Koerperumriss im hohen Gras",
+        "c": "Tiger"
+      },
+      {
+        "n": "Koerper transparent wie Glas, Organe sichtbar",
+        "c": "Glasfrosch"
+      },
+      {
+        "n": "Sandfarben, randloser flacher Koerper, Meeresboden",
+        "c": "Zitterrochen"
+      },
+      {
+        "n": "Dunkle Streifen verschmelzen mit vertikalem Schilf",
+        "c": "Rohrdommel"
+      },
+      {
+        "n": "Scheinaugen auf Fluegeln schrecken Fressfeinde ab",
+        "c": "Pfauenauge"
+      },
+      {
+        "n": "Flechten-Muster auf Koerper identisch mit Baumrinde",
+        "c": "Rindeneule"
+      },
+      {
+        "n": "Wechselt im Winter zu Weissfell, Sommer graubraun",
+        "c": "Schneehuhn"
+      },
+      {
+        "n": "Oben dunkel wie Meerestiefe, unten hell wie Himmelslicht",
+        "c": "Thunfisch"
+      },
+      {
+        "n": "Tentakel-Spitzen identisch mit Korallenzweigen",
+        "c": "Meerespferd (Seepferdchen)"
+      },
+      {
+        "n": "Goldgelbe Flecken auf grunem Grund = Sonnenlichtspiel",
+        "c": "Jaguar"
+      },
+      {
+        "n": "Fleckenmuster identisch mit moosigem Waldboden",
+        "c": "Ozelot"
+      },
+      {
+        "n": "Koerper imitiert abgestorbenes Laub exakt",
+        "c": "Sattelblattschrecke"
+      },
+      {
+        "n": "Haut zeigt Sandkorn-Textur durch Papillen",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Weissflecken auf dunklem Fell = Sonnenlichtflecken",
+        "c": "Schneeleopard"
+      },
+      {
+        "n": "Rostbrauner Koerper identisch mit Baumstumpf-Muster",
+        "c": "Uhu"
+      }
+    ]
+  },
+  "ernaehrung": {
+    "prompt": "Welchem Ernaehrungstyp gehoert dieses Tier an?",
+    "fixedOpts": [
+      "Karnivor",
+      "Herbivor",
+      "Omnivor",
+      "Frugivor"
+    ],
+    "items": [
+      {
+        "n": "Loewe",
+        "c": "Karnivor"
+      },
+      {
+        "n": "Koala",
+        "c": "Herbivor"
+      },
+      {
+        "n": "Schimpanse",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Flughund",
+        "c": "Frugivor"
+      },
+      {
+        "n": "Tigerhai",
+        "c": "Karnivor"
+      },
+      {
+        "n": "Riesenpanda",
+        "c": "Herbivor"
+      },
+      {
+        "n": "Braunbaer",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Quetzal",
+        "c": "Frugivor"
+      },
+      {
+        "n": "Gepard",
+        "c": "Karnivor"
+      },
+      {
+        "n": "Kaninchen",
+        "c": "Herbivor"
+      },
+      {
+        "n": "Wildschwein",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Kinkajou",
+        "c": "Frugivor"
+      },
+      {
+        "n": "Weisser Hai",
+        "c": "Karnivor"
+      },
+      {
+        "n": "Afrikanischer Elefant",
+        "c": "Herbivor"
+      },
+      {
+        "n": "Dachs",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Orang-Utan",
+        "c": "Frugivor"
+      },
+      {
+        "n": "Adler",
+        "c": "Karnivor"
+      },
+      {
+        "n": "Zebra",
+        "c": "Herbivor"
+      },
+      {
+        "n": "Ratte",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Tapir",
+        "c": "Frugivor"
+      }
+    ]
+  },
+  "symbiose": {
+    "prompt": "Welches Tier lebt in Symbiose mit diesem Partner?",
+    "items": [
+      {
+        "n": "Seeanemone",
+        "c": "Clownfisch"
+      },
+      {
+        "n": "Bueffel / Nashorn (Ektoparasiten-Reinigung)",
+        "c": "Madenhacker (Vogel)"
+      },
+      {
+        "n": "Riffhai (Reinigungsstation)",
+        "c": "Putzerlippfisch"
+      },
+      {
+        "n": "Nilkrokodil (Mundhygiene)",
+        "c": "Krokodilwaechter (Vogel)"
+      },
+      {
+        "n": "Einsiedlerkrebs (Schutz/Transport)",
+        "c": "Seeanemone"
+      },
+      {
+        "n": "Blattschneiderameise (Nahrungsquelle)",
+        "c": "Pilz (Leucoagaricus)"
+      },
+      {
+        "n": "Remora-Fisch (Transport/Futterreste)",
+        "c": "Hai"
+      },
+      {
+        "n": "Nilpferd (Hautpflege im Wasser)",
+        "c": "Nilpferdfisch"
+      },
+      {
+        "n": "Kuckuck (Brutparasit)",
+        "c": "Teichrohrsdaenger"
+      },
+      {
+        "n": "Honigbiene (Bestaebung)",
+        "c": "Bluetenpflanze"
+      },
+      {
+        "n": "Ameise (Melken der Larven)",
+        "c": "Blattlaus"
+      },
+      {
+        "n": "Tiefseefisch (Lichtkoeder fuer Bakterien)",
+        "c": "Leuchtbakterien"
+      },
+      {
+        "n": "Grosser Honiggucker (Fuehrt zu Bienennest)",
+        "c": "Honigdachs"
+      },
+      {
+        "n": "Garnele (Reinigung der Krabben-Schale)",
+        "c": "Boxerkrebs"
+      },
+      {
+        "n": "Rotes Mangrovenwurzel-System",
+        "c": "Mangroven-Schnapper"
+      },
+      {
+        "n": "Feigenbaum (einziger Bestaeuber)",
+        "c": "Feigenwespe"
+      },
+      {
+        "n": "Termitenbau (Mitmieter ohne Nutzen)",
+        "c": "Termitenpflanzer-Gecko"
+      },
+      {
+        "n": "Korallenriff (Algensymbiose)",
+        "c": "Zooxanthelle (Alge)"
+      },
+      {
+        "n": "Mensch (Darmflora)",
+        "c": "Bifidus-Bakterium"
+      },
+      {
+        "n": "Oxpecker-Vogel reinigt Wunden an",
+        "c": "Giraffe"
+      }
+    ]
+  },
+  "tauchtiefe": {
+    "prompt": "Welches Tier taucht in diese Tiefe?",
+    "items": [
+      {
+        "n": "Rekord: 2.992 Meter Tiefe (tiefstes Saeugetier)",
+        "c": "Cuvier-Schnabelwal"
+      },
+      {
+        "n": "1.850 Meter Tiefe, Jagd auf Tintenfische",
+        "c": "Pottwal"
+      },
+      {
+        "n": "1.400 Meter Tiefe, Atlantik und Pazifik",
+        "c": "Blauwal"
+      },
+      {
+        "n": "1.000 Meter Tiefe, lebendgebaerend",
+        "c": "Zitronenhai"
+      },
+      {
+        "n": "564 Meter Tiefe (Pinguinrekord)",
+        "c": "Kaiserpinguin"
+      },
+      {
+        "n": "500 Meter, jahrlich 250.000km Wanderstrecke",
+        "c": "Streifendelfin"
+      },
+      {
+        "n": "400 Meter Tiefe, Polarmeer-Jager",
+        "c": "Sattelrobbe"
+      },
+      {
+        "n": "300 Meter Tiefe, Schildkroetenrekord",
+        "c": "Lederschildkroete"
+      },
+      {
+        "n": "250 Meter, tropische Riffe",
+        "c": "Hammerhai"
+      },
+      {
+        "n": "200 Meter, Grosse Barriere-Riff-Taucher",
+        "c": "Suedlicher See-Elefant"
+      },
+      {
+        "n": "150 Meter, Schnellschwimmer bis 70km/h",
+        "c": "Blauflossen-Thunfisch"
+      },
+      {
+        "n": "100 Meter, flusstauglicher Baer",
+        "c": "Eisbjaer"
+      },
+      {
+        "n": "50 Meter, Fluchttaucher vor Haien",
+        "c": "Grosser Tuemmler"
+      },
+      {
+        "n": "35 Meter, taucht unter Eis",
+        "c": "Ringelrobbe"
+      },
+      {
+        "n": "20 Meter, Pinguinrekord kleine Art",
+        "c": "Brillenpinguin"
+      },
+      {
+        "n": "15 Meter, Seeotter taucht nach Seeigeln",
+        "c": "Seeotter"
+      },
+      {
+        "n": "10 Meter, Flussotter auf Jagd",
+        "c": "Riesenotter"
+      },
+      {
+        "n": "5 Meter, jaegt Fische in Fluessen",
+        "c": "Kingfisher (Eisvogel)"
+      },
+      {
+        "n": "3 Meter, taucht nach Korallen-Larven",
+        "c": "Seepferdchen"
+      },
+      {
+        "n": "2 Meter, jaegt Fische an Flussoberflaeche",
+        "c": "Grizzly"
+      }
+    ]
+  },
+  "mimikry": {
+    "prompt": "Welches Tier zeigt diese Mimikry oder Tauschung?",
+    "items": [
+      {
+        "n": "Imitiert Farbmuster der giftigen Korallenotter (Rot-Schwarz-Gelb)",
+        "c": "Scharlachnatter"
+      },
+      {
+        "n": "Zeigt Wespen-Gelb-Schwarz, ist aber harmlose Fliege",
+        "c": "Schwebfliege"
+      },
+      {
+        "n": "Kopiert Oktopus-Form und Bewegung unter Wasser",
+        "c": "Mimic Oktopus"
+      },
+      {
+        "n": "Ahmt giftige Monarchfalter nach (orange Fluegel)",
+        "c": "Vizekoenigschmetterling"
+      },
+      {
+        "n": "Imitiert giftige Feuersalamander-Faerbung (harmlos)",
+        "c": "Lurchnatter"
+      },
+      {
+        "n": "Tarnt sich als tote Schlange wenn bedroht",
+        "c": "Opossum"
+      },
+      {
+        "n": "Breitet beim Angriff falsche Augen am Hinterkopf auf",
+        "c": "Brillenschlange"
+      },
+      {
+        "n": "Ahmt Biene nach durch Fluegelstellung und Brummen",
+        "c": "Bienenschweber"
+      },
+      {
+        "n": "Imitiert Vogelkot auf Blatt (Schutzfaerbung als Larve)",
+        "c": "Ritterfalter-Larve"
+      },
+      {
+        "n": "Ahmt Blattanatomie mit Adern und Bissspuren nach",
+        "c": "Wandelndes Blatt"
+      },
+      {
+        "n": "Zeigt Riesenauge-Muster bei Bedrohung",
+        "c": "Pfauenspinne"
+      },
+      {
+        "n": "Imitiert giftige Koralle optisch (Batessche Mimikry)",
+        "c": "Dreiecksnatter (USA)"
+      },
+      {
+        "n": "Kopiert Spinnentier-Form mit Fluegeln gespreizt",
+        "c": "Fliege (Rivellia)"
+      },
+      {
+        "n": "Gibt Duft des giftigen Vorbilds ab zusaetzlich",
+        "c": "Harlekinkaefer"
+      },
+      {
+        "n": "Ahmt Wespennest-Textur mit Koerper nach",
+        "c": "Hornissen-Glasfluegler"
+      },
+      {
+        "n": "Imitiert Spinne durch Arm-Haltung (Spinnenmoerder)",
+        "c": "Lauerkafer"
+      },
+      {
+        "n": "Leuchtet wie Gluhwuermchen um Maennchen anzulocken (dann fressen)",
+        "c": "Photuris-Gluhwuermchen"
+      },
+      {
+        "n": "Ahmt Feindvogel-Ruf nach um Artgenossen zu warnen",
+        "c": "Lyravogel"
+      },
+      {
+        "n": "Imitiert Erdwespe durch Stachel-Mimikry",
+        "c": "Waffenfliege"
+      },
+      {
+        "n": "Koerper sieht aus wie Hornissen-Koerper exakt",
+        "c": "Hornissenklarwing"
+      }
+    ]
+  },
+  "metamorphose": {
+    "prompt": "Zu welchem Insekt wird diese Larve / Raupe?",
+    "items": [
+      {
+        "n": "Gruene Raupe mit Augenflecken und Schwanzstachel",
+        "c": "Schwalbenschwanz"
+      },
+      {
+        "n": "Schwarze Raupe mit orangegelben Querstreifen",
+        "c": "Monarchfalter"
+      },
+      {
+        "n": "Wasserlarve mit Atemroehre an Oberflaeche (Stechendes Insekt)",
+        "c": "Steckmuecke"
+      },
+      {
+        "n": "Silbrige Made unter Steinen, Eintags-Wasserinsekt",
+        "c": "Eintagsfliege"
+      },
+      {
+        "n": "Braune zottige Wollbaer-Raupe am Wegrand",
+        "c": "Baerenspinner"
+      },
+      {
+        "n": "Hornisse-grosse Larve, frisst Holz von innen",
+        "c": "Nashornkaefer"
+      },
+      {
+        "n": "Sackfoermige Raupe in Seidenhuelse an Maulbeere",
+        "c": "Seidenspinner"
+      },
+      {
+        "n": "Gelbgruene Raupe mit weissem Sattelfleck",
+        "c": "Zitronenfalter"
+      },
+      {
+        "n": "Erdlarve mit grossen Beissern, lebt 3-4 Jahre",
+        "c": "Maikaefer"
+      },
+      {
+        "n": "Lange schmale Raupe, kahlfrass an Eichen",
+        "c": "Eichenwickler"
+      },
+      {
+        "n": "Rote Larve in Gallenanschwellung am Blatt",
+        "c": "Gallmuecke"
+      },
+      {
+        "n": "Transparente Puppe haengt verkehrt herum am Ast",
+        "c": "Monarchfalter"
+      },
+      {
+        "n": "Lange weisse Larve mit braunem Kopf, in Wabe",
+        "c": "Honigbiene"
+      },
+      {
+        "n": "Winzige gruene Larve an Rosenknospe, saugend",
+        "c": "Blattlaus"
+      },
+      {
+        "n": "Schwarze stachelige Raupe in Brennnesselgruppe",
+        "c": "Tagpfauenauge"
+      },
+      {
+        "n": "Sandige Larve gegraben in Teich, Kiemenwedel sichtbar",
+        "c": "Libellenlarve"
+      },
+      {
+        "n": "Raupe traegt Erdstueckchen als Tarnung auf Koerper",
+        "c": "Grasscheere"
+      },
+      {
+        "n": "Miniraupe muss durch Blatt tunneln, winzig",
+        "c": "Miniermotte"
+      },
+      {
+        "n": "Gruene Raupe, immer zu zweit, an Geissblatt",
+        "c": "Weinschwairmer"
+      },
+      {
+        "n": "Behaarte Raupe mit roten Querbaendern",
+        "c": "Brombeerspinner"
+      }
+    ]
+  },
+  "biolumineszenz": {
+    "prompt": "Wer leuchtet so?",
+    "items": [
+      {
+        "n": "Blaugruener Lichtkoeder baumelt ueber Maul in Tiefsee",
+        "c": "Tiefsee-Anglerfisch"
+      },
+      {
+        "n": "Rhythmisches gruengelbliches Blinken auf Sommerwiesen",
+        "c": "Gluhwuermchen"
+      },
+      {
+        "n": "Ganze Meeresstraende leuchten blau bei Wellenbrechen (nachts)",
+        "c": "Noctiluca scintillans"
+      },
+      {
+        "n": "Orange-rote Leuchtwolke als Ablenkung bei Bedrohung",
+        "c": "Tiefseegarnele"
+      },
+      {
+        "n": "Zwei Leuchtorgane vorn wie Autoscheinwerfer",
+        "c": "Laternenkaefer"
+      },
+      {
+        "n": "Blaues Leuchten aus Mantel-Kanten, Atlantik",
+        "c": "Feuerqualle (Aequorea)"
+      },
+      {
+        "n": "Leuchtet gruen am ganzen Koerper, wurde fuer GFP-Forschung genutzt",
+        "c": "Aequorea victoria"
+      },
+      {
+        "n": "Gruenes Leuchten aus Fangarm-Spitzen um Beute zu locken",
+        "c": "Tiefseequalle"
+      },
+      {
+        "n": "Pilz-Myzel leuchtet blaeulich im feuchten Holz",
+        "c": "Honiggelbpilz"
+      },
+      {
+        "n": "Rote Leuchtorgane entlang Bauch als Gegenbeleuchtung",
+        "c": "Kalmarsquid (Abralia)"
+      },
+      {
+        "n": "Helles Weisslicht aus Spezialargan am Kinn",
+        "c": "Tiefseefisch (Chauliodus)"
+      },
+      {
+        "n": "Blaues Licht bei Beruehrung als Schrecksignal",
+        "c": "Vielborster (Polychaet)"
+      },
+      {
+        "n": "Leuchtendes Schleimband wird als Koeder ausgeworfen",
+        "c": "Dinoflagellat"
+      },
+      {
+        "n": "Flackernde Lichtpunkte auf Mantel synchronisiert",
+        "c": "Tintenfisch (Watasenia)"
+      },
+      {
+        "n": "Gruenes Leuchten aus Knochengewebe unter UV",
+        "c": "Chamaeleon"
+      },
+      {
+        "n": "Bluegreenies leuchten wenn Wasser bewegt wird",
+        "c": "Meeresleuchtalgen"
+      },
+      {
+        "n": "Phosphoreszierender Streif entlang Rueckenflosse",
+        "c": "Schwarzer Drachenfisch"
+      },
+      {
+        "n": "Lichtsignale im Schwarm synchronisiert ueber km",
+        "c": "Synchron-Gluhwuermchen (Photinus)"
+      },
+      {
+        "n": "Leuchtet hellyellow wenn gequetscht (Verteidigung)",
+        "c": "Eisenbahnwurm"
+      },
+      {
+        "n": "Blaue Leuchtpunkte entlang Koerperflanken",
+        "c": "Leuchtorgelfisch"
+      }
+    ]
+  },
+  "anatomie": {
+    "prompt": "Welches Tier hat diese anatomische Besonderheit?",
+    "items": [
+      {
+        "n": "Hat genau 7 Halswirbel - identisch mit dem Menschen",
+        "c": "Giraffe"
+      },
+      {
+        "n": "Hat hohle luftgefuellte Knochen zur Gewichtsersparnis",
+        "c": "Albatros"
+      },
+      {
+        "n": "Hat kein Schlusselsbein - ermoeglicht extrem schnellen Lauf",
+        "c": "Pferd"
+      },
+      {
+        "n": "Hat insgesamt 10 Meter laenge aber nur 3 Kilogramm Gehirn",
+        "c": "Blauwal"
+      },
+      {
+        "n": "Hat 300 Gelenke mehr als der Mensch (360 Gesamtgelenke)",
+        "c": "Schlange"
+      },
+      {
+        "n": "Hat keinen Nackenmuskel - kann Kopf nicht heben",
+        "c": "Gorilla"
+      },
+      {
+        "n": "Hat Knochen aus Knorpel statt echtem Knochen (Elasmobranchier)",
+        "c": "Haifisch"
+      },
+      {
+        "n": "Hat eingerolltes Ruesselskelett mit 40.000 Muskeln",
+        "c": "Elefant"
+      },
+      {
+        "n": "Hat 4 Kniescheiben - je eine in jedem Hinterbein",
+        "c": "Kaenguru"
+      },
+      {
+        "n": "Hat Schwanzknochen die als Steuerruder beim Klettern dienen",
+        "c": "Schimpanse"
+      },
+      {
+        "n": "Hat kein einziges Skelett - reiner Weichkoerper",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Hat Rippen die zum Schild verwachsen (Panzerpanzer)",
+        "c": "Schildkroete"
+      },
+      {
+        "n": "Hat Schluesselbein das wie Feder federt beim Landen",
+        "c": "Taube"
+      },
+      {
+        "n": "Hat 268 Knochen mehr als der Mensch (580 Gesamtknochen)",
+        "c": "Python-Schlange"
+      },
+      {
+        "n": "Hat Knochen die weniger dicht sind als Wasser (schwimmt)",
+        "c": "Holzbock (Kafer)"
+      },
+      {
+        "n": "Hat Scheidebaum-Nackenwirbel nur fuer Schlagangriff gebaut",
+        "c": "Specht"
+      },
+      {
+        "n": "Hat Fusswurzelknochen die als Springfeder fungieren",
+        "c": "Kragenaffe"
+      },
+      {
+        "n": "Hat verkuemmerte Hinterbein-Reste sichtbar im Becken",
+        "c": "Wal"
+      },
+      {
+        "n": "Hat Gehoerknochchen (Haemmer/Amboss/Steigbuegel) wie Saeuger",
+        "c": "Mensch"
+      },
+      {
+        "n": "Hat Panzerplatten aus Keratin statt Knochen",
+        "c": "Guerteltier"
+      }
+    ]
+  },
+  "laute": {
+    "prompt": "Welches Tier macht diesen Laut?",
+    "items": [
+      {
+        "n": "Roehrt zur Brunftzeit - 5km weit hoerbar",
+        "c": "Rothirsch"
+      },
+      {
+        "n": "Heult im Chor als Rudelkommunikation (Wolfsheul)",
+        "c": "Wolf"
+      },
+      {
+        "n": "Grunzt, quiekt und stoehnlt im Dickicht",
+        "c": "Wildschwein"
+      },
+      {
+        "n": "Bruellt aus bis zu 8km Entfernung hoerbar",
+        "c": "Loewe"
+      },
+      {
+        "n": "Trompetet als Alarm oder Begruessung",
+        "c": "Afrikanischer Elefant"
+      },
+      {
+        "n": "Zirpt durch Reiben der Hinterbeine (Stridulation)",
+        "c": "Grille"
+      },
+      {
+        "n": "Tippt mit Schnabel in Holz - bis 20 Schlaege/Sek.",
+        "c": "Specht"
+      },
+      {
+        "n": "Kraechzt und nachahmt andere Voegel perfekt",
+        "c": "Lyravogel"
+      },
+      {
+        "n": "Pfeift und singt komplexe Melodien im Fruehling",
+        "c": "Schwarzdrossel"
+      },
+      {
+        "n": "Klapperndes Schnabelgeraeusch am Nest (Werbung)",
+        "c": "Weissstorch"
+      },
+      {
+        "n": "Infraschall-Kommunikation unter 20Hz ueber 100km",
+        "c": "Blauwal"
+      },
+      {
+        "n": "Zirpt im Schilf, winziger Vogel mit grosser Stimme",
+        "c": "Feldschwirl"
+      },
+      {
+        "n": "Glucksend-kollerndes Balzritual auf Strasse",
+        "c": "Auerhahn"
+      },
+      {
+        "n": "Kieksendes Warngeschrei bei Feindberueherung",
+        "c": "Blaumeise"
+      },
+      {
+        "n": "Tiefes Knurren mit abschreckender Resonanz",
+        "c": "Leopard"
+      },
+      {
+        "n": "Schnarrendes Bruellen beim Landen nach Flug",
+        "c": "Breitmaulnashorn"
+      },
+      {
+        "n": "Hohe Pfiffe als Orientierungsrufe im Hoehlenflug",
+        "c": "Fledermaus"
+      },
+      {
+        "n": "Kehlige Gruntlaute als Mutter-Kind-Kommunikation",
+        "c": "Gorilla"
+      },
+      {
+        "n": "Kreischendes Schrei-Gelaechter als Dominanzgeste",
+        "c": "Hyaene"
+      },
+      {
+        "n": "Ultraschall-Klicken bis 130kHz zur Echoortung",
+        "c": "Delfin"
+      }
+    ]
+  },
+  "sinne": {
+    "prompt": "Welches Tier hat diese Sinnesfahigkeit?",
+    "items": [
+      {
+        "n": "Sieht UV-Licht - erkennt versteckte Bluetenmuster",
+        "c": "Biene"
+      },
+      {
+        "n": "Hoert Infraschall unter 20Hz ueber 100km Entfernung",
+        "c": "Afrikanischer Elefant"
+      },
+      {
+        "n": "Ortet per Echolot mit 130kHz - sieht mit Schall",
+        "c": "Grosse Tuemmler-Delfin"
+      },
+      {
+        "n": "Spuert Erdmagnetfeld und navigiert damit",
+        "c": "Zugvogel (Rotkehlchen)"
+      },
+      {
+        "n": "Entdeckt elektrische Felder anderer Fische per Seitenlinie",
+        "c": "Haifisch"
+      },
+      {
+        "n": "Riecht eine einzige Pheromonmolekuel pro Milliarde Luftmolekuele",
+        "c": "Seidenspinner-Maennchen"
+      },
+      {
+        "n": "Sieht 360 Grad ohne Kopfdrehung durch seitliche Augen",
+        "c": "Kaninchen"
+      },
+      {
+        "n": "Hat 360-Grad-Infrarot-Waermerezeptoren um Beute zu finden",
+        "c": "Grubenotter"
+      },
+      {
+        "n": "Schmeckt mit 10.000 Geschmacksknospen an Hinterbeinen",
+        "c": "Schmetterling"
+      },
+      {
+        "n": "Hoert mit seitlichem Ohr bei 100.000Hz (Ultraschall)",
+        "c": "Hauskatze"
+      },
+      {
+        "n": "Fuehlt Erderschuetterungen durch Schulterknochen",
+        "c": "Afrikanischer Elefant"
+      },
+      {
+        "n": "Sieht Polarisiertes Licht und navigiert nach Sonnenmuster",
+        "c": "Biene"
+      },
+      {
+        "n": "Nimmt Temperaturaenderungen von 0,003 Grad wahr",
+        "c": "Klapperschlange"
+      },
+      {
+        "n": "Hat Seitenlinienorgan das Druckaenderungen im Wasser spuert",
+        "c": "Fisch (allgemein)"
+      },
+      {
+        "n": "Sieht mit jedem Auge 170 Grad - insgesamt 340 Grad",
+        "c": "Tauben-Auge"
+      },
+      {
+        "n": "Hat Magnetit-Kristalle in Kopf fuer Magnetfeld-Navigation",
+        "c": "Brieftaube"
+      },
+      {
+        "n": "Riecht Blut in einer Verduennung von 1 zu 100 Millionen",
+        "c": "Weisser Hai"
+      },
+      {
+        "n": "Hat 25.000 Geruchsrezeptoren (Menschen haben 400)",
+        "c": "Hund"
+      },
+      {
+        "n": "Spuert Strahlung durch spezialisierte Lichtsensoren",
+        "c": "Nacktmulle"
+      },
+      {
+        "n": "Hat photosensitive Haut die Farbe ohne Augen wahrnimmt",
+        "c": "Tintenfisch"
+      }
+    ]
+  },
+  "arktis_antarktis": {
+    "prompt": "Lebt dieses Tier in der Arktis oder Antarktis?",
+    "fixedOpts": [
+      "Arktis (Nordpol)",
+      "Antarktis (Südpol)"
+    ],
+    "items": [
+      {
+        "n": "Eisbär",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Kaiserpinguin",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Narwal",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Leopard-Robbe",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Walross",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Adeliepinguin",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Polarfuchs",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Weddell-Robbe",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Belugawal",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Krabbenfresser-Robbe",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Moschus-Ochse",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Elefanten-Robbe (Süd)",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Schneehase (Arktis)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Riesensturmvogel",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Schneeeule",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Kohlsturmvogel",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Karibu",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Eissturmvogel",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Ringelrobbe",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Lemminge",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Königspinguin",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Eisfisch (Channichthyidae)",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Antarktischer Krill",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Skua (Antarktische)",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Zwergwal (Südpolarmeer)",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Grönlandwal",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Makaroni-Pinguin",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Arktischer Charr",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Arktischer Polardorsch",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Antarktischer Albatros",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Spitzbergen-Rentier",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Gentoo-Pinguin",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Chinstrap-Pinguin",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Elfenbeinmöwe",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Sibirischer Lemming (Tundra)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Schneeeule (Wanderzug)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Moschusochse (Grönland)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Weddell-Seehund",
+        "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Sattelrobbe",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Antarktische Meeresechse",
+        "c": "Antarktis (Südpol)"
+      }
+    ]
+  },
+  "forscher_eponyme": {
+    "prompt": "Nach welchem Forscher ist dieses Tier benannt?",
+    "items": [
+      {
+        "n": "Humboldt-Pinguin",
+        "c": "Alexander von Humboldt"
+      },
+      {
+        "n": "Humboldt-Tintenfisch",
+        "c": "Alexander von Humboldt"
+      },
+      {
+        "n": "Spix-Ara",
+        "c": "Johann Baptist von Spix"
+      },
+      {
+        "n": "Cuvier-Schnabelwal",
+        "c": "Georges Cuvier"
+      },
+      {
+        "n": "Temminck-Strandläufer",
+        "c": "Coenraad Temminck"
+      },
+      {
+        "n": "Gould-Plattschweifsittich",
+        "c": "John Gould"
+      },
+      {
+        "n": "Forster-Pinguin",
+        "c": "Johann Reinhold Forster"
+      },
+      {
+        "n": "Audubon-Sturmtaucher",
+        "c": "John James Audubon"
+      },
+      {
+        "n": "Lesson-Nektarvogel",
+        "c": "René Lesson"
+      },
+      {
+        "n": "Gurney-Adler",
+        "c": "John Henry Gurney"
+      },
+      {
+        "n": "Fischer-Liebesvogel",
+        "c": "Gustav Fischer"
+      },
+      {
+        "n": "Gervais-Schnabelwal",
+        "c": "Paul Gervais"
+      },
+      {
+        "n": "Blanford-Fuchs",
+        "c": "William T. Blanford"
+      },
+      {
+        "n": "Latham-Schnepfe",
+        "c": "John Latham"
+      },
+      {
+        "n": "Darwin-Finken",
+        "c": "Charles Darwin"
+      },
+      {
+        "n": "Wallace-Flugechse",
+        "c": "Alfred Russel Wallace"
+      },
+      {
+        "n": "Peters-Eichhörnchen",
+        "c": "Wilhelm Peters"
+      },
+      {
+        "n": "Schlegel-Rennechse",
+        "c": "Hermann Schlegel"
+      },
+      {
+        "n": "Mertens-Wasserwarane",
+        "c": "Robert Mertens"
+      },
+      {
+        "n": "Gray-Breitnassenbär",
+        "c": "John E. Gray"
+      },
+      {
+        "n": "Blyth-Hornvogel",
+        "c": "Edward Blyth"
+      },
+      {
+        "n": "Sclater-Brüllaffe",
+        "c": "Philip Sclater"
+      },
+      {
+        "n": "Müller-Gibbon",
+        "c": "Salomon Müller"
+      },
+      {
+        "n": "Jerdon-Buschlerche",
+        "c": "Thomas C. Jerdon"
+      },
+      {
+        "n": "Hodgson-Schilfhühnchen",
+        "c": "Brian Houghton Hodgson"
+      },
+      {
+        "n": "Ridgway-Sturmvogel",
+        "c": "Robert Ridgway"
+      },
+      {
+        "n": "Bewick-Schwan",
+        "c": "Thomas Bewick"
+      },
+      {
+        "n": "Leach-Sturmschwalbe",
+        "c": "William Elford Leach"
+      },
+      {
+        "n": "Audubon-Bussard",
+        "c": "John James Audubon"
+      },
+      {
+        "n": "Temminck-Tragopan",
+        "c": "Coenraad Temminck"
+      },
+      {
+        "n": "Blanford-Uhu",
+        "c": "William T. Blanford"
+      },
+      {
+        "n": "Swinhoe-Fasan",
+        "c": "Robert Swinhoe"
+      },
+      {
+        "n": "Peters-Zwergfledermaus",
+        "c": "Wilhelm Peters"
+      },
+      {
+        "n": "Schlegel-Rennechse",
+        "c": "Hermann Schlegel"
+      },
+      {
+        "n": "Gould-Sittich",
+        "c": "John Gould"
+      },
+      {
+        "n": "Layard-Schlangenhalsvogel",
+        "c": "Edgar Leopold Layard"
+      },
+      {
+        "n": "Sharpe-Schnäpper",
+        "c": "Richard Bowdler Sharpe"
+      },
+      {
+        "n": "Tristram-Steinschmätzer",
+        "c": "Henry Baker Tristram"
+      },
+      {
+        "n": "Peters-Warzenschwein",
+        "c": "Wilhelm Peters"
+      },
+      {
+        "n": "Vigors-Sonnenvogel",
+        "c": "Nicholas Aylward Vigors"
+      }
+    ]
+  },
+  "pelagial": {
+    "prompt": "In welcher Tiefenzone lebt dieses Meerestier?",
+    "fixedOpts": [
+      "Epipelagial (0-200m)",
+      "Mesopelagial (200-1000m)",
+      "Bathypelagial (1000-4000m)",
+      "Abyssopelagial (4000-6000m)"
+    ],
+    "items": [
+      {
+        "n": "Blauer Hai",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Laternenfisch",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Tiefsee-Anglerfisch",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Riesenkalmar",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Viperfisch",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Seegurke (Abyssus)",
+        "c": "Abyssopelagial (4000-6000m)"
+      },
+      {
+        "n": "Ruderfüßkrebs Calanus",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Fackelkalmar",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Tiefseehai (Schlafhai)",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Biolumineszenz-Qualle",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Barracuda",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Abyssal-Polychaet",
+        "c": "Abyssopelagial (4000-6000m)"
+      },
+      {
+        "n": "Blaulicht-Anglerfisch",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Tiefsee-Garnele",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Seepferdchen",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Dragonfish",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Riesenmanta",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Tintenfisch (Vampir)",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Polardorsch",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Schwarzer Schlund-Aal",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Sattelrobbe (Jagdtiefe)",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Portugiesische Galeere",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Tiefsee-Skorpionsfisch",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Hatchetfish (Beilbauchfisch)",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Barreleye-Fisch (Opisthoproctus)",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Abyssale Seegurke",
+        "c": "Abyssopelagial (4000-6000m)"
+      },
+      {
+        "n": "Riesenassel (Bathynomus)",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Tiefsee-Garnele (Acanthephyra)",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Weißer Hai (Jagdtiefe)",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Manta-Rochen",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Tiefsee-Anglerfisch (Melanocetus)",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Riesentintenfisch (Architeuthis)",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Colossal Squid",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Grönlandhai",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Tiefsee-Oktopus (Grimpoteuthis)",
+        "c": "Abyssopelagial (4000-6000m)"
+      },
+      {
+        "n": "Lanzettfisch (Alepisaurus)",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Koboldhai (Mitsukurina)",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Flötenaal (Anguilliformes)",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Tiefseequalle (Deepstaria)",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Polychaet-Wurm (Tiefsee)",
+        "c": "Abyssopelagial (4000-6000m)"
+      }
+    ]
+  },
+  "wuesten_spezialisten": {
+    "prompt": "In welcher Wüste lebt dieses Tier?",
+    "items": [
+      {
+        "n": "Dromedar",
+        "c": "Sahara"
+      },
+      {
+        "n": "Fennekfuchs",
+        "c": "Sahara"
+      },
+      {
+        "n": "Gila-Krustenechse",
+        "c": "Sonora-Wüste"
+      },
+      {
+        "n": "Roadrunner",
+        "c": "Sonora-Wüste"
+      },
+      {
+        "n": "Namaqua-Chamäleon",
+        "c": "Namib"
+      },
+      {
+        "n": "Oryx (Oryxantilope)",
+        "c": "Namib"
+      },
+      {
+        "n": "Baktrian-Kamel",
+        "c": "Gobi"
+      },
+      {
+        "n": "Schneeleopard (Rand)",
+        "c": "Gobi"
+      },
+      {
+        "n": "Arabische Oryxantilope",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Sandkatze",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Thorny Devil",
+        "c": "Australische Wüste"
+      },
+      {
+        "n": "Emu",
+        "c": "Australische Wüste"
+      },
+      {
+        "n": "Guanako",
+        "c": "Atacama"
+      },
+      {
+        "n": "Vikunja",
+        "c": "Atacama"
+      },
+      {
+        "n": "Tatarenpferd",
+        "c": "Gobi"
+      },
+      {
+        "n": "Weißschwanz-Prairiedog",
+        "c": "Sonora-Wüste"
+      },
+      {
+        "n": "Kapuziner-Springmaus",
+        "c": "Sahara"
+      },
+      {
+        "n": "Wüstenigel",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Sandboa",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Rüsselpfeifen-Echse",
+        "c": "Namib"
+      },
+      {
+        "n": "Addax-Antilope",
+        "c": "Sahara"
+      },
+      {
+        "n": "Sahara-Silberfuchs",
+        "c": "Sahara"
+      },
+      {
+        "n": "Wüstenigel",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Rüstenspringmaus (Sahara)",
+        "c": "Sahara"
+      },
+      {
+        "n": "Riesenhornechse",
+        "c": "Sonora-Wüste"
+      },
+      {
+        "n": "Klapperschlange (Diamantback)",
+        "c": "Sonora-Wüste"
+      },
+      {
+        "n": "Wüustenrennmaus (Mongolei)",
+        "c": "Gobi"
+      },
+      {
+        "n": "Takhi (Przewalski-Pferd)",
+        "c": "Gobi"
+      },
+      {
+        "n": "Namibtaube",
+        "c": "Namib"
+      },
+      {
+        "n": "Nebeltrinker-Käfer",
+        "c": "Namib"
+      },
+      {
+        "n": "Bilby (Wüustenart)",
+        "c": "Australische Wüste"
+      },
+      {
+        "n": "Mulgara",
+        "c": "Australische Wüste"
+      },
+      {
+        "n": "Atacama-Laufechse",
+        "c": "Atacama"
+      },
+      {
+        "n": "Sinai-Steinbock",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Arabischer Wolf",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Gobi-Bär (Mazaalai)",
+        "c": "Gobi"
+      },
+      {
+        "n": "Sahara-Gepard (Nordafrika)",
+        "c": "Sahara"
+      },
+      {
+        "n": "Lama (Wüustengrenze)",
+        "c": "Atacama"
+      },
+      {
+        "n": "Nabataean Ibex",
+        "c": "Negev-Wüste"
+      },
+      {
+        "n": "Kalahari-Löwe",
+        "c": "Kalahari"
+      }
+    ]
+  },
+  "gift_hotspots": {
+    "prompt": "Woher kommt dieses Giftier?",
+    "items": [
+      {
+        "n": "Inland-Taipan",
+        "c": "Australien"
+      },
+      {
+        "n": "Blauring-Oktopus",
+        "c": "Australien"
+      },
+      {
+        "n": "Seewasp-Qualle (Box Jellyfish)",
+        "c": "Australien"
+      },
+      {
+        "n": "Schwarze Mamba",
+        "c": "Subsahara-Afrika"
+      },
+      {
+        "n": "Gabunviper",
+        "c": "Subsahara-Afrika"
+      },
+      {
+        "n": "Stonefish",
+        "c": "Australien"
+      },
+      {
+        "n": "Pfeilgiftfrosch",
+        "c": "Zentralamerika / Kolumbien"
+      },
+      {
+        "n": "Trichternetzspinne",
+        "c": "Australien"
+      },
+      {
+        "n": "Indische Kobra",
+        "c": "Südasien"
+      },
+      {
+        "n": "Kettenviper",
+        "c": "Südasien"
+      },
+      {
+        "n": "Giftpfeilfrosch",
+        "c": "Ecuador"
+      },
+      {
+        "n": "Brasilianische Wanderspinne",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Skorpionsfisch",
+        "c": "Indopazifik"
+      },
+      {
+        "n": "Kegel-Schnecke",
+        "c": "Indopazifik"
+      },
+      {
+        "n": "Moray-Aal (Muräne)",
+        "c": "Mittelmeer / Indopazifik"
+      },
+      {
+        "n": "King Cobra",
+        "c": "Südostasien"
+      },
+      {
+        "n": "Banded Krait",
+        "c": "Südostasien"
+      },
+      {
+        "n": "Komodo-Waran",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Andenkobra",
+        "c": "Ecuador"
+      },
+      {
+        "n": "Mamba (Schwarze)",
+        "c": "Subsahara-Afrika"
+      },
+      {
+        "n": "Taipan (Küsten-Taipan)",
+        "c": "Australien"
+      },
+      {
+        "n": "Todesnatter (Death Adder)",
+        "c": "Australien"
+      },
+      {
+        "n": "Tigerotter",
+        "c": "Australien"
+      },
+      {
+        "n": "Ägyptische Kobra",
+        "c": "Nordafrika"
+      },
+      {
+        "n": "Puffotter",
+        "c": "Subsahara-Afrika"
+      },
+      {
+        "n": "Grüne Mamba",
+        "c": "Subsahara-Afrika"
+      },
+      {
+        "n": "Monokel-Kobra",
+        "c": "Südostasien"
+      },
+      {
+        "n": "Kreuzotter (Europa)",
+        "c": "Europa"
+      },
+      {
+        "n": "Hornviper",
+        "c": "Naher Osten/Nordafrika"
+      },
+      {
+        "n": "Lanzenviper (Bothrops)",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Buschmeister-Viper",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Gabun-Riesenviper",
+        "c": "Subsahara-Afrika"
+      },
+      {
+        "n": "Gila-Krustenechse (Gift)",
+        "c": "USA/Mexiko"
+      },
+      {
+        "n": "Kegelschnecke (Conus geographus)",
+        "c": "Indopazifik"
+      },
+      {
+        "n": "Blauring-Oktopus (Hapalochlaena)",
+        "c": "Australien/Pazifik"
+      },
+      {
+        "n": "Steinfisch (Synanceia)",
+        "c": "Indopazifik"
+      },
+      {
+        "n": "Pazifische Peitschennatter",
+        "c": "Ozeanien"
+      },
+      {
+        "n": "Schlingnatter (Europa)",
+        "c": "Europa"
+      },
+      {
+        "n": "Kashmiri-Felsviper",
+        "c": "Himalaya/Südasien"
+      },
+      {
+        "n": "Korallenschlange (Ostamerika)",
+        "c": "USA/Mexiko"
+      }
+    ]
+  },
+  "migranten": {
+    "prompt": "Welche Route ist das Ziel dieses Wandertieres?",
+    "items": [
+      {
+        "n": "Monarchfalter",
+        "c": "Mexiko (Überwinterung)"
+      },
+      {
+        "n": "Europäischer Aal",
+        "c": "Sargassosee"
+      },
+      {
+        "n": "Arktische Küstenseeschwalbe",
+        "c": "Arktis → Antarktis"
+      },
+      {
+        "n": "Weißstorch",
+        "c": "Afrika (via Bosporus)"
+      },
+      {
+        "n": "Buckelwal",
+        "c": "Hawaii → Alaska"
+      },
+      {
+        "n": "Atlantischer Lachs",
+        "c": "Nordatlantik → Heimatfluss"
+      },
+      {
+        "n": "Karettschildkröte",
+        "c": "Atlantik → Karibik-Nistplätze"
+      },
+      {
+        "n": "Pfuhlschnepfe",
+        "c": "Alaska → Neuseeland"
+      },
+      {
+        "n": "Gnu (Serengeti)",
+        "c": "Serengeti-Masai-Mara-Zyklus"
+      },
+      {
+        "n": "Rothalsgans",
+        "c": "Sibirien → Schwarzmeer"
+      },
+      {
+        "n": "Karibu",
+        "c": "Nördliche Tundra"
+      },
+      {
+        "n": "Rote Krabbe (Weihnachtsinsel)",
+        "c": "Weihnachtsinsel-Küste"
+      },
+      {
+        "n": "Pazifische Sardine",
+        "c": "Mexiko → Kanada"
+      },
+      {
+        "n": "Sibirische Kraniche",
+        "c": "Sibirien → Indien"
+      },
+      {
+        "n": "Desert Locust",
+        "c": "Sahelzone → Nordafrika"
+      },
+      {
+        "n": "Grüne Schildkröte",
+        "c": "Ascension Island → Brasilien"
+      },
+      {
+        "n": "Elefantenrobbe",
+        "c": "Baja California → Alaska"
+      },
+      {
+        "n": "Südlicher Buckelwal",
+        "c": "Antarktis → Tropen"
+      },
+      {
+        "n": "Bartgeier",
+        "c": "Pyr enäen ↔ Maghreb"
+      },
+      {
+        "n": "Gnu (Botswana)",
+        "c": "Okavango-Linyanti-Zyklus"
+      },
+      {
+        "n": "Polarfuchs (Arktis)",
+        "c": "Arktis → Subarktische Taiga"
+      },
+      {
+        "n": "Grauer Storch",
+        "c": "Europa → Ostafrika"
+      },
+      {
+        "n": "Wachtel",
+        "c": "Europa → Subsahara-Afrika"
+      },
+      {
+        "n": "Kuckuck",
+        "c": "Europa → Kongobecken"
+      },
+      {
+        "n": "Wiedehopf",
+        "c": "Europa/Asien → Tropenafrika"
+      },
+      {
+        "n": "Humpback-Wal (Atlantik)",
+        "c": "Antarktis → Karibik"
+      },
+      {
+        "n": "Lederschildkröte",
+        "c": "Karibik → Nordatlantik"
+      },
+      {
+        "n": "Silberlachs",
+        "c": "Nordpazifik → Oregon-Flüsse"
+      },
+      {
+        "n": "Atlantischer Thunfisch",
+        "c": "Mittelmeer → Nordatlantik"
+      },
+      {
+        "n": "Distelfalter",
+        "c": "Afrika → Nordeuropa"
+      },
+      {
+        "n": "Riesenseeadler",
+        "c": "Sibirien → Japan-Küste"
+      },
+      {
+        "n": "Sandregenpfeifer",
+        "c": "Arktis → Neuseeland"
+      },
+      {
+        "n": "Weißwangengans",
+        "c": "Grönland → Nordsee"
+      },
+      {
+        "n": "Großer Brachvogel",
+        "c": "Eurasien → Westafrika"
+      },
+      {
+        "n": "Weißstorch (Ostroute)",
+        "c": "Europa → Südafrika (via Bosporus)"
+      },
+      {
+        "n": "Kranich (Eurasien)",
+        "c": "Sibirien → Indien/Spanien"
+      },
+      {
+        "n": "Stelzenläufer",
+        "c": "Europa → Tropenafrika"
+      },
+      {
+        "n": "Dreizehenmöwe",
+        "c": "Nordatlantik → Tropenatlantik"
+      },
+      {
+        "n": "Elch (Skandinavien)",
+        "c": "Norwegen → Schweden (saisonal)"
+      },
+      {
+        "n": "Karibu (Kanada)",
+        "c": "Borealer Wald → Arktische Tundra"
+      }
+    ]
+  },
+  "pferde_fachbegriffe": {
+    "prompt": "Was bezeichnet dieser Fachbegriff beim Pferd?",
+    "items": [
+      {
+        "n": "Rappe",
+        "c": "Komplett schwarzes Pferd"
+      },
+      {
+        "n": "Fuchs",
+        "c": "Rotbraunes Pferd"
+      },
+      {
+        "n": "Schimmel",
+        "c": "Weißes oder grauweißes Pferd"
+      },
+      {
+        "n": "Brauner",
+        "c": "Dunkelbraunes Pferd"
+      },
+      {
+        "n": "Falbe",
+        "c": "Sandfarben-graubraunes Pferd"
+      },
+      {
+        "n": "Isabelle",
+        "c": "Goldgelbes Pferd mit heller Mähne"
+      },
+      {
+        "n": "Schecke",
+        "c": "Zweifarbig geschecktes Pferd"
+      },
+      {
+        "n": "Tigerschecke",
+        "c": "Weißes Pferd mit dunklen Flecken"
+      },
+      {
+        "n": "Stockmaß",
+        "c": "Körpergröße am Widerrist gemessen"
+      },
+      {
+        "n": "Widerrist",
+        "c": "Höchster Punkt am Pferderücken"
+      },
+      {
+        "n": "Blesse",
+        "c": "Weißer Streifen über die Pferdenase"
+      },
+      {
+        "n": "Kötenbehang",
+        "c": "Langes Haar über dem Pferdehuf"
+      },
+      {
+        "n": "Kanter",
+        "c": "Leichter, langsamer Galopp"
+      },
+      {
+        "n": "Piaffee",
+        "c": "Trabartiger Bewegung auf der Stelle"
+      },
+      {
+        "n": "Passage",
+        "c": "Sehr getragener, federnder Trab"
+      },
+      {
+        "n": "Trense",
+        "c": "Leichtes Gebßt am Pferdegebiss"
+      },
+      {
+        "n": "Kandare",
+        "c": "Strenges Gebßt mit zwei Gebßtstängen"
+      },
+      {
+        "n": "Gurt",
+        "c": "Riemen zum Befestigen des Sattels"
+      },
+      {
+        "n": "Streu",
+        "c": "Einstreumaterial im Pferdestall"
+      },
+      {
+        "n": "Halfter",
+        "c": "Kopfzeug ohne Gebßt"
+      },
+      {
+        "n": "Schritt",
+        "c": "Viersprung-Grundgang des Pferdes"
+      },
+      {
+        "n": "Trab",
+        "c": "Zweitakt-Diagonalgang"
+      },
+      {
+        "n": "Galopp",
+        "c": "Dreitakt-Sprunggang"
+      },
+      {
+        "n": "Rücken",
+        "c": "Obere Verbindung zwischen Widerrist und Kruppe"
+      },
+      {
+        "n": "Kruppe",
+        "c": "Hinterhand des Pferdes über dem Schweif"
+      },
+      {
+        "n": "Fessel",
+        "c": "Gelenk zwischen Röhrbein und Huf"
+      },
+      {
+        "n": "Strahl",
+        "c": "V-förmige Hornstruktur an der Hufsohle"
+      },
+      {
+        "n": "Schopf",
+        "c": "Mähnenansatz zwischen den Ohren"
+      },
+      {
+        "n": "Ganaschen",
+        "c": "Kieferwinkel-Bereich am Pferdekopf"
+      },
+      {
+        "n": "Vorhand",
+        "c": "Vorderteil: Kopf, Hals, Schulter, Vorderbeine"
+      },
+      {
+        "n": "Hinterhand",
+        "c": "Kruppe, Oberschenkel, Unterschenkel, Hinterfuß"
+      },
+      {
+        "n": "Longe",
+        "c": "Leine zum Zirkelreiten ohne Reiter"
+      },
+      {
+        "n": "Volte",
+        "c": "Kreisbahn von 6 Metern Durchmesser"
+      },
+      {
+        "n": "Traversale",
+        "c": "Seitwärtsgang mit Biegung in Bewegungsrichtung"
+      },
+      {
+        "n": "Schultereinhalt",
+        "c": "Übung: Vorhand auf innerer Spur"
+      },
+      {
+        "n": "Piaffee",
+        "c": "Trabartiger Bewegung auf der Stelle"
+      },
+      {
+        "n": "Passage",
+        "c": "Sehr getragener, federnder Trab"
+      },
+      {
+        "n": "Trense",
+        "c": "Leichtes Gebßt am Pferd"
+      },
+      {
+        "n": "Kandare",
+        "c": "Strenges Gebßt mit zwei Gebßtstängen"
+      },
+      {
+        "n": "Gurt",
+        "c": "Riemen zum Befestigen des Sattels"
+      }
+    ]
+  }
+}

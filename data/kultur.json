@@ -1,0 +1,7031 @@
+{
+  "getraenke": [
+    {
+      "n": "Mate",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Pisco Sour",
+      "c": "Peru"
+    },
+    {
+      "n": "Guinness",
+      "c": "Irland"
+    },
+    {
+      "n": "Sake",
+      "c": "Japan"
+    },
+    {
+      "n": "Tequila",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Rum",
+      "c": "Kuba"
+    },
+    {
+      "n": "Whisky",
+      "c": "Schottland"
+    },
+    {
+      "n": "Wodka",
+      "c": "Russland"
+    },
+    {
+      "n": "Raki",
+      "c": "Türkei"
+    },
+    {
+      "n": "Soju",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Baijiu",
+      "c": "China"
+    },
+    {
+      "n": "Cachaça",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Ouzo",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Palinka",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Kvass",
+      "c": "Russland"
+    },
+    {
+      "n": "Ayran",
+      "c": "Türkei"
+    },
+    {
+      "n": "Lassi",
+      "c": "Indien"
+    },
+    {
+      "n": "Horchata",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Chicha Morada",
+      "c": "Peru"
+    },
+    {
+      "n": "Tamarind Juice",
+      "c": "Ägypten"
+    },
+    {
+      "n": "Roobois-Tee",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Kefir",
+      "c": "Kasachstan"
+    },
+    {
+      "n": "Kumis",
+      "c": "Mongolei"
+    },
+    {
+      "n": "Pulque",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Tiswin",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Singha-Bier",
+      "c": "Thailand"
+    },
+    {
+      "n": "VB (Victoria Bitter)",
+      "c": "Australien"
+    },
+    {
+      "n": "Negroni",
+      "c": "Italien"
+    },
+    {
+      "n": "Caipirinrinha",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Gin Tonic",
+      "c": "Vereinigtes Königreich"
+    }
+  ],
+  "streetfood": [
+    {
+      "n": "Takoyaki",
+      "c": "Japan"
+    },
+    {
+      "n": "Currywurst",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Arepas",
+      "c": "Kolumbien"
+    },
+    {
+      "n": "Poutine",
+      "c": "Kanada"
+    },
+    {
+      "n": "Banh Mi",
+      "c": "Vietnam"
+    },
+    {
+      "n": "Pad Thai",
+      "c": "Thailand"
+    },
+    {
+      "n": "Shawarma",
+      "c": "Libanon"
+    },
+    {
+      "n": "Pierogi",
+      "c": "Polen"
+    },
+    {
+      "n": "Falafel",
+      "c": "Israel"
+    },
+    {
+      "n": "Bunny Chow",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Jerk Chicken",
+      "c": "Jamaika"
+    },
+    {
+      "n": "Empanadas",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Tacos al Pastor",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Crêpes",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Döner Kebab",
+      "c": "Türkei"
+    },
+    {
+      "n": "Samosa",
+      "c": "Indien"
+    },
+    {
+      "n": "Ramen",
+      "c": "Japan"
+    },
+    {
+      "n": "Pho",
+      "c": "Vietnam"
+    },
+    {
+      "n": "Chow Mein",
+      "c": "China"
+    },
+    {
+      "n": "Bao Buns",
+      "c": "China"
+    },
+    {
+      "n": "Simit",
+      "c": "Türkei"
+    },
+    {
+      "n": "Kottu Roti",
+      "c": "Sri Lanka"
+    },
+    {
+      "n": "Momo",
+      "c": "Nepal"
+    },
+    {
+      "n": "Khachapuri",
+      "c": "Georgien"
+    },
+    {
+      "n": "Bobotie",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Akara",
+      "c": "Nigeria"
+    },
+    {
+      "n": "Choripán",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Lángos",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Trdelník",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Roti Canai",
+      "c": "Malaysia"
+    }
+  ],
+  "kaese": [
+    {
+      "n": "Feta",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Gouda",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Manchego",
+      "c": "Spanien"
+    },
+    {
+      "n": "Roquefort",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Parmigiano",
+      "c": "Italien"
+    }
+  ],
+  "suessspeisen": [
+    {
+      "n": "Baklava",
+      "c": "Türkei"
+    },
+    {
+      "n": "Churros",
+      "c": "Spanien"
+    },
+    {
+      "n": "Pasteis de Nata",
+      "c": "Portugal"
+    },
+    {
+      "n": "Tiramisu",
+      "c": "Italien"
+    },
+    {
+      "n": "Macarons",
+      "c": "Frankreich"
+    }
+  ],
+  "kaffee": [
+    {
+      "n": "Flat White",
+      "c": "Australien"
+    },
+    {
+      "n": "Türkischer Mokka",
+      "c": "Türkei"
+    },
+    {
+      "n": "Cafe de Olla",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Espresso",
+      "c": "Italien"
+    },
+    {
+      "n": "Cafe Touba",
+      "c": "Senegal"
+    }
+  ],
+  "taenze": [
+    {
+      "n": "Tango",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Hula",
+      "c": "USA"
+    },
+    {
+      "n": "Flamenco",
+      "c": "Spanien"
+    },
+    {
+      "n": "Capoeira",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Sirtaki",
+      "c": "Griechenland"
+    }
+  ],
+  "kleidung": [
+    {
+      "n": "Sari",
+      "c": "Indien"
+    },
+    {
+      "n": "Kilt",
+      "c": "Großbritannien"
+    },
+    {
+      "n": "Kimono",
+      "c": "Japan"
+    },
+    {
+      "n": "Lederhosen",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Poncho",
+      "c": "Peru"
+    }
+  ],
+  "instrumente": [
+    {
+      "n": "Sitar",
+      "c": "Indien"
+    },
+    {
+      "n": "Balalaika",
+      "c": "Russland"
+    },
+    {
+      "n": "Didgeridoo",
+      "c": "Australien"
+    },
+    {
+      "n": "Dudelsack",
+      "c": "Großbritannien"
+    },
+    {
+      "n": "Marimba",
+      "c": "Guatemala"
+    },
+    {
+      "n": "Erhu",
+      "c": "China"
+    },
+    {
+      "n": "Shamisen",
+      "c": "Japan"
+    },
+    {
+      "n": "Oud",
+      "c": "Irak"
+    },
+    {
+      "n": "Kora",
+      "c": "Senegal"
+    },
+    {
+      "n": "Mbira",
+      "c": "Simbabwe"
+    },
+    {
+      "n": "Charango",
+      "c": "Bolivien"
+    },
+    {
+      "n": "Bouzouki",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Bandura",
+      "c": "Ukraine"
+    },
+    {
+      "n": "Nyckelharpa",
+      "c": "Schweden"
+    },
+    {
+      "n": "Gayageum",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Guqin",
+      "c": "China"
+    },
+    {
+      "n": "Gamelan",
+      "c": "Indonesien"
+    },
+    {
+      "n": "Talharpa",
+      "c": "Estland"
+    },
+    {
+      "n": "Komuz",
+      "c": "Kirgisistan"
+    },
+    {
+      "n": "Hang Drum",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Cuatro",
+      "c": "Venezuela"
+    },
+    {
+      "n": "Sarangi",
+      "c": "Nepal"
+    },
+    {
+      "n": "Kemenche",
+      "c": "Türkei"
+    },
+    {
+      "n": "Dombra",
+      "c": "Kasachstan"
+    },
+    {
+      "n": "Berimbau",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Taiko-Trommel",
+      "c": "Japan"
+    },
+    {
+      "n": "Steel Pan",
+      "c": "Trinidad und Tobago"
+    },
+    {
+      "n": "Baglama",
+      "c": "Türkei"
+    },
+    {
+      "n": "Pipa",
+      "c": "China"
+    },
+    {
+      "n": "Cajon",
+      "c": "Peru"
+    }
+  ],
+  "literatur": [
+    {
+      "n": "Brüder Grimm",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Astrid Lindgren",
+      "c": "Schweden"
+    },
+    {
+      "n": "H.C. Andersen",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Mark Twain",
+      "c": "USA"
+    },
+    {
+      "n": "Gabriel García Márquez",
+      "c": "Kolumbien"
+    }
+  ],
+  "wahrzeichen": [
+    {
+      "n": "Taj Mahal",
+      "c": "Indien"
+    },
+    {
+      "n": "Colosseum",
+      "c": "Italien"
+    },
+    {
+      "n": "Machu Picchu",
+      "c": "Peru"
+    },
+    {
+      "n": "Petra",
+      "c": "Jordanien"
+    },
+    {
+      "n": "Christo Redentor",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Angkor Wat",
+      "c": "Kambodscha"
+    },
+    {
+      "n": "Eiffelturm",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Big Ben",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Chichen Itza",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Kolosseum",
+      "c": "Italien"
+    },
+    {
+      "n": "Freiheitsstatue",
+      "c": "USA"
+    },
+    {
+      "n": "Burj Khalifa",
+      "c": "Vereinigte Arabische Emirate"
+    },
+    {
+      "n": "Sydney Opera House",
+      "c": "Australien"
+    },
+    {
+      "n": "Sagrada Família",
+      "c": "Spanien"
+    },
+    {
+      "n": "Akropolis",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Stonehenge",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Kremlin",
+      "c": "Russland"
+    },
+    {
+      "n": "Verbotene Stadt",
+      "c": "China"
+    },
+    {
+      "n": "Hagia Sophia",
+      "c": "Türkei"
+    },
+    {
+      "n": "Alhambra",
+      "c": "Spanien"
+    },
+    {
+      "n": "Neuschwanstein",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Parthenon",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Pantheon",
+      "c": "Italien"
+    },
+    {
+      "n": "Mont-Saint-Michel",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Brandenburger Tor",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Golden Gate Bridge",
+      "c": "USA"
+    },
+    {
+      "n": "Moai-Statuen",
+      "c": "Chile"
+    },
+    {
+      "n": "Preah Vihear",
+      "c": "Kambodscha"
+    },
+    {
+      "n": "Borobudur",
+      "c": "Indonesien"
+    },
+    {
+      "n": "Schloss Versailles",
+      "c": "Frankreich"
+    }
+  ],
+  "feste": [
+    {
+      "n": "Oktoberfest",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Diwali",
+      "c": "Indien"
+    },
+    {
+      "n": "La Tomatina",
+      "c": "Spanien"
+    },
+    {
+      "n": "Dia de los Muertos",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Karneval",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Songkran",
+      "c": "Thailand"
+    },
+    {
+      "n": "Holi",
+      "c": "Indien"
+    },
+    {
+      "n": "Hanami",
+      "c": "Japan"
+    },
+    {
+      "n": "Nowruz",
+      "c": "Iran"
+    },
+    {
+      "n": "Eid al-Fitr",
+      "c": "Saudi-Arabien"
+    },
+    {
+      "n": "Christmas Market",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Mardi Gras",
+      "c": "USA"
+    },
+    {
+      "n": "Carnaval de Venise",
+      "c": "Italien"
+    },
+    {
+      "n": "Up Helly Aa",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Glastonbury Festival",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Inti Raymi",
+      "c": "Peru"
+    },
+    {
+      "n": "Obon",
+      "c": "Japan"
+    },
+    {
+      "n": "Timkat",
+      "c": "Äthiopien"
+    },
+    {
+      "n": "Naadam",
+      "c": "Mongolei"
+    },
+    {
+      "n": "Yi Peng",
+      "c": "Thailand"
+    },
+    {
+      "n": "Boryeong Mud Festival",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Calgary Stampede",
+      "c": "Kanada"
+    },
+    {
+      "n": "Notting Hill Carnival",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Bastille-Tag",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Burns Night",
+      "c": "Schottland"
+    },
+    {
+      "n": "Pamplona-Stiertreiben",
+      "c": "Spanien"
+    },
+    {
+      "n": "Semana Santa",
+      "c": "Spanien"
+    },
+    {
+      "n": "Carnaval de Oruro",
+      "c": "Bolivien"
+    },
+    {
+      "n": "Chinese New Year",
+      "c": "China"
+    },
+    {
+      "n": "Midsommar",
+      "c": "Schweden"
+    }
+  ],
+  "begruessung": [
+    {
+      "n": "Ojigi (Verbeugung)",
+      "c": "Japan"
+    },
+    {
+      "n": "Namaste",
+      "c": "Indien"
+    },
+    {
+      "n": "Hongi",
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Wai",
+      "c": "Thailand"
+    },
+    {
+      "n": "La Bise",
+      "c": "Frankreich"
+    }
+  ],
+  "feiertage": [
+    {
+      "n": "14. Juli (Bastille)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "4. Juli",
+      "c": "USA"
+    },
+    {
+      "n": "3. Oktober",
+      "c": "Deutschland"
+    },
+    {
+      "n": "17. Mai",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Cinco de Mayo",
+      "c": "Mexiko"
+    }
+  ],
+  "erfindungen": [
+    {
+      "n": "Papier",
+      "c": "China"
+    },
+    {
+      "n": "Buchdruck",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Kompass",
+      "c": "China"
+    },
+    {
+      "n": "Dynamit",
+      "c": "Schweden"
+    },
+    {
+      "n": "Penicillin",
+      "c": "Großbritannien"
+    }
+  ],
+  "exporte": [
+    {
+      "n": "Kaffee",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Ahornsirup",
+      "c": "Kanada"
+    },
+    {
+      "n": "Safran",
+      "c": "Iran"
+    },
+    {
+      "n": "Olivenöl",
+      "c": "Spanien"
+    },
+    {
+      "n": "Mikrochips",
+      "c": "Taiwan"
+    }
+  ],
+  "blumen": [
+    {
+      "n": "Kirschblüte",
+      "c": "Japan"
+    },
+    {
+      "n": "Tulpe",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Lotus",
+      "c": "Indien"
+    },
+    {
+      "n": "Distel",
+      "c": "Großbritannien"
+    },
+    {
+      "n": "Hibiskus",
+      "c": "Malaysia"
+    }
+  ],
+  "entdecker": [
+    {
+      "n": "Marco Polo",
+      "c": "Italien"
+    },
+    {
+      "n": "James Cook",
+      "c": "Großbritannien"
+    },
+    {
+      "n": "Roald Amundsen",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Vasco da Gama",
+      "c": "Portugal"
+    },
+    {
+      "n": "Ferdinand Magellan",
+      "c": "Portugal"
+    }
+  ],
+  "sport": [
+    {
+      "n": "Sumo",
+      "c": "Japan"
+    },
+    {
+      "n": "Tejo",
+      "c": "Kolumbien"
+    },
+    {
+      "n": "Cricket",
+      "c": "Indien"
+    },
+    {
+      "n": "Eishockey",
+      "c": "Kanada"
+    },
+    {
+      "n": "Muay Thai",
+      "c": "Thailand"
+    }
+  ],
+  "brettspiele": [
+    {
+      "n": "Schach",
+      "c": "Indien"
+    },
+    {
+      "n": "Mahjong",
+      "c": "China"
+    },
+    {
+      "n": "Go",
+      "c": "China"
+    },
+    {
+      "n": "Backgammon",
+      "c": "Iran"
+    },
+    {
+      "n": "Mancala",
+      "c": "Äthiopien"
+    }
+  ],
+  "wein_regionen": [
+    {
+      "n": "Bordeaux",
+      "lat": 44.837,
+      "lng": -0.579,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Napa Valley",
+      "lat": 38.502,
+      "lng": -122.364,
+      "c": "USA"
+    },
+    {
+      "n": "Toskana",
+      "lat": 43.769,
+      "lng": 11.256,
+      "c": "Italien"
+    },
+    {
+      "n": "Mendoza",
+      "lat": -32.89,
+      "lng": -68.827,
+      "c": "Argentinien"
+    },
+    {
+      "n": "Rioja",
+      "lat": 42.465,
+      "lng": -2.445,
+      "c": "Spanien"
+    },
+    {
+      "n": "Mosel",
+      "lat": 50.008,
+      "lng": 7.122,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Barossa Valley",
+      "lat": -34.53,
+      "lng": 138.95,
+      "c": "Australien"
+    },
+    {
+      "n": "Champagne",
+      "lat": 49.04,
+      "lng": 3.96,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Douro-Tal",
+      "lat": 41.143,
+      "lng": -7.584,
+      "c": "Portugal"
+    },
+    {
+      "n": "Stellenbosch",
+      "lat": -33.935,
+      "lng": 18.861,
+      "c": "Südafrika"
+    },
+    {
+      "n": "Bourgogne",
+      "lat": 47.06,
+      "lng": 4.837,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Marlborough",
+      "lat": -41.513,
+      "lng": 173.961,
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Rheingau",
+      "lat": 49.984,
+      "lng": 8.028,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Bekaa-Tal",
+      "lat": 33.9,
+      "lng": 36.3,
+      "c": "Libanon"
+    },
+    {
+      "n": "Priorat",
+      "lat": 41.19,
+      "lng": 0.764,
+      "c": "Spanien"
+    }
+  ],
+  "museen": [
+    {
+      "n": "Louvre",
+      "lat": 48.861,
+      "lng": 2.336,
+      "c": "Frankreich"
+    },
+    {
+      "n": "British Museum",
+      "lat": 51.519,
+      "lng": -0.127,
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Vatikanische Museen",
+      "lat": 41.906,
+      "lng": 12.454,
+      "c": "Vatikan"
+    },
+    {
+      "n": "Metropolitan Museum of Art",
+      "lat": 40.779,
+      "lng": -73.963,
+      "c": "USA"
+    },
+    {
+      "n": "Hermitage",
+      "lat": 59.94,
+      "lng": 30.314,
+      "c": "Russland"
+    },
+    {
+      "n": "Prado",
+      "lat": 40.414,
+      "lng": -3.692,
+      "c": "Spanien"
+    },
+    {
+      "n": "Rijksmuseum",
+      "lat": 52.36,
+      "lng": 4.885,
+      "c": "Niederlande"
+    },
+    {
+      "n": "Uffizien",
+      "lat": 43.768,
+      "lng": 11.255,
+      "c": "Italien"
+    },
+    {
+      "n": "Pergamonmuseum",
+      "lat": 52.521,
+      "lng": 13.397,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Smithsonian",
+      "lat": 38.891,
+      "lng": -77.026,
+      "c": "USA"
+    },
+    {
+      "n": "MoMA",
+      "lat": 40.761,
+      "lng": -73.978,
+      "c": "USA"
+    },
+    {
+      "n": "Tate Modern",
+      "lat": 51.507,
+      "lng": -0.099,
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Guggenheim Bilbao",
+      "lat": 43.268,
+      "lng": -2.934,
+      "c": "Spanien"
+    },
+    {
+      "n": "Acropolis Museum",
+      "lat": 37.969,
+      "lng": 23.729,
+      "c": "Griechenland"
+    },
+    {
+      "n": "Egyptian Museum Cairo",
+      "lat": 30.048,
+      "lng": 31.234,
+      "c": "Ägypten"
+    },
+    {
+      "n": "National Palace Museum",
+      "lat": 25.102,
+      "lng": 121.548,
+      "c": "Taiwan"
+    },
+    {
+      "n": "Musée d'Orsay",
+      "lat": 48.86,
+      "lng": 2.327,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Topkapi-Palast",
+      "lat": 41.012,
+      "lng": 28.983,
+      "c": "Türkei"
+    },
+    {
+      "n": "Deutsches Museum",
+      "lat": 48.13,
+      "lng": 11.583,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Naturhistorisches Museum Wien",
+      "lat": 48.205,
+      "lng": 16.36,
+      "c": "Österreich"
+    },
+    {
+      "n": "Kunsthistorisches Museum",
+      "lat": 48.203,
+      "lng": 16.362,
+      "c": "Österreich"
+    },
+    {
+      "n": "Nationalmuseum Stockholm",
+      "lat": 59.331,
+      "lng": 18.084,
+      "c": "Schweden"
+    },
+    {
+      "n": "Stedelijk Museum",
+      "lat": 52.358,
+      "lng": 4.879,
+      "c": "Niederlande"
+    },
+    {
+      "n": "Museu do Ipiranga",
+      "lat": -23.586,
+      "lng": -46.619,
+      "c": "Brasilien"
+    },
+    {
+      "n": "National Museum of China",
+      "lat": 39.905,
+      "lng": 116.397,
+      "c": "China"
+    },
+    {
+      "n": "Tokyo National Museum",
+      "lat": 35.719,
+      "lng": 139.776,
+      "c": "Japan"
+    },
+    {
+      "n": "Indian Museum Kolkata",
+      "lat": 22.557,
+      "lng": 88.351,
+      "c": "Indien"
+    },
+    {
+      "n": "Apartheid Museum",
+      "lat": -26.239,
+      "lng": 27.974,
+      "c": "Südafrika"
+    },
+    {
+      "n": "Auschwitz-Birkenau",
+      "lat": 50.034,
+      "lng": 19.205,
+      "c": "Polen"
+    },
+    {
+      "n": "Anne-Frank-Haus",
+      "lat": 52.375,
+      "lng": 4.884,
+      "c": "Niederlande"
+    }
+  ],
+  "kunstwerke": [
+    {
+      "n": "Mona Lisa (Louvre, Paris)",
+      "lat": 48.861,
+      "lng": 2.336,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Das Abendmahl (Mailand)",
+      "lat": 45.466,
+      "lng": 9.171,
+      "c": "Italien"
+    },
+    {
+      "n": "Sixtinische Kapelle (Vatikan)",
+      "lat": 41.903,
+      "lng": 12.454,
+      "c": "Vatikan"
+    },
+    {
+      "n": "David (Florenz)",
+      "lat": 43.777,
+      "lng": 11.259,
+      "c": "Italien"
+    },
+    {
+      "n": "Guernica (Madrid)",
+      "lat": 40.416,
+      "lng": -3.694,
+      "c": "Spanien"
+    },
+    {
+      "n": "Sunflowers (National Gallery, London)",
+      "lat": 51.509,
+      "lng": -0.127,
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Die Nachtwache (Amsterdam)",
+      "lat": 52.36,
+      "lng": 4.885,
+      "c": "Niederlande"
+    },
+    {
+      "n": "Das Mädchen mit dem Perlenohrring (Den Haag)",
+      "lat": 52.071,
+      "lng": 4.313,
+      "c": "Niederlande"
+    },
+    {
+      "n": "Der Schrei (Oslo)",
+      "lat": 59.928,
+      "lng": 10.724,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Frida Kahlo: Die zwei Fridas (Mexiko-Stadt)",
+      "lat": 19.432,
+      "lng": -99.133,
+      "c": "Mexiko"
+    },
+    {
+      "n": "Die Geburt der Venus (Florenz)",
+      "lat": 43.768,
+      "lng": 11.256,
+      "c": "Italien"
+    },
+    {
+      "n": "The Starry Night (MoMA New York)",
+      "lat": 40.762,
+      "lng": -73.978,
+      "c": "USA"
+    },
+    {
+      "n": "Venus von Milo (Louvre, Paris)",
+      "lat": 48.861,
+      "lng": 2.336,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Der Denker (Rodin-Museum, Paris)",
+      "lat": 48.855,
+      "lng": 2.316,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Las Meninas (Prado, Madrid)",
+      "lat": 40.414,
+      "lng": -3.692,
+      "c": "Spanien"
+    }
+  ],
+  "filmsets": [
+    {
+      "n": "Hobbiton (Herr der Ringe)",
+      "lat": -37.872,
+      "lng": 175.682,
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Dubrovnik (Game of Thrones)",
+      "lat": 42.641,
+      "lng": 18.109,
+      "c": "Kroatien"
+    },
+    {
+      "n": "Petra (Indiana Jones)",
+      "lat": 30.329,
+      "lng": 35.444,
+      "c": "Jordanien"
+    },
+    {
+      "n": "Wadi Rum (The Martian)",
+      "lat": 29.573,
+      "lng": 35.42,
+      "c": "Jordanien"
+    },
+    {
+      "n": "Skellig Michael (Star Wars)",
+      "lat": 51.773,
+      "lng": -10.539,
+      "c": "Irland"
+    },
+    {
+      "n": "Cliffs of Moher (Princess Bride)",
+      "lat": 52.973,
+      "lng": -9.427,
+      "c": "Irland"
+    },
+    {
+      "n": "Alhambra (diverse Filme)",
+      "lat": 37.176,
+      "lng": -3.588,
+      "c": "Spanien"
+    },
+    {
+      "n": "Colosseum (Gladiator)",
+      "lat": 41.89,
+      "lng": 12.492,
+      "c": "Italien"
+    },
+    {
+      "n": "Machu Picchu (diverse Filme)",
+      "lat": -13.163,
+      "lng": -72.545,
+      "c": "Peru"
+    },
+    {
+      "n": "Preikestolen (Mission: Impossible)",
+      "lat": 58.987,
+      "lng": 6.19,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Dark Hedges (Game of Thrones)",
+      "lat": 55.108,
+      "lng": -6.393,
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Cappadocia (Star Wars)",
+      "lat": 38.643,
+      "lng": 34.828,
+      "c": "Türkei"
+    },
+    {
+      "n": "Plitvice-Seen (Winnetou)",
+      "lat": 44.88,
+      "lng": 15.616,
+      "c": "Kroatien"
+    },
+    {
+      "n": "Giza-Pyramiden (diverse Filme)",
+      "lat": 29.979,
+      "lng": 31.134,
+      "c": "Ägypten"
+    },
+    {
+      "n": "Whitby Abbey (Dracula)",
+      "lat": 54.489,
+      "lng": -0.601,
+      "c": "Vereinigtes Königreich"
+    }
+  ],
+  "ruinen": [
+    {
+      "n": "Petra",
+      "lat": 30.329,
+      "lng": 35.444,
+      "c": "Jordanien"
+    },
+    {
+      "n": "Machu Picchu",
+      "lat": -13.163,
+      "lng": -72.545,
+      "c": "Peru"
+    },
+    {
+      "n": "Chichén Itzá",
+      "lat": 20.683,
+      "lng": -88.569,
+      "c": "Mexiko"
+    },
+    {
+      "n": "Pompeji",
+      "lat": 40.751,
+      "lng": 14.489,
+      "c": "Italien"
+    },
+    {
+      "n": "Colosseum",
+      "lat": 41.89,
+      "lng": 12.492,
+      "c": "Italien"
+    },
+    {
+      "n": "Akropolis Athen",
+      "lat": 37.971,
+      "lng": 23.727,
+      "c": "Griechenland"
+    },
+    {
+      "n": "Stonehenge",
+      "lat": 51.18,
+      "lng": -1.826,
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Tikal",
+      "lat": 17.222,
+      "lng": -89.623,
+      "c": "Guatemala"
+    },
+    {
+      "n": "Ephesus",
+      "lat": 37.938,
+      "lng": 27.341,
+      "c": "Türkei"
+    },
+    {
+      "n": "Karnak-Tempel",
+      "lat": 25.72,
+      "lng": 32.658,
+      "c": "Ägypten"
+    },
+    {
+      "n": "Baalbek",
+      "lat": 34.004,
+      "lng": 36.217,
+      "c": "Libanon"
+    },
+    {
+      "n": "Leptis Magna",
+      "lat": 32.638,
+      "lng": 14.294,
+      "c": "Libyen"
+    },
+    {
+      "n": "Palenque",
+      "lat": 17.484,
+      "lng": -92.046,
+      "c": "Mexiko"
+    },
+    {
+      "n": "Persepolis",
+      "lat": 29.935,
+      "lng": 52.891,
+      "c": "Iran"
+    },
+    {
+      "n": "Chaco Canyon",
+      "lat": 36.06,
+      "lng": -107.959,
+      "c": "USA"
+    }
+  ],
+  "bruecken": [
+    {
+      "n": "Golden Gate Bridge",
+      "lat": 37.819,
+      "lng": -122.479,
+      "c": "USA"
+    },
+    {
+      "n": "Tower Bridge",
+      "lat": 51.505,
+      "lng": -0.076,
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Sydney Harbour Bridge",
+      "lat": -33.852,
+      "lng": 151.211,
+      "c": "Australien"
+    },
+    {
+      "n": "Millau-Viadukt",
+      "lat": 44.08,
+      "lng": 3.013,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Akashi-Kaikyō-Brücke",
+      "lat": 34.628,
+      "lng": 135.019,
+      "c": "Japan"
+    },
+    {
+      "n": "Karlsbrücke",
+      "lat": 50.086,
+      "lng": 14.411,
+      "c": "Tschechien"
+    },
+    {
+      "n": "Brooklyn Bridge",
+      "lat": 40.706,
+      "lng": -73.997,
+      "c": "USA"
+    },
+    {
+      "n": "Rialtobrücke",
+      "lat": 45.438,
+      "lng": 12.336,
+      "c": "Italien"
+    },
+    {
+      "n": "Pont du Gard",
+      "lat": 43.947,
+      "lng": 4.535,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Bosporus-Brücke",
+      "lat": 41.046,
+      "lng": 29.034,
+      "c": "Türkei"
+    },
+    {
+      "n": "Øresund-Brücke",
+      "lat": 55.572,
+      "lng": 12.88,
+      "c": "Schweden/Dänemark"
+    },
+    {
+      "n": "Forth Bridge",
+      "lat": 56.001,
+      "lng": -3.387,
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Ponte 25 de Abril",
+      "lat": 38.689,
+      "lng": -9.178,
+      "c": "Portugal"
+    },
+    {
+      "n": "Ha'penny Bridge",
+      "lat": 53.346,
+      "lng": -6.264,
+      "c": "Irland"
+    },
+    {
+      "n": "Pont de Normandie",
+      "lat": 49.43,
+      "lng": 0.294,
+      "c": "Frankreich"
+    }
+  ],
+  "gotteshaeuser": [
+    {
+      "n": "Hagia Sophia",
+      "lat": 41.009,
+      "lng": 28.98,
+      "c": "Türkei"
+    },
+    {
+      "n": "Petersdom",
+      "lat": 41.902,
+      "lng": 12.454,
+      "c": "Vatikan"
+    },
+    {
+      "n": "Sagrada Família",
+      "lat": 41.404,
+      "lng": 2.175,
+      "c": "Spanien"
+    },
+    {
+      "n": "Notre-Dame de Paris",
+      "lat": 48.853,
+      "lng": 2.35,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Kölner Dom",
+      "lat": 50.941,
+      "lng": 6.957,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Blaue Moschee",
+      "lat": 41.005,
+      "lng": 28.977,
+      "c": "Türkei"
+    },
+    {
+      "n": "Angkor Wat",
+      "lat": 13.412,
+      "lng": 103.867,
+      "c": "Kambodscha"
+    },
+    {
+      "n": "Himmelstempel Peking",
+      "lat": 39.882,
+      "lng": 116.406,
+      "c": "China"
+    },
+    {
+      "n": "Basilius-Kathedrale",
+      "lat": 55.753,
+      "lng": 37.622,
+      "c": "Russland"
+    },
+    {
+      "n": "Klagemauer",
+      "lat": 31.777,
+      "lng": 35.234,
+      "c": "Israel"
+    },
+    {
+      "n": "Meiji-Schrein",
+      "lat": 35.677,
+      "lng": 139.699,
+      "c": "Japan"
+    },
+    {
+      "n": "Shwedagon-Pagode",
+      "lat": 16.799,
+      "lng": 96.15,
+      "c": "Myanmar"
+    },
+    {
+      "n": "Chartres-Kathedrale",
+      "lat": 48.448,
+      "lng": 1.489,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Goldener Tempel Amritsar",
+      "lat": 31.62,
+      "lng": 74.876,
+      "c": "Indien"
+    },
+    {
+      "n": "Borobudur",
+      "lat": -7.608,
+      "lng": 110.204,
+      "c": "Indonesien"
+    }
+  ],
+  "wolkenkratzer": [
+    {
+      "n": "Burj Khalifa",
+      "c": "Vereinigte Arabische Emirate",
+      "val": 828
+    },
+    {
+      "n": "Merdeka 118",
+      "c": "Malaysia",
+      "val": 679
+    },
+    {
+      "n": "Shanghai Tower",
+      "c": "China",
+      "val": 632
+    },
+    {
+      "n": "Abraj Al-Bait Clock Tower",
+      "c": "Saudi-Arabien",
+      "val": 601
+    },
+    {
+      "n": "Ping An Finance Centre",
+      "c": "China",
+      "val": 599
+    },
+    {
+      "n": "Lotte World Tower",
+      "c": "Südkorea",
+      "val": 555
+    },
+    {
+      "n": "One World Trade Center",
+      "c": "USA",
+      "val": 541
+    },
+    {
+      "n": "Guangzhou CTF Finance Centre",
+      "c": "China",
+      "val": 530
+    },
+    {
+      "n": "Tianjin CTF Finance Centre",
+      "c": "China",
+      "val": 530
+    },
+    {
+      "n": "CITIC Tower",
+      "c": "China",
+      "val": 528
+    },
+    {
+      "n": "Tianjin Chow Tai Fook Binhai Center",
+      "c": "China",
+      "val": 530
+    },
+    {
+      "n": "Taipei 101",
+      "c": "Taiwan",
+      "val": 508
+    },
+    {
+      "n": "Shanghai World Financial Center",
+      "c": "China",
+      "val": 492
+    },
+    {
+      "n": "International Commerce Centre",
+      "c": "Hongkong",
+      "val": 484
+    },
+    {
+      "n": "Landmark 81",
+      "c": "Vietnam",
+      "val": 461
+    },
+    {
+      "n": "Changsha IFS Tower T1",
+      "c": "China",
+      "val": 452
+    },
+    {
+      "n": "Petronas Tower 1",
+      "c": "Malaysia",
+      "val": 452
+    },
+    {
+      "n": "Zifeng Tower",
+      "c": "China",
+      "val": 450
+    },
+    {
+      "n": "Suzhou IFS",
+      "c": "China",
+      "val": 450
+    },
+    {
+      "n": "Willis Tower",
+      "c": "USA",
+      "val": 442
+    },
+    {
+      "n": "KK100",
+      "c": "China",
+      "val": 442
+    },
+    {
+      "n": "Guangzhou International Finance Centre",
+      "c": "China",
+      "val": 440
+    },
+    {
+      "n": "432 Park Avenue",
+      "c": "USA",
+      "val": 426
+    },
+    {
+      "n": "Marina 101",
+      "c": "Vereinigte Arabische Emirate",
+      "val": 425
+    },
+    {
+      "n": "Trump International Hotel and Tower",
+      "c": "USA",
+      "val": 423
+    },
+    {
+      "n": "Jin Mao Tower",
+      "c": "China",
+      "val": 421
+    },
+    {
+      "n": "Princess Tower",
+      "c": "Vereinigte Arabische Emirate",
+      "val": 414
+    },
+    {
+      "n": "Al Hamra Tower",
+      "c": "Kuwait",
+      "val": 413
+    },
+    {
+      "n": "Two International Finance Centre",
+      "c": "Hongkong",
+      "val": 412
+    },
+    {
+      "n": "23 Marina",
+      "c": "Vereinigte Arabische Emirate",
+      "val": 395
+    },
+    {
+      "n": "Skyline Tower",
+      "c": "USA",
+      "val": 392
+    },
+    {
+      "n": "Akhmat Tower",
+      "c": "Russland",
+      "val": 374
+    },
+    {
+      "n": "Shun Hing Square",
+      "c": "China",
+      "val": 384
+    },
+    {
+      "n": "Empire State Building",
+      "c": "USA",
+      "val": 381
+    },
+    {
+      "n": "Elite Residence",
+      "c": "Vereinigte Arabische Emirate",
+      "val": 380
+    },
+    {
+      "n": "Central Park Tower",
+      "c": "USA",
+      "val": 472
+    },
+    {
+      "n": "Sulafah Tower",
+      "c": "Vereinigte Arabische Emirate",
+      "val": 360
+    },
+    {
+      "n": "Federation Tower East",
+      "c": "Russland",
+      "val": 374
+    },
+    {
+      "n": "Chrysler Building",
+      "c": "USA",
+      "val": 319
+    },
+    {
+      "n": "Eiffelturm",
+      "c": "Frankreich",
+      "val": 330
+    }
+  ],
+  "wuesten": [
+    {
+      "n": "Sahara",
+      "lat": 23,
+      "lng": 13
+    },
+    {
+      "n": "Gobi",
+      "lat": 42,
+      "lng": 105
+    },
+    {
+      "n": "Atacama",
+      "lat": -23,
+      "lng": -68
+    },
+    {
+      "n": "Namib",
+      "lat": -24,
+      "lng": 15
+    },
+    {
+      "n": "Arabische Wüste",
+      "lat": 25,
+      "lng": 45
+    },
+    {
+      "n": "Kalahari",
+      "lat": -25,
+      "lng": 22
+    },
+    {
+      "n": "Große Victoriaawüste",
+      "lat": -29,
+      "lng": 128
+    },
+    {
+      "n": "Taklamakan",
+      "lat": 39,
+      "lng": 83
+    },
+    {
+      "n": "Patagonische Wüste",
+      "lat": -45,
+      "lng": -68
+    },
+    {
+      "n": "Karakum",
+      "lat": 39,
+      "lng": 60
+    }
+  ],
+  "berggipfel": [
+    {
+      "n": "Mount Everest",
+      "lat": 27.988,
+      "lng": 86.925
+    },
+    {
+      "n": "K2",
+      "lat": 35.881,
+      "lng": 76.514
+    },
+    {
+      "n": "Kangchendzönga",
+      "lat": 27.703,
+      "lng": 88.147
+    },
+    {
+      "n": "Aconcagua",
+      "lat": -32.653,
+      "lng": -70.011
+    },
+    {
+      "n": "Denali",
+      "lat": 63.069,
+      "lng": -151.007
+    },
+    {
+      "n": "Kilimandscharo",
+      "lat": -3.067,
+      "lng": 37.353
+    },
+    {
+      "n": "Mont Blanc",
+      "lat": 45.833,
+      "lng": 6.865
+    },
+    {
+      "n": "Elbrus",
+      "lat": 43.355,
+      "lng": 42.439
+    },
+    {
+      "n": "Puncak Jaya",
+      "lat": -4.078,
+      "lng": 137.183
+    },
+    {
+      "n": "Zugspitze",
+      "lat": 47.421,
+      "lng": 10.985
+    }
+  ],
+  "meerengen": [
+    {
+      "n": "Straße von Gibraltar",
+      "lat": 35.98,
+      "lng": -5.47
+    },
+    {
+      "n": "Bosporus",
+      "lat": 41.12,
+      "lng": 29.08
+    },
+    {
+      "n": "Straße von Hormus",
+      "lat": 26.6,
+      "lng": 56.25
+    },
+    {
+      "n": "Straße von Malakka",
+      "lat": 2.5,
+      "lng": 101
+    },
+    {
+      "n": "Drakepassage",
+      "lat": -57,
+      "lng": -65
+    },
+    {
+      "n": "Taiwanstraße",
+      "lat": 24.5,
+      "lng": 119.5
+    },
+    {
+      "n": "Ärmelkanal",
+      "lat": 51,
+      "lng": 1.5
+    },
+    {
+      "n": "Bab al-Mandab",
+      "lat": 12.6,
+      "lng": 43.3
+    },
+    {
+      "n": "Floridastraße",
+      "lat": 25,
+      "lng": -80
+    },
+    {
+      "n": "Straße von Messina",
+      "lat": 38.25,
+      "lng": 15.6
+    },
+    {
+      "n": "Straße von Magellan",
+      "lat": -53,
+      "lng": -70.9
+    }
+  ],
+  "wasserfaelle": [
+    {
+      "n": "Victoriafallä",
+      "lat": -17.924,
+      "lng": 25.856
+    },
+    {
+      "n": "Niagarafälle",
+      "lat": 43.082,
+      "lng": -79.075
+    },
+    {
+      "n": "Iguazú-Fälle",
+      "lat": -25.686,
+      "lng": -54.444
+    },
+    {
+      "n": "Engelfall",
+      "lat": 5.967,
+      "lng": -62.535
+    },
+    {
+      "n": "Kaieteur-Fall",
+      "lat": 5.174,
+      "lng": -59.484
+    },
+    {
+      "n": "Tugela-Fälle",
+      "lat": -28.9,
+      "lng": 29.2
+    },
+    {
+      "n": "Rheinfall",
+      "lat": 47.679,
+      "lng": 8.616
+    },
+    {
+      "n": "Yosemite-Fälle",
+      "lat": 37.756,
+      "lng": -119.597
+    },
+    {
+      "n": "Gullfoss",
+      "lat": 64.327,
+      "lng": -20.121
+    },
+    {
+      "n": "Sutherland-Fälle",
+      "lat": -44.8,
+      "lng": 167.7
+    }
+  ],
+  "canyons": [
+    {
+      "n": "Grand Canyon",
+      "lat": 36.1,
+      "lng": -112.1
+    },
+    {
+      "n": "Colca-Canyon",
+      "lat": -15.45,
+      "lng": -71.9
+    },
+    {
+      "n": "Fish-River-Canyon",
+      "lat": -27.7,
+      "lng": 17.6
+    },
+    {
+      "n": "Copper Canyon",
+      "lat": 27.3,
+      "lng": -107.7
+    },
+    {
+      "n": "Gorges du Verdon",
+      "lat": 43.8,
+      "lng": 6.4
+    },
+    {
+      "n": "Yarlung-Tsangpo-Schlucht",
+      "lat": 29.8,
+      "lng": 95
+    },
+    {
+      "n": "Antelope Canyon",
+      "lat": 36.86,
+      "lng": -111.37
+    },
+    {
+      "n": "Waimea Canyon",
+      "lat": 22.06,
+      "lng": -159.66
+    }
+  ],
+  "hohe_stadien": [
+    {
+      "n": "Estadio Hernando Siles 3637m",
+      "lat": -16.51,
+      "lng": -68.08
+    },
+    {
+      "n": "Estadio El Alto 4018m",
+      "lat": -16.5,
+      "lng": -68.19
+    },
+    {
+      "n": "Estadio Olímpico Atahualpa 2819m",
+      "lat": -0.22,
+      "lng": -78.5
+    },
+    {
+      "n": "Estadio Garcilaso Cusco 3360m",
+      "lat": -13.53,
+      "lng": -71.97
+    },
+    {
+      "n": "Addis Abeba Stadium 2355m",
+      "lat": 9.02,
+      "lng": 38.75
+    },
+    {
+      "n": "Asmara Stadium 2325m",
+      "lat": 15.34,
+      "lng": 38.95
+    },
+    {
+      "n": "FNB Stadium Johannesburg 1753m",
+      "lat": -26.23,
+      "lng": 27.98
+    },
+    {
+      "n": "Kasarani Nairobi 1600m",
+      "lat": -1.25,
+      "lng": 36.88
+    },
+    {
+      "n": "Estadio Universitario México 2240m",
+      "lat": 19.3,
+      "lng": -99.19
+    }
+  ],
+  "leichtathletik_wm": [
+    {
+      "n": "1983 Helsinki",
+      "lat": 60.17,
+      "lng": 24.93
+    },
+    {
+      "n": "1987 Rom",
+      "lat": 41.9,
+      "lng": 12.5
+    },
+    {
+      "n": "1991 Tokio",
+      "lat": 35.69,
+      "lng": 139.69
+    },
+    {
+      "n": "1993 Stuttgart",
+      "lat": 48.78,
+      "lng": 9.18
+    },
+    {
+      "n": "1997 Athen",
+      "lat": 37.98,
+      "lng": 23.73
+    },
+    {
+      "n": "1999 Sevilla",
+      "lat": 37.38,
+      "lng": -5.98
+    },
+    {
+      "n": "2009 Berlin",
+      "lat": 52.52,
+      "lng": 13.41
+    },
+    {
+      "n": "2013 Moskau",
+      "lat": 55.75,
+      "lng": 37.62
+    },
+    {
+      "n": "2015 Peking",
+      "lat": 39.91,
+      "lng": 116.39
+    },
+    {
+      "n": "2017 London",
+      "lat": 51.51,
+      "lng": -0.13
+    },
+    {
+      "n": "2019 Doha",
+      "lat": 25.29,
+      "lng": 51.53
+    },
+    {
+      "n": "2022 Eugene",
+      "lat": 44.05,
+      "lng": -123.07
+    },
+    {
+      "n": "2023 Budapest",
+      "lat": 47.49,
+      "lng": 19.04
+    }
+  ],
+  "surf_spots": [
+    {
+      "n": "Pipeline (Oahu)",
+      "lat": 21.66,
+      "lng": -158.05
+    },
+    {
+      "n": "Teahupo'o (Tahiti)",
+      "lat": -17.86,
+      "lng": -149.24
+    },
+    {
+      "n": "Jeffreys Bay",
+      "lat": -34.05,
+      "lng": 24.92
+    },
+    {
+      "n": "Nazaré (Portugal)",
+      "lat": 39.6,
+      "lng": -9.07
+    },
+    {
+      "n": "Bells Beach",
+      "lat": -38.37,
+      "lng": 144.27
+    },
+    {
+      "n": "Mavericks (Kalifornien)",
+      "lat": 37.49,
+      "lng": -122.49
+    },
+    {
+      "n": "Hossegor (Frankreich)",
+      "lat": 43.67,
+      "lng": -1.42
+    },
+    {
+      "n": "Superbank (Queensland)",
+      "lat": -27.96,
+      "lng": 153.44
+    },
+    {
+      "n": "Mundaka (Spanien)",
+      "lat": 43.41,
+      "lng": -2.7
+    },
+    {
+      "n": "Cloudbreak (Fidschi)",
+      "lat": -17.8,
+      "lng": 177.2
+    }
+  ],
+  "kontinent_mitte": [
+    {
+      "n": "Zentrum Afrikas",
+      "lat": 8.78,
+      "lng": 25.51
+    },
+    {
+      "n": "Zentrum Asiens",
+      "lat": 45,
+      "lng": 100
+    },
+    {
+      "n": "Zentrum Europas",
+      "lat": 54.9,
+      "lng": 25.3
+    },
+    {
+      "n": "Zentrum Nordamerikas",
+      "lat": 48.2,
+      "lng": -100
+    },
+    {
+      "n": "Zentrum Südamerikas",
+      "lat": -14.2,
+      "lng": -51
+    },
+    {
+      "n": "Zentrum Ozeanien",
+      "lat": -27,
+      "lng": 133
+    }
+  ],
+  "tiere_endemisch": [
+    {
+      "n": "Lemur (Madagaskar)",
+      "lat": -19,
+      "lng": 47
+    },
+    {
+      "n": "Kiwi (Neuseeland)",
+      "lat": -40.9,
+      "lng": 174.9
+    },
+    {
+      "n": "Komodo-Waran",
+      "lat": -8.55,
+      "lng": 119.49
+    },
+    {
+      "n": "Axolotl (Xochimilco)",
+      "lat": 19.28,
+      "lng": -99.1
+    },
+    {
+      "n": "Galapagos-Schildkröte",
+      "lat": -0.68,
+      "lng": -91
+    },
+    {
+      "n": "Kakapo (Neuseeland)",
+      "lat": -45.5,
+      "lng": 167.5
+    },
+    {
+      "n": "Nasenaffe (Borneo)",
+      "lat": 1.5,
+      "lng": 110.3
+    },
+    {
+      "n": "Schneeleopard (Himalaya)",
+      "lat": 28.5,
+      "lng": 84
+    },
+    {
+      "n": "Quetzal (Guatemala)",
+      "lat": 15,
+      "lng": -90.4
+    },
+    {
+      "n": "Wombat (Australien)",
+      "lat": -32,
+      "lng": 147
+    },
+    {
+      "n": "Fossa (Madagaskar)",
+      "lat": -20,
+      "lng": 44.5
+    },
+    {
+      "n": "Tasmanian Devil",
+      "lat": -42,
+      "lng": 146.5
+    },
+    {
+      "n": "Orang-Utan (Borneo)",
+      "lat": 1,
+      "lng": 114
+    },
+    {
+      "n": "Sumatra-Nashorn",
+      "lat": 3.6,
+      "lng": 102
+    },
+    {
+      "n": "Weißkopf-Seeadler (Alaska)",
+      "lat": 61,
+      "lng": -149
+    },
+    {
+      "n": "Kondor (Anden)",
+      "lat": -15,
+      "lng": -70
+    },
+    {
+      "n": "Riesenschildkröte (Aldabra)",
+      "lat": -9.4,
+      "lng": 46.3
+    },
+    {
+      "n": "Kaiman (Pantanal)",
+      "lat": -17,
+      "lng": -57
+    },
+    {
+      "n": "Nashorn-Chamäleon (Kamerun)",
+      "lat": 5,
+      "lng": 10.5
+    },
+    {
+      "n": "Przewalski-Pferd (Mongolei)",
+      "lat": 47,
+      "lng": 102
+    },
+    {
+      "n": "Aye-Aye (Madagaskar)",
+      "lat": -18.7,
+      "lng": 46.9
+    },
+    {
+      "n": "Indri (Madagaskar)",
+      "lat": -18.9,
+      "lng": 48.4
+    },
+    {
+      "n": "Quokka (Westaustralien)",
+      "lat": -31.9,
+      "lng": 115.9
+    },
+    {
+      "n": "Numbat (Westaustralien)",
+      "lat": -32.4,
+      "lng": 118.5
+    },
+    {
+      "n": "Bilby (Zentralaustralien)",
+      "lat": -25,
+      "lng": 128
+    },
+    {
+      "n": "Schnabeltier (Queensland)",
+      "lat": -27,
+      "lng": 153
+    },
+    {
+      "n": "Kurzschnabeligel (Australien)",
+      "lat": -28,
+      "lng": 134
+    },
+    {
+      "n": "Kea (Neuseeland)",
+      "lat": -43.5,
+      "lng": 172
+    },
+    {
+      "n": "Tuatara (Neuseeland)",
+      "lat": -41.3,
+      "lng": 174.8
+    },
+    {
+      "n": "Takahe (Fiordland NZ)",
+      "lat": -45.5,
+      "lng": 167.7
+    },
+    {
+      "n": "Okapi (Kongo-Regenwald)",
+      "lat": 1,
+      "lng": 29
+    },
+    {
+      "n": "Drill (Kamerun)",
+      "lat": 5,
+      "lng": 9.5
+    },
+    {
+      "n": "Mandrill (Gabun)",
+      "lat": -0.4,
+      "lng": 11.6
+    },
+    {
+      "n": "Baumkänguru (Neuguinea)",
+      "lat": -6,
+      "lng": 147
+    },
+    {
+      "n": "Kasuar (Neuguinea)",
+      "lat": -4,
+      "lng": 136
+    },
+    {
+      "n": "Philippinenadler (Mindanao)",
+      "lat": 8,
+      "lng": 126
+    },
+    {
+      "n": "Tarsier (Sulawesi)",
+      "lat": -1,
+      "lng": 122
+    },
+    {
+      "n": "Babirusa (Sulawesi)",
+      "lat": 0.5,
+      "lng": 121
+    },
+    {
+      "n": "Anoa (Sulawesi)",
+      "lat": -2,
+      "lng": 121.5
+    },
+    {
+      "n": "Malaiischer Tapir (Sumatra)",
+      "lat": 3.6,
+      "lng": 102
+    },
+    {
+      "n": "Riesenpanda (Sichuan)",
+      "lat": 30.5,
+      "lng": 104
+    },
+    {
+      "n": "Roter Panda (Himalaya-Yunnan)",
+      "lat": 27,
+      "lng": 88.5
+    },
+    {
+      "n": "Saiga-Antilope (Kasachstan)",
+      "lat": 50,
+      "lng": 62
+    },
+    {
+      "n": "Vikuja (Peru-Anden)",
+      "lat": -14,
+      "lng": -75
+    },
+    {
+      "n": "Darwin-Fuchs (Chile)",
+      "lat": -38,
+      "lng": -73
+    },
+    {
+      "n": "Galapagos-Pinguin (Isabela)",
+      "lat": -0.6,
+      "lng": -91.3
+    },
+    {
+      "n": "Galapagos-Meeresleguan (Santa Cruz)",
+      "lat": -0.7,
+      "lng": -91
+    },
+    {
+      "n": "Irawaddy-Delfin (Mekong)",
+      "lat": 13,
+      "lng": 105
+    },
+    {
+      "n": "Florida-Panther (Everglades)",
+      "lat": 26,
+      "lng": -81
+    },
+    {
+      "n": "Puerto-Rico-Amazone (El Yunque)",
+      "lat": 18.3,
+      "lng": -66.6
+    },
+    {
+      "n": "Zwergelefant (Borneo)",
+      "lat": 5,
+      "lng": 118
+    },
+    {
+      "n": "Nilgiri-Tahr (Südindien)",
+      "lat": 10.1,
+      "lng": 77.1
+    },
+    {
+      "n": "Andentapir (Kolumbien)",
+      "lat": 1,
+      "lng": -77
+    },
+    {
+      "n": "Gerenuk (Kenia-Savanne)",
+      "lat": 1,
+      "lng": 40.5
+    },
+    {
+      "n": "Gelada-Pavian (Äthiopien)",
+      "lat": 12,
+      "lng": 39.5
+    },
+    {
+      "n": "Äthiopischer Wolf (Bale Mountains)",
+      "lat": 6.9,
+      "lng": 39.9
+    },
+    {
+      "n": "Walia-Steinbock (Simien)",
+      "lat": 13.2,
+      "lng": 38.1
+    },
+    {
+      "n": "Rodrigues-Flughund (Mauritius)",
+      "lat": -19.7,
+      "lng": 63.4
+    },
+    {
+      "n": "Nene (Hawaii-Inseln)",
+      "lat": 20,
+      "lng": -155
+    },
+    {
+      "n": "Iberischer Luchs (Andalusien)",
+      "lat": 38,
+      "lng": -6.5
+    },
+    {
+      "n": "Schneeaffe (Japan-Alpen)",
+      "lat": 36.7,
+      "lng": 138
+    },
+    {
+      "n": "Guanako (Patagonien)",
+      "lat": -50,
+      "lng": -72
+    },
+    {
+      "n": "Pangolin (Mittelafrika-Kongo)",
+      "lat": 5,
+      "lng": 18
+    },
+    {
+      "n": "Sri-Lanka-Elefant (Minneriya)",
+      "lat": 7.9,
+      "lng": 80.7
+    },
+    {
+      "n": "Wisent (Białowieża Polen)",
+      "lat": 52.7,
+      "lng": 23.8
+    },
+    {
+      "n": "Markhor (Hindukusch-Pakistan)",
+      "lat": 36,
+      "lng": 71.5
+    },
+    {
+      "n": "Vaquita (Golf von Kalifornien)",
+      "lat": 31,
+      "lng": -114.7
+    },
+    {
+      "n": "Hainan-Gibbon (China)",
+      "lat": 19,
+      "lng": 109
+    }
+  ],
+  "tiere_bigfive": [
+    {
+      "n": "Serengeti NP (Tansania)",
+      "lat": -2.33,
+      "lng": 34.83
+    },
+    {
+      "n": "Kruger NP (Südafrika)",
+      "lat": -23.99,
+      "lng": 31.55
+    },
+    {
+      "n": "Masai Mara (Kenia)",
+      "lat": -1.5,
+      "lng": 35.15
+    },
+    {
+      "n": "Amboseli NP (Kenia)",
+      "lat": -2.65,
+      "lng": 37.26
+    },
+    {
+      "n": "Chobe NP (Botswana)",
+      "lat": -18.06,
+      "lng": 24.48
+    },
+    {
+      "n": "Hwange NP (Simbabwe)",
+      "lat": -19,
+      "lng": 26.5
+    },
+    {
+      "n": "Etosha NP (Namibia)",
+      "lat": -18.85,
+      "lng": 16.33
+    },
+    {
+      "n": "South Luangwa (Sambia)",
+      "lat": -13.08,
+      "lng": 31.79
+    },
+    {
+      "n": "Ruaha NP (Tansania)",
+      "lat": -7.5,
+      "lng": 34.5
+    },
+    {
+      "n": "Ngorongoro (Tansania)",
+      "lat": -3.22,
+      "lng": 35.5
+    },
+    {
+      "n": "Okavango Delta (Botswana)",
+      "lat": -19.3,
+      "lng": 22.9
+    },
+    {
+      "n": "Tsavo NP (Kenia)",
+      "lat": -2.98,
+      "lng": 38.5
+    },
+    {
+      "n": "Gonarezhou (Simbabwe)",
+      "lat": -21.5,
+      "lng": 32.5
+    },
+    {
+      "n": "Selous GR (Tansania)",
+      "lat": -9,
+      "lng": 37.8
+    },
+    {
+      "n": "Addo Elephant Park (SA)",
+      "lat": -33.5,
+      "lng": 25.75
+    },
+    {
+      "n": "Moremi GR (Botswana)",
+      "lat": -19.15,
+      "lng": 23.16
+    },
+    {
+      "n": "Kgalagadi TP (Botswana/SA)",
+      "lat": -25.5,
+      "lng": 21
+    },
+    {
+      "n": "Kafue NP (Sambia)",
+      "lat": -14.5,
+      "lng": 25.9
+    },
+    {
+      "n": "Liwonde NP (Malawi)",
+      "lat": -14.8,
+      "lng": 35.3
+    },
+    {
+      "n": "Mikumi NP (Tansania)",
+      "lat": -7.4,
+      "lng": 37.1
+    },
+    {
+      "n": "Bwindi Impenetrable NP (Uganda)",
+      "lat": -1,
+      "lng": 29.6
+    },
+    {
+      "n": "Queen Elizabeth NP (Uganda)",
+      "lat": -0.2,
+      "lng": 30
+    },
+    {
+      "n": "Murchison Falls NP (Uganda)",
+      "lat": 2.2,
+      "lng": 31.7
+    },
+    {
+      "n": "Mana Pools NP (Simbabwe)",
+      "lat": -15.8,
+      "lng": 29.4
+    },
+    {
+      "n": "Zakouma NP (Tschad)",
+      "lat": 10.8,
+      "lng": 19.8
+    },
+    {
+      "n": "Pendjari NP (Benin)",
+      "lat": 11.3,
+      "lng": 1.8
+    },
+    {
+      "n": "Lewa Conservancy (Kenia)",
+      "lat": 0.2,
+      "lng": 37.5
+    },
+    {
+      "n": "Samburu NP (Kenia)",
+      "lat": 0.6,
+      "lng": 37.5
+    },
+    {
+      "n": "Tarangire NP (Tansania)",
+      "lat": -4,
+      "lng": 36
+    },
+    {
+      "n": "Lake Manyara NP (Tansania)",
+      "lat": -3.5,
+      "lng": 35.8
+    },
+    {
+      "n": "Marakele NP (Südafrika)",
+      "lat": -24.3,
+      "lng": 27.7
+    },
+    {
+      "n": "Pilanesberg NP (Südafrika)",
+      "lat": -25.2,
+      "lng": 27
+    },
+    {
+      "n": "Nyika NP (Malawi)",
+      "lat": -11,
+      "lng": 33.9
+    },
+    {
+      "n": "Lower Zambezi NP (Sambia)",
+      "lat": -15.5,
+      "lng": 29.5
+    },
+    {
+      "n": "Liuwa Plain NP (Sambia)",
+      "lat": -14.5,
+      "lng": 22.6
+    },
+    {
+      "n": "Waterberg Plateau NP (Namibia)",
+      "lat": -20.4,
+      "lng": 17.2
+    },
+    {
+      "n": "Bwabwata NP (Namibia)",
+      "lat": -18.2,
+      "lng": 21.8
+    },
+    {
+      "n": "Ongava GR (Namibia)",
+      "lat": -19.1,
+      "lng": 15.8
+    }
+  ],
+  "tiere_grosskatzen": [
+    {
+      "n": "Bengalischer Tiger (Sundarbans)",
+      "lat": 21.9,
+      "lng": 89.2
+    },
+    {
+      "n": "Sibirischer Tiger (Ussuri-Region)",
+      "lat": 44.5,
+      "lng": 134
+    },
+    {
+      "n": "Sumatra-Tiger (Gunung Leuser)",
+      "lat": 3.9,
+      "lng": 97.5
+    },
+    {
+      "n": "Jaguar (Pantanal, Brasilien)",
+      "lat": -16,
+      "lng": -56.5
+    },
+    {
+      "n": "Jaguar (Amazonas)",
+      "lat": -3,
+      "lng": -60
+    },
+    {
+      "n": "Schneeleopard (Hindukusch)",
+      "lat": 37,
+      "lng": 71
+    },
+    {
+      "n": "Schneeleopard (Mongolei)",
+      "lat": 46,
+      "lng": 102
+    },
+    {
+      "n": "Afrikanischer Löwe (Serengeti)",
+      "lat": -2.5,
+      "lng": 35
+    },
+    {
+      "n": "Gepard (Namibia)",
+      "lat": -22,
+      "lng": 18
+    },
+    {
+      "n": "Puma (Patagonien)",
+      "lat": -51,
+      "lng": -73
+    },
+    {
+      "n": "Nebelparder (Borneo)",
+      "lat": 4,
+      "lng": 117
+    },
+    {
+      "n": "Persischer Leopard (Kaukasus)",
+      "lat": 41,
+      "lng": 46
+    },
+    {
+      "n": "Amurleopard (Primorje, Russland)",
+      "lat": 43,
+      "lng": 133
+    },
+    {
+      "n": "Asiatischer Löwe (Gir-Wald, Indien)",
+      "lat": 21,
+      "lng": 70.8
+    },
+    {
+      "n": "Ozelot (Costa Rica)",
+      "lat": 10,
+      "lng": -83.5
+    },
+    {
+      "n": "Jaguarundi (Mexiko)",
+      "lat": 20,
+      "lng": -100
+    },
+    {
+      "n": "Irbis (Altai, Mongolei)",
+      "lat": 48,
+      "lng": 95
+    },
+    {
+      "n": "Bergpuma (Andes, Kolumbien)",
+      "lat": 3,
+      "lng": -74
+    },
+    {
+      "n": "Karakal (Zentralasien)",
+      "lat": 40,
+      "lng": 60
+    },
+    {
+      "n": "Afrikanischer Leopard (Kongo)",
+      "lat": -1,
+      "lng": 24
+    },
+    {
+      "n": "Bengalischer Tiger (Ranthambore)",
+      "lat": 26,
+      "lng": 76.5
+    },
+    {
+      "n": "Indochinesischer Tiger (Myanmar)",
+      "lat": 21,
+      "lng": 96.5
+    },
+    {
+      "n": "Malaiischer Tiger (Taman Negara)",
+      "lat": 4.5,
+      "lng": 102.3
+    },
+    {
+      "n": "Jaguar (Corcovado, Costa Rica)",
+      "lat": 8.5,
+      "lng": -83.6
+    },
+    {
+      "n": "Jaguar (Belize-Regenwald)",
+      "lat": 17,
+      "lng": -88.5
+    },
+    {
+      "n": "Schneeleopard (Altai-Gebirge)",
+      "lat": 49.5,
+      "lng": 87.5
+    },
+    {
+      "n": "Schneeleopard (Pamir)",
+      "lat": 38.5,
+      "lng": 73
+    },
+    {
+      "n": "Afrikanischer Löwe (Etosha)",
+      "lat": -18.9,
+      "lng": 16.3
+    },
+    {
+      "n": "Afrikanischer Löwe (Kruger NP)",
+      "lat": -24,
+      "lng": 31.5
+    },
+    {
+      "n": "Gepard (Serengeti-Ebene)",
+      "lat": -2.5,
+      "lng": 35
+    },
+    {
+      "n": "Gepard (Kalahari)",
+      "lat": -25,
+      "lng": 21
+    },
+    {
+      "n": "Puma (Rocky Mountains)",
+      "lat": 40,
+      "lng": -105.5
+    },
+    {
+      "n": "Nebelparder (Sumatra)",
+      "lat": 2,
+      "lng": 99.5
+    },
+    {
+      "n": "Persischer Leopard (Iran)",
+      "lat": 32,
+      "lng": 53
+    },
+    {
+      "n": "Asiatischer Gepard (Iran-Plateau)",
+      "lat": 35,
+      "lng": 55
+    },
+    {
+      "n": "Serval (Ostafrika-Savanne)",
+      "lat": -3,
+      "lng": 36
+    },
+    {
+      "n": "Karakal (Nordindien)",
+      "lat": 27,
+      "lng": 76
+    },
+    {
+      "n": "Puma (Andes, Peru)",
+      "lat": -10,
+      "lng": -75.5
+    },
+    {
+      "n": "Jaguar (Gran Chaco, Paraguay)",
+      "lat": -22,
+      "lng": -60
+    },
+    {
+      "n": "Schneeleopard (Tian Shan)",
+      "lat": 42,
+      "lng": 80
+    }
+  ],
+  "tiere_invasiv": [
+    {
+      "n": "Rohrkröte (Cane Toad) → Südamerika",
+      "lat": -10,
+      "lng": -55
+    },
+    {
+      "n": "Riesenpython (Everglades) → Südostasien",
+      "lat": 5,
+      "lng": 103
+    },
+    {
+      "n": "Grauhörnchen → Nordamerika",
+      "lat": 40,
+      "lng": -80
+    },
+    {
+      "n": "Nil-Barsch (Victoriasee) → Nilregion",
+      "lat": 20,
+      "lng": 32
+    },
+    {
+      "n": "Asiatische Hornisse → China",
+      "lat": 30,
+      "lng": 110
+    },
+    {
+      "n": "Rotfeuerfisch → Pazifik/Indischer Ozean",
+      "lat": 20,
+      "lng": 135
+    },
+    {
+      "n": "Chinesische Wollhandkrabbe → Ostasien",
+      "lat": 32,
+      "lng": 121
+    },
+    {
+      "n": "Nutria → Südamerika",
+      "lat": -35,
+      "lng": -58
+    },
+    {
+      "n": "Goldfisch (verwilderter) → China",
+      "lat": 30,
+      "lng": 118
+    },
+    {
+      "n": "Gelbwangen-Schmuckschildkröte → Nordamerika",
+      "lat": 32,
+      "lng": -91
+    },
+    {
+      "n": "Hauskatze (Australien) → Naher Osten",
+      "lat": 36,
+      "lng": 36
+    },
+    {
+      "n": "Europäischer Aal (Neuseeland) → Europa",
+      "lat": 52,
+      "lng": 9
+    },
+    {
+      "n": "Mink (Großbritannien) → Nordamerika",
+      "lat": 50,
+      "lng": -90
+    },
+    {
+      "n": "Asiatischer Marienkäfer → Ostasien",
+      "lat": 35,
+      "lng": 108
+    },
+    {
+      "n": "Karpfen (Australien) → Zentralasien",
+      "lat": 42,
+      "lng": 62
+    },
+    {
+      "n": "Forelle (Neuseeland) → Europa",
+      "lat": 47,
+      "lng": 10
+    },
+    {
+      "n": "Stachelschwanzleguane → Mittelamerika",
+      "lat": 14,
+      "lng": -87
+    },
+    {
+      "n": "Amerikanischer Nerz (Europa) → Nordamerika",
+      "lat": 50,
+      "lng": -90
+    },
+    {
+      "n": "Springbok (Südaustralien) → Südafrika",
+      "lat": -30,
+      "lng": 24
+    },
+    {
+      "n": "Hausratte (Weltweit) → Südasien",
+      "lat": 25,
+      "lng": 78
+    },
+    {
+      "n": "Wasserhyazinthe (Weltweit) → Brasilien",
+      "lat": -15,
+      "lng": -47
+    },
+    {
+      "n": "Niltilapia (Ostafrika) → Nilbecken",
+      "lat": 15,
+      "lng": 32
+    },
+    {
+      "n": "Burmesische Python (Everglades) → Südostasien",
+      "lat": 10,
+      "lng": 100
+    },
+    {
+      "n": "Braune Baumschlange (Guam) → Australien",
+      "lat": -25,
+      "lng": 133
+    },
+    {
+      "n": "Indischer Mungo (Karibik) → Südasien",
+      "lat": 20,
+      "lng": 80
+    },
+    {
+      "n": "Rote Feuerameise (USA/Weltweit) → Südamerika",
+      "lat": -15,
+      "lng": -55
+    },
+    {
+      "n": "Japanischer Staudenknoterich (Europa) → Ostasien",
+      "lat": 35,
+      "lng": 139
+    },
+    {
+      "n": "Signal-Krebs (Europa) → Nordamerika",
+      "lat": 45,
+      "lng": -90
+    },
+    {
+      "n": "Zebramuschel (USA) → Schwarzmeer-Region",
+      "lat": 46,
+      "lng": 31
+    },
+    {
+      "n": "Quagga-Muschel (Schweiz) → Ponto-Kaspis",
+      "lat": 47,
+      "lng": 40
+    },
+    {
+      "n": "Mink (Argentinien) → Nordamerika",
+      "lat": 50,
+      "lng": -95
+    },
+    {
+      "n": "Amerikanischer Waschbär (Europa) → Nordamerika",
+      "lat": 40,
+      "lng": -80
+    },
+    {
+      "n": "Kudzu (USA) → Ostasien",
+      "lat": 30,
+      "lng": 115
+    },
+    {
+      "n": "Nilbarsch (Uganda-Victoriasee) → Nilbecken",
+      "lat": 5,
+      "lng": 32
+    },
+    {
+      "n": "Asiatischer Feuerfisch (Karibik) → Indopazifik",
+      "lat": 5,
+      "lng": 120
+    },
+    {
+      "n": "Europäisches Kaninchen (Australien) → Iberische Halbinsel",
+      "lat": 40,
+      "lng": -4
+    },
+    {
+      "n": "Rotfuchs (Australien) → Europa",
+      "lat": 50,
+      "lng": 10
+    },
+    {
+      "n": "Coqui-Frosch (Hawaii) → Puerto Rico",
+      "lat": 18.3,
+      "lng": -66.6
+    },
+    {
+      "n": "Asiatischer Karpfen (USA-Mississippi) → Ostasien",
+      "lat": 32,
+      "lng": 113
+    },
+    {
+      "n": "Nilgans (Europa) → Nil-Afrika",
+      "lat": 10,
+      "lng": 32
+    },
+    {
+      "n": "Riesenbärenklau (Europa) → Kaukasus",
+      "lat": 42,
+      "lng": 44
+    },
+    {
+      "n": "Chinesische Wollhandkrabbe (UK) → China",
+      "lat": 32,
+      "lng": 121
+    },
+    {
+      "n": "Amerikanische Blaukrabbe (Europa) → Nordamerika",
+      "lat": 37,
+      "lng": -76
+    }
+  ],
+  "tiere_vogelzug": [
+    {
+      "n": "Bosphorus (Istanbul, Türkei)",
+      "lat": 41.1,
+      "lng": 29.05
+    },
+    {
+      "n": "Falsterbo (Schweden)",
+      "lat": 55.38,
+      "lng": 12.82
+    },
+    {
+      "n": "Eilat (Israel, Roter See)",
+      "lat": 29.55,
+      "lng": 34.95
+    },
+    {
+      "n": "Batumi (Georgien)",
+      "lat": 41.65,
+      "lng": 41.63
+    },
+    {
+      "n": "Straße von Gibraltar",
+      "lat": 35.98,
+      "lng": -5.47
+    },
+    {
+      "n": "Point Pelee (Ontario, Kanada)",
+      "lat": 41.95,
+      "lng": -82.52
+    },
+    {
+      "n": "Hawk Mountain (Pennsylvania)",
+      "lat": 40.64,
+      "lng": -75.99
+    },
+    {
+      "n": "Darién-Enge (Panama)",
+      "lat": 8.5,
+      "lng": -77.5
+    },
+    {
+      "n": "Qinghai-See (China)",
+      "lat": 36.9,
+      "lng": 100.2
+    },
+    {
+      "n": "Camargue (Frankreich)",
+      "lat": 43.5,
+      "lng": 4.5
+    },
+    {
+      "n": "Neusiedler See (Österreich)",
+      "lat": 47.85,
+      "lng": 16.77
+    },
+    {
+      "n": "Veracruz (Mexiko, Adlerroute)",
+      "lat": 19.17,
+      "lng": -96.13
+    },
+    {
+      "n": "Natal (Brasilien, Zugziel)",
+      "lat": -5.79,
+      "lng": -35.21
+    },
+    {
+      "n": "Nile Delta Wetlands (Ägypten)",
+      "lat": 31.3,
+      "lng": 31.2
+    },
+    {
+      "n": "Barr al Hikman (Oman)",
+      "lat": 22.5,
+      "lng": 59
+    },
+    {
+      "n": "Bay of Fundy (Kanada)",
+      "lat": 45.1,
+      "lng": -66.1
+    },
+    {
+      "n": "Chukchi-Halbinsel (Russland)",
+      "lat": 65,
+      "lng": -173
+    },
+    {
+      "n": "Cerro de la Muerte (Costa Rica)",
+      "lat": 9.55,
+      "lng": -83.75
+    },
+    {
+      "n": "Wadden Sea (Nordsee)",
+      "lat": 53.3,
+      "lng": 8.5
+    },
+    {
+      "n": "Bretagne (Frankreich, Seevögel)",
+      "lat": 48.5,
+      "lng": -4
+    },
+    {
+      "n": "Strait of Messina (Italien)",
+      "lat": 38.2,
+      "lng": 15.6
+    },
+    {
+      "n": "Sahara-Querung (Tunesien)",
+      "lat": 33.5,
+      "lng": 9
+    },
+    {
+      "n": "Sahel-Zone (Niger)",
+      "lat": 14,
+      "lng": 9
+    },
+    {
+      "n": "Red Sea-Küste (Sudan)",
+      "lat": 21,
+      "lng": 37
+    },
+    {
+      "n": "Rift Valley (Äthiopien)",
+      "lat": 8.5,
+      "lng": 38.5
+    },
+    {
+      "n": "Lake Victoria (Tansania/Kenia)",
+      "lat": -1,
+      "lng": 32.9
+    },
+    {
+      "n": "Djoudj NP (Senegal)",
+      "lat": 16.5,
+      "lng": -16.2
+    },
+    {
+      "n": "Banc d'Arguin (Mauretanien)",
+      "lat": 20.4,
+      "lng": -16.5
+    },
+    {
+      "n": "Bhutan-Himalaya-Pass (Bhutan)",
+      "lat": 27.5,
+      "lng": 91
+    },
+    {
+      "n": "Miyako-Inseln (Japan, Frühlingsszug)",
+      "lat": 24.8,
+      "lng": 125.3
+    },
+    {
+      "n": "Hokkaido (Japan, Kraniche)",
+      "lat": 43.5,
+      "lng": 144
+    },
+    {
+      "n": "Poyang-See (China, Zugvögel)",
+      "lat": 29,
+      "lng": 116.2
+    },
+    {
+      "n": "Bohai Bay (China, Limikolen)",
+      "lat": 38.5,
+      "lng": 121
+    },
+    {
+      "n": "Incheon Tidal Flats (Südkorea)",
+      "lat": 37.5,
+      "lng": 126.4
+    },
+    {
+      "n": "Copper River Delta (Alaska)",
+      "lat": 60.5,
+      "lng": -145
+    },
+    {
+      "n": "Delaware Bay (USA, Limikolen)",
+      "lat": 39.2,
+      "lng": -75.3
+    },
+    {
+      "n": "Cape May (New Jersey)",
+      "lat": 38.9,
+      "lng": -74.9
+    },
+    {
+      "n": "Gulf Coast (Texas)",
+      "lat": 27,
+      "lng": -97
+    },
+    {
+      "n": "Yucatan (Mexiko, Herbst-Korridor)",
+      "lat": 19.5,
+      "lng": -89.5
+    },
+    {
+      "n": "Mar Chiquita (Argentinien)",
+      "lat": -30.7,
+      "lng": -62.6
+    },
+    {
+      "n": "Tierra del Fuego (Zugziel, Chile)",
+      "lat": -53.5,
+      "lng": -70
+    },
+    {
+      "n": "Fair Isle (Schottland)",
+      "lat": 59.5,
+      "lng": -1.6
+    },
+    {
+      "n": "Helgoland (Nordsee)",
+      "lat": 54.2,
+      "lng": 7.9
+    },
+    {
+      "n": "Courland Spit (Ostsee)",
+      "lat": 55.3,
+      "lng": 21.1
+    }
+  ],
+  "tiere_haustiere": [
+    {
+      "n": "Hund (Wolf-Domestizierung)",
+      "lat": 45,
+      "lng": 65
+    },
+    {
+      "n": "Katze (Fruchtbarer Halbmond)",
+      "lat": 35,
+      "lng": 38
+    },
+    {
+      "n": "Pferd (Kasachstan, Botai-Kultur)",
+      "lat": 52.5,
+      "lng": 62.5
+    },
+    {
+      "n": "Rind (Anatolien/Naher Osten)",
+      "lat": 37.5,
+      "lng": 40
+    },
+    {
+      "n": "Schaf (Zagros-Gebirge, Iran)",
+      "lat": 34,
+      "lng": 47
+    },
+    {
+      "n": "Ziege (Zagros-Gebirge, Iran)",
+      "lat": 33.5,
+      "lng": 46.5
+    },
+    {
+      "n": "Schwein (Anatolien)",
+      "lat": 36,
+      "lng": 36
+    },
+    {
+      "n": "Haushuhn (Südostasien)",
+      "lat": 16,
+      "lng": 104
+    },
+    {
+      "n": "Ente (China)",
+      "lat": 30,
+      "lng": 116
+    },
+    {
+      "n": "Dromedar (Arabische Halbinsel)",
+      "lat": 23,
+      "lng": 46
+    },
+    {
+      "n": "Lama (Peruanische Anden)",
+      "lat": -14,
+      "lng": -75
+    },
+    {
+      "n": "Esel (Nordostafrika)",
+      "lat": 14,
+      "lng": 38
+    },
+    {
+      "n": "Wasserbüffel (Indus-Tal)",
+      "lat": 26,
+      "lng": 72
+    },
+    {
+      "n": "Yak (Tibetisches Hochland)",
+      "lat": 30,
+      "lng": 90
+    },
+    {
+      "n": "Truthahn (Mesoamerika, Mexiko)",
+      "lat": 19,
+      "lng": -97
+    },
+    {
+      "n": "Rentier (Sibirien)",
+      "lat": 62,
+      "lng": 100
+    },
+    {
+      "n": "Hausente (China)",
+      "lat": 30,
+      "lng": 116
+    },
+    {
+      "n": "Goldfisch (China, Song-Dynastie)",
+      "lat": 30,
+      "lng": 118
+    },
+    {
+      "n": "Kanarienvogel (Kanarische Inseln)",
+      "lat": 28,
+      "lng": -15.5
+    },
+    {
+      "n": "Seidenraupe (Gelbes-Fluss-Tal, China)",
+      "lat": 34,
+      "lng": 109
+    },
+    {
+      "n": "Wasserbüffel (Indus-Tal, Pakistan)",
+      "lat": 26,
+      "lng": 72
+    },
+    {
+      "n": "Kaninchen (Mittelmeerraum, Iberien)",
+      "lat": 37,
+      "lng": -4
+    },
+    {
+      "n": "Frettchen (Westeuropa)",
+      "lat": 48,
+      "lng": 2
+    },
+    {
+      "n": "Taube (Naher Osten)",
+      "lat": 32,
+      "lng": 35.5
+    },
+    {
+      "n": "Seidenhuhn (China, Jiangnan)",
+      "lat": 30,
+      "lng": 115
+    },
+    {
+      "n": "Koi-Karpfen (Japan, Niigata)",
+      "lat": 37.4,
+      "lng": 139
+    },
+    {
+      "n": "Alpaka (Anden, Peru)",
+      "lat": -13.5,
+      "lng": -75
+    },
+    {
+      "n": "Trampeltier (Zentralasien)",
+      "lat": 42,
+      "lng": 64
+    },
+    {
+      "n": "Yak (Tibetisches Hochland)",
+      "lat": 30,
+      "lng": 90
+    }
+  ],
+  "tiere_nationaltier_pin": [
+    {
+      "n": "Känguru → Australien",
+      "lat": -25,
+      "lng": 134
+    },
+    {
+      "n": "Riesenpanda → China",
+      "lat": 31,
+      "lng": 104
+    },
+    {
+      "n": "Bengal-Tiger → Indien",
+      "lat": 20,
+      "lng": 80
+    },
+    {
+      "n": "Weißkopfseeadler → USA",
+      "lat": 40,
+      "lng": -100
+    },
+    {
+      "n": "Biber → Kanada",
+      "lat": 60,
+      "lng": -96
+    },
+    {
+      "n": "Springbok → Südafrika",
+      "lat": -29,
+      "lng": 25
+    },
+    {
+      "n": "Schneeleopard → Pakistan",
+      "lat": 30,
+      "lng": 70
+    },
+    {
+      "n": "Kiwi → Neuseeland",
+      "lat": -42,
+      "lng": 172
+    },
+    {
+      "n": "Elch → Norwegen",
+      "lat": 65,
+      "lng": 14
+    },
+    {
+      "n": "Jaguar → Brasilien",
+      "lat": -10,
+      "lng": -55
+    },
+    {
+      "n": "Löwe → Vereinigtes Königreich",
+      "lat": 54,
+      "lng": -2
+    },
+    {
+      "n": "Braunbär → Russland",
+      "lat": 60,
+      "lng": 80
+    },
+    {
+      "n": "Weißer Elefant → Thailand",
+      "lat": 15,
+      "lng": 101
+    },
+    {
+      "n": "Adler → Deutschland",
+      "lat": 51,
+      "lng": 10
+    },
+    {
+      "n": "Gaulois-Hahn → Frankreich",
+      "lat": 46,
+      "lng": 2
+    },
+    {
+      "n": "Steinadler → Mexiko",
+      "lat": 23,
+      "lng": -102
+    },
+    {
+      "n": "Alpensteinbock → Schweiz",
+      "lat": 47,
+      "lng": 8
+    },
+    {
+      "n": "Stier (Osborne) → Spanien",
+      "lat": 40,
+      "lng": -4
+    },
+    {
+      "n": "Weißer Falke → UAE",
+      "lat": 24,
+      "lng": 54.5
+    },
+    {
+      "n": "Turul-Vogel → Ungarn",
+      "lat": 47,
+      "lng": 19
+    }
+  ],
+  "tiere_primaten": [
+    {
+      "n": "Virunga (Gorilla, Kongo/Ruanda)",
+      "lat": -1.5,
+      "lng": 29.5
+    },
+    {
+      "n": "Bwindi NP (Berggorilla, Uganda)",
+      "lat": -1.1,
+      "lng": 29.7
+    },
+    {
+      "n": "Gombe Stream (Schimpanse, Tansania)",
+      "lat": -4.67,
+      "lng": 29.63
+    },
+    {
+      "n": "Taï Forest (Schimpanse, Elfenbeinküste)",
+      "lat": 5.85,
+      "lng": -7.23
+    },
+    {
+      "n": "Gunung Leuser (Orang-Utan, Sumatra)",
+      "lat": 3.9,
+      "lng": 97.5
+    },
+    {
+      "n": "Tanjung Puting (Orang-Utan, Borneo)",
+      "lat": -2.7,
+      "lng": 111.9
+    },
+    {
+      "n": "Danum Valley (Borneo)",
+      "lat": 4.96,
+      "lng": 117.8
+    },
+    {
+      "n": "Ranomafana (Indri-Lemur, Madagaskar)",
+      "lat": -21.26,
+      "lng": 47.44
+    },
+    {
+      "n": "Kibale NP (Schimpanse, Uganda)",
+      "lat": 0.5,
+      "lng": 30.36
+    },
+    {
+      "n": "Mahale Mts (Schimpanse, Tansania)",
+      "lat": -6.2,
+      "lng": 29.8
+    },
+    {
+      "n": "Lopé NP (Gorilla, Gabun)",
+      "lat": -0.2,
+      "lng": 11.5
+    },
+    {
+      "n": "Atlantic Forest (Brüllaffe, Brasilien)",
+      "lat": -20,
+      "lng": -43
+    },
+    {
+      "n": "Hainan (Gibbon, China)",
+      "lat": 19,
+      "lng": 109.5
+    },
+    {
+      "n": "Afi Mountain (Cross-River-Gorilla, Nigeria)",
+      "lat": 6.3,
+      "lng": 9
+    },
+    {
+      "n": "Sichuan (Riesenpanda, China)",
+      "lat": 30.5,
+      "lng": 103
+    },
+    {
+      "n": "Amazon Basin (Brüllaffe, Peru)",
+      "lat": -4,
+      "lng": -73
+    },
+    {
+      "n": "Western Ghats (Löwenschwanzmakak, Indien)",
+      "lat": 11,
+      "lng": 76.5
+    },
+    {
+      "n": "Kinabalu (Borneo-Gibbon, Malaysia)",
+      "lat": 6.08,
+      "lng": 116.55
+    },
+    {
+      "n": "Mentawai-Inseln (Mentawai-Gibbon)",
+      "lat": -1.5,
+      "lng": 99.5
+    },
+    {
+      "n": "Mengla (Hainan-Gibbon, Yunnan, China)",
+      "lat": 21.5,
+      "lng": 101.5
+    }
+  ],
+  "tiere_hai": [
+    {
+      "n": "New Smyrna Beach (Florida, USA)",
+      "lat": 29.03,
+      "lng": -80.93
+    },
+    {
+      "n": "Volusia County (Florida, USA)",
+      "lat": 29.1,
+      "lng": -81.05
+    },
+    {
+      "n": "Réunion Island (Frankreich)",
+      "lat": -21.1,
+      "lng": 55.6
+    },
+    {
+      "n": "Shark Bay (Westaustralien)",
+      "lat": -25.5,
+      "lng": 113.5
+    },
+    {
+      "n": "Gansbaai (Weißer Hai, Südafrika)",
+      "lat": -34.58,
+      "lng": 19.35
+    },
+    {
+      "n": "KwaZulu-Natal (Südafrika)",
+      "lat": -29.5,
+      "lng": 31.2
+    },
+    {
+      "n": "Tiger Beach (Bahamas)",
+      "lat": 25.5,
+      "lng": -79.2
+    },
+    {
+      "n": "Recife (Brasilien)",
+      "lat": -8.07,
+      "lng": -34.88
+    },
+    {
+      "n": "Makena Beach (Maui, Hawaii)",
+      "lat": 20.63,
+      "lng": -156.44
+    },
+    {
+      "n": "Guadalupe Island (Mexiko)",
+      "lat": 29,
+      "lng": -118.3
+    },
+    {
+      "n": "Coffin Bay (Südaustralien)",
+      "lat": -34.63,
+      "lng": 135.46
+    },
+    {
+      "n": "Port St. Johns (Südafrika)",
+      "lat": -31.63,
+      "lng": 29.54
+    },
+    {
+      "n": "Sharm el-Sheikh (Rotes Meer)",
+      "lat": 27.86,
+      "lng": 34.28
+    },
+    {
+      "n": "Lord Howe Island (Australien)",
+      "lat": -31.55,
+      "lng": 159.08
+    },
+    {
+      "n": "Neptune Islands (Südaustralien)",
+      "lat": -35.3,
+      "lng": 136.1
+    },
+    {
+      "n": "Ballina (New South Wales)",
+      "lat": -28.87,
+      "lng": 153.57
+    },
+    {
+      "n": "Aliwal Shoal (Südafrika)",
+      "lat": -30.3,
+      "lng": 30.85
+    },
+    {
+      "n": "Turks & Caicos",
+      "lat": 21.8,
+      "lng": -72.3
+    },
+    {
+      "n": "Oahu (Hawaii, North Shore)",
+      "lat": 21.6,
+      "lng": -158.05
+    },
+    {
+      "n": "Plettenberg Bay (Südafrika)",
+      "lat": -34.05,
+      "lng": 23.37
+    }
+  ],
+  "tiere_baeren": [
+    {
+      "n": "Eisbär (Spitzbergen, Norwegen)",
+      "lat": 78.5,
+      "lng": 16
+    },
+    {
+      "n": "Eisbär (Churchill, Hudson Bay)",
+      "lat": 58.8,
+      "lng": -94.2
+    },
+    {
+      "n": "Eisbär (Beaufort Sea, Alaska)",
+      "lat": 72,
+      "lng": -150
+    },
+    {
+      "n": "Grizzly (Yellowstone, USA)",
+      "lat": 44.5,
+      "lng": -110.5
+    },
+    {
+      "n": "Grizzly (British Columbia)",
+      "lat": 51,
+      "lng": -123
+    },
+    {
+      "n": "Braunbär (Kamtschatka, Russland)",
+      "lat": 54,
+      "lng": 160
+    },
+    {
+      "n": "Braunbär (Skandinavien)",
+      "lat": 65,
+      "lng": 15
+    },
+    {
+      "n": "Braunbär (Karpaten, Rumänien)",
+      "lat": 46,
+      "lng": 25
+    },
+    {
+      "n": "Riesenpanda (Sichuan, China)",
+      "lat": 30.5,
+      "lng": 103
+    },
+    {
+      "n": "Lippenbär (Sri Lanka)",
+      "lat": 8,
+      "lng": 80.5
+    },
+    {
+      "n": "Lippenbär (Deccan, Indien)",
+      "lat": 18,
+      "lng": 78
+    },
+    {
+      "n": "Malaienbär (Borneo)",
+      "lat": 3,
+      "lng": 115
+    },
+    {
+      "n": "Brillenbär (Kolumbien)",
+      "lat": 5,
+      "lng": -76
+    },
+    {
+      "n": "Brillenbär (Peru, Anden)",
+      "lat": -10,
+      "lng": -75
+    },
+    {
+      "n": "Schwarzbär (Appalachian Trail)",
+      "lat": 37,
+      "lng": -82
+    },
+    {
+      "n": "Schwarzbär (Florida)",
+      "lat": 29,
+      "lng": -81.5
+    },
+    {
+      "n": "Kragenbär (Mandschurei, China)",
+      "lat": 44,
+      "lng": 128
+    },
+    {
+      "n": "Kragenbär (Honshu, Japan)",
+      "lat": 35.5,
+      "lng": 136.5
+    },
+    {
+      "n": "Braunbär (Sibirien, Westsibirien)",
+      "lat": 58,
+      "lng": 80
+    },
+    {
+      "n": "Eisbär (Franz-Josef-Land, Russland)",
+      "lat": 80.5,
+      "lng": 52
+    }
+  ],
+  "tiere_darwin_finken": {
+    "prompt": "Auf welcher Galápagos-Insel lebt dieser Fink?",
+    "items": [
+      {
+        "n": "Mangrovenfinke",
+        "lat": -0.94,
+        "lng": -90.97
+      },
+      {
+        "n": "Großer Kaktusfinke",
+        "lat": -1.39,
+        "lng": -89.67
+      },
+      {
+        "n": "Genovesa-Grundfinke",
+        "lat": 0.33,
+        "lng": -89.95
+      },
+      {
+        "n": "Spechtsfinke",
+        "lat": -0.74,
+        "lng": -90.31
+      },
+      {
+        "n": "Mittelklein-Grundfinke",
+        "lat": -1.29,
+        "lng": -90.48
+      },
+      {
+        "n": "Vegetarierfinke",
+        "lat": -0.37,
+        "lng": -91.55
+      },
+      {
+        "n": "Kleiner Baumfinke",
+        "lat": -0.82,
+        "lng": -90.05
+      },
+      {
+        "n": "Pinzón-Warblerfink",
+        "lat": -0.63,
+        "lng": -90.67
+      },
+      {
+        "n": "Marchena-Grundfinke",
+        "lat": 0.02,
+        "lng": -90.47
+      },
+      {
+        "n": "San-Cristóbal-Grundfinke",
+        "lat": -0.83,
+        "lng": -89.43
+      },
+      {
+        "n": "Dunkler Baumfinke",
+        "lat": -0.94,
+        "lng": -90.97
+      },
+      {
+        "n": "Isabela-Kaktusfinke",
+        "lat": -0.94,
+        "lng": -90.97
+      },
+      {
+        "n": "Española-Kaktusfinke",
+        "lat": -1.39,
+        "lng": -89.67
+      },
+      {
+        "n": "Fernandina-Grundfinke",
+        "lat": -0.37,
+        "lng": -91.55
+      },
+      {
+        "n": "Floreana-Baumfinke",
+        "lat": -1.29,
+        "lng": -90.48
+      },
+      {
+        "n": "Santa-Fe-Kaktusfinke",
+        "lat": -0.82,
+        "lng": -90.05
+      },
+      {
+        "n": "Cocos-Finke",
+        "lat": 5.53,
+        "lng": -87.07
+      },
+      {
+        "n": "Kleiner Grundfinke",
+        "lat": -0.74,
+        "lng": -90.31
+      },
+      {
+        "n": "Mittelgrundfinke",
+        "lat": -0.74,
+        "lng": -90.31
+      },
+      {
+        "n": "Großschnabelfinke",
+        "lat": -0.74,
+        "lng": -90.31
+      }
+    ]
+  },
+  "tiere_schutzgebiete": {
+    "prompt": "Wo liegt dieses Schutzgebiet?",
+    "items": [
+      {
+        "n": "Serengeti",
+        "lat": -2.33,
+        "lng": 34.83
+      },
+      {
+        "n": "Yellowstone",
+        "lat": 44.59,
+        "lng": -110.54
+      },
+      {
+        "n": "Kruger-Nationalpark",
+        "lat": -23.99,
+        "lng": 31.55
+      },
+      {
+        "n": "Galápagos",
+        "lat": -0.83,
+        "lng": -89.42
+      },
+      {
+        "n": "Okavango-Delta",
+        "lat": -19.3,
+        "lng": 22.87
+      },
+      {
+        "n": "Pantanal",
+        "lat": -18,
+        "lng": -57
+      },
+      {
+        "n": "Great Barrier Reef",
+        "lat": -18.29,
+        "lng": 147.7
+      },
+      {
+        "n": "Sundarbans",
+        "lat": 21.94,
+        "lng": 89.19
+      },
+      {
+        "n": "Masai Mara",
+        "lat": -1.49,
+        "lng": 35.14
+      },
+      {
+        "n": "Bialowieza-Urwald",
+        "lat": 52.7,
+        "lng": 23.88
+      },
+      {
+        "n": "Sokotra",
+        "lat": 12.47,
+        "lng": 54
+      },
+      {
+        "n": "Daintree-Regenwald",
+        "lat": -16.17,
+        "lng": 145.42
+      },
+      {
+        "n": "Valdés-Halbinsel",
+        "lat": -42.47,
+        "lng": -64.18
+      },
+      {
+        "n": "Kongo-Becken",
+        "lat": -0.23,
+        "lng": 23.65
+      },
+      {
+        "n": "Borneo-Regenwald",
+        "lat": 1,
+        "lng": 114
+      },
+      {
+        "n": "Himalaya-Nationalpark",
+        "lat": 31.52,
+        "lng": 78.11
+      },
+      {
+        "n": "Nairobi-Nationalpark",
+        "lat": -1.36,
+        "lng": 36.85
+      },
+      {
+        "n": "Patagonien",
+        "lat": -50.94,
+        "lng": -72.52
+      },
+      {
+        "n": "Amazonas-Regenwald",
+        "lat": -3.47,
+        "lng": -62.22
+      },
+      {
+        "n": "Madagaskar-Regenwald",
+        "lat": -18.91,
+        "lng": 47.54
+      },
+      {
+        "n": "Bwindi Impenetrable NP",
+        "lat": -1,
+        "lng": 29.6
+      },
+      {
+        "n": "Kaziranga NP",
+        "lat": 26.6,
+        "lng": 93.2
+      },
+      {
+        "n": "Ranthambore NP",
+        "lat": 26,
+        "lng": 76.5
+      },
+      {
+        "n": "Jim Corbett NP",
+        "lat": 29.5,
+        "lng": 79
+      },
+      {
+        "n": "Chitwan NP",
+        "lat": 27.5,
+        "lng": 84.4
+      },
+      {
+        "n": "Khao Yai NP",
+        "lat": 14.4,
+        "lng": 101.4
+      },
+      {
+        "n": "Taman Negara",
+        "lat": 4,
+        "lng": 102
+      },
+      {
+        "n": "Gunung Leuser NP",
+        "lat": 3.9,
+        "lng": 97.5
+      },
+      {
+        "n": "Ujung Kulon NP",
+        "lat": -6.8,
+        "lng": 105.4
+      },
+      {
+        "n": "Komodo NP",
+        "lat": -8.5,
+        "lng": 119.5
+      },
+      {
+        "n": "Great Smoky Mountains NP",
+        "lat": 35.7,
+        "lng": -83.5
+      },
+      {
+        "n": "Everglades NP",
+        "lat": 25.4,
+        "lng": -80.9
+      },
+      {
+        "n": "Torres del Paine NP",
+        "lat": -51,
+        "lng": -73
+      },
+      {
+        "n": "Corcovado NP",
+        "lat": 8.5,
+        "lng": -83.6
+      },
+      {
+        "n": "Manu NP",
+        "lat": -11.9,
+        "lng": -71.4
+      },
+      {
+        "n": "Kilimanjaro NP",
+        "lat": -3.1,
+        "lng": 37.4
+      },
+      {
+        "n": "Mount Kenya NP",
+        "lat": -0.1,
+        "lng": 37.3
+      },
+      {
+        "n": "Masoala NP",
+        "lat": -15.5,
+        "lng": 50.5
+      },
+      {
+        "n": "Tsingy de Bemaraha",
+        "lat": -19,
+        "lng": 44.8
+      },
+      {
+        "n": "Białowieża NP (Belarus)",
+        "lat": 52.8,
+        "lng": 23.9
+      },
+      {
+        "n": "Sarek NP",
+        "lat": 67.3,
+        "lng": 17.7
+      },
+      {
+        "n": "Svalbard NP",
+        "lat": 79,
+        "lng": 17
+      },
+      {
+        "n": "Plitvicer Seen NP",
+        "lat": 44.9,
+        "lng": 15.6
+      },
+      {
+        "n": "Sierra Nevada NP (Spanien)",
+        "lat": 37.1,
+        "lng": -3.4
+      },
+      {
+        "n": "Kakadu NP",
+        "lat": -13,
+        "lng": 132.5
+      },
+      {
+        "n": "Fiordland NP",
+        "lat": -45.4,
+        "lng": 167.7
+      },
+      {
+        "n": "Lorentz NP",
+        "lat": -4.8,
+        "lng": 137.5
+      },
+      {
+        "n": "Wrangel Island Reserve",
+        "lat": 71,
+        "lng": -179.5
+      },
+      {
+        "n": "Wood Buffalo NP",
+        "lat": 59,
+        "lng": -112
+      },
+      {
+        "n": "Great Bear Rainforest",
+        "lat": 52,
+        "lng": -127
+      }
+    ]
+  },
+  "tiere_zoos": {
+    "prompt": "Wo liegt dieser Zoo?",
+    "items": [
+      {
+        "n": "Zoologischer Garten Berlin",
+        "lat": 52.51,
+        "lng": 13.34
+      },
+      {
+        "n": "San Diego Zoo",
+        "lat": 32.74,
+        "lng": -117.15
+      },
+      {
+        "n": "Singapore Zoo",
+        "lat": 1.4,
+        "lng": 103.79
+      },
+      {
+        "n": "Chester Zoo",
+        "lat": 53.23,
+        "lng": -2.88
+      },
+      {
+        "n": "Hagenbecks Tierpark Hamburg",
+        "lat": 53.6,
+        "lng": 9.93
+      },
+      {
+        "n": "Zoo Vincennes Paris",
+        "lat": 48.83,
+        "lng": 2.43
+      },
+      {
+        "n": "Artis Amsterdam",
+        "lat": 52.37,
+        "lng": 4.92
+      },
+      {
+        "n": "Smithsonian National Zoo",
+        "lat": 38.93,
+        "lng": -77.05
+      },
+      {
+        "n": "Melbourne Zoo",
+        "lat": -37.78,
+        "lng": 144.95
+      },
+      {
+        "n": "Taronga Zoo Sydney",
+        "lat": -33.84,
+        "lng": 151.24
+      },
+      {
+        "n": "Zoo Zürich",
+        "lat": 47.38,
+        "lng": 8.57
+      },
+      {
+        "n": "Tiergarten Schönbrunn Wien",
+        "lat": 48.18,
+        "lng": 16.3
+      },
+      {
+        "n": "Beijing Zoo",
+        "lat": 39.94,
+        "lng": 116.33
+      },
+      {
+        "n": "Toronto Zoo",
+        "lat": 43.82,
+        "lng": -79.19
+      },
+      {
+        "n": "Pretoria Zoo",
+        "lat": -25.74,
+        "lng": 28.2
+      },
+      {
+        "n": "Rio de Janeiro Zoo",
+        "lat": -22.94,
+        "lng": -43.21
+      },
+      {
+        "n": "Ueno-Zoo Tokio",
+        "lat": 35.72,
+        "lng": 139.77
+      },
+      {
+        "n": "Bioparc Valencia",
+        "lat": 39.48,
+        "lng": -0.42
+      },
+      {
+        "n": "Fuengirola Zoo",
+        "lat": 36.54,
+        "lng": -4.62
+      },
+      {
+        "n": "Budapest Zoo",
+        "lat": 47.51,
+        "lng": 19.08
+      },
+      {
+        "n": "Zoo Leipzig",
+        "lat": 51.34,
+        "lng": 12.38
+      },
+      {
+        "n": "Kölner Zoo",
+        "lat": 50.97,
+        "lng": 6.97
+      },
+      {
+        "n": "Tierpark Berlin",
+        "lat": 52.5,
+        "lng": 13.52
+      },
+      {
+        "n": "Wilhelma Stuttgart",
+        "lat": 48.8,
+        "lng": 9.21
+      },
+      {
+        "n": "Zoo Frankfurt",
+        "lat": 50.12,
+        "lng": 8.72
+      },
+      {
+        "n": "Zoo Antwerpen",
+        "lat": 51.22,
+        "lng": 4.42
+      },
+      {
+        "n": "Zoo Kopenhagen",
+        "lat": 55.67,
+        "lng": 12.52
+      },
+      {
+        "n": "Kolmårdens Djurpark (Schweden)",
+        "lat": 58.68,
+        "lng": 16.37
+      },
+      {
+        "n": "Zoo Helsinki",
+        "lat": 60.1,
+        "lng": 25.08
+      },
+      {
+        "n": "Moscow Zoo",
+        "lat": 55.76,
+        "lng": 37.57
+      },
+      {
+        "n": "Shanghai Zoo",
+        "lat": 31.19,
+        "lng": 121.41
+      },
+      {
+        "n": "Chengdu Giant Panda Research Base",
+        "lat": 30.73,
+        "lng": 104.14
+      },
+      {
+        "n": "Taipei Zoo",
+        "lat": 24.99,
+        "lng": 121.58
+      },
+      {
+        "n": "Seoul Grand Park Zoo",
+        "lat": 37.43,
+        "lng": 127.01
+      },
+      {
+        "n": "Asahiyama Zoo (Japan)",
+        "lat": 43.77,
+        "lng": 142.37
+      },
+      {
+        "n": "Johannesburg Zoo",
+        "lat": -26.17,
+        "lng": 28.05
+      },
+      {
+        "n": "Adelaide Zoo",
+        "lat": -34.92,
+        "lng": 138.6
+      },
+      {
+        "n": "Perth Zoo",
+        "lat": -31.98,
+        "lng": 115.85
+      },
+      {
+        "n": "Wellington Zoo",
+        "lat": -41.31,
+        "lng": 174.77
+      },
+      {
+        "n": "Los Angeles Zoo",
+        "lat": 34.15,
+        "lng": -118.3
+      },
+      {
+        "n": "Bronx Zoo",
+        "lat": 40.85,
+        "lng": -73.88
+      },
+      {
+        "n": "National Zoo Washington",
+        "lat": 38.93,
+        "lng": -77.05
+      },
+      {
+        "n": "Chicago Lincoln Park Zoo",
+        "lat": 41.92,
+        "lng": -87.64
+      },
+      {
+        "n": "Cincinnati Zoo",
+        "lat": 39.14,
+        "lng": -84.51
+      },
+      {
+        "n": "Denver Zoo",
+        "lat": 39.75,
+        "lng": -104.95
+      },
+      {
+        "n": "San Francisco Zoo",
+        "lat": 37.73,
+        "lng": -122.5
+      },
+      {
+        "n": "Seattle Woodland Park Zoo",
+        "lat": 47.67,
+        "lng": -122.35
+      },
+      {
+        "n": "Vancouver Aquarium",
+        "lat": 49.3,
+        "lng": -123.13
+      },
+      {
+        "n": "Bioparc Lyon",
+        "lat": 45.77,
+        "lng": 4.82
+      },
+      {
+        "n": "Pairi Daiza (Belgien)",
+        "lat": 50.55,
+        "lng": 3.88
+      },
+      {
+        "n": "Rotterdam Diergaarde Blijdorp",
+        "lat": 51.93,
+        "lng": 4.43
+      },
+      {
+        "n": "Burgers' Zoo (Arnhem)",
+        "lat": 51.98,
+        "lng": 5.89
+      },
+      {
+        "n": "Zoo Prag",
+        "lat": 50.12,
+        "lng": 14.41
+      },
+      {
+        "n": "Zoo Warschau",
+        "lat": 52.25,
+        "lng": 21.02
+      },
+      {
+        "n": "Zoo Lissabon",
+        "lat": 38.74,
+        "lng": -9.17
+      },
+      {
+        "n": "Zoo Madrid",
+        "lat": 40.41,
+        "lng": -3.74
+      },
+      {
+        "n": "Hellabrunn Zoo München",
+        "lat": 48.1,
+        "lng": 11.55
+      },
+      {
+        "n": "Zoo Hannover",
+        "lat": 52.37,
+        "lng": 9.74
+      },
+      {
+        "n": "Zoo Rostock",
+        "lat": 54.09,
+        "lng": 12.11
+      },
+      {
+        "n": "Zoo Karlsruhe",
+        "lat": 49,
+        "lng": 8.39
+      }
+    ]
+  },
+  "tiere_nutztier_rassen": {
+    "prompt": "Wo wurde diese Rasse gezüchtet?",
+    "items": [
+      {
+        "n": "Wagyu-Rind",
+        "lat": 34.68,
+        "lng": 135.52
+      },
+      {
+        "n": "Hereford-Rind",
+        "lat": 52.06,
+        "lng": -2.72
+      },
+      {
+        "n": "Angus-Rind",
+        "lat": 57.27,
+        "lng": -2.76
+      },
+      {
+        "n": "Holstein-Friesian",
+        "lat": 54.19,
+        "lng": 8.87
+      },
+      {
+        "n": "Simmentaler",
+        "lat": 46.67,
+        "lng": 7.44
+      },
+      {
+        "n": "Merino-Schaf",
+        "lat": 38.52,
+        "lng": -6.46
+      },
+      {
+        "n": "Suffolk-Schaf",
+        "lat": 52.05,
+        "lng": 1.15
+      },
+      {
+        "n": "Angora-Ziege",
+        "lat": 39.92,
+        "lng": 32.85
+      },
+      {
+        "n": "Duroc-Schwein",
+        "lat": 41.65,
+        "lng": -72.69
+      },
+      {
+        "n": "Berkshire-Schwein",
+        "lat": 51.45,
+        "lng": -1
+      },
+      {
+        "n": "Yorkshire-Schwein",
+        "lat": 53.96,
+        "lng": -1.08
+      },
+      {
+        "n": "Brahman-Rind",
+        "lat": 22.91,
+        "lng": 82.02
+      },
+      {
+        "n": "Camargue-Pferd",
+        "lat": 43.52,
+        "lng": 4.56
+      },
+      {
+        "n": "Haflinger-Pferd",
+        "lat": 46.68,
+        "lng": 11.16
+      },
+      {
+        "n": "Fjord-Pferd",
+        "lat": 61.47,
+        "lng": 7.46
+      },
+      {
+        "n": "Leghorn-Huhn",
+        "lat": 43.55,
+        "lng": 10.31
+      },
+      {
+        "n": "Rhode-Island-Huhn",
+        "lat": 41.58,
+        "lng": -71.5
+      },
+      {
+        "n": "Pekingente",
+        "lat": 39.91,
+        "lng": 116.39
+      },
+      {
+        "n": "Saanenziege",
+        "lat": 46.56,
+        "lng": 7.25
+      },
+      {
+        "n": "Zebu-Rind",
+        "lat": 11,
+        "lng": 78
+      },
+      {
+        "n": "Charolais-Rind",
+        "lat": 46.8,
+        "lng": 4.3
+      },
+      {
+        "n": "Limousin-Rind",
+        "lat": 45.83,
+        "lng": 1.26
+      },
+      {
+        "n": "Galloway-Rind",
+        "lat": 55,
+        "lng": -4
+      },
+      {
+        "n": "Texel-Schaf",
+        "lat": 53.03,
+        "lng": 4.8
+      },
+      {
+        "n": "Corriedale-Schaf",
+        "lat": -44,
+        "lng": 170
+      },
+      {
+        "n": "Boer-Ziege",
+        "lat": -33,
+        "lng": 26
+      },
+      {
+        "n": "Toggenburger Ziege",
+        "lat": 47.35,
+        "lng": 9.38
+      },
+      {
+        "n": "Landrace-Schwein",
+        "lat": 56,
+        "lng": 10
+      },
+      {
+        "n": "Pietrain-Schwein",
+        "lat": 50.62,
+        "lng": 4.53
+      },
+      {
+        "n": "Noriker-Pferd",
+        "lat": 47.8,
+        "lng": 13.5
+      },
+      {
+        "n": "Orpington-Huhn",
+        "lat": 51.4,
+        "lng": 0.1
+      },
+      {
+        "n": "Marans-Huhn",
+        "lat": 45.83,
+        "lng": -0.97
+      },
+      {
+        "n": "Toulouse-Gans",
+        "lat": 43.6,
+        "lng": 1.44
+      },
+      {
+        "n": "Emden-Gans",
+        "lat": 53.37,
+        "lng": 7.21
+      },
+      {
+        "n": "Anatolisches Schaf (Kivircik)",
+        "lat": 40,
+        "lng": 29
+      },
+      {
+        "n": "Katahdin-Schaf",
+        "lat": 45.2,
+        "lng": -68.8
+      },
+      {
+        "n": "Manx Loaghtan (Isle of Man)",
+        "lat": 54.2,
+        "lng": -4.5
+      },
+      {
+        "n": "Dexter-Rind",
+        "lat": 53.5,
+        "lng": -8
+      },
+      {
+        "n": "Muscovy-Ente",
+        "lat": -5,
+        "lng": -55
+      },
+      {
+        "n": "Schwarzwälder Kaltblut",
+        "lat": 47.9,
+        "lng": 8.1
+      }
+    ]
+  },
+  "tiere_fossilien": {
+    "prompt": "Wo liegt diese Fossil-Fundstätte?",
+    "items": [
+      {
+        "n": "Solnhofen (Archaeopteryx)",
+        "lat": 48.9,
+        "lng": 11.09
+      },
+      {
+        "n": "Burgess-Schiefer",
+        "lat": 51.44,
+        "lng": -116.47
+      },
+      {
+        "n": "Dinosaur Provincial Park",
+        "lat": 50.74,
+        "lng": -111.49
+      },
+      {
+        "n": "Liaoning (Gefiederter Dino)",
+        "lat": 41.83,
+        "lng": 123.43
+      },
+      {
+        "n": "Hell Creek Formation",
+        "lat": 47.8,
+        "lng": -104.35
+      },
+      {
+        "n": "Messel-Grube",
+        "lat": 49.93,
+        "lng": 8.8
+      },
+      {
+        "n": "Olduvai-Schlucht",
+        "lat": -2.99,
+        "lng": 35.35
+      },
+      {
+        "n": "Ediacara Hills",
+        "lat": -31.38,
+        "lng": 138.23
+      },
+      {
+        "n": "Ghost Ranch (Coelophysis)",
+        "lat": 36.67,
+        "lng": -106.7
+      },
+      {
+        "n": "Flaming Cliffs Mongolei",
+        "lat": 43.45,
+        "lng": 100.52
+      },
+      {
+        "n": "Tendaguru-Schichten",
+        "lat": -9.33,
+        "lng": 38.1
+      },
+      {
+        "n": "Morrison Formation",
+        "lat": 39.24,
+        "lng": -107.38
+      },
+      {
+        "n": "Lyme Regis (Mary Anning)",
+        "lat": 50.73,
+        "lng": -2.94
+      },
+      {
+        "n": "Bernissart (Iguanodon)",
+        "lat": 50.48,
+        "lng": 3.66
+      },
+      {
+        "n": "Hadar (Lucy, Australopithecus)",
+        "lat": 11.08,
+        "lng": 40.57
+      },
+      {
+        "n": "Yixian Formation",
+        "lat": 41.5,
+        "lng": 120.65
+      },
+      {
+        "n": "Cleveland Lloyd Quarry",
+        "lat": 39.52,
+        "lng": -110.71
+      },
+      {
+        "n": "Santana Formation",
+        "lat": -7.23,
+        "lng": -39.41
+      },
+      {
+        "n": "Val d Orbieu (Sauropoden)",
+        "lat": 43.22,
+        "lng": 2.68
+      },
+      {
+        "n": "Patagonien-Dino-Canyon",
+        "lat": -41.87,
+        "lng": -66.7
+      },
+      {
+        "n": "La Brea Tar Pits (Los Angeles)",
+        "lat": 34.06,
+        "lng": -118.36
+      },
+      {
+        "n": "Joggins Fossil Cliffs (Kanada)",
+        "lat": 45.7,
+        "lng": -64.44
+      },
+      {
+        "n": "Riversleigh (Australien)",
+        "lat": -19.07,
+        "lng": 138.7
+      },
+      {
+        "n": "Naracoorte Caves (Australien)",
+        "lat": -37.01,
+        "lng": 140.78
+      },
+      {
+        "n": "Sterkfontein (Südafrika)",
+        "lat": -26.02,
+        "lng": 27.73
+      },
+      {
+        "n": "Chengjiang Formation (Yunnan)",
+        "lat": 24.5,
+        "lng": 103
+      },
+      {
+        "n": "Florissant Fossil Beds (Colorado)",
+        "lat": 38.91,
+        "lng": -105.28
+      },
+      {
+        "n": "John Day Fossil Beds (Oregon)",
+        "lat": 44.55,
+        "lng": -119.64
+      },
+      {
+        "n": "Liaoning Jiufotang Formation",
+        "lat": 41.3,
+        "lng": 121
+      },
+      {
+        "n": "Las Hoyas (Spanien)",
+        "lat": 40.24,
+        "lng": -2.55
+      },
+      {
+        "n": "Fayum Depression (Ägypten)",
+        "lat": 29.3,
+        "lng": 30.55
+      },
+      {
+        "n": "Rusinga Island (Kenia)",
+        "lat": -0.37,
+        "lng": 34.15
+      },
+      {
+        "n": "Nemegt Formation (Mongolei)",
+        "lat": 43,
+        "lng": 100
+      },
+      {
+        "n": "Kem Kem (Marokko, Spinosaurus)",
+        "lat": 31,
+        "lng": -4.5
+      },
+      {
+        "n": "Mazon Creek (Illinois, Karbon)",
+        "lat": 41.4,
+        "lng": -88.4
+      },
+      {
+        "n": "Hukawng Valley (Myanmar, Bernstein)",
+        "lat": 26.5,
+        "lng": 96.6
+      },
+      {
+        "n": "Cradle of Humankind (Südafrika)",
+        "lat": -26.02,
+        "lng": 27.75
+      },
+      {
+        "n": "El Breal de Orocual (Venezuela)",
+        "lat": 9.6,
+        "lng": -62.8
+      },
+      {
+        "n": "Walvis Bay (Namibia, Kreide)",
+        "lat": -22.96,
+        "lng": 14.51
+      },
+      {
+        "n": "Mahenge (Tansania, Eozän)",
+        "lat": -8.7,
+        "lng": 36.7
+      }
+    ]
+  },
+  "pferde_rassen": {
+    "prompt": "Wo wurde diese Pferderasse gezüchtet?",
+    "items": [
+      {
+        "n": "Shire",
+        "lat": 52.5,
+        "lng": -1.5
+      },
+      {
+        "n": "Thoroughbred",
+        "lat": 51.5,
+        "lng": -0.1
+      },
+      {
+        "n": "Vollblutaraber",
+        "lat": 24,
+        "lng": 44
+      },
+      {
+        "n": "Andalusier",
+        "lat": 37.8,
+        "lng": -5
+      },
+      {
+        "n": "Friese",
+        "lat": 53.1,
+        "lng": 5.8
+      },
+      {
+        "n": "Lipizzaner",
+        "lat": 45.8,
+        "lng": 13.88
+      },
+      {
+        "n": "Haflinger",
+        "lat": 46.68,
+        "lng": 11.16
+      },
+      {
+        "n": "Mustang",
+        "lat": 39,
+        "lng": -105
+      },
+      {
+        "n": "Appaloosa (Nez Percé)",
+        "lat": 46.41,
+        "lng": -117
+      },
+      {
+        "n": "Trakehner",
+        "lat": 54.7,
+        "lng": 21.1
+      },
+      {
+        "n": "Hannoveraner",
+        "lat": 52.37,
+        "lng": 9.73
+      },
+      {
+        "n": "Quarter Horse",
+        "lat": 30,
+        "lng": -100
+      },
+      {
+        "n": "Przewalski-Pferd",
+        "lat": 47,
+        "lng": 102
+      },
+      {
+        "n": "Islandpferd",
+        "lat": 64,
+        "lng": -19
+      },
+      {
+        "n": "Connemara-Pony",
+        "lat": 53.4,
+        "lng": -9.9
+      },
+      {
+        "n": "Welsh Pony",
+        "lat": 52.1,
+        "lng": -3.8
+      },
+      {
+        "n": "Shetlandpony",
+        "lat": 60.14,
+        "lng": -1.2
+      },
+      {
+        "n": "Clydesdale",
+        "lat": 55.7,
+        "lng": -3.9
+      },
+      {
+        "n": "Camargue-Pferd",
+        "lat": 43.52,
+        "lng": 4.56
+      },
+      {
+        "n": "Paint Horse",
+        "lat": 35.5,
+        "lng": -97.5
+      },
+      {
+        "n": "Lusitano",
+        "lat": 38.7,
+        "lng": -9.2
+      },
+      {
+        "n": "Knabstrupper (Dänemark)",
+        "lat": 55.5,
+        "lng": 11.8
+      },
+      {
+        "n": "Noriker",
+        "lat": 47.8,
+        "lng": 13.5
+      },
+      {
+        "n": "Akhal-Teke (Turkmenistan)",
+        "lat": 38,
+        "lng": 58.5
+      },
+      {
+        "n": "Marwari (Rajasthan)",
+        "lat": 27.02,
+        "lng": 74.22
+      },
+      {
+        "n": "Kathiawari (Gujarat)",
+        "lat": 22.3,
+        "lng": 70
+      },
+      {
+        "n": "Morgan Horse (Vermont)",
+        "lat": 44,
+        "lng": -72.5
+      },
+      {
+        "n": "Tennessee Walking Horse",
+        "lat": 35.7,
+        "lng": -86.5
+      },
+      {
+        "n": "Standardbred (Pennsylvania)",
+        "lat": 40.1,
+        "lng": -76
+      },
+      {
+        "n": "Paso Fino (Puerto Rico/Kolumbien)",
+        "lat": 18.2,
+        "lng": -66.5
+      },
+      {
+        "n": "Peruanischer Paso",
+        "lat": -12,
+        "lng": -77
+      },
+      {
+        "n": "Criollo (Argentinien)",
+        "lat": -34,
+        "lng": -64
+      },
+      {
+        "n": "Barb (Nordafrika)",
+        "lat": 34,
+        "lng": 3
+      },
+      {
+        "n": "Boerperd (Südafrika)",
+        "lat": -30,
+        "lng": 25
+      },
+      {
+        "n": "Basuto-Pony (Lesotho)",
+        "lat": -29.5,
+        "lng": 28.5
+      },
+      {
+        "n": "Franches-Montagnes (Schweiz)",
+        "lat": 47.3,
+        "lng": 7.2
+      },
+      {
+        "n": "Schwarzwälder Fuchs",
+        "lat": 47.9,
+        "lng": 8.1
+      },
+      {
+        "n": "Rocky Mountain Horse",
+        "lat": 37.5,
+        "lng": -83.5
+      },
+      {
+        "n": "Mangalarga Marchador (Brasilien)",
+        "lat": -19.9,
+        "lng": -43.9
+      },
+      {
+        "n": "Noric-Kaltblut (Österreich)",
+        "lat": 47.5,
+        "lng": 14
+      }
+    ]
+  },
+  "insel_match": [
+    {
+      "n": "Galápagos-Inseln",
+      "c": "Ecuador"
+    },
+    {
+      "n": "Kanarische Inseln",
+      "c": "Spanien"
+    },
+    {
+      "n": "Réunion",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Grönland",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Tasmanien",
+      "c": "Australien"
+    },
+    {
+      "n": "Bali",
+      "c": "Indonesien"
+    },
+    {
+      "n": "Korsika",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Hokkaido",
+      "c": "Japan"
+    },
+    {
+      "n": "Luzon",
+      "c": "Philippinen"
+    },
+    {
+      "n": "Falklandinseln",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Rügen",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Sardinien",
+      "c": "Italien"
+    },
+    {
+      "n": "Kreta",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Sizilien",
+      "c": "Italien"
+    }
+  ],
+  "ehemalige_hauptstaedte": [
+    {
+      "n": "Bonn",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Lagos",
+      "c": "Nigeria"
+    },
+    {
+      "n": "Almaty",
+      "c": "Kasachstan"
+    },
+    {
+      "n": "Yangon",
+      "c": "Myanmar"
+    },
+    {
+      "n": "Rio de Janeiro",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Nanjing",
+      "c": "China"
+    },
+    {
+      "n": "Philadelphia",
+      "c": "USA"
+    },
+    {
+      "n": "Abidjan",
+      "c": "Elfenbeinküste"
+    },
+    {
+      "n": "Kyoto",
+      "c": "Japan"
+    },
+    {
+      "n": "St. Petersburg",
+      "c": "Russland"
+    },
+    {
+      "n": "Krakau",
+      "c": "Polen"
+    },
+    {
+      "n": "Karatschi",
+      "c": "Pakistan"
+    },
+    {
+      "n": "Melbourne",
+      "c": "Australien"
+    },
+    {
+      "n": "Samarkand",
+      "c": "Usbekistan"
+    }
+  ],
+  "philosophen": [
+    {
+      "n": "Immanuel Kant",
+      "c": "Deutschland"
+    },
+    {
+      "n": "René Descartes",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Platon",
+      "c": "Griechenland"
+    },
+    {
+      "n": "John Locke",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Friedrich Nietzsche",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Konfuzius",
+      "c": "China"
+    },
+    {
+      "n": "Karl Marx",
+      "c": "Deutschland"
+    },
+    {
+      "n": "David Hume",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Ibn Sina (Avicenna)",
+      "c": "Iran"
+    },
+    {
+      "n": "Simone de Beauvoir",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Jean-Paul Sartre",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Sun Tzu",
+      "c": "China"
+    },
+    {
+      "n": "Baruch Spinoza",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Ibn Rushd (Averroes)",
+      "c": "Marokko"
+    },
+    {
+      "n": "Socrates",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Aristoteles",
+      "c": "Griechenland"
+    }
+  ],
+  "nationalpflanzen": [
+    {
+      "n": "Kirschblüte (Sakura)",
+      "c": "Japan"
+    },
+    {
+      "n": "Lotus",
+      "c": "Indien"
+    },
+    {
+      "n": "Ahorn",
+      "c": "Kanada"
+    },
+    {
+      "n": "Edelweiß",
+      "c": "Österreich"
+    },
+    {
+      "n": "Rose (Tudor)",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Distel",
+      "c": "Schottland"
+    },
+    {
+      "n": "Hibiskus",
+      "c": "Malaysia"
+    },
+    {
+      "n": "Klee (Shamrock)",
+      "c": "Irland"
+    },
+    {
+      "n": "Sonnenblume",
+      "c": "Ukraine"
+    },
+    {
+      "n": "Orchidee (Vanda Miss Joaquim)",
+      "c": "Singapur"
+    },
+    {
+      "n": "Jasmin",
+      "c": "Tunesien"
+    },
+    {
+      "n": "Golden Wattle",
+      "c": "Australien"
+    },
+    {
+      "n": "Tulpe",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Kaktus (Nopal)",
+      "c": "Mexiko"
+    }
+  ],
+  "nationaltiere": [
+    {
+      "n": "Känguru",
+      "c": "Australien"
+    },
+    {
+      "n": "Riesenpanda",
+      "c": "China"
+    },
+    {
+      "n": "Bengal-Tiger",
+      "c": "Indien"
+    },
+    {
+      "n": "Weißkopfseeadler",
+      "c": "USA"
+    },
+    {
+      "n": "Biber",
+      "c": "Kanada"
+    },
+    {
+      "n": "Hahn (Gallo Gaulois)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Springbok",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Schneeleopard",
+      "c": "Pakistan"
+    },
+    {
+      "n": "Kiwi (Vogel)",
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Elch",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Jaguar",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Löwe",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Braunbär",
+      "c": "Russland"
+    },
+    {
+      "n": "Weißer Elefant",
+      "c": "Thailand"
+    },
+    {
+      "n": "Adler",
+      "c": "Deutschland"
+    }
+  ],
+  "religionen": [
+    {
+      "n": "Shinto",
+      "c": "Japan"
+    },
+    {
+      "n": "Hinduismus",
+      "c": "Indien"
+    },
+    {
+      "n": "Zoroastrismus",
+      "c": "Iran"
+    },
+    {
+      "n": "Sikhismus",
+      "c": "Indien"
+    },
+    {
+      "n": "Voodoo",
+      "c": "Benin"
+    },
+    {
+      "n": "Cao Dai",
+      "c": "Vietnam"
+    },
+    {
+      "n": "Bahá'í-Glaube",
+      "c": "Iran"
+    },
+    {
+      "n": "Jainismus",
+      "c": "Indien"
+    },
+    {
+      "n": "Taoismus",
+      "c": "China"
+    },
+    {
+      "n": "Tenrikyo",
+      "c": "Japan"
+    },
+    {
+      "n": "Aleviten",
+      "c": "Türkei"
+    },
+    {
+      "n": "Yazidismus",
+      "c": "Irak"
+    },
+    {
+      "n": "Druzentum",
+      "c": "Libanon"
+    }
+  ],
+  "schriften": [
+    {
+      "n": "Hangul",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Hiragana/Katakana",
+      "c": "Japan"
+    },
+    {
+      "n": "Devanagari",
+      "c": "Indien"
+    },
+    {
+      "n": "Arabische Schrift",
+      "c": "Saudi-Arabien"
+    },
+    {
+      "n": "Kyrillisch",
+      "c": "Russland"
+    },
+    {
+      "n": "Ge'ez-Schrift",
+      "c": "Äthiopien"
+    },
+    {
+      "n": "Thai-Schrift",
+      "c": "Thailand"
+    },
+    {
+      "n": "Khmer-Schrift",
+      "c": "Kambodscha"
+    },
+    {
+      "n": "Armenische Schrift",
+      "c": "Armenien"
+    },
+    {
+      "n": "Georgische Schrift",
+      "c": "Georgien"
+    },
+    {
+      "n": "Hebräisch",
+      "c": "Israel"
+    },
+    {
+      "n": "Sinhala",
+      "c": "Sri Lanka"
+    },
+    {
+      "n": "Burmesische Schrift",
+      "c": "Myanmar"
+    },
+    {
+      "n": "Mongolische Schrift",
+      "c": "Mongolei"
+    }
+  ],
+  "nationalsport_off": [
+    {
+      "n": "Kabaddi (offiziell)",
+      "c": "Bangladesch"
+    },
+    {
+      "n": "Sumo (tradition.)",
+      "c": "Japan"
+    },
+    {
+      "n": "Tejo (offiziell)",
+      "c": "Kolumbien"
+    },
+    {
+      "n": "Muay Thai (offiziell)",
+      "c": "Thailand"
+    },
+    {
+      "n": "Polo (offiziell)",
+      "c": "Pakistan"
+    },
+    {
+      "n": "Hurling",
+      "c": "Irland"
+    },
+    {
+      "n": "Shinty",
+      "c": "Schottland"
+    },
+    {
+      "n": "Lacrosse (offiziell)",
+      "c": "Kanada"
+    },
+    {
+      "n": "Buzkashi",
+      "c": "Afghanistan"
+    },
+    {
+      "n": "Sepak Takraw",
+      "c": "Malaysia"
+    },
+    {
+      "n": "Basque Pelota",
+      "c": "Spanien"
+    },
+    {
+      "n": "Kendo",
+      "c": "Japan"
+    }
+  ],
+  "enklave": [
+    {
+      "n": "Kaliningrad",
+      "c": "Russland"
+    },
+    {
+      "n": "Nakhchivan",
+      "c": "Aserbaidschan"
+    },
+    {
+      "n": "Ceuta",
+      "c": "Spanien"
+    },
+    {
+      "n": "Melilla",
+      "c": "Spanien"
+    },
+    {
+      "n": "Cabinda",
+      "c": "Angola"
+    },
+    {
+      "n": "Alaska",
+      "c": "USA"
+    },
+    {
+      "n": "Büsingen am Hochrhein",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Campione d'Italia",
+      "c": "Italien"
+    },
+    {
+      "n": "Baarle-Hertog",
+      "c": "Belgien"
+    },
+    {
+      "n": "Vennbahn-Gebiet",
+      "c": "Belgien"
+    }
+  ],
+  "grenzfluesse": [
+    {
+      "n": "Rhein (entspringt in)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Rio Grande (entspringt in)",
+      "c": "USA"
+    },
+    {
+      "n": "Mekong (entspringt in)",
+      "c": "China"
+    },
+    {
+      "n": "Amur (entspringt in)",
+      "c": "Russland"
+    },
+    {
+      "n": "Oder (entspringt in)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Uruguay (entspringt in)",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Limpopo (entspringt in)",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Niger (entspringt in)",
+      "c": "Guinea"
+    },
+    {
+      "n": "Kongo (entspringt in)",
+      "c": "Sambia"
+    },
+    {
+      "n": "Tigris (entspringt in)",
+      "c": "Türkei"
+    },
+    {
+      "n": "Euphrat (entspringt in)",
+      "c": "Türkei"
+    },
+    {
+      "n": "Jordan (entspringt in)",
+      "c": "Syrien"
+    }
+  ],
+  "halbinseln": [
+    {
+      "n": "Skandinavische Halbinsel",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Iberische Halbinsel",
+      "c": "Spanien"
+    },
+    {
+      "n": "Arabische Halbinsel",
+      "c": "Saudi-Arabien"
+    },
+    {
+      "n": "Indische Halbinsel (Dekkan)",
+      "c": "Indien"
+    },
+    {
+      "n": "Koreanische Halbinsel",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Malaiische Halbinsel",
+      "c": "Malaysia"
+    },
+    {
+      "n": "Sinai-Halbinsel",
+      "c": "Ägypten"
+    },
+    {
+      "n": "Krim-Halbinsel",
+      "c": "Ukraine"
+    },
+    {
+      "n": "Yucatán-Halbinsel",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Kamtschatka",
+      "c": "Russland"
+    },
+    {
+      "n": "Bretagne",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Kola-Halbinsel",
+      "c": "Russland"
+    }
+  ],
+  "deltamuendungen": [
+    {
+      "n": "Nil-Delta",
+      "c": "Ägypten"
+    },
+    {
+      "n": "Mekong-Delta",
+      "c": "Vietnam"
+    },
+    {
+      "n": "Ganges-Brahmaputra-Delta",
+      "c": "Bangladesch"
+    },
+    {
+      "n": "Niger-Delta",
+      "c": "Nigeria"
+    },
+    {
+      "n": "Mississippi-Delta",
+      "c": "USA"
+    },
+    {
+      "n": "Okavango-Delta",
+      "c": "Botswana"
+    },
+    {
+      "n": "Irrawaddy-Delta",
+      "c": "Myanmar"
+    },
+    {
+      "n": "Indus-Delta",
+      "c": "Pakistan"
+    },
+    {
+      "n": "Donau-Delta",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Ebro-Delta",
+      "c": "Spanien"
+    },
+    {
+      "n": "Volga-Delta",
+      "c": "Russland"
+    },
+    {
+      "n": "Amazonas-Mündung",
+      "c": "Brasilien"
+    }
+  ],
+  "kaps": [
+    {
+      "n": "Kap der Guten Hoffnung",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Kap Hoorn",
+      "c": "Chile"
+    },
+    {
+      "n": "Nordkapp",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Kap Finisterre",
+      "c": "Spanien"
+    },
+    {
+      "n": "Kap Dezhnev",
+      "c": "Russland"
+    },
+    {
+      "n": "Kap Agulhas",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Cabo da Roca",
+      "c": "Portugal"
+    },
+    {
+      "n": "Kap York",
+      "c": "Australien"
+    },
+    {
+      "n": "Kap Matapan",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Kap Canaveral",
+      "c": "USA"
+    },
+    {
+      "n": "Kap Columbia",
+      "c": "Kanada"
+    },
+    {
+      "n": "Ras Ben Sakka",
+      "c": "Tunesien"
+    }
+  ],
+  "meerbusen": [
+    {
+      "n": "Golf von Mexiko",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Golf von Guinea",
+      "c": "Nigeria"
+    },
+    {
+      "n": "Golf von Bengalen",
+      "c": "Indien"
+    },
+    {
+      "n": "Golf von Alaska",
+      "c": "USA"
+    },
+    {
+      "n": "Golf von Aden",
+      "c": "Jemen"
+    },
+    {
+      "n": "Golf von Tonkin",
+      "c": "Vietnam"
+    },
+    {
+      "n": "Bottnischer Meerbusen",
+      "c": "Finnland"
+    },
+    {
+      "n": "Hudsonbai",
+      "c": "Kanada"
+    },
+    {
+      "n": "Golf von Persien",
+      "c": "Iran"
+    },
+    {
+      "n": "Golf von Korinth",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Biskaya",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Golf von Oman",
+      "c": "Oman"
+    }
+  ],
+  "inselgruppen": [
+    {
+      "n": "Azoren",
+      "c": "Portugal"
+    },
+    {
+      "n": "Spitzbergen (Svalbard)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Färöer",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Kerguelen-Inseln",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Juan-Fernández-Inseln",
+      "c": "Chile"
+    },
+    {
+      "n": "Weihnachtsinsel",
+      "c": "Australien"
+    },
+    {
+      "n": "Wallis und Futuna",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Turks- und Caicosinseln",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Neukaledonien",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Cookinseln",
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Amerikanische Samoa",
+      "c": "USA"
+    },
+    {
+      "n": "Clipperton",
+      "c": "Frankreich"
+    }
+  ],
+  "gebirge_match": [
+    {
+      "n": "Himalaja",
+      "c": "Nepal"
+    },
+    {
+      "n": "Andes",
+      "c": "Peru"
+    },
+    {
+      "n": "Rocky Mountains",
+      "c": "USA"
+    },
+    {
+      "n": "Kaukasus",
+      "c": "Georgien"
+    },
+    {
+      "n": "Ural",
+      "c": "Russland"
+    },
+    {
+      "n": "Atlas",
+      "c": "Marokko"
+    },
+    {
+      "n": "Alpen",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Pyrenäen",
+      "c": "Spanien"
+    },
+    {
+      "n": "Skandinavische Gebirge",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Pamir",
+      "c": "Tadschikistan"
+    },
+    {
+      "n": "Tian Shan",
+      "c": "Kirgisistan"
+    },
+    {
+      "n": "Sierra Madre",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Drakensberg",
+      "c": "Südafrika"
+    }
+  ],
+  "seen_match": [
+    {
+      "n": "Baikalsee",
+      "c": "Russland"
+    },
+    {
+      "n": "Victoriasee",
+      "c": "Tansania"
+    },
+    {
+      "n": "Tanganjikasee",
+      "c": "Tansania"
+    },
+    {
+      "n": "Ontariosee",
+      "c": "Kanada"
+    },
+    {
+      "n": "Huronsee",
+      "c": "Kanada"
+    },
+    {
+      "n": "Balaton",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Genfer See",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Bodensee",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Titicacasee",
+      "c": "Peru"
+    },
+    {
+      "n": "Chapala-See",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Biwa-See",
+      "c": "Japan"
+    },
+    {
+      "n": "Malaŵisee",
+      "c": "Malawi"
+    }
+  ],
+  "automarken": [
+    {
+      "n": "Toyota",
+      "c": "Japan"
+    },
+    {
+      "n": "BMW",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Mercedes-Benz",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Volkswagen",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Ferrari",
+      "c": "Italien"
+    },
+    {
+      "n": "Renault",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Volvo",
+      "c": "Schweden"
+    },
+    {
+      "n": "Hyundai",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Tata",
+      "c": "Indien"
+    },
+    {
+      "n": "SEAT",
+      "c": "Spanien"
+    },
+    {
+      "n": "Škoda",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Dacia",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Lada",
+      "c": "Russland"
+    },
+    {
+      "n": "Fiat",
+      "c": "Italien"
+    },
+    {
+      "n": "Jeep",
+      "c": "USA"
+    },
+    {
+      "n": "Kia",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Subaru",
+      "c": "Japan"
+    },
+    {
+      "n": "MINI",
+      "c": "Vereinigtes Königreich"
+    }
+  ],
+  "fluggesellschaften": [
+    {
+      "n": "Lufthansa",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Emirates",
+      "c": "Vereinigte Arabische Emirate"
+    },
+    {
+      "n": "Singapore Airlines",
+      "c": "Singapur"
+    },
+    {
+      "n": "ANA",
+      "c": "Japan"
+    },
+    {
+      "n": "KLM",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Air France",
+      "c": "Frankreich"
+    },
+    {
+      "n": "British Airways",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Turkish Airlines",
+      "c": "Türkei"
+    },
+    {
+      "n": "Ethiopian Airlines",
+      "c": "Äthiopien"
+    },
+    {
+      "n": "Qantas",
+      "c": "Australien"
+    },
+    {
+      "n": "Air Canada",
+      "c": "Kanada"
+    },
+    {
+      "n": "LOT",
+      "c": "Polen"
+    },
+    {
+      "n": "Iberia",
+      "c": "Spanien"
+    },
+    {
+      "n": "Finnair",
+      "c": "Finnland"
+    },
+    {
+      "n": "Aer Lingus",
+      "c": "Irland"
+    },
+    {
+      "n": "LATAM",
+      "c": "Chile"
+    },
+    {
+      "n": "Garuda",
+      "c": "Indonesien"
+    },
+    {
+      "n": "Korean Air",
+      "c": "Südkorea"
+    }
+  ],
+  "bahnstrecken": [
+    {
+      "n": "Transsibirische Eisenbahn",
+      "c": "Russland"
+    },
+    {
+      "n": "Rocky Mountaineer",
+      "c": "Kanada"
+    },
+    {
+      "n": "Glacier Express",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Bernina-Express",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Shinkansen Tokio-Osaka",
+      "c": "Japan"
+    },
+    {
+      "n": "Indian Pacific",
+      "c": "Australien"
+    },
+    {
+      "n": "TGV Paris-Lyon",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Darjeeling-Himalaya-Bahn",
+      "c": "Indien"
+    },
+    {
+      "n": "Inlandsbanen",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Douro-Linie",
+      "c": "Portugal"
+    },
+    {
+      "n": "Death Railway",
+      "c": "Thailand"
+    },
+    {
+      "n": "Al-Hejaz-Bahn",
+      "c": "Saudi-Arabien"
+    }
+  ],
+  "hafen_world": [
+    {
+      "n": "Hafen Rotterdam",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Hafen Shanghai",
+      "c": "China"
+    },
+    {
+      "n": "Hafen Singapur",
+      "c": "Singapur"
+    },
+    {
+      "n": "Hafen Hamburg",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Hafen Antwerpen",
+      "c": "Belgien"
+    },
+    {
+      "n": "Hafen Dubai (Jebel Ali)",
+      "c": "Vereinigte Arabische Emirate"
+    },
+    {
+      "n": "Port of Los Angeles",
+      "c": "USA"
+    },
+    {
+      "n": "Port of Santos",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Hafen Busan",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Hafen Colombo",
+      "c": "Sri Lanka"
+    },
+    {
+      "n": "Hafen Piräus",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Port Klang",
+      "c": "Malaysia"
+    }
+  ],
+  "kanaele": [
+    {
+      "n": "Suezkanal",
+      "c": "Ägypten"
+    },
+    {
+      "n": "Panamakanal",
+      "c": "Panama"
+    },
+    {
+      "n": "Kieler Kanal",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Canal du Midi",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Grand Canal",
+      "c": "China"
+    },
+    {
+      "n": "Karakum-Kanal",
+      "c": "Turkmenistan"
+    },
+    {
+      "n": "Korinth-Kanal",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Götakanal",
+      "c": "Schweden"
+    },
+    {
+      "n": "Rideau-Kanal",
+      "c": "Kanada"
+    },
+    {
+      "n": "Main-Donau-Kanal",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Albert-Kanal",
+      "c": "Belgien"
+    }
+  ],
+  "reedereien": [
+    {
+      "n": "Maersk",
+      "c": "Dänemark"
+    },
+    {
+      "n": "MSC",
+      "c": "Schweiz"
+    },
+    {
+      "n": "CMA CGM",
+      "c": "Frankreich"
+    },
+    {
+      "n": "COSCO",
+      "c": "China"
+    },
+    {
+      "n": "Hapag-Lloyd",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Evergreen",
+      "c": "Taiwan"
+    },
+    {
+      "n": "Yang Ming",
+      "c": "Taiwan"
+    },
+    {
+      "n": "HMM",
+      "c": "Südkorea"
+    },
+    {
+      "n": "ZIM",
+      "c": "Israel"
+    },
+    {
+      "n": "Stena Line",
+      "c": "Schweden"
+    },
+    {
+      "n": "Pacific International Lines",
+      "c": "Singapur"
+    }
+  ],
+  "autobahnen_beruhmt": [
+    {
+      "n": "Autobahn (unbegrenzt)",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Autostrada",
+      "c": "Italien"
+    },
+    {
+      "n": "Autoroute",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Motorway",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Interstate Highway",
+      "c": "USA"
+    },
+    {
+      "n": "Autopista",
+      "c": "Spanien"
+    },
+    {
+      "n": "Snelweg",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Autoput",
+      "c": "Serbien"
+    },
+    {
+      "n": "Expressway",
+      "c": "China"
+    },
+    {
+      "n": "Jalan Tol",
+      "c": "Indonesien"
+    },
+    {
+      "n": "Autoestrada",
+      "c": "Portugal"
+    },
+    {
+      "n": "Autostrada (A1 Amber Highway)",
+      "c": "Polen"
+    }
+  ],
+  "metrostaedte": [
+    {
+      "n": "Tokyo Metro",
+      "c": "Japan"
+    },
+    {
+      "n": "Metro Moskau",
+      "c": "Russland"
+    },
+    {
+      "n": "London Underground",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Metro Paris",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Metro New York (MTA)",
+      "c": "USA"
+    },
+    {
+      "n": "Metro Seoul",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Metro Shanghai",
+      "c": "China"
+    },
+    {
+      "n": "Metro Madrid",
+      "c": "Spanien"
+    },
+    {
+      "n": "U-Bahn Berlin",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Metro Kairo",
+      "c": "Ägypten"
+    },
+    {
+      "n": "Metro São Paulo",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Metro Buenos Aires",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Metro Mumbai",
+      "c": "Indien"
+    },
+    {
+      "n": "Metro Peking",
+      "c": "China"
+    }
+  ],
+  "luft_rekorde": [
+    {
+      "n": "Längste Nonstop-Strecke",
+      "c": "Singapur"
+    },
+    {
+      "n": "Erster Jet-Passagierflug (Comet)",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Höchster Flughafen (4411m)",
+      "c": "China"
+    },
+    {
+      "n": "Tiefster Flughafen (Schiphol -4m)",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Meiste Flughäfen weltweit",
+      "c": "USA"
+    },
+    {
+      "n": "Erste Überschallpassagierflg. (Concorde)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Größter Passagier-Jet (A380)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Meistgeflogene Route KUL-SIN",
+      "c": "Malaysia"
+    }
+  ],
+  "sort_kontinente": [
+    {
+      "n": "Deutschland",
+      "c": "Europa"
+    },
+    {
+      "n": "Japan",
+      "c": "Asien"
+    },
+    {
+      "n": "Brasilien",
+      "c": "Südamerika"
+    },
+    {
+      "n": "Ägypten",
+      "c": "Afrika"
+    },
+    {
+      "n": "Kanada",
+      "c": "Nordamerika"
+    },
+    {
+      "n": "Australien",
+      "c": "Ozeanien"
+    },
+    {
+      "n": "China",
+      "c": "Asien"
+    },
+    {
+      "n": "Mexiko",
+      "c": "Nordamerika"
+    },
+    {
+      "n": "Südafrika",
+      "c": "Afrika"
+    },
+    {
+      "n": "Indien",
+      "c": "Asien"
+    },
+    {
+      "n": "Frankreich",
+      "c": "Europa"
+    },
+    {
+      "n": "Argentinien",
+      "c": "Südamerika"
+    },
+    {
+      "n": "USA",
+      "c": "Nordamerika"
+    },
+    {
+      "n": "Russland",
+      "c": "Asien"
+    },
+    {
+      "n": "Nigeria",
+      "c": "Afrika"
+    },
+    {
+      "n": "Norwegen",
+      "c": "Europa"
+    },
+    {
+      "n": "Neuseeland",
+      "c": "Ozeanien"
+    },
+    {
+      "n": "Peru",
+      "c": "Südamerika"
+    },
+    {
+      "n": "Iran",
+      "c": "Asien"
+    },
+    {
+      "n": "Kenia",
+      "c": "Afrika"
+    }
+  ],
+  "sort_ozeane": [
+    {
+      "n": "Brasilien",
+      "c": "Atlantik"
+    },
+    {
+      "n": "Japan",
+      "c": "Pazifik"
+    },
+    {
+      "n": "Indien",
+      "c": "Indischer Ozean"
+    },
+    {
+      "n": "Kanada",
+      "c": "Atlantik"
+    },
+    {
+      "n": "Australien",
+      "c": "Indischer Ozean"
+    },
+    {
+      "n": "USA",
+      "c": "Pazifik"
+    },
+    {
+      "n": "Südafrika",
+      "c": "Atlantik"
+    },
+    {
+      "n": "Indonesien",
+      "c": "Pazifik"
+    },
+    {
+      "n": "Norwegen",
+      "c": "Atlantik"
+    },
+    {
+      "n": "Neuseeland",
+      "c": "Pazifik"
+    },
+    {
+      "n": "Thailand",
+      "c": "Pazifik"
+    },
+    {
+      "n": "Senegal",
+      "c": "Atlantik"
+    },
+    {
+      "n": "Oman",
+      "c": "Indischer Ozean"
+    },
+    {
+      "n": "Chile",
+      "c": "Pazifik"
+    },
+    {
+      "n": "Argentinien",
+      "c": "Atlantik"
+    }
+  ],
+  "mercator_illusion": [
+    {
+      "n": "Grönland sieht auf Mercator größer aus als Afrika",
+      "c": "Nein"
+    },
+    {
+      "n": "Russland ist auf Mercator verzerrt größer als in Realität",
+      "c": "Ja"
+    },
+    {
+      "n": "Australien ist in Wirklichkeit kleiner als die USA",
+      "c": "Nein"
+    },
+    {
+      "n": "Alaska wirkt auf Mercator kleiner als Mexico",
+      "c": "Nein"
+    },
+    {
+      "n": "Skandinavien sieht größer aus als Indien",
+      "c": "Ja"
+    },
+    {
+      "n": "Antarktika ist auf Mercator extrem vergrößert",
+      "c": "Ja"
+    },
+    {
+      "n": "Kanada ist größer als China",
+      "c": "Ja"
+    },
+    {
+      "n": "Greenland ist größer als Mexiko in Wirklichkeit",
+      "c": "Nein"
+    }
+  ],
+  "distanz_schaetzer": [
+    {
+      "n": "Berlin → Paris",
+      "c": "880 km"
+    },
+    {
+      "n": "New York → Los Angeles",
+      "c": "3940 km"
+    },
+    {
+      "n": "Sydney → Perth",
+      "c": "3290 km"
+    },
+    {
+      "n": "London → Tokio",
+      "c": "9560 km"
+    },
+    {
+      "n": "Kairo → Kapstadt",
+      "c": "7700 km"
+    },
+    {
+      "n": "Buenos Aires → Santiago",
+      "c": "1140 km"
+    },
+    {
+      "n": "Moskau → Wladiwostok",
+      "c": "6430 km"
+    },
+    {
+      "n": "Delhi → Mumbai",
+      "c": "1400 km"
+    },
+    {
+      "n": "Amsterdam → Madrid",
+      "c": "1760 km"
+    },
+    {
+      "n": "Toronto → Vancouver",
+      "c": "3360 km"
+    }
+  ],
+  "flugzeit_schaetzer": [
+    {
+      "n": "Frankfurt → New York",
+      "c": "9 Std."
+    },
+    {
+      "n": "London → Sydney",
+      "c": "21 Std."
+    },
+    {
+      "n": "Paris → Tokio",
+      "c": "12 Std."
+    },
+    {
+      "n": "Dubai → Los Angeles",
+      "c": "16 Std."
+    },
+    {
+      "n": "Madrid → Buenos Aires",
+      "c": "14 Std."
+    },
+    {
+      "n": "Amsterdam → Singapur",
+      "c": "12 Std."
+    },
+    {
+      "n": "Moskau → Peking",
+      "c": "8 Std."
+    },
+    {
+      "n": "New York → São Paulo",
+      "c": "10 Std."
+    },
+    {
+      "n": "Berlin → Bangkok",
+      "c": "11 Std."
+    },
+    {
+      "n": "Istanbul → Tokio",
+      "c": "11 Std."
+    }
+  ],
+  "breitengrad_match": [
+    {
+      "n": "Madrid",
+      "c": "Peking"
+    },
+    {
+      "n": "Berlin",
+      "c": "Moskau"
+    },
+    {
+      "n": "New York",
+      "c": "Lissabon"
+    },
+    {
+      "n": "Buenos Aires",
+      "c": "Sydney"
+    },
+    {
+      "n": "Kairo",
+      "c": "Los Angeles"
+    },
+    {
+      "n": "Mumbai",
+      "c": "Nairobi"
+    },
+    {
+      "n": "São Paulo",
+      "c": "Melbourne"
+    },
+    {
+      "n": "Tokio",
+      "c": "Seoul"
+    },
+    {
+      "n": "Oslo",
+      "c": "Anchorage"
+    },
+    {
+      "n": "Kapstadt",
+      "c": "Santiago de Chile"
+    },
+    {
+      "n": "Miami",
+      "c": "Riad"
+    },
+    {
+      "n": "Teheran",
+      "c": "Chicago"
+    },
+    {
+      "n": "Paris",
+      "c": "Calgary"
+    },
+    {
+      "n": "Lhasa",
+      "c": "Denver"
+    }
+  ]
+}

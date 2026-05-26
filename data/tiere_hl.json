@@ -1,0 +1,1160 @@
+{
+  "gewicht_land": {
+    "prompt": "Welches Landtier ist schwerer? (Körpergewicht)",
+    "unit": "kg",
+    "items": [
+      {
+        "name": "Afrikanischer Elefant",
+        "val": 6000
+      },
+      {
+        "name": "Nilpferd",
+        "val": 2000
+      },
+      {
+        "name": "Weißes Nashorn",
+        "val": 2300
+      },
+      {
+        "name": "Gaur (Wildrind)",
+        "val": 1000
+      },
+      {
+        "name": "Wasserbüffel",
+        "val": 700
+      },
+      {
+        "name": "Giraffe",
+        "val": 800
+      },
+      {
+        "name": "Flusspferd",
+        "val": 2000
+      },
+      {
+        "name": "Eisbär",
+        "val": 500
+      },
+      {
+        "name": "Grizzlybär",
+        "val": 360
+      },
+      {
+        "name": "Afrikanischer Löwe",
+        "val": 190
+      },
+      {
+        "name": "Sibirischer Tiger",
+        "val": 300
+      },
+      {
+        "name": "Gepard",
+        "val": 65
+      },
+      {
+        "name": "Gorilla (Silberrücken)",
+        "val": 200
+      },
+      {
+        "name": "Orang-Utan (Borneo)",
+        "val": 87
+      },
+      {
+        "name": "Jaguar",
+        "val": 100
+      },
+      {
+        "name": "Wapiti (Rothirsch)",
+        "val": 330
+      },
+      {
+        "name": "Europäischer Wisent",
+        "val": 900
+      },
+      {
+        "name": "Dromedar",
+        "val": 600
+      },
+      {
+        "name": "Elan (Alaskavariante)",
+        "val": 700
+      },
+      {
+        "name": "Hausrind",
+        "val": 700
+      }
+    ]
+  },
+  "gewicht_meer": {
+    "prompt": "Welches Meerestier ist schwerer? (Körpergewicht)",
+    "unit": "kg",
+    "items": [
+      {
+        "name": "Blauwal",
+        "val": 150000
+      },
+      {
+        "name": "Finnwal",
+        "val": 70000
+      },
+      {
+        "name": "Buckelwal",
+        "val": 30000
+      },
+      {
+        "name": "Pottwahl",
+        "val": 45000
+      },
+      {
+        "name": "Orca (Schwertwahl)",
+        "val": 6000
+      },
+      {
+        "name": "Walross",
+        "val": 1700
+      },
+      {
+        "name": "Südlicher See-Elefant",
+        "val": 2500
+      },
+      {
+        "name": "Weißer Hai",
+        "val": 1100
+      },
+      {
+        "name": "Walhai",
+        "val": 18000
+      },
+      {
+        "name": "Riesenoktopus",
+        "val": 15
+      },
+      {
+        "name": "Atlantischer Blauflossen-Thunfisch",
+        "val": 450
+      },
+      {
+        "name": "Schwertfisch",
+        "val": 540
+      },
+      {
+        "name": "Beluga-Stör",
+        "val": 1000
+      },
+      {
+        "name": "Rochen (Ozeanischer Mantarochen)",
+        "val": 3000
+      },
+      {
+        "name": "Sattelrobbe",
+        "val": 130
+      },
+      {
+        "name": "Seehund",
+        "val": 130
+      },
+      {
+        "name": "Delphin (Tümmler)",
+        "val": 300
+      },
+      {
+        "name": "Nilkrokodil",
+        "val": 750
+      },
+      {
+        "name": "Riesenkalmar",
+        "val": 275
+      },
+      {
+        "name": "Seepferd",
+        "val": 0.01
+      }
+    ]
+  },
+  "speed_land": {
+    "prompt": "Welches Tier läuft schneller? (Höchstgeschwindigkeit)",
+    "unit": "km/h",
+    "items": [
+      {
+        "name": "Gepard",
+        "val": 120
+      },
+      {
+        "name": "Pronghorn-Antilope",
+        "val": 98
+      },
+      {
+        "name": "Löwe",
+        "val": 80
+      },
+      {
+        "name": "Thomson-Gazelle",
+        "val": 80
+      },
+      {
+        "name": "Wildhund (Afrika)",
+        "val": 72
+      },
+      {
+        "name": "Streifengnu",
+        "val": 80
+      },
+      {
+        "name": "Zebra",
+        "val": 64
+      },
+      {
+        "name": "Springbock",
+        "val": 90
+      },
+      {
+        "name": "Pferd (Vollblut)",
+        "val": 88
+      },
+      {
+        "name": "Greyhound",
+        "val": 72
+      },
+      {
+        "name": "Elefant",
+        "val": 40
+      },
+      {
+        "name": "Grizzlybär",
+        "val": 56
+      },
+      {
+        "name": "Polarbär",
+        "val": 40
+      },
+      {
+        "name": "Kaninchen",
+        "val": 56
+      },
+      {
+        "name": "Krokodil",
+        "val": 17
+      },
+      {
+        "name": "Nilpferd",
+        "val": 30
+      },
+      {
+        "name": "Nashorn",
+        "val": 50
+      },
+      {
+        "name": "Schimpanse",
+        "val": 40
+      },
+      {
+        "name": "Mensch (Usain Bolt)",
+        "val": 44.7
+      },
+      {
+        "name": "Opossum",
+        "val": 8
+      }
+    ]
+  },
+  "speed_luft": {
+    "prompt": "Welches Tier fliegt schneller? (Höchstgeschwindigkeit)",
+    "unit": "km/h",
+    "items": [
+      {
+        "name": "Wanderfalke (Sturzflug)",
+        "val": 389
+      },
+      {
+        "name": "Mauersegler",
+        "val": 169
+      },
+      {
+        "name": "Weißkehl-Spint",
+        "val": 170
+      },
+      {
+        "name": "Fregattvogel",
+        "val": 153
+      },
+      {
+        "name": "Sakerfalke",
+        "val": 240
+      },
+      {
+        "name": "Taube (Renntaube)",
+        "val": 150
+      },
+      {
+        "name": "Weißkopfseeadler",
+        "val": 160
+      },
+      {
+        "name": "Kolibri (Anna)",
+        "val": 98
+      },
+      {
+        "name": "Sperber",
+        "val": 50
+      },
+      {
+        "name": "Schwalbe",
+        "val": 120
+      },
+      {
+        "name": "Albatros (Wind)",
+        "val": 130
+      },
+      {
+        "name": "Bekassine",
+        "val": 64
+      },
+      {
+        "name": "Drachen (Segelflug)",
+        "val": 32
+      },
+      {
+        "name": "Graugans",
+        "val": 90
+      },
+      {
+        "name": "Storch",
+        "val": 55
+      },
+      {
+        "name": "Hornisse",
+        "val": 25
+      },
+      {
+        "name": "Libelle",
+        "val": 54
+      },
+      {
+        "name": "Biene",
+        "val": 29
+      },
+      {
+        "name": "Hausfliege",
+        "val": 8
+      },
+      {
+        "name": "Schmetterling (Monarch)",
+        "val": 30
+      }
+    ]
+  },
+  "speed_wasser": {
+    "prompt": "Welches Tier schwimmt schneller? (Höchstgeschwindigkeit)",
+    "unit": "km/h",
+    "items": [
+      {
+        "name": "Fächerfisch (Sailfish)",
+        "val": 110
+      },
+      {
+        "name": "Schwarzer Marlin",
+        "val": 80
+      },
+      {
+        "name": "Gelbflossen-Thunfisch",
+        "val": 74
+      },
+      {
+        "name": "Blauflossen-Thunfisch",
+        "val": 70
+      },
+      {
+        "name": "Wahoo",
+        "val": 96
+      },
+      {
+        "name": "Weißer Hai",
+        "val": 40
+      },
+      {
+        "name": "Schwertfisch",
+        "val": 97
+      },
+      {
+        "name": "Orca",
+        "val": 55
+      },
+      {
+        "name": "Mako-Hai",
+        "val": 70
+      },
+      {
+        "name": "Delphin (Gemeiner)",
+        "val": 60
+      },
+      {
+        "name": "Seelöwe",
+        "val": 35
+      },
+      {
+        "name": "Buckelwal",
+        "val": 27
+      },
+      {
+        "name": "Leatherback-Schildkröte",
+        "val": 35
+      },
+      {
+        "name": "Tintenfisch",
+        "val": 40
+      },
+      {
+        "name": "Humboldt-Pinguin",
+        "val": 36
+      },
+      {
+        "name": "Kaiserpinguin",
+        "val": 27
+      },
+      {
+        "name": "Europäischer Otter",
+        "val": 12
+      },
+      {
+        "name": "Nilpferd (Wasser)",
+        "val": 8
+      },
+      {
+        "name": "Seehund",
+        "val": 35
+      },
+      {
+        "name": "Seepferdchen",
+        "val": 0.0015
+      }
+    ]
+  },
+  "lebenserwartung": {
+    "prompt": "Welches Tier wird älter? (Maximales Lebensalter)",
+    "unit": "Jahre",
+    "items": [
+      {
+        "name": "Grönlandhai",
+        "val": 400
+      },
+      {
+        "name": "Aldabra-Riesenschildkröte",
+        "val": 255
+      },
+      {
+        "name": "Afrikanischer Elefant",
+        "val": 70
+      },
+      {
+        "name": "Blauwal",
+        "val": 80
+      },
+      {
+        "name": "Schimpanse (Gefangenschaft)",
+        "val": 60
+      },
+      {
+        "name": "Ara (Hyazinth-Ara)",
+        "val": 60
+      },
+      {
+        "name": "Mensch (global Durchschnitt)",
+        "val": 72
+      },
+      {
+        "name": "Grizzlybär",
+        "val": 30
+      },
+      {
+        "name": "Löwe",
+        "val": 20
+      },
+      {
+        "name": "Leopard",
+        "val": 23
+      },
+      {
+        "name": "Hund (Labrador)",
+        "val": 13
+      },
+      {
+        "name": "Hauskatze",
+        "val": 20
+      },
+      {
+        "name": "Wellensittich",
+        "val": 15
+      },
+      {
+        "name": "Goldfisch (Rekord)",
+        "val": 45
+      },
+      {
+        "name": "Flamingo",
+        "val": 44
+      },
+      {
+        "name": "Rotkehlchen",
+        "val": 13
+      },
+      {
+        "name": "Ameise (Königin)",
+        "val": 30
+      },
+      {
+        "name": "Eintagsfliege (adult)",
+        "val": 0.003
+      },
+      {
+        "name": "Wanderratte",
+        "val": 3
+      },
+      {
+        "name": "Hausmaus",
+        "val": 2
+      }
+    ]
+  },
+  "traechtigkeit": {
+    "prompt": "Welches Tier trägt länger? (Trächtigkeitsdauer in Tagen)",
+    "unit": "Tage",
+    "items": [
+      {
+        "name": "Afrikanischer Elefant",
+        "val": 660
+      },
+      {
+        "name": "Breitmaulnashorn",
+        "val": 490
+      },
+      {
+        "name": "Giraffe",
+        "val": 460
+      },
+      {
+        "name": "Walross",
+        "val": 480
+      },
+      {
+        "name": "Nilpferd",
+        "val": 240
+      },
+      {
+        "name": "Gorilla",
+        "val": 257
+      },
+      {
+        "name": "Schimpanse",
+        "val": 230
+      },
+      {
+        "name": "Pferd",
+        "val": 340
+      },
+      {
+        "name": "Esel",
+        "val": 365
+      },
+      {
+        "name": "Kuh",
+        "val": 283
+      },
+      {
+        "name": "Löwe",
+        "val": 110
+      },
+      {
+        "name": "Tiger",
+        "val": 104
+      },
+      {
+        "name": "Gepard",
+        "val": 92
+      },
+      {
+        "name": "Hund",
+        "val": 63
+      },
+      {
+        "name": "Katze",
+        "val": 65
+      },
+      {
+        "name": "Kaninchen",
+        "val": 31
+      },
+      {
+        "name": "Goldhamster",
+        "val": 16
+      },
+      {
+        "name": "Hausmaus",
+        "val": 20
+      },
+      {
+        "name": "Opossum (Virginia)",
+        "val": 13
+      },
+      {
+        "name": "Beutelratte (Känguru-Rattenähnlich)",
+        "val": 22
+      }
+    ]
+  },
+  "wurf": {
+    "prompt": "Welches Tier hat mehr Nachkommen pro Zyklus? (Maximum)",
+    "unit": "Junge",
+    "items": [
+      {
+        "name": "Tenrek (Haarschwanztenrek)",
+        "val": 32
+      },
+      {
+        "name": "Hauschwein",
+        "val": 22
+      },
+      {
+        "name": "Virginia-Opossum",
+        "val": 20
+      },
+      {
+        "name": "Europäischer Igel",
+        "val": 7
+      },
+      {
+        "name": "Europäischer Feldhase",
+        "val": 6
+      },
+      {
+        "name": "Kaninchen",
+        "val": 14
+      },
+      {
+        "name": "Hund (Große Rassen)",
+        "val": 12
+      },
+      {
+        "name": "Katze",
+        "val": 8
+      },
+      {
+        "name": "Hausratte",
+        "val": 14
+      },
+      {
+        "name": "Hausmaus",
+        "val": 10
+      },
+      {
+        "name": "Löwe",
+        "val": 6
+      },
+      {
+        "name": "Gepard",
+        "val": 8
+      },
+      {
+        "name": "Gorilla",
+        "val": 1
+      },
+      {
+        "name": "Elefant",
+        "val": 1
+      },
+      {
+        "name": "Pinguin (Kaiserpinguin)",
+        "val": 1
+      },
+      {
+        "name": "Wellensittich",
+        "val": 6
+      },
+      {
+        "name": "Fleckhyäne",
+        "val": 4
+      },
+      {
+        "name": "Wolf",
+        "val": 8
+      },
+      {
+        "name": "Dachs",
+        "val": 5
+      },
+      {
+        "name": "Polarfuchs",
+        "val": 14
+      }
+    ]
+  },
+  "gift": {
+    "prompt": "Welches Tier ist giftiger? (Toxizitätsscore — höher = giftiger)",
+    "unit": "Pkt",
+    "items": [
+      {
+        "name": "Inland Taipan (Australien)",
+        "val": 59000
+      },
+      {
+        "name": "Schwarze Mamba",
+        "val": 3300
+      },
+      {
+        "name": "Königskobra",
+        "val": 1250
+      },
+      {
+        "name": "Blaugeringelter Oktopus",
+        "val": 8330
+      },
+      {
+        "name": "Würfelqualle",
+        "val": 10000
+      },
+      {
+        "name": "Marmorierter Kegelschnecke",
+        "val": 4500
+      },
+      {
+        "name": "Tropischer Steinfisch",
+        "val": 1700
+      },
+      {
+        "name": "Goldener Giftfrosch",
+        "val": 500000
+      },
+      {
+        "name": "Komodo-Waran (Bakterien/Gift)",
+        "val": 200
+      },
+      {
+        "name": "Gabunviper",
+        "val": 120
+      },
+      {
+        "name": "Braune Einsiedlerspinne",
+        "val": 660
+      },
+      {
+        "name": "Schwarze Witwe",
+        "val": 1300
+      },
+      {
+        "name": "Skorpion (Deathstalker)",
+        "val": 5000
+      },
+      {
+        "name": "Europäische Kreuzotter",
+        "val": 33
+      },
+      {
+        "name": "Gila-Krustenechse",
+        "val": 100
+      },
+      {
+        "name": "Asiatische Riesenhornis",
+        "val": 25
+      },
+      {
+        "name": "Honigbiene",
+        "val": 12
+      },
+      {
+        "name": "Wespe",
+        "val": 5
+      },
+      {
+        "name": "Feuerameise",
+        "val": 2
+      },
+      {
+        "name": "Korallenotter (USA)",
+        "val": 400
+      }
+    ]
+  },
+  "population": {
+    "prompt": "Von welchem Tier gibt es mehr Wildtiere? (IUCN-Schätzung)",
+    "unit": "Ind.",
+    "items": [
+      {
+        "name": "Afrikanische Spitzmaus",
+        "val": 1000000000
+      },
+      {
+        "name": "Wanderratte",
+        "val": 7000000000
+      },
+      {
+        "name": "Haushuhn (Wildform Bankivahuhn)",
+        "val": 500000000
+      },
+      {
+        "name": "Rotfuchs",
+        "val": 150000000
+      },
+      {
+        "name": "Großes Streifengnu",
+        "val": 1300000
+      },
+      {
+        "name": "Afrikanischer Elefant",
+        "val": 415000
+      },
+      {
+        "name": "Afrikanischer Löwe",
+        "val": 20000
+      },
+      {
+        "name": "Tiger (alle Unterarten)",
+        "val": 4500
+      },
+      {
+        "name": "Amur-Leopard",
+        "val": 100
+      },
+      {
+        "name": "Java-Nashorn",
+        "val": 75
+      },
+      {
+        "name": "Spix-Ara",
+        "val": 200
+      },
+      {
+        "name": "Sumatra-Orang-Utan",
+        "val": 7500
+      },
+      {
+        "name": "Berggorilla",
+        "val": 1063
+      },
+      {
+        "name": "Schnabeltier",
+        "val": 300000
+      },
+      {
+        "name": "Schneeleopard",
+        "val": 4000
+      },
+      {
+        "name": "Blauwal",
+        "val": 10000
+      },
+      {
+        "name": "Delfin (Tümmler, global)",
+        "val": 600000
+      },
+      {
+        "name": "Weißkopfseeadler",
+        "val": 70000
+      },
+      {
+        "name": "Weißer Hai",
+        "val": 3500
+      },
+      {
+        "name": "Eisbär",
+        "val": 26000
+      }
+    ]
+  },
+  "schlaf": {
+    "prompt": "Welches Tier schläft länger? (Stunden pro Tag, Durchschnitt)",
+    "unit": "Std/Tag",
+    "items": [
+      {
+        "name": "Koala",
+        "val": 22
+      },
+      {
+        "name": "Faultier (Dreizehen)",
+        "val": 20
+      },
+      {
+        "name": "Braune Fledermaus",
+        "val": 19.9
+      },
+      {
+        "name": "Opossum",
+        "val": 18
+      },
+      {
+        "name": "Löwe",
+        "val": 16
+      },
+      {
+        "name": "Katze",
+        "val": 15
+      },
+      {
+        "name": "Hund",
+        "val": 12
+      },
+      {
+        "name": "Schimpanse",
+        "val": 11
+      },
+      {
+        "name": "Hamster",
+        "val": 14
+      },
+      {
+        "name": "Nasenbär",
+        "val": 11
+      },
+      {
+        "name": "Boa constrictor",
+        "val": 16
+      },
+      {
+        "name": "Afrikanischer Elefant",
+        "val": 2
+      },
+      {
+        "name": "Pferd",
+        "val": 3
+      },
+      {
+        "name": "Kuh",
+        "val": 4
+      },
+      {
+        "name": "Giraffe",
+        "val": 2
+      },
+      {
+        "name": "Schaf",
+        "val": 4
+      },
+      {
+        "name": "Gorilla",
+        "val": 12
+      },
+      {
+        "name": "Delfin (Tümmler)",
+        "val": 8
+      },
+      {
+        "name": "Mensch (Erwachsener)",
+        "val": 8
+      },
+      {
+        "name": "Wanderamsel",
+        "val": 4
+      }
+    ]
+  },
+  "haustier_dichte": {
+    "prompt": "Welches Land hat mehr Rinder je 100 Einwohner?",
+    "unit": "Rinder/100 Einw.",
+    "items": [
+      {
+        "name": "Uruguay",
+        "val": 337
+      },
+      {
+        "name": "Australien",
+        "val": 189
+      },
+      {
+        "name": "Argentinien",
+        "val": 151
+      },
+      {
+        "name": "Neuseeland",
+        "val": 167
+      },
+      {
+        "name": "Paraguay",
+        "val": 189
+      },
+      {
+        "name": "Brasilien",
+        "val": 123
+      },
+      {
+        "name": "Botswana",
+        "val": 164
+      },
+      {
+        "name": "Mongolei",
+        "val": 145
+      },
+      {
+        "name": "Nicaragua",
+        "val": 98
+      },
+      {
+        "name": "Äthiopien",
+        "val": 45
+      },
+      {
+        "name": "Kanada",
+        "val": 39
+      },
+      {
+        "name": "USA",
+        "val": 30
+      },
+      {
+        "name": "Indien",
+        "val": 29
+      },
+      {
+        "name": "Frankreich",
+        "val": 18
+      },
+      {
+        "name": "Deutschland",
+        "val": 16
+      },
+      {
+        "name": "Russland",
+        "val": 15
+      },
+      {
+        "name": "Mexiko",
+        "val": 36
+      },
+      {
+        "name": "Kenia",
+        "val": 41
+      },
+      {
+        "name": "Japan",
+        "val": 3
+      },
+      {
+        "name": "Südkorea",
+        "val": 2
+      },
+      {
+        "name": "Bolivien",
+        "val": 28
+      },
+      {
+        "name": "Ecuador",
+        "val": 19
+      },
+      {
+        "name": "Kolumbien",
+        "val": 14
+      },
+      {
+        "name": "Venezuela",
+        "val": 18
+      },
+      {
+        "name": "Sambia",
+        "val": 17
+      },
+      {
+        "name": "Uganda",
+        "val": 20
+      },
+      {
+        "name": "Tansania",
+        "val": 23
+      },
+      {
+        "name": "Simbabwe",
+        "val": 30
+      },
+      {
+        "name": "Neuseeland (Südinsel)",
+        "val": 156
+      },
+      {
+        "name": "Island",
+        "val": 64
+      }
+    ]
+  },
+  "pferde_stockmass": {
+    "prompt": "Welches Pferd hat ein größeres Stockmaß?",
+    "unit": "cm",
+    "items": [
+      {
+        "name": "Falabella",
+        "val": 80
+      },
+      {
+        "name": "Shetlandpony",
+        "val": 100
+      },
+      {
+        "name": "Welsh Pony",
+        "val": 122
+      },
+      {
+        "name": "Connemara-Pony",
+        "val": 148
+      },
+      {
+        "name": "Islandpferd",
+        "val": 140
+      },
+      {
+        "name": "Haflinger",
+        "val": 148
+      },
+      {
+        "name": "Appaloosa",
+        "val": 155
+      },
+      {
+        "name": "Quarter Horse",
+        "val": 157
+      },
+      {
+        "name": "Andalusier",
+        "val": 160
+      },
+      {
+        "name": "Hannoveraner",
+        "val": 165
+      },
+      {
+        "name": "Trakehner",
+        "val": 165
+      },
+      {
+        "name": "Vollblutaraber",
+        "val": 160
+      },
+      {
+        "name": "Thoroughbred",
+        "val": 163
+      },
+      {
+        "name": "Friese",
+        "val": 165
+      },
+      {
+        "name": "Paint Horse",
+        "val": 157
+      },
+      {
+        "name": "Camargue-Pferd",
+        "val": 148
+      },
+      {
+        "name": "Mustang",
+        "val": 150
+      },
+      {
+        "name": "Lipizzaner",
+        "val": 158
+      },
+      {
+        "name": "Clydesdale",
+        "val": 175
+      },
+      {
+        "name": "Shire",
+        "val": 185
+      }
+    ]
+  }
+}
