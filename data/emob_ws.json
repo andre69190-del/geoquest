@@ -1,0 +1,72 @@
+{
+  "schnellladestation": {
+    "word": "SCHNELLLADESTATION",
+    "validWords": {
+      "de": ["schnell","laden","station","lade","stationen","ladestation","stations","ladet","schnelle","schneller","schnelles","las","salt","slot","tons","nets","tones","tans","oats","notes","nation","national","lation","stahl","steal","lanes","slant","laden","lande","lande","loton","nails","tales","nella","noels","lonas","tonas","nella","laten","allen","antels","telos","lotus","tales","stale","least","loans","stone","tonals","senato","elton","noel","alone","oaten","lance","delta","lands","atone","lento","tanto","dales","etnas"],
+      "en": ["station","load","fast","tons","nets","notes","stone","alone","lance","tales","stale","least","loans","lots","last","late","lace","lane","sand","salt","slot","tall","tell","tonal","stone","lotion","nation","allen","lance","delta","lands","atone","lento","toast","steal","noel","lone","tones","oaten","latent","natal","stead","stole","stall","natal"]
+    }
+  },
+  "rekuperation": {
+    "word": "REKUPERATION",
+    "validWords": {
+      "de": ["rekuperation","kura","kuren","oper","opera","rate","raupe","rupe","tier","tiere","tier","pore","park","perk","apron","prion","unter","route","retur","reno","urea","euro","roque","atop","toper","repot","poker","kreta","krater","opera","porin","netto","torque","trope","toner","noter","raute","rente","kurte","oktan"],
+      "en": ["recuperation","ration","ratio","operation","opera","rate","pore","urea","euro","roque","tone","note","toner","repot","poker","toper","atop","krone","oaken","rune","prune","ante","rake","patron","torque","trope","prance","croak","crane","nature","neuro","trance","urate","oater","outer","rupee","troupe","opaque"]
+    }
+  },
+  "reichweitenangst": {
+    "word": "REICHWEITENANGST",
+    "validWords": {
+      "de": ["reichweite","angst","reich","weite","reite","richte","nicht","nahe","nacht","gneis","trage","stein","siege","singe","tiger","tiger","wicht","giebe","giese","stieg","trieg","treig","reise","riese","niest","treis","giste","haist","naist","gaste","gehst","resig","tiger","treis","gieste","weist","weise","keine","keine","erste","higte","neige","seigt","regte","siege","stieg","recht","nicht","recht"],
+      "en": ["range","anxiety","weight","height","night","sight","right","eight","thigh","tenth","reign","witch","stein","grain","grist","tithe","night","tiger","stain","reign","ither","giant","thing","tinge","wight","stein","stain","girth","witch","slight","snare","stair","agile","inert","giante","write","stein","stinge"]
+    }
+  },
+  "fahrassistenzsystem": {
+    "word": "FAHRASSISTENZSYSTEM",
+    "validWords": {
+      "de": ["fahrassistenz","system","fahren","assistent","assistenz","syst","assisi","fahrt","fahrst","fahrt","system","sisten","steht","steif","stets","seist","meist","mist","fahre","nahe","nahen","zahn","zahne","isters","sisters","asters","messy","mitsy","fetish","tasty","steams","manist","insist","fists","nasty","tasty","hints","steamy","theism","stymie","stein","satin","heist"],
+      "en": ["system","assist","driver","safety","stamen","theism","stein","stain","satin","heist","teams","seams","steam","tames","mates","names","aster","nasty","tasty","tinsy","mites","items","smite","stime","mists","fists","dents","fends","hints","tends","sends","nets","sets","hens","hems","tens","yens","fens","dens","gens","yens"]
+    }
+  },
+  "bordnetzspannung": {
+    "word": "BORDNETZSPANNUNG",
+    "validWords": {
+      "de": ["bordnetz","spannung","bord","netz","spann","netze","spanne","bonne","bonnet","bonds","tongs","tongs","burns","dunno","dung","sung","snob","bond","bone","born","bron","bong","bung","rung","orbs","snub","prong","drone","prone","bonus","gonzo","bunds","bords","grubs","burps","probs","turds","spurn","spug","snug","snob","gust","runs","buns","guns","puns","pubs","grob"],
+      "en": ["voltage","bonnet","bond","bone","born","bong","bung","rung","prong","drone","prone","bonus","snob","gust","runs","buns","guns","puns","pubs","orbs","snub","dunno","burns","tongs","burden","burdon","grubs","burps","turds","spurn","snug","pounds","sounds","round","bound","wound","found","ground","mound","hound","round"]
+    }
+  },
+  "elektroantrieb": {
+    "word": "ELEKTROANTRIEB",
+    "validWords": {
+      "de": ["elektro","antrieb","elektrik","treibe","triebe","treibt","treib","reibe","leiter","reikel","treibel","blattern","kreisel","alter","beitre","troike","troikel","tilek","biotrek","bekirt","elke","eltern","elter","alten","alter","altert","altere","liert","liret","lieter","birlet","lieket","briekt","brielt","beitr","bilet","liter","litre","triel","trikel","toile","litre","trike","tribe","elite","krite","ikote","koel","loe","lei","riet","let","el","elk","koi","olk"],
+      "en": ["electric","drive","tribe","tribe","tribe","elite","litre","liter","trike","triel","tilek","toile","alter","alternative","literate","iterate","tribute","orbit","orbit","bite","bolt","belt","bore","bone","bole","bile","birel","kite","tile","rile","mile","bile","rite","rite","obiter","elke","elk","ire","ore","lore","tore","bore","irk","trek","trek"]
+    }
+  },
+  "wechselstromladen": {
+    "word": "WECHSELSTROMLADEN",
+    "validWords": {
+      "de": ["wechsel","strom","laden","wechseln","laden","wechsle","wandel","rodel","schmal","ormal","rolen","drole","dolen","words","dales","wales","molade","coaled","moaned","loaned","oanted","waned","caned","moles","roles","soles","holes","toles","soles","notes","doles","codes","modes","nodes","rode","made","wade","cade","mode","node","role","sole","mole","dole","hole","role","lane","name","same","came","tame","fame","game","dame","lame","name"],
+      "en": ["alternating","wechsel","strom","loads","modes","nodes","roles","soles","moles","doles","holes","toles","coles","codes","rode","made","wade","mode","node","role","sole","mole","dole","hole","lane","name","same","came","tame","fame","game","dame","lame","name","canal","scrawl","clown","sworn","shore","clone","stone","alone","dance","lance","wands","hands","lands","sands","bands"]
+    }
+  },
+  "gleichstromladen": {
+    "word": "GLEICHSTROMLADEN",
+    "validWords": {
+      "de": ["gleichstrom","laden","gleich","strom","gleichung","gleichladen","ladet","strahle","drole","glied","gliede","gleis","leist","liege","siege","siegel","schleim","gielde","giels","gleis","gleichs","liege","loder","lodig","drole","molden","olden","oldie","golem","moleg","gloam","ogled","glode","ogled","modal","goals","moans","loads","regal","legal","legal","ogled","aloe","gale","sale","male","tale","dale","lace","mace","race","pace","dace","lame","game","same","came","dame","time","lime","mine","dime","grime","crime","rhyme"],
+      "en": ["direct","charging","loads","goals","moans","regal","legal","ogled","aloe","gale","sale","male","tale","dale","lace","mace","race","pace","dace","lame","game","same","came","dame","oldie","glide","slide","guide","guile","glide","golem","modal","chord","chore","shore","score","store","gorse","morse","horse","lore","core","bore","more","gore","sore","tore","fore","lode","mode","code","ode","ore","doe","roe","hoe","toe","foe","joe"]
+    }
+  },
+  "batteriemanagement": {
+    "word": "BATTERIEMANAGEMENT",
+    "validWords": {
+      "de": ["batterie","management","manager","mana","agent","batterie","rente","rennt","terre","terrine","tireme","batten","ratten","matter","natter","matte","nette","bette","ratte","rente","bater","mater","tante","taten","banat","baten","tenner","entert","mieter","miete","netter","netter","retten","rette","reitet","bietet","biete","bietet","rennet","betrat","betrage","betrag","traget","manege","manga","magen","magnet","namen","batan","baten","batten","beaten","metern","metern","metern"],
+      "en": ["battery","management","manage","manager","agent","name","game","tame","team","mean","gate","meta","mana","rent","tent","rant","ante","mate","rate","bane","bare","mane","name","beat","meat","mare","bare","care","dare","earn","near","tear","fear","gear","hear","lear","pear","rear","sear","wear","year","bear","dear","abet","beet","beer","deer","feet","feel","reel","teem","seem","teen","been","keen","seen"]
+    }
+  },
+  "bidirektionalladen": {
+    "word": "BIDIREKTIONALLADEN",
+    "validWords": {
+      "de": ["bidirektional","laden","direkt","direk","tional","ional","laden","ladet","laden","lande","ladet","lanke","blank","bland","blend","blend","bride","trial","train","drain","trail","dental","nadir","nadie","tidier","tidier","railed","nailed","bridal","bridal","detail","detail","detail","detail","retail","retail","retail","retail","retinal","retinal","retinal","orbital","orbital","dirndl","dirndl","birdie","birdie","birdie","dartle","dartle","kindle","kindle","kindle","oiled","tailed","railed","bailed","failed","hailed","jailed","mailed","nailed","sailed","wailed"],
+      "en": ["bidirectional","load","direct","direkt","trial","train","drain","trail","dental","nadir","railed","nailed","bridal","detail","retail","retinal","orbital","birdie","dirndl","dartle","tailed","bailed","failed","hailed","jailed","mailed","nailed","sailed","oiled","tiled","filed","viled","biled","riled","oiled","toiled","boiled","coiled","foiled","moiled","roiled","soiled","toiled","blind","bland","brand","braid","train","drain","brain","plain","blain","slain"]
+    }
+  }
+}

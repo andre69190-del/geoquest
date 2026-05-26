@@ -8,4 +8,4 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "FEAT: Phase 228 -- Das Botanik-Update (49 neue Pflanzenmodi). 12 Pin-Modi + 12 H/L-Modi + 14 Match-Modi + 9 WS-Modi + 4 Generatoren + 4 JSON-Datendateien (pflanzen_*.json). MODES: 299->347. Build: 1.711M chars. verify.py: 33/33 passed."
+git commit -m "FEAT: Phase 231 -- Archäologie & Verlorene Welten (60 neue Modi). 13 Pin-Modi + 12 H/L-Modi + 28 Match-Modi + 7 WS-Modi. Neue Kategorie: archaeologie. 4 JSON-Datendateien (archaeologie_*.json). MODES: 498->558. gen.py: 1.170M bytes. GeoQuest.html: 2.051M bytes. verify.py: 33/33 passed."
