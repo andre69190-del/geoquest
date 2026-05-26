@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FIX: Phase 226 — Karten-Zoom-Reset in lq() (Grand Canyon zeigte Australien), drawWorldMap Zoom-Handler nur im interaktiven Modus (Feedback-Animation ueberschrieb _mapZoom=null), Suche-Fix, HL-Deutsch, Sunrise-Fenster, Streak-Pill. Build: 1.451M chars."
+git commit -m "FEAT: Phase 227 Part 1 — Tiere & Natur Kategorie (21 Modi): 10 Pin-Modi (Endemische Arten, Big Five, Grosskatzen, Invasive Arten, Vogelzug, Haustiere-Ursprung, Nationaltiere, Primaten, Hai-Hotspots, Baeren) + 11 H/L-Modi (Gewicht Land/Meer, Speed Land/Luft/Wasser, Lebenserwartung, Traechtigkeit, Wurfgroesse, Giftigkeit, Population, Schlaf). genTiereHL mit La-Paz-Windowing + parseFloat. 200 Geo-Datenpunkte. Build: 1.481M chars."
 echo.
 echo Pushing to GitHub...
 git push origin main
