@@ -8,4 +8,8 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "FIX+FEAT: Phase 228-231 + Bugfixes + Polish WS + Refactoring. Tiere/Pflanzen in separate Kategorien aufgeteilt. Phase 229: Gastronomie (45 Modi). Phase 230: Tech & E-Mob (2 Kategorien, ~90 Modi). Phase 231: Archaeologie (60 Modi). BUGFIX: genUniversalPinQ fuer {prompt,items}-Format (6 Tiere-Modi hingen). Polish WS: 4680 polnische Woerter zu 54 WS-Eintraegen hinzugefuegt. Refactoring: 16 doppelte Generatoren durch 4 Factory-Funktionen ersetzt. MODES: 558->692. GeoQuest.html: 2.180M. verify.py: 53/53 passed."
+git commit -m "FIX+FEAT: Phase 228-231 + Bugfixes + Polish + Refactoring. Tiere/Pflanzen Split. Phase 229 Gastronomie. Phase 230 Tech+E-Mob. Phase 231 Archaeologie. BUGFIX: genUniversalPinQ {prompt,items}-Format. Polish WS: 4680 Woerter. Refactoring: 16 Generatoren -> 4 Factories. _CAT_ORDER dynamisch. verify.py Null-Bytes. MODES: 692. verify: 53/53."
+git push origin main
+echo.
+echo Done! Vercel will deploy in ~60 seconds.
+pause
