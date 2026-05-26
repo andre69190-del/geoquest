@@ -8,7 +8,7 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "REFACTOR: Phase 225 + Suggestions 1+2+3 — Data-Logic Separation + Patches System + Build Selftest. Phase 225: Extracted KULTUR_DATA+TIER_WS/HL/MATCH_DATA to data/*.json (118 KB out of gen.py). gen.py: 1.19MB -> 1.07MB. Suggestion 1: patches/ directory with PATCHES.md convention + run_patch.py runner (validate+patch+build+verify, auto-rollback on failure). Suggestion 2: JSON separation complete (Node.js round-trip validated). Suggestion 3: verify.py selftest (33 checks: JS syntax, data objects, MODES count, generators, anti-cheat, mojibake, JSON validity, _GQ_SALT). verify.py now hooked into unlock_and_push.bat as pre-push gate. Build: 1.640M chars."
+git commit -m "REFACTOR+DOCS: Phase 225-226 — JSON Separation + Patches System + Selftest + Architecture Handbook. Phase 225: Extracted KULTUR_DATA+TIER_WS/HL/MATCH_DATA to data/*.json (118 KB out of gen.py, 1.19MB->1.07MB). Suggestion 1: patches/ dir + PATCHES.md convention + run_patch.py (auto-backup, build, verify, rollback). Suggestion 3: verify.py (33 checks: JS syntax, data objects, MODES count, generators, anti-cheat, mojibake, _GQ_SALT) as pre-push gate in bat. Phase 226: ARCHITECTURE.md -- full system doc: build pipeline, 4 universal engines (Pin/HL/Match/WS), Zero-Bug-Workflow, S-object, Anti-Tamper, Anti-Cheat proxy, localStorage schema. Build: 1.640M chars."
 echo.
 echo Pushing to GitHub...
 git push origin main
