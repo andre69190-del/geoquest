@@ -6,7 +6,7 @@ if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock"
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock"
 echo.
 git add -A
-git commit -m "FEAT: Phase 227 Part 1 — Tiere & Natur Kategorie (21 Modi): 10 Pin-Modi (Endemische Arten, Big Five, Grosskatzen, Invasive Arten, Vogelzug, Haustiere-Ursprung, Nationaltiere, Primaten, Hai-Hotspots, Baeren) + 11 H/L-Modi (Gewicht Land/Meer, Speed Land/Luft/Wasser, Lebenserwartung, Traechtigkeit, Wurfgroesse, Giftigkeit, Population, Schlaf). genTiereHL mit La-Paz-Windowing + parseFloat. 200 Geo-Datenpunkte. Build: 1.481M chars."
+git commit -m "FEAT: Phase 227 Parts 1+2 — Tiere & Natur Kategorie (33 Modi): 10 Pin-Modi + 11 H/L-Modi + 12 Match-Modi (Faehrten, Architekten, Tarnung, Ernaehrungstypen, Symbiosen, Tauchtiefe, Mimikry, Metamorphose, Biolumineszenz, Anatomie, Tierlaute, Sinnesleistungen). genTiereHL (La-Paz-Windowing+parseFloat) + genTiereMatchQ (Cross-Cat-Distractors+fixedOpts). 200 Geo-Datenpunkte + 240 Match-Eintraege. Build: 1.505M chars."
 echo.
 echo Pushing to GitHub...
 git push origin main
