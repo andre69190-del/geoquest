@@ -8141,13 +8141,30 @@ function _mkHL(DATA){
   return function(key){
     var d=DATA[key];
     if(!d||!d.items||d.items.length<2)return null;
-    var len=d.items.length;
-    var W=Math.max(1,Math.floor(len*0.1));
-    var iA,iB;
-    do{iA=~~(rng()*len);iB=~~(rng()*len);}while(iA===iB||Math.abs(iA-iB)<W);
-    var a=d.items[iA],b=d.items[iB];
-    return{type:"hl",a:{name:a.name,val:a.val},b:{name:b.name,val:b.val},
-      unit:d.unit,prompt:d.prompt,higherWins:true};
+    var sorted=d.items.slice().sort(function(a,b){return parseFloat(a.val)-parseFloat(b.val);});
+    var len=sorted.length;
+    var tries=0;
+    while(tries++<40){
+      var ai=~~(rng()*len);
+      var W=Math.max(1,Math.floor(len*0.1));
+      var lo=Math.max(0,ai-W),hi=Math.min(len-1,ai+W);
+      var pool=[];
+      for(var i=lo;i<=hi;i++){if(i!==ai)pool.push(i);}
+      if(!pool.length)continue;
+      var bi=pool[~~(rng()*pool.length)];
+      var a=sorted[ai],b=sorted[bi];
+      var va=parseFloat(a.val),vb=parseFloat(b.val);
+      if(va===vb)continue;
+      var span=parseFloat(sorted[len-1].val)-parseFloat(sorted[0].val);
+      if(span>0&&Math.abs(va-vb)<span*0.02)continue;
+      var higher=va>vb?a:b;
+      var unit=d.unit||"";
+      var meta=a.name+": "+a.val+(unit?" "+unit:"")+" \u00b7 "+b.name+": "+b.val+(unit?" "+unit:"");
+      var _lid="mhl_"+key+"_"+Math.min(ai,bi)+"_"+Math.max(ai,bi);
+      return{type:"beta_hl",prompt:d.prompt||"Welches ist mehr?",subj:"",
+        opts:[a.name,b.name],ans:higher.name,meta:meta,lid:_lid,cc:"de"};
+    }
+    return null;
   };
 }
 function _mkMatchQ(DATA){
