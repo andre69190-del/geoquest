@@ -8185,7 +8185,7 @@ function _mkMatchQ(DATA){
       pool=pool.sort(function(){return rng()-0.5;}).slice(0,3);
       opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
     }
-    return{type:"uk_match",subj:correct.n,correct:correct.c,opts:opts,
+    return{type:"uk_match",subj:correct.n,ans:correct.c,opts:opts,
       prompt:d.prompt||"Ordne richtig zu:"};
   };
 }
