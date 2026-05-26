@@ -3027,7 +3027,9 @@ const MODE_CATS={
     "ws_tiere_schnabeltier","ws_tiere_gottesanbeterin","ws_tiere_komodowaran",
     "ws_tiere_korallenriff","ws_tiere_silberruecken","ws_tiere_wanderfalke",
     "ws_tiere_mauersegler","ws_tiere_baertierchen","ws_tiere_lederschildkroete",
-    "ws_tiere_pfeilgiftfrosch","uk_tiere_darwin_finken","uk_tiere_schutzgebiete","uk_tiere_zoos","uk_tiere_nutztier_rassen","uk_tiere_fossilien","uk_tiere_arktis_antarktis","uk_tiere_forscher_eponyme","uk_tiere_pelagial","uk_tiere_wuesten_spezialisten","uk_tiere_gift_hotspots","uk_tiere_migranten","hl_tiere_haustier_dichte","uk_pferde_rassen","uk_pferde_fachbegriffe","hl_pferde_stockmass","ws_pferde_fluesterer",
+    "ws_tiere_pfeilgiftfrosch","uk_tiere_darwin_finken","uk_tiere_schutzgebiete","uk_tiere_zoos","uk_tiere_nutztier_rassen","uk_tiere_fossilien","uk_tiere_arktis_antarktis","uk_tiere_forscher_eponyme","uk_tiere_pelagial","uk_tiere_wuesten_spezialisten","uk_tiere_gift_hotspots","uk_tiere_migranten","hl_tiere_haustier_dichte","uk_pferde_rassen","uk_pferde_fachbegriffe","hl_pferde_stockmass","ws_pferde_fluesterer"
+  ],cost:0},
+  pflanzen:{label:"Pflanzen & Flora",icon:"\u{1F33F}",modes:[
     "uk_pflanzen_nutzpflanzen","uk_pflanzen_einzelbaeume","uk_pflanzen_botanische_gaerten",
     "uk_pflanzen_tropenwald","uk_pflanzen_weinanbau","uk_pflanzen_heilpflanzen",
     "uk_pflanzen_mangroven","uk_pflanzen_kakao_ursprung","uk_pflanzen_reisanbau",
@@ -7916,7 +7918,7 @@ function genUniversalPinQ(cat){
   const modeObj=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat.replace(/_/g,""))||
     (typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat)||{};
   /* QA-Fix: tiere group — strip location hints from displayed subject to avoid spoilers */
-  const _isTiere=modeObj.group==="tiere";
+  const _isTiere=modeObj.group==="tiere"||modeObj.group==="pflanzen";
   const _displaySubj=_isTiere
     ?item.n.replace(/\s*\(.*?\)/g,"").replace(/\s*\u2192.*$/,"").trim()
     :item.n;
