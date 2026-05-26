@@ -1,0 +1,65 @@
+{
+  "trauerweide": {
+    "word": "TRAUERWEIDE",
+    "validWords": {
+      "de": ["weide","reue","treue","tier","treu","rate","ware","rute","wirt","weit","teer","erde","drei","reiter","weder","dauer","weiter","riet","traue","wider","dreier","adieu"],
+      "en": ["water","write","tired","wider","trade","wired","waiter","rated","tread","tried","adieu","rider","deter","aired","water","weir","tied","wire","read","dear","date","dare","aide","diet","dirt","ride","wait","ward","ware","tire"]
+    }
+  },
+  "rhododendron": {
+    "word": "RHODODENDRON",
+    "validWords": {
+      "de": ["horde","orden","rondo","donor","honor","nord","herd","horn","redo","roden","norden","drohend","hohn","rodeo"],
+      "en": ["horde","rondo","donor","honor","horn","drone","doner","nerd","heron","doer","node","dodo","done","rodeo","redo","hood","noon","door","noon","rhone","honor"]
+    }
+  },
+  "sonnenblume": {
+    "word": "SONNENBLUME",
+    "validWords": {
+      "de": ["blume","sonne","lumen","nomen","omen","blues","sonnen","semen","noble","neben","beule","molen","loben","lebens","melon","lune","bonus","oben"],
+      "en": ["lemon","blues","none","numb","mole","sole","bone","some","noble","bole","moles","bones","soles","ones","noel","lune","nuns","bens","omen","eons","snob","blouse","noble","lemon","lube","lobe","slum","neon"]
+    }
+  },
+  "pusteblume": {
+    "word": "PUSTEBLUME",
+    "validWords": {
+      "de": ["blume","lupe","pulse","lust","tube","blut","stube","beste","beule","lumpe","tupel","plume","stempel","pulte","meute","mutes","beutel","liest"],
+      "en": ["plume","pulse","lump","slump","stump","tubes","plumes","lumps","stumble","tumble","best","lust","smelt","spume","melt","pelt","stem","blest","belt","blues","betel","spelt","bumble","temple","upset","blest"]
+    }
+  },
+  "nachtschatten": {
+    "word": "NACHTSCHATTEN",
+    "validWords": {
+      "de": ["nacht","schatten","hatten","naht","taste","sache","nach","acht","schach","tante","hast","saat","chance","stach","tachet","nachts","tasten","anat","chant"],
+      "en": ["ants","chat","chats","chant","chance","hatch","snatch","tenth","scan","cane","acne","catch","attach","nastier","antics","saints","chants","satins","trains","ant","tan","has","cat","scat","cant","than","ache","each","teach","beach"]
+    }
+  },
+  "vergissmeinnicht": {
+    "word": "VERGISSMEINNICHT",
+    "validWords": {
+      "de": ["vergiss","schein","messing","vermiss","gericht","hinein","gehirn","tennis","minne","siegen","gehen","sehen","gemisch","reichen","singt","stirn","regen","siege","stein","greis"],
+      "en": ["grime","minster","crisis","mining","miser","risen","resin","sinister","regime","invert","signet","richest","ingest","stein","grins","crime","might","nights","siren","shine","things","sting","tiger","mire","mine","grin","sing","trim","gist","ring","sign"]
+    }
+  },
+  "kaffeebohne": {
+    "word": "KAFFEEBOHNE",
+    "validWords": {
+      "de": ["bohne","kaffee","hafen","ofen","fahne","kaffe","bahn","ahne","knabe","haken","fehn","hefe","nahe","oben","kaftan"],
+      "en": ["bone","bean","bake","fake","bane","fane","knob","hone","honk","bonk","oaken","nab","beehive","hobnob","fohn","fake","hake","beak","keen","okeh"]
+    }
+  },
+  "weihnachtsstern": {
+    "word": "WEIHNACHTSSTERN",
+    "validWords": {
+      "de": ["weihnacht","stern","naht","tante","hast","schein","heran","stein","rente","sehen","sterne","nester","acht","sintern","trans","stach","rast","haste","wacht","nicht"],
+      "en": ["winter","hearts","chant","stein","stern","haste","waste","trance","stance","nastier","antics","saints","chants","satins","trains","inert","insert","wraith","earth","hearts","ants","chat","hire","wine","nine","thine","shine","whine","swine","entire"]
+    }
+  },
+  "ginkgobaum": {
+    "word": "GINKGOBAUM",
+    "validWords": {
+      "de": ["baum","gang","mango","bank","bingo","kaum","knabe","main","gain","ombu"],
+      "en": ["bingo","mango","bank","gunk","knob","king","bona","main","gain","numb","bunk","monk","mink","gamin","kami","ambo","oak","nab","nag","bag","ban","gin","ago","bog","mug","gun","gum","bug","bun","mob","mob"]
+    }
+  }
+}

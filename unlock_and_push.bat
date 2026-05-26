@@ -8,10 +8,4 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "REFACTOR+DOCS: Phase 225-226 — JSON Separation + Patches System + Selftest + Architecture Handbook. Phase 225: Extracted KULTUR_DATA+TIER_WS/HL/MATCH_DATA to data/*.json (118 KB out of gen.py, 1.19MB->1.07MB). Suggestion 1: patches/ dir + PATCHES.md convention + run_patch.py (auto-backup, build, verify, rollback). Suggestion 3: verify.py (33 checks: JS syntax, data objects, MODES count, generators, anti-cheat, mojibake, _GQ_SALT) as pre-push gate in bat. Phase 226: ARCHITECTURE.md -- full system doc: build pipeline, 4 universal engines (Pin/HL/Match/WS), Zero-Bug-Workflow, S-object, Anti-Tamper, Anti-Cheat proxy, localStorage schema. Build: 1.640M chars."
-echo.
-echo Pushing to GitHub...
-git push origin main
-echo.
-echo Done! Check Vercel for deployment.
-pause
+git commit -m "FEAT: Phase 228 -- Das Botanik-Update (49 neue Pflanzenmodi). 12 Pin-Modi + 12 H/L-Modi + 14 Match-Modi + 9 WS-Modi + 4 Generatoren + 4 JSON-Datendateien (pflanzen_*.json). MODES: 299->347. Build: 1.711M chars. verify.py: 33/33 passed."
