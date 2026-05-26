@@ -12809,7 +12809,7 @@ function closeGameInfo(){
   if(el)el.remove();
 }
 function renderHomeTab(){
-  const _CAT_ORDER=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere"];
+  const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","emobilitaet","archaeologie"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));return fixed.concat(extra);})();
 
   // Build accordion sections — Pure Geo auto-open, others closed
   const _favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
