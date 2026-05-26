@@ -8905,7 +8905,12 @@ function genUniversalPinQ(cat){
   const item=data[~~(rng()*data.length)];
   const modeObj=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat.replace(/_/g,""))||
     (typeof MODES!=="undefined"?MODES:[]).find(m=>m.id==="uk_"+cat)||{};
-  return{type:"uk_pin",cat,prompt:modeObj.prompt||t("q_uk_pin"),subj:item.n,
+  /* QA-Fix: tiere group — strip location hints from displayed subject to avoid spoilers */
+  const _isTiere=modeObj.group==="tiere";
+  const _displaySubj=_isTiere
+    ?item.n.replace(/\s*\(.*?\)/g,"").replace(/\s*\u2192.*$/,"").trim()
+    :item.n;
+  return{type:"uk_pin",cat,prompt:modeObj.prompt||t("q_uk_pin"),subj:_displaySubj,
     targetLat:item.lat,targetLng:item.lng,ans:item.n,
     lid:"ukp_"+cat+"_"+item.n.replace(/\s+/g,"_"),cc:null};
 }
