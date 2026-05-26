@@ -9709,8 +9709,9 @@ function drawAirportPinMap(readOnly){
       .attr("fill","#10b981").attr("stroke","#fff").attr("stroke-width",2)
       .style("filter","drop-shadow(0 2px 4px rgba(0,0,0,.5))");
     g.append("text").attr("x",cx).attr("y",cy-13)
-      .attr("text-anchor","middle").attr("font-size","10px").attr("fill","#10b981")
-      .attr("font-weight","900").text(S.q.ans);
+      .attr("text-anchor","middle").attr("font-size","9px").attr("fill","#10b981")
+      .attr("font-weight","700")
+      .text((S.q.ans||"").length>22?(S.q.ans||"").slice(0,20)+"…":S.q.ans||"");
   }
   /* Click handler: place user pin */
   if(!readOnly){
@@ -10695,7 +10696,7 @@ if(mode==="slf"&&S.ph==="playing"){
     const apPts=S.airportPinPts||0;
     const apFb=sel===null?""
       :S.ok?`<div class="fb ok">\u2713 ${apDist} km entfernt · +${apPts} Pkt.</div>`
-      :`<div class="fb ng">\u2717 ${apDist} km entfernt · 0 Pkt.</div>`;
+      :`<div class="fb ng">\u2717 ${apDist} km entfernt${apPts>0?" · +"+apPts+" Pkt.":""}</div>`;
     app.innerHTML=`<div class="scr map-scr">
       <div class="hud">
         <div style="display:flex;gap:8px;align-items:center">
