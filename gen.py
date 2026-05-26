@@ -8098,6 +8098,7 @@ function nextRound(){
 }
 function lq(){
   clearInterval(tIv);
+  window._mapZoom=null; /* Phase 226: reset map zoom on every new question */
   if(\!S.queueExtra)S.queueExtra=[];
   if(\!S.askedLids)S.askedLids=new Set();
   const _mCfg=(typeof GAME_MODES!=="undefined"?GAME_MODES:[]).find(m=>m.id===S.mode);const dur=S.diff==="survival"?8:(_mCfg&&_mCfg.time)||12;
@@ -9847,15 +9848,13 @@ function drawWorldMap(targetName,sel,ok,preHL,readOnly){
   const zoom=d3.zoom().scaleExtent([1,10])
     .translateExtent([[-W,-H],[2*W,2*H]])
     .on('zoom',ev=>{
-      g.attr('transform',ev.transform); /* zoom always enabled */
-      window._mapZoom=ev.transform; /* persist for redraw restore */
+      g.attr('transform',ev.transform);
+      if(sel===null)window._mapZoom=ev.transform; /* Phase 226: only store zoom in interactive phase, not during feedback animation */
     });
   svg.call(zoom);
-  /* Restore zoom on timer-triggered redraws (sel===null = pre-answer) */
+  /* Phase 226: Restore zoom only for same question, only in interactive phase */
   if(sel===null&&window._mapZoom&&window._mapZoom.k>1){
     svg.call(zoom.transform,window._mapZoom);
-  } else if(sel!==null){
-    window._mapZoom=null; /* clear after answer so zoom-to-country starts clean */
   }
 
   /* Sphere backdrop */
