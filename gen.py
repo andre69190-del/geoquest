@@ -9931,7 +9931,7 @@ function startGame(m){
     scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,
     half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),
     survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,lives:S.diff==="casual"?999:3,
-    slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0,
+    q:null,sel:null,ok:null,slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0,
     /* Phase 217 QA: clear mp carry-over so solo games never show duell HUD */
     mpOpponent:null,mpOppScore:0,mpOppFinal:null,mpOppRd:0});  /* P208/P210: always reset sub-game state on new game */
   _secretGameToken=Math.random().toString(36).substring(2,15);
@@ -10526,7 +10526,7 @@ app.innerHTML=`<div class="scr">
     requestAnimationFrame(()=>{document.getElementById("rr-inp")?.focus();});
     return;
   }
-    if(mode==="wort_schmiede"&&S.ph==="playing"){
+    if((mode==="wort_schmiede"||S.wsData)&&S.ph==="playing"){
     app.innerHTML=renderWortSchmiede(sc);
     requestAnimationFrame(()=>{document.getElementById("ws-input")?.focus();});
     return;
