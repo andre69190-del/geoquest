@@ -8,7 +8,7 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "BUGFIX: Phase 233. WS-Routing: render() prueft S.wsData statt mode===wort_schmiede. startGame() setzt q:null+sel:null. Kein stale-Question-Leak mehr. verify: 53/53."
+git commit -m "BUGFIX: Phase 234. 4 Fixes: _mkHL->beta_hl-Type; _mkMatchQ correct->ans; WS-render S.wsData; startGame generic ws_*-Early-Return fuer arch/tech/emob/gastro/pflanzen/pferde. verify: 53/53."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

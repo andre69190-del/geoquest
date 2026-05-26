@@ -9941,6 +9941,8 @@ function startGame(m){
   if(_m==="slf"){initSLF();render();return;}
   if(_m==="wort_schmiede"){initWortSchmiede();render();return;}
   if(_m&&_m.startsWith("ws_tiere_")){var _twk=_m.replace("ws_tiere_","");initTierWortSchmiede(_twk);render();return;}
+  /* Phase 234: generic WS early-return — ws_arch_* / ws_tech_* / ws_emob_* / ws_gastro_* / ws_pflanzen_* / ws_pferde_* */
+  if(_m&&_m.startsWith("ws_")&&GEN[_m]){GEN[_m]();render();return;}
   lq();
 }
 async function showLeaderboard(){S.ph="menu";S.tab="home";S.lbLoading=true;render();S.lbData=await fetchLeaderboard(S.mode);S.lbLoading=false;render();}
