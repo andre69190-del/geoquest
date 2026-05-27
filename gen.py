@@ -11190,6 +11190,12 @@ function drawWorldMap(targetName,sel,ok,preHL,readOnly){
 
 
 /* BOTTOM NAV */
+function renderPwaBanner(){
+  return`<div id="pwa-banner" class="pwa-banner">
+    <span>📱 GeoQuest als App installieren &mdash; offline spielbar!</span>
+    <button class="pwa-install-btn" onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(()=>{S.pwaPrompt=null;render();});}">📥 Installieren</button>
+  </div>`;
+}
 function renderBottomNav(){
   const tabs=[
     {id:"home",   icon:"\u{1F3E0}", lbl:"Home"},
@@ -11201,12 +11207,6 @@ function renderBottomNav(){
   ];
   const isAdmin=sbUser?.email==="andre69190@gmail.com";
   if(isAdmin)tabs.push({id:"admin",icon:"\u{1F6E1}\uFE0F",lbl:"Admin"});
-  function renderPwaBanner(){
-  return`<div id="pwa-banner" class="pwa-banner">
-    <span>📱 GeoQuest als App installieren &mdash; offline spielbar!</span>
-    <button class="pwa-install-btn" onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(()=>{S.pwaPrompt=null;render();});}">📥 Installieren</button>
-  </div>`;
-}
 return`<nav class="bottom-nav">${tabs.map(t=>`<button class="bn-item${S.tab===t.id?" active":""}" onclick="S.tab='${t.id}';render()"><span class="bn-icon">${t.icon}</span><span class="bn-lbl">${t.lbl}</span></button>`).join("")}</nav>`;
 }
 
