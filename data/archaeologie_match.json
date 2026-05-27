@@ -57,14 +57,6 @@
         "c": "Bronzezeit"
       },
       {
-        "n": "Tutanchamun-Maske",
-        "c": "Bronzezeit"
-      },
-      {
-        "n": "Antikythera-Mechanismus",
-        "c": "Antike"
-      },
-      {
         "n": "Vasa-Wrack",
         "c": "Fruehe Neuzeit"
       },
@@ -75,10 +67,6 @@
       {
         "n": "Oetzi der Eismann",
         "c": "Neolithikum"
-      },
-      {
-        "n": "Himmelsscheibe von Nebra",
-        "c": "Bronzezeit"
       },
       {
         "n": "Tollund-Mann",
@@ -154,10 +142,6 @@
       {
         "n": "Bronzesichel",
         "c": "Bronzezeit"
-      },
-      {
-        "n": "Eisenpflug",
-        "c": "Eisenzeit"
       },
       {
         "n": "Obsidian-Skalpell",
@@ -237,20 +221,12 @@
         "c": "Karl Weber"
       },
       {
-        "n": "Knossos",
-        "c": "Arthur Evans"
-      },
-      {
         "n": "Ur (Koenigsgraeber)",
         "c": "Leonard Woolley"
       },
       {
         "n": "Olduvai Gorge",
         "c": "Louis Leakey"
-      },
-      {
-        "n": "Machu Picchu",
-        "c": "Hiram Bingham"
       },
       {
         "n": "Sipan-Grab",
@@ -500,10 +476,6 @@
         "c": "Kelten"
       },
       {
-        "n": "Rongorongo",
-        "c": "Osterinsel"
-      },
-      {
         "n": "Lineares A",
         "c": "Minoisch (undechiffriert)"
       },
@@ -585,16 +557,8 @@
         "c": "Persien"
       },
       {
-        "n": "Quetzalcoatl",
-        "c": "Azteken"
-      },
-      {
         "n": "Inanna",
         "c": "Sumer"
-      },
-      {
-        "n": "Thor",
-        "c": "Wikinger"
       },
       {
         "n": "Amaterasu",
@@ -603,14 +567,6 @@
       {
         "n": "Pachamama",
         "c": "Inka"
-      },
-      {
-        "n": "Huitzilopochtli",
-        "c": "Azteken"
-      },
-      {
-        "n": "Enlil",
-        "c": "Mesopotamien"
       },
       {
         "n": "Lugh",
@@ -672,10 +628,6 @@
       {
         "n": "Hockerbestattung mit Ocker",
         "c": "Jungsteinzeit"
-      },
-      {
-        "n": "Brandbestattung auf Scheiterhaufen",
-        "c": "Wikinger / Hindu"
       },
       {
         "n": "Baumbestattung (Luftbestattung)",
@@ -1107,14 +1059,6 @@
         "c": "Xi'an"
       },
       {
-        "n": "Antikythera-Mechanismus",
-        "c": "Athen"
-      },
-      {
-        "n": "Himmelsscheibe von Nebra",
-        "c": "Halle (Saale)"
-      },
-      {
         "n": "Goldmaske von Mykene",
         "c": "Athen"
       },
@@ -1123,20 +1067,12 @@
         "c": "Mexiko City"
       },
       {
-        "n": "Tollund-Mann",
-        "c": "Silkeborg"
-      },
-      {
         "n": "Benin-Bronzen (Hauptbestand)",
         "c": "London"
       },
       {
         "n": "Lewis-Schachfiguren",
         "c": "London / Edinburgh"
-      },
-      {
-        "n": "Terrakotta-Armee",
-        "c": "Xi'an"
       }
     ]
   },
@@ -1386,10 +1322,6 @@
         "c": "Roemer"
       },
       {
-        "n": "Maravedi",
-        "c": "Spanien (Mittelalter)"
-      },
-      {
         "n": "Golddinar",
         "c": "Islamisch"
       },
@@ -1576,10 +1508,6 @@
       {
         "n": "Stoa von Attalos",
         "c": "Ionisch / Dorisch"
-      },
-      {
-        "n": "Olympieion (Athen)",
-        "c": "Korinthisch"
       }
     ]
   },
@@ -1641,36 +1569,12 @@
         "c": "Indien"
       },
       {
-        "n": "Lothal",
-        "c": "Indien (Gujarat)"
-      },
-      {
-        "n": "Dholavira",
-        "c": "Indien (Gujarat)"
-      },
-      {
-        "n": "Rakhigarhi",
-        "c": "Indien (Haryana)"
-      },
-      {
-        "n": "Kalibangan",
-        "c": "Indien (Rajasthan)"
-      },
-      {
-        "n": "Chanhu-daro",
-        "c": "Pakistan"
-      },
-      {
         "n": "Sutkagen Dor",
         "c": "Pakistan (Baluchistan)"
       },
       {
         "n": "Alamgirpur",
         "c": "Indien (Uttar Pradesh)"
-      },
-      {
-        "n": "Banawali",
-        "c": "Indien (Haryana)"
       }
     ]
   },
@@ -1726,28 +1630,12 @@
         "c": "Russland"
       },
       {
-        "n": "Jorvik (York)",
-        "c": "Grossbritannien"
-      },
-      {
-        "n": "Birka",
-        "c": "Schweden"
-      },
-      {
-        "n": "Kaupang",
-        "c": "Norwegen"
-      },
-      {
         "n": "Trelleborg (Ringburg)",
         "c": "Daenemark"
       },
       {
         "n": "Hedeby (Haithabu)",
         "c": "Deutschland"
-      },
-      {
-        "n": "Ribe",
-        "c": "Daenemark"
       },
       {
         "n": "Dublin (Dyflin)",
@@ -1997,10 +1885,6 @@
         "c": "Terrorismus / Krieg"
       },
       {
-        "n": "Timbuktu (Mali)",
-        "c": "Islamistischer Extremismus"
-      },
-      {
         "n": "Machu Picchu",
         "c": "Massentourismus"
       },
@@ -2019,10 +1903,6 @@
       {
         "n": "Rapa Nui / Osterinsel",
         "c": "Klimawandel / Erosion"
-      },
-      {
-        "n": "Palmyra (Syrien)",
-        "c": "Krieg / ISIS"
       }
     ]
   },
@@ -2106,10 +1986,6 @@
       {
         "n": "Oetzi der Eismann",
         "c": "Wanderer"
-      },
-      {
-        "n": "Schriftrollen vom Toten Meer",
-        "c": "Beduinen-Hirte"
       },
       {
         "n": "Lascaux-Hoehle",
