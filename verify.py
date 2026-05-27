@@ -190,6 +190,33 @@ if '_GQ_SALT' in html:
 else:
     fail("_GQ_SALT not found -- LocalStorage saves may be invalidated!")
 
+# -- 12. Service Worker sw.js --------------------------------
+section("12. Service Worker sw.js")
+sw_path = 'sw.js'
+if not os.path.isfile(sw_path):
+    fail("sw.js MISSING — run python gen.py to generate it")
+else:
+    with open(sw_path, 'r', encoding='utf-8') as f:
+        sw = f.read()
+    sw_size = os.path.getsize(sw_path)
+    # Must contain a hash-versioned cache name
+    if not re.search(r"CACHE_NAME = 'geoquest-[a-f0-9]{8}'", sw):
+        fail("sw.js: CACHE_NAME hash-version pattern missing")
+    else:
+        ok("sw.js: CACHE_NAME hash-version present")
+    # Must list all data/*.json files
+    data_json_files = sorted(f for f in os.listdir(DATA_DIR) if f.endswith('.json'))
+    missing_in_sw = [f for f in data_json_files if "./data/" + f not in sw]
+    if missing_in_sw:
+        fail("sw.js: " + str(len(missing_in_sw)) + " data files missing from ASSETS: " + str(missing_in_sw[:3]))
+    else:
+        ok("sw.js: all " + str(len(data_json_files)) + " data/*.json in ASSETS (" + str(sw_size) + " bytes)")
+    # Must use Promise.allSettled (non-atomic install)
+    if 'Promise.allSettled' not in sw:
+        fail("sw.js: Promise.allSettled missing — install could abort atomically")
+    else:
+        ok("sw.js: Promise.allSettled install strategy confirmed")
+
 # =============================================================
 print("\n" + "=" * 58)
 total = len(PASS_LIST) + len(FAIL_LIST)

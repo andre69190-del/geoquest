@@ -13513,13 +13513,7 @@ async function loadGameData(){
 
 if("serviceWorker"in navigator){
   try{
-    const swSrc=`const CACHE='gq-v10';
-/* Phase 221: Offline-Modus — network-first mit Cache-Fallback */
-self.addEventListener('install',function(){self.skipWaiting();});
-self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.filter(function(k){return k!==CACHE;}).map(function(k){return caches.delete(k);}));}).then(function(){return self.clients.claim();}));});
-self.addEventListener('fetch',function(e){if(e.request.mode==='navigate'||e.request.destination==='document'){e.respondWith(fetch(e.request).then(function(resp){var r=resp.clone();caches.open(CACHE).then(function(c){c.put(e.request,r);});return resp;}).catch(function(){return caches.match(e.request).then(function(r){return r||new Response('<h2>GeoQuest — Offline</h2><p>Keine Verbindung. Bitte zuerst mit Internet starten.</p>',{headers:{'Content-Type':'text/html'}});});}));}});\`;`;
-    const blob=new Blob([swSrc],{type:"application/javascript"});
-    navigator.serviceWorker.register(URL.createObjectURL(blob),{scope:"./"}).catch(()=>{});
+    navigator.serviceWorker.register('./sw.js').catch(function(){});
   }catch(e){}
   window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();S.pwaPrompt=e;const b=document.getElementById("pwa-banner");if(b)b.style.display="flex";});
 }
@@ -14331,6 +14325,88 @@ if _si >= 0 and _se > _si:
 HTML = _HTML_HEAD + '<script src="cities_data.js"></script>\n<script>\n' + JS + '\n' + _HTML_TAIL
 HTML = HTML.replace('\\!', '!')
 out = 'GeoQuest.html'
+# ── Phase 238: Generate sw.js (hash-versioned, all data/*.json) ────────────────────
+import hashlib as _hashlib
+_data_files = sorted('./data/' + f for f in _os.listdir('data') if f.endswith('.json'))
+_cache_assets = ['./GeoQuest.html', './index.html', './manifest.json', './icon.svg'] + _data_files
+_cache_hash = _hashlib.md5(''.join(_cache_assets).encode()).hexdigest()[:8]
+_cache_name = 'geoquest-' + _cache_hash
+_assets_js = ',\n  '.join("'" + a + "'" for a in _cache_assets)
+_sw_content = (
+    "const CACHE_NAME = '" + _cache_name + "';\n"
+    "/* Phase 238: full offline cache — auto-versioned from asset hash */\n"
+    "const ASSETS = [\n  " + _assets_js + "\n];\n\n"
+    "self.addEventListener('install', function(e) {\n"
+    "  e.waitUntil(\n"
+    "    caches.open(CACHE_NAME).then(function(cache) {\n"
+    "      return Promise.allSettled(\n"
+    "        ASSETS.map(function(url) {\n"
+    "          return cache.add(url).catch(function(err) {\n"
+    "            console.warn('SW: skipped', url, err);\n"
+    "          });\n"
+    "        })\n"
+    "      );\n"
+    "    }).then(function() { return self.skipWaiting(); })\n"
+    "  );\n"
+    "});\n\n"
+    "self.addEventListener('activate', function(e) {\n"
+    "  e.waitUntil(\n"
+    "    caches.keys().then(function(keys) {\n"
+    "      return Promise.all(\n"
+    "        keys.filter(function(k) { return k !== CACHE_NAME; })\n"
+    "            .map(function(k) { return caches.delete(k); })\n"
+    "      );\n"
+    "    }).then(function() { return self.clients.claim(); })\n"
+    "  );\n"
+    "});\n\n"
+    "self.addEventListener('fetch', function(e) {\n"
+    "  if (e.request.url.includes('supabase.co')) {\n"
+    "    e.respondWith(fetch(e.request).catch(function() {\n"
+    "      return new Response('', {status: 503});\n"
+    "    }));\n"
+    "    return;\n"
+    "  }\n"
+    "  e.respondWith(\n"
+    "    caches.match(e.request).then(function(cached) {\n"
+    "      if (cached) return cached;\n"
+    "      return fetch(e.request).then(function(response) {\n"
+    "        if (!response || response.status !== 200) return response;\n"
+    "        var clone = response.clone();\n"
+    "        caches.open(CACHE_NAME).then(function(cache) {\n"
+    "          cache.put(e.request, clone);\n"
+    "        });\n"
+    "        return response;\n"
+    "      }).catch(function() {\n"
+    "        return caches.match('./GeoQuest.html');\n"
+    "      });\n"
+    "    })\n"
+    "  );\n"
+    "});\n"
+)
+with open('sw.js', 'w', encoding='utf-8') as _sw_f:
+    _sw_f.write(_sw_content)
+print('Written: sw.js (cache=' + _cache_name + ', ' + str(len(_data_files)) + ' data files)')
+
+# ── Phase 238: Generate manifest.json (synced theme_color + SVG icon) ──────────────
+import json as _json_m
+_manifest = {
+    'name': 'GeoQuest',
+    'short_name': 'GeoQuest',
+    'description': 'Das ultimative Geographie-Quiz \u2013 St\u00e4dte, Flaggen, Hauptst\u00e4dte, Fl\u00fcsse & Sehensw\u00fcrdigkeiten',
+    'start_url': './GeoQuest.html',
+    'display': 'standalone',
+    'background_color': '#0f172a',
+    'theme_color': '#10b981',
+    'orientation': 'portrait-primary',
+    'icons': [{'src': 'icon.svg', 'sizes': 'any', 'type': 'image/svg+xml', 'purpose': 'any maskable'}],
+    'categories': ['games', 'education'],
+    'lang': 'de',
+    'scope': './'
+}
+with open('manifest.json', 'w', encoding='utf-8') as _mf:
+    _json_m.dump(_manifest, _mf, ensure_ascii=False, indent=2)
+print('Written: manifest.json (theme_color=#10b981, icon.svg only)')
+
 with open(out, 'w', encoding='utf-8') as _f:
     _f.write(HTML)
 print(f"Written: {len(HTML):,} chars -> {out}")

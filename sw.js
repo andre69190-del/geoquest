@@ -1,50 +1,81 @@
-/* GeoQuest – Service Worker v1.0 */
-const CACHE = "geoquest-v2";
+const CACHE_NAME = 'geoquest-a7d462a8';
+/* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
-  "./GeoQuest.html",
-  "./manifest.json",
-  "./icon.svg",
-  "./cities.json"
+  './GeoQuest.html',
+  './index.html',
+  './manifest.json',
+  './icon.svg',
+  './data/archaeologie_hl.json',
+  './data/archaeologie_match.json',
+  './data/archaeologie_pin.json',
+  './data/archaeologie_ws.json',
+  './data/emob_hl.json',
+  './data/emob_match.json',
+  './data/emob_pin.json',
+  './data/emob_ws.json',
+  './data/gastro_hl.json',
+  './data/gastro_match.json',
+  './data/gastro_pin.json',
+  './data/gastro_ws.json',
+  './data/kultur.json',
+  './data/pflanzen_hl.json',
+  './data/pflanzen_match.json',
+  './data/pflanzen_pin.json',
+  './data/pflanzen_ws.json',
+  './data/tech_hl.json',
+  './data/tech_match.json',
+  './data/tech_pin.json',
+  './data/tech_ws.json',
+  './data/tiere_hl.json',
+  './data/tiere_match.json',
+  './data/tiere_ws.json'
 ];
 
-self.addEventListener("install", e => {
+self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open(CACHE).then(cache => {
-      // Cache what we can; cities.json may be missing – ignore errors
-      return Promise.allSettled(ASSETS.map(url =>
-        cache.add(url).catch(() => {})
-      ));
-    }).then(() => self.skipWaiting())
+    caches.open(CACHE_NAME).then(function(cache) {
+      return Promise.allSettled(
+        ASSETS.map(function(url) {
+          return cache.add(url).catch(function(err) {
+            console.warn('SW: skipped', url, err);
+          });
+        })
+      );
+    }).then(function() { return self.skipWaiting(); })
   );
 });
 
-self.addEventListener("activate", e => {
+self.addEventListener('activate', function(e) {
   e.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-    ).then(() => self.clients.claim())
+    caches.keys().then(function(keys) {
+      return Promise.all(
+        keys.filter(function(k) { return k !== CACHE_NAME; })
+            .map(function(k) { return caches.delete(k); })
+      );
+    }).then(function() { return self.clients.claim(); })
   );
 });
 
-self.addEventListener("fetch", e => {
-  // Network-first for Supabase API calls
-  if (e.request.url.includes("supabase.co")) {
-    e.respondWith(
-      fetch(e.request).catch(() => new Response("", { status: 503 }))
-    );
+self.addEventListener('fetch', function(e) {
+  if (e.request.url.includes('supabase.co')) {
+    e.respondWith(fetch(e.request).catch(function() {
+      return new Response('', {status: 503});
+    }));
     return;
   }
-  // Cache-first for everything else
   e.respondWith(
-    caches.match(e.request).then(cached => {
+    caches.match(e.request).then(function(cached) {
       if (cached) return cached;
-      return fetch(e.request).then(response => {
-        if (response.ok) {
-          const clone = response.clone();
-          caches.open(CACHE).then(cache => cache.put(e.request, clone));
-        }
+      return fetch(e.request).then(function(response) {
+        if (!response || response.status !== 200) return response;
+        var clone = response.clone();
+        caches.open(CACHE_NAME).then(function(cache) {
+          cache.put(e.request, clone);
+        });
         return response;
-      }).catch(() => caches.match("./GeoQuest.html"));
+      }).catch(function() {
+        return caches.match('./GeoQuest.html');
+      });
     })
   );
 });
