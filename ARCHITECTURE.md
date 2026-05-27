@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 225 (Stand: Mai 2026)
-**Build:** gen.py → 1.07 MB | GeoQuest.html → 1.64 MB | 299 Spielmodi
+**Version:** Phase 241 (Stand: Mai 2026)
+**Build:** gen.py → 1.14 MB | GeoQuest.html → 2.18 MB | 558 Spielmodi
 
 ---
 
@@ -15,6 +15,7 @@
 5. [State Management & Sicherheit](#5-state-management--sicherheit)
 6. [Daten-Architektur](#6-daten-architektur)
 7. [Modi-Registrierung & Routing](#7-modi-registrierung--routing)
+8. [Service Worker & Offline-Architektur](#8-service-worker--offline-architektur)
 
 ---
 
@@ -26,10 +27,11 @@ GeoQuest ist ein **vollständig clientseitiges, lokal persistiertes Geografie- u
 
 **Kerneigenschaften:**
 
-- **Zero-Backend-Dependency für Gameplay:** Alle 299 Spielmodi laufen komplett offline. Supabase wird optional für Cloud-Highscores genutzt, ist aber kein Pflichtbestandteil.
+- **Zero-Backend-Dependency für Gameplay:** Alle 558 Spielmodi laufen komplett offline. Supabase wird optional für Cloud-Highscores genutzt, ist aber kein Pflichtbestandteil.
 - **Single-File Output:** Das Build-System kompiliert alle Quellen zu einer einzigen `GeoQuest.html`. Hosting = eine Datei deployen.
 - **Clientseitige Persistenz:** Spielfortschritt, Einstellungen und Sammlungen werden über `localStorage` gespeichert. Ein kryptografischer Salt schützt die Daten vor Manipulation.
-- **PWA-Ready:** Service Worker cached die App für vollständigen Offline-Betrieb (nach erstem Laden).
+- **PWA-Ready:** Externer Service Worker (`sw.js`, hash-versioniert, generiert durch `gen.py`) cached die App und alle 24 Datendateien für vollständigen Offline-Betrieb nach erstem Laden.
+- **Offline-Score-Queue:** Scores, die offline gespielt werden, landen in `localStorage` (`gq_offline_queue`) und werden bei Rückkehr ins Netz automatisch mit Supabase synchronisiert.
 
 ### Philosophie: Content ≠ Logic
 
@@ -44,8 +46,8 @@ Die zentrale Architekturentscheidung ist die strikte Trennung von **Inhalt** (Da
 ```
 ┌─────────────────────────────────────────────────────┐
 │  CONTENT-SCHICHT          data/*.json               │
-│  Rohdaten: Tiere, Kultur, Städte, Wortschmiede      │
-│  Format: Echtes JSON, Node.js-validiert             │
+│  24 Datendateien: Kultur, Tiere, Pflanzen, Gastro,  │
+│  Tech, E-Mob, Archäologie — je 4 Spieltypen         │
 ├─────────────────────────────────────────────────────┤
 │  LOGIK-SCHICHT            gen.py                    │
 │  Spielengines, UI-Renderer, State-Management        │
@@ -53,35 +55,48 @@ Die zentrale Architekturentscheidung ist die strikte Trennung von **Inhalt** (Da
 ├─────────────────────────────────────────────────────┤
 │  OUTPUT-SCHICHT           GeoQuest.html             │
 │  Single-File-Build: alles inline, kein CDN-Pflicht  │
-│  Größe: ~1.64 MB, JS-Anteil ~1.58 MB               │
+│  Größe: ~2.10 MB, JS-Anteil ~2.06 MB               │
 └─────────────────────────────────────────────────────┘
 ```
 
 ### Build-Ablauf: `python3 gen.py`
 
 ```
-1. Python liest cities.json        → CJ  (JSON-String)
-2. Python liest capitals.json      → CAPJ
-3. Python liest data/kultur.json   → KULTUR_DATA_J
-4. Python liest data/tiere_hl.json → TIER_HL_DATA_J
-5. Python liest data/tiere_match.json → TIER_MATCH_DATA_J
-6. Python liest data/tiere_ws.json → TIER_WS_DATA_J
-   ... (weitere statische Datensätze)
+1. Python liest cities.json           → CJ  (JSON-String)
+2. Python liest capitals.json         → CAPJ
+3. Python liest data/kultur.json      → KULTUR_DATA_J
+4. Python liest data/tiere_*.json     → TIER_*_J (3 Dateien)
+5. Python liest data/pflanzen_*.json  → PFLANZEN_*_J
+6. Python liest data/gastro_*.json    → GASTRO_*_J
+7. Python liest data/tech_*.json      → TECH_*_J
+8. Python liest data/emob_*.json      → EMOB_*_J
+9. Python liest data/archaeologie_*.json → ARCH_*_J
+   ... (weitere Datensätze — 24 JSON-Dateien gesamt)
 
-7. JS = r'''...'''                 Großer Raw-String mit dem gesamten JavaScript.
-                                   Enthält PLACEHOLDER_*-Marker.
+10. JS = r'''...'''                    Großer Raw-String mit gesamtem JavaScript.
+                                       Enthält PLACEHOLDER_*-Marker.
 
-8. JS = JS
-   .replace('PLACEHOLDER_CJ',         CJ)
-   .replace('PLACEHOLDER_KULTUR_DATA', KULTUR_DATA_J)
-   .replace('PLACEHOLDER_TIER_HL_DATA', TIER_HL_DATA_J)
-   ...                               Alle Daten werden injiziert.
+11. JS = JS
+    .replace('PLACEHOLDER_CJ',        CJ)
+    .replace('PLACEHOLDER_KULTUR_DATA', KULTUR_DATA_J)
+    .replace('PLACEHOLDER_TIER_HL_DATA', TIER_HL_DATA_J)
+    ...                                Alle Daten werden injiziert.
 
-9. re.sub(r'\\UXXXXXXXX', chr(...))  Unicode-Escapes werden aufgelöst.
+12. re.sub(r'\\UXXXXXXXX', chr(...))   Unicode-Escapes werden aufgelöst.
 
-10. HTML = _HTML_HEAD + JS + _HTML_TAIL
-11. write('GeoQuest.html')
-12. write('index.html')            Netlify-Deploy-Target
+13. HTML = _HTML_HEAD + JS + _HTML_TAIL
+14. write('GeoQuest.html')
+15. write('index.html')               Netlify-Deploy-Target
+
+16. sw.js generieren (Phase 238):
+    - Alle data/*.json (24 Stück) dynamisch gelistet
+    - CACHE_NAME = 'geoquest-<md5[:8]>' — auto-bust bei Änderungen
+    - write('sw.js')
+
+17. manifest.json generieren (Phase 238):
+    - theme_color: #10b981 (sync. mit CSS --accent)
+    - icons: icon.svg only
+    - write('manifest.json')
 ```
 
 ### Kritische Invarianten nach dem Build
@@ -89,10 +104,13 @@ Die zentrale Architekturentscheidung ist die strikte Trennung von **Inhalt** (Da
 | Invariante | Geprüft durch |
 |-----------|---------------|
 | Keine PLACEHOLDER_* mehr im Output | `verify.py` Check 4 |
-| Alle 4 Datenobjekte vorhanden | `verify.py` Check 5 |
+| Alle 9 Datenobjekte vorhanden | `verify.py` Check 5 |
 | JS-Syntax valide (`node --check`) | `verify.py` Check 3 |
 | MODES-Array ≥ 200 Einträge | `verify.py` Check 6 |
 | `_GQ_SALT` unverändert | `verify.py` Check 11 |
+| sw.js: CACHE_NAME hash-versioniert | `verify.py` Check 12 |
+| sw.js: alle 24 data/*.json in ASSETS | `verify.py` Check 12 |
+| sw.js: Promise.allSettled vorhanden | `verify.py` Check 12 |
 
 ---
 
@@ -294,7 +312,7 @@ usedLetters = new Set(
 Jede Änderung an `gen.py` erfolgt ausschließlich über **Patch-Skripte** im Verzeichnis `patches/`. Direkte Bearbeitung von `gen.py` ist verboten.
 
 **Warum?**
-- `gen.py` ist 1.07 MB groß. Manuelle Edits in solchen Dateien erzeugen leicht Syntaxfehler oder ruinieren Unicode-Encoding.
+- `gen.py` ist 1.14 MB groß. Manuelle Edits in solchen Dateien erzeugen leicht Syntaxfehler oder ruinieren Unicode-Encoding.
 - Patch-Skripte sind versioniert, dokumentiert und reproduzierbar.
 - Der `run_patch.py`-Runner bricht mit Auto-Rollback ab, wenn etwas schiefgeht.
 
@@ -315,8 +333,8 @@ c = c.replace(old, new)
 
 ```python
 """
-Phase: 228
-Date:  2026-06-01
+Phase: 240
+Date:  2026-05-27
 Author: Claude / Andre
 Scope: Kurzbeschreibung (max. 80 Zeichen)
 
@@ -324,7 +342,7 @@ Description:
   Ausführliche Beschreibung. Welches Problem wird gelöst?
   Welche Anker werden verwendet? Gibt es Abhängigkeiten?
 
-Dependencies: patch_225_json_extraction.py
+Dependencies: patch_238_offline_sw.py, patch_239_offline_ux.py
 Zero-Bug Policy: All c.replace() calls use assert c.count(old)==1
 """
 ```
@@ -332,7 +350,7 @@ Zero-Bug Policy: All c.replace() calls use assert c.count(old)==1
 ### `run_patch.py` — Der Patch-Runner
 
 ```bash
-python3 run_patch.py patches/patch_228_new_feature.py
+python3 run_patch.py patches/patch_240_offline_sync.py
 ```
 
 **Was der Runner automatisch macht:**
@@ -342,7 +360,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 2. Erstellt Backup: gen.py.bak_YYYYMMDD_HHMMSS
 3. Führt das Patch-Skript aus
 4. Führt python3 gen.py aus (Build)
-5. Führt python3 verify.py aus (33 Checks)
+5. Führt python3 verify.py aus (76 Checks)
    ↓ Bei FEHLER in Schritt 3, 4 oder 5:
    └─ Stellt gen.py aus dem Backup wieder her
    └─ Löscht das Backup
@@ -352,13 +370,13 @@ python3 run_patch.py patches/patch_228_new_feature.py
    └─ Zeigt Build-Statistiken + nächste Schritte
 ```
 
-### `verify.py` — Die 33 Pre-Push-Checks
+### `verify.py` — Die 56 Pre-Push-Checks
 
 `verify.py` wird automatisch durch `unlock_and_push.bat` vor jedem `git push` ausgeführt. Schlägt es an, bricht der Push ab.
 
 | # | Check | Was geprüft wird |
 |---|-------|-----------------|
-| 0 | File presence | GeoQuest.html, gen.py, alle 4 data/*.json |
+| 0 | File presence | GeoQuest.html, gen.py, kultur.json, 4 tiere_*.json |
 | 1 | HTML size | ≥ 1 MB (Regression-Schutz) |
 | 2 | JS extraction | ≥ 500 KB JS aus 5 Script-Blöcken |
 | 3 | JS syntax | `node --check` auf extrahiertem JS |
@@ -368,15 +386,16 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | 7 | Generators (6x) | genUniversalPinQ, genTiereMatchQ, genTiereHL, initTierWortSchmiede, genHauptstadtDistanzQ, getSmartMatch |
 | 8 | Anti-cheat | `_displaySubj` + `subj:_displaySubj` vorhanden |
 | 9 | Mojibake | Keine neuen Â/Ã-Sequenzen (15 Legacy-Patterns whitelisted) |
-| 10 | JSON round-trip | Alle 4 JSON-Dateien valide + Top-Level-Keys gezählt |
+| 10 | JSON round-trip | Alle 24 JSON-Dateien valide + Top-Level-Keys gezählt |
 | 11 | _GQ_SALT | Salt im Output vorhanden (User-Saves-Schutz) |
+| 12 | Service Worker | sw.js existiert, CACHE_NAME hash-versioniert, alle 24 data/*.json in ASSETS, Promise.allSettled vorhanden |
 
 ### Vollständiger Sprint-Workflow
 
 ```
 1. Patch schreiben → patches/patch_NNN_beschreibung.py
 2. python3 run_patch.py patches/patch_NNN_beschreibung.py
-   → Auto-Build + Auto-Verify
+   → Auto-Build + Auto-Verify (76 Checks)
 3. Bei grünem Selftest: unlock_and_push.bat ausführen
    → verify.py (nochmals als Pre-Push-Gate)
    → git add -A
@@ -424,6 +443,9 @@ let S = {
 
   // Auth / Cloud
   sbProfile: null,    // Supabase-Profil-Objekt
+
+  // Offline-Status (Phase 240) — NICHT durch Anti-Cheat-Proxy geschützt
+  isOffline: !navigator.onLine,  // wird durch online/offline Event-Listener aktualisiert
   // ...
 };
 ```
@@ -451,17 +473,18 @@ S.askedLids.add(q.lid);
 
 ### LocalStorage-Schema
 
-Alle persistierten Daten werden mit dem `x`-Suffix in `localStorage` geschrieben (historisches Namensmuster):
-
 | Key | Inhalt | Typ |
 |-----|--------|-----|
 | `gq_langx` | Sprache (`"de"` / `"en"`) | String |
 | `gq_usernamex` | Spielername | String |
 | `gq_surv_bestx` | Survival-Highscore | Number |
-| `gq_sessions_localx` | Lokale Spiel-History | JSON |
+| `gq_sessions_local` | Lokale Spiel-History (letzte 50 Sessions) | JSON |
 | `gq_darkx` | Dark Mode aktiv | `"1"` / `"0"` |
 | `gq_onboardingx` | Onboarding abgeschlossen | Boolean |
 | `gq_spotter_countryx` | Letztes gewähltes Land im Kennzeichen-Spotter | String |
+| `gq_offline_queue` | Offline-Score-Queue: `{pendingScore, pendingCoins}` | JSON |
+
+**`gq_offline_queue`** (Phase 240): Akkumuliert Scores und Coins aus offline gespielten Sessions. Wird durch `syncOfflineData()` nach Rückkehr ins Netz geleert. Format: `{"pendingScore": 1500, "pendingCoins": 15}`.
 
 ### Anti-Tamper: `_GQ_SALT` und Score-Hashing
 
@@ -480,7 +503,7 @@ Das `S`-Objekt wird nach der Initialisierung in einen `Proxy` eingewickelt:
 
 ```javascript
 // Schreibgeschützte Score-Felder
-const GUARDED_WRITE = new Set(["sc", "correct", "st", "bs", "pts", "collectedPlates"]);
+const GUARDED_WRITE = new Set(["sc", "correct", "st", "bs", "pts", "collectedPlates", "sbProfile"]);
 
 // Sensibles Lesen (enthält aktuelle Antwort)
 const SENSITIVE_READ = new Set(["q"]);
@@ -504,9 +527,10 @@ const _p = new Proxy(S, {
 Object.defineProperty(window, "S", { get: () => _p, configurable: false });
 ```
 
-**Trusted Functions:** Nur Funktionen aus der Whitelist (`answer`, `startGame`, `checkAnswer`, `_lvNext`, ...) dürfen `sc`, `correct`, `bs` schreiben. Ein `S.sc = 999` aus der Browser-Konsole wird erkannt und blockiert.
+**Trusted Functions:** Die Whitelist umfasst alle Spielfunktionen die legitim Score-Felder schreiben dürfen:
+`answer`, `startGame`, `mpCountdown`, `lq`, `nextRound`, `checkMastery`, `spotterCollect`, `saveSession`, `loadData`, `initAuth`, `handleGridAnswer`, `finishCustomGame`, `submitGridResult`, `render`, `renderWortSchmiede`, `renderLandHauptstadt`, `renderSLF`, `answerByIdx`, `handleWsCheck`, `handleSLFSubmit`, `handleLandHauptstadtSubmit`, `lvAnswer`, `syncOfflineData`
 
-**Warum `S.q.ans` nicht im DOM:** Die korrekte Antwort lebt ausschließlich in `S.q.ans` im JavaScript-Heap. Sie wird nie als `data-answer` Attribut oder sichtbarer Text in den DOM geschrieben. Das Proxy-Warning bei `S.q`-Lese-Zugriff aus der Konsole macht versuchtes Schummeln sichtbar.
+**`S.isOffline` ist bewusst NICHT in `GUARDED_WRITE`:** Die `online`/`offline`-Event-Listener (außerhalb der Trusted-Function-Liste) müssen `S.isOffline` direkt schreiben. Da `isOffline` kein spielrelevantes Score-Feld ist, stellt das kein Sicherheitsrisiko dar.
 
 ---
 
@@ -516,25 +540,55 @@ Object.defineProperty(window, "S", { get: () => _p, configurable: false });
 
 ```
 GeoQuest/
-├── gen.py                  Haupt-Build-Skript (Logik, Engines, UI)
-├── GeoQuest.html           Build-Output (Single-File-App)
+├── gen.py                  Haupt-Build-Skript (Logik, Engines, UI) — 1.14 MB
+├── GeoQuest.html           Build-Output (Single-File-App) — 2.10 MB
 ├── index.html              Netlify-Deploy-Target (Kopie von GeoQuest.html)
+├── sw.js                   Service Worker (generiert durch gen.py, hash-versioniert)
+├── manifest.json           PWA Manifest (generiert durch gen.py)
+├── icon.svg                App-Icon (alle Größen via SVG)
 │
-├── data/                   Content-Schicht (Phase 225)
-│   ├── kultur.json         84 Kategorien: Getränke, Streetfood, Tänze, ...
-│   ├── tiere_hl.json       13 H/L-Kategorien: Gewicht, Geschwindigkeit, ...
-│   ├── tiere_match.json    19 Match-Kategorien: Fährten, Lebensräume, ...
-│   └── tiere_ws.json       11 Wort-Schmiede-Einträge: Schnabeltier, Komodo, ...
+├── data/                   Content-Schicht (Phase 225–231, 24 Dateien)
+│   ├── kultur.json             84 Kategorien: Getränke, Streetfood, Tänze, ...
+│   ├── tiere_hl.json           13 H/L-Kategorien (Gewicht, Geschwindigkeit, ...)
+│   ├── tiere_match.json        19 Match-Kategorien (Fährten, Lebensräume, ...)
+│   ├── tiere_ws.json           11 Wort-Schmiede-Einträge
+│   ├── pflanzen_pin.json       12 Pin-Kategorien
+│   ├── pflanzen_hl.json        12 H/L-Kategorien
+│   ├── pflanzen_match.json     15 Match-Kategorien
+│   ├── pflanzen_ws.json         9 Wort-Schmiede-Einträge
+│   ├── gastro_pin.json          9 Pin-Kategorien
+│   ├── gastro_hl.json          15 H/L-Kategorien
+│   ├── gastro_match.json       20 Match-Kategorien
+│   ├── gastro_ws.json           7 Wort-Schmiede-Einträge
+│   ├── tech_pin.json            8 Pin-Kategorien
+│   ├── tech_hl.json             8 H/L-Kategorien
+│   ├── tech_match.json         17 Match-Kategorien
+│   ├── tech_ws.json            10 Wort-Schmiede-Einträge
+│   ├── emob_pin.json           13 Pin-Kategorien
+│   ├── emob_hl.json            12 H/L-Kategorien
+│   ├── emob_match.json         22 Match-Kategorien
+│   ├── emob_ws.json            10 Wort-Schmiede-Einträge
+│   ├── archaeologie_pin.json   13 Pin-Kategorien
+│   ├── archaeologie_hl.json    12 H/L-Kategorien
+│   ├── archaeologie_match.json 28 Match-Kategorien
+│   └── archaeologie_ws.json     7 Wort-Schmiede-Einträge
 │
-├── cities.json             ~2300 kuratierte Städte (aus GeoNames)
+├── cities.json             ~2315 kuratierte Städte (aus GeoNames)
 │
-├── verify.py               Post-Build-Selftest (33 Checks)
+├── verify.py               Post-Build-Selftest (76 Checks, Sektionen 0–12)
 ├── run_patch.py            Patch-Runner (Backup + Build + Verify + Rollback)
+├── validate_content.py     Semantisches QA-Tool für data/*.json Dateien
 │
 ├── patches/                Alle Patch-Skripte (Phase 212+)
 │   ├── PATCHES.md          Konvention-Dokumentation
-│   ├── patch_212_*.py
-│   ├── patch_213_*.py
+│   ├── patch_225_*.py      JSON-Extraktion
+│   ├── patch_228_*.py      Pflanzen-Daten
+│   ├── patch_229_*.py      Gastronomie
+│   ├── patch_230_*.py      Tech & E-Mobilität
+│   ├── patch_231_*.py      Archäologie
+│   ├── patch_238_offline_sw.py   Service Worker + manifest.json
+│   ├── patch_239_offline_ux.py   Auth UX: _authErrMsg + navigator.onLine guards
+│   ├── patch_240_offline_sync.py Offline-Score-Queue + syncOfflineData
 │   └── ...
 │
 ├── unlock_and_push.bat     Git-Push mit Pre-Push verify.py Gate
@@ -602,6 +656,8 @@ Felder: `n` (Name), `c` (Land/Kontinent), `lat`/`lng` (optional, für Pin-Modi).
 }
 ```
 
+Alle anderen Kategorien (pflanzen, gastro, tech, emob, archaeologie) verwenden dieselben vier Dateistrukturen: `_pin.json`, `_hl.json`, `_match.json`, `_ws.json`.
+
 ---
 
 ## 7. Modi-Registrierung & Routing
@@ -616,7 +672,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 299 Modi, 299/299/299 — perfekte Konsistenz.
+**Aktueller Stand:** 558 Modi, 558/558/558 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -641,7 +697,7 @@ const GEN = {
   uk_getraenke:   () => genUniversalMatchQ("getraenke"),
   uk_wahrzeichen_pin: () => genUniversalPinQ("wahrzeichen"),
   hl_tiere_gewicht_land: () => genTiereHL("gewicht_land"),
-  // ...299 Einträge total
+  // ...558 Einträge total
 };
 ```
 
@@ -659,11 +715,129 @@ MODE_CATS[sCat].modes.filter(m => GEN[m.id] && !m.comingSoon)
 
 Wort-Schmiede Modi tragen `noMultiplayer: true` — sie sind zu zeitintensiv für synchrones Multiplayer.
 
-**Daily Challenge:** Intentionell hardcoded auf `S.mode = "city"`. Die Daily Challenge ist ein tägliches globales Leaderboard-Event — alle Spieler weltweit spielen denselben Modus. Das ist ein bewusstes Design-Entscheidung, kein Bug.
+**Daily Challenge:** Intentionell hardcoded auf `S.mode = "city"`. Die Daily Challenge ist ein tägliches globales Leaderboard-Event — alle Spieler weltweit spielen denselben Modus. Das ist eine bewusste Design-Entscheidung, kein Bug.
 
 ---
 
-## 8. Bekannte Fallstricke & Gotchas
+## 8. Service Worker & Offline-Architektur
+
+### Überblick (Phase 238–240)
+
+GeoQuest implementiert eine dreistufige Offline-Strategie:
+
+```
+Stufe 1 — SW-Cache (Phase 238):   App-Shell + alle 24 data/*.json offline verfügbar
+Stufe 2 — Auth-UX (Phase 239):    navigator.onLine-Guards + _authErrMsg() für saubere Fehlermeldungen
+Stufe 3 — Score-Queue (Phase 240): Optimistic writes → localStorage → Supabase bei Reconnect
+```
+
+### Service Worker (`sw.js`)
+
+`sw.js` wird **nicht manuell gepflegt** — er wird bei jedem `python3 gen.py` Durchlauf frisch generiert.
+
+**Hash-Versionierung:**
+```python
+_cache_assets = ['./GeoQuest.html', './index.html', './manifest.json', './icon.svg'] + _data_files
+_cache_hash = hashlib.md5(''.join(_cache_assets).encode()).hexdigest()[:8]
+_cache_name = 'geoquest-' + _cache_hash  # z.B. 'geoquest-a7d462a8'
+```
+
+Sobald eine Datei zu `data/` hinzukommt, entfernt wird oder umbenannt wird, ändert sich der Hash → altes Cache wird automatisch invalidiert.
+
+**Caching-Strategie:**
+- **Supabase-Requests** (`*.supabase.co`): Network-first, bei Fehler → leerer 503 (kein Cache)
+- **Alle anderen Requests**: Cache-first; bei Cache-Miss → Network-fetch + Cache-put
+- **Offline-Fallback**: Gibt `./GeoQuest.html` zurück, wenn kein Cache-Treffer und kein Netz
+- **cities_data.js** (3.8 MB): Bewusst NICHT in ASSETS — zu groß für Install-Phase; wird lazy-gecacht beim ersten Fetch
+
+**Non-Atomic Install via `Promise.allSettled`:**
+```javascript
+e.waitUntil(
+  caches.open(CACHE_NAME).then(function(cache) {
+    return Promise.allSettled(
+      ASSETS.map(function(url) {
+        return cache.add(url).catch(function(err) {
+          console.warn('SW: skipped', url, err);  // Einzelfehler überspringen
+        });
+      })
+    );
+  })
+);
+```
+Ein 404 für eine einzelne Datei verhindert nicht die Installation des gesamten Service Workers.
+
+### Auth-UX Offline-Guards (Phase 239)
+
+Alle vier Auth-Funktionen enthalten einen `navigator.onLine`-Guard der sofort eine deutschsprachige Fehlermeldung zeigt, ohne auf einen Supabase-Timeout zu warten:
+
+```javascript
+// doLogin, doRegister, doForgotPassword, doSetNewPassword:
+if(!navigator.onLine){
+  S.authError = "Du bist offline. Anmeldung ohne Internet nicht möglich.";
+  render();
+  return;
+}
+```
+
+**`_authErrMsg(err)` Helper** (Phase 239): Behandelt fehlerhafte Supabase-Error-Objekte sicher:
+```javascript
+function _authErrMsg(err){
+  if(!err) return '';
+  const m = err?.message || err?.error_description || '';
+  if(m && m.trim()) return m.trim();
+  return 'Verbindungsfehler zum Server.';  // Fallback für {} aus 503-Body-Parse-Fehler
+}
+```
+Verhindert, dass `{}` als Fehlermeldung im UI erscheint wenn Supabase offline ist.
+
+### Offline Score Queue (Phase 240)
+
+**Beim Spielen offline** schreibt `saveSession()` in die LocalStorage-Queue statt zu Supabase:
+
+```javascript
+if(!sb || !sbUser?.id || !navigator.onLine){
+  if(score > 0){
+    const _q = JSON.parse(localStorage.getItem('gq_offline_queue') || '{"pendingScore":0,"pendingCoins":0}');
+    _q.pendingScore += score;
+    _q.pendingCoins += Math.floor(score / 100);
+    localStorage.setItem('gq_offline_queue', JSON.stringify(_q));
+  }
+  return;
+}
+// ... normaler Supabase-Write
+```
+
+**Beim Reconnect** ruft der `online`-Event-Listener `syncOfflineData()` auf:
+
+```javascript
+window.addEventListener('online', function(){
+  S.isOffline = false;
+  render();
+  syncOfflineData();
+});
+
+async function syncOfflineData(){
+  if(!sb || !sbUser?.id || !navigator.onLine) return;
+  const _q = JSON.parse(localStorage.getItem('gq_offline_queue'));
+  if(!_q || (!_q.pendingScore && !_q.pendingCoins)) return;
+  await sb.rpc('add_score', {
+    p_user_id: sbUser.id,
+    p_score: _q.pendingScore || 0,
+    p_coins: _q.pendingCoins || 0,
+    p_rounds: 0,
+    p_duration_ms: 0
+  });
+  localStorage.removeItem('gq_offline_queue');
+  showToast('✅ Offline-Ergebnisse synchronisiert!');
+  render();
+}
+```
+
+**Offline-Banner im Profil-Tab:** Wenn `S.isOffline === true` erscheint eine rote Benachrichtigungsleiste im Profil-Tab, die den Nutzer informiert, dass Ergebnisse lokal zwischengespeichert und beim nächsten Online-Start automatisch synchronisiert werden.
+
+---
+
+## 9. Bekannte Fallstricke & Gotchas
 
 ### ⚠️ KRITISCH: `targetLat`/`targetLng` — NICHT `lat`/`lng`
 
@@ -672,17 +846,11 @@ Die Game-Engine verwendet für alle Pin-Modi ausschließlich die Feldnamen `targ
 ```javascript
 // Engine-Scoring (haversine):
 const dist = haversineKm(clickedLat, clickedLng, S.q.targetLat, S.q.targetLng);
-
-// Auto-Zoom zur richtigen Region:
-if (S.q.targetLat != null && S.q.type === "uk_pin") { ... }
-
-// Correct-Pin-Anzeige nach Antwort:
-if (readOnly && S.q && S.q.targetLat != null) { ... }
 ```
 
 **Jeder Generator, der ein `uk_pin`-Question-Objekt zurückgibt, MUSS `targetLat`/`targetLng` verwenden.**
 
-❌ **FALSCH** (Generator gibt falsche Feldnamen zurück → Distanz = NaN → 0 Punkte):
+❌ **FALSCH:**
 ```javascript
 return { type: "uk_pin", subj: item.n, lat: item.lat, lng: item.lng, ... };
 ```
@@ -706,7 +874,7 @@ return { type: "uk_pin", subj: item.n, targetLat: item.lat, targetLng: item.lng,
 | `cc` | string\|null | Ländercode (optional, für Flaggen-Icon) |
 | `prompt` | string | Fragetext |
 
-> **Hintergrund:** Dieser Bug trat in Phase 229–231 auf, weil die `_mkPinQ`-Factory-Funktion mit `lat`/`lng` implementiert wurde (analog zu den alten Einzelfunktionen), während `genUniversalPinQ` von Anfang an korrekt `targetLat`/`targetLng` nutzte. Symptom: Karte zeigt Pin bei (0,0), Feedback zeigt "0 km entfernt · 0 Pkt.". Fix: Phase 232, `_mkPinQ` auf `targetLat`/`targetLng` umgestellt.
+> **Hintergrund:** Dieser Bug trat in Phase 229–231 auf, weil die `_mkPinQ`-Factory-Funktion mit `lat`/`lng` implementiert wurde, während `genUniversalPinQ` von Anfang an korrekt `targetLat`/`targetLng` nutzte. Symptom: Karte zeigt Pin bei (0,0), Feedback zeigt "0 km entfernt · 0 Pkt.". Fix: Phase 232, `_mkPinQ` auf `targetLat`/`targetLng` umgestellt.
 
 ---
 
@@ -756,40 +924,60 @@ Bei allen `uk_pin`-Modi (z.B. "Wo liegt dieser Solarpark?") wird der **Name des 
 
 ### ⚠️ Pin-Feedback: "0 Pkt." trotz Punkte — Anzeigebug-Muster
 
-Das Feedback-Pill für `uk_pin`/`airport_pin` verwendet zwei separate Renderpfade:
-- ✓ richtig (`S.ok = dist <= 250 km`): zeigt `+${apPts} Pkt.`
-- ✗ falsch (`S.ok = false`): zeigte früher **hardcoded** `0 Pkt.`
+Das Feedback-Pill für `uk_pin`/`airport_pin` verwendet zwei separate Renderpfade. **Tatsächlich werden Punkte auch bei falscher Antwort vergeben** (solange `dist < 2500 km`):
 
-**Tatsächlich werden Punkte auch bei falscher Antwort vergeben** (solange `dist < 2500 km`):
 ```javascript
 const pts = Math.max(0, Math.round(500 * (1 - dist / 2500)));
-if (pts > 0) { S.sc += pts; ... }  // ← Punkte werden IMMER addiert wenn > 0
 ```
 
-Das Scoring: 500 Pkt. bei 0 km, 0 Pkt. ab 2500 km linear. Bei 1765 km = ca. 147 Pkt.
+Das Scoring: 500 Pkt. bei 0 km, 0 Pkt. ab 2500 km linear.
 
 **Regel:** Niemals Punkte im `ng`-Pfad hardcoden — immer `apPts` auslesen:
 ```javascript
-// ❌ FALSCH:
-:`<div class="fb ng">✗ ${apDist} km · 0 Pkt.</div>`;
-
 // ✅ RICHTIG:
 :`<div class="fb ng">✗ ${apDist} km${apPts > 0 ? " · +" + apPts + " Pkt." : ""}</div>`;
 ```
 
 ---
 
+### ⚠️ `_mkHL`-Factory muss `type:"beta_hl"` zurückgeben — NICHT `type:"hl"`
+
+Die Render-Engine hat **keinen Handler für `type:"hl"`**. Die einzigen unterstützten H/L-Typen sind:
+`hl_pop`, `hl_river`, `hl_area`, `uk_hl`, **`beta_hl`**
+
+✅ **RICHTIG** — muss `beta_hl`-Format mit `opts`/`ans`/`meta` zurückgeben:
+```javascript
+return {
+  type: "beta_hl",
+  prompt: d.prompt || "Welches ist mehr?",
+  subj: "",
+  opts: [a.name, b.name],          // ← Pflicht: Array mit 2 Namen
+  ans: higher.name,                 // ← Pflicht: Name des Gewinners
+  meta: a.name+": "+a.val+" "+unit+" · "+b.name+": "+b.val+" "+unit,
+  lid: "mhl_"+key+"_"+Math.min(ai,bi)+"_"+Math.max(ai,bi),
+  cc: "de"
+};
+```
+
+**Referenz-Implementierungen** (korrekt, getestet): `genTiereHL`, `genPflanzenHL`
+
+---
+
+### ⚠️ `sw.js` wird bei jedem Build überschrieben
+
+`sw.js` wird von `gen.py` generiert — manuelle Änderungen an `sw.js` werden beim nächsten `python3 gen.py` überschrieben. Alle SW-Anpassungen gehören in den GENERATORS-Block in `gen.py`.
+
+---
+
 ### ⚠️ SVG-Kartenlabel: Lange Namen overflow die Karte
 
-Die Korrekt-Antwort-Markierung nach einer Pin-Antwort rendert `S.q.ans` als SVG-Text. Lange Namen (z.B. "Hershey's, Hershey Pennsylvania") füllen die gesamte Kartenbreite.
+Die Korrekt-Antwort-Markierung nach einer Pin-Antwort rendert `S.q.ans` als SVG-Text. Lange Namen füllen die gesamte Kartenbreite.
 
 **Regel:** Label immer auf max. 22 Zeichen kürzen:
 ```javascript
 // ✅ RICHTIG:
 .text((S.q.ans||"").length > 22 ? (S.q.ans||"").slice(0,20) + "…" : S.q.ans||"")
 ```
-
-Gilt auch für `airport_pin` und alle künftigen Pin-Modi. `subj` (spoiler-bereinigt, kürzer) ist oft besser geeignet als `ans`.
 
 ---
 
@@ -814,47 +1002,180 @@ with open('verify.py', 'rb') as f: content = f.read()
 with open('verify.py', 'wb') as f: f.write(content.replace(b'\x00', b''))
 ```
 
-Ursache: bestimmte Edit-Operationen schreiben manchmal Padding an das Dateiende.
+---
+
+## 10. Supabase-Schema
+
+GeoQuest nutzt Supabase für optionale Cloud-Features: Score-Sync, Leaderboards, Profil, Liga, Sammelmarken. Alle Features funktionieren auch ohne Supabase (localStorage-Fallback).
+
+### Tabellen
+
+**`profiles`** — Ein Eintrag pro registriertem User:
+
+| Spalte | Typ | Beschreibung |
+|--------|-----|--------------|
+| `id` | uuid (PK) | Supabase Auth User-ID |
+| `username` | text | Anzeigename |
+| `total_score` | integer | Gesamtpunkte aller Zeiten |
+| `games_played` | integer | Anzahl gespeicherter Sessions |
+| `geo_coins` | integer | Aktuelle Münzen (Ingame-Währung) |
+| `current_title` | text | Aktueller Titel (z.B. "Weltentdecker") |
+| `joker_5050` | integer | Verbleibende 50/50-Joker |
+| `joker_freeze` | integer | Verbleibende Freeze-Joker |
+| `plates_collected` | jsonb | Gesammelte Kennzeichen `{cc: count}` |
+| `stats_mastery` | jsonb | Mastery-Map `{cc: {n, p, t, ts}}` |
+| `stats_history` | jsonb | Wöchentliche Score-History |
+| `survival_best` | integer | Bester Survival-Score |
+| `last_daily_date` | text | Datum der letzten Daily-Challenge (YYYY-MM-DD) |
+| `league_id` | integer | Aktuelle Liga-Stufe |
+| `league_score` | integer | Punkte in der aktuellen Liga-Woche |
+
+**`game_sessions`** — Jede gespeicherte Spielsession:
+
+| Spalte | Typ | Beschreibung |
+|--------|-----|--------------|
+| `id` | bigint (PK, auto) | Session-ID |
+| `user_id` | uuid (FK → profiles) | Spieler |
+| `mode` | text | Modus-ID (z.B. "city", "uk_getraenke") |
+| `score` | integer | Erreichter Score |
+| `best_streak` | integer | Bester Streak dieser Session |
+| `rounds` | integer | Anzahl Runden (immer 10) |
+| `accuracy` | integer | Trefferquote in % |
+| `username` | text | Snapshot des Usernamens zum Zeitpunkt |
+| `device_type` | text | `"mobile"` oder `"desktop"` |
+| `created_at` | timestamptz | Timestamp |
+
+**`leaderboard_weekly`** — View (kein direktes Insert möglich):
+
+Gibt die wöchentliche Rangliste für einen Modus zurück. Wird über `sb.from("leaderboard_weekly").select("*").eq("mode", mode).order("rank")` abgefragt.
+
+**`passport_stamps`** — Reisepass-Stempel (via `upsert_stamp` RPC):
+
+Speichert pro User × Länderkürzel ob der Stempel gesammelt und ob Mastery erreicht wurde.
+
+### RPCs (Stored Functions)
+
+Alle schreibenden Score-Operationen laufen über RPCs — niemals direkte `UPDATE profiles SET total_score = ...` vom Client. Verhindert Client-seitige Manipulation.
+
+| RPC | Parameter | Beschreibung |
+|-----|-----------|--------------|
+| `add_score` | `p_user_id`, `p_score`, `p_coins`, `p_rounds`, `p_duration_ms` | Addiert Score + Coins atomar auf das Profil. **Hauptfunktion nach jeder Session.** |
+| `add_coins` | `p_user_id`, `p_amount` | Addiert Coins (Daily-Bonus, Titel-Belohnung). Gibt neuen Coins-Stand zurück. |
+| `spend_coins` | `p_user_id`, `p_amount` | Subtrahiert Coins (Joker-Kauf, Modus-Unlock). Gibt neuen Stand zurück. Schlägt fehl wenn Saldo < Betrag. |
+| `upsert_stamp` | `p_user_id`, `p_country_code`, `p_perfect` | Setzt/aktualisiert Reisepass-Stempel. |
+| `get_prev_week_rank` | `p_user_id` | Gibt Vorwochenrang zurück (für Liga-Auswertung). |
+| `update_league` | `p_user_id`, `p_new_league`, `p_eval_week` | Aktualisiert Liga-Stufe nach wöchentlicher Auswertung. |
+
+### Client-Zugriff
+
+```javascript
+// Supabase-Client wird in gen.py konfiguriert:
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let sbUser    = null;  // Supabase Auth User (nach Login)
+let sbProfile = null;  // profiles-Zeile (nach loadProfile())
+let sbOK      = false; // true sobald Auth + Profil geladen
+
+// Globale Zustandscheck-Pattern:
+if(!sb || !sbUser?.id) return;          // kein Login
+if(!sbOK) return;                       // Profil noch nicht geladen
+if(!navigator.onLine) { /* queue */ }   // kein Netz (Phase 240)
+```
 
 ---
 
-### ⚠️ KRITISCH: `_mkHL`-Factory muss `type:"beta_hl"` zurückgeben — NICHT `type:"hl"`
+## 11. `validate_content.py` — Semantischer Content-Validator
 
-Die Render-Engine hat **keinen Handler für `type:"hl"`**. Die einzigen unterstützten H/L-Typen sind:
-`hl_pop`, `hl_river`, `hl_area`, `uk_hl`, **`beta_hl`**
+`validate_content.py` prüft alle 24 `data/*.json` Dateien auf **inhaltliche** Qualitätsprobleme, die `verify.py` (Syntax/Struktur) nicht erkennen kann.
 
-Ein Generator, der `type:"hl"` zurückgibt, führt sofort zum Crash:
-```
-Uncaught TypeError: Cannot read properties of undefined (reading 'map')
-```
-…weil die Engine `q.opts.map(...)` aufruft und `opts` bei `type:"hl"` undefiniert ist.
-
-❌ **FALSCH** (`_mkHL`-Factory v1, Phase 229–231):
-```javascript
-return { type: "hl", a: {name, val}, b: {name, val}, unit, prompt, higherWins: true };
+```bash
+python3 validate_content.py          # Nur Warnungen ausgeben
+python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 ```
 
-✅ **RICHTIG** — muss `beta_hl`-Format mit `opts`/`ans`/`meta` zurückgeben:
-```javascript
-return {
-  type: "beta_hl",
-  prompt: d.prompt || "Welches ist mehr?",
-  subj: "",
-  opts: [a.name, b.name],          // ← Pflicht: Array mit 2 Namen
-  ans: higher.name,                 // ← Pflicht: Name des Gewinners
-  meta: a.name+": "+a.val+" "+unit+" · "+b.name+": "+b.val+" "+unit,
-  lid: "mhl_"+key+"_"+Math.min(ai,bi)+"_"+Math.max(ai,bi),
-  cc: "de"
-};
-```
+### Die 4 Prüfpfade
 
-**Referenz-Implementierungen** (korrekt, getestet): `genTiereHL`, `genPflanzenHL`
+**Check 1 — Pin-Daten (`*_pin.json`, Pin-Einträge in `kultur.json`)**
 
-**La-Paz-Window**: Items müssen nach `val` sortiert werden; Auswahl über Pool-Methode (nicht `do-while`), mit 2%-Mindestabstand-Check, damit triviale Paarungen (fast gleicher Wert) verhindert werden.
+| Prüfung | Was sie verhindert |
+|---------|--------------------|
+| Pflichtfelder `n`, `lat`, `lng` vorhanden | Silent fail: Pin bei (0,0) |
+| `lat` ∈ [-90, 90], `lng` ∈ [-180, 180] | Unmögliche Koordinaten |
+| Null-Island-Check: nicht beides = 0.0 | Vergessene Placeholder-Koordinaten |
+| Duplikat-Koordinaten (4 Dezimalstellen ≈ 11m) | Zwei Orte auf identischem Pin |
 
-> **Hintergrund:** Phase 232 — `_mkHL` wurde mit `type:"hl"` implementiert (intuitiv wirkende Feldstruktur), ohne den Render-Code zu prüfen. Betroffen: alle H/L-Modi für Tech, E-Mob, Gastronomie und Archäologie (~50 Modi). Fix: `patch_fix_mkhl.py`.
+**Check 2 — H/L-Daten (`*_hl.json`, `tiere_hl.json`)**
+
+| Prüfung | Was sie verhindert |
+|---------|--------------------|
+| Pflichtfelder `name`, `val` | Generator gibt immer `null` zurück |
+| Mindestens 6 Items | La-Paz-Window kann keinen validen Partner finden |
+| Duplikate `name` | `lid`-Kollision → Dedup-System bricht |
+| Negative Werte | Unbeabsichtigte Vorzeichen |
+| Wert-Ratio > 10.000.000× | Gemischte Einheiten (g vs. kg, mm vs. km) |
+| Z-Score-Ausreißer > 4σ | Tippfehler in Zahlenwert (z.B. 5000 statt 500) |
+
+**Check 3 — Match-Daten (`*_match.json`, `tiere_match.json`, `kultur.json`-Match-Einträge)**
+
+| Prüfung | Was sie verhindert |
+|---------|--------------------|
+| Pflichtfelder `n`, `c` | Silent fail im Generator |
+| ≥ 4 unique `c`-Werte | Kein Distraktor-Pool für 3 falsche Antworten |
+| Duplikate `n` (Subjekt) | Dieselbe Frage zweimal in einer Session |
+
+**Check 4 — Wort-Schmiede-Daten (`*_ws.json`, `tiere_ws.json`)**
+
+| Prüfung | Was sie verhindert |
+|---------|--------------------|
+| `word` vorhanden und GROSSBUCHSTABEN | Anagramm-Engine bricht |
+| `word` nur Alpha-Zeichen, keine Leerzeichen | Zeichensatz-Fehler |
+| `validWords[lang]` ist Array | Engine bricht beim Spielstart |
+| Alle Lösungswörter GROSSBUCHSTABEN | Kein Match möglich |
+| Lösungswort nicht länger als `word` | Logisch unmöglich |
+| Anagramm-Validität: alle Buchstaben aus `word` entnehmbar | Spieler kann Wort physisch nicht legen |
+
+### Automatische Format-Erkennung
+
+`validate_content.py` erkennt den Dateityp automatisch anhand des Dateinamens-Suffix (`_pin`, `_hl`, `_match`, `_ws`) und bei `kultur.json` anhand der Datenstruktur (hat Einträge `lat`/`lng`? hat `val`? hat `c`?).
+
+---
+
+## 12. Phasen-Changelog
+
+Kompakter Überblick aller signifikanten Patches seit dem Migrations-System (Phase 225).
+
+| Phase | Datei | Inhalt |
+|-------|-------|--------|
+| 212 | `patch_212_kultur_modes.py` | 27 Kultur/Lifestyle Universal-Modi |
+| 213 | `patch_213_perf_daily_1v1.py` | Performance, Daily-History, 1v1-Selector CSS |
+| 214 | `patch_214_routing_audit.py` | Routing-Audit + Regressionen behoben |
+| 215 | `patch_215_uk_engine.py` | UK-Engine-Modi registriert |
+| 216 | `patch_216_universal_engine.py` | Universal-Engine + Custom-Mechanics |
+| 220 | `patch_220_security_audit.py` | 5-Säulen Security & Stability Audit |
+| 221a | `patch_221a_service_worker.py` | Service Worker Cache (blob-basiert, Phase 221) |
+| 221b | `patch_221b_ws_multilingual.py` | Wort-Schmiede Multilingual-Bonus |
+| 221c | `patch_221c_kompass_mode.py` | Sonnen-Kompass Rätsel — neuer Modus |
+| 222 | `patch_222_stadion_hl.py` | Dynamischer Stadion-Höhe-H/L-Generator |
+| 223 | `patch_223_map_zoom_fix.py` | Karten-Zoom D3 lid-Binding + Drag-vs-Click Guard |
+| 223 | `patch_223_tiere_data_expand.py` | Tiere/Pferde Datensatz 20 → 68 Einträge |
+| **225** | `patch_225_json_extraction.py` | **Daten aus gen.py nach `data/*.json` extrahiert** — Migrations-System eingeführt |
+| 226 | `patch_226_ux_fixes.py` | UX-Fixes: Suche, HUD, HL-Buttons EN |
+| 227a | `patch_227a_tiere_routing.py` | 21 Tiere-Modi Routing |
+| 227b | `patch_227b_tiere_data_part1.py` | Tiere Pin + H/L Daten + Generatoren |
+| 227c | `patch_227c_tiere_data_part2.py` | Tiere Match-Daten + Generator |
+| 227d | `patch_227d_pferde_dlc.py` | Pferde DLC: Rassen, Fachbegriffe, Stockmaß, Flüsterer |
+| 228 | `patch_228_pflanzen.py` | Pflanzen-Kategorie (4 JSON-Dateien, ~55 Modi) |
+| 229 | `patch_229_gastronomie.py` | Gastronomie-Kategorie (4 JSON-Dateien, ~51 Modi) |
+| 230 | `patch_230_tech_emob.py` | Tech + E-Mobilität (8 JSON-Dateien, ~110 Modi) |
+| 231 | `patch_231_archaeologie.py` | Archäologie (4 JSON-Dateien, ~60 Modi) |
+| 232 | *(inline)* | `_mkPinQ` auf `targetLat`/`targetLng` umgestellt; `_mkHL` auf `beta_hl` |
+| 235 | `patch_235_fixes.py` | Qualitäts-Patch: BETA-Tags, Pflanzen-Gruppe, Datendichte |
+| 236 | `patch_236_fixes.py` | Weitere QA-Fixes |
+| 237 | `patch_237_qa_triage.py` | QA-Triage: Duplikate, WS-Validierung, Koordinaten |
+| **238** | `patch_238_offline_sw.py` | **SW blob→external sw.js; hash-versioned CACHE_NAME; manifest.json; verify.py Sektion 12** |
+| **239** | `patch_239_offline_ux.py` | **Auth-UX: `_authErrMsg()`, `navigator.onLine` Guards in 4 Auth-Funktionen** |
+| **240** | `patch_240_offline_sync.py` | **`isOffline` State; online/offline Listener; Offline-Score-Queue; `syncOfflineData()`; Profil-Banner** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 232 — Bugfixes Pin-Engine, Feedback-Pill, _mkHL beta_hl-Fix, Mai 2026.*
+*Letztes Update: Phase 240 — Service Worker, Offline-UX, Score-Queue, 558 Modi, 24 Datendateien, 56 verify-Checks, Mai 2026.*

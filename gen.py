@@ -5509,12 +5509,46 @@ async function saveSession(mode,score,bs,correct,durationMs){
       payload:{score,name:sbProfile?.username||"Ich",correct}}).then(()=>{},()=>{});
     window.mpGameCh=null;
   }
-  if(!sb||!sbUser?.id)return;
+  /* Phase 240: offline queue — accumulate score locally when no connection */
+  if(!sb||!sbUser?.id||!navigator.onLine){
+    if(score>0){
+      try{
+        const _q=JSON.parse(localStorage.getItem('gq_offline_queue')||'{"pendingScore":0,"pendingCoins":0}');
+        _q.pendingScore=(_q.pendingScore||0)+score;
+        _q.pendingCoins=(_q.pendingCoins||0)+Math.floor(score/100);
+        localStorage.setItem('gq_offline_queue',JSON.stringify(_q));
+      }catch(_qe){}
+    }
+    return;
+  }
   try{await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:sbProfile?.username||null,device_type:_device});}catch(_e){await sb.from("game_sessions").insert({user_id:sbUser.id,mode,score,best_streak:bs,rounds:ROUNDS,accuracy:Math.round(correct/ROUNDS*100),username:sbProfile?.username||null});}
   /* Use RPC to prevent client-side score tampering */
   await sb.rpc("add_score",{p_user_id:sbUser.id,p_score:score,p_coins:Math.floor(score/100),p_rounds:ROUNDS,p_duration_ms:durationMs||0});
   if(sbProfile){sbProfile.total_score=(sbProfile.total_score||0)+score;sbProfile.games_played=(sbProfile.games_played||0)+1;}
   if(sbProfile)checkTitleUp(sbProfile.total_score||0).catch(()=>{});
+}
+/* Phase 240: sync accumulated offline scores to Supabase on reconnect */
+async function syncOfflineData(){
+  if(!sb||!sbUser?.id||!navigator.onLine)return;
+  try{
+    const _raw=localStorage.getItem('gq_offline_queue');
+    if(!_raw)return;
+    const _q=JSON.parse(_raw);
+    if(!_q.pendingScore&&!_q.pendingCoins)return;
+    /* Phase 241: client-side cap - prevents manipulated localStorage from inflating cloud score */
+    _q.pendingScore=Math.min(_q.pendingScore||0,100000);
+    _q.pendingCoins=Math.min(_q.pendingCoins||0,1000);
+    await sb.rpc('add_score',{p_user_id:sbUser.id,p_score:_q.pendingScore||0,p_coins:_q.pendingCoins||0,p_rounds:0,p_duration_ms:0});
+    localStorage.removeItem('gq_offline_queue');
+    if(sbProfile){
+      sbProfile.total_score=(sbProfile.total_score||0)+(_q.pendingScore||0);
+      sbProfile.games_played=(sbProfile.games_played||0)+1;
+    }
+    showToast('\u2705 Offline-Ergebnisse synchronisiert!');
+    render();
+  }catch(_se){
+    console.warn('syncOfflineData failed',_se);
+  }
 }
 async function fetchLeaderboard(mode){
   if(\!sb)return[];
@@ -5631,6 +5665,7 @@ let S={
   language:(()=>{const _sl=localStorage.getItem("gq_lang");if(_sl&&LANG[_sl])return _sl;const _bl=(navigator.language||"de").substring(0,2).toLowerCase();return LANG[_bl]?_bl:"de";})(),spotterInput:"",spotterMsg:"",spotterOk:null,albumView:"list",albumCountry:_smartDefaultCountry(),spotterCountry:_smartDefaultCountry(),
   collFilter:"all",collRarity:"all",collSearch:"",
   carouselPages:{},
+  isOffline:!navigator.onLine,
 };
 let tIv=null,fTo=null,toastTo=null;
 
@@ -5645,7 +5680,7 @@ let tIv=null,fTo=null,toastTo=null;
       "checkMastery","spotterCollect","saveSession","loadData","initAuth",
       "handleGridAnswer","finishCustomGame","submitGridResult",
       "render","renderWortSchmiede","renderLandHauptstadt","renderSLF",
-      "answerByIdx","handleWsCheck","handleSLFSubmit","handleLandHauptstadtSubmit","lvAnswer"];
+      "answerByIdx","handleWsCheck","handleSLFSubmit","handleLandHauptstadtSubmit","lvAnswer","syncOfflineData"];
     const _isTrusted=()=>{
       const stk=(new Error()).stack||"";
       return _TRUSTED_FNS.some(fn=>stk.includes(fn));
@@ -10462,6 +10497,7 @@ app.innerHTML=`<div class="scr">
         <div style="background:var(--bg3);border-radius:12px;padding:.75rem .5rem;text-align:center"><div style="font-size:1.5rem;font-weight:900;color:#ef4444">${survived}</div><div style="font-size:.64rem;color:var(--text3)">\u00dcberlebt</div></div>
         <div style="background:var(--bg3);border-radius:12px;padding:.75rem .5rem;text-align:center"><div style="font-size:1.5rem;font-weight:900;color:#fbbf24">${survBest}</div><div style="font-size:.64rem;color:var(--text3)">Rekord</div></div>
       </div>`:"";
+const _scoreIndicator=S.isOffline?'<div style="background:#f97316;color:#fff;border-radius:8px;padding:7px 12px;margin-top:5px;font-size:.74rem;font-weight:600;text-align:center">&#x1F50C; Ergebnis lokal gespeichert &mdash; wird beim n&auml;chsten Online-Start synchronisiert.</div>':(sbOK?`<div style="font-size:.76rem;color:${S.scoreSaved?"#34d399":"var(--text3)"}">${S.scoreSaved?"\u2713 Score gespeichert":"Speichere \u2026"}</div>`:'');
 app.innerHTML=`<div class="scr">
       <div style="font-size:2.5rem;text-align:center">${isSurv?"\ud83d\udc80":"\u{1F3C6}"}</div>
       <h2 style="text-align:center;font-size:1.7rem;font-weight:900;color:var(--text);margin:3px 0">GAME OVER</h2>
@@ -10483,7 +10519,7 @@ app.innerHTML=`<div class="scr">
           <div style="color:#fbbf24;font-size:1rem;font-weight:900">+100 GeoCoins</div>
         </div>`:""}
         ${S.diff==="hardcore"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">âš¡ ${t("score_mult_max")}: <strong style="color:#f59e0b">${(S.hcMaxMult||1).toFixed(1)}×</strong></div>`:S.diff==="survival"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">⏱ ${t("score_time_bonus")}: <strong style="color:#34d399">+${S.survTimeBonusTotal||0} ${t("pts_abbr")}</strong></div>`:`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">📋 ${S.correct}/${ROUNDS} ${t("score_correct_lbl")} × 10 ${t("pts_abbr")} = <strong style="color:#60a5fa">${S.sc} ${t("pts_abbr")}</strong></div>`}
-        ${sbOK?`<div style="font-size:.76rem;color:${S.scoreSaved?"#34d399":"var(--text3)"}">${S.scoreSaved?"\u2713 Score gespeichert":"Speichere \u2026"}</div>`:""}
+        ${_scoreIndicator}
       </div>
       ${isGuest&&S.correct>0&&S.convModal?`<div class="conv-modal-bg" onclick="if(event.target===this){S.convModal=false;render()}">
   <div class="conv-modal">
@@ -13247,7 +13283,10 @@ function renderProfilTab(){
     <button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">🚪 Abmelden</button>
     <button class="btn-g" style="margin-bottom:0;font-size:.75rem;background:#dc3545;color:#fff;border-color:#dc3545" onclick="doDeleteAccount()">🗑️ Konto löschen (DSGVO)</button>
   </div>`:'';
-  return '<div style="padding-bottom:100px">'+block1+block2+block3+block4+block5+block6+'</div>';
+  const _offlineBanner=S.isOffline
+    ?'<div style="background:#ef4444;color:#fff;padding:10px 16px;border-radius:8px;margin-bottom:12px;font-weight:600;text-align:center">&#x1F4F5; Du bist offline. Ergebnisse werden lokal gespeichert und beim n\u00e4chsten Online-Start automatisch synchronisiert.</div>'
+    :'';
+  return '<div style="padding-bottom:100px">'+_offlineBanner+block1+block2+block3+block4+block5+block6+'</div>';
 }
 
 /* SETTINGS MODAL */
@@ -13583,6 +13622,9 @@ console.log('[GeoQuest Anti-Cheat] User navigated while processing - logged');
 });
 }
 window.addEventListener('load',function(){initAntiCheat();});
+/* Phase 240: track online/offline state */
+window.addEventListener('offline',function(){S.isOffline=true;render();});
+window.addEventListener('online',function(){S.isOffline=false;render();syncOfflineData();});
 /* P167: start deferred timer when device rotates to landscape */
 (function(){
   function _onOrientChange(){

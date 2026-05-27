@@ -39,15 +39,21 @@ print("=" * 58)
 
 # -- 0. File presence -----------------------------------------
 section("0. File presence")
-for path in [HTML_FILE, GEN_FILE,
-             DATA_DIR + '/kultur.json',
-             DATA_DIR + '/tiere_hl.json',
-             DATA_DIR + '/tiere_match.json',
-             DATA_DIR + '/tiere_ws.json']:
+for path in [HTML_FILE, GEN_FILE]:
     if os.path.isfile(path):
         ok(path + " exists (" + str(os.path.getsize(path)) + " bytes)")
     else:
         fail(path + " MISSING")
+_data_jsons = sorted(f for f in os.listdir(DATA_DIR) if f.endswith('.json'))
+if not _data_jsons:
+    fail("data/ directory is empty — no .json files found")
+else:
+    for _djf in _data_jsons:
+        _djp = DATA_DIR + '/' + _djf
+        if os.path.isfile(_djp):
+            ok(_djp + " exists (" + str(os.path.getsize(_djp)) + " bytes)")
+        else:
+            fail(_djp + " MISSING")
 
 # -- 1. HTML size sanity --------------------------------------
 section("1. HTML size sanity")

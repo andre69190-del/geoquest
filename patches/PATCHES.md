@@ -85,7 +85,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 1. Write patch script  →  patches/patch_NNN_description.py
 2. python3 run_patch.py patches/patch_NNN_description.py
 3. (Runner auto-runs: gen.py + verify.py)
-4. Check verify.py output: 33/33 [OK]
+4. Check verify.py output: 76/76 [OK]
 5. Update unlock_and_push.bat commit message
 6. Run unlock_and_push.bat
 ```
@@ -112,5 +112,18 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_226_ux_fixes.py | 226 | UX fixes: search, HUD, HL buttons |
 | patch_227a_tiere_routing.py | 227a | 21 Tiere Modi routing registration |
 | patch_227b_tiere_data_part1.py | 227b | Tiere Pin + HL data + generators |
+| patch_227c_tiere_data_part2.py | 227c | Tiere Match data + generator |
+| patch_227d_pferde_dlc.py | 227d | Pferde DLC: Rassen, Fachbegriffe, Stockmass, Fluesterer |
+| patch_228_pflanzen.py | 228 | Pflanzen-Kategorie (4 JSON-Dateien, ~55 Modi) |
+| patch_229_gastronomie.py | 229 | Gastronomie-Kategorie (4 JSON-Dateien, ~51 Modi) |
+| patch_230_tech_emob.py | 230 | Tech + E-Mobilitaet (8 JSON-Dateien, ~110 Modi) |
+| patch_231_archaeologie.py | 231 | Archaeologie (4 JSON-Dateien, ~60 Modi) |
+| patch_235_fixes.py | 235 | Qualitaets-Patch: BETA-Tags, Pflanzen-Gruppe, Datendichte |
+| patch_236_fixes.py | 236 | Weitere QA-Fixes |
+| patch_237_qa_triage.py | 237 | QA-Triage: Duplikate, WS-Validierung, Koordinaten |
+| patch_238_offline_sw.py | 238 | SW blob→sw.js, hash-versioned cache, manifest.json, verify Section 12 |
+| patch_239_offline_ux.py | 239 | Auth-UX: _authErrMsg(), navigator.onLine guards (4 Funktionen) |
+| patch_240_offline_sync.py | 240 | isOffline state, online/offline listeners, Score-Queue, syncOfflineData() |
+| patch_241_security_ux.py | 241 | Security cap (100k/1k), Gameover Offline-Banner, verify.py Section-0 dynamisch |
 | patch_227c_tiere_data_part2.py | 227c | Tiere Match data + generator |
 | patch_227d_pferde_dlc.py | 227d | Pferde DLC: Rassen, Fachbegriffe, Stockmass, Fluesterer |

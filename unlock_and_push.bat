@@ -8,7 +8,7 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "UX: Phase 238-239. SW: blob→sw.js, hash-versioned cache, 24 data files, Promise.allSettled. manifest synced. Auth: navigator.onLine guard (4 funcs), _authErrMsg() helper, {} crash fix. verify: 56/56."
+git commit -m "Security+UX: Phase 241. syncOfflineData() cap (pendingScore<=100k, pendingCoins<=1k). Gameover: orange offline banner via pre-computed _scoreIndicator (no nested template literal). verify.py Section 0 dynamic os.listdir(data/*.json). verify: 76/76."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
