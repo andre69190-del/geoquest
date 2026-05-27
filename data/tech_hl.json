@@ -3,668 +3,208 @@
     "prompt": "Welcher Chip hat mehr Transistoren?",
     "unit": "Mrd. Transistoren",
     "items": [
-      {
-        "name": "Apple M2 Ultra",
-        "val": 134
-      },
-      {
-        "name": "NVIDIA H100",
-        "val": 80
-      },
-      {
-        "name": "AMD EPYC Genoa (Zen 4)",
-        "val": 90
-      },
-      {
-        "name": "Intel Meteor Lake",
-        "val": 43
-      },
-      {
-        "name": "Apple A17 Pro",
-        "val": 19
-      },
-      {
-        "name": "Qualcomm Snapdragon 8 Gen 3",
-        "val": 16
-      },
-      {
-        "name": "AMD Radeon RX 7900 XTX",
-        "val": 58
-      },
-      {
-        "name": "NVIDIA RTX 4090",
-        "val": 76
-      },
-      {
-        "name": "Google TPU v4",
-        "val": 57
-      },
-      {
-        "name": "IBM Telum (z16)",
-        "val": 22
-      },
-      {
-        "name": "Samsung Exynos 2400",
-        "val": 19
-      },
-      {
-        "name": "MediaTek Dimensity 9300",
-        "val": 16
-      },
-      {
-        "name": "AMD Instinct MI300X",
-        "val": 153
-      },
-      {
-        "name": "NVIDIA Blackwell B200",
-        "val": 208
-      },
-      {
-        "name": "Apple M3 Max",
-        "val": 92
-      },
-      {
-        "name": "Intel Xeon Sapphire Rapids",
-        "val": 100
-      },
-      {
-        "name": "Qualcomm X Elite",
-        "val": 42
-      },
-      {
-        "name": "AMD RDNA 3 Navi 31",
-        "val": 58
-      },
-      {
-        "name": "ARM Cortex-X4",
-        "val": 6
-      },
-      {
-        "name": "RISC-V VisionFive 2 SoC",
-        "val": 2
-      }
+      {"name": "Apple M2 Ultra", "val": 134},
+      {"name": "NVIDIA H100", "val": 80},
+      {"name": "AMD EPYC Genoa (Zen 4)", "val": 90},
+      {"name": "Intel Meteor Lake", "val": 43},
+      {"name": "Apple A17 Pro", "val": 19},
+      {"name": "Qualcomm Snapdragon 8 Gen 3", "val": 16},
+      {"name": "AMD Radeon RX 7900 XTX", "val": 58},
+      {"name": "NVIDIA RTX 4090", "val": 76},
+      {"name": "Google TPU v4", "val": 57},
+      {"name": "IBM Telum (z16)", "val": 22},
+      {"name": "Samsung Exynos 2400", "val": 19},
+      {"name": "MediaTek Dimensity 9300", "val": 16},
+      {"name": "AMD Instinct MI300X", "val": 153},
+      {"name": "NVIDIA Blackwell B200", "val": 208},
+      {"name": "Apple M3 Max", "val": 92},
+      {"name": "Intel Xeon Sapphire Rapids", "val": 100},
+      {"name": "Qualcomm X Elite", "val": 42},
+      {"name": "AMD RDNA 3 Navi 31", "val": 58},
+      {"name": "ARM Cortex-X4", "val": 6},
+      {"name": "RISC-V VisionFive 2 SoC", "val": 2}
     ]
   },
   "taktfrequenz": {
     "prompt": "Welche CPU hat eine höhere Taktfrequenz?",
     "unit": "GHz (max. Boost)",
     "items": [
-      {
-        "name": "Intel Core i9-14900KS",
-        "val": 6.2
-      },
-      {
-        "name": "AMD Ryzen 9 7950X3D",
-        "val": 5.7
-      },
-      {
-        "name": "Intel Core i7-14700K",
-        "val": 5.6
-      },
-      {
-        "name": "Apple M3 Pro",
-        "val": 4.05
-      },
-      {
-        "name": "Qualcomm Snapdragon 8 Gen 3",
-        "val": 3.3
-      },
-      {
-        "name": "AMD Ryzen 5 7600X",
-        "val": 5.3
-      },
-      {
-        "name": "Intel Xeon w9-3595X",
-        "val": 4.8
-      },
-      {
-        "name": "AMD EPYC Genoa 9754",
-        "val": 3.1
-      },
-      {
-        "name": "Apple A17 Pro",
-        "val": 3.78
-      },
-      {
-        "name": "Samsung Exynos 2400",
-        "val": 3.2
-      },
-      {
-        "name": "Ampere Altra Max",
-        "val": 3.0
-      },
-      {
-        "name": "IBM POWER10",
-        "val": 4.0
-      },
-      {
-        "name": "Intel Core i5-13600K",
-        "val": 5.1
-      },
-      {
-        "name": "MediaTek Dimensity 9300",
-        "val": 3.25
-      },
-      {
-        "name": "AMD Ryzen Threadripper 7980X",
-        "val": 5.1
-      },
-      {
-        "name": "NVIDIA Grace CPU",
-        "val": 3.4
-      },
-      {
-        "name": "Intel Atom x7435RE",
-        "val": 2.0
-      },
-      {
-        "name": "Raspberry Pi 5 BCM2712",
-        "val": 2.4
-      },
-      {
-        "name": "ESP32-S3 (Xtensa LX7)",
-        "val": 0.24
-      },
-      {
-        "name": "Arduino Uno ATmega328P",
-        "val": 0.016
-      }
+      {"name": "Intel Core i9-14900KS", "val": 6.2},
+      {"name": "AMD Ryzen 9 7950X3D", "val": 5.7},
+      {"name": "Intel Core i7-14700K", "val": 5.6},
+      {"name": "Apple M3 Pro", "val": 4.05},
+      {"name": "Qualcomm Snapdragon 8 Gen 3", "val": 3.3},
+      {"name": "AMD Ryzen 5 7600X", "val": 5.3},
+      {"name": "Intel Xeon w9-3595X", "val": 4.8},
+      {"name": "AMD EPYC Genoa 9754", "val": 3.1},
+      {"name": "Apple A17 Pro", "val": 3.78},
+      {"name": "Samsung Exynos 2400", "val": 3.2},
+      {"name": "Ampere Altra Max", "val": 3.0},
+      {"name": "IBM POWER10", "val": 4.0},
+      {"name": "Intel Core i5-13600K", "val": 5.1},
+      {"name": "MediaTek Dimensity 9300", "val": 3.25},
+      {"name": "AMD Ryzen Threadripper 7980X", "val": 5.1},
+      {"name": "NVIDIA Grace CPU", "val": 3.4},
+      {"name": "Intel Atom x7435RE", "val": 2.0},
+      {"name": "Raspberry Pi 5 BCM2712", "val": 2.4},
+      {"name": "ESP32-S3 (Xtensa LX7)", "val": 0.24},
+      {"name": "Arduino Uno ATmega328P", "val": 0.016}
     ]
   },
   "freiheitsgrade": {
     "prompt": "Welcher Roboter/Arm hat mehr Freiheitsgrade (DoF)?",
     "unit": "Freiheitsgrade (DoF)",
     "items": [
-      {
-        "name": "KUKA KR QUANTEC (6-Achs)",
-        "val": 6
-      },
-      {
-        "name": "ABB YuMi (kollaborativ)",
-        "val": 14
-      },
-      {
-        "name": "Boston Dynamics Spot Arm",
-        "val": 5
-      },
-      {
-        "name": "Rethink Robotics Baxter",
-        "val": 14
-      },
-      {
-        "name": "Universal Robots UR10e",
-        "val": 6
-      },
-      {
-        "name": "Fanuc M-20iD",
-        "val": 6
-      },
-      {
-        "name": "NASA Robonaut 2 (Oberkörper)",
-        "val": 42
-      },
-      {
-        "name": "Shadow Dexterous Hand",
-        "val": 24
-      },
-      {
-        "name": "Schunk SVH (5-Finger-Hand)",
-        "val": 9
-      },
-      {
-        "name": "Atlas (Boston Dynamics)",
-        "val": 28
-      },
-      {
-        "name": "DJI RoboMaster S1 (Radarmodus)",
-        "val": 3
-      },
-      {
-        "name": "Doosan H2515 (Cobot)",
-        "val": 6
-      },
-      {
-        "name": "Agility Robotics Digit",
-        "val": 16
-      },
-      {
-        "name": "Spot (Boston Dynamics, Laufen)",
-        "val": 12
-      },
-      {
-        "name": "Hebi Robotics 5-DoF Arm",
-        "val": 5
-      },
-      {
-        "name": "Franka Research 3",
-        "val": 7
-      },
-      {
-        "name": "Kawasaki Duaro2 (Dual Arm)",
-        "val": 13
-      },
-      {
-        "name": "Stäubli TX2-60 (Scara)",
-        "val": 4
-      },
-      {
-        "name": "Mecademic Meca500",
-        "val": 6
-      },
-      {
-        "name": "Festo Bionic Cobot (Tentakelarm)",
-        "val": 12
-      }
+      {"name": "KUKA KR QUANTEC (6-Achs)", "val": 6},
+      {"name": "ABB YuMi (kollaborativ)", "val": 14},
+      {"name": "Boston Dynamics Spot Arm", "val": 5},
+      {"name": "Rethink Robotics Baxter", "val": 14},
+      {"name": "Universal Robots UR10e", "val": 6},
+      {"name": "Fanuc M-20iD", "val": 6},
+      {"name": "NASA Robonaut 2 (Oberkörper)", "val": 42},
+      {"name": "Shadow Dexterous Hand", "val": 24},
+      {"name": "Schunk SVH (5-Finger-Hand)", "val": 9},
+      {"name": "Atlas (Boston Dynamics)", "val": 28},
+      {"name": "DJI RoboMaster S1 (Radarmodus)", "val": 3},
+      {"name": "Doosan H2515 (Cobot)", "val": 6},
+      {"name": "Agility Robotics Digit", "val": 16},
+      {"name": "Spot (Boston Dynamics, Laufen)", "val": 12},
+      {"name": "Hebi Robotics 5-DoF Arm", "val": 5},
+      {"name": "Franka Research 3", "val": 7},
+      {"name": "Kawasaki Duaro2 (Dual Arm)", "val": 13},
+      {"name": "Stäubli TX2-60 (Scara)", "val": 4},
+      {"name": "Mecademic Meca500", "val": 6},
+      {"name": "Festo Bionic Cobot (Tentakelarm)", "val": 12}
     ]
   },
   "code_zeilen": {
     "prompt": "Welches Softwareprojekt hat mehr Codezeilen?",
     "unit": "Mio. Zeilen Code",
     "items": [
-      {
-        "name": "Linux Kernel",
-        "val": 27.8
-      },
-      {
-        "name": "Windows 11",
-        "val": 80
-      },
-      {
-        "name": "macOS Ventura",
-        "val": 85
-      },
-      {
-        "name": "Android AOSP",
-        "val": 21.5
-      },
-      {
-        "name": "Chromium Browser",
-        "val": 35
-      },
-      {
-        "name": "MySQL 8.0",
-        "val": 4.5
-      },
-      {
-        "name": "Firefox ESR",
-        "val": 20
-      },
-      {
-        "name": "LibreOffice",
-        "val": 14
-      },
-      {
-        "name": "Boeing 787 Avionik-Software",
-        "val": 6.5
-      },
-      {
-        "name": "LLVM/Clang",
-        "val": 10
-      },
-      {
-        "name": "OpenJDK",
-        "val": 4.2
-      },
-      {
-        "name": "Qt Framework 6",
-        "val": 8.3
-      },
-      {
-        "name": "Unreal Engine 5",
-        "val": 2.7
-      },
-      {
-        "name": "VLC Media Player",
-        "val": 0.7
-      },
-      {
-        "name": "Bash Shell",
-        "val": 0.18
-      },
-      {
-        "name": "Python CPython",
-        "val": 0.68
-      },
-      {
-        "name": "git (Versionsverwaltung)",
-        "val": 0.48
-      },
-      {
-        "name": "curl (Netzwerktool)",
-        "val": 0.145
-      }
+      {"name": "Linux Kernel", "val": 27.8},
+      {"name": "Google Gesamtcodebase", "val": 2000},
+      {"name": "Windows 11", "val": 80},
+      {"name": "macOS Ventura", "val": 85},
+      {"name": "Android AOSP", "val": 21.5},
+      {"name": "Chromium Browser", "val": 35},
+      {"name": "MySQL 8.0", "val": 4.5},
+      {"name": "Firefox ESR", "val": 20},
+      {"name": "LibreOffice", "val": 14},
+      {"name": "Boeing 787 Avionik-Software", "val": 6.5},
+      {"name": "Debian GNU/Linux (gesamt)", "val": 419},
+      {"name": "LLVM/Clang", "val": 10},
+      {"name": "OpenJDK", "val": 4.2},
+      {"name": "Qt Framework 6", "val": 8.3},
+      {"name": "Unreal Engine 5", "val": 2.7},
+      {"name": "VLC Media Player", "val": 0.7},
+      {"name": "Bash Shell", "val": 0.18},
+      {"name": "Python CPython", "val": 0.68},
+      {"name": "git (Versionsverwaltung)", "val": 0.48},
+      {"name": "curl (Netzwerktool)", "val": 0.145}
     ]
   },
   "release_jahr": {
     "prompt": "Welche Sprache/welches OS wurde früher veröffentlicht?",
     "unit": "Jahr",
     "items": [
-      {
-        "name": "Fortran",
-        "val": 1957
-      },
-      {
-        "name": "COBOL",
-        "val": 1959
-      },
-      {
-        "name": "C",
-        "val": 1972
-      },
-      {
-        "name": "SQL",
-        "val": 1974
-      },
-      {
-        "name": "Ada",
-        "val": 1980
-      },
-      {
-        "name": "C++",
-        "val": 1983
-      },
-      {
-        "name": "Perl",
-        "val": 1987
-      },
-      {
-        "name": "Python",
-        "val": 1991
-      },
-      {
-        "name": "Java",
-        "val": 1995
-      },
-      {
-        "name": "JavaScript",
-        "val": 1995
-      },
-      {
-        "name": "PHP",
-        "val": 1995
-      },
-      {
-        "name": "Ruby",
-        "val": 1995
-      },
-      {
-        "name": "C#",
-        "val": 2000
-      },
-      {
-        "name": "Scala",
-        "val": 2004
-      },
-      {
-        "name": "Go",
-        "val": 2009
-      },
-      {
-        "name": "Rust",
-        "val": 2010
-      },
-      {
-        "name": "Kotlin",
-        "val": 2011
-      },
-      {
-        "name": "TypeScript",
-        "val": 2012
-      },
-      {
-        "name": "Swift",
-        "val": 2014
-      },
-      {
-        "name": "Zig",
-        "val": 2016
-      }
+      {"name": "Fortran", "val": 1957},
+      {"name": "COBOL", "val": 1959},
+      {"name": "C", "val": 1972},
+      {"name": "SQL", "val": 1974},
+      {"name": "Ada", "val": 1980},
+      {"name": "C++", "val": 1983},
+      {"name": "Perl", "val": 1987},
+      {"name": "Python", "val": 1991},
+      {"name": "Java", "val": 1995},
+      {"name": "JavaScript", "val": 1995},
+      {"name": "PHP", "val": 1995},
+      {"name": "Ruby", "val": 1995},
+      {"name": "C#", "val": 2000},
+      {"name": "Scala", "val": 2004},
+      {"name": "Go", "val": 2009},
+      {"name": "Rust", "val": 2010},
+      {"name": "Kotlin", "val": 2011},
+      {"name": "TypeScript", "val": 2012},
+      {"name": "Swift", "val": 2014},
+      {"name": "Zig", "val": 2016}
     ]
   },
   "rechenleistung": {
     "prompt": "Welche GPU/welcher Supercomputer hat mehr Rechenleistung?",
     "unit": "TFLOPS (FP32)",
     "items": [
-      {
-        "name": "NVIDIA H100 SXM5",
-        "val": 66.9
-      },
-      {
-        "name": "NVIDIA RTX 4090",
-        "val": 82.6
-      },
-      {
-        "name": "AMD Instinct MI300X",
-        "val": 163.4
-      },
-      {
-        "name": "Intel Arc A770",
-        "val": 17.2
-      },
-      {
-        "name": "AMD Radeon RX 7900 XTX",
-        "val": 61.4
-      },
-      {
-        "name": "NVIDIA A100 80GB",
-        "val": 19.5
-      },
-      {
-        "name": "NVIDIA RTX 3090",
-        "val": 35.6
-      },
-      {
-        "name": "AMD Radeon RX 6900 XT",
-        "val": 23.0
-      },
-      {
-        "name": "NVIDIA L40S",
-        "val": 91.6
-      },
-      {
-        "name": "NVIDIA Blackwell B200",
-        "val": 150
-      },
-      {
-        "name": "AMD CDNA3 MI300A",
-        "val": 122.6
-      },
-      {
-        "name": "Intel Gaudi 3",
-        "val": 128
-      },
-      {
-        "name": "PlayStation 5 GPU",
-        "val": 10.3
-      },
-      {
-        "name": "Xbox Series X GPU",
-        "val": 12.0
-      },
-      {
-        "name": "Apple M2 Ultra GPU",
-        "val": 21.4
-      },
-      {
-        "name": "Qualcomm Adreno 750",
-        "val": 4.0
-      },
-      {
-        "name": "Raspberry Pi 4 VideoCore VI",
-        "val": 0.02
-      }
+      {"name": "NVIDIA H100 SXM5", "val": 66.9},
+      {"name": "NVIDIA RTX 4090", "val": 82.6},
+      {"name": "AMD Instinct MI300X", "val": 163.4},
+      {"name": "Intel Arc A770", "val": 17.2},
+      {"name": "AMD Radeon RX 7900 XTX", "val": 61.4},
+      {"name": "NVIDIA A100 80GB", "val": 19.5},
+      {"name": "Google TPU v4 (Pod)", "val": 1100},
+      {"name": "Frontier Supercomputer", "val": 1194000},
+      {"name": "Fugaku Supercomputer", "val": 442000},
+      {"name": "NVIDIA RTX 3090", "val": 35.6},
+      {"name": "AMD Radeon RX 6900 XT", "val": 23.0},
+      {"name": "NVIDIA L40S", "val": 91.6},
+      {"name": "NVIDIA Blackwell B200", "val": 150},
+      {"name": "AMD CDNA3 MI300A", "val": 122.6},
+      {"name": "Intel Gaudi 3", "val": 128},
+      {"name": "PlayStation 5 GPU", "val": 10.3},
+      {"name": "Xbox Series X GPU", "val": 12.0},
+      {"name": "Apple M2 Ultra GPU", "val": 21.4},
+      {"name": "Qualcomm Adreno 750", "val": 4.0},
+      {"name": "Raspberry Pi 4 VideoCore VI", "val": 0.02}
     ]
   },
   "internet_speed": {
     "prompt": "Welches Land hat eine höhere durchschnittliche Internetgeschwindigkeit?",
     "unit": "Mbps (Durchschnitt)",
     "items": [
-      {
-        "name": "Singapur",
-        "val": 262
-      },
-      {
-        "name": "Chile",
-        "val": 193
-      },
-      {
-        "name": "Dänemark",
-        "val": 187
-      },
-      {
-        "name": "China",
-        "val": 175
-      },
-      {
-        "name": "USA",
-        "val": 168
-      },
-      {
-        "name": "Schweiz",
-        "val": 164
-      },
-      {
-        "name": "Schweden",
-        "val": 156
-      },
-      {
-        "name": "Südkorea",
-        "val": 253
-      },
-      {
-        "name": "Hongkong",
-        "val": 240
-      },
-      {
-        "name": "Deutschland",
-        "val": 78
-      },
-      {
-        "name": "Frankreich",
-        "val": 96
-      },
-      {
-        "name": "Japan",
-        "val": 135
-      },
-      {
-        "name": "Niederlande",
-        "val": 143
-      },
-      {
-        "name": "Norwegen",
-        "val": 122
-      },
-      {
-        "name": "Australien",
-        "val": 61
-      },
-      {
-        "name": "Brasilien",
-        "val": 52
-      },
-      {
-        "name": "Indien",
-        "val": 39
-      },
-      {
-        "name": "Nigeria",
-        "val": 18
-      },
-      {
-        "name": "Russland",
-        "val": 68
-      },
-      {
-        "name": "Türkei",
-        "val": 43
-      }
+      {"name": "Singapur", "val": 262},
+      {"name": "Chile", "val": 193},
+      {"name": "Dänemark", "val": 187},
+      {"name": "China", "val": 175},
+      {"name": "USA", "val": 168},
+      {"name": "Schweiz", "val": 164},
+      {"name": "Schweden", "val": 156},
+      {"name": "Südkorea", "val": 253},
+      {"name": "Hongkong", "val": 240},
+      {"name": "Deutschland", "val": 78},
+      {"name": "Frankreich", "val": 96},
+      {"name": "Japan", "val": 135},
+      {"name": "Niederlande", "val": 143},
+      {"name": "Norwegen", "val": 122},
+      {"name": "Australien", "val": 61},
+      {"name": "Brasilien", "val": 52},
+      {"name": "Indien", "val": 39},
+      {"name": "Nigeria", "val": 18},
+      {"name": "Russland", "val": 68},
+      {"name": "Türkei", "val": 43}
     ]
   },
   "tdp": {
     "prompt": "Welche CPU/GPU hat einen höheren TDP-Wert?",
     "unit": "Watt (TDP)",
     "items": [
-      {
-        "name": "Intel Core i9-14900KS",
-        "val": 253
-      },
-      {
-        "name": "AMD Threadripper PRO 7985WX",
-        "val": 350
-      },
-      {
-        "name": "NVIDIA RTX 4090",
-        "val": 450
-      },
-      {
-        "name": "AMD Radeon RX 7900 XTX",
-        "val": 355
-      },
-      {
-        "name": "Intel Xeon w9-3595X",
-        "val": 350
-      },
-      {
-        "name": "NVIDIA H100 SXM5",
-        "val": 700
-      },
-      {
-        "name": "AMD Instinct MI300X",
-        "val": 750
-      },
-      {
-        "name": "AMD EPYC Genoa 9754",
-        "val": 360
-      },
-      {
-        "name": "Apple M2 Ultra",
-        "val": 90
-      },
-      {
-        "name": "Qualcomm Snapdragon 8 Gen 3",
-        "val": 15
-      },
-      {
-        "name": "Raspberry Pi 5",
-        "val": 12
-      },
-      {
-        "name": "Arduino Mega 2560",
-        "val": 0.47
-      },
-      {
-        "name": "Intel Core i5-13400",
-        "val": 65
-      },
-      {
-        "name": "AMD Ryzen 5 7600",
-        "val": 65
-      },
-      {
-        "name": "NVIDIA RTX 4060 Ti",
-        "val": 165
-      },
-      {
-        "name": "Intel Arc A380",
-        "val": 75
-      },
-      {
-        "name": "NVIDIA Blackwell B200 (Server)",
-        "val": 1000
-      },
-      {
-        "name": "Google TPU v4 Chip",
-        "val": 175
-      },
-      {
-        "name": "IBM POWER10 (75-Kern)",
-        "val": 300
-      },
-      {
-        "name": "ARM Cortex-A55 (mobil)",
-        "val": 1
-      }
+      {"name": "Intel Core i9-14900KS", "val": 253},
+      {"name": "AMD Threadripper PRO 7985WX", "val": 350},
+      {"name": "NVIDIA RTX 4090", "val": 450},
+      {"name": "AMD Radeon RX 7900 XTX", "val": 355},
+      {"name": "Intel Xeon w9-3595X", "val": 350},
+      {"name": "NVIDIA H100 SXM5", "val": 700},
+      {"name": "AMD Instinct MI300X", "val": 750},
+      {"name": "AMD EPYC Genoa 9754", "val": 360},
+      {"name": "Apple M2 Ultra", "val": 90},
+      {"name": "Qualcomm Snapdragon 8 Gen 3", "val": 15},
+      {"name": "Raspberry Pi 5", "val": 12},
+      {"name": "Arduino Mega 2560", "val": 0.47},
+      {"name": "Intel Core i5-13400", "val": 65},
+      {"name": "AMD Ryzen 5 7600", "val": 65},
+      {"name": "NVIDIA RTX 4060 Ti", "val": 165},
+      {"name": "Intel Arc A380", "val": 75},
+      {"name": "NVIDIA Blackwell B200 (Server)", "val": 1000},
+      {"name": "Google TPU v4 Chip", "val": 175},
+      {"name": "IBM POWER10 (75-Kern)", "val": 300},
+      {"name": "ARM Cortex-A55 (mobil)", "val": 1}
     ]
   }
 }

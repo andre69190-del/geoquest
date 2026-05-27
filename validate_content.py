@@ -191,7 +191,10 @@ def check_hl(filename, data):
                  f"Extreme value ratio {ratio:.0f}× (min={min_v}, max={max_v}) — "
                  f"possible mixed units. Check: {extremes}")
 
-        # Z-score single outlier (one item >4σ from mean)
+        # Z-score single outlier — INFO only, not a warning (Phase 247)
+        # Extreme values are intentional game content (Sauerbraten, Wanderratte, etc.).
+        # La-Paz-Fenster (W=10%) prevents trivial pairings in-engine. Only flag as
+        # [INFO] so QA warning count stays clean. Verify units manually if flagged.
         mean_v = sum(numeric_vals) / len(numeric_vals)
         variance = sum((v - mean_v) ** 2 for v in numeric_vals) / len(numeric_vals)
         if variance > 0:
@@ -199,8 +202,9 @@ def check_hl(filename, data):
             for name, v in vals:
                 z = abs(v - mean_v) / stddev
                 if z > 4.0:
-                    warn(filename, key, name,
-                         f"Statistical outlier z={z:.1f} (val={v}, mean={mean_v:.1f}) — verify unit")
+                    print(f"  [INFO] {filename} / {key} / {name}: "
+                          f"z={z:.1f} (val={v}, mean={mean_v:.1f}) — "
+                          f"intentional extreme, check units only")
 
 # ──────────────────────────────────────────────────────────────────────────────
 # CHECK 3 — Match data   (*_match.json, tiere_match.json, kultur.json)

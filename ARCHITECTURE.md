@@ -223,6 +223,26 @@ function genTiereHL(dataKey) {
 
 ---
 
+### ⚠️ Regel: Statistische Ausreißer in H/L-Datensätzen sind GEWOLLT — niemals automatisch löschen
+
+**Kontext:** In `_hl.json`-Datensätzen tauchen naturgemäß Werte mit hohem Z-Score auf (z.B. Wanderratte: 7 Mrd. Individuen, Sauerbraten: 5760 min Zubereitungszeit, Röm. Heerstraßen: 400.000 km).
+
+**Die Regel:** Statistische Ausreißer dürfen **niemals automatisch oder allein wegen eines hohen Z-Scores gelöscht werden**, sofern Faktenlage und Maßeinheiten korrekt sind.
+
+**Begründung — zwei Schutzebenen:**
+
+1. **Game Design:** Extreme Superlative ("die größten, schwersten, ältesten Dinge") sind essenzielle "Wow"-Momente für den Spielspaß. Sie zu entfernen macht das Spiel trivial.
+
+2. **Architektur-Schutz (La-Paz-Fenster):** `_mkHL` sortiert den Datensatz vor jeder Abfrage nach Wert. Ein Extremwert auf Platz 1 tritt architektonisch zwingend nur gegen Platz 2 oder 3 an — ein triviales Duell "Größtes vs. Kleinstes" ist durch den Algorithmus bereits unmöglich.
+
+**Anweisung für Validierung & Content-Erstellung:**
+
+- Meldet `validate_content.py` einen Z-Score-Ausreißer (`[INFO]`), ist das **nur ein Hinweis zur Prüfung der Maßeinheiten** (z.B. "Wurden versehentlich Gramm mit Tonnen gemischt?").
+- Sind Einheiten konsistent und der Fakt korrekt → Datensatz **zwingend erhalten**.
+- `validate_content.py` gibt Z-Score-Ausreißer daher nur als stummen `[INFO]`-Print aus, **nicht** als `⚠ warn()`, um den QA-Warning-Count nicht künstlich aufzublähen.
+
+---
+
 ### 3.3 Universal Match Engine (`genUniversalMatchQ`)
 
 **Aufgabe:** Multiple-Choice-Zuordnung — zu einem Subjekt (z.B. "Sushi") muss das korrekte Land/die korrekte Kategorie gewählt werden.
