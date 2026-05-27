@@ -13692,7 +13692,7 @@ function renderOnboarding(step){
     <div class="ob-lang-grid">
       ${OB_LANGS.map(([l,f,n])=>`<div class="ob-lang ${S.obLang===l?"sel":""}" onclick="S.obLang='${l}';S.language='${l}';render()">${f} ${n}</div>`).join("")}
     </div>
-    <button class="btn-p" onclick="S.obStep=1;render()">${t("btn_next")}</button>
+    <button class="btn-p" onclick="S.language=S.obLang;localStorage.setItem('gq_lang',S.obLang);S.obStep=1;render()">${t("btn_next")}</button>
     <button class="btn-g" style="margin-top:.3rem;margin-bottom:0;font-size:.82rem;color:var(--text3);background:transparent;border:none;text-decoration:underline" onclick="const ob=loadOb();if(!ob)localStorage.setItem('gq_onboarding',JSON.stringify({done:true,lang:'de',diff:'casual'}));S.obStep=0;S.tab='profil';S.authMode='login';render()">${t("ob_have_account")}</button>
     <button class="btn-g" style="margin-top:.2rem;margin-bottom:0;font-size:.82rem;color:var(--text3);background:transparent;border:none;text-decoration:underline" onclick="const ob=loadOb();if(!ob)localStorage.setItem('gq_onboarding',JSON.stringify({done:true,lang:'de',diff:'casual'}));S.obStep=0;S.tab='profil';S.authMode='register';render()">${t("ob_register")}</button>
   </div></div>`;
@@ -14822,4 +14822,3 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 # Also write index.html for Netlify / direct hosting
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
-print('Also written -> index.html (Netlify deploy target)')

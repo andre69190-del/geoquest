@@ -8,7 +8,7 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "CONTENT: Phase 253+254. Geo+Sport Expansion — 70 neue Modi (12+8 Pin, 10+8 HL, 12+8 Match, 6+6 WS). MODES: 607->677. Geo: Felsformationen, Hoehlen, Canyons, Geysire, Fossilien, Ozeangraeben, Gletscher, Wuesten, Minen, Rifts, Nationalparks, Steilkuesten, Mohshaerte, VEI, Bohrtiefe, Tsunami u.v.m. Sport: Fussballstadien, Motorsport, Wintersport, Tennis, Skigebiete, Golf, Surfen, Klettern, Transferrekorde, Olympia-Gold, Stadionbaujahr u.v.m. ARCHITECTURE.md aktualisiert. verify: 89/89 | validate: 58 warnings."
+git commit -m "BUGFIX+LANDING: Phase 255. Onboarding i18n-Fix: Weiter-Button setzt S.language=S.obLang+localStorage -> Schwierigkeits-Screen in korrekter Sprache. Landing: UTF-8 Umlaute, impressum.html, datenschutz.html, robots.txt, sitemap.xml, vercel.json. gen.py Trailing-Paren-Fix. verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
