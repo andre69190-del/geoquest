@@ -8181,7 +8181,7 @@ function _mkMatchQ(DATA){
       var pool=items.map(function(x){return x.c;}).filter(function(c){return c!==correct.c;});
       var seen=new Set();
       pool=pool.filter(function(c){if(seen.has(c))return false;seen.add(c);return true;});
-      while(pool.length<3)pool.push(pool[~~(rng()*pool.length)]||correct.c);
+      /* Phase 237: no padding — allow 1-2 distractors for binary/ternary datasets */
       pool=pool.sort(function(){return rng()-0.5;}).slice(0,3);
       opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
     }

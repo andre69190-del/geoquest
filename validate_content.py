@@ -181,7 +181,7 @@ def check_hl(filename, data):
             continue
 
         # Mixed-unit outlier check (e.g. grams vs kilograms in same list)
-        if min_v > 0 and max_v > min_v * 1000:
+        if min_v > 0 and max_v > min_v * 10_000_000:  # Phase 237: raised for biological/geological ranges
             ratio = max_v / min_v
             extremes = [(n, v) for n, v in vals if v == min_v or v == max_v]
             warn(filename, key, None,
@@ -412,16 +412,6 @@ def main():
 
         if STRICT:
             print(f"{ERR}--strict mode: exiting with code 1 due to {len(warnings)} warning(s){RESET}\n")
-            sys.exit(1)
-        else:
-            print(f"ℹ  Re-run with --strict to fail CI on warnings.\n")
-    else:
-        print(f"{OK}All content checks passed — no warnings found.{RESET}\n")
-
-
-if __name__ == "__main__":
-    main()
-ue to {len(warnings)} warning(s){RESET}\n")
             sys.exit(1)
         else:
             print(f"ℹ  Re-run with --strict to fail CI on warnings.\n")
