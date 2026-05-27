@@ -24,7 +24,6 @@
         "HALT",
         "HORN",
         "ORAL",
-        "TORION",
         "ATHLON"
       ]
     }
@@ -43,7 +42,6 @@
         "SAAL",
         "STALL",
         "FALLS",
-        "FLUSS",
         "ATLAS",
         "TAFEL"
       ]

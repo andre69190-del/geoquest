@@ -127,3 +127,4 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_241_security_ux.py | 241 | Security cap (100k/1k), Gameover Offline-Banner, verify.py Section-0 dynamisch |
 | patch_242_engine_animals.py | 242 | Tiere-Pin JSON, Daily 5-mode rotation, Blitz-Modus (60s speed round) |
 | patch_243_new_worlds.py | 243 | 3 Neue Welten: Astronomie, Geologie, Sport-Wissen (12 JSON, 32 Modi) |
+| (hotfix) data/*.json    | 245 | WS-Halluzinationen, tiere/astro/geo/sport _pin Struktur, WS-Duplikate |

@@ -74,12 +74,15 @@ def round4(v):
 # ──────────────────────────────────────────────────────────────────────────────
 
 def check_pin(filename, data):
-    seen_coords = {}  # (lat4, lng4) → first item name
     for key, block in data.items():
         items = block.get("items", []) if isinstance(block, dict) else []
         if not items:
             warn(filename, key, None, "No items array found")
             continue
+
+        # Duplicate check scoped per category — same city legitimately appears
+        # in multiple categories, but should not appear twice within one category.
+        seen_coords = {}  # (lat4, lng4) → first item name  [per-category scope]
 
         for item in items:
             n = item.get("n", "<unnamed>")
@@ -225,13 +228,21 @@ def check_match(filename, data):
                 if field not in item:
                     warn(filename, key, n, f"Missing required field '{field}'")
 
-        # Distraktor pool: need ≥4 unique `c` values so engine can pick 3 wrong + 1 right
+        # Distraktor pool check (Phase 237: engine allows 1-2 distractors for binary/ternary sets)
+        # ≥2 unique c-values: minimum for any meaningful choice (ERROR if < 2)
+        # ≥4 unique c-values: optimal for 3 distractors (advisory if < 4)
         c_values = [item["c"] for item in items if "c" in item]
         unique_c = set(c_values)
-        if len(unique_c) < 4:
+        if len(unique_c) < 2:
+            warn(filename, key, None,
+                 f"Only {len(unique_c)} unique answer category — game is broken "
+                 f"(all items have the same answer). Found: {sorted(unique_c)}")
+        elif len(unique_c) < 4:
             warn(filename, key, None,
                  f"Only {len(unique_c)} unique answer categories (c-values) — "
-                 f"need ≥4 for 3 distractors. Found: {sorted(unique_c)}")
+                 f"engine will use fewer than 3 distractors. "
+                 f"OK for binary/ternary questions; add more variety otherwise. "
+                 f"Found: {sorted(unique_c)}")
 
         # Duplicate subjects check (same question asked twice)
         n_values = [item.get("n","") for item in items]
