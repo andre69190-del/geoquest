@@ -8,8 +8,8 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "DATA+QA: Phase 248. WS-EN-Fallback: validWords.en fuer 9 Modi (astro/geo/sport_ws). pflanzen_match: bestuaeber-Korruption gefixt + Mais-Duplikat entfernt. pflanzen_pin: nationalblumen wiederhergestellt (20 Items) + Klee-Duplikat entfernt. validate: 37/37 OK | 49 warnings. verify: 89/89."
+git commit -m "SECURITY+QA: Phase 249. submitRouteResult() extrahiert -> _TRUSTED_FNS (Anti-Cheat). PWA-Banner DOM-Fix (beforeinstallprompt->render()). LocalStorage TTL 90d (Date.parse statt timestamp). run_patch.py: validate_content.py nach verify.py. verify: 89/89 | validate: 49 warnings."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
-pau
+pause

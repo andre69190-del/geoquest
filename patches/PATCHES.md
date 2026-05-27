@@ -114,3 +114,23 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_227b_tiere_data_part1.py | 227b | Tiere Pin + HL data + generators |
 | patch_227c_tiere_data_part2.py | 227c | Tiere Match data + generator |
 | patch_227d_pferde_dlc.py | 227d | Pferde DLC: Rassen, Fachbegriffe, Stockmass, Fluesterer |
+| patch_228_pflanzen.py | 228 | Pflanzen-Kategorie (4 JSON-Dateien, ~55 Modi) |
+| patch_229_gastronomie.py | 229 | Gastronomie-Kategorie (4 JSON-Dateien, ~51 Modi) |
+| patch_230_tech_emob.py | 230 | Tech + E-Mobilitaet (8 JSON-Dateien, ~110 Modi) |
+| patch_231_archaeologie.py | 231 | Archaeologie (4 JSON-Dateien, ~60 Modi) |
+| patch_235_fixes.py | 235 | Qualitaets-Patch: BETA-Tags, Pflanzen-Gruppe, Datendichte |
+| patch_236_fixes.py | 236 | Weitere QA-Fixes |
+| patch_237_qa_triage.py | 237 | QA-Triage: Duplikate, WS-Validierung, Koordinaten |
+| patch_238_offline_sw.py | 238 | SW blob→sw.js, hash-versioned cache, manifest.json, verify Section 12 |
+| patch_239_offline_ux.py | 239 | Auth-UX: _authErrMsg(), navigator.onLine guards (4 Funktionen) |
+| patch_240_offline_sync.py | 240 | isOffline state, online/offline listeners, Score-Queue, syncOfflineData() |
+| patch_241_security_ux.py | 241 | Security cap (100k/1k), Gameover Offline-Banner, verify.py Section-0 dynamisch |
+| patch_242_engine_animals.py | 242 | Tiere-Pin JSON, Daily 5-mode rotation, Blitz-Modus (60s speed round) |
+| patch_243_new_worlds.py | 243 | 3 Neue Welten: Astronomie, Geologie, Sport-Wissen (12 JSON, 32 Modi) |
+| (hotfix) data/*.json    | 245 | WS-Halluzinationen, tiere/astro/geo/sport _pin Struktur, WS-Duplikate |
+| (improve) validate_content.py | 246 | Duplikat-Scope per Kategorie, WS-Mindestwoerter, WS-Duplikat-Check, Match-Schwellwert |
+| patch_243b_modes_fix.py | 243b | 32 fehlende MODES-Eintraege fuer Astro/Geo/Sport (leere Akkordeons gefixt) |
+| (hotfix) data/*_hl.json | 247 | 16 HL-Ausreisser z>4sigma entfernt (Sauerbraten, Balsamico, TPU-Pod u.a.) |
+| (hotfix) data/astro_ws.json, geo_ws.json, sport_ws.json | 248 | WS-EN-Fallback: validWords.en fuer 9 Modi (Astro/Geo/Sport) ergaenzt |
+| (hotfix) data/pflanzen_match.json, pflanzen_pin.json | 248 | bestuaeber-Korruption gefixt, Mais-Duplikat entfernt, nationalblumen wiederhergestellt |
+| patch_249_polish.py | 249 | Security: submitRouteResult() in _TRUSTED_FNS. PWA-Banner fix (DOM-Element). LS-TTL 90d. run_patch.py Pipeline-Upgrade |

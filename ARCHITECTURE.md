@@ -804,4 +804,399 @@ if(!navigator.onLine){
 ```javascript
 function _authErrMsg(err){
   if(!err) return '';
-  con
+  const m = err?.message || err?.error_description || '';
+  if(m && m.trim()) return m.trim();
+  return 'Verbindungsfehler zum Server.';  // Fallback für {} aus 503-Body-Parse-Fehler
+}
+```
+Verhindert, dass `{}` als Fehlermeldung im UI erscheint wenn Supabase offline ist.
+
+### Offline Score Queue (Phase 240)
+
+**Beim Spielen offline** schreibt `saveSession()` in die LocalStorage-Queue statt zu Supabase:
+
+```javascript
+if(!sb || !sbUser?.id || !navigator.onLine){
+  if(score > 0){
+    const _q = JSON.parse(localStorage.getItem('gq_offline_queue') || '{"pendingScore":0,"pendingCoins":0}');
+    _q.pendingScore += score;
+    _q.pendingCoins += Math.floor(score / 100);
+    localStorage.setItem('gq_offline_queue', JSON.stringify(_q));
+  }
+  return;
+}
+// ... normaler Supabase-Write
+```
+
+**Beim Reconnect** ruft der `online`-Event-Listener `syncOfflineData()` auf:
+
+```javascript
+window.addEventListener('online', function(){
+  S.isOffline = false;
+  render();
+  syncOfflineData();
+});
+
+async function syncOfflineData(){
+  if(!sb || !sbUser?.id || !navigator.onLine) return;
+  const _q = JSON.parse(localStorage.getItem('gq_offline_queue'));
+  if(!_q || (!_q.pendingScore && !_q.pendingCoins)) return;
+  await sb.rpc('add_score', {
+    p_user_id: sbUser.id,
+    p_score: _q.pendingScore || 0,
+    p_coins: _q.pendingCoins || 0,
+    p_rounds: 0,
+    p_duration_ms: 0
+  });
+  localStorage.removeItem('gq_offline_queue');
+  showToast('✅ Offline-Ergebnisse synchronisiert!');
+  render();
+}
+```
+
+**Offline-Banner im Profil-Tab:** Wenn `S.isOffline === true` erscheint eine rote Benachrichtigungsleiste im Profil-Tab, die den Nutzer informiert, dass Ergebnisse lokal zwischengespeichert und beim nächsten Online-Start automatisch synchronisiert werden.
+
+---
+
+## 9. Bekannte Fallstricke & Gotchas
+
+### ⚠️ KRITISCH: `targetLat`/`targetLng` — NICHT `lat`/`lng`
+
+Die Game-Engine verwendet für alle Pin-Modi ausschließlich die Feldnamen `targetLat` und `targetLng` im Question-Objekt `S.q`:
+
+```javascript
+// Engine-Scoring (haversine):
+const dist = haversineKm(clickedLat, clickedLng, S.q.targetLat, S.q.targetLng);
+```
+
+**Jeder Generator, der ein `uk_pin`-Question-Objekt zurückgibt, MUSS `targetLat`/`targetLng` verwenden.**
+
+❌ **FALSCH:**
+```javascript
+return { type: "uk_pin", subj: item.n, lat: item.lat, lng: item.lng, ... };
+```
+
+✅ **RICHTIG:**
+```javascript
+return { type: "uk_pin", subj: item.n, targetLat: item.lat, targetLng: item.lng,
+         ans: item.n, lid: "prefix_" + cat + "_" + idx, cc: null, ... };
+```
+
+**Pflichtfelder eines vollständigen `uk_pin`-Question-Objekts:**
+
+| Feld | Typ | Bedeutung |
+|------|-----|-----------|
+| `type` | `"uk_pin"` | Fragetyp |
+| `subj` | string | Anzeigename (ggf. spoiler-bereinigt) |
+| `ans` | string | Vollständiger korrekter Name (nie im DOM) |
+| `targetLat` | number | Breitengrad des Zielorts |
+| `targetLng` | number | Längengrad des Zielorts |
+| `lid` | string | Eindeutige Level-ID für Dedup |
+| `cc` | string\|null | Ländercode (optional, für Flaggen-Icon) |
+| `prompt` | string | Fragetext |
+
+> **Hintergrund:** Dieser Bug trat in Phase 229–231 auf, weil die `_mkPinQ`-Factory-Funktion mit `lat`/`lng` implementiert wurde, während `genUniversalPinQ` von Anfang an korrekt `targetLat`/`targetLng` nutzte. Symptom: Karte zeigt Pin bei (0,0), Feedback zeigt "0 km entfernt · 0 Pkt.". Fix: Phase 232, `_mkPinQ` auf `targetLat`/`targetLng` umgestellt.
+
+---
+
+### ⚠️ Neue MODE_CATS müssen in `_CAT_ORDER` ergänzt werden
+
+`renderHomeTab()` verwendet eine Liste `_CAT_ORDER` zur Reihenfolge der Kategorien. Ab Phase 232 wird diese dynamisch befüllt — alle Einträge aus `MODE_CATS`, die nicht in der festen Liste sind, werden automatisch angehängt:
+
+```javascript
+const fixed = ["pure_geo", "lifestyle", ..., "tiere", "pflanzen", "gastronomie", ...];
+const extra = Object.keys(MODE_CATS).filter(k => !fixed.includes(k));
+const _CAT_ORDER = fixed.concat(extra);
+```
+
+Neue Kategorien erscheinen damit **automatisch** am Ende der Liste. Soll eine neue Kategorie an einer bestimmten Position erscheinen, muss sie manuell in `fixed` eingetragen werden.
+
+---
+
+### ⚠️ `KULTUR_DATA` unterstützt zwei Datenformate
+
+Ältere Einträge in `data/kultur.json` sind **einfache Arrays**:
+```json
+"tiere_endemisch": [ {"n": "...", "lat": 1.0, "lng": 2.0}, ... ]
+```
+
+Neuere Einträge (ab Phase 227) sind **Objekte mit Prompt**:
+```json
+"tiere_zoos": { "prompt": "Wo liegt dieser Zoo?", "items": [ {"n": "...", "lat": 1.0, "lng": 2.0} ] }
+```
+
+`genUniversalPinQ` erkennt beide Formate automatisch:
+```javascript
+const data = Array.isArray(raw) ? raw : (raw.items || []);
+const storedPrompt = Array.isArray(raw) ? null : raw.prompt;
+```
+
+Alle anderen Datendateien (`gastro_pin.json`, `tech_pin.json`, etc.) verwenden **ausschließlich** das Objekt-Format.
+
+---
+
+### ⚠️ Pin-Modus: Name des Ortes wird absichtlich angezeigt
+
+Bei allen `uk_pin`-Modi (z.B. "Wo liegt dieser Solarpark?") wird der **Name des gesuchten Ortes im Fragetext angezeigt**. Das ist kein Bug — es ist das beabsichtigte Spielkonzept: Der Spieler kennt den Namen und muss die **Position auf der Karte** finden. Der kognitive Aufwand liegt im geografischen Wissen, nicht im Erraten des Namens.
+
+> Der Name `subj` erscheint im Header. `ans` (vollständiger Name inkl. Klammern) wird **niemals** als DOM-Attribut gesetzt — Anti-Cheat bleibt gewahrt.
+
+---
+
+### ⚠️ Pin-Feedback: "0 Pkt." trotz Punkte — Anzeigebug-Muster
+
+Das Feedback-Pill für `uk_pin`/`airport_pin` verwendet zwei separate Renderpfade. **Tatsächlich werden Punkte auch bei falscher Antwort vergeben** (solange `dist < 2500 km`):
+
+```javascript
+const pts = Math.max(0, Math.round(500 * (1 - dist / 2500)));
+```
+
+Das Scoring: 500 Pkt. bei 0 km, 0 Pkt. ab 2500 km linear.
+
+**Regel:** Niemals Punkte im `ng`-Pfad hardcoden — immer `apPts` auslesen:
+```javascript
+// ✅ RICHTIG:
+:`<div class="fb ng">✗ ${apDist} km${apPts > 0 ? " · +" + apPts + " Pkt." : ""}</div>`;
+```
+
+---
+
+### ⚠️ `_mkHL`-Factory muss `type:"beta_hl"` zurückgeben — NICHT `type:"hl"`
+
+Die Render-Engine hat **keinen Handler für `type:"hl"`**. Die einzigen unterstützten H/L-Typen sind:
+`hl_pop`, `hl_river`, `hl_area`, `uk_hl`, **`beta_hl`**
+
+✅ **RICHTIG** — muss `beta_hl`-Format mit `opts`/`ans`/`meta` zurückgeben:
+```javascript
+return {
+  type: "beta_hl",
+  prompt: d.prompt || "Welches ist mehr?",
+  subj: "",
+  opts: [a.name, b.name],          // ← Pflicht: Array mit 2 Namen
+  ans: higher.name,                 // ← Pflicht: Name des Gewinners
+  meta: a.name+": "+a.val+" "+unit+" · "+b.name+": "+b.val+" "+unit,
+  lid: "mhl_"+key+"_"+Math.min(ai,bi)+"_"+Math.max(ai,bi),
+  cc: "de"
+};
+```
+
+**Referenz-Implementierungen** (korrekt, getestet): `genTiereHL`, `genPflanzenHL`
+
+---
+
+### ⚠️ `sw.js` wird bei jedem Build überschrieben
+
+`sw.js` wird von `gen.py` generiert — manuelle Änderungen an `sw.js` werden beim nächsten `python3 gen.py` überschrieben. Alle SW-Anpassungen gehören in den GENERATORS-Block in `gen.py`.
+
+---
+
+### ⚠️ SVG-Kartenlabel: Lange Namen overflow die Karte
+
+Die Korrekt-Antwort-Markierung nach einer Pin-Antwort rendert `S.q.ans` als SVG-Text. Lange Namen füllen die gesamte Kartenbreite.
+
+**Regel:** Label immer auf max. 22 Zeichen kürzen:
+```javascript
+// ✅ RICHTIG:
+.text((S.q.ans||"").length > 22 ? (S.q.ans||"").slice(0,20) + "…" : S.q.ans||"")
+```
+
+---
+
+### ⚠️ `unlock_and_push.bat` muss `git push origin main` enthalten
+
+Das Bat-File committed nur lokal (`git commit`). Ohne `git push origin main` erreichen die Änderungen Vercel/GitHub nie. **Pflicht-Inhalt:**
+```bat
+git add -A
+git commit -m "..."
+git push origin main
+```
+
+Symptom wenn vergessen: `nothing to commit, working tree clean` beim zweiten Ausführen, aber deployed Version ist noch alt.
+
+---
+
+### ⚠️ verify.py kann Null-Bytes enthalten (Padding-Korruption)
+
+Wenn `verify.py` mit `SyntaxError: source code cannot contain null bytes` fehlschlägt, hat das File binäre Null-Bytes als Padding bekommen. Fix:
+```python
+with open('verify.py', 'rb') as f: content = f.read()
+with open('verify.py', 'wb') as f: f.write(content.replace(b'\x00', b''))
+```
+
+---
+
+## 10. Supabase-Schema
+
+GeoQuest nutzt Supabase für optionale Cloud-Features: Score-Sync, Leaderboards, Profil, Liga, Sammelmarken. Alle Features funktionieren auch ohne Supabase (localStorage-Fallback).
+
+### Tabellen
+
+**`profiles`** — Ein Eintrag pro registriertem User:
+
+| Spalte | Typ | Beschreibung |
+|--------|-----|--------------|
+| `id` | uuid (PK) | Supabase Auth User-ID |
+| `username` | text | Anzeigename |
+| `total_score` | integer | Gesamtpunkte aller Zeiten |
+| `games_played` | integer | Anzahl gespeicherter Sessions |
+| `geo_coins` | integer | Aktuelle Münzen (Ingame-Währung) |
+| `current_title` | text | Aktueller Titel (z.B. "Weltentdecker") |
+| `joker_5050` | integer | Verbleibende 50/50-Joker |
+| `joker_freeze` | integer | Verbleibende Freeze-Joker |
+| `plates_collected` | jsonb | Gesammelte Kennzeichen `{cc: count}` |
+| `stats_mastery` | jsonb | Mastery-Map `{cc: {n, p, t, ts}}` |
+| `stats_history` | jsonb | Wöchentliche Score-History |
+| `survival_best` | integer | Bester Survival-Score |
+| `last_daily_date` | text | Datum der letzten Daily-Challenge (YYYY-MM-DD) |
+| `league_id` | integer | Aktuelle Liga-Stufe |
+| `league_score` | integer | Punkte in der aktuellen Liga-Woche |
+
+**`game_sessions`** — Jede gespeicherte Spielsession:
+
+| Spalte | Typ | Beschreibung |
+|--------|-----|--------------|
+| `id` | bigint (PK, auto) | Session-ID |
+| `user_id` | uuid (FK → profiles) | Spieler |
+| `mode` | text | Modus-ID (z.B. "city", "uk_getraenke") |
+| `score` | integer | Erreichter Score |
+| `best_streak` | integer | Bester Streak dieser Session |
+| `rounds` | integer | Anzahl Runden (immer 10) |
+| `accuracy` | integer | Trefferquote in % |
+| `username` | text | Snapshot des Usernamens zum Zeitpunkt |
+| `device_type` | text | `"mobile"` oder `"desktop"` |
+| `created_at` | timestamptz | Timestamp |
+
+**`leaderboard_weekly`** — View (kein direktes Insert möglich):
+
+Gibt die wöchentliche Rangliste für einen Modus zurück. Wird über `sb.from("leaderboard_weekly").select("*").eq("mode", mode).order("rank")` abgefragt.
+
+**`passport_stamps`** — Reisepass-Stempel (via `upsert_stamp` RPC):
+
+Speichert pro User × Länderkürzel ob der Stempel gesammelt und ob Mastery erreicht wurde.
+
+### RPCs (Stored Functions)
+
+Alle schreibenden Score-Operationen laufen über RPCs — niemals direkte `UPDATE profiles SET total_score = ...` vom Client. Verhindert Client-seitige Manipulation.
+
+| RPC | Parameter | Beschreibung |
+|-----|-----------|--------------|
+| `add_score` | `p_user_id`, `p_score`, `p_coins`, `p_rounds`, `p_duration_ms` | Addiert Score + Coins atomar auf das Profil. **Hauptfunktion nach jeder Session.** |
+| `add_coins` | `p_user_id`, `p_amount` | Addiert Coins (Daily-Bonus, Titel-Belohnung). Gibt neuen Coins-Stand zurück. |
+| `spend_coins` | `p_user_id`, `p_amount` | Subtrahiert Coins (Joker-Kauf, Modus-Unlock). Gibt neuen Stand zurück. Schlägt fehl wenn Saldo < Betrag. |
+| `upsert_stamp` | `p_user_id`, `p_country_code`, `p_perfect` | Setzt/aktualisiert Reisepass-Stempel. |
+| `get_prev_week_rank` | `p_user_id` | Gibt Vorwochenrang zurück (für Liga-Auswertung). |
+| `update_league` | `p_user_id`, `p_new_league`, `p_eval_week` | Aktualisiert Liga-Stufe nach wöchentlicher Auswertung. |
+
+### Client-Zugriff
+
+```javascript
+// Supabase-Client wird in gen.py konfiguriert:
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let sbUser    = null;  // Supabase Auth User (nach Login)
+let sbProfile = null;  // profiles-Zeile (nach loadProfile())
+let sbOK      = false; // true sobald Auth + Profil geladen
+
+// Globale Zustandscheck-Pattern:
+if(!sb || !sbUser?.id) return;          // kein Login
+if(!sbOK) return;                       // Profil noch nicht geladen
+if(!navigator.onLine) { /* queue */ }   // kein Netz (Phase 240)
+```
+
+---
+
+## 11. `validate_content.py` — Semantischer Content-Validator
+
+`validate_content.py` prüft alle 24 `data/*.json` Dateien auf **inhaltliche** Qualitätsprobleme, die `verify.py` (Syntax/Struktur) nicht erkennen kann.
+
+```bash
+python3 validate_content.py          # Nur Warnungen ausgeben
+python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
+```
+
+### Die 4 Prüfpfade
+
+**Check 1 — Pin-Daten (`*_pin.json`, Pin-Einträge in `kultur.json`)**
+
+| Prüfung | Was sie verhindert |
+|---------|--------------------|
+| Pflichtfelder `n`, `lat`, `lng` vorhanden | Silent fail: Pin bei (0,0) |
+| `lat` ∈ [-90, 90], `lng` ∈ [-180, 180] | Unmögliche Koordinaten |
+| Null-Island-Check: nicht beides = 0.0 | Vergessene Placeholder-Koordinaten |
+| Duplikat-Koordinaten (4 Dezimalstellen ≈ 11m) | Zwei Orte auf identischem Pin |
+
+**Check 2 — H/L-Daten (`*_hl.json`, `tiere_hl.json`)**
+
+| Prüfung | Was sie verhindert |
+|---------|--------------------|
+| Pflichtfelder `name`, `val` | Generator gibt immer `null` zurück |
+| Mindestens 6 Items | La-Paz-Window kann keinen validen Partner finden |
+| Duplikate `name` | `lid`-Kollision → Dedup-System bricht |
+| Negative Werte | Unbeabsichtigte Vorzeichen |
+| Wert-Ratio > 10.000.000× | Gemischte Einheiten (g vs. kg, mm vs. km) |
+| Z-Score-Ausreißer > 4σ | Tippfehler in Zahlenwert (z.B. 5000 statt 500) |
+
+**Check 3 — Match-Daten (`*_match.json`, `tiere_match.json`, `kultur.json`-Match-Einträge)**
+
+| Prüfung | Was sie verhindert |
+|---------|--------------------|
+| Pflichtfelder `n`, `c` | Silent fail im Generator |
+| ≥ 4 unique `c`-Werte | Kein Distraktor-Pool für 3 falsche Antworten |
+| Duplikate `n` (Subjekt) | Dieselbe Frage zweimal in einer Session |
+
+**Check 4 — Wort-Schmiede-Daten (`*_ws.json`, `tiere_ws.json`)**
+
+| Prüfung | Was sie verhindert |
+|---------|--------------------|
+| `word` vorhanden und GROSSBUCHSTABEN | Anagramm-Engine bricht |
+| `word` nur Alpha-Zeichen, keine Leerzeichen | Zeichensatz-Fehler |
+| `validWords[lang]` ist Array | Engine bricht beim Spielstart |
+| Alle Lösungswörter GROSSBUCHSTABEN | Kein Match möglich |
+| Lösungswort nicht länger als `word` | Logisch unmöglich |
+| Anagramm-Validität: alle Buchstaben aus `word` entnehmbar | Spieler kann Wort physisch nicht legen |
+
+### Automatische Format-Erkennung
+
+`validate_content.py` erkennt den Dateityp automatisch anhand des Dateinamens-Suffix (`_pin`, `_hl`, `_match`, `_ws`) und bei `kultur.json` anhand der Datenstruktur (hat Einträge `lat`/`lng`? hat `val`? hat `c`?).
+
+---
+
+## 12. Phasen-Changelog
+
+Kompakter Überblick aller signifikanten Patches seit dem Migrations-System (Phase 225).
+
+| Phase | Datei | Inhalt |
+|-------|-------|--------|
+| 212 | `patch_212_kultur_modes.py` | 27 Kultur/Lifestyle Universal-Modi |
+| 213 | `patch_213_perf_daily_1v1.py` | Performance, Daily-History, 1v1-Selector CSS |
+| 214 | `patch_214_routing_audit.py` | Routing-Audit + Regressionen behoben |
+| 215 | `patch_215_uk_engine.py` | UK-Engine-Modi registriert |
+| 216 | `patch_216_universal_engine.py` | Universal-Engine + Custom-Mechanics |
+| 220 | `patch_220_security_audit.py` | 5-Säulen Security & Stability Audit |
+| 221a | `patch_221a_service_worker.py` | Service Worker Cache (blob-basiert, Phase 221) |
+| 221b | `patch_221b_ws_multilingual.py` | Wort-Schmiede Multilingual-Bonus |
+| 221c | `patch_221c_kompass_mode.py` | Sonnen-Kompass Rätsel — neuer Modus |
+| 222 | `patch_222_stadion_hl.py` | Dynamischer Stadion-Höhe-H/L-Generator |
+| 223 | `patch_223_map_zoom_fix.py` | Karten-Zoom D3 lid-Binding + Drag-vs-Click Guard |
+| 223 | `patch_223_tiere_data_expand.py` | Tiere/Pferde Datensatz 20 → 68 Einträge |
+| **225** | `patch_225_json_extraction.py` | **Daten aus gen.py nach `data/*.json` extrahiert** — Migrations-System eingeführt |
+| 226 | `patch_226_ux_fixes.py` | UX-Fixes: Suche, HUD, HL-Buttons EN |
+| 227a | `patch_227a_tiere_routing.py` | 21 Tiere-Modi Routing |
+| 227b | `patch_227b_tiere_data_part1.py` | Tiere Pin + H/L Daten + Generatoren |
+| 227c | `patch_227c_tiere_data_part2.py` | Tiere Match-Daten + Generator |
+| 227d | `patch_227d_pferde_dlc.py` | Pferde DLC: Rassen, Fachbegriffe, Stockmaß, Flüsterer |
+| 228 | `patch_228_pflanzen.py` | Pflanzen-Kategorie (4 JSON-Dateien, ~55 Modi) |
+| 229 | `patch_229_gastronomie.py` | Gastronomie-Kategorie (4 JSON-Dateien, ~51 Modi) |
+| 230 | `patch_230_tech_emob.py` | Tech + E-Mobilität (8 JSON-Dateien, ~110 Modi) |
+| 231 | `patch_231_archaeologie.py` | Archäologie (4 JSON-Dateien, ~60 Modi) |
+| 232 | *(inline)* | `_mkPinQ` auf `targetLat`/`targetLng` umgestellt; `_mkHL` auf `beta_hl` |
+| 235 | `patch_235_fixes.py` | Qualitäts-Patch: BETA-Tags, Pflanzen-Gruppe, Datendichte |
+| 236 | `patch_236_fixes.py` | Weitere QA-Fixes |
+| 237 | `patch_237_qa_triage.py` | QA-Triage: Duplikate, WS-Validierung, Koordinaten |
+| **238** | `patch_238_offline_sw.py` | **SW blob→external sw.js; hash-versioned CACHE_NAME; manifest.json; verify.py Sektion 12** |
+| **239** | `patch_239_offline_ux.py` | **Auth-UX: `_authErrMsg()`, `navigator.onLine` Guards in 4 Auth-Funktionen** |
+| **240** | `patch_240_offline_sync.py` | **`isOffline` State; online/offline Listener; Offline-Score-Queue; `syncOfflineData()`; Profil-Banner** |
+
+---
+
+*Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
+*Letztes Update: Phase 240 — Service Worker, Offline-UX, Score-Queue, 558 Modi, 24 Datendateien, 56 verify-Checks, Mai 2026.*
