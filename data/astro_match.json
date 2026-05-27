@@ -117,5 +117,251 @@
         "c": "Leuchtende Gashuelle um sterbenden Stern"
       }
     ]
+  },
+  "astro_sonden_ziele": {
+    "prompt": "Welches Ziel hat diese Raumsonde angesteuert?",
+    "items": [
+      {
+        "n": "Curiosity Rover",
+        "c": "Mars"
+      },
+      {
+        "n": "InSight Lander",
+        "c": "Mars"
+      },
+      {
+        "n": "Cassini-Huygens",
+        "c": "Saturn"
+      },
+      {
+        "n": "Juno",
+        "c": "Jupiter"
+      },
+      {
+        "n": "New Horizons",
+        "c": "Pluto / Kuiper-Gürtel"
+      },
+      {
+        "n": "MESSENGER",
+        "c": "Merkur"
+      },
+      {
+        "n": "Dawn",
+        "c": "Asteroiden (Ceres/Vesta)"
+      },
+      {
+        "n": "Hayabusa2 (JAXA)",
+        "c": "Asteroid Ryugu"
+      },
+      {
+        "n": "OSIRIS-REx (NASA)",
+        "c": "Asteroid Bennu"
+      },
+      {
+        "n": "Voyager 1",
+        "c": "Interstellarer Raum"
+      }
+    ]
+  },
+  "astro_himmelskoerper_typ": {
+    "prompt": "Zu welchem Typ gehört dieser Himmelskörper?",
+    "items": [
+      {
+        "n": "Jupiter",
+        "c": "Planet (Gasriese)"
+      },
+      {
+        "n": "Sonne",
+        "c": "Stern"
+      },
+      {
+        "n": "Andromeda-Galaxie (M31)",
+        "c": "Galaxie"
+      },
+      {
+        "n": "Titan",
+        "c": "Mond"
+      },
+      {
+        "n": "Pluto",
+        "c": "Zwergplanet"
+      },
+      {
+        "n": "Io",
+        "c": "Mond"
+      },
+      {
+        "n": "Sirius",
+        "c": "Stern"
+      },
+      {
+        "n": "Ceres",
+        "c": "Zwergplanet"
+      },
+      {
+        "n": "Halleyscher Komet",
+        "c": "Komet"
+      },
+      {
+        "n": "Makemake",
+        "c": "Zwergplanet"
+      }
+    ]
+  },
+  "astro_sternbilder_himmel": {
+    "prompt": "Zu welchem Sternenhimmel gehört dieses Sternbild hauptsächlich?",
+    "items": [
+      {
+        "n": "Kassiopeia",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Großer Bär (Ursa Major)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Kleiner Bär (Polarstern)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Kreuz des Südens (Crux)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Zentaur (Centaurus)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Toucan (Tucana)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Orion",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Widder (Aries)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Pegasus",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Skorpion (Scorpius)",
+        "c": "Südhimmel"
+      }
+    ]
+  },
+  "astro_pioniere": {
+    "prompt": "Für welche Entdeckung oder welches Gesetz ist dieser Astronom bekannt?",
+    "items": [
+      {
+        "n": "Galileo Galilei",
+        "c": "Entdeckung der Jupiter-Monde"
+      },
+      {
+        "n": "Johannes Kepler",
+        "c": "Keplersche Planetengesetze"
+      },
+      {
+        "n": "Isaac Newton",
+        "c": "Universelles Gravitationsgesetz"
+      },
+      {
+        "n": "Nikolaus Kopernikus",
+        "c": "Heliozentrisches Weltbild"
+      },
+      {
+        "n": "Edwin Hubble",
+        "c": "Universum expandiert (Hubble-Gesetz)"
+      },
+      {
+        "n": "Vera Rubin",
+        "c": "Nachweis Dunkler Materie"
+      },
+      {
+        "n": "Stephen Hawking",
+        "c": "Hawking-Strahlung schwarzer Löcher"
+      },
+      {
+        "n": "Cecilia Payne-Gaposchkin",
+        "c": "Sterne bestehen hauptsächlich aus Wasserstoff"
+      }
+    ]
+  },
+  "astro_antriebe": {
+    "prompt": "Welche Antriebsart nutzt diese Rakete oder Raumsonde?",
+    "items": [
+      {
+        "n": "Saturn V (1. Stufe — F-1-Triebwerk)",
+        "c": "Kerosin/Flüssigsauerstoff"
+      },
+      {
+        "n": "Falcon 9 (Merlin-Triebwerk)",
+        "c": "Kerosin/Flüssigsauerstoff"
+      },
+      {
+        "n": "SLS (Kernstufe — RS-25)",
+        "c": "Kryogen (LH2/LOX)"
+      },
+      {
+        "n": "Ariane 5 (Vulcain-Hauptstufe)",
+        "c": "Kryogen (LH2/LOX)"
+      },
+      {
+        "n": "Space Shuttle SRB",
+        "c": "Feststofftreibstoff"
+      },
+      {
+        "n": "Titan IV B (Booster)",
+        "c": "Feststofftreibstoff"
+      },
+      {
+        "n": "Dawn (NASA-Sonde)",
+        "c": "Ionenantrieb"
+      },
+      {
+        "n": "Deep Space 1 (NASA-Sonde)",
+        "c": "Ionenantrieb"
+      }
+    ]
+  },
+  "astro_galaxien_typen": {
+    "prompt": "Welchem Galaxientyp gehört diese Galaxie an?",
+    "items": [
+      {
+        "n": "Andromeda-Galaxie (M31)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Feuerwerksgalaxie (NGC 6946)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Milchstraße",
+        "c": "Balkenspirale"
+      },
+      {
+        "n": "NGC 1300",
+        "c": "Balkenspirale"
+      },
+      {
+        "n": "Messier 87 (M87)",
+        "c": "Elliptische Galaxie"
+      },
+      {
+        "n": "NGC 1052",
+        "c": "Elliptische Galaxie"
+      },
+      {
+        "n": "Große Magellansche Wolke",
+        "c": "Irreguläre Galaxie"
+      },
+      {
+        "n": "Kleine Magellansche Wolke",
+        "c": "Irreguläre Galaxie"
+      }
+    ]
   }
 }

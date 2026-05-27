@@ -88,5 +88,185 @@
         "lng": -120.57
       }
     ]
+  },
+  "astro_esa_nasa_zentren": {
+    "prompt": "Wo liegt dieses Raumfahrtkontrollzentrum?",
+    "items": [
+      {
+        "n": "Johnson Space Center (Houston, Texas)",
+        "lat": 29.56,
+        "lng": -95.09
+      },
+      {
+        "n": "ESOC Darmstadt (ESA Missionskontrolle)",
+        "lat": 49.87,
+        "lng": 8.62
+      },
+      {
+        "n": "JPL Pasadena (NASA Jet Propulsion Lab)",
+        "lat": 34.2,
+        "lng": -118.18
+      },
+      {
+        "n": "ESTEC Noordwijk (ESA Technikzentrum)",
+        "lat": 52.22,
+        "lng": 4.43
+      },
+      {
+        "n": "JAXA Sagamihara Space Operations Center",
+        "lat": 35.55,
+        "lng": 139.49
+      },
+      {
+        "n": "Goddard Space Flight Center (Maryland)",
+        "lat": 39.0,
+        "lng": -76.87
+      },
+      {
+        "n": "ISRO Headquarters (Bangalore, Indien)",
+        "lat": 12.96,
+        "lng": 77.57
+      },
+      {
+        "n": "European Space Astronomy Centre (Madrid)",
+        "lat": 40.44,
+        "lng": -3.95
+      }
+    ]
+  },
+  "astro_weltraumteleskope": {
+    "prompt": "Wo befindet sich dieses Teleskop oder Observatorium?",
+    "items": [
+      {
+        "n": "FAST Radioteleskop (Guizhou, China)",
+        "lat": 25.65,
+        "lng": 106.86
+      },
+      {
+        "n": "VLA Very Large Array (New Mexico, USA)",
+        "lat": 34.08,
+        "lng": -107.62
+      },
+      {
+        "n": "ELT Extremely Large Telescope (Cerro Armazones, Chile)",
+        "lat": -24.59,
+        "lng": -70.19
+      },
+      {
+        "n": "Square Kilometre Array SKA (Karoo, Südafrika)",
+        "lat": -30.71,
+        "lng": 21.44
+      },
+      {
+        "n": "South African Large Telescope SALT",
+        "lat": -32.38,
+        "lng": 20.81
+      },
+      {
+        "n": "McDonald Observatory (Texas, USA)",
+        "lat": 30.68,
+        "lng": -104.02
+      },
+      {
+        "n": "Palomar Observatory (Kalifornien, USA)",
+        "lat": 33.36,
+        "lng": -116.86
+      },
+      {
+        "n": "Lowell Observatory (Flagstaff, Arizona)",
+        "lat": 35.2,
+        "lng": -111.66
+      }
+    ]
+  },
+  "astro_meteoritenkrater": {
+    "prompt": "Wo liegt dieser Meteoritenkrater?",
+    "items": [
+      {
+        "n": "Chicxulub-Krater (Yucatán, Mexiko)",
+        "lat": 21.4,
+        "lng": -89.5
+      },
+      {
+        "n": "Vredefort-Krater (Südafrika)",
+        "lat": -27.0,
+        "lng": 27.5
+      },
+      {
+        "n": "Nördlinger Ries (Bayern, Deutschland)",
+        "lat": 48.88,
+        "lng": 10.59
+      },
+      {
+        "n": "Barringer Meteor Crater (Arizona, USA)",
+        "lat": 35.03,
+        "lng": -111.02
+      },
+      {
+        "n": "Manicouagan-Krater (Québec, Kanada)",
+        "lat": 51.38,
+        "lng": -68.7
+      },
+      {
+        "n": "Popigai-Krater (Sibirien, Russland)",
+        "lat": 71.64,
+        "lng": 111.4
+      },
+      {
+        "n": "Acraman-Krater (Südaustralien)",
+        "lat": -32.02,
+        "lng": 135.45
+      },
+      {
+        "n": "Sudbury Basin (Ontario, Kanada)",
+        "lat": 46.6,
+        "lng": -81.18
+      }
+    ]
+  },
+  "astro_dark_sky": {
+    "prompt": "Wo liegt dieses Dark-Sky-Reservat?",
+    "items": [
+      {
+        "n": "NamibRand Nature Reserve (Namibia)",
+        "lat": -25.18,
+        "lng": 16.05
+      },
+      {
+        "n": "Aoraki Mackenzie Dark Sky Reserve (Neuseeland)",
+        "lat": -43.9,
+        "lng": 170.7
+      },
+      {
+        "n": "Kerry Dark Sky Reserve (Irland)",
+        "lat": 52.0,
+        "lng": -9.75
+      },
+      {
+        "n": "Galloway Forest Park Dark Sky Park (Schottland)",
+        "lat": 55.14,
+        "lng": -4.36
+      },
+      {
+        "n": "Mont-Mégantic Observatory (Québec, Kanada)",
+        "lat": 45.45,
+        "lng": -71.15
+      },
+      {
+        "n": "Westhavelland Sternenpark (Brandenburg, DE)",
+        "lat": 52.7,
+        "lng": 12.15
+      },
+      {
+        "n": "Big Bend Dark Sky Reserve (Texas, USA)",
+        "lat": 29.25,
+        "lng": -103.25
+      },
+      {
+        "n": "Zselic Starry Sky Park (Ungarn)",
+        "lat": 46.18,
+        "lng": 17.85
+      }
+    ]
   }
 }

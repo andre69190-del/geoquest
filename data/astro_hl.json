@@ -112,5 +112,237 @@
         "val": 58
       }
     ]
+  },
+  "astro_raketen_nutzlast": {
+    "prompt": "Welche Rakete transportiert mehr Nutzlast in die Erdumlaufbahn (LEO)?",
+    "unit": "t (Nutzlast LEO)",
+    "items": [
+      {
+        "name": "Saturn V (NASA, 1967)",
+        "val": 140
+      },
+      {
+        "name": "SLS Block 1 (NASA, 2022)",
+        "val": 95
+      },
+      {
+        "name": "Falcon Heavy (SpaceX)",
+        "val": 64
+      },
+      {
+        "name": "Long March 5 (CNSA)",
+        "val": 25
+      },
+      {
+        "name": "Falcon 9 Block 5 (SpaceX)",
+        "val": 23
+      },
+      {
+        "name": "Delta IV Heavy (ULA)",
+        "val": 29
+      },
+      {
+        "name": "Ariane 5 ECA (ESA)",
+        "val": 21
+      },
+      {
+        "name": "Soyuz-2.1b (Roskosmos)",
+        "val": 9
+      }
+    ]
+  },
+  "astro_missionsdauer": {
+    "prompt": "Welche Raumsonde / welches Teleskop war länger im Betrieb?",
+    "unit": "Tage (Betrieb bis 2026)",
+    "items": [
+      {
+        "name": "Voyager 1 (NASA, seit 1977)",
+        "val": 17785
+      },
+      {
+        "name": "Voyager 2 (NASA, seit 1977)",
+        "val": 17728
+      },
+      {
+        "name": "Hubble-Weltraumteleskop (seit 1990)",
+        "val": 13150
+      },
+      {
+        "name": "Mars Reconnaissance Orbiter (seit 2006)",
+        "val": 7300
+      },
+      {
+        "name": "Cassini (1997–2017)",
+        "val": 7285
+      },
+      {
+        "name": "New Horizons (seit 2006)",
+        "val": 7350
+      },
+      {
+        "name": "Opportunity Rover (2004–2018)",
+        "val": 5352
+      },
+      {
+        "name": "Curiosity Rover (seit 2012)",
+        "val": 5000
+      }
+    ]
+  },
+  "astro_schwerkraft": {
+    "prompt": "Welcher Himmelskörper hat die stärkere Oberflächengravitation?",
+    "unit": "m/s²",
+    "items": [
+      {
+        "name": "Jupiter",
+        "val": 24.79
+      },
+      {
+        "name": "Neptun",
+        "val": 11.15
+      },
+      {
+        "name": "Saturn",
+        "val": 10.44
+      },
+      {
+        "name": "Erde",
+        "val": 9.81
+      },
+      {
+        "name": "Uranus",
+        "val": 8.87
+      },
+      {
+        "name": "Venus",
+        "val": 8.87
+      },
+      {
+        "name": "Mars",
+        "val": 3.72
+      },
+      {
+        "name": "Mond",
+        "val": 1.62
+      },
+      {
+        "name": "Pluto",
+        "val": 0.62
+      }
+    ]
+  },
+  "astro_temperaturen": {
+    "prompt": "Welcher Planet ist durchschnittlich heißer (Oberflächentemperatur)?",
+    "unit": "°C (Durchschnitt)",
+    "items": [
+      {
+        "name": "Venus",
+        "val": 465
+      },
+      {
+        "name": "Merkur (Durchschnitt)",
+        "val": 167
+      },
+      {
+        "name": "Erde",
+        "val": 15
+      },
+      {
+        "name": "Mars",
+        "val": -63
+      },
+      {
+        "name": "Jupiter (Wolkenoberseite)",
+        "val": -108
+      },
+      {
+        "name": "Saturn (Wolkenoberseite)",
+        "val": -138
+      },
+      {
+        "name": "Uranus",
+        "val": -195
+      },
+      {
+        "name": "Neptun",
+        "val": -200
+      }
+    ]
+  },
+  "astro_entdeckungsjahr": {
+    "prompt": "Welches Objekt wurde früher entdeckt?",
+    "unit": "Jahr der Entdeckung",
+    "items": [
+      {
+        "name": "Io (Galileo Galilei)",
+        "val": 1610
+      },
+      {
+        "name": "Europa (Galileo Galilei)",
+        "val": 1610
+      },
+      {
+        "name": "Titan (Christiaan Huygens)",
+        "val": 1655
+      },
+      {
+        "name": "Uranus (William Herschel)",
+        "val": 1781
+      },
+      {
+        "name": "Ceres (Giuseppe Piazzi)",
+        "val": 1801
+      },
+      {
+        "name": "Neptun (Le Verrier / Adams)",
+        "val": 1846
+      },
+      {
+        "name": "Pluto (Clyde Tombaugh)",
+        "val": 1930
+      },
+      {
+        "name": "Charon (James Christy)",
+        "val": 1978
+      }
+    ]
+  },
+  "astro_exoplaneten_distanz": {
+    "prompt": "Welcher Exoplanet ist weiter von der Erde entfernt?",
+    "unit": "Lichtjahre",
+    "items": [
+      {
+        "name": "Proxima Centauri b",
+        "val": 4.24
+      },
+      {
+        "name": "Alpha Centauri Bb",
+        "val": 4.37
+      },
+      {
+        "name": "Gliese 667C c",
+        "val": 23.6
+      },
+      {
+        "name": "TRAPPIST-1e",
+        "val": 39.5
+      },
+      {
+        "name": "GJ 1214 b",
+        "val": 42.0
+      },
+      {
+        "name": "51 Pegasi b (Helvetios)",
+        "val": 50.9
+      },
+      {
+        "name": "HD 209458 b (Osiris)",
+        "val": 154.0
+      },
+      {
+        "name": "Kepler-452b",
+        "val": 1400.0
+      }
+    ]
   }
 }

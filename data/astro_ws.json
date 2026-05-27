@@ -92,5 +92,38 @@
         "ROAST"
       ]
     }
+  },
+  "schwarzesloch": {
+    "word": "SCHWARZESLOCH",
+    "validWords": {
+      "de": [
+        "SCHWARZ",
+        "SCHACH",
+        "SCHAL",
+        "SCHALE",
+        "LASCHE",
+        "ARCHE",
+        "LACHS",
+        "WACHE",
+        "CHAOS",
+        "WALZE",
+        "HARSCH",
+        "LOCH"
+      ],
+      "en": [
+        "SCHOLAR",
+        "CRASH",
+        "CLASH",
+        "CRAWLS",
+        "CHORAL",
+        "HARSH",
+        "SHOAL",
+        "LARCH",
+        "CHARS",
+        "CAROL",
+        "CLAW",
+        "HAZE"
+      ]
+    }
   }
 }

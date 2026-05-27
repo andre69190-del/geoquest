@@ -8,8 +8,4 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "HOTFIX: Phase 251. renderPwaBanner() aus renderBottomNav() herausgeloest — war nested-local, daher ReferenceError in render(). Jetzt Top-Level-Funktion. verify: 89/89 | validate: 49 warnings."
-git push origin main
-echo.
-echo Done! Vercel will deploy in ~60 seconds.
-pause
+git commit -m "CONTENT: Phase 252. Astronomie Expansion — 17 neue Modi (4 Pin, 6 HL, 6 Match, 1 WS). MODES: 590->607. Neue Kategorien: Kontrollzentren, Teleskope, Meteoritenkrater, Dark-Sky, Raketen-Nutzlast, Missionsdauer, Gravitation, Temperaturen, Entdeckungsjahre, Exoplaneten, Sonden-Ziele, Himmelskörper-Typen, Sternbilder, Pioniere, Antriebe, Galaxientypen, WS-Schwarzes
