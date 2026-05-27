@@ -48,26 +48,32 @@ GEN    = os.path.join(ROOT, 'gen.py')
 
 # ── ASTRONOMIE PIN ─────────────────────────────────────────────────────────────
 astro_pin = {
-  "astro_observatorien": [
-    {"n": "Mauna Kea Observatory (Hawaii)", "lat": 19.82, "lng": -155.47},
-    {"n": "ALMA (Atacama, Chile)", "lat": -23.02, "lng": -67.75},
-    {"n": "La Palma Roque de los Muchachos", "lat": 28.76, "lng": -17.89},
-    {"n": "Cerro Paranal ESO (Chile)", "lat": -24.63, "lng": -70.40},
-    {"n": "Effelsberg Radioteleskop (Deutschland)", "lat": 50.52, "lng": 6.88},
-    {"n": "Jodrell Bank Observatory (England)", "lat": 53.24, "lng": -2.31},
-    {"n": "Kitt Peak Observatory (Arizona, USA)", "lat": 31.96, "lng": -111.60},
-    {"n": "Parkes Radio Telescope (Australien)", "lat": -32.99, "lng": 148.26}
-  ],
-  "astro_startrampen": [
-    {"n": "Kennedy Space Center (Florida, USA)", "lat": 28.52, "lng": -80.65},
-    {"n": "Baikonur Kosmodrom (Kasachstan)", "lat": 45.97, "lng": 63.31},
-    {"n": "Guiana Space Centre (Kourou, Frz.-Guyana)", "lat": 5.24, "lng": -52.77},
-    {"n": "Tanegashima Space Center (Japan)", "lat": 30.40, "lng": 130.97},
-    {"n": "Wenchang Launch Site (China)", "lat": 19.61, "lng": 110.96},
-    {"n": "Satish Dhawan Space Centre (Indien)", "lat": 13.73, "lng": 80.23},
-    {"n": "Plesetsk Kosmodrom (Russland)", "lat": 62.93, "lng": 40.58},
-    {"n": "Vandenberg SFB (Kalifornien, USA)", "lat": 34.74, "lng": -120.57}
-  ]
+  "astro_observatorien": {
+    "prompt": "Wo liegt dieses Observatorium?",
+    "items": [
+      {"n": "Mauna Kea Observatory (Hawaii)", "lat": 19.82, "lng": -155.47},
+      {"n": "ALMA (Atacama, Chile)", "lat": -23.02, "lng": -67.75},
+      {"n": "La Palma Roque de los Muchachos", "lat": 28.76, "lng": -17.89},
+      {"n": "Cerro Paranal ESO (Chile)", "lat": -24.63, "lng": -70.40},
+      {"n": "Effelsberg Radioteleskop (Deutschland)", "lat": 50.52, "lng": 6.88},
+      {"n": "Jodrell Bank Observatory (England)", "lat": 53.24, "lng": -2.31},
+      {"n": "Kitt Peak Observatory (Arizona, USA)", "lat": 31.96, "lng": -111.60},
+      {"n": "Parkes Radio Telescope (Australien)", "lat": -32.99, "lng": 148.26}
+    ]
+  },
+  "astro_startrampen": {
+    "prompt": "Wo liegt dieses Raumfahrtzentrum / diese Startrampe?",
+    "items": [
+      {"n": "Kennedy Space Center (Florida, USA)", "lat": 28.52, "lng": -80.65},
+      {"n": "Baikonur Kosmodrom (Kasachstan)", "lat": 45.97, "lng": 63.31},
+      {"n": "Guiana Space Centre (Kourou, Frz.-Guyana)", "lat": 5.24, "lng": -52.77},
+      {"n": "Tanegashima Space Center (Japan)", "lat": 30.40, "lng": 130.97},
+      {"n": "Wenchang Launch Site (China)", "lat": 19.61, "lng": 110.96},
+      {"n": "Satish Dhawan Space Centre (Indien)", "lat": 13.73, "lng": 80.23},
+      {"n": "Plesetsk Kosmodrom (Russland)", "lat": 62.93, "lng": 40.58},
+      {"n": "Vandenberg SFB (Kalifornien, USA)", "lat": 34.74, "lng": -120.57}
+    ]
+  }
 }
 
 # ── ASTRONOMIE HL ──────────────────────────────────────────────────────────────
@@ -179,26 +185,32 @@ astro_ws = {
 
 # ── GEOLOGIE PIN ───────────────────────────────────────────────────────────────
 geo_pin = {
-  "geo_vulkane": [
-    {"n": "Mauna Loa (Hawaii, USA)", "lat": 19.48, "lng": -155.59},
-    {"n": "Etna (Sizilien, Italien)", "lat": 37.75, "lng": 14.99},
-    {"n": "Vesuv (Neapel, Italien)", "lat": 40.82, "lng": 14.43},
-    {"n": "Krakatau (Indonesien)", "lat": -6.10, "lng": 105.42},
-    {"n": "Eyjafjallajokull (Island)", "lat": 63.63, "lng": -19.62},
-    {"n": "Popocatepetl (Mexiko)", "lat": 19.02, "lng": -98.63},
-    {"n": "Pinatubo (Philippinen)", "lat": 15.14, "lng": 120.35},
-    {"n": "Santorini-Caldera (Griechenland)", "lat": 36.40, "lng": 25.40}
-  ],
-  "geo_geothermal": [
-    {"n": "Geysir Strokkur (Island)", "lat": 64.31, "lng": -20.30},
-    {"n": "Old Faithful Geysir (Yellowstone, USA)", "lat": 44.46, "lng": -110.83},
-    {"n": "Rotorua Geothermalgebiet (Neuseeland)", "lat": -38.14, "lng": 176.25},
-    {"n": "Dallol Vulkankrater (Aethiopien)", "lat": 14.24, "lng": 40.30},
-    {"n": "Mutnovsky Vulkan (Kamtschatka)", "lat": 52.45, "lng": 158.20},
-    {"n": "Taal Vulkansee (Philippinen)", "lat": 14.00, "lng": 120.99},
-    {"n": "Myvatn-Gebiet (Island)", "lat": 65.59, "lng": -17.00},
-    {"n": "Wai-O-Tapu Thermalwunder (Neuseeland)", "lat": -38.36, "lng": 176.37}
-  ]
+  "geo_vulkane": {
+    "prompt": "Wo liegt dieser Vulkan?",
+    "items": [
+      {"n": "Mauna Loa (Hawaii, USA)", "lat": 19.48, "lng": -155.59},
+      {"n": "Etna (Sizilien, Italien)", "lat": 37.75, "lng": 14.99},
+      {"n": "Vesuv (Neapel, Italien)", "lat": 40.82, "lng": 14.43},
+      {"n": "Krakatau (Indonesien)", "lat": -6.10, "lng": 105.42},
+      {"n": "Eyjafjallajokull (Island)", "lat": 63.63, "lng": -19.62},
+      {"n": "Popocatepetl (Mexiko)", "lat": 19.02, "lng": -98.63},
+      {"n": "Pinatubo (Philippinen)", "lat": 15.14, "lng": 120.35},
+      {"n": "Santorini-Caldera (Griechenland)", "lat": 36.40, "lng": 25.40}
+    ]
+  },
+  "geo_geothermal": {
+    "prompt": "Wo liegt diese Geothermalquelle?",
+    "items": [
+      {"n": "Geysir Strokkur (Island)", "lat": 64.31, "lng": -20.30},
+      {"n": "Old Faithful Geysir (Yellowstone, USA)", "lat": 44.46, "lng": -110.83},
+      {"n": "Rotorua Geothermalgebiet (Neuseeland)", "lat": -38.14, "lng": 176.25},
+      {"n": "Dallol Vulkankrater (Aethiopien)", "lat": 14.24, "lng": 40.30},
+      {"n": "Mutnovsky Vulkan (Kamtschatka)", "lat": 52.45, "lng": 158.20},
+      {"n": "Taal Vulkansee (Philippinen)", "lat": 14.00, "lng": 120.99},
+      {"n": "Myvatn-Gebiet (Island)", "lat": 65.59, "lng": -17.00},
+      {"n": "Wai-O-Tapu Thermalwunder (Neuseeland)", "lat": -38.36, "lng": 176.37}
+    ]
+  }
 }
 
 # ── GEOLOGIE HL ────────────────────────────────────────────────────────────────
@@ -310,26 +322,32 @@ geo_ws = {
 
 # ── SPORT PIN ──────────────────────────────────────────────────────────────────
 sport_pin = {
-  "sport_olympiastadien": [
-    {"n": "Olympiastadion Berlin (1936/2006)", "lat": 52.51, "lng": 13.24},
-    {"n": "Stade de France Paris (1998)", "lat": 48.92, "lng": 2.36},
-    {"n": "Olympic Stadium Barcelona (1992)", "lat": 41.36, "lng": 2.12},
-    {"n": "Athens Olympic Stadium (2004)", "lat": 38.04, "lng": 23.78},
-    {"n": "Beijing National Stadium Nest (2008)", "lat": 40.00, "lng": 116.40},
-    {"n": "London Olympic Stadium (2012)", "lat": 51.54, "lng": -0.02},
-    {"n": "Estadio Maracana Rio (2016)", "lat": -22.91, "lng": -43.23},
-    {"n": "Japan National Stadium Tokyo (2021)", "lat": 35.68, "lng": 139.72}
-  ],
-  "sport_marathonstrecken": [
-    {"n": "Boston Marathon Start (Hopkinton, USA)", "lat": 42.23, "lng": -71.52},
-    {"n": "NYC Marathon Start (Staten Island, USA)", "lat": 40.60, "lng": -74.07},
-    {"n": "Berlin Marathon Start (Charlottenburg)", "lat": 52.52, "lng": 13.29},
-    {"n": "London Marathon Start (Greenwich)", "lat": 51.48, "lng": 0.00},
-    {"n": "Tokyo Marathon Start (Shinjuku)", "lat": 35.69, "lng": 139.69},
-    {"n": "Chicago Marathon Start (Grant Park)", "lat": 41.87, "lng": -87.62},
-    {"n": "Wien Marathon Start (Reichsbruecke)", "lat": 48.24, "lng": 16.41},
-    {"n": "Sydney Marathon Ziel (Opera House)", "lat": -33.86, "lng": 151.21}
-  ]
+  "sport_olympiastadien": {
+    "prompt": "Wo liegt dieses Olympiastadion?",
+    "items": [
+      {"n": "Olympiastadion Berlin (1936/2006)", "lat": 52.51, "lng": 13.24},
+      {"n": "Stade de France Paris (1998)", "lat": 48.92, "lng": 2.36},
+      {"n": "Olympic Stadium Barcelona (1992)", "lat": 41.36, "lng": 2.12},
+      {"n": "Athens Olympic Stadium (2004)", "lat": 38.04, "lng": 23.78},
+      {"n": "Beijing National Stadium Nest (2008)", "lat": 40.00, "lng": 116.40},
+      {"n": "London Olympic Stadium (2012)", "lat": 51.54, "lng": -0.02},
+      {"n": "Estadio Maracana Rio (2016)", "lat": -22.91, "lng": -43.23},
+      {"n": "Japan National Stadium Tokyo (2021)", "lat": 35.68, "lng": 139.72}
+    ]
+  },
+  "sport_marathonstrecken": {
+    "prompt": "Wo liegt dieser Marathon-Start/-Ziel?",
+    "items": [
+      {"n": "Boston Marathon Start (Hopkinton, USA)", "lat": 42.23, "lng": -71.52},
+      {"n": "NYC Marathon Start (Staten Island, USA)", "lat": 40.60, "lng": -74.07},
+      {"n": "Berlin Marathon Start (Charlottenburg)", "lat": 52.52, "lng": 13.29},
+      {"n": "London Marathon Start (Greenwich)", "lat": 51.48, "lng": 0.00},
+      {"n": "Tokyo Marathon Start (Shinjuku)", "lat": 35.69, "lng": 139.69},
+      {"n": "Chicago Marathon Start (Grant Park)", "lat": 41.87, "lng": -87.62},
+      {"n": "Wien Marathon Start (Reichsbruecke)", "lat": 48.24, "lng": 16.41},
+      {"n": "Sydney Marathon Ziel (Opera House)", "lat": -33.86, "lng": 151.21}
+    ]
+  }
 }
 
 # ── SPORT HL ───────────────────────────────────────────────────────────────────

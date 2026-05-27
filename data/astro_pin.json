@@ -1,86 +1,92 @@
 {
-  "astro_observatorien": [
-    {
-      "n": "Mauna Kea Observatory (Hawaii)",
-      "lat": 19.82,
-      "lng": -155.47
-    },
-    {
-      "n": "ALMA (Atacama, Chile)",
-      "lat": -23.02,
-      "lng": -67.75
-    },
-    {
-      "n": "La Palma Roque de los Muchachos",
-      "lat": 28.76,
-      "lng": -17.89
-    },
-    {
-      "n": "Cerro Paranal ESO (Chile)",
-      "lat": -24.63,
-      "lng": -70.4
-    },
-    {
-      "n": "Effelsberg Radioteleskop (Deutschland)",
-      "lat": 50.52,
-      "lng": 6.88
-    },
-    {
-      "n": "Jodrell Bank Observatory (England)",
-      "lat": 53.24,
-      "lng": -2.31
-    },
-    {
-      "n": "Kitt Peak Observatory (Arizona, USA)",
-      "lat": 31.96,
-      "lng": -111.6
-    },
-    {
-      "n": "Parkes Radio Telescope (Australien)",
-      "lat": -32.99,
-      "lng": 148.26
-    }
-  ],
-  "astro_startrampen": [
-    {
-      "n": "Kennedy Space Center (Florida, USA)",
-      "lat": 28.52,
-      "lng": -80.65
-    },
-    {
-      "n": "Baikonur Kosmodrom (Kasachstan)",
-      "lat": 45.97,
-      "lng": 63.31
-    },
-    {
-      "n": "Guiana Space Centre (Kourou, Frz.-Guyana)",
-      "lat": 5.24,
-      "lng": -52.77
-    },
-    {
-      "n": "Tanegashima Space Center (Japan)",
-      "lat": 30.4,
-      "lng": 130.97
-    },
-    {
-      "n": "Wenchang Launch Site (China)",
-      "lat": 19.61,
-      "lng": 110.96
-    },
-    {
-      "n": "Satish Dhawan Space Centre (Indien)",
-      "lat": 13.73,
-      "lng": 80.23
-    },
-    {
-      "n": "Plesetsk Kosmodrom (Russland)",
-      "lat": 62.93,
-      "lng": 40.58
-    },
-    {
-      "n": "Vandenberg SFB (Kalifornien, USA)",
-      "lat": 34.74,
-      "lng": -120.57
-    }
-  ]
+  "astro_observatorien": {
+    "prompt": "Wo liegt dieses Observatorium?",
+    "items": [
+      {
+        "n": "Mauna Kea Observatory (Hawaii)",
+        "lat": 19.82,
+        "lng": -155.47
+      },
+      {
+        "n": "ALMA (Atacama, Chile)",
+        "lat": -23.02,
+        "lng": -67.75
+      },
+      {
+        "n": "La Palma Roque de los Muchachos",
+        "lat": 28.76,
+        "lng": -17.89
+      },
+      {
+        "n": "Cerro Paranal ESO (Chile)",
+        "lat": -24.63,
+        "lng": -70.4
+      },
+      {
+        "n": "Effelsberg Radioteleskop (Deutschland)",
+        "lat": 50.52,
+        "lng": 6.88
+      },
+      {
+        "n": "Jodrell Bank Observatory (England)",
+        "lat": 53.24,
+        "lng": -2.31
+      },
+      {
+        "n": "Kitt Peak Observatory (Arizona, USA)",
+        "lat": 31.96,
+        "lng": -111.6
+      },
+      {
+        "n": "Parkes Radio Telescope (Australien)",
+        "lat": -32.99,
+        "lng": 148.26
+      }
+    ]
+  },
+  "astro_startrampen": {
+    "prompt": "Wo liegt dieses Raumfahrtzentrum / diese Startrampe?",
+    "items": [
+      {
+        "n": "Kennedy Space Center (Florida, USA)",
+        "lat": 28.52,
+        "lng": -80.65
+      },
+      {
+        "n": "Baikonur Kosmodrom (Kasachstan)",
+        "lat": 45.97,
+        "lng": 63.31
+      },
+      {
+        "n": "Guiana Space Centre (Kourou, Frz.-Guyana)",
+        "lat": 5.24,
+        "lng": -52.77
+      },
+      {
+        "n": "Tanegashima Space Center (Japan)",
+        "lat": 30.4,
+        "lng": 130.97
+      },
+      {
+        "n": "Wenchang Launch Site (China)",
+        "lat": 19.61,
+        "lng": 110.96
+      },
+      {
+        "n": "Satish Dhawan Space Centre (Indien)",
+        "lat": 13.73,
+        "lng": 80.23
+      },
+      {
+        "n": "Plesetsk Kosmodrom (Russland)",
+        "lat": 62.93,
+        "lng": 40.58
+      },
+      {
+        "n": "Vandenberg SFB (Kalifornien, USA)",
+        "lat": 34.74,
+        "lng": -120.57
+      }
+    ]
+  }
 }
