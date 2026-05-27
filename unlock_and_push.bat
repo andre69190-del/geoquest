@@ -8,8 +8,8 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "Fix+QA: Phase 243b+247. 243b: 32 fehlende MODES-Eintraege (Astro/Geo/Sport) -> Kategorien spielbar. 247: HL-Extremwerte wiederhergestellt, validate_content.py z>4sigma als [INFO] statt Warnung (La-Paz-Fenster schuetzt Gameplay). ARCHITECTURE.md §3.2 Outlier-Regel ergaenzt. verify: 89/89 | validate: 51 warnings."
+git commit -m "DATA+QA: Phase 248. WS-EN-Fallback: validWords.en fuer 9 Modi (astro/geo/sport_ws). pflanzen_match: bestuaeber-Korruption gefixt + Mais-Duplikat entfernt. pflanzen_pin: nationalblumen wiederhergestellt (20 Items) + Klee-Duplikat entfernt. validate: 37/37 OK | 49 warnings. verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
-pause
+pau

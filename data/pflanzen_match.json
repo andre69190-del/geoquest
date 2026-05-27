@@ -2,392 +2,1346 @@
   "gewuerze": {
     "prompt": "Woher stammt dieses Gewürz ursprünglich?",
     "items": [
-      {"n": "Zimt", "c": "Sri Lanka"},
-      {"n": "Safran", "c": "Iran"},
-      {"n": "Vanille", "c": "Mexiko"},
-      {"n": "Kardamom", "c": "Guatemala"},
-      {"n": "Pfeffer", "c": "Indien"},
-      {"n": "Kurkuma", "c": "Indien"},
-      {"n": "Ingwer", "c": "China"},
-      {"n": "Sternanis", "c": "Vietnam"},
-      {"n": "Muskatnuss", "c": "Indonesien"},
-      {"n": "Nelken", "c": "Indonesien"},
-      {"n": "Cayennepfeffer", "c": "Mexiko"},
-      {"n": "Kümmel", "c": "Ägypten"},
-      {"n": "Paprika (edelsüß)", "c": "Ungarn"},
-      {"n": "Bockshornklee", "c": "Äthiopien"},
-      {"n": "Sumach", "c": "Türkei"},
-      {"n": "Asafoetida", "c": "Afghanistan"},
-      {"n": "Annatto (Achiote)", "c": "Brasilien"},
-      {"n": "Szechuan-Pfeffer", "c": "China"},
-      {"n": "Langer Pfeffer", "c": "Indien"},
-      {"n": "Za'atar", "c": "Libanon"},
-      {"n": "Fenugreek (Bockshornklee)", "c": "Äthiopien"},
-      {"n": "Kokosnuss-Pfeffer", "c": "Indonesien"}
+      {
+        "n": "Zimt",
+        "c": "Sri Lanka"
+      },
+      {
+        "n": "Safran",
+        "c": "Iran"
+      },
+      {
+        "n": "Vanille",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Kardamom",
+        "c": "Guatemala"
+      },
+      {
+        "n": "Pfeffer",
+        "c": "Indien"
+      },
+      {
+        "n": "Kurkuma",
+        "c": "Indien"
+      },
+      {
+        "n": "Ingwer",
+        "c": "China"
+      },
+      {
+        "n": "Sternanis",
+        "c": "Vietnam"
+      },
+      {
+        "n": "Muskatnuss",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Nelken",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Cayennepfeffer",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Kümmel",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Paprika (edelsüß)",
+        "c": "Ungarn"
+      },
+      {
+        "n": "Bockshornklee",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Sumach",
+        "c": "Türkei"
+      },
+      {
+        "n": "Asafoetida",
+        "c": "Afghanistan"
+      },
+      {
+        "n": "Annatto (Achiote)",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Szechuan-Pfeffer",
+        "c": "China"
+      },
+      {
+        "n": "Langer Pfeffer",
+        "c": "Indien"
+      },
+      {
+        "n": "Za'atar",
+        "c": "Libanon"
+      },
+      {
+        "n": "Fenugreek (Bockshornklee)",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Kokosnuss-Pfeffer",
+        "c": "Indonesien"
+      }
     ]
   },
   "familien": {
     "prompt": "Zu welcher Pflanzenfamilie gehört diese Art?",
     "items": [
-      {"n": "Rose", "c": "Rosaceae"},
-      {"n": "Löwenzahn", "c": "Asteraceae"},
-      {"n": "Tulpe", "c": "Liliaceae"},
-      {"n": "Kaffee", "c": "Rubiaceae"},
-      {"n": "Tomate", "c": "Solanaceae"},
-      {"n": "Kartoffel", "c": "Solanaceae"},
-      {"n": "Eiche", "c": "Fagaceae"},
-      {"n": "Buche", "c": "Fagaceae"},
-      {"n": "Eukalyptus", "c": "Myrtaceae"},
-      {"n": "Basilikum", "c": "Lamiaceae"},
-      {"n": "Orchidee", "c": "Orchidaceae"},
-      {"n": "Mais", "c": "Poaceae"},
-      {"n": "Bambus", "c": "Poaceae"},
-      {"n": "Sonnenblume", "c": "Asteraceae"},
-      {"n": "Lorbeer", "c": "Lauraceae"},
-      {"n": "Brennnessel", "c": "Urticaceae"},
-      {"n": "Erbse", "c": "Fabaceae"},
-      {"n": "Gurke", "c": "Cucurbitaceae"},
-      {"n": "Weide", "c": "Salicaceae"},
-      {"n": "Kiefer", "c": "Pinaceae"},
-      {"n": "Ahorn", "c": "Sapindaceae"},
-      {"n": "Minze", "c": "Lamiaceae"}
+      {
+        "n": "Rose",
+        "c": "Rosaceae"
+      },
+      {
+        "n": "Löwenzahn",
+        "c": "Asteraceae"
+      },
+      {
+        "n": "Tulpe",
+        "c": "Liliaceae"
+      },
+      {
+        "n": "Kaffee",
+        "c": "Rubiaceae"
+      },
+      {
+        "n": "Tomate",
+        "c": "Solanaceae"
+      },
+      {
+        "n": "Kartoffel",
+        "c": "Solanaceae"
+      },
+      {
+        "n": "Eiche",
+        "c": "Fagaceae"
+      },
+      {
+        "n": "Buche",
+        "c": "Fagaceae"
+      },
+      {
+        "n": "Eukalyptus",
+        "c": "Myrtaceae"
+      },
+      {
+        "n": "Basilikum",
+        "c": "Lamiaceae"
+      },
+      {
+        "n": "Orchidee",
+        "c": "Orchidaceae"
+      },
+      {
+        "n": "Mais",
+        "c": "Poaceae"
+      },
+      {
+        "n": "Bambus",
+        "c": "Poaceae"
+      },
+      {
+        "n": "Sonnenblume",
+        "c": "Asteraceae"
+      },
+      {
+        "n": "Lorbeer",
+        "c": "Lauraceae"
+      },
+      {
+        "n": "Brennnessel",
+        "c": "Urticaceae"
+      },
+      {
+        "n": "Erbse",
+        "c": "Fabaceae"
+      },
+      {
+        "n": "Gurke",
+        "c": "Cucurbitaceae"
+      },
+      {
+        "n": "Weide",
+        "c": "Salicaceae"
+      },
+      {
+        "n": "Kiefer",
+        "c": "Pinaceae"
+      },
+      {
+        "n": "Ahorn",
+        "c": "Sapindaceae"
+      },
+      {
+        "n": "Minze",
+        "c": "Lamiaceae"
+      }
     ]
   },
   "bluetezeit": {
     "prompt": "In welcher Jahreszeit blüht diese Pflanze?",
-    "fixedOpts": ["Frühling", "Sommer", "Herbst", "Winter"],
+    "fixedOpts": [
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter"
+    ],
     "items": [
-      {"n": "Schneeglöckchen", "c": "Frühling"},
-      {"n": "Rose", "c": "Sommer"},
-      {"n": "Chrysantheme", "c": "Herbst"},
-      {"n": "Weihnachtsstern", "c": "Winter"},
-      {"n": "Hyazinthe", "c": "Frühling"},
-      {"n": "Lavendel", "c": "Sommer"},
-      {"n": "Dahlie", "c": "Sommer"},
-      {"n": "Alpenveilchen (Herbst)", "c": "Herbst"},
-      {"n": "Kirschblüte", "c": "Frühling"},
-      {"n": "Sonnenblume", "c": "Sommer"},
-      {"n": "Schneerose (Helleborus)", "c": "Winter"},
-      {"n": "Krokus", "c": "Frühling"},
-      {"n": "Pfingstrose", "c": "Frühling"},
-      {"n": "Narzisse", "c": "Frühling"},
-      {"n": "Geranie", "c": "Sommer"},
-      {"n": "Aster", "c": "Herbst"},
-      {"n": "Hortensie", "c": "Sommer"},
-      {"n": "Flieder", "c": "Frühling"},
-      {"n": "Kornblume", "c": "Sommer"},
-      {"n": "Herbstzeitlose", "c": "Herbst"},
-      {"n": "Magnolie", "c": "Frühling"},
-      {"n": "Winterling (Eranthis)", "c": "Winter"}
+      {
+        "n": "Schneeglöckchen",
+        "c": "Frühling"
+      },
+      {
+        "n": "Rose",
+        "c": "Sommer"
+      },
+      {
+        "n": "Chrysantheme",
+        "c": "Herbst"
+      },
+      {
+        "n": "Weihnachtsstern",
+        "c": "Winter"
+      },
+      {
+        "n": "Hyazinthe",
+        "c": "Frühling"
+      },
+      {
+        "n": "Lavendel",
+        "c": "Sommer"
+      },
+      {
+        "n": "Dahlie",
+        "c": "Sommer"
+      },
+      {
+        "n": "Alpenveilchen (Herbst)",
+        "c": "Herbst"
+      },
+      {
+        "n": "Kirschblüte",
+        "c": "Frühling"
+      },
+      {
+        "n": "Sonnenblume",
+        "c": "Sommer"
+      },
+      {
+        "n": "Schneerose (Helleborus)",
+        "c": "Winter"
+      },
+      {
+        "n": "Krokus",
+        "c": "Frühling"
+      },
+      {
+        "n": "Pfingstrose",
+        "c": "Frühling"
+      },
+      {
+        "n": "Narzisse",
+        "c": "Frühling"
+      },
+      {
+        "n": "Geranie",
+        "c": "Sommer"
+      },
+      {
+        "n": "Aster",
+        "c": "Herbst"
+      },
+      {
+        "n": "Hortensie",
+        "c": "Sommer"
+      },
+      {
+        "n": "Flieder",
+        "c": "Frühling"
+      },
+      {
+        "n": "Kornblume",
+        "c": "Sommer"
+      },
+      {
+        "n": "Herbstzeitlose",
+        "c": "Herbst"
+      },
+      {
+        "n": "Magnolie",
+        "c": "Frühling"
+      },
+      {
+        "n": "Winterling (Eranthis)",
+        "c": "Winter"
+      }
     ]
   },
   "giftstoffe": {
     "prompt": "Welcher Wirkstoff macht diese Pflanze giftig?",
     "items": [
-      {"n": "Tollkirsche (Belladonna)", "c": "Atropin"},
-      {"n": "Fingerhut (Digitalis purpurea)", "c": "Digoxin"},
-      {"n": "Schierling (Conium maculatum)", "c": "Coniin"},
-      {"n": "Rizinus (Ricinus communis)", "c": "Ricin"},
-      {"n": "Oleander (Nerium oleander)", "c": "Oleandrin"},
-      {"n": "Eisenhut (Aconitum napellus)", "c": "Aconitin"},
-      {"n": "Stechapfel (Datura stramonium)", "c": "Scopolamin"},
-      {"n": "Herbstzeitlose (Colchicum autumnale)", "c": "Colchicin"},
-      {"n": "Eibe (Taxus baccata)", "c": "Taxin"},
-      {"n": "Maiglöckchen (Convallaria majalis)", "c": "Convallatoxin"},
-      {"n": "Bitterer Nachtschatten", "c": "Solanin"},
-      {"n": "Adlerfarn (Pteridium aquilinum)", "c": "Ptaquilosid"},
-      {"n": "Efeu (Hedera helix)", "c": "Falcarinol"},
-      {"n": "Blauregen (Wisteria sinensis)", "c": "Cytisin"},
-      {"n": "Bilsenkraut (Hyoscyamus niger)", "c": "Hyoscyamin"},
-      {"n": "Hahnenfuß (Ranunculus acris)", "c": "Protoanemonin"},
-      {"n": "Wolliger Fingerhut (Digitalis lanata)", "c": "Digitoxin"},
-      {"n": "Stinkende Nieswurz (Helleborus foetidus)", "c": "Veratrin"},
-      {"n": "Sumpf-Schierling (Cicuta virosa)", "c": "Cicutoxin"},
-      {"n": "Schwarzes Bilsenkraut", "c": "Hyoscyamin"}
+      {
+        "n": "Tollkirsche (Belladonna)",
+        "c": "Atropin"
+      },
+      {
+        "n": "Fingerhut (Digitalis purpurea)",
+        "c": "Digoxin"
+      },
+      {
+        "n": "Schierling (Conium maculatum)",
+        "c": "Coniin"
+      },
+      {
+        "n": "Rizinus (Ricinus communis)",
+        "c": "Ricin"
+      },
+      {
+        "n": "Oleander (Nerium oleander)",
+        "c": "Oleandrin"
+      },
+      {
+        "n": "Eisenhut (Aconitum napellus)",
+        "c": "Aconitin"
+      },
+      {
+        "n": "Stechapfel (Datura stramonium)",
+        "c": "Scopolamin"
+      },
+      {
+        "n": "Herbstzeitlose (Colchicum autumnale)",
+        "c": "Colchicin"
+      },
+      {
+        "n": "Eibe (Taxus baccata)",
+        "c": "Taxin"
+      },
+      {
+        "n": "Maiglöckchen (Convallaria majalis)",
+        "c": "Convallatoxin"
+      },
+      {
+        "n": "Bitterer Nachtschatten",
+        "c": "Solanin"
+      },
+      {
+        "n": "Adlerfarn (Pteridium aquilinum)",
+        "c": "Ptaquilosid"
+      },
+      {
+        "n": "Efeu (Hedera helix)",
+        "c": "Falcarinol"
+      },
+      {
+        "n": "Blauregen (Wisteria sinensis)",
+        "c": "Cytisin"
+      },
+      {
+        "n": "Bilsenkraut (Hyoscyamus niger)",
+        "c": "Hyoscyamin"
+      },
+      {
+        "n": "Hahnenfuß (Ranunculus acris)",
+        "c": "Protoanemonin"
+      },
+      {
+        "n": "Wolliger Fingerhut (Digitalis lanata)",
+        "c": "Digitoxin"
+      },
+      {
+        "n": "Stinkende Nieswurz (Helleborus foetidus)",
+        "c": "Veratrin"
+      },
+      {
+        "n": "Sumpf-Schierling (Cicuta virosa)",
+        "c": "Cicutoxin"
+      },
+      {
+        "n": "Schwarzes Bilsenkraut",
+        "c": "Hyoscyamin"
+      }
     ]
   },
   "fruchttyp": {
     "prompt": "Zu welchem Fruchttyp gehört dieser botanische Begriff?",
-    "fixedOpts": ["Beere", "Steinfrucht", "Apfelfrucht", "Sammelfrucht"],
+    "fixedOpts": [
+      "Beere",
+      "Steinfrucht",
+      "Apfelfrucht",
+      "Sammelfrucht"
+    ],
     "items": [
-      {"n": "Tomate", "c": "Beere"},
-      {"n": "Kirsche", "c": "Steinfrucht"},
-      {"n": "Apfel", "c": "Apfelfrucht"},
-      {"n": "Erdbeere", "c": "Sammelfrucht"},
-      {"n": "Avocado", "c": "Steinfrucht"},
-      {"n": "Banane", "c": "Beere"},
-      {"n": "Kiwi", "c": "Beere"},
-      {"n": "Birne", "c": "Apfelfrucht"},
-      {"n": "Himbeere", "c": "Sammelfrucht"},
-      {"n": "Pfirsich", "c": "Steinfrucht"},
-      {"n": "Weintraube", "c": "Beere"},
-      {"n": "Quitte", "c": "Apfelfrucht"},
-      {"n": "Pflaume", "c": "Steinfrucht"},
-      {"n": "Brombeere", "c": "Sammelfrucht"},
-      {"n": "Gurke", "c": "Beere"},
-      {"n": "Mango", "c": "Steinfrucht"},
-      {"n": "Mispel", "c": "Apfelfrucht"},
-      {"n": "Feige", "c": "Sammelfrucht"},
-      {"n": "Papaya", "c": "Beere"},
-      {"n": "Olive", "c": "Steinfrucht"}
+      {
+        "n": "Tomate",
+        "c": "Beere"
+      },
+      {
+        "n": "Kirsche",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Apfel",
+        "c": "Apfelfrucht"
+      },
+      {
+        "n": "Erdbeere",
+        "c": "Sammelfrucht"
+      },
+      {
+        "n": "Avocado",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Banane",
+        "c": "Beere"
+      },
+      {
+        "n": "Kiwi",
+        "c": "Beere"
+      },
+      {
+        "n": "Birne",
+        "c": "Apfelfrucht"
+      },
+      {
+        "n": "Himbeere",
+        "c": "Sammelfrucht"
+      },
+      {
+        "n": "Pfirsich",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Weintraube",
+        "c": "Beere"
+      },
+      {
+        "n": "Quitte",
+        "c": "Apfelfrucht"
+      },
+      {
+        "n": "Pflaume",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Brombeere",
+        "c": "Sammelfrucht"
+      },
+      {
+        "n": "Gurke",
+        "c": "Beere"
+      },
+      {
+        "n": "Mango",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Mispel",
+        "c": "Apfelfrucht"
+      },
+      {
+        "n": "Feige",
+        "c": "Sammelfrucht"
+      },
+      {
+        "n": "Papaya",
+        "c": "Beere"
+      },
+      {
+        "n": "Olive",
+        "c": "Steinfrucht"
+      }
     ]
   },
   "vermehrung": {
     "prompt": "Wie vermehrt sich diese Pflanze hauptsächlich?",
-    "fixedOpts": ["Samen (generativ)", "Vegetativ (Ableger)", "Sporulation", "Apomixis"],
+    "fixedOpts": [
+      "Samen (generativ)",
+      "Vegetativ (Ableger)",
+      "Sporulation",
+      "Apomixis"
+    ],
     "items": [
-      {"n": "Farn", "c": "Sporulation"},
-      {"n": "Moos", "c": "Sporulation"},
-      {"n": "Kartoffel", "c": "Vegetativ (Ableger)"},
-      {"n": "Erdbeere", "c": "Vegetativ (Ableger)"},
-      {"n": "Knoblauch", "c": "Vegetativ (Ableger)"},
-      {"n": "Tulpe", "c": "Vegetativ (Ableger)"},
-      {"n": "Bambus", "c": "Vegetativ (Ableger)"},
-      {"n": "Weizen", "c": "Samen (generativ)"},
-      {"n": "Mais", "c": "Samen (generativ)"},
-      {"n": "Löwenzahn", "c": "Apomixis"},
-      {"n": "Rose (Garten)", "c": "Vegetativ (Ableger)"},
-      {"n": "Kiefer", "c": "Samen (generativ)"},
-      {"n": "Sonnenblume", "c": "Samen (generativ)"},
-      {"n": "Schachtelhalm", "c": "Sporulation"},
-      {"n": "Kaktus", "c": "Vegetativ (Ableger)"},
-      {"n": "Brennnessel", "c": "Samen (generativ)"},
-      {"n": "Ingwer", "c": "Vegetativ (Ableger)"},
-      {"n": "Tomate", "c": "Samen (generativ)"},
-      {"n": "Mango", "c": "Apomixis"},
-      {"n": "Bärlauch", "c": "Vegetativ (Ableger)"}
+      {
+        "n": "Farn",
+        "c": "Sporulation"
+      },
+      {
+        "n": "Moos",
+        "c": "Sporulation"
+      },
+      {
+        "n": "Kartoffel",
+        "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Erdbeere",
+        "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Knoblauch",
+        "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Tulpe",
+        "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Bambus",
+        "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Weizen",
+        "c": "Samen (generativ)"
+      },
+      {
+        "n": "Mais",
+        "c": "Samen (generativ)"
+      },
+      {
+        "n": "Löwenzahn",
+        "c": "Apomixis"
+      },
+      {
+        "n": "Rose (Garten)",
+        "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Kiefer",
+        "c": "Samen (generativ)"
+      },
+      {
+        "n": "Sonnenblume",
+        "c": "Samen (generativ)"
+      },
+      {
+        "n": "Schachtelhalm",
+        "c": "Sporulation"
+      },
+      {
+        "n": "Kaktus",
+        "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Brennnessel",
+        "c": "Samen (generativ)"
+      },
+      {
+        "n": "Ingwer",
+        "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Tomate",
+        "c": "Samen (generativ)"
+      },
+      {
+        "n": "Mango",
+        "c": "Apomixis"
+      },
+      {
+        "n": "Bärlauch",
+        "c": "Vegetativ (Ableger)"
+      }
     ]
   },
   "lebensraum": {
     "prompt": "In welchem Lebensraum wächst diese Pflanze?",
     "items": [
-      {"n": "Mangrove (Rhizophora mangle)", "c": "Gezeitenzone"},
-      {"n": "Kaktus (Saguaro)", "c": "Wüste"},
-      {"n": "Sphagnum-Moos", "c": "Hochmoor"},
-      {"n": "Edelweiss", "c": "Hochgebirge"},
-      {"n": "Seegras (Posidonia oceanica)", "c": "Meeresküste"},
-      {"n": "Straußenfarn", "c": "Auwälder"},
-      {"n": "Knabenkraut (Orchis)", "c": "Kalkwiese"},
-      {"n": "Zitterpappel", "c": "Steppenrandzonen"},
-      {"n": "Küstenheide (Erica)", "c": "Atlantikküste"},
-      {"n": "Arktische Weide (Salix arctica)", "c": "Tundra"},
-      {"n": "Torfmoos", "c": "Hochmoor"},
-      {"n": "Eichenwald-Buschwindröschen", "c": "Laubwald"},
-      {"n": "Korallen-Seegras", "c": "Meeresküste"},
-      {"n": "Montane Enziane", "c": "Hochgebirge"},
-      {"n": "Thymian", "c": "Mittelmeer-Garrigue"},
-      {"n": "Sonnentau (Drosera)", "c": "Hochmoor"},
-      {"n": "Rohrkolben (Typha)", "c": "Feuchtgebiete"},
-      {"n": "Bambus", "c": "Tropische Bergwälder"},
-      {"n": "Feuerblume (Kniphofia)", "c": "Afrikanische Savanne"},
-      {"n": "Weißklee (Trifolium repens)", "c": "Grünland"}
+      {
+        "n": "Mangrove (Rhizophora mangle)",
+        "c": "Gezeitenzone"
+      },
+      {
+        "n": "Kaktus (Saguaro)",
+        "c": "Wüste"
+      },
+      {
+        "n": "Sphagnum-Moos",
+        "c": "Hochmoor"
+      },
+      {
+        "n": "Edelweiss",
+        "c": "Hochgebirge"
+      },
+      {
+        "n": "Seegras (Posidonia oceanica)",
+        "c": "Meeresküste"
+      },
+      {
+        "n": "Straußenfarn",
+        "c": "Auwälder"
+      },
+      {
+        "n": "Knabenkraut (Orchis)",
+        "c": "Kalkwiese"
+      },
+      {
+        "n": "Zitterpappel",
+        "c": "Steppenrandzonen"
+      },
+      {
+        "n": "Küstenheide (Erica)",
+        "c": "Atlantikküste"
+      },
+      {
+        "n": "Arktische Weide (Salix arctica)",
+        "c": "Tundra"
+      },
+      {
+        "n": "Torfmoos",
+        "c": "Hochmoor"
+      },
+      {
+        "n": "Eichenwald-Buschwindröschen",
+        "c": "Laubwald"
+      },
+      {
+        "n": "Korallen-Seegras",
+        "c": "Meeresküste"
+      },
+      {
+        "n": "Montane Enziane",
+        "c": "Hochgebirge"
+      },
+      {
+        "n": "Thymian",
+        "c": "Mittelmeer-Garrigue"
+      },
+      {
+        "n": "Sonnentau (Drosera)",
+        "c": "Hochmoor"
+      },
+      {
+        "n": "Rohrkolben (Typha)",
+        "c": "Feuchtgebiete"
+      },
+      {
+        "n": "Bambus",
+        "c": "Tropische Bergwälder"
+      },
+      {
+        "n": "Feuerblume (Kniphofia)",
+        "c": "Afrikanische Savanne"
+      },
+      {
+        "n": "Weißklee (Trifolium repens)",
+        "c": "Grünland"
+      }
     ]
   },
   "bestuaeber": {
     "prompt": "Wer bestäubt diese Blume hauptsächlich?",
-    "fixedOpts": ["Bienen", "Wind", "Kolibri", "Fledermäuse"],
+    "fixedOpts": [
+      "Bienen",
+      "Wind",
+      "Kolibri",
+      "Fledermäuse"
+    ],
     "items": [
-      {"n": "Rotklee", "c": "Bienen"},
-      {"n": "Mais", "c": "Wind"},
-      {"n": "Fuchsie", "c": "Kolibri"},
-      {"n": "Baobab-Blüte", "c": "Fledermäuse"},
-      {"n": "Sonnenblume", "c": "Bienen"},
-      {"n": "Birke", "c": "Wind"},
-      {"n": "Salbei", "c": "Bienen"},
-      {"n": "Agave (Mexiko)", "c": "Fledermäuse"},
-      {"n": "Glockenblume", "c": "Bienen"},
-      {"n": "Eiche", "c": "Wind"},
-      {"n": "Banane (Wilde)", "c": "Fledermäuse"},
-      {"n": "Mais", "c": "Wind"},
-      {"n": "Löwenzahn", "c": "Bienen"},
-      {"n": "Hibiskus (Hawaii)", "c": "Kolibri"},
-      {"n": "Weizen", "c": "Wind"},
-      {"n": "Saguaro-Kaktus", "c": "Fledermäuse"},
-      {"n": "Lavendel", "c": "Bienen"},
-      {"n": "Haselnuss", "c": "Wind"},
-      {"n": "Passionsblume", "c": "Kolibri"},
-      {"n": "Durian", "c": "Fledermäuse"}
+      {
+        "n": "Rotklee",
+        "c": "Bienen"
+      },
+      {
+        "n": "Mais",
+        "c": "Wind"
+      },
+      {
+        "n": "Fuchsie",
+        "c": "Kolibri"
+      },
+      {
+        "n": "Baobab-Blüte",
+        "c": "Fledermäuse"
+      },
+      {
+        "n": "Sonnenblume",
+        "c": "Bienen"
+      },
+      {
+        "n": "Birke",
+        "c": "Wind"
+      },
+      {
+        "n": "Salbei",
+        "c": "Bienen"
+      },
+      {
+        "n": "Agave (Mexiko)",
+        "c": "Fledermäuse"
+      },
+      {
+        "n": "Glockenblume",
+        "c": "Bienen"
+      },
+      {
+        "n": "Eiche",
+        "c": "Wind"
+      },
+      {
+        "n": "Banane (Wilde)",
+        "c": "Fledermäuse"
+      },
+      {
+        "n": "Löwenzahn",
+        "c": "Bienen"
+      },
+      {
+        "n": "Hibiskus (Hawaii)",
+        "c": "Kolibri"
+      },
+      {
+        "n": "Weizen",
+        "c": "Wind"
+      },
+      {
+        "n": "Saguaro-Kaktus",
+        "c": "Fledermäuse"
+      },
+      {
+        "n": "Lavendel",
+        "c": "Bienen"
+      },
+      {
+        "n": "Haselnuss",
+        "c": "Wind"
+      },
+      {
+        "n": "Passionsblume",
+        "c": "Kolibri"
+      },
+      {
+        "n": "Durian",
+        "c": "Fledermäuse"
+      }
     ]
   },
   "herkunft": {
     "prompt": "Von welchem Kontinent stammt diese Kulturpflanze ursprünglich?",
     "items": [
-      {"n": "Kartoffel", "c": "Südamerika"},
-      {"n": "Tomate", "c": "Südamerika"},
-      {"n": "Mais", "c": "Nordamerika"},
-      {"n": "Sonnenblume", "c": "Nordamerika"},
-      {"n": "Kaffee", "c": "Afrika"},
-      {"n": "Sorghum", "c": "Afrika"},
-      {"n": "Wassermelone", "c": "Afrika"},
-      {"n": "Weizen", "c": "Asien"},
-      {"n": "Reis", "c": "Asien"},
-      {"n": "Sojabohne", "c": "Asien"},
-      {"n": "Banane", "c": "Asien"},
-      {"n": "Ingwer", "c": "Asien"},
-      {"n": "Olive", "c": "Europa"},
-      {"n": "Weinrebe", "c": "Europa"},
-      {"n": "Linsen", "c": "Asien"},
-      {"n": "Kakao", "c": "Südamerika"},
-      {"n": "Ananas", "c": "Südamerika"},
-      {"n": "Avocado", "c": "Nordamerika"},
-      {"n": "Kürbis", "c": "Nordamerika"},
-      {"n": "Chili", "c": "Nordamerika"}
+      {
+        "n": "Kartoffel",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Tomate",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Mais",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Sonnenblume",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Kaffee",
+        "c": "Afrika"
+      },
+      {
+        "n": "Sorghum",
+        "c": "Afrika"
+      },
+      {
+        "n": "Wassermelone",
+        "c": "Afrika"
+      },
+      {
+        "n": "Weizen",
+        "c": "Asien"
+      },
+      {
+        "n": "Reis",
+        "c": "Asien"
+      },
+      {
+        "n": "Sojabohne",
+        "c": "Asien"
+      },
+      {
+        "n": "Banane",
+        "c": "Asien"
+      },
+      {
+        "n": "Ingwer",
+        "c": "Asien"
+      },
+      {
+        "n": "Olive",
+        "c": "Europa"
+      },
+      {
+        "n": "Weinrebe",
+        "c": "Europa"
+      },
+      {
+        "n": "Linsen",
+        "c": "Asien"
+      },
+      {
+        "n": "Kakao",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Ananas",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Avocado",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Kürbis",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Chili",
+        "c": "Nordamerika"
+      }
     ]
   },
   "nutzung": {
     "prompt": "Wofür wird diese Pflanze hauptsächlich genutzt?",
-    "fixedOpts": ["Nahrung", "Medizin / Pharmazie", "Textilfaser", "Zierpflanze"],
+    "fixedOpts": [
+      "Nahrung",
+      "Medizin / Pharmazie",
+      "Textilfaser",
+      "Zierpflanze"
+    ],
     "items": [
-      {"n": "Opium-Mohn (Papaver somniferum)", "c": "Medizin / Pharmazie"},
-      {"n": "Baumwolle (Gossypium)", "c": "Textilfaser"},
-      {"n": "Weizen", "c": "Nahrung"},
-      {"n": "Orchidee", "c": "Zierpflanze"},
-      {"n": "Chinchona (Chinarinde)", "c": "Medizin / Pharmazie"},
-      {"n": "Flachs (Linum usitatissimum)", "c": "Textilfaser"},
-      {"n": "Zuckerrohr", "c": "Nahrung"},
-      {"n": "Rose (Gartenrose)", "c": "Zierpflanze"},
-      {"n": "Artischocke", "c": "Nahrung"},
-      {"n": "Hanf (Cannabis sativa)", "c": "Textilfaser"},
-      {"n": "Kamille (Matricaria)", "c": "Medizin / Pharmazie"},
-      {"n": "Tulpe (Garten)", "c": "Zierpflanze"},
-      {"n": "Süßkartoffel", "c": "Nahrung"},
-      {"n": "Sisal (Agave sisalana)", "c": "Textilfaser"},
-      {"n": "Baldrian (Valeriana)", "c": "Medizin / Pharmazie"},
-      {"n": "Dahlie", "c": "Zierpflanze"},
-      {"n": "Brokkoli", "c": "Nahrung"},
-      {"n": "Brennnessel (Urtica dioica)", "c": "Textilfaser"},
-      {"n": "Ginkgo biloba", "c": "Medizin / Pharmazie"},
-      {"n": "Pelargonie", "c": "Zierpflanze"}
+      {
+        "n": "Opium-Mohn (Papaver somniferum)",
+        "c": "Medizin / Pharmazie"
+      },
+      {
+        "n": "Baumwolle (Gossypium)",
+        "c": "Textilfaser"
+      },
+      {
+        "n": "Weizen",
+        "c": "Nahrung"
+      },
+      {
+        "n": "Orchidee",
+        "c": "Zierpflanze"
+      },
+      {
+        "n": "Chinchona (Chinarinde)",
+        "c": "Medizin / Pharmazie"
+      },
+      {
+        "n": "Flachs (Linum usitatissimum)",
+        "c": "Textilfaser"
+      },
+      {
+        "n": "Zuckerrohr",
+        "c": "Nahrung"
+      },
+      {
+        "n": "Rose (Gartenrose)",
+        "c": "Zierpflanze"
+      },
+      {
+        "n": "Artischocke",
+        "c": "Nahrung"
+      },
+      {
+        "n": "Hanf (Cannabis sativa)",
+        "c": "Textilfaser"
+      },
+      {
+        "n": "Kamille (Matricaria)",
+        "c": "Medizin / Pharmazie"
+      },
+      {
+        "n": "Tulpe (Garten)",
+        "c": "Zierpflanze"
+      },
+      {
+        "n": "Süßkartoffel",
+        "c": "Nahrung"
+      },
+      {
+        "n": "Sisal (Agave sisalana)",
+        "c": "Textilfaser"
+      },
+      {
+        "n": "Baldrian (Valeriana)",
+        "c": "Medizin / Pharmazie"
+      },
+      {
+        "n": "Dahlie",
+        "c": "Zierpflanze"
+      },
+      {
+        "n": "Brokkoli",
+        "c": "Nahrung"
+      },
+      {
+        "n": "Brennnessel (Urtica dioica)",
+        "c": "Textilfaser"
+      },
+      {
+        "n": "Ginkgo biloba",
+        "c": "Medizin / Pharmazie"
+      },
+      {
+        "n": "Pelargonie",
+        "c": "Zierpflanze"
+      }
     ]
   },
   "blattform": {
     "prompt": "Welche Blattform hat diese Pflanze?",
-    "fixedOpts": ["Nadelförmig", "Herzförmig", "Gefiedert", "Handförmig"],
+    "fixedOpts": [
+      "Nadelförmig",
+      "Herzförmig",
+      "Gefiedert",
+      "Handförmig"
+    ],
     "items": [
-      {"n": "Fichte", "c": "Nadelförmig"},
-      {"n": "Kiefer", "c": "Nadelförmig"},
-      {"n": "Linde", "c": "Herzförmig"},
-      {"n": "Brennnessel", "c": "Herzförmig"},
-      {"n": "Schwarze Holunder", "c": "Gefiedert"},
-      {"n": "Robinie", "c": "Gefiedert"},
-      {"n": "Ahornblatt", "c": "Handförmig"},
-      {"n": "Kastanie (Rosskastanie)", "c": "Handförmig"},
-      {"n": "Tanne", "c": "Nadelförmig"},
-      {"n": "Efeu", "c": "Handförmig"},
-      {"n": "Walnuss", "c": "Gefiedert"},
-      {"n": "Lärche", "c": "Nadelförmig"},
-      {"n": "Hasel", "c": "Herzförmig"},
-      {"n": "Esche", "c": "Gefiedert"},
-      {"n": "Weinrebe", "c": "Handförmig"},
-      {"n": "Rhabarber", "c": "Herzförmig"},
-      {"n": "Sumach", "c": "Gefiedert"},
-      {"n": "Thuja", "c": "Nadelförmig"},
-      {"n": "Hanf", "c": "Handförmig"},
-      {"n": "Holunder", "c": "Gefiedert"}
+      {
+        "n": "Fichte",
+        "c": "Nadelförmig"
+      },
+      {
+        "n": "Kiefer",
+        "c": "Nadelförmig"
+      },
+      {
+        "n": "Linde",
+        "c": "Herzförmig"
+      },
+      {
+        "n": "Brennnessel",
+        "c": "Herzförmig"
+      },
+      {
+        "n": "Schwarze Holunder",
+        "c": "Gefiedert"
+      },
+      {
+        "n": "Robinie",
+        "c": "Gefiedert"
+      },
+      {
+        "n": "Ahornblatt",
+        "c": "Handförmig"
+      },
+      {
+        "n": "Kastanie (Rosskastanie)",
+        "c": "Handförmig"
+      },
+      {
+        "n": "Tanne",
+        "c": "Nadelförmig"
+      },
+      {
+        "n": "Efeu",
+        "c": "Handförmig"
+      },
+      {
+        "n": "Walnuss",
+        "c": "Gefiedert"
+      },
+      {
+        "n": "Lärche",
+        "c": "Nadelförmig"
+      },
+      {
+        "n": "Hasel",
+        "c": "Herzförmig"
+      },
+      {
+        "n": "Esche",
+        "c": "Gefiedert"
+      },
+      {
+        "n": "Weinrebe",
+        "c": "Handförmig"
+      },
+      {
+        "n": "Rhabarber",
+        "c": "Herzförmig"
+      },
+      {
+        "n": "Sumach",
+        "c": "Gefiedert"
+      },
+      {
+        "n": "Thuja",
+        "c": "Nadelförmig"
+      },
+      {
+        "n": "Hanf",
+        "c": "Handförmig"
+      },
+      {
+        "n": "Holunder",
+        "c": "Gefiedert"
+      }
     ]
   },
   "klimazone": {
     "prompt": "In welcher Klimazone wächst diese Pflanze natürlich?",
-    "fixedOpts": ["Tropisch", "Mediterran", "Gemäßigt", "Arktisch/Alpin"],
+    "fixedOpts": [
+      "Tropisch",
+      "Mediterran",
+      "Gemäßigt",
+      "Arktisch/Alpin"
+    ],
     "items": [
-      {"n": "Durian", "c": "Tropisch"},
-      {"n": "Olivenbaum", "c": "Mediterran"},
-      {"n": "Stieleiche", "c": "Gemäßigt"},
-      {"n": "Silberwurz (Dryas octopetala)", "c": "Arktisch/Alpin"},
-      {"n": "Kokospalme", "c": "Tropisch"},
-      {"n": "Kork-Eiche", "c": "Mediterran"},
-      {"n": "Rotbuche", "c": "Gemäßigt"},
-      {"n": "Edelweiss", "c": "Arktisch/Alpin"},
-      {"n": "Mangrove", "c": "Tropisch"},
-      {"n": "Lavendel", "c": "Mediterran"},
-      {"n": "Birke", "c": "Gemäßigt"},
-      {"n": "Arktische Weide", "c": "Arktisch/Alpin"},
-      {"n": "Kakaopflanze", "c": "Tropisch"},
-      {"n": "Zypresse", "c": "Mediterran"},
-      {"n": "Fichte", "c": "Gemäßigt"},
-      {"n": "Steinbrechgewächs (Saxifraga)", "c": "Arktisch/Alpin"},
-      {"n": "Bambus (tropische Arten)", "c": "Tropisch"},
-      {"n": "Lorbeer", "c": "Mediterran"},
-      {"n": "Lärche", "c": "Gemäßigt"},
-      {"n": "Gletscherhahnenfuß", "c": "Arktisch/Alpin"}
+      {
+        "n": "Durian",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Olivenbaum",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Stieleiche",
+        "c": "Gemäßigt"
+      },
+      {
+        "n": "Silberwurz (Dryas octopetala)",
+        "c": "Arktisch/Alpin"
+      },
+      {
+        "n": "Kokospalme",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Kork-Eiche",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Rotbuche",
+        "c": "Gemäßigt"
+      },
+      {
+        "n": "Edelweiss",
+        "c": "Arktisch/Alpin"
+      },
+      {
+        "n": "Mangrove",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Lavendel",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Birke",
+        "c": "Gemäßigt"
+      },
+      {
+        "n": "Arktische Weide",
+        "c": "Arktisch/Alpin"
+      },
+      {
+        "n": "Kakaopflanze",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Zypresse",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Fichte",
+        "c": "Gemäßigt"
+      },
+      {
+        "n": "Steinbrechgewächs (Saxifraga)",
+        "c": "Arktisch/Alpin"
+      },
+      {
+        "n": "Bambus (tropische Arten)",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Lorbeer",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Lärche",
+        "c": "Gemäßigt"
+      },
+      {
+        "n": "Gletscherhahnenfuß",
+        "c": "Arktisch/Alpin"
+      }
     ]
   },
   "scheinfruchte": {
     "prompt": "Wie klassifiziert die Botanik diese Frucht?",
-    "fixedOpts": ["Echte Frucht", "Scheinfrucht", "Hülse", "Zapfen"],
+    "fixedOpts": [
+      "Echte Frucht",
+      "Scheinfrucht",
+      "Hülse",
+      "Zapfen"
+    ],
     "items": [
-      {"n": "Kirsche", "c": "Echte Frucht"},
-      {"n": "Apfel", "c": "Scheinfrucht"},
-      {"n": "Erbse", "c": "Hülse"},
-      {"n": "Fichte-Zapfen", "c": "Zapfen"},
-      {"n": "Pflaume", "c": "Echte Frucht"},
-      {"n": "Erdbeere", "c": "Scheinfrucht"},
-      {"n": "Bohne", "c": "Hülse"},
-      {"n": "Kiefernzapfen", "c": "Zapfen"},
-      {"n": "Traube (Weinbeere)", "c": "Echte Frucht"},
-      {"n": "Hagebutte", "c": "Scheinfrucht"},
-      {"n": "Linse", "c": "Hülse"},
-      {"n": "Lärchenzapfen", "c": "Zapfen"},
-      {"n": "Tomate", "c": "Echte Frucht"},
-      {"n": "Birne", "c": "Scheinfrucht"},
-      {"n": "Sojabohne", "c": "Hülse"},
-      {"n": "Tannenzapfen", "c": "Zapfen"},
-      {"n": "Avocado", "c": "Echte Frucht"},
-      {"n": "Maulbeere", "c": "Scheinfrucht"},
-      {"n": "Kichererbse", "c": "Hülse"},
-      {"n": "Wacholderfrucht", "c": "Zapfen"}
+      {
+        "n": "Kirsche",
+        "c": "Echte Frucht"
+      },
+      {
+        "n": "Apfel",
+        "c": "Scheinfrucht"
+      },
+      {
+        "n": "Erbse",
+        "c": "Hülse"
+      },
+      {
+        "n": "Fichte-Zapfen",
+        "c": "Zapfen"
+      },
+      {
+        "n": "Pflaume",
+        "c": "Echte Frucht"
+      },
+      {
+        "n": "Erdbeere",
+        "c": "Scheinfrucht"
+      },
+      {
+        "n": "Bohne",
+        "c": "Hülse"
+      },
+      {
+        "n": "Kiefernzapfen",
+        "c": "Zapfen"
+      },
+      {
+        "n": "Traube (Weinbeere)",
+        "c": "Echte Frucht"
+      },
+      {
+        "n": "Hagebutte",
+        "c": "Scheinfrucht"
+      },
+      {
+        "n": "Linse",
+        "c": "Hülse"
+      },
+      {
+        "n": "Lärchenzapfen",
+        "c": "Zapfen"
+      },
+      {
+        "n": "Tomate",
+        "c": "Echte Frucht"
+      },
+      {
+        "n": "Birne",
+        "c": "Scheinfrucht"
+      },
+      {
+        "n": "Sojabohne",
+        "c": "Hülse"
+      },
+      {
+        "n": "Tannenzapfen",
+        "c": "Zapfen"
+      },
+      {
+        "n": "Avocado",
+        "c": "Echte Frucht"
+      },
+      {
+        "n": "Maulbeere",
+        "c": "Scheinfrucht"
+      },
+      {
+        "n": "Kichererbse",
+        "c": "Hülse"
+      },
+      {
+        "n": "Wacholderfrucht",
+        "c": "Zapfen"
+      }
     ]
   },
   "baum_des_jahres": {
     "prompt": "In welchem Jahr wurde dieser Baum zum \"Baum des Jahres\" in Deutschland gekürt?",
     "yearMode": true,
     "items": [
-      {"n": "Europäische Lärche", "c": "2012"},
-      {"n": "Wildapfel", "c": "2013"},
-      {"n": "Traubenkirsche", "c": "2014"},
-      {"n": "Feldstadtbaum (Feld-Ahorn)", "c": "2015"},
-      {"n": "Kiefer (Wald-Kiefer)", "c": "2016"},
-      {"n": "Moorbirke", "c": "2017"},
-      {"n": "Weisstanne", "c": "2018"},
-      {"n": "Flatterulme", "c": "2019"},
-      {"n": "Hainbuche", "c": "2020"},
-      {"n": "Spitzahorn", "c": "2021"},
-      {"n": "Rotbuche", "c": "2022"},
-      {"n": "Speierling", "c": "2023"},
-      {"n": "Mehlbeere", "c": "2024"},
-      {"n": "Bergahorn", "c": "2025"},
-      {"n": "Sommerlinde", "c": "2003"},
-      {"n": "Silber-Weide", "c": "2004"},
-      {"n": "Rosskastanie", "c": "2005"},
-      {"n": "Schwarzpappel", "c": "2006"},
-      {"n": "Vogelkirsche", "c": "2010"},
-      {"n": "Esskastanie", "c": "2011"}
+      {
+        "n": "Europäische Lärche",
+        "c": "2012"
+      },
+      {
+        "n": "Wildapfel",
+        "c": "2013"
+      },
+      {
+        "n": "Traubenkirsche",
+        "c": "2014"
+      },
+      {
+        "n": "Feldstadtbaum (Feld-Ahorn)",
+        "c": "2015"
+      },
+      {
+        "n": "Kiefer (Wald-Kiefer)",
+        "c": "2016"
+      },
+      {
+        "n": "Moorbirke",
+        "c": "2017"
+      },
+      {
+        "n": "Weisstanne",
+        "c": "2018"
+      },
+      {
+        "n": "Flatterulme",
+        "c": "2019"
+      },
+      {
+        "n": "Hainbuche",
+        "c": "2020"
+      },
+      {
+        "n": "Spitzahorn",
+        "c": "2021"
+      },
+      {
+        "n": "Rotbuche",
+        "c": "2022"
+      },
+      {
+        "n": "Speierling",
+        "c": "2023"
+      },
+      {
+        "n": "Mehlbeere",
+        "c": "2024"
+      },
+      {
+        "n": "Bergahorn",
+        "c": "2025"
+      },
+      {
+        "n": "Sommerlinde",
+        "c": "2003"
+      },
+      {
+        "n": "Silber-Weide",
+        "c": "2004"
+      },
+      {
+        "n": "Rosskastanie",
+        "c": "2005"
+      },
+      {
+        "n": "Schwarzpappel",
+        "c": "2006"
+      },
+      {
+        "n": "Vogelkirsche",
+        "c": "2010"
+      },
+      {
+        "n": "Esskastanie",
+        "c": "2011"
+      }
     ]
   },
   "giftpflanze_jahres": {
     "prompt": "In welchem Jahr wurde diese Pflanze zur \"Giftpflanze des Jahres\" gekürt?",
     "yearMode": true,
     "items": [
-      {"n": "Stechapfel (Datura stramonium)", "c": "2021"},
-      {"n": "Rizinus (Ricinus communis)", "c": "2020"},
-      {"n": "Eisenhut (Aconitum)", "c": "2019"},
-      {"n": "Engelstrompete (Brugmansia)", "c": "2018"},
-      {"n": "Herbstzeitlose (Colchicum autumnale)", "c": "2017"},
-      {"n": "Tollkirsche (Atropa belladonna)", "c": "2016"},
-      {"n": "Oleander (Nerium oleander)", "c": "2015"},
-      {"n": "Aronstab (Arum maculatum)", "c": "2014"},
-      {"n": "Fingerhut (Digitalis purpurea)", "c": "2013"},
-      {"n": "Schierling (Conium maculatum)", "c": "2012"},
-      {"n": "Hahnenfuß (Ranunculus)", "c": "2011"},
-      {"n": "Bilsenkraut (Hyoscyamus niger)", "c": "2010"},
-      {"n": "Maiglöckchen (Convallaria majalis)", "c": "2009"},
-      {"n": "Riesen-Bärenklau (Heracleum)", "c": "2008"},
-      {"n": "Eibe (Taxus baccata)", "c": "2007"},
-      {"n": "Blauregen (Wisteria sinensis)", "c": "2022"},
-      {"n": "Rittersporn (Delphinium)", "c": "2023"},
-      {"n": "Efeu (Hedera helix)", "c": "2006"},
-      {"n": "Seidelbast (Daphne mezereum)", "c": "2024"},
-      {"n": "Stechpalme (Ilex aquifolium)", "c": "2025"}
+      {
+        "n": "Stechapfel (Datura stramonium)",
+        "c": "2021"
+      },
+      {
+        "n": "Rizinus (Ricinus communis)",
+        "c": "2020"
+      },
+      {
+        "n": "Eisenhut (Aconitum)",
+        "c": "2019"
+      },
+      {
+        "n": "Engelstrompete (Brugmansia)",
+        "c": "2018"
+      },
+      {
+        "n": "Herbstzeitlose (Colchicum autumnale)",
+        "c": "2017"
+      },
+      {
+        "n": "Tollkirsche (Atropa belladonna)",
+        "c": "2016"
+      },
+      {
+        "n": "Oleander (Nerium oleander)",
+        "c": "2015"
+      },
+      {
+        "n": "Aronstab (Arum maculatum)",
+        "c": "2014"
+      },
+      {
+        "n": "Fingerhut (Digitalis purpurea)",
+        "c": "2013"
+      },
+      {
+        "n": "Schierling (Conium maculatum)",
+        "c": "2012"
+      },
+      {
+        "n": "Hahnenfuß (Ranunculus)",
+        "c": "2011"
+      },
+      {
+        "n": "Bilsenkraut (Hyoscyamus niger)",
+        "c": "2010"
+      },
+      {
+        "n": "Maiglöckchen (Convallaria majalis)",
+        "c": "2009"
+      },
+      {
+        "n": "Riesen-Bärenklau (Heracleum)",
+        "c": "2008"
+      },
+      {
+        "n": "Eibe (Taxus baccata)",
+        "c": "2007"
+      },
+      {
+        "n": "Blauregen (Wisteria sinensis)",
+        "c": "2022"
+      },
+      {
+        "n": "Rittersporn (Delphinium)",
+        "c": "2023"
+      },
+      {
+        "n": "Efeu (Hedera helix)",
+        "c": "2006"
+      },
+      {
+        "n": "Seidelbast (Daphne mezereum)",
+        "c": "2024"
+      },
+      {
+        "n": "Stechpalme (Ilex aquifolium)",
+        "c": "2025"
+      }
     ]
   }
 }
