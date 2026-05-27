@@ -2,6 +2,11 @@
   "version": 2,
   "builds": [
     { "src": "index.html",      "use": "@vercel/static" },
+    { "src": "landing.html",    "use": "@vercel/static" },
+    { "src": "impressum.html",  "use": "@vercel/static" },
+    { "src": "datenschutz.html","use": "@vercel/static" },
+    { "src": "robots.txt",      "use": "@vercel/static" },
+    { "src": "sitemap.xml",     "use": "@vercel/static" },
     { "src": "*.json",          "use": "@vercel/static" },
     { "src": "sw.js",           "use": "@vercel/static" },
     { "src": "manifest.json",   "use": "@vercel/static" },
@@ -13,6 +18,11 @@
     { "src": "/manifest.json",      "dest": "/manifest.json" },
     { "src": "/icon.svg",           "dest": "/icon.svg" },
     { "src": "/cities_data.js",     "dest": "/cities_data.js" },
+    { "src": "/robots.txt",         "dest": "/robots.txt",         "headers": { "Content-Type": "text/plain" } },
+    { "src": "/sitemap.xml",        "dest": "/sitemap.xml",        "headers": { "Content-Type": "application/xml" } },
+    { "src": "/landing.html",       "dest": "/landing.html" },
+    { "src": "/impressum.html",     "dest": "/impressum.html" },
+    { "src": "/datenschutz.html",   "dest": "/datenschutz.html" },
     { "src": "/([^/]+\\.json)",     "dest": "/$1" },
     { "src": "/(.*)",               "dest": "/index.html" }
   ]

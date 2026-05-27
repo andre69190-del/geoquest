@@ -787,6 +787,7 @@ Sobald eine Datei zu `data/` hinzukommt, entfernt wird oder umbenannt wird, änd
 - **Offline-Fallback**: Gibt `./GeoQuest.html` zurück, wenn kein Cache-Treffer und kein Netz
 - **cities_data.js** (3.8 MB): Bewusst NICHT in ASSETS — zu groß für Install-Phase; wird lazy-gecacht beim ersten Fetch
 
+
 **Non-Atomic Install via `Promise.allSettled`:**
 ```javascript
 e.waitUntil(
@@ -794,14 +795,14 @@ e.waitUntil(
     return Promise.allSettled(
       ASSETS.map(function(url) {
         return cache.add(url).catch(function(err) {
-          console.warn('SW: skipped', url, err);  // Einzelfehler überspringen
+          console.warn('SW: skipped', url, err);  // Einzelfehler ueberspringen
         });
       })
     );
   })
 );
 ```
-Ein 404 für eine einzelne Datei verhindert nicht die Installation des gesamten Service Workers.
+Ein 404 fuer eine einzelne Datei verhindert nicht die Installation des gesamten Service Workers.
 
 ### Auth-UX Offline-Guards (Phase 239)
 
@@ -810,7 +811,7 @@ Alle vier Auth-Funktionen enthalten einen `navigator.onLine`-Guard der sofort ei
 ```javascript
 // doLogin, doRegister, doForgotPassword, doSetNewPassword:
 if(!navigator.onLine){
-  S.authError = "Du bist offline. Anmeldung ohne Internet nicht möglich.";
+  S.authError = "Du bist offline. Anmeldung ohne Internet nicht moeglich.";
   render();
   return;
 }
@@ -822,7 +823,7 @@ function _authErrMsg(err){
   if(!err) return '';
   const m = err?.message || err?.error_description || '';
   if(m && m.trim()) return m.trim();
-  return 'Verbindungsfehler zum Server.';  // Fallback für {} aus 503-Body-Parse-Fehler
+  return 'Verbindungsfehler zum Server.';  // Fallback fuer {} aus 503-Body-Parse-Fehler
 }
 ```
 Verhindert, dass `{}` als Fehlermeldung im UI erscheint wenn Supabase offline ist.
@@ -852,377 +853,1067 @@ window.addEventListener('online', function(){
   render();
   syncOfflineData();
 });
-
-async function syncOfflineData(){
-  if(!sb || !sbUser?.id || !navigator.onLine) return;
-  const _q = JSON.parse(localStorage.getItem('gq_offline_queue'));
-  if(!_q || (!_q.pendingScore && !_q.pendingCoins)) return;
-  await sb.rpc('add_score', {
-    p_user_id: sbUser.id,
-    p_score: _q.pendingScore || 0,
-    p_coins: _q.pendingCoins || 0,
-    p_rounds: 0,
-    p_duration_ms: 0
-  });
-  localStorage.removeItem('gq_offline_queue');
-  showToast('✅ Offline-Ergebnisse synchronisiert!');
-  render();
-}
 ```
 
-**Offline-Banner im Profil-Tab:** Wenn `S.isOffline === true` erscheint eine rote Benachrichtigungsleiste im Profil-Tab, die den Nutzer informiert, dass Ergebnisse lokal zwischengespeichert und beim nächsten Online-Start automatisch synchronisiert werden.
+**Offline-Banner im Profil-Tab:** Wenn `S.isOffline === true` erscheint eine rote Benachrichtigungsleiste im Profil-Tab.
 
 ---
 
 ## 9. Bekannte Fallstricke & Gotchas
 
-### ⚠️ KRITISCH: `targetLat`/`targetLng` — NICHT `lat`/`lng`
+### targetLat/targetLng -- NICHT lat/lng
 
-Die Game-Engine verwendet für alle Pin-Modi ausschließlich die Feldnamen `targetLat` und `targetLng` im Question-Objekt `S.q`:
+Die Game-Engine verwendet fuer alle Pin-Modi ausschliesslich `targetLat` und `targetLng` im Question-Objekt `S.q`. Jeder Generator MUSS diese Feldnamen verwenden:
 
 ```javascript
-// Engine-Scoring (haversine):
-const dist = haversineKm(clickedLat, clickedLng, S.q.targetLat, S.q.targetLng);
-```
-
-**Jeder Generator, der ein `uk_pin`-Question-Objekt zurückgibt, MUSS `targetLat`/`targetLng` verwenden.**
-
-❌ **FALSCH:**
-```javascript
+// RICHTIG:
+return { type: "uk_pin", subj: item.n, targetLat: item.lat, targetLng: item.lng,
+         ans: item.n, lid: "prefix_" + cat + "_" + idx, cc: null, prompt: "..." };
+// FALSCH:
 return { type: "uk_pin", subj: item.n, lat: item.lat, lng: item.lng, ... };
 ```
 
-✅ **RICHTIG:**
+Symptom wenn falsch: Karte zeigt Pin bei (0,0), Feedback zeigt "0 km entfernt, 0 Pkt."
+
+### Neue MODE_CATS muessen in `_CAT_ORDER` ergaenzt werden
+
+`renderHomeTab()` verwendet `_CAT_ORDER`. Neue Kategorien erscheinen automatisch am Ende der Liste. Soll eine Kategorie an einer bestimmten Position erscheinen, muss sie manuell in `fixed` eingetragen werden.
+
+### `KULTUR_DATA` unterstuetzt zwei Datenformate
+
+Aeltere Eintraege: einfaches Array `[{n, lat, lng}]`. Neuere Eintraege: Objekt `{prompt, items:[{n, lat, lng}]}`. `genUniversalPinQ` erkennt beide Formate automatisch.
+
+### `_mkHL`-Factory muss `type:"beta_hl"` zurueckgeben
+
+Die Render-Engine hat keinen Handler fuer `type:"hl"`. Unterstuetzte H/L-Typen: `hl_pop`, `hl_river`, `hl_area`, `uk_hl`, `beta_hl`. Referenz-Implementierungen: `genTiereHL`, `genPflanzenHL`.
+
+### `sw.js` wird bei jedem Build ueberschrieben
+
+Manuelle Aenderungen an `sw.js` werden beim naechsten `python3 gen.py` ueberschrieben. Alle SW-Anpassungen gehoeren in den GENERATORS-Block in `gen.py`.
+
+### SVG-Kartenlabel: Lange Namen overflow die Karte
+
+Label immer auf max. 22 Zeichen kuerzen:
 ```javascript
-return { type: "uk_pin", subj: item.n, targetLat: item.lat, targetLng: item.lng,
-         ans: item.n, lid: "prefix_" + cat + "_" + idx, cc: null, ... };
+.text((S.q.ans||"").length > 22 ? (S.q.ans||"").slice(0,20) + "..." : S.q.ans||"")
 ```
 
-**Pflichtfelder eines vollständigen `uk_pin`-Question-Objekts:**
+### `unlock_and_push.bat` muss `git push origin main` enthalten
 
-| Feld | Typ | Bedeutung |
-|------|-----|-----------|
-| `type` | `"uk_pin"` | Fragetyp |
-| `subj` | string | Anzeigename (ggf. spoiler-bereinigt) |
-| `ans` | string | Vollständiger korrekter Name (nie im DOM) |
-| `targetLat` | number | Breitengrad des Zielorts |
-| `targetLng` | number | Längengrad des Zielorts |
-| `lid` | string | Eindeutige Level-ID für Dedup |
-| `cc` | string\|null | Ländercode (optional, für Flaggen-Icon) |
-| `prompt` | string | Fragetext |
+Ohne `git push origin main` erreichen Aenderungen Vercel/GitHub nie.
 
-> **Hintergrund:** Dieser Bug trat in Phase 229–231 auf, weil die `_mkPinQ`-Factory-Funktion mit `lat`/`lng` implementiert wurde, während `genUniversalPinQ` von Anfang an korrekt `targetLat`/`targetLng` nutzte. Symptom: Karte zeigt Pin bei (0,0), Feedback zeigt "0 km entfernt · 0 Pkt.". Fix: Phase 232, `_mkPinQ` auf `targetLat`/`targetLng` umgestellt.
+### verify.py kann Null-Bytes enthalten
 
----
-
-### ⚠️ Neue MODE_CATS müssen in `_CAT_ORDER` ergänzt werden
-
-`renderHomeTab()` verwendet eine Liste `_CAT_ORDER` zur Reihenfolge der Kategorien. Ab Phase 232 wird diese dynamisch befüllt — alle Einträge aus `MODE_CATS`, die nicht in der festen Liste sind, werden automatisch angehängt:
-
-```javascript
-const fixed = ["pure_geo", "lifestyle", ..., "tiere", "pflanzen", "gastronomie", ...];
-const extra = Object.keys(MODE_CATS).filter(k => !fixed.includes(k));
-const _CAT_ORDER = fixed.concat(extra);
-```
-
-Neue Kategorien erscheinen damit **automatisch** am Ende der Liste. Soll eine neue Kategorie an einer bestimmten Position erscheinen, muss sie manuell in `fixed` eingetragen werden.
-
----
-
-### ⚠️ `KULTUR_DATA` unterstützt zwei Datenformate
-
-Ältere Einträge in `data/kultur.json` sind **einfache Arrays**:
-```json
-"tiere_endemisch": [ {"n": "...", "lat": 1.0, "lng": 2.0}, ... ]
-```
-
-Neuere Einträge (ab Phase 227) sind **Objekte mit Prompt**:
-```json
-"tiere_zoos": { "prompt": "Wo liegt dieser Zoo?", "items": [ {"n": "...", "lat": 1.0, "lng": 2.0} ] }
-```
-
-`genUniversalPinQ` erkennt beide Formate automatisch:
-```javascript
-const data = Array.isArray(raw) ? raw : (raw.items || []);
-const storedPrompt = Array.isArray(raw) ? null : raw.prompt;
-```
-
-Alle anderen Datendateien (`gastro_pin.json`, `tech_pin.json`, etc.) verwenden **ausschließlich** das Objekt-Format.
-
----
-
-### ⚠️ Pin-Modus: Name des Ortes wird absichtlich angezeigt
-
-Bei allen `uk_pin`-Modi (z.B. "Wo liegt dieser Solarpark?") wird der **Name des gesuchten Ortes im Fragetext angezeigt**. Das ist kein Bug — es ist das beabsichtigte Spielkonzept: Der Spieler kennt den Namen und muss die **Position auf der Karte** finden. Der kognitive Aufwand liegt im geografischen Wissen, nicht im Erraten des Namens.
-
-> Der Name `subj` erscheint im Header. `ans` (vollständiger Name inkl. Klammern) wird **niemals** als DOM-Attribut gesetzt — Anti-Cheat bleibt gewahrt.
-
----
-
-### ⚠️ Pin-Feedback: "0 Pkt." trotz Punkte — Anzeigebug-Muster
-
-Das Feedback-Pill für `uk_pin`/`airport_pin` verwendet zwei separate Renderpfade. **Tatsächlich werden Punkte auch bei falscher Antwort vergeben** (solange `dist < 2500 km`):
-
-```javascript
-const pts = Math.max(0, Math.round(500 * (1 - dist / 2500)));
-```
-
-Das Scoring: 500 Pkt. bei 0 km, 0 Pkt. ab 2500 km linear.
-
-**Regel:** Niemals Punkte im `ng`-Pfad hardcoden — immer `apPts` auslesen:
-```javascript
-// ✅ RICHTIG:
-:`<div class="fb ng">✗ ${apDist} km${apPts > 0 ? " · +" + apPts + " Pkt." : ""}</div>`;
-```
-
----
-
-### ⚠️ `_mkHL`-Factory muss `type:"beta_hl"` zurückgeben — NICHT `type:"hl"`
-
-Die Render-Engine hat **keinen Handler für `type:"hl"`**. Die einzigen unterstützten H/L-Typen sind:
-`hl_pop`, `hl_river`, `hl_area`, `uk_hl`, **`beta_hl`**
-
-✅ **RICHTIG** — muss `beta_hl`-Format mit `opts`/`ans`/`meta` zurückgeben:
-```javascript
-return {
-  type: "beta_hl",
-  prompt: d.prompt || "Welches ist mehr?",
-  subj: "",
-  opts: [a.name, b.name],          // ← Pflicht: Array mit 2 Namen
-  ans: higher.name,                 // ← Pflicht: Name des Gewinners
-  meta: a.name+": "+a.val+" "+unit+" · "+b.name+": "+b.val+" "+unit,
-  lid: "mhl_"+key+"_"+Math.min(ai,bi)+"_"+Math.max(ai,bi),
-  cc: "de"
-};
-```
-
-**Referenz-Implementierungen** (korrekt, getestet): `genTiereHL`, `genPflanzenHL`
-
----
-
-### ⚠️ `sw.js` wird bei jedem Build überschrieben
-
-`sw.js` wird von `gen.py` generiert — manuelle Änderungen an `sw.js` werden beim nächsten `python3 gen.py` überschrieben. Alle SW-Anpassungen gehören in den GENERATORS-Block in `gen.py`.
-
----
-
-### ⚠️ SVG-Kartenlabel: Lange Namen overflow die Karte
-
-Die Korrekt-Antwort-Markierung nach einer Pin-Antwort rendert `S.q.ans` als SVG-Text. Lange Namen füllen die gesamte Kartenbreite.
-
-**Regel:** Label immer auf max. 22 Zeichen kürzen:
-```javascript
-// ✅ RICHTIG:
-.text((S.q.ans||"").length > 22 ? (S.q.ans||"").slice(0,20) + "…" : S.q.ans||"")
-```
-
----
-
-### ⚠️ `unlock_and_push.bat` muss `git push origin main` enthalten
-
-Das Bat-File committed nur lokal (`git commit`). Ohne `git push origin main` erreichen die Änderungen Vercel/GitHub nie. **Pflicht-Inhalt:**
-```bat
-git add -A
-git commit -m "..."
-git push origin main
-```
-
-Symptom wenn vergessen: `nothing to commit, working tree clean` beim zweiten Ausführen, aber deployed Version ist noch alt.
-
----
-
-### ⚠️ verify.py kann Null-Bytes enthalten (Padding-Korruption)
-
-Wenn `verify.py` mit `SyntaxError: source code cannot contain null bytes` fehlschlägt, hat das File binäre Null-Bytes als Padding bekommen. Fix:
-```python
-with open('verify.py', 'rb') as f: content = f.read()
-with open('verify.py', 'wb') as f: f.write(content.replace(b'\x00', b''))
-```
+Fix: `content.replace(b'\x00', b'')`
 
 ---
 
 ## 10. Supabase-Schema
 
-GeoQuest nutzt Supabase für optionale Cloud-Features: Score-Sync, Leaderboards, Profil, Liga, Sammelmarken. Alle Features funktionieren auch ohne Supabase (localStorage-Fallback).
+GeoQuest nutzt Supabase fuer optionale Cloud-Features: Score-Sync, Leaderboards, Profil, Liga, Sammelmarken.
 
 ### Tabellen
 
-**`profiles`** — Ein Eintrag pro registriertem User:
+**`profiles`** -- Ein Eintrag pro registriertem User:
 
 | Spalte | Typ | Beschreibung |
 |--------|-----|--------------|
 | `id` | uuid (PK) | Supabase Auth User-ID |
 | `username` | text | Anzeigename |
-| `total_score` | integer | Gesamtpunkte aller Zeiten |
-| `games_played` | integer | Anzahl gespeicherter Sessions |
-| `geo_coins` | integer | Aktuelle Münzen (Ingame-Währung) |
-| `current_title` | text | Aktueller Titel (z.B. "Weltentdecker") |
-| `joker_5050` | integer | Verbleibende 50/50-Joker |
-| `joker_freeze` | integer | Verbleibende Freeze-Joker |
-| `plates_collected` | jsonb | Gesammelte Kennzeichen `{cc: count}` |
-| `stats_mastery` | jsonb | Mastery-Map `{cc: {n, p, t, ts}}` |
-| `stats_history` | jsonb | Wöchentliche Score-History |
+| `total_score` | integer | Gesamtpunkte |
+| `games_played` | integer | Anzahl Sessions |
+| `geo_coins` | integer | Muenzen (Ingame-Waehrung) |
+| `current_title` | text | Aktueller Titel |
+| `joker_5050` | integer | 50/50-Joker |
+| `joker_freeze` | integer | Freeze-Joker |
+| `plates_collected` | jsonb | Gesammelte Kennzeichen |
+| `stats_mastery` | jsonb | Mastery-Map |
+| `stats_history` | jsonb | Woechentliche Score-History |
 | `survival_best` | integer | Bester Survival-Score |
-| `last_daily_date` | text | Datum der letzten Daily-Challenge (YYYY-MM-DD) |
+| `last_daily_date` | text | Datum der letzten Daily-Challenge |
 | `league_id` | integer | Aktuelle Liga-Stufe |
-| `league_score` | integer | Punkte in der aktuellen Liga-Woche |
+| `league_score` | integer | Punkte in aktueller Liga-Woche |
 
-**`game_sessions`** — Jede gespeicherte Spielsession:
+**`game_sessions`** -- Jede gespeicherte Spielsession:
 
 | Spalte | Typ | Beschreibung |
 |--------|-----|--------------|
-| `id` | bigint (PK, auto) | Session-ID |
-| `user_id` | uuid (FK → profiles) | Spieler |
-| `mode` | text | Modus-ID (z.B. "city", "uk_getraenke") |
+| `id` | bigint (PK) | Session-ID |
+| `user_id` | uuid | Spieler |
+| `mode` | text | Modus-ID |
 | `score` | integer | Erreichter Score |
-| `best_streak` | integer | Bester Streak dieser Session |
+| `best_streak` | integer | Bester Streak |
 | `rounds` | integer | Anzahl Runden (immer 10) |
 | `accuracy` | integer | Trefferquote in % |
-| `username` | text | Snapshot des Usernamens zum Zeitpunkt |
-| `device_type` | text | `"mobile"` oder `"desktop"` |
-| `created_at` | timestamptz | Timestamp |
+| `device_type` | text | mobile / desktop |
 
-**`leaderboard_weekly`** — View (kein direktes Insert möglich):
+### RPCs
 
-Gibt die wöchentliche Rangliste für einen Modus zurück. Wird über `sb.from("leaderboard_weekly").select("*").eq("mode", mode).order("rank")` abgefragt.
-
-**`passport_stamps`** — Reisepass-Stempel (via `upsert_stamp` RPC):
-
-Speichert pro User × Länderkürzel ob der Stempel gesammelt und ob Mastery erreicht wurde.
-
-### RPCs (Stored Functions)
-
-Alle schreibenden Score-Operationen laufen über RPCs — niemals direkte `UPDATE profiles SET total_score = ...` vom Client. Verhindert Client-seitige Manipulation.
-
-| RPC | Parameter | Beschreibung |
-|-----|-----------|--------------|
-| `add_score` | `p_user_id`, `p_score`, `p_coins`, `p_rounds`, `p_duration_ms` | Addiert Score + Coins atomar auf das Profil. **Hauptfunktion nach jeder Session.** |
-| `add_coins` | `p_user_id`, `p_amount` | Addiert Coins (Daily-Bonus, Titel-Belohnung). Gibt neuen Coins-Stand zurück. |
-| `spend_coins` | `p_user_id`, `p_amount` | Subtrahiert Coins (Joker-Kauf, Modus-Unlock). Gibt neuen Stand zurück. Schlägt fehl wenn Saldo < Betrag. |
-| `upsert_stamp` | `p_user_id`, `p_country_code`, `p_perfect` | Setzt/aktualisiert Reisepass-Stempel. |
-| `get_prev_week_rank` | `p_user_id` | Gibt Vorwochenrang zurück (für Liga-Auswertung). |
-| `update_league` | `p_user_id`, `p_new_league`, `p_eval_week` | Aktualisiert Liga-Stufe nach wöchentlicher Auswertung. |
-
-### Client-Zugriff
-
-```javascript
-// Supabase-Client wird in gen.py konfiguriert:
-const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-let sbUser    = null;  // Supabase Auth User (nach Login)
-let sbProfile = null;  // profiles-Zeile (nach loadProfile())
-let sbOK      = false; // true sobald Auth + Profil geladen
-
-// Globale Zustandscheck-Pattern:
-if(!sb || !sbUser?.id) return;          // kein Login
-if(!sbOK) return;                       // Profil noch nicht geladen
-if(!navigator.onLine) { /* queue */ }   // kein Netz (Phase 240)
-```
+| RPC | Beschreibung |
+|-----|--------------|
+| `add_score` | Addiert Score + Coins atomar |
+| `add_coins` | Addiert Coins |
+| `spend_coins` | Subtrahiert Coins (Joker-Kauf) |
+| `upsert_stamp` | Reisepass-Stempel |
+| `get_prev_week_rank` | Vorwochenrang |
+| `update_league` | Liga-Stufe aktualisieren |
 
 ---
 
-## 11. `validate_content.py` — Semantischer Content-Validator
+## 11. `validate_content.py` -- Semantischer Content-Validator
 
-`validate_content.py` prüft alle 37 `data/*.json` Dateien auf **inhaltliche** Qualitätsprobleme, die `verify.py` (Syntax/Struktur) nicht erkennen kann.
+`validate_content.py` prueft alle 37 `data/*.json` Dateien auf inhaltliche Qualitaetsprobleme.
 
 ```bash
-python3 validate_content.py          # Nur Warnungen ausgeben
+python3 validate_content.py          # Nur Warnungen
 python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 ```
 
-### Die 4 Prüfpfade
+**Check 1 -- Pin-Daten:** Pflichtfelder n/lat/lng, Koordinaten-Bereich, Null-Island, Duplikat-Koordinaten.
 
-**Check 1 — Pin-Daten (`*_pin.json`, Pin-Einträge in `kultur.json`)**
+**Check 2 -- H/L-Daten:** Pflichtfelder name/val, mind. 6 Items, keine Duplikate, keine negativen Werte, Ratio-Check > 10Mx, Z-Score > 4sigma (nur Info).
 
-| Prüfung | Was sie verhindert |
-|---------|--------------------|
-| Pflichtfelder `n`, `lat`, `lng` vorhanden | Silent fail: Pin bei (0,0) |
-| `lat` ∈ [-90, 90], `lng` ∈ [-180, 180] | Unmögliche Koordinaten |
-| Null-Island-Check: nicht beides = 0.0 | Vergessene Placeholder-Koordinaten |
-| Duplikat-Koordinaten (4 Dezimalstellen ≈ 11m) | Zwei Orte auf identischem Pin |
+**Check 3 -- Match-Daten:** Pflichtfelder n/c, mind. 4 unique c-Werte, keine Duplikate n.
 
-**Check 2 — H/L-Daten (`*_hl.json`, `tiere_hl.json`)**
-
-| Prüfung | Was sie verhindert |
-|---------|--------------------|
-| Pflichtfelder `name`, `val` | Generator gibt immer `null` zurück |
-| Mindestens 6 Items | La-Paz-Window kann keinen validen Partner finden |
-| Duplikate `name` | `lid`-Kollision → Dedup-System bricht |
-| Negative Werte | Unbeabsichtigte Vorzeichen |
-| Wert-Ratio > 10.000.000× | Gemischte Einheiten (g vs. kg, mm vs. km) |
-| Z-Score-Ausreißer > 4σ | Tippfehler in Zahlenwert (z.B. 5000 statt 500) |
-
-**Check 3 — Match-Daten (`*_match.json`, `tiere_match.json`, `kultur.json`-Match-Einträge)**
-
-| Prüfung | Was sie verhindert |
-|---------|--------------------|
-| Pflichtfelder `n`, `c` | Silent fail im Generator |
-| ≥ 4 unique `c`-Werte | Kein Distraktor-Pool für 3 falsche Antworten |
-| Duplikate `n` (Subjekt) | Dieselbe Frage zweimal in einer Session |
-
-**Check 4 — Wort-Schmiede-Daten (`*_ws.json`, `tiere_ws.json`)**
-
-| Prüfung | Was sie verhindert |
-|---------|--------------------|
-| `word` vorhanden und GROSSBUCHSTABEN | Anagramm-Engine bricht |
-| `word` nur Alpha-Zeichen, keine Leerzeichen | Zeichensatz-Fehler |
-| `validWords[lang]` ist Array | Engine bricht beim Spielstart |
-| Alle Lösungswörter GROSSBUCHSTABEN | Kein Match möglich |
-| Lösungswort nicht länger als `word` | Logisch unmöglich |
-| Anagramm-Validität: alle Buchstaben aus `word` entnehmbar | Spieler kann Wort physisch nicht legen |
-
-### Automatische Format-Erkennung
-
-`validate_content.py` erkennt den Dateityp automatisch anhand des Dateinamens-Suffix (`_pin`, `_hl`, `_match`, `_ws`) und bei `kultur.json` anhand der Datenstruktur (hat Einträge `lat`/`lng`? hat `val`? hat `c`?).
+**Check 4 -- WS-Daten:** word vorhanden/Grossbuchstaben, validWords ist Array, alle Loesungswoerter bildbar aus word-Buchstaben.
 
 ---
 
 ## 12. Phasen-Changelog
 
-Kompakter Überblick aller signifikanten Patches seit dem Migrations-System (Phase 225).
-
 | Phase | Datei | Inhalt |
 |-------|-------|--------|
-| 212 | `patch_212_kultur_modes.py` | 27 Kultur/Lifestyle Universal-Modi |
-| 213 | `patch_213_perf_daily_1v1.py` | Performance, Daily-History, 1v1-Selector CSS |
-| 214 | `patch_214_routing_audit.py` | Routing-Audit + Regressionen behoben |
-| 215 | `patch_215_uk_engine.py` | UK-Engine-Modi registriert |
-| 216 | `patch_216_universal_engine.py` | Universal-Engine + Custom-Mechanics |
-| 220 | `patch_220_security_audit.py` | 5-Säulen Security & Stability Audit |
-| 221a | `patch_221a_service_worker.py` | Service Worker Cache (blob-basiert, Phase 221) |
-| 221b | `patch_221b_ws_multilingual.py` | Wort-Schmiede Multilingual-Bonus |
-| 221c | `patch_221c_kompass_mode.py` | Sonnen-Kompass Rätsel — neuer Modus |
-| 222 | `patch_222_stadion_hl.py` | Dynamischer Stadion-Höhe-H/L-Generator |
-| 223 | `patch_223_map_zoom_fix.py` | Karten-Zoom D3 lid-Binding + Drag-vs-Click Guard |
-| 223 | `patch_223_tiere_data_expand.py` | Tiere/Pferde Datensatz 20 → 68 Einträge |
-| **225** | `patch_225_json_extraction.py` | **Daten aus gen.py nach `data/*.json` extrahiert** — Migrations-System eingeführt |
-| 226 | `patch_226_ux_fixes.py` | UX-Fixes: Suche, HUD, HL-Buttons EN |
-| 227a | `patch_227a_tiere_routing.py` | 21 Tiere-Modi Routing |
-| 227b | `patch_227b_tiere_data_part1.py` | Tiere Pin + H/L Daten + Generatoren |
-| 227c | `patch_227c_tiere_data_part2.py` | Tiere Match-Daten + Generator |
-| 227d | `patch_227d_pferde_dlc.py` | Pferde DLC: Rassen, Fachbegriffe, Stockmaß, Flüsterer |
-| 228 | `patch_228_pflanzen.py` | Pflanzen-Kategorie (4 JSON-Dateien, ~55 Modi) |
-| 229 | `patch_229_gastronomie.py` | Gastronomie-Kategorie (4 JSON-Dateien, ~51 Modi) |
-| 230 | `patch_230_tech_emob.py` | Tech + E-Mobilität (8 JSON-Dateien, ~110 Modi) |
-| 231 | `patch_231_archaeologie.py` | Archäologie (4 JSON-Dateien, ~60 Modi) |
-| 232 | *(inline)* | `_mkPinQ` auf `targetLat`/`targetLng` umgestellt; `_mkHL` auf `beta_hl` |
-| 235 | `patch_235_fixes.py` | Qualitäts-Patch: BETA-Tags, Pflanzen-Gruppe, Datendichte |
-| 236 | `patch_236_fixes.py` | Weitere QA-Fixes |
-| 237 | `patch_237_qa_triage.py` | QA-Triage: Duplikate, WS-Validierung, Koordinaten |
-| **238** | `patch_238_offline_sw.py` | **SW blob→external sw.js; hash-versioned CACHE_NAME; manifest.json; verify.py Sektion 12** |
-| **239** | `patch_239_offline_ux.py` | **Auth-UX: `_authErrMsg()`, `navigator.onLine` Guards in 4 Auth-Funktionen** |
-| **240** | `patch_240_offline_sync.py` | **`isOffline` State; online/offline Listener; Offline-Score-Queue; `syncOfflineData()`; Profil-Banner** |
-| 241 | `patch_241_security_ux.py` | Security Cap (100k/1k), Gameover Offline-Banner, verify.py Section-0 dynamisch |
-| 242 | `patch_242_engine_animals.py` | Tiere-Pin JSON, Daily 5-Mode-Rotation, Blitz-Modus (60s Speed-Round) |
-| **243** | `patch_243_new_worlds.py` | **3 Neue Welten: Astronomie, Geologie, Sport-Wissen (12 JSON-Dateien, 32 Modi)** |
-| 243b | `patch_243b_modes_fix.py` | 32 fehlende MODES-Einträge für Astro/Geo/Sport (leere Akkordeons gefixt) |
-| 249 | `patch_249_polish.py` | Security: `submitRouteResult()` in `_TRUSTED_FNS`; PWA-Banner Fix; LS-TTL 90d; `run_patch.py` Pipeline-Upgrade |
-| 250 | `patch_250_accordion_fix.py` | Akkordeon-Fix: `toggleAccordion()` delegiert an `filterByCategory()` |
-| 251 | `patch_251_pwa_banner_scope_fix.py` | HOTFIX: `renderPwaBanner()` aus `renderBottomNav()` herausgelöst → Top-Level-Funktion |
-| **252** | `patch_252_astro_expansion.py` | **Astronomie Expansion: 17 neue Modi — 4 Pin, 6 HL, 6 Match, 1 WS. MODES: 590→607** |
-| **253** | `patch_253_geo_expansion.py` | **Geologie & Vulkane Expansion: 40 neue Modi — 12 Pin, 10 HL, 12 Match, 6 WS. MODES: 607→647** |
-| **254** | `patch_254_sport_expansion.py` | **Sport-Wissen Expansion: 30 neue Modi — 8 Pin, 8 HL, 8 Match, 6 WS. MODES: 647→677** |
+| 212 | patch_212_kultur_modes.py | 27 Kultur/Lifestyle Universal-Modi |
+| 213 | patch_213_perf_daily_1v1.py | Performance, Daily-History, 1v1-Selector CSS |
+| 214 | patch_214_routing_audit.py | Routing-Audit + Regressionen |
+| 215 | patch_215_uk_engine.py | UK-Engine-Modi registriert |
+| 216 | patch_216_universal_engine.py | Universal-Engine + Custom-Mechanics |
+| 220 | patch_220_security_audit.py | 5-Saeulen Security & Stability Audit |
+| 221a | patch_221a_service_worker.py | Service Worker Cache |
+| 221b | patch_221b_ws_multilingual.py | Wort-Schmiede Multilingual-Bonus |
+| 221c | patch_221c_kompass_mode.py | Sonnen-Kompass Raetsel |
+| 222 | patch_222_stadion_hl.py | Dynamischer Stadion-Hoehe-H/L-Generator |
+| 223 | patch_223_map_zoom_fix.py | Karten-Zoom D3 lid-Binding + Drag-vs-Click Guard |
+| 223 | patch_223_tiere_data_expand.py | Tiere/Pferde Datensatz 20->68 Eintraege |
+| **225** | patch_225_json_extraction.py | **Daten aus gen.py nach data/*.json extrahiert** |
+| 226 | patch_226_ux_fixes.py | UX-Fixes: Suche, HUD, HL-Buttons EN |
+| 227a | patch_227a_tiere_routing.py | 21 Tiere-Modi Routing |
+| 227b | patch_227b_tiere_data_part1.py | Tiere Pin + H/L Daten + Generatoren |
+| 227c | patch_227c_tiere_data_part2.py | Tiere Match-Daten + Generator |
+| 227d | patch_227d_pferde_dlc.py | Pferde DLC: Rassen, Fachbegriffe, Stockmass, Fluesterer |
+| 228 | patch_228_pflanzen.py | Pflanzen-Kategorie (4 JSON, ~55 Modi) |
+| 229 | patch_229_gastronomie.py | Gastronomie-Kategorie (4 JSON, ~51 Modi) |
+| 230 | patch_230_tech_emob.py | Tech + E-Mobilitaet (8 JSON, ~110 Modi) |
+| 231 | patch_231_archaeologie.py | Archaeologie (4 JSON, ~60 Modi) |
+| 235 | patch_235_fixes.py | Qualitaets-Patch: BETA-Tags, Pflanzen-Gruppe |
+| 236 | patch_236_fixes.py | Weitere QA-Fixes |
+| 237 | patch_237_qa_triage.py | QA-Triage: Duplikate, WS-Validierung, Koordinaten |
+| **238** | patch_238_offline_sw.py | **SW blob->extern; hash-versioned CACHE_NAME; manifest.json** |
+| **239** | patch_239_offline_ux.py | **_authErrMsg(), navigator.onLine Guards** |
+| **240** | patch_240_offline_sync.py | **isOffline State; Score-Queue; syncOfflineData()** |
+| 241 | patch_241_security_ux.py | Security Cap, Gameover Offline-Banner, verify.py Section-0 |
+| 242 | patch_242_engine_animals.py | Tiere-Pin JSON, Daily 5-Mode-Rotation, Blitz-Modus |
+| **243** | patch_243_new_worlds.py | **3 Neue Welten: Astronomie, Geologie, Sport-Wissen (32 Modi)** |
+| 243b | patch_243b_modes_fix.py | 32 fehlende MODES-Eintraege fuer Astro/Geo/Sport |
+| 249 | patch_249_polish.py | Security, PWA-Banner Fix, LS-TTL 90d |
+| 250 | patch_250_accordion_fix.py | Akkordeon-Fix: toggleAccordion() |
+| 251 | patch_251_pwa_banner_scope_fix.py | HOTFIX: renderPwaBanner() Top-Level-Funktion |
+| **252** | patch_252_astro_expansion.py | **Astronomie Expansion: 17 Modi. MODES: 590->607** |
+| **253** | patch_253_geo_expansion.py | **Geologie Expansion: 40 Modi. MODES: 607->647** |
+| **254** | patch_254_sport_expansion.py | **Sport-Wissen Expansion: 30 Modi. MODES: 647->677** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 254 — Sport-Wissen Expansion, 677 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 254 -- Sport-Wissen Expansion, 677 Modi, 37 Datendateien, Mai 2026.*
+
+
+---
+
+## 13. Vollstaendiger Spielmodus-Katalog
+
+**Stand Phase 254 -- 677 Modi in 20 Kategorien**
+
+> **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
+
+
+## 13.1 Geografie-Klassiker -- 29 Modi
+
+*Stadt/Flagge/Hauptstadt/Fluss, UNESCO, Wappen, Reverse-Modi, Klimavergleiche*
+
+`16 Classic | 7 H/L | 2 Karte | 4 Match`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Stadt -> Land | Classic | `city` |
+| Flagge -> Land | Classic | `flag` |
+| Hauptstadt -> Land | Classic | `capital` |
+| Fluss -> Land | Classic | `river` |
+| Sehenswürdigkeit | Classic | `landmark` |
+| Nationalpark | Classic | `park` |
+| UNESCO Welterbe | Classic | `unesco` |
+| Wahrzeichen -> Stadt | Classic | `citymark` |
+| U-Bahn-Netz | Classic | `subway` |
+| Land -> Flagge | Classic | `flagsel` |
+| Land -> Hauptstadt | Classic | `rcapital` |
+| Land -> Stadt | Classic | `rcity` |
+| Land -> Fluss | Classic | `rriver` |
+| Fluss -> Land | Classic | `river_real` |
+| [BETA] Niederschlag | H/L | `hl_b_rain` |
+| [BETA] Temperatur | H/L | `hl_b_temp` |
+| [BETA] Sonnenstunden | H/L | `hl_b_sun` |
+| [BETA] Vulkane | H/L | `hl_b_vulc` |
+| [BETA] Inseln | H/L | `hl_b_isl` |
+| [BETA] Zeitzonen | H/L | `hl_b_tz` |
+| [BETA] \u00c4ltestes Land | H/L | `hl_b_founded` |
+| Wappen-Meister | Classic | `wappen_meister` |
+| Stadt, Land, Fluss | Classic | `slf` |
+| [BETA] Fl\u00fcsse pinnen | Karte | `river_map` |
+| [BETA] UNESCO Karte | Karte | `unesco_map` |
+| Kontinent-Zentren | Match | `uk_kontinent_mitte` |
+| Kontinent zuordnen | Match | `uk_sort_kontinente` |
+| Ozean zuordnen | Match | `uk_sort_ozeane` |
+| Breitengrad-Match | Match | `uk_breitengrad_match` |
+
+## 13.2 Kultur & Lifestyle -- 24 Modi
+
+*Laenderumrisse, Gerichte, Waehrungen, Marken, Gipfel/Wuesten/Canyons pinnen*
+
+`6 Classic | 4 H/L | 14 Match`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| L\u00e4nder-Umrisse | Classic | `outline` |
+| Gericht -> Land | Classic | `food` |
+| Marke -> Land | Classic | `brand` |
+| W\u00e4hrung -> Land | Classic | `currency` |
+| Land -> W\u00e4hrung | Classic | `curr_real` |
+| Mehr Einwohner? | Classic | `pop_compare` |
+| [BETA] Amtssprachen | H/L | `hl_b_lang` |
+| [BETA] UNESCO | H/L | `hl_b_unesco` |
+| [BETA] Tourismus | H/L | `hl_b_tour` |
+| W\u00fcsten pinnen | Match | `uk_wuesten` |
+| Berggipfel pinnen | Match | `uk_berggipfel` |
+| Meeren\u2019gen pinnen | Match | `uk_meerengen` |
+| Wasserf\u00e4lle pinnen | Match | `uk_wasserfaelle` |
+| Canyons pinnen | Match | `uk_canyons` |
+| Surf-Spots pinnen | Match | `uk_surf_spots` |
+| Kaffee-Nation | H/L | `hl_b_coffee` |
+| Inseln zuordnen | Match | `uk_insel_match` |
+| Ehemalige Hauptst\u00e4dte | Match | `uk_ehemalige_hauptstaedte` |
+| Philosophen | Match | `uk_philosophen` |
+| Nationalpflanzen | Match | `uk_nationalpflanzen` |
+| Nationaltiere | Match | `uk_nationaltiere` |
+| Religionen & Ursprung | Match | `uk_religionen` |
+| Schriftsysteme | Match | `uk_schriften` |
+| Silhouette gedreht | Match | `uk_schatten_gedreht` |
+
+## 13.3 EU-Kennzeichen -- 4 Modi
+
+*Laenderkennzeichen Europa, Profi-Modus, Karte, Deutschland*
+
+`3 Classic | 1 Karte`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| EU-Kennzeichen | Classic | `plate_casual` |
+| Kennzeichen Pro | Classic | `plate_hard` |
+| Kennzeichen-Knacker | Karte | `map_ivr` |
+| Deutschland-KFZ | Classic | `de_plate` |
+
+## 13.4 H/L Klassiker -- 11 Modi
+
+*Laender-Daten vergleichen: Einwohner, Flaeche, BIP, Fluss, Kuestelaenge*
+
+`11 H/L`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| H/L Einwohner | H/L | `hl_pop` |
+| H/L Flussl\u00e4nge | H/L | `hl_river` |
+| H/L Landfl\u00e4che | H/L | `hl_area` |
+| H/L BIP | H/L | `hl_gdp` |
+| H/L Bev\u00f6lkerungsdichte | H/L | `hl_density` |
+| H/L H\u00f6chster Punkt | H/L | `hl_elevation` |
+| H/L K\u00fcstenlänge | H/L | `hl_coastline` |
+| H/L Nachbarl\u00e4nder | H/L | `hl_borders` |
+| H/L Lebenserwartung | H/L | `hl_lifeexp` |
+| H/L Medianalter | H/L | `hl_median_age` |
+| H/L Waldf\u00e4che | H/L | `hl_forest` |
+
+## 13.5 Vergleichs-Modi -- 31 Modi
+
+*Zwei Laender direkt gegenueberstellen: Groesse, Infrastruktur, Klima*
+
+`1 Classic | 30 H/L`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| [BETA] Nationalparks | H/L | `hl_b_parks` |
+| [BETA] Stra\u00dfennetz | H/L | `hl_b_roads` |
+| [BETA] Schienennetz | H/L | `hl_b_rail` |
+| [BETA] Internetspeed | H/L | `hl_b_net` |
+| [BETA] E-Ladesäulen | H/L | `hl_b_ev` |
+| [BETA] Urbanisierung | H/L | `hl_b_urban` |
+| [BETA] Kenn. Vergleich | Classic | `plate_compare` |
+| Gr\u00f6\u00dferes Land? | H/L | `comp_area` |
+| Mehr Einwohner? | H/L | `comp_pop` |
+| Weiter n\u00f6rdlich? | H/L | `comp_north` |
+| H\u00f6heres BIP? | H/L | `comp_gdp` |
+| Dichter besiedelt? | H/L | `comp_density` |
+| H\u00f6herer Gipfel? | H/L | `comp_elevation` |
+| L\u00e4ngere K\u00fcste? | H/L | `comp_coast` |
+| Mehr Nachbarn? | H/L | `comp_borders` |
+| L\u00e4nger leben? | H/L | `comp_life` |
+| H\u00f6heres Medianalter? | H/L | `comp_age` |
+| Mehr Wald? | H/L | `comp_forest` |
+| Mehr Flugh\u00e4fen? | H/L | `comp_airports` |
+| Gr\u00f6\u00dferes Land? | H/L | `comp_flight` |
+| H\u00f6herer Gipfel? | H/L | `comp_mountain` |
+| L\u00e4nger Nord-S\u00fcd? | H/L | `comp_nsextent` |
+| Mehr Olympia-Gold? | H/L | `comp_olympics` |
+| Sprachen-Vielfalt | H/L | `hl_b_total_lang` |
+| Nobelpreistr\u00e4ger | H/L | `hl_b_nobel` |
+| Olympia-Medaillen | H/L | `hl_b_medals` |
+| Nord-S\u00fcd-Ausdehnung | H/L | `hl_b_ns_km` |
+| Fahrrad-Nation | H/L | `hl_b_bikes` |
+| L\u00e4ngste Grenzen | H/L | `hl_b_land_border` |
+| Milit\u00e4rausgaben | H/L | `hl_b_military` |
+| Erneuerbare Energie | H/L | `hl_b_renewable` |
+
+## 13.6 Flughaefen & Transport -- 34 Modi
+
+*IATA-Codes, Zeitzonen, Flugrouten, Kanaele, Metro, Airlines, Distanzschaetzer*
+
+`22 Classic | 1 Karte | 11 Match`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| IATA-Code? | Classic | `iata` |
+| Welche Uhrzeit? | Classic | `tz_quiz` |
+| Klima-Krimi | Classic | `climate_quiz` |
+| Flaggen-Farben | Classic | `flagcolor` |
+| Binnenstaat? | Classic | `landlocked_quiz` |
+| [BETA] Flugh\u00e4fen | Karte | `airport_map` |
+| Flugrouten-Duell | Classic | `flugrouten_duell` |
+| Inland oder International? | Classic | `inlandsflug_intl` |
+| Fr\u00fchere Sonne? | Classic | `sunrise_guesser` |
+| Sonnen-Kompass | Classic | `sonnen_kompass` |
+| \u00c4quator-Magnet | Classic | `aequator_magnet` |
+| Kontinent-Klicker | Classic | `kontinent_klicker` |
+| Hauptstadt-Distanz | Classic | `hauptstadt_distanz` |
+| N\u00e4chster Flughafen | Classic | `naechster_airport` |
+| Airport Pinnen | Classic | `airport_pin` |
+| IATA Reverse | Classic | `iata_reverse` |
+| Jetlag-Rechner | Classic | `jetlag_rechner` |
+| K\u00fchlschrank vs. Backofen | Classic | `kuehlschrank_backofen` |
+| Regen-Radar | Classic | `regen_radar` |
+| H\u00f6henmeter-Sch\u00e4tzer | Classic | `hoehenmeter_schaetzer` |
+| Klima-Ausrei\u00dfer | Classic | `klima_ausreisser` |
+| Insel oder Festland? | Classic | `insel_festland` |
+| Sprachen-Kompass | Classic | `sprachen_kompass` |
+| Automarken-Heimat | Match | `uk_automarken` |
+| Airlines zuordnen | Match | `uk_fluggesellschaften` |
+| Ber\u00fchmte Bahnstrecken | Match | `uk_bahnstrecken` |
+| Welthafen zuordnen | Match | `uk_hafen_world` |
+| Kan\u00e4le zuordnen | Match | `uk_kanaele` |
+| Reedereien zuordnen | Match | `uk_reedereien` |
+| Autobahnsysteme | Match | `uk_autobahnen_beruhmt` |
+| Metro-Systeme zuordnen | Match | `uk_metrostaedte` |
+| Luftfahrt-Rekorde | Match | `uk_luft_rekorde` |
+| Distanz-Sch\u00e4tzer | Match | `uk_distanz_schaetzer` |
+| Flugzeit-Sch\u00e4tzer | Match | `uk_flugzeit_schaetzer` |
+
+## 13.7 Laender-Nachbarn -- 20 Modi
+
+*Grenzen, Exklaven, Halbinseln, Seen, Gebirge, Meerbusen, Grenzfluesse*
+
+`11 Classic | 9 Match`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Grenzg\u00e4nger | Classic | `neighbor` |
+| Falscher Nachbar | Classic | `neighbor_fake` |
+| Nachbar-Z\u00e4hler | Classic | `neighbor_count` |
+| Teilen sie eine Grenze? | Classic | `border_q` |
+| [BETA] Sandwich-Laender | Classic | `b21` |
+| [BETA] Transit-Route | Classic | `b22` |
+| [BETA] Kueste oder Inland? | Classic | `b23` |
+| [BETA] Fehlender Nachbar | Classic | `b25` |
+| [BETA] Längste Grenze | Classic | `b29` |
+| [BETA] Hauptstadt-Naehe | Classic | `b37` |
+| [BETA] Meiste Nachbarn | Classic | `b40` |
+| Exklaven erkennen | Match | `uk_enklave` |
+| Grenzfl\u00fcsse | Match | `uk_grenzfluesse` |
+| Halbinseln zuordnen | Match | `uk_halbinseln` |
+| Flussdeltas | Match | `uk_deltamuendungen` |
+| Kaps der Welt | Match | `uk_kaps` |
+| Meeresg\u00f6lfe | Match | `uk_meerbusen` |
+| Inselgruppen zuordnen | Match | `uk_inselgruppen` |
+| Gebirge zuordnen | Match | `uk_gebirge_match` |
+| Seen zuordnen | Match | `uk_seen_match` |
+
+## 13.8 Karten-Modi -- 16 Modi
+
+*Interaktive D3-Weltkarte: Land finden, Hauptstaedte orten, Antipoden, Klimazonen*
+
+`11 Classic | 3 Karte | 2 Match`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Finde das Land | Karte | `map_guess` |
+| Wer bin ich? | Karte | `map_reverse` |
+| Hauptstadt-Radar | Karte | `map_capital` |
+| [BETA] Äquator-Schuetze | Classic | `b41` |
+| [BETA] Klimazonen-Spotter | Classic | `b42` |
+| [BETA] Breitengrad-Duell | Classic | `b44` |
+| [BETA] E-Mobility-Hotspot | Classic | `b45` |
+| [BETA] Naturwunder-Spotter | Classic | `b46` |
+| [BETA] Antipoden-Loch | Classic | `b47` |
+| [BETA] Wuesten-Fokus | Classic | `b51` |
+| [BETA] Meerengen & Kanaele | Classic | `b53` |
+| [BETA] Gipfel-Spotter | Classic | `b54` |
+| [BETA] See-Spotter | Classic | `b58` |
+| Mercator-Illusion | Match | `uk_mercator_illusion` |
+| Kartenausschnitt | Match | `uk_kartenausschnitt` |
+| [BETA] Nacht-Satellit | Classic | `b60` |
+
+## 13.9 Sport -- 37 Modi
+
+*Trikot, Wappen, Stadion, F1, Olympia, WM, EM, Rekordhalterstaedte*
+
+`31 Classic | 1 H/L | 2 Karte | 3 Match`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| [BETA] WM-Teilnahmen | H/L | `hl_b_wm` |
+| Stadion-Quiz | Classic | `stadium` |
+| Trikot-Quiz | Classic | `jersey` |
+| Wappen-Quiz | Classic | `crest` |
+| [BETA] Ausreisser-Farben | Classic | `b1` |
+| [BETA] F1-Spotter | Classic | `b2` |
+| [BETA] Olympia-Zeitmaschine | Classic | `b4` |
+| [BETA] Nationalsportarten | Classic | `b6` |
+| [BETA] Höhenluft-Stadien | Classic | `b7` |
+| [BETA] Sport-Ursprung | Classic | `b9` |
+| [BETA] Rivalen-Distanz | Classic | `b11` |
+| [BETA] Medaillen-Spiegel | Classic | `b17` |
+| [BETA] WM-Fehltritte | Classic | `b19` |
+| [BETA] Sport-Wappen | Classic | `b20` |
+| \U0001F9EA Derby-Hotspots | Classic | `derby_hotspots` |
+| \U0001F9EA Eishockey-Nationen | Classic | `eishockey_nationen` |
+| \U0001F9EA F1 Historische Strecken | Classic | `f1_historisch` |
+| \U0001F9EA Tour de France Pässe | Classic | `tdf_paesse` |
+| \U0001F9EA Olympische Winter-Historie | Classic | `olympia_winter_historie` |
+| \U0001F9EA WM-Gastgeber-Historie | Classic | `wm_gastgeber` |
+| \U0001F9EA WM-Finalstadien | Classic | `wm_finalstadien` |
+| \U0001F9EA Weltmeister-Nationen | Classic | `weltmeister_nationen` |
+| \U0001F9EA Heimat der Fußball-Legenden | Classic | `fussball_legenden` |
+| \U0001F9EA Road to 2026 | Classic | `road_to_2026` |
+| \U0001F9EA Frauen-WM-Meilensteine | Classic | `frauen_wm_meilensteine` |
+| \U0001F9EA Sommerspiele-Metropolen | Classic | `sommerspiele_metropolen` |
+| \U0001F9EA Winter-Exoten & Klassiker | Classic | `winter_exoten_klassiker` |
+| \U0001F9EA Olympische Rekordhalter | Classic | `olympische_rekorde` |
+| \U0001F9EA Olympia in extremer Höhe | Classic | `olympia_hoehe` |
+| \U0001F9EA Die Boykott-Spiele | Classic | `boykott_spiele` |
+| \U0001F9EA EM-Gastgeber-Historie | Classic | `em_gastgeber_historie` |
+| \U0001F9EA Finalstadien der EM | Classic | `em_finalstadien` |
+| [BETA] F1 Strecken | Karte | `f1_map` |
+| [BETA] Europastadien | Karte | `stadium_map` |
+| Hochgelegene Stadien | Match | `uk_hohe_stadien` |
+| Leichtathletik-WM Orte | Match | `uk_leichtathletik_wm` |
+| Offizieller Nationalsport | Match | `uk_nationalsport_off` |
+
+## 13.10 Tiere -- 59 Modi
+
+*Habitate pinnen, H/L Gewicht/Speed/Gift, Faehrten, Anatomie, Pferde-DLC*
+
+`13 H/L | 34 Match | 1 Pin | 11 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Endemische Arten | Match | `uk_tiere_endemisch` |
+| Big Five Afrikas | Match | `uk_tiere_bigfive` |
+| Großkatzen-Habitate | Match | `uk_tiere_grosskatzen` |
+| Invasive Arten | Match | `uk_tiere_invasiv` |
+| Vogelzug-Knotenpunkte | Match | `uk_tiere_vogelzug` |
+| Ursprung der Haustiere | Match | `uk_tiere_haustiere` |
+| Nationaltiere Pin | Pin | `uk_tiere_nationaltier_pin` |
+| Primaten-Zentren | Match | `uk_tiere_primaten` |
+| Hai-Hotspots | Match | `uk_tiere_hai` |
+| Bären-Verbreitung | Match | `uk_tiere_baeren` |
+| H/L Gewicht Landtiere | H/L | `hl_tiere_gewicht_land` |
+| H/L Gewicht Meerestiere | H/L | `hl_tiere_gewicht_meer` |
+| H/L Speed: Land | H/L | `hl_tiere_speed_land` |
+| H/L Speed: Luft | H/L | `hl_tiere_speed_luft` |
+| H/L Speed: Wasser | H/L | `hl_tiere_speed_wasser` |
+| H/L Lebenserwartung | H/L | `hl_tiere_lebenserwartung` |
+| H/L Tr\u00e4chtigkeit | H/L | `hl_tiere_traechtigkeit` |
+| H/L Wurfgr\u00f6\u00dfe | H/L | `hl_tiere_wurf` |
+| H/L Giftigkeit | H/L | `hl_tiere_gift` |
+| H/L Wildpopulation | H/L | `hl_tiere_population` |
+| H/L Schlafbedarf | H/L | `hl_tiere_schlaf` |
+| F\u00e4hrten & Spuren | Match | `uk_tiere_faehrten` |
+| Tierische Architekten | Match | `uk_tiere_architekten` |
+| Tarnungsk\u00fcnstler | Match | `uk_tiere_tarnung` |
+| Ern\u00e4hrungstypen | Match | `uk_tiere_ernaehrung` |
+| Symbiosen | Match | `uk_tiere_symbiose` |
+| Tauchtiefen-Rekorde | Match | `uk_tiere_tauchtiefe` |
+| Mimikry & Doppelg\u00e4nger | Match | `uk_tiere_mimikry` |
+| Insekten-Metamorphose | Match | `uk_tiere_metamorphose` |
+| Biolumineszenz | Match | `uk_tiere_biolumineszenz` |
+| Skelett-Anatomie | Match | `uk_tiere_anatomie` |
+| Tierlaute | Match | `uk_tiere_laute` |
+| Sinnesleistungen | Match | `uk_tiere_sinne` |
+| WS: Schnabeltier | WS | `ws_tiere_schnabeltier` |
+| WS: Gottesanbeterin | WS | `ws_tiere_gottesanbeterin` |
+| WS: Komodowaran | WS | `ws_tiere_komodowaran` |
+| WS: Korallenriff | WS | `ws_tiere_korallenriff` |
+| WS: Silberr\u00fccken | WS | `ws_tiere_silberruecken` |
+| WS: Wanderfalke | WS | `ws_tiere_wanderfalke` |
+| WS: Mauersegler | WS | `ws_tiere_mauersegler` |
+| WS: B\u00e4rtierchen | WS | `ws_tiere_baertierchen` |
+| WS: Lederschildkr\u00f6te | WS | `ws_tiere_lederschildkroete` |
+| WS: Pfeilgiftfrosch | WS | `ws_tiere_pfeilgiftfrosch` |
+| Darwins Finken | Match | `uk_tiere_darwin_finken` |
+| Schutzgebiete | Match | `uk_tiere_schutzgebiete` |
+| Zoos der Welt | Match | `uk_tiere_zoos` |
+| Nutztier-Rassen | Match | `uk_tiere_nutztier_rassen` |
+| Fossil-Fundst\u00e4tten | Match | `uk_tiere_fossilien` |
+| Arktis vs. Antarktis | Match | `uk_tiere_arktis_antarktis` |
+| Forscher-Eponyme | Match | `uk_tiere_forscher_eponyme` |
+| Pelagial-Zonen | Match | `uk_tiere_pelagial` |
+| W\u00fcsten-Spezialisten | Match | `uk_tiere_wuesten_spezialisten` |
+| Gift-Hotspots | Match | `uk_tiere_gift_hotspots` |
+| Tier-Migranten | Match | `uk_tiere_migranten` |
+| H/L Rinder-Dichte | H/L | `hl_tiere_haustier_dichte` |
+| Pferderassen | Match | `uk_pferde_rassen` |
+| Pferde-Fachbegriffe | Match | `uk_pferde_fachbegriffe` |
+| H/L Stockma\u00df | H/L | `hl_pferde_stockmass` |
+| WS: Pferdefl\u00fcsterer | WS | `ws_pferde_fluesterer` |
+
+## 13.11 Pflanzen -- 48 Modi
+
+*Botanische Gaerten, Nutzpflanzen, H/L Wuchs/Alter/Produktion, Klimazonen*
+
+`12 H/L | 27 Match | 9 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Nutzpflanzen-Ursprung | Match | `uk_pflanzen_nutzpflanzen` |
+| Ber\u00fchmte B\u00e4ume | Match | `uk_pflanzen_einzelbaeume` |
+| Botanische G\u00e4rten | Match | `uk_pflanzen_botanische_gaerten` |
+| Tropenwälder | Match | `uk_pflanzen_tropenwald` |
+| Weinanbaugebiete | Match | `uk_pflanzen_weinanbau` |
+| Heilpflanzen-Regionen | Match | `uk_pflanzen_heilpflanzen` |
+| Mangrovenwälder | Match | `uk_pflanzen_mangroven` |
+| Kakao-Ursprungsgebiete | Match | `uk_pflanzen_kakao_ursprung` |
+| Reisanbauregionen | Match | `uk_pflanzen_reisanbau` |
+| Bambuswälder | Match | `uk_pflanzen_bambus` |
+| Endemische Pflanzenzonen | Match | `uk_pflanzen_endemisch` |
+| Nationalblumen-Heimat | Match | `uk_pflanzen_nationalblumen` |
+| H/L Wuchsh\u00f6he | H/L | `hl_pflanzen_wuchshoehe` |
+| H/L Baumalter | H/L | `hl_pflanzen_alter` |
+| H/L Fruchtgewicht | H/L | `hl_pflanzen_fruchtgewicht` |
+| H/L Samengr\u00f6\u00dfe | H/L | `hl_pflanzen_samenlaenge` |
+| H/L Kaffeeproduktion | H/L | `hl_pflanzen_kaffeeproduktion` |
+| H/L Weinproduktion | H/L | `hl_pflanzen_weinproduktion` |
+| H/L Reisproduktion | H/L | `hl_pflanzen_reisproduktion` |
+| H/L Waldanteil | H/L | `hl_pflanzen_waldflaeche` |
+| H/L Stammumfang | H/L | `hl_pflanzen_stammumfang` |
+| H/L Blattfl\u00e4che | H/L | `hl_pflanzen_blattflaeche` |
+| H/L Bl\u00fchtdauer | H/L | `hl_pflanzen_bluehdauer` |
+| H/L Genomgr\u00f6\u00dfe | H/L | `hl_pflanzen_genomgroesse` |
+| Gew\u00fcrze-Herkunft | Match | `uk_pflanzen_gewuerze` |
+| Pflanzenfamilien | Match | `uk_pflanzen_familien` |
+| Bl\u00fctezeit | Match | `uk_pflanzen_bluetezeit` |
+| Giftstoffe | Match | `uk_pflanzen_giftstoffe` |
+| Fruchttypen | Match | `uk_pflanzen_fruchttyp` |
+| Vermehrungsarten | Match | `uk_pflanzen_vermehrung` |
+| Pflanzen-Lebensraum | Match | `uk_pflanzen_lebensraum` |
+| Best\u00e4uber | Match | `uk_pflanzen_bestuaeber` |
+| Kulturpflanzen-Herkunft | Match | `uk_pflanzen_herkunft` |
+| Pflanzennutzung | Match | `uk_pflanzen_nutzung` |
+| Blattformen | Match | `uk_pflanzen_blattform` |
+| Klimazonen | Match | `uk_pflanzen_klimazone` |
+| Scheinfrüchte | Match | `uk_pflanzen_scheinfruchte` |
+| Baum des Jahres | Match | `uk_pflanzen_baum_des_jahres` |
+| Giftpflanze des Jahres | Match | `uk_pflanzen_giftpflanze_jahres` |
+| WS: Trauerweide | WS | `ws_pflanzen_trauerweide` |
+| WS: Rhododendron | WS | `ws_pflanzen_rhododendron` |
+| WS: Sonnenblume | WS | `ws_pflanzen_sonnenblume` |
+| WS: Pusteblume | WS | `ws_pflanzen_pusteblume` |
+| WS: Nachtschatten | WS | `ws_pflanzen_nachtschatten` |
+| WS: Vergissmeinnicht | WS | `ws_pflanzen_vergissmeinnicht` |
+| WS: Kaffeebohne | WS | `ws_pflanzen_kaffeebohne` |
+| WS: Weihnachtsstern | WS | `ws_pflanzen_weihnachtsstern` |
+| WS: Ginkgobaum | WS | `ws_pflanzen_ginkgobaum` |
+
+## 13.12 Gastronomie -- 51 Modi
+
+*Nationalgerichte/Brauereien pinnen, H/L Kalorien/Scoville, Kuechen-Fachbegriffe*
+
+`15 H/L | 29 Match | 7 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Nationalgerichte pinnen | Match | `uk_gastro_nationalgerichte` |
+| Kaffee-Anbaugebiete | Match | `uk_gastro_kaffee_anbau` |
+| Brauereien pinnen | Match | `uk_gastro_brauereien` |
+| Seltene Gewürze orten | Match | `uk_gastro_gewuerze_selten` |
+| Historische Kaffeehäuser | Match | `uk_gastro_kaffeehaeuser` |
+| Schokoladenfabriken | Match | `uk_gastro_schokoladen` |
+| Weinlagen & Châteaux | Match | `uk_gastro_weinlagen` |
+| Fermentations-Orte | Match | `uk_gastro_fermentation_orte` |
+| Kulinarische Festivals | Match | `uk_gastro_kulinarische_feste` |
+| HL: Kalorien | H/L | `hl_gastro_kalorien` |
+| HL: Kerntemperatur | H/L | `hl_gastro_kerntemperatur` |
+| HL: Zubereitungszeit | H/L | `hl_gastro_zubereitungszeit` |
+| HL: Fermentationsdauer | H/L | `hl_gastro_fermentationsdauer` |
+| HL: Scoville-Skala | H/L | `hl_gastro_scoville` |
+| HL: Preis pro Kilo | H/L | `hl_gastro_preis_kg` |
+| HL: Wasseranteil | H/L | `hl_gastro_wasseranteil` |
+| HL: Backtemperatur | H/L | `hl_gastro_backtemperatur` |
+| HL: Rezept-Alter | H/L | `hl_gastro_rezept_alter` |
+| HL: Alkoholgehalt | H/L | `hl_gastro_alkoholgehalt` |
+| HL: Zutaten-Anzahl | H/L | `hl_gastro_zutaten_anzahl` |
+| HL: Schmelzpunkt | H/L | `hl_gastro_schmelzpunkt` |
+| HL: Pro-Kopf-Verbrauch | H/L | `hl_gastro_prokopf_verbrauch` |
+| HL: Haltbarkeit | H/L | `hl_gastro_haltbarkeit` |
+| HL: Rekord-Gewicht | H/L | `hl_gastro_rekord_gewicht` |
+| Hausmannskost zuordnen | Match | `uk_gastro_hausmannskost` |
+| Küchengeräte sortieren | Match | `uk_gastro_kuechengeraete` |
+| Schnitttechniken | Match | `uk_gastro_schnitttechniken` |
+| Geburtsort-Rezept | Match | `uk_gastro_originalrezept` |
+| Teigtaschen der Welt | Match | `uk_gastro_teigtaschen` |
+| Gewürzmischungen | Match | `uk_gastro_gewuerzmischungen` |
+| Fleischzuschnitte | Match | `uk_gastro_fleisch_cuts` |
+| Mikroorganismen & Fermentation | Match | `uk_gastro_bakterien_pilze` |
+| Kaffeespezialitäten | Match | `uk_gastro_kaffeespezialitaeten` |
+| Pasta & Saucen | Match | `uk_gastro_pasta_formen` |
+| Exotische Früchte | Match | `uk_gastro_exotische_fruechte` |
+| Brotsorten der Welt | Match | `uk_gastro_brotsorten` |
+| Vegane Alternativen | Match | `uk_gastro_vegan_alternativen` |
+| Frühstück der Welt | Match | `uk_gastro_fruehstueck_welt` |
+| Kochfachbegriffe | Match | `uk_gastro_fachbegriffe_herd` |
+| Sushi-Stile | Match | `uk_gastro_sushi_arten` |
+| Ess-Etikette weltweit | Match | `uk_gastro_ess_etikette` |
+| Nahrungstabus | Match | `uk_gastro_tabus` |
+| Essen im Film | Match | `uk_gastro_film_food` |
+| Seidenstraße & Gewürze | Match | `uk_gastro_seidenstrasse` |
+| WS: Zitruspresse | WS | `ws_gastro_zitruspresse` |
+| WS: Küchenmaschine | WS | `ws_gastro_kuechenmaschine` |
+| WS: Sauerteigbrot | WS | `ws_gastro_sauerteigbrot` |
+| WS: Fermentation | WS | `ws_gastro_fermentation` |
+| WS: Wurzelgemüse | WS | `ws_gastro_wurzelgemuese` |
+| WS: Schwarzwälder | WS | `ws_gastro_schwarzwaelder` |
+| WS: Kaltentsafter | WS | `ws_gastro_kaltentsafter` |
+
+## 13.13 Technologie -- 43 Modi
+
+*Halbleiter-Fabs, Programmiersprachen, H/L Transistoren, OSI, HTTP, Turing Award*
+
+`8 H/L | 25 Match | 10 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Tech: Programmiersprachen | Match | `uk_tech_programmiersprachen` |
+| Tech: Wettbewerbe | Match | `uk_tech_wettbewerbe` |
+| Tech: Halbleiter-Fabs | Match | `uk_tech_halbleiter` |
+| Tech: Heimcomputer | Match | `uk_tech_heimcomputer` |
+| Tech: Rechenzentren | Match | `uk_tech_rechenzentren` |
+| Tech: Pioniere | Match | `uk_tech_pioniere` |
+| Tech: Technologiemuseen | Match | `uk_tech_tech_museen` |
+| Tech: Supercomputer | Match | `uk_tech_supercomputer` |
+| Tech: Transistorenanzahl | H/L | `hl_tech_transistoren` |
+| Tech: Taktfrequenz | H/L | `hl_tech_taktfrequenz` |
+| Tech: Freiheitsgrade | H/L | `hl_tech_freiheitsgrade` |
+| Tech: Codezeilen | H/L | `hl_tech_code_zeilen` |
+| Tech: Release-Jahr | H/L | `hl_tech_release_jahr` |
+| Tech: Rechenleistung | H/L | `hl_tech_rechenleistung` |
+| Tech: Internetgeschwindigkeit | H/L | `hl_tech_internet_speed` |
+| Tech: TDP-Wert | H/L | `hl_tech_tdp` |
+| Tech: Sensoren | Match | `uk_tech_sensoren` |
+| Tech: Code-Syntax | Match | `uk_tech_syntax` |
+| Tech: Linux-Distros | Match | `uk_tech_linux` |
+| Tech: OSI-Modell | Match | `uk_tech_osi` |
+| Tech: Big-O | Match | `uk_tech_bigo` |
+| Tech: HTTP-Statuscodes | Match | `uk_tech_http` |
+| Tech: Logikgatter | Match | `uk_tech_wahrheitstabellen` |
+| Tech: Hardware-Komponenten | Match | `uk_tech_hardware` |
+| Tech: Technik-Erfinder | Match | `uk_tech_erfinder` |
+| Tech: Portnummern | Match | `uk_tech_portnummern` |
+| Tech: Dateiendungen | Match | `uk_tech_dateiendungen` |
+| Tech: Smart Home | Match | `uk_tech_smart_home` |
+| Tech: Akronyme | Match | `uk_tech_akronyme` |
+| Tech: Turing Award | Match | `uk_tech_turing_award` |
+| Tech: Erste Videospiele | Match | `uk_tech_erste_videospiele` |
+| Tech: Malware-Typen | Match | `uk_tech_malware` |
+| Tech: Uebernahmen | Match | `uk_tech_tech_ma` |
+| WS: Mikrocontroller | WS | `ws_tech_mikrocontroller` |
+| WS: Datenbankmanagement | WS | `ws_tech_datenbankmanagement` |
+| WS: Algorithmus | WS | `ws_tech_algorithmus` |
+| WS: Quantencomputer | WS | `ws_tech_quantencomputer` |
+| WS: Prozessorarchitektur | WS | `ws_tech_prozessorarchitektur` |
+| WS: Grafikprozessor | WS | `ws_tech_grafikprozessor` |
+| WS: Cybersicherheit | WS | `ws_tech_cybersicherheit` |
+| WS: Softwareentwicklung | WS | `ws_tech_softwareentwicklung` |
+| WS: Compilerbau | WS | `ws_tech_compilerbau` |
+| WS: Betriebssystem | WS | `ws_tech_betriebssystem` |
+
+## 13.14 E-Mobilitaet -- 57 Modi
+
+*Gigafactories/Ladeparks pinnen, H/L Reichweite/Kapazitaet, Steckernormen*
+
+`12 H/L | 35 Match | 10 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| E-Mob: Gigafactories | Match | `uk_emob_gigafactories` |
+| E-Mob: EV-Startups | Match | `uk_emob_ev_startups` |
+| E-Mob: Ladeparks | Match | `uk_emob_ladeparks` |
+| E-Mob: Lithiumvorkommen | Match | `uk_emob_lithium` |
+| E-Mob: Historische Werke | Match | `uk_emob_historische_werke` |
+| E-Mob: Formel E | Match | `uk_emob_formel_e` |
+| E-Mob: Solarparks | Match | `uk_emob_solarparks` |
+| E-Mob: Autonome Tests | Match | `uk_emob_autonom_tests` |
+| E-Mob: Batterieforschung | Match | `uk_emob_batterie_forschung` |
+| E-Mob: EV-Dichte-Staedte | Match | `uk_emob_ev_dichte_staedte` |
+| E-Mob: Batterie-Recycling | Match | `uk_emob_recycling` |
+| E-Mob: Erste EVs | Match | `uk_emob_erste_evs` |
+| E-Mob: EV-Roadtrips | Match | `uk_emob_roadtrips` |
+| E-Mob: Batteriekapazitaet | H/L | `hl_emob_kapazitaet` |
+| E-Mob: Ladeleistung | H/L | `hl_emob_ladeleistung` |
+| E-Mob: WLTP-Reichweite | H/L | `hl_emob_wltp` |
+| E-Mob: 0–100 km/h | H/L | `hl_emob_0_100` |
+| E-Mob: Fahrzeuggewicht | H/L | `hl_emob_gewicht` |
+| E-Mob: Ladezeit 10–80% | H/L | `hl_emob_ladezeit_10_80` |
+| E-Mob: cw-Wert | H/L | `hl_emob_cw_wert` |
+| E-Mob: Systemspannung | H/L | `hl_emob_systemspannung` |
+| E-Mob: Ladeanschluesse | H/L | `hl_emob_ladeanschluesse` |
+| E-Mob: Drehmoment | H/L | `hl_emob_drehmoment` |
+| E-Mob: Basispreis | H/L | `hl_emob_preis` |
+| E-Mob: Zellenanzahl | H/L | `hl_emob_zell_anzahl` |
+| E-Mob: Ladestecker | Match | `uk_emob_stecker` |
+| E-Mob: EV-Plattformen | Match | `uk_emob_plattformen` |
+| E-Mob: Zellchemie | Match | `uk_emob_zellchemie` |
+| E-Mob: Akronyme | Match | `uk_emob_akronyme` |
+| E-Mob: Autonomiegrade | Match | `uk_emob_level_autonomy` |
+| E-Mob: Motorentypen | Match | `uk_emob_motorentypen` |
+| E-Mob: Thermomanagement | Match | `uk_emob_thermomanagement` |
+| E-Mob: V2X-Technologie | Match | `uk_emob_bidirektional` |
+| E-Mob: Ladekurven | Match | `uk_emob_ladekurven` |
+| E-Mob: EV & Smart Home | Match | `uk_emob_smart_home` |
+| E-Mob: EV-Privilegien | Match | `uk_emob_privilegien` |
+| E-Mob: Ladeanschluss-Position | Match | `uk_emob_port_position` |
+| E-Mob: EV-Reifen | Match | `uk_emob_ev_reifen` |
+| E-Mob: Lade-Roaming | Match | `uk_emob_roaming` |
+| E-Mob: Warnleuchten | Match | `uk_emob_warnleuchten` |
+| E-Mob: Startup-Laender | Match | `uk_emob_startups_match` |
+| E-Mob: Reichweiten-Killer | Match | `uk_emob_reichweiten_killer` |
+| E-Mob: AVAS-Vorschriften | Match | `uk_emob_avas` |
+| E-Mob: Subventionen | Match | `uk_emob_subventionen` |
+| E-Mob: Ladetikette | Match | `uk_emob_etikette` |
+| E-Mob: Konzeptfahrzeuge | Match | `uk_emob_konzeptautos` |
+| E-Mob: Strommix | Match | `uk_emob_strommix` |
+| WS: Schnellladestation | WS | `ws_emob_schnellladestation` |
+| WS: Rekuperation | WS | `ws_emob_rekuperation` |
+| WS: Reichweitenangst | WS | `ws_emob_reichweitenangst` |
+| WS: Fahrassistenzsystem | WS | `ws_emob_fahrassistenzsystem` |
+| WS: Bordnetzspannung | WS | `ws_emob_bordnetzspannung` |
+| WS: Elektroantrieb | WS | `ws_emob_elektroantrieb` |
+| WS: Wechselstromladen | WS | `ws_emob_wechselstromladen` |
+| WS: Gleichstromladen | WS | `ws_emob_gleichstromladen` |
+| WS: Batteriemanagement | WS | `ws_emob_batteriemanagement` |
+| WS: Bidirektionalladen | WS | `ws_emob_bidirektionalladen` |
+
+## 13.15 Archaeologie -- 60 Modi
+
+*Ausgrabungsstaetten pinnen, H/L Alter/Fundtiefe, Epochen, Schriften, Faelschungen*
+
+`12 H/L | 41 Match | 7 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Artefakt-Standorte | Match | `uk_arch_artefakte` |
+| Megalith-Anlagen | Match | `uk_arch_megalithanlagen` |
+| Versunkene St\u00e4dte | Match | `uk_arch_versunkene_staedte` |
+| H\u00f6hlenmalereien | Match | `uk_arch_hoehlenmalerien` |
+| Digital-Arch\u00e4ologie | Match | `uk_arch_digitalprojekte` |
+| Nekropolen | Match | `uk_arch_graberfelder` |
+| Schiffswracks | Match | `uk_arch_schiffswracks` |
+| Maya & Inka-Ruinen | Match | `uk_arch_maya_inka` |
+| R\u00f6mischer Limes | Match | `uk_arch_roemische_limes` |
+| Pfahlbauten | Match | `uk_arch_pfahlbauten` |
+| W\u00fcstenkulturen | Match | `uk_arch_wuestenstaedte` |
+| Fossilienfundst\u00e4tten | Match | `uk_arch_fossilien` |
+| Sensationsfunde | Match | `uk_arch_sensationsfunde` |
+| H/L: Alter von Artefakten | H/L | `hl_arch_alter_artefakte` |
+| H/L: Megalith-Gewicht | H/L | `hl_arch_gewicht_megalithen` |
+| H/L: Entdeckungsjahr | H/L | `hl_arch_entdeckungsjahr` |
+| H/L: Fundtiefe | H/L | `hl_arch_fundtiefe` |
+| H/L: Gr\u00f6\u00dfe von Ruinen | H/L | `hl_arch_groesse_ruinen` |
+| H/L: Grabbeigaben | H/L | `hl_arch_grabbeigaben` |
+| H/L: Antike Stra\u00dfenl\u00e4nge | H/L | `hl_arch_strassenlaenge` |
+| H/L: C14-Alter | H/L | `hl_arch_c14_alter` |
+| H/L: 3D-Scan-Daten | H/L | `hl_arch_scandatenvolumen` |
+| H/L: Bauzeit | H/L | `hl_arch_bauzeit` |
+| H/L: H\u00f6he antiker Bauwerke | H/L | `hl_arch_hoehe_bauwerke` |
+| H/L: Artefakt-Wert | H/L | `hl_arch_versicherungswert` |
+| Artefakt-Epochen | Match | `uk_arch_epochen` |
+| Antike Werkzeuge | Match | `uk_arch_werkzeuge` |
+| Ber\u00fchmte Arch\u00e4ologen | Match | `uk_arch_archaeologen` |
+| Datierungsmethoden | Match | `uk_arch_datierungsmethoden` |
+| 3D-Dokumentation | Match | `uk_arch_3d_methoden` |
+| Antike Schriften | Match | `uk_arch_schriften` |
+| Antike G\u00f6tter | Match | `uk_arch_goetter` |
+| Bestattungsr\u00e4ten | Match | `uk_arch_bestattungsriten` |
+| Stratigraphie-Prinzipien | Match | `uk_arch_stratigraphie` |
+| Keramikstile | Match | `uk_arch_keramikstile` |
+| Antike M\u00fcnzen | Match | `uk_arch_numismatik` |
+| Isotopenanalyse | Match | `uk_arch_isotopenanalyse` |
+| Artefakte & Museen | Match | `uk_arch_museen` |
+| Arch\u00e4obotanik | Match | `uk_arch_archaeobotanik` |
+| Antike Handelsrouten | Match | `uk_arch_handelsrouten` |
+| Antike W\u00e4hrungen | Match | `uk_arch_waehrungen` |
+| Arch\u00e4ologische F\u00e4lschungen | Match | `uk_arch_faelschungen` |
+| Griechische Tempelordnungen | Match | `uk_arch_tempel_ordnungen` |
+| Indus-Tal-Kulturst\u00e4tten | Match | `uk_arch_indus_tal` |
+| Wikinger-Siedlungen | Match | `uk_arch_wikinger` |
+| Repatriierung | Match | `uk_arch_repatriierung` |
+| Popkultur vs. Realit\u00e4t | Match | `uk_arch_popkultur_vs_realitaet` |
+| UNESCO: Bedrohte Welterbe | Match | `uk_arch_welterbe_gefahr` |
+| Zufallsfunde | Match | `uk_arch_zufallsfunde` |
+| Digitalprojekte nach Epoche | Match | `uk_arch_digifund_epochen` |
+| Antike Medizin | Match | `uk_arch_antike_medizin` |
+| Surveymethoden | Match | `uk_arch_schatzsuche_methoden` |
+| Antike Astronomie | Match | `uk_arch_antike_astronomie` |
+| WS: Ausgrabungsst\u00e4tte | WS | `ws_arch_ausgrabungsstaette` |
+| WS: Antiquit\u00e4t | WS | `ws_arch_antiquitaet` |
+| WS: Dendrochronologie | WS | `ws_arch_dendrochronologie` |
+| WS: Hieroglyphen | WS | `ws_arch_hieroglyphen` |
+| WS: Photogrammetrie | WS | `ws_arch_photogrammetrie` |
+| WS: Stratigraphie | WS | `ws_arch_stratigraphie` |
+| WS: Radiocarbondatierung | WS | `ws_arch_radiocarbondatierung` |
+
+## 13.16 Astronomie -- 28 Modi
+
+*Observatorien/Startrampen pinnen, H/L Planeten/Monde/Raketen, Missionen*
+
+`9 H/L | 15 Match | 4 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Observatorien-Standorte | Match | `uk_astro_observatorien` |
+| Startrampen-Standorte | Match | `uk_astro_startrampen` |
+| H/L: Planetengröße | H/L | `hl_astro_planet_groesse` |
+| H/L: Monde-Anzahl | H/L | `hl_astro_monde_anzahl` |
+| H/L: Sonnenentfernung | H/L | `hl_astro_sonnenentfernung` |
+| Raumfahrt-Missionen | Match | `uk_astro_missionen` |
+| Planeten-Fakten | Match | `uk_astro_planeten` |
+| Kosmologie-Fakten | Match | `uk_astro_kosmologie` |
+| WS: Sternwarte | WS | `ws_astro_sternwarte` |
+| WS: Raumstation | WS | `ws_astro_raumstation` |
+| WS: Astronaut | WS | `ws_astro_astronaut` |
+| Kontrollzentren & Raumfahrtbehörden | Match | `uk_astro_esa_nasa_zentren` |
+| Teleskop-Standorte weltweit | Match | `uk_astro_weltraumteleskope` |
+| Meteoritenkrater orten | Match | `uk_astro_meteoritenkrater` |
+| Dark-Sky-Reservate | Match | `uk_astro_dark_sky` |
+| H/L: Raketen-Nutzlast | H/L | `hl_astro_raketen_nutzlast` |
+| H/L: Missionsdauer | H/L | `hl_astro_missionsdauer` |
+| H/L: Oberflächengravitation | H/L | `hl_astro_schwerkraft` |
+| H/L: Oberflächentemperatur | H/L | `hl_astro_temperaturen` |
+| H/L: Entdeckungsjahr | H/L | `hl_astro_entdeckungsjahr` |
+| H/L: Exoplaneten-Distanz | H/L | `hl_astro_exoplaneten_distanz` |
+| Raumsonden & Ziele | Match | `uk_astro_sonden_ziele` |
+| Himmelskörper-Typen | Match | `uk_astro_himmelskoerper_typ` |
+| Sternbilder zuordnen | Match | `uk_astro_sternbilder_himmel` |
+| Astronomie-Pioniere | Match | `uk_astro_pioniere` |
+| Raketenantriebe | Match | `uk_astro_antriebe` |
+| Galaxien-Typen | Match | `uk_astro_galaxien_typen` |
+| WS: Schwarzes Loch | WS | `ws_astro_schwarzesloch` |
+
+## 13.17 Geologie -- 51 Modi
+
+*Vulkane/Hoehlen/Canyons/Gletscher pinnen, H/L Mohs-Haerte/VEI/Bohrtiefe*
+
+`13 H/L | 29 Match | 9 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Vulkan-Standorte | Match | `uk_geo_vulkane` |
+| Geothermie-Standorte | Match | `uk_geo_geothermal` |
+| H/L: Berghöhen | H/L | `hl_geo_berghoehen` |
+| H/L: Vulkanhöhen | H/L | `hl_geo_vulkan_hoehen` |
+| H/L: Erdbeben-Magnitude | H/L | `hl_geo_erdbeben` |
+| Gesteinsarten-Quiz | Match | `uk_geo_gesteinsarten` |
+| Tektonische Platten | Match | `uk_geo_tektonik` |
+| Mineralien-Quiz | Match | `uk_geo_mineralien` |
+| WS: Stalaktiten | WS | `ws_geo_stalaktiten` |
+| WS: Vulkanismus | WS | `ws_geo_vulkanismus` |
+| WS: Erdbeben | WS | `ws_geo_erdbeben` |
+| Felsformationen weltweit | Match | `uk_geo_felsformationen` |
+| Höhlensysteme orten | Match | `uk_geo_hoehlensysteme` |
+| Canyons & Schluchten | Match | `uk_geo_canyons` |
+| Geysire orten | Match | `uk_geo_geysire` |
+| Fossilien-Fundstätten | Match | `uk_geo_fossilien_fundstaetten` |
+| Ozeangraben-Standorte | Match | `uk_geo_ozeangraeben` |
+| Gletscher orten | Match | `uk_geo_gletscher` |
+| Wüsten & Dünenlandschaften | Match | `uk_geo_wuesten` |
+| Minen & Tiefbohrungen | Match | `uk_geo_minen_bohrungen` |
+| Tektonische Gräben & Rifts | Match | `uk_geo_rifts` |
+| Geologische Nationalparks | Match | `uk_geo_nationalparks_geologie` |
+| Steilküsten & Klippen | Match | `uk_geo_steilkuesten` |
+| H/L: Mohs-Härte | H/L | `hl_geo_mohshaerte` |
+| H/L: Vulkan-Explosivität | H/L | `hl_geo_vei_ausbruch` |
+| H/L: Höhlenlänge | H/L | `hl_geo_hoehlen_laenge` |
+| H/L: Gesteinsalter | H/L | `hl_geo_gesteins_alter` |
+| H/L: Schluchten-Tiefe | H/L | `hl_geo_schluchten_tiefe` |
+| H/L: Kontinentaldrift | H/L | `hl_geo_kontinentaldrift` |
+| H/L: Schmelztemperatur | H/L | `hl_geo_schmelztemperatur` |
+| H/L: Gletschervolumen | H/L | `hl_geo_gletscher_volumen` |
+| H/L: Tsunami-Höhe | H/L | `hl_geo_tsunami_hoehe` |
+| H/L: Bohrtiefe | H/L | `hl_geo_bohrtiefe` |
+| Vulkan-Länder zuordnen | Match | `uk_geo_vulkan_land` |
+| Berg zum Gebirge | Match | `uk_geo_berg_gebirge` |
+| Naturwunder & Entstehung | Match | `uk_geo_wunder_entstehung` |
+| Fossilien & Erdzeitalter | Match | `uk_geo_fossil_zeitalter` |
+| Historische Erdbeben | Match | `uk_geo_erdbeben_jahr` |
+| Gestein & Nutzung | Match | `uk_geo_gestein_nutzung` |
+| Landschaftsformen & Ursprung | Match | `uk_geo_landschaft_ursprung` |
+| Mineral-Farben | Match | `uk_geo_mineral_farbe` |
+| Kontinente & Platten | Match | `uk_geo_kontinent_platte` |
+| Höhlensystem → Land | Match | `uk_geo_hoehlen_land` |
+| Mineral-Kristallsysteme | Match | `uk_geo_mineral_kristall` |
+| Gebirge & Entstehung | Match | `uk_geo_gebirge_entstehung` |
+| WS: Tropfstein | WS | `ws_geo_tropfstein` |
+| WS: Magmakammer | WS | `ws_geo_magmakammer` |
+| WS: Kontinent | WS | `ws_geo_kontinent` |
+| WS: Fossilien | WS | `ws_geo_fossilien` |
+| WS: Erdkruste | WS | `ws_geo_erdkruste` |
+| WS: Mineralien | WS | `ws_geo_mineralien` |
+
+## 13.18 Sport-Wissen -- 40 Modi
+
+*Stadien/Rennstrecken pinnen, H/L Transferrekorde/Olympia-Gold, Nationalsportarten*
+
+`10 H/L | 21 Match | 9 WS`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Olympiastadien-Standorte | Match | `uk_sportwissen_olympiastadien` |
+| Marathon-Standorte | Match | `uk_sportwissen_marathonstrecken` |
+| H/L: Marathon-Geschichte | H/L | `hl_sportwissen_marathon_alter` |
+| H/L: Stadion-Kapazität | H/L | `hl_sportwissen_stadien_kapazitaet` |
+| Sportarten-Herkunft | Match | `uk_sportwissen_herkunft` |
+| Teamgrößen-Quiz | Match | `uk_sportwissen_teamgroesse` |
+| Olympia-Austragungsorte | Match | `uk_sportwissen_olympia_standort` |
+| WS: Marathon | WS | `ws_sportwissen_marathon` |
+| WS: Triathlon | WS | `ws_sportwissen_triathlon` |
+| WS: Staffellauf | WS | `ws_sportwissen_staffellauf` |
+| Fussballstadien | Match | `uk_sportwissen_fussballstadien` |
+| Motorsport-Rennstrecken | Match | `uk_sportwissen_motorsport_strecken` |
+| Wintersport-Orte | Match | `uk_sportwissen_wintersport_orte` |
+| Grand-Slam-Arenen | Match | `uk_sportwissen_grand_slam_arenen` |
+| Ski-Pisten weltweit | Match | `uk_sportwissen_ski_pisten` |
+| Golfplaetze weltweit | Match | `uk_sportwissen_golf_platze` |
+| Surf-Spots weltweit | Match | `uk_sportwissen_surfspots_welt` |
+| Klettergebiete | Match | `uk_sportwissen_klettergebiete` |
+| H/L: Transferrekorde | H/L | `hl_sportwissen_transferrekorde` |
+| H/L: Hochsprung-Rekorde | H/L | `hl_sportwissen_hochsprung_rekorde` |
+| H/L: Sportler-Gehaelter | H/L | `hl_sportwissen_sportler_gehalt` |
+| H/L: Olympia-Gold | H/L | `hl_sportwissen_olympia_goldmedaillen` |
+| H/L: Fussball-Marktwert | H/L | `hl_sportwissen_fussball_marktwert` |
+| H/L: Gewichtheben-Rekorde | H/L | `hl_sportwissen_gewichtheben_rekorde` |
+| H/L: Stadion-Baujahr | H/L | `hl_sportwissen_stadion_baujahr` |
+| H/L: Tore pro Saison | H/L | `hl_sportwissen_tore_saison` |
+| Sport-Weltverband | Match | `uk_sportwissen_weltverband` |
+| Olympisch? | Match | `uk_sportwissen_olympisch` |
+| Nationalsport weltweit | Match | `uk_sportwissen_nationalsport_match` |
+| Sportlegenden-Herkunft | Match | `uk_sportwissen_sportlegende_land` |
+| Weltrekord-Halter | Match | `uk_sportwissen_rekordhalter` |
+| WM-Gastgeber | Match | `uk_sportwissen_wm_gastgeber_match` |
+| Disziplin-Zuordnung | Match | `uk_sportwissen_disziplin_kategorie` |
+| Sportart & Kontinent | Match | `uk_sportwissen_sportart_kontinent` |
+| WS: Fussball | WS | `ws_sportwissen_fussball` |
+| WS: Olympiade | WS | `ws_sportwissen_olympiade` |
+| WS: Weltmeister | WS | `ws_sportwissen_weltmeister` |
+| WS: Startschuss | WS | `ws_sportwissen_startschuss` |
+| WS: Athletik | WS | `ws_sportwissen_athletik` |
+| WS: Sportgeist | WS | `ws_sportwissen_sportgeist` |
+
+## 13.19 Kultur -- 27 Modi
+
+*Wahrzeichen/Museen/Kunstwerke/Filmsets pinnen, Erfindungen, Brettspiele*
+
+`27 Match`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Getr\u00e4nke & Herkunft | Match | `uk_getraenke` |
+| Streetfood-Klassiker | Match | `uk_streetfood` |
+| K\u00e4se & Herk. | Match | `uk_kaese` |
+| S\u00fc\u00dfes aus aller Welt | Match | `uk_suessspeisen` |
+| Kaffee-Kulturen | Match | `uk_kaffee` |
+| T\u00e4nze & Herkunft | Match | `uk_taenze` |
+| Trachten & Kleidung | Match | `uk_kleidung` |
+| Musikinstrumente | Match | `uk_instrumente` |
+| Ber\u00fchmte Autoren | Match | `uk_literatur` |
+| Weltliche Wahrzeichen | Match | `uk_wahrzeichen` |
+| Weltber\u00fchmte Feste | Match | `uk_feste` |
+| Begr\u00fc\u00dfungsrituale | Match | `uk_begruessung` |
+| Nationale Feiertage | Match | `uk_feiertage` |
+| Gro\u00dfe Erfindungen | Match | `uk_erfindungen` |
+| Ber\u00fchmte Exporte | Match | `uk_exporte` |
+| Nationalblumen | Match | `uk_blumen` |
+| Ber\u00fchmte Entdecker | Match | `uk_entdecker` |
+| Nationalsportarten | Match | `uk_sport` |
+| Brettspiel-Urspr\u00fcnge | Match | `uk_brettspiele` |
+| Weinregionen pinnen | Match | `uk_weinregionen` |
+| Ber\u00fchmte Museen | Match | `uk_museen` |
+| Kunstwerke -> Ort | Match | `uk_kunstwerke` |
+| Ber\u00fchmte Filmsets | Match | `uk_filmsets` |
+| Historische Ruinen | Match | `uk_ruinen` |
+| Ber\u00fchmte Br\u00fccken | Match | `uk_bruecken` |
+| Sakralbauten der Welt | Match | `uk_kirchen` |
+| Wolkenkratzer-Duell | Match | `uk_wolkenkratzer` |
+
+## 13.20 Neue Modi -- 7 Modi
+
+*Logik-Gitter, Reiseroute, Wort-Schmiede, Flaggen-Fusion, Zeitzonen-Jumper*
+
+`7 Classic`
+
+
+| Titel | Typ | Modus-ID |
+|-------|-----|---------|
+| Logik-Gitter | Classic | `logic_grid` |
+| Reiseroute | Classic | `travel_route` |
+| Flaggen-Fusion | Classic | `flag_fusion` |
+| Klima-Krimi | Classic | `climate_mystery` |
+| Alphabet-Sprint | Classic | `alpha_sprint` |
+| Wort-Schmiede | Classic | `wort_schmiede` |
+| Zeitzonen-Jumper | Classic | `timezone_jumper` |
+
+---
+
+*Katalog: 677 Modi | Stand Phase 254 | Mai 2026*

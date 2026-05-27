@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung — GeoQuest</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://geoquest.vercel.app/datenschutz.html">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --primary: #10b981;
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --font: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --radius: 12px;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15,23,42,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      max-width: 900px; margin: 0 auto; padding: 0 2rem;
+      height: 60px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { font-size: 1.1rem; font-weight: 800; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
+    .nav-back { font-size: 0.9rem; color: var(--text-secondary); transition: color 0.2s; }
+    .nav-back:hover { color: var(--primary); text-decoration: none; }
+
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+    .page-title { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 900; margin-bottom: 0.5rem; }
+    .page-meta { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 3rem; }
+
+    .toc {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      margin-bottom: 3rem;
+    }
+    .toc h2 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 1rem; }
+    .toc ol { padding-left: 1.2rem; }
+    .toc ol li { margin-bottom: 0.4rem; }
+    .toc ol li a { font-size: 0.9rem; }
+
+    .section { margin-bottom: 3rem; scroll-margin-top: 80px; }
+    .section h2 {
+      font-size: 1.2rem; font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid rgba(16,185,129,0.2);
+    }
+    .section h3 { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: var(--text-primary); }
+    .section p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.75rem; }
+    .section ul, .section ol { padding-left: 1.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .section ul li, .section ol li { margin-bottom: 0.4rem; }
+
+    .info-box {
+      background: rgba(16,185,129,0.06);
+      border: 1px solid rgba(16,185,129,0.2);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    .info-box p { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
+    .info-box strong { color: var(--primary); }
+
+    footer {
+      background: #080b14;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 2rem;
+      text-align: center;
+    }
+    footer p { color: var(--text-secondary); font-size: 0.8rem; }
+    footer a { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="landing.html" class="nav-logo">🌍 GeoQuest</a>
+      <a href="landing.html" class="nav-back">← Zurück zur Startseite</a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <h1 class="page-title">Datenschutzerklärung</h1>
+    <p class="page-meta">Gemäß DSGVO (EU) 2016/679 · Stand: Mai 2026</p>
+
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <h2>Inhalt</h2>
+      <ol>
+        <li><a href="#s1">Verantwortlicher</a></li>
+        <li><a href="#s2">Grundsätze der Datenverarbeitung</a></li>
+        <li><a href="#s3">Hosting & Server-Logs (Vercel)</a></li>
+        <li><a href="#s4">Lokale Speicherung (localStorage)</a></li>
+        <li><a href="#s5">Optionale Cloud-Funktion (Supabase)</a></li>
+        <li><a href="#s6">Keine Tracking-Cookies, kein Analytics</a></li>
+        <li><a href="#s7">Deine Rechte nach DSGVO</a></li>
+        <li><a href="#s8">Datensicherheit</a></li>
+        <li><a href="#s9">Änderungen dieser Erklärung</a></li>
+        <li><a href="#s10">Kontakt & Beschwerderecht</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1 -->
+    <div class="section" id="s1">
+      <h2>1. Verantwortlicher</h2>
+      <p>
+        Verantwortlicher im Sinne der DSGVO für diese Website und die Webanwendung GeoQuest ist:
+      </p>
+      <p>
+        <strong style="color:var(--text-primary);">[Vorname Nachname]</strong><br>
+        [Straße und Hausnummer]<br>
+        [PLZ Ort, Land]<br>
+        E-Mail: <a href="mailto:feedback@geoquest.app">feedback@geoquest.app</a>
+      </p>
+    </div>
+
+    <!-- 2 -->
+    <div class="section" id="s2">
+      <h2>2. Grundsätze der Datenverarbeitung</h2>
+      <p>
+        GeoQuest ist ein kostenloses, nicht-kommerzielles Bildungsprojekt. Wir nehmen Datenschutz ernst
+        und verarbeiten so wenig personenbezogene Daten wie möglich. Konkret gilt:
+      </p>
+      <ul>
+        <li>Keine Werbung, kein Tracking, kein Profiling</li>
+        <li>Kein Verkauf von Nutzerdaten</li>
+        <li>Keine Registrierung erforderlich zum Spielen</li>
+        <li>Spielstand und Einstellungen bleiben standardmäßig auf deinem Gerät</li>
+      </ul>
+    </div>
+
+    <!-- 3 -->
+    <div class="section" id="s3">
+      <h2>3. Hosting & Server-Logs (Vercel)</h2>
+      <p>
+        GeoQuest wird über <strong style="color:var(--text-primary);">Vercel Inc.</strong>
+        (440 N Barranca Ave #4133, Covina, CA 91723, USA) gehostet.
+        Bei jedem Seitenaufruf erfasst Vercel automatisch technische Verbindungsdaten:
+      </p>
+      <ul>
+        <li>IP-Adresse (anonymisiert gespeichert)</li>
+        <li>Browsertyp und Betriebssystem</li>
+        <li>Aufgerufene URL und Zeitstempel</li>
+        <li>HTTP-Statuscode und übertragene Datenmenge</li>
+      </ul>
+      <p>
+        Diese Daten dienen ausschließlich der Gewährleistung des technischen Betriebs und werden nicht
+        an Dritte weitergegeben. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse
+        am sicheren Betrieb der Website).
+      </p>
+      <p>
+        Vercel ist nach dem EU-US Data Privacy Framework zertifiziert. Weitere Infos:
+        <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">vercel.com/legal/privacy-policy</a>
+      </p>
+      <div class="info-box">
+        <p><strong>Speicherdauer:</strong> Server-Logs werden automatisch nach 30 Tagen gelöscht.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="section" id="s4">
+      <h2>4. Lokale Speicherung (localStorage)</h2>
+      <p>
+        GeoQuest speichert Spielfortschritt, Einstellungen und lokale Highscores ausschließlich im
+        <strong style="color:var(--text-primary);">localStorage</strong> deines Browsers.
+        Diese Daten verlassen dein Gerät <em>nicht</em> und werden von uns nicht eingesehen oder verarbeitet.
+      </p>
+      <h3>Was wird gespeichert?</h3>
+      <ul>
+        <li>Spielstand, Punkte und Streak-Zähler</li>
+        <li>Freigeschaltete Modi und Mastery-Level</li>
+        <li>Sprach- und Designeinstellungen</li>
+        <li>Cookie-Consent-Status (Schlüssel: <code>gq_cookie_consent</code>)</li>
+        <li>Optionale Anmeldeinformationen (nur bei freiwilliger Registrierung)</li>
+      </ul>
+      <div class="info-box">
+        <p>
+          <strong>Du kannst diese Daten jederzeit löschen</strong>, indem du im Browser unter
+          Einstellungen → Datenschutz → Website-Daten löschen → „geoquest.vercel.app" entfernst.
+          Dadurch wird dein Spielstand unwiderruflich zurückgesetzt.
+        </p>
+      </div>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Spielfunktionalität).
+        localStorage ist technisch keine Cookie-Technologie im Sinne der ePrivacy-Richtlinie,
+        da keine Daten an Server übertragen werden.
+      </p>
+    </div>
+
+    <!-- 5 -->
+    <div class="section" id="s5">
+      <h2>5. Optionale Cloud-Funktion (Supabase)</h2>
+      <p>
+        GeoQuest bietet eine <em>freiwillige</em> Registrierungsmöglichkeit für ein globales Leaderboard
+        und geräteübergreifende Score-Synchronisation. Diese Funktion nutzt
+        <strong style="color:var(--text-primary);">Supabase</strong>
+        (Supabase Inc., San Francisco, USA).
+      </p>
+      <h3>Welche Daten werden bei Registrierung verarbeitet?</h3>
+      <ul>
+        <li>E-Mail-Adresse (für Anmeldung und Passwort-Reset)</li>
+        <li>Frei wählbarer Anzeigename</li>
+        <li>Spielscores und Statistiken</li>
+        <li>Technische Sitzungsdaten (JWT-Token, Session-ID)</li>
+      </ul>
+      <h3>Wichtige Hinweise</h3>
+      <ul>
+        <li>Die Registrierung ist <strong>vollständig freiwillig</strong> — das Spiel funktioniert ohne Account vollständig</li>
+        <li>Daten werden ausschließlich für die Spielfunktion verwendet, nicht für Werbung</li>
+        <li>Dein Account kann jederzeit auf Anfrage gelöscht werden</li>
+      </ul>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch freiwillige Registrierung).
+        Supabase ist nach dem EU-US Data Privacy Framework zertifiziert.
+        Datenschutzerklärung Supabase:
+        <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>
+      </p>
+      <div class="info-box">
+        <p>
+          <strong>Account löschen:</strong> Schreibe eine E-Mail an
+          <a href="mailto:feedback@geoquest.app">feedback@geoquest.app</a> mit dem Betreff
+          „Account löschen". Wir löschen deine Daten innerhalb von 30 Tagen.
+        </p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="section" id="s6">
+      <h2>6. Keine Tracking-Cookies, kein Analytics</h2>
+      <p>
+        GeoQuest setzt <strong style="color:var(--text-primary);">keine Tracking-Cookies</strong>,
+        keine Analyse-Tools (z.B. Google Analytics, Matomo), keine Pixel und keine Social-Media-Buttons ein.
+      </p>
+      <p>
+        Es werden keine Nutzerprofile erstellt und keine Verhaltensdaten an Werbeplattformen übertragen.
+      </p>
+      <div class="info-box">
+        <p>
+          <strong>Keine Drittanbieter-Werbung:</strong> GeoQuest zeigt weder Werbebanner noch
+          gesponserte Inhalte. Die App ist und bleibt werbefrei.
+        </p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="section" id="s7">
+      <h2>7. Deine Rechte nach DSGVO</h2>
+      <p>Du hast gegenüber uns folgende Rechte hinsichtlich deiner personenbezogenen Daten:</p>
+      <ul>
+        <li><strong style="color:var(--text-primary);">Auskunft</strong> (Art. 15 DSGVO): Welche Daten wir über dich gespeichert haben</li>
+        <li><strong style="color:var(--text-primary);">Berichtigung</strong> (Art. 16 DSGVO): Korrektur unrichtiger Daten</li>
+        <li><strong style="color:var(--text-primary);">Löschung</strong> (Art. 17 DSGVO): Löschung deiner Daten</li>
+        <li><strong style="color:var(--text-primary);">Einschränkung</strong> (Art. 18 DSGVO): Einschränkung der Verarbeitung</li>
+        <li><strong style="color:var(--text-primary);">Datenübertragbarkeit</strong> (Art. 20 DSGVO): Export deiner Daten in maschinenlesbarem Format</li>
+        <li><strong style="color:var(--text-primary);">Widerspruch</strong> (Art. 21 DSGVO): Widerspruch gegen die Verarbeitung</li>
+        <li><strong style="color:var(--text-primary);">Widerruf</strong>: Jederzeit widerrufbare Einwilligung (betrifft optionalen Account)</li>
+      </ul>
+      <p style="margin-top:1rem;">
+        Zur Ausübung dieser Rechte genügt eine E-Mail an:
+        <a href="mailto:feedback@geoquest.app">feedback@geoquest.app</a>
+      </p>
+    </div>
+
+    <!-- 8 -->
+    <div class="section" id="s8">
+      <h2>8. Datensicherheit</h2>
+      <p>
+        Diese Website wird ausschließlich über HTTPS ausgeliefert. Alle Verbindungen sind
+        TLS-verschlüsselt. Die Webanwendung GeoQuest enthält keinen serverseitigen Code —
+        sie ist eine reine Static-Site, die direkt im Browser läuft.
+      </p>
+      <p>
+        Cloud-Scores (optionaler Account) werden in der Supabase-Datenbank gespeichert,
+        die durch Row-Level-Security (RLS) geschützt ist: Jeder Nutzer kann
+        ausschließlich seine eigenen Daten lesen und schreiben.
+      </p>
+    </div>
+
+    <!-- 9 -->
+    <div class="section" id="s9">
+      <h2>9. Änderungen dieser Erklärung</h2>
+      <p>
+        Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich die Rechtslage
+        oder die technischen Gegebenheiten der App ändern. Bei wesentlichen Änderungen werden
+        wir einen Hinweis auf der Startseite platzieren. Das Datum „Stand" am Anfang dieser
+        Seite gibt die letzte Aktualisierung an.
+      </p>
+    </div>
+
+    <!-- 10 -->
+    <div class="section" id="s10">
+      <h2>10. Kontakt & Beschwerderecht</h2>
+      <p>
+        Bei Fragen zum Datenschutz wende dich an:
+        <a href="mailto:feedback@geoquest.app">feedback@geoquest.app</a>
+      </p>
+      <p>
+        Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
+        Die zuständige Behörde richtet sich nach deinem Wohnort. Eine Liste aller deutschen
+        Aufsichtsbehörden findest du beim
+        <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/anschriften_node.html"
+           target="_blank" rel="noopener">Bundesbeauftragten für den Datenschutz (BfDI)</a>.
+      </p>
+    </div>
+
+    <p style="margin-top:3rem; font-size:0.85rem; color:var(--text-secondary);">
+      Stand: Mai 2026 · <a href="impressum.html">Impressum</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2024–2026 GeoQuest · <a href="landing.html">Startseite</a> · <a href="impressum.html">Impressum</a></p>
+  </footer>
+
+</body>
+</html>

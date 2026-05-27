@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum — GeoQuest</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://geoquest.vercel.app/impressum.html">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --primary: #10b981;
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --font: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --radius: 12px;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15,23,42,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      max-width: 900px; margin: 0 auto; padding: 0 2rem;
+      height: 60px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { font-size: 1.1rem; font-weight: 800; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
+    .nav-back { font-size: 0.9rem; color: var(--text-secondary); transition: color 0.2s; }
+    .nav-back:hover { color: var(--primary); text-decoration: none; }
+
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+
+    .page-title {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 900; margin-bottom: 0.5rem;
+    }
+    .page-meta { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 3rem; }
+
+    .section { margin-bottom: 2.5rem; }
+    .section h2 {
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase; letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid rgba(16,185,129,0.2);
+    }
+    .section p, .section address {
+      color: var(--text-secondary);
+      font-style: normal;
+      font-size: 0.95rem;
+    }
+    .section p + p { margin-top: 0.5rem; }
+
+    .highlight-box {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .highlight-box p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; }
+    .highlight-box strong { color: var(--text-primary); }
+
+    .placeholder {
+      background: rgba(16,185,129,0.08);
+      border: 1px dashed rgba(16,185,129,0.4);
+      border-radius: 6px;
+      padding: 0.2rem 0.6rem;
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-family: monospace;
+    }
+
+    footer {
+      background: #080b14;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 2rem;
+      text-align: center;
+    }
+    footer p { color: var(--text-secondary); font-size: 0.8rem; }
+    footer a { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="landing.html" class="nav-logo">🌍 GeoQuest</a>
+      <a href="landing.html" class="nav-back">← Zurück zur Startseite</a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <h1 class="page-title">Impressum</h1>
+    <p class="page-meta">Angaben gemäß § 5 TMG (Telemediengesetz)</p>
+
+    <div class="highlight-box">
+      <p>
+        <strong>Hinweis:</strong> GeoQuest ist ein privates, nicht-kommerzielles Open-Source-Projekt.
+        Die App ist kostenlos, werbefrei und ohne In-App-Käufe. Dennoch besteht nach § 5 TMG
+        eine Impressumspflicht, da das Angebot öffentlich zugänglich und dauerhaft betrieben wird.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Verantwortlich für den Inhalt</h2>
+      <address>
+        <p><span class="placeholder">[Andre Arndt]</span></p>
+        <p><span class="placeholder">[Bürgermeister-Willinger-Str. 77]</span></p>
+        <p><span class="placeholder">[69190 Walldorf]</span></p>
+        <p><span class="placeholder">[Deutschland]</span></p>
+      </address>
+    </div>
+
+    <div class="section">
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:farndt691@gmail.com">feedback@geoquest.app</a></p>
+      <p style="margin-top:0.75rem; font-size:0.85rem; color:var(--text-secondary);">
+        Eine Kontaktaufnahme per E-Mail genügt den gesetzlichen Anforderungen.
+        Eine Telefonnummer ist für nicht-kommerzielle Angebote nicht verpflichtend.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Verantwortlich für journalistisch-redaktionelle Inhalte</h2>
+      <p><span class="placeholder">[Vorname Nachname]</span>, Anschrift wie oben</p>
+    </div>
+
+    <div class="section">
+      <h2>Haftungsausschluss</h2>
+      <p>
+        Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die
+        Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr.
+        Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
+        nach den allgemeinen Gesetzen verantwortlich.
+      </p>
+      <p style="margin-top:0.75rem;">
+        Die Lerninhalte (Länderdaten, Fakten etc.) wurden nach bestem Wissen zusammengestellt,
+        können aber Fehler oder veraltete Informationen enthalten. Sie dienen der Unterhaltung
+        und dem Lernen, ersetzen jedoch keine wissenschaftlichen Quellen.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Urheberrecht</h2>
+      <p>
+        Der Quellcode von GeoQuest steht unter einer Open-Source-Lizenz und ist auf GitHub verfügbar.
+        Die verwendeten Spielinhalte (Fakten, Koordinaten, Länderdaten) basieren auf
+        öffentlich zugänglichen Quellen (Wikidata, GeoNames, UN-Daten).
+        Eigene kreative Inhalte (Design, Texte, Spielmechaniken) sind urheberrechtlich geschützt.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Streitschlichtung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">
+          https://ec.europa.eu/consumers/odr
+        </a>.
+        Da GeoQuest ein kostenloses, nicht-kommerzielles Angebot ohne Vertragsabschlüsse ist,
+        nehmen wir nicht an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil
+        und sind hierzu auch nicht verpflichtet.
+      </p>
+    </div>
+
+    <p style="margin-top:3rem; font-size:0.85rem; color:var(--text-secondary);">
+      Stand: Mai 2026 · <a href="datenschutz.html">Datenschutzerklärung</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2024–2026 GeoQuest · <a href="landing.html">Startseite</a> · <a href="datenschutz.html">Datenschutz</a></p>
+  </footer>
+
+</body>
+</html>

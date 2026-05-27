@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoQuest | Die größte kostenlose Geografie-Quiz-App</title>
+
+  <!-- ========== SEO ========== -->
+  <meta name="description" content="Wie gut kennst du die Welt? GeoQuest hat 677 Spielmodi in 20 Kategorien: Erdkunde, Tiere, Gastronomie, Astronomie und mehr. Komplett kostenlos und offline spielbar.">
+  <meta name="keywords" content="Geografie Quiz, Erdkunde Quiz, GeoQuest, kostenloses Quiz, Offline Quiz, Flaggen Quiz, Hauptstadt Quiz, Länder Quiz, Wissensspiel, PWA">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://geoquest.vercel.app/">
+
+  <!-- ========== Open Graph (Social Sharing) ========== -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://geoquest.vercel.app/">
+  <meta property="og:title" content="GeoQuest | 677 kostenlose Geografie-Spielmodi">
+  <meta property="og:description" content="Wie gut kennst du die Welt? 677 Modi, 20 Kategorien, komplett offline und gratis. Direkt im Browser starten.">
+  <meta property="og:image" content="https://geoquest.vercel.app/og-preview.png">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="GeoQuest">
+
+  <!-- ========== Twitter Card ========== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GeoQuest | 677 kostenlose Geografie-Spielmodi">
+  <meta name="twitter:description" content="Das größte kostenlose Geografie-Quiz. 677 Modi, offline spielbar, direkt im Browser.">
+  <meta name="twitter:image" content="https://geoquest.vercel.app/og-preview.png">
+
+  <!-- ========== PWA / Icons ========== -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#10b981">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="GeoQuest">
+
+  <!-- ========== JSON-LD Structured Data (Google Rich Results) ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "GeoQuest",
+    "url": "https://geoquest.vercel.app/",
+    "description": "Die größte kostenlose Geografie-Quiz-App mit 677 Spielmodi in 20 Kategorien.",
+    "applicationCategory": "GameApplication",
+    "genre": ["Geography", "Education", "Trivia"],
+    "operatingSystem": "Any",
+    "browserRequirements": "HTML5",
+    "inLanguage": ["de", "en"],
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "featureList": [
+      "677 Spielmodi",
+      "20 Kategorien",
+      "Offline-fähig",
+      "Daily Challenge",
+      "Multiplayer",
+      "Kein Account erforderlich"
+    ],
+    "screenshot": "https://geoquest.vercel.app/og-preview.png",
+    "author": {
+      "@type": "Person",
+      "name": "Andre"
+    }
+  }
+  </script>
+
+  <style>
+    /* ====== CSS-Variablen ====== */
+    :root {
+      --primary:       #10b981;
+      --primary-hover: #059669;
+      --bg-dark:       #0f172a;
+      --bg-card:       #1e293b;
+      --bg-card2:      #162032;
+      --text-primary:  #f8fafc;
+      --text-secondary:#94a3b8;
+      --font: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --radius: 12px;
+      --transition: 0.3s ease;
+    }
+
+    /* ====== Reset ====== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ====== Skip-Link (Accessibility) ====== */
+    .skip-link {
+      position: absolute; top: -100px; left: 0;
+      background: var(--primary); color: #fff;
+      padding: 0.5rem 1rem; border-radius: 0 0 8px 0;
+      transition: top 0.2s;
+      z-index: 9999;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ====== Cookie Banner ====== */
+    #cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--bg-card);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 1rem 2rem;
+      display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+      z-index: 1000;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+    }
+    #cookie-banner p { flex: 1; font-size: 0.9rem; color: var(--text-secondary); min-width: 200px; }
+    #cookie-banner a { color: var(--primary); }
+    #cookie-banner .cookie-btns { display: flex; gap: 0.75rem; flex-shrink: 0; }
+    .cookie-btn {
+      padding: 0.5rem 1.25rem; border-radius: 6px;
+      font-size: 0.9rem; font-weight: 600; cursor: pointer; border: none;
+      transition: var(--transition);
+    }
+    .cookie-btn-accept { background: var(--primary); color: #fff; }
+    .cookie-btn-accept:hover { background: var(--primary-hover); }
+    .cookie-btn-decline { background: transparent; border: 1px solid var(--text-secondary); color: var(--text-secondary); }
+    .cookie-btn-decline:hover { border-color: var(--text-primary); color: var(--text-primary); }
+
+    /* ====== Nav ====== */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+      height: 60px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      font-size: 1.2rem; font-weight: 800; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-links a { font-size: 0.9rem; color: var(--text-secondary); transition: var(--transition); }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-cta {
+      padding: 0.5rem 1.25rem; background: var(--primary);
+      color: #fff; border-radius: 6px; font-weight: 700;
+      font-size: 0.9rem; transition: var(--transition);
+    }
+    .nav-cta:hover { background: var(--primary-hover); }
+
+    /* ====== Container ====== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    section { padding: 6rem 0; }
+
+    /* ====== Sektion-Header ====== */
+    .section-header { text-align: center; margin-bottom: 4rem; }
+    .section-header h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 800; }
+    .section-header p { color: var(--text-secondary); margin-top: 1rem; font-size: 1.1rem; }
+
+    /* ====== Fade-in Animation ====== */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ====== HERO ====== */
+    #hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; overflow: hidden; padding: 8rem 2rem 4rem;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 60%, #1e3a5f 0%, #0f172a 70%);
+      z-index: 0;
+    }
+    /* Animierte Punkte (CSS-only) */
+    .hero-dots {
+      position: absolute; inset: 0; z-index: 1; overflow: hidden;
+    }
+    .dot {
+      position: absolute; width: 2px; height: 2px;
+      background: rgba(16,185,129,0.6); border-radius: 50%;
+      animation: float-dot linear infinite;
+    }
+    @keyframes float-dot {
+      0%   { transform: translateY(100vh) scale(0); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 0.4; }
+      100% { transform: translateY(-20px) scale(1.5); opacity: 0; }
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+    .hero-logo {
+      font-size: 1.3rem; font-weight: 800; letter-spacing: -0.5px;
+      margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+    #hero h1 {
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 900; letter-spacing: -1px;
+      background: linear-gradient(135deg, #f8fafc 30%, var(--primary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1.5rem;
+    }
+    .hero-sub { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 3rem; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; margin-bottom: 2.5rem; flex-wrap: wrap; }
+    .btn {
+      padding: 0.9rem 2rem; font-size: 1rem; font-weight: 700;
+      border-radius: var(--radius); cursor: pointer; border: none;
+      transition: var(--transition); display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 4px 20px rgba(16,185,129,0.35); }
+    .btn-primary:hover { background: var(--primary-hover); transform: translateY(-2px); box-shadow: 0 6px 28px rgba(16,185,129,0.45); }
+    .btn-outline { background: transparent; color: var(--text-primary); border: 2px solid rgba(255,255,255,0.2); }
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+    .trust-badges { font-size: 0.85rem; color: var(--text-secondary); display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+    .trust-badge { display: flex; align-items: center; gap: 5px; }
+    .trust-badge::before { content: "✓"; color: var(--primary); font-weight: 700; }
+
+    /* ====== STATS BAR ====== */
+    #stats { background: var(--primary); padding: 3.5rem 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; gap: 2rem; }
+    .stat-num { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; color: #fff; line-height: 1; }
+    .stat-lbl { color: rgba(255,255,255,0.85); margin-top: 0.4rem; font-size: 1rem; }
+
+    /* ====== KATEGORIEN ====== */
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; }
+    .cat-card {
+      background: var(--bg-card); padding: 1.5rem; border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: var(--transition); cursor: default;
+    }
+    .cat-card:hover { transform: translateY(-4px); border-color: var(--primary); }
+    .cat-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
+    .cat-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .cat-card p { color: var(--text-secondary); font-size: 0.82rem; margin-bottom: 0.75rem; line-height: 1.4; }
+    .badge {
+      display: inline-block; padding: 0.2rem 0.65rem;
+      background: rgba(16,185,129,0.12); color: var(--primary);
+      border-radius: 99px; font-size: 0.75rem; font-weight: 700;
+    }
+
+    /* ====== WIE FUNKTIONIERT ES ====== */
+    #how { background: var(--bg-card2); }
+    .how-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .how-card {
+      background: var(--bg-card); border-radius: var(--radius);
+      padding: 2rem; border: 1px solid rgba(255,255,255,0.05);
+    }
+    .how-num {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--primary); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.9rem; margin-bottom: 1rem;
+    }
+    .how-card h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .how-card p { color: var(--text-secondary); font-size: 0.9rem; }
+
+    /* ====== FEATURES ====== */
+    .feature-main { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-bottom: 4rem; }
+    .feature-item h3 { font-size: 1.3rem; margin-bottom: 0.75rem; }
+    .feature-item p { color: var(--text-secondary); }
+    .feature-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .feature-list span {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--text-secondary); font-size: 0.9rem;
+    }
+    .feature-list span::before { content: "✓"; color: var(--primary); font-weight: 700; flex-shrink: 0; }
+
+    /* ====== DOWNLOAD ====== */
+    #download { background: var(--bg-card2); }
+    .download-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .dl-card {
+      background: var(--bg-card); border-radius: var(--radius);
+      padding: 2.5rem; display: flex; flex-direction: column;
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: var(--transition);
+    }
+    .dl-card.recommended { border-color: var(--primary); position: relative; }
+    .dl-card.recommended::before {
+      content: "Empfohlen"; position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+      background: var(--primary); color: #fff; font-size: 0.75rem; font-weight: 700;
+      padding: 0.2rem 0.9rem; border-radius: 99px;
+    }
+    .dl-card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+    .dl-card .dl-sub { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1.5rem; }
+    .dl-card ul { list-style: none; flex: 1; margin-bottom: 2rem; }
+    .dl-card ul li {
+      color: var(--text-secondary); font-size: 0.9rem; padding: 0.35rem 0;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .dl-card ul li::before { content: "✓"; color: var(--primary); font-weight: 700; }
+    .dl-steps { background: rgba(16,185,129,0.06); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; }
+    .dl-steps h4 { font-size: 0.85rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .dl-steps ol { padding-left: 1.2rem; }
+    .dl-steps ol li { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.25rem; }
+
+    /* ====== FAQ ====== */
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .faq-q {
+      padding: 1.25rem 0; display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; font-weight: 600; gap: 1rem;
+      list-style: none; font-size: 1.05rem;
+    }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-q::after { content: "+"; color: var(--primary); font-size: 1.3rem; flex-shrink: 0; transition: transform 0.3s; }
+    details[open] .faq-q::after { transform: rotate(45deg); }
+    .faq-a { padding: 0 0 1.25rem 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; }
+    .faq-a a { color: var(--primary); }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: #080b14; padding: 3.5rem 0 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-top {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 2rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+    }
+    .footer-brand { max-width: 300px; }
+    .footer-brand .logo { font-size: 1.2rem; font-weight: 800; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
+    .footer-brand p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; }
+    .footer-links-grid { display: flex; gap: 3rem; flex-wrap: wrap; }
+    .footer-col h4 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 1rem; }
+    .footer-col a { display: block; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--text-primary); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-bottom p { color: var(--text-secondary); font-size: 0.8rem; }
+
+    /* ====== Scroll-to-Top ====== */
+    #scroll-top {
+      position: fixed; bottom: 2rem; right: 2rem;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--primary); color: #fff; border: none;
+      font-size: 1.2rem; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(16,185,129,0.4);
+      display: none; align-items: center; justify-content: center;
+      transition: var(--transition); z-index: 500;
+    }
+    #scroll-top:hover { background: var(--primary-hover); transform: translateY(-2px); }
+
+    /* ====== Responsive ====== */
+    @media (max-width: 1024px) { .download-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links .nav-hide { display: none; }
+      .footer-top { flex-direction: column; }
+    }
+    @media (max-width: 600px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .cta-group { flex-direction: column; align-items: center; }
+      .trust-badges { flex-direction: column; align-items: center; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      #cookie-banner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Accessibility: Skip to Content -->
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ========== Cookie-Banner ========== -->
+  <div id="cookie-banner" role="dialog" aria-label="Datenschutzhinweis" aria-live="polite">
+    <p>
+      Diese Website selbst verwendet keine Tracking-Cookies. Das Spiel GeoQuest nutzt <strong>localStorage</strong>
+      für Spielstand und Einstellungen. Für optionale Cloud-Scores wird
+      <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> verwendet.
+      Mehr Infos: <a href="datenschutz.html">Datenschutz</a>
+    </p>
+    <div class="cookie-btns">
+      <button class="cookie-btn cookie-btn-decline" onclick="dismissBanner('declined')">Nur notwendige</button>
+      <button class="cookie-btn cookie-btn-accept" onclick="dismissBanner('accepted')">Verstanden</button>
+    </div>
+  </div>
+
+  <!-- ========== Navigation ========== -->
+  <nav aria-label="Hauptnavigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="GeoQuest Startseite">
+        🌍 GeoQuest
+      </a>
+      <div class="nav-links" role="list">
+        <a href="#categories" class="nav-hide" role="listitem">Kategorien</a>
+        <a href="#how" class="nav-hide" role="listitem">Spielprinzip</a>
+        <a href="#download" class="nav-hide" role="listitem">Installieren</a>
+        <a href="#faq" class="nav-hide" role="listitem">FAQ</a>
+        <a href="GeoQuest.html" class="nav-cta" role="listitem">Spielen →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+    <!-- ===== S1: HERO ===== -->
+    <header id="hero" aria-labelledby="hero-h1">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-dots" id="hero-dots" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-logo" aria-hidden="true">🌍 GeoQuest</div>
+        <h1 id="hero-h1">Wie gut kennst<br>du die Welt?</h1>
+        <p class="hero-sub">677&nbsp;Spielmodi · 20&nbsp;Kategorien · Komplett&nbsp;kostenlos · Offline&nbsp;spielbar</p>
+        <div class="cta-group">
+          <a href="GeoQuest.html" class="btn btn-primary" role="button">
+            ▶ Jetzt spielen — kostenlos
+          </a>
+          <a href="#download" class="btn btn-outline" role="button">
+            Als App installieren
+          </a>
+        </div>
+        <div class="trust-badges" aria-label="Vorteile">
+          <span class="trust-badge">Kein App-Store</span>
+          <span class="trust-badge">Keine Registrierung</span>
+          <span class="trust-badge">100% kostenlos</span>
+          <span class="trust-badge">Offline nutzbar</span>
+          <span class="trust-badge">Werbefrei</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== S2: STATS BAR ===== -->
+    <section id="stats" aria-label="Spielstatistiken">
+      <div class="container">
+        <div class="stats-grid">
+          <div><div class="stat-num" data-target="677">0</div><div class="stat-lbl">Spielmodi</div></div>
+          <div><div class="stat-num" data-target="20">0</div><div class="stat-lbl">Kategorien</div></div>
+          <div><div class="stat-num">2,4 MB</div><div class="stat-lbl">App-Größe</div></div>
+          <div><div class="stat-num">100%</div><div class="stat-lbl">Kostenlos</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== S3: KATEGORIEN ===== -->
+    <section id="categories">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>677 Modi. 20 Welten.<br>Unendlich viel zu entdecken.</h2>
+          <p>Von klassischer Erdkunde bis Astronomie, Gastronomie und E-Mobilität —<br>für jeden Wissensdurst das passende Quiz.</p>
+        </div>
+        <div class="cat-grid">
+          <div class="cat-card fade-in"><div class="cat-icon">🌍</div><h3>Geografie-Klassiker</h3><p>Stadt, Flagge, Hauptstadt, UNESCO-Welterbe</p><span class="badge">29 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🦁</div><h3>Tiere</h3><p>Habitate pinnen, Gewicht/Speed-Vergleiche, Pferde-DLC</p><span class="badge">59 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🍽️</div><h3>Gastronomie</h3><p>Nationalgerichte, Brauereien, Scoville-Skala</p><span class="badge">51 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">⛰️</div><h3>Geologie</h3><p>Vulkane, Höhlen, Gletscher, Mineralien</p><span class="badge">51 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🏛️</div><h3>Archäologie</h3><p>Ausgrabungsstätten, antike Schriften, Epochen</p><span class="badge">60 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🔭</div><h3>Astronomie</h3><p>Observatorien, Planeten, Raumfahrt-Missionen</p><span class="badge">28 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">⚡</div><h3>E-Mobilität</h3><p>Gigafactories, Ladeparks, Reichweiten-Quiz</p><span class="badge">57 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">💻</div><h3>Technologie</h3><p>Halbleiter, Programmiersprachen, Turing Award</p><span class="badge">43 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🏅</div><h3>Sport-Wissen</h3><p>Stadien, Transferrekorde, Olympia-Gold</p><span class="badge">40 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">⚽</div><h3>Sport</h3><p>WM, EM, F1, Olympia, Trikot-Quiz</p><span class="badge">37 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🌿</div><h3>Pflanzen</h3><p>Botanik, Wuchshöhe, Nationalblumen, Klimazonen</p><span class="badge">48 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🎭</div><h3>Kultur</h3><p>Kunstwerke, Museen, Wahrzeichen, Filmsets</p><span class="badge">27 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🎨</div><h3>Lifestyle</h3><p>Märkte, Brauchtum, Währungen, Marken</p><span class="badge">24 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">✈️</div><h3>Transport</h3><p>IATA, Flugrouten, Metro, Kanäle, Airlines</p><span class="badge">34 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">📍</div><h3>Karten-Modi</h3><p>Interaktive D3-Weltkarte, Antipoden, Klimazonen</p><span class="badge">16 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">⚖️</div><h3>Vergleichs-Modi</h3><p>Zwei Länder direkt gegenüberstellen</p><span class="badge">31 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🗺️</div><h3>Länder-Nachbarn</h3><p>Grenzen, Exklaven, Halbinseln, Gebirge</p><span class="badge">20 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🚗</div><h3>EU-Kennzeichen</h3><p>KFZ-Codes Europa & Deutschland</p><span class="badge">4 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">📊</div><h3>H/L Klassiker</h3><p>Einwohner, Fläche, BIP, Flusslänge</p><span class="badge">11 Modi</span></div>
+          <div class="cat-card fade-in"><div class="cat-icon">🆕</div><h3>Neue Modi</h3><p>Logik-Gitter, Wort-Schmiede, Zeitzonen-Jumper</p><span class="badge">7 Modi</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== S4: WIE FUNKTIONIERT ES ===== -->
+    <section id="how">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>5 Spielprinzipien. Unendlich viele Variationen.</h2>
+          <p>Alle 677 Modi basieren auf fünf eleganten Spielmechaniken.</p>
+        </div>
+        <div class="how-grid">
+          <div class="how-card fade-in">
+            <div class="how-num">1</div>
+            <h3>📍 Karte-Pin</h3>
+            <p>Du siehst einen Begriff und pinnst seinen Ursprungsort auf die Weltkarte. Je näher dein Pin, desto mehr Punkte. Beispiel: „Camp Nou" → pinne Barcelona.</p>
+          </div>
+          <div class="how-card fade-in">
+            <div class="how-num">2</div>
+            <h3>📊 Höher / Niedriger</h3>
+            <p>Zwei Entitäten werden verglichen. Ein cleverer Algorithmus wählt nur ähnliche Paare — kein Eisbär vs. Ameise. Was ist schwerer, älter oder teurer?</p>
+          </div>
+          <div class="how-card fade-in">
+            <div class="how-num">3</div>
+            <h3>🎯 Zuordnen (Match)</h3>
+            <p>Multiple Choice der Spitzenklasse. Ordne einen Begriff seinem Land, Kontinent oder seiner Kategorie zu. Falsche Antworten kommen aus thematisch verwandten Pools.</p>
+          </div>
+          <div class="how-card fade-in">
+            <div class="how-num">4</div>
+            <h3>🔤 Wort-Schmiede</h3>
+            <p>Bilde aus den Buchstaben eines Fachbegriffs gültige Wörter — wie Scrabble. Zweisprachig spielbar: Deutsch & Englisch. Kein Buchstabe darf öfter verwendet werden, als er vorkommt.</p>
+          </div>
+          <div class="how-card fade-in">
+            <div class="how-num">5</div>
+            <h3>🌐 Klassisch</h3>
+            <p>Das bewährte Geografie-Grundprinzip: Flaggen erkennen, Hauptstädte benennen, Länder anhand ihrer Umrisse erraten. Simpel, schnell, süchtig machend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== S5: FEATURES ===== -->
+    <section id="features">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Gebaut für echte Wissensspieler.</h2>
+        </div>
+        <div class="feature-main">
+          <div class="feature-item fade-in">
+            <h3>🏆 Daily Challenge</h3>
+            <p>Täglich eine neue globale Herausforderung. Tritt gegen Spieler weltweit an und vergleiche dich im globalen Leaderboard. Jeden Tag eine neue Chance, an die Spitze zu kommen.</p>
+          </div>
+          <div class="feature-item fade-in">
+            <h3>⚡ Blitz-Modus</h3>
+            <p>60 Sekunden, maximale Intensität. Wie viele richtige Antworten schaffst du in einer Minute ohne Pause? Der Blitz-Modus testet, wie schnell du wirklich bist.</p>
+          </div>
+          <div class="feature-item fade-in">
+            <h3>📶 100% Offline</h3>
+            <p>Einmal geöffnet, immer spielbar. Der integrierte Service Worker speichert die komplette App lokal — kein WLAN, kein Datentarif notwendig. Perfekt für Züge, Flüge, Berghütten.</p>
+          </div>
+        </div>
+        <div class="feature-list fade-in" aria-label="Weitere Features">
+          <span>Survival-Modus</span>
+          <span>1-gegen-1 Modus</span>
+          <span>Hot-Seat-Modus</span>
+          <span>Statistik-Dashboard</span>
+          <span>Mastery-System</span>
+          <span>Anti-Cheat-Schutz</span>
+          <span>Deutsch & Englisch</span>
+          <span>Dark Mode</span>
+          <span>Reisepass-Stempel</span>
+          <span>Globales Leaderboard</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== S6: DOWNLOAD / INSTALL ===== -->
+    <section id="download">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Spielen. Sofort. Überall.</h2>
+          <p>Wähle den für dich passenden Weg.</p>
+        </div>
+        <div class="download-grid fade-in">
+
+          <div class="dl-card recommended">
+            <h3>▶ Direkt spielen</h3>
+            <p class="dl-sub">Empfohlener Weg — kein Install nötig</p>
+            <ul>
+              <li>Kein Download, kein App-Store</li>
+              <li>Öffnet sofort im Browser</li>
+              <li>Desktop, Tablet & Smartphone</li>
+              <li>Automatisch offline nach erstem Start</li>
+            </ul>
+            <a href="GeoQuest.html" class="btn btn-primary" style="text-align:center;justify-content:center;">
+              Jetzt spielen →
+            </a>
+          </div>
+
+          <div class="dl-card">
+            <h3>📱 Als App installieren</h3>
+            <p class="dl-sub">Für Homescreen & Startmenü</p>
+            <ul>
+              <li>Erscheint wie native App</li>
+              <li>Kein App-Store, kein Account</li>
+              <li>Vollständig offline nach Installation</li>
+            </ul>
+            <div class="dl-steps">
+              <h4>So geht es:</h4>
+              <ol>
+                <li>App im Browser öffnen</li>
+                <li>Android: Menü → „Zum Startbildschirm"</li>
+                <li>iPhone: Teilen → „Zum Home-Bildschirm"</li>
+                <li>Desktop: Adressleiste → Install-Icon</li>
+              </ol>
+            </div>
+            <a href="GeoQuest.html" id="pwa-install-btn" class="btn btn-outline" style="text-align:center;justify-content:center;">
+              App öffnen & installieren
+            </a>
+          </div>
+
+          <div class="dl-card">
+            <h3>📥 Datei herunterladen</h3>
+            <p class="dl-sub">Für Archive, Schulen, Netzwerke</p>
+            <ul>
+              <li>Eine einzige HTML-Datei</li>
+              <li>Nur 2,4 MB groß</li>
+              <li>Per Doppelklick starten</li>
+              <li>Ideal für Schulen ohne Internet</li>
+            </ul>
+            <a href="GeoQuest.html" download="GeoQuest.html" class="btn btn-outline" style="text-align:center;justify-content:center;">
+              GeoQuest.html laden (2,4 MB)
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== S7: FAQ ===== -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Häufige Fragen</h2>
+        </div>
+        <div class="faq-list fade-in">
+          <details class="faq-item">
+            <summary class="faq-q">Ist GeoQuest wirklich komplett kostenlos?</summary>
+            <p class="faq-a">Ja — 100% kostenlos, werbefrei und ohne In-App-Käufe. Alle 677 Spielmodi sind von Anfang an verfügbar. Es gibt keine Premium-Inhalte oder Bezahlschranken.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Brauche ich einen Account zum Spielen?</summary>
+            <p class="faq-a">Nein. GeoQuest läuft komplett ohne Registrierung. Ein optionaler Account ermöglicht es dir, Scores global zu vergleichen, am Leaderboard teilzunehmen und deinen Fortschritt geräteübergreifend zu synchronisieren.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Funktioniert GeoQuest ohne Internet?</summary>
+            <p class="faq-a">Ja. Nach dem ersten Öffnen speichert GeoQuest die gesamte App (2,4 MB) lokal auf deinem Gerät. Du kannst danach alle 677 Modi ohne WLAN oder Datentarif spielen — ideal im Zug, Flugzeug oder auf Reisen.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Auf welchen Geräten läuft GeoQuest?</summary>
+            <p class="faq-a">Auf allen modernen Geräten mit einem aktuellen Browser: Windows, macOS, Linux, Android und iOS. Empfohlen: Chrome, Firefox, Edge oder Safari. Eine separate App muss nicht installiert werden.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Was ist die „Wort-Schmiede"?</summary>
+            <p class="faq-a">Ein Scrabble-ähnlicher Spielmodus: Aus den Buchstaben eines Fachbegriffs (z.B. „SCHNABELTIER") bildest du so viele gültige Wörter wie möglich. Jeder Buchstabe darf nur so oft verwendet werden, wie er im Ausgangswort vorkommt. Spielbar auf Deutsch und Englisch.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Wie kann ich GeoQuest in meiner Schule einsetzen?</summary>
+            <p class="faq-a">Lade die HTML-Datei (Option C) herunter und spiele lokal ohne Internetverbindung. Perfekt für Schulen, die externe Webseiten blockieren. Alle Inhalte entsprechen dem Lehrplan für Erdkunde/Geografie der Klassen 5–13.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Welche Daten werden gespeichert?</summary>
+            <p class="faq-a">Ohne Account werden <em>keine</em> persönlichen Daten übertragen. Spielstand, Einstellungen und lokale Highscores werden ausschließlich in deinem Browser (localStorage) gespeichert — sie verbleiben auf deinem Gerät. Weitere Infos in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">🌍 GeoQuest</div>
+          <p>Das größte kostenlose Geografie-Quiz. Komplett offline spielbar, werbefrei und Open-Source.</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4>Spielen</h4>
+            <a href="GeoQuest.html">App starten</a>
+            <a href="#categories">Alle Kategorien</a>
+            <a href="#download">App installieren</a>
+          </div>
+          <div class="footer-col">
+            <h4>Rechtliches</h4>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h4>Projekt</h4>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:feedback@geoquest.app">Feedback geben</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024–2026 GeoQuest · 677 Modi · Stand Mai 2026</p>
+        <p>Kostenlos, werbefrei, für immer.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top -->
+  <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Nach oben scrollen" title="Nach oben">↑</button>
+
+  <!-- ========== JavaScript ========== -->
+  <script>
+    // ------ Animierte Punkte im Hero ------
+    (function(){
+      var container = document.getElementById('hero-dots');
+      if(!container) return;
+      for(var i=0; i<30; i++){
+        var d = document.createElement('div');
+        d.className = 'dot';
+        d.style.left = Math.random()*100 + '%';
+        d.style.width = d.style.height = (Math.random()*3+1) + 'px';
+        d.style.animationDuration = (Math.random()*12+8) + 's';
+        d.style.animationDelay = (Math.random()*10) + 's';
+        container.appendChild(d);
+      }
+    })();
+
+    // ------ Cookie-Banner ------
+    (function(){
+      if(localStorage.getItem('gq_cookie_consent')){
+        document.getElementById('cookie-banner').style.display = 'none';
+      }
+    })();
+    function dismissBanner(choice){
+      localStorage.setItem('gq_cookie_consent', choice);
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // ------ Counter-Animation (Stats) ------
+    function animateCounter(el){
+      var target = parseInt(el.dataset.target, 10);
+      if(!target) return;
+      var start = 0, dur = 1200, step = 16;
+      var timer = setInterval(function(){
+        start += Math.ceil(target / (dur/step));
+        if(start >= target){ start = target; clearInterval(timer); }
+        el.textContent = start;
+      }, step);
+    }
+    var statsObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.querySelectorAll('[data-target]').forEach(animateCounter);
+          statsObserver.unobserve(e.target);
+        }
+      });
+    }, {threshold:0.5});
+    var statsSection = document.getElementById('stats');
+    if(statsSection) statsObserver.observe(statsSection);
+
+    // ------ Fade-in on Scroll ------
+    var fadeObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('visible'); fadeObserver.unobserve(e.target); }
+      });
+    }, {threshold:0.1});
+    document.querySelectorAll('.fade-in').forEach(function(el){ fadeObserver.observe(el); });
+
+    // ------ Scroll-to-Top Button ------
+    var scrollBtn = document.getElementById('scroll-top');
+    window.addEventListener('scroll', function(){
+      scrollBtn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+    });
+
+    // ------ PWA Install Prompt ------
+    var deferredPrompt;
+    window.addEventListener('beforeinstallprompt', function(e){
+      e.preventDefault();
+      deferredPrompt = e;
+      var btn = document.getElementById('pwa-install-btn');
+      if(btn){
+        btn.textContent = 'App jetzt installieren ✓';
+        btn.classList.remove('btn-outline');
+        btn.classList.add('btn-primary');
+        btn.addEventListener('click', function(ev){
+          ev.preventDefault();
+          if(deferredPrompt){
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(function(){ deferredPrompt = null; });
+          } else {
+            window.location.href = 'GeoQuest.html';
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

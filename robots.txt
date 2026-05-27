@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /GeoQuest.html
+
+# Sitemap
+Sitemap: https://geoquest.vercel.app/sitemap.xml
