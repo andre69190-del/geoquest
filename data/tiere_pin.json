@@ -1,0 +1,407 @@
+{
+  "tiere_bigfive": [
+    {
+      "n": "Serengeti National Park",
+      "lat": -2.33,
+      "lng": 34.83
+    },
+    {
+      "n": "Kruger National Park",
+      "lat": -23.99,
+      "lng": 31.55
+    },
+    {
+      "n": "Masai Mara National Reserve",
+      "lat": -1.49,
+      "lng": 35.14
+    },
+    {
+      "n": "Chobe National Park",
+      "lat": -18.77,
+      "lng": 24.53
+    },
+    {
+      "n": "Amboseli National Park",
+      "lat": -2.65,
+      "lng": 37.25
+    },
+    {
+      "n": "Hwange National Park",
+      "lat": -18.8,
+      "lng": 26.5
+    },
+    {
+      "n": "South Luangwa National Park",
+      "lat": -13.02,
+      "lng": 31.83
+    },
+    {
+      "n": "Okavango-Delta",
+      "lat": -19.28,
+      "lng": 22.92
+    }
+  ],
+  "tiere_grosskatzen": [
+    {
+      "n": "Amur-Tiger (Sikhote-Alin)",
+      "lat": 46.5,
+      "lng": 136.5
+    },
+    {
+      "n": "Schneeleopard (Zentralhimalaya)",
+      "lat": 28.5,
+      "lng": 84.0
+    },
+    {
+      "n": "Jaguar (Pantanal)",
+      "lat": -17.5,
+      "lng": -57.5
+    },
+    {
+      "n": "Sumatra-Tiger (Leuser-Oekosystem)",
+      "lat": 3.8,
+      "lng": 97.5
+    },
+    {
+      "n": "Gepard (Kalahari)",
+      "lat": -22.0,
+      "lng": 22.0
+    },
+    {
+      "n": "Nebelparder (Borneo-Regenwald)",
+      "lat": 1.5,
+      "lng": 114.0
+    },
+    {
+      "n": "Puma (Torres del Paine)",
+      "lat": -51.0,
+      "lng": -73.0
+    },
+    {
+      "n": "Amur-Leopard (Prikhankaisk)",
+      "lat": 43.5,
+      "lng": 132.5
+    }
+  ],
+  "tiere_invasiv": [
+    {
+      "n": "Waschbaer",
+      "lat": 43.0,
+      "lng": -80.0
+    },
+    {
+      "n": "Nutria (Sumpfbiber)",
+      "lat": -35.0,
+      "lng": -64.0
+    },
+    {
+      "n": "Chinesische Wollhandkrabbe",
+      "lat": 30.5,
+      "lng": 121.5
+    },
+    {
+      "n": "Nilgans",
+      "lat": -28.5,
+      "lng": 25.0
+    },
+    {
+      "n": "Tigerpython Floridas",
+      "lat": 25.8,
+      "lng": -81.0
+    },
+    {
+      "n": "Zebramuschelorig. Pontisch-Kaspisch",
+      "lat": 46.5,
+      "lng": 32.0
+    },
+    {
+      "n": "Tigersechszack (Zebrafisch)",
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "n": "Graue Hoernchens Ursprung",
+      "lat": 43.0,
+      "lng": -79.0
+    }
+  ],
+  "tiere_vogelzug": [
+    {
+      "n": "Wattenmeer (Nordsee-Rast)",
+      "lat": 53.5,
+      "lng": 8.5
+    },
+    {
+      "n": "Bosporus (Greifvogelmigration)",
+      "lat": 41.05,
+      "lng": 29.05
+    },
+    {
+      "n": "Eilat (Roter-Meer-Zugroute)",
+      "lat": 29.55,
+      "lng": 34.95
+    },
+    {
+      "n": "Mai Po Marsch (Hongkong)",
+      "lat": 22.5,
+      "lng": 114.03
+    },
+    {
+      "n": "Punkt Pelee Kanada",
+      "lat": 41.9,
+      "lng": -82.51
+    },
+    {
+      "n": "Strasse von Gibraltar (Zugvogel)",
+      "lat": 36.0,
+      "lng": -5.3
+    },
+    {
+      "n": "Falsterbo (Schweden)",
+      "lat": 55.38,
+      "lng": 12.83
+    },
+    {
+      "n": "Donaudelta (Wasservoegel)",
+      "lat": 45.1,
+      "lng": 29.6
+    }
+  ],
+  "tiere_haustiere": [
+    {
+      "n": "Hund (Domestizierung Ostasien)",
+      "lat": 35.0,
+      "lng": 105.0
+    },
+    {
+      "n": "Hauskatze (Fruchtbarer Halbmond)",
+      "lat": 35.0,
+      "lng": 38.0
+    },
+    {
+      "n": "Pferd (Kasachische Steppe)",
+      "lat": 48.5,
+      "lng": 60.0
+    },
+    {
+      "n": "Rind (Anatolien-Zagros)",
+      "lat": 37.0,
+      "lng": 36.0
+    },
+    {
+      "n": "Haushuhn (Suedostasien)",
+      "lat": 20.0,
+      "lng": 100.0
+    },
+    {
+      "n": "Hauschwein (China und Naher Osten)",
+      "lat": 32.0,
+      "lng": 112.0
+    },
+    {
+      "n": "Lama (Peruanische Anden)",
+      "lat": -14.0,
+      "lng": -70.0
+    },
+    {
+      "n": "Esel (Nordostafrika)",
+      "lat": 12.0,
+      "lng": 37.0
+    }
+  ],
+  "tiere_nationaltier_pin": [
+    {
+      "n": "Bengalischer Tiger (Indien)",
+      "lat": 20.0,
+      "lng": 78.0
+    },
+    {
+      "n": "Kiwi (Neuseeland)",
+      "lat": -41.0,
+      "lng": 174.0
+    },
+    {
+      "n": "Biber (Kanada)",
+      "lat": 56.0,
+      "lng": -106.0
+    },
+    {
+      "n": "Springbock (Suedafrika)",
+      "lat": -29.0,
+      "lng": 25.0
+    },
+    {
+      "n": "Bald Eagle (USA)",
+      "lat": 39.5,
+      "lng": -98.0
+    },
+    {
+      "n": "Kaenguru (Australien)",
+      "lat": -25.0,
+      "lng": 133.0
+    },
+    {
+      "n": "Glatze Wolf (Mexiko)",
+      "lat": 19.5,
+      "lng": -99.0
+    },
+    {
+      "n": "Saiga-Antilope (Kasachstan)",
+      "lat": 48.0,
+      "lng": 67.0
+    }
+  ],
+  "tiere_primaten": [
+    {
+      "n": "Berggorilla (Bwindi Impenetrable Forest)",
+      "lat": -1.05,
+      "lng": 29.62
+    },
+    {
+      "n": "Borneo-Orang-Utan (Kinabatangan)",
+      "lat": 5.5,
+      "lng": 117.6
+    },
+    {
+      "n": "Schimpanse (Gombe-Nationalpark)",
+      "lat": -4.68,
+      "lng": 29.64
+    },
+    {
+      "n": "Bonobo (Salonga-Nationalpark)",
+      "lat": -2.5,
+      "lng": 21.5
+    },
+    {
+      "n": "Goldener Stumpfnasenaffe (Sichuan)",
+      "lat": 32.0,
+      "lng": 108.0
+    },
+    {
+      "n": "Mantelpavianherde (Abessinisches Hochland)",
+      "lat": 9.0,
+      "lng": 39.0
+    },
+    {
+      "n": "Goldloewentamarin (Atlantischer Regenwald Brasiliens)",
+      "lat": -22.5,
+      "lng": -43.0
+    }
+  ],
+  "tiere_hai": [
+    {
+      "n": "Weisser Hai (Gansbaai Suedafrika)",
+      "lat": -34.58,
+      "lng": 19.37
+    },
+    {
+      "n": "Walhai (Ningaloo Reef Australien)",
+      "lat": -22.5,
+      "lng": 113.5
+    },
+    {
+      "n": "Tigerhai (Nordinsel Galápagos)",
+      "lat": -0.6,
+      "lng": -90.35
+    },
+    {
+      "n": "Grosser Hammerhai (Insel Cocos)",
+      "lat": 5.54,
+      "lng": -87.06
+    },
+    {
+      "n": "Blauhai (Azoren)",
+      "lat": 38.0,
+      "lng": -28.0
+    },
+    {
+      "n": "Stierhai (KwaZulu-Natal)",
+      "lat": -29.5,
+      "lng": 31.2
+    },
+    {
+      "n": "Weisssspitzen-Hochseehai (Rotes Meer)",
+      "lat": 25.0,
+      "lng": 37.0
+    }
+  ],
+  "tiere_baeren": [
+    {
+      "n": "Eisbaer (Svalbard)",
+      "lat": 77.5,
+      "lng": 15.0
+    },
+    {
+      "n": "Grizzly (Yellowstone)",
+      "lat": 44.6,
+      "lng": -110.5
+    },
+    {
+      "n": "Grosser Panda (Qinling-Gebirge)",
+      "lat": 33.8,
+      "lng": 107.6
+    },
+    {
+      "n": "Braunbaer (Kamtschatka)",
+      "lat": 55.0,
+      "lng": 162.0
+    },
+    {
+      "n": "Brillenbaer (Zentralanden)",
+      "lat": -10.0,
+      "lng": -75.0
+    },
+    {
+      "n": "Lippbaer (Sri Lanka)",
+      "lat": 8.0,
+      "lng": 81.0
+    },
+    {
+      "n": "Asiatischer Schwarzbaer (Sikhote-Alin)",
+      "lat": 45.5,
+      "lng": 135.0
+    }
+  ],
+  "tiere_endemisch": [
+    {
+      "n": "Lemur (Madagaskar)",
+      "lat": -20.0,
+      "lng": 47.0
+    },
+    {
+      "n": "Kiwi (Neuseeland)",
+      "lat": -38.5,
+      "lng": 176.0
+    },
+    {
+      "n": "Komodowaran (Komodo-Insel)",
+      "lat": -8.55,
+      "lng": 119.48
+    },
+    {
+      "n": "Galapagos-Riesenschildkroete",
+      "lat": -0.68,
+      "lng": -90.33
+    },
+    {
+      "n": "Schnabeltier (Ostliches Australien)",
+      "lat": -32.0,
+      "lng": 148.0
+    },
+    {
+      "n": "Axolotl (Xochimilco Mexiko)",
+      "lat": 19.27,
+      "lng": -99.09
+    },
+    {
+      "n": "Aye-Aye (Nordostmadagaskar)",
+      "lat": -15.0,
+      "lng": 49.5
+    },
+    {
+      "n": "Quokka (Rottnest Island)",
+      "lat": -32.0,
+      "lng": 115.52
+    }
+  ]
+}

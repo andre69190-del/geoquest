@@ -37,6 +37,7 @@ with open(os.path.join(os.path.dirname(__file__), 'data/archaeologie_pin.json'),
 with open(os.path.join(os.path.dirname(__file__), 'data/archaeologie_hl.json'), 'r', encoding='utf-8') as _f: ARCH_HL_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/archaeologie_match.json'), 'r', encoding='utf-8') as _f: ARCH_MATCH_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/archaeologie_ws.json'), 'r', encoding='utf-8') as _f: ARCH_WS_J = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/tiere_pin.json'), 'r', encoding='utf-8') as _f: TIER_PIN_J = _f.read()
 
 
 # â”€â”€ STATIC DATA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -1376,7 +1377,7 @@ de:{
   language_select:"SPRACHE",
   badge_beta:"Beta",beta_warning:"Spielbar, aber es k\u00f6nnen noch Fehler auftreten.",
   rotate_device:"Bitte drehe dein Ger\u00e4t ins Querformat \u{1F4F1}\u27A1\u{1F5FA}",
-  diff_desc_casual:"\u{1F7E2} Casual: Entspannt \u00b7 Kein Zeitlimit \u00b7 \u221e Leben",diff_desc_hc:"\u{1F525} Hardcore: Der Klassiker \u00b7 Kein Zeitlimit \u00b7 3 Leben",diff_desc_surv:"\u{1F480} Survival: Gegen die Uhr \u00b7 8 Sekunden \u00b7 3 Leben",
+  diff_desc_casual:"\u{1F7E2} Casual: Entspannt \u00b7 Kein Zeitlimit \u00b7 \u221e Leben",diff_desc_hc:"\u{1F525} Hardcore: Der Klassiker \u00b7 Kein Zeitlimit \u00b7 3 Leben",diff_desc_surv:"\u{1F480} Survival: Gegen die Uhr \u00b7 8 Sekunden \u00b7 3 Leben",diff_desc_blitz:"\u26A1 Blitz: 60 Sekunden \u00b7 So viele Fragen wie m\u00f6glich",
   hud_lives:"LEBEN",score_mult_max:"Max-Multiplikator",score_time_bonus:"Zeit-Bonus",pts_abbr:"Pkt.",score_correct_lbl:"richtig",mode_wappen:"Wappen-Meister",mode_slf:"Stadt, Land, Fluss",mode_euro:"Euro-M\u00fcnzen",
   /* P208: Phase 204/205 modes + WortSchmiede UI */
   mode_wort_schmiede:"Wort-Schmiede",mode_hauptstadt_dist:"Hauptstadt-Distanz",
@@ -1434,7 +1435,7 @@ en:{
   language_select:"LANGUAGE",
   badge_beta:"Beta",beta_warning:"Playable, but may still contain bugs.",
   rotate_device:"Please rotate your device to landscape mode \u{1F4F1}\u27A1\u{1F5FA}",
-  diff_desc_casual:"\u{1F7E2} Casual: Relaxed \u00b7 No time limit \u00b7 \u221e Lives",diff_desc_hc:"\u{1F525} Hardcore: Classic \u00b7 No time limit \u00b7 3 Lives",diff_desc_surv:"\u{1F480} Survival: Against the clock \u00b7 8s \u00b7 3 Lives",
+  diff_desc_casual:"\u{1F7E2} Casual: Relaxed \u00b7 No time limit \u00b7 \u221e Lives",diff_desc_hc:"\u{1F525} Hardcore: Classic \u00b7 No time limit \u00b7 3 Lives",diff_desc_surv:"\u{1F480} Survival: Against the clock \u00b7 8s \u00b7 3 Lives",diff_desc_blitz:"\u26A1 Blitz: 60 seconds \u00b7 Answer as many as you can",
   hud_lives:"LIVES",score_mult_max:"Max Multiplier",score_time_bonus:"Time Bonus",pts_abbr:"pts.",score_correct_lbl:"correct",mode_wappen:"Coat of Arms",mode_slf:"City-Country-River",mode_euro:"Euro Coins",
   /* P208: Phase 204/205 modes + WortSchmiede UI */
   mode_wort_schmiede:"Word Forge",mode_hauptstadt_dist:"Capital Distance",
@@ -8051,6 +8052,8 @@ function genSprachenKompassQ(){
 
 /* Phase 211: Kultur & Lifestyle universal data matrix */
 const KULTUR_DATA=PLACEHOLDER_KULTUR_DATA;
+const TIER_PIN_DATA=PLACEHOLDER_TIER_PIN;
+Object.assign(KULTUR_DATA,TIER_PIN_DATA);
 
 /* Phase 216: Fixed-pool Match — distractors drawn from an explicit answer pool */
 function genFixedPoolMatchQ(cat,ansPool){
@@ -9225,7 +9228,7 @@ function renderLVGameover(){
 function nextRound(){
   clr();
   const nr=S.rd+1;
-  if(S.diff!=="survival"&&nr>=ROUNDS){
+  if(S.diff!=="survival"&&S.diff!=="blitz"&&nr>=ROUNDS){
     S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
     if(S.isDailyRun&&!isDailyDone()){markDailyDone(S.sc);if(sbProfile)sbProfile.geo_coins=(sbProfile.geo_coins||0)+100;if(sb&&sbUser)sb.rpc("add_coins",{p_user_id:sbUser.id,p_amount:100}).then(r=>{if(r.data!=null&&sbProfile)sbProfile.geo_coins=r.data;},()=>{});}
     saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:ROUNDS,date:Date.now(),answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});
@@ -9238,7 +9241,7 @@ function lq(){
   window._mapZoom=null; /* Phase 226: reset map zoom on every new question */
   if(\!S.queueExtra)S.queueExtra=[];
   if(\!S.askedLids)S.askedLids=new Set();
-  const _mCfg=(typeof GAME_MODES!=="undefined"?GAME_MODES:[]).find(m=>m.id===S.mode);const dur=S.diff==="survival"?8:(_mCfg&&_mCfg.time)||12;
+  const _mCfg=(typeof GAME_MODES!=="undefined"?GAME_MODES:[]).find(m=>m.id===S.mode);const dur=S.diff==="blitz"?(S.blitzTimeLeft>0?S.blitzTimeLeft:60):S.diff==="survival"?8:(_mCfg&&_mCfg.time)||12;
   /* Try up to 25 times to get a question whose lid hasn't appeared this round */
   let q=null,_att=0;
   while(_att<25){
@@ -9260,7 +9263,7 @@ function lq(){
     S.waitingForLandscape=true;
   }else{
     S.waitingForLandscape=false;
-    tIv=setInterval(()=>{  /* P208: redundant clearInterval removed; self-cancel below */S.tm--;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null,_secretGameToken);} },1000);
+    tIv=setInterval(()=>{  /* P208: redundant clearInterval removed; self-cancel below */S.tm--;if(S.diff==="blitz")S.blitzTimeLeft=S.tm;if(S.tm===3)soundWarn(); render();if(S.tm<=0){clearInterval(tIv);if(S.diff==="blitz"){S.ph="gameover";S.scoreSaved=false;soundOver();checkMastery();updateDailyStreak();saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:S.rd,date:Date.now(),answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});if(sbOK)saveSession(S.mode,S.sc,S.bs,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();},()=>{});render();}else if(S.q)answer(null,_secretGameToken);} },1000);
   }
 }
 
@@ -9285,7 +9288,7 @@ function answer(a,tok){
   S.sel=a||"__t";S.ok=ok;
   if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:ok});
   let pts=0;
-  if(ok){const ns=S.st+1,t=tier(ns);if(S.diff==="casual"){pts=10;}else if(S.diff==="survival"){pts=20+S.tm;S.survTimeBonusTotal=(S.survTimeBonusTotal||0)+S.tm;}else{/* hardcore */S.hcMult=Math.min(2.5,parseFloat((+(S.hcMult||1.0)+0.1).toFixed(1)));S.hcMaxMult=Math.max(S.hcMaxMult||1.0,S.hcMult);pts=Math.round(15*S.hcMult);}S.sc+=pts;S.st=ns;S.bs=Math.max(S.bs,ns);S.correct++;soundCorrect();if(ns>=3)setTimeout(()=>soundStreak(ns),250);showPtsPopup(pts);if(navigator.vibrate)navigator.vibrate([50]);}
+  if(ok){const ns=S.st+1,t=tier(ns);if(S.diff==="casual"||S.diff==="blitz"){pts=10;}else if(S.diff==="survival"){pts=20+S.tm;S.survTimeBonusTotal=(S.survTimeBonusTotal||0)+S.tm;}else{/* hardcore */S.hcMult=Math.min(2.5,parseFloat((+(S.hcMult||1.0)+0.1).toFixed(1)));S.hcMaxMult=Math.max(S.hcMaxMult||1.0,S.hcMult);pts=Math.round(15*S.hcMult);}S.sc+=pts;S.st=ns;S.bs=Math.max(S.bs,ns);S.correct++;soundCorrect();if(ns>=3)setTimeout(()=>soundStreak(ns),250);showPtsPopup(pts);if(navigator.vibrate)navigator.vibrate([50]);}
   else{S.st=0;if(S.diff==="hardcore"){S.hcMult=1.0;}soundWrong();if(navigator.vibrate)navigator.vibrate([100,50,100]);
     /* Lives system: casual=infinite(999), hardcore/survival=3 */
     if(S.diff!=="casual"){
@@ -9322,7 +9325,8 @@ function answer(a,tok){
       }
     }
   }
-  S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
+  if(S.diff==="blitz"){S.rd++;S.pts=pts;S.lid=S.q.lid;const _bApp=document.getElementById('app');if(_bApp){_bApp.style.outline=ok?'3px solid #34d399':'3px solid #ef4444';setTimeout(()=>{_bApp.style.outline='';},350);}if(S.blitzTimeLeft>0)lq();else{clearInterval(tIv);S.ph="gameover";S.scoreSaved=false;soundOver();checkMastery();updateDailyStreak();saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:S.rd,date:Date.now(),answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});if(sbOK)saveSession(S.mode,S.sc,S.bs,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();},()=>{});render();}return;}
+S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
   /* Phase 33 Teil 2 */
   if(window.mpGameCh&&S.mpOpponent){
     window.mpGameCh.send({type:"broadcast",event:"score_update",
@@ -9977,7 +9981,7 @@ function startGame(m){
   Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",mode:_m,
     scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,
     half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),
-    survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,lives:S.diff==="casual"?999:3,
+    survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,blitzTimeLeft:S.diff==="blitz"?60:0,lives:S.diff==="casual"?999:3,
     q:null,sel:null,ok:null,slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0,
     /* Phase 217 QA: clear mp carry-over so solo games never show duell HUD */
     mpOpponent:null,mpOppScore:0,mpOppFinal:null,mpOppRd:0});  /* P208/P210: always reset sub-game state on new game */
@@ -10191,7 +10195,7 @@ function getDailyCountdown(){
 function startDailyChallenge(){
   const seed=getDailySeed();
   initRng(seed);
-  S.mode="city";S.diff="casual";S.isDailyRun=true;
+  const DAILY_POOL=["city","flag","uk_wahrzeichen","uk_getraenke","uk_tiere_endemisch"];const dayIndex=Math.floor(Date.now()/86400000);S.mode=DAILY_POOL[dayIndex%DAILY_POOL.length];S.diff="casual";S.isDailyRun=true;
   Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,slfData:null,wsData:null,lhData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});  /* P208: lhData reset */
   lq();
 }
@@ -12975,9 +12979,10 @@ function renderHomeTab(){
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>
       <button class="diff-btn ${S.diff==="hardcore"?"active":""}" onclick="S.diff='hardcore';render()">Hardcore</button>
       <button class="diff-btn ${S.diff==="survival"?"active":""}" onclick="S.diff='survival';render()">💀 Survival</button>
+      <button class="diff-btn ${S.diff==="blitz"?"active":""}" onclick="S.diff='blitz';render()">\u26A1 Blitz</button>
     </div>
     <p style="text-align:center;color:var(--text2);font-size:.72rem;font-weight:600;margin:.3rem 0 .5rem">${
-      t(S.diff==="casual"?"diff_desc_casual":S.diff==="hardcore"?"diff_desc_hc":"diff_desc_surv")
+      t(S.diff==="casual"?"diff_desc_casual":S.diff==="hardcore"?"diff_desc_hc":S.diff==="blitz"?"diff_desc_blitz":"diff_desc_surv")
     }</p>
     <div style="margin:.6rem 0 .5rem;text-align:center"><button onclick="reportBug()" style="background:transparent;color:var(--text3);border:none;font-size:.72rem;cursor:pointer;text-decoration:underline;padding:.3rem .5rem">🐞 Fehler melden</button></div>
     <div style="height:5rem"></div>`;
@@ -13754,6 +13759,7 @@ JS = (JS
   .replace('PLACEHOLDER_SPORTPOI', SPORT_POI_J)
   .replace('PLACEHOLDER_TIER_WS_DATA', TIER_WS_DATA_J)
   .replace('PLACEHOLDER_KULTUR_DATA', KULTUR_DATA_J)
+  .replace('PLACEHOLDER_TIER_PIN', TIER_PIN_J)
   .replace('PLACEHOLDER_TIER_HL_DATA', TIER_HL_DATA_J)
   .replace('PLACEHOLDER_TIER_MATCH_DATA', TIER_MATCH_DATA_J)
   .replace('PLACEHOLDER_PFLANZEN_PIN', PFLANZEN_PIN_J)
