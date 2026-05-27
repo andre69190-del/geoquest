@@ -8,7 +8,7 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "DATA: Phase 245 Hotfix. geo_ws: ITALIA+BEENDEN entfernt. sport_ws: TORION+FLUSS entfernt. tiere_pin: {prompt,items} Struktur. astro/geo/sport_pin Struktur-Fix. WS-Duplikate bereinigt (stalaktiten TALENT, sternwarte). verify: 89/89."
+git commit -m "QA: Phase 245+246. Hotfix: WS-Halluzinationen, _pin Struktur, WS-Duplikate. validate_content.py: Duplikat-Scope per Kategorie, WS-Mindestwoerter, WS-Duplikat-Check, Match-Schwellwert justiert. 149->64 Warnungen. verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

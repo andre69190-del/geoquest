@@ -300,6 +300,21 @@ def check_ws(filename, data):
                 warn(filename, key, base_word, f"validWords['{lang}'] is empty")
                 continue
 
+            # Minimum playable word count: engine filters _mkWS to ≥3 chars,
+            # so warn if fewer than 3 valid words survive
+            valid_for_game = [w for w in words if isinstance(w, str) and len(w) >= 3]
+            if len(valid_for_game) < 3:
+                warn(filename, key, base_word,
+                     f"[{lang}] Only {len(valid_for_game)} word(s) with ≥3 chars — "
+                     f"game needs ≥3 solutions to be playable")
+
+            # Duplicate words within same validWords entry
+            word_counts = Counter(w.upper() for w in words if isinstance(w, str))
+            for dup_word, dup_count in word_counts.items():
+                if dup_count > 1:
+                    warn(filename, key, base_word,
+                         f"[{lang}] '{dup_word}' appears {dup_count}× — remove duplicates")
+
             for word in words:
                 # Must be uppercase
                 if word != word.upper():
@@ -407,7 +422,6 @@ def main():
     print(f"{'='*62}{RESET}\n")
 
     if warnings:
-        # Group by file for readability
         by_file = defaultdict(list)
         for tag, msg in warnings:
             file_part = tag.split(" › ")[0]
