@@ -5336,9 +5336,18 @@ async function migrateGuestToAccount(uid){
 }
 
 function togglePw(id,btn){const el=document.getElementById(id);if(\!el)return;const show=el.type==="password";el.type=show?"text":"password";btn.textContent=show?"\u{1F648}":"\u{1F441}";}
+/* Phase 239: safe auth-error message extractor */
+function _authErrMsg(err){
+  if(!err)return'';
+  const m=err?.message||err?.error_description||'';
+  if(m&&m.trim())return m.trim();
+  /* err exists but has no readable message (e.g. {} from 503 body) */
+  return'Verbindungsfehler zum Server.';
+}
 /* Phase 27: Register */
 async function doRegister(){
   if(!sb){showToast("Supabase nicht verbunden");return;}
+  if(!navigator.onLine){S.authError="Du bist offline. Registrierung ohne Internet nicht möglich.";render();return;}
   const email=S.authEmail.trim();
   const pw=S.authPassword;
   const uname=S.authUsername.trim().slice(0,20);
@@ -5384,11 +5393,11 @@ async function doRegister(){
     }
     render();
   }catch(err){
-    const _em=err.message||"";
+    const _em=_authErrMsg(err);
     S.authError=
       _em.includes("already registered")||_em.includes("already been registered")?"Diese E-Mail ist bereits registriert.":
       _em.includes("valid email")||_em.includes("invalid format")?"Bitte eine gültige E-Mail-Adresse eingeben.":
-      _em||"Unbekannter Fehler.";
+      _em||"Verbindungsfehler zum Server.";
     S.authLoading=false;
     render();
   }
@@ -5397,6 +5406,7 @@ async function doRegister(){
 /* Phase 27: Login */
 async function doLogin(){
   if(!sb){showToast("Supabase nicht verbunden");return;}
+  if(!navigator.onLine){S.authError="Du bist offline. Anmeldung ohne Internet nicht möglich.";render();return;}
   const email=S.authEmail.trim();
   const pw=S.authPassword;
   if(!email||!pw){S.authError="E-Mail und Passwort eingeben.";render();return;}
@@ -5408,10 +5418,10 @@ async function doLogin(){
   try{
     const{data,error}=await sb.auth.signInWithPassword({email,password:pw});
     if(error){
-      const _m=error.message;
+      const _m=error?.message||"";
       S.authError=_m==="Invalid login credentials"?"E-Mail oder Passwort falsch.":
         _m.includes("Email not confirmed")?"Bitte bestätige zuerst deine E-Mail-Adresse!":
-        _m.includes("Too many requests")?"Zu viele Versuche. Bitte kurz warten.":_m;
+        _m.includes("Too many requests")?"Zu viele Versuche. Bitte kurz warten.":_m||"Verbindungsfehler zum Server.";
       return;
     }
     sbUser=data.user;
@@ -5419,7 +5429,7 @@ async function doLogin(){
     S.authEmail="";S.authPassword="";S.authConfirm="";S.authError="";
     S.tab="home";
   }catch(e){
-    S.authError=e?.message||"Anmeldung fehlgeschlagen.";
+    S.authError=_authErrMsg(e)||"Anmeldung fehlgeschlagen.";
   }finally{
     clearTimeout(_loginTO);
     S.authLoading=false;
@@ -5443,17 +5453,19 @@ async function doLogout(){
 /* Phase 83: Password reset */
 async function doForgotPassword(){
   if(\!sb){showToast("Supabase nicht verbunden");return;}
+  if(!navigator.onLine){S.authError="Du bist offline. Passwort-Reset ohne Internet nicht möglich.";render();return;}
   const email=S.authEmail.trim();
   if(\!email){S.authError="Bitte E-Mail-Adresse eingeben.";render();return;}
   S.authLoading=true;S.authError="";render();
   const{error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:window.location.origin});
   S.authLoading=false;
-  if(error){S.authError=error.message;render();return;}
+  if(error){S.authError=_authErrMsg(error);render();return;}
   showToast("\u2705 Reset-Link gesendet an "+email+"\!");
   S.authMode="login";S.authEmail="";render();
 }
 async function doSetNewPassword(){
   if(!sb){showToast("Supabase nicht verbunden");return;}
+  if(!navigator.onLine){S.authError="Du bist offline. Passwortänderung ohne Internet nicht möglich.";render();return;}
   const pw=S.authPassword;
   if(!pw||!S.authConfirm){S.authError="Bitte beide Felder ausf\u00fcllen.";render();return;}
   if(pw.length<6){S.authError="Passwort mind. 6 Zeichen.";render();return;}
@@ -5465,7 +5477,7 @@ async function doSetNewPassword(){
   },5000);
   try{
     const{error}=await sb.auth.updateUser({password:pw});
-    if(error){S.authError=error.message;return;}
+    if(error){S.authError=_authErrMsg(error);return;}
     showToast("\u2705 Passwort erfolgreich ge\u00e4ndert\!");
     S.authMode="login";S.authPassword="";S.authConfirm="";
   }catch(e){
