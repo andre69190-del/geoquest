@@ -38,6 +38,18 @@ with open(os.path.join(os.path.dirname(__file__), 'data/archaeologie_hl.json'), 
 with open(os.path.join(os.path.dirname(__file__), 'data/archaeologie_match.json'), 'r', encoding='utf-8') as _f: ARCH_MATCH_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/archaeologie_ws.json'), 'r', encoding='utf-8') as _f: ARCH_WS_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_pin.json'), 'r', encoding='utf-8') as _f: TIER_PIN_J = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/astro_pin.json'),   'r', encoding='utf-8') as _f: ASTRO_PIN_J   = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/astro_hl.json'),    'r', encoding='utf-8') as _f: ASTRO_HL_J    = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/astro_match.json'), 'r', encoding='utf-8') as _f: ASTRO_MATCH_J = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/astro_ws.json'),    'r', encoding='utf-8') as _f: ASTRO_WS_J    = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/geo_pin.json'),     'r', encoding='utf-8') as _f: GEO_PIN_J     = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/geo_hl.json'),      'r', encoding='utf-8') as _f: GEO_HL_J      = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/geo_match.json'),   'r', encoding='utf-8') as _f: GEO_MATCH_J   = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/geo_ws.json'),      'r', encoding='utf-8') as _f: GEO_WS_J      = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/sport_pin.json'),   'r', encoding='utf-8') as _f: SPORT_PIN_J   = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/sport_hl.json'),    'r', encoding='utf-8') as _f: SPORT_HL_J    = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/sport_match.json'), 'r', encoding='utf-8') as _f: SPORT_MATCH_J = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/sport_ws.json'),    'r', encoding='utf-8') as _f: SPORT_WS_J    = _f.read()
 
 
 # â”€â”€ STATIC DATA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -3364,6 +3376,24 @@ const MODE_CATS={
     "ws_arch_ausgrabungsstaette","ws_arch_antiquitaet","ws_arch_dendrochronologie",
     "ws_arch_hieroglyphen","ws_arch_photogrammetrie","ws_arch_stratigraphie",
     "ws_arch_radiocarbondatierung"
+  ],cost:0},
+  astronomie:{label:"Astronomie & Raumfahrt",icon:"\u{1F52D}",modes:[
+    "uk_astro_observatorien","uk_astro_startrampen",
+    "hl_astro_planet_groesse","hl_astro_monde_anzahl","hl_astro_sonnenentfernung",
+    "uk_astro_missionen","uk_astro_planeten","uk_astro_kosmologie",
+    "ws_astro_sternwarte","ws_astro_raumstation","ws_astro_astronaut"
+  ],cost:0},
+  geologie:{label:"Geologie & Vulkane",icon:"\u{1F30B}",modes:[
+    "uk_geo_vulkane","uk_geo_geothermal",
+    "hl_geo_berghoehen","hl_geo_vulkan_hoehen","hl_geo_erdbeben",
+    "uk_geo_gesteinsarten","uk_geo_tektonik","uk_geo_mineralien",
+    "ws_geo_stalaktiten","ws_geo_vulkanismus","ws_geo_erdbeben"
+  ],cost:0},
+  sport_wissen:{label:"Sport-Wissen",icon:"\u{1F3C5}",modes:[
+    "uk_sportwissen_olympiastadien","uk_sportwissen_marathonstrecken",
+    "hl_sportwissen_marathon_alter","hl_sportwissen_stadien_kapazitaet",
+    "uk_sportwissen_herkunft","uk_sportwissen_teamgroesse","uk_sportwissen_olympia_standort",
+    "ws_sportwissen_marathon","ws_sportwissen_triathlon","ws_sportwissen_staffellauf"
   ],cost:0},
 };
 
@@ -8136,6 +8166,18 @@ const ARCH_PIN_DATA=PLACEHOLDER_ARCH_PIN;
 const ARCH_HL_DATA=PLACEHOLDER_ARCH_HL;
 const ARCH_MATCH_DATA=PLACEHOLDER_ARCH_MATCH;
 const ARCH_WS_DATA=PLACEHOLDER_ARCH_WS;
+const ASTRO_PIN_DATA=PLACEHOLDER_ASTRO_PIN;
+const ASTRO_HL_DATA=PLACEHOLDER_ASTRO_HL;
+const ASTRO_MATCH_DATA=PLACEHOLDER_ASTRO_MATCH;
+const ASTRO_WS_DATA=PLACEHOLDER_ASTRO_WS;
+const GEO_PIN_DATA=PLACEHOLDER_GEO_PIN;
+const GEO_HL_DATA=PLACEHOLDER_GEO_HL;
+const GEO_MATCH_DATA=PLACEHOLDER_GEO_MATCH;
+const GEO_WS_DATA=PLACEHOLDER_GEO_WS;
+const SPORT_PIN_DATA=PLACEHOLDER_SPORT_PIN;
+const SPORT_HL_DATA=PLACEHOLDER_SPORT_HL;
+const SPORT_MATCH_DATA=PLACEHOLDER_SPORT_MATCH;
+const SPORT_WS_DATA=PLACEHOLDER_SPORT_WS;
 
 /* === Phase 227 Part 2: genTiereMatchQ -- tiere-interner Distractor-Pool === */
 function genTiereMatchQ(cat){
@@ -8269,6 +8311,18 @@ var genArchPinQ=_mkPinQ(ARCH_PIN_DATA);
 var genArchHL=_mkHL(ARCH_HL_DATA);
 var genArchMatchQ=_mkMatchQ(ARCH_MATCH_DATA);
 var initArchWS=_mkWS(ARCH_WS_DATA,"Arch");
+var genAstroPinQ=_mkPinQ(ASTRO_PIN_DATA);
+var genAstroHL=_mkHL(ASTRO_HL_DATA);
+var genAstroMatchQ=_mkMatchQ(ASTRO_MATCH_DATA);
+var initAstroWS=_mkWS(ASTRO_WS_DATA,"Astro");
+var genGeoPinQ=_mkPinQ(GEO_PIN_DATA);
+var genGeoHL=_mkHL(GEO_HL_DATA);
+var genGeoMatchQ=_mkMatchQ(GEO_MATCH_DATA);
+var initGeoWS=_mkWS(GEO_WS_DATA,"Geo");
+var genSportWissenPinQ=_mkPinQ(SPORT_PIN_DATA);
+var genSportWissenHL=_mkHL(SPORT_HL_DATA);
+var genSportWissenMatchQ=_mkMatchQ(SPORT_MATCH_DATA);
+var initSportWissenWS=_mkWS(SPORT_WS_DATA,"SportW");
 
 /* === Phase 228: Pflanzen-Generatoren === */
 function genPflanzenPinQ(cat){
@@ -8931,6 +8985,41 @@ const GEN={
   ws_arch_photogrammetrie:()=>{initArchWS("photogrammetrie");return null;},
   ws_arch_stratigraphie:()=>{initArchWS("stratigraphie");return null;},
   ws_arch_radiocarbondatierung:()=>{initArchWS("radiocarbondatierung");return null;},
+  /* Phase 243: Astronomie */
+  uk_astro_observatorien:()=>genAstroPinQ("astro_observatorien"),
+  uk_astro_startrampen:()=>genAstroPinQ("astro_startrampen"),
+  hl_astro_planet_groesse:()=>genAstroHL("astro_planet_groesse"),
+  hl_astro_monde_anzahl:()=>genAstroHL("astro_monde_anzahl"),
+  hl_astro_sonnenentfernung:()=>genAstroHL("astro_sonnenentfernung"),
+  uk_astro_missionen:()=>genAstroMatchQ("astro_missionen"),
+  uk_astro_planeten:()=>genAstroMatchQ("astro_planeten"),
+  uk_astro_kosmologie:()=>genAstroMatchQ("astro_kosmologie"),
+  ws_astro_sternwarte:()=>{initAstroWS("sternwarte");return null;},
+  ws_astro_raumstation:()=>{initAstroWS("raumstation");return null;},
+  ws_astro_astronaut:()=>{initAstroWS("astronaut");return null;},
+  /* Phase 243: Geologie */
+  uk_geo_vulkane:()=>genGeoPinQ("geo_vulkane"),
+  uk_geo_geothermal:()=>genGeoPinQ("geo_geothermal"),
+  hl_geo_berghoehen:()=>genGeoHL("geo_berghoehen"),
+  hl_geo_vulkan_hoehen:()=>genGeoHL("geo_vulkan_hoehen"),
+  hl_geo_erdbeben:()=>genGeoHL("geo_erdbeben_magnitude"),
+  uk_geo_gesteinsarten:()=>genGeoMatchQ("geo_gesteinsarten"),
+  uk_geo_tektonik:()=>genGeoMatchQ("geo_tektonik"),
+  uk_geo_mineralien:()=>genGeoMatchQ("geo_mineralien"),
+  ws_geo_stalaktiten:()=>{initGeoWS("stalaktiten");return null;},
+  ws_geo_vulkanismus:()=>{initGeoWS("vulkanismus");return null;},
+  ws_geo_erdbeben:()=>{initGeoWS("erdbeben");return null;},
+  /* Phase 243: Sport-Wissen */
+  uk_sportwissen_olympiastadien:()=>genSportWissenPinQ("sport_olympiastadien"),
+  uk_sportwissen_marathonstrecken:()=>genSportWissenPinQ("sport_marathonstrecken"),
+  hl_sportwissen_marathon_alter:()=>genSportWissenHL("sport_marathon_alter"),
+  hl_sportwissen_stadien_kapazitaet:()=>genSportWissenHL("sport_stadien_kapazitaet"),
+  uk_sportwissen_herkunft:()=>genSportWissenMatchQ("sport_herkunft"),
+  uk_sportwissen_teamgroesse:()=>genSportWissenMatchQ("sport_teamgroesse"),
+  uk_sportwissen_olympia_standort:()=>genSportWissenMatchQ("sport_olympia_standort"),
+  ws_sportwissen_marathon:()=>{initSportWissenWS("marathon");return null;},
+  ws_sportwissen_triathlon:()=>{initSportWissenWS("triathlon");return null;},
+  ws_sportwissen_staffellauf:()=>{initSportWissenWS("staffellauf");return null;},
   uk_surf_spots:()=>genUniversalPinQ("surf_spots"),
   uk_kontinent_mitte:()=>genUniversalPinQ("kontinent_mitte"),
   /* Phase 216 Schritt 2: H/L Beta */
@@ -12882,7 +12971,7 @@ function closeGameInfo(){
   if(el)el.remove();
 }
 function renderHomeTab(){
-  const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","emobilitaet","archaeologie"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));return fixed.concat(extra);})();
+  const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","emobilitaet","archaeologie","astronomie","geologie","sport_wissen"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));return fixed.concat(extra);})();
 
   // Build accordion sections — Pure Geo auto-open, others closed
   const _favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
@@ -13782,6 +13871,18 @@ JS = (JS
   .replace('PLACEHOLDER_ARCH_HL', ARCH_HL_J)
   .replace('PLACEHOLDER_ARCH_MATCH', ARCH_MATCH_J)
   .replace('PLACEHOLDER_ARCH_WS', ARCH_WS_J)
+  .replace('PLACEHOLDER_ASTRO_PIN',   ASTRO_PIN_J)
+  .replace('PLACEHOLDER_ASTRO_HL',    ASTRO_HL_J)
+  .replace('PLACEHOLDER_ASTRO_MATCH', ASTRO_MATCH_J)
+  .replace('PLACEHOLDER_ASTRO_WS',    ASTRO_WS_J)
+  .replace('PLACEHOLDER_GEO_PIN',     GEO_PIN_J)
+  .replace('PLACEHOLDER_GEO_HL',      GEO_HL_J)
+  .replace('PLACEHOLDER_GEO_MATCH',   GEO_MATCH_J)
+  .replace('PLACEHOLDER_GEO_WS',      GEO_WS_J)
+  .replace('PLACEHOLDER_SPORT_PIN',   SPORT_PIN_J)
+  .replace('PLACEHOLDER_SPORT_HL',    SPORT_HL_J)
+  .replace('PLACEHOLDER_SPORT_MATCH', SPORT_MATCH_J)
+  .replace('PLACEHOLDER_SPORT_WS',    SPORT_WS_J)
 )
 # Phase 201: fix unicode escapes — JS=r'''...''' keeps \UXXXXXXXX literal
 JS = re.sub(r'\\U([0-9A-Fa-f]{8})', lambda m: chr(int(m.group(1), 16)), JS)

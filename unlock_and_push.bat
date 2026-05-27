@@ -8,7 +8,7 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "ENGINE+DATA: Phase 242. Tiere-Pin: tiere_pin.json (10 categories) via TIER_PIN_DATA + Object.assign(KULTUR_DATA). Daily rotation: 5-mode pool (city/flag/wahrzeichen/getraenke/tiere_endemisch). Blitz mode: 60s speed round, no feedback, flash border, gameover on timeout. verify: 77/77."
+git commit -m "DATA: Phase 243. 3 Neue Welten: Astronomie (astro_pin/hl/match/ws), Geologie (geo_pin/hl/match/ws), Sport-Wissen (sport_pin/hl/match/ws). 12 JSON files, 32 new modes, 3 new MODE_CATS. verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

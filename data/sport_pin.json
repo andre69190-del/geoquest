@@ -1,0 +1,86 @@
+{
+  "sport_olympiastadien": [
+    {
+      "n": "Olympiastadion Berlin (1936/2006)",
+      "lat": 52.51,
+      "lng": 13.24
+    },
+    {
+      "n": "Stade de France Paris (1998)",
+      "lat": 48.92,
+      "lng": 2.36
+    },
+    {
+      "n": "Olympic Stadium Barcelona (1992)",
+      "lat": 41.36,
+      "lng": 2.12
+    },
+    {
+      "n": "Athens Olympic Stadium (2004)",
+      "lat": 38.04,
+      "lng": 23.78
+    },
+    {
+      "n": "Beijing National Stadium Nest (2008)",
+      "lat": 40.0,
+      "lng": 116.4
+    },
+    {
+      "n": "London Olympic Stadium (2012)",
+      "lat": 51.54,
+      "lng": -0.02
+    },
+    {
+      "n": "Estadio Maracana Rio (2016)",
+      "lat": -22.91,
+      "lng": -43.23
+    },
+    {
+      "n": "Japan National Stadium Tokyo (2021)",
+      "lat": 35.68,
+      "lng": 139.72
+    }
+  ],
+  "sport_marathonstrecken": [
+    {
+      "n": "Boston Marathon Start (Hopkinton, USA)",
+      "lat": 42.23,
+      "lng": -71.52
+    },
+    {
+      "n": "NYC Marathon Start (Staten Island, USA)",
+      "lat": 40.6,
+      "lng": -74.07
+    },
+    {
+      "n": "Berlin Marathon Start (Charlottenburg)",
+      "lat": 52.52,
+      "lng": 13.29
+    },
+    {
+      "n": "London Marathon Start (Greenwich)",
+      "lat": 51.48,
+      "lng": 0.0
+    },
+    {
+      "n": "Tokyo Marathon Start (Shinjuku)",
+      "lat": 35.69,
+      "lng": 139.69
+    },
+    {
+      "n": "Chicago Marathon Start (Grant Park)",
+      "lat": 41.87,
+      "lng": -87.62
+    },
+    {
+      "n": "Wien Marathon Start (Reichsbruecke)",
+      "lat": 48.24,
+      "lng": 16.41
+    },
+    {
+      "n": "Sydney Marathon Ziel (Opera House)",
+      "lat": -33.86,
+      "lng": 151.21
+    }
+  ]
+}

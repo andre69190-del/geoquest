@@ -1,0 +1,121 @@
+{
+  "astro_missionen": {
+    "prompt": "Zu welcher Raumfahrtagentur gehoert diese Mission?",
+    "items": [
+      {
+        "n": "Apollo 11 (Mondlandung 1969)",
+        "c": "NASA"
+      },
+      {
+        "n": "Sputnik 1 (Erster Satellit 1957)",
+        "c": "Sowjetunion/Roskosmos"
+      },
+      {
+        "n": "Rosetta/Philae (Komet 67P)",
+        "c": "ESA"
+      },
+      {
+        "n": "Chang'e 5 (Mondproben 2020)",
+        "c": "CNSA"
+      },
+      {
+        "n": "Mangalyaan (Mars Orbiter 2013)",
+        "c": "ISRO"
+      },
+      {
+        "n": "Curiosity Rover (Mars 2012)",
+        "c": "NASA"
+      },
+      {
+        "n": "BepiColombo (Merkur-Mission)",
+        "c": "ESA"
+      },
+      {
+        "n": "Tianwen-1 (Mars-Rover 2021)",
+        "c": "CNSA"
+      },
+      {
+        "n": "Artemis I (Mondprogramm 2022)",
+        "c": "NASA"
+      },
+      {
+        "n": "Hayabusa2 (Asteroid 2014)",
+        "c": "JAXA"
+      }
+    ]
+  },
+  "astro_planeten": {
+    "prompt": "Welche Eigenschaft beschreibt diesen Planeten am besten?",
+    "items": [
+      {
+        "n": "Jupiter",
+        "c": "Groesster Planet des Sonnensystems"
+      },
+      {
+        "n": "Merkur",
+        "c": "Naechster Planet zur Sonne"
+      },
+      {
+        "n": "Venus",
+        "c": "Heissester Planet (Treibhauseffekt)"
+      },
+      {
+        "n": "Mars",
+        "c": "Roter Planet mit Phobos und Deimos"
+      },
+      {
+        "n": "Saturn",
+        "c": "Planet mit markanten Ringen"
+      },
+      {
+        "n": "Uranus",
+        "c": "Rotiert auf der Seite (97 Grad Achsenneigung)"
+      },
+      {
+        "n": "Neptun",
+        "c": "Windigster Planet (600 m/s Windgeschwindigkeit)"
+      },
+      {
+        "n": "Erde",
+        "c": "Einziger bekannter bewohnter Planet"
+      }
+    ]
+  },
+  "astro_kosmologie": {
+    "prompt": "Welche Beschreibung passt zu diesem astronomischen Objekt?",
+    "items": [
+      {
+        "n": "Schwarzes Loch",
+        "c": "Gravitation so stark, kein Licht entkommt"
+      },
+      {
+        "n": "Neutronenstern",
+        "c": "Supernova-Ueberrest, ultra-dichte Materie"
+      },
+      {
+        "n": "Pulsar",
+        "c": "Rotierender Neutronenstern sendet Radiopulse"
+      },
+      {
+        "n": "Quasar",
+        "c": "Extrem leuchtender aktiver Galaxienkern"
+      },
+      {
+        "n": "Supernova",
+        "c": "Explosion eines massereichen Sterns"
+      },
+      {
+        "n": "Weisser Zwerg",
+        "c": "Gluehender Kern eines ausgebrannten Sterns"
+      },
+      {
+        "n": "Riesenstern (Red Giant)",
+        "c": "Aufgeblasener Stern am Ende seines Lebens"
+      },
+      {
+        "n": "Planetarischer Nebel",
+        "c": "Leuchtende Gashuelle um sterbenden Stern"
+      }
+    ]
+  }
+}

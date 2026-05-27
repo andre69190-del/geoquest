@@ -1,0 +1,78 @@
+{
+  "sport_marathon_alter": {
+    "prompt": "Welcher Marathon hat eine laengere Geschichte?",
+    "unit": "Gruendungsjahr",
+    "items": [
+      {
+        "name": "Boston Marathon (USA)",
+        "val": 1897
+      },
+      {
+        "name": "Yonkers Marathon (USA)",
+        "val": 1907
+      },
+      {
+        "name": "Kosice Peace Marathon (Slowakei)",
+        "val": 1924
+      },
+      {
+        "name": "Fukuoka Marathon (Japan)",
+        "val": 1947
+      },
+      {
+        "name": "Berlin Marathon",
+        "val": 1974
+      },
+      {
+        "name": "Chicago Marathon",
+        "val": 1977
+      },
+      {
+        "name": "New York City Marathon",
+        "val": 1970
+      },
+      {
+        "name": "London Marathon",
+        "val": 1981
+      }
+    ]
+  },
+  "sport_stadien_kapazitaet": {
+    "prompt": "Welches Stadion fasst mehr Zuschauer?",
+    "unit": "Tsd. Plaetze",
+    "items": [
+      {
+        "name": "Rungrado May Day (Nordkorea)",
+        "val": 114
+      },
+      {
+        "name": "Michigan Stadium (USA)",
+        "val": 107
+      },
+      {
+        "name": "Beaver Stadium (Penn State, USA)",
+        "val": 107
+      },
+      {
+        "name": "Ohio Stadium (USA)",
+        "val": 102
+      },
+      {
+        "name": "Melbourne Cricket Ground (Australien)",
+        "val": 100
+      },
+      {
+        "name": "Camp Nou (Barcelona, Spanien)",
+        "val": 99
+      },
+      {
+        "name": "Wembley Stadium (London)",
+        "val": 90
+      },
+      {
+        "name": "Estadio Azteca (Mexiko)",
+        "val": 87
+      }
+    ]
+  }
+}

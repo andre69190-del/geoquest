@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 242 (Stand: Mai 2026)
-**Build:** gen.py → 1.17 MB | GeoQuest.html → 2.21 MB | 558 Spielmodi
+**Version:** Phase 243 (Stand: Mai 2026)
+**Build:** gen.py → 1.17 MB | GeoQuest.html → 2.24 MB | 558+ Spielmodi | verify: 89/89
 
 ---
 
@@ -27,7 +27,7 @@ GeoQuest ist ein **vollständig clientseitiges, lokal persistiertes Geografie- u
 
 **Kerneigenschaften:**
 
-- **Zero-Backend-Dependency für Gameplay:** Alle 558 Spielmodi laufen komplett offline. Supabase wird optional für Cloud-Highscores genutzt, ist aber kein Pflichtbestandteil.
+- **Zero-Backend-Dependency für Gameplay:** Alle Spielmodi laufen komplett offline. Supabase wird optional für Cloud-Highscores genutzt, ist aber kein Pflichtbestandteil.
 - **Single-File Output:** Das Build-System kompiliert alle Quellen zu einer einzigen `GeoQuest.html`. Hosting = eine Datei deployen.
 - **Clientseitige Persistenz:** Spielfortschritt, Einstellungen und Sammlungen werden über `localStorage` gespeichert. Ein kryptografischer Salt schützt die Daten vor Manipulation.
 - **PWA-Ready:** Externer Service Worker (`sw.js`, hash-versioniert, generiert durch `gen.py`) cached die App und alle 24 Datendateien für vollständigen Offline-Betrieb nach erstem Laden.
@@ -46,8 +46,9 @@ Die zentrale Architekturentscheidung ist die strikte Trennung von **Inhalt** (Da
 ```
 ┌─────────────────────────────────────────────────────┐
 │  CONTENT-SCHICHT          data/*.json               │
-│  24 Datendateien: Kultur, Tiere, Pflanzen, Gastro,  │
-│  Tech, E-Mob, Archäologie — je 4 Spieltypen         │
+│  37 Datendateien: Kultur, Tiere, Pflanzen, Gastro,  │
+│  Tech, E-Mob, Archäologie, Astronomie, Geologie,    │
+│  Sport-Wissen — je 4 Spieltypen                     │
 ├─────────────────────────────────────────────────────┤
 │  LOGIK-SCHICHT            gen.py                    │
 │  Spielengines, UI-Renderer, State-Management        │

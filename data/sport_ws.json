@@ -1,0 +1,52 @@
+{
+  "marathon": {
+    "word": "MARATHON",
+    "validWords": {
+      "de": [
+        "MONAT",
+        "ROMAN",
+        "AHORN",
+        "THRON",
+        "HORN",
+        "RANT",
+        "MARAT",
+        "MANOR"
+      ]
+    }
+  },
+  "triathlon": {
+    "word": "TRIATHLON",
+    "validWords": {
+      "de": [
+        "THRON",
+        "TRAIL",
+        "TRIAL",
+        "HALT",
+        "HORN",
+        "ORAL",
+        "TORION",
+        "ATHLON"
+      ]
+    }
+  },
+  "staffellauf": {
+    "word": "STAFFELLAUF",
+    "validWords": {
+      "de": [
+        "STAFF",
+        "LAUTE",
+        "FLAU",
+        "LAUF",
+        "FATAL",
+        "FALLE",
+        "FLAUTE",
+        "SAAL",
+        "STALL",
+        "FALLS",
+        "FLUSS",
+        "ATLAS",
+        "TAFEL"
+      ]
+    }
+  }
+}

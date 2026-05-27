@@ -1,0 +1,62 @@
+{
+  "stalaktiten": {
+    "word": "STALAKTITEN",
+    "validWords": {
+      "de": [
+        "KALT",
+        "LATTE",
+        "LATTEN",
+        "ALTEN",
+        "STIEL",
+        "ATLAS",
+        "TALENT",
+        "TINTE",
+        "ATTEST",
+        "STATT",
+        "STIL",
+        "ANSTALT",
+        "TITLE",
+        "ITALIA",
+        "TALENT",
+        "LATEIN",
+        "TAKT",
+        "TILTS"
+      ]
+    }
+  },
+  "vulkanismus": {
+    "word": "VULKANISMUS",
+    "validWords": {
+      "de": [
+        "MUSIK",
+        "KLIMA",
+        "MAIS",
+        "KAUM",
+        "MINUS",
+        "MAUL",
+        "VAKUUM",
+        "LAUS",
+        "SKLAVIN",
+        "KULM",
+        "MANIS",
+        "KLAUN"
+      ]
+    }
+  },
+  "erdbeben": {
+    "word": "ERDBEBEN",
+    "validWords": {
+      "de": [
+        "ERDE",
+        "BEBEN",
+        "REBE",
+        "ERBE",
+        "EBER",
+        "NERD",
+        "REDEN",
+        "BEENDEN",
+        "BENDER"
+      ]
+    }
+  }
+}

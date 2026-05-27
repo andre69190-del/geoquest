@@ -1,0 +1,58 @@
+{
+  "sternwarte": {
+    "word": "STERNWARTE",
+    "validWords": {
+      "de": [
+        "STERN",
+        "WARTE",
+        "WARTEN",
+        "ARTEN",
+        "RATEN",
+        "ERNST",
+        "RENTE",
+        "ERNTE",
+        "WERT",
+        "WARE",
+        "WESTEN",
+        "ERST",
+        "NETTER",
+        "RENTE",
+        "ANTWERT",
+        "RATEN",
+        "WATERS"
+      ]
+    }
+  },
+  "raumstation": {
+    "word": "RAUMSTATION",
+    "validWords": {
+      "de": [
+        "RAUM",
+        "RATION",
+        "MONAT",
+        "TURM",
+        "SATURN",
+        "TAURIN",
+        "STATION",
+        "NAOMI",
+        "ROMAN"
+      ]
+    }
+  },
+  "astronaut": {
+    "word": "ASTRONAUT",
+    "validWords": {
+      "de": [
+        "AUTOR",
+        "NATUR",
+        "SATURN",
+        "TARTAN",
+        "TRAUT",
+        "TURNA",
+        "RANT",
+        "TAU",
+        "ROTAUS"
+      ]
+    }
+  }
+}

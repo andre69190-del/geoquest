@@ -1,0 +1,121 @@
+{
+  "geo_gesteinsarten": {
+    "prompt": "Zu welcher Gesteinsklasse gehoert dieses Gestein?",
+    "items": [
+      {
+        "n": "Granit",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Marmor",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Sandstein",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Basalt",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Schiefer",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Kalkstein",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Obsidian",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Quarzit",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Konglomerat",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Gneis",
+        "c": "Metamorph"
+      }
+    ]
+  },
+  "geo_tektonik": {
+    "prompt": "Auf welcher tektonischen Platte liegt dieses Land hauptsaechlich?",
+    "items": [
+      {
+        "n": "Deutschland",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Australien",
+        "c": "Australische Platte"
+      },
+      {
+        "n": "Suedafrika",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Brasilien",
+        "c": "Suedamerikanische Platte"
+      },
+      {
+        "n": "Kanada",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Indien",
+        "c": "Indische Platte"
+      },
+      {
+        "n": "Japan",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Neuseeland",
+        "c": "Pazifische Platte"
+      }
+    ]
+  },
+  "geo_mineralien": {
+    "prompt": "Wozu wird dieses Mineral oder Gestein hauptsaechlich verwendet?",
+    "items": [
+      {
+        "n": "Diamant",
+        "c": "Schmuck und Industriewerkzeuge"
+      },
+      {
+        "n": "Graphit",
+        "c": "Bleistifte und Batterien"
+      },
+      {
+        "n": "Kalzit",
+        "c": "Zement und Kalk"
+      },
+      {
+        "n": "Halit (Steinsalz)",
+        "c": "Lebensmittel und Chemie"
+      },
+      {
+        "n": "Quarz",
+        "c": "Elektronik und Glas"
+      },
+      {
+        "n": "Gips",
+        "c": "Bauwesen und Medizin"
+      },
+      {
+        "n": "Magnetit (Eisenerz)",
+        "c": "Stahlproduktion"
+      },
+      {
+        "n": "Feldspat",
+        "c": "Keramik und Glasherstellung"
+      }
+    ]
+  }
+}

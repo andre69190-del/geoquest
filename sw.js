@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-9e19ffbe';
+const CACHE_NAME = 'geoquest-bf65c4c8';
 /* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
   './GeoQuest.html',
@@ -9,6 +9,10 @@ const ASSETS = [
   './data/archaeologie_match.json',
   './data/archaeologie_pin.json',
   './data/archaeologie_ws.json',
+  './data/astro_hl.json',
+  './data/astro_match.json',
+  './data/astro_pin.json',
+  './data/astro_ws.json',
   './data/emob_hl.json',
   './data/emob_match.json',
   './data/emob_pin.json',
@@ -17,11 +21,19 @@ const ASSETS = [
   './data/gastro_match.json',
   './data/gastro_pin.json',
   './data/gastro_ws.json',
+  './data/geo_hl.json',
+  './data/geo_match.json',
+  './data/geo_pin.json',
+  './data/geo_ws.json',
   './data/kultur.json',
   './data/pflanzen_hl.json',
   './data/pflanzen_match.json',
   './data/pflanzen_pin.json',
   './data/pflanzen_ws.json',
+  './data/sport_hl.json',
+  './data/sport_match.json',
+  './data/sport_pin.json',
+  './data/sport_ws.json',
   './data/tech_hl.json',
   './data/tech_match.json',
   './data/tech_pin.json',

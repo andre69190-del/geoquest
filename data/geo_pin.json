@@ -1,0 +1,86 @@
+{
+  "geo_vulkane": [
+    {
+      "n": "Mauna Loa (Hawaii, USA)",
+      "lat": 19.48,
+      "lng": -155.59
+    },
+    {
+      "n": "Etna (Sizilien, Italien)",
+      "lat": 37.75,
+      "lng": 14.99
+    },
+    {
+      "n": "Vesuv (Neapel, Italien)",
+      "lat": 40.82,
+      "lng": 14.43
+    },
+    {
+      "n": "Krakatau (Indonesien)",
+      "lat": -6.1,
+      "lng": 105.42
+    },
+    {
+      "n": "Eyjafjallajokull (Island)",
+      "lat": 63.63,
+      "lng": -19.62
+    },
+    {
+      "n": "Popocatepetl (Mexiko)",
+      "lat": 19.02,
+      "lng": -98.63
+    },
+    {
+      "n": "Pinatubo (Philippinen)",
+      "lat": 15.14,
+      "lng": 120.35
+    },
+    {
+      "n": "Santorini-Caldera (Griechenland)",
+      "lat": 36.4,
+      "lng": 25.4
+    }
+  ],
+  "geo_geothermal": [
+    {
+      "n": "Geysir Strokkur (Island)",
+      "lat": 64.31,
+      "lng": -20.3
+    },
+    {
+      "n": "Old Faithful Geysir (Yellowstone, USA)",
+      "lat": 44.46,
+      "lng": -110.83
+    },
+    {
+      "n": "Rotorua Geothermalgebiet (Neuseeland)",
+      "lat": -38.14,
+      "lng": 176.25
+    },
+    {
+      "n": "Dallol Vulkankrater (Aethiopien)",
+      "lat": 14.24,
+      "lng": 40.3
+    },
+    {
+      "n": "Mutnovsky Vulkan (Kamtschatka)",
+      "lat": 52.45,
+      "lng": 158.2
+    },
+    {
+      "n": "Taal Vulkansee (Philippinen)",
+      "lat": 14.0,
+      "lng": 120.99
+    },
+    {
+      "n": "Myvatn-Gebiet (Island)",
+      "lat": 65.59,
+      "lng": -17.0
+    },
+    {
+      "n": "Wai-O-Tapu Thermalwunder (Neuseeland)",
+      "lat": -38.36,
+      "lng": 176.37
+    }
+  ]
+}

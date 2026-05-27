@@ -1,0 +1,116 @@
+{
+  "geo_berghoehen": {
+    "prompt": "Welcher Berg ist hoeher?",
+    "unit": "m",
+    "items": [
+      {
+        "name": "Mount Everest (Nepal/China)",
+        "val": 8849
+      },
+      {
+        "name": "K2 (Pakistan/China)",
+        "val": 8611
+      },
+      {
+        "name": "Kangchenjunga (Nepal/Indien)",
+        "val": 8586
+      },
+      {
+        "name": "Lhotse (Nepal)",
+        "val": 8516
+      },
+      {
+        "name": "Aconcagua (Argentinien)",
+        "val": 6961
+      },
+      {
+        "name": "Denali / McKinley (USA)",
+        "val": 6190
+      },
+      {
+        "name": "Kilimandscharo (Tansania)",
+        "val": 5895
+      },
+      {
+        "name": "Mont Blanc (Frankreich/Italien)",
+        "val": 4808
+      }
+    ]
+  },
+  "geo_vulkan_hoehen": {
+    "prompt": "Welcher Vulkan hat den hoeheren Gipfel?",
+    "unit": "m",
+    "items": [
+      {
+        "name": "Ojos del Salado (Chile/Argentinien)",
+        "val": 6893
+      },
+      {
+        "name": "Llullaillaco (Argentinien)",
+        "val": 6739
+      },
+      {
+        "name": "Cotopaxi (Ecuador)",
+        "val": 5897
+      },
+      {
+        "name": "Kilimandscharo (Tansania)",
+        "val": 5895
+      },
+      {
+        "name": "Popocatepetl (Mexiko)",
+        "val": 5426
+      },
+      {
+        "name": "Mount Erebus (Antarktis)",
+        "val": 3794
+      },
+      {
+        "name": "Etna (Sizilien, Italien)",
+        "val": 3357
+      },
+      {
+        "name": "Vesuv (Italien)",
+        "val": 1281
+      }
+    ]
+  },
+  "geo_erdbeben_magnitude": {
+    "prompt": "Welches Erdbeben hatte die groessere Magnitude?",
+    "unit": "Richter-Skala",
+    "items": [
+      {
+        "name": "Valdivia 1960 (Chile)",
+        "val": 95
+      },
+      {
+        "name": "Alaska 1964 (USA)",
+        "val": 92
+      },
+      {
+        "name": "Tohoku 2011 (Japan)",
+        "val": 91
+      },
+      {
+        "name": "Sumatra 2004 (Indonesien)",
+        "val": 91
+      },
+      {
+        "name": "Kamtschatka 1952 (Russland)",
+        "val": 90
+      },
+      {
+        "name": "Chile 2010",
+        "val": 88
+      },
+      {
+        "name": "Haiti 2010",
+        "val": 70
+      },
+      {
+        "name": "Kobe 1995 (Japan)",
+        "val": 69
+      }
+    ]
+  }
+}

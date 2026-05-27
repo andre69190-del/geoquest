@@ -1,0 +1,116 @@
+{
+  "astro_planet_groesse": {
+    "prompt": "Welcher Planet hat den groesseren Durchmesser?",
+    "unit": "km",
+    "items": [
+      {
+        "name": "Jupiter",
+        "val": 139820
+      },
+      {
+        "name": "Saturn",
+        "val": 116460
+      },
+      {
+        "name": "Uranus",
+        "val": 50724
+      },
+      {
+        "name": "Neptun",
+        "val": 49244
+      },
+      {
+        "name": "Erde",
+        "val": 12742
+      },
+      {
+        "name": "Venus",
+        "val": 12104
+      },
+      {
+        "name": "Mars",
+        "val": 6779
+      },
+      {
+        "name": "Merkur",
+        "val": 4879
+      }
+    ]
+  },
+  "astro_monde_anzahl": {
+    "prompt": "Welcher Planet hat mehr bekannte Monde?",
+    "unit": "Monde",
+    "items": [
+      {
+        "name": "Saturn",
+        "val": 146
+      },
+      {
+        "name": "Jupiter",
+        "val": 95
+      },
+      {
+        "name": "Uranus",
+        "val": 28
+      },
+      {
+        "name": "Neptun",
+        "val": 16
+      },
+      {
+        "name": "Mars",
+        "val": 2
+      },
+      {
+        "name": "Erde",
+        "val": 1
+      },
+      {
+        "name": "Merkur",
+        "val": 0
+      },
+      {
+        "name": "Venus",
+        "val": 0
+      }
+    ]
+  },
+  "astro_sonnenentfernung": {
+    "prompt": "Welches Objekt ist weiter von der Sonne entfernt?",
+    "unit": "Mio. km",
+    "items": [
+      {
+        "name": "Neptun",
+        "val": 4495
+      },
+      {
+        "name": "Uranus",
+        "val": 2872
+      },
+      {
+        "name": "Saturn",
+        "val": 1432
+      },
+      {
+        "name": "Jupiter",
+        "val": 778
+      },
+      {
+        "name": "Mars",
+        "val": 228
+      },
+      {
+        "name": "Erde",
+        "val": 150
+      },
+      {
+        "name": "Venus",
+        "val": 108
+      },
+      {
+        "name": "Merkur",
+        "val": 58
+      }
+    ]
+  }
+}

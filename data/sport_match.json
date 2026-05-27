@@ -1,0 +1,121 @@
+{
+  "sport_herkunft": {
+    "prompt": "In welchem Land oder Region wurde diese Sportart entwickelt?",
+    "items": [
+      {
+        "n": "Sumo",
+        "c": "Japan"
+      },
+      {
+        "n": "Taekwondo",
+        "c": "Korea"
+      },
+      {
+        "n": "Cricket",
+        "c": "England"
+      },
+      {
+        "n": "Kabaddi",
+        "c": "Indien"
+      },
+      {
+        "n": "Sepak Takraw",
+        "c": "Suedostasien"
+      },
+      {
+        "n": "Lacrosse",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Polo",
+        "c": "Persien / Zentralasien"
+      },
+      {
+        "n": "Capoeira",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Pelota Vasca",
+        "c": "Spanien"
+      },
+      {
+        "n": "Judo",
+        "c": "Japan"
+      }
+    ]
+  },
+  "sport_teamgroesse": {
+    "prompt": "Wie viele Spieler umfasst eine Mannschaft bei diesem Feldsport?",
+    "items": [
+      {
+        "n": "Fussball",
+        "c": "11 Spieler"
+      },
+      {
+        "n": "American Football",
+        "c": "11 Spieler"
+      },
+      {
+        "n": "Basketball",
+        "c": "5 Spieler"
+      },
+      {
+        "n": "Volleyball",
+        "c": "6 Spieler"
+      },
+      {
+        "n": "Rugby Union",
+        "c": "15 Spieler"
+      },
+      {
+        "n": "Baseball",
+        "c": "9 Spieler"
+      },
+      {
+        "n": "Handball",
+        "c": "7 Spieler"
+      },
+      {
+        "n": "Eishockey",
+        "c": "6 Spieler"
+      }
+    ]
+  },
+  "sport_olympia_standort": {
+    "prompt": "In welcher Stadt fanden diese Olympischen Sommerspiele statt?",
+    "items": [
+      {
+        "n": "Erste Neuzeit-Olympiade 1896",
+        "c": "Athen"
+      },
+      {
+        "n": "Olympiade 1900",
+        "c": "Paris"
+      },
+      {
+        "n": "Olympiade 1936",
+        "c": "Berlin"
+      },
+      {
+        "n": "Olympiade 1964",
+        "c": "Tokio"
+      },
+      {
+        "n": "Olympiade 1980",
+        "c": "Moskau"
+      },
+      {
+        "n": "Olympiade 1992",
+        "c": "Barcelona"
+      },
+      {
+        "n": "Olympiade 2008",
+        "c": "Peking"
+      },
+      {
+        "n": "Olympiade 2016",
+        "c": "Rio de Janeiro"
+      }
+    ]
+  }
+}
