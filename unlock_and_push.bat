@@ -8,4 +8,8 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "CONTENT: Phase 252. Astronomie Expansion — 17 neue Modi (4 Pin, 6 HL, 6 Match, 1 WS). MODES: 590->607. Neue Kategorien: Kontrollzentren, Teleskope, Meteoritenkrater, Dark-Sky, Raketen-Nutzlast, Missionsdauer, Gravitation, Temperaturen, Entdeckungsjahre, Exoplaneten, Sonden-Ziele, Himmelskörper-Typen, Sternbilder, Pioniere, Antriebe, Galaxientypen, WS-Schwarzes
+git commit -m "CONTENT: Phase 253+254. Geo+Sport Expansion — 70 neue Modi (12+8 Pin, 10+8 HL, 12+8 Match, 6+6 WS). MODES: 607->677. Geo: Felsformationen, Hoehlen, Canyons, Geysire, Fossilien, Ozeangraeben, Gletscher, Wuesten, Minen, Rifts, Nationalparks, Steilkuesten, Mohshaerte, VEI, Bohrtiefe, Tsunami u.v.m. Sport: Fussballstadien, Motorsport, Wintersport, Tennis, Skigebiete, Golf, Surfen, Klettern, Transferrekorde, Olympia-Gold, Stadionbaujahr u.v.m. ARCHITECTURE.md aktualisiert. verify: 89/89 | validate: 58 warnings."
+git push origin main
+echo.
+echo Done! Vercel will deploy in ~60 seconds.
+pause

@@ -117,5 +117,449 @@
         "c": "Keramik und Glasherstellung"
       }
     ]
+  },
+  "geo_vulkan_land": {
+    "prompt": "In welchem Land liegt dieser Vulkan?",
+    "items": [
+      {
+        "n": "Ätna",
+        "c": "Italien"
+      },
+      {
+        "n": "Kilauea",
+        "c": "USA (Hawaii)"
+      },
+      {
+        "n": "Fuji",
+        "c": "Japan"
+      },
+      {
+        "n": "Cotopaxi",
+        "c": "Ecuador"
+      },
+      {
+        "n": "Popocatépetl",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Nyiragongo",
+        "c": "DR Kongo"
+      },
+      {
+        "n": "Erebus",
+        "c": "Antarktis"
+      },
+      {
+        "n": "Merapi",
+        "c": "Indonesien"
+      }
+    ]
+  },
+  "geo_berg_gebirge": {
+    "prompt": "Zu welchem Gebirge gehört dieser Berg?",
+    "items": [
+      {
+        "n": "Matterhorn",
+        "c": "Alpen"
+      },
+      {
+        "n": "Mount Everest",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Aconcagua",
+        "c": "Anden"
+      },
+      {
+        "n": "Denali",
+        "c": "Alaska Range"
+      },
+      {
+        "n": "Elbrus",
+        "c": "Kaukasus"
+      },
+      {
+        "n": "Kilimandscharo",
+        "c": "Ostafrikanisches Massiv"
+      },
+      {
+        "n": "Puncak Jaya",
+        "c": "Maoke-Gebirge (Neuguinea)"
+      },
+      {
+        "n": "Vinson Massif",
+        "c": "Ellsworth Mountains (Antarktis)"
+      }
+    ]
+  },
+  "geo_wunder_entstehung": {
+    "prompt": "Durch welchen Prozess entstand dieses Naturwunder hauptsächlich?",
+    "items": [
+      {
+        "n": "Grand Canyon",
+        "c": "Flusserosion"
+      },
+      {
+        "n": "Giant's Causeway (Nordirland)",
+        "c": "Vulkanismus (Basaltlava)"
+      },
+      {
+        "n": "Marianengraben",
+        "c": "Plattentektonik (Subduktion)"
+      },
+      {
+        "n": "Moränenlandschaft (z.B. Norddeutsche Tiefebene)",
+        "c": "Glaziale Erosion"
+      },
+      {
+        "n": "Saharadünen",
+        "c": "Äolische Sedimentation (Wind)"
+      },
+      {
+        "n": "Tropfsteinhöhle (z.B. Eisriesenwelt)",
+        "c": "Karst (chemische Auflösung)"
+      },
+      {
+        "n": "Fjord (z.B. Geirangerfjord)",
+        "c": "Glaziale Erosion"
+      },
+      {
+        "n": "Atoll (z.B. Bikini-Atoll)",
+        "c": "Korallenriff auf sinkender Vulkaninsel"
+      }
+    ]
+  },
+  "geo_fossil_zeitalter": {
+    "prompt": "In welchem Erdzeitalter lebte dieses Wesen?",
+    "items": [
+      {
+        "n": "Trilobit",
+        "c": "Paläozoikum"
+      },
+      {
+        "n": "Archaeopteryx",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Mammut",
+        "c": "Känozoikum"
+      },
+      {
+        "n": "Stromatolithen (Cyanobakterien)",
+        "c": "Präkambrium"
+      },
+      {
+        "n": "Tyrannosaurus rex",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Ammonit",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Säbelzahntiger (Smilodon)",
+        "c": "Känozoikum"
+      },
+      {
+        "n": "Seelilienfossil (Kambrium)",
+        "c": "Paläozoikum"
+      }
+    ]
+  },
+  "geo_erdbeben_jahr": {
+    "prompt": "In welchem Jahr ereignete sich dieses historische Erdbeben?",
+    "items": [
+      {
+        "n": "Lissabon-Erdbeben (Portugal)",
+        "c": "1755"
+      },
+      {
+        "n": "San-Francisco-Erdbeben (USA)",
+        "c": "1906"
+      },
+      {
+        "n": "Messina-Erdbeben (Sizilien)",
+        "c": "1908"
+      },
+      {
+        "n": "Valdivia-Erdbeben (Chile)",
+        "c": "1960"
+      },
+      {
+        "n": "Kobe-Erdbeben (Japan)",
+        "c": "1995"
+      },
+      {
+        "n": "Haiti-Erdbeben",
+        "c": "2010"
+      },
+      {
+        "n": "Tohoku-Erdbeben (Japan)",
+        "c": "2011"
+      },
+      {
+        "n": "Türkei-Syrien-Erdbeben",
+        "c": "2023"
+      }
+    ]
+  },
+  "geo_gestein_nutzung": {
+    "prompt": "Wofür wird dieses Gestein / Mineral hauptsächlich genutzt?",
+    "items": [
+      {
+        "n": "Marmor",
+        "c": "Bildhauerei & Architektur"
+      },
+      {
+        "n": "Granit",
+        "c": "Bauplatten & Küchen"
+      },
+      {
+        "n": "Schiefer",
+        "c": "Dachbedeckung"
+      },
+      {
+        "n": "Kalkstein",
+        "c": "Zementherstellung"
+      },
+      {
+        "n": "Basalt",
+        "c": "Straßenbau & Gleisbett"
+      },
+      {
+        "n": "Kohle",
+        "c": "Energiegewinnung"
+      },
+      {
+        "n": "Obsidian",
+        "c": "Historische Werkzeuge (Messer/Spitzen)"
+      },
+      {
+        "n": "Kreide",
+        "c": "Tafelkreide & Malerfarben"
+      }
+    ]
+  },
+  "geo_landschaft_ursprung": {
+    "prompt": "Welcher Prozess hat diese Landschaftsform erschaffen?",
+    "items": [
+      {
+        "n": "Moräne",
+        "c": "Gletscher-Transport"
+      },
+      {
+        "n": "Delta",
+        "c": "Flusssedimentation"
+      },
+      {
+        "n": "Fjord",
+        "c": "Glaziale Erosion"
+      },
+      {
+        "n": "Mäander",
+        "c": "Flusserosion"
+      },
+      {
+        "n": "Doline",
+        "c": "Karstauflösung"
+      },
+      {
+        "n": "Barchan-Düne",
+        "c": "Windablagerung (Äolisch)"
+      },
+      {
+        "n": "Heiße Quelle / Fumarole",
+        "c": "Geothermalaufstieg"
+      },
+      {
+        "n": "Atollring",
+        "c": "Korallenriff & Vulkansenkung"
+      }
+    ]
+  },
+  "geo_mineral_farbe": {
+    "prompt": "Welche charakteristische Farbe hat dieses Mineral?",
+    "items": [
+      {
+        "n": "Malachit",
+        "c": "Grün"
+      },
+      {
+        "n": "Lapislazuli",
+        "c": "Blau"
+      },
+      {
+        "n": "Hämatit",
+        "c": "Rot / Rotbraun"
+      },
+      {
+        "n": "Schwefel",
+        "c": "Gelb"
+      },
+      {
+        "n": "Magnetit",
+        "c": "Schwarz"
+      },
+      {
+        "n": "Rhodonit",
+        "c": "Rosa"
+      },
+      {
+        "n": "Amethyst",
+        "c": "Violett"
+      },
+      {
+        "n": "Türkis",
+        "c": "Türkis / Blaugrün"
+      }
+    ]
+  },
+  "geo_kontinent_platte": {
+    "prompt": "Auf welcher tektonischen Hauptplatte liegt dieser Kontinent / diese Region?",
+    "items": [
+      {
+        "n": "Westeuropa",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Nordamerika",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Südamerika",
+        "c": "Südamerikanische Platte"
+      },
+      {
+        "n": "Afrika",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Australien",
+        "c": "Australische Platte"
+      },
+      {
+        "n": "Antarktis",
+        "c": "Antarktische Platte"
+      },
+      {
+        "n": "Indien (Subkontinent)",
+        "c": "Indisch-Australische Platte"
+      },
+      {
+        "n": "Arabische Halbinsel",
+        "c": "Arabische Platte"
+      }
+    ]
+  },
+  "geo_hoehlen_land": {
+    "prompt": "In welchem Land liegt dieses Höhlensystem?",
+    "items": [
+      {
+        "n": "Mammoth Cave System",
+        "c": "USA"
+      },
+      {
+        "n": "Son Doong",
+        "c": "Vietnam"
+      },
+      {
+        "n": "Sistema Ox Bel Ha",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Eisriesenwelt",
+        "c": "Österreich"
+      },
+      {
+        "n": "Carlsbad Caverns",
+        "c": "USA"
+      },
+      {
+        "n": "Jenolan Caves",
+        "c": "Australien"
+      },
+      {
+        "n": "Škocjan-Höhlen",
+        "c": "Slowenien"
+      },
+      {
+        "n": "Reed Flute Cave",
+        "c": "China"
+      }
+    ]
+  },
+  "geo_mineral_kristall": {
+    "prompt": "Welchem Kristallsystem gehört dieses Mineral an?",
+    "items": [
+      {
+        "n": "Halit (Steinsalz)",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Diamant",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Quarz",
+        "c": "Trigonal / Hexagonal"
+      },
+      {
+        "n": "Turmalin",
+        "c": "Trigonal / Hexagonal"
+      },
+      {
+        "n": "Topas",
+        "c": "Orthorhombisch"
+      },
+      {
+        "n": "Glimmer (Muskovit)",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Gips",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Feldspat (Albit)",
+        "c": "Triklin"
+      }
+    ]
+  },
+  "geo_gebirge_entstehung": {
+    "prompt": "Durch welchen tektonischen Prozess entstand dieses Gebirge?",
+    "items": [
+      {
+        "n": "Alpen",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Himalaya",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Anden",
+        "c": "Ozean-Kontinent-Subduktion"
+      },
+      {
+        "n": "Mittelatlantischer Rücken / Island",
+        "c": "Mittelozeanischer Rücken (Rifting)"
+      },
+      {
+        "n": "Appalachen (USA)",
+        "c": "Alt-Kollision (Variszisch)"
+      },
+      {
+        "n": "Ural (Russland)",
+        "c": "Alt-Kollision (Variszisch)"
+      },
+      {
+        "n": "Ostafrikanischer Graben",
+        "c": "Rift-Tektonik (Dehnung)"
+      },
+      {
+        "n": "Hawaiianische Inseln",
+        "c": "Hotspot-Vulkanismus"
+      }
+    ]
   }
 }

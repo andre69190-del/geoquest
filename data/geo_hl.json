@@ -112,5 +112,393 @@
         "val": 69
       }
     ]
+  },
+  "geo_mohshaerte": {
+    "prompt": "Welches Mineral ist härter (Mohs-Skala)?",
+    "unit": "Mohs-Härtegrad",
+    "items": [
+      {
+        "name": "Diamant",
+        "val": 10
+      },
+      {
+        "name": "Korund (Rubin/Saphir)",
+        "val": 9
+      },
+      {
+        "name": "Topas",
+        "val": 8
+      },
+      {
+        "name": "Quarz",
+        "val": 7
+      },
+      {
+        "name": "Feldspat (Orthoklas)",
+        "val": 6
+      },
+      {
+        "name": "Apatit",
+        "val": 5
+      },
+      {
+        "name": "Fluorit",
+        "val": 4
+      },
+      {
+        "name": "Kalzit",
+        "val": 3
+      },
+      {
+        "name": "Gips",
+        "val": 2
+      },
+      {
+        "name": "Talk",
+        "val": 1
+      }
+    ]
+  },
+  "geo_vei_ausbruch": {
+    "prompt": "Welcher Vulkanausbruch war explosiver (VEI)?",
+    "unit": "Vulkanexplosivitätsindex (VEI)",
+    "items": [
+      {
+        "name": "Tambora 1815 (Indonesien)",
+        "val": 7
+      },
+      {
+        "name": "Krakatau 1883 (Indonesien)",
+        "val": 6
+      },
+      {
+        "name": "Pinatubo 1991 (Philippinen)",
+        "val": 6
+      },
+      {
+        "name": "Katmai 1912 (Alaska, USA)",
+        "val": 6
+      },
+      {
+        "name": "Mt. St. Helens 1980 (USA)",
+        "val": 5
+      },
+      {
+        "name": "Vesuv 79 n. Chr. (Italien)",
+        "val": 5
+      },
+      {
+        "name": "Eyjafjallajökull 2010 (Island)",
+        "val": 4
+      },
+      {
+        "name": "Kilauea 2018 (Hawaii, USA)",
+        "val": 1
+      }
+    ]
+  },
+  "geo_hoehlen_laenge": {
+    "prompt": "Welches Höhlensystem ist länger?",
+    "unit": "km (kartierte Länge)",
+    "items": [
+      {
+        "name": "Mammoth Cave System (USA)",
+        "val": 685
+      },
+      {
+        "name": "Sistema Ox Bel Ha (Mexiko)",
+        "val": 368
+      },
+      {
+        "name": "Jewel Cave (South Dakota, USA)",
+        "val": 338
+      },
+      {
+        "name": "Wind Cave (South Dakota, USA)",
+        "val": 222
+      },
+      {
+        "name": "Hölloch (Schweiz)",
+        "val": 215
+      },
+      {
+        "name": "Lechuguilla Cave (USA)",
+        "val": 240
+      },
+      {
+        "name": "Hirlatzhöhle (Österreich)",
+        "val": 100
+      },
+      {
+        "name": "Eisriesenwelt (Österreich)",
+        "val": 42
+      }
+    ]
+  },
+  "geo_gesteins_alter": {
+    "prompt": "Welches Gestein / welche Gesteinsformation ist älter?",
+    "unit": "Millionen Jahre",
+    "items": [
+      {
+        "name": "Jack Hills Zirkon (Australien)",
+        "val": 4400
+      },
+      {
+        "name": "Acasta Gneiss (Kanada)",
+        "val": 4030
+      },
+      {
+        "name": "Isua-Grünsteingürtel (Grönland)",
+        "val": 3700
+      },
+      {
+        "name": "Pilbara-Kraton (Australien)",
+        "val": 3500
+      },
+      {
+        "name": "Barberton Greenstone Belt (Südafrika)",
+        "val": 3400
+      },
+      {
+        "name": "Fennoskandischer Schild (Finnland)",
+        "val": 3100
+      },
+      {
+        "name": "Schwarzwald-Gneis (Deutschland)",
+        "val": 380
+      },
+      {
+        "name": "Jurakalk (Süddeutschland)",
+        "val": 150
+      }
+    ]
+  },
+  "geo_schluchten_tiefe": {
+    "prompt": "Welche Schlucht ist tiefer?",
+    "unit": "m (Tiefe)",
+    "items": [
+      {
+        "name": "Kali Gandaki Gorge (Nepal)",
+        "val": 5571
+      },
+      {
+        "name": "Cotahuasi Canyon (Peru)",
+        "val": 3535
+      },
+      {
+        "name": "Colca Canyon (Peru)",
+        "val": 3270
+      },
+      {
+        "name": "Grand Canyon (USA)",
+        "val": 1857
+      },
+      {
+        "name": "Blyde River Canyon (Südafrika)",
+        "val": 800
+      },
+      {
+        "name": "Verdon-Schlucht (Frankreich)",
+        "val": 700
+      },
+      {
+        "name": "Fish River Canyon (Namibia)",
+        "val": 550
+      },
+      {
+        "name": "Rheindurchbruch (Deutschland)",
+        "val": 130
+      }
+    ]
+  },
+  "geo_kontinentaldrift": {
+    "prompt": "Welche Platte driftet schneller?",
+    "unit": "mm/Jahr (Driftgeschwindigkeit)",
+    "items": [
+      {
+        "name": "Pazifische Platte",
+        "val": 75
+      },
+      {
+        "name": "Australisch-Indische Platte",
+        "val": 70
+      },
+      {
+        "name": "Nazca-Platte",
+        "val": 70
+      },
+      {
+        "name": "Juan-de-Fuca-Platte",
+        "val": 40
+      },
+      {
+        "name": "Arabische Platte",
+        "val": 25
+      },
+      {
+        "name": "Nordamerikanische Platte",
+        "val": 23
+      },
+      {
+        "name": "Eurasische Platte",
+        "val": 21
+      },
+      {
+        "name": "Antarktische Platte",
+        "val": 15
+      }
+    ]
+  },
+  "geo_schmelztemperatur": {
+    "prompt": "Welches Material hat einen höheren Schmelzpunkt?",
+    "unit": "°C (Schmelzpunkt)",
+    "items": [
+      {
+        "name": "Olivin (Mineral)",
+        "val": 1890
+      },
+      {
+        "name": "Reines SiO₂ (Quarz)",
+        "val": 1650
+      },
+      {
+        "name": "Eisen (Fe)",
+        "val": 1538
+      },
+      {
+        "name": "Basalt (Gestein)",
+        "val": 1150
+      },
+      {
+        "name": "Kalkstein (CaCO₃, Zersetzung)",
+        "val": 840
+      },
+      {
+        "name": "Granit (beginnt zu schmelzen)",
+        "val": 700
+      },
+      {
+        "name": "Schwefel",
+        "val": 119
+      },
+      {
+        "name": "Eis",
+        "val": 0
+      }
+    ]
+  },
+  "geo_gletscher_volumen": {
+    "prompt": "Welches Eisvorkommen hat größeres Volumen?",
+    "unit": "km³ (Eisvolumen)",
+    "items": [
+      {
+        "name": "Antarktisches Eisschild",
+        "val": 26500000
+      },
+      {
+        "name": "Grönländisches Eisschild",
+        "val": 2850000
+      },
+      {
+        "name": "Kanadische Arktis (gesamt)",
+        "val": 150000
+      },
+      {
+        "name": "Alaska-Gletscher (gesamt)",
+        "val": 75000
+      },
+      {
+        "name": "Patagonische Eisfelder",
+        "val": 13000
+      },
+      {
+        "name": "Svalbard (gesamt)",
+        "val": 6700
+      },
+      {
+        "name": "Alpengletscher (gesamt)",
+        "val": 100
+      },
+      {
+        "name": "Aletschgletscher",
+        "val": 15
+      }
+    ]
+  },
+  "geo_tsunami_hoehe": {
+    "prompt": "Welcher Tsunami war höher?",
+    "unit": "m (maximale Wellenhöhe)",
+    "items": [
+      {
+        "name": "Lituya Bay 1958 (Alaska, Mega-Tsunami)",
+        "val": 524
+      },
+      {
+        "name": "Alaska 1964 (Good Friday)",
+        "val": 67
+      },
+      {
+        "name": "Tohoku 2011 (Japan)",
+        "val": 40
+      },
+      {
+        "name": "Chile 1960 (Valdivia)",
+        "val": 25
+      },
+      {
+        "name": "Indischer Ozean 2004",
+        "val": 30
+      },
+      {
+        "name": "Papua-Neuguinea 1998",
+        "val": 15
+      },
+      {
+        "name": "Anak Krakatau 2018",
+        "val": 13
+      },
+      {
+        "name": "Sulawesi 2018 (Palu)",
+        "val": 10
+      }
+    ]
+  },
+  "geo_bohrtiefe": {
+    "prompt": "Welche Bohrung / Mine reicht tiefer?",
+    "unit": "m (Tiefe unter Erdoberfläche)",
+    "items": [
+      {
+        "name": "Kola Superdeep Borehole (Russland)",
+        "val": 12262
+      },
+      {
+        "name": "KTB Kontinentale Tiefbohrung (Deutschland)",
+        "val": 9101
+      },
+      {
+        "name": "Bertha-Rogers-Gasbohrung (Oklahoma, USA)",
+        "val": 9583
+      },
+      {
+        "name": "Mponeng Gold Mine (Südafrika)",
+        "val": 4000
+      },
+      {
+        "name": "TauTona Mine (Südafrika)",
+        "val": 3900
+      },
+      {
+        "name": "Gotthard-Basistunnel (tiefster Punkt)",
+        "val": 2300
+      },
+      {
+        "name": "Wieliczka Salzmine (Polen)",
+        "val": 327
+      },
+      {
+        "name": "Bergwerk Prosper-Haniel (Ruhrgebiet, DE)",
+        "val": 1250
+      }
+    ]
   }
 }

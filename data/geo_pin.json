@@ -88,5 +88,545 @@
         "lng": 176.37
       }
     ]
+  },
+  "geo_felsformationen": {
+    "prompt": "Wo liegt diese berühmte Felsformation?",
+    "items": [
+      {
+        "n": "Uluru / Ayers Rock (Australien)",
+        "lat": -25.34,
+        "lng": 131.04
+      },
+      {
+        "n": "Giant's Causeway (Nordirland, UK)",
+        "lat": 55.24,
+        "lng": -6.51
+      },
+      {
+        "n": "Preikestolen (Norwegen)",
+        "lat": 58.99,
+        "lng": 6.19
+      },
+      {
+        "n": "Wave Rock (Westaustralien)",
+        "lat": -32.44,
+        "lng": 118.9
+      },
+      {
+        "n": "Zhangjiajie Sandsteinsäulen (China)",
+        "lat": 29.33,
+        "lng": 110.44
+      },
+      {
+        "n": "Moeraki Boulders (Neuseeland)",
+        "lat": -45.35,
+        "lng": 170.84
+      },
+      {
+        "n": "Bungle Bungle Range (Australien)",
+        "lat": -17.51,
+        "lng": 128.44
+      },
+      {
+        "n": "Kappadokien Feenkamine (Türkei)",
+        "lat": 38.63,
+        "lng": 34.83
+      }
+    ]
+  },
+  "geo_hoehlensysteme": {
+    "prompt": "Wo liegt dieses Höhlensystem?",
+    "items": [
+      {
+        "n": "Mammoth Cave System (Kentucky, USA)",
+        "lat": 37.19,
+        "lng": -86.1
+      },
+      {
+        "n": "Son Doong (Phong Nha, Vietnam)",
+        "lat": 17.55,
+        "lng": 106.29
+      },
+      {
+        "n": "Eisriesenwelt (Werfen, Österreich)",
+        "lat": 47.5,
+        "lng": 13.19
+      },
+      {
+        "n": "Sistema Ox Bel Ha (Yucatán, Mexiko)",
+        "lat": 20.02,
+        "lng": -87.63
+      },
+      {
+        "n": "Reed Flute Cave (Guilin, China)",
+        "lat": 25.28,
+        "lng": 110.28
+      },
+      {
+        "n": "Jenolan Caves (Neusüdwales, Australien)",
+        "lat": -33.82,
+        "lng": 150.02
+      },
+      {
+        "n": "Škocjan-Höhlen (Slowenien)",
+        "lat": 45.66,
+        "lng": 13.99
+      },
+      {
+        "n": "Carlsbad Caverns (New Mexico, USA)",
+        "lat": 32.18,
+        "lng": -104.44
+      }
+    ]
+  },
+  "geo_canyons": {
+    "prompt": "Wo liegt diese Schlucht / dieser Canyon?",
+    "items": [
+      {
+        "n": "Grand Canyon (Arizona, USA)",
+        "lat": 36.05,
+        "lng": -112.14
+      },
+      {
+        "n": "Colca Canyon (Peru)",
+        "lat": -15.53,
+        "lng": -71.98
+      },
+      {
+        "n": "Tara Canyon (Montenegro)",
+        "lat": 43.15,
+        "lng": 19.25
+      },
+      {
+        "n": "Cotahuasi Canyon (Peru)",
+        "lat": -15.22,
+        "lng": -72.88
+      },
+      {
+        "n": "Verdon-Schlucht (Frankreich)",
+        "lat": 43.72,
+        "lng": 6.32
+      },
+      {
+        "n": "Fish River Canyon (Namibia)",
+        "lat": -27.72,
+        "lng": 17.58
+      },
+      {
+        "n": "Antelope Canyon (Arizona, USA)",
+        "lat": 36.86,
+        "lng": -111.37
+      },
+      {
+        "n": "Bryce Canyon (Utah, USA)",
+        "lat": 37.57,
+        "lng": -112.18
+      }
+    ]
+  },
+  "geo_geysire": {
+    "prompt": "Wo liegt dieser Geysir?",
+    "items": [
+      {
+        "n": "El Tatio (Atacama, Chile)",
+        "lat": -22.33,
+        "lng": -68.02
+      },
+      {
+        "n": "Fly Geyser (Black Rock Desert, Nevada, USA)",
+        "lat": 40.86,
+        "lng": -119.33
+      },
+      {
+        "n": "Steamboat Geyser (Yellowstone, USA)",
+        "lat": 44.66,
+        "lng": -110.87
+      },
+      {
+        "n": "Pohutu Geyser (Whakarewarewa, Neuseeland)",
+        "lat": -38.12,
+        "lng": 176.27
+      },
+      {
+        "n": "Geysir (Haukadalur, Island)",
+        "lat": 64.31,
+        "lng": -20.29
+      },
+      {
+        "n": "Castle Geyser (Yellowstone, USA)",
+        "lat": 44.46,
+        "lng": -110.84
+      },
+      {
+        "n": "Nagqu Geothermie-Geysire (Tibet, China)",
+        "lat": 31.48,
+        "lng": 92.06
+      },
+      {
+        "n": "Beowawe Geysers (Nevada, USA)",
+        "lat": 40.58,
+        "lng": -116.57
+      }
+    ]
+  },
+  "geo_fossilien_fundstaetten": {
+    "prompt": "Wo liegt diese bedeutende Fossilien-Fundstätte?",
+    "items": [
+      {
+        "n": "Jurassic Coast (Dorset, England)",
+        "lat": 50.73,
+        "lng": -2.73
+      },
+      {
+        "n": "Grube Messel (Hessen, Deutschland)",
+        "lat": 49.92,
+        "lng": 8.74
+      },
+      {
+        "n": "Burgess Shale (British Columbia, Kanada)",
+        "lat": 51.44,
+        "lng": -116.49
+      },
+      {
+        "n": "Solnhofener Plattenkalk (Bayern, Deutschland)",
+        "lat": 48.9,
+        "lng": 11.05
+      },
+      {
+        "n": "Hell Creek Formation (Montana, USA)",
+        "lat": 47.5,
+        "lng": -104.1
+      },
+      {
+        "n": "Ediacara Hills (Südaustralien)",
+        "lat": -31.06,
+        "lng": 138.41
+      },
+      {
+        "n": "Bernissart (Iguanodon-Fundort, Belgien)",
+        "lat": 50.47,
+        "lng": 3.66
+      },
+      {
+        "n": "Liang Bua (Homo floresiensis, Indonesien)",
+        "lat": -8.53,
+        "lng": 120.45
+      }
+    ]
+  },
+  "geo_ozeangraeben": {
+    "prompt": "Wo liegt dieser Ozeangraben / tiefste Punkt?",
+    "items": [
+      {
+        "n": "Marianengraben (Pazifik)",
+        "lat": 11.37,
+        "lng": 142.6
+      },
+      {
+        "n": "Tongagraben (Pazifik)",
+        "lat": -23.23,
+        "lng": -175.38
+      },
+      {
+        "n": "Philippinengraben (Pazifik)",
+        "lat": 10.0,
+        "lng": 126.6
+      },
+      {
+        "n": "Puerto-Rico-Graben (Atlantik)",
+        "lat": 19.72,
+        "lng": -66.25
+      },
+      {
+        "n": "Kurilen-Kamtschatka-Graben (Pazifik)",
+        "lat": 44.5,
+        "lng": 150.0
+      },
+      {
+        "n": "Java-Graben / Sundagraben (Ind. Ozean)",
+        "lat": -10.0,
+        "lng": 108.0
+      },
+      {
+        "n": "Izu-Bonin-Graben (Pazifik)",
+        "lat": 30.0,
+        "lng": 143.0
+      },
+      {
+        "n": "Südandinen Graben (Pazifik)",
+        "lat": -43.0,
+        "lng": -72.0
+      }
+    ]
+  },
+  "geo_gletscher": {
+    "prompt": "Wo liegt dieser Gletscher?",
+    "items": [
+      {
+        "n": "Aletschgletscher (Schweiz)",
+        "lat": 46.47,
+        "lng": 8.05
+      },
+      {
+        "n": "Perito Moreno (Patagonien, Argentinien)",
+        "lat": -50.5,
+        "lng": -73.03
+      },
+      {
+        "n": "Franz-Josef-Gletscher (Neuseeland)",
+        "lat": -43.48,
+        "lng": 170.18
+      },
+      {
+        "n": "Athabasca-Gletscher (Kanada)",
+        "lat": 52.23,
+        "lng": -117.25
+      },
+      {
+        "n": "Jostedalsbreen (Norwegen)",
+        "lat": 61.66,
+        "lng": 6.95
+      },
+      {
+        "n": "Svalbard Kongsvegen-Gletscher (Norwegen)",
+        "lat": 78.8,
+        "lng": 12.98
+      },
+      {
+        "n": "Gornergletscher (Schweiz)",
+        "lat": 45.97,
+        "lng": 7.79
+      },
+      {
+        "n": "Biafo-Gletscher (Pakistan)",
+        "lat": 35.8,
+        "lng": 75.75
+      }
+    ]
+  },
+  "geo_wuesten": {
+    "prompt": "Wo liegt diese Wüste oder Wüstenlandschaft?",
+    "items": [
+      {
+        "n": "Namib-Wüste (Namibia)",
+        "lat": -22.0,
+        "lng": 15.0
+      },
+      {
+        "n": "Atacama-Wüste (Chile)",
+        "lat": -24.5,
+        "lng": -69.25
+      },
+      {
+        "n": "Sossusvlei Dünen (Namibia)",
+        "lat": -24.73,
+        "lng": 15.35
+      },
+      {
+        "n": "Wadi Rum (Jordanien)",
+        "lat": 29.59,
+        "lng": 35.42
+      },
+      {
+        "n": "Weiße Wüste (Sahara, Ägypten)",
+        "lat": 28.3,
+        "lng": 27.24
+      },
+      {
+        "n": "Rub' al Khali (Saudi-Arabien)",
+        "lat": 20.0,
+        "lng": 51.0
+      },
+      {
+        "n": "Taklamakan-Wüste (Xinjiang, China)",
+        "lat": 38.9,
+        "lng": 83.65
+      },
+      {
+        "n": "Karakum-Wüste (Turkmenistan)",
+        "lat": 38.74,
+        "lng": 60.0
+      }
+    ]
+  },
+  "geo_minen_bohrungen": {
+    "prompt": "Wo liegt diese Mine oder dieses Bohrprojekt?",
+    "items": [
+      {
+        "n": "Kola Superdeep Borehole (Russland)",
+        "lat": 69.4,
+        "lng": 30.61
+      },
+      {
+        "n": "Bingham Canyon Mine (Utah, USA)",
+        "lat": 40.52,
+        "lng": -112.14
+      },
+      {
+        "n": "Chuquicamata Kupfermine (Chile)",
+        "lat": -22.31,
+        "lng": -68.92
+      },
+      {
+        "n": "Mir-Diamantmine (Jakutien, Russland)",
+        "lat": 62.53,
+        "lng": 113.99
+      },
+      {
+        "n": "South Deep Gold Mine (Südafrika)",
+        "lat": -26.71,
+        "lng": 27.61
+      },
+      {
+        "n": "Diavik Diamantmine (Northwest Territories, Kanada)",
+        "lat": 64.52,
+        "lng": -110.25
+      },
+      {
+        "n": "Escondida Kupfermine (Chile)",
+        "lat": -24.27,
+        "lng": -69.07
+      },
+      {
+        "n": "Bayan Obo (Seltene Erden, China)",
+        "lat": 41.77,
+        "lng": 109.95
+      }
+    ]
+  },
+  "geo_rifts": {
+    "prompt": "Wo liegt dieser tektonische Graben / diese Spalte?",
+    "items": [
+      {
+        "n": "Ostafrikanischer Grabenbruch (Kenia)",
+        "lat": 1.0,
+        "lng": 37.0
+      },
+      {
+        "n": "Silfra-Spalte (Island)",
+        "lat": 64.26,
+        "lng": -21.12
+      },
+      {
+        "n": "Rotes-Meer-Rift (Eritrea/Jemen)",
+        "lat": 15.0,
+        "lng": 43.0
+      },
+      {
+        "n": "Totes-Meer-Transform (Jordanien)",
+        "lat": 31.6,
+        "lng": 35.5
+      },
+      {
+        "n": "Baikal-Rift (Sibirien, Russland)",
+        "lat": 53.5,
+        "lng": 108.0
+      },
+      {
+        "n": "Rio Grande Rift (New Mexico, USA)",
+        "lat": 36.0,
+        "lng": -106.5
+      },
+      {
+        "n": "Limagne-Graben (Auvergne, Frankreich)",
+        "lat": 45.75,
+        "lng": 3.13
+      },
+      {
+        "n": "Basin-and-Range Province (Nevada, USA)",
+        "lat": 39.0,
+        "lng": -117.0
+      }
+    ]
+  },
+  "geo_nationalparks_geologie": {
+    "prompt": "Wo liegt dieser Nationalpark mit besonderer Geologie?",
+    "items": [
+      {
+        "n": "Yellowstone National Park (USA)",
+        "lat": 44.43,
+        "lng": -110.59
+      },
+      {
+        "n": "Pamukkale Travertine (Türkei)",
+        "lat": 37.92,
+        "lng": 29.12
+      },
+      {
+        "n": "Tsingy de Bemaraha (Madagaskar)",
+        "lat": -18.94,
+        "lng": 44.83
+      },
+      {
+        "n": "Chocolate Hills (Bohol, Philippinen)",
+        "lat": 9.8,
+        "lng": 124.15
+      },
+      {
+        "n": "Waitomo Caves (Neuseeland)",
+        "lat": -38.26,
+        "lng": 175.1
+      },
+      {
+        "n": "Plitvice Seen (Kroatien)",
+        "lat": 44.88,
+        "lng": 15.62
+      },
+      {
+        "n": "White Sands National Monument (USA)",
+        "lat": 32.78,
+        "lng": -106.17
+      },
+      {
+        "n": "Danakil-Senke (Äthiopien)",
+        "lat": 14.23,
+        "lng": 40.29
+      }
+    ]
+  },
+  "geo_steilkuesten": {
+    "prompt": "Wo befinden sich diese Steilküsten / Klippen?",
+    "items": [
+      {
+        "n": "Cliffs of Moher (Irland)",
+        "lat": 52.97,
+        "lng": -9.43
+      },
+      {
+        "n": "White Cliffs of Dover (England)",
+        "lat": 51.13,
+        "lng": 1.38
+      },
+      {
+        "n": "Bunda Cliffs (Nullarbor, Australien)",
+        "lat": -31.67,
+        "lng": 129.58
+      },
+      {
+        "n": "Étretat Kreidefelsen (Normandie, Frankreich)",
+        "lat": 49.71,
+        "lng": 0.2
+      },
+      {
+        "n": "Cape Hauy (Tasmanien, Australien)",
+        "lat": -43.03,
+        "lng": 147.91
+      },
+      {
+        "n": "Rubjerg Knude (Nordjütland, Dänemark)",
+        "lat": 57.43,
+        "lng": 9.78
+      },
+      {
+        "n": "Hornelen Klippe (Norwegen)",
+        "lat": 61.67,
+        "lng": 5.17
+      },
+      {
+        "n": "Ponta de São Lourenço (Madeira)",
+        "lat": 32.74,
+        "lng": -16.72
+      }
+    ]
   }
 }

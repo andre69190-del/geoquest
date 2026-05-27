@@ -117,5 +117,317 @@
         "c": "Rio de Janeiro"
       }
     ]
+  },
+  "sport_weltverband": {
+    "prompt": "Welchem Weltverband gehoert diese Sportart an?",
+    "items": [
+      {
+        "n": "Fussball",
+        "c": "FIFA"
+      },
+      {
+        "n": "Basketball",
+        "c": "FIBA"
+      },
+      {
+        "n": "Leichtathletik",
+        "c": "World Athletics"
+      },
+      {
+        "n": "Tennis",
+        "c": "ITF"
+      },
+      {
+        "n": "Schwimmen",
+        "c": "World Aquatics"
+      },
+      {
+        "n": "Volleyball",
+        "c": "FIVB"
+      },
+      {
+        "n": "Boxen (Amateure)",
+        "c": "IBA"
+      },
+      {
+        "n": "Radsport",
+        "c": "UCI"
+      },
+      {
+        "n": "Turnen",
+        "c": "FIG"
+      },
+      {
+        "n": "Handball",
+        "c": "IHF"
+      }
+    ]
+  },
+  "sport_olympisch": {
+    "prompt": "Ist diese Sportart bei den Olympischen Spielen vertreten?",
+    "items": [
+      {
+        "n": "Surfen",
+        "c": "Ja"
+      },
+      {
+        "n": "Klettern",
+        "c": "Ja"
+      },
+      {
+        "n": "Skateboarden",
+        "c": "Ja"
+      },
+      {
+        "n": "Cricket",
+        "c": "Nein"
+      },
+      {
+        "n": "Schach",
+        "c": "Nein"
+      },
+      {
+        "n": "Softball",
+        "c": "Ja"
+      },
+      {
+        "n": "Squash",
+        "c": "Nein"
+      },
+      {
+        "n": "Breakdance",
+        "c": "Ja"
+      }
+    ]
+  },
+  "sport_nationalsport_match": {
+    "prompt": "Welches Land hat diesen Sport als inoffiziellen Nationalsport?",
+    "items": [
+      {
+        "n": "Cricket",
+        "c": "England"
+      },
+      {
+        "n": "Sumo",
+        "c": "Japan"
+      },
+      {
+        "n": "Kabaddi",
+        "c": "Indien"
+      },
+      {
+        "n": "Hurling",
+        "c": "Irland"
+      },
+      {
+        "n": "Muay Thai",
+        "c": "Thailand"
+      },
+      {
+        "n": "Pelota Vasca",
+        "c": "Baskenland"
+      },
+      {
+        "n": "Curling",
+        "c": "Kanada"
+      },
+      {
+        "n": "Bandy",
+        "c": "Russland"
+      }
+    ]
+  },
+  "sport_sportlegende_land": {
+    "prompt": "Aus welchem Land kommt diese Sportlegende?",
+    "items": [
+      {
+        "n": "Pele (Fussball)",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Michael Jordan (Basketball)",
+        "c": "USA"
+      },
+      {
+        "n": "Muhammad Ali (Boxen)",
+        "c": "USA"
+      },
+      {
+        "n": "Senna (Formel 1)",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Roger Federer (Tennis)",
+        "c": "Schweiz"
+      },
+      {
+        "n": "Nadia Comaneci (Turnen)",
+        "c": "Rumaenien"
+      },
+      {
+        "n": "Jesse Owens (Leichtathletik)",
+        "c": "USA"
+      },
+      {
+        "n": "Eddy Merckx (Radsport)",
+        "c": "Belgien"
+      },
+      {
+        "n": "Franz Beckenbauer (Fussball)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Katarina Witt (Eiskunstlauf)",
+        "c": "Deutschland"
+      }
+    ]
+  },
+  "sport_rekordhalter": {
+    "prompt": "Wer haelt diesen Weltrekord?",
+    "items": [
+      {
+        "n": "100m-Sprint Maenner (9,58 s)",
+        "c": "Usain Bolt"
+      },
+      {
+        "n": "Hochsprung Maenner (2,45 m)",
+        "c": "Javier Sotomayor"
+      },
+      {
+        "n": "Weitsprung Maenner (8,95 m)",
+        "c": "Mike Powell"
+      },
+      {
+        "n": "Stabhochsprung Maenner (6,21 m)",
+        "c": "Armand Duplantis"
+      },
+      {
+        "n": "Marathon Maenner (2:00:35 offiz.)",
+        "c": "Kelvin Kiptum"
+      },
+      {
+        "n": "Schwimmen 100m Freistil (46,91 s)",
+        "c": "Cesar Cielo"
+      },
+      {
+        "n": "Gewichtheben gesamt (484 kg)",
+        "c": "Lasha Talakhadze"
+      },
+      {
+        "n": "100m-Sprint Frauen (10,49 s)",
+        "c": "Florence Griffith-Joyner"
+      }
+    ]
+  },
+  "sport_wm_gastgeber_match": {
+    "prompt": "In welchem Land fand diese Fussball-WM statt?",
+    "items": [
+      {
+        "n": "FIFA WM 1930",
+        "c": "Uruguay"
+      },
+      {
+        "n": "FIFA WM 1954",
+        "c": "Schweiz"
+      },
+      {
+        "n": "FIFA WM 1970",
+        "c": "Mexiko"
+      },
+      {
+        "n": "FIFA WM 1974",
+        "c": "Deutschland"
+      },
+      {
+        "n": "FIFA WM 1994",
+        "c": "USA"
+      },
+      {
+        "n": "FIFA WM 2002",
+        "c": "Japan und Korea"
+      },
+      {
+        "n": "FIFA WM 2010",
+        "c": "Suedafrika"
+      },
+      {
+        "n": "FIFA WM 2022",
+        "c": "Katar"
+      }
+    ]
+  },
+  "sport_disziplin_kategorie": {
+    "prompt": "Zu welcher Sportdisziplin gehoert diese Uebung?",
+    "items": [
+      {
+        "n": "Reihen (Sculling)",
+        "c": "Rudern"
+      },
+      {
+        "n": "Salomonsprung",
+        "c": "Turnen"
+      },
+      {
+        "n": "Tuck Position",
+        "c": "Skifahren / Turnen"
+      },
+      {
+        "n": "Kenterung (Eskimo Roll)",
+        "c": "Kanu"
+      },
+      {
+        "n": "Anschlag Freistil",
+        "c": "Schwimmen"
+      },
+      {
+        "n": "Schnitt (Skating)",
+        "c": "Eisschnelllauf"
+      },
+      {
+        "n": "Toe Loop",
+        "c": "Eiskunstlauf"
+      },
+      {
+        "n": "Salvo (Volley)",
+        "c": "Tennis"
+      }
+    ]
+  },
+  "sport_sportart_kontinent": {
+    "prompt": "Auf welchem Kontinent wurde diese Sportart erfunden / ist am populaersten?",
+    "items": [
+      {
+        "n": "Sumo",
+        "c": "Asien"
+      },
+      {
+        "n": "American Football",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Rugby",
+        "c": "Europa"
+      },
+      {
+        "n": "Capoeira",
+        "c": "Suedamerika"
+      },
+      {
+        "n": "Curling",
+        "c": "Europa"
+      },
+      {
+        "n": "Rodeo",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Sepak Takraw",
+        "c": "Asien"
+      },
+      {
+        "n": "Pelota Vasca",
+        "c": "Europa"
+      }
+    ]
   }
 }

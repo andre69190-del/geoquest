@@ -88,5 +88,226 @@
         "FAULT"
       ]
     }
+  },
+  "fussball": {
+    "word": "FUSSBALL",
+    "validWords": {
+      "de": [
+        "BALL",
+        "FALL",
+        "FALLS",
+        "BASS",
+        "LAUB",
+        "FLUSS",
+        "FASS",
+        "BLAU",
+        "BLASS",
+        "ALBUS",
+        "BULL",
+        "LAUF"
+      ],
+      "en": [
+        "BALL",
+        "FALL",
+        "FALLS",
+        "BASS",
+        "FULL",
+        "BULL",
+        "LABS",
+        "SLABS",
+        "FLAB",
+        "ABS",
+        "BUS"
+      ]
+    }
+  },
+  "olympiade": {
+    "word": "OLYMPIADE",
+    "validWords": {
+      "de": [
+        "OLYMP",
+        "LAMPE",
+        "LADE",
+        "MADE",
+        "IDEAL",
+        "MAYO",
+        "DAME",
+        "DEMO",
+        "MILD",
+        "DIOL",
+        "PAID",
+        "MODAL",
+        "PLAID",
+        "POEM"
+      ],
+      "en": [
+        "OLYMPIAD",
+        "PLAY",
+        "AMID",
+        "DIPLOMA",
+        "PAID",
+        "MAID",
+        "LAID",
+        "LAMP",
+        "DAMP",
+        "PALM",
+        "MAYO",
+        "PLAID",
+        "MILD",
+        "MODAL",
+        "POLYAMIDE"
+      ]
+    }
+  },
+  "weltmeister": {
+    "word": "WELTMEISTER",
+    "validWords": {
+      "de": [
+        "MEISTER",
+        "WELT",
+        "MISTER",
+        "STREIT",
+        "MIETE",
+        "TITEL",
+        "STIER",
+        "MELT",
+        "WESTE",
+        "LISTE",
+        "ELTER",
+        "STERIL",
+        "MIETES"
+      ],
+      "en": [
+        "MISTER",
+        "WILT",
+        "STIR",
+        "MELT",
+        "MILE",
+        "SMELT",
+        "STEM",
+        "MERIT",
+        "MERITS",
+        "WILES",
+        "SMILE",
+        "SLIME",
+        "SLIM",
+        "WRITE",
+        "WRITES",
+        "SMELTER",
+        "LITRE"
+      ]
+    }
+  },
+  "startschuss": {
+    "word": "STARTSCHUSS",
+    "validWords": {
+      "de": [
+        "START",
+        "SCHUSS",
+        "STAU",
+        "RUSS",
+        "RAUCH",
+        "TRUST",
+        "STUSS",
+        "STRAUCH",
+        "RAUSCH"
+      ],
+      "en": [
+        "STARCH",
+        "CRASH",
+        "TRASH",
+        "CASH",
+        "RASH",
+        "ARCH",
+        "CHARTS",
+        "STAR",
+        "RATS",
+        "CART",
+        "CARTS",
+        "SCAR",
+        "TSAR",
+        "RUST",
+        "CRUST",
+        "THRUST",
+        "RUTS",
+        "CUTS",
+        "TRUSS"
+      ]
+    }
+  },
+  "athletik": {
+    "word": "ATHLETIK",
+    "validWords": {
+      "de": [
+        "ETHIK",
+        "HALT",
+        "TAKT",
+        "HALTE",
+        "EILT",
+        "HAIE",
+        "LATHE"
+      ],
+      "en": [
+        "LITHE",
+        "KITE",
+        "HIKE",
+        "LAKE",
+        "LIKE",
+        "TAKE",
+        "LATE",
+        "TALE",
+        "TILE",
+        "KILT",
+        "HILT",
+        "HALT",
+        "TALK",
+        "ALIKE",
+        "TAIL",
+        "LATH",
+        "LATHE",
+        "TEAK",
+        "HEAL",
+        "HEAT",
+        "EAT",
+        "ATE"
+      ]
+    }
+  },
+  "sportgeist": {
+    "word": "SPORTGEIST",
+    "validWords": {
+      "de": [
+        "SPORT",
+        "GEIST",
+        "PREIS",
+        "TIGER",
+        "TIGERS",
+        "GRIPS",
+        "GIST",
+        "RIPS",
+        "STEIG",
+        "TRIPE",
+        "GROT",
+        "TRIPS"
+      ],
+      "en": [
+        "SPORT",
+        "TIGERS",
+        "GRIPS",
+        "TRIPES",
+        "STRIPE",
+        "STRIPES",
+        "GIST",
+        "TRIPS",
+        "GRIPE",
+        "GRIPES",
+        "SPRITE",
+        "SPRITES",
+        "ROPES",
+        "PERSIST",
+        "GIPSER",
+        "STEP"
+      ]
+    }
   }
 }

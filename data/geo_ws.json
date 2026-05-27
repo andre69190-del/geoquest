@@ -96,5 +96,151 @@
         "BREN"
       ]
     }
+  },
+  "tropfstein": {
+    "word": "TROPFSTEIN",
+    "validWords": {
+      "de": [
+        "STEIN",
+        "FROST",
+        "TROST",
+        "SPORT",
+        "STERN",
+        "TROPEN",
+        "PROST",
+        "PROFIS"
+      ],
+      "en": [
+        "STONE",
+        "FRONT",
+        "FROST",
+        "NOTES",
+        "SPORT",
+        "PRINT",
+        "STRIP",
+        "SPINE",
+        "SNIPE"
+      ]
+    }
+  },
+  "magmakammer": {
+    "word": "MAGMAKAMMER",
+    "validWords": {
+      "de": [
+        "MAGMA",
+        "KAMMER",
+        "KAMERA",
+        "KARMA",
+        "GRAM",
+        "MARKE",
+        "KARGE",
+        "KRAM",
+        "ARME"
+      ],
+      "en": [
+        "MAKER",
+        "KARMA",
+        "GAME",
+        "MARK",
+        "MARE",
+        "MAKE",
+        "GRAM",
+        "MAGE",
+        "RAKE"
+      ]
+    }
+  },
+  "kontinent": {
+    "word": "KONTINENT",
+    "validWords": {
+      "de": [
+        "TONNE",
+        "TONNEN",
+        "NOTEN",
+        "KNOTEN",
+        "NOTE",
+        "INTENT",
+        "TOKEN"
+      ],
+      "en": [
+        "TOKEN",
+        "KNOT",
+        "NOTE",
+        "TONE",
+        "NEON",
+        "TENT",
+        "INTENT"
+      ]
+    }
+  },
+  "fossilien": {
+    "word": "FOSSILIEN",
+    "validWords": {
+      "de": [
+        "FOSSIL",
+        "INSEL",
+        "SILO",
+        "LINSE",
+        "FOLIE",
+        "FIEL"
+      ],
+      "en": [
+        "FOSSIL",
+        "LION",
+        "SOIL",
+        "ISLE",
+        "NOISE",
+        "LINES",
+        "FELONS",
+        "LOIN"
+      ]
+    }
+  },
+  "erdkruste": {
+    "word": "ERDKRUSTE",
+    "validWords": {
+      "de": [
+        "DURST",
+        "TREU",
+        "KURS",
+        "RUDE",
+        "DUSTER"
+      ],
+      "en": [
+        "DUSK",
+        "DESK",
+        "RUDE",
+        "DUSTER",
+        "STUD",
+        "TREK",
+        "RUDEST",
+        "DRUSE"
+      ]
+    }
+  },
+  "mineralien": {
+    "word": "MINERALIEN",
+    "validWords": {
+      "de": [
+        "MINERAL",
+        "LINEAR",
+        "MARINE",
+        "LINIE",
+        "MANIE",
+        "EINER",
+        "ALIEN"
+      ],
+      "en": [
+        "MINERAL",
+        "LINEAR",
+        "MARINE",
+        "ALIEN",
+        "LINER",
+        "RAIN",
+        "LANE",
+        "MENIAL",
+        "REALM"
+      ]
+    }
   }
 }

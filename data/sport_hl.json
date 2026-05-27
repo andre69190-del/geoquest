@@ -74,5 +74,309 @@
         "val": 87
       }
     ]
+  },
+  "sport_transferrekorde": {
+    "prompt": "Welcher Transfer war teurer?",
+    "unit": "Mio Euro",
+    "items": [
+      {
+        "name": "Neymar Jr. (Barcelona → PSG, 2017)",
+        "val": 222
+      },
+      {
+        "name": "Kylian Mbappe (Monaco → PSG, 2018)",
+        "val": 180
+      },
+      {
+        "name": "Antoine Griezmann (Atletico → Barcelona, 2019)",
+        "val": 120
+      },
+      {
+        "name": "Joao Felix (Benfica → Atletico, 2019)",
+        "val": 126
+      },
+      {
+        "name": "Cristiano Ronaldo (Real Madrid → Juve, 2018)",
+        "val": 117
+      },
+      {
+        "name": "Gareth Bale (Tottenham → Real Madrid, 2013)",
+        "val": 101
+      },
+      {
+        "name": "Ousmane Dembele (BVB → Barcelona, 2017)",
+        "val": 105
+      },
+      {
+        "name": "Coutinho (Liverpool → Barcelona, 2018)",
+        "val": 135
+      }
+    ]
+  },
+  "sport_hochsprung_rekorde": {
+    "prompt": "Wer sprang hoeher?",
+    "unit": "cm",
+    "items": [
+      {
+        "name": "Javier Sotomayor (WR Hochsprung)",
+        "val": 245
+      },
+      {
+        "name": "Stefka Kostadinova (WR Frauen-Hochsprung)",
+        "val": 209
+      },
+      {
+        "name": "Gianmarco Tamberi (Olympiasieger 2021)",
+        "val": 237
+      },
+      {
+        "name": "Mutaz Essa Barshim (WM-Sieger 2022)",
+        "val": 237
+      },
+      {
+        "name": "Dick Fosbury (erste Fosbury-Flop Olympia 1968)",
+        "val": 224
+      },
+      {
+        "name": "Valery Brumel (Weltrekord 1963)",
+        "val": 228
+      },
+      {
+        "name": "Charles Austin (Olympiasieger 1996)",
+        "val": 239
+      },
+      {
+        "name": "Ivan Ukhov (Olympiasieger 2012)",
+        "val": 238
+      }
+    ]
+  },
+  "sport_sportler_gehalt": {
+    "prompt": "Wer verdient mehr pro Jahr?",
+    "unit": "Mio Euro/Jahr",
+    "items": [
+      {
+        "name": "Cristiano Ronaldo (Al Nassr, Saudi-Arabien)",
+        "val": 200
+      },
+      {
+        "name": "Lionel Messi (Inter Miami, USA)",
+        "val": 135
+      },
+      {
+        "name": "Kylian Mbappe (Real Madrid)",
+        "val": 90
+      },
+      {
+        "name": "LeBron James (LA Lakers, NBA)",
+        "val": 47
+      },
+      {
+        "name": "Roger Federer (Werbeeinnahmen, pension)",
+        "val": 90
+      },
+      {
+        "name": "Tiger Woods (Golf-Earnings + Werbung)",
+        "val": 55
+      },
+      {
+        "name": "Novak Djokovic (Tennis-Profi)",
+        "val": 38
+      },
+      {
+        "name": "Max Verstappen (Red Bull Racing F1)",
+        "val": 55
+      }
+    ]
+  },
+  "sport_olympia_goldmedaillen": {
+    "prompt": "Wer gewann mehr Olympia-Goldmedaillen?",
+    "unit": "Goldmedaillen",
+    "items": [
+      {
+        "name": "Michael Phelps (Schwimmen, USA)",
+        "val": 23
+      },
+      {
+        "name": "Larisa Latynina (Turnen, UdSSR)",
+        "val": 9
+      },
+      {
+        "name": "Paavo Nurmi (Leichtathletik, Finnland)",
+        "val": 9
+      },
+      {
+        "name": "Mark Spitz (Schwimmen, USA)",
+        "val": 9
+      },
+      {
+        "name": "Carl Lewis (Leichtathletik, USA)",
+        "val": 9
+      },
+      {
+        "name": "Birgit Fischer (Kanu, Deutschland)",
+        "val": 8
+      },
+      {
+        "name": "Usain Bolt (Sprint, Jamaika)",
+        "val": 8
+      },
+      {
+        "name": "Simone Biles (Turnen, USA)",
+        "val": 7
+      }
+    ]
+  },
+  "sport_fussball_marktwert": {
+    "prompt": "Wer hat einen hoeheren Marktwert?",
+    "unit": "Mio Euro",
+    "items": [
+      {
+        "name": "Kylian Mbappe (Hoechstwert ca. 2022)",
+        "val": 180
+      },
+      {
+        "name": "Erling Haaland (Manchester City)",
+        "val": 170
+      },
+      {
+        "name": "Jude Bellingham (Real Madrid)",
+        "val": 150
+      },
+      {
+        "name": "Vinicius Jr. (Real Madrid)",
+        "val": 150
+      },
+      {
+        "name": "Bukayo Saka (Arsenal)",
+        "val": 130
+      },
+      {
+        "name": "Pedri (FC Barcelona)",
+        "val": 110
+      },
+      {
+        "name": "Rodri (Manchester City, Ballon d'Or 2024)",
+        "val": 120
+      },
+      {
+        "name": "Lamine Yamal (FC Barcelona)",
+        "val": 120
+      }
+    ]
+  },
+  "sport_gewichtheben_rekorde": {
+    "prompt": "Wer hob mehr? (Reissen + Stossen zusammen)",
+    "unit": "kg",
+    "items": [
+      {
+        "name": "Lasha Talakhadze (Georgien, >109 kg, WR)",
+        "val": 484
+      },
+      {
+        "name": "Tatiana Kashirina (Russland, Frauen WR)",
+        "val": 348
+      },
+      {
+        "name": "Andrei Aramnau (Belarus, 105 kg, OR 2008)",
+        "val": 436
+      },
+      {
+        "name": "Matthias Steiner (Deutschland, OR 2008)",
+        "val": 461
+      },
+      {
+        "name": "Zhang Guozheng (China, 69 kg WR)",
+        "val": 347
+      },
+      {
+        "name": "Naim Suleymanoglu (Tuerkei, 64 kg WR)",
+        "val": 342
+      },
+      {
+        "name": "Halil Mutlu (Tuerkei, 56 kg WR)",
+        "val": 305
+      },
+      {
+        "name": "Long Qingquan (China, 56 kg OR 2016)",
+        "val": 307
+      }
+    ]
+  },
+  "sport_stadion_baujahr": {
+    "prompt": "Welches Stadion wurde frueher erbaut?",
+    "unit": "Baujahr",
+    "items": [
+      {
+        "name": "Fenway Park (Boston Red Sox, Baseball)",
+        "val": 1912
+      },
+      {
+        "name": "Wrigley Field (Chicago Cubs, Baseball)",
+        "val": 1914
+      },
+      {
+        "name": "Yankee Stadium Original (New York)",
+        "val": 1923
+      },
+      {
+        "name": "Solitude-Rennstrecke (Stuttgart, Deutschland)",
+        "val": 1935
+      },
+      {
+        "name": "Maracana Original (Rio de Janeiro)",
+        "val": 1950
+      },
+      {
+        "name": "Azteca Stadion (Mexiko-Stadt)",
+        "val": 1966
+      },
+      {
+        "name": "Camp Nou (FC Barcelona)",
+        "val": 1957
+      },
+      {
+        "name": "Estadio Centenario (Montevideo, Uruguay)",
+        "val": 1930
+      }
+    ]
+  },
+  "sport_tore_saison": {
+    "prompt": "Wer erzielte mehr Tore in einer Saison?",
+    "unit": "Tore",
+    "items": [
+      {
+        "name": "Erling Haaland (PL-Saison 2022/23, 36 Spiele)",
+        "val": 36
+      },
+      {
+        "name": "Cristiano Ronaldo (La Liga 2011/12)",
+        "val": 50
+      },
+      {
+        "name": "Lionel Messi (La Liga 2011/12)",
+        "val": 50
+      },
+      {
+        "name": "Gerd Mueller (Bundesliga 1971/72)",
+        "val": 40
+      },
+      {
+        "name": "Robert Lewandowski (BL 2020/21, Muellerrekord)",
+        "val": 41
+      },
+      {
+        "name": "Luis Suarez (La Liga 2015/16)",
+        "val": 40
+      },
+      {
+        "name": "Hugo Sanchez (La Liga 1989/90)",
+        "val": 38
+      },
+      {
+        "name": "Ronaldo Nazario (La Liga 1996/97)",
+        "val": 34
+      }
+    ]
   }
 }
