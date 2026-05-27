@@ -86,6 +86,11 @@ if r.returncode != 0:
 # ---- 6. Cleanup backup ----
 os.remove(backup)
 
+# ---- 6b. validate_content (non-blocking, info only) ----
+print("\n-- Running validate_content.py " + "-" * 26)
+subprocess.run([sys.executable, "validate_content.py"], text=True)
+print("[INFO] validate_content.py finished (warnings do not block the build)")
+
 # ---- 7. Summary ----
 print("\n" + "=" * 58)
 print(" PATCH APPLIED SUCCESSFULLY")

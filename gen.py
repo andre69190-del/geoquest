@@ -5560,9 +5560,10 @@ async function saveSession(mode,score,bs,correct,durationMs){
   /* Local fallback – always write so guests keep history too */
   const _device=/Mobi|Android|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)?"mobile":"desktop";
   try{
-    const _loc=JSON.parse(localStorage.getItem("gq_sessions_local")||"[]");
+    const _ttl=90*24*60*60*1000;
+    const _loc=JSON.parse(localStorage.getItem("gq_sessions_local")||"[]").filter(s=>s&&s.date&&(Date.now()-Date.parse(s.date))<_ttl);
     _loc.push({mode,score,max:bs,correct,duration_ms:durationMs||0,date:new Date().toISOString(),device_type:_device});
-    localStorage.setItem("gq_sessions_local",JSON.stringify(_loc.slice(-50)));
+    localStorage.setItem("gq_sessions_local",JSON.stringify(_loc.slice(-200)));
   }catch(e){}
   /* Sanity-cap score before submitting – max honest = ROUNDS*(BASE+12*TB)*3*3 */
   const _maxScore=Math.ceil(ROUNDS*(BASE+12*TB)*3*3*1.1);
@@ -5746,7 +5747,7 @@ let tIv=null,fTo=null,toastTo=null;
       "checkMastery","spotterCollect","saveSession","loadData","initAuth",
       "handleGridAnswer","finishCustomGame","submitGridResult",
       "render","renderWortSchmiede","renderLandHauptstadt","renderSLF",
-      "answerByIdx","handleWsCheck","handleSLFSubmit","handleLandHauptstadtSubmit","lvAnswer","syncOfflineData"];
+      "answerByIdx","handleWsCheck","handleSLFSubmit","handleLandHauptstadtSubmit","lvAnswer","syncOfflineData","submitRouteResult"];
     const _isTrusted=()=>{
       const stk=(new Error()).stack||"";
       return _TRUSTED_FNS.some(fn=>stk.includes(fn));
@@ -10594,7 +10595,7 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="stats"?renderStatsTab():""}
       ${S.tab==="admin"?renderAdminTab():""}
       ${S.settingsModal?renderSettingsModal():""}${S.adModal?renderAdModal():""}
-    </div>${renderBottomNav()}`;
+    </div>${renderBottomNav()}${S.pwaPrompt?renderPwaBanner():""}`;
     if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
     return;
   }
@@ -11200,7 +11201,13 @@ function renderBottomNav(){
   ];
   const isAdmin=sbUser?.email==="andre69190@gmail.com";
   if(isAdmin)tabs.push({id:"admin",icon:"\u{1F6E1}\uFE0F",lbl:"Admin"});
-  return`<nav class="bottom-nav">${tabs.map(t=>`<button class="bn-item${S.tab===t.id?" active":""}" onclick="S.tab='${t.id}';render()"><span class="bn-icon">${t.icon}</span><span class="bn-lbl">${t.lbl}</span></button>`).join("")}</nav>`;
+  function renderPwaBanner(){
+  return`<div id="pwa-banner" class="pwa-banner">
+    <span>📱 GeoQuest als App installieren &mdash; offline spielbar!</span>
+    <button class="pwa-install-btn" onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(()=>{S.pwaPrompt=null;render();});}">📥 Installieren</button>
+  </div>`;
+}
+return`<nav class="bottom-nav">${tabs.map(t=>`<button class="bn-item${S.tab===t.id?" active":""}" onclick="S.tab='${t.id}';render()"><span class="bn-icon">${t.icon}</span><span class="bn-lbl">${t.lbl}</span></button>`).join("")}</nav>`;
 }
 
 
@@ -11723,6 +11730,7 @@ function drawAlbumMap(){
    =================================================================== */
 
 /* Shared: save score and transition to gameover screen */
+function submitRouteResult(){if(S.routeData){S.sc=S.routeData.score;S.correct=S.routeData.steps;S.rd=S.routeData.steps;}finishCustomGame();}
 function submitGridResult(){if(S.gridData){S.sc=S.gridData.score;S.correct=S.gridData.correctCount;S.rd=S.gridData.correctCount;}finishCustomGame();}
 function finishCustomGame(){
   soundOver();
@@ -12130,7 +12138,7 @@ function renderReiseroute(sc){
       :'<div style="color:#ef4444;font-weight:900">\u{1F480} Keine Leben mehr!</div>'}
     <div style="color:var(--text3);font-size:.75rem;margin:.25rem 0">${rd.steps} Schritte (Min. ${rd.minSteps}) \u00b7 ${rd.score.toLocaleString()} Punkte</div>
   </div>
-  <button class="btn-p" onclick="S.sc=S.routeData.score;S.correct=S.routeData.steps;S.rd=S.routeData.steps;finishCustomGame()">Ergebnis ansehen</button>`
+  <button class="btn-p" onclick="submitRouteResult()">Ergebnis ansehen</button>`
   :"";
   return `<div class="scr">
     <div class="hud">
@@ -13695,7 +13703,7 @@ if("serviceWorker"in navigator){
   try{
     navigator.serviceWorker.register('./sw.js').catch(function(){});
   }catch(e){}
-  window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();S.pwaPrompt=e;const b=document.getElementById("pwa-banner");if(b)b.style.display="flex";});
+  window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();S.pwaPrompt=e;render();});
 }
 /* Phase 32: Tab-focus anti-cheat – timer keeps running in background */
 document.addEventListener("visibilitychange",()=>{
