@@ -156,10 +156,6 @@
         "val": 30
       },
       {
-        "name": "Rujm el-Hiri Megalith (gesamt)",
-        "val": 37000
-      },
-      {
         "name": "Gobekli Tepe T-Pfeiler Zentrum",
         "val": 20
       },
@@ -488,10 +484,6 @@
         "val": 13000
       },
       {
-        "name": "Qin Shi Huang (Gesamtanlage)",
-        "val": 40000
-      },
-      {
         "name": "Vix-Grabhugel (Frankreich)",
         "val": 600
       },
@@ -529,10 +521,6 @@
       {
         "name": "Inka-Straßennetz (Qhapaq Ñan)",
         "val": 40000
-      },
-      {
-        "name": "Römische Heerstraßen",
-        "val": 400000
       },
       {
         "name": "Persische Königsstraße",
@@ -613,10 +601,6 @@
     "unit": "Jahre BP (vor heute)",
     "higherWins": true,
     "items": [
-      {
-        "name": "Schädelknochen Atapuerca",
-        "val": 780000
-      },
       {
         "name": "Blombos-Gravierungen",
         "val": 75000
@@ -968,10 +952,6 @@
       {
         "name": "Terrakotta-Armee (gesamt)",
         "val": 10000
-      },
-      {
-        "name": "Tutanchamun-Maske",
-        "val": 50000
       },
       {
         "name": "Antikythera-Mechanismus",

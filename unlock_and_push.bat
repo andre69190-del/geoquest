@@ -8,7 +8,7 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "QA: Phase 245+246. Hotfix: WS-Halluzinationen, _pin Struktur, WS-Duplikate. validate_content.py: Duplikat-Scope per Kategorie, WS-Mindestwoerter, WS-Duplikat-Check, Match-Schwellwert justiert. 149->64 Warnungen. verify: 89/89."
+git commit -m "Fix+QA: Phase 243b+247. 243b: 32 fehlende MODES-Eintraege (Astro/Geo/Sport) -> Kategorien jetzt spielbar. 247: 16 HL-Ausreisser (z>4sigma) entfernt aus 6 Dateien (Sauerbraten 5760min, Balsamico 4380d, TPU-Pod, etc.) - La-Paz-Fenster greift jetzt korrekt. verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

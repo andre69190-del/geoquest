@@ -128,3 +128,6 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_242_engine_animals.py | 242 | Tiere-Pin JSON, Daily 5-mode rotation, Blitz-Modus (60s speed round) |
 | patch_243_new_worlds.py | 243 | 3 Neue Welten: Astronomie, Geologie, Sport-Wissen (12 JSON, 32 Modi) |
 | (hotfix) data/*.json    | 245 | WS-Halluzinationen, tiere/astro/geo/sport _pin Struktur, WS-Duplikate |
+| (improve) validate_content.py | 246 | Duplikat-Scope per Kategorie, WS-Mindestwoerter, WS-Duplikat-Check, Match-Schwellwert |
+| patch_243b_modes_fix.py | 243b | 32 fehlende MODES-Eintraege fuer Astro/Geo/Sport (leere Akkordeons gefixt) |
+| (hotfix) data/*_hl.json | 247 | 16 HL-Ausreisser z>4sigma entfernt (Sauerbraten, Balsamico, TPU-Pod u.a.) |

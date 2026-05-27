@@ -692,10 +692,6 @@
     "unit": "Pkt",
     "items": [
       {
-        "name": "Inland Taipan (Australien)",
-        "val": 59000
-      },
-      {
         "name": "Schwarze Mamba",
         "val": 3300
       },
@@ -718,10 +714,6 @@
       {
         "name": "Tropischer Steinfisch",
         "val": 1700
-      },
-      {
-        "name": "Goldener Giftfrosch",
-        "val": 500000
       },
       {
         "name": "Komodo-Waran (Bakterien/Gift)",
@@ -780,10 +772,6 @@
       {
         "name": "Afrikanische Spitzmaus",
         "val": 1000000000
-      },
-      {
-        "name": "Wanderratte",
-        "val": 7000000000
       },
       {
         "name": "Haushuhn (Wildform Bankivahuhn)",
