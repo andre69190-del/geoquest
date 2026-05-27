@@ -12875,31 +12875,23 @@ function filterByCategory(cat){
 window.filterByCategory=filterByCategory;
 window.toggleAccordion=function(header,catId){
   var content=header.nextElementSibling;
+  if(!content)return;
   var arrow=header.querySelector('.acc-arrow');
   var isOpen=content.classList.contains('open');
   if(isOpen){
+    /* Close: direct DOM — works reliably */
     content.classList.remove('open');
     content.style.display='none';
     if(arrow)arrow.style.transform='rotate(0deg)';
+    if(typeof S!=='undefined')S.filterCat='pure_geo';
   } else {
-    /* Phase 216: single-open accordion — close all others first */
-    document.querySelectorAll('.accordion-content.open,.acc-body.open').forEach(function(el){
-      if(el!==content){
-        el.classList.remove('open');
-        el.style.display='none';
-        var sib=el.previousElementSibling;
-        if(sib){var a=sib.querySelector('.acc-arrow');if(a)a.style.transform='rotate(0deg)';}
-      }
-    });
-    var gc=(typeof S!=='undefined'&&S.gridCols)||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
-    content.style.cssText='display:block;padding:0;width:100%;box-sizing:border-box';
-    content.classList.add('open');
-    if(arrow)arrow.style.transform='rotate(180deg)';
-    /* UX FIX: persist active category so menu restores to correct section after game */
-    if(typeof S!=='undefined')S.filterCat=catId;
-    setTimeout(function(){if(typeof window._initAllCarousels==="function")window._initAllCarousels();},50);
-    /* Phase 218 FIX: restore saved page after section becomes visible */
-    setTimeout(function(){if(typeof window._restoreCarouselPages==="function")window._restoreCarouselPages();},100);
+    /* Phase 250 FIX: delegate to filterByCategory() — the proven, reliable open path.
+       filterByCategory() sets S.filterCat, adds .open class, sets inline display:block,
+       closes all others, and calls _initAllCarousels() — consistent CSS + JS state. */
+    if(typeof window.filterByCategory==='function'){
+      window.filterByCategory(catId);
+    }
+    setTimeout(function(){if(typeof window._restoreCarouselPages==="function")window._restoreCarouselPages();},150);
   }
 };
 
