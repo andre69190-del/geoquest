@@ -6,7 +6,7 @@
 
 **unlock_and_push.bat** — Commit-Message updaten
 - Phase-Nummer, Modi-Zahl, Patch-Dateiname, verify-Ergebnis
-- Beispiel: `"Content: Phase 259. Neue-Feature +3 Modi. verify: 89/89."`
+- Beispiel: `"Content: Phase 259. Neue-Feature +3 Modi. verify: 90/90."`
 - Wichtig: Datei NUR mit dem Write-Tool bearbeiten, niemals mit Linux-sed (zerstört CRLF-Zeilenenden!)
 
 **ARCHITECTURE.md** — Mindestens diese Felder prüfen/updaten:
@@ -26,7 +26,7 @@
 
 **GeoQuest_Website_Konzept.md** — Phase-Nummer und Modi-Zahl
 
-**unlock_and_push.bat** ausführen und verify.py muss mit 89/89 (oder mehr) durchlaufen
+**unlock_and_push.bat** ausführen und verify.py muss mit 90/90 (oder mehr) durchlaufen
 
 ---
 
@@ -35,7 +35,7 @@
 **GeoQuest_Spieluebersicht.html** — Neu generieren!
 - Skript: Aus den MODES-Daten in gen.py direkt generieren
 - Zeigt alle Modi gruppiert nach Kategorie mit Suche
-- Aktueller Stand: 681 Modi, Phase 258
+- Aktueller Stand: 685 Modi, Phase 267
 
 **validate_content.py** ausführen — prüft:
 - JSON-Dateien auf fehlende Pflichtfelder
@@ -49,7 +49,7 @@
 
 **verify.py** — Immer ausführen nach gen.py rebuild
 - Testet alle kritischen Spielmodi durch
-- Muss 89/89 zeigen (oder mehr wenn neue Tests)
+- Muss 90/90 zeigen (oder mehr wenn neue Tests)
 
 **MODES + MODE_CATS + GEN** — Diese drei müssen immer synchron sein!
 - Neuer Modus in MODES → auch in MODE_CATS (tiere, pflanzen etc.) eintragen
@@ -68,7 +68,7 @@
 GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 
 **Aktueller Stand:**
-- Phase 258, 681 Modi, verify: 89/89
+- Phase 267, 685 Modi, verify: 90/90
 - gen.py ist die einzige Build-Quelle (Single-File-Output)
 - Patch-System: patches/patch_[NUMMER]_[name].py — jeder Patch nutzt content.replace(old, new, 1)
 
@@ -84,7 +84,7 @@ GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 
 **Nach dem Patch:**
 1. python3 gen.py (Build)
-2. python3 verify.py (89/89 prüfen)
+2. python3 verify.py (90/90 prüfen)
 3. python3 validate_content.py (keine neuen Fehler)
 4. unlock_and_push.bat Commit-Message updaten
 5. Diese Dateien updaten: ARCHITECTURE.md, README.md, landing.html, GeoQuest_Website_Konzept.md
@@ -101,7 +101,7 @@ GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 GeoQuest Phase [NUMMER]: Neuer Spielmodus "[Name]"
 
 **Aktueller Stand:**
-- Phase 258, 681 Modi, verify: 89/89
+- Phase 267, 685 Modi, verify: 90/90
 - 4 Universal-Engines: genUniversalPinQ(cat), genTiereHL(cat), genTiereMatchQ(cat), initTierWortSchmiede(key)
 
 **Neue Daten (JSON-Dateien in data/):**
@@ -127,7 +127,7 @@ GeoQuest Phase [NUMMER]: Neuer Spielmodus "[Name]"
 - [ ] GEN dispatch vorhanden
 - [ ] JSON-Datei hat alle Pflichtfelder
 - [ ] validate_content.py ohne neue Fehler
-- [ ] verify.py 89/89
+- [ ] verify.py 90/90
 - [ ] unlock_and_push.bat Commit-Message aktuell
 - [ ] ARCHITECTURE.md Modi-Zahl +N
 - [ ] landing.html Modi-Zahl +N
@@ -141,7 +141,7 @@ GeoQuest Phase [NUMMER]: Neuer Spielmodus "[Name]"
 ```
 GeoQuest Phase [NUMMER]: Neue Kategorie "[Kategorie-Name]"
 
-**Aktueller Stand:** Phase 258, 681 Modi
+**Aktueller Stand:** Phase 267, 685 Modi
 
 **Schritte (analog zu Phase 228 Pflanzen / Phase 229 Gastronomie):**
 
@@ -185,18 +185,18 @@ GeoQuest Phase [NUMMER]: Neue Kategorie "[Kategorie-Name]"
 | _ttsSpeakNow() | Suche nach `function _ttsSpeakNow` |
 | Home-Header (eingeloggt) | Suche nach `\u{1FA99} \${_gc}` |
 
-## Teil 4: Dateien-Checkliste (Stand Phase 258)
+## Teil 4: Dateien-Checkliste (Stand Phase 267)
 
 | Datei | Zeigt Phasennummer? | Zeigt Modi-Zahl? | Stand |
 |-------|--------------------|--------------------|-------|
-| ARCHITECTURE.md | ✅ Phase 258 | ✅ 681 | aktuell |
-| README.md | ✅ Phase 258 | ✅ 681 | aktuell |
+| ARCHITECTURE.md | ✅ Phase 267 | ✅ 685 | aktuell |
+| README.md | ✅ Phase 267 | ✅ 685 | aktuell |
 | landing.html | — | ✅ 681 | aktuell |
-| GeoQuest_Website_Konzept.md | ✅ Phase 258 | ✅ 681 | aktuell |
-| GeoQuest_Spieluebersicht.html | ✅ Phase 258 | ✅ 681 | aktuell |
-| unlock_and_push.bat | ✅ Phase 258 | ✅ 89/89 | aktuell |
+| GeoQuest_Website_Konzept.md | ✅ Phase 267 | ✅ 685 | aktuell |
+| GeoQuest_Spieluebersicht.html | ✅ Phase 267 | ✅ 685 | aktuell |
+| unlock_and_push.bat | ✅ Phase 258 | ✅ 90/90 | aktuell |
 | GEOQUEST_GAMES_REPORT.md | ❌ Phase ~99 | ❌ 55 | historisch, nicht updaten |
 
 ---
 
-*Zuletzt aktualisiert: Mai 2026 — Phase 258*
+*Zuletzt aktualisiert: Mai 2026 — Phase 267*
