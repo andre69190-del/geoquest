@@ -3,390 +3,1950 @@
     "prompt": "Welches Gericht hat mehr Kalorien pro 100g?",
     "unit": "kcal",
     "items": [
-      {"name": "Butter", "val": 717},
-      {"name": "Olivenöl", "val": 884},
-      {"name": "Macadamia-Nüsse", "val": 718},
-      {"name": "Dunkle Schokolade (70%)", "val": 598},
-      {"name": "Cheddar-Käse", "val": 402},
-      {"name": "Avocado", "val": 160},
-      {"name": "Wiener Schnitzel", "val": 267},
-      {"name": "Pasta (gekocht)", "val": 158},
-      {"name": "Apfel", "val": 52},
-      {"name": "Brokkoli", "val": 34},
-      {"name": "Lachs (gebraten)", "val": 206},
-      {"name": "Weizenmehl Typ 550", "val": 340},
-      {"name": "Basmati-Reis (gekocht)", "val": 130},
-      {"name": "Croissant", "val": 406},
-      {"name": "Hummus", "val": 166},
-      {"name": "Tiramisu", "val": 283},
-      {"name": "Feta-Käse", "val": 264},
-      {"name": "Quinoa (gekocht)", "val": 120},
-      {"name": "Pepperoni-Pizza", "val": 266},
-      {"name": "Grüner Salat", "val": 15}
+      {
+        "name": "Butter",
+        "val": 717
+      },
+      {
+        "name": "Olivenöl",
+        "val": 884
+      },
+      {
+        "name": "Macadamia-Nüsse",
+        "val": 718
+      },
+      {
+        "name": "Dunkle Schokolade (70%)",
+        "val": 598
+      },
+      {
+        "name": "Cheddar-Käse",
+        "val": 402
+      },
+      {
+        "name": "Avocado",
+        "val": 160
+      },
+      {
+        "name": "Wiener Schnitzel",
+        "val": 267
+      },
+      {
+        "name": "Pasta (gekocht)",
+        "val": 158
+      },
+      {
+        "name": "Apfel",
+        "val": 52
+      },
+      {
+        "name": "Brokkoli",
+        "val": 34
+      },
+      {
+        "name": "Lachs (gebraten)",
+        "val": 206
+      },
+      {
+        "name": "Weizenmehl Typ 550",
+        "val": 340
+      },
+      {
+        "name": "Basmati-Reis (gekocht)",
+        "val": 130
+      },
+      {
+        "name": "Croissant",
+        "val": 406
+      },
+      {
+        "name": "Hummus",
+        "val": 166
+      },
+      {
+        "name": "Tiramisu",
+        "val": 283
+      },
+      {
+        "name": "Feta-Käse",
+        "val": 264
+      },
+      {
+        "name": "Quinoa (gekocht)",
+        "val": 120
+      },
+      {
+        "name": "Pepperoni-Pizza",
+        "val": 266
+      },
+      {
+        "name": "Grüner Salat",
+        "val": 15
+      },
+      {
+        "name": "Döner Kebab (350g)",
+        "val": 800
+      },
+      {
+        "name": "Big Mac (McDonald's)",
+        "val": 563
+      },
+      {
+        "name": "Caesar Salad mit Hühnchen",
+        "val": 480
+      },
+      {
+        "name": "Tiramisu (100g)",
+        "val": 283
+      },
+      {
+        "name": "Avocado Toast (2 Scheiben)",
+        "val": 310
+      },
+      {
+        "name": "Pad Thai (Portion 300g)",
+        "val": 500
+      },
+      {
+        "name": "Butter Chicken mit Reis",
+        "val": 620
+      },
+      {
+        "name": "Sushi-Rolle California (8 Stk)",
+        "val": 255
+      },
+      {
+        "name": "Griechischer Salat (250g)",
+        "val": 180
+      },
+      {
+        "name": "Currywurst mit Pommes",
+        "val": 780
+      },
+      {
+        "name": "Baklava (100g)",
+        "val": 430
+      },
+      {
+        "name": "Bibimbap (Reis + Gemüse + Ei)",
+        "val": 490
+      },
+      {
+        "name": "Falafel-Wrap",
+        "val": 430
+      },
+      {
+        "name": "Crème Brûlée (130g)",
+        "val": 260
+      },
+      {
+        "name": "Miso-Suppe (250ml)",
+        "val": 60
+      },
+      {
+        "name": "Peking-Ente (100g Fleisch)",
+        "val": 340
+      },
+      {
+        "name": "Pho Bo (Rinderfleischsuppe)",
+        "val": 350
+      },
+      {
+        "name": "Jollof Rice (Portion 300g)",
+        "val": 450
+      },
+      {
+        "name": "Empanada (frittiert)",
+        "val": 350
+      },
+      {
+        "name": "Karotten-Ingwer-Suppe (300ml)",
+        "val": 130
+      }
     ]
   },
   "kerntemperatur": {
     "prompt": "Welches Lebensmittel hat eine höhere Ziel-Kerntemperatur?",
     "unit": "°C",
     "items": [
-      {"name": "Schweinefilet (medium)", "val": 63},
-      {"name": "Rinderfilet (medium rare)", "val": 57},
-      {"name": "Hühnerbrust (durchgegart)", "val": 74},
-      {"name": "Lammkeule (medium)", "val": 60},
-      {"name": "Fisch (Lachs, gegart)", "val": 55},
-      {"name": "Wildschwein (durchgegart)", "val": 70},
-      {"name": "Ente (Brust, medium)", "val": 65},
-      {"name": "Putenbrust (durchgegart)", "val": 74},
-      {"name": "Kalbsbraten (medium)", "val": 68},
-      {"name": "Rinderbraten (well done)", "val": 77},
-      {"name": "Brot (Kerntemperatur gebacken)", "val": 94},
-      {"name": "Burger-Patty (durchgegart)", "val": 71},
-      {"name": "Weißbrot-Innenkrume", "val": 90},
-      {"name": "Forelle (gegart)", "val": 65},
-      {"name": "Rehrücken (medium)", "val": 60},
-      {"name": "Gänsebraten (durchgegart)", "val": 80},
-      {"name": "Spareribs (zart gegart)", "val": 88},
-      {"name": "Lammlachs (medium)", "val": 58},
-      {"name": "Kochschinken (innen sicher)", "val": 72},
-      {"name": "Rinderburger (durch)", "val": 71}
+      {
+        "name": "Schweinefilet (medium)",
+        "val": 63
+      },
+      {
+        "name": "Rinderfilet (medium rare)",
+        "val": 57
+      },
+      {
+        "name": "Hühnerbrust (durchgegart)",
+        "val": 74
+      },
+      {
+        "name": "Lammkeule (medium)",
+        "val": 60
+      },
+      {
+        "name": "Fisch (Lachs, gegart)",
+        "val": 55
+      },
+      {
+        "name": "Wildschwein (durchgegart)",
+        "val": 70
+      },
+      {
+        "name": "Ente (Brust, medium)",
+        "val": 65
+      },
+      {
+        "name": "Putenbrust (durchgegart)",
+        "val": 74
+      },
+      {
+        "name": "Kalbsbraten (medium)",
+        "val": 68
+      },
+      {
+        "name": "Rinderbraten (well done)",
+        "val": 77
+      },
+      {
+        "name": "Brot (Kerntemperatur gebacken)",
+        "val": 94
+      },
+      {
+        "name": "Burger-Patty (durchgegart)",
+        "val": 71
+      },
+      {
+        "name": "Weißbrot-Innenkrume",
+        "val": 90
+      },
+      {
+        "name": "Forelle (gegart)",
+        "val": 65
+      },
+      {
+        "name": "Rehrücken (medium)",
+        "val": 60
+      },
+      {
+        "name": "Gänsebraten (durchgegart)",
+        "val": 80
+      },
+      {
+        "name": "Spareribs (zart gegart)",
+        "val": 88
+      },
+      {
+        "name": "Lammlachs (medium)",
+        "val": 58
+      },
+      {
+        "name": "Kochschinken (innen sicher)",
+        "val": 72
+      },
+      {
+        "name": "Rinderburger (durch)",
+        "val": 71
+      },
+      {
+        "name": "Schweinefleisch (Innen, sicher)",
+        "val": 65
+      },
+      {
+        "name": "Hühnerbrust (vollgegart)",
+        "val": 74
+      },
+      {
+        "name": "Rindfleisch (rare/blutig)",
+        "val": 52
+      },
+      {
+        "name": "Rindfleisch (medium)",
+        "val": 60
+      },
+      {
+        "name": "Rindfleisch (well done)",
+        "val": 71
+      },
+      {
+        "name": "Lammkeule (medium-rare)",
+        "val": 57
+      },
+      {
+        "name": "Thunfisch-Steak (medium-rare)",
+        "val": 50
+      },
+      {
+        "name": "Burger-Patty (Hackfleisch, sicher)",
+        "val": 71
+      },
+      {
+        "name": "Ente (Ganzes, vollgegart)",
+        "val": 74
+      },
+      {
+        "name": "Kaninchen (vollgegart)",
+        "val": 70
+      },
+      {
+        "name": "Temperierungsschokolade (dunkle)",
+        "val": 32
+      },
+      {
+        "name": "Karamell-Kochpunkt (Soft Ball)",
+        "val": 115
+      },
+      {
+        "name": "Karamell-Kochpunkt (Hard Crack)",
+        "val": 149
+      },
+      {
+        "name": "Brotteig Innen (fertig gebacken)",
+        "val": 96
+      },
+      {
+        "name": "Gelatine-Schmelze (Blatt)",
+        "val": 35
+      },
+      {
+        "name": "Hefeteig (Gäroptimum)",
+        "val": 37
+      },
+      {
+        "name": "Sous-vide-Ei (64°C-Ei klassisch)",
+        "val": 64
+      },
+      {
+        "name": "Pastellfarbener Käsekuchen (Kern)",
+        "val": 66
+      },
+      {
+        "name": "Rehfilet (medium-rare)",
+        "val": 55
+      }
     ]
   },
   "zubereitungszeit": {
     "prompt": "Welches Gericht dauert länger in der Zubereitung?",
     "unit": "Min",
     "items": [
-      {"name": "Instant-Nudeln", "val": 3},
-      {"name": "Rührei", "val": 5},
-      {"name": "Toast mit Aufschnitt", "val": 4},
-      {"name": "Pasta Aglio e Olio", "val": 20},
-      {"name": "Pfannkuchen", "val": 25},
-      {"name": "Pizza (Fertigteig)", "val": 30},
-      {"name": "Wiener Schnitzel", "val": 35},
-      {"name": "Risotto", "val": 40},
-      {"name": "Sauerbraten (komplett)", "val": 5760},
-      {"name": "Boeuf Bourguignon", "val": 180},
-      {"name": "Croissant (Blätterteig selbst)", "val": 840},
-      {"name": "Ossobuco", "val": 120},
-      {"name": "Hühnersuppe", "val": 90},
-      {"name": "Pulled Pork (Smoker)", "val": 720},
-      {"name": "Lasagne", "val": 90},
-      {"name": "Ramen (klassisch)", "val": 180},
-      {"name": "Macarons", "val": 150},
-      {"name": "Consommé (geklärt)", "val": 240},
-      {"name": "Tagliatelle frisch", "val": 60},
-      {"name": "Omelett", "val": 8}
+      {
+        "name": "Instant-Nudeln",
+        "val": 3
+      },
+      {
+        "name": "Rührei",
+        "val": 5
+      },
+      {
+        "name": "Toast mit Aufschnitt",
+        "val": 4
+      },
+      {
+        "name": "Pasta Aglio e Olio",
+        "val": 20
+      },
+      {
+        "name": "Pfannkuchen",
+        "val": 25
+      },
+      {
+        "name": "Pizza (Fertigteig)",
+        "val": 30
+      },
+      {
+        "name": "Wiener Schnitzel",
+        "val": 35
+      },
+      {
+        "name": "Risotto",
+        "val": 40
+      },
+      {
+        "name": "Sauerbraten (komplett)",
+        "val": 5760
+      },
+      {
+        "name": "Boeuf Bourguignon",
+        "val": 180
+      },
+      {
+        "name": "Croissant (Blätterteig selbst)",
+        "val": 840
+      },
+      {
+        "name": "Ossobuco",
+        "val": 120
+      },
+      {
+        "name": "Hühnersuppe",
+        "val": 90
+      },
+      {
+        "name": "Pulled Pork (Smoker)",
+        "val": 720
+      },
+      {
+        "name": "Lasagne",
+        "val": 90
+      },
+      {
+        "name": "Ramen (klassisch)",
+        "val": 180
+      },
+      {
+        "name": "Macarons",
+        "val": 150
+      },
+      {
+        "name": "Consommé (geklärt)",
+        "val": 240
+      },
+      {
+        "name": "Tagliatelle frisch",
+        "val": 60
+      },
+      {
+        "name": "Omelett",
+        "val": 8
+      },
+      {
+        "name": "Instant-Nudeln (Ramen, Beutel)",
+        "val": 3
+      },
+      {
+        "name": "Rührei (klassisch, Pfanne)",
+        "val": 5
+      },
+      {
+        "name": "Toast (Brotröster)",
+        "val": 2
+      },
+      {
+        "name": "Pasta (al dente, gekochtes Wasser)",
+        "val": 8
+      },
+      {
+        "name": "Steak (Pfanne, medium)",
+        "val": 12
+      },
+      {
+        "name": "Pfannkuchen (Crepe, 1 Stück)",
+        "val": 3
+      },
+      {
+        "name": "Grillhähnchen (ganzes, Ofen)",
+        "val": 90
+      },
+      {
+        "name": "Pizza (Ofen, selbstgemacht)",
+        "val": 15
+      },
+      {
+        "name": "Risotto (Klassisch)",
+        "val": 30
+      },
+      {
+        "name": "Boeuf Bourguignon (Schmoren)",
+        "val": 180
+      },
+      {
+        "name": "Sauerbraten (Marinierung + Braten)",
+        "val": 5760
+      },
+      {
+        "name": "Pulled Pork (Low & Slow, Smoker)",
+        "val": 720
+      },
+      {
+        "name": "Linsensuppe (Simmern)",
+        "val": 45
+      },
+      {
+        "name": "Croissant (Teig + Backen)",
+        "val": 600
+      },
+      {
+        "name": "Crème Brûlée (Kühlzeit inkl.)",
+        "val": 120
+      },
+      {
+        "name": "Fondue Bourguignonne (Tischzeit)",
+        "val": 60
+      },
+      {
+        "name": "Sous-vide-Brust (Hühnchen, 60°C)",
+        "val": 90
+      },
+      {
+        "name": "Baguette (Vorteig + Backen)",
+        "val": 300
+      },
+      {
+        "name": "Tiramisù (Kühlzeit eingeschlossen)",
+        "val": 240
+      },
+      {
+        "name": "Weichgekochtes Ei (ab kochendem Wasser)",
+        "val": 5
+      }
     ]
   },
   "fermentationsdauer": {
     "prompt": "Welches Produkt fermentiert länger?",
     "unit": "Tage",
     "items": [
-      {"name": "Joghurt (Basis)", "val": 0.3},
-      {"name": "Kombucha (Erstgärung)", "val": 7},
-      {"name": "Sauerkraut (fertig)", "val": 21},
-      {"name": "Kimchi (traditionell)", "val": 7},
-      {"name": "Sourdough-Starter (aktiv)", "val": 5},
-      {"name": "Bier (Lager-Gärung)", "val": 21},
-      {"name": "Wein (Rotwein-Gärung)", "val": 14},
-      {"name": "Miso (Shiro/Weiß)", "val": 30},
-      {"name": "Miso (Hatcho/Dunkel)", "val": 730},
-      {"name": "Gouda-Käse (jung)", "val": 28},
-      {"name": "Parmesan (Reggiano)", "val": 730},
-      {"name": "Worcestershire-Sauce", "val": 730},
-      {"name": "Tepache (Ananasschalen)", "val": 3},
-      {"name": "Doenjang (koreanisch)", "val": 90},
-      {"name": "Natto", "val": 2},
-      {"name": "Tempeh", "val": 2},
-      {"name": "Kvass (Brottrunk)", "val": 2},
-      {"name": "Balsamico Tradizionale (12 J.)", "val": 4380},
-      {"name": "Garum (Fischsauce)", "val": 180},
-      {"name": "Surströmming (Schweden)", "val": 180}
+      {
+        "name": "Joghurt (Basis)",
+        "val": 0.3
+      },
+      {
+        "name": "Kombucha (Erstgärung)",
+        "val": 7
+      },
+      {
+        "name": "Sauerkraut (fertig)",
+        "val": 21
+      },
+      {
+        "name": "Kimchi (traditionell)",
+        "val": 7
+      },
+      {
+        "name": "Sourdough-Starter (aktiv)",
+        "val": 5
+      },
+      {
+        "name": "Bier (Lager-Gärung)",
+        "val": 21
+      },
+      {
+        "name": "Wein (Rotwein-Gärung)",
+        "val": 14
+      },
+      {
+        "name": "Miso (Shiro/Weiß)",
+        "val": 30
+      },
+      {
+        "name": "Miso (Hatcho/Dunkel)",
+        "val": 730
+      },
+      {
+        "name": "Gouda-Käse (jung)",
+        "val": 28
+      },
+      {
+        "name": "Parmesan (Reggiano)",
+        "val": 730
+      },
+      {
+        "name": "Worcestershire-Sauce",
+        "val": 730
+      },
+      {
+        "name": "Tepache (Ananasschalen)",
+        "val": 3
+      },
+      {
+        "name": "Doenjang (koreanisch)",
+        "val": 90
+      },
+      {
+        "name": "Natto",
+        "val": 2
+      },
+      {
+        "name": "Tempeh",
+        "val": 2
+      },
+      {
+        "name": "Kvass (Brottrunk)",
+        "val": 2
+      },
+      {
+        "name": "Balsamico Tradizionale (12 J.)",
+        "val": 4380
+      },
+      {
+        "name": "Garum (Fischsauce)",
+        "val": 180
+      },
+      {
+        "name": "Surströmming (Schweden)",
+        "val": 180
+      },
+      {
+        "name": "Balsamico Tradizionale (Modena, min.)",
+        "val": 4380
+      },
+      {
+        "name": "Parmigiano-Reggiano (min. 12 Monate)",
+        "val": 365
+      },
+      {
+        "name": "Gouda Extra Alt (24 Monate)",
+        "val": 730
+      },
+      {
+        "name": "Sake (Junmai, Reifung)",
+        "val": 60
+      },
+      {
+        "name": "Bier (IPA, Hauptgärung)",
+        "val": 14
+      },
+      {
+        "name": "Joghurt (Milchsäure-Fermentation)",
+        "val": 0.3
+      },
+      {
+        "name": "Doenjang (koreanische Sojabohnenpaste)",
+        "val": 3650
+      },
+      {
+        "name": "Miso (Hatcho, 3 Jahre)",
+        "val": 1095
+      },
+      {
+        "name": "Tabasco-Sauce (3 Jahre Fasslagerung)",
+        "val": 1095
+      },
+      {
+        "name": "Sauerkraut (klassisch, kurz)",
+        "val": 14
+      },
+      {
+        "name": "Kvass (Brot-Ferment, Russland)",
+        "val": 2
+      },
+      {
+        "name": "Tepache (Mexikanische Ananas-Gärung)",
+        "val": 3
+      },
+      {
+        "name": "Jun (grüner Tee + Honig)",
+        "val": 7
+      },
+      {
+        "name": "Prosciutto di Parma (min.)",
+        "val": 400
+      },
+      {
+        "name": "Nduja (kalabrische Wurst)",
+        "val": 180
+      },
+      {
+        "name": "Gravlax (Lachs in Salz)",
+        "val": 2
+      },
+      {
+        "name": "Natto (japanische Sojabohnen)",
+        "val": 1
+      },
+      {
+        "name": "Teff-Injera-Teig (Äthiopien)",
+        "val": 3
+      },
+      {
+        "name": "Schwarzer Knoblauch (elektrisch gegart)",
+        "val": 40
+      }
     ]
   },
   "scoville": {
     "prompt": "Welche Chilischote hat mehr Scoville-Einheiten?",
     "unit": "SHU",
     "items": [
-      {"name": "Glockenpepper", "val": 0},
-      {"name": "Pepperoncini", "val": 500},
-      {"name": "Jalapeño", "val": 5000},
-      {"name": "Serrano", "val": 15000},
-      {"name": "Cayenne", "val": 50000},
-      {"name": "Thai-Chili", "val": 100000},
-      {"name": "Habanero Orange", "val": 300000},
-      {"name": "Scotch Bonnet", "val": 350000},
-      {"name": "Bhut Jolokia (Ghost Pepper)", "val": 1000000},
-      {"name": "Trinidad Moruga Scorpion", "val": 2009231},
-      {"name": "Carolina Reaper", "val": 2200000},
-      {"name": "Poblano", "val": 1500},
-      {"name": "Ancho", "val": 2500},
-      {"name": "Chipotle", "val": 8000},
-      {"name": "Fresno Chili", "val": 10000},
-      {"name": "Hatch Green Chile", "val": 5000},
-      {"name": "Aji Amarillo", "val": 40000},
-      {"name": "Tabasco", "val": 40000},
-      {"name": "Rocoto/Manzano", "val": 200000},
-      {"name": "Naga Viper", "val": 1382118}
+      {
+        "name": "Glockenpepper",
+        "val": 0
+      },
+      {
+        "name": "Pepperoncini",
+        "val": 500
+      },
+      {
+        "name": "Jalapeño",
+        "val": 5000
+      },
+      {
+        "name": "Serrano",
+        "val": 15000
+      },
+      {
+        "name": "Cayenne",
+        "val": 50000
+      },
+      {
+        "name": "Thai-Chili",
+        "val": 100000
+      },
+      {
+        "name": "Habanero Orange",
+        "val": 300000
+      },
+      {
+        "name": "Scotch Bonnet",
+        "val": 350000
+      },
+      {
+        "name": "Bhut Jolokia (Ghost Pepper)",
+        "val": 1000000
+      },
+      {
+        "name": "Trinidad Moruga Scorpion",
+        "val": 2009231
+      },
+      {
+        "name": "Carolina Reaper",
+        "val": 2200000
+      },
+      {
+        "name": "Poblano",
+        "val": 1500
+      },
+      {
+        "name": "Ancho",
+        "val": 2500
+      },
+      {
+        "name": "Chipotle",
+        "val": 8000
+      },
+      {
+        "name": "Fresno Chili",
+        "val": 10000
+      },
+      {
+        "name": "Hatch Green Chile",
+        "val": 5000
+      },
+      {
+        "name": "Aji Amarillo",
+        "val": 40000
+      },
+      {
+        "name": "Tabasco",
+        "val": 40000
+      },
+      {
+        "name": "Rocoto/Manzano",
+        "val": 200000
+      },
+      {
+        "name": "Naga Viper",
+        "val": 1382118
+      },
+      {
+        "name": "Carolina Reaper (2013 Weltrekord)",
+        "val": 2200000
+      },
+      {
+        "name": "Dragon's Breath Chili",
+        "val": 2480000
+      },
+      {
+        "name": "Pepper X (Ed Curlin 2023)",
+        "val": 2693000
+      },
+      {
+        "name": "7-Pot Douglah (Schokoladen-Schote)",
+        "val": 1853936
+      },
+      {
+        "name": "7-Pot Primo",
+        "val": 1473480
+      },
+      {
+        "name": "Scotch Bonnet (Karibik)",
+        "val": 350000
+      },
+      {
+        "name": "Thai Bird's Eye Chili",
+        "val": 100000
+      },
+      {
+        "name": "Chiltepin (Wildchili, Mexiko)",
+        "val": 100000
+      },
+      {
+        "name": "Tabasco-Sauce (original)",
+        "val": 3750
+      },
+      {
+        "name": "Serrano Chili",
+        "val": 15000
+      },
+      {
+        "name": "Ancho (getrockneter Poblano)",
+        "val": 2000
+      },
+      {
+        "name": "Guajillo Chili",
+        "val": 2500
+      },
+      {
+        "name": "Paprika (Gemüse)",
+        "val": 0
+      },
+      {
+        "name": "Piri-Piri (Africain Bird's Eye)",
+        "val": 175000
+      },
+      {
+        "name": "Cayennepfeffer",
+        "val": 40000
+      }
     ]
   },
   "preis_kg": {
     "prompt": "Welche Zutat kostet mehr pro Kilogramm?",
     "unit": "EUR/kg",
     "items": [
-      {"name": "Safran (Spitzenqualität)", "val": 10000},
-      {"name": "Weißer Trüffel (Alba)", "val": 5000},
-      {"name": "Schwarzer Trüffel (Périgord)", "val": 1200},
-      {"name": "Echter Kaviar (Beluga)", "val": 3500},
-      {"name": "Kopi Luwak Kaffee", "val": 700},
-      {"name": "Vanilleschoten (Madagaskar)", "val": 600},
-      {"name": "Echte Wasabi-Wurzel", "val": 250},
-      {"name": "Sichuan-Pfeffer (premium)", "val": 80},
-      {"name": "Kobe-Rind (A5 Wagyu)", "val": 450},
-      {"name": "Pasta fresca Handgemacht", "val": 30},
-      {"name": "Bio-Quinoa", "val": 8},
-      {"name": "Speisesalz (Kristallsalz)", "val": 2},
-      {"name": "Weizenmehl Typ 550", "val": 1},
-      {"name": "Maldon Sea Salt Flakes", "val": 30},
-      {"name": "Maca-Pulver (bio)", "val": 40},
-      {"name": "Spirulina-Pulver", "val": 50},
-      {"name": "Carnaroli-Risottoreis", "val": 12},
-      {"name": "Ibérico-Schinken Bellota", "val": 250},
-      {"name": "Parmigiano Reggiano (36 Mon.)", "val": 55},
-      {"name": "Manuka-Honig UMF25+", "val": 180}
+      {
+        "name": "Safran (Spitzenqualität)",
+        "val": 10000
+      },
+      {
+        "name": "Weißer Trüffel (Alba)",
+        "val": 5000
+      },
+      {
+        "name": "Schwarzer Trüffel (Périgord)",
+        "val": 1200
+      },
+      {
+        "name": "Echter Kaviar (Beluga)",
+        "val": 3500
+      },
+      {
+        "name": "Kopi Luwak Kaffee",
+        "val": 700
+      },
+      {
+        "name": "Vanilleschoten (Madagaskar)",
+        "val": 600
+      },
+      {
+        "name": "Echte Wasabi-Wurzel",
+        "val": 250
+      },
+      {
+        "name": "Sichuan-Pfeffer (premium)",
+        "val": 80
+      },
+      {
+        "name": "Kobe-Rind (A5 Wagyu)",
+        "val": 450
+      },
+      {
+        "name": "Pasta fresca Handgemacht",
+        "val": 30
+      },
+      {
+        "name": "Bio-Quinoa",
+        "val": 8
+      },
+      {
+        "name": "Speisesalz (Kristallsalz)",
+        "val": 2
+      },
+      {
+        "name": "Weizenmehl Typ 550",
+        "val": 1
+      },
+      {
+        "name": "Maldon Sea Salt Flakes",
+        "val": 30
+      },
+      {
+        "name": "Maca-Pulver (bio)",
+        "val": 40
+      },
+      {
+        "name": "Spirulina-Pulver",
+        "val": 50
+      },
+      {
+        "name": "Carnaroli-Risottoreis",
+        "val": 12
+      },
+      {
+        "name": "Ibérico-Schinken Bellota",
+        "val": 250
+      },
+      {
+        "name": "Parmigiano Reggiano (36 Mon.)",
+        "val": 55
+      },
+      {
+        "name": "Manuka-Honig UMF25+",
+        "val": 180
+      },
+      {
+        "name": "Beluga-Kaviar (Wildbestände, geschätzt)",
+        "val": 8500
+      },
+      {
+        "name": "Saffron (Persischer Safran)",
+        "val": 5000
+      },
+      {
+        "name": "Matsutake-Pilze (Japan)",
+        "val": 2000
+      },
+      {
+        "name": "Morel (Morchel-Pilze, getrocknet)",
+        "val": 600
+      },
+      {
+        "name": "Black Perigord Truffle",
+        "val": 1500
+      },
+      {
+        "name": "Fugu (Kugelfisch, Japan)",
+        "val": 200
+      },
+      {
+        "name": "Foie Gras (Frankreich, entgravt)",
+        "val": 120
+      },
+      {
+        "name": "Kopi Luwak (Katzenkaffee)",
+        "val": 700
+      },
+      {
+        "name": "Wagyu A5 (Japan, Kobe)",
+        "val": 300
+      },
+      {
+        "name": "Manuka-Honig UMF 20+ (Neuseeland)",
+        "val": 80
+      },
+      {
+        "name": "Schwarzer Kampot-Pfeffer (Kambodscha)",
+        "val": 50
+      },
+      {
+        "name": "Organic Vanilleschoten (Madagaskar)",
+        "val": 300
+      },
+      {
+        "name": "Heilbutt (Atlantischer, frisch)",
+        "val": 25
+      },
+      {
+        "name": "Königskrabbe (Bein, Alaska)",
+        "val": 60
+      },
+      {
+        "name": "Ibérico-Schinken Bellota (Extremadura)",
+        "val": 90
+      },
+      {
+        "name": "Echter Parmesan (DOP, 36 Monate)",
+        "val": 25
+      },
+      {
+        "name": "Edelbitter-Schokolade 99% (Valrhona)",
+        "val": 80
+      },
+      {
+        "name": "Aceto Balsamico Tradizionale (Modena, 25J.)",
+        "val": 400
+      },
+      {
+        "name": "Champignon (weiß, frisch)",
+        "val": 3
+      },
+      {
+        "name": "Äpfel (Marktpreis, Saison)",
+        "val": 1.5
+      }
     ]
   },
   "wasseranteil": {
     "prompt": "Welches Lebensmittel hat einen höheren Wasseranteil?",
     "unit": "%",
     "items": [
-      {"name": "Gurke", "val": 96.7},
-      {"name": "Wassermelone", "val": 91.5},
-      {"name": "Erdbeere", "val": 90.9},
-      {"name": "Kopfsalat", "val": 94.9},
-      {"name": "Vollmilch", "val": 87.8},
-      {"name": "Apfel", "val": 85.6},
-      {"name": "Kartoffel (roh)", "val": 79.0},
-      {"name": "Hühnerbrust (roh)", "val": 75.0},
-      {"name": "Banane", "val": 74.9},
-      {"name": "Lachs (roh)", "val": 68.5},
-      {"name": "Cheddar-Käse", "val": 36.8},
-      {"name": "Weißbrot", "val": 37.0},
-      {"name": "Pasta (trocken)", "val": 10.5},
-      {"name": "Weizenmehl", "val": 12.0},
-      {"name": "Cashewnüsse", "val": 5.2},
-      {"name": "Butter", "val": 17.0},
-      {"name": "Haferflocken (trocken)", "val": 10.0},
-      {"name": "Honig", "val": 17.1},
-      {"name": "Dunkle Schokolade 70%", "val": 1.5},
-      {"name": "Speiseöl", "val": 0.0}
+      {
+        "name": "Gurke",
+        "val": 96.7
+      },
+      {
+        "name": "Wassermelone",
+        "val": 91.5
+      },
+      {
+        "name": "Erdbeere",
+        "val": 90.9
+      },
+      {
+        "name": "Kopfsalat",
+        "val": 94.9
+      },
+      {
+        "name": "Vollmilch",
+        "val": 87.8
+      },
+      {
+        "name": "Apfel",
+        "val": 85.6
+      },
+      {
+        "name": "Kartoffel (roh)",
+        "val": 79.0
+      },
+      {
+        "name": "Hühnerbrust (roh)",
+        "val": 75.0
+      },
+      {
+        "name": "Banane",
+        "val": 74.9
+      },
+      {
+        "name": "Lachs (roh)",
+        "val": 68.5
+      },
+      {
+        "name": "Cheddar-Käse",
+        "val": 36.8
+      },
+      {
+        "name": "Weißbrot",
+        "val": 37.0
+      },
+      {
+        "name": "Pasta (trocken)",
+        "val": 10.5
+      },
+      {
+        "name": "Weizenmehl",
+        "val": 12.0
+      },
+      {
+        "name": "Cashewnüsse",
+        "val": 5.2
+      },
+      {
+        "name": "Butter",
+        "val": 17.0
+      },
+      {
+        "name": "Haferflocken (trocken)",
+        "val": 10.0
+      },
+      {
+        "name": "Honig",
+        "val": 17.1
+      },
+      {
+        "name": "Dunkle Schokolade 70%",
+        "val": 1.5
+      },
+      {
+        "name": "Speiseöl",
+        "val": 0.0
+      },
+      {
+        "name": "Eisbergsalat",
+        "val": 96.0
+      },
+      {
+        "name": "Sellerie",
+        "val": 95.4
+      },
+      {
+        "name": "Tomaten",
+        "val": 94.5
+      },
+      {
+        "name": "Spinat",
+        "val": 91.4
+      },
+      {
+        "name": "Brokkoli",
+        "val": 90.7
+      },
+      {
+        "name": "Karotten",
+        "val": 88.3
+      },
+      {
+        "name": "Erdbeeren",
+        "val": 91.0
+      },
+      {
+        "name": "Hühnerei (frisch, gesamt)",
+        "val": 76.0
+      },
+      {
+        "name": "Rindfleisch (mager, roh)",
+        "val": 71.0
+      },
+      {
+        "name": "Hartkäse (Parmesan, gereift)",
+        "val": 29.0
+      },
+      {
+        "name": "Zucker (Kristall)",
+        "val": 0.1
+      },
+      {
+        "name": "Sonnenblumenöl",
+        "val": 0.0
+      }
     ]
   },
   "backtemperatur": {
     "prompt": "Bei welcher Temperatur wird das gebacken oder gebraten?",
     "unit": "°C",
     "items": [
-      {"name": "Baguette (klassisch)", "val": 240},
-      {"name": "Croissants", "val": 200},
-      {"name": "Biskuitboden", "val": 180},
-      {"name": "Käsekuchen (New York Style)", "val": 160},
-      {"name": "Makronen (Macarons)", "val": 155},
-      {"name": "Pizza Napoletana (Holzofen)", "val": 450},
-      {"name": "Focaccia", "val": 220},
-      {"name": "Roastbeef (Ofen)", "val": 120},
-      {"name": "Gänsebraten", "val": 160},
-      {"name": "Tarte Tatin", "val": 190},
-      {"name": "Hefezopf", "val": 175},
-      {"name": "Soufflé au Chocolat", "val": 200},
-      {"name": "Königsberger Marzipan (Ofenstufe)", "val": 230},
-      {"name": "Baiser/Meringue", "val": 90},
-      {"name": "Pulled Pork (Low & Slow)", "val": 110},
-      {"name": "Strudel", "val": 190},
-      {"name": "Käsefondue-Auflauf", "val": 180},
-      {"name": "Rehrücken im Braten", "val": 140},
-      {"name": "Dampfnudeln (Deckelgarung)", "val": 100},
-      {"name": "Crème brûlée (Backofen)", "val": 150}
+      {
+        "name": "Baguette (klassisch)",
+        "val": 240
+      },
+      {
+        "name": "Croissants",
+        "val": 200
+      },
+      {
+        "name": "Biskuitboden",
+        "val": 180
+      },
+      {
+        "name": "Käsekuchen (New York Style)",
+        "val": 160
+      },
+      {
+        "name": "Makronen (Macarons)",
+        "val": 155
+      },
+      {
+        "name": "Pizza Napoletana (Holzofen)",
+        "val": 450
+      },
+      {
+        "name": "Focaccia",
+        "val": 220
+      },
+      {
+        "name": "Roastbeef (Ofen)",
+        "val": 120
+      },
+      {
+        "name": "Gänsebraten",
+        "val": 160
+      },
+      {
+        "name": "Tarte Tatin",
+        "val": 190
+      },
+      {
+        "name": "Hefezopf",
+        "val": 175
+      },
+      {
+        "name": "Soufflé au Chocolat",
+        "val": 200
+      },
+      {
+        "name": "Königsberger Marzipan (Ofenstufe)",
+        "val": 230
+      },
+      {
+        "name": "Baiser/Meringue",
+        "val": 90
+      },
+      {
+        "name": "Pulled Pork (Low & Slow)",
+        "val": 110
+      },
+      {
+        "name": "Strudel",
+        "val": 190
+      },
+      {
+        "name": "Käsefondue-Auflauf",
+        "val": 180
+      },
+      {
+        "name": "Rehrücken im Braten",
+        "val": 140
+      },
+      {
+        "name": "Dampfnudeln (Deckelgarung)",
+        "val": 100
+      },
+      {
+        "name": "Crème brûlée (Backofen)",
+        "val": 150
+      }
     ]
   },
   "rezept_alter": {
     "prompt": "Welches Rezept ist älter?",
     "unit": "Jahre",
     "items": [
-      {"name": "Garum (röm. Fischsauce)", "val": 2200},
-      {"name": "Ägyptisches Brot (Sauerteig)", "val": 5000},
-      {"name": "Sumeri Bierrezept", "val": 5000},
-      {"name": "Chinesische Nudelrezepte (Longyuan)", "val": 4000},
-      {"name": "Indisches Dal-Gericht", "val": 3500},
-      {"name": "Griechischer Käse (Feta-Vorgänger)", "val": 3000},
-      {"name": "Römischer Honigkuchen (Savillum)", "val": 2100},
-      {"name": "Mittelhochdeutsches Lebkuchenrezept", "val": 700},
-      {"name": "Sachertorte (Wien 1832)", "val": 193},
-      {"name": "Wiener Schnitzel (1848)", "val": 177},
-      {"name": "Coca-Cola Originalrezept (1886)", "val": 139},
-      {"name": "Toll House Chocolate Chip Cookie (1938)", "val": 87},
-      {"name": "Tikka Masala (Birmingham 1970s)", "val": 55},
-      {"name": "Big Mac (1967)", "val": 58},
-      {"name": "California Roll (1970s)", "val": 55},
-      {"name": "Red Velvet Cake (1920s)", "val": 106},
-      {"name": "Reuben Sandwich (1920s)", "val": 105},
-      {"name": "Thai Green Curry (19. Jh.)", "val": 150},
-      {"name": "Paella Valenciana (19. Jh.)", "val": 170},
-      {"name": "Croissant (Wien 1683-Legende)", "val": 342}
+      {
+        "name": "Garum (röm. Fischsauce)",
+        "val": 2200
+      },
+      {
+        "name": "Ägyptisches Brot (Sauerteig)",
+        "val": 5000
+      },
+      {
+        "name": "Sumeri Bierrezept",
+        "val": 5000
+      },
+      {
+        "name": "Chinesische Nudelrezepte (Longyuan)",
+        "val": 4000
+      },
+      {
+        "name": "Indisches Dal-Gericht",
+        "val": 3500
+      },
+      {
+        "name": "Griechischer Käse (Feta-Vorgänger)",
+        "val": 3000
+      },
+      {
+        "name": "Römischer Honigkuchen (Savillum)",
+        "val": 2100
+      },
+      {
+        "name": "Mittelhochdeutsches Lebkuchenrezept",
+        "val": 700
+      },
+      {
+        "name": "Sachertorte (Wien 1832)",
+        "val": 193
+      },
+      {
+        "name": "Wiener Schnitzel (1848)",
+        "val": 177
+      },
+      {
+        "name": "Coca-Cola Originalrezept (1886)",
+        "val": 139
+      },
+      {
+        "name": "Toll House Chocolate Chip Cookie (1938)",
+        "val": 87
+      },
+      {
+        "name": "Tikka Masala (Birmingham 1970s)",
+        "val": 55
+      },
+      {
+        "name": "Big Mac (1967)",
+        "val": 58
+      },
+      {
+        "name": "California Roll (1970s)",
+        "val": 55
+      },
+      {
+        "name": "Red Velvet Cake (1920s)",
+        "val": 106
+      },
+      {
+        "name": "Reuben Sandwich (1920s)",
+        "val": 105
+      },
+      {
+        "name": "Thai Green Curry (19. Jh.)",
+        "val": 150
+      },
+      {
+        "name": "Paella Valenciana (19. Jh.)",
+        "val": 170
+      },
+      {
+        "name": "Croissant (Wien 1683-Legende)",
+        "val": 342
+      }
     ]
   },
   "alkoholgehalt": {
     "prompt": "Welches Getränk hat einen höheren Alkoholgehalt?",
     "unit": "% Vol",
     "items": [
-      {"name": "Leichtbier (Radler)", "val": 2.5},
-      {"name": "Weizenbier", "val": 5.4},
-      {"name": "Pilsner", "val": 4.9},
-      {"name": "IPA (India Pale Ale)", "val": 6.5},
-      {"name": "Stout (Imperial)", "val": 9.0},
-      {"name": "Prosecco", "val": 11.0},
-      {"name": "Chardonnay", "val": 13.5},
-      {"name": "Rotwein Cabernet Sauvignon", "val": 14.0},
-      {"name": "Süßwein (Sauternes)", "val": 14.0},
-      {"name": "Portwein", "val": 20.0},
-      {"name": "Sherry (fino)", "val": 15.0},
-      {"name": "Sake", "val": 15.5},
-      {"name": "Grappa", "val": 40.0},
-      {"name": "Whisky (Bourbon)", "val": 43.0},
-      {"name": "Rum (overproof)", "val": 65.0},
-      {"name": "Wodka", "val": 40.0},
-      {"name": "Pastis", "val": 45.0},
-      {"name": "Absinthe (traditionell)", "val": 68.0},
-      {"name": "Everclear (US Grain Spirit)", "val": 95.0},
-      {"name": "Kombucha", "val": 0.5}
+      {
+        "name": "Leichtbier (Radler)",
+        "val": 2.5
+      },
+      {
+        "name": "Weizenbier",
+        "val": 5.4
+      },
+      {
+        "name": "Pilsner",
+        "val": 4.9
+      },
+      {
+        "name": "IPA (India Pale Ale)",
+        "val": 6.5
+      },
+      {
+        "name": "Stout (Imperial)",
+        "val": 9.0
+      },
+      {
+        "name": "Prosecco",
+        "val": 11.0
+      },
+      {
+        "name": "Chardonnay",
+        "val": 13.5
+      },
+      {
+        "name": "Rotwein Cabernet Sauvignon",
+        "val": 14.0
+      },
+      {
+        "name": "Süßwein (Sauternes)",
+        "val": 14.0
+      },
+      {
+        "name": "Portwein",
+        "val": 20.0
+      },
+      {
+        "name": "Sherry (fino)",
+        "val": 15.0
+      },
+      {
+        "name": "Sake",
+        "val": 15.5
+      },
+      {
+        "name": "Grappa",
+        "val": 40.0
+      },
+      {
+        "name": "Whisky (Bourbon)",
+        "val": 43.0
+      },
+      {
+        "name": "Rum (overproof)",
+        "val": 65.0
+      },
+      {
+        "name": "Wodka",
+        "val": 40.0
+      },
+      {
+        "name": "Pastis",
+        "val": 45.0
+      },
+      {
+        "name": "Absinthe (traditionell)",
+        "val": 68.0
+      },
+      {
+        "name": "Everclear (US Grain Spirit)",
+        "val": 95.0
+      },
+      {
+        "name": "Kombucha",
+        "val": 0.5
+      },
+      {
+        "name": "Bier (Radler/Shandy)",
+        "val": 2.5
+      },
+      {
+        "name": "Bier (Weizenbier/Hefeweizen)",
+        "val": 5.0
+      },
+      {
+        "name": "Bier (Stout/Imperial Stout)",
+        "val": 9.0
+      },
+      {
+        "name": "Bier (Triple IPA, Sam Adams Utopias)",
+        "val": 28.0
+      },
+      {
+        "name": "Wein (Moscato d'Asti)",
+        "val": 5.5
+      },
+      {
+        "name": "Wein (Sekt/Champagner)",
+        "val": 12.0
+      },
+      {
+        "name": "Wein (Rotwein, Bordeaux)",
+        "val": 13.5
+      },
+      {
+        "name": "Wein (Amarone della Valpolicella)",
+        "val": 17.0
+      },
+      {
+        "name": "Sherry (Fino, trocken)",
+        "val": 15.0
+      },
+      {
+        "name": "Port (Ruby)",
+        "val": 20.0
+      },
+      {
+        "name": "Whisky (Scotch, 40% standard)",
+        "val": 40.0
+      },
+      {
+        "name": "Rum (Overproof, Jamaika)",
+        "val": 75.5
+      },
+      {
+        "name": "Gin (London Dry, standard)",
+        "val": 40.0
+      },
+      {
+        "name": "Wodka (russischer Standard)",
+        "val": 40.0
+      },
+      {
+        "name": "Absinth (La Fée Parisienne)",
+        "val": 68.0
+      },
+      {
+        "name": "Spirytus Rektyfikowany (Polen)",
+        "val": 96.0
+      },
+      {
+        "name": "Tequila (Blanco, NOM standard)",
+        "val": 38.0
+      },
+      {
+        "name": "Sake (Junmai Ginjo)",
+        "val": 16.0
+      },
+      {
+        "name": "Baijiu (Moutai, China)",
+        "val": 53.0
+      },
+      {
+        "name": "Mead/Met (standard)",
+        "val": 12.0
+      }
     ]
   },
   "zutaten_anzahl": {
     "prompt": "Welches klassische Rezept hat mehr Zutaten?",
     "unit": "Zutaten",
     "items": [
-      {"name": "Pasta Aglio e Olio", "val": 5},
-      {"name": "Margherita Pizza", "val": 5},
-      {"name": "Bouillabaisse", "val": 18},
-      {"name": "Wiener Sachertorte", "val": 9},
-      {"name": "Beef Wellington", "val": 12},
-      {"name": "Paella Valenciana", "val": 14},
-      {"name": "Boeuf Bourguignon", "val": 16},
-      {"name": "Mole Poblano (Mexiko)", "val": 30},
-      {"name": "Rendang", "val": 22},
-      {"name": "Ramen (Tonkotsu)", "val": 20},
-      {"name": "Rührei", "val": 3},
-      {"name": "Crêpes Suzette", "val": 8},
-      {"name": "Choucroute Garnie", "val": 17},
-      {"name": "Tagine mit Gemüse", "val": 15},
-      {"name": "Spanisches Gazpacho", "val": 8},
-      {"name": "Vitello Tonnato", "val": 11},
-      {"name": "Tom Kha Gai", "val": 13},
-      {"name": "Türkisches Börek", "val": 8},
-      {"name": "Rösti Berner Art", "val": 4},
-      {"name": "Kaiserschmarrn", "val": 7}
+      {
+        "name": "Pasta Aglio e Olio",
+        "val": 5
+      },
+      {
+        "name": "Margherita Pizza",
+        "val": 5
+      },
+      {
+        "name": "Bouillabaisse",
+        "val": 18
+      },
+      {
+        "name": "Wiener Sachertorte",
+        "val": 9
+      },
+      {
+        "name": "Beef Wellington",
+        "val": 12
+      },
+      {
+        "name": "Paella Valenciana",
+        "val": 14
+      },
+      {
+        "name": "Boeuf Bourguignon",
+        "val": 16
+      },
+      {
+        "name": "Mole Poblano (Mexiko)",
+        "val": 30
+      },
+      {
+        "name": "Rendang",
+        "val": 22
+      },
+      {
+        "name": "Ramen (Tonkotsu)",
+        "val": 20
+      },
+      {
+        "name": "Rührei",
+        "val": 3
+      },
+      {
+        "name": "Crêpes Suzette",
+        "val": 8
+      },
+      {
+        "name": "Choucroute Garnie",
+        "val": 17
+      },
+      {
+        "name": "Tagine mit Gemüse",
+        "val": 15
+      },
+      {
+        "name": "Spanisches Gazpacho",
+        "val": 8
+      },
+      {
+        "name": "Vitello Tonnato",
+        "val": 11
+      },
+      {
+        "name": "Tom Kha Gai",
+        "val": 13
+      },
+      {
+        "name": "Türkisches Börek",
+        "val": 8
+      },
+      {
+        "name": "Rösti Berner Art",
+        "val": 4
+      },
+      {
+        "name": "Kaiserschmarrn",
+        "val": 7
+      }
     ]
   },
   "schmelzpunkt": {
     "prompt": "Welches Produkt hat einen höheren Schmelzpunkt?",
     "unit": "°C",
     "items": [
-      {"name": "Kakaobutterersatz (CBE)", "val": 40},
-      {"name": "Vollmilchschokolade", "val": 30},
-      {"name": "Dunkle Schokolade 70%", "val": 35},
-      {"name": "Kakaobutter (rein)", "val": 34},
-      {"name": "Kokosfett (raffiniert)", "val": 24},
-      {"name": "Palmöl (RBD)", "val": 40},
-      {"name": "Schweineschmalz", "val": 36},
-      {"name": "Rindertalg", "val": 45},
-      {"name": "Butter (Milchfett)", "val": 32},
-      {"name": "Ghee (Butterschmalz)", "val": 37},
-      {"name": "Isomalt (Zuckerersatz)", "val": 145},
-      {"name": "Traubenzucker (Glucose)", "val": 146},
-      {"name": "Saccharose (Haushaltszucker)", "val": 185},
-      {"name": "Gelatin (Schmelzpunkt Gel)", "val": 35},
-      {"name": "Agar-Agar (Schmelzpunkt)", "val": 85},
-      {"name": "Wachs (Bienenwachs)", "val": 62},
-      {"name": "Kakaopulver (schmilzt nicht)", "val": 300},
-      {"name": "Stearinsäure (Fettsäure)", "val": 70},
-      {"name": "Laurinsäure (C12)", "val": 44},
-      {"name": "Palmitinsäure (C16)", "val": 63}
+      {
+        "name": "Kakaobutterersatz (CBE)",
+        "val": 40
+      },
+      {
+        "name": "Vollmilchschokolade",
+        "val": 30
+      },
+      {
+        "name": "Dunkle Schokolade 70%",
+        "val": 35
+      },
+      {
+        "name": "Kakaobutter (rein)",
+        "val": 34
+      },
+      {
+        "name": "Kokosfett (raffiniert)",
+        "val": 24
+      },
+      {
+        "name": "Palmöl (RBD)",
+        "val": 40
+      },
+      {
+        "name": "Schweineschmalz",
+        "val": 36
+      },
+      {
+        "name": "Rindertalg",
+        "val": 45
+      },
+      {
+        "name": "Butter (Milchfett)",
+        "val": 32
+      },
+      {
+        "name": "Ghee (Butterschmalz)",
+        "val": 37
+      },
+      {
+        "name": "Isomalt (Zuckerersatz)",
+        "val": 145
+      },
+      {
+        "name": "Traubenzucker (Glucose)",
+        "val": 146
+      },
+      {
+        "name": "Saccharose (Haushaltszucker)",
+        "val": 185
+      },
+      {
+        "name": "Gelatin (Schmelzpunkt Gel)",
+        "val": 35
+      },
+      {
+        "name": "Agar-Agar (Schmelzpunkt)",
+        "val": 85
+      },
+      {
+        "name": "Wachs (Bienenwachs)",
+        "val": 62
+      },
+      {
+        "name": "Kakaopulver (schmilzt nicht)",
+        "val": 300
+      },
+      {
+        "name": "Stearinsäure (Fettsäure)",
+        "val": 70
+      },
+      {
+        "name": "Laurinsäure (C12)",
+        "val": 44
+      },
+      {
+        "name": "Palmitinsäure (C16)",
+        "val": 63
+      }
     ]
   },
   "prokopf_verbrauch": {
     "prompt": "Von welchem Nahrungsmittel wird pro Kopf mehr verbraucht (jährlich)?",
     "unit": "kg/Jahr",
     "items": [
-      {"name": "Milch (Deutschland)", "val": 52.0},
-      {"name": "Brot & Backwaren (Deutschland)", "val": 53.0},
-      {"name": "Fleisch (Deutschland)", "val": 52.0},
-      {"name": "Zucker (Deutschland)", "val": 32.5},
-      {"name": "Kartoffeln (Deutschland)", "val": 55.0},
-      {"name": "Gemüse (Deutschland)", "val": 88.0},
-      {"name": "Obst (Deutschland)", "val": 67.0},
-      {"name": "Käse (Frankreich)", "val": 27.0},
-      {"name": "Olivenöl (Griechenland)", "val": 14.0},
-      {"name": "Reis (Japan)", "val": 52.0},
-      {"name": "Pasta (Italien)", "val": 23.0},
-      {"name": "Kaffee (Finnland)", "val": 12.0},
-      {"name": "Bier (Tschechien)", "val": 135.0},
-      {"name": "Wein (Frankreich Liter)", "val": 46.0},
-      {"name": "Meeresfrüchte (Japan)", "val": 50.0},
-      {"name": "Bananen (Ecuador pro Kopf Prod.)", "val": 5.5},
-      {"name": "Schokolade (Schweiz)", "val": 10.3},
-      {"name": "Tee (China)", "val": 1.5},
-      {"name": "Honig (Neuseeland)", "val": 1.7},
-      {"name": "Speisesalz (Weltdurchschnitt)", "val": 5.0}
+      {
+        "name": "Milch (Deutschland)",
+        "val": 52.0
+      },
+      {
+        "name": "Brot & Backwaren (Deutschland)",
+        "val": 53.0
+      },
+      {
+        "name": "Fleisch (Deutschland)",
+        "val": 52.0
+      },
+      {
+        "name": "Zucker (Deutschland)",
+        "val": 32.5
+      },
+      {
+        "name": "Kartoffeln (Deutschland)",
+        "val": 55.0
+      },
+      {
+        "name": "Gemüse (Deutschland)",
+        "val": 88.0
+      },
+      {
+        "name": "Obst (Deutschland)",
+        "val": 67.0
+      },
+      {
+        "name": "Käse (Frankreich)",
+        "val": 27.0
+      },
+      {
+        "name": "Olivenöl (Griechenland)",
+        "val": 14.0
+      },
+      {
+        "name": "Reis (Japan)",
+        "val": 52.0
+      },
+      {
+        "name": "Pasta (Italien)",
+        "val": 23.0
+      },
+      {
+        "name": "Kaffee (Finnland)",
+        "val": 12.0
+      },
+      {
+        "name": "Bier (Tschechien)",
+        "val": 135.0
+      },
+      {
+        "name": "Wein (Frankreich Liter)",
+        "val": 46.0
+      },
+      {
+        "name": "Meeresfrüchte (Japan)",
+        "val": 50.0
+      },
+      {
+        "name": "Bananen (Ecuador pro Kopf Prod.)",
+        "val": 5.5
+      },
+      {
+        "name": "Schokolade (Schweiz)",
+        "val": 10.3
+      },
+      {
+        "name": "Tee (China)",
+        "val": 1.5
+      },
+      {
+        "name": "Honig (Neuseeland)",
+        "val": 1.7
+      },
+      {
+        "name": "Speisesalz (Weltdurchschnitt)",
+        "val": 5.0
+      },
+      {
+        "name": "USA — Fleisch (gesamt)",
+        "val": 128.0
+      },
+      {
+        "name": "Australien — Fleisch (gesamt)",
+        "val": 121.0
+      },
+      {
+        "name": "Argentinien — Rindfleisch",
+        "val": 55.0
+      },
+      {
+        "name": "Deutschland — Bier",
+        "val": 87.0
+      },
+      {
+        "name": "Tschechien — Bier (Weltspitze)",
+        "val": 135.0
+      },
+      {
+        "name": "Frankreich — Wein",
+        "val": 49.0
+      },
+      {
+        "name": "Portugal — Wein",
+        "val": 62.0
+      },
+      {
+        "name": "Schweiz — Schokolade (Weltspitze)",
+        "val": 10.3
+      },
+      {
+        "name": "Deutschland — Schokolade",
+        "val": 7.9
+      },
+      {
+        "name": "Österreich — Kaffee",
+        "val": 7.8
+      },
+      {
+        "name": "Finnland — Kaffee (Weltspitze)",
+        "val": 12.2
+      },
+      {
+        "name": "Island — Fisch (Weltspitze)",
+        "val": 90.0
+      },
+      {
+        "name": "Japan — Meeresfrüchte",
+        "val": 62.0
+      },
+      {
+        "name": "China — Schweinefleisch",
+        "val": 38.0
+      },
+      {
+        "name": "Indien — Getreide (gesamt)",
+        "val": 143.0
+      },
+      {
+        "name": "Brasilien — Zucker",
+        "val": 54.0
+      },
+      {
+        "name": "USA — Mais (verarbeitet gesamt)",
+        "val": 121.0
+      },
+      {
+        "name": "Norwegen — Lachskonsum",
+        "val": 20.0
+      },
+      {
+        "name": "Türkei — Tee (Weltspitze)",
+        "val": 3.2
+      },
+      {
+        "name": "Griechenland — Olivenöl",
+        "val": 20.0
+      }
     ]
   },
   "haltbarkeit": {
     "prompt": "Welches Lebensmittel hält sich länger (bei korrekter Lagerung)?",
     "unit": "Tage",
     "items": [
-      {"name": "Frischer Hüttenkäse (geöffnet)", "val": 5},
-      {"name": "Frische Milch (geöffnet)", "val": 3},
-      {"name": "Frisches Baguette", "val": 2},
-      {"name": "Hausgemachtes Pesto (Kühlschrank)", "val": 7},
-      {"name": "Frische Pasta (Kühlschrank)", "val": 4},
-      {"name": "Joghurt (original)", "val": 21},
-      {"name": "Camembert (original)", "val": 14},
-      {"name": "Parmesan (ganzer Block)", "val": 365},
-      {"name": "Honig (unerhitzt, verschlossen)", "val": 36500},
-      {"name": "Trockenreis (weiß, trocken)", "val": 3650},
-      {"name": "Trockennudeln", "val": 730},
-      {"name": "Konservierte Sardinen", "val": 1825},
-      {"name": "UHT-Milch (ungeöffnet)", "val": 180},
-      {"name": "Salz (Küchensalz)", "val": 36500},
-      {"name": "Destillierter Weinessig", "val": 1825},
-      {"name": "Weizenmehl (trocken)", "val": 365},
-      {"name": "Zucker (granuliert, trocken)", "val": 36500},
-      {"name": "Dunkle Schokolade 70%", "val": 365},
-      {"name": "Getrocknete Bohnen", "val": 1095},
-      {"name": "Natives Olivenöl extra", "val": 730}
+      {
+        "name": "Frischer Hüttenkäse (geöffnet)",
+        "val": 5
+      },
+      {
+        "name": "Frische Milch (geöffnet)",
+        "val": 3
+      },
+      {
+        "name": "Frisches Baguette",
+        "val": 2
+      },
+      {
+        "name": "Hausgemachtes Pesto (Kühlschrank)",
+        "val": 7
+      },
+      {
+        "name": "Frische Pasta (Kühlschrank)",
+        "val": 4
+      },
+      {
+        "name": "Joghurt (original)",
+        "val": 21
+      },
+      {
+        "name": "Camembert (original)",
+        "val": 14
+      },
+      {
+        "name": "Parmesan (ganzer Block)",
+        "val": 365
+      },
+      {
+        "name": "Honig (unerhitzt, verschlossen)",
+        "val": 36500
+      },
+      {
+        "name": "Trockenreis (weiß, trocken)",
+        "val": 3650
+      },
+      {
+        "name": "Trockennudeln",
+        "val": 730
+      },
+      {
+        "name": "Konservierte Sardinen",
+        "val": 1825
+      },
+      {
+        "name": "UHT-Milch (ungeöffnet)",
+        "val": 180
+      },
+      {
+        "name": "Salz (Küchensalz)",
+        "val": 36500
+      },
+      {
+        "name": "Destillierter Weinessig",
+        "val": 1825
+      },
+      {
+        "name": "Weizenmehl (trocken)",
+        "val": 365
+      },
+      {
+        "name": "Zucker (granuliert, trocken)",
+        "val": 36500
+      },
+      {
+        "name": "Dunkle Schokolade 70%",
+        "val": 365
+      },
+      {
+        "name": "Getrocknete Bohnen",
+        "val": 1095
+      },
+      {
+        "name": "Natives Olivenöl extra",
+        "val": 730
+      }
     ]
   },
   "rekord_gewicht": {
     "prompt": "Welches Nahrungsmittel hält den schwereren Weltrekord?",
     "unit": "kg",
     "items": [
-      {"name": "Schwerster Kürbis (Rekord 2023)", "val": 1247.0},
-      {"name": "Größter Käselaib (Rekord)", "val": 582.0},
-      {"name": "Schwerstes Brot (Rekord)", "val": 1431.0},
-      {"name": "Größte Pizza (Durchmesser in m → kg)", "val": 2000.0},
-      {"name": "Schwerste Zwetschge (Einzelfrucht)", "val": 0.32},
-      {"name": "Schwerste Erdbeere (Rekord)", "val": 0.29},
-      {"name": "Schwerster Fisch gefangen (Weißer Hai)", "val": 1208.0},
-      {"name": "Schwerste Wassermelone (Rekord)", "val": 159.0},
-      {"name": "Schwerste Zwiebel (Rekord)", "val": 8.97},
-      {"name": "Schwerste Banane (Einzeln)", "val": 0.25},
-      {"name": "Schwerster Apfel (Rekord)", "val": 1.85},
-      {"name": "Schwerster Thunfisch je versteigert", "val": 278.0},
-      {"name": "Schwerster Truthahn (Zucht-Rekord)", "val": 39.09},
-      {"name": "Größter Burger (Rekord)", "val": 913.0},
-      {"name": "Schwerstes Weinfass (Barrique-Equivalent)", "val": 400.0},
-      {"name": "Schwerste Möhre (Rekord)", "val": 10.17},
-      {"name": "Schwerste Rübe (Rekord)", "val": 29.0},
-      {"name": "Schwerster Hummerrekord", "val": 20.1},
-      {"name": "Größter Schokoladenkeks (Rekord)", "val": 58.0},
-      {"name": "Größte Dose Kaviar (serviert)", "val": 1.7}
+      {
+        "name": "Schwerster Kürbis (Rekord 2023)",
+        "val": 1247.0
+      },
+      {
+        "name": "Größter Käselaib (Rekord)",
+        "val": 582.0
+      },
+      {
+        "name": "Schwerstes Brot (Rekord)",
+        "val": 1431.0
+      },
+      {
+        "name": "Größte Pizza (Durchmesser in m → kg)",
+        "val": 2000.0
+      },
+      {
+        "name": "Schwerste Zwetschge (Einzelfrucht)",
+        "val": 0.32
+      },
+      {
+        "name": "Schwerste Erdbeere (Rekord)",
+        "val": 0.29
+      },
+      {
+        "name": "Schwerster Fisch gefangen (Weißer Hai)",
+        "val": 1208.0
+      },
+      {
+        "name": "Schwerste Wassermelone (Rekord)",
+        "val": 159.0
+      },
+      {
+        "name": "Schwerste Zwiebel (Rekord)",
+        "val": 8.97
+      },
+      {
+        "name": "Schwerste Banane (Einzeln)",
+        "val": 0.25
+      },
+      {
+        "name": "Schwerster Apfel (Rekord)",
+        "val": 1.85
+      },
+      {
+        "name": "Schwerster Thunfisch je versteigert",
+        "val": 278.0
+      },
+      {
+        "name": "Schwerster Truthahn (Zucht-Rekord)",
+        "val": 39.09
+      },
+      {
+        "name": "Größter Burger (Rekord)",
+        "val": 913.0
+      },
+      {
+        "name": "Schwerstes Weinfass (Barrique-Equivalent)",
+        "val": 400.0
+      },
+      {
+        "name": "Schwerste Möhre (Rekord)",
+        "val": 10.17
+      },
+      {
+        "name": "Schwerste Rübe (Rekord)",
+        "val": 29.0
+      },
+      {
+        "name": "Schwerster Hummerrekord",
+        "val": 20.1
+      },
+      {
+        "name": "Größter Schokoladenkeks (Rekord)",
+        "val": 58.0
+      },
+      {
+        "name": "Größte Dose Kaviar (serviert)",
+        "val": 1.7
+      }
     ]
   }
 }

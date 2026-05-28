@@ -311,6 +311,91 @@
         "n": "Geisha-Region, Kaffa, Äthiopien",
         "lat": 7.5,
         "lng": 36.8
+      },
+      {
+        "n": "Kaffee-Ursprung Kaffa (Äthiopien)",
+        "lat": 7.28,
+        "lng": 36.08
+      },
+      {
+        "n": "Kaffeeplantage Kona (Hawaii, USA)",
+        "lat": 19.64,
+        "lng": -155.9969
+      },
+      {
+        "n": "Kaffeeplantage Jamaica Blue Mountain",
+        "lat": 18.1096,
+        "lng": -76.3322
+      },
+      {
+        "n": "Kaffeeplantage Minas Gerais (Brasilien)",
+        "lat": -19.9167,
+        "lng": -43.9345
+      },
+      {
+        "n": "Kaffeeplantage Yirgacheffe (Äthiopien)",
+        "lat": 6.1553,
+        "lng": 38.2075
+      },
+      {
+        "n": "Kaffeeplantage Sumatra Mandheling",
+        "lat": 2.2333,
+        "lng": 99.0583
+      },
+      {
+        "n": "Kaffeeplantage Kenya Nyeri",
+        "lat": -0.421,
+        "lng": 36.9476
+      },
+      {
+        "n": "Kaffeeplantage Tarrazú (Costa Rica)",
+        "lat": 9.6667,
+        "lng": -83.8333
+      },
+      {
+        "n": "Kaffeeplantage Sidama (Äthiopien)",
+        "lat": 6.7714,
+        "lng": 38.5
+      },
+      {
+        "n": "Kaffeeplantage Boquete (Panama)",
+        "lat": 8.779,
+        "lng": -82.4374
+      },
+      {
+        "n": "Kaffeeplantage Cauca (Kolumbien)",
+        "lat": 2.4448,
+        "lng": -76.6147
+      },
+      {
+        "n": "Kaffeeplantage Tarrazu Dota (Costa Rica)",
+        "lat": 9.6589,
+        "lng": -83.8456
+      },
+      {
+        "n": "Kaffeeplantage Aceh Gayo (Indonesien)",
+        "lat": 4.6951,
+        "lng": 96.7494
+      },
+      {
+        "n": "Kaffeeplantage Sulawesi Toraja",
+        "lat": -2.965,
+        "lng": 119.89
+      },
+      {
+        "n": "Kaffeeplantage Papua-Neuguinea Highlands",
+        "lat": -5.867,
+        "lng": 145.37
+      },
+      {
+        "n": "Kaffeeplantage Vietnam Da Lat",
+        "lat": 11.9404,
+        "lng": 108.4583
+      },
+      {
+        "n": "Kaffeeplantage Peru Cajamarca",
+        "lat": -7.1639,
+        "lng": -78.5001
       }
     ]
   },
@@ -736,6 +821,106 @@
         "n": "Café El Morro, Havanna",
         "lat": 23.1502,
         "lng": -82.3564
+      },
+      {
+        "n": "Café Central (Wien)",
+        "lat": 48.2099,
+        "lng": 16.3654
+      },
+      {
+        "n": "Café de Flore (Paris)",
+        "lat": 48.8538,
+        "lng": 2.3328
+      },
+      {
+        "n": "Caffè Florian (Venedig)",
+        "lat": 45.434,
+        "lng": 12.3387
+      },
+      {
+        "n": "Café Procope (Paris, ältestes Kaffeehaus Frankreichs)",
+        "lat": 48.8529,
+        "lng": 2.3397
+      },
+      {
+        "n": "Antico Caffè Greco (Rom)",
+        "lat": 41.9028,
+        "lng": 12.4808
+      },
+      {
+        "n": "Café Tortoni (Buenos Aires)",
+        "lat": -34.6077,
+        "lng": -58.3773
+      },
+      {
+        "n": "Starbucks Reserve Roastery (Seattle)",
+        "lat": 47.6062,
+        "lng": -122.3321
+      },
+      {
+        "n": "Blue Bottle Coffee (Oakland, CA)",
+        "lat": 37.8044,
+        "lng": -122.2712
+      },
+      {
+        "n": "Kaffehaus Schwarzenberg (Wien)",
+        "lat": 48.2027,
+        "lng": 16.3726
+      },
+      {
+        "n": "Café Landtmann (Wien, Freud-Kaffeehaus)",
+        "lat": 48.2129,
+        "lng": 16.36
+      },
+      {
+        "n": "Café Gerbeaud (Budapest)",
+        "lat": 47.4979,
+        "lng": 19.0503
+      },
+      {
+        "n": "Grand Café Orient (Prag)",
+        "lat": 50.088,
+        "lng": 14.424
+      },
+      {
+        "n": "Caffè Sant'Eustachio (Rom)",
+        "lat": 41.8986,
+        "lng": 12.4752
+      },
+      {
+        "n": "Café de l'Opera (Barcelona)",
+        "lat": 41.3797,
+        "lng": 2.1731
+      },
+      {
+        "n": "Kaffee-Rösterei Rast (Zürich)",
+        "lat": 47.3769,
+        "lng": 8.5417
+      },
+      {
+        "n": "Minamoto Kitchoan (Tokio)",
+        "lat": 35.6762,
+        "lng": 139.6503
+      },
+      {
+        "n": "T2 Tea Emporium (Melbourne)",
+        "lat": -37.8136,
+        "lng": 144.9631
+      },
+      {
+        "n": "The Tea Chapter (Singapur)",
+        "lat": 1.2808,
+        "lng": 103.8449
+      },
+      {
+        "n": "Cafe Pouchkine (Moskau/Paris)",
+        "lat": 48.8737,
+        "lng": 2.3074
+      },
+      {
+        "n": "Mariage Frères (Paris, seit 1854)",
+        "lat": 48.857,
+        "lng": 2.3521
       }
     ]
   },
@@ -841,6 +1026,96 @@
         "n": "Hotel Chocolat, Luton UK",
         "lat": 51.8831,
         "lng": -0.3936
+      },
+      {
+        "n": "Valrhona Schokoladenfabrik (Tain-l'Hermitage, FR)",
+        "lat": 45.0667,
+        "lng": 4.85
+      },
+      {
+        "n": "Barry Callebaut Fabrik (Lebbeke-Wieze, Belgien)",
+        "lat": 50.9986,
+        "lng": 4.1328
+      },
+      {
+        "n": "Lindt Schokoladenmuseum (Köln)",
+        "lat": 50.9247,
+        "lng": 6.965
+      },
+      {
+        "n": "Hotel Chocolat Plantage (St. Lucia)",
+        "lat": 13.9094,
+        "lng": -61.0678
+      },
+      {
+        "n": "Theo Chocolate (Seattle, WA)",
+        "lat": 47.6627,
+        "lng": -122.3765
+      },
+      {
+        "n": "Scharffen Berger (San Francisco)",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "n": "Original Beans Factory (Niederlande)",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      {
+        "n": "Kakao-Plantage Kumasi (Ghana)",
+        "lat": 6.6884,
+        "lng": -1.6244
+      },
+      {
+        "n": "Kakao-Hafen Abidjan (Côte d'Ivoire)",
+        "lat": 5.36,
+        "lng": -4.0083
+      },
+      {
+        "n": "Kakao Ursprung Mesoamerika (Chiapas, Mexiko)",
+        "lat": 16.7569,
+        "lng": -93.1292
+      },
+      {
+        "n": "Schokoladenmesse Salon du Chocolat (Paris)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "Maison Cluizel (Damville, Normandie)",
+        "lat": 49.0,
+        "lng": 0.9333
+      },
+      {
+        "n": "Jacques Torres Chocolate (New York)",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      {
+        "n": "Pacari Chocolate (Quito, Ecuador)",
+        "lat": -0.2299,
+        "lng": -78.5249
+      },
+      {
+        "n": "Askinosie Chocolate (Springfield, MO)",
+        "lat": 37.2153,
+        "lng": -93.2982
+      },
+      {
+        "n": "Ritter Sport Fabrik (Waldenbuch, BW)",
+        "lat": 48.6297,
+        "lng": 9.1197
+      },
+      {
+        "n": "Kakao-Museum (Barcelona)",
+        "lat": 41.3795,
+        "lng": 2.1754
+      },
+      {
+        "n": "Ferrero Hauptwerk (Alba, Piemont)",
+        "lat": 44.7003,
+        "lng": 8.0337
       }
     ]
   },
@@ -946,6 +1221,106 @@
         "n": "Leeuwin Estate, Margaret River WA",
         "lat": -33.9575,
         "lng": 115.071
+      },
+      {
+        "n": "Mosel-Weingebiet (Bernkastel-Kues)",
+        "lat": 49.9183,
+        "lng": 7.0685
+      },
+      {
+        "n": "Napa Valley (Oakville, Kalifornien)",
+        "lat": 38.4277,
+        "lng": -122.4
+      },
+      {
+        "n": "Bordeaux Saint-Émilion",
+        "lat": 44.8939,
+        "lng": -0.155
+      },
+      {
+        "n": "Rheingau (Rüdesheim am Rhein)",
+        "lat": 49.977,
+        "lng": 7.9178
+      },
+      {
+        "n": "Barossa Valley (Australien)",
+        "lat": -34.5333,
+        "lng": 138.95
+      },
+      {
+        "n": "Marlborough (Neuseeland, Sauvignon Blanc)",
+        "lat": -41.5133,
+        "lng": 173.9553
+      },
+      {
+        "n": "Mendoza (Argentinien, Malbec)",
+        "lat": -32.8895,
+        "lng": -68.8458
+      },
+      {
+        "n": "Rioja Alta (Spanien)",
+        "lat": 42.464,
+        "lng": -2.4439
+      },
+      {
+        "n": "Priorat (Katalonien, Spanien)",
+        "lat": 41.1892,
+        "lng": 0.8498
+      },
+      {
+        "n": "Champagne (Épernay, Frankreich)",
+        "lat": 49.0474,
+        "lng": 3.9599
+      },
+      {
+        "n": "Burgundy Côte d'Or (Beaune)",
+        "lat": 47.0254,
+        "lng": 4.8399
+      },
+      {
+        "n": "Tuscany Chianti Classico (Radda)",
+        "lat": 43.4858,
+        "lng": 11.3732
+      },
+      {
+        "n": "Douro Valley (Porto-Wein-Region)",
+        "lat": 41.1579,
+        "lng": -7.7923
+      },
+      {
+        "n": "Willamette Valley (Oregon, Pinot Noir)",
+        "lat": 45.1,
+        "lng": -123.2
+      },
+      {
+        "n": "Hunter Valley (New South Wales)",
+        "lat": -32.8383,
+        "lng": 151.3521
+      },
+      {
+        "n": "Wachau (Niederösterreich)",
+        "lat": 48.3667,
+        "lng": 15.4
+      },
+      {
+        "n": "Stellenbosch (Südafrika)",
+        "lat": -33.9321,
+        "lng": 18.8602
+      },
+      {
+        "n": "Cahors (Frankreich, Malbec original)",
+        "lat": 44.4486,
+        "lng": 1.442
+      },
+      {
+        "n": "Pfalz (Neustadt an der Weinstraße)",
+        "lat": 49.3538,
+        "lng": 8.1378
+      },
+      {
+        "n": "Eger (Ungarn, Egri Bikavér)",
+        "lat": 47.9025,
+        "lng": 20.3772
       }
     ]
   },
@@ -1156,6 +1531,91 @@
         "n": "Expo del Queso, Montevideo",
         "lat": -34.9011,
         "lng": -56.1645
+      },
+      {
+        "n": "Oktoberfest (München)",
+        "lat": 48.1302,
+        "lng": 11.5501
+      },
+      {
+        "n": "La Tomatina (Buñol, Spanien)",
+        "lat": 39.4167,
+        "lng": -0.8167
+      },
+      {
+        "n": "Lopburi-Affenbankett (Thailand)",
+        "lat": 14.7997,
+        "lng": 100.6531
+      },
+      {
+        "n": "Gilroy Garlic Festival (Gilroy, CA)",
+        "lat": 37.0057,
+        "lng": -121.5683
+      },
+      {
+        "n": "World Gumbo Cookoff (New Orleans)",
+        "lat": 29.9511,
+        "lng": -90.0715
+      },
+      {
+        "n": "Covent Garden Apple Harvest (London)",
+        "lat": 51.512,
+        "lng": -0.1224
+      },
+      {
+        "n": "Truffle Festival Périgueux (Frankreich)",
+        "lat": 45.184,
+        "lng": 0.7214
+      },
+      {
+        "n": "Salon de l'Agriculture (Paris)",
+        "lat": 48.842,
+        "lng": 2.2897
+      },
+      {
+        "n": "Slow Food Salone del Gusto (Turin)",
+        "lat": 45.0703,
+        "lng": 7.6869
+      },
+      {
+        "n": "Thai Food Festival Bangkok (Lumpini)",
+        "lat": 13.7308,
+        "lng": 100.5418
+      },
+      {
+        "n": "Sapporo Ramen Show (Japan)",
+        "lat": 43.0642,
+        "lng": 141.3469
+      },
+      {
+        "n": "Cannes Film Dinner Festival (Cannes)",
+        "lat": 43.5528,
+        "lng": 7.0174
+      },
+      {
+        "n": "Glastonbury Farmhouse Feast (UK)",
+        "lat": 51.1557,
+        "lng": -2.7138
+      },
+      {
+        "n": "Brest Oyster Festival (Bretagne)",
+        "lat": 48.3905,
+        "lng": -4.486
+      },
+      {
+        "n": "Madrid Fusión (Gastronomiegipfel)",
+        "lat": 40.4168,
+        "lng": -3.7038
+      },
+      {
+        "n": "Albacete Garlic-Saffron Fair (Spanien)",
+        "lat": 38.9954,
+        "lng": -1.8585
+      },
+      {
+        "n": "Korea Baphomet Kimchi Festival (Seoul)",
+        "lat": 37.5665,
+        "lng": 126.978
       }
     ]
   }

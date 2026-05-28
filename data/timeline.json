@@ -3,120 +3,1019 @@
     "prompt": "Ordne diese Erdbeben chronologisch — vom ältesten zum jüngsten!",
     "unit": "Jahr",
     "items": [
-      {"n": "San Francisco 1906", "year": 1906, "hint": "Stärke 7,9 — 3.000 Tote"},
-      {"n": "Valdivia 1960", "year": 1960, "hint": "Stärkstes je gemessenes Erdbeben (9,5)"},
-      {"n": "Alaska 1964", "year": 1964, "hint": "Stärke 9,2 — Großer Karfreitagsbeben"},
-      {"n": "Tangshan 1976", "year": 1976, "hint": "~242.000 Tote in China"},
-      {"n": "Mexiko-Stadt 1985", "year": 1985, "hint": "Stärke 8,0 — 10.000 Tote"},
-      {"n": "Northridge 1994", "year": 1994, "hint": "Stärke 6,7 — Los Angeles"},
-      {"n": "Kobe 1995", "year": 1995, "hint": "Stärke 6,9 — 6.400 Tote in Japan"},
-      {"n": "Izmit 1999", "year": 1999, "hint": "Stärke 7,6 — Türkei"},
-      {"n": "Gujarat 2001", "year": 2001, "hint": "Stärke 7,7 — Indien"},
-      {"n": "Sumatra 2004", "year": 2004, "hint": "Stärke 9,1 — Auslöser des Tsunamis"},
-      {"n": "Kaschmir 2005", "year": 2005, "hint": "Stärke 7,6 — 80.000 Tote"},
-      {"n": "Sichuan 2008", "year": 2008, "hint": "Stärke 7,9 — China"},
-      {"n": "Haiti 2010", "year": 2010, "hint": "Stärke 7,0 — 220.000 Tote"},
-      {"n": "Chile 2010", "year": 2010, "hint": "Stärke 8,8 — Concepción"},
-      {"n": "Christchurch 2011", "year": 2011, "hint": "Stärke 6,3 — Neuseeland"},
-      {"n": "Tōhoku 2011", "year": 2011, "hint": "Stärke 9,0 — Japan, Fukushima-Katastrophe"},
-      {"n": "Nepal 2015", "year": 2015, "hint": "Stärke 7,8 — 9.000 Tote"},
-      {"n": "Ecuador 2016", "year": 2016, "hint": "Stärke 7,8 — Küstengebiet"},
-      {"n": "Mexiko-Stadt 2017", "year": 2017, "hint": "Stärke 7,1 — 370 Tote"},
-      {"n": "Sulawesi 2018", "year": 2018, "hint": "Stärke 7,5 — Palu, Tsunami"},
-      {"n": "Albanien 2019", "year": 2019, "hint": "Stärke 6,4 — 51 Tote"},
-      {"n": "Zagreb 2020", "year": 2020, "hint": "Stärke 5,5 — Kroatien"},
-      {"n": "Haiti 2021", "year": 2021, "hint": "Stärke 7,2 — 2.200 Tote"},
-      {"n": "Türkei-Syrien 2023", "year": 2023, "hint": "Stärke 7,8 — 50.000+ Tote"}
+      {
+        "n": "San Francisco 1906",
+        "year": 1906,
+        "hint": "Stärke 7,9 — 3.000 Tote"
+      },
+      {
+        "n": "Valdivia 1960",
+        "year": 1960,
+        "hint": "Stärkstes je gemessenes Erdbeben (9,5)"
+      },
+      {
+        "n": "Alaska 1964",
+        "year": 1964,
+        "hint": "Stärke 9,2 — Großer Karfreitagsbeben"
+      },
+      {
+        "n": "Tangshan 1976",
+        "year": 1976,
+        "hint": "~242.000 Tote in China"
+      },
+      {
+        "n": "Mexiko-Stadt 1985",
+        "year": 1985,
+        "hint": "Stärke 8,0 — 10.000 Tote"
+      },
+      {
+        "n": "Northridge 1994",
+        "year": 1994,
+        "hint": "Stärke 6,7 — Los Angeles"
+      },
+      {
+        "n": "Kobe 1995",
+        "year": 1995,
+        "hint": "Stärke 6,9 — 6.400 Tote in Japan"
+      },
+      {
+        "n": "Izmit 1999",
+        "year": 1999,
+        "hint": "Stärke 7,6 — Türkei"
+      },
+      {
+        "n": "Gujarat 2001",
+        "year": 2001,
+        "hint": "Stärke 7,7 — Indien"
+      },
+      {
+        "n": "Sumatra 2004",
+        "year": 2004,
+        "hint": "Stärke 9,1 — Auslöser des Tsunamis"
+      },
+      {
+        "n": "Kaschmir 2005",
+        "year": 2005,
+        "hint": "Stärke 7,6 — 80.000 Tote"
+      },
+      {
+        "n": "Sichuan 2008",
+        "year": 2008,
+        "hint": "Stärke 7,9 — China"
+      },
+      {
+        "n": "Haiti 2010",
+        "year": 2010,
+        "hint": "Stärke 7,0 — 220.000 Tote"
+      },
+      {
+        "n": "Chile 2010",
+        "year": 2010,
+        "hint": "Stärke 8,8 — Concepción"
+      },
+      {
+        "n": "Christchurch 2011",
+        "year": 2011,
+        "hint": "Stärke 6,3 — Neuseeland"
+      },
+      {
+        "n": "Tōhoku 2011",
+        "year": 2011,
+        "hint": "Stärke 9,0 — Japan, Fukushima-Katastrophe"
+      },
+      {
+        "n": "Nepal 2015",
+        "year": 2015,
+        "hint": "Stärke 7,8 — 9.000 Tote"
+      },
+      {
+        "n": "Ecuador 2016",
+        "year": 2016,
+        "hint": "Stärke 7,8 — Küstengebiet"
+      },
+      {
+        "n": "Mexiko-Stadt 2017",
+        "year": 2017,
+        "hint": "Stärke 7,1 — 370 Tote"
+      },
+      {
+        "n": "Sulawesi 2018",
+        "year": 2018,
+        "hint": "Stärke 7,5 — Palu, Tsunami"
+      },
+      {
+        "n": "Albanien 2019",
+        "year": 2019,
+        "hint": "Stärke 6,4 — 51 Tote"
+      },
+      {
+        "n": "Zagreb 2020",
+        "year": 2020,
+        "hint": "Stärke 5,5 — Kroatien"
+      },
+      {
+        "n": "Haiti 2021",
+        "year": 2021,
+        "hint": "Stärke 7,2 — 2.200 Tote"
+      },
+      {
+        "n": "Türkei-Syrien 2023",
+        "year": 2023,
+        "hint": "Stärke 7,8 — 50.000+ Tote"
+      },
+      {
+        "n": "Lissabon 1755",
+        "year": 1755,
+        "hint": "Stärke ~8,5-9,0 — Tsunami + Brand; 30.000-60.000 Tote"
+      },
+      {
+        "n": "Messina 1908",
+        "year": 1908,
+        "hint": "Stärke 7,1 — Süditalien; bis 200.000 Tote"
+      },
+      {
+        "n": "Haiyuan 1920",
+        "year": 1920,
+        "hint": "Stärke 8,5 — Ningxia, China; ~200.000 Tote"
+      },
+      {
+        "n": "Kantō 1923",
+        "year": 1923,
+        "hint": "Stärke 7,9 — Tokyo/Yokohama; ~140.000 Tote"
+      },
+      {
+        "n": "Quetta 1935",
+        "year": 1935,
+        "hint": "Stärke 7,7 — Britisch-Indien; ~40.000 Tote"
+      },
+      {
+        "n": "Aschgabat 1948",
+        "year": 1948,
+        "hint": "Stärke 7,3 — Turkmenistan; ~110.000 Tote"
+      },
+      {
+        "n": "Agadir 1960",
+        "year": 1960,
+        "hint": "Stärke 5,9 — Marokko; ~15.000 Tote"
+      },
+      {
+        "n": "Ancash 1970",
+        "year": 1970,
+        "hint": "Stärke 7,9 — Peru; ~66.000 Tote (Bergrutsch)"
+      },
+      {
+        "n": "Managua 1972",
+        "year": 1972,
+        "hint": "Stärke 6,3 — Nicaragua; ~5.000 Tote"
+      },
+      {
+        "n": "Spitak 1988",
+        "year": 1988,
+        "hint": "Stärke 6,8 — Armenien; ~25.000 Tote"
+      },
+      {
+        "n": "Manjil 1990",
+        "year": 1990,
+        "hint": "Stärke 7,4 — Iran; ~40.000 Tote"
+      },
+      {
+        "n": "Bam 2003",
+        "year": 2003,
+        "hint": "Stärke 6,6 — Iran; 26.271 Tote"
+      },
+      {
+        "n": "Nias 2005",
+        "year": 2005,
+        "hint": "Stärke 8,6 — Sumatra (Nachbeben); ~1.300 Tote"
+      },
+      {
+        "n": "Yogyakarta 2006",
+        "year": 2006,
+        "hint": "Stärke 6,3 — Java; ~5.700 Tote"
+      },
+      {
+        "n": "Padang 2009",
+        "year": 2009,
+        "hint": "Stärke 7,6 — Sumatra; ~1.100 Tote"
+      },
+      {
+        "n": "Van 2011",
+        "year": 2011,
+        "hint": "Stärke 7,1 — Türkei; ~600 Tote"
+      },
+      {
+        "n": "Balochistan 2013",
+        "year": 2013,
+        "hint": "Stärke 7,7 — Pakistan; ~800 Tote"
+      },
+      {
+        "n": "Iquique 2014",
+        "year": 2014,
+        "hint": "Stärke 8,2 — Chile; Tsunami-Warnung"
+      },
+      {
+        "n": "Kumamoto 2016",
+        "year": 2016,
+        "hint": "Stärke 7,0 — Japan (Kyūshū); 273 Tote"
+      },
+      {
+        "n": "Lombok 2018",
+        "year": 2018,
+        "hint": "Stärke 6,9 — Lombok, Indonesien; ~550 Tote"
+      },
+      {
+        "n": "Ägäis 2020",
+        "year": 2020,
+        "hint": "Stärke 7,0 — Izmir/Samos; 119 Tote"
+      },
+      {
+        "n": "Cianjur 2022",
+        "year": 2022,
+        "hint": "Stärke 5,6 — West-Java; ~335 Tote"
+      },
+      {
+        "n": "Marokko 2023",
+        "year": 2023,
+        "hint": "Stärke 6,8 — Al-Haouz-Region; ~2.900 Tote"
+      },
+      {
+        "n": "Herat 2023",
+        "year": 2023,
+        "hint": "Stärke 6,3 — Afghanistan; ~1.400 Tote"
+      },
+      {
+        "n": "Noto-Halbinsel 2024",
+        "year": 2024,
+        "hint": "Stärke 7,6 — Japan; ~240 Tote"
+      },
+      {
+        "n": "Taiwan 2024",
+        "year": 2024,
+        "hint": "Stärke 7,4 — Hualien; stärkstes Beben seit 25 Jahren"
+      }
     ]
   },
   "sport_stadien": {
     "prompt": "Ordne diese Stadien nach Eröffnungsjahr — vom ältesten zum neuesten!",
     "unit": "Jahr",
     "items": [
-      {"n": "Estadio Centenario", "year": 1930, "hint": "Montevideo, Uruguay — WM-Finale 1930"},
-      {"n": "Wembley (alt)", "year": 1923, "hint": "London — Originalstadion 1923 erbaut"},
-      {"n": "Maracanã", "year": 1950, "hint": "Rio de Janeiro — WM-Finale 1950"},
-      {"n": "Aztekenstadion", "year": 1966, "hint": "Mexiko-Stadt — Zwei WM-Endspiele"},
-      {"n": "Signal Iduna Park", "year": 1974, "hint": "Dortmund — früher Westfalenstadion"},
-      {"n": "Olympiastadion München", "year": 1972, "hint": "WM 1974 & Olympia 1972"},
-      {"n": "Camp Nou", "year": 1957, "hint": "Barcelona — Heimstadion FC Barcelona"},
-      {"n": "San Siro", "year": 1926, "hint": "Mailand — AC Mailand & Inter"},
-      {"n": "Luzhniki-Stadion", "year": 1956, "hint": "Moskau — WM-Finale 2018"},
-      {"n": "Rose Bowl", "year": 1922, "hint": "Pasadena — WM-Finale 1994"},
-      {"n": "Allianz Arena", "year": 2005, "hint": "München — FC Bayern"},
-      {"n": "Emirates Stadium", "year": 2006, "hint": "London — Arsenal FC"},
-      {"n": "Wembley (neu)", "year": 2007, "hint": "London — 90.000 Plätze"},
-      {"n": "Estadio Nacional", "year": 2010, "hint": "Warschau — EM 2012"},
-      {"n": "Lusail Iconic Stadium", "year": 2021, "hint": "Katar — WM-Finale 2022"},
-      {"n": "Tottenham Hotspur Stadium", "year": 2019, "hint": "London — 62.000 Plätze"},
-      {"n": "Allegiant Stadium", "year": 2020, "hint": "Las Vegas — NFL Raiders"},
-      {"n": "SoFi Stadium", "year": 2020, "hint": "Inglewood — Super Bowl LVI"},
-      {"n": "Stade de France", "year": 1998, "hint": "Saint-Denis — WM-Finale 1998"},
-      {"n": "Santiago Bernabéu (Umbau)", "year": 2023, "hint": "Madrid — Renovierung abgeschlossen"},
-      {"n": "Johan Cruyff Arena", "year": 1996, "hint": "Amsterdam — Ajax"},
-      {"n": "Parken Stadion", "year": 1992, "hint": "Kopenhagen — dänische Nationalmannschaft"},
-      {"n": "Friends Arena", "year": 2012, "hint": "Solna — schwedische Nationalmannschaft"},
-      {"n": "Aviva Stadium", "year": 2010, "hint": "Dublin — irische Nationalmannschaft"}
+      {
+        "n": "Estadio Centenario",
+        "year": 1930,
+        "hint": "Montevideo, Uruguay — WM-Finale 1930"
+      },
+      {
+        "n": "Wembley (alt)",
+        "year": 1923,
+        "hint": "London — Originalstadion 1923 erbaut"
+      },
+      {
+        "n": "Maracanã",
+        "year": 1950,
+        "hint": "Rio de Janeiro — WM-Finale 1950"
+      },
+      {
+        "n": "Aztekenstadion",
+        "year": 1966,
+        "hint": "Mexiko-Stadt — Zwei WM-Endspiele"
+      },
+      {
+        "n": "Signal Iduna Park",
+        "year": 1974,
+        "hint": "Dortmund — früher Westfalenstadion"
+      },
+      {
+        "n": "Olympiastadion München",
+        "year": 1972,
+        "hint": "WM 1974 & Olympia 1972"
+      },
+      {
+        "n": "Camp Nou",
+        "year": 1957,
+        "hint": "Barcelona — Heimstadion FC Barcelona"
+      },
+      {
+        "n": "San Siro",
+        "year": 1926,
+        "hint": "Mailand — AC Mailand & Inter"
+      },
+      {
+        "n": "Luzhniki-Stadion",
+        "year": 1956,
+        "hint": "Moskau — WM-Finale 2018"
+      },
+      {
+        "n": "Rose Bowl",
+        "year": 1922,
+        "hint": "Pasadena — WM-Finale 1994"
+      },
+      {
+        "n": "Allianz Arena",
+        "year": 2005,
+        "hint": "München — FC Bayern"
+      },
+      {
+        "n": "Emirates Stadium",
+        "year": 2006,
+        "hint": "London — Arsenal FC"
+      },
+      {
+        "n": "Wembley (neu)",
+        "year": 2007,
+        "hint": "London — 90.000 Plätze"
+      },
+      {
+        "n": "Estadio Nacional",
+        "year": 2010,
+        "hint": "Warschau — EM 2012"
+      },
+      {
+        "n": "Lusail Iconic Stadium",
+        "year": 2021,
+        "hint": "Katar — WM-Finale 2022"
+      },
+      {
+        "n": "Tottenham Hotspur Stadium",
+        "year": 2019,
+        "hint": "London — 62.000 Plätze"
+      },
+      {
+        "n": "Allegiant Stadium",
+        "year": 2020,
+        "hint": "Las Vegas — NFL Raiders"
+      },
+      {
+        "n": "SoFi Stadium",
+        "year": 2020,
+        "hint": "Inglewood — Super Bowl LVI"
+      },
+      {
+        "n": "Stade de France",
+        "year": 1998,
+        "hint": "Saint-Denis — WM-Finale 1998"
+      },
+      {
+        "n": "Santiago Bernabéu (Umbau)",
+        "year": 2023,
+        "hint": "Madrid — Renovierung abgeschlossen"
+      },
+      {
+        "n": "Johan Cruyff Arena",
+        "year": 1996,
+        "hint": "Amsterdam — Ajax"
+      },
+      {
+        "n": "Parken Stadion",
+        "year": 1992,
+        "hint": "Kopenhagen — dänische Nationalmannschaft"
+      },
+      {
+        "n": "Friends Arena",
+        "year": 2012,
+        "hint": "Solna — schwedische Nationalmannschaft"
+      },
+      {
+        "n": "Aviva Stadium",
+        "year": 2010,
+        "hint": "Dublin — irische Nationalmannschaft"
+      },
+      {
+        "n": "Fenway Park",
+        "year": 1912,
+        "hint": "Boston, USA — ältestes MLB-Stadion"
+      },
+      {
+        "n": "Wrigley Field",
+        "year": 1914,
+        "hint": "Chicago, USA — zweites ältestes MLB-Stadion"
+      },
+      {
+        "n": "Olympiastadion Berlin",
+        "year": 1936,
+        "hint": "Olympische Spiele 1936; renoviert 2004"
+      },
+      {
+        "n": "Astrodome Houston",
+        "year": 1965,
+        "hint": "Erstes überdachtes Mehrzweckstadion der Welt"
+      },
+      {
+        "n": "Madison Square Garden",
+        "year": 1968,
+        "hint": "New York, USA — 4. Generation"
+      },
+      {
+        "n": "Velodrom Berlin",
+        "year": 1997,
+        "hint": "Radrennen + Konzerte; markantes Dach"
+      },
+      {
+        "n": "AT&T Stadium Dallas",
+        "year": 2009,
+        "hint": "Arlington, Texas; Super Bowl XLV 2011"
+      },
+      {
+        "n": "Juventus Stadium",
+        "year": 2011,
+        "hint": "Turin, Italien — erstes vereinseigenes Stadion in Serie A"
+      },
+      {
+        "n": "Allianz Riviera",
+        "year": 2013,
+        "hint": "Nizza, Frankreich; Solardach"
+      },
+      {
+        "n": "Fisht-Olympiastadion",
+        "year": 2013,
+        "hint": "Sotschi — Olympische Winterspiele 2014"
+      },
+      {
+        "n": "Levi's Stadium",
+        "year": 2014,
+        "hint": "Santa Clara, Kalifornien; Super Bowl 50"
+      },
+      {
+        "n": "U.S. Bank Stadium",
+        "year": 2016,
+        "hint": "Minneapolis; Super Bowl LII 2018"
+      },
+      {
+        "n": "Mercedes-Benz Stadium",
+        "year": 2017,
+        "hint": "Atlanta, Georgia; Super Bowl LIII 2019"
+      },
+      {
+        "n": "Optus Stadium",
+        "year": 2018,
+        "hint": "Perth, Australien; Cricket + Football"
+      },
+      {
+        "n": "Al-Bayt Stadium",
+        "year": 2022,
+        "hint": "Al-Khor, Katar — WM 2022; Zeltform"
+      },
+      {
+        "n": "Khalifa International",
+        "year": 2022,
+        "hint": "Doha, Katar — renoviert für WM 2022"
+      },
+      {
+        "n": "Stadium Australia (Umbau)",
+        "year": 2003,
+        "hint": "Sydney — Olympia 2000; Umbau 2003"
+      },
+      {
+        "n": "Stade Vélodrome Marseille",
+        "year": 1937,
+        "hint": "Marseille — renoviert 1999 und 2014"
+      },
+      {
+        "n": "Sapporo Dome",
+        "year": 2001,
+        "hint": "Japan — WM 2002; wechselbarer Rasen"
+      },
+      {
+        "n": "Nelson Mandela Bay Stadium",
+        "year": 2009,
+        "hint": "Port Elizabeth — WM 2010 Südafrika"
+      },
+      {
+        "n": "Cape Town Stadium",
+        "year": 2009,
+        "hint": "Kapstadt — WM 2010; Meerblick"
+      },
+      {
+        "n": "Commerzbank-Arena Frankfurt",
+        "year": 2005,
+        "hint": "Frankfurt — WM 2006; Deutschlandspiele"
+      },
+      {
+        "n": "Olympiastadion Athen",
+        "year": 1982,
+        "hint": "Renoviert 2004 — Olympische Sommerspiele"
+      },
+      {
+        "n": "Red Bull Arena Leipzig",
+        "year": 2004,
+        "hint": "Leipzig — EM 2024; WM 2006 Umbau"
+      },
+      {
+        "n": "Waldstadion Frankfurt (Umbau)",
+        "year": 1974,
+        "hint": "Frankfurt — WM 1974 + 2006"
+      }
     ]
   },
   "astro_entdeckung": {
     "prompt": "Ordne diese Himmelskörper nach ihrem Entdeckungsjahr — vom ältesten zum neuesten!",
     "unit": "Jahr",
     "items": [
-      {"n": "Uranus", "year": 1781, "hint": "Entdeckt von William Herschel"},
-      {"n": "Ceres", "year": 1801, "hint": "Erster bekannter Zwergplanet, Giuseppe Piazzi"},
-      {"n": "Neptun", "year": 1846, "hint": "Mathematisch vorhergesagt, Le Verrier & Adams"},
-      {"n": "Phobos", "year": 1877, "hint": "Marsmond, Asaph Hall"},
-      {"n": "Deimos", "year": 1877, "hint": "Zweiter Marsmond, Asaph Hall"},
-      {"n": "Io", "year": 1610, "hint": "Jupitermond, Galileo Galilei"},
-      {"n": "Europa (Mond)", "year": 1610, "hint": "Jupitermond, Galileo Galilei"},
-      {"n": "Titan", "year": 1655, "hint": "Saturnmond, Christiaan Huygens"},
-      {"n": "Ganymed", "year": 1610, "hint": "Größter Jupitermond, Galileo"},
-      {"n": "Pluto", "year": 1930, "hint": "Clyde Tombaugh — heute Zwergplanet"},
-      {"n": "Charon", "year": 1978, "hint": "Plutos größter Mond, James Christy"},
-      {"n": "Eris", "year": 2005, "hint": "Zwergplanet, Mike Brown — mehr Masse als Pluto"},
-      {"n": "Makemake", "year": 2005, "hint": "Zwergplanet im Kuipergürtel"},
-      {"n": "Haumea", "year": 2004, "hint": "Zwergplanet — rotiert sehr schnell"},
-      {"n": "51 Pegasi b", "year": 1995, "hint": "Erster bestätigter Exoplanet um Sonnenähnlichen Stern"},
-      {"n": "Sedna", "year": 2003, "hint": "Transneptunisches Objekt, sehr exzentrischer Orbit"},
-      {"n": "Triton", "year": 1846, "hint": "Neptunmond, William Lassell"},
-      {"n": "Enceladus", "year": 1789, "hint": "Saturnmond, William Herschel"},
-      {"n": "Miranda", "year": 1948, "hint": "Uranusmond, Gerard Kuiper"},
-      {"n": "Proxima Centauri b", "year": 2016, "hint": "Exoplanet im nächsten Sternensystem"},
-      {"n": "TRAPPIST-1e", "year": 2017, "hint": "Potenziell bewohnbarer Exoplanet"},
-      {"n": "Quaoar", "year": 2002, "hint": "Transneptunisches Objekt — hat Ring!"},
-      {"n": "Ariel", "year": 1851, "hint": "Uranusmond, William Lassell"},
-      {"n": "Umbriel", "year": 1851, "hint": "Zweiter Uranusmond, William Lassell"}
+      {
+        "n": "Uranus",
+        "year": 1781,
+        "hint": "Entdeckt von William Herschel"
+      },
+      {
+        "n": "Ceres",
+        "year": 1801,
+        "hint": "Erster bekannter Zwergplanet, Giuseppe Piazzi"
+      },
+      {
+        "n": "Neptun",
+        "year": 1846,
+        "hint": "Mathematisch vorhergesagt, Le Verrier & Adams"
+      },
+      {
+        "n": "Phobos",
+        "year": 1877,
+        "hint": "Marsmond, Asaph Hall"
+      },
+      {
+        "n": "Deimos",
+        "year": 1877,
+        "hint": "Zweiter Marsmond, Asaph Hall"
+      },
+      {
+        "n": "Io",
+        "year": 1610,
+        "hint": "Jupitermond, Galileo Galilei"
+      },
+      {
+        "n": "Europa (Mond)",
+        "year": 1610,
+        "hint": "Jupitermond, Galileo Galilei"
+      },
+      {
+        "n": "Titan",
+        "year": 1655,
+        "hint": "Saturnmond, Christiaan Huygens"
+      },
+      {
+        "n": "Ganymed",
+        "year": 1610,
+        "hint": "Größter Jupitermond, Galileo"
+      },
+      {
+        "n": "Pluto",
+        "year": 1930,
+        "hint": "Clyde Tombaugh — heute Zwergplanet"
+      },
+      {
+        "n": "Charon",
+        "year": 1978,
+        "hint": "Plutos größter Mond, James Christy"
+      },
+      {
+        "n": "Eris",
+        "year": 2005,
+        "hint": "Zwergplanet, Mike Brown — mehr Masse als Pluto"
+      },
+      {
+        "n": "Makemake",
+        "year": 2005,
+        "hint": "Zwergplanet im Kuipergürtel"
+      },
+      {
+        "n": "Haumea",
+        "year": 2004,
+        "hint": "Zwergplanet — rotiert sehr schnell"
+      },
+      {
+        "n": "51 Pegasi b",
+        "year": 1995,
+        "hint": "Erster bestätigter Exoplanet um Sonnenähnlichen Stern"
+      },
+      {
+        "n": "Sedna",
+        "year": 2003,
+        "hint": "Transneptunisches Objekt, sehr exzentrischer Orbit"
+      },
+      {
+        "n": "Triton",
+        "year": 1846,
+        "hint": "Neptunmond, William Lassell"
+      },
+      {
+        "n": "Enceladus",
+        "year": 1789,
+        "hint": "Saturnmond, William Herschel"
+      },
+      {
+        "n": "Miranda",
+        "year": 1948,
+        "hint": "Uranusmond, Gerard Kuiper"
+      },
+      {
+        "n": "Proxima Centauri b",
+        "year": 2016,
+        "hint": "Exoplanet im nächsten Sternensystem"
+      },
+      {
+        "n": "TRAPPIST-1e",
+        "year": 2017,
+        "hint": "Potenziell bewohnbarer Exoplanet"
+      },
+      {
+        "n": "Quaoar",
+        "year": 2002,
+        "hint": "Transneptunisches Objekt — hat Ring!"
+      },
+      {
+        "n": "Ariel",
+        "year": 1851,
+        "hint": "Uranusmond, William Lassell"
+      },
+      {
+        "n": "Umbriel",
+        "year": 1851,
+        "hint": "Zweiter Uranusmond, William Lassell"
+      },
+      {
+        "n": "Kallisto",
+        "year": 1610,
+        "hint": "Galileo Galilei — 4. galileischer Mond des Jupiter"
+      },
+      {
+        "n": "Iapetus",
+        "year": 1671,
+        "hint": "Giovanni Cassini — zweigeteilte Saturn-Mond-Oberfläche"
+      },
+      {
+        "n": "Rhea",
+        "year": 1672,
+        "hint": "Giovanni Cassini — größter eisiger Saturnmond"
+      },
+      {
+        "n": "Tethys",
+        "year": 1684,
+        "hint": "Giovanni Cassini — Saturnmond mit Odysseus-Krater"
+      },
+      {
+        "n": "Dione",
+        "year": 1684,
+        "hint": "Giovanni Cassini — Saturnmond mit Eisklippen"
+      },
+      {
+        "n": "Titania",
+        "year": 1787,
+        "hint": "William Herschel — größter Uranusmond"
+      },
+      {
+        "n": "Oberon",
+        "year": 1787,
+        "hint": "William Herschel — zweitgrößter Uranusmond"
+      },
+      {
+        "n": "Pallas",
+        "year": 1802,
+        "hint": "Heinrich Olbers — zweitgrößter Asteroid (Zwergplanet-Kandidat)"
+      },
+      {
+        "n": "Vesta",
+        "year": 1807,
+        "hint": "Heinrich Olbers — hellster Asteroid; von Dawn besucht"
+      },
+      {
+        "n": "Amalthea",
+        "year": 1892,
+        "hint": "Edward Barnard — erster nicht-galileischer Jupitermond"
+      },
+      {
+        "n": "Phoebe",
+        "year": 1899,
+        "hint": "William Pickering — rückläufiger Saturnmond"
+      },
+      {
+        "n": "Nereid",
+        "year": 1949,
+        "hint": "Gerard Kuiper — Neptunmond mit sehr exzentrischer Bahn"
+      },
+      {
+        "n": "Jupiterringe",
+        "year": 1979,
+        "hint": "Voyager 1 — erste Bilder der dünnen Jupiterringe"
+      },
+      {
+        "n": "Shoemaker-Levy 9 (Einschlag)",
+        "year": 1994,
+        "hint": "Komet prallt auf Jupiter — bis 21 Fragmente sichtbar"
+      },
+      {
+        "n": "NEAR-Shoemaker/Eros",
+        "year": 2001,
+        "hint": "Erste Landung auf Asteroid Eros — 12. Februar 2001"
+      },
+      {
+        "n": "Pluto-Degradierung",
+        "year": 2006,
+        "hint": "IAU stuft Pluto zum Zwergplaneten um — 3. Kategorie: Plutino"
+      },
+      {
+        "n": "Eis auf Mars (Phoenix)",
+        "year": 2008,
+        "hint": "Phoenix-Lander bestätigt Wassereis in Marsregolith"
+      },
+      {
+        "n": "Pluto-Flyby New Horizons",
+        "year": 2015,
+        "hint": "Erste Nahaufnahmen Plutos — Herz-Ebene Tombaugh Regio"
+      },
+      {
+        "n": "Kepler-452b",
+        "year": 2015,
+        "hint": "Erdähnlichster Exoplanet bis dato in habitabler Zone"
+      },
+      {
+        "n": "LIGO Gravitationswellen",
+        "year": 2016,
+        "hint": "Erste direkte Messung — zwei verschmelzende Schwarze Löcher"
+      },
+      {
+        "n": "Schwarzes Loch M87",
+        "year": 2019,
+        "hint": "Erstes Foto eines Schwarzen Lochs — Event Horizon Telescope"
+      },
+      {
+        "n": "JWST-Start",
+        "year": 2021,
+        "hint": "James Webb Space Telescope — 25. Dezember 2021 gestartet"
+      },
+      {
+        "n": "JWST-Erstbilder",
+        "year": 2022,
+        "hint": "Tiefste Infrarot-Aufnahme des Universums (SMACS 0723)"
+      },
+      {
+        "n": "DART-Einschlag Dimorphos",
+        "year": 2022,
+        "hint": "Erste erfolgreiche Asteroidenablenkmission der Menschheit"
+      },
+      {
+        "n": "OSIRIS-REx Probenrückgabe",
+        "year": 2023,
+        "hint": "121 Gramm von Asteroid Bennu erfolgreich geborgen"
+      },
+      {
+        "n": "Europa Clipper Start",
+        "year": 2024,
+        "hint": "NASA-Sonde zur Untersuchung von Jupiters Mond Europa"
+      }
     ]
   },
   "tech_release": {
     "prompt": "Ordne diese Technologien nach ihrem Erscheinungsjahr — vom ältesten zum neuesten!",
     "unit": "Jahr",
     "items": [
-      {"n": "Apple Macintosh", "year": 1984, "hint": "Erster kommerziell erfolgreicher PC mit GUI"},
-      {"n": "Windows 95", "year": 1995, "hint": "Start-Button, Taskleiste — PC-Revolution"},
-      {"n": "DVD", "year": 1996, "hint": "Erster Film-Release in Japan"},
-      {"n": "Google Suche", "year": 1998, "hint": "Larry Page & Sergey Brin"},
-      {"n": "Wikipedia", "year": 2001, "hint": "Das freie Enzyklopädie-Projekt"},
-      {"n": "iTunes", "year": 2001, "hint": "Apple revolutioniert den Musikmarkt"},
-      {"n": "Skype", "year": 2003, "hint": "VoIP-Telefonie für alle"},
-      {"n": "Facebook", "year": 2004, "hint": "Mark Zuckerberg — Harvard-Netzwerk"},
-      {"n": "YouTube", "year": 2005, "hint": "Broadcast yourself"},
-      {"n": "Twitter", "year": 2006, "hint": "Microblogging mit 140 Zeichen"},
-      {"n": "iPhone (1. Gen)", "year": 2007, "hint": "Steve Jobs — revolutionäres Smartphone"},
-      {"n": "Android", "year": 2008, "hint": "Google-Betriebssystem für Smartphones"},
-      {"n": "WhatsApp", "year": 2009, "hint": "Kostenloser Messenger"},
-      {"n": "iPad", "year": 2010, "hint": "Apple-Tablet — neue Kategorie"},
-      {"n": "Instagram", "year": 2010, "hint": "Foto-Sharing-App"},
-      {"n": "Siri", "year": 2011, "hint": "Apples Sprachassistentin"},
-      {"n": "Snapchat", "year": 2011, "hint": "Verschwindende Nachrichten"},
-      {"n": "Raspberry Pi", "year": 2012, "hint": "Mini-Computer für 35 Dollar"},
-      {"n": "Alexa", "year": 2014, "hint": "Amazon Echo Sprachassistent"},
-      {"n": "Apple Watch", "year": 2015, "hint": "Erste Generation Smartwatch"},
-      {"n": "TikTok", "year": 2016, "hint": "Kurzvideo-Plattform von ByteDance"},
-      {"n": "AirPods", "year": 2016, "hint": "Apple kabellose Kopfhörer"},
-      {"n": "ChatGPT", "year": 2022, "hint": "OpenAI — KI-Chatbot"},
-      {"n": "Vision Pro", "year": 2024, "hint": "Apples Spatial-Computing-Headset"}
+      {
+        "n": "Apple Macintosh",
+        "year": 1984,
+        "hint": "Erster kommerziell erfolgreicher PC mit GUI"
+      },
+      {
+        "n": "Windows 95",
+        "year": 1995,
+        "hint": "Start-Button, Taskleiste — PC-Revolution"
+      },
+      {
+        "n": "DVD",
+        "year": 1996,
+        "hint": "Erster Film-Release in Japan"
+      },
+      {
+        "n": "Google Suche",
+        "year": 1998,
+        "hint": "Larry Page & Sergey Brin"
+      },
+      {
+        "n": "Wikipedia",
+        "year": 2001,
+        "hint": "Das freie Enzyklopädie-Projekt"
+      },
+      {
+        "n": "iTunes",
+        "year": 2001,
+        "hint": "Apple revolutioniert den Musikmarkt"
+      },
+      {
+        "n": "Skype",
+        "year": 2003,
+        "hint": "VoIP-Telefonie für alle"
+      },
+      {
+        "n": "Facebook",
+        "year": 2004,
+        "hint": "Mark Zuckerberg — Harvard-Netzwerk"
+      },
+      {
+        "n": "YouTube",
+        "year": 2005,
+        "hint": "Broadcast yourself"
+      },
+      {
+        "n": "Twitter",
+        "year": 2006,
+        "hint": "Microblogging mit 140 Zeichen"
+      },
+      {
+        "n": "iPhone (1. Gen)",
+        "year": 2007,
+        "hint": "Steve Jobs — revolutionäres Smartphone"
+      },
+      {
+        "n": "Android",
+        "year": 2008,
+        "hint": "Google-Betriebssystem für Smartphones"
+      },
+      {
+        "n": "WhatsApp",
+        "year": 2009,
+        "hint": "Kostenloser Messenger"
+      },
+      {
+        "n": "iPad",
+        "year": 2010,
+        "hint": "Apple-Tablet — neue Kategorie"
+      },
+      {
+        "n": "Instagram",
+        "year": 2010,
+        "hint": "Foto-Sharing-App"
+      },
+      {
+        "n": "Siri",
+        "year": 2011,
+        "hint": "Apples Sprachassistentin"
+      },
+      {
+        "n": "Snapchat",
+        "year": 2011,
+        "hint": "Verschwindende Nachrichten"
+      },
+      {
+        "n": "Raspberry Pi",
+        "year": 2012,
+        "hint": "Mini-Computer für 35 Dollar"
+      },
+      {
+        "n": "Alexa",
+        "year": 2014,
+        "hint": "Amazon Echo Sprachassistent"
+      },
+      {
+        "n": "Apple Watch",
+        "year": 2015,
+        "hint": "Erste Generation Smartwatch"
+      },
+      {
+        "n": "TikTok",
+        "year": 2016,
+        "hint": "Kurzvideo-Plattform von ByteDance"
+      },
+      {
+        "n": "AirPods",
+        "year": 2016,
+        "hint": "Apple kabellose Kopfhörer"
+      },
+      {
+        "n": "ChatGPT",
+        "year": 2022,
+        "hint": "OpenAI — KI-Chatbot"
+      },
+      {
+        "n": "Vision Pro",
+        "year": 2024,
+        "hint": "Apples Spatial-Computing-Headset"
+      },
+      {
+        "n": "ARPANET",
+        "year": 1969,
+        "hint": "Erste Netzwerknachricht (Lo) — Vorgänger des Internets"
+      },
+      {
+        "n": "E-Mail",
+        "year": 1971,
+        "hint": "Ray Tomlinson sendet erste E-Mail — @-Zeichen eingeführt"
+      },
+      {
+        "n": "Pong",
+        "year": 1972,
+        "hint": "Atari — weltweit erstes kommerziell erfolgreiches Videospiel"
+      },
+      {
+        "n": "Apple I",
+        "year": 1976,
+        "hint": "Steve Wozniak — erste Heimcomputer-Platine von Apple"
+      },
+      {
+        "n": "VisiCalc",
+        "year": 1979,
+        "hint": "Dan Bricklin — erste Tabellenkalkulation; Killer-App des Apple II"
+      },
+      {
+        "n": "IBM Personal Computer",
+        "year": 1981,
+        "hint": "IBM PC 5150 — definiert den Standard für PCs"
+      },
+      {
+        "n": "Motorola DynaTAC 8000X",
+        "year": 1983,
+        "hint": "Erstes kommerzielles Mobiltelefon; 1 Std Akku, 10 Std Laden"
+      },
+      {
+        "n": "World Wide Web",
+        "year": 1989,
+        "hint": "Tim Berners-Lee (CERN) — HTML + HTTP + URLs"
+      },
+      {
+        "n": "Linux",
+        "year": 1991,
+        "hint": "Linus Torvalds — freier Open-Source-Kernel, Version 0.01"
+      },
+      {
+        "n": "Mosaic Browser",
+        "year": 1993,
+        "hint": "Erster grafischer Webbrowser — Bilder + Text zusammen"
+      },
+      {
+        "n": "Amazon",
+        "year": 1994,
+        "hint": "Jeff Bezos — Online-Buchhandel, heute weltgrößter E-Commerce"
+      },
+      {
+        "n": "PlayStation 1",
+        "year": 1994,
+        "hint": "Sony — CD-Laufwerk, 3D-Grafik, 100 Mio. Einheiten"
+      },
+      {
+        "n": "Java",
+        "year": 1995,
+        "hint": "Sun Microsystems — Write Once, Run Anywhere"
+      },
+      {
+        "n": "Napster",
+        "year": 1999,
+        "hint": "Shawn Fanning — P2P-Tauschbörse; revolutioniert Musikindustrie"
+      },
+      {
+        "n": "USB-Stick",
+        "year": 2000,
+        "hint": "Trek ThumbDrive — erstes kommerzielles USB-Flash-Laufwerk"
+      },
+      {
+        "n": "Xbox",
+        "year": 2001,
+        "hint": "Microsoft — erste eigene Spielkonsole mit Ethernet"
+      },
+      {
+        "n": "BitTorrent",
+        "year": 2001,
+        "hint": "Bram Cohen — dezentrales P2P-Protokoll"
+      },
+      {
+        "n": "WordPress",
+        "year": 2003,
+        "hint": "Matt Mullenweg — 43% aller Websites laufen heute auf WP"
+      },
+      {
+        "n": "Gmail",
+        "year": 2004,
+        "hint": "Google — 1 GB Speicher zum Start (1000× Konkurrenz)"
+      },
+      {
+        "n": "Kindle",
+        "year": 2007,
+        "hint": "Amazon — E-Ink-Display, WLAN, 60.000 eBooks am Tag 1"
+      },
+      {
+        "n": "Bitcoin",
+        "year": 2009,
+        "hint": "Satoshi Nakamoto — erste Blockchain-Währung"
+      },
+      {
+        "n": "PS4 / Xbox One",
+        "year": 2013,
+        "hint": "Achte Konsolengeneration — x86-Architektur, Share-Button"
+      },
+      {
+        "n": "Nintendo Switch",
+        "year": 2017,
+        "hint": "Hybrid-Konsole — TV + Handheld in einem Gerät"
+      },
+      {
+        "n": "AirPods Pro",
+        "year": 2019,
+        "hint": "Apple — aktive Geräuschunterdrückung, 30 Mio. Stück/Jahr"
+      },
+      {
+        "n": "GPT-4",
+        "year": 2023,
+        "hint": "OpenAI — multimodales LLM, 1 Mio. User in 5 Tagen"
+      },
+      {
+        "n": "Apple Vision Pro",
+        "year": 2024,
+        "hint": "Räumlicher Computer — visionOS, Eye- und Hand-Tracking"
+      }
     ]
   }
 }

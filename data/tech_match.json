@@ -1,439 +1,1864 @@
 {
   "sensoren": {
     "prompt": "Was misst dieser Sensor?",
-    "fixedOpts": ["Temperatur","Bewegung","Licht","Druck"],
+    "fixedOpts": [
+      "Temperatur",
+      "Bewegung",
+      "Licht",
+      "Druck"
+    ],
     "items": [
-      {"n": "DHT22", "c": "Temperatur"},
-      {"n": "PIR HC-SR501", "c": "Bewegung"},
-      {"n": "BMP280", "c": "Druck"},
-      {"n": "TSL2561", "c": "Licht"},
-      {"n": "DS18B20", "c": "Temperatur"},
-      {"n": "MPU-6050 Gyroskop", "c": "Bewegung"},
-      {"n": "Photodiode BPW34", "c": "Licht"},
-      {"n": "MS5611 (Barometer)", "c": "Druck"},
-      {"n": "LM35 Analog-Sensor", "c": "Temperatur"},
-      {"n": "HC-SR04 (Ultraschall)", "c": "Bewegung"},
-      {"n": "VEML6070 (UV-Sensor)", "c": "Licht"},
-      {"n": "MPX5010 (Differenzdruck)", "c": "Druck"},
-      {"n": "SHT31 (Feuchtigkeit/Temp)", "c": "Temperatur"},
-      {"n": "ADXL345 Beschleunigungsmesser", "c": "Bewegung"},
-      {"n": "BH1750 (Beleuchtungsstärke)", "c": "Licht"},
-      {"n": "LPS25HB (MEMS-Druck)", "c": "Druck"},
-      {"n": "AM2320 (Luftfeuchte/Temp)", "c": "Temperatur"},
-      {"n": "VL53L0X (Time-of-Flight)", "c": "Bewegung"},
-      {"n": "OPT3001 (Umgebungslicht)", "c": "Licht"},
-      {"n": "BMP388 (Höhenmessung)", "c": "Druck"}
+      {
+        "n": "DHT22",
+        "c": "Temperatur"
+      },
+      {
+        "n": "PIR HC-SR501",
+        "c": "Bewegung"
+      },
+      {
+        "n": "BMP280",
+        "c": "Druck"
+      },
+      {
+        "n": "TSL2561",
+        "c": "Licht"
+      },
+      {
+        "n": "DS18B20",
+        "c": "Temperatur"
+      },
+      {
+        "n": "MPU-6050 Gyroskop",
+        "c": "Bewegung"
+      },
+      {
+        "n": "Photodiode BPW34",
+        "c": "Licht"
+      },
+      {
+        "n": "MS5611 (Barometer)",
+        "c": "Druck"
+      },
+      {
+        "n": "LM35 Analog-Sensor",
+        "c": "Temperatur"
+      },
+      {
+        "n": "HC-SR04 (Ultraschall)",
+        "c": "Bewegung"
+      },
+      {
+        "n": "VEML6070 (UV-Sensor)",
+        "c": "Licht"
+      },
+      {
+        "n": "MPX5010 (Differenzdruck)",
+        "c": "Druck"
+      },
+      {
+        "n": "SHT31 (Feuchtigkeit/Temp)",
+        "c": "Temperatur"
+      },
+      {
+        "n": "ADXL345 Beschleunigungsmesser",
+        "c": "Bewegung"
+      },
+      {
+        "n": "BH1750 (Beleuchtungsstärke)",
+        "c": "Licht"
+      },
+      {
+        "n": "LPS25HB (MEMS-Druck)",
+        "c": "Druck"
+      },
+      {
+        "n": "AM2320 (Luftfeuchte/Temp)",
+        "c": "Temperatur"
+      },
+      {
+        "n": "VL53L0X (Time-of-Flight)",
+        "c": "Bewegung"
+      },
+      {
+        "n": "OPT3001 (Umgebungslicht)",
+        "c": "Licht"
+      },
+      {
+        "n": "BMP388 (Höhenmessung)",
+        "c": "Druck"
+      },
+      {
+        "n": "PIR (Passiver Infrarot)",
+        "c": "Bewegung"
+      },
+      {
+        "n": "HC-SR04 Ultraschall",
+        "c": "Abstand"
+      },
+      {
+        "n": "BMP280 / BME280",
+        "c": "Luftdruck"
+      },
+      {
+        "n": "ACS712 Hall-Effekt",
+        "c": "Strom"
+      },
+      {
+        "n": "MQ-2 Gassensor",
+        "c": "Rauch/Gas"
+      },
+      {
+        "n": "TSL2561 Fotodiode",
+        "c": "Licht"
+      },
+      {
+        "n": "DS18B20 1-Wire",
+        "c": "Temperatur"
+      },
+      {
+        "n": "MFRC522 RFID-Leser",
+        "c": "Identifikation"
+      },
+      {
+        "n": "GP2Y10 Sharp Optisch",
+        "c": "Staub"
+      },
+      {
+        "n": "SEN0193 Kapazitiv",
+        "c": "Bodenfeuchtigkeit"
+      },
+      {
+        "n": "INA219 I2C",
+        "c": "Spannung/Strom"
+      },
+      {
+        "n": "LDR Fotowiderstand",
+        "c": "Licht"
+      },
+      {
+        "n": "SIM7600 GPS-Modul",
+        "c": "Position"
+      },
+      {
+        "n": "HX711 ADC-Wägezelle",
+        "c": "Gewicht"
+      },
+      {
+        "n": "ENS160 MOX-Sensor",
+        "c": "Luftqualität (CO2/VOC)"
+      },
+      {
+        "n": "SHT40 Capacitive",
+        "c": "Temperatur + Feuchte"
+      },
+      {
+        "n": "VL53L1X Time-of-Flight",
+        "c": "Abstand (mm-genau)"
+      },
+      {
+        "n": "ICM-42688-P IMU",
+        "c": "Lage/Beschleunigung"
+      },
+      {
+        "n": "OPT3001 Ambient Light",
+        "c": "Licht"
+      }
     ]
   },
   "syntax": {
     "prompt": "In welcher Programmiersprache wird diese Syntax verwendet?",
-    "fixedOpts": ["Python","JavaScript","C++","Java"],
+    "fixedOpts": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "Java"
+    ],
     "items": [
-      {"n": "hub.speaker.beep(100, 1000)", "c": "Python"},
-      {"n": "motor.run_angle(360, 200)", "c": "Python"},
-      {"n": "ColorSensor.reflected_light_intensity()", "c": "Python"},
-      {"n": "console.log('Hello');", "c": "JavaScript"},
-      {"n": "let x = 5; const y = 10;", "c": "JavaScript"},
-      {"n": "document.getElementById('id')", "c": "JavaScript"},
-      {"n": "std::cout << \"Hallo\";", "c": "C++"},
-      {"n": "#include <iostream>", "c": "C++"},
-      {"n": "vector<int> v = {1, 2, 3};", "c": "C++"},
-      {"n": "System.out.println(\"Hi\");", "c": "Java"},
-      {"n": "public static void main(String[] args)", "c": "Java"},
-      {"n": "import java.util.ArrayList;", "c": "Java"},
-      {"n": "def my_func(): return 42", "c": "Python"},
-      {"n": "=== (Triple Equals)", "c": "JavaScript"},
-      {"n": "delete ptr; // Speicher freigeben", "c": "C++"},
-      {"n": "@Override (Annotation)", "c": "Java"},
-      {"n": "list comprehension: [x*2 for x in l]", "c": "Python"},
-      {"n": "nullptr (C++11)", "c": "C++"},
-      {"n": "instanceof Operator", "c": "Java"},
-      {"n": "await fetch('/api')", "c": "JavaScript"}
+      {
+        "n": "hub.speaker.beep(100, 1000)",
+        "c": "Python"
+      },
+      {
+        "n": "motor.run_angle(360, 200)",
+        "c": "Python"
+      },
+      {
+        "n": "ColorSensor.reflected_light_intensity()",
+        "c": "Python"
+      },
+      {
+        "n": "console.log('Hello');",
+        "c": "JavaScript"
+      },
+      {
+        "n": "let x = 5; const y = 10;",
+        "c": "JavaScript"
+      },
+      {
+        "n": "document.getElementById('id')",
+        "c": "JavaScript"
+      },
+      {
+        "n": "std::cout << \"Hallo\";",
+        "c": "C++"
+      },
+      {
+        "n": "#include <iostream>",
+        "c": "C++"
+      },
+      {
+        "n": "vector<int> v = {1, 2, 3};",
+        "c": "C++"
+      },
+      {
+        "n": "System.out.println(\"Hi\");",
+        "c": "Java"
+      },
+      {
+        "n": "public static void main(String[] args)",
+        "c": "Java"
+      },
+      {
+        "n": "import java.util.ArrayList;",
+        "c": "Java"
+      },
+      {
+        "n": "def my_func(): return 42",
+        "c": "Python"
+      },
+      {
+        "n": "=== (Triple Equals)",
+        "c": "JavaScript"
+      },
+      {
+        "n": "delete ptr; // Speicher freigeben",
+        "c": "C++"
+      },
+      {
+        "n": "@Override (Annotation)",
+        "c": "Java"
+      },
+      {
+        "n": "list comprehension: [x*2 for x in l]",
+        "c": "Python"
+      },
+      {
+        "n": "nullptr (C++11)",
+        "c": "C++"
+      },
+      {
+        "n": "instanceof Operator",
+        "c": "Java"
+      },
+      {
+        "n": "await fetch('/api')",
+        "c": "JavaScript"
+      },
+      {
+        "n": "print('Hello')",
+        "c": "Python"
+      },
+      {
+        "n": "console.log('Hello')",
+        "c": "JavaScript"
+      },
+      {
+        "n": "System.out.println('Hello')",
+        "c": "Java"
+      },
+      {
+        "n": "printf(\"Hello\\n\");",
+        "c": "C / C++"
+      },
+      {
+        "n": "echo \"Hello\";",
+        "c": "PHP"
+      },
+      {
+        "n": "puts 'Hello'",
+        "c": "Ruby"
+      },
+      {
+        "n": "fmt.Println(\"Hello\")",
+        "c": "Go"
+      },
+      {
+        "n": "println!(\"Hello\");",
+        "c": "Rust"
+      },
+      {
+        "n": "print(\"Hello\")",
+        "c": "Swift"
+      },
+      {
+        "n": "Console.WriteLine(\"Hello\");",
+        "c": "C#"
+      },
+      {
+        "n": "NSLog(@\"Hello\");",
+        "c": "Objective-C"
+      },
+      {
+        "n": "writeln('Hello');",
+        "c": "Pascal"
+      },
+      {
+        "n": "DISPLAY('HELLO')",
+        "c": "COBOL"
+      },
+      {
+        "n": "disp('Hello')",
+        "c": "MATLAB"
+      },
+      {
+        "n": "print*, 'Hello'",
+        "c": "Fortran"
+      },
+      {
+        "n": "io:format(\"Hello~n\")",
+        "c": "Erlang"
+      },
+      {
+        "n": "IO.puts \"Hello\"",
+        "c": "Elixir"
+      },
+      {
+        "n": "(display \"Hello\")",
+        "c": "Scheme / Lisp"
+      },
+      {
+        "n": "echo Hello",
+        "c": "Bash"
+      },
+      {
+        "n": "MsgBox \"Hello\"",
+        "c": "VBA"
+      }
     ]
   },
   "linux": {
     "prompt": "Für welchen Einsatzbereich ist diese Linux-Distribution bekannt?",
-    "fixedOpts": ["Desktop","Server","Embedded","Security"],
+    "fixedOpts": [
+      "Desktop",
+      "Server",
+      "Embedded",
+      "Security"
+    ],
     "items": [
-      {"n": "Ubuntu 24.04 LTS", "c": "Desktop"},
-      {"n": "Debian GNU/Linux", "c": "Server"},
-      {"n": "Kali Linux", "c": "Security"},
-      {"n": "OpenWrt", "c": "Embedded"},
-      {"n": "Fedora Workstation", "c": "Desktop"},
-      {"n": "CentOS Stream", "c": "Server"},
-      {"n": "Parrot OS", "c": "Security"},
-      {"n": "Yocto Project", "c": "Embedded"},
-      {"n": "Linux Mint", "c": "Desktop"},
-      {"n": "Red Hat Enterprise Linux", "c": "Server"},
-      {"n": "BlackArch Linux", "c": "Security"},
-      {"n": "Buildroot", "c": "Embedded"},
-      {"n": "Pop!_OS", "c": "Desktop"},
-      {"n": "Rocky Linux", "c": "Server"},
-      {"n": "Tails OS", "c": "Security"},
-      {"n": "Alpine Linux", "c": "Embedded"},
-      {"n": "Manjaro Linux", "c": "Desktop"},
-      {"n": "Ubuntu Server 22.04", "c": "Server"},
-      {"n": "REMnux (Malware-Analyse)", "c": "Security"},
-      {"n": "Raspbian / Raspberry Pi OS", "c": "Embedded"}
+      {
+        "n": "Ubuntu 24.04 LTS",
+        "c": "Desktop"
+      },
+      {
+        "n": "Debian GNU/Linux",
+        "c": "Server"
+      },
+      {
+        "n": "Kali Linux",
+        "c": "Security"
+      },
+      {
+        "n": "OpenWrt",
+        "c": "Embedded"
+      },
+      {
+        "n": "Fedora Workstation",
+        "c": "Desktop"
+      },
+      {
+        "n": "CentOS Stream",
+        "c": "Server"
+      },
+      {
+        "n": "Parrot OS",
+        "c": "Security"
+      },
+      {
+        "n": "Yocto Project",
+        "c": "Embedded"
+      },
+      {
+        "n": "Linux Mint",
+        "c": "Desktop"
+      },
+      {
+        "n": "Red Hat Enterprise Linux",
+        "c": "Server"
+      },
+      {
+        "n": "BlackArch Linux",
+        "c": "Security"
+      },
+      {
+        "n": "Buildroot",
+        "c": "Embedded"
+      },
+      {
+        "n": "Pop!_OS",
+        "c": "Desktop"
+      },
+      {
+        "n": "Rocky Linux",
+        "c": "Server"
+      },
+      {
+        "n": "Tails OS",
+        "c": "Security"
+      },
+      {
+        "n": "Alpine Linux",
+        "c": "Embedded"
+      },
+      {
+        "n": "Manjaro Linux",
+        "c": "Desktop"
+      },
+      {
+        "n": "Ubuntu Server 22.04",
+        "c": "Server"
+      },
+      {
+        "n": "REMnux (Malware-Analyse)",
+        "c": "Security"
+      },
+      {
+        "n": "Raspbian / Raspberry Pi OS",
+        "c": "Embedded"
+      }
     ]
   },
   "osi": {
     "prompt": "Auf welchem OSI-Layer arbeitet dieses Protokoll?",
-    "fixedOpts": ["1 Physisch","2 Sicherung","3 Netz","4 Transport","7 Anwendung"],
+    "fixedOpts": [
+      "1 Physisch",
+      "2 Sicherung",
+      "3 Netz",
+      "4 Transport",
+      "7 Anwendung"
+    ],
     "items": [
-      {"n": "HTTP/HTTPS", "c": "7 Anwendung"},
-      {"n": "TCP", "c": "4 Transport"},
-      {"n": "IP (IPv4/IPv6)", "c": "3 Netz"},
-      {"n": "Ethernet (Frame)", "c": "2 Sicherung"},
-      {"n": "Glasfaser / Koaxkabel", "c": "1 Physisch"},
-      {"n": "UDP", "c": "4 Transport"},
-      {"n": "DNS", "c": "7 Anwendung"},
-      {"n": "ARP", "c": "2 Sicherung"},
-      {"n": "OSPF (Routing)", "c": "3 Netz"},
-      {"n": "FTP", "c": "7 Anwendung"},
-      {"n": "Wi-Fi (802.11 PHY)", "c": "1 Physisch"},
-      {"n": "SMTP", "c": "7 Anwendung"},
-      {"n": "BGP (Routing)", "c": "3 Netz"},
-      {"n": "TLS/SSL", "c": "7 Anwendung"},
-      {"n": "802.1Q VLAN-Tag", "c": "2 Sicherung"},
-      {"n": "ICMP (Ping)", "c": "3 Netz"},
-      {"n": "SSH", "c": "7 Anwendung"},
-      {"n": "802.3 (Ethernet Standard)", "c": "2 Sicherung"},
-      {"n": "SCTP", "c": "4 Transport"},
-      {"n": "DSL / ADSL Übertragung", "c": "1 Physisch"}
+      {
+        "n": "HTTP/HTTPS",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "TCP",
+        "c": "4 Transport"
+      },
+      {
+        "n": "IP (IPv4/IPv6)",
+        "c": "3 Netz"
+      },
+      {
+        "n": "Ethernet (Frame)",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "Glasfaser / Koaxkabel",
+        "c": "1 Physisch"
+      },
+      {
+        "n": "UDP",
+        "c": "4 Transport"
+      },
+      {
+        "n": "DNS",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "ARP",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "OSPF (Routing)",
+        "c": "3 Netz"
+      },
+      {
+        "n": "FTP",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "Wi-Fi (802.11 PHY)",
+        "c": "1 Physisch"
+      },
+      {
+        "n": "SMTP",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "BGP (Routing)",
+        "c": "3 Netz"
+      },
+      {
+        "n": "TLS/SSL",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "802.1Q VLAN-Tag",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "ICMP (Ping)",
+        "c": "3 Netz"
+      },
+      {
+        "n": "SSH",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "802.3 (Ethernet Standard)",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "SCTP",
+        "c": "4 Transport"
+      },
+      {
+        "n": "DSL / ADSL Übertragung",
+        "c": "1 Physisch"
+      }
     ]
   },
   "bigo": {
     "prompt": "Welche Big-O-Komplexität hat dieser Algorithmus?",
-    "fixedOpts": ["O(1)","O(n)","O(n²)","O(log n)"],
+    "fixedOpts": [
+      "O(1)",
+      "O(n)",
+      "O(n²)",
+      "O(log n)"
+    ],
     "items": [
-      {"n": "Array-Zugriff per Index", "c": "O(1)"},
-      {"n": "Lineare Suche (unsortiert)", "c": "O(n)"},
-      {"n": "Bubble Sort", "c": "O(n²)"},
-      {"n": "Binäre Suche", "c": "O(log n)"},
-      {"n": "Hash-Map Lookup (avg)", "c": "O(1)"},
-      {"n": "Selection Sort", "c": "O(n²)"},
-      {"n": "Zählen einer verknüpften Liste", "c": "O(n)"},
-      {"n": "Heap-Peek (Min/Max)", "c": "O(1)"},
-      {"n": "Insertion Sort (worst)", "c": "O(n²)"},
-      {"n": "BST Suche (balanciert)", "c": "O(log n)"},
-      {"n": "Stack Push/Pop", "c": "O(1)"},
-      {"n": "Prüfen ob Element in Array ist", "c": "O(n)"},
-      {"n": "AVL Tree Insert", "c": "O(log n)"},
-      {"n": "Nested Loop n×n", "c": "O(n²)"},
-      {"n": "Set-Mitgliedschaft (Hash)", "c": "O(1)"},
-      {"n": "Array umkehren", "c": "O(n)"},
-      {"n": "Matrix-Multiplikation n×n (naiv)", "c": "O(n²)"},
-      {"n": "Skiplist Suche", "c": "O(log n)"},
-      {"n": "Queue Enqueue/Dequeue", "c": "O(1)"},
-      {"n": "Counting Sort", "c": "O(n)"}
+      {
+        "n": "Array-Zugriff per Index",
+        "c": "O(1)"
+      },
+      {
+        "n": "Lineare Suche (unsortiert)",
+        "c": "O(n)"
+      },
+      {
+        "n": "Bubble Sort",
+        "c": "O(n²)"
+      },
+      {
+        "n": "Binäre Suche",
+        "c": "O(log n)"
+      },
+      {
+        "n": "Hash-Map Lookup (avg)",
+        "c": "O(1)"
+      },
+      {
+        "n": "Selection Sort",
+        "c": "O(n²)"
+      },
+      {
+        "n": "Zählen einer verknüpften Liste",
+        "c": "O(n)"
+      },
+      {
+        "n": "Heap-Peek (Min/Max)",
+        "c": "O(1)"
+      },
+      {
+        "n": "Insertion Sort (worst)",
+        "c": "O(n²)"
+      },
+      {
+        "n": "BST Suche (balanciert)",
+        "c": "O(log n)"
+      },
+      {
+        "n": "Stack Push/Pop",
+        "c": "O(1)"
+      },
+      {
+        "n": "Prüfen ob Element in Array ist",
+        "c": "O(n)"
+      },
+      {
+        "n": "AVL Tree Insert",
+        "c": "O(log n)"
+      },
+      {
+        "n": "Nested Loop n×n",
+        "c": "O(n²)"
+      },
+      {
+        "n": "Set-Mitgliedschaft (Hash)",
+        "c": "O(1)"
+      },
+      {
+        "n": "Array umkehren",
+        "c": "O(n)"
+      },
+      {
+        "n": "Matrix-Multiplikation n×n (naiv)",
+        "c": "O(n²)"
+      },
+      {
+        "n": "Skiplist Suche",
+        "c": "O(log n)"
+      },
+      {
+        "n": "Queue Enqueue/Dequeue",
+        "c": "O(1)"
+      },
+      {
+        "n": "Counting Sort",
+        "c": "O(n)"
+      }
     ]
   },
   "http": {
     "prompt": "Zu welcher Kategorie gehört dieser HTTP-Statuscode?",
-    "fixedOpts": ["2xx Erfolg","3xx Weiterleitung","4xx Client-Fehler","5xx Server-Fehler"],
+    "fixedOpts": [
+      "2xx Erfolg",
+      "3xx Weiterleitung",
+      "4xx Client-Fehler",
+      "5xx Server-Fehler"
+    ],
     "items": [
-      {"n": "200 OK", "c": "2xx Erfolg"},
-      {"n": "301 Moved Permanently", "c": "3xx Weiterleitung"},
-      {"n": "404 Not Found", "c": "4xx Client-Fehler"},
-      {"n": "500 Internal Server Error", "c": "5xx Server-Fehler"},
-      {"n": "201 Created", "c": "2xx Erfolg"},
-      {"n": "302 Found (Temp. Weiterleitung)", "c": "3xx Weiterleitung"},
-      {"n": "403 Forbidden", "c": "4xx Client-Fehler"},
-      {"n": "502 Bad Gateway", "c": "5xx Server-Fehler"},
-      {"n": "204 No Content", "c": "2xx Erfolg"},
-      {"n": "304 Not Modified", "c": "3xx Weiterleitung"},
-      {"n": "401 Unauthorized", "c": "4xx Client-Fehler"},
-      {"n": "503 Service Unavailable", "c": "5xx Server-Fehler"},
-      {"n": "206 Partial Content", "c": "2xx Erfolg"},
-      {"n": "307 Temporary Redirect", "c": "3xx Weiterleitung"},
-      {"n": "429 Too Many Requests", "c": "4xx Client-Fehler"},
-      {"n": "504 Gateway Timeout", "c": "5xx Server-Fehler"},
-      {"n": "200 OK (HEAD)", "c": "2xx Erfolg"},
-      {"n": "308 Permanent Redirect", "c": "3xx Weiterleitung"},
-      {"n": "400 Bad Request", "c": "4xx Client-Fehler"},
-      {"n": "501 Not Implemented", "c": "5xx Server-Fehler"}
+      {
+        "n": "200 OK",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "301 Moved Permanently",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "404 Not Found",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "500 Internal Server Error",
+        "c": "5xx Server-Fehler"
+      },
+      {
+        "n": "201 Created",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "302 Found (Temp. Weiterleitung)",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "403 Forbidden",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "502 Bad Gateway",
+        "c": "5xx Server-Fehler"
+      },
+      {
+        "n": "204 No Content",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "304 Not Modified",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "401 Unauthorized",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "503 Service Unavailable",
+        "c": "5xx Server-Fehler"
+      },
+      {
+        "n": "206 Partial Content",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "307 Temporary Redirect",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "429 Too Many Requests",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "504 Gateway Timeout",
+        "c": "5xx Server-Fehler"
+      },
+      {
+        "n": "200 OK (HEAD)",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "308 Permanent Redirect",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "400 Bad Request",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "501 Not Implemented",
+        "c": "5xx Server-Fehler"
+      }
     ]
   },
   "wahrheitstabellen": {
     "prompt": "Welches Logikgatter erzeugt diesen Ausgang?",
-    "fixedOpts": ["AND","OR","NOT","XOR"],
+    "fixedOpts": [
+      "AND",
+      "OR",
+      "NOT",
+      "XOR"
+    ],
     "items": [
-      {"n": "A=0, B=0 → 0", "c": "AND"},
-      {"n": "A=0, B=1 → 1", "c": "OR"},
-      {"n": "A=1 → 0 (Eingang)", "c": "NOT"},
-      {"n": "A=1, B=1 → 0", "c": "XOR"},
-      {"n": "A=1, B=1 → 1", "c": "AND"},
-      {"n": "A=0, B=0 → 0 (beide gleich)", "c": "XOR"},
-      {"n": "A=0 → 1 (Negation)", "c": "NOT"},
-      {"n": "A=0, B=1 → 0", "c": "AND"},
-      {"n": "A=1, B=0 → 1 (exklusiv)", "c": "XOR"},
-      {"n": "A=1, B=1 → 1 (inklusiv)", "c": "OR"},
-      {"n": "A=1, B=0 → 0", "c": "AND"},
-      {"n": "A=0, B=0 → 0 (kein Eingang)", "c": "OR"},
-      {"n": "A=1, B=1 → 0 (ungleich → 0)", "c": "XOR"},
-      {"n": "A=0 → 1", "c": "NOT"},
-      {"n": "A=1, B=0 → 1", "c": "OR"},
-      {"n": "A=1, B=1 → 1 (beide 1 → 1)", "c": "AND"},
-      {"n": "A=0, B=1 → 1 (unterschiedlich)", "c": "XOR"},
-      {"n": "A=1 → 0", "c": "NOT"},
-      {"n": "A=0, B=0 → 0 (UND)", "c": "AND"},
-      {"n": "A=0, B=1 → 1 (exklusiv)", "c": "XOR"}
+      {
+        "n": "A=0, B=0 → 0",
+        "c": "AND"
+      },
+      {
+        "n": "A=0, B=1 → 1",
+        "c": "OR"
+      },
+      {
+        "n": "A=1 → 0 (Eingang)",
+        "c": "NOT"
+      },
+      {
+        "n": "A=1, B=1 → 0",
+        "c": "XOR"
+      },
+      {
+        "n": "A=1, B=1 → 1",
+        "c": "AND"
+      },
+      {
+        "n": "A=0, B=0 → 0 (beide gleich)",
+        "c": "XOR"
+      },
+      {
+        "n": "A=0 → 1 (Negation)",
+        "c": "NOT"
+      },
+      {
+        "n": "A=0, B=1 → 0",
+        "c": "AND"
+      },
+      {
+        "n": "A=1, B=0 → 1 (exklusiv)",
+        "c": "XOR"
+      },
+      {
+        "n": "A=1, B=1 → 1 (inklusiv)",
+        "c": "OR"
+      },
+      {
+        "n": "A=1, B=0 → 0",
+        "c": "AND"
+      },
+      {
+        "n": "A=0, B=0 → 0 (kein Eingang)",
+        "c": "OR"
+      },
+      {
+        "n": "A=1, B=1 → 0 (ungleich → 0)",
+        "c": "XOR"
+      },
+      {
+        "n": "A=0 → 1",
+        "c": "NOT"
+      },
+      {
+        "n": "A=1, B=0 → 1",
+        "c": "OR"
+      },
+      {
+        "n": "A=1, B=1 → 1 (beide 1 → 1)",
+        "c": "AND"
+      },
+      {
+        "n": "A=0, B=1 → 1 (unterschiedlich)",
+        "c": "XOR"
+      },
+      {
+        "n": "A=1 → 0",
+        "c": "NOT"
+      },
+      {
+        "n": "A=0, B=0 → 0 (UND)",
+        "c": "AND"
+      },
+      {
+        "n": "A=0, B=1 → 1 (exklusiv)",
+        "c": "XOR"
+      }
     ]
   },
   "hardware": {
     "prompt": "Zu welchem Computersystem gehört diese Komponente?",
-    "fixedOpts": ["CPU","RAM","Speicher","Netzwerk"],
+    "fixedOpts": [
+      "CPU",
+      "RAM",
+      "Speicher",
+      "Netzwerk"
+    ],
     "items": [
-      {"n": "DDR5-6000 DIMM Modul", "c": "RAM"},
-      {"n": "NVMe PCIe 5.0 SSD", "c": "Speicher"},
-      {"n": "Intel Core i9-14900K", "c": "CPU"},
-      {"n": "10GbE RJ45 NIC", "c": "Netzwerk"},
-      {"n": "ECC RDIMM 64GB", "c": "RAM"},
-      {"n": "3,5 Zoll HDD SATA", "c": "Speicher"},
-      {"n": "AMD Ryzen 9 7950X", "c": "CPU"},
-      {"n": "Wi-Fi 7 (802.11be) Karte", "c": "Netzwerk"},
-      {"n": "LPDDR5X (Laptop)", "c": "RAM"},
-      {"n": "SD-Karte UHS-II", "c": "Speicher"},
-      {"n": "ARM Cortex-A78", "c": "CPU"},
-      {"n": "Ethernet-Switch 48-Port", "c": "Netzwerk"},
-      {"n": "SO-DIMM DDR4 für Laptop", "c": "RAM"},
-      {"n": "M.2 NVMe 2280", "c": "Speicher"},
-      {"n": "IBM POWER10", "c": "CPU"},
-      {"n": "SFP+ 25G Transceiver", "c": "Netzwerk"},
-      {"n": "CAMM2 Speichermodul", "c": "RAM"},
-      {"n": "USB 3.2 Flash-Laufwerk", "c": "Speicher"},
-      {"n": "RISC-V U74-MC Core", "c": "CPU"},
-      {"n": "Bluetooth 5.3 Modul", "c": "Netzwerk"}
+      {
+        "n": "DDR5-6000 DIMM Modul",
+        "c": "RAM"
+      },
+      {
+        "n": "NVMe PCIe 5.0 SSD",
+        "c": "Speicher"
+      },
+      {
+        "n": "Intel Core i9-14900K",
+        "c": "CPU"
+      },
+      {
+        "n": "10GbE RJ45 NIC",
+        "c": "Netzwerk"
+      },
+      {
+        "n": "ECC RDIMM 64GB",
+        "c": "RAM"
+      },
+      {
+        "n": "3,5 Zoll HDD SATA",
+        "c": "Speicher"
+      },
+      {
+        "n": "AMD Ryzen 9 7950X",
+        "c": "CPU"
+      },
+      {
+        "n": "Wi-Fi 7 (802.11be) Karte",
+        "c": "Netzwerk"
+      },
+      {
+        "n": "LPDDR5X (Laptop)",
+        "c": "RAM"
+      },
+      {
+        "n": "SD-Karte UHS-II",
+        "c": "Speicher"
+      },
+      {
+        "n": "ARM Cortex-A78",
+        "c": "CPU"
+      },
+      {
+        "n": "Ethernet-Switch 48-Port",
+        "c": "Netzwerk"
+      },
+      {
+        "n": "SO-DIMM DDR4 für Laptop",
+        "c": "RAM"
+      },
+      {
+        "n": "M.2 NVMe 2280",
+        "c": "Speicher"
+      },
+      {
+        "n": "IBM POWER10",
+        "c": "CPU"
+      },
+      {
+        "n": "SFP+ 25G Transceiver",
+        "c": "Netzwerk"
+      },
+      {
+        "n": "CAMM2 Speichermodul",
+        "c": "RAM"
+      },
+      {
+        "n": "USB 3.2 Flash-Laufwerk",
+        "c": "Speicher"
+      },
+      {
+        "n": "RISC-V U74-MC Core",
+        "c": "CPU"
+      },
+      {
+        "n": "Bluetooth 5.3 Modul",
+        "c": "Netzwerk"
+      }
     ]
   },
   "erfinder": {
     "prompt": "Wer hat diese Technologie / dieses Konzept erfunden?",
     "items": [
-      {"n": "World Wide Web", "c": "Tim Berners-Lee"},
-      {"n": "E-Mail (ARPANET)", "c": "Ray Tomlinson"},
-      {"n": "Linux-Kernel", "c": "Linus Torvalds"},
-      {"n": "Python-Sprache", "c": "Guido van Rossum"},
-      {"n": "iPhone (erstes Smartphone-Konzept)", "c": "Steve Jobs"},
-      {"n": "Android OS", "c": "Andy Rubin"},
-      {"n": "Bluetooth-Standard", "c": "Ericsson / Jaap Haartsen"},
-      {"n": "USB-Standard", "c": "Ajay Bhatt"},
-      {"n": "Git-Versionsverwaltung", "c": "Linus Torvalds"},
-      {"n": "Wikipedia", "c": "Jimmy Wales"},
-      {"n": "PageRank-Algorithmus", "c": "Larry Page"},
-      {"n": "RSA-Verschlüsselung", "c": "Rivest, Shamir, Adleman"},
-      {"n": "C++-Sprache", "c": "Bjarne Stroustrup"},
-      {"n": "Java-Sprache", "c": "James Gosling"},
-      {"n": "Ethernet-Standard", "c": "Robert Metcalfe"},
-      {"n": "UNIX-Betriebssystem", "c": "Ken Thompson"},
-      {"n": "Turing-Maschine (Konzept)", "c": "Alan Turing"},
-      {"n": "VoIP / Skype", "c": "Niklas Zennström"},
-      {"n": "Wikipedia-Konzept (Wiki)", "c": "Ward Cunningham"},
-      {"n": "HTTPS / SSL", "c": "Netscape / Taher Elgamal"}
+      {
+        "n": "World Wide Web",
+        "c": "Tim Berners-Lee"
+      },
+      {
+        "n": "E-Mail (ARPANET)",
+        "c": "Ray Tomlinson"
+      },
+      {
+        "n": "Linux-Kernel",
+        "c": "Linus Torvalds"
+      },
+      {
+        "n": "Python-Sprache",
+        "c": "Guido van Rossum"
+      },
+      {
+        "n": "iPhone (erstes Smartphone-Konzept)",
+        "c": "Steve Jobs"
+      },
+      {
+        "n": "Android OS",
+        "c": "Andy Rubin"
+      },
+      {
+        "n": "Bluetooth-Standard",
+        "c": "Ericsson / Jaap Haartsen"
+      },
+      {
+        "n": "USB-Standard",
+        "c": "Ajay Bhatt"
+      },
+      {
+        "n": "Git-Versionsverwaltung",
+        "c": "Linus Torvalds"
+      },
+      {
+        "n": "Wikipedia",
+        "c": "Jimmy Wales"
+      },
+      {
+        "n": "PageRank-Algorithmus",
+        "c": "Larry Page"
+      },
+      {
+        "n": "RSA-Verschlüsselung",
+        "c": "Rivest, Shamir, Adleman"
+      },
+      {
+        "n": "C++-Sprache",
+        "c": "Bjarne Stroustrup"
+      },
+      {
+        "n": "Java-Sprache",
+        "c": "James Gosling"
+      },
+      {
+        "n": "Ethernet-Standard",
+        "c": "Robert Metcalfe"
+      },
+      {
+        "n": "UNIX-Betriebssystem",
+        "c": "Ken Thompson"
+      },
+      {
+        "n": "Turing-Maschine (Konzept)",
+        "c": "Alan Turing"
+      },
+      {
+        "n": "VoIP / Skype",
+        "c": "Niklas Zennström"
+      },
+      {
+        "n": "Wikipedia-Konzept (Wiki)",
+        "c": "Ward Cunningham"
+      },
+      {
+        "n": "HTTPS / SSL",
+        "c": "Netscape / Taher Elgamal"
+      },
+      {
+        "n": "Telefon (1876)",
+        "c": "Alexander Graham Bell"
+      },
+      {
+        "n": "Glühbirne (1879)",
+        "c": "Thomas Edison"
+      },
+      {
+        "n": "Radio (1895)",
+        "c": "Guglielmo Marconi"
+      },
+      {
+        "n": "Flugzeug (1903)",
+        "c": "Gebrüder Wright"
+      },
+      {
+        "n": "Transistor (1947)",
+        "c": "Shockley, Bardeen, Brattain"
+      },
+      {
+        "n": "World Wide Web (1989)",
+        "c": "Tim Berners-Lee"
+      },
+      {
+        "n": "Linux-Kernel (1991)",
+        "c": "Linus Torvalds"
+      },
+      {
+        "n": "Python (1991)",
+        "c": "Guido van Rossum"
+      },
+      {
+        "n": "Java (1995)",
+        "c": "James Gosling (Sun)"
+      },
+      {
+        "n": "Wikipedia (2001)",
+        "c": "Jimmy Wales & Larry Sanger"
+      },
+      {
+        "n": "Bluetooth (1994)",
+        "c": "Ericsson (Jaap Haartsen)"
+      },
+      {
+        "n": "USB (1996)",
+        "c": "Ajay Bhatt (Intel)"
+      },
+      {
+        "n": "MP3 (1993)",
+        "c": "Fraunhofer IIS (Karlheinz Brandenburg)"
+      },
+      {
+        "n": "GPS (1970er)",
+        "c": "U.S. Department of Defense"
+      },
+      {
+        "n": "Wi-Fi (1997)",
+        "c": "CSIRO Australien / IEEE 802.11"
+      },
+      {
+        "n": "Bluetooth Low Energy (2009)",
+        "c": "Nokia (Wibree-Projekt)"
+      },
+      {
+        "n": "HTML (1991)",
+        "c": "Tim Berners-Lee"
+      },
+      {
+        "n": "C-Programmiersprache (1972)",
+        "c": "Dennis Ritchie (Bell Labs)"
+      },
+      {
+        "n": "Reed-Solomon-Code (1960)",
+        "c": "Irving Reed & Gustave Solomon"
+      }
     ]
   },
   "portnummern": {
     "prompt": "Welcher Dienst nutzt diese Portnummer?",
     "items": [
-      {"n": "Port 80", "c": "HTTP"},
-      {"n": "Port 443", "c": "HTTPS"},
-      {"n": "Port 22", "c": "SSH"},
-      {"n": "Port 21", "c": "FTP"},
-      {"n": "Port 25", "c": "SMTP"},
-      {"n": "Port 53", "c": "DNS"},
-      {"n": "Port 3306", "c": "MySQL"},
-      {"n": "Port 5432", "c": "PostgreSQL"},
-      {"n": "Port 27017", "c": "MongoDB"},
-      {"n": "Port 6379", "c": "Redis"},
-      {"n": "Port 8080", "c": "HTTP Alternativ"},
-      {"n": "Port 3389", "c": "RDP"},
-      {"n": "Port 110", "c": "POP3"},
-      {"n": "Port 143", "c": "IMAP"},
-      {"n": "Port 67/68", "c": "DHCP"},
-      {"n": "Port 123", "c": "NTP"},
-      {"n": "Port 161", "c": "SNMP"},
-      {"n": "Port 5900", "c": "VNC"},
-      {"n": "Port 1194", "c": "OpenVPN"},
-      {"n": "Port 9200", "c": "Elasticsearch"}
+      {
+        "n": "Port 80",
+        "c": "HTTP"
+      },
+      {
+        "n": "Port 443",
+        "c": "HTTPS"
+      },
+      {
+        "n": "Port 22",
+        "c": "SSH"
+      },
+      {
+        "n": "Port 21",
+        "c": "FTP"
+      },
+      {
+        "n": "Port 25",
+        "c": "SMTP"
+      },
+      {
+        "n": "Port 53",
+        "c": "DNS"
+      },
+      {
+        "n": "Port 3306",
+        "c": "MySQL"
+      },
+      {
+        "n": "Port 5432",
+        "c": "PostgreSQL"
+      },
+      {
+        "n": "Port 27017",
+        "c": "MongoDB"
+      },
+      {
+        "n": "Port 6379",
+        "c": "Redis"
+      },
+      {
+        "n": "Port 8080",
+        "c": "HTTP Alternativ"
+      },
+      {
+        "n": "Port 3389",
+        "c": "RDP"
+      },
+      {
+        "n": "Port 110",
+        "c": "POP3"
+      },
+      {
+        "n": "Port 143",
+        "c": "IMAP"
+      },
+      {
+        "n": "Port 67/68",
+        "c": "DHCP"
+      },
+      {
+        "n": "Port 123",
+        "c": "NTP"
+      },
+      {
+        "n": "Port 161",
+        "c": "SNMP"
+      },
+      {
+        "n": "Port 5900",
+        "c": "VNC"
+      },
+      {
+        "n": "Port 1194",
+        "c": "OpenVPN"
+      },
+      {
+        "n": "Port 9200",
+        "c": "Elasticsearch"
+      }
     ]
   },
   "dateiendungen": {
     "prompt": "Zu welcher Dateiart gehört diese Endung?",
-    "fixedOpts": ["Bild","Audio","Video","Dokument"],
+    "fixedOpts": [
+      "Bild",
+      "Audio",
+      "Video",
+      "Dokument"
+    ],
     "items": [
-      {"n": ".jpg / .jpeg", "c": "Bild"},
-      {"n": ".mp3", "c": "Audio"},
-      {"n": ".mp4", "c": "Video"},
-      {"n": ".pdf", "c": "Dokument"},
-      {"n": ".png", "c": "Bild"},
-      {"n": ".flac", "c": "Audio"},
-      {"n": ".mkv", "c": "Video"},
-      {"n": ".docx", "c": "Dokument"},
-      {"n": ".svg", "c": "Bild"},
-      {"n": ".ogg", "c": "Audio"},
-      {"n": ".avi", "c": "Video"},
-      {"n": ".xlsx", "c": "Dokument"},
-      {"n": ".webp", "c": "Bild"},
-      {"n": ".aac", "c": "Audio"},
-      {"n": ".webm", "c": "Video"},
-      {"n": ".txt", "c": "Dokument"},
-      {"n": ".tiff", "c": "Bild"},
-      {"n": ".wav", "c": "Audio"},
-      {"n": ".mov", "c": "Video"},
-      {"n": ".pptx", "c": "Dokument"}
+      {
+        "n": ".jpg / .jpeg",
+        "c": "Bild"
+      },
+      {
+        "n": ".mp3",
+        "c": "Audio"
+      },
+      {
+        "n": ".mp4",
+        "c": "Video"
+      },
+      {
+        "n": ".pdf",
+        "c": "Dokument"
+      },
+      {
+        "n": ".png",
+        "c": "Bild"
+      },
+      {
+        "n": ".flac",
+        "c": "Audio"
+      },
+      {
+        "n": ".mkv",
+        "c": "Video"
+      },
+      {
+        "n": ".docx",
+        "c": "Dokument"
+      },
+      {
+        "n": ".svg",
+        "c": "Bild"
+      },
+      {
+        "n": ".ogg",
+        "c": "Audio"
+      },
+      {
+        "n": ".avi",
+        "c": "Video"
+      },
+      {
+        "n": ".xlsx",
+        "c": "Dokument"
+      },
+      {
+        "n": ".webp",
+        "c": "Bild"
+      },
+      {
+        "n": ".aac",
+        "c": "Audio"
+      },
+      {
+        "n": ".webm",
+        "c": "Video"
+      },
+      {
+        "n": ".txt",
+        "c": "Dokument"
+      },
+      {
+        "n": ".tiff",
+        "c": "Bild"
+      },
+      {
+        "n": ".wav",
+        "c": "Audio"
+      },
+      {
+        "n": ".mov",
+        "c": "Video"
+      },
+      {
+        "n": ".pptx",
+        "c": "Dokument"
+      },
+      {
+        "n": ".zip",
+        "c": "Archiv"
+      },
+      {
+        "n": ".tar.gz",
+        "c": "Archiv (Linux)"
+      },
+      {
+        "n": ".exe",
+        "c": "Ausführbar (Windows)"
+      },
+      {
+        "n": ".dll",
+        "c": "Bibliothek (Windows)"
+      },
+      {
+        "n": ".py",
+        "c": "Python-Quellcode"
+      },
+      {
+        "n": ".js",
+        "c": "JavaScript"
+      },
+      {
+        "n": ".ts",
+        "c": "TypeScript"
+      },
+      {
+        "n": ".html",
+        "c": "Webseite"
+      },
+      {
+        "n": ".css",
+        "c": "Stylesheet"
+      },
+      {
+        "n": ".json",
+        "c": "Daten (strukturiert)"
+      },
+      {
+        "n": ".iso",
+        "c": "Disk-Image"
+      },
+      {
+        "n": ".apk",
+        "c": "Android-App"
+      },
+      {
+        "n": ".ipa",
+        "c": "iOS-App"
+      },
+      {
+        "n": ".db / .sqlite",
+        "c": "Datenbank"
+      },
+      {
+        "n": ".log",
+        "c": "Protokolldatei"
+      },
+      {
+        "n": ".env",
+        "c": "Umgebungsvariablen"
+      }
     ]
   },
   "smart_home": {
     "prompt": "Zu welchem Smart-Home-Ökosystem gehört dieses Gerät / Protokoll?",
-    "fixedOpts": ["Home Assistant","Homematic CCU3","Shelly","Apple HomeKit"],
+    "fixedOpts": [
+      "Home Assistant",
+      "Homematic CCU3",
+      "Shelly",
+      "Apple HomeKit"
+    ],
     "items": [
-      {"n": "Shelly Plus 1PM (WLAN-Relais)", "c": "Shelly"},
-      {"n": "HM-LC-Sw1-SM (Funk-Schaltaktor)", "c": "Homematic CCU3"},
-      {"n": "Shelly Plug S (Stromzähler)", "c": "Shelly"},
-      {"n": "Eve Energy (Thread)", "c": "Apple HomeKit"},
-      {"n": "Zigbee2MQTT Integration", "c": "Home Assistant"},
-      {"n": "HmIP-WTH-2 (Raumthermostat)", "c": "Homematic CCU3"},
-      {"n": "Nanoleaf Shapes (HomeKit)", "c": "Apple HomeKit"},
-      {"n": "Tasmota-Firmware (ESP8266)", "c": "Home Assistant"},
-      {"n": "Shelly EM (Energiemessung)", "c": "Shelly"},
-      {"n": "HmIP-DRDI3 (Dimmer)", "c": "Homematic CCU3"},
-      {"n": "ESPHome YAML-Integration", "c": "Home Assistant"},
-      {"n": "Philips Hue (mit HomeKit)", "c": "Apple HomeKit"},
-      {"n": "Shelly Duo RGBW", "c": "Shelly"},
-      {"n": "HmIP-SWDO-PL (Rollladenmotor)", "c": "Homematic CCU3"},
-      {"n": "Matter-Protokoll nativ", "c": "Home Assistant"},
-      {"n": "WLAN-Sensor SHT-11 (ioBroker)", "c": "Home Assistant"},
-      {"n": "Shelly TRV (Thermostat)", "c": "Shelly"},
-      {"n": "Apple HomePod mini", "c": "Apple HomeKit"},
-      {"n": "HmIP-FSM (Sicherheitsaktor)", "c": "Homematic CCU3"},
-      {"n": "Node-RED Add-on", "c": "Home Assistant"}
+      {
+        "n": "Shelly Plus 1PM (WLAN-Relais)",
+        "c": "Shelly"
+      },
+      {
+        "n": "HM-LC-Sw1-SM (Funk-Schaltaktor)",
+        "c": "Homematic CCU3"
+      },
+      {
+        "n": "Shelly Plug S (Stromzähler)",
+        "c": "Shelly"
+      },
+      {
+        "n": "Eve Energy (Thread)",
+        "c": "Apple HomeKit"
+      },
+      {
+        "n": "Zigbee2MQTT Integration",
+        "c": "Home Assistant"
+      },
+      {
+        "n": "HmIP-WTH-2 (Raumthermostat)",
+        "c": "Homematic CCU3"
+      },
+      {
+        "n": "Nanoleaf Shapes (HomeKit)",
+        "c": "Apple HomeKit"
+      },
+      {
+        "n": "Tasmota-Firmware (ESP8266)",
+        "c": "Home Assistant"
+      },
+      {
+        "n": "Shelly EM (Energiemessung)",
+        "c": "Shelly"
+      },
+      {
+        "n": "HmIP-DRDI3 (Dimmer)",
+        "c": "Homematic CCU3"
+      },
+      {
+        "n": "ESPHome YAML-Integration",
+        "c": "Home Assistant"
+      },
+      {
+        "n": "Philips Hue (mit HomeKit)",
+        "c": "Apple HomeKit"
+      },
+      {
+        "n": "Shelly Duo RGBW",
+        "c": "Shelly"
+      },
+      {
+        "n": "HmIP-SWDO-PL (Rollladenmotor)",
+        "c": "Homematic CCU3"
+      },
+      {
+        "n": "Matter-Protokoll nativ",
+        "c": "Home Assistant"
+      },
+      {
+        "n": "WLAN-Sensor SHT-11 (ioBroker)",
+        "c": "Home Assistant"
+      },
+      {
+        "n": "Shelly TRV (Thermostat)",
+        "c": "Shelly"
+      },
+      {
+        "n": "Apple HomePod mini",
+        "c": "Apple HomeKit"
+      },
+      {
+        "n": "HmIP-FSM (Sicherheitsaktor)",
+        "c": "Homematic CCU3"
+      },
+      {
+        "n": "Node-RED Add-on",
+        "c": "Home Assistant"
+      }
     ]
   },
   "akronyme": {
     "prompt": "Wofür steht dieses Technik-Akronym?",
     "items": [
-      {"n": "API", "c": "Application Programming Interface"},
-      {"n": "GPU", "c": "Graphics Processing Unit"},
-      {"n": "RAM", "c": "Random Access Memory"},
-      {"n": "CPU", "c": "Central Processing Unit"},
-      {"n": "HTTP", "c": "HyperText Transfer Protocol"},
-      {"n": "DNS", "c": "Domain Name System"},
-      {"n": "VPN", "c": "Virtual Private Network"},
-      {"n": "SSD", "c": "Solid State Drive"},
-      {"n": "IoT", "c": "Internet of Things"},
-      {"n": "AI / KI", "c": "Artificial Intelligence"},
-      {"n": "NLP", "c": "Natural Language Processing"},
-      {"n": "CI/CD", "c": "Continuous Integration / Continuous Delivery"},
-      {"n": "BIOS", "c": "Basic Input Output System"},
-      {"n": "TCP", "c": "Transmission Control Protocol"},
-      {"n": "OOP", "c": "Object-Oriented Programming"},
-      {"n": "UUID", "c": "Universally Unique Identifier"},
-      {"n": "CLI", "c": "Command Line Interface"},
-      {"n": "SDK", "c": "Software Development Kit"},
-      {"n": "IDE", "c": "Integrated Development Environment"},
-      {"n": "WASM", "c": "WebAssembly"}
+      {
+        "n": "API",
+        "c": "Application Programming Interface"
+      },
+      {
+        "n": "GPU",
+        "c": "Graphics Processing Unit"
+      },
+      {
+        "n": "RAM",
+        "c": "Random Access Memory"
+      },
+      {
+        "n": "CPU",
+        "c": "Central Processing Unit"
+      },
+      {
+        "n": "HTTP",
+        "c": "HyperText Transfer Protocol"
+      },
+      {
+        "n": "DNS",
+        "c": "Domain Name System"
+      },
+      {
+        "n": "VPN",
+        "c": "Virtual Private Network"
+      },
+      {
+        "n": "SSD",
+        "c": "Solid State Drive"
+      },
+      {
+        "n": "IoT",
+        "c": "Internet of Things"
+      },
+      {
+        "n": "AI / KI",
+        "c": "Artificial Intelligence"
+      },
+      {
+        "n": "NLP",
+        "c": "Natural Language Processing"
+      },
+      {
+        "n": "CI/CD",
+        "c": "Continuous Integration / Continuous Delivery"
+      },
+      {
+        "n": "BIOS",
+        "c": "Basic Input Output System"
+      },
+      {
+        "n": "TCP",
+        "c": "Transmission Control Protocol"
+      },
+      {
+        "n": "OOP",
+        "c": "Object-Oriented Programming"
+      },
+      {
+        "n": "UUID",
+        "c": "Universally Unique Identifier"
+      },
+      {
+        "n": "CLI",
+        "c": "Command Line Interface"
+      },
+      {
+        "n": "SDK",
+        "c": "Software Development Kit"
+      },
+      {
+        "n": "IDE",
+        "c": "Integrated Development Environment"
+      },
+      {
+        "n": "WASM",
+        "c": "WebAssembly"
+      },
+      {
+        "n": "ROM",
+        "c": "Read-Only Memory"
+      },
+      {
+        "n": "URL",
+        "c": "Uniform Resource Locator"
+      },
+      {
+        "n": "SSH",
+        "c": "Secure Shell"
+      },
+      {
+        "n": "SQL",
+        "c": "Structured Query Language"
+      },
+      {
+        "n": "JSON",
+        "c": "JavaScript Object Notation"
+      },
+      {
+        "n": "XML",
+        "c": "Extensible Markup Language"
+      },
+      {
+        "n": "CDN",
+        "c": "Content Delivery Network"
+      },
+      {
+        "n": "NAT",
+        "c": "Network Address Translation"
+      },
+      {
+        "n": "UEFI",
+        "c": "Unified Extensible Firmware Interface"
+      },
+      {
+        "n": "RAID",
+        "c": "Redundant Array of Independent Disks"
+      },
+      {
+        "n": "CORS",
+        "c": "Cross-Origin Resource Sharing"
+      },
+      {
+        "n": "JWT",
+        "c": "JSON Web Token"
+      }
     ]
   },
   "turing_award": {
     "prompt": "Wofür erhielt diese Person den Turing Award?",
     "items": [
-      {"n": "Donald Knuth", "c": "Algorithmen & Programmierkunst (1974)"},
-      {"n": "Edsger W. Dijkstra", "c": "Programmiersprachen & Algorithmen (1972)"},
-      {"n": "Dennis Ritchie & Ken Thompson", "c": "UNIX & C (1983)"},
-      {"n": "Niklaus Wirth", "c": "Pascal-Sprache (1984)"},
-      {"n": "Yann LeCun, Hinton, Bengio", "c": "Deep Learning (2018)"},
-      {"n": "Tim Berners-Lee", "c": "World Wide Web (2016)"},
-      {"n": "Whitfield Diffie & Martin Hellman", "c": "Kryptographie (2015)"},
-      {"n": "Ivan Sutherland", "c": "Computergrafik (1988)"},
-      {"n": "Barbara Liskov", "c": "OOP & Datenabstraktion (2008)"},
-      {"n": "John Hopcroft & Robert Tarjan", "c": "Graphalgorithmen (1986)"},
-      {"n": "Frances Allen", "c": "Compiler-Optimierung (2006)"},
-      {"n": "Vint Cerf & Robert Kahn", "c": "TCP/IP-Protokoll (2004)"},
-      {"n": "Alan Kay", "c": "OOP & Smalltalk (2003)"},
-      {"n": "Ron Rivest, Adi Shamir, Leonard Adleman", "c": "RSA-Kryptographie (2002)"},
-      {"n": "Ole-Johan Dahl & Kristen Nygaard", "c": "OOP Simula (2001)"},
-      {"n": "Silvio Micali & Shafi Goldwasser", "c": "Kryptographie & Komplexität (2012)"},
-      {"n": "Yoshua Bengio", "c": "Neuronale Netze (2018)"},
-      {"n": "John Cocke", "c": "RISC-Architektur (1987)"},
-      {"n": "Edgar F. Codd", "c": "Relationale Datenbanken (1981)"},
-      {"n": "Tony Hoare", "c": "Programmiersprachen & Verifikation (1980)"}
+      {
+        "n": "Donald Knuth",
+        "c": "Algorithmen & Programmierkunst (1974)"
+      },
+      {
+        "n": "Edsger W. Dijkstra",
+        "c": "Programmiersprachen & Algorithmen (1972)"
+      },
+      {
+        "n": "Dennis Ritchie & Ken Thompson",
+        "c": "UNIX & C (1983)"
+      },
+      {
+        "n": "Niklaus Wirth",
+        "c": "Pascal-Sprache (1984)"
+      },
+      {
+        "n": "Yann LeCun, Hinton, Bengio",
+        "c": "Deep Learning (2018)"
+      },
+      {
+        "n": "Tim Berners-Lee",
+        "c": "World Wide Web (2016)"
+      },
+      {
+        "n": "Whitfield Diffie & Martin Hellman",
+        "c": "Kryptographie (2015)"
+      },
+      {
+        "n": "Ivan Sutherland",
+        "c": "Computergrafik (1988)"
+      },
+      {
+        "n": "Barbara Liskov",
+        "c": "OOP & Datenabstraktion (2008)"
+      },
+      {
+        "n": "John Hopcroft & Robert Tarjan",
+        "c": "Graphalgorithmen (1986)"
+      },
+      {
+        "n": "Frances Allen",
+        "c": "Compiler-Optimierung (2006)"
+      },
+      {
+        "n": "Vint Cerf & Robert Kahn",
+        "c": "TCP/IP-Protokoll (2004)"
+      },
+      {
+        "n": "Alan Kay",
+        "c": "OOP & Smalltalk (2003)"
+      },
+      {
+        "n": "Ron Rivest, Adi Shamir, Leonard Adleman",
+        "c": "RSA-Kryptographie (2002)"
+      },
+      {
+        "n": "Ole-Johan Dahl & Kristen Nygaard",
+        "c": "OOP Simula (2001)"
+      },
+      {
+        "n": "Silvio Micali & Shafi Goldwasser",
+        "c": "Kryptographie & Komplexität (2012)"
+      },
+      {
+        "n": "Yoshua Bengio",
+        "c": "Neuronale Netze (2018)"
+      },
+      {
+        "n": "John Cocke",
+        "c": "RISC-Architektur (1987)"
+      },
+      {
+        "n": "Edgar F. Codd",
+        "c": "Relationale Datenbanken (1981)"
+      },
+      {
+        "n": "Tony Hoare",
+        "c": "Programmiersprachen & Verifikation (1980)"
+      }
     ]
   },
   "erste_videospiele": {
     "prompt": "In welchem Jahrzehnt wurde dieses Videospiel erstmals veröffentlicht?",
-    "fixedOpts": ["1970er","1980er","1990er","2000er"],
+    "fixedOpts": [
+      "1970er",
+      "1980er",
+      "1990er",
+      "2000er"
+    ],
     "items": [
-      {"n": "Pong (Atari)", "c": "1970er"},
-      {"n": "Pac-Man", "c": "1980er"},
-      {"n": "Space Invaders", "c": "1970er"},
-      {"n": "Tetris", "c": "1980er"},
-      {"n": "Doom", "c": "1990er"},
-      {"n": "Donkey Kong", "c": "1980er"},
-      {"n": "Quake", "c": "1990er"},
-      {"n": "Minecraft", "c": "2000er"},
-      {"n": "Breakout (Atari)", "c": "1970er"},
-      {"n": "Super Mario Bros.", "c": "1980er"},
-      {"n": "Half-Life", "c": "1990er"},
-      {"n": "World of Warcraft", "c": "2000er"},
-      {"n": "Asteroids", "c": "1970er"},
-      {"n": "The Legend of Zelda", "c": "1980er"},
-      {"n": "StarCraft", "c": "1990er"},
-      {"n": "Grand Theft Auto IV", "c": "2000er"},
-      {"n": "Galaga", "c": "1980er"},
-      {"n": "Mortal Kombat", "c": "1990er"},
-      {"n": "Halo: Combat Evolved", "c": "2000er"},
-      {"n": "Missile Command", "c": "1980er"}
+      {
+        "n": "Pong (Atari)",
+        "c": "1970er"
+      },
+      {
+        "n": "Pac-Man",
+        "c": "1980er"
+      },
+      {
+        "n": "Space Invaders",
+        "c": "1970er"
+      },
+      {
+        "n": "Tetris",
+        "c": "1980er"
+      },
+      {
+        "n": "Doom",
+        "c": "1990er"
+      },
+      {
+        "n": "Donkey Kong",
+        "c": "1980er"
+      },
+      {
+        "n": "Quake",
+        "c": "1990er"
+      },
+      {
+        "n": "Minecraft",
+        "c": "2000er"
+      },
+      {
+        "n": "Breakout (Atari)",
+        "c": "1970er"
+      },
+      {
+        "n": "Super Mario Bros.",
+        "c": "1980er"
+      },
+      {
+        "n": "Half-Life",
+        "c": "1990er"
+      },
+      {
+        "n": "World of Warcraft",
+        "c": "2000er"
+      },
+      {
+        "n": "Asteroids",
+        "c": "1970er"
+      },
+      {
+        "n": "The Legend of Zelda",
+        "c": "1980er"
+      },
+      {
+        "n": "StarCraft",
+        "c": "1990er"
+      },
+      {
+        "n": "Grand Theft Auto IV",
+        "c": "2000er"
+      },
+      {
+        "n": "Galaga",
+        "c": "1980er"
+      },
+      {
+        "n": "Mortal Kombat",
+        "c": "1990er"
+      },
+      {
+        "n": "Halo: Combat Evolved",
+        "c": "2000er"
+      },
+      {
+        "n": "Missile Command",
+        "c": "1980er"
+      }
     ]
   },
   "malware": {
     "prompt": "Zu welcher Malware-Kategorie gehört dieses Schadprogramm?",
-    "fixedOpts": ["Virus","Wurm","Trojaner","Ransomware"],
+    "fixedOpts": [
+      "Virus",
+      "Wurm",
+      "Trojaner",
+      "Ransomware"
+    ],
     "items": [
-      {"n": "WannaCry (2017)", "c": "Ransomware"},
-      {"n": "ILOVEYOU (2000)", "c": "Wurm"},
-      {"n": "Zeus (Bankdaten-Diebstahl)", "c": "Trojaner"},
-      {"n": "CryptoLocker (2013)", "c": "Ransomware"},
-      {"n": "Stuxnet (Industrieanlage)", "c": "Wurm"},
-      {"n": "Melissa (Word-Dokument)", "c": "Virus"},
-      {"n": "Emotet (Banking)", "c": "Trojaner"},
-      {"n": "Petya/NotPetya", "c": "Ransomware"},
-      {"n": "Code Red (IIS-Server)", "c": "Wurm"},
-      {"n": "Conficker", "c": "Wurm"},
-      {"n": "Anna Kournikova (E-Mail)", "c": "Wurm"},
-      {"n": "Locky (E-Mail-Anhang)", "c": "Ransomware"},
-      {"n": "Dark Tequila (Lateinamerika)", "c": "Trojaner"},
-      {"n": "Jerusalem (DOS)", "c": "Virus"},
-      {"n": "Mirai (IoT-Botnet)", "c": "Wurm"},
-      {"n": "REvil / Sodinokibi", "c": "Ransomware"},
-      {"n": "Sub7 (Fernsteuerung)", "c": "Trojaner"},
-      {"n": "Blaster (RPC-Lücke)", "c": "Wurm"},
-      {"n": "Brain (erster PC-Virus 1986)", "c": "Virus"},
-      {"n": "LockBit 3.0", "c": "Ransomware"}
+      {
+        "n": "WannaCry (2017)",
+        "c": "Ransomware"
+      },
+      {
+        "n": "ILOVEYOU (2000)",
+        "c": "Wurm"
+      },
+      {
+        "n": "Zeus (Bankdaten-Diebstahl)",
+        "c": "Trojaner"
+      },
+      {
+        "n": "CryptoLocker (2013)",
+        "c": "Ransomware"
+      },
+      {
+        "n": "Stuxnet (Industrieanlage)",
+        "c": "Wurm"
+      },
+      {
+        "n": "Melissa (Word-Dokument)",
+        "c": "Virus"
+      },
+      {
+        "n": "Emotet (Banking)",
+        "c": "Trojaner"
+      },
+      {
+        "n": "Petya/NotPetya",
+        "c": "Ransomware"
+      },
+      {
+        "n": "Code Red (IIS-Server)",
+        "c": "Wurm"
+      },
+      {
+        "n": "Conficker",
+        "c": "Wurm"
+      },
+      {
+        "n": "Anna Kournikova (E-Mail)",
+        "c": "Wurm"
+      },
+      {
+        "n": "Locky (E-Mail-Anhang)",
+        "c": "Ransomware"
+      },
+      {
+        "n": "Dark Tequila (Lateinamerika)",
+        "c": "Trojaner"
+      },
+      {
+        "n": "Jerusalem (DOS)",
+        "c": "Virus"
+      },
+      {
+        "n": "Mirai (IoT-Botnet)",
+        "c": "Wurm"
+      },
+      {
+        "n": "REvil / Sodinokibi",
+        "c": "Ransomware"
+      },
+      {
+        "n": "Sub7 (Fernsteuerung)",
+        "c": "Trojaner"
+      },
+      {
+        "n": "Blaster (RPC-Lücke)",
+        "c": "Wurm"
+      },
+      {
+        "n": "Brain (erster PC-Virus 1986)",
+        "c": "Virus"
+      },
+      {
+        "n": "LockBit 3.0",
+        "c": "Ransomware"
+      }
     ]
   },
   "tech_ma": {
     "prompt": "Von wem wurde dieses Unternehmen übernommen?",
     "items": [
-      {"n": "GitHub", "c": "Microsoft"},
-      {"n": "LinkedIn", "c": "Microsoft"},
-      {"n": "Instagram", "c": "Meta (Facebook)"},
-      {"n": "WhatsApp", "c": "Meta (Facebook)"},
-      {"n": "YouTube", "c": "Google"},
-      {"n": "Nest (Thermostate)", "c": "Google"},
-      {"n": "Activision Blizzard", "c": "Microsoft"},
-      {"n": "Motorola Mobility", "c": "Google"},
-      {"n": "Beats Electronics", "c": "Apple"},
-      {"n": "Twitch", "c": "Amazon"},
-      {"n": "Whole Foods Market", "c": "Amazon"},
-      {"n": "Slack", "c": "Salesforce"},
-      {"n": "VMware", "c": "Broadcom"},
-      {"n": "Nuance Communications", "c": "Microsoft"},
-      {"n": "DeepMind", "c": "Google"},
-      {"n": "Skype", "c": "Microsoft"},
-      {"n": "Nokia (Handysparte)", "c": "Microsoft"},
-      {"n": "Fitbit", "c": "Google"},
-      {"n": "Oculus VR", "c": "Meta (Facebook)"},
-      {"n": "Tumblr", "c": "Automattic / WordPress"}
+      {
+        "n": "GitHub",
+        "c": "Microsoft"
+      },
+      {
+        "n": "LinkedIn",
+        "c": "Microsoft"
+      },
+      {
+        "n": "Instagram",
+        "c": "Meta (Facebook)"
+      },
+      {
+        "n": "WhatsApp",
+        "c": "Meta (Facebook)"
+      },
+      {
+        "n": "YouTube",
+        "c": "Google"
+      },
+      {
+        "n": "Nest (Thermostate)",
+        "c": "Google"
+      },
+      {
+        "n": "Activision Blizzard",
+        "c": "Microsoft"
+      },
+      {
+        "n": "Motorola Mobility",
+        "c": "Google"
+      },
+      {
+        "n": "Beats Electronics",
+        "c": "Apple"
+      },
+      {
+        "n": "Twitch",
+        "c": "Amazon"
+      },
+      {
+        "n": "Whole Foods Market",
+        "c": "Amazon"
+      },
+      {
+        "n": "Slack",
+        "c": "Salesforce"
+      },
+      {
+        "n": "VMware",
+        "c": "Broadcom"
+      },
+      {
+        "n": "Nuance Communications",
+        "c": "Microsoft"
+      },
+      {
+        "n": "DeepMind",
+        "c": "Google"
+      },
+      {
+        "n": "Skype",
+        "c": "Microsoft"
+      },
+      {
+        "n": "Nokia (Handysparte)",
+        "c": "Microsoft"
+      },
+      {
+        "n": "Fitbit",
+        "c": "Google"
+      },
+      {
+        "n": "Oculus VR",
+        "c": "Meta (Facebook)"
+      },
+      {
+        "n": "Tumblr",
+        "c": "Automattic / WordPress"
+      }
     ]
   }
 }

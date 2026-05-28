@@ -306,6 +306,106 @@
         "n": "\"Anne Frank\"-Kastanie (Amsterdam)",
         "lat": 52.37,
         "lng": 4.91
+      },
+      {
+        "n": "Arbol del Tule (Oaxaca, Mexiko)",
+        "lat": 17.0452,
+        "lng": -96.6365
+      },
+      {
+        "n": "Lone Cypress (Pebble Beach, CA)",
+        "lat": 36.5609,
+        "lng": -121.9641
+      },
+      {
+        "n": "Major Oak (Sherwood Forest, UK)",
+        "lat": 53.212,
+        "lng": -1.0754
+      },
+      {
+        "n": "Bristlecone Pine Methuselah (White Mountains, CA)",
+        "lat": 37.3824,
+        "lng": -118.1711
+      },
+      {
+        "n": "Wollemi Pine Nationalpark (NSW, Australien)",
+        "lat": -33.25,
+        "lng": 150.3667
+      },
+      {
+        "n": "Baobab Grandidier (Morondava, Madagaskar)",
+        "lat": -20.25,
+        "lng": 44.4167
+      },
+      {
+        "n": "Dragon Blood Tree (Socotra, Jemen)",
+        "lat": 12.4634,
+        "lng": 53.8237
+      },
+      {
+        "n": "Fortingall Yew (Perthshire, Schottland)",
+        "lat": 56.6171,
+        "lng": -4.0474
+      },
+      {
+        "n": "Jōmon Sugi (Yakushima, Japan)",
+        "lat": 30.3289,
+        "lng": 130.5248
+      },
+      {
+        "n": "Chapultepec-Zypresse (Mexiko-Stadt)",
+        "lat": 19.4301,
+        "lng": -99.1913
+      },
+      {
+        "n": "Boab Prison Tree (Derby, Australien)",
+        "lat": -17.3019,
+        "lng": 123.6358
+      },
+      {
+        "n": "Bunyah Pine (Bunya Mountains, Queensland)",
+        "lat": -26.8799,
+        "lng": 151.5712
+      },
+      {
+        "n": "Angel Oak (Charleston, South Carolina)",
+        "lat": 32.7185,
+        "lng": -80.0764
+      },
+      {
+        "n": "Bodhi Tree Replant (Bodhgaya, Indien)",
+        "lat": 24.6961,
+        "lng": 84.9912
+      },
+      {
+        "n": "Welwitschia-Baum (Naukluft, Namibia)",
+        "lat": -22.665,
+        "lng": 15.34
+      },
+      {
+        "n": "Olive of Vouves (Kreta, Griechenland)",
+        "lat": 35.5036,
+        "lng": 23.6572
+      },
+      {
+        "n": "Thousand-Year Camphor Tree (Alishan, Taiwan)",
+        "lat": 23.5086,
+        "lng": 120.8117
+      },
+      {
+        "n": "Ata-Juniper (Transili-Alatau, Kasachstan)",
+        "lat": 43.1381,
+        "lng": 77.2513
+      },
+      {
+        "n": "Yarabalı-Platane (Aksaray, Türkei)",
+        "lat": 38.3695,
+        "lng": 33.9949
+      },
+      {
+        "n": "Doornboom-Faidherbia (Afrikanisch, Kruger NP)",
+        "lat": -24.0115,
+        "lng": 31.5095
       }
     ]
   },
@@ -616,6 +716,106 @@
         "n": "Suriname Brownsberg Naturpark",
         "lat": 4.9,
         "lng": -55.2
+      },
+      {
+        "n": "Kongo-Regenwald (Demokratische Rep. Kongo)",
+        "lat": -1.5,
+        "lng": 24.0
+      },
+      {
+        "n": "Daintree Rainforest (Queensland, Australien)",
+        "lat": -16.1703,
+        "lng": 145.4187
+      },
+      {
+        "n": "Valdivianischer Regenwald (Chile)",
+        "lat": -39.8142,
+        "lng": -73.2459
+      },
+      {
+        "n": "Sinharaja-Urwald (Sri Lanka)",
+        "lat": 6.3908,
+        "lng": 80.4986
+      },
+      {
+        "n": "Tongass-Urwald (Alaska, USA)",
+        "lat": 57.137,
+        "lng": -134.582
+      },
+      {
+        "n": "Monteverde-Wolkenwald (Costa Rica)",
+        "lat": 10.3173,
+        "lng": -84.804
+      },
+      {
+        "n": "Kibale-Regenwald (Uganda)",
+        "lat": 0.5,
+        "lng": 30.35
+      },
+      {
+        "n": "Kinabalu-Park (Borneo, Malaysia)",
+        "lat": 6.0756,
+        "lng": 116.5593
+      },
+      {
+        "n": "Taman Negara (Halbinsel Malaysia)",
+        "lat": 4.3882,
+        "lng": 102.4399
+      },
+      {
+        "n": "Noel Kempff Mercado NP (Bolivien)",
+        "lat": -14.6667,
+        "lng": -60.8333
+      },
+      {
+        "n": "Cockscomb Basin (Belize)",
+        "lat": 16.7333,
+        "lng": -88.65
+      },
+      {
+        "n": "La Amistad (Costa Rica/Panama)",
+        "lat": 9.25,
+        "lng": -83.0
+      },
+      {
+        "n": "Guyana-Hochland (Venezuela/Guyana)",
+        "lat": 4.5,
+        "lng": -61.0
+      },
+      {
+        "n": "Deramakot-Urwald (Sabah, Malaysia)",
+        "lat": 5.3333,
+        "lng": 117.5833
+      },
+      {
+        "n": "Atlantic Forest São Paulo (Brasilien)",
+        "lat": -23.5,
+        "lng": -46.75
+      },
+      {
+        "n": "Khao Yai NP (Thailand)",
+        "lat": 14.4,
+        "lng": 101.3667
+      },
+      {
+        "n": "Namdapha Tiger Reserve (Arunachal Pradesh)",
+        "lat": 27.5,
+        "lng": 96.5667
+      },
+      {
+        "n": "Kadoorie Farm (Hongkong Urwald)",
+        "lat": 22.3789,
+        "lng": 114.11
+      },
+      {
+        "n": "Hainan Tropical Forest (Lingshui, China)",
+        "lat": 18.5333,
+        "lng": 110.0
+      },
+      {
+        "n": "Arenal Volcano NP (Costa Rica)",
+        "lat": 10.4736,
+        "lng": -84.7012
       }
     ]
   },
@@ -826,6 +1026,101 @@
         "n": "Ginkgo-Gärten (Nanjing, China)",
         "lat": 32.06,
         "lng": 118.78
+      },
+      {
+        "n": "Arnica montana (Alpen, Europäische Berggebiete)",
+        "lat": 46.5,
+        "lng": 10.5
+      },
+      {
+        "n": "Roter Sonnenhut Echinacea (Great Plains, USA)",
+        "lat": 41.0,
+        "lng": -99.0
+      },
+      {
+        "n": "Andrographis paniculata (Sri Lanka/Indien)",
+        "lat": 7.8731,
+        "lng": 80.7718
+      },
+      {
+        "n": "Curcuma longa (Tamil Nadu, Indien)",
+        "lat": 11.1271,
+        "lng": 78.6569
+      },
+      {
+        "n": "Withania somnifera (Ashwagandha, Madhya Pradesh)",
+        "lat": 22.9734,
+        "lng": 78.6569
+      },
+      {
+        "n": "Ginkgo biloba (Zhejiang, China Ursprung)",
+        "lat": 29.1832,
+        "lng": 120.0934
+      },
+      {
+        "n": "Valerian (Valeriana officinalis, Europa)",
+        "lat": 47.0,
+        "lng": 10.0
+      },
+      {
+        "n": "St. John's Wort (Hypericum, Mittelmeerraum)",
+        "lat": 42.0,
+        "lng": 14.0
+      },
+      {
+        "n": "Lavendel (Lavandula, Haute-Provence)",
+        "lat": 43.925,
+        "lng": 5.8667
+      },
+      {
+        "n": "Passionsblume (Passiflora incarnata, SE-USA)",
+        "lat": 34.0,
+        "lng": -83.0
+      },
+      {
+        "n": "Baldrian-Gebirgsform (Alpen-Baldrian)",
+        "lat": 47.1,
+        "lng": 9.8
+      },
+      {
+        "n": "Süßholz (Glycyrrhiza glabra, Zentralasien)",
+        "lat": 40.0,
+        "lng": 60.0
+      },
+      {
+        "n": "Garciniafrüchte (Garcinia cambogia, Kerala)",
+        "lat": 10.8505,
+        "lng": 76.2711
+      },
+      {
+        "n": "Schwarzkümmel (Nigella sativa, Ägypten)",
+        "lat": 26.8206,
+        "lng": 30.8025
+      },
+      {
+        "n": "Pelargonium sidoides (Kapland, Südafrika)",
+        "lat": -33.9249,
+        "lng": 18.4241
+      },
+      {
+        "n": "Taigawurzel (Sibirien, Eleutherococcus)",
+        "lat": 55.0,
+        "lng": 100.0
+      },
+      {
+        "n": "Maca (Lepidium meyenii, Puno-Hochland Peru)",
+        "lat": -14.0,
+        "lng": -71.0
+      },
+      {
+        "n": "Gotu Kola (Centella asiatica, Sri Lanka)",
+        "lat": 7.8731,
+        "lng": 80.7719
+      },
+      {
+        "n": "Ingwer-Ursprung (Zingiber officinale, Kerala)",
+        "lat": 10.8505,
+        "lng": 76.2712
       }
     ]
   },
@@ -931,6 +1226,101 @@
         "n": "New-Caledonia Mangroven",
         "lat": -21.5,
         "lng": 165.5
+      },
+      {
+        "n": "Sundarbans (Bangladesch/Indien)",
+        "lat": 21.9497,
+        "lng": 89.1833
+      },
+      {
+        "n": "Everglades Mangrove (Florida Keys)",
+        "lat": 25.2866,
+        "lng": -80.8987
+      },
+      {
+        "n": "Caroni Swamp (Trinidad und Tobago)",
+        "lat": 10.6333,
+        "lng": -61.4
+      },
+      {
+        "n": "Salomoninseln Mangroven (Guadalcanal)",
+        "lat": -9.6457,
+        "lng": 160.1562
+      },
+      {
+        "n": "Vanga-Mangroven (Madagaskar, Nordwest)",
+        "lat": -13.35,
+        "lng": 47.6
+      },
+      {
+        "n": "Mangrove Bay (Bermuda)",
+        "lat": 32.2882,
+        "lng": -64.8645
+      },
+      {
+        "n": "Gulf of Carpentaria Mangroven (Australien)",
+        "lat": -15.0,
+        "lng": 137.0
+      },
+      {
+        "n": "Mangrove Conservation Area (Palau)",
+        "lat": 7.3419,
+        "lng": 134.4792
+      },
+      {
+        "n": "Rio Lagartos (Mexiko, Biosphärenreservat)",
+        "lat": 21.5833,
+        "lng": -88.1667
+      },
+      {
+        "n": "Pichavaram-Mangroven (Tamil Nadu, Indien)",
+        "lat": 11.4333,
+        "lng": 79.7667
+      },
+      {
+        "n": "Tulum-Mangroven-Reserve (Quintana Roo)",
+        "lat": 20.21,
+        "lng": -87.4654
+      },
+      {
+        "n": "Rufiji-Delta-Mangroven (Tansania)",
+        "lat": -7.8,
+        "lng": 39.6
+      },
+      {
+        "n": "Caete-Mangroven (Maranhão, Brasilien)",
+        "lat": -2.5,
+        "lng": -44.5
+      },
+      {
+        "n": "Black River Morass (Jamaika)",
+        "lat": 18.0333,
+        "lng": -77.85
+      },
+      {
+        "n": "Sabaki-Flussmündung (Kenia)",
+        "lat": -3.1,
+        "lng": 40.1667
+      },
+      {
+        "n": "Inhaca-Insel-Mangroven (Mosambik)",
+        "lat": -25.9833,
+        "lng": 32.9333
+      },
+      {
+        "n": "Coondapur-Mangroven (Karnataka, Indien)",
+        "lat": 13.6333,
+        "lng": 74.6833
+      },
+      {
+        "n": "Ponce Inlet Mangroven (Florida)",
+        "lat": 29.0782,
+        "lng": -80.9856
+      },
+      {
+        "n": "Avicennia-Feld (Western Cape, Südafrika)",
+        "lat": -33.9249,
+        "lng": 18.4241
       }
     ]
   },

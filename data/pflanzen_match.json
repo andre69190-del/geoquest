@@ -89,6 +89,62 @@
       {
         "n": "Kokosnuss-Pfeffer",
         "c": "Indonesien"
+      },
+      {
+        "n": "Schwarzer Pfeffer",
+        "c": "Indien (Kerala)"
+      },
+      {
+        "n": "Vanille (Vanilla planifolia)",
+        "c": "Madagaskar"
+      },
+      {
+        "n": "Muskatnuss (Myristica fragrans)",
+        "c": "Indonesien (Banda)"
+      },
+      {
+        "n": "Nelke (Syzygium aromaticum)",
+        "c": "Indonesien (Maluku)"
+      },
+      {
+        "n": "Kurkuma (Curcuma longa)",
+        "c": "Indien"
+      },
+      {
+        "n": "Sumach (Rhus coriaria)",
+        "c": "Mittlerer Osten"
+      },
+      {
+        "n": "Fenugreek (Blatt)",
+        "c": "Indien"
+      },
+      {
+        "n": "Ajowan (Carum copticum)",
+        "c": "Indien"
+      },
+      {
+        "n": "Koriandersamen",
+        "c": "Weltweit"
+      },
+      {
+        "n": "Kreuzkümmel (Cuminum cyminum)",
+        "c": "Mittelmeer / Indien"
+      },
+      {
+        "n": "Paprika (geräuchert, Pimentón)",
+        "c": "Spanien (La Vera)"
+      },
+      {
+        "n": "Chili (Capsicum annuum)",
+        "c": "Mittelamerika"
+      },
+      {
+        "n": "Piment (Allspice)",
+        "c": "Jamaika / Karibik"
+      },
+      {
+        "n": "Asafoetida (Ferula assa-foetida)",
+        "c": "Iran / Afghanistan"
       }
     ]
   },
@@ -182,6 +238,78 @@
       {
         "n": "Minze",
         "c": "Lamiaceae"
+      },
+      {
+        "n": "Eiche (Quercus)",
+        "c": "Fagaceae"
+      },
+      {
+        "n": "Sonnenblume (Helianthus)",
+        "c": "Asteraceae"
+      },
+      {
+        "n": "Minze (Mentha)",
+        "c": "Lamiaceae"
+      },
+      {
+        "n": "Tomate (Solanum lycopersicum)",
+        "c": "Solanaceae"
+      },
+      {
+        "n": "Orchidee (Orchidaceae)",
+        "c": "Orchidaceae"
+      },
+      {
+        "n": "Gras (Poa)",
+        "c": "Poaceae"
+      },
+      {
+        "n": "Kaktus (Saguaro)",
+        "c": "Cactaceae"
+      },
+      {
+        "n": "Lilie (Lilium)",
+        "c": "Liliaceae"
+      },
+      {
+        "n": "Palme (Cocos nucifera)",
+        "c": "Arecaceae"
+      },
+      {
+        "n": "Mohn (Papaver somniferum)",
+        "c": "Papaveraceae"
+      },
+      {
+        "n": "Hanf (Cannabis sativa)",
+        "c": "Cannabaceae"
+      },
+      {
+        "n": "Ahorn (Acer)",
+        "c": "Sapindaceae"
+      },
+      {
+        "n": "Farn (Pteridium)",
+        "c": "Dennstaedtiaceae"
+      },
+      {
+        "n": "Schachtelhalm (Equisetum)",
+        "c": "Equisetaceae"
+      },
+      {
+        "n": "Bambus (Bambusoideae)",
+        "c": "Poaceae"
+      },
+      {
+        "n": "Klee (Trifolium)",
+        "c": "Fabaceae"
+      },
+      {
+        "n": "Gurke (Cucumis sativus)",
+        "c": "Cucurbitaceae"
+      },
+      {
+        "n": "Heidelbeere (Vaccinium)",
+        "c": "Ericaceae"
       }
     ]
   },
@@ -281,6 +409,58 @@
       {
         "n": "Winterling (Eranthis)",
         "c": "Winter"
+      },
+      {
+        "n": "Heidekraut (Calluna)",
+        "c": "Herbst"
+      },
+      {
+        "n": "Akelei (Aquilegia)",
+        "c": "Frühjahr/Frühsommer"
+      },
+      {
+        "n": "Weihnachtsstern (Poinsettia)",
+        "c": "Winter"
+      },
+      {
+        "n": "Forsythie",
+        "c": "Frühling"
+      },
+      {
+        "n": "Storch-Schnabel (Geranium)",
+        "c": "Sommer"
+      },
+      {
+        "n": "Primel",
+        "c": "Frühling"
+      },
+      {
+        "n": "Pfingstrose (Paeonia)",
+        "c": "Frühsommer"
+      },
+      {
+        "n": "Gladiole",
+        "c": "Sommer"
+      },
+      {
+        "n": "Clematis (großblumig)",
+        "c": "Frühsommer"
+      },
+      {
+        "n": "Herbstzeitlose (Colchicum)",
+        "c": "Herbst"
+      },
+      {
+        "n": "Immortelle (Helichrysum)",
+        "c": "Sommer"
+      },
+      {
+        "n": "Lavatera (Strauchmalve)",
+        "c": "Sommer"
+      },
+      {
+        "n": "Bergenia (Bergenien)",
+        "c": "Frühling"
       }
     ]
   },
@@ -366,6 +546,78 @@
       {
         "n": "Schwarzes Bilsenkraut",
         "c": "Hyoscyamin"
+      },
+      {
+        "n": "Herbstzeitlose (Colchicum)",
+        "c": "Colchicin"
+      },
+      {
+        "n": "Eisenhut (Aconitum)",
+        "c": "Aconitin"
+      },
+      {
+        "n": "Fingerhut (Digitalis)",
+        "c": "Digitoxin"
+      },
+      {
+        "n": "Weiße Nieswurz (Helleborus)",
+        "c": "Helleborin"
+      },
+      {
+        "n": "Oleander",
+        "c": "Oleandrin"
+      },
+      {
+        "n": "Maiglöckchen",
+        "c": "Convallotoxin"
+      },
+      {
+        "n": "Stechpalme (Ilex)",
+        "c": "Ilicin"
+      },
+      {
+        "n": "Blaue Eisenhut (Monkshood)",
+        "c": "Aconitin"
+      },
+      {
+        "n": "Schwarze Tollkirsche",
+        "c": "Atropin"
+      },
+      {
+        "n": "Bilsenkraut (Hyoscyamus)",
+        "c": "Scopolamin"
+      },
+      {
+        "n": "Engelstrompete (Brugmansia)",
+        "c": "Hyoscin"
+      },
+      {
+        "n": "Tabak (Nicotiana)",
+        "c": "Nikotin"
+      },
+      {
+        "n": "Taxus (Eibe)",
+        "c": "Taxin"
+      },
+      {
+        "n": "Goldregen (Laburnum)",
+        "c": "Cytisin"
+      },
+      {
+        "n": "Wisteria (Blauregen)",
+        "c": "Wisterin"
+      },
+      {
+        "n": "Lotos (Nelumbo)",
+        "c": "Nuciferine"
+      },
+      {
+        "n": "Bitterling / Strychnos",
+        "c": "Strychnin"
+      },
+      {
+        "n": "Convallatoxin aus dem Maiglöckchen (Herz)",
+        "c": "Herzglycosid"
       }
     ]
   },
@@ -457,6 +709,42 @@
       {
         "n": "Olive",
         "c": "Steinfrucht"
+      },
+      {
+        "n": "Erdbeere (botanisch)",
+        "c": "Sammelnussfrucht"
+      },
+      {
+        "n": "Wassermelone",
+        "c": "Panzerbeere"
+      },
+      {
+        "n": "Zitrone",
+        "c": "Beere (Hesperidium)"
+      },
+      {
+        "n": "Kokosnuss",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Walnuss",
+        "c": "Nuss (Schließfrucht)"
+      },
+      {
+        "n": "Kastanie",
+        "c": "Nuss (in Cupula)"
+      },
+      {
+        "n": "Haselnuss",
+        "c": "Nuss"
+      },
+      {
+        "n": "Löwenzahn",
+        "c": "Achäne (Schließfrucht)"
+      },
+      {
+        "n": "Erbse",
+        "c": "Hülsenfrucht"
       }
     ]
   },
@@ -548,6 +836,66 @@
       {
         "n": "Bärlauch",
         "c": "Vegetativ (Ableger)"
+      },
+      {
+        "n": "Pappel (Populus)",
+        "c": "Windbestäubung + Flugsamen"
+      },
+      {
+        "n": "Farn (Pteridium)",
+        "c": "Sporen"
+      },
+      {
+        "n": "Moos (Sphagnum)",
+        "c": "Sporen"
+      },
+      {
+        "n": "Orchidee (Vanilla)",
+        "c": "Insektenbestäubung"
+      },
+      {
+        "n": "Edelkastanie",
+        "c": "Tierbestäubung + Tiere streuen"
+      },
+      {
+        "n": "Feige (Ficus carica)",
+        "c": "Feigenwespen-Symbiose"
+      },
+      {
+        "n": "Mistel (Viscum album)",
+        "c": "Vogelkot (endozoochore)"
+      },
+      {
+        "n": "Klette (Arctium)",
+        "c": "Tierfel (Epizoochorie)"
+      },
+      {
+        "n": "Kokosnuss (Cocos)",
+        "c": "Wasserausbreitung (Hydrochorie)"
+      },
+      {
+        "n": "Gurke",
+        "c": "Insektenbestäubung"
+      },
+      {
+        "n": "Heidekraut (Calluna)",
+        "c": "Windbestäubung"
+      },
+      {
+        "n": "Mais (Zea mays)",
+        "c": "Windbestäubung"
+      },
+      {
+        "n": "Zuckerahorn (Acer saccharum)",
+        "c": "Windsamens (Samara)"
+      },
+      {
+        "n": "Walnuss",
+        "c": "Eichhörnchen (Tierbevorratung)"
+      },
+      {
+        "n": "Agave",
+        "c": "Einmal-Blüte + Ableger (vegetativ)"
       }
     ]
   },
@@ -633,6 +981,86 @@
       {
         "n": "Weißklee (Trifolium repens)",
         "c": "Grünland"
+      },
+      {
+        "n": "Kakteen (Saguaro)",
+        "c": "Wüste"
+      },
+      {
+        "n": "Seegras (Posidonia)",
+        "c": "Meeresgrund"
+      },
+      {
+        "n": "Flechten (Cladonia)",
+        "c": "Arktis / Fels"
+      },
+      {
+        "n": "Weide (Salix)",
+        "c": "Auenwald"
+      },
+      {
+        "n": "Korallenbaum (Erythrina)",
+        "c": "Tropischer Waldrand"
+      },
+      {
+        "n": "Alpenrose (Rhododendron ferrugineum)",
+        "c": "Hochgebirge"
+      },
+      {
+        "n": "Seekirsche (Maclura)",
+        "c": "Feuchtwiesen"
+      },
+      {
+        "n": "Wasserlinschen (Lemna)",
+        "c": "Stehende Gewässer"
+      },
+      {
+        "n": "Silberdistel (Carlina acaulis)",
+        "c": "Kalkrasen"
+      },
+      {
+        "n": "Kannenpflanze (Nepenthes)",
+        "c": "Tropischer Regenwald"
+      },
+      {
+        "n": "Steineiche (Quercus ilex)",
+        "c": "Mittelmeer-Macchia"
+      },
+      {
+        "n": "Lärche (Larix)",
+        "c": "Subalpiner Nadelwald"
+      },
+      {
+        "n": "Drachen-Blutbaum (Dracaena)",
+        "c": "Kanarische Inseln"
+      },
+      {
+        "n": "Wolfsmilch (Euphorbia)",
+        "c": "Halbwüste"
+      },
+      {
+        "n": "Salzgras (Spartina)",
+        "c": "Salzmarsch"
+      },
+      {
+        "n": "Schachtelhalm (Equisetum)",
+        "c": "Uferbereich"
+      },
+      {
+        "n": "Zirbelkiefer (Pinus cembra)",
+        "c": "Alpenregion 1800–2800m"
+      },
+      {
+        "n": "Rosettenpflanze Sempervivum",
+        "c": "Fels und Geröll"
+      },
+      {
+        "n": "Seerosen (Nymphaea)",
+        "c": "Stehende Gewässer"
+      },
+      {
+        "n": "Kauri-Baum (Agathis)",
+        "c": "Neuseeland Urwald"
       }
     ]
   },
@@ -804,6 +1232,78 @@
       },
       {
         "n": "Chili",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Mais (Zea mays)",
+        "c": "Mittelamerika (Mexiko)"
+      },
+      {
+        "n": "Kakao (Theobroma cacao)",
+        "c": "Mittelamerika"
+      },
+      {
+        "n": "Zuckerrohr (Saccharum officinarum)",
+        "c": "Neuguinea"
+      },
+      {
+        "n": "Kaffeestrauch (Coffea arabica)",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Teestrauch (Camellia sinensis)",
+        "c": "China/Yunnan"
+      },
+      {
+        "n": "Reispflanze (Oryza sativa)",
+        "c": "Yangtze-Delta, China"
+      },
+      {
+        "n": "Banane (Musa acuminata)",
+        "c": "Südostasien"
+      },
+      {
+        "n": "Aubergine (Solanum melongena)",
+        "c": "Indien"
+      },
+      {
+        "n": "Spinat (Spinacia oleracea)",
+        "c": "Zentralasien (Iran)"
+      },
+      {
+        "n": "Zwiebel (Allium cepa)",
+        "c": "Zentralasien"
+      },
+      {
+        "n": "Erbse (Pisum sativum)",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Linse (Lens culinaris)",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Wassermelone (Citrullus lanatus)",
+        "c": "Westafrika"
+      },
+      {
+        "n": "Paprika / Peperoni",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Erdnuss (Arachis hypogaea)",
+        "c": "Südamerika (Bolivien/Brasilien)"
+      },
+      {
+        "n": "Ananas (Ananas comosus)",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Süßkartoffel (Ipomoea batatas)",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Sonnenblume (Helianthus annuus)",
         "c": "Nordamerika"
       }
     ]
@@ -1078,6 +1578,86 @@
       {
         "n": "Gletscherhahnenfuß",
         "c": "Arktisch/Alpin"
+      },
+      {
+        "n": "Bananenstaude (Musa)",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Olivenbaum (Olea europaea)",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Robinie (Robinia pseudoacacia)",
+        "c": "Gemäßigt"
+      },
+      {
+        "n": "Zirbelkiefer (Pinus cembra)",
+        "c": "Subalpin"
+      },
+      {
+        "n": "Tamariske (Tamarix)",
+        "c": "Halbwüste/Steppe"
+      },
+      {
+        "n": "Tundrabirke (Betula nana)",
+        "c": "Polar/Tundra"
+      },
+      {
+        "n": "Palmfarn (Cycas revoluta)",
+        "c": "Subtropisch"
+      },
+      {
+        "n": "Weihrauchbaum (Boswellia sacra)",
+        "c": "Trockentropisch"
+      },
+      {
+        "n": "Rotklee (Trifolium pratense)",
+        "c": "Gemäßigt-ozeanisch"
+      },
+      {
+        "n": "Agave (Agave americana)",
+        "c": "Halbwüste/Wüste"
+      },
+      {
+        "n": "Regenbaum (Albizia saman)",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Mammutbaum (Sequoiadendron)",
+        "c": "Gemäßigt-feucht"
+      },
+      {
+        "n": "Lavendel (Lavandula)",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Saguaro-Kaktus (Carnegiea gigantea)",
+        "c": "Wüste"
+      },
+      {
+        "n": "Papyrus (Cyperus papyrus)",
+        "c": "Tropisch-subtropisch"
+      },
+      {
+        "n": "Araukarie (Araucaria araucana)",
+        "c": "Gemäßigt-kühl"
+      },
+      {
+        "n": "Welwitschia mirabilis",
+        "c": "Wüste (Namibia)"
+      },
+      {
+        "n": "Mandelbaum (Prunus dulcis)",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Kork-Eiche (Quercus suber)",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Schneerose (Helleborus niger)",
+        "c": "Gemäßigt-bergig"
       }
     ]
   },

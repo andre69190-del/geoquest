@@ -6701,6 +6701,102 @@
     {
       "n": "Aristoteles",
       "c": "Griechenland"
+    },
+    {
+      "name": "Sokrates",
+      "country": "Griechenland"
+    },
+    {
+      "name": "Platon",
+      "country": "Griechenland"
+    },
+    {
+      "name": "Aristoteles",
+      "country": "Griechenland"
+    },
+    {
+      "name": "Epikur",
+      "country": "Griechenland"
+    },
+    {
+      "name": "Mark Aurel",
+      "country": "Römisches Reich"
+    },
+    {
+      "name": "Augustinus von Hippo",
+      "country": "Nordafrika (Algerien)"
+    },
+    {
+      "name": "Thomas von Aquin",
+      "country": "Italien"
+    },
+    {
+      "name": "Francis Bacon",
+      "country": "England"
+    },
+    {
+      "name": "René Descartes",
+      "country": "Frankreich"
+    },
+    {
+      "name": "Baruch Spinoza",
+      "country": "Niederlande"
+    },
+    {
+      "name": "John Locke",
+      "country": "England"
+    },
+    {
+      "name": "David Hume",
+      "country": "Schottland"
+    },
+    {
+      "name": "Jean-Jacques Rousseau",
+      "country": "Frankreich/Schweiz"
+    },
+    {
+      "name": "Immanuel Kant",
+      "country": "Deutschland"
+    },
+    {
+      "name": "Georg Wilhelm Friedrich Hegel",
+      "country": "Deutschland"
+    },
+    {
+      "name": "Arthur Schopenhauer",
+      "country": "Deutschland"
+    },
+    {
+      "name": "Friedrich Nietzsche",
+      "country": "Deutschland"
+    },
+    {
+      "name": "Karl Marx",
+      "country": "Deutschland"
+    },
+    {
+      "name": "John Stuart Mill",
+      "country": "England"
+    },
+    {
+      "name": "Søren Kierkegaard",
+      "country": "Dänemark"
+    },
+    {
+      "name": "Edmund Husserl",
+      "country": "Deutschland"
+    },
+    {
+      "name": "Martin Heidegger",
+      "country": "Deutschland"
+    },
+    {
+      "name": "Jean-Paul Sartre",
+      "country": "Frankreich"
+    },
+    {
+      "name": "Simone de Beauvoir",
+      "country": "Frankreich"
     }
   ],
   "nationalpflanzen": [
@@ -6759,6 +6855,110 @@
     {
       "n": "Kaktus (Nopal)",
       "c": "Mexiko"
+    },
+    {
+      "name": "Ahorn-Blatt",
+      "country": "Kanada"
+    },
+    {
+      "name": "Distel",
+      "country": "Schottland"
+    },
+    {
+      "name": "Shamrock (Klee)",
+      "country": "Irland"
+    },
+    {
+      "name": "Rose",
+      "country": "England"
+    },
+    {
+      "name": "Lilie",
+      "country": "Frankreich"
+    },
+    {
+      "name": "Tulpe",
+      "country": "Niederlande"
+    },
+    {
+      "name": "Edelweiß",
+      "country": "Österreich / Schweiz"
+    },
+    {
+      "name": "Lavendel",
+      "country": "Frankreich (Provence)"
+    },
+    {
+      "name": "Eiche (Quercus)",
+      "country": "Deutschland"
+    },
+    {
+      "name": "Ginkgo",
+      "country": "China (Kultursymbol)"
+    },
+    {
+      "name": "Sakura (Kirschblüte)",
+      "country": "Japan"
+    },
+    {
+      "name": "Lotus",
+      "country": "Indien"
+    },
+    {
+      "name": "Orchidee (Cattleya trianae)",
+      "country": "Kolumbien"
+    },
+    {
+      "name": "Kaktus",
+      "country": "Mexiko (Symbol)"
+    },
+    {
+      "name": "Protea cynaroides",
+      "country": "Südafrika"
+    },
+    {
+      "name": "Pohutukawa",
+      "country": "Neuseeland"
+    },
+    {
+      "name": "Wattle (Akazie)",
+      "country": "Australien"
+    },
+    {
+      "name": "Puya raimondii",
+      "country": "Peru"
+    },
+    {
+      "name": "Kantūt (Bougainvillea)",
+      "country": "Papua-Neuguinea"
+    },
+    {
+      "name": "Balsa-Baum",
+      "country": "Ecuador"
+    },
+    {
+      "name": "Seerosenblatt",
+      "country": "Bangladesch"
+    },
+    {
+      "name": "Hagtorn (Weißdorn)",
+      "country": "Schweden (historisch)"
+    },
+    {
+      "name": "Freesie / Fynbos",
+      "country": "Südafrika (Kap)"
+    },
+    {
+      "name": "Jasmin",
+      "country": "Pakistan / Syrien"
+    },
+    {
+      "name": "Chrysantheme",
+      "country": "Japan (Kaiserhaus)"
+    },
+    {
+      "name": "Papyrus",
+      "country": "Ägypten"
     }
   ],
   "nationaltiere": [
@@ -6821,6 +7021,138 @@
     {
       "n": "Adler",
       "c": "Deutschland"
+    },
+    {
+      "name": "Känguru",
+      "country": "Australien"
+    },
+    {
+      "name": "Kanadischer Biber",
+      "country": "Kanada"
+    },
+    {
+      "name": "Bald Eagle",
+      "country": "USA"
+    },
+    {
+      "name": "Braunbär",
+      "country": "Russland"
+    },
+    {
+      "name": "Roter Drache",
+      "country": "Wales"
+    },
+    {
+      "name": "Einhorn",
+      "country": "Schottland"
+    },
+    {
+      "name": "Löwe",
+      "country": "England"
+    },
+    {
+      "name": "Gallischer Hahn",
+      "country": "Frankreich"
+    },
+    {
+      "name": "Schwarzer Adler",
+      "country": "Deutschland"
+    },
+    {
+      "name": "Weißer Elefant",
+      "country": "Thailand"
+    },
+    {
+      "name": "Tigerfisch",
+      "country": "Indien"
+    },
+    {
+      "name": "Pfau",
+      "country": "Indien"
+    },
+    {
+      "name": "Schneeleopard",
+      "country": "Pakistan"
+    },
+    {
+      "name": "Delfin",
+      "country": "Griechenland"
+    },
+    {
+      "name": "Stier",
+      "country": "Spanien"
+    },
+    {
+      "name": "Bulle",
+      "country": "Österreich"
+    },
+    {
+      "name": "Wisent",
+      "country": "Polen"
+    },
+    {
+      "name": "Springbok",
+      "country": "Südafrika"
+    },
+    {
+      "name": "Kiwi",
+      "country": "Neuseeland"
+    },
+    {
+      "name": "Silberne Fern",
+      "country": "Neuseeland (Symbol)"
+    },
+    {
+      "name": "Condor der Anden",
+      "country": "Argentinien"
+    },
+    {
+      "name": "Jaguar",
+      "country": "Mexiko / Brasilien"
+    },
+    {
+      "name": "Flamingo",
+      "country": "Bahamas"
+    },
+    {
+      "name": "Storch",
+      "country": "Belarus"
+    },
+    {
+      "name": "Elch / Moose",
+      "country": "Norwegen / Schweden"
+    },
+    {
+      "name": "Panda (Großer)",
+      "country": "China"
+    },
+    {
+      "name": "Dodo (historisch)",
+      "country": "Mauritius"
+    },
+    {
+      "name": "Nashorn (Breitmaulnashorn)",
+      "country": "Simbabwe"
+    },
+    {
+      "name": "Bengalischer Tiger",
+      "country": "Bangladesch"
+    },
+    {
+      "name": "Stier / Büffel",
+      "country": "Nepal"
+    },
+    {
+      "name": "Yak",
+      "country": "Tibet (inoffiziell)"
+    },
+    {
+      "name": "Bison",
+      "country": "USA (inoffiziell)"
+    },
+    {
+      "name": "Wapiti / Elch",
+      "country": "Kanada (inoffiziell)"
     }
   ],
   "religionen": [

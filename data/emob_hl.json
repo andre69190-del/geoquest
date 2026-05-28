@@ -3,312 +3,1804 @@
     "prompt": "Welches Elektroauto hat eine größere Batteriekapazität?",
     "unit": "kWh (nutzbar)",
     "items": [
-      {"name": "BMW iX xDrive50", "val": 105.2},
-      {"name": "Mercedes EQS 450+", "val": 107.8},
-      {"name": "Tesla Model S Long Range", "val": 100.0},
-      {"name": "Lucid Air Grand Touring", "val": 112.0},
-      {"name": "Audi e-tron GT quattro", "val": 83.7},
-      {"name": "BMW iX3 (2021)", "val": 74.0},
-      {"name": "Ford Mustang Mach-E Extended RWD", "val": 91.0},
-      {"name": "Volkswagen ID.4 Pro Performance", "val": 77.0},
-      {"name": "Hyundai Ioniq 6 Long Range", "val": 77.4},
-      {"name": "Kia EV6 Long Range", "val": 77.4},
-      {"name": "Tesla Model 3 Long Range", "val": 82.0},
-      {"name": "Porsche Taycan 4S", "val": 83.7},
-      {"name": "Rivian R1T (Max Pack)", "val": 135.0},
-      {"name": "GMC Hummer EV Edition 1", "val": 212.7},
-      {"name": "Renault Megane E-Tech", "val": 60.0},
-      {"name": "Peugeot e-208", "val": 48.1},
-      {"name": "Fiat 500e", "val": 37.3},
-      {"name": "Smart #1 Brabus", "val": 66.0},
-      {"name": "NIO ET7", "val": 100.0},
-      {"name": "Xpeng G9 (Ultra Long Range)", "val": 98.0}
+      {
+        "name": "BMW iX xDrive50",
+        "val": 105.2
+      },
+      {
+        "name": "Mercedes EQS 450+",
+        "val": 107.8
+      },
+      {
+        "name": "Tesla Model S Long Range",
+        "val": 100.0
+      },
+      {
+        "name": "Lucid Air Grand Touring",
+        "val": 112.0
+      },
+      {
+        "name": "Audi e-tron GT quattro",
+        "val": 83.7
+      },
+      {
+        "name": "BMW iX3 (2021)",
+        "val": 74.0
+      },
+      {
+        "name": "Ford Mustang Mach-E Extended RWD",
+        "val": 91.0
+      },
+      {
+        "name": "Volkswagen ID.4 Pro Performance",
+        "val": 77.0
+      },
+      {
+        "name": "Hyundai Ioniq 6 Long Range",
+        "val": 77.4
+      },
+      {
+        "name": "Kia EV6 Long Range",
+        "val": 77.4
+      },
+      {
+        "name": "Tesla Model 3 Long Range",
+        "val": 82.0
+      },
+      {
+        "name": "Porsche Taycan 4S",
+        "val": 83.7
+      },
+      {
+        "name": "Rivian R1T (Max Pack)",
+        "val": 135.0
+      },
+      {
+        "name": "GMC Hummer EV Edition 1",
+        "val": 212.7
+      },
+      {
+        "name": "Renault Megane E-Tech",
+        "val": 60.0
+      },
+      {
+        "name": "Peugeot e-208",
+        "val": 48.1
+      },
+      {
+        "name": "Fiat 500e",
+        "val": 37.3
+      },
+      {
+        "name": "Smart #1 Brabus",
+        "val": 66.0
+      },
+      {
+        "name": "NIO ET7",
+        "val": 100.0
+      },
+      {
+        "name": "Xpeng G9 (Ultra Long Range)",
+        "val": 98.0
+      },
+      {
+        "name": "Tesla Model Y Long Range",
+        "val": 75.0
+      },
+      {
+        "name": "Tesla Model 3 Standard Range (2023)",
+        "val": 60.0
+      },
+      {
+        "name": "Volkswagen ID.3 Pro (58 kWh)",
+        "val": 58.0
+      },
+      {
+        "name": "Volkswagen ID.7 Pro",
+        "val": 77.0
+      },
+      {
+        "name": "Volkswagen ID. Buzz Long Range",
+        "val": 91.0
+      },
+      {
+        "name": "Audi Q8 e-tron 55",
+        "val": 114.0
+      },
+      {
+        "name": "BMW i4 eDrive40",
+        "val": 83.9
+      },
+      {
+        "name": "BMW i5 M60 xDrive",
+        "val": 83.9
+      },
+      {
+        "name": "BMW i7 xDrive60",
+        "val": 101.7
+      },
+      {
+        "name": "Mercedes EQC 400 4MATIC",
+        "val": 80.0
+      },
+      {
+        "name": "Mercedes EQE 350+",
+        "val": 90.6
+      },
+      {
+        "name": "Mercedes G 580 EQ",
+        "val": 116.0
+      },
+      {
+        "name": "Hyundai Ioniq 5 Long Range RWD",
+        "val": 77.4
+      },
+      {
+        "name": "Kia EV9 GT-Line (Long Range)",
+        "val": 99.8
+      },
+      {
+        "name": "Nissan Leaf (40 kWh)",
+        "val": 40.0
+      },
+      {
+        "name": "Nissan Ariya e-4ORCE (87 kWh)",
+        "val": 87.0
+      },
+      {
+        "name": "Renault Zoe ZE50",
+        "val": 52.0
+      },
+      {
+        "name": "Polestar 2 Long Range Single Motor",
+        "val": 82.0
+      },
+      {
+        "name": "Volvo XC40 Recharge Twin",
+        "val": 82.0
+      },
+      {
+        "name": "Volvo EX90 Twin Motor Performance",
+        "val": 111.0
+      },
+      {
+        "name": "Ford F-150 Lightning Extended Range",
+        "val": 131.0
+      },
+      {
+        "name": "Rivian R1S Adventure (Max Pack)",
+        "val": 149.0
+      },
+      {
+        "name": "Lucid Air Pure",
+        "val": 88.0
+      },
+      {
+        "name": "BYD Atto 3 (60,5 kWh)",
+        "val": 60.5
+      },
+      {
+        "name": "BYD Seal AWD",
+        "val": 82.6
+      },
+      {
+        "name": "MINI Cooper SE (2. Gen)",
+        "val": 54.2
+      },
+      {
+        "name": "Cupra Born (77 kWh)",
+        "val": 77.0
+      },
+      {
+        "name": "Skoda Enyaq iV 80",
+        "val": 77.0
+      },
+      {
+        "name": "Mazda MX-30 (35,5 kWh)",
+        "val": 35.5
+      },
+      {
+        "name": "Dacia Spring (26,8 kWh)",
+        "val": 26.8
+      }
     ]
   },
   "ladeleistung": {
     "prompt": "Welches Elektroauto lädt mit höherer Maximalleistung?",
     "unit": "kW (DC max.)",
     "items": [
-      {"name": "Porsche Taycan (800V)", "val": 270},
-      {"name": "Hyundai Ioniq 6 (800V)", "val": 233},
-      {"name": "Kia EV6 GT (800V)", "val": 239},
-      {"name": "Audi e-tron GT (800V)", "val": 270},
-      {"name": "Tesla Model 3 Highland", "val": 250},
-      {"name": "BMW iX xDrive50", "val": 200},
-      {"name": "BMW iX3 (2021)", "val": 150},
-      {"name": "Ford Mustang Mach-E Extended", "val": 150},
-      {"name": "Mercedes EQS 450+", "val": 200},
-      {"name": "Volkswagen ID.4 Pro", "val": 135},
-      {"name": "Renault Megane E-Tech", "val": 130},
-      {"name": "Peugeot e-308", "val": 100},
-      {"name": "Fiat 500e (klein)", "val": 85},
-      {"name": "Lucid Air Grand Touring", "val": 300},
-      {"name": "Rivian R1T (Dual Motor)", "val": 216},
-      {"name": "NIO ET7 (150 kWh)", "val": 500},
-      {"name": "Xpeng G9 (S4 Lader)", "val": 480},
-      {"name": "BYD Han EV", "val": 120},
-      {"name": "Smart EQ fortwo", "val": 22},
-      {"name": "Dacia Spring", "val": 30}
+      {
+        "name": "Porsche Taycan (800V)",
+        "val": 270
+      },
+      {
+        "name": "Hyundai Ioniq 6 (800V)",
+        "val": 233
+      },
+      {
+        "name": "Kia EV6 GT (800V)",
+        "val": 239
+      },
+      {
+        "name": "Audi e-tron GT (800V)",
+        "val": 270
+      },
+      {
+        "name": "Tesla Model 3 Highland",
+        "val": 250
+      },
+      {
+        "name": "BMW iX xDrive50",
+        "val": 200
+      },
+      {
+        "name": "BMW iX3 (2021)",
+        "val": 150
+      },
+      {
+        "name": "Ford Mustang Mach-E Extended",
+        "val": 150
+      },
+      {
+        "name": "Mercedes EQS 450+",
+        "val": 200
+      },
+      {
+        "name": "Volkswagen ID.4 Pro",
+        "val": 135
+      },
+      {
+        "name": "Renault Megane E-Tech",
+        "val": 130
+      },
+      {
+        "name": "Peugeot e-308",
+        "val": 100
+      },
+      {
+        "name": "Fiat 500e (klein)",
+        "val": 85
+      },
+      {
+        "name": "Lucid Air Grand Touring",
+        "val": 300
+      },
+      {
+        "name": "Rivian R1T (Dual Motor)",
+        "val": 216
+      },
+      {
+        "name": "NIO ET7 (150 kWh)",
+        "val": 500
+      },
+      {
+        "name": "Xpeng G9 (S4 Lader)",
+        "val": 480
+      },
+      {
+        "name": "BYD Han EV",
+        "val": 120
+      },
+      {
+        "name": "Smart EQ fortwo",
+        "val": 22
+      },
+      {
+        "name": "Dacia Spring",
+        "val": 30
+      },
+      {
+        "name": "Tesla Model Y (V3-Supercharger)",
+        "val": 250
+      },
+      {
+        "name": "Volkswagen ID.4 GTX (CCS)",
+        "val": 135
+      },
+      {
+        "name": "Volkswagen ID.7 Pro (CCS)",
+        "val": 175
+      },
+      {
+        "name": "Audi Q8 e-tron 55 (CCS)",
+        "val": 170
+      },
+      {
+        "name": "BMW i5 M60 (CCS)",
+        "val": 205
+      },
+      {
+        "name": "BMW i7 xDrive60 (CCS)",
+        "val": 195
+      },
+      {
+        "name": "Mercedes EQE 350+ (CCS)",
+        "val": 170
+      },
+      {
+        "name": "Mercedes EQS 580 4MATIC (CCS)",
+        "val": 200
+      },
+      {
+        "name": "Hyundai Ioniq 5 Long Range (800V)",
+        "val": 220
+      },
+      {
+        "name": "Kia EV9 GT-Line (800V CCS)",
+        "val": 240
+      },
+      {
+        "name": "Kia EV6 GT (800V Peak)",
+        "val": 240
+      },
+      {
+        "name": "Nissan Ariya 87 kWh (CHAdeMO)",
+        "val": 130
+      },
+      {
+        "name": "Nissan Leaf (CHAdeMO 50 kW)",
+        "val": 50
+      },
+      {
+        "name": "Renault Zoe ZE50 (AC max)",
+        "val": 50
+      },
+      {
+        "name": "Polestar 2 Long Range (CCS)",
+        "val": 205
+      },
+      {
+        "name": "Volvo EX90 Twin Motor (CCS)",
+        "val": 250
+      },
+      {
+        "name": "Ford F-150 Lightning (DC Fast)",
+        "val": 150
+      },
+      {
+        "name": "Rivian R1S (DC Combo)",
+        "val": 220
+      },
+      {
+        "name": "Lucid Air Grand Touring (CCS)",
+        "val": 300
+      },
+      {
+        "name": "BYD Han EV (CCS)",
+        "val": 120
+      },
+      {
+        "name": "BYD Seal AWD (CCS)",
+        "val": 150
+      },
+      {
+        "name": "Xpeng G9 S4-Lader (800V)",
+        "val": 300
+      },
+      {
+        "name": "Cupra Born 77 kWh (CCS)",
+        "val": 130
+      },
+      {
+        "name": "Skoda Enyaq iV 80 (CCS)",
+        "val": 135
+      },
+      {
+        "name": "MINI Cooper SE 2. Gen (CCS)",
+        "val": 95
+      },
+      {
+        "name": "Dacia Spring (CCS)",
+        "val": 30
+      },
+      {
+        "name": "Rimac Nevera (DC)",
+        "val": 500
+      },
+      {
+        "name": "Tesla Cybertruck AWD (V4)",
+        "val": 250
+      },
+      {
+        "name": "Xiaomi SU7 Max (800V)",
+        "val": 270
+      },
+      {
+        "name": "Mercedes EQG (Off-Road-Lader)",
+        "val": 200
+      }
     ]
   },
   "wltp": {
     "prompt": "Welches Elektroauto hat eine größere WLTP-Reichweite?",
     "unit": "km (WLTP)",
     "items": [
-      {"name": "Lucid Air Grand Touring", "val": 836},
-      {"name": "Tesla Model S Long Range", "val": 652},
-      {"name": "Mercedes EQS 450+", "val": 770},
-      {"name": "BMW iX xDrive50", "val": 630},
-      {"name": "Hyundai Ioniq 6 Long Range RWD", "val": 614},
-      {"name": "BMW iX3 (2021)", "val": 460},
-      {"name": "Ford Mustang Mach-E Extended RWD", "val": 600},
-      {"name": "Volkswagen ID.4 Pro Performance", "val": 522},
-      {"name": "Kia EV6 Long Range RWD", "val": 528},
-      {"name": "Tesla Model 3 Long Range", "val": 629},
-      {"name": "Audi e-tron GT quattro", "val": 488},
-      {"name": "Porsche Taycan 4S", "val": 507},
-      {"name": "Renault Megane E-Tech", "val": 470},
-      {"name": "Peugeot e-208", "val": 362},
-      {"name": "Fiat 500e (großer Akku)", "val": 320},
-      {"name": "Dacia Spring Comfort", "val": 225},
-      {"name": "Smart #1 Brabus", "val": 400},
-      {"name": "NIO ET7 (100 kWh)", "val": 580},
-      {"name": "Rivian R1T Dual Motor", "val": 505},
-      {"name": "Xpeng G9 AWD (568 km)", "val": 568}
+      {
+        "name": "Lucid Air Grand Touring",
+        "val": 836
+      },
+      {
+        "name": "Tesla Model S Long Range",
+        "val": 652
+      },
+      {
+        "name": "Mercedes EQS 450+",
+        "val": 770
+      },
+      {
+        "name": "BMW iX xDrive50",
+        "val": 630
+      },
+      {
+        "name": "Hyundai Ioniq 6 Long Range RWD",
+        "val": 614
+      },
+      {
+        "name": "BMW iX3 (2021)",
+        "val": 460
+      },
+      {
+        "name": "Ford Mustang Mach-E Extended RWD",
+        "val": 600
+      },
+      {
+        "name": "Volkswagen ID.4 Pro Performance",
+        "val": 522
+      },
+      {
+        "name": "Kia EV6 Long Range RWD",
+        "val": 528
+      },
+      {
+        "name": "Tesla Model 3 Long Range",
+        "val": 629
+      },
+      {
+        "name": "Audi e-tron GT quattro",
+        "val": 488
+      },
+      {
+        "name": "Porsche Taycan 4S",
+        "val": 507
+      },
+      {
+        "name": "Renault Megane E-Tech",
+        "val": 470
+      },
+      {
+        "name": "Peugeot e-208",
+        "val": 362
+      },
+      {
+        "name": "Fiat 500e (großer Akku)",
+        "val": 320
+      },
+      {
+        "name": "Dacia Spring Comfort",
+        "val": 225
+      },
+      {
+        "name": "Smart #1 Brabus",
+        "val": 400
+      },
+      {
+        "name": "NIO ET7 (100 kWh)",
+        "val": 580
+      },
+      {
+        "name": "Rivian R1T Dual Motor",
+        "val": 505
+      },
+      {
+        "name": "Xpeng G9 AWD (568 km)",
+        "val": 568
+      },
+      {
+        "name": "Tesla Model Y Long Range AWD",
+        "val": 533
+      },
+      {
+        "name": "Tesla Model 3 Long Range AWD (2023)",
+        "val": 629
+      },
+      {
+        "name": "Volkswagen ID.7 Pro S (WLTP)",
+        "val": 709
+      },
+      {
+        "name": "Volkswagen ID.3 Pro (58 kWh)",
+        "val": 427
+      },
+      {
+        "name": "Audi Q8 e-tron 55 quattro",
+        "val": 582
+      },
+      {
+        "name": "BMW i5 eDrive40 (WLTP)",
+        "val": 582
+      },
+      {
+        "name": "BMW i7 xDrive60 (WLTP)",
+        "val": 625
+      },
+      {
+        "name": "Mercedes EQE 350+ (WLTP)",
+        "val": 660
+      },
+      {
+        "name": "Mercedes EQS 450 4MATIC (WLTP)",
+        "val": 770
+      },
+      {
+        "name": "Hyundai Ioniq 5 Long Range RWD",
+        "val": 507
+      },
+      {
+        "name": "Kia EV9 GT-Line Long Range",
+        "val": 563
+      },
+      {
+        "name": "Nissan Ariya e-4ORCE 87 kWh",
+        "val": 498
+      },
+      {
+        "name": "Nissan Leaf 40 kWh",
+        "val": 270
+      },
+      {
+        "name": "Renault Zoe ZE50 (WLTP)",
+        "val": 395
+      },
+      {
+        "name": "Polestar 2 Long Range Single Motor",
+        "val": 540
+      },
+      {
+        "name": "Volvo EX90 Twin Motor (WLTP)",
+        "val": 580
+      },
+      {
+        "name": "Volvo XC40 Recharge (WLTP)",
+        "val": 425
+      },
+      {
+        "name": "Ford F-150 Lightning Platinum (WLTP)",
+        "val": 480
+      },
+      {
+        "name": "Rivian R1S Adventure",
+        "val": 516
+      },
+      {
+        "name": "Lucid Air Grand Touring (EPA)",
+        "val": 724
+      },
+      {
+        "name": "BYD Han EV (WLTP)",
+        "val": 521
+      },
+      {
+        "name": "BYD Seal AWD (WLTP)",
+        "val": 520
+      },
+      {
+        "name": "Cupra Born 77 kWh (WLTP)",
+        "val": 548
+      },
+      {
+        "name": "Skoda Enyaq iV 80 (WLTP)",
+        "val": 536
+      },
+      {
+        "name": "MINI Cooper SE 2. Gen (WLTP)",
+        "val": 402
+      },
+      {
+        "name": "Dacia Spring 65 HP (WLTP)",
+        "val": 225
+      },
+      {
+        "name": "Xpeng G9 Long Range (WLTP)",
+        "val": 702
+      },
+      {
+        "name": "Tesla Cybertruck Long Range AWD",
+        "val": 547
+      },
+      {
+        "name": "Mercedes EQG (WLTP)",
+        "val": 473
+      }
     ]
   },
   "0_100": {
     "prompt": "Welches Elektroauto beschleunigt schneller von 0 auf 100 km/h?",
     "unit": "Sekunden (0-100 km/h)",
     "items": [
-      {"name": "Tesla Model S Plaid", "val": 2.1},
-      {"name": "Rimac Nevera", "val": 1.97},
-      {"name": "Porsche Taycan Turbo S", "val": 2.8},
-      {"name": "BMW i4 M50", "val": 3.9},
-      {"name": "Audi e-tron GT RS", "val": 3.3},
-      {"name": "Ford Mustang Mach-E GT", "val": 3.7},
-      {"name": "BMW iX3 (2021)", "val": 6.8},
-      {"name": "Volkswagen ID.4 GTX", "val": 6.2},
-      {"name": "Hyundai Ioniq 6 AWD", "val": 5.1},
-      {"name": "Kia EV6 GT", "val": 3.5},
-      {"name": "Renault Megane E-Tech", "val": 7.4},
-      {"name": "Peugeot e-208", "val": 8.1},
-      {"name": "Dacia Spring", "val": 19.1},
-      {"name": "Fiat 500e", "val": 9.0},
-      {"name": "Tesla Model 3 Performance", "val": 3.1},
-      {"name": "Lucid Air Sapphire", "val": 1.89},
-      {"name": "Mercedes EQS 53 AMG", "val": 3.4},
-      {"name": "NIO EP9 (Rennwagen)", "val": 2.7},
-      {"name": "Smart #3 Brabus", "val": 3.7},
-      {"name": "BYD Seal AWD", "val": 3.8}
+      {
+        "name": "Tesla Model S Plaid",
+        "val": 2.1
+      },
+      {
+        "name": "Rimac Nevera",
+        "val": 1.97
+      },
+      {
+        "name": "Porsche Taycan Turbo S",
+        "val": 2.8
+      },
+      {
+        "name": "BMW i4 M50",
+        "val": 3.9
+      },
+      {
+        "name": "Audi e-tron GT RS",
+        "val": 3.3
+      },
+      {
+        "name": "Ford Mustang Mach-E GT",
+        "val": 3.7
+      },
+      {
+        "name": "BMW iX3 (2021)",
+        "val": 6.8
+      },
+      {
+        "name": "Volkswagen ID.4 GTX",
+        "val": 6.2
+      },
+      {
+        "name": "Hyundai Ioniq 6 AWD",
+        "val": 5.1
+      },
+      {
+        "name": "Kia EV6 GT",
+        "val": 3.5
+      },
+      {
+        "name": "Renault Megane E-Tech",
+        "val": 7.4
+      },
+      {
+        "name": "Peugeot e-208",
+        "val": 8.1
+      },
+      {
+        "name": "Dacia Spring",
+        "val": 19.1
+      },
+      {
+        "name": "Fiat 500e",
+        "val": 9.0
+      },
+      {
+        "name": "Tesla Model 3 Performance",
+        "val": 3.1
+      },
+      {
+        "name": "Lucid Air Sapphire",
+        "val": 1.89
+      },
+      {
+        "name": "Mercedes EQS 53 AMG",
+        "val": 3.4
+      },
+      {
+        "name": "NIO EP9 (Rennwagen)",
+        "val": 2.7
+      },
+      {
+        "name": "Smart #3 Brabus",
+        "val": 3.7
+      },
+      {
+        "name": "BYD Seal AWD",
+        "val": 3.8
+      },
+      {
+        "name": "Rimac Nevera (Heck)",
+        "val": 1.81
+      },
+      {
+        "name": "Pininfarina Battista",
+        "val": 1.86
+      },
+      {
+        "name": "Tesla Model S Plaid+",
+        "val": 1.99
+      },
+      {
+        "name": "Lotus Evija",
+        "val": 2.9
+      },
+      {
+        "name": "Kia EV6 GT (AWD)",
+        "val": 3.5
+      },
+      {
+        "name": "Porsche Taycan Turbo S Cross Turismo",
+        "val": 2.9
+      },
+      {
+        "name": "BMW i4 M50 xDrive",
+        "val": 3.9
+      },
+      {
+        "name": "Mercedes AMG EQE 53 4MATIC+",
+        "val": 3.4
+      },
+      {
+        "name": "Audi RS e-tron GT",
+        "val": 3.3
+      },
+      {
+        "name": "Tesla Model Y Performance",
+        "val": 3.7
+      },
+      {
+        "name": "Rivian R1T Dual Motor",
+        "val": 4.5
+      },
+      {
+        "name": "Hyundai Ioniq 5 N",
+        "val": 3.4
+      },
+      {
+        "name": "BMW i5 M60 xDrive",
+        "val": 3.8
+      },
+      {
+        "name": "Volkswagen ID.7 GTX (2024)",
+        "val": 5.4
+      },
+      {
+        "name": "Cupra Born e-Boost (231 PS)",
+        "val": 5.9
+      },
+      {
+        "name": "Skoda Enyaq Coupe RS iV",
+        "val": 6.5
+      },
+      {
+        "name": "Ford Mustang Mach-E GT Performance",
+        "val": 3.7
+      },
+      {
+        "name": "Lucid Air Pure",
+        "val": 4.0
+      },
+      {
+        "name": "Xpeng P7 Allrad",
+        "val": 4.3
+      },
+      {
+        "name": "Nio ET7 Dual Motor",
+        "val": 3.8
+      },
+      {
+        "name": "Polestar 3 Long Range Dual Motor",
+        "val": 4.7
+      },
+      {
+        "name": "Volvo EX90 Twin Motor Performance",
+        "val": 4.9
+      },
+      {
+        "name": "Mercedes EQG 580 4MATIC",
+        "val": 4.7
+      },
+      {
+        "name": "Tesla Cybertruck All-Wheel Drive",
+        "val": 4.1
+      },
+      {
+        "name": "Rolls-Royce Spectre (EV)",
+        "val": 4.5
+      },
+      {
+        "name": "Bentley Bentayga EWB Azure",
+        "val": 4.5
+      },
+      {
+        "name": "MINI Cooper SE 2. Gen (Aceman)",
+        "val": 6.8
+      },
+      {
+        "name": "Dacia Spring 65 HP",
+        "val": 13.7
+      },
+      {
+        "name": "Renault Zoe ZE50 (Eco-Modus off)",
+        "val": 9.5
+      }
     ]
   },
   "gewicht": {
     "prompt": "Welches Elektroauto ist schwerer?",
     "unit": "kg (Leergewicht)",
     "items": [
-      {"name": "GMC Hummer EV Edition 1", "val": 4111},
-      {"name": "Rivian R1T (Max Pack)", "val": 3490},
-      {"name": "Mercedes EQS 450+", "val": 2480},
-      {"name": "BMW iX xDrive50", "val": 2585},
-      {"name": "Audi e-tron 55 quattro", "val": 2565},
-      {"name": "Tesla Model X Long Range", "val": 2455},
-      {"name": "Porsche Taycan 4S", "val": 2295},
-      {"name": "BMW iX3 (2021)", "val": 2185},
-      {"name": "Ford Mustang Mach-E Extended AWD", "val": 2293},
-      {"name": "Volkswagen ID.4 Pro Performance", "val": 2204},
-      {"name": "Tesla Model 3 Long Range", "val": 1964},
-      {"name": "Hyundai Ioniq 6 Long Range", "val": 1985},
-      {"name": "Kia EV6 Long Range RWD", "val": 2055},
-      {"name": "Renault Megane E-Tech", "val": 1636},
-      {"name": "Peugeot e-208", "val": 1530},
-      {"name": "Fiat 500e", "val": 1365},
-      {"name": "Dacia Spring Comfort", "val": 984},
-      {"name": "Smart EQ fortwo", "val": 975},
-      {"name": "NIO ET7 (100 kWh)", "val": 2360},
-      {"name": "BYD Han EV AWD", "val": 2230}
+      {
+        "name": "GMC Hummer EV Edition 1",
+        "val": 4111
+      },
+      {
+        "name": "Rivian R1T (Max Pack)",
+        "val": 3490
+      },
+      {
+        "name": "Mercedes EQS 450+",
+        "val": 2480
+      },
+      {
+        "name": "BMW iX xDrive50",
+        "val": 2585
+      },
+      {
+        "name": "Audi e-tron 55 quattro",
+        "val": 2565
+      },
+      {
+        "name": "Tesla Model X Long Range",
+        "val": 2455
+      },
+      {
+        "name": "Porsche Taycan 4S",
+        "val": 2295
+      },
+      {
+        "name": "BMW iX3 (2021)",
+        "val": 2185
+      },
+      {
+        "name": "Ford Mustang Mach-E Extended AWD",
+        "val": 2293
+      },
+      {
+        "name": "Volkswagen ID.4 Pro Performance",
+        "val": 2204
+      },
+      {
+        "name": "Tesla Model 3 Long Range",
+        "val": 1964
+      },
+      {
+        "name": "Hyundai Ioniq 6 Long Range",
+        "val": 1985
+      },
+      {
+        "name": "Kia EV6 Long Range RWD",
+        "val": 2055
+      },
+      {
+        "name": "Renault Megane E-Tech",
+        "val": 1636
+      },
+      {
+        "name": "Peugeot e-208",
+        "val": 1530
+      },
+      {
+        "name": "Fiat 500e",
+        "val": 1365
+      },
+      {
+        "name": "Dacia Spring Comfort",
+        "val": 984
+      },
+      {
+        "name": "Smart EQ fortwo",
+        "val": 975
+      },
+      {
+        "name": "NIO ET7 (100 kWh)",
+        "val": 2360
+      },
+      {
+        "name": "BYD Han EV AWD",
+        "val": 2230
+      },
+      {
+        "name": "Tesla Model 3 Standard Range (2023)",
+        "val": 1757
+      },
+      {
+        "name": "Volkswagen ID.3 Pro (58 kWh)",
+        "val": 1772
+      },
+      {
+        "name": "BMW i4 eDrive40",
+        "val": 2125
+      },
+      {
+        "name": "Audi Q8 e-tron 55 quattro",
+        "val": 2585
+      },
+      {
+        "name": "Kia EV9 GT-Line (Long Range)",
+        "val": 2610
+      },
+      {
+        "name": "Nissan Ariya e-4ORCE 87 kWh",
+        "val": 2202
+      },
+      {
+        "name": "Mercedes EQC 400 4MATIC",
+        "val": 2495
+      },
+      {
+        "name": "Polestar 2 Long Range Dual Motor",
+        "val": 2123
+      },
+      {
+        "name": "Volvo EX90 Twin Motor",
+        "val": 2748
+      },
+      {
+        "name": "Ford F-150 Lightning Lariat (Extended)",
+        "val": 3069
+      },
+      {
+        "name": "Rivian R1T Dual Motor",
+        "val": 2906
+      },
+      {
+        "name": "Lucid Air Grand Touring",
+        "val": 2154
+      },
+      {
+        "name": "BYD Seal AWD",
+        "val": 2150
+      },
+      {
+        "name": "Dacia Spring 65 HP (mini)",
+        "val": 979
+      },
+      {
+        "name": "MINI Cooper SE 2. Gen (Aceman)",
+        "val": 1615
+      },
+      {
+        "name": "Renault Zoe ZE50",
+        "val": 1502
+      },
+      {
+        "name": "Cupra Born 77 kWh",
+        "val": 1843
+      },
+      {
+        "name": "Skoda Enyaq iV 80",
+        "val": 2019
+      },
+      {
+        "name": "Tesla Cybertruck AWD (geschätzt)",
+        "val": 2995
+      }
     ]
   },
   "ladezeit_10_80": {
     "prompt": "Bei welchem Fahrzeug dauert das Laden von 10% auf 80% kürzer?",
     "unit": "Minuten (10–80%)",
     "items": [
-      {"name": "Porsche Taycan (800V, 270 kW)", "val": 22},
-      {"name": "Hyundai Ioniq 6 (800V)", "val": 18},
-      {"name": "Kia EV6 GT (800V)", "val": 18},
-      {"name": "Audi e-tron GT RS", "val": 23},
-      {"name": "Tesla Model 3 Highland", "val": 25},
-      {"name": "BMW iX3 (150 kW DC)", "val": 34},
-      {"name": "Ford Mustang Mach-E Extended (150 kW)", "val": 38},
-      {"name": "BMW iX xDrive50 (200 kW)", "val": 35},
-      {"name": "Mercedes EQS 450+ (200 kW)", "val": 31},
-      {"name": "Volkswagen ID.4 Pro (135 kW)", "val": 35},
-      {"name": "Renault Megane E-Tech (130 kW)", "val": 32},
-      {"name": "Peugeot e-308 (100 kW)", "val": 37},
-      {"name": "Fiat 500e (85 kW)", "val": 35},
-      {"name": "Dacia Spring (30 kW)", "val": 65},
-      {"name": "Smart EQ fortwo (22 kW AC)", "val": 160},
-      {"name": "NIO ET7 (Battery Swap)", "val": 4},
-      {"name": "Lucid Air (300 kW)", "val": 22},
-      {"name": "Rivian R1T (216 kW)", "val": 25},
-      {"name": "Xpeng G9 S4 (480 kW)", "val": 10},
-      {"name": "BYD Han EV (120 kW)", "val": 40}
+      {
+        "name": "Porsche Taycan (800V, 270 kW)",
+        "val": 22
+      },
+      {
+        "name": "Hyundai Ioniq 6 (800V)",
+        "val": 18
+      },
+      {
+        "name": "Kia EV6 GT (800V)",
+        "val": 18
+      },
+      {
+        "name": "Audi e-tron GT RS",
+        "val": 23
+      },
+      {
+        "name": "Tesla Model 3 Highland",
+        "val": 25
+      },
+      {
+        "name": "BMW iX3 (150 kW DC)",
+        "val": 34
+      },
+      {
+        "name": "Ford Mustang Mach-E Extended (150 kW)",
+        "val": 38
+      },
+      {
+        "name": "BMW iX xDrive50 (200 kW)",
+        "val": 35
+      },
+      {
+        "name": "Mercedes EQS 450+ (200 kW)",
+        "val": 31
+      },
+      {
+        "name": "Volkswagen ID.4 Pro (135 kW)",
+        "val": 35
+      },
+      {
+        "name": "Renault Megane E-Tech (130 kW)",
+        "val": 32
+      },
+      {
+        "name": "Peugeot e-308 (100 kW)",
+        "val": 37
+      },
+      {
+        "name": "Fiat 500e (85 kW)",
+        "val": 35
+      },
+      {
+        "name": "Dacia Spring (30 kW)",
+        "val": 65
+      },
+      {
+        "name": "Smart EQ fortwo (22 kW AC)",
+        "val": 160
+      },
+      {
+        "name": "NIO ET7 (Battery Swap)",
+        "val": 4
+      },
+      {
+        "name": "Lucid Air (300 kW)",
+        "val": 22
+      },
+      {
+        "name": "Rivian R1T (216 kW)",
+        "val": 25
+      },
+      {
+        "name": "Xpeng G9 S4 (480 kW)",
+        "val": 10
+      },
+      {
+        "name": "BYD Han EV (120 kW)",
+        "val": 40
+      },
+      {
+        "name": "Tesla Model Y (V3 Supercharger)",
+        "val": 30
+      },
+      {
+        "name": "Volkswagen ID.4 GTX (135 kW)",
+        "val": 36
+      },
+      {
+        "name": "BMW i4 eDrive40 (205 kW)",
+        "val": 31
+      },
+      {
+        "name": "Kia EV6 GT (240 kW, 800V)",
+        "val": 18
+      },
+      {
+        "name": "Hyundai Ioniq 6 Long Range (240 kW)",
+        "val": 18
+      },
+      {
+        "name": "Hyundai Ioniq 5 Long Range (220 kW)",
+        "val": 18
+      },
+      {
+        "name": "Mercedes EQC 400 (110 kW)",
+        "val": 40
+      },
+      {
+        "name": "Mercedes EQE 350+ (170 kW)",
+        "val": 32
+      },
+      {
+        "name": "Nissan Leaf (CHAdeMO 50 kW)",
+        "val": 50
+      },
+      {
+        "name": "Nissan Ariya e-4ORCE (130 kW)",
+        "val": 38
+      },
+      {
+        "name": "Renault Zoe ZE50 (50 kW max)",
+        "val": 60
+      },
+      {
+        "name": "Polestar 2 Long Range (205 kW)",
+        "val": 28
+      },
+      {
+        "name": "Volvo EX90 Twin Motor (250 kW)",
+        "val": 28
+      },
+      {
+        "name": "Ford F-150 Lightning (150 kW)",
+        "val": 44
+      },
+      {
+        "name": "Rivian R1T (DC Combo 220 kW)",
+        "val": 31
+      },
+      {
+        "name": "Lucid Air (CCS 300 kW)",
+        "val": 22
+      },
+      {
+        "name": "Dacia Spring (30 kW, AC max)",
+        "val": 75
+      },
+      {
+        "name": "MINI Cooper SE (95 kW)",
+        "val": 27
+      },
+      {
+        "name": "Tesla Cybertruck AWD (250 kW)",
+        "val": 26
+      }
     ]
   },
   "cw_wert": {
     "prompt": "Welches Fahrzeug hat einen niedrigeren Luftwiderstandsbeiwert (cw)?",
     "unit": "cw × 1000",
     "items": [
-      {"name": "Mercedes EQS 450+ (cw 0,20)", "val": 200},
-      {"name": "Lucid Air Grand Touring (cw 0,21)", "val": 210},
-      {"name": "Tesla Model S (cw 0,208)", "val": 208},
-      {"name": "Hyundai Ioniq 6 (cw 0,21)", "val": 210},
-      {"name": "BMW i4 eDrive40 (cw 0,24)", "val": 240},
-      {"name": "Tesla Model 3 (cw 0,23)", "val": 230},
-      {"name": "Volkswagen ID.7 (cw 0,23)", "val": 230},
-      {"name": "Audi e-tron GT (cw 0,24)", "val": 240},
-      {"name": "Porsche Taycan (cw 0,22)", "val": 220},
-      {"name": "BMW iX3 (cw 0,29)", "val": 290},
-      {"name": "Ford Mustang Mach-E (cw 0,30)", "val": 300},
-      {"name": "Volkswagen ID.4 (cw 0,28)", "val": 280},
-      {"name": "Kia EV6 (cw 0,288)", "val": 288},
-      {"name": "Tesla Model Y (cw 0,23)", "val": 230},
-      {"name": "Renault Megane E-Tech (cw 0,29)", "val": 290},
-      {"name": "Peugeot e-208 (cw 0,31)", "val": 310},
-      {"name": "Dacia Spring (cw 0,38)", "val": 380},
-      {"name": "Smart EQ fortwo (cw 0,35)", "val": 350},
-      {"name": "Rivian R1T (cw 0,34)", "val": 340},
-      {"name": "GMC Hummer EV (cw 0,42)", "val": 420}
+      {
+        "name": "Mercedes EQS 450+ (cw 0,20)",
+        "val": 200
+      },
+      {
+        "name": "Lucid Air Grand Touring (cw 0,21)",
+        "val": 210
+      },
+      {
+        "name": "Tesla Model S (cw 0,208)",
+        "val": 208
+      },
+      {
+        "name": "Hyundai Ioniq 6 (cw 0,21)",
+        "val": 210
+      },
+      {
+        "name": "BMW i4 eDrive40 (cw 0,24)",
+        "val": 240
+      },
+      {
+        "name": "Tesla Model 3 (cw 0,23)",
+        "val": 230
+      },
+      {
+        "name": "Volkswagen ID.7 (cw 0,23)",
+        "val": 230
+      },
+      {
+        "name": "Audi e-tron GT (cw 0,24)",
+        "val": 240
+      },
+      {
+        "name": "Porsche Taycan (cw 0,22)",
+        "val": 220
+      },
+      {
+        "name": "BMW iX3 (cw 0,29)",
+        "val": 290
+      },
+      {
+        "name": "Ford Mustang Mach-E (cw 0,30)",
+        "val": 300
+      },
+      {
+        "name": "Volkswagen ID.4 (cw 0,28)",
+        "val": 280
+      },
+      {
+        "name": "Kia EV6 (cw 0,288)",
+        "val": 288
+      },
+      {
+        "name": "Tesla Model Y (cw 0,23)",
+        "val": 230
+      },
+      {
+        "name": "Renault Megane E-Tech (cw 0,29)",
+        "val": 290
+      },
+      {
+        "name": "Peugeot e-208 (cw 0,31)",
+        "val": 310
+      },
+      {
+        "name": "Dacia Spring (cw 0,38)",
+        "val": 380
+      },
+      {
+        "name": "Smart EQ fortwo (cw 0,35)",
+        "val": 350
+      },
+      {
+        "name": "Rivian R1T (cw 0,34)",
+        "val": 340
+      },
+      {
+        "name": "GMC Hummer EV (cw 0,42)",
+        "val": 420
+      }
     ]
   },
   "systemspannung": {
     "prompt": "Welches Fahrzeug arbeitet mit einer höheren Systemspannung?",
     "unit": "Volt",
     "items": [
-      {"name": "Porsche Taycan (800V-System)", "val": 800},
-      {"name": "Hyundai Ioniq 6 (800V)", "val": 800},
-      {"name": "Kia EV6 GT (800V)", "val": 800},
-      {"name": "Audi e-tron GT (800V)", "val": 800},
-      {"name": "BMW iX3 (400V-System)", "val": 400},
-      {"name": "Ford Mustang Mach-E (400V)", "val": 400},
-      {"name": "Tesla Model 3 (350V)", "val": 350},
-      {"name": "Volkswagen ID.4 (400V)", "val": 400},
-      {"name": "Mercedes EQS (400V)", "val": 400},
-      {"name": "BMW iX (400V)", "val": 400},
-      {"name": "Renault Megane E-Tech (400V)", "val": 400},
-      {"name": "Peugeot e-208 (400V)", "val": 400},
-      {"name": "NIO ET7 (400V)", "val": 400},
-      {"name": "Lucid Air (900V-Nennspannung)", "val": 900},
-      {"name": "Xpeng G9 S4 (800V)", "val": 800},
-      {"name": "BYD Seal (800V CTB)", "val": 800},
-      {"name": "Genesis GV60 (800V)", "val": 800},
-      {"name": "Smart EQ fortwo (72V Nieder)", "val": 72},
-      {"name": "Dacia Spring (48V Bordnetz)", "val": 48},
-      {"name": "StreetScooter Work (400V)", "val": 400}
+      {
+        "name": "Porsche Taycan (800V-System)",
+        "val": 800
+      },
+      {
+        "name": "Hyundai Ioniq 6 (800V)",
+        "val": 800
+      },
+      {
+        "name": "Kia EV6 GT (800V)",
+        "val": 800
+      },
+      {
+        "name": "Audi e-tron GT (800V)",
+        "val": 800
+      },
+      {
+        "name": "BMW iX3 (400V-System)",
+        "val": 400
+      },
+      {
+        "name": "Ford Mustang Mach-E (400V)",
+        "val": 400
+      },
+      {
+        "name": "Tesla Model 3 (350V)",
+        "val": 350
+      },
+      {
+        "name": "Volkswagen ID.4 (400V)",
+        "val": 400
+      },
+      {
+        "name": "Mercedes EQS (400V)",
+        "val": 400
+      },
+      {
+        "name": "BMW iX (400V)",
+        "val": 400
+      },
+      {
+        "name": "Renault Megane E-Tech (400V)",
+        "val": 400
+      },
+      {
+        "name": "Peugeot e-208 (400V)",
+        "val": 400
+      },
+      {
+        "name": "NIO ET7 (400V)",
+        "val": 400
+      },
+      {
+        "name": "Lucid Air (900V-Nennspannung)",
+        "val": 900
+      },
+      {
+        "name": "Xpeng G9 S4 (800V)",
+        "val": 800
+      },
+      {
+        "name": "BYD Seal (800V CTB)",
+        "val": 800
+      },
+      {
+        "name": "Genesis GV60 (800V)",
+        "val": 800
+      },
+      {
+        "name": "Smart EQ fortwo (72V Nieder)",
+        "val": 72
+      },
+      {
+        "name": "Dacia Spring (48V Bordnetz)",
+        "val": 48
+      },
+      {
+        "name": "StreetScooter Work (400V)",
+        "val": 400
+      }
     ]
   },
   "ladeanschluesse": {
     "prompt": "Welches Fahrzeug hat mehr Ladeanschlüsse (AC + DC kombiniert)?",
     "unit": "Anschlüsse gesamt",
     "items": [
-      {"name": "Tesla Model 3 (CCS + Supercharger)", "val": 1},
-      {"name": "Rivian R1T (CCS + J1772 + Tesla Adapter)", "val": 2},
-      {"name": "BMW iX3 (CCS2 + Typ2)", "val": 2},
-      {"name": "Ford Mustang Mach-E (CCS + Typ2)", "val": 2},
-      {"name": "Volkswagen ID.4 (CCS2 + Typ2)", "val": 2},
-      {"name": "Hyundai Ioniq 6 (CCS + Typ2)", "val": 2},
-      {"name": "NIO ET7 (CCS + GB/T + Swap)", "val": 3},
-      {"name": "Porsche Taycan (CCS2 + Typ2 AC)", "val": 2},
-      {"name": "Mercedes EQS (CCS2 + Typ2)", "val": 2},
-      {"name": "Renault Zoe (Typ2 CCS)", "val": 2},
-      {"name": "BMW i3 (CCS + Typ2)", "val": 2},
-      {"name": "Mitsubishi Outlander PHEV (CHAdeMO + CCS + Typ2)", "val": 3},
-      {"name": "Nissan Leaf (CHAdeMO + Typ2)", "val": 2},
-      {"name": "Kona Electric (CCS + Typ2)", "val": 2},
-      {"name": "Smart EQ fortwo (nur Typ2)", "val": 1},
-      {"name": "Dacia Spring (nur CCS + Typ2)", "val": 2},
-      {"name": "Lucid Air (NACS + CCS)", "val": 2},
-      {"name": "BYD Han EV (GB/T DC + AC)", "val": 2},
-      {"name": "Xpeng G9 (CCS + Typ2 + CHAdeMO)", "val": 3},
-      {"name": "Jeep Avenger EV (CCS2 + Typ2)", "val": 2}
+      {
+        "name": "Tesla Model 3 (CCS + Supercharger)",
+        "val": 1
+      },
+      {
+        "name": "Rivian R1T (CCS + J1772 + Tesla Adapter)",
+        "val": 2
+      },
+      {
+        "name": "BMW iX3 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Ford Mustang Mach-E (CCS + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Volkswagen ID.4 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Hyundai Ioniq 6 (CCS + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "NIO ET7 (CCS + GB/T + Swap)",
+        "val": 3
+      },
+      {
+        "name": "Porsche Taycan (CCS2 + Typ2 AC)",
+        "val": 2
+      },
+      {
+        "name": "Mercedes EQS (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Renault Zoe (Typ2 CCS)",
+        "val": 2
+      },
+      {
+        "name": "BMW i3 (CCS + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Mitsubishi Outlander PHEV (CHAdeMO + CCS + Typ2)",
+        "val": 3
+      },
+      {
+        "name": "Nissan Leaf (CHAdeMO + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Kona Electric (CCS + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Smart EQ fortwo (nur Typ2)",
+        "val": 1
+      },
+      {
+        "name": "Dacia Spring (nur CCS + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Lucid Air (NACS + CCS)",
+        "val": 2
+      },
+      {
+        "name": "BYD Han EV (GB/T DC + AC)",
+        "val": 2
+      },
+      {
+        "name": "Xpeng G9 (CCS + Typ2 + CHAdeMO)",
+        "val": 3
+      },
+      {
+        "name": "Jeep Avenger EV (CCS2 + Typ2)",
+        "val": 2
+      }
     ]
   },
   "drehmoment": {
     "prompt": "Welches Elektroauto hat mehr Systemdrehmoment?",
     "unit": "Nm",
     "items": [
-      {"name": "GMC Hummer EV Edition 1", "val": 15592},
-      {"name": "Rivian R1T Quad Motor", "val": 13600},
-      {"name": "Tesla Model S Plaid", "val": 1420},
-      {"name": "Porsche Taycan Turbo S", "val": 1050},
-      {"name": "Rimac Nevera", "val": 2360},
-      {"name": "Audi e-tron GT RS", "val": 830},
-      {"name": "BMW i4 M50", "val": 795},
-      {"name": "BMW iX3 (RWD)", "val": 400},
-      {"name": "Ford Mustang Mach-E GT AWD", "val": 860},
-      {"name": "Volkswagen ID.4 GTX AWD", "val": 460},
-      {"name": "Hyundai Ioniq 6 AWD", "val": 605},
-      {"name": "Kia EV6 GT", "val": 740},
-      {"name": "Tesla Model 3 Long Range", "val": 493},
-      {"name": "Renault Megane E-Tech", "val": 300},
-      {"name": "Peugeot e-208", "val": 260},
-      {"name": "Fiat 500e", "val": 220},
-      {"name": "Dacia Spring", "val": 125},
-      {"name": "Smart EQ fortwo", "val": 160},
-      {"name": "Lucid Air Sapphire", "val": 1390},
-      {"name": "Mercedes AMG EQS 53 4MATIC+", "val": 950}
+      {
+        "name": "GMC Hummer EV Edition 1",
+        "val": 15592
+      },
+      {
+        "name": "Rivian R1T Quad Motor",
+        "val": 13600
+      },
+      {
+        "name": "Tesla Model S Plaid",
+        "val": 1420
+      },
+      {
+        "name": "Porsche Taycan Turbo S",
+        "val": 1050
+      },
+      {
+        "name": "Rimac Nevera",
+        "val": 2360
+      },
+      {
+        "name": "Audi e-tron GT RS",
+        "val": 830
+      },
+      {
+        "name": "BMW i4 M50",
+        "val": 795
+      },
+      {
+        "name": "BMW iX3 (RWD)",
+        "val": 400
+      },
+      {
+        "name": "Ford Mustang Mach-E GT AWD",
+        "val": 860
+      },
+      {
+        "name": "Volkswagen ID.4 GTX AWD",
+        "val": 460
+      },
+      {
+        "name": "Hyundai Ioniq 6 AWD",
+        "val": 605
+      },
+      {
+        "name": "Kia EV6 GT",
+        "val": 740
+      },
+      {
+        "name": "Tesla Model 3 Long Range",
+        "val": 493
+      },
+      {
+        "name": "Renault Megane E-Tech",
+        "val": 300
+      },
+      {
+        "name": "Peugeot e-208",
+        "val": 260
+      },
+      {
+        "name": "Fiat 500e",
+        "val": 220
+      },
+      {
+        "name": "Dacia Spring",
+        "val": 125
+      },
+      {
+        "name": "Smart EQ fortwo",
+        "val": 160
+      },
+      {
+        "name": "Lucid Air Sapphire",
+        "val": 1390
+      },
+      {
+        "name": "Mercedes AMG EQS 53 4MATIC+",
+        "val": 950
+      },
+      {
+        "name": "Pininfarina Battista",
+        "val": 2340
+      },
+      {
+        "name": "Lotus Evija",
+        "val": 1700
+      },
+      {
+        "name": "Tesla Model S Plaid (AWD)",
+        "val": 1420
+      },
+      {
+        "name": "Porsche Taycan Turbo S (Overboost)",
+        "val": 1050
+      },
+      {
+        "name": "Hyundai Ioniq 5 N (N Grin Boost)",
+        "val": 740
+      },
+      {
+        "name": "BMW i4 M50 xDrive",
+        "val": 795
+      },
+      {
+        "name": "Kia EV6 GT (AWD)",
+        "val": 740
+      },
+      {
+        "name": "Mercedes AMG EQE 53 4MATIC+",
+        "val": 858
+      },
+      {
+        "name": "Audi RS e-tron GT (Launch Control)",
+        "val": 830
+      },
+      {
+        "name": "Ford F-150 Lightning Platinum",
+        "val": 1050
+      },
+      {
+        "name": "Rivian R1T Adventure (4 Motoren)",
+        "val": 1231
+      },
+      {
+        "name": "Tesla Model Y Performance",
+        "val": 493
+      },
+      {
+        "name": "Volkswagen ID. Buzz Long Range GTX",
+        "val": 679
+      },
+      {
+        "name": "BYD Seal AWD Performance",
+        "val": 670
+      },
+      {
+        "name": "Nio ET7 Dual Motor",
+        "val": 850
+      },
+      {
+        "name": "Rimac Nevera (4 Motoren)",
+        "val": 2360
+      },
+      {
+        "name": "Dacia Spring (Frontmotor)",
+        "val": 113
+      },
+      {
+        "name": "Renault Zoe ZE50 (Frontmotor)",
+        "val": 245
+      },
+      {
+        "name": "MINI Cooper SE 2. Gen",
+        "val": 200
+      },
+      {
+        "name": "Smart #3 Brabus",
+        "val": 440
+      }
     ]
   },
   "preis": {
     "prompt": "Welches Elektroauto ist teurer (Basispreis)?",
     "unit": "Tsd. EUR",
     "items": [
-      {"name": "Rimac Nevera", "val": 2400},
-      {"name": "Lucid Air Grand Touring", "val": 160},
-      {"name": "Porsche Taycan Turbo S", "val": 197},
-      {"name": "Mercedes EQS 450+", "val": 109},
-      {"name": "BMW iX xDrive50", "val": 111},
-      {"name": "BMW iX3 (Basisversion)", "val": 64},
-      {"name": "Ford Mustang Mach-E Extended AWD", "val": 60},
-      {"name": "Volkswagen ID.4 Pro", "val": 48},
-      {"name": "Tesla Model 3 Long Range", "val": 54},
-      {"name": "Hyundai Ioniq 6 Long Range", "val": 54},
-      {"name": "Kia EV6 Long Range", "val": 52},
-      {"name": "Renault Megane E-Tech", "val": 36},
-      {"name": "Peugeot e-208", "val": 33},
-      {"name": "Fiat 500e (Basis)", "val": 27},
-      {"name": "Dacia Spring Comfort", "val": 17},
-      {"name": "Smart EQ fortwo", "val": 21},
-      {"name": "NIO ET7", "val": 72},
-      {"name": "Audi e-tron GT RS", "val": 145},
-      {"name": "Rivian R1T (Launch Edition)", "val": 115},
-      {"name": "Xpeng G9 Pro AWD", "val": 57}
+      {
+        "name": "Rimac Nevera",
+        "val": 2400
+      },
+      {
+        "name": "Lucid Air Grand Touring",
+        "val": 160
+      },
+      {
+        "name": "Porsche Taycan Turbo S",
+        "val": 197
+      },
+      {
+        "name": "Mercedes EQS 450+",
+        "val": 109
+      },
+      {
+        "name": "BMW iX xDrive50",
+        "val": 111
+      },
+      {
+        "name": "BMW iX3 (Basisversion)",
+        "val": 64
+      },
+      {
+        "name": "Ford Mustang Mach-E Extended AWD",
+        "val": 60
+      },
+      {
+        "name": "Volkswagen ID.4 Pro",
+        "val": 48
+      },
+      {
+        "name": "Tesla Model 3 Long Range",
+        "val": 54
+      },
+      {
+        "name": "Hyundai Ioniq 6 Long Range",
+        "val": 54
+      },
+      {
+        "name": "Kia EV6 Long Range",
+        "val": 52
+      },
+      {
+        "name": "Renault Megane E-Tech",
+        "val": 36
+      },
+      {
+        "name": "Peugeot e-208",
+        "val": 33
+      },
+      {
+        "name": "Fiat 500e (Basis)",
+        "val": 27
+      },
+      {
+        "name": "Dacia Spring Comfort",
+        "val": 17
+      },
+      {
+        "name": "Smart EQ fortwo",
+        "val": 21
+      },
+      {
+        "name": "NIO ET7",
+        "val": 72
+      },
+      {
+        "name": "Audi e-tron GT RS",
+        "val": 145
+      },
+      {
+        "name": "Rivian R1T (Launch Edition)",
+        "val": 115
+      },
+      {
+        "name": "Xpeng G9 Pro AWD",
+        "val": 57
+      },
+      {
+        "name": "Dacia Spring 65 HP",
+        "val": 21
+      },
+      {
+        "name": "Renault Zoe ZE50 (Basispreis)",
+        "val": 31
+      },
+      {
+        "name": "MINI Cooper SE 2. Gen",
+        "val": 38
+      },
+      {
+        "name": "Volkswagen ID.3 Pro",
+        "val": 40
+      },
+      {
+        "name": "Tesla Model 3 Standard Range",
+        "val": 43
+      },
+      {
+        "name": "Hyundai Ioniq 6 Long Range RWD",
+        "val": 47
+      },
+      {
+        "name": "Kia EV6 Long Range RWD",
+        "val": 50
+      },
+      {
+        "name": "Volkswagen ID.4 GTX",
+        "val": 55
+      },
+      {
+        "name": "BMW i4 eDrive40",
+        "val": 59
+      },
+      {
+        "name": "Polestar 2 Long Range Dual",
+        "val": 60
+      },
+      {
+        "name": "Audi Q4 e-tron 50",
+        "val": 62
+      },
+      {
+        "name": "Mercedes EQC 400 4MATIC",
+        "val": 80
+      },
+      {
+        "name": "Audi Q8 e-tron 55 quattro",
+        "val": 99
+      },
+      {
+        "name": "Porsche Taycan 4S",
+        "val": 112
+      },
+      {
+        "name": "Lucid Air Pure",
+        "val": 80
+      },
+      {
+        "name": "Rivian R1T Adventure",
+        "val": 75
+      },
+      {
+        "name": "Rolls-Royce Spectre (EV)",
+        "val": 420
+      }
     ]
   },
   "zell_anzahl": {
     "prompt": "Welches Fahrzeug hat mehr Batteriezellen?",
     "unit": "Zellen (gesamt)",
     "items": [
-      {"name": "Tesla Model S (18650 Zellen)", "val": 8256},
-      {"name": "Tesla Model 3 Standard (21700)", "val": 2976},
-      {"name": "Tesla Model 3 Long Range (21700)", "val": 4416},
-      {"name": "BMW iX3 (prismatisch, 108 Zellen)", "val": 108},
-      {"name": "Ford Mustang Mach-E (prismatisch, 376)", "val": 376},
-      {"name": "Volkswagen ID.4 (prismatisch, 288)", "val": 288},
-      {"name": "Hyundai Ioniq 6 (Pouch, 192)", "val": 192},
-      {"name": "Nissan Leaf 40 kWh (Pouch, 192)", "val": 192},
-      {"name": "Porsche Taycan (prismatisch, 396)", "val": 396},
-      {"name": "Audi e-tron 55 (prismatisch, 432)", "val": 432},
-      {"name": "Renault Zoe ZE50 (Pouch, 192)", "val": 192},
-      {"name": "Fiat 500e (Pouch, 100)", "val": 100},
-      {"name": "BYD Han EV (Blade/LFP, 104)", "val": 104},
-      {"name": "BYD Atto 3 (Blade, 128)", "val": 128},
-      {"name": "Smart EQ fortwo (Li-Ion, 93)", "val": 93},
-      {"name": "Dacia Spring (NMC, 30 Zellen)", "val": 30},
-      {"name": "NIO ET7 150 kWh (Festkörper-Zellen)", "val": 240},
-      {"name": "Mercedes EQS (prismatisch, 990)", "val": 990},
-      {"name": "BMW iX xDrive50 (prismatisch, 240)", "val": 240},
-      {"name": "Lucid Air (2170 Zellen, 900+)", "val": 900}
+      {
+        "name": "Tesla Model S (18650 Zellen)",
+        "val": 8256
+      },
+      {
+        "name": "Tesla Model 3 Standard (21700)",
+        "val": 2976
+      },
+      {
+        "name": "Tesla Model 3 Long Range (21700)",
+        "val": 4416
+      },
+      {
+        "name": "BMW iX3 (prismatisch, 108 Zellen)",
+        "val": 108
+      },
+      {
+        "name": "Ford Mustang Mach-E (prismatisch, 376)",
+        "val": 376
+      },
+      {
+        "name": "Volkswagen ID.4 (prismatisch, 288)",
+        "val": 288
+      },
+      {
+        "name": "Hyundai Ioniq 6 (Pouch, 192)",
+        "val": 192
+      },
+      {
+        "name": "Nissan Leaf 40 kWh (Pouch, 192)",
+        "val": 192
+      },
+      {
+        "name": "Porsche Taycan (prismatisch, 396)",
+        "val": 396
+      },
+      {
+        "name": "Audi e-tron 55 (prismatisch, 432)",
+        "val": 432
+      },
+      {
+        "name": "Renault Zoe ZE50 (Pouch, 192)",
+        "val": 192
+      },
+      {
+        "name": "Fiat 500e (Pouch, 100)",
+        "val": 100
+      },
+      {
+        "name": "BYD Han EV (Blade/LFP, 104)",
+        "val": 104
+      },
+      {
+        "name": "BYD Atto 3 (Blade, 128)",
+        "val": 128
+      },
+      {
+        "name": "Smart EQ fortwo (Li-Ion, 93)",
+        "val": 93
+      },
+      {
+        "name": "Dacia Spring (NMC, 30 Zellen)",
+        "val": 30
+      },
+      {
+        "name": "NIO ET7 150 kWh (Festkörper-Zellen)",
+        "val": 240
+      },
+      {
+        "name": "Mercedes EQS (prismatisch, 990)",
+        "val": 990
+      },
+      {
+        "name": "BMW iX xDrive50 (prismatisch, 240)",
+        "val": 240
+      },
+      {
+        "name": "Lucid Air (2170 Zellen, 900+)",
+        "val": 900
+      }
     ]
   }
 }

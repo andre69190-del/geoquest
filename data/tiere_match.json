@@ -81,6 +81,86 @@
       {
         "n": "Breite 4-Zehen-Spur ohne Krallen, gross wie Teller",
         "c": "Tiger"
+      },
+      {
+        "n": "Hufeisen (Huf-Abdruck)",
+        "c": "Pferd"
+      },
+      {
+        "n": "Prallspur (breiter Mittelfuß)",
+        "c": "Hase / Kaninchen"
+      },
+      {
+        "n": "3-Zehen-Abdruck (Laufspur)",
+        "c": "Strauß"
+      },
+      {
+        "n": "Schwanzschleife im Sand",
+        "c": "Schlange"
+      },
+      {
+        "n": "4 Krallen, Mittelspur kreuzt",
+        "c": "Fuchs"
+      },
+      {
+        "n": "Webfüße-Abdruck",
+        "c": "Biber / Nutria"
+      },
+      {
+        "n": "5 Zehen, Daumen breit",
+        "c": "Waschbär"
+      },
+      {
+        "n": "Pinnenartige Abdrücke im Schnee",
+        "c": "Robbe"
+      },
+      {
+        "n": "3+1 Zehen asymmetrisch (galoppierend)",
+        "c": "Reh / Hirsch (Paar)"
+      },
+      {
+        "n": "Kreisförmige Fußballenabdrücke",
+        "c": "Bär"
+      },
+      {
+        "n": "Tunnelgang unter Schnee",
+        "c": "Feldmaus (Wühlmaus)"
+      },
+      {
+        "n": "Zweigeteilte Spur (Trab)",
+        "c": "Wolf"
+      },
+      {
+        "n": "Tiefe Tiefschlagspuren (nass)",
+        "c": "Wildschwein"
+      },
+      {
+        "n": "Breites Band im Schilf",
+        "c": "Biber (Schwanz schleift)"
+      },
+      {
+        "n": "Fischgräten-Fischspur",
+        "c": "Fischotter"
+      },
+      {
+        "n": "Fingerabdrücke (wie Menschen)",
+        "c": "Koala"
+      },
+      {
+        "n": "Reißfederspur im Schnee",
+        "c": "Eule (Flügelabdruck)"
+      },
+      {
+        "n": "Acht Fußabdrücke im Gelände",
+        "c": "Spinne"
+      },
+      {
+        "n": "Parallele 4-Abdruck-Spur (Schleich)",
+        "c": "Katze (einziehbare Krallen)"
+      },
+      {
+        "n": "Nagelabdruck + 3 Zehen asymm.",
+        "c": "Krähenvogel"
       }
     ]
   },
@@ -166,6 +246,86 @@
       {
         "n": "Erdhoehle bis 3m tief, Eingang verborgen",
         "c": "Erdwolf"
+      },
+      {
+        "n": "Bienenwaben (Hexagonal, Wachs)",
+        "c": "Honigbiene"
+      },
+      {
+        "n": "Termitenhügel (bis 9m hoch, Klimaanlage)",
+        "c": "Termiten"
+      },
+      {
+        "n": "Spinnweben-Radnetz (Kreuzspinne)",
+        "c": "Kreuzspinne"
+      },
+      {
+        "n": "Biberdamm (Ast + Schlamm)",
+        "c": "Biber"
+      },
+      {
+        "n": "Erdloch mit Röhren (Feldbau)",
+        "c": "Europäischer Maulwurf"
+      },
+      {
+        "n": "Trichtergrab (Sandfeld)",
+        "c": "Ameisenlöwe"
+      },
+      {
+        "n": "Wühlgänge unter Grasnarbe",
+        "c": "Maus / Wühlmaus"
+      },
+      {
+        "n": "Nistkasten aus Erde (Lehm)",
+        "c": "Töpferswampe (Furnarius)"
+      },
+      {
+        "n": "Hüpfbau aus Ästen + Gras (riesig)",
+        "c": "Webervogelkolonie"
+      },
+      {
+        "n": "Sandkegelburg (Meer, Krusten)",
+        "c": "Sandkrabbe"
+      },
+      {
+        "n": "Blattpflanzenkugeln an Zweigen",
+        "c": "Blattwespenlarve"
+      },
+      {
+        "n": "Gallenwucherung (Runde Blattgalle)",
+        "c": "Gallwespe"
+      },
+      {
+        "n": "Knotengeflecht aus Pflanzenfasern",
+        "c": "Webervogel (Ploceidae)"
+      },
+      {
+        "n": "Brücken + Wege aus toten Ameisen",
+        "c": "Armeameisen"
+      },
+      {
+        "n": "Blatt-Nest aus Seide (aufgerollt)",
+        "c": "Blattschneiderameise"
+      },
+      {
+        "n": "Schleimschloss (Gelatine, Unterwasser)",
+        "c": "Seenadel / Seepferdchen"
+      },
+      {
+        "n": "Tief einzementierter Röhrenstunnel (Sand)",
+        "c": "Sanddünen-Schnecke"
+      },
+      {
+        "n": "Stalaktit-ähnliche Waben (Papier)",
+        "c": "Wespe"
+      },
+      {
+        "n": "Kuppelform aus Zweigen (flach)",
+        "c": "Kranich"
+      },
+      {
+        "n": "Löcher in Holz (rund, innen hohl)",
+        "c": "Specht"
       }
     ]
   },
@@ -251,6 +411,86 @@
       {
         "n": "Rostbrauner Koerper identisch mit Baumstumpf-Muster",
         "c": "Uhu"
+      },
+      {
+        "n": "Sandfarbe + flacher Körper",
+        "c": "Scholle / Plattfisch"
+      },
+      {
+        "n": "Schneeweißes Fell im Winter",
+        "c": "Polarfuchs"
+      },
+      {
+        "n": "Gelbbraun mit dunklen Flecken",
+        "c": "Leopard"
+      },
+      {
+        "n": "Dunkelbraun mit weißen Flecken (Rücken)",
+        "c": "Rehkitz"
+      },
+      {
+        "n": "Rindenbraun mit Flechtenmuster",
+        "c": "Birkenbläuling / Rindenspinner"
+      },
+      {
+        "n": "Wasserblau-silbern (Flanken)",
+        "c": "Thunfisch (Gegenschattierung)"
+      },
+      {
+        "n": "Graubraun mit schwarzen Streifen",
+        "c": "Steinmarder"
+      },
+      {
+        "n": "Weißes Winterkleid + braun im Sommer",
+        "c": "Schneehuhn / Ptarmigan"
+      },
+      {
+        "n": "Fluoreszentes Grün (tropisch)",
+        "c": "Smaragdeidechse"
+      },
+      {
+        "n": "Getigertes Muster (senkrechte Streifen)",
+        "c": "Tiger"
+      },
+      {
+        "n": "Weiß-schwarz horizontal (im Gras)",
+        "c": "Zebra"
+      },
+      {
+        "n": "Farbwechsel nach 0,5 Sek. (Haut)",
+        "c": "Tintenfisch / Oktopus"
+      },
+      {
+        "n": "Transparenter Körper (Tiefseefisch)",
+        "c": "Glaswels (Kryptopterus)"
+      },
+      {
+        "n": "Bernsteinfarbig + glänzend (Harz?)",
+        "c": "Goldkäfer (Cassis)"
+      },
+      {
+        "n": "Schwarz-weiß-rote Warnfarbe",
+        "c": "Schwarze Witwen-Spinne"
+      },
+      {
+        "n": "Braun gemischt (Flügel = Baum)",
+        "c": "Waldkauz"
+      },
+      {
+        "n": "Orange-blau (Warnung + Tarnung situativ)",
+        "c": "Pfeilgiftfrosch"
+      },
+      {
+        "n": "Sandfarbene Iris + Gesicht",
+        "c": "Kameleon (basale Form)"
+      },
+      {
+        "n": "Totholz-Muster (Körperstruktur)",
+        "c": "Totes-Blatt-Schmetterlingsmantis"
+      },
+      {
+        "n": "Dunkler Rücken, heller Bauch",
+        "c": "Delfin (Gegenschattierung)"
       }
     ]
   },
@@ -342,6 +582,86 @@
       {
         "n": "Tapir",
         "c": "Frugivor"
+      },
+      {
+        "n": "Bambus (99% der Nahrung)",
+        "c": "Großer Panda"
+      },
+      {
+        "n": "Blätter, Früchte, Rinde",
+        "c": "Gorilla"
+      },
+      {
+        "n": "Ausschließlich Nektar + Pollen",
+        "c": "Biene"
+      },
+      {
+        "n": "Blut (Hämatophagie)",
+        "c": "Vampirfledermaus"
+      },
+      {
+        "n": "Nur Fleisch (Raubtier)",
+        "c": "Orca / Killerwal"
+      },
+      {
+        "n": "Plankton + Krill (Filterfressen)",
+        "c": "Bartenwal"
+      },
+      {
+        "n": "Aas + Knochen",
+        "c": "Beingeier"
+      },
+      {
+        "n": "Insekten + kleine Reptilien",
+        "c": "Chamäleon"
+      },
+      {
+        "n": "Fisch + Tintenfisch",
+        "c": "Pinguin"
+      },
+      {
+        "n": "Krill allein (Milliarden Krebstiere)",
+        "c": "Blauwal"
+      },
+      {
+        "n": "Früchte, Insekten, kleine Wirbeltiere",
+        "c": "Schimpanse"
+      },
+      {
+        "n": "Eukalyptusblätter (fast ausschließlich)",
+        "c": "Koala"
+      },
+      {
+        "n": "Seegras (Seegrasfluss)",
+        "c": "Seekuh / Dugong"
+      },
+      {
+        "n": "Insekten (unter Baumrinde)",
+        "c": "Specht"
+      },
+      {
+        "n": "Körnerfresser (Samen + Früchte)",
+        "c": "Haussperling"
+      },
+      {
+        "n": "Muscheln, Seeigel, Algen",
+        "c": "Seeotter"
+      },
+      {
+        "n": "Ratten + Mäuse (obligater Carnivore)",
+        "c": "Hauskatze (Wildform)"
+      },
+      {
+        "n": "Zuckerrohr + Früchte",
+        "c": "Breitmaulnashorn"
+      },
+      {
+        "n": "Kleinsäuger + Vögel + Reptilien",
+        "c": "Bussard"
+      },
+      {
+        "n": "Totholz (Zelluloseabbau)",
+        "c": "Termite"
       }
     ]
   },
@@ -427,6 +747,86 @@
       {
         "n": "Oxpecker-Vogel reinigt Wunden an",
         "c": "Giraffe"
+      },
+      {
+        "n": "Anemonenfisch + Seeanemone (Schutz ↔ Nahrung)",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Putzerfisch + Großfische (Parasiten entfernen)",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Strichvogel + Nashörner (Zecken fressen)",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Darmflora (Lactobazillen) + Mensch",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Korallen + Zooxanthellen (Algen)",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Leguminosen + Stickstoff-Bakterien (Knöllchen)",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Flechte = Pilz + Alge",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Blattschneiderameise + Pilzkultur",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Honiganzeiger-Vogel + Honigdachs",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Blattläuse + Ameisen (Honigtau)",
+        "c": "Mutualismus"
+      },
+      {
+        "n": "Epiphyten (Luftwurzeln) auf Wirtsbaum",
+        "c": "Kommensalismus"
+      },
+      {
+        "n": "Schmetterlingsfisch + Seeanemone (wohnt dabei)",
+        "c": "Kommensalismus"
+      },
+      {
+        "n": "Silbermöwe + Fischerboote",
+        "c": "Kommensalismus"
+      },
+      {
+        "n": "Bandwurm (Taenia) im Darm",
+        "c": "Parasitismus"
+      },
+      {
+        "n": "Zecke auf Säugetier",
+        "c": "Parasitismus"
+      },
+      {
+        "n": "Kuckuck + Sänger (Brutparasitismus)",
+        "c": "Parasitismus"
+      },
+      {
+        "n": "Malaria-Parasit (Plasmodium) + Anopheles-Mücke",
+        "c": "Parasitismus"
+      },
+      {
+        "n": "Cordyceps-Pilz + Ameise",
+        "c": "Parasitismus"
+      },
+      {
+        "n": "Schmarotzerblume (Rafflesia) + Tetrastigma-Rebe",
+        "c": "Parasitismus"
+      },
+      {
+        "n": "Boa constrictor + Beute (direkt töten)",
+        "c": "Räuber-Beute"
       }
     ]
   },
@@ -597,6 +997,86 @@
       {
         "n": "Koerper sieht aus wie Hornissen-Koerper exakt",
         "c": "Hornissenklarwing"
+      },
+      {
+        "n": "Milchschlange ahmt Korallenschlange nach",
+        "c": "Bates'sche Mimikry"
+      },
+      {
+        "n": "Schwebfliege sieht aus wie Wespe",
+        "c": "Bates'sche Mimikry"
+      },
+      {
+        "n": "Monarchfalter + Vizekönig-Falter",
+        "c": "Müller'sche Mimikry"
+      },
+      {
+        "n": "Augenmuster auf Schmetterlingsflügel",
+        "c": "Einschüchterungs-Mimikry"
+      },
+      {
+        "n": "Spiegeltintenfisch + Plattfisch (Bodenform)",
+        "c": "Crypsis / Tarntracht"
+      },
+      {
+        "n": "Gespenstschrecke (Phasmatodea)",
+        "c": "Crypsis / Zweig-Tarnung"
+      },
+      {
+        "n": "Blattschrecke (Phyllium)",
+        "c": "Crypsis / Blatt-Tarnung"
+      },
+      {
+        "n": "Seepferdchen (Pferdeschwanzform)",
+        "c": "Crypsis"
+      },
+      {
+        "n": "Steinbutte (Grün-Muster, Sandboden)",
+        "c": "Crypsis"
+      },
+      {
+        "n": "Taschenkrebs (Körner + Farbe)",
+        "c": "Crypsis"
+      },
+      {
+        "n": "Tintenfisch Farbe + Textur ändern",
+        "c": "Chromatophor-Mimikry"
+      },
+      {
+        "n": "Chamäleon (Stimmungs-Signalgebung)",
+        "c": "Signalmimikry"
+      },
+      {
+        "n": "Vogel-Orchidee (Ophrys apifera) ahmt Biene nach",
+        "c": "Sexuelle Täuschung"
+      },
+      {
+        "n": "Totstellreflex (Opossum)",
+        "c": "Thanatose"
+      },
+      {
+        "n": "Scheintoter Totenkopffalter + LED-Detektion",
+        "c": "Akustische Mimikry"
+      },
+      {
+        "n": "Lyravogel (Menura) imitiert Motorsäge",
+        "c": "Akustische Mimikry"
+      },
+      {
+        "n": "Drohwespe (gelb-schwarz gestreift)",
+        "c": "Aposematismus"
+      },
+      {
+        "n": "Pfeil-Giftfrosch (leuchtend blau)",
+        "c": "Aposematismus"
+      },
+      {
+        "n": "Bombardierkäfer (Schutzspray)",
+        "c": "Chemo-Abwehrmimikry"
+      },
+      {
+        "n": "Streifenskunk (weiße Streifen)",
+        "c": "Aposematismus"
       }
     ]
   },
@@ -682,6 +1162,74 @@
       {
         "n": "Behaarte Raupe mit roten Querbaendern",
         "c": "Brombeerspinner"
+      },
+      {
+        "n": "Ei → Raupe → Puppe → Falter",
+        "c": "Schmetterling (holometabol)"
+      },
+      {
+        "n": "Ei → Larve → Puppe → Imago",
+        "c": "Käfer"
+      },
+      {
+        "n": "Ei → Nymphe → Imago (3 Stadien)",
+        "c": "Heuschrecke (hemimetabol)"
+      },
+      {
+        "n": "Ei → Nymphe → Imago",
+        "c": "Libelle"
+      },
+      {
+        "n": "Laich → Kaulquappe → Frosch",
+        "c": "Frosch"
+      },
+      {
+        "n": "Ei → Larve (Planula) → Polyp → Meduse",
+        "c": "Qualle"
+      },
+      {
+        "n": "Ei → Trochophora → Veliger → Muschel",
+        "c": "Muschel (Bivalve)"
+      },
+      {
+        "n": "Ei → Nauplius → Copepoda → Ruderfußkrebs",
+        "c": "Copepode"
+      },
+      {
+        "n": "Ei → Ammocoetes (Larve) → Neunauge",
+        "c": "Flussneunauge"
+      },
+      {
+        "n": "Ei → Larve → Puppe → Imago (aquatisch)",
+        "c": "Mücke"
+      },
+      {
+        "n": "Ei → Pediveliger-Larve → Austern-Spat",
+        "c": "Auster"
+      },
+      {
+        "n": "Ei → Bipedinaria-Larve → Seestern",
+        "c": "Seestern"
+      },
+      {
+        "n": "Direktentwicklung (kein Larvenstadium)",
+        "c": "Gecko"
+      },
+      {
+        "n": "Larve → Metamorphose → Urodele",
+        "c": "Axolotl (neotisch, bleibt Larve)"
+      },
+      {
+        "n": "Ei → Zoea → Megalopa → Krabbe",
+        "c": "Krabbe"
+      },
+      {
+        "n": "Laich → Kaulquappe → Molch",
+        "c": "Feuersalamander"
+      },
+      {
+        "n": "Ei → Wurm → Geschlechtsreif",
+        "c": "Regenwurm (direkte Entwicklung)"
       }
     ]
   },
@@ -767,6 +1315,86 @@
       {
         "n": "Blaue Leuchtpunkte entlang Koerperflanken",
         "c": "Leuchtorgelfisch"
+      },
+      {
+        "n": "Panellus stipticus (Leuchtendes Holz)",
+        "c": "Pilz"
+      },
+      {
+        "n": "Omphalotus olearius (Leuchtendes Holz)",
+        "c": "Pilz"
+      },
+      {
+        "n": "Noctiluca scintillans (Leuchtflagellat)",
+        "c": "Phytoplankton"
+      },
+      {
+        "n": "Pyrosoma atlanticum (Leuchtende Kolonie)",
+        "c": "Manteltier"
+      },
+      {
+        "n": "Aequorea victoria (GFP-Qualle)",
+        "c": "Qualle"
+      },
+      {
+        "n": "Photinus pyralis (Glühwürmchen, USA)",
+        "c": "Käfer"
+      },
+      {
+        "n": "Photuris-Weibchen (täuscht andere)",
+        "c": "Käfer"
+      },
+      {
+        "n": "Tiefseegarnele (Sergestidae)",
+        "c": "Krebstier"
+      },
+      {
+        "n": "Dragonfish (Malacosteus) (Rotlicht-Scheinwerfer)",
+        "c": "Tiefseefisch"
+      },
+      {
+        "n": "Atolla wyvillei (Warnleuchte bei Angriff)",
+        "c": "Qualle"
+      },
+      {
+        "n": "Vampirtintenfisch (Vampyroteuthis)",
+        "c": "Kopffüßer"
+      },
+      {
+        "n": "Tiefseebarsch (Myctophidae, Leuchtflecken)",
+        "c": "Fisch"
+      },
+      {
+        "n": "Muschel Pholas dactylus (Meereslicht)",
+        "c": "Muschel"
+      },
+      {
+        "n": "Sternschnecke (Pteraeolidia, Chloroplast-Speicher)",
+        "c": "Nacktschnecke"
+      },
+      {
+        "n": "Leuchtstäbchen-Garnele (Euphausiida)",
+        "c": "Krill"
+      },
+      {
+        "n": "Bobbit-Wurm (Eunice aphroditois) lukt beleuchtet",
+        "c": "Vielborster"
+      },
+      {
+        "n": "Schlangenstern (Ophiopsila aranea)",
+        "c": "Stachelhäuter"
+      },
+      {
+        "n": "Oegopsida (Tiefsee-Tintenfisch)",
+        "c": "Kopffüßer"
+      },
+      {
+        "n": "Glühwürmchen-Tintenfisch (Watasenia scintillans)",
+        "c": "Kopffüßer"
+      },
+      {
+        "n": "Dinoflagellat Alexandrium (Rote Tide, wenn beleuchtet)",
+        "c": "Phytoplankton"
       }
     ]
   },
@@ -937,6 +1565,86 @@
       {
         "n": "Ultraschall-Klicken bis 130kHz zur Echoortung",
         "c": "Delfin"
+      },
+      {
+        "n": "Ultraschall-Echoortung (20-200 kHz)",
+        "c": "Fledermaus"
+      },
+      {
+        "n": "20 Hz Infraschall-Kommunikation",
+        "c": "Elefant"
+      },
+      {
+        "n": "188 dB Klicklaute",
+        "c": "Blauwal (lautestes Tier)"
+      },
+      {
+        "n": "Trommeln auf Baum mit Schnabel",
+        "c": "Specht"
+      },
+      {
+        "n": "Sirenen-ähnliches Heulen",
+        "c": "Wolf"
+      },
+      {
+        "n": "Hochfrequentes Schnurren (25 Hz)",
+        "c": "Hauskatze"
+      },
+      {
+        "n": "Brüllen (bis 114 dB)",
+        "c": "Löwe"
+      },
+      {
+        "n": "Zirpen durch Flügelreiben",
+        "c": "Grille"
+      },
+      {
+        "n": "Stridulation (Flügelreibung)",
+        "c": "Heuschrecke"
+      },
+      {
+        "n": "Trommeln mit Schwanz (Boden)",
+        "c": "Känguru (Warnung)"
+      },
+      {
+        "n": "Klopfen + Quietschen (Echolot)",
+        "c": "Delphin"
+      },
+      {
+        "n": "Kiemen-Knister (Zähne knirschen)",
+        "c": "Pistolengarnele (knallt Wasser)"
+      },
+      {
+        "n": "Bellen im Ultraschall-Bereich",
+        "c": "Maus / Ratte (Sozialkontakt)"
+      },
+      {
+        "n": "Rülpsen + Aufblähen als Territorialruf",
+        "c": "Frosch"
+      },
+      {
+        "n": "Schlagen auf Wasseroberfläche (Flosse)",
+        "c": "Robbe"
+      },
+      {
+        "n": "Melodiöses Lied mit 30+ Variationen",
+        "c": "Nachtigall"
+      },
+      {
+        "n": "Mechanisches Schnirren (Flügel)",
+        "c": "Kolibri"
+      },
+      {
+        "n": "Tieffrequentes Pfeifen (Seekuh)",
+        "c": "Seekuh"
+      },
+      {
+        "n": "Krächzen im Chor (Schwarmsignal)",
+        "c": "Krähe"
+      },
+      {
+        "n": "Ratterndes Schnauben (Verteidigung)",
+        "c": "Gürteltier"
       }
     ]
   },
@@ -1022,6 +1730,86 @@
       {
         "n": "Hat photosensitive Haut die Farbe ohne Augen wahrnimmt",
         "c": "Tintenfisch"
+      },
+      {
+        "n": "Echoortung (Ultraschall-Sonar)",
+        "c": "Fledermaus"
+      },
+      {
+        "n": "Seitenlinie (Druckwellen spüren)",
+        "c": "Fisch"
+      },
+      {
+        "n": "Elektrorezeptoren (Elektroortung)",
+        "c": "Hai / Rochen"
+      },
+      {
+        "n": "Infrarot-Grubenorgan (Wärme)",
+        "c": "Grubenottern (Crotalinae)"
+      },
+      {
+        "n": "UV-Sicht (kurzwelliges Licht)",
+        "c": "Biene"
+      },
+      {
+        "n": "Polarisiertes Licht wahrnehmen",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Magnetorezeption (Magnetfeld)",
+        "c": "Zugvogel (Rotkehlchen)"
+      },
+      {
+        "n": "Infraschall hören (unter 20 Hz)",
+        "c": "Elefant"
+      },
+      {
+        "n": "360°-Sehfeld (Augen seitlich)",
+        "c": "Kaninchen"
+      },
+      {
+        "n": "Tetrachromates Sehen (4 Farbrezeptoren)",
+        "c": "Fangschreckenkrebs"
+      },
+      {
+        "n": "Monokulares Sehen mit Überlappungszone",
+        "c": "Eule (Stirnaugen)"
+      },
+      {
+        "n": "Thermorezeptoren (Körperwärme-Jagd)",
+        "c": "Vampirfledermaus"
+      },
+      {
+        "n": "Jacobson-Organ (Geruch über Zunge)",
+        "c": "Schlange"
+      },
+      {
+        "n": "Spezielles Nähe-Tastsystem (Vibrissen)",
+        "c": "Seehund"
+      },
+      {
+        "n": "Seitliche Augen (fast 360°, rotes Zentrum)",
+        "c": "Fliege"
+      },
+      {
+        "n": "Chemorezeptoren an Beinen (Geschmack)",
+        "c": "Schmetterling"
+      },
+      {
+        "n": "Einzel-Facettenauge (Ommatidien)",
+        "c": "Biene"
+      },
+      {
+        "n": "Infrarot-Pit-Organ in Unterschnippe",
+        "c": "Python"
+      },
+      {
+        "n": "Strömungssensoren (Cephalopoden)",
+        "c": "Oktopus (Saugnapf-Tastsinn)"
+      },
+      {
+        "n": "Magnetit-Kristalle im Schnabel",
+        "c": "Brieftaube"
       }
     ]
   },

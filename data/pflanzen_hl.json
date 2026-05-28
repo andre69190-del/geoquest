@@ -3,312 +3,1240 @@
     "prompt": "Welcher Baum wird höher?",
     "unit": "m",
     "items": [
-      {"name": "Küstenmammutbaum (Hyperion)", "val": 115.9},
-      {"name": "Eukalyptus regnans (Centurion)", "val": 100.5},
-      {"name": "Küstentanne (Abies procera)", "val": 99.7},
-      {"name": "Tasmanischer Blaugummi", "val": 96.0},
-      {"name": "Sitkafichte", "val": 94.8},
-      {"name": "Riesenmammutbaum", "val": 84.3},
-      {"name": "Douglastanne", "val": 80.0},
-      {"name": "Kauri (Agathis australis)", "val": 51.5},
-      {"name": "Araukarie", "val": 50.0},
-      {"name": "Europäische Fichte", "val": 50.0},
-      {"name": "Tulpenbaum (Liriodendron)", "val": 58.0},
-      {"name": "Mahagoni (Swietenia macrophylla)", "val": 60.0},
-      {"name": "Stieleiche (Quercus robur)", "val": 40.0},
-      {"name": "Europäische Buche", "val": 45.0},
-      {"name": "Teak (Tectona grandis)", "val": 40.0},
-      {"name": "Weißtanne (Abies alba)", "val": 60.0},
-      {"name": "Hainbuche", "val": 25.0},
-      {"name": "Affenbrotbaum (Baobab)", "val": 25.0},
-      {"name": "Silberweide", "val": 25.0},
-      {"name": "Birke (Betula pendula)", "val": 30.0}
+      {
+        "name": "Küstenmammutbaum (Hyperion)",
+        "val": 115.9
+      },
+      {
+        "name": "Eukalyptus regnans (Centurion)",
+        "val": 100.5
+      },
+      {
+        "name": "Küstentanne (Abies procera)",
+        "val": 99.7
+      },
+      {
+        "name": "Tasmanischer Blaugummi",
+        "val": 96.0
+      },
+      {
+        "name": "Sitkafichte",
+        "val": 94.8
+      },
+      {
+        "name": "Riesenmammutbaum",
+        "val": 84.3
+      },
+      {
+        "name": "Douglastanne",
+        "val": 80.0
+      },
+      {
+        "name": "Kauri (Agathis australis)",
+        "val": 51.5
+      },
+      {
+        "name": "Araukarie",
+        "val": 50.0
+      },
+      {
+        "name": "Europäische Fichte",
+        "val": 50.0
+      },
+      {
+        "name": "Tulpenbaum (Liriodendron)",
+        "val": 58.0
+      },
+      {
+        "name": "Mahagoni (Swietenia macrophylla)",
+        "val": 60.0
+      },
+      {
+        "name": "Stieleiche (Quercus robur)",
+        "val": 40.0
+      },
+      {
+        "name": "Europäische Buche",
+        "val": 45.0
+      },
+      {
+        "name": "Teak (Tectona grandis)",
+        "val": 40.0
+      },
+      {
+        "name": "Weißtanne (Abies alba)",
+        "val": 60.0
+      },
+      {
+        "name": "Hainbuche",
+        "val": 25.0
+      },
+      {
+        "name": "Affenbrotbaum (Baobab)",
+        "val": 25.0
+      },
+      {
+        "name": "Silberweide",
+        "val": 25.0
+      },
+      {
+        "name": "Birke (Betula pendula)",
+        "val": 30.0
+      },
+      {
+        "name": "Douglasie (Pseudotsuga menziesii, Doerner Fir)",
+        "val": 99.4
+      },
+      {
+        "name": "Sitka-Fichte (Raven's Perch, Alaska)",
+        "val": 96.7
+      },
+      {
+        "name": "Zuckerkiefer (Pinus lambertiana, Yosemite)",
+        "val": 89.9
+      },
+      {
+        "name": "Westliche Rotzeder (Queets Valley)",
+        "val": 73.2
+      },
+      {
+        "name": "Schwarze Pappel (Europäisches Exemplar)",
+        "val": 35.0
+      },
+      {
+        "name": "Silber-Ahorn (Acer saccharinum, maximal)",
+        "val": 40.0
+      },
+      {
+        "name": "Riesenbambus (Dendrocalamus giganteus)",
+        "val": 30.0
+      },
+      {
+        "name": "Afrikanischer Baobab (Adansonia digitata)",
+        "val": 25.0
+      },
+      {
+        "name": "Riesenmagnolienbaum (Magnolia grandiflora)",
+        "val": 27.4
+      },
+      {
+        "name": "Jacaranda (Jacaranda mimosifolia)",
+        "val": 20.0
+      },
+      {
+        "name": "Rafflesia-Wirtsbaum (Tetrastigma)",
+        "val": 15.0
+      },
+      {
+        "name": "Knoblauchs-Weide (Salix aurita)",
+        "val": 3.0
+      },
+      {
+        "name": "Zwergweide (Salix herbacea, alpine)",
+        "val": 0.06
+      },
+      {
+        "name": "Sonnentau (Drosera, terrestrisch)",
+        "val": 0.15
+      },
+      {
+        "name": "Wasserlinse (Wolffia globosa, kleinste Blütenpflanze)",
+        "val": 0.002
+      },
+      {
+        "name": "Titan-Arum (Amorphophallus titanum, Hochblüte)",
+        "val": 3.0
+      },
+      {
+        "name": "Agave americana (Blütenstand)",
+        "val": 9.0
+      },
+      {
+        "name": "Kaiserpalme (Roystonea regia)",
+        "val": 30.0
+      },
+      {
+        "name": "Araukarie (Araucaria araucana, Chile)",
+        "val": 50.0
+      },
+      {
+        "name": "Eukalyptus saligna (Natal Fig, Südafrika)",
+        "val": 62.0
+      }
     ]
   },
   "alter": {
     "prompt": "Welcher Baum wird älter?",
     "unit": "Jahre",
     "items": [
-      {"name": "Methuselah Bristlecone Pine", "val": 4855},
-      {"name": "Prometheus Bristlecone Pine", "val": 4862},
-      {"name": "Alerce (Fitzroya cupressoides)", "val": 3622},
-      {"name": "Riesenmammutbaum", "val": 3500},
-      {"name": "Olive von Vouves (Kreta)", "val": 3000},
-      {"name": "Fortingall Yew (Schottland)", "val": 3000},
-      {"name": "Affenbrotbaum (Baobab)", "val": 2500},
-      {"name": "Küstenmammutbaum", "val": 2200},
-      {"name": "Kauri Tane Mahuta", "val": 2000},
-      {"name": "Montezuma-Zypresse", "val": 1400},
-      {"name": "Zirbelkiefer (Pinus cembra)", "val": 1000},
-      {"name": "Wollemi Pine", "val": 1000},
-      {"name": "Stieleiche", "val": 800},
-      {"name": "Silbertanne", "val": 600},
-      {"name": "Europäische Fichte", "val": 500},
-      {"name": "Europäische Buche", "val": 300},
-      {"name": "Weißtanne", "val": 300},
-      {"name": "Lärche (Larix decidua)", "val": 600},
-      {"name": "Birke (Betula pendula)", "val": 150},
-      {"name": "Schwarzpappel", "val": 120}
+      {
+        "name": "Methuselah Bristlecone Pine",
+        "val": 4855
+      },
+      {
+        "name": "Prometheus Bristlecone Pine",
+        "val": 4862
+      },
+      {
+        "name": "Alerce (Fitzroya cupressoides)",
+        "val": 3622
+      },
+      {
+        "name": "Riesenmammutbaum",
+        "val": 3500
+      },
+      {
+        "name": "Olive von Vouves (Kreta)",
+        "val": 3000
+      },
+      {
+        "name": "Fortingall Yew (Schottland)",
+        "val": 3000
+      },
+      {
+        "name": "Affenbrotbaum (Baobab)",
+        "val": 2500
+      },
+      {
+        "name": "Küstenmammutbaum",
+        "val": 2200
+      },
+      {
+        "name": "Kauri Tane Mahuta",
+        "val": 2000
+      },
+      {
+        "name": "Montezuma-Zypresse",
+        "val": 1400
+      },
+      {
+        "name": "Zirbelkiefer (Pinus cembra)",
+        "val": 1000
+      },
+      {
+        "name": "Wollemi Pine",
+        "val": 1000
+      },
+      {
+        "name": "Stieleiche",
+        "val": 800
+      },
+      {
+        "name": "Silbertanne",
+        "val": 600
+      },
+      {
+        "name": "Europäische Fichte",
+        "val": 500
+      },
+      {
+        "name": "Europäische Buche",
+        "val": 300
+      },
+      {
+        "name": "Weißtanne",
+        "val": 300
+      },
+      {
+        "name": "Lärche (Larix decidua)",
+        "val": 600
+      },
+      {
+        "name": "Birke (Betula pendula)",
+        "val": 150
+      },
+      {
+        "name": "Schwarzpappel",
+        "val": 120
+      },
+      {
+        "name": "Posidonia oceanica (Neptungras, Ibiza)",
+        "val": 200000
+      },
+      {
+        "name": "Pando (Zitterpappel-Klon, Utah)",
+        "val": 80000
+      },
+      {
+        "name": "Alerce (Fitzroya cupressoides, Chile)",
+        "val": 3646
+      },
+      {
+        "name": "Yellowstone-Eibe (Taxus brevifolia)",
+        "val": 2200
+      },
+      {
+        "name": "Jōmon Sugi (Kryptomerie, Yakushima)",
+        "val": 7200
+      },
+      {
+        "name": "Senator (Sumpfzypresse, Florida, gestorben)",
+        "val": 3500
+      },
+      {
+        "name": "Tule Tree / Arbol del Tule (Oaxaca)",
+        "val": 1400
+      },
+      {
+        "name": "Huon-Kiefer (Lagarostrobos, Tasmanien)",
+        "val": 10000
+      },
+      {
+        "name": "Llangernyw Eibe (Wales, UK)",
+        "val": 5000
+      },
+      {
+        "name": "Wollemi-Kiefer (Wollemia noblis, NSW)",
+        "val": 200000
+      },
+      {
+        "name": "Welwitschia mirabilis (Namibia)",
+        "val": 2000
+      },
+      {
+        "name": "Agave parryi (Blüte einmalig nach 20-30 J.)",
+        "val": 30
+      },
+      {
+        "name": "Gurke (einjährig, Kulturpflanze)",
+        "val": 1
+      },
+      {
+        "name": "Bambus (Moso, Massenblüte nach 120 J.)",
+        "val": 120
+      },
+      {
+        "name": "Banane (Kulturstaude, 25 J.)",
+        "val": 25
+      },
+      {
+        "name": "Feigenbaum (Ficus religiosa, Bo-Baum Anuradhapura)",
+        "val": 2300
+      },
+      {
+        "name": "Brotfruchtbaum (Artocarpus, tropisch)",
+        "val": 100
+      },
+      {
+        "name": "Dragon Blood Tree (Dracaena, Socotra)",
+        "val": 650
+      },
+      {
+        "name": "Zuckerpalme (Arenga pinnata, einjährig nach Blüte)",
+        "val": 30
+      }
     ]
   },
   "fruchtgewicht": {
     "prompt": "Welche Frucht ist schwerer?",
     "unit": "g",
     "items": [
-      {"name": "Atlantische Coco de Mer Palme", "val": 25000},
-      {"name": "Jackfrucht (Artocarpus)", "val": 35000},
-      {"name": "Riesenkürbis (Rekord)", "val": 1226000},
-      {"name": "Durian", "val": 5000},
-      {"name": "Papaya", "val": 2000},
-      {"name": "Wassermelone", "val": 10000},
-      {"name": "Ananas", "val": 1800},
-      {"name": "Kokosnuss", "val": 1500},
-      {"name": "Mango", "val": 600},
-      {"name": "Avocado", "val": 300},
-      {"name": "Apfel (Durchschnitt)", "val": 182},
-      {"name": "Orange", "val": 230},
-      {"name": "Zitrone", "val": 120},
-      {"name": "Kiwi", "val": 76},
-      {"name": "Erdbeere", "val": 18},
-      {"name": "Himbeere", "val": 4},
-      {"name": "Heidelbeere", "val": 2},
-      {"name": "Tomate (Cherry)", "val": 15},
-      {"name": "Traube (einzeln)", "val": 5},
-      {"name": "Feige", "val": 50}
+      {
+        "name": "Atlantische Coco de Mer Palme",
+        "val": 25000
+      },
+      {
+        "name": "Jackfrucht (Artocarpus)",
+        "val": 35000
+      },
+      {
+        "name": "Riesenkürbis (Rekord)",
+        "val": 1226000
+      },
+      {
+        "name": "Durian",
+        "val": 5000
+      },
+      {
+        "name": "Papaya",
+        "val": 2000
+      },
+      {
+        "name": "Wassermelone",
+        "val": 10000
+      },
+      {
+        "name": "Ananas",
+        "val": 1800
+      },
+      {
+        "name": "Kokosnuss",
+        "val": 1500
+      },
+      {
+        "name": "Mango",
+        "val": 600
+      },
+      {
+        "name": "Avocado",
+        "val": 300
+      },
+      {
+        "name": "Apfel (Durchschnitt)",
+        "val": 182
+      },
+      {
+        "name": "Orange",
+        "val": 230
+      },
+      {
+        "name": "Zitrone",
+        "val": 120
+      },
+      {
+        "name": "Kiwi",
+        "val": 76
+      },
+      {
+        "name": "Erdbeere",
+        "val": 18
+      },
+      {
+        "name": "Himbeere",
+        "val": 4
+      },
+      {
+        "name": "Heidelbeere",
+        "val": 2
+      },
+      {
+        "name": "Tomate (Cherry)",
+        "val": 15
+      },
+      {
+        "name": "Traube (einzeln)",
+        "val": 5
+      },
+      {
+        "name": "Feige",
+        "val": 50
+      }
     ]
   },
   "samenlaenge": {
     "prompt": "Welcher Samen ist länger?",
     "unit": "mm",
     "items": [
-      {"name": "Coco de Mer Samen", "val": 450},
-      {"name": "Doppelkokosnuss-Samenanlage", "val": 300},
-      {"name": "Mangroven-Keimling (Rhizophora)", "val": 350},
-      {"name": "Seetang-Keimling (Posidonia)", "val": 80},
-      {"name": "Vanilla-Schote", "val": 200},
-      {"name": "Kakao-Bohne", "val": 25},
-      {"name": "Kaffeebohne", "val": 10},
-      {"name": "Reiskorn", "val": 8},
-      {"name": "Weizenkorn", "val": 6},
-      {"name": "Maiskorn", "val": 9},
-      {"name": "Erbse", "val": 7},
-      {"name": "Kürbiskern", "val": 15},
-      {"name": "Sonnenblumenkern", "val": 12},
-      {"name": "Mandel", "val": 25},
-      {"name": "Haselnuss", "val": 15},
-      {"name": "Walnuss", "val": 30},
-      {"name": "Erdnuss", "val": 15},
-      {"name": "Mohnkorn", "val": 1},
-      {"name": "Sesamsamen", "val": 3},
-      {"name": "Chiasamen", "val": 2}
+      {
+        "name": "Coco de Mer Samen",
+        "val": 450
+      },
+      {
+        "name": "Doppelkokosnuss-Samenanlage",
+        "val": 300
+      },
+      {
+        "name": "Mangroven-Keimling (Rhizophora)",
+        "val": 350
+      },
+      {
+        "name": "Seetang-Keimling (Posidonia)",
+        "val": 80
+      },
+      {
+        "name": "Vanilla-Schote",
+        "val": 200
+      },
+      {
+        "name": "Kakao-Bohne",
+        "val": 25
+      },
+      {
+        "name": "Kaffeebohne",
+        "val": 10
+      },
+      {
+        "name": "Reiskorn",
+        "val": 8
+      },
+      {
+        "name": "Weizenkorn",
+        "val": 6
+      },
+      {
+        "name": "Maiskorn",
+        "val": 9
+      },
+      {
+        "name": "Erbse",
+        "val": 7
+      },
+      {
+        "name": "Kürbiskern",
+        "val": 15
+      },
+      {
+        "name": "Sonnenblumenkern",
+        "val": 12
+      },
+      {
+        "name": "Mandel",
+        "val": 25
+      },
+      {
+        "name": "Haselnuss",
+        "val": 15
+      },
+      {
+        "name": "Walnuss",
+        "val": 30
+      },
+      {
+        "name": "Erdnuss",
+        "val": 15
+      },
+      {
+        "name": "Mohnkorn",
+        "val": 1
+      },
+      {
+        "name": "Sesamsamen",
+        "val": 3
+      },
+      {
+        "name": "Chiasamen",
+        "val": 2
+      }
     ]
   },
   "kaffeeproduktion": {
     "prompt": "Welches Land produziert mehr Kaffee?",
     "unit": "Tsd. 60-kg-Säcke/Jahr",
     "items": [
-      {"name": "Brasilien", "val": 69500},
-      {"name": "Vietnam", "val": 32000},
-      {"name": "Kolumbien", "val": 14300},
-      {"name": "Indonesien", "val": 12000},
-      {"name": "Äthiopien", "val": 8000},
-      {"name": "Honduras", "val": 6200},
-      {"name": "Uganda", "val": 6100},
-      {"name": "Indien", "val": 5800},
-      {"name": "Mexiko", "val": 4300},
-      {"name": "Peru", "val": 4200},
-      {"name": "Guatemala", "val": 4000},
-      {"name": "Nicaragua", "val": 2700},
-      {"name": "Elfenbeinküste", "val": 2500},
-      {"name": "Costa Rica", "val": 1500},
-      {"name": "Papua-Neuguinea", "val": 1300},
-      {"name": "Kenia", "val": 1000},
-      {"name": "Tansania", "val": 900},
-      {"name": "Kamerun", "val": 800},
-      {"name": "DR Kongo", "val": 400},
-      {"name": "Ruanda", "val": 350}
+      {
+        "name": "Brasilien",
+        "val": 69500
+      },
+      {
+        "name": "Vietnam",
+        "val": 32000
+      },
+      {
+        "name": "Kolumbien",
+        "val": 14300
+      },
+      {
+        "name": "Indonesien",
+        "val": 12000
+      },
+      {
+        "name": "Äthiopien",
+        "val": 8000
+      },
+      {
+        "name": "Honduras",
+        "val": 6200
+      },
+      {
+        "name": "Uganda",
+        "val": 6100
+      },
+      {
+        "name": "Indien",
+        "val": 5800
+      },
+      {
+        "name": "Mexiko",
+        "val": 4300
+      },
+      {
+        "name": "Peru",
+        "val": 4200
+      },
+      {
+        "name": "Guatemala",
+        "val": 4000
+      },
+      {
+        "name": "Nicaragua",
+        "val": 2700
+      },
+      {
+        "name": "Elfenbeinküste",
+        "val": 2500
+      },
+      {
+        "name": "Costa Rica",
+        "val": 1500
+      },
+      {
+        "name": "Papua-Neuguinea",
+        "val": 1300
+      },
+      {
+        "name": "Kenia",
+        "val": 1000
+      },
+      {
+        "name": "Tansania",
+        "val": 900
+      },
+      {
+        "name": "Kamerun",
+        "val": 800
+      },
+      {
+        "name": "DR Kongo",
+        "val": 400
+      },
+      {
+        "name": "Ruanda",
+        "val": 350
+      },
+      {
+        "name": "Côte d'Ivoire",
+        "val": 2600
+      },
+      {
+        "name": "Philippinen",
+        "val": 1400
+      },
+      {
+        "name": "Thailand",
+        "val": 600
+      },
+      {
+        "name": "Haiti",
+        "val": 350
+      },
+      {
+        "name": "Jamaika",
+        "val": 50
+      }
     ]
   },
   "weinproduktion": {
     "prompt": "Welches Land produziert mehr Wein?",
     "unit": "Mio. Liter/Jahr",
     "items": [
-      {"name": "Italien", "val": 4926},
-      {"name": "Frankreich", "val": 4578},
-      {"name": "Spanien", "val": 3542},
-      {"name": "USA", "val": 2600},
-      {"name": "Australien", "val": 1400},
-      {"name": "Argentinien", "val": 1320},
-      {"name": "Chile", "val": 1210},
-      {"name": "Südafrika", "val": 1100},
-      {"name": "Deutschland", "val": 900},
-      {"name": "Portugal", "val": 780},
-      {"name": "Rumänien", "val": 480},
-      {"name": "Neuseeland", "val": 340},
-      {"name": "Ungarn", "val": 300},
-      {"name": "Österreich", "val": 240},
-      {"name": "Griechenland", "val": 230},
-      {"name": "Moldawien", "val": 180},
-      {"name": "Schweiz", "val": 100},
-      {"name": "Tschechien", "val": 90},
-      {"name": "Slowenien", "val": 80},
-      {"name": "England", "val": 15}
+      {
+        "name": "Italien",
+        "val": 4926
+      },
+      {
+        "name": "Frankreich",
+        "val": 4578
+      },
+      {
+        "name": "Spanien",
+        "val": 3542
+      },
+      {
+        "name": "USA",
+        "val": 2600
+      },
+      {
+        "name": "Australien",
+        "val": 1400
+      },
+      {
+        "name": "Argentinien",
+        "val": 1320
+      },
+      {
+        "name": "Chile",
+        "val": 1210
+      },
+      {
+        "name": "Südafrika",
+        "val": 1100
+      },
+      {
+        "name": "Deutschland",
+        "val": 900
+      },
+      {
+        "name": "Portugal",
+        "val": 780
+      },
+      {
+        "name": "Rumänien",
+        "val": 480
+      },
+      {
+        "name": "Neuseeland",
+        "val": 340
+      },
+      {
+        "name": "Ungarn",
+        "val": 300
+      },
+      {
+        "name": "Österreich",
+        "val": 240
+      },
+      {
+        "name": "Griechenland",
+        "val": 230
+      },
+      {
+        "name": "Moldawien",
+        "val": 180
+      },
+      {
+        "name": "Schweiz",
+        "val": 100
+      },
+      {
+        "name": "Tschechien",
+        "val": 90
+      },
+      {
+        "name": "Slowenien",
+        "val": 80
+      },
+      {
+        "name": "England",
+        "val": 15
+      },
+      {
+        "name": "China",
+        "val": 782
+      },
+      {
+        "name": "Brasilien",
+        "val": 390
+      },
+      {
+        "name": "Russland",
+        "val": 380
+      },
+      {
+        "name": "Kroatien",
+        "val": 130
+      },
+      {
+        "name": "Georgien",
+        "val": 120
+      }
     ]
   },
   "reisproduktion": {
     "prompt": "Welches Land produziert mehr Reis?",
     "unit": "Mio. Tonnen/Jahr",
     "items": [
-      {"name": "China", "val": 212.0},
-      {"name": "Indien", "val": 195.0},
-      {"name": "Bangladesch", "val": 57.0},
-      {"name": "Indonesien", "val": 55.0},
-      {"name": "Vietnam", "val": 43.0},
-      {"name": "Thailand", "val": 33.0},
-      {"name": "Myanmar", "val": 26.0},
-      {"name": "Philippinen", "val": 20.0},
-      {"name": "Brasilien", "val": 11.0},
-      {"name": "Kambodscha", "val": 11.0},
-      {"name": "Japan", "val": 10.7},
-      {"name": "Pakistan", "val": 9.3},
-      {"name": "Nigeria", "val": 9.0},
-      {"name": "USA", "val": 8.5},
-      {"name": "Nepal", "val": 5.6},
-      {"name": "Sri Lanka", "val": 5.0},
-      {"name": "Ägypten", "val": 4.8},
-      {"name": "Laos", "val": 4.4},
-      {"name": "Südkorea", "val": 3.9},
-      {"name": "Kolumbien", "val": 3.0}
+      {
+        "name": "China",
+        "val": 212.0
+      },
+      {
+        "name": "Indien",
+        "val": 195.0
+      },
+      {
+        "name": "Bangladesch",
+        "val": 57.0
+      },
+      {
+        "name": "Indonesien",
+        "val": 55.0
+      },
+      {
+        "name": "Vietnam",
+        "val": 43.0
+      },
+      {
+        "name": "Thailand",
+        "val": 33.0
+      },
+      {
+        "name": "Myanmar",
+        "val": 26.0
+      },
+      {
+        "name": "Philippinen",
+        "val": 20.0
+      },
+      {
+        "name": "Brasilien",
+        "val": 11.0
+      },
+      {
+        "name": "Kambodscha",
+        "val": 11.0
+      },
+      {
+        "name": "Japan",
+        "val": 10.7
+      },
+      {
+        "name": "Pakistan",
+        "val": 9.3
+      },
+      {
+        "name": "Nigeria",
+        "val": 9.0
+      },
+      {
+        "name": "USA",
+        "val": 8.5
+      },
+      {
+        "name": "Nepal",
+        "val": 5.6
+      },
+      {
+        "name": "Sri Lanka",
+        "val": 5.0
+      },
+      {
+        "name": "Ägypten",
+        "val": 4.8
+      },
+      {
+        "name": "Laos",
+        "val": 4.4
+      },
+      {
+        "name": "Südkorea",
+        "val": 3.9
+      },
+      {
+        "name": "Kolumbien",
+        "val": 3.0
+      },
+      {
+        "name": "Nordkorea",
+        "val": 2.5
+      },
+      {
+        "name": "Peru",
+        "val": 3.1
+      },
+      {
+        "name": "Madagaskar",
+        "val": 4.0
+      }
     ]
   },
   "waldflaeche": {
     "prompt": "Welches Land hat mehr Waldanteil?",
     "unit": "%",
     "items": [
-      {"name": "Suriname", "val": 93.0},
-      {"name": "Gabun", "val": 90.0},
-      {"name": "Palau", "val": 88.0},
-      {"name": "Guyana", "val": 85.0},
-      {"name": "Laos", "val": 82.0},
-      {"name": "Finnland", "val": 74.0},
-      {"name": "Schweden", "val": 69.0},
-      {"name": "Malaysia", "val": 62.0},
-      {"name": "Brasilien", "val": 59.0},
-      {"name": "Russland", "val": 49.0},
-      {"name": "Deutschland", "val": 33.0},
-      {"name": "USA", "val": 33.0},
-      {"name": "China", "val": 22.0},
-      {"name": "Indien", "val": 24.0},
-      {"name": "Frankreich", "val": 31.0},
-      {"name": "Vereinigtes Königreich", "val": 13.0},
-      {"name": "Island", "val": 2.0},
-      {"name": "Oman", "val": 0.01},
-      {"name": "Libyen", "val": 0.1},
-      {"name": "Ägypten", "val": 0.04}
+      {
+        "name": "Suriname",
+        "val": 93.0
+      },
+      {
+        "name": "Gabun",
+        "val": 90.0
+      },
+      {
+        "name": "Palau",
+        "val": 88.0
+      },
+      {
+        "name": "Guyana",
+        "val": 85.0
+      },
+      {
+        "name": "Laos",
+        "val": 82.0
+      },
+      {
+        "name": "Finnland",
+        "val": 74.0
+      },
+      {
+        "name": "Schweden",
+        "val": 69.0
+      },
+      {
+        "name": "Malaysia",
+        "val": 62.0
+      },
+      {
+        "name": "Brasilien",
+        "val": 59.0
+      },
+      {
+        "name": "Russland",
+        "val": 49.0
+      },
+      {
+        "name": "Deutschland",
+        "val": 33.0
+      },
+      {
+        "name": "USA",
+        "val": 33.0
+      },
+      {
+        "name": "China",
+        "val": 22.0
+      },
+      {
+        "name": "Indien",
+        "val": 24.0
+      },
+      {
+        "name": "Frankreich",
+        "val": 31.0
+      },
+      {
+        "name": "Vereinigtes Königreich",
+        "val": 13.0
+      },
+      {
+        "name": "Island",
+        "val": 2.0
+      },
+      {
+        "name": "Oman",
+        "val": 0.01
+      },
+      {
+        "name": "Libyen",
+        "val": 0.1
+      },
+      {
+        "name": "Ägypten",
+        "val": 0.04
+      }
     ]
   },
   "stammumfang": {
     "prompt": "Welcher Baum hat den größeren Stammumfang?",
     "unit": "cm",
     "items": [
-      {"name": "Arbol del Tule (Montezuma-Zypresse)", "val": 4000},
-      {"name": "Riesenmammutbaum General Sherman", "val": 3110},
-      {"name": "Kastanienbaum vom Ätna", "val": 2200},
-      {"name": "Olive von Vouves (Kreta)", "val": 1210},
-      {"name": "Affenbrotbaum (Adansonia grandidieri)", "val": 1800},
-      {"name": "Fortingall Yew", "val": 560},
-      {"name": "Tane Mahuta Kauri", "val": 1390},
-      {"name": "Major Oak (Sherwood Forest)", "val": 952},
-      {"name": "Big Tree (Yosemite Grizzly Giant)", "val": 2900},
-      {"name": "Europäische Eiche (Stieleiche)", "val": 800},
-      {"name": "Hainbuche", "val": 400},
-      {"name": "Linde (Tilia cordata)", "val": 600},
-      {"name": "Europäische Buche", "val": 550},
-      {"name": "Kastanie (Castanea sativa)", "val": 700},
-      {"name": "Platane", "val": 750},
-      {"name": "Eibe (Taxus baccata)", "val": 500},
-      {"name": "Silberweide", "val": 300},
-      {"name": "Birke (Betula pendula)", "val": 200},
-      {"name": "Apfelbaum", "val": 150},
-      {"name": "Kirschbaum", "val": 180}
+      {
+        "name": "Arbol del Tule (Montezuma-Zypresse)",
+        "val": 4000
+      },
+      {
+        "name": "Riesenmammutbaum General Sherman",
+        "val": 3110
+      },
+      {
+        "name": "Kastanienbaum vom Ätna",
+        "val": 2200
+      },
+      {
+        "name": "Olive von Vouves (Kreta)",
+        "val": 1210
+      },
+      {
+        "name": "Affenbrotbaum (Adansonia grandidieri)",
+        "val": 1800
+      },
+      {
+        "name": "Fortingall Yew",
+        "val": 560
+      },
+      {
+        "name": "Tane Mahuta Kauri",
+        "val": 1390
+      },
+      {
+        "name": "Major Oak (Sherwood Forest)",
+        "val": 952
+      },
+      {
+        "name": "Big Tree (Yosemite Grizzly Giant)",
+        "val": 2900
+      },
+      {
+        "name": "Europäische Eiche (Stieleiche)",
+        "val": 800
+      },
+      {
+        "name": "Hainbuche",
+        "val": 400
+      },
+      {
+        "name": "Linde (Tilia cordata)",
+        "val": 600
+      },
+      {
+        "name": "Europäische Buche",
+        "val": 550
+      },
+      {
+        "name": "Kastanie (Castanea sativa)",
+        "val": 700
+      },
+      {
+        "name": "Platane",
+        "val": 750
+      },
+      {
+        "name": "Eibe (Taxus baccata)",
+        "val": 500
+      },
+      {
+        "name": "Silberweide",
+        "val": 300
+      },
+      {
+        "name": "Birke (Betula pendula)",
+        "val": 200
+      },
+      {
+        "name": "Apfelbaum",
+        "val": 150
+      },
+      {
+        "name": "Kirschbaum",
+        "val": 180
+      }
     ]
   },
   "blattflaeche": {
     "prompt": "Welches Blatt hat die größere Fläche?",
     "unit": "cm²",
     "items": [
-      {"name": "Riesenlotos (Nelumbo nucifera rekord)", "val": 40000},
-      {"name": "Riesenpalme (Raphia regalis)", "val": 320000},
-      {"name": "Amazonas-Seerose (Victoria amazonica)", "val": 300000},
-      {"name": "Bananenblatt", "val": 30000},
-      {"name": "Taro (Colocasia esculenta)", "val": 15000},
-      {"name": "Feigenblatt", "val": 2000},
-      {"name": "Kastanienblatt", "val": 1000},
-      {"name": "Eichenblatt", "val": 80},
-      {"name": "Buchenblatt", "val": 45},
-      {"name": "Ahornblatt (Bergahorn)", "val": 200},
-      {"name": "Lindenblatt", "val": 70},
-      {"name": "Birkenblatt", "val": 35},
-      {"name": "Apfelblatt", "val": 40},
-      {"name": "Kirschblatt", "val": 60},
-      {"name": "Weidenblatt", "val": 25},
-      {"name": "Fichtennadel", "val": 1},
-      {"name": "Kiefernnadel", "val": 3},
-      {"name": "Lorbeerblatt", "val": 50},
-      {"name": "Olivenblatt", "val": 8},
-      {"name": "Rosmarin-Blatt", "val": 1}
+      {
+        "name": "Riesenlotos (Nelumbo nucifera rekord)",
+        "val": 40000
+      },
+      {
+        "name": "Riesenpalme (Raphia regalis)",
+        "val": 320000
+      },
+      {
+        "name": "Amazonas-Seerose (Victoria amazonica)",
+        "val": 300000
+      },
+      {
+        "name": "Bananenblatt",
+        "val": 30000
+      },
+      {
+        "name": "Taro (Colocasia esculenta)",
+        "val": 15000
+      },
+      {
+        "name": "Feigenblatt",
+        "val": 2000
+      },
+      {
+        "name": "Kastanienblatt",
+        "val": 1000
+      },
+      {
+        "name": "Eichenblatt",
+        "val": 80
+      },
+      {
+        "name": "Buchenblatt",
+        "val": 45
+      },
+      {
+        "name": "Ahornblatt (Bergahorn)",
+        "val": 200
+      },
+      {
+        "name": "Lindenblatt",
+        "val": 70
+      },
+      {
+        "name": "Birkenblatt",
+        "val": 35
+      },
+      {
+        "name": "Apfelblatt",
+        "val": 40
+      },
+      {
+        "name": "Kirschblatt",
+        "val": 60
+      },
+      {
+        "name": "Weidenblatt",
+        "val": 25
+      },
+      {
+        "name": "Fichtennadel",
+        "val": 1
+      },
+      {
+        "name": "Kiefernnadel",
+        "val": 3
+      },
+      {
+        "name": "Lorbeerblatt",
+        "val": 50
+      },
+      {
+        "name": "Olivenblatt",
+        "val": 8
+      },
+      {
+        "name": "Rosmarin-Blatt",
+        "val": 1
+      }
     ]
   },
   "bluehdauer": {
     "prompt": "Welche Pflanze blüht länger pro Jahr?",
     "unit": "Tage/Jahr",
     "items": [
-      {"name": "Lotusblume (tropisch)", "val": 270},
-      {"name": "Bougainvillea (tropisch)", "val": 300},
-      {"name": "Hibiskus (subtropisch)", "val": 250},
-      {"name": "Rosen (moderne Sorten)", "val": 200},
-      {"name": "Geranien", "val": 180},
-      {"name": "Lavendel", "val": 60},
-      {"name": "Sonnenblume", "val": 30},
-      {"name": "Tulpe", "val": 14},
-      {"name": "Narzisse", "val": 21},
-      {"name": "Pfingstrose", "val": 10},
-      {"name": "Magnolie", "val": 14},
-      {"name": "Kirschblüte", "val": 7},
-      {"name": "Wiesenschaumkraut", "val": 30},
-      {"name": "Dahlien", "val": 90},
-      {"name": "Chrysanthemen", "val": 60},
-      {"name": "Alpenveilchen", "val": 90},
-      {"name": "Weihnachtsstern", "val": 120},
-      {"name": "Schneeglöckchen", "val": 14},
-      {"name": "Krokus", "val": 10},
-      {"name": "Flieder", "val": 21}
+      {
+        "name": "Lotusblume (tropisch)",
+        "val": 270
+      },
+      {
+        "name": "Bougainvillea (tropisch)",
+        "val": 300
+      },
+      {
+        "name": "Hibiskus (subtropisch)",
+        "val": 250
+      },
+      {
+        "name": "Rosen (moderne Sorten)",
+        "val": 200
+      },
+      {
+        "name": "Geranien",
+        "val": 180
+      },
+      {
+        "name": "Lavendel",
+        "val": 60
+      },
+      {
+        "name": "Sonnenblume",
+        "val": 30
+      },
+      {
+        "name": "Tulpe",
+        "val": 14
+      },
+      {
+        "name": "Narzisse",
+        "val": 21
+      },
+      {
+        "name": "Pfingstrose",
+        "val": 10
+      },
+      {
+        "name": "Magnolie",
+        "val": 14
+      },
+      {
+        "name": "Kirschblüte",
+        "val": 7
+      },
+      {
+        "name": "Wiesenschaumkraut",
+        "val": 30
+      },
+      {
+        "name": "Dahlien",
+        "val": 90
+      },
+      {
+        "name": "Chrysanthemen",
+        "val": 60
+      },
+      {
+        "name": "Alpenveilchen",
+        "val": 90
+      },
+      {
+        "name": "Weihnachtsstern",
+        "val": 120
+      },
+      {
+        "name": "Schneeglöckchen",
+        "val": 14
+      },
+      {
+        "name": "Krokus",
+        "val": 10
+      },
+      {
+        "name": "Flieder",
+        "val": 21
+      }
     ]
   },
   "genomgroesse": {
     "prompt": "Welche Pflanze hat das größere Genom?",
     "unit": "Mbp",
     "items": [
-      {"name": "Paris japonica (Germer)", "val": 152000},
-      {"name": "Fritillaria assyriaca (Schachblume)", "val": 130000},
-      {"name": "Tulpe (Tulipa gesneriana)", "val": 24000},
-      {"name": "Weizen (hexaploid)", "val": 17000},
-      {"name": "Roggen (Secale cereale)", "val": 8100},
-      {"name": "Gerste (Hordeum vulgare)", "val": 5100},
-      {"name": "Mais (Zea mays)", "val": 2500},
-      {"name": "Sorghum (Sorghum bicolor)", "val": 730},
-      {"name": "Tomate (Solanum lycopersicum)", "val": 900},
-      {"name": "Kartoffel (Solanum tuberosum)", "val": 844},
-      {"name": "Reis (Oryza sativa)", "val": 430},
-      {"name": "Sojabohne (Glycine max)", "val": 1100},
-      {"name": "Arabidopsis thaliana", "val": 125},
-      {"name": "Papaya (Carica papaya)", "val": 372},
-      {"name": "Kakao (Theobroma cacao)", "val": 430},
-      {"name": "Kaffee (Coffea arabica)", "val": 1280},
-      {"name": "Erdbeere (Fragaria ananassa)", "val": 213},
-      {"name": "Apfel (Malus domestica)", "val": 742},
-      {"name": "Weinrebe (Vitis vinifera)", "val": 487},
-      {"name": "Paprika (Capsicum annuum)", "val": 3500}
+      {
+        "name": "Paris japonica (Germer)",
+        "val": 152000
+      },
+      {
+        "name": "Fritillaria assyriaca (Schachblume)",
+        "val": 130000
+      },
+      {
+        "name": "Tulpe (Tulipa gesneriana)",
+        "val": 24000
+      },
+      {
+        "name": "Weizen (hexaploid)",
+        "val": 17000
+      },
+      {
+        "name": "Roggen (Secale cereale)",
+        "val": 8100
+      },
+      {
+        "name": "Gerste (Hordeum vulgare)",
+        "val": 5100
+      },
+      {
+        "name": "Mais (Zea mays)",
+        "val": 2500
+      },
+      {
+        "name": "Sorghum (Sorghum bicolor)",
+        "val": 730
+      },
+      {
+        "name": "Tomate (Solanum lycopersicum)",
+        "val": 900
+      },
+      {
+        "name": "Kartoffel (Solanum tuberosum)",
+        "val": 844
+      },
+      {
+        "name": "Reis (Oryza sativa)",
+        "val": 430
+      },
+      {
+        "name": "Sojabohne (Glycine max)",
+        "val": 1100
+      },
+      {
+        "name": "Arabidopsis thaliana",
+        "val": 125
+      },
+      {
+        "name": "Papaya (Carica papaya)",
+        "val": 372
+      },
+      {
+        "name": "Kakao (Theobroma cacao)",
+        "val": 430
+      },
+      {
+        "name": "Kaffee (Coffea arabica)",
+        "val": 1280
+      },
+      {
+        "name": "Erdbeere (Fragaria ananassa)",
+        "val": 213
+      },
+      {
+        "name": "Apfel (Malus domestica)",
+        "val": 742
+      },
+      {
+        "name": "Weinrebe (Vitis vinifera)",
+        "val": 487
+      },
+      {
+        "name": "Paprika (Capsicum annuum)",
+        "val": 3500
+      }
     ]
   }
 }

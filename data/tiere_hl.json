@@ -82,6 +82,82 @@
       {
         "name": "Hausrind",
         "val": 700
+      },
+      {
+        "name": "Weißes Nashorn (Süd-Unterart)",
+        "val": 2300
+      },
+      {
+        "name": "Gaur (Bos gaurus)",
+        "val": 1000
+      },
+      {
+        "name": "Eisbär (männlich)",
+        "val": 600
+      },
+      {
+        "name": "Wisent (Europäischer Bison)",
+        "val": 920
+      },
+      {
+        "name": "Amerikanischer Bison",
+        "val": 900
+      },
+      {
+        "name": "Giraffe (männlich)",
+        "val": 1200
+      },
+      {
+        "name": "Walross (Atlantisch, männlich)",
+        "val": 1200
+      },
+      {
+        "name": "Braunbär (Kodiak-Unterart)",
+        "val": 680
+      },
+      {
+        "name": "Gorilla (Östlicher Flachland, männlich)",
+        "val": 200
+      },
+      {
+        "name": "Moschusochse (Ovibos)",
+        "val": 400
+      },
+      {
+        "name": "Eland-Antilope (gemeine)",
+        "val": 700
+      },
+      {
+        "name": "Okapia (Okapi)",
+        "val": 250
+      },
+      {
+        "name": "Tapir (Malaiischer)",
+        "val": 350
+      },
+      {
+        "name": "Wombat (Nacktnasenwombat)",
+        "val": 35
+      },
+      {
+        "name": "Känguru (Rotes, männlich)",
+        "val": 90
+      },
+      {
+        "name": "Gepard (weiblich)",
+        "val": 43
+      },
+      {
+        "name": "Mähnenspringer",
+        "val": 145
+      },
+      {
+        "name": "Addax-Antilope",
+        "val": 90
+      },
+      {
+        "name": "Markhor (Schraubenziegen-Bock)",
+        "val": 110
       }
     ]
   },
@@ -168,6 +244,86 @@
       {
         "name": "Seepferd",
         "val": 0.01
+      },
+      {
+        "name": "Walhai (Rhincodon typus)",
+        "val": 21500
+      },
+      {
+        "name": "Riesenmanta (Manta birostris)",
+        "val": 3000
+      },
+      {
+        "name": "Weiße Hai (Carcharodon carcharias)",
+        "val": 2250
+      },
+      {
+        "name": "Elefantenrobbe (Männchen)",
+        "val": 2300
+      },
+      {
+        "name": "Lederschildkröte (Dermochelys)",
+        "val": 916
+      },
+      {
+        "name": "Atlantischer Thunfisch (Blauflossentun)",
+        "val": 725
+      },
+      {
+        "name": "Stör (Beluga, Huso huso)",
+        "val": 1571
+      },
+      {
+        "name": "Schwertwal (Orca, Männchen)",
+        "val": 6000
+      },
+      {
+        "name": "Pottwal (Physeter macrocephalus)",
+        "val": 50000
+      },
+      {
+        "name": "Buckelwal (Megaptera)",
+        "val": 36000
+      },
+      {
+        "name": "Roter Riesenkrake (Dosidicus)",
+        "val": 50
+      },
+      {
+        "name": "Riesen-Tintenfisch (Architeuthis)",
+        "val": 275
+      },
+      {
+        "name": "Amerikanischer Hummer (Homarus)",
+        "val": 20
+      },
+      {
+        "name": "Alaskaseelachs (Pollock, Durchschnitt)",
+        "val": 3
+      },
+      {
+        "name": "Atlantischer Lachs (Zucht)",
+        "val": 4
+      },
+      {
+        "name": "Großer Barrakuda",
+        "val": 25
+      },
+      {
+        "name": "Seehund (Phoca vitulina)",
+        "val": 130
+      },
+      {
+        "name": "Atlantischer Delfin (Delphinus, typisch)",
+        "val": 110
+      },
+      {
+        "name": "Pazifischer Oktopus (Enteroctopus)",
+        "val": 15
+      },
+      {
+        "name": "Kokosnuss-Krabbe (Birgus latro)",
+        "val": 4
       }
     ]
   },
@@ -254,6 +410,82 @@
       {
         "name": "Opossum",
         "val": 8
+      },
+      {
+        "name": "Gepard (kurz, Spurt)",
+        "val": 120
+      },
+      {
+        "name": "Pronghorn-Antilope (Ausdauer)",
+        "val": 89
+      },
+      {
+        "name": "Springbock (Rennantilope)",
+        "val": 88
+      },
+      {
+        "name": "Löwe (Spurt)",
+        "val": 80
+      },
+      {
+        "name": "Wildhund (Lycaon pictus)",
+        "val": 72
+      },
+      {
+        "name": "Hyäne (Gefleckte)",
+        "val": 65
+      },
+      {
+        "name": "Gepardgazelle (Grant's Gazelle)",
+        "val": 76
+      },
+      {
+        "name": "Nilgai-Antilope",
+        "val": 50
+      },
+      {
+        "name": "Weißnackenschnepfe (Tinamou)",
+        "val": 55
+      },
+      {
+        "name": "Straußenvogel (Rennen)",
+        "val": 70
+      },
+      {
+        "name": "Känguru (Rotes, Hüpfen)",
+        "val": 65
+      },
+      {
+        "name": "Hase (Europäischer)",
+        "val": 72
+      },
+      {
+        "name": "Pferd (Vollblut, Spurt)",
+        "val": 70
+      },
+      {
+        "name": "Greyhound (Windhund)",
+        "val": 72
+      },
+      {
+        "name": "Elch (Alces alces, Trab)",
+        "val": 56
+      },
+      {
+        "name": "Grizzlybär (kurzer Sprint)",
+        "val": 48
+      },
+      {
+        "name": "Warzenschwein (Flucht)",
+        "val": 50
+      },
+      {
+        "name": "Eisbär (flach, kurz)",
+        "val": 40
+      },
+      {
+        "name": "Dromedar (Renntempo)",
+        "val": 65
       }
     ]
   },
@@ -340,6 +572,86 @@
       {
         "name": "Schmetterling (Monarch)",
         "val": 30
+      },
+      {
+        "name": "Mauersegler (Apus apus, Spurt)",
+        "val": 170
+      },
+      {
+        "name": "Alpensegler (Apus melba, Horizontal)",
+        "val": 170
+      },
+      {
+        "name": "Große Sturmschwalbe (Fregata magnificens)",
+        "val": 153
+      },
+      {
+        "name": "Taubenschwanz-Falke (Falco peregrinus, horizontal)",
+        "val": 110
+      },
+      {
+        "name": "Goldadler (Aquila chrysaetos, Sturzflug)",
+        "val": 240
+      },
+      {
+        "name": "Weißkopf-Seeadler (Haliaeetus, horizontal)",
+        "val": 80
+      },
+      {
+        "name": "Gänsesäger (Mergus merganser, Flügelung)",
+        "val": 110
+      },
+      {
+        "name": "Hausschwalbe (Delichon urbicum)",
+        "val": 100
+      },
+      {
+        "name": "Ente (Stockente, maximal)",
+        "val": 95
+      },
+      {
+        "name": "Graugans (Anser anser, Zug)",
+        "val": 85
+      },
+      {
+        "name": "Kormoran (Phalacrocorax)",
+        "val": 91
+      },
+      {
+        "name": "Steinadler (Horizontal-Schweben)",
+        "val": 48
+      },
+      {
+        "name": "Kolibri (Archilochus, normal)",
+        "val": 48
+      },
+      {
+        "name": "Schnepfe (Gallinago, Balzflug)",
+        "val": 110
+      },
+      {
+        "name": "Sperber (Accipiter nisus, Verfolgung)",
+        "val": 75
+      },
+      {
+        "name": "Kuckuck (Cuculus canorus)",
+        "val": 88
+      },
+      {
+        "name": "Kranich (Grus grus, Wanderflug)",
+        "val": 75
+      },
+      {
+        "name": "Storch (Ciconia, Gleitflug)",
+        "val": 50
+      },
+      {
+        "name": "Albatros (Diomedea, Segelflug)",
+        "val": 90
+      },
+      {
+        "name": "Bussard (Buteo buteo, sinkend)",
+        "val": 70
       }
     ]
   },
@@ -512,6 +824,82 @@
       {
         "name": "Hausmaus",
         "val": 2
+      },
+      {
+        "name": "Aldabra-Riesenschildkröte (Esmeralda)",
+        "val": 255
+      },
+      {
+        "name": "Bowhead-Wal (Balaena mysticetus)",
+        "val": 211
+      },
+      {
+        "name": "Geoduck-Muschel (Panopea generosa)",
+        "val": 168
+      },
+      {
+        "name": "Arktische Venusmuschel (Ming)",
+        "val": 507
+      },
+      {
+        "name": "Seeigel (Strongylocentrotus franciscanus)",
+        "val": 200
+      },
+      {
+        "name": "Gelbbauchunke (Bombina variegata)",
+        "val": 30
+      },
+      {
+        "name": "Wasserschildkröte (Aldabra, wildlebend)",
+        "val": 150
+      },
+      {
+        "name": "Afrikanischer Elefant (wildlebend)",
+        "val": 65
+      },
+      {
+        "name": "Orang-Utan (wildlebend)",
+        "val": 35
+      },
+      {
+        "name": "Schimpanse (Pan troglodytes)",
+        "val": 40
+      },
+      {
+        "name": "Gorilla (Berggorilla)",
+        "val": 35
+      },
+      {
+        "name": "Buckelwal",
+        "val": 95
+      },
+      {
+        "name": "Narwal (Monodon monoceros)",
+        "val": 50
+      },
+      {
+        "name": "Europäischer Aal (Anguilla anguilla)",
+        "val": 85
+      },
+      {
+        "name": "Hummer (Homarus americanus)",
+        "val": 100
+      },
+      {
+        "name": "Zwergsäuger Etrusker-Spitzmaus",
+        "val": 2
+      },
+      {
+        "name": "Maus (Mus musculus)",
+        "val": 2
+      },
+      {
+        "name": "Eintagsfliege (Ephemera, Imago)",
+        "val": 0.003
+      },
+      {
+        "name": "Wanderfalke (Falco peregrinus)",
+        "val": 15
       }
     ]
   },
@@ -598,6 +986,70 @@
       {
         "name": "Beutelratte (Känguru-Rattenähnlich)",
         "val": 22
+      },
+      {
+        "name": "Kaninchen (Hauskaninchen)",
+        "val": 31
+      },
+      {
+        "name": "Hauskatze",
+        "val": 65
+      },
+      {
+        "name": "Hund (Haushund, mittel)",
+        "val": 63
+      },
+      {
+        "name": "Wildschwein (Sus scrofa)",
+        "val": 116
+      },
+      {
+        "name": "Hausschaf",
+        "val": 147
+      },
+      {
+        "name": "Hausziege",
+        "val": 150
+      },
+      {
+        "name": "Reh (Capreolus)",
+        "val": 280
+      },
+      {
+        "name": "Braunbär",
+        "val": 210
+      },
+      {
+        "name": "Orang-Utan",
+        "val": 245
+      },
+      {
+        "name": "Pferd (Vollblut)",
+        "val": 340
+      },
+      {
+        "name": "Nashorn (Spitzmaulnashorn)",
+        "val": 450
+      },
+      {
+        "name": "Elch (Alces alces)",
+        "val": 231
+      },
+      {
+        "name": "Wal (Blauwal, geschätzt)",
+        "val": 360
+      },
+      {
+        "name": "Gürteltier (Neunbinden, 4 Junge)",
+        "val": 120
+      },
+      {
+        "name": "Känguru (Rotes, außerhalb Beutel)",
+        "val": 33
+      },
+      {
+        "name": "Opossum (Didelphis, kurze Trächtigkeit)",
+        "val": 13
       }
     ]
   },
@@ -769,6 +1221,86 @@
       },
       {
         "name": "Korallenotter (USA)",
+        "val": 400
+      },
+      {
+        "name": "Box-Qualle (Chironex fleckeri)",
+        "val": 100000
+      },
+      {
+        "name": "Marmorkegel (Conus geographus)",
+        "val": 13000
+      },
+      {
+        "name": "Blauringkrake (Hapalochlaena maculosa)",
+        "val": 25000
+      },
+      {
+        "name": "Schwarze Witwe Spinne (L. mactans)",
+        "val": 500
+      },
+      {
+        "name": "Sydney-Trichterweberspinne (Atrax robustus)",
+        "val": 1200
+      },
+      {
+        "name": "Wandering Spider (Phoneutria)",
+        "val": 2000
+      },
+      {
+        "name": "Pfeilgiftfrosch (Phyllobates terribilis)",
+        "val": 90000
+      },
+      {
+        "name": "Steinfisch (Synanceia verrucosa)",
+        "val": 9000
+      },
+      {
+        "name": "Pufferfisch (Tetrodotoxin)",
+        "val": 30000
+      },
+      {
+        "name": "Kobra (Indische, Naja naja)",
+        "val": 600
+      },
+      {
+        "name": "Mamba (Schwarze, Dendroaspis polylepis)",
+        "val": 10000
+      },
+      {
+        "name": "Taipan (Inländischer, Oxyuranus microlepidotus)",
+        "val": 59000
+      },
+      {
+        "name": "Klapperschlange (Crotalus atrox)",
+        "val": 150
+      },
+      {
+        "name": "Skorpion (Leiurus quinquestriatus)",
+        "val": 3000
+      },
+      {
+        "name": "Arizona-Rindenkrupion (Centruroides sculpturatus)",
+        "val": 1000
+      },
+      {
+        "name": "Braune Einsiedlerspinne (Loxosceles)",
+        "val": 300
+      },
+      {
+        "name": "Komodowaran (Bakteriengift im Speichel)",
+        "val": 100
+      },
+      {
+        "name": "Giftpfeil-Frosch (Dendrobates pumilio)",
+        "val": 8000
+      },
+      {
+        "name": "Seeschlange (Enhydrina schistosa)",
+        "val": 2000
+      },
+      {
+        "name": "Stachelrochen (Dasyatis pastinaca)",
         "val": 400
       }
     ]
@@ -1221,6 +1753,86 @@
       {
         "name": "Falabella",
         "val": 20.0
+      },
+      {
+        "name": "Thoroughbred (1,6km Rennen)",
+        "val": 70.76
+      },
+      {
+        "name": "American Quarter Horse (Sprint 400m)",
+        "val": 88.5
+      },
+      {
+        "name": "Araber (Langstrecke 10km)",
+        "val": 55.0
+      },
+      {
+        "name": "Appaloosa (Durchschnittslauf)",
+        "val": 60.0
+      },
+      {
+        "name": "Morgan Horse (Trab/Galopp)",
+        "val": 57.0
+      },
+      {
+        "name": "Paso Fino (spezial. Tölt-Gang)",
+        "val": 35.0
+      },
+      {
+        "name": "Isländer (Tölt, schnell)",
+        "val": 45.0
+      },
+      {
+        "name": "Shetland Pony (Galopp)",
+        "val": 48.0
+      },
+      {
+        "name": "Shire Horse (max Galopp)",
+        "val": 55.0
+      },
+      {
+        "name": "Fries (Friesian, Galopp)",
+        "val": 60.0
+      },
+      {
+        "name": "Trakehner (Dressurtest-Galopp)",
+        "val": 65.0
+      },
+      {
+        "name": "Hannoveraner (Springpferd)",
+        "val": 65.0
+      },
+      {
+        "name": "Paint Horse (Rodeo-Sprint)",
+        "val": 72.0
+      },
+      {
+        "name": "Andalusier (klassische Dressur)",
+        "val": 55.0
+      },
+      {
+        "name": "Lusitaner (klassische Dressur)",
+        "val": 52.0
+      },
+      {
+        "name": "Haflinger (Bergpferd, bergauf)",
+        "val": 42.0
+      },
+      {
+        "name": "Nokota (Wildpferd, USA)",
+        "val": 66.0
+      },
+      {
+        "name": "Clydesdale (Zug + Galopp)",
+        "val": 54.0
+      },
+      {
+        "name": "Belgian Draft (maximaler Sprint)",
+        "val": 51.0
+      },
+      {
+        "name": "Mustang (Wildpferd, Ebene)",
+        "val": 72.0
       }
     ]
   },
@@ -1296,6 +1908,78 @@
       {
         "name": "Falabella",
         "val": 60
+      },
+      {
+        "name": "Clydesdale (männlich)",
+        "val": 1000
+      },
+      {
+        "name": "Belgian Draft (männlich)",
+        "val": 900
+      },
+      {
+        "name": "Suffolk Punch",
+        "val": 800
+      },
+      {
+        "name": "Boulonnais",
+        "val": 700
+      },
+      {
+        "name": "Araber (weiblich)",
+        "val": 450
+      },
+      {
+        "name": "Thoroughbred (Rennpferd)",
+        "val": 540
+      },
+      {
+        "name": "American Quarter Horse",
+        "val": 500
+      },
+      {
+        "name": "Hannoveraner",
+        "val": 600
+      },
+      {
+        "name": "Trakehner (weiblich)",
+        "val": 550
+      },
+      {
+        "name": "Noriker (Norisches Kaltblut)",
+        "val": 750
+      },
+      {
+        "name": "Paso Fino",
+        "val": 380
+      },
+      {
+        "name": "Isländer",
+        "val": 330
+      },
+      {
+        "name": "Fjordpferd",
+        "val": 550
+      },
+      {
+        "name": "Lusitaner",
+        "val": 520
+      },
+      {
+        "name": "Andalusier",
+        "val": 560
+      },
+      {
+        "name": "Paint Horse",
+        "val": 500
+      },
+      {
+        "name": "Mustang (Wildpferd)",
+        "val": 400
+      },
+      {
+        "name": "Falabella (Miniaturpferd, weiblich)",
+        "val": 55
       }
     ]
   }
