@@ -8,7 +8,7 @@ echo.
 python3 verify.py || (echo. && echo [ABORT] verify.py FAILED - fix errors before pushing! && pause && exit /b 1)
 echo.
 git add -A
-git commit -m "UX: Phase 257. HUD-Cleanup: Fehler-Button entfernt (ersetzt durch Feedback-Modal). Beenden+Fehler kleiner (padding 10px->5px, font-size .8rem). TTS+Feedback-Buttons sichtbar. verify: 89/89."
+git commit -m "UX: Phase 257. HUD-Cleanup: Fehler-Button entfernt. TTS+Feedback-Buttons im HUD. Startseite: 💡 Feedback-Button neben Coins. TTS 🔊 grün wenn aktiv. verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

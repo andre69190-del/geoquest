@@ -12875,6 +12875,11 @@ function _ttsSpeakNow(txt,lang){
   var _langMap={'de':'de-DE','en':'en-US','fr':'fr-FR','es':'es-ES','it':'it-IT','nl':'nl-NL','pt':'pt-PT','pl':'pl-PL','sv':'sv-SE','da':'da-DK','fi':'fi-FI','ro':'ro-RO','el':'el-GR'};
   _ttsUtter.lang=_langMap[lang||S.language||'de']||'de-DE';
   _ttsUtter.rate=0.92;_ttsUtter.pitch=1.0;
+  /* Phase 257: grünes Highlight während Sprechen */
+  var _hi=function(on){document.querySelectorAll('[title="Frage vorlesen"]').forEach(function(b){b.style.background=on?'#10b981':'';b.style.color=on?'#fff':'';});};
+  _hi(true);
+  _ttsUtter.onend=function(){_hi(false);};
+  _ttsUtter.onerror=function(){_hi(false);};
   window.speechSynthesis.speak(_ttsUtter);
 }
 function _ttsCurrentQ(){
@@ -13360,11 +13365,11 @@ function renderHomeTab(){
   const _hdr=_li
     ?`<div style="display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
         <div style="display:flex;align-items:center;gap:8px"><div style="font-size:1.05rem;font-weight:700;color:var(--text)">${t("home_hi",{name:_un})}</div>${_streakBadge}</div>
-        <div style="display:flex;align-items:center;gap:5px;background:var(--bg2);border-radius:20px;padding:.28rem .75rem;font-size:.82rem;font-weight:700;color:#f59e0b;border:1px solid rgba(245,158,11,.25)">\u{1FA99} ${_gc}</div>
+        <div style="display:flex;align-items:center;gap:6px"><button onclick="openFeedback()" title="Feedback senden" style="background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);border-radius:20px;padding:.25rem .55rem;font-size:.82rem;font-weight:700;cursor:pointer;line-height:1">\u{1F4A1}</button><div style="display:flex;align-items:center;gap:5px;background:var(--bg2);border-radius:20px;padding:.28rem .75rem;font-size:.82rem;font-weight:700;color:#f59e0b;border:1px solid rgba(245,158,11,.25)">\u{1FA99} ${_gc}</div></div>
       </div>`
     :`<div style="display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
         <div style="display:flex;align-items:center;gap:8px"><div style="font-size:1.05rem;font-weight:700;color:var(--text)">${t("home_guest")}</div>${_streakBadge}</div>
-        <button onclick="S.tab='profil';render()" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:20px;padding:.3rem .8rem;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap;box-shadow:0 2px 8px rgba(99,102,241,.35)">${t("home_save")}</button>
+        <div style="display:flex;align-items:center;gap:6px"><button onclick="openFeedback()" title="Feedback senden" style="background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);border-radius:20px;padding:.28rem .55rem;font-size:.72rem;font-weight:700;cursor:pointer;line-height:1">\u{1F4A1}</button><button onclick="S.tab='profil';render()" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:20px;padding:.3rem .8rem;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap;box-shadow:0 2px 8px rgba(99,102,241,.35)">${t("home_save")}</button></div>
       </div>`;
   const _homeHTML=`${_hdr}${renderDailyHero()}
     <div class="pvp-hero" onclick="S.mpModal=true;render()" role="button" aria-label="Live 1vs1 starten">
