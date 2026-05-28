@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 271-276: Full-to-50 + Anti-Spoiler + Map-UX. SPORT_POI 18x50, BETA entfernt, Schaetzer normalisiert, _mkPinQ ohne Stadtname, Pin-Map Reset-Button + tighter extent + Zufalls-Offset (kein Mitte-Klick-Exploit). verify: 90/90."
+git commit -m "Phase 277: Z-Index Bleeding Fix. bottom-nav z-index 300->1000, Fav/Info-Buttons 99999->2, body padding-bottom 68->80px. Buttons verschwinden sauber hinter Tab-Bar. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
