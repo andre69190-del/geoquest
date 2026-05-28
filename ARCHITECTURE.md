@@ -2,7 +2,7 @@
 ## Systemdokumentation & Entwicklerhandbuch
 
 **Version:** Phase 258 (Stand: Mai 2026)
-**Build:** gen.py → 1.21 MB | GeoQuest.html → 2.36 MB | 677 Spielmodi | verify: 89/89
+**Build:** gen.py → 1.21 MB | GeoQuest.html → 2.36 MB | 681 Spielmodi | verify: 89/89
 
 ---
 
