@@ -5856,6 +5856,7 @@ let S={
   collFilter:"all",collRarity:"all",collSearch:"",
   carouselPages:{},
   isOffline:!navigator.onLine,
+  ttsOn:(localStorage.getItem("gq_tts")==="1"),
 };
 let tIv=null,fTo=null,toastTo=null;
 
@@ -9359,6 +9360,8 @@ window.onerror=function(m,u,l,c,e){
   return true; /* prevent default browser error */
 };
 function clr(){
+  try{if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(_e){} /* Phase 256: TTS stop */
+
   clearInterval(tIv);clearTimeout(fTo);
   clearTimeout(S.freezeTimer);S.freezeTimer=null;
   /* Phase 206: also kill SLF / LandHauptstadt / WortSchmiede interval */
@@ -9594,6 +9597,7 @@ function lq(){
   if(\!q){S.ph="menu";render();return;}
   S.askedLids.add(q.lid);
   S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
+  if(S.ttsOn)setTimeout(_ttsCurrentQ,350); /* Phase 256: Auto-TTS */;
   S.half_removed=false;S.freezeActive=false;S.airportPinDist=0;S.airportPinPts=0;
   render();
   /* P167: for landscape-required modes, defer timer until device is rotated */
@@ -11085,7 +11089,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
         </div>
       </div>
       <div class="q-area" style="padding:0 8px 8px">
@@ -11116,7 +11120,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button></div>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
         </div>
       </div>
       <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
@@ -11146,7 +11150,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
         </div>
       </div>
       ${S.mpOpponent?`<div class="duell-bar-wrap" style="margin:0 0 4px"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -11174,7 +11178,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button></div>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
         </div>
       </div>
       <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
@@ -11187,7 +11191,7 @@ if(mode==="slf"&&S.ph==="playing"){
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -11261,7 +11265,7 @@ if(mode==="slf"&&S.ph==="playing"){
         ${diff==="survival"
           ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
           :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
       </div>
     </div>
     ${S.mpOpponent?`<div class="duell-bar-wrap"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -12238,7 +12242,7 @@ function renderLogikGitter(sc){
       <div style="display:flex;align-items:center;gap:8px">
         <div style="font-size:.75rem;color:var(--text3)">${gd.correctCount}/9</div>
         <div style="font-size:.85rem;font-weight:700;min-width:2.2rem;text-align:right;color:${tc()}">${S.tm}s</div>
-        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
       </div>
     </div>
     <div class="tbar"><div class="tfill" style="width:${pct()}%;background:${tc()}"></div></div>
@@ -12361,7 +12365,7 @@ function renderReiseroute(sc){
       </div>
       <div style="display:flex;align-items:center;gap:8px">
         <div style="font-size:.75rem;color:var(--text3)">${rd.steps} Schr.</div>
-        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button></div>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">🐞 Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
       </div>
     </div>
     <div style="background:var(--bg2);border-radius:12px;padding:.6rem .75rem;margin:.3rem 0">
@@ -12670,7 +12674,7 @@ function renderWortSchmiede(sc){
     '</div>'+
     '<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center">'+
       '<button class="btn-exit-global" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()" style="background:#ef4444;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap">\u{1F6AA} Beenden</button>'+
-      '<button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button>'+
+      '<button class="btn-bug" onclick="reportBug()" style="background:#e2e8f0;color:#475569;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer">\u{1F41E} Fehler</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button>'+
     '</div>'+
   '</div>'+
   '<div class="tbar"><div class="tfill" style="width:'+tPct+'%;background:'+tCol+';transition:width 1s linear"></div></div>';
@@ -12862,6 +12866,79 @@ function renderStatsTab(){
 /* ─── ADMIN TAB ──────────────────────────────────────────────────── */
 /* Phase 218: Bug Reporter \u2014 mailto: transport, pre-filled mode name */
 /* Phase 218: in-app modal -- window.prompt() is blocked on many mobile/PWA contexts */
+/* ── TTS Modul (Phase 256) ── */
+var _ttsUtter=null;
+function _ttsSpeakNow(txt,lang){
+  if(!('speechSynthesis' in window)){showToast('⚠️ Dein Browser unterstützt kein TTS.');return;}
+  window.speechSynthesis.cancel();
+  _ttsUtter=new SpeechSynthesisUtterance(txt);
+  var _langMap={'de':'de-DE','en':'en-US','fr':'fr-FR','es':'es-ES','it':'it-IT','nl':'nl-NL','pt':'pt-PT','pl':'pl-PL','sv':'sv-SE','da':'da-DK','fi':'fi-FI','ro':'ro-RO','el':'el-GR'};
+  _ttsUtter.lang=_langMap[lang||S.language||'de']||'de-DE';
+  _ttsUtter.rate=0.92;_ttsUtter.pitch=1.0;
+  window.speechSynthesis.speak(_ttsUtter);
+}
+function _ttsCurrentQ(){
+  var q=S.q;if(!q)return;
+  var txt=(q.prompt||'');
+  if(q.subj&&typeof q.subj==='string'&&q.subj.length<80&&q.type!=='map_pin'&&q.type!=='map_guess')txt+=' — '+q.subj;
+  _ttsSpeakNow(txt,S.language);
+}
+function _ttsToggle(){
+  S.ttsOn=!S.ttsOn;
+  localStorage.setItem('gq_tts',S.ttsOn?'1':'0');
+  if(S.ttsOn){showToast('🔊 Vorlesen aktiviert');}else{window.speechSynthesis&&window.speechSynthesis.cancel();showToast('🔇 Vorlesen deaktiviert');}
+  render();
+}
+
+/* ── Feedback-Formular (Phase 256) ── */
+function openFeedback(){
+  var _m=MODES.find(function(x){return x.id===S.mode;});
+  var _mn=_m?(_m.title||S.mode):(S.mode||'Allgemein');
+  var _ov=document.createElement('div');
+  _ov.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:99999;display:flex;align-items:center;justify-content:center;padding:1rem;box-sizing:border-box';
+  _ov.innerHTML='<div style="background:var(--bg2,#1e293b);border-radius:16px;padding:1.4rem;width:100%;max-width:340px;box-shadow:0 8px 40px rgba(0,0,0,.4);box-sizing:border-box">'
+    +'<div style="font-weight:900;font-size:1.05rem;margin-bottom:.8rem">💡 Feedback senden</div>'
+    +'<div style="font-size:.78rem;color:var(--text2,#94a3b8);margin-bottom:.65rem">Modus: <b>'+_mn+'</b></div>'
+    +'<select id="_fbCat" style="width:100%;padding:.45rem .5rem;border:2px solid var(--border,#334155);border-radius:8px;background:var(--bg3,#0f172a);color:var(--text,#f8fafc);font-size:.88rem;margin-bottom:.65rem;box-sizing:border-box;outline:none">'
+    +'<option value="vorschlag">💡 Verbesserungsvorschlag</option>'
+    +'<option value="inhalt">📚 Inhaltsfehler (Frage / Daten)</option>'
+    +'<option value="bug">🐞 Technischer Fehler</option>'
+    +'<option value="lob">⭐ Lob</option>'
+    +'<option value="sonstiges">💬 Sonstiges</option>'
+    +'</select>'
+    +'<textarea id="_fbTxt" placeholder="Dein Feedback… (mind. 10 Zeichen)" style="width:100%;height:100px;border:2px solid var(--border,#334155);border-radius:8px;padding:.5rem;font-size:.88rem;font-family:inherit;resize:none;box-sizing:border-box;outline:none;background:var(--bg3,#0f172a);color:var(--text,#f8fafc)"></textarea>'
+    +'<div id="_fbErr" style="color:#ef4444;font-size:.75rem;min-height:1rem;margin-top:.3rem"></div>'
+    +'<div style="display:flex;gap:8px;margin-top:.5rem">'
+    +'<button id="_fbSend" style="flex:1;background:#10b981;color:#fff;border:none;border-radius:10px;padding:.6rem;font-size:.9rem;font-weight:700;cursor:pointer">📨 Senden</button>'
+    +'<button id="_fbCancel" style="flex:1;background:var(--bg3,#334155);color:var(--text,#f8fafc);border:none;border-radius:10px;padding:.6rem;font-size:.9rem;font-weight:700;cursor:pointer">Abbrechen</button>'
+    +'</div></div>';
+  document.body.appendChild(_ov);
+  var _ta=document.getElementById('_fbTxt');
+  var _err=document.getElementById('_fbErr');
+  if(_ta)setTimeout(function(){_ta.focus();},60);
+  document.getElementById('_fbCancel').onclick=function(){_ov.remove();};
+  _ov.onclick=function(e){if(e.target===_ov)_ov.remove();};
+  document.getElementById('_fbSend').onclick=function(){
+    var _cat=document.getElementById('_fbCat')?document.getElementById('_fbCat').value:'vorschlag';
+    var _txt=(_ta?_ta.value:'').trim();
+    if(_txt.length<10){if(_err)_err.textContent='Bitte mindestens 10 Zeichen eingeben.';if(_ta)_ta.style.border='2px solid #ef4444';return;}
+    _ov.remove();
+    var _payload={category:_cat,message:_txt,mode:S.mode||null,lang:S.language||'de',app_version:'256',username:(typeof sbProfile!=='undefined'&&sbProfile&&sbProfile.username?sbProfile.username:null)};
+    if(typeof sbOK!=='undefined'&&sbOK&&typeof sb!=='undefined'&&sb){
+      var _uid=(typeof sbUser!=='undefined'&&sbUser&&sbUser.id)?sbUser.id:null;
+      if(_uid)_payload.user_id=_uid;
+      sb.from('feedback').insert(_payload).then(function(){showToast('✅ Danke für dein Feedback!');},function(e){console.warn('Feedback-Supabase-Fehler:',e);_sendFeedbackMail(_cat,_txt,_mn);});
+    }else{_sendFeedbackMail(_cat,_txt,_mn);}
+  };
+}
+function _sendFeedbackMail(cat,txt,mode){
+  var _labels={vorschlag:'Vorschlag',inhalt:'Inhaltsfehler',bug:'Fehler',lob:'Lob',sonstiges:'Sonstiges'};
+  var _subj='GeoQuest Feedback: '+(_labels[cat]||cat);
+  var _body=txt+'\n\n--- Info ---\nKategorie: '+(_labels[cat]||cat)+'\nModus: '+(mode||'?')+'\nSprache: '+(S.language||'?')+'\nVersion: Phase 256';
+  _sendBugMail(_subj,_body);
+  showToast('📧 Mail-App wird geöffnet…');
+}
+
 function reportBug(){
   var _m=MODES.find(function(x){return x.id===S.mode;});
   var _modeName=_m?_m.title:(S.mode||"Unbekannt");
@@ -13646,6 +13723,10 @@ function renderSettingsModal(){
       <span style="font-size:.78rem;color:#3b82f6;font-weight:700;cursor:pointer" onclick="localStorage.removeItem('geoquest_last_detected_country');showToast('Erkennung wird beim n\u00e4chsten Start wiederholt')">\u21ba Reset</span>
     </div>
     <div style="font-size:.76rem;color:var(--text2);margin-bottom:.75rem">${esc(localStorage.getItem('geoquest_pref_country')||'Nicht gesetzt (auto)')}</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
+      <div style="font-weight:700">\u{1F50A} Vorlesen (TTS)</div>
+      <button onclick="_ttsToggle()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.ttsOn?"An":"Aus"}</button>
+    </div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="font-weight:700">\u{1F319} Dark Mode</div>
       <button onclick="S.darkMode=!S.darkMode;applyTheme();render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.darkMode?'An':'Aus'}</button>
