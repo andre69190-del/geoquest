@@ -15059,3 +15059,17 @@ print(f"Written: {len(HTML):,} chars -> {out}")
 # Also write index.html for Netlify / direct hosting
 with open('index.html', 'w', encoding='utf-8') as _f:
     _f.write(HTML)
+
+# ── Auto-Regenerate Spielübersicht ───────────────────────────────────────────
+try:
+    import importlib.util as _ilu, os as _os
+    _sp = _ilu.spec_from_file_location(
+        "generate_spieluebersicht",
+        _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "generate_spieluebersicht.py")
+    )
+    _gsu = _ilu.module_from_spec(_sp)
+    _sp.loader.exec_module(_gsu)
+    _n = _gsu.generate()
+    print(f"Written: GeoQuest_Spielübersicht.html ({_n} Modi, auto)")
+except Exception as _e:
+    print(f"WARN: Spielübersicht auto-update skipped: {_e}")
