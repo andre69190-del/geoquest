@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 271 (Stand: Mai 2026)
-**Build:** gen.py → 1.17 MB | GeoQuest.html → 3.71 MB | 685 Spielmodi | verify: 90/90
+**Version:** Phase 272 (Stand: Mai 2026)
+**Build:** gen.py → 1.17 MB | GeoQuest.html → 3.79 MB | 685 Spielmodi | verify: 90/90
 
 ---
 
@@ -1038,11 +1038,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **269** | patch_269_final_fill.py | **Final Fill Sprint: 15+ JSON-Datensaetze auf 40-50 Items skaliert (emob, tech, gastro, pflanzen, tiere, timeline, kultur).** |
 | **270** | patch_270_global_sweep.py | **Datendichte-Fix: 29 kultur.json-Datensaetze auf 40-50 Items skaliert. Spieluebersicht Datenbasis: 51.927 Items.** |
 | **271** | patch_271_fill_to_50.py + topup | **Full-to-50 Sprint: Alle ausbaufaehigen Arrays auf ≥50 Items. BETA-Praefixe entfernt (70x). Jersey/Crest 15/10→50.** |
+| **272** | patch_272_sport_poi_fill.py + 272b | **SPORT_POI Full-to-50 Sprint: Alle 18 SPORT_POI_GAMES auf 50 POIs (derby, eishockey, f1, tdf, fussball, olympia u.v.m.). UEFA_STADIUMS 28→50. geo_pin Fossilien/Graeben/Rifts/Geoparks 8→30-40. hohe_stadien 9→30, leichtathletik_wm 13→19. BETA komplett entfernt aus gen.py (0x Python, 0x JS). GeoQuest.html 3.79 MB.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 271 -- Full-to-50 Sprint: alle ausbaufaehigen Arrays ≥50 Items, BETA entfernt, Jersey/Crest auf 50. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 272 -- SPORT_POI Full-to-50 Sprint: alle 18 SPORT_POI_GAMES auf 50 POIs, UEFA_STADIUMS 28→50, geo_pin-Arrays erweitert, BETA komplett aus gen.py entfernt. 685 Modi, Mai 2026.*
 
 
 ---

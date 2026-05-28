@@ -1571,6 +1571,166 @@
         "n": "Liang Bua (Homo floresiensis, Indonesien)",
         "lat": -8.53,
         "lng": 120.45
+      },
+      {
+        "n": "Dinosaur National Monument (Utah/Colorado, USA)",
+        "lat": 40.4375,
+        "lng": -108.9898
+      },
+      {
+        "n": "Morrison Formation (Colorado, USA)",
+        "lat": 39.65,
+        "lng": -105.0
+      },
+      {
+        "n": "La Brea Tar Pits (Los Angeles, USA)",
+        "lat": 34.0638,
+        "lng": -118.3553
+      },
+      {
+        "n": "Tendaguru (Tansania – Brachiosauruslagerstatte)",
+        "lat": -10.0,
+        "lng": 39.0
+      },
+      {
+        "n": "Ghost Ranch (New Mexico, USA – Coelophysis)",
+        "lat": 36.3261,
+        "lng": -106.4837
+      },
+      {
+        "n": "Isle of Sheppey (Kent, England – Eozane Fossilien)",
+        "lat": 51.393,
+        "lng": 0.78
+      },
+      {
+        "n": "Liaoning (China – gefiederte Dinosaurier)",
+        "lat": 41.5,
+        "lng": 122.0
+      },
+      {
+        "n": "Yixian Formation (Innere Mongolei, China)",
+        "lat": 41.3,
+        "lng": 120.8
+      },
+      {
+        "n": "Karoo Basin (Sudafrika – Therapsida)",
+        "lat": -32.5,
+        "lng": 24.5
+      },
+      {
+        "n": "Red Deer River (Alberta, Kanada – Ceratopsier)",
+        "lat": 52.265,
+        "lng": -111.645
+      },
+      {
+        "n": "Hadar (Athiopien – Lucy/Australopithecus)",
+        "lat": 11.45,
+        "lng": 40.5833
+      },
+      {
+        "n": "Olduvai Gorge (Tansania – Homo habilis)",
+        "lat": -2.9948,
+        "lng": 35.348
+      },
+      {
+        "n": "Trinil (Java, Indonesien – Homo erectus)",
+        "lat": -7.55,
+        "lng": 111.7667
+      },
+      {
+        "n": "Zhoukoudian (Peking, China – Peking-Mensch)",
+        "lat": 39.7083,
+        "lng": 115.93
+      },
+      {
+        "n": "Chengjiang Fauna (Yunnan, China – Kambrische Explosion)",
+        "lat": 24.677,
+        "lng": 102.975
+      },
+      {
+        "n": "Wheeler Shale (Utah, USA – Trilobiten)",
+        "lat": 39.05,
+        "lng": -113.0167
+      },
+      {
+        "n": "Mazon Creek (Illinois, USA – Karbon-Fossilien)",
+        "lat": 41.4356,
+        "lng": -88.0539
+      },
+      {
+        "n": "Messel Pit UNESCO (Hessen, Deutschland)",
+        "lat": 49.9236,
+        "lng": 8.7511
+      },
+      {
+        "n": "Niobrara Chalk (Kansas, USA – Kreide-Meerestiere)",
+        "lat": 39.5,
+        "lng": -99.5
+      },
+      {
+        "n": "Karoo Hauptfundort (Beaufort West, Sudafrika)",
+        "lat": -32.3576,
+        "lng": 22.578
+      },
+      {
+        "n": "Riversleigh (Queensland, Australien – Megafauna)",
+        "lat": -19.05,
+        "lng": 138.7
+      },
+      {
+        "n": "Naracoorte Caves (Sudaustralien – Pleistozan)",
+        "lat": -36.98,
+        "lng": 140.79
+      },
+      {
+        "n": "Wadi Al-Hitan (Agypten – fossile Wale)",
+        "lat": 29.2727,
+        "lng": 30.05
+      },
+      {
+        "n": "Fayum Depression (Agypten – fruhe Primaten)",
+        "lat": 29.3,
+        "lng": 30.5333
+      },
+      {
+        "n": "Afar Triangle (Athiopien – Hominiden-Funde)",
+        "lat": 11.75,
+        "lng": 40.9167
+      },
+      {
+        "n": "Patagonia Chubutensis (Argentinien – Riesensaurier)",
+        "lat": -43.5,
+        "lng": -66.0
+      },
+      {
+        "n": "Lark Quarry (Queensland, Australien – Dino-Stampede)",
+        "lat": -24.783,
+        "lng": 142.133
+      },
+      {
+        "n": "Monte Hermoso (Argentinien – fossile Saugetiere)",
+        "lat": -38.9833,
+        "lng": -61.3
+      },
+      {
+        "n": "Phosphorites du Quercy (Frankreich – Eozan)",
+        "lat": 44.5,
+        "lng": 1.5
+      },
+      {
+        "n": "Kimberley Diamond Mines (Sudafrika – Kimberlitfossilien)",
+        "lat": -28.7316,
+        "lng": 24.7699
+      },
+      {
+        "n": "Rapa Nui Fossilien (Osterinsel – endemische Fauna)",
+        "lat": -27.1127,
+        "lng": -109.3497
+      },
+      {
+        "n": "Bayan Mandahu (Innere Mongolei, China – Saurier)",
+        "lat": 41.5356,
+        "lng": 107.03
       }
     ]
   },
@@ -1616,6 +1776,116 @@
         "n": "Südandinen Graben (Pazifik)",
         "lat": -43.0,
         "lng": -72.0
+      },
+      {
+        "n": "Japangraben (Pazifik)",
+        "lat": 38.0,
+        "lng": 143.5
+      },
+      {
+        "n": "Peru-Chile-Graben (Sudpazifik)",
+        "lat": -20.0,
+        "lng": -71.0
+      },
+      {
+        "n": "Aleuten-Graben (Nordpazifik)",
+        "lat": 52.0,
+        "lng": -172.0
+      },
+      {
+        "n": "Nankai-Graben (Japan – Subduktionszone)",
+        "lat": 33.0,
+        "lng": 136.0
+      },
+      {
+        "n": "Ryukyu-Graben (Ostchinesisches Meer)",
+        "lat": 25.0,
+        "lng": 127.0
+      },
+      {
+        "n": "Cayman-Graben (Karibik)",
+        "lat": 19.7,
+        "lng": -80.0
+      },
+      {
+        "n": "Mittelamerikanischer Graben (Pazifik vor Mexiko)",
+        "lat": 12.0,
+        "lng": -92.0
+      },
+      {
+        "n": "Diamantina-Zone (Indischer Ozean)",
+        "lat": -33.0,
+        "lng": 101.0
+      },
+      {
+        "n": "Banda-Graben (Indonesien)",
+        "lat": -6.5,
+        "lng": 127.0
+      },
+      {
+        "n": "Puysegur-Graben (Neuseeland)",
+        "lat": -46.5,
+        "lng": 166.0
+      },
+      {
+        "n": "New Hebrides Graben (Vanuatu)",
+        "lat": -16.0,
+        "lng": 167.0
+      },
+      {
+        "n": "Kermadec-Graben (Sudpazifik)",
+        "lat": -30.0,
+        "lng": -177.0
+      },
+      {
+        "n": "Bougainville-Graben (Papua-Neuguinea)",
+        "lat": -7.0,
+        "lng": 153.0
+      },
+      {
+        "n": "Hikurangi-Graben (Neuseeland – Ost)",
+        "lat": -40.0,
+        "lng": 179.0
+      },
+      {
+        "n": "Romanche-Graben (Aquatorialer Atlantik)",
+        "lat": 0.2,
+        "lng": -18.5
+      },
+      {
+        "n": "South Sandwich-Graben (Sudatlantik)",
+        "lat": -57.0,
+        "lng": -25.0
+      },
+      {
+        "n": "Agulhas-Becken (Sudindischer Ozean)",
+        "lat": -40.0,
+        "lng": 26.0
+      },
+      {
+        "n": "Macquarie-Graben (Subantarktischer Pazifik)",
+        "lat": -55.0,
+        "lng": 160.0
+      },
+      {
+        "n": "Vema-Bruch (Atlantischer Rucken)",
+        "lat": 10.8,
+        "lng": -42.5
+      },
+      {
+        "n": "Marianengraben Challenger Deep (tiefster Punkt Erde)",
+        "lat": 11.33,
+        "lng": 142.2
+      },
+      {
+        "n": "Aleutian Trench West (Aleuten West)",
+        "lat": 53.0,
+        "lng": 175.0
+      },
+      {
+        "n": "Java Deep (Sundagraben tiefster Punkt)",
+        "lat": -11.0,
+        "lng": 109.0
       }
     ]
   },
@@ -2511,6 +2781,141 @@
         "n": "Basin-and-Range Province (Nevada, USA)",
         "lat": 39.0,
         "lng": -117.0
+      },
+      {
+        "n": "Afar Triple Junction (Athiopien/Eritrea/Dschibuti)",
+        "lat": 11.5,
+        "lng": 41.0
+      },
+      {
+        "n": "Albertine Rift (Uganda/DRC/Rwanda)",
+        "lat": -1.0,
+        "lng": 29.5
+      },
+      {
+        "n": "Malawi Rift (Lake Malawi)",
+        "lat": -12.0,
+        "lng": 34.5
+      },
+      {
+        "n": "Tanganjika-Rift (DRC/Tansania)",
+        "lat": -6.5,
+        "lng": 29.5
+      },
+      {
+        "n": "Gregory Rift (Kenia – ostlicher Hauptast)",
+        "lat": 0.5,
+        "lng": 36.0
+      },
+      {
+        "n": "Natron-Rift (Tansania – aktive Vulkane)",
+        "lat": -2.4,
+        "lng": 36.1
+      },
+      {
+        "n": "Erta Ale (Athiopien – Lavaseegraben)",
+        "lat": 13.6,
+        "lng": 40.7
+      },
+      {
+        "n": "Dabbahu-Rift (Athiopien – jungste Riftspalte 2005)",
+        "lat": 12.6,
+        "lng": 40.5
+      },
+      {
+        "n": "Rheingraben (Deutschland/Frankreich)",
+        "lat": 48.0,
+        "lng": 7.5
+      },
+      {
+        "n": "Oslo Graben / Oslo Rift (Norwegen)",
+        "lat": 59.9,
+        "lng": 10.7
+      },
+      {
+        "n": "Salton Trough (Sudkalifornien, USA)",
+        "lat": 33.2,
+        "lng": -115.5
+      },
+      {
+        "n": "Midcontinent Rift (USA – prakambrisch)",
+        "lat": 47.0,
+        "lng": -88.0
+      },
+      {
+        "n": "Snake River Plain (Idaho, USA – Hotspot-Spur)",
+        "lat": 43.5,
+        "lng": -115.0
+      },
+      {
+        "n": "West Antarctic Rift (Antarktis)",
+        "lat": -80.0,
+        "lng": -90.0
+      },
+      {
+        "n": "Gulf of California Rift (Mexiko)",
+        "lat": 28.0,
+        "lng": -113.0
+      },
+      {
+        "n": "Benue Trough (Nigeria – Kreide-Rift)",
+        "lat": 8.0,
+        "lng": 9.5
+      },
+      {
+        "n": "North Sea Rift / Wikinggraben",
+        "lat": 58.0,
+        "lng": 2.5
+      },
+      {
+        "n": "Shanxi Rift (China – aktive Seismik)",
+        "lat": 38.0,
+        "lng": 112.5
+      },
+      {
+        "n": "Limagne-Graben (Auvergne, Frankreich)",
+        "lat": 45.75,
+        "lng": 3.13
+      },
+      {
+        "n": "Massif Central Rift (Frankreich)",
+        "lat": 45.5,
+        "lng": 3.0
+      },
+      {
+        "n": "Suez-Rift (Agypten)",
+        "lat": 29.9,
+        "lng": 32.6
+      },
+      {
+        "n": "Aden-Rucken (Golf von Aden)",
+        "lat": 12.5,
+        "lng": 44.0
+      },
+      {
+        "n": "Juan de Fuca Ridge (Nordostpazifik)",
+        "lat": 48.0,
+        "lng": -130.0
+      },
+      {
+        "n": "Pannonian Becken (Ungarn – ehemaliger Rift)",
+        "lat": 47.0,
+        "lng": 18.0
+      },
+      {
+        "n": "Dniepr-Donez Rift (Ukraine – Karbon-Rift)",
+        "lat": 49.5,
+        "lng": 33.0
+      },
+      {
+        "n": "Carlsberg Ridge (Nordindischer Ozean)",
+        "lat": 5.0,
+        "lng": 62.0
+      },
+      {
+        "n": "Rio Grande Rift Nordteil (Colorado, USA)",
+        "lat": 37.5,
+        "lng": -106.0
       }
     ]
   },
@@ -2554,6 +2959,166 @@
       },
       {
         "n": "Danakil-Senke (Äthiopien)",
+        "lat": 14.23,
+        "lng": 40.29
+      },
+      {
+        "n": "Grand Canyon National Park (Arizona, USA)",
+        "lat": 36.0544,
+        "lng": -112.1401
+      },
+      {
+        "n": "Arches National Park (Utah, USA)",
+        "lat": 38.7331,
+        "lng": -109.5925
+      },
+      {
+        "n": "Bryce Canyon National Park (Utah, USA)",
+        "lat": 37.593,
+        "lng": -112.1871
+      },
+      {
+        "n": "Zion National Park (Utah, USA)",
+        "lat": 37.2982,
+        "lng": -113.0263
+      },
+      {
+        "n": "Canyonlands National Park (Utah, USA)",
+        "lat": 38.2,
+        "lng": -109.93
+      },
+      {
+        "n": "Cappadocia (Feenkamine – Turkei)",
+        "lat": 38.6431,
+        "lng": 34.8289
+      },
+      {
+        "n": "Giant's Causeway (Nordirland)",
+        "lat": 55.2408,
+        "lng": -6.5116
+      },
+      {
+        "n": "Zhangjiajie National Forest (Hunan, China)",
+        "lat": 29.319,
+        "lng": 110.434
+      },
+      {
+        "n": "Guilin Karst (Guangxi, China)",
+        "lat": 25.274,
+        "lng": 110.29
+      },
+      {
+        "n": "Jiuzhaigou Valley (Sichuan, China)",
+        "lat": 33.26,
+        "lng": 103.917
+      },
+      {
+        "n": "Bungle Bungle / Purnululu (Westaustralien)",
+        "lat": -17.5,
+        "lng": 128.4
+      },
+      {
+        "n": "Devils Tower (Wyoming, USA)",
+        "lat": 44.5903,
+        "lng": -104.7146
+      },
+      {
+        "n": "Uluru / Ayers Rock (Northern Territory, Australien)",
+        "lat": -25.3444,
+        "lng": 131.0369
+      },
+      {
+        "n": "Perito Moreno Gletscher-Park (Argentinien)",
+        "lat": -50.497,
+        "lng": -73.143
+      },
+      {
+        "n": "Torres del Paine (Chile – Granitnadeln)",
+        "lat": -51.0,
+        "lng": -73.0
+      },
+      {
+        "n": "Socotra (Jemen – Drachenblutbaume, UNESCO)",
+        "lat": 12.5,
+        "lng": 53.8333
+      },
+      {
+        "n": "Meteora (Griechenland – Sandsteinfelsen)",
+        "lat": 39.7217,
+        "lng": 21.6306
+      },
+      {
+        "n": "Goreme National Park / Kappadokien (Turkei)",
+        "lat": 38.6448,
+        "lng": 34.8294
+      },
+      {
+        "n": "Wadi Rum (Jordanien – Rote Wustenfelsen)",
+        "lat": 29.576,
+        "lng": 35.426
+      },
+      {
+        "n": "Namib-Naukluft Park / Sossusvlei (Namibia)",
+        "lat": -24.7274,
+        "lng": 15.2897
+      },
+      {
+        "n": "Virunga National Park (DRC – Nyiragongo Vulkan)",
+        "lat": -1.5,
+        "lng": 29.2
+      },
+      {
+        "n": "Kilimanjaro NP (Tansania – Schildvulkan-Massiv)",
+        "lat": -3.0674,
+        "lng": 37.3556
+      },
+      {
+        "n": "Ngorongoro Crater (Tansania – Vulkankrater)",
+        "lat": -3.2096,
+        "lng": 35.4972
+      },
+      {
+        "n": "Drakensberg (Sudafrika – Basaltescarpment)",
+        "lat": -29.5,
+        "lng": 29.3
+      },
+      {
+        "n": "Ha Long Bay (Vietnam – Karstformation)",
+        "lat": 20.9101,
+        "lng": 107.1839
+      },
+      {
+        "n": "Phang Nga Bay (Thailand – Karstinseln)",
+        "lat": 8.2722,
+        "lng": 98.5013
+      },
+      {
+        "n": "Palawan Underground River (Philippinen)",
+        "lat": 10.1775,
+        "lng": 118.927
+      },
+      {
+        "n": "Iguazu National Park (Argentinien/Brasilien)",
+        "lat": -25.6953,
+        "lng": -54.4367
+      },
+      {
+        "n": "Petrified Forest NP (Arizona, USA – versteinerte Baume)",
+        "lat": 34.91,
+        "lng": -109.8068
+      },
+      {
+        "n": "Pinnacles NP (Kaliformien, USA – Basaltformationen)",
+        "lat": 36.4906,
+        "lng": -121.1825
+      },
+      {
+        "n": "Zhangye Danxia (Gansu, China – Regenbogenberge)",
+        "lat": 38.9303,
+        "lng": 100.2553
+      },
+      {
+        "n": "Danakil-Senke (Athiopien – tiefste Stelle Afrikas)",
         "lat": 14.23,
         "lng": 40.29
       }

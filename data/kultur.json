@@ -7476,6 +7476,111 @@
       "n": "Estadio Universitario México 2240m",
       "lat": 19.3,
       "lng": -99.19
+    },
+    {
+      "n": "Estadio Monumental Virgen de Copacabana 3860m (Peru)",
+      "lat": -15.84,
+      "lng": -70.02
+    },
+    {
+      "n": "Estadio Patria 3650m (Sucre, Bolivien)",
+      "lat": -19.05,
+      "lng": -65.26
+    },
+    {
+      "n": "Estadio Heroes de Abril 3630m (Oruro, Bolivien)",
+      "lat": -17.97,
+      "lng": -67.11
+    },
+    {
+      "n": "Estadio Federativo 3600m (La Paz, Bolivien)",
+      "lat": -16.5,
+      "lng": -68.12
+    },
+    {
+      "n": "Estadio Tahuichi Aguilera 2800m (Cochabamba, Bolivien)",
+      "lat": -17.39,
+      "lng": -66.16
+    },
+    {
+      "n": "Estadio 12 de Octubre 2800m (Ibarra, Ecuador)",
+      "lat": 0.35,
+      "lng": -78.12
+    },
+    {
+      "n": "Estadio Ciudad de Cuenca 2580m (Cuenca, Ecuador)",
+      "lat": -2.9,
+      "lng": -79.0
+    },
+    {
+      "n": "Estadio Rodrigo Paz Delgado 2812m (Quito, Ecuador)",
+      "lat": -0.19,
+      "lng": -78.52
+    },
+    {
+      "n": "Estadio Nemesio Camacho El Campin 2640m (Bogota)",
+      "lat": 4.65,
+      "lng": -74.08
+    },
+    {
+      "n": "Estadio Chinchero 3800m (Cusco, Peru - geplant)",
+      "lat": -13.42,
+      "lng": -72.04
+    },
+    {
+      "n": "Estadio Azteca 2240m (Mexiko-Stadt)",
+      "lat": 19.3,
+      "lng": -99.15
+    },
+    {
+      "n": "Toluca Estadio Nemesio Diez 2680m (Mexiko)",
+      "lat": 19.29,
+      "lng": -99.67
+    },
+    {
+      "n": "Coors Field Baseball 1609m (Denver, USA)",
+      "lat": 39.76,
+      "lng": -104.99
+    },
+    {
+      "n": "Empower Field 1609m (Denver Broncos, USA)",
+      "lat": 39.74,
+      "lng": -105.02
+    },
+    {
+      "n": "Loftus Versfeld 1340m (Pretoria, Sudafrika)",
+      "lat": -25.75,
+      "lng": 28.22
+    },
+    {
+      "n": "Ellis Park 1753m (Johannesburg, Sudafrika)",
+      "lat": -26.19,
+      "lng": 28.05
+    },
+    {
+      "n": "Rwandas Amahoro Stadium 1567m (Kigali, Rwanda)",
+      "lat": -1.95,
+      "lng": 30.1
+    },
+    {
+      "n": "Nakivubo Stadium 1190m (Kampala, Uganda)",
+      "lat": 0.31,
+      "lng": 32.58
+    },
+    {
+      "n": "Estadio Monumental (Lima, Peru) 154m",
+      "lat": -12.06,
+      "lng": -77.05
+    },
+    {
+      "n": "Estadio Romelio Martinez 0m (Barranquilla, Kolumbien)",
+      "lat": 10.97,
+      "lng": -74.81
+    },
+    {
+      "n": "Estadio Atanasio Girardot 1495m (Medellin, Kolumbien)",
+      "lat": 6.26,
+      "lng": -75.6
     }
   ],
   "leichtathletik_wm": [
@@ -7543,6 +7648,36 @@
       "n": "2023 Budapest",
       "lat": 47.49,
       "lng": 19.04
+    },
+    {
+      "n": "2001 Edmonton",
+      "lat": 53.55,
+      "lng": -113.47
+    },
+    {
+      "n": "2003 Paris",
+      "lat": 48.86,
+      "lng": 2.35
+    },
+    {
+      "n": "2005 Helsinki",
+      "lat": 60.17,
+      "lng": 24.93
+    },
+    {
+      "n": "2007 Osaka",
+      "lat": 34.69,
+      "lng": 135.5
+    },
+    {
+      "n": "2011 Daegu",
+      "lat": 35.87,
+      "lng": 128.6
+    },
+    {
+      "n": "2025 Tokio",
+      "lat": 35.69,
+      "lng": 139.69
     }
   ],
   "surf_spots": [
