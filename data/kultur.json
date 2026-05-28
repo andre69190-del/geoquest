@@ -2223,6 +2223,66 @@
       "lat": 48.12,
       "lng": 21.42,
       "c": "Ungarn"
+    },
+    {
+      "n": "Burgundy (Bourgogne)",
+      "lat": 47.052,
+      "lng": 4.84,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Chablis",
+      "lat": 47.819,
+      "lng": 3.8,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Alsace (Elsass)",
+      "lat": 48.1,
+      "lng": 7.3,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Côtes du Rhône",
+      "lat": 44.2,
+      "lng": 4.8,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Chianti",
+      "lat": 43.541,
+      "lng": 11.22,
+      "c": "Italien"
+    },
+    {
+      "n": "Barolo (Piemont)",
+      "lat": 44.62,
+      "lng": 7.94,
+      "c": "Italien"
+    },
+    {
+      "n": "Grüner Veltliner (Wachau)",
+      "lat": 48.344,
+      "lng": 15.42,
+      "c": "Österreich"
+    },
+    {
+      "n": "Tokaji (Tokaj)",
+      "lat": 48.124,
+      "lng": 21.409,
+      "c": "Ungarn"
+    },
+    {
+      "n": "Constantia",
+      "lat": -34.015,
+      "lng": 18.448,
+      "c": "Südafrika"
+    },
+    {
+      "n": "Central Valley (Maipo)",
+      "lat": -33.75,
+      "lng": -70.8,
+      "c": "Chile"
     }
   ],
   "museen": [
@@ -2611,6 +2671,42 @@
       "lat": 48.86,
       "lng": 2.34,
       "c": "Frankreich"
+    },
+    {
+      "n": "Der Schrei (Nationalmuseum Oslo)",
+      "lat": 59.916,
+      "lng": 10.727,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Starry Night (MoMA New York)",
+      "lat": 40.761,
+      "lng": -73.978,
+      "c": "USA"
+    },
+    {
+      "n": "Terrakotta-Armee (Xi'an)",
+      "lat": 34.384,
+      "lng": 109.274,
+      "c": "China"
+    },
+    {
+      "n": "Pietà (Petersdom, Vatikan)",
+      "lat": 41.902,
+      "lng": 12.457,
+      "c": "Vatikan"
+    },
+    {
+      "n": "Winged Victory of Samothrace (Louvre)",
+      "lat": 48.8612,
+      "lng": 2.3366,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Laocoön-Gruppe (Vatikan)",
+      "lat": 41.9063,
+      "lng": 12.4541,
+      "c": "Vatikan"
     }
   ],
   "filmsets": [
@@ -3059,6 +3155,54 @@
       "lat": 17.02,
       "lng": 99.82,
       "c": "Thailand"
+    },
+    {
+      "n": "Knossos",
+      "lat": 35.297,
+      "lng": 25.163,
+      "c": "Griechenland"
+    },
+    {
+      "n": "Skara Brae",
+      "lat": 59.049,
+      "lng": -3.342,
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Catalhöyük",
+      "lat": 37.668,
+      "lng": 32.827,
+      "c": "Türkei"
+    },
+    {
+      "n": "Çatalhüyük",
+      "lat": 37.668,
+      "lng": 32.826,
+      "c": "Türkei"
+    },
+    {
+      "n": "Mesa Verde",
+      "lat": 37.185,
+      "lng": -108.49,
+      "c": "USA"
+    },
+    {
+      "n": "Tiwanaku",
+      "lat": -16.555,
+      "lng": -68.673,
+      "c": "Bolivien"
+    },
+    {
+      "n": "Chan Chan",
+      "lat": -8.107,
+      "lng": -79.074,
+      "c": "Peru"
+    },
+    {
+      "n": "El Tajin",
+      "lat": 20.447,
+      "lng": -97.378,
+      "c": "Mexiko"
     }
   ],
   "bruecken": [
@@ -3283,6 +3427,42 @@
       "lat": 40.6,
       "lng": -74.04,
       "c": "USA"
+    },
+    {
+      "n": "Danyang-Kunshan-Viadukt",
+      "lat": 31.9,
+      "lng": 121.2,
+      "c": "China"
+    },
+    {
+      "n": "Helix-Brücke Singapur",
+      "lat": 1.289,
+      "lng": 103.861,
+      "c": "Singapur"
+    },
+    {
+      "n": "Aizhai-Hängebrücke",
+      "lat": 28.32,
+      "lng": 109.61,
+      "c": "China"
+    },
+    {
+      "n": "Siduhe-Brücke",
+      "lat": 30.581,
+      "lng": 110.25,
+      "c": "China"
+    },
+    {
+      "n": "Duge-Brücke (Beipan River)",
+      "lat": 25.625,
+      "lng": 105.597,
+      "c": "China"
+    },
+    {
+      "n": "Hardanger-Brücke",
+      "lat": 60.36,
+      "lng": 6.28,
+      "c": "Norwegen"
     }
   ],
   "gotteshaeuser": [
@@ -3483,6 +3663,54 @@
       "lat": 46.43,
       "lng": 4.66,
       "c": "Frankreich"
+    },
+    {
+      "n": "Pantheon (Rom)",
+      "lat": 41.899,
+      "lng": 12.477,
+      "c": "Italien"
+    },
+    {
+      "n": "Meenakshi-Amman-Tempel",
+      "lat": 9.92,
+      "lng": 78.119,
+      "c": "Indien"
+    },
+    {
+      "n": "Rock-Hewn-Churches Lalibela",
+      "lat": 12.031,
+      "lng": 39.047,
+      "c": "Äthiopien"
+    },
+    {
+      "n": "Lalibela (gesamt)",
+      "lat": 12.031,
+      "lng": 39.048,
+      "c": "Äthiopien"
+    },
+    {
+      "n": "Preah Vihear",
+      "lat": 14.391,
+      "lng": 104.68,
+      "c": "Kambodscha"
+    },
+    {
+      "n": "Aksum-Stele",
+      "lat": 14.13,
+      "lng": 38.716,
+      "c": "Äthiopien"
+    },
+    {
+      "n": "Abu Simbel",
+      "lat": 22.337,
+      "lng": 31.626,
+      "c": "Ägypten"
+    },
+    {
+      "n": "Karnak-Tempel",
+      "lat": 25.719,
+      "lng": 32.657,
+      "c": "Ägypten"
     }
   ],
   "wolkenkratzer": [
@@ -4149,6 +4377,41 @@
       "n": "Pico (Azoren)",
       "lat": 38.47,
       "lng": -28.4
+    },
+    {
+      "n": "Kazbek",
+      "lat": 42.699,
+      "lng": 44.518
+    },
+    {
+      "n": "Belukha",
+      "lat": 49.807,
+      "lng": 86.593
+    },
+    {
+      "n": "Mount Wilhelm",
+      "lat": -5.779,
+      "lng": 145.028
+    },
+    {
+      "n": "Vinson Massif",
+      "lat": -78.526,
+      "lng": -85.617
+    },
+    {
+      "n": "Nevado Sajama",
+      "lat": -18.106,
+      "lng": -68.885
+    },
+    {
+      "n": "Cotopaxi",
+      "lat": -0.684,
+      "lng": -78.436
+    },
+    {
+      "n": "Popocatépetl",
+      "lat": 19.023,
+      "lng": -98.622
     }
   ],
   "meerengen": [
@@ -4598,6 +4861,21 @@
       "n": "Sutherland-Fälle (Neuseeland)",
       "lat": -44.82,
       "lng": 167.97
+    },
+    {
+      "n": "Jim-Jim-Fälle",
+      "lat": -13.274,
+      "lng": 132.846
+    },
+    {
+      "n": "Gavarnie-Wasserfall",
+      "lat": 42.728,
+      "lng": -0.006
+    },
+    {
+      "n": "Marmore-Wasserfälle",
+      "lat": 42.577,
+      "lng": 12.709
     }
   ],
   "canyons": [
@@ -5016,6 +5294,41 @@
       "n": "Bundoran (Irland)",
       "lat": 54.48,
       "lng": -8.29
+    },
+    {
+      "n": "Nazaré",
+      "lat": 39.601,
+      "lng": -9.07
+    },
+    {
+      "n": "Supertubes (Jeffreys Bay)",
+      "lat": -34.054,
+      "lng": 24.924
+    },
+    {
+      "n": "Hossegor",
+      "lat": 43.671,
+      "lng": -1.415
+    },
+    {
+      "n": "Chicama",
+      "lat": -7.849,
+      "lng": -79.444
+    },
+    {
+      "n": "Nias Island",
+      "lat": 0.72,
+      "lng": 97.557
+    },
+    {
+      "n": "Desert Point (Lombok)",
+      "lat": -8.788,
+      "lng": 115.965
+    },
+    {
+      "n": "Cloudbreak (Fiji)",
+      "lat": -17.947,
+      "lng": 177.127
     }
   ],
   "kontinent_mitte": [
@@ -9054,6 +9367,34 @@
     {
       "n": "Saman (Tanz-Sport)",
       "c": "Indonesien"
+    },
+    {
+      "n": "Sumo (inoffiziell)",
+      "c": "Japan"
+    },
+    {
+      "n": "Baseball (offiziell)",
+      "c": "Kuba"
+    },
+    {
+      "n": "Volleyball (offiziell)",
+      "c": "Sri Lanka"
+    },
+    {
+      "n": "Taekwondo (offiziell)",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Jiujutsu (offiziell)",
+      "c": "Brasilien"
+    },
+    {
+      "n": "Polo (inoffiziell)",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Shinty (offiziell)",
+      "c": "Schottland"
     }
   ],
   "enklave": [
@@ -9096,6 +9437,126 @@
     {
       "n": "Vennbahn-Gebiet",
       "c": "Belgien"
+    },
+    {
+      "n": "Llívia",
+      "c": "Spanien"
+    },
+    {
+      "n": "Jungholz",
+      "c": "Österreich"
+    },
+    {
+      "n": "Kleinwalsertal",
+      "c": "Österreich"
+    },
+    {
+      "n": "Oecusse",
+      "c": "Osttimor"
+    },
+    {
+      "n": "Point Roberts",
+      "c": "USA"
+    },
+    {
+      "n": "Northwest Angle",
+      "c": "USA"
+    },
+    {
+      "n": "Madha",
+      "c": "Oman"
+    },
+    {
+      "n": "Nahwa",
+      "c": "VAE"
+    },
+    {
+      "n": "Sokh",
+      "c": "Usbekistan"
+    },
+    {
+      "n": "Vorukh",
+      "c": "Tadschikistan"
+    },
+    {
+      "n": "Shakhimardan",
+      "c": "Usbekistan"
+    },
+    {
+      "n": "Barak",
+      "c": "Kirgisistan"
+    },
+    {
+      "n": "Gibraltar",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Peñón de Vélez de la Gomera",
+      "c": "Spanien"
+    },
+    {
+      "n": "Musandam",
+      "c": "Oman"
+    },
+    {
+      "n": "Temburong",
+      "c": "Brunei"
+    },
+    {
+      "n": "Dahagram-Angarpota",
+      "c": "Bangladesch"
+    },
+    {
+      "n": "Baarle-Nassau",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Cooch Behar (Tin Bigha)",
+      "c": "Indien"
+    },
+    {
+      "n": "Dubrovnik-Halbinsel",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Uvira-Korridor",
+      "c": "Demokratische Republik Kongo"
+    },
+    {
+      "n": "Peñones de Alhucemas",
+      "c": "Spanien"
+    },
+    {
+      "n": "Islas Chafarinas",
+      "c": "Spanien"
+    },
+    {
+      "n": "Oman-Enklave Wakan",
+      "c": "Oman"
+    },
+    {
+      "n": "Courchevel (Vauclair)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Llivia",
+      "c": "Spanien"
+    },
+    {
+      "n": "Kyaukpyu",
+      "c": "Myanmar"
+    },
+    {
+      "n": "Siliguri-Korridor (Hühnerhalskorridor)",
+      "c": "Indien"
+    },
+    {
+      "n": "Wakhan-Korridor",
+      "c": "Afghanistan"
+    },
+    {
+      "n": "Aktobe-Oblast-Zipfel",
+      "c": "Kasachstan"
     }
   ],
   "grenzfluesse": [
@@ -9238,6 +9699,34 @@
     {
       "n": "Uruguay (Grenzfluss)",
       "c": "Argentinien/Uruguay"
+    },
+    {
+      "n": "Jordan (Grenze zu)",
+      "c": "Jordanien"
+    },
+    {
+      "n": "Amu Darya (Grenze zu)",
+      "c": "Afghanistan"
+    },
+    {
+      "n": "Sambesi (Grenze zu)",
+      "c": "Sambia"
+    },
+    {
+      "n": "Limpopo (Grenze zu)",
+      "c": "Simbabwe"
+    },
+    {
+      "n": "Mekong (Grenze zu)",
+      "c": "Laos"
+    },
+    {
+      "n": "Tumen (Grenze zu)",
+      "c": "Nordkorea"
+    },
+    {
+      "n": "Oder (Grenze zu)",
+      "c": "Polen"
     }
   ],
   "halbinseln": [
@@ -9376,6 +9865,50 @@
     {
       "n": "Halbinsel Liaodong",
       "c": "China"
+    },
+    {
+      "n": "Taimyr-Halbinsel",
+      "c": "Russland"
+    },
+    {
+      "n": "Yamal-Halbinsel",
+      "c": "Russland"
+    },
+    {
+      "n": "Gaspésie",
+      "c": "Kanada"
+    },
+    {
+      "n": "Baja California",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Yucatán",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Gallipoli-Halbinsel",
+      "c": "Türkei"
+    },
+    {
+      "n": "Anatolische Halbinsel",
+      "c": "Türkei"
+    },
+    {
+      "n": "Somali-Halbinsel",
+      "c": "Somalia"
+    },
+    {
+      "n": "Halbinsel Kap York",
+      "c": "Australien"
+    },
+    {
+      "n": "Halbinsel Eyre",
+      "c": "Australien"
+    },
+    {
+      "n": "Halbinsel Banks",
+      "c": "Kanada"
     }
   ],
   "deltamuendungen": [
@@ -9482,6 +10015,70 @@
     {
       "n": "Volta-Delta",
       "c": "Ghana"
+    },
+    {
+      "n": "Huang-He-Delta",
+      "c": "China"
+    },
+    {
+      "n": "Yukon-Delta",
+      "c": "USA"
+    },
+    {
+      "n": "Rhein-Delta",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Mackenzie-Delta",
+      "c": "Kanada"
+    },
+    {
+      "n": "Kafue-Delta",
+      "c": "Sambia"
+    },
+    {
+      "n": "Senegal-Delta",
+      "c": "Senegal"
+    },
+    {
+      "n": "Colorado-Delta",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Cauvery-Delta",
+      "c": "Indien"
+    },
+    {
+      "n": "Krishna-Delta",
+      "c": "Indien"
+    },
+    {
+      "n": "Godavari-Delta",
+      "c": "Indien"
+    },
+    {
+      "n": "Mahanadi-Delta",
+      "c": "Indien"
+    },
+    {
+      "n": "Brahmaputra-Delta",
+      "c": "Bangladesch"
+    },
+    {
+      "n": "Kongo-Delta",
+      "c": "Demokratische Republik Kongo"
+    },
+    {
+      "n": "Copper-River-Delta",
+      "c": "USA"
+    },
+    {
+      "n": "Narmada-Delta",
+      "c": "Indien"
+    },
+    {
+      "n": "Amu-Darya-Delta",
+      "c": "Usbekistan"
     }
   ],
   "kaps": [
@@ -9628,6 +10225,34 @@
     {
       "n": "Kap Ortegal",
       "c": "Spanien"
+    },
+    {
+      "n": "Ras Hafun",
+      "c": "Somalia"
+    },
+    {
+      "n": "Kap Verde (Kap Blanc)",
+      "c": "Senegal"
+    },
+    {
+      "n": "Kap Frio",
+      "c": "Namibia"
+    },
+    {
+      "n": "Kap Columbine",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Kap Wrath",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Kap Hatteras",
+      "c": "USA"
+    },
+    {
+      "n": "Kap San Lucas",
+      "c": "Mexiko"
     }
   ],
   "meerbusen": [
@@ -9762,6 +10387,46 @@
     {
       "n": "Bucht von Bight of Bonny",
       "c": "Nigeria"
+    },
+    {
+      "n": "Persischer Golf",
+      "c": "Iran"
+    },
+    {
+      "n": "Golf von Carpentaria",
+      "c": "Australien"
+    },
+    {
+      "n": "Golf von Triest",
+      "c": "Italien"
+    },
+    {
+      "n": "Golf von Valencia",
+      "c": "Spanien"
+    },
+    {
+      "n": "Golf von Maine",
+      "c": "USA"
+    },
+    {
+      "n": "Golf von Honduras",
+      "c": "Honduras"
+    },
+    {
+      "n": "Golf von Panama",
+      "c": "Panama"
+    },
+    {
+      "n": "Golf von Fonseca",
+      "c": "Honduras"
+    },
+    {
+      "n": "Bucht von Manila",
+      "c": "Philippinen"
+    },
+    {
+      "n": "Bucht von Halong",
+      "c": "Vietnam"
     }
   ],
   "inselgruppen": [
@@ -9920,6 +10585,26 @@
     {
       "n": "Vanuatu",
       "c": "Vanuatu"
+    },
+    {
+      "n": "Palau",
+      "c": "Palau"
+    },
+    {
+      "n": "Marshallinseln",
+      "c": "Marshallinseln"
+    },
+    {
+      "n": "Kiribati",
+      "c": "Kiribati"
+    },
+    {
+      "n": "Niue",
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Tokelau",
+      "c": "Neuseeland"
     }
   ],
   "gebirge_match": [
@@ -10112,6 +10797,42 @@
     {
       "n": "Chiemsee",
       "c": "Deutschland"
+    },
+    {
+      "n": "Aralsee",
+      "c": "Usbekistan"
+    },
+    {
+      "n": "Nipigon-See",
+      "c": "Kanada"
+    },
+    {
+      "n": "Huron-See",
+      "c": "Kanada"
+    },
+    {
+      "n": "Tschadsee",
+      "c": "Tschad"
+    },
+    {
+      "n": "Poopo-See",
+      "c": "Bolivien"
+    },
+    {
+      "n": "Vanern",
+      "c": "Schweden"
+    },
+    {
+      "n": "Vattern",
+      "c": "Schweden"
+    },
+    {
+      "n": "Siljan",
+      "c": "Schweden"
+    },
+    {
+      "n": "Inari-See",
+      "c": "Finnland"
     }
   ],
   "automarken": [
@@ -10634,6 +11355,26 @@
     {
       "n": "Nilgiri Mountain Railway",
       "c": "Indien"
+    },
+    {
+      "n": "Gotthard-Basistunnel",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Kanada-Pazifikbahn (CPR)",
+      "c": "Kanada"
+    },
+    {
+      "n": "Highveld-Linie",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Lhasa-Eisenbahn",
+      "c": "China"
+    },
+    {
+      "n": "Flam-Bahn",
+      "c": "Norwegen"
     }
   ],
   "hafen_world": [
@@ -10772,6 +11513,38 @@
     {
       "n": "Hafen Santos",
       "c": "Brasilien"
+    },
+    {
+      "n": "Hafen Jebel Ali",
+      "c": "VAE"
+    },
+    {
+      "n": "Hafen Piraeus",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Hafen Tanger Med",
+      "c": "Marokko"
+    },
+    {
+      "n": "Hafen Manzanillo",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Hafen Buenos Aires",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Hafen Yokohama",
+      "c": "Japan"
+    },
+    {
+      "n": "Hafen Mumbai",
+      "c": "Indien"
+    },
+    {
+      "n": "Hafen Lagos",
+      "c": "Nigeria"
     }
   ],
   "kanaele": [
@@ -11096,6 +11869,30 @@
     {
       "n": "Ship Finance International",
       "c": "Bermuda"
+    },
+    {
+      "n": "ZIM Integrated Shipping",
+      "c": "Israel"
+    },
+    {
+      "n": "Pacific Basin Shipping",
+      "c": "Hongkong"
+    },
+    {
+      "n": "Diana Shipping",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Star Bulk Carriers",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Tsakos Navigation",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Wilhelmsen Lines",
+      "c": "Norwegen"
     }
   ],
   "autobahnen_beruhmt": [
@@ -11416,6 +12213,26 @@
     {
       "n": "Tokio Metro",
       "c": "Japan"
+    },
+    {
+      "n": "Mexico City Metro",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Kairo Metro",
+      "c": "Ägypten"
+    },
+    {
+      "n": "Teheran Metro",
+      "c": "Iran"
+    },
+    {
+      "n": "Washington Metro",
+      "c": "USA"
+    },
+    {
+      "n": "Santiago Metro",
+      "c": "Chile"
     }
   ],
   "luft_rekorde": [
@@ -11517,6 +12334,70 @@
     },
     {
       "n": "Erster Jumbo-Jet (Boeing 747)",
+      "c": "USA"
+    },
+    {
+      "n": "Höchster Passagierflughafen (Daocheng Yading)",
+      "c": "China"
+    },
+    {
+      "n": "Tiefstgelegener Flughafen (Quseir, Ägypten)",
+      "c": "Ägypten"
+    },
+    {
+      "n": "Erster Überschallpassagierflug (Concorde)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Erster Nonstop-Transatlantikflug (Alcock & Brown)",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Erster Solarflug um die Erde (Solar Impulse 2)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Höchster Passagierjet (Concorde Mach 2, 18 km)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Erster Frachtflug über den Atlantik",
+      "c": "USA"
+    },
+    {
+      "n": "Kürzeste Linienflugstrecke (Westray–Papa Westray, 2 min)",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Schnellstes Passagierflugzeug (Concorde, 2179 km/h)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Erster Heißluftballon (Montgolfier)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Längste Nonstop-Propellerflugstrecke (Lucky Lady II)",
+      "c": "USA"
+    },
+    {
+      "n": "Erster Rundflug der Welt (Douglas World Cruiser)",
+      "c": "USA"
+    },
+    {
+      "n": "Meistgeflogene Route der Welt (Jeju–Seoul)",
+      "c": "Südkorea"
+    },
+    {
+      "n": "Meiste Passagiere pro Jahr – Flughafen (Atlanta Hartsfield)",
+      "c": "USA"
+    },
+    {
+      "n": "Erster Flug über den Südpol (Byrd Expedition)",
+      "c": "USA"
+    },
+    {
+      "n": "Größter Frachtflughafen der Welt (Memphis International)",
       "c": "USA"
     }
   ],
