@@ -4672,7 +4672,7 @@ function getSmartMatch(candidates,ccA,valA,ccFn,valFn){
   var vAN=Number(valA)||0;
   for(var i=0;i<sorted.length;i++){if(Number(valFn(sorted[i]))<=vAN)aIdx=i;}
   /* Dynamic window: ±5 for large arrays, ±2 for small (ensures challenge) */
-  var W=Math.max(1,Math.floor(sorted.length*0.1)); /* Phase 222: 10% window */
+  var W=Math.max(1,Math.floor(sorted.length*(S.diff==='hardcore'?0.03:0.10))); /* Phase 222: 10% window */
   var lo=Math.max(0,aIdx-W),hi=Math.min(sorted.length-1,aIdx+W);
   var pool=sorted.slice(lo,hi+1);
   /* Continent preference within window */
@@ -5846,7 +5846,7 @@ function soundStamp(){[880,1047,1320].forEach((f,i)=>setTimeout(()=>playTone(f,"
 let _secretGameToken=null; /* Anti-Cheat: new token each game */
 let _navLock=false;        /* Phase 217 QA: debounce rapid startGame() calls */
 let S={
-  ph:"menu",tab:"home",mode:"city",diff:"casual",
+  ph:"menu",tab:"home",mode:"city",diff:(localStorage.getItem('gq_diffx')||"casual"),
   sc:0,st:0,bs:0,rd:0,correct:0,tm:12,dur:12,
   q:null,sel:null,ok:null,pts:0,lid:null,
   lbData:[],lbLoading:false,scoreSaved:false,newUsername:"",
@@ -7815,7 +7815,7 @@ function genStadionHoeheQ(){
   var tries=0;
   while(tries++<40){
     var ai=~~(rng()*sorted.length);
-    var W=Math.max(1,Math.floor(sorted.length*0.1));
+    var W=Math.max(1,Math.floor(sorted.length*(S.diff==='hardcore'?0.03:0.10)));
     var lo=Math.max(0,ai-W),hi=Math.min(sorted.length-1,ai+W);
     var pool=sorted.slice(lo,hi+1).filter(function(x){return x!==sorted[ai];});
     if(!pool.length)continue;
@@ -8296,7 +8296,7 @@ function genTiereHL(dataKey){
   var tries=0;
   while(tries++<40){
     var ai=~~(rng()*len);
-    var W=Math.max(1,Math.floor(len*0.1));
+    var W=Math.max(1,Math.floor(len*(S.diff==='hardcore'?0.03:0.10)));
     var lo=Math.max(0,ai-W),hi=Math.min(len-1,ai+W);
     var pool=[];
     for(var i=lo;i<=hi;i++){if(i!==ai)pool.push(i);}
@@ -8421,7 +8421,7 @@ function _mkHL(DATA){
     var tries=0;
     while(tries++<40){
       var ai=~~(rng()*len);
-      var W=Math.max(1,Math.floor(len*0.1));
+      var W=Math.max(1,Math.floor(len*(S.diff==='hardcore'?0.03:0.10)));
       var lo=Math.max(0,ai-W),hi=Math.min(len-1,ai+W);
       var pool=[];
       for(var i=lo;i<=hi;i++){if(i!==ai)pool.push(i);}
@@ -8527,7 +8527,7 @@ function genPflanzenHL(dataKey){
   var tries=0;
   while(tries++<40){
     var ai=~~(rng()*len);
-    var W=Math.max(1,Math.floor(len*0.1));
+    var W=Math.max(1,Math.floor(len*(S.diff==='hardcore'?0.03:0.10)));
     var lo=Math.max(0,ai-W),hi=Math.min(len-1,ai+W);
     var pool=[];
     for(var i=lo;i<=hi;i++){if(i!==ai)pool.push(i);}
@@ -9732,7 +9732,7 @@ function answer(a,tok){
   S.sel=a||"__t";S.ok=ok;
   if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:ok});
   let pts=0;
-  if(ok){const ns=S.st+1,t=tier(ns);if(S.diff==="casual"||S.diff==="blitz"){pts=10;}else if(S.diff==="survival"){pts=20+S.tm;S.survTimeBonusTotal=(S.survTimeBonusTotal||0)+S.tm;}else{/* hardcore */S.hcMult=Math.min(2.5,parseFloat((+(S.hcMult||1.0)+0.1).toFixed(1)));S.hcMaxMult=Math.max(S.hcMaxMult||1.0,S.hcMult);pts=Math.round(15*S.hcMult);}S.sc+=pts;S.st=ns;S.bs=Math.max(S.bs,ns);S.correct++;soundCorrect();if(ns>=3)setTimeout(()=>soundStreak(ns),250);showPtsPopup(pts);if(navigator.vibrate)navigator.vibrate([50]);}
+  if(ok){const ns=S.st+1,t=tier(ns);if(S.diff==="casual"||S.diff==="blitz"){pts=10;}else if(S.diff==="survival"){pts=20+S.tm;S.survTimeBonusTotal=(S.survTimeBonusTotal||0)+S.tm;}else{/* hardcore */S.hcMult=Math.min(2.5,parseFloat((+(S.hcMult||1.0)+0.1).toFixed(1)));S.hcMaxMult=Math.max(S.hcMaxMult||1.0,S.hcMult);pts=Math.ceil(10*1.5);}S.sc+=pts;S.st=ns;S.bs=Math.max(S.bs,ns);S.correct++;soundCorrect();if(ns>=3)setTimeout(()=>soundStreak(ns),250);showPtsPopup(pts,S.diff==='hardcore'?'(1.5x)':'');if(navigator.vibrate)navigator.vibrate([50]);}
   else{S.st=0;if(S.diff==="hardcore"){S.hcMult=1.0;}soundWrong();if(navigator.vibrate)navigator.vibrate([100,50,100]);
     /* Lives system: casual=infinite(999), hardcore/survival=3 */
     if(S.diff!=="casual"){
@@ -10443,7 +10443,7 @@ function startGame(m){
 async function showLeaderboard(){S.ph="menu";S.tab="home";S.lbLoading=true;render();S.lbData=await fetchLeaderboard(S.mode);S.lbLoading=false;render();}
 
 /* UTILS */
-function showPtsPopup(pts){const el=document.createElement("div");el.className="pts-popup";el.textContent="+"+pts;el.style.cssText="left:50%;top:40%;transform:translateX(-50%)";document.body.appendChild(el);setTimeout(()=>el.remove(),950);}
+function showPtsPopup(pts,suf){const el=document.createElement("div");el.className="pts-popup";el.textContent="+"+pts+(suf?" "+suf:"");el.style.cssText="left:50%;top:40%;transform:translateX(-50%)";document.body.appendChild(el);setTimeout(()=>el.remove(),950);}
 function showStampToast(cc){
   clearTimeout(toastTo);const old=document.getElementById("stamp-toast");if(old)old.remove();
   const el=document.createElement("div");el.id="stamp-toast";el.className="stamp-toast";
@@ -13537,10 +13537,10 @@ function renderHomeTab(){
     <div id="mainGamesGrid" style="padding:0 15px">${_accordionHTML}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
-      <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';render()">Casual</button>
-      <button class="diff-btn ${S.diff==="hardcore"?"active":""}" onclick="S.diff='hardcore';render()">Hardcore</button>
-      <button class="diff-btn ${S.diff==="survival"?"active":""}" onclick="S.diff='survival';render()">💀 Survival</button>
-      <button class="diff-btn ${S.diff==="blitz"?"active":""}" onclick="S.diff='blitz';render()">\u26A1 Blitz</button>
+      <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';localStorage.setItem('gq_diffx','casual');render()">Casual</button>
+      <button class="diff-btn ${S.diff==="hardcore"?"active":""}" onclick="S.diff='hardcore';localStorage.setItem('gq_diffx','hardcore');render()">Hardcore</button>
+      <button class="diff-btn ${S.diff==="survival"?"active":""}" onclick="S.diff='survival';localStorage.setItem('gq_diffx','survival');render()">💀 Survival</button>
+      <button class="diff-btn ${S.diff==="blitz"?"active":""}" onclick="S.diff='blitz';localStorage.setItem('gq_diffx','blitz');render()">\u26A1 Blitz</button>
     </div>
     <p style="text-align:center;color:var(--text2);font-size:.72rem;font-weight:600;margin:.3rem 0 .5rem">${
       t(S.diff==="casual"?"diff_desc_casual":S.diff==="hardcore"?"diff_desc_hc":S.diff==="blitz"?"diff_desc_blitz":"diff_desc_surv")
@@ -13878,7 +13878,15 @@ function renderSettingsModal(){
       <div style="font-weight:700">\u{1F319} Dark Mode</div>
       <button onclick="S.darkMode=!S.darkMode;applyTheme();render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.darkMode?'An':'Aus'}</button>
     </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
+      <div style="font-weight:700">\u{1F525} Hardcore-Modus</div>
+      <button onclick="S.diff=(S.diff==='hardcore'?'casual':'hardcore');localStorage.setItem('gq_diffx',S.diff);render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.diff==='hardcore'?'An':'Aus'}</button>
+    </div>
     ${(()=>{const _gc=parseInt(localStorage.getItem('geoquest_grid_cols'))||4;const _gr=parseInt(localStorage.getItem('geoquest_grid_rows'))||6;return`<div style="margin:20px 0;padding-top:15px;border-top:1px solid var(--border)"><div style="font-weight:700;margin-bottom:10px">\u{1F4CA} Spiele nebeneinander (Raster)</div><div style="display:flex;justify-content:center;gap:8px;margin-bottom:14px">${[2,3,4,5].map(n=>`<button onclick="saveGridCols(${n});render()" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gc===n?'#3b82f6':'var(--bg3)'};color:${_gc===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div><div style="font-weight:700;margin-bottom:10px">\u{1F4D6} Reihen pro Seite (Carousel)</div><div style="display:flex;justify-content:center;gap:8px">${[3,4,5,6,8].map(n=>`<button onclick="saveGridRows(${n})" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gr===n?'#10b981':'var(--bg3)'};color:${_gr===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div></div>`;})()}
+    <div onclick="S.settingsModal=false;openFeedback();render()" style="display:flex;align-items:center;gap:.6rem;padding:.6rem .85rem;border-radius:10px;background:var(--bg3);cursor:pointer;margin-bottom:.75rem;border:1px solid var(--border)">
+      <span style="font-size:1.2rem">\u{1F4A1}</span>
+      <div><div style="font-weight:700;font-size:.85rem">Feedback &amp; Kontakt</div><div style="font-size:.75rem;color:var(--text3)">Fehler melden, Ideen einreichen</div></div>
+    </div>
     <button class="btn-g" style="margin-bottom:0" onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
   </div></div>`;
 }

@@ -1036,14 +1036,14 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 266 -- Timeline-Engine: Drag-and-Drop Zeitleiste, 4 neue Modi, 685 Modi, 38 Datendateien, Mai 2026.*
+*Letztes Update: Phase 267 -- Hardcore-Modus: Persistenz, H/L 3%/10%, Pts x1.5, Profil-Toggle + Feedback-Card, 685 Modi, Mai 2026.*
 
 
 ---
 
 ## 13. Vollstaendiger Spielmodus-Katalog
 
-**Stand Phase 266 -- 685 Modi in 20 Kategorien**
+**Stand Phase 267 -- 685 Modi in 20 Kategorien**
 
 > **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
 
