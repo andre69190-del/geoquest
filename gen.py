@@ -10221,8 +10221,33 @@ function drawAirportPinMap(readOnly){
     .append("rect").attr("width",W).attr("height",H);
   const g=svg.append("g").attr("clip-path","url(#_gqMapClip_"+W+")");
   let _pinMapDragged=false;
-  const zoom=d3.zoom().scaleExtent([1,10]).translateExtent([[-W,-H],[2*W,2*H]]).on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom={t:ev.transform,lid:S.q?S.q.lid:null};if(ev.sourceEvent)_pinMapDragged=true;});
+  /* Phase 275: tighter translateExtent — prevents map from panning fully off-screen.
+     At scale k, the map can pan at most W*(k-1)/k in each direction, keeping content visible. */
+  const zoom=d3.zoom().scaleExtent([1,10])
+    .translateExtent([[-W*0.5,-H*0.5],[W*1.5,H*1.5]])
+    .on("zoom",ev=>{g.attr("transform",ev.transform);window._mapZoom={t:ev.transform,lid:S.q?S.q.lid:null};if(ev.sourceEvent)_pinMapDragged=true;});
   svg.call(zoom);
+  /* Phase 275: Reset button — shown when map has been panned/zoomed away from initial view */
+  if(!readOnly){
+    const _rstBtn=document.createElement("button");
+    _rstBtn.id="_gqMapReset";
+    _rstBtn.textContent="↺";
+    _rstBtn.title="Karte zurücksetzen";
+    _rstBtn.style.cssText="position:absolute;top:6px;right:6px;padding:3px 7px;background:rgba(255,255,255,.88);border:1px solid #94a3b8;border-radius:6px;font-size:14px;cursor:pointer;z-index:8;line-height:1.3;display:none";
+    _rstBtn.onclick=function(e){e.stopPropagation();
+      if(S.q&&S.q.targetLat!=null&&S.q.type==="uk_pin"){
+        const[_px,_py]=proj([S.q.targetLng,S.q.targetLat])||[W/2,H/2];
+        const _rk=3.5,_rtx=W/2-_rk*_px,_rty=H/2-_rk*_py;
+        const _rtr=d3.zoomIdentity.translate(_rtx,_rty).scale(_rk);
+        svg.call(zoom.transform,_rtr);window._mapZoom={t:_rtr,lid:S.q.lid};
+      }else{svg.call(zoom.transform,d3.zoomIdentity);window._mapZoom=null;}
+      _rstBtn.style.display="none";
+    };
+    container.style.position="relative";
+    container.appendChild(_rstBtn);
+    /* Show reset button as soon as user starts panning */
+    svg.on("pointerdown._rst",function(){_rstBtn.style.display="block";});
+  }
   const _savedZ=window._mapZoom;
   if(_savedZ&&_savedZ.t&&_savedZ.t.k>1&&_savedZ.lid===(S.q?S.q.lid:null)){
     svg.call(zoom.transform,_savedZ.t);

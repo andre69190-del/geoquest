@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 274: Pin-Modus Anti-Spoiler. _mkPinQ zeigt nur Basisname ohne Stadt/Land (subj=_dispSubj). Feedback-Label 22->35 Zeichen. Kein 'Levi's Stadium (Santa Clara, USA)' mehr als Hinweis. verify: 90/90."
+git commit -m "Phase 271-275: Full-to-50 Sprint + SPORT_POI + Schaetzer-Fix + Anti-Spoiler + Map-Scroll-Fix. SPORT_POI 18x50, UEFA 50, geo_pin gefuellt, BETA entfernt. Distanz/Flugzeit-Pools normalisiert. _mkPinQ ohne Stadtname. Pin-Map translateExtent enger + Reset-Button. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
