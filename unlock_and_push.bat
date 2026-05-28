@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 273: Distanz-/Flugzeit-Schaetzer Fix. JSON c-Werte normalisiert (einheitl. Format). ansPool distanz 10->44 unique Werte, flugzeit 8->15 unique Werte. Spieluebersicht: 10->50 Distanzen, 8->50 Flugzeiten. verify: 90/90."
+git commit -m "Phase 274: Pin-Modus Anti-Spoiler. _mkPinQ zeigt nur Basisname ohne Stadt/Land (subj=_dispSubj). Feedback-Label 22->35 Zeichen. Kein 'Levi's Stadium (Santa Clara, USA)' mehr als Hinweis. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

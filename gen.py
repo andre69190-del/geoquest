@@ -8429,7 +8429,11 @@ function _mkPinQ(DATA){
     if(!d||!d.items||!d.items.length)return null;
     var idx=~~(rng()*d.items.length);
     var item=d.items[idx];
-    return{type:"uk_pin",subj:item.n,targetLat:item.lat,targetLng:item.lng,
+    /* Phase 274: Strip city/country hint from question display.
+       "Levi's Stadium (Santa Clara, USA)" -> subj="Levi's Stadium", ans=full name for feedback */
+    var _pIdx=item.n.indexOf('(');
+    var _dispSubj=_pIdx>0?item.n.slice(0,_pIdx).trim():item.n;
+    return{type:"uk_pin",subj:_dispSubj,targetLat:item.lat,targetLng:item.lng,
       ans:item.n,prompt:d.prompt,cat:cat,
       lid:"mkp_"+cat+"_"+idx,cc:null};
   };
@@ -10245,7 +10249,7 @@ function drawAirportPinMap(readOnly){
     g.append("text").attr("x",cx).attr("y",cy-13)
       .attr("text-anchor","middle").attr("font-size","9px").attr("fill","#10b981")
       .attr("font-weight","700")
-      .text((S.q.ans||"").length>22?(S.q.ans||"").slice(0,20)+"…":S.q.ans||"");
+      .text((S.q.ans||"").length>35?(S.q.ans||"").slice(0,33)+"…":S.q.ans||"");
   }
   /* Click handler: place user pin */
   if(!readOnly){
