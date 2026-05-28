@@ -152,6 +152,190 @@
       {
         "n": "Merapi",
         "c": "Indonesien"
+      },
+      {
+        "n": "Krakatau",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Tambora",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Semeru",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Sinabung",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Bromo",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Taal",
+        "c": "Philippinen"
+      },
+      {
+        "n": "Mayon",
+        "c": "Philippinen"
+      },
+      {
+        "n": "Pinatubo",
+        "c": "Philippinen"
+      },
+      {
+        "n": "Colima",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Paricutin",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Mount St. Helens",
+        "c": "USA"
+      },
+      {
+        "n": "Mount Rainier",
+        "c": "USA"
+      },
+      {
+        "n": "Mauna Kea",
+        "c": "USA (Hawaii)"
+      },
+      {
+        "n": "Yellowstone",
+        "c": "USA"
+      },
+      {
+        "n": "Tungurahua",
+        "c": "Ecuador"
+      },
+      {
+        "n": "Chimborazo",
+        "c": "Ecuador"
+      },
+      {
+        "n": "Villarrica",
+        "c": "Chile"
+      },
+      {
+        "n": "Llaima",
+        "c": "Chile"
+      },
+      {
+        "n": "Nevado del Ruiz",
+        "c": "Kolumbien"
+      },
+      {
+        "n": "Galeras",
+        "c": "Kolumbien"
+      },
+      {
+        "n": "Arenal",
+        "c": "Costa Rica"
+      },
+      {
+        "n": "Poas",
+        "c": "Costa Rica"
+      },
+      {
+        "n": "Soufrière Hills",
+        "c": "Montserrat (GB)"
+      },
+      {
+        "n": "La Soufrière",
+        "c": "Saint Vincent"
+      },
+      {
+        "n": "Cumbre Vieja",
+        "c": "Spanien (La Palma)"
+      },
+      {
+        "n": "Teide",
+        "c": "Spanien (Teneriffa)"
+      },
+      {
+        "n": "Stromboli",
+        "c": "Italien"
+      },
+      {
+        "n": "Campi Flegrei",
+        "c": "Italien"
+      },
+      {
+        "n": "Piton de la Fournaise",
+        "c": "Frankreich (Réunion)"
+      },
+      {
+        "n": "Hekla",
+        "c": "Island"
+      },
+      {
+        "n": "Grímsvötn",
+        "c": "Island"
+      },
+      {
+        "n": "Bardarbunga",
+        "c": "Island"
+      },
+      {
+        "n": "Eyjafjallajökull",
+        "c": "Island"
+      },
+      {
+        "n": "Bezymianny",
+        "c": "Russland"
+      },
+      {
+        "n": "Klyuchevskaya Sopka",
+        "c": "Russland"
+      },
+      {
+        "n": "Shiveluch",
+        "c": "Russland"
+      },
+      {
+        "n": "Sakurajima",
+        "c": "Japan"
+      },
+      {
+        "n": "Asama",
+        "c": "Japan"
+      },
+      {
+        "n": "Unzen",
+        "c": "Japan"
+      },
+      {
+        "n": "Mount Ruapehu",
+        "c": "Neuseeland"
+      },
+      {
+        "n": "White Island / Whakaari",
+        "c": "Neuseeland"
+      },
+      {
+        "n": "Erta Ale",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Mount Erebus",
+        "c": "Antarktis"
+      },
+      {
+        "n": "Piton des Neiges",
+        "c": "Frankreich (Réunion)"
+      },
+      {
+        "n": "Tavurvur",
+        "c": "Papua-Neuguinea"
+      },
+      {
+        "n": "Ulawun",
+        "c": "Papua-Neuguinea"
       }
     ]
   },
@@ -189,6 +373,186 @@
       {
         "n": "Vinson Massif",
         "c": "Ellsworth Mountains (Antarktis)"
+      },
+      {
+        "n": "Mont Blanc",
+        "c": "Alpen"
+      },
+      {
+        "n": "Monte Rosa",
+        "c": "Alpen"
+      },
+      {
+        "n": "Eiger",
+        "c": "Alpen"
+      },
+      {
+        "n": "Jungfrau",
+        "c": "Alpen"
+      },
+      {
+        "n": "Großglockner",
+        "c": "Alpen"
+      },
+      {
+        "n": "Ortler",
+        "c": "Alpen"
+      },
+      {
+        "n": "Wildspitze",
+        "c": "Alpen"
+      },
+      {
+        "n": "K2",
+        "c": "Karakorum"
+      },
+      {
+        "n": "Gasherbrum I",
+        "c": "Karakorum"
+      },
+      {
+        "n": "Broad Peak",
+        "c": "Karakorum"
+      },
+      {
+        "n": "Gasherbrum II",
+        "c": "Karakorum"
+      },
+      {
+        "n": "Masherbrum",
+        "c": "Karakorum"
+      },
+      {
+        "n": "Batura Sar",
+        "c": "Karakorum"
+      },
+      {
+        "n": "Kangchenjunga",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Lhotse",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Makalu",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Cho Oyu",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Dhaulagiri",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Manaslu",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Annapurna",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Nanga Parbat",
+        "c": "Himalaya"
+      },
+      {
+        "n": "Tirich Mir",
+        "c": "Hindukusch"
+      },
+      {
+        "n": "Nowshak",
+        "c": "Hindukusch"
+      },
+      {
+        "n": "Dykh-Tau",
+        "c": "Kaukasus"
+      },
+      {
+        "n": "Shkhara",
+        "c": "Kaukasus"
+      },
+      {
+        "n": "Kazbek",
+        "c": "Kaukasus"
+      },
+      {
+        "n": "Ojos del Salado",
+        "c": "Anden"
+      },
+      {
+        "n": "Monte Pissis",
+        "c": "Anden"
+      },
+      {
+        "n": "Huascarán",
+        "c": "Anden"
+      },
+      {
+        "n": "Sajama",
+        "c": "Anden"
+      },
+      {
+        "n": "Chimborazo",
+        "c": "Anden"
+      },
+      {
+        "n": "Fairweather",
+        "c": "St. Elias Mountains"
+      },
+      {
+        "n": "Logan",
+        "c": "St. Elias Mountains"
+      },
+      {
+        "n": "Puncak Jaya (Carstensz)",
+        "c": "Sudirman Range"
+      },
+      {
+        "n": "Mawson Peak",
+        "c": "Heard Island"
+      },
+      {
+        "n": "Kilimanjaro",
+        "c": "Ost-Rift-Berge"
+      },
+      {
+        "n": "Mount Kenya",
+        "c": "Ost-Rift-Berge"
+      },
+      {
+        "n": "Margherita Peak",
+        "c": "Ruwenzori"
+      },
+      {
+        "n": "Ras Dejen",
+        "c": "Äthiopisches Hochland"
+      },
+      {
+        "n": "Toubkal",
+        "c": "Atlas"
+      },
+      {
+        "n": "Kosciuszko",
+        "c": "Snowy Mountains (Australien)"
+      },
+      {
+        "n": "Pico (Azoren)",
+        "c": "Azoren"
+      },
+      {
+        "n": "Mulhacén",
+        "c": "Sierra Nevada (Spanien)"
+      },
+      {
+        "n": "Olympus",
+        "c": "Griechisches Festland"
+      },
+      {
+        "n": "Zugspitze",
+        "c": "Bayerische Alpen"
       }
     ]
   },
@@ -226,6 +590,174 @@
       {
         "n": "Atoll (z.B. Bikini-Atoll)",
         "c": "Korallenriff auf sinkender Vulkaninsel"
+      },
+      {
+        "n": "Diamant (Kimberlit-Pfeiler)",
+        "c": "Metamorphose / Druck"
+      },
+      {
+        "n": "Geysir (Old Faithful)",
+        "c": "Geothermie"
+      },
+      {
+        "n": "Yellowstone Caldera",
+        "c": "Supervulkanismus"
+      },
+      {
+        "n": "Yarlung Tsangpo Canyon",
+        "c": "Plattentektonik & Erosion"
+      },
+      {
+        "n": "Ayers Rock / Uluru",
+        "c": "Inselberg-Erosion"
+      },
+      {
+        "n": "Cappadocia Feenschornsteine",
+        "c": "Vulkanische Ablagerung & Erosion"
+      },
+      {
+        "n": "Delicate Arch (Utah)",
+        "c": "Winderoion & Auflösung"
+      },
+      {
+        "n": "Bryce Canyon Hoodoos",
+        "c": "Frost-Erosion"
+      },
+      {
+        "n": "Zhangjiajie-Säulen",
+        "c": "Sandstein-Verwitterung"
+      },
+      {
+        "n": "Tepui Mount Roraima",
+        "c": "Platten-Hebung & Erosion"
+      },
+      {
+        "n": "Mammoth Cave",
+        "c": "Kalk-Auflösung (Karstlösung)"
+      },
+      {
+        "n": "Son Doong Cave",
+        "c": "Karstlösung"
+      },
+      {
+        "n": "Doline",
+        "c": "Einsturz-Karstphänomen"
+      },
+      {
+        "n": "Fiord Geirangerfjord",
+        "c": "Gletschererosion"
+      },
+      {
+        "n": "Alpen",
+        "c": "Kollisions-Tektonik"
+      },
+      {
+        "n": "Himalaya",
+        "c": "Kollisions-Tektonik"
+      },
+      {
+        "n": "Rift Valley",
+        "c": "Dehnungstektonik"
+      },
+      {
+        "n": "Mid-Atlantic-Ridge",
+        "c": "Meeresbodenausbreitung"
+      },
+      {
+        "n": "Hawaiianische Inseln",
+        "c": "Hotspot-Vulkanismus"
+      },
+      {
+        "n": "Galápagos-Inseln",
+        "c": "Hotspot-Vulkanismus"
+      },
+      {
+        "n": "Island",
+        "c": "Hotspot & Mittelozeanischer Rücken"
+      },
+      {
+        "n": "Basaltsäulen (Giants Causeway)",
+        "c": "Lavakühlung"
+      },
+      {
+        "n": "Lonar-Krater (Indien)",
+        "c": "Meteoriten-Einschlag"
+      },
+      {
+        "n": "Barringer Crater (Arizona)",
+        "c": "Meteoriten-Einschlag"
+      },
+      {
+        "n": "Manicouagan-Krater (Kanada)",
+        "c": "Meteoriten-Einschlag"
+      },
+      {
+        "n": "Steinpilze (Steinformat.)",
+        "c": "Sandstrahleroion"
+      },
+      {
+        "n": "Rote Sanddünen Namib",
+        "c": "Äolische Ablagerung"
+      },
+      {
+        "n": "Barchan-Dünen",
+        "c": "Windablagerung"
+      },
+      {
+        "n": "Stalagmiten",
+        "c": "Mineralausfällung"
+      },
+      {
+        "n": "Stalagtiten",
+        "c": "Mineralausfällung"
+      },
+      {
+        "n": "Travertinterrassen (Pamukkale)",
+        "c": "Mineralausfällung / Thermalquellen"
+      },
+      {
+        "n": "Salzwüste Salar de Uyuni",
+        "c": "Verdunstung"
+      },
+      {
+        "n": "Badlands (South Dakota)",
+        "c": "Weich-Gesteins-Erosion"
+      },
+      {
+        "n": "Pinnacles Desert (Australien)",
+        "c": "Kalkstein-Auflösung"
+      },
+      {
+        "n": "Mud Volcanoes (Aserbaidschan)",
+        "c": "Gasaustritt & Sedimentauftrieb"
+      },
+      {
+        "n": "Chocolate Hills (Philippinen)",
+        "c": "Karstauflösung"
+      },
+      {
+        "n": "Rainbow Mountains (Zhangye, China)",
+        "c": "Oxidation & Ablagerung"
+      },
+      {
+        "n": "Antelope Canyon",
+        "c": "Fluss-Erosion"
+      },
+      {
+        "n": "Wave (Coyote Buttes, USA)",
+        "c": "Wind & Wassereroison"
+      },
+      {
+        "n": "Permafrost-Polygone (Sibirien)",
+        "c": "Frost & Eiskeilwachstum"
+      },
+      {
+        "n": "Vulkanische Lavahöhle (Hawaii)",
+        "c": "Lavatunnel-Bildung"
+      },
+      {
+        "n": "Korallenriff Great Barrier Reef",
+        "c": "Biogene Bildung"
       }
     ]
   },
@@ -300,6 +832,162 @@
       {
         "n": "Türkei-Syrien-Erdbeben",
         "c": "2023"
+      },
+      {
+        "n": "Shaanxi-Erdbeben (China)",
+        "c": "1556"
+      },
+      {
+        "n": "Aleppo-Erdbeben (Syrien)",
+        "c": "1138"
+      },
+      {
+        "n": "Antiochien-Erdbeben (Türkei)",
+        "c": "526"
+      },
+      {
+        "n": "Damghan-Erdbeben (Iran)",
+        "c": "856"
+      },
+      {
+        "n": "Ardabil-Erdbeben (Iran)",
+        "c": "893"
+      },
+      {
+        "n": "Kanto-Erdbeben (Japan)",
+        "c": "1923"
+      },
+      {
+        "n": "Messina-Erdbeben (Italien)",
+        "c": "1908"
+      },
+      {
+        "n": "Erdbeben in San Francisco (USA)",
+        "c": "1906"
+      },
+      {
+        "n": "Tangshan-Erdbeben (China)",
+        "c": "1976"
+      },
+      {
+        "n": "Spitak-Erdbeben (Armenien)",
+        "c": "1988"
+      },
+      {
+        "n": "Iran-Erdbeben Bam (Iran)",
+        "c": "2003"
+      },
+      {
+        "n": "Sumatra-Andaman (Indien. Ozean)",
+        "c": "2004"
+      },
+      {
+        "n": "Kashmir-Erdbeben (Pakistan/Indien)",
+        "c": "2005"
+      },
+      {
+        "n": "Sichuan-Erdbeben (China)",
+        "c": "2008"
+      },
+      {
+        "n": "Haiti-Erdbeben (Haiti)",
+        "c": "2010"
+      },
+      {
+        "n": "Maule-Erdbeben (Chile)",
+        "c": "2010"
+      },
+      {
+        "n": "Christchurch-Erdbeben (Neuseeland)",
+        "c": "2011"
+      },
+      {
+        "n": "Tōhoku-Erdbeben (Japan)",
+        "c": "2011"
+      },
+      {
+        "n": "Nepal-Erdbeben Gorkha (Nepal)",
+        "c": "2015"
+      },
+      {
+        "n": "Ecuador-Erdbeben Pedernales (Ecuador)",
+        "c": "2016"
+      },
+      {
+        "n": "Puebla-Erdbeben (Mexiko)",
+        "c": "2017"
+      },
+      {
+        "n": "Sulawesi-Erdbeben Palu (Indonesien)",
+        "c": "2018"
+      },
+      {
+        "n": "Albanien-Erdbeben (Albanien)",
+        "c": "2019"
+      },
+      {
+        "n": "Türkei-Erdbeben Elazığ (Türkei)",
+        "c": "2020"
+      },
+      {
+        "n": "Kahramanmaraş (Türkei/Syrien)",
+        "c": "2023"
+      },
+      {
+        "n": "Anchorage-Erdbeben (Alaska, USA)",
+        "c": "1964"
+      },
+      {
+        "n": "Kamtschatka-Erdbeben (Russland)",
+        "c": "1952"
+      },
+      {
+        "n": "Assam-Erdbeben (Indien)",
+        "c": "1950"
+      },
+      {
+        "n": "Gansu-Erdbeben (China)",
+        "c": "1920"
+      },
+      {
+        "n": "Peru-Erdbeben Ancash (Peru)",
+        "c": "1970"
+      },
+      {
+        "n": "Guatemala-Erdbeben (Guatemala)",
+        "c": "1976"
+      },
+      {
+        "n": "Manjil-Rudbar (Iran)",
+        "c": "1990"
+      },
+      {
+        "n": "Izmit-Erdbeben (Türkei)",
+        "c": "1999"
+      },
+      {
+        "n": "Chi-Chi-Erdbeben (Taiwan)",
+        "c": "1999"
+      },
+      {
+        "n": "Bhuj-Erdbeben (Indien)",
+        "c": "2001"
+      },
+      {
+        "n": "Bohol-Erdbeben (Philippinen)",
+        "c": "2013"
+      },
+      {
+        "n": "Iquique-Erdbeben (Chile)",
+        "c": "2014"
+      },
+      {
+        "n": "Sabah-Erdbeben (Malaysia)",
+        "c": "2015"
+      },
+      {
+        "n": "Kumamoto-Erdbeben (Japan)",
+        "c": "2016"
       }
     ]
   },
@@ -337,6 +1025,154 @@
       {
         "n": "Kreide",
         "c": "Tafelkreide & Malerfarben"
+      },
+      {
+        "n": "Sandstein",
+        "c": "Bau & Fassaden"
+      },
+      {
+        "n": "Quarz",
+        "c": "Elektronik / Glas"
+      },
+      {
+        "n": "Feldspat",
+        "c": "Keramik & Glasur"
+      },
+      {
+        "n": "Glimmer (Muskovit)",
+        "c": "Elektroisolierung"
+      },
+      {
+        "n": "Tuff",
+        "c": "Leichtbau"
+      },
+      {
+        "n": "Travertin",
+        "c": "Gebäude & Fliesen"
+      },
+      {
+        "n": "Feuerstein (Flint)",
+        "c": "Werkzeuge / Feuer"
+      },
+      {
+        "n": "Anhydrit",
+        "c": "Gips-Rohmaterial"
+      },
+      {
+        "n": "Gips",
+        "c": "Bau & Medizin"
+      },
+      {
+        "n": "Asbest",
+        "c": "Feuerhemmung (veraltet)"
+      },
+      {
+        "n": "Kaolin",
+        "c": "Porzellan & Papier"
+      },
+      {
+        "n": "Bentonit",
+        "c": "Bohrlochverfüllung"
+      },
+      {
+        "n": "Dolomit",
+        "c": "Stahl & Baustoff"
+      },
+      {
+        "n": "Andesit",
+        "c": "Pflasterung / Bau"
+      },
+      {
+        "n": "Porphyr",
+        "c": "Dekorstein"
+      },
+      {
+        "n": "Onyx",
+        "c": "Schmuck"
+      },
+      {
+        "n": "Lapislazuli",
+        "c": "Farbe & Schmuck"
+      },
+      {
+        "n": "Malachit",
+        "c": "Kupfererz & Schmuck"
+      },
+      {
+        "n": "Magnetit",
+        "c": "Eisenherstellung"
+      },
+      {
+        "n": "Chromit",
+        "c": "Edelstahlherstellung"
+      },
+      {
+        "n": "Bauxit",
+        "c": "Aluminiumherstellung"
+      },
+      {
+        "n": "Kassiterit (Zinnstein)",
+        "c": "Zinnherstellung"
+      },
+      {
+        "n": "Wolframit",
+        "c": "Wolframherstellung"
+      },
+      {
+        "n": "Molybdänit",
+        "c": "Stahlhärtung"
+      },
+      {
+        "n": "Borax",
+        "c": "Glas & Reinigung"
+      },
+      {
+        "n": "Sylvin (Kalisalz)",
+        "c": "Düngemittel"
+      },
+      {
+        "n": "Halit (Steinsalz)",
+        "c": "Lebensmittel / Industrie"
+      },
+      {
+        "n": "Schwefel",
+        "c": "Schwefelsäure-Produktion"
+      },
+      {
+        "n": "Phosphorit",
+        "c": "Phosphatdünger"
+      },
+      {
+        "n": "Fluorit",
+        "c": "Optik & Säure"
+      },
+      {
+        "n": "Korund (Rubin/Saphir)",
+        "c": "Schmuck & Schleifmittel"
+      },
+      {
+        "n": "Diamant",
+        "c": "Schmuck & Schneidwerkzeug"
+      },
+      {
+        "n": "Zirkon",
+        "c": "Kerntechnik & Keramik"
+      },
+      {
+        "n": "Titaneisenerz (Ilmenit)",
+        "c": "Farbe & Leichtbau"
+      },
+      {
+        "n": "Jadeit",
+        "c": "Schmuck & Kunst (Asien)"
+      },
+      {
+        "n": "Nephrit",
+        "c": "Schmuck & Kunst"
+      },
+      {
+        "n": "Türkis",
+        "c": "Schmuck"
       }
     ]
   },
@@ -411,6 +1247,162 @@
       {
         "n": "Türkis",
         "c": "Türkis / Blaugrün"
+      },
+      {
+        "n": "Azurit",
+        "c": "Blau"
+      },
+      {
+        "n": "Chrysokoll",
+        "c": "Blaugrün"
+      },
+      {
+        "n": "Aquamarin",
+        "c": "Hellblau"
+      },
+      {
+        "n": "Sodalith",
+        "c": "Dunkelblau"
+      },
+      {
+        "n": "Sapphir (Korund)",
+        "c": "Blau"
+      },
+      {
+        "n": "Fluorit",
+        "c": "Violett / Lila"
+      },
+      {
+        "n": "Sugilit",
+        "c": "Violett"
+      },
+      {
+        "n": "Chaoiit",
+        "c": "Weiß"
+      },
+      {
+        "n": "Calcit",
+        "c": "Weiß / Farblos"
+      },
+      {
+        "n": "Gips (Alabaster)",
+        "c": "Weiß"
+      },
+      {
+        "n": "Dolomit",
+        "c": "Weiß / Grau"
+      },
+      {
+        "n": "Feldspat",
+        "c": "Weiß / Rosa"
+      },
+      {
+        "n": "Halit",
+        "c": "Farblos / Weiß"
+      },
+      {
+        "n": "Quarz (Bergkristall)",
+        "c": "Farblos"
+      },
+      {
+        "n": "Topas",
+        "c": "Farblos / Blau / Gelb"
+      },
+      {
+        "n": "Diamant",
+        "c": "Farblos"
+      },
+      {
+        "n": "Rubin (Korund)",
+        "c": "Rot"
+      },
+      {
+        "n": "Spessartin",
+        "c": "Orange-Rot"
+      },
+      {
+        "n": "Cinnabarit",
+        "c": "Scharlachrot"
+      },
+      {
+        "n": "Rosenquarz",
+        "c": "Rosa"
+      },
+      {
+        "n": "Rhodochrosit",
+        "c": "Rosa"
+      },
+      {
+        "n": "Smaragd (Beryll)",
+        "c": "Grün"
+      },
+      {
+        "n": "Aventurin",
+        "c": "Grün"
+      },
+      {
+        "n": "Prehnit",
+        "c": "Hellgrün"
+      },
+      {
+        "n": "Olivin (Peridot)",
+        "c": "Olivgrün"
+      },
+      {
+        "n": "Serpentin",
+        "c": "Grün"
+      },
+      {
+        "n": "Chromit",
+        "c": "Schwarz"
+      },
+      {
+        "n": "Turmalin (Schörl)",
+        "c": "Schwarz"
+      },
+      {
+        "n": "Obsidian",
+        "c": "Schwarz"
+      },
+      {
+        "n": "Pyrit",
+        "c": "Gold / Messing"
+      },
+      {
+        "n": "Chalcopyrit",
+        "c": "Gold / Bunt"
+      },
+      {
+        "n": "Gold",
+        "c": "Gold / Gelb"
+      },
+      {
+        "n": "Bernstein",
+        "c": "Gelb / Orange"
+      },
+      {
+        "n": "Topas (imperial)",
+        "c": "Orange-Gelb"
+      },
+      {
+        "n": "Schwefelelement",
+        "c": "Schwefelgelb"
+      },
+      {
+        "n": "Citrin",
+        "c": "Gelb"
+      },
+      {
+        "n": "Larimar",
+        "c": "Hellblau"
+      },
+      {
+        "n": "Tsavorit",
+        "c": "Dunkelgrün"
+      },
+      {
+        "n": "Alexandrit",
+        "c": "Grün / Rot (Farbwechsel)"
       }
     ]
   },

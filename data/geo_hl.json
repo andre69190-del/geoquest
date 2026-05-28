@@ -232,6 +232,142 @@
       {
         "name": "Eisriesenwelt (Österreich)",
         "val": 42
+      },
+      {
+        "name": "Optymistychna Cave (Ukraine)",
+        "val": 257
+      },
+      {
+        "name": "Fisher Ridge Cave System (Kentucky, USA)",
+        "val": 222
+      },
+      {
+        "name": "Lechuguilla Cave (New Mexico, USA)",
+        "val": 241
+      },
+      {
+        "name": "Siebenhengste-Hohgant Cave (Schweiz)",
+        "val": 157
+      },
+      {
+        "name": "Clearwater Cave System (Malaysia)",
+        "val": 224
+      },
+      {
+        "name": "Friars Hole Cave System (West Virginia, USA)",
+        "val": 78
+      },
+      {
+        "name": "Kazumura Cave (Hawaii, USA)",
+        "val": 65
+      },
+      {
+        "name": "Son Doong Cave (Vietnam)",
+        "val": 9
+      },
+      {
+        "name": "Cueva de Villa Luz (Mexiko)",
+        "val": 3
+      },
+      {
+        "name": "Škocjan-Höhlen (Slowenien)",
+        "val": 6
+      },
+      {
+        "name": "Veryovkina Cave (Abchasien)",
+        "val": 12
+      },
+      {
+        "name": "Krubera Cave (Georgien)",
+        "val": 13
+      },
+      {
+        "name": "Blue Spring Cave (Tennessee, USA)",
+        "val": 63
+      },
+      {
+        "name": "Lechuguilla — seitl. Äste (USA)",
+        "val": 241
+      },
+      {
+        "name": "Tham Khoun Xe (Laos)",
+        "val": 7
+      },
+      {
+        "name": "Gouffre Mirolda (Frankreich)",
+        "val": 14
+      },
+      {
+        "name": "Snezhnaya Cave (Abchasien)",
+        "val": 19
+      },
+      {
+        "name": "Cueva del Agua (Mexiko)",
+        "val": 27
+      },
+      {
+        "name": "Mulu — Clearwater (Malaysia)",
+        "val": 109
+      },
+      {
+        "name": "Sarawak Chamber (Malaysia)",
+        "val": 0.7
+      },
+      {
+        "name": "Waitomo (Neuseeland)",
+        "val": 3
+      },
+      {
+        "name": "Reed Flute Cave (China)",
+        "val": 0.24
+      },
+      {
+        "name": "Sistema Huautla (Mexiko)",
+        "val": 77
+      },
+      {
+        "name": "Cueva de los Cristales (Mexiko)",
+        "val": 1
+      },
+      {
+        "name": "Movile Cave (Rumänien)",
+        "val": 3
+      },
+      {
+        "name": "Grotte de Lascaux (Frankreich)",
+        "val": 0.2
+      },
+      {
+        "name": "Postojna Cave (Slowenien)",
+        "val": 27
+      },
+      {
+        "name": "Mururoa Atoll Tunnel (Polynesien)",
+        "val": 2
+      },
+      {
+        "name": "Cave of Altamira (Spanien)",
+        "val": 0.27
+      },
+      {
+        "name": "Deer Cave (Malaysia)",
+        "val": 2
+      },
+      {
+        "name": "Cueva de las Espadas (Mexiko)",
+        "val": 0.5
+      },
+      {
+        "name": "Cango Caves (Südafrika)",
+        "val": 4
+      },
+      {
+        "name": "Jenolan Caves (Australien)",
+        "val": 40
+      },
+      {
+        "name": "Naracoorte Caves (Australien)",
+        "val": 3
       }
     ]
   },
@@ -270,6 +406,158 @@
       {
         "name": "Jurakalk (Süddeutschland)",
         "val": 150
+      },
+      {
+        "name": "Isua Grünsteingürtel (Grönland)",
+        "val": 3800
+      },
+      {
+        "name": "Nuvvuagittuq Grünstein (Kanada)",
+        "val": 3770
+      },
+      {
+        "name": "Napier Complex (Antarktis)",
+        "val": 3850
+      },
+      {
+        "name": "Kaapvaal Kraton (Südafrika)",
+        "val": 3500
+      },
+      {
+        "name": "Superior Province (Kanada)",
+        "val": 2700
+      },
+      {
+        "name": "Pilbara Kraton (Australien)",
+        "val": 3500
+      },
+      {
+        "name": "Huronian Supergroup (Kanada)",
+        "val": 2400
+      },
+      {
+        "name": "Granit Rapakivi (Finnland)",
+        "val": 1650
+      },
+      {
+        "name": "Lewisian Complex (Schottland)",
+        "val": 2900
+      },
+      {
+        "name": "Penokean Orogen (USA)",
+        "val": 1850
+      },
+      {
+        "name": "Rheinisches Schiefergebirge Schiefer (Deutschland)",
+        "val": 380
+      },
+      {
+        "name": "Marmor von Carrara (Italien)",
+        "val": 200
+      },
+      {
+        "name": "Schwarzwald Granit (Deutschland)",
+        "val": 330
+      },
+      {
+        "name": "Muschelkalk (Mitteleuropa)",
+        "val": 240
+      },
+      {
+        "name": "Oolith-Kalk Jura (Deutschland)",
+        "val": 155
+      },
+      {
+        "name": "Buntsandstein (Europa)",
+        "val": 245
+      },
+      {
+        "name": "Kreide (Dover, England)",
+        "val": 85
+      },
+      {
+        "name": "Lias Ölschiefer (Deutschland)",
+        "val": 195
+      },
+      {
+        "name": "Deccan Traps (Indien)",
+        "val": 66
+      },
+      {
+        "name": "Columbia River Basalt (USA)",
+        "val": 17
+      },
+      {
+        "name": "Hawaiian Islands Basalt (USA)",
+        "val": 5
+      },
+      {
+        "name": "Eifel-Vulkanismus (Deutschland)",
+        "val": 0.01
+      },
+      {
+        "name": "Mount St. Helens Tephra (USA)",
+        "val": 4e-05
+      },
+      {
+        "name": "Krakatau-Bims (Indonesien)",
+        "val": 0.00014
+      },
+      {
+        "name": "Toba-Tuff (Sumatra)",
+        "val": 0.074
+      },
+      {
+        "name": "Yellowstone Rhyolith (USA)",
+        "val": 2.1
+      },
+      {
+        "name": "Bishop Tuff (Kalifornien, USA)",
+        "val": 0.76
+      },
+      {
+        "name": "Ontong Java Plateau (Pazifik)",
+        "val": 122
+      },
+      {
+        "name": "Kambrium-Sandstein (Schweden)",
+        "val": 520
+      },
+      {
+        "name": "Ordovizium-Kalk (Estland)",
+        "val": 450
+      },
+      {
+        "name": "Silur-Riff-Kalk (Gotland)",
+        "val": 430
+      },
+      {
+        "name": "Devon-Riff (Australien)",
+        "val": 380
+      },
+      {
+        "name": "Karbon-Kohle (Wales, Großbritannien)",
+        "val": 310
+      },
+      {
+        "name": "Perm-Rotliegend (Deutschland)",
+        "val": 270
+      },
+      {
+        "name": "Trias-Dolomit (Alpen)",
+        "val": 220
+      },
+      {
+        "name": "Jura-Granit (Frankreich)",
+        "val": 160
+      },
+      {
+        "name": "Tertiärer Sandstein (Paris Becken)",
+        "val": 45
+      },
+      {
+        "name": "Quartärer Löss (Deutschland)",
+        "val": 0.02
       }
     ]
   },
@@ -308,6 +596,118 @@
       {
         "name": "Rheindurchbruch (Deutschland)",
         "val": 130
+      },
+      {
+        "name": "Yarlung Tsangpo Grand Canyon (Tibet)",
+        "val": 6009
+      },
+      {
+        "name": "Grand Canyon (Arizona, USA)",
+        "val": 1800
+      },
+      {
+        "name": "Tara River Canyon (Montenegro)",
+        "val": 1300
+      },
+      {
+        "name": "Tiger Leaping Gorge (China)",
+        "val": 3790
+      },
+      {
+        "name": "Indus Gorge (Pakistan)",
+        "val": 5200
+      },
+      {
+        "name": "Barranca del Cobre (Mexiko)",
+        "val": 1800
+      },
+      {
+        "name": "Hell's Canyon (Idaho, USA)",
+        "val": 2436
+      },
+      {
+        "name": "Kings Canyon (Californien, USA)",
+        "val": 1500
+      },
+      {
+        "name": "Royal Gorge (Colorado, USA)",
+        "val": 300
+      },
+      {
+        "name": "Black Canyon (Colorado, USA)",
+        "val": 825
+      },
+      {
+        "name": "Samaria Gorge (Kreta)",
+        "val": 300
+      },
+      {
+        "name": "Geirangerfjord Schlucht (Norwegen)",
+        "val": 800
+      },
+      {
+        "name": "Zion Canyon (Utah, USA)",
+        "val": 790
+      },
+      {
+        "name": "Waimea Canyon (Kauai, USA)",
+        "val": 900
+      },
+      {
+        "name": "Lower Antelope Canyon (Arizona, USA)",
+        "val": 37
+      },
+      {
+        "name": "Stubaital Schlucht (Österreich)",
+        "val": 200
+      },
+      {
+        "name": "Vintgar Gorge (Slowenien)",
+        "val": 100
+      },
+      {
+        "name": "Aareschlucht (Schweiz)",
+        "val": 50
+      },
+      {
+        "name": "Partnachklamm (Bayern, Deutschland)",
+        "val": 80
+      },
+      {
+        "name": "Breitachklamm (Bayern, Deutschland)",
+        "val": 100
+      },
+      {
+        "name": "Wadi Mujib (Jordanien)",
+        "val": 900
+      },
+      {
+        "name": "Wadi Rum (Jordanien)",
+        "val": 500
+      },
+      {
+        "name": "Iron Gates — Donau (Serbien)",
+        "val": 300
+      },
+      {
+        "name": "Sumidero Canyon (Mexiko)",
+        "val": 1000
+      },
+      {
+        "name": "Canyonlands Maze (Utah, USA)",
+        "val": 600
+      },
+      {
+        "name": "Copper Canyon (Mexiko)",
+        "val": 1879
+      },
+      {
+        "name": "Siq Schlucht (Petra, Jordanien)",
+        "val": 80
+      },
+      {
+        "name": "Provence Calanques (Frankreich)",
+        "val": 400
       }
     ]
   },
@@ -422,6 +822,158 @@
       {
         "name": "Aletschgletscher",
         "val": 15
+      },
+      {
+        "name": "Grönländischer Eisschild",
+        "val": 2850000
+      },
+      {
+        "name": "Vatnajökull (Island)",
+        "val": 3100
+      },
+      {
+        "name": "Svalbard-Gletscher",
+        "val": 6700
+      },
+      {
+        "name": "Franz-Josef-Land Eiskappe (Russland)",
+        "val": 2410
+      },
+      {
+        "name": "Novaya Zemlya Eiskappe (Russland)",
+        "val": 2900
+      },
+      {
+        "name": "Severnaya Zemlya (Russland)",
+        "val": 3890
+      },
+      {
+        "name": "Devon Island Ice Cap (Kanada)",
+        "val": 3980
+      },
+      {
+        "name": "Ellesmere Island Gletscher (Kanada)",
+        "val": 83500
+      },
+      {
+        "name": "Baffin Island Gletscher (Kanada)",
+        "val": 40000
+      },
+      {
+        "name": "Penny Ice Cap (Kanada)",
+        "val": 6000
+      },
+      {
+        "name": "Barnes Ice Cap (Kanada)",
+        "val": 7350
+      },
+      {
+        "name": "St. Elias Mountains (Alaska/Kanada)",
+        "val": 84000
+      },
+      {
+        "name": "Columbia Icefield (Kanada)",
+        "val": 213
+      },
+      {
+        "name": "Aletschgletscher (Schweiz)",
+        "val": 68
+      },
+      {
+        "name": "Gorner-Gletscher (Schweiz)",
+        "val": 17
+      },
+      {
+        "name": "Mer de Glace (Frankreich)",
+        "val": 12
+      },
+      {
+        "name": "Jostedalsbreen (Norwegen)",
+        "val": 277
+      },
+      {
+        "name": "Folgefonna (Norwegen)",
+        "val": 209
+      },
+      {
+        "name": "Austfonna (Svalbard)",
+        "val": 1628
+      },
+      {
+        "name": "Fedchenko-Gletscher (Tadschikistan)",
+        "val": 144
+      },
+      {
+        "name": "Inylchek-Gletscher (Kirgisistan)",
+        "val": 148
+      },
+      {
+        "name": "Siachen-Gletscher (Pakistan)",
+        "val": 218
+      },
+      {
+        "name": "Baltoro-Gletscher (Pakistan)",
+        "val": 76
+      },
+      {
+        "name": "Gangotri-Gletscher (Indien)",
+        "val": 27
+      },
+      {
+        "name": "Quelccaya Ice Cap (Peru)",
+        "val": 44
+      },
+      {
+        "name": "Perito Moreno (Argentinien)",
+        "val": 30
+      },
+      {
+        "name": "Hielo Patagónico Sur (Chile/Argentinien)",
+        "val": 12363
+      },
+      {
+        "name": "Hielo Patagónico Norte (Chile)",
+        "val": 3953
+      },
+      {
+        "name": "Furtwängler (Kilimanjaro, Tansania)",
+        "val": 0.1
+      },
+      {
+        "name": "Lewis Gletscher (Mount Kenya)",
+        "val": 0.02
+      },
+      {
+        "name": "Khumbu-Gletscher (Nepal)",
+        "val": 5
+      },
+      {
+        "name": "Ngozumpa-Gletscher (Nepal)",
+        "val": 7
+      },
+      {
+        "name": "Rongbuk-Gletscher (Tibet)",
+        "val": 5
+      },
+      {
+        "name": "Malaspina-Gletscher (Alaska)",
+        "val": 700
+      },
+      {
+        "name": "Hubbard-Gletscher (Alaska)",
+        "val": 243
+      },
+      {
+        "name": "Pine Island Gletscher (Antarktis)",
+        "val": 180000
+      },
+      {
+        "name": "Thwaites-Gletscher (Antarktis)",
+        "val": 192000
+      },
+      {
+        "name": "Ross Schelfeis (Antarktis)",
+        "val": 228000
       }
     ]
   },
@@ -498,6 +1050,150 @@
       {
         "name": "Bergwerk Prosper-Haniel (Ruhrgebiet, DE)",
         "val": 1250
+      },
+      {
+        "name": "SG-3 Kontinentale Tiefbohrung Russland (ICDP)",
+        "val": 12262
+      },
+      {
+        "name": "Bertha Rogers No. 1 (Oklahoma, USA)",
+        "val": 9583
+      },
+      {
+        "name": "Z-42 (Schachtanlage, Russland)",
+        "val": 9100
+      },
+      {
+        "name": "Badami Bohrung (Indien)",
+        "val": 7926
+      },
+      {
+        "name": "IODP Site 1256 Ozeanische Kruste (Pazifik)",
+        "val": 1507
+      },
+      {
+        "name": "Byrd Ice Core (Antarktis)",
+        "val": 2164
+      },
+      {
+        "name": "Vostok Ice Core (Antarktis)",
+        "val": 3623
+      },
+      {
+        "name": "EPICA Dome C (Antarktis)",
+        "val": 3270
+      },
+      {
+        "name": "NEEM Greenland Core (Grönland)",
+        "val": 2537
+      },
+      {
+        "name": "East Rand Mine (Südafrika)",
+        "val": 3585
+      },
+      {
+        "name": "Mponeng Mine (Südafrika)",
+        "val": 4000
+      },
+      {
+        "name": "Savuka Mine (Südafrika)",
+        "val": 3773
+      },
+      {
+        "name": "Al Shaheen Oil Well (Katar)",
+        "val": 12289
+      },
+      {
+        "name": "Chayvo Well OP-11 (Sakhalin, Russland)",
+        "val": 12376
+      },
+      {
+        "name": "Maersk Oil BD-04A (Dänemark)",
+        "val": 12290
+      },
+      {
+        "name": "BD-04A Tiefbohrung Nordsee (Dänemark)",
+        "val": 12000
+      },
+      {
+        "name": "Attaka-Bohrung (Kalimantan, Indonesien)",
+        "val": 6700
+      },
+      {
+        "name": "Lena-Bohrung Sibirien (Russland)",
+        "val": 7000
+      },
+      {
+        "name": "Deep Water Horizon — Bohrloch (Golf von Mexiko)",
+        "val": 5608
+      },
+      {
+        "name": "Perdido Host Platform (Gulf of Mexico)",
+        "val": 2438
+      },
+      {
+        "name": "Jubilee Field Bohrung (Ghana)",
+        "val": 1525
+      },
+      {
+        "name": "Prelude FLNG — Bohrung (Australien)",
+        "val": 1500
+      },
+      {
+        "name": "Urengoy Gasfeld Bohrung (Russland)",
+        "val": 7000
+      },
+      {
+        "name": "Kashagan Ölfeld (Kasachstan)",
+        "val": 5200
+      },
+      {
+        "name": "Martin Linge — Nordsee (Norwegen)",
+        "val": 3050
+      },
+      {
+        "name": "Troll Plattform (Norwegen)",
+        "val": 303
+      },
+      {
+        "name": "Snøhvit Gasfeld (Norwegen)",
+        "val": 2600
+      },
+      {
+        "name": "Hassi R'Mel (Algerien)",
+        "val": 3900
+      },
+      {
+        "name": "Ghawar Ölfeld (Saudi-Arabien)",
+        "val": 3050
+      },
+      {
+        "name": "Rumaila (Irak)",
+        "val": 3800
+      },
+      {
+        "name": "Spindletop (Texas, USA)",
+        "val": 1139
+      },
+      {
+        "name": "Echo Mine (Ontario, Kanada)",
+        "val": 3600
+      },
+      {
+        "name": "Lucky Friday Mine (Idaho, USA)",
+        "val": 2100
+      },
+      {
+        "name": "Homestake Gold Mine (South Dakota, USA)",
+        "val": 2440
+      },
+      {
+        "name": "Creighton Mine (Ontario, Kanada)",
+        "val": 2440
+      },
+      {
+        "name": "Kidd Creek Mine (Ontario, Kanada)",
+        "val": 3105
       }
     ]
   }
