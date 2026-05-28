@@ -201,6 +201,56 @@
         "n": "Maniok (Amazonasbecken)",
         "lat": -5.0,
         "lng": -60.0
+      },
+      {
+        "n": "Tee-Ursprung (Yunnan, China)",
+        "lat": 23.5,
+        "lng": 100.5
+      },
+      {
+        "n": "Weizen-Ursprung (Levante, Naher Osten)",
+        "lat": 36.0,
+        "lng": 37.5
+      },
+      {
+        "n": "Kartoffel-Ursprung (Titicacasee-Region)",
+        "lat": -15.5,
+        "lng": -70.0
+      },
+      {
+        "n": "Mais-Ursprung (Oaxaca-Tal, Mexiko)",
+        "lat": 17.0,
+        "lng": -96.7
+      },
+      {
+        "n": "Tomaten-Ursprung (Westliche Anden)",
+        "lat": -5.0,
+        "lng": -80.0
+      },
+      {
+        "n": "Soja-Ursprung (Nordostchina)",
+        "lat": 44.0,
+        "lng": 126.0
+      },
+      {
+        "n": "Quinoa-Ursprung (Bolivianische Hochebene)",
+        "lat": -17.0,
+        "lng": -66.5
+      },
+      {
+        "n": "Süßkartoffel-Ursprung (Peru/Ecuador)",
+        "lat": -6.0,
+        "lng": -78.0
+      },
+      {
+        "n": "Baumwolle-Zentrum (Indus-Tal)",
+        "lat": 27.5,
+        "lng": 68.0
+      },
+      {
+        "n": "Vanille-Ursprung (Veracruz, Mexiko)",
+        "lat": 19.5,
+        "lng": -96.9
       }
     ]
   },
@@ -406,6 +456,56 @@
         "n": "Doornboom-Faidherbia (Afrikanisch, Kruger NP)",
         "lat": -24.0115,
         "lng": 31.5095
+      },
+      {
+        "n": "Angel Oak Tree (Johns Island, South Carolina)",
+        "lat": 32.72,
+        "lng": -80.08
+      },
+      {
+        "n": "Lone Cypress (Pebble Beach, Kalifornien)",
+        "lat": 36.57,
+        "lng": -121.97
+      },
+      {
+        "n": "Olive Tree of Vouves (Kreta, Griechenland)",
+        "lat": 35.49,
+        "lng": 23.72
+      },
+      {
+        "n": "Wawona Tunnel Tree (Yosemite, USA)",
+        "lat": 37.51,
+        "lng": -119.56
+      },
+      {
+        "n": "Árbol del Tule (Oaxaca, Mexiko)",
+        "lat": 17.05,
+        "lng": -96.64
+      },
+      {
+        "n": "Bodhi Tree (Bodh Gaya, Indien)",
+        "lat": 24.69,
+        "lng": 84.99
+      },
+      {
+        "n": "Ginkgo of Gu Guanyin (China)",
+        "lat": 34.54,
+        "lng": 108.91
+      },
+      {
+        "n": "Chandelier Tree (Leggett, Kalifornien)",
+        "lat": 39.86,
+        "lng": -123.72
+      },
+      {
+        "n": "Te Matua Ngahere (Kauri, Neuseeland)",
+        "lat": -35.46,
+        "lng": 173.52
+      },
+      {
+        "n": "Thimmamma Marrimanu (Banyan, Indien)",
+        "lat": 14.22,
+        "lng": 77.61
       }
     ]
   },
@@ -611,6 +711,56 @@
         "n": "Botanischer Garten München",
         "lat": 48.18,
         "lng": 11.5
+      },
+      {
+        "n": "New York Botanical Garden (Bronx)",
+        "lat": 40.86,
+        "lng": -73.88
+      },
+      {
+        "n": "Real Jardín Botánico de Madrid",
+        "lat": 40.41,
+        "lng": -3.69
+      },
+      {
+        "n": "Jardín Botánico de Bogotá",
+        "lat": 4.67,
+        "lng": -74.1
+      },
+      {
+        "n": "Jardin des Plantes (Paris)",
+        "lat": 48.84,
+        "lng": 2.36
+      },
+      {
+        "n": "Botanischer Garten Wien (Belvedere)",
+        "lat": 48.19,
+        "lng": 16.38
+      },
+      {
+        "n": "Royal Botanic Gardens Melbourne",
+        "lat": -37.83,
+        "lng": 144.98
+      },
+      {
+        "n": "São Paulo Botanical Garden",
+        "lat": -23.65,
+        "lng": -46.62
+      },
+      {
+        "n": "Jardim Botânico do Rio de Janeiro",
+        "lat": -22.97,
+        "lng": -43.22
+      },
+      {
+        "n": "National Botanic Garden of Belgium (Meise)",
+        "lat": 50.93,
+        "lng": 4.38
+      },
+      {
+        "n": "Peradeniya Royal Botanic Gardens (Sri Lanka)",
+        "lat": 7.27,
+        "lng": 80.6
       }
     ]
   },
@@ -816,6 +966,56 @@
         "n": "Arenal Volcano NP (Costa Rica)",
         "lat": 10.4736,
         "lng": -84.7012
+      },
+      {
+        "n": "Borneo-Regenwald (Kalimantan)",
+        "lat": 0.5,
+        "lng": 113.5
+      },
+      {
+        "n": "Atlantic Forest (Mata Atlântica, Brasilien)",
+        "lat": -20.0,
+        "lng": -41.5
+      },
+      {
+        "n": "Sri Lanka-Regenwald (Sinharaja)",
+        "lat": 6.4,
+        "lng": 80.47
+      },
+      {
+        "n": "Cross River Regenwald (Nigeria/Kamerun)",
+        "lat": 5.5,
+        "lng": 9.0
+      },
+      {
+        "n": "Western Ghats Regenwald (Indien)",
+        "lat": 11.0,
+        "lng": 76.5
+      },
+      {
+        "n": "Papua-Neuguinea Regenwald (Madang)",
+        "lat": -5.2,
+        "lng": 145.8
+      },
+      {
+        "n": "Taman Negara Regenwald (Malaysia)",
+        "lat": 4.4,
+        "lng": 102.5
+      },
+      {
+        "n": "Darien-Regenwald (Panama/Kolumbien)",
+        "lat": 7.7,
+        "lng": -77.5
+      },
+      {
+        "n": "Sumatra-Regenwald (Gunung Leuser NP)",
+        "lat": 3.84,
+        "lng": 97.53
+      },
+      {
+        "n": "Tongass-Regenwald (Alaska, USA)",
+        "lat": 57.0,
+        "lng": -133.0
       }
     ]
   },
@@ -921,6 +1121,156 @@
         "n": "Priorat (Spanien)",
         "lat": 41.3,
         "lng": 0.8
+      },
+      {
+        "n": "Mosel-Weinregion (Bernkastel-Kues, Deutschland)",
+        "lat": 49.9122,
+        "lng": 7.0745
+      },
+      {
+        "n": "Rheingau (Rüdesheim am Rhein)",
+        "lat": 49.9806,
+        "lng": 7.9244
+      },
+      {
+        "n": "Burgund (Beaune, Frankreich)",
+        "lat": 47.0267,
+        "lng": 4.8361
+      },
+      {
+        "n": "Champagne (Épernay, Frankreich)",
+        "lat": 49.048,
+        "lng": 3.9602
+      },
+      {
+        "n": "Douro Valley (Porto, Portugal)",
+        "lat": 41.1496,
+        "lng": -8.6109
+      },
+      {
+        "n": "Rioja (Logroño, Spanien)",
+        "lat": 42.4627,
+        "lng": -2.445
+      },
+      {
+        "n": "Barolo (Piemont, Langhe, Italien)",
+        "lat": 44.6189,
+        "lng": 7.9414
+      },
+      {
+        "n": "Chianti (Toskana, Florenz, Italien)",
+        "lat": 43.7696,
+        "lng": 11.2558
+      },
+      {
+        "n": "Napa Valley (Kalifornien, USA)",
+        "lat": 38.5025,
+        "lng": -122.2654
+      },
+      {
+        "n": "Barossa Valley (South Australia)",
+        "lat": -34.5333,
+        "lng": 138.95
+      },
+      {
+        "n": "Colchagua Valley (Chile)",
+        "lat": -34.6361,
+        "lng": -71.1996
+      },
+      {
+        "n": "Wachau (Österreich)",
+        "lat": 48.3667,
+        "lng": 15.4333
+      },
+      {
+        "n": "Mosel Piesporter Goldtröpfchen (Deutschland)",
+        "lat": 49.8787,
+        "lng": 6.9217
+      },
+      {
+        "n": "Priorat (Tarragona, Spanien)",
+        "lat": 41.1987,
+        "lng": 0.7367
+      },
+      {
+        "n": "Douro Valley (Peso da Régua)",
+        "lat": 41.1622,
+        "lng": -7.7914
+      },
+      {
+        "n": "Pfalz Weinstraße (Bad Dürkheim)",
+        "lat": 49.4621,
+        "lng": 8.1726
+      },
+      {
+        "n": "Schwaben Württemberg (Heilbronn)",
+        "lat": 49.1427,
+        "lng": 9.2109
+      },
+      {
+        "n": "Maipo Valley (Santiago, Chile)",
+        "lat": -33.5984,
+        "lng": -70.687
+      },
+      {
+        "n": "Mendocino (Kalifornien)",
+        "lat": 39.3077,
+        "lng": -123.8013
+      },
+      {
+        "n": "Willamette Valley (Oregon, USA)",
+        "lat": 45.4001,
+        "lng": -123.1101
+      },
+      {
+        "n": "Finger Lakes (New York)",
+        "lat": 42.6,
+        "lng": -77.0
+      },
+      {
+        "n": "Rias Baixas (Galizien, Spanien)",
+        "lat": 42.4716,
+        "lng": -8.7225
+      },
+      {
+        "n": "Alsace (Colmar, Frankreich)",
+        "lat": 48.0793,
+        "lng": 7.3585
+      },
+      {
+        "n": "Mosel-Saar-Ruwer (Trier, Deutschland)",
+        "lat": 49.7596,
+        "lng": 6.6439
+      },
+      {
+        "n": "Palatinat / Pfalz (Deutschland)",
+        "lat": 49.33,
+        "lng": 8.08
+      },
+      {
+        "n": "Franciacorta (Brescia, Lombardei)",
+        "lat": 45.5769,
+        "lng": 10.0178
+      },
+      {
+        "n": "Douro Valley (Portugal)",
+        "lat": 41.16,
+        "lng": -7.64
+      },
+      {
+        "n": "Hunter Valley (Australien)",
+        "lat": -32.75,
+        "lng": 151.18
+      },
+      {
+        "n": "Bekaa-Tal (Libanon)",
+        "lat": 33.84,
+        "lng": 36.1
+      },
+      {
+        "n": "Okanagan Valley (Kanada)",
+        "lat": 49.89,
+        "lng": -119.49
       }
     ]
   },
@@ -1121,6 +1471,61 @@
         "n": "Ingwer-Ursprung (Zingiber officinale, Kerala)",
         "lat": 10.8505,
         "lng": 76.2712
+      },
+      {
+        "n": "Aloe vera Anbaugebiet (Lanzarote, Kanarische Inseln)",
+        "lat": 29.0469,
+        "lng": -13.5899
+      },
+      {
+        "n": "Echinacea-Kultivierung (Kansas, USA)",
+        "lat": 38.5266,
+        "lng": -96.7265
+      },
+      {
+        "n": "Ginseng-Anbau (Changbai, China)",
+        "lat": 41.95,
+        "lng": 128.0833
+      },
+      {
+        "n": "Lavandula angustifolia (Grasse, Côte d'Azur)",
+        "lat": 43.6583,
+        "lng": 6.924
+      },
+      {
+        "n": "Willow Bark (Salix, Schwarzwild Oberbayern)",
+        "lat": 47.8,
+        "lng": 11.0
+      },
+      {
+        "n": "Arnika-Gebirgswiesen (Allgäu, Deutschland)",
+        "lat": 47.529,
+        "lng": 10.3105
+      },
+      {
+        "n": "Chamomile (Kamille, Niedersachsen)",
+        "lat": 52.6367,
+        "lng": 9.8451
+      },
+      {
+        "n": "Mint-Plantage (Mitcham, Surrey, UK)",
+        "lat": 51.402,
+        "lng": -0.1728
+      },
+      {
+        "n": "Turmeric-Anbau (Erode, Tamil Nadu)",
+        "lat": 11.341,
+        "lng": 77.7172
+      },
+      {
+        "n": "Ashwagandha (Madhya Pradesh, Indien)",
+        "lat": 23.4732,
+        "lng": 77.9478
+      },
+      {
+        "n": "Senna-Plantage (Tinnevelly, Tamil Nadu)",
+        "lat": 8.7139,
+        "lng": 77.7567
       }
     ]
   },
@@ -1321,6 +1726,61 @@
         "n": "Avicennia-Feld (Western Cape, Südafrika)",
         "lat": -33.9249,
         "lng": 18.4241
+      },
+      {
+        "n": "Belize Mangroves (Belize Barrier Reef)",
+        "lat": 17.5046,
+        "lng": -88.1962
+      },
+      {
+        "n": "Everglades Mangroves (Florida, USA)",
+        "lat": 25.2866,
+        "lng": -80.8987
+      },
+      {
+        "n": "Mangrove Coast (Campeche, Mexiko)",
+        "lat": 18.4547,
+        "lng": -91.8466
+      },
+      {
+        "n": "Cispatá Bay Mangroves (Córdoba, Kolumbien)",
+        "lat": 9.3667,
+        "lng": -75.8333
+      },
+      {
+        "n": "Amazon Mangroves (Pará, Brasilien)",
+        "lat": -1.4558,
+        "lng": -48.5044
+      },
+      {
+        "n": "Mangrove-Estuary (Sine-Saloum, Senegal)",
+        "lat": 13.6333,
+        "lng": -16.6
+      },
+      {
+        "n": "Rufiji Delta Mangroves (Tansania)",
+        "lat": -8.0,
+        "lng": 39.3333
+      },
+      {
+        "n": "Mangroves Quelimane (Mozambique)",
+        "lat": -17.8781,
+        "lng": 36.8858
+      },
+      {
+        "n": "Pichavaram Mangroves (Tamil Nadu, Indien)",
+        "lat": 11.4235,
+        "lng": 79.7837
+      },
+      {
+        "n": "Bhitarkanika Mangrove (Odisha, Indien)",
+        "lat": 20.75,
+        "lng": 86.8333
+      },
+      {
+        "n": "Mangrove Bay (Oman)",
+        "lat": 22.5667,
+        "lng": 59.5833
       }
     ]
   },
@@ -1426,6 +1886,156 @@
         "n": "Uganda Bugisu-Kakao",
         "lat": 1.1,
         "lng": 34.2
+      },
+      {
+        "n": "Amazon-Einzugsgebiet (Belém, Brasilien)",
+        "lat": -1.4558,
+        "lng": -48.5044
+      },
+      {
+        "n": "Bahia Kakaopflanzungen (Ilhéus, Brasilien)",
+        "lat": -14.7912,
+        "lng": -39.0422
+      },
+      {
+        "n": "Lacandón-Regenwald (Chiapas, Mexiko)",
+        "lat": 16.7386,
+        "lng": -90.9993
+      },
+      {
+        "n": "Kakao-Ursprung Maya (Caracol, Belize)",
+        "lat": 16.7614,
+        "lng": -89.1014
+      },
+      {
+        "n": "Kakao-Ursprungsregion (Sulawesi, Indonesien)",
+        "lat": -2.0,
+        "lng": 120.0
+      },
+      {
+        "n": "Kakao-Plantagen Sabah (Malaysia)",
+        "lat": 5.9788,
+        "lng": 116.0753
+      },
+      {
+        "n": "Ashanti-Region (Kumasi, Ghana)",
+        "lat": 6.6885,
+        "lng": -1.6244
+      },
+      {
+        "n": "Côte d'Ivoire (Abidjan, Hauptexporteur)",
+        "lat": 5.36,
+        "lng": -4.0083
+      },
+      {
+        "n": "Theobroma cacao L. Heimat (Ecuador)",
+        "lat": -1.8312,
+        "lng": -78.1834
+      },
+      {
+        "n": "San Marcos Cacao (Guatemala)",
+        "lat": 14.9664,
+        "lng": -91.7964
+      },
+      {
+        "n": "Kakao-Anbau Trinidad (Tobago)",
+        "lat": 10.4914,
+        "lng": -61.2023
+      },
+      {
+        "n": "Chuao Village (Venezuela, Finest Cacao)",
+        "lat": 10.42,
+        "lng": -67.55
+      },
+      {
+        "n": "Amazonas Kakao (Loreto, Peru)",
+        "lat": -5.0,
+        "lng": -75.0
+      },
+      {
+        "n": "Mayan Cacao Sites (Palenque, Mexiko)",
+        "lat": 17.4838,
+        "lng": -92.043
+      },
+      {
+        "n": "Java Kakao (West Java, Indonesien)",
+        "lat": -6.9,
+        "lng": 107.65
+      },
+      {
+        "n": "Sao Tomé (Westafrika)",
+        "lat": 0.1864,
+        "lng": 6.6131
+      },
+      {
+        "n": "Kamerun Kakao (Yaoundé-Region)",
+        "lat": 3.848,
+        "lng": 11.5021
+      },
+      {
+        "n": "Nigeria Kakao (Ondo State)",
+        "lat": 7.25,
+        "lng": 5.2
+      },
+      {
+        "n": "Papua-Neuguinea Kakao (Madang)",
+        "lat": -5.2285,
+        "lng": 145.7886
+      },
+      {
+        "n": "Grenada Kakao (True Chocolate Island)",
+        "lat": 12.1165,
+        "lng": -61.679
+      },
+      {
+        "n": "Kolumbien Kakao (Santander)",
+        "lat": 6.6437,
+        "lng": -73.6536
+      },
+      {
+        "n": "Dominikanische Republik Cacao (San Francisco)",
+        "lat": 19.3009,
+        "lng": -70.257
+      },
+      {
+        "n": "Äquatorial-Guinea Kakao",
+        "lat": 1.6508,
+        "lng": 10.2679
+      },
+      {
+        "n": "Haití Kakao (Cap-Haïtien)",
+        "lat": 19.7576,
+        "lng": -72.2046
+      },
+      {
+        "n": "Honduras Cacao (La Ceiba)",
+        "lat": 15.7835,
+        "lng": -86.7831
+      },
+      {
+        "n": "Nicaragua Kakao (Jinotepe)",
+        "lat": 11.8332,
+        "lng": -86.1975
+      },
+      {
+        "n": "Ursprung Criollo-Kakao (Maracaibo, Venezuela)",
+        "lat": 10.6323,
+        "lng": -71.6395
+      },
+      {
+        "n": "Olmeken-Kakaogebiet (Tabasco, Mexiko)",
+        "lat": 18.0,
+        "lng": -93.0
+      },
+      {
+        "n": "Tasting Note: Lavanda & Nüsse (Arriba, Ecuador)",
+        "lat": -2.1962,
+        "lng": -79.8862
+      },
+      {
+        "n": "Benin Kakao (Cotonou)",
+        "lat": 6.3654,
+        "lng": 2.4183
       }
     ]
   },
@@ -1531,6 +2141,156 @@
         "n": "Senegal-Delta Reisfelder",
         "lat": 16.0,
         "lng": -16.0
+      },
+      {
+        "n": "Punjab Reisfelder (Amritsar, Indien)",
+        "lat": 31.634,
+        "lng": 74.8723
+      },
+      {
+        "n": "Gangesdelta Reis (Kolkata, Indien)",
+        "lat": 22.5726,
+        "lng": 88.3639
+      },
+      {
+        "n": "Iloilo Reisfelder (Panay, Philippinen)",
+        "lat": 10.7202,
+        "lng": 122.5621
+      },
+      {
+        "n": "Yangtze-Tal Reisfelder (Wuhan, China)",
+        "lat": 30.5928,
+        "lng": 114.3055
+      },
+      {
+        "n": "Perlis Reisfelder (Malaysia)",
+        "lat": 6.4449,
+        "lng": 100.2048
+      },
+      {
+        "n": "Java Reisfelder (Yogyakarta)",
+        "lat": -7.7956,
+        "lng": 110.3695
+      },
+      {
+        "n": "Ubud Reisterrassen (Bali, Indonesien)",
+        "lat": -8.5069,
+        "lng": 115.2625
+      },
+      {
+        "n": "Tonle-Sap Reisebene (Kambodscha)",
+        "lat": 12.9035,
+        "lng": 103.8689
+      },
+      {
+        "n": "Irrawaddy-Delta (Myanmar)",
+        "lat": 16.7833,
+        "lng": 95.25
+      },
+      {
+        "n": "Mekong-Tiefland (Laos, Vientiane)",
+        "lat": 17.9757,
+        "lng": 102.6331
+      },
+      {
+        "n": "Kalimantan Reisfelder (Borneo)",
+        "lat": -0.0263,
+        "lng": 109.3425
+      },
+      {
+        "n": "Vietnam Zentralregion (Da Nang)",
+        "lat": 16.0544,
+        "lng": 108.2022
+      },
+      {
+        "n": "Sacramento Valley Rice (Kalifornien, USA)",
+        "lat": 39.7285,
+        "lng": -121.8375
+      },
+      {
+        "n": "Po-Ebene Reis (Pavia, Piemont, Italien)",
+        "lat": 45.1847,
+        "lng": 9.1582
+      },
+      {
+        "n": "Camargue Reisanbau (Frankreich)",
+        "lat": 43.5297,
+        "lng": 4.6274
+      },
+      {
+        "n": "Ebro-Delta Reisanbau (Valencia, Spanien)",
+        "lat": 40.7228,
+        "lng": 0.8794
+      },
+      {
+        "n": "Donauebene Reisanbau (Rumänien)",
+        "lat": 44.4268,
+        "lng": 26.1025
+      },
+      {
+        "n": "Krasnodar Reisfelder (Russland)",
+        "lat": 45.0448,
+        "lng": 38.9762
+      },
+      {
+        "n": "Paddy-Felder Karnataka (Mangaluru)",
+        "lat": 12.9141,
+        "lng": 74.856
+      },
+      {
+        "n": "Brahmaputra-Tal (Assam, Indien)",
+        "lat": 26.2006,
+        "lng": 92.9376
+      },
+      {
+        "n": "Hunan Reisfelder (Changsha, China)",
+        "lat": 28.2279,
+        "lng": 112.9388
+      },
+      {
+        "n": "Kagawa Reis (Shikoku, Japan)",
+        "lat": 34.3401,
+        "lng": 134.0434
+      },
+      {
+        "n": "Akita Koshihikari (Nordjapan)",
+        "lat": 39.7192,
+        "lng": 140.1023
+      },
+      {
+        "n": "Bali Subak-System (UNESCO)",
+        "lat": -8.5069,
+        "lng": 115.2625
+      },
+      {
+        "n": "Yuanyang Reisterrassen (Yunnan, China)",
+        "lat": 22.79,
+        "lng": 102.78
+      },
+      {
+        "n": "Longji-Reisterrassen (Guilin, China)",
+        "lat": 25.25,
+        "lng": 110.15
+      },
+      {
+        "n": "Hani-Reisterrassen (Yunnan, China)",
+        "lat": 23.1,
+        "lng": 102.8
+      },
+      {
+        "n": "Sierra Madre Reis (Luzon, Philippinen)",
+        "lat": 17.5,
+        "lng": 121.7
+      },
+      {
+        "n": "Bangladesh Haor-Feuchtgebiete (Sylhet)",
+        "lat": 24.8898,
+        "lng": 91.8725
+      },
+      {
+        "n": "Sumatra Reisfelder (Padang Lawas)",
+        "lat": 1.5,
+        "lng": 99.5
       }
     ]
   },
@@ -1636,6 +2396,156 @@
         "n": "Guangdong Bambusgürtel (China)",
         "lat": 23.3,
         "lng": 113.0
+      },
+      {
+        "n": "Sichuan Giant Panda Bambushain (China)",
+        "lat": 30.813,
+        "lng": 103.456
+      },
+      {
+        "n": "Sagano Bambushain (Kyoto, Japan, bereits vorhanden)",
+        "lat": 35.02,
+        "lng": 135.67
+      },
+      {
+        "n": "Bamboos of Southeast Asia (Ho-Chi-Minh-Stadt)",
+        "lat": 10.8231,
+        "lng": 106.6297
+      },
+      {
+        "n": "Guadua Bamboo Forest (Valle del Cauca, Kolumbien)",
+        "lat": 3.919,
+        "lng": -76.2979
+      },
+      {
+        "n": "Bamboo Crafts Center (Anji, China — Welthauptstadt)",
+        "lat": 30.6369,
+        "lng": 119.6773
+      },
+      {
+        "n": "Bamboo Institute (Bangalore, Indien)",
+        "lat": 12.9716,
+        "lng": 77.5946
+      },
+      {
+        "n": "Bamboo Groves Zhangjiajie (Hunan, China)",
+        "lat": 29.126,
+        "lng": 110.479
+      },
+      {
+        "n": "Bamboo Textile Region (Sichuan, China)",
+        "lat": 29.6472,
+        "lng": 103.806
+      },
+      {
+        "n": "Bamboo Architecture (Bali, IBUKU Pavillon)",
+        "lat": -8.5069,
+        "lng": 115.2625
+      },
+      {
+        "n": "Bamboo Research Center (Shenzhen, China)",
+        "lat": 22.5329,
+        "lng": 114.0547
+      },
+      {
+        "n": "Bamboo Groves Kerala (India)",
+        "lat": 10.8505,
+        "lng": 76.2711
+      },
+      {
+        "n": "Bamboo Plantation Guangdong (China)",
+        "lat": 23.379,
+        "lng": 113.7633
+      },
+      {
+        "n": "Bamboo & Rattan INBAR Peking",
+        "lat": 39.9042,
+        "lng": 116.4074
+      },
+      {
+        "n": "Bamboo Forest Fushimi Inari (Kyoto)",
+        "lat": 34.9671,
+        "lng": 135.7727
+      },
+      {
+        "n": "Alibek Bamboo (Ecuador)",
+        "lat": -1.8312,
+        "lng": -78.1834
+      },
+      {
+        "n": "Bamboo National Park (Rwanda)",
+        "lat": -1.49,
+        "lng": 29.5
+      },
+      {
+        "n": "Royal Botanic Gardens Kew (Bamboo House)",
+        "lat": 51.48,
+        "lng": -0.295
+      },
+      {
+        "n": "Phyllostachys edulis Forest (Taiwan)",
+        "lat": 24.0,
+        "lng": 121.0
+      },
+      {
+        "n": "Bamboo Textile Jaipur (India)",
+        "lat": 26.9124,
+        "lng": 75.7873
+      },
+      {
+        "n": "Chengdu Giant Panda Base Bamboo",
+        "lat": 30.7368,
+        "lng": 104.149
+      },
+      {
+        "n": "Bamboo Weavers (Sylhet, Bangladesh)",
+        "lat": 24.8898,
+        "lng": 91.8725
+      },
+      {
+        "n": "Tropical Botanic Garden Kandy (Sri Lanka)",
+        "lat": 7.2906,
+        "lng": 80.6337
+      },
+      {
+        "n": "Moso Bamboo (Zhejiang, China)",
+        "lat": 30.2741,
+        "lng": 120.1551
+      },
+      {
+        "n": "Santa Barbara Botanic Garden (Bamboo)",
+        "lat": 34.45,
+        "lng": -119.72
+      },
+      {
+        "n": "Bamboo Bioenergy Plantation (Ethiopia)",
+        "lat": 9.025,
+        "lng": 38.7469
+      },
+      {
+        "n": "Bamboo Carbon Offset (Philippines)",
+        "lat": 12.8797,
+        "lng": 121.774
+      },
+      {
+        "n": "Arashiyama Bamboo Grove Kyoto (Hauptwerk)",
+        "lat": 35.02,
+        "lng": 135.67
+      },
+      {
+        "n": "Yunnan Province Bamboo Forests (Xishuangbanna)",
+        "lat": 22.0,
+        "lng": 101.0
+      },
+      {
+        "n": "Guaduales del Rio Cauca (Kolumbien)",
+        "lat": 4.1534,
+        "lng": -76.2982
+      },
+      {
+        "n": "Bamboo Research Institute Ghana (Kumasi)",
+        "lat": 6.6885,
+        "lng": -1.6244
       }
     ]
   },
@@ -1741,6 +2651,156 @@
         "n": "IndoBurma-Florenregion (Myanmar)",
         "lat": 20.0,
         "lng": 100.0
+      },
+      {
+        "n": "Galápagos-Inseln (Ecuador, Darwin-Finken)",
+        "lat": -0.8672,
+        "lng": -91.0033
+      },
+      {
+        "n": "Hawaii-Inseln (Silversword, Lobelie)",
+        "lat": 20.7967,
+        "lng": -156.3319
+      },
+      {
+        "n": "Sokotra (Jemen, Drachenblutbaum)",
+        "lat": 12.4637,
+        "lng": 53.8235
+      },
+      {
+        "n": "Kanaren (Teneriffa, Kanarische Kiefer)",
+        "lat": 28.2916,
+        "lng": -16.6291
+      },
+      {
+        "n": "Borneo (Dipterocarpus-Wälder)",
+        "lat": 1.5533,
+        "lng": 110.3592
+      },
+      {
+        "n": "Australien Kwongan Heath (Westaustralien)",
+        "lat": -30.0,
+        "lng": 116.0
+      },
+      {
+        "n": "Namib-Wüste Welwitschia mirabilis (Namibia)",
+        "lat": -22.0,
+        "lng": 15.0
+      },
+      {
+        "n": "Chilenische Seewildnis (Juan Fernández-Inseln)",
+        "lat": -33.6327,
+        "lng": -78.8422
+      },
+      {
+        "n": "Neuseeland (Kauri-Wald)",
+        "lat": -36.4067,
+        "lng": 174.6567
+      },
+      {
+        "n": "New Caledonia (Araukarien-Wald)",
+        "lat": -21.2941,
+        "lng": 165.5139
+      },
+      {
+        "n": "Sri Lanka Sinharaja (Regenwald endemisch)",
+        "lat": 6.4024,
+        "lng": 80.4476
+      },
+      {
+        "n": "Sulawesi Endemiten (Indonesien)",
+        "lat": -2.0,
+        "lng": 120.0
+      },
+      {
+        "n": "Taiwan Yushan (Endemische Alpenpflanzen)",
+        "lat": 23.47,
+        "lng": 120.96
+      },
+      {
+        "n": "Äthiopisches Hochland (Abyssisches Endemit)",
+        "lat": 9.025,
+        "lng": 38.7469
+      },
+      {
+        "n": "Fynbos (Südafrika, Protea endemisch)",
+        "lat": -34.0,
+        "lng": 18.5
+      },
+      {
+        "n": "Sierra Nevada de Santa Marta (Kolumbien)",
+        "lat": 10.7614,
+        "lng": -73.8741
+      },
+      {
+        "n": "Atacama (Cactaceae endemisch, Chile)",
+        "lat": -23.5,
+        "lng": -68.25
+      },
+      {
+        "n": "Madagaskar Baobab-Allee (Morondava)",
+        "lat": -20.2833,
+        "lng": 44.2833
+      },
+      {
+        "n": "Stachelpflanzen Karoo (Südafrika)",
+        "lat": -32.25,
+        "lng": 22.5
+      },
+      {
+        "n": "Azoren (Laurisilva, Portugal)",
+        "lat": 37.7412,
+        "lng": -25.6756
+      },
+      {
+        "n": "Madeira (Laurissilva-Urwald)",
+        "lat": 32.6669,
+        "lng": -16.9241
+      },
+      {
+        "n": "Réunion (Bourbon-Palme, Frankreich)",
+        "lat": -21.1151,
+        "lng": 55.5364
+      },
+      {
+        "n": "Krakatau (Jungpflanzen-Endemiten)",
+        "lat": -6.1,
+        "lng": 105.4667
+      },
+      {
+        "n": "Pantanal (Brasilien, endemische Wasserpflanzen)",
+        "lat": -16.35,
+        "lng": -56.4833
+      },
+      {
+        "n": "Tepui-Tafelberge (Venezuela, Carnivoren)",
+        "lat": 5.1483,
+        "lng": -60.7297
+      },
+      {
+        "n": "Cerrado (Brasilien, Savannenpflanzen)",
+        "lat": -15.7835,
+        "lng": -47.8864
+      },
+      {
+        "n": "Congo Rainforest (DRC, palmenreiche Endemiten)",
+        "lat": -4.0,
+        "lng": 24.0
+      },
+      {
+        "n": "Kamerun-Bergregion (Mount Kamerun)",
+        "lat": 4.2035,
+        "lng": 9.1722
+      },
+      {
+        "n": "Marquesas-Inseln (Französisch-Polynesien)",
+        "lat": -9.795,
+        "lng": -139.02
+      },
+      {
+        "n": "Baltic Amber Region (Baltikum, Bernsteinpflanzen fossil)",
+        "lat": 57.0,
+        "lng": 24.0
       }
     ]
   },
@@ -1841,6 +2901,161 @@
         "n": "Kornblume Brandenburg (Deutschland)",
         "lat": 52.45,
         "lng": 13.57
+      },
+      {
+        "n": "Lotus (Ägypten, Kairo)",
+        "lat": 30.0444,
+        "lng": 31.2357
+      },
+      {
+        "n": "Lavendel (Provence, Frankreich)",
+        "lat": 43.9493,
+        "lng": 5.1175
+      },
+      {
+        "n": "Lilie (Frankreich, Paris)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "Chrysantheme (Kaiserpalast Tokio, Japan)",
+        "lat": 35.6762,
+        "lng": 139.7527
+      },
+      {
+        "n": "Bauhinia (Hongkong)",
+        "lat": 22.3193,
+        "lng": 114.1694
+      },
+      {
+        "n": "Thistle (Schottland, Edinburgh)",
+        "lat": 55.9533,
+        "lng": -3.1883
+      },
+      {
+        "n": "Daffodil (Narcissus, Wales)",
+        "lat": 52.1307,
+        "lng": -3.7837
+      },
+      {
+        "n": "Rose (England, London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Maple Leaf (Kanada, Ottawa)",
+        "lat": 45.4215,
+        "lng": -75.6972
+      },
+      {
+        "n": "Orquídea de Mayo (Kolumbien, Bogotá)",
+        "lat": 4.711,
+        "lng": -74.0721
+      },
+      {
+        "n": "Cattleya trianae (Orchidee Kolumbien)",
+        "lat": 4.711,
+        "lng": -74.0721
+      },
+      {
+        "n": "Frangipani (Laos, Vientiane)",
+        "lat": 17.9757,
+        "lng": 102.6331
+      },
+      {
+        "n": "Pitahaya-Kaktus (Honduras)",
+        "lat": 14.0723,
+        "lng": -87.1921
+      },
+      {
+        "n": "Wattle (Akazie, Australien, Canberra)",
+        "lat": -35.2809,
+        "lng": 149.13
+      },
+      {
+        "n": "Pohutukawa (Neuseeland, Auckland)",
+        "lat": -36.8485,
+        "lng": 174.7633
+      },
+      {
+        "n": "Ylang-Ylang (Comoros/Philippinen)",
+        "lat": -11.6455,
+        "lng": 43.3333
+      },
+      {
+        "n": "Water Lily (Sri Lanka, Colombo)",
+        "lat": 6.9271,
+        "lng": 79.8612
+      },
+      {
+        "n": "Lotus rosa (Vietnam, Hanoi)",
+        "lat": 21.0285,
+        "lng": 105.8542
+      },
+      {
+        "n": "Protea cynaroides (Südafrika, Kapstadt)",
+        "lat": -33.9249,
+        "lng": 18.4241
+      },
+      {
+        "n": "Sunflower (Ukraine, Kiew)",
+        "lat": 50.4501,
+        "lng": 30.5234
+      },
+      {
+        "n": "Poppy (Belgien + Flanders)",
+        "lat": 50.8503,
+        "lng": 4.3517
+      },
+      {
+        "n": "Iris (Frankreich historisch)",
+        "lat": 46.2276,
+        "lng": 2.2137
+      },
+      {
+        "n": "National Flower Bluebell (Schottland)",
+        "lat": 56.4907,
+        "lng": -4.2026
+      },
+      {
+        "n": "Wild Rose (Alberta, Kanada)",
+        "lat": 53.9333,
+        "lng": -116.5765
+      },
+      {
+        "n": "Bald Cypress (Louisiana, USA)",
+        "lat": 30.9843,
+        "lng": -91.9623
+      },
+      {
+        "n": "Sunflower (Kansas, USA)",
+        "lat": 38.5266,
+        "lng": -96.7265
+      },
+      {
+        "n": "Peach Blossom (Delaware, USA)",
+        "lat": 39.1582,
+        "lng": -75.5244
+      },
+      {
+        "n": "Forget-Me-Not (Alaska)",
+        "lat": 64.2008,
+        "lng": -153.4937
+      },
+      {
+        "n": "Mayflower (Nova Scotia, Kanada)",
+        "lat": 44.682,
+        "lng": -63.7443
+      },
+      {
+        "n": "Peony (China, Luoyang)",
+        "lat": 34.6197,
+        "lng": 112.454
+      },
+      {
+        "n": "Rafflesia arnoldii (Borneo-Regenwald)",
+        "lat": 1.5533,
+        "lng": 110.3592
       }
     ]
   }

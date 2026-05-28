@@ -241,6 +241,16 @@
         "n": "Arenal (Costa Rica)",
         "lat": 10.46,
         "lng": -84.7
+      },
+      {
+        "n": "Piton de la Fournaise (Réunion)",
+        "lat": -21.23,
+        "lng": 55.71
+      },
+      {
+        "n": "Mount Cleveland (Aleutians, USA)",
+        "lat": 52.82,
+        "lng": -169.94
       }
     ]
   },
@@ -396,6 +406,106 @@
         "n": "Wayang Windu (Indonesien)",
         "lat": -7.21,
         "lng": 107.63
+      },
+      {
+        "n": "Wai-O-Tapu (Rotorua, Neuseeland)",
+        "lat": -38.364,
+        "lng": 176.368
+      },
+      {
+        "n": "Geothermalkraftwerk Krafla (Island)",
+        "lat": 65.7167,
+        "lng": -16.7667
+      },
+      {
+        "n": "Geothermie Nesjavellir (Island)",
+        "lat": 64.0833,
+        "lng": -21.1167
+      },
+      {
+        "n": "Geothermie Mammoth Lakes (Kalifornien)",
+        "lat": 37.6485,
+        "lng": -118.9721
+      },
+      {
+        "n": "El Tatio Geysire (Atacama, Chile)",
+        "lat": -22.3333,
+        "lng": -68.0167
+      },
+      {
+        "n": "Rotorua Geothermalfeld (NZ)",
+        "lat": -38.1368,
+        "lng": 176.2497
+      },
+      {
+        "n": "Larderello Geothermie (Toskana, Italien)",
+        "lat": 43.2333,
+        "lng": 10.8667
+      },
+      {
+        "n": "Salton Sea Geothermie (Kalifornien)",
+        "lat": 33.19,
+        "lng": -115.6
+      },
+      {
+        "n": "Taupo Geothermalfeld (Neuseeland)",
+        "lat": -38.6857,
+        "lng": 176.0702
+      },
+      {
+        "n": "Geothermie Svartsengi (Blaue Lagune, Island)",
+        "lat": 63.8795,
+        "lng": -22.4526
+      },
+      {
+        "n": "Geothermie Wairakei (Neuseeland)",
+        "lat": -38.6167,
+        "lng": 176.0833
+      },
+      {
+        "n": "Kizildere Geothermie (Türkei)",
+        "lat": 37.8833,
+        "lng": 28.6833
+      },
+      {
+        "n": "Geothermie Cerro Prieto (Mexiko)",
+        "lat": 32.4333,
+        "lng": -115.3
+      },
+      {
+        "n": "Geothermie Palinpinon (Philippinen)",
+        "lat": 9.3833,
+        "lng": 123.2833
+      },
+      {
+        "n": "Karaha Bodas Geothermie (Java)",
+        "lat": -7.1667,
+        "lng": 108.0833
+      },
+      {
+        "n": "Geysir-Feld Dallol (Äthiopien)",
+        "lat": 14.2413,
+        "lng": 40.2967
+      },
+      {
+        "n": "Oberhausen Geothermie (Deutschland)",
+        "lat": 51.4667,
+        "lng": 6.8522
+      },
+      {
+        "n": "Taupo Volcanic Zone (NZ Hauptgebiet)",
+        "lat": -38.5,
+        "lng": 176.0
+      },
+      {
+        "n": "Geothermie Reykjavik (Island)",
+        "lat": 64.1355,
+        "lng": -21.8954
+      },
+      {
+        "n": "Wai-O-Tapu Geothermal Area (Neuseeland)",
+        "lat": -38.36,
+        "lng": 176.37
       }
     ]
   },
@@ -606,6 +716,51 @@
         "n": "Fitz Roy (Patagonien, Argentinien)",
         "lat": -49.27,
         "lng": -72.94
+      },
+      {
+        "n": "Chimney Rock (Nebraska, USA)",
+        "lat": 41.7025,
+        "lng": -103.3477
+      },
+      {
+        "n": "Arches National Park (Utah, USA)",
+        "lat": 38.7331,
+        "lng": -109.5925
+      },
+      {
+        "n": "Monument Valley (Arizona/Utah)",
+        "lat": 36.983,
+        "lng": -110.1118
+      },
+      {
+        "n": "Bryce Canyon Hoodoos (Utah)",
+        "lat": 37.593,
+        "lng": -112.1871
+      },
+      {
+        "n": "Ha Long Bay Felsen (Vietnam)",
+        "lat": 20.9101,
+        "lng": 107.1839
+      },
+      {
+        "n": "Wave Rock (Australien)",
+        "lat": -32.4395,
+        "lng": 118.8965
+      },
+      {
+        "n": "Chocolate Hills (Bohol, Philippinen)",
+        "lat": 9.9,
+        "lng": 124.17
+      },
+      {
+        "n": "Pinnacles Desert (Nambung NP, Australien)",
+        "lat": -30.6,
+        "lng": 115.15
+      },
+      {
+        "n": "Meteora (Griechenland, Felsklöster)",
+        "lat": 39.72,
+        "lng": 21.63
       }
     ]
   },
@@ -806,6 +961,61 @@
         "n": "Sarawak Chamber (Malaysia)",
         "lat": 4.05,
         "lng": 114.82
+      },
+      {
+        "n": "Cueva de los Cristales (Naica, Mexiko)",
+        "lat": 27.85,
+        "lng": -105.5
+      },
+      {
+        "n": "Postojna Cave (Slowenien)",
+        "lat": 45.7827,
+        "lng": 14.203
+      },
+      {
+        "n": "Skocjan Caves (Slowenien)",
+        "lat": 45.6634,
+        "lng": 13.9929
+      },
+      {
+        "n": "Carlsbad Caverns (New Mexico)",
+        "lat": 32.1479,
+        "lng": -104.5567
+      },
+      {
+        "n": "Altamira Cave (Kantabrien, Spanien)",
+        "lat": 43.3833,
+        "lng": -4.1
+      },
+      {
+        "n": "Batu Caves (Malaysia)",
+        "lat": 3.237,
+        "lng": 101.684
+      },
+      {
+        "n": "Puerto Princesa (Palawan, Philippinen)",
+        "lat": 10.1948,
+        "lng": 118.9046
+      },
+      {
+        "n": "Jenolan Caves (New South Wales)",
+        "lat": -33.8261,
+        "lng": 150.0214
+      },
+      {
+        "n": "Nerja Cave (Málaga, Spanien)",
+        "lat": 36.7618,
+        "lng": -3.8378
+      },
+      {
+        "n": "Waitomo Glowworm Caves (Neuseeland)",
+        "lat": -38.26,
+        "lng": 175.11
+      },
+      {
+        "n": "Cueva de Villa Luz (Tabasco, Mexiko)",
+        "lat": 17.53,
+        "lng": -92.75
       }
     ]
   },
@@ -1036,6 +1246,31 @@
         "n": "Gorge du Verdon Eingang (Frankreich)",
         "lat": 43.79,
         "lng": 6.41
+      },
+      {
+        "n": "Yarlung Tsangpo Canyon (Tibet)",
+        "lat": 29.5,
+        "lng": 95.0
+      },
+      {
+        "n": "Copper Canyon (Barranca del Cobre, Mexiko)",
+        "lat": 27.5,
+        "lng": -107.75
+      },
+      {
+        "n": "Kings Canyon (Australien)",
+        "lat": -24.2667,
+        "lng": 131.5833
+      },
+      {
+        "n": "Gorges du Verdon (Provence, Frankreich)",
+        "lat": 43.7167,
+        "lng": 6.3667
+      },
+      {
+        "n": "Samaria Gorge (Kreta)",
+        "lat": 35.3017,
+        "lng": 23.965
       }
     ]
   },
@@ -1181,6 +1416,116 @@
         "n": "Umnak Geothermal (Alaska)",
         "lat": 53.28,
         "lng": -168.25
+      },
+      {
+        "n": "Steamboat Geyser (Yellowstone, größter)",
+        "lat": 44.572,
+        "lng": -110.793
+      },
+      {
+        "n": "Lady Knox Geyser (NZ)",
+        "lat": -38.364,
+        "lng": 176.368
+      },
+      {
+        "n": "Fly Geyser (Nevada, USA)",
+        "lat": 41.0925,
+        "lng": -119.33
+      },
+      {
+        "n": "Deildartunguhver (Island)",
+        "lat": 64.67,
+        "lng": -21.4167
+      },
+      {
+        "n": "Geysir (Haukadalur, Island, Namensgeber)",
+        "lat": 64.3119,
+        "lng": -20.302
+      },
+      {
+        "n": "Soda Springs Geyser (Idaho, USA)",
+        "lat": 42.6546,
+        "lng": -111.6046
+      },
+      {
+        "n": "Geysir Valle de Colca (Peru)",
+        "lat": -15.63,
+        "lng": -71.95
+      },
+      {
+        "n": "Porkchop Geyser (Yellowstone)",
+        "lat": 44.57,
+        "lng": -110.79
+      },
+      {
+        "n": "Champagne Pool (NZ, Wai-O-Tapu)",
+        "lat": -38.364,
+        "lng": 176.368
+      },
+      {
+        "n": "Saturno Pool Geysir-Feld (Bolivien)",
+        "lat": -22.3333,
+        "lng": -68.0167
+      },
+      {
+        "n": "Tatio Hauptgeysir (Chile)",
+        "lat": -22.3333,
+        "lng": -68.0333
+      },
+      {
+        "n": "Beehive Geyser (Yellowstone)",
+        "lat": 44.4644,
+        "lng": -110.8296
+      },
+      {
+        "n": "Pink Terraces (Waimangu, NZ historic)",
+        "lat": -38.2667,
+        "lng": 176.3833
+      },
+      {
+        "n": "Indigo Pool Geyser (Yellowstone)",
+        "lat": 44.5217,
+        "lng": -110.8284
+      },
+      {
+        "n": "Riverside Geyser (Yellowstone)",
+        "lat": 44.5272,
+        "lng": -110.8266
+      },
+      {
+        "n": "Fountain Geyser (Yellowstone)",
+        "lat": 44.5481,
+        "lng": -110.7979
+      },
+      {
+        "n": "Geysir Strokkur (Island)",
+        "lat": 64.31,
+        "lng": -20.3
+      },
+      {
+        "n": "Pohutu Geyser (Rotorua, Neuseeland)",
+        "lat": -38.16,
+        "lng": 176.38
+      },
+      {
+        "n": "Velikan Geyser (Kamtschatka, Russland)",
+        "lat": 54.44,
+        "lng": 160.65
+      },
+      {
+        "n": "Geysir Geysirtal (Chile, El Tatio alt)",
+        "lat": -22.33,
+        "lng": -68.0
+      },
+      {
+        "n": "Wairakei Geothermal Area (Taupo, NZ)",
+        "lat": -38.63,
+        "lng": 176.09
+      },
+      {
+        "n": "Umnak Geothermal (Aleutians, Alaska)",
+        "lat": 53.3,
+        "lng": -168.4
       }
     ]
   },
@@ -1486,6 +1831,111 @@
         "n": "Thwaites-Gletscher (Antarktis)",
         "lat": -75.5,
         "lng": -107.0
+      },
+      {
+        "n": "Fox Glacier (Westland, Neuseeland)",
+        "lat": -43.476,
+        "lng": 170.008
+      },
+      {
+        "n": "Franz Josef Glacier (Neuseeland)",
+        "lat": -43.3844,
+        "lng": 170.1894
+      },
+      {
+        "n": "Snæfellsjökull (Island)",
+        "lat": 64.8009,
+        "lng": -23.7761
+      },
+      {
+        "n": "Rhonegletscher (Schweiz)",
+        "lat": 46.5777,
+        "lng": 8.358
+      },
+      {
+        "n": "Morteratsch-Gletscher (Engadin, Schweiz)",
+        "lat": 46.4333,
+        "lng": 9.9333
+      },
+      {
+        "n": "Gorner-Gletscher (Zermatt, Schweiz)",
+        "lat": 45.9583,
+        "lng": 7.8333
+      },
+      {
+        "n": "Pasterze (Großglockner, Österreich)",
+        "lat": 47.0833,
+        "lng": 12.7333
+      },
+      {
+        "n": "Perito Moreno Gletscher (Patagonien, Arg.)",
+        "lat": -50.4964,
+        "lng": -73.1516
+      },
+      {
+        "n": "Columbia Icefield (Alberta, Kanada)",
+        "lat": 52.2333,
+        "lng": -117.2333
+      },
+      {
+        "n": "Mer de Glace (Mont Blanc, Frankreich)",
+        "lat": 45.8955,
+        "lng": 6.9147
+      },
+      {
+        "n": "Grinnell Glacier (Glacier NP, USA)",
+        "lat": 48.7499,
+        "lng": -113.7181
+      },
+      {
+        "n": "Biafo Glacier (Pakistan)",
+        "lat": 35.9167,
+        "lng": 75.5
+      },
+      {
+        "n": "Baltoro Glacier (K2-Region, Pakistan)",
+        "lat": 35.7167,
+        "lng": 76.5833
+      },
+      {
+        "n": "Siachen Glacier (Kaschmir)",
+        "lat": 35.4333,
+        "lng": 77.1
+      },
+      {
+        "n": "Lambert Glacier (Antarktis, größter)",
+        "lat": -71.0,
+        "lng": 69.0
+      },
+      {
+        "n": "Pine Island Glacier (Westantarktis)",
+        "lat": -75.1667,
+        "lng": -100.0
+      },
+      {
+        "n": "Thwaites Glacier (Westantarktis)",
+        "lat": -75.5,
+        "lng": -106.8333
+      },
+      {
+        "n": "Jakobshavn Isbrae (Grönland)",
+        "lat": 69.1667,
+        "lng": -49.6667
+      },
+      {
+        "n": "Helheim Glacier (Grönland)",
+        "lat": 66.3667,
+        "lng": -38.0
+      },
+      {
+        "n": "Kangerlussuaq Glacier (Grönland)",
+        "lat": 68.5833,
+        "lng": -33.1667
+      },
+      {
+        "n": "Austfonna (Svalbard, Norwegen)",
+        "lat": 79.7667,
+        "lng": 24.0
       }
     ]
   },
@@ -1696,6 +2146,71 @@
         "n": "Kara Kum Kanal-Region (Turkmenistan)",
         "lat": 37.5,
         "lng": 60.0
+      },
+      {
+        "n": "Gobi-Wüste (Mongolei)",
+        "lat": 42.5,
+        "lng": 103.5
+      },
+      {
+        "n": "Sonora-Wüste (Arizona/Mexiko)",
+        "lat": 31.0,
+        "lng": -113.0
+      },
+      {
+        "n": "Rub' al Khali (Arabien, leere Viertel)",
+        "lat": 21.0,
+        "lng": 51.0
+      },
+      {
+        "n": "An Nafud (Saudi-Arabien)",
+        "lat": 28.0,
+        "lng": 41.0
+      },
+      {
+        "n": "Lut-Wüste (Iran, heißester Punkt Erde)",
+        "lat": 30.5,
+        "lng": 59.0
+      },
+      {
+        "n": "Kyzylkum (Kasachstan/Usbekistan)",
+        "lat": 42.0,
+        "lng": 63.5
+      },
+      {
+        "n": "Danakil-Wüste (Äthiopien, Afar)",
+        "lat": 13.0,
+        "lng": 41.0
+      },
+      {
+        "n": "Simpson-Wüste (Australien)",
+        "lat": -25.0,
+        "lng": 137.0
+      },
+      {
+        "n": "Strzelecki Desert (Australien)",
+        "lat": -28.5,
+        "lng": 141.0
+      },
+      {
+        "n": "Nefud-Wüste (Saudi-Arabien)",
+        "lat": 27.5,
+        "lng": 41.5
+      },
+      {
+        "n": "Bolson de Mapimi (Mexiko, Zone der Stille)",
+        "lat": 26.7,
+        "lng": -103.5
+      },
+      {
+        "n": "Patagonian Desert (Argentinien)",
+        "lat": -44.0,
+        "lng": -68.0
+      },
+      {
+        "n": "Monte Desert (Argentinien)",
+        "lat": -33.0,
+        "lng": -67.0
       }
     ]
   },
@@ -1891,6 +2406,66 @@
         "n": "Zinkgruvan (Schweden)",
         "lat": 58.81,
         "lng": 15.09
+      },
+      {
+        "n": "Olympic Dam (South Australia)",
+        "lat": -30.4167,
+        "lng": 136.8833
+      },
+      {
+        "n": "Chuquicamata (Atacama, Chile)",
+        "lat": -22.3167,
+        "lng": -68.9167
+      },
+      {
+        "n": "Escondida Mine (Atacama, Chile)",
+        "lat": -24.2667,
+        "lng": -69.0667
+      },
+      {
+        "n": "TauTona Gold Mine (Südafrika, tiefste)",
+        "lat": -26.4167,
+        "lng": 27.4167
+      },
+      {
+        "n": "El Teniente (Chile, größte Untertagekupfermine)",
+        "lat": -34.0833,
+        "lng": -70.5667
+      },
+      {
+        "n": "Yanacocha Mine (Peru)",
+        "lat": -6.8667,
+        "lng": -78.5333
+      },
+      {
+        "n": "Morenci Mine (Arizona, USA)",
+        "lat": 33.0833,
+        "lng": -109.3667
+      },
+      {
+        "n": "Kennecott Alaska Mine (USA)",
+        "lat": 61.4833,
+        "lng": -142.9167
+      },
+      {
+        "n": "Carlin Gold Mine (Nevada, USA)",
+        "lat": 40.75,
+        "lng": -116.11
+      },
+      {
+        "n": "Jwaneng Diamantmine (Botswana)",
+        "lat": -24.6,
+        "lng": 24.73
+      },
+      {
+        "n": "Olympic Dam Mine (South Australia)",
+        "lat": -30.44,
+        "lng": 136.89
+      },
+      {
+        "n": "Escondida Copper Mine (Chile)",
+        "lat": -24.26,
+        "lng": -69.07
       }
     ]
   },
@@ -2126,6 +2701,116 @@
         "n": "Hvalnes (Island)",
         "lat": 64.39,
         "lng": -14.52
+      },
+      {
+        "n": "Slieve League (Donegal, Irland)",
+        "lat": 54.6414,
+        "lng": -8.6969
+      },
+      {
+        "n": "Étretat (Normandie, Frankreich)",
+        "lat": 49.7086,
+        "lng": 0.2065
+      },
+      {
+        "n": "Beachy Head (East Sussex, England)",
+        "lat": 50.7295,
+        "lng": 0.2472
+      },
+      {
+        "n": "Chalk Cliffs of Dover (Kent, England)",
+        "lat": 51.1272,
+        "lng": 1.3749
+      },
+      {
+        "n": "Penyal d'Ifach (Calpe, Spanien)",
+        "lat": 38.64,
+        "lng": 0.077
+      },
+      {
+        "n": "Cabo Girão (Madeira, Portugal)",
+        "lat": 32.7958,
+        "lng": -17.1436
+      },
+      {
+        "n": "Kalkisteilküste Kap Arkona (Rügen)",
+        "lat": 54.6786,
+        "lng": 13.4336
+      },
+      {
+        "n": "Giant's Causeway Küste (Nordirland)",
+        "lat": 55.2408,
+        "lng": -6.5116
+      },
+      {
+        "n": "Moeraki Boulders (Otago, NZ)",
+        "lat": -45.3489,
+        "lng": 170.8278
+      },
+      {
+        "n": "Na Pali Coast (Kauai, Hawaii)",
+        "lat": 22.1938,
+        "lng": -159.6541
+      },
+      {
+        "n": "Lofoten Steilküste (Norwegen)",
+        "lat": 68.0987,
+        "lng": 13.4983
+      },
+      {
+        "n": "Preikestolen (Lysfjord, Norwegen)",
+        "lat": 58.9861,
+        "lng": 6.1899
+      },
+      {
+        "n": "Cabo da Roca (Portugal, westlichster Punkt EU)",
+        "lat": 38.7787,
+        "lng": -9.5
+      },
+      {
+        "n": "Sagres (Algarve, Portugal)",
+        "lat": 37.0074,
+        "lng": -8.9406
+      },
+      {
+        "n": "Cap de Formentor (Mallorca, Spanien)",
+        "lat": 39.9578,
+        "lng": 3.2026
+      },
+      {
+        "n": "Calanches de Piana (Korsika, Frankreich)",
+        "lat": 42.2433,
+        "lng": 8.66
+      },
+      {
+        "n": "Bonifacio Felsen (Korsika)",
+        "lat": 41.3868,
+        "lng": 9.1551
+      },
+      {
+        "n": "Twelve Apostles (Victoria, Australien)",
+        "lat": -38.6643,
+        "lng": 143.105
+      },
+      {
+        "n": "Nullarbor Cliffs (S. Australia)",
+        "lat": -31.8333,
+        "lng": 130.5
+      },
+      {
+        "n": "Nambung Pinnacles (Western Australia)",
+        "lat": -30.5,
+        "lng": 115.1667
+      },
+      {
+        "n": "Cape Flattery (Queensland, Australien)",
+        "lat": -14.95,
+        "lng": 145.3667
+      },
+      {
+        "n": "Tsitsikamma Cliffs (Südafrika)",
+        "lat": -33.9167,
+        "lng": 24.1833
       }
     ]
   }

@@ -163,6 +163,50 @@
       {
         "n": "OPT3001 Ambient Light",
         "c": "Licht"
+      },
+      {
+        "n": "MPU-6050",
+        "c": "Beschleunigung/Gyroskop"
+      },
+      {
+        "n": "HC-SR04",
+        "c": "Ultraschall-Entfernung"
+      },
+      {
+        "n": "MQ-2",
+        "c": "Rauch/Gas"
+      },
+      {
+        "n": "ADXL345",
+        "c": "Beschleunigung"
+      },
+      {
+        "n": "AS7262",
+        "c": "Licht/Spektrum"
+      },
+      {
+        "n": "HX711",
+        "c": "Gewicht (Wägezelle)"
+      },
+      {
+        "n": "MAX30100",
+        "c": "Puls/SpO2"
+      },
+      {
+        "n": "VL53L0X",
+        "c": "Laser-Entfernung"
+      },
+      {
+        "n": "CCS811",
+        "c": "CO2/VOC-Luft"
+      },
+      {
+        "n": "SHT31 (Sensirion)",
+        "c": "Temperatur/Feuchtigkeit"
+      },
+      {
+        "n": "INA219",
+        "c": "Strom/Spannung"
       }
     ]
   },
@@ -334,6 +378,46 @@
       {
         "n": "MsgBox \"Hello\"",
         "c": "VBA"
+      },
+      {
+        "n": "console.log('Hello World')",
+        "c": "JavaScript"
+      },
+      {
+        "n": "printf('Hello\\n')",
+        "c": "C"
+      },
+      {
+        "n": "echo 'Hello World'",
+        "c": "PHP"
+      },
+      {
+        "n": "puts 'Hello World'",
+        "c": "Ruby"
+      },
+      {
+        "n": "print('Hello World')",
+        "c": "Python"
+      },
+      {
+        "n": "fmt.Println('Hello')",
+        "c": "Go"
+      },
+      {
+        "n": "println!('Hello')",
+        "c": "Rust"
+      },
+      {
+        "n": "Console.WriteLine('Hi')",
+        "c": "C#"
+      },
+      {
+        "n": "NSLog(@'Hello')",
+        "c": "Objective-C"
+      },
+      {
+        "n": "writeln('Hello World')",
+        "c": "Pascal"
       }
     ]
   },
@@ -425,6 +509,134 @@
       {
         "n": "Raspbian / Raspberry Pi OS",
         "c": "Embedded"
+      },
+      {
+        "n": "Arch Linux",
+        "c": "Rolling Release / Advanced"
+      },
+      {
+        "n": "Fedora 40",
+        "c": "Desktop / Bleeding Edge"
+      },
+      {
+        "n": "Linux Mint 21",
+        "c": "Desktop / Einsteiger"
+      },
+      {
+        "n": "AlmaLinux",
+        "c": "Server / RHEL-kompatibel"
+      },
+      {
+        "n": "openSUSE Tumbleweed",
+        "c": "Rolling Release"
+      },
+      {
+        "n": "Gentoo Linux",
+        "c": "Source-based / Advanced"
+      },
+      {
+        "n": "NixOS",
+        "c": "Deklaratives System"
+      },
+      {
+        "n": "Raspberry Pi OS",
+        "c": "Embedded / Raspberry Pi"
+      },
+      {
+        "n": "Whonix",
+        "c": "Sicherheit / Anonym"
+      },
+      {
+        "n": "elementary OS",
+        "c": "Desktop / macOS-ähnlich"
+      },
+      {
+        "n": "Manjaro",
+        "c": "Desktop / Arch-basiert"
+      },
+      {
+        "n": "Garuda Linux",
+        "c": "Gaming / Performance"
+      },
+      {
+        "n": "Zorin OS",
+        "c": "Desktop / Windows-ähnlich"
+      },
+      {
+        "n": "Void Linux",
+        "c": "Server / Minimal"
+      },
+      {
+        "n": "Slackware",
+        "c": "Älteste aktive Distro"
+      },
+      {
+        "n": "Kali Linux 2024",
+        "c": "Security/Pentest"
+      },
+      {
+        "n": "Qubes OS",
+        "c": "Hochsicherheit"
+      },
+      {
+        "n": "Rocky Linux 9",
+        "c": "Enterprise Server"
+      },
+      {
+        "n": "Oracle Linux",
+        "c": "Enterprise Server"
+      },
+      {
+        "n": "openSUSE Leap",
+        "c": "Enterprise Workstation"
+      },
+      {
+        "n": "Guix System",
+        "c": "GNU/Funktional"
+      },
+      {
+        "n": "Elementary OS",
+        "c": "macOS-ähnlich"
+      },
+      {
+        "n": "Solus",
+        "c": "Rolling Desktop"
+      },
+      {
+        "n": "MX Linux",
+        "c": "Stabil/Leicht"
+      },
+      {
+        "n": "antiX",
+        "c": "Für alte Hardware"
+      },
+      {
+        "n": "Puppy Linux",
+        "c": "Ultra-Minimal"
+      },
+      {
+        "n": "Tinycore Linux",
+        "c": "Kleinste Distribution"
+      },
+      {
+        "n": "Clear Linux",
+        "c": "Intel-optimiert"
+      },
+      {
+        "n": "Bottlerocket (Amazon)",
+        "c": "Container OS"
+      },
+      {
+        "n": "CoreOS (Fedora)",
+        "c": "Container OS"
+      },
+      {
+        "n": "Raspbian/Raspberry Pi OS",
+        "c": "Embedded/RasPi"
+      },
+      {
+        "n": "Ubuntu Server LTS",
+        "c": "Server"
       }
     ]
   },
@@ -517,6 +729,126 @@
       {
         "n": "DSL / ADSL Übertragung",
         "c": "1 Physisch"
+      },
+      {
+        "n": "IP (Internet Protocol)",
+        "c": "3 Netzwerk"
+      },
+      {
+        "n": "Ethernet (MAC)",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "SSL/TLS",
+        "c": "6 Präsentation"
+      },
+      {
+        "n": "ARP (Address Resolution Protocol)",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "DHCP",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "Sitzungsmanagement (NFS, SQL-Session)",
+        "c": "5 Sitzung"
+      },
+      {
+        "n": "Twisted Pair (Kupferkabel)",
+        "c": "1 Bitübertragung"
+      },
+      {
+        "n": "OSPF (Routing-Protokoll)",
+        "c": "3 Netzwerk"
+      },
+      {
+        "n": "BGP (Border Gateway Protocol)",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "Frame Relay",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "VLAN-Tagging (IEEE 802.1Q)",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "TLS-Handshake",
+        "c": "5 Sitzung"
+      },
+      {
+        "n": "JPEG-Komprimierung",
+        "c": "6 Präsentation"
+      },
+      {
+        "n": "ASCII / Unicode-Kodierung",
+        "c": "6 Präsentation"
+      },
+      {
+        "n": "Ethernet",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "PPP",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "NetBIOS",
+        "c": "5 Sitzung"
+      },
+      {
+        "n": "JPEG/MP3-Kompression",
+        "c": "6 Darstellung"
+      },
+      {
+        "n": "Glasfaser (physisch)",
+        "c": "1 Physikalisch"
+      },
+      {
+        "n": "Bluetooth (physisch)",
+        "c": "1 Physikalisch"
+      },
+      {
+        "n": "SNMP",
+        "c": "7 Anwendung"
+      },
+      {
+        "n": "X.25",
+        "c": "3 Netz"
+      },
+      {
+        "n": "OSPF",
+        "c": "3 Netz"
+      },
+      {
+        "n": "ATM",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "VLAN (802.1Q)",
+        "c": "2 Sicherung"
+      },
+      {
+        "n": "SONET",
+        "c": "1 Physikalisch"
+      },
+      {
+        "n": "Wi-Fi (802.11)",
+        "c": "1 Physikalisch"
+      },
+      {
+        "n": "Glasfaser",
+        "c": "1 Physikalisch"
+      },
+      {
+        "n": "RPC",
+        "c": "5 Sitzung"
+      },
+      {
+        "n": "X.400 (E-Mail)",
+        "c": "7 Anwendung"
       }
     ]
   },
@@ -608,6 +940,126 @@
       {
         "n": "Counting Sort",
         "c": "O(n)"
+      },
+      {
+        "n": "Binäre Suche (sortiertes Array)",
+        "c": "O(log n)"
+      },
+      {
+        "n": "Quicksort (Durchschnitt)",
+        "c": "O(n log n)"
+      },
+      {
+        "n": "Mergesort",
+        "c": "O(n log n)"
+      },
+      {
+        "n": "Bubblesort (worst case)",
+        "c": "O(n²)"
+      },
+      {
+        "n": "Insertion Sort (worst case)",
+        "c": "O(n²)"
+      },
+      {
+        "n": "Hash-Tabellen-Lookup (Durchschnitt)",
+        "c": "O(1)"
+      },
+      {
+        "n": "Hash-Tabellen-Lookup (worst case)",
+        "c": "O(n)"
+      },
+      {
+        "n": "DFS/BFS (Graphtraversal)",
+        "c": "O(V+E)"
+      },
+      {
+        "n": "Dijkstra (mit Min-Heap)",
+        "c": "O((V+E) log V)"
+      },
+      {
+        "n": "Traveling Salesman (brute force)",
+        "c": "O(n!)"
+      },
+      {
+        "n": "Matrix-Multiplikation (naiv)",
+        "c": "O(n³)"
+      },
+      {
+        "n": "Heapsort",
+        "c": "O(n log n)"
+      },
+      {
+        "n": "Fibonacci rekursiv (naiv)",
+        "c": "O(2^n)"
+      },
+      {
+        "n": "Fibonacci mit Memoization",
+        "c": "O(n)"
+      },
+      {
+        "n": "Radix Sort",
+        "c": "O(nk)"
+      },
+      {
+        "n": "AVL-Tree Suche",
+        "c": "O(log n)"
+      },
+      {
+        "n": "Linked List (Einfügen am Anfang)",
+        "c": "O(1)"
+      },
+      {
+        "n": "Breitensuche (BFS)",
+        "c": "O(V+E)"
+      },
+      {
+        "n": "Tiefensuche (DFS)",
+        "c": "O(V+E)"
+      },
+      {
+        "n": "Binäre Suche (sortiert)",
+        "c": "O(log n)"
+      },
+      {
+        "n": "Insertion Sort (Best Case)",
+        "c": "O(n)"
+      },
+      {
+        "n": "Matrixmultiplikation (naiv)",
+        "c": "O(n³)"
+      },
+      {
+        "n": "Hash-Tabellen-Zugriff",
+        "c": "O(1)"
+      },
+      {
+        "n": "Floyd-Warshall (kürzeste Wege)",
+        "c": "O(n³)"
+      },
+      {
+        "n": "Trie-Suche",
+        "c": "O(k)"
+      },
+      {
+        "n": "Bellman-Ford",
+        "c": "O(VE)"
+      },
+      {
+        "n": "Kruskal/Prim (MST)",
+        "c": "O(E log E)"
+      },
+      {
+        "n": "Dijkstra (Heap)",
+        "c": "O((V+E) log V)"
+      },
+      {
+        "n": "Dijkstra (binärer Heap)",
+        "c": "O((V+E) log V)"
+      },
+      {
+        "n": "Floyd-Warshall",
+        "c": "O(V³)"
       }
     ]
   },
@@ -699,6 +1151,126 @@
       {
         "n": "501 Not Implemented",
         "c": "5xx Server-Fehler"
+      },
+      {
+        "n": "302 Found (Temp. Redirect)",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "405 Method Not Allowed",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "408 Request Timeout",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "409 Conflict",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "410 Gone",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "413 Payload Too Large",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "415 Unsupported Media Type",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "100 Continue",
+        "c": "1xx Informational"
+      },
+      {
+        "n": "101 Switching Protocols",
+        "c": "1xx Informational"
+      },
+      {
+        "n": "451 Unavailable For Legal Reasons",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "418 I'm a teapot",
+        "c": "4xx Easter Egg"
+      },
+      {
+        "n": "202 Accepted",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "203 Non-Authoritative Information",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "302 Found (Redirect)",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "102 Processing",
+        "c": "1xx Information"
+      },
+      {
+        "n": "412 Precondition Failed",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "416 Range Not Satisfiable",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "422 Unprocessable Entity",
+        "c": "4xx Client-Fehler"
+      },
+      {
+        "n": "507 Insufficient Storage",
+        "c": "5xx Server-Fehler"
+      },
+      {
+        "n": "511 Network Auth Required",
+        "c": "5xx Server-Fehler"
+      },
+      {
+        "n": "203 Non-Authoritative",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "205 Reset Content",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "207 Multi-Status",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "209 Already Reported",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "226 IM Used",
+        "c": "2xx Erfolg"
+      },
+      {
+        "n": "301 Redirect",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "302 Found",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "511 Network Authentication Required",
+        "c": "5xx Serverfehler"
+      },
+      {
+        "n": "305 Use Proxy (veraltet)",
+        "c": "3xx Weiterleitung"
+      },
+      {
+        "n": "421 Misdirected Request",
+        "c": "4xx Client-Fehler"
       }
     ]
   },
@@ -790,6 +1362,126 @@
       {
         "n": "A=0, B=1 → 1 (exklusiv)",
         "c": "XOR"
+      },
+      {
+        "n": "A=0, B=0 → 1",
+        "c": "NAND"
+      },
+      {
+        "n": "A=0, B=0 → 1",
+        "c": "NOR"
+      },
+      {
+        "n": "A=0, B=0 → 1",
+        "c": "XNOR"
+      },
+      {
+        "n": "A=0, B=0 → 1",
+        "c": "NAND"
+      },
+      {
+        "n": "A=0, B=0 → 1 (NAND)",
+        "c": "NAND"
+      },
+      {
+        "n": "A=0, B=0 → 1 (XNOR)",
+        "c": "XNOR"
+      },
+      {
+        "n": "A=0, B=0 → 0 (NOR false)",
+        "c": "OR"
+      },
+      {
+        "n": "A=0, B=1 → 1 (NOR false edge)",
+        "c": "OR"
+      },
+      {
+        "n": "A=0 → 0 (NOT false)",
+        "c": "NOT"
+      },
+      {
+        "n": "A=1, B=0 → 1 (OR)",
+        "c": "OR"
+      },
+      {
+        "n": "A=1, B=0 → 0 (AND zero)",
+        "c": "AND"
+      },
+      {
+        "n": "A=1, B=1 → 0 (XOR zero)",
+        "c": "XOR"
+      },
+      {
+        "n": "A=1, B=1 → 1 (XNOR true)",
+        "c": "XNOR"
+      },
+      {
+        "n": "A=0, B=1 → 0 (AND false)",
+        "c": "AND"
+      },
+      {
+        "n": "A=0, B=0 → 0 (XOR false)",
+        "c": "XOR"
+      },
+      {
+        "n": "A=0, B=1 → 1 (XOR true)",
+        "c": "XOR"
+      },
+      {
+        "n": "A=1, B=0 → 1 (XOR true)",
+        "c": "XOR"
+      },
+      {
+        "n": "A=0, B=1 → 0 (XNOR false)",
+        "c": "XNOR"
+      },
+      {
+        "n": "A=0, B=0 → 0 (NOR false case)",
+        "c": "NOR"
+      },
+      {
+        "n": "A=1, B=0 → 0 (NOR false)",
+        "c": "NOR"
+      },
+      {
+        "n": "A=0, B=1 → 0 (NOR edge)",
+        "c": "NOR"
+      },
+      {
+        "n": "A=1, B=1 → 0 (NOR all)",
+        "c": "NOR"
+      },
+      {
+        "n": "A=0, B=0 → 1 (NOR true)",
+        "c": "NOR"
+      },
+      {
+        "n": "A=0, B=0 → 1 (NAND all zero)",
+        "c": "NAND"
+      },
+      {
+        "n": "A=0, B=1 → 1 (NAND partial)",
+        "c": "NAND"
+      },
+      {
+        "n": "A=1, B=0 → 1 (NAND partial)",
+        "c": "NAND"
+      },
+      {
+        "n": "A=1, B=1 → 0 (NAND all)",
+        "c": "NAND"
+      },
+      {
+        "n": "A=0, B=0 → 0 (AND all)",
+        "c": "AND"
+      },
+      {
+        "n": "A=0, B=1 → 0 (AND partial)",
+        "c": "AND"
+      },
+      {
+        "n": "A=1, B=0 → 0 (AND partial)",
+        "c": "AND"
       }
     ]
   },
@@ -881,6 +1573,126 @@
       {
         "n": "Bluetooth 5.3 Modul",
         "c": "Netzwerk"
+      },
+      {
+        "n": "Verarbeitet Grafik-Shader-Programme",
+        "c": "GPU"
+      },
+      {
+        "n": "Speichert Daten flüchtig während der Laufzeit",
+        "c": "RAM"
+      },
+      {
+        "n": "Permanenter Massenspeicher, nichtflüchtig",
+        "c": "SSD/HDD"
+      },
+      {
+        "n": "Verbindet CPU, RAM und PCIe-Slots",
+        "c": "Mainboard"
+      },
+      {
+        "n": "Wandelt AC in DC-Spannungen um",
+        "c": "Netzteil"
+      },
+      {
+        "n": "Taktet CPU auf bis zu 5 GHz",
+        "c": "Taktgenerator"
+      },
+      {
+        "n": "Führt Rechenanweisungen aus",
+        "c": "CPU"
+      },
+      {
+        "n": "Kühlt CPU durch Wärmeableitung",
+        "c": "Kühlkörper"
+      },
+      {
+        "n": "Verbindet Geräte per serieller Schnittstelle",
+        "c": "USB-Controller"
+      },
+      {
+        "n": "Ermöglicht drahtlose Netzwerkverbindung",
+        "c": "WLAN-Karte"
+      },
+      {
+        "n": "Liest und schreibt optische Datenträger",
+        "c": "Optisches Laufwerk"
+      },
+      {
+        "n": "Berechnet KI-Inferenz ultraschnell",
+        "c": "NPU"
+      },
+      {
+        "n": "Koordiniert Datentransfer zwischen Komponenten",
+        "c": "Chipsatz"
+      },
+      {
+        "n": "Verbindet PCIe-Karten mit dem System",
+        "c": "PCIe-Slot"
+      },
+      {
+        "n": "Enthält Low-Level-Boot-Firmware",
+        "c": "UEFI/BIOS-Chip"
+      },
+      {
+        "n": "Puffert Daten schnell zwischen CPU und RAM",
+        "c": "CPU-Cache (L3)"
+      },
+      {
+        "n": "Sorgt für Hochfrequenz-Audio-Ausgabe",
+        "c": "Soundkarte"
+      },
+      {
+        "n": "Ermöglicht Netzwerkanschluss via Kabel",
+        "c": "Netzwerkkarte (NIC)"
+      },
+      {
+        "n": "Wandelt Digitalsignale in Analogton um",
+        "c": "DAC"
+      },
+      {
+        "n": "Steuert Festplattenzugriffe",
+        "c": "Storage-Controller"
+      },
+      {
+        "n": "ATX-Netzteil (850W 80+ Gold)",
+        "c": "Stromversorgung"
+      },
+      {
+        "n": "PCIe 5.0 x16 Slot",
+        "c": "Erweiterungsbus"
+      },
+      {
+        "n": "Thunderbolt 4 Controller",
+        "c": "Schnittstelle"
+      },
+      {
+        "n": "ECC RAM DIMM",
+        "c": "RAM"
+      },
+      {
+        "n": "ZFS RAIDZ2 Array",
+        "c": "Speicher"
+      },
+      {
+        "n": "TPM 2.0 Chip",
+        "c": "Sicherheit"
+      },
+      {
+        "n": "BIOS/UEFI Chip",
+        "c": "Firmware"
+      },
+      {
+        "n": "PCIe M.2 Heatsink",
+        "c": "Kühlung"
+      },
+      {
+        "n": "Fan Hub (PWM)",
+        "c": "Kühlung"
+      },
+      {
+        "n": "DDR5 SO-DIMM (Laptop)",
+        "c": "RAM"
       }
     ]
   },
@@ -1042,6 +1854,50 @@
       {
         "n": "Reed-Solomon-Code (1960)",
         "c": "Irving Reed & Gustave Solomon"
+      },
+      {
+        "n": "C-Programmiersprache",
+        "c": "Dennis Ritchie"
+      },
+      {
+        "n": "UNIX",
+        "c": "Ken Thompson & Dennis Ritchie"
+      },
+      {
+        "n": "Python",
+        "c": "Guido van Rossum"
+      },
+      {
+        "n": "Java",
+        "c": "James Gosling"
+      },
+      {
+        "n": "iPhone (Smartphone-Ära)",
+        "c": "Steve Jobs / Apple"
+      },
+      {
+        "n": "Ethernet",
+        "c": "Robert Metcalfe"
+      },
+      {
+        "n": "Deep Learning (Backprop)",
+        "c": "Geoffrey Hinton"
+      },
+      {
+        "n": "Fortran (Programmiersprache)",
+        "c": "John Backus"
+      },
+      {
+        "n": "BASIC (Programmiersprache)",
+        "c": "John Kemeny & Thomas Kurtz"
+      },
+      {
+        "n": "C++ (Programmiersprache)",
+        "c": "Bjarne Stroustrup"
+      },
+      {
+        "n": "Linux",
+        "c": "Linus Torvalds"
       }
     ]
   },
@@ -1127,6 +1983,126 @@
       {
         "n": "Port 9200",
         "c": "Elasticsearch"
+      },
+      {
+        "n": "Port 587",
+        "c": "SMTP (Submission)"
+      },
+      {
+        "n": "Port 465",
+        "c": "SMTPS"
+      },
+      {
+        "n": "Port 995",
+        "c": "POP3S"
+      },
+      {
+        "n": "Port 993",
+        "c": "IMAPS"
+      },
+      {
+        "n": "Port 67",
+        "c": "DHCP Server"
+      },
+      {
+        "n": "Port 68",
+        "c": "DHCP Client"
+      },
+      {
+        "n": "Port 69",
+        "c": "TFTP"
+      },
+      {
+        "n": "Port 389",
+        "c": "LDAP"
+      },
+      {
+        "n": "Port 636",
+        "c": "LDAPS"
+      },
+      {
+        "n": "Port 8443",
+        "c": "HTTPS Alternativ"
+      },
+      {
+        "n": "Port 4444",
+        "c": "Metasploit default"
+      },
+      {
+        "n": "Port 5672",
+        "c": "RabbitMQ AMQP"
+      },
+      {
+        "n": "Port 23",
+        "c": "Telnet"
+      },
+      {
+        "n": "Port 500",
+        "c": "IKE/IPSec"
+      },
+      {
+        "n": "Port 1723",
+        "c": "PPTP"
+      },
+      {
+        "n": "Port 5985",
+        "c": "WinRM HTTP"
+      },
+      {
+        "n": "Port 2181",
+        "c": "Apache ZooKeeper"
+      },
+      {
+        "n": "Port 6443",
+        "c": "Kubernetes API"
+      },
+      {
+        "n": "Port 9092",
+        "c": "Apache Kafka"
+      },
+      {
+        "n": "Port 2379",
+        "c": "etcd (Kubernetes)"
+      },
+      {
+        "n": "Port 8883",
+        "c": "MQTT TLS"
+      },
+      {
+        "n": "Port 1883",
+        "c": "MQTT"
+      },
+      {
+        "n": "Port 1433",
+        "c": "Microsoft SQL Server"
+      },
+      {
+        "n": "Port 137",
+        "c": "NetBIOS Name Service"
+      },
+      {
+        "n": "Port 179",
+        "c": "BGP (Border Gateway Protocol)"
+      },
+      {
+        "n": "Port 5060",
+        "c": "SIP (VoIP)"
+      },
+      {
+        "n": "Port 515",
+        "c": "LPD (Druckdienst)"
+      },
+      {
+        "n": "Port 631",
+        "c": "IPP (Internetdruck)"
+      },
+      {
+        "n": "Port 4333",
+        "c": "MySQL (HTTPS-Alt)"
+      },
+      {
+        "n": "Port 11211",
+        "c": "Memcached"
       }
     ]
   },
@@ -1282,6 +2258,62 @@
       {
         "n": ".env",
         "c": "Umgebungsvariablen"
+      },
+      {
+        "n": ".xml",
+        "c": "Markup/Daten"
+      },
+      {
+        "n": ".csv",
+        "c": "Tabellenformat"
+      },
+      {
+        "n": ".sql",
+        "c": "Datenbankabfrage"
+      },
+      {
+        "n": ".sh",
+        "c": "Shell-Skript"
+      },
+      {
+        "n": ".bat",
+        "c": "Windows-Batchdatei"
+      },
+      {
+        "n": ".dmg",
+        "c": "macOS-Installationsimage"
+      },
+      {
+        "n": ".yaml / .yml",
+        "c": "Konfiguration"
+      },
+      {
+        "n": ".toml",
+        "c": "Konfiguration"
+      },
+      {
+        "n": ".wasm",
+        "c": "WebAssembly"
+      },
+      {
+        "n": ".tsx",
+        "c": "TypeScript React"
+      },
+      {
+        "n": ".rs",
+        "c": "Rust"
+      },
+      {
+        "n": ".go",
+        "c": "Go"
+      },
+      {
+        "n": ".kt",
+        "c": "Kotlin"
+      },
+      {
+        "n": ".heic",
+        "c": "Bild (Apple-Format)"
       }
     ]
   },
@@ -1373,6 +2405,126 @@
       {
         "n": "Node-RED Add-on",
         "c": "Home Assistant"
+      },
+      {
+        "n": "Öffnet Türen per Bluetooth oder NFC",
+        "c": "Smartes Türschloss"
+      },
+      {
+        "n": "Erkennt Bewegung und sendet Push-Nachricht",
+        "c": "Bewegungsmelder"
+      },
+      {
+        "n": "Schaltet Licht per Sprache oder App",
+        "c": "Smart Bulb"
+      },
+      {
+        "n": "Steuert Temperatur automatisch",
+        "c": "Smartes Thermostat"
+      },
+      {
+        "n": "Überwacht Haustür per Kamera und Video-Türklingel",
+        "c": "Video-Türklingel"
+      },
+      {
+        "n": "Überwacht Energieverbrauch jedes Verbrauchers",
+        "c": "Smartes Energiemessgerät"
+      },
+      {
+        "n": "Reinigt Böden autonom und kehrt zur Ladestation",
+        "c": "Saugroboter"
+      },
+      {
+        "n": "Erkennt Rauch und löst Alarm aus",
+        "c": "Smarter Rauchmelder"
+      },
+      {
+        "n": "Öffnet und schließt Jalousien automatisch",
+        "c": "Smarte Rollläden"
+      },
+      {
+        "n": "Verbindet alle Smart-Home-Geräte zentral",
+        "c": "Smart-Home-Hub"
+      },
+      {
+        "n": "Wässert Pflanzen nach Feuchtigkeitssensor",
+        "c": "Smarte Bewässerung"
+      },
+      {
+        "n": "Zeigt Energieproduktion der Solaranlage live",
+        "c": "Solar-Monitor"
+      },
+      {
+        "n": "Erkennt Wasseraustritt frühzeitig",
+        "c": "Wasserlecksensor"
+      },
+      {
+        "n": "Zeigt Luftqualität (CO2, VOC)",
+        "c": "Luftqualitätssensor"
+      },
+      {
+        "n": "Regelt Ladezeit des E-Autos nach Stromtarif",
+        "c": "Smarte Ladestation"
+      },
+      {
+        "n": "Koppelt Geräte via Zigbee-Mesh-Netzwerk",
+        "c": "Zigbee-Bridge"
+      },
+      {
+        "n": "Steuert Audio in jedem Zimmer separat",
+        "c": "Multi-Room-Audio"
+      },
+      {
+        "n": "Verbindet Apple HomeKit, Google Home, Alexa",
+        "c": "Matter-Protokoll"
+      },
+      {
+        "n": "Überwacht Schlaf und Herzfrequenz im Bett",
+        "c": "Smarte Matratze"
+      },
+      {
+        "n": "Warnt vor Einbruch via Erschütterungssensor",
+        "c": "Erschütterungsmelder"
+      },
+      {
+        "n": "Zigbee2MQTT Koordinator",
+        "c": "Zigbee"
+      },
+      {
+        "n": "Philips Hue Bridge",
+        "c": "Zigbee"
+      },
+      {
+        "n": "IKEA Trådfri Gateway",
+        "c": "Zigbee"
+      },
+      {
+        "n": "Sonos Arc Soundbar",
+        "c": "WLAN"
+      },
+      {
+        "n": "Eufy RoboVac (WLAN)",
+        "c": "WLAN"
+      },
+      {
+        "n": "Google Nest Hub",
+        "c": "Google Home"
+      },
+      {
+        "n": "Amazon Echo Dot",
+        "c": "Amazon Alexa"
+      },
+      {
+        "n": "Apple HomePod Mini",
+        "c": "Apple HomeKit"
+      },
+      {
+        "n": "Fibaro Z-Wave Controller",
+        "c": "Z-Wave"
+      },
+      {
+        "n": "Bosch Smart Home Controller",
+        "c": "Bosch"
       }
     ]
   },
@@ -1506,6 +2658,78 @@
       {
         "n": "JWT",
         "c": "JSON Web Token"
+      },
+      {
+        "n": "HDD",
+        "c": "Hard Disk Drive"
+      },
+      {
+        "n": "USB",
+        "c": "Universal Serial Bus"
+      },
+      {
+        "n": "HDMI",
+        "c": "High-Definition Multimedia Interface"
+      },
+      {
+        "n": "UDP",
+        "c": "User Datagram Protocol"
+      },
+      {
+        "n": "IP",
+        "c": "Internet Protocol"
+      },
+      {
+        "n": "HTML",
+        "c": "HyperText Markup Language"
+      },
+      {
+        "n": "CSS",
+        "c": "Cascading Style Sheets"
+      },
+      {
+        "n": "GUI",
+        "c": "Graphical User Interface"
+      },
+      {
+        "n": "AI",
+        "c": "Artificial Intelligence"
+      },
+      {
+        "n": "ML",
+        "c": "Machine Learning"
+      },
+      {
+        "n": "ORM",
+        "c": "Object-Relational Mapping"
+      },
+      {
+        "n": "OAuth",
+        "c": "Open Authorization"
+      },
+      {
+        "n": "REST",
+        "c": "Representational State Transfer"
+      },
+      {
+        "n": "DRM",
+        "c": "Digital Rights Management"
+      },
+      {
+        "n": "MIME",
+        "c": "Multipurpose Internet Mail Extensions"
+      },
+      {
+        "n": "LDAP",
+        "c": "Lightweight Directory Access Protocol"
+      },
+      {
+        "n": "CSRF",
+        "c": "Cross-Site Request Forgery"
+      },
+      {
+        "n": "XSS",
+        "c": "Cross-Site Scripting"
       }
     ]
   },
@@ -1591,6 +2815,126 @@
       {
         "n": "Tony Hoare",
         "c": "Programmiersprachen & Verifikation (1980)"
+      },
+      {
+        "n": "John McCarthy",
+        "c": "Künstliche Intelligenz / Lisp (1971)"
+      },
+      {
+        "n": "Linus Torvalds",
+        "c": "Linux-Kernel — kein Turing, Linux-Torvalds"
+      },
+      {
+        "n": "John Backus",
+        "c": "Fortran & BNF-Grammatik (1977)"
+      },
+      {
+        "n": "Vint Cerf & Bob Kahn",
+        "c": "TCP/IP-Protokoll (2004)"
+      },
+      {
+        "n": "Leslie Lamport",
+        "c": "Verteilte Systeme / LaTeX (2013)"
+      },
+      {
+        "n": "Geoffrey Hinton",
+        "c": "Deep Learning / Neuronale Netze (2018)"
+      },
+      {
+        "n": "Yann LeCun",
+        "c": "Convolutional Neural Networks (2018)"
+      },
+      {
+        "n": "Judea Pearl",
+        "c": "Probabilistische Kausalität (2011)"
+      },
+      {
+        "n": "Michael Stonebraker",
+        "c": "Moderne Datenbankkonzepte (2014)"
+      },
+      {
+        "n": "Andrew Yao",
+        "c": "Komplexitätstheorie & Kryptographie (2000)"
+      },
+      {
+        "n": "Butler Lampson",
+        "c": "Personal Computing & Betriebssysteme (1992)"
+      },
+      {
+        "n": "Frederick Brooks Jr.",
+        "c": "IBM OS/360 & Mythischer Menschmonat (1999)"
+      },
+      {
+        "n": "Edmund Clarke, Allen Emerson, Joseph Sifakis",
+        "c": "Model Checking (2007)"
+      },
+      {
+        "n": "Charles Thacker",
+        "c": "Personal Computer (2009)"
+      },
+      {
+        "n": "Leslie Valiant",
+        "c": "Theorie des maschinellen Lernens (2010)"
+      },
+      {
+        "n": "Silvio Micali, Shafi Goldwasser",
+        "c": "Kryptografie (2012)"
+      },
+      {
+        "n": "Whitfield Diffie, Martin Hellman",
+        "c": "Public-Key-Kryptografie (2015)"
+      },
+      {
+        "n": "John Hennessy, David Patterson",
+        "c": "RISC-Architektur (2017)"
+      },
+      {
+        "n": "Yoshua Bengio, Geoffrey Hinton, Yann LeCun",
+        "c": "Deep Learning (2018)"
+      },
+      {
+        "n": "Patrick Hanrahan, Edwin Catmull",
+        "c": "3D-Computergrafik (2019)"
+      },
+      {
+        "n": "Alfred Aho, Jeffrey Ullman",
+        "c": "Algorithmen und Sprachen (2020)"
+      },
+      {
+        "n": "Jack Dongarra",
+        "c": "Hochleistungsrechnen (2021)"
+      },
+      {
+        "n": "Robert Metcalfe",
+        "c": "Ethernet (2022)"
+      },
+      {
+        "n": "Avi Wigderson",
+        "c": "Komplexitätstheorie (2023)"
+      },
+      {
+        "n": "Yann LeCun / Geoffrey Hinton / Yoshua Bengio",
+        "c": "Deep Learning (2018)"
+      },
+      {
+        "n": "Silvio Micali / Shafi Goldwasser",
+        "c": "Kryptografie (2012)"
+      },
+      {
+        "n": "Frances E. Allen",
+        "c": "Compileroptimierung (2006)"
+      },
+      {
+        "n": "Silvio Micali",
+        "c": "Kryptographie & Zero-Knowledge Proofs (2012)"
+      },
+      {
+        "n": "Vinton Cerf & Robert Kahn",
+        "c": "TCP/IP-Protokoll (2004)"
+      },
+      {
+        "n": "Edmund M. Clarke",
+        "c": "Model Checking (2007)"
       }
     ]
   },
@@ -1682,6 +3026,126 @@
       {
         "n": "Missile Command",
         "c": "1980er"
+      },
+      {
+        "n": "Tennis for Two (1958) – Oszilloskop-Spiel",
+        "c": "USA"
+      },
+      {
+        "n": "Spacewar! (1962) – PDP-1 Universität",
+        "c": "USA"
+      },
+      {
+        "n": "Galaxy Game (1971) – erstes Münzspiel-Spacewar",
+        "c": "USA"
+      },
+      {
+        "n": "Gran Trak 10 (1974) – erstes Rennspiel Atari",
+        "c": "USA"
+      },
+      {
+        "n": "Space Invaders (1978) – Taito",
+        "c": "Japan"
+      },
+      {
+        "n": "Pac-Man (1980) – Namco",
+        "c": "Japan"
+      },
+      {
+        "n": "Donkey Kong (1981) – Nintendo",
+        "c": "Japan"
+      },
+      {
+        "n": "Dragon's Lair (1983) – erstes Laserdisc-Spiel",
+        "c": "USA"
+      },
+      {
+        "n": "Tetris (1984) – Pajitnov, Moskauer Institut",
+        "c": "Russland"
+      },
+      {
+        "n": "Super Mario Bros. (1985) – Nintendo NES",
+        "c": "Japan"
+      },
+      {
+        "n": "The Legend of Zelda (1986) – Nintendo",
+        "c": "Japan"
+      },
+      {
+        "n": "SimCity (1989) – Maxis",
+        "c": "USA"
+      },
+      {
+        "n": "Sonic the Hedgehog (1991) – Sega",
+        "c": "Japan"
+      },
+      {
+        "n": "Wolfenstein 3D (1992) – id Software (erstes FPS)",
+        "c": "USA"
+      },
+      {
+        "n": "Doom (1993) – id Software",
+        "c": "USA"
+      },
+      {
+        "n": "Warcraft (1994) – Blizzard",
+        "c": "USA"
+      },
+      {
+        "n": "Tomb Raider (1996) – Core Design",
+        "c": "Vereinigtes Königreich"
+      },
+      {
+        "n": "Resident Evil (1996) – Capcom",
+        "c": "Japan"
+      },
+      {
+        "n": "GoldenEye 007 (1997) – Rare",
+        "c": "Vereinigtes Königreich"
+      },
+      {
+        "n": "Half-Life (1998) – Valve",
+        "c": "USA"
+      },
+      {
+        "n": "Tennis for Two (Oscilloscope)",
+        "c": "1950er"
+      },
+      {
+        "n": "Space Invaders (Taito)",
+        "c": "1970er"
+      },
+      {
+        "n": "Asteroids (Atari)",
+        "c": "1970er"
+      },
+      {
+        "n": "Donkey Kong (Nintendo)",
+        "c": "1980er"
+      },
+      {
+        "n": "Tetris (Pajitnov)",
+        "c": "1980er"
+      },
+      {
+        "n": "Doom (id Software)",
+        "c": "1990er"
+      },
+      {
+        "n": "Quake (id Software)",
+        "c": "1990er"
+      },
+      {
+        "n": "Half-Life (Valve)",
+        "c": "1990er"
+      },
+      {
+        "n": "Spacewar! (PDP-1)",
+        "c": "1960er"
+      },
+      {
+        "n": "Pong (Atari, Arcade)",
+        "c": "1970er"
       }
     ]
   },
@@ -1773,6 +3237,126 @@
       {
         "n": "LockBit 3.0",
         "c": "Ransomware"
+      },
+      {
+        "n": "Verschlüsselt Dateien und fordert Lösegeld",
+        "c": "Ransomware"
+      },
+      {
+        "n": "Tarnt sich als legitime Software, enthält Backdoor",
+        "c": "Trojaner"
+      },
+      {
+        "n": "Verbreitet sich selbst ohne Benutzeraktion",
+        "c": "Computerwurm"
+      },
+      {
+        "n": "Fügt sich in andere Programme ein und repliziert sich",
+        "c": "Computervirus"
+      },
+      {
+        "n": "Protokolliert alle Tastenanschläge des Benutzers",
+        "c": "Keylogger"
+      },
+      {
+        "n": "Gibt Angreifer verdeckten Fernzugriff auf System",
+        "c": "Rootkit"
+      },
+      {
+        "n": "Sendet heimlich persönliche Daten weiter",
+        "c": "Spyware"
+      },
+      {
+        "n": "Zeigt unerwünschte Werbung im Browser",
+        "c": "Adware"
+      },
+      {
+        "n": "Macht Rechner zum Zombie-Spam-Versender",
+        "c": "Bot/Botnet"
+      },
+      {
+        "n": "Überwacht und stiehlt Zahlungskartendaten",
+        "c": "Financial Malware"
+      },
+      {
+        "n": "Nutzt Browser-Ressourcen für Krypto-Mining",
+        "c": "Cryptojacker"
+      },
+      {
+        "n": "Täuscht Antivirensoftware durch Code-Verschleierung",
+        "c": "Polymorphe Malware"
+      },
+      {
+        "n": "Schädigt physische Hardware (z.B. Stuxnet)",
+        "c": "Cyber-Waffe"
+      },
+      {
+        "n": "Blockiert Systemzugang komplett (Lockscreen)",
+        "c": "Locker-Ransomware"
+      },
+      {
+        "n": "Löscht Dateien unwiderbringlich",
+        "c": "Wiper-Malware"
+      },
+      {
+        "n": "Protokolliert Webcam und Mikrofon heimlich",
+        "c": "Stalkerware"
+      },
+      {
+        "n": "Imitiert BSOD und fordert Zahlung",
+        "c": "Scareware"
+      },
+      {
+        "n": "Versteckt sich im UEFI-Firmware, kaum entfernbar",
+        "c": "Bootkit"
+      },
+      {
+        "n": "Wartet auf Trigger (Datum/Ereignis) vor Aktivierung",
+        "c": "Logic Bomb"
+      },
+      {
+        "n": "Verbreitet sich via Office-Makros",
+        "c": "Makro-Virus"
+      },
+      {
+        "n": "Stuxnet (2010)",
+        "c": "Wurm / Cyberwaffe"
+      },
+      {
+        "n": "Mirai Botnet (2016)",
+        "c": "Botnet (IoT)"
+      },
+      {
+        "n": "NotPetya (2017)",
+        "c": "Wiper / Ransomware"
+      },
+      {
+        "n": "Zeus (2007)",
+        "c": "Trojaner (Banking)"
+      },
+      {
+        "n": "Conficker (2008)",
+        "c": "Wurm"
+      },
+      {
+        "n": "BlackEnergy (2015)",
+        "c": "Trojaner (Infrastruktur)"
+      },
+      {
+        "n": "Emotet (2014)",
+        "c": "Trojaner / Downloader"
+      },
+      {
+        "n": "Ryuk (2018)",
+        "c": "Ransomware"
+      },
+      {
+        "n": "Pegasus (NSO Group)",
+        "c": "Spyware"
+      },
+      {
+        "n": "Carbanak (2014)",
+        "c": "APT / Banking-Trojaner"
       }
     ]
   },
@@ -1858,6 +3442,126 @@
       {
         "n": "Tumblr",
         "c": "Automattic / WordPress"
+      },
+      {
+        "n": "Microsoft kauft Activision Blizzard (69 Mrd. USD, 2023)",
+        "c": "USA"
+      },
+      {
+        "n": "Microsoft kauft LinkedIn (26,2 Mrd. USD, 2016)",
+        "c": "USA"
+      },
+      {
+        "n": "Facebook kauft WhatsApp (19 Mrd. USD, 2014)",
+        "c": "USA"
+      },
+      {
+        "n": "Amazon kauft MGM (8,5 Mrd. USD, 2021)",
+        "c": "USA"
+      },
+      {
+        "n": "Google kauft YouTube (1,65 Mrd. USD, 2006)",
+        "c": "USA"
+      },
+      {
+        "n": "Disney kauft Pixar (7,4 Mrd. USD, 2006)",
+        "c": "USA"
+      },
+      {
+        "n": "Oracle kauft Sun Microsystems (7,4 Mrd., 2010)",
+        "c": "USA"
+      },
+      {
+        "n": "HP kauft Compaq (24 Mrd. USD, 2002)",
+        "c": "USA"
+      },
+      {
+        "n": "Dell kauft EMC (67 Mrd. USD, 2016)",
+        "c": "USA"
+      },
+      {
+        "n": "Salesforce kauft Slack (27,7 Mrd. USD, 2021)",
+        "c": "USA"
+      },
+      {
+        "n": "Apple kauft Beats (3 Mrd. USD, 2014)",
+        "c": "USA"
+      },
+      {
+        "n": "Amazon kauft Twitch (970 Mio. USD, 2014)",
+        "c": "USA"
+      },
+      {
+        "n": "PayPal kauft Venmo (via Braintree, 800 Mio., 2013)",
+        "c": "USA"
+      },
+      {
+        "n": "Elon Musk kauft Twitter (44 Mrd. USD, 2022)",
+        "c": "USA"
+      },
+      {
+        "n": "NVIDIA kauft Arm (gescheitert, 66 Mrd., 2022)",
+        "c": "USA"
+      },
+      {
+        "n": "Intel kauft Altera (16,7 Mrd. USD, 2015)",
+        "c": "USA"
+      },
+      {
+        "n": "Qualcomm kauft NXP (gescheitert, 44 Mrd., 2019)",
+        "c": "USA"
+      },
+      {
+        "n": "Broadcom kauft VMware (61 Mrd. USD, 2023)",
+        "c": "USA"
+      },
+      {
+        "n": "Adobe kauft Figma (gescheitert, 20 Mrd., 2023)",
+        "c": "USA"
+      },
+      {
+        "n": "Amazon kauft Whole Foods (13,7 Mrd. USD, 2017)",
+        "c": "USA"
+      },
+      {
+        "n": "Shazam",
+        "c": "Apple"
+      },
+      {
+        "n": "Nokia Handysparte",
+        "c": "Microsoft"
+      },
+      {
+        "n": "Ring (Doorbell)",
+        "c": "Amazon"
+      },
+      {
+        "n": "Zappos",
+        "c": "Amazon"
+      },
+      {
+        "n": "Waze",
+        "c": "Google/Alphabet"
+      },
+      {
+        "n": "Nest Labs",
+        "c": "Google/Alphabet"
+      },
+      {
+        "n": "Mojang",
+        "c": "Microsoft"
+      },
+      {
+        "n": "Siri (Nuance-Basis)",
+        "c": "Apple"
+      },
+      {
+        "n": "Nokia (Mobilfon-Sparte)",
+        "c": "Microsoft"
+      },
+      {
+        "n": "aQuantive (Werbeplattform)",
+        "c": "Microsoft"
       }
     ]
   }

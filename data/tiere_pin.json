@@ -206,6 +206,51 @@
         "n": "Omo NP (Äthiopien Büffel)",
         "lat": 5.5,
         "lng": 36.1
+      },
+      {
+        "n": "Tarangire NP (Tansania)",
+        "lat": -3.83,
+        "lng": 36.0
+      },
+      {
+        "n": "Amboseli NP (Kenia)",
+        "lat": -2.65,
+        "lng": 37.26
+      },
+      {
+        "n": "Etosha NP (Namibia)",
+        "lat": -18.86,
+        "lng": 16.33
+      },
+      {
+        "n": "Hwange NP (Simbabwe)",
+        "lat": -18.63,
+        "lng": 26.47
+      },
+      {
+        "n": "Mikumi NP (Tansania)",
+        "lat": -7.4,
+        "lng": 37.0
+      },
+      {
+        "n": "Ngorongoro (Tansania)",
+        "lat": -3.17,
+        "lng": 35.5
+      },
+      {
+        "n": "Bwindi NP (Uganda)",
+        "lat": -1.07,
+        "lng": 29.7
+      },
+      {
+        "n": "Volcanoes NP (Ruanda)",
+        "lat": -1.47,
+        "lng": 29.5
+      },
+      {
+        "n": "Virunga NP (DRK)",
+        "lat": -0.5,
+        "lng": 29.5
       }
     ]
   },
@@ -416,6 +461,51 @@
         "n": "Berglöwe (Big Bend NP, Texas)",
         "lat": 29.25,
         "lng": -103.25
+      },
+      {
+        "n": "Borneo (Malaysia/Indonesien)",
+        "lat": 1.0,
+        "lng": 114.0
+      },
+      {
+        "n": "Sundarbans (Indien/Bangladesch)",
+        "lat": 22.0,
+        "lng": 89.0
+      },
+      {
+        "n": "Pantanal (Brasilien)",
+        "lat": -16.5,
+        "lng": -56.0
+      },
+      {
+        "n": "Ranthambore NP (Indien)",
+        "lat": 26.0,
+        "lng": 76.5
+      },
+      {
+        "n": "Gir Forest NP (Indien)",
+        "lat": 21.12,
+        "lng": 70.8
+      },
+      {
+        "n": "Kafue NP (Sambia)",
+        "lat": -14.5,
+        "lng": 25.7
+      },
+      {
+        "n": "Masai Mara (Kenia)",
+        "lat": -1.49,
+        "lng": 35.14
+      },
+      {
+        "n": "Queen Elizabeth NP (Uganda)",
+        "lat": 0.0,
+        "lng": 30.0
+      },
+      {
+        "n": "Tsavo NP (Kenia)",
+        "lat": -3.34,
+        "lng": 38.46
       }
     ]
   },
@@ -621,6 +711,56 @@
         "n": "Maulwurfsgrille (Azoren)",
         "lat": 38.7,
         "lng": -27.2
+      },
+      {
+        "n": "Nilpferd (Kolumbien, eingeschleppt)",
+        "lat": 5.9,
+        "lng": -74.8
+      },
+      {
+        "n": "Nutria (Europa, Südamerika)",
+        "lat": 51.0,
+        "lng": 10.0
+      },
+      {
+        "n": "Grauer Eichhörnchen (Großbritannien)",
+        "lat": 52.0,
+        "lng": -1.5
+      },
+      {
+        "n": "Amerikanischer Nerz (Europa)",
+        "lat": 55.0,
+        "lng": 25.0
+      },
+      {
+        "n": "Koi-Karpfen (Australien)",
+        "lat": -34.0,
+        "lng": 148.0
+      },
+      {
+        "n": "Mongolose (Fidschi)",
+        "lat": -18.0,
+        "lng": 178.0
+      },
+      {
+        "n": "Wollhandkrabbe (Deutschland, Elbe)",
+        "lat": 53.5,
+        "lng": 10.0
+      },
+      {
+        "n": "Tigermuschel (Mittelmeer)",
+        "lat": 41.0,
+        "lng": 16.0
+      },
+      {
+        "n": "Silberkarpfen (Mississippi, USA)",
+        "lat": 38.0,
+        "lng": -90.0
+      },
+      {
+        "n": "Waschbär (Deutschland)",
+        "lat": 51.2,
+        "lng": 9.5
       }
     ]
   },
@@ -831,6 +971,51 @@
         "n": "Vänern See (Schweden Herbstzug)",
         "lat": 58.9,
         "lng": 13.4
+      },
+      {
+        "n": "Zugscheide Bosporus (Türkei)",
+        "lat": 41.0,
+        "lng": 29.0
+      },
+      {
+        "n": "Gibraltar (Spanien/UK)",
+        "lat": 36.14,
+        "lng": -5.35
+      },
+      {
+        "n": "Eilat (Israel, Rotmeer)",
+        "lat": 29.56,
+        "lng": 34.95
+      },
+      {
+        "n": "Cape May (USA, NJ)",
+        "lat": 38.93,
+        "lng": -74.9
+      },
+      {
+        "n": "Hawk Mountain (USA, PA)",
+        "lat": 40.64,
+        "lng": -75.99
+      },
+      {
+        "n": "Darién (Panama)",
+        "lat": 8.5,
+        "lng": -77.5
+      },
+      {
+        "n": "Bharatpur (Indien)",
+        "lat": 27.17,
+        "lng": 77.52
+      },
+      {
+        "n": "Point Pelee (Kanada)",
+        "lat": 41.95,
+        "lng": -82.52
+      },
+      {
+        "n": "Camargue (Frankreich, Flamingo-Rastplatz)",
+        "lat": 43.5,
+        "lng": 4.5
       }
     ]
   },
@@ -1041,6 +1226,51 @@
         "n": "Hausnilpferd (Kongo-Becken)",
         "lat": -4.0,
         "lng": 21.5
+      },
+      {
+        "n": "Abyssinien (Katze, Äthiopien)",
+        "lat": 9.0,
+        "lng": 40.0
+      },
+      {
+        "n": "Persische Katze (Iran)",
+        "lat": 32.0,
+        "lng": 53.0
+      },
+      {
+        "n": "Siamkatze (Thailand)",
+        "lat": 15.87,
+        "lng": 100.99
+      },
+      {
+        "n": "Bengalkatze (Kreuzung, Indien)",
+        "lat": 20.0,
+        "lng": 77.0
+      },
+      {
+        "n": "Labrador Retriever (Neufundland)",
+        "lat": 53.0,
+        "lng": -60.0
+      },
+      {
+        "n": "Dalmatiner (Kroatien)",
+        "lat": 43.51,
+        "lng": 16.44
+      },
+      {
+        "n": "Chow-Chow (China)",
+        "lat": 35.0,
+        "lng": 105.0
+      },
+      {
+        "n": "Irischer Wolfshund (Irland)",
+        "lat": 53.0,
+        "lng": -8.0
+      },
+      {
+        "n": "Alaskan Malamute (Alaska, USA)",
+        "lat": 64.0,
+        "lng": -153.0
       }
     ]
   },
@@ -1256,6 +1486,46 @@
         "n": "Komodo (Indonesien)",
         "lat": -4.0,
         "lng": 118.0
+      },
+      {
+        "n": "Jaguar → Mexiko",
+        "lat": 23.6,
+        "lng": -102.5
+      },
+      {
+        "n": "Kondor → Kolumbien",
+        "lat": 4.57,
+        "lng": -74.3
+      },
+      {
+        "n": "Lama → Bolivien",
+        "lat": -16.5,
+        "lng": -68.15
+      },
+      {
+        "n": "Stier → Spanien",
+        "lat": 40.42,
+        "lng": -3.7
+      },
+      {
+        "n": "Grizzlybär → Russland",
+        "lat": 61.52,
+        "lng": 105.32
+      },
+      {
+        "n": "Springbock → Südafrika",
+        "lat": -29.0,
+        "lng": 25.0
+      },
+      {
+        "n": "Weißkopfseeadler → USA",
+        "lat": 38.9,
+        "lng": -95.0
+      },
+      {
+        "n": "Kiwi → Neuseeland",
+        "lat": -40.9,
+        "lng": 174.9
       }
     ]
   },
@@ -1466,6 +1736,51 @@
         "n": "Nashorn-Makak (Lore Lindu, Sulawesi)",
         "lat": -1.5,
         "lng": 120.2
+      },
+      {
+        "n": "Dian Fossey Gorilla Fund (Ruanda)",
+        "lat": -1.47,
+        "lng": 29.51
+      },
+      {
+        "n": "Kibale Forest NP (Uganda)",
+        "lat": 0.45,
+        "lng": 30.4
+      },
+      {
+        "n": "Tai Forest NP (Elfenbeinküste)",
+        "lat": 5.7,
+        "lng": -7.3
+      },
+      {
+        "n": "Borneo Orangutan Survival (Indonesien)",
+        "lat": -0.5,
+        "lng": 114.0
+      },
+      {
+        "n": "Tanjung Puting NP (Borneo)",
+        "lat": -2.7,
+        "lng": 111.9
+      },
+      {
+        "n": "Gombe NP (Tansania)",
+        "lat": -4.7,
+        "lng": 29.63
+      },
+      {
+        "n": "Mahale Mountains NP (Tansania)",
+        "lat": -6.15,
+        "lng": 29.75
+      },
+      {
+        "n": "Ranomafana NP (Madagaskar)",
+        "lat": -21.26,
+        "lng": 47.38
+      },
+      {
+        "n": "Andasibe-Mantadia (Madagaskar)",
+        "lat": -18.94,
+        "lng": 48.41
       }
     ]
   },
@@ -1676,6 +1991,51 @@
         "n": "Weißer Hai (Chatham Islands, NZ)",
         "lat": -44.0,
         "lng": -176.5
+      },
+      {
+        "n": "Cocos Island (Costa Rica)",
+        "lat": 5.53,
+        "lng": -87.06
+      },
+      {
+        "n": "Galapagos (Ecuador)",
+        "lat": -0.95,
+        "lng": -90.96
+      },
+      {
+        "n": "Aliwal Shoal (Südafrika)",
+        "lat": -30.28,
+        "lng": 30.86
+      },
+      {
+        "n": "Palau (Mikronesien)",
+        "lat": 7.51,
+        "lng": 134.58
+      },
+      {
+        "n": "Florida Keys (USA)",
+        "lat": 24.67,
+        "lng": -81.37
+      },
+      {
+        "n": "Shark Bay (Australien)",
+        "lat": -25.88,
+        "lng": 113.66
+      },
+      {
+        "n": "Fakarava (Französisch-Polynesien)",
+        "lat": -16.05,
+        "lng": -145.64
+      },
+      {
+        "n": "Beqa Lagoon (Fidschi)",
+        "lat": -18.38,
+        "lng": 178.03
+      },
+      {
+        "n": "Tiger Beach (Bahamas)",
+        "lat": 26.8,
+        "lng": -78.8
       }
     ]
   },
@@ -1886,6 +2246,51 @@
         "n": "Grizzly (Tongass NF, Alaska)",
         "lat": 57.5,
         "lng": -135.5
+      },
+      {
+        "n": "Yellowstone NP (USA)",
+        "lat": 44.43,
+        "lng": -110.59
+      },
+      {
+        "n": "Katmai NP (Alaska)",
+        "lat": 58.5,
+        "lng": -154.0
+      },
+      {
+        "n": "Bialowieza (Polen/Belarus)",
+        "lat": 52.7,
+        "lng": 23.88
+      },
+      {
+        "n": "Tatra NP (Slowakei/Polen)",
+        "lat": 49.18,
+        "lng": 20.1
+      },
+      {
+        "n": "Torres del Paine (Chile)",
+        "lat": -51.0,
+        "lng": -73.0
+      },
+      {
+        "n": "Great Bear Rainforest (Kanada)",
+        "lat": 52.0,
+        "lng": -127.0
+      },
+      {
+        "n": "Svalbard (Norwegen)",
+        "lat": 77.87,
+        "lng": 20.97
+      },
+      {
+        "n": "Churchill (Kanada, Eisbären)",
+        "lat": 58.77,
+        "lng": -94.17
+      },
+      {
+        "n": "Hokkaido (Japan, Braunbär)",
+        "lat": 43.06,
+        "lng": 141.35
       }
     ]
   },
@@ -2096,6 +2501,51 @@
         "n": "Kakariki-Sittich (Chatham Islands)",
         "lat": -44.0,
         "lng": -176.3
+      },
+      {
+        "n": "Komodo (Indonesien)",
+        "lat": -8.55,
+        "lng": 119.45
+      },
+      {
+        "n": "Socotra (Jemen)",
+        "lat": 12.46,
+        "lng": 53.82
+      },
+      {
+        "n": "Kanarische Inseln (Spanien)",
+        "lat": 28.29,
+        "lng": -16.62
+      },
+      {
+        "n": "Borneo (Malaysia)",
+        "lat": 1.0,
+        "lng": 114.0
+      },
+      {
+        "n": "Sri Lanka",
+        "lat": 7.87,
+        "lng": 80.77
+      },
+      {
+        "n": "Neuguinea (PNG)",
+        "lat": -6.31,
+        "lng": 143.96
+      },
+      {
+        "n": "Cuba",
+        "lat": 21.52,
+        "lng": -79.0
+      },
+      {
+        "n": "Sumatra (Indonesien)",
+        "lat": -0.59,
+        "lng": 101.34
+      },
+      {
+        "n": "Karibik-Inseln (allgemein)",
+        "lat": 15.0,
+        "lng": -66.0
       }
     ]
   },
@@ -2232,6 +2682,236 @@
         "n": "Englisches Vollblut",
         "lat": 52.0,
         "lng": -1.0
+      },
+      {
+        "n": "Shire Horse",
+        "lat": 52.5,
+        "lng": -1.5
+      },
+      {
+        "n": "Clydesdale",
+        "lat": 55.8,
+        "lng": -4.2
+      },
+      {
+        "n": "Arabisches Vollblut (Arabische Halbinsel)",
+        "lat": 24.0,
+        "lng": 45.0
+      },
+      {
+        "n": "Thoroughbred (England)",
+        "lat": 52.0,
+        "lng": -1.5
+      },
+      {
+        "n": "Appaloosa (Nordamerika, Nez Perce)",
+        "lat": 46.0,
+        "lng": -116.0
+      },
+      {
+        "n": "Camargue (Frankreich)",
+        "lat": 43.5,
+        "lng": 4.5
+      },
+      {
+        "n": "Lipizzaner (Österreich/Slowenien)",
+        "lat": 45.87,
+        "lng": 13.94
+      },
+      {
+        "n": "Trakehner (Ostpreußen, jetzt Polen)",
+        "lat": 54.57,
+        "lng": 20.73
+      },
+      {
+        "n": "Haflinger (Südtirol, Italien)",
+        "lat": 46.8,
+        "lng": 11.3
+      },
+      {
+        "n": "Paso Fino (Kolumbien/Puerto Rico)",
+        "lat": 4.57,
+        "lng": -74.3
+      },
+      {
+        "n": "Mustang (Western USA)",
+        "lat": 40.0,
+        "lng": -116.0
+      },
+      {
+        "n": "Friese (Niederlande)",
+        "lat": 53.0,
+        "lng": 5.75
+      },
+      {
+        "n": "Lusitano (Portugal)",
+        "lat": 39.4,
+        "lng": -8.2
+      },
+      {
+        "n": "Marwari (Indien, Rajasthan)",
+        "lat": 26.89,
+        "lng": 75.8
+      },
+      {
+        "n": "Akhal-Teké (Turkmenistan)",
+        "lat": 39.07,
+        "lng": 58.0
+      },
+      {
+        "n": "Connemara Pony (Irland)",
+        "lat": 53.45,
+        "lng": -9.9
+      },
+      {
+        "n": "Quarter Horse (Texas, USA)",
+        "lat": 31.0,
+        "lng": -100.0
+      },
+      {
+        "n": "Shetland Pony (Schottland)",
+        "lat": 60.3,
+        "lng": -1.2
+      },
+      {
+        "n": "Noriker (Österreich)",
+        "lat": 47.1,
+        "lng": 13.5
+      },
+      {
+        "n": "Kladruber (Tschechien)",
+        "lat": 50.07,
+        "lng": 15.8
+      },
+      {
+        "n": "Paint Horse (USA)",
+        "lat": 35.0,
+        "lng": -97.0
+      },
+      {
+        "n": "Mangalarga Marchador (Brasilien)",
+        "lat": -18.0,
+        "lng": -44.0
+      },
+      {
+        "n": "Barb (Nordafrika, Marokko)",
+        "lat": 32.0,
+        "lng": -5.0
+      },
+      {
+        "n": "Kyrgyz Horse (Kirgisistan)",
+        "lat": 41.2,
+        "lng": 74.77
+      },
+      {
+        "n": "Haflinger (Hafling, Südtirol)",
+        "lat": 46.6,
+        "lng": 11.2
+      },
+      {
+        "n": "Noriker (Norikum, Österreich)",
+        "lat": 47.0,
+        "lng": 13.5
+      },
+      {
+        "n": "Lipizzaner (Lipica, Slowenien)",
+        "lat": 45.5,
+        "lng": 13.8
+      },
+      {
+        "n": "Andalusier PRE (Jerez, Spanien)",
+        "lat": 36.68,
+        "lng": -6.13
+      },
+      {
+        "n": "Camargue-Pferd (Südfrankreich)",
+        "lat": 43.5,
+        "lng": 4.6
+      },
+      {
+        "n": "Tinker/Gypsy Cob (Irland)",
+        "lat": 53.3,
+        "lng": -8.0
+      },
+      {
+        "n": "Shire Horse (Midlands, England)",
+        "lat": 52.6,
+        "lng": -1.5
+      },
+      {
+        "n": "Clydesdale (Schottland)",
+        "lat": 55.8,
+        "lng": -3.8
+      },
+      {
+        "n": "Suffolk Punch (Suffolk, England)",
+        "lat": 52.2,
+        "lng": 1.2
+      },
+      {
+        "n": "Trakehner (Trakehnen, Ostpreußen)",
+        "lat": 54.6,
+        "lng": 22.3
+      },
+      {
+        "n": "Hanoverian (Hannover, Deutschland)",
+        "lat": 52.4,
+        "lng": 9.7
+      },
+      {
+        "n": "Holsteiner (Schleswig-Holstein)",
+        "lat": 54.3,
+        "lng": 9.7
+      },
+      {
+        "n": "Oldenburg (Oldenburg, Deutschland)",
+        "lat": 53.1,
+        "lng": 8.2
+      },
+      {
+        "n": "KWPN Warmblut (Holland)",
+        "lat": 52.1,
+        "lng": 5.3
+      },
+      {
+        "n": "BWP Belgisches Warmblut",
+        "lat": 50.8,
+        "lng": 4.3
+      },
+      {
+        "n": "Swedish Warmblood",
+        "lat": 59.3,
+        "lng": 18.1
+      },
+      {
+        "n": "Danish Warmblood",
+        "lat": 55.7,
+        "lng": 12.6
+      },
+      {
+        "n": "Zangersheide (Belgien)",
+        "lat": 50.7,
+        "lng": 5.7
+      },
+      {
+        "n": "Orlov-Traber (Russland)",
+        "lat": 55.8,
+        "lng": 37.6
+      },
+      {
+        "n": "Don-Pferd (Südrussland)",
+        "lat": 47.5,
+        "lng": 41.0
+      },
+      {
+        "n": "Akhal-Teke (Turkmenistan)",
+        "lat": 38.0,
+        "lng": 58.0
+      },
+      {
+        "n": "Kabardinisches Pferd (Nordkaukasus)",
+        "lat": 43.5,
+        "lng": 43.6
       }
     ]
   }

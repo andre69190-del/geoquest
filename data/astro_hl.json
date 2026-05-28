@@ -126,6 +126,82 @@
       {
         "name": "Hygiea (Asteroid)",
         "val": 430
+      },
+      {
+        "name": "Mond (Erde)",
+        "val": 3474
+      },
+      {
+        "name": "Kallisto (Jupitermond)",
+        "val": 4820
+      },
+      {
+        "name": "Pluto",
+        "val": 2377
+      },
+      {
+        "name": "Eris",
+        "val": 2326
+      },
+      {
+        "name": "Ceres",
+        "val": 945
+      },
+      {
+        "name": "Haumea",
+        "val": 1960
+      },
+      {
+        "name": "Makemake",
+        "val": 1430
+      },
+      {
+        "name": "Ariel (Uranus-Mond)",
+        "val": 1158
+      },
+      {
+        "name": "Umbriel (Uranus-Mond)",
+        "val": 1169
+      },
+      {
+        "name": "Rhea (Saturn-Mond)",
+        "val": 1527
+      },
+      {
+        "name": "Oberon (Uranus-Mond)",
+        "val": 1523
+      },
+      {
+        "name": "Titania (Uranus-Mond)",
+        "val": 1578
+      },
+      {
+        "name": "Dione (Saturn-Mond)",
+        "val": 1123
+      },
+      {
+        "name": "Tethys (Saturn-Mond)",
+        "val": 1066
+      },
+      {
+        "name": "Iapetus (Saturn-Mond)",
+        "val": 1469
+      },
+      {
+        "name": "Charon (Pluto-Mond)",
+        "val": 1212
+      },
+      {
+        "name": "Mimas (Saturn-Mond)",
+        "val": 396
+      },
+      {
+        "name": "Enceladus (Saturn-Mond)",
+        "val": 504
+      },
+      {
+        "name": "Miranda (Uranus-Mond)",
+        "val": 472
       }
     ]
   },
@@ -240,6 +316,98 @@
       {
         "name": "Chaos (TNO)",
         "val": 0
+      },
+      {
+        "name": "Orcus (KBO)",
+        "val": 1
+      },
+      {
+        "name": "Quaoar (KBO)",
+        "val": 1
+      },
+      {
+        "name": "Dinkinesh (Asteroid)",
+        "val": 1
+      },
+      {
+        "name": "Ida (Asteroid)",
+        "val": 1
+      },
+      {
+        "name": "243 Ida (Dactyl)",
+        "val": 1
+      },
+      {
+        "name": "Sedna",
+        "val": 0
+      },
+      {
+        "name": "Gonggong (KBO)",
+        "val": 1
+      },
+      {
+        "name": "Ixion (Plutino)",
+        "val": 0
+      },
+      {
+        "name": "Arrokoth (Kuipergürtel)",
+        "val": 0
+      },
+      {
+        "name": "Salacia",
+        "val": 1
+      },
+      {
+        "name": "Varuna",
+        "val": 0
+      },
+      {
+        "name": "Pluto (Zwergplanet)",
+        "val": 5
+      },
+      {
+        "name": "Eris (Zwergplanet)",
+        "val": 1
+      },
+      {
+        "name": "Haumea (Zwergplanet)",
+        "val": 2
+      },
+      {
+        "name": "Makemake (Zwergplanet)",
+        "val": 1
+      },
+      {
+        "name": "Ceres (Zwergplanet)",
+        "val": 0
+      },
+      {
+        "name": "Asteroid Chariklo (Zentaur)",
+        "val": 0
+      },
+      {
+        "name": "Asteroid Patroclus",
+        "val": 1
+      },
+      {
+        "name": "Asteroid Menoetius",
+        "val": 1
+      },
+      {
+        "name": "Asteroid Eurybates",
+        "val": 1
+      },
+      {
+        "name": "Trans-Neptunisches Objekt Vanth",
+        "val": 1
+      },
+      {
+        "name": "Zwergplanet Weywot (Quaoar)",
+        "val": 1
+      },
+      {
+        "name": "Zwergplanet Xiangliu (Gonggong)",
+        "val": 1
       }
     ]
   },
@@ -358,6 +526,94 @@
       {
         "name": "2002 TX300 (TNO)",
         "val": 6434
+      },
+      {
+        "name": "Ceres (Zwergplanet)",
+        "val": 414
+      },
+      {
+        "name": "Pluto (Perihelion)",
+        "val": 4437
+      },
+      {
+        "name": "Haumea",
+        "val": 6452
+      },
+      {
+        "name": "Makemake",
+        "val": 6850
+      },
+      {
+        "name": "Eris (mittlere Distanz)",
+        "val": 10120
+      },
+      {
+        "name": "Sedna (Perihelion)",
+        "val": 11400
+      },
+      {
+        "name": "Sedna (Aphelion)",
+        "val": 140000
+      },
+      {
+        "name": "Voyager 1 (aktuelle Dist., 2024)",
+        "val": 23500
+      },
+      {
+        "name": "Oort-Wolke (innerer Rand)",
+        "val": 2000000
+      },
+      {
+        "name": "Proxima Centauri (Nähe)",
+        "val": 40140000
+      },
+      {
+        "name": "Alpha Centauri A",
+        "val": 41300000
+      },
+      {
+        "name": "Sirius A",
+        "val": 81350000
+      },
+      {
+        "name": "Heliosphäre (Heliopause)",
+        "val": 18000
+      },
+      {
+        "name": "Jupiter Trojaner (Lagrange)",
+        "val": 779
+      },
+      {
+        "name": "Quaoar (KBO)",
+        "val": 6540
+      },
+      {
+        "name": "Sedna (Transneptunisches Objekt)",
+        "val": 84000
+      },
+      {
+        "name": "Pallas (Asteroid)",
+        "val": 414
+      },
+      {
+        "name": "Vesta (Asteroid)",
+        "val": 353
+      },
+      {
+        "name": "Sedna (Zwergplanet)",
+        "val": 84000
+      },
+      {
+        "name": "Luhman 16 (Brown-Zwerg-Paar)",
+        "val": 41250000
+      },
+      {
+        "name": "Epsilon Eridani (Stern)",
+        "val": 101500000
+      },
+      {
+        "name": "Barnards Pfeilstern",
+        "val": 55940000
       }
     ]
   },
@@ -500,6 +756,70 @@
       {
         "name": "Redstone (USA, hist. 1960)",
         "val": 0.04
+      },
+      {
+        "name": "SpaceX Starship (geplant LEO)",
+        "val": 150
+      },
+      {
+        "name": "NASA Space Launch System Block 1B (LEO)",
+        "val": 105
+      },
+      {
+        "name": "SpaceX Falcon Heavy (LEO)",
+        "val": 63.8
+      },
+      {
+        "name": "SpaceX Falcon 9 Block 5 (LEO)",
+        "val": 22.8
+      },
+      {
+        "name": "Ariane 5 ECA (GTO)",
+        "val": 10.0
+      },
+      {
+        "name": "Ariane 6 A64 (GTO)",
+        "val": 11.5
+      },
+      {
+        "name": "ULA Vulcan Centaur (LEO)",
+        "val": 27.2
+      },
+      {
+        "name": "Rocket Lab Electron (LEO)",
+        "val": 0.3
+      },
+      {
+        "name": "ISRO GSLV Mk III (GTO)",
+        "val": 4.0
+      },
+      {
+        "name": "ISRO LVM3 (LEO)",
+        "val": 8.0
+      },
+      {
+        "name": "Soyuz-2.1b (LEO)",
+        "val": 8.2
+      },
+      {
+        "name": "Long March 5B (LEO, China)",
+        "val": 25.0
+      },
+      {
+        "name": "Long March 9 (geplant, LEO)",
+        "val": 150.0
+      },
+      {
+        "name": "H3 (JAXA, LEO)",
+        "val": 16.5
+      },
+      {
+        "name": "New Glenn (Blue Origin, LEO)",
+        "val": 45.0
+      },
+      {
+        "name": "Zuma (classified, SpaceX)",
+        "val": 0.0
       }
     ]
   },
@@ -658,6 +978,54 @@
       {
         "name": "WMAP (NASA, 2001–2010)",
         "val": 3287
+      },
+      {
+        "name": "Ulysses (Sonnenpol-Mission, 1990–2009)",
+        "val": 6939
+      },
+      {
+        "name": "Cassini-Huygens (Saturn, 1997–2017)",
+        "val": 7300
+      },
+      {
+        "name": "Mars Odyssey (seit 2001)",
+        "val": 8400
+      },
+      {
+        "name": "Dawn (Asteroiden Vesta+Ceres, 2007–2018)",
+        "val": 4015
+      },
+      {
+        "name": "Rosetta/Philae (Komet 67P, 2004–2016)",
+        "val": 4380
+      },
+      {
+        "name": "New Horizons (Pluto-Vorbeiflug, seit 2006)",
+        "val": 6800
+      },
+      {
+        "name": "Juno (Jupiter, seit 2011)",
+        "val": 4800
+      },
+      {
+        "name": "ISS-Betrieb (1998–2024)",
+        "val": 9490
+      },
+      {
+        "name": "Hubble Space Telescope (seit 1990)",
+        "val": 12500
+      },
+      {
+        "name": "Chandra X-ray Observatory (seit 1999)",
+        "val": 9100
+      },
+      {
+        "name": "New Horizons (NASA, seit 2006)",
+        "val": 7085
+      },
+      {
+        "name": "Cassini-Huygens (NASA/ESA, 1997–2017)",
+        "val": 7180
       }
     ]
   },
@@ -744,6 +1112,126 @@
       {
         "name": "Rhea (Saturnmond)",
         "val": 0.26
+      },
+      {
+        "name": "Ganymed (Jupiter-Mond)",
+        "val": 1.43
+      },
+      {
+        "name": "Titan (Saturn-Mond)",
+        "val": 1.35
+      },
+      {
+        "name": "Europa (Jupiter-Mond)",
+        "val": 1.31
+      },
+      {
+        "name": "Io (Jupiter-Mond)",
+        "val": 1.8
+      },
+      {
+        "name": "Kallisto (Jupiter-Mond)",
+        "val": 1.24
+      },
+      {
+        "name": "Triton (Neptun-Mond)",
+        "val": 0.78
+      },
+      {
+        "name": "Eris (Zwergplanet)",
+        "val": 0.82
+      },
+      {
+        "name": "Makemake (Zwergplanet)",
+        "val": 0.5
+      },
+      {
+        "name": "Haumea (Zwergplanet)",
+        "val": 0.44
+      },
+      {
+        "name": "Oberon (Uranus-Mond)",
+        "val": 0.35
+      },
+      {
+        "name": "Titania (Uranus-Mond)",
+        "val": 0.38
+      },
+      {
+        "name": "Rhea (Saturn-Mond)",
+        "val": 0.26
+      },
+      {
+        "name": "Dione (Saturn-Mond)",
+        "val": 0.23
+      },
+      {
+        "name": "Tethys (Saturn-Mond)",
+        "val": 0.15
+      },
+      {
+        "name": "Enceladus (Saturn-Mond)",
+        "val": 0.11
+      },
+      {
+        "name": "Mimas (Saturn-Mond)",
+        "val": 0.064
+      },
+      {
+        "name": "Deimos (Mars-Mond)",
+        "val": 0.003
+      },
+      {
+        "name": "Phobos (Mars-Mond)",
+        "val": 0.0057
+      },
+      {
+        "name": "Neutronenstern (Oberflächengravitation)",
+        "val": 200000000000.0
+      },
+      {
+        "name": "Ceres",
+        "val": 0.27
+      },
+      {
+        "name": "Ganymed",
+        "val": 1.43
+      },
+      {
+        "name": "Titan",
+        "val": 1.35
+      },
+      {
+        "name": "Weißer Zwerg (Sirius B)",
+        "val": 316000.0
+      },
+      {
+        "name": "Kallisto (Jupiter-Mond, Oberfläche)",
+        "val": 1.24
+      },
+      {
+        "name": "Oberon (Uranus-Mond, Oberfläche)",
+        "val": 0.35
+      },
+      {
+        "name": "Titania (Uranus-Mond, Oberfläche)",
+        "val": 0.38
+      },
+      {
+        "name": "Ariel (Uranus-Mond)",
+        "val": 0.27
+      },
+      {
+        "name": "Umbriel (Uranus-Mond)",
+        "val": 0.25
+      },
+      {
+        "name": "Miranda (Uranus-Mond)",
+        "val": 0.08
+      },
+      {
+        "name": "Proteus (Neptun-Mond)",
+        "val": 0.07
       }
     ]
   },
@@ -870,6 +1358,86 @@
       {
         "name": "Merkur (Tagseite Maximum)",
         "val": 430
+      },
+      {
+        "name": "Merkur (Oberfläche Tag)",
+        "val": 430
+      },
+      {
+        "name": "Mars (Durchschnitt)",
+        "val": -60
+      },
+      {
+        "name": "Jupiter (Atmosphäre 1 bar)",
+        "val": -108
+      },
+      {
+        "name": "Saturn (Atmosphäre)",
+        "val": -140
+      },
+      {
+        "name": "Uranus (Oberste Wolken)",
+        "val": -195
+      },
+      {
+        "name": "Neptun (Wolken)",
+        "val": -200
+      },
+      {
+        "name": "Pluto (Oberfläche)",
+        "val": -230
+      },
+      {
+        "name": "Eris (Oberfläche)",
+        "val": -240
+      },
+      {
+        "name": "Triton (Mond Neptun)",
+        "val": -235
+      },
+      {
+        "name": "Titan (Oberfläche, Saturn-Mond)",
+        "val": -179
+      },
+      {
+        "name": "Io (Durchschnitt)",
+        "val": -130
+      },
+      {
+        "name": "Mond (Sonnenseite)",
+        "val": 127
+      },
+      {
+        "name": "Sonnenphotosphäre",
+        "val": 5500
+      },
+      {
+        "name": "Betelgeuse (Photosphäre)",
+        "val": 3500
+      },
+      {
+        "name": "Merkur (Nachtseite)",
+        "val": -180
+      },
+      {
+        "name": "Merkur (Nachts)",
+        "val": -180
+      },
+      {
+        "name": "Jupiter (Wolkenoberfläche)",
+        "val": -110
+      },
+      {
+        "name": "Saturn (Wolkenoberfläche)",
+        "val": -140
+      },
+      {
+        "name": "Uranus (Wolkenoberfläche)",
+        "val": -197
+      },
+      {
+        "name": "Merkur (Tag)",
+        "val": 430
       }
     ]
   },
@@ -988,6 +1556,94 @@
       {
         "name": "51 Pegasi b (Mayor/Queloz)",
         "val": 1995
+      },
+      {
+        "name": "Ganymed (Simon Marius)",
+        "val": 1610
+      },
+      {
+        "name": "Callisto (Galileo Galilei)",
+        "val": 1610
+      },
+      {
+        "name": "Ceres (Piazzi)",
+        "val": 1801
+      },
+      {
+        "name": "Neptun (Le Verrier / Galle)",
+        "val": 1846
+      },
+      {
+        "name": "Phobos (Asaph Hall)",
+        "val": 1877
+      },
+      {
+        "name": "Deimos (Asaph Hall)",
+        "val": 1877
+      },
+      {
+        "name": "Eris (Brown et al.)",
+        "val": 2005
+      },
+      {
+        "name": "Haumea (Brown/Rabinowitz)",
+        "val": 2004
+      },
+      {
+        "name": "Makemake (Brown et al.)",
+        "val": 2005
+      },
+      {
+        "name": "Sedna (Brown/Trujillo)",
+        "val": 2003
+      },
+      {
+        "name": "Quaoar (Brown/Trujillo)",
+        "val": 2002
+      },
+      {
+        "name": "Orcus (Brown et al.)",
+        "val": 2004
+      },
+      {
+        "name": "51 Pegasi b (erster Exoplanet, Mayor/Queloz)",
+        "val": 1995
+      },
+      {
+        "name": "TRAPPIST-1-System (Gillon et al.)",
+        "val": 2016
+      },
+      {
+        "name": "Gonggong (TNO)",
+        "val": 2007
+      },
+      {
+        "name": "Salacia (TNO)",
+        "val": 2004
+      },
+      {
+        "name": "Neptun (Le Verrier/Adams)",
+        "val": 1846
+      },
+      {
+        "name": "Miranda (Gerard Kuiper)",
+        "val": 1948
+      },
+      {
+        "name": "Eris (Brown/Trujillo/Rabinowitz)",
+        "val": 2005
+      },
+      {
+        "name": "Haumea (Brown et al.)",
+        "val": 2004
+      },
+      {
+        "name": "Makemake (Brown/Trujillo/Rabinowitz)",
+        "val": 2005
+      },
+      {
+        "name": "Chiron (Charles Kowal)",
+        "val": 1977
       }
     ]
   },
@@ -1138,6 +1794,62 @@
       {
         "name": "PSR 1257+12 b (1. bestätigter Exoplanet)",
         "val": 980.0
+      },
+      {
+        "name": "TOI 700 d (habitable Zone)",
+        "val": 101.4
+      },
+      {
+        "name": "Kepler-22b",
+        "val": 638.0
+      },
+      {
+        "name": "HD 209458 b (erster Transit)",
+        "val": 159.0
+      },
+      {
+        "name": "55 Cancri e (Super-Erde)",
+        "val": 41.0
+      },
+      {
+        "name": "GJ 1132 b",
+        "val": 39.0
+      },
+      {
+        "name": "TRAPPIST-1f",
+        "val": 39.6
+      },
+      {
+        "name": "TRAPPIST-1g",
+        "val": 39.6
+      },
+      {
+        "name": "K2-18b (Ozean-Kandidat)",
+        "val": 124.0
+      },
+      {
+        "name": "Wolf 1061c",
+        "val": 14.0
+      },
+      {
+        "name": "Gliese 667Cc",
+        "val": 23.6
+      },
+      {
+        "name": "HD 40307g",
+        "val": 41.7
+      },
+      {
+        "name": "Kepler-62f",
+        "val": 1200.0
+      },
+      {
+        "name": "Luyten b (GJ 273b)",
+        "val": 12.36
+      },
+      {
+        "name": "Tau Ceti e",
+        "val": 11.9
       }
     ]
   }

@@ -610,6 +610,10 @@
       {
         "name": "Mercedes EQG (WLTP)",
         "val": 473
+      },
+      {
+        "name": "Zeekr 001 Long Range (WLTP)",
+        "val": 620
       }
     ]
   },
@@ -812,6 +816,10 @@
       {
         "name": "Renault Zoe ZE50 (Eco-Modus off)",
         "val": 9.5
+      },
+      {
+        "name": "Bugatti Tourbillon EV (geplant 2026)",
+        "val": 2.0
       }
     ]
   },
@@ -974,6 +982,50 @@
       {
         "name": "Tesla Cybertruck AWD (geschätzt)",
         "val": 2995
+      },
+      {
+        "name": "Ford F-150 Lightning Platinum",
+        "val": 2948
+      },
+      {
+        "name": "Kia EV9 GT-Line Long Range",
+        "val": 2585
+      },
+      {
+        "name": "BMW i7 xDrive60",
+        "val": 2715
+      },
+      {
+        "name": "BMW i5 eDrive40",
+        "val": 2050
+      },
+      {
+        "name": "Mercedes AMG EQS 53 4MATIC+",
+        "val": 2655
+      },
+      {
+        "name": "Hyundai Ioniq 5 Long Range",
+        "val": 2100
+      },
+      {
+        "name": "Lotus Eletre R",
+        "val": 2490
+      },
+      {
+        "name": "Zeekr 001 Shooting Brake",
+        "val": 2200
+      },
+      {
+        "name": "MINI Cooper SE Aceman",
+        "val": 1755
+      },
+      {
+        "name": "Citroën e-C3",
+        "val": 1480
+      },
+      {
+        "name": "Renault Twingo Electric",
+        "val": 1109
       }
     ]
   },
@@ -1136,6 +1188,50 @@
       {
         "name": "Tesla Cybertruck AWD (250 kW)",
         "val": 26
+      },
+      {
+        "name": "Lotus Eletre R (350 kW)",
+        "val": 20
+      },
+      {
+        "name": "Zeekr 001 (200 kW)",
+        "val": 26
+      },
+      {
+        "name": "BMW i5 eDrive40 (205 kW)",
+        "val": 26
+      },
+      {
+        "name": "BMW i7 xDrive60 (195 kW)",
+        "val": 34
+      },
+      {
+        "name": "Kia EV9 Long Range (240 kW)",
+        "val": 24
+      },
+      {
+        "name": "Genesis GV70 EV (240 kW, 800V)",
+        "val": 18
+      },
+      {
+        "name": "Xpeng G6 (480 kW S4-Lader)",
+        "val": 10
+      },
+      {
+        "name": "Toyota bZ4X (150 kW)",
+        "val": 30
+      },
+      {
+        "name": "MINI Cooper SE Aceman (75 kW)",
+        "val": 28
+      },
+      {
+        "name": "Citroën e-C3 (100 kW DC)",
+        "val": 26
+      },
+      {
+        "name": "Jeep Avenger 4xe",
+        "val": 24
       }
     ]
   },
@@ -1222,6 +1318,130 @@
       {
         "name": "GMC Hummer EV (cw 0,42)",
         "val": 420
+      },
+      {
+        "name": "BMW i4 M50 (cw 0,24)",
+        "val": 240
+      },
+      {
+        "name": "BYD Seal (cw 0,219)",
+        "val": 219
+      },
+      {
+        "name": "Skoda Enyaq iV (cw 0,257)",
+        "val": 257
+      },
+      {
+        "name": "Mercedes EQE (cw 0,22)",
+        "val": 220
+      },
+      {
+        "name": "Kia EV6 (cw 0,228)",
+        "val": 228
+      },
+      {
+        "name": "Rivian R1T Pickup (cw 0,36)",
+        "val": 360
+      },
+      {
+        "name": "Tesla Cybertruck (cw 0,39)",
+        "val": 390
+      },
+      {
+        "name": "VW ID. Buzz (cw 0,285)",
+        "val": 285
+      },
+      {
+        "name": "Ford F-150 Lightning (cw 0,38)",
+        "val": 380
+      },
+      {
+        "name": "Fiat 500e (cw 0,311)",
+        "val": 311
+      },
+      {
+        "name": "MINI Electric (cw 0,287)",
+        "val": 287
+      },
+      {
+        "name": "Polestar 2 (cw 0,266)",
+        "val": 266
+      },
+      {
+        "name": "Lightyear 0 (cw 0,175) – Rekord",
+        "val": 175
+      },
+      {
+        "name": "Tesla Model S Plaid (cw 0,208)",
+        "val": 208
+      },
+      {
+        "name": "BMW i7 xDrive60 (cw 0,24)",
+        "val": 240
+      },
+      {
+        "name": "Audi Q8 e-tron (cw 0,27)",
+        "val": 270
+      },
+      {
+        "name": "Volvo EX90 (cw 0,29)",
+        "val": 290
+      },
+      {
+        "name": "Kia EV9 (cw 0,28)",
+        "val": 280
+      },
+      {
+        "name": "Hyundai Ioniq 5 (cw 0,288)",
+        "val": 288
+      },
+      {
+        "name": "Mercedes EQC 400 (cw 0,28)",
+        "val": 280
+      },
+      {
+        "name": "Tesla Model X (cw 0,24)",
+        "val": 240
+      },
+      {
+        "name": "Fisker Ocean Ultra (cw 0,29)",
+        "val": 290
+      },
+      {
+        "name": "Lotus Eletre (cw 0,261)",
+        "val": 261
+      },
+      {
+        "name": "Genesis GV60 (cw 0,267)",
+        "val": 267
+      },
+      {
+        "name": "Zeekr 001 (cw 0,197)",
+        "val": 197
+      },
+      {
+        "name": "Nio ET5 (cw 0,24)",
+        "val": 240
+      },
+      {
+        "name": "Xpeng P7 (cw 0,236)",
+        "val": 236
+      },
+      {
+        "name": "Renault Zoe ZE50 (cw 0,33)",
+        "val": 330
+      },
+      {
+        "name": "MINI Cooper SE (cw 0,294)",
+        "val": 294
+      },
+      {
+        "name": "Citroën e-C3 (cw 0,31)",
+        "val": 310
+      },
+      {
+        "name": "Opel Astra Electric (cw 0,28)",
+        "val": 280
       }
     ]
   },
@@ -1308,6 +1528,126 @@
       {
         "name": "StreetScooter Work (400V)",
         "val": 400
+      },
+      {
+        "name": "Volkswagen ID.3 (400V-System)",
+        "val": 400
+      },
+      {
+        "name": "Tesla Model 3 Rear (350V-Bus)",
+        "val": 350
+      },
+      {
+        "name": "Renault Zoe (400V)",
+        "val": 400
+      },
+      {
+        "name": "Nissan Leaf (364V Nominal)",
+        "val": 364
+      },
+      {
+        "name": "Kia EV6 (800V)",
+        "val": 800
+      },
+      {
+        "name": "Lucid Air (924V – Höchste in Serie)",
+        "val": 924
+      },
+      {
+        "name": "Rivian R1T (400V)",
+        "val": 400
+      },
+      {
+        "name": "BYD Seal (800V)",
+        "val": 800
+      },
+      {
+        "name": "Mercedes EQE SUV (400V)",
+        "val": 400
+      },
+      {
+        "name": "Volvo EX90 (400V)",
+        "val": 400
+      },
+      {
+        "name": "Polestar 5 (800V)",
+        "val": 800
+      },
+      {
+        "name": "Zeekr 001 (800V)",
+        "val": 800
+      },
+      {
+        "name": "Fisker Ocean (400V)",
+        "val": 400
+      },
+      {
+        "name": "Honda e:Ny1 (400V)",
+        "val": 400
+      },
+      {
+        "name": "Volkswagen ID.7 (400V)",
+        "val": 400
+      },
+      {
+        "name": "Nio ET7 (400V)",
+        "val": 400
+      },
+      {
+        "name": "Zeekr 001 (800V Premium)",
+        "val": 800
+      },
+      {
+        "name": "BMW i5 M60 xDrive (400V)",
+        "val": 400
+      },
+      {
+        "name": "BMW i7 xDrive60 (400V)",
+        "val": 400
+      },
+      {
+        "name": "Lotus Eletre R (800V)",
+        "val": 800
+      },
+      {
+        "name": "Hyundai Ioniq 5 (800V E-GMP)",
+        "val": 800
+      },
+      {
+        "name": "Genesis GV70 EV (800V)",
+        "val": 800
+      },
+      {
+        "name": "Lamborghini Lanzador (800V geplant)",
+        "val": 800
+      },
+      {
+        "name": "Mercedes EQB (400V)",
+        "val": 400
+      },
+      {
+        "name": "Cupra Tavascan (400V)",
+        "val": 400
+      },
+      {
+        "name": "Toyota bZ4X (400V)",
+        "val": 400
+      },
+      {
+        "name": "Subaru Solterra (400V)",
+        "val": 400
+      },
+      {
+        "name": "Kia EV9 (800V E-GMP)",
+        "val": 800
+      },
+      {
+        "name": "Nio ES8 (400V)",
+        "val": 400
+      },
+      {
+        "name": "Xpeng P7 (400V)",
+        "val": 400
       }
     ]
   },
@@ -1393,6 +1733,126 @@
       },
       {
         "name": "Jeep Avenger EV (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Hyundai Ioniq 5 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Kia EV6 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Polestar 2 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Volvo XC40 Recharge (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Cupra Born (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Audi Q4 e-tron (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Fisker Ocean (CCS2 + SolarRoof)",
+        "val": 2
+      },
+      {
+        "name": "BYD Seal (CCS2 + GB/T)",
+        "val": 2
+      },
+      {
+        "name": "Genesis GV60 (800V CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Zeekr 001 (CCS2 + Typ2 + GB/T)",
+        "val": 3
+      },
+      {
+        "name": "Xpeng G9 (800V CCS2 + CHAdeMO + GB/T)",
+        "val": 3
+      },
+      {
+        "name": "NIO ET5 (CCS + GB/T + Swap)",
+        "val": 3
+      },
+      {
+        "name": "Lotus Eletre (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Rolls-Royce Spectre (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Renault Zoe (Typ2 CCS2 kombi)",
+        "val": 2
+      },
+      {
+        "name": "MINI Cooper SE Aceman (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Toyota bZ4X (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Subaru Solterra (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Honda e:Ny1 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Mazda MX-30 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Skoda Enyaq iV 80 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Volkswagen ID.3 Pro (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Opel Astra Electric (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Mercedes EQA 250 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "BMW i5 eDrive40 (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Hyundai Kona Electric (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Lexus UZ 450e (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Volkswagen ID.7 Pro (CCS2 + Typ2)",
+        "val": 2
+      },
+      {
+        "name": "Nio EL6 (CCS + GB/T + BaaS)",
+        "val": 3
+      },
+      {
+        "name": "Zeekr X (CCS2 + Typ2)",
         "val": 2
       }
     ]
@@ -1560,6 +2020,46 @@
       {
         "name": "Smart #3 Brabus",
         "val": 440
+      },
+      {
+        "name": "Tesla Roadster 2 (geplant, 10000+ Nm)",
+        "val": 10000
+      },
+      {
+        "name": "Rimac C_Two (Vorgänger Nevera)",
+        "val": 1696
+      },
+      {
+        "name": "Nio EP9 Rennwagen",
+        "val": 1480
+      },
+      {
+        "name": "BMW i5 M60 xDrive",
+        "val": 795
+      },
+      {
+        "name": "Lotus Eletre R (AWD)",
+        "val": 985
+      },
+      {
+        "name": "Kia EV6 GT (AWD, 585 PS)",
+        "val": 740
+      },
+      {
+        "name": "Genesis GV70 EV (AWD)",
+        "val": 700
+      },
+      {
+        "name": "Volvo EX90 Twin Motor Performance",
+        "val": 910
+      },
+      {
+        "name": "Zeekr 001 Performance (AWD)",
+        "val": 768
+      },
+      {
+        "name": "Audi Q4 e-tron 40",
+        "val": 220
       }
     ]
   },
@@ -1714,6 +2214,58 @@
       {
         "name": "Rolls-Royce Spectre (EV)",
         "val": 420
+      },
+      {
+        "name": "Tesla Model Y Standard Range (Basispreis)",
+        "val": 42990
+      },
+      {
+        "name": "Renault R5 E-Tech (Basispreis 2024)",
+        "val": 24900
+      },
+      {
+        "name": "Citroën e-C3 (günstigstes EV EU 2024)",
+        "val": 19990
+      },
+      {
+        "name": "BYD Seagull (China-Markt)",
+        "val": 9700
+      },
+      {
+        "name": "Volkswagen ID.2all (geplant, ~25000)",
+        "val": 25000
+      },
+      {
+        "name": "Leapmotor T03 (Europa 2023)",
+        "val": 18900
+      },
+      {
+        "name": "Kia EV3 (geplant ~30000)",
+        "val": 30000
+      },
+      {
+        "name": "Tesla Model X Plaid (Topmodell)",
+        "val": 109990
+      },
+      {
+        "name": "Hyundai Ioniq 5 N (Sport)",
+        "val": 69900
+      },
+      {
+        "name": "BMW i7 M70 xDrive (Top)",
+        "val": 195000
+      },
+      {
+        "name": "Zeekr 001 (Europa)",
+        "val": 56900
+      },
+      {
+        "name": "Xpeng G6 (Europa)",
+        "val": 49900
+      },
+      {
+        "name": "Genesis GV60 Sport Plus",
+        "val": 64900
       }
     ]
   },
@@ -1800,6 +2352,126 @@
       {
         "name": "Lucid Air (2170 Zellen, 900+)",
         "val": 900
+      },
+      {
+        "name": "Hyundai Ioniq 6 Long Range (Pouch, 192)",
+        "val": 192
+      },
+      {
+        "name": "Kia EV6 Long Range (Pouch, 192)",
+        "val": 192
+      },
+      {
+        "name": "Tesla Model Y Long Range (2170, 4416)",
+        "val": 4416
+      },
+      {
+        "name": "Volkswagen ID.3 Pro (prismatisch, 264)",
+        "val": 264
+      },
+      {
+        "name": "Volkswagen ID.4 GTX (prismatisch, 288)",
+        "val": 288
+      },
+      {
+        "name": "BMW i4 eDrive40 (prismatisch, 288)",
+        "val": 288
+      },
+      {
+        "name": "BMW iX3 (prismatisch, 108)",
+        "val": 108
+      },
+      {
+        "name": "Polestar 2 Long Range (Pouch, 384)",
+        "val": 384
+      },
+      {
+        "name": "Volvo EX90 (prismatisch, 408)",
+        "val": 408
+      },
+      {
+        "name": "Genesis GV60 (Pouch, 192)",
+        "val": 192
+      },
+      {
+        "name": "Skoda Enyaq iV 80 (prismatisch, 288)",
+        "val": 288
+      },
+      {
+        "name": "Tesla Model 3 Highland (4680, ~800)",
+        "val": 800
+      },
+      {
+        "name": "CATL Kirin-Batterie Modul (CTP 3.0, keine Zellzahl publik)",
+        "val": 0
+      },
+      {
+        "name": "Rimac Nevera (Pouch, ~6960)",
+        "val": 6960
+      },
+      {
+        "name": "Lucid Air Grand Touring (21700, ~900+)",
+        "val": 900
+      },
+      {
+        "name": "Fisker Ocean (prismatisch, ~340)",
+        "val": 340
+      },
+      {
+        "name": "Rivian R1S Max Pack (2170, ~9800)",
+        "val": 9800
+      },
+      {
+        "name": "Lightyear 2 (Pouch, geplant)",
+        "val": 200
+      },
+      {
+        "name": "Bollinger B1 (prismatisch, ~400)",
+        "val": 400
+      },
+      {
+        "name": "Toyota bZ4X (prismatisch, ~96)",
+        "val": 96
+      },
+      {
+        "name": "MINI Cooper SE Aceman (prismatisch, 96)",
+        "val": 96
+      },
+      {
+        "name": "Honda e (Pouch, ~110)",
+        "val": 110
+      },
+      {
+        "name": "Citroën e-C3 (LFP prismatisch, 90)",
+        "val": 90
+      },
+      {
+        "name": "Renault R5 E-Tech (LFP, ~108)",
+        "val": 108
+      },
+      {
+        "name": "Opel Astra Electric (Pouch, 216)",
+        "val": 216
+      },
+      {
+        "name": "Mercedes EQA 250 (prismatisch, 396)",
+        "val": 396
+      },
+      {
+        "name": "Kia EV9 Long Range (Pouch, ~384)",
+        "val": 384
+      },
+      {
+        "name": "Hyundai Ioniq 5 Long Range (Pouch, 192)",
+        "val": 192
+      },
+      {
+        "name": "Peugeot e-2008 (Pouch, 216)",
+        "val": 216
+      },
+      {
+        "name": "Maxus eDeliver 9 (LFP, ~300)",
+        "val": 300
       }
     ]
   }

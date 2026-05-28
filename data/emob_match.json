@@ -87,6 +87,126 @@
       {
         "n": "Tesla Semi Megacharger",
         "c": "Tesla"
+      },
+      {
+        "n": "Typ 1 (J1772, USA/Japan AC)",
+        "c": "J1772"
+      },
+      {
+        "n": "Typ 2 (IEC 62196, Europa AC)",
+        "c": "Mennekes"
+      },
+      {
+        "n": "Tesla NACS (Nordamerika)",
+        "c": "NACS"
+      },
+      {
+        "n": "GB/T DC (China Standard)",
+        "c": "GB/T"
+      },
+      {
+        "n": "MCS (Megawatt Charging, Lkw)",
+        "c": "MCS"
+      },
+      {
+        "n": "CCS Typ 2 + DC-Pins = 350kW möglich",
+        "c": "CCS2 (Europa)"
+      },
+      {
+        "n": "Wireless Inductive (Qi / SAE J2954)",
+        "c": "Induktiv"
+      },
+      {
+        "n": "3-Phasen 22kW Heim-Option",
+        "c": "Typ 2 (dreiphasig)"
+      },
+      {
+        "n": "BS 1363 Adapter für UK Typ 2",
+        "c": "UK-Standard"
+      },
+      {
+        "n": "IEC 60309 'Industriestecker' (blau, 32A)",
+        "c": "IEC 60309"
+      },
+      {
+        "n": "Steckdose Schuko – nur Notladung 2,3 kW",
+        "c": "Schuko (CEE7/4)"
+      },
+      {
+        "n": "ABB Terra DC Wallbox 24 kW",
+        "c": "CCS2 Wallbox"
+      },
+      {
+        "n": "Supercharger V4 (bis 350 kW)",
+        "c": "Tesla V4"
+      },
+      {
+        "n": "Ionity 350kW HPC – CCS2",
+        "c": "HPC CCS2"
+      },
+      {
+        "n": "ABRP-Route via CHAdeMO in Japan",
+        "c": "CHAdeMO Japan"
+      },
+      {
+        "n": "SCAME-Typ 3A (Frankreich, veraltet)",
+        "c": "Typ 3A"
+      },
+      {
+        "n": "Wallbox go-e Charger HOMEfix",
+        "c": "Typ 2 AC"
+      },
+      {
+        "n": "SAE J3400 = US-Standard NACS 2023",
+        "c": "SAE J3400"
+      },
+      {
+        "n": "Pantograph (Bus-Dachkontakt)",
+        "c": "Overhead"
+      },
+      {
+        "n": "SAE J3400 (NACS USA-Standard 2023)",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "IEC 62196-3 DC-Stecker (CCS2)",
+        "c": "Europa DC"
+      },
+      {
+        "n": "GB/T 20234.3 DC (China DC-Standard)",
+        "c": "China DC"
+      },
+      {
+        "n": "Schuko CEE7/4 (Notladung)",
+        "c": "Notladen Europa"
+      },
+      {
+        "n": "GB/T DC (China)",
+        "c": "Chinesischer DC-Schnellladestandard"
+      },
+      {
+        "n": "GB/T AC (China)",
+        "c": "Chinesischer AC-Ladestandard"
+      },
+      {
+        "n": "CHAOJI (Japan/China nächste Gen)",
+        "c": "Nachfolgestandard für CHAdeMO"
+      },
+      {
+        "n": "IEC 62196 Typ 1 (USA)",
+        "c": "J1772 Stecker, Einphasig"
+      },
+      {
+        "n": "Schuko (Notladen)",
+        "c": "Haushaltssteckdose, langsam"
+      },
+      {
+        "n": "Commando-Stecker (CEE)",
+        "c": "Industriestecker für Camping/Reisen"
+      },
+      {
+        "n": "Wireless Charging Pad (15 kW)",
+        "c": "Induktives Laden ohne Kabel"
       }
     ]
   },
@@ -172,6 +292,126 @@
       {
         "n": "Lucid Air",
         "c": "LEAP-Plattform"
+      },
+      {
+        "n": "Genesis GV60",
+        "c": "E-GMP-Plattform"
+      },
+      {
+        "n": "Polestar 2",
+        "c": "CMA-Plattform (Volvo/Geely)"
+      },
+      {
+        "n": "Volvo EX90",
+        "c": "SPA2-Plattform"
+      },
+      {
+        "n": "Cupra Born",
+        "c": "MEB-Plattform"
+      },
+      {
+        "n": "Volkswagen ID.3",
+        "c": "MEB-Plattform"
+      },
+      {
+        "n": "SEAT Mii Electric",
+        "c": "MQB A0-Plattform"
+      },
+      {
+        "n": "Zeekr 001",
+        "c": "SEA-Plattform (Geely)"
+      },
+      {
+        "n": "Lotus Eletre",
+        "c": "EPA-Plattform"
+      },
+      {
+        "n": "Xpeng G6",
+        "c": "SEPA 2.0-Plattform"
+      },
+      {
+        "n": "BYD Seal",
+        "c": "e-Platform 3.0 (CTB)"
+      },
+      {
+        "n": "Nio ET7",
+        "c": "NT2-Plattform"
+      },
+      {
+        "n": "Toyota bZ4X",
+        "c": "e-TNGA-Plattform"
+      },
+      {
+        "n": "Honda e:Ny1",
+        "c": "e:N Architecture F"
+      },
+      {
+        "n": "Renault R5 E-Tech",
+        "c": "AmpR Small-Plattform"
+      },
+      {
+        "n": "Citroën e-C3",
+        "c": "Smart Car-Plattform (Stellantis)"
+      },
+      {
+        "n": "Fiat 500e",
+        "c": "eCMP-Plattform (Stellantis)"
+      },
+      {
+        "n": "Opel Astra Electric",
+        "c": "EMP2-Plattform (Stellantis)"
+      },
+      {
+        "n": "Ford F-150 Lightning",
+        "c": "Body-on-Frame EV Eigenbau"
+      },
+      {
+        "n": "Subaru Solterra",
+        "c": "e-TNGA-Plattform"
+      },
+      {
+        "n": "Lexus UZ 450e",
+        "c": "e-TNGA-Plattform"
+      },
+      {
+        "n": "Cadillac Lyriq",
+        "c": "Ultium-Plattform (GM)"
+      },
+      {
+        "n": "Chevrolet Silverado EV",
+        "c": "Ultium-Plattform (GM)"
+      },
+      {
+        "n": "GMC Sierra EV",
+        "c": "Ultium-Plattform (GM)"
+      },
+      {
+        "n": "MEB (Modularer E-Antriebs-Baukasten)",
+        "c": "VW Group"
+      },
+      {
+        "n": "STLA Large",
+        "c": "Stellantis"
+      },
+      {
+        "n": "STLA Medium",
+        "c": "Stellantis"
+      },
+      {
+        "n": "REE Flatboard",
+        "c": "REE Automotive"
+      },
+      {
+        "n": "Ultium",
+        "c": "General Motors"
+      },
+      {
+        "n": "Halo Platform",
+        "c": "Honda/Sony"
+      },
+      {
+        "n": "RJ Platform",
+        "c": "Renault"
       }
     ]
   },
@@ -263,6 +503,126 @@
       {
         "n": "Schnellere Ladezeiten bei gleicher Energie",
         "c": "Solid-State"
+      },
+      {
+        "n": "Leicht und dicht, für Consumer-Elektronik",
+        "c": "NCA"
+      },
+      {
+        "n": "Kostengünstig, große Zyklenlebensdauer",
+        "c": "LFP"
+      },
+      {
+        "n": "Stabil ohne seltene Erde (kein Kobalt)",
+        "c": "LMFP"
+      },
+      {
+        "n": "Festes Elektrolyt, kein Flüssigkeitsleck",
+        "c": "Solid-State"
+      },
+      {
+        "n": "Höchste Energiedichte pro kg",
+        "c": "Li-S (Lithium-Schwefel)"
+      },
+      {
+        "n": "Wiederaufladbar, kein Memory-Effekt",
+        "c": "Li-Ion (allgemein)"
+      },
+      {
+        "n": "Günstig, schwer, ausreifend",
+        "c": "Bleiakkumulator"
+      },
+      {
+        "n": "Hohe Selbstentladung, Nickel-Metall",
+        "c": "NiMH"
+      },
+      {
+        "n": "Niedrigste Temperatur-Toleranz-Grenze",
+        "c": "NMC (622)"
+      },
+      {
+        "n": "Kaum Cobalt, optimierter Mangan-Anteil",
+        "c": "NMCA"
+      },
+      {
+        "n": "Tesla 4680-Zellen (tabless)",
+        "c": "Cylindrical 4680"
+      },
+      {
+        "n": "Prismatische Zelle für Modul-Einbau",
+        "c": "Prismatisch"
+      },
+      {
+        "n": "Pouch-Zelle: flach, flexibel",
+        "c": "Pouch"
+      },
+      {
+        "n": "BYD Blade-Technologie (gestapelte LFP)",
+        "c": "Blade Battery"
+      },
+      {
+        "n": "CATL Kirin-Batterie (CTP 3.0)",
+        "c": "CTP 3.0"
+      },
+      {
+        "n": "Natrium-Ionen – keine Lithium nötig",
+        "c": "Na-Ion"
+      },
+      {
+        "n": "Zink-Luft: hohe Energiedichte, halb aufladbar",
+        "c": "Zn-Air"
+      },
+      {
+        "n": "Wasserstoff-Brennstoffzelle: H2 + O2 → Strom",
+        "c": "PEMFC"
+      },
+      {
+        "n": "Super-Kondensator: extrem schnell, geringe Dichte",
+        "c": "Supercap"
+      },
+      {
+        "n": "Dual-Chemie: LFP vorne, NMC hinten",
+        "c": "Dual-Chemie"
+      },
+      {
+        "n": "LNMO (Lithium-Nickel-Mangan-Oxid)",
+        "c": "Hochspannungs-Zelle"
+      },
+      {
+        "n": "Kobaltfreie Kathode (LMFP-Variante)",
+        "c": "Kein Kobalt"
+      },
+      {
+        "n": "Doppelschicht-Kondensator (Super-Cap)",
+        "c": "Sehr schnelle Entladung"
+      },
+      {
+        "n": "Thermisches Runaway-Risiko bei NMC > 60°C",
+        "c": "Sicherheitsrisiko"
+      },
+      {
+        "n": "Natrium-Ionen-Zelle (CATL 2023 in Serie)",
+        "c": "Kein Lithium nötig"
+      },
+      {
+        "n": "Eisen-Luft-Batterie (Form Energy, Langzeitspeicher)",
+        "c": "Speichersystem"
+      },
+      {
+        "n": "Redox-Flow-Batterie (stationär, kein EV)",
+        "c": "Stationär"
+      },
+      {
+        "n": "Lithium-Schwefel (Experimentell, hohe Energiedichte)",
+        "c": "Forschungsphase"
+      },
+      {
+        "n": "Zink-Mangan (AA-Batterietyp, nicht wiederaufladbar)",
+        "c": "Primärzelle"
+      },
+      {
+        "n": "QuantumScape Festkörper-Separator (Lithium-Metall)",
+        "c": "Festkörper"
       }
     ]
   },
@@ -348,6 +708,126 @@
       {
         "n": "EMI",
         "c": "Electromagnetic Interference"
+      },
+      {
+        "n": "EVSE",
+        "c": "Electric Vehicle Supply Equipment"
+      },
+      {
+        "n": "V2H",
+        "c": "Vehicle to Home"
+      },
+      {
+        "n": "CTC",
+        "c": "Cell to Chassis"
+      },
+      {
+        "n": "DCFC",
+        "c": "DC Fast Charging"
+      },
+      {
+        "n": "ICE",
+        "c": "Internal Combustion Engine"
+      },
+      {
+        "n": "FCEV",
+        "c": "Fuel Cell Electric Vehicle"
+      },
+      {
+        "n": "REX",
+        "c": "Range Extender"
+      },
+      {
+        "n": "SOP",
+        "c": "State of Power"
+      },
+      {
+        "n": "CAN",
+        "c": "Controller Area Network (Fahrzeugbus)"
+      },
+      {
+        "n": "ADAS",
+        "c": "Advanced Driver Assistance Systems"
+      },
+      {
+        "n": "VDSL",
+        "c": "Nein – hier Vehicle Dynamics System Level"
+      },
+      {
+        "n": "TCO",
+        "c": "Total Cost of Ownership"
+      },
+      {
+        "n": "V2L",
+        "c": "Vehicle-to-Load"
+      },
+      {
+        "n": "NMC",
+        "c": "Nickel-Mangan-Kobalt"
+      },
+      {
+        "n": "LFP",
+        "c": "Lithium-Eisenphosphat"
+      },
+      {
+        "n": "NCA",
+        "c": "Nickel-Kobalt-Aluminium"
+      },
+      {
+        "n": "SOE",
+        "c": "State of Energy"
+      },
+      {
+        "n": "DIN",
+        "c": "Deutsches Institut für Normung"
+      },
+      {
+        "n": "ZEV",
+        "c": "Zero-Emission Vehicle"
+      },
+      {
+        "n": "REx",
+        "c": "Range Extender"
+      },
+      {
+        "n": "LiDAR",
+        "c": "Light Detection and Ranging"
+      },
+      {
+        "n": "GNSS",
+        "c": "Global Navigation Satellite System"
+      },
+      {
+        "n": "OCPI",
+        "c": "Open Charge Point Interface"
+      },
+      {
+        "n": "HEMS",
+        "c": "Home Energy Management System"
+      },
+      {
+        "n": "EPA",
+        "c": "Environmental Protection Agency (USA)"
+      },
+      {
+        "n": "FAME",
+        "c": "Faster Adoption and Manufacturing of EVs (Indien)"
+      },
+      {
+        "n": "SoC (State of Charge)",
+        "c": "Ladestand der Batterie in %"
+      },
+      {
+        "n": "SoH (State of Health)",
+        "c": "Gesundheitszustand der Batterie"
+      },
+      {
+        "n": "SoE (State of Energy)",
+        "c": "Verbleibende Energie in kWh"
+      },
+      {
+        "n": "DCFC (DC Fast Charging)",
+        "c": "Gleichstrom-Schnellladen"
       }
     ]
   },
@@ -439,6 +919,126 @@
       {
         "n": "Nuro Lieferwagen (fahrerloses Geo-Fence)",
         "c": "Level 4/5"
+      },
+      {
+        "n": "Vollautomatisches Fahren ohne Fahrer im Fahrzeug",
+        "c": "Level 5"
+      },
+      {
+        "n": "Autobahnautomat ab 130 km/h (Hände-frei erlaubt)",
+        "c": "Level 3"
+      },
+      {
+        "n": "Spurwechsel automatisch auf Wunsch (Tesla)",
+        "c": "Level 2"
+      },
+      {
+        "n": "Automatisches Einparken ohne Fahrer im Fahrzeug",
+        "c": "Level 4"
+      },
+      {
+        "n": "Notbremsassistent aktiviert bei Hindernis",
+        "c": "Level 1"
+      },
+      {
+        "n": "Stauassistent im Stop-and-Go (Hände auf Steuer)",
+        "c": "Level 2"
+      },
+      {
+        "n": "Waymo One — Robotaxi ohne Sicherheitsfahrer",
+        "c": "Level 4"
+      },
+      {
+        "n": "Cruise AV — kommerzieller Robotaxi-Betrieb",
+        "c": "Level 4"
+      },
+      {
+        "n": "Tesla FSD Beta (supervised, nicht legal Level 3)",
+        "c": "Level 2+"
+      },
+      {
+        "n": "Baidu Apollo Go — autonome Taxis China",
+        "c": "Level 4"
+      },
+      {
+        "n": "Torc Robotics Freightliner — autonome LKW",
+        "c": "Level 4"
+      },
+      {
+        "n": "Zoox Bidirektionalfahrzeug — kein Lenkrad",
+        "c": "Level 5"
+      },
+      {
+        "n": "Mobileye SuperVision (8 Kameras, kein Lidar)",
+        "c": "Level 2+"
+      },
+      {
+        "n": "Mercedes EQ Drive Pilot StVO §1b (60 km/h D)",
+        "c": "Level 3"
+      },
+      {
+        "n": "Volvo Pilot Assist — Lenken + Bremsen semiautonm",
+        "c": "Level 2"
+      },
+      {
+        "n": "GM Ultra Cruise — Hände-frei auf 95% US-Straßen",
+        "c": "Level 2+"
+      },
+      {
+        "n": "Nuro R3 — fahrerloses Lieferfahrzeug",
+        "c": "Level 4"
+      },
+      {
+        "n": "Xpeng XNGP — City NGP autonomes Stadtfahren",
+        "c": "Level 2+"
+      },
+      {
+        "n": "Robert Bosch Highway Assist Level 2 Serie",
+        "c": "Level 2"
+      },
+      {
+        "n": "Autobahn AG — autonomer Spurassist zertifiziert",
+        "c": "Level 3"
+      },
+      {
+        "n": "Einparken per App gesteuert (Remote Parking)",
+        "c": "Level 4 (begrenzt)"
+      },
+      {
+        "n": "ADAS Spurhalter: warnt aber greift nicht ein",
+        "c": "Level 0"
+      },
+      {
+        "n": "Knightscope Sicherheitsroboter (Patrouillengebiet)",
+        "c": "Level 4"
+      },
+      {
+        "n": "TuSimple Selbstfahrender LKW (Interstate US)",
+        "c": "Level 4"
+      },
+      {
+        "n": "Pony.ai Robotaxi Peking (Geofence)",
+        "c": "Level 4"
+      },
+      {
+        "n": "Einparkassistent: lenkt, Fahrer bremst",
+        "c": "Level 2"
+      },
+      {
+        "n": "Radar-ACC ohne Spurhilfe (einfacher Tempomat)",
+        "c": "Level 1"
+      },
+      {
+        "n": "Blindspot-Warnung — kein Eingriff",
+        "c": "Level 0"
+      },
+      {
+        "n": "Lidarloses FSD-Kamerasystem (rein visuell)",
+        "c": "Level 2+"
+      },
+      {
+        "n": "Nvidia DRIVE Orin: Chip für Level 2+ Systeme",
+        "c": "Level 2+"
       }
     ]
   },
@@ -530,6 +1130,126 @@
       {
         "n": "Ford Mustang Mach-E Hinterachse (PSM)",
         "c": "Permanentmagnet"
+      },
+      {
+        "n": "Axialflussmotor (flache Bauform, hohe Dichte)",
+        "c": "Axialfluss"
+      },
+      {
+        "n": "Reluktanzmotor (kein Permanentmagnet)",
+        "c": "SRM"
+      },
+      {
+        "n": "Transversalfluss-Motor (selten, hohe Drehmoment)",
+        "c": "Transversalfluss"
+      },
+      {
+        "n": "EC-Motor (electronically commutated BLDC)",
+        "c": "BLDC"
+      },
+      {
+        "n": "Fremderregter Synchronmotor (Renault ZOE)",
+        "c": "EESM"
+      },
+      {
+        "n": "Hybridmotor: PMSM + Benziner in Parallelstrang",
+        "c": "Hybrid-Kombination"
+      },
+      {
+        "n": "Radnabenmotor (Motor direkt im Rad)",
+        "c": "In-Wheel"
+      },
+      {
+        "n": "Linear-Motor (Magnetschwebebahn)",
+        "c": "Linearmotor"
+      },
+      {
+        "n": "Geschalteter Reluktanzmotor (cost-optimal)",
+        "c": "SRM (geschaltet)"
+      },
+      {
+        "n": "Doppelrotor-Motor (außen + innen)",
+        "c": "Doppelrotor-PMSM"
+      },
+      {
+        "n": "Wassergekühlte PMSM (BMW i3)",
+        "c": "Gekühlter PMSM"
+      },
+      {
+        "n": "Ölgekühlte Statorwicklung (ZF)",
+        "c": "Ölgekühlter Stator"
+      },
+      {
+        "n": "Wolfram-Kupfer-Leiterbahn (Hairpin)",
+        "c": "Hairpin-Wicklung"
+      },
+      {
+        "n": "Dreiphasiger Synchronmotor 400 VAC",
+        "c": "Synchron 400V"
+      },
+      {
+        "n": "Einphasiger bürstenloser DC-Motor",
+        "c": "Einphasig BLDC"
+      },
+      {
+        "n": "Tesla Drive Unit (PMSM vorne, Induction hinten)",
+        "c": "Tesla Dual"
+      },
+      {
+        "n": "Audi e-tron Motor mit integr. Getriebe",
+        "c": "Integriertes Aggregat"
+      },
+      {
+        "n": "Porsche Taycan 2-Gang-Getriebe mit PMSM",
+        "c": "2-Gang PMSM"
+      },
+      {
+        "n": "Nissan Leaf Synchron-Reluktanz-Motor",
+        "c": "SynRM Nissan"
+      },
+      {
+        "n": "Volkswagen ID.4 Hinterachse (APP550)",
+        "c": "PMSM APP550"
+      },
+      {
+        "n": "BMW Vorderachse iX3 (Asynchronmotor)",
+        "c": "Asynchronmotor"
+      },
+      {
+        "n": "Siemens 1PV5 Traktionsmotor (1990er EV)",
+        "c": "Asynchronmotor"
+      },
+      {
+        "n": "ABB Permanentmagnet-Synchron (Industrie)",
+        "c": "Permanentmagnet"
+      },
+      {
+        "n": "Linear-Induktionsmotor (Magnetschwebebahn)",
+        "c": "Linearmotor"
+      },
+      {
+        "n": "Drehstrom-Asynchronmotor (Nikola Tesla Konzept)",
+        "c": "Induktion"
+      },
+      {
+        "n": "Torque Vectoring Dualmotor (Hochleistungs-EV)",
+        "c": "Dualmotor"
+      },
+      {
+        "n": "Brushless DC Motor (BLDC, e-Scooter)",
+        "c": "BLDC"
+      },
+      {
+        "n": "Reluktanzmotor BMW i3s (teilweise)",
+        "c": "Reluktanz"
+      },
+      {
+        "n": "Axialfluss-Motor Yasa (Axialspalt)",
+        "c": "Axialfluss"
+      },
+      {
+        "n": "Fremderregter Synchronmotor (Renault Zoe R90)",
+        "c": "Fremderregt"
       }
     ]
   },
@@ -621,6 +1341,126 @@
       {
         "n": "Zelltemperatur-Gleichverteilung",
         "c": "Regeln"
+      },
+      {
+        "n": "R1234yf Kältemittel Klimakreislauf",
+        "c": "Kühlen"
+      },
+      {
+        "n": "Boden-Heizplatte mit Kühlmittel-Schleifen",
+        "c": "Kühlen"
+      },
+      {
+        "n": "Zellformationsschritt beim Fertigen",
+        "c": "Qualitätssicherung"
+      },
+      {
+        "n": "Traktionsbatterie-Vorheizung via BMS",
+        "c": "Heizen"
+      },
+      {
+        "n": "Kupferleiterbahn im Batteriepack",
+        "c": "Wärmeleitung"
+      },
+      {
+        "n": "CAN-Bus Temperaturübertragung",
+        "c": "Monitoring"
+      },
+      {
+        "n": "Wärmepumpe mit Kältemittelkreis",
+        "c": "Heizen/Kühlen"
+      },
+      {
+        "n": "Direktkühlung: Kältemittel im Zellkontakt",
+        "c": "Kühlen (direkt)"
+      },
+      {
+        "n": "Thermische Isolation Zellanordnung",
+        "c": "Schutz"
+      },
+      {
+        "n": "Zelltemperaturüberwachung NTC im Modul",
+        "c": "Monitoring"
+      },
+      {
+        "n": "Pre-Conditioning Funktion (Navigation-gesteuert)",
+        "c": "Heizen/Kühlen"
+      },
+      {
+        "n": "Radiatorfläche (Frontwärmetauscher)",
+        "c": "Kühlen"
+      },
+      {
+        "n": "Lüftergeregelte Kühlung bei Hochlast",
+        "c": "Kühlen"
+      },
+      {
+        "n": "Chiller (Flüssig-Kühlmittel-Wärmetauscher)",
+        "c": "Kühlen"
+      },
+      {
+        "n": "Vakuumisolierplatte im Batteriegehäuse",
+        "c": "Isolierung"
+      },
+      {
+        "n": "Interlayer (Glasfasermatte zwischen Zellen)",
+        "c": "Brandschutz"
+      },
+      {
+        "n": "Thermische Propagationsbarriere",
+        "c": "Brandschutz"
+      },
+      {
+        "n": "Gelkühlpackung im Zellzwischenraum",
+        "c": "Kühlen"
+      },
+      {
+        "n": "Wärmemanagement-Steuergerät (Kühlkreis-ECU)",
+        "c": "Steuerung"
+      },
+      {
+        "n": "PCM-Schicht (Phase Change Material)",
+        "c": "Pufferspeicher"
+      },
+      {
+        "n": "Zell-Swelling-Kompensation (Expansionsplatten)",
+        "c": "Strukturschutz"
+      },
+      {
+        "n": "Kühlkanal im Alu-Modulgehäuse",
+        "c": "Kühlen"
+      },
+      {
+        "n": "Batteriepack-Bodenkühlplatte (Serpentinenrohr)",
+        "c": "Kühlen"
+      },
+      {
+        "n": "R290 Propan-Wärmepumpe (neuere EV)",
+        "c": "Heizen"
+      },
+      {
+        "n": "Elektrische Standheizung 230V (Hotel-Funktion)",
+        "c": "Heizen"
+      },
+      {
+        "n": "Innenraum-Wärmepumpe (Klimatisierung eff.)",
+        "c": "Heizen/Kühlen"
+      },
+      {
+        "n": "Motorabwärme-Rückkopplung",
+        "c": "Heizen"
+      },
+      {
+        "n": "Zelldruck-Monitoring (Gassensor)",
+        "c": "Sicherheit"
+      },
+      {
+        "n": "Batteriekühlflüssigkeitsanalyse (Service)",
+        "c": "Wartung"
+      },
+      {
+        "n": "Kühlung der Ladesäulen-Elektronik",
+        "c": "Infrastruktur"
       }
     ]
   },
@@ -712,6 +1552,126 @@
       {
         "n": "Hausakkumulator-Bypass via EV",
         "c": "V2H"
+      },
+      {
+        "n": "EV liefert Strom an Heimnetz im Stromausfall",
+        "c": "V2H Backup"
+      },
+      {
+        "n": "EV puffert Solarstrom tagsüber, gibt nachts ab",
+        "c": "Solar-Puffer"
+      },
+      {
+        "n": "EV lädt zu Niedrigtarifzeiten, gibt zu Hochzeiten ab",
+        "c": "Peak Shaving"
+      },
+      {
+        "n": "Nissan LEAF V2G-Pilot in Japan",
+        "c": "V2G Japan"
+      },
+      {
+        "n": "Volkswagen MEB-Plattform mit bidirektionalem Laden",
+        "c": "V2H VW"
+      },
+      {
+        "n": "BDEW-Standard Deutschland V2G-Protokoll",
+        "c": "Deutschland"
+      },
+      {
+        "n": "ISO 15118 — Norm für V2G-Kommunikation",
+        "c": "Internationaler Standard"
+      },
+      {
+        "n": "Vehicle-to-Load (V2L) — 230V-Steckdose im Auto",
+        "c": "V2L"
+      },
+      {
+        "n": "Vehicle-to-Grid stabilisiert Frequenz im Netz",
+        "c": "V2G Netzstabilität"
+      },
+      {
+        "n": "Hyundai IONIQ 5 — V2L-fähig ab Werk",
+        "c": "V2L Hyundai"
+      },
+      {
+        "n": "KIA EV6 — V2L-Steckdose unter Ladeschwelle",
+        "c": "V2L KIA"
+      },
+      {
+        "n": "Mitsubishi Outlander PHEV — V2H Japan",
+        "c": "V2H Mitsubishi"
+      },
+      {
+        "n": "CHAdeMO-Standard unterstützt V2G nativ",
+        "c": "CHAdeMO V2G"
+      },
+      {
+        "n": "CCS2 V2G-Erweiterung in Entwicklung",
+        "c": "CCS V2G"
+      },
+      {
+        "n": "Renault 5 E-Tech — V2L-Funktion ab 2025",
+        "c": "V2L Renault"
+      },
+      {
+        "n": "BYD Atto 3 — V2L in Australien",
+        "c": "V2L BYD"
+      },
+      {
+        "n": "Bidirektionale Wallbox Enphase IQ8",
+        "c": "Heimspeicher"
+      },
+      {
+        "n": "Smart Grid Integration V2G Holland-Pilotprojekt",
+        "c": "Niederlande V2G"
+      },
+      {
+        "n": "EV als rollende Batterie im Netzverbund",
+        "c": "Virtual Power Plant"
+      },
+      {
+        "n": "V2G Erlöspotenzial bis 2.000 €/Jahr",
+        "c": "Wirtschaftlichkeit"
+      },
+      {
+        "n": "Verschleiß durch V2G-Betrieb: +2 % Degradation",
+        "c": "Batterieverschleiß"
+      },
+      {
+        "n": "Vertikale Netzintegration: EV ↔ Smart Meter",
+        "c": "Digitale Integration"
+      },
+      {
+        "n": "AC-Bidirektional vs. DC-Bidirektional",
+        "c": "Ladetechnik-Unterschied"
+      },
+      {
+        "n": "Schulen als V2G-Puffer tagsüber (Pilotprojekte)",
+        "c": "Community V2G"
+      },
+      {
+        "n": "Flottenmanagement mit bidirektionalen EVs",
+        "c": "Fleet V2G"
+      },
+      {
+        "n": "Regelenergiemarkt: EVs bieten Primärreserve",
+        "c": "Regelenergie"
+      },
+      {
+        "n": "USA: Pacific Gas & Electric V2G-Tarif",
+        "c": "USA V2G"
+      },
+      {
+        "n": "Australien: AGL V2H-Abo-Tarif",
+        "c": "Australien V2G"
+      },
+      {
+        "n": "Off-Grid Camping mit V2L (Wildnis-Strom)",
+        "c": "Off-Grid"
+      },
+      {
+        "n": "Fahrzeug versorgt weiteres Fahrzeug (Notladung)",
+        "c": "V2V"
       }
     ]
   },
@@ -797,6 +1757,126 @@
       {
         "n": "Plateau 200 kW von 10–50%, dann fallend",
         "c": "Mercedes EQS"
+      },
+      {
+        "n": "Sehr flache Kurve LFP: 80–100% langsam",
+        "c": "BYD Blade Battery"
+      },
+      {
+        "n": "Hoher Peak 480 kW, dann sofort Abfall (S4-Lader)",
+        "c": "Xpeng G6"
+      },
+      {
+        "n": "Plateau 220 kW von 5–80% (E-GMP stabil)",
+        "c": "Hyundai Ioniq 5"
+      },
+      {
+        "n": "Moderate Kurve: max 150 kW, kein Heizen nötig",
+        "c": "Volkswagen ID.4"
+      },
+      {
+        "n": "Steiler Abfall nach 50% SOC bei NMC",
+        "c": "BMW iX3"
+      },
+      {
+        "n": "Breite Kurve dank Thermomanagement bis 200 kW",
+        "c": "Porsche Taycan"
+      },
+      {
+        "n": "Plateau 240 kW von 10–70% (800V Kia)",
+        "c": "Kia EV6 GT"
+      },
+      {
+        "n": "Sehr langsam 50 kW AC (kein DC möglich)",
+        "c": "Renault Zoe ZE50"
+      },
+      {
+        "n": "AC 22 kW optimal, kein DC-Anschluss",
+        "c": "Smart EQ fortwo"
+      },
+      {
+        "n": "Doppel-Peak bei 800V + Batterieheizung aktiv",
+        "c": "Genesis GV60"
+      },
+      {
+        "n": "300 kW Peak bei 900V Systemspannung",
+        "c": "Lucid Air Grand Touring"
+      },
+      {
+        "n": "Ladekurven-Optimierung via OTA (Tesla V3 SC)",
+        "c": "Tesla Model 3"
+      },
+      {
+        "n": "Extrem breite Kurve 200 kW bis 90% SOC",
+        "c": "Audi e-tron GT RS"
+      },
+      {
+        "n": "Battery Swap statt Ladelimit — kein Laden nötig",
+        "c": "NIO ET7"
+      },
+      {
+        "n": "Plateau 270 kW bis 65%, dann scharf fallend",
+        "c": "Porsche Taycan Turbo S"
+      },
+      {
+        "n": "Max 30 kW, langer Anschluss-Zeitaufwand",
+        "c": "Dacia Spring"
+      },
+      {
+        "n": "Schneller Hochlauf, keine Überhitzungsgrenze",
+        "c": "Tesla Cybertruck"
+      },
+      {
+        "n": "Flache Kurve aber sehr stabil (LFP-Chemie)",
+        "c": "Tesla Model 3 Standard"
+      },
+      {
+        "n": "Kurve zeigt thermisches Throttling bei >35°C Umgebung",
+        "c": "BMW i4 M50"
+      },
+      {
+        "n": "Bidirektionale Kurve — Entladen V2G bei Niedertarif",
+        "c": "Nissan Leaf (Chademo V2G)"
+      },
+      {
+        "n": "Kurze flache Kurve: Batteriepack <30 kWh",
+        "c": "MINI Cooper SE"
+      },
+      {
+        "n": "Peak 350 kW Ionity-Kompatibel (Supercharger V4)",
+        "c": "Tesla Model S Plaid"
+      },
+      {
+        "n": "Ladekurvenanalyse zeigt Kapazitätsverlust",
+        "c": "Batteriegesundheit (SOH)"
+      },
+      {
+        "n": "Effizienteste Kurve bei -10°C dank Wärmepumpe",
+        "c": "BMW iX"
+      },
+      {
+        "n": "Peak 100 kW, kein aktives Thermomanagement",
+        "c": "Fiat 500e"
+      },
+      {
+        "n": "Zweistufige Kurve: 150 kW, Pause, dann 80 kW",
+        "c": "Mitsubishi Eclipse Cross PHEV"
+      },
+      {
+        "n": "Konstant 50 kW CHAdeMO (ältere Fahrzeuge)",
+        "c": "Nissan Leaf Gen1"
+      },
+      {
+        "n": "Nahezu flache Kurve 195 kW bis 75% (Volvo EX90)",
+        "c": "Volvo EX90 Twin Motor"
+      },
+      {
+        "n": "Optimale Kurve bei Zieltemperatur 25°C",
+        "c": "Hyundai Ioniq 6 LR"
+      },
+      {
+        "n": "Peak 480 kW reales Testergebnis Fastned",
+        "c": "Xpeng G9 (2023 real-world)"
       }
     ]
   },
@@ -888,6 +1968,126 @@
       {
         "n": "SPINE / SHIP-Schnittstelle im Heimnetz",
         "c": "EEBus"
+      },
+      {
+        "n": "ISO 15118-20 Bidirektional-Standard",
+        "c": "V2G-Protokoll"
+      },
+      {
+        "n": "PV-Anlage koppelt mit EV via Sunny Home Manager",
+        "c": "SMA Solar"
+      },
+      {
+        "n": "Ladefreigabe nur bei Ökostrom-Signal",
+        "c": "Grünstrom-Integration"
+      },
+      {
+        "n": "EV-App steuert Ladezeitfenster",
+        "c": "Smart Scheduling"
+      },
+      {
+        "n": "Home Energy Management System koordiniert Wärmepumpe+EV",
+        "c": "HEMS-Integration"
+      },
+      {
+        "n": "OCPP 1.6 Protokoll Ladepunkt-Kommunikation",
+        "c": "OCPP"
+      },
+      {
+        "n": "Bidirektionales Laden senkt Netzlast (V2G)",
+        "c": "Vehicle-to-Grid"
+      },
+      {
+        "n": "Smart Meter Gateway koppelt Wallbox mit DSO",
+        "c": "Grid Integration"
+      },
+      {
+        "n": "EV-Laden per Alexa / Google Home Sprachbefehl",
+        "c": "Sprachsteuerung"
+      },
+      {
+        "n": "Wallbox mit MQTT-Protokoll im Heimnetz",
+        "c": "IoT-Protokoll"
+      },
+      {
+        "n": "Fahrzeug lädt wenn Strompreis unter 10 Ct/kWh",
+        "c": "Spot-Preis-Laden"
+      },
+      {
+        "n": "V2H: Fahrzeug versorgt Haus im Blackout",
+        "c": "Vehicle-to-Home"
+      },
+      {
+        "n": "KNX Smart Home integriert Wallbox-Steuerung",
+        "c": "Gebäudeautomation"
+      },
+      {
+        "n": "Modbus RTU Schnittstelle Wallbox ↔ Wechselrichter",
+        "c": "Modbus"
+      },
+      {
+        "n": "ISO 15118-2 Plug & Charge Authentifizierung",
+        "c": "Plug & Charge"
+      },
+      {
+        "n": "EEBUS-Standard für Energiemanagement",
+        "c": "EEBUS"
+      },
+      {
+        "n": "Demand-Side Management via lokales EMS",
+        "c": "EMS"
+      },
+      {
+        "n": "Fernwartung der Wallbox per Cloud-Backend",
+        "c": "Remote Management"
+      },
+      {
+        "n": "EV-Roaming-Token via RFID-Karte",
+        "c": "RFID-Auth"
+      },
+      {
+        "n": "Netzdienstleistungen (Primärregelleistung) via EV-Flotte",
+        "c": "Regelenergie"
+      },
+      {
+        "n": "Netzbetreiber-Signal drosselt Ladeleistung",
+        "c": "Smart Charging (DSO)"
+      },
+      {
+        "n": "Solar-Überschuss-Laden (Min. 1,4 kW PV-Überschuss)",
+        "c": "PV-Überschuss-Laden"
+      },
+      {
+        "n": "Zwei-Zonen-Messung (Eichrecht-konforme Wallbox)",
+        "c": "Eichrecht"
+      },
+      {
+        "n": "EV-Fahrzeugdaten via API abrufbar (Tesla, etc.)",
+        "c": "Fahrzeug-API"
+      },
+      {
+        "n": "Eon Drive integriert smarte Ladetarife",
+        "c": "Tarifsystem"
+      },
+      {
+        "n": "Zapier-Workflow: Ankunft zu Hause → Ladestart",
+        "c": "Automatisierung"
+      },
+      {
+        "n": "Apple Home / HomeKit Wallbox-Anbindung",
+        "c": "HomeKit"
+      },
+      {
+        "n": "Matter-Protokoll für EV-Lader geplant",
+        "c": "Matter"
+      },
+      {
+        "n": "Load Balancing mehrerer Wallboxen im Gebäude",
+        "c": "Lastmanagement"
+      },
+      {
+        "n": "Wetter-API steuert Ladevorgang (Solarprognose)",
+        "c": "Wetterbasiertes Laden"
       }
     ]
   },
@@ -973,6 +2173,126 @@
       {
         "n": "Gratis Fährfahrten für EV (historisch)",
         "c": "Norwegen"
+      },
+      {
+        "n": "EV-Plakette ermöglicht Umweltzonendurchfahrt",
+        "c": "Deutschland (historisch)"
+      },
+      {
+        "n": "Gratis Laden an öffentlichen Säulen",
+        "c": "Norwegen (früher)"
+      },
+      {
+        "n": "EV-Besitzer zahlen keine Jahressteuer",
+        "c": "Norwegen"
+      },
+      {
+        "n": "EVs dürfen Busspuren auf Autobahnen nutzen",
+        "c": "Großbritannien"
+      },
+      {
+        "n": "25% Rabatt auf Fährpreise für EV-Besitzer",
+        "c": "Dänemark (historisch)"
+      },
+      {
+        "n": "Kostenlose Zulassung / Kfz-Schein für EVs",
+        "c": "Indien (einige Bundesstaaten)"
+      },
+      {
+        "n": "EV-Firmenwagensteuer 0,5% statt 1% pro Monat",
+        "c": "Deutschland"
+      },
+      {
+        "n": "EV kaufen = 10% Kaufsteuer-Erlass",
+        "c": "Niederlande"
+      },
+      {
+        "n": "EV-Busspur-Berechtigung Stadtautobahn",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Parkplatzpflicht für Arbeitgeber bei EV-Wallbox",
+        "c": "Frankreich"
+      },
+      {
+        "n": "EV-Steuerentlastung beim Firmenauto 50%",
+        "c": "Belgien"
+      },
+      {
+        "n": "Stromsteuer-Vergünstigung für EV-Ladevorgänge",
+        "c": "Österreich"
+      },
+      {
+        "n": "Maut-Reduktion 50% für EVs",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Strassensteuer 0€ für BEV",
+        "c": "Irland"
+      },
+      {
+        "n": "EV bekommt günstigere Versicherungsprämie",
+        "c": "mehrere Länder"
+      },
+      {
+        "n": "Sonderparkzone nahe Eingang reserviert für EV",
+        "c": "Schweden"
+      },
+      {
+        "n": "50% Nachlass auf Jahres-ÖPNV-Karte für EV-Besitzer",
+        "c": "Singapur (Pilot)"
+      },
+      {
+        "n": "EV-Zuschuss 9.000 USD für Niedrigverdiener",
+        "c": "USA (State-Level CA)"
+      },
+      {
+        "n": "Stadtdurchfahrtsrecht ohne Fahrverbotskontrolle",
+        "c": "mehrere EU-Städte"
+      },
+      {
+        "n": "Freifahrt auf Landstraße ohne Streckenmaut",
+        "c": "Portugal (historisch)"
+      },
+      {
+        "n": "EV = 0% Import-Zoll bei Neukauf",
+        "c": "Thailand"
+      },
+      {
+        "n": "Sonderkennzeichen grüner Rand sichtbar",
+        "c": "Deutschland (E-Kennzeichen)"
+      },
+      {
+        "n": "Gratis Schnellladen bei Kaufpreis inkludiert",
+        "c": "BMW (i3 Paket hist.)"
+      },
+      {
+        "n": "EV-Besitzer erhalten Vorrang bei Förderanträgen",
+        "c": "Frankreich"
+      },
+      {
+        "n": "EV = befreit von Fahrverboten an Smog-Tagen",
+        "c": "Mailand / Rom"
+      },
+      {
+        "n": "Wallbox-Förderung 900€ (KfW 442 bis 2021)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Steuervorteil für EV-Kauf bis 80.000€ Listenpreis",
+        "c": "Deutschland"
+      },
+      {
+        "n": "EV auf Kreuzfahrt-Fähre gratis Stellplatz",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Mehrwertsteuererlass auf EV-Kauf",
+        "c": "Norwegen"
+      },
+      {
+        "n": "EV-Besitzer zahlen halbe Parkgebühren",
+        "c": "Seoul"
       }
     ]
   },
@@ -1058,6 +2378,126 @@
       {
         "n": "NIO ET7",
         "c": "Seitlich Mitte"
+      },
+      {
+        "n": "Hyundai Ioniq 5",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Genesis GV60",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Tesla Model Y",
+        "c": "Hinten Links"
+      },
+      {
+        "n": "Tesla Model X",
+        "c": "Hinten Links"
+      },
+      {
+        "n": "Volkswagen ID.3",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Skoda Enyaq iV",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Cupra Born",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Audi Q4 e-tron",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Nissan Leaf",
+        "c": "Vorne (Motorhaube)"
+      },
+      {
+        "n": "BMW i3",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "BMW iX",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Opel Corsa-e",
+        "c": "Vorne Links"
+      },
+      {
+        "n": "Citroën e-C3",
+        "c": "Vorne Links"
+      },
+      {
+        "n": "Polestar 2",
+        "c": "Hinten Links"
+      },
+      {
+        "n": "Volvo XC40 Recharge",
+        "c": "Hinten Links"
+      },
+      {
+        "n": "Volkswagen ID.4 GTX",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Kia EV9",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "BMW i7 xDrive60",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "Tesla Cybertruck",
+        "c": "Hinten Links"
+      },
+      {
+        "n": "Rivian R1S",
+        "c": "Hinten Links"
+      },
+      {
+        "n": "Zeekr 001",
+        "c": "Hinten Links"
+      },
+      {
+        "n": "BYD Han EV",
+        "c": "Vorne Rechts"
+      },
+      {
+        "n": "Xpeng P7",
+        "c": "Hinten Rechts"
+      },
+      {
+        "n": "MINI Cooper SE",
+        "c": "Hinten Links"
+      },
+      {
+        "n": "Hyundai IONIQ 6",
+        "c": "Hinten rechts"
+      },
+      {
+        "n": "Skoda Enyaq",
+        "c": "Hinten rechts"
+      },
+      {
+        "n": "MG ZS EV",
+        "c": "Vorne links"
+      },
+      {
+        "n": "BYD Atto 3",
+        "c": "Vorne links"
+      },
+      {
+        "n": "Ora Funky Cat",
+        "c": "Hinten rechts"
+      },
+      {
+        "n": "Xpeng G9",
+        "c": "Hinten links"
       }
     ]
   },
@@ -1149,6 +2589,126 @@
       {
         "n": "Leichtere Felge = geringere rotierende Masse",
         "c": "Gewicht"
+      },
+      {
+        "n": "Continental EcoContact 7 (EV-optimiert)",
+        "c": "Niedriger Rollwiderstand"
+      },
+      {
+        "n": "Michelin e.Primacy (Silence Technology)",
+        "c": "Geräuschreduzierung"
+      },
+      {
+        "n": "Pirelli Elect (Soundschicht + SealInside)",
+        "c": "Geräuschreduzierung"
+      },
+      {
+        "n": "Bridgestone Turanza 6 (Ologic Tech)",
+        "c": "Effizienz"
+      },
+      {
+        "n": "Goodyear ElectricDrive 2 (EV-Laufrichtung)",
+        "c": "Tragfähigkeit"
+      },
+      {
+        "n": "Hankook iON evo AS (EV-Kennzeichnung)",
+        "c": "EV-Symbol"
+      },
+      {
+        "n": "Falken Azenis FK520 MC+ (Motorsport EV)",
+        "c": "Hochleistung"
+      },
+      {
+        "n": "Nokian Tyres One HT (EV-SUV)",
+        "c": "Tragfähigkeit + Effizienz"
+      },
+      {
+        "n": "Toyo Proxes Sport SUV (SilentWall)",
+        "c": "Komfort"
+      },
+      {
+        "n": "Vredestein Quatrac Pro EV (Ganzjahr EV)",
+        "c": "Ganzjahres-EV"
+      },
+      {
+        "n": "Verstärkter XL-Lastindex für hohes Batteriegewicht",
+        "c": "Tragfähigkeit"
+      },
+      {
+        "n": "Reifendrucksensor TPMS Pflicht (EU ab 2014)",
+        "c": "Sicherheit"
+      },
+      {
+        "n": "Reifenbreite 235 typisch für Mittelklasse-EV",
+        "c": "Dimension"
+      },
+      {
+        "n": "Sommer-EV-Reifen auf 18-Zoll Räder optimiert",
+        "c": "Aerodynamik"
+      },
+      {
+        "n": "EV-typisch schwerere Felge kompensiert durch Carbongewicht",
+        "c": "Gewicht"
+      },
+      {
+        "n": "Schneekette kompatibel trotz Unterbodenbatterie",
+        "c": "Wintereinsatz"
+      },
+      {
+        "n": "EV-Reifen: breitere Aufstandsfläche für Traktionskraft",
+        "c": "Anfahren"
+      },
+      {
+        "n": "Runflat erhöht ungefederte Masse (vermieden bei EVs)",
+        "c": "Komfort"
+      },
+      {
+        "n": "Auswucht-Optimierung für Elektromotor-Frequenz",
+        "c": "Vibration"
+      },
+      {
+        "n": "Längere Profilrillen gegen Aquaplaning bei höherem Gewicht",
+        "c": "Sicherheit"
+      },
+      {
+        "n": "EV-Reifen-Rollwiderstandslabel A (beste Klasse)",
+        "c": "Effizienz"
+      },
+      {
+        "n": "Innengeräuschdämmung via Akustik-Schaum reduziert NVH",
+        "c": "NVH"
+      },
+      {
+        "n": "Sommer/Winter-Wechsel besonders wichtig bei EV-Reichweite",
+        "c": "Reichweite"
+      },
+      {
+        "n": "Felgendesign aerodynamisch (geschlossen) für EV",
+        "c": "Aerodynamik"
+      },
+      {
+        "n": "Größere Reifendimension für SUV-EV (z.B. 285/40 R22)",
+        "c": "Dimension"
+      },
+      {
+        "n": "Kältestabile Gummimischung für Winter-EV-Reifen",
+        "c": "Wintereinsatz"
+      },
+      {
+        "n": "EV-Typprüfung: höherer Prüfdruck wegen Gewicht",
+        "c": "Prüfnorm"
+      },
+      {
+        "n": "Reifenlebensdauer EV ca. 20-30% kürzer durch Drehmoment",
+        "c": "Verschleiß"
+      },
+      {
+        "n": "EV-Felgengewicht: Leichtmetall statt Stahl bevorzugt",
+        "c": "Gewichtssparend"
+      },
+      {
+        "n": "OE-Reifen (Original Equipment) für spez. EV zugelassen",
+        "c": "OE-Freigabe"
       }
     ]
   },
@@ -1234,6 +2794,126 @@
       {
         "n": "EVBox (Global)",
         "c": "Hubject / OCPI"
+      },
+      {
+        "n": "Hubject (Intercharge-Netz global)",
+        "c": "OCPI / OICP"
+      },
+      {
+        "n": "Gireve (Frankreich/EU Roaming)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Chargemap Pass (EU)",
+        "c": "RFID-Karte"
+      },
+      {
+        "n": "APCOA FLOW (Parken + Laden)",
+        "c": "App-basiert"
+      },
+      {
+        "n": "Maingau Energie (günstig Deutschland)",
+        "c": "RFID + App"
+      },
+      {
+        "n": "Greenway (Osteuropa)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Lidl charge (Deutschland)",
+        "c": "App/RFID"
+      },
+      {
+        "n": "REWE Charging by EnBW",
+        "c": "EnBW-Netz"
+      },
+      {
+        "n": "Circle K Charge (Skandinavien)",
+        "c": "RFID"
+      },
+      {
+        "n": "IHC (Independent Highway Charging)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Tesla Supercharger via Partnernetz",
+        "c": "OCPI (2023+)"
+      },
+      {
+        "n": "Vattenfall InCharge (Schweden)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Blink Charging (USA)",
+        "c": "OCPP"
+      },
+      {
+        "n": "GreenFlux (Niederlande)",
+        "c": "OCPI"
+      },
+      {
+        "n": "EVgo (USA Fast Charging)",
+        "c": "CCS/CHAdeMO"
+      },
+      {
+        "n": "EDF Pulse & Charge (Frankreich)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Zunder (Spanien/Portugal)",
+        "c": "OCPI"
+      },
+      {
+        "n": "BP Pulse (UK)",
+        "c": "RFID + App"
+      },
+      {
+        "n": "Osprey (UK)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Gridserve (UK)",
+        "c": "RFID"
+      },
+      {
+        "n": "Pod Point (UK/Norwegen)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Clever (Dänemark)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Recharge (Norwegen/Skandinavien)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Fortum Charge & Drive (Finnland)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Enel X Way JuicePass (Italien)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Atlante (Südeuropa)",
+        "c": "OCPI"
+      },
+      {
+        "n": "IBIL (Spanien)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Tesla Destination Charger (Hotels)",
+        "c": "Tesla-Netz"
+      },
+      {
+        "n": "Powerdot (Portugal/Spanien)",
+        "c": "OCPI"
+      },
+      {
+        "n": "Plugsurfing (Skandinavien/EU)",
+        "c": "OCPI"
       }
     ]
   },
@@ -1319,6 +2999,126 @@
       {
         "n": "Blaues Thermometer",
         "c": "Batterie-Vorheizung läuft"
+      },
+      {
+        "n": "Orange Schneeflocke im Batterie-Balken",
+        "c": "Niedrige Temperatur — Ladegeschwindigkeit reduziert"
+      },
+      {
+        "n": "Hochvolt-System Symbol (Dreieck + Blitz)",
+        "c": "HV-Systemfehler — Werkstatt aufsuchen"
+      },
+      {
+        "n": "Rotes Ausrufezeichen im Kreis",
+        "c": "Kritischer Fehler — sofort anhalten"
+      },
+      {
+        "n": "Grüner Ladestecker leuchtet konstant",
+        "c": "Fahrzeug lädt korrekt"
+      },
+      {
+        "n": "Gelber Ladestecker blinkt",
+        "c": "Ladevorgang aktiv (pulsierend)"
+      },
+      {
+        "n": "Rotes Auto mit Wellen unten",
+        "c": "Rutschgefahr aktiv (ESC/ASC)"
+      },
+      {
+        "n": "Oranges Batteriesymbol mit Ausrufezeichen",
+        "c": "Batterie Service erforderlich"
+      },
+      {
+        "n": "Thermometer mit rotem Balken",
+        "c": "Batterie überhitzt — Laden/Fahrt einschränken"
+      },
+      {
+        "n": "Blauer Snowflake-Symbol (Temperatur)",
+        "c": "Außentemperatur unter +4°C — Vorsicht"
+      },
+      {
+        "n": "Kreis mit P + Pfeil (EPB Symbol)",
+        "c": "Elektrische Parkbremse aktiv"
+      },
+      {
+        "n": "Batterie mit Plus/Minus (12V Akku)",
+        "c": "12V-Batterie schwach oder leer"
+      },
+      {
+        "n": "Grüner Strom-Pfeil kreisförmig",
+        "c": "Rekuperation aktiv"
+      },
+      {
+        "n": "AVAS Lautsprecher-Symbol",
+        "c": "Fußgänger-Warnsystem ausgeschaltet"
+      },
+      {
+        "n": "Rotes Ausrufezeichen im Dreieck (allg.)",
+        "c": "Allgemeiner Systemfehler — prüfen"
+      },
+      {
+        "n": "Grüner Haken im Kreis (Diagnose OK)",
+        "c": "System-Selbsttest bestanden"
+      },
+      {
+        "n": "Oranges Zahnrad-Symbol",
+        "c": "Antriebssystem-Warnung (Getriebe/Motor)"
+      },
+      {
+        "n": "Blaue Fahrzeug-Silhouette mit Stecker",
+        "c": "Fahrzeug angeschlossen — Abfahrtbereit"
+      },
+      {
+        "n": "Rotes Fahrzeug-Symbol kippt seitlich",
+        "c": "Fahrzeug-Stabilitätsfehler"
+      },
+      {
+        "n": "Oranges Dreieck mit ! (12V Netz)",
+        "c": "Niederspannungsnetz-Warnung"
+      },
+      {
+        "n": "Weiße Handfläche / Parkwarnung",
+        "c": "Automatischer Halteassistent aktiv"
+      },
+      {
+        "n": "Grünes P in Kreis",
+        "c": "Automatisches Einparken aktiv"
+      },
+      {
+        "n": "Oranges Auge im Dreieck",
+        "c": "Fahrerassistenz deaktiviert"
+      },
+      {
+        "n": "Blaues Thermometer (Kühlmittel kalt)",
+        "c": "Motor/System noch kalt — Normalbetrieb"
+      },
+      {
+        "n": "Rotes Dreieck mit Batterie-P",
+        "c": "Leistungsreduktion wegen SOC-Grenze"
+      },
+      {
+        "n": "Oranges Blitzsymbol (Antrieb)",
+        "c": "E-Motorleistung reduziert"
+      },
+      {
+        "n": "Schlüssel mit rotem Hintergrund",
+        "c": "Sicherheitssystem-Fehler"
+      },
+      {
+        "n": "Grüner Bogen oben (Ladesäule)",
+        "c": "Ladestation in Reichweite"
+      },
+      {
+        "n": "Rotes Kabel mit X",
+        "c": "Kabelverbindung unterbrochen"
+      },
+      {
+        "n": "P + Ausrufezeichen gelb",
+        "c": "Parksensor-Warnung"
+      },
+      {
+        "n": "Oranges Symbol: Fahrzeug mit Werkzeug",
+        "c": "Service fällig"
       }
     ]
   },
@@ -1404,6 +3204,126 @@
       {
         "n": "Ola Electric",
         "c": "Indien"
+      },
+      {
+        "n": "BYD (Startup-Phase 1990s)",
+        "c": "China"
+      },
+      {
+        "n": "ZEEKR",
+        "c": "China"
+      },
+      {
+        "n": "AITO (Huawei-Partner)",
+        "c": "China"
+      },
+      {
+        "n": "Leapmotor",
+        "c": "China"
+      },
+      {
+        "n": "Hozon Auto (Neta)",
+        "c": "China"
+      },
+      {
+        "n": "VinFast",
+        "c": "Vietnam"
+      },
+      {
+        "n": "Ather Energy",
+        "c": "Indien"
+      },
+      {
+        "n": "Tata Motors EV-Division",
+        "c": "Indien"
+      },
+      {
+        "n": "Tarform Motorcycles",
+        "c": "USA"
+      },
+      {
+        "n": "Aptera Motors",
+        "c": "USA"
+      },
+      {
+        "n": "Arcimoto",
+        "c": "USA"
+      },
+      {
+        "n": "ElectraMeccanica",
+        "c": "Kanada"
+      },
+      {
+        "n": "Lightning eMotors",
+        "c": "USA"
+      },
+      {
+        "n": "Cenntro Electric",
+        "c": "USA/China"
+      },
+      {
+        "n": "Aeva Technologies (LiDAR)",
+        "c": "USA"
+      },
+      {
+        "n": "ChargePoint Holdings",
+        "c": "USA"
+      },
+      {
+        "n": "Wallbox Chargers",
+        "c": "Spanien"
+      },
+      {
+        "n": "Juice Technology (go-e)",
+        "c": "Österreich"
+      },
+      {
+        "n": "Sono Motors (Sion Solar EV)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "e.GO Mobile (jetzt Nexion)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Quantron AG",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Sono Group",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Tevva Motors",
+        "c": "Großbritannien"
+      },
+      {
+        "n": "Arrival UK (insolvenz 2023)",
+        "c": "Großbritannien"
+      },
+      {
+        "n": "Piëch Automotive",
+        "c": "Schweiz"
+      },
+      {
+        "n": "Automobili Pininfarina",
+        "c": "Italien"
+      },
+      {
+        "n": "Aiways (Europa-Import)",
+        "c": "China"
+      },
+      {
+        "n": "Skywell (DFSK EV)",
+        "c": "China"
+      },
+      {
+        "n": "Aiways",
+        "c": "China"
+      },
+      {
+        "n": "Zeekr",
+        "c": "China"
       }
     ]
   },
@@ -1495,6 +3415,126 @@
       {
         "n": "Fahrtstil 150 km/h statt 100: -45% Reichweite",
         "c": "Autobahn"
+      },
+      {
+        "n": "Fahrt mit 160 km/h statt 120 km/h: +40% Verbrauch",
+        "c": "Geschwindigkeit"
+      },
+      {
+        "n": "Infotainmentsystem dauerhaft an: +0,3 kWh/100km",
+        "c": "Bordelektronik"
+      },
+      {
+        "n": "Regeneratives Bremsen schlecht eingestellt",
+        "c": "Rekuperation"
+      },
+      {
+        "n": "Kalter Akku: Kapazität bei -20°C halbiert",
+        "c": "Kälte"
+      },
+      {
+        "n": "Fahrten im Bergland: Höhenmeter kosten Energie",
+        "c": "Topografie"
+      },
+      {
+        "n": "Nasse Straßen erhöhen Rollwiderstand spürbar",
+        "c": "Wetter"
+      },
+      {
+        "n": "Anhänger-Kupplung aerodynamisch nachteilig",
+        "c": "Anhänger"
+      },
+      {
+        "n": "Vollbeladener Kofferraum: Gewicht erhöht Verbrauch",
+        "c": "Beladung"
+      },
+      {
+        "n": "Fehlende Vorkonditionierung im Winter",
+        "c": "Kälte"
+      },
+      {
+        "n": "AC-Klimaanlage bei 30°C: bis -15% Reichweite",
+        "c": "Hitze"
+      },
+      {
+        "n": "LED-Beleuchtung aus — Halogenscheinwerfer mehr Strom",
+        "c": "Beleuchtung"
+      },
+      {
+        "n": "Luftdruck 0,3 bar zu niedrig: +3% Verbrauch",
+        "c": "Reifendruck"
+      },
+      {
+        "n": "Standheizung nicht genutzt: Batterie heizt Innenraum",
+        "c": "Heizung"
+      },
+      {
+        "n": "Kurze Strecken: Batterie kommt nicht in Betriebstemperatur",
+        "c": "Kurzstrecken"
+      },
+      {
+        "n": "Hohe Motorhaube (Crossover): schlechterer cw-Wert",
+        "c": "Aerodynamik"
+      },
+      {
+        "n": "Seitenwind bei Cabrios ohne Windschutz",
+        "c": "Aerodynamik"
+      },
+      {
+        "n": "Starker Gegenwind auf der Autobahn: bis -20% Reichweite",
+        "c": "Wind"
+      },
+      {
+        "n": "Allradantrieb aktiv (AWD permanent): Doppelmotoren",
+        "c": "Antrieb"
+      },
+      {
+        "n": "Sport-Modus: höherer Verbrauch durch Ansprechverhalten",
+        "c": "Fahrmodus"
+      },
+      {
+        "n": "Stopp-and-Go-Verkehr ohne Rekuperation-Nutzung",
+        "c": "Verkehr"
+      },
+      {
+        "n": "Runflat-Reifen erhöhen Rollwiderstand",
+        "c": "Reifen"
+      },
+      {
+        "n": "Autoscheiben-Heizung: zusätzlicher Stromverbrauch",
+        "c": "Heizung"
+      },
+      {
+        "n": "Niedrige Luftfeuchtigkeit: irrelevant (nur Reifen wichtig)",
+        "c": "Umgebung"
+      },
+      {
+        "n": "Akkudegradation nach 200.000 km: -15% Kapazität",
+        "c": "Alterung"
+      },
+      {
+        "n": "Musikanlage Maximum-Lautstärke: minimal relevant",
+        "c": "Bordelektronik"
+      },
+      {
+        "n": "Falsche Ladelevel: Vollladung beschleunigt Degradation",
+        "c": "Ladegewohnheit"
+      },
+      {
+        "n": "Hochvolt-Vorheizung für Schnellladestopp: kostet ~0,5 kWh",
+        "c": "Laden"
+      },
+      {
+        "n": "Winter-Reifen vs. Sommer: +5-8% Verbrauch",
+        "c": "Reifen"
+      },
+      {
+        "n": "Dachreling mit Transportbox: +20% Luftwiderstand",
+        "c": "Aerodynamik"
+      },
+      {
+        "n": "Nachtfahrt: Licht + evtl. Heizung = Mehrverbrauch",
+        "c": "Nacht"
       }
     ]
   },
@@ -1580,6 +3620,126 @@
       {
         "n": "Nicht vorhandenes AVAS = Strafe?",
         "c": "Typgenehmigung verweigert (EU)"
+      },
+      {
+        "n": "EV in Parkhäusern oft lautlos — Fußgänger nicht gewarnt",
+        "c": "Parkproblem"
+      },
+      {
+        "n": "USA-Norm FMVSS141 — Pflicht-Geräusch ab 2020",
+        "c": "US-Regulierung"
+      },
+      {
+        "n": "Japan AVAS Pflicht seit 2016",
+        "c": "Japan-Standard"
+      },
+      {
+        "n": "EV-Geräusch muss variabel sein (Vorwärts ≠ Rückwärts)",
+        "c": "ISO 16254"
+      },
+      {
+        "n": "Synthetischer Motorklang für Sportgefühl",
+        "c": "Marken-Sound"
+      },
+      {
+        "n": "BMW e-Sound von Hans Zimmer gestaltet",
+        "c": "Marken-Design"
+      },
+      {
+        "n": "Volkswagen ID-Serie: e-Sound",
+        "c": "VW Marken-Akustik"
+      },
+      {
+        "n": "Jaguar I-Pace Aluminiumschlag-Sound",
+        "c": "Jaguar Sound-Design"
+      },
+      {
+        "n": "Renault Zoe: Charakteristischer Pfeifton",
+        "c": "Renault-Akustik"
+      },
+      {
+        "n": "Gesetzliche Mindestlautstärke: 56 dB(A)",
+        "c": "EU-Norm"
+      },
+      {
+        "n": "AVAS muss auch im Schritttempo aktiv sein",
+        "c": "Niedriggeschwindigkeit"
+      },
+      {
+        "n": "Keine Imitation von Verbrennermotoren erlaubt",
+        "c": "Designverbot"
+      },
+      {
+        "n": "Hyundai IONIQ: futuristischer Ton",
+        "c": "Hyundai Sound"
+      },
+      {
+        "n": "Tesla Autopilot-Geräusch bei langsamer Fahrt",
+        "c": "Tesla AVAS"
+      },
+      {
+        "n": "Zwei-Ton-System: Ton A (Vorwärts) + Ton B (Rückwärts)",
+        "c": "Dual-Sound-System"
+      },
+      {
+        "n": "Piezoelektrischer Lautsprecher im Kühlergrill",
+        "c": "Akustik-Hardware"
+      },
+      {
+        "n": "Frequenzbereich 630–5000 Hz für AVAS",
+        "c": "Hörbarkeitsband"
+      },
+      {
+        "n": "Sehbehinderte Fußgänger als Hauptzielgruppe",
+        "c": "Barrierefreiheit"
+      },
+      {
+        "n": "AVAS deaktiviert sich automatisch über 20 km/h",
+        "c": "Automatische Abschaltung"
+      },
+      {
+        "n": "Elektrobus AVAS besonders laut wegen Passagierzahl",
+        "c": "Nahverkehr"
+      },
+      {
+        "n": "Elektrische Motorräder — AVAS besonders relevant",
+        "c": "Zweirad"
+      },
+      {
+        "n": "AVAS beim Rückwärtsfahren: höhere Tonfrequenz",
+        "c": "Frequenzmodulation"
+      },
+      {
+        "n": "Kabelnetzverbindung AVAS ↔ Fahrzeugbus (CAN)",
+        "c": "CAN-Bus-Integration"
+      },
+      {
+        "n": "Fail-safe: AVAS aktiv bei Systemfehler",
+        "c": "Sicherheitsrückfall"
+      },
+      {
+        "n": "Temperatureinfluss: Lautsprecher im Winter tiefer",
+        "c": "Temperaturkompensation"
+      },
+      {
+        "n": "Lkw-EV AVAS deutlich stärker als PKW",
+        "c": "Nutzfahrzeug-Norm"
+      },
+      {
+        "n": "Schiff-Elektro: ähnliche maritime Pflicht",
+        "c": "E-Marine"
+      },
+      {
+        "n": "AVAS-Daten werden im OBD-II-Port gespeichert",
+        "c": "Diagnose"
+      },
+      {
+        "n": "E-Scooter: optional AVAS in vielen Ländern",
+        "c": "Mikromobility"
+      },
+      {
+        "n": "EV-Zug Siemens: Sicherheitston bei Einfahrt",
+        "c": "Schienenverkehr"
       }
     ]
   },
@@ -1664,6 +3824,126 @@
       },
       {
         "n": "Free Road Tax + Zollbefreiung",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Steuergutschrift bis 4.000 USD für gebrauchte EVs (IRA)",
+        "c": "USA"
+      },
+      {
+        "n": "EV-Incentive 5.000 AUD für neue BEVs",
+        "c": "Australien"
+      },
+      {
+        "n": "Bonus Ecologico bis 13.750€ (mit Verschrottung Diesel)",
+        "c": "Italien"
+      },
+      {
+        "n": "SEAI Grant 5.000€ für neue BEVs",
+        "c": "Irland"
+      },
+      {
+        "n": "Grants bis 7.000€ (MOVES III Programm)",
+        "c": "Spanien"
+      },
+      {
+        "n": "EV Subvention 9.000 NZD (Fahrzeugrücklage Fonds)",
+        "c": "Neuseeland"
+      },
+      {
+        "n": "FAME III (geplant ab 2024, Indien)",
+        "c": "Indien"
+      },
+      {
+        "n": "EV-Subvention ¥20.000–50.000 je nach Modell",
+        "c": "Japan"
+      },
+      {
+        "n": "NEV-Subvention (Absenkung 2023 endgültig abgelaufen)",
+        "c": "China"
+      },
+      {
+        "n": "Kaufprämie 5.000 CHF Kantone (nicht bundesweit)",
+        "c": "Schweiz"
+      },
+      {
+        "n": "Steuervorteil: 0-Besteuerung bei Firmenwagen-EV",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Freistellung Kraftfahrzeugsteuer 5 Jahre BEV",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Ladeinfrastruktur Förderung 900€ KfW 442 (ausgelaufen)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Zuschuss 10 Mio. für kommunale Ladeinfrastruktur",
+        "c": "Deutschland (Bund)"
+      },
+      {
+        "n": "EV-Steuerabzug Unternehmen 100% im ersten Jahr (UK)",
+        "c": "Großbritannien"
+      },
+      {
+        "n": "Plug-In Grant 1.500 GBP für Vans (2024 noch aktiv)",
+        "c": "Großbritannien"
+      },
+      {
+        "n": "EV Incentive bis 6.000 USD (Colorado State)",
+        "c": "USA (Bundesstaat)"
+      },
+      {
+        "n": "Bonus Reparatur-Förderung für alte EV-Batterien",
+        "c": "Frankreich (Pilot)"
+      },
+      {
+        "n": "Kaufprämie 700€ Aufladeguthaben bei Kauf BEV",
+        "c": "Dänemark (hist.)"
+      },
+      {
+        "n": "Ladepark-Förderung EU-Fonds (CEF Transport)",
+        "c": "EU"
+      },
+      {
+        "n": "Steuerbonus für Photovoltaik+Wallbox-Kombination",
+        "c": "Italien"
+      },
+      {
+        "n": "OZEV ULEV Taxi Grant bis 7.500 GBP",
+        "c": "Großbritannien"
+      },
+      {
+        "n": "EV-Befreiung von CO2-Flottenstrafe (OEM-Ebene)",
+        "c": "EU"
+      },
+      {
+        "n": "Super-Credits Bonus für OEMs unter 50g CO2/km (EU)",
+        "c": "EU (OEM-Ebene)"
+      },
+      {
+        "n": "EV-Leasingsubvention für Sozialleistungsempfänger 50€/Monat",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Kommunalförderung Ladeinfrastruktur bis 80% Zuschuss",
+        "c": "Deutschland (Kommunen)"
+      },
+      {
+        "n": "Befreiung MwSt. auf Strom-Ladekosten EVs (periodisch)",
+        "c": "Belgien"
+      },
+      {
+        "n": "Förderprogramm EV-Schulbus-Fleet",
+        "c": "USA (Biden Admin)"
+      },
+      {
+        "n": "Zero-Interest-Loan für EV-Kauf",
+        "c": "Singapur"
+      },
+      {
+        "n": "EV-Rabatt 15% für Behörden/Flotten",
         "c": "Norwegen"
       }
     ]
@@ -1756,6 +4036,126 @@
       {
         "n": "Langstreckenfahrer haben Vorrang an Autobahn-HPC",
         "c": "Priorität"
+      },
+      {
+        "n": "Öffentliche Ladesäule nur nutzen wenn nötig",
+        "c": "Bedarfsgerecht laden"
+      },
+      {
+        "n": "Nach vollständigem Laden sofort Platz freimachen",
+        "c": "Freimachen"
+      },
+      {
+        "n": "Ladekabel nicht blockieren oder überfahren",
+        "c": "Kabelschutz"
+      },
+      {
+        "n": "Laden an Fremdbatterien nur mit Erlaubnis",
+        "c": "Zustimmung"
+      },
+      {
+        "n": "Ladevorgänge nicht vorzeitig abbrechen",
+        "c": "Nicht unterbrechen"
+      },
+      {
+        "n": "Keine Reserve-Cones auf Ladesäulen stellen",
+        "c": "Kein Blocken"
+      },
+      {
+        "n": "Fahrer per Zettel oder App kontaktieren bei Blockade",
+        "c": "Kommunikation"
+      },
+      {
+        "n": "Restaurants und Hotels: EV-Ladeplätze nicht parken ohne Laden",
+        "c": "Hotelparkplatz"
+      },
+      {
+        "n": "Firmen-EV-Laden: private PKW nicht an Firmensäulen",
+        "c": "Firmenpolitik"
+      },
+      {
+        "n": "Laden bei Notfall: Andere zuerst wenn Range kritisch",
+        "c": "Solidarität"
+      },
+      {
+        "n": "App-Benachrichtigung wenn voll — schnell weiterfahren",
+        "c": "App-Etikette"
+      },
+      {
+        "n": "Öffentliche Schnelllader nicht als Dauerparkplatz",
+        "c": "HPC-Etikette"
+      },
+      {
+        "n": "Ladekabel ordentlich aufhängen nach Nutzung",
+        "c": "Kabel aufräumen"
+      },
+      {
+        "n": "Bezahlen — kein Gratis-Laden auf Kosten anderer",
+        "c": "Fairness"
+      },
+      {
+        "n": "Nicht an Behindertenparkplatz laden ohne Berechtigung",
+        "c": "Rollstuhlfahrer"
+      },
+      {
+        "n": "Fahrgemeinschaft-EVs: Laden in Absprache",
+        "c": "Poolfahrzeug"
+      },
+      {
+        "n": "Residentielle Ladesäule: Nachbarn informieren",
+        "c": "Nachbarschaft"
+      },
+      {
+        "n": "Ladefehler melden damit Nächster nicht wartet",
+        "c": "Fehlerreporting"
+      },
+      {
+        "n": "Niemals Stecker gewaltsam entfernen",
+        "c": "Hardware-Schutz"
+      },
+      {
+        "n": "Nacht-Laden zuhause bevorzugen statt öffentlich",
+        "c": "Heimladen"
+      },
+      {
+        "n": "Im Urlaub: Gastgeber um Erlaubnis bitten",
+        "c": "Gast-Laden"
+      },
+      {
+        "n": "Campingplatz: EV nur am dafür vorgesehenen Platz laden",
+        "c": "Camping-Etikette"
+      },
+      {
+        "n": "Schulfuhrpark-Laden: Schulbeginn-Priorität",
+        "c": "Schulbetrieb"
+      },
+      {
+        "n": "EV-Fahrgemeinschaft teilt Ladestopps fair",
+        "c": "Fahrgemeinschaft"
+      },
+      {
+        "n": "Ladeverzögerung durch App anzeigen lassen",
+        "c": "Transparenz"
+      },
+      {
+        "n": "Strom zuhause teilen: Wallbox mit Freunden",
+        "c": "Nachbarschaftsladen"
+      },
+      {
+        "n": "Laden im Ausland: lokale Normen beachten",
+        "c": "Internationales Laden"
+      },
+      {
+        "n": "Ältere EV-Fahrer unterstützen bei ersten Ladevorgängen",
+        "c": "Gemeinschaft"
+      },
+      {
+        "n": "Negative Bewertungen für defekte Säulen hinterlassen",
+        "c": "Community-Feedback"
+      },
+      {
+        "n": "Supercharger-Etikette: 5 min Toleranz nach 100%",
+        "c": "Tesla-Netz"
       }
     ]
   },
@@ -1841,6 +4241,126 @@
       {
         "n": "Renault 5 EV Concept",
         "c": "Renault"
+      },
+      {
+        "n": "Volkswagen ID.Vizzion (2018)",
+        "c": "Volkswagen"
+      },
+      {
+        "n": "Mercedes EQ Silver Arrow (2018)",
+        "c": "Mercedes-Benz"
+      },
+      {
+        "n": "Audi Aicon Concept (2017)",
+        "c": "Audi"
+      },
+      {
+        "n": "Lamborghini Terzo Millennio (2017)",
+        "c": "Lamborghini"
+      },
+      {
+        "n": "Ferrari Vision Gran Turismo (2022)",
+        "c": "Ferrari"
+      },
+      {
+        "n": "Rivian Electric Adventure Concept",
+        "c": "Rivian"
+      },
+      {
+        "n": "Sony Vision-S 02 SUV (2022)",
+        "c": "Sony"
+      },
+      {
+        "n": "Honda e:Prototype (2020)",
+        "c": "Honda"
+      },
+      {
+        "n": "Lexus LF-Z Electrified (2021)",
+        "c": "Lexus"
+      },
+      {
+        "n": "Peugeot Inception Concept (2023)",
+        "c": "Peugeot"
+      },
+      {
+        "n": "Renault 4Ever Trophy (2022)",
+        "c": "Renault"
+      },
+      {
+        "n": "Volvo Recharge Concept (2021)",
+        "c": "Volvo"
+      },
+      {
+        "n": "Kia EV9 Concept (2021)",
+        "c": "Kia"
+      },
+      {
+        "n": "Hyundai Seven Concept (2021)",
+        "c": "Hyundai"
+      },
+      {
+        "n": "Genesis X Convertible (2022)",
+        "c": "Genesis"
+      },
+      {
+        "n": "BMW i Vision Circular (2021)",
+        "c": "BMW"
+      },
+      {
+        "n": "MINI Aceman Concept (2022)",
+        "c": "MINI"
+      },
+      {
+        "n": "Rolls-Royce Spectre Prototype",
+        "c": "Rolls-Royce"
+      },
+      {
+        "n": "Bentley EXP 100 GT (2019)",
+        "c": "Bentley"
+      },
+      {
+        "n": "Porsche Mission R (2021)",
+        "c": "Porsche"
+      },
+      {
+        "n": "Fiat Centoventi Concept (2019)",
+        "c": "Fiat"
+      },
+      {
+        "n": "Alfa Romeo Tonale Plug-in (2022)",
+        "c": "Alfa Romeo"
+      },
+      {
+        "n": "Citroën Oli Concept (2022)",
+        "c": "Citroën"
+      },
+      {
+        "n": "DS Aero Sport Lounge (2022)",
+        "c": "DS Automobiles"
+      },
+      {
+        "n": "Opel Manta-e Concept (2021)",
+        "c": "Opel"
+      },
+      {
+        "n": "Skoda Vision 7S (2022)",
+        "c": "Škoda"
+      },
+      {
+        "n": "SEAT Cupra UrbanRebel (2021)",
+        "c": "CUPRA"
+      },
+      {
+        "n": "Subaru Solterra Concept (2021)",
+        "c": "Subaru"
+      },
+      {
+        "n": "Mazda MX-30 R-EV Concept (2023)",
+        "c": "Mazda"
+      },
+      {
+        "n": "Lucid Air Dream Edition (2020)",
+        "c": "Lucid Motors"
       }
     ]
   },
@@ -1932,6 +4452,126 @@
       {
         "n": "Südafrika (Kohle)",
         "c": "<30%"
+      },
+      {
+        "n": "Island (Geothermie + Wasserkraft)",
+        "c": ">99%"
+      },
+      {
+        "n": "Paraguay (fast ausschließlich Wasserkraft)",
+        "c": ">99%"
+      },
+      {
+        "n": "Albanien (Wasserkraft dominant)",
+        "c": ">95%"
+      },
+      {
+        "n": "Schweiz (Wasser + Kernkraft)",
+        "c": ">90%"
+      },
+      {
+        "n": "Neuseeland (Geo + Wasser + Wind)",
+        "c": ">80%"
+      },
+      {
+        "n": "Kanada (Wasserkraft dominant)",
+        "c": ">60%"
+      },
+      {
+        "n": "Portugal (Solar + Wind + Wasser)",
+        "c": ">60%"
+      },
+      {
+        "n": "Irland (Wind dominant, 2023)",
+        "c": ">33%"
+      },
+      {
+        "n": "Belgien (Kernkraft dominant, 2023)",
+        "c": ">50%"
+      },
+      {
+        "n": "Finnland (Kernkraft + Biomasse)",
+        "c": ">75%"
+      },
+      {
+        "n": "Neuseeland (Wind + Geo)",
+        "c": ">80%"
+      },
+      {
+        "n": "Kolumbien (Wasserkraft dominant)",
+        "c": ">70%"
+      },
+      {
+        "n": "Taiwan (Kohle + Gas)",
+        "c": ">80%"
+      },
+      {
+        "n": "Südkorea (Kohle + Kernkraft)",
+        "c": ">70%"
+      },
+      {
+        "n": "Singapur (fast 100% Erdgas)",
+        "c": ">90%"
+      },
+      {
+        "n": "Niederlande (Wind + Gas)",
+        "c": "~20%"
+      },
+      {
+        "n": "Türkei (Mix aus Solar/Wind/Gas)",
+        "c": "~25%"
+      },
+      {
+        "n": "Ägypten (Erdgas dominant)",
+        "c": ">70%"
+      },
+      {
+        "n": "Kenia (Geothermie + Wasser)",
+        "c": ">90%"
+      },
+      {
+        "n": "Chile (Solar + Wasser + Wind wächst)",
+        "c": ">60%"
+      },
+      {
+        "n": "Marokko (Solar + Wind, Ausbau)",
+        "c": ">40%"
+      },
+      {
+        "n": "Mexiko (Gas + Öl + Kernkraft)",
+        "c": ">60%"
+      },
+      {
+        "n": "Argentinien (Gas + Wasser + Wind)",
+        "c": ">30%"
+      },
+      {
+        "n": "Vietnam (Kohle + Wasserkraft)",
+        "c": ">40%"
+      },
+      {
+        "n": "Philippinen (Kohle + Geothermie)",
+        "c": ">60%"
+      },
+      {
+        "n": "Thailand (Erdgas dominant)",
+        "c": ">60%"
+      },
+      {
+        "n": "Ukraine (Kernkraft + Wasserkraft)",
+        "c": ">50%"
+      },
+      {
+        "n": "Griechenland (Solar + Wind wächst)",
+        "c": ">40%"
+      },
+      {
+        "n": "Tschechien (Kernkraft dominant)",
+        "c": ">35%"
+      },
+      {
+        "n": "Rumänien (Wasser + Kernkraft + Wind)",
+        "c": ">45%"
       }
     ]
   }

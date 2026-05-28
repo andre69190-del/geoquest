@@ -85,7 +85,7 @@ CLASSIC_COUNTS = {
     'comp_airports':(248,'Airports'),'airport_map':(248,'Airports'),
     'flugrouten_duell':(248,'Airports'),'inlandsflug_intl':(248,'Airports'),
     'stadium':(32,'Stadien'),'stadium_map':(32,'Stadien'),'f1_map':(24,'Strecken'),
-    'jersey':(15,'Trikots'),'crest':(10,'Wappen'),
+    'jersey':(50,'Trikots'),'crest':(50,'Wappen'),
     'sunrise_guesser':(195,'Länder'),'sonnen_kompass':(195,'Länder'),
     'aequator_magnet':(195,'Länder'),'hauptstadt_distanz':(195,'Länder'),
     'jetlag_rechner':(195,'Länder'),'kuehlschrank_backofen':(195,'Länder'),
@@ -172,7 +172,7 @@ def _get_count(mid, dispatch, store, sport_poi):
     if fn == 'genHLBeta':
         return '195 Länder', 195
     if fn == 'genFootballQ':
-        return ('15 Trikots', 15) if key == 'jersey' else ('10 Wappen', 10)
+        return ('50 Trikots', 50) if key == 'jersey' else ('50 Wappen', 50)
     if fn == 'genFixedPoolMatchQ':
         print(f'WARNING: No data count for mode \'{mid}\' (genFixedPoolMatchQ)')
         return '—', 0

@@ -221,6 +221,36 @@
         "n": "Uppsala Astronomical Observatory (Schweden)",
         "lat": 59.86,
         "lng": 17.63
+      },
+      {
+        "n": "European Southern Observatory (Paranal, Chile)",
+        "lat": -24.6272,
+        "lng": -70.4048
+      },
+      {
+        "n": "W. M. Keck Observatory (Hawaii, USA)",
+        "lat": 19.8263,
+        "lng": -155.4745
+      },
+      {
+        "n": "Very Large Telescope (ESO Paranal)",
+        "lat": -24.6248,
+        "lng": -70.4042
+      },
+      {
+        "n": "Atacama Large Millimeter Array ALMA",
+        "lat": -23.0193,
+        "lng": -67.7532
+      },
+      {
+        "n": "Observatorio del Teide (Teneriffa, Spanien)",
+        "lat": 28.3,
+        "lng": -16.51
+      },
+      {
+        "n": "Roque de los Muchachos (La Palma, Spanien)",
+        "lat": 28.76,
+        "lng": -17.89
       }
     ]
   },
@@ -396,6 +426,86 @@
         "n": "Hammaguira (Algerien, hist.)",
         "lat": 30.87,
         "lng": -3.08
+      },
+      {
+        "n": "Vandenberg Space Force Base (Kalifornien)",
+        "lat": 34.742,
+        "lng": -120.5724
+      },
+      {
+        "n": "Starbase Boca Chica (Texas, SpaceX)",
+        "lat": 25.9972,
+        "lng": -97.1553
+      },
+      {
+        "n": "Wostotschny Kosmodrom (Russland)",
+        "lat": 51.8847,
+        "lng": 128.3342
+      },
+      {
+        "n": "Satish Dhawan (Sriharikota, Indien)",
+        "lat": 13.7228,
+        "lng": 80.2308
+      },
+      {
+        "n": "Wenchang Space Launch Center (China)",
+        "lat": 19.6147,
+        "lng": 110.9513
+      },
+      {
+        "n": "Tanegashima (JAXA, Japan)",
+        "lat": 30.4028,
+        "lng": 130.9705
+      },
+      {
+        "n": "Uchinoura Space Center (Japan)",
+        "lat": 31.2513,
+        "lng": 131.0794
+      },
+      {
+        "n": "San Marco Platform (Kenia, hist.)",
+        "lat": -2.946,
+        "lng": 40.2128
+      },
+      {
+        "n": "Esrange Space Center (Schweden)",
+        "lat": 67.8878,
+        "lng": 21.1071
+      },
+      {
+        "n": "Rocket Lab Launch Complex 2 (Virginia, USA)",
+        "lat": 37.8343,
+        "lng": -75.4861
+      },
+      {
+        "n": "Cape Canaveral SFS LC-40 (Florida)",
+        "lat": 28.5618,
+        "lng": -80.5772
+      },
+      {
+        "n": "Sriharikota (ISRO, Indien)",
+        "lat": 13.73,
+        "lng": 80.23
+      },
+      {
+        "n": "Tanegashima Space Center (JAXA, Japan)",
+        "lat": 30.4,
+        "lng": 130.97
+      },
+      {
+        "n": "Guiana Space Centre (ESA, Französisch-Guayana)",
+        "lat": 5.24,
+        "lng": -52.77
+      },
+      {
+        "n": "Wenchang Space Launch Site (China)",
+        "lat": 19.61,
+        "lng": 110.95
+      },
+      {
+        "n": "Plesetsk Kosmodrom (Archangel, Russland)",
+        "lat": 62.93,
+        "lng": 40.58
       }
     ]
   },
@@ -581,6 +691,76 @@
         "n": "Jet Propulsion Lab (Pasadena) — Deep Space Network HQ",
         "lat": 34.2,
         "lng": -118.17
+      },
+      {
+        "n": "Goddard Space Flight Center (Greenbelt, MD)",
+        "lat": 38.9964,
+        "lng": -76.8482
+      },
+      {
+        "n": "Jet Propulsion Laboratory (Pasadena, CA)",
+        "lat": 34.2014,
+        "lng": -118.1716
+      },
+      {
+        "n": "Ames Research Center (Moffett Field, CA)",
+        "lat": 37.409,
+        "lng": -122.0634
+      },
+      {
+        "n": "Langley Research Center (Hampton, VA)",
+        "lat": 37.0934,
+        "lng": -76.363
+      },
+      {
+        "n": "Marshall Space Flight Center (Huntsville, AL)",
+        "lat": 34.7302,
+        "lng": -86.5861
+      },
+      {
+        "n": "Kennedy Space Center (Merritt Island, FL)",
+        "lat": 28.5721,
+        "lng": -80.648
+      },
+      {
+        "n": "Glenn Research Center (Cleveland, OH)",
+        "lat": 41.4185,
+        "lng": -81.8609
+      },
+      {
+        "n": "ESA ESOC (Darmstadt, Deutschland)",
+        "lat": 49.8726,
+        "lng": 8.6512
+      },
+      {
+        "n": "ESA ESRIN (Frascati, Italien)",
+        "lat": 41.7829,
+        "lng": 12.6793
+      },
+      {
+        "n": "ESA EAC (Köln, Deutschland)",
+        "lat": 50.9333,
+        "lng": 6.95
+      },
+      {
+        "n": "CERN-ESA Partikelphysik (Genf)",
+        "lat": 46.2328,
+        "lng": 6.0555
+      },
+      {
+        "n": "DLR Oberpfaffenhofen (Bayern)",
+        "lat": 48.0853,
+        "lng": 11.2758
+      },
+      {
+        "n": "JAXA Sagamihara (Japan)",
+        "lat": 35.5654,
+        "lng": 139.3703
+      },
+      {
+        "n": "ESRIN (ESA Earth Observation, Frascati)",
+        "lat": 41.83,
+        "lng": 12.67
       }
     ]
   },
@@ -736,6 +916,106 @@
         "n": "Gaia Observatory (ESA)",
         "lat": 43.6,
         "lng": 1.44
+      },
+      {
+        "n": "James Webb Space Telescope (L2-Orbit)",
+        "lat": 28.5721,
+        "lng": -80.648
+      },
+      {
+        "n": "Spitzer Space Telescope (Trailing, hist.)",
+        "lat": 34.2014,
+        "lng": -118.1716
+      },
+      {
+        "n": "Kepler Space Telescope (hist., bis 2018)",
+        "lat": 37.409,
+        "lng": -122.0634
+      },
+      {
+        "n": "Fermi Gamma-ray Telescope",
+        "lat": 34.2014,
+        "lng": -118.1716
+      },
+      {
+        "n": "XMM-Newton (ESA, L2)",
+        "lat": 52.2217,
+        "lng": 4.6573
+      },
+      {
+        "n": "Herschel Space Observatory (L2, hist.)",
+        "lat": 52.2217,
+        "lng": 4.6573
+      },
+      {
+        "n": "Planck Observatory (L2, hist.)",
+        "lat": 52.2217,
+        "lng": 4.6573
+      },
+      {
+        "n": "INTEGRAL (INTErnational Gamma-Ray Astrophysics)",
+        "lat": 52.2217,
+        "lng": 4.6573
+      },
+      {
+        "n": "Gaia Astrometry Telescope (L2)",
+        "lat": 52.2217,
+        "lng": 4.6573
+      },
+      {
+        "n": "Roman Space Telescope (Nancy Grace, geplant)",
+        "lat": 38.9964,
+        "lng": -76.8482
+      },
+      {
+        "n": "JWST Launch Complex (Kourou, Guyana)",
+        "lat": 5.2323,
+        "lng": -52.7637
+      },
+      {
+        "n": "SOFIA (Airborne Observatory, geparktes Flugzeug)",
+        "lat": 37.6879,
+        "lng": -122.2215
+      },
+      {
+        "n": "Chandra X-ray Center (Cambridge, MA)",
+        "lat": 42.3601,
+        "lng": -71.0942
+      },
+      {
+        "n": "Euclid Telescope (ESA, 2023)",
+        "lat": 52.2217,
+        "lng": 4.6573
+      },
+      {
+        "n": "Athena X-ray Observatory (geplant 2030s)",
+        "lat": 49.8726,
+        "lng": 8.6512
+      },
+      {
+        "n": "LISA Gravitationswellen-Detektor (geplant)",
+        "lat": 52.2217,
+        "lng": 4.6573
+      },
+      {
+        "n": "WMAP (Wilkinson Microwave Anisotropy Probe)",
+        "lat": 38.9964,
+        "lng": -76.8482
+      },
+      {
+        "n": "COBE (Cosmic Background Explorer)",
+        "lat": 38.9964,
+        "lng": -76.8482
+      },
+      {
+        "n": "Compton Gamma Ray Observatory (hist.)",
+        "lat": 38.9964,
+        "lng": -76.8482
+      },
+      {
+        "n": "Spitzer Space Telescope (Launch KSC)",
+        "lat": 28.59,
+        "lng": -80.65
       }
     ]
   },
@@ -916,6 +1196,81 @@
         "n": "Ries-Krater — Steinheimer Becken (Bayern, DE)",
         "lat": 48.69,
         "lng": 10.06
+      },
+      {
+        "n": "Barringer-Krater (Arizona, USA)",
+        "lat": 35.0272,
+        "lng": -111.0225
+      },
+      {
+        "n": "Manicouagan-Krater (Quebec, Kanada)",
+        "lat": 51.3833,
+        "lng": -68.7
+      },
+      {
+        "n": "Popigai-Krater (Russland)",
+        "lat": 71.65,
+        "lng": 111.1167
+      },
+      {
+        "n": "Vredefort-Dom (Südafrika)",
+        "lat": -27.0,
+        "lng": 27.5
+      },
+      {
+        "n": "Lonar Lake Krater (Maharashtra, Indien)",
+        "lat": 19.9813,
+        "lng": 76.5095
+      },
+      {
+        "n": "Wolf Creek Crater (Western Australia)",
+        "lat": -19.1736,
+        "lng": 127.7739
+      },
+      {
+        "n": "Tswaing Krater (Pretoria, Südafrika)",
+        "lat": -25.4086,
+        "lng": 28.0836
+      },
+      {
+        "n": "Roter Kamm (Namibia)",
+        "lat": -27.7667,
+        "lng": 16.2833
+      },
+      {
+        "n": "Pingualuit Krater (Quebec)",
+        "lat": 61.2833,
+        "lng": -73.6667
+      },
+      {
+        "n": "Gosses Bluff (Northern Territory, Australien)",
+        "lat": -23.8167,
+        "lng": 132.3
+      },
+      {
+        "n": "Siljan-Krater (Dalarna, Schweden)",
+        "lat": 60.9167,
+        "lng": 14.9
+      },
+      {
+        "n": "Ries-Krater (Ries-Alb, Bayern)",
+        "lat": 48.9,
+        "lng": 10.55
+      },
+      {
+        "n": "Clearwater Lakes (Quebec, Kanada)",
+        "lat": 56.2,
+        "lng": -74.5
+      },
+      {
+        "n": "Siljan Ring (Schweden)",
+        "lat": 60.9,
+        "lng": 14.9
+      },
+      {
+        "n": "Kaali-Krater (Saaremaa, Estland)",
+        "lat": 58.37,
+        "lng": 22.67
       }
     ]
   },
@@ -1066,6 +1421,111 @@
         "n": "La Palma (Roque de los Muchachos)",
         "lat": 28.76,
         "lng": -17.89
+      },
+      {
+        "n": "Atacama-Wüste (Chile, größtes Dunkelgebiet)",
+        "lat": -24.0,
+        "lng": -70.0
+      },
+      {
+        "n": "Mauna Kea (Hawaii) — Dunkelhimmel Gipfel",
+        "lat": 19.826,
+        "lng": -155.476
+      },
+      {
+        "n": "Cherry Springs SP (Pennsylvania, USA)",
+        "lat": 41.6636,
+        "lng": -77.823
+      },
+      {
+        "n": "Galloway Dark Sky Park (Schottland)",
+        "lat": 55.1,
+        "lng": -4.4
+      },
+      {
+        "n": "Snowdonia National Park (Wales)",
+        "lat": 53.0,
+        "lng": -3.9
+      },
+      {
+        "n": "Brecon Beacons (Wales) — Dark Sky Reserve",
+        "lat": 51.9,
+        "lng": -3.4
+      },
+      {
+        "n": "Dartmoor National Park (England)",
+        "lat": 50.58,
+        "lng": -3.92
+      },
+      {
+        "n": "Exmoor NP (England) Dark Sky Reserve",
+        "lat": 51.15,
+        "lng": -3.6
+      },
+      {
+        "n": "Gold Hill (Bortle 1, Arizonawüste)",
+        "lat": 31.9,
+        "lng": -113.5
+      },
+      {
+        "n": "Elqui-Tal (Chile, La Serena)",
+        "lat": -30.0,
+        "lng": -70.75
+      },
+      {
+        "n": "Eifel (Deutschland, Dark Sky Eifel Zertifikat)",
+        "lat": 50.3,
+        "lng": 6.8
+      },
+      {
+        "n": "Rhön (Biosphärenreservat Dunkelhimmel)",
+        "lat": 50.45,
+        "lng": 10.0
+      },
+      {
+        "n": "Teide NP (Teneriffa) Dark Sky",
+        "lat": 28.27,
+        "lng": -16.64
+      },
+      {
+        "n": "Ali Dark Sky Reserve (Tibet)",
+        "lat": 32.0,
+        "lng": 80.0
+      },
+      {
+        "n": "Sahara Star (Merzouga, Marokko)",
+        "lat": 31.0825,
+        "lng": -4.0122
+      },
+      {
+        "n": "Sark (Channel Islands) — Erste dunkle Insel",
+        "lat": 49.43,
+        "lng": -2.36
+      },
+      {
+        "n": "Pic du Midi (Pyrenäen, Frankreich)",
+        "lat": 42.9357,
+        "lng": 0.1428
+      },
+      {
+        "n": "Tenerife Teide (ESO-Beobachtungsstandort)",
+        "lat": 28.2727,
+        "lng": -16.6395
+      },
+      {
+        "n": "Uluru (Zentralaustralien, Milchstraßen-Blick)",
+        "lat": -25.3444,
+        "lng": 131.0369
+      },
+      {
+        "n": "Tibetisches Hochplateau (Qinghai)",
+        "lat": 36.0,
+        "lng": 101.0
+      },
+      {
+        "n": "Cherry Springs State Park (Pennsylvania, USA)",
+        "lat": 41.66,
+        "lng": -77.82
       }
     ]
   }

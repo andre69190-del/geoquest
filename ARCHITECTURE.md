@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 270 (Stand: Mai 2026)
-**Build:** gen.py → 1.17 MB | GeoQuest.html → 2.79 MB | 685 Spielmodi | verify: 90/90
+**Version:** Phase 271 (Stand: Mai 2026)
+**Build:** gen.py → 1.17 MB | GeoQuest.html → 3.71 MB | 685 Spielmodi | verify: 90/90
 
 ---
 
@@ -1032,18 +1032,24 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **263** | post_phase.py | **post_phase.py CLI Tooling implementiert** |
 | **264** | patch_264_mega_sweep.py | **Mega-Sweep: tiere_pin/arch_match/emob/gastro/tech/pflanzen auf 40+ skaliert (+667 Eintraege). Coord-Dedup Guard aktiv** |
 | **265** | patch_265_geo_sport_astro_sweep.py | **Geo/Sport/Astro Sweep: 40 Modi auf 25-40 Items skaliert. +787 Eintraege. Arch-Match Restluecken geschlossen.** |
+| **266** | Timeline-Engine | **Timeline-Modus: Drag-and-Drop Zeitleiste. genTimelineQ + 4 neue Modi. data/timeline.json (96 Items).** |
+| **267** | patch_267_hardcore.py | **Hardcore-Modus: Persistenz (gq_diffx), H/L 3%/10%, Pts x1.5, Profil-Toggle + Feedback-Card. 685 Modi.** |
+| **268** | patch_268_spieluebersicht.py | **Zero-Blank-Policy Spieluebersicht: 130 fehlende Werte aufgeloest. 685/685 Modi mit Datenbasis-Wert.** |
+| **269** | patch_269_final_fill.py | **Final Fill Sprint: 15+ JSON-Datensaetze auf 40-50 Items skaliert (emob, tech, gastro, pflanzen, tiere, timeline, kultur).** |
+| **270** | patch_270_global_sweep.py | **Datendichte-Fix: 29 kultur.json-Datensaetze auf 40-50 Items skaliert. Spieluebersicht Datenbasis: 51.927 Items.** |
+| **271** | patch_271_fill_to_50.py + topup | **Full-to-50 Sprint: Alle ausbaufaehigen Arrays auf ≥50 Items. BETA-Praefixe entfernt (70x). Jersey/Crest 15/10→50.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 267 -- Hardcore-Modus: Persistenz, H/L 3%/10%, Pts x1.5, Profil-Toggle + Feedback-Card, 685 Modi, Mai 2026.*
+*Letztes Update: Phase 271 -- Full-to-50 Sprint: alle ausbaufaehigen Arrays ≥50 Items, BETA entfernt, Jersey/Crest auf 50. 685 Modi, Mai 2026.*
 
 
 ---
 
 ## 13. Vollstaendiger Spielmodus-Katalog
 
-**Stand Phase 267 -- 685 Modi in 20 Kategorien**
+**Stand Phase 271 -- 685 Modi in 20 Kategorien**
 
 > **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
 

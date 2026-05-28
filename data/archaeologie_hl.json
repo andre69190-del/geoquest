@@ -83,6 +83,126 @@
       {
         "name": "Dolni Vestonice Venus",
         "val": 29000
+      },
+      {
+        "name": "Schöninger Speere (Eibe)",
+        "val": 300000
+      },
+      {
+        "name": "Bilzingsleben-Knochenfunde",
+        "val": 400000
+      },
+      {
+        "name": "Abri Peyrony Faustreil",
+        "val": 150000
+      },
+      {
+        "name": "Homo heidelbergensis Schädel",
+        "val": 600000
+      },
+      {
+        "name": "Blombos-Ocker-Gravuren (Südafrika)",
+        "val": 73000
+      },
+      {
+        "name": "Skhul-Muschelperlenkette",
+        "val": 115000
+      },
+      {
+        "name": "Pinnacle Point Ocker",
+        "val": 164000
+      },
+      {
+        "name": "Atapuerca-Knochen (Spanien)",
+        "val": 800000
+      },
+      {
+        "name": "Dmanisi-Homo-erectus-Schädel",
+        "val": 1800000
+      },
+      {
+        "name": "Olduvai-Faustkeil (Oldowan)",
+        "val": 1700000
+      },
+      {
+        "name": "Turkana-Boy (Homo ergaster)",
+        "val": 1500000
+      },
+      {
+        "name": "Laetoli-Fußspuren",
+        "val": 3600000
+      },
+      {
+        "name": "Lucy-Skelett (Australopithecus)",
+        "val": 3200000
+      },
+      {
+        "name": "Ardipithecus ramidus-Knochen",
+        "val": 4400000
+      },
+      {
+        "name": "Sahelanthropus tchadensis (Schädel)",
+        "val": 7000000
+      },
+      {
+        "name": "Lomekwi-Steinwerkzeuge",
+        "val": 3300000
+      },
+      {
+        "name": "Trinil-Java-Man-Femur",
+        "val": 1000000
+      },
+      {
+        "name": "Peking-Man-Zähne",
+        "val": 680000
+      },
+      {
+        "name": "Floresiensis-Homo-Knochen (Hobbit)",
+        "val": 50000
+      },
+      {
+        "name": "Homo naledi-Fossilien",
+        "val": 250000
+      },
+      {
+        "name": "Homo naledi Blombos-Werkzeug",
+        "val": 100000
+      },
+      {
+        "name": "Khoisan Mittelsteinzeit-Bogenpfeil",
+        "val": 64000
+      },
+      {
+        "name": "Bone Flute (Geisenklösterle, D)",
+        "val": 43000
+      },
+      {
+        "name": "Vogelherd Pferdekopf-Schnitzerei",
+        "val": 32000
+      },
+      {
+        "name": "Cave Lion Ivory Carving",
+        "val": 40000
+      },
+      {
+        "name": "Aurignac-Klingenspitze",
+        "val": 35000
+      },
+      {
+        "name": "Gravettian Venus of Brassempouy",
+        "val": 25000
+      },
+      {
+        "name": "Sunghir-Perlenschmuck (Russland)",
+        "val": 32000
+      },
+      {
+        "name": "Ahrensburgkultur-Pfeilspitze",
+        "val": 12000
+      },
+      {
+        "name": "Maglemose-Knochenharpune",
+        "val": 9500
       }
     ]
   },
@@ -170,6 +290,126 @@
       {
         "name": "Menhir de Champ-Dolent (Bretagne)",
         "val": 150
+      },
+      {
+        "name": "Trilithon (Baalbek, Libanon)",
+        "val": 800
+      },
+      {
+        "name": "Jupiter-Tempel Quader (Baalbek)",
+        "val": 1000
+      },
+      {
+        "name": "Stonehenge Lintel-Stein",
+        "val": 6
+      },
+      {
+        "name": "Moai Ahu Tongariki (Osterinsel)",
+        "val": 86
+      },
+      {
+        "name": "Dolmen von Menga (Antequera)",
+        "val": 180
+      },
+      {
+        "name": "Dolmen von Locmariaquer (Frankreich)",
+        "val": 280
+      },
+      {
+        "name": "Hünenbett Grabhügel (Dänemark)",
+        "val": 9
+      },
+      {
+        "name": "Ollantaytambo Megalith (Peru)",
+        "val": 140
+      },
+      {
+        "name": "Sacsayhuamán Außenblock (Peru)",
+        "val": 125
+      },
+      {
+        "name": "Puma Punku Andesitblock (Bolivien)",
+        "val": 130
+      },
+      {
+        "name": "Rapa Nui Hut-Moai (Osterinsel)",
+        "val": 270
+      },
+      {
+        "name": "Luxortempel Obelisk (Ägypten)",
+        "val": 227
+      },
+      {
+        "name": "Karnak-Tempel Pylon-Block",
+        "val": 15
+      },
+      {
+        "name": "Malta Ggantija Tempel-Stein",
+        "val": 5
+      },
+      {
+        "name": "West Kennet Long Barrow Deckstein",
+        "val": 100
+      },
+      {
+        "name": "Carnac Menhir Er Grah",
+        "val": 280
+      },
+      {
+        "name": "Rudston Monolith (Yorkshire)",
+        "val": 40
+      },
+      {
+        "name": "Callanish Steine (Schottland)",
+        "val": 5
+      },
+      {
+        "name": "Brownshill Dolmen Deckstein (Irland)",
+        "val": 100
+      },
+      {
+        "name": "Nabta Playa Megalith (Ägypten)",
+        "val": 2
+      },
+      {
+        "name": "Men-an-Tol Ringstein (Cornwall)",
+        "val": 1
+      },
+      {
+        "name": "Menhir de Champ-Dolent (Frankreich)",
+        "val": 9
+      },
+      {
+        "name": "Göbekli Tepe T-Säule",
+        "val": 20
+      },
+      {
+        "name": "Mnajdra Tempel-Block (Malta)",
+        "val": 3
+      },
+      {
+        "name": "Almendres Cromlech (Portugal)",
+        "val": 5
+      },
+      {
+        "name": "Stanton Drew Circle Stone",
+        "val": 3
+      },
+      {
+        "name": "Senegambia Steinkreis Sandstein",
+        "val": 2
+      },
+      {
+        "name": "Loughcrew Megalith (Irland)",
+        "val": 40
+      },
+      {
+        "name": "Axum Obelisk (Äthiopien)",
+        "val": 160
+      },
+      {
+        "name": "Aswan Obelisk (unfertig, Ägypten)",
+        "val": 1168
       }
     ]
   },
@@ -257,6 +497,126 @@
       {
         "name": "Gunung Padang (erste Beschreibung)",
         "val": 1914
+      },
+      {
+        "name": "Pompeji (systematisch)",
+        "val": 1748
+      },
+      {
+        "name": "Troja (Schliemann)",
+        "val": 1871
+      },
+      {
+        "name": "Machu Picchu (Bingham)",
+        "val": 1911
+      },
+      {
+        "name": "Tut-Grab (Howard Carter)",
+        "val": 1922
+      },
+      {
+        "name": "Höhle von Altamira",
+        "val": 1879
+      },
+      {
+        "name": "Göbekli Tepe (Schmidt)",
+        "val": 1994
+      },
+      {
+        "name": "Sutton Hoo",
+        "val": 1939
+      },
+      {
+        "name": "Chauvet-Höhle",
+        "val": 1994
+      },
+      {
+        "name": "Sipán-Grab (Peru)",
+        "val": 1987
+      },
+      {
+        "name": "Nok-Figuren (Nigeria)",
+        "val": 1928
+      },
+      {
+        "name": "Mohenjo-Daro",
+        "val": 1922
+      },
+      {
+        "name": "Harappa",
+        "val": 1826
+      },
+      {
+        "name": "Çatalhöyük (Mellaart)",
+        "val": 1958
+      },
+      {
+        "name": "Lascaux (Radiokarbon-Datierung)",
+        "val": 1940
+      },
+      {
+        "name": "Tollund-Mann (Dänemark)",
+        "val": 1950
+      },
+      {
+        "name": "Rosslyn-Kapelle (Ausgrabung)",
+        "val": 2003
+      },
+      {
+        "name": "Stonehenge (erste Ausgrabung)",
+        "val": 1620
+      },
+      {
+        "name": "Ur (Leonard Woolley)",
+        "val": 1922
+      },
+      {
+        "name": "Knossos (Arthur Evans)",
+        "val": 1900
+      },
+      {
+        "name": "Olympia (olympische Stätte)",
+        "val": 1875
+      },
+      {
+        "name": "Herculaneum",
+        "val": 1709
+      },
+      {
+        "name": "Ephesos (Wood)",
+        "val": 1863
+      },
+      {
+        "name": "Mesa Verde Cliff Dwellings",
+        "val": 1888
+      },
+      {
+        "name": "Tikal (Guatemalteken)",
+        "val": 1848
+      },
+      {
+        "name": "Chichén Itzá (Stephens/Catherwood)",
+        "val": 1841
+      },
+      {
+        "name": "Nabatäische Petra (Burckhardt)",
+        "val": 1812
+      },
+      {
+        "name": "Angkor Wat (Henri Mouhot)",
+        "val": 1860
+      },
+      {
+        "name": "Palenque (Del Río)",
+        "val": 1787
+      },
+      {
+        "name": "Nag Hammadi-Schriften (Ägypten)",
+        "val": 1945
+      },
+      {
+        "name": "Çatalhöyük (Türkei, Neolithikum)",
+        "val": 1958
       }
     ]
   },
@@ -344,6 +704,126 @@
       {
         "name": "Antikythera-Mechanismus-Wrack",
         "val": 45
+      },
+      {
+        "name": "Schwarzes Meer Unterwassersiedlung",
+        "val": 95
+      },
+      {
+        "name": "Alexandria Unterwasserpalast",
+        "val": 8
+      },
+      {
+        "name": "Neapel-Bucht Baiae (Unterwasser)",
+        "val": 6
+      },
+      {
+        "name": "Yonaguni Monument (Japan)",
+        "val": 27
+      },
+      {
+        "name": "SS Gairsoppa (Silberschiff)",
+        "val": 4700
+      },
+      {
+        "name": "Roman wreck off Antikythera",
+        "val": 60
+      },
+      {
+        "name": "Throckmorton Wreck (Türkei)",
+        "val": 44
+      },
+      {
+        "name": "Ausgrabung Troja (tiefste Schicht)",
+        "val": 9
+      },
+      {
+        "name": "Tell el-Amarna (Fundamentschicht)",
+        "val": 4
+      },
+      {
+        "name": "Çatalhöyük (unterste Schicht)",
+        "val": 21
+      },
+      {
+        "name": "Ur (Woolley Grabungstiefe)",
+        "val": 14
+      },
+      {
+        "name": "Jericho (tiefste Schicht)",
+        "val": 21
+      },
+      {
+        "name": "Megiddo (tiefste Schicht)",
+        "val": 12
+      },
+      {
+        "name": "Ain Ghazal (Jordan)",
+        "val": 3
+      },
+      {
+        "name": "Wari-Hauptstadt (Peru)",
+        "val": 3
+      },
+      {
+        "name": "Göbekli Tepe (unterste Schicht)",
+        "val": 15
+      },
+      {
+        "name": "Herculaneum (tiefste Schicht)",
+        "val": 23
+      },
+      {
+        "name": "Akrotiri (Thera/Santorini)",
+        "val": 5
+      },
+      {
+        "name": "Ephesos Hera-Tempel Fundament",
+        "val": 4
+      },
+      {
+        "name": "Skara Brae (Orkney)",
+        "val": 3
+      },
+      {
+        "name": "Stonehenge Aubrey Holes",
+        "val": 1
+      },
+      {
+        "name": "Newgrange Passage Tomb",
+        "val": 0
+      },
+      {
+        "name": "Dolní Věstonice (Mähren)",
+        "val": 2
+      },
+      {
+        "name": "Tiwanaku Tempel (Bolivien)",
+        "val": 5
+      },
+      {
+        "name": "Sipán Königsgrab (Peru)",
+        "val": 8
+      },
+      {
+        "name": "Caral (älteste Stadt Amerikas)",
+        "val": 2
+      },
+      {
+        "name": "Borobudur Fundament (Java)",
+        "val": 3
+      },
+      {
+        "name": "Hamoukar (Syrien)",
+        "val": 6
+      },
+      {
+        "name": "Çayönü (Türkei)",
+        "val": 6
+      },
+      {
+        "name": "Herculaneum (unter Vulkanasche)",
+        "val": 20
       }
     ]
   },
@@ -431,6 +911,126 @@
       {
         "name": "Bogazkoy (Hethiter)",
         "val": 180
+      },
+      {
+        "name": "Chichen Itza Stadtgebiet",
+        "val": 1000
+      },
+      {
+        "name": "Merv (Turkmenistan)",
+        "val": 1000
+      },
+      {
+        "name": "Ayutthaya (Thailand)",
+        "val": 2850
+      },
+      {
+        "name": "Hampi Vijayanagara (Indien)",
+        "val": 4100
+      },
+      {
+        "name": "Persepolis (Iran)",
+        "val": 125000
+      },
+      {
+        "name": "Machu Picchu Zitadelle",
+        "val": 32
+      },
+      {
+        "name": "Karthago (Nordafrika)",
+        "val": 3500
+      },
+      {
+        "name": "Palmyra (Syrien)",
+        "val": 3000
+      },
+      {
+        "name": "Jerash (Jordanien)",
+        "val": 800
+      },
+      {
+        "name": "Ephesos Stadtgebiet",
+        "val": 1000
+      },
+      {
+        "name": "Timgad (Algerien)",
+        "val": 120
+      },
+      {
+        "name": "Leptis Magna (Libyen)",
+        "val": 500
+      },
+      {
+        "name": "Mesa Verde Komplex",
+        "val": 52
+      },
+      {
+        "name": "Petra Stadtgebiet (Jordanien)",
+        "val": 26400
+      },
+      {
+        "name": "Borobudur Plattform",
+        "val": 2
+      },
+      {
+        "name": "Monte Albán (Mexiko)",
+        "val": 40
+      },
+      {
+        "name": "Tula (Mexiko) Ausgrabungsgebiet",
+        "val": 1400
+      },
+      {
+        "name": "Aksum Stelen-Park (Äthiopien)",
+        "val": 80
+      },
+      {
+        "name": "Ani (Türkei) Ruinenstadt",
+        "val": 500
+      },
+      {
+        "name": "Timna Valley (Israel)",
+        "val": 6000
+      },
+      {
+        "name": "Vijayanagara/Hampi Kernbereich",
+        "val": 36
+      },
+      {
+        "name": "Sigiriya Komplex (Sri Lanka)",
+        "val": 600
+      },
+      {
+        "name": "Mohenjo-Daro Stadtgebiet",
+        "val": 300
+      },
+      {
+        "name": "Harappa Stadtgebiet",
+        "val": 150
+      },
+      {
+        "name": "Caral-Supe (Peru)",
+        "val": 66
+      },
+      {
+        "name": "Chan Chan (Peru)",
+        "val": 2000
+      },
+      {
+        "name": "Tiwanaku (Bolivien)",
+        "val": 400
+      },
+      {
+        "name": "Wari (Peru)",
+        "val": 1500
+      },
+      {
+        "name": "Nan Madol (Mikronesien)",
+        "val": 87
+      },
+      {
+        "name": "Palmyra Stadtanlage (Syrien)",
+        "val": 720
       }
     ]
   },
@@ -517,6 +1117,126 @@
       },
       {
         "name": "Mawangdui Grab Nr.1 (Han-Fuerstin)",
+        "val": 3000
+      },
+      {
+        "name": "Varna-Nekropolis (Goldschatz, Bulgarien)",
+        "val": 3000
+      },
+      {
+        "name": "Mawangdui Grab (Han-Dynastie China)",
+        "val": 3000
+      },
+      {
+        "name": "Ur Royal Cemetery (Mesopotamien)",
+        "val": 12000
+      },
+      {
+        "name": "Hochdorf Keltengrab (Deutschland)",
+        "val": 500
+      },
+      {
+        "name": "Sutton Hoo Schiffsgrab (England)",
+        "val": 263
+      },
+      {
+        "name": "El Señor de Sipán (Peru)",
+        "val": 400
+      },
+      {
+        "name": "Mycenae Shaft Graves (Griechenland)",
+        "val": 1400
+      },
+      {
+        "name": "Qin Shihuangdi Gesamtgrab",
+        "val": 700000
+      },
+      {
+        "name": "Lady Fu Hao (Shang-Dynastie)",
+        "val": 1928
+      },
+      {
+        "name": "Pakal Grab Palenque (Maya)",
+        "val": 300
+      },
+      {
+        "name": "Tollund Mann Grabung (Dänemark)",
+        "val": 1
+      },
+      {
+        "name": "Viking Ship Oseberg (Norwegen)",
+        "val": 200
+      },
+      {
+        "name": "Scythian Kurgan (Ukraine)",
+        "val": 2000
+      },
+      {
+        "name": "Santorini Akrotiri-Fundstücke",
+        "val": 4000
+      },
+      {
+        "name": "Tomb of the Two Brothers (Ägypten)",
+        "val": 60
+      },
+      {
+        "name": "Ramesses II. Schatz-Grab",
+        "val": 150
+      },
+      {
+        "name": "Celtic Chariot Grave Hochscheid",
+        "val": 20
+      },
+      {
+        "name": "Staffordshire Hoard (England)",
+        "val": 3500
+      },
+      {
+        "name": "Benin Bronze Palast (Nigeria)",
+        "val": 900
+      },
+      {
+        "name": "Shosoin Treasure (Japan, Nara)",
+        "val": 9000
+      },
+      {
+        "name": "Han Dynasty Jade Suit",
+        "val": 2498
+      },
+      {
+        "name": "Tang Dynasty Gold Tomb",
+        "val": 400
+      },
+      {
+        "name": "Bogotá Muisca Raft (Gold-Floß)",
+        "val": 10
+      },
+      {
+        "name": "Chaco Canyon Pueblo Bonito",
+        "val": 10000
+      },
+      {
+        "name": "Hopewell Culture Ohio Mounds",
+        "val": 300
+      },
+      {
+        "name": "Hochdorf Fürstengrab (Württemberg)",
+        "val": 50
+      },
+      {
+        "name": "Hallstatt Gräberfeld",
+        "val": 6000
+      },
+      {
+        "name": "Cape Artemision Bronze (Griechenland)",
+        "val": 1
+      },
+      {
+        "name": "Pompeji Silber-Hort",
+        "val": 200
+      },
+      {
+        "name": "Ur Königsgrab Puabi",
         "val": 3000
       }
     ]
@@ -605,6 +1325,126 @@
       {
         "name": "Nabataische Weihrauchroute",
         "val": 2400
+      },
+      {
+        "name": "Appische Straße (Via Appia)",
+        "val": 568
+      },
+      {
+        "name": "Bernsteinstraße (Römer)",
+        "val": 1300
+      },
+      {
+        "name": "Via Flaminia (Rom–Rimini)",
+        "val": 314
+      },
+      {
+        "name": "Qhapaq Ñan Inka-Hauptstraße",
+        "val": 6000
+      },
+      {
+        "name": "Seidenstraße Hauptroute",
+        "val": 7000
+      },
+      {
+        "name": "Great Wall Road (China)",
+        "val": 21196
+      },
+      {
+        "name": "Persian Royal Road",
+        "val": 2699
+      },
+      {
+        "name": "Via Egnatia (Rom–Konstantinopel)",
+        "val": 1120
+      },
+      {
+        "name": "Trajanstraße (Donau)",
+        "val": 150
+      },
+      {
+        "name": "Roman Road Watling Street (UK)",
+        "val": 357
+      },
+      {
+        "name": "Ermin Way (England)",
+        "val": 190
+      },
+      {
+        "name": "Fosse Way (England)",
+        "val": 303
+      },
+      {
+        "name": "Rykneld Street (England)",
+        "val": 240
+      },
+      {
+        "name": "Via Domitia (Gallien–Spanien)",
+        "val": 700
+      },
+      {
+        "name": "Via Aurelia (Italien)",
+        "val": 550
+      },
+      {
+        "name": "Via Salaria (Salzstraße)",
+        "val": 243
+      },
+      {
+        "name": "Via Claudia Augusta",
+        "val": 500
+      },
+      {
+        "name": "Via Postumia (Norditalien)",
+        "val": 380
+      },
+      {
+        "name": "Camino Real (Amerika)",
+        "val": 2560
+      },
+      {
+        "name": "Natchez Trace (Nordamerika)",
+        "val": 716
+      },
+      {
+        "name": "El Camino Real de Tierra Adentro",
+        "val": 2560
+      },
+      {
+        "name": "Amber Road (Ostsee–Adria)",
+        "val": 1800
+      },
+      {
+        "name": "Mycenae Road Network (Griechenland)",
+        "val": 60
+      },
+      {
+        "name": "Aztec Sacbé-Netz (Maya, Yucatán)",
+        "val": 300
+      },
+      {
+        "name": "Tang Dynasty Silk Road",
+        "val": 4000
+      },
+      {
+        "name": "Byzantine Military Road",
+        "val": 800
+      },
+      {
+        "name": "Via Nova Traiana",
+        "val": 400
+      },
+      {
+        "name": "Portus to Rome Road",
+        "val": 30
+      },
+      {
+        "name": "Roman Road Dere Street (UK)",
+        "val": 430
+      },
+      {
+        "name": "Mohenjodaro-Straßennetz",
+        "val": 20
       }
     ]
   },
@@ -692,6 +1532,126 @@
       {
         "name": "Ain Ghazal-Statuen (Jordanien)",
         "val": 9200
+      },
+      {
+        "name": "Blombos Cave Ocker-Gravur (S.Afrika)",
+        "val": 75000
+      },
+      {
+        "name": "Hohle Fels Venus (Deutschland)",
+        "val": 40000
+      },
+      {
+        "name": "Vogelherd Mammut-Skulptur",
+        "val": 40000
+      },
+      {
+        "name": "Pestera cu Oase (Rumänien, Knochenfund)",
+        "val": 37000
+      },
+      {
+        "name": "Red Lady of Paviland (Wales)",
+        "val": 29000
+      },
+      {
+        "name": "Lascaux Malerei (Radiokarbondatum)",
+        "val": 17300
+      },
+      {
+        "name": "Altamira (Radiokarbondatum)",
+        "val": 14800
+      },
+      {
+        "name": "Chauvet Malerei (Radiokarbondatum)",
+        "val": 32000
+      },
+      {
+        "name": "Göbekli Tepe früheste Schicht",
+        "val": 11500
+      },
+      {
+        "name": "Jericho Turm (älteste Stadtmauer)",
+        "val": 8000
+      },
+      {
+        "name": "Çatalhöyük unterste Schicht",
+        "val": 7500
+      },
+      {
+        "name": "Machu Picchu Erbauung",
+        "val": 600
+      },
+      {
+        "name": "Terrakotta-Armee (Qin-Zeit)",
+        "val": 2200
+      },
+      {
+        "name": "Tollund Mann Torf",
+        "val": 2300
+      },
+      {
+        "name": "Stonehenge Phase I",
+        "val": 5000
+      },
+      {
+        "name": "Avebury Ringanlage",
+        "val": 4500
+      },
+      {
+        "name": "Newgrange Cairn (Irland)",
+        "val": 5200
+      },
+      {
+        "name": "Skara Brae (Orkney)",
+        "val": 5000
+      },
+      {
+        "name": "Tutanchamun Holzsarg",
+        "val": 3300
+      },
+      {
+        "name": "Dead Sea Scrolls (Pergament)",
+        "val": 2100
+      },
+      {
+        "name": "Ötzi der Eismann (Kupferaxt)",
+        "val": 5300
+      },
+      {
+        "name": "Lindow Man (England)",
+        "val": 2000
+      },
+      {
+        "name": "Maiden Castle Belagerung",
+        "val": 2050
+      },
+      {
+        "name": "Nazca-Linien (Holzpfähle)",
+        "val": 1700
+      },
+      {
+        "name": "Abu Simbel Kalksteinblock",
+        "val": 3200
+      },
+      {
+        "name": "Knossos Palast früheste Phase",
+        "val": 3700
+      },
+      {
+        "name": "Troy Level VI",
+        "val": 3300
+      },
+      {
+        "name": "Hallstatt Salzbergwerk",
+        "val": 3000
+      },
+      {
+        "name": "Mesa Verde Cliff Palace",
+        "val": 800
+      },
+      {
+        "name": "Cahokia Monks Mound (USA)",
+        "val": 1000
       }
     ]
   },
@@ -779,6 +1739,126 @@
       {
         "name": "Machu Picchu Drohnenkartierung",
         "val": 4500
+      },
+      {
+        "name": "Gesamtscan Pompeji (DART-Projekt)",
+        "val": 900
+      },
+      {
+        "name": "Angkor Wat LiDAR-Scan",
+        "val": 1500
+      },
+      {
+        "name": "Giza-Plateau MicroScribe",
+        "val": 400
+      },
+      {
+        "name": "Terrakotta-Armee 3D-Scan",
+        "val": 250
+      },
+      {
+        "name": "Machu Picchu Drohnenscan",
+        "val": 180
+      },
+      {
+        "name": "Stonehenge Laserscanstudie",
+        "val": 12
+      },
+      {
+        "name": "Skara Brae Photogrammetrie",
+        "val": 4
+      },
+      {
+        "name": "Newgrange Photogrammetrie",
+        "val": 5
+      },
+      {
+        "name": "Chichén Itzá LiDAR-Scan",
+        "val": 800
+      },
+      {
+        "name": "Tikal Nationalpark LiDAR",
+        "val": 2100
+      },
+      {
+        "name": "Caracol (Belize) Airborne LiDAR",
+        "val": 200
+      },
+      {
+        "name": "Louvre-Abrams Scan-Kollektion",
+        "val": 50
+      },
+      {
+        "name": "Herculaneum Virtual-Unrolling",
+        "val": 30
+      },
+      {
+        "name": "Vergina-Grab (Griechenland)",
+        "val": 10
+      },
+      {
+        "name": "Tutanchamun CT-Scan",
+        "val": 1
+      },
+      {
+        "name": "Ötzi Ganzköper-CT",
+        "val": 8
+      },
+      {
+        "name": "Wari-Mumien CT-Kollektion (Peru)",
+        "val": 15
+      },
+      {
+        "name": "Palenque-Pakal Grab Scan",
+        "val": 3
+      },
+      {
+        "name": "Göbekli Tepe GPR-Survey",
+        "val": 40
+      },
+      {
+        "name": "Carnac Menhire 3D-Kollektion",
+        "val": 25
+      },
+      {
+        "name": "Petra Hauptstraße Scan",
+        "val": 35
+      },
+      {
+        "name": "Ephesos Hadrianstempel",
+        "val": 6
+      },
+      {
+        "name": "Leptis Magna Gesamtdokumentation",
+        "val": 120
+      },
+      {
+        "name": "Dura-Europos Wandmalerei-Scan",
+        "val": 20
+      },
+      {
+        "name": "Chauvet Höhlen-LiDAR",
+        "val": 7
+      },
+      {
+        "name": "Altamira 3D-Dokumentation",
+        "val": 3
+      },
+      {
+        "name": "Lascaux Digitale Replika",
+        "val": 5
+      },
+      {
+        "name": "Underwater Site Alexandria",
+        "val": 80
+      },
+      {
+        "name": "Byzantine Konstantinopel Scan",
+        "val": 45
+      },
+      {
+        "name": "World Heritage Digital Archive (Auswahl)",
+        "val": 10000
       }
     ]
   },
@@ -866,6 +1946,186 @@
       {
         "name": "Alhambra (Granada)",
         "val": 200
+      },
+      {
+        "name": "Hagia Sophia",
+        "val": 5
+      },
+      {
+        "name": "Taj Mahal",
+        "val": 22
+      },
+      {
+        "name": "Kolosseum",
+        "val": 10
+      },
+      {
+        "name": "Sagrada Família (laufend seit 1882)",
+        "val": 141
+      },
+      {
+        "name": "Großer Wall von China (gesamt)",
+        "val": 1800
+      },
+      {
+        "name": "Kölner Dom",
+        "val": 632
+      },
+      {
+        "name": "Notre-Dame de Paris",
+        "val": 182
+      },
+      {
+        "name": "Pantheon (Rom)",
+        "val": 10
+      },
+      {
+        "name": "Stephansdom Wien",
+        "val": 208
+      },
+      {
+        "name": "Eiffelturm",
+        "val": 2
+      },
+      {
+        "name": "Empire State Building",
+        "val": 1
+      },
+      {
+        "name": "Burj Khalifa",
+        "val": 6
+      },
+      {
+        "name": "Suezkanal",
+        "val": 10
+      },
+      {
+        "name": "Panamakanal",
+        "val": 10
+      },
+      {
+        "name": "Petra (Felsenstadt)",
+        "val": 300
+      },
+      {
+        "name": "Teotihuacán (gesamte Stadt)",
+        "val": 500
+      },
+      {
+        "name": "Versailles (Schloss)",
+        "val": 50
+      },
+      {
+        "name": "Stonehenge (Hauptbauphase)",
+        "val": 1500
+      },
+      {
+        "name": "Hagia Sophia (537 n.Chr.)",
+        "val": 6
+      },
+      {
+        "name": "Petersdom Rom",
+        "val": 120
+      },
+      {
+        "name": "Sagrada Família (laufend)",
+        "val": 140
+      },
+      {
+        "name": "Borobudur",
+        "val": 75
+      },
+      {
+        "name": "Versailles Schlossanlage",
+        "val": 50
+      },
+      {
+        "name": "Hadrian-Mauer (Schottland)",
+        "val": 6
+      },
+      {
+        "name": "Chinesische Mauer (Gesamtbau)",
+        "val": 2000
+      },
+      {
+        "name": "Stonehenge (alle Phasen)",
+        "val": 1500
+      },
+      {
+        "name": "Newgrange Cairn",
+        "val": 20
+      },
+      {
+        "name": "Avebury Megalith-Komplex",
+        "val": 300
+      },
+      {
+        "name": "Sacsayhuamán Festung",
+        "val": 60
+      },
+      {
+        "name": "Teotihuacán (Gesamtanlage)",
+        "val": 200
+      },
+      {
+        "name": "Chichen Itza (Hauptphase)",
+        "val": 200
+      },
+      {
+        "name": "Tikal (Blütezeit)",
+        "val": 600
+      },
+      {
+        "name": "Palenque Tempelbau",
+        "val": 500
+      },
+      {
+        "name": "Persepolis",
+        "val": 60
+      },
+      {
+        "name": "Parthenon Athen",
+        "val": 15
+      },
+      {
+        "name": "Kolosseum Rom",
+        "val": 10
+      },
+      {
+        "name": "Pantheon Rom",
+        "val": 3
+      },
+      {
+        "name": "Trajans Forum",
+        "val": 12
+      },
+      {
+        "name": "Nofretete-Tempel Abu Simbel",
+        "val": 20
+      },
+      {
+        "name": "Karnak-Tempel (Gesamtanlage)",
+        "val": 2000
+      },
+      {
+        "name": "Luxortempel",
+        "val": 200
+      },
+      {
+        "name": "Göbekli Tepe Phase I–III",
+        "val": 2000
+      },
+      {
+        "name": "Hampi Vijayanagara",
+        "val": 200
+      },
+      {
+        "name": "Petra Hauptbauten",
+        "val": 500
+      },
+      {
+        "name": "Uruk Tempelanlage",
+        "val": 1000
       }
     ]
   },
@@ -953,6 +2213,126 @@
       {
         "name": "El Castillo Chichen Itza",
         "val": 30
+      },
+      {
+        "name": "Großer Aten-Obelisk (Karnak)",
+        "val": 30
+      },
+      {
+        "name": "Koloss von Rhodos (Schätzung)",
+        "val": 33
+      },
+      {
+        "name": "Pyramide von Cholula (Mexiko) Basis",
+        "val": 55
+      },
+      {
+        "name": "Caracol Chichen Itza (Observatorium)",
+        "val": 22
+      },
+      {
+        "name": "Temple of Inscriptions Palenque",
+        "val": 27
+      },
+      {
+        "name": "Pyramid of the Sun Teotihuacán",
+        "val": 65
+      },
+      {
+        "name": "Pyramid of the Moon Teotihuacán",
+        "val": 43
+      },
+      {
+        "name": "Temple I Tikal",
+        "val": 47
+      },
+      {
+        "name": "Templo Mayor Tenochtitlan",
+        "val": 45
+      },
+      {
+        "name": "Luxortempel-Pylon",
+        "val": 24
+      },
+      {
+        "name": "Hathorsäulen Dendera",
+        "val": 9
+      },
+      {
+        "name": "Apadana-Halle Persepolis",
+        "val": 20
+      },
+      {
+        "name": "Parthisches Ctesiphon-Gewölbe",
+        "val": 37
+      },
+      {
+        "name": "Akropolis Parthenon",
+        "val": 14
+      },
+      {
+        "name": "Tholos von Epidauros",
+        "val": 6
+      },
+      {
+        "name": "Theater von Epidauros",
+        "val": 15
+      },
+      {
+        "name": "Ara Pacis Augustus (ROM)",
+        "val": 6
+      },
+      {
+        "name": "Trajansäule (ROM)",
+        "val": 38
+      },
+      {
+        "name": "Marcussäule (ROM)",
+        "val": 42
+      },
+      {
+        "name": "Konstantinsbogen (ROM)",
+        "val": 21
+      },
+      {
+        "name": "Hadrian-Mausoleum (Castel Sant'Angelo)",
+        "val": 47
+      },
+      {
+        "name": "Pantheon-Kuppel (ROM)",
+        "val": 43
+      },
+      {
+        "name": "Kolosseum (ROM)",
+        "val": 48
+      },
+      {
+        "name": "Stonehenge Sarsen-Trilith",
+        "val": 9
+      },
+      {
+        "name": "New Grange Passage Tomb",
+        "val": 13
+      },
+      {
+        "name": "Avebury-Henge Erdwall",
+        "val": 5
+      },
+      {
+        "name": "Silbury Hill (England)",
+        "val": 40
+      },
+      {
+        "name": "Skara Brae Hausreste",
+        "val": 3
+      },
+      {
+        "name": "Hagia Sophia Kuppel (Istanbul)",
+        "val": 56
+      },
+      {
+        "name": "Pantheon (Rom, Kuppelscheitel)",
+        "val": 43
       }
     ]
   },
@@ -1040,6 +2420,126 @@
       {
         "name": "Hochdorf-Goldfunde",
         "val": 100
+      },
+      {
+        "name": "Mona Lisa (Louvre)",
+        "val": 860
+      },
+      {
+        "name": "Crown Jewels UK",
+        "val": 3000
+      },
+      {
+        "name": "Tutanchamun Totenmaske",
+        "val": 2000
+      },
+      {
+        "name": "Rosetta Stone (British Museum)",
+        "val": 500
+      },
+      {
+        "name": "Elgin Marbles Gesamtwert",
+        "val": 200
+      },
+      {
+        "name": "Dead Sea Scrolls Sammlung",
+        "val": 300
+      },
+      {
+        "name": "Hope-Diamant (Smithsonian)",
+        "val": 350
+      },
+      {
+        "name": "Sarkophag Kha (Turin)",
+        "val": 100
+      },
+      {
+        "name": "Book of Kells (Dublin)",
+        "val": 50
+      },
+      {
+        "name": "Sutton Hoo Helm",
+        "val": 30
+      },
+      {
+        "name": "Staffordshire Hoard Gold",
+        "val": 5
+      },
+      {
+        "name": "Lewis Chessmen",
+        "val": 20
+      },
+      {
+        "name": "Alfred Jewel (Oxford)",
+        "val": 10
+      },
+      {
+        "name": "Nefertiti-Büste (Berlin)",
+        "val": 400
+      },
+      {
+        "name": "Ramesside Papyri",
+        "val": 80
+      },
+      {
+        "name": "Uruk-Vasenfragment",
+        "val": 15
+      },
+      {
+        "name": "Vogelherdhöhle Mammut",
+        "val": 75
+      },
+      {
+        "name": "Ötzi mit Ausrüstung",
+        "val": 100
+      },
+      {
+        "name": "Hochdorf Goldschmuck",
+        "val": 8
+      },
+      {
+        "name": "Varna Goldschatz",
+        "val": 20
+      },
+      {
+        "name": "El Carambolo Goldschatz (Sevilla)",
+        "val": 30
+      },
+      {
+        "name": "Terrakotta-Armee (Auswahl)",
+        "val": 5000
+      },
+      {
+        "name": "Moai-Statue Ahu Tongariki",
+        "val": 50
+      },
+      {
+        "name": "Nazca-Linien (UNESCO-Welterbe)",
+        "val": 0
+      },
+      {
+        "name": "Angkor Wat Tempel-Komplex",
+        "val": 0
+      },
+      {
+        "name": "Stonehenge Gesamtstätte",
+        "val": 0
+      },
+      {
+        "name": "Pyramiden von Gizeh",
+        "val": 0
+      },
+      {
+        "name": "Nofretete-Büste (Schätzung)",
+        "val": 500
+      },
+      {
+        "name": "Goldmaske Tutanchamun (Schätzung)",
+        "val": 2000
+      },
+      {
+        "name": "Altamira-Höhle (Schätzung)",
+        "val": 3000
       }
     ]
   }

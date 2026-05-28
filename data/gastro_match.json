@@ -177,6 +177,30 @@
       {
         "n": "Bulgogi",
         "c": "Südkorea"
+      },
+      {
+        "n": "Pierogi (Teigtaschen mit Füllung)",
+        "c": "Polen"
+      },
+      {
+        "n": "Bigos (Jägereintopf)",
+        "c": "Polen"
+      },
+      {
+        "n": "Feijoada (Bohnen-Fleisch-Eintopf)",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Smørrebrød (offenes Sandwich)",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Kotlet Schabowy (Schnitzel)",
+        "c": "Polen"
+      },
+      {
+        "n": "Goulash (Gulyás)",
+        "c": "Ungarn"
       }
     ]
   },
@@ -348,6 +372,46 @@
       {
         "n": "Vakuumiergerät (Foodsaver)",
         "c": "Vakuumieren"
+      },
+      {
+        "n": "Mandoline (Gemüsehobel)",
+        "c": "Schneiden"
+      },
+      {
+        "n": "Sous-vide-Garer",
+        "c": "Kochen"
+      },
+      {
+        "n": "Dampfkochtopf",
+        "c": "Kochen"
+      },
+      {
+        "n": "Eismaschine",
+        "c": "Gefrieren"
+      },
+      {
+        "n": "Pacojet (Küchengerät)",
+        "c": "Mischen"
+      },
+      {
+        "n": "Dehydrator (Dörrgerät)",
+        "c": "Trocknen"
+      },
+      {
+        "n": "Fleischwolf",
+        "c": "Zerkleinern"
+      },
+      {
+        "n": "Spritzgebäck-Aufsatz",
+        "c": "Formen"
+      },
+      {
+        "n": "Brotschneidemaschine",
+        "c": "Schneiden"
+      },
+      {
+        "n": "Spritzbeutel",
+        "c": "Formen"
       }
     ]
   },
@@ -439,6 +503,126 @@
       {
         "n": "Abaisser (Teig dünn ausrollen)",
         "c": "Teig"
+      },
+      {
+        "n": "Julienne (Streichholz-Streifen 2×2mm)",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Bâtonnet (3mm x 3mm x 5cm)",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Paysanne (dünne unregelmäßige Scheiben)",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Tourné (Sieben-Seiten-Fass)",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Mandoline-Hobel (hauchdünn)",
+        "c": "Gemüse / Käse"
+      },
+      {
+        "n": "Chiffonade fein < 1mm Kräuterstreifen",
+        "c": "Kräuter"
+      },
+      {
+        "n": "Concassée (grob gehackte geschälte Tomaten)",
+        "c": "Tomaten"
+      },
+      {
+        "n": "Emincer (hauchdünne Scheiben)",
+        "c": "Fleisch / Pilze"
+      },
+      {
+        "n": "Escalope / Schmetterling-Schnitt",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Lardieren (Speckstreifen einziehen)",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Flambieren mit Ausbrennen von Knochen",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Sashimi-Schnitt (schräg, glatt)",
+        "c": "Fisch"
+      },
+      {
+        "n": "Spatchcock (Wirbelsäule herauslösen)",
+        "c": "Geflügel"
+      },
+      {
+        "n": "Brunoise groß (5mm) = Macédoine",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Noisette (Kugelform mit Parisien-Ausstecher)",
+        "c": "Melone / Kartoffel"
+      },
+      {
+        "n": "Printanier (kleine Würfeln + Julienne mix)",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Ciselieren (fein wiegen für Schalotten)",
+        "c": "Zwiebeln / Schalotten"
+      },
+      {
+        "n": "Schnitzen (dekorative Garnitur)",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Haché (fein gehackt < 2mm)",
+        "c": "Kräuter / Zwiebeln"
+      },
+      {
+        "n": "Carpaccio-Schnitt (hauchdünn, roh)",
+        "c": "Rindfleisch / Fisch"
+      },
+      {
+        "n": "Bâtonnet (dicke Stifte)",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Tourner (gedrechselt)",
+        "c": "Gemüse"
+      },
+      {
+        "n": "Concassé (grob gehackt)",
+        "c": "Tomaten"
+      },
+      {
+        "n": "Emincé (dünn geschnitten)",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Escaloper (schräg aufschneiden)",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Ciseler (fein würfeln)",
+        "c": "Zwiebeln"
+      },
+      {
+        "n": "Zesten reiben",
+        "c": "Zitrusfrüchte"
+      },
+      {
+        "n": "Façonner (formen)",
+        "c": "Teig"
+      },
+      {
+        "n": "Trancher (tranchieren)",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Hacken (grob)",
+        "c": "Gemüse"
       }
     ]
   },
@@ -524,6 +708,126 @@
       {
         "n": "Pad See Ew",
         "c": "Bangkok"
+      },
+      {
+        "n": "Wiener Schnitzel (Kalb, Semmelbrösel)",
+        "c": "Wien, Österreich"
+      },
+      {
+        "n": "Carbonara (Ei, Guanciale, Pecorino, Pfeffer)",
+        "c": "Rom, Italien"
+      },
+      {
+        "n": "Bouillabaisse (Rascasse, Safran, Rouille)",
+        "c": "Marseille, Frankreich"
+      },
+      {
+        "n": "Paella Valenciana (Hühnchen, Kaninchen, Rosmarien)",
+        "c": "Valencia, Spanien"
+      },
+      {
+        "n": "Wurst-Eintopf Cassoulet",
+        "c": "Castelnaudary, Frankreich"
+      },
+      {
+        "n": "Boeuf Bourguignon (Burgunder-Wein, Lardons)",
+        "c": "Burgund, Frankreich"
+      },
+      {
+        "n": "Moules-frites (Miesmuscheln + Pommes)",
+        "c": "Belgien"
+      },
+      {
+        "n": "Ceviche (Lemon, Fisch, Chili)",
+        "c": "Peru"
+      },
+      {
+        "n": "Pad Thai (Reisbandnudeln, Tamarinde)",
+        "c": "Thailand"
+      },
+      {
+        "n": "Jollof Rice (Tomaten, Palmöl)",
+        "c": "Westafrika"
+      },
+      {
+        "n": "Injera mit Doro Wat (Sauerteig, Berbere)",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Pho Bo (Rinderknochen, Sternanis)",
+        "c": "Hanoi, Vietnam"
+      },
+      {
+        "n": "Rendang (Kokosmilch, Zitronengras)",
+        "c": "Minangkabau, Indonesien"
+      },
+      {
+        "n": "Tagine mit Preserved Lemon",
+        "c": "Marokko"
+      },
+      {
+        "n": "Bibimbap (Dolsot, Gochujang)",
+        "c": "Korea"
+      },
+      {
+        "n": "Sushi Edo-Mae (Essigreis, frischer Thunfisch)",
+        "c": "Edo/Tokyo, Japan"
+      },
+      {
+        "n": "Kimchi (Napa-Kohl, Gochugaru, Knoblauch)",
+        "c": "Korea"
+      },
+      {
+        "n": "Mole Negro (30+ Zutaten, Chihuacle)",
+        "c": "Oaxaca, Mexiko"
+      },
+      {
+        "n": "Sauerbraten (Rheinisch, Einlegen im Essig)",
+        "c": "Rheinland, Deutschland"
+      },
+      {
+        "n": "Bigos (Sauerkraut, Wild, Pilze)",
+        "c": "Polen"
+      },
+      {
+        "n": "Shakshuka (Tomaten, Paprika, Eier)",
+        "c": "Nordafrika/Israel"
+      },
+      {
+        "n": "Harira (Kichererbsen, Lamm, Saffran)",
+        "c": "Marokko (Ramadan)"
+      },
+      {
+        "n": "Tom Yum (Lemongrass, Galangal, Kaffir-Limette)",
+        "c": "Thailand"
+      },
+      {
+        "n": "Goulash (Paprika, Rindfleisch)",
+        "c": "Ungarn"
+      },
+      {
+        "n": "Æbleflæsk (Schweinefleisch, Äpfel)",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Borshch (Rote Bete, Sauerrahm)",
+        "c": "Ukraine"
+      },
+      {
+        "n": "Pierogi (Kartoffel-Käse-Füllung)",
+        "c": "Polen"
+      },
+      {
+        "n": "Gravlax (Dill, Zucker, Salz)",
+        "c": "Skandinavien"
+      },
+      {
+        "n": "Baklava (Phyllo, Pistazien, Rosenwasser)",
+        "c": "Türkei"
+      },
+      {
+        "n": "Falafel (Kichererbsen, Petersilie)",
+        "c": "Levante/Ägypten"
       }
     ]
   },
@@ -689,6 +993,46 @@
       {
         "n": "Pasties (Cornwall)",
         "c": "Großbritannien"
+      },
+      {
+        "n": "Pierogi (Polen)",
+        "c": "Polen"
+      },
+      {
+        "n": "Manti (Türkei/Zentralasien)",
+        "c": "Türkei"
+      },
+      {
+        "n": "Empanadas (Lateinamerika)",
+        "c": "Argentinien"
+      },
+      {
+        "n": "Momo (Tibet/Nepal)",
+        "c": "Nepal"
+      },
+      {
+        "n": "Khinkali (Georgien)",
+        "c": "Georgien"
+      },
+      {
+        "n": "Buuz (Mongolei)",
+        "c": "Mongolei"
+      },
+      {
+        "n": "Jiaozi (China, nordstil)",
+        "c": "China"
+      },
+      {
+        "n": "Ravioli (klassisch)",
+        "c": "Italien"
+      },
+      {
+        "n": "Kreplach (Jüdisch)",
+        "c": "Osteuropa"
+      },
+      {
+        "n": "Pasteles (Puerto Rico)",
+        "c": "Puerto Rico"
       }
     ]
   },
@@ -860,6 +1204,46 @@
       {
         "n": "Chili-Lime Salt (Chili, Limette, Salz)",
         "c": "Mexiko/USA"
+      },
+      {
+        "n": "Cajun Spice",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Berbere (Äthiopien)",
+        "c": "Afrika"
+      },
+      {
+        "n": "Advieh (Iran)",
+        "c": "Asien"
+      },
+      {
+        "n": "Tabil (Tunesien)",
+        "c": "Afrika"
+      },
+      {
+        "n": "Khmeli-Suneli (Georgien)",
+        "c": "Europa"
+      },
+      {
+        "n": "Mole Rojo",
+        "c": "Amerika"
+      },
+      {
+        "n": "Sichuan-Gewürz (Malatang)",
+        "c": "Asien"
+      },
+      {
+        "n": "Jerk Seasoning (Jamaika)",
+        "c": "Amerika"
+      },
+      {
+        "n": "Hawayij (Jemen)",
+        "c": "Asien"
+      },
+      {
+        "n": "Chermoula (Marokko)",
+        "c": "Afrika"
       }
     ]
   },
@@ -951,6 +1335,126 @@
       {
         "n": "Coquelet (Stubenküken)",
         "c": "Geflügel"
+      },
+      {
+        "n": "Entrecôte / Rib-Eye (Hochrippe)",
+        "c": "Rind"
+      },
+      {
+        "n": "Flank Steak (Bauchlappen)",
+        "c": "Rind"
+      },
+      {
+        "n": "T-Bone (Rücken mit Knochen)",
+        "c": "Rind"
+      },
+      {
+        "n": "Porterhouse (T-Bone + großes Filet)",
+        "c": "Rind"
+      },
+      {
+        "n": "Brisket (Brustspitze, BBQ)",
+        "c": "Rind"
+      },
+      {
+        "n": "Tri-Tip (Hüftspitze)",
+        "c": "Rind"
+      },
+      {
+        "n": "Short Ribs (Querrippen)",
+        "c": "Rind"
+      },
+      {
+        "n": "Tomahawk (Hochrippe mit Knochen)",
+        "c": "Rind"
+      },
+      {
+        "n": "Tenderloin / Filet (zartestes Stück)",
+        "c": "Rind"
+      },
+      {
+        "n": "Pulled Pork (Nacken, low & slow)",
+        "c": "Schwein"
+      },
+      {
+        "n": "Schweinebauch (Belly)",
+        "c": "Schwein"
+      },
+      {
+        "n": "Lammkeule (Gigot)",
+        "c": "Lamm"
+      },
+      {
+        "n": "Lammkotelett (Chop)",
+        "c": "Lamm"
+      },
+      {
+        "n": "Hähnchenbrust (Breast)",
+        "c": "Geflügel"
+      },
+      {
+        "n": "Keule / Schenkel (Drumstick)",
+        "c": "Geflügel"
+      },
+      {
+        "n": "Kaninchenrücken",
+        "c": "Kaninchen"
+      },
+      {
+        "n": "Hirschkeule",
+        "c": "Wild"
+      },
+      {
+        "n": "Wildschwein-Schulter",
+        "c": "Wild"
+      },
+      {
+        "n": "Kalbsschnitzel (Wiener Art)",
+        "c": "Kalb"
+      },
+      {
+        "n": "Kalbsbries (Sweetbread)",
+        "c": "Kalb"
+      },
+      {
+        "n": "Entrecôte (Zwischenrippenstück)",
+        "c": "Rind"
+      },
+      {
+        "n": "Flank Steak (Flanke)",
+        "c": "Rind"
+      },
+      {
+        "n": "Skirt Steak (Zwerchfell)",
+        "c": "Rind"
+      },
+      {
+        "n": "Picanha (Hüftdeckel, Brasilien)",
+        "c": "Rind"
+      },
+      {
+        "n": "Osso Buco (Beinscheibe)",
+        "c": "Kalb"
+      },
+      {
+        "n": "Spare Ribs (Rippchen)",
+        "c": "Schwein"
+      },
+      {
+        "n": "Lamb Rack (Kotelettkrone)",
+        "c": "Lamm"
+      },
+      {
+        "n": "Gigot (Lammkeule)",
+        "c": "Lamm"
+      },
+      {
+        "n": "Poularde (gemästetes Huhn)",
+        "c": "Geflügel"
+      },
+      {
+        "n": "Coulotte (Picanha-Spitze)",
+        "c": "Rind"
       }
     ]
   },
@@ -1036,6 +1540,126 @@
       {
         "n": "Aspergillus niger",
         "c": "Schwarzes Koji (Awamori)"
+      },
+      {
+        "n": "Aspergillus oryzae",
+        "c": "Miso/Sojasauce/Sake"
+      },
+      {
+        "n": "Penicillium camemberti",
+        "c": "Camembert-Käse"
+      },
+      {
+        "n": "Lactobacillus bulgaricus",
+        "c": "Joghurt"
+      },
+      {
+        "n": "Mucor rouxii",
+        "c": "Koji-Reis"
+      },
+      {
+        "n": "Brettanomyces bruxellensis",
+        "c": "Belgische Sauerbiere"
+      },
+      {
+        "n": "Kluyveromyces marxianus",
+        "c": "Kefir"
+      },
+      {
+        "n": "Gluconobacter oxydans",
+        "c": "Kombucha"
+      },
+      {
+        "n": "Leuconostoc citreum",
+        "c": "Kimchi-Starterkultur"
+      },
+      {
+        "n": "Lactobacillus plantarum",
+        "c": "Sauerteigbrot"
+      },
+      {
+        "n": "Monascus purpureus",
+        "c": "Roter Hefereis China"
+      },
+      {
+        "n": "Yarrowia lipolytica",
+        "c": "Stinkekäse-Aroma"
+      },
+      {
+        "n": "Acetobacter pasteurianus",
+        "c": "Reisessig"
+      },
+      {
+        "n": "Pediococcus pentosaceus",
+        "c": "Dry-Aged Wurst"
+      },
+      {
+        "n": "Staphylococcus carnosus",
+        "c": "Salami-Reifung"
+      },
+      {
+        "n": "Debaryomyces hansenii",
+        "c": "Salzige Reifungskäse"
+      },
+      {
+        "n": "Hanseniaspora uvarum",
+        "c": "Spontangärung Wein"
+      },
+      {
+        "n": "Tetragenococcus halophilus",
+        "c": "Sojasauce-Reifung"
+      },
+      {
+        "n": "Acetobacter xylinum",
+        "c": "Kombucha-Pellicle"
+      },
+      {
+        "n": "Candida milleri",
+        "c": "San Francisco Sourdough"
+      },
+      {
+        "n": "Lactobacillus acidophilus",
+        "c": "Joghurt"
+      },
+      {
+        "n": "Mucor miehei (Rennin)",
+        "c": "Käse"
+      },
+      {
+        "n": "Pediococcus cerevisiae",
+        "c": "Salami"
+      },
+      {
+        "n": "Kluyveromyces lactis",
+        "c": "Käse (Lactose-Abbau)"
+      },
+      {
+        "n": "Bacillus subtilis (natto)",
+        "c": "Natto"
+      },
+      {
+        "n": "Aspergillus awamori",
+        "c": "Awamori (Japanischer Schnaps)"
+      },
+      {
+        "n": "Lactococcus lactis subsp. cremoris",
+        "c": "Butter"
+      },
+      {
+        "n": "Bifidobacterium longum",
+        "c": "Joghurt"
+      },
+      {
+        "n": "Zymomonas mobilis",
+        "c": "Pulque & Agavengetränke"
+      },
+      {
+        "n": "Aspergillus sojae",
+        "c": "Sojasauce (Japan-Variante)"
+      },
+      {
+        "n": "Methylobacterium extorquens",
+        "c": "Fermentierte Getränke"
       }
     ]
   },
@@ -1207,6 +1831,46 @@
       {
         "n": "Black Ivory Coffee (Elefant)",
         "c": "Thailand"
+      },
+      {
+        "n": "Macchiato",
+        "c": "Espresso"
+      },
+      {
+        "n": "Cold Brew",
+        "c": "Kaltextraktion"
+      },
+      {
+        "n": "Vietnamese Iced Coffee (Ca Phe Da)",
+        "c": "Filterkaffee"
+      },
+      {
+        "n": "Cortado",
+        "c": "Espresso"
+      },
+      {
+        "n": "Affogato",
+        "c": "Espresso"
+      },
+      {
+        "n": "Mazagran (algerisch)",
+        "c": "Filterkaffee"
+      },
+      {
+        "n": "Galão (Portugal)",
+        "c": "Espresso"
+      },
+      {
+        "n": "Piccolo Latte",
+        "c": "Espresso"
+      },
+      {
+        "n": "Nitro Cold Brew",
+        "c": "Kaltextraktion"
+      },
+      {
+        "n": "Türkischer Mokka",
+        "c": "Aufguss"
       }
     ]
   },
@@ -1378,6 +2042,46 @@
       {
         "n": "Trofie con Pesto (Ligurien)",
         "c": "Pesto"
+      },
+      {
+        "n": "Rigatoni",
+        "c": "Tomatensauce"
+      },
+      {
+        "n": "Orecchiette",
+        "c": "Gemüsesauce"
+      },
+      {
+        "n": "Farfalle",
+        "c": "Sahnesauce"
+      },
+      {
+        "n": "Bucatini",
+        "c": "Amatriciana"
+      },
+      {
+        "n": "Paccheri",
+        "c": "Meeresfrüchte"
+      },
+      {
+        "n": "Maltagliati",
+        "c": "Gemüsesauce"
+      },
+      {
+        "n": "Trofie",
+        "c": "Pesto"
+      },
+      {
+        "n": "Cavatappi (Spirale)",
+        "c": "Käsesauce"
+      },
+      {
+        "n": "Gemelli",
+        "c": "Cremige Saucen"
+      },
+      {
+        "n": "Stringozzi",
+        "c": "Trüffelöl"
       }
     ]
   },
@@ -1469,6 +2173,126 @@
       {
         "n": "Bunya Nut",
         "c": "Ozeanien"
+      },
+      {
+        "n": "Carambola (Sternfrucht)",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Kiwano (Hornmelone)",
+        "c": "Afrika/Neuseeland"
+      },
+      {
+        "n": "Sapodilla (Breiapfel)",
+        "c": "Mexiko/Zentralamerika"
+      },
+      {
+        "n": "Guanabana (Soursop)",
+        "c": "Karibik"
+      },
+      {
+        "n": "Pepino Melon",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Buddha's Hand (Zitronat-Zitrone)",
+        "c": "China/Japan"
+      },
+      {
+        "n": "Finger Lime",
+        "c": "Australien"
+      },
+      {
+        "n": "Jaboticaba",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Cupuaçu",
+        "c": "Amazonas"
+      },
+      {
+        "n": "Physalis (Kapstachelbeere)",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Atemoya",
+        "c": "Florida/Karibik"
+      },
+      {
+        "n": "Black Sapote (Schokoladenpudding-Frucht)",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Lucuma",
+        "c": "Peru"
+      },
+      {
+        "n": "Camu Camu",
+        "c": "Amazonas"
+      },
+      {
+        "n": "Ackee",
+        "c": "Jamaika"
+      },
+      {
+        "n": "Noni",
+        "c": "Polynesien"
+      },
+      {
+        "n": "Miracle Fruit (Synsepalum)",
+        "c": "Westafrika"
+      },
+      {
+        "n": "Langsat",
+        "c": "Südostasien"
+      },
+      {
+        "n": "Salak (Schlangenhautfrucht)",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Wampee",
+        "c": "Südchina"
+      },
+      {
+        "n": "Pomelo",
+        "c": "Südostasien"
+      },
+      {
+        "n": "Jackfrucht",
+        "c": "Asien"
+      },
+      {
+        "n": "Salak (Schlangenfrucht)",
+        "c": "Asien"
+      },
+      {
+        "n": "Cherimoya (Rahmapfel)",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Feijoa (Ananas-Guave)",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Tamarillo (Baumtomate)",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Acerola (Barbados-Kirsche)",
+        "c": "Mittelamerika"
+      },
+      {
+        "n": "Cashew-Apfel",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Caimito (Sternapfel)",
+        "c": "Karibik"
+      },
+      {
+        "n": "Physalis",
+        "c": "Südamerika"
       }
     ]
   },
@@ -1634,6 +2458,46 @@
       {
         "n": "Stollen (Weihnachten)",
         "c": "Deutschland (Sachsen)"
+      },
+      {
+        "n": "Rye Bread (Roggenbrot)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Injera (Teffbrot)",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Damper (Buschbrot)",
+        "c": "Australien"
+      },
+      {
+        "n": "Tortilla (Maisbrot)",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Lavash (dünnes Fladenbrot)",
+        "c": "Armenien"
+      },
+      {
+        "n": "Pretzel (Brezel)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Kisra (Sudanesisches Fladenbrot)",
+        "c": "Sudan"
+      },
+      {
+        "n": "Bammy (Kassavabrot)",
+        "c": "Jamaika"
+      },
+      {
+        "n": "Roggenbrot (Pumpernickel)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Khobz (Marokkanisch)",
+        "c": "Marokko"
       }
     ]
   },
@@ -1725,6 +2589,126 @@
       {
         "n": "Miyoko's Cultured Vegan Butter",
         "c": "Käse"
+      },
+      {
+        "n": "Tofu (Sojakäse)",
+        "c": "Käse/Fleisch"
+      },
+      {
+        "n": "Tempeh (fermentierte Sojabohnen)",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Seitan (Weizengluten)",
+        "c": "Fleisch/Steak"
+      },
+      {
+        "n": "Jackfrucht (jung, gezupft)",
+        "c": "Pulled Pork"
+      },
+      {
+        "n": "Kichererbsen (geröstet)",
+        "c": "Snack/Burger"
+      },
+      {
+        "n": "Chia-Samen (gequollen)",
+        "c": "Ei-Ersatz"
+      },
+      {
+        "n": "Leinsamen (geschrotet)",
+        "c": "Ei-Ersatz"
+      },
+      {
+        "n": "Cashewmus",
+        "c": "Sahnig/Käseartig"
+      },
+      {
+        "n": "Kokosmilch (Vollfett)",
+        "c": "Sahne"
+      },
+      {
+        "n": "Oatly Hafercrème",
+        "c": "Schlagsahne"
+      },
+      {
+        "n": "Cashew-Frischkäse",
+        "c": "Frischkäse"
+      },
+      {
+        "n": "Hefeflocken (nutritional yeast)",
+        "c": "Parmesan/Käse-Aroma"
+      },
+      {
+        "n": "Kokosjoghurt",
+        "c": "Joghurt"
+      },
+      {
+        "n": "Soja-Joghurt",
+        "c": "Joghurt"
+      },
+      {
+        "n": "Mandel-Joghurt",
+        "c": "Joghurt"
+      },
+      {
+        "n": "Hafer-Joghurt",
+        "c": "Joghurt"
+      },
+      {
+        "n": "Sojaschnetzel (TVP)",
+        "c": "Hackfleisch"
+      },
+      {
+        "n": "Impossible Burger Patty",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Bananenblüte (frisch)",
+        "c": "Pulled Pork/Seafood"
+      },
+      {
+        "n": "Linsen (braun)",
+        "c": "Bolognese"
+      },
+      {
+        "n": "Kochbanane (geröstet)",
+        "c": "Fleischiges Textur"
+      },
+      {
+        "n": "Aubergine (geschmort)",
+        "c": "Fleisch/Umami"
+      },
+      {
+        "n": "Pilze (Shiitake, Oyster)",
+        "c": "Fleisch/Umami"
+      },
+      {
+        "n": "Walnüsse (grob gehackt)",
+        "c": "Hackfleisch"
+      },
+      {
+        "n": "Rote Beete (Rohe Scheiben)",
+        "c": "Thunfisch-Tartare"
+      },
+      {
+        "n": "Miso-Paste",
+        "c": "Fischsauce/Umami"
+      },
+      {
+        "n": "Nori-Blätter",
+        "c": "Fischgeschmack"
+      },
+      {
+        "n": "Jackfrucht (pulled)",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Erbsenprotein-Patty",
+        "c": "Fleisch"
+      },
+      {
+        "n": "Mandeljoghurt",
+        "c": "Joghurt"
       }
     ]
   },
@@ -1890,6 +2874,46 @@
       {
         "n": "Champurrado (Maisgetränk, Schokolade)",
         "c": "Mexiko"
+      },
+      {
+        "n": "Gallo Pinto (Bohnen-Reis)",
+        "c": "Costa Rica"
+      },
+      {
+        "n": "Dosa mit Sambar",
+        "c": "Indien"
+      },
+      {
+        "n": "Menemen (Eiergericht)",
+        "c": "Türkei"
+      },
+      {
+        "n": "Croque Monsieur",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Rösti",
+        "c": "Schweiz"
+      },
+      {
+        "n": "Croque Madame",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Roti Canai",
+        "c": "Malaysia"
+      },
+      {
+        "n": "Huevos Rancheros",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Ful Medames (Fave-Bohnen-Eintopf)",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Congee (Reissuppe)",
+        "c": "China"
       }
     ]
   },
@@ -1981,6 +3005,126 @@
       {
         "n": "Kaltmaischen",
         "c": "Fermentieren"
+      },
+      {
+        "n": "Pochieren",
+        "c": "Garen in siedendem Wasser ohne Kochen"
+      },
+      {
+        "n": "Schmoren",
+        "c": "Anbraten dann in Flüssigkeit langsam garen"
+      },
+      {
+        "n": "Dünsten",
+        "c": "Garen im eigenen Saft ohne Flüssigkeit"
+      },
+      {
+        "n": "Glasieren",
+        "c": "Mit Sauce oder Zucker übergießen"
+      },
+      {
+        "n": "Reduzieren",
+        "c": "Sauce durch Einkochen konzentrieren"
+      },
+      {
+        "n": "Deglacieren",
+        "c": "Bratensatz mit Flüssigkeit lösen"
+      },
+      {
+        "n": "Emulgieren",
+        "c": "Fett und Wasser in stabile Verbindung bringen"
+      },
+      {
+        "n": "Confit",
+        "c": "Langsam in eigenem Fett bei Niedriger Temp."
+      },
+      {
+        "n": "Sous-vide",
+        "c": "Vakuumgaren im Wasserbad"
+      },
+      {
+        "n": "Karamellisieren",
+        "c": "Zucker erhitzen bis er schmilzt und bräunt"
+      },
+      {
+        "n": "Maillard-Reaktion",
+        "c": "Bräunung von Eiweiß und Zucker beim Braten"
+      },
+      {
+        "n": "Infusieren",
+        "c": "Aromen in Flüssigkeit extrahieren (kalt/warm)"
+      },
+      {
+        "n": "Temperieren",
+        "c": "Schokolade auf exakte Temperatur bringen"
+      },
+      {
+        "n": "Binden",
+        "c": "Saucen mit Stärke/Butter andicken"
+      },
+      {
+        "n": "Montieren",
+        "c": "Kalte Butter in Sauce rühren für Glanz"
+      },
+      {
+        "n": "Passieren",
+        "c": "Flüssigkeit durch Sieb treiben"
+      },
+      {
+        "n": "Marinieren",
+        "c": "Fleisch/Fisch in Gewürzlösung einlegen"
+      },
+      {
+        "n": "Pökeln",
+        "c": "Haltbarmachen mit Salz und Nitrit"
+      },
+      {
+        "n": "Räuchern",
+        "c": "Haltbar- und Aromatisieren mit Rauch"
+      },
+      {
+        "n": "Fermentieren",
+        "c": "Vergärung durch Mikroorganismen"
+      },
+      {
+        "n": "Zeste schälen",
+        "c": "Äußere Zitrusschale fein abreiben"
+      },
+      {
+        "n": "Ätzen (lemon-curing)",
+        "c": "Säure-Denaturierung von Fisch/Fleisch"
+      },
+      {
+        "n": "Sous-vide Vakuumieren",
+        "c": "Luftdichtes Einschweißen vor dem Garen"
+      },
+      {
+        "n": "Kaltquellen",
+        "c": "Stärke in kaltem Wasser aufquellen lassen"
+      },
+      {
+        "n": "Abschäumen",
+        "c": "Schaum von Suppen/Fonds entfernen"
+      },
+      {
+        "n": "Tourieren (Blätterteig)",
+        "c": "Mehrfach falten mit Butterschichten"
+      },
+      {
+        "n": "Chiffonnade",
+        "c": "Blattgemüse in feine Streifen schneiden"
+      },
+      {
+        "n": "Gratinieren",
+        "c": "Überbacken"
+      },
+      {
+        "n": "Pochieren (Sous vide)",
+        "c": "Kochen"
+      },
+      {
+        "n": "Schmoren (Braisieren)",
+        "c": "Kochen"
       }
     ]
   },
@@ -2152,6 +3296,46 @@
       {
         "n": "Tekka-Maki (Thunfisch)",
         "c": "Reis gerollt"
+      },
+      {
+        "n": "Chirashi-Zushi",
+        "c": "Streusushi"
+      },
+      {
+        "n": "Onigiri",
+        "c": "Geformter Reis"
+      },
+      {
+        "n": "Ura-Maki (Inside-out)",
+        "c": "Reis gerollt"
+      },
+      {
+        "n": "Omakase Nigiri",
+        "c": "Nigiri"
+      },
+      {
+        "n": "Sashimi (ohne Reis)",
+        "c": "Rohfisch ohne Reis"
+      },
+      {
+        "n": "Temari-Zushi (Ballenform)",
+        "c": "Geformter Reis"
+      },
+      {
+        "n": "Gunkan-Maki (Schlachtschiff)",
+        "c": "Nigiri"
+      },
+      {
+        "n": "Aburi Nigiri (abgeflammt)",
+        "c": "Nigiri"
+      },
+      {
+        "n": "Sushi Burrito",
+        "c": "Fusion"
+      },
+      {
+        "n": "Oshi Sushi (gepresstes Sushi)",
+        "c": "Geformter Reis"
       }
     ]
   },
@@ -2237,6 +3421,126 @@
       {
         "n": "Hostess dreimal ablehnen vor Annahme",
         "c": "China"
+      },
+      {
+        "n": "In Japan: Schale beim Essen hochhalten",
+        "c": "Japan"
+      },
+      {
+        "n": "Rülpsen nach dem Essen als Kompliment",
+        "c": "China/Naher Osten"
+      },
+      {
+        "n": "In Äthiopien: gemeinsam aus einem Teller essen",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "In Saudi-Arabien: Essen nur mit rechter Hand",
+        "c": "Saudi-Arabien"
+      },
+      {
+        "n": "In Indien: Essen mit der rechten Hand (kein Besteck)",
+        "c": "Indien"
+      },
+      {
+        "n": "In Korea: Älteste essen zuerst",
+        "c": "Korea"
+      },
+      {
+        "n": "Tischgebet vor dem Essen (christliche Kulturen)",
+        "c": "USA/Europa"
+      },
+      {
+        "n": "Käse nach dem Dessert (Frankreich)",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Kein Toasten mit Wasser (Deutschland)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Pasta nicht mit Löffel essen (Italien)",
+        "c": "Italien"
+      },
+      {
+        "n": "Capuccino nur zum Frühstück (Italien)",
+        "c": "Italien"
+      },
+      {
+        "n": "Sushi-Ingwer zwischen Fischsorten essen",
+        "c": "Japan"
+      },
+      {
+        "n": "Wasabi nicht in Sojasoße einrühren",
+        "c": "Japan"
+      },
+      {
+        "n": "Hände nach Essen waschen (islamische Etikette)",
+        "c": "Muslimische Welt"
+      },
+      {
+        "n": "Linke Hand beim Essen vermeiden",
+        "c": "Arabisch/Südasiatisch"
+      },
+      {
+        "n": "Serviette auf Schoß, nie am Hemd (Frankreich)",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Messer links legen nach dem Essen (UK)",
+        "c": "Vereinigtes Königreich"
+      },
+      {
+        "n": "Besteck diagonal wenn fertig (Deutschland)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Besteck parallel rechts wenn fertig (USA)",
+        "c": "USA"
+      },
+      {
+        "n": "In Mexiko: Tacos mit Händen, nicht Besteck",
+        "c": "Mexiko"
+      },
+      {
+        "n": "In Thailand: Gabel nur zum Schieben, Löffel zum Essen",
+        "c": "Thailand"
+      },
+      {
+        "n": "Chopstick niemals senkrecht in Reisschüssel",
+        "c": "Japan/China"
+      },
+      {
+        "n": "Essen von anderen Tellern kosten gilt als Einladung",
+        "c": "Spanien/Griechenland"
+      },
+      {
+        "n": "In Georgien: Gastgeber serviert immer zuerst",
+        "c": "Georgien"
+      },
+      {
+        "n": "Mahlzeit erst beginnen wenn alle sitzen (Korea)",
+        "c": "Korea"
+      },
+      {
+        "n": "Keine Diskussionen beim Essen (Japan)",
+        "c": "Japan"
+      },
+      {
+        "n": "Laut schlürfen bei Nudeln gilt als Lob",
+        "c": "Japan"
+      },
+      {
+        "n": "Im Nahen Osten: Gastgeber mehrmals ablehnen bevor annehmen",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Essen mit Brot auftunken gilt als höflich",
+        "c": "Maghreb/Mittelmeer"
+      },
+      {
+        "n": "Fingerfood bei vielen Ländern mit Händen erlaubt",
+        "c": "Weltweit"
       }
     ]
   },
@@ -2328,6 +3632,126 @@
       {
         "n": "Pflanzliche Ernährung als spirituelle Praxis",
         "c": "Buddhismus"
+      },
+      {
+        "n": "Rindfleisch verboten (Hinduismus)",
+        "c": "Hinduistisch"
+      },
+      {
+        "n": "Schweinefleisch verboten (Haram, Islam)",
+        "c": "Islam"
+      },
+      {
+        "n": "Alle Fleisch-Arten verboten (strenges Jainismus)",
+        "c": "Jainismus"
+      },
+      {
+        "n": "Fisch verboten am Freitag (kath. Fasten)",
+        "c": "Kathol. Christentum"
+      },
+      {
+        "n": "Blut und Blutwurst verboten (Kosher/Halal)",
+        "c": "Jüdisch/Islamisch"
+      },
+      {
+        "n": "Alkohol verboten (Islam)",
+        "c": "Islam"
+      },
+      {
+        "n": "Hund-Fleisch gegessen (Korea, Vietnam)",
+        "c": "Kontrovers Asien"
+      },
+      {
+        "n": "Pferdefleisch tabu (USA/UK)",
+        "c": "Westliche Welt"
+      },
+      {
+        "n": "Insekten-Essen tabu (West-Europa/USA)",
+        "c": "Westlich"
+      },
+      {
+        "n": "Katzenfleisch gegessen (traditionell Südchina/Vietnam)",
+        "c": "Asiatisch kontrovers"
+      },
+      {
+        "n": "Krokodil-Fleisch gegessen (Südafrika/Australien)",
+        "c": "Exotisch"
+      },
+      {
+        "n": "Oktopus lebendig gegessen (Korea)",
+        "c": "Kontrovers"
+      },
+      {
+        "n": "Fugu (Kugelfisch) — nur lizenzierte Köche",
+        "c": "Japan"
+      },
+      {
+        "n": "Milch und Fleisch nicht mischen (Kosher)",
+        "c": "Jüdisch"
+      },
+      {
+        "n": "Meeresfrüchte ohne Schuppen verboten (Kosher)",
+        "c": "Jüdisch"
+      },
+      {
+        "n": "Ortolane (Goldammer Singvogel) verboten (EU)",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Haifischflossen-Suppe kontrovers (Tierrechte)",
+        "c": "China/International"
+      },
+      {
+        "n": "Walspeck verboten in vielen Ländern",
+        "c": "International"
+      },
+      {
+        "n": "Kaviar-Export verboten (Beluga, CITES)",
+        "c": "International"
+      },
+      {
+        "n": "Aal verboten als stark gefährdet",
+        "c": "EU-Empfehlung"
+      },
+      {
+        "n": "Khat-Pflanze (kauen) verboten in vielen Ländern",
+        "c": "International"
+      },
+      {
+        "n": "Durian verboten in Hotels/Zügen (Geruch)",
+        "c": "Singapur/Malaysia"
+      },
+      {
+        "n": "Kaugummi verboten in öffentlichen Bereichen",
+        "c": "Singapur"
+      },
+      {
+        "n": "Alkohol verboten (offiziell) in Saudi-Arabien",
+        "c": "Saudi-Arabien"
+      },
+      {
+        "n": "Shrimps in weiten Teilen der Torah verboten",
+        "c": "Jüdisch"
+      },
+      {
+        "n": "Truthahn-Essen nicht überall weltweit üblich",
+        "c": "Kulturell unterschiedlich"
+      },
+      {
+        "n": "Garnelen-Paste verboten für strenge Veganer",
+        "c": "Veganer Tabu"
+      },
+      {
+        "n": "Rotbarsch stark überfischt — Kauf umstritten",
+        "c": "Meeresschutz"
+      },
+      {
+        "n": "Karpfen-Essen in Deutschland/Österreich Tradition — in USA tabu",
+        "c": "Kulturell"
+      },
+      {
+        "n": "Bitterschokolade über 80% — ungenießbar für Kinder",
+        "c": "Geschmackstabu"
       }
     ]
   },
@@ -2419,6 +3843,126 @@
       {
         "n": "Forrest Gump's Shrimps",
         "c": "Kultkino"
+      },
+      {
+        "n": "Chocolat (Vianne's magische Schokolade)",
+        "c": "Juliette Binoche"
+      },
+      {
+        "n": "Julie & Julia (Boeuf Bourguignon)",
+        "c": "Julia Child Biopic"
+      },
+      {
+        "n": "Babettes Gastmahl (Caille en Sarcophage)",
+        "c": "Dänemark 1987"
+      },
+      {
+        "n": "Big Night (Timpano-Pastete)",
+        "c": "Italo-Amerikanisch"
+      },
+      {
+        "n": "La Grande Bouffe (Völlerei bis Tod)",
+        "c": "Frankreich 1973"
+      },
+      {
+        "n": "Eat Drink Man Woman (Kung-Fu-Kochen)",
+        "c": "Ang Lee Taiwan"
+      },
+      {
+        "n": "Like Water for Chocolate (Quail in Rose)",
+        "c": "Mexiko 1992"
+      },
+      {
+        "n": "The Lunchbox (Dabbawala Mumbai)",
+        "c": "Indien 2013"
+      },
+      {
+        "n": "Jiro Dreams of Sushi",
+        "c": "Japan Doku 2011"
+      },
+      {
+        "n": "Spinning Plates (Restaurantdrama)",
+        "c": "USA 2012"
+      },
+      {
+        "n": "Burnt (2 Sterne Koch)",
+        "c": "Bradley Cooper 2015"
+      },
+      {
+        "n": "The Chef, the actor, the scoundrel",
+        "c": "China 2013"
+      },
+      {
+        "n": "The Menu (Fine Dining Horror)",
+        "c": "USA 2022"
+      },
+      {
+        "n": "Boiling Point (Küchenstress)",
+        "c": "UK 2021"
+      },
+      {
+        "n": "Feast of the Seven Fishes",
+        "c": "USA 2019"
+      },
+      {
+        "n": "Willy Wonka und die Schokoladenfabrik",
+        "c": "Gene Wilder 1971"
+      },
+      {
+        "n": "Cloudy with a Chance of Meatballs",
+        "c": "Animation 2009"
+      },
+      {
+        "n": "Chef (Food Truck Film)",
+        "c": "Jon Favreau 2014"
+      },
+      {
+        "n": "Mostly Martha (Bella Martha)",
+        "c": "Deutschland 2001"
+      },
+      {
+        "n": "Woman on Top (Brasilianisch kochen)",
+        "c": "Penélope Cruz"
+      },
+      {
+        "n": "No Reservations (Küchenchefin)",
+        "c": "Catherine Zeta-Jones"
+      },
+      {
+        "n": "Pig (Trüffel und Vergangenheit)",
+        "c": "Nicolas Cage 2021"
+      },
+      {
+        "n": "The Bear (Serie, Fine Dining)",
+        "c": "Hulu 2022"
+      },
+      {
+        "n": "Chef's Table (Netflix-Doku)",
+        "c": "Netflix Doku"
+      },
+      {
+        "n": "Anthony Bourdain: Parts Unknown",
+        "c": "CNN Doku"
+      },
+      {
+        "n": "Noma — My Perfect Storm",
+        "c": "René Redzepi Doku"
+      },
+      {
+        "n": "Salt Fat Acid Heat (Netflix)",
+        "c": "Samin Nosrat"
+      },
+      {
+        "n": "Cooked (Michael Pollan, Netflix)",
+        "c": "Doku"
+      },
+      {
+        "n": "The Final Table (Koch-Wettbewerb)",
+        "c": "Netflix"
+      },
+      {
+        "n": "Ugly Delicious (David Chang)",
+        "c": "Netflix Doku"
       }
     ]
   },
@@ -2510,6 +4054,126 @@
       {
         "n": "Feuerwerk (Schießpulver)",
         "c": "China"
+      },
+      {
+        "n": "Merv (Türkmenistan) — Knotenpunkt",
+        "c": "Zentralasien-Oase"
+      },
+      {
+        "n": "Samarkand — Handelsmetropole",
+        "c": "Usbekistan"
+      },
+      {
+        "n": "Buchara — Karawanserei-Zentrum",
+        "c": "Usbekistan"
+      },
+      {
+        "n": "Dunhuang — Eingang der Jade-Route",
+        "c": "China/Gansu"
+      },
+      {
+        "n": "Kashgar — Wegscheide Ost/West",
+        "c": "Westchina"
+      },
+      {
+        "n": "Antiochien (Antakya) — Westliches Ende",
+        "c": "Türkei/Syrien"
+      },
+      {
+        "n": "Petra — Weihrauch-Handelsknoten",
+        "c": "Jordanien"
+      },
+      {
+        "n": "Palmyra — Karawanenstadt",
+        "c": "Syrien"
+      },
+      {
+        "n": "Baktrien (Balch) — Kreuzung Indus/China",
+        "c": "Afghanistan"
+      },
+      {
+        "n": "Taxila — Eingang nach Indien",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Chang'an (Xi'an) — Östlicher Ausgangspunkt",
+        "c": "China"
+      },
+      {
+        "n": "Ctesiphon — Parthische Metropole",
+        "c": "Irak"
+      },
+      {
+        "n": "Teheran (früh: Ray/Rhages)",
+        "c": "Iran"
+      },
+      {
+        "n": "Hormuz — Seehandel Persischer Golf",
+        "c": "Oman/Iran"
+      },
+      {
+        "n": "Adulis — Afrikanische Einmündung",
+        "c": "Eritrea"
+      },
+      {
+        "n": "Kolkata (Calcutta) — Einfahrt Bengalen",
+        "c": "Indien"
+      },
+      {
+        "n": "Malakka — Seeroute Südostasien",
+        "c": "Malaysia"
+      },
+      {
+        "n": "Quanzhou — Seehafen China Tang/Song",
+        "c": "China/Fujian"
+      },
+      {
+        "n": "Hangzhou — Marco Polo besuchte es",
+        "c": "China"
+      },
+      {
+        "n": "Turfan — Buddhistische Höhlenstadt",
+        "c": "Xinjiang"
+      },
+      {
+        "n": "Lanzhou — Gelber Fluss Überquerung",
+        "c": "Gansu, China"
+      },
+      {
+        "n": "Urgench — Khwarezmisches Reich",
+        "c": "Usbekistan"
+      },
+      {
+        "n": "Nishapur — Islamische Gelehrtenstadt",
+        "c": "Iran"
+      },
+      {
+        "n": "Isfahan — Safawidische Prachtzentrum",
+        "c": "Iran"
+      },
+      {
+        "n": "Tabriz — Mongolischer Stützpunkt",
+        "c": "Iran"
+      },
+      {
+        "n": "Lhasa — Tibetischer Buddhismus",
+        "c": "Tibet"
+      },
+      {
+        "n": "Konstantinopel — Europäisches Tor",
+        "c": "Türkei"
+      },
+      {
+        "n": "Venedig — Westliches Endziel Seehandel",
+        "c": "Italien"
+      },
+      {
+        "n": "Khorasan (Nordostiran) — Hauptroute",
+        "c": "Iran"
+      },
+      {
+        "n": "Transoxanien (Sogdia) — Händlerregion",
+        "c": "Zentralasien"
       }
     ]
   }

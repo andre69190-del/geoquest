@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 270: Datendichte-Fix. 29 kultur.json-Datensaetze auf 40-50 Items skaliert (enklave 10->40, wuesten 50, bruecken 43, gotteshaeuser 41, hafen_world 42, seen_match 43, weinregionen 41 u.v.m.). Spieluebersicht Datenbasis: 51.927 Items. verify: 90/90."
+git commit -m "Phase 271: Full-to-50 Sprint. Alle ausbaufaehigen Arrays auf >=50 Items skaliert (Astro/Geo/Sport/Tech/Tiere/Pflanzen/Gastro/Emob/Archaeologie/Kultur). 70x BETA-Praefixe entfernt. Jersey 15->50, Crest 10->50. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

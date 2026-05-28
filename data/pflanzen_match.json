@@ -145,6 +145,62 @@
       {
         "n": "Asafoetida (Ferula assa-foetida)",
         "c": "Iran / Afghanistan"
+      },
+      {
+        "n": "Muskat",
+        "c": "Indonesien (Banda-Inseln)"
+      },
+      {
+        "n": "Gewürznelken",
+        "c": "Zanzibar / Indonesien"
+      },
+      {
+        "n": "Lorbeer",
+        "c": "Mittelmeerraum"
+      },
+      {
+        "n": "Fenchel",
+        "c": "Mittelmeerraum"
+      },
+      {
+        "n": "Anis",
+        "c": "Mittelmeerraum"
+      },
+      {
+        "n": "Koriander",
+        "c": "Mittelmeerraum / Vorderasien"
+      },
+      {
+        "n": "Kreuzkümmel (Cumin)",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Chili",
+        "c": "Mexiko / Mittelamerika"
+      },
+      {
+        "n": "Asafoetida (Teufelsdreck)",
+        "c": "Iran/Afghanistan"
+      },
+      {
+        "n": "Berbere-Gewürzmischung",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Ras el Hanout",
+        "c": "Nordafrika"
+      },
+      {
+        "n": "Garam Masala",
+        "c": "Indien"
+      },
+      {
+        "n": "Malabar-Kardamom",
+        "c": "Kerala, Indien"
+      },
+      {
+        "n": "Langer Pfeffer (Piper longum)",
+        "c": "Indien/Indonesien"
       }
     ]
   },
@@ -310,6 +366,46 @@
       {
         "n": "Heidelbeere (Vaccinium)",
         "c": "Ericaceae"
+      },
+      {
+        "n": "Olive",
+        "c": "Oleaceae"
+      },
+      {
+        "n": "Kamille",
+        "c": "Asteraceae"
+      },
+      {
+        "n": "Hanf (Cannabis)",
+        "c": "Cannabaceae"
+      },
+      {
+        "n": "Birke (Betula)",
+        "c": "Betulaceae"
+      },
+      {
+        "n": "Linde (Tilia)",
+        "c": "Malvaceae"
+      },
+      {
+        "n": "Mais (Zea mays)",
+        "c": "Poaceae"
+      },
+      {
+        "n": "Sellerie (Apium)",
+        "c": "Apiaceae"
+      },
+      {
+        "n": "Petersilie",
+        "c": "Apiaceae"
+      },
+      {
+        "n": "Lärche",
+        "c": "Pinaceae"
+      },
+      {
+        "n": "Stechpalme (Ilex)",
+        "c": "Aquifoliaceae"
       }
     ]
   },
@@ -461,6 +557,66 @@
       {
         "n": "Bergenia (Bergenien)",
         "c": "Frühling"
+      },
+      {
+        "n": "Kirschbaum (Prunus avium)",
+        "c": "Frühling"
+      },
+      {
+        "n": "Apfelbaum",
+        "c": "Frühling"
+      },
+      {
+        "n": "Scharbockskraut",
+        "c": "Frühling"
+      },
+      {
+        "n": "Tulpe",
+        "c": "Frühling"
+      },
+      {
+        "n": "Holunder (Schwarzer)",
+        "c": "Frühsommer"
+      },
+      {
+        "n": "Rose (Heckenrose)",
+        "c": "Frühsommer"
+      },
+      {
+        "n": "Kamille",
+        "c": "Sommer"
+      },
+      {
+        "n": "Basilikum",
+        "c": "Sommer"
+      },
+      {
+        "n": "Sommer-Flieder (Schmetterlingsflieder)",
+        "c": "Sommer"
+      },
+      {
+        "n": "Herbst-Anemone",
+        "c": "Herbst"
+      },
+      {
+        "n": "Alpenveilchen (Cyclamen)",
+        "c": "August–November"
+      },
+      {
+        "n": "Sommer-Linde (Tilia platyphyllos)",
+        "c": "Juni–Juli"
+      },
+      {
+        "n": "Rotklee (Trifolium pratense)",
+        "c": "Mai–September"
+      },
+      {
+        "n": "Kornblume (Centaurea cyanus)",
+        "c": "Juni–August"
+      },
+      {
+        "n": "Eibe (Taxus baccata)",
+        "c": "Februar–März"
       }
     ]
   },
@@ -618,6 +774,54 @@
       {
         "n": "Convallatoxin aus dem Maiglöckchen (Herz)",
         "c": "Herzglycosid"
+      },
+      {
+        "n": "Maiglöckchen (Convallaria)",
+        "c": "Convallatoxin"
+      },
+      {
+        "n": "Aronstab (Arum maculatum)",
+        "c": "Saponine + Calciumoxalat"
+      },
+      {
+        "n": "Pfaffenhütchen (Euonymus)",
+        "c": "Evonimoside"
+      },
+      {
+        "n": "Blauer Eisenhut (Aconitum)",
+        "c": "Aconitin"
+      },
+      {
+        "n": "Einbeere (Paris quadrifolia)",
+        "c": "Paristyphin"
+      },
+      {
+        "n": "Stechapfel (Datura)",
+        "c": "Scopolamin"
+      },
+      {
+        "n": "Seidelbast (Daphne)",
+        "c": "Daphnin + Mezerein"
+      },
+      {
+        "n": "Aconitine",
+        "c": "Eisenhut (Aconitum)"
+      },
+      {
+        "n": "Taxin",
+        "c": "Eibe (Taxus)"
+      },
+      {
+        "n": "Ricin",
+        "c": "Rizinus (Ricinus communis)"
+      },
+      {
+        "n": "Solanin",
+        "c": "Kartoffelgrün, grüne Tomaten"
+      },
+      {
+        "n": "Atropin",
+        "c": "Tollkirsche (Atropa belladonna)"
       }
     ]
   },
@@ -745,6 +949,90 @@
       {
         "n": "Erbse",
         "c": "Hülsenfrucht"
+      },
+      {
+        "n": "Eichel",
+        "c": "Nuss"
+      },
+      {
+        "n": "Hasel",
+        "c": "Nuss"
+      },
+      {
+        "n": "Mais",
+        "c": "Karyopse (Getreidefrucht)"
+      },
+      {
+        "n": "Weizen",
+        "c": "Karyopse"
+      },
+      {
+        "n": "Reis",
+        "c": "Karyopse"
+      },
+      {
+        "n": "Sonnenblume",
+        "c": "Achäne"
+      },
+      {
+        "n": "Mandel",
+        "c": "Steinfrucht (Nuss)"
+      },
+      {
+        "n": "Aprikose",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Orange",
+        "c": "Hesperidium"
+      },
+      {
+        "n": "Granatapfel",
+        "c": "Balausta"
+      },
+      {
+        "n": "Kürbis",
+        "c": "Panzerbeere"
+      },
+      {
+        "n": "Ananas",
+        "c": "Fruchtzapfen (Sorosis)"
+      },
+      {
+        "n": "Klausenfrucht",
+        "c": "Lippenblütler (z.B. Salbei, Minze)"
+      },
+      {
+        "n": "Achäne",
+        "c": "Korbblütler (z.B. Sonnenblume)"
+      },
+      {
+        "n": "Karyopse",
+        "c": "Süßgräser (z.B. Weizen, Mais)"
+      },
+      {
+        "n": "Balg",
+        "c": "Hahnenfußgewächse (z.B. Eisenhut)"
+      },
+      {
+        "n": "Hülse",
+        "c": "Hülsenfrüchtler (z.B. Erbse, Bohne)"
+      },
+      {
+        "n": "Schote",
+        "c": "Kreuzblütengewächse (z.B. Kohl)"
+      },
+      {
+        "n": "Schötchen",
+        "c": "Kreuzblütler (z.B. Hirtentäschel)"
+      },
+      {
+        "n": "Silique (Schote)",
+        "c": "Brassicaceae"
+      },
+      {
+        "n": "Steinfrucht (Drupe)",
+        "c": "Kirschen, Pflaumen, Pfirsich"
       }
     ]
   },
@@ -896,6 +1184,66 @@
       {
         "n": "Agave",
         "c": "Einmal-Blüte + Ableger (vegetativ)"
+      },
+      {
+        "n": "Aufleber (Gunnera)",
+        "c": "Adventivknospen"
+      },
+      {
+        "n": "Agave (Totblüher)",
+        "c": "Bulbillen"
+      },
+      {
+        "n": "Bromelie",
+        "c": "Ausläufer"
+      },
+      {
+        "n": "Weidenkätzchen",
+        "c": "Bestäubung durch Wind"
+      },
+      {
+        "n": "Mistel",
+        "c": "Endozoochorie (Vögel)"
+      },
+      {
+        "n": "Klette",
+        "c": "Epizoochorie (Fell-Haken)"
+      },
+      {
+        "n": "Eiche",
+        "c": "Zoochorie (Eichelhäher)"
+      },
+      {
+        "n": "Ahorn",
+        "c": "Windausbreitung (Flügelfrucht)"
+      },
+      {
+        "n": "Pusteblume (Löwenzahn)",
+        "c": "Anemochorie (Schirm)"
+      },
+      {
+        "n": "Orchidee",
+        "c": "Kleinstsamen Wind"
+      },
+      {
+        "n": "Efeu",
+        "c": "Endozoochorie + Vegetativ"
+      },
+      {
+        "n": "Wiesenknopf",
+        "c": "Windausbreitung"
+      },
+      {
+        "n": "Spargel",
+        "c": "Rhizom"
+      },
+      {
+        "n": "Minze",
+        "c": "Ausläufer"
+      },
+      {
+        "n": "Ableger (Layering)",
+        "c": "Ast berührt Boden, bildet Wurzeln"
       }
     ]
   },
@@ -1061,6 +1409,46 @@
       {
         "n": "Kauri-Baum (Agathis)",
         "c": "Neuseeland Urwald"
+      },
+      {
+        "n": "Alpenrose (Rhododendron)",
+        "c": "Hochgebirge"
+      },
+      {
+        "n": "Seekiefer (Pinus pinaster)",
+        "c": "Küstenwald"
+      },
+      {
+        "n": "Eukalyptus",
+        "c": "Savanne"
+      },
+      {
+        "n": "Schilf (Phragmites australis)",
+        "c": "Feuchtgebiet"
+      },
+      {
+        "n": "Wüstenrose (Adenium obesum)",
+        "c": "Wüste"
+      },
+      {
+        "n": "Torfmoos (Sphagnum)",
+        "c": "Moor"
+      },
+      {
+        "n": "Kelp (Macrocystis)",
+        "c": "Ozean"
+      },
+      {
+        "n": "Weißtanne (Abies alba)",
+        "c": "Bergwald"
+      },
+      {
+        "n": "Zuckerrohr (Saccharum officinarum)",
+        "c": "Tropen"
+      },
+      {
+        "n": "Strandhafer (Ammophila)",
+        "c": "Dünen"
       }
     ]
   },
@@ -1148,6 +1536,130 @@
       {
         "n": "Durian",
         "c": "Fledermäuse"
+      },
+      {
+        "n": "Kakao-Baum (Theobroma)",
+        "c": "Zuckmücken"
+      },
+      {
+        "n": "Feige (Ficus carica)",
+        "c": "Feigenwespe"
+      },
+      {
+        "n": "Yucca-Palme",
+        "c": "Yucca-Motte"
+      },
+      {
+        "n": "Vanille (Vanilla planifolia)",
+        "c": "Manuell / Kolibri"
+      },
+      {
+        "n": "Nachtkerze (Oenothera)",
+        "c": "Nachtfalter"
+      },
+      {
+        "n": "Agave (Agave tequilana)",
+        "c": "Langnasenfledermaus"
+      },
+      {
+        "n": "Passionsblume (Passiflora)",
+        "c": "Hummeln"
+      },
+      {
+        "n": "Durian (Durio zibethinus)",
+        "c": "Fledermäuse"
+      },
+      {
+        "n": "Zuckerrohr (Saccharum)",
+        "c": "Wind"
+      },
+      {
+        "n": "Eiche (Quercus)",
+        "c": "Wind"
+      },
+      {
+        "n": "Mais (Zea mays)",
+        "c": "Wind"
+      },
+      {
+        "n": "Kokosnuss (Cocos nucifera)",
+        "c": "Wind / Käfer"
+      },
+      {
+        "n": "Birke (Betula)",
+        "c": "Wind"
+      },
+      {
+        "n": "Hasel (Corylus avellana)",
+        "c": "Wind"
+      },
+      {
+        "n": "Kiwi (Actinidia deliciosa)",
+        "c": "Bienen"
+      },
+      {
+        "n": "Kürbis (Cucurbita)",
+        "c": "Bienen / Hummeln"
+      },
+      {
+        "n": "Erdbeere (Fragaria)",
+        "c": "Bienen"
+      },
+      {
+        "n": "Apfel (Malus domestica)",
+        "c": "Bienen"
+      },
+      {
+        "n": "Mandel (Prunus dulcis)",
+        "c": "Bienen"
+      },
+      {
+        "n": "Linde (Tilia)",
+        "c": "Bienen / Wespen"
+      },
+      {
+        "n": "Kakaobaum (Theobroma cacao)",
+        "c": "Mücken (Gnitzen)"
+      },
+      {
+        "n": "Vanille",
+        "c": "Bienen / manuell"
+      },
+      {
+        "n": "Agave",
+        "c": "Fledermäuse"
+      },
+      {
+        "n": "Feigenbaum",
+        "c": "Feigenwespen"
+      },
+      {
+        "n": "Roter Ingwer",
+        "c": "Vögel"
+      },
+      {
+        "n": "Eibe (Taxus)",
+        "c": "Wind"
+      },
+      {
+        "n": "Buche (Fagus sylvatica)",
+        "c": "Wind"
+      },
+      {
+        "n": "Nachtviole (Hesperis)",
+        "c": "Nachtfalter"
+      },
+      {
+        "n": "Rafflesia arnoldii",
+        "c": "Fliegen (Aas-Duft)"
+      },
+      {
+        "n": "Linde (Tilia cordata)",
+        "c": "Bienen"
+      },
+      {
+        "n": "Raps (Brassica napus)",
+        "c": "Bienen"
       }
     ]
   },
@@ -1305,6 +1817,54 @@
       {
         "n": "Sonnenblume (Helianthus annuus)",
         "c": "Nordamerika"
+      },
+      {
+        "n": "Schokolade (Kakao)",
+        "c": "Mittelamerika"
+      },
+      {
+        "n": "Erdnuss",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Soja",
+        "c": "Asien"
+      },
+      {
+        "n": "Zuckerrohr",
+        "c": "Asien"
+      },
+      {
+        "n": "Gerste",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Feige",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Kaffee (Coffea arabica)",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Paprika",
+        "c": "Mittelamerika"
+      },
+      {
+        "n": "Zucchini",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Heidelbeere",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Mango",
+        "c": "Südasien"
+      },
+      {
+        "n": "Süßkartoffel",
+        "c": "Mittelamerika"
       }
     ]
   },
@@ -1396,6 +1956,126 @@
       {
         "n": "Pelargonie",
         "c": "Zierpflanze"
+      },
+      {
+        "n": "Quinine-Baum (Cinchona officinalis)",
+        "c": "Medizin (Malaria)"
+      },
+      {
+        "n": "Lein (Linum usitatissimum)",
+        "c": "Textilfaser"
+      },
+      {
+        "n": "Bambus",
+        "c": "Baustoff / Nahrung"
+      },
+      {
+        "n": "Jute (Corchorus capsularis)",
+        "c": "Textilfaser"
+      },
+      {
+        "n": "Sisalagave (Agave sisalana)",
+        "c": "Seile / Textilfaser"
+      },
+      {
+        "n": "Kokosnuss (Cocos nucifera)",
+        "c": "Nahrung / Schmiermittel"
+      },
+      {
+        "n": "Zuckerrübe (Beta vulgaris)",
+        "c": "Zucker / Ethanol"
+      },
+      {
+        "n": "Ölpalme (Elaeis guineensis)",
+        "c": "Pflanzenöl"
+      },
+      {
+        "n": "Soja (Glycine max)",
+        "c": "Protein / Tierfutter"
+      },
+      {
+        "n": "Tabak (Nicotiana tabacum)",
+        "c": "Genussmittel"
+      },
+      {
+        "n": "Koka (Erythroxylum coca)",
+        "c": "Medizin / Kokain-Rohstoff"
+      },
+      {
+        "n": "Weide (Salix)",
+        "c": "Aspirin-Quelle / Korbflechten"
+      },
+      {
+        "n": "Stevia (Stevia rebaudiana)",
+        "c": "Süßungsmittel"
+      },
+      {
+        "n": "Guarana (Paullinia cupana)",
+        "c": "Koffein-Lieferant"
+      },
+      {
+        "n": "Miscanthus (Elefantengras)",
+        "c": "Bioenergie"
+      },
+      {
+        "n": "Raps (Brassica napus)",
+        "c": "Speiseöl / Biodiesel"
+      },
+      {
+        "n": "Zucker-Ahorn (Acer saccharum)",
+        "c": "Ahornsirup"
+      },
+      {
+        "n": "Sanddorn (Hippophae rhamnoides)",
+        "c": "Vitamin C / Saft"
+      },
+      {
+        "n": "Morinda officinalis (Noni-Baum)",
+        "c": "Medizin (traditionell)"
+      },
+      {
+        "n": "Echinacea purpurea",
+        "c": "Medizin / Pharmazie"
+      },
+      {
+        "n": "Leinen (Flachs)",
+        "c": "Textilfaser"
+      },
+      {
+        "n": "Weide (Salix alba)",
+        "c": "Medizin (Salicin)"
+      },
+      {
+        "n": "Latex (Hevea brasiliensis)",
+        "c": "Gummi-Herstellung"
+      },
+      {
+        "n": "Quinoa",
+        "c": "Nahrungsmittel (Pseudogetreide)"
+      },
+      {
+        "n": "Moringa oleifera",
+        "c": "Nahrung / Wasserreinigung"
+      },
+      {
+        "n": "Neem (Azadirachta indica)",
+        "c": "Pestizid / Medizin"
+      },
+      {
+        "n": "Aloe vera",
+        "c": "Kosmetik / Medizin"
+      },
+      {
+        "n": "Stevia rebaudiana",
+        "c": "Süßungsmittel"
+      },
+      {
+        "n": "Fliegenfalle (Dionaea)",
+        "c": "Insektivorie"
+      },
+      {
+        "n": "Hanf (Cannabis, medizinisch)",
+        "c": "Medizin / Pharmazie"
       }
     ]
   },
@@ -1487,6 +2167,126 @@
       {
         "n": "Holunder",
         "c": "Gefiedert"
+      },
+      {
+        "n": "Eukalyptus",
+        "c": "Lanzettlich"
+      },
+      {
+        "n": "Ahorn (Spitz)",
+        "c": "Handförmig gelappt"
+      },
+      {
+        "n": "Eiche",
+        "c": "Buchtenförmig"
+      },
+      {
+        "n": "Ginkgo",
+        "c": "Fächerförmig"
+      },
+      {
+        "n": "Rosskastanie",
+        "c": "Fingerförmig (5-7 Blättchen)"
+      },
+      {
+        "n": "Birke",
+        "c": "Dreieckig / Rautenförmig"
+      },
+      {
+        "n": "Lorbeer",
+        "c": "Elliptisch"
+      },
+      {
+        "n": "Banane",
+        "c": "Länglich / Riesenblatt"
+      },
+      {
+        "n": "Monstera deliciosa",
+        "c": "Durchlöchert / Gelappt"
+      },
+      {
+        "n": "Bambus",
+        "c": "Linealisch / Grasartig"
+      },
+      {
+        "n": "Feige",
+        "c": "Tief 3-5 gelappt"
+      },
+      {
+        "n": "Platane",
+        "c": "Handförmig 5-gelappt"
+      },
+      {
+        "n": "Eibe",
+        "c": "Linealisch, zweizeilig"
+      },
+      {
+        "n": "Palmfarn",
+        "c": "Gefiedert"
+      },
+      {
+        "n": "Spinat",
+        "c": "Oval / Dreieckig-rhombisch"
+      },
+      {
+        "n": "Kleeblatt",
+        "c": "Dreizählig"
+      },
+      {
+        "n": "Sonnenblume",
+        "c": "Herzförmig / Groß"
+      },
+      {
+        "n": "Wolliger Schneeknöterich",
+        "c": "Oval / Wollig"
+      },
+      {
+        "n": "Linde (Tilia)",
+        "c": "Herzförmig"
+      },
+      {
+        "n": "Ahorn (Acer)",
+        "c": "Gelappt"
+      },
+      {
+        "n": "Wein (Vitis vinifera)",
+        "c": "Gelappt"
+      },
+      {
+        "n": "Efeu (Hedera helix)",
+        "c": "Gelappt"
+      },
+      {
+        "n": "Rosskastanie (Aesculus)",
+        "c": "Gefiedert"
+      },
+      {
+        "n": "Esche (Fraxinus)",
+        "c": "Gefiedert"
+      },
+      {
+        "n": "Magnolie",
+        "c": "Oval"
+      },
+      {
+        "n": "Eukalyptus (jung)",
+        "c": "Rund"
+      },
+      {
+        "n": "Eukalyptus (ausgewachsen)",
+        "c": "Lanzettlich"
+      },
+      {
+        "n": "Gras (Poaceae)",
+        "c": "Linealisch"
+      },
+      {
+        "n": "Zwiebel (Allium)",
+        "c": "Röhrenförmig"
+      },
+      {
+        "n": "Kiefer (Pinus)",
+        "c": "Nadelförmig"
       }
     ]
   },
@@ -1658,6 +2458,46 @@
       {
         "n": "Schneerose (Helleborus niger)",
         "c": "Gemäßigt-bergig"
+      },
+      {
+        "n": "Pinie (Pinus pinea)",
+        "c": "Mediterran"
+      },
+      {
+        "n": "Kaktus (Saguaro, Carnegiea gigantea)",
+        "c": "Trocken"
+      },
+      {
+        "n": "Mandschurische Eiche",
+        "c": "Gemässigt"
+      },
+      {
+        "n": "Birke (Betula pendula)",
+        "c": "Gemässigt"
+      },
+      {
+        "n": "Taiga-Lärche",
+        "c": "Boreal"
+      },
+      {
+        "n": "Araukarie (Monkey Puzzle)",
+        "c": "Gemässigt"
+      },
+      {
+        "n": "Alpenenzian (Gentiana acaulis)",
+        "c": "Alpin"
+      },
+      {
+        "n": "Mangrove (Rhizophora)",
+        "c": "Tropisch"
+      },
+      {
+        "n": "Arktische Weide (Salix arctica)",
+        "c": "Polar"
+      },
+      {
+        "n": "Lärche (Larix decidua)",
+        "c": "Boreal"
       }
     ]
   },
@@ -1749,6 +2589,126 @@
       {
         "n": "Wacholderfrucht",
         "c": "Zapfen"
+      },
+      {
+        "n": "Quitte",
+        "c": "Scheinfrucht (Blütenboden)"
+      },
+      {
+        "n": "Feige",
+        "c": "Scheinfrucht (Blütenstandsachse)"
+      },
+      {
+        "n": "Ananas",
+        "c": "Scheinfrucht (Blütenstand-Synkarp)"
+      },
+      {
+        "n": "Nashi-Birne",
+        "c": "Scheinfrucht"
+      },
+      {
+        "n": "Cashew (Scheinfrucht + echte Nuss)",
+        "c": "Scheinfrucht"
+      },
+      {
+        "n": "Pfirsich",
+        "c": "Echte Frucht (Steinfrucht)"
+      },
+      {
+        "n": "Himbeere",
+        "c": "Echte Frucht (Sammelsteinfrucht)"
+      },
+      {
+        "n": "Heidelbeere",
+        "c": "Echte Frucht (Beere)"
+      },
+      {
+        "n": "Orange",
+        "c": "Echte Frucht (Hesperidium)"
+      },
+      {
+        "n": "Wassermelone",
+        "c": "Echte Frucht (Panzerbeere)"
+      },
+      {
+        "n": "Traube",
+        "c": "Echte Frucht (Beere)"
+      },
+      {
+        "n": "Gurke",
+        "c": "Echte Frucht (Panzerbeere)"
+      },
+      {
+        "n": "Zucchini",
+        "c": "Echte Frucht (Panzerbeere)"
+      },
+      {
+        "n": "Banane",
+        "c": "Echte Frucht (Beere)"
+      },
+      {
+        "n": "Mango",
+        "c": "Echte Frucht (Steinfrucht)"
+      },
+      {
+        "n": "Mandarine",
+        "c": "Echte Frucht (Hesperidium)"
+      },
+      {
+        "n": "Kiwi",
+        "c": "Echte Frucht (Beere)"
+      },
+      {
+        "n": "Granatapfel",
+        "c": "Echte Frucht (Balausta)"
+      },
+      {
+        "n": "Papaya",
+        "c": "Echte Frucht (Beere)"
+      },
+      {
+        "n": "Kokosnuss",
+        "c": "Echte Frucht (Steinfrucht)"
+      },
+      {
+        "n": "Zwetschge",
+        "c": "Echte Frucht (Steinfrucht)"
+      },
+      {
+        "n": "Artischocke",
+        "c": "Blütenboden (Receptaculum)"
+      },
+      {
+        "n": "Kaki-Pflaume",
+        "c": "Beere (echte Frucht, oft verwechselt)"
+      },
+      {
+        "n": "Holunderbeere",
+        "c": "Steinfrucht (echter Fruchtyp)"
+      },
+      {
+        "n": "Schlehe",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Kornelkirsche",
+        "c": "Steinfrucht"
+      },
+      {
+        "n": "Berberitze",
+        "c": "Beere"
+      },
+      {
+        "n": "Vogelbeere (Eberesche)",
+        "c": "Sammelnussfrucht (Apfelfrucht)"
+      },
+      {
+        "n": "Quitten",
+        "c": "Apfelfrucht (Scheinfrucht)"
+      },
+      {
+        "n": "Mispel (Mespilus germanica)",
+        "c": "Apfelfrucht"
       }
     ]
   },
@@ -1835,6 +2795,126 @@
       {
         "n": "Esskastanie",
         "c": "2011"
+      },
+      {
+        "n": "Winterlinde",
+        "c": "2016"
+      },
+      {
+        "n": "Edelkastanie",
+        "c": "2018"
+      },
+      {
+        "n": "Robinie",
+        "c": "2020"
+      },
+      {
+        "n": "Silberweide",
+        "c": "2021"
+      },
+      {
+        "n": "Feldahorn",
+        "c": "2024"
+      },
+      {
+        "n": "Moorbirke (Moorbirke des Jahres)",
+        "c": "2000"
+      },
+      {
+        "n": "Eibe",
+        "c": "1994"
+      },
+      {
+        "n": "Hainbuche (Weißbuche)",
+        "c": "1996"
+      },
+      {
+        "n": "Elsbeere",
+        "c": "1993"
+      },
+      {
+        "n": "Walnuss",
+        "c": "2008"
+      },
+      {
+        "n": "Österreichische Schwarzkiefer",
+        "c": "2000"
+      },
+      {
+        "n": "Gemeine Esche",
+        "c": "2001"
+      },
+      {
+        "n": "Schwarzerle",
+        "c": "2003"
+      },
+      {
+        "n": "Weißtanne",
+        "c": "2004"
+      },
+      {
+        "n": "Sanddorn",
+        "c": "2007 (Strauch des Jahres)"
+      },
+      {
+        "n": "Douglasie",
+        "c": "2015"
+      },
+      {
+        "n": "Bergulme",
+        "c": "2005"
+      },
+      {
+        "n": "Wildbirne",
+        "c": "2013"
+      },
+      {
+        "n": "Traubeneiche (Eiche)",
+        "c": "2014"
+      },
+      {
+        "n": "Stechpalme",
+        "c": "2021 (Baum Ö)"
+      },
+      {
+        "n": "Grauerle",
+        "c": "2010"
+      },
+      {
+        "n": "Atlaszeder (Baum des Jahres A)",
+        "c": "2024"
+      },
+      {
+        "n": "Baum des Jahres 2024",
+        "c": "Traubeneiche (Quercus petraea)"
+      },
+      {
+        "n": "Baum des Jahres 2025",
+        "c": "Bergulme (Ulmus glabra)"
+      },
+      {
+        "n": "Baum des Jahres 2023",
+        "c": "Speierling (Sorbus domestica)"
+      },
+      {
+        "n": "Baum des Jahres 2020",
+        "c": "Robinie (Robinia pseudoacacia)"
+      },
+      {
+        "n": "Baum des Jahres 2019",
+        "c": "Flatterulme (Ulmus laevis)"
+      },
+      {
+        "n": "Baum des Jahres 2018",
+        "c": "Moorbirke (Betula pubescens)"
+      },
+      {
+        "n": "Baum des Jahres 2017",
+        "c": "Küstentanne (Abies grandis)"
+      },
+      {
+        "n": "Baum des Jahres 2016",
+        "c": "Sandbirke (Betula pendula)"
       }
     ]
   },
@@ -1921,6 +3001,126 @@
       {
         "n": "Stechpalme (Ilex aquifolium)",
         "c": "2025"
+      },
+      {
+        "n": "Herbstzeitlose",
+        "c": "2010"
+      },
+      {
+        "n": "Aronstab",
+        "c": "2011"
+      },
+      {
+        "n": "Einbeere",
+        "c": "2013"
+      },
+      {
+        "n": "Schwarzer Nachtschatten",
+        "c": "2015"
+      },
+      {
+        "n": "Herbstzeitlose (nochmalige Nominierung)",
+        "c": "2016"
+      },
+      {
+        "n": "Jakobs-Greiskraut",
+        "c": "2013"
+      },
+      {
+        "n": "Gemeiner Efeu",
+        "c": "2010"
+      },
+      {
+        "n": "Maiglöckchen",
+        "c": "2014"
+      },
+      {
+        "n": "Große Brennnessel (Nicht giftig)",
+        "c": "2022"
+      },
+      {
+        "n": "Stechpalme (Ilex)",
+        "c": "2019"
+      },
+      {
+        "n": "Gemeines Bilsenkraut",
+        "c": "2020"
+      },
+      {
+        "n": "Alraune (Mandragora)",
+        "c": "2018"
+      },
+      {
+        "n": "Scharfer Hahnenfuß",
+        "c": "2017"
+      },
+      {
+        "n": "Fingerhutkraut (Digitalis)",
+        "c": "2016"
+      },
+      {
+        "n": "Goldregen",
+        "c": "2012"
+      },
+      {
+        "n": "Schierling (Wasserschierling)",
+        "c": "2007"
+      },
+      {
+        "n": "Mohn (Opiumwein Schlafmohn)",
+        "c": "2019"
+      },
+      {
+        "n": "Henbane (Bilsenkraut)",
+        "c": "2020"
+      },
+      {
+        "n": "Haselwurz (Asarum)",
+        "c": "2009"
+      },
+      {
+        "n": "Seidelbast (Daphne)",
+        "c": "2008"
+      },
+      {
+        "n": "Hundspetersilie (Aethusa cynapium)",
+        "c": "2006"
+      },
+      {
+        "n": "Großer Klettenkerbel (Anthriscus sylvestris)",
+        "c": "2005"
+      },
+      {
+        "n": "Gemeiner Efeu (Hedera helix)",
+        "c": "2004"
+      },
+      {
+        "n": "Gefleckter Schierling (Conium maculatum)",
+        "c": "2003"
+      },
+      {
+        "n": "Pfaffenhütchen (Euonymus)",
+        "c": "2002"
+      },
+      {
+        "n": "Stechender Mäusedorn",
+        "c": "2001"
+      },
+      {
+        "n": "Gemeines Bilsenkraut (Hyoscyamus niger)",
+        "c": "2000"
+      },
+      {
+        "n": "Herbstzeitlose (Colchicum)",
+        "c": "1999"
+      },
+      {
+        "n": "Adlerfarn (Pteridium aquilinum)",
+        "c": "1998"
+      },
+      {
+        "n": "Tollkirsche (Belladonna)",
+        "c": "2021"
       }
     ]
   }

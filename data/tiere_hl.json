@@ -158,6 +158,50 @@
       {
         "name": "Markhor (Schraubenziegen-Bock)",
         "val": 110
+      },
+      {
+        "name": "Nilpferd (Flusspferd)",
+        "val": 3500
+      },
+      {
+        "name": "Gaur (Indischer Bison)",
+        "val": 1500
+      },
+      {
+        "name": "Eisbär (Männchen)",
+        "val": 800
+      },
+      {
+        "name": "Moschusochse",
+        "val": 400
+      },
+      {
+        "name": "Eurasischer Elch",
+        "val": 700
+      },
+      {
+        "name": "Tapir (Südamerikanisch)",
+        "val": 300
+      },
+      {
+        "name": "Eland-Antilope",
+        "val": 900
+      },
+      {
+        "name": "Gnu",
+        "val": 270
+      },
+      {
+        "name": "Afrikanische Elefantenschildkröte",
+        "val": 300
+      },
+      {
+        "name": "Gaur (Wildbüffel)",
+        "val": 1000
+      },
+      {
+        "name": "Kodiak-Bär",
+        "val": 680
       }
     ]
   },
@@ -324,6 +368,46 @@
       {
         "name": "Kokosnuss-Krabbe (Birgus latro)",
         "val": 4
+      },
+      {
+        "name": "Großer Hammerhai",
+        "val": 580
+      },
+      {
+        "name": "Orca (Orcinus orca)",
+        "val": 5600
+      },
+      {
+        "name": "Beluga-Wal",
+        "val": 1600
+      },
+      {
+        "name": "Narwal",
+        "val": 1600
+      },
+      {
+        "name": "Delfin (Großer Tümmler)",
+        "val": 300
+      },
+      {
+        "name": "Seelöwe (Kalifornisch)",
+        "val": 300
+      },
+      {
+        "name": "Stellersche Seekuh (ausgestorben)",
+        "val": 8000
+      },
+      {
+        "name": "Gewöhnlicher Krake (Octopus vulgaris)",
+        "val": 10
+      },
+      {
+        "name": "Manatee (Seekuh)",
+        "val": 590
+      },
+      {
+        "name": "Grönlandwal",
+        "val": 100000
       }
     ]
   },
@@ -486,6 +570,50 @@
       {
         "name": "Dromedar (Renntempo)",
         "val": 65
+      },
+      {
+        "name": "Wildebeest (Gnu)",
+        "val": 80
+      },
+      {
+        "name": "Quarter Horse",
+        "val": 88
+      },
+      {
+        "name": "Cape Hunting Dog (Wildhund)",
+        "val": 72
+      },
+      {
+        "name": "Gepard (Betriebsgeschwindigkeit)",
+        "val": 120
+      },
+      {
+        "name": "Strauß",
+        "val": 70
+      },
+      {
+        "name": "Elch (Sprint)",
+        "val": 56
+      },
+      {
+        "name": "Springbock (Antilocapra)",
+        "val": 88
+      },
+      {
+        "name": "Gepard (Dauerlauf)",
+        "val": 72
+      },
+      {
+        "name": "Wildhund (Afrikanischer)",
+        "val": 70
+      },
+      {
+        "name": "Kap-Büffelherde (Kurzspurt)",
+        "val": 57
+      },
+      {
+        "name": "Amerikanischer Gabelbock",
+        "val": 88
       }
     ]
   },
@@ -652,6 +780,46 @@
       {
         "name": "Bussard (Buteo buteo, sinkend)",
         "val": 70
+      },
+      {
+        "name": "Alpensegler (Apus melba)",
+        "val": 170
+      },
+      {
+        "name": "Große Meerente (Somateria)",
+        "val": 76
+      },
+      {
+        "name": "Kanada-Gans",
+        "val": 90
+      },
+      {
+        "name": "Weißstorch",
+        "val": 80
+      },
+      {
+        "name": "Kolibri (Hovering)",
+        "val": 49
+      },
+      {
+        "name": "Silbermöwe",
+        "val": 55
+      },
+      {
+        "name": "Fischadler (Sturzflug)",
+        "val": 130
+      },
+      {
+        "name": "Goldadler (Sturzflug)",
+        "val": 250
+      },
+      {
+        "name": "Falke (Sakerfalke)",
+        "val": 200
+      },
+      {
+        "name": "Taucher (Sturzflug)",
+        "val": 140
       }
     ]
   },
@@ -738,6 +906,126 @@
       {
         "name": "Seepferdchen",
         "val": 0.0015
+      },
+      {
+        "name": "Atlantischer Thunfisch",
+        "val": 72
+      },
+      {
+        "name": "Blauflossenthunfisch",
+        "val": 70
+      },
+      {
+        "name": "Großer Weißer Hai",
+        "val": 56
+      },
+      {
+        "name": "Blauwale (Sprint)",
+        "val": 48
+      },
+      {
+        "name": "Delphin (Gemein)",
+        "val": 55
+      },
+      {
+        "name": "Orca (Sprint)",
+        "val": 56
+      },
+      {
+        "name": "Pinguin (unter Wasser)",
+        "val": 36
+      },
+      {
+        "name": "Krokodil (kurz)",
+        "val": 32
+      },
+      {
+        "name": "Seeotter",
+        "val": 9
+      },
+      {
+        "name": "Walross",
+        "val": 35
+      },
+      {
+        "name": "Leistenkrokodil",
+        "val": 29
+      },
+      {
+        "name": "Flussotter",
+        "val": 12
+      },
+      {
+        "name": "Robbenhai",
+        "val": 40
+      },
+      {
+        "name": "Tümmler",
+        "val": 50
+      },
+      {
+        "name": "Hammerhai",
+        "val": 40
+      },
+      {
+        "name": "Tigerfisch (Goliath)",
+        "val": 65
+      },
+      {
+        "name": "Barrakuda",
+        "val": 60
+      },
+      {
+        "name": "Pilot-Wal",
+        "val": 48
+      },
+      {
+        "name": "Atlantischer Weißer Hai",
+        "val": 56
+      },
+      {
+        "name": "Wahoo (Königsmakrele)",
+        "val": 77
+      },
+      {
+        "name": "Bonito (Echter)",
+        "val": 64
+      },
+      {
+        "name": "Atlantischer Blauflossenthun",
+        "val": 74
+      },
+      {
+        "name": "Gewöhnlicher Delphin",
+        "val": 64
+      },
+      {
+        "name": "Orca (Killerwal, Sprint)",
+        "val": 56
+      },
+      {
+        "name": "Seehund (Steller)",
+        "val": 32
+      },
+      {
+        "name": "Atlantischer Blaubarsch (Striped Bass)",
+        "val": 40
+      },
+      {
+        "name": "Roter Thunfisch",
+        "val": 70
+      },
+      {
+        "name": "Dolphin (Tursiops)",
+        "val": 60
+      },
+      {
+        "name": "Tigerhai",
+        "val": 53
+      },
+      {
+        "name": "Atlantischer Lachs (Stromschnellen)",
+        "val": 34
       }
     ]
   },
@@ -900,6 +1188,50 @@
       {
         "name": "Wanderfalke (Falco peregrinus)",
         "val": 15
+      },
+      {
+        "name": "Bowhead Whale (Grönlandwal)",
+        "val": 200
+      },
+      {
+        "name": "Galapagos-Riesenschildkröte",
+        "val": 175
+      },
+      {
+        "name": "Koi-Karpfen",
+        "val": 226
+      },
+      {
+        "name": "Ocean Quahog (Venusmuschel, älteste)",
+        "val": 507
+      },
+      {
+        "name": "Großer Blauhai",
+        "val": 40
+      },
+      {
+        "name": "Rotbarsch (Sebastes)",
+        "val": 200
+      },
+      {
+        "name": "Europäischer Aal",
+        "val": 80
+      },
+      {
+        "name": "Afrikanischer Elefant (Weibchen)",
+        "val": 70
+      },
+      {
+        "name": "Weißkopf-Seeadler",
+        "val": 38
+      },
+      {
+        "name": "Kakadu (Kakapo)",
+        "val": 60
+      },
+      {
+        "name": "Europäische Sumpfschildkröte",
+        "val": 120
       }
     ]
   },
@@ -1050,6 +1382,62 @@
       {
         "name": "Opossum (Didelphis, kurze Trächtigkeit)",
         "val": 13
+      },
+      {
+        "name": "Orca (Schwertwal)",
+        "val": 510
+      },
+      {
+        "name": "Große Tümmler (Delfin)",
+        "val": 365
+      },
+      {
+        "name": "Kamele (Dromedar)",
+        "val": 390
+      },
+      {
+        "name": "Blaues Nashorn (Breitmaulnashorn)",
+        "val": 550
+      },
+      {
+        "name": "Eisbär",
+        "val": 240
+      },
+      {
+        "name": "Meerschweinchen",
+        "val": 68
+      },
+      {
+        "name": "Hamster (Zwerghamster)",
+        "val": 18
+      },
+      {
+        "name": "Virginia Opossum (kürzeste Trächtigkeit)",
+        "val": 13
+      },
+      {
+        "name": "Orca (Schwerwal)",
+        "val": 510
+      },
+      {
+        "name": "Tigerin",
+        "val": 104
+      },
+      {
+        "name": "Löwin",
+        "val": 110
+      },
+      {
+        "name": "Schwein (Sus scrofa)",
+        "val": 114
+      },
+      {
+        "name": "Schaf (Ovis aries)",
+        "val": 147
+      },
+      {
+        "name": "Nashornvogel",
+        "val": 40
       }
     ]
   },
@@ -1136,6 +1524,154 @@
       {
         "name": "Polarfuchs",
         "val": 14
+      },
+      {
+        "name": "Hauskatze",
+        "val": 5
+      },
+      {
+        "name": "Hund (Labrador)",
+        "val": 8
+      },
+      {
+        "name": "Hausmaus (Jahresrekord)",
+        "val": 70
+      },
+      {
+        "name": "Panda",
+        "val": 2
+      },
+      {
+        "name": "Orca",
+        "val": 1
+      },
+      {
+        "name": "Braunbär",
+        "val": 3
+      },
+      {
+        "name": "Rothfuchs",
+        "val": 6
+      },
+      {
+        "name": "Goldhamster",
+        "val": 10
+      },
+      {
+        "name": "Nerz",
+        "val": 8
+      },
+      {
+        "name": "Springmaus (Jerbua)",
+        "val": 3
+      },
+      {
+        "name": "Pekari",
+        "val": 2
+      },
+      {
+        "name": "Gürteltier",
+        "val": 4
+      },
+      {
+        "name": "Grizzlybär",
+        "val": 2
+      },
+      {
+        "name": "Erdferkel (Orycteropus afer)",
+        "val": 1
+      },
+      {
+        "name": "Weißnasenmaki",
+        "val": 2
+      },
+      {
+        "name": "Hund (Mittlere Rasse)",
+        "val": 6
+      },
+      {
+        "name": "Schwein (Sau)",
+        "val": 12
+      },
+      {
+        "name": "Maus (Hausmaus)",
+        "val": 10
+      },
+      {
+        "name": "Ratte",
+        "val": 12
+      },
+      {
+        "name": "Hamster (Goldhamster)",
+        "val": 12
+      },
+      {
+        "name": "Streifenhörnchen",
+        "val": 5
+      },
+      {
+        "name": "Igel",
+        "val": 5
+      },
+      {
+        "name": "Iltis",
+        "val": 10
+      },
+      {
+        "name": "Stinktier",
+        "val": 7
+      },
+      {
+        "name": "Opossum (Beutelratte, Wurf gesamt)",
+        "val": 20
+      },
+      {
+        "name": "Seehund",
+        "val": 1
+      },
+      {
+        "name": "Blaues Wildschwein (Sauen)",
+        "val": 8
+      },
+      {
+        "name": "Virginia Opossum (Gesamtzahl bis 20)",
+        "val": 13
+      },
+      {
+        "name": "Erdferkel",
+        "val": 1
+      },
+      {
+        "name": "Koala",
+        "val": 1
+      },
+      {
+        "name": "Nashorn",
+        "val": 1
+      },
+      {
+        "name": "Giraffe",
+        "val": 1
+      },
+      {
+        "name": "Orang-Utan",
+        "val": 1
+      },
+      {
+        "name": "Rotfuchs",
+        "val": 5
+      },
+      {
+        "name": "Marder",
+        "val": 4
+      },
+      {
+        "name": "Hund (Rottweiler)",
+        "val": 8
+      },
+      {
+        "name": "Schwein (Hausschwein)",
+        "val": 12
       }
     ]
   },
@@ -1302,6 +1838,46 @@
       {
         "name": "Stachelrochen (Dasyatis pastinaca)",
         "val": 400
+      },
+      {
+        "name": "Blauring-Oktopus",
+        "val": 10000
+      },
+      {
+        "name": "Irukandji-Qualle",
+        "val": 40000
+      },
+      {
+        "name": "Kastenqualle (Chironex fleckeri)",
+        "val": 10000
+      },
+      {
+        "name": "Kegelschnecke (Conus geographus)",
+        "val": 5000
+      },
+      {
+        "name": "Goldener Pfeilgiftfrosch (D. auratus)",
+        "val": 15000
+      },
+      {
+        "name": "Steiniger Feuerfisch",
+        "val": 500
+      },
+      {
+        "name": "Stonefish (Synanceia)",
+        "val": 700
+      },
+      {
+        "name": "Kamm-Krokodil (indirekt gefährlich)",
+        "val": 100
+      },
+      {
+        "name": "Kobra (Naja naja)",
+        "val": 350
+      },
+      {
+        "name": "Giftige Kegelschnecke (Conus textile)",
+        "val": 3000
       }
     ]
   },
@@ -1388,6 +1964,190 @@
       {
         "name": "Eisbär",
         "val": 26000
+      },
+      {
+        "name": "Weißwedelhirsch",
+        "val": 38000000
+      },
+      {
+        "name": "Haushund (weltweit)",
+        "val": 900000000
+      },
+      {
+        "name": "Hauskatze (weltweit)",
+        "val": 600000000
+      },
+      {
+        "name": "Löwe",
+        "val": 20000
+      },
+      {
+        "name": "Gepard",
+        "val": 7000
+      },
+      {
+        "name": "Sumatra-Tiger",
+        "val": 400
+      },
+      {
+        "name": "Großer Panda",
+        "val": 1864
+      },
+      {
+        "name": "Javan-Nashorn",
+        "val": 72
+      },
+      {
+        "name": "Vaquita (Schweinswal)",
+        "val": 10
+      },
+      {
+        "name": "Saiga-Antilope",
+        "val": 1300000
+      },
+      {
+        "name": "Beluga-Wal",
+        "val": 200000
+      },
+      {
+        "name": "Nördlicher Rotstreifenhörnchen",
+        "val": 50000000
+      },
+      {
+        "name": "Haushühner (weltweit)",
+        "val": 33000000000
+      },
+      {
+        "name": "Wanderheuschrecke (Schwarm)",
+        "val": 80000000000
+      },
+      {
+        "name": "Ameisen gesamt (Schätzung weltweit)",
+        "val": 20000000000000000
+      },
+      {
+        "name": "Hausfliege (Musca domestica)",
+        "val": 17000000000000
+      },
+      {
+        "name": "Arktis-Krill",
+        "val": 500000000000000
+      },
+      {
+        "name": "Zebrafisch",
+        "val": 3000000000
+      },
+      {
+        "name": "Heringsartig (Clupeidae)",
+        "val": 1000000000000
+      },
+      {
+        "name": "Haushuhn (Weltbestand)",
+        "val": 33000000000
+      },
+      {
+        "name": "Hausrind (Weltbestand)",
+        "val": 1000000000
+      },
+      {
+        "name": "Hausschwein",
+        "val": 1000000000
+      },
+      {
+        "name": "Hausschaf",
+        "val": 1000000000
+      },
+      {
+        "name": "Hausratte",
+        "val": 7000000000
+      },
+      {
+        "name": "Weißschwanzhirsch (USA)",
+        "val": 30000000
+      },
+      {
+        "name": "Elefant (Afrikanisch + Asiatisch gesamt)",
+        "val": 500000
+      },
+      {
+        "name": "Sibirischer Tiger (Amur)",
+        "val": 500
+      },
+      {
+        "name": "Kaspischer Tiger (ausgestorben)",
+        "val": 0
+      },
+      {
+        "name": "Spitzmaulnashorn",
+        "val": 5500
+      },
+      {
+        "name": "Arktischer Krill (Euphausia superba)",
+        "val": 500000000000000
+      },
+      {
+        "name": "Hausmücke (Culex pipiens)",
+        "val": 100000000000
+      },
+      {
+        "name": "Europäische Honigbiene",
+        "val": 2000000000000
+      },
+      {
+        "name": "Wanderameise",
+        "val": 700000000000
+      },
+      {
+        "name": "Haushuhn",
+        "val": 33000000000
+      },
+      {
+        "name": "Hausrind",
+        "val": 1000000000
+      },
+      {
+        "name": "Haussschaf",
+        "val": 1200000000
+      },
+      {
+        "name": "Hausziege",
+        "val": 1000000000
+      },
+      {
+        "name": "Mensch (Homo sapiens)",
+        "val": 8000000000
+      },
+      {
+        "name": "Rote Waldameise",
+        "val": 100000000000000
+      },
+      {
+        "name": "Heringsfisch (Atlantisch)",
+        "val": 500000000000
+      },
+      {
+        "name": "Europäischer Star",
+        "val": 300000000
+      },
+      {
+        "name": "Eissturmvogel",
+        "val": 100000000
+      },
+      {
+        "name": "Hummer (Atlantik)",
+        "val": 1000000000
+      },
+      {
+        "name": "Pazifischer Lachs",
+        "val": 5000000000
+      },
+      {
+        "name": "Regenwurm (Lumbricus terrestris)",
+        "val": 10000000000000
+      },
+      {
+        "name": "Termite (Reticulitermes)",
+        "val": 1000000000000000
       }
     ]
   },
@@ -1474,6 +2234,146 @@
       {
         "name": "Wanderamsel",
         "val": 4
+      },
+      {
+        "name": "Braunbär (Winterschlaf)",
+        "val": 20
+      },
+      {
+        "name": "Hauskatze",
+        "val": 13
+      },
+      {
+        "name": "Python (Schlange)",
+        "val": 18
+      },
+      {
+        "name": "Braunkopf-Klammeraffe",
+        "val": 15
+      },
+      {
+        "name": "Igel (Winterschlaf)",
+        "val": 21
+      },
+      {
+        "name": "Tapir",
+        "val": 14
+      },
+      {
+        "name": "Panda",
+        "val": 12
+      },
+      {
+        "name": "Hyäne",
+        "val": 14
+      },
+      {
+        "name": "Elefant",
+        "val": 4
+      },
+      {
+        "name": "Delphin",
+        "val": 8
+      },
+      {
+        "name": "Ziege",
+        "val": 5
+      },
+      {
+        "name": "Siebenschläfer",
+        "val": 23
+      },
+      {
+        "name": "Dachs (Winterruhe)",
+        "val": 16
+      },
+      {
+        "name": "Faultier (Dreizehenfaultier)",
+        "val": 20
+      },
+      {
+        "name": "Große Braune Fledermaus",
+        "val": 20
+      },
+      {
+        "name": "Siebenschläfer (Glis glis)",
+        "val": 22
+      },
+      {
+        "name": "Alphatier im Wolfsrudel",
+        "val": 13
+      },
+      {
+        "name": "Hund (Haushund)",
+        "val": 12
+      },
+      {
+        "name": "Murmeltier (Winterschlaf)",
+        "val": 22
+      },
+      {
+        "name": "Braunbär (Sommer aktiv)",
+        "val": 8
+      },
+      {
+        "name": "Delfin (Halbschlaf)",
+        "val": 8
+      },
+      {
+        "name": "Kleines braunes Fledermaus",
+        "val": 20
+      },
+      {
+        "name": "Großes Braunes Fledermaus",
+        "val": 19.9
+      },
+      {
+        "name": "Schnabeligel (Ameisenigel)",
+        "val": 12
+      },
+      {
+        "name": "Gepard",
+        "val": 12
+      },
+      {
+        "name": "Walross",
+        "val": 19.4
+      },
+      {
+        "name": "Eisbär",
+        "val": 7
+      },
+      {
+        "name": "Riesenpanda",
+        "val": 10
+      },
+      {
+        "name": "Seelöwe",
+        "val": 12
+      },
+      {
+        "name": "Flusspferd",
+        "val": 16
+      },
+      {
+        "name": "Lemur (Fettschwanz-Lemur)",
+        "val": 7
+      },
+      {
+        "name": "Hamster (Winterschlaf)",
+        "val": 14
+      },
+      {
+        "name": "Bär (Braunbär Winterruh)",
+        "val": 6
+      },
+      {
+        "name": "Katze (wilde Feral-Katze)",
+        "val": 16
+      },
+      {
+        "name": "Elefant (Afrikan.)",
+        "val": 2
       }
     ]
   },
@@ -1600,6 +2500,114 @@
       {
         "name": "Island",
         "val": 64
+      },
+      {
+        "name": "Vereinigte Staaten",
+        "val": 67
+      },
+      {
+        "name": "Schweden",
+        "val": 30
+      },
+      {
+        "name": "China",
+        "val": 22
+      },
+      {
+        "name": "USA (Hunde je 100 Pers.)",
+        "val": 28
+      },
+      {
+        "name": "Frankreich (Hunde je 100 Pers.)",
+        "val": 23
+      },
+      {
+        "name": "Deutschland (Hunde je 100 Pers.)",
+        "val": 18
+      },
+      {
+        "name": "Australien (Hunde je 100 Pers.)",
+        "val": 27
+      },
+      {
+        "name": "Brasilien (Hunde, weltweit größter Bestand)",
+        "val": 89500000
+      },
+      {
+        "name": "Kanada (Katzen je 100 Pers.)",
+        "val": 17
+      },
+      {
+        "name": "Schweiz (Haustiere je Haushalt)",
+        "val": 1.4
+      },
+      {
+        "name": "Russland (Katzen je 100 Pers.)",
+        "val": 23
+      },
+      {
+        "name": "Italien (Hunde je 100 Pers.)",
+        "val": 20
+      },
+      {
+        "name": "UK (Hunde gesamt)",
+        "val": 12000000
+      },
+      {
+        "name": "Japan (Haustiere Hunde gesamt)",
+        "val": 8400000
+      },
+      {
+        "name": "Indien (Hunde Straßenbestand)",
+        "val": 62000000
+      },
+      {
+        "name": "China (Hunde gesamt, 2022)",
+        "val": 54000000
+      },
+      {
+        "name": "Polen (Hunde je 100 Pers.)",
+        "val": 25
+      },
+      {
+        "name": "Schweden (Hunde je 100 Pers.)",
+        "val": 15
+      },
+      {
+        "name": "Neuseeland (Hunde je 100 Pers.)",
+        "val": 30
+      },
+      {
+        "name": "Österreich (Hunde gesamt)",
+        "val": 700000
+      },
+      {
+        "name": "UK",
+        "val": 152
+      },
+      {
+        "name": "Spanien",
+        "val": 145
+      },
+      {
+        "name": "Italien",
+        "val": 140
+      },
+      {
+        "name": "Schweiz",
+        "val": 170
+      },
+      {
+        "name": "Österreich",
+        "val": 135
+      },
+      {
+        "name": "Niederlande",
+        "val": 100
+      },
+      {
+        "name": "Nigeria",
+        "val": 12
       }
     ]
   },
@@ -1686,6 +2694,126 @@
       {
         "name": "Shire",
         "val": 185
+      },
+      {
+        "name": "Shire-Horse",
+        "val": 180
+      },
+      {
+        "name": "Percheron",
+        "val": 175
+      },
+      {
+        "name": "Araber (Vollblut)",
+        "val": 153
+      },
+      {
+        "name": "Englisches Vollblut",
+        "val": 163
+      },
+      {
+        "name": "Lusitano",
+        "val": 157
+      },
+      {
+        "name": "Fjordpferd",
+        "val": 143
+      },
+      {
+        "name": "Konik",
+        "val": 135
+      },
+      {
+        "name": "Welsh Mountain Pony",
+        "val": 122
+      },
+      {
+        "name": "Dartmoor Pony",
+        "val": 120
+      },
+      {
+        "name": "New Forest Pony",
+        "val": 143
+      },
+      {
+        "name": "Przewalski-Pferd",
+        "val": 135
+      },
+      {
+        "name": "Shire Horse",
+        "val": 173
+      },
+      {
+        "name": "Suffolk Punch",
+        "val": 165
+      },
+      {
+        "name": "Norwegischer Fjordpferd",
+        "val": 145
+      },
+      {
+        "name": "Exmoor-Pony",
+        "val": 128
+      },
+      {
+        "name": "Dartmoor-Pony",
+        "val": 122
+      },
+      {
+        "name": "Welsh Mountain Pony (A)",
+        "val": 122
+      },
+      {
+        "name": "Highlands Pony",
+        "val": 148
+      },
+      {
+        "name": "Arabisches Vollblut",
+        "val": 155
+      },
+      {
+        "name": "Noriker",
+        "val": 165
+      },
+      {
+        "name": "Lusitaner",
+        "val": 158
+      },
+      {
+        "name": "Traber (Standard)",
+        "val": 158
+      },
+      {
+        "name": "Morgan Horse",
+        "val": 148
+      },
+      {
+        "name": "Isländer",
+        "val": 138
+      },
+      {
+        "name": "Tinker",
+        "val": 148
+      },
+      {
+        "name": "Thoroughbred (Vollblut)",
+        "val": 163
+      },
+      {
+        "name": "Welsh Mountain Pony (Sektion A)",
+        "val": 122
+      },
+      {
+        "name": "Knabstrupper",
+        "val": 155
+      },
+      {
+        "name": "Paso Fino",
+        "val": 148
+      },
+      {
+        "name": "Criollo (Südamerika)",
+        "val": 148
       }
     ]
   },
@@ -1833,6 +2961,66 @@
       {
         "name": "Mustang (Wildpferd, Ebene)",
         "val": 72.0
+      },
+      {
+        "name": "Arabisches Vollblut (Ausdauer)",
+        "val": 64.5
+      },
+      {
+        "name": "Appaloosa (Sprint-Variante)",
+        "val": 68.0
+      },
+      {
+        "name": "Mustang (Wildpferd Prärierekord)",
+        "val": 72.0
+      },
+      {
+        "name": "Paint Horse (Quarter-Verwandt)",
+        "val": 77.0
+      },
+      {
+        "name": "Thoroughbred Secretariat (1973 Rekord)",
+        "val": 70.2
+      },
+      {
+        "name": "Tennessee Walking Horse",
+        "val": 60.0
+      },
+      {
+        "name": "Morgan Horse",
+        "val": 59.0
+      },
+      {
+        "name": "Standardbred (Trot/Pace)",
+        "val": 56.0
+      },
+      {
+        "name": "Friese (schwere Gangart)",
+        "val": 40.0
+      },
+      {
+        "name": "Shire Horse (Trabrasse)",
+        "val": 30.0
+      },
+      {
+        "name": "Haflinger (Gebirgspferd)",
+        "val": 56.0
+      },
+      {
+        "name": "Paso Fino (Tölt-Ähnlich)",
+        "val": 48.0
+      },
+      {
+        "name": "Islandpferd (Tölt Sprint)",
+        "val": 48.0
+      },
+      {
+        "name": "Welsh Cob (Zug+Sprint)",
+        "val": 64.0
+      },
+      {
+        "name": "Lusitano (Dressur, Galopptempo)",
+        "val": 64.0
       }
     ]
   },
@@ -1980,6 +3168,66 @@
       {
         "name": "Falabella (Miniaturpferd, weiblich)",
         "val": 55
+      },
+      {
+        "name": "Falabella-Minipferd",
+        "val": 60
+      },
+      {
+        "name": "Englisches Vollblut",
+        "val": 550
+      },
+      {
+        "name": "Shire Horse (Weltrekord-Individuum)",
+        "val": 1524
+      },
+      {
+        "name": "Thoroughbred",
+        "val": 500
+      },
+      {
+        "name": "Quarter Horse",
+        "val": 550
+      },
+      {
+        "name": "Miniaturpferd (Mini)",
+        "val": 90
+      },
+      {
+        "name": "Percheron (Kaltblut)",
+        "val": 1000
+      },
+      {
+        "name": "Knabstrupper",
+        "val": 500
+      },
+      {
+        "name": "Missouri Fox Trotter",
+        "val": 500
+      },
+      {
+        "name": "Camargue",
+        "val": 430
+      },
+      {
+        "name": "Tinker",
+        "val": 650
+      },
+      {
+        "name": "Shetland-Pony",
+        "val": 200
+      },
+      {
+        "name": "Camargue-Pferd",
+        "val": 430
+      },
+      {
+        "name": "Isländer (Islandpferd)",
+        "val": 380
+      },
+      {
+        "name": "Konik (polnisches Wildpferd)",
+        "val": 340
       }
     ]
   }

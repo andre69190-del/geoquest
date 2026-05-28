@@ -370,6 +370,74 @@
       {
         "n": "Asteroid Ida",
         "c": "Erster Asteroid mit bestätigtem eigenem Mond (Dactyl)"
+      },
+      {
+        "n": "Kallisto",
+        "c": "Am stärksten kraterierter Körper"
+      },
+      {
+        "n": "Ganimed (Jupitermond)",
+        "c": "Hat ein eigenes Magnetfeld"
+      },
+      {
+        "n": "Ganymede",
+        "c": "Größter Mond des Sonnensystems"
+      },
+      {
+        "n": "Kallisto (Jupiter)",
+        "c": "Am stärksten kraterierter Körper"
+      },
+      {
+        "n": "Enceladus (Saturn)",
+        "c": "Wassergeysire unter Eisdecke"
+      },
+      {
+        "n": "Io (Jupiter)",
+        "c": "Aktivster Vulkankörper"
+      },
+      {
+        "n": "Titania (Uranus)",
+        "c": "Größter Uranus-Mond"
+      },
+      {
+        "n": "Charon (Pluto)",
+        "c": "Mond so groß wie Pluto selbst"
+      },
+      {
+        "n": "Rhea (Saturn)",
+        "c": "Zweitmäßigster Saturn-Mond"
+      },
+      {
+        "n": "Oberon (Uranus)",
+        "c": "Zweitgrößter Uranus-Mond"
+      },
+      {
+        "n": "Iapetus (Saturn)",
+        "c": "Zweifarbiger Saturn-Mond"
+      },
+      {
+        "n": "Dione (Saturn)",
+        "c": "Hat eine sauerstoffarme Atmosphäre"
+      },
+      {
+        "n": "Ariel (Uranus)",
+        "c": "Hellster Uranus-Mond"
+      },
+      {
+        "n": "Mimas (Saturn)",
+        "c": "Hat Todessttern-Aussehen (Odysseus-Krater)"
+      },
+      {
+        "n": "Miranda (Uranus)",
+        "c": "Hat extreme Klippen (Verona Rupes)"
+      },
+      {
+        "n": "Tethys (Saturn)",
+        "c": "Hat riesigen Odysseus-Krater"
+      },
+      {
+        "n": "Umbriel (Uranus)",
+        "c": "Dunkelster Uranus-Mond"
       }
     ]
   },
@@ -487,6 +555,94 @@
       {
         "n": "Baryon-Asymmetrie",
         "c": "Warum gibt es mehr Materie als Antimaterie?"
+      },
+      {
+        "n": "Urknall (Big Bang)",
+        "c": "Ursprung des Universums vor ~13,8 Mrd. Jahren"
+      },
+      {
+        "n": "Rotverschiebung",
+        "c": "Galaxien entfernen sich — Licht dehnt sich"
+      },
+      {
+        "n": "Kosmischer Mikrowellenhintergrund",
+        "c": "Strahlung aus Urknall-Nachleucht (380.000 Jahre)"
+      },
+      {
+        "n": "Weiße Zwerge",
+        "c": "Überrest nach dem Tod sonnenähnlicher Sterne"
+      },
+      {
+        "n": "Supernovae Typ Ia",
+        "c": "Standardkerze zur Entfernungsmessung"
+      },
+      {
+        "n": "Gravitationswellen",
+        "c": "Raumzeit-Kräuselungen durch verschmelzende Objekte"
+      },
+      {
+        "n": "Raumzeit-Singularität",
+        "c": "Unendliche Dichte im Zentrum schwarzer Löcher"
+      },
+      {
+        "n": "Inflationsphase",
+        "c": "Extrem schnelle Ausdehnung kurz nach Urknall"
+      },
+      {
+        "n": "Barionische Akustische Oszillationen",
+        "c": "Druckwellen im Frühuniversum"
+      },
+      {
+        "n": "Hubble-Konstante H₀",
+        "c": "Ausdehnungsrate ca. 70 km/s/Mpc"
+      },
+      {
+        "n": "Multiversum-Hypothese",
+        "c": "Viele parallele Universen denkbar"
+      },
+      {
+        "n": "Kosmologisches Prinzip",
+        "c": "Universum homogen + isotrop im Großen"
+      },
+      {
+        "n": "Lambda-CDM-Modell",
+        "c": "Standardmodell der Kosmologie"
+      },
+      {
+        "n": "Planck-Ära",
+        "c": "Erster 10⁻⁴³ s — Physik unbekannt"
+      },
+      {
+        "n": "Fermis Paradox",
+        "c": "Wo ist das außerirdische Leben?"
+      },
+      {
+        "n": "Kosmologische Rotverschiebung z",
+        "c": "Maß für Expansion seit Lichtemission"
+      },
+      {
+        "n": "Baryogenese",
+        "c": "Überschuss von Materie über Antimaterie"
+      },
+      {
+        "n": "Kosmische Inflation (Alan Guth)",
+        "c": "Erklärt Flachheit + Horizontproblem"
+      },
+      {
+        "n": "Kosmologische Konstante (Λ)",
+        "c": "Einsteins 'größter Fehler' — nun Dunkle Energie"
+      },
+      {
+        "n": "Weißer Zwerg",
+        "c": "Endstadium sonnenähnlicher Sterne"
+      },
+      {
+        "n": "Gamma-Strahlen-Burst",
+        "c": "Hellste elektromagnetische Explosion im Universum"
+      },
+      {
+        "n": "Baryonisches akustisches Oszillationssignal (BAO)",
+        "c": "Frühes Universum"
       }
     ]
   },
@@ -676,6 +832,22 @@
       {
         "n": "New Horizons (Kuiper-Gürtel)",
         "c": "Arrokoth (Kuiper-Gürtel)"
+      },
+      {
+        "n": "Lucy (NASA, 2021)",
+        "c": "Jupiter-Trojaner"
+      },
+      {
+        "n": "DART (NASA, 2022)",
+        "c": "Asteroid Dimorphos"
+      },
+      {
+        "n": "Dawn (NASA)",
+        "c": "Vesta und Ceres"
+      },
+      {
+        "n": "Cassini-Huygens (NASA/ESA)",
+        "c": "Saturn"
       }
     ]
   },
@@ -877,6 +1049,10 @@
       {
         "n": "PSR J0437-4715",
         "c": "Millisekunden-Pulsar"
+      },
+      {
+        "n": "Sedna",
+        "c": "Extremer Transneptuner"
       }
     ]
   },
@@ -1235,6 +1411,58 @@
       {
         "n": "Katherine Johnson",
         "c": "NASA-Mathematikerin: Bahnberechnungen Mercury/Apollo"
+      },
+      {
+        "n": "Wernher von Braun",
+        "c": "V2-Rakete → Saturn V"
+      },
+      {
+        "n": "Nicolaus Copernicus",
+        "c": "Heliozentrisches Weltbild"
+      },
+      {
+        "n": "Friedrich Bessel",
+        "c": "Erste Sternentfernungsmessung (Parallaxe)"
+      },
+      {
+        "n": "Hipparchus (Antike)",
+        "c": "Sternkatalog & Präzession der Erde"
+      },
+      {
+        "n": "Ptolemäus",
+        "c": "Geozentrisches Modell (Almagest)"
+      },
+      {
+        "n": "George Ellery Hale",
+        "c": "Entwicklung großer Teleskope"
+      },
+      {
+        "n": "Walter Baade",
+        "c": "Unterscheidung Populationen I/II"
+      },
+      {
+        "n": "Allan Sandage",
+        "c": "Hubble-Konstante Präzisionsmessung"
+      },
+      {
+        "n": "Tycho Brahe (Nachwuchs)",
+        "c": "Präzisionsmessungen vor dem Teleskop"
+      },
+      {
+        "n": "Herschel Sr. William",
+        "c": "Entdeckung von Uranus"
+      },
+      {
+        "n": "Aleksander Wolszczan",
+        "c": "Erster Exoplanet um Pulsar (1992)"
+      },
+      {
+        "n": "Andrea Ghez",
+        "c": "Schwarzes Loch im Zentrum der Milchstraße"
+      },
+      {
+        "n": "Reinhard Genzel",
+        "c": "Supermassives Schwarzes Loch (Milchstraße)"
       }
     ]
   },
@@ -1360,6 +1588,86 @@
       {
         "n": "Project Orion (hist. Konzept)",
         "c": "Nuklear-Puls"
+      },
+      {
+        "n": "SpaceX Merlin 1D (Falcon 9)",
+        "c": "RP-1/Flüssigsauerstoff"
+      },
+      {
+        "n": "SpaceX Raptor 2 (Starship)",
+        "c": "Methan/Flüssigsauerstoff"
+      },
+      {
+        "n": "NASA RS-25 (Space Shuttle, SLS)",
+        "c": "Wasserstoff/Flüssigsauerstoff"
+      },
+      {
+        "n": "Blue Origin BE-4 (New Glenn)",
+        "c": "Methan/LOX"
+      },
+      {
+        "n": "Ariane 5 Vulcain 2",
+        "c": "Wasserstoff/Sauerstoff"
+      },
+      {
+        "n": "Soyuz RD-107A",
+        "c": "RP-1/LOX"
+      },
+      {
+        "n": "Electron Rutherford (Rocket Lab)",
+        "c": "RP-1/LOX (elektrisch gepumpt)"
+      },
+      {
+        "n": "Ion Drive (Dawn, Hayabusa)",
+        "c": "Xenon-Ionen"
+      },
+      {
+        "n": "Solar Sail (IKAROS, LightSail)",
+        "c": "Sonnenlichtstrahlung"
+      },
+      {
+        "n": "Nuclear Thermal (NERVA, hist.)",
+        "c": "Nuklear + Wasserstoff"
+      },
+      {
+        "n": "Hall-Effekt-Triebwerk (stationnäre Sonden)",
+        "c": "Elektrisches Xenon"
+      },
+      {
+        "n": "PULSED DETONATION ENGINE (exp.)",
+        "c": "Detonation + Schub"
+      },
+      {
+        "n": "VASIMR (Variable Specific Impulse)",
+        "c": "Plasma (experimentell)"
+      },
+      {
+        "n": "Elektrostatisches Triebwerk (Gridded Ion)",
+        "c": "Xenon Ionen"
+      },
+      {
+        "n": "Resistojet (Kleinsatelliten)",
+        "c": "Resistiv erhitztes Gas"
+      },
+      {
+        "n": "Cold Gas Thruster (Attitude Control)",
+        "c": "Stickstoff/Helium"
+      },
+      {
+        "n": "Long March 7 (YF-100 Triebwerk)",
+        "c": "RP-1/LOX"
+      },
+      {
+        "n": "ISRO Vikas Engine (GSLV)",
+        "c": "Unsymm. Dimethylhydrazin/N₂O₄"
+      },
+      {
+        "n": "JAXA LE-9 (H3-Rakete)",
+        "c": "Flüssig-Wasserstoff/LOX"
+      },
+      {
+        "n": "Arcjet (elektrisches Triebwerk)",
+        "c": "Elektr. erhitztes Hydrazin"
       }
     ]
   },
@@ -1497,6 +1805,74 @@
       {
         "n": "NGC 4889",
         "c": "Elliptische Galaxie (supermassives schwarzes Loch)"
+      },
+      {
+        "n": "Große Magellanische Wolke",
+        "c": "Irreguläre Galaxie"
+      },
+      {
+        "n": "Kleine Magellanische Wolke",
+        "c": "Irreguläre Galaxie"
+      },
+      {
+        "n": "Cartwheel-Galaxie",
+        "c": "Ringgalaxie (nach Kollision)"
+      },
+      {
+        "n": "NGC 4622 (Rückwärts-Spirale)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "NGC 5195 (M51 Begleiter)",
+        "c": "Irreguläre Galaxie"
+      },
+      {
+        "n": "NGC 1277 (kompakt)",
+        "c": "Kompakte Elliptische"
+      },
+      {
+        "n": "IC 1101 (größte bekannte)",
+        "c": "Riesige Elliptische"
+      },
+      {
+        "n": "3C 273 (Quasar)",
+        "c": "Aktiver Galaxienkern"
+      },
+      {
+        "n": "Markarian 421",
+        "c": "BL-Lac-Objekt"
+      },
+      {
+        "n": "Magellanschen Wolken (Grosse)",
+        "c": "Irregulaere Galaxie"
+      },
+      {
+        "n": "Magellansche Wolke (Gross)",
+        "c": "Irregulaere Galaxie"
+      },
+      {
+        "n": "Cigar-Galaxie (M82)",
+        "c": "Irregulaere Galaxie"
+      },
+      {
+        "n": "Irregular Dwarf (SMC)",
+        "c": "Irregulaere Galaxie"
+      },
+      {
+        "n": "NGC 1300 (Virgo-Supercluster)",
+        "c": "Balkenspiralgalaxie"
+      },
+      {
+        "n": "Ursa-Major-Zwerggalaxie",
+        "c": "Zwerggalaxie"
+      },
+      {
+        "n": "NGC 1265 (Kopf der Qualle)",
+        "c": "Radiogalaxie"
+      },
+      {
+        "n": "Mayall's Object",
+        "c": "Ringgalaxie"
       }
     ]
   }

@@ -146,6 +146,62 @@
       {
         "name": "AMD Radeon RX 7900 XTX (RDNA3)",
         "val": 58
+      },
+      {
+        "name": "Intel Core Ultra 9 285K (2024)",
+        "val": 125
+      },
+      {
+        "name": "NVIDIA Blackwell GB202 (2024)",
+        "val": 208
+      },
+      {
+        "name": "AMD Ryzen 9 9950X (2024)",
+        "val": 35
+      },
+      {
+        "name": "Intel Meteor Lake Core Ultra 7 (2023)",
+        "val": 19
+      },
+      {
+        "name": "Apple M4 (2024)",
+        "val": 28
+      },
+      {
+        "name": "Google TPU v5p",
+        "val": 900
+      },
+      {
+        "name": "NVIDIA H200 (Hopper arch.)",
+        "val": 80
+      },
+      {
+        "name": "Cerebras WSE-3 (2024, größter Chip)",
+        "val": 4000
+      },
+      {
+        "name": "Intel Gaudi 3 (2024)",
+        "val": 40
+      },
+      {
+        "name": "Apple M3 Pro",
+        "val": 37
+      },
+      {
+        "name": "Intel Meteor Lake (Core Ultra)",
+        "val": 22
+      },
+      {
+        "name": "Qualcomm Snapdragon X Elite",
+        "val": 42
+      },
+      {
+        "name": "Apple M1 Pro",
+        "val": 33600
+      },
+      {
+        "name": "Intel Core i9-14900K",
+        "val": 22000
       }
     ]
   },
@@ -308,6 +364,50 @@
       {
         "name": "Arduino Uno R4 (Renesas RA4M1)",
         "val": 0.048
+      },
+      {
+        "name": "AMD Ryzen 9 9950X (2024)",
+        "val": 5.7
+      },
+      {
+        "name": "Intel Core i9-13900KS",
+        "val": 6.0
+      },
+      {
+        "name": "Apple M4 Pro (Efficiency Cores)",
+        "val": 4.9
+      },
+      {
+        "name": "Samsung Exynos 2400 (Prime)",
+        "val": 3.2
+      },
+      {
+        "name": "AMD Ryzen 7 7800X3D (3D V-Cache)",
+        "val": 5.0
+      },
+      {
+        "name": "NVIDIA RTX 4090 Shader (Boost)",
+        "val": 2.52
+      },
+      {
+        "name": "AMD Radeon RX 7900 XTX (Boost)",
+        "val": 2.5
+      },
+      {
+        "name": "Apple A17 Pro (CPU Boost)",
+        "val": 3.78
+      },
+      {
+        "name": "IBM z16 (Mainframe Core)",
+        "val": 5.2
+      },
+      {
+        "name": "Intel Core i7-14700K (Boost)",
+        "val": 5.6
+      },
+      {
+        "name": "AMD Ryzen 9 7900X (Boost)",
+        "val": 5.6
       }
     ]
   },
@@ -466,6 +566,54 @@
       {
         "name": "Menschlicher Arm + Schulter",
         "val": 7
+      },
+      {
+        "name": "Universal Robots UR20 (6-Achs)",
+        "val": 6
+      },
+      {
+        "name": "Fanuc M-20iD/12 (6-Achs)",
+        "val": 6
+      },
+      {
+        "name": "Boston Dynamics Spot (12 DOF Beine)",
+        "val": 12
+      },
+      {
+        "name": "Boston Dynamics Atlas (28 DOF gesamt)",
+        "val": 28
+      },
+      {
+        "name": "ABB IRB 7600 (6-Achs)",
+        "val": 6
+      },
+      {
+        "name": "KUKA LBR iiwa (7-Achs kollaborativ)",
+        "val": 7
+      },
+      {
+        "name": "Franka Emika Panda (7-Achs)",
+        "val": 7
+      },
+      {
+        "name": "Toyota HSR (Human Support Robot)",
+        "val": 8
+      },
+      {
+        "name": "DLR Hand (20 DOF Roboterhand)",
+        "val": 20
+      },
+      {
+        "name": "Shadow Dexterous Hand (24 DOF)",
+        "val": 24
+      },
+      {
+        "name": "NASA Robonaut 2 (Torso, 42 DOF)",
+        "val": 42
+      },
+      {
+        "name": "Cassie (Agility Robotics, bipedal)",
+        "val": 10
       }
     ]
   },
@@ -632,6 +780,46 @@
       {
         "name": "DOOM (1993 Original)",
         "val": 0.039
+      },
+      {
+        "name": "Android AOSP (gesamt)",
+        "val": 15000.0
+      },
+      {
+        "name": "Facebook Platform",
+        "val": 62.0
+      },
+      {
+        "name": "Google monorepo (gesamter Code)",
+        "val": 2000000.0
+      },
+      {
+        "name": "Space Shuttle Bordcomputer",
+        "val": 0.4
+      },
+      {
+        "name": "Debian Linux (gesamt)",
+        "val": 440.0
+      },
+      {
+        "name": "Firefox Browser",
+        "val": 22.0
+      },
+      {
+        "name": "MySQL Server",
+        "val": 4.4
+      },
+      {
+        "name": "Chromium-Browser",
+        "val": 35
+      },
+      {
+        "name": "Firefox (Gecko Engine)",
+        "val": 22
+      },
+      {
+        "name": "Facebook/Meta Backend",
+        "val": 62
       }
     ]
   },
@@ -734,6 +922,110 @@
       {
         "name": "Go (Golang)",
         "val": 2009
+      },
+      {
+        "name": "Pascal",
+        "val": 1970
+      },
+      {
+        "name": "Dart",
+        "val": 2011
+      },
+      {
+        "name": "Smalltalk",
+        "val": 1972
+      },
+      {
+        "name": "Objective-C",
+        "val": 1984
+      },
+      {
+        "name": "Erlang",
+        "val": 1986
+      },
+      {
+        "name": "Julia",
+        "val": 2012
+      },
+      {
+        "name": "ALGOL 60",
+        "val": 1960
+      },
+      {
+        "name": "Prolog",
+        "val": 1972
+      },
+      {
+        "name": "Groovy",
+        "val": 2003
+      },
+      {
+        "name": "Simula",
+        "val": 1967
+      },
+      {
+        "name": "ML (Meta Language)",
+        "val": 1973
+      },
+      {
+        "name": "Scheme",
+        "val": 1975
+      },
+      {
+        "name": "AWK",
+        "val": 1977
+      },
+      {
+        "name": "Modula-2",
+        "val": 1977
+      },
+      {
+        "name": "Common Lisp",
+        "val": 1984
+      },
+      {
+        "name": "Tcl",
+        "val": 1988
+      },
+      {
+        "name": "Bash",
+        "val": 1989
+      },
+      {
+        "name": "Standard ML",
+        "val": 1990
+      },
+      {
+        "name": "Lua",
+        "val": 1993
+      },
+      {
+        "name": "Delphi",
+        "val": 1995
+      },
+      {
+        "name": "OCaml",
+        "val": 1996
+      },
+      {
+        "name": "Rebol",
+        "val": 1997
+      },
+      {
+        "name": "D",
+        "val": 2001
+      },
+      {
+        "name": "Visual Basic",
+        "val": 1991
+      },
+      {
+        "name": "Icon",
+        "val": 1977
+      },
+      {
+        "name": "Occam",
+        "val": 1983
       }
     ]
   },
@@ -900,6 +1192,46 @@
       {
         "name": "Intel 8086 CPU (1978, FP sim.)",
         "val": 3e-05
+      },
+      {
+        "name": "Frontier (Oak Ridge, USA, TOP1 2022)",
+        "val": 1102.0
+      },
+      {
+        "name": "Aurora (Argonne, USA, 2023)",
+        "val": 1012.0
+      },
+      {
+        "name": "Eagle (Microsoft Azure, 2023)",
+        "val": 561.2
+      },
+      {
+        "name": "HPC6 (Eni, Italien, 2022)",
+        "val": 477.0
+      },
+      {
+        "name": "Supercomputer Fugaku (Japan, 2020)",
+        "val": 442.0
+      },
+      {
+        "name": "Summit (Oak Ridge, USA, 2018)",
+        "val": 148.6
+      },
+      {
+        "name": "Sierra (Lawrence Livermore, USA)",
+        "val": 94.6
+      },
+      {
+        "name": "Selene (NVIDIA, 2020)",
+        "val": 63.4
+      },
+      {
+        "name": "Perlmutter (NERSC, USA, 2021)",
+        "val": 70.9
+      },
+      {
+        "name": "Tianhe-2A (China, 2018)",
+        "val": 61.4
       }
     ]
   },
@@ -1006,6 +1338,106 @@
       {
         "name": "Spanien",
         "val": 124
+      },
+      {
+        "name": "Vereinigte Arabische Emirate",
+        "val": 238
+      },
+      {
+        "name": "Rumänien",
+        "val": 198
+      },
+      {
+        "name": "Belgien",
+        "val": 154
+      },
+      {
+        "name": "Monaco",
+        "val": 320
+      },
+      {
+        "name": "Thailand",
+        "val": 175
+      },
+      {
+        "name": "Kanada",
+        "val": 190
+      },
+      {
+        "name": "Neuseeland",
+        "val": 148
+      },
+      {
+        "name": "UK",
+        "val": 158
+      },
+      {
+        "name": "Israel",
+        "val": 235
+      },
+      {
+        "name": "Portugal",
+        "val": 130
+      },
+      {
+        "name": "Polen",
+        "val": 65
+      },
+      {
+        "name": "Tschechien",
+        "val": 55
+      },
+      {
+        "name": "Italien",
+        "val": 85
+      },
+      {
+        "name": "Mexiko",
+        "val": 22
+      },
+      {
+        "name": "Kenia",
+        "val": 18
+      },
+      {
+        "name": "Ungarn",
+        "val": 145
+      },
+      {
+        "name": "Litauen",
+        "val": 138
+      },
+      {
+        "name": "Estland",
+        "val": 112
+      },
+      {
+        "name": "Lettland",
+        "val": 108
+      },
+      {
+        "name": "Slowenien",
+        "val": 98
+      },
+      {
+        "name": "Kroatien",
+        "val": 85
+      },
+      {
+        "name": "Griechenland",
+        "val": 79
+      },
+      {
+        "name": "Taiwan",
+        "val": 195
+      },
+      {
+        "name": "Malediven",
+        "val": 72
+      },
+      {
+        "name": "Philippinen",
+        "val": 65
       }
     ]
   },
@@ -1164,6 +1596,54 @@
       {
         "name": "Intel 8086 (1978, historisch)",
         "val": 2.0
+      },
+      {
+        "name": "AMD Ryzen 9 9950X (2024)",
+        "val": 170
+      },
+      {
+        "name": "AMD EPYC Genoa (Serverchip)",
+        "val": 360
+      },
+      {
+        "name": "Intel Xeon Platinum 8592+ (2024)",
+        "val": 350
+      },
+      {
+        "name": "NVIDIA RTX 4090 (GPU)",
+        "val": 450
+      },
+      {
+        "name": "NVIDIA H100 SXM5 (RechenzentRUM)",
+        "val": 700
+      },
+      {
+        "name": "NVIDIA B200 (Blackwell 2024)",
+        "val": 1000
+      },
+      {
+        "name": "Intel Core i9-12900K",
+        "val": 125
+      },
+      {
+        "name": "Apple M4 Pro (SoC Laptop)",
+        "val": 30
+      },
+      {
+        "name": "Qualcomm Snapdragon 8 Gen 3 (Mobile)",
+        "val": 12
+      },
+      {
+        "name": "Raspberry Pi 5 (SBC)",
+        "val": 15
+      },
+      {
+        "name": "ESP32 Mikrocontroller",
+        "val": 0.24
+      },
+      {
+        "name": "Apple M3 (Effizienzchip)",
+        "val": 22
       }
     ]
   }

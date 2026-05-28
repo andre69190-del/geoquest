@@ -161,6 +161,46 @@
       {
         "n": "Nagelabdruck + 3 Zehen asymm.",
         "c": "Krähenvogel"
+      },
+      {
+        "n": "5 Zehen mit langen Krallen (vorne), 5 Zehen (hinten) - wühlt",
+        "c": "Dachs"
+      },
+      {
+        "n": "Hufabdruck hufeisenartig, Zehenwulst",
+        "c": "Wildschwein"
+      },
+      {
+        "n": "3 vorne, 4 hinten, springend",
+        "c": "Hase"
+      },
+      {
+        "n": "Breiter Flossendruck im Schlamm, keine Zehen",
+        "c": "Nilpferd"
+      },
+      {
+        "n": "Sternförmig, 8 Beine, Spinne",
+        "c": "Vogelspinne"
+      },
+      {
+        "n": "Kleine ovale Hufe, Doppelpunkt",
+        "c": "Reh"
+      },
+      {
+        "n": "Langer Schwanzschleifspur + Pfoten",
+        "c": "Biber"
+      },
+      {
+        "n": "Schwanzabdruck im Schnee + 4 Pfoten",
+        "c": "Eichhoernchen"
+      },
+      {
+        "n": "Hufe + Klauen-Grübchen, herzförmig",
+        "c": "Hirsch"
+      },
+      {
+        "n": "Grosse runde Pfote ohne Krallen",
+        "c": "Bär"
       }
     ]
   },
@@ -326,6 +366,46 @@
       {
         "n": "Löcher in Holz (rund, innen hohl)",
         "c": "Specht"
+      },
+      {
+        "n": "Kugelnest aus Blättern, hängt im Baum",
+        "c": "Mäusebussard"
+      },
+      {
+        "n": "Grabgang unter Boden mit Nestblase",
+        "c": "Maulwurf"
+      },
+      {
+        "n": "Kobelnest aus Zweigen hoch im Baum",
+        "c": "Eichhörnchen"
+      },
+      {
+        "n": "Seidensack zwischen Grashalmen",
+        "c": "Webspinne"
+      },
+      {
+        "n": "Kreisförmiger Honigwabenstock",
+        "c": "Honigbiene"
+      },
+      {
+        "n": "Spiraliger Sandtrichter im Boden",
+        "c": "Ameisenlöwe"
+      },
+      {
+        "n": "Hängekorbförmig aus Pflanzenfasern",
+        "c": "Webervogel"
+      },
+      {
+        "n": "Wassergebundene Staudamm + Biberburg",
+        "c": "Biber"
+      },
+      {
+        "n": "Große runde Nesthöhle in Felswand",
+        "c": "Wanderfalke"
+      },
+      {
+        "n": "Wasserkugelartig unter Blatt",
+        "c": "Schnakenlarve"
       }
     ]
   },
@@ -491,6 +571,46 @@
       {
         "n": "Dunkler Rücken, heller Bauch",
         "c": "Delfin (Gegenschattierung)"
+      },
+      {
+        "n": "Flach wie Sandkorn am Meeresboden",
+        "c": "Steinbutt"
+      },
+      {
+        "n": "Identisch wie Stöckchen an Tannenzweig",
+        "c": "Stabheuschrecke"
+      },
+      {
+        "n": "Schneeweiß im Winter",
+        "c": "Schneehuhn"
+      },
+      {
+        "n": "Blaues Bauchband macht es von oben unsichtbar",
+        "c": "Blauer Marlin"
+      },
+      {
+        "n": "Schwarze und gelbe Streifen imitieren Wespe",
+        "c": "Wespenbock"
+      },
+      {
+        "n": "Muster identisch wie Rindenstruktur des Baumes",
+        "c": "Nachtschwalbe"
+      },
+      {
+        "n": "Farbwechsel in Sekunden — Haut passt sich an",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Augenflecken auf Flügeln schrecken Feinde ab",
+        "c": "Pfauenauge"
+      },
+      {
+        "n": "Hellbraun mit Blattaderstruktur",
+        "c": "Blattschrecke"
+      },
+      {
+        "n": "Vollständige Weißfärbung im Winter (saisonale)",
+        "c": "Hermelin"
       }
     ]
   },
@@ -662,6 +782,46 @@
       {
         "n": "Totholz (Zelluloseabbau)",
         "c": "Termite"
+      },
+      {
+        "n": "Kiwi",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Panda (Riesenpanda)",
+        "c": "Herbivor (Bambus-Spezialist)"
+      },
+      {
+        "n": "Hyäne",
+        "c": "Aasfresser + Karnivor"
+      },
+      {
+        "n": "Geier",
+        "c": "Aasfresser"
+      },
+      {
+        "n": "Flamingo",
+        "c": "Filtrierer (Algen, Krebse)"
+      },
+      {
+        "n": "Wal (Blauwal)",
+        "c": "Filtrierer (Krill)"
+      },
+      {
+        "n": "Seestern",
+        "c": "Omnivor / Karnivor"
+      },
+      {
+        "n": "Oktopus",
+        "c": "Karnivor"
+      },
+      {
+        "n": "Biber",
+        "c": "Herbivor (Holz, Rinde)"
+      },
+      {
+        "n": "Pandabär",
+        "c": "Herbivor"
       }
     ]
   },
@@ -827,6 +987,46 @@
       {
         "n": "Boa constrictor + Beute (direkt töten)",
         "c": "Räuber-Beute"
+      },
+      {
+        "n": "Nilkrokodil",
+        "c": "Flussuferläufer (Zähne reinigen)"
+      },
+      {
+        "n": "Nashorn",
+        "c": "Madenhacker (Parasiten fressen)"
+      },
+      {
+        "n": "Krabbenangehörigen (Hermit Crab)",
+        "c": "Seeanemone (Tarnung)"
+      },
+      {
+        "n": "Humboldtpinguin",
+        "c": "Guano → Fischgründe"
+      },
+      {
+        "n": "Koralle",
+        "c": "Zooxanthellen (Algen, Fotosynthese)"
+      },
+      {
+        "n": "Ameise (Schneider)",
+        "c": "Pilz (Zucht im Nest)"
+      },
+      {
+        "n": "Tamarinde-Baum",
+        "c": "Scharlachfresser (Samenverbreitung)"
+      },
+      {
+        "n": "Dachse (Badger)",
+        "c": "Honigkuckuck (Bienenstock-Lokalisierung)"
+      },
+      {
+        "n": "Fischotter",
+        "c": "Seegras-Ökosystem (Gleichgewicht)"
+      },
+      {
+        "n": "Erdmännchen",
+        "c": "Drosseln (Warnrufe teilen)"
       }
     ]
   },
@@ -912,6 +1112,126 @@
       {
         "n": "2 Meter, jaegt Fische an Flussoberflaeche",
         "c": "Grizzly"
+      },
+      {
+        "n": "900 Meter Tiefe, sucht Kraken",
+        "c": "Elefantrobbe"
+      },
+      {
+        "n": "700 Meter Tiefe, Jagd mit Sonar",
+        "c": "Delphin"
+      },
+      {
+        "n": "535 Meter, Weltrekord Vogel",
+        "c": "Kaiseringuin"
+      },
+      {
+        "n": "600 Meter Tiefe, Fische und Kraken",
+        "c": "Schwertwal"
+      },
+      {
+        "n": "300 Meter Tiefe, meist Kalmare",
+        "c": "Tümmler"
+      },
+      {
+        "n": "450 Meter Tiefe, Seehund",
+        "c": "Weddell-Robbe"
+      },
+      {
+        "n": "Bis 200 Meter – Seegras und Muscheln",
+        "c": "Meeresschildkröte"
+      },
+      {
+        "n": "Bis 150 Meter – Hummer und Fische",
+        "c": "Taucher-Ente"
+      },
+      {
+        "n": "Bis 1200 Meter – Tintenfische",
+        "c": "Ziphius (Cuvier)"
+      },
+      {
+        "n": "Bis 100 Meter – Nauplien und Krill",
+        "c": "Blauwal"
+      },
+      {
+        "n": "Bis 70 Meter – Fischgründe",
+        "c": "Cormorant (Kormoran)"
+      },
+      {
+        "n": "Bis 500 Meter – Tintenfische und Garnelen",
+        "c": "Sperm Whale (Pottwal)"
+      },
+      {
+        "n": "Bis 30 Meter – Algen und Seegras",
+        "c": "Dugong (Seekuh)"
+      },
+      {
+        "n": "Bis 400 Meter – Fischzüge",
+        "c": "Gänseschnabel-Wal"
+      },
+      {
+        "n": "Bis 800 Meter – Nahrungssuche",
+        "c": "Minke-Wal"
+      },
+      {
+        "n": "Bis 25 Meter – Fische in Korallenriffen",
+        "c": "Delphinart (Indopazifik)"
+      },
+      {
+        "n": "Bis 60 Meter – Mollusken und Krabben",
+        "c": "Fischotter"
+      },
+      {
+        "n": "Bis 250 Meter – Tintenfische",
+        "c": "Langflossen-Pilotenwal"
+      },
+      {
+        "n": "Bis 50 Meter – Fische und Garnelen",
+        "c": "Ringelrobbe"
+      },
+      {
+        "n": "Bis 350 Meter – Tiefwasser-Jagd",
+        "c": "Südlicher Elefantrobbe"
+      },
+      {
+        "n": "Rekord: 326 Meter (tiefster Tauchgang Vogel)",
+        "c": "Kaiserpinguin"
+      },
+      {
+        "n": "Rekord: 1.888 Meter (Zahnwal)",
+        "c": "Pottwal"
+      },
+      {
+        "n": "Bis 500 Meter in Tiefseebereich",
+        "c": "Elefantenrobbe"
+      },
+      {
+        "n": "Bis 700 Meter, Tintenfisch jagend",
+        "c": "Spermwal (Beute)"
+      },
+      {
+        "n": "Bis 300 Meter regelmäßig",
+        "c": "Nördlicher Seelöwe"
+      },
+      {
+        "n": "Bis 200 Meter auf Nahrungssuche",
+        "c": "Buckelwal"
+      },
+      {
+        "n": "Bis 100 Meter, Meeresboden-Rührer",
+        "c": "Walross"
+      },
+      {
+        "n": "Bis 400 Meter, tropische Tiefzonen",
+        "c": "Echter Pottwal"
+      },
+      {
+        "n": "Bis 150 Meter in Küstengewässern",
+        "c": "Große Tümmler"
+      },
+      {
+        "n": "Bis 50 Meter, Flossen-Ruder-Technik",
+        "c": "Meeresschildkröte"
       }
     ]
   },
@@ -1077,6 +1397,46 @@
       {
         "n": "Streifenskunk (weiße Streifen)",
         "c": "Aposematismus"
+      },
+      {
+        "n": "Sieht aus wie giftiger Feuersalamander (Gelb-Schwarz)",
+        "c": "Gefleckter Salamander"
+      },
+      {
+        "n": "Kopiert Körperform + Farbe des Gemeinen Oktopus",
+        "c": "Wunderkrake (Mimic Octopus)"
+      },
+      {
+        "n": "Tarnt sich als Laubhaufen im Gebüsch",
+        "c": "Blattschmetterling"
+      },
+      {
+        "n": "Flügelmuster wie Auge eines Raubvogels",
+        "c": "Nachtpfauenauge"
+      },
+      {
+        "n": "Imitiert Bewegung und Form einer Wespe",
+        "c": "Wespen-Glasflügler"
+      },
+      {
+        "n": "Sieht aus wie Schlangenrücken (Bauchzeichnung)",
+        "c": "Raupe des Schwalbenschwanzes"
+      },
+      {
+        "n": "Gelb-schwarze Warnfärbung aber harmlos",
+        "c": "Schwebfliege"
+      },
+      {
+        "n": "Kopiert Aussehen des Meerwassers (Tentakel)",
+        "c": "Steinfisch (Synanceia)"
+      },
+      {
+        "n": "Haut identisch wie Meeresgrund",
+        "c": "Taschenkrebs"
+      },
+      {
+        "n": "Aussehen und Geruch einer Blüte zur Täuschung",
+        "c": "Gottesanbeterin"
       }
     ]
   },
@@ -1230,6 +1590,138 @@
       {
         "n": "Ei → Wurm → Geschlechtsreif",
         "c": "Regenwurm (direkte Entwicklung)"
+      },
+      {
+        "n": "Rote Schachtelhalmlarve → Libelle",
+        "c": "Gebänderte Prachtlibelle"
+      },
+      {
+        "n": "Wurmähnliche Made → Biene",
+        "c": "Honigbiene"
+      },
+      {
+        "n": "Köcherfliegen-Larve (Steinchen-Haus) → Fliege",
+        "c": "Köcherfliege"
+      },
+      {
+        "n": "Gelb-grüne Raupe mit Hornfortsatz → Schwärmer",
+        "c": "Ligusterschwärmer"
+      },
+      {
+        "n": "Kaulquappe mit Schwanz → Frosch ohne Schwanz",
+        "c": "Grasfrosch"
+      },
+      {
+        "n": "Larve im Meer → Seestern-Adult",
+        "c": "Gemeiner Seestern"
+      },
+      {
+        "n": "Nymphe ohne Flügel → geflügelter Erwachsener",
+        "c": "Heuschrecke"
+      },
+      {
+        "n": "Meereslarve (Nauplius) → Krebs",
+        "c": "Taschenkrebs"
+      },
+      {
+        "n": "Puppe mit Seidenhülle → Nachtschmetterling",
+        "c": "Mondvogel"
+      },
+      {
+        "n": "Aquatische Larve → terrestrische Imago",
+        "c": "Steinfliegenart"
+      },
+      {
+        "n": "Weiche Kaulquappe → Molch-Adult",
+        "c": "Feuersalamander"
+      },
+      {
+        "n": "Larve im Blattwerk → Blattwespe",
+        "c": "Rosenblatt-Blattwespe"
+      },
+      {
+        "n": "Puppe hängt frei, kein Gespinst",
+        "c": "Tagfalter"
+      },
+      {
+        "n": "Raupe mit fünf orangen Flecken, tropisch",
+        "c": "Monarchfalter"
+      },
+      {
+        "n": "Grüne Raupe mit Schlangenmuster Südamerika",
+        "c": "Comet Moth"
+      },
+      {
+        "n": "Kaulquappe mit fedenähnlichen Kiemen",
+        "c": "Feuersalamander"
+      },
+      {
+        "n": "Weiße Larve im Salzwasser",
+        "c": "Garnele"
+      },
+      {
+        "n": "Cypris-Larve an Steinen festgesetzt",
+        "c": "Rankenfußkrebs"
+      },
+      {
+        "n": "Cercaria verlässt Schnecke im Wasser",
+        "c": "Saugwurm"
+      },
+      {
+        "n": "Axolotl-Stadium — kann Kiemen behalten",
+        "c": "Mexikanischer Axolotl"
+      },
+      {
+        "n": "Dolchläufer-Larve der Wachsmotten",
+        "c": "Galleria mellonella"
+      },
+      {
+        "n": "Pellucide Larve im Meerwasser treibend",
+        "c": "Seespinne"
+      },
+      {
+        "n": "Chrysalis (Schmetterlingspuppe) an Ast",
+        "c": "Schwalbenschwanz"
+      },
+      {
+        "n": "Puppe mit Goldflecken glänzend",
+        "c": "Passionsfalter"
+      },
+      {
+        "n": "Nymphe sieht Mini-Erwachsener aus",
+        "c": "Heuschrecke"
+      },
+      {
+        "n": "Nymphe im Wasser, Erwachsener auf Land",
+        "c": "Eintagsfliege"
+      },
+      {
+        "n": "Larve baut Trichter im Sand",
+        "c": "Ameisenlöwe"
+      },
+      {
+        "n": "Puppe schwebt im Wasser",
+        "c": "Stechmücke"
+      },
+      {
+        "n": "Larve lebt unter Baumrinde",
+        "c": "Hirschkäfer"
+      },
+      {
+        "n": "Weißer Käferlarve im Holz",
+        "c": "Bockkäfer"
+      },
+      {
+        "n": "Gelb-schwarz-gestreifte Larve",
+        "c": "Jakobskraut-Bär"
+      },
+      {
+        "n": "Verpuppung in Erdkammer",
+        "c": "Mistkäfer"
+      },
+      {
+        "n": "Plankton-Larve wird Seepocke",
+        "c": "Seepocke (Barnacle)"
       }
     ]
   },
@@ -1395,6 +1887,46 @@
       {
         "n": "Dinoflagellat Alexandrium (Rote Tide, wenn beleuchtet)",
         "c": "Phytoplankton"
+      },
+      {
+        "n": "Blinkt grün-gelblich im Waldboden",
+        "c": "Glühwürmchen"
+      },
+      {
+        "n": "Meeresleuchtfleck bei Nacht im Indischen Ozean",
+        "c": "Dinoflagellaten"
+      },
+      {
+        "n": "Schimmert blau an Küsten im Dunkeln",
+        "c": "Noctiluca scintillans"
+      },
+      {
+        "n": "Tentakel leuchten blau bei Reizung",
+        "c": "Feuerqualle"
+      },
+      {
+        "n": "Leuchtet unter Moos und Totholz",
+        "c": "Oxyporus-Käfer (Glühwurm)"
+      },
+      {
+        "n": "Zwei leuchtende Punkte hinter Kopf",
+        "c": "Schnallenkäfer (Click Beetle)"
+      },
+      {
+        "n": "Leuchtet grün nach Fressakt",
+        "c": "Milzbrand-Bakterium (in Fleisch)"
+      },
+      {
+        "n": "Photophore am Bauch, mariner Tintenfisch",
+        "c": "Firefly Squid (Leuchtkalmar)"
+      },
+      {
+        "n": "Rotes Glühen an Kiemen im Dunkeln",
+        "c": "Leuchtpilze (Omphalotus)"
+      },
+      {
+        "n": "Blau leuchtendes Adergeflecht unter Haut",
+        "c": "Hawaiianische Bobtail-Tintenfisch"
       }
     ]
   },
@@ -1480,6 +2012,126 @@
       {
         "n": "Hat Panzerplatten aus Keratin statt Knochen",
         "c": "Guerteltier"
+      },
+      {
+        "n": "Hat keinen Kehlkopf – Schnurren entsteht im Zungenbein",
+        "c": "Großkatze (Löwe)"
+      },
+      {
+        "n": "Besitzt 3 Herzkammern (kein 4-Kammer-Herz)",
+        "c": "Fisch"
+      },
+      {
+        "n": "Hat als einziges Säugetier keinen Knochen im Penis",
+        "c": "Mensch"
+      },
+      {
+        "n": "Kann seinen Kopf um 270 Grad drehen",
+        "c": "Eule"
+      },
+      {
+        "n": "Hat blaues Blut (Hämocyanin statt Hämoglobin)",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Besitzt 4 Mägen zur Wiederverwertung der Nahrung",
+        "c": "Kuh"
+      },
+      {
+        "n": "Hat keine Gallenblase",
+        "c": "Pferd"
+      },
+      {
+        "n": "Sieht UV-Licht, das für Menschen unsichtbar ist",
+        "c": "Biene"
+      },
+      {
+        "n": "Hat Fingerabdrücke fast identisch mit Menschenaffen",
+        "c": "Koala"
+      },
+      {
+        "n": "Kann Farben mit der Haut sehen, obwohl farbenblind",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Hat kein Gehirn, aber ein Nervennetz",
+        "c": "Qualle"
+      },
+      {
+        "n": "Hat 32 Gehirne (Segmentherzen)",
+        "c": "Blutegel"
+      },
+      {
+        "n": "Besitzt Wärmebildsensoren in der Schnauze",
+        "c": "Klapperschlange"
+      },
+      {
+        "n": "Hat Zähne aus Keratin (nicht Calciumphosphat)",
+        "c": "Schnabeltier"
+      },
+      {
+        "n": "Kann Körperwärme separat regulieren",
+        "c": "Tukan"
+      },
+      {
+        "n": "Hat einen Magnetit-Kompass im Schnabel",
+        "c": "Zugvogel (Rotkehlchen)"
+      },
+      {
+        "n": "Besitzt ein drittes Auge (Scheitalauge) auf dem Kopf",
+        "c": "Tuatara"
+      },
+      {
+        "n": "Hat kein Skelett – nur Knorpel",
+        "c": "Hai"
+      },
+      {
+        "n": "Hat 360-Grad-Rundsicht ohne Kopfdrehen",
+        "c": "Hase"
+      },
+      {
+        "n": "Besitzt bis zu 15.000 Facettenaugen",
+        "c": "Libelle"
+      },
+      {
+        "n": "Kein Magen — direkte Nahrungsaufnahme im Darm",
+        "c": "Plattwurm"
+      },
+      {
+        "n": "Herz hat nur 1 Kammer (Kreislauf vereinfacht)",
+        "c": "Fisch"
+      },
+      {
+        "n": "Besitzt 3 Herzen und blaues Kupfer-Blut",
+        "c": "Oktopus"
+      },
+      {
+        "n": "Lunge sitzt am Rücken, nicht vorne",
+        "c": "Frosch"
+      },
+      {
+        "n": "Knochen sind hohl und mit Luft gefüllt",
+        "c": "Vogel"
+      },
+      {
+        "n": "Blindes Auge: Kopf auf einer Seite nach Metamorph.",
+        "c": "Scholle"
+      },
+      {
+        "n": "Kein Skelett, nur Wasserdruck hält Form aufrecht",
+        "c": "Qualle"
+      },
+      {
+        "n": "Verdauungssystem fehlt — nur Saugen",
+        "c": "Bandwurm"
+      },
+      {
+        "n": "Kein Gehirn, verteiltes Nervensystem",
+        "c": "Seestern"
+      },
+      {
+        "n": "Zunge ist länger als Körper",
+        "c": "Chamäleon"
       }
     ]
   },
@@ -1645,6 +2297,46 @@
       {
         "n": "Ratterndes Schnauben (Verteidigung)",
         "c": "Gürteltier"
+      },
+      {
+        "n": "Ultraschall-Klicklaute zur Echolotung",
+        "c": "Fledermaus"
+      },
+      {
+        "n": "Infraschall, von 20 Hz — Menschen kaum hörbar",
+        "c": "Elefant"
+      },
+      {
+        "n": "Laut wie Motorsäge: bis 130 dB",
+        "c": "Schnappende Garnele"
+      },
+      {
+        "n": "Brüllen bis 3 Meilen weit hörbar",
+        "c": "Brüllaffe"
+      },
+      {
+        "n": "Pfeift scharf bei Angst oder Warnung",
+        "c": "Murmeltier"
+      },
+      {
+        "n": "Tiefes Muhen bis 400 Hz",
+        "c": "Hausrind"
+      },
+      {
+        "n": "Klickt mit Schnabel als Warnsignal",
+        "c": "Weißstorch"
+      },
+      {
+        "n": "Singt nachts komplexe Melodien",
+        "c": "Nachtigall"
+      },
+      {
+        "n": "Imitiert Kettensägen, Kameras, andere Vögel",
+        "c": "Lyravogel"
+      },
+      {
+        "n": "Kehren mit 187 dB lautestes Lebewesen",
+        "c": "Blauwal"
       }
     ]
   },
@@ -1810,6 +2502,46 @@
       {
         "n": "Magnetit-Kristalle im Schnabel",
         "c": "Brieftaube"
+      },
+      {
+        "n": "Riecht mit 300 Mio. Riechrezeptoren",
+        "c": "Hund"
+      },
+      {
+        "n": "Sieht Infrarot-Wärme mit Grubenorgan",
+        "c": "Grubenottern"
+      },
+      {
+        "n": "Magnetorientierung über Magnetit im Gewebe",
+        "c": "Zugvögel"
+      },
+      {
+        "n": "Hört bis 100 kHz Ultraschall",
+        "c": "Fledermaus"
+      },
+      {
+        "n": "Tastet Vibrationen im Wasser durch Seitenlinie",
+        "c": "Fisch"
+      },
+      {
+        "n": "Schmeckt mit Füssen beim Laufen",
+        "c": "Schmetterling"
+      },
+      {
+        "n": "Riecht Blut in 100m Entfernung unter Wasser",
+        "c": "Weißer Hai"
+      },
+      {
+        "n": "Elektrische Felder durch Lorenzini-Ampullen",
+        "c": "Hai"
+      },
+      {
+        "n": "Piezo-Druck-Sensor in Schnabel für Beute",
+        "c": "Ente"
+      },
+      {
+        "n": "Sieht 4 Farbkanäle (UV inkl.)",
+        "c": "Mantiskrebs"
       }
     ]
   },
@@ -1979,6 +2711,46 @@
       {
         "n": "Antarktische Meeresechse",
         "c": "Antarktis (Südpol)"
+      },
+      {
+        "n": "Schnee-Eule",
+        "c": "Arktis"
+      },
+      {
+        "n": "Moschusochse",
+        "c": "Arktis"
+      },
+      {
+        "n": "Arktischer Fuchs",
+        "c": "Arktis"
+      },
+      {
+        "n": "Renntier (Caribou)",
+        "c": "Arktis/Subarktis"
+      },
+      {
+        "n": "Adélie-Pinguin",
+        "c": "Antarktis"
+      },
+      {
+        "n": "Krabbenesser",
+        "c": "Antarktis"
+      },
+      {
+        "n": "Skua (Raubmöwe)",
+        "c": "Antarktis"
+      },
+      {
+        "n": "Eisfuchs",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Schneelemming",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Rentier (Karibu)",
+        "c": "Arktis (Nordpol)"
       }
     ]
   },
@@ -2140,6 +2912,130 @@
       {
         "n": "Vigors-Sonnenvogel",
         "c": "Nicholas Aylward Vigors"
+      },
+      {
+        "n": "Darwins Fink",
+        "c": "Charles Darwin"
+      },
+      {
+        "n": "Humboldts Pinguinart",
+        "c": "Alexander von Humboldt"
+      },
+      {
+        "n": "Newtons Gazelle",
+        "c": "Isaac Newton (nach)"
+      },
+      {
+        "n": "Blainvilles Schnabelwal",
+        "c": "Henri de Blainville"
+      },
+      {
+        "n": "Cuviers Schnabelwal",
+        "c": "Georges Cuvier"
+      },
+      {
+        "n": "Gould-Diamant (Vogel)",
+        "c": "John Gould"
+      },
+      {
+        "n": "Lehmanni-Giftfrosch",
+        "c": "Frederico Lehmann"
+      },
+      {
+        "n": "Wallacei-Seegurke",
+        "c": "Alfred Russel Wallace"
+      },
+      {
+        "n": "Bartrams Strandläufer",
+        "c": "William Bartram"
+      },
+      {
+        "n": "Flinderskalmar",
+        "c": "Matthew Flinders"
+      },
+      {
+        "n": "Sclaters Pitu (Vogel)",
+        "c": "Philip Sclater"
+      },
+      {
+        "n": "Wallace-Linie (Tiergeografie)",
+        "c": "Alfred Russel Wallace"
+      },
+      {
+        "n": "Audubon-Schwindler (Vogel)",
+        "c": "John James Audubon"
+      },
+      {
+        "n": "Linné-System Binomialklassifikation",
+        "c": "Carl von Linné"
+      },
+      {
+        "n": "Humboldtpinguin",
+        "c": "Alexander von Humboldt"
+      },
+      {
+        "n": "Lyells Falte (Geologie)",
+        "c": "Charles Lyell"
+      },
+      {
+        "n": "Dobzhanskys Taufliege-Experiment",
+        "c": "Theodosius Dobzhansky"
+      },
+      {
+        "n": "Konrad Lorenz' Graugans",
+        "c": "Konrad Lorenz"
+      },
+      {
+        "n": "Jane Goodalls Schimpansen-Forschung",
+        "c": "Jane Goodall"
+      },
+      {
+        "n": "Dian Fossey — Berggorilla",
+        "c": "Dian Fossey"
+      },
+      {
+        "n": "Edward O. Wilson — Ameisenforscher",
+        "c": "E.O. Wilson"
+      },
+      {
+        "n": "Karl von Frisch Bienentanz",
+        "c": "Karl von Frisch"
+      },
+      {
+        "n": "Niko Tinbergen Möwen-Küken",
+        "c": "Niko Tinbergen"
+      },
+      {
+        "n": "Carl Akeley — Gorilla-Präparation",
+        "c": "Carl Akeley"
+      },
+      {
+        "n": "Othniel Marsh Dinosaurierfunde",
+        "c": "Othniel C. Marsh"
+      },
+      {
+        "n": "Louis Agassiz Eiszeitlehre",
+        "c": "Louis Agassiz"
+      },
+      {
+        "n": "Morgan Hunt Taufliegen-Genetik",
+        "c": "Thomas Hunt Morgan"
+      },
+      {
+        "n": "Beagle-Riff (Darwin)",
+        "c": "HMS Beagle / Darwin"
+      },
+      {
+        "n": "Pavlov-Reflex (Hund und Glocke)",
+        "c": "Iwan Pawlow"
+      },
+      {
+        "n": "Skinner-Box Ratte / Taube",
+        "c": "B. F. Skinner"
+      },
+      {
+        "n": "Leakey-Funde Olduvai-Schlucht",
+        "c": "Mary Leakey"
       }
     ]
   },
@@ -2311,6 +3207,46 @@
       {
         "n": "Polychaet-Wurm (Tiefsee)",
         "c": "Abyssopelagial (4000-6000m)"
+      },
+      {
+        "n": "Roter Tiefseegarnele",
+        "c": "Bathypelagial (200-1000m)"
+      },
+      {
+        "n": "Dragonfish (Zähnchenbarsch)",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Vampirtintenfisch",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Riesenkalmar (Architeuthis)",
+        "c": "Mesopelagial–Bathypelagial"
+      },
+      {
+        "n": "Tintenfisch Humboldt",
+        "c": "Mesopelagial"
+      },
+      {
+        "n": "Geisterfisch (Chauliodus)",
+        "c": "Mesopelagial"
+      },
+      {
+        "n": "Tiefseekrake",
+        "c": "Hadopelagial (6000m+)"
+      },
+      {
+        "n": "Schnabeldelfin (Ziphiidae)",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Sternrochen",
+        "c": "Epipelagial (Bodennah)"
+      },
+      {
+        "n": "Tiefsee-Tintenfisch (Architeuthis)",
+        "c": "Bathypelagial (1000-4000m)"
       }
     ]
   },
@@ -2472,6 +3408,126 @@
       {
         "n": "Kalahari-Löwe",
         "c": "Kalahari"
+      },
+      {
+        "n": "Fennec-Fuchs",
+        "c": "Sahara"
+      },
+      {
+        "n": "Gabelbock-Antilope",
+        "c": "Nordamerika (Präriewüste)"
+      },
+      {
+        "n": "Sahara-Silberspiegel-Ameise",
+        "c": "Sahara"
+      },
+      {
+        "n": "Tümmler (Aride Küstenzone)",
+        "c": "Atacama-Küste"
+      },
+      {
+        "n": "Trampeltier (Baktrisches Kamel)",
+        "c": "Gobi-Wüste"
+      },
+      {
+        "n": "Wüsten-Igel (Paraechinus aethiopicus)",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Hornviper (Cerastes)",
+        "c": "Nordafrika"
+      },
+      {
+        "n": "Thordickfuß (Sunda-Colugo?)",
+        "c": "Australische Wüste"
+      },
+      {
+        "n": "Namib-Nebeltrinker-Käfer",
+        "c": "Namib"
+      },
+      {
+        "n": "Wüstenrenner (Lacertidae der Sahara)",
+        "c": "Sahara"
+      },
+      {
+        "n": "Fennek (Wüstenfuchs)",
+        "c": "Sahara"
+      },
+      {
+        "n": "Meerkatz-Sand (Fennec Fox)",
+        "c": "Nordafrika"
+      },
+      {
+        "n": "Dorneufel (Moloch horridus)",
+        "c": "Australien"
+      },
+      {
+        "n": "Oryxantilope",
+        "c": "Arabische Halbinsel"
+      },
+      {
+        "n": "Wüstenrennmaus",
+        "c": "Gobi/Sahara"
+      },
+      {
+        "n": "Addax (Mendes-Antilope)",
+        "c": "Sahara"
+      },
+      {
+        "n": "Rüsselspringer",
+        "c": "Ostafrika"
+      },
+      {
+        "n": "Kalahari-Springmaus",
+        "c": "Kalahari"
+      },
+      {
+        "n": "Sandkörner-Eidechse",
+        "c": "Sahara"
+      },
+      {
+        "n": "Wüsteniguana",
+        "c": "Chihuahua-Wüste"
+      },
+      {
+        "n": "Baumwollschwanz-Kaninchen (Cottontail)",
+        "c": "Sonora-Wüste"
+      },
+      {
+        "n": "Gilatier (Krötenechse)",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Wüstenschnecke (Sphincterochila)",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Kamel-Grille",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Wüstenspringmaus (Jerboa)",
+        "c": "Sahara/Gobi"
+      },
+      {
+        "n": "Wüstenthynna (Wespe)",
+        "c": "Australien"
+      },
+      {
+        "n": "Thorny Devil (Stachel-Teufel)",
+        "c": "Australien"
+      },
+      {
+        "n": "Wüstenspinne Camel Spider",
+        "c": "Sahara/Arabien"
+      },
+      {
+        "n": "Sandklimber-Eidechse (Fringe-toed)",
+        "c": "Colorado-Wüste"
+      },
+      {
+        "n": "Saiga-Antilope",
+        "c": "Zentralasien/Steppe"
       }
     ]
   },
@@ -2637,6 +3693,46 @@
       {
         "n": "Korallenschlange (Ostamerika)",
         "c": "USA/Mexiko"
+      },
+      {
+        "n": "Steinkoralle (Steinfisch Synanceia)",
+        "c": "Indopazifik"
+      },
+      {
+        "n": "Kobra (Naja)",
+        "c": "Indien/Afrika"
+      },
+      {
+        "n": "Taipan",
+        "c": "Australien"
+      },
+      {
+        "n": "Korallenotter",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Weißlippenviper",
+        "c": "Südostasien"
+      },
+      {
+        "n": "Krait",
+        "c": "Südasien"
+      },
+      {
+        "n": "Kastenqualle (Chironex fleckeri)",
+        "c": "Australien"
+      },
+      {
+        "n": "Kobra (Spectacled Cobra)",
+        "c": "Indien"
+      },
+      {
+        "n": "Tödliche Webspinne (Atrax robustus)",
+        "c": "Australien"
+      },
+      {
+        "n": "Boomslang (Dispholidus typus)",
+        "c": "Südafrika"
       }
     ]
   },
@@ -2802,6 +3898,54 @@
       {
         "n": "Karibu (Kanada)",
         "c": "Borealer Wald → Arktische Tundra"
+      },
+      {
+        "n": "Arktische Seeschwalbe",
+        "c": "Arktis → Antarktis (längste Migration)"
+      },
+      {
+        "n": "Grauwal",
+        "c": "Alaska → Mexiko"
+      },
+      {
+        "n": "Lachse (Pacific Salmon)",
+        "c": "Ozean → Geburtsfluss"
+      },
+      {
+        "n": "Zuggrasmücke",
+        "c": "Europa → Westafrika"
+      },
+      {
+        "n": "Galapagos-Pinguin (Küstenmigration)",
+        "c": "Galápagos-Inseln"
+      },
+      {
+        "n": "Gabelbock",
+        "c": "USA Wyoming → New Mexico"
+      },
+      {
+        "n": "Walross (Atlantik)",
+        "c": "Arktis (Sommer)"
+      },
+      {
+        "n": "Pazifische Lachse (Chinook)",
+        "c": "Pazifik → Süßwasser"
+      },
+      {
+        "n": "Bartgeier (Gypaetus barbatus)",
+        "c": "Gebirge Europas"
+      },
+      {
+        "n": "Große Trappe (Otis tarda)",
+        "c": "Zentral-/Osteuropa"
+      },
+      {
+        "n": "Seeschwalbe (Sterna hirundo)",
+        "c": "Antarktis → Arktis"
+      },
+      {
+        "n": "Nördlicher Gannet",
+        "c": "Nordsee (Sommer)"
       }
     ]
   },
@@ -2947,6 +4091,78 @@
       {
         "n": "Schultereinhalt",
         "c": "Übung: Vorhand auf innerer Spur"
+      },
+      {
+        "n": "Braune",
+        "c": "Dunkelbraunes Pferd mit schwarzen Extremit."
+      },
+      {
+        "n": "Stute",
+        "c": "Weibliches Pferd über 4 Jahre"
+      },
+      {
+        "n": "Hengst",
+        "c": "Männliches, nicht kastriertes Pferd"
+      },
+      {
+        "n": "Wallach",
+        "c": "Kastrierter Hengst"
+      },
+      {
+        "n": "Fohlen",
+        "c": "Junges Pferd bis 1 Jahr"
+      },
+      {
+        "n": "Jährling",
+        "c": "Pferd im 2. Lebensjahr"
+      },
+      {
+        "n": "Kaltblut",
+        "c": "Schweres Zugpferd"
+      },
+      {
+        "n": "Warmblut",
+        "c": "Sport- und Reitpferd"
+      },
+      {
+        "n": "Vollblut",
+        "c": "Reines Rennpferd"
+      },
+      {
+        "n": "Pony",
+        "c": "Kleines Pferd bis 148cm"
+      },
+      {
+        "n": "Apfelschimmel",
+        "c": "Graues Pferd mit runden Flecken"
+      },
+      {
+        "n": "Tigerschecke (Appaloosa)",
+        "c": "Geflecktes Pferd (Appaloosa-Typ)"
+      },
+      {
+        "n": "Palomino",
+        "c": "Goldgelbes Pferd"
+      },
+      {
+        "n": "Roan (Roano)",
+        "c": "Gemischtfarbiges Fell (weiß + Basisfarbe)"
+      },
+      {
+        "n": "Kastanie (Chestnut)",
+        "c": "Rotbraun ohne schwarze Mähne"
+      },
+      {
+        "n": "Dun (Falbe)",
+        "c": "Sandgelbes Pferd mit Aalstrich"
+      },
+      {
+        "n": "Cremello",
+        "c": "Sehr helles Pferd (doppelt dilut)"
+      },
+      {
+        "n": "Grau (Schimmel-Basis)",
+        "c": "Dunkle Haut, weißes Haar"
       }
     ]
   },
@@ -3033,6 +4249,126 @@
       {
         "n": "Gruppenvoltigieren",
         "c": "Voltigieren"
+      },
+      {
+        "n": "Galoppieren über 110 cm hohe Hindernisse",
+        "c": "Springreiten"
+      },
+      {
+        "n": "Präzise Schritte und Lektionen wie Piaffe",
+        "c": "Dressur"
+      },
+      {
+        "n": "Quer durch Wald und Feld über natürliche Hindernisse",
+        "c": "Geländereiten"
+      },
+      {
+        "n": "Runden auf Oval-Track, meist 1200 bis 2400 m",
+        "c": "Galopprennen"
+      },
+      {
+        "n": "Harness-Racing mit zweirädrigem Sulky",
+        "c": "Trabrennen"
+      },
+      {
+        "n": "Bunte Stangen bei 1.45 m bis 1.60 m Höhe",
+        "c": "Parcours-Springen (Grand Prix)"
+      },
+      {
+        "n": "Kombination aus Dressur, Gelände und Springen",
+        "c": "Vielseitigkeit (Eventing)"
+      },
+      {
+        "n": "Ausgedehntes Rennen über 80-160 km",
+        "c": "Distanzreiten"
+      },
+      {
+        "n": "Rinder-Hüten mit Pferd (Western)",
+        "c": "Cutting"
+      },
+      {
+        "n": "Schnelles Drehen in Achter um 2 Fässer",
+        "c": "Barrel Racing"
+      },
+      {
+        "n": "Galopprennen für Hindernisse (steeplechase)",
+        "c": "Jagdrennen"
+      },
+      {
+        "n": "Runden mit Polo-Mallet und Ball",
+        "c": "Polo"
+      },
+      {
+        "n": "Präzise Stop-Slides und Spin bei Western-Dressur",
+        "c": "Reining"
+      },
+      {
+        "n": "Pferd am langen Zügel ohne Reiter",
+        "c": "Longieren"
+      },
+      {
+        "n": "Hochschulelemente: Levade, Courbette, Kapriole",
+        "c": "Haute École"
+      },
+      {
+        "n": "Spontanes Hüten und Ausschneiden (Stock Horse)",
+        "c": "Camp Drafting"
+      },
+      {
+        "n": "Rennen im Schritt-ähnlichen Tölt (5-Gangpferd)",
+        "c": "Islandpferd-Rennen"
+      },
+      {
+        "n": "Trabrennen ohne Sulky, nur berittener Jockey",
+        "c": "Berittenes Trabrennen"
+      },
+      {
+        "n": "Equitation-Prüfung: Haltung und Sitz des Reiters",
+        "c": "Equitation"
+      },
+      {
+        "n": "Pferde-Quadrille: Formation à 4-8 Pferden",
+        "c": "Quadrille"
+      },
+      {
+        "n": "Geländereiten (Cross Country)",
+        "c": "Vielseitigkeit"
+      },
+      {
+        "n": "Dressurprüfung Grand Prix Spécial",
+        "c": "Dressur"
+      },
+      {
+        "n": "Springreiten Parcours",
+        "c": "Springen"
+      },
+      {
+        "n": "Polospiel zu Pferd",
+        "c": "Polo"
+      },
+      {
+        "n": "Westernreiten Cutting",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Westernreiten Reining",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Mounted Games",
+        "c": "Geschicklichkeit"
+      },
+      {
+        "n": "Fahrturnier (Kutschfahren)",
+        "c": "Fahren"
+      },
+      {
+        "n": "Voltigieren (Kunstturnen zu Pferd)",
+        "c": "Voltigieren"
+      },
+      {
+        "n": "Distanzreiten (Endurance)",
+        "c": "Distanzreiten"
       }
     ]
   }

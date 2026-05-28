@@ -166,6 +166,42 @@
       {
         "name": "Great Wall Marathon (China)",
         "val": 1999
+      },
+      {
+        "name": "New York Marathon (USA)",
+        "val": 1970
+      },
+      {
+        "name": "Honolulu Marathon (Hawaii, USA)",
+        "val": 1973
+      },
+      {
+        "name": "London Marathon (UK)",
+        "val": 1981
+      },
+      {
+        "name": "Comrades Ultra Marathon (Südafrika)",
+        "val": 1921
+      },
+      {
+        "name": "Polytechnic Marathon (UK)",
+        "val": 1909
+      },
+      {
+        "name": "Pikes Peak Marathon (USA)",
+        "val": 1956
+      },
+      {
+        "name": "Mumbai Marathon (Indien)",
+        "val": 2004
+      },
+      {
+        "name": "Athen-Marathon (Griechenland)",
+        "val": 1896
+      },
+      {
+        "name": "Paris-Marathon (Frankreich)",
+        "val": 1976
       }
     ]
   },
@@ -364,6 +400,14 @@
       {
         "name": "Lusail Iconic Stadium (Katar)",
         "val": 88
+      },
+      {
+        "name": "Nou Camp Nou Estadi (Barcelona renoviert)",
+        "val": 105
+      },
+      {
+        "name": "FNB Stadium (Johannesburg, Südafrika)",
+        "val": 95
       }
     ]
   },
@@ -562,6 +606,14 @@
       {
         "name": "Kylian Mbappe (PSG → Real Madrid, 2024, ablösefrei)",
         "val": 0
+      },
+      {
+        "name": "Moises Caicedo (Chelsea 2023)",
+        "val": 116
+      },
+      {
+        "name": "Declan Rice (Arsenal 2023)",
+        "val": 116
       }
     ]
   },
@@ -688,6 +740,86 @@
       {
         "name": "Antonietta Di Martino (Italien, 2007)",
         "val": 201
+      },
+      {
+        "name": "Charles Austin (USA, 1991)",
+        "val": 238
+      },
+      {
+        "name": "Igor Paklin (UdSSR, 1985)",
+        "val": 241
+      },
+      {
+        "name": "Bohdan Bondarenko (Ukraine, 2014)",
+        "val": 242
+      },
+      {
+        "name": "Sylwester Bednarek (Polen, 2020)",
+        "val": 235
+      },
+      {
+        "name": "High Jump WR Frauen: Stefka Kostadinova (1987)",
+        "val": 209
+      },
+      {
+        "name": "High Jump WR Frauen: Yaroslava Mahuchikh (2024)",
+        "val": 210
+      },
+      {
+        "name": "Zhang Guowei (China, 2015)",
+        "val": 238
+      },
+      {
+        "name": "Gianmarco Tamberi (Italien, 2016)",
+        "val": 241
+      },
+      {
+        "name": "Woo Sang-hyeok (Südkorea, 2022)",
+        "val": 235
+      },
+      {
+        "name": "Hamish Kerr (Neuseeland, 2024)",
+        "val": 235
+      },
+      {
+        "name": "Mondo Duplantis (Stabhochsprung WR 2024)",
+        "val": 626
+      },
+      {
+        "name": "Armand Duplantis (Stockholm, 2024)",
+        "val": 626
+      },
+      {
+        "name": "Renaud Lavillenie (Stabhochsprung, 2014)",
+        "val": 616
+      },
+      {
+        "name": "Sergei Bubka (Stabhochsprung, 1994)",
+        "val": 615
+      },
+      {
+        "name": "Sam Kendricks (USA, Stab 2019)",
+        "val": 593
+      },
+      {
+        "name": "Mutaz Essa Barshim (Katar WR indoor)",
+        "val": 243
+      },
+      {
+        "name": "Gianmarco Tamberi (Olympiasieger 2020)",
+        "val": 237
+      },
+      {
+        "name": "Patrik Sjöberg (Europäischer Rekord)",
+        "val": 242
+      },
+      {
+        "name": "Bohdan Bondarenko (Ukr. Outdoor)",
+        "val": 246
+      },
+      {
+        "name": "Blanka Vlasic (Kroatien, Frauen)",
+        "val": 208
       }
     ]
   },
@@ -886,6 +1018,14 @@
       {
         "name": "Katie Ledecky (Schwimmen, 2023)",
         "val": 3
+      },
+      {
+        "name": "Conor McGregor (UFC 2023)",
+        "val": 180
+      },
+      {
+        "name": "LeBron James (Lakers 2024)",
+        "val": 128
       }
     ]
   },
@@ -1004,6 +1144,94 @@
       {
         "name": "Amy Van Dyken (Schwimmen, USA)",
         "val": 4
+      },
+      {
+        "name": "Carl Lewis (Sprint+Weitsprung, USA)",
+        "val": 9
+      },
+      {
+        "name": "Paavo Nurmi (Laufen, Finnland)",
+        "val": 9
+      },
+      {
+        "name": "Marit Bjoergen (Skilanglauf, Norwegen)",
+        "val": 8
+      },
+      {
+        "name": "Ole Einar Bjoerndalen (Biathlon, Norwegen)",
+        "val": 8
+      },
+      {
+        "name": "Simone Biles (Turnen, USA, bis 2024)",
+        "val": 7
+      },
+      {
+        "name": "Bjorn Daehlie (Skilanglauf, Norwegen)",
+        "val": 8
+      },
+      {
+        "name": "Sawao Kato (Turnen, Japan)",
+        "val": 8
+      },
+      {
+        "name": "Dara Torres (Schwimmen, USA)",
+        "val": 4
+      },
+      {
+        "name": "Caitlin Jenner (Zehnkampf, USA, 1976)",
+        "val": 1
+      },
+      {
+        "name": "Nadia Comaneci (Turnen, Rumänien, 1976+80)",
+        "val": 5
+      },
+      {
+        "name": "Allyson Felix (Sprint, USA, bis 2021)",
+        "val": 7
+      },
+      {
+        "name": "Natalie Coughlin (Schwimmen, USA)",
+        "val": 3
+      },
+      {
+        "name": "Aleksandr Karelin (Ringen, Russland)",
+        "val": 3
+      },
+      {
+        "name": "Katie Ledecky (Schwimmen, USA, bis 2024)",
+        "val": 7
+      },
+      {
+        "name": "Ryan Lochte (Schwimmen, USA)",
+        "val": 6
+      },
+      {
+        "name": "Carl Lewis (Sprint/Weitsprung, USA)",
+        "val": 9
+      },
+      {
+        "name": "Bjørn Dæhlie (Ski, Norwegen)",
+        "val": 8
+      },
+      {
+        "name": "Birgit Fischer (Kanu, DDR/Deutschland)",
+        "val": 8
+      },
+      {
+        "name": "Eric Heiden (Eisschnelllauf, USA)",
+        "val": 5
+      },
+      {
+        "name": "Jenny Thompson (Schwimmen, USA 2x)",
+        "val": 8
+      },
+      {
+        "name": "Nadia Comaneci (Turnen, Rumänien)",
+        "val": 5
+      },
+      {
+        "name": "Kristin Otto (Schwimmen, DDR)",
+        "val": 6
       }
     ]
   },
@@ -1126,6 +1354,90 @@
       {
         "name": "Alisson Becker (Liverpool, 2024)",
         "val": 50
+      },
+      {
+        "name": "Jude Bellingham (Real Madrid, 2024)",
+        "val": 180
+      },
+      {
+        "name": "Erling Haaland (Manchester City, 2024)",
+        "val": 180
+      },
+      {
+        "name": "Gavi (FC Barcelona)",
+        "val": 120
+      },
+      {
+        "name": "Camavinga (Real Madrid)",
+        "val": 100
+      },
+      {
+        "name": "Federico Valverde (Real Madrid)",
+        "val": 120
+      },
+      {
+        "name": "Marcus Rashford (Manchester United)",
+        "val": 80
+      },
+      {
+        "name": "Rúben Dias (Manchester City)",
+        "val": 80
+      },
+      {
+        "name": "Bernardo Silva (Manchester City)",
+        "val": 80
+      },
+      {
+        "name": "Victor Osimhen (SSC Napoli→ gechext.)",
+        "val": 100
+      },
+      {
+        "name": "Declan Rice (Arsenal)",
+        "val": 100
+      },
+      {
+        "name": "Martin Ödegaard (Arsenal)",
+        "val": 100
+      },
+      {
+        "name": "Trent Alexander-Arnold (Liverpool)",
+        "val": 80
+      },
+      {
+        "name": "Virgil van Dijk (Liverpool)",
+        "val": 50
+      },
+      {
+        "name": "Phil Foden (Manchester City)",
+        "val": 150
+      },
+      {
+        "name": "Florian Wirtz (Bayer Leverkusen)",
+        "val": 130
+      },
+      {
+        "name": "Bukayo Saka (Arsenal FC)",
+        "val": 150
+      },
+      {
+        "name": "Rodri (Manchester City)",
+        "val": 120
+      },
+      {
+        "name": "Jamal Musiala (Bayern München)",
+        "val": 110
+      },
+      {
+        "name": "Eduardo Camavinga (Real Madrid)",
+        "val": 100
+      },
+      {
+        "name": "Erling Haaland (Hoechstwert ca. 2023)",
+        "val": 180
+      },
+      {
+        "name": "Jude Bellingham (Hoechstwert ca. 2024)",
+        "val": 180
       }
     ]
   },
@@ -1228,6 +1540,110 @@
       {
         "name": "Andrei Aramnau (Belarus, 105 kg, 2008)",
         "val": 436
+      },
+      {
+        "name": "Tian Tao (China, 89 kg WR Stoßen)",
+        "val": 220
+      },
+      {
+        "name": "Shi Zhiyong (China, 73 kg WR)",
+        "val": 374
+      },
+      {
+        "name": "Sohrab Moradi (Iran, 96 kg WR)",
+        "val": 477
+      },
+      {
+        "name": "Lyu Xiaojun (China, 81 kg WR Zweikampf)",
+        "val": 372
+      },
+      {
+        "name": "Vencelas Dabaya (Frankreich, 73 kg WR)",
+        "val": 173
+      },
+      {
+        "name": "Meso Hasanov (Aserbaidschan, 89 kg)",
+        "val": 200
+      },
+      {
+        "name": "Tuo Pulu (Tongafest. 73 kg WR Reißen)",
+        "val": 174
+      },
+      {
+        "name": "Simon Martirosyan (Armenien, 109 kg)",
+        "val": 480
+      },
+      {
+        "name": "Aleksei Lovchev (Russland, 105+ WR Stoßen 2015)",
+        "val": 264
+      },
+      {
+        "name": "Gor Minasyan (Armenien, 96 kg Stoßen)",
+        "val": 230
+      },
+      {
+        "name": "Behdad Salimi (Iran, 105+ WR)",
+        "val": 477
+      },
+      {
+        "name": "Kakhi Kakhiashvili (Griechenland, 94 kg)",
+        "val": 412
+      },
+      {
+        "name": "Ilya Ilyin (Kasachstan, 94 kg WR 2008)",
+        "val": 418
+      },
+      {
+        "name": "Arsen Kasabiev (Georgien 77 kg WR)",
+        "val": 400
+      },
+      {
+        "name": "Karlos Nasar (Bulgarien/USA, 89 kg 2024 WR)",
+        "val": 233
+      },
+      {
+        "name": "Ricardo Brisuela (Ecuador, 73 kg 2024)",
+        "val": 372
+      },
+      {
+        "name": "Chen Lijun (China, 67 kg WR Stoßen)",
+        "val": 198
+      },
+      {
+        "name": "Xu Xiaoming (China, 61 kg WR Stoßen)",
+        "val": 186
+      },
+      {
+        "name": "Ahmed El-Gendy (Ägypten, 61 kg)",
+        "val": 163
+      },
+      {
+        "name": "Eko Yuli Irawan (Indonesien, 61 kg WR Zwei.)",
+        "val": 319
+      },
+      {
+        "name": "Long Qingquan (China, 56 kg WR)",
+        "val": 307
+      },
+      {
+        "name": "Om Yun-chol (Nordkorea, 56 kg WR Reißen)",
+        "val": 140
+      },
+      {
+        "name": "Halil Mutlu (Türkei, 56 kg WR Stoßen 2000)",
+        "val": 168
+      },
+      {
+        "name": "Zhang Guozheng (China, 69 kg WR Stoßen)",
+        "val": 198
+      },
+      {
+        "name": "Wu Mei-Chin (Taiwan, Frauen 55 kg WR)",
+        "val": 248
+      },
+      {
+        "name": "Li Wenwen (China, Frauen >87 kg WR)",
+        "val": 337
       }
     ]
   },
@@ -1430,6 +1846,10 @@
       {
         "name": "Lusail Iconic Stadium (Katar)",
         "val": 2021
+      },
+      {
+        "name": "Camp Nou (FC Barcelona, Spanien)",
+        "val": 1957
       }
     ]
   },
@@ -1536,6 +1956,106 @@
       {
         "name": "Filippo Inzaghi (Serie A, 2000/01)",
         "val": 24
+      },
+      {
+        "name": "Lionel Messi (La Liga 2011/12, 50 Spiele)",
+        "val": 50
+      },
+      {
+        "name": "Robert Lewandowski (Bundesliga 2020/21)",
+        "val": 41
+      },
+      {
+        "name": "Gerd Müller (Bundesliga 1971/72)",
+        "val": 40
+      },
+      {
+        "name": "Cristiano Ronaldo (La Liga 2014/15)",
+        "val": 48
+      },
+      {
+        "name": "Jaime de Morais (Portugal, Saison 1965/66)",
+        "val": 49
+      },
+      {
+        "name": "Lionel Messi (La Liga 2012/13)",
+        "val": 46
+      },
+      {
+        "name": "Ronaldo Nazario (Corinthians 1998)",
+        "val": 34
+      },
+      {
+        "name": "Jimmy Greaves (Chelsea, England 1960/61)",
+        "val": 41
+      },
+      {
+        "name": "Archie Stark (USA NASL 1924/25)",
+        "val": 67
+      },
+      {
+        "name": "Dixie Dean (Everton, England 1927/28)",
+        "val": 60
+      },
+      {
+        "name": "Ferenc Deak (Ungarn 1946/47)",
+        "val": 59
+      },
+      {
+        "name": "Josef Bican (Österreich, tschech. 1944/45)",
+        "val": 79
+      },
+      {
+        "name": "Harry Kane (Tottenham 2017/18)",
+        "val": 41
+      },
+      {
+        "name": "Mo Salah (Liverpool PL+Cups 2017/18)",
+        "val": 44
+      },
+      {
+        "name": "Kylian Mbappe (PSG 2022/23 Ligue 1)",
+        "val": 29
+      },
+      {
+        "name": "Víctor Osimhen (Napoli 2022/23 Serie A)",
+        "val": 26
+      },
+      {
+        "name": "Benzema (Real Madrid 2021/22)",
+        "val": 44
+      },
+      {
+        "name": "Lewandowski (Bayern 2019/20 CL+Bun.)",
+        "val": 55
+      },
+      {
+        "name": "Son Heung-min (Tottenham 2022/23 PL)",
+        "val": 23
+      },
+      {
+        "name": "Florian Wirtz (Leverkusen 2023/24 Bun.)",
+        "val": 18
+      },
+      {
+        "name": "Harry Kane (Bayern München 2023/24 Bun.)",
+        "val": 36
+      },
+      {
+        "name": "Erling Haaland (Manchester City 2022/23 PL)",
+        "val": 36
+      },
+      {
+        "name": "Vinicius Jr (Real Madrid 2023/24)",
+        "val": 24
+      },
+      {
+        "name": "Lautaro Martinez (Inter 2023/24 Serie A)",
+        "val": 24
+      },
+      {
+        "name": "Romário (Fluminense, Brasilien)",
+        "val": 55
       }
     ]
   }

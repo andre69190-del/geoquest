@@ -171,6 +171,42 @@
       {
         "n": "Jericho (Tell es-Sultan)",
         "c": "Jungsteinzeit"
+      },
+      {
+        "n": "Kupferzeit (Chalkolithikum)",
+        "c": "4500–2200 v. Chr."
+      },
+      {
+        "n": "Bronzezeit",
+        "c": "2200–800 v. Chr."
+      },
+      {
+        "n": "Eisenzeit",
+        "c": "800–0 v. Chr."
+      },
+      {
+        "n": "Präkeramisches Neolithikum",
+        "c": "10000–7000 v. Chr."
+      },
+      {
+        "n": "Epoche der großen Wanderungen",
+        "c": "375–568 n. Chr."
+      },
+      {
+        "n": "Frühmittelalter",
+        "c": "6.–10. Jh. n. Chr."
+      },
+      {
+        "n": "Moustérien",
+        "c": "Mittelpaläolithikum, ~300000–30000 v. Chr."
+      },
+      {
+        "n": "Aurignacien",
+        "c": "Jungpaläolithikum, ~43000–28000 v. Chr."
+      },
+      {
+        "n": "Magdalénien",
+        "c": "Jungpaläolithikum, ~17000–12000 v. Chr."
       }
     ]
   },
@@ -338,6 +374,50 @@
       {
         "n": "Dampfmaschinen-Kolben (Watt)",
         "c": "Industriezeitalter"
+      },
+      {
+        "n": "Faustkeil",
+        "c": "Altsteinzeit"
+      },
+      {
+        "n": "Tonscherbe (Gefäß)",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Eisenmeißel",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Streitaxt aus Stein",
+        "c": "Schnurkeramikkultur"
+      },
+      {
+        "n": "Kupferdolch",
+        "c": "Chalkolithikum"
+      },
+      {
+        "n": "Holzbogen (Rekonstruktion)",
+        "c": "Mesolithikum"
+      },
+      {
+        "n": "Löffelbohrer",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Ahle aus Knochen",
+        "c": "Paläolithikum"
+      },
+      {
+        "n": "Mikrolith (Silexklinge)",
+        "c": "Mesolithikum"
+      },
+      {
+        "n": "Reibstein (Mano + Metate)",
+        "c": "Neolithikum/Mesoamerika"
+      },
+      {
+        "n": "Fischhaken aus Knochen",
+        "c": "Mesolithikum"
       }
     ]
   },
@@ -503,6 +583,46 @@
       {
         "n": "Avebury Forschung",
         "c": "John Aubrey"
+      },
+      {
+        "n": "Heinrich Schliemann",
+        "c": "Troja"
+      },
+      {
+        "n": "Howard Carter",
+        "c": "Tutanchamun"
+      },
+      {
+        "n": "Mary Leakey",
+        "c": "Olduvai-Schlucht (Australopithecus)"
+      },
+      {
+        "n": "Arthur Evans",
+        "c": "Knossos (Kreta)"
+      },
+      {
+        "n": "Kathleen Kenyon",
+        "c": "Jericho"
+      },
+      {
+        "n": "Louis Leakey",
+        "c": "Olduvai"
+      },
+      {
+        "n": "Flinders Petrie",
+        "c": "Ägyptische Stratigraphy"
+      },
+      {
+        "n": "Max Uhle",
+        "c": "Südamerikanische Archäologie"
+      },
+      {
+        "n": "Vere Gordon Childe",
+        "c": "Neolithische Revolution"
+      },
+      {
+        "n": "Robert Braidwood",
+        "c": "Fruchtbarer Halbmond"
       }
     ]
   },
@@ -594,6 +714,126 @@
       {
         "n": "Aminosaeure-Racemisierung in Muscheln",
         "c": "AAR-Datierung"
+      },
+      {
+        "n": "Verhältnis von Sauerstoffisotopen in Eisbohrkernen",
+        "c": "Isotopen-Stratigraphie"
+      },
+      {
+        "n": "Magnetisierung von Mineralien beim Abkühlen von Lava",
+        "c": "Paläomagnetismus"
+      },
+      {
+        "n": "Analyse von Pollen in Torfschichten",
+        "c": "Palynologie"
+      },
+      {
+        "n": "Tiefe des Fundes unter der Oberfläche",
+        "c": "Stratigraphie"
+      },
+      {
+        "n": "Lumineszenz von Quarzkristallen seit letzter Belichtung",
+        "c": "OSL-Datierung"
+      },
+      {
+        "n": "Verfall von Kalium-40 zu Argon-40",
+        "c": "K-Ar-Datierung"
+      },
+      {
+        "n": "Wachstumsringe in Korallen",
+        "c": "Sclerochronologie"
+      },
+      {
+        "n": "Relative Häufigkeit von Uranium/Thorium",
+        "c": "U-Th-Datierung"
+      },
+      {
+        "n": "Aminosäuren-Isomerisierung in Muschelschalen",
+        "c": "Aminosäure-Racemisierung"
+      },
+      {
+        "n": "Fission-Track-Zählung in Zirkon-Kristallen",
+        "c": "Spaltspuranalyse"
+      },
+      {
+        "n": "Thermolumineszenz erhitzter Keramik",
+        "c": "TL-Datierung"
+      },
+      {
+        "n": "Stickstoffgehalt in Knochen (relativ)",
+        "c": "Stickstoffmethode"
+      },
+      {
+        "n": "Wachstum von Flechten auf Felsen",
+        "c": "Lichenometrie"
+      },
+      {
+        "n": "Verfall von Beryllium-10 in Gestein",
+        "c": "Kosmogene Nuklid-Datierung"
+      },
+      {
+        "n": "Schichtfolge des Meeresbodens",
+        "c": "Marine Isotopen-Stratigraphie"
+      },
+      {
+        "n": "Glashydrationsschicht an Obsidian",
+        "c": "Obsidian-Hydratation"
+      },
+      {
+        "n": "Magnetisierung von gebranntem Lehm",
+        "c": "Archäomagnetismus"
+      },
+      {
+        "n": "Analyse fossiler DNA aus Knochen",
+        "c": "aDNA-Datierung"
+      },
+      {
+        "n": "Schliff-Ringe an Elefantenzähnen",
+        "c": "Dental Wear Analysis"
+      },
+      {
+        "n": "Spaltspuren in Glasperlen",
+        "c": "Glashydratations-Datierung"
+      },
+      {
+        "n": "Thermolumineszenz",
+        "c": "Keramik und gebrannte Mineralien"
+      },
+      {
+        "n": "Optisch stimulierte Lumineszenz (OSL)",
+        "c": "Sedimente"
+      },
+      {
+        "n": "Uran-Thorium-Datierung",
+        "c": "Kalzit und Korallen"
+      },
+      {
+        "n": "Kalium-Argon-Datierung",
+        "c": "Vulkangestein"
+      },
+      {
+        "n": "Dendrochronologie",
+        "c": "Jahresringe im Holz"
+      },
+      {
+        "n": "Aragon-Aragonit-Datierung",
+        "c": "Kalkhaltige Schalen"
+      },
+      {
+        "n": "Fission-Track-Datierung",
+        "c": "Glas und Mineralien"
+      },
+      {
+        "n": "Paläomagnetismus",
+        "c": "Gesteinsschichten"
+      },
+      {
+        "n": "Amino-Säuren-Rassemisierung",
+        "c": "Knochen und Schalen"
+      },
+      {
+        "n": "Elektronen-Spin-Resonanz (ESR)",
+        "c": "Zähne und Knochen"
       }
     ]
   },
@@ -685,6 +925,126 @@
       {
         "n": "Multispektralfoto verblasster Inschrift",
         "c": "RTI / DStretch"
+      },
+      {
+        "n": "Multibeam-Sonar für Unterwasser-Ausgrabungen",
+        "c": "Sonar-Bathymetrie"
+      },
+      {
+        "n": "Thermovisionsaufnahme von Wärmesignaturen unter Boden",
+        "c": "Thermografie"
+      },
+      {
+        "n": "Elektrische Widerstandsmessung im Erdboden",
+        "c": "ERT-Tomografie"
+      },
+      {
+        "n": "Magnetometrie für Metallgegenstände im Boden",
+        "c": "Magnetfeldmessung"
+      },
+      {
+        "n": "Bodenradar für unterirdische Strukturen",
+        "c": "GPR Ground-Penetrating Radar"
+      },
+      {
+        "n": "Drohnen-Video zu 3D-Landschaftsrekonstruktion",
+        "c": "Structure from Motion"
+      },
+      {
+        "n": "Satellitenaufnahmen historischer Städte",
+        "c": "Remote Sensing"
+      },
+      {
+        "n": "Mikro-CT-Scan für Mumien ohne Öffnung",
+        "c": "Computertomografie"
+      },
+      {
+        "n": "Holografische Rekonstruktion verlorener Statuen",
+        "c": "Holografie"
+      },
+      {
+        "n": "Röntgenanalyse von Schriftrollen",
+        "c": "XRF-Bildgebung"
+      },
+      {
+        "n": "Unterwasserroboter für Schiffswrackvermessung",
+        "c": "ROV-Photogrammetrie"
+      },
+      {
+        "n": "Multispektralbildgebung für verblichene Inschriften",
+        "c": "RTI Multispektral"
+      },
+      {
+        "n": "Digitale Restaurierung beschädigter Fresken",
+        "c": "KI-Restaurierung"
+      },
+      {
+        "n": "Plenoptische Kamera für Oberflächentextur",
+        "c": "Lichtfeldkamera"
+      },
+      {
+        "n": "Seismische Tomografie für Erdschichten",
+        "c": "Seismik"
+      },
+      {
+        "n": "Strukturlichtscanner für kleine Artefakte",
+        "c": "Strukturlichtscanning"
+      },
+      {
+        "n": "3D-Druck archäologischer Repliken",
+        "c": "FDM-3D-Druck"
+      },
+      {
+        "n": "Röntgen-Fluoreszenz zur Pigmentanalyse",
+        "c": "XRF-Analyse"
+      },
+      {
+        "n": "ToF-Kamera (Time of Flight)",
+        "c": "Tiefensensorkamera"
+      },
+      {
+        "n": "Nahinfrarot-Kamera für Tintenspuren",
+        "c": "NIR-Bildgebung"
+      },
+      {
+        "n": "Photogrammetrie-Punktwolke via iPad",
+        "c": "iPhone LiDAR"
+      },
+      {
+        "n": "Texturkartierung unter UV-Licht",
+        "c": "UV-Fluoreszenz"
+      },
+      {
+        "n": "Stereophotogrammetrie aus Archivfotos",
+        "c": "Archiv-Photogrammetrie"
+      },
+      {
+        "n": "Schattenwurf-Analyse für Reliefdetails",
+        "c": "Raking Light"
+      },
+      {
+        "n": "Mikro-Photogrammetrie von Keramikscherben",
+        "c": "Nano-Scan"
+      },
+      {
+        "n": "Endoskop-Kamera für enge Tunnelgrabungen",
+        "c": "Endoskopie"
+      },
+      {
+        "n": "Profilschnitt-Vermessung mit Totalstation",
+        "c": "Totalstation"
+      },
+      {
+        "n": "Digitale Geländemodelle aus LiDAR",
+        "c": "DTM aus LiDAR"
+      },
+      {
+        "n": "Virtuelle Rekonstruktion von Wandmalerei",
+        "c": "VR-Rekonstruktion"
+      },
+      {
+        "n": "Meeresboden-Magnetfeldkartierung",
+        "c": "Marine Magnetometrie"
       }
     ]
   },
@@ -830,6 +1190,66 @@
       {
         "n": "Äthiopisches Ge'ez (Fidäl)",
         "c": "Äthiopien"
+      },
+      {
+        "n": "Aramäisch",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Brahmi-Schrift",
+        "c": "Indien"
+      },
+      {
+        "n": "Tamil-Brahmi",
+        "c": "Indien / Sri Lanka"
+      },
+      {
+        "n": "Nabatäisch",
+        "c": "Arabien / Petra"
+      },
+      {
+        "n": "Blauer Nil-Meroe-Schrift",
+        "c": "Nubien / Sudan"
+      },
+      {
+        "n": "Aztekische Schrift (Nahuatl)",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Maya-Hieroglyphen",
+        "c": "Mesoamerika"
+      },
+      {
+        "n": "Rongorongo (Osterinsel)",
+        "c": "Polynesien"
+      },
+      {
+        "n": "Lineares B",
+        "c": "Mykenisches Griechisch, ~1450 v. Chr."
+      },
+      {
+        "n": "Merotische Schrift",
+        "c": "Sudan, Meroitisches Reich"
+      },
+      {
+        "n": "Blattgold-Inschriften (Pyu)",
+        "c": "Myanmar"
+      },
+      {
+        "n": "Naxi Dongba-Schrift",
+        "c": "Yunnan, China"
+      },
+      {
+        "n": "Manchu-Schrift",
+        "c": "Mandschurei, China"
+      },
+      {
+        "n": "Sogdisch",
+        "c": "Zentralasien, Seidenstraße"
+      },
+      {
+        "n": "Byblos-Schrift",
+        "c": "Libanon, ca. 2000 v. Chr., noch undeutbar"
       }
     ]
   },
@@ -999,6 +1419,42 @@
       {
         "n": "Hadad",
         "c": "Syrien"
+      },
+      {
+        "n": "Pazuzu",
+        "c": "Assyrischer Dämonengott"
+      },
+      {
+        "n": "Amun-Ra",
+        "c": "Ägyptischer Götterkönig"
+      },
+      {
+        "n": "Ishtar (akkadisch)",
+        "c": "Babylonische Göttin der Liebe und des Krieges"
+      },
+      {
+        "n": "Sin (Mondgott)",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Persephone",
+        "c": "Griechische Göttin der Unterwelt"
+      },
+      {
+        "n": "Xiuhtecuhtli",
+        "c": "Aztekischer Feuergott"
+      },
+      {
+        "n": "Aphrodite",
+        "c": "Griechische Göttin der Liebe"
+      },
+      {
+        "n": "Xipe Totec",
+        "c": "Aztekischer Gott der Erneuerung"
+      },
+      {
+        "n": "Coatlicue",
+        "c": "Aztekische Erdmutter"
       }
     ]
   },
@@ -1160,6 +1616,50 @@
       {
         "n": "Sarkophag aus Marmor",
         "c": "Römer / Griechenland"
+      },
+      {
+        "n": "Hügelgrab (Tumulus)",
+        "c": "Bronze- und Eisenzeit Europa"
+      },
+      {
+        "n": "Mumifizierung",
+        "c": "Altes Ägypten"
+      },
+      {
+        "n": "Kremation und Urnenbestattung",
+        "c": "Urnenfelderkultur"
+      },
+      {
+        "n": "Sky Burial (Himmelsbestattung)",
+        "c": "Tibet"
+      },
+      {
+        "n": "Boot-Bestattung",
+        "c": "Wikinger"
+      },
+      {
+        "n": "Gräberfeld mit Grabbeigaben",
+        "c": "Merowingerzeit"
+      },
+      {
+        "n": "Megalithgrab / Dolmen",
+        "c": "Neolithikum Europa"
+      },
+      {
+        "n": "Terrakotta-Armee",
+        "c": "Qin-Shi-Huang (China)"
+      },
+      {
+        "n": "Kopf-Jagd und Schädelkult",
+        "c": "Jäger-Sammler-Kulturen"
+      },
+      {
+        "n": "Mumien in Torfmooren",
+        "c": "Nordeuropäische Eisenzeit"
+      },
+      {
+        "n": "Sarkophag aus Stein",
+        "c": "Griechisch-Römische Welt"
       }
     ]
   },
@@ -1251,6 +1751,126 @@
       {
         "n": "Schnittstelle zwischen Baugrube und Planum",
         "c": "Befundgrenze"
+      },
+      {
+        "n": "Leitfossil",
+        "c": "Bestimmung des geologischen Alters einer Schicht"
+      },
+      {
+        "n": "Superpositionsprinzip",
+        "c": "Jüngere Schicht liegt über älterer"
+      },
+      {
+        "n": "Fazieswechsel",
+        "c": "Seitliche Veränderung einer Gesteinsschicht"
+      },
+      {
+        "n": "Diskordanz",
+        "c": "Schichtlücke oder Winkeldiskordanz"
+      },
+      {
+        "n": "Stratigraphische Einheit",
+        "c": "Formation, Gruppe oder Mitglied"
+      },
+      {
+        "n": "Relative Datierung",
+        "c": "Altersbestimmung ohne absolute Zahlen"
+      },
+      {
+        "n": "Lithostratigraphie",
+        "c": "Klassifikation nach Gesteinsart"
+      },
+      {
+        "n": "Biostratigraphie",
+        "c": "Klassifikation nach Fossilien"
+      },
+      {
+        "n": "Chronostratigraphie",
+        "c": "Klassifikation nach Zeitabschnitten"
+      },
+      {
+        "n": "Magnetostratigraphie",
+        "c": "Klassifikation nach Magnetfeldumkehrungen"
+      },
+      {
+        "n": "Matrixsediment",
+        "c": "Umgebendes Material um Artefakte"
+      },
+      {
+        "n": "Humuslage",
+        "c": "Oberste, organisch angereicherte Schicht"
+      },
+      {
+        "n": "Kolluvium",
+        "c": "Abschwemmmaterial an Hängen"
+      },
+      {
+        "n": "Kulturschicht",
+        "c": "Ablagerung menschlicher Aktivität"
+      },
+      {
+        "n": "Abhub",
+        "c": "Schicht für Schicht abgegrabener Boden"
+      },
+      {
+        "n": "Befund",
+        "c": "Stratigraphisch relevante Anomalie im Boden"
+      },
+      {
+        "n": "Planum",
+        "c": "Horizontal freigelegte Fläche bei Ausgrabung"
+      },
+      {
+        "n": "Profile",
+        "c": "Vertikaler Schnitt durch Schichten"
+      },
+      {
+        "n": "Grabungsprotokoll",
+        "c": "Dokumentation jeder Schicht"
+      },
+      {
+        "n": "Bodenprobe",
+        "c": "Sedimentprobe für Labor-Analyse"
+      },
+      {
+        "n": "Pollenanalyse (Palynologie)",
+        "c": "Rekonstruktion der Vegetation"
+      },
+      {
+        "n": "Mikromorphologie",
+        "c": "Analyse dünner Bodenschliffe"
+      },
+      {
+        "n": "Phytolithen",
+        "c": "Pflanzliche Kieselkörper im Boden"
+      },
+      {
+        "n": "Schlämmen",
+        "c": "Abtrennung kleiner Funde durch Wasser"
+      },
+      {
+        "n": "Flotation",
+        "c": "Abtrennung pflanzlicher Reste durch Aufschwimmen"
+      },
+      {
+        "n": "Sieben (3mm-Maschenweite)",
+        "c": "Standardmethode für Kleinfunde"
+      },
+      {
+        "n": "Bodenwiderstandsmessung",
+        "c": "Geophysikalische Prospektionsmethode"
+      },
+      {
+        "n": "Georadar (GPR)",
+        "c": "Bodenradar für Untergrundstrukturen"
+      },
+      {
+        "n": "Magnetometrie",
+        "c": "Messung magnetischer Anomalien im Boden"
+      },
+      {
+        "n": "Laserscanning (LiDAR)",
+        "c": "3D-Scan von Geländeoberflächen"
       }
     ]
   },
@@ -1336,6 +1956,126 @@
       {
         "n": "Raku-Glasur (Teeschale)",
         "c": "Japan"
+      },
+      {
+        "n": "Glockenbecherkultur",
+        "c": "Westeuropa, ca. 2800–1800 v. Chr."
+      },
+      {
+        "n": "Minyscher Stil",
+        "c": "Griechische Bronzezeit"
+      },
+      {
+        "n": "Mykenische Keramik",
+        "c": "Griechenland, 1600–1100 v. Chr."
+      },
+      {
+        "n": "Attisch-Schwarzfigurig",
+        "c": "Athen, 7.–5. Jh. v. Chr."
+      },
+      {
+        "n": "Attisch-Rotfigurig",
+        "c": "Athen, ab 530 v. Chr."
+      },
+      {
+        "n": "Terra Sigillata",
+        "c": "Römisches Reich"
+      },
+      {
+        "n": "Islamische Lustreware",
+        "c": "Irak/Persien, 9.–12. Jh. n. Chr."
+      },
+      {
+        "n": "Yayoi-Keramik",
+        "c": "Japan, 900 v. Chr.–250 n. Chr."
+      },
+      {
+        "n": "Anasazi-Keramik",
+        "c": "Nordamerika, Pueblo-Kulturen"
+      },
+      {
+        "n": "Chavín-Keramik",
+        "c": "Peru, 1200–200 v. Chr."
+      },
+      {
+        "n": "Nazca-Polychromie",
+        "c": "Peru, 100 v. Chr.–800 n. Chr."
+      },
+      {
+        "n": "Wari-Keramik",
+        "c": "Peru, 600–1000 n. Chr."
+      },
+      {
+        "n": "Meissener Porzellan",
+        "c": "Deutschland, ab 1710 n. Chr."
+      },
+      {
+        "n": "Celadon",
+        "c": "China/Korea, Seladongrüne Glasur"
+      },
+      {
+        "n": "Delftware",
+        "c": "Niederlande, Zinnglasur-Fayence"
+      },
+      {
+        "n": "Sgraffito",
+        "c": "Byzantinisch-mittelalterlich"
+      },
+      {
+        "n": "Mangrovekeramik (Lapita)",
+        "c": "Pazifik, ca. 3500 v. Chr."
+      },
+      {
+        "n": "Yangshao-Keramik",
+        "c": "China, Neolithikum"
+      },
+      {
+        "n": "Dawenkou-Keramik",
+        "c": "Ostchina, 4100–2600 v. Chr."
+      },
+      {
+        "n": "Longshan-Keramik",
+        "c": "China, 3000–1900 v. Chr."
+      },
+      {
+        "n": "Corded Ware / Schnurkeramik",
+        "c": "Nordeuropa"
+      },
+      {
+        "n": "Bell Beaker / Glockenbecher",
+        "c": "Westeuropa"
+      },
+      {
+        "n": "Vinča-Keramik",
+        "c": "Balkan, 5700–4500 v. Chr."
+      },
+      {
+        "n": "Cucuteni-Trypillia",
+        "c": "Osteuropa, 5400–2700 v. Chr."
+      },
+      {
+        "n": "Ertebølle-Keramik",
+        "c": "Skandinavien, Mesolithikum"
+      },
+      {
+        "n": "Majiayao-Keramik",
+        "c": "Nordwestchina, 3300–2000 v. Chr."
+      },
+      {
+        "n": "Mississippian Ceramics",
+        "c": "Nordamerika, 800–1600 n. Chr."
+      },
+      {
+        "n": "Clovis-Stil",
+        "c": "Nordamerika, Paläoindian"
+      },
+      {
+        "n": "Adena-Keramik",
+        "c": "Ohio Valley, 1000–100 v. Chr."
+      },
+      {
+        "n": "Hopewell-Keramik",
+        "c": "Nordamerika, 200 v.–500 n. Chr."
       }
     ]
   },
@@ -1421,6 +2161,126 @@
       {
         "n": "Schekel (Silber-Gewichtseinheit)",
         "c": "Phoenizien / Israel"
+      },
+      {
+        "n": "Lydischer Elektronstaater",
+        "c": "Älteste Münze, 7. Jh. v. Chr."
+      },
+      {
+        "n": "Athenische Tetradrachme",
+        "c": "Eule auf Rückseite"
+      },
+      {
+        "n": "Römischer Denar",
+        "c": "Silbermünze der Republik"
+      },
+      {
+        "n": "Aureus",
+        "c": "Römische Goldmünze"
+      },
+      {
+        "n": "Solidus",
+        "c": "Byzantinische Goldmünze"
+      },
+      {
+        "n": "Dirham",
+        "c": "Islamische Silbermünze"
+      },
+      {
+        "n": "Dukat",
+        "c": "Venezianische Goldmünze"
+      },
+      {
+        "n": "Taler",
+        "c": "Europäische Silbermünze, 16. Jh."
+      },
+      {
+        "n": "Drachme",
+        "c": "Altgriechische Münzeinheit"
+      },
+      {
+        "n": "Obol",
+        "c": "Kleine griechische Münze, Totengeld"
+      },
+      {
+        "n": "Sestertius",
+        "c": "Römische Bronzemünze"
+      },
+      {
+        "n": "Stater",
+        "c": "Standardmünze griechischer Stadtstaaten"
+      },
+      {
+        "n": "Tetradrachme",
+        "c": "Vier-Drachmen-Stück"
+      },
+      {
+        "n": "Antoninian",
+        "c": "Römische Münze, 3. Jh. n. Chr."
+      },
+      {
+        "n": "Solidus Justinians I.",
+        "c": "Byzantinisch, 6. Jh. n. Chr."
+      },
+      {
+        "n": "Miliarense",
+        "c": "Byzantinische Silbermünze"
+      },
+      {
+        "n": "Tremissis",
+        "c": "Drittel eines Solidus"
+      },
+      {
+        "n": "Maravedi",
+        "c": "Iberische mittelalterliche Münze"
+      },
+      {
+        "n": "Florentin/Florin",
+        "c": "Florentinische Goldmünze, 1252"
+      },
+      {
+        "n": "Doubloon",
+        "c": "Spanische Goldmünze"
+      },
+      {
+        "n": "Piece of Eight",
+        "c": "Spanischer Silberpeso"
+      },
+      {
+        "n": "Guinea",
+        "c": "Britische Goldmünze"
+      },
+      {
+        "n": "Thaler (Joachimstaler)",
+        "c": "Vorläufer des Dollars"
+      },
+      {
+        "n": "Münzstempel (Obverse/Reverse)",
+        "c": "Vorder- und Rückseite einer Münze"
+      },
+      {
+        "n": "Münzprägung (Hammermünze)",
+        "c": "Vormodernes Prägeververfahren"
+      },
+      {
+        "n": "Monogramm auf Münzen",
+        "c": "Herrschersignatur"
+      },
+      {
+        "n": "Flan",
+        "c": "Münzrohling vor der Prägung"
+      },
+      {
+        "n": "Münzfälschung (ancient)",
+        "c": "Subaerata - Kupferkern mit Silbermantel"
+      },
+      {
+        "n": "Münzschatz",
+        "c": "Vergrabene Münzansammlung"
+      },
+      {
+        "n": "Münzporträt",
+        "c": "Herrscherdarstellung auf Münzen"
       }
     ]
   },
@@ -1512,6 +2372,126 @@
       {
         "n": "Argon-40-Verhaeltnis in Vulkangestein",
         "c": "K-Ar Datierung"
+      },
+      {
+        "n": "Kohlenstoff-14 (¹⁴C)",
+        "c": "Datierung organischer Materialien"
+      },
+      {
+        "n": "Strontium-87/86 (⁸⁷Sr/⁸⁶Sr)",
+        "c": "Herkunftsbestimmung und Migration"
+      },
+      {
+        "n": "Blei-Isotopenverhältnisse",
+        "c": "Herkunft von Metallen"
+      },
+      {
+        "n": "Sauerstoff-18/16 (δ¹⁸O)",
+        "c": "Klima- und Paläotemperaturrekonstruktion"
+      },
+      {
+        "n": "Stickstoff-15/14 (δ¹⁵N)",
+        "c": "Ernährungsrekonstruktion (Proteinanteil)"
+      },
+      {
+        "n": "Kohlenstoff-13/12 (δ¹³C)",
+        "c": "Ernährungsrekonstruktion (C3/C4 Pflanzen)"
+      },
+      {
+        "n": "Uran-Blei (U-Pb)",
+        "c": "Datierung sehr alter Gesteine"
+      },
+      {
+        "n": "Samarium-Neodym (Sm-Nd)",
+        "c": "Gesteins- und Metalldatierung"
+      },
+      {
+        "n": "Rhenium-Osmium (Re-Os)",
+        "c": "Meteoriten- und Erzlagerstättendatierung"
+      },
+      {
+        "n": "Argon-Argon (⁴⁰Ar/³⁹Ar)",
+        "c": "Vulkangesteine und Mondgestein"
+      },
+      {
+        "n": "Wasseristotope (δD)",
+        "c": "Herkunft von Trinkwasser"
+      },
+      {
+        "n": "Sulfur-34/32 (δ³⁴S)",
+        "c": "Herkunft von Meeresfrüchten"
+      },
+      {
+        "n": "Kupfer-Isotopenverhältnisse",
+        "c": "Herkunft bronzezeitlicher Kupfer"
+      },
+      {
+        "n": "Zinn-Isotopenverhältnisse",
+        "c": "Herkunft bronzezeitlichen Zinns"
+      },
+      {
+        "n": "Silber-Isotopenverhältnisse",
+        "c": "Herkunft antiker Silbermünzen"
+      },
+      {
+        "n": "ICP-MS",
+        "c": "Analysemethode für Isotopenbestimmung"
+      },
+      {
+        "n": "TIMS (Thermal Ionisation MS)",
+        "c": "Präzise Isotopenanalyse"
+      },
+      {
+        "n": "SIMS (Sekundärionen-MS)",
+        "c": "Mikrobereichsanalyse"
+      },
+      {
+        "n": "LA-ICP-MS",
+        "c": "Laserablation-Massenspektrometrie"
+      },
+      {
+        "n": "Bioarchäologie",
+        "c": "Isotopen aus menschlichen Knochen"
+      },
+      {
+        "n": "Zooarchäologie",
+        "c": "Isotopen aus Tierresten"
+      },
+      {
+        "n": "Phytolithisotopenanalyse",
+        "c": "Pflanzliche Herkunftsbestimmung"
+      },
+      {
+        "n": "Migrationsnachweis",
+        "c": "Veränderung des Sr-Isotopenverhältnisses im Zahn"
+      },
+      {
+        "n": "Stillzeitbestimmung",
+        "c": "Aus δ¹⁵N von Zähnen"
+      },
+      {
+        "n": "Stillort-Analyse",
+        "c": "δ¹⁸O-Wechsel im Zahnschmelz"
+      },
+      {
+        "n": "Gewässerherkunft (H-Isotopen)",
+        "c": "Wasserherkunft von Artefakten"
+      },
+      {
+        "n": "Keramiktonherkunft",
+        "c": "Pb-Isotope in Tongefäßen"
+      },
+      {
+        "n": "Obsidianprovenience",
+        "c": "Spurenelemente im Obsidian"
+      },
+      {
+        "n": "Glas-Isotopen",
+        "c": "Herkunft antiken Glases"
+      },
+      {
+        "n": "Mörtel-Isotopie",
+        "c": "Herkunft von Kalkstein im Mörtel"
       }
     ]
   },
@@ -1685,6 +2665,38 @@
       {
         "n": "Lydian Hoard",
         "c": "New York"
+      },
+      {
+        "n": "British Museum",
+        "c": "London"
+      },
+      {
+        "n": "Louvre",
+        "c": "Paris"
+      },
+      {
+        "n": "Pergamonmuseum",
+        "c": "Berlin"
+      },
+      {
+        "n": "Metropolitan Museum of Art",
+        "c": "New York"
+      },
+      {
+        "n": "Ägyptisches Museum",
+        "c": "Kairo"
+      },
+      {
+        "n": "Archäologisches Nationalmuseum",
+        "c": "Athen"
+      },
+      {
+        "n": "Vatikanische Museen",
+        "c": "Rom"
+      },
+      {
+        "n": "Nationalmuseum für Anthropologie",
+        "c": "Mexiko-Stadt"
       }
     ]
   },
@@ -1776,6 +2788,126 @@
       {
         "n": "Kaffeepollen in osmanischer Schicht",
         "c": "Handels- / Kulturkontakt"
+      },
+      {
+        "n": "Emmer (Triticum dicoccum)",
+        "c": "Urweizen, Naher Osten"
+      },
+      {
+        "n": "Einkorn (Triticum monococcum)",
+        "c": "Frühe Kulturpflanze Anatoliens"
+      },
+      {
+        "n": "Dinkel (Triticum spelta)",
+        "c": "Mitteuropa, Bronzezeit"
+      },
+      {
+        "n": "Gerste (Hordeum vulgare)",
+        "c": "Älteste Getreidepflanze"
+      },
+      {
+        "n": "Erbse (Pisum sativum)",
+        "c": "Neolithische Leguminose"
+      },
+      {
+        "n": "Linse (Lens culinaris)",
+        "c": "Naher Osten, Neolithikum"
+      },
+      {
+        "n": "Ackerbohne (Vicia faba)",
+        "c": "Mediterrane Leguminose"
+      },
+      {
+        "n": "Kichererbse (Cicer arietinum)",
+        "c": "Frühe Kulturpflanze des Orients"
+      },
+      {
+        "n": "Leinsamen (Linum usitatissimum)",
+        "c": "Öl- und Faserpflanze"
+      },
+      {
+        "n": "Hirse (Panicum miliaceum)",
+        "c": "Kulturpflanze Asiens"
+      },
+      {
+        "n": "Buchweizen (Fagopyrum esculentum)",
+        "c": "Zentralasien, Mittelalter"
+      },
+      {
+        "n": "Amaranth (Amaranthus spp.)",
+        "c": "Mesoamerika"
+      },
+      {
+        "n": "Mais/Maize (Zea mays)",
+        "c": "Mesoamerika, ca. 7000 v. Chr."
+      },
+      {
+        "n": "Kartoffel (Solanum tuberosum)",
+        "c": "Anden, ca. 8000 v. Chr."
+      },
+      {
+        "n": "Quinoa (Chenopodium quinoa)",
+        "c": "Anden"
+      },
+      {
+        "n": "Maniok (Manihot esculenta)",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Reis (Oryza sativa)",
+        "c": "China, ca. 7000 v. Chr."
+      },
+      {
+        "n": "Sorghum (Sorghum bicolor)",
+        "c": "Afrika, Sahelzone"
+      },
+      {
+        "n": "Hirse (Setaria italica)",
+        "c": "Ostasien"
+      },
+      {
+        "n": "Taro (Colocasia esculenta)",
+        "c": "Südostasien/Pazifik"
+      },
+      {
+        "n": "Süßkartoffel (Ipomoea batatas)",
+        "c": "Südamerika/Ozeanien"
+      },
+      {
+        "n": "Kürbis (Cucurbita spp.)",
+        "c": "Amerika"
+      },
+      {
+        "n": "Sesam (Sesamum indicum)",
+        "c": "Afrika/Indien, Bronzezeit"
+      },
+      {
+        "n": "Olive (Olea europaea)",
+        "c": "Mittelmeerraum"
+      },
+      {
+        "n": "Weinrebe (Vitis vinifera)",
+        "c": "Kaukasus/Naher Osten"
+      },
+      {
+        "n": "Feige (Ficus carica)",
+        "c": "Naher Osten"
+      },
+      {
+        "n": "Datteln (Phoenix dactylifera)",
+        "c": "Nordafrika/Arabien"
+      },
+      {
+        "n": "Granatapfel (Punica granatum)",
+        "c": "Iran/Kaukasus"
+      },
+      {
+        "n": "Pflaume/Pfirsich (Prunus spp.)",
+        "c": "China"
+      },
+      {
+        "n": "Kokosnuss (Cocos nucifera)",
+        "c": "Ozeanien/Südostasien"
       }
     ]
   },
@@ -1867,6 +2999,126 @@
       {
         "n": "Bernstein aus Ostsee in Mykene",
         "c": "Bernsteinstrasse"
+      },
+      {
+        "n": "Röm. Pilenpfeffer aus Indien in Pompeji",
+        "c": "Indischer Gewürzhandel"
+      },
+      {
+        "n": "Elfenbein aus Kongo in Karthago",
+        "c": "Sahara-Transsahara-Route"
+      },
+      {
+        "n": "Obsidian aus Melos auf dem griechischen Festland",
+        "c": "Ägäische Seefahrt"
+      },
+      {
+        "n": "Lapis Lazuli aus Badachschan in Ägypten",
+        "c": "Lapislazuli-Route"
+      },
+      {
+        "n": "Zinn aus Cornwall in Mykene",
+        "c": "Phönizische Seeroute"
+      },
+      {
+        "n": "Kupfer aus Zypern im gesamten Mittelmeerraum",
+        "c": "Bronzezeitalter-Handel"
+      },
+      {
+        "n": "Korallenschmuck aus dem Mittelmeer in Zentralafrika",
+        "c": "Sahara-Handelsroute"
+      },
+      {
+        "n": "Porzellan der Tang-Dynastie in Ostafrika",
+        "c": "Indischer Ozean-Handel"
+      },
+      {
+        "n": "Seidenreste in keltischen Gräbern Deutschlands",
+        "c": "Frühe Seidenstraße"
+      },
+      {
+        "n": "Indischer Pfeffer in Karthago (3. Jh. v.Chr.)",
+        "c": "Früher Gewürzhandel"
+      },
+      {
+        "n": "Glasperlen aus Ägypten in Nordeuropa",
+        "c": "Bernsteinstraße-Rückware"
+      },
+      {
+        "n": "Chinesisches Seladon-Keramik in Swahili-Küste",
+        "c": "Monsun-Handelsroute"
+      },
+      {
+        "n": "Jade aus Nephritquellen Xinjiang in ganz China",
+        "c": "Jade-Route"
+      },
+      {
+        "n": "Myrrhe aus Somalia in Ägypten",
+        "c": "Punt-Handelsroute"
+      },
+      {
+        "n": "Goldstaub aus Ghana-Reich nach Nordafrika",
+        "c": "Trans-Sahara Gold-Route"
+      },
+      {
+        "n": "Salzblöcke aus der Sahara gen Süden",
+        "c": "Salzstraße Sahara"
+      },
+      {
+        "n": "Kakao aus Mexiko nach Mittelamerika",
+        "c": "Mesoamerikanischer Cacao-Handel"
+      },
+      {
+        "n": "Türkis aus New Mexico in mexikanische Kulturen",
+        "c": "Türkis-Handelsnetz"
+      },
+      {
+        "n": "Tabak aus Virginia in die Karibik",
+        "c": "Kolumbianer Austausch"
+      },
+      {
+        "n": "Gewürznelken von Maluku nach Europa",
+        "c": "Gewürzinseln-Route"
+      },
+      {
+        "n": "Zucker aus der Karibik nach Europa",
+        "c": "Dreiecksdhandel"
+      },
+      {
+        "n": "Baumwolltextilien Indiens in ganz Asien",
+        "c": "Indischer Textilhandel"
+      },
+      {
+        "n": "Silber aus Potosí nach Spanien und China",
+        "c": "Manila-Galeone"
+      },
+      {
+        "n": "Pelze aus Sibirien nach China",
+        "c": "Sibirische Pelzroute"
+      },
+      {
+        "n": "Weihrauch aus Arabien nach Rom",
+        "c": "Weihrauchstraße"
+      },
+      {
+        "n": "Kupfer aus Sinai in Ägypten",
+        "c": "Sinai-Route"
+      },
+      {
+        "n": "Glaswaren aus Venetien in die Levante",
+        "c": "Venezianischer Handel"
+      },
+      {
+        "n": "Kaviar aus dem Kaspischen Meer nach Europa",
+        "c": "Silk Road Nördlich"
+      },
+      {
+        "n": "Sklaven aus Ostafrika nach Arabien",
+        "c": "Swahili-Sklavenhandel"
+      },
+      {
+        "n": "Wolle aus England nach Flandern",
+        "c": "Mittelalterlicher Wollhandel"
       }
     ]
   },
@@ -2024,6 +3276,54 @@
       {
         "n": "Florin",
         "c": "Florenz (Mittelalter)"
+      },
+      {
+        "n": "Kauri-Muschel",
+        "c": "Handelsmedium China/Afrika/Ozeanien"
+      },
+      {
+        "n": "Wampum-Gürtel",
+        "c": "Nordamerikanische Indigene"
+      },
+      {
+        "n": "Kakao-Bohnen",
+        "c": "Mesoamerika (Maya/Azteken)"
+      },
+      {
+        "n": "Eisenstab (Hoe money)",
+        "c": "Westafrika"
+      },
+      {
+        "n": "Salz (Salzgeld)",
+        "c": "Römisches Reich / Äthiopien"
+      },
+      {
+        "n": "Bronzemesser-Geld",
+        "c": "China, Zhou-Periode"
+      },
+      {
+        "n": "Schaufel-Geld (Spade money)",
+        "c": "China, Frühantike"
+      },
+      {
+        "n": "Tuch als Währung",
+        "c": "Island / Westafrika"
+      },
+      {
+        "n": "Obsidian-Klingen",
+        "c": "Mesoamerika"
+      },
+      {
+        "n": "Ringe/Armringe aus Kupfer",
+        "c": "Bronzezeitliches Europa"
+      },
+      {
+        "n": "Manilla (Kupferring)",
+        "c": "Westafrika, Sklavenhandel"
+      },
+      {
+        "n": "Yap-Steingeld (Rai)",
+        "c": "Mikronesien"
       }
     ]
   },
@@ -2109,6 +3409,126 @@
       {
         "n": "Acambaro-Figuren (Mexiko)",
         "c": "Dinosaurier-Terrakotten"
+      },
+      {
+        "n": "Piltdown-Mensch",
+        "c": "Gefälschter Hominide, England 1912"
+      },
+      {
+        "n": "Vinland-Karte",
+        "c": "Angebliche mittelalterliche Weltkarte"
+      },
+      {
+        "n": "James Ossuary",
+        "c": "Angebliche Jakobus-Inschrift"
+      },
+      {
+        "n": "Fujimura-Fälschungen",
+        "c": "Gefälschte Paläolithikfunde, Japan"
+      },
+      {
+        "n": "Glozel-Objekte",
+        "c": "Frankreich, Funde fragwürdiger Echtheit"
+      },
+      {
+        "n": "Elgin Marbles (Streitfall)",
+        "c": "Rechtmäßigkeit der Entnahme"
+      },
+      {
+        "n": "Kensington-Runenstein",
+        "c": "Minnesota, USA, fragwürdig"
+      },
+      {
+        "n": "Beringer-Lügensteine",
+        "c": "Deutschland, 18. Jh."
+      },
+      {
+        "n": "Acambaro-Figuren",
+        "c": "Mexiko, angebliche Dinosaurier-Tonfiguren"
+      },
+      {
+        "n": "Tanit-Plakette (Karthago?)",
+        "c": "Authentizität umstritten"
+      },
+      {
+        "n": "Oaxaca-Jade-Fälschungen",
+        "c": "Mexiko, postklassisch"
+      },
+      {
+        "n": "Etruscan Terracotta Warriors",
+        "c": "Metropolitan Museum, gefälscht"
+      },
+      {
+        "n": "Dreros-Bronzen (Zweifelsfälle)",
+        "c": "Kreta, debattiert"
+      },
+      {
+        "n": "Pseudo-Amarna-Briefe",
+        "c": "Moderne Replikas als Originale"
+      },
+      {
+        "n": "Gold von Varna (Echtheitsfragen)",
+        "c": "Teile des Schatzes debattiert"
+      },
+      {
+        "n": "Moche-Goldmasken-Fälschungen",
+        "c": "Peru, Kunstmarkt"
+      },
+      {
+        "n": "Shire Horse-Fibula (anglisch)",
+        "c": "Museumssammlung, Verdacht"
+      },
+      {
+        "n": "Hochdorf-Fibeln (Replikas)",
+        "c": "Baden-Württemberg"
+      },
+      {
+        "n": "Bronze-Age Gold Lunulae-Repliken",
+        "c": "Irland"
+      },
+      {
+        "n": "Ptolemäische Papyrus-Fälschungen",
+        "c": "Ägypten, Kunstmarkt"
+      },
+      {
+        "n": "Samian Ware-Reproduktionen",
+        "c": "Fälschungen im Umlauf"
+      },
+      {
+        "n": "Knossos-Fresken (Restaurierungen)",
+        "c": "Evans' Wiederherstellungen umstritten"
+      },
+      {
+        "n": "Voynich-Manuskript",
+        "c": "Echtheits- und Deutungsdebatte"
+      },
+      {
+        "n": "Donnerstein von Ensisheim",
+        "c": "Echter Meteorit, aber umstrittene Datierung"
+      },
+      {
+        "n": "Heiliger Speer von Wien",
+        "c": "Reliquienstreit"
+      },
+      {
+        "n": "Turin-Grabtuch",
+        "c": "Leinengewebe, umstrittenes Alter"
+      },
+      {
+        "n": "Burrows Cave-Artefakte",
+        "c": "Illinois, USA, fragwürdig"
+      },
+      {
+        "n": "Los Lunas-Stein",
+        "c": "New Mexico, angebliche Hebräischrift"
+      },
+      {
+        "n": "Cardiff Giant",
+        "c": "USA, 1869, Stein-Riese"
+      },
+      {
+        "n": "Nakao-Fundstücke (Prähistorisch Japan)",
+        "c": "Shinichi Fujimura, 2000 entlarvt"
       }
     ]
   },
@@ -2272,6 +3692,54 @@
       {
         "n": "Hadrianstor (Athen)",
         "c": "Korinthisch"
+      },
+      {
+        "n": "Dorische Ordnung",
+        "c": "Schlicht, ohne Basis, Triglyphen-Fries"
+      },
+      {
+        "n": "Ionische Ordnung",
+        "c": "Schneckenförmige Kapitelle (Voluten)"
+      },
+      {
+        "n": "Korinthische Ordnung",
+        "c": "Akanthusblatt-Kapitell"
+      },
+      {
+        "n": "Toskanische Ordnung",
+        "c": "Römische Variante des Dorischen"
+      },
+      {
+        "n": "Kompositordnung",
+        "c": "Mischung aus ionisch und korinthisch"
+      },
+      {
+        "n": "Ägyptische Papyruskapitelle",
+        "c": "Lotusblüte und Papyrus"
+      },
+      {
+        "n": "Persische Doppelstier-Kapitelle",
+        "c": "Persepolis"
+      },
+      {
+        "n": "Indische Löwenkapitelle",
+        "c": "Ashoka-Säulen"
+      },
+      {
+        "n": "Präkolumbianische Säulen",
+        "c": "Maya-Tulum-Tempel"
+      },
+      {
+        "n": "Chinesische Dougong-Konsolen",
+        "c": "Holzarchitektur"
+      },
+      {
+        "n": "Romanische Würfelkapitelle",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Gotische Fialen",
+        "c": "Kathedralbau"
       }
     ]
   },
@@ -2443,6 +3911,46 @@
       {
         "n": "Sarai Khola",
         "c": "Pakistan"
+      },
+      {
+        "n": "Gewichte und Maße",
+        "c": "Standardisiertes System der Induskultur"
+      },
+      {
+        "n": "Indus-Schrift",
+        "c": "Noch nicht entschlüsselt"
+      },
+      {
+        "n": "Stadtplanung (Raster)",
+        "c": "Rechtwinkliges Straßennetz"
+      },
+      {
+        "n": "Großes Bad (Mohenjo-daro)",
+        "c": "Kultischer Waschteich"
+      },
+      {
+        "n": "Nausharo (Baluchistan)",
+        "c": "Frühe Indus-Keramikstätte"
+      },
+      {
+        "n": "Sutkagen-dor",
+        "c": "Westlichste Indus-Fundstätte (Makran-Küste)"
+      },
+      {
+        "n": "Rehman Dheri",
+        "c": "Früheste bekannte Stadtplanung, 4000 v. Chr."
+      },
+      {
+        "n": "Manda",
+        "c": "Nördlichste Indus-Fundstätte in Jammu"
+      },
+      {
+        "n": "Sanghol",
+        "c": "Indus-Fundort in Punjab, Indien"
+      },
+      {
+        "n": "Naomian",
+        "c": "Kleinere Indus-Stätte in Gujarat"
       }
     ]
   },
@@ -2612,6 +4120,42 @@
       {
         "n": "Kievan Rus (Handel)",
         "c": "Russland"
+      },
+      {
+        "n": "Drakkar",
+        "c": "Langes Wikingerschiff für Überfälle"
+      },
+      {
+        "n": "Knarr",
+        "c": "Breites Handelsschiff der Wikinger"
+      },
+      {
+        "n": "Runen",
+        "c": "Germanisches Schriftsystem"
+      },
+      {
+        "n": "Futhark",
+        "c": "Runen-Alphabet"
+      },
+      {
+        "n": "Ting (Thing)",
+        "c": "Wikingerzeitliche Volksversammlung"
+      },
+      {
+        "n": "Skalde",
+        "c": "Nordischer Hofdichter"
+      },
+      {
+        "n": "Jarl",
+        "c": "Wikingerzeitlicher Adliger"
+      },
+      {
+        "n": "Mjolnir",
+        "c": "Thorhammer als Amulett"
+      },
+      {
+        "n": "Berserker",
+        "c": "Wikingerkrieger im Kampfrausch"
       }
     ]
   },
@@ -2697,6 +4241,126 @@
       {
         "n": "Benin-Bronzen (Einigung 2022)",
         "c": "Nigeria"
+      },
+      {
+        "n": "Elgin Marbles",
+        "c": "Griechenland fordert Rückgabe von Großbritannien"
+      },
+      {
+        "n": "Nofretete-Büste",
+        "c": "Ägypten fordert Rückgabe aus Berlin"
+      },
+      {
+        "n": "Humboldt-Forum-Rückgaben",
+        "c": "Berlin gibt Benin-Bronzen zurück"
+      },
+      {
+        "n": "NAGPRA (USA)",
+        "c": "Gesetz zur Rückgabe indigener Kulturgüter"
+      },
+      {
+        "n": "Rosetta Stein",
+        "c": "Ägypten fordert Rückgabe aus London"
+      },
+      {
+        "n": "Koh-i-Noor-Diamant",
+        "c": "Indien/Pakistan fordern Rückgabe von Großbritannien"
+      },
+      {
+        "n": "Hoa Hakananai'a",
+        "c": "Osterinsel fordert Statue aus London zurück"
+      },
+      {
+        "n": "Toi moko (Maori-Köpfe)",
+        "c": "Neuseeland hat Rückgabeprogramm"
+      },
+      {
+        "n": "UNESCO-Konvention 1970",
+        "c": "Völkerrechtliche Grundlage für Repatriierung"
+      },
+      {
+        "n": "Intergovernmental Committee (IGC)",
+        "c": "UNESCO-Ausschuss für Kulturgüterrückgabe"
+      },
+      {
+        "n": "UNDRIP",
+        "c": "UN-Deklaration zu indigenen Völkerrechten"
+      },
+      {
+        "n": "Ahau-Maske (Maya)",
+        "c": "Guatemala fordert Rückgabe aus USA"
+      },
+      {
+        "n": "Nok-Terrakotten",
+        "c": "Nigeria/Niger fordert von Frankreich"
+      },
+      {
+        "n": "Lydischer Schatz (Karun Treasure)",
+        "c": "Türkei erfolgreich zurückgeholt aus USA"
+      },
+      {
+        "n": "Parthenon-Friese",
+        "c": "Zentrum der Repatriierungs-Debatte"
+      },
+      {
+        "n": "Olmeken-Köpfe (Replikas)",
+        "c": "Mexikos Strategie: Replikas im Ausland"
+      },
+      {
+        "n": "Ife-Bronzeköpfe",
+        "c": "Nigeria"
+      },
+      {
+        "n": "Human Remains (allgemein)",
+        "c": "Skelette indigener Bevölkerungen weltweit"
+      },
+      {
+        "n": "Pacific Collections",
+        "c": "Ozeanische Objekte in europäischen Museen"
+      },
+      {
+        "n": "Afghani Artefakte (post-Taliban)",
+        "c": "International koordinierte Rückgaben"
+      },
+      {
+        "n": "Irakische Kulturgüter (post-2003)",
+        "c": "Rückgaben aus Schwarzmarkt-Käufen"
+      },
+      {
+        "n": "Syrische Objekte (Bürgerkrieg)",
+        "c": "INTERPOL-Datenbank für gestohlene Objekte"
+      },
+      {
+        "n": "Loot.co (Database)",
+        "c": "Datenbank für illegalen Kulturgüterhandel"
+      },
+      {
+        "n": "Art Loss Register",
+        "c": "Internationales Register geraubter Kunstwerke"
+      },
+      {
+        "n": "Carabinieri TPC",
+        "c": "Italienische Kulturgüterschutztruppe"
+      },
+      {
+        "n": "FBI Art Crime Team",
+        "c": "US-Bundesbehörde für Kunstraub"
+      },
+      {
+        "n": "Bundesministerium für Kulturgüterschutz",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Kulturgutschutzgesetz (KGSG)",
+        "c": "Deutsches Kulturschutzgesetz 2016"
+      },
+      {
+        "n": "Parthenon-Skulpturen (Elgin Marbles)",
+        "c": "Griechenland/UK, laufender Disput"
+      },
+      {
+        "n": "Benin-Bronzen Rückgaben 2022",
+        "c": "Nigeria erhielt Stücke zurück"
       }
     ]
   },
@@ -2788,6 +4452,126 @@
       {
         "n": "Stonehenge wurde von Druiden gebaut",
         "c": "Historisch falsch"
+      },
+      {
+        "n": "Indiana Jones – Peitsche",
+        "c": "Realität: Archäologen nutzen keine Peitschen"
+      },
+      {
+        "n": "Indiana Jones – Schatzsuche",
+        "c": "Realität: Kontexterhaltung wichtiger als Fund"
+      },
+      {
+        "n": "Lara Croft – Waffen bei Ausgrabung",
+        "c": "Realität: Archäologen sind unbewaffnete Forscher"
+      },
+      {
+        "n": "Mumienfluch",
+        "c": "Realität: Keine wissenschaftlichen Belege"
+      },
+      {
+        "n": "Atlantis als echte Stadt",
+        "c": "Realität: Platons Erfindung"
+      },
+      {
+        "n": "Pyramiden durch Außerirdische",
+        "c": "Realität: Ägyptische Arbeitersiedlungen nachgewiesen"
+      },
+      {
+        "n": "Troja als reiner Mythos",
+        "c": "Realität: Schliemann fand echte Stadtschichten"
+      },
+      {
+        "n": "Stonehenge als Druidenheiligtum",
+        "c": "Realität: Deutlich älter als die Druiden"
+      },
+      {
+        "n": "Wikinger mit gehörnten Helmen",
+        "c": "Realität: Keine archäologischen Belege"
+      },
+      {
+        "n": "Römer als Weintrinker (immer)",
+        "c": "Realität: Auch Bier und Wasser"
+      },
+      {
+        "n": "Maya sagten 2012-Weltuntergang voraus",
+        "c": "Realität: Kalenderübergang, kein Apokalypse-Mythos"
+      },
+      {
+        "n": "Ägyptische Sklaven bauten Pyramiden",
+        "c": "Realität: Bezahlte Arbeiter mit Sozialleistungen"
+      },
+      {
+        "n": "König Arthurs Excalibur",
+        "c": "Realität: Kein archäologischer Nachweis"
+      },
+      {
+        "n": "Heiliger Gral als Kelch",
+        "c": "Realität: Nur mittelalterliche Legende"
+      },
+      {
+        "n": "Noah-Arche auf Ararat",
+        "c": "Realität: Kein archäologischer Fund"
+      },
+      {
+        "n": "Kristallschädel als aztekisch",
+        "c": "Realität: Europäische Herstellung, 19. Jh."
+      },
+      {
+        "n": "Nazca-Linien als Landepisten",
+        "c": "Realität: Rituelle Pilger- und Prozessionswege"
+      },
+      {
+        "n": "El Dorado als Goldstadt",
+        "c": "Realität: Chiefdom-Ritual am Guatavita-See"
+      },
+      {
+        "n": "Karthago als grausamer Kindermörder",
+        "c": "Realität: Tophet-Interpretation umstritten"
+      },
+      {
+        "n": "Troyaner als Griechen",
+        "c": "Realität: Trojaner waren Anatolier"
+      },
+      {
+        "n": "Caesar ermordete Kleopatra",
+        "c": "Realität: Kleopatra überlebte ihn"
+      },
+      {
+        "n": "Pompeji sofort begraben",
+        "c": "Realität: Eruption dauerte zwei Tage"
+      },
+      {
+        "n": "Mittelalter als finstere Zeit",
+        "c": "Realität: Hochkulturen und Wissenstransfer"
+      },
+      {
+        "n": "Römer in Britannia nur in Süden",
+        "c": "Realität: Bis Hadrianswall im Norden"
+      },
+      {
+        "n": "Chinesische Mauer sichtbar vom All",
+        "c": "Realität: Zu schmal für Fernsicht"
+      },
+      {
+        "n": "Kleopatra als ägyptischstämmig",
+        "c": "Realität: Makedonisch-griechischer Abstammung"
+      },
+      {
+        "n": "Ritter hatten keine Latrine",
+        "c": "Realität: Mittelalterliche Hygiene besser als gedacht"
+      },
+      {
+        "n": "Steinzeit-Menschen waren primitiv",
+        "c": "Realität: Komplexe Symbolsysteme und Kunst"
+      },
+      {
+        "n": "Colosseum immer voll Blut",
+        "c": "Realität: Vielfältiger Unterhaltungsbetrieb"
+      },
+      {
+        "n": "Ägypter als Dunkelhäutige",
+        "c": "Realität: Unterschiedliche ethnische Gruppen"
       }
     ]
   },
@@ -2951,6 +4735,54 @@
       {
         "n": "Ephesus (Türkei)",
         "c": "Tourismus / Erosion"
+      },
+      {
+        "n": "Venedig (Überschwemmung)",
+        "c": "Klimawandel und Massentourismus"
+      },
+      {
+        "n": "Tuvalu (Inselstaat)",
+        "c": "Steigender Meeresspiegel"
+      },
+      {
+        "n": "Hampi (Indien)",
+        "c": "Illegale Konstruktionen und Erosion"
+      },
+      {
+        "n": "Angkor Wat",
+        "c": "Übertourismus und Grundwasserpumpen"
+      },
+      {
+        "n": "Altstadt von Aleppo",
+        "c": "Kriegsschäden, Syrischer Bürgerkrieg"
+      },
+      {
+        "n": "Osterinsel-Moai",
+        "c": "Erosion und Massentourismus"
+      },
+      {
+        "n": "Potosi (Bolivien)",
+        "c": "Subsidenz durch Bergbau"
+      },
+      {
+        "n": "Historisches Kairoer Zentrum",
+        "c": "Umweltverschmutzung und Lärm"
+      },
+      {
+        "n": "Bagdad (Irak, abseits Liste)",
+        "c": "Kriegsschäden und Vernachlässigung"
+      },
+      {
+        "n": "Aral-See (Zentralasien)",
+        "c": "Austrocknung durch Bewässerungsprojekte"
+      },
+      {
+        "n": "Everglades NP (USA)",
+        "c": "Wasserverschmutzung und invasive Arten"
+      },
+      {
+        "n": "Kilimandscharo (Tansania)",
+        "c": "Gletscherschmelze durch Klimawandel"
       }
     ]
   },
@@ -3122,6 +4954,46 @@
       {
         "n": "Lanzarote-Höhlenmalereien",
         "c": "Speleologen"
+      },
+      {
+        "n": "Höhle von Lascaux (1940)",
+        "c": "Durch spielende Kinder entdeckt"
+      },
+      {
+        "n": "Terrakotta-Armee (1974)",
+        "c": "Brunnenbohrender Bauer in Xi'an"
+      },
+      {
+        "n": "Tutanchamuns Grab (1922)",
+        "c": "Howard Carter nach jahrelanger Suche"
+      },
+      {
+        "n": "Tote-Meer-Rollen (1947)",
+        "c": "Beduinenjunge suchte verlorene Ziege"
+      },
+      {
+        "n": "Antikythera-Mechanismus (1901)",
+        "c": "Taucher bei Schwammfischerei"
+      },
+      {
+        "n": "Sunken Titanic (1985)",
+        "c": "Robert Ballard mit Sonarsuche"
+      },
+      {
+        "n": "Vesunna-Domus (Périgueux)",
+        "c": "Beim Bau einer Schnellstraße"
+      },
+      {
+        "n": "Altamira-Höhle (1879)",
+        "c": "Tochter des Entdeckers Sautuola"
+      },
+      {
+        "n": "Sippar-Sonnengott-Relieftafel (Irak)",
+        "c": "Bei Bauarbeiten gefunden, 9. Jh. v. Chr."
+      },
+      {
+        "n": "Gallehus-Goldhörner (Dänemark)",
+        "c": "Bäuerin pflügte Feld, 1639 und 1734"
       }
     ]
   },
@@ -3213,6 +5085,126 @@
       {
         "n": "Versailles 3D (Barock)",
         "c": "Fruehe Neuzeit"
+      },
+      {
+        "n": "LiDAR-Scan Caracol (Maya)",
+        "c": "2010, Belize"
+      },
+      {
+        "n": "LiDAR-Scan Angkor",
+        "c": "Kambodscha, versteckte Städte"
+      },
+      {
+        "n": "LiDAR-Scan Amazonas",
+        "c": "Geoglyphen und Städte entdeckt"
+      },
+      {
+        "n": "Multispektrale Fernerkundung",
+        "c": "Erkennung vergrabener Strukturen"
+      },
+      {
+        "n": "Satellitenbild-Archäologie",
+        "c": "DigitalGlobe und Google Earth"
+      },
+      {
+        "n": "3D-Scan Nimrud (nach IS)",
+        "c": "Digitale Rekonstruktion zerstörter Stätten"
+      },
+      {
+        "n": "Photogrammetrie",
+        "c": "3D-Modelle aus Fotos"
+      },
+      {
+        "n": "GPR (Georadar)",
+        "c": "Newgrange-Umfeld-Kartierung"
+      },
+      {
+        "n": "Drohnenarchäologie",
+        "c": "Luftbilder von unzugänglichen Gebieten"
+      },
+      {
+        "n": "KI-Mustererkennung",
+        "c": "Automatische Erkennung archäologischer Objekte"
+      },
+      {
+        "n": "Digitale Epigraphik",
+        "c": "RTI-Technik für Inschriften"
+      },
+      {
+        "n": "Virtual Reality Rekonstruktion",
+        "c": "Pompeji in VR"
+      },
+      {
+        "n": "Citizen Science (Crowdsourcing)",
+        "c": "Zooniverse-Archäologieprojekte"
+      },
+      {
+        "n": "Open Context (Datenbank)",
+        "c": "Online-Publikation archäologischer Daten"
+      },
+      {
+        "n": "tDAR (Digital Archaeology Repository)",
+        "c": "Digitales Archiv"
+      },
+      {
+        "n": "ARK (Archaeological Recording Kit)",
+        "c": "Open-Source-Grabungssoftware"
+      },
+      {
+        "n": "CIDOC-CRM",
+        "c": "Ontologie für Kulturerbe-Daten"
+      },
+      {
+        "n": "GIS in der Archäologie",
+        "c": "Geographische Informationssysteme"
+      },
+      {
+        "n": "QGIS für Archäologen",
+        "c": "Open-Source-GIS"
+      },
+      {
+        "n": "ArcheoFoss",
+        "c": "Open-Source-Software für Archäologie"
+      },
+      {
+        "n": "ArcGIS Archaeology",
+        "c": "Geodaten-Analyse"
+      },
+      {
+        "n": "Structured Light Scanning",
+        "c": "Hochpräzise 3D-Scans"
+      },
+      {
+        "n": "CT-Scan von Mumien",
+        "c": "Zerstörungsfreie Innensicht"
+      },
+      {
+        "n": "DNA aus alten Knochen (aDNA)",
+        "c": "Paläogenomik"
+      },
+      {
+        "n": "Proteomik (Uralt-Proteine)",
+        "c": "Älteste biologische Informationen"
+      },
+      {
+        "n": "Metagenomics",
+        "c": "Gesamtgenom-Analyse aus Bodenproben"
+      },
+      {
+        "n": "FTIR-Spektroskopie",
+        "c": "Materialanalyse ohne Probenahme"
+      },
+      {
+        "n": "XRF-Scanner",
+        "c": "Röntgenfluoreszenzanalyse"
+      },
+      {
+        "n": "Neutronenradiographie",
+        "c": "Innere Struktur von Metallobjekten"
+      },
+      {
+        "n": "Raman-Spektroskopie",
+        "c": "Pigment- und Materialanalyse"
       }
     ]
   },
@@ -3304,6 +5296,126 @@
       {
         "n": "Epidauros-Asklepion (Tempel-Heilung)",
         "c": "Griechenland"
+      },
+      {
+        "n": "Edwin Smith Papyrus — chirurgische Anweisungen",
+        "c": "Ägypten (1600 v.Chr.)"
+      },
+      {
+        "n": "Corpus Hippocraticum — Vier Körpersäfte",
+        "c": "Griechische Antike"
+      },
+      {
+        "n": "Sushruta Samhita — plastische Chirurgie",
+        "c": "Vedisches Indien"
+      },
+      {
+        "n": "Charaka Samhita — Kräutermedizin",
+        "c": "Ayurveda Indien"
+      },
+      {
+        "n": "Dioscorides De Materia Medica",
+        "c": "Römische Antike"
+      },
+      {
+        "n": "Galens Anatomiewerke",
+        "c": "Römische Antike"
+      },
+      {
+        "n": "Ebers-Papyrus — 877 Heilrezepte",
+        "c": "Ägypten (1550 v.Chr.)"
+      },
+      {
+        "n": "Code of Hammurabi — Arzthonorar-Paragraphen",
+        "c": "Babylonien"
+      },
+      {
+        "n": "Kahun Papyrus — Frauenheilkunde",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Smith-Papyrus — Hirn- und Wirbelsäule",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Asclepius-Heiligtümer — Inkubationstherapie",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Römische Valetudinaria — Militärkrankenhäuser",
+        "c": "Römer"
+      },
+      {
+        "n": "Trepanation Schädelfunde (Peru)",
+        "c": "Inka/Präkolumbus"
+      },
+      {
+        "n": "Aztekisches Florentinisches Codex Medizin",
+        "c": "Azteken"
+      },
+      {
+        "n": "Traditionelle Chinesische Medizin Huang Di Nei Jing",
+        "c": "China"
+      },
+      {
+        "n": "Kanon der Medizin (Avicenna)",
+        "c": "Islamische Medizin"
+      },
+      {
+        "n": "Al-Zahrawi Chirurgiewerk Kitab al-Tasrif",
+        "c": "Al-Andalus"
+      },
+      {
+        "n": "Maimonides-Medizintraktate",
+        "c": "Jüdisch-islamische Welt"
+      },
+      {
+        "n": "Benin-Elfenbein-Medizinbehälter",
+        "c": "Westafrika"
+      },
+      {
+        "n": "Ayahuasca-Zeremonie botanische Heilkunde",
+        "c": "Amazonas"
+      },
+      {
+        "n": "Schädelrekonstruktion Paracas (Peru)",
+        "c": "Paracas-Kultur"
+      },
+      {
+        "n": "Zahnarzt-Werkzeuge Mohenjo-Daro",
+        "c": "Indus-Tal-Zivilisation"
+      },
+      {
+        "n": "Opium als Analgetikum (Mesopotamien)",
+        "c": "Sumerien"
+      },
+      {
+        "n": "Willow-Bark Schmerzmittel (Ägypten)",
+        "c": "Antikes Ägypten"
+      },
+      {
+        "n": "Henbane als Anästhetikum (Antike)",
+        "c": "Römer / Griechen"
+      },
+      {
+        "n": "Medieval Islamic Hospital — Bimaristan",
+        "c": "Islamische Welt"
+      },
+      {
+        "n": "Hildegard von Bingen — Physica Kräuterbuch",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Mondino de Luzzi — Anatomiebuch 1316",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Vesalius De Humani Corporis Fabrica",
+        "c": "Renaissance"
+      },
+      {
+        "n": "Paracelsus — chemische Medizin",
+        "c": "Renaissance"
       }
     ]
   },
@@ -3395,6 +5507,126 @@
       {
         "n": "Mikrovibration im Boden durch Hohlraum",
         "c": "Mikrogravimetrie"
+      },
+      {
+        "n": "Metalldetektoren",
+        "c": "Amateur-Archäologie, Münzsuche"
+      },
+      {
+        "n": "Unterwasser-ROV",
+        "c": "Ferngesteuerte Fahrzeuge für Schiffswracks"
+      },
+      {
+        "n": "Side-Scan-Sonar",
+        "c": "Meeresbodenabbildung"
+      },
+      {
+        "n": "Sub-Bottom-Profiler",
+        "c": "Schallmessung unter dem Meeresboden"
+      },
+      {
+        "n": "Taucharchäologie",
+        "c": "Manuelles Freigraben unter Wasser"
+      },
+      {
+        "n": "Geophysikalische Prospektion",
+        "c": "Magnetometrie, GPR, Geoelektrik"
+      },
+      {
+        "n": "Multispektralaufnahmen",
+        "c": "Satelliten und Flugzeuge"
+      },
+      {
+        "n": "Luftbildarchäologie",
+        "c": "Ernte- und Bodenverfärbungen"
+      },
+      {
+        "n": "Drohnen-Survey",
+        "c": "Niedrige Höhe, hohe Auflösung"
+      },
+      {
+        "n": "Machine Learning / KI",
+        "c": "Automatische Fundstellenerkennung"
+      },
+      {
+        "n": "Chemical Prospecting",
+        "c": "Bodenchemische Anomaliemessung"
+      },
+      {
+        "n": "Pollenkernbohrung",
+        "c": "Vegetationsgeschichte und Siedlungsnachweise"
+      },
+      {
+        "n": "Probennahme mit Rammkernbohrer",
+        "c": "Sedimentkerne für Paläoökologie"
+      },
+      {
+        "n": "Archiv- und Urkundenforschung",
+        "c": "Historische Quellen für Fundstellensuche"
+      },
+      {
+        "n": "Bodenradar (GPR)",
+        "c": "Zerstörungsfreie Suche"
+      },
+      {
+        "n": "Seismische Reflexion",
+        "c": "Strukturen unter dickem Sediment"
+      },
+      {
+        "n": "Laseraltimetrie (LiDAR)",
+        "c": "Geländemodell unter Vegetation"
+      },
+      {
+        "n": "Thermographie",
+        "c": "Wärmebildkamera für Strukturen"
+      },
+      {
+        "n": "Magnetische Suszeptibilität",
+        "c": "Messung im Labor an Bodenproben"
+      },
+      {
+        "n": "Archäozoologie",
+        "c": "Tierknochen als Hinweis auf Siedlungen"
+      },
+      {
+        "n": "Micromorphologie (thin section)",
+        "c": "Schliffbilder von Böden"
+      },
+      {
+        "n": "Hydrologie und Flusslaufrekonstruktion",
+        "c": "Alte Flussbetten als Fundstellenprediktoren"
+      },
+      {
+        "n": "Geomorphologie",
+        "c": "Landschaftsformen und ihre archäologische Relevanz"
+      },
+      {
+        "n": "Paläobodenanalyse",
+        "c": "Alter Ackerboden als Siedlungsindikator"
+      },
+      {
+        "n": "Spektralanalyse von Satellitenbildern",
+        "c": "NDVI und andere Vegetationsindizes"
+      },
+      {
+        "n": "Crowd-Survey (Citizen Science)",
+        "c": "Zooniverse, GlobalXplorer"
+      },
+      {
+        "n": "Historical Map Analysis",
+        "c": "Alte Karten und Kataster"
+      },
+      {
+        "n": "Oral History",
+        "c": "Mündliche Überlieferungen indigener Gemeinschaften"
+      },
+      {
+        "n": "Archivalische Luft- und Kriegsbilder",
+        "c": "Historische Infrarotfotos"
+      },
+      {
+        "n": "Blockchain-Provenienzerfassung",
+        "c": "Modernes Tool gegen Raubgrabungen"
       }
     ]
   },
@@ -3486,6 +5718,126 @@
       {
         "n": "Abu Simbel Tempel -- Aequinoktium-Licht",
         "c": "Aegypten"
+      },
+      {
+        "n": "Stonehenge Sonnenaufgang Sommersonnenwende",
+        "c": "Britische Bronzezeit"
+      },
+      {
+        "n": "Nazca-Linien Ausrichtung Sonnenwende",
+        "c": "Nazca-Kultur"
+      },
+      {
+        "n": "Newgrange Lichtstrahl Wintersonnenwende",
+        "c": "Irische Jungsteinzeit"
+      },
+      {
+        "n": "Mnajdra Tempel Frühlingsäquinoktium",
+        "c": "Maltesische Tempelkultur"
+      },
+      {
+        "n": "Abu Simbel Lichtachse Ramesses-Geburtstag",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Caracol Observatorium Venus-Zyklus",
+        "c": "Maya"
+      },
+      {
+        "n": "Intihuatana Sonnenstein Machu Picchu",
+        "c": "Inka"
+      },
+      {
+        "n": "Karnak Tempel Sonnenwende-Ausrichtung",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Kalasasaya Tempel Äquinoktium (Tiwanaku)",
+        "c": "Tiwanaku-Kultur"
+      },
+      {
+        "n": "Puma Punku Ausrichtung Sonne",
+        "c": "Tiwanaku"
+      },
+      {
+        "n": "Goseck-Kreis Sonnenwende-Palisaden",
+        "c": "Lausitzer Kultur"
+      },
+      {
+        "n": "Woodhenge Ausrichtung Sonnenwende",
+        "c": "Britische Bronzezeit"
+      },
+      {
+        "n": "Medicine Wheel Big Horn (Wyoming)",
+        "c": "Plains-Indianer"
+      },
+      {
+        "n": "Rollright Stones Mondausrichtung",
+        "c": "Britische Megalithkultur"
+      },
+      {
+        "n": "Brú na Bóinne Equinox-Kammer",
+        "c": "Irische Jungsteinzeit"
+      },
+      {
+        "n": "Palenque Observatorium (Turm)",
+        "c": "Maya"
+      },
+      {
+        "n": "Chaco Canyon Great Houses Solstiz",
+        "c": "Ancestral Puebloans"
+      },
+      {
+        "n": "Fajada Butte Sonnendolch (Chaco)",
+        "c": "Ancestral Puebloans"
+      },
+      {
+        "n": "Tulum Leuchtturm-Tempel Venus",
+        "c": "Maya"
+      },
+      {
+        "n": "Uxmal Taubenpalast Mondausrichtung",
+        "c": "Maya"
+      },
+      {
+        "n": "Dendera Zodiak-Decke",
+        "c": "Ptolemäisches Ägypten"
+      },
+      {
+        "n": "Antikythera-Mechanismus Saros-Zyklus",
+        "c": "Griechische Antike"
+      },
+      {
+        "n": "Babylonisches Mul.Apin Tafelwerk",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Enuma Anu Enlil Keilschrift-Almanach",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Vedische Nakshatra Mondstationen",
+        "c": "Vedische Kultur"
+      },
+      {
+        "n": "Jantar Mantar Sonnenuhren Jaipur",
+        "c": "Mogul-Indien"
+      },
+      {
+        "n": "Al-Battani Observatorium Raqqa",
+        "c": "Arabische Astronomie"
+      },
+      {
+        "n": "Tycho Brahe Uraniborg",
+        "c": "Dänische Renaissance"
+      },
+      {
+        "n": "Pekinger Altes Observatorium",
+        "c": "Ming-Dynastiechina"
+      },
+      {
+        "n": "Maeshowe Midwinter-Lichtkorridor",
+        "c": "Schottische Jungsteinzeit"
       }
     ]
   }

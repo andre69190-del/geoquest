@@ -191,6 +191,66 @@
         "n": "Olympic Velodrome (Rio de Janeiro, Brasilien)",
         "lat": -22.97,
         "lng": -43.38
+      },
+      {
+        "n": "Estadio Olímpico Universitario (Mexiko-Stadt, 1968)",
+        "lat": 19.3193,
+        "lng": -99.1878
+      },
+      {
+        "n": "Olympic Stadium Rome (1960)",
+        "lat": 41.9335,
+        "lng": 12.4547
+      },
+      {
+        "n": "Olympiastadion Athen OAKA (2004)",
+        "lat": 38.044,
+        "lng": 23.7798
+      },
+      {
+        "n": "Olympic Stadium Sydney (2000)",
+        "lat": -33.8478,
+        "lng": 151.0637
+      },
+      {
+        "n": "Birds Nest Beijing (2008)",
+        "lat": 39.9929,
+        "lng": 116.3966
+      },
+      {
+        "n": "Olympic Stadium London (2012)",
+        "lat": 51.5386,
+        "lng": -0.0163
+      },
+      {
+        "n": "Maracana (Rio 2016)",
+        "lat": -22.9122,
+        "lng": -43.2302
+      },
+      {
+        "n": "Olympic Stadium Tokyo (2021)",
+        "lat": 35.6782,
+        "lng": 139.7141
+      },
+      {
+        "n": "Stade de France (Paris 2024)",
+        "lat": 48.9244,
+        "lng": 2.3601
+      },
+      {
+        "n": "Estadio de la Cartuja (Sevilla)",
+        "lat": 37.4296,
+        "lng": -5.972
+      },
+      {
+        "n": "Hampden Park (Glasgow)",
+        "lat": 55.8258,
+        "lng": -4.2519
+      },
+      {
+        "n": "Luzniki Stadion (Moskau, 1980)",
+        "lat": 55.7157,
+        "lng": 37.5567
       }
     ]
   },
@@ -401,6 +461,51 @@
         "n": "Antarktika Ice Marathon (King George Island)",
         "lat": -62.15,
         "lng": -58.95
+      },
+      {
+        "n": "Berlin Marathon Ziel (Brandenburger Tor)",
+        "lat": 52.516,
+        "lng": 13.378
+      },
+      {
+        "n": "Paris Marathon Start (Arc de Triomphe)",
+        "lat": 48.874,
+        "lng": 2.295
+      },
+      {
+        "n": "London Marathon Ziel (The Mall)",
+        "lat": 51.502,
+        "lng": -0.141
+      },
+      {
+        "n": "Athens Classic Marathon Ziel (Panathinaiko-Stadion)",
+        "lat": 37.97,
+        "lng": 23.74
+      },
+      {
+        "n": "Stockholm Marathon (Olympiastadion)",
+        "lat": 59.34,
+        "lng": 18.07
+      },
+      {
+        "n": "Vienna City Marathon Ziel (Heldenplatz)",
+        "lat": 48.205,
+        "lng": 16.361
+      },
+      {
+        "n": "Amsterdam Marathon Ziel (Olympisch Stadion)",
+        "lat": 52.343,
+        "lng": 4.853
+      },
+      {
+        "n": "Madrid Marathon Start (Plaza de Cibeles)",
+        "lat": 40.418,
+        "lng": -3.693
+      },
+      {
+        "n": "Kopenhagen Marathon Start (Frederiksberg)",
+        "lat": 55.68,
+        "lng": 12.53
       }
     ]
   },
@@ -641,6 +746,21 @@
         "n": "Levi's Stadium (Santa Clara, USA)",
         "lat": 37.4,
         "lng": -121.97
+      },
+      {
+        "n": "Signal Iduna Park (Borussia Dortmund)",
+        "lat": 51.49,
+        "lng": 7.45
+      },
+      {
+        "n": "Bernabeu (Real Madrid, Spanien)",
+        "lat": 40.45,
+        "lng": -3.69
+      },
+      {
+        "n": "Fisht Stadium (Sotschi, Russland)",
+        "lat": 43.41,
+        "lng": 39.96
       }
     ]
   },
@@ -846,6 +966,56 @@
         "n": "Kyalami Grand Prix Circuit (Südafrika)",
         "lat": -25.99,
         "lng": 28.07
+      },
+      {
+        "n": "Interlagos (São Paulo, Brasilien)",
+        "lat": -23.7,
+        "lng": -46.7
+      },
+      {
+        "n": "Nürburgring Nordschleife (Deutschland)",
+        "lat": 50.33,
+        "lng": 6.94
+      },
+      {
+        "n": "Circuit of the Americas (Austin, Texas)",
+        "lat": 30.13,
+        "lng": -97.64
+      },
+      {
+        "n": "Bahrain International Circuit",
+        "lat": 26.03,
+        "lng": 50.51
+      },
+      {
+        "n": "Yas Marina Circuit (Abu Dhabi)",
+        "lat": 24.47,
+        "lng": 54.6
+      },
+      {
+        "n": "Mugello Circuit (Italien)",
+        "lat": 43.99,
+        "lng": 11.37
+      },
+      {
+        "n": "Road Atlanta (Braselton, Georgia)",
+        "lat": 34.15,
+        "lng": -83.81
+      },
+      {
+        "n": "Circuit de la Sarthe (Le Mans, Frankreich)",
+        "lat": 47.94,
+        "lng": 0.21
+      },
+      {
+        "n": "Autodromo José Carlos Pace (São Paulo, Brasilien)",
+        "lat": -23.7,
+        "lng": -46.7
+      },
+      {
+        "n": "Suzuka International Racing Course (Japan)",
+        "lat": 34.84,
+        "lng": 136.54
       }
     ]
   },
@@ -1086,6 +1256,21 @@
         "n": "Alpe d'Huez (Isère, Frankreich)",
         "lat": 45.09,
         "lng": 6.07
+      },
+      {
+        "n": "Cortina d'Ampezzo (Italien) — Olympia 1956",
+        "lat": 46.54,
+        "lng": 12.14
+      },
+      {
+        "n": "Sapporo (Japan) — Olympia 1972",
+        "lat": 43.06,
+        "lng": 141.35
+      },
+      {
+        "n": "Hakuba (Japan) — Olympia 1998 (Nagano)",
+        "lat": 36.7,
+        "lng": 137.86
       }
     ]
   },
@@ -1276,6 +1461,131 @@
         "n": "Sölden (Österreich)",
         "lat": 46.96,
         "lng": 11.0
+      },
+      {
+        "n": "Lauberhorn-Rennen (Wengen, Schweiz)",
+        "lat": 46.5969,
+        "lng": 7.9254
+      },
+      {
+        "n": "Streif Kitzbühel (Hahnenkamm)",
+        "lat": 47.4463,
+        "lng": 12.3872
+      },
+      {
+        "n": "Val Gardena Saslong (Italien)",
+        "lat": 46.5573,
+        "lng": 11.766
+      },
+      {
+        "n": "Deer Valley (Utah, USA)",
+        "lat": 40.6369,
+        "lng": -111.5012
+      },
+      {
+        "n": "Val d'Isère (Frankreich)",
+        "lat": 45.4481,
+        "lng": 6.978
+      },
+      {
+        "n": "Cortina d'Ampezzo (Italien)",
+        "lat": 46.5402,
+        "lng": 12.1357
+      },
+      {
+        "n": "Courchevel 1850 (Frankreich)",
+        "lat": 45.415,
+        "lng": 6.6342
+      },
+      {
+        "n": "Zermatt (Schweiz)",
+        "lat": 46.0207,
+        "lng": 7.7491
+      },
+      {
+        "n": "Sölden Rettenbachferner (Österreich)",
+        "lat": 46.9667,
+        "lng": 10.9333
+      },
+      {
+        "n": "Kronplatz (Südtirol, Italien)",
+        "lat": 46.7333,
+        "lng": 11.9333
+      },
+      {
+        "n": "Schladming Planai (Österreich)",
+        "lat": 47.3872,
+        "lng": 13.6924
+      },
+      {
+        "n": "Garmisch-Partenkirchen Kandahar (Deutschland)",
+        "lat": 47.482,
+        "lng": 11.095
+      },
+      {
+        "n": "Sestriere (Piemont, Italien)",
+        "lat": 44.9585,
+        "lng": 6.8762
+      },
+      {
+        "n": "Are (Mittelschweden)",
+        "lat": 63.3996,
+        "lng": 13.0818
+      },
+      {
+        "n": "Adelboden (Schweiz, Slalom WC)",
+        "lat": 46.4882,
+        "lng": 7.5601
+      },
+      {
+        "n": "Beaver Creek (Colorado, USA)",
+        "lat": 39.6042,
+        "lng": -106.5165
+      },
+      {
+        "n": "Kvitfjell (Norwegen)",
+        "lat": 61.4731,
+        "lng": 10.0894
+      },
+      {
+        "n": "Lake Louise (Alberta, Kanada)",
+        "lat": 51.4254,
+        "lng": -116.1773
+      },
+      {
+        "n": "Lenzerheide (Graubünden, Schweiz)",
+        "lat": 46.7281,
+        "lng": 9.5565
+      },
+      {
+        "n": "Nakiska (Alberta, Kanada, 1988)",
+        "lat": 50.9328,
+        "lng": -115.1519
+      },
+      {
+        "n": "Sapporo Mt Moiwa (Japan)",
+        "lat": 43.0521,
+        "lng": 141.3544
+      },
+      {
+        "n": "Yanqing NPC (Peking 2022)",
+        "lat": 40.4579,
+        "lng": 115.9742
+      },
+      {
+        "n": "Val Thorens (Frankreich) — höchste Skistation Europas",
+        "lat": 45.3,
+        "lng": 6.58
+      },
+      {
+        "n": "Zermatt (Schweiz) — Klein Matterhorn",
+        "lat": 45.98,
+        "lng": 7.74
+      },
+      {
+        "n": "Niseko (Japan) — bester Pulverschnee",
+        "lat": 42.8,
+        "lng": 140.69
       }
     ]
   },
@@ -1456,6 +1766,81 @@
         "n": "Prairie Dunes Country Club (Kansas, USA)",
         "lat": 37.64,
         "lng": -98.08
+      },
+      {
+        "n": "Pebble Beach Golf Links (Kalifornien)",
+        "lat": 36.5688,
+        "lng": -121.9497
+      },
+      {
+        "n": "Oakmont Country Club (Pennsylvania)",
+        "lat": 40.5273,
+        "lng": -79.8375
+      },
+      {
+        "n": "Royal Troon (Schottland)",
+        "lat": 55.5366,
+        "lng": -4.666
+      },
+      {
+        "n": "Whistling Straits (Wisconsin, USA)",
+        "lat": 43.8472,
+        "lng": -87.8098
+      },
+      {
+        "n": "TPC Sawgrass (Florida, USA — Players Champ.)",
+        "lat": 30.2009,
+        "lng": -81.396
+      },
+      {
+        "n": "Bethpage Black (New York)",
+        "lat": 40.7533,
+        "lng": -73.4508
+      },
+      {
+        "n": "Royal Liverpool (Hoylake, England)",
+        "lat": 53.383,
+        "lng": -3.1814
+      },
+      {
+        "n": "Royal St George's (Sandwich, England)",
+        "lat": 51.2667,
+        "lng": 1.3667
+      },
+      {
+        "n": "Erin Hills (Wisconsin, USA)",
+        "lat": 43.3494,
+        "lng": -88.3892
+      },
+      {
+        "n": "Torrey Pines (San Diego, Kalifornien)",
+        "lat": 32.8987,
+        "lng": -117.2534
+      },
+      {
+        "n": "Kiawah Island Ocean Course (SC, USA)",
+        "lat": 32.6063,
+        "lng": -80.1038
+      },
+      {
+        "n": "Pebble Beach Golf Links (Monterey, Kalifornien)",
+        "lat": 36.57,
+        "lng": -121.95
+      },
+      {
+        "n": "Royal Birkdale Golf Club (Southport, England)",
+        "lat": 53.63,
+        "lng": -3.03
+      },
+      {
+        "n": "Pinehurst No. 2 (North Carolina, USA)",
+        "lat": 35.19,
+        "lng": -79.47
+      },
+      {
+        "n": "Royal County Down (Nordirland)",
+        "lat": 54.2,
+        "lng": -5.87
       }
     ]
   },
@@ -1661,6 +2046,56 @@
         "n": "Rincon (Puerto Rico)",
         "lat": 18.34,
         "lng": -67.25
+      },
+      {
+        "n": "Jeffreys Bay (Südafrika)",
+        "lat": -34.05,
+        "lng": 24.92
+      },
+      {
+        "n": "Hossegor (Frankreich)",
+        "lat": 43.67,
+        "lng": -1.41
+      },
+      {
+        "n": "Snapper Rocks (Gold Coast, Australien)",
+        "lat": -28.17,
+        "lng": 153.55
+      },
+      {
+        "n": "Mullaghmore Head (Irland)",
+        "lat": 54.47,
+        "lng": -8.45
+      },
+      {
+        "n": "Skeleton Bay (Namibia)",
+        "lat": -19.5,
+        "lng": 12.6
+      },
+      {
+        "n": "Puerto Escondido (Mexiko)",
+        "lat": 15.86,
+        "lng": -97.07
+      },
+      {
+        "n": "Cloudbreak (Fidschi)",
+        "lat": -17.87,
+        "lng": 177.21
+      },
+      {
+        "n": "Playa Zicatela (Puerto Escondido, Mexiko)",
+        "lat": 15.85,
+        "lng": -97.09
+      },
+      {
+        "n": "Anchor Point (Taghazout, Marokko)",
+        "lat": 30.54,
+        "lng": -9.71
+      },
+      {
+        "n": "Lance's Right (Mentawai, Indonesien)",
+        "lat": -1.6,
+        "lng": 99.7
       }
     ]
   },
@@ -1816,6 +2251,106 @@
         "n": "Gorges du Verdon (Frankreich)",
         "lat": 43.73,
         "lng": 6.36
+      },
+      {
+        "n": "Kalymnos (Griechenland, Sportklettern)",
+        "lat": 36.9589,
+        "lng": 26.984
+      },
+      {
+        "n": "Céüse (Hautes-Alpes, Frankreich)",
+        "lat": 44.45,
+        "lng": 5.8833
+      },
+      {
+        "n": "Frankenjura (Bayern, Deutschland)",
+        "lat": 49.5,
+        "lng": 11.5
+      },
+      {
+        "n": "Arco (Garda-See, Italien)",
+        "lat": 45.9164,
+        "lng": 10.8811
+      },
+      {
+        "n": "Smith Rock (Oregon, USA)",
+        "lat": 44.3678,
+        "lng": -121.1439
+      },
+      {
+        "n": "Hueco Tanks (Texas, USA — Bouldern)",
+        "lat": 31.9199,
+        "lng": -106.0438
+      },
+      {
+        "n": "Fontainebleau (Frankreich — Bouldern)",
+        "lat": 48.4026,
+        "lng": 2.7025
+      },
+      {
+        "n": "Siurana (Katalonien, Spanien)",
+        "lat": 41.251,
+        "lng": 0.9303
+      },
+      {
+        "n": "Rodellar (Aragón, Spanien)",
+        "lat": 42.2833,
+        "lng": -0.1167
+      },
+      {
+        "n": "Railay Beach (Krabi, Thailand)",
+        "lat": 8.0117,
+        "lng": 98.8356
+      },
+      {
+        "n": "Halong Bay Klettern (Vietnam)",
+        "lat": 20.9101,
+        "lng": 107.1839
+      },
+      {
+        "n": "Yangshuo (Guangxi, China)",
+        "lat": 24.7783,
+        "lng": 110.4877
+      },
+      {
+        "n": "Paklenica NP (Kroatien)",
+        "lat": 44.3667,
+        "lng": 15.4667
+      },
+      {
+        "n": "Margalef (Katalonien, Spanien)",
+        "lat": 41.3167,
+        "lng": 0.8333
+      },
+      {
+        "n": "Finale Ligure (Ligurien, Italien)",
+        "lat": 44.1697,
+        "lng": 8.3426
+      },
+      {
+        "n": "Gorges du Verdon (Provence, Frankreich)",
+        "lat": 43.7167,
+        "lng": 6.3667
+      },
+      {
+        "n": "Dolomiten Nordwände (Drei Zinnen)",
+        "lat": 46.6171,
+        "lng": 12.3001
+      },
+      {
+        "n": "Bernina / Engadin (Graubünden, Schweiz)",
+        "lat": 46.4303,
+        "lng": 9.944
+      },
+      {
+        "n": "Lofoten Wände (Norwegen)",
+        "lat": 68.0987,
+        "lng": 13.4983
+      },
+      {
+        "n": "Kalymnos (Griechenland) — Sportklettern",
+        "lat": 37.0,
+        "lng": 26.98
       }
     ]
   }

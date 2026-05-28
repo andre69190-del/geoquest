@@ -176,6 +176,81 @@
         "n": "MATLAB (MathWorks, Natick MA)",
         "lat": 42.2809,
         "lng": -71.3495
+      },
+      {
+        "n": "Java (Sun Microsystems, Santa Clara, CA)",
+        "lat": 37.3382,
+        "lng": -121.8863
+      },
+      {
+        "n": "Rust (Mozilla Research, Mountain View)",
+        "lat": 37.3861,
+        "lng": -122.0839
+      },
+      {
+        "n": "Kotlin (JetBrains, Prag/Sankt Petersburg)",
+        "lat": 59.9311,
+        "lng": 30.3609
+      },
+      {
+        "n": "TypeScript (Microsoft, Redmond WA)",
+        "lat": 47.674,
+        "lng": -122.1215
+      },
+      {
+        "n": "Ruby (Yukihiro Matsumoto, Japan)",
+        "lat": 35.6762,
+        "lng": 139.6503
+      },
+      {
+        "n": "PHP (Rasmus Lerdorf, Kanada)",
+        "lat": 49.2827,
+        "lng": -123.1207
+      },
+      {
+        "n": "Perl (Larry Wall, NASA JPL)",
+        "lat": 34.2014,
+        "lng": -118.1716
+      },
+      {
+        "n": "R (Bell Labs — NZ-Ursprung)",
+        "lat": -36.8485,
+        "lng": 174.7633
+      },
+      {
+        "n": "Julia (MIT, Cambridge MA)",
+        "lat": 42.3601,
+        "lng": -71.0942
+      },
+      {
+        "n": "Ruby (Matsumoto, Japan)",
+        "lat": 35.54,
+        "lng": 133.08
+      },
+      {
+        "n": "Kotlin (JetBrains, Saint Petersburg)",
+        "lat": 59.95,
+        "lng": 30.32
+      },
+      {
+        "n": "Haskell (Glasgow, Schottland)",
+        "lat": 55.86,
+        "lng": -4.25
+      },
+      {
+        "n": "OCaml (INRIA, Paris)",
+        "lat": 48.86,
+        "lng": 2.35
+      },
+      {
+        "n": "Ruby (Kyoto, Japan)",
+        "lat": 35.01,
+        "lng": 135.77
+      },
+      {
+        "n": "C++ (Bell Labs, Murray Hill, USA)",
+        "lat": 40.69,
+        "lng": -74.4
       }
     ]
   },
@@ -361,6 +436,76 @@
         "n": "HTL-Programmierwettbewerb (Wien)",
         "lat": 48.2082,
         "lng": 16.3738
+      },
+      {
+        "n": "International Olympiad in Informatics (Serbien 2024)",
+        "lat": 44.0165,
+        "lng": 21.0059
+      },
+      {
+        "n": "ICPC World Finals (Luxor, 2023)",
+        "lat": 25.6872,
+        "lng": 32.6396
+      },
+      {
+        "n": "Google Code Jam HQ (Mountain View)",
+        "lat": 37.422,
+        "lng": -122.0841
+      },
+      {
+        "n": "Meta Hacker Cup (Menlo Park)",
+        "lat": 37.453,
+        "lng": -122.1817
+      },
+      {
+        "n": "TopCoder Open (Providence, Rhode Island)",
+        "lat": 41.824,
+        "lng": -71.4128
+      },
+      {
+        "n": "ACM-ICPC Regionals CERC (Prag)",
+        "lat": 50.0755,
+        "lng": 14.4378
+      },
+      {
+        "n": "Codeforces HQ (Saratov, Russland)",
+        "lat": 51.5724,
+        "lng": 46.0344
+      },
+      {
+        "n": "Kaggle HQ (San Francisco)",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "n": "HackMIT (Cambridge, MA)",
+        "lat": 42.3601,
+        "lng": -71.0942
+      },
+      {
+        "n": "Battle of the Bots (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Cyber Security Challenge UK (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "CTF DEF CON (Las Vegas)",
+        "lat": 36.1699,
+        "lng": -115.1398
+      },
+      {
+        "n": "NeurIPS ML Competition (Vancouver)",
+        "lat": 49.2827,
+        "lng": -123.1207
+      },
+      {
+        "n": "AI XPRIZE (Los Angeles)",
+        "lat": 34.0522,
+        "lng": -118.2437
       }
     ]
   },
@@ -551,6 +696,71 @@
         "n": "X-Fab (Erfurt, Thüringen)",
         "lat": 50.9714,
         "lng": 10.9982
+      },
+      {
+        "n": "Samsung Fab (Pyeongtaek, Korea)",
+        "lat": 37.0269,
+        "lng": 127.0619
+      },
+      {
+        "n": "SK Hynix (Icheon, Korea)",
+        "lat": 37.2749,
+        "lng": 127.442
+      },
+      {
+        "n": "Micron Technology (Boise, Idaho)",
+        "lat": 43.6135,
+        "lng": -116.2035
+      },
+      {
+        "n": "Western Digital Fab (Yokkaichi, Japan)",
+        "lat": 34.9651,
+        "lng": 136.6227
+      },
+      {
+        "n": "Kioxia Fab (Yokkaichi, Japan)",
+        "lat": 34.9656,
+        "lng": 136.6218
+      },
+      {
+        "n": "Intel Fab 28 (Kiryat Gat, Israel)",
+        "lat": 31.61,
+        "lng": 34.77
+      },
+      {
+        "n": "GlobalFoundries Fab 8 (Malta, New York)",
+        "lat": 42.9964,
+        "lng": -73.7992
+      },
+      {
+        "n": "Tower Semiconductor (Migdal HaEmek, Israel)",
+        "lat": 32.67,
+        "lng": 35.25
+      },
+      {
+        "n": "ASE Group (Kaohsiung, Taiwan)",
+        "lat": 22.6273,
+        "lng": 120.3014
+      },
+      {
+        "n": "MediaTek HQ (Hsinchu, Taiwan)",
+        "lat": 24.8016,
+        "lng": 120.9716
+      },
+      {
+        "n": "Infineon Fab (Regensburg, Deutschland)",
+        "lat": 49.0134,
+        "lng": 12.1016
+      },
+      {
+        "n": "Intel Fab D1X (Hillsboro, Oregon, USA)",
+        "lat": 45.53,
+        "lng": -122.99
+      },
+      {
+        "n": "Infineon Dresden Fab (Deutschland)",
+        "lat": 51.05,
+        "lng": 13.74
       }
     ]
   },
@@ -711,6 +921,101 @@
         "n": "IBM PCjr (IBM Raleigh, NC)",
         "lat": 35.7796,
         "lng": -78.6382
+      },
+      {
+        "n": "Apple I (Los Altos Garage, Kalifornien, 1976)",
+        "lat": 37.3318,
+        "lng": -122.0312
+      },
+      {
+        "n": "Sinclair ZX Spectrum (Cambridge, UK, 1982)",
+        "lat": 52.2053,
+        "lng": 0.1218
+      },
+      {
+        "n": "Atari 2600 (Sunnyvale, Kalifornien, 1977)",
+        "lat": 37.3688,
+        "lng": -122.0363
+      },
+      {
+        "n": "BBC Micro (Acorn, Cambridge 1981)",
+        "lat": 52.2053,
+        "lng": 0.1218
+      },
+      {
+        "n": "Amiga 1000 (Commodore, West Chester PA, 1985)",
+        "lat": 39.9609,
+        "lng": -75.6057
+      },
+      {
+        "n": "Atari ST (Sunnyvale, CA, 1985)",
+        "lat": 37.3688,
+        "lng": -122.0363
+      },
+      {
+        "n": "MSX (Microsoft/ASCII Japan, 1983)",
+        "lat": 35.6762,
+        "lng": 139.6503
+      },
+      {
+        "n": "TRS-80 (Radio Shack, Fort Worth TX, 1977)",
+        "lat": 32.7555,
+        "lng": -97.3308
+      },
+      {
+        "n": "Apple II (Cupertino, CA, 1977)",
+        "lat": 37.3318,
+        "lng": -122.0312
+      },
+      {
+        "n": "IBM PC 5150 (Boca Raton, Florida, 1981)",
+        "lat": 26.3683,
+        "lng": -80.1289
+      },
+      {
+        "n": "Osborne 1 (Hayward, California, 1981)",
+        "lat": 37.6688,
+        "lng": -122.0808
+      },
+      {
+        "n": "Compaq Portable (Houston, TX, 1982)",
+        "lat": 29.7604,
+        "lng": -95.3698
+      },
+      {
+        "n": "NeXT Computer (Redwood City, CA, 1988)",
+        "lat": 37.4848,
+        "lng": -122.2281
+      },
+      {
+        "n": "Acorn Archimedes (Cambridge, UK, 1987)",
+        "lat": 52.2053,
+        "lng": 0.1218
+      },
+      {
+        "n": "Tandy Color Computer (Fort Worth TX, 1980)",
+        "lat": 32.7555,
+        "lng": -97.3308
+      },
+      {
+        "n": "IMSAI 8080 (San Leandro, CA, 1975)",
+        "lat": 37.7249,
+        "lng": -122.1561
+      },
+      {
+        "n": "Kaypro II (Solana Beach, CA, 1982)",
+        "lat": 32.9873,
+        "lng": -117.2713
+      },
+      {
+        "n": "Schneider CPC 464 (Amsterdam, NL, 1984)",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      {
+        "n": "Robotron KC 85 (VEB, Mühlhausen, DDR 1984)",
+        "lat": 51.2085,
+        "lng": 10.4532
       }
     ]
   },
@@ -921,6 +1226,51 @@
         "n": "Google Data Center (Pryor, Oklahoma)",
         "lat": 36.3,
         "lng": -95.31
+      },
+      {
+        "n": "Equinix NY4 (Secaucus, New Jersey)",
+        "lat": 40.79,
+        "lng": -74.07
+      },
+      {
+        "n": "Iron Mountain Data Center (Manassas, Virginia)",
+        "lat": 38.75,
+        "lng": -77.48
+      },
+      {
+        "n": "Facebook (Meta) Data Center (Lulea, Schweden)",
+        "lat": 65.58,
+        "lng": 22.16
+      },
+      {
+        "n": "Apple Data Center (Viborg, Dänemark)",
+        "lat": 56.45,
+        "lng": 9.4
+      },
+      {
+        "n": "Google Data Center (Hamina, Finnland)",
+        "lat": 60.56,
+        "lng": 27.2
+      },
+      {
+        "n": "Switch SUPERNAP (Las Vegas, Nevada)",
+        "lat": 36.13,
+        "lng": -115.1
+      },
+      {
+        "n": "Amazon AWS (Columbus, Ohio)",
+        "lat": 39.96,
+        "lng": -83.0
+      },
+      {
+        "n": "Alibaba Cloud Data Center (Hangzhou)",
+        "lat": 30.27,
+        "lng": 120.15
+      },
+      {
+        "n": "ChinaNet Backbone (Beijing)",
+        "lat": 39.91,
+        "lng": 116.39
       }
     ]
   },
@@ -1101,6 +1451,81 @@
         "n": "Guido van Rossum (CWI Amsterdam)",
         "lat": 52.3567,
         "lng": 4.9546
+      },
+      {
+        "n": "Linus Torvalds (Helsinki, Finnland — Linux)",
+        "lat": 60.1699,
+        "lng": 24.9384
+      },
+      {
+        "n": "Tim Berners-Lee (CERN, Genf — WWW)",
+        "lat": 46.2328,
+        "lng": 6.0555
+      },
+      {
+        "n": "Grace Hopper (New Haven, Connecticut)",
+        "lat": 41.3083,
+        "lng": -72.9279
+      },
+      {
+        "n": "John von Neumann (Princeton, NJ)",
+        "lat": 40.3573,
+        "lng": -74.6672
+      },
+      {
+        "n": "Claude Shannon (MIT, Cambridge MA)",
+        "lat": 42.3601,
+        "lng": -71.0942
+      },
+      {
+        "n": "Brian Kernighan (Princeton University)",
+        "lat": 40.3573,
+        "lng": -74.6672
+      },
+      {
+        "n": "Vint Cerf (Stanford, TCP/IP)",
+        "lat": 37.4275,
+        "lng": -122.1697
+      },
+      {
+        "n": "Robert Kahn (BBN Technologies, Cambridge)",
+        "lat": 42.3601,
+        "lng": -71.0942
+      },
+      {
+        "n": "Steve Wozniak (Los Altos, CA)",
+        "lat": 37.3853,
+        "lng": -122.0572
+      },
+      {
+        "n": "Douglas Engelbart (Stanford Research, Menlo Park)",
+        "lat": 37.453,
+        "lng": -122.1817
+      },
+      {
+        "n": "Ada Lovelace (London — erste Programmiererin)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Charles Babbage (London — Differenzmaschine)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Konrad Zuse (Berlin — Z3-Computer, 1941)",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      {
+        "n": "Dennis Ritchie (Murray Hill, NJ)",
+        "lat": 40.69,
+        "lng": -74.4
+      },
+      {
+        "n": "Claude Shannon (Bell Labs, Murray Hill)",
+        "lat": 40.69,
+        "lng": -74.4
       }
     ]
   },
@@ -1266,6 +1691,96 @@
         "n": "Technorama (Winterthur, Schweiz)",
         "lat": 47.4917,
         "lng": 8.7234
+      },
+      {
+        "n": "National Air and Space Museum (Washington DC)",
+        "lat": 38.8881,
+        "lng": -77.0197
+      },
+      {
+        "n": "Ontario Science Centre (Toronto)",
+        "lat": 43.7183,
+        "lng": -79.3355
+      },
+      {
+        "n": "Cité des Sciences (La Villette, Paris)",
+        "lat": 48.8962,
+        "lng": 2.3876
+      },
+      {
+        "n": "Heimatmuseum Vintage Computer (Zuse HQ, Berlin)",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      {
+        "n": "Living Computer Museum (Seattle, geschlossen)",
+        "lat": 47.6062,
+        "lng": -122.3321
+      },
+      {
+        "n": "Vintage Computer Federation (Roselle Park NJ)",
+        "lat": 40.6629,
+        "lng": -74.2671
+      },
+      {
+        "n": "Bletchley Park (Computing Museum, UK)",
+        "lat": 51.9977,
+        "lng": -0.7407
+      },
+      {
+        "n": "Centre for Computing History (Cambridge)",
+        "lat": 52.2053,
+        "lng": 0.1218
+      },
+      {
+        "n": "IT Museum Málaga (Spuren Technologie)",
+        "lat": 36.7213,
+        "lng": -4.4214
+      },
+      {
+        "n": "VinylVideo & Tech Museum (Wien)",
+        "lat": 48.2082,
+        "lng": 16.3738
+      },
+      {
+        "n": "Computerspielemuseum (Berlin)",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      {
+        "n": "Science Museum London (UK)",
+        "lat": 51.498,
+        "lng": -0.174
+      },
+      {
+        "n": "Ars Electronica Center (Linz, Österreich)",
+        "lat": 48.31,
+        "lng": 14.29
+      },
+      {
+        "n": "Cité des Sciences (Paris, Frankreich)",
+        "lat": 48.89,
+        "lng": 2.39
+      },
+      {
+        "n": "Computer Museum (Boston, Massachusetts)",
+        "lat": 42.36,
+        "lng": -71.05
+      },
+      {
+        "n": "Informatik-Sammlung Erlangen (FAU)",
+        "lat": 49.6,
+        "lng": 11.0
+      },
+      {
+        "n": "Tekniska Museet (Stockholm)",
+        "lat": 59.36,
+        "lng": 18.1
+      },
+      {
+        "n": "Heinz Nixdorf MuseumsForum (Paderborn, Deutschland)",
+        "lat": 51.72,
+        "lng": 8.75
       }
     ]
   },
@@ -1476,6 +1991,51 @@
         "n": "NCHPC Poznan (Polska)",
         "lat": 52.41,
         "lng": 16.93
+      },
+      {
+        "n": "Perlmutter (NERSC, Berkeley, Kalifornien)",
+        "lat": 37.88,
+        "lng": -122.25
+      },
+      {
+        "n": "Fugaku (RIKEN, Kobe, Japan)",
+        "lat": 34.69,
+        "lng": 135.19
+      },
+      {
+        "n": "Leonardo (CINECA, Bologna, Italien)",
+        "lat": 44.51,
+        "lng": 11.35
+      },
+      {
+        "n": "MareNostrum 5 (Barcelona, Spanien)",
+        "lat": 41.39,
+        "lng": 2.11
+      },
+      {
+        "n": "Jülich Supercomputing Centre (Deutschland)",
+        "lat": 50.91,
+        "lng": 6.41
+      },
+      {
+        "n": "MN4 Marenostrum (BSC, Barcelona)",
+        "lat": 41.39,
+        "lng": 2.11
+      },
+      {
+        "n": "Stampede2 (TACC, Austin, Texas)",
+        "lat": 30.39,
+        "lng": -97.73
+      },
+      {
+        "n": "Jade (CINES, Montpellier, Frankreich)",
+        "lat": 43.61,
+        "lng": 3.88
+      },
+      {
+        "n": "El Capitan (Lawrence Livermore Lab, Kalifornien)",
+        "lat": 37.69,
+        "lng": -121.7
       }
     ]
   }

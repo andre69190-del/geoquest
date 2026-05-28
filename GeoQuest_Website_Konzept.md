@@ -19,7 +19,7 @@ begeistert sein und es sofort spielen / installieren.
 
 ## 2. Kernbotschaften (USP)
 
-1. **681 Spielmodi** -- groesste kostenlose Geografie-Quiz-App der Welt
+1. **685 Spielmodi** -- groesste kostenlose Geografie-Quiz-App der Welt
 2. **Komplett kostenlos & werbefrei** -- keine Zahlschranken, kein In-App-Kauf
 3. **Offline spielbar** -- einmal oeffnen, dann auch ohne Internet
 4. **Eine Datei** -- 2.4 MB, kein App-Store, kein Install-Prozess
@@ -42,7 +42,7 @@ begeistert sein und es sofort spielen / installieren.
 > "Wie gut kennst du die Welt?"
 
 **Subline (kleiner, grau):**
-> 681 Spielmodi. Kostenlos. Offline. Direkt im Browser.
+> 685 Spielmodi. Kostenlos. Offline. Direkt im Browser.
 
 **2 CTA-Buttons:**
 - `[Jetzt spielen]` -- gross, gruen, primaer -- oeffnet GeoQuest.html
@@ -59,7 +59,7 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 | Zahl | Label |
 |------|-------|
-| **681** | Spielmodi |
+| **685** | Spielmodi |
 | **20** | Kategorien |
 | **2.4 MB** | App-Groesse |
 | **100%** | Kostenlos |
@@ -68,7 +68,7 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 ### SEKTION 3 -- Kategorie-Showcase (Was kann GeoQuest?)
 
-**Ueberschrift:** "681 Modi. 20 Welten. Unendlich viel zu entdecken."
+**Ueberschrift:** "685 Modi. 20 Welten. Unendlich viel zu entdecken."
 
 **Grid mit 20 Kategorie-Karten** (4x5 oder 5x4), je Karte:
 - Grosses Emoji / Icon
@@ -220,7 +220,7 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 | Domain | geoquest.app oder subdomain landing.geoquest.app |
 | Performance | Landingpage < 200 KB (kein unnoetige Bibliotheken) |
 | Mobile-first | Vollstaendig responsive, Touch-optimiert |
-| SEO | Meta-Tags: "Geografie Quiz", "681 Spielmodi", "kostenlos" |
+| SEO | Meta-Tags: "Geografie Quiz", "685 Spielmodi", "kostenlos" |
 | Analytics | Optional: Vercel Analytics (bereits vorhanden) |
 
 ---
@@ -236,4 +236,4 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 ---
 
-*Konzept erstellt: Mai 2026 | Phase 269 | GeoQuest v2.79 MB | 685 Modi*
+*Konzept erstellt: Mai 2026 | Phase 271 | GeoQuest v2.79 MB | 685 Modi*

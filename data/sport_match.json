@@ -322,6 +322,106 @@
       {
         "n": "Gaelic Football",
         "c": "15 Spieler"
+      },
+      {
+        "n": "Lacrosse",
+        "c": "10 Spieler"
+      },
+      {
+        "n": "Kabaddi",
+        "c": "7 Spieler"
+      },
+      {
+        "n": "Australian Rules Football",
+        "c": "18 Spieler"
+      },
+      {
+        "n": "Floorball",
+        "c": "6 Spieler"
+      },
+      {
+        "n": "Softball",
+        "c": "9 Spieler"
+      },
+      {
+        "n": "Futsal",
+        "c": "5 Spieler"
+      },
+      {
+        "n": "Beachvolleyball",
+        "c": "2 Spieler"
+      },
+      {
+        "n": "Beachfussball",
+        "c": "5 Spieler"
+      },
+      {
+        "n": "Minifussball",
+        "c": "5 Spieler"
+      },
+      {
+        "n": "Bobsport (4er Bob)",
+        "c": "4 Athleten"
+      },
+      {
+        "n": "Korfball",
+        "c": "8 Spieler"
+      },
+      {
+        "n": "Badminton (Doppel)",
+        "c": "2 Spieler"
+      },
+      {
+        "n": "Tischtennis (Doppel)",
+        "c": "2 Spieler"
+      },
+      {
+        "n": "Bobsleigh (Vierer-Bob)",
+        "c": "4 Spieler"
+      },
+      {
+        "n": "Synchronschwimmen",
+        "c": "8 Spieler"
+      },
+      {
+        "n": "Canoe Polo",
+        "c": "5 Spieler"
+      },
+      {
+        "n": "Ultimate Frisbee",
+        "c": "7 Spieler"
+      },
+      {
+        "n": "Quidditch (Kesseldorf)",
+        "c": "7 Spieler"
+      },
+      {
+        "n": "Blind Football (B1)",
+        "c": "5 Spieler"
+      },
+      {
+        "n": "Wheelchair Basketball",
+        "c": "5 Spieler"
+      },
+      {
+        "n": "Ringette",
+        "c": "6 Spieler"
+      },
+      {
+        "n": "Speedball",
+        "c": "11 Spieler"
+      },
+      {
+        "n": "Polo (Feld)",
+        "c": "4 Spieler"
+      },
+      {
+        "n": "Hurling (Irland)",
+        "c": "15 Spieler"
+      },
+      {
+        "n": "Bandy",
+        "c": "11 Spieler"
       }
     ]
   },
@@ -451,6 +551,82 @@
       {
         "n": "Olympiade 2028",
         "c": "Los Angeles"
+      },
+      {
+        "n": "Olympia 1908",
+        "c": "London"
+      },
+      {
+        "n": "Olympia 1912",
+        "c": "Stockholm"
+      },
+      {
+        "n": "Olympia 1920",
+        "c": "Antwerpen"
+      },
+      {
+        "n": "Olympia 1924",
+        "c": "Paris"
+      },
+      {
+        "n": "Olympia 1928",
+        "c": "Amsterdam"
+      },
+      {
+        "n": "Olympia 1932",
+        "c": "Los Angeles"
+      },
+      {
+        "n": "Olympia 1936",
+        "c": "Berlin"
+      },
+      {
+        "n": "Olympia 1948",
+        "c": "London"
+      },
+      {
+        "n": "Olympia 1952",
+        "c": "Helsinki"
+      },
+      {
+        "n": "Olympia 1956",
+        "c": "Melbourne"
+      },
+      {
+        "n": "Olympia 1960",
+        "c": "Rom"
+      },
+      {
+        "n": "Olympia 1964",
+        "c": "Tokio"
+      },
+      {
+        "n": "Olympia 1968",
+        "c": "Mexiko-Stadt"
+      },
+      {
+        "n": "Olympia 1972",
+        "c": "München"
+      },
+      {
+        "n": "Olympia 1976",
+        "c": "Montreal"
+      },
+      {
+        "n": "Olympia 1980",
+        "c": "Moskau"
+      },
+      {
+        "n": "Olympia 1984",
+        "c": "Los Angeles"
+      },
+      {
+        "n": "Olympia 1988",
+        "c": "Seoul"
+      },
+      {
+        "n": "Winter-Olympia 2024",
+        "c": "Paris (Sommer)"
       }
     ]
   },
@@ -773,6 +949,94 @@
       {
         "n": "Darts",
         "c": "Nein"
+      },
+      {
+        "n": "Skateboard",
+        "c": "Ja (2020+)"
+      },
+      {
+        "n": "Softball (Frauen)",
+        "c": "Ja (bei bestimmten Spielen)"
+      },
+      {
+        "n": "Baseball",
+        "c": "Ja (bei bestimmten Spielen)"
+      },
+      {
+        "n": "Lacrosse",
+        "c": "Ja (2028)"
+      },
+      {
+        "n": "Breakdance (Breaking)",
+        "c": "Ja (2024)"
+      },
+      {
+        "n": "Flagfootball",
+        "c": "Ja (2028)"
+      },
+      {
+        "n": "Polo",
+        "c": "Nein (zuletzt 1936)"
+      },
+      {
+        "n": "Snooker",
+        "c": "Nein"
+      },
+      {
+        "n": "Poker",
+        "c": "Nein"
+      },
+      {
+        "n": "Esports",
+        "c": "Nein (IOC-Diskussion)"
+      },
+      {
+        "n": "Rettungsschwimmen",
+        "c": "Nein"
+      },
+      {
+        "n": "Mountainbike",
+        "c": "Ja"
+      },
+      {
+        "n": "BMX Racing",
+        "c": "Ja (seit 2008)"
+      },
+      {
+        "n": "Windsurfen",
+        "c": "Ja"
+      },
+      {
+        "n": "Flag Football",
+        "c": "Ja (Los Angeles 2028)"
+      },
+      {
+        "n": "Cheerleading",
+        "c": "Nein"
+      },
+      {
+        "n": "Cricket (T20)",
+        "c": "Ja (ab LA 2028)"
+      },
+      {
+        "n": "Baseball (MLB-Format)",
+        "c": "Nein"
+      },
+      {
+        "n": "Rhythmische Sportgymnastik",
+        "c": "Ja"
+      },
+      {
+        "n": "Discgolf",
+        "c": "Nein"
+      },
+      {
+        "n": "Schwimmen",
+        "c": "Ja"
+      },
+      {
+        "n": "Trampolinturnen",
+        "c": "Ja"
       }
     ]
   },
@@ -870,6 +1134,114 @@
       {
         "n": "Wushu (Kung Fu)",
         "c": "China"
+      },
+      {
+        "n": "Rodeo",
+        "c": "Wyoming (USA)"
+      },
+      {
+        "n": "Sambo",
+        "c": "Russland"
+      },
+      {
+        "n": "Pato",
+        "c": "Argentinien"
+      },
+      {
+        "n": "Gaelic Football",
+        "c": "Irland"
+      },
+      {
+        "n": "Shinty",
+        "c": "Schottland"
+      },
+      {
+        "n": "Buzkashi",
+        "c": "Afghanistan"
+      },
+      {
+        "n": "Silambam",
+        "c": "Indien (Tamil Nadu)"
+      },
+      {
+        "n": "Kho Kho",
+        "c": "Indien"
+      },
+      {
+        "n": "Ssireum (Ringkampf)",
+        "c": "Südkorea"
+      },
+      {
+        "n": "Lethwei",
+        "c": "Myanmar"
+      },
+      {
+        "n": "Schwingen",
+        "c": "Schweiz"
+      },
+      {
+        "n": "Glíma (Ringen)",
+        "c": "Island"
+      },
+      {
+        "n": "Judo",
+        "c": "Japan"
+      },
+      {
+        "n": "Backgammon (Tavla)",
+        "c": "Türkei"
+      },
+      {
+        "n": "Ice Hockey",
+        "c": "Kanada"
+      },
+      {
+        "n": "Naadam (Ringen)",
+        "c": "Mongolei"
+      },
+      {
+        "n": "Basque Pelota",
+        "c": "Spanien"
+      },
+      {
+        "n": "Australian Rules Football",
+        "c": "Australien"
+      },
+      {
+        "n": "Martial Arts (Wushu)",
+        "c": "China"
+      },
+      {
+        "n": "Naadam (Mongolisch)",
+        "c": "Mongolei"
+      },
+      {
+        "n": "Kabbadi",
+        "c": "Indien"
+      },
+      {
+        "n": "Angling (Angeln)",
+        "c": "England"
+      },
+      {
+        "n": "Glima (Ringkampf)",
+        "c": "Island"
+      },
+      {
+        "n": "Raquette",
+        "c": "Kanada (historisch)"
+      },
+      {
+        "n": "Lethwei (bareFist-Boxen)",
+        "c": "Myanmar"
+      },
+      {
+        "n": "Gatka (Sikh-Kampfkunst)",
+        "c": "Punjab (Indien)"
+      },
+      {
+        "n": "Wushu (Chinesische Kampfkunst)",
+        "c": "Volksrepublik China"
       }
     ]
   },
@@ -1200,6 +1572,102 @@
       {
         "n": "Marathon Frauen (2:09:56, 2024)",
         "c": "Ruth Chepngetich"
+      },
+      {
+        "n": "100m Frauen (10,49 s, 1988)",
+        "c": "Florence Griffith-Joyner"
+      },
+      {
+        "n": "200m Maenner (19,19 s, 2009)",
+        "c": "Usain Bolt"
+      },
+      {
+        "n": "Marathon Maenner (2:00:35, 2023)",
+        "c": "Kelvin Kiptum"
+      },
+      {
+        "n": "Marathon Frauen (2:11:53, 2023)",
+        "c": "Tigst Assefa"
+      },
+      {
+        "n": "Hochsprung Frauen (2,09 m, 2024)",
+        "c": "Yaroslava Mahuchikh"
+      },
+      {
+        "n": "Weitsprung Maenner (8,95 m, 1991)",
+        "c": "Mike Powell"
+      },
+      {
+        "n": "Dreisprung Maenner (18,29 m, 1995)",
+        "c": "Jonathan Edwards"
+      },
+      {
+        "n": "Kugelstossen Maenner (23,56 m, 2023)",
+        "c": "Ryan Crouser"
+      },
+      {
+        "n": "Diskuswerfen Maenner (74,35 m, 1986)",
+        "c": "Juergen Schult"
+      },
+      {
+        "n": "Hammerwerfen Maenner (86,74 m, 1986)",
+        "c": "Yuriy Sedykh"
+      },
+      {
+        "n": "Speerwurf Maenner (98,48 m, 1996)",
+        "c": "Jan Zelezny"
+      },
+      {
+        "n": "Zehnkampf (9.126 Pkt., 2012)",
+        "c": "Ashton Eaton"
+      },
+      {
+        "n": "Stabhochsprung Maenner (6,26 m, 2024)",
+        "c": "Mondo Duplantis"
+      },
+      {
+        "n": "400m Huerden (45,94 s, 2021)",
+        "c": "Karsten Warholm"
+      },
+      {
+        "n": "400m Maenner (43,03 s, 1999)",
+        "c": "Michael Johnson"
+      },
+      {
+        "n": "800m Maenner (1:40,91, 2012)",
+        "c": "David Rudisha"
+      },
+      {
+        "n": "1500m Maenner (3:26,00, 1998)",
+        "c": "Hicham El Guerrouj"
+      },
+      {
+        "n": "5000m Maenner (12:35,36, 2020)",
+        "c": "Joshua Cheptegei"
+      },
+      {
+        "n": "10000m Maenner (26:11,00, 2021)",
+        "c": "Joshua Cheptegei"
+      },
+      {
+        "n": "110m Huerden (12,80 s, 2012)",
+        "c": "Aries Merritt"
+      },
+      {
+        "n": "50km Gehen Maenner (3:32:33, 2014)",
+        "c": "Yohann Diniz"
+      },
+      {
+        "n": "Siebenkampf Frauen (7.291 Pkt., 1988)",
+        "c": "Jackie Joyner-Kersee"
+      },
+      {
+        "n": "Dreisprung Frauen (15,74 m, 1995)",
+        "c": "Inessa Kravets"
+      },
+      {
+        "n": "Diskuswerfen Frauen (76,80 m, 1988)",
+        "c": "Gabriele Reinsch"
       }
     ]
   },
@@ -1542,6 +2010,86 @@
       {
         "n": "Laufschritt (Kadenz)",
         "c": "Leichtathletik"
+      },
+      {
+        "n": "Biathlon",
+        "c": "Wintersport"
+      },
+      {
+        "n": "Skeleton",
+        "c": "Wintersport"
+      },
+      {
+        "n": "Bobsport",
+        "c": "Wintersport"
+      },
+      {
+        "n": "Eiskunstlauf",
+        "c": "Wintersport"
+      },
+      {
+        "n": "Nordische Kombination",
+        "c": "Wintersport"
+      },
+      {
+        "n": "Skispringen",
+        "c": "Wintersport"
+      },
+      {
+        "n": "Rodeln",
+        "c": "Wintersport"
+      },
+      {
+        "n": "Curling",
+        "c": "Wintersport"
+      },
+      {
+        "n": "Turnen (Boden)",
+        "c": "Kampfsport/Kunstsport"
+      },
+      {
+        "n": "Rhythmische Sportgymnastik",
+        "c": "Kunstsport"
+      },
+      {
+        "n": "Trampolin",
+        "c": "Sprungsport"
+      },
+      {
+        "n": "Fechten",
+        "c": "Kampfsport"
+      },
+      {
+        "n": "Judo",
+        "c": "Kampfsport"
+      },
+      {
+        "n": "Taekwondo",
+        "c": "Kampfsport"
+      },
+      {
+        "n": "Ringen (Greco)",
+        "c": "Kampfsport"
+      },
+      {
+        "n": "Boxen",
+        "c": "Kampfsport"
+      },
+      {
+        "n": "Kanu Slalom",
+        "c": "Wassersport"
+      },
+      {
+        "n": "Synchronschwimmen",
+        "c": "Wassersport"
+      },
+      {
+        "n": "Wasserball",
+        "c": "Wassersport"
+      },
+      {
+        "n": "Dressurreiten",
+        "c": "Reitsport"
       }
     ]
   },
@@ -1651,6 +2199,102 @@
       {
         "n": "Savate",
         "c": "Europa"
+      },
+      {
+        "n": "Australian Rules Football",
+        "c": "Ozeanien"
+      },
+      {
+        "n": "Polo (moderner)",
+        "c": "Asien/Europa"
+      },
+      {
+        "n": "Pétanque",
+        "c": "Europa"
+      },
+      {
+        "n": "Bandy",
+        "c": "Europa (Nordrussland)"
+      },
+      {
+        "n": "Buzkashi",
+        "c": "Asien (Zentralasien)"
+      },
+      {
+        "n": "Muay Thai",
+        "c": "Asien (Thailand)"
+      },
+      {
+        "n": "Shinty",
+        "c": "Europa (Schottland)"
+      },
+      {
+        "n": "Pato",
+        "c": "Südamerika (Argentinien)"
+      },
+      {
+        "n": "Silambam",
+        "c": "Asien (Indien)"
+      },
+      {
+        "n": "Lethwei",
+        "c": "Asien (Myanmar)"
+      },
+      {
+        "n": "Glíma",
+        "c": "Europa (Island)"
+      },
+      {
+        "n": "Schwingen",
+        "c": "Europa (Schweiz)"
+      },
+      {
+        "n": "Ssireum",
+        "c": "Asien (Korea)"
+      },
+      {
+        "n": "Tchoukball",
+        "c": "Europa (Schweiz)"
+      },
+      {
+        "n": "Pesäpallo",
+        "c": "Europa (Finnland)"
+      },
+      {
+        "n": "Klootschieten",
+        "c": "Europa (Ostfriesland)"
+      },
+      {
+        "n": "Noodling (Catfish Grabbing)",
+        "c": "Nordamerika (USA)"
+      },
+      {
+        "n": "Māori Wrestling (Mau Rākau)",
+        "c": "Ozeanien"
+      },
+      {
+        "n": "Polo",
+        "c": "Asien (Ursprung)"
+      },
+      {
+        "n": "Naadam-Ringen",
+        "c": "Asien"
+      },
+      {
+        "n": "Australian Football (AFL)",
+        "c": "Ozeanien"
+      },
+      {
+        "n": "Australian Football",
+        "c": "Ozeanien"
+      },
+      {
+        "n": "Petanque",
+        "c": "Europa"
+      },
+      {
+        "n": "Waka Ama (Kanufahren)",
+        "c": "Ozeanien"
       }
     ]
   }
