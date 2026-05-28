@@ -15073,3 +15073,17 @@ try:
     print(f"Written: GeoQuest_Spielübersicht.html ({_n} Modi, auto)")
 except Exception as _e:
     print(f"WARN: Spielübersicht auto-update skipped: {_e}")
+
+# ── Auto-Regenerate Spielübersicht ───────────────────────────────────────────
+try:
+    import importlib.util as _ilu, os as _os
+    _sp = _ilu.spec_from_file_location(
+        "generate_spieluebersicht",
+        _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "generate_spieluebersicht.py")
+    )
+    _gsu = _ilu.module_from_spec(_sp)
+    _sp.loader.exec_module(_gsu)
+    _n = _gsu.generate()
+    print(f"Written: GeoQuest_Spieluebersicht.html ({_n} Modi, auto)")
+except Exception as _e:
+    print(f"WARN: Spieluebersicht auto-update skipped: {_e}")

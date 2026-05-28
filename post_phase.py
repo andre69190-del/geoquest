@@ -397,4 +397,26 @@ def main():
     # GeoQuest.html Größe
     size_str = get_geoquest_size_str()
 
-    # Al
+    # Alle 5 Schritte
+    print(f"📝 Aktualisiere Dateien (5 Schritte):")
+    update_bat(phase, summary)
+    update_architecture(phase, summary, patch_file, size_str)
+    update_readme(phase)
+    update_konzept(phase, size_str)
+    update_spieluebersicht(phase, counts)
+
+    # Abschluss-Stats
+    geoquest_path = os.path.join(BASE, "GeoQuest.html")
+    if os.path.exists(geoquest_path):
+        size_bytes = os.path.getsize(geoquest_path)
+        print(f"\n{GREEN}{BOLD}✅ Phase {phase} — alle Metadaten aktualisiert!{RESET}")
+        print(f"   GeoQuest.html : {size_str} MB ({size_bytes:,} Bytes)")
+    else:
+        print(f"\n{GREEN}{BOLD}✅ Phase {phase} — alle Metadaten aktualisiert!{RESET}")
+        print(f"   GeoQuest.html : nicht gefunden (gen.py noch nicht ausgeführt?)")
+
+    print(f"\n{YELLOW}💡 Nächster Schritt:{RESET} unlock_and_push.bat ausführen\n")
+
+
+if __name__ == "__main__":
+    main()
