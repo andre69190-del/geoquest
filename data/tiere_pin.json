@@ -433,5 +433,141 @@
         "lng": 115.52
       }
     ]
+  },
+  "pferde_rassen": {
+    "prompt": "Wo liegt der historische Ursprung oder das Hauptzuchtgebiet dieser Pferderasse?",
+    "prompt_en": "Where is the historical origin or main breeding region of this horse breed?",
+    "items": [
+      {
+        "n": "Islandpferd",
+        "lat": 64.13,
+        "lng": -21.95
+      },
+      {
+        "n": "Andalusier (PRE)",
+        "lat": 37.39,
+        "lng": -5.99
+      },
+      {
+        "n": "Haflinger",
+        "lat": 46.67,
+        "lng": 11.36
+      },
+      {
+        "n": "Lipizzaner",
+        "lat": 45.53,
+        "lng": 13.95
+      },
+      {
+        "n": "Friese",
+        "lat": 53.1,
+        "lng": 5.8
+      },
+      {
+        "n": "Trakehner",
+        "lat": 54.6,
+        "lng": 21.0
+      },
+      {
+        "n": "Hannoveraner",
+        "lat": 52.37,
+        "lng": 9.73
+      },
+      {
+        "n": "Oldenburger",
+        "lat": 53.14,
+        "lng": 8.21
+      },
+      {
+        "n": "Shetlandpony",
+        "lat": 60.15,
+        "lng": -1.18
+      },
+      {
+        "n": "Welsh Mountain Pony",
+        "lat": 52.13,
+        "lng": -3.78
+      },
+      {
+        "n": "Connemara-Pony",
+        "lat": 53.45,
+        "lng": -10.0
+      },
+      {
+        "n": "Camargue-Pferd",
+        "lat": 43.52,
+        "lng": 4.48
+      },
+      {
+        "n": "Percheron",
+        "lat": 48.2,
+        "lng": 0.4
+      },
+      {
+        "n": "Lusitano",
+        "lat": 39.55,
+        "lng": -8.0
+      },
+      {
+        "n": "Noriker",
+        "lat": 47.05,
+        "lng": 13.48
+      },
+      {
+        "n": "Fjordpferd",
+        "lat": 61.18,
+        "lng": 6.1
+      },
+      {
+        "n": "Arabisches Vollblut",
+        "lat": 24.0,
+        "lng": 45.0
+      },
+      {
+        "n": "Akhal-Teke",
+        "lat": 37.93,
+        "lng": 58.38
+      },
+      {
+        "n": "Przewalski-Pferd",
+        "lat": 47.9,
+        "lng": 106.91
+      },
+      {
+        "n": "Berber-Pferd",
+        "lat": 33.0,
+        "lng": -5.0
+      },
+      {
+        "n": "Mustang",
+        "lat": 39.8,
+        "lng": -98.6
+      },
+      {
+        "n": "Quarter Horse",
+        "lat": 32.0,
+        "lng": -97.0
+      },
+      {
+        "n": "Appaloosa",
+        "lat": 46.4,
+        "lng": -116.9
+      },
+      {
+        "n": "Paint Horse",
+        "lat": 35.47,
+        "lng": -97.51
+      },
+      {
+        "n": "Criollo",
+        "lat": -34.61,
+        "lng": -58.39
+      },
+      {
+        "n": "Englisches Vollblut",
+        "lat": 52.0,
+        "lng": -1.0
+      }
+    ]
   }
 }

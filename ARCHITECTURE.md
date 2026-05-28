@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 254 (Stand: Mai 2026)
+**Version:** Phase 258 (Stand: Mai 2026)
 **Build:** gen.py → 1.21 MB | GeoQuest.html → 2.36 MB | 677 Spielmodi | verify: 89/89
 
 ---
@@ -1021,18 +1021,22 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **252** | patch_252_astro_expansion.py | **Astronomie Expansion: 17 Modi. MODES: 590->607** |
 | **253** | patch_253_geo_expansion.py | **Geologie Expansion: 40 Modi. MODES: 607->647** |
 | **254** | patch_254_sport_expansion.py | **Sport-Wissen Expansion: 30 Modi. MODES: 647->677** |
+| 255 | patch_255_supabase_feedback.py | Supabase feedback-Tabelle, domain-check |
+| 256 | patch_256_tts_feedback.py | TTS (Web Speech API), openFeedback()-Modal, Supabase-Write |
+| 257 | patch_257_hud_cleanup.py | HUD: Fehler-Button entfernt, Buttons kleiner, 💡 Startseite, TTS-Highlight |
+| **258** | patch_258_pferde.py | **Pferde-Expansion: +4 Modi (MODES: 677->681). Offline-Feedback-Queue** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 254 -- Sport-Wissen Expansion, 677 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 258 -- Pferde-Expansion + Offline-Feedback, 681 Modi, 37 Datendateien, Mai 2026.*
 
 
 ---
 
 ## 13. Vollstaendiger Spielmodus-Katalog
 
-**Stand Phase 254 -- 677 Modi in 20 Kategorien**
+**Stand Phase 258 -- 681 Modi in 20 Kategorien**
 
 > **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
 
@@ -1397,10 +1401,14 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | Gift-Hotspots | Match | `uk_tiere_gift_hotspots` |
 | Tier-Migranten | Match | `uk_tiere_migranten` |
 | H/L Rinder-Dichte | H/L | `hl_tiere_haustier_dichte` |
-| Pferderassen | Match | `uk_pferde_rassen` |
+| Pferderassen | Pin | `uk_pferde_rassen` |
 | Pferde-Fachbegriffe | Match | `uk_pferde_fachbegriffe` |
-| H/L Stockma\u00df | H/L | `hl_pferde_stockmass` |
-| WS: Pferdefl\u00fcsterer | WS | `ws_pferde_fluesterer` |
+| H/L Stockmaß | H/L | `hl_pferde_stockmass` |
+| WS: Pferdeflüsterer | WS | `ws_pferde_fluesterer` |
+| H/L Galopp-Speed | H/L | `hl_pferde_speed` |
+| H/L Körpergewicht | H/L | `hl_pferde_gewicht` |
+| Reitsport-Disziplinen | Match | `uk_pferde_reitsport` |
+| WS: Hufeisen | WS | `ws_pferde_hufeisen` |
 
 ## 13.11 Pflanzen -- 48 Modi
 
@@ -1916,4 +1924,4 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 
 ---
 
-*Katalog: 677 Modi | Stand Phase 254 | Mai 2026*
+*Katalog: 681 Modi | Stand Phase 258 | Mai 2026*

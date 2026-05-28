@@ -2971,8 +2971,11 @@ const MODES=[
     {id:"uk_pferde_rassen",icon:"\u{1F40E}",title:"Pferderassen",group:"tiere",prompt:"Wo wurde diese Pferderasse gez\u00fcchtet?",desc:"Von Shire bis Lipizzaner \u2014 Ursprungsorte der Rassen"},
     {id:"uk_pferde_fachbegriffe",icon:"\u{1F3A8}",title:"Pferde-Fachbegriffe",group:"tiere",prompt:"Was bezeichnet dieser Fachbegriff beim Pferd?",desc:"Fellfarben und Reitlehre \u2014 das Pferde-ABC"},
     {id:"hl_pferde_stockmass",icon:"\u{1F4CF}",title:"H/L Stockma\u00df",group:"tiere",prompt:"Welches Pferd hat ein gr\u00f6\u00dferes Stockma\u00df?",desc:"Widerristhohe in cm \u2014 Falabella bis Shire"},
-    {id:"ws_pferde_fluesterer",icon:"\u{1F40E}",title:"WS: Pferdefl\u00fcsterer",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SHIREHORSE!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben"}
-,
+    {id:"ws_pferde_fluesterer",icon:"\u{1F40E}",title:"WS: Pferdefl\u00fcsterer",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus SHIREHORSE!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben"},
+    {id:"hl_pferde_speed",icon:"\u{1F40E}",title:"H/L Galopp-Speed",group:"tiere",prompt:"Welches Pferd ist schneller?",desc:"Von Falabella bis Quarter Horse \u2014 Galoppgeschwindigkeiten"},
+    {id:"hl_pferde_gewicht",icon:"\u2696\uFE0F",title:"H/L K\u00f6rpergewicht",group:"tiere",prompt:"Welches Pferd ist schwerer?",desc:"60 kg Falabella bis 1100 kg Shire Horse"},
+    {id:"uk_pferde_reitsport",icon:"\u{1F3C7}",title:"Reitsport-Disziplinen",group:"tiere",prompt:"Zu welcher Disziplin geh\u00f6rt dieser Begriff?",desc:"T\u00f6lt, Piaffe, Reining, Oxer \u2014 5 Disziplinen"},
+    {id:"ws_pferde_hufeisen",icon:"\u{1F40E}",title:"WS: Hufeisen",group:"tiere",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus HUFEISEN!",desc:"8 Buchstaben \u2014 von SEIN bis SEIFE"},
     /* === Phase 228: Pflanzen-Modi (Pin) === */
     {id:"uk_pflanzen_nutzpflanzen",icon:"\u{1F33E}",title:"Nutzpflanzen-Ursprung",group:"pflanzen",prompt:"Wo liegt dieser Nutzpflanzen-Ursprungsort?",desc:"Kaffee, Kakao, Weizen \u2014 Wo kamen sie urspr\u00fcnglich her?"},
     {id:"uk_pflanzen_einzelbaeume",icon:"\u{1F333}",title:"Ber\u00fchmte B\u00e4ume",group:"pflanzen",prompt:"Wo steht dieser ber\u00fchmte Baum?",desc:"General Sherman bis Methuselah \u2014 Legenden-B\u00e4ume der Welt"},
@@ -3410,7 +3413,7 @@ const MODE_CATS={
     "ws_tiere_schnabeltier","ws_tiere_gottesanbeterin","ws_tiere_komodowaran",
     "ws_tiere_korallenriff","ws_tiere_silberruecken","ws_tiere_wanderfalke",
     "ws_tiere_mauersegler","ws_tiere_baertierchen","ws_tiere_lederschildkroete",
-    "ws_tiere_pfeilgiftfrosch","uk_tiere_darwin_finken","uk_tiere_schutzgebiete","uk_tiere_zoos","uk_tiere_nutztier_rassen","uk_tiere_fossilien","uk_tiere_arktis_antarktis","uk_tiere_forscher_eponyme","uk_tiere_pelagial","uk_tiere_wuesten_spezialisten","uk_tiere_gift_hotspots","uk_tiere_migranten","hl_tiere_haustier_dichte","uk_pferde_rassen","uk_pferde_fachbegriffe","hl_pferde_stockmass","ws_pferde_fluesterer"
+    "ws_tiere_pfeilgiftfrosch","uk_tiere_darwin_finken","uk_tiere_schutzgebiete","uk_tiere_zoos","uk_tiere_nutztier_rassen","uk_tiere_fossilien","uk_tiere_arktis_antarktis","uk_tiere_forscher_eponyme","uk_tiere_pelagial","uk_tiere_wuesten_spezialisten","uk_tiere_gift_hotspots","uk_tiere_migranten","hl_tiere_haustier_dichte","uk_pferde_rassen","uk_pferde_fachbegriffe","hl_pferde_stockmass","ws_pferde_fluesterer","hl_pferde_speed","hl_pferde_gewicht","uk_pferde_reitsport","ws_pferde_hufeisen"
   ],cost:0},
   pflanzen:{label:"Pflanzen & Flora",icon:"\u{1F33F}",modes:[
     "uk_pflanzen_nutzpflanzen","uk_pflanzen_einzelbaeume","uk_pflanzen_botanische_gaerten",
@@ -5739,6 +5742,19 @@ async function syncOfflineData(){
   }catch(_se){
     console.warn('syncOfflineData failed',_se);
   }
+  /* Phase 258: Offline-Feedback-Queue hochladen */
+  try{
+    const _fbRaw=localStorage.getItem('gq_offline_feedback');
+    if(_fbRaw&&sb&&sbUser?.id){
+      const _fbQ=JSON.parse(_fbRaw);
+      if(_fbQ.length>0){
+        for(const _fb of _fbQ){if(!_fb.user_id)_fb.user_id=sbUser.id;}
+        await sb.from('feedback').insert(_fbQ);
+        localStorage.removeItem('gq_offline_feedback');
+        showToast('\u2705 '+_fbQ.length+' Offline-Feedback \u00fcbermittelt!');
+      }
+    }
+  }catch(_fe){console.warn('Feedback-sync failed',_fe);}
 }
 async function fetchLeaderboard(mode){
   if(\!sb)return[];
@@ -8881,6 +8897,10 @@ const GEN={
   uk_pferde_fachbegriffe:()=>genTiereMatchQ("pferde_fachbegriffe"),
   hl_pferde_stockmass:()=>genTiereHL("pferde_stockmass"),
   ws_pferde_fluesterer:()=>{initTierWortSchmiede("pferde_fluesterer");return null;},
+  hl_pferde_speed:()=>genTiereHL("pferde_speed"),
+  hl_pferde_gewicht:()=>genTiereHL("pferde_gewicht"),
+  uk_pferde_reitsport:()=>genTiereMatchQ("reitsport_disziplinen"),
+  ws_pferde_hufeisen:()=>{initTierWortSchmiede("hufeisen");return null;},
   /* Phase 228: Pflanzen-Modi */
   uk_pflanzen_nutzpflanzen:()=>genPflanzenPinQ("nutzpflanzen"),
   uk_pflanzen_einzelbaeume:()=>genPflanzenPinQ("einzelbaeume"),
@@ -12928,11 +12948,17 @@ function openFeedback(){
     var _txt=(_ta?_ta.value:'').trim();
     if(_txt.length<10){if(_err)_err.textContent='Bitte mindestens 10 Zeichen eingeben.';if(_ta)_ta.style.border='2px solid #ef4444';return;}
     _ov.remove();
-    var _payload={category:_cat,message:_txt,mode:S.mode||null,lang:S.language||'de',app_version:'256',username:(typeof sbProfile!=='undefined'&&sbProfile&&sbProfile.username?sbProfile.username:null)};
-    if(typeof sbOK!=='undefined'&&sbOK&&typeof sb!=='undefined'&&sb){
+    var _payload={category:_cat,message:_txt,mode:S.mode||null,lang:S.language||'de',app_version:'258',username:(typeof sbProfile!=='undefined'&&sbProfile&&sbProfile.username?sbProfile.username:null)};
+    /* Phase 258: Offline-Queue */
+    if(!navigator.onLine){
+      var _oq=JSON.parse(localStorage.getItem('gq_offline_feedback')||'[]');
+      _oq.push(_payload);
+      localStorage.setItem('gq_offline_feedback',JSON.stringify(_oq));
+      showToast('📥 Offline gespeichert — wird beim nächsten Start gesendet');
+    }else if(typeof sbOK!=='undefined'&&sbOK&&typeof sb!=='undefined'&&sb){
       var _uid=(typeof sbUser!=='undefined'&&sbUser&&sbUser.id)?sbUser.id:null;
       if(_uid)_payload.user_id=_uid;
-      sb.from('feedback').insert(_payload).then(function(){showToast('✅ Danke für dein Feedback!');},function(e){console.warn('Feedback-Supabase-Fehler:',e);_sendFeedbackMail(_cat,_txt,_mn);});
+      sb.from('feedback').insert(_payload).then(function(){showToast('✅ Danke für dein Feedback! ❤️');},function(e){console.warn('Feedback-Supabase-Fehler:',e);_sendFeedbackMail(_cat,_txt,_mn);});
     }else{_sendFeedbackMail(_cat,_txt,_mn);}
   };
 }

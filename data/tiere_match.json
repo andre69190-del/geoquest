@@ -2161,5 +2161,91 @@
         "c": "Übung: Vorhand auf innerer Spur"
       }
     ]
+  },
+  "reitsport_disziplinen": {
+    "prompt": "Zu welcher Reitdisziplin gehört dieser Begriff oder diese Gangart?",
+    "prompt_en": "Which equestrian discipline does this term or gait belong to?",
+    "items": [
+      {
+        "n": "Tölt",
+        "c": "Islandpferdereiten"
+      },
+      {
+        "n": "Pass",
+        "c": "Islandpferdereiten"
+      },
+      {
+        "n": "Rennpass",
+        "c": "Islandpferdereiten"
+      },
+      {
+        "n": "Fünfgang",
+        "c": "Islandpferdereiten"
+      },
+      {
+        "n": "Piaffe",
+        "c": "Klassische Dressur"
+      },
+      {
+        "n": "Passage",
+        "c": "Klassische Dressur"
+      },
+      {
+        "n": "Pirouette",
+        "c": "Klassische Dressur"
+      },
+      {
+        "n": "Levade",
+        "c": "Klassische Dressur"
+      },
+      {
+        "n": "Reining",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Cutting",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Barrel Racing",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Trail",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Oxer",
+        "c": "Springreiten"
+      },
+      {
+        "n": "In-and-Out",
+        "c": "Springreiten"
+      },
+      {
+        "n": "Wassergraben",
+        "c": "Springreiten"
+      },
+      {
+        "n": "Kombination",
+        "c": "Springreiten"
+      },
+      {
+        "n": "Pflichtprogramm",
+        "c": "Voltigieren"
+      },
+      {
+        "n": "Kür",
+        "c": "Voltigieren"
+      },
+      {
+        "n": "Pas de Deux",
+        "c": "Voltigieren"
+      },
+      {
+        "n": "Gruppenvoltigieren",
+        "c": "Voltigieren"
+      }
+    ]
   }
 }

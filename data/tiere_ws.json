@@ -1416,5 +1416,45 @@
         "SOS"
       ]
     }
+  },
+  "hufeisen": {
+    "word": "HUFEISEN",
+    "validWords": {
+      "de": [
+        "HUFE",
+        "HUFEN",
+        "FEIN",
+        "FEINE",
+        "FEINS",
+        "FEINES",
+        "SEIN",
+        "SEINE",
+        "EINE",
+        "EINES",
+        "EINS",
+        "SEIFE",
+        "SENF",
+        "FIES",
+        "FIESE",
+        "NIES",
+        "HEIN"
+      ],
+      "en": [
+        "FINE",
+        "FINES",
+        "FUSE",
+        "INFUSE",
+        "HUES",
+        "SHIN",
+        "SHINE",
+        "SHEEN",
+        "FENS",
+        "HENS",
+        "SINE",
+        "HIES",
+        "SEIF",
+        "NEIFS"
+      ]
+    }
   }
 }

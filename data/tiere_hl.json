@@ -1156,5 +1156,147 @@
         "val": 185
       }
     ]
+  },
+  "pferde_speed": {
+    "prompt": "Welches Pferd / welche Equide ist im Galopp schneller?",
+    "prompt_en": "Which horse or equid is faster at a gallop?",
+    "unit": "km/h",
+    "items": [
+      {
+        "name": "Quarter Horse (¼-Meile Sprint)",
+        "val": 88.0
+      },
+      {
+        "name": "Englisches Vollblut (GWR 2008)",
+        "val": 70.8
+      },
+      {
+        "name": "Arabisches Vollblut",
+        "val": 65.0
+      },
+      {
+        "name": "Grevy-Zebra",
+        "val": 64.0
+      },
+      {
+        "name": "Steppenzebra",
+        "val": 56.0
+      },
+      {
+        "name": "Przewalski-Pferd",
+        "val": 56.0
+      },
+      {
+        "name": "Mustang",
+        "val": 55.0
+      },
+      {
+        "name": "Appaloosa",
+        "val": 55.0
+      },
+      {
+        "name": "Afrikanischer Wildesel",
+        "val": 50.0
+      },
+      {
+        "name": "Islandpferd",
+        "val": 48.0
+      },
+      {
+        "name": "Haflinger",
+        "val": 45.0
+      },
+      {
+        "name": "Fjordpferd",
+        "val": 40.0
+      },
+      {
+        "name": "Shetlandpony",
+        "val": 35.0
+      },
+      {
+        "name": "Shire Horse",
+        "val": 30.0
+      },
+      {
+        "name": "Falabella",
+        "val": 20.0
+      }
+    ]
+  },
+  "pferde_gewicht": {
+    "prompt": "Welches Pferd ist im Durchschnitt schwerer?",
+    "prompt_en": "Which horse is heavier on average?",
+    "unit": "kg",
+    "items": [
+      {
+        "name": "Shire Horse",
+        "val": 1100
+      },
+      {
+        "name": "Belgisches Kaltblut",
+        "val": 1000
+      },
+      {
+        "name": "Clydesdale",
+        "val": 900
+      },
+      {
+        "name": "Percheron",
+        "val": 850
+      },
+      {
+        "name": "Noriker",
+        "val": 750
+      },
+      {
+        "name": "Friese",
+        "val": 650
+      },
+      {
+        "name": "Haflinger",
+        "val": 550
+      },
+      {
+        "name": "Lusitano",
+        "val": 520
+      },
+      {
+        "name": "Trakehner",
+        "val": 500
+      },
+      {
+        "name": "Appaloosa",
+        "val": 510
+      },
+      {
+        "name": "Arabisches Vollblut",
+        "val": 440
+      },
+      {
+        "name": "Islandpferd",
+        "val": 380
+      },
+      {
+        "name": "Przewalski-Pferd",
+        "val": 300
+      },
+      {
+        "name": "Welsh Mountain Pony",
+        "val": 200
+      },
+      {
+        "name": "Connemara-Pony",
+        "val": 280
+      },
+      {
+        "name": "Shetlandpony",
+        "val": 180
+      },
+      {
+        "name": "Falabella",
+        "val": 60
+      }
+    ]
   }
 }
