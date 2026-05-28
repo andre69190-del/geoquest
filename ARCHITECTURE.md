@@ -1036,14 +1036,14 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 265 -- Geo/Sport/Astro Sweep: 40 Modi auf 25-40 Items skaliert. +787 Eintraege. Arch-Match Restluecken geschlossen., 681 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 266 -- Timeline-Engine: Drag-and-Drop Zeitleiste, 4 neue Modi, 685 Modi, 38 Datendateien, Mai 2026.*
 
 
 ---
 
 ## 13. Vollstaendiger Spielmodus-Katalog
 
-**Stand Phase 265 -- 681 Modi in 20 Kategorien**
+**Stand Phase 266 -- 685 Modi in 20 Kategorien**
 
 > **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
 

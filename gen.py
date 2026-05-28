@@ -50,6 +50,7 @@ with open(os.path.join(os.path.dirname(__file__), 'data/sport_pin.json'),   'r',
 with open(os.path.join(os.path.dirname(__file__), 'data/sport_hl.json'),    'r', encoding='utf-8') as _f: SPORT_HL_J    = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/sport_match.json'), 'r', encoding='utf-8') as _f: SPORT_MATCH_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/sport_ws.json'),    'r', encoding='utf-8') as _f: SPORT_WS_J    = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/timeline.json'),   'r', encoding='utf-8') as _f: TIMELINE_J    = _f.read()
 
 
 # â”€â”€ STATIC DATA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -3382,7 +3383,12 @@ const MODES=[
   {id:"ws_sportwissen_weltmeister",icon:"\u{1F3C6}",title:"WS: Weltmeister",group:"sport_wissen",noMultiplayer:true,prompt:"Bilde Woerter aus WELTMEISTER!",desc:"Anagramm-Raetsel -- 11 Buchstaben"},
   {id:"ws_sportwissen_startschuss",icon:"\u{1F3C1}",title:"WS: Startschuss",group:"sport_wissen",noMultiplayer:true,prompt:"Bilde Woerter aus STARTSCHUSS!",desc:"Anagramm-Raetsel -- 11 Buchstaben"},
   {id:"ws_sportwissen_athletik",icon:"\u{1F3CB}\uFE0F",title:"WS: Athletik",group:"sport_wissen",noMultiplayer:true,prompt:"Bilde Woerter aus ATHLETIK!",desc:"Anagramm-Raetsel -- 8 Buchstaben"},
-  {id:"ws_sportwissen_sportgeist",icon:"\u{1F4AA}",title:"WS: Sportgeist",group:"sport_wissen",noMultiplayer:true,prompt:"Bilde Woerter aus SPORTGEIST!",desc:"Anagramm-Raetsel -- 10 Buchstaben"}
+  {id:"ws_sportwissen_sportgeist",icon:"\u{1F4AA}",title:"WS: Sportgeist",group:"sport_wissen",noMultiplayer:true,prompt:"Bilde Woerter aus SPORTGEIST!",desc:"Anagramm-Raetsel -- 10 Buchstaben"},
+  /* === Phase 266 Timeline-Modi === */
+  {id:"timeline_geo_erdbeben",  icon:"\u{1F30D}",title:"Erdbeben-Zeitleiste", group:"geologie",    prompt:"Ordne die Erdbeben chronologisch!",     desc:"Historische Erdbeben nach Jahr sortieren"},
+  {id:"timeline_sport_stadien", icon:"\u{1F3DF}\uFE0F",title:"Stadion-Zeitleiste",  group:"sport_wissen",prompt:"Ordne die Stadien nach Er\u00f6ffnungsjahr!", desc:"Stadien chronologisch sortieren"},
+  {id:"timeline_astro_entdeckung",icon:"\u{1F52D}",title:"Entdeckungs-Zeitleiste",group:"astronomie", prompt:"Ordne die Himmelsk\u00f6rper nach Entdeckungsjahr!",desc:"Astronomische Entdeckungen sortieren"},
+  {id:"timeline_tech_release",  icon:"\u{1F4BB}",title:"Tech-Zeitleiste",    group:"technologie", prompt:"Ordne die Technologien nach Release-Jahr!",desc:"Tech-Releases chronologisch sortieren"}
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
@@ -3464,7 +3470,7 @@ const MODE_CATS={
     "uk_tech_erste_videospiele","uk_tech_malware","uk_tech_tech_ma",
     "ws_tech_mikrocontroller","ws_tech_datenbankmanagement","ws_tech_algorithmus",
     "ws_tech_quantencomputer","ws_tech_prozessorarchitektur","ws_tech_grafikprozessor",
-    "ws_tech_cybersicherheit","ws_tech_softwareentwicklung","ws_tech_compilerbau","ws_tech_betriebssystem"
+    "ws_tech_cybersicherheit","ws_tech_softwareentwicklung","ws_tech_compilerbau","ws_tech_betriebssystem","timeline_tech_release"
   ],cost:0},
   emobilitaet:{label:"E-Mobilit\u00e4t & Infrastruktur",icon:"\u26A1",modes:[
     "uk_emob_gigafactories","uk_emob_ev_startups","uk_emob_ladeparks","uk_emob_lithium",
@@ -3517,7 +3523,7 @@ const MODE_CATS={
     "uk_astro_esa_nasa_zentren","uk_astro_weltraumteleskope","uk_astro_meteoritenkrater","uk_astro_dark_sky",
     "hl_astro_raketen_nutzlast","hl_astro_missionsdauer","hl_astro_schwerkraft","hl_astro_temperaturen","hl_astro_entdeckungsjahr","hl_astro_exoplaneten_distanz",
     "uk_astro_sonden_ziele","uk_astro_himmelskoerper_typ","uk_astro_sternbilder_himmel","uk_astro_pioniere","uk_astro_antriebe","uk_astro_galaxien_typen",
-    "ws_astro_schwarzesloch"
+    "ws_astro_schwarzesloch","timeline_astro_entdeckung"
   ],cost:0},
   geologie:{label:"Geologie & Vulkane",icon:"\u{1F30B}",modes:[
     "uk_geo_vulkane","uk_geo_geothermal",
@@ -3534,7 +3540,7 @@ const MODE_CATS={
     "uk_geo_erdbeben_jahr","uk_geo_gestein_nutzung","uk_geo_landschaft_ursprung","uk_geo_mineral_farbe",
     "uk_geo_kontinent_platte","uk_geo_hoehlen_land","uk_geo_mineral_kristall","uk_geo_gebirge_entstehung",
     "ws_geo_tropfstein","ws_geo_magmakammer","ws_geo_kontinent","ws_geo_fossilien",
-    "ws_geo_erdkruste","ws_geo_mineralien"
+    "ws_geo_erdkruste","ws_geo_mineralien","timeline_geo_erdbeben"
   ],cost:0},
   sport_wissen:{label:"Sport-Wissen",icon:"\u{1F3C5}",modes:[
     "uk_sportwissen_olympiastadien","uk_sportwissen_marathonstrecken",
@@ -3554,7 +3560,7 @@ const MODE_CATS={
     "uk_sportwissen_rekordhalter","uk_sportwissen_wm_gastgeber_match",
     "uk_sportwissen_disziplin_kategorie","uk_sportwissen_sportart_kontinent",
     "ws_sportwissen_fussball","ws_sportwissen_olympiade","ws_sportwissen_weltmeister",
-    "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist"
+    "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist","timeline_sport_stadien"
   ],cost:0},
 };
 
@@ -5887,7 +5893,7 @@ let tIv=null,fTo=null,toastTo=null;
       "checkMastery","spotterCollect","saveSession","loadData","initAuth",
       "handleGridAnswer","finishCustomGame","submitGridResult",
       "render","renderWortSchmiede","renderLandHauptstadt","renderSLF",
-      "answerByIdx","handleWsCheck","handleSLFSubmit","handleLandHauptstadtSubmit","lvAnswer","syncOfflineData","submitRouteResult"];
+      "answerByIdx","handleWsCheck","handleSLFSubmit","handleLandHauptstadtSubmit","lvAnswer","syncOfflineData","submitRouteResult","checkTimeline"];
     const _isTrusted=()=>{
       const stk=(new Error()).stack||"";
       return _TRUSTED_FNS.some(fn=>stk.includes(fn));
@@ -8354,6 +8360,7 @@ const SPORT_PIN_DATA=PLACEHOLDER_SPORT_PIN;
 const SPORT_HL_DATA=PLACEHOLDER_SPORT_HL;
 const SPORT_MATCH_DATA=PLACEHOLDER_SPORT_MATCH;
 const SPORT_WS_DATA=PLACEHOLDER_SPORT_WS;
+const TIMELINE_DATA=PLACEHOLDER_TIMELINE;
 
 /* === Phase 227 Part 2: genTiereMatchQ -- tiere-interner Distractor-Pool === */
 function genTiereMatchQ(cat){
@@ -8676,6 +8683,76 @@ function genUniversalHLQ(){
   return{type:"uk_hl",prompt:t("uk_hl_prompt")||"Welches Geb\u00e4ude ist h\u00f6her?",
     nameA:a.n,valA:a.val+" m",nameB:b.n,valB:b.val+" m",
     ans,opts:["higher","lower"],lid:"ukh_"+rankA+"_"+rankB,cc:null};
+}
+
+/* === Phase 266: Timeline-Engine === */
+var _tlDrag=null;
+function _tlDragStart(el){_tlDrag=el.getAttribute('data-tn');}
+function _tlDragOver(e){e.preventDefault();if(e.dataTransfer)e.dataTransfer.dropEffect='move';}
+function _tlDrop(e,el){
+  e.preventDefault();
+  var n=el.getAttribute('data-tn');
+  if(!_tlDrag||_tlDrag===n)return;
+  var list=document.getElementById('tl-list');
+  if(!list)return;
+  var items=Array.from(list.children);
+  var draggedEl=null,targetEl=null;
+  for(var _i=0;_i<items.length;_i++){
+    if(items[_i].getAttribute('data-tn')===_tlDrag)draggedEl=items[_i];
+    if(items[_i].getAttribute('data-tn')===n)targetEl=items[_i];
+  }
+  if(!draggedEl||!targetEl)return;
+  var di=items.indexOf(draggedEl),ti=items.indexOf(targetEl);
+  if(di<ti)list.insertBefore(draggedEl,targetEl.nextSibling);
+  else list.insertBefore(draggedEl,targetEl);
+  _tlDrag=null;
+}
+var _tlTouchN=null;
+function _tlTouchStart(e,el){_tlTouchN=el.getAttribute('data-tn');e.preventDefault();}
+function _tlTouchMove(e){e.preventDefault();}
+function _tlTouchEnd(e){
+  if(!_tlTouchN)return;
+  var touch=e.changedTouches[0];
+  var list=document.getElementById('tl-list');
+  if(!list){_tlTouchN=null;return;}
+  var items=Array.from(list.children);
+  var targetEl=null;
+  for(var _i=0;_i<items.length;_i++){
+    var rect=items[_i].getBoundingClientRect();
+    if(touch.clientY>=rect.top&&touch.clientY<=rect.bottom){targetEl=items[_i];break;}
+  }
+  var savedN=_tlTouchN;_tlTouchN=null;
+  if(targetEl&&targetEl.getAttribute('data-tn')!==savedN){
+    _tlDrag=savedN;_tlDrop({preventDefault:function(){}},targetEl);
+  }
+}
+function checkTimeline(){
+  if(!S.q||S.q.type!=='timeline')return;
+  var list=document.getElementById('tl-list');
+  if(!list)return;
+  var tiles=Array.from(list.children);
+  var userOrder=tiles.map(function(t){return t.getAttribute('data-tn');});
+  S.q._tlUserOrder=userOrder;
+  var correct=S.q.ans;
+  S.ok=JSON.stringify(userOrder)===JSON.stringify(correct);
+  answer(S.ok);
+}
+function genTimelineQ(dataKey,promptOverride,unit){
+  var data=TIMELINE_DATA[dataKey];
+  if(!data||!data.items||data.items.length<4)return null;
+  var pool=data.items.slice().sort(function(){return rng()-.5;});
+  var seen={},picked=[];
+  for(var _i=0;_i<pool.length&&picked.length<5;_i++){
+    var yr=pool[_i].year;
+    if(!seen[yr]){seen[yr]=1;picked.push(pool[_i]);}
+  }
+  if(picked.length<4)return null;
+  var items=picked.slice(0,rng()<.4&&picked.length>=5?5:4);
+  var sorted=items.slice().sort(function(a,b){return a.year-b.year;});
+  var ans=sorted.map(function(it){return it.n;});
+  var lid='tl_'+dataKey+'_'+ans.join('|').replace(/[^a-zA-Z0-9_|]/g,'').slice(0,40);
+  return{type:'timeline',prompt:promptOverride||data.prompt||'Chronologisch sortieren!',
+    items:items,ans:ans,unit:unit||data.unit||'Jahr',lid:lid,cc:null};
 }
 
 const GEN={
@@ -9342,6 +9419,11 @@ const GEN={
   uk_distanz_schaetzer:()=>genFixedPoolMatchQ("distanz_schaetzer",["880 km","3940 km","3290 km","9560 km","7700 km","1140 km","6430 km","1400 km","1760 km","3360 km"]),
   uk_flugzeit_schaetzer:()=>genFixedPoolMatchQ("flugzeit_schaetzer",["9 Std.","21 Std.","12 Std.","16 Std.","14 Std.","8 Std.","10 Std.","11 Std."]),
   uk_breitengrad_match:()=>genUniversalMatchQ("breitengrad_match"),
+  /* Phase 266 Timeline */
+  timeline_geo_erdbeben:   ()=>genTimelineQ("geo_erdbeben"),
+  timeline_sport_stadien:  ()=>genTimelineQ("sport_stadien"),
+  timeline_astro_entdeckung:()=>genTimelineQ("astro_entdeckung"),
+  timeline_tech_release:   ()=>genTimelineQ("tech_release"),
 };
 
 /* GAME LOOP */
@@ -11074,6 +11156,40 @@ if(mode==="slf"&&S.ph==="playing"){
       ${sel!==null?`<div class="qmeta" style="text-align:center;font-size:.77rem;margin-top:4px">${q.meta||""}</div>`:""}`;
 }else if(q.type==="sonnen_kompass"){
     qBody=`<div class="qprompt">${q.prompt}</div>`+`<div style="text-align:center;font-size:2.8rem;margin:8px 0 4px">\u{1F9ED}</div>`+`${sel!==null?'<div class="qmeta" style="text-align:center;font-size:.77rem;color:var(--text3);margin-top:4px">'+esc(q.meta||"")+'</div>':''}`;
+  }else if(q.type==="timeline"){
+    /* Phase 266: Timeline drag-and-drop */
+    var _tlShowItems=sel!==null&&q._tlUserOrder
+      ?q._tlUserOrder.map(function(n){var f=null;for(var _j=0;_j<q.items.length;_j++){if(q.items[_j].n===n){f=q.items[_j];break;}}return f||{n:n,year:'?',hint:''};}) 
+      :q.items;
+    var _tlTilesHtml=_tlShowItems.map(function(it,_i){
+      var bg=sel!==null&&q._tlUserOrder?(q._tlUserOrder[_i]===q.ans[_i]?'#d1fae5':'#fee2e2'):'var(--bg2)';
+      var brd=sel!==null&&q._tlUserOrder?(q._tlUserOrder[_i]===q.ans[_i]?'2px solid #10b981':'2px solid #ef4444'):'2px solid var(--border)';
+      var esc_n=esc(it.n);
+      var raw_n=it.n.replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+      var drag_attr=sel===null?'draggable="true"':'' ;
+      var drag_evts=sel===null
+        ?'ondragstart="_tlDragStart(this)" ondragover="_tlDragOver(event)" ondrop="_tlDrop(event,this)" ontouchstart="_tlTouchStart(event,this)" ontouchmove="_tlTouchMove(event)" ontouchend="_tlTouchEnd(event)"'
+        :'';
+      var icon_part=sel===null?'<span style="font-size:1.1rem;opacity:.4;flex-shrink:0">\u2630</span>'
+        :(q._tlUserOrder&&q._tlUserOrder[_i]===q.ans[_i]?'<span style="color:#10b981;font-weight:700;flex-shrink:0">\u2713</span>':'<span style="color:#ef4444;font-weight:700;flex-shrink:0">\u2717</span>');
+      var year_part=sel!==null&&it.year?'<span style="font-size:.73rem;color:var(--text3);margin-left:6px">('+it.year+')</span>':'' ;
+      var hint_part=sel!==null&&it.hint?'<br><span style="font-size:.7rem;color:var(--text3);font-style:italic">'+esc(it.hint)+'</span>':'' ;
+      return '<div class="tl-tile" data-tn="'+raw_n+'" '+drag_attr+' '+drag_evts
+        +' style="background:'+bg+';border:'+brd+';border-radius:10px;padding:10px 12px;cursor:'+(sel===null?'grab':'default')+';user-select:none;display:flex;align-items:center;gap:10px;touch-action:none">'
+        +icon_part
+        +'<div style="flex:1"><span style="font-weight:700;font-size:.93rem;color:var(--text)">'+esc_n+'</span>'+year_part+hint_part+'</div></div>';
+    }).join('');
+    var _tlFb=sel!==null
+      ?(ok?'<div class="fb ok" style="text-align:center;margin-bottom:6px">\u2713 Perfekte Reihenfolge!</div>'
+          :'<div class="fb ng" style="text-align:center;margin-bottom:6px">\u2717 Falsch &mdash; Korrekt: '+q.ans.map(function(n,i){return(i+1)+'. '+esc(n);}).join(' \u2192 ')+'</div>')
+      :'';
+    qBody='<div class="qprompt">'+q.prompt+'</div>'
+      +_tlFb
+      +'<div id="tl-list" style="display:flex;flex-direction:column;gap:8px;margin:8px 0 10px">'
+      +_tlTilesHtml
+      +'</div>'
+      +(sel===null?'<button onclick="checkTimeline()" style="width:100%;padding:13px;background:var(--accent);color:#fff;border:none;border-radius:12px;font-weight:700;font-size:1rem;cursor:pointer">\u2714 Pr\u00fcfen</button>':'')
+      +(sel!==null?'<div style="text-align:center;font-size:.71rem;color:var(--text3);margin-top:4px">Sortierung nach '+esc(q.unit||'Jahr')+'</div>':'')+'';
   }else{
     qBody=`<div class="qprompt">${q.prompt}</div><div class="qmain">${q.subj}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }
@@ -14243,6 +14359,7 @@ JS = (JS
   .replace('PLACEHOLDER_SPORT_HL',    SPORT_HL_J)
   .replace('PLACEHOLDER_SPORT_MATCH', SPORT_MATCH_J)
   .replace('PLACEHOLDER_SPORT_WS',    SPORT_WS_J)
+  .replace('PLACEHOLDER_TIMELINE',     TIMELINE_J)
 )
 # Phase 201: fix unicode escapes — JS=r'''...''' keeps \UXXXXXXXX literal
 JS = re.sub(r'\\U([0-9A-Fa-f]{8})', lambda m: chr(int(m.group(1), 16)), JS)
