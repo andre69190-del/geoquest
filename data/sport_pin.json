@@ -1191,6 +1191,91 @@
         "n": "Banff Sunshine Village (Alberta, Kanada)",
         "lat": 51.12,
         "lng": -115.76
+      },
+      {
+        "n": "St. Anton am Arlberg",
+        "lat": 47.13,
+        "lng": 10.27
+      },
+      {
+        "n": "Courchevel",
+        "lat": 45.42,
+        "lng": 6.63
+      },
+      {
+        "n": "Val d'Isère",
+        "lat": 45.45,
+        "lng": 6.98
+      },
+      {
+        "n": "Megève",
+        "lat": 45.86,
+        "lng": 6.62
+      },
+      {
+        "n": "Kitzbühel",
+        "lat": 47.44,
+        "lng": 12.39
+      },
+      {
+        "n": "Davos",
+        "lat": 46.8,
+        "lng": 9.83
+      },
+      {
+        "n": "St. Moritz",
+        "lat": 46.5,
+        "lng": 9.84
+      },
+      {
+        "n": "Whistler Blackcomb (Kanada)",
+        "lat": 50.12,
+        "lng": -122.95
+      },
+      {
+        "n": "Aspen Snowmass",
+        "lat": 39.2,
+        "lng": -106.82
+      },
+      {
+        "n": "Park City (Utah)",
+        "lat": 40.65,
+        "lng": -111.5
+      },
+      {
+        "n": "Niseko (Japan)",
+        "lat": 42.8,
+        "lng": 140.69
+      },
+      {
+        "n": "Hakuba (Japan)",
+        "lat": 36.7,
+        "lng": 137.86
+      },
+      {
+        "n": "Thredbo (Australien)",
+        "lat": -36.5,
+        "lng": 148.31
+      },
+      {
+        "n": "Queenstown (Neuseeland)",
+        "lat": -45.03,
+        "lng": 168.66
+      },
+      {
+        "n": "Pyeongchang (Südkorea)",
+        "lat": 37.37,
+        "lng": 128.39
+      },
+      {
+        "n": "Rosa Khutor (Russland, Sotschi)",
+        "lat": 43.67,
+        "lng": 40.3
+      },
+      {
+        "n": "Sölden (Österreich)",
+        "lat": 46.96,
+        "lng": 11.0
       }
     ]
   },
@@ -1621,6 +1706,116 @@
         "n": "Ceuse (Hautes-Alpes, Frankreich) — Sportklettern",
         "lat": 44.38,
         "lng": 5.97
+      },
+      {
+        "n": "El Capitan (Yosemite)",
+        "lat": 37.73,
+        "lng": -119.64
+      },
+      {
+        "n": "Fontainebleau (Frankreich)",
+        "lat": 48.39,
+        "lng": 2.69
+      },
+      {
+        "n": "Kalymnos (Griechenland)",
+        "lat": 36.94,
+        "lng": 26.99
+      },
+      {
+        "n": "Magic Wood (Schweiz)",
+        "lat": 46.5,
+        "lng": 9.25
+      },
+      {
+        "n": "Ceüse (Frankreich)",
+        "lat": 44.39,
+        "lng": 5.92
+      },
+      {
+        "n": "Leonidio (Griechenland)",
+        "lat": 37.15,
+        "lng": 22.87
+      },
+      {
+        "n": "Railay Beach (Thailand)",
+        "lat": 8.01,
+        "lng": 98.84
+      },
+      {
+        "n": "Wadi Rum (Jordanien)",
+        "lat": 29.57,
+        "lng": 35.44
+      },
+      {
+        "n": "Rjukan (Norwegen, Eiskletter)",
+        "lat": 59.88,
+        "lng": 8.6
+      },
+      {
+        "n": "Dolomiten (Italien)",
+        "lat": 46.41,
+        "lng": 11.86
+      },
+      {
+        "n": "Bishop (Kalifornien, Bouldering)",
+        "lat": 37.36,
+        "lng": -118.39
+      },
+      {
+        "n": "Joshua Tree NP (Kalifornien)",
+        "lat": 34.13,
+        "lng": -116.31
+      },
+      {
+        "n": "Red River Gorge (Kentucky)",
+        "lat": 37.77,
+        "lng": -83.69
+      },
+      {
+        "n": "Yosemite Valley Walls",
+        "lat": 37.74,
+        "lng": -119.57
+      },
+      {
+        "n": "Smith Rock (Oregon)",
+        "lat": 44.37,
+        "lng": -121.14
+      },
+      {
+        "n": "New River Gorge (West Virginia)",
+        "lat": 38.07,
+        "lng": -81.08
+      },
+      {
+        "n": "Göschenen-Schlucht (Schweiz)",
+        "lat": 46.67,
+        "lng": 8.59
+      },
+      {
+        "n": "Maltatal (Österreich)",
+        "lat": 47.05,
+        "lng": 13.5
+      },
+      {
+        "n": "Frankenjura (Deutschland)",
+        "lat": 49.55,
+        "lng": 11.5
+      },
+      {
+        "n": "Zillertal (Österreich)",
+        "lat": 47.2,
+        "lng": 11.87
+      },
+      {
+        "n": "Tonsai Beach (Thailand)",
+        "lat": 8.0,
+        "lng": 98.82
+      },
+      {
+        "n": "Gorges du Verdon (Frankreich)",
+        "lat": 43.73,
+        "lng": 6.36
       }
     ]
   }

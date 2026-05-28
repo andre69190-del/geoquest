@@ -286,6 +286,116 @@
         "n": "Wai-O-Tapu Thermalwunder (Neuseeland)",
         "lat": -38.36,
         "lng": 176.37
+      },
+      {
+        "n": "Larderello (Italien)",
+        "lat": 43.24,
+        "lng": 10.87
+      },
+      {
+        "n": "Cerro Prieto (Mexiko)",
+        "lat": 32.42,
+        "lng": -115.3
+      },
+      {
+        "n": "Salton Sea (USA)",
+        "lat": 33.19,
+        "lng": -115.63
+      },
+      {
+        "n": "Geothermales Feld Svartsengi (Island)",
+        "lat": 63.88,
+        "lng": -22.43
+      },
+      {
+        "n": "Nesjavellir (Island)",
+        "lat": 64.09,
+        "lng": -21.1
+      },
+      {
+        "n": "Hellisheiði (Island)",
+        "lat": 64.02,
+        "lng": -21.41
+      },
+      {
+        "n": "Olkaria (Kenia)",
+        "lat": -0.9,
+        "lng": 36.29
+      },
+      {
+        "n": "Wairakei (Neuseeland)",
+        "lat": -38.63,
+        "lng": 176.09
+      },
+      {
+        "n": "Tiwi Islands Geothermal (Philippinen)",
+        "lat": 13.45,
+        "lng": 123.67
+      },
+      {
+        "n": "Makban Geothermal (Philippinen)",
+        "lat": 14.03,
+        "lng": 121.33
+      },
+      {
+        "n": "Darajat (Indonesien)",
+        "lat": -7.19,
+        "lng": 107.71
+      },
+      {
+        "n": "Dieng (Indonesien)",
+        "lat": -7.2,
+        "lng": 109.91
+      },
+      {
+        "n": "Sarulla (Indonesien)",
+        "lat": 2.18,
+        "lng": 99.08
+      },
+      {
+        "n": "Altınkaya (Türkei)",
+        "lat": 38.0,
+        "lng": 27.5
+      },
+      {
+        "n": "Kızıldere (Türkei)",
+        "lat": 37.85,
+        "lng": 28.65
+      },
+      {
+        "n": "Imperial Valley (USA)",
+        "lat": 33.0,
+        "lng": -115.5
+      },
+      {
+        "n": "The Geysers (USA, Sonoma)",
+        "lat": 38.79,
+        "lng": -122.75
+      },
+      {
+        "n": "Coso Geothermal (USA)",
+        "lat": 36.0,
+        "lng": -117.77
+      },
+      {
+        "n": "Landsvirkjun Burfell (Island)",
+        "lat": 64.13,
+        "lng": -20.89
+      },
+      {
+        "n": "Rotokawa (Neuseeland)",
+        "lat": -38.63,
+        "lng": 176.17
+      },
+      {
+        "n": "Ngatamariki (Neuseeland)",
+        "lat": -38.5,
+        "lng": 176.2
+      },
+      {
+        "n": "Wayang Windu (Indonesien)",
+        "lat": -7.21,
+        "lng": 107.63
       }
     ]
   },
@@ -971,6 +1081,106 @@
         "n": "Beowawe Geysers (Nevada, USA)",
         "lat": 40.58,
         "lng": -116.57
+      },
+      {
+        "n": "Strokkur (Island)",
+        "lat": 64.31,
+        "lng": -20.3
+      },
+      {
+        "n": "Grand Geyser (Yellowstone)",
+        "lat": 44.53,
+        "lng": -110.83
+      },
+      {
+        "n": "Daisy Geyser (Yellowstone)",
+        "lat": 44.47,
+        "lng": -110.84
+      },
+      {
+        "n": "Pohutu Geyser (Rotorua, NZ)",
+        "lat": -38.14,
+        "lng": 176.37
+      },
+      {
+        "n": "Lady Knox Geyser (Rotorua, NZ)",
+        "lat": -38.2,
+        "lng": 176.32
+      },
+      {
+        "n": "El Tatio (Chile)",
+        "lat": -22.33,
+        "lng": -68.0
+      },
+      {
+        "n": "Geysir Wairakei (NZ)",
+        "lat": -38.63,
+        "lng": 176.09
+      },
+      {
+        "n": "Norris Geyser Basin (Yellowstone)",
+        "lat": 44.73,
+        "lng": -110.71
+      },
+      {
+        "n": "Fly Geyser (Nevada)",
+        "lat": 40.86,
+        "lng": -119.32
+      },
+      {
+        "n": "Geiser de la Dormida (Chile)",
+        "lat": -30.42,
+        "lng": -70.7
+      },
+      {
+        "n": "Geyser Valley (Kamtschatka)",
+        "lat": 54.45,
+        "lng": 160.1
+      },
+      {
+        "n": "Soda Springs (Idaho, USA)",
+        "lat": 42.66,
+        "lng": -111.6
+      },
+      {
+        "n": "Beowawe Geysers (Nevada)",
+        "lat": 40.58,
+        "lng": -116.75
+      },
+      {
+        "n": "Hveradalir (Island)",
+        "lat": 64.63,
+        "lng": -19.57
+      },
+      {
+        "n": "Dallol (Äthiopien)",
+        "lat": 14.24,
+        "lng": 40.3
+      },
+      {
+        "n": "Champagne Pool (NZ)",
+        "lat": -38.37,
+        "lng": 176.37
+      },
+      {
+        "n": "Old Faithful (Yellowstone)",
+        "lat": 44.46,
+        "lng": -110.83
+      },
+      {
+        "n": "Velikan Geyser (Kamtschatka)",
+        "lat": 54.44,
+        "lng": 160.12
+      },
+      {
+        "n": "Crystal Geyser (Utah)",
+        "lat": 38.95,
+        "lng": -110.12
+      },
+      {
+        "n": "Umnak Geothermal (Alaska)",
+        "lat": 53.28,
+        "lng": -168.25
       }
     ]
   },
@@ -1816,6 +2026,106 @@
         "n": "Ponta de São Lourenço (Madeira)",
         "lat": 32.74,
         "lng": -16.72
+      },
+      {
+        "n": "White Cliffs of Dover (UK)",
+        "lat": 51.13,
+        "lng": 1.37
+      },
+      {
+        "n": "Preikestolen (Norwegen)",
+        "lat": 58.99,
+        "lng": 6.19
+      },
+      {
+        "n": "Trolltunga (Norwegen)",
+        "lat": 60.12,
+        "lng": 6.74
+      },
+      {
+        "n": "Kjeragbolten (Norwegen)",
+        "lat": 59.04,
+        "lng": 6.57
+      },
+      {
+        "n": "Schär Kap (Norwegen, Nordkap)",
+        "lat": 71.17,
+        "lng": 25.79
+      },
+      {
+        "n": "Lofoten Cliffs (Norwegen)",
+        "lat": 68.1,
+        "lng": 13.5
+      },
+      {
+        "n": "Cabo Girão (Madeira)",
+        "lat": 32.66,
+        "lng": -17.17
+      },
+      {
+        "n": "Kap der Guten Hoffnung",
+        "lat": -34.36,
+        "lng": 18.48
+      },
+      {
+        "n": "Great Ocean Road Cliffs (Australien)",
+        "lat": -39.0,
+        "lng": 143.5
+      },
+      {
+        "n": "Twelve Apostles (Australien)",
+        "lat": -38.67,
+        "lng": 143.1
+      },
+      {
+        "n": "The Remarkables (NZ, Seekliffs)",
+        "lat": -45.04,
+        "lng": 168.84
+      },
+      {
+        "n": "Napali Coast (Hawaii)",
+        "lat": 22.2,
+        "lng": -159.61
+      },
+      {
+        "n": "Hana Cliffs (Maui)",
+        "lat": 20.74,
+        "lng": -155.98
+      },
+      {
+        "n": "Bunda Cliffs (Australien)",
+        "lat": -31.65,
+        "lng": 130.05
+      },
+      {
+        "n": "Cape Breton Highlands",
+        "lat": 46.72,
+        "lng": -60.55
+      },
+      {
+        "n": "Percé Rock (Kanada)",
+        "lat": 48.52,
+        "lng": -64.22
+      },
+      {
+        "n": "Oregon Coast Cliffs",
+        "lat": 44.6,
+        "lng": -124.1
+      },
+      {
+        "n": "Big Sur Cliffs (Kalifornien)",
+        "lat": 36.26,
+        "lng": -121.8
+      },
+      {
+        "n": "Dyrholaey (Island)",
+        "lat": 63.4,
+        "lng": -19.13
+      },
+      {
+        "n": "Hvalnes (Island)",
+        "lat": 64.39,
+        "lng": -14.52
       }
     ]
   }

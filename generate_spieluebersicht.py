@@ -322,7 +322,7 @@ def generate(phase=269, n_tests=90):
             f'<span class="sn">{cnt}</span></div>')
     cats_html = '\n'.join(cat_btns)
 
-    rows=[]; n=0; missing=0
+    rows=[]; n=0; missing=0; total_items=0
     for g in group_order:
         if g not in groups: continue
         em,lbl = CAT_META.get(g,('📂',g))
@@ -335,6 +335,7 @@ def generate(phase=269, n_tests=90):
             d = m['desc'].replace('<','&lt;').replace('>','&gt;') if m['desc'] else ''
             b = _badge(m['id'])
             cs, rn = _get_count(m['id'], dispatch, store, sport_poi)
+            total_items += rn
             if cs == '—': missing += 1
             sub = f'<div class="sub">{d}</div>'
             if rn==0:   cc='#ef4444'
@@ -396,6 +397,7 @@ def generate(phase=269, n_tests=90):
     H.append(f'<div class="hs"><span class="hn">{total_modes}</span><span class="hl2">Spielmodi</span></div>')
     H.append(f'<div class="hs"><span class="hn">{len(group_order)}</span><span class="hl2">Kategorien</span></div>')
     H.append(f'<div class="hs"><span class="hn">{n_tests}/{n_tests}</span><span class="hl2">Tests ✓</span></div>')
+    H.append(f'<div class="hs"><span class="hn">{total_items:,}</span><span class="hl2">Datenbasis (Items)</span></div>')
     H.append('</div>')
     H.append(f'<p class="meta">Phase {phase} · Mai 2026 · Auto-generiert aus gen.py + data/*.json</p></header>')
     H.append('<div class="bar"><input type="search" id="q" placeholder="🔍 Modus, ID oder Beschreibung suchen…" oninput="filt()">')

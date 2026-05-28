@@ -588,44 +588,154 @@
     "prompt": "Wo befindet sich dieses Teleskop oder Observatorium?",
     "items": [
       {
-        "n": "FAST Radioteleskop (Guizhou, China)",
-        "lat": 25.65,
-        "lng": 106.86
+        "n": "Hubble Space Telescope (NASA/KSC)",
+        "lat": 28.59,
+        "lng": -80.65
       },
       {
-        "n": "VLA Very Large Array (New Mexico, USA)",
+        "n": "James Webb ST (NASA/ESA/CSA)",
+        "lat": 5.24,
+        "lng": -52.77
+      },
+      {
+        "n": "Chandra X-Ray Observatory",
+        "lat": 42.36,
+        "lng": -71.06
+      },
+      {
+        "n": "Spitzer Space Telescope",
+        "lat": 34.2,
+        "lng": -118.17
+      },
+      {
+        "n": "Kepler Space Telescope",
+        "lat": 37.42,
+        "lng": -122.06
+      },
+      {
+        "n": "TESS (Transiting Exoplanet Survey)",
+        "lat": 40.69,
+        "lng": -74.04
+      },
+      {
+        "n": "Fermi Gamma-ray Space Telescope",
+        "lat": 38.88,
+        "lng": -77.02
+      },
+      {
+        "n": "XMM-Newton (ESA)",
+        "lat": 52.09,
+        "lng": 5.12
+      },
+      {
+        "n": "Herschel Space Observatory (ESA)",
+        "lat": 48.85,
+        "lng": 2.34
+      },
+      {
+        "n": "Planck Observatory (ESA)",
+        "lat": 51.51,
+        "lng": -0.13
+      },
+      {
+        "n": "Euclid (ESA, 2023)",
+        "lat": 43.56,
+        "lng": 1.47
+      },
+      {
+        "n": "Very Large Array (VLA)",
         "lat": 34.08,
         "lng": -107.62
       },
       {
-        "n": "ELT Extremely Large Telescope (Cerro Armazones, Chile)",
-        "lat": -24.59,
-        "lng": -70.19
+        "n": "ALMA (Atacama)",
+        "lat": -23.02,
+        "lng": -67.75
       },
       {
-        "n": "Square Kilometre Array SKA (Karoo, Südafrika)",
+        "n": "FAST (China, Guizhou)",
+        "lat": 25.65,
+        "lng": 106.86
+      },
+      {
+        "n": "Effelsberg (Deutschland)",
+        "lat": 50.53,
+        "lng": 6.88
+      },
+      {
+        "n": "Green Bank Telescope",
+        "lat": 38.43,
+        "lng": -79.84
+      },
+      {
+        "n": "ESO Paranal (VLT)",
+        "lat": -24.63,
+        "lng": -70.4
+      },
+      {
+        "n": "Keck Observatory (Hawaii)",
+        "lat": 19.83,
+        "lng": -155.47
+      },
+      {
+        "n": "Subaru Telescope (Hawaii)",
+        "lat": 19.83,
+        "lng": -155.48
+      },
+      {
+        "n": "La Silla Observatory (ESO)",
+        "lat": -29.26,
+        "lng": -70.73
+      },
+      {
+        "n": "Arecibo Observatory (ehem.)",
+        "lat": 18.34,
+        "lng": -66.75
+      },
+      {
+        "n": "Square Kilometre Array (Vorstandsbüro)",
+        "lat": -26.82,
+        "lng": 116.63
+      },
+      {
+        "n": "MeerKAT (Südafrika)",
         "lat": -30.71,
-        "lng": 21.44
+        "lng": 21.41
       },
       {
-        "n": "South African Large Telescope SALT",
-        "lat": -32.38,
-        "lng": 20.81
+        "n": "Parkes Observatory (Australien)",
+        "lat": -32.99,
+        "lng": 148.26
       },
       {
-        "n": "McDonald Observatory (Texas, USA)",
-        "lat": 30.68,
-        "lng": -104.02
+        "n": "Thirty Meter Telescope (geplant)",
+        "lat": 19.82,
+        "lng": -155.47
       },
       {
-        "n": "Palomar Observatory (Kalifornien, USA)",
-        "lat": 33.36,
-        "lng": -116.86
+        "n": "Giant Magellan Telescope (Bau)",
+        "lat": -29.01,
+        "lng": -70.69
       },
       {
-        "n": "Lowell Observatory (Flagstaff, Arizona)",
-        "lat": 35.2,
-        "lng": -111.66
+        "n": "NuSTAR (NASA)",
+        "lat": 34.2,
+        "lng": -118.18
+      },
+      {
+        "n": "Swift Observatory",
+        "lat": 28.61,
+        "lng": -80.7
+      },
+      {
+        "n": "INTEGRAL (ESA)",
+        "lat": 52.37,
+        "lng": 4.9
+      },
+      {
+        "n": "Gaia Observatory (ESA)",
+        "lat": 43.6,
+        "lng": 1.44
       }
     ]
   },
@@ -851,6 +961,111 @@
         "n": "Zselic Starry Sky Park (Ungarn)",
         "lat": 46.18,
         "lng": 17.85
+      },
+      {
+        "n": "Atacama Desert (Chile)",
+        "lat": -24.0,
+        "lng": -70.0
+      },
+      {
+        "n": "Mauna Kea (Hawaii)",
+        "lat": 19.82,
+        "lng": -155.47
+      },
+      {
+        "n": "Canary Islands – Teide",
+        "lat": 28.27,
+        "lng": -16.64
+      },
+      {
+        "n": "Namibia – NamibRand Reserve",
+        "lat": -25.0,
+        "lng": 15.5
+      },
+      {
+        "n": "Aoraki Mackenzie (Neuseeland)",
+        "lat": -43.75,
+        "lng": 170.1
+      },
+      {
+        "n": "Cherry Springs SP (Pennsylvania)",
+        "lat": 41.66,
+        "lng": -77.82
+      },
+      {
+        "n": "Galloway Forest Park (Schottland)",
+        "lat": 55.1,
+        "lng": -4.5
+      },
+      {
+        "n": "Kerry (Irland)",
+        "lat": 51.95,
+        "lng": -9.9
+      },
+      {
+        "n": "Exmoor NP (England)",
+        "lat": 51.15,
+        "lng": -3.65
+      },
+      {
+        "n": "Brecon Beacons (Wales)",
+        "lat": 51.88,
+        "lng": -3.44
+      },
+      {
+        "n": "Pic du Midi (Frankreich)",
+        "lat": 42.94,
+        "lng": 0.14
+      },
+      {
+        "n": "Haute-Provence (Frankreich)",
+        "lat": 43.93,
+        "lng": 5.71
+      },
+      {
+        "n": "Hortobagy NP (Ungarn)",
+        "lat": 47.6,
+        "lng": 21.1
+      },
+      {
+        "n": "Westhavelland (Deutschland)",
+        "lat": 52.75,
+        "lng": 12.3
+      },
+      {
+        "n": "Rhön Biosphäre (Deutschland)",
+        "lat": 50.37,
+        "lng": 9.93
+      },
+      {
+        "n": "Kgalagadi (Botswana)",
+        "lat": -26.5,
+        "lng": 21.5
+      },
+      {
+        "n": "Big Bend NP (Texas)",
+        "lat": 29.13,
+        "lng": -103.24
+      },
+      {
+        "n": "Cosmic Campground (New Mexico)",
+        "lat": 33.35,
+        "lng": -108.84
+      },
+      {
+        "n": "Jasper NP (Kanada)",
+        "lat": 52.88,
+        "lng": -118.08
+      },
+      {
+        "n": "Tenerife (Teide-Observ.)",
+        "lat": 28.3,
+        "lng": -16.51
+      },
+      {
+        "n": "La Palma (Roque de los Muchachos)",
+        "lat": 28.76,
+        "lng": -17.89
       }
     ]
   }
