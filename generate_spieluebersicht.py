@@ -290,7 +290,7 @@ CAT_META = {
 CAT_ORDER = list(CAT_META.keys())
 
 
-def generate(phase=267, n_tests=90):
+def generate(phase=269, n_tests=90):
     src       = open(GEN,'r',encoding='utf-8').read()
     modes     = _parse_modes(src)
     dispatch  = _parse_gen_dispatch(src)
