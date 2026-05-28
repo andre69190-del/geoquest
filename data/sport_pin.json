@@ -41,6 +41,156 @@
         "n": "Japan National Stadium Tokyo (2021)",
         "lat": 35.68,
         "lng": 139.72
+      },
+      {
+        "n": "Nationalstadion (Peking, China)",
+        "lat": 39.99,
+        "lng": 116.4
+      },
+      {
+        "n": "Olympic Stadium (Tokio, Japan)",
+        "lat": 35.68,
+        "lng": 139.71
+      },
+      {
+        "n": "Nilufar Shamsutdinova Komplex (Taschkent, Usbekistan)",
+        "lat": 41.3,
+        "lng": 69.25
+      },
+      {
+        "n": "Olympic Stadium (München, Deutschland)",
+        "lat": 48.17,
+        "lng": 11.55
+      },
+      {
+        "n": "Olympic Stadium (Montreal, Kanada)",
+        "lat": 45.56,
+        "lng": -73.55
+      },
+      {
+        "n": "Olympiastadion Athen (Griechenland)",
+        "lat": 38.0,
+        "lng": 23.78
+      },
+      {
+        "n": "Luzhniki Stadion (Moskau, Russland)",
+        "lat": 55.73,
+        "lng": 37.56
+      },
+      {
+        "n": "Seoul Olympic Stadium (Seoul, Südkorea)",
+        "lat": 37.52,
+        "lng": 127.07
+      },
+      {
+        "n": "Barcelona Olympic Stadium (Spanien)",
+        "lat": 41.36,
+        "lng": 2.15
+      },
+      {
+        "n": "Centennial Olympic Stadium (Atlanta, USA)",
+        "lat": 33.74,
+        "lng": -84.39
+      },
+      {
+        "n": "Stadium Australia (Sydney, Australien)",
+        "lat": -33.85,
+        "lng": 151.06
+      },
+      {
+        "n": "Stadio Olimpico (Turin, Italien)",
+        "lat": 45.04,
+        "lng": 7.66
+      },
+      {
+        "n": "Estádio Olímpico João Havelange (Rio, Brasilien)",
+        "lat": -22.88,
+        "lng": -43.18
+      },
+      {
+        "n": "Olympic Stadium (Helsinki, Finnland)",
+        "lat": 60.19,
+        "lng": 24.92
+      },
+      {
+        "n": "Wembley Empire (London, 1948)",
+        "lat": 51.56,
+        "lng": -0.28
+      },
+      {
+        "n": "Parc des Princes (Paris, 1900)",
+        "lat": 48.84,
+        "lng": 2.25
+      },
+      {
+        "n": "Olympic Stadium Amsterdam (Niederlande)",
+        "lat": 52.34,
+        "lng": 4.86
+      },
+      {
+        "n": "Stade de Colombes (Paris, 1924)",
+        "lat": 48.92,
+        "lng": 2.25
+      },
+      {
+        "n": "White City Stadium (London, 1908)",
+        "lat": 51.51,
+        "lng": -0.22
+      },
+      {
+        "n": "Panathinaiko Stadion (Athen, 1896)",
+        "lat": 37.97,
+        "lng": 23.74
+      },
+      {
+        "n": "Los Angeles Memorial Coliseum (USA)",
+        "lat": 34.01,
+        "lng": -118.29
+      },
+      {
+        "n": "SoFi Stadium (Los Angeles, USA 2028)",
+        "lat": 33.95,
+        "lng": -118.34
+      },
+      {
+        "n": "Melbourne Cricket Ground (Australien, 1956)",
+        "lat": -37.82,
+        "lng": 144.98
+      },
+      {
+        "n": "Estadio Olímpico Universitario (Mexiko, 1968)",
+        "lat": 19.32,
+        "lng": -99.18
+      },
+      {
+        "n": "Ben Hill Griffin Stadium (Gainesville, USA)",
+        "lat": 29.65,
+        "lng": -82.35
+      },
+      {
+        "n": "Olympic Green (Peking, Hauptgelände)",
+        "lat": 40.0,
+        "lng": 116.38
+      },
+      {
+        "n": "Ariake Arena (Tokio, Japan)",
+        "lat": 35.63,
+        "lng": 139.78
+      },
+      {
+        "n": "Olympic Park Stadium (Brisbane, Australien 2032)",
+        "lat": -27.47,
+        "lng": 153.04
+      },
+      {
+        "n": "Fisht Olympic Stadium (Sotschi, Russland)",
+        "lat": 43.41,
+        "lng": 39.95
+      },
+      {
+        "n": "Olympic Velodrome (Rio de Janeiro, Brasilien)",
+        "lat": -22.97,
+        "lng": -43.38
       }
     ]
   },
@@ -86,6 +236,171 @@
         "n": "Sydney Marathon Ziel (Opera House)",
         "lat": -33.86,
         "lng": 151.21
+      },
+      {
+        "n": "New York City Marathon (New York, USA)",
+        "lat": 40.6,
+        "lng": -74.05
+      },
+      {
+        "n": "Chicago Marathon (Illinois, USA)",
+        "lat": 41.88,
+        "lng": -87.63
+      },
+      {
+        "n": "Boston Marathon Ziel (Boylston St., USA)",
+        "lat": 42.35,
+        "lng": -71.08
+      },
+      {
+        "n": "Berlin Marathon (Berlin, Deutschland)",
+        "lat": 52.51,
+        "lng": 13.37
+      },
+      {
+        "n": "Tokyo Marathon (Japan)",
+        "lat": 35.68,
+        "lng": 139.77
+      },
+      {
+        "n": "London Marathon (England)",
+        "lat": 51.5,
+        "lng": -0.12
+      },
+      {
+        "n": "Paris Marathon (Frankreich)",
+        "lat": 48.87,
+        "lng": 2.3
+      },
+      {
+        "n": "Rotterdam Marathon (Niederlande)",
+        "lat": 51.92,
+        "lng": 4.48
+      },
+      {
+        "n": "Frankfurt Marathon (Deutschland)",
+        "lat": 50.11,
+        "lng": 8.68
+      },
+      {
+        "n": "Hamburg Marathon (Deutschland)",
+        "lat": 53.56,
+        "lng": 10.0
+      },
+      {
+        "n": "Amsterdam Marathon (Niederlande)",
+        "lat": 52.34,
+        "lng": 4.87
+      },
+      {
+        "n": "Vienna City Marathon (Österreich)",
+        "lat": 48.21,
+        "lng": 16.37
+      },
+      {
+        "n": "Budapest Marathon (Ungarn)",
+        "lat": 47.5,
+        "lng": 19.05
+      },
+      {
+        "n": "Warsaw Marathon (Polen)",
+        "lat": 52.23,
+        "lng": 21.01
+      },
+      {
+        "n": "Prague Marathon (Tschechien)",
+        "lat": 50.08,
+        "lng": 14.42
+      },
+      {
+        "n": "Rome Marathon (Italien)",
+        "lat": 41.9,
+        "lng": 12.49
+      },
+      {
+        "n": "Athens Classic Marathon (Griechenland)",
+        "lat": 37.98,
+        "lng": 23.73
+      },
+      {
+        "n": "São Paulo Marathon (Brasilien)",
+        "lat": -23.55,
+        "lng": -46.63
+      },
+      {
+        "n": "Buenos Aires Marathon (Argentinien)",
+        "lat": -34.61,
+        "lng": -58.43
+      },
+      {
+        "n": "Sydney Marathon (Australien)",
+        "lat": -33.87,
+        "lng": 151.21
+      },
+      {
+        "n": "Melbourne Marathon (Australien)",
+        "lat": -37.82,
+        "lng": 144.97
+      },
+      {
+        "n": "Cape Town Marathon (Südafrika)",
+        "lat": -33.91,
+        "lng": 18.42
+      },
+      {
+        "n": "Honolulu Marathon (Hawaii, USA)",
+        "lat": 21.31,
+        "lng": -157.85
+      },
+      {
+        "n": "Toronto Waterfront Marathon (Kanada)",
+        "lat": 43.64,
+        "lng": -79.38
+      },
+      {
+        "n": "Vancouver Marathon (Kanada)",
+        "lat": 49.28,
+        "lng": -123.12
+      },
+      {
+        "n": "Seoul International Marathon (Südkorea)",
+        "lat": 37.57,
+        "lng": 126.98
+      },
+      {
+        "n": "Mumbai Marathon (Indien)",
+        "lat": 18.97,
+        "lng": 72.82
+      },
+      {
+        "n": "Comrades Marathon Start (Durban, Südafrika)",
+        "lat": -29.88,
+        "lng": 31.05
+      },
+      {
+        "n": "Two Oceans Marathon (Kapstadt, Südafrika)",
+        "lat": -34.0,
+        "lng": 18.5
+      },
+      {
+        "n": "Loch Ness Marathon (Schottland)",
+        "lat": 57.35,
+        "lng": -4.44
+      },
+      {
+        "n": "Big Sur International Marathon (Kalifornien, USA)",
+        "lat": 36.27,
+        "lng": -121.81
+      },
+      {
+        "n": "Walt Disney World Marathon (Orlando, USA)",
+        "lat": 28.38,
+        "lng": -81.57
+      },
+      {
+        "n": "Antarktika Ice Marathon (King George Island)",
+        "lat": -62.15,
+        "lng": -58.95
       }
     ]
   },
@@ -131,6 +446,201 @@
         "n": "Old Trafford (Manchester United, England)",
         "lat": 53.46,
         "lng": -2.29
+      },
+      {
+        "n": "Anfield (Liverpool, England)",
+        "lat": 53.43,
+        "lng": -2.96
+      },
+      {
+        "n": "Emirates Stadium (London, England)",
+        "lat": 51.55,
+        "lng": -0.11
+      },
+      {
+        "n": "Stamford Bridge (London, England)",
+        "lat": 51.48,
+        "lng": -0.19
+      },
+      {
+        "n": "Metropolitano (Madrid, Spanien)",
+        "lat": 40.44,
+        "lng": -3.6
+      },
+      {
+        "n": "Stadio Olimpico (Rom, Italien)",
+        "lat": 41.93,
+        "lng": 12.45
+      },
+      {
+        "n": "Juventus Stadium (Turin, Italien)",
+        "lat": 45.11,
+        "lng": 7.64
+      },
+      {
+        "n": "Signal Iduna Park (Dortmund, Deutschland)",
+        "lat": 51.49,
+        "lng": 7.45
+      },
+      {
+        "n": "Volksparkstadion (Hamburg, Deutschland)",
+        "lat": 53.59,
+        "lng": 9.9
+      },
+      {
+        "n": "Red Bull Arena (Leipzig, Deutschland)",
+        "lat": 51.35,
+        "lng": 12.35
+      },
+      {
+        "n": "Olympiastadion Berlin (Deutschland)",
+        "lat": 52.51,
+        "lng": 13.24
+      },
+      {
+        "n": "Parc des Princes (Paris, Frankreich)",
+        "lat": 48.84,
+        "lng": 2.25
+      },
+      {
+        "n": "Stade de France (Saint-Denis, Frankreich)",
+        "lat": 48.92,
+        "lng": 2.36
+      },
+      {
+        "n": "Johan Cruyff Arena (Amsterdam, Niederlande)",
+        "lat": 52.31,
+        "lng": 4.94
+      },
+      {
+        "n": "Friends Arena (Stockholm, Schweden)",
+        "lat": 59.37,
+        "lng": 17.99
+      },
+      {
+        "n": "Celtic Park (Glasgow, Schottland)",
+        "lat": 55.85,
+        "lng": -4.21
+      },
+      {
+        "n": "Ibrox Stadium (Glasgow, Schottland)",
+        "lat": 55.85,
+        "lng": -4.31
+      },
+      {
+        "n": "Estádio do Dragão (Porto, Portugal)",
+        "lat": 41.16,
+        "lng": -8.58
+      },
+      {
+        "n": "Estádio da Luz (Lissabon, Portugal)",
+        "lat": 38.75,
+        "lng": -9.18
+      },
+      {
+        "n": "Luzhniki (Moskau, Russland)",
+        "lat": 55.73,
+        "lng": 37.56
+      },
+      {
+        "n": "Besiktas Vodafone Park (Istanbul, Türkei)",
+        "lat": 41.04,
+        "lng": 29.01
+      },
+      {
+        "n": "Atatürk Olympiastadion (Istanbul, Türkei)",
+        "lat": 41.07,
+        "lng": 28.77
+      },
+      {
+        "n": "Nou Mestalla (Valencia, Spanien)",
+        "lat": 39.47,
+        "lng": -0.36
+      },
+      {
+        "n": "Sánchez Pizjuán (Sevilla, Spanien)",
+        "lat": 37.38,
+        "lng": -5.97
+      },
+      {
+        "n": "Croke Park (Dublin, Irland)",
+        "lat": 53.36,
+        "lng": -6.25
+      },
+      {
+        "n": "Lusail Iconic Stadium (Lusail, Katar)",
+        "lat": 25.43,
+        "lng": 51.52
+      },
+      {
+        "n": "Al Bayt Stadium (Al Khor, Katar)",
+        "lat": 25.67,
+        "lng": 51.52
+      },
+      {
+        "n": "National Stadium (Singapur)",
+        "lat": 1.3,
+        "lng": 103.87
+      },
+      {
+        "n": "Melbourne Cricket Ground (Melbourne, Australien)",
+        "lat": -37.82,
+        "lng": 144.98
+      },
+      {
+        "n": "Stadium Australia (Sydney, Australien)",
+        "lat": -33.85,
+        "lng": 151.06
+      },
+      {
+        "n": "FNB Stadium / Soccer City (Johannesburg, Südafrika)",
+        "lat": -26.24,
+        "lng": 27.98
+      },
+      {
+        "n": "Cape Town Stadium (Kapstadt, Südafrika)",
+        "lat": -33.9,
+        "lng": 18.41
+      },
+      {
+        "n": "Estadio Monumental (Buenos Aires, Argentinien)",
+        "lat": -34.54,
+        "lng": -58.45
+      },
+      {
+        "n": "Estadio Nacional (Lima, Peru)",
+        "lat": -12.07,
+        "lng": -77.03
+      },
+      {
+        "n": "Estadio Mineirao (Belo Horizonte, Brasilien)",
+        "lat": -19.87,
+        "lng": -43.97
+      },
+      {
+        "n": "Stade Mohamed V (Casablanca, Marokko)",
+        "lat": 33.58,
+        "lng": -7.62
+      },
+      {
+        "n": "Khalifa International Stadium (Doha, Katar)",
+        "lat": 25.26,
+        "lng": 51.45
+      },
+      {
+        "n": "Rose Bowl (Pasadena, USA)",
+        "lat": 34.16,
+        "lng": -118.17
+      },
+      {
+        "n": "MetLife Stadium (New Jersey, USA)",
+        "lat": 40.81,
+        "lng": -74.07
+      },
+      {
+        "n": "Levi's Stadium (Santa Clara, USA)",
+        "lat": 37.4,
+        "lng": -121.97
       }
     ]
   },
@@ -176,6 +686,166 @@
         "n": "Autodromo Jose Carlos Pace Interlagos (Brasilien)",
         "lat": -23.7,
         "lng": -46.7
+      },
+      {
+        "n": "Hockenheimring (Deutschland)",
+        "lat": 49.33,
+        "lng": 8.57
+      },
+      {
+        "n": "Circuit de Catalunya (Barcelona, Spanien)",
+        "lat": 41.57,
+        "lng": 2.26
+      },
+      {
+        "n": "Hungaroring (Budapest, Ungarn)",
+        "lat": 47.58,
+        "lng": 19.25
+      },
+      {
+        "n": "Autodromo Enzo e Dino Ferrari (Imola, Italien)",
+        "lat": 44.34,
+        "lng": 11.71
+      },
+      {
+        "n": "Mugello Circuit (Toskana, Italien)",
+        "lat": 43.99,
+        "lng": 11.37
+      },
+      {
+        "n": "Bahrain International Circuit (Sakhir)",
+        "lat": 26.03,
+        "lng": 50.51
+      },
+      {
+        "n": "Yas Marina Circuit (Abu Dhabi, VAE)",
+        "lat": 24.47,
+        "lng": 54.6
+      },
+      {
+        "n": "Jeddah Corniche Circuit (Saudi-Arabien)",
+        "lat": 21.63,
+        "lng": 39.1
+      },
+      {
+        "n": "Daytona International Speedway (Florida, USA)",
+        "lat": 29.19,
+        "lng": -81.07
+      },
+      {
+        "n": "Indianapolis Motor Speedway (Indiana, USA)",
+        "lat": 39.79,
+        "lng": -86.24
+      },
+      {
+        "n": "Talladega Superspeedway (Alabama, USA)",
+        "lat": 33.57,
+        "lng": -86.07
+      },
+      {
+        "n": "Watkins Glen International (New York, USA)",
+        "lat": 42.34,
+        "lng": -76.93
+      },
+      {
+        "n": "Road Atlanta (Georgia, USA)",
+        "lat": 34.15,
+        "lng": -83.82
+      },
+      {
+        "n": "Fuji Speedway (Japan)",
+        "lat": 35.37,
+        "lng": 138.93
+      },
+      {
+        "n": "Motegi Circuit (Japan)",
+        "lat": 36.54,
+        "lng": 140.19
+      },
+      {
+        "n": "Shanghai International Circuit (China)",
+        "lat": 31.34,
+        "lng": 121.22
+      },
+      {
+        "n": "Sepang International Circuit (Malaysia)",
+        "lat": 2.76,
+        "lng": 101.74
+      },
+      {
+        "n": "Marina Bay Street Circuit (Singapur)",
+        "lat": 1.29,
+        "lng": 103.86
+      },
+      {
+        "n": "Albert Park Circuit (Melbourne, Australien)",
+        "lat": -37.85,
+        "lng": 144.97
+      },
+      {
+        "n": "Autódromo Hermanos Rodríguez (Mexiko-Stadt)",
+        "lat": 19.4,
+        "lng": -99.09
+      },
+      {
+        "n": "Red Bull Ring (Spielberg, Österreich)",
+        "lat": 47.22,
+        "lng": 14.76
+      },
+      {
+        "n": "Circuit Zandvoort (Niederlande)",
+        "lat": 52.39,
+        "lng": 4.54
+      },
+      {
+        "n": "Baku City Circuit (Aserbaidschan)",
+        "lat": 40.37,
+        "lng": 49.85
+      },
+      {
+        "n": "Circuit Gilles Villeneuve (Kanada)",
+        "lat": 45.5,
+        "lng": -73.52
+      },
+      {
+        "n": "Miami International Autodrome (USA)",
+        "lat": 25.96,
+        "lng": -80.24
+      },
+      {
+        "n": "Las Vegas Street Circuit (Nevada, USA)",
+        "lat": 36.12,
+        "lng": -115.17
+      },
+      {
+        "n": "Losail International Circuit (Katar)",
+        "lat": 25.49,
+        "lng": 51.45
+      },
+      {
+        "n": "Le Mans Circuit de la Sarthe (Frankreich)",
+        "lat": 47.95,
+        "lng": 0.21
+      },
+      {
+        "n": "Goodwood Circuit (England)",
+        "lat": 50.86,
+        "lng": -0.76
+      },
+      {
+        "n": "Brands Hatch (England)",
+        "lat": 51.36,
+        "lng": 0.26
+      },
+      {
+        "n": "Laguna Seca Raceway (Monterey, USA)",
+        "lat": 36.58,
+        "lng": -121.75
+      },
+      {
+        "n": "Kyalami Grand Prix Circuit (Südafrika)",
+        "lat": -25.99,
+        "lng": 28.07
       }
     ]
   },
@@ -221,6 +891,201 @@
         "n": "Are (Schweden) — Skiort WM 2019",
         "lat": 63.4,
         "lng": 13.08
+      },
+      {
+        "n": "Davos (Graubünden, Schweiz)",
+        "lat": 46.8,
+        "lng": 9.84
+      },
+      {
+        "n": "Verbier (Wallis, Schweiz)",
+        "lat": 46.1,
+        "lng": 7.23
+      },
+      {
+        "n": "Courchevel (Savoyen, Frankreich)",
+        "lat": 45.42,
+        "lng": 6.63
+      },
+      {
+        "n": "Méribel (Savoyen, Frankreich)",
+        "lat": 45.39,
+        "lng": 6.57
+      },
+      {
+        "n": "Chamonix-Mont-Blanc (Frankreich)",
+        "lat": 45.92,
+        "lng": 6.87
+      },
+      {
+        "n": "Les Deux Alpes (Isère, Frankreich)",
+        "lat": 45.02,
+        "lng": 6.12
+      },
+      {
+        "n": "Megève (Haute-Savoie, Frankreich)",
+        "lat": 45.86,
+        "lng": 6.62
+      },
+      {
+        "n": "Cortina d'Ampezzo (Dolomiten, Italien)",
+        "lat": 46.54,
+        "lng": 12.14
+      },
+      {
+        "n": "Madonna di Campiglio (Trentino, Italien)",
+        "lat": 46.23,
+        "lng": 10.83
+      },
+      {
+        "n": "Sestriere (Piemont, Italien)",
+        "lat": 44.96,
+        "lng": 6.88
+      },
+      {
+        "n": "Söll (Tirol, Österreich)",
+        "lat": 47.51,
+        "lng": 12.19
+      },
+      {
+        "n": "St. Anton am Arlberg (Tirol, Österreich)",
+        "lat": 47.13,
+        "lng": 10.27
+      },
+      {
+        "n": "Sölden (Tirol, Österreich)",
+        "lat": 46.97,
+        "lng": 11.0
+      },
+      {
+        "n": "Obertauern (Salzburg, Österreich)",
+        "lat": 47.26,
+        "lng": 13.57
+      },
+      {
+        "n": "Lech am Arlberg (Vorarlberg, Österreich)",
+        "lat": 47.21,
+        "lng": 10.14
+      },
+      {
+        "n": "Garmisch-Partenkirchen (Bayern, Deutschland)",
+        "lat": 47.49,
+        "lng": 11.09
+      },
+      {
+        "n": "Oberstdorf (Allgäu, Deutschland)",
+        "lat": 47.41,
+        "lng": 10.28
+      },
+      {
+        "n": "Berchtesgaden (Bayern, Deutschland)",
+        "lat": 47.63,
+        "lng": 13.0
+      },
+      {
+        "n": "Zermatt (Wallis, Schweiz)",
+        "lat": 46.02,
+        "lng": 7.75
+      },
+      {
+        "n": "Adelboden (Bern, Schweiz)",
+        "lat": 46.49,
+        "lng": 7.56
+      },
+      {
+        "n": "Grindelwald (Bern, Schweiz)",
+        "lat": 46.62,
+        "lng": 8.04
+      },
+      {
+        "n": "Aspen (Colorado, USA)",
+        "lat": 39.19,
+        "lng": -106.82
+      },
+      {
+        "n": "Vail (Colorado, USA)",
+        "lat": 39.64,
+        "lng": -106.37
+      },
+      {
+        "n": "Park City Mountain Resort (Utah, USA)",
+        "lat": 40.65,
+        "lng": -111.51
+      },
+      {
+        "n": "Whistler Blackcomb (British Columbia, Kanada)",
+        "lat": 50.12,
+        "lng": -122.96
+      },
+      {
+        "n": "Squaw Valley (Lake Tahoe, USA)",
+        "lat": 39.2,
+        "lng": -120.24
+      },
+      {
+        "n": "Breckenridge (Colorado, USA)",
+        "lat": 39.48,
+        "lng": -106.04
+      },
+      {
+        "n": "Steamboat Springs (Colorado, USA)",
+        "lat": 40.49,
+        "lng": -106.83
+      },
+      {
+        "n": "Sun Valley (Idaho, USA)",
+        "lat": 43.7,
+        "lng": -114.35
+      },
+      {
+        "n": "Niseko (Hokkaido, Japan)",
+        "lat": 42.8,
+        "lng": 140.69
+      },
+      {
+        "n": "Hakuba (Nagano, Japan)",
+        "lat": 36.7,
+        "lng": 137.86
+      },
+      {
+        "n": "Thredbo (New South Wales, Australien)",
+        "lat": -36.51,
+        "lng": 148.3
+      },
+      {
+        "n": "Queenstown Skigebiete (Neuseeland)",
+        "lat": -45.03,
+        "lng": 168.66
+      },
+      {
+        "n": "Falun (Schweden)",
+        "lat": 60.61,
+        "lng": 15.63
+      },
+      {
+        "n": "Lillehammer (Norwegen)",
+        "lat": 61.11,
+        "lng": 10.47
+      },
+      {
+        "n": "Holmenkollen (Oslo, Norwegen)",
+        "lat": 59.96,
+        "lng": 10.67
+      },
+      {
+        "n": "Ruka (Kuusamo, Finnland)",
+        "lat": 66.17,
+        "lng": 29.17
+      },
+      {
+        "n": "Lahti (Finnland)",
+        "lat": 60.98,
+        "lng": 25.66
+      },
+      {
+        "n": "Alpe d'Huez (Isère, Frankreich)",
+        "lat": 45.09,
+        "lng": 6.07
       }
     ]
   },
@@ -258,14 +1123,29 @@
         "lng": -3.68
       },
       {
-        "n": "Laver Arena (Melbourne Park)",
-        "lat": -37.82,
-        "lng": 144.98
+        "n": "Court Suzanne-Lenglen (Paris, Frankreich)",
+        "lat": 48.84,
+        "lng": 2.25
       },
       {
-        "n": "Arthur Ashe Stadium (Flushing Meadows, NY)",
-        "lat": 40.75,
-        "lng": -73.85
+        "n": "Foro Italico (Rom, Italien)",
+        "lat": 41.93,
+        "lng": 12.46
+      },
+      {
+        "n": "Stadium Court (Indian Wells, USA)",
+        "lat": 33.72,
+        "lng": -116.38
+      },
+      {
+        "n": "Miami Open Stadium (Miami Gardens, USA)",
+        "lat": 25.96,
+        "lng": -80.24
+      },
+      {
+        "n": "Madrid Open Caja Mágica (Spanien)",
+        "lat": 40.37,
+        "lng": -3.72
       }
     ]
   },
@@ -356,6 +1236,141 @@
         "n": "Royal Melbourne Golf Club (Australien)",
         "lat": -37.94,
         "lng": 145.04
+      },
+      {
+        "n": "Royal Birkdale Golf Club (England)",
+        "lat": 53.61,
+        "lng": -3.04
+      },
+      {
+        "n": "Royal St George's (Kent, England)",
+        "lat": 51.28,
+        "lng": 1.39
+      },
+      {
+        "n": "Carnoustie Golf Links (Schottland)",
+        "lat": 56.5,
+        "lng": -2.71
+      },
+      {
+        "n": "Turnberry (Ayrshire, Schottland)",
+        "lat": 55.33,
+        "lng": -4.82
+      },
+      {
+        "n": "Muirfield (East Lothian, Schottland)",
+        "lat": 56.05,
+        "lng": -2.84
+      },
+      {
+        "n": "TPC Sawgrass (Ponte Vedra Beach, USA)",
+        "lat": 30.2,
+        "lng": -81.4
+      },
+      {
+        "n": "Pinehurst Resort No. 2 (North Carolina, USA)",
+        "lat": 35.19,
+        "lng": -79.47
+      },
+      {
+        "n": "Bethpage Black (New York, USA)",
+        "lat": 40.74,
+        "lng": -73.46
+      },
+      {
+        "n": "Oakmont Country Club (Pennsylvania, USA)",
+        "lat": 40.52,
+        "lng": -79.83
+      },
+      {
+        "n": "Merion Golf Club (Pennsylvania, USA)",
+        "lat": 39.99,
+        "lng": -75.31
+      },
+      {
+        "n": "Winged Foot Golf Club (New York, USA)",
+        "lat": 40.96,
+        "lng": -73.79
+      },
+      {
+        "n": "Hazeltine National Golf Club (Minnesota, USA)",
+        "lat": 44.74,
+        "lng": -93.59
+      },
+      {
+        "n": "Congressional Country Club (Maryland, USA)",
+        "lat": 39.01,
+        "lng": -77.08
+      },
+      {
+        "n": "Valderrama Golf Club (Andalusien, Spanien)",
+        "lat": 36.28,
+        "lng": -5.36
+      },
+      {
+        "n": "Emirates Golf Club (Dubai, VAE)",
+        "lat": 25.1,
+        "lng": 55.17
+      },
+      {
+        "n": "Mission Hills Golf Club (Shenzhen, China)",
+        "lat": 22.6,
+        "lng": 113.92
+      },
+      {
+        "n": "Kasumigaseki Country Club (Saitama, Japan)",
+        "lat": 35.93,
+        "lng": 139.39
+      },
+      {
+        "n": "Kingston Heath Golf Club (Australien)",
+        "lat": -37.94,
+        "lng": 145.03
+      },
+      {
+        "n": "Cape Kidnappers (Hawke's Bay, Neuseeland)",
+        "lat": -39.63,
+        "lng": 177.09
+      },
+      {
+        "n": "Bandon Dunes (Oregon, USA)",
+        "lat": 43.13,
+        "lng": -124.41
+      },
+      {
+        "n": "Kiawah Island Ocean Course (South Carolina, USA)",
+        "lat": 32.62,
+        "lng": -80.08
+      },
+      {
+        "n": "Medinah Country Club (Illinois, USA)",
+        "lat": 41.93,
+        "lng": -88.06
+      },
+      {
+        "n": "Torrey Pines Golf Course (La Jolla, USA)",
+        "lat": 32.9,
+        "lng": -117.25
+      },
+      {
+        "n": "Royal County Down (Newcastle, Nordirland)",
+        "lat": 54.22,
+        "lng": -5.9
+      },
+      {
+        "n": "Waterville Golf Links (Kerry, Irland)",
+        "lat": 51.83,
+        "lng": -10.17
+      },
+      {
+        "n": "Ballybunion Golf Club (Kerry, Irland)",
+        "lat": 52.51,
+        "lng": -9.67
+      },
+      {
+        "n": "Prairie Dunes Country Club (Kansas, USA)",
+        "lat": 37.64,
+        "lng": -98.08
       }
     ]
   },
@@ -401,6 +1416,166 @@
         "n": "Mavericks (Half Moon Bay, Kalifornien)",
         "lat": 37.49,
         "lng": -122.5
+      },
+      {
+        "n": "Jaws / Peahi (Maui, Hawaii, USA)",
+        "lat": 20.95,
+        "lng": -156.33
+      },
+      {
+        "n": "Waimea Bay (Oahu, Hawaii, USA)",
+        "lat": 21.64,
+        "lng": -158.07
+      },
+      {
+        "n": "Steamer Lane (Santa Cruz, Kalifornien)",
+        "lat": 36.96,
+        "lng": -122.02
+      },
+      {
+        "n": "Trestles (San Clemente, Kalifornien)",
+        "lat": 33.4,
+        "lng": -117.59
+      },
+      {
+        "n": "Blacks Beach (La Jolla, Kalifornien)",
+        "lat": 32.88,
+        "lng": -117.25
+      },
+      {
+        "n": "Teahupo'o (Tahiti, Französisch-Polynesien)",
+        "lat": -17.83,
+        "lng": -149.28
+      },
+      {
+        "n": "Banzai Pipeline (North Shore, Hawaii)",
+        "lat": 21.66,
+        "lng": -158.05
+      },
+      {
+        "n": "Cloudbreak (Fiji)",
+        "lat": -18.13,
+        "lng": 177.23
+      },
+      {
+        "n": "Restaurants / Tavarua (Fiji)",
+        "lat": -17.85,
+        "lng": 177.21
+      },
+      {
+        "n": "Padang Padang (Bali, Indonesien)",
+        "lat": -8.82,
+        "lng": 115.09
+      },
+      {
+        "n": "G-Land / Plengkung (Java, Indonesien)",
+        "lat": -8.6,
+        "lng": 114.42
+      },
+      {
+        "n": "Desert Point (Lombok, Indonesien)",
+        "lat": -8.73,
+        "lng": 115.9
+      },
+      {
+        "n": "Superbank (Gold Coast, Australien)",
+        "lat": -28.03,
+        "lng": 153.44
+      },
+      {
+        "n": "Margaret River (Westaustralien)",
+        "lat": -33.96,
+        "lng": 114.95
+      },
+      {
+        "n": "Hossegor / La Gravière (Frankreich)",
+        "lat": 43.66,
+        "lng": -1.42
+      },
+      {
+        "n": "Ericeira (Portugal)",
+        "lat": 38.96,
+        "lng": -9.42
+      },
+      {
+        "n": "Praia do Norte (Nazaré, Portugal)",
+        "lat": 39.61,
+        "lng": -9.07
+      },
+      {
+        "n": "Puerto Escondido (Oaxaca, Mexiko)",
+        "lat": 15.87,
+        "lng": -97.07
+      },
+      {
+        "n": "Playa Zicatela (Mexiko)",
+        "lat": 15.86,
+        "lng": -97.07
+      },
+      {
+        "n": "Todos Santos (Baja California, Mexiko)",
+        "lat": 23.45,
+        "lng": -110.22
+      },
+      {
+        "n": "Jeffrey's Bay (Südafrika)",
+        "lat": -34.04,
+        "lng": 24.92
+      },
+      {
+        "n": "Dungeons (Kapstadt, Südafrika)",
+        "lat": -34.18,
+        "lng": 18.32
+      },
+      {
+        "n": "Skeleton Bay / Donkey Bay (Namibia)",
+        "lat": -22.68,
+        "lng": 14.53
+      },
+      {
+        "n": "Thurso East (Schottland)",
+        "lat": 58.59,
+        "lng": -3.52
+      },
+      {
+        "n": "Bundoran (Donegal, Irland)",
+        "lat": 54.48,
+        "lng": -8.28
+      },
+      {
+        "n": "Coxos (Ericeira, Portugal)",
+        "lat": 38.99,
+        "lng": -9.44
+      },
+      {
+        "n": "Punta de Lobos (Chile)",
+        "lat": -34.42,
+        "lng": -72.0
+      },
+      {
+        "n": "Arica (Chile)",
+        "lat": -18.47,
+        "lng": -70.33
+      },
+      {
+        "n": "Santa Catalina (Panama)",
+        "lat": 7.85,
+        "lng": -80.98
+      },
+      {
+        "n": "Salina Cruz (Oaxaca, Mexiko)",
+        "lat": 16.17,
+        "lng": -95.19
+      },
+      {
+        "n": "Soup Bowls / Bathsheba (Barbados)",
+        "lat": 13.22,
+        "lng": -59.52
+      },
+      {
+        "n": "Rincon (Puerto Rico)",
+        "lat": 18.34,
+        "lng": -67.25
       }
     ]
   },

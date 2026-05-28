@@ -41,6 +41,182 @@
       {
         "n": "Judo",
         "c": "Japan"
+      },
+      {
+        "n": "Karate",
+        "c": "Japan (Okinawa)"
+      },
+      {
+        "n": "Kendo",
+        "c": "Japan"
+      },
+      {
+        "n": "Aikido",
+        "c": "Japan"
+      },
+      {
+        "n": "Kung Fu / Wushu",
+        "c": "China"
+      },
+      {
+        "n": "Tai Chi",
+        "c": "China"
+      },
+      {
+        "n": "Squash",
+        "c": "England"
+      },
+      {
+        "n": "Snooker",
+        "c": "Indien (Brit. Armee)"
+      },
+      {
+        "n": "Darts",
+        "c": "England"
+      },
+      {
+        "n": "Bowls / Bocce",
+        "c": "Italien"
+      },
+      {
+        "n": "Pétanque",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Jai Alai / Pelota",
+        "c": "Baskenland (Spanien)"
+      },
+      {
+        "n": "Handball",
+        "c": "Deutschland / Skandinavien"
+      },
+      {
+        "n": "Field Hockey",
+        "c": "England / Indien"
+      },
+      {
+        "n": "Curling",
+        "c": "Schottland"
+      },
+      {
+        "n": "Bobsled",
+        "c": "Schweiz (St. Moritz)"
+      },
+      {
+        "n": "Skeleton",
+        "c": "Schweiz"
+      },
+      {
+        "n": "Luge / Rennrodeln",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Biathlon",
+        "c": "Skandinavien (Norwegen)"
+      },
+      {
+        "n": "Ski Jumping",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Slalom / Alpine Ski",
+        "c": "Österreich / Norwegen"
+      },
+      {
+        "n": "Cross-Country Skiing",
+        "c": "Norwegen / Skandinavien"
+      },
+      {
+        "n": "Snowboarding",
+        "c": "USA (Surfskate-Bewegung)"
+      },
+      {
+        "n": "Beach Volleyball",
+        "c": "USA (Santa Monica)"
+      },
+      {
+        "n": "Water Polo",
+        "c": "England"
+      },
+      {
+        "n": "Synchronized Swimming",
+        "c": "USA / Kanada"
+      },
+      {
+        "n": "Fencing",
+        "c": "Europa (Deutschland / Frankreich)"
+      },
+      {
+        "n": "Modern Pentathlon",
+        "c": "Frankreich (Pierre de Coubertin)"
+      },
+      {
+        "n": "Triathlon",
+        "c": "USA (San Diego)"
+      },
+      {
+        "n": "Badminton",
+        "c": "England (Badminton House)"
+      },
+      {
+        "n": "Table Tennis / Ping Pong",
+        "c": "England"
+      },
+      {
+        "n": "Volleyball",
+        "c": "USA (William Morgan)"
+      },
+      {
+        "n": "Baseball",
+        "c": "USA"
+      },
+      {
+        "n": "American Football",
+        "c": "USA"
+      },
+      {
+        "n": "Ice Hockey",
+        "c": "Kanada"
+      },
+      {
+        "n": "Lacrosse (Box)",
+        "c": "Kanada"
+      },
+      {
+        "n": "Aussie Rules Football",
+        "c": "Australien"
+      },
+      {
+        "n": "Rugby League",
+        "c": "England (Yorkshire)"
+      },
+      {
+        "n": "Rugby Union",
+        "c": "England (Rugby School)"
+      },
+      {
+        "n": "Boxing",
+        "c": "England (Marquess of Queensberry)"
+      },
+      {
+        "n": "Wrestling / Freistil",
+        "c": "USA"
+      },
+      {
+        "n": "Greco-Roman Wrestling",
+        "c": "Europa (Frankreich)"
+      },
+      {
+        "n": "Athletics / Leichtathletik",
+        "c": "Griechenland (antik)"
+      },
+      {
+        "n": "Cycling Road",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Gymnastics / Turnen",
+        "c": "Deutschland (Friedrich Ludwig Jahn)"
       }
     ]
   },
@@ -78,6 +254,74 @@
       {
         "n": "Eishockey",
         "c": "6 Spieler"
+      },
+      {
+        "n": "Rugby League",
+        "c": "13 Spieler"
+      },
+      {
+        "n": "Softbal",
+        "c": "9 Spieler"
+      },
+      {
+        "n": "Cricket",
+        "c": "11 Spieler"
+      },
+      {
+        "n": "Feldhockey",
+        "c": "11 Spieler"
+      },
+      {
+        "n": "Wasserball",
+        "c": "7 Spieler"
+      },
+      {
+        "n": "Tennis (Einzel)",
+        "c": "1 Spieler"
+      },
+      {
+        "n": "Golf",
+        "c": "1 Spieler"
+      },
+      {
+        "n": "Polo",
+        "c": "4 Spieler"
+      },
+      {
+        "n": "Curling",
+        "c": "4 Spieler"
+      },
+      {
+        "n": "Bobsleigh (Vierer)",
+        "c": "4 Spieler"
+      },
+      {
+        "n": "Rudern (Achter)",
+        "c": "9 Spieler"
+      },
+      {
+        "n": "Badminton (Einzel)",
+        "c": "1 Spieler"
+      },
+      {
+        "n": "Kanu (Einer)",
+        "c": "1 Spieler"
+      },
+      {
+        "n": "Boxen",
+        "c": "1 Spieler"
+      },
+      {
+        "n": "Lacrosse (Feld)",
+        "c": "10 Spieler"
+      },
+      {
+        "n": "Netball",
+        "c": "7 Spieler"
+      },
+      {
+        "n": "Gaelic Football",
+        "c": "15 Spieler"
       }
     ]
   },
@@ -115,6 +359,98 @@
       {
         "n": "Olympiade 2016",
         "c": "Rio de Janeiro"
+      },
+      {
+        "n": "Olympiade 1904",
+        "c": "St. Louis"
+      },
+      {
+        "n": "Olympiade 1908",
+        "c": "London"
+      },
+      {
+        "n": "Olympiade 1912",
+        "c": "Stockholm"
+      },
+      {
+        "n": "Olympiade 1920",
+        "c": "Antwerpen"
+      },
+      {
+        "n": "Olympiade 1924",
+        "c": "Paris"
+      },
+      {
+        "n": "Olympiade 1928",
+        "c": "Amsterdam"
+      },
+      {
+        "n": "Olympiade 1932",
+        "c": "Los Angeles"
+      },
+      {
+        "n": "Olympiade 1948",
+        "c": "London"
+      },
+      {
+        "n": "Olympiade 1952",
+        "c": "Helsinki"
+      },
+      {
+        "n": "Olympiade 1956",
+        "c": "Melbourne"
+      },
+      {
+        "n": "Olympiade 1960",
+        "c": "Rom"
+      },
+      {
+        "n": "Olympiade 1968",
+        "c": "Mexiko-Stadt"
+      },
+      {
+        "n": "Olympiade 1972",
+        "c": "München"
+      },
+      {
+        "n": "Olympiade 1976",
+        "c": "Montréal"
+      },
+      {
+        "n": "Olympiade 1984",
+        "c": "Los Angeles"
+      },
+      {
+        "n": "Olympiade 1988",
+        "c": "Seoul"
+      },
+      {
+        "n": "Olympiade 1996",
+        "c": "Atlanta"
+      },
+      {
+        "n": "Olympiade 2000",
+        "c": "Sydney"
+      },
+      {
+        "n": "Olympiade 2004",
+        "c": "Athen"
+      },
+      {
+        "n": "Olympiade 2012",
+        "c": "London"
+      },
+      {
+        "n": "Olympiade 2020/21",
+        "c": "Tokio"
+      },
+      {
+        "n": "Olympiade 2024",
+        "c": "Paris"
+      },
+      {
+        "n": "Olympiade 2028",
+        "c": "Los Angeles"
       }
     ]
   },
@@ -160,6 +496,166 @@
       {
         "n": "Handball",
         "c": "IHF"
+      },
+      {
+        "n": "Fußball",
+        "c": "FIFA"
+      },
+      {
+        "n": "Rugby",
+        "c": "World Rugby"
+      },
+      {
+        "n": "Cricket",
+        "c": "ICC"
+      },
+      {
+        "n": "Golf",
+        "c": "IGF"
+      },
+      {
+        "n": "Hockey (Feld)",
+        "c": "FIH"
+      },
+      {
+        "n": "Boxen (olympisch)",
+        "c": "IBA"
+      },
+      {
+        "n": "Gewichtheben",
+        "c": "IWF"
+      },
+      {
+        "n": "Judo",
+        "c": "IJF"
+      },
+      {
+        "n": "Taekwondo",
+        "c": "World Taekwondo"
+      },
+      {
+        "n": "Karate",
+        "c": "WKF"
+      },
+      {
+        "n": "Fechten",
+        "c": "FIE"
+      },
+      {
+        "n": "Reiten",
+        "c": "FEI"
+      },
+      {
+        "n": "Segeln",
+        "c": "World Sailing"
+      },
+      {
+        "n": "Rudern",
+        "c": "World Rowing"
+      },
+      {
+        "n": "Kanu",
+        "c": "ICF"
+      },
+      {
+        "n": "Schießen",
+        "c": "ISSF"
+      },
+      {
+        "n": "Bogenschießen",
+        "c": "World Archery"
+      },
+      {
+        "n": "Curling",
+        "c": "WCF"
+      },
+      {
+        "n": "Eishockey",
+        "c": "IIHF"
+      },
+      {
+        "n": "Ski Alpin / Nordisch",
+        "c": "FIS"
+      },
+      {
+        "n": "Biathlon",
+        "c": "IBU"
+      },
+      {
+        "n": "Bobsport",
+        "c": "IBSF"
+      },
+      {
+        "n": "Eisschnelllauf",
+        "c": "ISU"
+      },
+      {
+        "n": "Shorttrack",
+        "c": "ISU"
+      },
+      {
+        "n": "Eiskunstlauf",
+        "c": "ISU"
+      },
+      {
+        "n": "Badminton",
+        "c": "BWF"
+      },
+      {
+        "n": "Tischtennis",
+        "c": "ITTF"
+      },
+      {
+        "n": "American Football",
+        "c": "IFAF"
+      },
+      {
+        "n": "Baseball / Softball",
+        "c": "World Baseball Softball"
+      },
+      {
+        "n": "Triathlon",
+        "c": "World Triathlon"
+      },
+      {
+        "n": "Moderner Fünfkampf",
+        "c": "UIPM"
+      },
+      {
+        "n": "Ringen",
+        "c": "UWW"
+      },
+      {
+        "n": "Snooker",
+        "c": "WPBSA"
+      },
+      {
+        "n": "Darts",
+        "c": "BDO / PDC"
+      },
+      {
+        "n": "Squash",
+        "c": "WSF"
+      },
+      {
+        "n": "Polo",
+        "c": "FIP"
+      },
+      {
+        "n": "Motorrad-Sport",
+        "c": "FIM"
+      },
+      {
+        "n": "Automobilsport",
+        "c": "FIA"
+      },
+      {
+        "n": "Wasserspringen",
+        "c": "World Aquatics"
+      },
+      {
+        "n": "Freiwasser-Schwimmen",
+        "c": "World Aquatics"
       }
     ]
   },
@@ -197,6 +693,86 @@
       {
         "n": "Breakdance",
         "c": "Ja"
+      },
+      {
+        "n": "Badminton",
+        "c": "Ja"
+      },
+      {
+        "n": "Bogenschießen",
+        "c": "Ja"
+      },
+      {
+        "n": "Boxen",
+        "c": "Ja"
+      },
+      {
+        "n": "Gewichtheben",
+        "c": "Ja"
+      },
+      {
+        "n": "Judo",
+        "c": "Ja"
+      },
+      {
+        "n": "Klettern (Sport)",
+        "c": "Ja"
+      },
+      {
+        "n": "Rudern",
+        "c": "Ja"
+      },
+      {
+        "n": "Taekwondo",
+        "c": "Ja"
+      },
+      {
+        "n": "Tischtennis",
+        "c": "Ja"
+      },
+      {
+        "n": "Triathlon",
+        "c": "Ja"
+      },
+      {
+        "n": "Rugby Sevens",
+        "c": "Ja"
+      },
+      {
+        "n": "Baseball/Softball",
+        "c": "Ja"
+      },
+      {
+        "n": "Karate",
+        "c": "Nein"
+      },
+      {
+        "n": "American Football",
+        "c": "Nein"
+      },
+      {
+        "n": "Netball",
+        "c": "Nein"
+      },
+      {
+        "n": "Bowling",
+        "c": "Nein"
+      },
+      {
+        "n": "Motorsport (F1)",
+        "c": "Nein"
+      },
+      {
+        "n": "Muay Thai",
+        "c": "Nein"
+      },
+      {
+        "n": "Pool-Billard",
+        "c": "Nein"
+      },
+      {
+        "n": "Darts",
+        "c": "Nein"
       }
     ]
   },
@@ -234,6 +810,66 @@
       {
         "n": "Bandy",
         "c": "Russland"
+      },
+      {
+        "n": "Eishockey",
+        "c": "Kanada"
+      },
+      {
+        "n": "Aussie Rules Football",
+        "c": "Australien"
+      },
+      {
+        "n": "Sepak Takraw",
+        "c": "Malaysia"
+      },
+      {
+        "n": "Pesäpallo (Finnball)",
+        "c": "Finnland"
+      },
+      {
+        "n": "Buzkashi (Reitsport)",
+        "c": "Afghanistan"
+      },
+      {
+        "n": "Lacrosse",
+        "c": "Kanada (indigene Tradition)"
+      },
+      {
+        "n": "Polo",
+        "c": "Argentinien"
+      },
+      {
+        "n": "Capoeira",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Taekwondo",
+        "c": "Südkorea"
+      },
+      {
+        "n": "Baseball",
+        "c": "USA"
+      },
+      {
+        "n": "Basketball",
+        "c": "USA"
+      },
+      {
+        "n": "Kendo",
+        "c": "Japan"
+      },
+      {
+        "n": "Floorball",
+        "c": "Schweden"
+      },
+      {
+        "n": "Korfball",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Wushu (Kung Fu)",
+        "c": "China"
       }
     ]
   },
@@ -279,6 +915,182 @@
       {
         "n": "Katarina Witt (Eiskunstlauf)",
         "c": "Deutschland"
+      },
+      {
+        "n": "Novak Djokovic (Tennis)",
+        "c": "Serbien"
+      },
+      {
+        "n": "Rafael Nadal (Tennis)",
+        "c": "Spanien"
+      },
+      {
+        "n": "Serena Williams (Tennis)",
+        "c": "USA"
+      },
+      {
+        "n": "Steffi Graf (Tennis)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Boris Becker (Tennis)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Max Verstappen (Formel 1)",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Lewis Hamilton (Formel 1)",
+        "c": "England"
+      },
+      {
+        "n": "Michael Schumacher (Formel 1)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Ayrton Senna (Formel 1)",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Usain Bolt (Leichtathletik)",
+        "c": "Jamaika"
+      },
+      {
+        "n": "Florence Griffith-Joyner (Leichtathletik)",
+        "c": "USA"
+      },
+      {
+        "n": "Michael Phelps (Schwimmen)",
+        "c": "USA"
+      },
+      {
+        "n": "Mark Spitz (Schwimmen)",
+        "c": "USA"
+      },
+      {
+        "n": "Katinka Hosszu (Schwimmen)",
+        "c": "Ungarn"
+      },
+      {
+        "n": "Simone Biles (Turnen)",
+        "c": "USA"
+      },
+      {
+        "n": "Larisa Latynina (Turnen)",
+        "c": "UdSSR / Russland"
+      },
+      {
+        "n": "Shaquille O'Neal (Basketball)",
+        "c": "USA"
+      },
+      {
+        "n": "Kobe Bryant (Basketball)",
+        "c": "USA"
+      },
+      {
+        "n": "Giannis Antetokounmpo (Basketball)",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Dirk Nowitzki (Basketball)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Ronaldinho (Fußball)",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Ronaldo (Fenomeno, Fußball)",
+        "c": "Brasilien"
+      },
+      {
+        "n": "Zinedine Zidane (Fußball)",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Johan Cruyff (Fußball)",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Franz Beckenbauer (Fußball)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Gerd Müller (Fußball)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "George Best (Fußball)",
+        "c": "Nordirland"
+      },
+      {
+        "n": "Bobby Charlton (Fußball)",
+        "c": "England"
+      },
+      {
+        "n": "Diego Maradona (Fußball)",
+        "c": "Argentinien"
+      },
+      {
+        "n": "Thierry Henry (Fußball)",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Ronaldo Cristiano (Fußball)",
+        "c": "Portugal"
+      },
+      {
+        "n": "Tiger Woods (Golf)",
+        "c": "USA"
+      },
+      {
+        "n": "Jack Nicklaus (Golf)",
+        "c": "USA"
+      },
+      {
+        "n": "Gary Player (Golf)",
+        "c": "Südafrika"
+      },
+      {
+        "n": "Lance Armstrong (Radsport)",
+        "c": "USA"
+      },
+      {
+        "n": "Bernard Hinault (Radsport)",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Bjorn Daehlie (Skilanglauf)",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Ingemar Stenmark (Ski Alpin)",
+        "c": "Schweden"
+      },
+      {
+        "n": "Hermann Maier (Ski Alpin)",
+        "c": "Österreich"
+      },
+      {
+        "n": "Marcel Hirscher (Ski Alpin)",
+        "c": "Österreich"
+      },
+      {
+        "n": "Valentina Vezzali (Fechten)",
+        "c": "Italien"
+      },
+      {
+        "n": "Haile Gebrselassie (Marathonlauf)",
+        "c": "Äthiopien"
+      },
+      {
+        "n": "Eliud Kipchoge (Marathonlauf)",
+        "c": "Kenia"
+      },
+      {
+        "n": "Wayde van Niekerk (Leichtathletik)",
+        "c": "Südafrika"
       }
     ]
   },
@@ -316,6 +1128,78 @@
       {
         "n": "100m-Sprint Frauen (10,49 s)",
         "c": "Florence Griffith-Joyner"
+      },
+      {
+        "n": "200m Männer (19,19 s, Berlin 2009)",
+        "c": "Usain Bolt"
+      },
+      {
+        "n": "400m Männer (43,03 s, Rio 2016)",
+        "c": "Wayde van Niekerk"
+      },
+      {
+        "n": "800m Männer (1:40,91, London 2012)",
+        "c": "David Rudisha"
+      },
+      {
+        "n": "1500m Männer (3:26,00, 1998)",
+        "c": "Hicham El Guerrouj"
+      },
+      {
+        "n": "5000m Männer (12:35,36, 2020)",
+        "c": "Joshua Cheptegei"
+      },
+      {
+        "n": "Marathon Männer (2:00:35, 2023)",
+        "c": "Kelvin Kiptum"
+      },
+      {
+        "n": "110m Hürden (12,80 s, 2012)",
+        "c": "Aries Merritt"
+      },
+      {
+        "n": "400m Hürden Männer (45,94 s, Tokio)",
+        "c": "Karsten Warholm"
+      },
+      {
+        "n": "Stabhochsprung (6,24 m, 2024)",
+        "c": "Mondo Duplantis"
+      },
+      {
+        "n": "Dreisprung Männer (18,29 m, 1995)",
+        "c": "Jonathan Edwards"
+      },
+      {
+        "n": "Kugelstoßen Männer (23,56 m, 2021)",
+        "c": "Ryan Crouser"
+      },
+      {
+        "n": "Diskuswurf Männer (74,08 m, 1986)",
+        "c": "Jürgen Schult"
+      },
+      {
+        "n": "Hammerwurf Männer (86,74 m, 1986)",
+        "c": "Yuriy Sedykh"
+      },
+      {
+        "n": "Speerwurf Männer (98,48 m, 1996)",
+        "c": "Jan Železný"
+      },
+      {
+        "n": "100m Frauen (10,49 s, Seoul 1988)",
+        "c": "Florence Griffith-Joyner"
+      },
+      {
+        "n": "400m Hürden Frauen (50,68 s, 2022)",
+        "c": "Sydney McLaughlin-Levrone"
+      },
+      {
+        "n": "Stabhochsprung Frauen (5,06 m, 2024)",
+        "c": "Katie Moon / Mondo"
+      },
+      {
+        "n": "Marathon Frauen (2:09:56, 2024)",
+        "c": "Ruth Chepngetich"
       }
     ]
   },
@@ -353,6 +1237,186 @@
       {
         "n": "FIFA WM 2022",
         "c": "Katar"
+      },
+      {
+        "n": "WM 1930",
+        "c": "Uruguay"
+      },
+      {
+        "n": "WM 1934",
+        "c": "Italien"
+      },
+      {
+        "n": "WM 1938",
+        "c": "Frankreich"
+      },
+      {
+        "n": "WM 1950",
+        "c": "Brasilien"
+      },
+      {
+        "n": "WM 1954",
+        "c": "Schweiz"
+      },
+      {
+        "n": "WM 1958",
+        "c": "Schweden"
+      },
+      {
+        "n": "WM 1962",
+        "c": "Chile"
+      },
+      {
+        "n": "WM 1966",
+        "c": "England"
+      },
+      {
+        "n": "WM 1970",
+        "c": "Mexiko"
+      },
+      {
+        "n": "WM 1974",
+        "c": "Westdeutschland"
+      },
+      {
+        "n": "WM 1978",
+        "c": "Argentinien"
+      },
+      {
+        "n": "WM 1982",
+        "c": "Spanien"
+      },
+      {
+        "n": "WM 1986",
+        "c": "Mexiko"
+      },
+      {
+        "n": "WM 1990",
+        "c": "Italien"
+      },
+      {
+        "n": "WM 1994",
+        "c": "USA"
+      },
+      {
+        "n": "WM 1998",
+        "c": "Frankreich"
+      },
+      {
+        "n": "WM 2002",
+        "c": "Südkorea / Japan"
+      },
+      {
+        "n": "WM 2006",
+        "c": "Deutschland"
+      },
+      {
+        "n": "WM 2010",
+        "c": "Südafrika"
+      },
+      {
+        "n": "WM 2014",
+        "c": "Brasilien"
+      },
+      {
+        "n": "WM 2018",
+        "c": "Russland"
+      },
+      {
+        "n": "WM 2022",
+        "c": "Katar"
+      },
+      {
+        "n": "WM 2026",
+        "c": "USA / Kanada / Mexiko"
+      },
+      {
+        "n": "WM 2030",
+        "c": "Spanien / Portugal / Marokko"
+      },
+      {
+        "n": "Rugby WM 2019",
+        "c": "Japan"
+      },
+      {
+        "n": "Rugby WM 2023",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Rugby WM 2027",
+        "c": "Australien"
+      },
+      {
+        "n": "Cricket WM 2023",
+        "c": "Indien"
+      },
+      {
+        "n": "Cricket WM 2024 T20",
+        "c": "USA / Westindien"
+      },
+      {
+        "n": "Basketball WM 2023",
+        "c": "Philippinen / Japan / Indonesien"
+      },
+      {
+        "n": "Handball WM 2021",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Handball WM 2023",
+        "c": "Polen / Schweden"
+      },
+      {
+        "n": "Hockey WM 2023",
+        "c": "Indien"
+      },
+      {
+        "n": "Volleyball WM 2022",
+        "c": "Polen / Slowenien"
+      },
+      {
+        "n": "Schwimm-WM 2023",
+        "c": "Japan (Fukuoka)"
+      },
+      {
+        "n": "Leichtathletik-WM 2022",
+        "c": "USA (Eugene)"
+      },
+      {
+        "n": "Leichtathletik-WM 2023",
+        "c": "Ungarn (Budapest)"
+      },
+      {
+        "n": "Formel-1 Konstrukteurs-WM 2023",
+        "c": "Red Bull Racing (Österreich)"
+      },
+      {
+        "n": "Tour de France 2023 Sieger",
+        "c": "Dänemark (Jonas Vingegaard)"
+      },
+      {
+        "n": "Wimbledon 2023 Sieger",
+        "c": "Spanien (Alcaraz)"
+      },
+      {
+        "n": "Olympia Sommer 2020/21",
+        "c": "Japan (Tokio)"
+      },
+      {
+        "n": "Olympia Sommer 2024",
+        "c": "Frankreich (Paris)"
+      },
+      {
+        "n": "Olympia Sommer 2028",
+        "c": "USA (Los Angeles)"
+      },
+      {
+        "n": "Olympia Winter 2022",
+        "c": "China (Peking)"
+      },
+      {
+        "n": "Olympia Winter 2026",
+        "c": "Italien (Mailand / Cortina)"
       }
     ]
   },
@@ -390,6 +1454,94 @@
       {
         "n": "Salvo (Volley)",
         "c": "Tennis"
+      },
+      {
+        "n": "Salto rückwärts",
+        "c": "Turnen"
+      },
+      {
+        "n": "Pirouette",
+        "c": "Eiskunstlauf"
+      },
+      {
+        "n": "Axel-Sprung",
+        "c": "Eiskunstlauf"
+      },
+      {
+        "n": "Slalom-Kurve",
+        "c": "Skifahren"
+      },
+      {
+        "n": "Telemark-Landung",
+        "c": "Skispringen"
+      },
+      {
+        "n": "Kraulen",
+        "c": "Schwimmen"
+      },
+      {
+        "n": "Delphin-Stoß",
+        "c": "Schwimmen"
+      },
+      {
+        "n": "Pferdchen / Brustschwimmen",
+        "c": "Schwimmen"
+      },
+      {
+        "n": "Kranzbackhand",
+        "c": "Tennis"
+      },
+      {
+        "n": "Serve & Volley",
+        "c": "Tennis"
+      },
+      {
+        "n": "Plyometrisches Training",
+        "c": "Leichtathletik"
+      },
+      {
+        "n": "Fosbury-Flop",
+        "c": "Hochsprung"
+      },
+      {
+        "n": "O'Brien-Technik",
+        "c": "Kugelstoßen"
+      },
+      {
+        "n": "Crouch Start (Blocks)",
+        "c": "Sprint"
+      },
+      {
+        "n": "Kufen-Schritt",
+        "c": "Eisschnelllauf"
+      },
+      {
+        "n": "Jab-Cross-Kombination",
+        "c": "Boxen"
+      },
+      {
+        "n": "Ippon (Ganzkörperwurf)",
+        "c": "Judo"
+      },
+      {
+        "n": "Randori",
+        "c": "Judo"
+      },
+      {
+        "n": "Kata-Ausführung",
+        "c": "Karate"
+      },
+      {
+        "n": "Hakama tragen",
+        "c": "Kendo"
+      },
+      {
+        "n": "Seitenwindschiessen",
+        "c": "Bogenschießen"
+      },
+      {
+        "n": "Laufschritt (Kadenz)",
+        "c": "Leichtathletik"
       }
     ]
   },
@@ -426,6 +1578,78 @@
       },
       {
         "n": "Pelota Vasca",
+        "c": "Europa"
+      },
+      {
+        "n": "Kabaddi",
+        "c": "Asien"
+      },
+      {
+        "n": "Kendo",
+        "c": "Asien"
+      },
+      {
+        "n": "Polo (Ursprung Persien)",
+        "c": "Asien"
+      },
+      {
+        "n": "Cachibol",
+        "c": "Südamerika"
+      },
+      {
+        "n": "Pelota",
+        "c": "Europa"
+      },
+      {
+        "n": "Schwingen (Ringen)",
+        "c": "Europa"
+      },
+      {
+        "n": "Cricket",
+        "c": "Europa"
+      },
+      {
+        "n": "Hurling",
+        "c": "Europa"
+      },
+      {
+        "n": "Gaelic Football",
+        "c": "Europa"
+      },
+      {
+        "n": "Baseball",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Lacrosse",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Basketball",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Volleyball",
+        "c": "Nordamerika"
+      },
+      {
+        "n": "Aussie Rules Football",
+        "c": "Australien/Ozeanien"
+      },
+      {
+        "n": "Oztag",
+        "c": "Australien/Ozeanien"
+      },
+      {
+        "n": "Dambe (Boxen)",
+        "c": "Afrika"
+      },
+      {
+        "n": "Nguni-Stockkampf",
+        "c": "Afrika"
+      },
+      {
+        "n": "Savate",
         "c": "Europa"
       }
     ]

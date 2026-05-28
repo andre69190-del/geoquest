@@ -111,6 +111,96 @@
         "n": "Erdnuss-Ursprung Brasilien (Mato Grosso)",
         "lat": -12.0,
         "lng": -53.0
+      },
+      {
+        "n": "Weizen (Fruchtbarer Halbmond, Türkei)",
+        "lat": 37.0,
+        "lng": 38.5
+      },
+      {
+        "n": "Mais (Tehuacán, Mexiko)",
+        "lat": 18.46,
+        "lng": -97.39
+      },
+      {
+        "n": "Kartoffel (Titicaca-Hochland, Peru)",
+        "lat": -15.8,
+        "lng": -70.0
+      },
+      {
+        "n": "Tomaten (Mesoamerika, Mexiko)",
+        "lat": 19.5,
+        "lng": -99.0
+      },
+      {
+        "n": "Chili (Bolivien/Peru-Grenzregion)",
+        "lat": -17.0,
+        "lng": -64.0
+      },
+      {
+        "n": "Süßkartoffel (Papua-Neuguinea)",
+        "lat": -6.5,
+        "lng": 145.0
+      },
+      {
+        "n": "Quinoa (Altiplano, Bolivien)",
+        "lat": -16.5,
+        "lng": -68.2
+      },
+      {
+        "n": "Banane (Papua-Neuguinea)",
+        "lat": -5.5,
+        "lng": 145.5
+      },
+      {
+        "n": "Zuckerrohr (Papua-Neuguinea/Indien)",
+        "lat": 22.5,
+        "lng": 89.0
+      },
+      {
+        "n": "Kaffeepflanze (Kaffa, Äthiopien)",
+        "lat": 7.3,
+        "lng": 36.2
+      },
+      {
+        "n": "Kakao (Maya-Tiefland, Guatemala)",
+        "lat": 15.4,
+        "lng": -89.5
+      },
+      {
+        "n": "Tabak (Yucatan, Mexiko)",
+        "lat": 20.0,
+        "lng": -89.0
+      },
+      {
+        "n": "Baumwolle (Indus-Tal, Pakistan)",
+        "lat": 27.3,
+        "lng": 68.5
+      },
+      {
+        "n": "Soja (Mandschurei, China)",
+        "lat": 45.0,
+        "lng": 125.0
+      },
+      {
+        "n": "Erdnuss (Westafrika/Südamerika)",
+        "lat": -15.0,
+        "lng": -55.0
+      },
+      {
+        "n": "Ananas (Paranágebiet, Brasilien)",
+        "lat": -25.0,
+        "lng": -51.0
+      },
+      {
+        "n": "Kokosnuss (Südostasien)",
+        "lat": 5.0,
+        "lng": 105.0
+      },
+      {
+        "n": "Maniok (Amazonasbecken)",
+        "lat": -5.0,
+        "lng": -60.0
       }
     ]
   },
@@ -321,6 +411,106 @@
         "n": "Durban Botanic Gardens (Südafrika)",
         "lat": -29.86,
         "lng": 31.02
+      },
+      {
+        "n": "Botanischer Garten Wien",
+        "lat": 48.19,
+        "lng": 16.33
+      },
+      {
+        "n": "Descanso Gardens (Los Angeles)",
+        "lat": 34.2,
+        "lng": -118.2
+      },
+      {
+        "n": "Brooklyn Botanic Garden (New York)",
+        "lat": 40.67,
+        "lng": -73.96
+      },
+      {
+        "n": "National Botanical Garden (Pretoria)",
+        "lat": -25.74,
+        "lng": 28.27
+      },
+      {
+        "n": "Ботанічний сад (Kyjiw)",
+        "lat": 50.43,
+        "lng": 30.56
+      },
+      {
+        "n": "Komarov Botanical Institute (St. Petersburg)",
+        "lat": 59.97,
+        "lng": 30.3
+      },
+      {
+        "n": "Botanischer Garten Zürich",
+        "lat": 47.36,
+        "lng": 8.56
+      },
+      {
+        "n": "Jardin Exotique Monaco",
+        "lat": 43.73,
+        "lng": 7.41
+      },
+      {
+        "n": "Descanso National Arboretum (Washington)",
+        "lat": 38.89,
+        "lng": -77.07
+      },
+      {
+        "n": "Botanik Bahia (Salvador, Brasilien)",
+        "lat": -13.0,
+        "lng": -38.52
+      },
+      {
+        "n": "Nong Nooch Tropical Garden (Thailand)",
+        "lat": 12.73,
+        "lng": 100.98
+      },
+      {
+        "n": "Shanghai Botanical Garden",
+        "lat": 31.14,
+        "lng": 121.43
+      },
+      {
+        "n": "Kyoto Botanical Garden (Japan)",
+        "lat": 35.05,
+        "lng": 135.76
+      },
+      {
+        "n": "Jardin Botanico Bogotá",
+        "lat": 4.67,
+        "lng": -74.1
+      },
+      {
+        "n": "Auckland Botanic Gardens (NZ)",
+        "lat": -37.03,
+        "lng": 174.9
+      },
+      {
+        "n": "Desert Botanical Garden Phoenix",
+        "lat": 33.46,
+        "lng": -111.95
+      },
+      {
+        "n": "Longwood Gardens Pennsylvania",
+        "lat": 39.87,
+        "lng": -75.67
+      },
+      {
+        "n": "Orto Botanico Napoli",
+        "lat": 40.87,
+        "lng": 14.27
+      },
+      {
+        "n": "Hortus Botanicus Amsterdam",
+        "lat": 52.37,
+        "lng": 4.91
+      },
+      {
+        "n": "Botanischer Garten München",
+        "lat": 48.18,
+        "lng": 11.5
       }
     ]
   },

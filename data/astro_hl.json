@@ -34,6 +34,98 @@
       {
         "name": "Merkur",
         "val": 4879
+      },
+      {
+        "name": "Sonne",
+        "val": 1391000
+      },
+      {
+        "name": "Ganymed (Jupitermond)",
+        "val": 5268
+      },
+      {
+        "name": "Titan (Saturnmond)",
+        "val": 5150
+      },
+      {
+        "name": "Callisto (Jupitermond)",
+        "val": 4820
+      },
+      {
+        "name": "Io (Jupitermond)",
+        "val": 3642
+      },
+      {
+        "name": "Mond (Erdmond)",
+        "val": 3474
+      },
+      {
+        "name": "Europa (Jupitermond)",
+        "val": 3122
+      },
+      {
+        "name": "Triton (Neptunmond)",
+        "val": 2706
+      },
+      {
+        "name": "Pluto (Zwergplanet)",
+        "val": 2376
+      },
+      {
+        "name": "Eris (Zwergplanet)",
+        "val": 2326
+      },
+      {
+        "name": "Titania (Uranusmond)",
+        "val": 1578
+      },
+      {
+        "name": "Oberon (Uranusmond)",
+        "val": 1523
+      },
+      {
+        "name": "Rhea (Saturnmond)",
+        "val": 1527
+      },
+      {
+        "name": "Iapetus (Saturnmond)",
+        "val": 1469
+      },
+      {
+        "name": "Makemake (Zwergplanet)",
+        "val": 1434
+      },
+      {
+        "name": "Charon (Plutomon)",
+        "val": 1212
+      },
+      {
+        "name": "Umbriel (Uranusmond)",
+        "val": 1169
+      },
+      {
+        "name": "Ariel (Uranusmond)",
+        "val": 1158
+      },
+      {
+        "name": "Dione (Saturnmond)",
+        "val": 1123
+      },
+      {
+        "name": "Ceres (Zwergplanet)",
+        "val": 945
+      },
+      {
+        "name": "Vesta (Asteroid)",
+        "val": 525
+      },
+      {
+        "name": "Pallas (Asteroid)",
+        "val": 512
+      },
+      {
+        "name": "Hygiea (Asteroid)",
+        "val": 430
       }
     ]
   },
@@ -96,6 +188,58 @@
       {
         "name": "Quaoar",
         "val": 1
+      },
+      {
+        "name": "Orcus (Zwergplanet)",
+        "val": 1
+      },
+      {
+        "name": "Gonggong (Zwergplanet)",
+        "val": 1
+      },
+      {
+        "name": "Salacia (Zwergplanet)",
+        "val": 1
+      },
+      {
+        "name": "Varda (Zwergplanet)",
+        "val": 1
+      },
+      {
+        "name": "Sedna (TNO)",
+        "val": 0
+      },
+      {
+        "name": "Varuna (TNO)",
+        "val": 0
+      },
+      {
+        "name": "Asteroid Ida",
+        "val": 1
+      },
+      {
+        "name": "Asteroid Eugenia",
+        "val": 2
+      },
+      {
+        "name": "Asteroid Sylvia",
+        "val": 2
+      },
+      {
+        "name": "Asteroid Elektra",
+        "val": 3
+      },
+      {
+        "name": "Asteroid Camilla",
+        "val": 2
+      },
+      {
+        "name": "Ixion (Zwergplanet)",
+        "val": 0
+      },
+      {
+        "name": "Chaos (TNO)",
+        "val": 0
       }
     ]
   },
@@ -174,6 +318,46 @@
       {
         "name": "Hygiea (Asteroid)",
         "val": 470
+      },
+      {
+        "name": "Chiron (Zentaur)",
+        "val": 2631
+      },
+      {
+        "name": "Pholus (Zentaur)",
+        "val": 3051
+      },
+      {
+        "name": "Chariklo (Zentaur)",
+        "val": 2363
+      },
+      {
+        "name": "Nessus (Zentaur)",
+        "val": 3679
+      },
+      {
+        "name": "Orcus (Zwergplanet)",
+        "val": 5835
+      },
+      {
+        "name": "2002 MS4 (Zwergplanet)",
+        "val": 6137
+      },
+      {
+        "name": "Altjira (TNO)",
+        "val": 6582
+      },
+      {
+        "name": "2004 GV9 (TNO)",
+        "val": 6284
+      },
+      {
+        "name": "Gonggong (Zwergplanet)",
+        "val": 10022
+      },
+      {
+        "name": "2002 TX300 (TNO)",
+        "val": 6434
       }
     ]
   },
@@ -638,6 +822,54 @@
       {
         "name": "Boomerang-Nebel (kältester Ort)",
         "val": -272
+      },
+      {
+        "name": "Sonnenkorona",
+        "val": 1000000
+      },
+      {
+        "name": "Sonnenkern",
+        "val": 15000000
+      },
+      {
+        "name": "Proxima Centauri (Oberfläche)",
+        "val": 3042
+      },
+      {
+        "name": "Beteigeuze (Oberfläche)",
+        "val": 3500
+      },
+      {
+        "name": "Rigel (Oberfläche)",
+        "val": 12130
+      },
+      {
+        "name": "Sirius A (Oberfläche)",
+        "val": 9940
+      },
+      {
+        "name": "Alpha Centauri A (Oberfläche)",
+        "val": 5790
+      },
+      {
+        "name": "Ganymede (Oberfläche)",
+        "val": -163
+      },
+      {
+        "name": "Callisto (Oberfläche)",
+        "val": -139
+      },
+      {
+        "name": "Rhea (Saturnmond)",
+        "val": -174
+      },
+      {
+        "name": "Triton (Neptunmond)",
+        "val": -235
+      },
+      {
+        "name": "Merkur (Tagseite Maximum)",
+        "val": 430
       }
     ]
   },

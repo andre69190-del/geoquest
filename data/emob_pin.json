@@ -2,326 +2,1586 @@
   "gigafactories": {
     "prompt": "Wo befindet sich diese EV-Batterie-Gigafactory?",
     "items": [
-      {"n": "Tesla Gigafactory Nevada (Sparks)", "lat": 39.5383, "lng": -119.4365},
-      {"n": "Tesla Gigafactory Berlin (Grünheide)", "lat": 52.3384, "lng": 13.8001},
-      {"n": "Tesla Gigafactory Texas (Austin)", "lat": 30.2672, "lng": -97.7431},
-      {"n": "CATL Stammwerk (Ningde)", "lat": 26.6619, "lng": 119.5483},
-      {"n": "CATL Gigafactory Europa (Erfurt)", "lat": 50.9783, "lng": 11.0307},
-      {"n": "Northvolt Ett (Skellefteå)", "lat": 64.7500, "lng": 20.9528},
-      {"n": "Northvolt Drei (Heide)", "lat": 54.1950, "lng": 9.0954},
-      {"n": "ACC Gigafactory (Billy-Berclau)", "lat": 50.5114, "lng": 2.7256},
-      {"n": "Freyr Battery (Mo i Rana)", "lat": 66.3000, "lng": 14.1400},
-      {"n": "BYD Blade-Batteriefabrik (Shenzhen)", "lat": 22.5431, "lng": 114.0579},
-      {"n": "SK Innovation Werk (Commerce, Georgia)", "lat": 34.2030, "lng": -83.4571},
-      {"n": "Panasonic-Tesla Gigafactory (Kansas)", "lat": 38.4089, "lng": -96.6233},
-      {"n": "LG Energy Solution (Wroclaw)", "lat": 51.1079, "lng": 17.0385},
-      {"n": "Samsung SDI Werk (Göd, Ungarn)", "lat": 47.6917, "lng": 19.1275},
-      {"n": "Stellantis-Samsung SDI (Douvrin)", "lat": 50.5167, "lng": 2.8167},
-      {"n": "Envision AESC (Sunderland)", "lat": 54.9069, "lng": -1.3838},
-      {"n": "SVOLT Energy (Saarlouis)", "lat": 49.3133, "lng": 6.7521},
-      {"n": "Verkor (Dunkerque)", "lat": 51.0367, "lng": 2.3770},
-      {"n": "Volkswagen PowerCo (Salzgitter)", "lat": 52.1522, "lng": 10.3365},
-      {"n": "Automotive Cells Company (Kaiserslautern)", "lat": 49.4430, "lng": 7.7688}
+      {
+        "n": "Tesla Gigafactory Nevada (Sparks)",
+        "lat": 39.5383,
+        "lng": -119.4365
+      },
+      {
+        "n": "Tesla Gigafactory Berlin (Grünheide)",
+        "lat": 52.3384,
+        "lng": 13.8001
+      },
+      {
+        "n": "Tesla Gigafactory Texas (Austin)",
+        "lat": 30.2672,
+        "lng": -97.7431
+      },
+      {
+        "n": "CATL Stammwerk (Ningde)",
+        "lat": 26.6619,
+        "lng": 119.5483
+      },
+      {
+        "n": "CATL Gigafactory Europa (Erfurt)",
+        "lat": 50.9783,
+        "lng": 11.0307
+      },
+      {
+        "n": "Northvolt Ett (Skellefteå)",
+        "lat": 64.75,
+        "lng": 20.9528
+      },
+      {
+        "n": "Northvolt Drei (Heide)",
+        "lat": 54.195,
+        "lng": 9.0954
+      },
+      {
+        "n": "ACC Gigafactory (Billy-Berclau)",
+        "lat": 50.5114,
+        "lng": 2.7256
+      },
+      {
+        "n": "Freyr Battery (Mo i Rana)",
+        "lat": 66.3,
+        "lng": 14.14
+      },
+      {
+        "n": "BYD Blade-Batteriefabrik (Shenzhen)",
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      {
+        "n": "SK Innovation Werk (Commerce, Georgia)",
+        "lat": 34.203,
+        "lng": -83.4571
+      },
+      {
+        "n": "Panasonic-Tesla Gigafactory (Kansas)",
+        "lat": 38.4089,
+        "lng": -96.6233
+      },
+      {
+        "n": "LG Energy Solution (Wroclaw)",
+        "lat": 51.1079,
+        "lng": 17.0385
+      },
+      {
+        "n": "Samsung SDI Werk (Göd, Ungarn)",
+        "lat": 47.6917,
+        "lng": 19.1275
+      },
+      {
+        "n": "Stellantis-Samsung SDI (Douvrin)",
+        "lat": 50.5167,
+        "lng": 2.8167
+      },
+      {
+        "n": "Envision AESC (Sunderland)",
+        "lat": 54.9069,
+        "lng": -1.3838
+      },
+      {
+        "n": "SVOLT Energy (Saarlouis)",
+        "lat": 49.3133,
+        "lng": 6.7521
+      },
+      {
+        "n": "Verkor (Dunkerque)",
+        "lat": 51.0367,
+        "lng": 2.377
+      },
+      {
+        "n": "Volkswagen PowerCo (Salzgitter)",
+        "lat": 52.1522,
+        "lng": 10.3365
+      },
+      {
+        "n": "Automotive Cells Company (Kaiserslautern)",
+        "lat": 49.443,
+        "lng": 7.7688
+      },
+      {
+        "n": "Tesla Gigafactory Nevada",
+        "lat": 39.53,
+        "lng": -118.98
+      },
+      {
+        "n": "Tesla Gigafactory Shanghai",
+        "lat": 31.02,
+        "lng": 121.47
+      },
+      {
+        "n": "CATL Ningde (Hauptwerk)",
+        "lat": 26.65,
+        "lng": 119.55
+      },
+      {
+        "n": "CATL Sichuan",
+        "lat": 30.7,
+        "lng": 104.1
+      },
+      {
+        "n": "BYD Shenzhen Hauptwerk",
+        "lat": 22.55,
+        "lng": 114.1
+      },
+      {
+        "n": "LG Energy Solution Polen (Wrocław)",
+        "lat": 51.2,
+        "lng": 16.9
+      },
+      {
+        "n": "SK On Ungarn (Komárom)",
+        "lat": 47.74,
+        "lng": 18.12
+      },
+      {
+        "n": "Northvolt Sverige (Skellefteå)",
+        "lat": 64.75,
+        "lng": 20.95
+      },
+      {
+        "n": "SVOLT Deutschland (Überherrn)",
+        "lat": 49.25,
+        "lng": 6.71
+      },
+      {
+        "n": "QuantumScape San José USA",
+        "lat": 37.33,
+        "lng": -121.89
+      },
+      {
+        "n": "Solid Power Louisville, USA",
+        "lat": 39.77,
+        "lng": -104.99
+      },
+      {
+        "n": "Factorial Energy Massachusetts, USA",
+        "lat": 42.5,
+        "lng": -71.5
+      },
+      {
+        "n": "AESC Tennessee USA (Smyrna)",
+        "lat": 35.98,
+        "lng": -86.52
+      },
+      {
+        "n": "CATL Europa (Thüringen/Erfurt)",
+        "lat": 51.0,
+        "lng": 11.2
+      },
+      {
+        "n": "Panasonic Energy Osaka",
+        "lat": 34.65,
+        "lng": 135.52
+      },
+      {
+        "n": "Contemporary Amperex HK",
+        "lat": 22.31,
+        "lng": 114.17
+      },
+      {
+        "n": "Svolt EU Saarland",
+        "lat": 49.23,
+        "lng": 7.0
+      },
+      {
+        "n": "BYD Eger (Ungarn)",
+        "lat": 47.88,
+        "lng": 20.38
+      },
+      {
+        "n": "Volkswagen PowerCo Salzgitter",
+        "lat": 52.15,
+        "lng": 10.33
+      },
+      {
+        "n": "Volkswagen PowerCo Spain (Valencia)",
+        "lat": 39.47,
+        "lng": -0.38
+      },
+      {
+        "n": "Volkswagen PowerCo Canada (St. Thomas)",
+        "lat": 42.77,
+        "lng": -81.2
+      },
+      {
+        "n": "Ola Electric Bengaluru (Indien)",
+        "lat": 12.97,
+        "lng": 77.59
+      },
+      {
+        "n": "Reliance Industries Battery (Jamnagar)",
+        "lat": 22.47,
+        "lng": 70.07
+      },
+      {
+        "n": "EG4 Electronics Mississippi USA",
+        "lat": 32.3,
+        "lng": -90.2
+      }
     ]
   },
   "ev_startups": {
     "prompt": "Wo hat dieses E-Fahrzeug-Startup seinen Hauptsitz?",
     "items": [
-      {"n": "Rivian (Normal, Illinois)", "lat": 40.5142, "lng": -88.9906},
-      {"n": "Lucid Motors (Newark, California)", "lat": 37.5296, "lng": -122.0402},
-      {"n": "Fisker Inc. (Manhattan Beach, CA)", "lat": 33.8845, "lng": -118.4098},
-      {"n": "Polestar HQ (Gothenburg)", "lat": 57.7089, "lng": 11.9746},
-      {"n": "Canoo (Bentonville, Arkansas)", "lat": 36.3729, "lng": -94.2088},
-      {"n": "Arrival (London)", "lat": 51.5074, "lng": -0.1278},
-      {"n": "NIO (Hefei)", "lat": 31.8639, "lng": 117.2808},
-      {"n": "Xpeng (Guangzhou)", "lat": 23.1291, "lng": 113.2644},
-      {"n": "Li Auto (Peking)", "lat": 39.9042, "lng": 116.4074},
-      {"n": "Faraday Future (Los Angeles)", "lat": 34.0522, "lng": -118.2437},
-      {"n": "Sono Motors (München)", "lat": 48.1351, "lng": 11.5820},
-      {"n": "e.GO Mobile (Aachen)", "lat": 50.7753, "lng": 6.0839},
-      {"n": "REE Automotive (Tel Aviv)", "lat": 32.0853, "lng": 34.7818},
-      {"n": "Lightyear (Helmond)", "lat": 51.4827, "lng": 5.6616},
-      {"n": "Aptera Motors (San Diego)", "lat": 32.7157, "lng": -117.1611},
-      {"n": "Aehra (Mailand)", "lat": 45.4654, "lng": 9.1859},
-      {"n": "Volta Trucks (London)", "lat": 51.5074, "lng": -0.1278},
-      {"n": "Mivolt (Genf)", "lat": 46.2044, "lng": 6.1432},
-      {"n": "Nikola Motor (Phoenix)", "lat": 33.4484, "lng": -112.0740},
-      {"n": "Sion (Sono) Solar EV (Schweden Werk)", "lat": 58.5877, "lng": 16.1924}
+      {
+        "n": "Rivian (Normal, Illinois)",
+        "lat": 40.5142,
+        "lng": -88.9906
+      },
+      {
+        "n": "Lucid Motors (Newark, California)",
+        "lat": 37.5296,
+        "lng": -122.0402
+      },
+      {
+        "n": "Fisker Inc. (Manhattan Beach, CA)",
+        "lat": 33.8845,
+        "lng": -118.4098
+      },
+      {
+        "n": "Polestar HQ (Gothenburg)",
+        "lat": 57.7089,
+        "lng": 11.9746
+      },
+      {
+        "n": "Canoo (Bentonville, Arkansas)",
+        "lat": 36.3729,
+        "lng": -94.2088
+      },
+      {
+        "n": "Arrival (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "NIO (Hefei)",
+        "lat": 31.8639,
+        "lng": 117.2808
+      },
+      {
+        "n": "Xpeng (Guangzhou)",
+        "lat": 23.1291,
+        "lng": 113.2644
+      },
+      {
+        "n": "Li Auto (Peking)",
+        "lat": 39.9042,
+        "lng": 116.4074
+      },
+      {
+        "n": "Faraday Future (Los Angeles)",
+        "lat": 34.0522,
+        "lng": -118.2437
+      },
+      {
+        "n": "Sono Motors (München)",
+        "lat": 48.1351,
+        "lng": 11.582
+      },
+      {
+        "n": "e.GO Mobile (Aachen)",
+        "lat": 50.7753,
+        "lng": 6.0839
+      },
+      {
+        "n": "REE Automotive (Tel Aviv)",
+        "lat": 32.0853,
+        "lng": 34.7818
+      },
+      {
+        "n": "Lightyear (Helmond)",
+        "lat": 51.4827,
+        "lng": 5.6616
+      },
+      {
+        "n": "Aptera Motors (San Diego)",
+        "lat": 32.7157,
+        "lng": -117.1611
+      },
+      {
+        "n": "Aehra (Mailand)",
+        "lat": 45.4654,
+        "lng": 9.1859
+      },
+      {
+        "n": "Volta Trucks (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Mivolt (Genf)",
+        "lat": 46.2044,
+        "lng": 6.1432
+      },
+      {
+        "n": "Nikola Motor (Phoenix)",
+        "lat": 33.4484,
+        "lng": -112.074
+      },
+      {
+        "n": "Sion (Sono) Solar EV (Schweden Werk)",
+        "lat": 58.5877,
+        "lng": 16.1924
+      }
     ]
   },
   "ladeparks": {
     "prompt": "Wo befindet sich dieser bedeutende Ladepark?",
     "items": [
-      {"n": "Ionity Ladepark Lohfelden (A7)", "lat": 51.2786, "lng": 9.5529},
-      {"n": "Ionity Ladepark Wien Süd (A2)", "lat": 48.1100, "lng": 16.3200},
-      {"n": "Ionity Ladepark Brüssel (E40)", "lat": 50.8503, "lng": 4.3517},
-      {"n": "EnBW HPC-Park Stuttgart (A8)", "lat": 48.7458, "lng": 9.1057},
-      {"n": "EnBW Ladepark München Nord (A9)", "lat": 48.2566, "lng": 11.7125},
-      {"n": "Tesla Supercharger Berlin Mitte", "lat": 52.5200, "lng": 13.4050},
-      {"n": "Tesla Supercharger Köln", "lat": 50.9333, "lng": 6.9500},
-      {"n": "Fastned Ladestation Amsterdam", "lat": 52.3676, "lng": 4.9041},
-      {"n": "Osprey EV Hub (Bristol, UK)", "lat": 51.4545, "lng": -2.5879},
-      {"n": "Allego Ladepark Rotterdam", "lat": 51.9225, "lng": 4.4792},
-      {"n": "Aral Pulse Ladepark Hamburg (A1)", "lat": 53.5753, "lng": 10.0153},
-      {"n": "Shell Recharge (Amsterdam Südost)", "lat": 52.3099, "lng": 4.9450},
-      {"n": "REWE Ladepark (Nürnberg)", "lat": 49.4521, "lng": 11.0767},
-      {"n": "Tank & Rast HPC (Frankfurt A5)", "lat": 50.0600, "lng": 8.5800},
-      {"n": "Ionity Madrid (E-5/E-90)", "lat": 40.4168, "lng": -3.7038},
-      {"n": "Ionity Paris Rungis (A6)", "lat": 48.7459, "lng": 2.3572},
-      {"n": "Gridserve Electric Forecourt (Braintree)", "lat": 51.8781, "lng": 0.5698},
-      {"n": "Electrify America Hub (Los Angeles)", "lat": 34.0522, "lng": -118.2437},
-      {"n": "ChargePoint Station (San Francisco)", "lat": 37.7749, "lng": -122.4194},
-      {"n": "Blink Charging Hub (New York)", "lat": 40.7128, "lng": -74.0060}
+      {
+        "n": "Ionity Ladepark Lohfelden (A7)",
+        "lat": 51.2786,
+        "lng": 9.5529
+      },
+      {
+        "n": "Ionity Ladepark Wien Süd (A2)",
+        "lat": 48.11,
+        "lng": 16.32
+      },
+      {
+        "n": "Ionity Ladepark Brüssel (E40)",
+        "lat": 50.8503,
+        "lng": 4.3517
+      },
+      {
+        "n": "EnBW HPC-Park Stuttgart (A8)",
+        "lat": 48.7458,
+        "lng": 9.1057
+      },
+      {
+        "n": "EnBW Ladepark München Nord (A9)",
+        "lat": 48.2566,
+        "lng": 11.7125
+      },
+      {
+        "n": "Tesla Supercharger Berlin Mitte",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      {
+        "n": "Tesla Supercharger Köln",
+        "lat": 50.9333,
+        "lng": 6.95
+      },
+      {
+        "n": "Fastned Ladestation Amsterdam",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      {
+        "n": "Osprey EV Hub (Bristol, UK)",
+        "lat": 51.4545,
+        "lng": -2.5879
+      },
+      {
+        "n": "Allego Ladepark Rotterdam",
+        "lat": 51.9225,
+        "lng": 4.4792
+      },
+      {
+        "n": "Aral Pulse Ladepark Hamburg (A1)",
+        "lat": 53.5753,
+        "lng": 10.0153
+      },
+      {
+        "n": "Shell Recharge (Amsterdam Südost)",
+        "lat": 52.3099,
+        "lng": 4.945
+      },
+      {
+        "n": "REWE Ladepark (Nürnberg)",
+        "lat": 49.4521,
+        "lng": 11.0767
+      },
+      {
+        "n": "Tank & Rast HPC (Frankfurt A5)",
+        "lat": 50.06,
+        "lng": 8.58
+      },
+      {
+        "n": "Ionity Madrid (E-5/E-90)",
+        "lat": 40.4168,
+        "lng": -3.7038
+      },
+      {
+        "n": "Ionity Paris Rungis (A6)",
+        "lat": 48.7459,
+        "lng": 2.3572
+      },
+      {
+        "n": "Gridserve Electric Forecourt (Braintree)",
+        "lat": 51.8781,
+        "lng": 0.5698
+      },
+      {
+        "n": "Electrify America Hub (Los Angeles)",
+        "lat": 34.0522,
+        "lng": -118.2437
+      },
+      {
+        "n": "ChargePoint Station (San Francisco)",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "n": "Blink Charging Hub (New York)",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      {
+        "n": "Ionity München",
+        "lat": 48.14,
+        "lng": 11.58
+      },
+      {
+        "n": "Ionity Frankfurt Hub",
+        "lat": 50.11,
+        "lng": 8.68
+      },
+      {
+        "n": "EVgo Hub Los Angeles",
+        "lat": 34.05,
+        "lng": -118.24
+      },
+      {
+        "n": "Blink Network Chicago",
+        "lat": 41.88,
+        "lng": -87.63
+      },
+      {
+        "n": "State Grid Beijing Fast Charge",
+        "lat": 39.91,
+        "lng": 116.39
+      },
+      {
+        "n": "TELD Shenzhen Schnelllader",
+        "lat": 22.54,
+        "lng": 114.06
+      },
+      {
+        "n": "Volkswagen HPC Hamburg",
+        "lat": 53.55,
+        "lng": 9.99
+      },
+      {
+        "n": "APCOA Stuttgart Parkhaus EV",
+        "lat": 48.78,
+        "lng": 9.18
+      },
+      {
+        "n": "BP Pulse Birmingham Hub",
+        "lat": 52.49,
+        "lng": -1.9
+      },
+      {
+        "n": "Pod Point London Fleet",
+        "lat": 51.5,
+        "lng": -0.12
+      },
+      {
+        "n": "Mer Charging Oslo Hub",
+        "lat": 59.91,
+        "lng": 10.74
+      },
+      {
+        "n": "Recharge Stockholm",
+        "lat": 59.33,
+        "lng": 18.07
+      },
+      {
+        "n": "Greenwheels Den Haag",
+        "lat": 52.08,
+        "lng": 4.31
+      },
+      {
+        "n": "Enel X Roma Hub",
+        "lat": 41.89,
+        "lng": 12.49
+      },
+      {
+        "n": "Ionity Paris Hub",
+        "lat": 48.86,
+        "lng": 2.35
+      },
+      {
+        "n": "Fastned Antwerpen",
+        "lat": 51.22,
+        "lng": 4.41
+      },
+      {
+        "n": "Tesla Supercharger Wien",
+        "lat": 48.2,
+        "lng": 16.37
+      },
+      {
+        "n": "ChargePoint Zürich",
+        "lat": 47.38,
+        "lng": 8.54
+      },
+      {
+        "n": "Mer Charging Stockholm North",
+        "lat": 59.45,
+        "lng": 18.1
+      },
+      {
+        "n": "Recharge Copenhagen",
+        "lat": 55.68,
+        "lng": 12.57
+      }
     ]
   },
   "lithium": {
     "prompt": "Wo befindet sich dieses bedeutende Lithiumvorkommen oder -bergwerk?",
     "items": [
-      {"n": "Salar de Atacama (Chile)", "lat": -23.5000, "lng": -68.2500},
-      {"n": "Salar del Hombre Muerto (Argentinien)", "lat": -26.2000, "lng": -67.0000},
-      {"n": "Salar de Uyuni (Bolivien)", "lat": -20.1338, "lng": -67.4891},
-      {"n": "Pilbara-Region (Westaustralien)", "lat": -22.3333, "lng": 117.1667},
-      {"n": "Greenbushes Lithium Mine (WA, Australien)", "lat": -33.8531, "lng": 116.0576},
-      {"n": "Jiangxi-Provinz (China)", "lat": 27.6150, "lng": 115.9175},
-      {"n": "Kings Mountain (North Carolina, USA)", "lat": 35.2420, "lng": -81.3409},
-      {"n": "Silver Peak (Nevada, USA)", "lat": 37.7628, "lng": -117.6303},
-      {"n": "Thacker Pass (Nevada, USA)", "lat": 41.8050, "lng": -118.0360},
-      {"n": "Wolfsberg Lithium Projekt (Österreich)", "lat": 46.8667, "lng": 14.9167},
-      {"n": "Cornish Lithium (Cornwall, UK)", "lat": 50.2660, "lng": -5.0527},
-      {"n": "Rincon-Projekt (Argentinien)", "lat": -23.1300, "lng": -67.1200},
-      {"n": "Lithium Americas (Caucharí-Olaroz)", "lat": -23.9833, "lng": -66.7500},
-      {"n": "Manono-Projekt (DR Kongo)", "lat": -7.3000, "lng": 27.4167},
-      {"n": "Bikita Lithium (Simbabwe)", "lat": -20.1000, "lng": 31.3000},
-      {"n": "James Bay-Projekt (Quebec, Kanada)", "lat": 53.4500, "lng": -78.0000},
-      {"n": "Sepiddasht Lithium (Iran)", "lat": 35.0000, "lng": 48.0000},
-      {"n": "Serbia Jadar Projekt (Serbien)", "lat": 44.3167, "lng": 19.5167},
-      {"n": "SQM Lithiumwerk (Antofagasta)", "lat": -23.6500, "lng": -70.3960},
-      {"n": "Albemarle Silver Peak Mine", "lat": 37.7628, "lng": -117.6303}
+      {
+        "n": "Salar de Atacama (Chile)",
+        "lat": -23.5,
+        "lng": -68.25
+      },
+      {
+        "n": "Salar del Hombre Muerto (Argentinien)",
+        "lat": -26.2,
+        "lng": -67.0
+      },
+      {
+        "n": "Salar de Uyuni (Bolivien)",
+        "lat": -20.1338,
+        "lng": -67.4891
+      },
+      {
+        "n": "Pilbara-Region (Westaustralien)",
+        "lat": -22.3333,
+        "lng": 117.1667
+      },
+      {
+        "n": "Greenbushes Lithium Mine (WA, Australien)",
+        "lat": -33.8531,
+        "lng": 116.0576
+      },
+      {
+        "n": "Jiangxi-Provinz (China)",
+        "lat": 27.615,
+        "lng": 115.9175
+      },
+      {
+        "n": "Kings Mountain (North Carolina, USA)",
+        "lat": 35.242,
+        "lng": -81.3409
+      },
+      {
+        "n": "Silver Peak (Nevada, USA)",
+        "lat": 37.7628,
+        "lng": -117.6303
+      },
+      {
+        "n": "Thacker Pass (Nevada, USA)",
+        "lat": 41.805,
+        "lng": -118.036
+      },
+      {
+        "n": "Wolfsberg Lithium Projekt (Österreich)",
+        "lat": 46.8667,
+        "lng": 14.9167
+      },
+      {
+        "n": "Cornish Lithium (Cornwall, UK)",
+        "lat": 50.266,
+        "lng": -5.0527
+      },
+      {
+        "n": "Rincon-Projekt (Argentinien)",
+        "lat": -23.13,
+        "lng": -67.12
+      },
+      {
+        "n": "Lithium Americas (Caucharí-Olaroz)",
+        "lat": -23.9833,
+        "lng": -66.75
+      },
+      {
+        "n": "Manono-Projekt (DR Kongo)",
+        "lat": -7.3,
+        "lng": 27.4167
+      },
+      {
+        "n": "Bikita Lithium (Simbabwe)",
+        "lat": -20.1,
+        "lng": 31.3
+      },
+      {
+        "n": "James Bay-Projekt (Quebec, Kanada)",
+        "lat": 53.45,
+        "lng": -78.0
+      },
+      {
+        "n": "Sepiddasht Lithium (Iran)",
+        "lat": 35.0,
+        "lng": 48.0
+      },
+      {
+        "n": "Serbia Jadar Projekt (Serbien)",
+        "lat": 44.3167,
+        "lng": 19.5167
+      },
+      {
+        "n": "SQM Lithiumwerk (Antofagasta)",
+        "lat": -23.65,
+        "lng": -70.396
+      },
+      {
+        "n": "Albemarle Silver Peak Mine",
+        "lat": 37.7628,
+        "lng": -117.6303
+      }
     ]
   },
   "historische_werke": {
     "prompt": "Wo fand dieser historische Meilenstein der Elektromobilität statt?",
     "items": [
-      {"n": "Erstes Elektroauto (La Jamais Contente, Paris 1899)", "lat": 48.8566, "lng": 2.3522},
-      {"n": "GM EV1 Entwicklung (Warren, Michigan)", "lat": 42.4912, "lng": -83.0178},
-      {"n": "Toyota Prius Entwicklung (Toyota City)", "lat": 35.0839, "lng": 137.1563},
-      {"n": "Tesla Roadster Ursprung (San Carlos, CA)", "lat": 37.5070, "lng": -122.2605},
-      {"n": "Nissan Leaf Werk (Oppama, Japan)", "lat": 35.2547, "lng": 139.6797},
-      {"n": "Renault Zoe Produktion (Flins)", "lat": 48.9714, "lng": 1.8553},
-      {"n": "Detroit Electric Fabrik (Detroit)", "lat": 42.3314, "lng": -83.0458},
-      {"n": "Lohner-Porsche Erstes Hybridauto (Wien 1900)", "lat": 48.2082, "lng": 16.3738},
-      {"n": "Baker Electric Fabrik (Cleveland)", "lat": 41.4993, "lng": -81.6944},
-      {"n": "Ford Mustang Mach-E Launch (Detroit 2019)", "lat": 42.3314, "lng": -83.0458},
-      {"n": "BMW i3 Werk Leipzig", "lat": 51.3397, "lng": 12.3731},
-      {"n": "Volkswagen ID.3 Start (Zwickau)", "lat": 50.7184, "lng": 12.4966},
-      {"n": "BYD erstes Fahrzeug (Xian)", "lat": 34.3416, "lng": 108.9398},
-      {"n": "Mitsubishi iMiEV Werk (Okazaki)", "lat": 34.9532, "lng": 137.1684},
-      {"n": "ZAP Electric Vehicles (Santa Rosa, CA)", "lat": 38.4404, "lng": -122.7144},
-      {"n": "Erste E-Bus-Linie (Bratislava 1901)", "lat": 48.1486, "lng": 17.1077},
-      {"n": "REVA Electric Car (Bangalore)", "lat": 12.9716, "lng": 77.5946},
-      {"n": "Citroen Berlingo Electrique (Paris)", "lat": 48.8566, "lng": 2.3522},
-      {"n": "Peugeot iOn Werk (Trnava, Slowakei)", "lat": 48.3770, "lng": 17.5860},
-      {"n": "Think City EV Werk (Aurskog, Norwegen)", "lat": 59.9139, "lng": 11.1539}
+      {
+        "n": "Erstes Elektroauto (La Jamais Contente, Paris 1899)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "GM EV1 Entwicklung (Warren, Michigan)",
+        "lat": 42.4912,
+        "lng": -83.0178
+      },
+      {
+        "n": "Toyota Prius Entwicklung (Toyota City)",
+        "lat": 35.0839,
+        "lng": 137.1563
+      },
+      {
+        "n": "Tesla Roadster Ursprung (San Carlos, CA)",
+        "lat": 37.507,
+        "lng": -122.2605
+      },
+      {
+        "n": "Nissan Leaf Werk (Oppama, Japan)",
+        "lat": 35.2547,
+        "lng": 139.6797
+      },
+      {
+        "n": "Renault Zoe Produktion (Flins)",
+        "lat": 48.9714,
+        "lng": 1.8553
+      },
+      {
+        "n": "Detroit Electric Fabrik (Detroit)",
+        "lat": 42.3314,
+        "lng": -83.0458
+      },
+      {
+        "n": "Lohner-Porsche Erstes Hybridauto (Wien 1900)",
+        "lat": 48.2082,
+        "lng": 16.3738
+      },
+      {
+        "n": "Baker Electric Fabrik (Cleveland)",
+        "lat": 41.4993,
+        "lng": -81.6944
+      },
+      {
+        "n": "Ford Mustang Mach-E Launch (Detroit 2019)",
+        "lat": 42.3314,
+        "lng": -83.0458
+      },
+      {
+        "n": "BMW i3 Werk Leipzig",
+        "lat": 51.3397,
+        "lng": 12.3731
+      },
+      {
+        "n": "Volkswagen ID.3 Start (Zwickau)",
+        "lat": 50.7184,
+        "lng": 12.4966
+      },
+      {
+        "n": "BYD erstes Fahrzeug (Xian)",
+        "lat": 34.3416,
+        "lng": 108.9398
+      },
+      {
+        "n": "Mitsubishi iMiEV Werk (Okazaki)",
+        "lat": 34.9532,
+        "lng": 137.1684
+      },
+      {
+        "n": "ZAP Electric Vehicles (Santa Rosa, CA)",
+        "lat": 38.4404,
+        "lng": -122.7144
+      },
+      {
+        "n": "Erste E-Bus-Linie (Bratislava 1901)",
+        "lat": 48.1486,
+        "lng": 17.1077
+      },
+      {
+        "n": "REVA Electric Car (Bangalore)",
+        "lat": 12.9716,
+        "lng": 77.5946
+      },
+      {
+        "n": "Citroen Berlingo Electrique (Paris)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "Peugeot iOn Werk (Trnava, Slowakei)",
+        "lat": 48.377,
+        "lng": 17.586
+      },
+      {
+        "n": "Think City EV Werk (Aurskog, Norwegen)",
+        "lat": 59.9139,
+        "lng": 11.1539
+      }
     ]
   },
   "formel_e": {
     "prompt": "In welcher Stadt findet dieser Formel-E-ePrix statt?",
     "items": [
-      {"n": "ePrix Berlin (Tempelhof)", "lat": 52.4728, "lng": 13.4040},
-      {"n": "ePrix Monaco", "lat": 43.7384, "lng": 7.4246},
-      {"n": "ePrix New York City", "lat": 40.6604, "lng": -74.0204},
-      {"n": "ePrix London (ExCeL)", "lat": 51.5077, "lng": 0.0362},
-      {"n": "ePrix Diriyah (Riad)", "lat": 24.7136, "lng": 46.6753},
-      {"n": "ePrix São Paulo", "lat": -23.5505, "lng": -46.6333},
-      {"n": "ePrix Mexiko-Stadt", "lat": 19.4326, "lng": -99.1332},
-      {"n": "ePrix Hongkong", "lat": 22.3193, "lng": 114.1694},
-      {"n": "ePrix Santiago de Chile", "lat": -33.4489, "lng": -70.6693},
-      {"n": "ePrix Jakarta", "lat": -6.2088, "lng": 106.8456},
-      {"n": "ePrix Misano (San Marino)", "lat": 43.9553, "lng": 12.6913},
-      {"n": "ePrix Marrakesh", "lat": 31.6295, "lng": -7.9811},
-      {"n": "ePrix Tokio", "lat": 35.6762, "lng": 139.6503},
-      {"n": "ePrix Portland", "lat": 45.5051, "lng": -122.6750},
-      {"n": "ePrix Seoul", "lat": 37.5665, "lng": 126.9780},
-      {"n": "ePrix Rom (EUR)", "lat": 41.8305, "lng": 12.4677},
-      {"n": "ePrix Zürich (2018)", "lat": 47.3769, "lng": 8.5417},
-      {"n": "ePrix Paris (Les Invalides)", "lat": 48.8566, "lng": 2.3522},
-      {"n": "ePrix Buenos Aires", "lat": -34.6037, "lng": -58.3816},
-      {"n": "ePrix Kapstadt", "lat": -33.9249, "lng": 18.4241}
+      {
+        "n": "ePrix Berlin (Tempelhof)",
+        "lat": 52.4728,
+        "lng": 13.404
+      },
+      {
+        "n": "ePrix Monaco",
+        "lat": 43.7384,
+        "lng": 7.4246
+      },
+      {
+        "n": "ePrix New York City",
+        "lat": 40.6604,
+        "lng": -74.0204
+      },
+      {
+        "n": "ePrix London (ExCeL)",
+        "lat": 51.5077,
+        "lng": 0.0362
+      },
+      {
+        "n": "ePrix Diriyah (Riad)",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      {
+        "n": "ePrix São Paulo",
+        "lat": -23.5505,
+        "lng": -46.6333
+      },
+      {
+        "n": "ePrix Mexiko-Stadt",
+        "lat": 19.4326,
+        "lng": -99.1332
+      },
+      {
+        "n": "ePrix Hongkong",
+        "lat": 22.3193,
+        "lng": 114.1694
+      },
+      {
+        "n": "ePrix Santiago de Chile",
+        "lat": -33.4489,
+        "lng": -70.6693
+      },
+      {
+        "n": "ePrix Jakarta",
+        "lat": -6.2088,
+        "lng": 106.8456
+      },
+      {
+        "n": "ePrix Misano (San Marino)",
+        "lat": 43.9553,
+        "lng": 12.6913
+      },
+      {
+        "n": "ePrix Marrakesh",
+        "lat": 31.6295,
+        "lng": -7.9811
+      },
+      {
+        "n": "ePrix Tokio",
+        "lat": 35.6762,
+        "lng": 139.6503
+      },
+      {
+        "n": "ePrix Portland",
+        "lat": 45.5051,
+        "lng": -122.675
+      },
+      {
+        "n": "ePrix Seoul",
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      {
+        "n": "ePrix Rom (EUR)",
+        "lat": 41.8305,
+        "lng": 12.4677
+      },
+      {
+        "n": "ePrix Zürich (2018)",
+        "lat": 47.3769,
+        "lng": 8.5417
+      },
+      {
+        "n": "ePrix Paris (Les Invalides)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "ePrix Buenos Aires",
+        "lat": -34.6037,
+        "lng": -58.3816
+      },
+      {
+        "n": "ePrix Kapstadt",
+        "lat": -33.9249,
+        "lng": 18.4241
+      }
     ]
   },
   "solarparks": {
     "prompt": "Wo befindet sich dieser bedeutende Solarpark?",
     "items": [
-      {"n": "Bhadla Solar Park (Rajasthan, Indien)", "lat": 27.5420, "lng": 71.9168},
-      {"n": "Huanghe Hydropower Golmud Solar (Qinghai)", "lat": 36.4072, "lng": 95.2068},
-      {"n": "Pavagada Solar Park (Karnataka, Indien)", "lat": 14.1042, "lng": 77.2795},
-      {"n": "Mohammed Bin Rashid Al Maktoum Solar (Dubai)", "lat": 24.7136, "lng": 55.2796},
-      {"n": "Benban Solar Park (Ägypten)", "lat": 24.4667, "lng": 32.7333},
-      {"n": "Tengger Desert Solar Park (Ningxia)", "lat": 37.3200, "lng": 105.1800},
-      {"n": "Kurnool Ultra Mega Solar (Andhra Pradesh)", "lat": 15.8281, "lng": 78.0373},
-      {"n": "Noor Abu Dhabi (VAE)", "lat": 24.0002, "lng": 53.7002},
-      {"n": "Longyangxia Dam Solar Park (Qinghai)", "lat": 36.1200, "lng": 100.8900},
-      {"n": "Solar Star (Kern County, California)", "lat": 35.0917, "lng": -117.9050},
-      {"n": "Topaz Solar Farm (San Luis Obispo, CA)", "lat": 35.3622, "lng": -119.8589},
-      {"n": "Villanueva Solar (Coahuila, Mexiko)", "lat": 26.0500, "lng": -102.7333},
-      {"n": "Sweihan Solar Farm (Abu Dhabi)", "lat": 24.0830, "lng": 55.4970},
-      {"n": "Hornsdale Wind+Solar (South Australia)", "lat": -33.0744, "lng": 138.3925},
-      {"n": "Solarpark Witznitz (Sachsen)", "lat": 51.2167, "lng": 12.3833},
-      {"n": "Solarpark Neuhardenberg (Brandenburg)", "lat": 52.5889, "lng": 14.2447},
-      {"n": "Cestas Solar Farm (Gironde, Frankreich)", "lat": 44.6800, "lng": -0.7167},
-      {"n": "Nyngan Solar Plant (NSW, Australien)", "lat": -31.5571, "lng": 147.1944},
-      {"n": "Atacama Desert Solar (Chile)", "lat": -22.4667, "lng": -68.9333},
-      {"n": "Al Shams Solar (Abu Dhabi)", "lat": 23.7270, "lng": 53.7300}
+      {
+        "n": "Bhadla Solar Park (Rajasthan, Indien)",
+        "lat": 27.542,
+        "lng": 71.9168
+      },
+      {
+        "n": "Huanghe Hydropower Golmud Solar (Qinghai)",
+        "lat": 36.4072,
+        "lng": 95.2068
+      },
+      {
+        "n": "Pavagada Solar Park (Karnataka, Indien)",
+        "lat": 14.1042,
+        "lng": 77.2795
+      },
+      {
+        "n": "Mohammed Bin Rashid Al Maktoum Solar (Dubai)",
+        "lat": 24.7136,
+        "lng": 55.2796
+      },
+      {
+        "n": "Benban Solar Park (Ägypten)",
+        "lat": 24.4667,
+        "lng": 32.7333
+      },
+      {
+        "n": "Tengger Desert Solar Park (Ningxia)",
+        "lat": 37.32,
+        "lng": 105.18
+      },
+      {
+        "n": "Kurnool Ultra Mega Solar (Andhra Pradesh)",
+        "lat": 15.8281,
+        "lng": 78.0373
+      },
+      {
+        "n": "Noor Abu Dhabi (VAE)",
+        "lat": 24.0002,
+        "lng": 53.7002
+      },
+      {
+        "n": "Longyangxia Dam Solar Park (Qinghai)",
+        "lat": 36.12,
+        "lng": 100.89
+      },
+      {
+        "n": "Solar Star (Kern County, California)",
+        "lat": 35.0917,
+        "lng": -117.905
+      },
+      {
+        "n": "Topaz Solar Farm (San Luis Obispo, CA)",
+        "lat": 35.3622,
+        "lng": -119.8589
+      },
+      {
+        "n": "Villanueva Solar (Coahuila, Mexiko)",
+        "lat": 26.05,
+        "lng": -102.7333
+      },
+      {
+        "n": "Sweihan Solar Farm (Abu Dhabi)",
+        "lat": 24.083,
+        "lng": 55.497
+      },
+      {
+        "n": "Hornsdale Wind+Solar (South Australia)",
+        "lat": -33.0744,
+        "lng": 138.3925
+      },
+      {
+        "n": "Solarpark Witznitz (Sachsen)",
+        "lat": 51.2167,
+        "lng": 12.3833
+      },
+      {
+        "n": "Solarpark Neuhardenberg (Brandenburg)",
+        "lat": 52.5889,
+        "lng": 14.2447
+      },
+      {
+        "n": "Cestas Solar Farm (Gironde, Frankreich)",
+        "lat": 44.68,
+        "lng": -0.7167
+      },
+      {
+        "n": "Nyngan Solar Plant (NSW, Australien)",
+        "lat": -31.5571,
+        "lng": 147.1944
+      },
+      {
+        "n": "Atacama Desert Solar (Chile)",
+        "lat": -22.4667,
+        "lng": -68.9333
+      },
+      {
+        "n": "Al Shams Solar (Abu Dhabi)",
+        "lat": 23.727,
+        "lng": 53.73
+      }
     ]
   },
   "autonom_tests": {
     "prompt": "Wo werden autonome Fahrzeuge getestet?",
     "items": [
-      {"n": "Waymo One (Phoenix, Arizona)", "lat": 33.4484, "lng": -112.0740},
-      {"n": "MCity Testgelände (University of Michigan)", "lat": 42.2941, "lng": -83.7116},
-      {"n": "Mcity Autonomous Test Zone (Ann Arbor)", "lat": 42.2808, "lng": -83.7430},
-      {"n": "California DMV AV Test (San Francisco)", "lat": 37.7749, "lng": -122.4194},
-      {"n": "Helmond High Tech Automotive Campus (NL)", "lat": 51.4827, "lng": 5.6616},
-      {"n": "CARISSMA Testgelände (Ingolstadt)", "lat": 48.7665, "lng": 11.4258},
-      {"n": "A9 Digitale Testautobahn (Bayern)", "lat": 48.5167, "lng": 11.5500},
-      {"n": "AstaZero Test Track (Schweden)", "lat": 57.7000, "lng": 12.8300},
-      {"n": "Millbrook Proving Ground (UK)", "lat": 52.0046, "lng": -0.4630},
-      {"n": "Proving Ground AVL (Graz)", "lat": 47.0707, "lng": 15.4395},
-      {"n": "Baidu Apollo Testgebiet (Peking)", "lat": 39.9042, "lng": 116.4074},
-      {"n": "GM Cruise (San Francisco)", "lat": 37.7749, "lng": -122.4194},
-      {"n": "Zoox Test (Foster City, CA)", "lat": 37.5535, "lng": -122.0477},
-      {"n": "Mobileye AV Testgebiet (Jerusalem)", "lat": 31.7683, "lng": 35.2137},
-      {"n": "EasyMile Bus (Toulouse)", "lat": 43.6047, "lng": 1.4442},
-      {"n": "Aptiv/Hyundai (Las Vegas CES)", "lat": 36.1699, "lng": -115.1398},
-      {"n": "Toyota Woven City (Susono, Shizuoka)", "lat": 35.1667, "lng": 138.8833},
-      {"n": "NVIDIA HQ Test (Santa Clara)", "lat": 37.3861, "lng": -121.9550},
-      {"n": "DeepRoute.ai Shenzhen", "lat": 22.5431, "lng": 114.0579},
-      {"n": "TuSimple Autonomous Trucks (Tucson)", "lat": 32.2226, "lng": -110.9747}
+      {
+        "n": "Waymo One (Phoenix, Arizona)",
+        "lat": 33.4484,
+        "lng": -112.074
+      },
+      {
+        "n": "MCity Testgelände (University of Michigan)",
+        "lat": 42.2941,
+        "lng": -83.7116
+      },
+      {
+        "n": "Mcity Autonomous Test Zone (Ann Arbor)",
+        "lat": 42.2808,
+        "lng": -83.743
+      },
+      {
+        "n": "California DMV AV Test (San Francisco)",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "n": "Helmond High Tech Automotive Campus (NL)",
+        "lat": 51.4827,
+        "lng": 5.6616
+      },
+      {
+        "n": "CARISSMA Testgelände (Ingolstadt)",
+        "lat": 48.7665,
+        "lng": 11.4258
+      },
+      {
+        "n": "A9 Digitale Testautobahn (Bayern)",
+        "lat": 48.5167,
+        "lng": 11.55
+      },
+      {
+        "n": "AstaZero Test Track (Schweden)",
+        "lat": 57.7,
+        "lng": 12.83
+      },
+      {
+        "n": "Millbrook Proving Ground (UK)",
+        "lat": 52.0046,
+        "lng": -0.463
+      },
+      {
+        "n": "Proving Ground AVL (Graz)",
+        "lat": 47.0707,
+        "lng": 15.4395
+      },
+      {
+        "n": "Baidu Apollo Testgebiet (Peking)",
+        "lat": 39.9042,
+        "lng": 116.4074
+      },
+      {
+        "n": "GM Cruise (San Francisco)",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "n": "Zoox Test (Foster City, CA)",
+        "lat": 37.5535,
+        "lng": -122.0477
+      },
+      {
+        "n": "Mobileye AV Testgebiet (Jerusalem)",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      {
+        "n": "EasyMile Bus (Toulouse)",
+        "lat": 43.6047,
+        "lng": 1.4442
+      },
+      {
+        "n": "Aptiv/Hyundai (Las Vegas CES)",
+        "lat": 36.1699,
+        "lng": -115.1398
+      },
+      {
+        "n": "Toyota Woven City (Susono, Shizuoka)",
+        "lat": 35.1667,
+        "lng": 138.8833
+      },
+      {
+        "n": "NVIDIA HQ Test (Santa Clara)",
+        "lat": 37.3861,
+        "lng": -121.955
+      },
+      {
+        "n": "DeepRoute.ai Shenzhen",
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      {
+        "n": "TuSimple Autonomous Trucks (Tucson)",
+        "lat": 32.2226,
+        "lng": -110.9747
+      }
     ]
   },
   "batterie_forschung": {
     "prompt": "Wo befindet sich dieses Batterie-Forschungsinstitut?",
     "items": [
-      {"n": "Argonne National Lab (Lemont, Illinois)", "lat": 41.7080, "lng": -87.9790},
-      {"n": "Fraunhofer ISE (Freiburg)", "lat": 47.9990, "lng": 7.8421},
-      {"n": "MEET Batterieforschungszentrum (Münster)", "lat": 51.9607, "lng": 7.6261},
-      {"n": "NREL Battery Research (Golden, Colorado)", "lat": 39.7392, "lng": -105.1000},
-      {"n": "IME TU Braunschweig (Batterieforschung)", "lat": 52.2689, "lng": 10.5212},
-      {"n": "Samsung SDI Research (Suwon)", "lat": 37.2636, "lng": 127.0286},
-      {"n": "Panasonic Energy R&D (Osaka)", "lat": 34.6937, "lng": 135.5023},
-      {"n": "MIT Energy Initiative (Cambridge, MA)", "lat": 42.3601, "lng": -71.0942},
-      {"n": "Stanford Precourt Energy (Stanford)", "lat": 37.4274, "lng": -122.1697},
-      {"n": "Oxford Battery Lab (Oxford)", "lat": 51.7520, "lng": -1.2577},
-      {"n": "BATEC Batterie-Zentrum (Ulm)", "lat": 48.4011, "lng": 9.9876},
-      {"n": "IREC Institut (Barcelona)", "lat": 41.3851, "lng": 2.1734},
-      {"n": "ICFO Festkörperbatterien (Castelldefels)", "lat": 41.2757, "lng": 1.9881},
-      {"n": "Toyota Research Institute (Los Altos)", "lat": 37.3861, "lng": -122.1141},
-      {"n": "BYD Forschungszentrum (Shenzhen)", "lat": 22.5431, "lng": 114.0579},
-      {"n": "CATL Research Institute (Ningde)", "lat": 26.6619, "lng": 119.5483},
-      {"n": "German Aerospace Center DLR (Stuttgart)", "lat": 48.7458, "lng": 9.1057},
-      {"n": "Aalborg University Battery Center (Dänemark)", "lat": 57.0488, "lng": 9.9217},
-      {"n": "ISCTE Batterie-Labor (Lissabon)", "lat": 38.7223, "lng": -9.1393},
-      {"n": "NIMS Batterie-Material-Institut (Tsukuba)", "lat": 36.0833, "lng": 140.0764}
+      {
+        "n": "Argonne National Lab (Lemont, Illinois)",
+        "lat": 41.708,
+        "lng": -87.979
+      },
+      {
+        "n": "Fraunhofer ISE (Freiburg)",
+        "lat": 47.999,
+        "lng": 7.8421
+      },
+      {
+        "n": "MEET Batterieforschungszentrum (Münster)",
+        "lat": 51.9607,
+        "lng": 7.6261
+      },
+      {
+        "n": "NREL Battery Research (Golden, Colorado)",
+        "lat": 39.7392,
+        "lng": -105.1
+      },
+      {
+        "n": "IME TU Braunschweig (Batterieforschung)",
+        "lat": 52.2689,
+        "lng": 10.5212
+      },
+      {
+        "n": "Samsung SDI Research (Suwon)",
+        "lat": 37.2636,
+        "lng": 127.0286
+      },
+      {
+        "n": "Panasonic Energy R&D (Osaka)",
+        "lat": 34.6937,
+        "lng": 135.5023
+      },
+      {
+        "n": "MIT Energy Initiative (Cambridge, MA)",
+        "lat": 42.3601,
+        "lng": -71.0942
+      },
+      {
+        "n": "Stanford Precourt Energy (Stanford)",
+        "lat": 37.4274,
+        "lng": -122.1697
+      },
+      {
+        "n": "Oxford Battery Lab (Oxford)",
+        "lat": 51.752,
+        "lng": -1.2577
+      },
+      {
+        "n": "BATEC Batterie-Zentrum (Ulm)",
+        "lat": 48.4011,
+        "lng": 9.9876
+      },
+      {
+        "n": "IREC Institut (Barcelona)",
+        "lat": 41.3851,
+        "lng": 2.1734
+      },
+      {
+        "n": "ICFO Festkörperbatterien (Castelldefels)",
+        "lat": 41.2757,
+        "lng": 1.9881
+      },
+      {
+        "n": "Toyota Research Institute (Los Altos)",
+        "lat": 37.3861,
+        "lng": -122.1141
+      },
+      {
+        "n": "BYD Forschungszentrum (Shenzhen)",
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      {
+        "n": "CATL Research Institute (Ningde)",
+        "lat": 26.6619,
+        "lng": 119.5483
+      },
+      {
+        "n": "German Aerospace Center DLR (Stuttgart)",
+        "lat": 48.7458,
+        "lng": 9.1057
+      },
+      {
+        "n": "Aalborg University Battery Center (Dänemark)",
+        "lat": 57.0488,
+        "lng": 9.9217
+      },
+      {
+        "n": "ISCTE Batterie-Labor (Lissabon)",
+        "lat": 38.7223,
+        "lng": -9.1393
+      },
+      {
+        "n": "NIMS Batterie-Material-Institut (Tsukuba)",
+        "lat": 36.0833,
+        "lng": 140.0764
+      }
     ]
   },
   "ev_dichte_staedte": {
     "prompt": "Diese Stadt hat eine der höchsten EV-Dichten weltweit — wo liegt sie?",
     "items": [
-      {"n": "Oslo (weltweiter EV-Anteil-Rekord)", "lat": 59.9139, "lng": 10.7522},
-      {"n": "Bergen (Norwegen)", "lat": 60.3913, "lng": 5.3221},
-      {"n": "Amsterdam (Niederlande)", "lat": 52.3676, "lng": 4.9041},
-      {"n": "Shenzhen (100% E-Busse)", "lat": 22.5431, "lng": 114.0579},
-      {"n": "San Jose (Silicon Valley)", "lat": 37.3382, "lng": -121.8863},
-      {"n": "Stockholm (Schweden)", "lat": 59.3293, "lng": 18.0686},
-      {"n": "Stavanger (Norwegen)", "lat": 58.9700, "lng": 5.7331},
-      {"n": "München (Deutschland)", "lat": 48.1351, "lng": 11.5820},
-      {"n": "Trondheim (Norwegen)", "lat": 63.4305, "lng": 10.3951},
-      {"n": "Peking (E-Taxis, E-Busse)", "lat": 39.9042, "lng": 116.4074},
-      {"n": "Kopenhagen (Dänemark)", "lat": 55.6761, "lng": 12.5683},
-      {"n": "Zürich (Schweiz)", "lat": 47.3769, "lng": 8.5417},
-      {"n": "Rotterdam (Niederlande)", "lat": 51.9225, "lng": 4.4792},
-      {"n": "Seoul (Südkorea)", "lat": 37.5665, "lng": 126.9780},
-      {"n": "Helsinki (Finnland)", "lat": 60.1699, "lng": 24.9384},
-      {"n": "Berlin (Deutschland)", "lat": 52.5200, "lng": 13.4050},
-      {"n": "Portland, Oregon (USA)", "lat": 45.5051, "lng": -122.6750},
-      {"n": "Hangzhou (China EV-Boom)", "lat": 30.2741, "lng": 120.1551},
-      {"n": "Wien (Österreich)", "lat": 48.2082, "lng": 16.3738},
-      {"n": "Vancouver (Kanada)", "lat": 49.2827, "lng": -123.1207}
+      {
+        "n": "Oslo (weltweiter EV-Anteil-Rekord)",
+        "lat": 59.9139,
+        "lng": 10.7522
+      },
+      {
+        "n": "Bergen (Norwegen)",
+        "lat": 60.3913,
+        "lng": 5.3221
+      },
+      {
+        "n": "Amsterdam (Niederlande)",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      {
+        "n": "Shenzhen (100% E-Busse)",
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      {
+        "n": "San Jose (Silicon Valley)",
+        "lat": 37.3382,
+        "lng": -121.8863
+      },
+      {
+        "n": "Stockholm (Schweden)",
+        "lat": 59.3293,
+        "lng": 18.0686
+      },
+      {
+        "n": "Stavanger (Norwegen)",
+        "lat": 58.97,
+        "lng": 5.7331
+      },
+      {
+        "n": "München (Deutschland)",
+        "lat": 48.1351,
+        "lng": 11.582
+      },
+      {
+        "n": "Trondheim (Norwegen)",
+        "lat": 63.4305,
+        "lng": 10.3951
+      },
+      {
+        "n": "Peking (E-Taxis, E-Busse)",
+        "lat": 39.9042,
+        "lng": 116.4074
+      },
+      {
+        "n": "Kopenhagen (Dänemark)",
+        "lat": 55.6761,
+        "lng": 12.5683
+      },
+      {
+        "n": "Zürich (Schweiz)",
+        "lat": 47.3769,
+        "lng": 8.5417
+      },
+      {
+        "n": "Rotterdam (Niederlande)",
+        "lat": 51.9225,
+        "lng": 4.4792
+      },
+      {
+        "n": "Seoul (Südkorea)",
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      {
+        "n": "Helsinki (Finnland)",
+        "lat": 60.1699,
+        "lng": 24.9384
+      },
+      {
+        "n": "Berlin (Deutschland)",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      {
+        "n": "Portland, Oregon (USA)",
+        "lat": 45.5051,
+        "lng": -122.675
+      },
+      {
+        "n": "Hangzhou (China EV-Boom)",
+        "lat": 30.2741,
+        "lng": 120.1551
+      },
+      {
+        "n": "Wien (Österreich)",
+        "lat": 48.2082,
+        "lng": 16.3738
+      },
+      {
+        "n": "Vancouver (Kanada)",
+        "lat": 49.2827,
+        "lng": -123.1207
+      }
     ]
   },
   "recycling": {
     "prompt": "Wo befindet sich diese EV-Batterie-Recyclinganlage?",
     "items": [
-      {"n": "Redwood Materials (Carson City, Nevada)", "lat": 39.1638, "lng": -119.7674},
-      {"n": "Li-Cycle (Rochester, New York)", "lat": 43.1566, "lng": -77.6088},
-      {"n": "Umicore Batterie-Recycling (Hoboken, Belgien)", "lat": 51.1781, "lng": 4.3458},
-      {"n": "Volkswagen Recycling-Pilot (Salzgitter)", "lat": 52.1522, "lng": 10.3365},
-      {"n": "Retriev Technologies (Lancaster, Ohio)", "lat": 39.7137, "lng": -82.5993},
-      {"n": "BMW Batterie-Recycling (Leipzig)", "lat": 51.3397, "lng": 12.3731},
-      {"n": "Renault Re-Factory (Flins)", "lat": 48.9714, "lng": 1.8553},
-      {"n": "Hydrovolt (Fredrikstad, Norwegen)", "lat": 59.2181, "lng": 10.9298},
-      {"n": "Duesenfeld (Braunschweig)", "lat": 52.2689, "lng": 10.5212},
-      {"n": "GEM (Global E-Waste, Guiyu China)", "lat": 23.3247, "lng": 116.3289},
-      {"n": "Ecobat Solutions (Ellesmere Port, UK)", "lat": 53.2783, "lng": -2.9000},
-      {"n": "Northvolt Labs Recycling (Västerås)", "lat": 59.6099, "lng": 16.5448},
-      {"n": "Toyota Batterie-Recycling (Toyota City)", "lat": 35.0839, "lng": 137.1563},
-      {"n": "Stena Recycling (Göteborg)", "lat": 57.7089, "lng": 11.9746},
-      {"n": "Battery Resources (Worcester, MA)", "lat": 42.2626, "lng": -71.8023},
-      {"n": "Accurec Recycling (Krefeld)", "lat": 51.3388, "lng": 6.5853},
-      {"n": "SungEel HiTech (Gunsan, Südkorea)", "lat": 35.9667, "lng": 126.7167},
-      {"n": "Retriev Anaheim (California)", "lat": 33.8353, "lng": -117.9145},
-      {"n": "CMA (Circular Materials) Toronto", "lat": 43.6532, "lng": -79.3832},
-      {"n": "Ganfeng Lithium Recycling (Xinyu, China)", "lat": 27.8000, "lng": 114.9167}
+      {
+        "n": "Redwood Materials (Carson City, Nevada)",
+        "lat": 39.1638,
+        "lng": -119.7674
+      },
+      {
+        "n": "Li-Cycle (Rochester, New York)",
+        "lat": 43.1566,
+        "lng": -77.6088
+      },
+      {
+        "n": "Umicore Batterie-Recycling (Hoboken, Belgien)",
+        "lat": 51.1781,
+        "lng": 4.3458
+      },
+      {
+        "n": "Volkswagen Recycling-Pilot (Salzgitter)",
+        "lat": 52.1522,
+        "lng": 10.3365
+      },
+      {
+        "n": "Retriev Technologies (Lancaster, Ohio)",
+        "lat": 39.7137,
+        "lng": -82.5993
+      },
+      {
+        "n": "BMW Batterie-Recycling (Leipzig)",
+        "lat": 51.3397,
+        "lng": 12.3731
+      },
+      {
+        "n": "Renault Re-Factory (Flins)",
+        "lat": 48.9714,
+        "lng": 1.8553
+      },
+      {
+        "n": "Hydrovolt (Fredrikstad, Norwegen)",
+        "lat": 59.2181,
+        "lng": 10.9298
+      },
+      {
+        "n": "Duesenfeld (Braunschweig)",
+        "lat": 52.2689,
+        "lng": 10.5212
+      },
+      {
+        "n": "GEM (Global E-Waste, Guiyu China)",
+        "lat": 23.3247,
+        "lng": 116.3289
+      },
+      {
+        "n": "Ecobat Solutions (Ellesmere Port, UK)",
+        "lat": 53.2783,
+        "lng": -2.9
+      },
+      {
+        "n": "Northvolt Labs Recycling (Västerås)",
+        "lat": 59.6099,
+        "lng": 16.5448
+      },
+      {
+        "n": "Toyota Batterie-Recycling (Toyota City)",
+        "lat": 35.0839,
+        "lng": 137.1563
+      },
+      {
+        "n": "Stena Recycling (Göteborg)",
+        "lat": 57.7089,
+        "lng": 11.9746
+      },
+      {
+        "n": "Battery Resources (Worcester, MA)",
+        "lat": 42.2626,
+        "lng": -71.8023
+      },
+      {
+        "n": "Accurec Recycling (Krefeld)",
+        "lat": 51.3388,
+        "lng": 6.5853
+      },
+      {
+        "n": "SungEel HiTech (Gunsan, Südkorea)",
+        "lat": 35.9667,
+        "lng": 126.7167
+      },
+      {
+        "n": "Retriev Anaheim (California)",
+        "lat": 33.8353,
+        "lng": -117.9145
+      },
+      {
+        "n": "CMA (Circular Materials) Toronto",
+        "lat": 43.6532,
+        "lng": -79.3832
+      },
+      {
+        "n": "Ganfeng Lithium Recycling (Xinyu, China)",
+        "lat": 27.8,
+        "lng": 114.9167
+      }
     ]
   },
   "erste_evs": {
     "prompt": "Wo fand dieser Meilenstein der frühen Elektromobilität statt?",
     "items": [
-      {"n": "Gustave Trouvé — Erstes EV der Welt (Paris 1881)", "lat": 48.8566, "lng": 2.3522},
-      {"n": "La Jamais Contente — 100 km/h Rekord (Achères 1899)", "lat": 48.9489, "lng": 2.0667},
-      {"n": "Thomas Parker — Erstes serienprakt. EV (Wolverhampton 1884)", "lat": 52.5862, "lng": -2.1265},
-      {"n": "Charles Jeantaud — E-Rekordfahrten (Paris 1898)", "lat": 48.8566, "lng": 2.3522},
-      {"n": "General Electric Edicraft-Truck (Schenectady 1912)", "lat": 42.8142, "lng": -73.9396},
-      {"n": "Detroit Electric — Serienfertigung (Detroit 1907)", "lat": 42.3314, "lng": -83.0458},
-      {"n": "Baker Electric Torpedo (Cleveland 1902)", "lat": 41.4993, "lng": -81.6944},
-      {"n": "Edison-Speicher Batterietest (Orange, NJ 1910)", "lat": 40.7712, "lng": -74.2329},
-      {"n": "Woods Electric — Doppelmotor (Chicago 1899)", "lat": 41.8781, "lng": -87.6298},
-      {"n": "Lohner-Porsche Mixte (Wien 1900)", "lat": 48.2082, "lng": 16.3738},
-      {"n": "Columbia Electric Runabout (Hartford 1897)", "lat": 41.7658, "lng": -72.6851},
-      {"n": "Studebaker Electric (South Bend 1902)", "lat": 41.6764, "lng": -86.2520},
-      {"n": "Humber Electric Car (Coventry 1896)", "lat": 52.4068, "lng": -1.5197},
-      {"n": "Camille Jenatzy Torpedo (Belgien 1898)", "lat": 50.5039, "lng": 4.4699},
-      {"n": "Morris & Salom Electrobat II (Philadelphia 1894)", "lat": 39.9526, "lng": -75.1652},
-      {"n": "Jeantaud Duc Électrique (Le Mans 1898)", "lat": 47.9942, "lng": 0.1964},
-      {"n": "NADA Erste E-Taxi-Flotte (New York 1897)", "lat": 40.7128, "lng": -74.0060},
-      {"n": "Riker Electric Motor Car (Brooklyn 1896)", "lat": 40.6501, "lng": -73.9496},
-      {"n": "Pope Manufacturing E-Auto (New Haven 1898)", "lat": 41.3082, "lng": -72.9279},
-      {"n": "Anderson Electric Car Company (Cleveland 1907)", "lat": 41.4993, "lng": -81.6944}
+      {
+        "n": "Gustave Trouvé — Erstes EV der Welt (Paris 1881)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "La Jamais Contente — 100 km/h Rekord (Achères 1899)",
+        "lat": 48.9489,
+        "lng": 2.0667
+      },
+      {
+        "n": "Thomas Parker — Erstes serienprakt. EV (Wolverhampton 1884)",
+        "lat": 52.5862,
+        "lng": -2.1265
+      },
+      {
+        "n": "Charles Jeantaud — E-Rekordfahrten (Paris 1898)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "General Electric Edicraft-Truck (Schenectady 1912)",
+        "lat": 42.8142,
+        "lng": -73.9396
+      },
+      {
+        "n": "Detroit Electric — Serienfertigung (Detroit 1907)",
+        "lat": 42.3314,
+        "lng": -83.0458
+      },
+      {
+        "n": "Baker Electric Torpedo (Cleveland 1902)",
+        "lat": 41.4993,
+        "lng": -81.6944
+      },
+      {
+        "n": "Edison-Speicher Batterietest (Orange, NJ 1910)",
+        "lat": 40.7712,
+        "lng": -74.2329
+      },
+      {
+        "n": "Woods Electric — Doppelmotor (Chicago 1899)",
+        "lat": 41.8781,
+        "lng": -87.6298
+      },
+      {
+        "n": "Lohner-Porsche Mixte (Wien 1900)",
+        "lat": 48.2082,
+        "lng": 16.3738
+      },
+      {
+        "n": "Columbia Electric Runabout (Hartford 1897)",
+        "lat": 41.7658,
+        "lng": -72.6851
+      },
+      {
+        "n": "Studebaker Electric (South Bend 1902)",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      {
+        "n": "Humber Electric Car (Coventry 1896)",
+        "lat": 52.4068,
+        "lng": -1.5197
+      },
+      {
+        "n": "Camille Jenatzy Torpedo (Belgien 1898)",
+        "lat": 50.5039,
+        "lng": 4.4699
+      },
+      {
+        "n": "Morris & Salom Electrobat II (Philadelphia 1894)",
+        "lat": 39.9526,
+        "lng": -75.1652
+      },
+      {
+        "n": "Jeantaud Duc Électrique (Le Mans 1898)",
+        "lat": 47.9942,
+        "lng": 0.1964
+      },
+      {
+        "n": "NADA Erste E-Taxi-Flotte (New York 1897)",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      {
+        "n": "Riker Electric Motor Car (Brooklyn 1896)",
+        "lat": 40.6501,
+        "lng": -73.9496
+      },
+      {
+        "n": "Pope Manufacturing E-Auto (New Haven 1898)",
+        "lat": 41.3082,
+        "lng": -72.9279
+      },
+      {
+        "n": "Anderson Electric Car Company (Cleveland 1907)",
+        "lat": 41.4993,
+        "lng": -81.6944
+      }
     ]
   },
   "roadtrips": {
     "prompt": "Welcher Ladekorridore / EV-Roadtrip-Route führt durch diesen Ort?",
     "items": [
-      {"n": "Route 66 EV Corridor (Chicago-Start)", "lat": 41.8781, "lng": -87.6298},
-      {"n": "Brenner-Korridor (Innsbruck-Ionity)", "lat": 47.2682, "lng": 11.3928},
-      {"n": "E6 Skandinavien-Korridor (Göteborg)", "lat": 57.7089, "lng": 11.9746},
-      {"n": "Autobahn A9 Tesla-Korridor (München)", "lat": 48.1351, "lng": 11.5820},
-      {"n": "Cape Wrath Trail EV (Inverness)", "lat": 57.4796, "lng": -4.2244},
-      {"n": "Pacific Coast Highway EV (San Francisco)", "lat": 37.7749, "lng": -122.4194},
-      {"n": "EV Roadtrip Nordkap (Tromsø)", "lat": 69.6492, "lng": 18.9553},
-      {"n": "Via Baltica Ladeachse (Warschau)", "lat": 52.2297, "lng": 21.0122},
-      {"n": "Alpen-Adria EV Route (Salzburg)", "lat": 47.8095, "lng": 13.0550},
-      {"n": "Florida EV Corridor (Miami)", "lat": 25.7617, "lng": -80.1918},
-      {"n": "The Ghan EV Strecke (Adelaide)", "lat": -34.9285, "lng": 138.6007},
-      {"n": "EV Silk Road (Istanbul)", "lat": 41.0082, "lng": 28.9784},
-      {"n": "Tour de France EV Kurs (Paris)", "lat": 48.8566, "lng": 2.3522},
-      {"n": "Trans-Canada EV Highway (Vancouver)", "lat": 49.2827, "lng": -123.1207},
-      {"n": "Italian EV Coast Route (Neapel)", "lat": 40.8518, "lng": 14.2681},
-      {"n": "Spain E-9 Corridor (Barcelona)", "lat": 41.3851, "lng": 2.1734},
-      {"n": "Green Lane UK (London-Edinburgh)", "lat": 51.5074, "lng": -0.1278},
-      {"n": "Baltic Sea EV Route (Tallinn)", "lat": 59.4370, "lng": 24.7536},
-      {"n": "Black Sea EV Drive (Constanta)", "lat": 44.1598, "lng": 28.6348},
-      {"n": "Mekong Delta EV Path (Hanoi)", "lat": 21.0285, "lng": 105.8542}
+      {
+        "n": "Route 66 EV Corridor (Chicago-Start)",
+        "lat": 41.8781,
+        "lng": -87.6298
+      },
+      {
+        "n": "Brenner-Korridor (Innsbruck-Ionity)",
+        "lat": 47.2682,
+        "lng": 11.3928
+      },
+      {
+        "n": "E6 Skandinavien-Korridor (Göteborg)",
+        "lat": 57.7089,
+        "lng": 11.9746
+      },
+      {
+        "n": "Autobahn A9 Tesla-Korridor (München)",
+        "lat": 48.1351,
+        "lng": 11.582
+      },
+      {
+        "n": "Cape Wrath Trail EV (Inverness)",
+        "lat": 57.4796,
+        "lng": -4.2244
+      },
+      {
+        "n": "Pacific Coast Highway EV (San Francisco)",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "n": "EV Roadtrip Nordkap (Tromsø)",
+        "lat": 69.6492,
+        "lng": 18.9553
+      },
+      {
+        "n": "Via Baltica Ladeachse (Warschau)",
+        "lat": 52.2297,
+        "lng": 21.0122
+      },
+      {
+        "n": "Alpen-Adria EV Route (Salzburg)",
+        "lat": 47.8095,
+        "lng": 13.055
+      },
+      {
+        "n": "Florida EV Corridor (Miami)",
+        "lat": 25.7617,
+        "lng": -80.1918
+      },
+      {
+        "n": "The Ghan EV Strecke (Adelaide)",
+        "lat": -34.9285,
+        "lng": 138.6007
+      },
+      {
+        "n": "EV Silk Road (Istanbul)",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "n": "Tour de France EV Kurs (Paris)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "n": "Trans-Canada EV Highway (Vancouver)",
+        "lat": 49.2827,
+        "lng": -123.1207
+      },
+      {
+        "n": "Italian EV Coast Route (Neapel)",
+        "lat": 40.8518,
+        "lng": 14.2681
+      },
+      {
+        "n": "Spain E-9 Corridor (Barcelona)",
+        "lat": 41.3851,
+        "lng": 2.1734
+      },
+      {
+        "n": "Green Lane UK (London-Edinburgh)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Baltic Sea EV Route (Tallinn)",
+        "lat": 59.437,
+        "lng": 24.7536
+      },
+      {
+        "n": "Black Sea EV Drive (Constanta)",
+        "lat": 44.1598,
+        "lng": 28.6348
+      },
+      {
+        "n": "Mekong Delta EV Path (Hanoi)",
+        "lat": 21.0285,
+        "lng": 105.8542
+      }
     ]
   }
 }

@@ -75,6 +75,102 @@
       {
         "n": "Stein von Rosette",
         "c": "Antike"
+      },
+      {
+        "n": "Çatalhöyük",
+        "c": "Jungsteinzeit"
+      },
+      {
+        "n": "Göbekli Tepe",
+        "c": "Steinzeit"
+      },
+      {
+        "n": "Stonehenge",
+        "c": "Jungsteinzeit"
+      },
+      {
+        "n": "Knossos",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Mykene",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Troja",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Uruk (Mesopotamien)",
+        "c": "Frühbronzezeit"
+      },
+      {
+        "n": "Memphis (Ägypten)",
+        "c": "Frühbronzezeit"
+      },
+      {
+        "n": "Mohenjo-daro",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Teotihuacán",
+        "c": "Antike"
+      },
+      {
+        "n": "Tiwanaku",
+        "c": "Antike"
+      },
+      {
+        "n": "Angkor Wat",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Machu Picchu",
+        "c": "Spätmittelalter"
+      },
+      {
+        "n": "Chichen Itza",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Mesa Verde",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Cahokia",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Pompeji",
+        "c": "Antike"
+      },
+      {
+        "n": "Skara Brae",
+        "c": "Jungsteinzeit"
+      },
+      {
+        "n": "Altamira (Höhle)",
+        "c": "Steinzeit"
+      },
+      {
+        "n": "Lascaux (Höhle)",
+        "c": "Steinzeit"
+      },
+      {
+        "n": "Chauvet-Höhle",
+        "c": "Altsteinzeit"
+      },
+      {
+        "n": "Solutrée",
+        "c": "Altsteinzeit"
+      },
+      {
+        "n": "Grotte de Font-de-Gaume",
+        "c": "Altsteinzeit"
+      },
+      {
+        "n": "Jericho (Tell es-Sultan)",
+        "c": "Jungsteinzeit"
       }
     ]
   },
@@ -162,6 +258,86 @@
       {
         "n": "Steinmetzwerkzeug Dolerit-Pounder",
         "c": "Neolithikum"
+      },
+      {
+        "n": "Knochennadel",
+        "c": "Paläolithikum"
+      },
+      {
+        "n": "Muschelspitze (Burin)",
+        "c": "Paläolithikum"
+      },
+      {
+        "n": "Klingenkern",
+        "c": "Mesolithikum"
+      },
+      {
+        "n": "Mikrolith",
+        "c": "Mesolithikum"
+      },
+      {
+        "n": "Knochenangel",
+        "c": "Mesolithikum"
+      },
+      {
+        "n": "Flachhacke aus Geweih",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Sichelstein (Obsidian-Einlagen)",
+        "c": "Neolithikum"
+      },
+      {
+        "n": "Kupfermeißel",
+        "c": "Kupferzeit (Chalkolithikum)"
+      },
+      {
+        "n": "Arsenikbronze-Schwert",
+        "c": "Frühe Bronzezeit"
+      },
+      {
+        "n": "Zinnbronze-Speer",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Gussform für Bronzeäxte",
+        "c": "Bronzezeit"
+      },
+      {
+        "n": "Keltisches Latène-Schwert",
+        "c": "Eisenzeit"
+      },
+      {
+        "n": "Gladius (römisches Kurzschwert)",
+        "c": "Römerzeit"
+      },
+      {
+        "n": "Wasserrad (röm. Typ)",
+        "c": "Römerzeit"
+      },
+      {
+        "n": "Hypokaustenziegel",
+        "c": "Römerzeit"
+      },
+      {
+        "n": "Arabische Astrolabe",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Armbrust",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Schiesspulver-Kanone",
+        "c": "Mittelalter"
+      },
+      {
+        "n": "Buchdruckmechanismus (Gutenberg)",
+        "c": "Frühe Neuzeit"
+      },
+      {
+        "n": "Dampfmaschinen-Kolben (Watt)",
+        "c": "Industriezeitalter"
       }
     ]
   },
@@ -239,6 +415,94 @@
       {
         "n": "Sanxingdui",
         "c": "Guanghan-Museum-Team"
+      },
+      {
+        "n": "Machu Picchu (1911)",
+        "c": "Hiram Bingham"
+      },
+      {
+        "n": "Pompeji (Ausgrabung 1748)",
+        "c": "Karl Jakob Weber"
+      },
+      {
+        "n": "Nabatäa/Petra",
+        "c": "Johann Ludwig Burckhardt"
+      },
+      {
+        "n": "Mesopotamien-Forschung",
+        "c": "Leonard Woolley"
+      },
+      {
+        "n": "Ausgrabung Knossos",
+        "c": "Arthur Evans"
+      },
+      {
+        "n": "Stonehenge (Forschung)",
+        "c": "William Stukeley"
+      },
+      {
+        "n": "Ausgrabung Jericho",
+        "c": "Kathleen Kenyon"
+      },
+      {
+        "n": "Harappa-Ausgrabung",
+        "c": "Daya Ram Sahni"
+      },
+      {
+        "n": "Chichen Itza Forschung",
+        "c": "Edward Thompson"
+      },
+      {
+        "n": "Çatalhöyük Ausgrabung",
+        "c": "James Mellaart"
+      },
+      {
+        "n": "Angkor (erster Bericht)",
+        "c": "Henri Mouhot"
+      },
+      {
+        "n": "Nabatäa/Petra Ausgrabung",
+        "c": "Diana Kirkbride"
+      },
+      {
+        "n": "Skara Brae (Ausgrabung)",
+        "c": "Gordon Childe"
+      },
+      {
+        "n": "Göbekli Tepe Ausgrabung",
+        "c": "Klaus Schmidt"
+      },
+      {
+        "n": "Fundort Lascaux",
+        "c": "Marcel Ravidat"
+      },
+      {
+        "n": "Mesa Verde (Ausgrabung)",
+        "c": "Gustaf Nordenskiöld"
+      },
+      {
+        "n": "Minos-Tempel (Forschung)",
+        "c": "Minos Kalokairinos"
+      },
+      {
+        "n": "Elam-Zivilisation (Susa)",
+        "c": "Jacques de Morgan"
+      },
+      {
+        "n": "Tempel des Hephaistos Athen",
+        "c": "William Bell Dinsmoor"
+      },
+      {
+        "n": "Amarna-Ausgrabungen",
+        "c": "Flinders Petrie"
+      },
+      {
+        "n": "Tell Halaf Ausgrabungen",
+        "c": "Max von Oppenheim"
+      },
+      {
+        "n": "Avebury Forschung",
+        "c": "John Aubrey"
       }
     ]
   },
@@ -502,6 +766,70 @@
       {
         "n": "Meroitische Schrift",
         "c": "Meroe / Kush"
+      },
+      {
+        "n": "Phönizisches Alphabet",
+        "c": "Phönizien"
+      },
+      {
+        "n": "Demotische Schrift",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Koptische Schrift",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Aramäische Schrift",
+        "c": "Mesopotamien / Levante"
+      },
+      {
+        "n": "Sanskrit / Brahmi-Schrift",
+        "c": "Indien"
+      },
+      {
+        "n": "Chinesische Orakelknochenschrift",
+        "c": "China"
+      },
+      {
+        "n": "Chinesische Siegelschrift",
+        "c": "China"
+      },
+      {
+        "n": "Japanische Kanji",
+        "c": "Japan"
+      },
+      {
+        "n": "Koreanisches Hangul",
+        "c": "Korea"
+      },
+      {
+        "n": "Runen (Futhark)",
+        "c": "Germanen / Wikinger"
+      },
+      {
+        "n": "Aztekische Bilderschrift",
+        "c": "Azteken"
+      },
+      {
+        "n": "Inka-Quipu (Knotenschrift)",
+        "c": "Inka"
+      },
+      {
+        "n": "Protosinaïtische Schrift",
+        "c": "Levante / Sinai"
+      },
+      {
+        "n": "Elamische Linearschrift",
+        "c": "Iran / Elam"
+      },
+      {
+        "n": "Luwische Hieroglyphen",
+        "c": "Hethiter / Anatolien"
+      },
+      {
+        "n": "Äthiopisches Ge'ez (Fidäl)",
+        "c": "Äthiopien"
       }
     ]
   },
@@ -571,6 +899,106 @@
       {
         "n": "Lugh",
         "c": "Keltisch"
+      },
+      {
+        "n": "Ra",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Horus",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Isis",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Anubis",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Thoth",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Zeus",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Apollo",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Athene",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Artemis",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Jupiter",
+        "c": "Rom"
+      },
+      {
+        "n": "Mars",
+        "c": "Rom"
+      },
+      {
+        "n": "Minerva",
+        "c": "Rom"
+      },
+      {
+        "n": "Venus",
+        "c": "Rom"
+      },
+      {
+        "n": "Anu",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Shamash",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Teshub",
+        "c": "Hethitisch"
+      },
+      {
+        "n": "Arinna",
+        "c": "Hethitisch"
+      },
+      {
+        "n": "Tlaloc",
+        "c": "Azteken"
+      },
+      {
+        "n": "Perun",
+        "c": "Slawisch"
+      },
+      {
+        "n": "Veles",
+        "c": "Slawisch"
+      },
+      {
+        "n": "Loki",
+        "c": "Nordisch"
+      },
+      {
+        "n": "Odin",
+        "c": "Nordisch"
+      },
+      {
+        "n": "Ninhursag",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Nergal",
+        "c": "Mesopotamien"
+      },
+      {
+        "n": "Hadad",
+        "c": "Syrien"
       }
     ]
   },
@@ -652,6 +1080,86 @@
       {
         "n": "Kammergrab mit Dromos",
         "c": "Mykene / Griechenland"
+      },
+      {
+        "n": "Sati (Witwenverbrennung)",
+        "c": "Hindus"
+      },
+      {
+        "n": "Terrakotta-Grabbeigaben",
+        "c": "China (Han)"
+      },
+      {
+        "n": "Steinkreis-Hügelgrab",
+        "c": "Kelten"
+      },
+      {
+        "n": "Pyramidengrab für Pharao",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Megalith-Ganggrab",
+        "c": "Neolithikum Europa"
+      },
+      {
+        "n": "Sky Burial (Luftbestattung)",
+        "c": "Tibet / Buddhisten"
+      },
+      {
+        "n": "Kartonnage mit Amuletten",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Brandbestattung mit Urne",
+        "c": "Römer"
+      },
+      {
+        "n": "Türme des Schweigens",
+        "c": "Zoroastrismus (Persien)"
+      },
+      {
+        "n": "Schamanengrab mit Trommel",
+        "c": "Sibirische Kulturen"
+      },
+      {
+        "n": "Schiffsbestattung in Hügeln",
+        "c": "Wikinger"
+      },
+      {
+        "n": "Gräber mit Fußgolf (Azteken)",
+        "c": "Azteken"
+      },
+      {
+        "n": "Gefäßbestattung (Hockergrab)",
+        "c": "Jungsteinzeit Europa"
+      },
+      {
+        "n": "Beinhäuser / Ossuar",
+        "c": "Christentum / Europa"
+      },
+      {
+        "n": "Natürliche Höhlengräber",
+        "c": "Paläolithikum"
+      },
+      {
+        "n": "Mastaba-Grab",
+        "c": "Ägypten"
+      },
+      {
+        "n": "Dolmen-Grab",
+        "c": "Megalithkulturen"
+      },
+      {
+        "n": "Tumulus (Grabhügel)",
+        "c": "Thraker / Skythen"
+      },
+      {
+        "n": "Schachtgräber mit Gold",
+        "c": "Mykene"
+      },
+      {
+        "n": "Sarkophag aus Marmor",
+        "c": "Römer / Griechenland"
       }
     ]
   },
@@ -1073,6 +1581,110 @@
       {
         "n": "Lewis-Schachfiguren",
         "c": "London / Edinburgh"
+      },
+      {
+        "n": "Terrakottaarmee",
+        "c": "Xi'an"
+      },
+      {
+        "n": "Nefertiti-Büste (Original)",
+        "c": "Berlin"
+      },
+      {
+        "n": "Elgin Marbles",
+        "c": "London"
+      },
+      {
+        "n": "Venus von Milo",
+        "c": "Paris"
+      },
+      {
+        "n": "Tutanchamun-Maske",
+        "c": "Kairo"
+      },
+      {
+        "n": "Nike von Samothrake",
+        "c": "Paris"
+      },
+      {
+        "n": "Pergamon-Altar",
+        "c": "Berlin"
+      },
+      {
+        "n": "Hammurabi-Stele",
+        "c": "Paris"
+      },
+      {
+        "n": "Samarra-Keramik",
+        "c": "Baghdad"
+      },
+      {
+        "n": "Benin-Bronzen",
+        "c": "London"
+      },
+      {
+        "n": "Olmekenkopf (Riesen)",
+        "c": "Mexiko-Stadt"
+      },
+      {
+        "n": "Machu Picchu-Funde",
+        "c": "Cusco"
+      },
+      {
+        "n": "Inka-Sonnenscheibe",
+        "c": "Lima"
+      },
+      {
+        "n": "Ötzis Ausrüstung",
+        "c": "Bozen"
+      },
+      {
+        "n": "Lindow Man",
+        "c": "London"
+      },
+      {
+        "n": "Gundestrup-Kessel",
+        "c": "Kopenhagen"
+      },
+      {
+        "n": "Nebra-Himmelsscheibe",
+        "c": "Halle"
+      },
+      {
+        "n": "Goldener Hut von Schifferstadt",
+        "c": "Speyer"
+      },
+      {
+        "n": "Mschatta-Fassade",
+        "c": "Berlin"
+      },
+      {
+        "n": "Megiddo-Elfenbein",
+        "c": "Jerusalem"
+      },
+      {
+        "n": "Koh-i-Noor (Diamant)",
+        "c": "London"
+      },
+      {
+        "n": "Phaistos-Scheibe",
+        "c": "Heraklion"
+      },
+      {
+        "n": "Schwarzer Obelisk",
+        "c": "London"
+      },
+      {
+        "n": "Vindolanda-Tablets",
+        "c": "London"
+      },
+      {
+        "n": "Crocodile Tomb (Kaiman)",
+        "c": "Kairo"
+      },
+      {
+        "n": "Lydian Hoard",
+        "c": "New York"
       }
     ]
   },
@@ -1336,6 +1948,82 @@
       {
         "n": "Kaurischnecken als Standardgeld",
         "c": "China (Shang-Dynastie)"
+      },
+      {
+        "n": "Shekel",
+        "c": "Mesopotamien / Israel"
+      },
+      {
+        "n": "Stater",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Solidus",
+        "c": "Byzanz"
+      },
+      {
+        "n": "Antoninian",
+        "c": "Römer (3. Jh.)"
+      },
+      {
+        "n": "Sesterz",
+        "c": "Römer"
+      },
+      {
+        "n": "Aureus",
+        "c": "Römer"
+      },
+      {
+        "n": "Dirham",
+        "c": "Islamisches Kalifat"
+      },
+      {
+        "n": "Kaurimuscheln (großer Handel)",
+        "c": "Westafrika / Ozeanien"
+      },
+      {
+        "n": "Wampum-Perlenstickerei",
+        "c": "Nordamerika (Irokesen)"
+      },
+      {
+        "n": "Jade-Beil als Zahlungsmittel",
+        "c": "Mesoamerika (Maya)"
+      },
+      {
+        "n": "Kakaobohnen",
+        "c": "Azteken"
+      },
+      {
+        "n": "Gewürznelken als Tauschmittel",
+        "c": "Gewürzinseln (Indienhandel)"
+      },
+      {
+        "n": "Hacksilber",
+        "c": "Wikinger"
+      },
+      {
+        "n": "Seidenstoffe als Währung",
+        "c": "China (Seidenstraße)"
+      },
+      {
+        "n": "Feathered Quill (Pelzhandel)",
+        "c": "Kanada (Kolonialzeit)"
+      },
+      {
+        "n": "Kupferbarren (Manilla)",
+        "c": "Westafrika"
+      },
+      {
+        "n": "Glasperlen (europäischer Handel)",
+        "c": "Subsahara-Afrika"
+      },
+      {
+        "n": "Salz (Salzstraßen)",
+        "c": "Äthiopien / Antike"
+      },
+      {
+        "n": "Florin",
+        "c": "Florenz (Mittelalter)"
       }
     ]
   },
@@ -1508,6 +2196,82 @@
       {
         "n": "Stoa von Attalos",
         "c": "Ionisch / Dorisch"
+      },
+      {
+        "n": "Theseustempel (Athen)",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Hephaisteion (Athen)",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Tempel von Paestum (S-Italien)",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Tempel von Aphaia (Ägina)",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Artemistempel Ephesos",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Nike-Tempel Akropolis",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Tempel des Apollo (Didyma)",
+        "c": "Ionisch"
+      },
+      {
+        "n": "Tempel des Zeus (Olympia)",
+        "c": "Dorisch"
+      },
+      {
+        "n": "Tempel der Vesta (Rom)",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Pantheon (Rom) — Vorhalle",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Tempel des Castor (Forum Rom.)",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Trajanssäule (Basis)",
+        "c": "Toskanisch"
+      },
+      {
+        "n": "Pont du Gard (Bögen)",
+        "c": "Toskanisch"
+      },
+      {
+        "n": "Titusbogen (Rom)",
+        "c": "Toskanisch"
+      },
+      {
+        "n": "Konstantinsbogen (Rom)",
+        "c": "Komposit"
+      },
+      {
+        "n": "Septimius-Severus-Bogen",
+        "c": "Komposit"
+      },
+      {
+        "n": "Tempel des Bacchus (Baalbek)",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Tempel von Baalbek (Jupiter)",
+        "c": "Korinthisch"
+      },
+      {
+        "n": "Hadrianstor (Athen)",
+        "c": "Korinthisch"
       }
     ]
   },
@@ -1575,6 +2339,110 @@
       {
         "n": "Alamgirpur",
         "c": "Indien (Uttar Pradesh)"
+      },
+      {
+        "n": "Ganweriwala",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Chanhudaro",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Amri",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Kot Diji",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Balakot",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Sutkagan Dor",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Desalpur",
+        "c": "Indien"
+      },
+      {
+        "n": "Diamabad",
+        "c": "Indien"
+      },
+      {
+        "n": "Manda (Akhnoor)",
+        "c": "Indien"
+      },
+      {
+        "n": "Mitathal",
+        "c": "Indien"
+      },
+      {
+        "n": "Sindhu-Desha (Konzept)",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Nausharo",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Mehrgarh (Vorläuferkultur)",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Kot Bala",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Allahdino",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Judeirjo-daro",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Rangpur",
+        "c": "Indien"
+      },
+      {
+        "n": "Kunal",
+        "c": "Indien"
+      },
+      {
+        "n": "Farmana",
+        "c": "Indien"
+      },
+      {
+        "n": "Padri",
+        "c": "Indien"
+      },
+      {
+        "n": "Santhali (Gola Dhoro)",
+        "c": "Indien"
+      },
+      {
+        "n": "Chanhu-daro (Ziegelöfen)",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Rahman Dheri",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Lal Shah (Mound)",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Gumla",
+        "c": "Pakistan"
+      },
+      {
+        "n": "Sarai Khola",
+        "c": "Pakistan"
       }
     ]
   },
@@ -1643,6 +2511,106 @@
       },
       {
         "n": "Novgorod (Wikinger-Schicht)",
+        "c": "Russland"
+      },
+      {
+        "n": "Oseberg-Schiff",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Gokstad-Schiff",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Lindisfarne (Überfall 793)",
+        "c": "England"
+      },
+      {
+        "n": "Noirmoutier (Überfall 799)",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Hedeby (Handelszentrum)",
+        "c": "Deutschland"
+      },
+      {
+        "n": "Ribe (älteste Stadt)",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Birka (Handelszentrum)",
+        "c": "Schweden"
+      },
+      {
+        "n": "Jelling-Runensteine",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Reykjavík (Gründung 874)",
+        "c": "Island"
+      },
+      {
+        "n": "Vinland-Siedlung",
+        "c": "Kanada"
+      },
+      {
+        "n": "Grönland-Siedlung",
+        "c": "Grönland"
+      },
+      {
+        "n": "Staraja Ladoga (Nowgorod)",
+        "c": "Russland"
+      },
+      {
+        "n": "Kyjiw (Wikingergründung)",
+        "c": "Ukraine"
+      },
+      {
+        "n": "Paris-Belagerung 885",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Konstantinopel (Wäringerttrade)",
+        "c": "Türkei"
+      },
+      {
+        "n": "Jorvik/York (Wikingersiedlung)",
+        "c": "England"
+      },
+      {
+        "n": "Dublin (Gründung ca. 841)",
+        "c": "Irland"
+      },
+      {
+        "n": "Danegeld (England)",
+        "c": "England"
+      },
+      {
+        "n": "Danelaw (Gebiet)",
+        "c": "England"
+      },
+      {
+        "n": "Normandie-Gründung 911",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Shetland-Inseln (Siedlung)",
+        "c": "Schottland"
+      },
+      {
+        "n": "Isle of Man (Wikinger)",
+        "c": "Isle of Man"
+      },
+      {
+        "n": "Sizilien (Normannen)",
+        "c": "Italien"
+      },
+      {
+        "n": "Fyrkat-Ringburg",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Kievan Rus (Handel)",
         "c": "Russland"
       }
     ]
@@ -1903,6 +2871,86 @@
       {
         "n": "Rapa Nui / Osterinsel",
         "c": "Klimawandel / Erosion"
+      },
+      {
+        "n": "Ruinen von Aleppo (Syrien)",
+        "c": "Krieg"
+      },
+      {
+        "n": "Altstadtmauern von Hebron",
+        "c": "Politischer Konflikt"
+      },
+      {
+        "n": "Machu Picchu (Peru)",
+        "c": "Overtourismus"
+      },
+      {
+        "n": "Venedig (Italien)",
+        "c": "Klimawandel / Tourismus"
+      },
+      {
+        "n": "Everest-Gebiet (Nepal)",
+        "c": "Tourismus / Müllverschmutzung"
+      },
+      {
+        "n": "Great Barrier Reef (Australien)",
+        "c": "Klimawandel (Korallenbleiche)"
+      },
+      {
+        "n": "Donautal (Deutschland/Österreich)",
+        "c": "Infrastrukturprojekte"
+      },
+      {
+        "n": "Kolosseum (Rom)",
+        "c": "Erschütterungen / Tourismus"
+      },
+      {
+        "n": "Santorin-Caldera",
+        "c": "Overtourismus"
+      },
+      {
+        "n": "Okavangodelta (Botswana)",
+        "c": "Klimawandel / Wasserentnahme"
+      },
+      {
+        "n": "Sundarbans (Bangladesch/Indien)",
+        "c": "Klimawandel (Meeresspiegel)"
+      },
+      {
+        "n": "Prambanan-Tempel (Indonesien)",
+        "c": "Erdbeben"
+      },
+      {
+        "n": "Borobudur (Indonesien)",
+        "c": "Vulkanismus / Tourismus"
+      },
+      {
+        "n": "Cholula-Pyramide (Mexiko)",
+        "c": "Urbanisierung"
+      },
+      {
+        "n": "Kakadu (Australien)",
+        "c": "Invasive Tierarten"
+      },
+      {
+        "n": "Lascaux II — Replikation nötig",
+        "c": "Schimmelbefall durch Tourismus"
+      },
+      {
+        "n": "Bamiyan-Buddhas (Afghanistan)",
+        "c": "Zerstört durch Taliban 2001"
+      },
+      {
+        "n": "Altstadt von Mosul (Irak)",
+        "c": "Krieg (IS-Zerstörung 2015)"
+      },
+      {
+        "n": "Bam-Zitadelle (Iran)",
+        "c": "Erdbeben (2003)"
+      },
+      {
+        "n": "Ephesus (Türkei)",
+        "c": "Tourismus / Erosion"
       }
     ]
   },
@@ -1990,6 +3038,90 @@
       {
         "n": "Lascaux-Hoehle",
         "c": "Kinder beim Spielen"
+      },
+      {
+        "n": "Lascaux-Höhle (1940)",
+        "c": "Kinder (beim Spielen)"
+      },
+      {
+        "n": "Höhle von Altamira (1868)",
+        "c": "Wanderer / Jäger"
+      },
+      {
+        "n": "Laetoli-Fußabdrücke (1976)",
+        "c": "Wissenschaftliche Expedition"
+      },
+      {
+        "n": "Sutton Hoo (1938)",
+        "c": "Grundstückeigentümer"
+      },
+      {
+        "n": "Dōngbāo (Elefant-Elfenbein-Lager)",
+        "c": "Bauarbeiter"
+      },
+      {
+        "n": "Ötzi (1991)",
+        "c": "Wanderer"
+      },
+      {
+        "n": "Ägyptische Mumien in Tanis",
+        "c": "Archäologen-Expedition"
+      },
+      {
+        "n": "Tollund-Mann (1950)",
+        "c": "Torfstecher"
+      },
+      {
+        "n": "Grauballe-Mann (1952)",
+        "c": "Torfstecher"
+      },
+      {
+        "n": "Windeby-Mädchen (1952)",
+        "c": "Torfstecher"
+      },
+      {
+        "n": "Babenberger-Gruft (Wien)",
+        "c": "Bauarbeiter"
+      },
+      {
+        "n": "Pompeji (Ausgrabungen ab 1748)",
+        "c": "Bauarbeiter"
+      },
+      {
+        "n": "Sixtinische Kapellen-Inschriften",
+        "c": "Restauratoren"
+      },
+      {
+        "n": "Rosetta-Stein (1799)",
+        "c": "Napoleons Soldaten"
+      },
+      {
+        "n": "Qumran-Schriftrollen (1947)",
+        "c": "Hirtenknabe"
+      },
+      {
+        "n": "Nag-Hammadi-Texte (1945)",
+        "c": "Bauer"
+      },
+      {
+        "n": "Vinland-Karte (gefunden 1957)",
+        "c": "Buchhändler"
+      },
+      {
+        "n": "Sipán-Königsgräber (1987, Peru)",
+        "c": "Polizei verfolgte Grabräuber"
+      },
+      {
+        "n": "Antikythera-Mechanismus (1900/01)",
+        "c": "Schwammtaucher"
+      },
+      {
+        "n": "Thera-Bronzefiguren (Ägäis)",
+        "c": "Taucher"
+      },
+      {
+        "n": "Lanzarote-Höhlenmalereien",
+        "c": "Speleologen"
       }
     ]
   },

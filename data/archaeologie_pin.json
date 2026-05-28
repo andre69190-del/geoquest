@@ -101,6 +101,116 @@
         "n": "Sutton-Hoo-Helm (British Museum)",
         "lat": 51.5194,
         "lng": -0.127
+      },
+      {
+        "n": "Löwenmensch (Ulm, Deutschland)",
+        "lat": 48.4,
+        "lng": 10.0
+      },
+      {
+        "n": "Venus von Willendorf (Österreich)",
+        "lat": 48.3,
+        "lng": 15.42
+      },
+      {
+        "n": "Nefertiti-Büste Fundort (Amarna)",
+        "lat": 27.65,
+        "lng": 30.9
+      },
+      {
+        "n": "Tutanchamun-Grab (Luxor)",
+        "lat": 25.74,
+        "lng": 32.6
+      },
+      {
+        "n": "Stein von Rosette (Fundort Rashid)",
+        "lat": 31.4,
+        "lng": 30.42
+      },
+      {
+        "n": "Dendera-Zodiak Fundort (Dendera)",
+        "lat": 26.14,
+        "lng": 32.67
+      },
+      {
+        "n": "Ötzi-Fundort (Ötztal-Alpen)",
+        "lat": 46.77,
+        "lng": 10.85
+      },
+      {
+        "n": "Lindow Man Fundort (Cheshire)",
+        "lat": 53.37,
+        "lng": -2.13
+      },
+      {
+        "n": "Tollund-Mann (Jütland, Dänemark)",
+        "lat": 56.0,
+        "lng": 9.4
+      },
+      {
+        "n": "Çatalhöyük (Konya, Türkei)",
+        "lat": 37.67,
+        "lng": 32.82
+      },
+      {
+        "n": "Nebra Himmelsscheibe (Mittelberg, D.)",
+        "lat": 51.32,
+        "lng": 11.49
+      },
+      {
+        "n": "Troia Goldschatz Fundort",
+        "lat": 39.96,
+        "lng": 26.24
+      },
+      {
+        "n": "Nimrud Ivories (Irak)",
+        "lat": 36.1,
+        "lng": 43.32
+      },
+      {
+        "n": "Sutton Hoo Helm (Suffolk, UK)",
+        "lat": 52.09,
+        "lng": 1.34
+      },
+      {
+        "n": "Gundestrup-Kessel Fundort (Dänemark)",
+        "lat": 57.1,
+        "lng": 9.1
+      },
+      {
+        "n": "Lascaux-Höhle (Dordogne, Frankreich)",
+        "lat": 45.05,
+        "lng": 1.07
+      },
+      {
+        "n": "Altamira-Höhle (Kantabrien, Spanien)",
+        "lat": 43.38,
+        "lng": -4.12
+      },
+      {
+        "n": "Chauvet-Höhle (Ardèche, Frankreich)",
+        "lat": 44.38,
+        "lng": 4.42
+      },
+      {
+        "n": "Vogelherd-Höhle (Lone Valley, D.)",
+        "lat": 48.56,
+        "lng": 10.15
+      },
+      {
+        "n": "Vix Grabfund (Burgund, Frankreich)",
+        "lat": 47.9,
+        "lng": 4.52
+      },
+      {
+        "n": "Staffordshire Hoard Fundort (Hammerwich)",
+        "lat": 52.66,
+        "lng": -1.92
+      },
+      {
+        "n": "Antikythera-Wrack (Griechenland)",
+        "lat": 35.86,
+        "lng": 23.32
       }
     ]
   },
@@ -206,6 +316,131 @@
         "n": "Monte d'Accoddi (Sardinien)",
         "lat": 40.7667,
         "lng": 8.5
+      },
+      {
+        "n": "Laos Steinerne Krüge (Plain of Jars)",
+        "lat": 19.45,
+        "lng": 103.15
+      },
+      {
+        "n": "Baalbek Megalithen (Libanon)",
+        "lat": 34.0,
+        "lng": 36.22
+      },
+      {
+        "n": "Tarxien (Malta)",
+        "lat": 35.87,
+        "lng": 14.51
+      },
+      {
+        "n": "Poulnabrone (Clare, Irland)",
+        "lat": 53.05,
+        "lng": -9.14
+      },
+      {
+        "n": "Cromlechs de Moussan (Portugal)",
+        "lat": 38.57,
+        "lng": -7.97
+      },
+      {
+        "n": "Senegambian Stone Circles",
+        "lat": 13.67,
+        "lng": -15.55
+      },
+      {
+        "n": "Mzora (Marokko)",
+        "lat": 35.08,
+        "lng": -5.78
+      },
+      {
+        "n": "Anta de Menga (Andalusien)",
+        "lat": 37.02,
+        "lng": -4.55
+      },
+      {
+        "n": "Dolmen de Menga (Antequera)",
+        "lat": 37.02,
+        "lng": -4.56
+      },
+      {
+        "n": "Bagneux Dolmen (Anjou, Frankreich)",
+        "lat": 47.46,
+        "lng": -0.56
+      },
+      {
+        "n": "Lagatjar (Bretagne, Frankreich)",
+        "lat": 48.27,
+        "lng": -4.62
+      },
+      {
+        "n": "Los Millares (Almería, Spanien)",
+        "lat": 37.04,
+        "lng": -2.59
+      },
+      {
+        "n": "Tumbas Gigantes (Sardinien)",
+        "lat": 40.3,
+        "lng": 8.8
+      },
+      {
+        "n": "Nuraghe Arrubiu (Sardinien)",
+        "lat": 39.77,
+        "lng": 9.29
+      },
+      {
+        "n": "Bretteville-le-Rabet (Normandie)",
+        "lat": 48.9,
+        "lng": -0.3
+      },
+      {
+        "n": "Wayland's Smithy (Oxfordshire, UK)",
+        "lat": 51.57,
+        "lng": -1.59
+      },
+      {
+        "n": "Castlerigg (Cumbria, UK)",
+        "lat": 54.6,
+        "lng": -3.1
+      },
+      {
+        "n": "Long Meg and her Daughters (Cumbria)",
+        "lat": 54.72,
+        "lng": -2.67
+      },
+      {
+        "n": "Mitchell's Fold (Shropshire, UK)",
+        "lat": 52.53,
+        "lng": -3.05
+      },
+      {
+        "n": "Stanton Drew (Somerset, UK)",
+        "lat": 51.37,
+        "lng": -2.57
+      },
+      {
+        "n": "Boscawen-ûn (Cornwall, UK)",
+        "lat": 50.11,
+        "lng": -5.61
+      },
+      {
+        "n": "Merrivale Stone Row (Dartmoor)",
+        "lat": 50.55,
+        "lng": -4.05
+      },
+      {
+        "n": "Locmariaquer (Bretagne, Frankreich)",
+        "lat": 47.57,
+        "lng": -2.94
+      },
+      {
+        "n": "Crozon Peninsula Menhir (Bretagne)",
+        "lat": 48.27,
+        "lng": -4.5
+      },
+      {
+        "n": "Porto Badisco (Apulien, Italien)",
+        "lat": 40.01,
+        "lng": 18.45
       }
     ]
   },

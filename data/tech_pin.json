@@ -2,201 +2,1051 @@
   "programmiersprachen": {
     "prompt": "Wo wurde diese Programmiersprache erfunden oder entwickelt?",
     "items": [
-      {"n": "Python (Amsterdam)", "lat": 52.3676, "lng": 4.9041},
-      {"n": "C (Bell Labs, Murray Hill)", "lat": 40.6857, "lng": -74.3987},
-      {"n": "Java (Sun Microsystems, Santa Clara)", "lat": 37.3541, "lng": -121.9552},
-      {"n": "JavaScript (Netscape, Mountain View)", "lat": 37.3861, "lng": -122.0839},
-      {"n": "Ruby (Matsuyama)", "lat": 33.8392, "lng": 132.7657},
-      {"n": "Rust (Mozilla, San Francisco)", "lat": 37.7749, "lng": -122.4194},
-      {"n": "Swift (Apple, Cupertino)", "lat": 37.3230, "lng": -122.0322},
-      {"n": "Go (Google, Mountain View)", "lat": 37.4220, "lng": -122.0841},
-      {"n": "Kotlin (JetBrains, St. Petersburg)", "lat": 59.9311, "lng": 30.3609},
-      {"n": "Fortran (IBM, Poughkeepsie)", "lat": 41.7004, "lng": -73.9209},
-      {"n": "COBOL (Pentagon, Washington D.C.)", "lat": 38.8719, "lng": -77.0563},
-      {"n": "Pascal (ETH Zürich)", "lat": 47.3769, "lng": 8.5417},
-      {"n": "Ada (DoD, Arlington)", "lat": 38.8801, "lng": -77.1067},
-      {"n": "Haskell (fpca '87, Portland)", "lat": 45.5051, "lng": -122.6750},
-      {"n": "Perl (Bountiful, Utah)", "lat": 40.8894, "lng": -111.8838},
-      {"n": "PHP (Fredericton, Canada)", "lat": 45.9636, "lng": -66.6431},
-      {"n": "Lua (PUC-Rio, Rio de Janeiro)", "lat": -22.9068, "lng": -43.1729},
-      {"n": "Erlang (Ericsson, Stockholm)", "lat": 59.3293, "lng": 18.0686},
-      {"n": "Scala (EPFL, Lausanne)", "lat": 46.5197, "lng": 6.6323},
-      {"n": "TypeScript (Microsoft, Redmond)", "lat": 47.6740, "lng": -122.1215}
+      {
+        "n": "Python (Amsterdam)",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      {
+        "n": "C (Bell Labs, Murray Hill)",
+        "lat": 40.6857,
+        "lng": -74.3987
+      },
+      {
+        "n": "Java (Sun Microsystems, Santa Clara)",
+        "lat": 37.3541,
+        "lng": -121.9552
+      },
+      {
+        "n": "JavaScript (Netscape, Mountain View)",
+        "lat": 37.3861,
+        "lng": -122.0839
+      },
+      {
+        "n": "Ruby (Matsuyama)",
+        "lat": 33.8392,
+        "lng": 132.7657
+      },
+      {
+        "n": "Rust (Mozilla, San Francisco)",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "n": "Swift (Apple, Cupertino)",
+        "lat": 37.323,
+        "lng": -122.0322
+      },
+      {
+        "n": "Go (Google, Mountain View)",
+        "lat": 37.422,
+        "lng": -122.0841
+      },
+      {
+        "n": "Kotlin (JetBrains, St. Petersburg)",
+        "lat": 59.9311,
+        "lng": 30.3609
+      },
+      {
+        "n": "Fortran (IBM, Poughkeepsie)",
+        "lat": 41.7004,
+        "lng": -73.9209
+      },
+      {
+        "n": "COBOL (Pentagon, Washington D.C.)",
+        "lat": 38.8719,
+        "lng": -77.0563
+      },
+      {
+        "n": "Pascal (ETH Zürich)",
+        "lat": 47.3769,
+        "lng": 8.5417
+      },
+      {
+        "n": "Ada (DoD, Arlington)",
+        "lat": 38.8801,
+        "lng": -77.1067
+      },
+      {
+        "n": "Haskell (fpca '87, Portland)",
+        "lat": 45.5051,
+        "lng": -122.675
+      },
+      {
+        "n": "Perl (Bountiful, Utah)",
+        "lat": 40.8894,
+        "lng": -111.8838
+      },
+      {
+        "n": "PHP (Fredericton, Canada)",
+        "lat": 45.9636,
+        "lng": -66.6431
+      },
+      {
+        "n": "Lua (PUC-Rio, Rio de Janeiro)",
+        "lat": -22.9068,
+        "lng": -43.1729
+      },
+      {
+        "n": "Erlang (Ericsson, Stockholm)",
+        "lat": 59.3293,
+        "lng": 18.0686
+      },
+      {
+        "n": "Scala (EPFL, Lausanne)",
+        "lat": 46.5197,
+        "lng": 6.6323
+      },
+      {
+        "n": "TypeScript (Microsoft, Redmond)",
+        "lat": 47.674,
+        "lng": -122.1215
+      }
     ]
   },
   "wettbewerbe": {
     "prompt": "Wo findet dieser Technologie- oder Robotikwettbewerb statt?",
     "items": [
-      {"n": "FIRST Lego League World Festival (Houston)", "lat": 29.7604, "lng": -95.3698},
-      {"n": "World Robot Olympiad Grand Finals (Singapur)", "lat": 1.3521, "lng": 103.8198},
-      {"n": "RoboCup (wechselnde Gastgeber — Bordeaux 2023)", "lat": 44.8378, "lng": -0.5792},
-      {"n": "International Olympiad in Informatics (Tsukuba 2018)", "lat": 36.0833, "lng": 140.0764},
-      {"n": "ICPC World Finals (Dhaka 2023)", "lat": 23.8103, "lng": 90.4125},
-      {"n": "Hackathon @ MIT, Cambridge", "lat": 42.3601, "lng": -71.0942},
-      {"n": "Google Code Jam Finals (Mountain View)", "lat": 37.4220, "lng": -122.0841},
-      {"n": "DEF CON CTF Finals (Las Vegas)", "lat": 36.1699, "lng": -115.1398},
-      {"n": "CES Consumer Electronics Show (Las Vegas)", "lat": 36.1326, "lng": -115.1518},
-      {"n": "Hannover Messe (Hannover)", "lat": 52.3200, "lng": 9.8145},
-      {"n": "Automatica (München)", "lat": 48.1351, "lng": 11.5820},
-      {"n": "FIRST Robotics Regional (Detroit)", "lat": 42.3314, "lng": -83.0458},
-      {"n": "VEX Robotics World Championship (Louisville)", "lat": 38.2527, "lng": -85.7585},
-      {"n": "BattleBots Championships (Long Beach)", "lat": 33.7701, "lng": -118.1937},
-      {"n": "Embedded World (Nürnberg)", "lat": 49.4521, "lng": 11.0767},
-      {"n": "MWC Mobile World Congress (Barcelona)", "lat": 41.3851, "lng": 2.1734},
-      {"n": "AWS re:Invent (Las Vegas)", "lat": 36.1256, "lng": -115.1760},
-      {"n": "Japan Robot Week (Tokio)", "lat": 35.6762, "lng": 139.6503},
-      {"n": "Seoul Drone Show (Seoul)", "lat": 37.5665, "lng": 126.9780},
-      {"n": "ICCV Computer Vision Conference (Paris 2023)", "lat": 48.8566, "lng": 2.3522}
+      {
+        "n": "FIRST Lego League World Festival (Houston)",
+        "lat": 29.7604,
+        "lng": -95.3698
+      },
+      {
+        "n": "World Robot Olympiad Grand Finals (Singapur)",
+        "lat": 1.3521,
+        "lng": 103.8198
+      },
+      {
+        "n": "RoboCup (wechselnde Gastgeber — Bordeaux 2023)",
+        "lat": 44.8378,
+        "lng": -0.5792
+      },
+      {
+        "n": "International Olympiad in Informatics (Tsukuba 2018)",
+        "lat": 36.0833,
+        "lng": 140.0764
+      },
+      {
+        "n": "ICPC World Finals (Dhaka 2023)",
+        "lat": 23.8103,
+        "lng": 90.4125
+      },
+      {
+        "n": "Hackathon @ MIT, Cambridge",
+        "lat": 42.3601,
+        "lng": -71.0942
+      },
+      {
+        "n": "Google Code Jam Finals (Mountain View)",
+        "lat": 37.422,
+        "lng": -122.0841
+      },
+      {
+        "n": "DEF CON CTF Finals (Las Vegas)",
+        "lat": 36.1699,
+        "lng": -115.1398
+      },
+      {
+        "n": "CES Consumer Electronics Show (Las Vegas)",
+        "lat": 36.1326,
+        "lng": -115.1518
+      },
+      {
+        "n": "Hannover Messe (Hannover)",
+        "lat": 52.32,
+        "lng": 9.8145
+      },
+      {
+        "n": "Automatica (München)",
+        "lat": 48.1351,
+        "lng": 11.582
+      },
+      {
+        "n": "FIRST Robotics Regional (Detroit)",
+        "lat": 42.3314,
+        "lng": -83.0458
+      },
+      {
+        "n": "VEX Robotics World Championship (Louisville)",
+        "lat": 38.2527,
+        "lng": -85.7585
+      },
+      {
+        "n": "BattleBots Championships (Long Beach)",
+        "lat": 33.7701,
+        "lng": -118.1937
+      },
+      {
+        "n": "Embedded World (Nürnberg)",
+        "lat": 49.4521,
+        "lng": 11.0767
+      },
+      {
+        "n": "MWC Mobile World Congress (Barcelona)",
+        "lat": 41.3851,
+        "lng": 2.1734
+      },
+      {
+        "n": "AWS re:Invent (Las Vegas)",
+        "lat": 36.1256,
+        "lng": -115.176
+      },
+      {
+        "n": "Japan Robot Week (Tokio)",
+        "lat": 35.6762,
+        "lng": 139.6503
+      },
+      {
+        "n": "Seoul Drone Show (Seoul)",
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      {
+        "n": "ICCV Computer Vision Conference (Paris 2023)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      }
     ]
   },
   "halbleiter": {
     "prompt": "Wo befindet sich dieses bedeutende Halbleiter-Werk?",
     "items": [
-      {"n": "TSMC Fab 18 (Tainan)", "lat": 22.9998, "lng": 120.2269},
-      {"n": "Samsung Semiconductor (Hwaseong)", "lat": 37.1985, "lng": 127.0726},
-      {"n": "Intel Fab D1X (Hillsboro, Oregon)", "lat": 45.5229, "lng": -122.9898},
-      {"n": "ASML (Eindhoven)", "lat": 51.4416, "lng": 5.4697},
-      {"n": "TSMC Arizona Fab (Phoenix)", "lat": 33.5722, "lng": -112.0900},
-      {"n": "Infineon Fab (Dresden)", "lat": 51.0504, "lng": 13.7373},
-      {"n": "Bosch Halbleiter-Fab (Reutlingen)", "lat": 48.4921, "lng": 9.2137},
-      {"n": "GlobalFoundries Fab 1 (Dresden)", "lat": 51.0720, "lng": 13.7800},
-      {"n": "Micron Technology HQ (Boise)", "lat": 43.6150, "lng": -116.2023},
-      {"n": "SK Hynix Fab (Icheon)", "lat": 37.2747, "lng": 127.4428},
-      {"n": "NXP Semiconductors (Nijmegen)", "lat": 51.8126, "lng": 5.8372},
-      {"n": "STMicroelectronics (Crolles)", "lat": 45.2756, "lng": 5.8929},
-      {"n": "Texas Instruments Fab (Dallas)", "lat": 32.7767, "lng": -96.7970},
-      {"n": "NVIDIA HQ (Santa Clara)", "lat": 37.3861, "lng": -121.9550},
-      {"n": "Qualcomm HQ (San Diego)", "lat": 32.7157, "lng": -117.1611},
-      {"n": "AMD HQ (Santa Clara)", "lat": 37.3695, "lng": -121.9652},
-      {"n": "TSMC Fab (Nanjing)", "lat": 32.0603, "lng": 118.7969},
-      {"n": "Rapidus Fab (Chitose, Hokkaido)", "lat": 42.8204, "lng": 141.6523},
-      {"n": "Intel Magdeburg Fab (geplant)", "lat": 52.1205, "lng": 11.6276},
-      {"n": "Wolfspeed SiC Fab (Siler City, NC)", "lat": 35.7243, "lng": -79.4617}
+      {
+        "n": "TSMC Fab 18 (Tainan)",
+        "lat": 22.9998,
+        "lng": 120.2269
+      },
+      {
+        "n": "Samsung Semiconductor (Hwaseong)",
+        "lat": 37.1985,
+        "lng": 127.0726
+      },
+      {
+        "n": "Intel Fab D1X (Hillsboro, Oregon)",
+        "lat": 45.5229,
+        "lng": -122.9898
+      },
+      {
+        "n": "ASML (Eindhoven)",
+        "lat": 51.4416,
+        "lng": 5.4697
+      },
+      {
+        "n": "TSMC Arizona Fab (Phoenix)",
+        "lat": 33.5722,
+        "lng": -112.09
+      },
+      {
+        "n": "Infineon Fab (Dresden)",
+        "lat": 51.0504,
+        "lng": 13.7373
+      },
+      {
+        "n": "Bosch Halbleiter-Fab (Reutlingen)",
+        "lat": 48.4921,
+        "lng": 9.2137
+      },
+      {
+        "n": "GlobalFoundries Fab 1 (Dresden)",
+        "lat": 51.072,
+        "lng": 13.78
+      },
+      {
+        "n": "Micron Technology HQ (Boise)",
+        "lat": 43.615,
+        "lng": -116.2023
+      },
+      {
+        "n": "SK Hynix Fab (Icheon)",
+        "lat": 37.2747,
+        "lng": 127.4428
+      },
+      {
+        "n": "NXP Semiconductors (Nijmegen)",
+        "lat": 51.8126,
+        "lng": 5.8372
+      },
+      {
+        "n": "STMicroelectronics (Crolles)",
+        "lat": 45.2756,
+        "lng": 5.8929
+      },
+      {
+        "n": "Texas Instruments Fab (Dallas)",
+        "lat": 32.7767,
+        "lng": -96.797
+      },
+      {
+        "n": "NVIDIA HQ (Santa Clara)",
+        "lat": 37.3861,
+        "lng": -121.955
+      },
+      {
+        "n": "Qualcomm HQ (San Diego)",
+        "lat": 32.7157,
+        "lng": -117.1611
+      },
+      {
+        "n": "AMD HQ (Santa Clara)",
+        "lat": 37.3695,
+        "lng": -121.9652
+      },
+      {
+        "n": "TSMC Fab (Nanjing)",
+        "lat": 32.0603,
+        "lng": 118.7969
+      },
+      {
+        "n": "Rapidus Fab (Chitose, Hokkaido)",
+        "lat": 42.8204,
+        "lng": 141.6523
+      },
+      {
+        "n": "Intel Magdeburg Fab (geplant)",
+        "lat": 52.1205,
+        "lng": 11.6276
+      },
+      {
+        "n": "Wolfspeed SiC Fab (Siler City, NC)",
+        "lat": 35.7243,
+        "lng": -79.4617
+      }
     ]
   },
   "heimcomputer": {
     "prompt": "Wo wurde dieser Heimcomputer entwickelt oder produziert?",
     "items": [
-      {"n": "Commodore 64 (West Chester, Pennsylvania)", "lat": 39.9609, "lng": -75.6057},
-      {"n": "ZX Spectrum (Sinclair Research, Cambridge)", "lat": 52.2053, "lng": 0.1218},
-      {"n": "Apple II (Cupertino)", "lat": 37.3230, "lng": -122.0322},
-      {"n": "Amiga 1000 (Commodore, West Chester)", "lat": 39.9609, "lng": -75.6057},
-      {"n": "Atari 800 (Sunnyvale)", "lat": 37.3688, "lng": -122.0363},
-      {"n": "BBC Micro (Acorn Computers, Cambridge)", "lat": 52.2053, "lng": 0.1218},
-      {"n": "TRS-80 (Tandy Corp., Fort Worth)", "lat": 32.7555, "lng": -97.3308},
-      {"n": "MSX (Microsoft/ASCII, Tokyo)", "lat": 35.6762, "lng": 139.6503},
-      {"n": "Amstrad CPC (Brentwood, Essex)", "lat": 51.6207, "lng": 0.3038},
-      {"n": "Macintosh (Apple, Cupertino)", "lat": 37.3230, "lng": -122.0322},
-      {"n": "Altair 8800 (MITS, Albuquerque)", "lat": 35.0844, "lng": -106.6504},
-      {"n": "TI-99/4A (Texas Instruments, Dallas)", "lat": 32.7767, "lng": -96.7970},
-      {"n": "Dragon 32 (Dragon Data, Port Talbot)", "lat": 51.5908, "lng": -3.7826},
-      {"n": "Oric-1 (Tangerine Computer, London)", "lat": 51.5074, "lng": -0.1278},
-      {"n": "Sharp MZ-80 (Sharp, Osaka)", "lat": 34.6937, "lng": 135.5023},
-      {"n": "Fujitsu FM-7 (Kawasaki)", "lat": 35.5309, "lng": 139.7029},
-      {"n": "Schneider CPC (Inkasso, Türkheim)", "lat": 48.0581, "lng": 10.6261},
-      {"n": "IBM PC (Boca Raton, Florida)", "lat": 26.3683, "lng": -80.1289},
-      {"n": "Osborne 1 (Osborne Computer, Hayward)", "lat": 37.6688, "lng": -122.0808},
-      {"n": "SAM Coupé (Miles Gordon Technology, Swansea)", "lat": 51.6214, "lng": -3.9436}
+      {
+        "n": "Commodore 64 (West Chester, Pennsylvania)",
+        "lat": 39.9609,
+        "lng": -75.6057
+      },
+      {
+        "n": "ZX Spectrum (Sinclair Research, Cambridge)",
+        "lat": 52.2053,
+        "lng": 0.1218
+      },
+      {
+        "n": "Apple II (Cupertino)",
+        "lat": 37.323,
+        "lng": -122.0322
+      },
+      {
+        "n": "Amiga 1000 (Commodore, West Chester)",
+        "lat": 39.9609,
+        "lng": -75.6057
+      },
+      {
+        "n": "Atari 800 (Sunnyvale)",
+        "lat": 37.3688,
+        "lng": -122.0363
+      },
+      {
+        "n": "BBC Micro (Acorn Computers, Cambridge)",
+        "lat": 52.2053,
+        "lng": 0.1218
+      },
+      {
+        "n": "TRS-80 (Tandy Corp., Fort Worth)",
+        "lat": 32.7555,
+        "lng": -97.3308
+      },
+      {
+        "n": "MSX (Microsoft/ASCII, Tokyo)",
+        "lat": 35.6762,
+        "lng": 139.6503
+      },
+      {
+        "n": "Amstrad CPC (Brentwood, Essex)",
+        "lat": 51.6207,
+        "lng": 0.3038
+      },
+      {
+        "n": "Macintosh (Apple, Cupertino)",
+        "lat": 37.323,
+        "lng": -122.0322
+      },
+      {
+        "n": "Altair 8800 (MITS, Albuquerque)",
+        "lat": 35.0844,
+        "lng": -106.6504
+      },
+      {
+        "n": "TI-99/4A (Texas Instruments, Dallas)",
+        "lat": 32.7767,
+        "lng": -96.797
+      },
+      {
+        "n": "Dragon 32 (Dragon Data, Port Talbot)",
+        "lat": 51.5908,
+        "lng": -3.7826
+      },
+      {
+        "n": "Oric-1 (Tangerine Computer, London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Sharp MZ-80 (Sharp, Osaka)",
+        "lat": 34.6937,
+        "lng": 135.5023
+      },
+      {
+        "n": "Fujitsu FM-7 (Kawasaki)",
+        "lat": 35.5309,
+        "lng": 139.7029
+      },
+      {
+        "n": "Schneider CPC (Inkasso, Türkheim)",
+        "lat": 48.0581,
+        "lng": 10.6261
+      },
+      {
+        "n": "IBM PC (Boca Raton, Florida)",
+        "lat": 26.3683,
+        "lng": -80.1289
+      },
+      {
+        "n": "Osborne 1 (Osborne Computer, Hayward)",
+        "lat": 37.6688,
+        "lng": -122.0808
+      },
+      {
+        "n": "SAM Coupé (Miles Gordon Technology, Swansea)",
+        "lat": 51.6214,
+        "lng": -3.9436
+      }
     ]
   },
   "rechenzentren": {
     "prompt": "Wo befindet sich dieses bedeutende Rechenzentrum?",
     "items": [
-      {"n": "Google Data Center (The Dalles, Oregon)", "lat": 45.5946, "lng": -121.1786},
-      {"n": "Microsoft Azure East US (Boydton, Virginia)", "lat": 36.6642, "lng": -78.3875},
-      {"n": "Amazon AWS us-east-1 (Ashburn, Virginia)", "lat": 39.0438, "lng": -77.4874},
-      {"n": "Equinix NY5 (Secaucus, NJ)", "lat": 40.7895, "lng": -74.0565},
-      {"n": "Facebook Data Center (Luleå, Schweden)", "lat": 65.5848, "lng": 22.1547},
-      {"n": "Apple iCloud Data Center (Mesa, Arizona)", "lat": 33.4152, "lng": -111.8315},
-      {"n": "Deutsche Telekom T-Systems (Biere)", "lat": 52.0333, "lng": 11.6167},
-      {"n": "Green Mountain DC (Rjukan, Norwegen)", "lat": 59.8808, "lng": 8.5750},
-      {"n": "CERN Data Centre (Genf)", "lat": 46.2330, "lng": 6.0557},
-      {"n": "Alibaba Cloud (Hangzhou)", "lat": 30.2741, "lng": 120.1551},
-      {"n": "Tencent Cloud (Shenzhen)", "lat": 22.5431, "lng": 114.0579},
-      {"n": "Interxion AMS1 (Amsterdam)", "lat": 52.3676, "lng": 4.9041},
-      {"n": "Lefdal Mine Datacenter (Måløy, Norwegen)", "lat": 61.9338, "lng": 5.1173},
-      {"n": "Iron Mountain (Boyers, Pennsylvania)", "lat": 41.0981, "lng": -79.9012},
-      {"n": "CyrusOne (Dallas)", "lat": 32.7767, "lng": -96.7970},
-      {"n": "Digital Realty (Singapore)", "lat": 1.3521, "lng": 103.8198},
-      {"n": "NTT Data Center (Osaka)", "lat": 34.6937, "lng": 135.5023},
-      {"n": "Yandex Data Center (Mäntsälä, Finnland)", "lat": 60.6351, "lng": 25.3217},
-      {"n": "SuperNAP (Las Vegas)", "lat": 36.1699, "lng": -115.1398},
-      {"n": "QTS Richmond Data Center (Richmond, VA)", "lat": 37.5407, "lng": -77.4360}
+      {
+        "n": "Google Data Center (The Dalles, Oregon)",
+        "lat": 45.5946,
+        "lng": -121.1786
+      },
+      {
+        "n": "Microsoft Azure East US (Boydton, Virginia)",
+        "lat": 36.6642,
+        "lng": -78.3875
+      },
+      {
+        "n": "Amazon AWS us-east-1 (Ashburn, Virginia)",
+        "lat": 39.0438,
+        "lng": -77.4874
+      },
+      {
+        "n": "Equinix NY5 (Secaucus, NJ)",
+        "lat": 40.7895,
+        "lng": -74.0565
+      },
+      {
+        "n": "Facebook Data Center (Luleå, Schweden)",
+        "lat": 65.5848,
+        "lng": 22.1547
+      },
+      {
+        "n": "Apple iCloud Data Center (Mesa, Arizona)",
+        "lat": 33.4152,
+        "lng": -111.8315
+      },
+      {
+        "n": "Deutsche Telekom T-Systems (Biere)",
+        "lat": 52.0333,
+        "lng": 11.6167
+      },
+      {
+        "n": "Green Mountain DC (Rjukan, Norwegen)",
+        "lat": 59.8808,
+        "lng": 8.575
+      },
+      {
+        "n": "CERN Data Centre (Genf)",
+        "lat": 46.233,
+        "lng": 6.0557
+      },
+      {
+        "n": "Alibaba Cloud (Hangzhou)",
+        "lat": 30.2741,
+        "lng": 120.1551
+      },
+      {
+        "n": "Tencent Cloud (Shenzhen)",
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      {
+        "n": "Interxion AMS1 (Amsterdam)",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      {
+        "n": "Lefdal Mine Datacenter (Måløy, Norwegen)",
+        "lat": 61.9338,
+        "lng": 5.1173
+      },
+      {
+        "n": "Iron Mountain (Boyers, Pennsylvania)",
+        "lat": 41.0981,
+        "lng": -79.9012
+      },
+      {
+        "n": "CyrusOne (Dallas)",
+        "lat": 32.7767,
+        "lng": -96.797
+      },
+      {
+        "n": "Digital Realty (Singapore)",
+        "lat": 1.3521,
+        "lng": 103.8198
+      },
+      {
+        "n": "NTT Data Center (Osaka)",
+        "lat": 34.6937,
+        "lng": 135.5023
+      },
+      {
+        "n": "Yandex Data Center (Mäntsälä, Finnland)",
+        "lat": 60.6351,
+        "lng": 25.3217
+      },
+      {
+        "n": "SuperNAP (Las Vegas)",
+        "lat": 36.1699,
+        "lng": -115.1398
+      },
+      {
+        "n": "QTS Richmond Data Center (Richmond, VA)",
+        "lat": 37.5407,
+        "lng": -77.436
+      },
+      {
+        "n": "Amazon AWS Frankfurt",
+        "lat": 50.12,
+        "lng": 8.68
+      },
+      {
+        "n": "Microsoft Azure Dublin",
+        "lat": 53.33,
+        "lng": -6.25
+      },
+      {
+        "n": "Facebook Luleå Data Center",
+        "lat": 65.57,
+        "lng": 22.15
+      },
+      {
+        "n": "Apple Data Center Maiden, NC",
+        "lat": 35.57,
+        "lng": -81.39
+      },
+      {
+        "n": "Google Data Center Hamina, Finland",
+        "lat": 60.57,
+        "lng": 27.2
+      },
+      {
+        "n": "Tencent Cloud Beijing",
+        "lat": 39.91,
+        "lng": 116.39
+      },
+      {
+        "n": "Baidu Data Center Yangquan",
+        "lat": 37.86,
+        "lng": 113.58
+      },
+      {
+        "n": "Equinix LD4 Slough UK",
+        "lat": 51.51,
+        "lng": -0.58
+      },
+      {
+        "n": "Digital Realty Atlanta, GA",
+        "lat": 33.75,
+        "lng": -84.39
+      },
+      {
+        "n": "T-Systems München RZ",
+        "lat": 48.14,
+        "lng": 11.58
+      },
+      {
+        "n": "Lefdal Mine Datacenter, Norwegen",
+        "lat": 61.87,
+        "lng": 5.28
+      },
+      {
+        "n": "EcoDataCenter Falun, Schweden",
+        "lat": 60.6,
+        "lng": 15.6
+      },
+      {
+        "n": "Verne Global Keflavik, Island",
+        "lat": 63.99,
+        "lng": -22.61
+      },
+      {
+        "n": "Green Mountain Rennesøy, Norwegen",
+        "lat": 59.15,
+        "lng": 5.73
+      },
+      {
+        "n": "Meta Data Center Papillon, Nebraska",
+        "lat": 40.73,
+        "lng": -97.6
+      },
+      {
+        "n": "Google Data Center Council Bluffs, Iowa",
+        "lat": 41.26,
+        "lng": -95.86
+      },
+      {
+        "n": "OVHcloud Roubaix Frankreich",
+        "lat": 50.69,
+        "lng": 3.18
+      },
+      {
+        "n": "Hetzner Rechenzentrum Falkenstein",
+        "lat": 50.46,
+        "lng": 12.37
+      },
+      {
+        "n": "KDDI Data Center Sapporo",
+        "lat": 43.06,
+        "lng": 141.36
+      },
+      {
+        "n": "Apple Data Center (Reno, Nevada)",
+        "lat": 39.53,
+        "lng": -119.81
+      },
+      {
+        "n": "Google Data Center (Pryor, Oklahoma)",
+        "lat": 36.3,
+        "lng": -95.31
+      }
     ]
   },
   "pioniere": {
     "prompt": "Wo wurde dieser Tech-Pionier geboren?",
     "items": [
-      {"n": "Alan Turing (London)", "lat": 51.5074, "lng": -0.1278},
-      {"n": "Ada Lovelace (London)", "lat": 51.5074, "lng": -0.1278},
-      {"n": "John von Neumann (Budapest)", "lat": 47.4979, "lng": 19.0402},
-      {"n": "Grace Hopper (New York City)", "lat": 40.7128, "lng": -74.0060},
-      {"n": "Claude Shannon (Petoskey, Michigan)", "lat": 45.3736, "lng": -84.9553},
-      {"n": "Tim Berners-Lee (London)", "lat": 51.5074, "lng": -0.1278},
-      {"n": "Nikola Tesla (Smiljan, Kroatien)", "lat": 44.5576, "lng": 15.3824},
-      {"n": "Charles Babbage (London)", "lat": 51.5074, "lng": -0.1278},
-      {"n": "Linus Torvalds (Helsinki)", "lat": 60.1699, "lng": 24.9384},
-      {"n": "Bill Gates (Seattle)", "lat": 47.6062, "lng": -122.3321},
-      {"n": "Steve Jobs (San Francisco)", "lat": 37.7749, "lng": -122.4194},
-      {"n": "Dennis Ritchie (Bronxville, NY)", "lat": 40.9415, "lng": -73.8343},
-      {"n": "Ken Thompson (New Orleans)", "lat": 29.9511, "lng": -90.0715},
-      {"n": "Vint Cerf (New Haven, Connecticut)", "lat": 41.3082, "lng": -72.9279},
-      {"n": "Edsger Dijkstra (Rotterdam)", "lat": 51.9244, "lng": 4.4777},
-      {"n": "Donald Knuth (Milwaukee)", "lat": 43.0389, "lng": -87.9065},
-      {"n": "Margaret Hamilton (Paoli, Indiana)", "lat": 39.7670, "lng": -86.4683},
-      {"n": "Guido van Rossum (Haarlem)", "lat": 52.3873, "lng": 4.6462},
-      {"n": "Konrad Zuse (Berlin)", "lat": 52.5200, "lng": 13.4050},
-      {"n": "John McCarthy (Boston)", "lat": 42.3601, "lng": -71.0589}
+      {
+        "n": "Alan Turing (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Ada Lovelace (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "John von Neumann (Budapest)",
+        "lat": 47.4979,
+        "lng": 19.0402
+      },
+      {
+        "n": "Grace Hopper (New York City)",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      {
+        "n": "Claude Shannon (Petoskey, Michigan)",
+        "lat": 45.3736,
+        "lng": -84.9553
+      },
+      {
+        "n": "Tim Berners-Lee (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Nikola Tesla (Smiljan, Kroatien)",
+        "lat": 44.5576,
+        "lng": 15.3824
+      },
+      {
+        "n": "Charles Babbage (London)",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      {
+        "n": "Linus Torvalds (Helsinki)",
+        "lat": 60.1699,
+        "lng": 24.9384
+      },
+      {
+        "n": "Bill Gates (Seattle)",
+        "lat": 47.6062,
+        "lng": -122.3321
+      },
+      {
+        "n": "Steve Jobs (San Francisco)",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "n": "Dennis Ritchie (Bronxville, NY)",
+        "lat": 40.9415,
+        "lng": -73.8343
+      },
+      {
+        "n": "Ken Thompson (New Orleans)",
+        "lat": 29.9511,
+        "lng": -90.0715
+      },
+      {
+        "n": "Vint Cerf (New Haven, Connecticut)",
+        "lat": 41.3082,
+        "lng": -72.9279
+      },
+      {
+        "n": "Edsger Dijkstra (Rotterdam)",
+        "lat": 51.9244,
+        "lng": 4.4777
+      },
+      {
+        "n": "Donald Knuth (Milwaukee)",
+        "lat": 43.0389,
+        "lng": -87.9065
+      },
+      {
+        "n": "Margaret Hamilton (Paoli, Indiana)",
+        "lat": 39.767,
+        "lng": -86.4683
+      },
+      {
+        "n": "Guido van Rossum (Haarlem)",
+        "lat": 52.3873,
+        "lng": 4.6462
+      },
+      {
+        "n": "Konrad Zuse (Berlin)",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      {
+        "n": "John McCarthy (Boston)",
+        "lat": 42.3601,
+        "lng": -71.0589
+      }
     ]
   },
   "tech_museen": {
     "prompt": "Wo befindet sich dieses Technologiemuseum?",
     "items": [
-      {"n": "Computer History Museum (Mountain View)", "lat": 37.4146, "lng": -122.0774},
-      {"n": "Deutsches Museum (München)", "lat": 48.1299, "lng": 11.5834},
-      {"n": "National Museum of Computing (Bletchley Park)", "lat": 51.9975, "lng": -0.7408},
-      {"n": "Science Museum (London)", "lat": 51.4978, "lng": -0.1742},
-      {"n": "Musée des Arts et Métiers (Paris)", "lat": 48.8656, "lng": 2.3554},
-      {"n": "Smithsonian NMAH (Washington D.C.)", "lat": 38.8911, "lng": -77.0300},
-      {"n": "Technisches Museum Wien", "lat": 48.1952, "lng": 16.3335},
-      {"n": "Heinz Nixdorf MuseumsForum (Paderborn)", "lat": 51.7189, "lng": 8.7575},
-      {"n": "Museo Nazionale della Scienza e Tecnologia (Mailand)", "lat": 45.4628, "lng": 9.1699},
-      {"n": "National Science and Technology Museum (Taipei)", "lat": 22.6273, "lng": 120.3014},
-      {"n": "Cité des Sciences et de l'Industrie (Paris)", "lat": 48.8959, "lng": 2.3878},
-      {"n": "Tekniska museet (Stockholm)", "lat": 59.3463, "lng": 18.1016},
-      {"n": "CERN Microcosm (Genf)", "lat": 46.2330, "lng": 6.0557},
-      {"n": "Intel Museum (Santa Clara)", "lat": 37.3875, "lng": -121.9636},
-      {"n": "Living Computer Museum (Seattle)", "lat": 47.5945, "lng": -122.3300},
-      {"n": "Powerhouse Museum (Sydney)", "lat": -33.8783, "lng": 151.1992},
-      {"n": "National Space Centre (Leicester)", "lat": 52.6512, "lng": -1.1109},
-      {"n": "Ars Electronica Center (Linz)", "lat": 48.3060, "lng": 14.2858},
-      {"n": "MiMus (Valladolid) — IT-Museum", "lat": 41.6528, "lng": -4.7245},
-      {"n": "Pavilion of Knowledge (Lissabon)", "lat": 38.7644, "lng": -9.0951}
+      {
+        "n": "Computer History Museum (Mountain View)",
+        "lat": 37.4146,
+        "lng": -122.0774
+      },
+      {
+        "n": "Deutsches Museum (München)",
+        "lat": 48.1299,
+        "lng": 11.5834
+      },
+      {
+        "n": "National Museum of Computing (Bletchley Park)",
+        "lat": 51.9975,
+        "lng": -0.7408
+      },
+      {
+        "n": "Science Museum (London)",
+        "lat": 51.4978,
+        "lng": -0.1742
+      },
+      {
+        "n": "Musée des Arts et Métiers (Paris)",
+        "lat": 48.8656,
+        "lng": 2.3554
+      },
+      {
+        "n": "Smithsonian NMAH (Washington D.C.)",
+        "lat": 38.8911,
+        "lng": -77.03
+      },
+      {
+        "n": "Technisches Museum Wien",
+        "lat": 48.1952,
+        "lng": 16.3335
+      },
+      {
+        "n": "Heinz Nixdorf MuseumsForum (Paderborn)",
+        "lat": 51.7189,
+        "lng": 8.7575
+      },
+      {
+        "n": "Museo Nazionale della Scienza e Tecnologia (Mailand)",
+        "lat": 45.4628,
+        "lng": 9.1699
+      },
+      {
+        "n": "National Science and Technology Museum (Taipei)",
+        "lat": 22.6273,
+        "lng": 120.3014
+      },
+      {
+        "n": "Cité des Sciences et de l'Industrie (Paris)",
+        "lat": 48.8959,
+        "lng": 2.3878
+      },
+      {
+        "n": "Tekniska museet (Stockholm)",
+        "lat": 59.3463,
+        "lng": 18.1016
+      },
+      {
+        "n": "CERN Microcosm (Genf)",
+        "lat": 46.233,
+        "lng": 6.0557
+      },
+      {
+        "n": "Intel Museum (Santa Clara)",
+        "lat": 37.3875,
+        "lng": -121.9636
+      },
+      {
+        "n": "Living Computer Museum (Seattle)",
+        "lat": 47.5945,
+        "lng": -122.33
+      },
+      {
+        "n": "Powerhouse Museum (Sydney)",
+        "lat": -33.8783,
+        "lng": 151.1992
+      },
+      {
+        "n": "National Space Centre (Leicester)",
+        "lat": 52.6512,
+        "lng": -1.1109
+      },
+      {
+        "n": "Ars Electronica Center (Linz)",
+        "lat": 48.306,
+        "lng": 14.2858
+      },
+      {
+        "n": "MiMus (Valladolid) — IT-Museum",
+        "lat": 41.6528,
+        "lng": -4.7245
+      },
+      {
+        "n": "Pavilion of Knowledge (Lissabon)",
+        "lat": 38.7644,
+        "lng": -9.0951
+      }
     ]
   },
   "supercomputer": {
     "prompt": "Wo steht dieser Supercomputer?",
     "items": [
-      {"n": "Frontier (Oak Ridge National Lab, Tennessee)", "lat": 35.9311, "lng": -84.3103},
-      {"n": "Aurora (Argonne National Lab, Illinois)", "lat": 41.7170, "lng": -87.9811},
-      {"n": "Eagle (Microsoft Azure — verteil)", "lat": 47.6062, "lng": -122.3321},
-      {"n": "Fugaku (RIKEN, Kobe)", "lat": 34.6901, "lng": 135.1956},
-      {"n": "LUMI (CSC, Kajaani, Finnland)", "lat": 64.2270, "lng": 27.7273},
-      {"n": "Leonardo (CINECA, Bologna)", "lat": 44.4949, "lng": 11.3426},
-      {"n": "MareNostrum 5 (BSC, Barcelona)", "lat": 41.3892, "lng": 2.1159},
-      {"n": "SuperMUC-NG (LRZ, Garching)", "lat": 48.2620, "lng": 11.6685},
-      {"n": "Summit (Oak Ridge, Tennessee)", "lat": 35.9311, "lng": -84.3103},
-      {"n": "Sunway TaihuLight (Wuxi)", "lat": 31.4913, "lng": 120.3120},
-      {"n": "Tianhe-2A (Guangzhou)", "lat": 23.1291, "lng": 113.2644},
-      {"n": "Perlmutter (NERSC, Berkeley)", "lat": 37.8716, "lng": -122.2727},
-      {"n": "Eos (NVIDIA, Santa Clara)", "lat": 37.3861, "lng": -121.9550},
-      {"n": "Hawk (HLRS, Stuttgart)", "lat": 48.7458, "lng": 9.1057},
-      {"n": "JUWELS Booster (FZ Jülich)", "lat": 50.9077, "lng": 6.3832},
-      {"n": "Shaheen III (KAUST, Saudi-Arabien)", "lat": 22.3076, "lng": 39.1026},
-      {"n": "Param Siddhi-AI (C-DAC, Pune)", "lat": 18.5204, "lng": 73.8567},
-      {"n": "Ngarrgu Tindebeek (ANU, Canberra)", "lat": -35.2809, "lng": 149.1300},
-      {"n": "Narval (Calcul Québec, Montreal)", "lat": 45.5017, "lng": -73.5673},
-      {"n": "Dardel (KTH, Stockholm)", "lat": 59.3470, "lng": 18.0730}
+      {
+        "n": "Frontier (Oak Ridge National Lab, Tennessee)",
+        "lat": 35.9311,
+        "lng": -84.3103
+      },
+      {
+        "n": "Aurora (Argonne National Lab, Illinois)",
+        "lat": 41.717,
+        "lng": -87.9811
+      },
+      {
+        "n": "Eagle (Microsoft Azure — verteil)",
+        "lat": 47.6062,
+        "lng": -122.3321
+      },
+      {
+        "n": "Fugaku (RIKEN, Kobe)",
+        "lat": 34.6901,
+        "lng": 135.1956
+      },
+      {
+        "n": "LUMI (CSC, Kajaani, Finnland)",
+        "lat": 64.227,
+        "lng": 27.7273
+      },
+      {
+        "n": "Leonardo (CINECA, Bologna)",
+        "lat": 44.4949,
+        "lng": 11.3426
+      },
+      {
+        "n": "MareNostrum 5 (BSC, Barcelona)",
+        "lat": 41.3892,
+        "lng": 2.1159
+      },
+      {
+        "n": "SuperMUC-NG (LRZ, Garching)",
+        "lat": 48.262,
+        "lng": 11.6685
+      },
+      {
+        "n": "Summit (Oak Ridge, Tennessee)",
+        "lat": 35.9311,
+        "lng": -84.3103
+      },
+      {
+        "n": "Sunway TaihuLight (Wuxi)",
+        "lat": 31.4913,
+        "lng": 120.312
+      },
+      {
+        "n": "Tianhe-2A (Guangzhou)",
+        "lat": 23.1291,
+        "lng": 113.2644
+      },
+      {
+        "n": "Perlmutter (NERSC, Berkeley)",
+        "lat": 37.8716,
+        "lng": -122.2727
+      },
+      {
+        "n": "Eos (NVIDIA, Santa Clara)",
+        "lat": 37.3861,
+        "lng": -121.955
+      },
+      {
+        "n": "Hawk (HLRS, Stuttgart)",
+        "lat": 48.7458,
+        "lng": 9.1057
+      },
+      {
+        "n": "JUWELS Booster (FZ Jülich)",
+        "lat": 50.9077,
+        "lng": 6.3832
+      },
+      {
+        "n": "Shaheen III (KAUST, Saudi-Arabien)",
+        "lat": 22.3076,
+        "lng": 39.1026
+      },
+      {
+        "n": "Param Siddhi-AI (C-DAC, Pune)",
+        "lat": 18.5204,
+        "lng": 73.8567
+      },
+      {
+        "n": "Ngarrgu Tindebeek (ANU, Canberra)",
+        "lat": -35.2809,
+        "lng": 149.13
+      },
+      {
+        "n": "Narval (Calcul Québec, Montreal)",
+        "lat": 45.5017,
+        "lng": -73.5673
+      },
+      {
+        "n": "Dardel (KTH, Stockholm)",
+        "lat": 59.347,
+        "lng": 18.073
+      },
+      {
+        "n": "Eagle (Microsoft Azure)",
+        "lat": 47.63,
+        "lng": -122.12
+      },
+      {
+        "n": "HPC6 (Eni, Italien)",
+        "lat": 44.3,
+        "lng": 11.7
+      },
+      {
+        "n": "Wuwei (Beijing, China)",
+        "lat": 39.91,
+        "lng": 116.39
+      },
+      {
+        "n": "Selene (NVIDIA, USA)",
+        "lat": 40.43,
+        "lng": -79.96
+      },
+      {
+        "n": "Perlmutter (Berkeley Lab, USA)",
+        "lat": 37.88,
+        "lng": -122.25
+      },
+      {
+        "n": "Hawk (Stuttgart, Deutschland)",
+        "lat": 48.78,
+        "lng": 9.18
+      },
+      {
+        "n": "Tianhe-2A (Guangzhou, China)",
+        "lat": 23.16,
+        "lng": 113.26
+      },
+      {
+        "n": "Sunway TaihuLight (Wuxi, China)",
+        "lat": 31.57,
+        "lng": 120.29
+      },
+      {
+        "n": "Blue Gene/Q (IBM Yorktown Heights)",
+        "lat": 41.07,
+        "lng": -73.8
+      },
+      {
+        "n": "Stampede2 (Austin, Texas)",
+        "lat": 30.29,
+        "lng": -97.74
+      },
+      {
+        "n": "Comet (San Diego Supercomputer Center)",
+        "lat": 32.88,
+        "lng": -117.23
+      },
+      {
+        "n": "ARCHER2 (Edinburgh, UK)",
+        "lat": 55.96,
+        "lng": -3.21
+      },
+      {
+        "n": "Isambard-AI (Bristol, UK)",
+        "lat": 51.46,
+        "lng": -2.6
+      },
+      {
+        "n": "ASPIRE 2A (NTU Singapore)",
+        "lat": 1.35,
+        "lng": 103.68
+      },
+      {
+        "n": "Deucalion (LIP Porto, Portugal)",
+        "lat": 41.18,
+        "lng": -8.61
+      },
+      {
+        "n": "AI Bridging Cloud (ABCI, Japan)",
+        "lat": 35.7,
+        "lng": 139.77
+      },
+      {
+        "n": "Atos Bull Sequana (CEA Saclay)",
+        "lat": 48.72,
+        "lng": 2.17
+      },
+      {
+        "n": "Karolina (Ostrava, Tschechien)",
+        "lat": 49.83,
+        "lng": 18.29
+      },
+      {
+        "n": "HPC Wales (Aberystwyth, UK)",
+        "lat": 52.42,
+        "lng": -4.09
+      },
+      {
+        "n": "Irene-Rome (CEA/TGCC Bruyères)",
+        "lat": 48.78,
+        "lng": 2.22
+      },
+      {
+        "n": "NCHPC Poznan (Polska)",
+        "lat": 52.41,
+        "lng": 16.93
+      }
     ]
   }
 }

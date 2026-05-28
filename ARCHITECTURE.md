@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 261 (Stand: Mai 2026)
-**Build:** gen.py → 1.22 MB | GeoQuest.html → 2.47 MB | 681 Spielmodi | verify: 89/89
+**Version:** Phase 265 (Stand: Mai 2026)
+**Build:** gen.py → 1.22 MB | GeoQuest.html → 2.58 MB | 681 Spielmodi | verify: 89/89
 
 ---
 
@@ -1028,18 +1028,22 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **259** | patch_259_data_expansion.py | **Data Expansion Sprint: 15 Modi aufgefüllt (+297 Einträge). 14x Kultur-Match 5→25, canyons 8→25** |
 | **260** | patch_260_astro_massive.py | **Astronomie Massive Expansion: 20 Astro-Modi skaliert (+547 Einträge). astro_pin/hl/match auf 28-58 Items** |
 | **261** | patch_261_geo_massive.py | **Geologie Massive Expansion: 20 Geo-Modi skaliert (+664 Einträge). geo_pin 8→38-48, geo_hl 8→36-46, geo_match 8→45-54** |
+| **262** | patch_262_sport_massive.py | **Sport-Wissen Massive Expansion: 17 Sport-Modi skaliert (+608 Einträge). sport_pin 8→35-47, sport_hl 8→41-49, sport_match 8→50-54** |
+| **263** | post_phase.py | **post_phase.py CLI Tooling implementiert** |
+| **264** | patch_264_mega_sweep.py | **Mega-Sweep: tiere_pin/arch_match/emob/gastro/tech/pflanzen auf 40+ skaliert (+667 Eintraege). Coord-Dedup Guard aktiv** |
+| **265** | patch_265_geo_sport_astro_sweep.py | **Geo/Sport/Astro Sweep: 40 Modi auf 25-40 Items skaliert. +787 Eintraege. Arch-Match Restluecken geschlossen.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 261 -- Geologie Massive Expansion (+664 Einträge), 681 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 265 -- Geo/Sport/Astro Sweep: 40 Modi auf 25-40 Items skaliert. +787 Eintraege. Arch-Match Restluecken geschlossen., 681 Modi, 37 Datendateien, Mai 2026.*
 
 
 ---
 
 ## 13. Vollstaendiger Spielmodus-Katalog
 
-**Stand Phase 261 -- 681 Modi in 20 Kategorien**
+**Stand Phase 265 -- 681 Modi in 20 Kategorien**
 
 > **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
 
@@ -1904,27 +1908,4 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | Kunstwerke -> Ort | Match | `uk_kunstwerke` |
 | Ber\u00fchmte Filmsets | Match | `uk_filmsets` |
 | Historische Ruinen | Match | `uk_ruinen` |
-| Ber\u00fchmte Br\u00fccken | Match | `uk_bruecken` |
-| Sakralbauten der Welt | Match | `uk_kirchen` |
-| Wolkenkratzer-Duell | Match | `uk_wolkenkratzer` |
-
-## 13.20 Neue Modi -- 7 Modi
-
-*Logik-Gitter, Reiseroute, Wort-Schmiede, Flaggen-Fusion, Zeitzonen-Jumper*
-
-`7 Classic`
-
-
-| Titel | Typ | Modus-ID |
-|-------|-----|---------|
-| Logik-Gitter | Classic | `logic_grid` |
-| Reiseroute | Classic | `travel_route` |
-| Flaggen-Fusion | Classic | `flag_fusion` |
-| Klima-Krimi | Classic | `climate_mystery` |
-| Alphabet-Sprint | Classic | `alpha_sprint` |
-| Wort-Schmiede | Classic | `wort_schmiede` |
-| Zeitzonen-Jumper | Classic | `timezone_jumper` |
-
----
-
-*Katalog: 681 Modi | Stand Phase 261 | Mai 2026*
+| Ber\u00fchmte Br\u00fccken | Match | `

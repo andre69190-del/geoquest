@@ -270,6 +270,106 @@
       {
         "n": "Erde",
         "c": "Einziger bekannter bewohnter Planet"
+      },
+      {
+        "n": "Pluto",
+        "c": "Erster bekannter Zwergplanet — 5 Monde (inkl. Charon)"
+      },
+      {
+        "n": "Ceres",
+        "c": "Einziger Zwergplanet im Asteroidengürtel"
+      },
+      {
+        "n": "Eris",
+        "c": "Massereicher als Pluto — löste Pluto-Debatte aus"
+      },
+      {
+        "n": "Titan",
+        "c": "Einziger Mond mit dichter Atmosphäre (Saturn)"
+      },
+      {
+        "n": "Europa",
+        "c": "Flüssiger Ozean unter Eisschicht (Jupiter)"
+      },
+      {
+        "n": "Io",
+        "c": "Vulkanischster Körper im Sonnensystem (Jupiter)"
+      },
+      {
+        "n": "Ganymed",
+        "c": "Größter Mond im Sonnensystem (Jupiter)"
+      },
+      {
+        "n": "Triton",
+        "c": "Einziger großer Mond mit rückläufiger Umlaufbahn (Neptun)"
+      },
+      {
+        "n": "Enceladus",
+        "c": "Wassergeysire — Kandidat für außerirdisches Leben (Saturn)"
+      },
+      {
+        "n": "Phobos",
+        "c": "Wird in ~50 Mio. Jahren auf den Mars stürzen"
+      },
+      {
+        "n": "Charon",
+        "c": "Fast so groß wie Pluto — bilden Doppelsystem"
+      },
+      {
+        "n": "Makemake",
+        "c": "Zwergplanet ohne nachgewiesene Atmosphäre"
+      },
+      {
+        "n": "Haumea",
+        "c": "Schnellst rotierender Zwergplanet (3,9h Rotation)"
+      },
+      {
+        "n": "Vesta",
+        "c": "Hellster Asteroid — mit bloßem Auge sichtbar"
+      },
+      {
+        "n": "Pallas",
+        "c": "Zweitgrößter Asteroid im Hauptgürtel"
+      },
+      {
+        "n": "Hygiea",
+        "c": "Viertgrößter Asteroid — kugelförmig"
+      },
+      {
+        "n": "Sedna",
+        "c": "Extremer Orbit — möglicherweise aus Oortscher Wolke"
+      },
+      {
+        "n": "Gonggong",
+        "c": "Roter Transneptunischer Körper mit einem Mond"
+      },
+      {
+        "n": "Quaoar",
+        "c": "Hat einen Ring — außergewöhnlich weit vom Körper entfernt"
+      },
+      {
+        "n": "Proxima Centauri b",
+        "c": "Nächster bekannter Exoplanet (4,2 Lichtjahre)"
+      },
+      {
+        "n": "TRAPPIST-1e",
+        "c": "Potenziell bewohnbarer Exoplanet in der habitablen Zone"
+      },
+      {
+        "n": "Kepler-452b",
+        "c": "\"Erd-Cousin\" — ähnliche Größe wie Erde, G-Typ-Stern"
+      },
+      {
+        "n": "Hot Jupiter",
+        "c": "Klasse Gasriesen in extrem engen Sternenorbits"
+      },
+      {
+        "n": "Ultima Thule / Arrokoth",
+        "c": "Kontaktzwilling — von New Horizons fotografiert"
+      },
+      {
+        "n": "Asteroid Ida",
+        "c": "Erster Asteroid mit bestätigtem eigenem Mond (Dactyl)"
       }
     ]
   },

@@ -34,6 +34,138 @@
       {
         "name": "London Marathon",
         "val": 1981
+      },
+      {
+        "name": "Athens Classic Marathon (Griechenland)",
+        "val": 1896
+      },
+      {
+        "name": "Polytechnic Marathon (England)",
+        "val": 1909
+      },
+      {
+        "name": "Antwerp Olympic Marathon (Belgien)",
+        "val": 1920
+      },
+      {
+        "name": "Enschede Marathon (Niederlande)",
+        "val": 1948
+      },
+      {
+        "name": "Comrades Marathon (Südafrika)",
+        "val": 1921
+      },
+      {
+        "name": "Karl-Marx-Stadt / Chemnitz Marathon (Deutschland)",
+        "val": 1959
+      },
+      {
+        "name": "New York City Marathon (USA)",
+        "val": 1970
+      },
+      {
+        "name": "Berlin Marathon (Deutschland)",
+        "val": 1974
+      },
+      {
+        "name": "London Marathon (England)",
+        "val": 1981
+      },
+      {
+        "name": "Chicago Marathon (USA)",
+        "val": 1977
+      },
+      {
+        "name": "Stockholm Marathon (Schweden)",
+        "val": 1979
+      },
+      {
+        "name": "Paris Marathon (Frankreich)",
+        "val": 1976
+      },
+      {
+        "name": "Vienna City Marathon (Österreich)",
+        "val": 1984
+      },
+      {
+        "name": "Rotterdam Marathon (Niederlande)",
+        "val": 1981
+      },
+      {
+        "name": "Amsterdam Marathon (Niederlande)",
+        "val": 1975
+      },
+      {
+        "name": "Seoul International Marathon (Südkorea)",
+        "val": 1931
+      },
+      {
+        "name": "Honolulu Marathon (USA)",
+        "val": 1973
+      },
+      {
+        "name": "Tokyo Marathon (Japan)",
+        "val": 2007
+      },
+      {
+        "name": "Toronto Waterfront Marathon (Kanada)",
+        "val": 1971
+      },
+      {
+        "name": "Singapore Marathon (Singapur)",
+        "val": 1982
+      },
+      {
+        "name": "Dubai Marathon (VAE)",
+        "val": 2000
+      },
+      {
+        "name": "Two Oceans Marathon (Südafrika)",
+        "val": 1970
+      },
+      {
+        "name": "São Paulo Marathon (Brasilien)",
+        "val": 1979
+      },
+      {
+        "name": "Buenos Aires Marathon (Argentinien)",
+        "val": 1994
+      },
+      {
+        "name": "Madrid Marathon (Spanien)",
+        "val": 1978
+      },
+      {
+        "name": "Brussels Marathon (Belgien)",
+        "val": 1981
+      },
+      {
+        "name": "Prague Marathon (Tschechien)",
+        "val": 1995
+      },
+      {
+        "name": "Warsaw Marathon (Polen)",
+        "val": 1981
+      },
+      {
+        "name": "Budapest Marathon (Ungarn)",
+        "val": 1984
+      },
+      {
+        "name": "Frankfurt Marathon (Deutschland)",
+        "val": 1981
+      },
+      {
+        "name": "Hamburg Marathon (Deutschland)",
+        "val": 1986
+      },
+      {
+        "name": "Rome Marathon (Italien)",
+        "val": 1987
+      },
+      {
+        "name": "Great Wall Marathon (China)",
+        "val": 1999
       }
     ]
   },
@@ -72,6 +204,166 @@
       {
         "name": "Estadio Azteca (Mexiko)",
         "val": 87
+      },
+      {
+        "name": "Salt Lake Stadium (Kolkata, Indien)",
+        "val": 85
+      },
+      {
+        "name": "FNB Stadium / Soccer City (Johannesburg, Südafrika)",
+        "val": 94
+      },
+      {
+        "name": "Wembley Stadium (London, England)",
+        "val": 90
+      },
+      {
+        "name": "Camp Nou (FC Barcelona, Spanien)",
+        "val": 99
+      },
+      {
+        "name": "Rose Bowl (Pasadena, USA)",
+        "val": 92
+      },
+      {
+        "name": "Estadio Monumental (Buenos Aires, Argentinien)",
+        "val": 84
+      },
+      {
+        "name": "Maracanã (Rio de Janeiro, Brasilien)",
+        "val": 78
+      },
+      {
+        "name": "Cricket Ground Ahmedabad (Indien)",
+        "val": 132
+      },
+      {
+        "name": "Eden Gardens (Kolkata, Indien)",
+        "val": 68
+      },
+      {
+        "name": "National Stadium Peking (China)",
+        "val": 91
+      },
+      {
+        "name": "Ohio Stadium (Columbus, USA)",
+        "val": 104
+      },
+      {
+        "name": "Kyle Field (Texas A&M, USA)",
+        "val": 102
+      },
+      {
+        "name": "Neyland Stadium (Tennessee, USA)",
+        "val": 102
+      },
+      {
+        "name": "Tiger Stadium (Louisiana, USA)",
+        "val": 102
+      },
+      {
+        "name": "Bryant-Denny Stadium (Alabama, USA)",
+        "val": 101
+      },
+      {
+        "name": "Darrell K Royal Stadium (Texas, USA)",
+        "val": 100
+      },
+      {
+        "name": "Cotton Bowl (Dallas, USA)",
+        "val": 92
+      },
+      {
+        "name": "Luzhniki Stadion (Moskau, Russland)",
+        "val": 81
+      },
+      {
+        "name": "Celtic Park (Glasgow, Schottland)",
+        "val": 60
+      },
+      {
+        "name": "Croke Park (Dublin, Irland)",
+        "val": 82
+      },
+      {
+        "name": "Aztekenstadion (Mexiko-Stadt)",
+        "val": 87
+      },
+      {
+        "name": "Stade de France (Saint-Denis)",
+        "val": 80
+      },
+      {
+        "name": "Allianz Arena (München, Deutschland)",
+        "val": 75
+      },
+      {
+        "name": "Signal Iduna Park (Dortmund, Deutschland)",
+        "val": 81
+      },
+      {
+        "name": "Olympiastadion Berlin (Deutschland)",
+        "val": 74
+      },
+      {
+        "name": "San Siro (Mailand, Italien)",
+        "val": 80
+      },
+      {
+        "name": "Santiago Bernabéu (Madrid, Spanien)",
+        "val": 81
+      },
+      {
+        "name": "MetLife Stadium (New Jersey, USA)",
+        "val": 82
+      },
+      {
+        "name": "AT&T Stadium (Dallas, USA)",
+        "val": 80
+      },
+      {
+        "name": "Allegiant Stadium (Las Vegas, USA)",
+        "val": 65
+      },
+      {
+        "name": "SoFi Stadium (Los Angeles, USA)",
+        "val": 70
+      },
+      {
+        "name": "Levi's Stadium (Santa Clara, USA)",
+        "val": 68
+      },
+      {
+        "name": "Lambeau Field (Green Bay, USA)",
+        "val": 81
+      },
+      {
+        "name": "Arrowhead Stadium (Kansas City, USA)",
+        "val": 77
+      },
+      {
+        "name": "Heinz Field / Acrisure Stadium (Pittsburgh, USA)",
+        "val": 68
+      },
+      {
+        "name": "Optus Stadium (Perth, Australien)",
+        "val": 60
+      },
+      {
+        "name": "Accor Stadium (Sydney, Australien)",
+        "val": 83
+      },
+      {
+        "name": "Cairo International Stadium (Ägypten)",
+        "val": 74
+      },
+      {
+        "name": "Azadi Stadium (Teheran, Iran)",
+        "val": 78
+      },
+      {
+        "name": "Lusail Iconic Stadium (Katar)",
+        "val": 88
       }
     ]
   },
@@ -110,6 +402,166 @@
       {
         "name": "Coutinho (Liverpool → Barcelona, 2018)",
         "val": 135
+      },
+      {
+        "name": "Joao Felix (Atletico → Chelsea, Leihe 2023)",
+        "val": 11
+      },
+      {
+        "name": "Jack Grealish (Aston Villa → ManCity, 2021)",
+        "val": 117
+      },
+      {
+        "name": "Harry Maguire (Leicester → Manchester Utd, 2019)",
+        "val": 87
+      },
+      {
+        "name": "Virgil van Dijk (Southampton → Liverpool, 2018)",
+        "val": 85
+      },
+      {
+        "name": "Alisson Becker (Roma → Liverpool, 2018)",
+        "val": 67
+      },
+      {
+        "name": "Kepa Arrizabalaga (Athletic → Chelsea, 2018)",
+        "val": 80
+      },
+      {
+        "name": "Eden Hazard (Chelsea → Real Madrid, 2019)",
+        "val": 115
+      },
+      {
+        "name": "Romelu Lukaku (Inter → Chelsea, 2021)",
+        "val": 113
+      },
+      {
+        "name": "Matthijs de Ligt (Juventus → Bayern, 2022)",
+        "val": 77
+      },
+      {
+        "name": "Jadon Sancho (Dortmund → Manchester Utd, 2021)",
+        "val": 85
+      },
+      {
+        "name": "Enzo Fernandez (Benfica → Chelsea, 2023)",
+        "val": 121
+      },
+      {
+        "name": "Declan Rice (West Ham → Arsenal, 2023)",
+        "val": 116
+      },
+      {
+        "name": "Moises Caicedo (Brighton → Chelsea, 2023)",
+        "val": 116
+      },
+      {
+        "name": "Vinicius Jr. (Real — Vertragsverlängerung 2024)",
+        "val": 180
+      },
+      {
+        "name": "Ruben Neves (Wolves → Al-Hilal, 2023)",
+        "val": 55
+      },
+      {
+        "name": "Karim Benzema (Real Madrid → Al-Ittihad, 2023)",
+        "val": 30
+      },
+      {
+        "name": "Roberto Firmino (Liverpool → Freier Wechsel, 2023)",
+        "val": 0
+      },
+      {
+        "name": "Erling Haaland (Dortmund → Manchester City, 2022)",
+        "val": 60
+      },
+      {
+        "name": "Aurelien Tchouameni (Monaco → Real Madrid, 2022)",
+        "val": 100
+      },
+      {
+        "name": "Ferran Torres (Valencia → Manchester City, 2021)",
+        "val": 23
+      },
+      {
+        "name": "Ferran Torres (ManCity → Barcelona, 2022)",
+        "val": 55
+      },
+      {
+        "name": "Pedri (verlängert bei Barça, 2023)",
+        "val": 0
+      },
+      {
+        "name": "Gavi (verlängert bei Barça, 2022)",
+        "val": 0
+      },
+      {
+        "name": "Jude Bellingham (Dortmund → Real Madrid, 2023)",
+        "val": 103
+      },
+      {
+        "name": "Gonzalo Higuain (Napoli → Juventus, 2016)",
+        "val": 90
+      },
+      {
+        "name": "Paul Pogba (Juventus → Manchester Utd, 2016)",
+        "val": 105
+      },
+      {
+        "name": "Cristiano Ronaldo (Real → Juventus, 2018)",
+        "val": 117
+      },
+      {
+        "name": "Zlatan Ibrahimovic (Inter → Barcelona, 2009)",
+        "val": 69
+      },
+      {
+        "name": "Romelu Lukaku (Manchester Utd → Inter, 2019)",
+        "val": 74
+      },
+      {
+        "name": "Nicolas Pepe (Lille → Arsenal, 2019)",
+        "val": 80
+      },
+      {
+        "name": "Joao Cancelo (Juventus → ManCity, 2019)",
+        "val": 65
+      },
+      {
+        "name": "Riyad Mahrez (Leicester → ManCity, 2018)",
+        "val": 67
+      },
+      {
+        "name": "Benjamin Mendy (Monaco → ManCity, 2017)",
+        "val": 57
+      },
+      {
+        "name": "Bernardo Silva (Monaco → ManCity, 2017)",
+        "val": 50
+      },
+      {
+        "name": "Kaka (AC Milan → Real Madrid, 2009)",
+        "val": 67
+      },
+      {
+        "name": "Zinedine Zidane (Juventus → Real Madrid, 2001)",
+        "val": 77
+      },
+      {
+        "name": "Hernan Crespo (Lazio → Parma, 2000)",
+        "val": 56
+      },
+      {
+        "name": "Gianluigi Buffon (Parma → Juventus, 2001)",
+        "val": 53
+      },
+      {
+        "name": "Ronaldo (Fenomeno, Barcelona → Inter, 1997)",
+        "val": 27
+      },
+      {
+        "name": "Kylian Mbappe (PSG → Real Madrid, 2024, ablösefrei)",
+        "val": 0
       }
     ]
   },
@@ -148,6 +600,94 @@
       {
         "name": "Ivan Ukhov (Olympiasieger 2012)",
         "val": 238
+      },
+      {
+        "name": "Mutaz Essa Barshim (Katar, 2014)",
+        "val": 241
+      },
+      {
+        "name": "Ivan Ukhov (Russland, 2014)",
+        "val": 241
+      },
+      {
+        "name": "Patrik Sjöberg (Schweden, 1987)",
+        "val": 242
+      },
+      {
+        "name": "Charles Austin (USA, Atlanta 1996)",
+        "val": 239
+      },
+      {
+        "name": "Yaroslav Rybakov (Russland, 2005)",
+        "val": 240
+      },
+      {
+        "name": "Stefan Holm (Schweden, 2005)",
+        "val": 240
+      },
+      {
+        "name": "Rudolf Povarnitsyn (UdSSR, 1985)",
+        "val": 240
+      },
+      {
+        "name": "Vyacheslav Voronin (Russland, 2000)",
+        "val": 239
+      },
+      {
+        "name": "Hollis Conway (USA, 1989)",
+        "val": 238
+      },
+      {
+        "name": "Derek Drouin (Kanada, London 2012)",
+        "val": 238
+      },
+      {
+        "name": "Erik Kynard (USA, London 2012)",
+        "val": 238
+      },
+      {
+        "name": "Andriy Protsenko (Ukraine, 2014)",
+        "val": 237
+      },
+      {
+        "name": "Kyriakos Ioannou (Zypern, 2007)",
+        "val": 235
+      },
+      {
+        "name": "Jesse Williams (USA, 2012 WM)",
+        "val": 236
+      },
+      {
+        "name": "Majd Eddin Ghazal (Syrien, 2017)",
+        "val": 238
+      },
+      {
+        "name": "Hamish Kerr (Neuseeland, Paris 2024)",
+        "val": 236
+      },
+      {
+        "name": "Blanka Vlasic (Kroatien, 2009 WR Frau)",
+        "val": 208
+      },
+      {
+        "name": "Anna Chicherova (Russland, 2011)",
+        "val": 206
+      },
+      {
+        "name": "Hestrie Cloete (Südafrika, 2003)",
+        "val": 206
+      },
+      {
+        "name": "Yelena Slesarenko (Russland, Athen 04)",
+        "val": 206
+      },
+      {
+        "name": "Ruth Beitia (Spanien, 2016)",
+        "val": 197
+      },
+      {
+        "name": "Antonietta Di Martino (Italien, 2007)",
+        "val": 201
       }
     ]
   },
@@ -186,6 +726,166 @@
       {
         "name": "Max Verstappen (Red Bull Racing F1)",
         "val": 55
+      },
+      {
+        "name": "Lionel Messi (Inter Miami, 2023)",
+        "val": 135
+      },
+      {
+        "name": "Cristiano Ronaldo (Al Nassr, 2023)",
+        "val": 200
+      },
+      {
+        "name": "Karim Benzema (Al Ittihad, 2023)",
+        "val": 200
+      },
+      {
+        "name": "Neymar Jr. (Al Hilal, 2023)",
+        "val": 160
+      },
+      {
+        "name": "Kylian Mbappe (PSG, 2022)",
+        "val": 110
+      },
+      {
+        "name": "LeBron James (NBA Lakers, 2023)",
+        "val": 119
+      },
+      {
+        "name": "Stephen Curry (Golden State Warriors, 2023)",
+        "val": 51
+      },
+      {
+        "name": "Kevin Durant (Phoenix Suns, 2023)",
+        "val": 47
+      },
+      {
+        "name": "Giannis Antetokounmpo (Milwaukee Bucks, 2023)",
+        "val": 46
+      },
+      {
+        "name": "Ja Morant (Memphis Grizzlies, 2023)",
+        "val": 33
+      },
+      {
+        "name": "Lewis Hamilton (F1 Mercedes, 2021)",
+        "val": 62
+      },
+      {
+        "name": "Max Verstappen (F1 Red Bull, 2023)",
+        "val": 55
+      },
+      {
+        "name": "Fernando Alonso (F1 Aston Martin, 2023)",
+        "val": 20
+      },
+      {
+        "name": "Tiger Woods (Golf, Lebenszeit)",
+        "val": 60
+      },
+      {
+        "name": "Rory McIlroy (Golf, 2023)",
+        "val": 50
+      },
+      {
+        "name": "Jon Rahm (Golf LIV, 2023)",
+        "val": 560
+      },
+      {
+        "name": "Dustin Johnson (LIV Golf, 2022)",
+        "val": 125
+      },
+      {
+        "name": "Phil Mickelson (LIV Golf, 2022)",
+        "val": 200
+      },
+      {
+        "name": "Novak Djokovic (Tennis, 2023)",
+        "val": 34
+      },
+      {
+        "name": "Rafael Nadal (Tennis, 2022)",
+        "val": 14
+      },
+      {
+        "name": "Roger Federer (Tennis, 2022)",
+        "val": 90
+      },
+      {
+        "name": "Naomi Osaka (Tennis, 2021)",
+        "val": 57
+      },
+      {
+        "name": "Serena Williams (Tennis, 2022 gest.)",
+        "val": 41
+      },
+      {
+        "name": "Conor McGregor (UFC Boxing, 2021)",
+        "val": 180
+      },
+      {
+        "name": "Tyson Fury (Boxing, 2021)",
+        "val": 34
+      },
+      {
+        "name": "Anthony Joshua (Boxing, 2021)",
+        "val": 45
+      },
+      {
+        "name": "Canelo Alvarez (Boxing, 2022)",
+        "val": 90
+      },
+      {
+        "name": "Floyd Mayweather (Boxing, allzeit)",
+        "val": 285
+      },
+      {
+        "name": "Patrick Mahomes (NFL Chiefs, 2020)",
+        "val": 45
+      },
+      {
+        "name": "Josh Allen (NFL Bills, 2021)",
+        "val": 43
+      },
+      {
+        "name": "Aaron Rodgers (NFL Packers, 2022)",
+        "val": 50
+      },
+      {
+        "name": "Lamar Jackson (NFL Ravens, 2023)",
+        "val": 52
+      },
+      {
+        "name": "Dak Prescott (NFL Cowboys, 2021)",
+        "val": 40
+      },
+      {
+        "name": "Mike Trout (MLB Angels, 2021)",
+        "val": 38
+      },
+      {
+        "name": "Mookie Betts (MLB Dodgers, 2020)",
+        "val": 30
+      },
+      {
+        "name": "Shohei Ohtani (MLB Dodgers, 2024)",
+        "val": 70
+      },
+      {
+        "name": "Max Scherzer (MLB Mets, 2022)",
+        "val": 43
+      },
+      {
+        "name": "Gerrit Cole (MLB Yankees, 2020)",
+        "val": 36
+      },
+      {
+        "name": "Simone Biles (Turnen, 2024)",
+        "val": 10
+      },
+      {
+        "name": "Katie Ledecky (Schwimmen, 2023)",
+        "val": 3
       }
     ]
   },
@@ -224,6 +924,86 @@
       {
         "name": "Simone Biles (Turnen, USA)",
         "val": 7
+      },
+      {
+        "name": "Mark Spitz (Schwimmen, USA, 1972)",
+        "val": 9
+      },
+      {
+        "name": "Nikolai Andrianov (Turnen, UdSSR)",
+        "val": 7
+      },
+      {
+        "name": "Boris Shakhlin (Turnen, UdSSR)",
+        "val": 7
+      },
+      {
+        "name": "Vitali Scherbo (Turnen, Belarus)",
+        "val": 6
+      },
+      {
+        "name": "Marit Bjørgen (Skilanglauf, Norwegen)",
+        "val": 8
+      },
+      {
+        "name": "Ole Einar Bjørndalen (Biathlon, Norwegen)",
+        "val": 8
+      },
+      {
+        "name": "Bjørn Dæhlie (Skilanglauf, Norwegen)",
+        "val": 8
+      },
+      {
+        "name": "Usain Bolt (Leichtathletik, Jamaika)",
+        "val": 8
+      },
+      {
+        "name": "Matt Biondi (Schwimmen, USA)",
+        "val": 8
+      },
+      {
+        "name": "Jenny Thompson (Schwimmen, USA)",
+        "val": 8
+      },
+      {
+        "name": "Aladár Gerevich (Fechten, Ungarn)",
+        "val": 7
+      },
+      {
+        "name": "Edoardo Mangiarotti (Fechten, Italien)",
+        "val": 6
+      },
+      {
+        "name": "Ian Thorpe (Schwimmen, Australien)",
+        "val": 5
+      },
+      {
+        "name": "Nadia Comăneci (Turnen, Rumänien)",
+        "val": 5
+      },
+      {
+        "name": "Agnes Keleti (Turnen, Ungarn)",
+        "val": 5
+      },
+      {
+        "name": "Takashi Ono (Turnen, Japan)",
+        "val": 5
+      },
+      {
+        "name": "Lasse Virén (Leichtathletik, Finnland)",
+        "val": 4
+      },
+      {
+        "name": "Emil Zátopek (Leichtathletik, Tschechien)",
+        "val": 4
+      },
+      {
+        "name": "Michael Johnson (Leichtathletik, USA)",
+        "val": 4
+      },
+      {
+        "name": "Amy Van Dyken (Schwimmen, USA)",
+        "val": 4
       }
     ]
   },
@@ -262,6 +1042,90 @@
       {
         "name": "Lamine Yamal (FC Barcelona)",
         "val": 120
+      },
+      {
+        "name": "Vinicius Jr. (Real Madrid, 2024)",
+        "val": 180
+      },
+      {
+        "name": "Lamine Yamal (FC Barcelona, 2024)",
+        "val": 180
+      },
+      {
+        "name": "Bukayo Saka (Arsenal, 2024)",
+        "val": 140
+      },
+      {
+        "name": "Jamal Musiala (Bayern München, 2024)",
+        "val": 150
+      },
+      {
+        "name": "Phil Foden (Manchester City, 2024)",
+        "val": 150
+      },
+      {
+        "name": "Florian Wirtz (Bayer Leverkusen, 2024)",
+        "val": 130
+      },
+      {
+        "name": "Pedri (FC Barcelona, 2024)",
+        "val": 100
+      },
+      {
+        "name": "Rodri (Manchester City, 2024)",
+        "val": 130
+      },
+      {
+        "name": "Harry Kane (Bayern München, 2024)",
+        "val": 100
+      },
+      {
+        "name": "Federico Valverde (Real Madrid, 2024)",
+        "val": 100
+      },
+      {
+        "name": "Trent Alexander-Arnold (2024)",
+        "val": 80
+      },
+      {
+        "name": "Rúben Dias (Manchester City, 2024)",
+        "val": 80
+      },
+      {
+        "name": "Virgil van Dijk (Liverpool, 2024)",
+        "val": 50
+      },
+      {
+        "name": "Neymar Jr. (Al-Hilal, 2024)",
+        "val": 45
+      },
+      {
+        "name": "Lionel Messi (Inter Miami, 2024)",
+        "val": 35
+      },
+      {
+        "name": "Cristiano Ronaldo (Al-Nassr, 2024)",
+        "val": 15
+      },
+      {
+        "name": "Aitana Bonmatí (FC Barcelona, Frauen 24)",
+        "val": 30
+      },
+      {
+        "name": "Alexia Putellas (FC Barcelona, Frauen)",
+        "val": 20
+      },
+      {
+        "name": "Robert Lewandowski (FC Barcelona, 2024)",
+        "val": 20
+      },
+      {
+        "name": "Antoine Griezmann (Atlético, 2024)",
+        "val": 30
+      },
+      {
+        "name": "Alisson Becker (Liverpool, 2024)",
+        "val": 50
       }
     ]
   },
@@ -300,6 +1164,70 @@
       {
         "name": "Long Qingquan (China, 56 kg OR 2016)",
         "val": 307
+      },
+      {
+        "name": "Ilya Ilyin (Kasachstan, 94 kg, 2012)",
+        "val": 418
+      },
+      {
+        "name": "Pyrros Dimas (Griechenland, 85 kg)",
+        "val": 360
+      },
+      {
+        "name": "Kakhi Kakhiashvili (GRE, 99 kg, 1996)",
+        "val": 412
+      },
+      {
+        "name": "Naim Süleymanoğlu (Türkei, 60 kg, 1988)",
+        "val": 342
+      },
+      {
+        "name": "Halil Mutlu (Türkei, 56 kg, 2000)",
+        "val": 305
+      },
+      {
+        "name": "Hossein Rezazadeh (Iran, +105 kg, 2004)",
+        "val": 472
+      },
+      {
+        "name": "Shi Zhiyong (China, 73 kg, 2021)",
+        "val": 364
+      },
+      {
+        "name": "Lyu Xiaojun (China, 81 kg, 2021)",
+        "val": 374
+      },
+      {
+        "name": "Chen Lijun (China, 67 kg, 2019)",
+        "val": 352
+      },
+      {
+        "name": "Meredith Alford (USA, Frau 87 kg)",
+        "val": 249
+      },
+      {
+        "name": "Liu Chunhong (China, Frau 69 kg, 2008)",
+        "val": 286
+      },
+      {
+        "name": "Chen Yanqing (China, Frau 58 kg, 2006)",
+        "val": 261
+      },
+      {
+        "name": "Li Ping (China, Frau 49 kg, 2019)",
+        "val": 218
+      },
+      {
+        "name": "Rahimov Nijat (Aserbaidschan, 77 kg)",
+        "val": 379
+      },
+      {
+        "name": "Apti Auhadov (Deutschland, 85 kg)",
+        "val": 370
+      },
+      {
+        "name": "Andrei Aramnau (Belarus, 105 kg, 2008)",
+        "val": 436
       }
     ]
   },
@@ -338,6 +1266,170 @@
       {
         "name": "Estadio Centenario (Montevideo, Uruguay)",
         "val": 1930
+      },
+      {
+        "name": "Fenway Park (Boston Red Sox, USA)",
+        "val": 1912
+      },
+      {
+        "name": "Wrigley Field (Chicago Cubs, USA)",
+        "val": 1914
+      },
+      {
+        "name": "Yankee Stadium (New York, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "Dodger Stadium (Los Angeles, USA)",
+        "val": 1962
+      },
+      {
+        "name": "Lambeau Field (Green Bay, USA)",
+        "val": 1957
+      },
+      {
+        "name": "Soldier Field (Chicago, USA)",
+        "val": 1924
+      },
+      {
+        "name": "Rose Bowl (Pasadena, USA)",
+        "val": 1922
+      },
+      {
+        "name": "Michigan Stadium (Ann Arbor, USA)",
+        "val": 1927
+      },
+      {
+        "name": "Aztekenstadion (Mexiko-Stadt)",
+        "val": 1966
+      },
+      {
+        "name": "Maracanã (Rio de Janeiro, Brasilien)",
+        "val": 1950
+      },
+      {
+        "name": "Old Trafford (Manchester, England)",
+        "val": 1910
+      },
+      {
+        "name": "Anfield (Liverpool, England)",
+        "val": 1884
+      },
+      {
+        "name": "Stamford Bridge (London, England)",
+        "val": 1877
+      },
+      {
+        "name": "Villa Park (Birmingham, England)",
+        "val": 1897
+      },
+      {
+        "name": "Ibrox Stadium (Glasgow, Schottland)",
+        "val": 1899
+      },
+      {
+        "name": "Hampden Park (Glasgow, Schottland)",
+        "val": 1903
+      },
+      {
+        "name": "Camp Nou (Barcelona, Spanien)",
+        "val": 1957
+      },
+      {
+        "name": "Santiago Bernabéu (Madrid, Spanien)",
+        "val": 1947
+      },
+      {
+        "name": "San Siro (Mailand, Italien)",
+        "val": 1926
+      },
+      {
+        "name": "Olimpico di Torino (Italien)",
+        "val": 1933
+      },
+      {
+        "name": "Panathinaiko Stadion (Athen, Griechenland)",
+        "val": 329
+      },
+      {
+        "name": "Olympic Stadium München (Deutschland)",
+        "val": 1972
+      },
+      {
+        "name": "Luzhniki Stadion (Moskau, Russland)",
+        "val": 1956
+      },
+      {
+        "name": "Melbourne Cricket Ground (Australien)",
+        "val": 1853
+      },
+      {
+        "name": "Eden Gardens (Kolkata, Indien)",
+        "val": 1864
+      },
+      {
+        "name": "Lord's Cricket Ground (London)",
+        "val": 1814
+      },
+      {
+        "name": "Oval Cricket Ground (London)",
+        "val": 1845
+      },
+      {
+        "name": "The Gabba (Brisbane, Australien)",
+        "val": 1895
+      },
+      {
+        "name": "SCG Sydney Cricket Ground (Australien)",
+        "val": 1848
+      },
+      {
+        "name": "Twickenham Stadium (London)",
+        "val": 1909
+      },
+      {
+        "name": "Millennium / Principality Stadium (Cardiff)",
+        "val": 1999
+      },
+      {
+        "name": "Murrayfield Stadium (Edinburgh)",
+        "val": 1925
+      },
+      {
+        "name": "Aviva Stadium (Dublin, Irland)",
+        "val": 2010
+      },
+      {
+        "name": "Stade de France (Saint-Denis, Frankreich)",
+        "val": 1998
+      },
+      {
+        "name": "Wembley Stadium (London, neu)",
+        "val": 2007
+      },
+      {
+        "name": "Allianz Arena (München, Deutschland)",
+        "val": 2005
+      },
+      {
+        "name": "Emirates Stadium (London)",
+        "val": 2006
+      },
+      {
+        "name": "Tottenham Hotspur Stadium (London)",
+        "val": 2019
+      },
+      {
+        "name": "AT&T Stadium (Dallas, USA)",
+        "val": 2009
+      },
+      {
+        "name": "MetLife Stadium (New Jersey, USA)",
+        "val": 2010
+      },
+      {
+        "name": "Lusail Iconic Stadium (Katar)",
+        "val": 2021
       }
     ]
   },
@@ -376,6 +1468,74 @@
       {
         "name": "Ronaldo Nazario (La Liga 1996/97)",
         "val": 34
+      },
+      {
+        "name": "Gerd Müller (Bayern, Bundesliga 1971/72)",
+        "val": 40
+      },
+      {
+        "name": "Robert Lewandowski (Bayern, BL 2020/21)",
+        "val": 41
+      },
+      {
+        "name": "Dixie Dean (Everton, Division 1 1927/28)",
+        "val": 60
+      },
+      {
+        "name": "Jimmy McGrory (Celtic, 1931/32)",
+        "val": 52
+      },
+      {
+        "name": "Alan Shearer (Blackburn, PL 1994/95)",
+        "val": 34
+      },
+      {
+        "name": "Andrew Cole (Newcastle, PL 1993/94)",
+        "val": 34
+      },
+      {
+        "name": "Mohamed Salah (Liverpool, PL 2017/18)",
+        "val": 32
+      },
+      {
+        "name": "Cristiano Ronaldo (PL 2022/23)",
+        "val": 12
+      },
+      {
+        "name": "Eusébio (Benfica, Liga NOS 1967/68)",
+        "val": 42
+      },
+      {
+        "name": "Neymar Jr. (PSG, Ligue 1 2017/18)",
+        "val": 19
+      },
+      {
+        "name": "Kylian Mbappé (PSG, Ligue 1 2018/19)",
+        "val": 33
+      },
+      {
+        "name": "Ronaldo Lima (Barcellona, La Liga 1996/97)",
+        "val": 34
+      },
+      {
+        "name": "Thierry Henry (Arsenal, PL 2004/05)",
+        "val": 25
+      },
+      {
+        "name": "Ruud van Nistelrooy (ManUtd, PL 2002/03)",
+        "val": 25
+      },
+      {
+        "name": "Cristiano Ronaldo (CL Rekord, 2013/14)",
+        "val": 17
+      },
+      {
+        "name": "Messi (CL Rekord je Saison, 2011/12)",
+        "val": 14
+      },
+      {
+        "name": "Filippo Inzaghi (Serie A, 2000/01)",
+        "val": 24
       }
     ]
   }

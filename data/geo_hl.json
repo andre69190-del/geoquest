@@ -34,6 +34,110 @@
       {
         "name": "Mont Blanc (Frankreich/Italien)",
         "val": 4808
+      },
+      {
+        "name": "Makalu (Nepal/China)",
+        "val": 8485
+      },
+      {
+        "name": "Cho Oyu (Nepal/China)",
+        "val": 8188
+      },
+      {
+        "name": "Dhaulagiri I (Nepal)",
+        "val": 8167
+      },
+      {
+        "name": "Manaslu (Nepal)",
+        "val": 8163
+      },
+      {
+        "name": "Nanga Parbat (Pakistan)",
+        "val": 8126
+      },
+      {
+        "name": "Annapurna I (Nepal)",
+        "val": 8091
+      },
+      {
+        "name": "Gasherbrum I (Pakistan/China)",
+        "val": 8080
+      },
+      {
+        "name": "Broad Peak (Pakistan/China)",
+        "val": 8051
+      },
+      {
+        "name": "Gasherbrum II (Pakistan/China)",
+        "val": 8035
+      },
+      {
+        "name": "Shishapangma (China)",
+        "val": 8027
+      },
+      {
+        "name": "Elbrus (Russland)",
+        "val": 5642
+      },
+      {
+        "name": "Vinson-Massiv (Antarktis)",
+        "val": 4892
+      },
+      {
+        "name": "Puncak Jaya (Indonesien)",
+        "val": 4884
+      },
+      {
+        "name": "Matterhorn (Schweiz/Italien)",
+        "val": 4478
+      },
+      {
+        "name": "Mount Whitney (USA)",
+        "val": 4421
+      },
+      {
+        "name": "Großglockner (Österreich)",
+        "val": 3798
+      },
+      {
+        "name": "Fujisan (Japan)",
+        "val": 3776
+      },
+      {
+        "name": "Monte Olympus (Griechenland)",
+        "val": 2918
+      },
+      {
+        "name": "Ben Nevis (Vereinigtes Königreich)",
+        "val": 1345
+      },
+      {
+        "name": "Zugspitze (Deutschland)",
+        "val": 2962
+      },
+      {
+        "name": "Kebnekaise (Schweden)",
+        "val": 2099
+      },
+      {
+        "name": "Monte Rosa (Schweiz/Italien)",
+        "val": 4634
+      },
+      {
+        "name": "Dom (Schweiz)",
+        "val": 4545
+      },
+      {
+        "name": "Pikes Peak (USA, Colorado)",
+        "val": 4302
+      },
+      {
+        "name": "Tafelberg (Südafrika)",
+        "val": 1086
+      },
+      {
+        "name": "Snæfellsjökull (Island)",
+        "val": 1446
       }
     ]
   },
@@ -72,6 +176,98 @@
       {
         "name": "Vesuv (Italien)",
         "val": 1281
+      },
+      {
+        "name": "Sajama (Bolivien)",
+        "val": 6542
+      },
+      {
+        "name": "Chimborazo (Ecuador)",
+        "val": 6268
+      },
+      {
+        "name": "Sangay (Ecuador)",
+        "val": 5230
+      },
+      {
+        "name": "Tungurahua (Ecuador)",
+        "val": 5023
+      },
+      {
+        "name": "Wrangell (Alaska, USA)",
+        "val": 4317
+      },
+      {
+        "name": "Colima (Mexiko)",
+        "val": 3860
+      },
+      {
+        "name": "Mauna Loa (Hawaii, USA)",
+        "val": 4169
+      },
+      {
+        "name": "Mauna Kea (Hawaii, USA)",
+        "val": 4207
+      },
+      {
+        "name": "Rainier (Washington, USA)",
+        "val": 4392
+      },
+      {
+        "name": "Pico de Teide (Spanien)",
+        "val": 3715
+      },
+      {
+        "name": "Nyiragongo (Kongo/DRC)",
+        "val": 3470
+      },
+      {
+        "name": "Merapi (Indonesien)",
+        "val": 2930
+      },
+      {
+        "name": "Ol Doinyo Lengai (Tansania)",
+        "val": 2960
+      },
+      {
+        "name": "Shishaldin (Alaska, USA)",
+        "val": 2857
+      },
+      {
+        "name": "Ruapehu (Neuseeland)",
+        "val": 2797
+      },
+      {
+        "name": "Mt. St. Helens (USA)",
+        "val": 2549
+      },
+      {
+        "name": "Galeras (Kolumbien)",
+        "val": 4276
+      },
+      {
+        "name": "Piton de la Fournaise (Réunion)",
+        "val": 2632
+      },
+      {
+        "name": "Mayon (Philippinen)",
+        "val": 2462
+      },
+      {
+        "name": "Katmai (Alaska, USA)",
+        "val": 2047
+      },
+      {
+        "name": "Stromboli (Italien)",
+        "val": 924
+      },
+      {
+        "name": "Santorini / Thera (Griechenland)",
+        "val": 584
+      },
+      {
+        "name": "Krakatau (Indonesien)",
+        "val": 813
       }
     ]
   },
@@ -109,6 +305,86 @@
       },
       {
         "name": "Kobe 1995 (Japan)",
+        "val": 69
+      },
+      {
+        "name": "Ecuador/Kolumbien 1906",
+        "val": 87
+      },
+      {
+        "name": "Rat Islands 1965 (Alaska)",
+        "val": 87
+      },
+      {
+        "name": "Lissabon 1755 (Portugal)",
+        "val": 87
+      },
+      {
+        "name": "Alaska 1957 (Aleutinen)",
+        "val": 86
+      },
+      {
+        "name": "Nias 2005 (Indonesien)",
+        "val": 86
+      },
+      {
+        "name": "Assam/Tibet 1950",
+        "val": 86
+      },
+      {
+        "name": "Sumatra 2012",
+        "val": 86
+      },
+      {
+        "name": "Chile 1922",
+        "val": 85
+      },
+      {
+        "name": "Kamtschatka 1923 (Russland)",
+        "val": 84
+      },
+      {
+        "name": "Mexico City 1985",
+        "val": 81
+      },
+      {
+        "name": "San Francisco 1906 (USA)",
+        "val": 79
+      },
+      {
+        "name": "Sichuan 2008 (China)",
+        "val": 79
+      },
+      {
+        "name": "Nepal 2015",
+        "val": 78
+      },
+      {
+        "name": "Türkei 2023 (Kahramanmaraş)",
+        "val": 78
+      },
+      {
+        "name": "Tangshan 1976 (China)",
+        "val": 76
+      },
+      {
+        "name": "Kuril-Inseln 2006 (Russland)",
+        "val": 80
+      },
+      {
+        "name": "Athen 1999 (Griechenland)",
+        "val": 59
+      },
+      {
+        "name": "Christchurch 2011 (Neuseeland)",
+        "val": 63
+      },
+      {
+        "name": "L'Aquila 2009 (Italien)",
+        "val": 63
+      },
+      {
+        "name": "Armenia 1988",
         "val": 69
       }
     ]
@@ -193,6 +469,86 @@
       },
       {
         "name": "Kilauea 2018 (Hawaii, USA)",
+        "val": 1
+      },
+      {
+        "name": "Toba (~74.000 v. Chr., Indonesien)",
+        "val": 8
+      },
+      {
+        "name": "Yellowstone (~640.000 v. Chr., USA)",
+        "val": 8
+      },
+      {
+        "name": "Samalas / Rinjani 1257 (Indonesien)",
+        "val": 7
+      },
+      {
+        "name": "Huaynaputina 1600 (Peru)",
+        "val": 6
+      },
+      {
+        "name": "Laki 1783 (Island)",
+        "val": 6
+      },
+      {
+        "name": "Santa María 1902 (Guatemala)",
+        "val": 6
+      },
+      {
+        "name": "Novarupta 1912 (Alaska, USA)",
+        "val": 6
+      },
+      {
+        "name": "Hunga Tonga 2022 (Tonga)",
+        "val": 5
+      },
+      {
+        "name": "Merapi 2010 (Indonesien)",
+        "val": 4
+      },
+      {
+        "name": "Ruapehu 1996 (Neuseeland)",
+        "val": 3
+      },
+      {
+        "name": "Pelée 1902 (Martinique)",
+        "val": 4
+      },
+      {
+        "name": "Sarychev 2009 (Russland)",
+        "val": 4
+      },
+      {
+        "name": "Raikoke 2019 (Russland)",
+        "val": 4
+      },
+      {
+        "name": "Sinabung 2014 (Indonesien)",
+        "val": 4
+      },
+      {
+        "name": "Galeras 1993 (Kolumbien)",
+        "val": 3
+      },
+      {
+        "name": "Llaima 2008 (Chile)",
+        "val": 3
+      },
+      {
+        "name": "Ontake 2014 (Japan)",
+        "val": 3
+      },
+      {
+        "name": "Eldgjá 934 (Island)",
+        "val": 6
+      },
+      {
+        "name": "Unzen 1792 (Japan)",
+        "val": 3
+      },
+      {
+        "name": "Stromboli (anhaltend, Italien)",
         "val": 1
       }
     ]
@@ -746,6 +1102,78 @@
       {
         "name": "Antarktische Platte",
         "val": 15
+      },
+      {
+        "name": "Tonga-Platte",
+        "val": 240
+      },
+      {
+        "name": "Cocos-Platte",
+        "val": 90
+      },
+      {
+        "name": "Philippinische Platte",
+        "val": 52
+      },
+      {
+        "name": "Karibische Platte",
+        "val": 20
+      },
+      {
+        "name": "Südamerikanische Platte",
+        "val": 19
+      },
+      {
+        "name": "Afrikanische Platte",
+        "val": 21
+      },
+      {
+        "name": "Scotia-Platte",
+        "val": 22
+      },
+      {
+        "name": "Amur-Platte",
+        "val": 26
+      },
+      {
+        "name": "Somalische Platte",
+        "val": 18
+      },
+      {
+        "name": "Anatolische Platte",
+        "val": 24
+      },
+      {
+        "name": "Karolinische Platte",
+        "val": 25
+      },
+      {
+        "name": "Rivera-Platte",
+        "val": 40
+      },
+      {
+        "name": "Sunda-Platte",
+        "val": 12
+      },
+      {
+        "name": "Mariana-Platte",
+        "val": 35
+      },
+      {
+        "name": "Easter-Platte",
+        "val": 67
+      },
+      {
+        "name": "Birmanische Platte",
+        "val": 10
+      },
+      {
+        "name": "Indische Platte",
+        "val": 55
+      },
+      {
+        "name": "Adriatische Platte",
+        "val": 5
       }
     ]
   },
@@ -784,6 +1212,98 @@
       {
         "name": "Eis",
         "val": 0
+      },
+      {
+        "name": "Wolfram (W)",
+        "val": 3422
+      },
+      {
+        "name": "Rhenium (Re)",
+        "val": 3186
+      },
+      {
+        "name": "Osmium (Os)",
+        "val": 3033
+      },
+      {
+        "name": "Tantal (Ta)",
+        "val": 2996
+      },
+      {
+        "name": "Molybdän (Mo)",
+        "val": 2623
+      },
+      {
+        "name": "Platin (Pt)",
+        "val": 1768
+      },
+      {
+        "name": "Titan (Ti)",
+        "val": 1668
+      },
+      {
+        "name": "Nickeleisen (Meteorit)",
+        "val": 1600
+      },
+      {
+        "name": "Nikkel (Ni)",
+        "val": 1455
+      },
+      {
+        "name": "Kobalt (Co)",
+        "val": 1495
+      },
+      {
+        "name": "Magnetit (Fe₃O₄)",
+        "val": 1590
+      },
+      {
+        "name": "Pyroxen (Mineral)",
+        "val": 1100
+      },
+      {
+        "name": "Halit / Steinsalz (NaCl)",
+        "val": 801
+      },
+      {
+        "name": "Kupfer (Cu)",
+        "val": 1085
+      },
+      {
+        "name": "Gold (Au)",
+        "val": 1064
+      },
+      {
+        "name": "Silber (Ag)",
+        "val": 962
+      },
+      {
+        "name": "Aluminium (Al)",
+        "val": 660
+      },
+      {
+        "name": "Obsidian (vulkanisches Glas)",
+        "val": 850
+      },
+      {
+        "name": "Blei (Pb)",
+        "val": 327
+      },
+      {
+        "name": "Zinn (Sn)",
+        "val": 232
+      },
+      {
+        "name": "Bismut (Bi)",
+        "val": 271
+      },
+      {
+        "name": "Zink (Zn)",
+        "val": 420
+      },
+      {
+        "name": "Gallium (Ga)",
+        "val": 30
       }
     ]
   },
@@ -1012,6 +1532,94 @@
       {
         "name": "Sulawesi 2018 (Palu)",
         "val": 10
+      },
+      {
+        "name": "Sanriku 1896 (Japan)",
+        "val": 38
+      },
+      {
+        "name": "Sanriku 1933 (Japan)",
+        "val": 28
+      },
+      {
+        "name": "Hokkaido 1993 (Japan)",
+        "val": 31
+      },
+      {
+        "name": "Alaska 1946 (Aleutinen)",
+        "val": 35
+      },
+      {
+        "name": "Alaska 1957 (Aleutinen)",
+        "val": 23
+      },
+      {
+        "name": "Lissabon 1755 (Portugal/Marokko)",
+        "val": 30
+      },
+      {
+        "name": "Messina 1908 (Italien)",
+        "val": 12
+      },
+      {
+        "name": "Peru 1868",
+        "val": 21
+      },
+      {
+        "name": "Nicaragua 1992",
+        "val": 10
+      },
+      {
+        "name": "Flores 1992 (Indonesien)",
+        "val": 26
+      },
+      {
+        "name": "Java 2006 (Indonesien)",
+        "val": 21
+      },
+      {
+        "name": "Krakatau 1883 (Indonesien)",
+        "val": 37
+      },
+      {
+        "name": "Solomon Islands 2007",
+        "val": 12
+      },
+      {
+        "name": "Samoa 2009",
+        "val": 14
+      },
+      {
+        "name": "Chile 2010 (Maule)",
+        "val": 29
+      },
+      {
+        "name": "Tōhoku 2011, Miyako (Japan)",
+        "val": 40
+      },
+      {
+        "name": "Neuseeland 2016 (Kaikōura)",
+        "val": 7
+      },
+      {
+        "name": "Türkei 2020 (Izmir/Samos)",
+        "val": 4
+      },
+      {
+        "name": "Banda Aceh 2004 (Indonesien)",
+        "val": 30
+      },
+      {
+        "name": "Haiti 2010 (Karibik)",
+        "val": 3
+      },
+      {
+        "name": "Aleutinen 1965 (Alaska)",
+        "val": 10
+      },
+      {
+        "name": "Nankaidō 1707 Hōei (Japan)",
+        "val": 25
       }
     ]
   },

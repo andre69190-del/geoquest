@@ -41,6 +41,82 @@
       {
         "n": "Gneis",
         "c": "Metamorph"
+      },
+      {
+        "n": "Rhyolith",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Gabbro",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Andesit",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Diorit",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Peridotit",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Vulkanischer Tuff",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Phyllit",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Eklogit",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Serpentinit",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Hornfels",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Amphibolit",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Tonstein",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Breccie",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Kreide",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Steinkohle",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Evaporit (Gips)",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Travertin",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Ölschiefer",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Dolomit",
+        "c": "Sedimentaer"
       }
     ]
   },
@@ -78,6 +154,78 @@
       {
         "n": "Neuseeland",
         "c": "Pazifische Platte"
+      },
+      {
+        "n": "Saudi-Arabien",
+        "c": "Arabische Platte"
+      },
+      {
+        "n": "Philippinen",
+        "c": "Philippinische Platte"
+      },
+      {
+        "n": "Mexiko",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Peru",
+        "c": "Südamerikanische Platte"
+      },
+      {
+        "n": "Argentinien",
+        "c": "Südamerikanische Platte"
+      },
+      {
+        "n": "Kenia",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Ägypten",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Nigeria",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "USA (Atlantikküste)",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Frankreich",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "China (Ostküste)",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Hawaii",
+        "c": "Pazifische Platte"
+      },
+      {
+        "n": "Jamaika",
+        "c": "Karibische Platte"
+      },
+      {
+        "n": "Türkei",
+        "c": "Anatolische Platte"
+      },
+      {
+        "n": "Kasachstan",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Indonesien (Java)",
+        "c": "Sunda-Platte"
+      },
+      {
+        "n": "Grönland",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Tonga",
+        "c": "Australische Platte"
       }
     ]
   },
@@ -115,6 +263,86 @@
       {
         "n": "Feldspat",
         "c": "Keramik und Glasherstellung"
+      },
+      {
+        "n": "Magnetit",
+        "c": "Eisenerz und Magnete"
+      },
+      {
+        "n": "Quarz (Siliziumdioxid)",
+        "c": "Elektronik und Glasherstellung"
+      },
+      {
+        "n": "Feldspat (Orthoklas)",
+        "c": "Keramik und Glasindustrie"
+      },
+      {
+        "n": "Glimmer (Muskovit)",
+        "c": "Elektroisolierung und Kosmetik"
+      },
+      {
+        "n": "Fluorit",
+        "c": "Optik und Flusssäureproduktion"
+      },
+      {
+        "n": "Baryt",
+        "c": "Bohrspülung und Farben"
+      },
+      {
+        "n": "Apatit",
+        "c": "Düngemittel (Phosphorquelle)"
+      },
+      {
+        "n": "Pyrit (Katzengold)",
+        "c": "Schwefelsäure-Herstellung"
+      },
+      {
+        "n": "Talkum",
+        "c": "Kosmetik und Papierbeschichtung"
+      },
+      {
+        "n": "Kaolin",
+        "c": "Porzellan und Papierherstellung"
+      },
+      {
+        "n": "Beryll (Smaragd/Aquamarin)",
+        "c": "Schmuck und Industrie"
+      },
+      {
+        "n": "Turmalin",
+        "c": "Schmuck und Piezoelektrizität"
+      },
+      {
+        "n": "Malachit",
+        "c": "Schmuck und historische Pigmente"
+      },
+      {
+        "n": "Olivin",
+        "c": "Stahlproduktion und Schmuck"
+      },
+      {
+        "n": "Zirkon",
+        "c": "Keramik und radiometrische Datierung"
+      },
+      {
+        "n": "Serpentin",
+        "c": "Bausteine und Dekorationsmaterial"
+      },
+      {
+        "n": "Hämatit",
+        "c": "Eisenerz und Pigmente (Rötelstift)"
+      },
+      {
+        "n": "Chalcopyrit (Kupferkies)",
+        "c": "Kupfergewinnung"
+      },
+      {
+        "n": "Galenit (Bleiglanz)",
+        "c": "Bleigewinnung"
+      },
+      {
+        "n": "Sphalerit",
+        "c": "Zinkgewinnung"
       }
     ]
   },
@@ -795,6 +1023,94 @@
       {
         "n": "Seelilienfossil (Kambrium)",
         "c": "Paläozoikum"
+      },
+      {
+        "n": "Belemnit",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Stegosaurus",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Brachiosaurus",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Triceratops",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Iguanodon",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Pterosaurier",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Ichthyosaurier",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Plesiosaur",
+        "c": "Mesozoikum"
+      },
+      {
+        "n": "Smilodon (Säbelzahntiger)",
+        "c": "Känozoikum"
+      },
+      {
+        "n": "Megaloceros (Riesenhirsch)",
+        "c": "Känozoikum"
+      },
+      {
+        "n": "Wollnashorn",
+        "c": "Känozoikum"
+      },
+      {
+        "n": "Dodo",
+        "c": "Känozoikum"
+      },
+      {
+        "n": "Australopithecus",
+        "c": "Känozoikum"
+      },
+      {
+        "n": "Homo erectus",
+        "c": "Känozoikum"
+      },
+      {
+        "n": "Graptolith",
+        "c": "Paläozoikum"
+      },
+      {
+        "n": "Seelilie (Crinoide)",
+        "c": "Paläozoikum"
+      },
+      {
+        "n": "Dunkleosteus (Panzerfisch)",
+        "c": "Paläozoikum"
+      },
+      {
+        "n": "Ichthyostega",
+        "c": "Paläozoikum"
+      },
+      {
+        "n": "Diplocaulus",
+        "c": "Paläozoikum"
+      },
+      {
+        "n": "Baumfarn (Karbon)",
+        "c": "Paläozoikum"
+      },
+      {
+        "n": "Eurypterus (Seeskorpion)",
+        "c": "Paläozoikum"
+      },
+      {
+        "n": "Orthoceras (Nautiloid)",
+        "c": "Paläozoikum"
       }
     ]
   },
@@ -1210,6 +1526,94 @@
       {
         "n": "Atollring",
         "c": "Korallenriff & Vulkansenkung"
+      },
+      {
+        "n": "Grand Canyon (USA)",
+        "c": "Fluviale Erosion"
+      },
+      {
+        "n": "Sanddüne (Sahara)",
+        "c": "Äolische Sedimentation"
+      },
+      {
+        "n": "Lössebene (China)",
+        "c": "Äolische Sedimentation"
+      },
+      {
+        "n": "Atoll (Malediven)",
+        "c": "Korallenriff-Wachstum"
+      },
+      {
+        "n": "Karstlandschaft (Karst)",
+        "c": "Chemische Verwitterung"
+      },
+      {
+        "n": "Sinkhole (Zentralamerika)",
+        "c": "Karst-Auflösung"
+      },
+      {
+        "n": "Caldera (Kratersee)",
+        "c": "Vulkanischer Kollaps"
+      },
+      {
+        "n": "Vulkankegel (Stratovolcan)",
+        "c": "Magmatismus"
+      },
+      {
+        "n": "Tafelberg / Mesa (USA)",
+        "c": "Differenzielle Erosion"
+      },
+      {
+        "n": "Playa / Salzfläche",
+        "c": "Trockenheit und Verdunstung"
+      },
+      {
+        "n": "Drumlin",
+        "c": "Glaziale Sedimentation"
+      },
+      {
+        "n": "Esker",
+        "c": "Subglazialer Schmelzwasserfluss"
+      },
+      {
+        "n": "Schwemmfächer",
+        "c": "Flusssedimentation"
+      },
+      {
+        "n": "Terrassenlandschaft",
+        "c": "Fluviale Erosion und Hebung"
+      },
+      {
+        "n": "Watt (Nordsee)",
+        "c": "Gezeitenprozesse"
+      },
+      {
+        "n": "Stranddüne",
+        "c": "Küstenprozesse und Wind"
+      },
+      {
+        "n": "Stalaktiten-Höhle",
+        "c": "Chemische Verwitterung"
+      },
+      {
+        "n": "Ringstruktur (Nördlinger Ries)",
+        "c": "Meteoriteneinschlag"
+      },
+      {
+        "n": "Riff (Great Barrier Reef)",
+        "c": "Korallenriff-Wachstum"
+      },
+      {
+        "n": "Schwemmebene / Alluvialebene",
+        "c": "Flusssedimentation"
+      },
+      {
+        "n": "Horst und Graben (Rift Valley)",
+        "c": "Tektonisches Rifting"
+      },
+      {
+        "n": "Talus / Schuttkegel",
+        "c": "Schwerkraft-Massenbewegung"
       }
     ]
   },
@@ -1440,6 +1844,90 @@
       {
         "n": "Arabische Halbinsel",
         "c": "Arabische Platte"
+      },
+      {
+        "n": "Indischer Subkontinent",
+        "c": "Indische Platte"
+      },
+      {
+        "n": "Ostanatolien (Türkei)",
+        "c": "Anatolische Platte"
+      },
+      {
+        "n": "Russland / Sibirien",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Skandinavien",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Iberische Halbinsel",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Zentralafrika",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Ostafrika (Rift Valley)",
+        "c": "Somalische Platte"
+      },
+      {
+        "n": "Neuseeland",
+        "c": "Australische Platte"
+      },
+      {
+        "n": "Great Barrier Reef",
+        "c": "Australische Platte"
+      },
+      {
+        "n": "Grönland",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Karibische Inseln",
+        "c": "Karibische Platte"
+      },
+      {
+        "n": "Philippinen",
+        "c": "Philippinische Platte"
+      },
+      {
+        "n": "Hawaii (Inseln)",
+        "c": "Pazifische Platte"
+      },
+      {
+        "n": "Galapagos-Inseln",
+        "c": "Nazca-Platte"
+      },
+      {
+        "n": "Antarktis gesamt",
+        "c": "Antarktische Platte"
+      },
+      {
+        "n": "Westantarktis (Halbinsel)",
+        "c": "Antarktische Platte"
+      },
+      {
+        "n": "Mittelatlantischer Rücken (West)",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Mittelatlantischer Rücken (Ost)",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Island",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Japan (Hauptinseln)",
+        "c": "Amur-Platte"
+      },
+      {
+        "n": "Tonga-Inseln",
+        "c": "Australische Platte"
       }
     ]
   },
@@ -1477,6 +1965,94 @@
       {
         "n": "Reed Flute Cave",
         "c": "China"
+      },
+      {
+        "n": "Jewel Cave",
+        "c": "USA"
+      },
+      {
+        "n": "Wind Cave",
+        "c": "USA"
+      },
+      {
+        "n": "Lechuguilla Cave",
+        "c": "USA"
+      },
+      {
+        "n": "Sistema Sac Actun",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Höhle von Altamira (Felsmalerei)",
+        "c": "Spanien"
+      },
+      {
+        "n": "Lascaux (Felsmalerei)",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Gouffre Berger",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Réseau Jean Bernard",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Dachstein Rieseneishöhle",
+        "c": "Österreich"
+      },
+      {
+        "n": "Škocjanske Jame",
+        "c": "Slowenien"
+      },
+      {
+        "n": "Postojna",
+        "c": "Slowenien"
+      },
+      {
+        "n": "Aggtelek-Karst (Baradla)",
+        "c": "Ungarn"
+      },
+      {
+        "n": "Reed Flute Cave (Ludigyan)",
+        "c": "China"
+      },
+      {
+        "n": "Zhijin Cave",
+        "c": "China"
+      },
+      {
+        "n": "Clearwater Cave",
+        "c": "Malaysia"
+      },
+      {
+        "n": "Sarawak Chamber (Deer Cave)",
+        "c": "Malaysia"
+      },
+      {
+        "n": "Tham Luang",
+        "c": "Thailand"
+      },
+      {
+        "n": "Waitomo Glühwürmchen-Höhle",
+        "c": "Neuseeland"
+      },
+      {
+        "n": "Shakta Veryovkina",
+        "c": "Georgien"
+      },
+      {
+        "n": "Krubera-Voronya",
+        "c": "Georgien"
+      },
+      {
+        "n": "Cueva del Milodón",
+        "c": "Chile"
+      },
+      {
+        "n": "Optimisticheskaya Cave",
+        "c": "Ukraine"
       }
     ]
   },
@@ -1513,6 +2089,106 @@
       },
       {
         "n": "Feldspat (Albit)",
+        "c": "Triklin"
+      },
+      {
+        "n": "Pyrit",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Fluorit",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Gold",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Magnetit",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Granat",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Galenit (Bleiglanz)",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Spinell",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Calcit",
+        "c": "Trigonal / Hexagonal"
+      },
+      {
+        "n": "Korund (Rubin/Saphir)",
+        "c": "Trigonal / Hexagonal"
+      },
+      {
+        "n": "Hämatit",
+        "c": "Trigonal / Hexagonal"
+      },
+      {
+        "n": "Dolomit",
+        "c": "Trigonal / Hexagonal"
+      },
+      {
+        "n": "Rutil",
+        "c": "Tetragonal"
+      },
+      {
+        "n": "Zirkon",
+        "c": "Tetragonal"
+      },
+      {
+        "n": "Kassiterit (Zinnstein)",
+        "c": "Tetragonal"
+      },
+      {
+        "n": "Schwefel",
+        "c": "Orthorhombisch"
+      },
+      {
+        "n": "Baryt",
+        "c": "Orthorhombisch"
+      },
+      {
+        "n": "Aragonit",
+        "c": "Orthorhombisch"
+      },
+      {
+        "n": "Olivin",
+        "c": "Orthorhombisch"
+      },
+      {
+        "n": "Orthoklas (Feldspat)",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Jadeit (Jadeit-Jade)",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Azurit",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Albit",
+        "c": "Triklin"
+      },
+      {
+        "n": "Labradorit",
+        "c": "Triklin"
+      },
+      {
+        "n": "Rhodonit",
+        "c": "Triklin"
+      },
+      {
+        "n": "Kyanit",
         "c": "Triklin"
       }
     ]
@@ -1551,6 +2227,82 @@
       {
         "n": "Hawaiianische Inseln",
         "c": "Hotspot-Vulkanismus"
+      },
+      {
+        "n": "Rocky Mountains (USA/Kanada)",
+        "c": "Ozean-Kontinent-Subduktion"
+      },
+      {
+        "n": "Kaskaden (USA)",
+        "c": "Ozean-Kontinent-Subduktion"
+      },
+      {
+        "n": "Japanische Inseln",
+        "c": "Ozean-Ozean-Subduktion"
+      },
+      {
+        "n": "Aleuten (Alaska)",
+        "c": "Ozean-Ozean-Subduktion"
+      },
+      {
+        "n": "Kuril-Inseln (Russland)",
+        "c": "Ozean-Ozean-Subduktion"
+      },
+      {
+        "n": "Atlas (Nordafrika)",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Pyrenäen (Spanien/Frankreich)",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Karpaten (Osteuropa)",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Kaukasus",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Karakorum (Pakistan/China)",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Hindukusch (Afghanistan)",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Hawaii (Inselkette)",
+        "c": "Hotspot-Vulkanismus"
+      },
+      {
+        "n": "Kanarische Inseln (Spanien)",
+        "c": "Hotspot-Vulkanismus"
+      },
+      {
+        "n": "Kapverdische Inseln",
+        "c": "Hotspot-Vulkanismus"
+      },
+      {
+        "n": "Island",
+        "c": "Rift-Zone (Divergenz)"
+      },
+      {
+        "n": "Ostafrikanischer Grabenbruch",
+        "c": "Rift-Zone (Divergenz)"
+      },
+      {
+        "n": "Mittelatlantischer Rücken",
+        "c": "Rift-Zone (Divergenz)"
+      },
+      {
+        "n": "Skandinavisches Gebirge",
+        "c": "Alter Kaledonischer Faltengürtel"
+      },
+      {
+        "n": "Sibirische Tiefebene (Schild)",
+        "c": "Tektonischer Schild (stabil)"
       }
     ]
   }
