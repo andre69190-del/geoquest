@@ -72,6 +72,30 @@
       {
         "name": "Venus",
         "val": 0
+      },
+      {
+        "name": "Pluto",
+        "val": 5
+      },
+      {
+        "name": "Haumea",
+        "val": 2
+      },
+      {
+        "name": "Eris",
+        "val": 1
+      },
+      {
+        "name": "Makemake",
+        "val": 1
+      },
+      {
+        "name": "Ceres",
+        "val": 0
+      },
+      {
+        "name": "Quaoar",
+        "val": 1
       }
     ]
   },
@@ -110,6 +134,46 @@
       {
         "name": "Merkur",
         "val": 58
+      },
+      {
+        "name": "Ceres (Asteroidengürtel)",
+        "val": 414
+      },
+      {
+        "name": "Vesta (Asteroidengürtel)",
+        "val": 353
+      },
+      {
+        "name": "Pallas (Asteroidengürtel)",
+        "val": 415
+      },
+      {
+        "name": "Pluto (Zwergplanet)",
+        "val": 5906
+      },
+      {
+        "name": "Haumea (Zwergplanet)",
+        "val": 6452
+      },
+      {
+        "name": "Makemake (Zwergplanet)",
+        "val": 6796
+      },
+      {
+        "name": "Eris (Zwergplanet)",
+        "val": 10210
+      },
+      {
+        "name": "Sedna (Zwerg-TNO)",
+        "val": 83000
+      },
+      {
+        "name": "Quaoar (Zwergplanet)",
+        "val": 6900
+      },
+      {
+        "name": "Hygiea (Asteroid)",
+        "val": 470
       }
     ]
   },
@@ -148,6 +212,110 @@
       {
         "name": "Soyuz-2.1b (Roskosmos)",
         "val": 9
+      },
+      {
+        "name": "Starship (SpaceX, Vollausbau)",
+        "val": 150
+      },
+      {
+        "name": "Energia (Sowjetunion, 1987)",
+        "val": 100
+      },
+      {
+        "name": "N1 (Sowjetunion, gescheitert)",
+        "val": 95
+      },
+      {
+        "name": "New Glenn (Blue Origin)",
+        "val": 45
+      },
+      {
+        "name": "Vulcan Centaur (ULA)",
+        "val": 27
+      },
+      {
+        "name": "Angara-A5 (Roskosmos)",
+        "val": 24
+      },
+      {
+        "name": "Proton-M (Roskosmos)",
+        "val": 23
+      },
+      {
+        "name": "Space Shuttle (NASA, LEO)",
+        "val": 24
+      },
+      {
+        "name": "Atlas V 551 (ULA)",
+        "val": 18
+      },
+      {
+        "name": "H-IIB (JAXA)",
+        "val": 16
+      },
+      {
+        "name": "Ariane 6 A64 (ESA)",
+        "val": 21
+      },
+      {
+        "name": "GSLV Mk III (ISRO)",
+        "val": 10
+      },
+      {
+        "name": "H-IIA (JAXA)",
+        "val": 10
+      },
+      {
+        "name": "Antares 230+ (Northrop)",
+        "val": 8
+      },
+      {
+        "name": "Long March 2F (CNSA, Shenzhou)",
+        "val": 8
+      },
+      {
+        "name": "Zenit-3SL (Sea Launch)",
+        "val": 13
+      },
+      {
+        "name": "Long March 7 (CNSA)",
+        "val": 13
+      },
+      {
+        "name": "PSLV-XL (ISRO)",
+        "val": 3
+      },
+      {
+        "name": "Vega-C (ESA)",
+        "val": 2
+      },
+      {
+        "name": "Electron (Rocket Lab)",
+        "val": 0.3
+      },
+      {
+        "name": "LauncherOne (Virgin Orbit) †",
+        "val": 0.5
+      },
+      {
+        "name": "Minotaur V (Northrop)",
+        "val": 0.5
+      },
+      {
+        "name": "Pegasus XL (Northrop)",
+        "val": 0.44
+      },
+      {
+        "name": "Delta II (Boeing, hist.)",
+        "val": 6
+      },
+      {
+        "name": "Titan IV-B (USAF)",
+        "val": 21
+      },
+      {
+        "name": "Redstone (USA, hist. 1960)",
+        "val": 0.04
       }
     ]
   },
@@ -186,6 +354,126 @@
       {
         "name": "Curiosity Rover (seit 2012)",
         "val": 5000
+      },
+      {
+        "name": "Pioneer 10 (NASA, 1972–2003)",
+        "val": 11312
+      },
+      {
+        "name": "Pioneer 11 (NASA, 1973–1995)",
+        "val": 8139
+      },
+      {
+        "name": "Mars Odyssey (NASA, seit 2001)",
+        "val": 8700
+      },
+      {
+        "name": "Mars Express (ESA, seit 2003)",
+        "val": 8000
+      },
+      {
+        "name": "Galileo-Sonde (NASA, 1989–2003)",
+        "val": 5113
+      },
+      {
+        "name": "Spitzer Space Telescope (2003–2020)",
+        "val": 5980
+      },
+      {
+        "name": "Juno (NASA, seit 2011)",
+        "val": 5100
+      },
+      {
+        "name": "Rosetta (ESA, 2004–2016)",
+        "val": 4354
+      },
+      {
+        "name": "MESSENGER (NASA, 2004–2015)",
+        "val": 3914
+      },
+      {
+        "name": "Dawn (NASA, 2007–2018)",
+        "val": 4053
+      },
+      {
+        "name": "Kepler Space Telescope (2009–2018)",
+        "val": 3393
+      },
+      {
+        "name": "Mars Global Surveyor (1996–2006)",
+        "val": 3626
+      },
+      {
+        "name": "Spirit Rover (NASA, 2004–2010)",
+        "val": 2208
+      },
+      {
+        "name": "ISS Dauerbetrieb (seit 1998)",
+        "val": 9500
+      },
+      {
+        "name": "TESS (NASA, seit 2018)",
+        "val": 2700
+      },
+      {
+        "name": "Parker Solar Probe (seit 2018)",
+        "val": 2700
+      },
+      {
+        "name": "BepiColombo (ESA/JAXA, seit 2018)",
+        "val": 2500
+      },
+      {
+        "name": "Mars Perseverance (seit 2021)",
+        "val": 1600
+      },
+      {
+        "name": "James Webb Telescope (seit 2021)",
+        "val": 1400
+      },
+      {
+        "name": "InSight Lander (2018–2022)",
+        "val": 1445
+      },
+      {
+        "name": "Hayabusa (JAXA, 2003–2010)",
+        "val": 2550
+      },
+      {
+        "name": "OSIRIS-REx (NASA, seit 2016)",
+        "val": 3200
+      },
+      {
+        "name": "Chang'e 4 Lander (seit 2019)",
+        "val": 2000
+      },
+      {
+        "name": "Magellan (NASA, 1989–1994)",
+        "val": 1795
+      },
+      {
+        "name": "Apollo 11 (NASA, 1969)",
+        "val": 8
+      },
+      {
+        "name": "Sputnik 1 (UdSSR, 1957)",
+        "val": 92
+      },
+      {
+        "name": "Chandra X-Ray Observatory (seit 1999)",
+        "val": 9500
+      },
+      {
+        "name": "SOHO (ESA/NASA, seit 1995)",
+        "val": 10800
+      },
+      {
+        "name": "Ulysses (ESA, 1990–2009)",
+        "val": 6898
+      },
+      {
+        "name": "WMAP (NASA, 2001–2010)",
+        "val": 3287
       }
     ]
   },
@@ -228,6 +516,50 @@
       {
         "name": "Pluto",
         "val": 0.62
+      },
+      {
+        "name": "Sonne",
+        "val": 274.0
+      },
+      {
+        "name": "Merkur",
+        "val": 3.7
+      },
+      {
+        "name": "Titan (Saturnmond)",
+        "val": 1.35
+      },
+      {
+        "name": "Ganymed (Jupitermond)",
+        "val": 1.43
+      },
+      {
+        "name": "Europa (Jupitermond)",
+        "val": 1.31
+      },
+      {
+        "name": "Ceres (Zwergplanet)",
+        "val": 0.27
+      },
+      {
+        "name": "Io (Jupitermond)",
+        "val": 1.8
+      },
+      {
+        "name": "Triton (Neptunmond)",
+        "val": 0.78
+      },
+      {
+        "name": "Charon (Pluton)",
+        "val": 0.28
+      },
+      {
+        "name": "Enceladus (Saturnmond)",
+        "val": 0.11
+      },
+      {
+        "name": "Rhea (Saturnmond)",
+        "val": 0.26
       }
     ]
   },
@@ -266,6 +598,46 @@
       {
         "name": "Neptun",
         "val": -200
+      },
+      {
+        "name": "Sonne (Oberfläche)",
+        "val": 5500
+      },
+      {
+        "name": "Mond (Tagseite)",
+        "val": 127
+      },
+      {
+        "name": "Mond (Nachtseite)",
+        "val": -173
+      },
+      {
+        "name": "Merkur (Nacht)",
+        "val": -180
+      },
+      {
+        "name": "Pluto",
+        "val": -229
+      },
+      {
+        "name": "Titan (Saturn)",
+        "val": -179
+      },
+      {
+        "name": "Enceladus (Geysire)",
+        "val": -201
+      },
+      {
+        "name": "Europa (Oberfläche)",
+        "val": -160
+      },
+      {
+        "name": "Io (Lava)",
+        "val": 1650
+      },
+      {
+        "name": "Boomerang-Nebel (kältester Ort)",
+        "val": -272
       }
     ]
   },
@@ -304,6 +676,86 @@
       {
         "name": "Charon (James Christy)",
         "val": 1978
+      },
+      {
+        "name": "Mond (allgemein bekannt)",
+        "val": -30000
+      },
+      {
+        "name": "Saturn (sichtbar mit bloßem Auge)",
+        "val": -700
+      },
+      {
+        "name": "Ganymed (Galileo Galilei)",
+        "val": 1610
+      },
+      {
+        "name": "Kallisto (Galileo Galilei)",
+        "val": 1610
+      },
+      {
+        "name": "Iapetus (Giovanni Cassini)",
+        "val": 1671
+      },
+      {
+        "name": "Rhea (Giovanni Cassini)",
+        "val": 1672
+      },
+      {
+        "name": "Tethys (Giovanni Cassini)",
+        "val": 1684
+      },
+      {
+        "name": "Dione (Giovanni Cassini)",
+        "val": 1684
+      },
+      {
+        "name": "Enceladus (William Herschel)",
+        "val": 1789
+      },
+      {
+        "name": "Mimas (William Herschel)",
+        "val": 1789
+      },
+      {
+        "name": "Triton (William Lassell)",
+        "val": 1846
+      },
+      {
+        "name": "Hyperion (Bond/Lassell)",
+        "val": 1848
+      },
+      {
+        "name": "Phoebe (William Pickering)",
+        "val": 1899
+      },
+      {
+        "name": "Amalthea (Barnard)",
+        "val": 1892
+      },
+      {
+        "name": "Proxima Centauri (Robert Innes)",
+        "val": 1915
+      },
+      {
+        "name": "Quaoar (Trujillo/Brown)",
+        "val": 2002
+      },
+      {
+        "name": "Eris (Mike Brown et al.)",
+        "val": 2005
+      },
+      {
+        "name": "Haumea (Brown / Ortiz)",
+        "val": 2004
+      },
+      {
+        "name": "Erstes Exoplanet-System (Wolszczan/Frail)",
+        "val": 1992
+      },
+      {
+        "name": "51 Pegasi b (Mayor/Queloz)",
+        "val": 1995
       }
     ]
   },
@@ -342,6 +794,118 @@
       {
         "name": "Kepler-452b",
         "val": 1400.0
+      },
+      {
+        "name": "Wolf 1061 c",
+        "val": 14.1
+      },
+      {
+        "name": "Ross 128 b",
+        "val": 11.0
+      },
+      {
+        "name": "Tau Ceti f",
+        "val": 11.9
+      },
+      {
+        "name": "GJ 1061 d",
+        "val": 12.0
+      },
+      {
+        "name": "Teegarden's Star b",
+        "val": 12.5
+      },
+      {
+        "name": "Barnard's Star b (umstritten)",
+        "val": 6.0
+      },
+      {
+        "name": "LHS 1140 b",
+        "val": 40.9
+      },
+      {
+        "name": "55 Cancri e",
+        "val": 41.3
+      },
+      {
+        "name": "Upsilon Andromedae d",
+        "val": 44.0
+      },
+      {
+        "name": "TRAPPIST-1 d",
+        "val": 39.5
+      },
+      {
+        "name": "TRAPPIST-1 f",
+        "val": 39.5
+      },
+      {
+        "name": "TOI-700 d",
+        "val": 102.0
+      },
+      {
+        "name": "K2-18 b",
+        "val": 124.0
+      },
+      {
+        "name": "Kepler-186 f",
+        "val": 580.0
+      },
+      {
+        "name": "Kepler-22 b",
+        "val": 620.0
+      },
+      {
+        "name": "Kepler-62 f",
+        "val": 1200.0
+      },
+      {
+        "name": "Kepler-442 b",
+        "val": 1200.0
+      },
+      {
+        "name": "HR 8799 b",
+        "val": 129.0
+      },
+      {
+        "name": "Beta Pictoris b",
+        "val": 63.4
+      },
+      {
+        "name": "Fomalhaut b",
+        "val": 25.0
+      },
+      {
+        "name": "70 Virginis b",
+        "val": 60.0
+      },
+      {
+        "name": "WASP-12 b",
+        "val": 870.0
+      },
+      {
+        "name": "WASP-121 b",
+        "val": 880.0
+      },
+      {
+        "name": "HD 189733 b",
+        "val": 63.0
+      },
+      {
+        "name": "CoRoT-7 b",
+        "val": 480.0
+      },
+      {
+        "name": "HAT-P-7 b (Kepler-2 b)",
+        "val": 1044.0
+      },
+      {
+        "name": "HIP 13044 b",
+        "val": 2000.0
+      },
+      {
+        "name": "PSR 1257+12 b (1. bestätigter Exoplanet)",
+        "val": 980.0
       }
     ]
   }

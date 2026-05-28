@@ -41,6 +41,198 @@
       {
         "n": "Hayabusa2 (Asteroid 2014)",
         "c": "JAXA"
+      },
+      {
+        "n": "Apollo 1 (Brandkatastrophe 1967)",
+        "c": "NASA"
+      },
+      {
+        "n": "Apollo 13 (Notfall-Rückkehr 1970)",
+        "c": "NASA"
+      },
+      {
+        "n": "Apollo 17 (letzte Mondlandung 1972)",
+        "c": "NASA"
+      },
+      {
+        "n": "Mercury Friendship 7 (Glenn-Orbit 1962)",
+        "c": "NASA"
+      },
+      {
+        "n": "Vostok 1 (Gagarin Weltraumflug 1961)",
+        "c": "Sowjetunion"
+      },
+      {
+        "n": "Vostok 6 (Tereshkova, erste Frau 1963)",
+        "c": "Sowjetunion"
+      },
+      {
+        "n": "Luna 9 (erste Mondlandung 1966)",
+        "c": "Sowjetunion"
+      },
+      {
+        "n": "Venera 7 (erste Venus-Landung 1970)",
+        "c": "Sowjetunion"
+      },
+      {
+        "n": "Mariner 4 (erster Mars-Flyby 1965)",
+        "c": "NASA"
+      },
+      {
+        "n": "Mariner 2 (erster Venus-Flyby 1962)",
+        "c": "NASA"
+      },
+      {
+        "n": "Viking 1 (Mars-Lander 1976)",
+        "c": "NASA"
+      },
+      {
+        "n": "Pioneer 10 (Jupiter-Flyby 1973)",
+        "c": "NASA"
+      },
+      {
+        "n": "Galileo (Jupiter-Orbiter 1995–2003)",
+        "c": "NASA"
+      },
+      {
+        "n": "Magellan (Venus-Mapping 1990–1994)",
+        "c": "NASA"
+      },
+      {
+        "n": "SOHO (Sonnenobservatorium, seit 1995)",
+        "c": "ESA/NASA"
+      },
+      {
+        "n": "Ulysses (Solar-Mission 1990–2009)",
+        "c": "ESA/NASA"
+      },
+      {
+        "n": "Spitzer Space Telescope (2003–2020)",
+        "c": "NASA"
+      },
+      {
+        "n": "Hubble Space Telescope (seit 1990)",
+        "c": "NASA/ESA"
+      },
+      {
+        "n": "Chandra X-Ray Observatory (seit 1999)",
+        "c": "NASA"
+      },
+      {
+        "n": "WMAP (CMB-Kartierung 2001–2010)",
+        "c": "NASA"
+      },
+      {
+        "n": "Planck (CMB-Kartierung 2009–2013)",
+        "c": "ESA"
+      },
+      {
+        "n": "GAIA (Sternen-Kartierung, seit 2013)",
+        "c": "ESA"
+      },
+      {
+        "n": "Parker Solar Probe (seit 2018)",
+        "c": "NASA"
+      },
+      {
+        "n": "Solar Orbiter (seit 2020)",
+        "c": "ESA"
+      },
+      {
+        "n": "DART Mission (Asteroid Impact 2022)",
+        "c": "NASA"
+      },
+      {
+        "n": "Ingenuity Helikopter (Mars-Flug 2021)",
+        "c": "NASA"
+      },
+      {
+        "n": "Perseverance Rover (Mars, seit 2021)",
+        "c": "NASA"
+      },
+      {
+        "n": "InSight Lander (Mars 2018–2022)",
+        "c": "NASA"
+      },
+      {
+        "n": "MAVEN (Mars-Atmosphäre, seit 2013)",
+        "c": "NASA"
+      },
+      {
+        "n": "Chandrayaan-1 (Mond-Orbiter 2008)",
+        "c": "ISRO"
+      },
+      {
+        "n": "Chandrayaan-3 (Mondlandung 2023)",
+        "c": "ISRO"
+      },
+      {
+        "n": "Akatsuki (Venus-Orbiter, seit 2010)",
+        "c": "JAXA"
+      },
+      {
+        "n": "Hayabusa 1 (Asteroid Itokawa 2005)",
+        "c": "JAXA"
+      },
+      {
+        "n": "Kaguya/SELENE (Mond-Orbiter 2007)",
+        "c": "JAXA"
+      },
+      {
+        "n": "Mars Express (seit 2003)",
+        "c": "ESA"
+      },
+      {
+        "n": "SMART-1 (Mond-Orbiter 2003–2006)",
+        "c": "ESA"
+      },
+      {
+        "n": "Deep Impact (Komet Tempel 1, 2005)",
+        "c": "NASA"
+      },
+      {
+        "n": "Stardust (Komet Wild 2, 2004)",
+        "c": "NASA"
+      },
+      {
+        "n": "LCROSS (Mondeinschlag 2009)",
+        "c": "NASA"
+      },
+      {
+        "n": "Lunar Reconnaissance Orbiter (seit 2009)",
+        "c": "NASA"
+      },
+      {
+        "n": "Chang'e 4 (Mondrückseite, seit 2019)",
+        "c": "CNSA"
+      },
+      {
+        "n": "ExoMars TGO (Mars-Gase, seit 2016)",
+        "c": "ESA/Roskosmos"
+      },
+      {
+        "n": "James Webb Space Telescope (seit 2021)",
+        "c": "NASA/ESA/CSA"
+      },
+      {
+        "n": "TESS (Exoplanet-Suche, seit 2018)",
+        "c": "NASA"
+      },
+      {
+        "n": "Kepler Space Telescope (2009–2018)",
+        "c": "NASA"
+      },
+      {
+        "n": "OSIRIS-APEX (ex-REx, Asteroid Apophis)",
+        "c": "NASA"
+      },
+      {
+        "n": "Dragonfly (Titan-Mission, geplant 2034)",
+        "c": "NASA"
+      },
+      {
+        "n": "Europa Clipper (Jupitermond, seit 2024)",
+        "c": "NASA"
       }
     ]
   },
@@ -115,6 +307,86 @@
       {
         "n": "Planetarischer Nebel",
         "c": "Leuchtende Gashuelle um sterbenden Stern"
+      },
+      {
+        "n": "Dunkle Materie",
+        "c": "Unsichtbare Materie — hält Galaxien zusammen"
+      },
+      {
+        "n": "Dunkle Energie",
+        "c": "Treibt beschleunigte Expansion des Universums"
+      },
+      {
+        "n": "Magnetar",
+        "c": "Neutronenstern mit extrem starkem Magnetfeld"
+      },
+      {
+        "n": "Gamma-Ray Burst (GRB)",
+        "c": "Leuchtstärkste Explosion im Universum"
+      },
+      {
+        "n": "Kosmische Inflation",
+        "c": "Exponentiell schnelle Expansion kurz nach Urknall"
+      },
+      {
+        "n": "Kosmische Hintergrundstrahlung (CMB)",
+        "c": "Überbleibsel des Urknalls (~380.000 J.)"
+      },
+      {
+        "n": "Gravitationswelle",
+        "c": "Raumzeitkrümmung durch beschleunigte Massen"
+      },
+      {
+        "n": "Hawking-Strahlung",
+        "c": "Thermische Strahlung schwarzer Löcher (Quanteneffekt)"
+      },
+      {
+        "n": "Chandrasekhar-Limit",
+        "c": "Maximal ~1,4 Sonnenmassen für weißen Zwerg"
+      },
+      {
+        "n": "Schwarzschild-Radius",
+        "c": "Kritischer Radius ab dem Licht nicht entkommt"
+      },
+      {
+        "n": "Hubble-Konstante (H₀)",
+        "c": "Expansionsrate des Universums (~70 km/s/Mpc)"
+      },
+      {
+        "n": "Roter Riese",
+        "c": "Aufgeblasener Stern am Ende seines Lebens"
+      },
+      {
+        "n": "Blaue Hauptreihenstern",
+        "c": "Heißer, kurzlebiger massereicher Stern"
+      },
+      {
+        "n": "T-Tauri-Stern",
+        "c": "Junger protostellarer Stern vor der Hauptreihe"
+      },
+      {
+        "n": "Interstellares Medium (ISM)",
+        "c": "Gas und Staub zwischen den Sternen"
+      },
+      {
+        "n": "Akkretion",
+        "c": "Materieaufnahme durch Schwerkraft (z.B. auf schwarze Löcher)"
+      },
+      {
+        "n": "Gezeitenzerreißung (TDE)",
+        "c": "Stern wird von Gravitation eines schwarzen Lochs zerrissen"
+      },
+      {
+        "n": "Gravitationslinse",
+        "c": "Lichtablenkung durch massive Objekte"
+      },
+      {
+        "n": "Rote Verschiebung (Redshift)",
+        "c": "Licht entfernter Galaxien verschoben → Expansion"
+      },
+      {
+        "n": "Baryon-Asymmetrie",
+        "c": "Warum gibt es mehr Materie als Antimaterie?"
       }
     ]
   },
@@ -160,6 +432,150 @@
       {
         "n": "Voyager 1",
         "c": "Interstellarer Raum"
+      },
+      {
+        "n": "Voyager 2",
+        "c": "Neptun & Uranus"
+      },
+      {
+        "n": "Pioneer 10",
+        "c": "Jupiter (Flyby)"
+      },
+      {
+        "n": "Pioneer 11",
+        "c": "Saturn (Flyby)"
+      },
+      {
+        "n": "Galileo-Sonde (NASA)",
+        "c": "Jupiter"
+      },
+      {
+        "n": "Magellan (NASA)",
+        "c": "Venus"
+      },
+      {
+        "n": "Venus Express (ESA)",
+        "c": "Venus"
+      },
+      {
+        "n": "Akatsuki (JAXA)",
+        "c": "Venus"
+      },
+      {
+        "n": "Mars Global Surveyor",
+        "c": "Mars"
+      },
+      {
+        "n": "Mars Odyssey",
+        "c": "Mars"
+      },
+      {
+        "n": "Mars Reconnaissance Orbiter",
+        "c": "Mars"
+      },
+      {
+        "n": "Mars Express (ESA)",
+        "c": "Mars"
+      },
+      {
+        "n": "MAVEN (NASA)",
+        "c": "Mars (Atmosphäre)"
+      },
+      {
+        "n": "Phoenix Lander",
+        "c": "Mars (Nordpol)"
+      },
+      {
+        "n": "Spirit Rover",
+        "c": "Mars"
+      },
+      {
+        "n": "Opportunity Rover",
+        "c": "Mars"
+      },
+      {
+        "n": "Perseverance Rover",
+        "c": "Mars"
+      },
+      {
+        "n": "Tianwen-1 (CNSA)",
+        "c": "Mars"
+      },
+      {
+        "n": "Sojourner Rover (Pathfinder)",
+        "c": "Mars"
+      },
+      {
+        "n": "BepiColombo (ESA/JAXA)",
+        "c": "Merkur"
+      },
+      {
+        "n": "Mariner 10",
+        "c": "Merkur"
+      },
+      {
+        "n": "Deep Impact (NASA)",
+        "c": "Komet Tempel 1"
+      },
+      {
+        "n": "Stardust (NASA)",
+        "c": "Komet Wild 2"
+      },
+      {
+        "n": "LCROSS (NASA)",
+        "c": "Mond"
+      },
+      {
+        "n": "Lunar Reconnaissance Orbiter",
+        "c": "Mond"
+      },
+      {
+        "n": "Chang'e 4 (CNSA)",
+        "c": "Mond (Rückseite)"
+      },
+      {
+        "n": "Chandrayaan-3 (ISRO)",
+        "c": "Mond (Südpol)"
+      },
+      {
+        "n": "Hayabusa (JAXA)",
+        "c": "Asteroid Itokawa"
+      },
+      {
+        "n": "DART (NASA)",
+        "c": "Asteroid Dimorphos"
+      },
+      {
+        "n": "Parker Solar Probe (NASA)",
+        "c": "Sonne"
+      },
+      {
+        "n": "Solar Orbiter (ESA)",
+        "c": "Sonne"
+      },
+      {
+        "n": "SOHO (ESA/NASA)",
+        "c": "Sonne"
+      },
+      {
+        "n": "Ulysses (ESA)",
+        "c": "Sonne (Polregionen)"
+      },
+      {
+        "n": "Europa Clipper (NASA)",
+        "c": "Europa (Jupitermond)"
+      },
+      {
+        "n": "Galileo-Probe (Atmosph.-Eintritt)",
+        "c": "Jupiter (Atmosphäre)"
+      },
+      {
+        "n": "Chandrayaan-1 (ISRO)",
+        "c": "Mond"
+      },
+      {
+        "n": "New Horizons (Kuiper-Gürtel)",
+        "c": "Arrokoth (Kuiper-Gürtel)"
       }
     ]
   },
@@ -205,6 +621,162 @@
       {
         "n": "Makemake",
         "c": "Zwergplanet"
+      },
+      {
+        "n": "Erde",
+        "c": "Planet (Gesteinsplanet)"
+      },
+      {
+        "n": "Mars",
+        "c": "Planet (Gesteinsplanet)"
+      },
+      {
+        "n": "Venus",
+        "c": "Planet (Gesteinsplanet)"
+      },
+      {
+        "n": "Merkur",
+        "c": "Planet (Gesteinsplanet)"
+      },
+      {
+        "n": "Neptun",
+        "c": "Planet (Eisriese)"
+      },
+      {
+        "n": "Uranus",
+        "c": "Planet (Eisriese)"
+      },
+      {
+        "n": "Mond (Erde)",
+        "c": "Mond"
+      },
+      {
+        "n": "Europa",
+        "c": "Mond"
+      },
+      {
+        "n": "Ganymed",
+        "c": "Mond"
+      },
+      {
+        "n": "Kallisto",
+        "c": "Mond"
+      },
+      {
+        "n": "Enceladus",
+        "c": "Mond"
+      },
+      {
+        "n": "Triton",
+        "c": "Mond"
+      },
+      {
+        "n": "Charon",
+        "c": "Mond"
+      },
+      {
+        "n": "Haumea",
+        "c": "Zwergplanet"
+      },
+      {
+        "n": "Eris",
+        "c": "Zwergplanet"
+      },
+      {
+        "n": "Vesta",
+        "c": "Asteroid"
+      },
+      {
+        "n": "Pallas",
+        "c": "Asteroid"
+      },
+      {
+        "n": "Apophis",
+        "c": "Asteroid"
+      },
+      {
+        "n": "Komet 67P/Churyumov-Gerasimenko",
+        "c": "Komet"
+      },
+      {
+        "n": "Komet NEOWISE (C/2020 F3)",
+        "c": "Komet"
+      },
+      {
+        "n": "Komet Hale-Bopp",
+        "c": "Komet"
+      },
+      {
+        "n": "Orionnebel (M42)",
+        "c": "Emissionsnebel"
+      },
+      {
+        "n": "Krabbennebel (M1)",
+        "c": "Supernovarest"
+      },
+      {
+        "n": "Ringnebel (M57)",
+        "c": "Planetarischer Nebel"
+      },
+      {
+        "n": "Omega-Centauri",
+        "c": "Kugelsternhaufen"
+      },
+      {
+        "n": "Plejaden (M45)",
+        "c": "Offener Sternhaufen"
+      },
+      {
+        "n": "Abell 2029",
+        "c": "Galaxienhaufen"
+      },
+      {
+        "n": "SGR A*",
+        "c": "Schwarzes Loch"
+      },
+      {
+        "n": "Crab Pulsar (PSR B0531+21)",
+        "c": "Pulsar"
+      },
+      {
+        "n": "3C 273",
+        "c": "Quasar"
+      },
+      {
+        "n": "Proxima Centauri",
+        "c": "Stern (Roter Zwerg)"
+      },
+      {
+        "n": "Beteigeuze (Betelgeuse)",
+        "c": "Stern (Roter Überriese)"
+      },
+      {
+        "n": "Sirius B",
+        "c": "Weißer Zwerg"
+      },
+      {
+        "n": "Sagittarius A* (Milchstraßenzentrum)",
+        "c": "Schwarzes Loch"
+      },
+      {
+        "n": "LMC (Große Magellansche Wolke)",
+        "c": "Irreguläre Galaxie"
+      },
+      {
+        "n": "Circinus-Galaxie",
+        "c": "Seyfert-Galaxie"
+      },
+      {
+        "n": "NGC 1277",
+        "c": "Galaxie mit supermassivem schwarzem Loch"
+      },
+      {
+        "n": "Boomerang-Nebel",
+        "c": "Präplanetarischer Nebel"
+      },
+      {
+        "n": "PSR J0437-4715",
+        "c": "Millisekunden-Pulsar"
       }
     ]
   },
@@ -250,6 +822,166 @@
       {
         "n": "Skorpion (Scorpius)",
         "c": "Südhimmel"
+      },
+      {
+        "n": "Löwe (Leo)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Stier (Taurus)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Zwillinge (Gemini)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Jungfrau (Virgo)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Waage (Libra)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Schütze (Sagittarius)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Steinbock (Capricornus)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Wassermann (Aquarius)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Fische (Pisces)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Schlangenträger (Ophiuchus)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Adler (Aquila)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Schwan (Cygnus)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Leier (Lyra)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Herkules (Hercules)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Drache (Draco)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Fuhrmann (Auriga)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Perseus",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Kepheus (Cepheus)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Andromeda",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Bootes (Bärenhüter)",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Corona Borealis",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Nördliche Krone",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Hydra (Wasserschlange)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Vela (Segel)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Puppis (Hinterdeck)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Grus (Kranich)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Phoenix",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Pavo (Pfau)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Ara (Altar)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Lupus (Wolf)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Musca (Fliege)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Columba (Taube)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Sculptor",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Eridanus (Fluss)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Vela (Schiffssegel)",
+        "c": "Südhimmel"
+      },
+      {
+        "n": "Schütze (Sagittarius)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Ophiuchus",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Monoceros (Einhorn)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Lepus (Hase)",
+        "c": "Äquatorbereich"
+      },
+      {
+        "n": "Fornax (Ofen)",
+        "c": "Südhimmel"
       }
     ]
   },
@@ -287,6 +1019,122 @@
       {
         "n": "Cecilia Payne-Gaposchkin",
         "c": "Sterne bestehen hauptsächlich aus Wasserstoff"
+      },
+      {
+        "n": "Tycho Brahe",
+        "c": "Präzise Planetenbeobachtungen ohne Teleskop"
+      },
+      {
+        "n": "Charles Messier",
+        "c": "Messier-Katalog der Nebel und Sternhaufen"
+      },
+      {
+        "n": "William Herschel",
+        "c": "Entdeckung des Uranus und Infrarotstrahlung"
+      },
+      {
+        "n": "Caroline Herschel",
+        "c": "Erste Frau mit offiziellem Astronomentitel"
+      },
+      {
+        "n": "Henrietta Swan Leavitt",
+        "c": "Entfernungsmessung über Cepheiden-Perioden"
+      },
+      {
+        "n": "Annie Jump Cannon",
+        "c": "Harvard-Spektralklassifikation der Sterne"
+      },
+      {
+        "n": "Jocelyn Bell Burnell",
+        "c": "Entdeckung des ersten Pulsars (1967)"
+      },
+      {
+        "n": "Subrahmanyan Chandrasekhar",
+        "c": "Chandrasekhar-Limit weißer Zwerge"
+      },
+      {
+        "n": "Carl Sagan",
+        "c": "Kosmologische Aufklärung und SETI-Pionier"
+      },
+      {
+        "n": "Fritz Zwicky",
+        "c": "Erste Hinweise auf Dunkle Materie (1933)"
+      },
+      {
+        "n": "Georges Lemaître",
+        "c": "Urknall-Theorie (Primaeval Atom)"
+      },
+      {
+        "n": "Albert Einstein",
+        "c": "Allgemeine Relativitätstheorie (Raumzeit)"
+      },
+      {
+        "n": "Christiaan Huygens",
+        "c": "Entdeckung des Saturn-Mondes Titan"
+      },
+      {
+        "n": "Giovanni Cassini",
+        "c": "Entdeckung der Cassini-Teilung in Saturnringen"
+      },
+      {
+        "n": "William Pickering",
+        "c": "Entdeckung des Saturn-Mondes Phoebe"
+      },
+      {
+        "n": "Frank Drake",
+        "c": "Drake-Gleichung zur Schätzung außerirdischer Zivilisationen"
+      },
+      {
+        "n": "Jill Tarter",
+        "c": "SETI-Institut-Forscherin und Radioastronomin"
+      },
+      {
+        "n": "Gerard Kuiper",
+        "c": "Beschreibung des Kuiper-Gürtels"
+      },
+      {
+        "n": "Jan Oort",
+        "c": "Oortsche Wolke als Quelle der Kometen"
+      },
+      {
+        "n": "Percival Lowell",
+        "c": "Vorhersage des Planeten X (führte zu Pluto-Entdeckung)"
+      },
+      {
+        "n": "Williamina Fleming",
+        "c": "Klassifikation von über 10.000 Sternenspektren"
+      },
+      {
+        "n": "Michel Mayor",
+        "c": "Entdeckung des ersten Exoplaneten (51 Peg b)"
+      },
+      {
+        "n": "Didier Queloz",
+        "c": "Mitentdeckung des ersten Exoplaneten (51 Peg b)"
+      },
+      {
+        "n": "Georges Lemaître",
+        "c": "Urknall-Theorie"
+      },
+      {
+        "n": "Alexei Leonov",
+        "c": "Erster Weltraumausstieg (EVA) 1965"
+      },
+      {
+        "n": "Neil Armstrong",
+        "c": "Erster Mensch auf dem Mond (Apollo 11, 1969)"
+      },
+      {
+        "n": "Yuri Gagarin",
+        "c": "Erster Mensch im Weltraum (Vostok 1, 1961)"
+      },
+      {
+        "n": "Valentina Tereshkova",
+        "c": "Erste Frau im Weltraum (Vostok 6, 1963)"
+      },
+      {
+        "n": "Katherine Johnson",
+        "c": "NASA-Mathematikerin: Bahnberechnungen Mercury/Apollo"
       }
     ]
   },
@@ -324,6 +1172,94 @@
       {
         "n": "Deep Space 1 (NASA-Sonde)",
         "c": "Ionenantrieb"
+      },
+      {
+        "n": "Raptor (SpaceX Starship, Vollausbau)",
+        "c": "Methan/Flüssigsauerstoff"
+      },
+      {
+        "n": "BE-4 (Blue Origin New Glenn)",
+        "c": "Methan/Flüssigsauerstoff"
+      },
+      {
+        "n": "RD-180 (Atlas V, 1. Stufe)",
+        "c": "Kerosin/Flüssigsauerstoff"
+      },
+      {
+        "n": "NK-33/AJ26 (Antares)",
+        "c": "Kerosin/Flüssigsauerstoff"
+      },
+      {
+        "n": "Rutherford (Electron, Rocket Lab)",
+        "c": "Kerosin/Flüssigsauerstoff"
+      },
+      {
+        "n": "Merlin Vakuum (Falcon 9, Oberstufe)",
+        "c": "Kerosin/Flüssigsauerstoff"
+      },
+      {
+        "n": "RL-10 (Centaur-Oberstufe)",
+        "c": "Kryogen (LH2/LOX)"
+      },
+      {
+        "n": "J-2 (Saturn V, 2. + 3. Stufe)",
+        "c": "Kryogen (LH2/LOX)"
+      },
+      {
+        "n": "RS-68 (Delta IV Heavy)",
+        "c": "Kryogen (LH2/LOX)"
+      },
+      {
+        "n": "HM7B (Ariane-Oberstufe)",
+        "c": "Kryogen (LH2/LOX)"
+      },
+      {
+        "n": "RD-270 (Proton-Projekt, ungeflogen)",
+        "c": "UDMH/Stickstofftetroxid"
+      },
+      {
+        "n": "YF-77 (Long March 5, Kernstufe)",
+        "c": "Kryogen (LH2/LOX)"
+      },
+      {
+        "n": "Vikas (GSLV Mk II)",
+        "c": "UDMH/Stickstofftetroxid"
+      },
+      {
+        "n": "CE-7.5 (GSLV Mk III, Cryostage)",
+        "c": "Kryogen (LH2/LOX)"
+      },
+      {
+        "n": "RD-107 (Sojus-Booster)",
+        "c": "Kerosin/Flüssigsauerstoff"
+      },
+      {
+        "n": "NEXT-C (NASA Evolved Xenon Thruster)",
+        "c": "Ionenantrieb (Xenon)"
+      },
+      {
+        "n": "Hall-Effekt-Triebwerk (SPT-100)",
+        "c": "Elektrischer Antrieb"
+      },
+      {
+        "n": "VASIMR (Variable Specific Impulse Magneto)",
+        "c": "Plasma (Radiofrequenz)"
+      },
+      {
+        "n": "Solar Sail IKAROS (JAXA)",
+        "c": "Solarer Strahlungsdruck"
+      },
+      {
+        "n": "RTG (Voyager 1 & 2)",
+        "c": "Radioisotopen-Thermogenerator"
+      },
+      {
+        "n": "Nuclear Thermal Rocket (NTR, geplant)",
+        "c": "Kernspaltung (Wasserstoff)"
+      },
+      {
+        "n": "Project Orion (hist. Konzept)",
+        "c": "Nuklear-Puls"
       }
     ]
   },
@@ -361,6 +1297,106 @@
       {
         "n": "Kleine Magellansche Wolke",
         "c": "Irreguläre Galaxie"
+      },
+      {
+        "n": "Triangulum-Galaxie (M33)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Whirlpool-Galaxie (M51)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Sculptor-Galaxie (NGC 253)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Sonnenblumen-Galaxie (M63)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Bode-Galaxie (M81)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "NGC 1365",
+        "c": "Balkenspirale"
+      },
+      {
+        "n": "NGC 6217",
+        "c": "Balkenspirale"
+      },
+      {
+        "n": "NGC 2903",
+        "c": "Balkenspirale"
+      },
+      {
+        "n": "Centaurus A (NGC 5128)",
+        "c": "Elliptische Galaxie"
+      },
+      {
+        "n": "Fornax A (NGC 1316)",
+        "c": "Elliptische Galaxie"
+      },
+      {
+        "n": "M60 (NGC 4649)",
+        "c": "Elliptische Galaxie"
+      },
+      {
+        "n": "Sombrero-Galaxie (M104)",
+        "c": "Lenticuläre Galaxie (S0)"
+      },
+      {
+        "n": "Zigarren-Galaxie (M82)",
+        "c": "Irreguläre Galaxie (Starburst)"
+      },
+      {
+        "n": "NGC 1427A",
+        "c": "Irreguläre Galaxie"
+      },
+      {
+        "n": "Sextans A",
+        "c": "Irreguläre Galaxie"
+      },
+      {
+        "n": "Cartwheel Galaxy",
+        "c": "Ring-Galaxie"
+      },
+      {
+        "n": "Hoag's Object",
+        "c": "Ring-Galaxie"
+      },
+      {
+        "n": "NGC 4038/4039 (Antennen-Galaxien)",
+        "c": "Interagierende Galaxien"
+      },
+      {
+        "n": "Leo I",
+        "c": "Zwerggalaxie (Sphäroid)"
+      },
+      {
+        "n": "Sculptor-Zwerggalaxie",
+        "c": "Zwerggalaxie (Sphäroid)"
+      },
+      {
+        "n": "NGC 3603",
+        "c": "HII-Region (Emissionsnebel-Galaxie)"
+      },
+      {
+        "n": "Markarian 231",
+        "c": "Ultraluminöse Infrarot-Galaxie (Quasar-Host)"
+      },
+      {
+        "n": "IC 1101",
+        "c": "Elliptische Galaxie (größte bekannte)"
+      },
+      {
+        "n": "NGC 5457 (Pinwheel Galaxy)",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "NGC 4889",
+        "c": "Elliptische Galaxie (supermassives schwarzes Loch)"
       }
     ]
   }

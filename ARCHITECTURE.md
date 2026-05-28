@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 258 (Stand: Mai 2026)
-**Build:** gen.py → 1.21 MB | GeoQuest.html → 2.36 MB | 681 Spielmodi | verify: 89/89
+**Version:** Phase 260 (Stand: Mai 2026)
+**Build:** gen.py → 1.22 MB | GeoQuest.html → 2.44 MB | 681 Spielmodi | verify: 89/89
 
 ---
 
@@ -1025,18 +1025,20 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | 256 | patch_256_tts_feedback.py | TTS (Web Speech API), openFeedback()-Modal, Supabase-Write |
 | 257 | patch_257_hud_cleanup.py | HUD: Fehler-Button entfernt, Buttons kleiner, 💡 Startseite, TTS-Highlight |
 | **258** | patch_258_pferde.py | **Pferde-Expansion: +4 Modi (MODES: 677->681). Offline-Feedback-Queue** |
+| **259** | patch_259_data_expansion.py | **Data Expansion Sprint: 15 Modi aufgefüllt (+297 Einträge). 14x Kultur-Match 5→25, canyons 8→25** |
+| **260** | patch_260_astro_massive.py | **Astronomie Massive Expansion: 20 Astro-Modi skaliert (+547 Einträge). astro_pin/hl/match auf 28-58 Items** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 258 -- Pferde-Expansion + Offline-Feedback, 681 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 260 -- Astronomie Massive Expansion (+547 Einträge), 681 Modi, 37 Datendateien, Mai 2026.*
 
 
 ---
 
 ## 13. Vollstaendiger Spielmodus-Katalog
 
-**Stand Phase 258 -- 681 Modi in 20 Kategorien**
+**Stand Phase 260 -- 681 Modi in 20 Kategorien**
 
 > **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
 
@@ -1924,4 +1926,4 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 
 ---
 
-*Katalog: 681 Modi | Stand Phase 258 | Mai 2026*
+*Katalog: 681 Modi | Stand Phase 260 | Mai 2026*
