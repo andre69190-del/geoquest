@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 275 (Stand: Mai 2026)
+**Version:** Phase 276 (Stand: Mai 2026)
 **Build:** gen.py → 1.17 MB | GeoQuest.html → 3.79 MB | 685 Spielmodi | verify: 90/90
 
 ---
@@ -1042,11 +1042,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **273** | patch_273_schaetzer_fix.py | **Distanz-/Flugzeit-Schätzer Fix: JSON c-Werte normalisiert (einheitliches Format), ansPool in gen.py von 10→44 (distanz) und 8→15 (flugzeit) unique Werte erweitert. Spielübersicht: 10→50 Distanzen, 8→50 Flugzeiten.** |
 | **274** | gen.py direkt | **Pin-Modus Anti-Spoiler: _mkPinQ zeigt jetzt nur Basisname ohne Stadt/Land in Klammern (subj=_dispSubj). Feedback-Label 22→35 Zeichen. "Levi's Stadium" statt "Levi's Stadium (Santa Clara, USA)" während Frage.** |
 | **275** | gen.py direkt | **Pin-Map Scroll-Fix: translateExtent [-W,-H→2W,2H] → [-0.5W,-0.5H→1.5W,1.5H] (kein Off-Screen mehr). Reset-Button ↺ erscheint nach erstem Panning-Touch, zoomt zurück zur Zielregion oder Vollwelt.** |
+| **276** | gen.py direkt | **Pin-Map Random-Offset: Zielort landet zufällig bei 20-80% des Viewports (nicht immer Mitte). Anti-Cheat: Mitte-klicken hilft nicht mehr. Reset-Button stellt gleiche Zufallsposition wieder her.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 275 -- Pin-Map Scroll-Fix: tightere translateExtent, Reset-Knopf ↺ nach Panning. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 276 -- Pin-Map Random-Offset: Zielort zufällig im Viewport (20-80%), kein Mitte-Klick-Exploit mehr. 685 Modi, Mai 2026.*
 
 
 ---

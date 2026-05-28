@@ -10235,10 +10235,14 @@ function drawAirportPinMap(readOnly){
     _rstBtn.title="Karte zurücksetzen";
     _rstBtn.style.cssText="position:absolute;top:6px;right:6px;padding:3px 7px;background:rgba(255,255,255,.88);border:1px solid #94a3b8;border-radius:6px;font-size:14px;cursor:pointer;z-index:8;line-height:1.3;display:none";
     _rstBtn.onclick=function(e){e.stopPropagation();
-      if(S.q&&S.q.targetLat!=null&&S.q.type==="uk_pin"){
+      /* Phase 276: Restore to initial random-position zoom stored in _mapZoom */
+      const _initZ=window._mapZoom;
+      if(_initZ&&_initZ.t){
+        svg.call(zoom.transform,_initZ.t);
+      }else if(S.q&&S.q.targetLat!=null&&S.q.type==="uk_pin"){
         const[_px,_py]=proj([S.q.targetLng,S.q.targetLat])||[W/2,H/2];
-        const _rk=3.5,_rtx=W/2-_rk*_px,_rty=H/2-_rk*_py;
-        const _rtr=d3.zoomIdentity.translate(_rtx,_rty).scale(_rk);
+        const _rk=3.5,_rx2=W*(0.2+rng()*0.6),_ry2=H*(0.2+rng()*0.6);
+        const _rtr=d3.zoomIdentity.translate(_rx2-_rk*_px,_ry2-_rk*_py).scale(_rk);
         svg.call(zoom.transform,_rtr);window._mapZoom={t:_rtr,lid:S.q.lid};
       }else{svg.call(zoom.transform,d3.zoomIdentity);window._mapZoom=null;}
       _rstBtn.style.display="none";
@@ -10252,10 +10256,13 @@ function drawAirportPinMap(readOnly){
   if(_savedZ&&_savedZ.t&&_savedZ.t.k>1&&_savedZ.lid===(S.q?S.q.lid:null)){
     svg.call(zoom.transform,_savedZ.t);
   } else if(!readOnly&&S.q&&S.q.targetLat!=null&&S.q.type==="uk_pin"){
-    /* Auto-zoom to target region for uk_pin modes so map isn't tiny world view */
+    /* Phase 276: Auto-zoom with RANDOM target position — not always centered.
+       Target lands anywhere between 20%-80% of viewport (not always middle). */
     const[px,py]=proj([S.q.targetLng,S.q.targetLat])||[W/2,H/2];
     const _k=3.5;
-    const _tx=W/2-_k*px, _ty=H/2-_k*py;
+    /* random anchor: 15% chance fully outside edge, otherwise 15%-85% of viewport */
+    const _rx=W*(-0.1+rng()*1.2), _ry=H*(-0.1+rng()*1.2);
+    const _tx=_rx-_k*px, _ty=_ry-_k*py;
     const _tr=d3.zoomIdentity.translate(_tx,_ty).scale(_k);
     svg.call(zoom.transform,_tr);
     window._mapZoom={t:_tr,lid:S.q?S.q.lid:null};
