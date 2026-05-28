@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 272: SPORT_POI Full-to-50 Sprint. Alle 18 SPORT_POI_GAMES auf 50 POIs (derby, eishockey, f1, tdf, fussball, olympia u.v.m.). UEFA_STADIUMS 28->50. geo_pin Fossilien/Graeben/Rifts/Geoparks 8->30-40. hohe_stadien 9->30, leichtathletik_wm 13->19. BETA komplett aus gen.py entfernt (0x Python, 0x JS). verify: 90/90."
+git commit -m "Phase 273: Distanz-/Flugzeit-Schaetzer Fix. JSON c-Werte normalisiert (einheitl. Format). ansPool distanz 10->44 unique Werte, flugzeit 8->15 unique Werte. Spieluebersicht: 10->50 Distanzen, 8->50 Flugzeiten. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

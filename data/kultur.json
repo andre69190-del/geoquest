@@ -17555,39 +17555,39 @@
     },
     {
       "n": "New York → Los Angeles",
-      "c": "3940 km"
+      "c": "3.940 km"
     },
     {
       "n": "Sydney → Perth",
-      "c": "3290 km"
+      "c": "3.290 km"
     },
     {
       "n": "London → Tokio",
-      "c": "9560 km"
+      "c": "9.560 km"
     },
     {
       "n": "Kairo → Kapstadt",
-      "c": "7700 km"
+      "c": "7.700 km"
     },
     {
       "n": "Buenos Aires → Santiago",
-      "c": "1140 km"
+      "c": "1.140 km"
     },
     {
       "n": "Moskau → Wladiwostok",
-      "c": "6430 km"
+      "c": "6.430 km"
     },
     {
       "n": "Delhi → Mumbai",
-      "c": "1400 km"
+      "c": "1.400 km"
     },
     {
       "n": "Amsterdam → Madrid",
-      "c": "1760 km"
+      "c": "1.760 km"
     },
     {
       "n": "Toronto → Vancouver",
-      "c": "3360 km"
+      "c": "3.360 km"
     },
     {
       "n": "London → Sydney",
@@ -17703,51 +17703,51 @@
     },
     {
       "n": "Tokyo → Buenos Aires",
-      "c": "18357 km"
+      "c": "18.357 km"
     },
     {
       "n": "Kapstadt → Oslo",
-      "c": "10061 km"
+      "c": "10.061 km"
     },
     {
       "n": "Mumbai → São Paulo",
-      "c": "15656 km"
+      "c": "15.656 km"
     },
     {
       "n": "Beijing → Kairo",
-      "c": "7249 km"
+      "c": "7.249 km"
     },
     {
       "n": "Moskau → Tokio",
-      "c": "7484 km"
+      "c": "7.484 km"
     },
     {
       "n": "Paris → New York",
-      "c": "5840 km"
+      "c": "5.840 km"
     },
     {
       "n": "Sydney → London",
-      "c": "16993 km"
+      "c": "16.993 km"
     },
     {
       "n": "Berlin → Peking",
-      "c": "7770 km"
+      "c": "7.770 km"
     },
     {
       "n": "Madrid → Mexiko-Stadt",
-      "c": "9027 km"
+      "c": "9.027 km"
     },
     {
       "n": "Nairobi → Jakarta",
-      "c": "8726 km"
+      "c": "8.726 km"
     },
     {
       "n": "Lagos → New Delhi",
-      "c": "8066 km"
+      "c": "8.066 km"
     },
     {
       "n": "Buenos Aires → Kapstadt",
-      "c": "6900 km"
+      "c": "6.900 km"
     }
   ],
   "flugzeit_schaetzer": [
@@ -17901,35 +17901,35 @@
     },
     {
       "n": "Paris → Tokyo",
-      "c": "~12 Std."
+      "c": "12 Std."
     },
     {
       "n": "Amsterdam → Bangkok",
-      "c": "~11 Std."
+      "c": "11 Std."
     },
     {
       "n": "München → Sydney",
-      "c": "~23 Std. (mit Stopp)"
+      "c": "23 Std."
     },
     {
       "n": "Frankfurt → São Paulo",
-      "c": "~11 Std."
+      "c": "11 Std."
     },
     {
       "n": "London → Nairobi",
-      "c": "~9 Std."
+      "c": "9 Std."
     },
     {
       "n": "New York → Mumbai",
-      "c": "~16 Std."
+      "c": "16 Std."
     },
     {
       "n": "Beijing → London",
-      "c": "~10 Std."
+      "c": "10 Std."
     },
     {
       "n": "Toronto → Hong Kong",
-      "c": "~15 Std."
+      "c": "15 Std."
     },
     {
       "n": "Frankfurt → Singapur",

@@ -9438,8 +9438,8 @@ const GEN={
   uk_schatten_gedreht:genOutlineQ,
   uk_mercator_illusion:()=>genFixedPoolMatchQ("mercator_illusion",["Ja","Nein"]),
   uk_kartenausschnitt:genMapReverseQ,
-  uk_distanz_schaetzer:()=>genFixedPoolMatchQ("distanz_schaetzer",["880 km","3940 km","3290 km","9560 km","7700 km","1140 km","6430 km","1400 km","1760 km","3360 km"]),
-  uk_flugzeit_schaetzer:()=>genFixedPoolMatchQ("flugzeit_schaetzer",["9 Std.","21 Std.","12 Std.","16 Std.","14 Std.","8 Std.","10 Std.","11 Std."]),
+  uk_distanz_schaetzer:()=>genFixedPoolMatchQ("distanz_schaetzer",["1.000 km","1.100 km","1.140 km","1.200 km","1.400 km","1.700 km","1.760 km","10.061 km","15.656 km","16.993 km","17.000 km","18.357 km","2.100 km","2.200 km","2.300 km","2.400 km","2.600 km","2.700 km","3.000 km","3.290 km","3.360 km","3.800 km","3.940 km","4.400 km","5.500 km","5.800 km","5.840 km","6.430 km","6.700 km","6.900 km","7.249 km","7.484 km","7.500 km","7.700 km","7.770 km","8.066 km","8.200 km","8.726 km","8.800 km","880 km","9.027 km","9.560 km","900 km","950 km"]),
+  uk_flugzeit_schaetzer:()=>genFixedPoolMatchQ("flugzeit_schaetzer",["10 Std.","11 Std.","12 Std.","13 Std.","14 Std.","15 Std.","16 Std.","17 Std.","21 Std.","23 Std.","5 Std.","6 Std.","7 Std.","8 Std.","9 Std."]),
   uk_breitengrad_match:()=>genUniversalMatchQ("breitengrad_match"),
   /* Phase 266 Timeline */
   timeline_geo_erdbeben:   ()=>genTimelineQ("geo_erdbeben"),
