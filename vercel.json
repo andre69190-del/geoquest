@@ -15,4 +15,15 @@
   ],
   "routes": [
     { "src": "/sw.js",              "dest": "/sw.js" },
-    { "src":
+    { "src": "/manifest.json",      "dest": "/manifest.json" },
+    { "src": "/icon.svg",           "dest": "/icon.svg" },
+    { "src": "/cities_data.js",     "dest": "/cities_data.js" },
+    { "src": "/robots.txt",         "dest": "/robots.txt",         "headers": { "Content-Type": "text/plain" } },
+    { "src": "/sitemap.xml",        "dest": "/sitemap.xml",        "headers": { "Content-Type": "application/xml" } },
+    { "src": "/landing.html",       "dest": "/landing.html" },
+    { "src": "/impressum.html",     "dest": "/impressum.html" },
+    { "src": "/datenschutz.html",   "dest": "/datenschutz.html" },
+    { "src": "/([^/]+\\.json)",     "dest": "/$1" },
+    { "src": "/(.*)",               "dest": "/index.html" }
+  ]
+}
