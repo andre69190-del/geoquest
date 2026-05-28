@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 258. Pferde-Expansion +4 Modi, pferde_rassen Pin 26 Items, Offline-Feedback-Queue, ARCH.md 681 Modi. verify: 89/89."
+git commit -m "Content: Phase 259. Data Expansion Sprint: 15 Modi aufgefüllt (+297 Einträge). 14x Kultur-Match 5→25 Items, canyons 8→25. verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
