@@ -14,8 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 282: 1v1 UX-Fix. WS-Modi aus Spielauswahl entfernt (noMultiplayer-Filter). Handoff-Screen zeigt Ergebnis von Spieler 1 (Richtig/Falsch/Zeit). verify: 90/90."
+git commit -m "Phase 283: KRITISCHER MP-Fix: initRng nach startGame (startGame hat rngSeed=null -> Root Cause aller falschen MP-Fragen). Feedback: reportBug+Crash in Supabase. Admin-Tab zeigt Feedback. verify: 90/90."
 git push origin main
 echo.
-echo Done! Vercel will deploy in ~60 seconds.
-pause
+echo Done! Vercel will deploy
