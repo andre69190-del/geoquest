@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 288 (Stand: Mai 2026)
+**Version:** Phase 291 (Stand: Mai 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.40 MB | 685 Spielmodi | verify: 90/90
 
 ---
@@ -1055,11 +1055,14 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **286** | patch_286_mp_show_opp_answer.py | **1v1-Online: Gegner-Auswahl sichtbar. score_update überträgt jetzt zusätzlich {sel,selOk,lid}; Empfänger speichert S.mpOppSel/mpOppSelOk/mpOppLid. Anzeige nur bei lid-Match: (a) universelle Zeile unter der Duell-Leiste "⚔ <Gegner> wählte: <Auswahl> ✓/✗" (alle Modi), (b) Schwert-Marker auf dem vom Gegner gewählten Options-Button (z.B. Höheres BIP). Resets in mpCountdown + startGame. verify: 90/90, node --check OK.** |
 | **287** | patch_287_i18n_de_en_pl.py | **i18n de/en/pl. (A) 15 hartkodierte deutsche Frage-Prompts (curr_real, neighbor×2, neighbor_fake, neighbor_count, border_q, de_plate, map_reverse, stadium, jersey, crest, beta_hl, beta_spotter, sport_poi, wappen) auf t() umgestellt — deutscher Wert 1:1 aus Original, en+pl ergänzt, übrige Sprachen Fallback EN. (B) LANG.pl von 115→158 Schlüssel komplettiert (inkl. Wort-Schmiede-UI) → de/en/pl jetzt alle 158, 0 Lücken. Andere 21 Sprachen bewusst unverändert. verify: 90/90, node --check OK.** |
 | **288** | patch_288_pl_content_i18n.py | **Polnische Spielinhalte für 5 Rubriken (E-Mobilität, Archäologie, Astronomie, Geologie, Sport). NEU: erweiterbare Inhalts-Übersetzung `_CONTENT_I18N={pl:{…}}` + Helper `_tc(s)` (weitere Sprachen einfach ergänzbar). Übersetzt: 196 Frage-Prompts + 54 Einheiten + 79 Match-Antwort-Buttons/Länder (fixedOpts). Verdrahtet in _mkPinQ (prompt), _mkHL (prompt+unit), _mkMatchQ (prompt + opts/ans konsistent). Eigennamen/Codes (CCS, Tesla, ISO 15118 …) fallen unverändert durch. Offen: `.c`-Distraktor-Buttons in astro/geo/sport-Match (Länder/Eigennamen/offener Text) bleiben DE. verify: 90/90, node --check OK.** |
+| **289** | patch_289_comp_i18n.py | **comparisons-Kategorie de/en/pl: comp_* Prompts (hartkodiert DE) über _tc lokalisiert — _compQ zentral gewrappt (11 Vergleiche) + 5 Spezial-Generatoren (Flughäfen/Gipfel/Olympia, mit Emoji). _CONTENT_I18N auf gültiges JSON normalisiert. +16 en/pl. verify: 90/90.** |
+| **290** | patch_290_beta_i18n.py | **HL-Beta + Beta-Modi de/en/pl: genHLBeta (26 HL_BETA_PROMPTS), genBetaMCQ (100 Fragen), genBetaHL (3 Prompts) über _tc gewrappt; 129 dt. Strings → en+pl (indexbasiertes Mapping). verify: 90/90, node --check OK.** |
+| **291** | patch_291_en_5cats.py | **Englisch für die 5 Rubriken: _CONTENT_I18N.en += 329 (196 Prompts + 54 Einheiten + 79 fixedOpts) — englische Entsprechungen der in P288 polnisch übersetzten Strings. Validierung: jeder Schlüssel existiert bereits in .pl. Damit die 5 Rubriken jetzt de/en/pl. verify: 90/90, node --check OK. Siehe GeoQuest_i18n_Audit.md.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 288 -- Polnische Spielinhalte (5 Rubriken): erweiterbare _CONTENT_I18N + _tc(); 196 Prompts + 54 Einheiten + 79 Match-Buttons auf Polnisch, in die 3 Universal-Engines verdrahtet. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 291 -- i18n-Ausbau: comp_* (289), HL-Beta + Beta-Modi (290) auf de/en/pl; Englisch für die 5 Rubriken (291). Sprach-Audit in GeoQuest_i18n_Audit.md. 685 Modi, Mai 2026.*
 
 
 ---

@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 288: Polnische Spielinhalte 5 Rubriken (patch_288_pl_content_i18n.py): erweiterbares _CONTENT_I18N + _tc(); 196 Prompts + 54 Einheiten + 79 Match-Buttons auf Polnisch, in Universal-Engines verdrahtet. 685 Modi. verify: 90/90."
+git commit -m "Phase 291: i18n-Ausbau de/en/pl: comp_* (289) + HL-Beta/Beta-Modi (290) lokalisiert, Englisch fuer die 5 Rubriken (291). Sprach-Audit GeoQuest_i18n_Audit.md. 685 Modi. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
