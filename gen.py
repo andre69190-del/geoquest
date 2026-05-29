@@ -7557,6 +7557,7 @@ const _footballData={
     {country:"Argentinien 2",cc:"ar",color:"#003366",style:"stripes_v"},
   ],
   crests:[
+    /* --- 10 originals --- */
     {country:"Deutschland",cc:"de",shape:"eagle",color:"#000000"},
     {country:"Frankreich",cc:"fr",shape:"rooster",color:"#003399"},
     {country:"England",cc:"gb",shape:"lion",color:"#CC0000"},
@@ -7567,6 +7568,55 @@ const _footballData={
     {country:"Portugal",cc:"pt",shape:"cross",color:"#006600"},
     {country:"Niederlande",cc:"nl",shape:"lion",color:"#FF6600"},
     {country:"Kroatien",cc:"hr",shape:"checker",color:"#FF0000"},
+    /* --- eagle additions (unique colors) --- */
+    {country:"Mexiko",cc:"mx",shape:"eagle",color:"#006847"},
+    {country:"USA",cc:"us",shape:"eagle",color:"#002868"},
+    {country:"Polen",cc:"pl",shape:"eagle",color:"#DC143C"},
+    {country:"Aegypten",cc:"eg",shape:"eagle",color:"#C09A00"},
+    {country:"Nigeria",cc:"ng",shape:"eagle",color:"#008751"},
+    {country:"Russland",cc:"ru",shape:"eagle",color:"#AA0000"},
+    {country:"Iran",cc:"ir",shape:"eagle",color:"#239F40"},
+    {country:"Rumaenien",cc:"ro",shape:"eagle",color:"#9B0000"},
+    {country:"Albanien",cc:"al",shape:"eagle",color:"#E41E20"},
+    {country:"Peru",cc:"pe",shape:"eagle",color:"#D91023"},
+    /* --- shield additions (unique colors) --- */
+    {country:"Belgien",cc:"be",shape:"shield",color:"#000000"},
+    {country:"Irland",cc:"ie",shape:"shield",color:"#169B62"},
+    {country:"Saudi-Arabien",cc:"sa",shape:"shield",color:"#007A3D"},
+    {country:"Kolumbien",cc:"co",shape:"shield",color:"#FCD116"},
+    {country:"Oesterreich",cc:"at",shape:"shield",color:"#ED2939"},
+    {country:"Pakistan",cc:"pk",shape:"shield",color:"#01411C"},
+    /* --- lion additions (unique colors) --- */
+    {country:"Schweden",cc:"se",shape:"lion",color:"#006AA7"},
+    {country:"Kamerun",cc:"cm",shape:"lion",color:"#007A5E"},
+    {country:"Senegal",cc:"sn",shape:"lion",color:"#00853F"},
+    {country:"Neuseeland",cc:"nz",shape:"lion",color:"#00247D"},
+    {country:"Ghana",cc:"gh",shape:"lion",color:"#FCB514"},
+    /* --- rooster additions (unique colors) --- */
+    {country:"Japan",cc:"jp",shape:"rooster",color:"#BC002D"},
+    {country:"Tuerkei",cc:"tr",shape:"rooster",color:"#E30A17"},
+    {country:"Marokko",cc:"ma",shape:"rooster",color:"#C1272D"},
+    /* --- diamond additions (unique colors) --- */
+    {country:"Australien",cc:"au",shape:"diamond",color:"#00285F"},
+    {country:"Elfenbeinkueste",cc:"ci",shape:"diamond",color:"#FF8000"},
+    {country:"Uruguay",cc:"uy",shape:"diamond",color:"#75AADB"},
+    {country:"Ecuador",cc:"ec",shape:"diamond",color:"#FFD100"},
+    {country:"Kenia",cc:"ke",shape:"diamond",color:"#006633"},
+    /* --- sun additions (unique colors) --- */
+    {country:"Suedkorea",cc:"kr",shape:"sun",color:"#003478"},
+    {country:"Nordmazedonien",cc:"mk",shape:"sun",color:"#CE2028"},
+    {country:"Kasachstan",cc:"kz",shape:"sun",color:"#00AFCA"},
+    {country:"Algerien",cc:"dz",shape:"sun",color:"#005D2D"},
+    {country:"Bolivien",cc:"bo",shape:"sun",color:"#F4E400"},
+    /* --- cross additions (unique colors) --- */
+    {country:"Ukraine",cc:"ua",shape:"cross",color:"#FFD700"},
+    {country:"Schweiz",cc:"ch",shape:"cross",color:"#FF0000"},
+    {country:"Griechenland",cc:"gr",shape:"cross",color:"#0D5EAF"},
+    {country:"Daenemark",cc:"dk",shape:"cross",color:"#C60C30"},
+    {country:"Finnland",cc:"fi",shape:"cross",color:"#003580"},
+    /* --- checker additions (unique colors) --- */
+    {country:"Jamaika",cc:"jm",shape:"checker",color:"#009B3A"},
+    {country:"Trinidad",cc:"tt",shape:"checker",color:"#CE1126"},
   ],
 };
 function _drawJersey(cc,color,style){
@@ -7638,19 +7688,19 @@ function _uOpts(ans,pool,n){
 function genFootballQ(mode){
   const type=mode||"stadium";
   if(type==="stadium"){
-    const d=_footballData.stadiums,idx=~~(Math.random()*d.length),cor=d[idx];
-    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).map(x=>x.country);
-    return{type:"stadium",prompt:"\u26BD In welchem Land steht dieses Stadion?",subj:cor.name,ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:cor.city+", "+cor.cap.toLocaleString()+" Pl\u00e4tze",cc:cor.cc};
+    const d=_footballData.stadiums,idx=~~(rng()*d.length),cor=d[idx];
+    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
+    return{type:"stadium",prompt:"\u26BD In welchem Land steht dieses Stadion?",subj:cor.name,ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:cor.city+", "+cor.cap.toLocaleString()+" Pl\u00e4tze",lid:"gfq_stad_"+cor.cc,cc:cor.cc};
   }
   if(type==="jersey"){
-    const d=_footballData.jerseys,idx=~~(Math.random()*d.length),cor=d[idx];
-    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).map(x=>x.country);
-    return{type:"jersey",prompt:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",subj:{cc:cor.cc,color:cor.color,style:cor.style},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",cc:cor.cc};
+    const d=_footballData.jerseys,idx=~~(rng()*d.length),cor=d[idx];
+    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
+    return{type:"jersey",prompt:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",subj:{cc:cor.cc,color:cor.color,style:cor.style},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",lid:"gfq_jer_"+cor.cc,cc:cor.cc};
   }
   if(type==="crest"){
-    const d=_footballData.crests,idx=~~(Math.random()*d.length),cor=d[idx];
-    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).map(x=>x.country);
-    return{type:"crest",prompt:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",subj:{shape:cor.shape,color:cor.color},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",cc:cor.cc};
+    const d=_footballData.crests,idx=~~(rng()*d.length),cor=d[idx];
+    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
+    return{type:"crest",prompt:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",subj:{shape:cor.shape,color:cor.color},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",lid:"gfq_cre_"+cor.cc,cc:cor.cc};
   }
   return null;
 }
@@ -8517,7 +8567,7 @@ function _mkMatchQ(DATA){
       opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
     }
     return{type:"uk_match",subj:correct.n,ans:correct.c,opts:opts,
-      prompt:d.prompt||"Ordne richtig zu:"};
+      prompt:d.prompt||"Ordne richtig zu:",lid:"mkm_"+cat+"_"+idx};
   };
 }
 function _mkWS(DATA,tag){
@@ -9557,10 +9607,18 @@ function _lvNext(){
   lv.phase="q";lv.sel=null;lv.timer=LV_TIME;
   /* Fix: P1 generates the question, P2 reuses it */
   if(lv.current===1||!lv.roundQ){
-    const modeId=lv.mode||_lvPickMode(lv.selType||"random",null,lv.selCat);  /* Phase 212: dynamic pool */
-    const genFn=GEN[modeId]||genFlagQ;
-    /* P208: try/catch so broken generator never crashes LV */
-    try{lv.roundQ=genFn()||genFlagQ();}catch(_e){console.warn("[GeoQuest LV] generator error:",_e);lv.roundQ=genFlagQ();}
+    /* P280: retry-loop guards against pin/HL/timeline modes that produce no opts */
+    var _lvTries=0,_lvQ=null;
+    while(_lvTries++<8&&!_lvQ){
+      var _lvModeId=lv.mode||_lvPickMode(lv.selType||"random",null,lv.selCat);
+      var _lvFn=GEN[_lvModeId]||genFlagQ;
+      try{
+        var _lvCandidate=_lvFn();
+        /* Only accept questions with at least 2 answer options */
+        if(_lvCandidate&&_lvCandidate.opts&&_lvCandidate.opts.length>=2)_lvQ=_lvCandidate;
+      }catch(_e){console.warn("[GeoQuest LV] generator error:",_e);}
+    }
+    lv.roundQ=_lvQ||genFlagQ()||genCityQ();
   }
   lv.q=lv.roundQ;
   render();
