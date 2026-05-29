@@ -251,6 +251,156 @@
         "n": "Luzniki Stadion (Moskau, 1980)",
         "lat": 55.7157,
         "lng": 37.5567
+      },
+      {
+        "n": "Olympic Stadium Antwerp 1920",
+        "lat": 51.22,
+        "lng": 4.4
+      },
+      {
+        "n": "Olympic Stadium Barcelona 1992",
+        "lat": 41.36,
+        "lng": 2.16
+      },
+      {
+        "n": "Commonwealth Stadium Edmonton",
+        "lat": 53.57,
+        "lng": -113.46
+      },
+      {
+        "n": "Commonwealth Games Delhi 2010",
+        "lat": 28.62,
+        "lng": 77.23
+      },
+      {
+        "n": "Gold Coast Cbus Stadium 2018",
+        "lat": -28.01,
+        "lng": 153.43
+      },
+      {
+        "n": "Hampden Park Glasgow 2014",
+        "lat": 55.82,
+        "lng": -4.25
+      },
+      {
+        "n": "Estadio Nacional Lima 2019",
+        "lat": -12.07,
+        "lng": -76.95
+      },
+      {
+        "n": "Estadio Mario Kempes Arg 1978",
+        "lat": -31.43,
+        "lng": -64.19
+      },
+      {
+        "n": "Estadio Monumental Buenos Aires",
+        "lat": -34.54,
+        "lng": -58.45
+      },
+      {
+        "n": "Estadio Centenario Montevideo 1930",
+        "lat": -34.89,
+        "lng": -56.15
+      },
+      {
+        "n": "Luzhniki Stadium Moscow WM 1980",
+        "lat": 55.72,
+        "lng": 37.55
+      },
+      {
+        "n": "Stade de France 2024 (Saint-Denis)",
+        "lat": 48.92,
+        "lng": 2.36
+      },
+      {
+        "n": "Olympic Stadium Munich 1972",
+        "lat": 48.17,
+        "lng": 11.55
+      },
+      {
+        "n": "Olympic Stadium Moscow 1980",
+        "lat": 55.73,
+        "lng": 37.56
+      },
+      {
+        "n": "LA Coliseum 1932/1984",
+        "lat": 34.01,
+        "lng": -118.29
+      },
+      {
+        "n": "Estadio Olimpico Mexico 1968",
+        "lat": 19.3,
+        "lng": -99.19
+      },
+      {
+        "n": "Helsinki Olympic Stadium 1952",
+        "lat": 60.19,
+        "lng": 24.93
+      },
+      {
+        "n": "Olympic Stadium Amsterdam 1928",
+        "lat": 52.34,
+        "lng": 4.86
+      },
+      {
+        "n": "Olympic Stadium Athens 2004",
+        "lat": 37.97,
+        "lng": 23.74
+      },
+      {
+        "n": "Birds Nest Beijing 2008/2022",
+        "lat": 40.0,
+        "lng": 116.39
+      },
+      {
+        "n": "Olympic Stadium London 2012",
+        "lat": 51.54,
+        "lng": 0.02
+      },
+      {
+        "n": "Maracana Rio 2016",
+        "lat": -22.91,
+        "lng": -43.23
+      },
+      {
+        "n": "National Stadium Tokyo 2021",
+        "lat": 35.68,
+        "lng": 139.71
+      },
+      {
+        "n": "Olympic Stadium Atlanta 1996",
+        "lat": 33.74,
+        "lng": -84.39
+      },
+      {
+        "n": "Stadium Australia Sydney 2000",
+        "lat": -33.85,
+        "lng": 151.07
+      },
+      {
+        "n": "Olympic Stadium Seoul 1988",
+        "lat": 37.52,
+        "lng": 127.07
+      },
+      {
+        "n": "Fisht Stadium Sochi 2014",
+        "lat": 43.41,
+        "lng": 39.95
+      },
+      {
+        "n": "Commonwealth Stadium Edmonton 1978",
+        "lat": 53.57,
+        "lng": -113.46
+      },
+      {
+        "n": "Gold Coast Cbus 2018",
+        "lat": -28.01,
+        "lng": 153.43
+      },
+      {
+        "n": "Estadio Mario Kempes 1978",
+        "lat": -31.43,
+        "lng": -64.19
       }
     ]
   },
@@ -506,6 +656,156 @@
         "n": "Kopenhagen Marathon Start (Frederiksberg)",
         "lat": 55.68,
         "lng": 12.53
+      },
+      {
+        "n": "New York Marathon Finish Central Park",
+        "lat": 40.77,
+        "lng": -73.98
+      },
+      {
+        "n": "Hamburg Marathon Finish Jungfernstieg",
+        "lat": 53.55,
+        "lng": 9.99
+      },
+      {
+        "n": "Barcelona Marathon Finish Parc de la Ciutadella",
+        "lat": 41.39,
+        "lng": 2.19
+      },
+      {
+        "n": "Brussels Marathon Finish",
+        "lat": 50.84,
+        "lng": 4.35
+      },
+      {
+        "n": "Zurich Marathon Finish",
+        "lat": 47.38,
+        "lng": 8.54
+      },
+      {
+        "n": "Osaka Marathon Finish",
+        "lat": 34.7,
+        "lng": 135.5
+      },
+      {
+        "n": "Fukuoka Marathon Finish",
+        "lat": 33.59,
+        "lng": 130.38
+      },
+      {
+        "n": "Los Angeles Marathon Finish Santa Monica",
+        "lat": 34.02,
+        "lng": -118.49
+      },
+      {
+        "n": "Dubai Marathon Finish Dubai Creek",
+        "lat": 25.19,
+        "lng": 55.27
+      },
+      {
+        "n": "Nairobi Marathon Finish",
+        "lat": -1.28,
+        "lng": 36.82
+      },
+      {
+        "n": "Seoul Marathon Finish Olympic",
+        "lat": 37.52,
+        "lng": 127.07
+      },
+      {
+        "n": "Comrades Marathon Finish Durban",
+        "lat": -29.86,
+        "lng": 31.02
+      },
+      {
+        "n": "Berlin Marathon Finish Brandenburger Tor",
+        "lat": 52.52,
+        "lng": 13.38
+      },
+      {
+        "n": "London Marathon Finish The Mall",
+        "lat": 51.5,
+        "lng": -0.14
+      },
+      {
+        "n": "Tokyo Marathon Finish Tokyo Station",
+        "lat": 35.68,
+        "lng": 139.77
+      },
+      {
+        "n": "Chicago Marathon Finish Grant Park",
+        "lat": 41.87,
+        "lng": -87.62
+      },
+      {
+        "n": "Paris Marathon Finish Avenue Foch",
+        "lat": 48.87,
+        "lng": 2.29
+      },
+      {
+        "n": "Amsterdam Marathon Finish Olympic",
+        "lat": 52.34,
+        "lng": 4.87
+      },
+      {
+        "n": "Vienna Marathon Finish Heldenplatz",
+        "lat": 48.21,
+        "lng": 16.36
+      },
+      {
+        "n": "Athens Classic Marathon Finish Panathinaiko",
+        "lat": 37.97,
+        "lng": 23.74
+      },
+      {
+        "n": "Rome Marathon Finish Colosseum",
+        "lat": 41.89,
+        "lng": 12.49
+      },
+      {
+        "n": "Barcelona Marathon Finish Ciutadella",
+        "lat": 41.39,
+        "lng": 2.19
+      },
+      {
+        "n": "Stockholm Marathon Finish Stadion",
+        "lat": 59.34,
+        "lng": 18.07
+      },
+      {
+        "n": "Prague Marathon Finish Old Town",
+        "lat": 50.08,
+        "lng": 14.43
+      },
+      {
+        "n": "Seoul Marathon Finish Olympic Stadium",
+        "lat": 37.52,
+        "lng": 127.07
+      },
+      {
+        "n": "Osaka Marathon Finish Namba",
+        "lat": 34.66,
+        "lng": 135.5
+      },
+      {
+        "n": "Fukuoka Marathon Finish Heiwadai",
+        "lat": 33.59,
+        "lng": 130.38
+      },
+      {
+        "n": "Honolulu Marathon Finish Kapiolani Park",
+        "lat": 21.28,
+        "lng": -157.84
+      },
+      {
+        "n": "LA Marathon Finish Santa Monica",
+        "lat": 34.02,
+        "lng": -118.49
+      },
+      {
+        "n": "Dubai Marathon Finish Dubai Marina",
+        "lat": 25.08,
+        "lng": 55.14
       }
     ]
   },
@@ -761,6 +1061,156 @@
         "n": "Fisht Stadium (Sotschi, Russland)",
         "lat": 43.41,
         "lng": 39.96
+      },
+      {
+        "n": "Stadio Olimpico Rom",
+        "lat": 41.93,
+        "lng": 12.47
+      },
+      {
+        "n": "Stade Velodrome Marseille",
+        "lat": 43.27,
+        "lng": 5.4
+      },
+      {
+        "n": "Aviva Stadium Dublin",
+        "lat": 53.34,
+        "lng": -6.23
+      },
+      {
+        "n": "Olimpiyskiy Kyiv",
+        "lat": 50.43,
+        "lng": 30.52
+      },
+      {
+        "n": "Arena Nationala Bukarest",
+        "lat": 44.44,
+        "lng": 26.1
+      },
+      {
+        "n": "Stadion Narodowy Warschau",
+        "lat": 52.24,
+        "lng": 21.04
+      },
+      {
+        "n": "Estadio Nacional Santiago",
+        "lat": -33.46,
+        "lng": -70.61
+      },
+      {
+        "n": "Estadio Jalisco Guadalajara",
+        "lat": 20.68,
+        "lng": -103.35
+      },
+      {
+        "n": "Estadio Universitario Monterrey",
+        "lat": 25.69,
+        "lng": -100.31
+      },
+      {
+        "n": "Moses Mabhida Durban",
+        "lat": -29.83,
+        "lng": 31.03
+      },
+      {
+        "n": "Wembley Stadium London",
+        "lat": 51.56,
+        "lng": -0.28
+      },
+      {
+        "n": "Signal Iduna Park Dortmund",
+        "lat": 51.49,
+        "lng": 7.45
+      },
+      {
+        "n": "Allianz Arena Munich",
+        "lat": 48.22,
+        "lng": 11.62
+      },
+      {
+        "n": "San Siro Milan",
+        "lat": 45.48,
+        "lng": 9.12
+      },
+      {
+        "n": "Stadio Olimpico Rome",
+        "lat": 41.93,
+        "lng": 12.47
+      },
+      {
+        "n": "Real Madrid Bernabeu",
+        "lat": 40.45,
+        "lng": -3.69
+      },
+      {
+        "n": "Atletico Metropolitano Madrid",
+        "lat": 40.44,
+        "lng": -3.6
+      },
+      {
+        "n": "Johan Cruyff Arena Amsterdam",
+        "lat": 52.31,
+        "lng": 4.94
+      },
+      {
+        "n": "Parc des Princes Paris",
+        "lat": 48.84,
+        "lng": 2.25
+      },
+      {
+        "n": "Celtic Park Glasgow",
+        "lat": 55.85,
+        "lng": -4.21
+      },
+      {
+        "n": "Ibrox Glasgow",
+        "lat": 55.85,
+        "lng": -4.31
+      },
+      {
+        "n": "Aviva Dublin",
+        "lat": 53.34,
+        "lng": -6.23
+      },
+      {
+        "n": "Olimpiyskiy Kyiv Ukraine",
+        "lat": 50.43,
+        "lng": 30.52
+      },
+      {
+        "n": "Luzhniki Moscow",
+        "lat": 55.73,
+        "lng": 37.56
+      },
+      {
+        "n": "RAMS Park Istanbul Galatasaray",
+        "lat": 41.07,
+        "lng": 28.77
+      },
+      {
+        "n": "Fenerbahce Sukru Saracoglu",
+        "lat": 40.98,
+        "lng": 29.03
+      },
+      {
+        "n": "Arena Nationala Bucharest",
+        "lat": 44.44,
+        "lng": 26.1
+      },
+      {
+        "n": "Narodowy Warsaw Poland",
+        "lat": 52.24,
+        "lng": 21.04
+      },
+      {
+        "n": "Maracana Rio de Janeiro",
+        "lat": -22.91,
+        "lng": -43.23
+      },
+      {
+        "n": "Monumental River Plate Buenos Aires",
+        "lat": -34.54,
+        "lng": -58.45
       }
     ]
   },
@@ -1016,6 +1466,156 @@
         "n": "Suzuka International Racing Course (Japan)",
         "lat": 34.84,
         "lng": 136.54
+      },
+      {
+        "n": "Portimao Portugal",
+        "lat": 37.23,
+        "lng": -8.63
+      },
+      {
+        "n": "Monza F1 Circuit Italy",
+        "lat": 45.62,
+        "lng": 9.29
+      },
+      {
+        "n": "Silverstone F1 England",
+        "lat": 52.07,
+        "lng": -1.02
+      },
+      {
+        "n": "Spa-Francorchamps Belgium",
+        "lat": 50.44,
+        "lng": 5.97
+      },
+      {
+        "n": "Nurburgring GP Germany",
+        "lat": 50.33,
+        "lng": 6.94
+      },
+      {
+        "n": "Hockenheimring Germany",
+        "lat": 49.33,
+        "lng": 8.57
+      },
+      {
+        "n": "Gilles Villeneuve Montreal",
+        "lat": 45.5,
+        "lng": -73.53
+      },
+      {
+        "n": "COTA Austin Texas",
+        "lat": 30.13,
+        "lng": -97.64
+      },
+      {
+        "n": "Suzuka Japan F1",
+        "lat": 34.84,
+        "lng": 136.54
+      },
+      {
+        "n": "Hungaroring Hungary",
+        "lat": 47.58,
+        "lng": 19.25
+      },
+      {
+        "n": "Autodromo Interlagos Sao Paulo",
+        "lat": -23.7,
+        "lng": -46.7
+      },
+      {
+        "n": "Albert Park Melbourne F1",
+        "lat": -37.85,
+        "lng": 144.97
+      },
+      {
+        "n": "Shanghai F1 Circuit",
+        "lat": 31.34,
+        "lng": 121.22
+      },
+      {
+        "n": "Bahrain F1 Circuit",
+        "lat": 26.03,
+        "lng": 50.51
+      },
+      {
+        "n": "Yas Marina F1 Abu Dhabi",
+        "lat": 24.47,
+        "lng": 54.6
+      },
+      {
+        "n": "Jeddah F1 Street Circuit",
+        "lat": 21.63,
+        "lng": 39.1
+      },
+      {
+        "n": "Losail F1 Qatar",
+        "lat": 25.49,
+        "lng": 51.45
+      },
+      {
+        "n": "Baku F1 Azerbaijan",
+        "lat": 40.37,
+        "lng": 49.85
+      },
+      {
+        "n": "Miami F1 Autodrome",
+        "lat": 25.96,
+        "lng": -80.24
+      },
+      {
+        "n": "Las Vegas F1 Street Circuit",
+        "lat": 36.15,
+        "lng": -115.15
+      },
+      {
+        "n": "Imola Enzo Ferrari Circuit",
+        "lat": 44.34,
+        "lng": 11.71
+      },
+      {
+        "n": "Zandvoort Dutch GP",
+        "lat": 52.39,
+        "lng": 4.54
+      },
+      {
+        "n": "Red Bull Ring Spielberg Austria",
+        "lat": 47.22,
+        "lng": 14.76
+      },
+      {
+        "n": "Singapore F1 Street Circuit",
+        "lat": 1.29,
+        "lng": 103.86
+      },
+      {
+        "n": "Mugello Tuscany Italy",
+        "lat": 43.99,
+        "lng": 11.37
+      },
+      {
+        "n": "Portimao Algarve Portugal",
+        "lat": 37.23,
+        "lng": -8.63
+      },
+      {
+        "n": "Catalunya Barcelona Spain",
+        "lat": 41.57,
+        "lng": 2.26
+      },
+      {
+        "n": "Daytona Speedway Florida USA",
+        "lat": 29.19,
+        "lng": -81.07
+      },
+      {
+        "n": "Indianapolis Motor Speedway USA",
+        "lat": 39.79,
+        "lng": -86.24
+      },
+      {
+        "n": "Laguna Seca Monterey USA",
+        "lat": 36.58,
+        "lng": -121.75
       }
     ]
   },
@@ -1271,6 +1871,156 @@
         "n": "Hakuba (Japan) — Olympia 1998 (Nagano)",
         "lat": 36.7,
         "lng": 137.86
+      },
+      {
+        "n": "Schladming Oesterreich Planai",
+        "lat": 47.39,
+        "lng": 13.69
+      },
+      {
+        "n": "Saalbach-Hinterglemm Oesterreich",
+        "lat": 47.39,
+        "lng": 12.64
+      },
+      {
+        "n": "Ischgl Oesterreich Apreski",
+        "lat": 47.01,
+        "lng": 10.29
+      },
+      {
+        "n": "Trondheim Norwegen Nordic WM",
+        "lat": 63.43,
+        "lng": 10.39
+      },
+      {
+        "n": "Saas-Fee Schweiz",
+        "lat": 46.11,
+        "lng": 7.93
+      },
+      {
+        "n": "Flims-Laax Schweiz Snowboard",
+        "lat": 46.84,
+        "lng": 9.28
+      },
+      {
+        "n": "Ramsau Dachstein Oesterreich Biathlon",
+        "lat": 47.42,
+        "lng": 13.64
+      },
+      {
+        "n": "Innsbruck Austria Olympics 1964/76",
+        "lat": 47.27,
+        "lng": 11.39
+      },
+      {
+        "n": "Zermatt Switzerland Matterhorn Ski",
+        "lat": 46.02,
+        "lng": 7.75
+      },
+      {
+        "n": "Cortina dAmpezzo Italy Olympics 2026",
+        "lat": 46.54,
+        "lng": 12.14
+      },
+      {
+        "n": "Val dIsere France WM 2009",
+        "lat": 45.45,
+        "lng": 6.98
+      },
+      {
+        "n": "Wengen Switzerland Lauberhorn",
+        "lat": 46.61,
+        "lng": 7.93
+      },
+      {
+        "n": "Adelboden Switzerland WC Slalom",
+        "lat": 46.49,
+        "lng": 7.56
+      },
+      {
+        "n": "Schladming Austria Planai WC",
+        "lat": 47.39,
+        "lng": 13.69
+      },
+      {
+        "n": "Ischgl Austria Apreski capital",
+        "lat": 47.01,
+        "lng": 10.29
+      },
+      {
+        "n": "Meribel France Olympics 1992",
+        "lat": 45.41,
+        "lng": 6.57
+      },
+      {
+        "n": "Chamonix France Olympics 1924",
+        "lat": 45.92,
+        "lng": 6.87
+      },
+      {
+        "n": "Garmisch-Partenkirchen Germany 1936",
+        "lat": 47.49,
+        "lng": 11.09
+      },
+      {
+        "n": "Oberstdorf Germany Nordic WM",
+        "lat": 47.41,
+        "lng": 10.28
+      },
+      {
+        "n": "Holmenkollen Oslo Norway ski jump",
+        "lat": 59.97,
+        "lng": 10.66
+      },
+      {
+        "n": "Lahti Finland Nordic WM",
+        "lat": 60.98,
+        "lng": 25.66
+      },
+      {
+        "n": "Falun Sweden Nordic WM",
+        "lat": 60.6,
+        "lng": 15.63
+      },
+      {
+        "n": "Trondheim Norway Nordic WM",
+        "lat": 63.43,
+        "lng": 10.39
+      },
+      {
+        "n": "Lake Placid New York Olympics 1932/1980",
+        "lat": 44.28,
+        "lng": -73.99
+      },
+      {
+        "n": "Park City Utah Salt Lake 2002",
+        "lat": 40.65,
+        "lng": -111.5
+      },
+      {
+        "n": "Whistler BC Canada Olympics 2010",
+        "lat": 50.12,
+        "lng": -122.96
+      },
+      {
+        "n": "Davos Switzerland ski classic",
+        "lat": 46.8,
+        "lng": 9.84
+      },
+      {
+        "n": "Flims-Laax Switzerland snowboard",
+        "lat": 46.84,
+        "lng": 9.28
+      },
+      {
+        "n": "Ramsau am Dachstein Austria biathlon",
+        "lat": 47.42,
+        "lng": 13.64
+      },
+      {
+        "n": "Seefeld Austria Nordic combined",
+        "lat": 47.33,
+        "lng": 11.18
       }
     ]
   },
@@ -1331,6 +2081,351 @@
         "n": "Madrid Open Caja Mágica (Spanien)",
         "lat": 40.37,
         "lng": -3.72
+      },
+      {
+        "n": "Monte Carlo Country Club",
+        "lat": 43.76,
+        "lng": 7.42
+      },
+      {
+        "n": "Halle Open (Deutschland)",
+        "lat": 51.98,
+        "lng": 8.36
+      },
+      {
+        "n": "Queens Club London",
+        "lat": 51.49,
+        "lng": -0.22
+      },
+      {
+        "n": "Cincinnati Open (Ohio, USA)",
+        "lat": 39.36,
+        "lng": -84.31
+      },
+      {
+        "n": "Canada Masters Montreal",
+        "lat": 45.56,
+        "lng": -73.76
+      },
+      {
+        "n": "Canada Masters Toronto",
+        "lat": 43.77,
+        "lng": -79.47
+      },
+      {
+        "n": "Shanghai Masters (China)",
+        "lat": 31.18,
+        "lng": 121.55
+      },
+      {
+        "n": "Paris Masters Bercy",
+        "lat": 48.84,
+        "lng": 2.38
+      },
+      {
+        "n": "Basel Swiss Indoors",
+        "lat": 47.54,
+        "lng": 7.62
+      },
+      {
+        "n": "Vienna Open (Oesterreich)",
+        "lat": 48.21,
+        "lng": 16.38
+      },
+      {
+        "n": "Nitto ATP Finals Turin",
+        "lat": 45.07,
+        "lng": 7.68
+      },
+      {
+        "n": "WTA Finals Riyadh",
+        "lat": 24.7,
+        "lng": 46.67
+      },
+      {
+        "n": "Stuttgart Porsche Grand Prix",
+        "lat": 48.79,
+        "lng": 9.19
+      },
+      {
+        "n": "Eastbourne International (England)",
+        "lat": 50.77,
+        "lng": 0.27
+      },
+      {
+        "n": "Mallorca Championships (Spanien)",
+        "lat": 39.57,
+        "lng": 2.65
+      },
+      {
+        "n": "Doha Qatar Open",
+        "lat": 25.29,
+        "lng": 51.53
+      },
+      {
+        "n": "Dubai Duty Free Tennis",
+        "lat": 25.23,
+        "lng": 55.36
+      },
+      {
+        "n": "Acapulco Open (Mexiko)",
+        "lat": 16.86,
+        "lng": -99.89
+      },
+      {
+        "n": "Buenos Aires Argentina Open",
+        "lat": -34.62,
+        "lng": -58.37
+      },
+      {
+        "n": "Rio Open (Brasilien)",
+        "lat": -22.97,
+        "lng": -43.18
+      },
+      {
+        "n": "Estoril Open (Portugal)",
+        "lat": 38.73,
+        "lng": -9.39
+      },
+      {
+        "n": "Lyon Open (Frankreich)",
+        "lat": 45.75,
+        "lng": 4.84
+      },
+      {
+        "n": "Bastad Swedish Open",
+        "lat": 56.43,
+        "lng": 12.85
+      },
+      {
+        "n": "Hamburg European Open",
+        "lat": 53.55,
+        "lng": 9.99
+      },
+      {
+        "n": "Gstaad Swiss Open",
+        "lat": 46.48,
+        "lng": 7.29
+      },
+      {
+        "n": "Umag Croatia Open",
+        "lat": 45.43,
+        "lng": 13.52
+      },
+      {
+        "n": "Kitzbuhel Austrian Open",
+        "lat": 47.45,
+        "lng": 12.39
+      },
+      {
+        "n": "Washington Citi Open",
+        "lat": 38.9,
+        "lng": -77.05
+      },
+      {
+        "n": "Shanghai Rolex Masters court",
+        "lat": 31.19,
+        "lng": 121.56
+      },
+      {
+        "n": "Korea Open Seoul",
+        "lat": 37.55,
+        "lng": 126.99
+      },
+      {
+        "n": "Japan Open Tokyo",
+        "lat": 35.67,
+        "lng": 139.77
+      },
+      {
+        "n": "Stockholm Open",
+        "lat": 59.33,
+        "lng": 18.07
+      },
+      {
+        "n": "Antwerp European Open",
+        "lat": 51.22,
+        "lng": 4.4
+      },
+      {
+        "n": "Moselle Open Metz",
+        "lat": 49.12,
+        "lng": 6.18
+      },
+      {
+        "n": "Chennai Open (Indien)",
+        "lat": 13.08,
+        "lng": 80.27
+      },
+      {
+        "n": "Pune Tata Open",
+        "lat": 18.52,
+        "lng": 73.86
+      },
+      {
+        "n": "Marrakech Open (Marokko)",
+        "lat": 31.63,
+        "lng": -8.0
+      },
+      {
+        "n": "Casablanca Grand Prix",
+        "lat": 33.59,
+        "lng": -7.62
+      },
+      {
+        "n": "Bogota Open (Kolumbien)",
+        "lat": 4.71,
+        "lng": -74.07
+      },
+      {
+        "n": "Buenos Aires La Rural court",
+        "lat": -34.58,
+        "lng": -58.45
+      },
+      {
+        "n": "Cordoba Open (Argentinien)",
+        "lat": -31.42,
+        "lng": -64.18
+      },
+      {
+        "n": "Santiago Chile Open",
+        "lat": -33.45,
+        "lng": -70.67
+      },
+      {
+        "n": "Lima Peru Open",
+        "lat": -12.05,
+        "lng": -77.05
+      },
+      {
+        "n": "Tashkent Open (Usbekistan)",
+        "lat": 41.3,
+        "lng": 69.24
+      },
+      {
+        "n": "Astana Open (Kasachstan)",
+        "lat": 51.18,
+        "lng": 71.45
+      },
+      {
+        "n": "Zhuhai Championships (China)",
+        "lat": 22.27,
+        "lng": 113.57
+      },
+      {
+        "n": "Chengdu Open (China)",
+        "lat": 30.66,
+        "lng": 104.07
+      },
+      {
+        "n": "Beijing China Open",
+        "lat": 39.93,
+        "lng": 116.39
+      },
+      {
+        "n": "Wuhan Open (China)",
+        "lat": 30.59,
+        "lng": 114.31
+      },
+      {
+        "n": "Guangzhou Open (China)",
+        "lat": 23.13,
+        "lng": 113.26
+      },
+      {
+        "n": "Newport Hall of Fame Open",
+        "lat": 41.49,
+        "lng": -71.31
+      },
+      {
+        "n": "Bucharest BRD Nastase Tiriac",
+        "lat": 44.43,
+        "lng": 26.1
+      },
+      {
+        "n": "Istanbul Open",
+        "lat": 41.01,
+        "lng": 28.98
+      },
+      {
+        "n": "Adelaide International",
+        "lat": -34.92,
+        "lng": 138.6
+      },
+      {
+        "n": "Auckland Classic NZ",
+        "lat": -36.87,
+        "lng": 174.77
+      },
+      {
+        "n": "ATP Cup Sydney",
+        "lat": -33.87,
+        "lng": 151.21
+      },
+      {
+        "n": "Lexington Open (USA)",
+        "lat": 38.05,
+        "lng": -84.5
+      },
+      {
+        "n": "Hopman Cup Perth",
+        "lat": -31.95,
+        "lng": 115.86
+      },
+      {
+        "n": "Mubadala Abu Dhabi (VAE)",
+        "lat": 24.47,
+        "lng": 54.37
+      },
+      {
+        "n": "Hong Kong Open",
+        "lat": 22.32,
+        "lng": 114.17
+      },
+      {
+        "n": "Taipei WTA Open",
+        "lat": 25.04,
+        "lng": 121.56
+      },
+      {
+        "n": "Guangzhou Tianhe Court",
+        "lat": 23.12,
+        "lng": 113.38
+      },
+      {
+        "n": "Nur-Sultan (Kazakstan) Open",
+        "lat": 51.19,
+        "lng": 71.44
+      },
+      {
+        "n": "Palermo International",
+        "lat": 38.12,
+        "lng": 13.36
+      },
+      {
+        "n": "Lausanne WTA (Schweiz)",
+        "lat": 46.52,
+        "lng": 6.63
+      },
+      {
+        "n": "Iasi Open (Rumaenien)",
+        "lat": 47.16,
+        "lng": 27.59
+      },
+      {
+        "n": "Gdynia Open (Polen)",
+        "lat": 54.52,
+        "lng": 18.53
+      },
+      {
+        "n": "Jiangxi Open (China)",
+        "lat": 28.68,
+        "lng": 115.88
+      },
+      {
+        "n": "Hua Hin Open (Thailand)",
+        "lat": 12.57,
+        "lng": 99.96
       }
     ]
   },
@@ -1586,6 +2681,156 @@
         "n": "Niseko (Japan) — bester Pulverschnee",
         "lat": 42.8,
         "lng": 140.69
+      },
+      {
+        "n": "Hahnenkamm Streif Kitzbuehel",
+        "lat": 47.45,
+        "lng": 12.37
+      },
+      {
+        "n": "Chuenisbaergli Adelboden",
+        "lat": 46.49,
+        "lng": 7.55
+      },
+      {
+        "n": "Santa Caterina Valfurva Italien",
+        "lat": 46.51,
+        "lng": 10.49
+      },
+      {
+        "n": "Breckenridge Colorado",
+        "lat": 39.48,
+        "lng": -106.05
+      },
+      {
+        "n": "Steamboat Springs Colorado",
+        "lat": 40.49,
+        "lng": -106.83
+      },
+      {
+        "n": "Sun Valley Idaho USA",
+        "lat": 43.68,
+        "lng": -114.35
+      },
+      {
+        "n": "Squaw Valley Palisades California",
+        "lat": 39.2,
+        "lng": -120.24
+      },
+      {
+        "n": "Snowbird Utah USA",
+        "lat": 40.58,
+        "lng": -111.66
+      },
+      {
+        "n": "Mammoth Mountain California",
+        "lat": 37.64,
+        "lng": -119.03
+      },
+      {
+        "n": "Mont Tremblant Quebec Kanada",
+        "lat": 46.21,
+        "lng": -74.59
+      },
+      {
+        "n": "Les Grands Montets Argentiere",
+        "lat": 45.97,
+        "lng": 6.93
+      },
+      {
+        "n": "Cervinia Breuil Italien/Schweiz",
+        "lat": 45.94,
+        "lng": 7.63
+      },
+      {
+        "n": "Sella Ronda Dolomiten",
+        "lat": 46.51,
+        "lng": 11.82
+      },
+      {
+        "n": "Nassfeld Oesterreich",
+        "lat": 46.62,
+        "lng": 13.24
+      },
+      {
+        "n": "Fieberbrunn Oesterreich Freeride",
+        "lat": 47.48,
+        "lng": 12.55
+      },
+      {
+        "n": "Alpe d'Huez Frankreich WM",
+        "lat": 45.09,
+        "lng": 6.07
+      },
+      {
+        "n": "Tignes Frankreich",
+        "lat": 45.47,
+        "lng": 6.9
+      },
+      {
+        "n": "Engelberg Schweiz Weltcup",
+        "lat": 46.82,
+        "lng": 8.41
+      },
+      {
+        "n": "Andermatt Schweiz Gemsstock",
+        "lat": 46.63,
+        "lng": 8.59
+      },
+      {
+        "n": "Les Arcs Frankreich",
+        "lat": 45.56,
+        "lng": 6.84
+      },
+      {
+        "n": "Flaine Frankreich Grand Massif",
+        "lat": 74.02,
+        "lng": 6.68
+      },
+      {
+        "n": "Aspen Snowmass Colorado ski area",
+        "lat": 39.19,
+        "lng": -106.82
+      },
+      {
+        "n": "Vail Colorado ski resort",
+        "lat": 39.64,
+        "lng": -106.37
+      },
+      {
+        "n": "Breckenridge Colorado resort",
+        "lat": 39.48,
+        "lng": -106.05
+      },
+      {
+        "n": "Sun Valley Idaho ski",
+        "lat": 43.68,
+        "lng": -114.35
+      },
+      {
+        "n": "Snowbird Utah ski area",
+        "lat": 40.58,
+        "lng": -111.66
+      },
+      {
+        "n": "Mont Tremblant Quebec Canada",
+        "lat": 46.21,
+        "lng": -74.59
+      },
+      {
+        "n": "Engelberg Switzerland World Cup",
+        "lat": 46.82,
+        "lng": 8.41
+      },
+      {
+        "n": "Andermatt Switzerland Gemsstock",
+        "lat": 46.63,
+        "lng": 8.59
+      },
+      {
+        "n": "Les Arcs France resort",
+        "lat": 45.56,
+        "lng": 6.84
       }
     ]
   },
@@ -1841,6 +3086,156 @@
         "n": "Royal County Down (Nordirland)",
         "lat": 54.2,
         "lng": -5.87
+      },
+      {
+        "n": "Shinnecock Hills New York",
+        "lat": 40.88,
+        "lng": -72.42
+      },
+      {
+        "n": "Medinah Country Club Illinois",
+        "lat": 41.96,
+        "lng": -88.06
+      },
+      {
+        "n": "Whistling Straits Wisconsin",
+        "lat": 43.89,
+        "lng": -87.67
+      },
+      {
+        "n": "Bay Hill Club Florida USA",
+        "lat": 28.46,
+        "lng": -81.48
+      },
+      {
+        "n": "Valderrama Spanien Ryder Cup 1997",
+        "lat": 36.29,
+        "lng": -5.26
+      },
+      {
+        "n": "K Club Irland Ryder Cup 2006",
+        "lat": 53.33,
+        "lng": -6.67
+      },
+      {
+        "n": "Gleneagles Schottland Ryder Cup 2014",
+        "lat": 56.27,
+        "lng": -3.77
+      },
+      {
+        "n": "Le Golf National Paris Ryder 2018",
+        "lat": 48.73,
+        "lng": 2.07
+      },
+      {
+        "n": "Marco Simone Rom Ryder 2023",
+        "lat": 42.01,
+        "lng": 12.72
+      },
+      {
+        "n": "Cape Kidnappers Neuseeland",
+        "lat": -39.63,
+        "lng": 177.04
+      },
+      {
+        "n": "Fancourt Suedafrika",
+        "lat": -33.92,
+        "lng": 22.47
+      },
+      {
+        "n": "Kasumigaseki Japan Olympics 2021",
+        "lat": 35.98,
+        "lng": 139.45
+      },
+      {
+        "n": "Erin Hills Wisconsin USA",
+        "lat": 43.13,
+        "lng": -88.19
+      },
+      {
+        "n": "St Andrews Old Course Scotland",
+        "lat": 56.34,
+        "lng": -2.8
+      },
+      {
+        "n": "Royal Troon Scotland Open",
+        "lat": 55.55,
+        "lng": -4.66
+      },
+      {
+        "n": "Carnoustie Scotland Open",
+        "lat": 56.5,
+        "lng": -2.71
+      },
+      {
+        "n": "Muirfield Scotland Open",
+        "lat": 56.03,
+        "lng": -2.81
+      },
+      {
+        "n": "Royal Birkdale England Open",
+        "lat": 53.6,
+        "lng": -3.04
+      },
+      {
+        "n": "Pebble Beach Monterey USA",
+        "lat": 36.57,
+        "lng": -121.95
+      },
+      {
+        "n": "Pinehurst No 2 North Carolina",
+        "lat": 35.19,
+        "lng": -79.47
+      },
+      {
+        "n": "Bethpage Black New York",
+        "lat": 40.74,
+        "lng": -73.46
+      },
+      {
+        "n": "Shinnecock Hills NY USA",
+        "lat": 40.88,
+        "lng": -72.42
+      },
+      {
+        "n": "Winged Foot NY USA",
+        "lat": 40.98,
+        "lng": -73.83
+      },
+      {
+        "n": "Oakmont Pennsylvania USA",
+        "lat": 40.52,
+        "lng": -79.84
+      },
+      {
+        "n": "Medinah Illinois USA",
+        "lat": 41.96,
+        "lng": -88.06
+      },
+      {
+        "n": "Whistling Straits Wisconsin USA",
+        "lat": 43.89,
+        "lng": -87.67
+      },
+      {
+        "n": "TPC Sawgrass Florida USA",
+        "lat": 30.19,
+        "lng": -81.39
+      },
+      {
+        "n": "Valderrama Spain Ryder Cup 1997",
+        "lat": 36.29,
+        "lng": -5.26
+      },
+      {
+        "n": "K Club Ireland Ryder 2006",
+        "lat": 53.33,
+        "lng": -6.67
+      },
+      {
+        "n": "Gleneagles Scotland Ryder 2014",
+        "lat": 56.27,
+        "lng": -3.77
       }
     ]
   },
@@ -2096,6 +3491,156 @@
         "n": "Lance's Right (Mentawai, Indonesien)",
         "lat": -1.6,
         "lng": 99.7
+      },
+      {
+        "n": "Skeleton Bay Namibia",
+        "lat": -22.95,
+        "lng": 14.5
+      },
+      {
+        "n": "Dungeons Hout Bay Suedafrika",
+        "lat": -34.05,
+        "lng": 18.31
+      },
+      {
+        "n": "Desert Point Lombok Indonesien",
+        "lat": -8.78,
+        "lng": 116.13
+      },
+      {
+        "n": "Raglan Neuseeland Manu Bay",
+        "lat": -37.8,
+        "lng": 174.87
+      },
+      {
+        "n": "Kirra Gold Coast Australien",
+        "lat": -28.17,
+        "lng": 153.54
+      },
+      {
+        "n": "Margaret River Australien",
+        "lat": -33.95,
+        "lng": 114.94
+      },
+      {
+        "n": "Punta de Lobos Chile",
+        "lat": -34.37,
+        "lng": -71.7
+      },
+      {
+        "n": "Chicama Peru Laengste Welle",
+        "lat": -7.7,
+        "lng": -79.45
+      },
+      {
+        "n": "Sunset Beach Oahu Hawaii",
+        "lat": 21.68,
+        "lng": -158.04
+      },
+      {
+        "n": "Lakey Peak Sumbawa Indonesien",
+        "lat": -8.76,
+        "lng": 118.49
+      },
+      {
+        "n": "Shipstern Bluff Tasmanien",
+        "lat": -43.54,
+        "lng": 146.73
+      },
+      {
+        "n": "Pavones Costa Rica",
+        "lat": 8.39,
+        "lng": -83.23
+      },
+      {
+        "n": "Ocean Beach San Francisco",
+        "lat": 37.77,
+        "lng": -122.51
+      },
+      {
+        "n": "Supertubes Jeffreys Bay WSL",
+        "lat": -34.06,
+        "lng": 24.92
+      },
+      {
+        "n": "Teahupoo Tahiti French Polynesia",
+        "lat": -17.84,
+        "lng": -149.33
+      },
+      {
+        "n": "Jaws Peahi Maui Hawaii big wave",
+        "lat": 20.94,
+        "lng": -156.28
+      },
+      {
+        "n": "Cloudbreak Tavarua Fiji",
+        "lat": -17.87,
+        "lng": 177.2
+      },
+      {
+        "n": "Nazare Portugal biggest waves",
+        "lat": 39.6,
+        "lng": -9.07
+      },
+      {
+        "n": "Skeleton Bay Namibia tube",
+        "lat": -22.95,
+        "lng": 14.5
+      },
+      {
+        "n": "J-Bay Jeffreys Bay South Africa",
+        "lat": -34.05,
+        "lng": 24.91
+      },
+      {
+        "n": "Dungeons Hout Bay Cape Town",
+        "lat": -34.05,
+        "lng": 18.31
+      },
+      {
+        "n": "Uluwatu Bali Indonesia",
+        "lat": -8.83,
+        "lng": 115.09
+      },
+      {
+        "n": "Desert Point Lombok Indonesia",
+        "lat": -8.78,
+        "lng": 116.13
+      },
+      {
+        "n": "G-Land Java Indonesia",
+        "lat": -8.61,
+        "lng": 114.44
+      },
+      {
+        "n": "Raglan New Zealand Manu Bay",
+        "lat": -37.8,
+        "lng": 174.87
+      },
+      {
+        "n": "Bells Beach Victoria Australia WSL",
+        "lat": -38.37,
+        "lng": 144.28
+      },
+      {
+        "n": "Margaret River Western Australia",
+        "lat": -33.95,
+        "lng": 114.94
+      },
+      {
+        "n": "Hossegor La Graviere France",
+        "lat": 43.67,
+        "lng": -1.43
+      },
+      {
+        "n": "Mundaka Basque Country Spain",
+        "lat": 43.41,
+        "lng": -2.7
+      },
+      {
+        "n": "Chicama Peru longest wave",
+        "lat": -7.7,
+        "lng": -79.45
       }
     ]
   },
@@ -2351,6 +3896,156 @@
         "n": "Kalymnos (Griechenland) — Sportklettern",
         "lat": 37.0,
         "lng": 26.98
+      },
+      {
+        "n": "Verdon Gorge Frankreich Sport",
+        "lat": 43.75,
+        "lng": 6.22
+      },
+      {
+        "n": "Chamonix Frankreich Alpinism",
+        "lat": 45.92,
+        "lng": 6.87
+      },
+      {
+        "n": "Rodellar Aragonien Spanien",
+        "lat": 42.25,
+        "lng": -0.06
+      },
+      {
+        "n": "Frankenjura Bayern Deutschland",
+        "lat": 49.7,
+        "lng": 11.2
+      },
+      {
+        "n": "Saechsische Schweiz Deutschland",
+        "lat": 50.93,
+        "lng": 14.23
+      },
+      {
+        "n": "Bishop Buttermilks California Bouldering",
+        "lat": 37.25,
+        "lng": -118.62
+      },
+      {
+        "n": "Squamish BC Kanada",
+        "lat": 49.7,
+        "lng": -123.15
+      },
+      {
+        "n": "Liming Yunnan China",
+        "lat": 26.8,
+        "lng": 99.8
+      },
+      {
+        "n": "Hampi Karnataka Indien",
+        "lat": 15.34,
+        "lng": 76.46
+      },
+      {
+        "n": "Arapiles Victoria Australien",
+        "lat": -36.84,
+        "lng": 141.82
+      },
+      {
+        "n": "Blue Mountains NSW Australien",
+        "lat": -33.73,
+        "lng": 150.31
+      },
+      {
+        "n": "Wanaka Neuseeland",
+        "lat": -44.7,
+        "lng": 169.14
+      },
+      {
+        "n": "Valle dell'Orco Piemont Italien",
+        "lat": 45.49,
+        "lng": 7.38
+      },
+      {
+        "n": "Rifle Mountain Park Colorado",
+        "lat": 39.69,
+        "lng": -107.81
+      },
+      {
+        "n": "Yosemite El Capitan California USA",
+        "lat": 37.74,
+        "lng": -119.6
+      },
+      {
+        "n": "Fontainebleau France bouldering",
+        "lat": 48.4,
+        "lng": 2.7
+      },
+      {
+        "n": "Verdon Gorge France sport",
+        "lat": 43.75,
+        "lng": 6.22
+      },
+      {
+        "n": "Chamonix Aiguilles France alpine",
+        "lat": 45.92,
+        "lng": 6.87
+      },
+      {
+        "n": "Ceuse Hautes-Alpes France",
+        "lat": 44.42,
+        "lng": 5.96
+      },
+      {
+        "n": "Kalymnos Greece sport climbing",
+        "lat": 36.95,
+        "lng": 27.0
+      },
+      {
+        "n": "Leonidio Arcadia Greece",
+        "lat": 37.15,
+        "lng": 22.87
+      },
+      {
+        "n": "Siurana Priorat Spain",
+        "lat": 41.26,
+        "lng": 0.92
+      },
+      {
+        "n": "Margalef Tarragona Spain",
+        "lat": 41.32,
+        "lng": 0.81
+      },
+      {
+        "n": "Finale Ligure Ligurian coast",
+        "lat": 44.17,
+        "lng": 8.34
+      },
+      {
+        "n": "Frankenjura Bavaria Germany",
+        "lat": 49.7,
+        "lng": 11.2
+      },
+      {
+        "n": "Saxon Switzerland sandstone Germany",
+        "lat": 50.93,
+        "lng": 14.23
+      },
+      {
+        "n": "Dolomites Tre Cime Italy",
+        "lat": 46.62,
+        "lng": 12.31
+      },
+      {
+        "n": "Smith Rock Oregon USA sport",
+        "lat": 44.37,
+        "lng": -121.14
+      },
+      {
+        "n": "Red River Gorge Kentucky USA",
+        "lat": 37.77,
+        "lng": -83.68
+      },
+      {
+        "n": "Bishop Buttermilks bouldering CA",
+        "lat": 37.25,
+        "lng": -118.62
       }
     ]
   }

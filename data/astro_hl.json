@@ -202,6 +202,126 @@
       {
         "name": "Miranda (Uranus-Mond)",
         "val": 472
+      },
+      {
+        "name": "Saturn (km Durchmesser)",
+        "val": 116460
+      },
+      {
+        "name": "Io (Jupiter-Mond)",
+        "val": 3643
+      },
+      {
+        "name": "Europa (Jupiter-Mond)",
+        "val": 3122
+      },
+      {
+        "name": "Ganymed (groesster Mond)",
+        "val": 5268
+      },
+      {
+        "name": "Titan (Saturn-Mond)",
+        "val": 5150
+      },
+      {
+        "name": "Kallisto (Jupiter-Mond)",
+        "val": 4821
+      },
+      {
+        "name": "Triton (Neptun-Mond)",
+        "val": 2707
+      },
+      {
+        "name": "Haumea (Zwergplanet)",
+        "val": 1960
+      },
+      {
+        "name": "Proteus (Neptun-Mond)",
+        "val": 420
+      },
+      {
+        "name": "Neptun km Durchmesser",
+        "val": 49244
+      },
+      {
+        "name": "Uranus km",
+        "val": 50724
+      },
+      {
+        "name": "Mars km",
+        "val": 6792
+      },
+      {
+        "name": "Merkur km",
+        "val": 4879
+      },
+      {
+        "name": "Mond km",
+        "val": 3474
+      },
+      {
+        "name": "Io Jupiter-Mond km",
+        "val": 3643
+      },
+      {
+        "name": "Europa Jupiter-Mond km",
+        "val": 3122
+      },
+      {
+        "name": "Ganymed groesster Mond km",
+        "val": 5268
+      },
+      {
+        "name": "Titan Saturn-Mond km",
+        "val": 5150
+      },
+      {
+        "name": "Kallisto km",
+        "val": 4821
+      },
+      {
+        "name": "Triton Neptun-Mond km",
+        "val": 2707
+      },
+      {
+        "name": "Pluto km",
+        "val": 2377
+      },
+      {
+        "name": "Eris Zwergplanet km",
+        "val": 2326
+      },
+      {
+        "name": "Ceres Zwergplanet km",
+        "val": 945
+      },
+      {
+        "name": "Makemake km",
+        "val": 1430
+      },
+      {
+        "name": "Haumea km",
+        "val": 1960
+      },
+      {
+        "name": "Charon km",
+        "val": 1212
+      },
+      {
+        "name": "Titania Uranus-Mond km",
+        "val": 1578
+      },
+      {
+        "name": "Oberon Uranus-Mond km",
+        "val": 1523
+      },
+      {
+        "name": "Ariel Uranus-Mond km",
+        "val": 1158
+      },
+      {
+        "name": "Dione Saturn-Mond km",
+        "val": 1123
       }
     ]
   },
@@ -408,6 +528,126 @@
       {
         "name": "Zwergplanet Xiangliu (Gonggong)",
         "val": 1
+      },
+      {
+        "name": "Jupiter 2024 Monde total",
+        "val": 95
+      },
+      {
+        "name": "Saturn 2024 Monde total",
+        "val": 146
+      },
+      {
+        "name": "Uranus Monde",
+        "val": 28
+      },
+      {
+        "name": "Neptun Monde",
+        "val": 16
+      },
+      {
+        "name": "Mars Monde",
+        "val": 2
+      },
+      {
+        "name": "Erde Monde",
+        "val": 1
+      },
+      {
+        "name": "Merkur Monde",
+        "val": 0
+      },
+      {
+        "name": "Venus Monde",
+        "val": 0
+      },
+      {
+        "name": "Pluto Monde",
+        "val": 5
+      },
+      {
+        "name": "Eris Monde",
+        "val": 1
+      },
+      {
+        "name": "Haumea Monde",
+        "val": 2
+      },
+      {
+        "name": "Makemake Monde",
+        "val": 1
+      },
+      {
+        "name": "Orcus Monde",
+        "val": 1
+      },
+      {
+        "name": "Quaoar Monde",
+        "val": 1
+      },
+      {
+        "name": "Sedna Monde",
+        "val": 0
+      },
+      {
+        "name": "Ceres Monde",
+        "val": 0
+      },
+      {
+        "name": "Ida Asteroid (Dactyl)",
+        "val": 1
+      },
+      {
+        "name": "Sylvia Asteroid Monde",
+        "val": 2
+      },
+      {
+        "name": "Psyche Asteroid",
+        "val": 0
+      },
+      {
+        "name": "Bennu Asteroid",
+        "val": 0
+      },
+      {
+        "name": "Ryugu Asteroid",
+        "val": 0
+      },
+      {
+        "name": "Arrokoth KBO",
+        "val": 0
+      },
+      {
+        "name": "2023 UX6 Neptun-Mond",
+        "val": 1
+      },
+      {
+        "name": "Kalliope (Linus)",
+        "val": 1
+      },
+      {
+        "name": "Eugenia (Petit-Prince)",
+        "val": 1
+      },
+      {
+        "name": "Antiope Doppelasteroide",
+        "val": 1
+      },
+      {
+        "name": "Gonggong Monde",
+        "val": 1
+      },
+      {
+        "name": "67P Rosetta kein Mond",
+        "val": 0
+      },
+      {
+        "name": "Lutetia Asteroid",
+        "val": 0
+      },
+      {
+        "name": "Steins Asteroid",
+        "val": 0
       }
     ]
   },
@@ -614,6 +854,126 @@
       {
         "name": "Barnards Pfeilstern",
         "val": 55940000
+      },
+      {
+        "name": "Merkur mittl. Abstand Mio km",
+        "val": 57
+      },
+      {
+        "name": "Venus Abstand",
+        "val": 108
+      },
+      {
+        "name": "Erde Abstand",
+        "val": 150
+      },
+      {
+        "name": "Mars Abstand",
+        "val": 228
+      },
+      {
+        "name": "Jupiter Abstand",
+        "val": 778
+      },
+      {
+        "name": "Saturn Abstand",
+        "val": 1432
+      },
+      {
+        "name": "Uranus Abstand",
+        "val": 2867
+      },
+      {
+        "name": "Pluto mittl. Abstand",
+        "val": 5906
+      },
+      {
+        "name": "Eris mittl. Abstand",
+        "val": 10166
+      },
+      {
+        "name": "Sedna mittl. Abstand",
+        "val": 506000
+      },
+      {
+        "name": "Haumea Abstand",
+        "val": 6452
+      },
+      {
+        "name": "Makemake Abstand",
+        "val": 6850
+      },
+      {
+        "name": "Quaoar Abstand",
+        "val": 6535
+      },
+      {
+        "name": "Orcus Abstand",
+        "val": 5870
+      },
+      {
+        "name": "Gonggong Abstand",
+        "val": 10060
+      },
+      {
+        "name": "Arrokoth Abstand",
+        "val": 6644
+      },
+      {
+        "name": "Ceres mittl. Abstand",
+        "val": 414
+      },
+      {
+        "name": "Vesta Asteroid Abstand",
+        "val": 353
+      },
+      {
+        "name": "Pallas Asteroid Abstand",
+        "val": 415
+      },
+      {
+        "name": "Komet Halley Aphelion",
+        "val": 5250
+      },
+      {
+        "name": "Proxima Centauri Lichtjahre",
+        "val": 4
+      },
+      {
+        "name": "Barnards Stern Lichtjahre",
+        "val": 6
+      },
+      {
+        "name": "Sirius A Lichtjahre",
+        "val": 9
+      },
+      {
+        "name": "Vega Lichtjahre",
+        "val": 25
+      },
+      {
+        "name": "Betelgeuse Lichtjahre",
+        "val": 700
+      },
+      {
+        "name": "Andromeda Galaxie Mio Lj",
+        "val": 2537000
+      },
+      {
+        "name": "Voyager 1 Abstand 2024 Mrd km",
+        "val": 23800
+      },
+      {
+        "name": "Alpha Centauri A Lichtjahre",
+        "val": 4
+      },
+      {
+        "name": "Wolf 359 Lichtjahre",
+        "val": 8
+      },
+      {
+        "name": "Epsilon Eridani Lichtjahre",
+        "val": 11
       }
     ]
   },
@@ -820,6 +1180,126 @@
       {
         "name": "Zuma (classified, SpaceX)",
         "val": 0.0
+      },
+      {
+        "name": "SpaceX Starship LEO Tonnen",
+        "val": 150
+      },
+      {
+        "name": "NASA SLS Block 2 LEO",
+        "val": 130
+      },
+      {
+        "name": "Saturn V LEO historisch",
+        "val": 140
+      },
+      {
+        "name": "Falcon Heavy LEO",
+        "val": 64
+      },
+      {
+        "name": "New Glenn LEO",
+        "val": 45
+      },
+      {
+        "name": "Angara-A5 LEO",
+        "val": 24
+      },
+      {
+        "name": "Atlas V 551 LEO",
+        "val": 19
+      },
+      {
+        "name": "Long March 5 LEO",
+        "val": 25
+      },
+      {
+        "name": "Ariane 5 GTO",
+        "val": 10
+      },
+      {
+        "name": "Ariane 6 A64 GTO",
+        "val": 11
+      },
+      {
+        "name": "Delta IV Heavy LEO",
+        "val": 28
+      },
+      {
+        "name": "Vulcan Centaur LEO",
+        "val": 27
+      },
+      {
+        "name": "H3 Japan LEO",
+        "val": 6
+      },
+      {
+        "name": "H-IIA Japan GTO",
+        "val": 6
+      },
+      {
+        "name": "PSLV-XL SSO",
+        "val": 2
+      },
+      {
+        "name": "GSLV Mk III GTO",
+        "val": 4
+      },
+      {
+        "name": "KSLV-2 Nuri Korea LEO",
+        "val": 3
+      },
+      {
+        "name": "Epsilon Japan LEO",
+        "val": 1
+      },
+      {
+        "name": "Vega-C ESA SSO",
+        "val": 2
+      },
+      {
+        "name": "Rokot LEO",
+        "val": 2
+      },
+      {
+        "name": "Soyuz-2.1b LEO",
+        "val": 9
+      },
+      {
+        "name": "Proton-M GTO",
+        "val": 6
+      },
+      {
+        "name": "Antares LEO",
+        "val": 8
+      },
+      {
+        "name": "Electron LEO kg",
+        "val": 0
+      },
+      {
+        "name": "Pegasus XL LEO",
+        "val": 0
+      },
+      {
+        "name": "Miura 5 Spain LEO",
+        "val": 0
+      },
+      {
+        "name": "Long March 9 geplant LEO",
+        "val": 140
+      },
+      {
+        "name": "Zenit-3SL GTO",
+        "val": 6
+      },
+      {
+        "name": "Stratolaunch Roc LEO",
+        "val": 6
+      },
+      {
+        "name": "New Shepard Suborbital",
+        "val": 0
       }
     ]
   },
@@ -1026,6 +1506,126 @@
       {
         "name": "Cassini-Huygens (NASA/ESA, 1997–2017)",
         "val": 7180
+      },
+      {
+        "name": "Voyager 1 Tage seit 1977",
+        "val": 17785
+      },
+      {
+        "name": "Voyager 2 Tage",
+        "val": 17750
+      },
+      {
+        "name": "Pioneer 10 Tage bis letztes Signal",
+        "val": 11428
+      },
+      {
+        "name": "New Horizons Tage seit 2006",
+        "val": 6935
+      },
+      {
+        "name": "Mars Odyssey Tage",
+        "val": 8395
+      },
+      {
+        "name": "Mars Reconnaissance Orbiter Tage",
+        "val": 6935
+      },
+      {
+        "name": "Opportunity Rover Tage aktiv",
+        "val": 5498
+      },
+      {
+        "name": "Curiosity Rover Tage seit 2012",
+        "val": 4380
+      },
+      {
+        "name": "Cassini Tage 1997-2017",
+        "val": 7167
+      },
+      {
+        "name": "Galileo Probe Tage",
+        "val": 2891
+      },
+      {
+        "name": "Juno Tage seit 2011",
+        "val": 4745
+      },
+      {
+        "name": "Dawn Tage",
+        "val": 3984
+      },
+      {
+        "name": "Mars Express Tage seit 2003",
+        "val": 7665
+      },
+      {
+        "name": "Venus Express Tage",
+        "val": 3128
+      },
+      {
+        "name": "BepiColombo Tage seit 2018",
+        "val": 2190
+      },
+      {
+        "name": "Parker Solar Probe Tage",
+        "val": 2190
+      },
+      {
+        "name": "JWST Tage seit 2021",
+        "val": 1095
+      },
+      {
+        "name": "Hubble Tage seit 1990",
+        "val": 12410
+      },
+      {
+        "name": "Chandra X-Ray Tage seit 1999",
+        "val": 9125
+      },
+      {
+        "name": "Spitzer Tage 2003-2020",
+        "val": 5985
+      },
+      {
+        "name": "Kepler Tage 2009-2018",
+        "val": 3405
+      },
+      {
+        "name": "TESS Tage seit 2018",
+        "val": 2190
+      },
+      {
+        "name": "Gaia ESA Tage seit 2013",
+        "val": 3650
+      },
+      {
+        "name": "Apollo 11 Mondmission Tage",
+        "val": 8
+      },
+      {
+        "name": "ISS Tage seit 1998",
+        "val": 9490
+      },
+      {
+        "name": "Mir Station Tage 1986-2001",
+        "val": 5519
+      },
+      {
+        "name": "Skylab Tage 1973-1979",
+        "val": 2249
+      },
+      {
+        "name": "Tiangong 1 China Tage",
+        "val": 2839
+      },
+      {
+        "name": "Rosetta Komet 67P Tage",
+        "val": 4383
+      },
+      {
+        "name": "Messenger Merkur Tage",
+        "val": 4015
       }
     ]
   },
@@ -1232,6 +1832,126 @@
       {
         "name": "Proteus (Neptun-Mond)",
         "val": 0.07
+      },
+      {
+        "name": "Jupiter Schwerkraft m/s2",
+        "val": 24
+      },
+      {
+        "name": "Saturn Schwerkraft",
+        "val": 10
+      },
+      {
+        "name": "Neptun Schwerkraft",
+        "val": 11
+      },
+      {
+        "name": "Uranus Schwerkraft",
+        "val": 9
+      },
+      {
+        "name": "Venus Schwerkraft",
+        "val": 8
+      },
+      {
+        "name": "Mars Schwerkraft",
+        "val": 3
+      },
+      {
+        "name": "Merkur Schwerkraft",
+        "val": 3
+      },
+      {
+        "name": "Mond Erde Schwerkraft",
+        "val": 1
+      },
+      {
+        "name": "Titan Saturn Schwerkraft",
+        "val": 1
+      },
+      {
+        "name": "Pluto Schwerkraft",
+        "val": 0
+      },
+      {
+        "name": "Ceres Schwerkraft",
+        "val": 0
+      },
+      {
+        "name": "Eris Schwerkraft",
+        "val": 0
+      },
+      {
+        "name": "Sonne Oberflaeche m/s2",
+        "val": 274
+      },
+      {
+        "name": "Proxima b berechnet",
+        "val": 11
+      },
+      {
+        "name": "Kepler-22b berechnet",
+        "val": 23
+      },
+      {
+        "name": "Trappist-1e berechnet",
+        "val": 8
+      },
+      {
+        "name": "Phobos Mars-Mond",
+        "val": 0
+      },
+      {
+        "name": "Asteroid Ryugu",
+        "val": 0
+      },
+      {
+        "name": "Asteroid Bennu",
+        "val": 0
+      },
+      {
+        "name": "Komet 67P",
+        "val": 0
+      },
+      {
+        "name": "Aldebaran Oberflaechenneigung",
+        "val": 0
+      },
+      {
+        "name": "Io Jupiter Schwerkraft",
+        "val": 1
+      },
+      {
+        "name": "Europa Jupiter Schwerkraft",
+        "val": 1
+      },
+      {
+        "name": "Ganymed Jupiter Schwerkraft",
+        "val": 1
+      },
+      {
+        "name": "Enceladus Saturn",
+        "val": 0
+      },
+      {
+        "name": "Triton Neptun",
+        "val": 0
+      },
+      {
+        "name": "Miranda Uranus",
+        "val": 0
+      },
+      {
+        "name": "Charon Pluto",
+        "val": 0
+      },
+      {
+        "name": "Neutronenstern (sehr hoch)",
+        "val": 1000000000
+      },
+      {
+        "name": "Weisser Zwerg Oberflaechenneigung",
+        "val": 10000000
       }
     ]
   },
@@ -1438,6 +2158,126 @@
       {
         "name": "Merkur (Tag)",
         "val": 430
+      },
+      {
+        "name": "Venus Oberflaeche Grad C",
+        "val": 465
+      },
+      {
+        "name": "Merkur Tagseite",
+        "val": 430
+      },
+      {
+        "name": "Merkur Nachtseite",
+        "val": -180
+      },
+      {
+        "name": "Erde Durchschnitt",
+        "val": 15
+      },
+      {
+        "name": "Mars Durchschnitt",
+        "val": -65
+      },
+      {
+        "name": "Jupiter Wolken",
+        "val": -110
+      },
+      {
+        "name": "Saturn Wolken",
+        "val": -140
+      },
+      {
+        "name": "Uranus Wolken",
+        "val": -195
+      },
+      {
+        "name": "Neptun Wolken",
+        "val": -200
+      },
+      {
+        "name": "Pluto Oberflaeche",
+        "val": -230
+      },
+      {
+        "name": "Mond Tag",
+        "val": 127
+      },
+      {
+        "name": "Mond Nacht",
+        "val": -173
+      },
+      {
+        "name": "Titan Saturn kalt",
+        "val": -179
+      },
+      {
+        "name": "Europa Eis Oberflaeche",
+        "val": -160
+      },
+      {
+        "name": "Enceladus Suedpol",
+        "val": -200
+      },
+      {
+        "name": "Sonne Kern",
+        "val": 15000000
+      },
+      {
+        "name": "Sonne Oberflaeche",
+        "val": 5778
+      },
+      {
+        "name": "Sonne Korona",
+        "val": 1000000
+      },
+      {
+        "name": "Beteigeuze Rote Riesenstern",
+        "val": 3500
+      },
+      {
+        "name": "Sirius A Weissblau",
+        "val": 9940
+      },
+      {
+        "name": "Rigel Blauer Riese",
+        "val": 11000
+      },
+      {
+        "name": "Pollux Gelber Riese",
+        "val": 4865
+      },
+      {
+        "name": "Vega Weiss",
+        "val": 9600
+      },
+      {
+        "name": "Aldebaran Roter Riese",
+        "val": 3900
+      },
+      {
+        "name": "Arcturus Orange",
+        "val": 4286
+      },
+      {
+        "name": "Wolf-Rayet Heissester Grad",
+        "val": 200000
+      },
+      {
+        "name": "Brown Dwarf WISE J0855 kalt",
+        "val": -13
+      },
+      {
+        "name": "Hot Jupiter HD 209458b",
+        "val": 1200
+      },
+      {
+        "name": "Trappist-1e Exoplanet",
+        "val": -60
+      },
+      {
+        "name": "GJ 667Cc berechnet",
+        "val": 5
       }
     ]
   },
@@ -1644,6 +2484,126 @@
       {
         "name": "Chiron (Charles Kowal)",
         "val": 1977
+      },
+      {
+        "name": "Io Galileo 1610",
+        "val": 1610
+      },
+      {
+        "name": "Europa Galileo",
+        "val": 1610
+      },
+      {
+        "name": "Ganymed Galileo",
+        "val": 1610
+      },
+      {
+        "name": "Kallisto Galileo",
+        "val": 1610
+      },
+      {
+        "name": "Titan Huygens 1655",
+        "val": 1655
+      },
+      {
+        "name": "Oberon Herschel 1787",
+        "val": 1787
+      },
+      {
+        "name": "Titania Herschel",
+        "val": 1787
+      },
+      {
+        "name": "Enceladus Herschel 1789",
+        "val": 1789
+      },
+      {
+        "name": "Mimas Herschel",
+        "val": 1789
+      },
+      {
+        "name": "Triton Lassell 1846",
+        "val": 1846
+      },
+      {
+        "name": "Phobos Hall 1877",
+        "val": 1877
+      },
+      {
+        "name": "Deimos Hall",
+        "val": 1877
+      },
+      {
+        "name": "Amalthea Barnard 1892",
+        "val": 1892
+      },
+      {
+        "name": "Phoebe Pickering 1899",
+        "val": 1899
+      },
+      {
+        "name": "Himalia Jupiter 1904",
+        "val": 1904
+      },
+      {
+        "name": "Uranus Herschel 1781",
+        "val": 1781
+      },
+      {
+        "name": "Pluto Tombaugh 1930",
+        "val": 1930
+      },
+      {
+        "name": "Charon Christy 1978",
+        "val": 1978
+      },
+      {
+        "name": "Eris Brown 2005",
+        "val": 2005
+      },
+      {
+        "name": "Makemake Brown",
+        "val": 2005
+      },
+      {
+        "name": "Haumea Brown 2004",
+        "val": 2004
+      },
+      {
+        "name": "Quaoar 2002",
+        "val": 2002
+      },
+      {
+        "name": "Sedna Brown 2003",
+        "val": 2003
+      },
+      {
+        "name": "Ariel Lassell 1851",
+        "val": 1851
+      },
+      {
+        "name": "Umbriel Lassell",
+        "val": 1851
+      },
+      {
+        "name": "Miranda Kuiper 1948",
+        "val": 1948
+      },
+      {
+        "name": "Nereid Kuiper 1949",
+        "val": 1949
+      },
+      {
+        "name": "Pan Saturn Ring 1990",
+        "val": 1990
+      },
+      {
+        "name": "Larissa Reitsema 1981",
+        "val": 1981
+      },
+      {
+        "name": "Metis Jupiter Voyager 1979",
+        "val": 1979
       }
     ]
   },
@@ -1850,6 +2810,126 @@
       {
         "name": "Tau Ceti e",
         "val": 11.9
+      },
+      {
+        "name": "Proxima Centauri b Lichtjahre",
+        "val": 4
+      },
+      {
+        "name": "Alpha Centauri A",
+        "val": 4
+      },
+      {
+        "name": "Kapteyn b",
+        "val": 13
+      },
+      {
+        "name": "Kepler-442b",
+        "val": 1206
+      },
+      {
+        "name": "Kepler-186f",
+        "val": 490
+      },
+      {
+        "name": "Trappist-1e",
+        "val": 41
+      },
+      {
+        "name": "Trappist-1f",
+        "val": 41
+      },
+      {
+        "name": "Trappist-1d",
+        "val": 41
+      },
+      {
+        "name": "LHS 1140b",
+        "val": 40
+      },
+      {
+        "name": "K2-18b",
+        "val": 124
+      },
+      {
+        "name": "Gliese 832c",
+        "val": 16
+      },
+      {
+        "name": "GJ 273b",
+        "val": 12
+      },
+      {
+        "name": "Ross 128b",
+        "val": 11
+      },
+      {
+        "name": "Teegarden b",
+        "val": 12
+      },
+      {
+        "name": "TOI 700d",
+        "val": 101
+      },
+      {
+        "name": "GJ 1061d",
+        "val": 12
+      },
+      {
+        "name": "L 98-59d",
+        "val": 35
+      },
+      {
+        "name": "GJ 514b",
+        "val": 26
+      },
+      {
+        "name": "51 Pegasi b",
+        "val": 51
+      },
+      {
+        "name": "HD 209458b",
+        "val": 159
+      },
+      {
+        "name": "HR 5183b",
+        "val": 104
+      },
+      {
+        "name": "GJ 3323b",
+        "val": 17
+      },
+      {
+        "name": "GJ 667Ce",
+        "val": 24
+      },
+      {
+        "name": "GJ 667Cf Lichtjahre",
+        "val": 24
+      },
+      {
+        "name": "Gliese 581g",
+        "val": 20
+      },
+      {
+        "name": "HD 85512b",
+        "val": 36
+      },
+      {
+        "name": "Gliese 180b",
+        "val": 38
+      },
+      {
+        "name": "GJ 667Cd",
+        "val": 24
+      },
+      {
+        "name": "LHS 1140c",
+        "val": 40
+      },
+      {
+        "name": "TOI 715b",
+        "val": 137
       }
     ]
   }

@@ -251,6 +251,156 @@
         "n": "Nationalmuseum Peking",
         "lat": 39.9,
         "lng": 116.39
+      },
+      {
+        "n": "Ägyptisches Museum Berlin (Nofretete)",
+        "lat": 52.52,
+        "lng": 13.39
+      },
+      {
+        "n": "Louvre Paris (Codex Hammurabi)",
+        "lat": 48.86,
+        "lng": 2.34
+      },
+      {
+        "n": "Metropolitan Museum of Art New York",
+        "lat": 40.78,
+        "lng": -73.96
+      },
+      {
+        "n": "Vatican Museums Rom",
+        "lat": 41.9,
+        "lng": 12.45
+      },
+      {
+        "n": "Topkapi-Palast Istanbul",
+        "lat": 41.01,
+        "lng": 28.98
+      },
+      {
+        "n": "Archäologisches Museum Heraklion (Kreta)",
+        "lat": 35.34,
+        "lng": 25.13
+      },
+      {
+        "n": "National Museum Beirut (Phönizisch)",
+        "lat": 33.87,
+        "lng": 35.5
+      },
+      {
+        "n": "Smithsonian National Museum of Natural History",
+        "lat": 38.89,
+        "lng": -77.03
+      },
+      {
+        "n": "Penn Museum Philadelphia (Ur-Schatz)",
+        "lat": 39.95,
+        "lng": -75.19
+      },
+      {
+        "n": "Oriental Institute Chicago (Megiddo-Funde)",
+        "lat": 41.79,
+        "lng": -87.6
+      },
+      {
+        "n": "Ashmolean Museum Oxford",
+        "lat": 51.75,
+        "lng": -1.26
+      },
+      {
+        "n": "Germanisches Nationalmuseum Nürnberg",
+        "lat": 49.45,
+        "lng": 11.08
+      },
+      {
+        "n": "LVR-LandesMuseum Bonn (Neandertal-Schädel)",
+        "lat": 50.74,
+        "lng": 7.1
+      },
+      {
+        "n": "Museo del Prado Madrid (Prähist. Funde)",
+        "lat": 40.41,
+        "lng": -3.69
+      },
+      {
+        "n": "Sulaymaniyah Museum (Irak — Keilschrift)",
+        "lat": 35.56,
+        "lng": 45.44
+      },
+      {
+        "n": "Jordan Museum Amman",
+        "lat": 31.96,
+        "lng": 35.94
+      },
+      {
+        "n": "National Museum of Iraq Bagdad",
+        "lat": 33.34,
+        "lng": 44.4
+      },
+      {
+        "n": "Rijksmuseum Amsterdam",
+        "lat": 52.36,
+        "lng": 4.89
+      },
+      {
+        "n": "National Museum of Korea Seoul",
+        "lat": 37.52,
+        "lng": 126.98
+      },
+      {
+        "n": "National Palace Museum Taipei",
+        "lat": 25.1,
+        "lng": 121.55
+      },
+      {
+        "n": "Museo de Oro Bogota (Goldmuseum)",
+        "lat": 4.6,
+        "lng": -74.07
+      },
+      {
+        "n": "Bardo Nationalmuseum Tunis",
+        "lat": 36.83,
+        "lng": 10.13
+      },
+      {
+        "n": "Museo Nacional de Arqueologia Lima",
+        "lat": -12.07,
+        "lng": -77.04
+      },
+      {
+        "n": "Israel Museum Jerusalem",
+        "lat": 31.77,
+        "lng": 35.2
+      },
+      {
+        "n": "Museum of Fine Arts Boston (Egyptol.)",
+        "lat": 42.34,
+        "lng": -71.09
+      },
+      {
+        "n": "Peabody Museum Harvard (Native Amer.)",
+        "lat": 42.38,
+        "lng": -71.12
+      },
+      {
+        "n": "Chennai Government Museum (Chola-Bronze)",
+        "lat": 13.08,
+        "lng": 80.27
+      },
+      {
+        "n": "Archäologisches Museum Olympia (Zeus-Tempel)",
+        "lat": 37.64,
+        "lng": 21.63
+      },
+      {
+        "n": "Archaeological Museum of Delphi",
+        "lat": 38.48,
+        "lng": 22.5
+      },
+      {
+        "n": "Museo Civilta Romana Roma EUR",
+        "lat": 41.84,
+        "lng": 12.47
       }
     ]
   },
@@ -506,6 +656,156 @@
         "n": "Dolmen von Antequera (Spanien)",
         "lat": 37.02,
         "lng": -4.56
+      },
+      {
+        "n": "Knocknarea Cairn (Sligo, Irland)",
+        "lat": 54.27,
+        "lng": -8.58
+      },
+      {
+        "n": "Loughcrew Cairns (Meath, Irland)",
+        "lat": 53.75,
+        "lng": -7.12
+      },
+      {
+        "n": "Grand Menhir de Locmariaquer (Bretagne)",
+        "lat": 47.57,
+        "lng": -2.96
+      },
+      {
+        "n": "Cromlech Almendres (Évora, Portugal)",
+        "lat": 38.58,
+        "lng": -8.07
+      },
+      {
+        "n": "Anta Grande do Zambujeiro Dolmen (Portugal)",
+        "lat": 38.53,
+        "lng": -8.04
+      },
+      {
+        "n": "Boğazköy Hattusa (Türkei — Hethiter)",
+        "lat": 40.02,
+        "lng": 34.62
+      },
+      {
+        "n": "Aratta Hill Circles (Iran — Urzeit)",
+        "lat": 30.0,
+        "lng": 55.0
+      },
+      {
+        "n": "Ggantija Tempel (Gozo, Malta)",
+        "lat": 36.05,
+        "lng": 14.27
+      },
+      {
+        "n": "Kenilworth Stone Circle (Warwickshire)",
+        "lat": 52.35,
+        "lng": -1.57
+      },
+      {
+        "n": "Drombeg Stone Circle (Cork, Irland)",
+        "lat": 51.56,
+        "lng": -9.09
+      },
+      {
+        "n": "Leacanabuaile Fort (Kerry, Irland)",
+        "lat": 51.89,
+        "lng": -10.24
+      },
+      {
+        "n": "Machrie Moor Circles (Arran, Schottland)",
+        "lat": 55.52,
+        "lng": -5.39
+      },
+      {
+        "n": "Arbor Low (Derbyshire)",
+        "lat": 53.17,
+        "lng": -1.76
+      },
+      {
+        "n": "Nuraghe Su Nuraxi (Sardinien)",
+        "lat": 39.7,
+        "lng": 8.99
+      },
+      {
+        "n": "Los Millares (Almeria, Spanien)",
+        "lat": 37.07,
+        "lng": -2.79
+      },
+      {
+        "n": "Anghelu Ruju Nekropole (Sardinien)",
+        "lat": 40.67,
+        "lng": 8.23
+      },
+      {
+        "n": "La Roche aux Fees Dolmen (Bretagne)",
+        "lat": 47.95,
+        "lng": -1.55
+      },
+      {
+        "n": "Monte Abraao Dolmen (Sintra, Portugal)",
+        "lat": 38.79,
+        "lng": -9.39
+      },
+      {
+        "n": "Cromlech Xerez (Guadiana, Portugal)",
+        "lat": 38.3,
+        "lng": -7.35
+      },
+      {
+        "n": "Temple Wood Stone Circle (Argyll)",
+        "lat": 56.13,
+        "lng": -5.43
+      },
+      {
+        "n": "Loanhead of Daviot (Aberdeenshire)",
+        "lat": 57.35,
+        "lng": -2.57
+      },
+      {
+        "n": "Bagneux Dolmen (Maine-et-Loire, Frankreich)",
+        "lat": 47.35,
+        "lng": -0.07
+      },
+      {
+        "n": "Li Muri Megalithanlage (Sardinien)",
+        "lat": 41.0,
+        "lng": 9.52
+      },
+      {
+        "n": "Ossian's Grave Cairn (Antrim, Nordirland)",
+        "lat": 55.12,
+        "lng": -6.15
+      },
+      {
+        "n": "Knockdrum Fort Stone Circle (Cork)",
+        "lat": 51.56,
+        "lng": -8.89
+      },
+      {
+        "n": "Kilclooney More Dolmen (Donegal, Irland)",
+        "lat": 54.75,
+        "lng": -8.27
+      },
+      {
+        "n": "Dolmen de Soto (Huelva, Spanien)",
+        "lat": 37.64,
+        "lng": -6.97
+      },
+      {
+        "n": "Axeitos Dolmen (A Coruna, Spanien)",
+        "lat": 42.82,
+        "lng": -9.03
+      },
+      {
+        "n": "Carrowmore Megalith-Friedhof (Sligo)",
+        "lat": 54.25,
+        "lng": -8.52
+      },
+      {
+        "n": "Carrowkeel Megalith-Friedhof (Sligo, Irland)",
+        "lat": 54.08,
+        "lng": -8.44
       }
     ]
   },
@@ -761,6 +1061,156 @@
         "n": "Thera / Santorin antike Stadt",
         "lat": 36.35,
         "lng": 25.46
+      },
+      {
+        "n": "Pavlopetri (Laconia, Griechenland — 5000 Jahre alt)",
+        "lat": 36.48,
+        "lng": 22.98
+      },
+      {
+        "n": "Bay of Cambay Ruins (Gujarat, Indien — umstr.)",
+        "lat": 21.5,
+        "lng": 72.5
+      },
+      {
+        "n": "Mahabalipuram Sunken Temple (Tamil Nadu)",
+        "lat": 12.62,
+        "lng": 80.19
+      },
+      {
+        "n": "Epidaurus Sunken Harbor (Griechenland)",
+        "lat": 37.65,
+        "lng": 23.16
+      },
+      {
+        "n": "Sunken Village Lake Titicaca (Bolivien/Peru)",
+        "lat": -15.5,
+        "lng": -69.4
+      },
+      {
+        "n": "Doggerland (Nordsee — ehemals trockenes Land)",
+        "lat": 54.0,
+        "lng": 3.0
+      },
+      {
+        "n": "Lion City Qiandao Lake (China, 1959 geflutet)",
+        "lat": 29.62,
+        "lng": 118.78
+      },
+      {
+        "n": "Helike (Golf von Korinth, Griechenland)",
+        "lat": 38.13,
+        "lng": 22.07
+      },
+      {
+        "n": "Ephesus Hafen (Türkei — von Sand verschluckt)",
+        "lat": 37.94,
+        "lng": 27.34
+      },
+      {
+        "n": "Egina Sunken Temple (Griechenland)",
+        "lat": 37.75,
+        "lng": 23.43
+      },
+      {
+        "n": "Naukratis (Nildelta, Ägypten — teilversunken)",
+        "lat": 30.9,
+        "lng": 30.57
+      },
+      {
+        "n": "Kuhna Masjid Mosque Wular Lake (Kaschmir, Indien)",
+        "lat": 34.27,
+        "lng": 74.55
+      },
+      {
+        "n": "Oludeniz Sunken Lycian Harbor (Türkei)",
+        "lat": 36.55,
+        "lng": 29.12
+      },
+      {
+        "n": "Plymouth (Montserrat — 1997 teilbegraben)",
+        "lat": 16.71,
+        "lng": -62.22
+      },
+      {
+        "n": "Potosi Altstadt-Unterburg (Bolivien)",
+        "lat": -19.59,
+        "lng": -65.75
+      },
+      {
+        "n": "Cholula Old City (unter moderner Stadt, Mexiko)",
+        "lat": 19.06,
+        "lng": -98.31
+      },
+      {
+        "n": "Calakmul Teilversunken (Mexiko — Dschungel)",
+        "lat": 18.1,
+        "lng": -89.8
+      },
+      {
+        "n": "Copan Maya-Ruinen (Honduras — teilweise)",
+        "lat": 14.84,
+        "lng": -89.14
+      },
+      {
+        "n": "Ciudad Perdida (Kolumbien — wiederentdeckt)",
+        "lat": 11.04,
+        "lng": -73.93
+      },
+      {
+        "n": "Panamá Viejo (Panama — 1671 gebrandschatzt)",
+        "lat": 8.99,
+        "lng": -79.49
+      },
+      {
+        "n": "Rungholt (Nordsee, Deutschland — 1362)",
+        "lat": 54.7,
+        "lng": 9.0
+      },
+      {
+        "n": "Vineta (Ostsee — legendäre Handelsstadt)",
+        "lat": 54.1,
+        "lng": 14.2
+      },
+      {
+        "n": "Tanis (Pi-Ramesse, Nildelta, Aegypten)",
+        "lat": 30.97,
+        "lng": 31.89
+      },
+      {
+        "n": "Amarna (Akhetaten, Niltal, Aegypten)",
+        "lat": 27.65,
+        "lng": 30.9
+      },
+      {
+        "n": "Arslantepe (Malatya, Tuerkei)",
+        "lat": 38.41,
+        "lng": 38.35
+      },
+      {
+        "n": "Apamea on the Orontes (Syrien)",
+        "lat": 35.42,
+        "lng": 36.39
+      },
+      {
+        "n": "Hamath Ausgrabung (Hama, Syrien)",
+        "lat": 35.13,
+        "lng": 36.75
+      },
+      {
+        "n": "Catal Hoeyk Unterstadt Level 0 (Tuerkei)",
+        "lat": 37.67,
+        "lng": 32.83
+      },
+      {
+        "n": "Bogazkoy Unterstadt (Hattusas, Tuerkei)",
+        "lat": 40.02,
+        "lng": 34.62
+      },
+      {
+        "n": "Herculaneum unter Erdsturz (Neapel)",
+        "lat": 40.81,
+        "lng": 14.35
       }
     ]
   },
@@ -1016,6 +1466,156 @@
         "n": "Altamira-Höhle (Kantabrien, Spanien)",
         "lat": 43.38,
         "lng": -4.12
+      },
+      {
+        "n": "Grotte de Pech Merle (Lot, Frankreich)",
+        "lat": 44.5,
+        "lng": 1.64
+      },
+      {
+        "n": "Cueva de Tito Bustillo (Asturien, Spanien)",
+        "lat": 43.41,
+        "lng": -4.99
+      },
+      {
+        "n": "Cueva de Nerja (Málaga, Spanien — 42000 J)",
+        "lat": 36.75,
+        "lng": -3.85
+      },
+      {
+        "n": "Cueva de las Maravillas (Huelva, Spanien)",
+        "lat": 37.64,
+        "lng": -6.96
+      },
+      {
+        "n": "Laas Geel (Somalia — 5000-10000 J alt)",
+        "lat": 9.92,
+        "lng": 44.42
+      },
+      {
+        "n": "Tassili n'Ajjer (Algerien — 12000 J)",
+        "lat": 25.5,
+        "lng": 8.5
+      },
+      {
+        "n": "Acacus Mountains (Libyen — 12000 J)",
+        "lat": 24.5,
+        "lng": 10.5
+      },
+      {
+        "n": "Wandjina Rock Art (Westaustralien — 4000 J)",
+        "lat": -15.5,
+        "lng": 126.0
+      },
+      {
+        "n": "Quinkan Rock Art (Queensland, Australien)",
+        "lat": -14.97,
+        "lng": 144.63
+      },
+      {
+        "n": "Kololo Rock Art (Simbabwe)",
+        "lat": -18.0,
+        "lng": 31.5
+      },
+      {
+        "n": "Drakensberg Rock Art (KwaZulu-Natal)",
+        "lat": -29.5,
+        "lng": 29.3
+      },
+      {
+        "n": "White Lady Rock Painting (Namibia, Brandberg)",
+        "lat": -21.25,
+        "lng": 14.66
+      },
+      {
+        "n": "Kakadu Rock Art (Northern Territory, Australien)",
+        "lat": -13.0,
+        "lng": 132.5
+      },
+      {
+        "n": "Pedra Furada (Piauí, Brasilien — 50000+ J)",
+        "lat": -8.87,
+        "lng": -42.55
+      },
+      {
+        "n": "Caverna da Pedra Pintada (Pará, Brasilien)",
+        "lat": -1.73,
+        "lng": -55.0
+      },
+      {
+        "n": "Serra da Capivara NP (Brasilien — Präkolumbianisch)",
+        "lat": -8.5,
+        "lng": -42.5
+      },
+      {
+        "n": "Cueva de Las Manos (Patagonia, Argentinien)",
+        "lat": -47.15,
+        "lng": -70.67
+      },
+      {
+        "n": "Canyon del Muerto (Arizona, USA — Anasazi)",
+        "lat": 36.72,
+        "lng": -109.53
+      },
+      {
+        "n": "Newspaper Rock (Utah, USA — Petroglyphen)",
+        "lat": 37.96,
+        "lng": -109.52
+      },
+      {
+        "n": "Foz Côa Valley (Portugal — UNESCO)",
+        "lat": 41.05,
+        "lng": -7.11
+      },
+      {
+        "n": "Siega Verde (Salamanca, Spanien — Freiluftgravur)",
+        "lat": 41.04,
+        "lng": -6.9
+      },
+      {
+        "n": "Addaura Cave (Palermo, Sizilien)",
+        "lat": 38.17,
+        "lng": 13.35
+      },
+      {
+        "n": "Kapova Cave (Ural, Russland)",
+        "lat": 53.02,
+        "lng": 57.02
+      },
+      {
+        "n": "Grotte de Mayenne-Sciences (Frankreich)",
+        "lat": 48.1,
+        "lng": -0.63
+      },
+      {
+        "n": "Cueva de Pileta (Malaga, Spanien)",
+        "lat": 36.76,
+        "lng": -5.27
+      },
+      {
+        "n": "Creswell Crags (Nottinghamshire, UK)",
+        "lat": 53.26,
+        "lng": -1.2
+      },
+      {
+        "n": "Grotte d Arcy-sur-Cure (Burgund, Frankreich)",
+        "lat": 47.58,
+        "lng": 3.77
+      },
+      {
+        "n": "Pair-non-Pair Cave (Gironde, Frankreich)",
+        "lat": 45.04,
+        "lng": -0.56
+      },
+      {
+        "n": "Cougnac Cave (Gourdon, Frankreich)",
+        "lat": 44.72,
+        "lng": 1.37
+      },
+      {
+        "n": "Cueva de Candamo (Asturien, Spanien)",
+        "lat": 43.36,
+        "lng": -5.98
       }
     ]
   },
@@ -1271,6 +1871,156 @@
         "n": "Forschungszentrum Jülich (Synchrotron)",
         "lat": 50.91,
         "lng": 6.36
+      },
+      {
+        "n": "tDAR (Digital Archaeological Record, Tempe)",
+        "lat": 33.42,
+        "lng": -111.93
+      },
+      {
+        "n": "Pleiades Ancient World Atlas (NY)",
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      {
+        "n": "arches.org Heritage Inventories System",
+        "lat": 34.05,
+        "lng": -118.25
+      },
+      {
+        "n": "ARIADNE Infrastructure EU (Cork, Irland)",
+        "lat": 51.9,
+        "lng": -8.48
+      },
+      {
+        "n": "Copan Virtual Tour (Honduras)",
+        "lat": 14.84,
+        "lng": -89.14
+      },
+      {
+        "n": "Ctesiphon Digital Survey (Irak)",
+        "lat": 33.09,
+        "lng": 44.58
+      },
+      {
+        "n": "LiDAR Caracol Survey (Belize)",
+        "lat": 16.78,
+        "lng": -89.12
+      },
+      {
+        "n": "Aquae Sulis Digital Bath (Somerset)",
+        "lat": 51.38,
+        "lng": -2.36
+      },
+      {
+        "n": "Herculaneum Conservation Project (Neapel)",
+        "lat": 40.81,
+        "lng": 14.35
+      },
+      {
+        "n": "Project Mosul 3D Reconstruction (Irak)",
+        "lat": 36.34,
+        "lng": 43.14
+      },
+      {
+        "n": "Digital South Asia Library (Chicago)",
+        "lat": 41.79,
+        "lng": -87.6
+      },
+      {
+        "n": "Inscriptiones Latinae Database (München)",
+        "lat": 48.14,
+        "lng": 11.58
+      },
+      {
+        "n": "Çatalhöyük Integrated Archive (Konya)",
+        "lat": 37.5,
+        "lng": 32.5
+      },
+      {
+        "n": "Stonehenge Virtual Tour 360 Wiltshire",
+        "lat": 51.2,
+        "lng": -1.9
+      },
+      {
+        "n": "Newgrange Virtual (Bru na Boinne, Irland)",
+        "lat": 53.7,
+        "lng": -6.5
+      },
+      {
+        "n": "Çayönü Site Archive (Diyarbakir, Türkei)",
+        "lat": 37.9,
+        "lng": 40.0
+      },
+      {
+        "n": "Çavusköy Project (Gaziantep, Türkei)",
+        "lat": 37.1,
+        "lng": 37.4
+      },
+      {
+        "n": "Jericho 3D Survey (Palästina)",
+        "lat": 31.9,
+        "lng": 35.5
+      },
+      {
+        "n": "Ur GIS Database (Nasiria, Irak)",
+        "lat": 31.0,
+        "lng": 46.1
+      },
+      {
+        "n": "Nippur Digital Archive (Afak, Irak)",
+        "lat": 32.1,
+        "lng": 45.2
+      },
+      {
+        "n": "Persepolis 3D Scan (Shiraz, Iran)",
+        "lat": 30.0,
+        "lng": 52.9
+      },
+      {
+        "n": "Mohenjo-daro Digital Heritage (Pakistan)",
+        "lat": 27.3,
+        "lng": 68.1
+      },
+      {
+        "n": "Harappa Archive (Punjab, Pakistan)",
+        "lat": 30.6,
+        "lng": 72.9
+      },
+      {
+        "n": "Angkor Heritage Database (Siem Reap, Kambodscha)",
+        "lat": 13.3,
+        "lng": 103.9
+      },
+      {
+        "n": "Palenque 3D Scan (Chiapas, Mexiko)",
+        "lat": 17.5,
+        "lng": -92.1
+      },
+      {
+        "n": "Tiwanaku 3D Project (Bolivien)",
+        "lat": -16.6,
+        "lng": -68.7
+      },
+      {
+        "n": "Mesa Verde Survey (Colorado, USA)",
+        "lat": 37.2,
+        "lng": -108.5
+      },
+      {
+        "n": "Chaco Canyon LiDAR (New Mexico)",
+        "lat": 36.1,
+        "lng": -107.9
+      },
+      {
+        "n": "Poverty Point Archive (Louisiana, USA)",
+        "lat": 32.6,
+        "lng": -91.4
+      },
+      {
+        "n": "Caral Digital Survey Institute (Lima, Peru)",
+        "lat": -12.1,
+        "lng": -76.9
       }
     ]
   },
@@ -1526,6 +2276,156 @@
         "n": "Royal Cemetery of Ur (Irak)",
         "lat": 30.96,
         "lng": 46.1
+      },
+      {
+        "n": "Haltern am See Römerfriedhof",
+        "lat": 51.74,
+        "lng": 7.18
+      },
+      {
+        "n": "Vix Grab (Côte d Or, Frankreich)",
+        "lat": 47.72,
+        "lng": 4.58
+      },
+      {
+        "n": "Sungir Paläolithischer Friedhof (Russland)",
+        "lat": 56.27,
+        "lng": 42.06
+      },
+      {
+        "n": "Bad Cannstatt Röm. Soldatenfriedhof",
+        "lat": 48.8,
+        "lng": 9.23
+      },
+      {
+        "n": "Heiligenäcker Alamannisches Feld",
+        "lat": 48.1,
+        "lng": 9.2
+      },
+      {
+        "n": "Tumulus von Varna (Bulgarien, älteste Goldgräber)",
+        "lat": 43.21,
+        "lng": 27.92
+      },
+      {
+        "n": "Skhul Cave Burial (Israel)",
+        "lat": 32.66,
+        "lng": 34.96
+      },
+      {
+        "n": "Qafzeh Cave Burial (Galiläa, Israel)",
+        "lat": 32.67,
+        "lng": 35.34
+      },
+      {
+        "n": "Shanidar Cave Neandertaler (Irak)",
+        "lat": 36.84,
+        "lng": 44.22
+      },
+      {
+        "n": "Oberkasseler Doppelgrab (Bonn)",
+        "lat": 50.73,
+        "lng": 7.07
+      },
+      {
+        "n": "Sunghir Paläolith-Gräber (Wladimir)",
+        "lat": 56.27,
+        "lng": 42.05
+      },
+      {
+        "n": "Mal'ta Siberian Grave (Russland)",
+        "lat": 52.84,
+        "lng": 103.14
+      },
+      {
+        "n": "Clovis-Anzick Burial (Montana, USA)",
+        "lat": 46.5,
+        "lng": -108.5
+      },
+      {
+        "n": "Kennewick Man Burial (Washington, USA)",
+        "lat": 46.2,
+        "lng": -119.17
+      },
+      {
+        "n": "Gran Dolina Atapuerca (Spanien)",
+        "lat": 42.37,
+        "lng": -3.52
+      },
+      {
+        "n": "Wonderwerk Cave (Nordkap, Südafrika)",
+        "lat": -27.85,
+        "lng": 23.55
+      },
+      {
+        "n": "Kabwe Broken Hill Skull (Sambia)",
+        "lat": -14.45,
+        "lng": 28.44
+      },
+      {
+        "n": "Laetoli Hominid-Knochen (Tansania)",
+        "lat": -2.99,
+        "lng": 35.35
+      },
+      {
+        "n": "Kow Swamp Burial Ground (Australien)",
+        "lat": -36.27,
+        "lng": 144.41
+      },
+      {
+        "n": "Mungo Lady Cremation Site (Australien)",
+        "lat": -33.69,
+        "lng": 143.08
+      },
+      {
+        "n": "Wadi el-Hudi Nekropole (Ägypten)",
+        "lat": 24.0,
+        "lng": 33.2
+      },
+      {
+        "n": "Gebel Sahaba Cemetery (Sudan)",
+        "lat": 21.9,
+        "lng": 31.35
+      },
+      {
+        "n": "Natufian Cemetery Ain Mallaha (Israel)",
+        "lat": 33.04,
+        "lng": 35.6
+      },
+      {
+        "n": "Palaeolithic Graves Dolni Vestonice (Tschechien)",
+        "lat": 48.9,
+        "lng": 16.6
+      },
+      {
+        "n": "Cro-Magnon Burial Site (Les Eyzies, Frankreich)",
+        "lat": 44.9,
+        "lng": 1.0
+      },
+      {
+        "n": "Arene Candide Cave Burials (Ligurien, Italien)",
+        "lat": 44.1,
+        "lng": 8.4
+      },
+      {
+        "n": "Grimaldi Caves (Monaco)",
+        "lat": 43.7,
+        "lng": 7.5
+      },
+      {
+        "n": "Paglicci Cave Burial (Puglia, Italien)",
+        "lat": 41.6,
+        "lng": 15.6
+      },
+      {
+        "n": "Predmosti Graves (Mähren, Tschechien)",
+        "lat": 49.5,
+        "lng": 17.4
+      },
+      {
+        "n": "Mal'ta Burial Ground (Sibirien, Russland)",
+        "lat": 52.8,
+        "lng": 103.2
       }
     ]
   },
@@ -1781,6 +2681,156 @@
         "n": "Sutton Hoo Bootsgrab (England)",
         "lat": 52.09,
         "lng": 1.33
+      },
+      {
+        "n": "Madrague de Giens Wrak (Frankreich)",
+        "lat": 43.0,
+        "lng": 6.14
+      },
+      {
+        "n": "Grand Congloué Wrak (Marseille)",
+        "lat": 43.04,
+        "lng": 5.24
+      },
+      {
+        "n": "Giulia Lepida Wrak (Adria)",
+        "lat": 44.8,
+        "lng": 12.5
+      },
+      {
+        "n": "Black Sea Medieval Wraks (Türkei)",
+        "lat": 42.5,
+        "lng": 31.0
+      },
+      {
+        "n": "Nina Wrak (Karibik, angeblich)",
+        "lat": 19.0,
+        "lng": -69.5
+      },
+      {
+        "n": "Batavia Wrak (Westaustralien)",
+        "lat": -29.0,
+        "lng": 113.8
+      },
+      {
+        "n": "HMHS Britannic (Ägäis, Griechenland)",
+        "lat": 37.7,
+        "lng": 24.29
+      },
+      {
+        "n": "Lusitania Wrak (Irland)",
+        "lat": 51.42,
+        "lng": -8.54
+      },
+      {
+        "n": "Atocha Galleon (Florida Keys, USA)",
+        "lat": 24.6,
+        "lng": -81.4
+      },
+      {
+        "n": "Belle La Salle Expedition (Texas, USA)",
+        "lat": 28.63,
+        "lng": -96.68
+      },
+      {
+        "n": "Beagle Channel Wrak (Feuerland)",
+        "lat": -54.5,
+        "lng": -68.3
+      },
+      {
+        "n": "Skuldelev 2 Wikingerschiff (Dänemark)",
+        "lat": 55.87,
+        "lng": 11.99
+      },
+      {
+        "n": "Hjortspring Boot (Dänemark — ältestes)",
+        "lat": 54.97,
+        "lng": 9.87
+      },
+      {
+        "n": "Ferriby Boote Bronze (Humber, England)",
+        "lat": 53.72,
+        "lng": -0.52
+      },
+      {
+        "n": "Broighter Gold-Boot (Irland)",
+        "lat": 55.06,
+        "lng": -6.97
+      },
+      {
+        "n": "Gokstad Schiff (Vestfold, Norwegen)",
+        "lat": 59.2,
+        "lng": 10.27
+      },
+      {
+        "n": "Oseberg Schiff (Museum Oslo)",
+        "lat": 59.33,
+        "lng": 10.72
+      },
+      {
+        "n": "Nydam Boat (Schleswig, Deutschland)",
+        "lat": 54.75,
+        "lng": 9.52
+      },
+      {
+        "n": "Zwammerdam Roman Boats (Niederlande)",
+        "lat": 52.12,
+        "lng": 4.75
+      },
+      {
+        "n": "Coracle Raft Remains (Wales)",
+        "lat": 52.0,
+        "lng": -4.0
+      },
+      {
+        "n": "Bronze Age Sewn Plank Boat (Huelva, Spanien)",
+        "lat": 37.25,
+        "lng": -6.95
+      },
+      {
+        "n": "Archaic Boats Eridu Site (Südmesopotami)",
+        "lat": 30.8,
+        "lng": 46.1
+      },
+      {
+        "n": "Khufu Solar Boat (Gizeh, Ägypten)",
+        "lat": 29.9,
+        "lng": 31.1
+      },
+      {
+        "n": "Bronze Age Boat Ha Long Bay (Vietnam)",
+        "lat": 20.8,
+        "lng": 107.1
+      },
+      {
+        "n": "Wreck of SS Yongala (Queensland, Australien)",
+        "lat": -18.8,
+        "lng": 147.6
+      },
+      {
+        "n": "HMHS Irresistible (Dardanelles, Türkei)",
+        "lat": 40.1,
+        "lng": 26.4
+      },
+      {
+        "n": "Viet Nam Ancient Timbers Hoi An",
+        "lat": 15.9,
+        "lng": 108.3
+      },
+      {
+        "n": "Sindbad Ship Wreck (Oman)",
+        "lat": 23.6,
+        "lng": 58.6
+      },
+      {
+        "n": "Binnenhaven Amsterdam Kogge (Niederlande)",
+        "lat": 52.4,
+        "lng": 4.9
+      },
+      {
+        "n": "Elbe Hansekogge (Hamburg, Deutschland)",
+        "lat": 53.5,
+        "lng": 10.1
       }
     ]
   },
@@ -2036,6 +3086,156 @@
         "n": "Calakmul (Mexiko)",
         "lat": 18.11,
         "lng": -89.81
+      },
+      {
+        "n": "Kabah (Yucatán, Mexiko)",
+        "lat": 20.25,
+        "lng": -89.67
+      },
+      {
+        "n": "Labna Maya-Ruinen (Mexiko)",
+        "lat": 20.19,
+        "lng": -89.62
+      },
+      {
+        "n": "Xpujil (Campeche, Mexiko)",
+        "lat": 18.43,
+        "lng": -89.42
+      },
+      {
+        "n": "Becan (Campeche, Mexiko)",
+        "lat": 18.52,
+        "lng": -89.42
+      },
+      {
+        "n": "Dzibanché (Quintana Roo)",
+        "lat": 18.59,
+        "lng": -88.74
+      },
+      {
+        "n": "Coba (Quintana Roo, Mexiko)",
+        "lat": 20.5,
+        "lng": -87.73
+      },
+      {
+        "n": "El Tajin (Veracruz, Mexiko — Maya-Einfluss)",
+        "lat": 20.44,
+        "lng": -97.38
+      },
+      {
+        "n": "Mitla (Zapoteken Oaxaca)",
+        "lat": 16.93,
+        "lng": -96.36
+      },
+      {
+        "n": "Vilcabamba Inka-Endstädte (Peru)",
+        "lat": -13.1,
+        "lng": -73.4
+      },
+      {
+        "n": "Pachacamac (Lima, Peru)",
+        "lat": -12.3,
+        "lng": -76.9
+      },
+      {
+        "n": "Huaca del Sol (Mochica, Peru)",
+        "lat": -8.12,
+        "lng": -79.0
+      },
+      {
+        "n": "Cholula Pyramid of Quetzalcoatl (Mexiko)",
+        "lat": 19.1,
+        "lng": -98.3
+      },
+      {
+        "n": "Tula (Hidalgo, Mexiko — Tolteken)",
+        "lat": 20.0,
+        "lng": -99.3
+      },
+      {
+        "n": "Yaxchilan (Chiapas, Mexiko)",
+        "lat": 16.9,
+        "lng": -90.9
+      },
+      {
+        "n": "La Venta Olmeken (Tabasco, Mexiko)",
+        "lat": 18.1,
+        "lng": -94.0
+      },
+      {
+        "n": "San Lorenzo Olmeken (Veracruz, Mexiko)",
+        "lat": 17.9,
+        "lng": -94.7
+      },
+      {
+        "n": "Tres Zapotes Olmeken (Veracruz)",
+        "lat": 18.3,
+        "lng": -95.5
+      },
+      {
+        "n": "Tenochtitlan Templo Mayor (Mexiko-Stadt)",
+        "lat": 19.4,
+        "lng": -99.2
+      },
+      {
+        "n": "Tepozteco Tempel (Morelos, Mexiko)",
+        "lat": 18.9,
+        "lng": -99.1
+      },
+      {
+        "n": "Huaca Prieta (Caral, Peru — Vorphase)",
+        "lat": -10.5,
+        "lng": -77.9
+      },
+      {
+        "n": "Tiwanaku Gate of the Sun (Bolivien)",
+        "lat": -16.5,
+        "lng": -68.7
+      },
+      {
+        "n": "Pukara Stätte (Puno, Peru)",
+        "lat": -15.7,
+        "lng": -70.2
+      },
+      {
+        "n": "Wari Imperial Hauptstadt (Ayacucho, Peru)",
+        "lat": -13.2,
+        "lng": -74.2
+      },
+      {
+        "n": "La Florida Pyramid Lima (Peru)",
+        "lat": -12.1,
+        "lng": -77.1
+      },
+      {
+        "n": "Ventilla Nasca-Siedlung (Ica, Peru)",
+        "lat": -14.6,
+        "lng": -75.1
+      },
+      {
+        "n": "Izapa Olmek-Maya (Chiapas, Mexiko)",
+        "lat": 14.9,
+        "lng": -92.2
+      },
+      {
+        "n": "Tonina Maya (Chiapas, Mexiko)",
+        "lat": 16.9,
+        "lng": -92.0
+      },
+      {
+        "n": "Dos Pilas Maya (Petén, Guatemala)",
+        "lat": 16.5,
+        "lng": -90.2
+      },
+      {
+        "n": "Aguateca Maya (Petén, Guatemala)",
+        "lat": 16.3,
+        "lng": -90.2
+      },
+      {
+        "n": "Seibal Maya (Petén, Guatemala)",
+        "lat": 16.2,
+        "lng": -90.1
       }
     ]
   },
@@ -2291,6 +3491,156 @@
         "n": "Bonna = Bonn (Deutschland)",
         "lat": 50.74,
         "lng": 7.1
+      },
+      {
+        "n": "Limes Germanicus Saalburg (Hessen)",
+        "lat": 50.2,
+        "lng": 8.6
+      },
+      {
+        "n": "Kastell Zugmantel (Taunus)",
+        "lat": 50.2,
+        "lng": 8.2
+      },
+      {
+        "n": "Kastell Pfünz (Bayern)",
+        "lat": 48.8,
+        "lng": 11.2
+      },
+      {
+        "n": "Kastell Weißenburg (Bayern)",
+        "lat": 49.0,
+        "lng": 11.0
+      },
+      {
+        "n": "Kastell Gnotzheim (Bayern)",
+        "lat": 49.1,
+        "lng": 10.8
+      },
+      {
+        "n": "Kastell Echzell (Wetterau)",
+        "lat": 50.3,
+        "lng": 8.9
+      },
+      {
+        "n": "Kastell Okarben (Wetterau)",
+        "lat": 50.2,
+        "lng": 8.7
+      },
+      {
+        "n": "Kastell Friedberg (Hessen)",
+        "lat": 50.3,
+        "lng": 8.8
+      },
+      {
+        "n": "Kastell Arnsburg (Hessen)",
+        "lat": 50.4,
+        "lng": 8.8
+      },
+      {
+        "n": "Kastell Altenstadt (Bayern)",
+        "lat": 48.5,
+        "lng": 10.7
+      },
+      {
+        "n": "Caernarvon Segontium Fort (Wales)",
+        "lat": 53.1,
+        "lng": -4.3
+      },
+      {
+        "n": "Caerleon Isca Augusta (Wales)",
+        "lat": 51.6,
+        "lng": -2.9
+      },
+      {
+        "n": "Birdoswald Fort (Cumbria, England)",
+        "lat": 55.0,
+        "lng": -2.6
+      },
+      {
+        "n": "Chesters Fort (Northumberland)",
+        "lat": 55.0,
+        "lng": -2.1
+      },
+      {
+        "n": "Corbridge Corstopitum (Northumberland)",
+        "lat": 54.9,
+        "lng": -2.0
+      },
+      {
+        "n": "Wallsend Segedunum Fort (Tyne)",
+        "lat": 55.0,
+        "lng": -1.5
+      },
+      {
+        "n": "South Shields Arbeia Fort",
+        "lat": 55.0,
+        "lng": -1.4
+      },
+      {
+        "n": "Bewcastle Fort (Cumbria)",
+        "lat": 55.1,
+        "lng": -2.7
+      },
+      {
+        "n": "Ribchester Bremetennacum (Lancs)",
+        "lat": 53.8,
+        "lng": -2.5
+      },
+      {
+        "n": "Richborough Rutupiae (Kent)",
+        "lat": 51.3,
+        "lng": 1.3
+      },
+      {
+        "n": "Reculver Regulbium (Kent)",
+        "lat": 51.4,
+        "lng": 1.2
+      },
+      {
+        "n": "Brancaster Branodunum (Norfolk)",
+        "lat": 52.9,
+        "lng": 0.6
+      },
+      {
+        "n": "Porchester Portus Adurni (Hampshire)",
+        "lat": 50.8,
+        "lng": -1.1
+      },
+      {
+        "n": "Pevensey Anderitum (East Sussex)",
+        "lat": 50.8,
+        "lng": 0.3
+      },
+      {
+        "n": "Arbeia Fort South Shields (Tyne)",
+        "lat": 54.9,
+        "lng": -1.4
+      },
+      {
+        "n": "Birdoswald Banna Fort (Cumbria)",
+        "lat": 55.0,
+        "lng": -2.7
+      },
+      {
+        "n": "Condercum Benwell Fort (Tyne)",
+        "lat": 55.0,
+        "lng": -1.7
+      },
+      {
+        "n": "Kastell Weissenburg Bayern Limeskastell",
+        "lat": 49.1,
+        "lng": 11.1
+      },
+      {
+        "n": "Kastell Ellingen Bayern (Roemisch)",
+        "lat": 49.1,
+        "lng": 10.9
+      },
+      {
+        "n": "Kastell Gnotzheim Praetorium (Bayern)",
+        "lat": 49.0,
+        "lng": 10.8
       }
     ]
   },
@@ -2546,6 +3896,156 @@
         "n": "Rorschach (Bodensee, Schweiz)",
         "lat": 47.48,
         "lng": 9.49
+      },
+      {
+        "n": "Pfahlbau Traunsee (Österreich)",
+        "lat": 47.9,
+        "lng": 13.8
+      },
+      {
+        "n": "Pfahlbau Hallstätter See (Österreich)",
+        "lat": 47.5,
+        "lng": 13.6
+      },
+      {
+        "n": "Pfahlbau Wallersee (Salzburg)",
+        "lat": 47.9,
+        "lng": 13.2
+      },
+      {
+        "n": "Pfahlbau Mattsee (Salzburg)",
+        "lat": 47.9,
+        "lng": 13.1
+      },
+      {
+        "n": "Pfahlbau Neuenburgersee (Schweiz)",
+        "lat": 46.9,
+        "lng": 6.8
+      },
+      {
+        "n": "Pfahlbau Lac du Bourget (Frankreich)",
+        "lat": 45.7,
+        "lng": 5.9
+      },
+      {
+        "n": "Pfahlbau Lago Maggiore (Schweiz/Italien)",
+        "lat": 46.1,
+        "lng": 8.7
+      },
+      {
+        "n": "Pfahlbau Wauwilermoos (Luzern, Schweiz)",
+        "lat": 47.1,
+        "lng": 8.0
+      },
+      {
+        "n": "Pfahlbau Greifensee (Zürich, Schweiz)",
+        "lat": 47.4,
+        "lng": 8.7
+      },
+      {
+        "n": "Pfahlbau Sempachersee (Luzern)",
+        "lat": 47.1,
+        "lng": 8.2
+      },
+      {
+        "n": "Pfahlbau Inkwil Burgäschisee (Bern)",
+        "lat": 47.2,
+        "lng": 7.7
+      },
+      {
+        "n": "Pfahlbau Steinberg Ammersee (Bayern)",
+        "lat": 48.0,
+        "lng": 11.1
+      },
+      {
+        "n": "Pfahlbau Wörthsee (Bayern)",
+        "lat": 48.1,
+        "lng": 11.2
+      },
+      {
+        "n": "Pfahlbau Starnberger See Tutzing",
+        "lat": 47.9,
+        "lng": 11.2
+      },
+      {
+        "n": "Pfahlbau Murnauer Moos (Bayern)",
+        "lat": 47.7,
+        "lng": 11.2
+      },
+      {
+        "n": "Pfahlbau Chiemsee Übersee (Bayern)",
+        "lat": 47.8,
+        "lng": 12.5
+      },
+      {
+        "n": "Terramara Castellaro di Gottolengo (Po-Tal)",
+        "lat": 45.3,
+        "lng": 10.3
+      },
+      {
+        "n": "Terramara Castione Marchesi (Parma)",
+        "lat": 44.7,
+        "lng": 10.0
+      },
+      {
+        "n": "Pile Dwellings Charavines (Frankreich)",
+        "lat": 45.4,
+        "lng": 5.5
+      },
+      {
+        "n": "Pile Dwellings Ljubljana Moor (Slowenien)",
+        "lat": 46.0,
+        "lng": 14.5
+      },
+      {
+        "n": "Pfahlbau Taing Stettnersee (Bayern)",
+        "lat": 47.9,
+        "lng": 12.3
+      },
+      {
+        "n": "Pfahlbau Kelheim Altmühltal",
+        "lat": 48.9,
+        "lng": 11.9
+      },
+      {
+        "n": "Pfahlbau Staffelsee (Murnau, Bayern)",
+        "lat": 47.7,
+        "lng": 11.3
+      },
+      {
+        "n": "Pfahlbau Kochelsee (Bayern)",
+        "lat": 47.7,
+        "lng": 11.4
+      },
+      {
+        "n": "Pfahlbau Tegernsee (Bayern)",
+        "lat": 47.7,
+        "lng": 11.8
+      },
+      {
+        "n": "Pfahlbau Schliersee (Bayern)",
+        "lat": 47.7,
+        "lng": 11.9
+      },
+      {
+        "n": "Pfahlbau Simssee (Bayern)",
+        "lat": 47.9,
+        "lng": 12.2
+      },
+      {
+        "n": "Pfahlbau Egelsee (Bayern)",
+        "lat": 48.1,
+        "lng": 12.0
+      },
+      {
+        "n": "Pfahlbau Waginger See (Bayern)",
+        "lat": 47.9,
+        "lng": 12.8
+      },
+      {
+        "n": "Terramara Basilicanova (Po-Ebene, Italien)",
+        "lat": 44.8,
+        "lng": 10.3
       }
     ]
   },
@@ -2801,6 +4301,156 @@
         "n": "Resafa (Syrien)",
         "lat": 35.63,
         "lng": 38.75
+      },
+      {
+        "n": "Bosra (Hauran, Syrien)",
+        "lat": 32.5,
+        "lng": 36.5
+      },
+      {
+        "n": "Apamea (Orontes, Syrien)",
+        "lat": 35.4,
+        "lng": 36.4
+      },
+      {
+        "n": "Dura Europos (Euphrat, Syrien)",
+        "lat": 34.7,
+        "lng": 40.7
+      },
+      {
+        "n": "Halabiye Zenobia (Syrien)",
+        "lat": 35.6,
+        "lng": 40.1
+      },
+      {
+        "n": "Serjilla Dead Cities (Syrien)",
+        "lat": 36.1,
+        "lng": 36.9
+      },
+      {
+        "n": "Al-Bara Dead Cities (Syrien)",
+        "lat": 35.9,
+        "lng": 36.7
+      },
+      {
+        "n": "Umm el-Jimal (Jordanien)",
+        "lat": 32.3,
+        "lng": 36.4
+      },
+      {
+        "n": "Quseir Amra (Jordanien)",
+        "lat": 31.8,
+        "lng": 36.6
+      },
+      {
+        "n": "Shobak Castle (Jordanien)",
+        "lat": 30.5,
+        "lng": 35.6
+      },
+      {
+        "n": "Nizwa Fort (Oman)",
+        "lat": 22.9,
+        "lng": 57.5
+      },
+      {
+        "n": "Bahla Fort (Oman)",
+        "lat": 22.9,
+        "lng": 57.3
+      },
+      {
+        "n": "Bat UNESCO Prähist. (Oman)",
+        "lat": 23.3,
+        "lng": 56.7
+      },
+      {
+        "n": "Khor Rori Sumhuram (Dhofar, Oman)",
+        "lat": 17.0,
+        "lng": 54.4
+      },
+      {
+        "n": "Al-Balid Zafar (Oman)",
+        "lat": 17.0,
+        "lng": 54.1
+      },
+      {
+        "n": "Marib Sabäer-Staudamm (Jemen)",
+        "lat": 15.4,
+        "lng": 45.3
+      },
+      {
+        "n": "Great Marib Dam Site (Jemen)",
+        "lat": 15.4,
+        "lng": 45.4
+      },
+      {
+        "n": "Baraqish Yathil (Jemen)",
+        "lat": 15.6,
+        "lng": 44.5
+      },
+      {
+        "n": "Shabwa Hauptstadt Hadramaut (Jemen)",
+        "lat": 15.3,
+        "lng": 47.0
+      },
+      {
+        "n": "Timna Nabatäisch (Israel)",
+        "lat": 29.8,
+        "lng": 35.0
+      },
+      {
+        "n": "Avdat Nabatäisch (Negev, Israel)",
+        "lat": 30.8,
+        "lng": 34.8
+      },
+      {
+        "n": "Mamshit Nabatäisch (Negev)",
+        "lat": 31.0,
+        "lng": 35.1
+      },
+      {
+        "n": "Shivta Nabatäisch (Negev)",
+        "lat": 30.9,
+        "lng": 34.6
+      },
+      {
+        "n": "Haluza Byzantine (Negev, Israel)",
+        "lat": 31.1,
+        "lng": 34.7
+      },
+      {
+        "n": "Nessana Byzantine (Negev)",
+        "lat": 30.9,
+        "lng": 34.5
+      },
+      {
+        "n": "Samarra (Abbasid, Irak)",
+        "lat": 34.2,
+        "lng": 43.9
+      },
+      {
+        "n": "Seleucia Tigris (Irak)",
+        "lat": 33.1,
+        "lng": 44.5
+      },
+      {
+        "n": "Nineveh Mosaul (Irak)",
+        "lat": 36.4,
+        "lng": 43.2
+      },
+      {
+        "n": "Dur Sharrukin (Chorsabad, Irak)",
+        "lat": 36.5,
+        "lng": 43.2
+      },
+      {
+        "n": "Nimrud Kalhu (Mosul, Irak)",
+        "lat": 36.1,
+        "lng": 43.3
+      },
+      {
+        "n": "Girsu Tello (Dhi Qar, Irak)",
+        "lat": 31.5,
+        "lng": 46.2
       }
     ]
   },
@@ -3056,6 +4706,156 @@
         "n": "Olduvai Gorge (Tansania)",
         "lat": -2.99,
         "lng": 35.35
+      },
+      {
+        "n": "Jurassic Coast Dorset (England)",
+        "lat": 50.7,
+        "lng": -2.7
+      },
+      {
+        "n": "Hell Creek Formation (Montana, USA)",
+        "lat": 47.5,
+        "lng": -104.1
+      },
+      {
+        "n": "Morrison Formation (Colorado)",
+        "lat": 39.7,
+        "lng": -105.2
+      },
+      {
+        "n": "Tendaguru (Tansania)",
+        "lat": -10.0,
+        "lng": 39.0
+      },
+      {
+        "n": "Liaoning Feathered Dinos (China)",
+        "lat": 41.5,
+        "lng": 122.0
+      },
+      {
+        "n": "Ediacara Hills (South Australia)",
+        "lat": -31.1,
+        "lng": 138.4
+      },
+      {
+        "n": "Chengjiang Fauna (Yunnan, China)",
+        "lat": 24.7,
+        "lng": 103.0
+      },
+      {
+        "n": "Hadar Lucy Site (Äthiopien)",
+        "lat": 11.5,
+        "lng": 40.6
+      },
+      {
+        "n": "Olduvai Gorge (Tansania)",
+        "lat": -3.0,
+        "lng": 35.3
+      },
+      {
+        "n": "Red Deer River (Alberta, Kanada)",
+        "lat": 52.3,
+        "lng": -111.6
+      },
+      {
+        "n": "Niobrara Chalk (Kansas, USA)",
+        "lat": 39.5,
+        "lng": -99.5
+      },
+      {
+        "n": "Wheeler Shale (Utah)",
+        "lat": 39.1,
+        "lng": -113.0
+      },
+      {
+        "n": "Mazon Creek (Illinois, USA)",
+        "lat": 41.4,
+        "lng": -88.1
+      },
+      {
+        "n": "Afar Region Fossil Sites (Äthiopien)",
+        "lat": 11.8,
+        "lng": 40.9
+      },
+      {
+        "n": "Karoo Basin Therapsida (Südafrika)",
+        "lat": -32.5,
+        "lng": 24.5
+      },
+      {
+        "n": "Wadi Al-Hitan fossile Wale (Ägypten)",
+        "lat": 29.3,
+        "lng": 30.0
+      },
+      {
+        "n": "Fayum Depression Primaten (Ägypten)",
+        "lat": 29.3,
+        "lng": 30.5
+      },
+      {
+        "n": "Monte Hermoso (Argentinien)",
+        "lat": -39.0,
+        "lng": -61.3
+      },
+      {
+        "n": "Naracoorte Caves (Südaustralien)",
+        "lat": -37.0,
+        "lng": 140.8
+      },
+      {
+        "n": "Bernissart Iguanodon (Belgien)",
+        "lat": 50.5,
+        "lng": 3.7
+      },
+      {
+        "n": "Grube Messel (Darmstadt, Deutschland)",
+        "lat": 49.9,
+        "lng": 8.7
+      },
+      {
+        "n": "Miguasha NP (Quebec, Kanada)",
+        "lat": 48.1,
+        "lng": -66.4
+      },
+      {
+        "n": "Bear Gulch Limestone Montana (USA)",
+        "lat": 47.0,
+        "lng": -109.3
+      },
+      {
+        "n": "Rancho La Brea California Asphalt",
+        "lat": 34.1,
+        "lng": -118.3
+      },
+      {
+        "n": "Jura Schwäbische Alb (Deutschland)",
+        "lat": 48.4,
+        "lng": 9.2
+      },
+      {
+        "n": "Posidonia Shale Holzmaden (Baden-Württ)",
+        "lat": 48.6,
+        "lng": 9.5
+      },
+      {
+        "n": "Araripe Basin Santana Fm (Brasil)",
+        "lat": -7.0,
+        "lng": -38.5
+      },
+      {
+        "n": "Parana Basin Permian Fm (Brasil)",
+        "lat": -23.0,
+        "lng": -50.0
+      },
+      {
+        "n": "Triassic Ghost Ranch (New Mexico)",
+        "lat": 36.3,
+        "lng": -106.5
+      },
+      {
+        "n": "Petrified Forest Arizona NP (USA)",
+        "lat": 34.9,
+        "lng": -109.8
       }
     ]
   },
@@ -3311,6 +5111,156 @@
         "n": "Homo Floresiensis (Liang Bua, Flores)",
         "lat": -8.52,
         "lng": 120.44
+      },
+      {
+        "n": "Tutanchamun Grab Valley of Kings 1922",
+        "lat": 25.7,
+        "lng": 32.6
+      },
+      {
+        "n": "Hadar Lucy Äthiopien 1974",
+        "lat": 11.5,
+        "lng": 40.6
+      },
+      {
+        "n": "Antikythera Mechanismus Kythera",
+        "lat": 35.9,
+        "lng": 23.3
+      },
+      {
+        "n": "Lascaux Malereien Dordogne 1940",
+        "lat": 45.1,
+        "lng": 1.2
+      },
+      {
+        "n": "Pompeji erster Ausgraber 1748",
+        "lat": 40.7,
+        "lng": 14.5
+      },
+      {
+        "n": "Nag Hammadi Kodizes 1945",
+        "lat": 26.4,
+        "lng": 32.2
+      },
+      {
+        "n": "Vindolanda Schreibtafeln 1973",
+        "lat": 55.0,
+        "lng": -2.4
+      },
+      {
+        "n": "Ur Königsgräber Woolley 1922",
+        "lat": 31.0,
+        "lng": 46.1
+      },
+      {
+        "n": "Knossos Palast Evans 1900",
+        "lat": 35.3,
+        "lng": 25.2
+      },
+      {
+        "n": "Troy Schliemann 1871",
+        "lat": 39.9,
+        "lng": 26.2
+      },
+      {
+        "n": "Mykene Schliemann 1876",
+        "lat": 37.7,
+        "lng": 22.8
+      },
+      {
+        "n": "La Venta Olmeken Colossal Head",
+        "lat": 18.1,
+        "lng": -94.0
+      },
+      {
+        "n": "Sipan Herr von Sipan Peru 1987",
+        "lat": -6.7,
+        "lng": -79.8
+      },
+      {
+        "n": "Crosby Garrett Helm Metalldetektor 2010",
+        "lat": 54.5,
+        "lng": -2.5
+      },
+      {
+        "n": "Sanxingdui Bronzefiguren China 1986",
+        "lat": 31.1,
+        "lng": 104.1
+      },
+      {
+        "n": "Göbekli Tepe Schmidt 1994",
+        "lat": 37.2,
+        "lng": 38.9
+      },
+      {
+        "n": "Homo floresiensis Liang Bua 2003",
+        "lat": -8.5,
+        "lng": 120.5
+      },
+      {
+        "n": "Homo naledi Rising Star 2013",
+        "lat": -26.0,
+        "lng": 27.8
+      },
+      {
+        "n": "Caral Supe Peru Shady 2001",
+        "lat": -10.9,
+        "lng": -77.5
+      },
+      {
+        "n": "Mapungubwe Gold Zimbabwe 1932",
+        "lat": -22.1,
+        "lng": 29.3
+      },
+      {
+        "n": "Cheddar Man DNA (Somerset, England)",
+        "lat": 51.3,
+        "lng": -2.8
+      },
+      {
+        "n": "Kennewick Man Columbia River (USA)",
+        "lat": 46.2,
+        "lng": -119.2
+      },
+      {
+        "n": "Paleo-Indian Monte Verde (Chile)",
+        "lat": -38.9,
+        "lng": -72.5
+      },
+      {
+        "n": "Pre-Clovis Buttermilk Creek (Texas)",
+        "lat": 30.4,
+        "lng": -97.8
+      },
+      {
+        "n": "Hobbit bones Mata Menge (Flores)",
+        "lat": -8.6,
+        "lng": 120.6
+      },
+      {
+        "n": "Dragon Man Harbin Skull (China 2021)",
+        "lat": 45.7,
+        "lng": 126.6
+      },
+      {
+        "n": "Homo heidelbergensis Sima (Spanien)",
+        "lat": 42.4,
+        "lng": -3.5
+      },
+      {
+        "n": "Homo luzonensis Callao Cave (Philippinen)",
+        "lat": 18.2,
+        "lng": 121.7
+      },
+      {
+        "n": "Taung Child Australopithecus (Südafrika)",
+        "lat": -27.5,
+        "lng": 24.8
+      },
+      {
+        "n": "Broken Hill Kabwe Skull Sambia",
+        "lat": -14.5,
+        "lng": 28.5
       }
     ]
   }

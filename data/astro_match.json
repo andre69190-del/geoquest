@@ -233,6 +233,94 @@
       {
         "n": "Europa Clipper (Jupitermond, seit 2024)",
         "c": "NASA"
+      },
+      {
+        "n": "Artemis I 2022 unbemannte Mondmission",
+        "c": "NASA"
+      },
+      {
+        "n": "Perseverance Rover 2021 Mars",
+        "c": "NASA"
+      },
+      {
+        "n": "JWST Start Dezember 2021",
+        "c": "NASA/ESA/CSA"
+      },
+      {
+        "n": "Parker Solar Probe 2018",
+        "c": "NASA"
+      },
+      {
+        "n": "BepiColombo 2018 Merkur",
+        "c": "ESA/JAXA"
+      },
+      {
+        "n": "Mars InSight 2018",
+        "c": "NASA"
+      },
+      {
+        "n": "OSIRIS-REx Bennu Sample Return",
+        "c": "NASA"
+      },
+      {
+        "n": "Hayabusa2 Ryugu Sample",
+        "c": "JAXA"
+      },
+      {
+        "n": "Chang'e 5 Mondprobe 2020",
+        "c": "CNSA"
+      },
+      {
+        "n": "Chang'e 4 Mondrückseite 2019",
+        "c": "CNSA"
+      },
+      {
+        "n": "Tianwen-1 Mars Orbiter 2021",
+        "c": "CNSA"
+      },
+      {
+        "n": "Chandrayaan-3 Mondlandung 2023",
+        "c": "ISRO"
+      },
+      {
+        "n": "Aditya-L1 Sonnenbeobachtung 2023",
+        "c": "ISRO"
+      },
+      {
+        "n": "New Horizons Pluto Flyby 2015",
+        "c": "NASA"
+      },
+      {
+        "n": "Juno Jupiter Orbiter seit 2011",
+        "c": "NASA"
+      },
+      {
+        "n": "Dawn Vesta und Ceres",
+        "c": "NASA"
+      },
+      {
+        "n": "Rosetta Komet 67P",
+        "c": "ESA"
+      },
+      {
+        "n": "Philae Komet Lander 67P",
+        "c": "ESA"
+      },
+      {
+        "n": "MAVEN Mars Atmosphaere",
+        "c": "NASA"
+      },
+      {
+        "n": "GRAIL Mondgravitation",
+        "c": "NASA"
+      },
+      {
+        "n": "MESSENGER Merkur Orbiter",
+        "c": "NASA"
+      },
+      {
+        "n": "Mangalyaan Mars Orbit India",
+        "c": "ISRO"
       }
     ]
   },
@@ -438,6 +526,126 @@
       {
         "n": "Umbriel (Uranus)",
         "c": "Dunkelster Uranus-Mond"
+      },
+      {
+        "n": "Iapetus",
+        "c": "Zweigesichtiger Mond Saturns"
+      },
+      {
+        "n": "Hyperion",
+        "c": "Unregelmaessig geformter Mond"
+      },
+      {
+        "n": "Amalthea",
+        "c": "Roetlichster Koerper Sonnensystem"
+      },
+      {
+        "n": "Miranda",
+        "c": "Hoegstes bekanntes Kliff Verona Rupes"
+      },
+      {
+        "n": "Ariel",
+        "c": "Hellste Eisoberflaeche Uranus-Mond"
+      },
+      {
+        "n": "Dione",
+        "c": "Saturn-Mond Sauerstoffspuren"
+      },
+      {
+        "n": "Rhea",
+        "c": "Saturn-Mond zweitgroesster"
+      },
+      {
+        "n": "Tethys",
+        "c": "Fast ganz Wasser-Eis"
+      },
+      {
+        "n": "Mimas",
+        "c": "Todestern-aehnliches Aussehen"
+      },
+      {
+        "n": "Jupiter Gasriese",
+        "c": "Groesster Planet Sonnensystems"
+      },
+      {
+        "n": "Erde Atmosphaere",
+        "c": "Stickstoff Sauerstoff Atmosphaere"
+      },
+      {
+        "n": "Saturn Dichte",
+        "c": "Leichter als Wasser"
+      },
+      {
+        "n": "Neptun Entfernung",
+        "c": "Fernster Planet 4.5 Mrd km"
+      },
+      {
+        "n": "Uranus Temperatur",
+        "c": "Kaeltester Planet -224 Grad"
+      },
+      {
+        "n": "Mars Mond Phobos",
+        "c": "Naehert sich Mars wird zerstoert"
+      },
+      {
+        "n": "Venus Rotation",
+        "c": "Rotiert rueckwaerts sehr langsam"
+      },
+      {
+        "n": "Merkur Umlaufzeit",
+        "c": "Kuerzzester Umlauf 88 Tage"
+      },
+      {
+        "n": "Jupiter Grosser Roter Fleck",
+        "c": "Sturm groesser als Erde seit Jahrhunderten"
+      },
+      {
+        "n": "Saturn Hexagon",
+        "c": "Sechseckiger Sturm am Nordpol"
+      },
+      {
+        "n": "Enceladus Leben",
+        "c": "Biochemische Verbindungen in Geysiren"
+      },
+      {
+        "n": "Titan Seen",
+        "c": "Fluessige Methan- und Ethanseen"
+      },
+      {
+        "n": "Europa Ozean",
+        "c": "Salz-Ozean doppelt so viel wie Erde"
+      },
+      {
+        "n": "Io Vulkane",
+        "c": "Mehr als 400 aktive Vulkane"
+      },
+      {
+        "n": "Pluto Herz",
+        "c": "Tombaugh-Region Stickstofffazit Eis"
+      },
+      {
+        "n": "Neptun Triton retrograd",
+        "c": "Wird in 100 Mio Jahren zerfallen"
+      },
+      {
+        "n": "Saturn Ring Alter",
+        "c": "Ringe junge 100 Mio Jahre alt"
+      },
+      {
+        "n": "Uranus Kipp",
+        "c": "Kippung auf Seite durch Kollision"
+      },
+      {
+        "n": "Mars Olympus Mons",
+        "c": "Hoegstes Vulkan Sonnensystem 22 km"
+      },
+      {
+        "n": "Mars Valles Marineris",
+        "c": "Groesstes Canyon Sonnensystem"
+      },
+      {
+        "n": "Jupiter Magnetfeld",
+        "c": "Staerkstes Magnetfeld der Planeten"
       }
     ]
   },
@@ -643,6 +851,126 @@
       {
         "n": "Baryonisches akustisches Oszillationssignal (BAO)",
         "c": "Frühes Universum"
+      },
+      {
+        "n": "Roter Zwerg",
+        "c": "Kleiner kuehlster Hauptreihenstern"
+      },
+      {
+        "n": "Brauner Zwerg",
+        "c": "Nicht-zuendender Proto-Stern"
+      },
+      {
+        "n": "Supernova Typ Ia",
+        "c": "Kernkollaps weisser Zwerg Masseakkretion"
+      },
+      {
+        "n": "Supernova Typ II",
+        "c": "Kernkollaps massereicher Stern"
+      },
+      {
+        "n": "Blazar",
+        "c": "Jet direkt auf Erde gerichtet"
+      },
+      {
+        "n": "Hubble-Konstante",
+        "c": "Expansionsrate des Universums"
+      },
+      {
+        "n": "Event Horizon",
+        "c": "Punkt ohne Rueckkehr schwarzes Loch"
+      },
+      {
+        "n": "CMB Kosmische Hintergrundstrahlung",
+        "c": "Echo des Urknalls"
+      },
+      {
+        "n": "Big Bang Urknall",
+        "c": "Ursprung Universum 13.8 Mrd Jahre"
+      },
+      {
+        "n": "Inflation kosmisch",
+        "c": "Sehr schnelle Expansion nach Urknall"
+      },
+      {
+        "n": "Nukleosynthese",
+        "c": "Kernfusion in Sternen"
+      },
+      {
+        "n": "Drake Gleichung",
+        "c": "Schaetzung intelligenter Zivilisationen"
+      },
+      {
+        "n": "Fermis Paradoxon",
+        "c": "Wo sind die Aliens"
+      },
+      {
+        "n": "Schroedinger Gleichung",
+        "c": "Quantenmechanik Wellenfunktion"
+      },
+      {
+        "n": "Raumzeit 4D",
+        "c": "Vereinigung von Raum und Zeit Einstein"
+      },
+      {
+        "n": "Singularitaet",
+        "c": "Punkt unendlicher Dichte schwarzes Loch"
+      },
+      {
+        "n": "Big Crunch Theorie",
+        "c": "Kollaps Universum moegliches Ende"
+      },
+      {
+        "n": "Big Freeze Theorie",
+        "c": "Waermetod Universum"
+      },
+      {
+        "n": "Big Rip Theorie",
+        "c": "Zerreissen aller Materie"
+      },
+      {
+        "n": "Multiversum Theorie",
+        "c": "Parallele Universen"
+      },
+      {
+        "n": "Anthropisches Prinzip",
+        "c": "Universum feinabgestimmt fuer Leben"
+      },
+      {
+        "n": "Olbers Paradoxon",
+        "c": "Warum ist Nachthimmel dunkel"
+      },
+      {
+        "n": "Hubble-Spannung",
+        "c": "Widerspruch Expansionsmessungen"
+      },
+      {
+        "n": "Lambda CDM Modell",
+        "c": "Standardmodell Kosmologie"
+      },
+      {
+        "n": "Neutrinooszillation",
+        "c": "Neutrinos wechseln Flavour"
+      },
+      {
+        "n": "Paarannihilation",
+        "c": "Materie Antimaterie Vernichtung"
+      },
+      {
+        "n": "Chandrasekhar Grenze",
+        "c": "Massengrenze weisser Zwerge 1.4 Sonnenmassen"
+      },
+      {
+        "n": "Tolman-Oppenheimer-Volkoff Grenze",
+        "c": "Massengrenze Neutronensterne"
+      },
+      {
+        "n": "Eddington Leuchtkraft",
+        "c": "Gleichgewicht Strahlung Gravitation"
+      },
+      {
+        "n": "Quanten-Gravitation Theorie",
+        "c": "Vereinigung Quantenmechanik und Gravitation"
       }
     ]
   },
@@ -848,6 +1176,126 @@
       {
         "n": "Cassini-Huygens (NASA/ESA)",
         "c": "Saturn"
+      },
+      {
+        "n": "Galileo Probe",
+        "c": "Jupiter"
+      },
+      {
+        "n": "Juno Orbiter",
+        "c": "Jupiter"
+      },
+      {
+        "n": "New Horizons 2015",
+        "c": "Pluto/Arrokoth"
+      },
+      {
+        "n": "Dawn Mission",
+        "c": "Vesta/Ceres"
+      },
+      {
+        "n": "Rosetta ESA",
+        "c": "Komet 67P Churyumov"
+      },
+      {
+        "n": "MESSENGER Orbiter",
+        "c": "Merkur"
+      },
+      {
+        "n": "BepiColombo 2025",
+        "c": "Merkur"
+      },
+      {
+        "n": "Venus Express",
+        "c": "Venus"
+      },
+      {
+        "n": "Magellan Radar",
+        "c": "Venus"
+      },
+      {
+        "n": "Hayabusa JAXA",
+        "c": "Asteroid Itokawa"
+      },
+      {
+        "n": "Hayabusa2 JAXA",
+        "c": "Asteroid Ryugu"
+      },
+      {
+        "n": "OSIRIS-REx NASA",
+        "c": "Asteroid Bennu"
+      },
+      {
+        "n": "Deep Impact NASA",
+        "c": "Komet Tempel 1"
+      },
+      {
+        "n": "Stardust NASA",
+        "c": "Komet Wild 2"
+      },
+      {
+        "n": "Mars Curiosity Rover",
+        "c": "Mars Krater Gale"
+      },
+      {
+        "n": "Mars Perseverance Rover",
+        "c": "Mars Jezero"
+      },
+      {
+        "n": "Chang'e 4 Lander",
+        "c": "Mond Rueckseite"
+      },
+      {
+        "n": "Chang'e 5 Sample",
+        "c": "Mond Bodenprobe"
+      },
+      {
+        "n": "Chandrayaan-3 Lander",
+        "c": "Mond Suedpol"
+      },
+      {
+        "n": "Parker Solar Probe",
+        "c": "Sonne Korona"
+      },
+      {
+        "n": "Solar Orbiter ESA",
+        "c": "Sonne Pole"
+      },
+      {
+        "n": "Aditya-L1 India",
+        "c": "Sonne L1 Lagrange"
+      },
+      {
+        "n": "Mangalyaan MOM",
+        "c": "Mars Atmosphaere Indien"
+      },
+      {
+        "n": "Tianwen-1 China",
+        "c": "Mars Orbiter Lander Rover"
+      },
+      {
+        "n": "Luna 25 2023",
+        "c": "Mond Suedpol Russland"
+      },
+      {
+        "n": "OSIRIS-APEX Apophis Asteroid",
+        "c": "Asteroid Apophis 2029"
+      },
+      {
+        "n": "Europa Clipper NASA 2024",
+        "c": "Jupiter Mond Europa"
+      },
+      {
+        "n": "Dragonfly JAXA Titan",
+        "c": "Saturn Mond Titan"
+      },
+      {
+        "n": "Psyche NASA 2023 Asteroid",
+        "c": "Asteroid 16 Psyche"
+      },
+      {
+        "n": "Lucy NASA Trojanische Asteroiden",
+        "c": "Jupiter Trojanische Asteroiden"
       }
     ]
   },
@@ -1053,6 +1501,126 @@
       {
         "n": "Sedna",
         "c": "Extremer Transneptuner"
+      },
+      {
+        "n": "Jupiter Gasriese",
+        "c": "Planet Gasriese"
+      },
+      {
+        "n": "Saturn Ringguertel",
+        "c": "Planet Gasriese"
+      },
+      {
+        "n": "Uranus Eisriese",
+        "c": "Planet Eisriese"
+      },
+      {
+        "n": "Neptun Eisriese",
+        "c": "Planet Eisriese"
+      },
+      {
+        "n": "Mars rote Wueste",
+        "c": "Planet terrestrisch"
+      },
+      {
+        "n": "Merkur ohne Atmosphaere",
+        "c": "Planet terrestrisch"
+      },
+      {
+        "n": "Venus Treibhaus",
+        "c": "Planet terrestrisch"
+      },
+      {
+        "n": "Pluto KBO",
+        "c": "Zwergplanet Kuiperguertel"
+      },
+      {
+        "n": "Eris SDO",
+        "c": "Zwergplanet Scattered Disk"
+      },
+      {
+        "n": "Haumea KBO",
+        "c": "Zwergplanet Kuiperguertel"
+      },
+      {
+        "n": "Makemake KBO",
+        "c": "Zwergplanet Kuiperguertel"
+      },
+      {
+        "n": "Komet Halley",
+        "c": "Kurzperiodischer Komet"
+      },
+      {
+        "n": "Komet 67P Churyumov",
+        "c": "Jupiter-Familienkomet"
+      },
+      {
+        "n": "Asteroid Ceres",
+        "c": "Kleinkoerper Asteroidenguertel"
+      },
+      {
+        "n": "Asteroid Bennu Apollo",
+        "c": "Kleinkoerper Apollo-Klasse"
+      },
+      {
+        "n": "Asteroid Ryugu Apollo",
+        "c": "Kleinkoerper Apollo-Klasse"
+      },
+      {
+        "n": "Titan Saturn Mond",
+        "c": "Mond mit dichter Atmosphaere"
+      },
+      {
+        "n": "Io Jupiter vulkanisch",
+        "c": "Vulkanischer Mond"
+      },
+      {
+        "n": "Europa Jupiter Ozean",
+        "c": "Eismond mit Ozean"
+      },
+      {
+        "n": "Ganymed groesster",
+        "c": "Groesster Mond Sonnensystem"
+      },
+      {
+        "n": "Enceladus Geysire",
+        "c": "Mond mit Wassergeysiren"
+      },
+      {
+        "n": "Triton retrograd",
+        "c": "Retrograder gefangener Mond"
+      },
+      {
+        "n": "Charon Doppelkoerper",
+        "c": "Mond fast gleich gross wie Pluto"
+      },
+      {
+        "n": "Sirius A",
+        "c": "Weiss-blauer Hauptreihenstern"
+      },
+      {
+        "n": "Betelgeuse",
+        "c": "Roter Ueberriese"
+      },
+      {
+        "n": "Rigel",
+        "c": "Blau-weisser Ueberriese"
+      },
+      {
+        "n": "Beteigeuze Betelgeuse",
+        "c": "Roter Ueberriese"
+      },
+      {
+        "n": "Rigel Blauriese",
+        "c": "Blau-weisser Ueberriese"
+      },
+      {
+        "n": "Antares Rote Riese",
+        "c": "Roter Ueberriese"
+      },
+      {
+        "n": "Aldebaran Roter Riese",
+        "c": "Roter Riese Stier-Konstellation"
       }
     ]
   },
@@ -1258,6 +1826,126 @@
       {
         "n": "Fornax (Ofen)",
         "c": "Südhimmel"
+      },
+      {
+        "n": "Kassiopeia W-Form",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Orion Guertelsternen",
+        "c": "Aequatorial"
+      },
+      {
+        "n": "Ursa Major Grosser Baer",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Ursa Minor Kleiner Baer Polarstern",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Perseus Held",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Auriga Fuhrmann Capella",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Gemini Zwillinge Pollux Castor",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Drache Thuban alter Polarstern",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Cepheus Koenig",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Herkules Held",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Lyra Leier Wega",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Schwan Deneb",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Adler Altair",
+        "c": "Aequatorial"
+      },
+      {
+        "n": "Bootes Baerenhueter Arcturus",
+        "c": "Nordhimmel"
+      },
+      {
+        "n": "Jungfrau Spica",
+        "c": "Aequatorial"
+      },
+      {
+        "n": "Loewe Regulus",
+        "c": "Aequatorial"
+      },
+      {
+        "n": "Krebs",
+        "c": "Aequatorial"
+      },
+      {
+        "n": "Stier Aldebaran Plejaden",
+        "c": "Aequatorial/Nord"
+      },
+      {
+        "n": "Widder",
+        "c": "Aequatorial/Nord"
+      },
+      {
+        "n": "Fische",
+        "c": "Aequatorial"
+      },
+      {
+        "n": "Wassermann",
+        "c": "Aequatorial/Sued"
+      },
+      {
+        "n": "Steinbock",
+        "c": "Suedhimmel"
+      },
+      {
+        "n": "Schuetze Zentrum Milchstrasse",
+        "c": "Suedhimmel"
+      },
+      {
+        "n": "Skorpion Antares",
+        "c": "Suedhimmel"
+      },
+      {
+        "n": "Crux Suedliches Kreuz",
+        "c": "Suedhimmel"
+      },
+      {
+        "n": "Centaurus Alpha Centauri",
+        "c": "Suedhimmel"
+      },
+      {
+        "n": "Carina Kiel Canopus",
+        "c": "Suedhimmel"
+      },
+      {
+        "n": "Grosse Magellansche Wolke",
+        "c": "Suedhimmel"
+      },
+      {
+        "n": "Kleine Magellansche Wolke",
+        "c": "Suedhimmel"
+      },
+      {
+        "n": "Eridanus Fluss",
+        "c": "Suedhimmel"
       }
     ]
   },
@@ -1463,6 +2151,126 @@
       {
         "n": "Reinhard Genzel",
         "c": "Supermassives Schwarzes Loch (Milchstraße)"
+      },
+      {
+        "n": "Galileo Galilei Teleskop",
+        "c": "Entdeckung Jupiter-Monde"
+      },
+      {
+        "n": "Nicolaus Kopernikus",
+        "c": "Heliozentrisches Weltbild"
+      },
+      {
+        "n": "Johannes Kepler Gesetze",
+        "c": "Planetenbewegungsgesetze"
+      },
+      {
+        "n": "Isaac Newton Gravitationsgesetz",
+        "c": "Gravitationsgesetz"
+      },
+      {
+        "n": "Edmond Halley Komet",
+        "c": "Komet-Umlaufbahn berechnet"
+      },
+      {
+        "n": "William Herschel Entdecker Uranus",
+        "c": "Entdeckung Uranus und Infrarot"
+      },
+      {
+        "n": "Annie Jump Cannon Sterne",
+        "c": "Spektralklassifikation OBAFGKM"
+      },
+      {
+        "n": "Edwin Hubble Galaxien",
+        "c": "Galaxienexpansion Hubble-Gesetz"
+      },
+      {
+        "n": "Georges Lemaitre Urknall",
+        "c": "Urknall-Theorie"
+      },
+      {
+        "n": "Karl Jansky Radio",
+        "c": "Radioastronomie Grunder"
+      },
+      {
+        "n": "Vera Rubin Galaxien",
+        "c": "Dunkle Materie Galaxienrotation"
+      },
+      {
+        "n": "Jocelyn Bell Burnell Pulsare",
+        "c": "Entdeckung erster Pulsar"
+      },
+      {
+        "n": "Roger Penrose Mathematik",
+        "c": "Schwarze Loecher Mathematik Nobel"
+      },
+      {
+        "n": "Stephen Hawking Strahlung",
+        "c": "Hawking-Strahlung Theorie"
+      },
+      {
+        "n": "Saul Perlmutter Expansion",
+        "c": "Beschleunigte Expansion Universum Nobel"
+      },
+      {
+        "n": "Yuri Gagarin 1961",
+        "c": "Erster Mensch im Weltraum"
+      },
+      {
+        "n": "Neil Armstrong Mond",
+        "c": "Erster Mensch auf Mond 1969"
+      },
+      {
+        "n": "Valentina Tereshkova 1963",
+        "c": "Erste Frau im Weltraum"
+      },
+      {
+        "n": "Alan Shepard erster Amerikaner",
+        "c": "Erster Amerikanischer Astronaut"
+      },
+      {
+        "n": "Buzz Aldrin Mond",
+        "c": "Zweiter Mensch auf Mond"
+      },
+      {
+        "n": "Chris Hadfield Kanada",
+        "c": "ISS Kommandant Kanada"
+      },
+      {
+        "n": "Mae Jemison 1992",
+        "c": "Erste Afro-Amerikanerin im All"
+      },
+      {
+        "n": "Kalpana Chawla 1997",
+        "c": "Erste Inderin im Weltraum"
+      },
+      {
+        "n": "Sunita Williams ISS",
+        "c": "ISS Langzeitmission Rekord"
+      },
+      {
+        "n": "John Glenn Erdumrundung",
+        "c": "Erster Amerikaner Erdumrundung 1962"
+      },
+      {
+        "n": "Alexei Leonov Weltraumspaziergang",
+        "c": "Erster Weltraumspaziergang 1965"
+      },
+      {
+        "n": "Christiaan Huygens Titan",
+        "c": "Entdeckung Titan 1655"
+      },
+      {
+        "n": "Johann Galle Neptun Entdecker",
+        "c": "Erster direkter Neptun Beobachter 1846"
+      },
+      {
+        "n": "William Lassell Triton",
+        "c": "Entdeckung Triton 1846"
+      },
+      {
+        "n": "Clyde Tombaugh Pluto",
+        "c": "Entdeckung Pluto 1930"
       }
     ]
   },
@@ -1668,6 +2476,126 @@
       {
         "n": "Arcjet (elektrisches Triebwerk)",
         "c": "Elektr. erhitztes Hydrazin"
+      },
+      {
+        "n": "Falcon 9 Merlin 1D Triebwerk",
+        "c": "Kerosin LOX"
+      },
+      {
+        "n": "Saturn V F-1 historisch",
+        "c": "Kerosin LOX"
+      },
+      {
+        "n": "Space Shuttle SSME",
+        "c": "LH2 LOX"
+      },
+      {
+        "n": "SLS RS-25 Triebwerk",
+        "c": "LH2 LOX"
+      },
+      {
+        "n": "Ariane 6 Vulcain 2.1",
+        "c": "LH2 LOX"
+      },
+      {
+        "n": "SpaceX Raptor Triebwerk",
+        "c": "Methan LOX Methanlox"
+      },
+      {
+        "n": "New Glenn BE-4",
+        "c": "Methan LOX"
+      },
+      {
+        "n": "Vulcan BE-4 ULA",
+        "c": "Methan LOX"
+      },
+      {
+        "n": "Soyuz RD-107 Triebwerk",
+        "c": "Kerosin LOX"
+      },
+      {
+        "n": "Proton RD-253",
+        "c": "UDMH N2O4 hypergol"
+      },
+      {
+        "n": "Long March 5 YF-77",
+        "c": "LH2 LOX"
+      },
+      {
+        "n": "PSLV Stage 1 ISRO",
+        "c": "Feststoff"
+      },
+      {
+        "n": "Epsilon Japan Feststoff",
+        "c": "Feststoff"
+      },
+      {
+        "n": "Pegasus XL Luftstart",
+        "c": "Feststoff"
+      },
+      {
+        "n": "Ion Drive Xenon Dawn",
+        "c": "Xenon Ionentriebwerk elektrisch"
+      },
+      {
+        "n": "Hayabusa2 Ionenmotor",
+        "c": "Xenon Ionentriebwerk"
+      },
+      {
+        "n": "Deep Space 1 Ion",
+        "c": "Xenon Ionentriebwerk"
+      },
+      {
+        "n": "Hall-Thruster Xenon",
+        "c": "Xenon elektrisches Feld"
+      },
+      {
+        "n": "Solar Sail IKAROS JAXA",
+        "c": "Photonendruck Sonnensegel"
+      },
+      {
+        "n": "Cold Gas Thruster N2",
+        "c": "Stickstoff Druckgas Lageregelung"
+      },
+      {
+        "n": "VASIMR Plasma RF",
+        "c": "Plasma Radio-Frequenz Antrieb"
+      },
+      {
+        "n": "Bipropellant MMH NTO",
+        "c": "Hypergol Raumfahrtantrieb"
+      },
+      {
+        "n": "Solid Rocket Booster Shuttle",
+        "c": "Aluminiumperchlorat Feststoff"
+      },
+      {
+        "n": "Nuclear Thermal NERVA",
+        "c": "Kernspaltung LH2 theoretisch"
+      },
+      {
+        "n": "Resistojet elektrisch",
+        "c": "Elektrische Widerstandsheizung"
+      },
+      {
+        "n": "Methalox RocketLab Rutherford",
+        "c": "Methan LOX elektrisch gepumpt"
+      },
+      {
+        "n": "Peroxide Kerosin Black Arrow",
+        "c": "HTP Kerosin historisch"
+      },
+      {
+        "n": "LOX Ethanol V-2 historisch",
+        "c": "Fluessigkeitsrakete Ethanol"
+      },
+      {
+        "n": "EM Drive theoretisch",
+        "c": "Mikrowellen Resonanz umstritten"
+      },
+      {
+        "n": "Kryogenes Triebwerk LH2 LOX",
+        "c": "LH2 LOX kryogen"
       }
     ]
   },
@@ -1873,6 +2801,126 @@
       {
         "n": "Mayall's Object",
         "c": "Ringgalaxie"
+      },
+      {
+        "n": "Andromeda M31 naechste grosse",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Milchstrasse Heimatgalaxie",
+        "c": "Balkenspiralgalaxie"
+      },
+      {
+        "n": "Triangulum M33",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Grosse Magellansche Wolke LMC",
+        "c": "Unregelmaessige Galaxie"
+      },
+      {
+        "n": "Kleine Magellansche Wolke SMC",
+        "c": "Unregelmaessige Zwerggalaxie"
+      },
+      {
+        "n": "Sombrero M104",
+        "c": "Spiralgalaxie unklassifiziert"
+      },
+      {
+        "n": "Whirlpool M51 mit Begleiter",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Pinwheel M101",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Sunflower M63",
+        "c": "Spiralgalaxie"
+      },
+      {
+        "n": "Messier 87 M87 Riesengalaxie",
+        "c": "Elliptische Galaxie"
+      },
+      {
+        "n": "Centaurus A NGC 5128",
+        "c": "Radiogalaxie elliptisch"
+      },
+      {
+        "n": "NGC 1300 Balkenspiral",
+        "c": "Balkenspiralgalaxie"
+      },
+      {
+        "n": "Cartwheel Galaxie",
+        "c": "Ringgalaxie"
+      },
+      {
+        "n": "Hoags Objekt Ringgalaxie",
+        "c": "Ringgalaxie"
+      },
+      {
+        "n": "Zwerg-Galaxie Sculptor",
+        "c": "Elliptische Zwerggalaxie"
+      },
+      {
+        "n": "Zwerg-Galaxie Fornax",
+        "c": "Elliptische Zwerggalaxie"
+      },
+      {
+        "n": "BL Lacertae Blazar Typ",
+        "c": "Blazar"
+      },
+      {
+        "n": "3C 273 hellster Quasar",
+        "c": "Quasar"
+      },
+      {
+        "n": "Seyfert 1 NGC 4151",
+        "c": "Seyfert-Galaxie Typ 1"
+      },
+      {
+        "n": "Seyfert 2 NGC 1068",
+        "c": "Seyfert-Galaxie Typ 2"
+      },
+      {
+        "n": "Stephan Quintett Kompaktgruppe",
+        "c": "Galaxiengruppe kompakt"
+      },
+      {
+        "n": "Bullet Cluster Kollision",
+        "c": "Galaxienhaufen Kollision"
+      },
+      {
+        "n": "Virgo Galaxienhaufen",
+        "c": "Groesster naher Galaxienhaufen"
+      },
+      {
+        "n": "Perseus Galaxienhaufen",
+        "c": "Galaxienhaufen mit Schallwellen"
+      },
+      {
+        "n": "Lokale Gruppe",
+        "c": "Galaxiengruppe Milchstrasse Andromeda"
+      },
+      {
+        "n": "Fornax A NGC 1316",
+        "c": "Elliptische Galaxie Merger"
+      },
+      {
+        "n": "Antennengalaxie Mayall Objekt",
+        "c": "Verschmelzende Spiralgalaxien"
+      },
+      {
+        "n": "IC 10 Unregelmaessig",
+        "c": "Unregelmaessige Zwerggalaxie"
+      },
+      {
+        "n": "Abell 2029 Haufen",
+        "c": "Galaxienhaufen elliptisch dominant"
+      },
+      {
+        "n": "Lenticulaer NGC 5866",
+        "c": "Lentikulaere S0 Galaxie"
       }
     ]
   }

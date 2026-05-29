@@ -202,6 +202,126 @@
       {
         "name": "Riesenseerose (Victoria amazonica)",
         "val": 0.8
+      },
+      {
+        "name": "Riesensequoia General Sherman (Nadelbaum)",
+        "val": 84
+      },
+      {
+        "name": "Douglasie (Küste, Pseudotsuga)",
+        "val": 100
+      },
+      {
+        "name": "Riesenmammutbaum (Sequoiadendron)",
+        "val": 95
+      },
+      {
+        "name": "Sitkafichte (Alaska-Fichte)",
+        "val": 97
+      },
+      {
+        "name": "Monterey Zypresse (Cupressus)",
+        "val": 40
+      },
+      {
+        "name": "Europäische Lärche (Larix decidua)",
+        "val": 50
+      },
+      {
+        "name": "Sumpfzypresse (Taxodium distichum)",
+        "val": 38
+      },
+      {
+        "name": "Esche (Fraxinus excelsior)",
+        "val": 40
+      },
+      {
+        "name": "Silberweide (Salix alba)",
+        "val": 25
+      },
+      {
+        "name": "Schwarzpappel (Populus nigra)",
+        "val": 35
+      },
+      {
+        "name": "Hainbuche (Carpinus betulus)",
+        "val": 25
+      },
+      {
+        "name": "Vogelkirsche (Prunus avium)",
+        "val": 20
+      },
+      {
+        "name": "Walnuss (Juglans regia)",
+        "val": 25
+      },
+      {
+        "name": "Edelkastanie (Castanea sativa)",
+        "val": 30
+      },
+      {
+        "name": "Platane (Platanus orientalis)",
+        "val": 30
+      },
+      {
+        "name": "Schwarzerle (Alnus glutinosa)",
+        "val": 25
+      },
+      {
+        "name": "Feldulme (Ulmus minor)",
+        "val": 30
+      },
+      {
+        "name": "Winterlinde (Tilia cordata)",
+        "val": 25
+      },
+      {
+        "name": "Bergahorn (Acer pseudoplatanus)",
+        "val": 30
+      },
+      {
+        "name": "Spitzahorn (Acer platanoides)",
+        "val": 25
+      },
+      {
+        "name": "Gemeine Kiefer (Pinus sylvestris)",
+        "val": 40
+      },
+      {
+        "name": "Gemeine Fichte (Picea abies)",
+        "val": 50
+      },
+      {
+        "name": "Amerikanische Roteiche (Quercus rubra)",
+        "val": 25
+      },
+      {
+        "name": "Rimu (Dacrydium, Neuseeland)",
+        "val": 50
+      },
+      {
+        "name": "Totara (Podocarpus, Neuseeland)",
+        "val": 35
+      },
+      {
+        "name": "Puriri (Vitex lucens, Neuseeland)",
+        "val": 20
+      },
+      {
+        "name": "Pohutukawa (Metrosideros excelsa, NZ)",
+        "val": 20
+      },
+      {
+        "name": "Kauri Tane Mahuta (Neuseeland)",
+        "val": 51
+      },
+      {
+        "name": "Ponderosa Pine (Pinus ponderosa)",
+        "val": 60
+      },
+      {
+        "name": "Western Red Cedar (Thuja)",
+        "val": 60
       }
     ]
   },
@@ -408,6 +528,126 @@
       {
         "name": "Old Tjikko (Fichte, Schweden)",
         "val": 9500
+      },
+      {
+        "name": "Bristlecone Pine WPN-114 (California)",
+        "val": 5068
+      },
+      {
+        "name": "Patriarch Pine (California)",
+        "val": 4000
+      },
+      {
+        "name": "Prometheus Pine (Nevada — gefällt)",
+        "val": 4844
+      },
+      {
+        "name": "Great Basin Bristlecone (Nevada)",
+        "val": 3500
+      },
+      {
+        "name": "Boole Tree Sequoia (California)",
+        "val": 2500
+      },
+      {
+        "name": "General Grant Tree (Sequoia NP)",
+        "val": 2000
+      },
+      {
+        "name": "Platane Hippokrates Kos (Griechenland)",
+        "val": 2400
+      },
+      {
+        "name": "Tule Tree Oaxaca (Mexiko)",
+        "val": 2000
+      },
+      {
+        "name": "Cypress Ahuehuete Mexiko",
+        "val": 1400
+      },
+      {
+        "name": "Yew Fortingall (Schottland)",
+        "val": 4000
+      },
+      {
+        "name": "Llangernyw Yew (Wales)",
+        "val": 4000
+      },
+      {
+        "name": "Angels Oak Live Oak (South Carolina)",
+        "val": 500
+      },
+      {
+        "name": "Wye Oak (Maryland, USA)",
+        "val": 460
+      },
+      {
+        "name": "Bodhi Tree Bodhgaya (Indien)",
+        "val": 2500
+      },
+      {
+        "name": "Jaya Sri Maha Bodhi (Sri Lanka)",
+        "val": 2300
+      },
+      {
+        "name": "Olive Tree Vouves (Kreta — Rekord)",
+        "val": 4000
+      },
+      {
+        "name": "Sacred Fig Ficus Anuradhapura",
+        "val": 2300
+      },
+      {
+        "name": "Ginkgo Biloba Temple Tree (China)",
+        "val": 1400
+      },
+      {
+        "name": "Senator Cypress (Florida, Rekord)",
+        "val": 3500
+      },
+      {
+        "name": "Langzam Wachsende Granne (Colorado)",
+        "val": 1600
+      },
+      {
+        "name": "Alerce (Fitzroya) Chile Neuling",
+        "val": 2000
+      },
+      {
+        "name": "Cedar of Bsharré (Libanon)",
+        "val": 3000
+      },
+      {
+        "name": "Socrates Olive Tree Athen",
+        "val": 2400
+      },
+      {
+        "name": "Osage Orange Arkansas",
+        "val": 350
+      },
+      {
+        "name": "Arbutus Menziesii Madrone (California)",
+        "val": 800
+      },
+      {
+        "name": "Pacific Yew Taxus brevifolia",
+        "val": 500
+      },
+      {
+        "name": "Sequoia Octopus Tree (Oregon)",
+        "val": 1500
+      },
+      {
+        "name": "Sitka Spruce Alaska Rekord",
+        "val": 700
+      },
+      {
+        "name": "Japanese Torreya Kofuku-ji",
+        "val": 1000
+      },
+      {
+        "name": "Dragon Blood Tree Socotra",
+        "val": 500
       }
     ]
   },
@@ -614,6 +854,126 @@
       {
         "name": "Feijoa (Acca sellowiana)",
         "val": 80
+      },
+      {
+        "name": "Gewöhnliche Baumkurbis (Cucurbita)",
+        "val": 20
+      },
+      {
+        "name": "Riesenmango Carabao (Philippinen)",
+        "val": 3
+      },
+      {
+        "name": "Ribuan Durian (Thailand, Rekord)",
+        "val": 9
+      },
+      {
+        "name": "Bromelien Ananas (Spitzensorte)",
+        "val": 3
+      },
+      {
+        "name": "Granate Pomegranate Persien",
+        "val": 1
+      },
+      {
+        "name": "Papaya (Carica papaya)",
+        "val": 2
+      },
+      {
+        "name": "Melone Cantaloup (Frankreich)",
+        "val": 1
+      },
+      {
+        "name": "Wassermelone Carolina Cross (Zucht)",
+        "val": 90
+      },
+      {
+        "name": "Gurke 'Long Green' Varietät",
+        "val": 0.5
+      },
+      {
+        "name": "Zucchini Marrow-Typ (Kürbis Sorte)",
+        "val": 5
+      },
+      {
+        "name": "Kürbis Blauer Ungarischer",
+        "val": 8
+      },
+      {
+        "name": "Winterkürbis Hokkaido",
+        "val": 2
+      },
+      {
+        "name": "Tomaten Fleischtomate (Beefsteak)",
+        "val": 0.8
+      },
+      {
+        "name": "Himbeer-Tomate Cocktailsorte",
+        "val": 0.02
+      },
+      {
+        "name": "Mango Keitt (Florida-Sorte)",
+        "val": 1.5
+      },
+      {
+        "name": "Avocado Hass",
+        "val": 0.25
+      },
+      {
+        "name": "Avocado 'Choquette' (Florida-Riese)",
+        "val": 1.5
+      },
+      {
+        "name": "Kokosnuss (Cocos nucifera, Vollkokosnuss)",
+        "val": 2
+      },
+      {
+        "name": "Paranuss Bertholletia (je Nuss)",
+        "val": 0.025
+      },
+      {
+        "name": "Macadamia Nuss (je Nuss)",
+        "val": 0.008
+      },
+      {
+        "name": "Kastanie Größte Rosskastanie",
+        "val": 0.05
+      },
+      {
+        "name": "Walnuss je Nuss (in Schale)",
+        "val": 0.03
+      },
+      {
+        "name": "Granat-Apfel Wunderbar Sorte",
+        "val": 0.5
+      },
+      {
+        "name": "Quitte (Cydonia oblonga)",
+        "val": 0.3
+      },
+      {
+        "name": "Litschi (Litchi chinensis, je Frucht)",
+        "val": 0.02
+      },
+      {
+        "name": "Longan (Euphoria longan)",
+        "val": 0.01
+      },
+      {
+        "name": "Rambutan je Frucht",
+        "val": 0.03
+      },
+      {
+        "name": "Mangosteen (Garcinia)",
+        "val": 0.06
+      },
+      {
+        "name": "Carambola Sternfrucht",
+        "val": 0.12
+      },
+      {
+        "name": "Tamarinde Schote",
+        "val": 0.02
       }
     ]
   },
@@ -820,6 +1180,126 @@
       {
         "name": "Tamarinde (Tamarindus indica)",
         "val": 150
+      },
+      {
+        "name": "Seerosen-Samen Nymphaea (klein)",
+        "val": 1
+      },
+      {
+        "name": "Orchideen-Staubkorn (winzig)",
+        "val": 0.3
+      },
+      {
+        "name": "Tomate Samen",
+        "val": 3
+      },
+      {
+        "name": "Paprika Samen",
+        "val": 4
+      },
+      {
+        "name": "Aubergine Samen",
+        "val": 3
+      },
+      {
+        "name": "Gurke Samen",
+        "val": 10
+      },
+      {
+        "name": "Zucchini Samen",
+        "val": 12
+      },
+      {
+        "name": "Kürbis Samen (Hokkaido)",
+        "val": 15
+      },
+      {
+        "name": "Mais-Korn (Maiskern)",
+        "val": 10
+      },
+      {
+        "name": "Erdnuss Samen (je Kern)",
+        "val": 18
+      },
+      {
+        "name": "Sojabohne (je Bohne)",
+        "val": 8
+      },
+      {
+        "name": "Erbse (Pisum sativum)",
+        "val": 9
+      },
+      {
+        "name": "Bohne (Phaseolus vulgaris)",
+        "val": 14
+      },
+      {
+        "name": "Linse (Lens culinaris)",
+        "val": 5
+      },
+      {
+        "name": "Kichererbse (Cicer arietinum)",
+        "val": 8
+      },
+      {
+        "name": "Haferkorn",
+        "val": 8
+      },
+      {
+        "name": "Weizenkorn (Triticum)",
+        "val": 6
+      },
+      {
+        "name": "Roggen Korn",
+        "val": 7
+      },
+      {
+        "name": "Gerstenkorn",
+        "val": 9
+      },
+      {
+        "name": "Buchweizenkorn",
+        "val": 5
+      },
+      {
+        "name": "Quinoa Samen",
+        "val": 2
+      },
+      {
+        "name": "Sonnenblumenkern (Helianthus)",
+        "val": 12
+      },
+      {
+        "name": "Flachs Samen (Leinsamen)",
+        "val": 5
+      },
+      {
+        "name": "Sesam-Samen",
+        "val": 3
+      },
+      {
+        "name": "Mohnkorn (Papaver)",
+        "val": 1
+      },
+      {
+        "name": "Hanf-Samen (Cannabis sativa)",
+        "val": 4
+      },
+      {
+        "name": "Senfsamen (Sinapis alba)",
+        "val": 2
+      },
+      {
+        "name": "Koriander-Frucht (je Teilfrüchtchen)",
+        "val": 3
+      },
+      {
+        "name": "Fenchel-Frucht",
+        "val": 5
+      },
+      {
+        "name": "Zwiebel-Samen (Allium cepa)",
+        "val": 3
       }
     ]
   },
@@ -1026,6 +1506,126 @@
       {
         "name": "Liberia",
         "val": 3
+      },
+      {
+        "name": "Brasilien (Weltweit Nr. 1)",
+        "val": 3700000
+      },
+      {
+        "name": "Vietnam (Robusta-Hauptproduzent)",
+        "val": 1900000
+      },
+      {
+        "name": "Philippines",
+        "val": 88000
+      },
+      {
+        "name": "Kenya",
+        "val": 45000
+      },
+      {
+        "name": "Yemen",
+        "val": 22000
+      },
+      {
+        "name": "Venezuela",
+        "val": 18000
+      },
+      {
+        "name": "Papua-Neuguinea (Arabica highlands)",
+        "val": 56000
+      },
+      {
+        "name": "Haiti (Artibonite Region)",
+        "val": 21000
+      },
+      {
+        "name": "Ruanda (Lake Kivu)",
+        "val": 20000
+      },
+      {
+        "name": "Timor-Leste (Maubisse)",
+        "val": 10000
+      },
+      {
+        "name": "Sambia (Zambia Coffee)",
+        "val": 4000
+      },
+      {
+        "name": "Tansania (Kilimanjaro)",
+        "val": 40000
+      },
+      {
+        "name": "Malawi (Satemwa Estate)",
+        "val": 5000
+      },
+      {
+        "name": "Burundi (Bourbon Arabica)",
+        "val": 16000
+      },
+      {
+        "name": "Kenia (AA Grade Arabica)",
+        "val": 45000
+      },
+      {
+        "name": "Togo (Shade grown)",
+        "val": 2000
+      },
+      {
+        "name": "Simbabwe",
+        "val": 5000
+      },
+      {
+        "name": "Mosambik",
+        "val": 3000
+      },
+      {
+        "name": "Angola (hist. Welt-Nr. 4)",
+        "val": 5000
+      },
+      {
+        "name": "Jamaika (Blue Mountain Kaffee)",
+        "val": 2000
+      },
+      {
+        "name": "Hawaii (Kona-Kaffee)",
+        "val": 1500
+      },
+      {
+        "name": "Cuba",
+        "val": 3000
+      },
+      {
+        "name": "Puerto Rico",
+        "val": 1000
+      },
+      {
+        "name": "Panama (Geisha Variante)",
+        "val": 10000
+      },
+      {
+        "name": "Belize",
+        "val": 500
+      },
+      {
+        "name": "Fiji",
+        "val": 500
+      },
+      {
+        "name": "Vanuatu",
+        "val": 1000
+      },
+      {
+        "name": "Kongo (Robusta Demokratisch)",
+        "val": 8000
+      },
+      {
+        "name": "Malawi Thyolo Region",
+        "val": 5000
+      },
+      {
+        "name": "Kongo Brazzaville (Robusta)",
+        "val": 2500
       }
     ]
   },
@@ -1232,6 +1832,126 @@
       {
         "name": "Armenien",
         "val": 34
+      },
+      {
+        "name": "Spanien (Weinbaufläche Nr. 1)",
+        "val": 44000000
+      },
+      {
+        "name": "USA (California)",
+        "val": 24000000
+      },
+      {
+        "name": "Ukraine",
+        "val": 1500000
+      },
+      {
+        "name": "Japan",
+        "val": 800000
+      },
+      {
+        "name": "Libanon (Bekaa-Tal)",
+        "val": 580000
+      },
+      {
+        "name": "Marokko (Meknes Region)",
+        "val": 400000
+      },
+      {
+        "name": "Georgien (Qvevri-Tradition)",
+        "val": 1800000
+      },
+      {
+        "name": "Israel (Golan Heights)",
+        "val": 400000
+      },
+      {
+        "name": "Indien (Nashik Region)",
+        "val": 150000
+      },
+      {
+        "name": "Bosnien-Herzegowina",
+        "val": 300000
+      },
+      {
+        "name": "Luxemburg (Mosel)",
+        "val": 130000
+      },
+      {
+        "name": "Liechtenstein (Vaduz)",
+        "val": 5000
+      },
+      {
+        "name": "Schweiz (Zürich)",
+        "val": 1050000
+      },
+      {
+        "name": "Belgien (Gaumais)",
+        "val": 50000
+      },
+      {
+        "name": "Niederlande (Gelderland)",
+        "val": 35000
+      },
+      {
+        "name": "Großbritannien (Hampshire)",
+        "val": 15000
+      },
+      {
+        "name": "Slowakei (Weinviertel-Grenze)",
+        "val": 350000
+      },
+      {
+        "name": "Tschechien (Mähren)",
+        "val": 500000
+      },
+      {
+        "name": "Polen (Warschau Region)",
+        "val": 50000
+      },
+      {
+        "name": "Kasachstan",
+        "val": 80000
+      },
+      {
+        "name": "Kirgisistan",
+        "val": 30000
+      },
+      {
+        "name": "Kroatien (Dalmatien)",
+        "val": 1200000
+      },
+      {
+        "name": "Griechenland (Peloponnes)",
+        "val": 2400000
+      },
+      {
+        "name": "Slowenien (Primorska)",
+        "val": 600000
+      },
+      {
+        "name": "Schweizer Pendant Wallis",
+        "val": 500000
+      },
+      {
+        "name": "England South East",
+        "val": 15000
+      },
+      {
+        "name": "Namibia (Lüderitz)",
+        "val": 5000
+      },
+      {
+        "name": "Zimbabwe (Harare Region)",
+        "val": 3000
+      },
+      {
+        "name": "Sambia Ost",
+        "val": 1000
+      },
+      {
+        "name": "Zypern Commandaria (Dessert)",
+        "val": 150000
       }
     ]
   },
@@ -1438,6 +2158,126 @@
       {
         "name": "Madagaskar",
         "val": 4.3
+      },
+      {
+        "name": "China (Hauptproduzent)",
+        "val": 208000000
+      },
+      {
+        "name": "Korea Süd",
+        "val": 5700000
+      },
+      {
+        "name": "Malaysia",
+        "val": 2600000
+      },
+      {
+        "name": "Tanzania",
+        "val": 3200000
+      },
+      {
+        "name": "Tadschikistan",
+        "val": 80000
+      },
+      {
+        "name": "Usbekistan",
+        "val": 270000
+      },
+      {
+        "name": "Russland",
+        "val": 1200000
+      },
+      {
+        "name": "Türkei",
+        "val": 1100000
+      },
+      {
+        "name": "Guinea-Bissau",
+        "val": 150000
+      },
+      {
+        "name": "Benin",
+        "val": 200000
+      },
+      {
+        "name": "Niger",
+        "val": 110000
+      },
+      {
+        "name": "Mosambik",
+        "val": 400000
+      },
+      {
+        "name": "Burundi",
+        "val": 80000
+      },
+      {
+        "name": "Angola",
+        "val": 300000
+      },
+      {
+        "name": "Irak",
+        "val": 400000
+      },
+      {
+        "name": "Turkmenistan",
+        "val": 80000
+      },
+      {
+        "name": "Kirgisistan",
+        "val": 12000
+      },
+      {
+        "name": "Kasachstan",
+        "val": 100000
+      },
+      {
+        "name": "Timor-Leste (Osttimor)",
+        "val": 200000
+      },
+      {
+        "name": "Fiji",
+        "val": 2000
+      },
+      {
+        "name": "Solomoninseln",
+        "val": 3000
+      },
+      {
+        "name": "Sambia",
+        "val": 30000
+      },
+      {
+        "name": "Zimbabwe",
+        "val": 40000
+      },
+      {
+        "name": "Dominikanische Republik",
+        "val": 100000
+      },
+      {
+        "name": "Venezuela",
+        "val": 700000
+      },
+      {
+        "name": "Guyana",
+        "val": 650000
+      },
+      {
+        "name": "Surinam",
+        "val": 220000
+      },
+      {
+        "name": "El Salvador",
+        "val": 50000
+      },
+      {
+        "name": "Panama",
+        "val": 270000
+      },
+      {
+        "name": "Honduras (Arroz)",
+        "val": 9000
       }
     ]
   },
@@ -1644,6 +2484,126 @@
       {
         "name": "Kongo (Demokratische Republik)",
         "val": 67.0
+      },
+      {
+        "name": "Russland (größte Waldfläche)",
+        "val": 8150000
+      },
+      {
+        "name": "Brasilien (Amazon.)",
+        "val": 4776000
+      },
+      {
+        "name": "DR Kongo",
+        "val": 1170000
+      },
+      {
+        "name": "Argentinien",
+        "val": 720000
+      },
+      {
+        "name": "Kolumbien",
+        "val": 585000
+      },
+      {
+        "name": "Türkei",
+        "val": 120000
+      },
+      {
+        "name": "New Zealand",
+        "val": 100000
+      },
+      {
+        "name": "Thailand",
+        "val": 197000
+      },
+      {
+        "name": "Mosambik",
+        "val": 440000
+      },
+      {
+        "name": "Tansania",
+        "val": 480000
+      },
+      {
+        "name": "Sambia",
+        "val": 490000
+      },
+      {
+        "name": "Simbabwe",
+        "val": 160000
+      },
+      {
+        "name": "Demokratische Republik Kongo",
+        "val": 1170000
+      },
+      {
+        "name": "Angola",
+        "val": 600000
+      },
+      {
+        "name": "Äthiopien",
+        "val": 120000
+      },
+      {
+        "name": "Kenia",
+        "val": 37000
+      },
+      {
+        "name": "Vietnam",
+        "val": 140000
+      },
+      {
+        "name": "Kambodscha",
+        "val": 115000
+      },
+      {
+        "name": "Mongolei",
+        "val": 12000
+      },
+      {
+        "name": "Philippinen",
+        "val": 65000
+      },
+      {
+        "name": "Korea Süd",
+        "val": 63000
+      },
+      {
+        "name": "Irland",
+        "val": 11000
+      },
+      {
+        "name": "UK",
+        "val": 32000
+      },
+      {
+        "name": "Spanien",
+        "val": 185000
+      },
+      {
+        "name": "Italien",
+        "val": 95000
+      },
+      {
+        "name": "Tschechien",
+        "val": 26000
+      },
+      {
+        "name": "Slowakei",
+        "val": 20000
+      },
+      {
+        "name": "Uruguay",
+        "val": 17000
+      },
+      {
+        "name": "Paraguay",
+        "val": 170000
+      },
+      {
+        "name": "Honduras",
+        "val": 57000
       }
     ]
   },
@@ -1850,6 +2810,126 @@
       {
         "name": "Baobab (Affenbrotbaum) Senegal",
         "val": 4000
+      },
+      {
+        "name": "Tule Tree Oaxaca (größter Stammumfang)",
+        "val": 42
+      },
+      {
+        "name": "Montezuma Zypresse El Gigante (Mexiko)",
+        "val": 36
+      },
+      {
+        "name": "General Sherman Tree (Sequoia)",
+        "val": 31
+      },
+      {
+        "name": "Thane Chestnut Tree (Sizilien, Kastanie)",
+        "val": 58
+      },
+      {
+        "name": "Fortingall Yew (Schottland)",
+        "val": 16
+      },
+      {
+        "name": "Platane Hippokrates (Kos)",
+        "val": 18
+      },
+      {
+        "name": "Olive Tree Vouves (Kreta)",
+        "val": 12
+      },
+      {
+        "name": "Boab Prison Tree (Australien)",
+        "val": 14
+      },
+      {
+        "name": "Sunland Baobab (Südafrika)",
+        "val": 34
+      },
+      {
+        "name": "Chestnut of One Hundred Horses (Sizilien)",
+        "val": 59
+      },
+      {
+        "name": "Thimmamma Marrimanu Banyan (Indien)",
+        "val": 846
+      },
+      {
+        "name": "Great Banyan Howrah (Indien)",
+        "val": 477
+      },
+      {
+        "name": "Jaya Sri Maha Bodhi (Sri Lanka)",
+        "val": 4
+      },
+      {
+        "name": "Waikato Kauri (Neuseeland)",
+        "val": 16
+      },
+      {
+        "name": "Tane Mahuta Kauri (NZ — größter)",
+        "val": 13
+      },
+      {
+        "name": "Arbol del Tule (bereits listet, Backup)",
+        "val": 35
+      },
+      {
+        "name": "Baobab Adansonia grandidieri (Madagaskar)",
+        "val": 25
+      },
+      {
+        "name": "African Baobab Limpopo (Südafrika)",
+        "val": 47
+      },
+      {
+        "name": "Alerce Patagonia (Chile)",
+        "val": 7
+      },
+      {
+        "name": "Bristlecone Pine Methuselah",
+        "val": 5
+      },
+      {
+        "name": "English Oak Sherwood (Major Oak)",
+        "val": 10
+      },
+      {
+        "name": "Greenwood Yew (England)",
+        "val": 8
+      },
+      {
+        "name": "Ankerwycke Yew (Berkshire)",
+        "val": 8
+      },
+      {
+        "name": "Wedding Oak (Texas, USA)",
+        "val": 6
+      },
+      {
+        "name": "Hoole Oak (Cheshire)",
+        "val": 7
+      },
+      {
+        "name": "Crowhurst Yew (Sussex)",
+        "val": 10
+      },
+      {
+        "name": "Linton Yew (Herefordshire)",
+        "val": 8
+      },
+      {
+        "name": "Durdle Door Oak (Dorset)",
+        "val": 6
+      },
+      {
+        "name": "Common Fig Temple Tree (Israel)",
+        "val": 3
+      },
+      {
+        "name": "Wye Oak (Maryland — gefallen)",
+        "val": 6
       }
     ]
   },
@@ -2056,6 +3136,126 @@
       {
         "name": "Monstera deliciosa (Fensterblatt)",
         "val": 4000
+      },
+      {
+        "name": "Raffia Palm (Raphia regalis) Blatt",
+        "val": 25
+      },
+      {
+        "name": "Riesenseerose Victoria amazonica",
+        "val": 3
+      },
+      {
+        "name": "Cocoyam (Colocasia esculenta)",
+        "val": 1
+      },
+      {
+        "name": "Riesen-Taro (Alocasia macrorrhizos)",
+        "val": 3
+      },
+      {
+        "name": "Banana (Musa, Standardblatt)",
+        "val": 5
+      },
+      {
+        "name": "Abyssinian Banana (Ensete)",
+        "val": 8
+      },
+      {
+        "name": "Heliconia Blatt",
+        "val": 2
+      },
+      {
+        "name": "Monstera deliciosa Blatt",
+        "val": 1
+      },
+      {
+        "name": "Gunnera tinctoria (Riesen-Rhabarber)",
+        "val": 3
+      },
+      {
+        "name": "Petasites hybridus (Pestwurz)",
+        "val": 1
+      },
+      {
+        "name": "Nelumbo nucifera Lotus",
+        "val": 0.7
+      },
+      {
+        "name": "Nymphaea alba Seerose",
+        "val": 0.5
+      },
+      {
+        "name": "Catalpa bignonioides (Trompetenbaum)",
+        "val": 0.1
+      },
+      {
+        "name": "Phragmites australis (Schilf, Einzelblatt)",
+        "val": 0.03
+      },
+      {
+        "name": "Platanus orientalis (Platane)",
+        "val": 0.15
+      },
+      {
+        "name": "Alocasia odora (Riesenblatt)",
+        "val": 2
+      },
+      {
+        "name": "Calathea orbifolia Blatt",
+        "val": 0.15
+      },
+      {
+        "name": "Strelitzia nicolai (Baumstrelitzie)",
+        "val": 0.5
+      },
+      {
+        "name": "Pachypodium namaquanum Blatt",
+        "val": 0.05
+      },
+      {
+        "name": "Begonia luxurians Blatt",
+        "val": 0.15
+      },
+      {
+        "name": "Anthurium Blatt groß",
+        "val": 0.2
+      },
+      {
+        "name": "Hosta (Blattfunkia, große Sorte)",
+        "val": 0.05
+      },
+      {
+        "name": "Populus deltoides (Pappel)",
+        "val": 0.02
+      },
+      {
+        "name": "Betula pendula (Birke) Einzelblatt",
+        "val": 0.003
+      },
+      {
+        "name": "Quercus robur (Eiche) Einzelblatt",
+        "val": 0.004
+      },
+      {
+        "name": "Juglans regia (Walnuss) Fiederblatt",
+        "val": 0.05
+      },
+      {
+        "name": "Pteridophyta Riesenfarnen Blatt",
+        "val": 2
+      },
+      {
+        "name": "Sabal Palm Blatt",
+        "val": 5
+      },
+      {
+        "name": "Bismarck Palm Blatt",
+        "val": 3
+      },
+      {
+        "name": "Licuala grandis (Fächerpalme) Blatt",
+        "val": 1
       }
     ]
   },
@@ -2262,6 +3462,126 @@
       {
         "name": "Alpenrose (Rhododendron ferrugineum)",
         "val": 60
+      },
+      {
+        "name": "Agave americana (Blüht einmal nach 20-30J)",
+        "val": 1095
+      },
+      {
+        "name": "Tian Shan Kohlpalme Corypha (100J dann Tod)",
+        "val": 180
+      },
+      {
+        "name": "Bambusblüte Phyllostachys (alle 60-120J)",
+        "val": 30
+      },
+      {
+        "name": "Livistona Palm Blühdauer",
+        "val": 60
+      },
+      {
+        "name": "Magnolia (je Blüte kurz)",
+        "val": 14
+      },
+      {
+        "name": "Kirschblüte Sakura (Saisondauer)",
+        "val": 14
+      },
+      {
+        "name": "Löwenzahn Taraxacum (Blüte je)",
+        "val": 5
+      },
+      {
+        "name": "Sonnenblume Helianthus (Blüte offen)",
+        "val": 30
+      },
+      {
+        "name": "Rose (Einzelblüte)",
+        "val": 21
+      },
+      {
+        "name": "Schwertlilie Iris",
+        "val": 7
+      },
+      {
+        "name": "Tulpe (Einzelblüte)",
+        "val": 10
+      },
+      {
+        "name": "Narzisse (Einzelblüte)",
+        "val": 14
+      },
+      {
+        "name": "Chrysantheme (Saison)",
+        "val": 60
+      },
+      {
+        "name": "Dahlie (einzeln)",
+        "val": 7
+      },
+      {
+        "name": "Gazania Daisy",
+        "val": 30
+      },
+      {
+        "name": "Hibiscus syriacus (Blütenöffnung tägl.)",
+        "val": 1
+      },
+      {
+        "name": "Lilie (Einzelblüte)",
+        "val": 7
+      },
+      {
+        "name": "Begonie (dauerhaft bis Frost)",
+        "val": 150
+      },
+      {
+        "name": "Geranium Pelargonium (Sommer)",
+        "val": 120
+      },
+      {
+        "name": "Lavendel (Saison)",
+        "val": 45
+      },
+      {
+        "name": "Flieder (Syringa) Blütenrispe",
+        "val": 14
+      },
+      {
+        "name": "Fliederflieder (Ceanothus)",
+        "val": 21
+      },
+      {
+        "name": "Wisteria sinensis (Glyzinie)",
+        "val": 21
+      },
+      {
+        "name": "Schmetterlingsflieder (Buddleja)",
+        "val": 45
+      },
+      {
+        "name": "Winterjasmin (Jasminum nudiflorum)",
+        "val": 90
+      },
+      {
+        "name": "Hellebore Christrose (Winter)",
+        "val": 60
+      },
+      {
+        "name": "Paeonia (Pfingstrose, je Blüte)",
+        "val": 7
+      },
+      {
+        "name": "Astilbe (Federbusch)",
+        "val": 21
+      },
+      {
+        "name": "Helenium Sonnenbraut",
+        "val": 45
+      },
+      {
+        "name": "Echinops (Kugeldistel)",
+        "val": 30
       }
     ]
   },
@@ -2468,6 +3788,126 @@
       {
         "name": "Saccharum officinarum (Zuckerrohr)",
         "val": 10000
+      },
+      {
+        "name": "Paris japonica (größtes Pflanzengenom)",
+        "val": 149000
+      },
+      {
+        "name": "Fritillaria assyriaca (Schachblume-Art)",
+        "val": 97000
+      },
+      {
+        "name": "Trillium hagae (Dreiblatt)",
+        "val": 50000
+      },
+      {
+        "name": "Allium cepa (Zwiebel)",
+        "val": 16000
+      },
+      {
+        "name": "Lily (Lilium longiflorum)",
+        "val": 36000
+      },
+      {
+        "name": "Tulip (Tulipa gesneriana)",
+        "val": 34000
+      },
+      {
+        "name": "Wheat (Triticum aestivum, hexaploid)",
+        "val": 17000
+      },
+      {
+        "name": "Maize (Zea mays)",
+        "val": 2500
+      },
+      {
+        "name": "Rice (Oryza sativa japonica)",
+        "val": 389
+      },
+      {
+        "name": "Arabidopsis thaliana (Acker-Schaumkraut)",
+        "val": 157
+      },
+      {
+        "name": "Thale Cress Arabidopsis lyrata",
+        "val": 207
+      },
+      {
+        "name": "Poplar (Populus trichocarpa)",
+        "val": 485
+      },
+      {
+        "name": "Grapevine (Vitis vinifera)",
+        "val": 487
+      },
+      {
+        "name": "Soybean (Glycine max)",
+        "val": 978
+      },
+      {
+        "name": "Tomato (Solanum lycopersicum)",
+        "val": 950
+      },
+      {
+        "name": "Potato (Solanum tuberosum, tetraploid)",
+        "val": 860
+      },
+      {
+        "name": "Sunflower (Helianthus annuus)",
+        "val": 3600
+      },
+      {
+        "name": "Cotton (Gossypium hirsutum)",
+        "val": 2500
+      },
+      {
+        "name": "Tobacco (Nicotiana tabacum)",
+        "val": 4500
+      },
+      {
+        "name": "Coffee (Coffea arabica, allotetraploid)",
+        "val": 1300
+      },
+      {
+        "name": "Cocoa (Theobroma cacao)",
+        "val": 430
+      },
+      {
+        "name": "Banana (Musa acuminata)",
+        "val": 550
+      },
+      {
+        "name": "Pineapple (Ananas comosus)",
+        "val": 382
+      },
+      {
+        "name": "Cucumber (Cucumis sativus)",
+        "val": 367
+      },
+      {
+        "name": "Watermelon (Citrullus lanatus)",
+        "val": 426
+      },
+      {
+        "name": "Carrot (Daucus carota)",
+        "val": 473
+      },
+      {
+        "name": "Lettuce (Lactuca sativa)",
+        "val": 2700
+      },
+      {
+        "name": "Onion (Allium cepa, Rekord Garten)",
+        "val": 16000
+      },
+      {
+        "name": "Strawberry (Fragaria ananassa, octoploid)",
+        "val": 813
+      },
+      {
+        "name": "Apple (Malus domestica)",
+        "val": 742
       }
     ]
   }

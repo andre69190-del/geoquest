@@ -201,6 +201,126 @@
       {
         "n": "Grosse runde Pfote ohne Krallen",
         "c": "Bär"
+      },
+      {
+        "n": "5 Zehen mit Krallen spreizend — Marder",
+        "c": "Marder"
+      },
+      {
+        "n": "Kleine runde Pfote 4 Zehen Katze",
+        "c": "Wildkatze"
+      },
+      {
+        "n": "Paarhufer oval mit Mittelsteg",
+        "c": "Wildschwein"
+      },
+      {
+        "n": "Grosse Pfote 5 Zehen paddelfoermig",
+        "c": "Fischotter"
+      },
+      {
+        "n": "Breite Spur mit Schwanzabdruck",
+        "c": "Biber"
+      },
+      {
+        "n": "Kleine Pfoten plus langer Schwanz",
+        "c": "Ratte"
+      },
+      {
+        "n": "Insektenartige Laufspur flach",
+        "c": "Feldspitzmaus"
+      },
+      {
+        "n": "Drei Zehen vorne eine hinten (Vogel)",
+        "c": "Fasanfuss"
+      },
+      {
+        "n": "Zwei Zehen (Hufer)",
+        "c": "Reh"
+      },
+      {
+        "n": "Abdrucke mit Zehenkrallen nach innen",
+        "c": "Dachs"
+      },
+      {
+        "n": "Handfoermiger Abdruck 5 Finger",
+        "c": "Waschbaer"
+      },
+      {
+        "n": "Sehr breite Spur 5 Zehen Handballen",
+        "c": "Fischotter"
+      },
+      {
+        "n": "Schmal oval ohne Krallen hinten",
+        "c": "Hasenspur"
+      },
+      {
+        "n": "Grosser flacher Abdruck Schwanz",
+        "c": "Nutria"
+      },
+      {
+        "n": "Hufabdruck herzfoermig gespalten",
+        "c": "Elch"
+      },
+      {
+        "n": "Pfote mit einziehbaren Krallen gross",
+        "c": "Puma"
+      },
+      {
+        "n": "Dreizackiger Vogelabdruck",
+        "c": "Reiher"
+      },
+      {
+        "n": "Gespaltener Huf mit Afterklaue",
+        "c": "Steinbock"
+      },
+      {
+        "n": "Sehr kleine runde Pfote mit Kralle",
+        "c": "Wiesel"
+      },
+      {
+        "n": "Linke und rechte Pfote versetzt diagonal",
+        "c": "Fuchs"
+      },
+      {
+        "n": "Grosser Pfotendruck feucht",
+        "c": "Wolf"
+      },
+      {
+        "n": "Kreisfoermige Spur ohne Krallen",
+        "c": "Luchs"
+      },
+      {
+        "n": "Spur im Schnee mit Huepfmuster",
+        "c": "Hase"
+      },
+      {
+        "n": "Zeigefinger-Abdrücke tief im Schlamm",
+        "c": "Waschbaer"
+      },
+      {
+        "n": "Lange Klauen seitlich spreizend",
+        "c": "Igel"
+      },
+      {
+        "n": "Zwei deutliche Afterklauen im Schlamm",
+        "c": "Hirsch"
+      },
+      {
+        "n": "Spur mit Federstielen im Schnee",
+        "c": "Auerhahn"
+      },
+      {
+        "n": "Sechseckige Spur kleiner Sohlentritt",
+        "c": "Iltis"
+      },
+      {
+        "n": "V-foermige Spur langer Mittelzeh",
+        "c": "Wildente"
+      },
+      {
+        "n": "Breiter flacher Pfotentritt",
+        "c": "Dachsbaer"
       }
     ]
   },
@@ -406,6 +526,126 @@
       {
         "n": "Wasserkugelartig unter Blatt",
         "c": "Schnakenlarve"
+      },
+      {
+        "n": "Epoxidkuppel aus Dreck und Speichel",
+        "c": "Termitenhuegel"
+      },
+      {
+        "n": "Hängendes Papiernestest aus Holzfasern",
+        "c": "Wespe"
+      },
+      {
+        "n": "Schaumpflaster an Pflanzenstaengeln",
+        "c": "Schaumzikade"
+      },
+      {
+        "n": "Blattneststuktur aus Pflanzenmaterial",
+        "c": "Weberameise"
+      },
+      {
+        "n": "Spiralfoermiges Schalengehaeuse",
+        "c": "Schnecke"
+      },
+      {
+        "n": "Seidenspinnender Kuppelkokon",
+        "c": "Spinne"
+      },
+      {
+        "n": "Parallele Reihen von Wabenkoerper",
+        "c": "Biene"
+      },
+      {
+        "n": "Kugelnest aus Gras in Busch",
+        "c": "Maus"
+      },
+      {
+        "n": "Unterwassernetz aus Seide",
+        "c": "Tauchwasserspinne"
+      },
+      {
+        "n": "Eiszapfenaehnliche Unterwasserhohle",
+        "c": "Flusskrebsroehre"
+      },
+      {
+        "n": "Flechtrohr aus Pflanzenfasern",
+        "c": "Rohrsaenger"
+      },
+      {
+        "n": "Tiefe Roehre im Sand",
+        "c": "Sandelwespe"
+      },
+      {
+        "n": "Sternfoermige Kalkbodenstruktur",
+        "c": "Pufferfisch"
+      },
+      {
+        "n": "Aufgestapelte Muscheln als Revier",
+        "c": "Seeotter"
+      },
+      {
+        "n": "Bodensenke mit Dachkonstruktion",
+        "c": "Groenlandhai nein Prairiehund"
+      },
+      {
+        "n": "Kegelnest aus Baumnadeln",
+        "c": "Ameise (Waldameise)"
+      },
+      {
+        "n": "Traegheitskonstruktion aus Koerpersekreten",
+        "c": "Hummeln"
+      },
+      {
+        "n": "Zylinderroehre aus Sandkoernern",
+        "c": "Koecherfliegenlarve"
+      },
+      {
+        "n": "Flaches Straw-Nest in der Erde",
+        "c": "Erdhummel"
+      },
+      {
+        "n": "Halbkugelfoermige Gruft aus Schlamm",
+        "c": "Schwalbe"
+      },
+      {
+        "n": "Gewobener Haengekorb an Ast",
+        "c": "Beutelmeise"
+      },
+      {
+        "n": "Spiraliger Tunnel im Erdboden",
+        "c": "Maulwurf"
+      },
+      {
+        "n": "Tonnenfoermiger Bau aus Schlamm",
+        "c": "Nilkrokodil"
+      },
+      {
+        "n": "Grosses Nestplattform aus Asten",
+        "c": "Storch"
+      },
+      {
+        "n": "Teppichmuster aus Algen im Wasser",
+        "c": "Bienenkorb nein Kaulbarsch"
+      },
+      {
+        "n": "Komplexes Tunnelsystem im Holz",
+        "c": "Borkenkaefer"
+      },
+      {
+        "n": "Hoehle in Erdboden mit Wachkammer",
+        "c": "Erdfuchs"
+      },
+      {
+        "n": "Gewundener Erdhaufen an Oberflaechenrand",
+        "c": "Regenwurm"
+      },
+      {
+        "n": "Loser Blatterhaufen als Winterlager",
+        "c": "Eichhornchen"
+      },
+      {
+        "n": "Aufgerauhter Schlammbau auf Gestein",
+        "c": "Wasseramsel"
       }
     ]
   },
@@ -611,6 +851,126 @@
       {
         "n": "Vollständige Weißfärbung im Winter (saisonale)",
         "c": "Hermelin"
+      },
+      {
+        "n": "Dunkelbraune Fleckenmusterung auf Heidekraut",
+        "c": "Birkhahn"
+      },
+      {
+        "n": "Weiss mit schwarzen Spitzen im Winter",
+        "c": "Schneehuhn"
+      },
+      {
+        "n": "Seitliche Streifenmusterung am Koerper",
+        "c": "Zebra"
+      },
+      {
+        "n": "Verzerrender Schattenmuster auf Fell",
+        "c": "Giraffe"
+      },
+      {
+        "n": "Gruen-braune Verwischung im Grasland",
+        "c": "Grosstrappe"
+      },
+      {
+        "n": "Borkenaehnliche Hautfaerbung",
+        "c": "Waldkauz"
+      },
+      {
+        "n": "Sandgelb mit kleinen Flecken",
+        "c": "Sandgazelle"
+      },
+      {
+        "n": "Unterseite hell Oberseite dunkel (Gegenschatten)",
+        "c": "Makrele"
+      },
+      {
+        "n": "Rote Flecken imitieren Beeren",
+        "c": "Fasan (Henne)"
+      },
+      {
+        "n": "Transparenter Koerper im Wasser",
+        "c": "Glaswels"
+      },
+      {
+        "n": "Schwimmende Algenimitierung",
+        "c": "Seetang-Seepferdchen"
+      },
+      {
+        "n": "Dunkelbraun mit hellen Streifen vertikal",
+        "c": "Junges Reh"
+      },
+      {
+        "n": "Grauer Stein-Look an Felsen",
+        "c": "Steinschmaetzer"
+      },
+      {
+        "n": "Krypsis durch Baumrindenmuster",
+        "c": "Baumkrote"
+      },
+      {
+        "n": "Unterseite leuchtet weiss (Gegenbeleuchtung)",
+        "c": "Sardine"
+      },
+      {
+        "n": "Rotes Korallenimitierendes Muster",
+        "c": "Drachenkopf"
+      },
+      {
+        "n": "Imitiert totes Laub am Waldboden",
+        "c": "Laubfrosch"
+      },
+      {
+        "n": "Gelb-schwarz als Warnsignal",
+        "c": "Wespe"
+      },
+      {
+        "n": "Blaugrau im Nebel unsichtbar",
+        "c": "Elch"
+      },
+      {
+        "n": "Hintergrundanpassung innerhalb Sekunden",
+        "c": "Krake"
+      },
+      {
+        "n": "Orange-schwarz breites Band (Warnung)",
+        "c": "Monarchfalter"
+      },
+      {
+        "n": "Weiss auf Schnee mit schwarzen Augen",
+        "c": "Eisbär"
+      },
+      {
+        "n": "Tarnfarbe wechselt je nach Tageszeit",
+        "c": "Kurzflossen-Tintenfisch"
+      },
+      {
+        "n": "Felsenaehnlicher Ruecken mit Dornen",
+        "c": "Kroetenechse"
+      },
+      {
+        "n": "Hellgruen auf Laubblatt sitzend",
+        "c": "Blattlaus"
+      },
+      {
+        "n": "Dunkles Braun im dichten Schilf",
+        "c": "Rohrdommel"
+      },
+      {
+        "n": "Imitiert Koerperbau eines Astes",
+        "c": "Stabschrecke"
+      },
+      {
+        "n": "Streifen brechen Koerperumriss auf",
+        "c": "Tiger"
+      },
+      {
+        "n": "Schwarze Spitze wie toter Ast",
+        "c": "Nachtschwalbe"
+      },
+      {
+        "n": "Mehrfarbig irisierend je nach Winkel",
+        "c": "Kolibri"
       }
     ]
   },
@@ -822,6 +1182,126 @@
       {
         "n": "Pandabär",
         "c": "Herbivor"
+      },
+      {
+        "n": "Gorilla (Westlicher Flachland)",
+        "c": "Herbivor / Frungivor"
+      },
+      {
+        "n": "Braunbär (Ursus arctos)",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Wolf (Canis lupus)",
+        "c": "Karnivor"
+      },
+      {
+        "n": "Gepard (Acinonyx jubatus)",
+        "c": "Karnivor"
+      },
+      {
+        "n": "Nilpferd (Hippopotamus amphibius)",
+        "c": "Herbivor (Gras)"
+      },
+      {
+        "n": "Giraffe (Giraffa camelopardalis)",
+        "c": "Herbivor (Blätter/Zweige)"
+      },
+      {
+        "n": "Koala (Phascolarctos cinereus)",
+        "c": "Herbivor (Eukalyptus)"
+      },
+      {
+        "n": "Riesenameisenbär (Myrmecophaga tridactyla)",
+        "c": "Insektivor (Ameisen/Termiten)"
+      },
+      {
+        "n": "Gürteltier (Dasypus novemcinctus)",
+        "c": "Omnivor / Insektivor"
+      },
+      {
+        "n": "Kolibri (Trochilidae, allgemein)",
+        "c": "Nektarivor"
+      },
+      {
+        "n": "Geier (Gyps fulvus)",
+        "c": "Aasfresser"
+      },
+      {
+        "n": "Flamingo (Phoenicopterus roseus)",
+        "c": "Filtrierer (Algen/Kleinkrebse)"
+      },
+      {
+        "n": "Mantarochen (Mobula birostris)",
+        "c": "Filtrierer (Plankton/Krill)"
+      },
+      {
+        "n": "Grauwal (Eschrichtius robustus)",
+        "c": "Benthos-Filtrierer (Sediment)"
+      },
+      {
+        "n": "Storch (Ciconia ciconia)",
+        "c": "Karnivor (Frösche/Mäuse/Fische)"
+      },
+      {
+        "n": "Seehund (Phoca vitulina)",
+        "c": "Karnivor (Fische/Tintenfische)"
+      },
+      {
+        "n": "Seeotter (Enhydra lutris)",
+        "c": "Karnivor (Meeresfrüchte/Seeigel)"
+      },
+      {
+        "n": "Pelikan (Pelecanus onocrotalus)",
+        "c": "Karnivor (Fische)"
+      },
+      {
+        "n": "Kabeljau (Gadus morhua)",
+        "c": "Karnivor (Fische/Krebse)"
+      },
+      {
+        "n": "Nilnilbarsch (Lates niloticus)",
+        "c": "Karnivor (Apex-Fisch)"
+      },
+      {
+        "n": "Tintenfisch (Loligo vulgaris)",
+        "c": "Karnivor (Fische/Krebse)"
+      },
+      {
+        "n": "Schnecke (Helix pomatia)",
+        "c": "Herbivor"
+      },
+      {
+        "n": "Koi (Cyprinus rubrofuscus domesticus)",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Elefant (Asiatisch)",
+        "c": "Herbivor (Rinde/Gras/Früchte)"
+      },
+      {
+        "n": "Jaguar (Panthera onca)",
+        "c": "Karnivor (Apex)"
+      },
+      {
+        "n": "Fischotter (Lutra lutra)",
+        "c": "Karnivor (Fische)"
+      },
+      {
+        "n": "Waschbär (Procyon lotor)",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Dachs (Meles meles)",
+        "c": "Omnivor"
+      },
+      {
+        "n": "Flughund (Pteropus vampyrus)",
+        "c": "Frungivor"
+      },
+      {
+        "n": "Nasenbär (Nasua nasua)",
+        "c": "Omnivor"
       }
     ]
   },
@@ -1027,6 +1507,126 @@
       {
         "n": "Erdmännchen",
         "c": "Drosseln (Warnrufe teilen)"
+      },
+      {
+        "n": "Clownfisch — Nesselzellen schaden nicht",
+        "c": "Anemone"
+      },
+      {
+        "n": "Putzerfisch entfernt Parasiten",
+        "c": "Grosser Korallenfisch"
+      },
+      {
+        "n": "Putzergarnele wartet auf Kundschaft",
+        "c": "Grober Fisch"
+      },
+      {
+        "n": "Rhizobium bindet Luftstickstoff",
+        "c": "Leguminosen (Bohnen)"
+      },
+      {
+        "n": "Mykorrhizapilze liefern Mineralien",
+        "c": "Waldbaumwurzeln"
+      },
+      {
+        "n": "Bienenpopulation bestueubt Bluetenpflanzen",
+        "c": "Bluetenpflanzen"
+      },
+      {
+        "n": "Rotkehlchen folgt wuehlenden Tieren",
+        "c": "Maulwurf/Eber"
+      },
+      {
+        "n": "Kormorane tauchen Fische in Netz",
+        "c": "Chinesische Fischer"
+      },
+      {
+        "n": "Oxpecker frisst Parasiten auf Fell",
+        "c": "Bueffel/Nashorn"
+      },
+      {
+        "n": "Honiganzeigervogelkunde Honigwabe",
+        "c": "Honigratte (Honigdachs)"
+      },
+      {
+        "n": "Tintenfisch schuetzt Borstenwurm",
+        "c": "Borstenwurm"
+      },
+      {
+        "n": "Algen produzieren Sauerstoff im Koerper",
+        "c": "Koralle (Zooxanthellae)"
+      },
+      {
+        "n": "Mitschmarotzer frisst Futterreste",
+        "c": "Krabben auf Seegurken"
+      },
+      {
+        "n": "Ameisen beschuetzen Blaettuese",
+        "c": "Blattlaeusefarmer Ameise"
+      },
+      {
+        "n": "Echsen waermen sich auf Nashornruecken",
+        "c": "Nashorn + Gecko"
+      },
+      {
+        "n": "Schmetterlingsraupe von Ameisen beschuetzt",
+        "c": "Ameise + Blaeuling Raupe"
+      },
+      {
+        "n": "Hechtarten und Stichlinge koexistieren",
+        "c": "Zooplankton-Teich"
+      },
+      {
+        "n": "Haarolmen leben in Kalkhoehlen mit Algen",
+        "c": "Algen in Hoehlenumgebung"
+      },
+      {
+        "n": "Gallwespen legen Eier in Eichengewebe",
+        "c": "Eiche (Gallaepfel)"
+      },
+      {
+        "n": "Ameisenbomber entfernt Ticks von Iguana",
+        "c": "Meeresiguana Galapagos"
+      },
+      {
+        "n": "Bartmeisen extrahieren Loesungen aus Schilfrohr",
+        "c": "Schilfrohreinsatz"
+      },
+      {
+        "n": "Groenlandwal mit Lappenwal Synchrontauchen",
+        "c": "Bowhead-Wal Tandem"
+      },
+      {
+        "n": "Nasenhoernchen warnt Tapir vor Gefahr",
+        "c": "Tapir + Nasenbaer"
+      },
+      {
+        "n": "Flunderparasit veraendert Krebsverhalten",
+        "c": "Sacculina Krabbe"
+      },
+      {
+        "n": "Symbiotischer Darmpilz hilft Termiten",
+        "c": "Termiten Trichonympha"
+      },
+      {
+        "n": "Weissbauchspecht hoehlt Nestbaum",
+        "c": "Folgehoehlenbruetern"
+      },
+      {
+        "n": "Stare fliegen gemeinsam mit Krähen",
+        "c": "Saatkrähen Mischschwarm"
+      },
+      {
+        "n": "Zitteraale orientieren sich am Magnetfeld",
+        "c": "Magnetobakteria"
+      },
+      {
+        "n": "Riesenschildkroetenruecken wird durch Voegel gereinigt",
+        "c": "Galápagos Finken"
+      },
+      {
+        "n": "Buckelwale und Delphine jagen gemeinsam",
+        "c": "Sardinenschwarm"
       }
     ]
   },
@@ -1232,6 +1832,126 @@
       {
         "n": "Bis 50 Meter, Flossen-Ruder-Technik",
         "c": "Meeresschildkröte"
+      },
+      {
+        "n": "Bis 2992 Meter — Säugetier-Weltrekord (Tiefsttaucher)",
+        "c": "Cuvier-Schnabelwal"
+      },
+      {
+        "n": "Bis 2250 Meter — Tintenfischjäger Tiefstsee",
+        "c": "Pottwal"
+      },
+      {
+        "n": "Bis 1735 Meter — Südpol-Robbe",
+        "c": "Südlicher See-Elefant"
+      },
+      {
+        "n": "Bis 1280 Meter — Meeresschildkröten-Rekord",
+        "c": "Lederschildkröte"
+      },
+      {
+        "n": "Bis 700 Meter — Arktis-Raubfischjäger",
+        "c": "Weddellrobbe"
+      },
+      {
+        "n": "Bis 655 Meter — tiefster tauchender Pinguin",
+        "c": "Gentoo-Pinguin"
+      },
+      {
+        "n": "Bis 565 Meter — Kaiserpinguin Antarktis",
+        "c": "Kaiserpinguin"
+      },
+      {
+        "n": "Bis 500 Meter — Hai-Tiefsttaucher",
+        "c": "Weißer Hai"
+      },
+      {
+        "n": "Bis 200 Meter — arktischer Stoßzahn-Wal",
+        "c": "Narwal"
+      },
+      {
+        "n": "Bis 150 Meter — Karibik-Riffhai",
+        "c": "Schwarzspitzenhai"
+      },
+      {
+        "n": "Bis 100 Meter — nordatlantischer Seevogel",
+        "c": "Papageientaucher"
+      },
+      {
+        "n": "Bis 90 Meter — Pazifik-Meeresotter",
+        "c": "Seeotter"
+      },
+      {
+        "n": "Bis 80 Meter — tropischer Riffhai",
+        "c": "Tigerhai"
+      },
+      {
+        "n": "Bis 60 Meter — Tiefseemuschel-Sammler Arktis",
+        "c": "Walross"
+      },
+      {
+        "n": "Bis 30 Meter — europäischer Küstenfischer",
+        "c": "Eisvogel (Alcedo atthis)"
+      },
+      {
+        "n": "Bis 25 Meter — Flussdelphin Amazonas",
+        "c": "Boto / Amazonas-Delphin"
+      },
+      {
+        "n": "Bis 20 Meter — australischer Aal-Fischter",
+        "c": "Schnabeltier"
+      },
+      {
+        "n": "Bis 15 Meter — tropischer Haifisch-Sprinter",
+        "c": "Mako-Hai"
+      },
+      {
+        "n": "Bis 10 Meter — Flachküsten-Fischjäger",
+        "c": "Kormoran"
+      },
+      {
+        "n": "Bis 5 Meter — Süßwasser-Nilpferd",
+        "c": "Nilpferd"
+      },
+      {
+        "n": "Bis 2 Meter — Bachfischer Mitteleuropa",
+        "c": "Wasseramsel (Cinclus cinclus)"
+      },
+      {
+        "n": "Bis 1200 Meter — Schwertwal-Tieftauchgang",
+        "c": "Orca / Schwertwal"
+      },
+      {
+        "n": "Bis 450 Meter — Blauwal-Fressgang",
+        "c": "Blauwal"
+      },
+      {
+        "n": "Bis 300 Meter — Großer Tümmler Tieftauchgang",
+        "c": "Großer Tümmler"
+      },
+      {
+        "n": "Bis 250 Meter — australischer Pinguin",
+        "c": "Magellan-Pinguin"
+      },
+      {
+        "n": "Bis 120 Meter — Mittelmeer-Robbe",
+        "c": "Mönchsrobbe"
+      },
+      {
+        "n": "Bis 50 Meter — Riffpinguin Galápagos",
+        "c": "Galápagos-Pinguin"
+      },
+      {
+        "n": "Bis 45 Meter — tropischer Barrakuda",
+        "c": "Großer Barrakuda"
+      },
+      {
+        "n": "Bis 35 Meter — Nordatlantik-Seelöwe Männchen",
+        "c": "Steller-Seelöwe"
+      },
+      {
+        "n": "Bis 25 Meter — pazifischer Walroß-Kurzgang",
+        "c": "Pazifisches Walross"
       }
     ]
   },
@@ -1437,6 +2157,126 @@
       {
         "n": "Aussehen und Geruch einer Blüte zur Täuschung",
         "c": "Gottesanbeterin"
+      },
+      {
+        "n": "Imitiert Aussehen der Koenigsnatter",
+        "c": "Scharlachnatter (harmlos)"
+      },
+      {
+        "n": "Imitiert Monarchfalter Orange-schwarz",
+        "c": "Vizekönig Schmetterling"
+      },
+      {
+        "n": "Kopiert Stinktier Farbmuster schwarz-weiss",
+        "c": "Skunk Imitator (Mustelid)"
+      },
+      {
+        "n": "Ahmt Rueckenmusterung der Kreuzotter nach",
+        "c": "Ringelnatter Variante"
+      },
+      {
+        "n": "Sieht aus wie Biene hat aber keinen Stachel",
+        "c": "Schwebfliege (Syrphidae)"
+      },
+      {
+        "n": "Imitiert Zitteraalmuster gelb-schwarz",
+        "c": "Kuhkopfschmetterling"
+      },
+      {
+        "n": "Taeuschend echte Laubblatt-Aussehen",
+        "c": "Indisches Wandelndes Blatt"
+      },
+      {
+        "n": "Leuchtendes Blau mit dunklem Bauchband",
+        "c": "Giftpfeilfrosch Azureus"
+      },
+      {
+        "n": "Reiher-Federn Haltung um Fische anzulocken",
+        "c": "Schwarzer Heron"
+      },
+      {
+        "n": "Imitiert Feuerameise Geruch und Haltung",
+        "c": "Spinne Myrmarachne"
+      },
+      {
+        "n": "Imitiert Kontraktionsbewegung der Kobra",
+        "c": "Drohgebärde Halsband-Schuppenlurch"
+      },
+      {
+        "n": "Vorgeblich tote Schlange rollt sich auf",
+        "c": "Ringelnatter Thanatosis"
+      },
+      {
+        "n": "Aufgeblaesener Koerper als Drohung",
+        "c": "Kugelfisch"
+      },
+      {
+        "n": "Bauchzeichnung wie Hummelbeinchen",
+        "c": "Widderchen Schmetterling"
+      },
+      {
+        "n": "Froescheaehnliche Muster bei Lurchen",
+        "c": "Grashuepfer Tarnung"
+      },
+      {
+        "n": "Schuppentextur wie Baumrinde",
+        "c": "Graue Prachtkaefer Larve"
+      },
+      {
+        "n": "Tintenfisch zeigt Beutelstreifen als Signal",
+        "c": "Mimischer Krake"
+      },
+      {
+        "n": "Tarnhoehe Vogelimitierung im Gefieder",
+        "c": "Waldschnepfe"
+      },
+      {
+        "n": "Simuliert groessere Augen am Fischfleck",
+        "c": "Augenvierfleck Schmetterling"
+      },
+      {
+        "n": "Grosse Augen Flügelmuster jagen Feinde ab",
+        "c": "Uhu-Augenschmetterling"
+      },
+      {
+        "n": "Totenstellreflex auf Ruecken liegend",
+        "c": "Virginia Opossum"
+      },
+      {
+        "n": "Tintenfisch aehnelt einem Plattfisch",
+        "c": "Mimischer Oktopus"
+      },
+      {
+        "n": "Imitiert Kolibri in Flugbewegung",
+        "c": "Kolibri-Schwaermer"
+      },
+      {
+        "n": "Kopiert Farbmuster der Giftschildkroete",
+        "c": "Ungiftige Eidechsenart"
+      },
+      {
+        "n": "Aufgestellte Schuppenfransen imitieren Knochen",
+        "c": "Fransenkopf Seegras-Tier"
+      },
+      {
+        "n": "Blinken wie Gluehwuermchen anderer Art",
+        "c": "Photuris Femina Gluehwurm"
+      },
+      {
+        "n": "Zitiert Schreie von Raubvoegeln",
+        "c": "Lyravogel"
+      },
+      {
+        "n": "Leib-Winkel wie angriffsbereit sitzend",
+        "c": "Mauereidechse Drohgebärde"
+      },
+      {
+        "n": "Tentakel bewegen sich wie Haifischflosse",
+        "c": "Mimikoktopus"
+      },
+      {
+        "n": "Kopiert Farbmuster des Leuchtkaefer",
+        "c": "Ungiftige Coleoptera"
       }
     ]
   },
@@ -1722,6 +2562,46 @@
       {
         "n": "Plankton-Larve wird Seepocke",
         "c": "Seepocke (Barnacle)"
+      },
+      {
+        "n": "Puppe im Kokon aus Seide (wirtschaftlich genutzt)",
+        "c": "Seidenspinner (Bombyx mori)"
+      },
+      {
+        "n": "Imago entsteht nach Puppenruhe in Blütenform",
+        "c": "Orchideenmantis"
+      },
+      {
+        "n": "Freischwimmende Miracidium-Larve → Schnecke → Cercariae",
+        "c": "Leberegel (Fasciola)"
+      },
+      {
+        "n": "Bipinnaria-Larve → Seestern über Metamorphose",
+        "c": "Gemeiner Seestern"
+      },
+      {
+        "n": "Nauplius → Cypris-Larve → festsitzende Seepocke",
+        "c": "Seepocke (Balanus)"
+      },
+      {
+        "n": "Trochophora → Veliger → Erwachsene Muschel",
+        "c": "Auster (Ostrea edulis)"
+      },
+      {
+        "n": "Ammocoete-Larve lebt 7 Jahre im Sediment",
+        "c": "Bachneunauge (Lampetra)"
+      },
+      {
+        "n": "Leptocephala-Larve im Atlantik → Glasaal → Flussaal",
+        "c": "Europäischer Aal"
+      },
+      {
+        "n": "Wiggler-Larve im Wasser → Puppe → blutsaugend",
+        "c": "Stechmücke (Aedes)"
+      },
+      {
+        "n": "Raupe frisst Nesseln → Tagfalter (bunt, Mitteleuropa)",
+        "c": "Kleiner Fuchs (Aglais urticae)"
       }
     ]
   },
@@ -1927,6 +2807,126 @@
       {
         "n": "Blau leuchtendes Adergeflecht unter Haut",
         "c": "Hawaiianische Bobtail-Tintenfisch"
+      },
+      {
+        "n": "Gruen leuchtendes Sekret auf Ruecken",
+        "c": "Leuchtkaefer Lampyris"
+      },
+      {
+        "n": "Blaues Leuchten durch Luciferin",
+        "c": "Dinoflagellaten"
+      },
+      {
+        "n": "Rotes Blinken als Warnmechanismus",
+        "c": "Feuerfliegchen Genus Photinus"
+      },
+      {
+        "n": "Tiefseefisch lockt Beute durch Lichtangel",
+        "c": "Tiefseeangelerfisch"
+      },
+      {
+        "n": "Bioluminiszenz im Darm von Tintenfisch",
+        "c": "Hawaiianischer Bobtail-Squid"
+      },
+      {
+        "n": "Glimmende Pilze an Holz in Nacht",
+        "c": "Myzel Leuchtpilz Panellus"
+      },
+      {
+        "n": "Seestern fluoresziert unter UV",
+        "c": "Brittle Star"
+      },
+      {
+        "n": "Kristallqualle unter UV blau",
+        "c": "Aequorea victoria"
+      },
+      {
+        "n": "Leuchtendes Meeresleuchten im Wellenbrecher",
+        "c": "Noctiluca scintillans"
+      },
+      {
+        "n": "Tiefseegarnele sprueht Leuchtmaterial",
+        "c": "Sergestidae Garnele"
+      },
+      {
+        "n": "Langgestreckte Leuchtorgane am Bauch",
+        "c": "Laternenfisch"
+      },
+      {
+        "n": "Gelbes Leuchten in Huegelbau",
+        "c": "Termiten Luziferin"
+      },
+      {
+        "n": "Roehrenfoermige Photophore-Reihe",
+        "c": "Tintenfisch Abralia"
+      },
+      {
+        "n": "Gruenliches Glimmen aus dem Maul",
+        "c": "Drachenartige Tiefseeaal"
+      },
+      {
+        "n": "Leuchtendes Farbband an Tentakeln",
+        "c": "Kammqualle Ctenophore"
+      },
+      {
+        "n": "Bioluminiszenz zur Kommunikation",
+        "c": "Tiefsee-Anglerfische (Weibchen)"
+      },
+      {
+        "n": "Flackern im Rhythmus der Kolonie",
+        "c": "Synchronglimmen Photinus carolinus"
+      },
+      {
+        "n": "Violett leuchtende Roehren am Koerper",
+        "c": "Siphonophore Praya dubia"
+      },
+      {
+        "n": "Weissliches Leuchten in der Bauchflosse",
+        "c": "Zwerglichtfisch Cyclothone"
+      },
+      {
+        "n": "Koerper leuchtet nach Beruehrung",
+        "c": "Leuchtseeigel Diadema"
+      },
+      {
+        "n": "Schleimstrang leuchtend unter Wasser",
+        "c": "Lucinacea Muschel"
+      },
+      {
+        "n": "Fotophore auch nach Tod leuchtend",
+        "c": "Chiroteuthis Tintenfisch"
+      },
+      {
+        "n": "Blau-weiss leuchtender Bereich an Maul",
+        "c": "Stomiidae Viperfisch"
+      },
+      {
+        "n": "Leuchtstreifen entlang Finnen",
+        "c": "Ruderfisch Regalecus"
+      },
+      {
+        "n": "Violett-blau leuchtend bei Stresssignalen",
+        "c": "Feuerwurm Hermodice"
+      },
+      {
+        "n": "Bioluminiszenz als Tarnwirkung im Tiefwasser",
+        "c": "Gegenbeleuchtung Euphausiiden"
+      },
+      {
+        "n": "Leuchtende Schleimspuren am Boden",
+        "c": "Meeresschnecke Hinea brasiliana"
+      },
+      {
+        "n": "Bioluminiszenz der Roten Meeresqualle",
+        "c": "Atolla wyvillei Qualle"
+      },
+      {
+        "n": "Leuchtendes Magma-Simulationsmuster",
+        "c": "Comb Jelly Mertensia"
+      },
+      {
+        "n": "Fluoreszierende Korallenriff Algen",
+        "c": "Zooxanthellae in Koralle"
       }
     ]
   },
@@ -2132,6 +3132,126 @@
       {
         "n": "Zunge ist länger als Körper",
         "c": "Chamäleon"
+      },
+      {
+        "n": "Statolith zur Gleichgewichtswahrnehmung",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Dreigeteilte Klaue an jeder Zehe",
+        "c": "Riesenfaultier"
+      },
+      {
+        "n": "Kiefer oeffnet seitwaerts statt vertikal",
+        "c": "Schlange"
+      },
+      {
+        "n": "Doppelte Lunge hat Luftsack-System",
+        "c": "Vogel"
+      },
+      {
+        "n": "Pansenmagen mit vier Kammern",
+        "c": "Kuh"
+      },
+      {
+        "n": "Haare an Fuessen zum Klettern",
+        "c": "Geckofuss"
+      },
+      {
+        "n": "Saugnapf am Mund statt Kiefer",
+        "c": "Lamprey"
+      },
+      {
+        "n": "Kiemen auf der Aussenseite sichtbar",
+        "c": "Axolotl"
+      },
+      {
+        "n": "Schwimmblase als Auftriebsorgan",
+        "c": "Knochenfisch"
+      },
+      {
+        "n": "Auge auf beiden Seiten des Kopfes",
+        "c": "Plattfisch"
+      },
+      {
+        "n": "Kein Zwerchfell beim Atmen",
+        "c": "Reptilien"
+      },
+      {
+        "n": "Magenlose Verdauung im Darm",
+        "c": "Lampenfisch"
+      },
+      {
+        "n": "Acht Arme mit Saugnapfen",
+        "c": "Krake"
+      },
+      {
+        "n": "Schallknochen im Unterkiefer",
+        "c": "Wale (Unterkiefer)"
+      },
+      {
+        "n": "Magnetitkristalle in der Schnauzenhaut",
+        "c": "Haifisch"
+      },
+      {
+        "n": "Infrarotrezeptoren zwischen Augen",
+        "c": "Grubenotter"
+      },
+      {
+        "n": "Huftloses Skelett",
+        "c": "Schlange"
+      },
+      {
+        "n": "Freie Finger und Zehen wie Pflanzen",
+        "c": "Baumbewohner Faultier"
+      },
+      {
+        "n": "Elektrorezeptoren im Schnabel",
+        "c": "Schnabeltier"
+      },
+      {
+        "n": "Zunge zwei- oder dreiteilig gabelfoermig",
+        "c": "Eidechsen"
+      },
+      {
+        "n": "Doppelter Magen mit Gizzard",
+        "c": "Vögel (Magenmuskel)"
+      },
+      {
+        "n": "Haende zum Bimanualgriff",
+        "c": "Affe Primat"
+      },
+      {
+        "n": "Laterale Linie als Drucksensor",
+        "c": "Fisch"
+      },
+      {
+        "n": "Rueckenknochen fusioniert zum Schild",
+        "c": "Schildkroete"
+      },
+      {
+        "n": "Langes Einhorn aus Zahnmaterial",
+        "c": "Narwal"
+      },
+      {
+        "n": "Tentakel mit Nesselzellen an Spitze",
+        "c": "Qualle"
+      },
+      {
+        "n": "Selbstschneidende Zaehne ohne Zahnschmelz",
+        "c": "Nagetier"
+      },
+      {
+        "n": "Koerper ohne Knochen aber mit Exoskelett",
+        "c": "Krabben"
+      },
+      {
+        "n": "Stimmorgan Syrinx statt Kehlkopf",
+        "c": "Vögel"
+      },
+      {
+        "n": "Dreikammriges Herz",
+        "c": "Reptilien"
       }
     ]
   },
@@ -2337,6 +3457,126 @@
       {
         "n": "Kehren mit 187 dB lautestes Lebewesen",
         "c": "Blauwal"
+      },
+      {
+        "n": "Infrasound unter 20 Hz",
+        "c": "Elefant"
+      },
+      {
+        "n": "Ultraschall bis 100 kHz",
+        "c": "Fledermaus"
+      },
+      {
+        "n": "Klicklaute zur Echoortung",
+        "c": "Delfin"
+      },
+      {
+        "n": "Rollender Brummton",
+        "c": "Krokodil"
+      },
+      {
+        "n": "Saegefoermiges Zirpen durch Fluegel",
+        "c": "Grashüpfer"
+      },
+      {
+        "n": "Hoher Pfeifton aus Nase",
+        "c": "Murmeltier"
+      },
+      {
+        "n": "Tiefer Trampelton als Reviermarkierung",
+        "c": "Gorilla (Brusttrommeln)"
+      },
+      {
+        "n": "Rasseln mit Klapperschlange",
+        "c": "Klapperschlange"
+      },
+      {
+        "n": "Kurze Rufe Dauer 100ms bis 2s",
+        "c": "Schimpanse"
+      },
+      {
+        "n": "Vielstimmiger Chor bei Dammerung",
+        "c": "Frosch"
+      },
+      {
+        "n": "Langes Heulen zur Kommunikation",
+        "c": "Wolf"
+      },
+      {
+        "n": "Pfeifender Ruf in Hoehle",
+        "c": "Oilbird Guacharo"
+      },
+      {
+        "n": "Kreischen als Territorialzeichen",
+        "c": "Gibbon"
+      },
+      {
+        "n": "Explosiver Trompetenton",
+        "c": "Elefant"
+      },
+      {
+        "n": "Leiser Schnurrton im Schlaf",
+        "c": "Katze"
+      },
+      {
+        "n": "Metallisch klingendes Quaken",
+        "c": "Garrulus Eichelhaeher"
+      },
+      {
+        "n": "Hammerschlag auf Holz",
+        "c": "Specht"
+      },
+      {
+        "n": "Hohler Trommellaut auf Brust",
+        "c": "Gorilla"
+      },
+      {
+        "n": "Summender Ton durch Flugelschlag",
+        "c": "Kolibri"
+      },
+      {
+        "n": "Stimme imitiert Motoren Saegen",
+        "c": "Lyravogel"
+      },
+      {
+        "n": "Tiefes Brummen als Balzruf",
+        "c": "Birkhuhn"
+      },
+      {
+        "n": "Rhythmisches Zirpen mit Bein an Fluegel",
+        "c": "Grille"
+      },
+      {
+        "n": "Schrillendes Gekreisch bei Alarm",
+        "c": "Eichhörnchen"
+      },
+      {
+        "n": "Langgedehntes Heulen im Rudel",
+        "c": "Kojote"
+      },
+      {
+        "n": "Hoher Schrei wie Kind",
+        "c": "Fuchs (bruenstig)"
+      },
+      {
+        "n": "Donnergleicher Gesang unter Wasser",
+        "c": "Buckelwal"
+      },
+      {
+        "n": "Explosivschall aus der Krebsschere",
+        "c": "Knallkrebs"
+      },
+      {
+        "n": "Bassgeraeusch unter 50 Hz",
+        "c": "Nilpferd"
+      },
+      {
+        "n": "Tonloser Laut hoher Intensitaet",
+        "c": "Nashornvogel Kasuar"
+      },
+      {
+        "n": "Summend-pfeifendes Geraeusch Bienenstock",
+        "c": "Hummel"
       }
     ]
   },
@@ -2542,6 +3782,126 @@
       {
         "n": "Sieht 4 Farbkanäle (UV inkl.)",
         "c": "Mantiskrebs"
+      },
+      {
+        "n": "Sonar mit 200 kHz Rueckkopplung",
+        "c": "Delfin"
+      },
+      {
+        "n": "Thermorezeptoren in Grubenorganen",
+        "c": "Klapperschlange"
+      },
+      {
+        "n": "Olfaktorisches System 400x besser als Mensch",
+        "c": "Hund"
+      },
+      {
+        "n": "Seitenlinienorgan nimmt Druckwellen wahr",
+        "c": "Fisch"
+      },
+      {
+        "n": "Entdeckt CO2 aus 40m Entfernung",
+        "c": "Mücke"
+      },
+      {
+        "n": "UV-Vision sieht Blütenmarkierungen",
+        "c": "Biene"
+      },
+      {
+        "n": "Polarisierteres Licht sehen",
+        "c": "Mantiskrebs"
+      },
+      {
+        "n": "Magnetfeld-Navigation durch Kristalle",
+        "c": "Zugvogel"
+      },
+      {
+        "n": "Haarballen und Barthaare Vibrationssensor",
+        "c": "Katze (Vibrissen)"
+      },
+      {
+        "n": "Elektrosinn spuert Muskelbewegungen",
+        "c": "Haifisch"
+      },
+      {
+        "n": "Einzelauge kann roten Kanal nicht sehen",
+        "c": "Hund (Dichromaisie)"
+      },
+      {
+        "n": "360 Grad Rundumsicht ohne Bewegen",
+        "c": "Chamäleon"
+      },
+      {
+        "n": "Erkennt Infrarot bis -20 Grad",
+        "c": "Python"
+      },
+      {
+        "n": "Erkennt Magnetfeld der Erde direkt",
+        "c": "Brieftaube"
+      },
+      {
+        "n": "Riechen mit gespaltener Zunge",
+        "c": "Eidechse"
+      },
+      {
+        "n": "Echoortung auch unter Wasser",
+        "c": "Fledermaus"
+      },
+      {
+        "n": "Compound-Auge sieht in 300 Grad Blickfeld",
+        "c": "Libelle"
+      },
+      {
+        "n": "Hautrezeptoren fuer Erderschuetterungen",
+        "c": "Elefant"
+      },
+      {
+        "n": "Taststellen an Schnabel",
+        "c": "Ente"
+      },
+      {
+        "n": "Nase als Chemorezeptor",
+        "c": "Nachtmotte Antenne"
+      },
+      {
+        "n": "Lichtempfindlich in Haut ohne Augen",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Taste an Tentakeln fuer Chemikalien",
+        "c": "Tintenfisch"
+      },
+      {
+        "n": "Sonar bei 200 kHz und hoch",
+        "c": "Fledermaus (Chiroptera)"
+      },
+      {
+        "n": "Spinnenseide als Vibrationsmelder",
+        "c": "Spinne"
+      },
+      {
+        "n": "Empfangsorgane fuer Magnetfeld am Schnabel",
+        "c": "Zugvogel Storch"
+      },
+      {
+        "n": "Spezielle Ohren fuer Tieffrequenz",
+        "c": "Elefant (tiefes Hoeren)"
+      },
+      {
+        "n": "Hoeheres Gehoer als Menschen 100 kHz",
+        "c": "Katze"
+      },
+      {
+        "n": "Sieht auch Infrarotlicht",
+        "c": "Buschotter"
+      },
+      {
+        "n": "Zahlensinn bis 4 Muster",
+        "c": "Kraehe"
+      },
+      {
+        "n": "Schwerkraftsensor im Innenohr",
+        "c": "Schnecke (Gleichgewicht)"
       }
     ]
   },
@@ -2750,6 +4110,126 @@
       },
       {
         "n": "Rentier (Karibu)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Beluga-Wal",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Robbe (Sattelrobbe)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Vielfraß (Wolverine)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Blauzungeneidechse",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Weddellrobbe",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Seeleopard",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Suedlicher Seeelefant",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Suedpolar-Skua",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Suedatlantik-Sturmvogel",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Antarktisches Krill",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Polardorsch",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Ringsturmvogel",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Arktische Seeschwalbe (Zugrekord)",
+        "c": "Arktis & Antarktis (beides)"
+      },
+      {
+        "n": "Schneepetrell weissestes Vogel",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Nandu (nicht Arktis)",
+        "c": "Suedamerika"
+      },
+      {
+        "n": "Blaeu-Kolkrabe",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Polarbaer (jaegt Robben)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Blauzungenechse Tasmania",
+        "c": "Ozeanien"
+      },
+      {
+        "n": "Rothalsige Wollmaus",
+        "c": "Arktis Tundra"
+      },
+      {
+        "n": "Subarktischer Blauwal",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Kaiserping",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Makkaroni-Pinguin",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Kleiner Pinguin Little Blue",
+        "c": "Suedaustralien/NZ"
+      },
+      {
+        "n": "Zügelpinguin Antarktis",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Eselspinguin Gentoo",
+        "c": "Antarktis (Suedpol)"
+      },
+      {
+        "n": "Arktisches Nanuq (Inuit-Name Eisbär)",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Arktischer Polarfuchs Alopex",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Ringelrobbe Pusa hispida",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Bartrobbe Erignathus barbatus",
+        "c": "Arktis (Nordpol)"
+      },
+      {
+        "n": "Groenlandwal Balaena mysticetus",
         "c": "Arktis (Nordpol)"
       }
     ]
@@ -3036,6 +4516,46 @@
       {
         "n": "Leakey-Funde Olduvai-Schlucht",
         "c": "Mary Leakey"
+      },
+      {
+        "n": "Zählung von Zugvögeln mittels Lichtfallen (Radarbeo.)",
+        "c": "Peter Berthold"
+      },
+      {
+        "n": "Taktile Kommunikation bei Honigbienen (Tanzsprache)",
+        "c": "Karl von Frisch"
+      },
+      {
+        "n": "Prägungsexperiment Graugänse — Nachfolgebewegung",
+        "c": "Konrad Lorenz"
+      },
+      {
+        "n": "Aggressive Territorien Rotkehlchen (Englands Gartenvogel)",
+        "c": "David Lack"
+      },
+      {
+        "n": "Agonistisches Verhalten Kampffisch Betta splendens",
+        "c": "Niko Tinbergen"
+      },
+      {
+        "n": "Kommunikation Schimpansen mit Zeichensprache",
+        "c": "Beatrix Gardner"
+      },
+      {
+        "n": "Hirnstimualtionsexperiment mit Elektroden Ratten",
+        "c": "James Olds / Peter Milner"
+      },
+      {
+        "n": "Bienen-Elektrorezeption im Bienenstock",
+        "c": "Randolf Menzel"
+      },
+      {
+        "n": "Habituation-Lernen Seehasen (Aplysia californica)",
+        "c": "Eric Kandel"
+      },
+      {
+        "n": "Imprinting auf Enten-Küken (Nachfolge-Lernen)",
+        "c": "Eckhard Hess"
       }
     ]
   },
@@ -3247,6 +4767,126 @@
       {
         "n": "Tiefsee-Tintenfisch (Architeuthis)",
         "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Blaues Pfeilschwanzkrebs",
+        "c": "Epipelagial (0-200m)"
+      },
+      {
+        "n": "Sardine Sardina pilchardus",
+        "c": "Epipelagial"
+      },
+      {
+        "n": "Tunfisch Thunnus",
+        "c": "Epipelagial"
+      },
+      {
+        "n": "Weissauge Scopelarchus",
+        "c": "Mesopelagial (200-1000m)"
+      },
+      {
+        "n": "Laternenfisch Myctophum",
+        "c": "Mesopelagial"
+      },
+      {
+        "n": "Hatchetfish Argyropelecus",
+        "c": "Mesopelagial"
+      },
+      {
+        "n": "Viperfisch Chauliodus",
+        "c": "Bathypelagial (1000-4000m)"
+      },
+      {
+        "n": "Drachenfisch Idiacanthus",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Fangtooth Anoplogaster",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Anglerfisch (Tiefe Kreaturen)",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Tiefsee-Garnele Alvinocarididae",
+        "c": "Hadal"
+      },
+      {
+        "n": "Seegurke Holothuria tiefe",
+        "c": "Hadal"
+      },
+      {
+        "n": "Amphipod Krebse in Mariana Trench",
+        "c": "Hadal (10000m+)"
+      },
+      {
+        "n": "Biolumineszierende Dinoflagellaten",
+        "c": "Epipelagial"
+      },
+      {
+        "n": "Blauhai Prionace glauca",
+        "c": "Epipelagial"
+      },
+      {
+        "n": "Wal-Hai Rhincodon typus",
+        "c": "Epipelagial"
+      },
+      {
+        "n": "Schwertfisch Xiphias",
+        "c": "Mesopelagial"
+      },
+      {
+        "n": "Schlangenmakral Gempylidae",
+        "c": "Mesopelagial"
+      },
+      {
+        "n": "Qualle Atolla wyvillei Tiefe",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Seespinne Colossendeis",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Tiefseeskorpion Benthoscolex",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Tiefsee-Seelilie",
+        "c": "Hadal"
+      },
+      {
+        "n": "Zooplankton Calanus copepoden",
+        "c": "Epipelagial"
+      },
+      {
+        "n": "Krill Euphausia superba",
+        "c": "Epipelagial/Mesopelagial"
+      },
+      {
+        "n": "Riesenkalmar Architeuthis",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Spinnenkrabbe Macrocheira",
+        "c": "Subtidal (flach)"
+      },
+      {
+        "n": "Roter Rifffisch Periclimenes",
+        "c": "Epipelagial (Rifffazies)"
+      },
+      {
+        "n": "Tiefseehai Centroscymnus",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Tiefseewurm Nereis virens tief",
+        "c": "Bathypelagial"
+      },
+      {
+        "n": "Tiefseebarsche Bassozetus",
+        "c": "Hadal"
       }
     ]
   },
@@ -3528,6 +5168,50 @@
       {
         "n": "Saiga-Antilope",
         "c": "Zentralasien/Steppe"
+      },
+      {
+        "n": "Kangaroo Rat — kein Trinkwasser nötig (Nordamerika)",
+        "c": "Sonora-Wüste"
+      },
+      {
+        "n": "Wüstenigel — schläft tagsüber, aktiv nachts",
+        "c": "Sahara/Arabische Wüste"
+      },
+      {
+        "n": "Namib-Wüstenkäfer — Nebeltrinker (Stipitocapnia)",
+        "c": "Namib"
+      },
+      {
+        "n": "Arabischer Wolf — minimalster Wasserhaushalt",
+        "c": "Arabische Wüste"
+      },
+      {
+        "n": "Sandgecko (Stenodactylus) — temperaturregulierende Laufweise",
+        "c": "Sahara"
+      },
+      {
+        "n": "Wüstenfuchs Fennec — Riesige Ohren zur Kühlung",
+        "c": "Sahara"
+      },
+      {
+        "n": "Wüstenrennmaus Psammomys — salzige Halophyten",
+        "c": "Sahara/Naher Osten"
+      },
+      {
+        "n": "Dornenteufel (Thorny Devil) — Wassertransport über Haut",
+        "c": "Australische Wüste"
+      },
+      {
+        "n": "Rüsselratte (Macroscelides) — hitzeresistent",
+        "c": "Namib"
+      },
+      {
+        "n": "Jerboa (Springmaus) — lange Hinterbeine für Hitze-Sprint",
+        "c": "Gobi/Sahara"
+      },
+      {
+        "n": "Wüstenrennmaus (Meriones unguiculatus) — minimaler Harnstoff",
+        "c": "Gobi-Wüste"
       }
     ]
   },
@@ -3733,6 +5417,126 @@
       {
         "n": "Boomslang (Dispholidus typus)",
         "c": "Südafrika"
+      },
+      {
+        "n": "Blauring-Krake Hapalochlaena",
+        "c": "Australien"
+      },
+      {
+        "n": "Kastanien-Steinfisch Synanceia",
+        "c": "Australien/Indopazifik"
+      },
+      {
+        "n": "Marmorierter Kegelschnecke",
+        "c": "Indopazifik"
+      },
+      {
+        "n": "Schachbrettqualle Chironex",
+        "c": "Australien"
+      },
+      {
+        "n": "Tropische Klapperschlange",
+        "c": "Suedamerika"
+      },
+      {
+        "n": "Inland Taipan giftigste Schlange",
+        "c": "Australien"
+      },
+      {
+        "n": "Eastern Brown Snake",
+        "c": "Australien"
+      },
+      {
+        "n": "Tiger Snake Notechis",
+        "c": "Australien"
+      },
+      {
+        "n": "Komododrache Bakterien Speichel",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Portugiesische Galeere Physalia",
+        "c": "Atlantik/Pazifik"
+      },
+      {
+        "n": "Feuerqualle Chrysaora hysoscella",
+        "c": "Europa Nordsee"
+      },
+      {
+        "n": "Riesendornteufel Diodon",
+        "c": "Tropische Meere"
+      },
+      {
+        "n": "Gelbe Bauchschnecke Turris babylonia",
+        "c": "Indopazifik"
+      },
+      {
+        "n": "Schwarze Witwe Latrodectus",
+        "c": "USA"
+      },
+      {
+        "n": "Braune Einsiedler Loxosceles",
+        "c": "USA"
+      },
+      {
+        "n": "Funnel-Web Spider Atrax",
+        "c": "Australien"
+      },
+      {
+        "n": "Rotkreuzspinne Latrodectus hasselti",
+        "c": "Australien"
+      },
+      {
+        "n": "Killerbiene Apis mellifera scutellata",
+        "c": "Suedamerika/Afrika"
+      },
+      {
+        "n": "Bulldog-Ameise Myrmecia",
+        "c": "Australien"
+      },
+      {
+        "n": "Scolopendra Riesenscolopender",
+        "c": "Weltweit Tropen"
+      },
+      {
+        "n": "Skorpion Androctonus australis",
+        "c": "Nordafrika"
+      },
+      {
+        "n": "Deathstalker Leiurus quinquestriatus",
+        "c": "Nahost"
+      },
+      {
+        "n": "Arizona-Rindenskorpion Centruroides",
+        "c": "USA"
+      },
+      {
+        "n": "Riesenkrabbenspinne",
+        "c": "Tropische Regionen"
+      },
+      {
+        "n": "Komodowaran Biss",
+        "c": "Indonesien"
+      },
+      {
+        "n": "Giftige Eidechse Heloderma Gila Monster",
+        "c": "USA"
+      },
+      {
+        "n": "Schwarzmamba Dendroaspis",
+        "c": "Suedafrika"
+      },
+      {
+        "n": "Kobra Naja kaouthia",
+        "c": "Asien"
+      },
+      {
+        "n": "Pit Viper Calloselasma rhodostoma",
+        "c": "Suedostasien"
+      },
+      {
+        "n": "Fer-de-lance Bothrops atrox",
+        "c": "Suedamerika"
       }
     ]
   },
@@ -3946,6 +5750,118 @@
       {
         "n": "Nördlicher Gannet",
         "c": "Nordsee (Sommer)"
+      },
+      {
+        "n": "Zugstrecke Arktis ↔ Antarktis (längste Migration aller Tiere)",
+        "c": "Küstenseeschwalbe"
+      },
+      {
+        "n": "Zugstrecke Sibirien → Westafrika (Steppe-Wiesenvogel)",
+        "c": "Rotkehlpfeifer"
+      },
+      {
+        "n": "Zugstrecke Alaska → Neuseeland (Küstenstrandläufer)",
+        "c": "Pfuhlschnepfe (Limosa lapponica)"
+      },
+      {
+        "n": "Zugstrecke Alaska → Nordostbrasilien (Watvogel)",
+        "c": "Golregenpfeifer (Pluvialis dominica)"
+      },
+      {
+        "n": "Zugstrecke Grönland → Westafrika (Schneeammer)",
+        "c": "Schneeammer (Plectrophenax nivalis)"
+      },
+      {
+        "n": "Laichzug von Atlantik → Sargassosee (Aal)",
+        "c": "Europäischer Aal"
+      },
+      {
+        "n": "Laichzug Pazifik → Flüsse Nordamerika",
+        "c": "Pazifischer Lachs (Chinook)"
+      },
+      {
+        "n": "Wanderung Sahara → Sahel → Zentralafrika (Nachtvogel)",
+        "c": "Gartenrotschwanz (Phoenicurus)"
+      },
+      {
+        "n": "Wanderung Skandinavien → Westafrika (Kleinsänger)",
+        "c": "Dorngrasmücke (Sylvia communis)"
+      },
+      {
+        "n": "Tiefseemigration tägl. 500m auf/ab (Kleinkrebs)",
+        "c": "Arktischer Krill"
+      },
+      {
+        "n": "Jahresmigration von Serengeti → Masai Mara (Pflanzenfresser)",
+        "c": "Weißbartgnu"
+      },
+      {
+        "n": "Wanderung Kalahari → Okavango (Savannentier)",
+        "c": "Afrikanischer Elefant"
+      },
+      {
+        "n": "Zugstrecke Russland → Indien (Großer Weißkopfkranich)",
+        "c": "Sibirischer Kranich"
+      },
+      {
+        "n": "Wanderung Grönland → Azoren (Bartwal)",
+        "c": "Buckelwal"
+      },
+      {
+        "n": "Migration Arktis → Karibik (jahreszeitl. Seevogel)",
+        "c": "Tordalk (Alca torda)"
+      },
+      {
+        "n": "Jährliche Nahrungsmigration Mongolei → Indien",
+        "c": "Silbermöwe (überwinternde Population)"
+      },
+      {
+        "n": "Wanderung Zentralasien ↔ Indischer Subkontinent (Großtrappe)",
+        "c": "Macqueen-Trappe"
+      },
+      {
+        "n": "Zugstrecke Sibirien → SE-Asien (Kleinstorchart)",
+        "c": "Orientalischer Storch"
+      },
+      {
+        "n": "Crabmigration Christmas Island (Australien) — jährl.",
+        "c": "Rote Krabbe (Gecarcoidea natalis)"
+      },
+      {
+        "n": "Wanderung Serengeti-Ökosystem — Zebra + Gnus zusammen",
+        "c": "Steppenzebra"
+      },
+      {
+        "n": "Zugstrecke Mongolei → Bangladesch (Wasservogel)",
+        "c": "Weißäugige Tauchente"
+      },
+      {
+        "n": "Atlantische Überquerung im Herbst (Zugvogel)",
+        "c": "Amerikanisches Rotkehlchen"
+      },
+      {
+        "n": "Migration NW-Australien → Papua-Neuguinea (Riff-Schildkröte)",
+        "c": "Suppenschildkröte"
+      },
+      {
+        "n": "Wanderung Tundra → Steppen (Steppenwanderer Mammalier)",
+        "c": "Saiga-Antilope"
+      },
+      {
+        "n": "Migrations-Rekord Eissturmvogel Nordpazifik ↔ Antarktis",
+        "c": "Wanderalbatros"
+      },
+      {
+        "n": "Migration Mexiko ↔ Kanada (Schmetterling)",
+        "c": "Monarchfalter"
+      },
+      {
+        "n": "Migration Nordsee ↔ Karibik (Meeresschildkröte)",
+        "c": "Unechte Karettschildkröte"
+      },
+      {
+        "n": "Zugstrecke Baikalsee → Indischer Ozean (Wasservogel)",
+        "c": "Baikalente"
       }
     ]
   },
@@ -4163,6 +6079,114 @@
       {
         "n": "Grau (Schimmel-Basis)",
         "c": "Dunkle Haut, weißes Haar"
+      },
+      {
+        "n": "Roan Grauschimmel mit bunten Haaren",
+        "c": "Schimmelfaerbung"
+      },
+      {
+        "n": "Bay Braune Pferd dunkle Extremitaeten",
+        "c": "Fuchs/Braunschimmel"
+      },
+      {
+        "n": "Chestnut Fuchsfarbung",
+        "c": "Fuchs"
+      },
+      {
+        "n": "Black Rappe",
+        "c": "Rappe"
+      },
+      {
+        "n": "Palomino goldenes Fell weisse Maehne",
+        "c": "Palomino"
+      },
+      {
+        "n": "Overo Schecke unregelmässig",
+        "c": "Paint Horse Schecke"
+      },
+      {
+        "n": "Tobiano Schecke gleichmaessig",
+        "c": "Paint Horse Schecke"
+      },
+      {
+        "n": "Appaloosa gefleckt",
+        "c": "Appaloosa"
+      },
+      {
+        "n": "Blanket Appaloosa Rueckenmuster",
+        "c": "Appaloosa"
+      },
+      {
+        "n": "Snowflake Appaloosa weisse Flecken",
+        "c": "Appaloosa"
+      },
+      {
+        "n": "Grulla Faerbung mausgrau",
+        "c": "Grulla (Mohrenkopf)"
+      },
+      {
+        "n": "Buckskin Sandfarbe schwarze Extremitaeten",
+        "c": "Buckskin"
+      },
+      {
+        "n": "Silver Dapple silbrige Maehne",
+        "c": "Silber Dapple Schimmel"
+      },
+      {
+        "n": "Medicine Hat Paint seltenes Muster",
+        "c": "Paint Sonderfaerbung"
+      },
+      {
+        "n": "Frame Overo Muster weiss begrenzt",
+        "c": "Paint Horse"
+      },
+      {
+        "n": "Splash White Muster heller Kopf",
+        "c": "Paint Horse Variante"
+      },
+      {
+        "n": "Lineback Dun Aalstrich",
+        "c": "Dun Faerbung"
+      },
+      {
+        "n": "Red Dun roetlich mit Aalstrich",
+        "c": "Dun Variante"
+      },
+      {
+        "n": "Classic Champagne golden",
+        "c": "Champagne Dilution"
+      },
+      {
+        "n": "Gold Champagne hell golden",
+        "c": "Champagne Dilution"
+      },
+      {
+        "n": "Ivory Champagne blass",
+        "c": "Champagne Dilution"
+      },
+      {
+        "n": "Sable Champagne braun-cremig",
+        "c": "Champagne Dilution"
+      },
+      {
+        "n": "Amber Champagne",
+        "c": "Champagne Dilution"
+      },
+      {
+        "n": "Flaxen Fuchsfaerbung helle Maehne",
+        "c": "Fuchs Variante Flaxen"
+      },
+      {
+        "n": "Sooty Fuchs dunkel schattiert",
+        "c": "Sooty Faerbung"
+      },
+      {
+        "n": "Smoky Black fast schwarz",
+        "c": "Black Diluted"
+      },
+      {
+        "n": "Smoky Cream blass diluted",
+        "c": "Cremello-aehnlich Diluted"
       }
     ]
   },
@@ -4369,6 +6393,126 @@
       {
         "n": "Distanzreiten (Endurance)",
         "c": "Distanzreiten"
+      },
+      {
+        "n": "Dressur Grand Prix",
+        "c": "Dressur"
+      },
+      {
+        "n": "Dressur Intermediaire I und II",
+        "c": "Dressur"
+      },
+      {
+        "n": "Piaffe und Passage",
+        "c": "Dressur"
+      },
+      {
+        "n": "Springpruefung Klasse A",
+        "c": "Springen"
+      },
+      {
+        "n": "Springpruefung S-Klasse",
+        "c": "Springen"
+      },
+      {
+        "n": "Parcours Springreiten",
+        "c": "Springen"
+      },
+      {
+        "n": "Steeple Chase",
+        "c": "Gelaendereiten/Rennsport"
+      },
+      {
+        "n": "Flat Racing Galopp",
+        "c": "Galopprennreiten"
+      },
+      {
+        "n": "Trottrennen Sulky",
+        "c": "Trabrennen"
+      },
+      {
+        "n": "Araberpferderennen",
+        "c": "Araberpferde Rennen"
+      },
+      {
+        "n": "Quarterhorse Racing",
+        "c": "Quarterhorse Rennen"
+      },
+      {
+        "n": "Horsemanship Pattern Klassen",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Ranch Cutting",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Team Penning Rinder",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Gymkhana Stunts",
+        "c": "Geschicklichkeitsreiten"
+      },
+      {
+        "n": "Side-Saddle (Damensattel)",
+        "c": "Historisch Reitsport"
+      },
+      {
+        "n": "Hunter Under Saddle",
+        "c": "Englisch Reitsport"
+      },
+      {
+        "n": "Equitation on the Flat",
+        "c": "Englisch Reitsport"
+      },
+      {
+        "n": "Gaited Horse Show",
+        "c": "Gangpferdesport"
+      },
+      {
+        "n": "Paso Fino Show",
+        "c": "Gangpferdesport"
+      },
+      {
+        "n": "Saddle Seat",
+        "c": "Amerikanischer Reitsport"
+      },
+      {
+        "n": "Working Equitation",
+        "c": "Arbeitsreiten"
+      },
+      {
+        "n": "Cowboy Dressage",
+        "c": "Westernreiten/Dressur"
+      },
+      {
+        "n": "Reining L1 Basic",
+        "c": "Reining"
+      },
+      {
+        "n": "Reining L4 Fortgeschritten",
+        "c": "Reining"
+      },
+      {
+        "n": "Barrelracing Weltklasse",
+        "c": "Westernreiten"
+      },
+      {
+        "n": "Polorennen auf Wasser (Canoe Polo)",
+        "c": "Wassersport"
+      },
+      {
+        "n": "Polocrosse (Polo+Lacrosse)",
+        "c": "Kombinierter Reitsport"
+      },
+      {
+        "n": "Pferde-Quadrille (synchron)",
+        "c": "Dressur Gruppenreiten"
+      },
+      {
+        "n": "Herdsmanship Rindertreiben",
+        "c": "Westernreiten Rinder"
       }
     ]
   }

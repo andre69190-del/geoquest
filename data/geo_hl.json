@@ -202,6 +202,126 @@
       {
         "name": "Kabru (Nepal/Indien)",
         "val": 7412
+      },
+      {
+        "name": "Khunyang Chhish (Pakistan)",
+        "val": 7823
+      },
+      {
+        "name": "Kanjut Sar (Pakistan)",
+        "val": 7760
+      },
+      {
+        "name": "Saltoro Kangri (Pakistan/Indien)",
+        "val": 7742
+      },
+      {
+        "name": "Trivor (Pakistan)",
+        "val": 7728
+      },
+      {
+        "name": "Kongur Tagh (China)",
+        "val": 7719
+      },
+      {
+        "name": "Tirich Mir (Pakistan)",
+        "val": 7708
+      },
+      {
+        "name": "Gurla Mandhata (China)",
+        "val": 7694
+      },
+      {
+        "name": "Noshaq (Afghanistan/Pakistan)",
+        "val": 7492
+      },
+      {
+        "name": "Ismoil Somoni (Tadschikistan)",
+        "val": 7495
+      },
+      {
+        "name": "Lenin Peak (Kirgistan/Tadschikistan)",
+        "val": 7134
+      },
+      {
+        "name": "Khan Tengri (Kirgistan/Kasachstan)",
+        "val": 7010
+      },
+      {
+        "name": "Ojos del Salado (Chile/Argentinien)",
+        "val": 6893
+      },
+      {
+        "name": "Monte Pissis (Argentinien)",
+        "val": 6795
+      },
+      {
+        "name": "Huascaran (Peru)",
+        "val": 6768
+      },
+      {
+        "name": "Llullaillaco (Chile/Argentinien)",
+        "val": 6739
+      },
+      {
+        "name": "Coropuna (Peru)",
+        "val": 6377
+      },
+      {
+        "name": "Denali (Alaska, USA)",
+        "val": 6190
+      },
+      {
+        "name": "Elbrus West (Russland)",
+        "val": 5642
+      },
+      {
+        "name": "Vinson Massif (Antarktis)",
+        "val": 4892
+      },
+      {
+        "name": "Puncak Jaya (Papua, Indonesien)",
+        "val": 4884
+      },
+      {
+        "name": "Kosciuszko (Australien)",
+        "val": 2228
+      },
+      {
+        "name": "Monte Bianco (Italien/Frankreich)",
+        "val": 4808
+      },
+      {
+        "name": "Weisshorn (Schweiz)",
+        "val": 4505
+      },
+      {
+        "name": "Lyskamm (Schweiz/Italien)",
+        "val": 4527
+      },
+      {
+        "name": "Finsteraarhorn (Schweiz)",
+        "val": 4274
+      },
+      {
+        "name": "Aletschhorn (Schweiz)",
+        "val": 4193
+      },
+      {
+        "name": "Elbrus Ost (Russland)",
+        "val": 5621
+      },
+      {
+        "name": "Shkhara (Georgien/Russland)",
+        "val": 5201
+      },
+      {
+        "name": "Dykh-Tau (Russland)",
+        "val": 5205
+      },
+      {
+        "name": "Shishapangma (Tibet, China)",
+        "val": 8027
       }
     ]
   },
@@ -408,6 +528,126 @@
       {
         "name": "Semeru (Indonesien)",
         "val": 3676
+      },
+      {
+        "name": "Etna (Italien)",
+        "val": 3357
+      },
+      {
+        "name": "Nyiragongo (DR Kongo)",
+        "val": 3470
+      },
+      {
+        "name": "Iztaccihuatl (Mexiko)",
+        "val": 5230
+      },
+      {
+        "name": "Rinjani (Lombok, Indonesien)",
+        "val": 3726
+      },
+      {
+        "name": "Kerinci (Sumatra, Indonesien)",
+        "val": 3805
+      },
+      {
+        "name": "Agung (Bali, Indonesien)",
+        "val": 3142
+      },
+      {
+        "name": "Pinatubo (Philippinen)",
+        "val": 1486
+      },
+      {
+        "name": "Sakurajima (Japan)",
+        "val": 1117
+      },
+      {
+        "name": "Vesuvius (Italien)",
+        "val": 1281
+      },
+      {
+        "name": "Hekla (Island)",
+        "val": 1491
+      },
+      {
+        "name": "Katla (Island)",
+        "val": 1512
+      },
+      {
+        "name": "Piton de la Fournaise (Reunion)",
+        "val": 2632
+      },
+      {
+        "name": "Teide (Teneriffa, Spanien)",
+        "val": 3718
+      },
+      {
+        "name": "Erebus (Antarktis)",
+        "val": 3794
+      },
+      {
+        "name": "Llaima (Chile)",
+        "val": 3125
+      },
+      {
+        "name": "Lanin (Chile/Argentinien)",
+        "val": 3747
+      },
+      {
+        "name": "Osorno (Chile)",
+        "val": 2652
+      },
+      {
+        "name": "Puyehue (Chile)",
+        "val": 2236
+      },
+      {
+        "name": "Copahue (Chile/Argentinien)",
+        "val": 2953
+      },
+      {
+        "name": "Oraefajokull (Island)",
+        "val": 2110
+      },
+      {
+        "name": "Snaefellsjokull (Island)",
+        "val": 1446
+      },
+      {
+        "name": "Pico do Fogo (Kap Verde)",
+        "val": 2829
+      },
+      {
+        "name": "Klyuchevskaya Sopka (Kamtschatka)",
+        "val": 4754
+      },
+      {
+        "name": "Shiveluch (Kamtschatka)",
+        "val": 3283
+      },
+      {
+        "name": "Bezymianny (Kamtschatka)",
+        "val": 2882
+      },
+      {
+        "name": "Tolbachik (Kamtschatka)",
+        "val": 3682
+      },
+      {
+        "name": "Avachinsky (Kamtschatka)",
+        "val": 2741
+      },
+      {
+        "name": "Rincon de la Vieja (Costa Rica)",
+        "val": 1916
+      },
+      {
+        "name": "Irazu (Costa Rica)",
+        "val": 3432
+      },
+      {
+        "name": "Newberry Volcano (Oregon, USA)",
+        "val": 2434
       }
     ]
   },
@@ -614,6 +854,126 @@
       {
         "name": "Iquique 2014 (Chile)",
         "val": 82
+      },
+      {
+        "name": "Alaska 1957 (USA)",
+        "val": 93
+      },
+      {
+        "name": "Kuril Islands 2006 (Russland)",
+        "val": 83
+      },
+      {
+        "name": "Sumatra 2005 (Indonesien)",
+        "val": 86
+      },
+      {
+        "name": "Atacama 1922 (Chile)",
+        "val": 88
+      },
+      {
+        "name": "Northridge 1994 (USA)",
+        "val": 67
+      },
+      {
+        "name": "Bam 2003 (Iran)",
+        "val": 67
+      },
+      {
+        "name": "Kashmir 2005 (Pakistan)",
+        "val": 76
+      },
+      {
+        "name": "Turkey-Syria 2023",
+        "val": 78
+      },
+      {
+        "name": "Kanto 1923 (Japan)",
+        "val": 79
+      },
+      {
+        "name": "Messina 1908 (Italien)",
+        "val": 72
+      },
+      {
+        "name": "Armenia 1988 (Spitak)",
+        "val": 68
+      },
+      {
+        "name": "Loma Prieta 1989 (USA)",
+        "val": 69
+      },
+      {
+        "name": "Nicaragua 1972",
+        "val": 62
+      },
+      {
+        "name": "Palu 2018 (Sulawesi)",
+        "val": 75
+      },
+      {
+        "name": "Lombok 2018 (Indonesien)",
+        "val": 70
+      },
+      {
+        "name": "Hokkaido 1993 (Japan)",
+        "val": 77
+      },
+      {
+        "name": "Turkey Izmit 1999",
+        "val": 76
+      },
+      {
+        "name": "Greece Athens 1999",
+        "val": 60
+      },
+      {
+        "name": "Flores 1992 (Indonesien)",
+        "val": 75
+      },
+      {
+        "name": "El Salvador 2001",
+        "val": 77
+      },
+      {
+        "name": "Central Chile 1943",
+        "val": 82
+      },
+      {
+        "name": "Banda Sea 1938 (Indonesien)",
+        "val": 85
+      },
+      {
+        "name": "Aleutian Islands 1965",
+        "val": 85
+      },
+      {
+        "name": "Colombia 1970",
+        "val": 80
+      },
+      {
+        "name": "Oaxaca 1931 (Mexiko)",
+        "val": 80
+      },
+      {
+        "name": "Kenai Peninsula 1943 (Alaska)",
+        "val": 81
+      },
+      {
+        "name": "Fox Islands 1957 (Alaska)",
+        "val": 93
+      },
+      {
+        "name": "Sumatra 2012 (Offshorependung)",
+        "val": 82
+      },
+      {
+        "name": "Peru 1940 (Lima)",
+        "val": 83
+      },
+      {
+        "name": "Ecuador coast 1942",
+        "val": 79
       }
     ]
   },
@@ -866,6 +1226,126 @@
       {
         "name": "Hudson 1991 (Chile)",
         "val": 5
+      },
+      {
+        "name": "Toba (Indonesien, ~74000 v.Chr.)",
+        "val": 8
+      },
+      {
+        "name": "Yellowstone (USA, ~640000 v.Chr.)",
+        "val": 8
+      },
+      {
+        "name": "Tambora (Indonesien, 1815)",
+        "val": 7
+      },
+      {
+        "name": "Krakatau (Indonesien, 1883)",
+        "val": 6
+      },
+      {
+        "name": "Mount St. Helens (USA, 1980)",
+        "val": 5
+      },
+      {
+        "name": "Pinatubo (Philippinen, 1991)",
+        "val": 6
+      },
+      {
+        "name": "Novarupta (Alaska, 1912)",
+        "val": 6
+      },
+      {
+        "name": "Ilopango (El Salvador, ca.450)",
+        "val": 6
+      },
+      {
+        "name": "Hunga Tonga (Tonga, 2022)",
+        "val": 5
+      },
+      {
+        "name": "Eyjafjallajokull (Island, 2010)",
+        "val": 4
+      },
+      {
+        "name": "Grimsvotn (Island, 2011)",
+        "val": 4
+      },
+      {
+        "name": "Merapi (Indonesien, 2010)",
+        "val": 4
+      },
+      {
+        "name": "Etna (Italien, 2021)",
+        "val": 2
+      },
+      {
+        "name": "Stromboli (Italien, kontinuierlich)",
+        "val": 1
+      },
+      {
+        "name": "Santorini/Thera (Griechenland, 1600 v.Chr.)",
+        "val": 7
+      },
+      {
+        "name": "Vesuvius (Italien, 79 n.Chr.)",
+        "val": 5
+      },
+      {
+        "name": "Popocatepetl (Mexiko, 2000)",
+        "val": 3
+      },
+      {
+        "name": "Tungurahua (Ecuador, 2006)",
+        "val": 3
+      },
+      {
+        "name": "Cotopaxi (Ecuador, 1877)",
+        "val": 4
+      },
+      {
+        "name": "Hudson (Chile, 1991)",
+        "val": 5
+      },
+      {
+        "name": "Puyehue (Chile, 2011)",
+        "val": 5
+      },
+      {
+        "name": "Redoubt (Alaska, 2009)",
+        "val": 4
+      },
+      {
+        "name": "Ruapehu (Neuseeland, 1995)",
+        "val": 3
+      },
+      {
+        "name": "Bardarbunga (Island, 2014)",
+        "val": 4
+      },
+      {
+        "name": "Hekla (Island, 2000)",
+        "val": 3
+      },
+      {
+        "name": "Fuego (Guatemala, 2018)",
+        "val": 3
+      },
+      {
+        "name": "Agung (Bali, 2017)",
+        "val": 3
+      },
+      {
+        "name": "Kilauea (Hawaii, 2018)",
+        "val": 4
+      },
+      {
+        "name": "Semeru (Java, 2021)",
+        "val": 3
+      },
+      {
+        "name": "Mayon (Philippinen, 2023)",
+        "val": 3
       }
     ]
   },
@@ -1072,6 +1552,126 @@
       {
         "name": "Gua Air Jernih (Malaysia)",
         "val": 117
+      },
+      {
+        "name": "Sistema Sac Actun (Mexiko)",
+        "val": 368
+      },
+      {
+        "name": "Hoelloch (Schweiz)",
+        "val": 200
+      },
+      {
+        "name": "Siebenhengste (Schweiz)",
+        "val": 157
+      },
+      {
+        "name": "Ozernaja Cave (Ukraine)",
+        "val": 117
+      },
+      {
+        "name": "Mulu Clearwater Cave (Malaysia)",
+        "val": 107
+      },
+      {
+        "name": "Dachstein Mammuthohle (Oesterreich)",
+        "val": 74
+      },
+      {
+        "name": "Cueva del Viento (Teneriffa)",
+        "val": 18
+      },
+      {
+        "name": "Son Doong (Vietnam)",
+        "val": 9
+      },
+      {
+        "name": "Skocjan (Slowenien)",
+        "val": 6
+      },
+      {
+        "name": "Postojna (Slowenien)",
+        "val": 24
+      },
+      {
+        "name": "Eisriesenwelt (Oesterreich)",
+        "val": 42
+      },
+      {
+        "name": "Gouffre Berger (Frankreich)",
+        "val": 24
+      },
+      {
+        "name": "Veryovkina (Georgien, Tiefe m)",
+        "val": 2212
+      },
+      {
+        "name": "Krubera-Voronja (Georgien, Tiefe m)",
+        "val": 2197
+      },
+      {
+        "name": "Fisher Ridge Cave (Kentucky, USA)",
+        "val": 200
+      },
+      {
+        "name": "Cueva del Hundidero (Spanien)",
+        "val": 95
+      },
+      {
+        "name": "Cueva de Nerja (Spanien)",
+        "val": 5
+      },
+      {
+        "name": "Hang En (Vietnam)",
+        "val": 1
+      },
+      {
+        "name": "Majlis al Jinn (Oman)",
+        "val": 0
+      },
+      {
+        "name": "Gomantong (Malaysia)",
+        "val": 1
+      },
+      {
+        "name": "Grotta Gigante (Italien)",
+        "val": 5
+      },
+      {
+        "name": "Aven Armand (Frankreich)",
+        "val": 4
+      },
+      {
+        "name": "Mammoth Cave System (Kentucky, USA)",
+        "val": 676
+      },
+      {
+        "name": "Sistema Ox Bel Ha (Quintana Roo, Mexiko)",
+        "val": 368
+      },
+      {
+        "name": "Cueva Sac Actun (Mexiko, verbunden)",
+        "val": 368
+      },
+      {
+        "name": "Fisher Ridge Cave System (USA)",
+        "val": 200
+      },
+      {
+        "name": "Ozernaya (Ukraine)",
+        "val": 117
+      },
+      {
+        "name": "Cueva del Sapo (Venezuela)",
+        "val": 2
+      },
+      {
+        "name": "Cueva de la Pileta (Spanien)",
+        "val": 3
+      },
+      {
+        "name": "Cueva del Mildon (Chile)",
+        "val": 1
       }
     ]
   },
@@ -1278,6 +1878,126 @@
       {
         "name": "Itsaq Gneis (Grönland)",
         "val": 3700
+      },
+      {
+        "name": "Isua Supracrustal Belt (Groenland)",
+        "val": 3800
+      },
+      {
+        "name": "Kaapvaal Craton (Suedafrika)",
+        "val": 3640
+      },
+      {
+        "name": "Pilbara Craton (Australien)",
+        "val": 3500
+      },
+      {
+        "name": "Minnesota River Valley Gneiss (USA)",
+        "val": 3600
+      },
+      {
+        "name": "Saglek Block (Kanada)",
+        "val": 3900
+      },
+      {
+        "name": "Baltic Shield (Fennoskandien)",
+        "val": 2700
+      },
+      {
+        "name": "Limpopo Belt (Suedafrika/Zimbabwe)",
+        "val": 3300
+      },
+      {
+        "name": "Ediacara Hills Sandstein (Australien)",
+        "val": 560
+      },
+      {
+        "name": "Burgess Shale (Kanada)",
+        "val": 508
+      },
+      {
+        "name": "Solnhofener Kalk (Deutschland)",
+        "val": 150
+      },
+      {
+        "name": "Jura-Kalk Schweizer Alpen",
+        "val": 170
+      },
+      {
+        "name": "Kreide-Schreibkreide (England)",
+        "val": 80
+      },
+      {
+        "name": "Tertiare Braunkohle Lausitz (DE)",
+        "val": 20
+      },
+      {
+        "name": "Rheinischer Basalt (Deutschland)",
+        "val": 25
+      },
+      {
+        "name": "Surtsey Basalt (Island)",
+        "val": 0
+      },
+      {
+        "name": "Gondwana Basement (Antarktis)",
+        "val": 2100
+      },
+      {
+        "name": "Snowball Earth Basalt (Australien)",
+        "val": 700
+      },
+      {
+        "name": "Granulitguertel Madagaskar",
+        "val": 2500
+      },
+      {
+        "name": "Uivak Gneiss (Kanada)",
+        "val": 3730
+      },
+      {
+        "name": "Pompeji Tuff (Italien)",
+        "val": 2
+      },
+      {
+        "name": "Murchison Meteorit (Australien)",
+        "val": 4560
+      },
+      {
+        "name": "Petrified Wood (Arizona, USA)",
+        "val": 225
+      },
+      {
+        "name": "Hunsrueck Schiefer (Deutschland)",
+        "val": 380
+      },
+      {
+        "name": "Holzmaden Posidonienschiefer (DE)",
+        "val": 182
+      },
+      {
+        "name": "Qiangtang Block Granit (Tibet)",
+        "val": 2500
+      },
+      {
+        "name": "Dharwar Craton (Indien)",
+        "val": 3100
+      },
+      {
+        "name": "Singhbhum Craton (Indien)",
+        "val": 3100
+      },
+      {
+        "name": "Yilgarn Craton (Australien)",
+        "val": 3600
+      },
+      {
+        "name": "Slave Province (Kanada)",
+        "val": 2700
+      },
+      {
+        "name": "Barberton Greenstone Belt (Suedafrika)",
+        "val": 3500
       }
     ]
   },
@@ -1484,6 +2204,126 @@
       {
         "name": "Cauca Canyon (Kolumbien)",
         "val": 2000
+      },
+      {
+        "name": "Yarlung Tsangpo Canyon (Tibet/Indien)",
+        "val": 6009
+      },
+      {
+        "name": "Kali Gandaki (Nepal)",
+        "val": 5571
+      },
+      {
+        "name": "Blyde River Canyon (Suedafrika)",
+        "val": 800
+      },
+      {
+        "name": "Bryce Canyon (Utah, USA)",
+        "val": 300
+      },
+      {
+        "name": "Antelope Canyon (Arizona, USA)",
+        "val": 37
+      },
+      {
+        "name": "Verdon Gorge (Frankreich)",
+        "val": 700
+      },
+      {
+        "name": "Samaria Gorge (Griechenland)",
+        "val": 300
+      },
+      {
+        "name": "Waimea Canyon (Hawaii, USA)",
+        "val": 900
+      },
+      {
+        "name": "Columbia River Gorge (Oregon)",
+        "val": 1200
+      },
+      {
+        "name": "Three Gorges (Yangtze, China)",
+        "val": 1000
+      },
+      {
+        "name": "Zhangjiajie (Hunan, China)",
+        "val": 800
+      },
+      {
+        "name": "Cheddar Gorge (England)",
+        "val": 137
+      },
+      {
+        "name": "Gorges du Tarn (Frankreich)",
+        "val": 400
+      },
+      {
+        "name": "Ardache Gorge (Frankreich)",
+        "val": 300
+      },
+      {
+        "name": "Siq Petra (Jordanien)",
+        "val": 200
+      },
+      {
+        "name": "Neretva Canyon (Bosnien)",
+        "val": 300
+      },
+      {
+        "name": "Piva Canyon (Montenegro)",
+        "val": 1000
+      },
+      {
+        "name": "Indus-Himalaya Gorge (Pakistan)",
+        "val": 4500
+      },
+      {
+        "name": "Bramaputra Grand Canyon (Indien)",
+        "val": 5500
+      },
+      {
+        "name": "Canon del Sumidero (Mexiko)",
+        "val": 1000
+      },
+      {
+        "name": "Wadi Bani Auf (Oman)",
+        "val": 1500
+      },
+      {
+        "name": "Colca South Canyon (Peru)",
+        "val": 3354
+      },
+      {
+        "name": "El Hierro Barranco (Spanien)",
+        "val": 300
+      },
+      {
+        "name": "Azib n'Ikkis Canyon (Marokko)",
+        "val": 500
+      },
+      {
+        "name": "Vorotan Gorge (Armenien)",
+        "val": 700
+      },
+      {
+        "name": "Debed Canyon (Armenien)",
+        "val": 600
+      },
+      {
+        "name": "Mtkvari Canyon (Georgien)",
+        "val": 800
+      },
+      {
+        "name": "Rhodopen Canyon (Bulgarien)",
+        "val": 400
+      },
+      {
+        "name": "Uvac Canyon (Serbien)",
+        "val": 400
+      },
+      {
+        "name": "Ovcar-Kablar Canyon (Serbien)",
+        "val": 300
       }
     ]
   },
@@ -1690,6 +2530,126 @@
       {
         "name": "Yangtze-Platte (Teilplatte)",
         "val": 9
+      },
+      {
+        "name": "Nordamerika von Europa (mm/Jahr)",
+        "val": 25
+      },
+      {
+        "name": "Indische Platte nach Norden (mm/Jahr)",
+        "val": 50
+      },
+      {
+        "name": "Pazifische Platte (mm/Jahr)",
+        "val": 80
+      },
+      {
+        "name": "Afrikanische Platte (mm/Jahr)",
+        "val": 21
+      },
+      {
+        "name": "Antarktische Platte (mm/Jahr)",
+        "val": 17
+      },
+      {
+        "name": "Nazca-Platte Subduktion (mm/Jahr)",
+        "val": 75
+      },
+      {
+        "name": "Australische Platte (mm/Jahr)",
+        "val": 67
+      },
+      {
+        "name": "Arabische Platte (mm/Jahr)",
+        "val": 25
+      },
+      {
+        "name": "Karibische Platte (mm/Jahr)",
+        "val": 20
+      },
+      {
+        "name": "Cocos-Platte (mm/Jahr)",
+        "val": 88
+      },
+      {
+        "name": "Juan de Fuca-Platte (mm/Jahr)",
+        "val": 29
+      },
+      {
+        "name": "Philippinen-Platte (mm/Jahr)",
+        "val": 80
+      },
+      {
+        "name": "East Pacific Rise (mm/Jahr)",
+        "val": 130
+      },
+      {
+        "name": "Mid-Atlantic Ridge Nord (mm/Jahr)",
+        "val": 25
+      },
+      {
+        "name": "Mid-Atlantic Ridge Sued (mm/Jahr)",
+        "val": 31
+      },
+      {
+        "name": "Southwest Indian Ridge (mm/Jahr)",
+        "val": 14
+      },
+      {
+        "name": "East African Rift (mm/Jahr)",
+        "val": 7
+      },
+      {
+        "name": "Red Sea Ridge (mm/Jahr)",
+        "val": 16
+      },
+      {
+        "name": "Aleutian Trench Subduktion (mm/Jahr)",
+        "val": 76
+      },
+      {
+        "name": "Japan Trench Subduktion (mm/Jahr)",
+        "val": 92
+      },
+      {
+        "name": "Cascadia Subduktion (mm/Jahr)",
+        "val": 36
+      },
+      {
+        "name": "Himalaya Aufstieg (mm/Jahr)",
+        "val": 5
+      },
+      {
+        "name": "San Andreas Fault (mm/Jahr)",
+        "val": 46
+      },
+      {
+        "name": "Iceland Hotspot Drift (mm/Jahr)",
+        "val": 19
+      },
+      {
+        "name": "Tonga Trench (mm/Jahr)",
+        "val": 240
+      },
+      {
+        "name": "Mariana Trench Subduktion (mm/Jahr)",
+        "val": 60
+      },
+      {
+        "name": "Scotia-Platte (mm/Jahr)",
+        "val": 16
+      },
+      {
+        "name": "Anatolische Platte (mm/Jahr)",
+        "val": 25
+      },
+      {
+        "name": "Iran-Platte (mm/Jahr)",
+        "val": 30
+      },
+      {
+        "name": "Sunda-Platte (mm/Jahr)",
+        "val": 25
       }
     ]
   },
@@ -1896,6 +2856,126 @@
       {
         "name": "Korund (Al₂O₃)",
         "val": 2050
+      },
+      {
+        "name": "Nickel (Ni)",
+        "val": 1455
+      },
+      {
+        "name": "Chrom (Cr)",
+        "val": 1907
+      },
+      {
+        "name": "Mangan (Mn)",
+        "val": 1246
+      },
+      {
+        "name": "Quarz (SiO2)",
+        "val": 1650
+      },
+      {
+        "name": "Olivin (Mg2SiO4)",
+        "val": 1890
+      },
+      {
+        "name": "Granit (Gestein)",
+        "val": 950
+      },
+      {
+        "name": "Rhyolith (Gestein)",
+        "val": 900
+      },
+      {
+        "name": "Obsidian (Vulkanglas)",
+        "val": 1100
+      },
+      {
+        "name": "Kalzit (CaCO3)",
+        "val": 1339
+      },
+      {
+        "name": "Korund (Al2O3)",
+        "val": 2044
+      },
+      {
+        "name": "Magnetit (Fe3O4)",
+        "val": 1597
+      },
+      {
+        "name": "Halit (NaCl)",
+        "val": 801
+      },
+      {
+        "name": "Gabbro (Gestein)",
+        "val": 1180
+      },
+      {
+        "name": "Dolomit (Gestein)",
+        "val": 1300
+      },
+      {
+        "name": "Pyrit Zersetzung (FeS2)",
+        "val": 742
+      },
+      {
+        "name": "Sylvit (KCl)",
+        "val": 776
+      },
+      {
+        "name": "Molybdaen (Mo)",
+        "val": 2623
+      },
+      {
+        "name": "Iridium (Ir)",
+        "val": 2446
+      },
+      {
+        "name": "Niob (Nb)",
+        "val": 2477
+      },
+      {
+        "name": "Vanadium (V)",
+        "val": 1910
+      },
+      {
+        "name": "Zirkon (Zr)",
+        "val": 1855
+      },
+      {
+        "name": "Hafnium (Hf)",
+        "val": 2233
+      },
+      {
+        "name": "Scandium (Sc)",
+        "val": 1541
+      },
+      {
+        "name": "Andalusit (Al2SiO5)",
+        "val": 1400
+      },
+      {
+        "name": "Wollastonit (CaSiO3)",
+        "val": 1540
+      },
+      {
+        "name": "Forsterit (Mg2SiO4)",
+        "val": 1890
+      },
+      {
+        "name": "Anorthit (Plagioklas)",
+        "val": 1553
+      },
+      {
+        "name": "Palladium (Pd)",
+        "val": 1555
+      },
+      {
+        "name": "Rhodium (Rh)",
+        "val": 1964
+      },
+      {
+        "name": "Indium (In)",
+        "val": 157
       }
     ]
   },
@@ -2102,6 +3182,126 @@
       {
         "name": "Columbia-Gletscher (Alaska)",
         "val": 64
+      },
+      {
+        "name": "Antarktischer Eisschild (km3)",
+        "val": 26500000
+      },
+      {
+        "name": "Groenlaendischer Eisschild (km3)",
+        "val": 2850000
+      },
+      {
+        "name": "Vatnajokull Island (km3)",
+        "val": 8100
+      },
+      {
+        "name": "Malaspina Glacier Alaska (km3)",
+        "val": 2000
+      },
+      {
+        "name": "Bering Glacier Alaska (km3)",
+        "val": 2700
+      },
+      {
+        "name": "Los Glaciares Argentinien (km3)",
+        "val": 6700
+      },
+      {
+        "name": "Jacobshavn Glacier Groenland (km3)",
+        "val": 900
+      },
+      {
+        "name": "Helheim Glacier Groenland (km3)",
+        "val": 600
+      },
+      {
+        "name": "Siachen Pakistan/Indien (km3)",
+        "val": 218
+      },
+      {
+        "name": "Fedchenko Tadschikistan (km3)",
+        "val": 140
+      },
+      {
+        "name": "Inylchek Kirgistan (km3)",
+        "val": 183
+      },
+      {
+        "name": "Columbia Glacier Alaska (km3)",
+        "val": 206
+      },
+      {
+        "name": "Hubbard Glacier Alaska (km3)",
+        "val": 183
+      },
+      {
+        "name": "Jostedalsbreen Norwegen (km3)",
+        "val": 84
+      },
+      {
+        "name": "Aletschgletscher Schweiz (km3)",
+        "val": 78
+      },
+      {
+        "name": "Perito Moreno Argentinien (km3)",
+        "val": 206
+      },
+      {
+        "name": "Baltoro Pakistan (km3)",
+        "val": 66
+      },
+      {
+        "name": "Zemu Indien (km3)",
+        "val": 27
+      },
+      {
+        "name": "Gangotri Indien (km3)",
+        "val": 29
+      },
+      {
+        "name": "Gornergletscher Schweiz (km3)",
+        "val": 24
+      },
+      {
+        "name": "Fieschergletscher Schweiz (km3)",
+        "val": 16
+      },
+      {
+        "name": "Tasman Glacier Neuseeland (km3)",
+        "val": 7
+      },
+      {
+        "name": "Jostedalsbreen Arm Norwegen (km3)",
+        "val": 21
+      },
+      {
+        "name": "Mer de Glace Frankreich (km3)",
+        "val": 11
+      },
+      {
+        "name": "Franz Josef Glacier NZ (km3)",
+        "val": 1
+      },
+      {
+        "name": "Fox Glacier Neuseeland (km3)",
+        "val": 1
+      },
+      {
+        "name": "Pasterze Oesterreich (km3)",
+        "val": 2
+      },
+      {
+        "name": "Svartisen Norwegen (km3)",
+        "val": 21
+      },
+      {
+        "name": "Engabreen Norwegen (km3)",
+        "val": 3
+      },
+      {
+        "name": "Jostedal East Norwegen (km3)",
+        "val": 5
       }
     ]
   },
@@ -2308,6 +3508,126 @@
       {
         "name": "Aitape 1998 (Papua-Neuguinea)",
         "val": 15
+      },
+      {
+        "name": "Lituya Bay 1958 (Alaska, USA)",
+        "val": 524
+      },
+      {
+        "name": "Sumatra 2004 (Banda Aceh)",
+        "val": 34
+      },
+      {
+        "name": "Anak Krakatau 2018 (Indonesien)",
+        "val": 5
+      },
+      {
+        "name": "Palu 2018 (Sulawesi)",
+        "val": 11
+      },
+      {
+        "name": "Java 2006",
+        "val": 7
+      },
+      {
+        "name": "Japan 1896 Sanriku",
+        "val": 38
+      },
+      {
+        "name": "Japan 1933 Sanriku",
+        "val": 29
+      },
+      {
+        "name": "Portugal 1755 Lissabon",
+        "val": 15
+      },
+      {
+        "name": "Cascadia 1700 (USA/Kanada)",
+        "val": 10
+      },
+      {
+        "name": "Mentawai 2010 (Indonesien)",
+        "val": 7
+      },
+      {
+        "name": "Nias 2005 (Indonesien)",
+        "val": 5
+      },
+      {
+        "name": "Ecuador 1906",
+        "val": 5
+      },
+      {
+        "name": "Aleutian 1957 (Alaska)",
+        "val": 16
+      },
+      {
+        "name": "Kamtschatka 1952",
+        "val": 13
+      },
+      {
+        "name": "Unimak 1946 (Alaska)",
+        "val": 35
+      },
+      {
+        "name": "Tonga 2022 Hunga",
+        "val": 15
+      },
+      {
+        "name": "Alaska 1946 Unimak Island",
+        "val": 35
+      },
+      {
+        "name": "Kamtschatka 1959",
+        "val": 7
+      },
+      {
+        "name": "Aleutian 1964 (Crescent City)",
+        "val": 6
+      },
+      {
+        "name": "Chile 1922 (Atacama)",
+        "val": 9
+      },
+      {
+        "name": "Japan Meiji 1896 (Sanriku)",
+        "val": 38
+      },
+      {
+        "name": "Chile 1877 (Iquique)",
+        "val": 24
+      },
+      {
+        "name": "Peru 1868 (Arica)",
+        "val": 21
+      },
+      {
+        "name": "Alaska 1958 Lituya supplement",
+        "val": 30
+      },
+      {
+        "name": "Sicily 1908 Messina (detail)",
+        "val": 12
+      },
+      {
+        "name": "Banda Sea 1938",
+        "val": 5
+      },
+      {
+        "name": "Vanuatu 1999",
+        "val": 5
+      },
+      {
+        "name": "Papua New Guinea 1998 Sissano",
+        "val": 15
+      },
+      {
+        "name": "Java 1883 Krakatau supplement",
+        "val": 37
+      },
+      {
+        "name": "Greece 1956 Amorgos",
+        "val": 25
       }
     ]
   },
@@ -2514,6 +3834,126 @@
       {
         "name": "BD-04A (Oman, Bohrung)",
         "val": 12289
+      },
+      {
+        "name": "Kola Supertiefbohrung (Russland)",
+        "val": 12262
+      },
+      {
+        "name": "Z-44 Chaivo (Russland, Schraegbohrung)",
+        "val": 12376
+      },
+      {
+        "name": "BD-04A (Katar, Schraegbohrung)",
+        "val": 12290
+      },
+      {
+        "name": "ONGC OP-46 (Indien)",
+        "val": 11726
+      },
+      {
+        "name": "Bertha Rogers No.1 (Oklahoma, USA)",
+        "val": 9583
+      },
+      {
+        "name": "SG-1 Oberpfalz (Deutschland)",
+        "val": 9101
+      },
+      {
+        "name": "Erdgas Bavaria 3 (Deutschland)",
+        "val": 6900
+      },
+      {
+        "name": "Shah Deniz (Aserbaidschan)",
+        "val": 6600
+      },
+      {
+        "name": "Snorre (Norwegen)",
+        "val": 6300
+      },
+      {
+        "name": "Leviathan (Israel, Offshore)",
+        "val": 6100
+      },
+      {
+        "name": "Hibernia (Kanada, Offshore)",
+        "val": 6000
+      },
+      {
+        "name": "Kashagan (Kasachstan)",
+        "val": 5500
+      },
+      {
+        "name": "Tengiz (Kasachstan)",
+        "val": 5000
+      },
+      {
+        "name": "North Sea Ekofisk (Norwegen)",
+        "val": 5700
+      },
+      {
+        "name": "Tiber (Golf von Mexiko, USA)",
+        "val": 10683
+      },
+      {
+        "name": "Deepwater Horizon (Golf Mexiko)",
+        "val": 5596
+      },
+      {
+        "name": "Zohr (Aegypten, Offshore)",
+        "val": 4500
+      },
+      {
+        "name": "Geothermal Landau (Deutschland)",
+        "val": 3300
+      },
+      {
+        "name": "Geothermal Insheim (Deutschland)",
+        "val": 3800
+      },
+      {
+        "name": "Geothermal Falkenberg (Deutschland)",
+        "val": 4000
+      },
+      {
+        "name": "Troll (Norwegen, Offshore)",
+        "val": 4100
+      },
+      {
+        "name": "IODP 370 Muroto (Japan)",
+        "val": 1180
+      },
+      {
+        "name": "IODP Site 1256D (Ostpazifik)",
+        "val": 1507
+      },
+      {
+        "name": "Deep Sea Drilling ODP (tiefstes)",
+        "val": 2111
+      },
+      {
+        "name": "Urta-Bulak Gasfeld (Usbekistan)",
+        "val": 7013
+      },
+      {
+        "name": "Perdido (Golf von Mexiko)",
+        "val": 2438
+      },
+      {
+        "name": "Prelude FLNG (Australien)",
+        "val": 250
+      },
+      {
+        "name": "North Caspian (Kasachstan)",
+        "val": 5200
+      },
+      {
+        "name": "Viking Graben Offshore (Nordsee)",
+        "val": 4000
+      },
+      {
+        "name": "Maersk Oil Pad (USA, Schraegbohrung)",
+        "val": 11610
       }
     ]
   }

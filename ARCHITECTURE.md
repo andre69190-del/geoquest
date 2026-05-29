@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 276 (Stand: Mai 2026)
+**Version:** Phase 277 (Stand: Mai 2026)
 **Build:** gen.py → 1.17 MB | GeoQuest.html → 3.79 MB | 685 Spielmodi | verify: 90/90
 
 ---
@@ -134,10 +134,10 @@ GeoQuest verwendet vier generische Spielengines, die für beliebige Datenkategor
 // Projektion: Mercator, optimiert für World-110m TopoJSON
 projection = d3.geoMercator().fitSize([W, H], worldGeoJSON);
 
-// Panning-Limits: 2x Kartenbreite in jede Richtung (verhindert Verlieren der Karte)
+// Panning-Limits: eng begrenzt — kein Off-Screen mehr möglich (Phase 275)
 zoom = d3.zoom()
   .scaleExtent([1, 10])
-  .translateExtent([[-W, -H], [2*W, 2*H]])
+  .translateExtent([[-W*0.5, -H*0.5], [W*1.5, H*1.5]])
   .on("zoom", ev => { g.attr("transform", ev.transform); ... });
 ```
 
@@ -893,9 +893,9 @@ Manuelle Aenderungen an `sw.js` werden beim naechsten `python3 gen.py` ueberschr
 
 ### SVG-Kartenlabel: Lange Namen overflow die Karte
 
-Label immer auf max. 22 Zeichen kuerzen:
+Label immer auf max. 35 Zeichen kuerzen (Phase 274: 22→35):
 ```javascript
-.text((S.q.ans||"").length > 22 ? (S.q.ans||"").slice(0,20) + "..." : S.q.ans||"")
+.text((S.q.ans||"").length > 35 ? (S.q.ans||"").slice(0,33) + "…" : S.q.ans||"")
 ```
 
 ### `unlock_and_push.bat` muss `git push origin main` enthalten
@@ -1042,12 +1042,13 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **273** | patch_273_schaetzer_fix.py | **Distanz-/Flugzeit-Schätzer Fix: JSON c-Werte normalisiert (einheitliches Format), ansPool in gen.py von 10→44 (distanz) und 8→15 (flugzeit) unique Werte erweitert. Spielübersicht: 10→50 Distanzen, 8→50 Flugzeiten.** |
 | **274** | gen.py direkt | **Pin-Modus Anti-Spoiler: _mkPinQ zeigt jetzt nur Basisname ohne Stadt/Land in Klammern (subj=_dispSubj). Feedback-Label 22→35 Zeichen. "Levi's Stadium" statt "Levi's Stadium (Santa Clara, USA)" während Frage.** |
 | **275** | gen.py direkt | **Pin-Map Scroll-Fix: translateExtent [-W,-H→2W,2H] → [-0.5W,-0.5H→1.5W,1.5H] (kein Off-Screen mehr). Reset-Button ↺ erscheint nach erstem Panning-Touch, zoomt zurück zur Zielregion oder Vollwelt.** |
-| **276** | gen.py direkt | **Pin-Map Random-Offset: Zielort landet zufällig bei 20-80% des Viewports (nicht immer Mitte). Anti-Cheat: Mitte-klicken hilft nicht mehr. Reset-Button stellt gleiche Zufallsposition wieder her.** |
+| **276** | gen.py direkt | **Pin-Map Random-Offset: Zielort landet zufällig bei -10%...+110% des Viewports (gelegentlich außerhalb Rand). Anti-Cheat: Mitte-klicken hilft nicht mehr. Reset-Button stellt gleiche Zufallsposition wieder her.** |
+| **277** | patch_277_zindex_fix.py | **Z-Index Bleeding Fix: bottom-nav z-index 300→1000, Fav/Info-Buttons 99999→2, body padding-bottom 68→80px. Buttons verschwinden sauber hinter Tab-Bar beim Scrollen.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 276 -- Pin-Map Random-Offset: Zielort zufällig im Viewport (20-80%), kein Mitte-Klick-Exploit mehr. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 277 -- Z-Index Bleeding Fix: Buttons verschwinden hinter Tab-Bar, padding-bottom 80px. 685 Modi, Mai 2026.*
 
 
 ---

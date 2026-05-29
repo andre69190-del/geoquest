@@ -251,6 +251,156 @@
         "n": "Roque de los Muchachos (La Palma, Spanien)",
         "lat": 28.76,
         "lng": -17.89
+      },
+      {
+        "n": "Cerro Paranal VLT (Chile)",
+        "lat": -24.63,
+        "lng": -70.4
+      },
+      {
+        "n": "La Silla ESO (Chile)",
+        "lat": -29.26,
+        "lng": -70.73
+      },
+      {
+        "n": "ALMA Atacama (Chile)",
+        "lat": -23.02,
+        "lng": -67.75
+      },
+      {
+        "n": "Cerro Tololo (Chile)",
+        "lat": -30.17,
+        "lng": -70.81
+      },
+      {
+        "n": "Gemini South (Chile)",
+        "lat": -30.23,
+        "lng": -70.74
+      },
+      {
+        "n": "Las Campanas (Chile)",
+        "lat": -29.01,
+        "lng": -70.69
+      },
+      {
+        "n": "Roque de los Muchachos La Palma",
+        "lat": 28.76,
+        "lng": -17.88
+      },
+      {
+        "n": "Effelsberg Radioteleskop Germany",
+        "lat": 50.52,
+        "lng": 6.88
+      },
+      {
+        "n": "FAST Radioteleskop China",
+        "lat": 25.65,
+        "lng": 106.86
+      },
+      {
+        "n": "Green Bank Telescope WV",
+        "lat": 38.43,
+        "lng": -79.84
+      },
+      {
+        "n": "Very Large Array New Mexico",
+        "lat": 34.08,
+        "lng": -107.62
+      },
+      {
+        "n": "SKA South Africa Karoo",
+        "lat": -30.71,
+        "lng": 21.44
+      },
+      {
+        "n": "Parkes Telescope NSW Australia",
+        "lat": -32.99,
+        "lng": 148.26
+      },
+      {
+        "n": "Lowell Observatory Arizona",
+        "lat": 35.2,
+        "lng": -111.67
+      },
+      {
+        "n": "Palomar Observatory California",
+        "lat": 33.36,
+        "lng": -116.86
+      },
+      {
+        "n": "Mount Wilson Observatory California",
+        "lat": 34.22,
+        "lng": -118.06
+      },
+      {
+        "n": "Kitt Peak Arizona",
+        "lat": 31.96,
+        "lng": -111.6
+      },
+      {
+        "n": "McDonald Observatory Texas",
+        "lat": 30.67,
+        "lng": -104.02
+      },
+      {
+        "n": "Yerkes Observatory Wisconsin",
+        "lat": 42.57,
+        "lng": -88.56
+      },
+      {
+        "n": "Lick Observatory California",
+        "lat": 37.34,
+        "lng": -121.64
+      },
+      {
+        "n": "SAAO Sutherland South Africa",
+        "lat": -32.38,
+        "lng": 20.81
+      },
+      {
+        "n": "SAO Russia Zelenchuk",
+        "lat": 43.65,
+        "lng": 41.44
+      },
+      {
+        "n": "Maidanak Observatory Uzbekistan",
+        "lat": 38.68,
+        "lng": 66.9
+      },
+      {
+        "n": "Xinglong Station China",
+        "lat": 40.4,
+        "lng": 117.58
+      },
+      {
+        "n": "Square Kilometre Array Australia",
+        "lat": -26.7,
+        "lng": 116.66
+      },
+      {
+        "n": "CSIRO ATCA Narrabri Australia",
+        "lat": -30.31,
+        "lng": 149.57
+      },
+      {
+        "n": "Isaac Newton Telescope La Palma",
+        "lat": 28.75,
+        "lng": -17.89
+      },
+      {
+        "n": "Subaru Telescope Mauna Kea",
+        "lat": 19.825,
+        "lng": -155.476
+      },
+      {
+        "n": "Keck Observatory Mauna Kea",
+        "lat": 19.826,
+        "lng": -155.474
+      },
+      {
+        "n": "Gemini North Mauna Kea",
+        "lat": 19.823,
+        "lng": -155.469
       }
     ]
   },
@@ -506,6 +656,156 @@
         "n": "Plesetsk Kosmodrom (Archangel, Russland)",
         "lat": 62.93,
         "lng": 40.58
+      },
+      {
+        "n": "Cape Canaveral SLC-40 SpaceX Florida",
+        "lat": 28.56,
+        "lng": -80.58
+      },
+      {
+        "n": "Kennedy LC-39A NASA Florida",
+        "lat": 28.61,
+        "lng": -80.6
+      },
+      {
+        "n": "Vandenberg SFB SpaceX California",
+        "lat": 34.75,
+        "lng": -120.52
+      },
+      {
+        "n": "Boca Chica Starbase SpaceX Texas",
+        "lat": 25.99,
+        "lng": -97.16
+      },
+      {
+        "n": "Wallops Island Virginia USA",
+        "lat": 37.84,
+        "lng": -75.49
+      },
+      {
+        "n": "Kodiak Launch Alaska",
+        "lat": 57.44,
+        "lng": -152.34
+      },
+      {
+        "n": "Mahia Launch New Zealand",
+        "lat": -39.26,
+        "lng": 177.86
+      },
+      {
+        "n": "Kourou ELA-3 ESA Guyana",
+        "lat": 5.23,
+        "lng": -52.77
+      },
+      {
+        "n": "Baikonur Kosmodrom Site 1 Kazakhstan",
+        "lat": 45.92,
+        "lng": 63.34
+      },
+      {
+        "n": "Plesetsk Kosmodrom Russia",
+        "lat": 62.93,
+        "lng": 40.58
+      },
+      {
+        "n": "Vostochny Kosmodrom Russia",
+        "lat": 51.88,
+        "lng": 128.33
+      },
+      {
+        "n": "Jiuquan Satellite Launch China",
+        "lat": 40.96,
+        "lng": 100.29
+      },
+      {
+        "n": "Xichang Launch Center China",
+        "lat": 28.25,
+        "lng": 102.03
+      },
+      {
+        "n": "Taiyuan Launch Center China",
+        "lat": 38.85,
+        "lng": 111.61
+      },
+      {
+        "n": "Wenchang Space Launch China",
+        "lat": 19.61,
+        "lng": 110.95
+      },
+      {
+        "n": "Tanegashima Space Center Japan",
+        "lat": 30.38,
+        "lng": 130.97
+      },
+      {
+        "n": "Uchinoura Space Center Japan",
+        "lat": 31.25,
+        "lng": 131.08
+      },
+      {
+        "n": "Sriharikota ISRO India",
+        "lat": 13.73,
+        "lng": 80.23
+      },
+      {
+        "n": "Naro Space Center South Korea",
+        "lat": 34.43,
+        "lng": 127.54
+      },
+      {
+        "n": "Esrange Sweden suborbital",
+        "lat": 67.88,
+        "lng": 21.1
+      },
+      {
+        "n": "Alcantara Launch Brazil",
+        "lat": -2.37,
+        "lng": -44.4
+      },
+      {
+        "n": "Launch Site One Texas New Shepard",
+        "lat": 31.42,
+        "lng": -104.76
+      },
+      {
+        "n": "Yasny Russia Dnepr",
+        "lat": 51.21,
+        "lng": 59.85
+      },
+      {
+        "n": "Kapustin Yar Russia historic",
+        "lat": 48.57,
+        "lng": 45.8
+      },
+      {
+        "n": "San Marco Offshore Kenya",
+        "lat": -2.94,
+        "lng": 40.21
+      },
+      {
+        "n": "Hammaguir Algeria historic",
+        "lat": 30.88,
+        "lng": -3.17
+      },
+      {
+        "n": "Cape Canaveral LC-17 Delta historic",
+        "lat": 28.45,
+        "lng": -80.57
+      },
+      {
+        "n": "Svobodny Cosmodrome Russia old",
+        "lat": 51.69,
+        "lng": 128.15
+      },
+      {
+        "n": "ISAS Kagoshima Japan old",
+        "lat": 31.24,
+        "lng": 130.99
+      },
+      {
+        "n": "Launch Complex 41 Atlas Cape",
+        "lat": 28.58,
+        "lng": -80.58
       }
     ]
   },
@@ -761,6 +1061,156 @@
         "n": "ESRIN (ESA Earth Observation, Frascati)",
         "lat": 41.83,
         "lng": 12.67
+      },
+      {
+        "n": "Johnson Space Center Houston TX",
+        "lat": 29.56,
+        "lng": -95.09
+      },
+      {
+        "n": "Marshall Space Flight Center AL",
+        "lat": 34.65,
+        "lng": -86.66
+      },
+      {
+        "n": "Jet Propulsion Laboratory Pasadena",
+        "lat": 34.2,
+        "lng": -118.17
+      },
+      {
+        "n": "Goddard Space Flight Center MD",
+        "lat": 38.99,
+        "lng": -76.85
+      },
+      {
+        "n": "Ames Research Center California",
+        "lat": 37.41,
+        "lng": -122.06
+      },
+      {
+        "n": "Langley Research Center Virginia",
+        "lat": 37.08,
+        "lng": -76.36
+      },
+      {
+        "n": "Glenn Research Center Cleveland",
+        "lat": 41.42,
+        "lng": -81.86
+      },
+      {
+        "n": "Stennis Space Center Mississippi",
+        "lat": 30.36,
+        "lng": -89.6
+      },
+      {
+        "n": "White Sands Test Facility NM",
+        "lat": 32.5,
+        "lng": -106.34
+      },
+      {
+        "n": "Armstrong Flight Research Edwards",
+        "lat": 34.96,
+        "lng": -117.92
+      },
+      {
+        "n": "ESA ESOC Darmstadt Germany",
+        "lat": 49.87,
+        "lng": 8.62
+      },
+      {
+        "n": "ESA ESRIN Frascati Italy",
+        "lat": 41.83,
+        "lng": 12.67
+      },
+      {
+        "n": "ESA ESTEC Noordwijk Netherlands",
+        "lat": 52.22,
+        "lng": 4.43
+      },
+      {
+        "n": "ESA ESAC Madrid Spain",
+        "lat": 40.44,
+        "lng": -4.01
+      },
+      {
+        "n": "DLR Oberpfaffenhofen Germany",
+        "lat": 48.08,
+        "lng": 11.28
+      },
+      {
+        "n": "DLR Berlin Germany",
+        "lat": 52.52,
+        "lng": 13.32
+      },
+      {
+        "n": "ISRO HQ Bangalore India",
+        "lat": 12.97,
+        "lng": 77.61
+      },
+      {
+        "n": "ISRO Vikram Thiruvananthapuram",
+        "lat": 8.54,
+        "lng": 76.89
+      },
+      {
+        "n": "CNSA Beijing China",
+        "lat": 39.9,
+        "lng": 116.4
+      },
+      {
+        "n": "JAXA Tsukuba Space Center Japan",
+        "lat": 36.05,
+        "lng": 140.12
+      },
+      {
+        "n": "JAXA Sagamihara Kanagawa",
+        "lat": 35.56,
+        "lng": 139.44
+      },
+      {
+        "n": "Roscosmos Mission Control Korolev",
+        "lat": 55.91,
+        "lng": 37.8
+      },
+      {
+        "n": "CNES Toulouse France",
+        "lat": 43.57,
+        "lng": 1.48
+      },
+      {
+        "n": "ASI Roma Italy",
+        "lat": 41.9,
+        "lng": 12.51
+      },
+      {
+        "n": "UKSA Swindon UK",
+        "lat": 51.56,
+        "lng": -1.78
+      },
+      {
+        "n": "KARI Daejeon South Korea",
+        "lat": 36.48,
+        "lng": 127.34
+      },
+      {
+        "n": "Roskosmos Star City Training",
+        "lat": 55.94,
+        "lng": 38.0
+      },
+      {
+        "n": "Korolev NPO Energia Khimki",
+        "lat": 55.9,
+        "lng": 37.4
+      },
+      {
+        "n": "ISRO Space Center Ahmedabad",
+        "lat": 23.03,
+        "lng": 72.57
+      },
+      {
+        "n": "Chinese Academy Space Technology",
+        "lat": 39.92,
+        "lng": 116.45
       }
     ]
   },
@@ -1016,6 +1466,156 @@
         "n": "Spitzer Space Telescope (Launch KSC)",
         "lat": 28.59,
         "lng": -80.65
+      },
+      {
+        "n": "Hubble Launch Kennedy Space Center",
+        "lat": 28.59,
+        "lng": -80.65
+      },
+      {
+        "n": "JWST Launch Kourou Guiana",
+        "lat": 5.23,
+        "lng": -52.77
+      },
+      {
+        "n": "Spitzer Launch Cape Canaveral",
+        "lat": 28.56,
+        "lng": -80.57
+      },
+      {
+        "n": "Chandra X-ray Launch Cape",
+        "lat": 28.57,
+        "lng": -80.56
+      },
+      {
+        "n": "Fermi Gamma-ray Launch Cape",
+        "lat": 28.55,
+        "lng": -80.57
+      },
+      {
+        "n": "TESS Launch Cape Canaveral 2018",
+        "lat": 28.56,
+        "lng": -80.58
+      },
+      {
+        "n": "Kepler Launch Cape 2009",
+        "lat": 28.52,
+        "lng": -80.64
+      },
+      {
+        "n": "Gaia ESA Launch Kourou",
+        "lat": 5.24,
+        "lng": -52.78
+      },
+      {
+        "n": "Herschel ESA Launch Kourou",
+        "lat": 5.22,
+        "lng": -52.77
+      },
+      {
+        "n": "Planck ESA Launch Kourou",
+        "lat": 5.25,
+        "lng": -52.76
+      },
+      {
+        "n": "XMM-Newton ESA Launch Kourou",
+        "lat": 5.21,
+        "lng": -52.77
+      },
+      {
+        "n": "Integral ESA Launch Baikonur",
+        "lat": 45.92,
+        "lng": 63.35
+      },
+      {
+        "n": "WISE Launch Vandenberg",
+        "lat": 34.76,
+        "lng": -120.52
+      },
+      {
+        "n": "NuSTAR Launch Kwajalein Atoll",
+        "lat": 8.72,
+        "lng": 167.73
+      },
+      {
+        "n": "Swift Gamma Burst Launch Cape",
+        "lat": 28.53,
+        "lng": -80.59
+      },
+      {
+        "n": "Euclid ESA Launch Cape 2023",
+        "lat": 28.561,
+        "lng": -80.577
+      },
+      {
+        "n": "XRISM Japan Launch Tanegashima",
+        "lat": 30.39,
+        "lng": 130.98
+      },
+      {
+        "n": "Spektr-RG Launch Baikonur 2019",
+        "lat": 45.93,
+        "lng": 63.33
+      },
+      {
+        "n": "XPOSAT India Launch Sriharikota",
+        "lat": 13.73,
+        "lng": 80.24
+      },
+      {
+        "n": "Compton GRO Launch Cape",
+        "lat": 28.58,
+        "lng": -80.62
+      },
+      {
+        "n": "Rossi RXTE Launch Cape",
+        "lat": 28.54,
+        "lng": -80.57
+      },
+      {
+        "n": "Suzaku ASTRO-EII Uchinoura",
+        "lat": 31.25,
+        "lng": 131.08
+      },
+      {
+        "n": "Hitomi ASTRO-H Tanegashima",
+        "lat": 30.38,
+        "lng": 130.97
+      },
+      {
+        "n": "Roman Space Telescope planned Cape",
+        "lat": 28.62,
+        "lng": -80.62
+      },
+      {
+        "n": "Lynx X-ray planned Vandenberg",
+        "lat": 34.74,
+        "lng": -120.52
+      },
+      {
+        "n": "Origins Space Telescope planned",
+        "lat": 28.56,
+        "lng": -80.59
+      },
+      {
+        "n": "LISA Gravitationswellen planned",
+        "lat": 5.22,
+        "lng": -52.78
+      },
+      {
+        "n": "Athena ESA X-ray planned",
+        "lat": 5.23,
+        "lng": -52.775
+      },
+      {
+        "n": "GLAST Fermi Launch Cape GRB",
+        "lat": 28.52,
+        "lng": -80.65
+      },
+      {
+        "n": "IXO International X-ray Obs",
+        "lat": 28.51,
+        "lng": -80.63
       }
     ]
   },
@@ -1271,6 +1871,156 @@
         "n": "Kaali-Krater (Saaremaa, Estland)",
         "lat": 58.37,
         "lng": 22.67
+      },
+      {
+        "n": "Chicxulub Crater Yucatan Mexico",
+        "lat": 21.4,
+        "lng": -89.5
+      },
+      {
+        "n": "Vredefort Crater South Africa",
+        "lat": -27.0,
+        "lng": 27.5
+      },
+      {
+        "n": "Sudbury Basin Canada",
+        "lat": 46.6,
+        "lng": -81.2
+      },
+      {
+        "n": "Acraman Crater Australia",
+        "lat": -32.02,
+        "lng": 135.45
+      },
+      {
+        "n": "Manicouagan Quebec Canada",
+        "lat": 51.38,
+        "lng": -68.71
+      },
+      {
+        "n": "Popigai Siberia Russia",
+        "lat": 71.64,
+        "lng": 111.4
+      },
+      {
+        "n": "Chesapeake Bay Virginia USA",
+        "lat": 37.3,
+        "lng": -76.0
+      },
+      {
+        "n": "Morokweng South Africa",
+        "lat": -26.5,
+        "lng": 23.53
+      },
+      {
+        "n": "Kara Russia Arctic",
+        "lat": 69.1,
+        "lng": 64.18
+      },
+      {
+        "n": "Araguainha Brazil",
+        "lat": -16.78,
+        "lng": -52.99
+      },
+      {
+        "n": "Siljan Crater Sweden",
+        "lat": 61.02,
+        "lng": 14.88
+      },
+      {
+        "n": "Gosses Bluff Northern Territory",
+        "lat": -23.82,
+        "lng": 132.31
+      },
+      {
+        "n": "Ries Crater Noerdlingen Germany",
+        "lat": 48.88,
+        "lng": 10.62
+      },
+      {
+        "n": "Steinheim Crater Germany",
+        "lat": 48.72,
+        "lng": 10.07
+      },
+      {
+        "n": "Bosumtwi Crater Ghana",
+        "lat": -6.5,
+        "lng": -1.42
+      },
+      {
+        "n": "Tswaing Crater South Africa",
+        "lat": -25.41,
+        "lng": 28.08
+      },
+      {
+        "n": "Campo del Cielo Argentina",
+        "lat": -27.64,
+        "lng": -61.71
+      },
+      {
+        "n": "Barringer Meteor Crater Arizona",
+        "lat": 35.03,
+        "lng": -111.02
+      },
+      {
+        "n": "Wolf Creek Crater Australia",
+        "lat": -19.18,
+        "lng": 127.78
+      },
+      {
+        "n": "Kaali Crater Estonia",
+        "lat": 58.37,
+        "lng": 22.67
+      },
+      {
+        "n": "Lonar Crater Maharashtra India",
+        "lat": 19.97,
+        "lng": 76.51
+      },
+      {
+        "n": "Wabar Crater Saudi Arabia",
+        "lat": 21.5,
+        "lng": 50.47
+      },
+      {
+        "n": "Woodleigh Crater Western Australia",
+        "lat": -26.05,
+        "lng": 114.63
+      },
+      {
+        "n": "Puchezh-Katunki Russia",
+        "lat": 57.1,
+        "lng": 43.6
+      },
+      {
+        "n": "Saint Martin Manitoba Canada",
+        "lat": 51.78,
+        "lng": -98.53
+      },
+      {
+        "n": "Slate Islands Ontario Canada",
+        "lat": 48.67,
+        "lng": -87.0
+      },
+      {
+        "n": "Mjolnir Crater Barents Sea",
+        "lat": 73.8,
+        "lng": 29.7
+      },
+      {
+        "n": "Beaverhead Montana USA",
+        "lat": 44.95,
+        "lng": -113.0
+      },
+      {
+        "n": "Tookoonooka Queensland Australia",
+        "lat": -27.1,
+        "lng": 142.81
+      },
+      {
+        "n": "Tabun-Khara-Obo Mongolia",
+        "lat": 44.07,
+        "lng": 109.63
       }
     ]
   },
@@ -1526,6 +2276,156 @@
         "n": "Cherry Springs State Park (Pennsylvania, USA)",
         "lat": 41.66,
         "lng": -77.82
+      },
+      {
+        "n": "NamibRand Reserve Namibia",
+        "lat": -25.18,
+        "lng": 16.05
+      },
+      {
+        "n": "Aoraki Mackenzie Dark Sky NZ",
+        "lat": -44.0,
+        "lng": 170.15
+      },
+      {
+        "n": "Elqui Valley Dark Sky Chile",
+        "lat": -30.0,
+        "lng": -70.75
+      },
+      {
+        "n": "Cherry Springs State Park PA",
+        "lat": 41.66,
+        "lng": -77.82
+      },
+      {
+        "n": "Big Bend National Park Texas",
+        "lat": 29.25,
+        "lng": -103.25
+      },
+      {
+        "n": "Death Valley Dark Sky California",
+        "lat": 36.5,
+        "lng": -117.08
+      },
+      {
+        "n": "Natural Bridges Utah USA",
+        "lat": 37.6,
+        "lng": -110.01
+      },
+      {
+        "n": "Galloway Forest Scotland",
+        "lat": 55.15,
+        "lng": -4.37
+      },
+      {
+        "n": "Exmoor National Park England",
+        "lat": 51.15,
+        "lng": -3.6
+      },
+      {
+        "n": "Brecon Beacons Wales",
+        "lat": 51.88,
+        "lng": -3.44
+      },
+      {
+        "n": "Kerry Dark Sky Reserve Ireland",
+        "lat": 51.93,
+        "lng": -10.23
+      },
+      {
+        "n": "Mayo Dark Sky Park Ireland",
+        "lat": 53.91,
+        "lng": -9.63
+      },
+      {
+        "n": "Rhon Biosphaerenreservat Germany",
+        "lat": 50.42,
+        "lng": 10.0
+      },
+      {
+        "n": "Westhavelland Brandenburg Germany",
+        "lat": 52.7,
+        "lng": 12.0
+      },
+      {
+        "n": "IDA Alqueva Reserve Portugal",
+        "lat": 38.2,
+        "lng": -7.52
+      },
+      {
+        "n": "La Palma Dark Sky Spanien",
+        "lat": 28.76,
+        "lng": -17.88
+      },
+      {
+        "n": "Teide National Park Tenerife",
+        "lat": 28.27,
+        "lng": -16.64
+      },
+      {
+        "n": "Pic du Midi Observatory France",
+        "lat": 42.93,
+        "lng": 0.14
+      },
+      {
+        "n": "Haute-Provence Observatory France",
+        "lat": 43.93,
+        "lng": 5.71
+      },
+      {
+        "n": "Calar Alto Spain",
+        "lat": 37.22,
+        "lng": -2.55
+      },
+      {
+        "n": "Hortobagy Hungary Dark Sky",
+        "lat": 47.6,
+        "lng": 21.13
+      },
+      {
+        "n": "Ayers Rock Uluru Australia",
+        "lat": -25.34,
+        "lng": 131.03
+      },
+      {
+        "n": "Warrumbungle NP NSW Australia",
+        "lat": -31.28,
+        "lng": 149.13
+      },
+      {
+        "n": "Zselic Starry Sky Hungary",
+        "lat": 46.2,
+        "lng": 17.83
+      },
+      {
+        "n": "Izera Dark Sky Poland",
+        "lat": 50.85,
+        "lng": 15.38
+      },
+      {
+        "n": "Atacama Cerro Mamalluca Chile",
+        "lat": -29.98,
+        "lng": -70.73
+      },
+      {
+        "n": "Vorpommersche Boddenlandschaft Germany",
+        "lat": 54.4,
+        "lng": 13.2
+      },
+      {
+        "n": "Ahterma Reserve Turkey",
+        "lat": 37.5,
+        "lng": 29.1
+      },
+      {
+        "n": "Mauna Kea Summit Hawaii",
+        "lat": 19.82,
+        "lng": -155.47
+      },
+      {
+        "n": "Kielder Observatory Northumberland",
+        "lat": 55.23,
+        "lng": -2.61
       }
     ]
   }

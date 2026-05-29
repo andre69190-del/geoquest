@@ -201,6 +201,126 @@
       {
         "n": "Kalzit",
         "c": "Sedimentär"
+      },
+      {
+        "n": "Bimsstein",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Dunit",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Brekzie",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Evaporit",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Trachyt",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Dolomitstein",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Gruenschiefer",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Loesskalkstein",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Pechstein",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Kersantit",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Monzonit",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Alkalifeldspat",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Subgrauwacke",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Wackestone",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Flyschwacke",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Graptolithen-Schiefer",
+        "c": "Sedimentaer"
+      },
+      {
+        "n": "Chalzedon",
+        "c": "Sedimentaer/Kiesel"
+      },
+      {
+        "n": "Schwarzschiefer",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Blauschiefer",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Kalkmarmor",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Granulitgruppenstein",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Whiteschist",
+        "c": "Metamorph"
+      },
+      {
+        "n": "Suevit",
+        "c": "Impaktgestein"
+      },
+      {
+        "n": "Moldavit",
+        "c": "Impaktgestein"
+      },
+      {
+        "n": "Kataklasit",
+        "c": "Impaktgestein/Bruchzone"
+      },
+      {
+        "n": "Mylonit",
+        "c": "Metamorph (Bruchzone)"
+      },
+      {
+        "n": "Tonalith",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Trondhjemit",
+        "c": "Magmatisch"
+      },
+      {
+        "n": "Enderbith",
+        "c": "Magmatisch (Granulitfazies)"
+      },
+      {
+        "n": "Norit",
+        "c": "Magmatisch"
       }
     ]
   },
@@ -406,6 +526,126 @@
       {
         "n": "Sizilien (Italien)",
         "c": "Eurasische & Afrikanische Platte"
+      },
+      {
+        "n": "Pyrenaaen (Spanien/Frankreich)",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Kaukasus (Georgien/Russland)",
+        "c": "Eurasische & Arabische Platte"
+      },
+      {
+        "n": "Karpaten (Rumaenien)",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Rotes Meer",
+        "c": "Afrikanische & Arabische Platte"
+      },
+      {
+        "n": "Azoren",
+        "c": "Nordamerikanische & Eurasische Platte"
+      },
+      {
+        "n": "New Zealand",
+        "c": "Australische & Pazifische Platte"
+      },
+      {
+        "n": "Papua-Neuguinea",
+        "c": "Australische & Pazifische Platte"
+      },
+      {
+        "n": "Mittelmeer",
+        "c": "Afrikanische & Eurasische Platte"
+      },
+      {
+        "n": "Totes Meer Graben",
+        "c": "Arabische & Afrikanische Platte"
+      },
+      {
+        "n": "Baikalsee-Rift",
+        "c": "Eurasische Platte (Innerer Rift)"
+      },
+      {
+        "n": "Ostafrikanischer Graben",
+        "c": "Afrikanische & Somali-Platte"
+      },
+      {
+        "n": "Anden",
+        "c": "Nazca & Suedamerikanische Platte"
+      },
+      {
+        "n": "Appalachian (USA)",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Atlas-Gebirge (Marokko)",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Zagros (Iran)",
+        "c": "Arabische & Eurasische Platte"
+      },
+      {
+        "n": "Hindu Kush (Afghanistan)",
+        "c": "Eurasische & Indo-Australische Platte"
+      },
+      {
+        "n": "Kunlun Shan (China)",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Rocky Mountains (USA)",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Cascades (USA/Kanada)",
+        "c": "Juan de Fuca & Nordamerikanische Platte"
+      },
+      {
+        "n": "Aleutian Islands (Alaska)",
+        "c": "Pazifische & Nordamerikanische Platte"
+      },
+      {
+        "n": "Tonga-Graben",
+        "c": "Pazifische & Australische Platte"
+      },
+      {
+        "n": "Mariana-Graben",
+        "c": "Pazifische & Philippinen-Platte"
+      },
+      {
+        "n": "Kamtschatka (Russland)",
+        "c": "Pazifische & Eurasische Platte"
+      },
+      {
+        "n": "Sierra Madre Occidental (Mexiko)",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Ryukyu Islands (Japan)",
+        "c": "Philippinen & Eurasische Platte"
+      },
+      {
+        "n": "Corinth Rift (Griechenland)",
+        "c": "Eurasische Platte (Extensional)"
+      },
+      {
+        "n": "Pannonian Becken (Ungarn)",
+        "c": "Eurasische Platte (Extensional)"
+      },
+      {
+        "n": "Tyrrhenisches Meer (Italien)",
+        "c": "Eurasische Platte (Extensional)"
+      },
+      {
+        "n": "Aegaeis",
+        "c": "Eurasische & Anatolische Platte"
+      },
+      {
+        "n": "Suedatlantischer Ruecken",
+        "c": "Suedamerikanische & Afrikanische Platte"
       }
     ]
   },
@@ -611,6 +851,126 @@
       {
         "n": "Kassiterit",
         "c": "Zinn-Gewinnung"
+      },
+      {
+        "n": "Rhodochrosit",
+        "c": "Mangan-Karbonat"
+      },
+      {
+        "n": "Galenit",
+        "c": "Blei-Gewinnung"
+      },
+      {
+        "n": "Bornit",
+        "c": "Kupfer-Gewinnung"
+      },
+      {
+        "n": "Limonit",
+        "c": "Eisen-Gewinnung"
+      },
+      {
+        "n": "Haematit",
+        "c": "Eisen-Gewinnung"
+      },
+      {
+        "n": "Chromit",
+        "c": "Chrom-Gewinnung"
+      },
+      {
+        "n": "Kolumbit-Tantalit",
+        "c": "Tantal-Gewinnung"
+      },
+      {
+        "n": "Spodumen",
+        "c": "Lithium-Gewinnung"
+      },
+      {
+        "n": "Lepidolith",
+        "c": "Lithium-Gewinnung"
+      },
+      {
+        "n": "Petalit",
+        "c": "Lithium-Gewinnung"
+      },
+      {
+        "n": "Atacamit",
+        "c": "Kupfer-Chlorid"
+      },
+      {
+        "n": "Diopsid",
+        "c": "Pyroxen-Gruppe"
+      },
+      {
+        "n": "Enstatit",
+        "c": "Pyroxen-Gruppe"
+      },
+      {
+        "n": "Hornblende",
+        "c": "Amphibol-Gruppe"
+      },
+      {
+        "n": "Aktinolith",
+        "c": "Amphibol-Gruppe"
+      },
+      {
+        "n": "Monazit",
+        "c": "Seltene Erden"
+      },
+      {
+        "n": "Xenotim",
+        "c": "Seltene Erden"
+      },
+      {
+        "n": "Allanit",
+        "c": "Seltene Erden"
+      },
+      {
+        "n": "Beryll",
+        "c": "Beryllium-Gewinnung"
+      },
+      {
+        "n": "Smithsonit",
+        "c": "Zink-Karbonat"
+      },
+      {
+        "n": "Glaukophan",
+        "c": "Blauschiefer-Mineral"
+      },
+      {
+        "n": "Coltan (Niobit-Tantalit)",
+        "c": "Tantal/Niob-Gewinnung"
+      },
+      {
+        "n": "Loellingit",
+        "c": "Arsen-Mineral"
+      },
+      {
+        "n": "Arsenopyrit",
+        "c": "Arsen-Sulfid"
+      },
+      {
+        "n": "Tennantit",
+        "c": "Kupfer-Arsen-Sulfid"
+      },
+      {
+        "n": "Tetraedrit",
+        "c": "Kupfer-Antimon-Sulfid"
+      },
+      {
+        "n": "Antimonit",
+        "c": "Antimon-Gewinnung"
+      },
+      {
+        "n": "Bismuthinit",
+        "c": "Bismut-Gewinnung"
+      },
+      {
+        "n": "Molybdaenit",
+        "c": "Molybdaen-Gewinnung"
+      },
+      {
+        "n": "Nickelin",
+        "c": "Nickel-Arsenid"
       }
     ]
   },
@@ -832,6 +1192,110 @@
       {
         "n": "Ulawun",
         "c": "Papua-Neuguinea"
+      },
+      {
+        "n": "Eyjafjallajokull",
+        "c": "Island"
+      },
+      {
+        "n": "Grimsvotn",
+        "c": "Island"
+      },
+      {
+        "n": "Katla",
+        "c": "Island"
+      },
+      {
+        "n": "Mauna Loa",
+        "c": "USA (Hawaii)"
+      },
+      {
+        "n": "Mount Shasta",
+        "c": "USA (Kalifornien)"
+      },
+      {
+        "n": "Pichincha",
+        "c": "Ecuador"
+      },
+      {
+        "n": "Santa Maria",
+        "c": "Guatemala"
+      },
+      {
+        "n": "Pacaya",
+        "c": "Guatemala"
+      },
+      {
+        "n": "Cerro Negro",
+        "c": "Nicaragua"
+      },
+      {
+        "n": "Masaya",
+        "c": "Nicaragua"
+      },
+      {
+        "n": "Montserrat Soufriere Hills",
+        "c": "Montserrat (GB)"
+      },
+      {
+        "n": "Ambrym",
+        "c": "Vanuatu"
+      },
+      {
+        "n": "Yasur",
+        "c": "Vanuatu"
+      },
+      {
+        "n": "Tolbachik",
+        "c": "Russland (Kamtschatka)"
+      },
+      {
+        "n": "Avachinsky",
+        "c": "Russland (Kamtschatka)"
+      },
+      {
+        "n": "Deception Island Vulkan",
+        "c": "Antarktis"
+      },
+      {
+        "n": "Fogo",
+        "c": "Kap Verde"
+      },
+      {
+        "n": "Cameroon Mountain",
+        "c": "Kamerun"
+      },
+      {
+        "n": "Ol Doinyo Lengai",
+        "c": "Tansania"
+      },
+      {
+        "n": "Irazu",
+        "c": "Costa Rica"
+      },
+      {
+        "n": "Pico Fogo",
+        "c": "Kap Verde"
+      },
+      {
+        "n": "La Soufriere",
+        "c": "Saint Vincent (Karibik)"
+      },
+      {
+        "n": "Montagne Pelee",
+        "c": "Martinique (Frankreich)"
+      },
+      {
+        "n": "Soufriere Hills",
+        "c": "Montserrat (Grossbritannien)"
+      },
+      {
+        "n": "Wrangell (Alaska)",
+        "c": "USA (Alaska)"
+      },
+      {
+        "n": "Spurr (Alaska)",
+        "c": "USA (Alaska)"
       }
     ]
   },
@@ -1049,6 +1513,114 @@
       {
         "n": "Zugspitze",
         "c": "Bayerische Alpen"
+      },
+      {
+        "n": "Huascaran",
+        "c": "Anden"
+      },
+      {
+        "n": "Grossglockner",
+        "c": "Alpen"
+      },
+      {
+        "n": "Mount Ararat",
+        "c": "Ostanatolisches Hochland"
+      },
+      {
+        "n": "Damavand",
+        "c": "Elburs"
+      },
+      {
+        "n": "Kinabalu",
+        "c": "Crocker Range (Borneo)"
+      },
+      {
+        "n": "Aoraki/Mount Cook",
+        "c": "Suedalpen (Neuseeland)"
+      },
+      {
+        "n": "Teide",
+        "c": "Teide-Massiv (Teneriffa)"
+      },
+      {
+        "n": "Dufourspitze",
+        "c": "Alpen"
+      },
+      {
+        "n": "Ras Dashen",
+        "c": "Semien Mountains"
+      },
+      {
+        "n": "Hkakabo Razi",
+        "c": "Kumon Range (Myanmar)"
+      },
+      {
+        "n": "Olymp",
+        "c": "Pierien-Gebirge (Griechenland)"
+      },
+      {
+        "n": "Gran Paradiso",
+        "c": "Graischen Alpen"
+      },
+      {
+        "n": "Pic de Vignemale",
+        "c": "Pyrenaaen"
+      },
+      {
+        "n": "Mulhacen",
+        "c": "Sierra Nevada (Spanien)"
+      },
+      {
+        "n": "Koshtan-Tau",
+        "c": "Kaukasus (Russland)"
+      },
+      {
+        "n": "Pushkin Peak",
+        "c": "Kaukasus (Russland)"
+      },
+      {
+        "n": "Djanga-Tau",
+        "c": "Kaukasus (Georgien)"
+      },
+      {
+        "n": "Weisshorn",
+        "c": "Alpen (Schweiz)"
+      },
+      {
+        "n": "Dent Blanche",
+        "c": "Alpen (Schweiz)"
+      },
+      {
+        "n": "Grandes Jorasses",
+        "c": "Alpen (Frankreich)"
+      },
+      {
+        "n": "Aiguille du Geant",
+        "c": "Alpen (Frankreich)"
+      },
+      {
+        "n": "Grosses Wiesbachhorn",
+        "c": "Alpen (Oesterreich)"
+      },
+      {
+        "n": "Korab",
+        "c": "Dinariden (Nordmazedonien)"
+      },
+      {
+        "n": "Musala",
+        "c": "Rhodopengebirge (Bulgarien)"
+      },
+      {
+        "n": "Triglav",
+        "c": "Julische Alpen (Slowenien)"
+      },
+      {
+        "n": "Durmitor",
+        "c": "Dinariden (Montenegro)"
+      },
+      {
+        "n": "Lovchen",
+        "c": "Dinariden (Montenegro)"
       }
     ]
   },
@@ -1254,6 +1826,126 @@
       {
         "n": "Korallenriff Great Barrier Reef",
         "c": "Biogene Bildung"
+      },
+      {
+        "n": "Great Barrier Reef",
+        "c": "Korallenriff-Wachstum"
+      },
+      {
+        "n": "Victoriafaelle",
+        "c": "Spaltenerosion (Sambesi)"
+      },
+      {
+        "n": "Paricutin (Mexiko)",
+        "c": "Vulkanischer Ausbruch (1943)"
+      },
+      {
+        "n": "Aurora Borealis",
+        "c": "Sonnenwinde + Magnetfeld"
+      },
+      {
+        "n": "Totes Meer",
+        "c": "Tektonisches Senkungsgebiet"
+      },
+      {
+        "n": "Salar de Uyuni (Bolivien)",
+        "c": "Salzflat (ausgetrockneter See)"
+      },
+      {
+        "n": "Niagara Falls",
+        "c": "Gletschererosion + Nachlaeufereffekt"
+      },
+      {
+        "n": "Plitvice Seen (Kroatien)",
+        "c": "Kalkstein-Travertin-Ablagerung"
+      },
+      {
+        "n": "The Wave (Arizona, USA)",
+        "c": "Windschliff in Aeoilschem Sandstein"
+      },
+      {
+        "n": "Fly Geyser (Nevada, USA)",
+        "c": "Geothermal + Mineralablagerungen"
+      },
+      {
+        "n": "Pamukkale (Tuerkei)",
+        "c": "Thermalwasser + Kalkstein-Travertin"
+      },
+      {
+        "n": "Blue Hole (Belize)",
+        "c": "Zusammengebrochene Karsthohle"
+      },
+      {
+        "n": "Moeraki Boulders (NZ)",
+        "c": "Konkretions-Bildung (Sediment)"
+      },
+      {
+        "n": "Ha Long Bay (Vietnam)",
+        "c": "Kalkstein-Karst-Erosion"
+      },
+      {
+        "n": "Torres del Paine (Chile)",
+        "c": "Magmatische Intrusion + Gletschererosion"
+      },
+      {
+        "n": "Roraima-Tafelberg (Venezuela)",
+        "c": "Praekambrisches Sandstein-Plateau"
+      },
+      {
+        "n": "Petrified Forest (Arizona)",
+        "c": "Holzversteinerung (Kieselersatz)"
+      },
+      {
+        "n": "Bryce Canyon (Utah)",
+        "c": "Frost-Erosion in Kalkstein"
+      },
+      {
+        "n": "Antelope Canyon (Arizona)",
+        "c": "Wasserosion in Navajo-Sandstein"
+      },
+      {
+        "n": "Richat Structure (Mauretanien)",
+        "c": "Erosion + Meteoriteneinschlag (Debatte)"
+      },
+      {
+        "n": "Waitomo-Hoehlen (NZ)",
+        "c": "Kalkstein-Karst + Gluehwuermchen"
+      },
+      {
+        "n": "Giants Causeway (Nordirland)",
+        "c": "Basalt-Saeulenkristallisation"
+      },
+      {
+        "n": "Bungle Bungles (Australien)",
+        "c": "Sandstein-Erosion + Algenmuster"
+      },
+      {
+        "n": "Kata Tjuta (Australien)",
+        "c": "Erosionsresistentes Konglomerat"
+      },
+      {
+        "n": "Tsingy (Madagaskar)",
+        "c": "Kalkstein-Nadelkarst-Erosion"
+      },
+      {
+        "n": "Eisfjord Groenland",
+        "c": "Gletscherkalben + Fjordbildung"
+      },
+      {
+        "n": "Cappadocia (Tuerkei)",
+        "c": "Vulkanasche + Winderosion"
+      },
+      {
+        "n": "Socotra Drachenbaeume",
+        "c": "Isolierte Evolution (Insel)"
+      },
+      {
+        "n": "Camargue (Frankreich)",
+        "c": "Flussdelta + Gezeitenwirkung"
+      },
+      {
+        "n": "Watt (Nordsee)",
+        "c": "Gezeitenablagerung + Sediment"
       }
     ]
   },
@@ -1459,6 +2151,126 @@
       {
         "n": "Ichthyosaurus",
         "c": "Mesozoikum"
+      },
+      {
+        "n": "Diplodocus",
+        "c": "Jura (Mesozoikum)"
+      },
+      {
+        "n": "Plesiosaurier",
+        "c": "Jura-Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Megalodon",
+        "c": "Miozaen-Pliozaen (Kaenozoikum)"
+      },
+      {
+        "n": "Smilodon (Saebelzahntiger)",
+        "c": "Pleistozaen (Kaenozoikum)"
+      },
+      {
+        "n": "Quetzalcoatlus (Flugsaurier)",
+        "c": "Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Allosaurus",
+        "c": "Jura (Mesozoikum)"
+      },
+      {
+        "n": "Mosasaurus",
+        "c": "Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Eohippus (Urpferd)",
+        "c": "Eozaen (Kaenozoikum)"
+      },
+      {
+        "n": "Pakicetus (Urwal)",
+        "c": "Eozaen (Kaenozoikum)"
+      },
+      {
+        "n": "Homo habilis",
+        "c": "Pleistozaen (Kaenozoikum)"
+      },
+      {
+        "n": "Lingula (Brachiopod)",
+        "c": "Ordovizium-Heute"
+      },
+      {
+        "n": "Seeigel fossil",
+        "c": "Jura-Heute"
+      },
+      {
+        "n": "Korallen fossil",
+        "c": "Ordovizium-Heute"
+      },
+      {
+        "n": "Neohibolites (Belemnit)",
+        "c": "Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Fusuliniden",
+        "c": "Karbon-Perm (Palaeozoikum)"
+      },
+      {
+        "n": "Coelacanth (lebend)",
+        "c": "Devon bis Heute"
+      },
+      {
+        "n": "Velociraptor",
+        "c": "Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Microraptor",
+        "c": "Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Archaeocyatha",
+        "c": "Kambrium (Palaeozoikum)"
+      },
+      {
+        "n": "Chitinozoen",
+        "c": "Ordovizium-Devon (Palaeozoikum)"
+      },
+      {
+        "n": "Conodonten",
+        "c": "Kambrium-Trias (Palaeozoikum-Mesozoikum)"
+      },
+      {
+        "n": "Belemniten",
+        "c": "Jura-Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Rudisten",
+        "c": "Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Inoceramiden",
+        "c": "Kreide (Mesozoikum)"
+      },
+      {
+        "n": "Nannofossilien (Coccolith)",
+        "c": "Trias-Heute"
+      },
+      {
+        "n": "Diatomeen",
+        "c": "Jura-Heute"
+      },
+      {
+        "n": "Radiolaria",
+        "c": "Kambrium-Heute"
+      },
+      {
+        "n": "Foraminiferen",
+        "c": "Kambrium-Heute"
+      },
+      {
+        "n": "Crinoiden",
+        "c": "Ordovizium-Heute"
+      },
+      {
+        "n": "Anomalocaris",
+        "c": "Kambrium (Palaeozoikum)"
       }
     ]
   },
@@ -1664,6 +2476,126 @@
       {
         "n": "Haitian-Erdbeben (Haiti)",
         "c": "2010"
+      },
+      {
+        "n": "Tangshan (China)",
+        "c": "1976"
+      },
+      {
+        "n": "Messina (Italien)",
+        "c": "1908"
+      },
+      {
+        "n": "Kanto (Japan)",
+        "c": "1923"
+      },
+      {
+        "n": "Haiyuan (China)",
+        "c": "1920"
+      },
+      {
+        "n": "Tohoku (Japan)",
+        "c": "2011"
+      },
+      {
+        "n": "Nepal (Gorkha)",
+        "c": "2015"
+      },
+      {
+        "n": "Haiti",
+        "c": "2010"
+      },
+      {
+        "n": "Sumatra",
+        "c": "2004"
+      },
+      {
+        "n": "Kobe (Japan)",
+        "c": "1995"
+      },
+      {
+        "n": "Northridge (USA)",
+        "c": "1994"
+      },
+      {
+        "n": "Loma Prieta (USA)",
+        "c": "1989"
+      },
+      {
+        "n": "Spitak (Armenien)",
+        "c": "1988"
+      },
+      {
+        "n": "Mexico City",
+        "c": "1985"
+      },
+      {
+        "n": "Nicaragua",
+        "c": "1972"
+      },
+      {
+        "n": "Peru",
+        "c": "1970"
+      },
+      {
+        "n": "Bam (Iran)",
+        "c": "2003"
+      },
+      {
+        "n": "Kashmir (Pakistan)",
+        "c": "2005"
+      },
+      {
+        "n": "Sichuan (China)",
+        "c": "2008"
+      },
+      {
+        "n": "Turkey-Syria",
+        "c": "2023"
+      },
+      {
+        "n": "San Francisco",
+        "c": "1906"
+      },
+      {
+        "n": "Valdivia (Chile)",
+        "c": "1960"
+      },
+      {
+        "n": "Alaska",
+        "c": "1964"
+      },
+      {
+        "n": "Assam (Indien)",
+        "c": "1950"
+      },
+      {
+        "n": "Kamtschatka (Russland)",
+        "c": "1952"
+      },
+      {
+        "n": "Nias (Indonesien)",
+        "c": "2005"
+      },
+      {
+        "n": "Palu (Sulawesi)",
+        "c": "2018"
+      },
+      {
+        "n": "Lombok (Indonesien)",
+        "c": "2018"
+      },
+      {
+        "n": "Izmit (Tuerkei)",
+        "c": "1999"
+      },
+      {
+        "n": "Athens (Griechenland)",
+        "c": "1999"
+      },
+      {
+        "n": "El Salvador",
+        "c": "2001"
       }
     ]
   },
@@ -1869,6 +2801,126 @@
       {
         "n": "Bimsstein",
         "c": "Schleifmittel & Leichtbeton"
+      },
+      {
+        "n": "Quarzit",
+        "c": "Strassenbau / Feuerfest"
+      },
+      {
+        "n": "Alabaster",
+        "c": "Skulptur / Dekoration"
+      },
+      {
+        "n": "Anthrazit",
+        "c": "Hochwertige Kohle / Heizung"
+      },
+      {
+        "n": "Steinkohle",
+        "c": "Energiegewinnung / Koks"
+      },
+      {
+        "n": "Braunkohle",
+        "c": "Stromerzeugung (Kraftwerk)"
+      },
+      {
+        "n": "Torf",
+        "c": "Energiegewinnung / Gartenbau"
+      },
+      {
+        "n": "Bernstein",
+        "c": "Schmuck / Fossilienfunde"
+      },
+      {
+        "n": "Flint (Feuerstein)",
+        "c": "Steinzeit-Werkzeug / Feuerschlagen"
+      },
+      {
+        "n": "Steinsalz",
+        "c": "Speisesalz / Chemie"
+      },
+      {
+        "n": "Speckstein",
+        "c": "Skulptur / Herdplatte"
+      },
+      {
+        "n": "Phonolith",
+        "c": "Hartsteinpflaster"
+      },
+      {
+        "n": "Chert (Hornstein)",
+        "c": "Steinzeit-Werkzeug"
+      },
+      {
+        "n": "Tonschiefer",
+        "c": "Schreibtafel / Fuellung"
+      },
+      {
+        "n": "Brekzie",
+        "c": "Dekorstein"
+      },
+      {
+        "n": "Chloritschiefer",
+        "c": "Talkgewinnung / Fuellmittel"
+      },
+      {
+        "n": "Feuerstein",
+        "c": "Steinzeit-Werkzeug"
+      },
+      {
+        "n": "Feuerfestton",
+        "c": "Hochofenauskleidung"
+      },
+      {
+        "n": "Rohpumice",
+        "c": "Leichtbeton"
+      },
+      {
+        "n": "Perlit",
+        "c": "Daemmstoff / Gaertnererde"
+      },
+      {
+        "n": "Vermiculit",
+        "c": "Daemmstoff / Gaertnererde"
+      },
+      {
+        "n": "Montmorillonit",
+        "c": "Katzenstreu / Abdichtung"
+      },
+      {
+        "n": "Vermiculit Mineral",
+        "c": "Daemmstoff / Brandschutz"
+      },
+      {
+        "n": "Celestin",
+        "c": "Strontium-Gewinnung"
+      },
+      {
+        "n": "Wulfenit",
+        "c": "Blei-/Molybdaen-Erz"
+      },
+      {
+        "n": "Scheelite",
+        "c": "Wolfram-Gewinnung"
+      },
+      {
+        "n": "Columbite",
+        "c": "Niob-Gewinnung"
+      },
+      {
+        "n": "Eclogit",
+        "c": "Wissenschaftliche Forschung"
+      },
+      {
+        "n": "Karneol",
+        "c": "Schmuckstein / Siegel"
+      },
+      {
+        "n": "Serpentinit",
+        "c": "Baumaterial / Deko (Ofenstein)"
+      },
+      {
+        "n": "Tremolit-Asbest",
+        "c": "Isoliermaterial (historisch)"
       }
     ]
   },
@@ -2074,6 +3126,126 @@
       {
         "n": "Riff (Korallenriff)",
         "c": "Biogene Ablagerung"
+      },
+      {
+        "n": "Delta (Nildelta)",
+        "c": "Flusssedimentablagerung"
+      },
+      {
+        "n": "Fjord (Norwegen)",
+        "c": "Gletschererosion + Meeresuberflutung"
+      },
+      {
+        "n": "Karst (Slowenien)",
+        "c": "Loesungserosion in Kalkstein"
+      },
+      {
+        "n": "Loess-Ebene (China)",
+        "c": "Windablagerung feiner Sedimente"
+      },
+      {
+        "n": "Tafelberg (Venezuela)",
+        "c": "Erosionsresistentes Sandstein-Plateau"
+      },
+      {
+        "n": "Drumlin (Irland)",
+        "c": "Subglazialer Moraehenhuegel"
+      },
+      {
+        "n": "Esker (Skandinavien)",
+        "c": "Eiszeitlicher Schmelzwassertunnel"
+      },
+      {
+        "n": "Moraeene (Alpen)",
+        "c": "Gletschermoraeene-Ablagerung"
+      },
+      {
+        "n": "Kettlehole (Kanada)",
+        "c": "Eisblock-Abschmelz-Loch in Sediment"
+      },
+      {
+        "n": "Alluvialfaecher (Himalaja)",
+        "c": "Flussfaecher an Gebirgsfuss"
+      },
+      {
+        "n": "Inselberg (Sahara)",
+        "c": "Erosionsresistenter Haertling"
+      },
+      {
+        "n": "Wuestenpflaster (Reg)",
+        "c": "Deflation feiner Partikel"
+      },
+      {
+        "n": "Playa (USA)",
+        "c": "Ausgetrockneter Wuestensee"
+      },
+      {
+        "n": "Wadi (Arabien)",
+        "c": "Trockenflussbett"
+      },
+      {
+        "n": "Barchan-Duene",
+        "c": "Halbmondfoermige Windduene"
+      },
+      {
+        "n": "Seif-Duene (Libyen)",
+        "c": "Laengslaeufige Windduene"
+      },
+      {
+        "n": "Bodenpolygon (Sibirien)",
+        "c": "Permafrost-Frostriss"
+      },
+      {
+        "n": "Pingo (Kanada)",
+        "c": "Permafrost-Eishuegel"
+      },
+      {
+        "n": "Thermokarst (Sibirien)",
+        "c": "Permafrost-Abschmelzen"
+      },
+      {
+        "n": "Tidal Flat (Wattenmeer)",
+        "c": "Gezeitenablagerung"
+      },
+      {
+        "n": "Tombolo (Korsika)",
+        "c": "Sandsporn zwischen Insel und Festland"
+      },
+      {
+        "n": "Stack (Schottland)",
+        "c": "Wellenerosion (abgetrennter Fels)"
+      },
+      {
+        "n": "Brandungsplattform",
+        "c": "Wellen-Abrasion"
+      },
+      {
+        "n": "Riff-Lagune (Australien)",
+        "c": "Korallenriff-Wachstum"
+      },
+      {
+        "n": "Schottische Hochmoore",
+        "c": "Torf + Sphagnum-Moos Akkumulation"
+      },
+      {
+        "n": "Praerie (USA/Kanada)",
+        "c": "Tiefgras durch kontinentales Klima"
+      },
+      {
+        "n": "Savanne (Afrika)",
+        "c": "Saisonale Niederschlaege + Feuer"
+      },
+      {
+        "n": "Tundra (Sibirien)",
+        "c": "Permafrost + Kaeltestress"
+      },
+      {
+        "n": "Salzpfanne (Kalahari)",
+        "c": "Verdunstung in Trockengebiet"
+      },
+      {
+        "n": "Camargue (Frankreich)",
+        "c": "Flussdelta + Brackwasser"
       }
     ]
   },
@@ -2279,6 +3451,126 @@
       {
         "n": "Smaragd",
         "c": "Grün"
+      },
+      {
+        "n": "Haematit",
+        "c": "Rot-Grau"
+      },
+      {
+        "n": "Galenit",
+        "c": "Bleigrau"
+      },
+      {
+        "n": "Sphalerit",
+        "c": "Dunkelbraun-Schwarz"
+      },
+      {
+        "n": "Chalkopyrit",
+        "c": "Messinggelb (irisierend)"
+      },
+      {
+        "n": "Tuerkis",
+        "c": "Tuerksblau"
+      },
+      {
+        "n": "Orpiment",
+        "c": "Orangegelb"
+      },
+      {
+        "n": "Realgar",
+        "c": "Orangerot"
+      },
+      {
+        "n": "Epidot",
+        "c": "Pistaziengruen"
+      },
+      {
+        "n": "Pyrop",
+        "c": "Dunkelrot (Granat)"
+      },
+      {
+        "n": "Grossular",
+        "c": "Gruen (Granat)"
+      },
+      {
+        "n": "Titanit",
+        "c": "Honiggelb-Braun"
+      },
+      {
+        "n": "Korund (Rubin)",
+        "c": "Rot"
+      },
+      {
+        "n": "Korund (Saphir)",
+        "c": "Blau"
+      },
+      {
+        "n": "Schwarzer Turmalin",
+        "c": "Schwarz"
+      },
+      {
+        "n": "Vesuvianit",
+        "c": "Olivgruen-Braun"
+      },
+      {
+        "n": "Andalusit",
+        "c": "Olive-Gruen-Rot"
+      },
+      {
+        "n": "Zirkon",
+        "c": "Farblos-Braeunlich"
+      },
+      {
+        "n": "Celestin",
+        "c": "Blassblau"
+      },
+      {
+        "n": "Baryt",
+        "c": "Weiss/Farblos"
+      },
+      {
+        "n": "Quarz",
+        "c": "Farblos/Weiss"
+      },
+      {
+        "n": "Gips",
+        "c": "Weiss/Farblos"
+      },
+      {
+        "n": "Aragonit",
+        "c": "Weiss/Gelblich"
+      },
+      {
+        "n": "Enargit",
+        "c": "Dunkelgrau/Schwarz"
+      },
+      {
+        "n": "Bornit",
+        "c": "Pfauenschwanz-Irisierend"
+      },
+      {
+        "n": "Idokras",
+        "c": "Gelbgruen/Braun"
+      },
+      {
+        "n": "Sugilith",
+        "c": "Violett/Pink"
+      },
+      {
+        "n": "Tanzanit",
+        "c": "Blauviolett"
+      },
+      {
+        "n": "Lepidolith",
+        "c": "Violett/Lila"
+      },
+      {
+        "n": "Stibnit",
+        "c": "Blaugrau (metallisch)"
+      },
+      {
+        "n": "Molybdaenit",
+        "c": "Silbergrau"
       }
     ]
   },
@@ -2484,6 +3776,126 @@
       {
         "n": "Sri Lanka",
         "c": "Indo-Australische Platte"
+      },
+      {
+        "n": "Groenland",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Irland",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Tuerkei",
+        "c": "Anatolische Platte"
+      },
+      {
+        "n": "Korea",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Neuseeland (Suedinsel)",
+        "c": "Pazifische Platte"
+      },
+      {
+        "n": "Galapagos",
+        "c": "Nazca-Platte"
+      },
+      {
+        "n": "Kanada",
+        "c": "Nordamerikanische Platte"
+      },
+      {
+        "n": "Mexiko",
+        "c": "Nordamerikanische & Karibische Platte"
+      },
+      {
+        "n": "Kuba",
+        "c": "Karibische Platte"
+      },
+      {
+        "n": "Peru",
+        "c": "Suedamerikanische Platte"
+      },
+      {
+        "n": "Chile",
+        "c": "Suedamerikanische Platte"
+      },
+      {
+        "n": "Aegypten (Sinai)",
+        "c": "Arabische Platte"
+      },
+      {
+        "n": "Aethiopien",
+        "c": "Afrikanische & Somali-Platte"
+      },
+      {
+        "n": "Tansania",
+        "c": "Afrikanische & Somali-Platte"
+      },
+      {
+        "n": "Japan (Honshu)",
+        "c": "Eurasische & Pazifische Platte"
+      },
+      {
+        "n": "Papua-Neuguinea",
+        "c": "Australische & Pazifische Platte"
+      },
+      {
+        "n": "Tonga",
+        "c": "Pazifische & Australische Platte"
+      },
+      {
+        "n": "Argentinien",
+        "c": "Suedamerikanische Platte"
+      },
+      {
+        "n": "Suedafrika",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Russland (Sibirien)",
+        "c": "Eurasische Platte"
+      },
+      {
+        "n": "Kanarische Inseln",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Kap Verde",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Falklandinseln",
+        "c": "Suedamerikanische Platte"
+      },
+      {
+        "n": "Suedsandwichinseln",
+        "c": "Scotia-Platte"
+      },
+      {
+        "n": "Kerguelen",
+        "c": "Indo-Australische Platte"
+      },
+      {
+        "n": "Heard Island",
+        "c": "Indo-Australische Platte"
+      },
+      {
+        "n": "South Georgia",
+        "c": "Scotia-Platte"
+      },
+      {
+        "n": "Bouvetinsel",
+        "c": "Afrikanische Platte"
+      },
+      {
+        "n": "Macquarie Island",
+        "c": "Australische & Pazifische Platte"
+      },
+      {
+        "n": "Pitcairn",
+        "c": "Pazifische Platte"
       }
     ]
   },
@@ -2689,6 +4101,126 @@
       {
         "n": "Optymistychna Cave",
         "c": "Ukraine"
+      },
+      {
+        "n": "Mammoth Cave",
+        "c": "USA"
+      },
+      {
+        "n": "Optimisticheskaya",
+        "c": "Ukraine"
+      },
+      {
+        "n": "Lechuguilla",
+        "c": "USA"
+      },
+      {
+        "n": "Waitomo",
+        "c": "Neuseeland"
+      },
+      {
+        "n": "Mulu Clearwater",
+        "c": "Malaysia (Borneo)"
+      },
+      {
+        "n": "Krubera-Voronja",
+        "c": "Georgien"
+      },
+      {
+        "n": "Veryovkina",
+        "c": "Georgien"
+      },
+      {
+        "n": "Sistema Cheve",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Cueva de Villa Luz",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Sima de las Cotorras",
+        "c": "Mexiko"
+      },
+      {
+        "n": "Dachstein Mammuthohle",
+        "c": "Oesterreich"
+      },
+      {
+        "n": "Hoehloch",
+        "c": "Schweiz"
+      },
+      {
+        "n": "Aven Armand",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Grotte de Lascaux",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Cueva de Altamira",
+        "c": "Spanien"
+      },
+      {
+        "n": "Coves del Drac",
+        "c": "Spanien (Mallorca)"
+      },
+      {
+        "n": "Cueva del Viento",
+        "c": "Spanien (Teneriffa)"
+      },
+      {
+        "n": "Grotta di Nettuno",
+        "c": "Italien (Sardinien)"
+      },
+      {
+        "n": "Grotta Gigante",
+        "c": "Italien"
+      },
+      {
+        "n": "Skocjan",
+        "c": "Slowenien"
+      },
+      {
+        "n": "Majlis al Jinn",
+        "c": "Oman"
+      },
+      {
+        "n": "Jeita Grotto",
+        "c": "Libanon"
+      },
+      {
+        "n": "Aggtelek Baradla",
+        "c": "Ungarn"
+      },
+      {
+        "n": "Cueva de Aitzbitarte",
+        "c": "Spanien (Baskenland)"
+      },
+      {
+        "n": "Phong Nha Cave",
+        "c": "Vietnam"
+      },
+      {
+        "n": "Wookey Hole",
+        "c": "England"
+      },
+      {
+        "n": "Cox's Cave Cheddar",
+        "c": "England"
+      },
+      {
+        "n": "Grotte de Font-de-Gaume",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Grotte de Niaux",
+        "c": "Frankreich"
+      },
+      {
+        "n": "Cueva de La Pileta",
+        "c": "Spanien"
       }
     ]
   },
@@ -2893,6 +4425,126 @@
       },
       {
         "n": "Chrysoberyll",
+        "c": "Orthorhombisch"
+      },
+      {
+        "n": "Halit (NaCl)",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Galenit (PbS)",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Pyrit (FeS2)",
+        "c": "Kubisch (Wuerfel)"
+      },
+      {
+        "n": "Diamant (C)",
+        "c": "Kubisch"
+      },
+      {
+        "n": "Fluorit (CaF2)",
+        "c": "Kubisch (Oktaeder)"
+      },
+      {
+        "n": "Sphalerit",
+        "c": "Kubisch (Tetraeder)"
+      },
+      {
+        "n": "Quarz (SiO2)",
+        "c": "Trigonal (Hexagonal)"
+      },
+      {
+        "n": "Kalzit (CaCO3)",
+        "c": "Trigonal (Rhomboeder)"
+      },
+      {
+        "n": "Korund (Al2O3)",
+        "c": "Trigonal"
+      },
+      {
+        "n": "Haematit",
+        "c": "Trigonal"
+      },
+      {
+        "n": "Hornblende",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Augit",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Gips (CaSO4)",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Orthoklas",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Apatit",
+        "c": "Hexagonal"
+      },
+      {
+        "n": "Beryll",
+        "c": "Hexagonal"
+      },
+      {
+        "n": "Graphit",
+        "c": "Hexagonal (geschichtet)"
+      },
+      {
+        "n": "Diopsid",
+        "c": "Monoklin"
+      },
+      {
+        "n": "Enstatit",
+        "c": "Orthorhombisch"
+      },
+      {
+        "n": "Plagioklas",
+        "c": "Triklin"
+      },
+      {
+        "n": "Wollastonit",
+        "c": "Triklin"
+      },
+      {
+        "n": "Anorthit",
+        "c": "Triklin"
+      },
+      {
+        "n": "Mikroklin",
+        "c": "Triklin"
+      },
+      {
+        "n": "Cassiterit",
+        "c": "Tetragonal"
+      },
+      {
+        "n": "Anatas",
+        "c": "Tetragonal"
+      },
+      {
+        "n": "Zirkon (Mineral)",
+        "c": "Tetragonal"
+      },
+      {
+        "n": "Covellin",
+        "c": "Hexagonal"
+      },
+      {
+        "n": "Cinnabarit",
+        "c": "Trigonal"
+      },
+      {
+        "n": "Tellurit",
+        "c": "Orthorhombisch"
+      },
+      {
+        "n": "Bismuthinit",
         "c": "Orthorhombisch"
       }
     ]
@@ -3099,6 +4751,126 @@
       {
         "n": "Appalachen",
         "c": "Kontinent-Kontinent-Kollision (alt)"
+      },
+      {
+        "n": "Kordilleren (USA)",
+        "c": "Subduktion Pazifik unter Nordamerika"
+      },
+      {
+        "n": "Atlas",
+        "c": "Kollision Afrika-Eurasien"
+      },
+      {
+        "n": "Zagros (Iran)",
+        "c": "Kollision Arabien-Eurasien"
+      },
+      {
+        "n": "Appalachian",
+        "c": "Palaeozoische Kontinent-Kollision"
+      },
+      {
+        "n": "Ural",
+        "c": "Variszische Kollision Europa-Sibirien"
+      },
+      {
+        "n": "Skandinavische Kaledoniden",
+        "c": "Kaledonische Kollision (Silur-Devon)"
+      },
+      {
+        "n": "Pyrenaaen",
+        "c": "Kollision Iberische-Eurasische Platte"
+      },
+      {
+        "n": "Neuseeland Suedalpen",
+        "c": "Kollision Australische-Pazifische Platte"
+      },
+      {
+        "n": "Harz (Deutschland)",
+        "c": "Variszische Heraushebung"
+      },
+      {
+        "n": "Schwarzwald (Deutschland)",
+        "c": "Tertiaere Heraushebung + Erosion"
+      },
+      {
+        "n": "Tibetanisches Plateau",
+        "c": "Kontinent-Kontinent-Kollision"
+      },
+      {
+        "n": "Grosser Rift (Afrika)",
+        "c": "Divergente Platte (Rifting)"
+      },
+      {
+        "n": "Hawaii-Kette",
+        "c": "Hotspot (Platte bewegt sich)"
+      },
+      {
+        "n": "Cascades (USA)",
+        "c": "Subduktion Juan de Fuca"
+      },
+      {
+        "n": "Altai-Gebirge",
+        "c": "Kollisionszone Sibirien-Kasachstan"
+      },
+      {
+        "n": "Kunlun Shan",
+        "c": "Abscherhebung durch Indien-Kollision"
+      },
+      {
+        "n": "Elburz (Iran)",
+        "c": "Kollision Arabien-Eurasien"
+      },
+      {
+        "n": "Qinling (China)",
+        "c": "Palaeozoische Kollision + Tertiaer"
+      },
+      {
+        "n": "Patagonian Andes",
+        "c": "Subduktion + Erosion"
+      },
+      {
+        "n": "Boehm. Masse",
+        "c": "Variszische Kollision"
+      },
+      {
+        "n": "Pyrenaaen (Baskisch)",
+        "c": "Transpression Iberien-Eurasien"
+      },
+      {
+        "n": "Jura-Gebirge",
+        "c": "Fernwirkung Alpine Subduktion"
+      },
+      {
+        "n": "Vosges (Frankreich)",
+        "c": "Tertiaere Heraushebung (Rheingraben)"
+      },
+      {
+        "n": "Armorica (Bretagne)",
+        "c": "Variszische Kollision"
+      },
+      {
+        "n": "Massif Central (Frankreich)",
+        "c": "Variszische Heraushebung"
+      },
+      {
+        "n": "Stara Planina (Bulgarien)",
+        "c": "Alpidische Orogenese"
+      },
+      {
+        "n": "Balkangebirge",
+        "c": "Alpidische Orogenese"
+      },
+      {
+        "n": "Rhodopen",
+        "c": "Alpidische Extension + Metamorphose"
+      },
+      {
+        "n": "Rila-Pirion (Bulgarien)",
+        "c": "Alpidische Orogenese"
+      },
+      {
+        "n": "Transylvania Alpen",
+        "c": "Alpidische Kollision"
       }
     ]
   }

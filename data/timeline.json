@@ -252,6 +252,156 @@
         "n": "Taiwan 2024",
         "year": 2024,
         "hint": "Stärke 7,4 — Hualien; stärkstes Beben seit 25 Jahren"
+      },
+      {
+        "n": "Tohoku 2011",
+        "year": 2011,
+        "hint": "Stärke 9,0 — Fukushima Reaktor"
+      },
+      {
+        "n": "Turkey-Syria 2023",
+        "year": 2023,
+        "hint": "Stärke 7,8 — 50.000 Tote"
+      },
+      {
+        "n": "Kanto 1923",
+        "year": 1923,
+        "hint": "Stärke 7,9 — Tokio 140.000 Tote"
+      },
+      {
+        "n": "Kashmir 2005",
+        "year": 2005,
+        "hint": "Stärke 7,6 — 87.000 Tote Pakistan"
+      },
+      {
+        "n": "Mexico City 1985",
+        "year": 1985,
+        "hint": "Stärke 8,1 — 10.000 Tote"
+      },
+      {
+        "n": "Assam 1950",
+        "year": 1950,
+        "hint": "Stärke 8,6 — Indien/Tibet"
+      },
+      {
+        "n": "Loma Prieta 1989",
+        "year": 1989,
+        "hint": "Stärke 6,9 — USA World Series Beben"
+      },
+      {
+        "n": "Palu 2018",
+        "year": 2018,
+        "hint": "Stärke 7,5 — Sulawesi Tsunami"
+      },
+      {
+        "n": "Flores 1992",
+        "year": 1992,
+        "hint": "Stärke 7,5 — Indonesien Tsunami"
+      },
+      {
+        "n": "Papua Neuguinea 1998",
+        "year": 1998,
+        "hint": "Stärke 7,1 — Tsunami 2.200 Tote"
+      },
+      {
+        "n": "Maule Chile 2010",
+        "year": 2010,
+        "hint": "Stärke 8,8 — 500 Tote Tsunami"
+      },
+      {
+        "n": "Albania 2019",
+        "year": 2019,
+        "hint": "Stärke 6,4 — Durres 50 Tote"
+      },
+      {
+        "n": "Croatia 2020",
+        "year": 2020,
+        "hint": "Stärke 6,4 — Petrinja Weihnachten"
+      },
+      {
+        "n": "Erzurum 1939 Tuerkei",
+        "year": 1939,
+        "hint": "Stärke 7,8 — 33.000 Tote Osttuerkei"
+      },
+      {
+        "n": "Ashgabat 1948 Turkmenistan",
+        "year": 1948,
+        "hint": "Stärke 7,3 — 110.000 Tote"
+      },
+      {
+        "n": "Skopje 1963 Jugoslawien",
+        "year": 1963,
+        "hint": "Stärke 6,1 — 1.000 Tote Mazedonien"
+      },
+      {
+        "n": "Peru Ancash 1970",
+        "year": 1970,
+        "hint": "Stärke 7,9 — 70.000 Tote"
+      },
+      {
+        "n": "Guatemala 1976",
+        "year": 1976,
+        "hint": "Stärke 7,5 — 23.000 Tote"
+      },
+      {
+        "n": "Friuli 1976 Italien",
+        "year": 1976,
+        "hint": "Stärke 6,5 — 1.000 Tote Norditalien"
+      },
+      {
+        "n": "Irpinia 1980 Italien",
+        "year": 1980,
+        "hint": "Stärke 6,9 — 2.900 Tote Kampanien"
+      },
+      {
+        "n": "El Asnam 1980 Algerien",
+        "year": 1980,
+        "hint": "Stärke 7,1 — 3.500 Tote"
+      },
+      {
+        "n": "Erzincan 1992 Tuerkei",
+        "year": 1992,
+        "hint": "Stärke 6,7 — 600 Tote"
+      },
+      {
+        "n": "Dinar 1995 Tuerkei",
+        "year": 1995,
+        "hint": "Stärke 6,1 — 90 Tote"
+      },
+      {
+        "n": "El Nino Colombia 1999",
+        "year": 1999,
+        "hint": "Stärke 6,2 — 2.000 Tote Armenia"
+      },
+      {
+        "n": "Bhuj 2001 Indien",
+        "year": 2001,
+        "hint": "Stärke 7,7 — 20.000 Tote Gujarat"
+      },
+      {
+        "n": "Boumerdes 2003 Algerien",
+        "year": 2003,
+        "hint": "Stärke 6,8 — 2.000 Tote"
+      },
+      {
+        "n": "Padang 2009 Indonesien",
+        "year": 2009,
+        "hint": "Stärke 7,6 — 1.100 Tote Sumatra"
+      },
+      {
+        "n": "Yushu 2010 China",
+        "year": 2010,
+        "hint": "Stärke 6,9 — 2.700 Tote Qinghai"
+      },
+      {
+        "n": "Christchurch 2011 NZ",
+        "year": 2011,
+        "hint": "Stärke 6,3 — 185 Tote Innenstadt"
+      },
+      {
+        "n": "Van 2011 Tuerkei",
+        "year": 2011,
+        "hint": "Stärke 7,1 — 600 Tote Osttuerkei"
       }
     ]
   },
@@ -508,6 +658,156 @@
         "n": "Estadio Azteca (1966)",
         "year": 1966,
         "hint": "Mexiko-Stadt — WM 1970 und 1986"
+      },
+      {
+        "n": "Colosseum Rom",
+        "year": 80,
+        "hint": "Flavisches Amphitheater 50.000 Zuschauer"
+      },
+      {
+        "n": "Panathinaiko-Stadion Athen",
+        "year": 1896,
+        "hint": "Erstes modernes Olympiastadion"
+      },
+      {
+        "n": "Maracana Einweihung",
+        "year": 1950,
+        "hint": "WM Brasilien — 200.000 Zuschauer"
+      },
+      {
+        "n": "Wembley alt",
+        "year": 1923,
+        "hint": "Erster FA Cup Final Wembley"
+      },
+      {
+        "n": "Camp Nou Barcelona",
+        "year": 1957,
+        "hint": "Eröffnung groesstes Europas"
+      },
+      {
+        "n": "Estadio Azteca",
+        "year": 1966,
+        "hint": "WM 1970 und 1986 Finale"
+      },
+      {
+        "n": "Bird's Nest Peking",
+        "year": 2008,
+        "hint": "Olympiastadion Sommerspiele"
+      },
+      {
+        "n": "Allianz Arena München",
+        "year": 2005,
+        "hint": "FC Bayern Heimstätte"
+      },
+      {
+        "n": "Wembley neu",
+        "year": 2007,
+        "hint": "Neubau 90.000 Plätze England"
+      },
+      {
+        "n": "Nationaal Stadion Tokio",
+        "year": 2021,
+        "hint": "Olympiastadion 2020 Verzögerung"
+      },
+      {
+        "n": "Luzhniki Moskau",
+        "year": 1956,
+        "hint": "WM 2018 Finale Russland"
+      },
+      {
+        "n": "Melbourne Cricket Ground",
+        "year": 1853,
+        "hint": "Ältestes grosses Sportstadion"
+      },
+      {
+        "n": "Narendra Modi Stadium",
+        "year": 2020,
+        "hint": "Grösstes Stadion der Welt 132.000"
+      },
+      {
+        "n": "Rungrado Pjöngjang",
+        "year": 1989,
+        "hint": "Nordkorea 114.000 Plätze"
+      },
+      {
+        "n": "Bernabeu Neubau",
+        "year": 2023,
+        "hint": "Renoviertes Bernabeu Real Madrid"
+      },
+      {
+        "n": "SoFi Stadium LA",
+        "year": 2020,
+        "hint": "Teuerster Stadienbau USA 5,5 Mrd"
+      },
+      {
+        "n": "Allegiant Stadium Las Vegas",
+        "year": 2020,
+        "hint": "NFL Raiders Heimstätte"
+      },
+      {
+        "n": "FNB Stadium Soccer City",
+        "year": 2010,
+        "hint": "WM 2010 Finale SA Kapazität 95.000"
+      },
+      {
+        "n": "Centenario Montevideo",
+        "year": 1930,
+        "hint": "Erstes WM-Finale aller Zeiten"
+      },
+      {
+        "n": "Old Trafford Manchester",
+        "year": 1910,
+        "hint": "Theatre of Dreams Man United"
+      },
+      {
+        "n": "Stamford Bridge Chelsea",
+        "year": 1905,
+        "hint": "Chelsea Heimstätte"
+      },
+      {
+        "n": "Anfield Liverpool",
+        "year": 1884,
+        "hint": "Liverpool FC The Kop"
+      },
+      {
+        "n": "Fenway Park Boston",
+        "year": 1912,
+        "hint": "Aeltestes MLB-Stadion noch aktiv"
+      },
+      {
+        "n": "Yankee Stadium",
+        "year": 2009,
+        "hint": "Baseball Cathedral New York"
+      },
+      {
+        "n": "Lambeau Field",
+        "year": 1957,
+        "hint": "Green Bay Packers Frozen Tundra"
+      },
+      {
+        "n": "Los Angeles Coliseum",
+        "year": 1923,
+        "hint": "Zweimal Olympia 1932 und 1984"
+      },
+      {
+        "n": "Michigan Stadium Big House",
+        "year": 1927,
+        "hint": "Groesstes College-Stadion 107.000"
+      },
+      {
+        "n": "Stade Geoffroy-Guichard Saint-Etienne",
+        "year": 1931,
+        "hint": "Chaudron Cauldron"
+      },
+      {
+        "n": "Estadi Olimpic Lluis Companys Barcelona",
+        "year": 1929,
+        "hint": "Olympia 1992 Hauptstadion"
+      },
+      {
+        "n": "Maracana WM-Finale 2014",
+        "year": 2014,
+        "hint": "Deutschland gegen Argentinien Schlusspfiff"
       }
     ]
   },
@@ -764,6 +1064,156 @@
         "n": "Europa Clipper Start",
         "year": 2024,
         "hint": "NASA-Sonde zur Untersuchung von Jupiters Mond Europa"
+      },
+      {
+        "n": "Kopernikanisches Modell",
+        "year": 1543,
+        "hint": "Heliozentrisches Weltbild Kopernikus"
+      },
+      {
+        "n": "Galileis Teleskop",
+        "year": 1609,
+        "hint": "Erste astronomische Teleskopbeobachtung"
+      },
+      {
+        "n": "Jupitersmondefür",
+        "year": 1610,
+        "hint": "Galileo entdeckt Io Europa Ganymed Kallisto"
+      },
+      {
+        "n": "Kepler 1. Gesetz",
+        "year": 1609,
+        "hint": "Planeten umkreisen Sonne in Ellipsen"
+      },
+      {
+        "n": "Newtons Gravitationsgesetz",
+        "year": 1687,
+        "hint": "Principia Mathematica"
+      },
+      {
+        "n": "Entdeckung Uranus",
+        "year": 1781,
+        "hint": "William Herschel entdeckt 7. Planeten"
+      },
+      {
+        "n": "Entdeckung Neptun",
+        "year": 1846,
+        "hint": "Adams Le Verrier berechnen neuen Planeten"
+      },
+      {
+        "n": "Entdeckung Pluto",
+        "year": 1930,
+        "hint": "Clyde Tombaugh Lowell Observatory"
+      },
+      {
+        "n": "Erster Kunstsatellit Sputnik",
+        "year": 1957,
+        "hint": "UdSSR läuft um Erde 92 Tage"
+      },
+      {
+        "n": "Gagarin erster Mensch im Weltraum",
+        "year": 1961,
+        "hint": "Wostok 1 108 Minuten"
+      },
+      {
+        "n": "Apollo 11 Mondlandung",
+        "year": 1969,
+        "hint": "Armstrong Aldrin Collins Moon"
+      },
+      {
+        "n": "Hubble Weltraumteleskop Start",
+        "year": 1990,
+        "hint": "Erste scharfe Bilder aus dem All"
+      },
+      {
+        "n": "Erste Exoplaneten-Entdeckung",
+        "year": 1992,
+        "hint": "Wolszczan und Frail Pulsar PSR 1257"
+      },
+      {
+        "n": "Erste Exoplanet um Sonne-ähnlichen Stern",
+        "year": 1995,
+        "hint": "Mayor Queloz 51 Pegasi b"
+      },
+      {
+        "n": "Mars Pathfinder Sojourner",
+        "year": 1997,
+        "hint": "Erster Mars Rover"
+      },
+      {
+        "n": "Entdeckung Dunkler Energie",
+        "year": 1998,
+        "hint": "Beschleunigte Expansion Perlmutter"
+      },
+      {
+        "n": "Internationales Raumstation Start",
+        "year": 1998,
+        "hint": "ISS erste Module Sarja und Unity"
+      },
+      {
+        "n": "Cassini Saturn Ankunft",
+        "year": 2004,
+        "hint": "13 Jahre Saturn-Erkundung"
+      },
+      {
+        "n": "New Horizons Pluto Flyby",
+        "year": 2015,
+        "hint": "Erste Nahaufnahmen Plutos"
+      },
+      {
+        "n": "Erster Gravitationswellennachweis",
+        "year": 2015,
+        "hint": "LIGO GW150914 zwei schwarze Löcher"
+      },
+      {
+        "n": "Erstes schwarzes Loch Foto M87",
+        "year": 2019,
+        "hint": "Event Horizon Telescope Ring"
+      },
+      {
+        "n": "JWST erstes Bild",
+        "year": 2022,
+        "hint": "James Webb tiefste Infrarotbilder"
+      },
+      {
+        "n": "Artemis I Mondflug",
+        "year": 2022,
+        "hint": "Erster unbemannter Artemis-Flug"
+      },
+      {
+        "n": "Chang'e 4 Mondrückseite",
+        "year": 2019,
+        "hint": "Erste Landung auf Mondrückseite"
+      },
+      {
+        "n": "Mars Ingenuity erster Flug",
+        "year": 2021,
+        "hint": "Erster Motorflug auf anderem Planeten"
+      },
+      {
+        "n": "James Webb Erstwissenschaft",
+        "year": 2022,
+        "hint": "Tiefstes Infrarotbild Galaxienhaufen"
+      },
+      {
+        "n": "Chandrayaan-3 Mondsuedpol",
+        "year": 2023,
+        "hint": "Indiens erste Mondlandung"
+      },
+      {
+        "n": "Voyager 1 interstellarer Raum",
+        "year": 2012,
+        "hint": "Erstes von Menschen gebautes Objekt im interstellaren"
+      },
+      {
+        "n": "Perseverance Mars Landung",
+        "year": 2021,
+        "hint": "Jezero Krater nach Leben suchen"
+      },
+      {
+        "n": "Parker Solar Probe Sonnenkorona",
+        "year": 2021,
+        "hint": "Erste Mission die Korona beruehrt"
       }
     ]
   },
@@ -1020,6 +1470,156 @@
         "n": "Apple Vision Pro",
         "year": 2024,
         "hint": "Räumlicher Computer — visionOS, Eye- und Hand-Tracking"
+      },
+      {
+        "n": "ENIAC erster Computer",
+        "year": 1945,
+        "hint": "Erster elektronischer Grossrechner USA"
+      },
+      {
+        "n": "Transistor Erfindung Bell Labs",
+        "year": 1947,
+        "hint": "Bardeen Brattain Shockley Nobel"
+      },
+      {
+        "n": "FORTRAN erste Hochsprache",
+        "year": 1957,
+        "hint": "IBM John Backus kompilierbare Sprache"
+      },
+      {
+        "n": "COBOL Geschaeftssprache",
+        "year": 1959,
+        "hint": "Grace Hopper Business Language"
+      },
+      {
+        "n": "First Commercial Modem",
+        "year": 1958,
+        "hint": "Bell 103 Telefonmodem 110 Baud"
+      },
+      {
+        "n": "ASCII Standard",
+        "year": 1963,
+        "hint": "7-Bit Zeichencode fuer Computer"
+      },
+      {
+        "n": "Arpanet erste Daten",
+        "year": 1969,
+        "hint": "Vorlaeufer des Internet UCSB-UCLA"
+      },
+      {
+        "n": "Intel 4004 erster Mikroprozessor",
+        "year": 1971,
+        "hint": "4-Bit CPU 2300 Transistoren"
+      },
+      {
+        "n": "Altair 8800 Hobbycomputer",
+        "year": 1975,
+        "hint": "Ausloeser Heimcomputer-Revolution"
+      },
+      {
+        "n": "Apple II Heimcomputer",
+        "year": 1977,
+        "hint": "Steve Jobs Steve Wozniak"
+      },
+      {
+        "n": "VisiCalc erste Tabellenkalkulation",
+        "year": 1979,
+        "hint": "Killer App fuer Heimcomputer"
+      },
+      {
+        "n": "IBM PC 5150",
+        "year": 1981,
+        "hint": "Gründung des PC-Standards"
+      },
+      {
+        "n": "Commodore 64",
+        "year": 1982,
+        "hint": "Meistverkaufter Computer aller Zeiten"
+      },
+      {
+        "n": "DNS Domain Name System",
+        "year": 1984,
+        "hint": "Menschenlesbare Webadressen"
+      },
+      {
+        "n": "Macintosh 128K Apple",
+        "year": 1984,
+        "hint": "Erster Mac mit grafischer Oberflaeche"
+      },
+      {
+        "n": "Microsoft Windows 1.0",
+        "year": 1985,
+        "hint": "Erste Windows-Version"
+      },
+      {
+        "n": "World Wide Web Tim Berners-Lee",
+        "year": 1991,
+        "hint": "HTTP HTML URL"
+      },
+      {
+        "n": "Linux Kernel Linus Torvalds",
+        "year": 1991,
+        "hint": "Open Source Unix-Klon"
+      },
+      {
+        "n": "Mosaic Webbrowser",
+        "year": 1993,
+        "hint": "Erster grafischer Webbrowser"
+      },
+      {
+        "n": "Java Programmiersprache",
+        "year": 1995,
+        "hint": "Sun Microsystems Write Once Run Anywhere"
+      },
+      {
+        "n": "Google Suchmaschine",
+        "year": 1998,
+        "hint": "Sergey Brin Larry Page Stanford"
+      },
+      {
+        "n": "Napster P2P Musik",
+        "year": 1999,
+        "hint": "Erster bekannter P2P Filesharing"
+      },
+      {
+        "n": "Wikipedia online",
+        "year": 2001,
+        "hint": "Jimmy Wales Larry Sanger freie Enzyklopaedie"
+      },
+      {
+        "n": "iPhone erster Launch",
+        "year": 2007,
+        "hint": "Steve Jobs revolutionaeres Smartphone"
+      },
+      {
+        "n": "Android 1.0",
+        "year": 2008,
+        "hint": "Google Open Source Smartphone OS"
+      },
+      {
+        "n": "GitHub online",
+        "year": 2008,
+        "hint": "Git-basiertes Code-Hosting"
+      },
+      {
+        "n": "iPad Tablet Apple",
+        "year": 2010,
+        "hint": "Neues Geraeteformat Post-PC"
+      },
+      {
+        "n": "ChatGPT OpenAI",
+        "year": 2022,
+        "hint": "Groesstes KI-Sprachmodell der Oeffentlichkeit"
+      },
+      {
+        "n": "GPT-4 OpenAI",
+        "year": 2023,
+        "hint": "Multimodales KI-Modell"
+      },
+      {
+        "n": "Claude 3 Anthropic",
+        "year": 2024,
+        "hint": "KI-Assistent fuer sicheres AI"
       }
     ]
   }

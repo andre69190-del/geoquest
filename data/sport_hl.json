@@ -202,6 +202,126 @@
       {
         "name": "Paris-Marathon (Frankreich)",
         "val": 1976
+      },
+      {
+        "name": "New York City Marathon USA",
+        "val": 1970
+      },
+      {
+        "name": "Berlin Marathon Deutschland",
+        "val": 1974
+      },
+      {
+        "name": "Chicago Marathon USA",
+        "val": 1977
+      },
+      {
+        "name": "Tokyo Marathon Japan",
+        "val": 2007
+      },
+      {
+        "name": "Paris Marathon Frankreich",
+        "val": 1976
+      },
+      {
+        "name": "London Marathon England",
+        "val": 1981
+      },
+      {
+        "name": "Stockholm Marathon Schweden",
+        "val": 1979
+      },
+      {
+        "name": "Vienna Marathon Oesterreich",
+        "val": 1984
+      },
+      {
+        "name": "Amsterdam Marathon Niederlande",
+        "val": 1975
+      },
+      {
+        "name": "Rome Marathon Italien",
+        "val": 1986
+      },
+      {
+        "name": "Barcelona Marathon Spanien",
+        "val": 1978
+      },
+      {
+        "name": "Athens Classic Marathon Griechenland",
+        "val": 1983
+      },
+      {
+        "name": "Fukuoka Marathon Japan oldest",
+        "val": 1947
+      },
+      {
+        "name": "Kosice Peace Marathon Slovakia",
+        "val": 1924
+      },
+      {
+        "name": "Yonkers Marathon USA oldest",
+        "val": 1907
+      },
+      {
+        "name": "Lake Biwa Marathon Japan",
+        "val": 1946
+      },
+      {
+        "name": "Antwerp Marathon Belgium",
+        "val": 1920
+      },
+      {
+        "name": "Pikes Peak Marathon USA",
+        "val": 1956
+      },
+      {
+        "name": "Two Oceans Marathon South Africa",
+        "val": 1970
+      },
+      {
+        "name": "Comrades Marathon South Africa",
+        "val": 1921
+      },
+      {
+        "name": "Melbourne Marathon Australia",
+        "val": 1978
+      },
+      {
+        "name": "Honolulu Marathon USA",
+        "val": 1973
+      },
+      {
+        "name": "Los Angeles Marathon USA",
+        "val": 1986
+      },
+      {
+        "name": "Vancouver Marathon Canada",
+        "val": 1972
+      },
+      {
+        "name": "Dubai Marathon UAE",
+        "val": 2000
+      },
+      {
+        "name": "Cape Town Marathon SA",
+        "val": 1979
+      },
+      {
+        "name": "Warsaw Marathon Poland",
+        "val": 1979
+      },
+      {
+        "name": "Prague Marathon Czech",
+        "val": 1995
+      },
+      {
+        "name": "Bangkok Marathon Thailand",
+        "val": 1988
+      },
+      {
+        "name": "Taipei Marathon Taiwan",
+        "val": 1986
       }
     ]
   },
@@ -408,6 +528,126 @@
       {
         "name": "FNB Stadium (Johannesburg, Südafrika)",
         "val": 95
+      },
+      {
+        "name": "Melbourne Cricket Ground Australia",
+        "val": 100024
+      },
+      {
+        "name": "Estadio Azteca Mexico",
+        "val": 87523
+      },
+      {
+        "name": "Camp Nou Barcelona pre-renovation",
+        "val": 99354
+      },
+      {
+        "name": "Wembley London England",
+        "val": 90000
+      },
+      {
+        "name": "Michigan Stadium USA",
+        "val": 107601
+      },
+      {
+        "name": "Beaver Stadium Pennsylvania USA",
+        "val": 106572
+      },
+      {
+        "name": "Ohio Stadium Columbus USA",
+        "val": 102780
+      },
+      {
+        "name": "Kyle Field Texas USA",
+        "val": 102512
+      },
+      {
+        "name": "Tiger Stadium Louisiana USA",
+        "val": 102321
+      },
+      {
+        "name": "Neyland Stadium Tennessee USA",
+        "val": 101915
+      },
+      {
+        "name": "Bryant-Denny Alabama USA",
+        "val": 101821
+      },
+      {
+        "name": "Darrell K Royal Texas USA",
+        "val": 100119
+      },
+      {
+        "name": "Rose Bowl Pasadena USA",
+        "val": 90888
+      },
+      {
+        "name": "FNB Stadium Johannesburg SA",
+        "val": 94736
+      },
+      {
+        "name": "Narendra Modi Stadium India",
+        "val": 132000
+      },
+      {
+        "name": "Maracana 1950 peak Brazil",
+        "val": 199000
+      },
+      {
+        "name": "Estadio Monumental Lima Peru",
+        "val": 80093
+      },
+      {
+        "name": "Beijing National Stadium Nest",
+        "val": 91000
+      },
+      {
+        "name": "Luzhniki Moscow Russia",
+        "val": 81000
+      },
+      {
+        "name": "Olympic Munich Germany",
+        "val": 69000
+      },
+      {
+        "name": "Stade de France Paris",
+        "val": 81338
+      },
+      {
+        "name": "Signal Iduna Park Dortmund",
+        "val": 81365
+      },
+      {
+        "name": "San Siro Milan Italy",
+        "val": 75923
+      },
+      {
+        "name": "Kasarani Stadium Nairobi Kenya",
+        "val": 60000
+      },
+      {
+        "name": "National Stadium Tokyo 2020",
+        "val": 68000
+      },
+      {
+        "name": "Olympic Seoul 1988",
+        "val": 69950
+      },
+      {
+        "name": "Melbourne Olympic Park",
+        "val": 30000
+      },
+      {
+        "name": "Stadium Australia Sydney",
+        "val": 83500
+      },
+      {
+        "name": "Cotton Bowl Dallas USA",
+        "val": 92100
+      },
+      {
+        "name": "Centenario Montevideo Uruguay",
+        "val": 76609
       }
     ]
   },
@@ -614,6 +854,126 @@
       {
         "name": "Declan Rice (Arsenal 2023)",
         "val": 116
+      },
+      {
+        "name": "Neymar PSG 2017 Weltrekord (Mio EUR)",
+        "val": 222
+      },
+      {
+        "name": "Kylian Mbappe Real Madrid 2024",
+        "val": 180
+      },
+      {
+        "name": "Joao Felix Atletico Barca 2023",
+        "val": 127
+      },
+      {
+        "name": "Antoine Griezmann Barca Atletico",
+        "val": 111
+      },
+      {
+        "name": "Romelu Lukaku Inter Chelsea 2021",
+        "val": 115
+      },
+      {
+        "name": "Jack Grealish Villa City 2021",
+        "val": 117
+      },
+      {
+        "name": "Declan Rice West Ham Arsenal 2023",
+        "val": 116
+      },
+      {
+        "name": "Moises Caicedo Brighton Chelsea",
+        "val": 116
+      },
+      {
+        "name": "Enzo Fernandez Benfica Chelsea",
+        "val": 121
+      },
+      {
+        "name": "Harry Kane Spurs Bayern 2023",
+        "val": 100
+      },
+      {
+        "name": "Jude Bellingham Dortmund Madrid",
+        "val": 103
+      },
+      {
+        "name": "Florian Wirtz Leverkusen Bayern 2025",
+        "val": 150
+      },
+      {
+        "name": "Paul Pogba Juventus United 2016",
+        "val": 105
+      },
+      {
+        "name": "Eden Hazard Chelsea Madrid 2019",
+        "val": 115
+      },
+      {
+        "name": "Matthijs de Ligt Ajax Juventus",
+        "val": 85
+      },
+      {
+        "name": "Darwin Nunez Benfica Liverpool",
+        "val": 75
+      },
+      {
+        "name": "Erling Haaland Dortmund City 2022",
+        "val": 60
+      },
+      {
+        "name": "Jadon Sancho Dortmund United",
+        "val": 85
+      },
+      {
+        "name": "Virgil van Dijk Southampton Liverpool",
+        "val": 85
+      },
+      {
+        "name": "Alisson Roma Liverpool 2018",
+        "val": 67
+      },
+      {
+        "name": "Kepa Bilbao Chelsea 2018",
+        "val": 80
+      },
+      {
+        "name": "Romelu Lukaku Everton Chelsea 2017",
+        "val": 85
+      },
+      {
+        "name": "Philippe Coutinho Liverpool Barca",
+        "val": 142
+      },
+      {
+        "name": "Ousmane Dembele Dortmund Barca",
+        "val": 105
+      },
+      {
+        "name": "Rodri Atletico City 2019",
+        "val": 63
+      },
+      {
+        "name": "Ruben Dias Benfica City 2020",
+        "val": 68
+      },
+      {
+        "name": "Raheem Sterling Liverpool City",
+        "val": 56
+      },
+      {
+        "name": "Benjamin Mendy Monaco City",
+        "val": 57
+      },
+      {
+        "name": "Kyle Walker Spurs City 2017",
+        "val": 54
+      },
+      {
+        "name": "Bernardo Silva Monaco City",
+        "val": 50
       }
     ]
   },
@@ -820,6 +1180,126 @@
       {
         "name": "Blanka Vlasic (Kroatien, Frauen)",
         "val": 208
+      },
+      {
+        "name": "Javier Sotomayor WR 1993 (cm)",
+        "val": 245
+      },
+      {
+        "name": "Yaroslava Mahuchikh WR Frauen 2024",
+        "val": 210
+      },
+      {
+        "name": "Stefka Kostadinova WR Frauen 1987",
+        "val": 209
+      },
+      {
+        "name": "Mariya Lasitskene WR Frauen (prev)",
+        "val": 206
+      },
+      {
+        "name": "Stefan Holm Schweden 2005",
+        "val": 242
+      },
+      {
+        "name": "Ivan Ukhov Russia IM 2014",
+        "val": 241
+      },
+      {
+        "name": "Bohdan Bondarenko Ukraine 2014",
+        "val": 242
+      },
+      {
+        "name": "Patrick Sjoeberg Sweden 1987",
+        "val": 242
+      },
+      {
+        "name": "Rudolf Povarnitsyn USSR 1985",
+        "val": 241
+      },
+      {
+        "name": "Mutaz Barshim Qatar Olympics 2020",
+        "val": 237
+      },
+      {
+        "name": "Gianmarco Tamberi Italy Olympics 2020",
+        "val": 237
+      },
+      {
+        "name": "Blanka Vlasic Croatia indoor",
+        "val": 208
+      },
+      {
+        "name": "Kajsa Bergqvist Sweden",
+        "val": 205
+      },
+      {
+        "name": "Hestrie Cloete South Africa",
+        "val": 205
+      },
+      {
+        "name": "Nicola McDermott Australia",
+        "val": 202
+      },
+      {
+        "name": "Yelena Slesarenko Russia 2004",
+        "val": 206
+      },
+      {
+        "name": "Sylwester Bednarek Poland",
+        "val": 235
+      },
+      {
+        "name": "Maksim Nedasekau Belarus",
+        "val": 240
+      },
+      {
+        "name": "JuVaughn Harrison USA",
+        "val": 236
+      },
+      {
+        "name": "Woo Sang-hyeok South Korea",
+        "val": 235
+      },
+      {
+        "name": "Andriy Protsenko Ukraine",
+        "val": 240
+      },
+      {
+        "name": "Hamish Kerr New Zealand",
+        "val": 231
+      },
+      {
+        "name": "Jesse Williams USA WM 2011",
+        "val": 232
+      },
+      {
+        "name": "Donald Thomas Bahamas WM 2007",
+        "val": 232
+      },
+      {
+        "name": "Tomas Janku Czech 2005",
+        "val": 234
+      },
+      {
+        "name": "Dragutin Topic Yugoslavia junior",
+        "val": 235
+      },
+      {
+        "name": "Naoto Tobe Japan",
+        "val": 233
+      },
+      {
+        "name": "Luis Zayas Cuba",
+        "val": 236
+      },
+      {
+        "name": "Ariane Friedrich Germany women",
+        "val": 202
+      },
+      {
+        "name": "Chaunte Lowe USA women",
+        "val": 202
       }
     ]
   },
@@ -1026,6 +1506,126 @@
       {
         "name": "LeBron James (Lakers 2024)",
         "val": 128
+      },
+      {
+        "name": "Floyd Mayweather peak year Mio USD",
+        "val": 285
+      },
+      {
+        "name": "Cristiano Ronaldo Al Nassr",
+        "val": 200
+      },
+      {
+        "name": "Karim Benzema Al Ittihad",
+        "val": 200
+      },
+      {
+        "name": "Neymar Al Hilal 2023",
+        "val": 160
+      },
+      {
+        "name": "Lionel Messi Inter Miami",
+        "val": 65
+      },
+      {
+        "name": "Phil Mickelson LIV Golf",
+        "val": 200
+      },
+      {
+        "name": "Jon Rahm LIV Golf",
+        "val": 58
+      },
+      {
+        "name": "Tiger Woods peak year",
+        "val": 87
+      },
+      {
+        "name": "Rory McIlroy Golf",
+        "val": 50
+      },
+      {
+        "name": "Stephen Curry NBA Warriors",
+        "val": 51
+      },
+      {
+        "name": "Lamar Jackson NFL Ravens",
+        "val": 52
+      },
+      {
+        "name": "Shohei Ohtani MLB Dodgers",
+        "val": 46
+      },
+      {
+        "name": "Patrick Mahomes NFL Chiefs",
+        "val": 45
+      },
+      {
+        "name": "Josh Allen NFL Bills",
+        "val": 43
+      },
+      {
+        "name": "LeBron James NBA Lakers",
+        "val": 47
+      },
+      {
+        "name": "Kevin Durant NBA",
+        "val": 47
+      },
+      {
+        "name": "Giannis Antetokounmpo NBA",
+        "val": 46
+      },
+      {
+        "name": "Aaron Judge MLB Yankees",
+        "val": 40
+      },
+      {
+        "name": "Mike Trout MLB Angels",
+        "val": 37
+      },
+      {
+        "name": "Naomi Osaka WTA peak",
+        "val": 55
+      },
+      {
+        "name": "Roger Federer sponsorships peak",
+        "val": 90
+      },
+      {
+        "name": "Novak Djokovic annual peak",
+        "val": 35
+      },
+      {
+        "name": "Rafael Nadal annual peak",
+        "val": 27
+      },
+      {
+        "name": "Canelo Alvarez boxing",
+        "val": 50
+      },
+      {
+        "name": "Conor McGregor UFC peak",
+        "val": 99
+      },
+      {
+        "name": "Manny Pacquiao boxing peak",
+        "val": 50
+      },
+      {
+        "name": "Simone Biles gymnastics sponsors",
+        "val": 10
+      },
+      {
+        "name": "Serena Williams WTA peak",
+        "val": 35
+      },
+      {
+        "name": "Dustin Johnson LIV Golf",
+        "val": 35
+      },
+      {
+        "name": "Bubba Watson LIV Golf",
+        "val": 30
       }
     ]
   },
@@ -1231,6 +1831,126 @@
       },
       {
         "name": "Kristin Otto (Schwimmen, DDR)",
+        "val": 6
+      },
+      {
+        "name": "Michael Phelps swimming USA all gold",
+        "val": 23
+      },
+      {
+        "name": "Larisa Latynina gymnastics USSR gold",
+        "val": 9
+      },
+      {
+        "name": "Paavo Nurmi running Finland gold",
+        "val": 9
+      },
+      {
+        "name": "Mark Spitz swimming USA 1972",
+        "val": 9
+      },
+      {
+        "name": "Carl Lewis athletics USA gold",
+        "val": 9
+      },
+      {
+        "name": "Usain Bolt sprint Jamaica gold",
+        "val": 8
+      },
+      {
+        "name": "Sawao Kato gymnastics Japan",
+        "val": 8
+      },
+      {
+        "name": "Birgit Fischer canoe Germany",
+        "val": 8
+      },
+      {
+        "name": "Ray Ewry athletics USA gold",
+        "val": 8
+      },
+      {
+        "name": "Jenny Thompson swimming USA gold",
+        "val": 8
+      },
+      {
+        "name": "Matt Biondi swimming USA gold",
+        "val": 8
+      },
+      {
+        "name": "Nikolai Andrianov gymnastics USSR",
+        "val": 7
+      },
+      {
+        "name": "Boris Shakhlin gymnastics USSR",
+        "val": 7
+      },
+      {
+        "name": "Viktor Chukarin gymnastics USSR",
+        "val": 7
+      },
+      {
+        "name": "Vera Caslavska gymnastics Czech",
+        "val": 7
+      },
+      {
+        "name": "Katie Ledecky swimming USA gold",
+        "val": 7
+      },
+      {
+        "name": "Allyson Felix athletics USA gold",
+        "val": 7
+      },
+      {
+        "name": "Simone Biles gymnastics USA gold",
+        "val": 7
+      },
+      {
+        "name": "Caeleb Dressel swimming USA Tokyo",
+        "val": 5
+      },
+      {
+        "name": "Nadia Comaneci gymnastics Romania",
+        "val": 5
+      },
+      {
+        "name": "Ian Thorpe swimming Australia gold",
+        "val": 5
+      },
+      {
+        "name": "Eliud Kipchoge marathon Kenya gold",
+        "val": 2
+      },
+      {
+        "name": "Ryan Lochte swimming USA gold",
+        "val": 6
+      },
+      {
+        "name": "Natalie Coughlin swimming USA",
+        "val": 3
+      },
+      {
+        "name": "Missy Franklin swimming USA gold",
+        "val": 4
+      },
+      {
+        "name": "Olga Korbut gymnastics USSR gold",
+        "val": 4
+      },
+      {
+        "name": "Dara Torres swimming USA gold",
+        "val": 4
+      },
+      {
+        "name": "Grant Hackett swimming Australia",
+        "val": 3
+      },
+      {
+        "name": "Adam Peaty swimming GB gold",
+        "val": 2
+      },
+      {
+        "name": "Kristin Otto swimming GDR 1988",
         "val": 6
       }
     ]
@@ -1438,6 +2158,126 @@
       {
         "name": "Jude Bellingham (Hoechstwert ca. 2024)",
         "val": 180
+      },
+      {
+        "name": "Vinicius Jr Real Madrid 2024 (Mio EUR)",
+        "val": 180
+      },
+      {
+        "name": "Erling Haaland Man City 2024",
+        "val": 180
+      },
+      {
+        "name": "Jude Bellingham Real Madrid 2024",
+        "val": 180
+      },
+      {
+        "name": "Phil Foden Man City 2024",
+        "val": 150
+      },
+      {
+        "name": "Florian Wirtz Leverkusen",
+        "val": 150
+      },
+      {
+        "name": "Rodri Man City 2024",
+        "val": 150
+      },
+      {
+        "name": "Lamine Yamal Barcelona 2024",
+        "val": 150
+      },
+      {
+        "name": "Bukayo Saka Arsenal 2024",
+        "val": 130
+      },
+      {
+        "name": "Jamal Musiala Bayern Munich",
+        "val": 130
+      },
+      {
+        "name": "Victor Osimhen Napoli 2024",
+        "val": 130
+      },
+      {
+        "name": "Declan Rice Arsenal",
+        "val": 110
+      },
+      {
+        "name": "Pedri Barcelona",
+        "val": 100
+      },
+      {
+        "name": "Gavi Barcelona",
+        "val": 100
+      },
+      {
+        "name": "Federico Valverde Real Madrid",
+        "val": 120
+      },
+      {
+        "name": "Eduardo Camavinga Real Madrid",
+        "val": 100
+      },
+      {
+        "name": "Aurelien Tchouameni Real Madrid",
+        "val": 100
+      },
+      {
+        "name": "Julian Alvarez Atletico Madrid",
+        "val": 100
+      },
+      {
+        "name": "Khvicha Kvaratskhelia Napoli/PSG",
+        "val": 90
+      },
+      {
+        "name": "Nico Williams Athletic Bilbao",
+        "val": 80
+      },
+      {
+        "name": "William Saliba Arsenal",
+        "val": 80
+      },
+      {
+        "name": "Marcus Rashford Man United peak",
+        "val": 80
+      },
+      {
+        "name": "Rafael Leao AC Milan",
+        "val": 80
+      },
+      {
+        "name": "Alejandro Garnacho Man United",
+        "val": 70
+      },
+      {
+        "name": "Rasmus Hojlund Man United",
+        "val": 70
+      },
+      {
+        "name": "Nuno Mendes PSG",
+        "val": 70
+      },
+      {
+        "name": "Achraf Hakimi PSG",
+        "val": 70
+      },
+      {
+        "name": "Ousmane Dembele PSG",
+        "val": 65
+      },
+      {
+        "name": "Mason Mount Man United",
+        "val": 60
+      },
+      {
+        "name": "Theo Hernandez AC Milan",
+        "val": 60
+      },
+      {
+        "name": "Granit Xhaka Leverkusen",
+        "val": 35
       }
     ]
   },
@@ -1644,6 +2484,126 @@
       {
         "name": "Li Wenwen (China, Frauen >87 kg WR)",
         "val": 337
+      },
+      {
+        "name": "Lasha Talakhadze total WR +109kg (kg)",
+        "val": 484
+      },
+      {
+        "name": "Hossein Rezazadeh Iran 105+ total",
+        "val": 472
+      },
+      {
+        "name": "Behdad Salimikordasiabi +105kg",
+        "val": 473
+      },
+      {
+        "name": "Gor Minasyan Armenia 109kg",
+        "val": 459
+      },
+      {
+        "name": "Matthias Steiner Germany +105",
+        "val": 461
+      },
+      {
+        "name": "Meso Hasanov Azerbaijan 102kg",
+        "val": 441
+      },
+      {
+        "name": "Ilya Ilyin Kazakhstan 94kg WR",
+        "val": 437
+      },
+      {
+        "name": "Aramnau Andrei Belarus 105kg",
+        "val": 436
+      },
+      {
+        "name": "Tian Tao China 96kg",
+        "val": 432
+      },
+      {
+        "name": "Sohrab Moradi Iran 94kg WR",
+        "val": 450
+      },
+      {
+        "name": "Li Fabin China 67kg total",
+        "val": 355
+      },
+      {
+        "name": "Shi Zhiyong China 73kg total",
+        "val": 378
+      },
+      {
+        "name": "Taner Sagir Turkey 77kg WR",
+        "val": 385
+      },
+      {
+        "name": "Pyrros Dimas Greece 85kg total",
+        "val": 392
+      },
+      {
+        "name": "Naim Suleymanoglu Turkey 60kg",
+        "val": 300
+      },
+      {
+        "name": "Kim Un-guk DPRK 62kg WR",
+        "val": 327
+      },
+      {
+        "name": "Eko Yuli Indonesia 61kg",
+        "val": 318
+      },
+      {
+        "name": "Om Yun-chol DPRK 56kg",
+        "val": 293
+      },
+      {
+        "name": "Hou Zhihui China 49kg women WR",
+        "val": 213
+      },
+      {
+        "name": "Deng Wei China 64kg women WR",
+        "val": 286
+      },
+      {
+        "name": "Wang Zhouyu China 76kg women",
+        "val": 294
+      },
+      {
+        "name": "Kuo Hsing-chun Taiwan 59kg",
+        "val": 276
+      },
+      {
+        "name": "Zhang Wanyi China 59kg total",
+        "val": 276
+      },
+      {
+        "name": "Nurul Akmal Malaysia 87+kg women",
+        "val": 290
+      },
+      {
+        "name": "Khadzhimurat Akkayev Russia 94kg",
+        "val": 426
+      },
+      {
+        "name": "Aleksandr Ivanov Russia 85kg",
+        "val": 402
+      },
+      {
+        "name": "Oleksiy Torokhtiy Ukraine 105kg",
+        "val": 426
+      },
+      {
+        "name": "Nizoni Pacheev Kazakhstan 77kg",
+        "val": 376
+      },
+      {
+        "name": "Dmitry Klokov Russia 105kg snatch",
+        "val": 232
+      },
+      {
+        "name": "Lasha snatch WR +109kg",
+        "val": 225
       }
     ]
   },
@@ -1850,6 +2810,126 @@
       {
         "name": "Camp Nou (FC Barcelona, Spanien)",
         "val": 1957
+      },
+      {
+        "name": "Bramall Lane Sheffield England",
+        "val": 1855
+      },
+      {
+        "name": "Kennington Oval London England",
+        "val": 1845
+      },
+      {
+        "name": "Anfield Liverpool England",
+        "val": 1884
+      },
+      {
+        "name": "Hampden Park Glasgow Scotland",
+        "val": 1903
+      },
+      {
+        "name": "Ibrox Glasgow Scotland",
+        "val": 1899
+      },
+      {
+        "name": "Fenway Park Boston Red Sox",
+        "val": 1912
+      },
+      {
+        "name": "Wrigley Field Chicago Cubs",
+        "val": 1914
+      },
+      {
+        "name": "Soldier Field Chicago USA",
+        "val": 1924
+      },
+      {
+        "name": "Lambeau Field Green Bay USA",
+        "val": 1957
+      },
+      {
+        "name": "Dodger Stadium LA USA",
+        "val": 1962
+      },
+      {
+        "name": "Maracana Rio original",
+        "val": 1950
+      },
+      {
+        "name": "Ullevi Gothenburg Sweden",
+        "val": 1958
+      },
+      {
+        "name": "Olympic Stadium Helsinki",
+        "val": 1938
+      },
+      {
+        "name": "Olympiastadion Berlin Germany",
+        "val": 1936
+      },
+      {
+        "name": "Estadio Nacional Santiago Chile",
+        "val": 1938
+      },
+      {
+        "name": "Centenario Montevideo Uruguay",
+        "val": 1930
+      },
+      {
+        "name": "MCG Melbourne Cricket Ground",
+        "val": 1853
+      },
+      {
+        "name": "NRG Stadium Houston USA",
+        "val": 2002
+      },
+      {
+        "name": "Raymond James Tampa USA",
+        "val": 1998
+      },
+      {
+        "name": "AT&T Stadium Arlington USA",
+        "val": 2009
+      },
+      {
+        "name": "Lucas Oil Indianapolis USA",
+        "val": 2008
+      },
+      {
+        "name": "State Farm Arizona USA",
+        "val": 2006
+      },
+      {
+        "name": "Mercedes-Benz Atlanta USA",
+        "val": 2017
+      },
+      {
+        "name": "US Bank Minneapolis USA",
+        "val": 2016
+      },
+      {
+        "name": "Allegiant Las Vegas USA",
+        "val": 2020
+      },
+      {
+        "name": "SoFi Los Angeles USA",
+        "val": 2020
+      },
+      {
+        "name": "Emirates Stadium London",
+        "val": 2006
+      },
+      {
+        "name": "Wembley New London",
+        "val": 2007
+      },
+      {
+        "name": "Allianz Arena Munich",
+        "val": 2005
+      },
+      {
+        "name": "Juventus Stadium Turin",
+        "val": 2011
       }
     ]
   },
@@ -2056,6 +3136,126 @@
       {
         "name": "Romário (Fluminense, Brasilien)",
         "val": 55
+      },
+      {
+        "name": "Alan Shearer PL career record goals",
+        "val": 260
+      },
+      {
+        "name": "Pele Santos career goals",
+        "val": 643
+      },
+      {
+        "name": "Cristiano Ronaldo career total",
+        "val": 900
+      },
+      {
+        "name": "Lionel Messi career total",
+        "val": 850
+      },
+      {
+        "name": "Gerd Mueller Bundesliga career",
+        "val": 365
+      },
+      {
+        "name": "Robert Lewandowski BL 2020/21",
+        "val": 41
+      },
+      {
+        "name": "Cristiano Ronaldo LaLiga 2011/12",
+        "val": 50
+      },
+      {
+        "name": "Lionel Messi LaLiga 2011/12",
+        "val": 50
+      },
+      {
+        "name": "Erling Haaland PL 2022/23",
+        "val": 36
+      },
+      {
+        "name": "Mo Salah PL 2017/18",
+        "val": 32
+      },
+      {
+        "name": "Alan Shearer Blackburn PL 1994/95",
+        "val": 34
+      },
+      {
+        "name": "Dixie Dean Everton 1927/28",
+        "val": 60
+      },
+      {
+        "name": "Gerd Mueller BL season 1971/72",
+        "val": 40
+      },
+      {
+        "name": "Josef Bican career total",
+        "val": 805
+      },
+      {
+        "name": "Cristiano Ronaldo Man United 2007/08",
+        "val": 42
+      },
+      {
+        "name": "Harry Kane Tottenham PL career",
+        "val": 213
+      },
+      {
+        "name": "Sergio Aguero Man City PL career",
+        "val": 184
+      },
+      {
+        "name": "Wayne Rooney Man United career",
+        "val": 183
+      },
+      {
+        "name": "Andrew Cole PL career goals",
+        "val": 187
+      },
+      {
+        "name": "Frank Lampard Chelsea career",
+        "val": 211
+      },
+      {
+        "name": "Ciro Immobile Lazio Serie A",
+        "val": 207
+      },
+      {
+        "name": "Robert Lewandowski BL career",
+        "val": 344
+      },
+      {
+        "name": "Ronaldo Luis Real career",
+        "val": 450
+      },
+      {
+        "name": "Zlatan Ibrahimovic Milan Serie A",
+        "val": 128
+      },
+      {
+        "name": "Ferenc Puskas Real Madrid career",
+        "val": 156
+      },
+      {
+        "name": "Ronaldo Fenomeno Real career",
+        "val": 104
+      },
+      {
+        "name": "Thierry Henry Arsenal career PL",
+        "val": 174
+      },
+      {
+        "name": "Jimmy Greaves Tottenham career",
+        "val": 266
+      },
+      {
+        "name": "George Camsell career goals",
+        "val": 345
+      },
+      {
+        "name": "Steve Bloomer career goals",
+        "val": 352
       }
     ]
   }
