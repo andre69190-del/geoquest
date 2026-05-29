@@ -9644,6 +9644,8 @@ function lvAnswer(ans){
   setTimeout(()=>{
     if(!S.lv)return;
     if(lv.current===1){
+      /* P282: P1-Ergebnis fuer Handoff-Anzeige speichern */
+      lv.lastP1Result={correct,timedOut:ans===null};
       lv.current=2;
       lv.phase="handoff";
       render();
@@ -9711,10 +9713,21 @@ function renderLVHandoff(){
   const pl=lv.current===1?lv.p1:lv.p2;
   const plColor=lv.current===1?"#6366f1":"#ec4899";
   const plBg=lv.current===1?"rgba(99,102,241,.15)":"rgba(236,72,153,.15)";
+  /* P282: P1-Ergebnis-Badge aufbauen */
+  const _r1=lv.lastP1Result||{};
+  const _r1name=esc(lv.p1.name);
+  const _r1badge=_r1.correct
+    ?`<div style="background:rgba(16,185,129,.15);border:2px solid #10b981;border-radius:12px;padding:.6rem 1.2rem;margin-bottom:1.2rem;font-size:.95rem;font-weight:900;color:#10b981">&#x2705; ${_r1name} hat <b>richtig</b> geantwortet!</div>`
+    :_r1.timedOut
+    ?`<div style="background:rgba(245,158,11,.15);border:2px solid #f59e0b;border-radius:12px;padding:.6rem 1.2rem;margin-bottom:1.2rem;font-size:.95rem;font-weight:900;color:#f59e0b">&#x23F1; ${_r1name} hatte keine Zeit mehr!</div>`
+    :_r1.hasOwnProperty('correct')
+    ?`<div style="background:rgba(239,68,68,.15);border:2px solid #ef4444;border-radius:12px;padding:.6rem 1.2rem;margin-bottom:1.2rem;font-size:.95rem;font-weight:900;color:#ef4444">&#x274C; ${_r1name} hat <b>falsch</b> geantwortet!</div>`
+    :"";
   return`<div style="min-height:100vh;background:var(--bg);padding:1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
     <div style="font-size:3.5rem;margin-bottom:.75rem">&#x1F4F1;</div>
     <div style="font-size:1.15rem;font-weight:900;color:var(--text);margin-bottom:.3rem">Ger&auml;t weitergeben</div>
-    <div style="font-size:.8rem;color:var(--text3);margin-bottom:1.5rem">Runde ${lv.round+1}/${LV_ROUNDS} &middot; Gleiche Frage</div>
+    <div style="font-size:.8rem;color:var(--text3);margin-bottom:.75rem">Runde ${lv.round+1}/${LV_ROUNDS} &middot; Gleiche Frage</div>
+    ${_r1badge}
     <div style="background:${plBg};border:2px solid ${plColor};border-radius:14px;padding:1rem 2.5rem;margin-bottom:1.25rem">
       <div style="font-size:.65rem;color:${plColor};font-weight:700;letter-spacing:.5px;margin-bottom:.3rem">JETZT DRAN</div>
       <div style="font-size:1.4rem;font-weight:900;color:var(--text)">${esc(pl.name)}</div>
@@ -9743,7 +9756,7 @@ function renderLVSetup(){
   /* Game picker */
   const gameSection=sT==="specific"?`<div style="margin-bottom:.75rem">
     <div style="font-size:.65rem;font-weight:700;color:var(--text3);margin-bottom:.4rem">SPIEL W\u00c4HLEN</div>
-    <div style="max-height:200px;overflow-y:auto;-webkit-overflow-scrolling:touch;display:flex;flex-wrap:wrap;gap:5px;padding:2px">${MODES.filter(m=>GEN[m.id]&&!m.comingSoon).map(m=>{
+    <div style="max-height:200px;overflow-y:auto;-webkit-overflow-scrolling:touch;display:flex;flex-wrap:wrap;gap:5px;padding:2px">${MODES.filter(m=>GEN[m.id]&&!m.comingSoon&&!m.noMultiplayer).map(m=>{
       const active=sMod===m.id;
       return`<button onclick="S.lvSetupMode='${m.id}';render()" style="background:${active?"#6366f1":"var(--bg3)"};color:${active?"#fff":"var(--text2)"};border:1.5px solid ${active?"#6366f1":"var(--border)"};border-radius:8px;padding:.28rem .55rem;font-size:.68rem;font-weight:600;cursor:pointer;white-space:nowrap">${m.icon} ${(modeTitle(m)||m.id).slice(0,18)}</button>`;
     }).join("")}</div>
