@@ -10802,7 +10802,24 @@ async function evaluateWeeklyLeague(){
 }
 
 const _LANDSCAPE_MODES_SET=new Set(["map_guess","map_reverse","map_capital"]);
-function _isPortrait(){return window.innerHeight>window.innerWidth;}
+function _isPortrait(){
+  /* 1) Screen Orientation API – genaueste Methode */
+  if(screen.orientation&&screen.orientation.type)
+    return screen.orientation.type.startsWith('portrait');
+  /* 2) window.orientation – veraltet aber zuverlaessig auf iOS Safari */
+  if(typeof window.orientation==='number')
+    return window.orientation===0||window.orientation===180;
+  /* 3) Dimension-Fallback */
+  return window.innerHeight>window.innerWidth;
+}
+/* iOS-PWA-Helpers */
+function _isIOS(){
+  return /iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
+}
+function _isInStandaloneMode(){
+  return window.navigator.standalone===true||
+         window.matchMedia('(display-mode:standalone)').matches;
+}
 function updateOrientationWarning(){
   const ow=document.getElementById("gq-orient-warn");
   if(\!ow)return false;
@@ -11002,7 +11019,7 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="stats"?renderStatsTab():""}
       ${S.tab==="admin"?renderAdminTab():""}
       ${S.settingsModal?renderSettingsModal():""}${S.adModal?renderAdModal():""}
-    </div>${renderBottomNav()}${S.pwaPrompt?renderPwaBanner():""}`;
+    </div>${renderBottomNav()}${(S.pwaPrompt||(_isIOS()&&!_isInStandaloneMode()&&!localStorage.getItem('gq_pwa_ios_dismissed')))?renderPwaBanner():""}`;
     if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
     return;
   }
@@ -11632,9 +11649,17 @@ function drawWorldMap(targetName,sel,ok,preHL,readOnly){
 
 /* BOTTOM NAV */
 function renderPwaBanner(){
+  /* iOS Safari: kein beforeinstallprompt → Schritt-fuer-Schritt-Anleitung */
+  if(_isIOS()&&!_isInStandaloneMode()){
+    return`<div id="pwa-banner" class="pwa-banner pwa-banner-ios">
+      <span>📱 <b>App installieren:</b> Tippe auf <b>Teilen &#x2B06;&#xFE0F;</b> → <b>Zum Home-Bildschirm</b></span>
+      <button class="pwa-dismiss-btn" onclick="localStorage.setItem('gq_pwa_ios_dismissed','1');render();" aria-label="Schliessen">&#x2715;</button>
+    </div>`;
+  }
+  /* Android / Desktop Chrome: nativer beforeinstallprompt-Flow */
   return`<div id="pwa-banner" class="pwa-banner">
     <span>📱 GeoQuest als App installieren &mdash; offline spielbar!</span>
-    <button class="pwa-install-btn" onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(()=>{S.pwaPrompt=null;render();});}">📥 Installieren</button>
+    <button class="pwa-install-btn" onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(r=>{S.pwaPrompt=null;render();});}">&#x1F4E5; Installieren</button>
   </div>`;
 }
 function renderBottomNav(){
@@ -14294,7 +14319,8 @@ window.addEventListener('online',function(){S.isOffline=false;render();syncOffli
 /* P167: start deferred timer when device rotates to landscape */
 (function(){
   function _onOrientChange(){
-    /* delay 120ms — layout must settle before innerWidth/Height are correct */
+    /* 350ms – gibt dem Browser genuegend Zeit die Viewport-Dimensionen
+       nach der Rotation korrekt zu setzen (120ms war auf Android zu kurz) */
     setTimeout(function(){
       updateOrientationWarning();
       if(S.waitingForLandscape&&!_isPortrait()){
@@ -14302,14 +14328,22 @@ window.addEventListener('online',function(){S.isOffline=false;render();syncOffli
         clearInterval(tIv);
         tIv=setInterval(()=>{S.tm--;if(S.tm===3)soundWarn();render();if(S.tm<=0){clearInterval(tIv);if(S.q)answer(null);}},1000);
       }
-    },120);
+    },350);
   }
-  /* use both APIs for max compatibility */
+  /* Screen Orientation API (Android Chrome, moderne Browser) */
   if(screen.orientation&&screen.orientation.addEventListener){
     screen.orientation.addEventListener("change",_onOrientChange);
   }
+  /* Legacy orientationchange (iOS Safari) */
   window.addEventListener("orientationchange",_onOrientChange);
-  /* matchMedia listener as additional fallback (Chrome desktop resize) */
+  /* resize-Event: zuverlaessigster Trigger auf vielen Android-Geraeten
+     (feuert sicher wenn sich Viewport-Dimensionen aendern) – debounced */
+  var _orientResizeTimer=null;
+  window.addEventListener("resize",function(){
+    clearTimeout(_orientResizeTimer);
+    _orientResizeTimer=setTimeout(_onOrientChange,200);
+  });
+  /* matchMedia-Fallback fuer Chrome Desktop */
   try{window.matchMedia("(orientation:landscape)").addEventListener("change",function(e){
     if(e.matches)_onOrientChange();
   });}catch(e){}
@@ -14768,6 +14802,8 @@ input[type=text]::placeholder{color:var(--text3)}
 .pay-product-desc{color:var(--text3);font-size:.72rem}
 .confetti-piece{position:fixed;top:-12px;width:9px;height:9px;z-index:9999;animation:cfFall 2.2s ease-in forwards;pointer-events:none}
 @keyframes cfFall{0%{transform:translateY(0) rotate(0deg) scale(1);opacity:1}100%{transform:translateY(105vh) rotate(720deg) scale(.5);opacity:0}}
+.pwa-dismiss-btn{background:none;border:none;color:var(--text2);font-size:1.1rem;cursor:pointer;padding:.2rem .4rem;flex-shrink:0;}
+.pwa-banner-ios{gap:.5rem;}
 .pwa-banner{position:fixed;bottom:60px;left:0;right:0;background:var(--bg2);border-top:1px solid var(--border);padding:.6rem 1rem;display:flex;align-items:center;justify-content:space-between;z-index:290;font-size:.78rem;color:var(--text2)}
 .pwa-install-btn{background:#10b981;color:#fff;border:none;border-radius:8px;padding:5px 12px;font-size:.78rem;font-weight:700;cursor:pointer}
 .ch-card{background:var(--bg2);border-radius:20px;padding:1.5rem;max-width:340px;width:100%;text-align:center}
