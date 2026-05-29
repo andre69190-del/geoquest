@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 283 (Stand: Mai 2026)
-**Build:** gen.py → 1.28 MB | GeoQuest.html → 4.39 MB | 685 Spielmodi | verify: 90/90
+**Version:** Phase 284 (Stand: Mai 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.40 MB | 685 Spielmodi | verify: 90/90
 
 ---
 
@@ -1050,11 +1050,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **281** | patch_281_1v1_sync.py |
 | **282** | patch_282_lv_ux.py |
 | **283** | patch_283_feedback_email.py | **Feedback-System: reportBug+Crash-Handler schreiben jetzt in Supabase (nicht nur mailto). Admin-Tab zeigt alle Feedback-Eintraege. KRITISCHER MP-FIX: initRng(seed) NACH startGame aufgerufen (startGame hatte rngSeed=null auf Zeile 10582 – dieser Root Cause erklaert ALLE falschen Online-MP-Fragen). verify: 90/90.** | **1v1 UX: Wort-Schmiede-Modi aus Spielauswahl entfernt (noMultiplayer-Filter). lv.lastP1Result gespeichert. Handoff-Screen zeigt jetzt Ergebnis-Badge: ✅ Richtig / ❌ Falsch / ⏱ Zeit.** | **1v1 Sync Fix: mpCountdown render() bei jedem Tick (Countdown zeigte nur "3"). 11x Math.random()→rng() in Fragen-Generatoren (getSmartVersusOpponent, getVersusCountryPair/-Advanced, getFlagFusionPairSafe, renderFlagFusion, initLogikGitter, renderTravelRoute) – gleicher Seed = gleiche Fragen.** |
+| **284** | patch_284_daily_exploit.py | **Daily-Challenge Exploit-Fix: startDailyChallenge() setzte bisher KEIN Flag beim Start → Spieler konnte beliebig oft neu starten bis der Score passte. Fix (Option B – Resume statt Hard-Fail): neue Helper getDailyProgressKey/saveDailyProgress/loadDailyProgress, Start-Flag (gq_daily_prog_YYYY-MM-DD) wird SOFORT beim Erst-Start gesetzt, Progress nach jeder Antwort gespeichert, Resume bei Wiederkehr (Tages-Seed + askedLids wiederhergestellt), markDailyDone() löscht Progress-Key, renderDailyHero() zeigt Fortsetzen-Karte. verify: 90/90.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 283 -- 1v1 Sync: mpCountdown-Render + Math.random->rng(): lid-Felder, MP-Sync, 1v1 opts-Guard, Crest-Expansion. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 284 -- Daily-Challenge Exploit-Fix: Start-Flag + Progress-Tracking + Resume-Logik (kein Score-Reset durch Neustart mehr). 685 Modi, Mai 2026.*
 
 
 ---

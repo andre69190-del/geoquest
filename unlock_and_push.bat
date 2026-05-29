@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 283: KRITISCHER MP-Fix: initRng nach startGame (startGame hat rngSeed=null -> Root Cause aller falschen MP-Fragen). Feedback: reportBug+Crash in Supabase. Admin-Tab zeigt Feedback. verify: 90/90."
+git commit -m "Phase 284: Daily-Challenge Exploit-Fix (patch_284_daily_exploit.py): Start-Flag gq_daily_prog sofort beim Start + Progress-Tracking + Resume-Logik. Kein Score-Reset durch Neustart mehr. 685 Modi. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

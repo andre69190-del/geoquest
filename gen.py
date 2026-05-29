@@ -9903,6 +9903,8 @@ function answer(a,tok){
   }
   if(S.diff==="blitz"){S.rd++;S.pts=pts;S.lid=S.q.lid;const _bApp=document.getElementById('app');if(_bApp){_bApp.style.outline=ok?'3px solid #34d399':'3px solid #ef4444';setTimeout(()=>{_bApp.style.outline='';},350);}if(S.blitzTimeLeft>0)lq();else{clearInterval(tIv);S.ph="gameover";S.scoreSaved=false;soundOver();checkMastery();updateDailyStreak();saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:S.rd,date:Date.now(),answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});if(sbOK)saveSession(S.mode,S.sc,S.bs,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();},()=>{});render();}return;}
 S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
+  /* P284: Daily-Progress nach jeder Antwort sichern */
+  if(S.isDailyRun&&!isDailyDone()){saveDailyProgress();}
   /* Phase 33 Teil 2 */
   if(window.mpGameCh&&S.mpOpponent){
     window.mpGameCh.send({type:"broadcast",event:"score_update",
@@ -10657,6 +10659,18 @@ function stampHtml(cc,rank,rot){
 
 /* DAILY CHALLENGE */
 function getDailyKey(){return"gq_daily_"+new Date().toISOString().slice(0,10);}
+/* P284: Daily exploit fix – progress tracking */
+function getDailyProgressKey(){return"gq_daily_prog_"+new Date().toISOString().slice(0,10);}
+function saveDailyProgress(){
+  if(!S.isDailyRun||isDailyDone())return;
+  try{localStorage.setItem(getDailyProgressKey(),JSON.stringify({
+    sc:S.sc,rd:S.rd,correct:S.correct,st:S.st,bs:S.bs,
+    lids:[...S.askedLids]
+  }));}catch(_e){}
+}
+function loadDailyProgress(){
+  try{return JSON.parse(localStorage.getItem(getDailyProgressKey())||"null");}catch(_e){return null;}
+}
 
 
 /* â”€â”€ Phase 42: LocalStorage Checksums â”€â”€ */
@@ -10776,6 +10790,7 @@ function rarityColor(r){return{common:"#10b981",rare:"#3b82f6",epic:"#8b5cf6",le
 function isDailyDone(){try{return\!\!JSON.parse(localStorage.getItem(getDailyKey())||"null");}catch(e){return false;}}
 function markDailyDone(score){
   try{localStorage.setItem(getDailyKey(),JSON.stringify({score,ts:Date.now()}));}catch(e){}
+  try{localStorage.removeItem(getDailyProgressKey());}catch(_e){} /* P284: Progress loeschen */
   if(sb&&sbUser){const _d=new Date().toISOString().slice(0,10);sb.from("profiles").update({last_daily_date:_d}).eq("id",sbUser.id).then(()=>{},()=>{});}
 }
 function getDailyHistory(){
@@ -10801,10 +10816,33 @@ function getDailyCountdown(){
   return String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
 }
 function startDailyChallenge(){
+  if(isDailyDone())return;
   const seed=getDailySeed();
+  const DAILY_POOL=["city","flag","uk_wahrzeichen","uk_getraenke","uk_tiere_endemisch"];
+  const dayIndex=Math.floor(Date.now()/86400000);
+  S.mode=DAILY_POOL[dayIndex%DAILY_POOL.length];S.diff="casual";S.isDailyRun=true;
+  const _prog=loadDailyProgress();
+  if(_prog&&(_prog.rd||0)>0){
+    /* P284: RESUME – Spieler hat heute schon angefangen, weiterspielen */
+    initRng(seed);
+    Object.assign(S,{sc:_prog.sc||0,rd:_prog.rd||0,correct:_prog.correct||0,
+      st:_prog.st||0,bs:_prog.bs||0,
+      lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],
+      half_removed:false,freezeActive:false,queueExtra:[],
+      askedLids:new Set(_prog.lids||[]),
+      gameStartTime:Date.now(),adShownThisGame:false,adModal:false,
+      slfData:null,wsData:null,lhData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});
+    showToast("\u{1F4CD} Daily fortgesetzt – Runde "+((_prog.rd||0)+1)+"/10");
+    lq();
+    return;
+  }
+  /* P284: Erster Start heute – sofort Progress-Flag setzen */
   initRng(seed);
-  const DAILY_POOL=["city","flag","uk_wahrzeichen","uk_getraenke","uk_tiere_endemisch"];const dayIndex=Math.floor(Date.now()/86400000);S.mode=DAILY_POOL[dayIndex%DAILY_POOL.length];S.diff="casual";S.isDailyRun=true;
-  Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,slfData:null,wsData:null,lhData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});  /* P208: lhData reset */
+  Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",scoreSaved:false,
+    sessionAnswers:[],newStamps:[],half_removed:false,freezeActive:false,queueExtra:[],
+    askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,
+    slfData:null,wsData:null,lhData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});
+  saveDailyProgress();  /* sofort beim Start speichern – verhindert Neustart-Exploit */
   lq();
 }
 function renderDailyHero(){
@@ -10825,6 +10863,22 @@ function renderDailyHero(){
       </div>
       ${_histHtml}
     </div>`;}
+  /* P284: Bereits begonnen aber nicht abgeschlossen? Resume-Karte zeigen */
+  const _prog=loadDailyProgress();
+  if(_prog&&(_prog.rd||0)>0){
+    return`<div class="daily-hero" onclick="startDailyChallenge()" role="button">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="font-size:2.2rem">\u{1F4CD}</div>
+          <div>
+            <div class="dh-title">Daily fortsetzen</div>
+            <div class="dh-sub">Runde ${(_prog.rd||0)+1}/10 · ${(_prog.sc||0).toLocaleString()} Pkt. · Endet in <span class="dh-cd">${cd}</span></div>
+          </div>
+        </div>
+        <button class="dh-btn" style="background:#6366f1">Weiter</button>
+      </div>
+    </div>`;
+  }
   return`<div class="daily-hero" onclick="startDailyChallenge()" role="button">
     <div style="display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:12px">
