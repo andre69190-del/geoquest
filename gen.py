@@ -1346,7 +1346,7 @@ const PAY_PRODUCTS = [
 /* â”€â”€ Phase 47/48: i18n – DE / EN / PL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const LANG={
 de:{
-  play:"SPIELEN",again:"NOCHMAL",menu:"Hauptmenü",board:"Bestenliste",pass:"Reisepass",
+  play:"SPIELEN",again:"NOCHMAL",q_neighbor_fake:"Welches Land grenzt NICHT an …?",q_neighbor_count:"Wie viele Nachbarländer hat dieses Land?",q_border_shared:"Teilen diese L\u00e4nder eine gemeinsame Grenze?",q_de_plate:"Welche Stadt/Region hat dieses Kennzeichen?",q_map_reverse:"Welches Land ist hervorgehoben?",q_stadium:"\u26BD In welchem Land steht dieses Stadion?",q_jersey:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",q_crest:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",q_beta_hl_stadium:"Welches Stadion liegt höher über dem Meeresspiegel?",q_beta_spotter:"Weltkarte",q_sport_poi:"In welchem Land liegt das?",q_wappen:"Welchem Land gehört dieses Wappen?",menu:"Hauptmenü",board:"Bestenliste",pass:"Reisepass",
   fav_empty:"Noch keine Favoriten gespeichert",
   profile:"Profil",stats:"Statistik",casual:"Casual",hardcore:"Hardcore",rounds:"Runden",
   btn_collect:"Sammeln",btn_back:"Zurück zum Hauptmenü",btn_next:"Weiter →’",
@@ -1404,7 +1404,7 @@ de:{
   q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?"
 },
 en:{
-  play:"PLAY",again:"PLAY AGAIN",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
+  play:"PLAY",again:"PLAY AGAIN",q_neighbor_fake:"Which country does NOT border …?",q_neighbor_count:"How many neighbouring countries does this country have?",q_border_shared:"Do these countries share a border?",q_de_plate:"Which city/region has this licence plate?",q_map_reverse:"Which country is highlighted?",q_stadium:"⚽ In which country is this stadium?",q_jersey:"👕 Which country wears this jersey?",q_crest:"🛡 Which country does this crest belong to?",q_beta_hl_stadium:"Which stadium is higher above sea level?",q_beta_spotter:"World map",q_sport_poi:"In which country is this?",q_wappen:"Which country does this coat of arms belong to?",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
   fav_empty:"No favourites saved yet",
   profile:"Profile",stats:"Stats",casual:"Casual",hardcore:"Hardcore",rounds:"Rounds",
   btn_collect:"Collect",btn_back:"Back to Main Menu",btn_next:"Next →’",
@@ -1462,7 +1462,7 @@ en:{
   q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193",uk_hl_prompt:"Which building is taller?"
 },
 pl:{
-  play:"GRAJ",again:"ZAGRAJ PONOWNIE",menu:"Menu",board:"Ranking",pass:"Paszport",
+  play:"GRAJ",again:"ZAGRAJ PONOWNIE",q_neighbor_fake:"Który kraj NIE graniczy z …?",q_neighbor_count:"Ile sąsiadów ma ten kraj?",q_border_shared:"Czy te kraje mają wspólną granicę?",q_de_plate:"Które miasto/region ma tę tablicę rejestracyjną?",q_map_reverse:"Który kraj jest podświetlony?",q_stadium:"⚽ W którym kraju jest ten stadion?",q_jersey:"👕 Który kraj nosi tę koszulkę?",q_crest:"🛡 Do którego kraju należy ten herb?",q_beta_hl_stadium:"Który stadion leży wyżej nad poziomem morza?",q_beta_spotter:"Mapa świata",q_sport_poi:"W którym kraju to się znajduje?",q_wappen:"Do którego kraju należy ten herb?",q_hl_gdp:"Wyższe PKB/os. niż {a}?",q_hl_density:"Gęściej zaludnione niż {a}?",q_hl_elevation:"Wyższy szczyt niż {a}?",q_hl_coastline:"Dłuższe wybrzeże niż {a}?",q_hl_borders:"Więcej sąsiadów niż {a}?",q_hl_lifeexp:"Dłuższe życie niż w {a}?",q_hl_median_age:"Wyższy wiek mediany niż {a}?",q_hl_forest:"Więcej lasów niż {a}?",mode_hauptstadt_dist:"Odległość stolic",mode_flugrouten_duell:"Pojedynek tras lotniczych",mode_insel_festland:"Wyspa czy ląd stały",mode_aequator:"Na północ czy na południe?",mode_wort_schmiede:"Kuźnia Słów",diff_desc_blitz:"⚡ Blitz: 60 sekund · Jak najwięcej pytań",q_airport_pin:"Gdzie leży to lotnisko?",click_map:"Dotknij mapy",q_uk_match:"Z jakiego kraju pochodzi:",q_uk_pin:"Gdzie to jest na mapie?",uk_hl_higher:"Wyżej ↑",uk_hl_lower:"Niżej ↓",uk_hl_prompt:"Który budynek jest wyższy?",spotter_no_region:"nie ma regionów – wpisz \"{code}\"!",ws_found:"Znalezione",ws_enter_word:"Wpisz słowo…",ws_check:"Sprawdź",ws_all_found:"Znaleziono wszystkie słowa!",ws_next_city:"Następne miasto",ws_duplicate:"✓ Już znalezione!",ws_invalid:"✕ Nieprawidłowe słowo",ws_lang_label:"Język",ws_letters_hint:"Twórz słowa z liter miasta",menu:"Menu",board:"Ranking",pass:"Paszport",
   fav_empty:"Nie zapisano jeszcze ulubionych",
   profile:"Profil",stats:"Statystyki",casual:"Zwykły",hardcore:"Trudny",rounds:"Rundy",
   btn_collect:"Zbierz",btn_back:"Powrót do menu",btn_next:"Dalej →’",
@@ -3601,7 +3601,7 @@ function genCurrRealQ(){
   /* Show only currency name+ISO – NOT country name (would give away the answer) */
   const dis=CURR_REAL.filter((_,i)=>i!==idx).sort(()=>rng()-.5).slice(0,3).map(x=>x.n+" ("+x.iso+")");
   const ans=cor.n+" ("+cor.iso+")";
-  return{type:"curr_real",prompt:"Welche W\u00e4hrung hat …",subj:displayCountry(ccFromCountry(cor.c))||cor.c,ans,opts:sh([ans,...dis]),meta:cor.n,lid:cor.c,cc:ccFromCountry(cor.c)};
+  return{type:"curr_real",prompt:t("q_curr_real"),subj:displayCountry(ccFromCountry(cor.c))||cor.c,ans,opts:sh([ans,...dis]),meta:cor.n,lid:cor.c,cc:ccFromCountry(cor.c)};
 }
 function genPopCompareQ(){
   if(!CAPS_POP||CAPS_POP.length<2)return null;
@@ -4929,11 +4929,11 @@ function genNeighborQ(){
   if(type2&&neighborList.length>=2){
     const ans=nonNb[~~(rng()*nonNb.length)];
     const dis=neighborList.slice().sort(()=>rng()-.5).slice(0,2);
-    return{type:"neighbor",prompt:"Grenzt NICHT an\u2026?",subj:country,ans,opts:sh([ans,...dis]),lid:country+'|'+ans,cc:ccFromCountry(country)||''};
+    return{type:"neighbor",prompt:t("q_neighbor_not"),subj:country,ans,opts:sh([ans,...dis]),lid:country+'|'+ans,cc:ccFromCountry(country)||''};
   }else{
     const ans=neighborList[~~(rng()*neighborList.length)];
     const dis=nonNb.slice().sort(()=>rng()-.5).slice(0,3);
-    return{type:"neighbor",prompt:"Welches Land grenzt an…?",subj:country,ans,opts:sh([ans,...dis.slice(0,3)]),lid:country+'|'+ans,cc:ccFromCountry(country)||''};
+    return{type:"neighbor",prompt:t("q_neighbor"),subj:country,ans,opts:sh([ans,...dis.slice(0,3)]),lid:country+'|'+ans,cc:ccFromCountry(country)||''};
   }
 }
 
@@ -4962,7 +4962,7 @@ function genNeighborFakeQ(){
   }
   if(\!fakePool.length)return null;
   const fake=fakePool[~~(rng()*fakePool.length)];
-  return{type:"neighbor_fake",prompt:"Welches Land grenzt NICHT an …?",
+  return{type:"neighbor_fake",prompt:t("q_neighbor_fake"),
     subj:country,ans:fake,opts:sh([...realNbs,fake]),meta:"",
     lid:country+'|fake|'+fake,cc:_ccT||''};
 }
@@ -4978,7 +4978,7 @@ function genNeighborCountQ(){
   while(wrongs.size<3&&att<60){att++;const w=Math.max(0,realCount+~~(rng()*7)-3);if(w\!==realCount)wrongs.add(w);}
   const opts=sh([String(realCount),...[...wrongs].map(String)]);
   const meta=nb[country].slice(0,5).join(", ")+(nb[country].length>5?"…":"");
-  return{type:"neighbor_count",prompt:"Wie viele Nachbarländer hat dieses Land?",
+  return{type:"neighbor_count",prompt:t("q_neighbor_count"),
     subj:country,ans:String(realCount),opts,meta,lid:country+'|count',cc:ccFromCountry(country)||''};
 }
 
@@ -5028,7 +5028,7 @@ function mpCountdown(seed,mode,filt,dif){
       const _ch=S.mp.channel,_oppName=S.mp.oppName||"Gegner";
       window.mpGameCh=_ch;
       _ch.on("broadcast",{event:"score_update"},({payload})=>{
-        S.mpOppScore=payload.score||0;S.mpOppRd=payload.rd||0;render();
+        S.mpOppScore=payload.score||0;S.mpOppRd=payload.rd||0;if("lid" in payload){S.mpOppLid=payload.lid;S.mpOppSel=payload.sel;S.mpOppSelOk=!!payload.selOk;}render();
       }).on("broadcast",{event:"game_over"},({payload})=>{
         S.mpOppFinal=payload;
         if(S.ph==="gameover")render();
@@ -5044,7 +5044,7 @@ function mpCountdown(seed,mode,filt,dif){
       startGame(mode||"city",seed);  /* P285: seed an startGame -> auch Runde 1 ist geseedet */
       /* Tag session as multiplayer */
       S.mpSeed=seed;S.mpOpponent=_oppName;
-      S.mpOppScore=0;S.mpOppRd=0;S.mpOppFinal=null;
+      S.mpOppScore=0;S.mpOppRd=0;S.mpOppFinal=null;S.mpOppSel=null;S.mpOppLid=null;S.mpOppSelOk=null;
     }else {}
   },1000);
 }
@@ -7194,7 +7194,7 @@ function genBorderQ(){
   const wrong=correct?ansNo:ansYes;
   const meta=correct?((NEIGHBORS[cA.c]||[]).length+" Nachbarn \u00b7 "+(NEIGHBORS[cB.c]||[]).length+" Nachbarn"):(cA.ct+" / "+cB.ct);
   const optOrder=rng()<0.5?[ansYes,ansNo]:[ansNo,ansYes];
-  return{type:"border_q",prompt:"Teilen diese L\u00e4nder eine gemeinsame Grenze?",
+  return{type:"border_q",prompt:t("q_border_shared"),
     subj:nameA+"\u00a0\u2194\u00a0"+nameB,
     ans:ans,opts:optOrder,meta:meta,lid:pairKey,cc:cA.cc,
     _ccA:cA.cc,_ccB:cB.cc,_nameA:nameA,_nameB:nameB};
@@ -7211,7 +7211,7 @@ function genDePlateQ(){
   const pool2=nearby.concat(far).sort(()=>rng()-.5);
   const dis=[];for(let i=0;i<pool2.length&&dis.length<3;i++){if(!dis.includes(pool2[i].region)&&pool2[i].region!==cor.region)dis.push(pool2[i].region);}
   while(dis.length<3){const e=others.find(x=>!dis.includes(x.region)&&x.region!==cor.region);if(!e)break;dis.push(e.region);}
-  return{type:"de_plate",prompt:"Welche Stadt/Region hat dieses Kennzeichen?",
+  return{type:"de_plate",prompt:t("q_de_plate"),
     subj:cor.code,ans:cor.region,opts:[cor.region,...dis].sort(()=>rng()-.5),
     meta:cor.country,lid:cor.code,cc:"de"};
 }
@@ -7270,7 +7270,7 @@ function genMapReverseQ(){
   const _mLbl=c=>{const d=displayCountry(c.cc);return(d&&d!==c.cc)?d:c.name;};
   const dis=sh([...others]).slice(0,3).map(_mLbl);
   const ansLabel=_mLbl(co);
-  return{type:"map_reverse",prompt:"Welches Land ist hervorgehoben?",
+  return{type:"map_reverse",prompt:t("q_map_reverse"),
     subj:_mLbl(co),ans:ansLabel,opts:sh([ansLabel,...dis]),meta:"",lid:co.cc,cc:co.cc};
 }
 
@@ -7697,17 +7697,17 @@ function genFootballQ(mode){
   if(type==="stadium"){
     const d=_footballData.stadiums,idx=~~(rng()*d.length),cor=d[idx];
     const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
-    return{type:"stadium",prompt:"\u26BD In welchem Land steht dieses Stadion?",subj:cor.name,ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:cor.city+", "+cor.cap.toLocaleString()+" Pl\u00e4tze",lid:"gfq_stad_"+cor.cc,cc:cor.cc};
+    return{type:"stadium",prompt:t("q_stadium"),subj:cor.name,ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:cor.city+", "+cor.cap.toLocaleString()+" Pl\u00e4tze",lid:"gfq_stad_"+cor.cc,cc:cor.cc};
   }
   if(type==="jersey"){
     const d=_footballData.jerseys,idx=~~(rng()*d.length),cor=d[idx];
     const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
-    return{type:"jersey",prompt:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",subj:{cc:cor.cc,color:cor.color,style:cor.style},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",lid:"gfq_jer_"+cor.cc,cc:cor.cc};
+    return{type:"jersey",prompt:t("q_jersey"),subj:{cc:cor.cc,color:cor.color,style:cor.style},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",lid:"gfq_jer_"+cor.cc,cc:cor.cc};
   }
   if(type==="crest"){
     const d=_footballData.crests,idx=~~(rng()*d.length),cor=d[idx];
     const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
-    return{type:"crest",prompt:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",subj:{shape:cor.shape,color:cor.color},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",lid:"gfq_cre_"+cor.cc,cc:cor.cc};
+    return{type:"crest",prompt:t("q_crest"),subj:{shape:cor.shape,color:cor.color},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",lid:"gfq_cre_"+cor.cc,cc:cor.cc};
   }
   return null;
 }
@@ -7936,7 +7936,7 @@ function genStadionHoeheQ(){
     var diff=higher.alt-lower.alt;
     if(diff<30)continue; /* skip nearly-identical altitudes */
     var meta=a.name+": "+a.alt+" m · "+b.name+": "+b.alt+" m";
-    var _pLid="sh_"+Math.min(ai,sorted.indexOf(b))+"_"+Math.max(ai,sorted.indexOf(b));return{type:"beta_hl",prompt:"Welches Stadion liegt höher über dem Meeresspiegel?",subj:"",opts:[a.name,b.name],ans:higher.name,meta:meta,lid:_pLid,cc:higher.cc||"de"};
+    var _pLid="sh_"+Math.min(ai,sorted.indexOf(b))+"_"+Math.max(ai,sorted.indexOf(b));return{type:"beta_hl",prompt:t("q_beta_hl_stadium"),subj:"",opts:[a.name,b.name],ans:higher.name,meta:meta,lid:_pLid,cc:higher.cc||"de"};
   }
   return null;
 }
@@ -7956,7 +7956,7 @@ function genBetaSpotter(bId){
   if(!pool||!pool.length)return null;
   const d=pool[~~(rng()*pool.length)];
   if(!d||!d.answer)return null;
-  return{type:"beta_spotter",prompt:"Weltkarte",subj:d.q,ans:d.answer,opts:[],meta:"",lid:"bspot_"+bId,cc:ccFromCountry(d.answer)||"de"};
+  return{type:"beta_spotter",prompt:t("q_beta_spotter"),subj:d.q,ans:d.answer,opts:[],meta:"",lid:"bspot_"+bId,cc:ccFromCountry(d.answer)||"de"};
 }
 
 
@@ -7977,7 +7977,7 @@ function genSportPoiQ(gameId){
   const _base=_pIdx>0?_nm.slice(0,_pIdx).trim():_nm;
   const _hint=_pIdx>0?_nm.slice(_pIdx):'';
   const _meta=_hint||cor.lat.toFixed(1)+'\u00b0, '+cor.lng.toFixed(1)+'\u00b0';
-  return{type:"sport_poi",prompt:"In welchem Land liegt das?",subj:_base,ans:corCountry,opts:sh([corCountry,...dis]),meta:_meta,lid:cor.name,cc:cor.cc};
+  return{type:"sport_poi",prompt:t("q_sport_poi"),subj:_base,ans:corCountry,opts:sh([corCountry,...dis]),meta:_meta,lid:cor.name,cc:cor.cc};
 }
 
 /* -- Phase 204: flugrouten_duell ------------------------------------------- */
@@ -9913,7 +9913,7 @@ S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
   /* Phase 33 Teil 2 */
   if(window.mpGameCh&&S.mpOpponent){
     window.mpGameCh.send({type:"broadcast",event:"score_update",
-      payload:{score:S.sc,rd:S.rd,correct:S.correct}}).then(()=>{},()=>{});
+      payload:{score:S.sc,rd:S.rd,correct:S.correct,sel:(typeof a==="undefined"?null:a),selOk:ok,lid:(S.q&&S.q.lid)}}).then(()=>{},()=>{});
   }
   /* P133: longer delay for text-heavy beta/IATA questions */
   const _qt=S.q&&S.q.type||"";
@@ -10599,7 +10599,7 @@ function startGame(m,_mpSeed){
     survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,blitzTimeLeft:S.diff==="blitz"?60:0,lives:S.diff==="casual"?999:3,
     q:null,sel:null,ok:null,slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0,
     /* Phase 217 QA: clear mp carry-over so solo games never show duell HUD */
-    mpOpponent:null,mpOppScore:0,mpOppFinal:null,mpOppRd:0});  /* P208/P210: always reset sub-game state on new game */
+    mpOpponent:null,mpOppScore:0,mpOppFinal:null,mpOppRd:0,mpOppSel:null,mpOppLid:null,mpOppSelOk:null});  /* P208/P210: always reset sub-game state on new game */
   if(_mpSeed!=null)initRng(_mpSeed);  /* P285: MP-Seed VOR erstem lq() -> Runde 1 synchron; Solo/Daily unberührt (undefined) */
   _secretGameToken=Math.random().toString(36).substring(2,15);
   /* Phase 86 – custom puzzle modes */
@@ -11612,7 +11612,7 @@ if(mode==="slf"&&S.ph==="playing"){
         qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;margin:.75rem 0">${_csvg}</div>`;
       }
       { const _isFootball=(q.type==="stadium"||q.type==="jersey"||q.type==="crest");const _isHLBeta=(q.type&&q.type.startsWith('hl_b_'));
-  const btns=q.opts.map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${(_isHLBeta&&HL_BETA_CC[o])?`<img src="https://flagcdn.com/w40/${HL_BETA_CC[o].toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:_isFootball&&String(o).length===2?`<img src="https://flagcdn.com/w40/${String(o).toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:""}${esc(q.type==="map_ivr"?o:_isHLBeta?(displayCountry(HL_BETA_CC[o])||o):_isFootball?(displayCountry(String(o))||String(o)):displayCountry(o))}${mk}</button>`;}).join("");
+  const btns=q.opts.map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";const _omk=(S.mpOpponent&&S.mpOppLid===q.lid&&S.mpOppSel!=null&&o===S.mpOppSel)?`<span class="opp-pick" title="Wahl des Gegners" style="margin-left:5px;font-size:.62rem;font-weight:800;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694</span>`:"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${(_isHLBeta&&HL_BETA_CC[o])?`<img src="https://flagcdn.com/w40/${HL_BETA_CC[o].toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:_isFootball&&String(o).length===2?`<img src="https://flagcdn.com/w40/${String(o).toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:""}${esc(q.type==="map_ivr"?o:_isHLBeta?(displayCountry(HL_BETA_CC[o])||o):_isFootball?(displayCountry(String(o))||String(o)):displayCountry(o))}${mk}${_omk}</button>`;}).join("");
       const _twoOpts=q.opts&&q.opts.length===2?' two-opts':'';
       answerHtml=`<div class="answers${_twoOpts}">${btns}</div>`;
     }
@@ -11646,6 +11646,7 @@ if(mode==="slf"&&S.ph==="playing"){
       </div>
     </div>
     ${S.mpOpponent?`<div class="duell-bar-wrap"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
+    ${(S.mpOpponent&&S.mpOppLid===q.lid&&typeof S.mpOppSel!=="undefined")?`<div style="text-align:center;font-size:.72rem;font-weight:800;margin:1px 0 5px;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694 ${esc(S.mpOpponent.slice(0,10))} ${S.mpOppSel===null?"verpasste die Zeit":"wählte: "+esc(displayCountry(S.mpOppSel)||S.mpOppSel)} ${S.mpOppSelOk?"\u2713":"\u2717"}</div>`:""}
     ${st>=3?`<div style="text-align:center;font-size:.76rem;font-weight:700;color:#fb923c;margin-bottom:6px">${_tr.l}</div>`:""}
     <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
     <div class="qcard">${qBody}<div class="qtimer" style="color:${col}">${tm}</div></div>
@@ -12788,7 +12789,7 @@ function genWappenQ(){
   /* P168: fall back to curated w.c when cc not in COUNTRIES */
   const _wdc=w=>{const r=displayCountry(w.cc);return(r&&r!==w.cc)?r:w.c;};
   const opts=[correct,...wrongs].sort(()=>rng()-.5).map(_wdc);
-  return{type:"wappen",prompt:"Welchem Land gehört dieses Wappen?",subj:_wdc(correct),img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"🛡️ Wappen von "+correct.c};
+  return{type:"wappen",prompt:t("q_wappen"),subj:_wdc(correct),img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"🛡️ Wappen von "+correct.c};
 }
 
 /* P153: Fallback when Wappen SVG fails to load */

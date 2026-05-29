@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 285 (Stand: Mai 2026)
+**Version:** Phase 287 (Stand: Mai 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.40 MB | 685 Spielmodi | verify: 90/90
 
 ---
@@ -1052,11 +1052,13 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **283** | patch_283_feedback_email.py | **Feedback-System: reportBug+Crash-Handler schreiben jetzt in Supabase (nicht nur mailto). Admin-Tab zeigt alle Feedback-Eintraege. KRITISCHER MP-FIX: initRng(seed) NACH startGame aufgerufen (startGame hatte rngSeed=null auf Zeile 10582 – dieser Root Cause erklaert ALLE falschen Online-MP-Fragen). verify: 90/90.** | **1v1 UX: Wort-Schmiede-Modi aus Spielauswahl entfernt (noMultiplayer-Filter). lv.lastP1Result gespeichert. Handoff-Screen zeigt jetzt Ergebnis-Badge: ✅ Richtig / ❌ Falsch / ⏱ Zeit.** | **1v1 Sync Fix: mpCountdown render() bei jedem Tick (Countdown zeigte nur "3"). 11x Math.random()→rng() in Fragen-Generatoren (getSmartVersusOpponent, getVersusCountryPair/-Advanced, getFlagFusionPairSafe, renderFlagFusion, initLogikGitter, renderTravelRoute) – gleicher Seed = gleiche Fragen.** |
 | **284** | patch_284_daily_exploit.py | **Daily-Challenge Exploit-Fix: startDailyChallenge() setzte bisher KEIN Flag beim Start → Spieler konnte beliebig oft neu starten bis der Score passte. Fix (Option B – Resume statt Hard-Fail): neue Helper getDailyProgressKey/saveDailyProgress/loadDailyProgress, Start-Flag (gq_daily_prog_YYYY-MM-DD) wird SOFORT beim Erst-Start gesetzt, Progress nach jeder Antwort gespeichert, Resume bei Wiederkehr (Tages-Seed + askedLids wiederhergestellt), markDailyDone() löscht Progress-Key, renderDailyHero() zeigt Fortsetzen-Karte. verify: 90/90.** |
 | **285** | patch_285_mp_sync.py | **1v1-Online-Sync-Fix ("Höheres BIP" zeigte unterschiedliche Fragen): (1) S.filter + S.diff wurden nie synchronisiert — die Vergleichs-Generatoren (_compPick→_rfilt nutzt S.filter, getSmartMatch-Fenster nutzt S.diff) lieferten daher trotz gleichem Seed andere Länder; game_start-Payload jetzt um {filt,dif} erweitert, Host autoritativ, mpCountdown wendet sie vor startGame an. (2) Runde 1 wurde vor initRng generiert (rngSeed=null in startGame, initRng erst danach) → erste Frage lief auf Math.random(); startGame(m,_mpSeed) seedet jetzt VOR dem ersten lq(). verify: 90/90.** |
+| **286** | patch_286_mp_show_opp_answer.py | **1v1-Online: Gegner-Auswahl sichtbar. score_update überträgt jetzt zusätzlich {sel,selOk,lid}; Empfänger speichert S.mpOppSel/mpOppSelOk/mpOppLid. Anzeige nur bei lid-Match: (a) universelle Zeile unter der Duell-Leiste "⚔ <Gegner> wählte: <Auswahl> ✓/✗" (alle Modi), (b) Schwert-Marker auf dem vom Gegner gewählten Options-Button (z.B. Höheres BIP). Resets in mpCountdown + startGame. verify: 90/90, node --check OK.** |
+| **287** | patch_287_i18n_de_en_pl.py | **i18n de/en/pl. (A) 15 hartkodierte deutsche Frage-Prompts (curr_real, neighbor×2, neighbor_fake, neighbor_count, border_q, de_plate, map_reverse, stadium, jersey, crest, beta_hl, beta_spotter, sport_poi, wappen) auf t() umgestellt — deutscher Wert 1:1 aus Original, en+pl ergänzt, übrige Sprachen Fallback EN. (B) LANG.pl von 115→158 Schlüssel komplettiert (inkl. Wort-Schmiede-UI) → de/en/pl jetzt alle 158, 0 Lücken. Andere 21 Sprachen bewusst unverändert. verify: 90/90, node --check OK.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 285 -- 1v1-Online-Sync-Fix: filter+diff im game_start-Payload synchronisiert + Seed VOR erstem lq() (Runde 1 synchron). Behebt unterschiedliche "Höheres BIP"-Fragen. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 287 -- i18n de/en/pl: 15 hartkodierte deutsche Prompts auf t() umgestellt + LANG.pl komplettiert (115→158, inkl. Wort-Schmiede). de/en/pl vollständig, übrige Sprachen Fallback EN. 685 Modi, Mai 2026.*
 
 
 ---
