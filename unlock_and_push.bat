@@ -16,3 +16,6 @@ echo.
 git add -A
 git commit -m "Phase 281: 1v1 Sync Fix. mpCountdown render() bei jedem Tick (Countdown blieb bei 3). 11x Math.random()->rng() in Generatoren (Versus/FlagFusion/LogikGitter/TravelRoute) - gleicher Seed = gleiche Fragen fuer beide Spieler. verify: 90/90."
 git push origin main
+echo.
+echo Done! Vercel will deploy in ~60 seconds.
+pause
