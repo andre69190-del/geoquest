@@ -5020,7 +5020,7 @@ function mpCountdown(seed,mode){
   let t=3;
   S.mp.phase="countdown";S.mp.countdown=t;render();
   const iv=setInterval(()=>{
-    t--;S.mp.countdown=t;
+    t--;S.mp.countdown=t;render();
     if(t<=0){
       clearInterval(iv);
       S.mpModal=false;
@@ -9910,10 +9910,10 @@ S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
 }
 function getSmartVersusOpponent(country,categoryKey){
 const filteredCountries=COUNTRIES.filter(c=>c[categoryKey]!=null&&typeof c[categoryKey]==='number');
-if(filteredCountries.length<3){return COUNTRIES[Math.floor(Math.random()*COUNTRIES.length)];}
+if(filteredCountries.length<3){return COUNTRIES[~~(rng()*COUNTRIES.length)];}
 filteredCountries.sort((a,b)=>a[categoryKey]-b[categoryKey]);
 const currentIdx=filteredCountries.findIndex(c=>c.cc===country.cc);
-if(currentIdx<0){return filteredCountries[Math.floor(Math.random()*filteredCountries.length)];}
+if(currentIdx<0){return filteredCountries[~~(rng()*filteredCountries.length)];}
 const countryValue=country[categoryKey];
 let selectedIdx=-1;
 let attempts=0;
@@ -9941,11 +9941,11 @@ if(checkIdx>=filteredCountries.length)break;
 if(selectedIdx>=0)break;
 }
 if(selectedIdx<0){
-currentIdx=Math.floor(Math.random()*filteredCountries.length);
+currentIdx=~~(rng()*filteredCountries.length);
 }
 }
 if(selectedIdx<0||selectedIdx===currentIdx){
-return filteredCountries[Math.floor(Math.random()*filteredCountries.length)];
+return filteredCountries[~~(rng()*filteredCountries.length)];
 }
 return filteredCountries[selectedIdx];
 }
@@ -10080,10 +10080,10 @@ function getVersusCountryPair(metric){
 const sorted=getCountriesSortedByMetric(metric);
 const maxIdx=sorted.length-1;
 // Pick random country A
-const idxA=Math.floor(Math.random()*sorted.length);
+const idxA=~~(rng()*sorted.length);
 const countryA=sorted[idxA];
-// Pick country B from neighbors only (Â±1 or Â±2 positions)
-let idxB=idxA+Math.floor(Math.random()*3)-1; // -1, 0, or +1
+// Pick country B from neighbors only (±1 or ±2 positions)
+let idxB=idxA+~~(rng()*3)-1; // -1, 0, or +1
 if(idxB<0)idxB=0;
 if(idxB>maxIdx)idxB=maxIdx;
 if(idxB===idxA){
@@ -10093,7 +10093,7 @@ const countryB=sorted[idxB];
 // TIE-BREAKER: Ensure different values
 let attempts=0;
 while(getMetricValue(countryA,metric)===getMetricValue(countryB,metric)&&attempts<5){
-idxB=Math.floor(Math.random()*sorted.length);
+idxB=~~(rng()*sorted.length);
 attempts++;
 }
 return{countryA,countryB,correctIdx:getMetricValue(countryA,metric)>getMetricValue(countryB,metric)?0:1};
@@ -10128,9 +10128,9 @@ function getVersusCountryPairAdvanced(metric){
 const sorted=getCountriesSortedByAdvancedMetric(metric);
 if(sorted.length<2)return null;
 const maxIdx=sorted.length-1;
-const idxA=Math.floor(Math.random()*sorted.length);
+const idxA=~~(rng()*sorted.length);
 const countryA=sorted[idxA];
-let idxB=idxA+Math.floor(Math.random()*3)-1;
+let idxB=idxA+~~(rng()*3)-1;
 if(idxB<0)idxB=0;
 if(idxB>maxIdx)idxB=maxIdx;
 if(idxB===idxA){
@@ -10139,7 +10139,7 @@ idxB=(idxA+1)<=maxIdx?(idxA+1):(idxA-1);
 const countryB=sorted[idxB];
 let attempts=0;
 while(getAdvancedMetricValue(countryA,metric)===getAdvancedMetricValue(countryB,metric)&&attempts<5){
-idxB=Math.floor(Math.random()*sorted.length);
+idxB=~~(rng()*sorted.length);
 attempts++;
 }
 return{countryA,countryB,correctIdx:getAdvancedMetricValue(countryA,metric)>getAdvancedMetricValue(countryB,metric)?0:1};
@@ -10217,19 +10217,19 @@ return true;
 });
 // If we have enough candidates with climate match, use them
 if(candidates.length>=count){
-return candidates.sort(()=>Math.random()-0.5).slice(0,count);
+return candidates.sort(()=>rng()-0.5).slice(0,count);
 }
 // Fallback: Use regular wrong answers (fallback to region-based)
 const region=correctData.region;
 const regionCountries=Object.keys(globalCultureData).filter(c=>globalCultureData[c].region===region&&c!==correctCode);
-return regionCountries.sort(()=>Math.random()-0.5).slice(0,count);
+return regionCountries.sort(()=>rng()-0.5).slice(0,count);
 }
 
 
 // PHASE 180: Specialty Quiz Helpers
 function generateLogicPuzzle(){
 // Generate a constraint-based geography puzzle
-const countries=COUNTRIES.slice().filter(c=>c.pop>1e6).sort(()=>Math.random()-0.5).slice(0,5);
+const countries=COUNTRIES.slice().filter(c=>c.pop>1e6).sort(()=>rng()-0.5).slice(0,5);
 if(countries.length<2)return null;
 const correct=countries[0];
 const others=countries.slice(1);
@@ -10396,9 +10396,9 @@ function drawAirportPinMap(readOnly){
 function getFlagFusionPairSafe(){
 // Get two countries for flag fusion
 const codes=Object.keys(globalCultureData);
-const idx1=Math.floor(Math.random()*codes.length);
-let idx2=Math.floor(Math.random()*codes.length);
-while(idx2===idx1)idx2=Math.floor(Math.random()*codes.length);
+const idx1=~~(rng()*codes.length);
+let idx2=~~(rng()*codes.length);
+while(idx2===idx1)idx2=~~(rng()*codes.length);
 const code1=codes[idx1];
 const code2=codes[idx2];
 const country1=COUNTRIES.find(c=>c.c===code1);
@@ -10442,7 +10442,7 @@ return html;
 
 function renderTravelRoute(){
 // Select 2 random cities
-const cities=(globalCities||[]).filter(c=>c.pop>100000).sort(()=>Math.random()-0.5).slice(0,4);
+const cities=(globalCities||[]).filter(c=>c.pop>100000).sort(()=>rng()-0.5).slice(0,4);
 if(cities.length<2)return '<div>Error: Not enough city data</div>';
 const city1=cities[0];
 const city2=cities[1];
@@ -10459,7 +10459,7 @@ const route1={desc:(city1.name||city1.n||'City')+' →’ '+(city2.name||city2.n
 const route2={desc:(city1.name||city1.n||'City')+' →’ '+(city3.name||city3.n||'City'),dist:dist1_3,correct:false};
 const route3={desc:(city1.name||city1.n||'City')+' →’ '+(city4.name||city4.n||'City'),dist:dist1_4,correct:false};
 
-const routes=[route1,route2,route3].sort(()=>Math.random()-0.5);
+const routes=[route1,route2,route3].sort(()=>rng()-0.5);
 const correctIdx=routes.findIndex(r=>r.correct);
 
 setCorrectAnswerObfuscated(COUNTRIES,correctIdx,correctIdx);
@@ -10489,15 +10489,15 @@ if(!pair)return '<div>Error: Not enough country data</div>';
 const{country1,country2,code1,code2}=pair;
 
 // Randomly choose which one to ask about
-const askAbout=Math.random()>0.5?country1:country2;
+const askAbout=rng()>0.5?country1:country2;
 const correctCode=askAbout.c;
 const correctIdx=0;
 
 setCorrectAnswerObfuscated(COUNTRIES,correctIdx,correctIdx);
 
 // Create wrong answer options
-const wrongOptions=COUNTRIES.filter(c=>c.c!==code1&&c.c!==code2).sort(()=>Math.random()-0.5).slice(0,3);
-const allOptions=[askAbout,...wrongOptions].sort(()=>Math.random()-0.5);
+const wrongOptions=COUNTRIES.filter(c=>c.c!==code1&&c.c!==code2).sort(()=>rng()-0.5).slice(0,3);
+const allOptions=[askAbout,...wrongOptions].sort(()=>rng()-0.5);
 const actualCorrectIdx=allOptions.findIndex(c=>c.c===correctCode);
 
 let html='<div style="padding:20px;text-align:center;">';
@@ -12410,11 +12410,11 @@ function handleGridAnswer(r,c,name){
 }
 function initLogikGitter(){
   _secretGameToken=Math.random().toString(36).substring(2,15);
-  function _shuf(a){const b=a.slice();for(let i=b.length-1;i>0;i--){const j=~~(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+  function _shuf(a){const b=a.slice();for(let i=b.length-1;i>0;i--){const j=~~(rng()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
   /* P161/P164: type selection -- honour S.gridTypeMode when not "random" */
   const _gtm=(typeof S!=="undefined"&&S.gridTypeMode&&S.gridTypeMode!=="random")?S.gridTypeMode:null;
   const _types=["land","land","land","stadt","wahrzeichen","unesco","food"];
-  const gtype=_gtm||_types[~~(Math.random()*_types.length)];
+  const gtype=_gtm||_types[~~(rng()*_types.length)];
   let rowPool,colPool,fallback,checkFn;
   if(gtype==="land"){
     rowPool=GRID_ROW_POOL;colPool=GRID_COL_POOL;
@@ -12619,8 +12619,8 @@ function initReiseroute(){
   }
   let start,target,path,tries=0;
   do{
-    start=keys[~~(Math.random()*keys.length)];
-    target=keys[~~(Math.random()*keys.length)];
+    start=keys[~~(rng()*keys.length)];
+    target=keys[~~(rng()*keys.length)];
     if(start===target){path=null;continue;}
     path=bfs(start,target);
     tries++;

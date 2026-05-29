@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 280 (Stand: Mai 2026)
-**Build:** gen.py → 1.28 MB | GeoQuest.html → 4.43 MB | 685 Spielmodi | verify: 90/90
+**Version:** Phase 281 (Stand: Mai 2026)
+**Build:** gen.py → 1.28 MB | GeoQuest.html → 4.39 MB | 685 Spielmodi | verify: 90/90
 
 ---
 
@@ -1047,18 +1047,19 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **278** | patch_278_push80_tiere_sport.py | **Data Sprint Push-to-80: 12 SPORT_POI_GAMES-Arrays (derby/eishockey/f1/tdf/olympia/wm/em/fussball/sommerspiele/rekorde) + UEFA_STADIUMS_DATA von 50→80 Items. 6 Hard-Limit-Arrays korrekt übersprungen. GeoQuest.html 4.43 MB.** |
 | **279** | patch_279_mobile_pwa_landscape.py | **Mobile Fix: iOS PWA-Install (_isIOS + _isInStandaloneMode, Share-Button-Anleitung). Landscape-Detection: screen.orientation.type API, Timeout 120→350ms, resize-Event (debounced 200ms).** |
 | **280** | patch_280_bugfixes.py | **Critical Bugfixes: _mkMatchQ + genFootballQ fehlende lid-Felder (Dedup-Fix). genFootballQ Math.random→rng() (MP-Sync). _lvNext opts-Guard (8 Retries, verhindert pin-Modi ohne Buttons im 1v1). _footballData.crests 10→51 Einträge (eindeutige shape+color-Paare).** |
+| **281** | patch_281_1v1_sync.py | **1v1 Sync Fix: mpCountdown render() bei jedem Tick (Countdown zeigte nur "3"). 11x Math.random()→rng() in Fragen-Generatoren (getSmartVersusOpponent, getVersusCountryPair/-Advanced, getFlagFusionPairSafe, renderFlagFusion, initLogikGitter, renderTravelRoute) – gleicher Seed = gleiche Fragen.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 280 -- Bugfix-Sprint: lid-Felder, MP-Sync, 1v1 opts-Guard, Crest-Expansion. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 281 -- 1v1 Sync: mpCountdown-Render + Math.random->rng(): lid-Felder, MP-Sync, 1v1 opts-Guard, Crest-Expansion. 685 Modi, Mai 2026.*
 
 
 ---
 
 ## 13. Vollstaendiger Spielmodus-Katalog
 
-**Stand Phase 280 -- 685 Modi in 20 Kategorien**
+**Stand Phase 281 -- 685 Modi in 20 Kategorien**
 
 > **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
 
@@ -1900,27 +1901,4 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | Titel | Typ | Modus-ID |
 |-------|-----|---------|
 | Getr\u00e4nke & Herkunft | Match | `uk_getraenke` |
-| Streetfood-Klassiker | Match | `uk_streetfood` |
-| K\u00e4se & Herk. | Match | `uk_kaese` |
-| S\u00fc\u00dfes aus aller Welt | Match | `uk_suessspeisen` |
-| Kaffee-Kulturen | Match | `uk_kaffee` |
-| T\u00e4nze & Herkunft | Match | `uk_taenze` |
-| Trachten & Kleidung | Match | `uk_kleidung` |
-| Musikinstrumente | Match | `uk_instrumente` |
-| Ber\u00fchmte Autoren | Match | `uk_literatur` |
-| Weltliche Wahrzeichen | Match | `uk_wahrzeichen` |
-| Weltber\u00fchmte Feste | Match | `uk_feste` |
-| Begr\u00fc\u00dfungsrituale | Match | `uk_begruessung` |
-| Nationale Feiertage | Match | `uk_feiertage` |
-| Gro\u00dfe Erfindungen | Match | `uk_erfindungen` |
-| Ber\u00fchmte Exporte | Match | `uk_exporte` |
-| Nationalblumen | Match | `uk_blumen` |
-| Ber\u00fchmte Entdecker | Match | `uk_entdecker` |
-| Nationalsportarten | Match | `uk_sport` |
-| Brettspiel-Urspr\u00fcnge | Match | `uk_brettspiele` |
-| Weinregionen pinnen | Match | `uk_weinregionen` |
-| Ber\u00fchmte Museen | Match | `uk_museen` |
-| Kunstwerke -> Ort | Match | `uk_kunstwerke` |
-| Ber\u00fchmte Filmsets | Match | `uk_filmsets` |
-| Historische Ruinen | Match | `uk_ruinen` |
-| Ber\u00fchmte Br\u00fccken | Match | `
+| Streetfood-Klassiker | Match | 

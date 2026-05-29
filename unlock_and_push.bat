@@ -14,8 +14,5 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phases 278-280: Data Push-to-80 + Mobile Fixes + Critical Bugfixes. SPORT_POI 12x50->80, UEFA 50->80. iOS PWA install, Landscape 350ms+resize. lid-Fix (match/crest/jersey/stadium), rng()-Sync, 1v1 opts-guard, Crests 10->51. verify: 90/90."
+git commit -m "Phase 281: 1v1 Sync Fix. mpCountdown render() bei jedem Tick (Countdown blieb bei 3). 11x Math.random()->rng() in Generatoren (Versus/FlagFusion/LogikGitter/TravelRoute) - gleicher Seed = gleiche Fragen fuer beide Spieler. verify: 90/90."
 git push origin main
-echo.
-echo Done! Vercel will deploy in ~60 seconds.
-pause
