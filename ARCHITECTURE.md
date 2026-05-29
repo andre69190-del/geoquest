@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 277 (Stand: Mai 2026)
-**Build:** gen.py → 1.17 MB | GeoQuest.html → 3.79 MB | 685 Spielmodi | verify: 90/90
+**Version:** Phase 280 (Stand: Mai 2026)
+**Build:** gen.py → 1.28 MB | GeoQuest.html → 4.43 MB | 685 Spielmodi | verify: 90/90
 
 ---
 
@@ -1044,18 +1044,21 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **275** | gen.py direkt | **Pin-Map Scroll-Fix: translateExtent [-W,-H→2W,2H] → [-0.5W,-0.5H→1.5W,1.5H] (kein Off-Screen mehr). Reset-Button ↺ erscheint nach erstem Panning-Touch, zoomt zurück zur Zielregion oder Vollwelt.** |
 | **276** | gen.py direkt | **Pin-Map Random-Offset: Zielort landet zufällig bei -10%...+110% des Viewports (gelegentlich außerhalb Rand). Anti-Cheat: Mitte-klicken hilft nicht mehr. Reset-Button stellt gleiche Zufallsposition wieder her.** |
 | **277** | patch_277_zindex_fix.py | **Z-Index Bleeding Fix: bottom-nav z-index 300→1000, Fav/Info-Buttons 99999→2, body padding-bottom 68→80px. Buttons verschwinden sauber hinter Tab-Bar beim Scrollen.** |
+| **278** | patch_278_push80_tiere_sport.py | **Data Sprint Push-to-80: 12 SPORT_POI_GAMES-Arrays (derby/eishockey/f1/tdf/olympia/wm/em/fussball/sommerspiele/rekorde) + UEFA_STADIUMS_DATA von 50→80 Items. 6 Hard-Limit-Arrays korrekt übersprungen. GeoQuest.html 4.43 MB.** |
+| **279** | patch_279_mobile_pwa_landscape.py | **Mobile Fix: iOS PWA-Install (_isIOS + _isInStandaloneMode, Share-Button-Anleitung). Landscape-Detection: screen.orientation.type API, Timeout 120→350ms, resize-Event (debounced 200ms).** |
+| **280** | patch_280_bugfixes.py | **Critical Bugfixes: _mkMatchQ + genFootballQ fehlende lid-Felder (Dedup-Fix). genFootballQ Math.random→rng() (MP-Sync). _lvNext opts-Guard (8 Retries, verhindert pin-Modi ohne Buttons im 1v1). _footballData.crests 10→51 Einträge (eindeutige shape+color-Paare).** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 277 -- Z-Index Bleeding Fix: Buttons verschwinden hinter Tab-Bar, padding-bottom 80px. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 280 -- Bugfix-Sprint: lid-Felder, MP-Sync, 1v1 opts-Guard, Crest-Expansion. 685 Modi, Mai 2026.*
 
 
 ---
 
 ## 13. Vollstaendiger Spielmodus-Katalog
 
-**Stand Phase 271 -- 685 Modi in 20 Kategorien**
+**Stand Phase 280 -- 685 Modi in 20 Kategorien**
 
 > **Pin** = Ort auf Karte finden | **H/L** = Hoeher/Niedriger | **Match** = Zuordnen | **WS** = Wort-Schmiede | **Classic** = Multiple Choice | **Karte** = Interaktive D3-Karte
 

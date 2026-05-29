@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 277: Z-Index Bleeding Fix. bottom-nav z-index 300->1000, Fav/Info-Buttons 99999->2, body padding-bottom 68->80px. Buttons verschwinden sauber hinter Tab-Bar. verify: 90/90."
+git commit -m "Phases 278-280: Data Push-to-80 + Mobile Fixes + Critical Bugfixes. SPORT_POI 12x50->80, UEFA 50->80. iOS PWA install, Landscape 350ms+resize. lid-Fix (match/crest/jersey/stadium), rng()-Sync, 1v1 opts-guard, Crests 10->51. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
