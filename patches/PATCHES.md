@@ -147,3 +147,6 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_289_comp_i18n.py | 289 | comparisons (comp_*) de/en/pl: _compQ + 5 Spezial-Generatoren über _tc; _CONTENT_I18N auf JSON normalisiert. +16 en/pl. verify: 90/90 |
 | patch_290_beta_i18n.py | 290 | HL-Beta (26) + Beta-MCQ (100) + Beta-HL (3) Prompts de/en/pl über _tc; 129 Strings → en+pl. verify: 90/90, node OK |
 | patch_291_en_5cats.py | 291 | Englisch für die 5 Rubriken: _CONTENT_I18N.en += 329 (Prompts/Einheiten/fixedOpts). 5 Rubriken jetzt de/en/pl. verify: 90/90, node OK. Audit: GeoQuest_i18n_Audit.md |
+| patch_292_tpgt_i18n.py | 292 | Tiere/Pflanzen/Gastro/Tech de/en/pl: genTiere*/genPflanzen*/genUniversal* mit _tc gewrappt; +337 en/pl (162 Prompts + 36 Einheiten + 139 fixedOpts). verify: 90/90, node OK |
+| patch_293_country_answers.py | 293 | _tcc(): dt. Ländername→cc→displayCountry für Match-opts/ans (astro/geo/sport, lifestyle/airports). verify: 90/90, node OK |
+| patch_294_clean_c_categories.py | 294 | Saubere .c-Kategorien de/en/pl: Gesteinsklassen, Kristallsysteme, Erdzeitalter, Sternenhimmel, Kontinente (101 Werte). verify: 90/90, node OK |

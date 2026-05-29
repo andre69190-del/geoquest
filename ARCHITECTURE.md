@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 291 (Stand: Mai 2026)
+**Version:** Phase 294 (Stand: Mai 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.40 MB | 685 Spielmodi | verify: 90/90
 
 ---
@@ -1058,11 +1058,14 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **289** | patch_289_comp_i18n.py | **comparisons-Kategorie de/en/pl: comp_* Prompts (hartkodiert DE) über _tc lokalisiert — _compQ zentral gewrappt (11 Vergleiche) + 5 Spezial-Generatoren (Flughäfen/Gipfel/Olympia, mit Emoji). _CONTENT_I18N auf gültiges JSON normalisiert. +16 en/pl. verify: 90/90.** |
 | **290** | patch_290_beta_i18n.py | **HL-Beta + Beta-Modi de/en/pl: genHLBeta (26 HL_BETA_PROMPTS), genBetaMCQ (100 Fragen), genBetaHL (3 Prompts) über _tc gewrappt; 129 dt. Strings → en+pl (indexbasiertes Mapping). verify: 90/90, node --check OK.** |
 | **291** | patch_291_en_5cats.py | **Englisch für die 5 Rubriken: _CONTENT_I18N.en += 329 (196 Prompts + 54 Einheiten + 79 fixedOpts) — englische Entsprechungen der in P288 polnisch übersetzten Strings. Validierung: jeder Schlüssel existiert bereits in .pl. Damit die 5 Rubriken jetzt de/en/pl. verify: 90/90, node --check OK. Siehe GeoQuest_i18n_Audit.md.** |
+| **292** | patch_292_tpgt_i18n.py | **Tiere/Pflanzen/Gastronomie/Technologie de/en/pl. genTiere*/genPflanzen*/genUniversal* mit _tc gewrappt (Prompt, Einheit, Match opts/ans); gastro/tech via bereits gewrappte _mk*. +337 en/pl (162 Prompts + 36 Einheiten + 139 fixedOpts, Eigennamen als Identität). verify: 90/90, node OK.** |
+| **293** | patch_293_country_answers.py | **Länder-Antwortwerte der Match-Modi lokalisiert. NEU _tcc(s): dt. Ländername→cc→displayCountry (en/pl), sonst Fallback _tc. In alle Match-opts/ans eingebaut (statt _tc). Annotierte Werte bleiben über _tc-Fallback. verify: 90/90, node OK.** |
+| **294** | patch_294_clean_c_categories.py | **Saubere .c-Kategorien de/en/pl: Gesteinsklassen, Kristallsysteme, Erdzeitalter, Sternenhimmel, Kontinente (101 Werte, alle distinct .c je Gruppe → keine gemischten Button-Sprachen). verify: 90/90, node OK.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 291 -- i18n-Ausbau: comp_* (289), HL-Beta + Beta-Modi (290) auf de/en/pl; Englisch für die 5 Rubriken (291). Sprach-Audit in GeoQuest_i18n_Audit.md. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 294 -- i18n-Vollausbau de/en/pl: Tiere/Pflanzen/Gastro/Tech (292), Länder-Antworten via _tcc/displayCountry (293), saubere .c-Kategorien Gesteins/Kristall/Erdzeitalter/Kontinente (294). _CONTENT_I18N nun 902 en/pl. Audit: GeoQuest_i18n_Audit.md. 685 Modi, Mai 2026.*
 
 
 ---

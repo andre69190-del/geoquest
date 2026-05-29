@@ -1,6 +1,6 @@
 # GeoQuest — Sprach-Audit (de / en / pl)
 
-*Stand: Phase 291 · Mai 2026 · 685 Spielmodi · 24 wählbare UI-Sprachen*
+*Stand: Phase 294 · Mai 2026 · 685 Spielmodi · 24 wählbare UI-Sprachen*
 
 Dieses Dokument beschreibt, welche Inhalte des Spiels in **Deutsch, Englisch und Polnisch** vorliegen — und was bewusst (noch) nur auf Deutsch ist.
 
@@ -32,6 +32,9 @@ Es gibt **drei** Übersetzungs-Ebenen:
 | **HL-Beta** (`hl_b_*`, 26 Prompts) | ✅ | ✅ | ✅ | **Phase 290** |
 | **Beta-Modi** (`b1…b60`, 100 MCQ + 3 HL-Prompts) | ✅ | ✅ | ✅ | **Phase 290** |
 | **5 Rubriken** — E-Mobilität, Archäologie, Astronomie, Geologie, Sport-Wissen: **Frage-Prompts (196), Einheiten (54), Match-Antwort-Buttons (79)** | ✅ | ✅ | ✅ | pl: Phase 288 · en: **Phase 291** |
+| **Tiere & Natur, Pflanzen & Flora, Gastronomie, Technologie & Robotik** — Prompts (162) + Einheiten (36) + fixedOpts (139) | ✅ | ✅ | ✅ | **Phase 292** |
+| **Länder-Antworten in Match-Modi** (astro/geo/sport, lifestyle/airports) — saubere Ländernamen via _tcc/displayCountry | ✅ | ✅ | ✅ | **Phase 293** |
+| **Saubere .c-Kategorien** — Gesteinsklassen, Kristallsysteme, Erdzeitalter, Sternenhimmel, Kontinente (101 Werte) | ✅ | ✅ | ✅ | **Phase 294** |
 | Wort-Schmiede (Anagramm) | ✅ | ✅ | ✅ | de/en/es/fr/pl unterstützt |
 
 ---
@@ -41,9 +44,8 @@ Es gibt **drei** Übersetzungs-Ebenen:
 | Bereich | Status | Grund |
 |---|---|---|
 | **Item-/Eigennamen** in allen Themenmodi (Marken, Modelle, Orte, Missionen — ~14 000) | nur DE-Form, meist sprachneutral | Eigennamen bleiben i. d. R. identisch; bewusst ausgeschlossen |
-| **Match-Antwortwerte ohne fixedOpts** in Astronomie/Geologie/Sport (Länder, Eigennamen, beschreibende Texte — ~2 350) | nur DE | großer offener Wertepool, überlappt mit Item-Inhalten |
-| **Kategorien Tiere & Natur, Pflanzen & Flora, Kulinarik (Gastronomie), Technologie & Robotik** — Prompts + Antwortinhalte | nur DE | nicht im bisherigen Auftrag enthalten |
-| **`uk_*`-Themeninhalte** in Kultur & Lifestyle / Airports / Nachbarländer (Getränke, Käse, Tänze, Automarken …) | nur DE (Antworten teils dt. Ländernamen) | thematische Dateninhalte, nicht im Auftrag |
+| **Match-Antwortwerte ohne fixedOpts** (außer den in P293/294 erfassten Ländern + sauberen Kategorien) — z. B. beschreibende Phrasen, Agenturen (NASA), Galaxientypen, annotierte Werte ("China (Peking)") | nur DE | offener/uneinheitlicher Wertepool |
+| **`uk_*`-Themeninhalte** in Kultur & Lifestyle / Airports / Nachbarländer (Getränke, Käse, Tänze, Automarken …) | Prompts via _tc (sofern übersetzt), Antwortinhalte überwiegend DE | thematische Dateninhalte, nicht im Auftrag |
 | Übrige 21 UI-Sprachen (fr, es, it, nl …) | teilweise (UI ~57–79 %), Inhalte EN-Fallback | aktuell nicht erforderlich |
 
 ---
@@ -66,5 +68,8 @@ Es gibt **drei** Übersetzungs-Ebenen:
 | 289 | patch_289_comp_i18n.py | comp_* Prompts de/en/pl |
 | 290 | patch_290_beta_i18n.py | HL-Beta + Beta-Prompts de/en/pl |
 | 291 | patch_291_en_5cats.py | Englisch für die 5 Rubriken |
+| 292 | patch_292_tpgt_i18n.py | Tiere/Pflanzen/Gastro/Tech de/en/pl |
+| 293 | patch_293_country_answers.py | Länder-Antworten via _tcc/displayCountry |
+| 294 | patch_294_clean_c_categories.py | Saubere .c-Kategorien (Gestein/Kristall/Erdzeitalter/Kontinente) |
 
-*Erstellt: Mai 2026 — Phase 291.*
+*Erstellt: Mai 2026 — aktualisiert Phase 294.*
