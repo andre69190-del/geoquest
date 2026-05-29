@@ -490,128 +490,7 @@ function generateWordGenGame() {
 }
 
 
-function renderFoodQuiz(){
-const codes=Object.keys(globalCultureData);
-const correctCode=codes[Math.floor(Math.random()*codes.length)];
-const correctCountry=COUNTRIES.find(c=>c.c===correctCode);
-if(!correctCountry){return '<div>Error: Country not found</div>';}
-
-const correctData=globalCultureData[correctCode];
-const wrongCodes=getWrongAnswers(correctCode,3);
-const allAnswers=[correctCode].concat(wrongCodes).sort(()=>Math.random()-0.5);
-
-setCorrectAnswerObfuscated(COUNTRIES,correctCode,correctCode);
-
-let html='<div style="padding:20px;text-align:center;">';
-html+='<h2>In welchem Land isst man das?</h2>';
-html+='<div style="background:#f0f0f0;padding:15px;margin:20px 0;border-radius:8px;font-size:18px;">';
-html+='<strong>'+correctData.food+'</strong>';
-html+='</div>';
-html+='<div style="display:flex;flex-direction:column;gap:10px;">';
-
-for(let i=0;i<allAnswers.length;i++){
-const answerCode=allAnswers[i];
-const answerCountry=COUNTRIES.find(c=>c.c===answerCode);
-const isCorrect=answerCode===correctCode;
-const btnStyle='padding:12px;font-size:16px;border:2px solid #ccc;border-radius:6px;cursor:pointer;background:#fff;transition:all 0.2s;';
-html+='<button class="quiz-btn" style="'+btnStyle+'" data-quiz-type="food" data-quiz-answer="'+i+'" data-quiz-code="'+correctCode+'">';
-html+=answerCountry.country;
-html+='</button>';
-}
-
-html+='</div></div>';
-return html;
-}
-
-
-function renderClimateQuiz(){
-const codes=Object.keys(globalCultureData);
-const correctCode=codes[Math.floor(Math.random()*codes.length)];
-const correctCountry=COUNTRIES.find(c=>c.c===correctCode);
-if(!correctCountry){return '<div>Error: Country not found</div>';}
-
-const correctData=globalCultureData[correctCode];
-const wrongCodes=getSmartClimateWrongAnswers(correctCode,3);
-const allAnswers=[correctCode].concat(wrongCodes).sort(()=>Math.random()-0.5);
-
-setCorrectAnswerObfuscated(COUNTRIES,correctCode,correctCode);
-
-let html='<div style="padding:20px;text-align:center;">';
-html+='<h2>Klima-Mysterium</h2>';
-html+='<div style="background:#f0f0f0;padding:15px;margin:20px 0;border-radius:8px;font-size:16px;">';
-html+='Welches Land hat dieses Klima?<br><strong>'+correctData.climate+'</strong>';
-html+='</div>';
-html+='<div style="display:flex;flex-direction:column;gap:10px;">';
-
-for(let i=0;i<allAnswers.length;i++){
-const answerCode=allAnswers[i];
-const answerCountry=COUNTRIES.find(c=>c.c===answerCode);
-const isCorrect=answerCode===correctCode;
-const btnStyle='padding:12px;font-size:16px;border:2px solid #ccc;border-radius:6px;cursor:pointer;background:#fff;transition:all 0.2s;';
-html+='<button class="quiz-btn" style="'+btnStyle+'" data-quiz-type="climate" data-quiz-answer="'+i+'" data-quiz-code="'+correctCode+'">';
-html+=answerCountry.country;
-html+='</button>';
-}
-
-html+='</div></div>';
-return html;
-}
-
-
-function renderLandmarkQuiz(){
-const codes=Object.keys(globalCultureData);
-const correctCode=codes[Math.floor(Math.random()*codes.length)];
-const correctCountry=COUNTRIES.find(c=>c.c===correctCode);
-if(!correctCountry){return '<div>Error: Country not found</div>';}
-
-const correctData=globalCultureData[correctCode];
-const wrongCodes=getWrongAnswers(correctCode,3);
-const allAnswers=[correctCode].concat(wrongCodes).sort(()=>Math.random()-0.5);
-
-setCorrectAnswerObfuscated(COUNTRIES,correctCode,correctCode);
-
-let html='<div style="padding:20px;text-align:center;">';
-html+='<h2>Wahrzeichen & Sehenswürdigkeiten</h2>';
-html+='<div style="background:#f0f0f0;padding:15px;margin:20px 0;border-radius:8px;font-size:16px;">';
-html+='Wo befindet sich das?<br><strong>'+correctData.landmark+'</strong>';
-html+='</div>';
-html+='<div style="display:flex;flex-direction:column;gap:10px;">';
-
-for(let i=0;i<allAnswers.length;i++){
-const answerCode=allAnswers[i];
-const answerCountry=COUNTRIES.find(c=>c.c===answerCode);
-const isCorrect=answerCode===correctCode;
-const btnStyle='padding:12px;font-size:16px;border:2px solid #ccc;border-radius:6px;cursor:pointer;background:#fff;transition:all 0.2s;';
-html+='<button class="quiz-btn" style="'+btnStyle+'" data-quiz-type="landmark" data-quiz-answer="'+i+'" data-quiz-code="'+correctCode+'">';
-html+=answerCountry.country;
-html+='</button>';
-}
-
-html+='</div></div>';
-return html;
-}
-
-function handleLandmarkAnswerClick(index,isCorrect){
-if(isCorrect){
-S.correct++;
-S.score+=10;
-}else{
-S.score-=5;
-}
-showMessage(isCorrect?'Richtig!':'Falsch!');
-setTimeout(startNextRound,1500);
-}
-
-function handleClimateAnswerClick(index,isCorrect){
-if(isCorrect){
-S.correct++;
-S.score+=10;
-}else{
-S.score-=5;
-}
-showMessage(isCorrect?'Richtig!':'Falsch!');
-setTimeout(startNextRound,1500);
-}
+/* Phase 295: removed dead legacy quiz renderers (renderFoodQuiz/Climate/Landmark + handlers) */
 
 
 function renderVersusArea(){
@@ -3608,7 +3487,7 @@ function genCurrRealQ(){
   const idx=~~(rng()*_crSrc.length);
   const cor=_crSrc[idx];
   /* Show only currency name+ISO – NOT country name (would give away the answer) */
-  const dis=CURR_REAL.filter((_,i)=>i!==idx).sort(()=>rng()-.5).slice(0,3).map(x=>x.n+" ("+x.iso+")");
+  const dis=sh(CURR_REAL.filter((_,i)=>i!==idx)).slice(0,3).map(x=>x.n+" ("+x.iso+")");
   const ans=cor.n+" ("+cor.iso+")";
   return{type:"curr_real",prompt:t("q_curr_real"),subj:displayCountry(ccFromCountry(cor.c))||cor.c,ans,opts:sh([ans,...dis]),meta:cor.n,lid:cor.c,cc:ccFromCountry(cor.c)};
 }
@@ -3634,7 +3513,7 @@ function genRiverRealQ(){
   const idx=~~(rng()*_rrSrc.length);
   const cor=_rrSrc[idx];
   const countries=[...new Set(RIVERS_REAL.map(r=>r.c))];
-  const dis=countries.filter(c=>c!==cor.c).sort(()=>rng()-.5).slice(0,3);
+  const dis=sh(countries.filter(c=>c!==cor.c)).slice(0,3);
   const meta=cor.len>0?cor.len+" km":"";
   return{type:"river_real",prompt:t("q_river_real"),subj:cor.n,ans:displayCountry(ccFromCountry(cor.c))||cor.c,opts:sh([displayCountry(ccFromCountry(cor.c))||cor.c,...dis.map(c=>displayCountry(ccFromCountry(c))||c)]),meta,lid:cor.n,cc:ccFromCountry(cor.c)};
 }
@@ -4937,11 +4816,11 @@ function genNeighborQ(){
   const type2=rng()>.5;
   if(type2&&neighborList.length>=2){
     const ans=nonNb[~~(rng()*nonNb.length)];
-    const dis=neighborList.slice().sort(()=>rng()-.5).slice(0,2);
+    const dis=sh(neighborList.slice()).slice(0,2);
     return{type:"neighbor",prompt:t("q_neighbor_not"),subj:country,ans,opts:sh([ans,...dis]),lid:country+'|'+ans,cc:ccFromCountry(country)||''};
   }else{
     const ans=neighborList[~~(rng()*neighborList.length)];
-    const dis=nonNb.slice().sort(()=>rng()-.5).slice(0,3);
+    const dis=sh(nonNb.slice()).slice(0,3);
     return{type:"neighbor",prompt:t("q_neighbor"),subj:country,ans,opts:sh([ans,...dis.slice(0,3)]),lid:country+'|'+ans,cc:ccFromCountry(country)||''};
   }
 }
@@ -7217,11 +7096,11 @@ function genDePlateQ(){
   const others=pool.filter(x=>x.code!==cor.code);
   const nearby=others.filter(x=>Math.abs(x.lat-cor.lat)<3&&Math.abs(x.lng-cor.lng)<3);
   const far=others.filter(x=>!(Math.abs(x.lat-cor.lat)<3&&Math.abs(x.lng-cor.lng)<3));
-  const pool2=nearby.concat(far).sort(()=>rng()-.5);
+  const pool2=sh(nearby.concat(far));
   const dis=[];for(let i=0;i<pool2.length&&dis.length<3;i++){if(!dis.includes(pool2[i].region)&&pool2[i].region!==cor.region)dis.push(pool2[i].region);}
   while(dis.length<3){const e=others.find(x=>!dis.includes(x.region)&&x.region!==cor.region);if(!e)break;dis.push(e.region);}
   return{type:"de_plate",prompt:t("q_de_plate"),
-    subj:cor.code,ans:cor.region,opts:[cor.region,...dis].sort(()=>rng()-.5),
+    subj:cor.code,ans:cor.region,opts:sh([cor.region,...dis]),
     meta:cor.country,lid:cor.code,cc:"de"};
 }
 function genPlateQ(hardcore){
@@ -7320,7 +7199,7 @@ function genIataQ(){
   const iata=keys[ci];
   const correct=_IATA[iata];
   const allCities=Object.values(_IATA);
-  const dis=allCities.filter(c=>c\!==correct).sort(()=>rng()-.5).slice(0,3);
+  const dis=sh(allCities.filter(c=>c\!==correct)).slice(0,3);
   if(dis.length<3)return null;
   const opts=sh([correct,...dis]);
   return{type:"iata",
@@ -7369,7 +7248,7 @@ function genClimateQ(){
   const corCt=_ct(correctCc);
   let pool=keys.filter(k=>k\!==correct&&ccFromCountry(k));
   if(corCt){const sc=pool.filter(k=>{const kcc=ccFromCountry(k);return kcc&&_ct(kcc)===corCt;});if(sc.length>=3)pool=sc;}
-  const dis=pool.slice().sort(()=>rng()-.5).slice(0,3);
+  const dis=sh(pool.slice()).slice(0,3);
   if(dis.length<3)return null;
   const opts=sh([correctCc,...dis.map(k=>ccFromCountry(k))]);
   const hint=clues.join(" \u00b7 ");
@@ -7389,7 +7268,7 @@ function genFlagColorQ(){
   if(notInFlag.length===0)return null;
   const wrongColIdx=~~(rng()*notInFlag.length);
   const correct=notInFlag[wrongColIdx];
-  const realCols=[...flagCols].sort(()=>rng()-.5).slice(0,3);
+  const realCols=sh([...flagCols]).slice(0,3);
   while(realCols.length<3){realCols.push(flagCols[~~(rng()*flagCols.length)]);}
   const uniqueReal=[...new Set(realCols)].slice(0,3);
   if(uniqueReal.length<3)return null;
@@ -7436,9 +7315,8 @@ function genLandlockedQ(){
   const ci=~~(rng()*_LANDLOCKED.length);
   const correct=_LANDLOCKED[ci];
   const allCountryNames=COUNTRIES.map(x=>x.c);
-  const dis=allCountryNames
-    .filter(c=>\!_LANDLOCKED.includes(c))
-    .sort(()=>rng()-.5).slice(0,3);
+  const dis=sh(allCountryNames
+    .filter(c=>\!_LANDLOCKED.includes(c))).slice(0,3);
   if(dis.length<3)return null;
   const opts=sh([correct,...dis]);
   return{type:"landlocked_quiz",
@@ -7705,17 +7583,17 @@ function genFootballQ(mode){
   const type=mode||"stadium";
   if(type==="stadium"){
     const d=_footballData.stadiums,idx=~~(rng()*d.length),cor=d[idx];
-    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
+    const _disPool=sh(d.filter((_,i)=>i!==idx)).map(x=>x.country);
     return{type:"stadium",prompt:t("q_stadium"),subj:cor.name,ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:cor.city+", "+cor.cap.toLocaleString()+" Pl\u00e4tze",lid:"gfq_stad_"+cor.cc,cc:cor.cc};
   }
   if(type==="jersey"){
     const d=_footballData.jerseys,idx=~~(rng()*d.length),cor=d[idx];
-    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
+    const _disPool=sh(d.filter((_,i)=>i!==idx)).map(x=>x.country);
     return{type:"jersey",prompt:t("q_jersey"),subj:{cc:cor.cc,color:cor.color,style:cor.style},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",lid:"gfq_jer_"+cor.cc,cc:cor.cc};
   }
   if(type==="crest"){
     const d=_footballData.crests,idx=~~(rng()*d.length),cor=d[idx];
-    const _disPool=d.filter((_,i)=>i!==idx).sort(()=>rng()-.5).map(x=>x.country);
+    const _disPool=sh(d.filter((_,i)=>i!==idx)).map(x=>x.country);
     return{type:"crest",prompt:t("q_crest"),subj:{shape:cor.shape,color:cor.color},ans:cor.country,opts:_uOpts(cor.country,_disPool,3),meta:"",lid:"gfq_cre_"+cor.cc,cc:cor.cc};
   }
   return null;
@@ -7999,7 +7877,7 @@ function genFlugroutenDuellQ(){
     pool=CITIES.filter(function(c){return c.lat&&c.lng;});
   }
   if(!pool||pool.length<4)return null;
-  var sh4=pool.slice().sort(function(){return rng()-.5;}).slice(0,4);
+  var sh4=sh(pool.slice()).slice(0,4);
   var cA=sh4[0],cB=sh4[1],cC=sh4[2],cD=sh4[3];
   var dAB=gqDist(cA.lat,cA.lng||cA.lon||0,cB.lat,cB.lng||cB.lon||0);
   var dCD=gqDist(cC.lat,cC.lng||cC.lon||0,cD.lat,cD.lng||cD.lon||0);
@@ -8011,7 +7889,7 @@ function genFlugroutenDuellQ(){
   return{type:'flugrouten_duell',
     prompt:'Welche Flugroute ist länger?',
     subj:'Zwei Flugrouten im Vergleich',
-    opts:[labelAB,labelCD].sort(function(){return rng()-.5;}),
+    opts:sh([labelAB,labelCD]),
     ans:ans,meta:meta,lid:nameA+'|'+nameC,cc:''};
 }
 
@@ -8038,7 +7916,7 @@ function genInlandsflugIntlQ(){
   return{type:'inlandsflug_intl',
     prompt:'Inlandsflug oder internationaler Flug?',
     subj:nameA+' → '+nameB,
-    opts:[ans,wrong].sort(function(){return rng()-.5;}),
+    opts:sh([ans,wrong]),
     ans:ans,meta:coA+' / '+coB,lid:nameA+'|'+nameB,cc:''};
 }
 
@@ -8064,7 +7942,7 @@ function genSunriseGuesserQ(){
   return{type:'sunrise_guesser',
     prompt:'In welcher Stadt geht die Sonne früher auf?',
     subj:nameA+' vs. '+nameB,
-    opts:[nameA,nameB].sort(function(){return rng()-.5;}),
+    opts:sh([nameA,nameB]),
     ans:ans,meta:meta,lid:nameA+'|'+nameB,cc:''};
 }
 
@@ -8120,8 +7998,8 @@ function genSonnenKompassQ(){
     else if(azSet>=220&&azSet<265)dir="Südwesten";
     else dir="Süden";
     var allDirs=["Nordwesten","Westen","Südwesten","Süden","Norden"];
-    var wrongs=allDirs.filter(function(d){return d!==dir;}).sort(function(){return rng()-.5;}).slice(0,3);
-    var opts=[dir].concat(wrongs).sort(function(){return rng()-.5;});
+    var wrongs=sh(allDirs.filter(function(d){return d!==dir;})).slice(0,3);
+    var opts=sh([dir].concat(wrongs));
     var latStr=(Math.abs(lat).toFixed(1)+"°")+(lat>=0?"N":"S");
     return{
       type:"sonnen_kompass",
@@ -8159,7 +8037,7 @@ function genAequatorMagnetQ(){
   return{type:'aequator_magnet',
     prompt:'Welche Stadt liegt näher am Äquator?',
     subj:nameA+' vs. '+nameB,
-    opts:[nameA,nameB].sort(function(){return rng()-.5;}),
+    opts:sh([nameA,nameB]),
     ans:ans,meta:meta,lid:nameA+'|'+nameB,cc:''};
 }
 
@@ -8177,12 +8055,12 @@ function genKontinentKlickerQ(){
   if(!correctCont)return null;
   var allConts=[];
   COUNTRIES.forEach(function(c){if(c.ct&&allConts.indexOf(c.ct)<0)allConts.push(c.ct);});
-  var dis=allConts.filter(function(c){return c!==correctCont;}).sort(function(){return rng()-.5;}).slice(0,3);
+  var dis=sh(allConts.filter(function(c){return c!==correctCont;})).slice(0,3);
   while(dis.length<3)dis.push('Unknown');
   return{type:'kontinent_klicker',
     prompt:'Auf welchem Kontinent liegt diese Stadt?',
     subj:cityName,
-    opts:([correctCont].concat(dis)).sort(function(){return rng()-.5;}),
+    opts:sh(([correctCont].concat(dis))),
     ans:correctCont,meta:'',time:5,lid:cityName,cc:''};
 }
 
@@ -8217,7 +8095,7 @@ function genHauptstadtDistanzQ(){
   return{type:'hauptstadt_distanz',
     prompt:'Wie weit liegt diese Stadt von der Landeshauptstadt entfernt?',
     subj:cityName,
-    opts:[ans,wrong].sort(function(){return rng()-.5;}),
+    opts:sh([ans,wrong]),
     ans:ans,meta:Math.round(dist)+' km bis '+capEntry.capital,
     lid:cityName,cc:capCity.cc||''};
 }
@@ -8233,14 +8111,14 @@ function genNaechsterAirportQ(){
   });
   withDist.sort(function(a,b){return a.dist-b.dist;});
   var nearest=withDist[0].ap;
-  var others=withDist.slice(1).sort(function(){return rng()-.5;}).slice(0,3).map(function(x){return x.ap;});
+  var others=sh(withDist.slice(1)).slice(0,3).map(function(x){return x.ap;});
   var fmt=function(ap){return ap.city+' ('+ap.iata+')';};
   var ans=fmt(nearest);
   var dis=others.map(fmt);
   return{type:'naechster_airport',
     prompt:'Welcher Flughafen liegt dieser Stadt am nächsten?',
     subj:(city.n||city.name),
-    opts:([ans].concat(dis)).sort(function(){return rng()-.5;}),
+    opts:sh(([ans].concat(dis))),
     ans:ans,meta:Math.round(withDist[0].dist)+' km',
     lid:(city.n||city.name),cc:city.cc||''};
 }
@@ -8249,14 +8127,13 @@ function genNaechsterAirportQ(){
 function genIataReverseQ(){
   if(!AIRPORTS_GEO_DATA||AIRPORTS_GEO_DATA.length<4)return null;
   var cor=AIRPORTS_GEO_DATA[~~(rng()*AIRPORTS_GEO_DATA.length)];
-  var others=AIRPORTS_GEO_DATA.filter(function(a){return a.iata!==cor.iata;})
-    .sort(function(){return rng()-.5;}).slice(0,3);
+  var others=sh(AIRPORTS_GEO_DATA.filter(function(a){return a.iata!==cor.iata;})).slice(0,3);
   var ans=cor.city;
   var dis=others.map(function(a){return a.city;});
   return{type:'iata_reverse',
     prompt:'Zu welcher Stadt gehört dieser IATA-Code?',
     subj:cor.iata,
-    opts:([ans].concat(dis)).sort(function(){return rng()-.5;}),
+    opts:sh(([ans].concat(dis))),
     ans:ans,meta:cor.name,lid:cor.iata,cc:cor.cc};
 }
 
@@ -8282,7 +8159,7 @@ function genJetlagRechnerQ(){
   return{type:'jetlag_rechner',
     prompt:'Wie spät ist es bei der Landung Ortszeit?',
     subj:subj,
-    opts:([correct].concat(wrongs)).sort(function(){return rng()-.5;}),
+    opts:sh(([correct].concat(wrongs))),
     ans:correct,
     meta:'Zeitzone '+dep.city+': UTC'+(dep.utc>=0?'+':'')+dep.utc+' · '+arr.city+': UTC'+(arr.utc>=0?'+':'')+arr.utc,
     lid:dep.city+'|'+arr.city,cc:''};
@@ -8299,7 +8176,7 @@ function genKuehlschrankBackofenQ(){
   return{type:'kuehlschrank_backofen',
     prompt:'Welcher Ort hat die höhere Jahresdurchschnittstemperatur?',
     subj:a.n+' vs. '+b.n,
-    opts:[a.n,b.n].sort(function(){return rng()-.5;}),
+    opts:sh([a.n,b.n]),
     ans:ans,meta:meta,lid:a.n+'|'+b.n,cc:''};
 }
 
@@ -8314,7 +8191,7 @@ function genRegenRadarQ(){
   return{type:'regen_radar',
     prompt:'Wo regnet es mehr Tage im Jahr?',
     subj:a.n+' vs. '+b.n,
-    opts:[a.n,b.n].sort(function(){return rng()-.5;}),
+    opts:sh([a.n,b.n]),
     ans:ans,meta:meta,lid:a.n+'|'+b.n,cc:''};
 }
 
@@ -8329,7 +8206,7 @@ function genHoehenmeterschaetzerQ(){
   return{type:'hoehenmeter_schaetzer',
     prompt:'Welcher Ort liegt höher über dem Meeresspiegel?',
     subj:a.n+' vs. '+b.n,
-    opts:[a.n,b.n].sort(function(){return rng()-.5;}),
+    opts:sh([a.n,b.n]),
     ans:ans,meta:meta,lid:a.n+'|'+b.n,cc:''};
 }
 
@@ -8340,7 +8217,7 @@ function genKlimaAusreisserQ(){
   var outlier=null;
   for(var i=0;i<q.cities.length;i++){if(q.cities[i].t){outlier=q.cities[i];break;}}
   if(!outlier)return null;
-  var opts=q.cities.map(function(c){return c.n;}).sort(function(){return rng()-.5;});
+  var opts=sh(q.cities.map(function(c){return c.n;}));
   return{type:'klima_ausreisser',
     prompt:q.q,
     subj:'Klimatischer Ausreisser gesucht',
@@ -8357,7 +8234,7 @@ function genInselFestlandQ(){
   return{type:'insel_festland',
     prompt:'Ist das ein Inselstaat oder Festlandsland?',
     subj:item.n,
-    opts:[ans,wrong].sort(function(){return rng()-.5;}),
+    opts:sh([ans,wrong]),
     ans:ans,meta:'',lid:item.n,cc:''};
 }
 
@@ -8366,8 +8243,7 @@ function genSprachenKompassQ(){
   if(!SPRACHEN_DATA||SPRACHEN_DATA.length<4)return null;
   var idx=~~(rng()*SPRACHEN_DATA.length);
   var cor=SPRACHEN_DATA[idx];
-  var others=SPRACHEN_DATA.filter(function(_,i){return i!==idx;})
-    .sort(function(){return rng()-.5;}).slice(0,3);
+  var others=sh(SPRACHEN_DATA.filter(function(_,i){return i!==idx;})).slice(0,3);
   var ans=cor.country;
   var dis=others.map(function(x){return x.country;});
   var uniq=[];
@@ -8376,7 +8252,7 @@ function genSprachenKompassQ(){
   return{type:'sprachen_kompass',
     prompt:'In welchem Land sagt man so "Hallo"?',
     subj:cor.word,
-    opts:([ans].concat(uniq.slice(0,3))).sort(function(){return rng()-.5;}),
+    opts:sh(([ans].concat(uniq.slice(0,3)))),
     ans:ans,meta:cor.lang,lid:cor.word,cc:''};
 }
 
@@ -8394,7 +8270,7 @@ function genFixedPoolMatchQ(cat,ansPool){
   const cor=item.c;
   /* FIX: binary pool (e.g. Ja/Nein) → only 1 wrong answer, not 3 */
   const maxWrong=Math.min(3,ansPool.length-1);
-  const dis=[...new Set(ansPool.filter(a=>a!==cor))].sort(()=>rng()-.5).slice(0,maxWrong);
+  const dis=sh([...new Set(ansPool.filter(a=>a!==cor))]).slice(0,maxWrong);
   if(dis.length<maxWrong){const extra=data.filter((_,i)=>i!==idx).map(d=>d.c).filter(c=>c!==cor);dis.push(...extra.slice(0,maxWrong-dis.length));}
   if(dis.length<1)return null;
   const modeObj=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id===("uk_"+cat)||m.id===cat)||{};
@@ -8579,8 +8455,8 @@ function _mkMatchQ(DATA){
       var seen=new Set();
       pool=pool.filter(function(c){if(seen.has(c))return false;seen.add(c);return true;});
       /* Phase 237: no padding — allow 1-2 distractors for binary/ternary datasets */
-      pool=pool.sort(function(){return rng()-0.5;}).slice(0,3);
-      opts=[correct.c].concat(pool).sort(function(){return rng()-0.5;});
+      pool=sh(pool).slice(0,3);
+      opts=sh([correct.c].concat(pool));
     }
     return{type:"uk_match",subj:correct.n,ans:_tcc(correct.c),opts:opts.map(_tcc),
       prompt:_tc(d.prompt||"Ordne richtig zu:"),lid:"mkm_"+cat+"_"+idx};
@@ -8862,7 +8738,7 @@ function checkTimeline(){
 function genTimelineQ(dataKey,promptOverride,unit){
   var data=TIMELINE_DATA[dataKey];
   if(!data||!data.items||data.items.length<4)return null;
-  var pool=data.items.slice().sort(function(){return rng()-.5;});
+  var pool=sh(data.items.slice());
   var seen={},picked=[];
   for(var _i=0;_i<pool.length&&picked.length<5;_i++){
     var yr=pool[_i].year;
@@ -10251,19 +10127,19 @@ return true;
 });
 // If we have enough candidates with climate match, use them
 if(candidates.length>=count){
-return candidates.sort(()=>rng()-0.5).slice(0,count);
+return sh(candidates).slice(0,count);
 }
 // Fallback: Use regular wrong answers (fallback to region-based)
 const region=correctData.region;
 const regionCountries=Object.keys(globalCultureData).filter(c=>globalCultureData[c].region===region&&c!==correctCode);
-return regionCountries.sort(()=>rng()-0.5).slice(0,count);
+return sh(regionCountries).slice(0,count);
 }
 
 
 // PHASE 180: Specialty Quiz Helpers
 function generateLogicPuzzle(){
 // Generate a constraint-based geography puzzle
-const countries=COUNTRIES.slice().filter(c=>c.pop>1e6).sort(()=>rng()-0.5).slice(0,5);
+const countries=sh(COUNTRIES.slice().filter(c=>c.pop>1e6)).slice(0,5);
 if(countries.length<2)return null;
 const correct=countries[0];
 const others=countries.slice(1);
@@ -10476,7 +10352,7 @@ return html;
 
 function renderTravelRoute(){
 // Select 2 random cities
-const cities=(globalCities||[]).filter(c=>c.pop>100000).sort(()=>rng()-0.5).slice(0,4);
+const cities=sh((globalCities||[]).filter(c=>c.pop>100000)).slice(0,4);
 if(cities.length<2)return '<div>Error: Not enough city data</div>';
 const city1=cities[0];
 const city2=cities[1];
@@ -10493,7 +10369,7 @@ const route1={desc:(city1.name||city1.n||'City')+' →’ '+(city2.name||city2.n
 const route2={desc:(city1.name||city1.n||'City')+' →’ '+(city3.name||city3.n||'City'),dist:dist1_3,correct:false};
 const route3={desc:(city1.name||city1.n||'City')+' →’ '+(city4.name||city4.n||'City'),dist:dist1_4,correct:false};
 
-const routes=[route1,route2,route3].sort(()=>rng()-0.5);
+const routes=sh([route1,route2,route3]);
 const correctIdx=routes.findIndex(r=>r.correct);
 
 setCorrectAnswerObfuscated(COUNTRIES,correctIdx,correctIdx);
@@ -10530,8 +10406,8 @@ const correctIdx=0;
 setCorrectAnswerObfuscated(COUNTRIES,correctIdx,correctIdx);
 
 // Create wrong answer options
-const wrongOptions=COUNTRIES.filter(c=>c.c!==code1&&c.c!==code2).sort(()=>rng()-0.5).slice(0,3);
-const allOptions=[askAbout,...wrongOptions].sort(()=>rng()-0.5);
+const wrongOptions=sh(COUNTRIES.filter(c=>c.c!==code1&&c.c!==code2)).slice(0,3);
+const allOptions=sh([askAbout,...wrongOptions]);
 const actualCorrectIdx=allOptions.findIndex(c=>c.c===correctCode);
 
 let html='<div style="padding:20px;text-align:center;">';
@@ -10680,7 +10556,8 @@ function saveDailyProgress(){
   if(!S.isDailyRun||isDailyDone())return;
   try{localStorage.setItem(getDailyProgressKey(),JSON.stringify({
     sc:S.sc,rd:S.rd,correct:S.correct,st:S.st,bs:S.bs,
-    lids:[...S.askedLids]
+    lids:[...S.askedLids],
+    rngState:rngState  /* Phase 295: RNG-Zustand speichern → Resume bleibt deterministisch */
   }));}catch(_e){}
 }
 function loadDailyProgress(){
@@ -10720,7 +10597,7 @@ function _gqLoad(key,fallback){
 function updateDailyStreak(){
   try{
     /* Use en-CA locale for reliable YYYY-MM-DD without library */
-    const today=new Date().toLocaleDateString('en-CA');
+    const today=new Date().toISOString().slice(0,10); /* UTC — Phase 295 fix */
     const lastPlay=_gqLoad('gq_last_play',null);
     let streak=_gqLoad('gq_streak',0)||0;
     if(lastPlay===today)return streak;          /* same day — no change */
@@ -10824,8 +10701,8 @@ function getDailySeed(){
   return Math.abs(h);
 }
 function getDailyCountdown(){
-  const now=new Date(),midnight=new Date(now);
-  midnight.setHours(24,0,0,0);
+  const now=new Date();
+  const midnight=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+1)); /* UTC — Phase 295 fix */
   let s=~~((midnight-now)/1000);
   const h=~~(s/3600);s%=3600;const m=~~(s/60);s%=60;
   return String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
@@ -10840,6 +10717,7 @@ function startDailyChallenge(){
   if(_prog&&(_prog.rd||0)>0){
     /* P284: RESUME – Spieler hat heute schon angefangen, weiterspielen */
     initRng(seed);
+    if(_prog.rngState){rngState=_prog.rngState>>>0;}  /* Phase 295: RNG-Zustand direkt wiederherstellen */
     Object.assign(S,{sc:_prog.sc||0,rd:_prog.rd||0,correct:_prog.correct||0,
       st:_prog.st||0,bs:_prog.bs||0,
       lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],
@@ -12797,7 +12675,7 @@ function genWappenQ(){
   if(wrongs.length<3)return null;
   /* P168: fall back to curated w.c when cc not in COUNTRIES */
   const _wdc=w=>{const r=displayCountry(w.cc);return(r&&r!==w.cc)?r:w.c;};
-  const opts=[correct,...wrongs].sort(()=>rng()-.5).map(_wdc);
+  const opts=sh([correct,...wrongs]).map(_wdc);
   return{type:"wappen",prompt:t("q_wappen"),subj:_wdc(correct),img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"🛡️ Wappen von "+correct.c};
 }
 
@@ -15281,7 +15159,16 @@ out = 'GeoQuest.html'
 import hashlib as _hashlib
 _data_files = sorted('./data/' + f for f in _os.listdir('data') if f.endswith('.json'))
 _cache_assets = ['./GeoQuest.html', './index.html', './manifest.json', './icon.svg'] + _data_files
-_cache_hash = _hashlib.md5(''.join(_cache_assets).encode()).hexdigest()[:8]
+# Phase 294+: Hash basiert auf Datei-INHALTEN (nicht nur Namen) → Cache invalidiert bei jeder Änderung
+_hash_parts = []
+for _a in _cache_assets:
+    _p = _a.lstrip('./')
+    if _os.path.exists(_p):
+        with open(_p, 'rb') as _f:
+            _hash_parts.append(_f.read())
+    else:
+        _hash_parts.append(_a.encode())
+_cache_hash = _hashlib.md5(b''.join(_hash_parts)).hexdigest()[:8]
 _cache_name = 'geoquest-' + _cache_hash
 _assets_js = ',\n  '.join("'" + a + "'" for a in _cache_assets)
 _sw_content = (
