@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Phase 284: Daily-Challenge Exploit-Fix (patch_284_daily_exploit.py): Start-Flag gq_daily_prog sofort beim Start + Progress-Tracking + Resume-Logik. Kein Score-Reset durch Neustart mehr. 685 Modi. verify: 90/90."
+git commit -m "Phase 285: 1v1-Online-Sync-Fix (patch_285_mp_sync.py): filter+diff im game_start-Payload synchronisiert + Seed an startGame -> Runde 1 synchron. Behebt unterschiedliche 'Hoeheres BIP'-Fragen. 685 Modi. verify: 90/90."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

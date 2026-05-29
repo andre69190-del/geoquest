@@ -5016,7 +5016,7 @@ function _getMpMode(){
   const _pool=MODES.filter(m=>GEN[m.id]&&!m.comingSoon&&!m.noMultiplayer).map(m=>m.id);
   return _pool.length?_pool[~~(Math.random()*_pool.length)]:"city";
 }
-function mpCountdown(seed,mode){
+function mpCountdown(seed,mode,filt,dif){
   let t=3;
   S.mp.phase="countdown";S.mp.countdown=t;render();
   const iv=setInterval(()=>{
@@ -5037,8 +5037,11 @@ function mpCountdown(seed,mode){
       /* Sync start – same seed on both sides.
          CRITICAL: initRng MUST be called AFTER startGame, because startGame
          has rngSeed=null on line 10582 which would clear the seed immediately. */
-      startGame(mode||"city");
-      initRng(seed);  /* re-set seed after startGame clears it */
+      /* P285: Host-Filter + Schwierigkeit VOR startGame anwenden,
+         damit Vergleichs-Pools (z.B. "Höheres BIP") auf beiden Clients gleich sind */
+      if(filt!==undefined&&filt!==null)S.filter=filt;
+      if(dif!==undefined&&dif!==null)S.diff=dif;
+      startGame(mode||"city",seed);  /* P285: seed an startGame -> auch Runde 1 ist geseedet */
       /* Tag session as multiplayer */
       S.mpSeed=seed;S.mpOpponent=_oppName;
       S.mpOppScore=0;S.mpOppRd=0;S.mpOppFinal=null;
@@ -5076,8 +5079,9 @@ function mpCreate(){
       if(S.mp.myReady&&S.mp.oppReady){
         const seed=~~(Math.random()*1e9);
         const mode=_getMpMode();  /* Phase 212: use UI-selected mode */
-        mpSend("game_start",{seed,mode});
-        mpCountdown(seed,mode);
+        const filt=S.filter,dif=S.diff;  /* P285: Filter+Schwierigkeit syncen */
+        mpSend("game_start",{seed,mode,filt,dif});
+        mpCountdown(seed,mode,filt,dif);
       }
     })
     .on("broadcast",{event:"game_start"},()=>{/* host ignores own game_start */})
@@ -5113,7 +5117,7 @@ function mpJoin(code){
     })
     .on("broadcast",{event:"game_start"},({payload})=>{
       mpLog("game_start received:",payload);
-      mpCountdown(payload.seed,payload.mode);
+      mpCountdown(payload.seed,payload.mode,payload.filt,payload.dif);
     })
     .subscribe((status)=>{
       mpLog("guest channel status:",status);
@@ -5132,8 +5136,9 @@ function mpReady(){
   if(S.mp.role==="host"&&S.mp.oppReady){
     const seed=~~(Math.random()*1e9);
     const mode=_getMpMode();  /* Phase 212: use UI-selected mode */
-    mpSend("game_start",{seed,mode});
-    mpCountdown(seed,mode);
+    const filt=S.filter,dif=S.diff;  /* P285: Filter+Schwierigkeit syncen */
+    mpSend("game_start",{seed,mode,filt,dif});
+    mpCountdown(seed,mode,filt,dif);
   }
 }
 
@@ -10579,7 +10584,7 @@ showMessage(isCorrect?'Richtig!':'Falsch!');
 setTimeout(startNextRound,1500);
 }
 
-function startGame(m){
+function startGame(m,_mpSeed){
   /* Phase 217 QA: 300ms nav lock -- prevents stacked game-init on rapid taps */
   if(_navLock)return;
   _navLock=true;setTimeout(function(){_navLock=false;},300);
@@ -10595,6 +10600,7 @@ function startGame(m){
     q:null,sel:null,ok:null,slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0,
     /* Phase 217 QA: clear mp carry-over so solo games never show duell HUD */
     mpOpponent:null,mpOppScore:0,mpOppFinal:null,mpOppRd:0});  /* P208/P210: always reset sub-game state on new game */
+  if(_mpSeed!=null)initRng(_mpSeed);  /* P285: MP-Seed VOR erstem lq() -> Runde 1 synchron; Solo/Daily unberührt (undefined) */
   _secretGameToken=Math.random().toString(36).substring(2,15);
   /* Phase 86 – custom puzzle modes */
   if(_m==="logic_grid"){initLogikGitter();render();return;}

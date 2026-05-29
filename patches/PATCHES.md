@@ -140,3 +140,4 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_253_geo_expansion.py | 253 | Geologie & Vulkane Expansion: 40 neue Modi — 12 Pin, 10 HL, 12 Match, 6 WS. MODES: 607→647 |
 | patch_254_sport_expansion.py | 254 | Sport-Wissen Expansion: 30 neue Modi — 8 Pin, 8 HL, 8 Match, 6 WS. MODES: 647→677 |
 | patch_284_daily_exploit.py | 284 | Daily-Challenge Exploit-Fix: Start-Flag (gq_daily_prog_YYYY-MM-DD) sofort beim Start + saveDailyProgress nach jeder Antwort + Resume-Logik + markDailyDone räumt Progress-Key. Kein Score-Reset durch Neustart mehr. verify: 90/90 |
+| patch_285_mp_sync.py | 285 | 1v1-Online-Sync-Fix ("Höheres BIP" unterschiedliche Fragen): filter+diff im game_start-Payload synchronisiert (Host autoritativ, _compPick/getSmartMatch hingen daran) + Seed an startGame übergeben → Runde 1 nicht mehr per Math.random(). verify: 90/90 |
