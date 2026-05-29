@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 287 (Stand: Mai 2026)
+**Version:** Phase 288 (Stand: Mai 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.40 MB | 685 Spielmodi | verify: 90/90
 
 ---
@@ -1054,11 +1054,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **285** | patch_285_mp_sync.py | **1v1-Online-Sync-Fix ("Höheres BIP" zeigte unterschiedliche Fragen): (1) S.filter + S.diff wurden nie synchronisiert — die Vergleichs-Generatoren (_compPick→_rfilt nutzt S.filter, getSmartMatch-Fenster nutzt S.diff) lieferten daher trotz gleichem Seed andere Länder; game_start-Payload jetzt um {filt,dif} erweitert, Host autoritativ, mpCountdown wendet sie vor startGame an. (2) Runde 1 wurde vor initRng generiert (rngSeed=null in startGame, initRng erst danach) → erste Frage lief auf Math.random(); startGame(m,_mpSeed) seedet jetzt VOR dem ersten lq(). verify: 90/90.** |
 | **286** | patch_286_mp_show_opp_answer.py | **1v1-Online: Gegner-Auswahl sichtbar. score_update überträgt jetzt zusätzlich {sel,selOk,lid}; Empfänger speichert S.mpOppSel/mpOppSelOk/mpOppLid. Anzeige nur bei lid-Match: (a) universelle Zeile unter der Duell-Leiste "⚔ <Gegner> wählte: <Auswahl> ✓/✗" (alle Modi), (b) Schwert-Marker auf dem vom Gegner gewählten Options-Button (z.B. Höheres BIP). Resets in mpCountdown + startGame. verify: 90/90, node --check OK.** |
 | **287** | patch_287_i18n_de_en_pl.py | **i18n de/en/pl. (A) 15 hartkodierte deutsche Frage-Prompts (curr_real, neighbor×2, neighbor_fake, neighbor_count, border_q, de_plate, map_reverse, stadium, jersey, crest, beta_hl, beta_spotter, sport_poi, wappen) auf t() umgestellt — deutscher Wert 1:1 aus Original, en+pl ergänzt, übrige Sprachen Fallback EN. (B) LANG.pl von 115→158 Schlüssel komplettiert (inkl. Wort-Schmiede-UI) → de/en/pl jetzt alle 158, 0 Lücken. Andere 21 Sprachen bewusst unverändert. verify: 90/90, node --check OK.** |
+| **288** | patch_288_pl_content_i18n.py | **Polnische Spielinhalte für 5 Rubriken (E-Mobilität, Archäologie, Astronomie, Geologie, Sport). NEU: erweiterbare Inhalts-Übersetzung `_CONTENT_I18N={pl:{…}}` + Helper `_tc(s)` (weitere Sprachen einfach ergänzbar). Übersetzt: 196 Frage-Prompts + 54 Einheiten + 79 Match-Antwort-Buttons/Länder (fixedOpts). Verdrahtet in _mkPinQ (prompt), _mkHL (prompt+unit), _mkMatchQ (prompt + opts/ans konsistent). Eigennamen/Codes (CCS, Tesla, ISO 15118 …) fallen unverändert durch. Offen: `.c`-Distraktor-Buttons in astro/geo/sport-Match (Länder/Eigennamen/offener Text) bleiben DE. verify: 90/90, node --check OK.** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 287 -- i18n de/en/pl: 15 hartkodierte deutsche Prompts auf t() umgestellt + LANG.pl komplettiert (115→158, inkl. Wort-Schmiede). de/en/pl vollständig, übrige Sprachen Fallback EN. 685 Modi, Mai 2026.*
+*Letztes Update: Phase 288 -- Polnische Spielinhalte (5 Rubriken): erweiterbare _CONTENT_I18N + _tc(); 196 Prompts + 54 Einheiten + 79 Match-Buttons auf Polnisch, in die 3 Universal-Engines verdrahtet. 685 Modi, Mai 2026.*
 
 
 ---
