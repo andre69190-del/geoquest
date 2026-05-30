@@ -6515,5 +6515,379 @@
         "c": "Westernreiten Rinder"
       }
     ]
+  },
+  "zug_bahnhof_typ": {
+    "prompt": "Welche Bauform hat dieser Bahnhof?",
+    "fixedOpts": [
+      "Kopfbahnhof",
+      "Durchgangsbahnhof",
+      "Turmbahnhof",
+      "Keilbahnhof"
+    ],
+    "items": [
+      {
+        "n": "Frankfurt Hbf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Muenchen Hbf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Stuttgart Hbf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Hamburg Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Leipzig Hbf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Nuernberg Hbf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Koeln Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Duesseldorf Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Berlin Hbf",
+        "c": "Turmbahnhof"
+      },
+      {
+        "n": "Berlin Ostbahnhof",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Wien Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Wien Westbahnhof",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Bern",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Basel SBB",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Zuerich HB",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Paris Gare de Lyon",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Paris Gare du Nord",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "London Waterloo",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "London Victoria",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "London St Pancras",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Amsterdam Centraal",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Bruessel Midi",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Madrid Atocha",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Milano Centrale",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Roma Termini",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Moskau Jaroslawler Bhf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Tokio Shinjuku",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "New York Penn Station",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Chicago Union Station",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Sydney Central",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Hannover Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Dresden Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Mannheim Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Dortmund Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Essen Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Karlsruhe Hbf",
+        "c": "Keilbahnhof"
+      },
+      {
+        "n": "Augsburg Hbf",
+        "c": "Keilbahnhof"
+      },
+      {
+        "n": "Breslau (Wroclaw) Hbf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Prag Hlavni Nadrazi",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Warschau Centralny",
+        "c": "Turmbahnhof"
+      },
+      {
+        "n": "Budapest Keleti",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Lissabon Santa Apolonia",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Genf Cornavin",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Strassburg",
+        "c": "Kopfbahnhof"
+      }
+    ]
+  },
+  "zug_hersteller": {
+    "prompt": "Von welchem Hersteller stammt dieser Zug?",
+    "fixedOpts": [
+      "Alstom",
+      "Siemens Mobility",
+      "Hitachi Rail",
+      "Stadler Rail"
+    ],
+    "items": [
+      {
+        "n": "TGV Duplex",
+        "c": "Alstom"
+      },
+      {
+        "n": "TGV M (Avelia Horizon)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Eurostar e320",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "ICE 3 (BR 403)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "ICE 4 (BR 412)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Velaro E (Renfe S-103)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Velaro RUS (Sapsan)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Frecciarossa 1000 (ETR 400)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Azuma (Class 800)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Javelin (Class 395)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Shinkansen N700",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "FLIRT (RABe 523)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "KISS (RABe 511)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "GTW (Gelenktriebwagen)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "EC250 (Swiss CFF)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "Pendolino ETR 600",
+        "c": "Alstom"
+      },
+      {
+        "n": "Coradia iLint (H2)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Avelia Liberty (Acela 2)",
+        "c": "Alstom"
+      },
+      {
+        "n": "AGV Italo (ETR 575)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Velaro D (ICE 3 Multi)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Desiro Classic",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Mireo Plus",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Caravaggio (ETR 700)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Rock (BI-Mode)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "AT300 (Hitachi)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "TWINDEXX (IC2000)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "Traverso (RABe 501)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "Dosto (RABDe 502)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "Euroduplex (TGV 2N2)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Regiolis CANOPUS",
+        "c": "Alstom"
+      },
+      {
+        "n": "Zefiro V300 (ETR 1000)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Shinkansen E5/H5",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Class 802 IET",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Velaro Novo",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Charger (ACS-64)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Vectron Lokomotive",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "KISS 3 (OBB Railjet 2)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "Mutz (RABe 535)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "Love (FLIRT-H2)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "TGV POS (BR 408-Analog)",
+        "c": "Alstom"
+      },
+      {
+        "n": "X'Trapolis 2.0",
+        "c": "Alstom"
+      },
+      {
+        "n": "Coradia Continental",
+        "c": "Alstom"
+      },
+      {
+        "n": "Coradia Polyvalent",
+        "c": "Alstom"
+      },
+      {
+        "n": "Scorpio (Italo EVO)",
+        "c": "Hitachi Rail"
+      }
+    ]
   }
 }

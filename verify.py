@@ -475,3 +475,43 @@ if modes_block:
             ok("DS100 Hardcore (zug_ds100_input) + genDS100InputQ vorhanden")
 else:
     fail("MODES-Block nicht parsebar fuer 19e-Check")
+
+# -- 19f. Trainspotter Expansion (Phase 298.1) ------------------
+section("19f. Trainspotter Expansion (Phase 298.1)")
+import json as _json
+_kultur298 = _json.load(open("data/kultur.json", encoding="utf-8"))
+_match298  = _json.load(open("data/tiere_match.json", encoding="utf-8"))
+_routen = _kultur298.get("zug_routen", [])
+if len(_routen) >= 40:
+    ok("kultur.json[zug_routen]: " + str(len(_routen)) + " Items")
+else:
+    fail("kultur.json[zug_routen]: nur " + str(len(_routen)) + " Items (min 40)")
+_btyp = _match298.get("zug_bahnhof_typ", {})
+_btyp_items = _btyp.get("items", [])
+_btyp_opts  = _btyp.get("fixedOpts", [])
+if len(_btyp_items) >= 40 and len(_btyp_opts) == 4 and all(i["c"] in _btyp_opts for i in _btyp_items):
+    ok("tiere_match[zug_bahnhof_typ]: " + str(len(_btyp_items)) + " Items, fixedOpts valid")
+else:
+    fail("zug_bahnhof_typ: " + str(len(_btyp_items)) + " Items, " + str(len(_btyp_opts)) + " fixedOpts")
+_herst = _match298.get("zug_hersteller", {})
+_herst_items = _herst.get("items", [])
+_herst_opts  = _herst.get("fixedOpts", [])
+if len(_herst_items) >= 40 and len(_herst_opts) == 4 and all(i["c"] in _herst_opts for i in _herst_items):
+    ok("tiere_match[zug_hersteller]: " + str(len(_herst_items)) + " Items, fixedOpts valid")
+else:
+    fail("zug_hersteller: " + str(len(_herst_items)) + " Items, " + str(len(_herst_opts)) + " fixedOpts")
+
+# =============================================================
+print("\n" + "=" * 58)
+total = len(PASS_LIST) + len(FAIL_LIST)
+print(" Results: " + str(len(PASS_LIST)) + "/" + str(total) + " passed  |  " + str(len(FAIL_LIST)) + " failed")
+print("=" * 58)
+
+if FAIL_LIST:
+    print("\nFAILURES:")
+    for f in FAIL_LIST:
+        print("  [!!] " + f)
+    sys.exit(1)
+else:
+    print("\nALL TESTS PASSED -- build is production-ready.")
+    sys.exit(0)

@@ -27729,5 +27729,187 @@
       "lat": -33.923,
       "lng": 18.424
     }
+  ],
+  "zug_routen": [
+    {
+      "n": "Glacier Express",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Bernina Express",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Golden Pass Express",
+      "c": "Schweiz"
+    },
+    {
+      "n": "GoldenPass Belle Epoque",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Trans-Sibirische Eisenbahn",
+      "c": "Russland"
+    },
+    {
+      "n": "Zarengold",
+      "c": "Russland"
+    },
+    {
+      "n": "Rocky Mountaineer",
+      "c": "Kanada"
+    },
+    {
+      "n": "VIA Rail Canadian",
+      "c": "Kanada"
+    },
+    {
+      "n": "Indian Pacific",
+      "c": "Australien"
+    },
+    {
+      "n": "The Ghan",
+      "c": "Australien"
+    },
+    {
+      "n": "Great Southern",
+      "c": "Australien"
+    },
+    {
+      "n": "Blue Train",
+      "c": "Suedafrika"
+    },
+    {
+      "n": "Rovos Rail",
+      "c": "Suedafrika"
+    },
+    {
+      "n": "Maharajas' Express",
+      "c": "Indien"
+    },
+    {
+      "n": "Palace on Wheels",
+      "c": "Indien"
+    },
+    {
+      "n": "Deccan Odyssey",
+      "c": "Indien"
+    },
+    {
+      "n": "Eastern & Oriental Express",
+      "c": "Thailand"
+    },
+    {
+      "n": "Venice Simplon Orient Express",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Caledonian Sleeper",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "Eurostar",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "Thalys",
+      "c": "Belgien"
+    },
+    {
+      "n": "AVE Madrid–Sevilla",
+      "c": "Spanien"
+    },
+    {
+      "n": "Talgo Avril",
+      "c": "Spanien"
+    },
+    {
+      "n": "Renfe S-103",
+      "c": "Spanien"
+    },
+    {
+      "n": "Frecciarossa 1000",
+      "c": "Italien"
+    },
+    {
+      "n": "Trenitalia Frecciargento",
+      "c": "Italien"
+    },
+    {
+      "n": "TGV Duplex",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Ouigo",
+      "c": "Frankreich"
+    },
+    {
+      "n": "ICE 3 (BR 403)",
+      "c": "Deutschland"
+    },
+    {
+      "n": "ICE 4 (BR 412)",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Railjet",
+      "c": "Oesterreich"
+    },
+    {
+      "n": "NightJet",
+      "c": "Oesterreich"
+    },
+    {
+      "n": "Shinkansen Nozomi",
+      "c": "Japan"
+    },
+    {
+      "n": "Shinkansen Hayabusa",
+      "c": "Japan"
+    },
+    {
+      "n": "KTX-II Sancheon",
+      "c": "Suedkorea"
+    },
+    {
+      "n": "Fuxing Hao CR400",
+      "c": "China"
+    },
+    {
+      "n": "Maglev Shanghai Transrapid",
+      "c": "China"
+    },
+    {
+      "n": "SJ X2000",
+      "c": "Schweden"
+    },
+    {
+      "n": "VR Pendolino (Sm3)",
+      "c": "Finnland"
+    },
+    {
+      "n": "Euronight EN 40462",
+      "c": "Oesterreich"
+    },
+    {
+      "n": "Pendolino ETR 450",
+      "c": "Italien"
+    },
+    {
+      "n": "RegioJet Yellow",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Heathrow Express",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "Thameslink Class 700",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "NS Intercity Direct",
+      "c": "Niederlande"
+    }
   ]
 }

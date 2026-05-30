@@ -2831,6 +2831,9 @@ const MODES=[
     {id:"ws_zug_acela",        icon:"\u{1F524}",title:"WS: Acela",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: ACELA — 5 Buchstaben"},
     {id:"uk_bahnhof_pin",   icon:"\u{1F689}",title:"Bahnhöfe weltweit",             group:"zuege",prompt:"\u{1F4CD} Wo auf der Karte liegt dieser Bahnhof?",       desc:"Grand Central, Tokyo Station, Estação da Luz & 77 weitere"},
     {id:"zug_ds100",          icon:"\u{1F3AB}",title:"DS100 (Auswahl)",              group:"zuege",prompt:"Welches Betriebsstellenkürzel hat dieser Bahnhof?",        desc:"FF=Frankfurt, MH=München — das Alphabet der Eisenbahn"},
+    {id:"zug_routen",       icon:"\u{1F5FA}\uFE0F",title:"Legendaere Routen",      group:"zuege",prompt:"Aus welchem Land faehrt dieser beruehmt Zug?",desc:"Glacier Express bis Transsibirische Eisenbahn — kenne deine Strecken"},
+    {id:"zug_bahnhof_typ", icon:"\u{1F3DB}\uFE0F",title:"Bahnhofs-Architektur",   group:"zuege",prompt:"Welche Bauform hat dieser Bahnhof?",              desc:"Kopfbahnhof, Durchgangsbahnhof, Turmbahnhof — die Typen der grossen Hubs"},
+    {id:"zug_hersteller",  icon:"\u{1F3ED}",      title:"Zug-Hersteller",          group:"zuege",prompt:"Von welchem Hersteller stammt dieser Zug?",        desc:"Alstom, Siemens, Hitachi, Stadler — wer baut die schnellsten Zuege?"},
     {id:"zug_ds100_input",    icon:"\u2328\uFE0F",title:"DS100 (Hardcore)",                group:"zuege",prompt:"Tippe das DS100-Betriebsstellenkürzel!",                       desc:"Freie Texteingabe — FF, MH, AH… Kennst du alle?"},
 
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
@@ -3334,7 +3337,7 @@ const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
-  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","timeline_zug_hsb","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_acela","uk_bahnhof_pin","zug_ds100","zug_ds100_input"],cost:0},
+  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","timeline_zug_hsb","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_acela","uk_bahnhof_pin","zug_ds100","zug_ds100_input","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
@@ -8686,7 +8689,7 @@ function genUniversalMatchQ(cat){
     "insel_match","ehemalige_hauptstaedte","philosophen","nationalpflanzen","nationaltiere","religionen","schriften","nationalsport_off",
     "enklave","grenzfluesse","halbinseln","deltamuendungen","kaps","meerbusen","inselgruppen","gebirge_match","seen_match",
     "automarken","fluggesellschaften","bahnstrecken","hafen_world","kanaele","reedereien","autobahnen_beruhmt","metrostaedte","luft_rekorde",
-    "breitengrad_match"];
+    "breitengrad_match","zug_routen"];
   const allC=[...new Set(_matchCats.flatMap(k=>(KULTUR_DATA[k]||[]).map(d=>d.c)).filter(c=>c!==cor))];
   const wrong=sh(allC).slice(0,3);
   if(wrong.length<3)return null;
@@ -9476,6 +9479,9 @@ const GEN={
   ws_zug_acela:()=>initTierWortSchmiede("zug_acela"),
   uk_bahnhof_pin:()=>genUniversalPinQ("bahnhof_pin"),
   zug_ds100:()=>genDS100McQ(),
+  zug_routen:()=>genUniversalMatchQ("zug_routen"),
+  zug_bahnhof_typ:()=>genTiereMatchQ("zug_bahnhof_typ"),
+  zug_hersteller:()=>genTiereMatchQ("zug_hersteller"),
   zug_ds100_input:()=>genDS100InputQ(),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
@@ -9861,7 +9867,7 @@ function loadTrainDepot(){var raw=localStorage.getItem("gq_train_depot");return 
 function saveTrainDepot(arr){localStorage.setItem("gq_train_depot",JSON.stringify(arr));}
 function trackTrainDepot(){
   if(!S||!S.mode||!S.q)return;
-  var trainModes=["zug_vkm","zug_panorama","zug_ds100","zug_ds100_input"];
+  var trainModes=["zug_vkm","zug_panorama","zug_ds100","zug_ds100_input","zug_routen","zug_bahnhof_typ","zug_hersteller"];
   if(trainModes.indexOf(S.mode)===-1)return;
   var itemKey=S.q.subject||S.q.subj||S.q.q||S.q.name||S.q.ans;
   if(!itemKey)return;
@@ -9875,6 +9881,11 @@ function showTrainDepot(){
   var allPan=(TECH.zug_panorama||KULT.zug_panorama||[]).map(function(i){return i.subject||i.n||i.subj||i.ans||"";}).filter(Boolean);
   var allDs=(TECH.ds100_bahnhoefe||KULT.ds100_bahnhoefe||TECH.ds100||KULT.ds100||[]).map(function(i){return i.q||i.name||i.subj||"";}).filter(Boolean);
   var unlocked=loadTrainDepot();
+  var TMATCH=typeof TIER_MATCH_DATA!=="undefined"?TIER_MATCH_DATA:{};
+  var allRouten=(KULT.zug_routen||[]).map(function(i){return i.n||"";}).filter(Boolean);
+  var allBahnTyp=(TMATCH.zug_bahnhof_typ&&TMATCH.zug_bahnhof_typ.items||[]).map(function(i){return i.n||"";}).filter(Boolean);
+  var allHerst=(TMATCH.zug_hersteller&&TMATCH.zug_hersteller.items||[]).map(function(i){return i.n||"";}).filter(Boolean);
+
   function renderSec(title,items){
     if(!items||!items.length)return"";
     var cnt=0;
@@ -9889,6 +9900,10 @@ function showTrainDepot(){
   html+=renderSec("Halterkürzel (VKM)",allVkm);
   html+=renderSec("Panoramabahnen",allPan);
   html+=renderSec("Bahnhofskürzel (DS100)",allDs);
+  html+=renderSec("Legendaere Routen",allRouten);
+  html+=renderSec("Bahnhofs-Architektur",allBahnTyp);
+  html+=renderSec("Zug-Hersteller",allHerst);
+
   if(!allVkm.length&&!allPan.length&&!allDs.length)html+="<p style='color:#999'>Keine Zug-Daten gefunden.</p>";
   html+="</div>";
   document.getElementById("app").innerHTML=html;
