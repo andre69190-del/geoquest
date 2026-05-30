@@ -27911,5 +27911,193 @@
       "n": "NS Intercity Direct",
       "c": "Niederlande"
     }
+  ],
+  "zug_rekorde_pin": [
+    {
+      "n": "Shanghai Maglev (schnellster kommerz. Zug, 430 km/h)",
+      "lat": 31.205,
+      "lng": 121.59,
+      "c": "China"
+    },
+    {
+      "n": "Peking–Shanghai HSR (Geschwindigkeitsrekord 486 km/h)",
+      "lat": 39.904,
+      "lng": 116.407,
+      "c": "China"
+    },
+    {
+      "n": "Chengdu–Chongqing HSR (neueste chin. Hochgeschw.-Linie)",
+      "lat": 30.572,
+      "lng": 104.066,
+      "c": "China"
+    },
+    {
+      "n": "Tokio–Osaka (Shinkansen, Nozomi, 285 km/h Betrieb)",
+      "lat": 35.682,
+      "lng": 139.767,
+      "c": "Japan"
+    },
+    {
+      "n": "Tokio–Sapporo (Hokkaido Shinkansen, längste HSR Japans)",
+      "lat": 43.065,
+      "lng": 141.347,
+      "c": "Japan"
+    },
+    {
+      "n": "Paris–Lyon (TGV, erster europ. Hochgeschw.-Betrieb 1981)",
+      "lat": 48.856,
+      "lng": 2.352,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Paris–Marseille (LGV Méditerranée, 300 km/h)",
+      "lat": 43.296,
+      "lng": 5.37,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Madrid–Sevilla (erste span. HSR, 1992)",
+      "lat": 40.416,
+      "lng": -3.703,
+      "c": "Spanien"
+    },
+    {
+      "n": "Madrid–Barcelona (AVE, 500 km Direktverbindung)",
+      "lat": 41.386,
+      "lng": 2.17,
+      "c": "Spanien"
+    },
+    {
+      "n": "Frankfurt–Koeln HSR (300 km/h, Neubaustreck)",
+      "lat": 50.11,
+      "lng": 8.682,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Nuernberg–Ingolstadt HSR (erster ICE-Neubau 300 km/h DE)",
+      "lat": 49.453,
+      "lng": 11.077,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Milano–Roma (Frecciarossa, 300 km/h)",
+      "lat": 45.464,
+      "lng": 9.189,
+      "c": "Italien"
+    },
+    {
+      "n": "Seoul–Busan KTX (300 km/h, laengste KTX-Linie)",
+      "lat": 37.566,
+      "lng": 126.977,
+      "c": "Suedkorea"
+    },
+    {
+      "n": "Taipei–Kaohsiung THSR (300 km/h, 2007)",
+      "lat": 25.048,
+      "lng": 121.514,
+      "c": "Taiwan"
+    },
+    {
+      "n": "London–Paris Eurotunnel (Weltrekord Unterwassertunnel 50 km)",
+      "lat": 51.127,
+      "lng": 1.32,
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "Gotthard-Basistunnel (laengster Eisenbahntunnel 57 km)",
+      "lat": 46.63,
+      "lng": 8.617,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Trans-Sibirische Eisenbahn (laengste Bahnlinie 9289 km)",
+      "lat": 55.751,
+      "lng": 37.617,
+      "c": "Russland"
+    },
+    {
+      "n": "Indian Pacific (zweitlaengste Direktverbindung 4352 km)",
+      "lat": -33.868,
+      "lng": 151.209,
+      "c": "Australien"
+    },
+    {
+      "n": "The Ghan (Adelaide–Darwin, 2979 km)",
+      "lat": -34.929,
+      "lng": 138.6,
+      "c": "Australien"
+    },
+    {
+      "n": "Glacier Express (langsamster Schnellzug, Zermatt–St. Moritz)",
+      "lat": 46.417,
+      "lng": 7.987,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Bernina Express (höchster Alpenpass-Eisenbahn 2253 m)",
+      "lat": 46.498,
+      "lng": 10.02,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Qinghai–Tibet Railway (hoechste Eisenbahn 5072 m)",
+      "lat": 29.652,
+      "lng": 91.172,
+      "c": "China"
+    },
+    {
+      "n": "Rocky Mountaineer (malerischste Bergbahn Kanadas)",
+      "lat": 49.282,
+      "lng": -123.12,
+      "c": "Kanada"
+    },
+    {
+      "n": "Rhaetische Bahn (UNESCO-Welterbe, steilste Zahnradbahn)",
+      "lat": 46.849,
+      "lng": 9.533,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Haramain HSR (Mekka–Medina, 300 km/h, 450 km)",
+      "lat": 21.389,
+      "lng": 39.857,
+      "c": "Saudi-Arabien"
+    },
+    {
+      "n": "Afrosiyob HSR Taschkent–Samarkand (erste HSR Zentralasiens)",
+      "lat": 41.299,
+      "lng": 69.24,
+      "c": "Usbekistan"
+    },
+    {
+      "n": "Ankara–Istanbul YHT (erste tuerk. HSR, 250 km/h)",
+      "lat": 39.92,
+      "lng": 32.854,
+      "c": "Tuerkei"
+    },
+    {
+      "n": "Moscow–St. Petersburg Sapsan (250 km/h, 4h Fahrzeit)",
+      "lat": 55.751,
+      "lng": 37.617,
+      "c": "Russland"
+    },
+    {
+      "n": "Mumbai–Ahmedabad HSR (erste indische HSR im Bau)",
+      "lat": 19.076,
+      "lng": 72.877,
+      "c": "Indien"
+    },
+    {
+      "n": "Narita Express (schnellster Flughafenzug Japans, 130 km/h)",
+      "lat": 35.773,
+      "lng": 140.387,
+      "c": "Japan"
+    },
+    {
+      "n": "BART Flughafen San Francisco (laengste US-Metro 181 km)",
+      "lat": 37.617,
+      "lng": -122.384,
+      "c": "USA"
+    }
   ]
 }

@@ -4236,5 +4236,219 @@
         "val": 1200
       }
     ]
+  },
+  "zug_taktfrequenz": {
+    "prompt": "Hoehere Taktfrequenz (Zuege pro Stunde)?",
+    "unit": "Zuege/h",
+    "items": [
+      {
+        "name": "Tokio Yamanote-Linie (Stosszeit)",
+        "val": 25
+      },
+      {
+        "name": "Hongkong MTR Island Line (Peak)",
+        "val": 30
+      },
+      {
+        "name": "London Central Line (Peak)",
+        "val": 32
+      },
+      {
+        "name": "Paris RER A (Peak)",
+        "val": 30
+      },
+      {
+        "name": "New York Subway 8th Ave Line",
+        "val": 24
+      },
+      {
+        "name": "Berlin U2 (Stosszeit)",
+        "val": 12
+      },
+      {
+        "name": "Berlin S-Bahn Ring (Stosszeit)",
+        "val": 10
+      },
+      {
+        "name": "Muenchen U3/U6 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Wien U4 (Stosszeit)",
+        "val": 15
+      },
+      {
+        "name": "Moskau Metro (Stosszeit)",
+        "val": 40
+      },
+      {
+        "name": "Shanghai Metro Linie 2 (Peak)",
+        "val": 36
+      },
+      {
+        "name": "Peking Metro Linie 10 (Peak)",
+        "val": 30
+      },
+      {
+        "name": "Singapur MRT North-South (Peak)",
+        "val": 30
+      },
+      {
+        "name": "Seoul Metro Linie 2 (Peak)",
+        "val": 40
+      },
+      {
+        "name": "Madrid Metro L6 (HVZ)",
+        "val": 20
+      },
+      {
+        "name": "ICE Frankfurt–Koeln (HVZ)",
+        "val": 4
+      },
+      {
+        "name": "TGV Paris–Lyon (HVZ)",
+        "val": 8
+      },
+      {
+        "name": "Shinkansen Nozomi Tokyo–Osaka (HVZ)",
+        "val": 13
+      },
+      {
+        "name": "AVE Madrid–Sevilla (HVZ)",
+        "val": 2
+      },
+      {
+        "name": "Eurostar London–Paris (HVZ)",
+        "val": 2
+      },
+      {
+        "name": "SBB IC Zuerich–Bern (HVZ)",
+        "val": 4
+      },
+      {
+        "name": "OeBB Railjet Wien–Salzburg (HVZ)",
+        "val": 2
+      },
+      {
+        "name": "Frecciarossa Milano–Roma (HVZ)",
+        "val": 4
+      },
+      {
+        "name": "Renfe AVE Madrid–Barcelona (HVZ)",
+        "val": 3
+      },
+      {
+        "name": "NS Intercity Amsterdam–Rotterdam (HVZ)",
+        "val": 6
+      },
+      {
+        "name": "SNCF TER Paris–Chartres (HVZ)",
+        "val": 4
+      },
+      {
+        "name": "DB RE Frankfurt–Mannheim (HVZ)",
+        "val": 4
+      },
+      {
+        "name": "Thameslink London Bridge–St Pancras (HVZ)",
+        "val": 24
+      },
+      {
+        "name": "RER B Paris CDG–Innenstadt (HVZ)",
+        "val": 12
+      },
+      {
+        "name": "S-Bahn Zuerich (HVZ)",
+        "val": 8
+      },
+      {
+        "name": "Oslo T-bane Linie 1 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Stockholm T-bana (HVZ)",
+        "val": 15
+      },
+      {
+        "name": "Copenhagen Metro M1 (HVZ)",
+        "val": 20
+      },
+      {
+        "name": "Bruessel Metro Linie 5 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Amsterdam Metro Linie 54 (HVZ)",
+        "val": 12
+      },
+      {
+        "name": "Prag Metro Linie A (HVZ)",
+        "val": 12
+      },
+      {
+        "name": "Warschau Metro M1 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Athen Metro Linie 3 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Istanbul Metro M1 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Kairo Metro Linie 1 (HVZ)",
+        "val": 15
+      },
+      {
+        "name": "Buenos Aires Subte C (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Sao Paulo Metro Linie 1 (HVZ)",
+        "val": 20
+      },
+      {
+        "name": "Mexico City Metro Linie 1 (HVZ)",
+        "val": 30
+      },
+      {
+        "name": "Sydney Metro Northwest (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Taipei MRT Bannan Line (HVZ)",
+        "val": 24
+      },
+      {
+        "name": "Osaka Midosuji Line (Stosszeit)",
+        "val": 30
+      },
+      {
+        "name": "Chicago L Red Line (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Washington DC Metro Red Line (HVZ)",
+        "val": 15
+      },
+      {
+        "name": "San Francisco BART (HVZ)",
+        "val": 12
+      },
+      {
+        "name": "Montreal STM Orange Line (HVZ)",
+        "val": 12
+      },
+      {
+        "name": "Mumbai Local Western Railway (HVZ)",
+        "val": 30
+      },
+      {
+        "name": "Bangkok BTS Silom (HVZ)",
+        "val": 10
+      }
+    ]
   }
 }

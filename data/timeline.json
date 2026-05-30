@@ -2028,5 +2028,211 @@
         "hint": "Tschechien–Schweiz via Deutschland"
       }
     ]
+  },
+  "zug_bahnhof_bau": {
+    "prompt": "Chronologisch sortieren — Bahnhofs-Eroeffnungen!",
+    "unit": "Jahr",
+    "items": [
+      {
+        "n": "Liverpool Lime Street (erster Stadtterminus der Welt)",
+        "year": 1836,
+        "hint": "England — ältester noch betriebener Grossbahnhof"
+      },
+      {
+        "n": "Frankfurter Bahnhof (erste Fernbahn DE)",
+        "year": 1840,
+        "hint": "Frankfurt — Verbindung Frankfurt–Mannheim"
+      },
+      {
+        "n": "Gare de Paris-Austerlitz (erste Pariser Fernbahn)",
+        "year": 1840,
+        "hint": "Paris — ältester noch bestehender Pariser Bahnhof"
+      },
+      {
+        "n": "Wien Nordbahnhof (erste Wiener Fernbahn)",
+        "year": 1837,
+        "hint": "Wien — Verbindung Wien–Floridsdorf"
+      },
+      {
+        "n": "Anhalter Bahnhof Berlin (einst groesster Bahnhof Europas)",
+        "year": 1841,
+        "hint": "Berlin — heute nur noch eine Ruine"
+      },
+      {
+        "n": "Milano Centrale (Eroeffnung des heutigen Gebaeudes)",
+        "year": 1931,
+        "hint": "Mailand — Jugendstil trifft Faschismus"
+      },
+      {
+        "n": "Grand Central Terminal New York",
+        "year": 1913,
+        "hint": "New York — Beaux-Arts Meisterwerk, 44 Gleise"
+      },
+      {
+        "n": "Gare de Lyon Paris (Weltausstellungs-Bahnhof)",
+        "year": 1900,
+        "hint": "Paris — Tour de l'Horloge als Wahrzeichen"
+      },
+      {
+        "n": "Victoria Station London",
+        "year": 1860,
+        "hint": "London — zweitgroessteres Passagieraufkommen UK"
+      },
+      {
+        "n": "St Pancras Station London (Neugotik)",
+        "year": 1868,
+        "hint": "London — Scott's Hotel, Midland Railway"
+      },
+      {
+        "n": "Antwerpen-Centraal (Kathedrale der Bahnhöfe)",
+        "year": 1905,
+        "hint": "Belgien — Diamantenstadt, prachtvoller Dom"
+      },
+      {
+        "n": "Leipzig Hauptbahnhof (groesster Kopfbahnhof Europas)",
+        "year": 1915,
+        "hint": "Leipzig — 26 Gleise, 83.640 m² Flaeche"
+      },
+      {
+        "n": "Frankfurt Hauptbahnhof",
+        "year": 1888,
+        "hint": "Frankfurt — damals drittgroesster Bahnhof der Welt"
+      },
+      {
+        "n": "Hamburg Hauptbahnhof",
+        "year": 1906,
+        "hint": "Hamburg — Glasdach, 450.000 Reisende/Tag"
+      },
+      {
+        "n": "Muenchen Hauptbahnhof (erster Muenchner Bahnhof)",
+        "year": 1839,
+        "hint": "Muenchen — Terminus der Muenchen–Augsburg Bahn"
+      },
+      {
+        "n": "Koeln Hauptbahnhof (neben dem Dom)",
+        "year": 1859,
+        "hint": "Koeln — zweiter Neubau, jetzt 280.000 Reisende/Tag"
+      },
+      {
+        "n": "Berlin Ostbahnhof (erster Berliner Bahnhof)",
+        "year": 1842,
+        "hint": "Berlin — Frankfurter Bahnhof, 1842"
+      },
+      {
+        "n": "Berlin Hauptbahnhof (Lehrter Stadtbahnhof)",
+        "year": 2006,
+        "hint": "Berlin — groesster Kreuzungsbahnhof Europas"
+      },
+      {
+        "n": "Tokyo Station (Marunouchi)",
+        "year": 1914,
+        "hint": "Tokio — rotes Backsteingebaeude, Nationalschatz"
+      },
+      {
+        "n": "Shinjuku Station Tokyo (meistgenutzte Station der Welt)",
+        "year": 1885,
+        "hint": "Tokio — 3,64 Mio. Passagiere pro Tag"
+      },
+      {
+        "n": "Gare du Nord Paris (Meistbesuchter Bahnhof Europas)",
+        "year": 1864,
+        "hint": "Paris — 214 Mio. Reisende/Jahr"
+      },
+      {
+        "n": "Waterloo Station London",
+        "year": 1848,
+        "hint": "London — groesste Zahl an Gleisen UK (24)"
+      },
+      {
+        "n": "Union Station Washington DC",
+        "year": 1907,
+        "hint": "Washington — Beaux-Arts, 120 Mio. Besucher/Jahr"
+      },
+      {
+        "n": "Union Station Chicago",
+        "year": 1925,
+        "hint": "Chicago — Amtrak Hub, neoklassizistisch"
+      },
+      {
+        "n": "Estacao da Luz Sao Paulo",
+        "year": 1901,
+        "hint": "Brasilien — englisches Eisendach, heute Kulturzentrum"
+      },
+      {
+        "n": "Flinders Street Station Melbourne",
+        "year": 1910,
+        "hint": "Australien — gelbe Kuppeln, Treffpunkt unter der Uhr"
+      },
+      {
+        "n": "Howrah Station Kolkata (aeltester indischer Grossbahnhof)",
+        "year": 1854,
+        "hint": "Indien — 23 Gleise, Millionen Reisende/Tag"
+      },
+      {
+        "n": "Chhatrapati Shivaji Terminus Mumbai (UNESCO)",
+        "year": 1887,
+        "hint": "Indien — neugotisch, Weltkultur­erbe"
+      },
+      {
+        "n": "Liege-Guillemins (Santiago Calatrava)",
+        "year": 2009,
+        "hint": "Belgien — weisse Stahlbogen-Skulptur"
+      },
+      {
+        "n": "Keleti Bahnhof Budapest",
+        "year": 1884,
+        "hint": "Ungarn — Historismus, Fassade mit Loks"
+      },
+      {
+        "n": "Gare de Strasbourg (Glasdach-Erweiterung)",
+        "year": 2007,
+        "hint": "Strassburg — riesige Glaskuppel vor Jugendstilbau"
+      },
+      {
+        "n": "Atocha Madrid (heute mit Regenwald-Garten)",
+        "year": 1851,
+        "hint": "Madrid — Eisenglaspalast, heute mit trop. Gaerten"
+      },
+      {
+        "n": "Sirkeci Bahnhof Istanbul (Endpunkt Orient-Express)",
+        "year": 1890,
+        "hint": "Istanbul — orientalischer Stil, letzter Stopp des OE"
+      },
+      {
+        "n": "Kievsky Bahnhof Moskau",
+        "year": 1918,
+        "hint": "Moskau — stalinistisches Mosaikgewölbe"
+      },
+      {
+        "n": "Haydarpasa Istanbul (asiat. Endpunkt des Orient-Express)",
+        "year": 1908,
+        "hint": "Istanbul — deutsch-osmanisch, Bosporus-Ufer"
+      },
+      {
+        "n": "Porto Sao Bento (Azulejo-Bahnhof)",
+        "year": 1916,
+        "hint": "Porto — 20.000 Azulejos-Kacheln im Innenraum"
+      },
+      {
+        "n": "Bahnhof Luzern (Brand und Wiedereroeffnung)",
+        "year": 1991,
+        "hint": "Luzern — nach Brand neues Bahnhofgebaeude"
+      },
+      {
+        "n": "Shin-Osaka (erster Shinkansen-Bahnhof ausserhalb Tokios)",
+        "year": 1964,
+        "hint": "Osaka — Eroefffnung zur Olympiade"
+      },
+      {
+        "n": "Gare de Montparnasse Paris (Turmbahnhof)",
+        "year": 1969,
+        "hint": "Paris — moderner Turmbahnhof, Tour Montparnasse"
+      },
+      {
+        "n": "King's Cross Station London (Euston Arch abgerissen)",
+        "year": 1852,
+        "hint": "London — Lewis Cubitt, Doppelbogenfenster"
+      }
+    ]
   }
 }

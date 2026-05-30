@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 298 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.65 MB | 685 Spielmodi | verify: 90/90
+**Version:** Phase 299 (Stand: Mai 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.66 MB | 685 Spielmodi | verify: 90/90
 
 ---
 
@@ -1063,11 +1063,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **294** | patch_294_clean_c_categories.py | **Saubere .c-Kategorien de/en/pl: Gesteinsklassen, Kristallsysteme, Erdzeitalter, Sternenhimmel, Kontinente (101 Werte, alle distinct .c je Gruppe → keine gemischten Button-Sprachen). verify: 90/90, node OK.** |
 | **297** | patch_297.py | **DS100 Hardcore Input-Modus + Zug-Depot Sammelalbum** |
 | **298** | patch_298.py | **Metro-Logos weltweit + Trainspotter Expansion (Routen, Architektur, Hersteller)** |
+| **299** | patch_299.py | **Taktfrequenz H/L + Rekord-Pin + Bahnhofs-Timeline (3 neue Zug-Modi)** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 298 -- Metro-Logos weltweit + Trainspotter Expansion (Routen, Architektur, Hersteller), 681 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 299 -- Taktfrequenz H/L + Rekord-Pin + Bahnhofs-Timeline (3 neue Zug-Modi), 681 Modi, 37 Datendateien, Mai 2026.*
 
 
 ---
