@@ -27910,6 +27910,146 @@
     {
       "n": "NS Intercity Direct",
       "c": "Niederlande"
+    },
+    {
+      "n": "California Zephyr (Chicago–San Francisco)",
+      "c": "USA"
+    },
+    {
+      "n": "Empire Builder (Chicago–Seattle)",
+      "c": "USA"
+    },
+    {
+      "n": "Southwest Chief (Chicago–Los Angeles)",
+      "c": "USA"
+    },
+    {
+      "n": "Coast Starlight (Los Angeles–Seattle)",
+      "c": "USA"
+    },
+    {
+      "n": "Acela (Boston–Washington DC)",
+      "c": "USA"
+    },
+    {
+      "n": "Auto Train (Washington–Orlando)",
+      "c": "USA"
+    },
+    {
+      "n": "NightJet Wien–Hamburg",
+      "c": "Oesterreich"
+    },
+    {
+      "n": "NightJet Wien–Bruessel",
+      "c": "Oesterreich"
+    },
+    {
+      "n": "NightJet Innsbruck–Berlin",
+      "c": "Oesterreich"
+    },
+    {
+      "n": "NightJet Zuerich–Barcelona",
+      "c": "Schweiz"
+    },
+    {
+      "n": "FlixTrain Hamburg–Koeln",
+      "c": "Deutschland"
+    },
+    {
+      "n": "ICE Berlin–Muenchen",
+      "c": "Deutschland"
+    },
+    {
+      "n": "DB IC2 Hamburg–Stuttgart",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Hokkaido Shinkansen (Shin-Aomori–Shin-Hakodate)",
+      "c": "Japan"
+    },
+    {
+      "n": "Kyushu Shinkansen (Hakata–Kagoshima)",
+      "c": "Japan"
+    },
+    {
+      "n": "Sanyo Shinkansen (Osaka–Hakata)",
+      "c": "Japan"
+    },
+    {
+      "n": "Joetsu Shinkansen (Tokio–Niigata)",
+      "c": "Japan"
+    },
+    {
+      "n": "Hokuriku Shinkansen (Tokio–Kanazawa)",
+      "c": "Japan"
+    },
+    {
+      "n": "SRT Suseo (Seoul–Busan, Linie 2)",
+      "c": "Suedkorea"
+    },
+    {
+      "n": "Mugunghwa Express (Seoul–Mokpo)",
+      "c": "Suedkorea"
+    },
+    {
+      "n": "IRYO Trenitalia ES (Madrid–Barcelona)",
+      "c": "Spanien"
+    },
+    {
+      "n": "Ouigo Espana (Madrid–Valencia)",
+      "c": "Spanien"
+    },
+    {
+      "n": "Talgo Alvia (Madrid–Bilbao)",
+      "c": "Spanien"
+    },
+    {
+      "n": "Renfe AVE Madrid–Valencia",
+      "c": "Spanien"
+    },
+    {
+      "n": "Intercites de Nuit Paris–Nice",
+      "c": "Frankreich"
+    },
+    {
+      "n": "InOui TGV Paris–Bordeaux",
+      "c": "Frankreich"
+    },
+    {
+      "n": "LEO Express Praha–Wien",
+      "c": "Tschechien"
+    },
+    {
+      "n": "PKP Pendolino (Warszawa–Gdansk)",
+      "c": "Polen"
+    },
+    {
+      "n": "Eurostar (London–Amsterdam)",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "Avanti West Coast (London–Manchester)",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "LNER Azuma (London–Edinburgh)",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "GWR IET (London–Bristol)",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "EuroCity Hamburg–Kopenhagen",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Haramain HSR (Mekka–Medina)",
+      "c": "Saudi-Arabien"
+    },
+    {
+      "n": "Afrosiyob (Taschkent–Samarkand)",
+      "c": "Usbekistan"
     }
   ],
   "zug_rekorde_pin": [

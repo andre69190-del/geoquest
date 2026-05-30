@@ -6700,6 +6700,150 @@
       {
         "n": "Strassburg",
         "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Grand Central Terminal New York",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Antwerpen-Centraal",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Venezia Santa Lucia",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Napoli Centrale",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Torino Porta Nuova",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Porto Sao Bento",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Paddington London",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Liverpool Street London",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Euston London",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Charing Cross London",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "King's Cross London",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Gare Saint-Lazare Paris",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Gare de l'Est Paris",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Gare Montparnasse Paris",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Marseille Saint-Charles",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Toulouse Matabiau",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Bordeaux Saint-Jean",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Helsinki Paarautatieasema",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Innsbruck Hbf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Graz Hbf",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Sirkeci Istanbul",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Haydarpasa Istanbul",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Zagreb Glavni Kolodvor",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Sofia Zentralbahnhof",
+        "c": "Kopfbahnhof"
+      },
+      {
+        "n": "Oslo Sentralstasjon",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Lausanne",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Linz Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Lyon Part-Dieu",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Lisboa Oriente",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Bukarest Nord",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Katowice Hbf",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Beograd Prokop",
+        "c": "Durchgangsbahnhof"
+      },
+      {
+        "n": "Muenchen Pasing",
+        "c": "Turmbahnhof"
+      },
+      {
+        "n": "Berlin Suedkreuz",
+        "c": "Turmbahnhof"
+      },
+      {
+        "n": "Flensburg Hbf",
+        "c": "Keilbahnhof"
+      },
+      {
+        "n": "Ulm Hbf",
+        "c": "Keilbahnhof"
       }
     ]
   },
@@ -6887,6 +7031,150 @@
       {
         "n": "Scorpio (Italo EVO)",
         "c": "Hitachi Rail"
+      },
+      {
+        "n": "TALENT 3 (DB Regio)",
+        "c": "Alstom"
+      },
+      {
+        "n": "TALENT 2 (Eurobahn)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Omneo Premium (SNCF TER)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Avelia Pendolino (NTV)",
+        "c": "Alstom"
+      },
+      {
+        "n": "X'Trapolis M (Metro Trains AU)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Coradia Nordic (SJ)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Coradia Stream (DB AG)",
+        "c": "Alstom"
+      },
+      {
+        "n": "TGV POS (SNCF)",
+        "c": "Alstom"
+      },
+      {
+        "n": "Avelia Ocean (SNCF M)",
+        "c": "Alstom"
+      },
+      {
+        "n": "ICE 1 (BR 401)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "ICE 2 (BR 402)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "ICE T (BR 411)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Velaro TR (TCDD YHT)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Desiro ML (DB Regio)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Desiro HC (RRX)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Inspiro (Warschau Metro)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "ES64U4 Taurus (OeBB)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Viaggio Comfort (RJ600)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Mireo Smart (DB)",
+        "c": "Siemens Mobility"
+      },
+      {
+        "n": "Class 385 (ScotRail)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "AT100 (Class 717 GN Metroland)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Class 387 (GWR/Thameslink)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Shinkansen E6 (Komachi)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Shinkansen E7/W7 (Kagayaki)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Class 810 (Avanti Evero)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "Caravaggio ETR 700 (NS Intercity)",
+        "c": "Hitachi Rail"
+      },
+      {
+        "n": "FLIRT 3 (DB Regio BA)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "FLIRT Akku (Batterie-Triebwagen)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "RABe 521 FLIRT (BLS)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "RABe 524 FLIRT (Ticino/Vaud)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "KISS Westbahn (WB 3)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "Flirt 3XL (Infrabel)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "GTW 6/10 (Arriva NL)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "TANGO (Bernmobil Strassenbahn)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "WINK (Niederflurzug DE)",
+        "c": "Stadler Rail"
+      },
+      {
+        "n": "RABe 501 Traverso (SBB/TILO)",
+        "c": "Stadler Rail"
       }
     ]
   }

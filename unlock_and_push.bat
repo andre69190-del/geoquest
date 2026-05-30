@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 299. Taktfrequenz H/L + Rekord-Pin + Bahnhofs-Timeline (3 neue Zug-Modi). verify: 89/89."
+git commit -m "Content: Phase 300. Grand Data Upscale: alle 4 Zug-Arrays auf 80 Items (zug_routen, bahnhof_typ, hersteller, metro_logos). verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
