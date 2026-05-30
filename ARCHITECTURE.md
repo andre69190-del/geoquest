@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 297 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.62 MB | 685 Spielmodi | verify: 90/90
+**Version:** Phase 298 (Stand: Mai 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.65 MB | 685 Spielmodi | verify: 90/90
 
 ---
 
@@ -1062,11 +1062,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **293** | patch_293_country_answers.py | **Länder-Antwortwerte der Match-Modi lokalisiert. NEU _tcc(s): dt. Ländername→cc→displayCountry (en/pl), sonst Fallback _tc. In alle Match-opts/ans eingebaut (statt _tc). Annotierte Werte bleiben über _tc-Fallback. verify: 90/90, node OK.** |
 | **294** | patch_294_clean_c_categories.py | **Saubere .c-Kategorien de/en/pl: Gesteinsklassen, Kristallsysteme, Erdzeitalter, Sternenhimmel, Kontinente (101 Werte, alle distinct .c je Gruppe → keine gemischten Button-Sprachen). verify: 90/90, node OK.** |
 | **297** | patch_297.py | **DS100 Hardcore Input-Modus + Zug-Depot Sammelalbum** |
+| **298** | patch_298.py | **Metro-Logos weltweit + Trainspotter Expansion (Routen, Architektur, Hersteller)** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 297 -- DS100 Hardcore Input-Modus + Zug-Depot Sammelalbum, 681 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 298 -- Metro-Logos weltweit + Trainspotter Expansion (Routen, Architektur, Hersteller), 681 Modi, 37 Datendateien, Mai 2026.*
 
 
 ---

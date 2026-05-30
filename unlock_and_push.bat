@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 297. DS100 Hardcore Input-Modus + Zug-Depot Sammelalbum. verify: 89/89."
+git commit -m "Content: Phase 298. Metro-Logos weltweit + Trainspotter Expansion (Routen, Architektur, Hersteller). verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

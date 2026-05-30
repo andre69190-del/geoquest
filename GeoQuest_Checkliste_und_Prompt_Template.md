@@ -6,7 +6,7 @@
 
 **unlock_and_push.bat** — Commit-Message updaten
 - Phase-Nummer, Modi-Zahl, Patch-Dateiname, verify-Ergebnis
-- Beispiel: `"Content: Phase 259. Neue-Feature +3 Modi. verify: 90/90."`
+- Beispiel: `"Content: Phase 259. Neue-Feature +3 Modi. verify: 136/136."`
 - Wichtig: Datei NUR mit dem Write-Tool bearbeiten, niemals mit Linux-sed (zerstört CRLF-Zeilenenden!)
 
 **ARCHITECTURE.md** — Mindestens diese Felder prüfen/updaten:
@@ -41,7 +41,7 @@ Das Skript erledigt: verify → ARCHITECTURE.md → README.md → landing.html �
 **GeoQuest_Spieluebersicht.html** — Neu generieren!
 - Skript: Aus den MODES-Daten in gen.py direkt generieren
 - Zeigt alle Modi gruppiert nach Kategorie mit Suche
-- Aktueller Stand: 685 Modi, Phase 294
+- Aktueller Stand: 713 Modi, Phase 298
 
 **validate_content.py** ausführen — prüft:
 - JSON-Dateien auf fehlende Pflichtfelder
@@ -74,7 +74,7 @@ Das Skript erledigt: verify → ARCHITECTURE.md → README.md → landing.html �
 GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 
 **Aktueller Stand:**
-- Phase 294, 685 Modi, verify: 90/90
+- Phase 298, 713 Modi, verify: 136/136
 - gen.py ist die einzige Build-Quelle (Single-File-Output)
 - Patch-System: patches/patch_[NUMMER]_[name].py — jeder Patch nutzt content.replace(old, new, 1)
 
@@ -107,7 +107,7 @@ GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 GeoQuest Phase [NUMMER]: Neuer Spielmodus "[Name]"
 
 **Aktueller Stand:**
-- Phase 294, 685 Modi, verify: 90/90
+- Phase 298, 713 Modi, verify: 136/136
 - 4 Universal-Engines: genUniversalPinQ(cat), genTiereHL(cat), genTiereMatchQ(cat), initTierWortSchmiede(key)
 
 **Neue Daten (JSON-Dateien in data/):**
@@ -147,7 +147,7 @@ GeoQuest Phase [NUMMER]: Neuer Spielmodus "[Name]"
 ```
 GeoQuest Phase [NUMMER]: Neue Kategorie "[Kategorie-Name]"
 
-**Aktueller Stand:** Phase 294, 685 Modi
+**Aktueller Stand:** Phase 298, 713 Modi
 
 **Schritte (analog zu Phase 228 Pflanzen / Phase 229 Gastronomie):**
 
@@ -191,18 +191,18 @@ GeoQuest Phase [NUMMER]: Neue Kategorie "[Kategorie-Name]"
 | _ttsSpeakNow() | Suche nach `function _ttsSpeakNow` |
 | Home-Header (eingeloggt) | Suche nach `\u{1FA99} \${_gc}` |
 
-## Teil 4: Dateien-Checkliste (Stand Phase 294)
+## Teil 4: Dateien-Checkliste (Stand Phase 298)
 
 | Datei | Zeigt Phasennummer? | Zeigt Modi-Zahl? | Stand |
 |-------|--------------------|--------------------|-------|
-| ARCHITECTURE.md | ✅ Phase 294 | ✅ 685 | aktuell |
-| README.md | ✅ Phase 294 | ✅ 685 | aktuell |
-| landing.html | — | ✅ 685 | aktuell |
-| GeoQuest_Website_Konzept.md | ✅ Phase 294 | ✅ 685 | aktuell |
-| GeoQuest_Spieluebersicht.html | ✅ Phase 294 | ✅ 685 | aktuell |
-| unlock_and_push.bat | ✅ Phase 294 | ✅ 90/90 | aktuell |
+| ARCHITECTURE.md | ✅ Phase 298 | ✅ 713 | aktuell |
+| README.md | ✅ Phase 298 | ✅ 713 | aktuell |
+| landing.html | — | ✅ 713 | aktuell |
+| GeoQuest_Website_Konzept.md | ✅ Phase 298 | ✅ 713 | aktuell |
+| GeoQuest_Spieluebersicht.html | ✅ Phase 298 | ✅ 713 | aktuell |
+| unlock_and_push.bat | ✅ Phase 298 | ✅ 90/90 | aktuell |
 | GEOQUEST_GAMES_REPORT.md | ❌ Phase ~99 | ❌ 55 | historisch, nicht updaten |
 
 ---
 
-*Zuletzt aktualisiert: Mai 2026 — Phase 294*
+*Zuletzt aktualisiert: Mai 2026 — Phase 298*

@@ -501,6 +501,29 @@ if len(_herst_items) >= 40 and len(_herst_opts) == 4 and all(i["c"] in _herst_op
 else:
     fail("zug_hersteller: " + str(len(_herst_items)) + " Items, " + str(len(_herst_opts)) + " fixedOpts")
 
+
+# -- 19g. Metro-Logos (Phase 298.2) ----------------------------
+section("19g. Metro-Logos weltweit (Phase 298.2)")
+import json as _json2
+_metro = _json2.load(open("data/metro_logos.json", encoding="utf-8"))
+if len(_metro) >= 30:
+    ok("data/metro_logos.json: " + str(len(_metro)) + " Metro-Logos OK")
+else:
+    fail("data/metro_logos.json: nur " + str(len(_metro)) + " Eintraege (min 30)")
+_bad_svg = [m['city'] for m in _metro if not m.get('svg','').startswith('<svg')]
+if not _bad_svg:
+    ok("Alle Metro-Logos haben gueltigen SVG-Code")
+else:
+    fail("SVG-Fehler bei: " + str(_bad_svg[:3]))
+if "genMetroLogoQ" in js:
+    ok("genMetroLogoQ() im JS vorhanden")
+else:
+    fail("genMetroLogoQ() fehlt im JS")
+if "zug_metro_logos" in js:
+    ok("Modus zug_metro_logos im JS registriert")
+else:
+    fail("zug_metro_logos fehlt im JS")
+
 # =============================================================
 print("\n" + "=" * 58)
 total = len(PASS_LIST) + len(FAIL_LIST)

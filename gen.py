@@ -371,6 +371,10 @@ BJ  = json.dumps(BRANDS, separators=(',',':'), ensure_ascii=False)
 WAPPEN_JSON = json.load(open(os.path.join(os.path.dirname(__file__), 'wappen.json'), encoding='utf-8'))
 WPJ = json.dumps(WAPPEN_JSON, separators=(',',':'), ensure_ascii=False)
 
+# Phase 298.2: Metro-Logos
+METRO_LOGO_JSON = json.load(open(os.path.join(os.path.dirname(__file__), 'data/metro_logos.json'), encoding='utf-8'))
+METRO_LOGO_J = json.dumps(METRO_LOGO_JSON, separators=(',',':'), ensure_ascii=False)
+
 CURRENCIES = [{'currency': 'Yen', 'symbol': 'Â¥', 'country': 'Japan', 'cc': 'jp', 'sub': 'Eastern Asia'}, {'currency': 'Won', 'symbol': 'â‚©', 'country': 'South Korea', 'cc': 'kr', 'sub': 'Eastern Asia'}, {'currency': 'Renminbi', 'symbol': 'Â¥', 'country': 'China', 'cc': 'cn', 'sub': 'Eastern Asia'}, {'currency': 'Rupee', 'symbol': 'â‚¹', 'country': 'India', 'cc': 'in', 'sub': 'Southern Asia'}, {'currency': 'Taka', 'symbol': 'à§³', 'country': 'Bangladesh', 'cc': 'bd', 'sub': 'Southern Asia'}, {'currency': 'Baht', 'symbol': 'à¸¿', 'country': 'Thailand', 'cc': 'th', 'sub': 'Southeast Asia'}, {'currency': 'Dong', 'symbol': 'â‚«', 'country': 'Vietnam', 'cc': 'vn', 'sub': 'Southeast Asia'}, {'currency': 'Ringgit', 'symbol': 'RM', 'country': 'Malaysia', 'cc': 'my', 'sub': 'Southeast Asia'}, {'currency': 'Peso', 'symbol': 'â‚±', 'country': 'Philippines', 'cc': 'ph', 'sub': 'Southeast Asia'}, {'currency': 'Pound', 'symbol': 'Â£', 'country': 'United Kingdom', 'cc': 'gb', 'sub': 'Northern Europe'}, {'currency': 'Krone', 'symbol': 'kr', 'country': 'Denmark', 'cc': 'dk', 'sub': 'Northern Europe'}, {'currency': 'Krone', 'symbol': 'kr', 'country': 'Norway', 'cc': 'no', 'sub': 'Northern Europe'}, {'currency': 'Krona', 'symbol': 'kr', 'country': 'Sweden', 'cc': 'se', 'sub': 'Northern Europe'}, {'currency': 'Forint', 'symbol': 'Ft', 'country': 'Hungary', 'cc': 'hu', 'sub': 'Eastern Europe'}, {'currency': 'Zloty', 'symbol': 'zł', 'country': 'Poland', 'cc': 'pl', 'sub': 'Eastern Europe'}, {'currency': 'Koruna', 'symbol': 'Kń', 'country': 'Czech Republic', 'cc': 'cz', 'sub': 'Eastern Europe'}, {'currency': 'Hryvnia', 'symbol': 'â‚´', 'country': 'Ukraine', 'cc': 'ua', 'sub': 'Eastern Europe'}, {'currency': 'Leu', 'symbol': 'lei', 'country': 'Romania', 'cc': 'ro', 'sub': 'Eastern Europe'}, {'currency': 'Ruble', 'symbol': 'â‚½', 'country': 'Russia', 'cc': 'ru', 'sub': 'Eastern Europe'}, {'currency': 'Lira', 'symbol': 'â‚º', 'country': 'Turkey', 'cc': 'tr', 'sub': 'Western Asia'}, {'currency': 'Shekel', 'symbol': 'â‚ª', 'country': 'Israel', 'cc': 'il', 'sub': 'Western Asia'}, {'currency': 'Riyal', 'symbol': 'SAR', 'country': 'Saudi Arabia', 'cc': 'sa', 'sub': 'Western Asia'}, {'currency': 'Dirham', 'symbol': 'AED', 'country': 'UAE', 'cc': 'ae', 'sub': 'Western Asia'}, {'currency': 'Dinar', 'symbol': 'RSD', 'country': 'Serbia', 'cc': 'rs', 'sub': 'Southern Europe'}, {'currency': 'Tenge', 'symbol': 'â‚¸', 'country': 'Kazakhstan', 'cc': 'kz', 'sub': 'Central Asia'}, {'currency': 'Real', 'symbol': 'R$', 'country': 'Brazil', 'cc': 'br', 'sub': 'South America'}, {'currency': 'Peso', 'symbol': '$', 'country': 'Mexico', 'cc': 'mx', 'sub': 'Central America'}, {'currency': 'Peso', 'symbol': '$', 'country': 'Argentina', 'cc': 'ar', 'sub': 'South America'}, {'currency': 'Sol', 'symbol': 'S/', 'country': 'Peru', 'cc': 'pe', 'sub': 'South America'}, {'currency': 'Rand', 'symbol': 'R', 'country': 'South Africa', 'cc': 'za', 'sub': 'Southern Africa'}, {'currency': 'Naira', 'symbol': 'â‚¦', 'country': 'Nigeria', 'cc': 'ng', 'sub': 'Western Africa'}, {'currency': 'Birr', 'symbol': 'Br', 'country': 'Ethiopia', 'cc': 'et', 'sub': 'Eastern Africa'}, {'currency': 'Shilling', 'symbol': 'Sh', 'country': 'Kenya', 'cc': 'ke', 'sub': 'Eastern Africa'}, {'currency': 'Pound', 'symbol': 'EÂ£', 'country': 'Egypt', 'cc': 'eg', 'sub': 'Northern Africa'}, {'currency': 'Dirham', 'symbol': 'MAD', 'country': 'Morocco', 'cc': 'ma', 'sub': 'Northern Africa'}]
 CUJ = json.dumps(CURRENCIES, separators=(',',':'), ensure_ascii=False)
 print('Lifestyle data: Food', len(FOOD), '| Brands', len(BRANDS), '| Currencies', len(CURRENCIES))
@@ -2831,6 +2835,7 @@ const MODES=[
     {id:"ws_zug_acela",        icon:"\u{1F524}",title:"WS: Acela",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: ACELA — 5 Buchstaben"},
     {id:"uk_bahnhof_pin",   icon:"\u{1F689}",title:"Bahnhöfe weltweit",             group:"zuege",prompt:"\u{1F4CD} Wo auf der Karte liegt dieser Bahnhof?",       desc:"Grand Central, Tokyo Station, Estação da Luz & 77 weitere"},
     {id:"zug_ds100",          icon:"\u{1F3AB}",title:"DS100 (Auswahl)",              group:"zuege",prompt:"Welches Betriebsstellenkürzel hat dieser Bahnhof?",        desc:"FF=Frankfurt, MH=München — das Alphabet der Eisenbahn"},
+    {id:"zug_metro_logos", icon:"\u{1F687}",title:"Metro-Logos weltweit",  group:"zuege",prompt:"Welchem Nahverkehrsnetz gehört dieses Logo?",desc:"Underground, Métro, U-Bahn — erkennst du die Logos der Weltmetropolen?"},
     {id:"zug_routen",       icon:"\u{1F5FA}\uFE0F",title:"Legendaere Routen",      group:"zuege",prompt:"Aus welchem Land faehrt dieser beruehmt Zug?",desc:"Glacier Express bis Transsibirische Eisenbahn — kenne deine Strecken"},
     {id:"zug_bahnhof_typ", icon:"\u{1F3DB}\uFE0F",title:"Bahnhofs-Architektur",   group:"zuege",prompt:"Welche Bauform hat dieser Bahnhof?",              desc:"Kopfbahnhof, Durchgangsbahnhof, Turmbahnhof — die Typen der grossen Hubs"},
     {id:"zug_hersteller",  icon:"\u{1F3ED}",      title:"Zug-Hersteller",          group:"zuege",prompt:"Von welchem Hersteller stammt dieser Zug?",        desc:"Alstom, Siemens, Hitachi, Stadler — wer baut die schnellsten Zuege?"},
@@ -3337,7 +3342,7 @@ const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
-  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","timeline_zug_hsb","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_acela","uk_bahnhof_pin","zug_ds100","zug_ds100_input","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
+  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","timeline_zug_hsb","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_acela","uk_bahnhof_pin","zug_ds100","zug_ds100_input","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
@@ -9479,6 +9484,7 @@ const GEN={
   ws_zug_acela:()=>initTierWortSchmiede("zug_acela"),
   uk_bahnhof_pin:()=>genUniversalPinQ("bahnhof_pin"),
   zug_ds100:()=>genDS100McQ(),
+  zug_metro_logos:()=>genMetroLogoQ(),
   zug_routen:()=>genUniversalMatchQ("zug_routen"),
   zug_bahnhof_typ:()=>genTiereMatchQ("zug_bahnhof_typ"),
   zug_hersteller:()=>genTiereMatchQ("zug_hersteller"),
@@ -9867,7 +9873,7 @@ function loadTrainDepot(){var raw=localStorage.getItem("gq_train_depot");return 
 function saveTrainDepot(arr){localStorage.setItem("gq_train_depot",JSON.stringify(arr));}
 function trackTrainDepot(){
   if(!S||!S.mode||!S.q)return;
-  var trainModes=["zug_vkm","zug_panorama","zug_ds100","zug_ds100_input","zug_routen","zug_bahnhof_typ","zug_hersteller"];
+  var trainModes=["zug_vkm","zug_panorama","zug_ds100","zug_ds100_input","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"];
   if(trainModes.indexOf(S.mode)===-1)return;
   var itemKey=S.q.subject||S.q.subj||S.q.q||S.q.name||S.q.ans;
   if(!itemKey)return;
@@ -9882,6 +9888,7 @@ function showTrainDepot(){
   var allDs=(TECH.ds100_bahnhoefe||KULT.ds100_bahnhoefe||TECH.ds100||KULT.ds100||[]).map(function(i){return i.q||i.name||i.subj||"";}).filter(Boolean);
   var unlocked=loadTrainDepot();
   var TMATCH=typeof TIER_MATCH_DATA!=="undefined"?TIER_MATCH_DATA:{};
+  var allMetro=(typeof METRO_LOGO_DATA!=="undefined"?METRO_LOGO_DATA:[]).map(function(i){return i.city||"";}).filter(Boolean);
   var allRouten=(KULT.zug_routen||[]).map(function(i){return i.n||"";}).filter(Boolean);
   var allBahnTyp=(TMATCH.zug_bahnhof_typ&&TMATCH.zug_bahnhof_typ.items||[]).map(function(i){return i.n||"";}).filter(Boolean);
   var allHerst=(TMATCH.zug_hersteller&&TMATCH.zug_hersteller.items||[]).map(function(i){return i.n||"";}).filter(Boolean);
@@ -9900,6 +9907,7 @@ function showTrainDepot(){
   html+=renderSec("Halterkürzel (VKM)",allVkm);
   html+=renderSec("Panoramabahnen",allPan);
   html+=renderSec("Bahnhofskürzel (DS100)",allDs);
+  html+=renderSec("Metro-Logos",allMetro);
   html+=renderSec("Legendaere Routen",allRouten);
   html+=renderSec("Bahnhofs-Architektur",allBahnTyp);
   html+=renderSec("Zug-Hersteller",allHerst);
@@ -11421,6 +11429,8 @@ if(mode==="slf"&&S.ph==="playing"){
     qBody=`<div class="qprompt">${q.prompt}</div>
       <div class="qmain">${q.subj}</div>
       ${sel\!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+  }else if(q.type==="metro_logo"){
+    qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;align-items:center;margin:12px auto;max-height:25vh;max-width:200px">${q.svg}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="wappen"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="wappen-img-wrap"><img src="${q.img}" alt="Wappen" class="wappen-img" onerror="wappenErr(this)" style="max-height:25vh;width:auto;max-width:100%;object-fit:contain;display:block;margin:0 auto"></div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="neighbor"||q.type==="neighbor_fake"||q.type==="neighbor_count"){
@@ -12827,6 +12837,8 @@ function renderReiseroute(sc){
 
 /* â”€â”€ WAPPEN-MEISTER DATA â”€â”€ (Phase 106) */
 const WAPPEN_DATA=PLACEHOLDER_WPJ
+/* Phase 298.2: Metro-Logos */
+const METRO_LOGO_DATA=PLACEHOLDER_METRO_LOGO_J
 function genWappenQ(){
   if(\!WAPPEN_DATA||WAPPEN_DATA.length<4)return null;
   const _r=arr=>arr[~~(rng()*arr.length)];
@@ -12839,6 +12851,17 @@ function genWappenQ(){
   const _wdc=w=>{const r=displayCountry(w.cc);return(r&&r!==w.cc)?r:w.c;};
   const opts=sh([correct,...wrongs]).map(_wdc);
   return{type:"wappen",prompt:t("q_wappen"),subj:_wdc(correct),img:correct.img,opts,ans:displayCountry(correct.cc)||correct.c,lid:correct.cc,cc:correct.cc,meta:"🛡️ Wappen von "+correct.c};
+}
+
+
+/* Phase 298.2: Metro-Logo Visuelles Quiz */
+function genMetroLogoQ(){
+  if(!METRO_LOGO_DATA||METRO_LOGO_DATA.length<4)return null;
+  const cor=METRO_LOGO_DATA[~~(rng()*METRO_LOGO_DATA.length)];
+  const others=sh(METRO_LOGO_DATA.filter(m=>m.city!==cor.city)).slice(0,3);
+  if(others.length<3)return null;
+  const opts=sh([cor.city,...others.map(m=>m.city)]);
+  return{type:"metro_logo",prompt:"Welchem Nahverkehrsnetz gehört dieses Logo?",svg:cor.svg,subj:cor.city,opts,ans:cor.city,lid:"metro_"+cor.cc,cc:"",meta:"🚇 "+cor.city};
 }
 
 /* P153: Fallback when Wappen SVG fails to load */
@@ -14671,6 +14694,7 @@ JS = (JS
   .replace('PLACEHOLDER_BJ',  BJ)
   .replace('PLACEHOLDER_CUJ', CUJ)
   .replace('PLACEHOLDER_WPJ', WPJ)
+  .replace('PLACEHOLDER_METRO_LOGO_J', METRO_LOGO_J)
   .replace('PLACEHOLDER_HCEU', HCEUJ)
   .replace('PLACEHOLDER_HCCH', HCCHJ)
   .replace('PLACEHOLDER_SPORTPOI', SPORT_POI_J)
