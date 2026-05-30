@@ -3258,5 +3258,983 @@
         "val": 352
       }
     ]
+  },
+  "zug_speed": {
+    "prompt": "Höhere Betriebsgeschwindigkeit?",
+    "unit": "km/h",
+    "items": [
+      {
+        "name": "Shanghai Maglev (China)",
+        "val": 430
+      },
+      {
+        "name": "JR L0 Maglev (Japan, Testrekord)",
+        "val": 603
+      },
+      {
+        "name": "Transrapid TR09 (Deutschland, Test)",
+        "val": 550
+      },
+      {
+        "name": "Fuxing CR400BF (China)",
+        "val": 350
+      },
+      {
+        "name": "Fuxing CR400AF (China)",
+        "val": 350
+      },
+      {
+        "name": "CRH380A (China)",
+        "val": 380
+      },
+      {
+        "name": "CRH380B (China)",
+        "val": 380
+      },
+      {
+        "name": "CRH3C (China, Velaro CN)",
+        "val": 350
+      },
+      {
+        "name": "CRH2C (China)",
+        "val": 350
+      },
+      {
+        "name": "CRH5A (China)",
+        "val": 250
+      },
+      {
+        "name": "Shinkansen N700S (Japan)",
+        "val": 320
+      },
+      {
+        "name": "Shinkansen N700 (Japan)",
+        "val": 300
+      },
+      {
+        "name": "Shinkansen E5/H5 (Japan)",
+        "val": 320
+      },
+      {
+        "name": "Shinkansen E7/W7 (Japan)",
+        "val": 260
+      },
+      {
+        "name": "Shinkansen E2 Series (Japan)",
+        "val": 275
+      },
+      {
+        "name": "Shinkansen 700 Series (Japan)",
+        "val": 285
+      },
+      {
+        "name": "Shinkansen 500 Series (Japan)",
+        "val": 300
+      },
+      {
+        "name": "Shinkansen 200 Series (Japan)",
+        "val": 240
+      },
+      {
+        "name": "Shinkansen 0 Series (Japan, 1964)",
+        "val": 210
+      },
+      {
+        "name": "Shinkansen E6 Komachi (Japan)",
+        "val": 320
+      },
+      {
+        "name": "TGV Euroduplex (Frankreich)",
+        "val": 320
+      },
+      {
+        "name": "TGV Duplex (Frankreich)",
+        "val": 320
+      },
+      {
+        "name": "TGV PSE (Frankreich, original 1981)",
+        "val": 270
+      },
+      {
+        "name": "TGV INOUI (Frankreich)",
+        "val": 320
+      },
+      {
+        "name": "AGV Italo (Italien)",
+        "val": 300
+      },
+      {
+        "name": "AVE S-103 Velaro E (Spanien)",
+        "val": 310
+      },
+      {
+        "name": "AVE S-100 Talgo 350 (Spanien)",
+        "val": 330
+      },
+      {
+        "name": "AVE S-102 Talgo 350 (Spanien)",
+        "val": 330
+      },
+      {
+        "name": "OUIGO Spanien",
+        "val": 300
+      },
+      {
+        "name": "ICE 3 (Deutschland)",
+        "val": 300
+      },
+      {
+        "name": "ICE 4 (Deutschland)",
+        "val": 250
+      },
+      {
+        "name": "ICE 1 (Deutschland)",
+        "val": 280
+      },
+      {
+        "name": "ICE 2 (Deutschland)",
+        "val": 280
+      },
+      {
+        "name": "ICE T (Deutschland, Neigetechnik)",
+        "val": 230
+      },
+      {
+        "name": "KTX-II / KTX-Sancheon (Südkorea)",
+        "val": 300
+      },
+      {
+        "name": "KTX-I (Südkorea)",
+        "val": 305
+      },
+      {
+        "name": "KTX-Eum (Südkorea)",
+        "val": 260
+      },
+      {
+        "name": "SRT (Südkorea SR)",
+        "val": 305
+      },
+      {
+        "name": "Frecciarossa 1000 (Italien)",
+        "val": 300
+      },
+      {
+        "name": "Frecciarossa ETR 500 (Italien)",
+        "val": 300
+      },
+      {
+        "name": "Frecciargento ETR 610 (Italien)",
+        "val": 250
+      },
+      {
+        "name": "Frecciabianca (Italien)",
+        "val": 200
+      },
+      {
+        "name": "Eurostar e320 (UK–Frankreich–Belgien)",
+        "val": 300
+      },
+      {
+        "name": "Eurostar e300 (UK–Frankreich)",
+        "val": 300
+      },
+      {
+        "name": "Thalys PBKA (Belgien–Frankreich)",
+        "val": 300
+      },
+      {
+        "name": "Thalys PBA (Belgien)",
+        "val": 300
+      },
+      {
+        "name": "ICE 3M (International, Deutschland)",
+        "val": 300
+      },
+      {
+        "name": "Railjet (Österreich, Velaro A)",
+        "val": 230
+      },
+      {
+        "name": "Nightjet (Österreich, Schlafzug)",
+        "val": 160
+      },
+      {
+        "name": "IC2000 (Schweiz)",
+        "val": 200
+      },
+      {
+        "name": "Giruno RABe 501 (Schweiz)",
+        "val": 250
+      },
+      {
+        "name": "Pendolino ETR 470 (Schweiz–Italien)",
+        "val": 200
+      },
+      {
+        "name": "X 2000 (Schweden)",
+        "val": 210
+      },
+      {
+        "name": "FLIRT (Norwegen, Regio)",
+        "val": 160
+      },
+      {
+        "name": "IC3 (Dänemark)",
+        "val": 180
+      },
+      {
+        "name": "Caledonian Sleeper (Schottland)",
+        "val": 160
+      },
+      {
+        "name": "Sapsan (Russland, Velaro RUS)",
+        "val": 250
+      },
+      {
+        "name": "Lastochka (Russland, Desiro)",
+        "val": 160
+      },
+      {
+        "name": "Allegro (Finnland–Russland)",
+        "val": 220
+      },
+      {
+        "name": "Pendolino SM3 (Finnland)",
+        "val": 220
+      },
+      {
+        "name": "Leo Express (Tschechien–Polen)",
+        "val": 200
+      },
+      {
+        "name": "RegioJet (Tschechien–Slovakei)",
+        "val": 160
+      },
+      {
+        "name": "Acela (USA, Amtrak)",
+        "val": 240
+      },
+      {
+        "name": "Amtrak Cascades Talgo (USA)",
+        "val": 200
+      },
+      {
+        "name": "VIA Rail Renaissance (Kanada)",
+        "val": 145
+      },
+      {
+        "name": "TCDD YHT (Türkei HSR)",
+        "val": 250
+      },
+      {
+        "name": "Saudi Arabia Haramain HSR",
+        "val": 300
+      },
+      {
+        "name": "THSR 700T (Taiwan)",
+        "val": 300
+      },
+      {
+        "name": "EMU700 Taiwan Tze-Chiang",
+        "val": 130
+      },
+      {
+        "name": "MRT Bangkok (Thailand)",
+        "val": 80
+      },
+      {
+        "name": "Vande Bharat Express (Indien)",
+        "val": 180
+      },
+      {
+        "name": "Rajdhani Express (Indien)",
+        "val": 130
+      },
+      {
+        "name": "Al Boraq ONCF (Marokko)",
+        "val": 320
+      },
+      {
+        "name": "Eurostar (HS1-Abschnitt, UK)",
+        "val": 300
+      },
+      {
+        "name": "LNER Azuma (UK)",
+        "val": 200
+      },
+      {
+        "name": "Pendolino Avanti (UK)",
+        "val": 200
+      },
+      {
+        "name": "Elizabeth Line (London, Metro)",
+        "val": 100
+      },
+      {
+        "name": "Talgo 350 (Spanien, Renfe)",
+        "val": 330
+      },
+      {
+        "name": "Bernina Express (Schweiz, Panorama)",
+        "val": 70
+      },
+      {
+        "name": "Trans-Sibirian Express (Russland)",
+        "val": 80
+      }
+    ]
+  },
+  "zug_jahr": {
+    "prompt": "Früher in Betrieb genommen?",
+    "unit": "Jahr der Ersöffnung",
+    "items": [
+      {
+        "name": "Stockton & Darlington Railway (England)",
+        "val": 1825
+      },
+      {
+        "name": "Liverpool & Manchester Railway (England)",
+        "val": 1830
+      },
+      {
+        "name": "Baltimore & Ohio Railroad (USA)",
+        "val": 1830
+      },
+      {
+        "name": "Paris–Saint-Germain (Frankreich)",
+        "val": 1837
+      },
+      {
+        "name": "Nürnberg–Fürth (Deutschland)",
+        "val": 1835
+      },
+      {
+        "name": "Semmeringbahn (Österreich)",
+        "val": 1854
+      },
+      {
+        "name": "Transsibirische Eisenbahn (Russland)",
+        "val": 1905
+      },
+      {
+        "name": "Darjeeling Himalayan Railway (Indien)",
+        "val": 1881
+      },
+      {
+        "name": "Bergenbahn (Norwegen)",
+        "val": 1909
+      },
+      {
+        "name": "Orient Express (Europa)",
+        "val": 1883
+      },
+      {
+        "name": "London Underground (erste U-Bahn der Welt)",
+        "val": 1863
+      },
+      {
+        "name": "Chicago L (USA)",
+        "val": 1892
+      },
+      {
+        "name": "Glasgow Subway (UK)",
+        "val": 1896
+      },
+      {
+        "name": "Budapest Metro (erste kontinentale U-Bahn)",
+        "val": 1896
+      },
+      {
+        "name": "Paris Métro (Frankreich)",
+        "val": 1900
+      },
+      {
+        "name": "Berlin U-Bahn (Deutschland)",
+        "val": 1902
+      },
+      {
+        "name": "New York City Subway (USA)",
+        "val": 1904
+      },
+      {
+        "name": "Buenos Aires Metro (erstes Lateinamerika)",
+        "val": 1913
+      },
+      {
+        "name": "Madrid Metro (Spanien)",
+        "val": 1919
+      },
+      {
+        "name": "Tokio Metro Ginza Line (Japan, erste Asien)",
+        "val": 1927
+      },
+      {
+        "name": "Moskauer Metro (UdSSR)",
+        "val": 1935
+      },
+      {
+        "name": "Stockholm Tunnelbana (Schweden)",
+        "val": 1950
+      },
+      {
+        "name": "Toronto Subway (Kanada)",
+        "val": 1954
+      },
+      {
+        "name": "Shinkansen Tokaido (Japan, erste HSR weltweit)",
+        "val": 1964
+      },
+      {
+        "name": "Shinkansen San'yo (Japan)",
+        "val": 1972
+      },
+      {
+        "name": "Shinkansen Tohoku (Japan)",
+        "val": 1982
+      },
+      {
+        "name": "TGV Paris–Lyon (Frankreich)",
+        "val": 1981
+      },
+      {
+        "name": "TGV Atlantique (Frankreich)",
+        "val": 1990
+      },
+      {
+        "name": "ICE 1 (Deutschland)",
+        "val": 1991
+      },
+      {
+        "name": "AVE Madrid–Sevilla (Spanien)",
+        "val": 1992
+      },
+      {
+        "name": "Eurostar (UK–Frankreich)",
+        "val": 1994
+      },
+      {
+        "name": "Thalys (Belgien–Frankreich)",
+        "val": 1996
+      },
+      {
+        "name": "ICE 3 (Deutschland–Niederlande)",
+        "val": 2000
+      },
+      {
+        "name": "KTX-I (Südkorea)",
+        "val": 2004
+      },
+      {
+        "name": "TGV Est (Paris–Straßburg)",
+        "val": 2007
+      },
+      {
+        "name": "Beijing–Tianjin Intercity (China, erste HSR China)",
+        "val": 2008
+      },
+      {
+        "name": "Velaro RUS Sapsan (Russland)",
+        "val": 2009
+      },
+      {
+        "name": "AVE Madrid–Barcelona (Spanien)",
+        "val": 2008
+      },
+      {
+        "name": "Shinkansen Kyushu (Japan)",
+        "val": 2011
+      },
+      {
+        "name": "Frecciarossa 1000 (Italien)",
+        "val": 2015
+      },
+      {
+        "name": "Al Boraq (Marokko, erste HSR Afrika)",
+        "val": 2018
+      },
+      {
+        "name": "Haramain HSR (Saudi-Arabien)",
+        "val": 2018
+      },
+      {
+        "name": "THSR (Taiwan)",
+        "val": 2007
+      },
+      {
+        "name": "Montréal Metro (Kanada)",
+        "val": 1966
+      },
+      {
+        "name": "BART San Francisco (USA)",
+        "val": 1972
+      },
+      {
+        "name": "Washington Metro (USA)",
+        "val": 1976
+      },
+      {
+        "name": "Mexico City Metro (Mexiko)",
+        "val": 1969
+      },
+      {
+        "name": "São Paulo Metro (Brasilien)",
+        "val": 1974
+      },
+      {
+        "name": "Cairo Metro (Ägypten, erste Afrika)",
+        "val": 1987
+      },
+      {
+        "name": "Bangkok BTS Skytrain (Thailand)",
+        "val": 1999
+      },
+      {
+        "name": "Delhi Metro (Indien)",
+        "val": 2002
+      },
+      {
+        "name": "Dubai Metro (VAE)",
+        "val": 2009
+      },
+      {
+        "name": "Shanghai Metro (China)",
+        "val": 1993
+      },
+      {
+        "name": "Beijing Subway (China)",
+        "val": 1969
+      },
+      {
+        "name": "Hong Kong MTR (China)",
+        "val": 1979
+      },
+      {
+        "name": "Singapore MRT",
+        "val": 1987
+      },
+      {
+        "name": "Taipei MRT (Taiwan)",
+        "val": 1996
+      },
+      {
+        "name": "Kuala Lumpur LRT (Malaysia)",
+        "val": 1996
+      },
+      {
+        "name": "Eurostar (HS1-Vollbetrieb, London)",
+        "val": 2007
+      },
+      {
+        "name": "ICE 4 (Deutschland)",
+        "val": 2017
+      },
+      {
+        "name": "Fuxing CR400 (China)",
+        "val": 2017
+      },
+      {
+        "name": "AGV Italo (Italien)",
+        "val": 2012
+      },
+      {
+        "name": "Ouigo (Frankreich, Billigzug)",
+        "val": 2013
+      },
+      {
+        "name": "Flixbus Train (Deutschland)",
+        "val": 2018
+      },
+      {
+        "name": "Acela (USA, erste Generation)",
+        "val": 2000
+      },
+      {
+        "name": "Rocky Mountaineer (Kanada)",
+        "val": 1990
+      },
+      {
+        "name": "Glacier Express (Schweiz)",
+        "val": 1930
+      },
+      {
+        "name": "Bernina Express (Schweiz)",
+        "val": 1910
+      },
+      {
+        "name": "Flåmbahn (Norwegen)",
+        "val": 1940
+      },
+      {
+        "name": "The Ghan (Australien, neu)",
+        "val": 2004
+      },
+      {
+        "name": "Indian Pacific (Australien)",
+        "val": 1970
+      },
+      {
+        "name": "California Zephyr (USA, neu)",
+        "val": 1983
+      },
+      {
+        "name": "Pendolino SM3 (Finnland)",
+        "val": 1997
+      },
+      {
+        "name": "X 2000 (Schweden)",
+        "val": 1990
+      },
+      {
+        "name": "TCDD YHT (Türkei)",
+        "val": 2009
+      },
+      {
+        "name": "Vande Bharat Express (Indien)",
+        "val": 2019
+      },
+      {
+        "name": "Shinkansen E5/H5 (Japan)",
+        "val": 2011
+      },
+      {
+        "name": "TGV Euroduplex (Frankreich)",
+        "val": 2012
+      },
+      {
+        "name": "KTX-Eum (Südkorea)",
+        "val": 2021
+      },
+      {
+        "name": "Nightjet Wien–Amsterdam (neue Generation)",
+        "val": 2020
+      }
+    ]
+  },
+  "zug_km": {
+    "prompt": "Längere Strecke?",
+    "unit": "km",
+    "items": [
+      {
+        "name": "Transsibirische Eisenbahn Moskau–Wladiwostok",
+        "val": 9289
+      },
+      {
+        "name": "Kanada-Pazifikbahn Montréal–Vancouver",
+        "val": 4654
+      },
+      {
+        "name": "The Canadian Toronto–Vancouver",
+        "val": 4466
+      },
+      {
+        "name": "Indian Pacific Sydney–Perth",
+        "val": 4352
+      },
+      {
+        "name": "California Zephyr Chicago–San Francisco",
+        "val": 3924
+      },
+      {
+        "name": "Coast Starlight Los Angeles–Seattle",
+        "val": 3496
+      },
+      {
+        "name": "Empire Builder Chicago–Seattle",
+        "val": 3549
+      },
+      {
+        "name": "The Ghan Adelaide–Darwin",
+        "val": 2979
+      },
+      {
+        "name": "Blue Train Kapstadt–Pretoria",
+        "val": 1600
+      },
+      {
+        "name": "Trans-Mongolian Moskau–Peking (via Mongolei)",
+        "val": 7865
+      },
+      {
+        "name": "Beijing–Lhasa Qinghai–Tibet Railway",
+        "val": 1956
+      },
+      {
+        "name": "Andean Explorer Cusco–Arequipa",
+        "val": 389
+      },
+      {
+        "name": "Rovos Rail Kapstadt–Daressalam",
+        "val": 4800
+      },
+      {
+        "name": "Madrid–Barcelona AVE",
+        "val": 621
+      },
+      {
+        "name": "Paris–Lyon TGV",
+        "val": 427
+      },
+      {
+        "name": "Paris–Marseille TGV",
+        "val": 777
+      },
+      {
+        "name": "London–Edinburgh East Coast Main Line",
+        "val": 632
+      },
+      {
+        "name": "Hamburg–München ICE",
+        "val": 775
+      },
+      {
+        "name": "Amsterdam–Wien Nightjet",
+        "val": 1245
+      },
+      {
+        "name": "Paris–Berlin (via Brüssel)",
+        "val": 1050
+      },
+      {
+        "name": "Zürich–Roma Pendolino",
+        "val": 839
+      },
+      {
+        "name": "Wien–Salzburg Railjet",
+        "val": 295
+      },
+      {
+        "name": "Stockholm–Göteborg SJ",
+        "val": 455
+      },
+      {
+        "name": "Helsinki–Tampere Pendolino",
+        "val": 187
+      },
+      {
+        "name": "Oslo–Bergen Bergenbahn",
+        "val": 371
+      },
+      {
+        "name": "Kopenhagen–Aarhus IC3",
+        "val": 315
+      },
+      {
+        "name": "Lisboa–Porto Alfa Pendular",
+        "val": 336
+      },
+      {
+        "name": "Brüssel–Amsterdam Thalys",
+        "val": 212
+      },
+      {
+        "name": "London–Paris Eurostar",
+        "val": 494
+      },
+      {
+        "name": "Frankfurt–Paris ICE/TGV",
+        "val": 563
+      },
+      {
+        "name": "Shinkansen Tokio–Shin-Osaka (Tokaido)",
+        "val": 515
+      },
+      {
+        "name": "Shinkansen Tokio–Hakata (Tokio–Kyushu)",
+        "val": 1174
+      },
+      {
+        "name": "Shinkansen Tokio–Sapporo (Hokkaido)",
+        "val": 860
+      },
+      {
+        "name": "Shinkansen Tokio–Shin-Aomori",
+        "val": 675
+      },
+      {
+        "name": "Beijing–Shanghai HSR",
+        "val": 1318
+      },
+      {
+        "name": "Beijing–Guangzhou HSR",
+        "val": 2298
+      },
+      {
+        "name": "Shanghai–Kunming HSR",
+        "val": 2252
+      },
+      {
+        "name": "Beijing–Harbin HSR",
+        "val": 1388
+      },
+      {
+        "name": "Flåmbahn Myrdal–Flåm (Norwegen)",
+        "val": 20
+      },
+      {
+        "name": "Rauma-Bahn (Norwegen, Dombås–Åndalsnes)",
+        "val": 114
+      },
+      {
+        "name": "Nordlandsbahn Oslo–Bodø",
+        "val": 729
+      },
+      {
+        "name": "Ofotbahn Narvik–Riksgränsen",
+        "val": 42
+      },
+      {
+        "name": "Glacier Express Zermatt–St. Moritz",
+        "val": 291
+      },
+      {
+        "name": "Bernina Express Chur–Tirano",
+        "val": 144
+      },
+      {
+        "name": "GoldenPass Montreux–Interlaken",
+        "val": 100
+      },
+      {
+        "name": "Gotthard Basistunnel (längster Tunnel)",
+        "val": 57
+      },
+      {
+        "name": "London Underground (gesamtes Netz)",
+        "val": 402
+      },
+      {
+        "name": "Shanghai Metro (gesamtes Netz)",
+        "val": 802
+      },
+      {
+        "name": "Peking Metro (gesamtes Netz)",
+        "val": 783
+      },
+      {
+        "name": "New York City Subway (gesamtes Netz)",
+        "val": 394
+      },
+      {
+        "name": "Moskauer Metro (gesamtes Netz)",
+        "val": 440
+      },
+      {
+        "name": "Tokio Metro + Toei (gesamtes Netz)",
+        "val": 313
+      },
+      {
+        "name": "Paris Métro (gesamtes Netz)",
+        "val": 225
+      },
+      {
+        "name": "Berlin BVG S+U (gesamtes Netz)",
+        "val": 473
+      },
+      {
+        "name": "Cairo–Luxor–Aswan (Ägypten)",
+        "val": 900
+      },
+      {
+        "name": "Zarengold Berlin–Ulan-Ude",
+        "val": 7100
+      },
+      {
+        "name": "Machu Picchu Train Cusco–Aguas Calientes",
+        "val": 112
+      },
+      {
+        "name": "Darjeeling Himalayan Railway",
+        "val": 88
+      },
+      {
+        "name": "Palace on Wheels (Rundkurs Rajasthan)",
+        "val": 1800
+      },
+      {
+        "name": "Deccan Odyssey (Rundkurs Maharashtra)",
+        "val": 2400
+      },
+      {
+        "name": "Seven Stars Kyushu (Rundkurs)",
+        "val": 1400
+      },
+      {
+        "name": "Al Boraq Casablanca–Tanger",
+        "val": 350
+      },
+      {
+        "name": "Haramain HSR Medina–Mekka",
+        "val": 453
+      },
+      {
+        "name": "THSR Taipei–Kaohsiung",
+        "val": 345
+      },
+      {
+        "name": "KTX Seoul–Busan",
+        "val": 423
+      },
+      {
+        "name": "AVE Madrid–Valencia",
+        "val": 391
+      },
+      {
+        "name": "Madrid–Sevilla AVE (erste HSR Spanien)",
+        "val": 471
+      },
+      {
+        "name": "Kandy–Ella Scenic Rail (Sri Lanka)",
+        "val": 174
+      },
+      {
+        "name": "West Highland Line Glasgow–Mallaig",
+        "val": 264
+      },
+      {
+        "name": "Jacobite Steam Train (Schottland)",
+        "val": 135
+      },
+      {
+        "name": "Tren Crucero Quito–Guayaquil",
+        "val": 456
+      },
+      {
+        "name": "Gokteik-Viadukt-Bahn (Myanmar)",
+        "val": 260
+      },
+      {
+        "name": "Overland Melbourne–Adelaide",
+        "val": 828
+      },
+      {
+        "name": "VIA Rail Ocean Montréal–Halifax",
+        "val": 1346
+      },
+      {
+        "name": "Caledonian Sleeper London–Inverness",
+        "val": 918
+      },
+      {
+        "name": "Nightjet Wien–Amsterdam",
+        "val": 1245
+      },
+      {
+        "name": "Lötschbergbahn Bern–Brig (Schweiz)",
+        "val": 74
+      },
+      {
+        "name": "Arlberg Express Wien–Bregenz",
+        "val": 629
+      },
+      {
+        "name": "EuroCity Praha–Brüssel",
+        "val": 1050
+      },
+      {
+        "name": "EuroCity Kraków–Zürich",
+        "val": 1200
+      }
+    ]
   }
 }

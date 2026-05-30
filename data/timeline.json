@@ -1622,5 +1622,411 @@
         "hint": "KI-Assistent fuer sicheres AI"
       }
     ]
+  },
+  "zug_hsb": {
+    "prompt": "Sortiere diese Bahn-Meilensteine chronologisch!",
+    "unit": "Jahr",
+    "items": [
+      {
+        "n": "Stockton–Darlington (erste dampfbetriebene Eisenbahn)",
+        "year": 1825,
+        "hint": "England — George Stephenson"
+      },
+      {
+        "n": "Baltimore & Ohio Railroad (erste USA)",
+        "year": 1830,
+        "hint": "USA — erste Personenbeförderung"
+      },
+      {
+        "n": "Nürnberg–Fürth (erste Deutschland)",
+        "year": 1835,
+        "hint": "Bayern — Adler-Lokomotive"
+      },
+      {
+        "n": "London Underground (erste U-Bahn der Welt)",
+        "year": 1863,
+        "hint": "Metropolitan Railway, Dampfbetrieb"
+      },
+      {
+        "n": "Orient Express erste Fahrt Paris–Istanbul",
+        "year": 1883,
+        "hint": "Compagnie Internationale des Wagons-Lits"
+      },
+      {
+        "n": "Transsibirische Eisenbahn (Baubeginn)",
+        "year": 1891,
+        "hint": "9.289 km, fertig 1916"
+      },
+      {
+        "n": "Budapest Metro (erste Kontinentaleuropa)",
+        "year": 1896,
+        "hint": "Millennium Underground — 3,7 km"
+      },
+      {
+        "n": "Paris Métro Eröffnung",
+        "year": 1900,
+        "hint": "Linie 1 — Exposition Universelle"
+      },
+      {
+        "n": "Berlin U-Bahn Eröffnung",
+        "year": 1902,
+        "hint": "Siemens & Halske — Stralauer Tor"
+      },
+      {
+        "n": "New York City Subway Eröffnung",
+        "year": 1904,
+        "hint": "IRT — erste 28 km"
+      },
+      {
+        "n": "Bernina Express erste Fahrt (Schweiz)",
+        "year": 1910,
+        "hint": "2253m Höhe — heute UNESCO"
+      },
+      {
+        "n": "Buenos Aires Metro (erste Latinamerika)",
+        "year": 1913,
+        "hint": "Subte Linie A — älteste Latam"
+      },
+      {
+        "n": "Glacier Express erste Durchfahrt",
+        "year": 1930,
+        "hint": "Zermatt–St. Moritz — 291 km"
+      },
+      {
+        "n": "Moskauer Metro Eröffnung",
+        "year": 1935,
+        "hint": "12 Stationen — Palast-Stationen"
+      },
+      {
+        "n": "Shinkansen Tokaido (erste HSR weltweit)",
+        "year": 1964,
+        "hint": "Tokio–Osaka — 210 km/h"
+      },
+      {
+        "n": "Mexico City Metro (erste Mexiko)",
+        "year": 1969,
+        "hint": "Linie 1 — 12 km"
+      },
+      {
+        "n": "Shinkansen San'yo (Osaka–Okayama)",
+        "year": 1972,
+        "hint": "250 km/h Betrieb"
+      },
+      {
+        "n": "BART San Francisco Eröffnung",
+        "year": 1972,
+        "hint": "Bay Area Rapid Transit — 43 km"
+      },
+      {
+        "n": "São Paulo Metro (erste Brasilien)",
+        "year": 1974,
+        "hint": "Linie 1 — 7 Stationen"
+      },
+      {
+        "n": "Washington Metro (USA)",
+        "year": 1976,
+        "hint": "District of Columbia — 178 km"
+      },
+      {
+        "n": "Hong Kong MTR Eröffnung",
+        "year": 1979,
+        "hint": "erste Hochgeschwindigkeits-Metro Asiens"
+      },
+      {
+        "n": "TGV Paris–Lyon (erste HSR Europa)",
+        "year": 1981,
+        "hint": "260 km/h → später 300"
+      },
+      {
+        "n": "Shinkansen Tohoku (Tokio–Morioka)",
+        "year": 1982,
+        "hint": "240 km/h"
+      },
+      {
+        "n": "California Zephyr (Amtrak neu)",
+        "year": 1983,
+        "hint": "Chicago–San Francisco — 3.924 km"
+      },
+      {
+        "n": "Cairo Metro (erste Afrika)",
+        "year": 1987,
+        "hint": "Linie 1 — erste U-Bahn Afrikas"
+      },
+      {
+        "n": "Singapore MRT Eröffnung",
+        "year": 1987,
+        "hint": "Mass Rapid Transit — 67 km initial"
+      },
+      {
+        "n": "ICE 1 erste Fahrt (Deutschland)",
+        "year": 1991,
+        "hint": "Hamburg–München — 280 km/h"
+      },
+      {
+        "n": "AVE Madrid–Sevilla (erste HSR Spanien)",
+        "year": 1992,
+        "hint": "270 km/h — Expo 1992"
+      },
+      {
+        "n": "Shanghai Metro (erste China Großstadt)",
+        "year": 1993,
+        "hint": "Linie 1 — heute 802 km"
+      },
+      {
+        "n": "Eurostar London–Paris Eröffnung",
+        "year": 1994,
+        "hint": "Ärmelkanaltunnel — 494 km"
+      },
+      {
+        "n": "Thalys Paris–Brüssel–Amsterdam",
+        "year": 1996,
+        "hint": "300 km/h — PBKA"
+      },
+      {
+        "n": "Taipei MRT Eröffnung",
+        "year": 1996,
+        "hint": "erste vollautomatische Metro Asiens"
+      },
+      {
+        "n": "Delhi Metro Eröffnung",
+        "year": 2002,
+        "hint": "erste Phase Delhi — 8,4 km"
+      },
+      {
+        "n": "KTX-I erste Fahrt (Südkorea)",
+        "year": 2004,
+        "hint": "Seoul–Busan — 300 km/h"
+      },
+      {
+        "n": "The Ghan Adelaide–Darwin (neue Strecke)",
+        "year": 2004,
+        "hint": "2.979 km — Vollendung"
+      },
+      {
+        "n": "TGV Est Paris–Straßburg",
+        "year": 2007,
+        "hint": "320 km/h Betriebsgeschwindigkeit"
+      },
+      {
+        "n": "THSR Taipei–Kaohsiung (Taiwan HSR)",
+        "year": 2007,
+        "hint": "300 km/h — Shinkansen-Technologie"
+      },
+      {
+        "n": "Beijing–Shanghai HSR Eröffnung (erster China-HSR-Zug)",
+        "year": 2008,
+        "hint": "350 km/h — 1.318 km"
+      },
+      {
+        "n": "AVE Madrid–Barcelona",
+        "year": 2008,
+        "hint": "Spanien — 600 km in 2:30h"
+      },
+      {
+        "n": "Velaro RUS Sapsan (Russland)",
+        "year": 2009,
+        "hint": "Moskau–St. Petersburg — 250 km/h"
+      },
+      {
+        "n": "Dubai Metro Eröffnung",
+        "year": 2009,
+        "hint": "erste führerlose Metro Naher Osten"
+      },
+      {
+        "n": "TCDD YHT (Türkei HSR Ankara–Eskişehir)",
+        "year": 2009,
+        "hint": "250 km/h"
+      },
+      {
+        "n": "Shinkansen Kyushu Hakata–Kagoshima",
+        "year": 2011,
+        "hint": "260 km/h"
+      },
+      {
+        "n": "Shinkansen E5/H5 Debüt (Hayabusa)",
+        "year": 2011,
+        "hint": "320 km/h — Tokio–Shin-Aomori"
+      },
+      {
+        "n": "AGV Italo erste Fahrt (Italien)",
+        "year": 2012,
+        "hint": "NTV — 300 km/h, Privatbahn"
+      },
+      {
+        "n": "TGV Euroduplex Einführung",
+        "year": 2012,
+        "hint": "320 km/h — 2-stöckig"
+      },
+      {
+        "n": "Ouigo Frankreich (Low-Cost TGV)",
+        "year": 2013,
+        "hint": "SNCF Tochter — 300 km/h"
+      },
+      {
+        "n": "Frecciarossa 1000 (schnellster Zug Europas)",
+        "year": 2015,
+        "hint": "400 km/h Rekord — 300 km/h Betrieb"
+      },
+      {
+        "n": "Haramain HSR Medina–Mekka",
+        "year": 2018,
+        "hint": "Saudi-Arabien — 300 km/h"
+      },
+      {
+        "n": "Al Boraq Casablanca–Tanger (erste HSR Afrika)",
+        "year": 2018,
+        "hint": "Marokko ONCF — 320 km/h"
+      },
+      {
+        "n": "FlixTrain Deutschlandstart",
+        "year": 2018,
+        "hint": "erstes privates Fernzugnetz Deutschland"
+      },
+      {
+        "n": "Vande Bharat Express (Indien)",
+        "year": 2019,
+        "hint": "Make in India — 180 km/h"
+      },
+      {
+        "n": "Shinkansen Hokkaido (Sapporo)",
+        "year": 2030,
+        "hint": "geplant — Tokio–Sapporo 4:30h"
+      },
+      {
+        "n": "Elizabeth Line London (Crossrail)",
+        "year": 2022,
+        "hint": "118 km — 24 Stationen"
+      },
+      {
+        "n": "KTX-Eum (Südkorea, eigene Technologie)",
+        "year": 2021,
+        "hint": "260 km/h — heimische Entwicklung"
+      },
+      {
+        "n": "CR450 Fuxing (China, geplant)",
+        "year": 2025,
+        "hint": "400 km/h Betrieb — in Entwicklung"
+      },
+      {
+        "n": "Stockholm Tunnelbana Eröffnung",
+        "year": 1950,
+        "hint": "Schweden — Umwandlung der Ringbahn"
+      },
+      {
+        "n": "Toronto Subway Line 1",
+        "year": 1954,
+        "hint": "Kanada — erste U-Bahn Kanadas"
+      },
+      {
+        "n": "Montréal Metro (Gummireifen)",
+        "year": 1966,
+        "hint": "Kanada — Expo 67 Erweiterung"
+      },
+      {
+        "n": "München U-Bahn (vor Olympia)",
+        "year": 1971,
+        "hint": "Deutschland — Olympische Spiele 1972"
+      },
+      {
+        "n": "Peking Metro erste Linie",
+        "year": 1969,
+        "hint": "China — heute 783 km Netz"
+      },
+      {
+        "n": "Tokio Metro Ginza Line (erste Asien)",
+        "year": 1927,
+        "hint": "Japan — Asakusa–Ueno"
+      },
+      {
+        "n": "Madrid Metro Eröffnung",
+        "year": 1919,
+        "hint": "Spanien — Sol–Cuatro Caminos"
+      },
+      {
+        "n": "Glasgow Subway Eröffnung",
+        "year": 1896,
+        "hint": "UK — Seilbahn, dann Strom"
+      },
+      {
+        "n": "Budapest Millennium Underground",
+        "year": 1896,
+        "hint": "erste kontinental-europ. Metro"
+      },
+      {
+        "n": "Bangkok BTS Skytrain",
+        "year": 1999,
+        "hint": "Thailand — erste vollklimatisierte Sky-Rail"
+      },
+      {
+        "n": "Copenhagen Metro (driverless)",
+        "year": 2002,
+        "hint": "Dänemark — führerlos"
+      },
+      {
+        "n": "Riyadh Metro Eröffnung",
+        "year": 2021,
+        "hint": "Saudi-Arabien — größte neue Metro"
+      },
+      {
+        "n": "Athens Metro (Modernisierung)",
+        "year": 2000,
+        "hint": "Griechenland — Olympia-Vorbereitung"
+      },
+      {
+        "n": "Mailand Metro Linie 1",
+        "year": 1964,
+        "hint": "Italien — Zara–Sesto Marelli"
+      },
+      {
+        "n": "Barcelona Metro Eröffnung",
+        "year": 1924,
+        "hint": "Spanien — Gran Vía"
+      },
+      {
+        "n": "Wien U-Bahn Linie U1 Eröffnung",
+        "year": 1978,
+        "hint": "Österreich — Reumannplatz–Karlsplatz"
+      },
+      {
+        "n": "Chicago 'L' Hochbahn Eröffnung",
+        "year": 1892,
+        "hint": "USA — erstes Hochbahnsystem"
+      },
+      {
+        "n": "Oslo T-bane Eröffnung",
+        "year": 1966,
+        "hint": "Norwegen — Untergrundnetz"
+      },
+      {
+        "n": "Warschau Metro Linie 1",
+        "year": 1995,
+        "hint": "Polen — 22 Stationen"
+      },
+      {
+        "n": "Prag Metro Eröffnung",
+        "year": 1974,
+        "hint": "Tschechien — sowjetische Bauweise"
+      },
+      {
+        "n": "Brüssel Metro (erste Linie)",
+        "year": 1976,
+        "hint": "Belgien — Linie 1A/1B"
+      },
+      {
+        "n": "Amsterdam Metro Linie 50",
+        "year": 1977,
+        "hint": "Niederlande — Bijlmermeer"
+      },
+      {
+        "n": "Krakau Straßenbahn-Tunnellinie",
+        "year": 1997,
+        "hint": "Polen — unterirdische Tram"
+      },
+      {
+        "n": "EuroCity Praha–Zürich erste planmäßige Fahrt",
+        "year": 1993,
+        "hint": "Tschechien–Schweiz via Deutschland"
+      }
+    ]
   }
 }

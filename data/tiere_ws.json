@@ -1456,5 +1456,385 @@
         "NEIFS"
       ]
     }
+  },
+  "zug_intercity": {
+    "word": "INTERCITY",
+    "validWords": {
+      "de": [
+        "INTER",
+        "CITY",
+        "RICE",
+        "CITE",
+        "TIRE",
+        "NICE",
+        "RITE",
+        "REIN",
+        "TIER",
+        "NEIN",
+        "CENT",
+        "RICY"
+      ],
+      "en": [
+        "INTER",
+        "CITY",
+        "RICE",
+        "CITE",
+        "TIRE",
+        "NICE",
+        "RITE",
+        "REIN",
+        "CENT",
+        "TERN",
+        "TINY",
+        "INCI"
+      ]
+    }
+  },
+  "zug_shinkansen": {
+    "word": "SHINKANSEN",
+    "validWords": {
+      "de": [
+        "SINN",
+        "KAHN",
+        "NASE",
+        "HANS",
+        "SHIN",
+        "HASEN",
+        "INNEN",
+        "SENK",
+        "KANIS"
+      ],
+      "en": [
+        "SHIN",
+        "SKIN",
+        "SINK",
+        "KHAN",
+        "SHAKE",
+        "SNAKE",
+        "INANE",
+        "ANNEX",
+        "SENK"
+      ]
+    }
+  },
+  "zug_frecciarossa": {
+    "word": "FRECCIAROSSA",
+    "validWords": {
+      "de": [
+        "ROSS",
+        "ROSE",
+        "CERO",
+        "RASSE",
+        "SARC",
+        "CARE",
+        "RACE",
+        "ARCO",
+        "ORCA",
+        "OSCAR"
+      ],
+      "en": [
+        "FORCE",
+        "RACE",
+        "ROSE",
+        "CARE",
+        "CROSS",
+        "SCORE",
+        "FARCE",
+        "ARCO",
+        "SCAR",
+        "ROOF"
+      ]
+    }
+  },
+  "zug_pendolino": {
+    "word": "PENDOLINO",
+    "validWords": {
+      "de": [
+        "DINO",
+        "LINO",
+        "PEIN",
+        "NOEL",
+        "LIED",
+        "OPEN",
+        "PEON",
+        "ODIN",
+        "LINDEN",
+        "ONDE"
+      ],
+      "en": [
+        "DINO",
+        "PILED",
+        "NODE",
+        "ONLINE",
+        "LINED",
+        "OPINE",
+        "ELOPED",
+        "DONE",
+        "PEON",
+        "LOIN"
+      ]
+    }
+  },
+  "zug_railjet": {
+    "word": "RAILJET",
+    "validWords": {
+      "de": [
+        "RAIL",
+        "LITER",
+        "REIT",
+        "JATI",
+        "TIER",
+        "EILE",
+        "REIL"
+      ],
+      "en": [
+        "RAIL",
+        "TRAIL",
+        "JAIL",
+        "JILT",
+        "LITE",
+        "LITER",
+        "TILE",
+        "LAIR",
+        "TAIL",
+        "RATE"
+      ]
+    }
+  },
+  "zug_eurostar": {
+    "word": "EUROSTAR",
+    "validWords": {
+      "de": [
+        "EURO",
+        "STAR",
+        "TOUR",
+        "RAUS",
+        "ROTE",
+        "OSTE",
+        "RAST"
+      ],
+      "en": [
+        "EURO",
+        "STAR",
+        "TOUR",
+        "ROAST",
+        "STORE",
+        "ROUSE",
+        "OATER",
+        "OUTER",
+        "ROUTE",
+        "UREA"
+      ]
+    }
+  },
+  "zug_thalys": {
+    "word": "THALYS",
+    "validWords": {
+      "de": [
+        "HALT",
+        "SLAY",
+        "LAST",
+        "SALT",
+        "LATH"
+      ],
+      "en": [
+        "HALT",
+        "LASH",
+        "SLAY",
+        "LAST",
+        "SALT",
+        "STAY",
+        "LATH",
+        "HATS",
+        "HYLAS",
+        "YALT"
+      ]
+    }
+  },
+  "zug_velaro": {
+    "word": "VELARO",
+    "validWords": {
+      "de": [
+        "AVEL",
+        "LORE",
+        "ORAL",
+        "VALE",
+        "ALER",
+        "ROVE"
+      ],
+      "en": [
+        "VALE",
+        "ORAL",
+        "LOVE",
+        "ROVE",
+        "OVER",
+        "VEAL",
+        "LAVE",
+        "LORE",
+        "VALOR",
+        "AVORE"
+      ]
+    }
+  },
+  "zug_bernina": {
+    "word": "BERNINA",
+    "validWords": {
+      "de": [
+        "BEIN",
+        "REIN",
+        "NAIB",
+        "RANI",
+        "BEER",
+        "BIER",
+        "IRAN"
+      ],
+      "en": [
+        "BRINE",
+        "BRAIN",
+        "REIN",
+        "BEAR",
+        "RAIN",
+        "RANI",
+        "INNER",
+        "BRAN",
+        "BARE",
+        "BEAN"
+      ]
+    }
+  },
+  "zug_trenitalia": {
+    "word": "TRENITALIA",
+    "validWords": {
+      "de": [
+        "TRAIL",
+        "TRAIN",
+        "LITER",
+        "REIN",
+        "TIER",
+        "LITE",
+        "NITER",
+        "REITAL",
+        "TRIAL",
+        "NARITA"
+      ],
+      "en": [
+        "TRAIL",
+        "TRAIN",
+        "TRIAL",
+        "LITER",
+        "LINER",
+        "ALIEN",
+        "INERT",
+        "RENAL",
+        "TITER",
+        "LITRE"
+      ]
+    }
+  },
+  "zug_itineraire": {
+    "word": "ITINERAIRE",
+    "validWords": {
+      "de": [
+        "REIN",
+        "TIER",
+        "IRAN",
+        "ITER",
+        "NEIN",
+        "IRENE"
+      ],
+      "en": [
+        "TRAIN",
+        "REIN",
+        "REIN",
+        "RAIN",
+        "INTER",
+        "INERT",
+        "AIRLINE",
+        "ENTIRE",
+        "RETINA",
+        "IRENE"
+      ]
+    }
+  },
+  "zug_talgo": {
+    "word": "TALGO",
+    "validWords": {
+      "de": [
+        "GALT",
+        "TALO",
+        "LOTA"
+      ],
+      "en": [
+        "GLOAT",
+        "ALTO",
+        "GOAL",
+        "TALO",
+        "LOGO",
+        "GALE",
+        "OGLE",
+        "TOTAL",
+        "GALT"
+      ]
+    }
+  },
+  "zug_maglev": {
+    "word": "MAGLEV",
+    "validWords": {
+      "de": [
+        "GALE",
+        "MALE",
+        "LAME",
+        "MEGA"
+      ],
+      "en": [
+        "GAVEL",
+        "VALE",
+        "MALE",
+        "LAME",
+        "MEGA",
+        "LAVE",
+        "VEAL",
+        "GAME",
+        "GAVE",
+        "GLAM"
+      ]
+    }
+  },
+  "zug_flixzug": {
+    "word": "FLIXZUG",
+    "validWords": {
+      "de": [
+        "LUGE",
+        "GLUF",
+        "FLIP",
+        "GILF"
+      ],
+      "en": [
+        "GLUG",
+        "FLUX",
+        "GILF",
+        "GLIB"
+      ]
+    }
+  },
+  "zug_acela": {
+    "word": "ACELA",
+    "validWords": {
+      "de": [
+        "CALE",
+        "LACE",
+        "KALE"
+      ],
+      "en": [
+        "LACE",
+        "CALE",
+        "ALCE",
+        "ACNE",
+        "ALEC",
+        "CELA",
+        "LACE",
+        "ACEA"
+      ]
+    }
   }
 }

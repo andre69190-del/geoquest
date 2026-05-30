@@ -26716,5 +26716,611 @@
       "n": "Breitengrad von Moskau",
       "c": "~55,8° N"
     }
+  ],
+  "zug_panorama": [
+    {
+      "n": "Glacier Express (Zermatt–St. Moritz)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Bernina Express (Chur–Tirano)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "GoldenPass Express (Montreux–Interlaken)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Gotthard Panorama Express",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Voralpen-Express (St. Gallen–Luzern)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Lötschberger (Bern–Brig)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Rigi-Bahn (älteste Bergbahn Europas, 1871)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Furka-Dampfbahn (Dampfzug Alpen)",
+      "c": "Schweiz"
+    },
+    {
+      "n": "Flåmbahn (Myrdal–Flåm)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Bergenbahn (Bergen–Oslo)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Rauma-Bahn (Dombås–Åndalsnes)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Ofotbahn (Narvik–Riksgränsen)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Nordlandsbahn (Oslo–Bodø)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Jacobite Steam Train (Hogwarts-Express-Strecke)",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "West Highland Line (Glasgow–Mallaig)",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Caledonian Sleeper (London–Inverness)",
+      "c": "Vereinigtes Königreich"
+    },
+    {
+      "n": "Semmeringbahn (älteste Gebirgsbahn, UNESCO)",
+      "c": "Österreich"
+    },
+    {
+      "n": "Mariazellerbahn (St. Pölten–Mariazell)",
+      "c": "Österreich"
+    },
+    {
+      "n": "Arlberg Express (Wien–Bregenz)",
+      "c": "Österreich"
+    },
+    {
+      "n": "Darjeeling Himalayan Railway (Toy Train, UNESCO)",
+      "c": "Indien"
+    },
+    {
+      "n": "Palace on Wheels (Rajasthan-Luxuszug)",
+      "c": "Indien"
+    },
+    {
+      "n": "Deccan Odyssey (Mumbai–Goa–Maharashtra)",
+      "c": "Indien"
+    },
+    {
+      "n": "Nilgiri Mountain Railway (UNESCO)",
+      "c": "Indien"
+    },
+    {
+      "n": "The Ghan (Adelaide–Darwin, 2979 km)",
+      "c": "Australien"
+    },
+    {
+      "n": "Indian Pacific (Sydney–Perth, 4352 km)",
+      "c": "Australien"
+    },
+    {
+      "n": "The Overland (Melbourne–Adelaide)",
+      "c": "Australien"
+    },
+    {
+      "n": "Rocky Mountaineer (Vancouver–Banff)",
+      "c": "Kanada"
+    },
+    {
+      "n": "The Canadian (Toronto–Vancouver, 4466 km)",
+      "c": "Kanada"
+    },
+    {
+      "n": "VIA Rail Ocean (Montréal–Halifax)",
+      "c": "Kanada"
+    },
+    {
+      "n": "California Zephyr (Chicago–San Francisco)",
+      "c": "USA"
+    },
+    {
+      "n": "Coast Starlight (Los Angeles–Seattle)",
+      "c": "USA"
+    },
+    {
+      "n": "Empire Builder (Chicago–Seattle)",
+      "c": "USA"
+    },
+    {
+      "n": "Auto Train (Washington D.C.–Orlando)",
+      "c": "USA"
+    },
+    {
+      "n": "Andean Explorer (Cusco–Puno–Arequipa)",
+      "c": "Peru"
+    },
+    {
+      "n": "Machu Picchu Train (Cusco–Aguas Calientes)",
+      "c": "Peru"
+    },
+    {
+      "n": "Blue Train (Kapstadt–Pretoria)",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Rovos Rail (Pride of Africa, Kapstadt–Daressalam)",
+      "c": "Südafrika"
+    },
+    {
+      "n": "Shinkansen Nozomi (Tokio–Osaka, 270 km/h)",
+      "c": "Japan"
+    },
+    {
+      "n": "Twilight Express Mizukaze (Osaka–Sapporo)",
+      "c": "Japan"
+    },
+    {
+      "n": "Seven Stars in Kyushu (Luxus-Rundreisezug)",
+      "c": "Japan"
+    },
+    {
+      "n": "Gokteik-Viadukt-Bahn (höchste Brücke Myanmars)",
+      "c": "Myanmar"
+    },
+    {
+      "n": "Tren Turístico de la Sabana (Bogotá–Zipaquirá)",
+      "c": "Kolumbien"
+    },
+    {
+      "n": "Tren Crucero (Quito–Guayaquil, Andenmassiv)",
+      "c": "Ecuador"
+    },
+    {
+      "n": "Transsibirische Eisenbahn (Moskau–Wladiwostok)",
+      "c": "Russland"
+    },
+    {
+      "n": "Zarengold (Berlin–Moskau–Ulan-Ude, Nostalgiezug)",
+      "c": "Russland"
+    },
+    {
+      "n": "Kandy–Ella Bergzug (berühmteste Bahnstrecke Asiens)",
+      "c": "Sri Lanka"
+    },
+    {
+      "n": "DSB IC3 (Kopenhagen–Aarhus, Dieseltriebwagen)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Casablanca–Tanger (Al Boraq, schnellster Zug Afrikas)",
+      "c": "Marokko"
+    }
+  ],
+  "zug_vkm": [
+    {
+      "n": "D-DB",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-FLX",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-ODEG",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-HLB",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-VIAS",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-NEB",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-BEG",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-MRB",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-ALEX",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-NOBIL",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-ERX",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-ENNO",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-TLX",
+      "c": "Deutschland"
+    },
+    {
+      "n": "D-RRX",
+      "c": "Deutschland"
+    },
+    {
+      "n": "A-OBB",
+      "c": "Österreich"
+    },
+    {
+      "n": "A-WB",
+      "c": "Österreich"
+    },
+    {
+      "n": "A-GYSEV",
+      "c": "Österreich"
+    },
+    {
+      "n": "A-STB",
+      "c": "Österreich"
+    },
+    {
+      "n": "A-WLB",
+      "c": "Österreich"
+    },
+    {
+      "n": "A-VBG",
+      "c": "Österreich"
+    },
+    {
+      "n": "CH-SBB",
+      "c": "Schweiz"
+    },
+    {
+      "n": "CH-BLS",
+      "c": "Schweiz"
+    },
+    {
+      "n": "CH-AB",
+      "c": "Schweiz"
+    },
+    {
+      "n": "CH-MGB",
+      "c": "Schweiz"
+    },
+    {
+      "n": "CH-SOB",
+      "c": "Schweiz"
+    },
+    {
+      "n": "F-SNCF",
+      "c": "Frankreich"
+    },
+    {
+      "n": "F-OUI",
+      "c": "Frankreich"
+    },
+    {
+      "n": "F-TRENITALIA",
+      "c": "Frankreich"
+    },
+    {
+      "n": "F-THELLO",
+      "c": "Frankreich"
+    },
+    {
+      "n": "I-FS",
+      "c": "Italien"
+    },
+    {
+      "n": "I-NTV",
+      "c": "Italien"
+    },
+    {
+      "n": "I-TPER",
+      "c": "Italien"
+    },
+    {
+      "n": "I-TRENORD",
+      "c": "Italien"
+    },
+    {
+      "n": "NL-NS",
+      "c": "Niederlande"
+    },
+    {
+      "n": "NL-ARRIVA",
+      "c": "Niederlande"
+    },
+    {
+      "n": "NL-CONNEXXION",
+      "c": "Niederlande"
+    },
+    {
+      "n": "B-SNCB",
+      "c": "Belgien"
+    },
+    {
+      "n": "B-THALYS",
+      "c": "Belgien"
+    },
+    {
+      "n": "B-EUROSTAR",
+      "c": "Belgien"
+    },
+    {
+      "n": "E-RENFE",
+      "c": "Spanien"
+    },
+    {
+      "n": "E-OUIGO",
+      "c": "Spanien"
+    },
+    {
+      "n": "E-FGC",
+      "c": "Spanien"
+    },
+    {
+      "n": "PL-PKP",
+      "c": "Polen"
+    },
+    {
+      "n": "PL-POLREGIO",
+      "c": "Polen"
+    },
+    {
+      "n": "PL-KD",
+      "c": "Polen"
+    },
+    {
+      "n": "S-SJ",
+      "c": "Schweden"
+    },
+    {
+      "n": "S-MTR",
+      "c": "Schweden"
+    },
+    {
+      "n": "S-SNALLTAGET",
+      "c": "Schweden"
+    },
+    {
+      "n": "CZ-CD",
+      "c": "Tschechien"
+    },
+    {
+      "n": "CZ-REGIOJET",
+      "c": "Tschechien"
+    },
+    {
+      "n": "H-MAV",
+      "c": "Ungarn"
+    },
+    {
+      "n": "H-MAVSTART",
+      "c": "Ungarn"
+    }
+  ],
+  "ds100": [
+    {
+      "q": "Frankfurt (Main) Hbf",
+      "a": "FF"
+    },
+    {
+      "q": "München Hbf",
+      "a": "MH"
+    },
+    {
+      "q": "Hamburg Hbf",
+      "a": "AH"
+    },
+    {
+      "q": "Berlin Hbf",
+      "a": "BLB"
+    },
+    {
+      "q": "Köln Hbf",
+      "a": "KK"
+    },
+    {
+      "q": "Stuttgart Hbf",
+      "a": "TS"
+    },
+    {
+      "q": "Düsseldorf Hbf",
+      "a": "KD"
+    },
+    {
+      "q": "Hannover Hbf",
+      "a": "HH"
+    },
+    {
+      "q": "Leipzig Hbf",
+      "a": "LE"
+    },
+    {
+      "q": "Nürnberg Hbf",
+      "a": "NN"
+    },
+    {
+      "q": "Dortmund Hbf",
+      "a": "EDO"
+    },
+    {
+      "q": "Dresden Hbf",
+      "a": "DD"
+    },
+    {
+      "q": "Mannheim Hbf",
+      "a": "RM"
+    },
+    {
+      "q": "Karlsruhe Hbf",
+      "a": "RK"
+    },
+    {
+      "q": "Bremen Hbf",
+      "a": "HB"
+    },
+    {
+      "q": "Augsburg Hbf",
+      "a": "MA"
+    },
+    {
+      "q": "Essen Hbf",
+      "a": "EE"
+    },
+    {
+      "q": "Freiburg (Breisgau) Hbf",
+      "a": "RFB"
+    },
+    {
+      "q": "Erfurt Hbf",
+      "a": "EF"
+    },
+    {
+      "q": "Mainz Hbf",
+      "a": "RMZ"
+    },
+    {
+      "q": "Rostock Hbf",
+      "a": "NRS"
+    },
+    {
+      "q": "Kiel Hbf",
+      "a": "AKI"
+    },
+    {
+      "q": "Saarbrücken Hbf",
+      "a": "RSB"
+    },
+    {
+      "q": "Wiesbaden Hbf",
+      "a": "RWI"
+    },
+    {
+      "q": "Kassel Hbf",
+      "a": "KS"
+    },
+    {
+      "q": "Bielefeld Hbf",
+      "a": "EBD"
+    },
+    {
+      "q": "Magdeburg Hbf",
+      "a": "MD"
+    },
+    {
+      "q": "Bochum Hbf",
+      "a": "EBO"
+    },
+    {
+      "q": "Halle (Saale) Hbf",
+      "a": "MLH"
+    },
+    {
+      "q": "Lübeck Hbf",
+      "a": "AL"
+    },
+    {
+      "q": "Wien Hbf",
+      "a": "WHF"
+    },
+    {
+      "q": "Wien Westbahnhof",
+      "a": "WW"
+    },
+    {
+      "q": "Salzburg Hbf",
+      "a": "SZ"
+    },
+    {
+      "q": "Graz Hbf",
+      "a": "GZ"
+    },
+    {
+      "q": "Innsbruck Hbf",
+      "a": "INN"
+    },
+    {
+      "q": "Zürich HB",
+      "a": "ZUE"
+    },
+    {
+      "q": "Bern",
+      "a": "BN"
+    },
+    {
+      "q": "Basel SBB",
+      "a": "BAS"
+    },
+    {
+      "q": "Genf",
+      "a": "GE"
+    },
+    {
+      "q": "Lausanne",
+      "a": "LS"
+    },
+    {
+      "q": "Paris Gare de Lyon",
+      "a": "PFGL"
+    },
+    {
+      "q": "Amsterdam Centraal",
+      "a": "NASC"
+    },
+    {
+      "q": "Brüssel Midi/Zuid",
+      "a": "BBMU"
+    },
+    {
+      "q": "Wien Meidling",
+      "a": "WMEID"
+    },
+    {
+      "q": "Dortmund Signal Iduna Park",
+      "a": "EDSI"
+    },
+    {
+      "q": "Hannover Messe/Laatzen",
+      "a": "HHLM"
+    },
+    {
+      "q": "München Ost",
+      "a": "MHO"
+    },
+    {
+      "q": "Berlin Ostbahnhof",
+      "a": "BLO"
+    },
+    {
+      "q": "Köln Messe/Deutz",
+      "a": "KKMD"
+    },
+    {
+      "q": "Hamburg-Altona",
+      "a": "AHAT"
+    }
   ]
 }
