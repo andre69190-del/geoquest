@@ -4116,124 +4116,124 @@
         "val": 148
       },
       {
-        "n": "Shire (England) Stockmass cm",
-        "val": 173
+        "val": 173,
+        "name": "Shire (England) Stockmass cm"
       },
       {
-        "n": "Clydesdale (Schottland)",
-        "val": 165
+        "val": 165,
+        "name": "Clydesdale (Schottland)"
       },
       {
-        "n": "Percheron (Frankreich)",
-        "val": 170
+        "val": 170,
+        "name": "Percheron (Frankreich)"
       },
       {
-        "n": "Noriker (Oesterreich)",
-        "val": 163
+        "val": 163,
+        "name": "Noriker (Oesterreich)"
       },
       {
-        "n": "Haflinger (Tirol)",
-        "val": 145
+        "val": 145,
+        "name": "Haflinger (Tirol)"
       },
       {
-        "n": "Fjordpferd (Norwegen)",
-        "val": 145
+        "val": 145,
+        "name": "Fjordpferd (Norwegen)"
       },
       {
-        "n": "Shetlandpony (Schottland)",
-        "val": 105
+        "val": 105,
+        "name": "Shetlandpony (Schottland)"
       },
       {
-        "n": "Falabella (Argentinien)",
-        "val": 75
+        "val": 75,
+        "name": "Falabella (Argentinien)"
       },
       {
-        "n": "Miniaturpferd American",
-        "val": 85
+        "val": 85,
+        "name": "Miniaturpferd American"
       },
       {
-        "n": "Dartmoor Pony (England)",
-        "val": 122
+        "val": 122,
+        "name": "Dartmoor Pony (England)"
       },
       {
-        "n": "New Forest Pony (England)",
-        "val": 143
+        "val": 143,
+        "name": "New Forest Pony (England)"
       },
       {
-        "n": "Welsh Mountain Pony",
-        "val": 121
+        "val": 121,
+        "name": "Welsh Mountain Pony"
       },
       {
-        "n": "Welsh Section D Cob",
-        "val": 150
+        "val": 150,
+        "name": "Welsh Section D Cob"
       },
       {
-        "n": "Connemara Pony (Irland)",
-        "val": 148
+        "val": 148,
+        "name": "Connemara Pony (Irland)"
       },
       {
-        "n": "Highland Pony (Schottland)",
-        "val": 150
+        "val": 150,
+        "name": "Highland Pony (Schottland)"
       },
       {
-        "n": "Exmoor Pony (England)",
-        "val": 125
+        "val": 125,
+        "name": "Exmoor Pony (England)"
       },
       {
-        "n": "Icelandic Horse (Island)",
-        "val": 140
+        "val": 140,
+        "name": "Icelandic Horse (Island)"
       },
       {
-        "n": "Konik (Polen)",
-        "val": 135
+        "val": 135,
+        "name": "Konik (Polen)"
       },
       {
-        "n": "Huzule (Polen/Ukraine)",
-        "val": 140
+        "val": 140,
+        "name": "Huzule (Polen/Ukraine)"
       },
       {
-        "n": "Caspian Horse (Iran)",
-        "val": 120
+        "val": 120,
+        "name": "Caspian Horse (Iran)"
       },
       {
-        "n": "Kathiawari (Indien)",
-        "val": 150
+        "val": 150,
+        "name": "Kathiawari (Indien)"
       },
       {
-        "n": "Marwari (Indien)",
-        "val": 155
+        "val": 155,
+        "name": "Marwari (Indien)"
       },
       {
-        "n": "Thoroughbred (England)",
-        "val": 163
+        "val": 163,
+        "name": "Thoroughbred (England)"
       },
       {
-        "n": "Arabian (Arabien)",
-        "val": 153
+        "val": 153,
+        "name": "Arabian (Arabien)"
       },
       {
-        "n": "Akhal-Teke (Turkmenistan)",
-        "val": 158
+        "val": 158,
+        "name": "Akhal-Teke (Turkmenistan)"
       },
       {
-        "n": "Lusitano (Portugal)",
-        "val": 160
+        "val": 160,
+        "name": "Lusitano (Portugal)"
       },
       {
-        "n": "Andalusier (Spanien)",
-        "val": 162
+        "val": 162,
+        "name": "Andalusier (Spanien)"
       },
       {
-        "n": "Lipizzaner (Oesterreich)",
-        "val": 158
+        "val": 158,
+        "name": "Lipizzaner (Oesterreich)"
       },
       {
-        "n": "Freiberger (Schweiz)",
-        "val": 158
+        "val": 158,
+        "name": "Freiberger (Schweiz)"
       },
       {
-        "n": "Oldenburger (Deutschland)",
-        "val": 170
+        "val": 170,
+        "name": "Oldenburger (Deutschland)"
       }
     ]
   },
@@ -4443,124 +4443,124 @@
         "val": 64.0
       },
       {
-        "n": "Quarter Horse Sprint km/h",
-        "val": 88
+        "val": 88,
+        "name": "Quarter Horse Sprint km/h"
       },
       {
-        "n": "Thoroughbred Gallop km/h",
-        "val": 70
+        "val": 70,
+        "name": "Thoroughbred Gallop km/h"
       },
       {
-        "n": "Arabian Horse km/h",
-        "val": 65
+        "val": 65,
+        "name": "Arabian Horse km/h"
       },
       {
-        "n": "Akhal-Teke km/h",
-        "val": 60
+        "val": 60,
+        "name": "Akhal-Teke km/h"
       },
       {
-        "n": "Paint Horse km/h",
-        "val": 65
+        "val": 65,
+        "name": "Paint Horse km/h"
       },
       {
-        "n": "Morgan Horse km/h",
-        "val": 58
+        "val": 58,
+        "name": "Morgan Horse km/h"
       },
       {
-        "n": "Appaloosa km/h",
-        "val": 60
+        "val": 60,
+        "name": "Appaloosa km/h"
       },
       {
-        "n": "Andalusier km/h",
-        "val": 57
+        "val": 57,
+        "name": "Andalusier km/h"
       },
       {
-        "n": "Lipizzaner km/h",
-        "val": 52
+        "val": 52,
+        "name": "Lipizzaner km/h"
       },
       {
-        "n": "Friese km/h",
-        "val": 50
+        "val": 50,
+        "name": "Friese km/h"
       },
       {
-        "n": "Warmblut Deutsches km/h",
-        "val": 55
+        "val": 55,
+        "name": "Warmblut Deutsches km/h"
       },
       {
-        "n": "Hanoverian km/h",
-        "val": 55
+        "val": 55,
+        "name": "Hanoverian km/h"
       },
       {
-        "n": "Trakehner km/h",
-        "val": 58
+        "val": 58,
+        "name": "Trakehner km/h"
       },
       {
-        "n": "Holsteiner km/h",
-        "val": 56
+        "val": 56,
+        "name": "Holsteiner km/h"
       },
       {
-        "n": "Westfale km/h",
-        "val": 54
+        "val": 54,
+        "name": "Westfale km/h"
       },
       {
-        "n": "Belgian Draft km/h",
-        "val": 40
+        "val": 40,
+        "name": "Belgian Draft km/h"
       },
       {
-        "n": "Percheron Draft km/h",
-        "val": 42
+        "val": 42,
+        "name": "Percheron Draft km/h"
       },
       {
-        "n": "Shire Draft km/h",
-        "val": 35
+        "val": 35,
+        "name": "Shire Draft km/h"
       },
       {
-        "n": "Icelandic Horse Toelt km/h",
-        "val": 48
+        "val": 48,
+        "name": "Icelandic Horse Toelt km/h"
       },
       {
-        "n": "Tennessee Walker km/h",
-        "val": 48
+        "val": 48,
+        "name": "Tennessee Walker km/h"
       },
       {
-        "n": "Standardbred Trab km/h",
-        "val": 58
+        "val": 58,
+        "name": "Standardbred Trab km/h"
       },
       {
-        "n": "Orlov Trotter km/h",
-        "val": 56
+        "val": 56,
+        "name": "Orlov Trotter km/h"
       },
       {
-        "n": "American Standardbred Sprint km/h",
-        "val": 60
+        "val": 60,
+        "name": "American Standardbred Sprint km/h"
       },
       {
-        "n": "Connemara km/h",
-        "val": 48
+        "val": 48,
+        "name": "Connemara km/h"
       },
       {
-        "n": "Shetland Pony km/h",
-        "val": 45
+        "val": 45,
+        "name": "Shetland Pony km/h"
       },
       {
-        "n": "Falabella km/h",
-        "val": 40
+        "val": 40,
+        "name": "Falabella km/h"
       },
       {
-        "n": "Mustang Wildpferd km/h",
-        "val": 68
+        "val": 68,
+        "name": "Mustang Wildpferd km/h"
       },
       {
-        "n": "Przewalski Urpferd km/h",
-        "val": 56
+        "val": 56,
+        "name": "Przewalski Urpferd km/h"
       },
       {
-        "n": "Paso Fino km/h",
-        "val": 48
+        "val": 48,
+        "name": "Paso Fino km/h"
       },
       {
-        "n": "Paso Peruano km/h",
-        "val": 50
+        "val": 50,
+        "name": "Paso Peruano km/h"
       }
     ]
   },
@@ -4770,124 +4770,124 @@
         "val": 340
       },
       {
-        "n": "Shire Horse kg",
-        "val": 1000
+        "val": 1000,
+        "name": "Shire Horse kg"
       },
       {
-        "n": "Clydesdale kg",
-        "val": 900
+        "val": 900,
+        "name": "Clydesdale kg"
       },
       {
-        "n": "Percheron kg",
-        "val": 950
+        "val": 950,
+        "name": "Percheron kg"
       },
       {
-        "n": "Belgian Draft kg",
-        "val": 1000
+        "val": 1000,
+        "name": "Belgian Draft kg"
       },
       {
-        "n": "Noriker kg",
-        "val": 750
+        "val": 750,
+        "name": "Noriker kg"
       },
       {
-        "n": "Suffolk Punch kg",
-        "val": 900
+        "val": 900,
+        "name": "Suffolk Punch kg"
       },
       {
-        "n": "Haflinger kg",
-        "val": 550
+        "val": 550,
+        "name": "Haflinger kg"
       },
       {
-        "n": "Fjordpferd kg",
-        "val": 550
+        "val": 550,
+        "name": "Fjordpferd kg"
       },
       {
-        "n": "Shetland Pony kg",
-        "val": 180
+        "val": 180,
+        "name": "Shetland Pony kg"
       },
       {
-        "n": "Falabella kg",
-        "val": 50
+        "val": 50,
+        "name": "Falabella kg"
       },
       {
-        "n": "Miniature Horse kg",
-        "val": 90
+        "val": 90,
+        "name": "Miniature Horse kg"
       },
       {
-        "n": "Arabian Horse kg",
-        "val": 450
+        "val": 450,
+        "name": "Arabian Horse kg"
       },
       {
-        "n": "Thoroughbred kg",
-        "val": 500
+        "val": 500,
+        "name": "Thoroughbred kg"
       },
       {
-        "n": "Warmblut Deutsches kg",
-        "val": 600
+        "val": 600,
+        "name": "Warmblut Deutsches kg"
       },
       {
-        "n": "Hanoverian kg",
-        "val": 620
+        "val": 620,
+        "name": "Hanoverian kg"
       },
       {
-        "n": "Trakehner kg",
-        "val": 560
+        "val": 560,
+        "name": "Trakehner kg"
       },
       {
-        "n": "Holsteiner kg",
-        "val": 600
+        "val": 600,
+        "name": "Holsteiner kg"
       },
       {
-        "n": "Westfale kg",
-        "val": 610
+        "val": 610,
+        "name": "Westfale kg"
       },
       {
-        "n": "Quarter Horse kg",
-        "val": 500
+        "val": 500,
+        "name": "Quarter Horse kg"
       },
       {
-        "n": "Appaloosa kg",
-        "val": 480
+        "val": 480,
+        "name": "Appaloosa kg"
       },
       {
-        "n": "Andalusier kg",
-        "val": 550
+        "val": 550,
+        "name": "Andalusier kg"
       },
       {
-        "n": "Lipizzaner kg",
-        "val": 520
+        "val": 520,
+        "name": "Lipizzaner kg"
       },
       {
-        "n": "Friese kg",
-        "val": 600
+        "val": 600,
+        "name": "Friese kg"
       },
       {
-        "n": "Lusitano kg",
-        "val": 540
+        "val": 540,
+        "name": "Lusitano kg"
       },
       {
-        "n": "Icelandic Horse kg",
-        "val": 400
+        "val": 400,
+        "name": "Icelandic Horse kg"
       },
       {
-        "n": "Mustang kg",
-        "val": 450
+        "val": 450,
+        "name": "Mustang kg"
       },
       {
-        "n": "Przewalski kg",
-        "val": 350
+        "val": 350,
+        "name": "Przewalski kg"
       },
       {
-        "n": "Konik kg",
-        "val": 380
+        "val": 380,
+        "name": "Konik kg"
       },
       {
-        "n": "Welsh Cob kg",
-        "val": 550
+        "val": 550,
+        "name": "Welsh Cob kg"
       },
       {
-        "n": "Camargue Pferd kg",
-        "val": 450
+        "val": 450,
+        "name": "Camargue Pferd kg"
       }
     ]
   }

@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 300 (Stand: Mai 2026)
+**Version:** Phase 301 (Stand: Mai 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.68 MB | 716 Spielmodi | verify: 136/136
 
 ---
@@ -1065,11 +1065,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **298** | patch_298.py | **Metro-Logos weltweit + Trainspotter Expansion (Routen, Architektur, Hersteller)** |
 | **299** | patch_299.py | **Taktfrequenz H/L + Rekord-Pin + Bahnhofs-Timeline (3 neue Zug-Modi)** |
 | **300** | patch_300.py | **Grand Data Upscale: alle 4 Zug-Arrays auf 80 Items (zug_routen, bahnhof_typ, hersteller, metro_logos)** |
+| **301** | patch_301.py | **Bugfixes: Crash-Guard, Pferde-HL-Key, WS-Cleanup, Züge-Kategorie sichtbar, landing.html aktualisiert** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 300 -- Grand Data Upscale: alle 4 Zug-Arrays auf 80 Items (zug_routen, bahnhof_typ, hersteller, metro_logos), 681 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 301 -- Bugfixes: Crash-Guard, Pferde-HL-Key, WS-Cleanup, Züge-Kategorie sichtbar, landing.html aktualisiert, 681 Modi, 37 Datendateien, Mai 2026.*
 
 
 ---
