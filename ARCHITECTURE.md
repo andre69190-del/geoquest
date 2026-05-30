@@ -1070,7 +1070,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 301 -- Bugfixes: Crash-Guard, Pferde-HL-Key, WS-Cleanup, Züge-Kategorie sichtbar, landing.html aktualisiert, 681 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 301 -- Bugfixes: Crash-Guard, Pferde-HL-Key, WS-Cleanup, Züge-Kategorie sichtbar, landing.html aktualisiert, 716 Modi, 39 Datendateien, Mai 2026.*
 
 
 ---
