@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-68581e14';
+const CACHE_NAME = 'geoquest-20baead8';
 /* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
   './GeoQuest.html',

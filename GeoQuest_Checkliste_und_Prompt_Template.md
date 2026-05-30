@@ -28,6 +28,12 @@
 
 **unlock_and_push.bat** ausführen und verify.py muss mit 90/90 (oder mehr) durchlaufen
 
+**Schnellweg — alle 5 Schritte automatisch:**
+```
+python3 post_phase.py --phase [NR] --summary "Kurze Beschreibung"
+```
+Das Skript erledigt: verify → ARCHITECTURE.md → README.md → landing.html → GeoQuest_Website_Konzept.md → Commit-Message generieren.
+
 ---
 
 ### Nach größeren Inhaltserweiterungen (neue Spielmodi)

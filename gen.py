@@ -406,7 +406,7 @@ function generateBingoGrid() {
 
   // Shuffeln
   for (let i = bingoItems.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(rng() * (i + 1)); /* Phase 295: rng() statt Math.random() */
     [bingoItems[i], bingoItems[j]] = [bingoItems[j], bingoItems[i]];
   }
 
@@ -810,18 +810,7 @@ function renderWordGenerator() {
   return html;
 }
 
-/* ===== TEIL 2: SIZE GUESSER ===== */
-function startSizeGuesserMode() {
-  // Wähle zwei zufällige Länder
-  const countries = COUNTRIES.filter(c => c.cc && c.c);
-  const idx1 = Math.floor(Math.random() * countries.length);
-  const idx2 = Math.floor(Math.random() * countries.length);
-
-  return {
-    country1: countries[idx1],
-    country2: countries[idx2],
-  };
-}
+/* Phase 295: removed dead startSizeGuesserMode (unused, Math.random) */
 
 /* ===== TEIL 2: BORDER CLICKER ===== */
 function getBorderCountries(cc) {
@@ -829,30 +818,9 @@ function getBorderCountries(cc) {
   return NEIGHBORS[cc] || [];
 }
 
-/* ===== TEIL 3: LOST IN TRANSLATION ===== */
-function getLostInTranslationQuestion(lang) {
-  const country = COUNTRIES[Math.floor(Math.random() * COUNTRIES.length)];
-  if (!country || !country.cc) return null;
+/* Phase 295: removed dead getLostInTranslationQuestion (unused, Math.random) */
 
-  const langCode = lang === 'de' ? 'de' : lang === 'en' ? 'en' : 'de';
-  try {
-    const names = new Intl.DisplayNames([langCode], { type: 'region' });
-    const translated = names.of(country.cc);
-    return { cc: country.cc, country: country.c, translated };
-  } catch (e) {
-    return null;
-  }
-}
-
-/* ===== TEIL 3: ANAGRAMM-SPIEL ===== */
-function createAnagram(word) {
-  const arr = word.split('');
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr.join('');
-}
+/* Phase 295: removed dead createAnagram (unused, Math.random) */
 
 /* Helper: Sicherheit für localStorage */
 function safeLocalStorage(key, value) {
@@ -4899,10 +4867,10 @@ function _getMpMode(){
   if(sT==="specific"&&sMod&&GEN[sMod])return sMod;
   if(sT==="cat"&&sCat&&MODE_CATS[sCat]){
     const pool=(MODE_CATS[sCat].modes||[]).filter(id=>GEN[id]&&!(MODES.find(m=>m.id===id)?.noMultiplayer));
-    if(pool.length)return pool[~~(Math.random()*pool.length)];
+    if(pool.length)return pool[~~(Math.random()*pool.length)]; /* intentional: MP, seed set separately */
   }
   const _pool=MODES.filter(m=>GEN[m.id]&&!m.comingSoon&&!m.noMultiplayer).map(m=>m.id);
-  return _pool.length?_pool[~~(Math.random()*_pool.length)]:"city";
+  return _pool.length?_pool[~~(Math.random()*_pool.length)]:"city"; /* intentional: MP seed set separately */
 }
 function mpCountdown(seed,mode,filt,dif){
   let t=3;
@@ -5112,12 +5080,12 @@ function renderMultiplayerLobby(){
       <p style="color:var(--text3);font-size:.8rem;margin-bottom:1.2rem">Gegner: <strong>${esc(mp.oppName||"Unbekannt")}</strong></p>
       <div style="display:flex;gap:12px;justify-content:center;margin-bottom:1.4rem">
         <div style="background:var(--bg2);border:2px solid ${myR?"#10b981":"var(--border)"};border-radius:12px;padding:.75rem 1.2rem;min-width:100px">
-          <div style="font-size:1.3rem">${myR?"✓…":"â³"}</div>
+          <div style="font-size:1.3rem">${myR?"✓…":"\u{23F3}"}</div>
           <div style="font-size:.72rem;color:var(--text3);margin-top:4px">Du</div>
         </div>
         <div style="font-size:1.4rem;align-self:center;color:var(--text3)">VS</div>
         <div style="background:var(--bg2);border:2px solid ${oppR?"#10b981":"var(--border)"};border-radius:12px;padding:.75rem 1.2rem;min-width:100px">
-          <div style="font-size:1.3rem">${oppR?"✓…":"â³"}</div>
+          <div style="font-size:1.3rem">${oppR?"✓…":"\u{23F3}"}</div>
           <div style="font-size:.72rem;color:var(--text3);margin-top:4px">${esc(mp.oppName||"Gegner")}</div>
         </div>
       </div>
@@ -5299,7 +5267,7 @@ function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://
 /* Phase 97-1: Zombie-SW-Killer – läuft vor Supabase-Init */
 /* Tötet veraltete Service Worker, die Updates blockieren   */
 (function _zombieKiller(){
-  var SW_VER='gq-v9',LS_KEY='__gq_sw_ver';
+  var SW_VER='__GQ_BUILD_VER__',LS_KEY='__gq_sw_ver'; /* Phase 295: auto-injected by gen.py */
   try{
     if(localStorage.getItem(LS_KEY)===SW_VER)return; /* aktuell – nichts zu tun */
     if(!('serviceWorker' in navigator)){localStorage.setItem(LS_KEY,SW_VER);return;}
@@ -9480,11 +9448,11 @@ function _lvPickMode(selType,selMode,selCat){
   if(selType==="specific"&&selMode&&GEN[selMode])return selMode;
   if(selType==="cat"&&selCat&&MODE_CATS[selCat]){
     const pool=(MODE_CATS[selCat].modes||[]).filter(id=>GEN[id]&&!(MODES.find(m=>m.id===id)?.noMultiplayer));
-    if(pool.length)return pool[~~(Math.random()*pool.length)];
+    if(pool.length)return pool[~~(Math.random()*pool.length)]; /* intentional: LV unseeded */
   }
   /* Full random pool — all modes with generators */
   const _pool=MODES.filter(m=>GEN[m.id]&&!m.comingSoon&&!m.noMultiplayer).map(m=>m.id);
-  return _pool.length?_pool[~~(Math.random()*_pool.length)]:"flag";
+  return _pool.length?_pool[~~(Math.random()*_pool.length)]:"flag"; /* intentional: LV unseeded */
 }
 function initLV(){
   const selType=S.lvSelType||"random";
@@ -9714,6 +9682,8 @@ function lq(){
     if(_c&&!S.askedLids.has(_c.lid)){q=_c;break;}}catch(_e){console.warn('[GeoQuest] generator error (mode='+S.mode+'):', _e);}
     _att++;
   }
+  /* Phase 295: Erschöpfungs-Warnung — hilft beim Debuggen neuer Modi */
+  if(!q&&_att>=25){console.warn("[GeoQuest] lq() exhausted after 25 attempts — mode:",S.mode,"askedLids:",S.askedLids.size);}
   /* Fallback: accept any valid question if pool is exhausted */
   if(!q){try{q=(GEN[S.mode]||genCityQ)()||null;}catch(_e){console.warn('[GeoQuest] generator fallback error:',_e);q=null;}}
   /* Duolingo casual: once normal round exhausted, pull retries */
@@ -10710,9 +10680,23 @@ function getDailyCountdown(){
 function startDailyChallenge(){
   if(isDailyDone())return;
   const seed=getDailySeed();
-  const DAILY_POOL=["city","flag","uk_wahrzeichen","uk_getraenke","uk_tiere_endemisch"];
-  const dayIndex=Math.floor(Date.now()/86400000);
-  S.mode=DAILY_POOL[dayIndex%DAILY_POOL.length];S.diff="casual";S.isDailyRun=true;
+  /* Phase 295: Pool auf 30 Modi erweitert; Auswahl per getDailySeed() statt dayIndex */
+  const DAILY_POOL=[
+    /* Geografie Kern */
+    "city","flag","capital","river","outline","neighbor","map_guess","map_capital",
+    /* Higher / Lower */
+    "hl_pop","hl_area","hl_gdp","hl_elevation","hl_lifeexp","hl_b_temp","hl_b_rain",
+    /* Tiere & Natur */
+    "uk_tiere_endemisch","uk_tiere_bigfive","uk_tiere_grosskatzen","hl_tiere_speed_land",
+    "uk_tiere_nationaltier_pin","hl_tiere_gewicht_land",
+    /* Kultur & Wissen */
+    "uk_wahrzeichen","uk_getraenke","food","currency","plate_casual",
+    /* Vergleich & Timeline */
+    "comp_area","comp_pop","comp_gdp",
+    /* Sport & Geo-Wissen */
+    "uk_sportwissen_olympia_standort","timeline_geo_erdbeben"
+  ];
+  S.mode=DAILY_POOL[getDailySeed()%DAILY_POOL.length];S.diff="casual";S.isDailyRun=true;
   const _prog=loadDailyProgress();
   if(_prog&&(_prog.rd||0)>0){
     /* P284: RESUME – Spieler hat heute schon angefangen, weiterspielen */
@@ -11175,7 +11159,7 @@ if(mode==="slf"&&S.ph==="playing"){
     qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;color:#94a3b8;font-size:.68rem;margin:2px 0 4px">${q.industry||""}</div><div class="qmain" style="font-size:2.2rem">${q.subj}</div>`;
   }else if(q.type==="uk_match"){
     const _ukIcon={"getraenke":"\u{1F37A}","streetfood":"\u{1F32E}","kaese":"\u{1F9C0}","suessspeisen":"\u{1F36E}","kaffee":"\u2615","taenze":"\u{1F483}","kleidung":"\u{1F458}","instrumente":"\u{1F3B8}","literatur":"\u{1F4DA}","wahrzeichen":"\u{1F5FD}","feste":"\u{1F389}","begruessung":"\u{1F44B}","feiertage":"\u{1F386}","erfindungen":"\u{1F4A1}","exporte":"\u{1F69A}","blumen":"\u{1F338}","entdecker":"\u{1F9ED}","sport":"\u{1F3C6}","brettspiele":"\u265F"}[q.cat]||"\u{1F30D}";
-    qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;font-size:1.8rem;margin:6px 0 2px">${_ukIcon}</div><div class="qmain" style="font-size:1.6rem">${esc(q.subj)}</div>`;
+    const _ukSubj=q.subj.replace(/\s*\([^)]+\)/g,'').trim();qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;font-size:1.8rem;margin:6px 0 2px">${_ukIcon}</div><div class="qmain" style="font-size:1.6rem">${esc(_ukSubj)}</div>` /* Phase 295: strip parenthetical country spoilers */;
 }else if(q.type==="currency"){
     qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;margin:6px 0 2px"><span class="currency-symbol">${q.symbol||""}</span></div><div class="qmain">${q.subj}</div>`;
   }else if(q.type==="de_plate"||q.type==="plate_casual"||q.type==="plate_hard"){
@@ -11349,7 +11333,7 @@ if(mode==="slf"&&S.ph==="playing"){
           <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
           ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}
         </div>
-        <div style="display:flex;align-items:center;gap:8px">
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -11380,7 +11364,7 @@ if(mode==="slf"&&S.ph==="playing"){
           <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
           ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
         </div>
-        <div style="display:flex;align-items:center;gap:8px">
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -11410,7 +11394,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
           ${S.mpOpponent?`<div class="pill" style="opacity:.7"><div class="hlbl" style="color:#8b5cf6">\u2694</div><div class="hval" style="color:#8b5cf6">${(S.mpOppScore||0).toLocaleString()}</div></div>`:""}
         </div>
-        <div style="display:flex;align-items:center;gap:8px">
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -11438,7 +11422,7 @@ if(mode==="slf"&&S.ph==="playing"){
           <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
           ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
         </div>
-        <div style="display:flex;align-items:center;gap:8px">
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -11455,7 +11439,7 @@ if(mode==="slf"&&S.ph==="playing"){
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:5px 12px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px;flex-shrink:0">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:5px 12px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -11525,7 +11509,7 @@ if(mode==="slf"&&S.ph==="playing"){
         <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
         ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
       </div>
-      <div style="display:flex;align-items:center;gap:8px">
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
         ${diff==="survival"
           ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
           :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -11838,7 +11822,7 @@ function renderRealPlate(code,region,extra){
 
 /* â”€â”€ Collection Screen â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/
 function renderCollectionScreen(){
-  if(\!PLATES_DATA.length)return`<div class="panel" style="text-align:center;padding:2rem"><div style="font-size:2rem">â³</div><p style="color:var(--text3);margin-top:.5rem">Kennzeichen-Daten werden geladen…</p></div>`;
+  if(\!PLATES_DATA.length)return`<div class="panel" style="text-align:center;padding:2rem"><div style="font-size:2rem">\u{23F3}</div><p style="color:var(--text3);margin-top:.5rem">Kennzeichen-Daten werden geladen…</p></div>`;
   /* Run migration once per session */
   if(\!window._platesMigrated){window._platesMigrated=true;migrateCollectedPlates();}
 
@@ -12512,7 +12496,7 @@ function renderLogikGitter(sc){
         <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
         <div style="font-size:1rem;letter-spacing:1px">${hearts}</div>
       </div>
-      <div style="display:flex;align-items:center;gap:8px">
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
         <div style="font-size:.75rem;color:var(--text3)">${gd.correctCount}/9</div>
         <div style="font-size:.85rem;font-weight:700;min-width:2.2rem;text-align:right;color:${tc()}">${S.tm}s</div>
         <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:5px 12px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
@@ -12636,7 +12620,7 @@ function renderReiseroute(sc){
         <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
         <div style="font-size:1rem;letter-spacing:1px">${hearts}</div>
       </div>
-      <div style="display:flex;align-items:center;gap:8px">
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
         <div style="font-size:.75rem;color:var(--text3)">${rd.steps} Schr.</div>
         <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';render()" style="background:#ef4444;color:#fff;border:none;padding:5px 12px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;white-space:nowrap">🚪 Beenden</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
       </div>
@@ -13565,7 +13549,7 @@ window.showFavorites=showFavorites;
 function playRandomGame(){
   const pool=MODES.filter(m=>!m.comingSoon);
   if(!pool.length)return;
-  const m=pool[~~(Math.random()*pool.length)];
+  const m=pool[~~(Math.random()*pool.length)]; /* intentional: user-triggered, unseeded */
   startGame(m.id);
 }
 window.showGameInfo = function(modeId, ev) {
@@ -15170,6 +15154,12 @@ for _a in _cache_assets:
         _hash_parts.append(_a.encode())
 _cache_hash = _hashlib.md5(b''.join(_hash_parts)).hexdigest()[:8]
 _cache_name = 'geoquest-' + _cache_hash
+# Phase 295: SW_VER automatisch aus Cache-Hash injizieren
+HTML = HTML.replace("'__GQ_BUILD_VER__'", "'gq-" + _cache_hash + "'")
+with open(out, 'w', encoding='utf-8') as _f_swv:
+    _f_swv.write(HTML)
+with open('index.html', 'w', encoding='utf-8') as _f_swv:
+    _f_swv.write(HTML)
 _assets_js = ',\n  '.join("'" + a + "'" for a in _cache_assets)
 _sw_content = (
     "const CACHE_NAME = '" + _cache_name + "';\n"
