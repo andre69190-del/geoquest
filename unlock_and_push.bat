@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 301. Bugfixes: Crash-Guard, Pferde-HL-Key, WS-Cleanup, Züge-Kategorie sichtbar, landing.html aktualisiert. verify: 136/136."
+git commit -m "Content: Phase 302. Housekeeping: Duplikate entfernt, alle Zug-Arrays auf 80 Items (taktfrequenz, panorama, vkm, bahnhof_bau). verify: 89/89."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

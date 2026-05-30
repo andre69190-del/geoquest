@@ -26909,6 +26909,134 @@
     {
       "n": "Casablanca–Tanger (Al Boraq, schnellster Zug Afrikas)",
       "c": "Marokko"
+    },
+    {
+      "n": "TranzAlpine (Christchurch–Greymouth, Neuseeland)",
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Coastal Pacific (Picton–Christchurch)",
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Northern Explorer (Auckland–Wellington)",
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Inlandsbahn (Inlandsbanan, Gaelvare–Kristinehamn)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Nariz del Diablo (Teufelsnase, Ecuador)",
+      "c": "Ecuador"
+    },
+    {
+      "n": "Serra Verde Express (Curitiba–Morretes)",
+      "c": "Brasilien"
+    },
+    {
+      "n": "White Pass & Yukon Route (Skagway–Whitehorse)",
+      "c": "USA"
+    },
+    {
+      "n": "Harz-Schmalspurbahn (Wernigerode–Brocken)",
+      "c": "Deutschland"
+    },
+    {
+      "n": "Chepe Express (Chihuahua–Los Mochis)",
+      "c": "Mexiko"
+    },
+    {
+      "n": "Shunka Shuutou (Herbst-Express Tohoku, Japan)",
+      "c": "Japan"
+    },
+    {
+      "n": "Puffing Billy Railway (Melbourne, Dampfzug)",
+      "c": "Australien"
+    },
+    {
+      "n": "Kuranda Scenic Railway (Cairns, Queensland)",
+      "c": "Australien"
+    },
+    {
+      "n": "Reunionbahn (seilgesteuerter Bergzug)",
+      "c": "Frankreich"
+    },
+    {
+      "n": "Maeklong Railway (Bangkok Markt-Bahn)",
+      "c": "Thailand"
+    },
+    {
+      "n": "Konkan Railway (Mumbai–Goa, Viadukte)",
+      "c": "Indien"
+    },
+    {
+      "n": "Kalka-Shimla Railway (UNESCO)",
+      "c": "Indien"
+    },
+    {
+      "n": "Qinghai-Tibet Railway (Lhasa, hoechste Bahn)",
+      "c": "China"
+    },
+    {
+      "n": "Yunnan–Vietnam Bahn (Meter-Spur Yunnan)",
+      "c": "China"
+    },
+    {
+      "n": "Llanberis Lake Railway (Nordwales)",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "Talyllyn Railway (erste erhaltene Schmalspurbahn)",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "Cog Railway Mount Washington (steilste USA)",
+      "c": "USA"
+    },
+    {
+      "n": "Durango & Silverton Narrow Gauge",
+      "c": "USA"
+    },
+    {
+      "n": "Cumbres & Toltec Scenic Railroad",
+      "c": "USA"
+    },
+    {
+      "n": "Verde Canyon Railroad (Arizona)",
+      "c": "USA"
+    },
+    {
+      "n": "Inca Rail Aguas Calientes–Machu Picchu",
+      "c": "Peru"
+    },
+    {
+      "n": "Tren a las Nubes (Zug zu den Wolken, Argentinien)",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Patagonia Express (El Maiten–Esquel)",
+      "c": "Argentinien"
+    },
+    {
+      "n": "Rovos Rail Kapstadt–Daressalam",
+      "c": "Suedafrika"
+    },
+    {
+      "n": "Namibia Desert Express (Windhoek–Swakopmund)",
+      "c": "Namibia"
+    },
+    {
+      "n": "Uganda Railway (Mombasa–Kampala, historisch)",
+      "c": "Kenia"
+    },
+    {
+      "n": "Ethiopian Railways (Addis Abeba–Dschibuti)",
+      "c": "Aethiopien"
+    },
+    {
+      "n": "Hedjaz Railway (historisch, Damaskus–Medina)",
+      "c": "Saudi-Arabien"
     }
   ],
   "zug_vkm": [
@@ -27119,6 +27247,118 @@
     {
       "n": "H-MAVSTART",
       "c": "Ungarn"
+    },
+    {
+      "n": "CH-RhB",
+      "c": "Schweiz"
+    },
+    {
+      "n": "F-OUIGO",
+      "c": "Frankreich"
+    },
+    {
+      "n": "F-TGVLYRIA",
+      "c": "Frankreich"
+    },
+    {
+      "n": "I-TI",
+      "c": "Italien"
+    },
+    {
+      "n": "I-TRENITALIA",
+      "c": "Italien"
+    },
+    {
+      "n": "E-IRYO",
+      "c": "Spanien"
+    },
+    {
+      "n": "NL-ABELLIO",
+      "c": "Niederlande"
+    },
+    {
+      "n": "B-NMBS",
+      "c": "Belgien"
+    },
+    {
+      "n": "GB-GWR",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "GB-LNER",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "GB-TPE",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "GB-AVANTI",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "PL-REGIO",
+      "c": "Polen"
+    },
+    {
+      "n": "CZ-LEO",
+      "c": "Tschechien"
+    },
+    {
+      "n": "SK-ZSSK",
+      "c": "Slowakei"
+    },
+    {
+      "n": "RO-CFR",
+      "c": "Rumaenien"
+    },
+    {
+      "n": "BG-BDZ",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "GR-OSE",
+      "c": "Griechenland"
+    },
+    {
+      "n": "TR-TCDD",
+      "c": "Tuerkei"
+    },
+    {
+      "n": "N-NSB",
+      "c": "Norwegen"
+    },
+    {
+      "n": "FIN-VR",
+      "c": "Finnland"
+    },
+    {
+      "n": "DK-DSB",
+      "c": "Daenemark"
+    },
+    {
+      "n": "IRL-IE",
+      "c": "Irland"
+    },
+    {
+      "n": "P-CP",
+      "c": "Portugal"
+    },
+    {
+      "n": "GB-EUROSTAR",
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "F-EUROSTAR",
+      "c": "Frankreich"
+    },
+    {
+      "n": "D-FLIX",
+      "c": "Deutschland"
+    },
+    {
+      "n": "HR-HZ",
+      "c": "Kroatien"
     }
   ],
   "ds100": [

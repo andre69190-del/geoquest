@@ -268,24 +268,9 @@
         "lng": 29.88
       },
       {
-        "n": "Ruaha National Park (Tansania)",
-        "lat": -7.77,
-        "lng": 35.1
-      },
-      {
-        "n": "Mikumi National Park (Tansania)",
-        "lat": -7.4,
-        "lng": 37.1
-      },
-      {
         "n": "South Luangwa NP (Sambia)",
         "lat": -13.0,
         "lng": 31.7
-      },
-      {
-        "n": "Hluhluwe-iMfolozi Park (Südafrika)",
-        "lat": -28.0,
-        "lng": 31.9
       },
       {
         "n": "Gonarezhou National Park (Simbabwe)",
@@ -293,19 +278,9 @@
         "lng": 32.3
       },
       {
-        "n": "Selous Game Reserve (Tansania)",
-        "lat": -9.0,
-        "lng": 37.5
-      },
-      {
         "n": "Kgalagadi Transfrontier Park (Botswana/SA)",
         "lat": -25.6,
         "lng": 20.7
-      },
-      {
-        "n": "Murchison Falls NP (Uganda)",
-        "lat": 2.28,
-        "lng": 31.73
       },
       {
         "n": "Zakouma National Park (Tschad)",
@@ -328,11 +303,6 @@
         "lng": 35.27
       },
       {
-        "n": "Niassa Reserve (Mosambik)",
-        "lat": -12.5,
-        "lng": 37.5
-      },
-      {
         "n": "Mana Pools NP (Simbabwe)",
         "lat": -15.8,
         "lng": 29.3
@@ -343,24 +313,9 @@
         "lng": 31.9
       },
       {
-        "n": "Samburu National Reserve (Kenia)",
-        "lat": 0.62,
-        "lng": 37.57
-      },
-      {
         "n": "Tsavo East NP (Kenia)",
         "lat": -2.8,
         "lng": 38.5
-      },
-      {
-        "n": "Addo Elephant NP (Südafrika)",
-        "lat": -33.45,
-        "lng": 25.75
-      },
-      {
-        "n": "Moremi Game Reserve (Botswana)",
-        "lat": -19.14,
-        "lng": 23.35
       },
       {
         "n": "Chizarira NP (Simbabwe)",

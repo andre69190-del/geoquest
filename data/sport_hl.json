@@ -4440,6 +4440,118 @@
       {
         "name": "Bangkok BTS Silom (HVZ)",
         "val": 10
+      },
+      {
+        "name": "Paris Metro Linie 13 (HVZ)",
+        "val": 20
+      },
+      {
+        "name": "London Elizabeth Line (HVZ)",
+        "val": 24
+      },
+      {
+        "name": "London Northern Line (HVZ)",
+        "val": 24
+      },
+      {
+        "name": "London Victoria Line (HVZ)",
+        "val": 36
+      },
+      {
+        "name": "Berlin U6 Stosszeit",
+        "val": 12
+      },
+      {
+        "name": "Berlin S1 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Muenchen S8 Stosszeit",
+        "val": 10
+      },
+      {
+        "name": "Hamburg U1 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Hamburg S3 Stosszeit",
+        "val": 10
+      },
+      {
+        "name": "Wien S45 Stadtbahn (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Zuerich S2 S-Bahn (HVZ)",
+        "val": 6
+      },
+      {
+        "name": "Basel S-Bahn (HVZ)",
+        "val": 6
+      },
+      {
+        "name": "Kopenhagen Metro M2 (24h)",
+        "val": 20
+      },
+      {
+        "name": "Stockholm T-bana T14 (HVZ)",
+        "val": 15
+      },
+      {
+        "name": "Oslo Metro Linie 4 (HVZ)",
+        "val": 10
+      },
+      {
+        "name": "Madrid Cercanias C1 (HVZ)",
+        "val": 12
+      },
+      {
+        "name": "Barcelona Metro L5 (HVZ)",
+        "val": 15
+      },
+      {
+        "name": "Mailand Metro M1 (HVZ)",
+        "val": 12
+      },
+      {
+        "name": "Tokio Chuo Rapid Line (Stosszeit)",
+        "val": 22
+      },
+      {
+        "name": "Tokio Keio Linie (Stosszeit)",
+        "val": 24
+      },
+      {
+        "name": "Osaka Keihan Main Line (Stosszeit)",
+        "val": 20
+      },
+      {
+        "name": "Delhi Metro Yellow Line (HVZ)",
+        "val": 20
+      },
+      {
+        "name": "Mumbai Suburban Western (Stosszeit)",
+        "val": 30
+      },
+      {
+        "name": "RER D Paris (HVZ)",
+        "val": 12
+      },
+      {
+        "name": "Thalys Paris–Bruessel (HVZ)",
+        "val": 2
+      },
+      {
+        "name": "ICE Berlin–Hamburg (HVZ)",
+        "val": 2
+      },
+      {
+        "name": "DB RE1 Koeln–Aachen (HVZ)",
+        "val": 4
+      },
+      {
+        "name": "S-Bahn Stuttgart S1 (HVZ)",
+        "val": 10
       }
     ]
   }

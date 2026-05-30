@@ -323,11 +323,6 @@
         "lng": -60.65
       },
       {
-        "n": "Tungurahua (Ecuador)",
-        "lat": -1.47,
-        "lng": -78.44
-      },
-      {
         "n": "Fuego (Guatemala)",
         "lat": 14.47,
         "lng": -90.88
@@ -1493,11 +1488,6 @@
         "lng": 3.4
       },
       {
-        "n": "Cueva del Viento (Teneriffa, Spanien)",
-        "lat": 28.35,
-        "lng": -16.55
-      },
-      {
         "n": "Coves del Drac (Mallorca, Spanien)",
         "lat": 39.53,
         "lng": 3.33
@@ -1888,11 +1878,6 @@
         "lng": -116.72
       },
       {
-        "n": "Royal Gorge (Colorado, USA)",
-        "lat": 38.45,
-        "lng": -105.35
-      },
-      {
         "n": "Rio Grande Gorge (New Mexico)",
         "lat": 36.45,
         "lng": -105.72
@@ -1901,11 +1886,6 @@
         "n": "Yarlung Tsangpo (Tibet, China)",
         "lat": 29.75,
         "lng": 95.0
-      },
-      {
-        "n": "Three Gorges (Yangtze, China)",
-        "lat": 30.8,
-        "lng": 111.1
       },
       {
         "n": "Tara River Canyon (Montenegro)",
@@ -1936,11 +1916,6 @@
         "n": "Blyde River Canyon (Suedafrika)",
         "lat": -24.63,
         "lng": 30.82
-      },
-      {
-        "n": "Fish River Canyon (Namibia)",
-        "lat": -27.59,
-        "lng": 17.63
       },
       {
         "n": "Canyon de Chelly (Arizona, USA)",
@@ -2288,11 +2263,6 @@
         "lng": -16.82
       },
       {
-        "n": "Soda Springs Geyser (Idaho, USA)",
-        "lat": 42.65,
-        "lng": -111.6
-      },
-      {
         "n": "Tatio Geysers (Chile)",
         "lat": -22.33,
         "lng": -67.92
@@ -2311,11 +2281,6 @@
         "n": "Krisuvik Hot Springs (Island)",
         "lat": 63.88,
         "lng": -22.06
-      },
-      {
-        "n": "Beowawe Geysers (Nevada, USA)",
-        "lat": 40.59,
-        "lng": -116.67
       },
       {
         "n": "Riverside Geyser (Yellowstone, USA)",
@@ -2636,16 +2601,6 @@
         "n": "Green River Formation (Wyoming, USA)",
         "lat": 41.5,
         "lng": -109.5
-      },
-      {
-        "n": "Hell Creek Formation (Montana, USA)",
-        "lat": 47.5,
-        "lng": -106.5
-      },
-      {
-        "n": "Morrison Formation (Colorado, USA)",
-        "lat": 39.0,
-        "lng": -108.5
       },
       {
         "n": "Edmonton Formation (Kanada)",
@@ -3383,11 +3338,6 @@
         "lng": 77.1
       },
       {
-        "n": "Biafo Glacier (Pakistan)",
-        "lat": 35.9,
-        "lng": 75.8
-      },
-      {
         "n": "Hispar Glacier (Pakistan)",
         "lat": 36.1,
         "lng": 75.0
@@ -3668,24 +3618,9 @@
         "lng": -67.0
       },
       {
-        "n": "Karakum (Turkmenistan)",
-        "lat": 39.5,
-        "lng": 58.0
-      },
-      {
-        "n": "Kyzylkum (Usbekistan/Kasachstan)",
-        "lat": 42.0,
-        "lng": 63.0
-      },
-      {
         "n": "Lut Desert (Iran)",
         "lat": 30.0,
         "lng": 59.0
-      },
-      {
-        "n": "Dasht-e Kavir (Iran)",
-        "lat": 34.0,
-        "lng": 54.0
       },
       {
         "n": "Syrian Desert (Syrien/Jordanien)",
@@ -3716,16 +3651,6 @@
         "n": "Tirari Desert (Australien)",
         "lat": -28.0,
         "lng": 138.5
-      },
-      {
-        "n": "Strzelecki Desert (Australien)",
-        "lat": -29.0,
-        "lng": 140.0
-      },
-      {
-        "n": "Tanami Desert (Australien)",
-        "lat": -20.0,
-        "lng": 130.0
       },
       {
         "n": "Ustyurt Plateau (Kasachstan)",
@@ -4338,11 +4263,6 @@
         "lng": 112.5
       },
       {
-        "n": "Limagne-Graben (Auvergne, Frankreich)",
-        "lat": 45.75,
-        "lng": 3.13
-      },
-      {
         "n": "Massif Central Rift (Frankreich)",
         "lat": 45.5,
         "lng": 3.0
@@ -4476,11 +4396,6 @@
         "n": "Weihe Graben (China)",
         "lat": 34.5,
         "lng": 109.0
-      },
-      {
-        "n": "Gulf of California Rift (Mexiko)",
-        "lat": 27.0,
-        "lng": -111.0
       },
       {
         "n": "Salton Sea Rift (Kalifornien, USA)",

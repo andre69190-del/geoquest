@@ -2232,6 +2232,206 @@
         "n": "King's Cross Station London (Euston Arch abgerissen)",
         "year": 1852,
         "hint": "London — Lewis Cubitt, Doppelbogenfenster"
+      },
+      {
+        "n": "Baltimore & Ohio Station (erste US-Eisenbahn)",
+        "year": 1830,
+        "hint": "Baltimore, USA — Beginn des amerikanischen Schienenzeitalters"
+      },
+      {
+        "n": "Koeln Hauptbahnhof (erster Neubau)",
+        "year": 1859,
+        "hint": "Koeln — nahe dem Dom, zweiter Neubau 1894"
+      },
+      {
+        "n": "Dresden Hauptbahnhof",
+        "year": 1898,
+        "hint": "Dresden — Jugendstil, Glasdach"
+      },
+      {
+        "n": "Muenchen Hauptbahnhof (erster Bau)",
+        "year": 1839,
+        "hint": "Muenchen — erster Terminus Bayerns"
+      },
+      {
+        "n": "Berlin Lehrter Stadtbahnhof (historisch)",
+        "year": 1871,
+        "hint": "Berlin — Vorlaefer des heutigen Hauptbahnhofs"
+      },
+      {
+        "n": "Zurich Hauptbahnhof (historischer Bau)",
+        "year": 1871,
+        "hint": "Zuerich — seither mehrfach erweitert"
+      },
+      {
+        "n": "Gare d'Orsay Paris (heute Musee d'Orsay)",
+        "year": 1900,
+        "hint": "Paris — zur Weltausstellung gebaut, heute Museum"
+      },
+      {
+        "n": "Budapest Nyugati (Westbahnhof, Eiffel)",
+        "year": 1877,
+        "hint": "Budapest — von Gustave Eiffel erbaut"
+      },
+      {
+        "n": "Wroclaw Hauptbahnhof (historisch)",
+        "year": 1857,
+        "hint": "Breslau/Wroclaw — Neugotik, Niederschlesien"
+      },
+      {
+        "n": "Amsterdam Centraal",
+        "year": 1889,
+        "hint": "Amsterdam — P.J.H. Cuypers, hollaendischer Neorenaissance"
+      },
+      {
+        "n": "Gare Centrale Bruessel",
+        "year": 1952,
+        "hint": "Bruessel — Victor Horta, Art Deco"
+      },
+      {
+        "n": "Gdansk Hauptbahnhof",
+        "year": 1900,
+        "hint": "Danzig/Gdansk — Backstein-Gotik"
+      },
+      {
+        "n": "Warszawa Wileńska (erster Warschauer Bf)",
+        "year": 1862,
+        "hint": "Warschau — Verbindung zum zaristischen Russland"
+      },
+      {
+        "n": "Lviv Hauptbahnhof",
+        "year": 1904,
+        "hint": "Lwiw/Lemberg — Secessionsstil, k.u.k. Erbe"
+      },
+      {
+        "n": "Kyiw Hauptbahnhof (sowjet. Umbau)",
+        "year": 1932,
+        "hint": "Kiew — Stalinist. Architektur"
+      },
+      {
+        "n": "Moskau Komsomolskaya (drei Bahnhöfe)",
+        "year": 1849,
+        "hint": "Moskau — drei Fernbahnhöfe auf einem Platz"
+      },
+      {
+        "n": "Helsinki Zentralbahnhof (neues Gebaeude)",
+        "year": 1919,
+        "hint": "Helsinki — Eliel Saarinen, Jugendstilikone"
+      },
+      {
+        "n": "Oslo Ostbahnhof (Histor. Gebaeude)",
+        "year": 1854,
+        "hint": "Oslo — erster Bahnhof Norwegens"
+      },
+      {
+        "n": "Kopenhagen Hauptbahnhof",
+        "year": 1911,
+        "hint": "Kopenhagen — Heinrich Wenck, Nationalromantik"
+      },
+      {
+        "n": "Stockholms Centralstation",
+        "year": 1871,
+        "hint": "Stockholm — Adolf Wilhelm Edelsvaerd, Nordisch-Romanisch"
+      },
+      {
+        "n": "Lissabon Rossio Bahnhof",
+        "year": 1890,
+        "hint": "Lissabon — neo-manuelinischer Stil"
+      },
+      {
+        "n": "Barcelona Passeig de Gracia (unterirdisch)",
+        "year": 1863,
+        "hint": "Barcelona — oberster Knoten des Cercanias-Netzes"
+      },
+      {
+        "n": "Florenz Santa Maria Novella",
+        "year": 1935,
+        "hint": "Florenz — Modernistisches Manifest, Gruppo Toscano"
+      },
+      {
+        "n": "Athen Larissa Bahnhof",
+        "year": 1902,
+        "hint": "Athen — griechischer Normalspurnetz-Kopfbahnhof"
+      },
+      {
+        "n": "Istanbul Pendik (neuer Hauptbahnhof)",
+        "year": 2023,
+        "hint": "Istanbul — ersetzt Haydarpasha nach Jahrzehnten"
+      },
+      {
+        "n": "Union Station Los Angeles",
+        "year": 1939,
+        "hint": "Los Angeles — Spanish Colonial Revival, letzter grosser US-Bahnhof"
+      },
+      {
+        "n": "Union Station Toronto",
+        "year": 1927,
+        "hint": "Toronto — Beaux Arts, Canadian Pacific/National"
+      },
+      {
+        "n": "Gare du Palais Quebec City",
+        "year": 1915,
+        "hint": "Quebec — Chateaustil, Wahrzeichen"
+      },
+      {
+        "n": "Estacion de Francia Barcelona",
+        "year": 1929,
+        "hint": "Barcelona — Glasdach, Art Deco"
+      },
+      {
+        "n": "Termini Roma (neues Gebaeude)",
+        "year": 1950,
+        "hint": "Rom — Nachkriegsmodernismus, laengste Fassade"
+      },
+      {
+        "n": "Shin-Osaka (erster Shinkansen-Halt ausserh. Tokio)",
+        "year": 1964,
+        "hint": "Osaka — zur Olympiade 1964 eroeffnet"
+      },
+      {
+        "n": "Kyoto Station (moderner Neubau)",
+        "year": 1997,
+        "hint": "Kyoto — Hiroshi Hara, futuristisch, 70m hoch"
+      },
+      {
+        "n": "Narita International Terminal (JR-Haltestelle)",
+        "year": 1991,
+        "hint": "Tokio — Verbindung Innenstadt–Flughafen"
+      },
+      {
+        "n": "Shanghai Hongqiao Station (groesste Bahnhof Welt)",
+        "year": 2010,
+        "hint": "Shanghai — 1300m lang, 30 Gleise"
+      },
+      {
+        "n": "Haramain West Station Mekka",
+        "year": 2018,
+        "hint": "Mekka — Saudi-Arabiens HSR, 50 Mio. Pilger/Jahr"
+      },
+      {
+        "n": "Riyadh King Abdullah Financial District Station",
+        "year": 2021,
+        "hint": "Riad — Zaha Hadid Architects"
+      },
+      {
+        "n": "Expo 2020 Dubai Metro Station",
+        "year": 2020,
+        "hint": "Dubai — Architekturreferenz fuer Wuestenbahnhof"
+      },
+      {
+        "n": "Kairo Ramses Bahnhof (historisch)",
+        "year": 1892,
+        "hint": "Kairo — erster Bahnhof Afrikas und des Nahen Ostens"
+      },
+      {
+        "n": "Dakar Hauptbahnhof (historisch)",
+        "year": 1914,
+        "hint": "Dakar — Westafrika, ehemals laengste Strecke Afrikas"
+      },
+      {
+        "n": "Buenos Aires Retiro Station",
+        "year": 1915,
+        "hint": "Buenos Aires — britische Eisenbahninfrastruktur"
       }
     ]
   }
