@@ -471,3 +471,7 @@ if modes_block:
     else:
         if "genDS100InputQ" not in js:
             fail("genDS100InputQ fehlt im JS fuer den Hardcore-Modus")
+        else:
+            ok("DS100 Hardcore (zug_ds100_input) + genDS100InputQ vorhanden")
+else:
+    fail("MODES-Block nicht parsebar fuer 19e-Check")
