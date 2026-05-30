@@ -27322,5 +27322,412 @@
       "q": "Hamburg-Altona",
       "a": "AHAT"
     }
+  ],
+  "bahnhof_pin": [
+    {
+      "n": "Frankfurt (Main) Hbf",
+      "lat": 50.107,
+      "lng": 8.663
+    },
+    {
+      "n": "München Hbf",
+      "lat": 48.14,
+      "lng": 11.558
+    },
+    {
+      "n": "Hamburg Hbf",
+      "lat": 53.553,
+      "lng": 10.007
+    },
+    {
+      "n": "Berlin Hbf",
+      "lat": 52.525,
+      "lng": 13.369
+    },
+    {
+      "n": "Köln Hbf",
+      "lat": 50.943,
+      "lng": 6.959
+    },
+    {
+      "n": "Mannheim Hbf",
+      "lat": 49.479,
+      "lng": 8.47
+    },
+    {
+      "n": "Heidelberg Hbf",
+      "lat": 49.404,
+      "lng": 8.676
+    },
+    {
+      "n": "Wiesloch-Walldorf Bhf",
+      "lat": 49.291,
+      "lng": 8.641
+    },
+    {
+      "n": "Stuttgart Hbf",
+      "lat": 48.784,
+      "lng": 9.183
+    },
+    {
+      "n": "Düsseldorf Hbf",
+      "lat": 51.22,
+      "lng": 6.794
+    },
+    {
+      "n": "Leipzig Hbf",
+      "lat": 51.347,
+      "lng": 12.381
+    },
+    {
+      "n": "Nürnberg Hbf",
+      "lat": 49.446,
+      "lng": 11.082
+    },
+    {
+      "n": "Dresden Hbf",
+      "lat": 51.04,
+      "lng": 13.733
+    },
+    {
+      "n": "Bremen Hbf",
+      "lat": 53.083,
+      "lng": 8.814
+    },
+    {
+      "n": "Hannover Hbf",
+      "lat": 52.377,
+      "lng": 9.742
+    },
+    {
+      "n": "Dortmund Hbf",
+      "lat": 51.518,
+      "lng": 7.46
+    },
+    {
+      "n": "Freiburg (Breisgau) Hbf",
+      "lat": 47.997,
+      "lng": 7.84
+    },
+    {
+      "n": "Erfurt Hbf",
+      "lat": 50.972,
+      "lng": 11.038
+    },
+    {
+      "n": "Augsburg Hbf",
+      "lat": 48.365,
+      "lng": 10.886
+    },
+    {
+      "n": "Karlsruhe Hbf",
+      "lat": 48.994,
+      "lng": 8.401
+    },
+    {
+      "n": "Wien Hbf",
+      "lat": 48.185,
+      "lng": 16.376
+    },
+    {
+      "n": "Wien Westbahnhof",
+      "lat": 48.197,
+      "lng": 16.338
+    },
+    {
+      "n": "Salzburg Hbf",
+      "lat": 47.813,
+      "lng": 13.045
+    },
+    {
+      "n": "Innsbruck Hbf",
+      "lat": 47.263,
+      "lng": 11.401
+    },
+    {
+      "n": "Zürich HB",
+      "lat": 47.378,
+      "lng": 8.54
+    },
+    {
+      "n": "Bern Bahnhof",
+      "lat": 46.949,
+      "lng": 7.44
+    },
+    {
+      "n": "Basel SBB",
+      "lat": 47.547,
+      "lng": 7.59
+    },
+    {
+      "n": "Paris Gare de Lyon",
+      "lat": 48.845,
+      "lng": 2.373
+    },
+    {
+      "n": "Paris Gare du Nord",
+      "lat": 48.881,
+      "lng": 2.355
+    },
+    {
+      "n": "Lyon Part-Dieu",
+      "lat": 45.76,
+      "lng": 4.86
+    },
+    {
+      "n": "Marseille Saint-Charles",
+      "lat": 43.303,
+      "lng": 5.38
+    },
+    {
+      "n": "London St Pancras International",
+      "lat": 51.532,
+      "lng": -0.123
+    },
+    {
+      "n": "London Waterloo",
+      "lat": 51.503,
+      "lng": -0.113
+    },
+    {
+      "n": "Edinburgh Waverley",
+      "lat": 55.952,
+      "lng": -3.19
+    },
+    {
+      "n": "Amsterdam Centraal",
+      "lat": 52.379,
+      "lng": 4.9
+    },
+    {
+      "n": "Brüssel Midi/Zuid",
+      "lat": 50.836,
+      "lng": 4.337
+    },
+    {
+      "n": "Rotterdam Centraal",
+      "lat": 51.924,
+      "lng": 4.469
+    },
+    {
+      "n": "Madrid Atocha",
+      "lat": 40.408,
+      "lng": -3.69
+    },
+    {
+      "n": "Barcelona Sants",
+      "lat": 41.379,
+      "lng": 2.14
+    },
+    {
+      "n": "Lisboa Oriente",
+      "lat": 38.768,
+      "lng": -9.099
+    },
+    {
+      "n": "Roma Termini",
+      "lat": 41.901,
+      "lng": 12.501
+    },
+    {
+      "n": "Milano Centrale",
+      "lat": 45.486,
+      "lng": 9.205
+    },
+    {
+      "n": "Venezia Santa Lucia",
+      "lat": 45.441,
+      "lng": 12.321
+    },
+    {
+      "n": "Oslo Sentralstasjon",
+      "lat": 59.909,
+      "lng": 10.75
+    },
+    {
+      "n": "Bergen stasjon",
+      "lat": 60.39,
+      "lng": 5.333
+    },
+    {
+      "n": "Stockholm Centralstation",
+      "lat": 59.33,
+      "lng": 18.058
+    },
+    {
+      "n": "Kopenhagen Hauptbahnhof (København H)",
+      "lat": 55.673,
+      "lng": 12.565
+    },
+    {
+      "n": "Praha hlavní nádraží (Prag)",
+      "lat": 50.083,
+      "lng": 14.435
+    },
+    {
+      "n": "Kraków Główny (Krakau)",
+      "lat": 50.067,
+      "lng": 19.945
+    },
+    {
+      "n": "Warschau Centralny",
+      "lat": 52.229,
+      "lng": 21.003
+    },
+    {
+      "n": "Budapest Keleti",
+      "lat": 47.5,
+      "lng": 19.084
+    },
+    {
+      "n": "Wien Franz-Josefs-Bahnhof",
+      "lat": 48.232,
+      "lng": 16.36
+    },
+    {
+      "n": "Moskau Jaroslawskij-Bahnhof",
+      "lat": 55.774,
+      "lng": 37.656
+    },
+    {
+      "n": "Kiew Hauptbahnhof (Kyiv-Pasazhyrskyi)",
+      "lat": 50.441,
+      "lng": 30.487
+    },
+    {
+      "n": "New York Grand Central Terminal",
+      "lat": 40.753,
+      "lng": -73.977
+    },
+    {
+      "n": "Chicago Union Station",
+      "lat": 41.879,
+      "lng": -87.64
+    },
+    {
+      "n": "Los Angeles Union Station",
+      "lat": 34.056,
+      "lng": -118.236
+    },
+    {
+      "n": "Washington DC Union Station",
+      "lat": 38.898,
+      "lng": -77.007
+    },
+    {
+      "n": "San Francisco Caltrain Depot",
+      "lat": 37.776,
+      "lng": -122.395
+    },
+    {
+      "n": "Toronto Union Station",
+      "lat": 43.645,
+      "lng": -79.381
+    },
+    {
+      "n": "Estação da Luz (São Paulo)",
+      "lat": -23.534,
+      "lng": -46.644
+    },
+    {
+      "n": "Central do Brasil (Rio de Janeiro)",
+      "lat": -22.911,
+      "lng": -43.174
+    },
+    {
+      "n": "Estación Retiro (Buenos Aires)",
+      "lat": -34.592,
+      "lng": -58.374
+    },
+    {
+      "n": "Tokyo Station",
+      "lat": 35.681,
+      "lng": 139.766
+    },
+    {
+      "n": "Shinjuku Station",
+      "lat": 35.69,
+      "lng": 139.7
+    },
+    {
+      "n": "Osaka Station",
+      "lat": 34.703,
+      "lng": 135.496
+    },
+    {
+      "n": "Kyoto Station",
+      "lat": 34.986,
+      "lng": 135.759
+    },
+    {
+      "n": "Beijing West Railway Station",
+      "lat": 39.895,
+      "lng": 116.322
+    },
+    {
+      "n": "Shanghai Hongqiao Railway Station",
+      "lat": 31.195,
+      "lng": 121.317
+    },
+    {
+      "n": "Guangzhou South Railway Station",
+      "lat": 22.974,
+      "lng": 113.267
+    },
+    {
+      "n": "Mumbai Chhatrapati Shivaji Maharaj Terminus",
+      "lat": 18.94,
+      "lng": 72.835
+    },
+    {
+      "n": "New Delhi Railway Station",
+      "lat": 28.642,
+      "lng": 77.219
+    },
+    {
+      "n": "Dubai Union Station (Etihad Rail)",
+      "lat": 25.179,
+      "lng": 55.261
+    },
+    {
+      "n": "Casablanca-Voyageurs (Marokko)",
+      "lat": 33.594,
+      "lng": -7.619
+    },
+    {
+      "n": "Cairo Ramses Station (Ägypten)",
+      "lat": 30.063,
+      "lng": 31.248
+    },
+    {
+      "n": "Sydney Central Station",
+      "lat": -33.883,
+      "lng": 151.206
+    },
+    {
+      "n": "Melbourne Southern Cross Station",
+      "lat": -37.818,
+      "lng": 144.953
+    },
+    {
+      "n": "Istanbul Sirkeci (historisch)",
+      "lat": 41.018,
+      "lng": 28.974
+    },
+    {
+      "n": "Athen Larissa-Bahnhof",
+      "lat": 37.995,
+      "lng": 23.722
+    },
+    {
+      "n": "Taipei Main Station",
+      "lat": 25.048,
+      "lng": 121.517
+    },
+    {
+      "n": "Cape Town Station",
+      "lat": -33.923,
+      "lng": 18.424
+    }
   ]
 }

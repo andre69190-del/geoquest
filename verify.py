@@ -163,6 +163,11 @@ for fname in [
         'tech_pin.json', 'tech_hl.json', 'tech_match.json', 'tech_ws.json',
         'emob_pin.json', 'emob_hl.json', 'emob_match.json', 'emob_ws.json',
         'archaeologie_pin.json', 'archaeologie_hl.json', 'archaeologie_match.json', 'archaeologie_ws.json',
+        # Phase 296: neue Pakete (bisher fehlend)
+        'geo_hl.json', 'geo_match.json', 'geo_pin.json', 'geo_ws.json',
+        'astro_hl.json', 'astro_match.json', 'astro_pin.json', 'astro_ws.json',
+        'sport_hl.json', 'sport_match.json', 'sport_pin.json', 'sport_ws.json',
+        'tiere_pin.json', 'timeline.json',
     ]:
     path = os.path.join(DATA_DIR, fname)
     if not os.path.isfile(path):
@@ -334,6 +339,127 @@ if seed_fn:
         fail("getDailySeed() not using toISOString() — may be locale-dependent")
 else:
     fail("getDailySeed() not found")
+
+# -- 19. Zug-Daten Plausibilitäts-Validatoren ---------
+section("19. Train data validators (Phase 296)")
+import json as _json
+
+# 19a: HL-Zugdaten in sport_hl.json
+_shl_path = os.path.join(DATA_DIR, 'sport_hl.json')
+if os.path.isfile(_shl_path):
+    with open(_shl_path, 'r', encoding='utf-8') as _f:
+        _shl = _json.load(_f)
+    for _key, _limits in [
+        ('zug_speed', ('km/h',   0,  650)),
+        ('zug_jahr',  ('Jahr', 1800, 2035)),
+        ('zug_km',    ('km',     0, 15000)),
+    ]:
+        if _key not in _shl:
+            fail(f"sport_hl.json: Key '{_key}' fehlt")
+            continue
+        _items = _shl[_key].get('items', [])
+        _unit, _lo, _hi = _limits
+        _bad = []
+        for _it in _items:
+            if 'name' not in _it or not _it['name']:
+                _bad.append(f"name fehlt: {_it}")
+            elif 'val' not in _it:
+                _bad.append(f"val fehlt: {_it['name']}")
+            elif not (_lo <= float(_it['val']) <= _hi):
+                _bad.append(f"val {_it['val']} außerhalb [{_lo},{_hi}]: {_it['name']}")
+        if _bad:
+            fail(f"sport_hl[{_key}]: {len(_bad)} fehlerhafte Items: {_bad[:2]}")
+        else:
+            ok(f"sport_hl[{_key}]: {len(_items)} Items valid (range {_lo}–{_hi} {_unit})")
+else:
+    fail("sport_hl.json nicht gefunden")
+
+# 19b: DS100-Daten in kultur.json
+_kpath = os.path.join(DATA_DIR, 'kultur.json')
+if os.path.isfile(_kpath):
+    with open(_kpath, 'r', encoding='utf-8') as _f:
+        _kd = _json.load(_f)
+    if 'ds100' not in _kd:
+        fail("kultur.json: 'ds100' Key fehlt")
+    else:
+        import re as _re
+        _ds100 = _kd['ds100']
+        _ds_bad = []
+        for _entry in _ds100:
+            _q = _entry.get('q', '')
+            _a = _entry.get('a', '')
+            if not _q:
+                _ds_bad.append(f"leere Frage: {_entry}")
+            elif not _a:
+                _ds_bad.append(f"leere Antwort: {_entry}")
+            elif len(_a) > 5:
+                _ds_bad.append(f"Kürzel >{5} Zeichen: {_a!r}")
+            elif not _re.match(r'^[A-Za-z]+$', _a):
+                _ds_bad.append(f"Kürzel ungültige Zeichen: {_a!r}")
+        if _ds_bad:
+            fail(f"kultur.json[ds100]: {len(_ds_bad)} Fehler: {_ds_bad[:3]}")
+        else:
+            ok(f"kultur.json[ds100]: {len(_ds100)} Einträge valid (max 5 Zeichen, nur A-Za-z)")
+
+    # zug_panorama und zug_vkm prüfen
+    for _mkey in ['zug_panorama', 'zug_vkm']:
+        if _mkey not in _kd:
+            fail(f"kultur.json: '{_mkey}' fehlt")
+            continue
+        _mitems = _kd[_mkey]
+        _m_bad = [x for x in _mitems if not x.get('n') or not x.get('c')]
+        _unique_c = len(set(x.get('c','') for x in _mitems))
+        if _m_bad:
+            fail(f"kultur.json[{_mkey}]: {len(_m_bad)} Items ohne n/c: {_m_bad[:2]}")
+        elif _unique_c < 4:
+            fail(f"kultur.json[{_mkey}]: nur {_unique_c} unique Kategorien (min 4 für Match-Engine)")
+        else:
+            ok(f"kultur.json[{_mkey}]: {len(_mitems)} Items, {_unique_c} Kategorien ✓")
+
+# 19c: Timeline zug_hsb
+_tpath = os.path.join(DATA_DIR, 'timeline.json')
+if os.path.isfile(_tpath):
+    with open(_tpath, 'r', encoding='utf-8') as _f:
+        _td = _json.load(_f)
+    if 'zug_hsb' not in _td:
+        fail("timeline.json: 'zug_hsb' Key fehlt")
+    else:
+        _tl = _td['zug_hsb'].get('items', [])
+        _tl_bad = []
+        for _ti in _tl:
+            _yr = _ti.get('year')
+            if _yr is None:
+                _tl_bad.append(f"year fehlt: {_ti.get('n','?')[:40]}")
+            elif not isinstance(_yr, int):
+                _tl_bad.append(f"year kein int: {_yr}")
+            elif not (1800 <= _yr <= 2035):
+                _tl_bad.append(f"year {_yr} außerhalb [1800,2035]: {_ti.get('n','?')[:30]}")
+            if not _ti.get('n'):
+                _tl_bad.append(f"n fehlt bei year={_yr}")
+        if _tl_bad:
+            fail(f"timeline[zug_hsb]: {len(_tl_bad)} Fehler: {_tl_bad[:3]}")
+        else:
+            _sorted_ok = _tl == sorted(_tl, key=lambda x: x.get('year',0))
+            ok(f"timeline[zug_hsb]: {len(_tl)} Items, Jahre {min(x['year'] for x in _tl)}–{max(x['year'] for x in _tl)}, sortierbar ✓")
+
+# 19d: WS Zug-Einträge in tiere_ws.json
+_wpath = os.path.join(DATA_DIR, 'tiere_ws.json')
+if os.path.isfile(_wpath):
+    with open(_wpath, 'r', encoding='utf-8') as _f:
+        _wd = _json.load(_f)
+    _zug_ws = {k: v for k, v in _wd.items() if k.startswith('zug_')}
+    _ws_bad = []
+    for _wk, _wv in _zug_ws.items():
+        _word = _wv.get('word', '')
+        if not _word or not _word.isupper() or ' ' in _word:
+            _ws_bad.append(f"{_wk}: word={_word!r} ungültig (muss Großbuchstaben, kein Leerzeichen)")
+        if not _wv.get('validWords', {}).get('de') and not _wv.get('validWords', {}).get('en'):
+            _ws_bad.append(f"{_wk}: keine validWords")
+    if _ws_bad:
+        fail(f"tiere_ws.json Zug-WS: {len(_ws_bad)} Fehler: {_ws_bad[:3]}")
+    else:
+        ok(f"tiere_ws.json: {len(_zug_ws)} Zug-WS-Einträge valid (Großbuchstaben, validWords vorhanden)")
+
 
 # =============================================================
 print("\n" + "=" * 58)

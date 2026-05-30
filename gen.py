@@ -490,6 +490,33 @@ function generateWordGenGame() {
 }
 
 
+
+/* Phase 296.3: DS100 Multiple-Choice-Modus
+   Zeigt Bahnhofsnamen → Spieler wählt das richtige Kürzel (4 ähnliche Optionen) */
+function genDS100McQ(){
+  const pool=KULTUR_DATA.ds100;
+  if(!pool||pool.length<4)return null;
+  const cor=pool[~~(rng()*pool.length)];
+  if(!cor||!cor.q||!cor.a)return null;
+  /* Distraktoren: gleicher Länder-Prefix bevorzugt (z.B. F* für FF) */
+  const prefix=cor.a[0];
+  const samePfx=pool.filter(x=>x.a!==cor.a&&x.a[0]===prefix);
+  const others=sh(pool.filter(x=>x.a!==cor.a));
+  const disPfx=sh(samePfx).slice(0,2).map(x=>x.a);
+  const disRnd=sh(others.filter(x=>!disPfx.includes(x.a))).slice(0,3-disPfx.length).map(x=>x.a);
+  const dis=sh([...disPfx,...disRnd]).slice(0,3);
+  if(dis.length<3)return null;
+  return{
+    type:"ds100_mc",
+    prompt:"Welches DS100-Betriebsstellenkürzel gehört zu diesem Bahnhof?",
+    subj:cor.q,
+    ans:cor.a,
+    opts:sh([cor.a,...dis]),
+    meta:"Deutsches Betriebsstellenkürzel",
+    lid:"ds100_"+cor.a,
+    cc:""
+  };
+}
 /* Phase 295: removed dead legacy quiz renderers (renderFoodQuiz/Climate/Landmark + handlers) */
 
 
@@ -2772,6 +2799,8 @@ const MODES=[
     {id:"ws_zug_maglev",        icon:"\u{1F524}",title:"WS: Maglev",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: MAGLEV — 6 Buchstaben"},
     {id:"ws_zug_flixzug",        icon:"\u{1F524}",title:"WS: Flixzug",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: FLIXZUG — 7 Buchstaben"},
     {id:"ws_zug_acela",        icon:"\u{1F524}",title:"WS: Acela",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: ACELA — 5 Buchstaben"},
+    {id:"uk_bahnhof_pin",   icon:"\u{1F689}",title:"Bahnhöfe weltweit",             group:"zuege",prompt:"\u{1F4CD} Wo auf der Karte liegt dieser Bahnhof?",       desc:"Grand Central, Tokyo Station, Estação da Luz & 77 weitere"},
+    {id:"zug_ds100",          icon:"\u{1F3AB}",title:"DS100 Kürzel-Quiz",              group:"zuege",prompt:"Welches Betriebsstellenkürzel hat dieser Bahnhof?",        desc:"FF=Frankfurt, MH=München — das Alphabet der Eisenbahn"},
 
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
     {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
@@ -3274,7 +3303,7 @@ const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
-  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","timeline_zug_hsb","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_acela"],cost:0},
+  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","timeline_zug_hsb","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_acela","uk_bahnhof_pin","zug_ds100"],cost:0},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
@@ -9414,6 +9443,8 @@ const GEN={
   ws_zug_maglev:()=>initTierWortSchmiede("zug_maglev"),
   ws_zug_flixzug:()=>initTierWortSchmiede("zug_flixzug"),
   ws_zug_acela:()=>initTierWortSchmiede("zug_acela"),
+  uk_bahnhof_pin:()=>genUniversalPinQ("bahnhof_pin"),
+  zug_ds100:()=>genDS100McQ(),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),
