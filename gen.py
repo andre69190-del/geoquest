@@ -8697,7 +8697,7 @@ function genUniversalMatchQ(cat){
     "insel_match","ehemalige_hauptstaedte","philosophen","nationalpflanzen","nationaltiere","religionen","schriften","nationalsport_off",
     "enklave","grenzfluesse","halbinseln","deltamuendungen","kaps","meerbusen","inselgruppen","gebirge_match","seen_match",
     "automarken","fluggesellschaften","bahnstrecken","hafen_world","kanaele","reedereien","autobahnen_beruhmt","metrostaedte","luft_rekorde",
-    "breitengrad_match","zug_routen"];
+    "zug_routen"];
   const allC=[...new Set(_matchCats.flatMap(k=>(KULTUR_DATA[k]||[]).map(d=>d.c)).filter(c=>c!==cor))];
   const wrong=sh(allC).slice(0,3);
   if(wrong.length<3)return null;
