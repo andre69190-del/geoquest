@@ -461,17 +461,13 @@ if os.path.isfile(_wpath):
         ok(f"tiere_ws.json: {len(_zug_ws)} Zug-WS-Einträge valid (Großbuchstaben, validWords vorhanden)")
 
 
-# =============================================================
-print("\n" + "=" * 58)
-total = len(PASS_LIST) + len(FAIL_LIST)
-print(" Results: " + str(len(PASS_LIST)) + "/" + str(total) + " passed  |  " + str(len(FAIL_LIST)) + " failed")
-print("=" * 58)
-
-if FAIL_LIST:
-    print("\nFAILURES:")
-    for f in FAIL_LIST:
-        print("  [!!] " + f)
-    sys.exit(1)
-else:
-    print("\nALL TESTS PASSED -- build is production-ready.")
-    sys.exit(0)
+# -- 19e. DS100 Hardcore Modus (Input) -------------------------
+section("19e. DS100 Hardcore Modus (Input)")
+if modes_block:
+    ids_19e = re.findall(r'id:"([^"]+)"', modes_block.group(1))
+    has_ds100_hardcore = "zug_ds100_input" in ids_19e
+    if not has_ds100_hardcore:
+        fail("Modus zug_ds100_input (DS100 Hardcore) fehlt in MODES")
+    else:
+        if "genDS100InputQ" not in js:
+            fail("genDS100InputQ fehlt im JS fuer den Hardcore-Modus")
