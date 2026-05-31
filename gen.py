@@ -9891,41 +9891,6 @@ document.addEventListener("keydown",function(e){
     if(k>=1&&k<=4){e.preventDefault();answerByIdx(k-1);}
   }
 });
-function answer(a,tok){
-  if(tok!==_secretGameToken){if(typeof tok!=="undefined")console.warn("%c\uD83D\uDEAB GeoQuest Anti-Cheat: invalid token","color:#ef4444;font-weight:bold");return;}
-  if(!S||!S.q)return; /* P143: guard against missing question */
-  if(S.sel\!==null)return;
-  if(S.qRenderedAt&&Date.now()-S.qRenderedAt<250)return; /* anti-cheat: ignore clicks <250ms after render */
-  clr();
-  const ok=a===S.q.ans;
-  S.sel=a||"__t";S.ok=ok;
-  if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:ok});
-  let pts=0;
-  if(ok){trackTrainDepot();const ns=S.st+1,t=tier(ns);if(S.diff==="casual"||S.diff==="blitz"){pts=10;}else if(S.diff==="survival"){pts=20+S.tm;S.survTimeBonusTotal=(S.survTimeBonusTotal||0)+S.tm;}else{/* hardcore */S.hcMult=Math.min(2.5,parseFloat((+(S.hcMult||1.0)+0.1).toFixed(1)));S.hcMaxMult=Math.max(S.hcMaxMult||1.0,S.hcMult);pts=Math.ceil(10*1.5);}S.sc+=pts;S.st=ns;S.bs=Math.max(S.bs,ns);S.correct++;soundCorrect();if(ns>=3)setTimeout(()=>soundStreak(ns),250);showPtsPopup(pts,S.diff==='hardcore'?'(1.5x)':'');if(navigator.vibrate)navigator.vibrate([50]);}
-  else{S.st=0;if(S.diff==="hardcore"){S.hcMult=1.0;}soundWrong();if(navigator.vibrate)navigator.vibrate([100,50,100]);
-    /* Lives system: casual=infinite(999), hardcore/survival=3 */
-    if(S.diff!=="casual"){
-      S.lives=(S.lives||3)-1;
-      if(S.lives<=0){
-        clr();
-        const survived=S.rd;
-        if(S.diff==="survival"){
-          const sb_prev=parseInt(localStorage.getItem('gq_surv_best')||'0');
-          if(survived>sb_prev)localStorage.setItem('gq_surv_best',String(survived));
-          S.survivalBest=Math.max(survived,sb_prev);
-          if(sb&&sbUser)sb.from("profiles").update({survival_best:Math.max(survived,sbProfile?.survival_best||0)}).eq("id",sbUser.id).then(()=>{},()=>{});
-        }
-        S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
-        saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:survived,date:Date.now(),diff:S.diff,answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});
-        if(sbOK)saveSession(S.mode,S.sc,S.bs,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();});
-        S.pts=pts;S.lid=S.q.lid;render();
-        return;
-      }
-    }
-    /* Casual: retry wrong question */
-    if(S.diff==="casual"&&\!S.q._retry){if(\!S.queueExtra)S.queueExtra=[];S.queueExtra.push({...S.q,_retry:true});}
-  }
-
 // === TRAIN DEPOT ===
 function loadTrainDepot(){var raw=localStorage.getItem("gq_train_depot");return raw?JSON.parse(raw):[];}
 function saveTrainDepot(arr){localStorage.setItem("gq_train_depot",JSON.stringify(arr));}
@@ -9975,7 +9940,42 @@ function showTrainDepot(){
   document.getElementById("app").innerHTML=html;
 }
 
-  /* Phase 43: collect plate with code::country key */
+  function answer(a,tok){
+  if(tok!==_secretGameToken){if(typeof tok!=="undefined")console.warn("%c\uD83D\uDEAB GeoQuest Anti-Cheat: invalid token","color:#ef4444;font-weight:bold");return;}
+  if(!S||!S.q)return; /* P143: guard against missing question */
+  if(S.sel\!==null)return;
+  if(S.qRenderedAt&&Date.now()-S.qRenderedAt<250)return; /* anti-cheat: ignore clicks <250ms after render */
+  clr();
+  const ok=a===S.q.ans;
+  S.sel=a||"__t";S.ok=ok;
+  if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:ok});
+  let pts=0;
+  if(ok){trackTrainDepot();const ns=S.st+1,t=tier(ns);if(S.diff==="casual"||S.diff==="blitz"){pts=10;}else if(S.diff==="survival"){pts=20+S.tm;S.survTimeBonusTotal=(S.survTimeBonusTotal||0)+S.tm;}else{/* hardcore */S.hcMult=Math.min(2.5,parseFloat((+(S.hcMult||1.0)+0.1).toFixed(1)));S.hcMaxMult=Math.max(S.hcMaxMult||1.0,S.hcMult);pts=Math.ceil(10*1.5);}S.sc+=pts;S.st=ns;S.bs=Math.max(S.bs,ns);S.correct++;soundCorrect();if(ns>=3)setTimeout(()=>soundStreak(ns),250);showPtsPopup(pts,S.diff==='hardcore'?'(1.5x)':'');if(navigator.vibrate)navigator.vibrate([50]);}
+  else{S.st=0;if(S.diff==="hardcore"){S.hcMult=1.0;}soundWrong();if(navigator.vibrate)navigator.vibrate([100,50,100]);
+    /* Lives system: casual=infinite(999), hardcore/survival=3 */
+    if(S.diff!=="casual"){
+      S.lives=(S.lives||3)-1;
+      if(S.lives<=0){
+        clr();
+        const survived=S.rd;
+        if(S.diff==="survival"){
+          const sb_prev=parseInt(localStorage.getItem('gq_surv_best')||'0');
+          if(survived>sb_prev)localStorage.setItem('gq_surv_best',String(survived));
+          S.survivalBest=Math.max(survived,sb_prev);
+          if(sb&&sbUser)sb.from("profiles").update({survival_best:Math.max(survived,sbProfile?.survival_best||0)}).eq("id",sbUser.id).then(()=>{},()=>{});
+        }
+        S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
+        saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:survived,date:Date.now(),diff:S.diff,answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});
+        if(sbOK)saveSession(S.mode,S.sc,S.bs,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();});
+        S.pts=pts;S.lid=S.q.lid;render();
+        return;
+      }
+    }
+    /* Casual: retry wrong question */
+    if(S.diff==="casual"&&\!S.q._retry){if(\!S.queueExtra)S.queueExtra=[];S.queueExtra.push({...S.q,_retry:true});}
+  }
+
+/* Phase 43: collect plate with code::country key */
   if(ok&&(S.mode==="plate_casual"||S.mode==="plate_hard")&&S.q.subj){
     const _code=S.q.subj;
     const _pc=PLATES_DATA.find(p=>p.code===_code);
