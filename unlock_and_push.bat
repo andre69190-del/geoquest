@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 323. Kultur-Balancing: wahrzeichen +40, museen +23, kunstwerke +21 — 16 unterrepräsentierte Länder (PL/CZ/HU/RO/SE/NO/FI/DK/HR/BG/BE/SK/NL/PT) ergänzt. verify: 138/138."
+git commit -m "Content: Phase 324. Gastronomie-Arrays geografisch ausbalanciert: nationalgerichte (+30), streetfood (neu, 32), hausmannskost (+20), suessspeisen (neu, 31) — Fokus Ziel-Länder EU-Ost/Nord/West. verify: 138/138."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

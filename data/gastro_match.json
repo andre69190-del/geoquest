@@ -201,6 +201,86 @@
       {
         "n": "Goulash (Gulyás)",
         "c": "Ungarn"
+      },
+      {
+        "n": "Svíčková na smetaně",
+        "c": "Tschechien"
+      },
+      {
+        "n": "Vepřo-knedlo-zelo",
+        "c": "Tschechien"
+      },
+      {
+        "n": "Sarmale",
+        "c": "Rumänien"
+      },
+      {
+        "n": "Mămăligă",
+        "c": "Rumänien"
+      },
+      {
+        "n": "Köttbullar",
+        "c": "Schweden"
+      },
+      {
+        "n": "Janssons Frestelse",
+        "c": "Schweden"
+      },
+      {
+        "n": "Fårikål",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Raspeball",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Karjalanpiirakka",
+        "c": "Finnland"
+      },
+      {
+        "n": "Poronkäristys",
+        "c": "Finnland"
+      },
+      {
+        "n": "Peka",
+        "c": "Kroatien"
+      },
+      {
+        "n": "Štrukli",
+        "c": "Kroatien"
+      },
+      {
+        "n": "Kavarma",
+        "c": "Bulgarien"
+      },
+      {
+        "n": "Shkembe Chorba",
+        "c": "Bulgarien"
+      },
+      {
+        "n": "Bacalhau à Brás",
+        "c": "Portugal"
+      },
+      {
+        "n": "Caldo Verde",
+        "c": "Portugal"
+      },
+      {
+        "n": "Stoofvlees met friet",
+        "c": "Belgien"
+      },
+      {
+        "n": "Waterzooi",
+        "c": "Belgien"
+      },
+      {
+        "n": "Bryndzové halušky",
+        "c": "Slowakei"
+      },
+      {
+        "n": "Kapustnica",
+        "c": "Slowakei"
       }
     ]
   },
@@ -4174,6 +4254,135 @@
       {
         "n": "Transoxanien (Sogdia) — Händlerregion",
         "c": "Zentralasien"
+      }
+    ]
+  },
+  "suessspeisen": {
+    "prompt": "Aus welchem Land stammt diese Süßspeise?",
+    "items": [
+      {
+        "n": "Pączki",
+        "c": "Polen"
+      },
+      {
+        "n": "Makowiec",
+        "c": "Polen"
+      },
+      {
+        "n": "Kolache",
+        "c": "Tschechien"
+      },
+      {
+        "n": "Trdelník",
+        "c": "Tschechien"
+      },
+      {
+        "n": "Kürtőskalács",
+        "c": "Ungarn"
+      },
+      {
+        "n": "Dobostorte",
+        "c": "Ungarn"
+      },
+      {
+        "n": "Cozonac",
+        "c": "Rumänien"
+      },
+      {
+        "n": "Papanași",
+        "c": "Rumänien"
+      },
+      {
+        "n": "Kanelbulle",
+        "c": "Schweden"
+      },
+      {
+        "n": "Kladdkaka",
+        "c": "Schweden"
+      },
+      {
+        "n": "Krumkake",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Rømmegrøt",
+        "c": "Norwegen"
+      },
+      {
+        "n": "Pulla",
+        "c": "Finnland"
+      },
+      {
+        "n": "Runebergintorttu",
+        "c": "Finnland"
+      },
+      {
+        "n": "Æbleskiver",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Wienerbrød",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Fritule",
+        "c": "Kroatien"
+      },
+      {
+        "n": "Rožata",
+        "c": "Kroatien"
+      },
+      {
+        "n": "Baklava",
+        "c": "Bulgarien"
+      },
+      {
+        "n": "Tikvenik",
+        "c": "Bulgarien"
+      },
+      {
+        "n": "Loukoumades",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Galaktoboureko",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Pastel de Nata",
+        "c": "Portugal"
+      },
+      {
+        "n": "Arroz Doce",
+        "c": "Portugal"
+      },
+      {
+        "n": "Stroopwafel",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Poffertjes",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Speculoos",
+        "c": "Belgien"
+      },
+      {
+        "n": "Gaufre de Bruxelles",
+        "c": "Belgien"
+      },
+      {
+        "n": "Medovník",
+        "c": "Slowakei"
+      },
+      {
+        "n": "Šúľance s makom",
+        "c": "Slowakei"
+      },
+      {
+        "n": "Lokum",
+        "c": "Türkei"
       }
     ]
   }

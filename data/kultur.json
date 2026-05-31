@@ -319,6 +319,102 @@
     {
       "n": "Rum Zuckerrohr destilliert",
       "c": "Karibik"
+    },
+    {
+      "n": "Żubrówka (Bison Grass Vodka)",
+      "c": "Polen"
+    },
+    {
+      "n": "Tyskie (Bier)",
+      "c": "Polen"
+    },
+    {
+      "n": "Pilsner Urquell",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Becherovka (Kräuterlikör)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Tuica (Pflaumenschnaps)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Vişinată (Sauerkirschlikör)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Absolut Vodka",
+      "c": "Schweden"
+    },
+    {
+      "n": "Glögg (Glühwein)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Aquavit",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Ringnes (Bier)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Carlsberg (Bier)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Gammel Dansk (Kräuterbitter)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Travarica (Kräuterschnaps)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Karlovačko (Bier)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Mastika (Anisschnaps)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Boza (Getreidebier)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Ginjinha (Sauerkirschlikör)",
+      "c": "Portugal"
+    },
+    {
+      "n": "Sagres (Bier)",
+      "c": "Portugal"
+    },
+    {
+      "n": "Jenever (Wacholderbranntwein)",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Heineken (Bier)",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Lambic (Spontangärbier)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Kriek (Kirschbier)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Borovička (Wacholderbranntwein)",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Kofola (Softdrink)",
+      "c": "Slowakei"
     }
   ],
   "streetfood": [
@@ -641,6 +737,70 @@
     {
       "n": "Gyoza Teigtasche gebraten",
       "c": "Japan"
+    },
+    {
+      "n": "Zapiekanka (polnisches Streetfood)",
+      "c": "Polen"
+    },
+    {
+      "n": "Trdelník (Schornsteinkuchen)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Lángos (frittiertes Fladenbrot)",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Kürtőskalács (Schornsteinkuchen)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Grillad korv (Grillwurst)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Vafler (Waffeln mit Sauerrahm)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Munkki (Berliner)",
+      "c": "Finnland"
+    },
+    {
+      "n": "Ristet hotdog (dänischer Hotdog)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Burek sa sirom (Käsegebäck)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Mekitsa (frittierter Teig)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Koulouri (Sesamkringel)",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Pastel de Nata (Puddingtörtchen)",
+      "c": "Portugal"
+    },
+    {
+      "n": "Stroopwafel",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Gaufre de Liège (Lütticher Waffel)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Langoše (frittiertes Fladenbrot)",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Simit (Sesamkringel)",
+      "c": "Türkei"
     }
   ],
   "kaese": [
@@ -963,6 +1123,54 @@
     {
       "n": "Mahón-Menorca",
       "c": "Spanien"
+    },
+    {
+      "n": "Oscypek (geräucherter Schafskäse)",
+      "c": "Polen"
+    },
+    {
+      "n": "Olomoucké tvarůžky (Olmützer Quargel)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Hermelin (tschechischer Weichkäse)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Pálpusztai (ungarischer Streichkäse)",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Kashkaval (Balkankäse)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Brânză de burduf (rumänischer Schafskäse)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Västerbottensost (schwedischer Hartkäse)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Brunost (norwegischer Molkenkäse)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Emmental (Schweizer im finnischen Stil)",
+      "c": "Finnland"
+    },
+    {
+      "n": "Paški sir (dalmatinischer Schafskäse)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Kačkavalj (bulgarischer Hartkäse)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Feta (griechischer Weichkäse)",
+      "c": "Griechenland"
     }
   ],
   "suessspeisen": [
@@ -1285,6 +1493,82 @@
     {
       "n": "Madeleine",
       "c": "Frankreich"
+    },
+    {
+      "n": "Pączki (polnische Krapfen)",
+      "c": "Polen"
+    },
+    {
+      "n": "Kremówka papieska (Vanillecreme-Schnitte)",
+      "c": "Polen"
+    },
+    {
+      "n": "Svíčková-Knödel mit Preiselbeersauce",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Trdelník mit Eis",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Kürtőskalács (Schornsteinkuchen)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Papanași (frittierte Quarkbällchen)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Kanelbulle (Zimtschnecke)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Semlor (Faschingskrapfen)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Lefse (Kartoffelfladen)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Pulla (Kardamongebäck)",
+      "c": "Finnland"
+    },
+    {
+      "n": "Aebleskiver (dänische Pfannkuchenbällchen)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Rožata (kroatische Crème brûlée)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Fritule (kroatische Mini-Donuts)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Banitsa (bulgarisches Blätterteiggebäck)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Tulumba (frittierter Teig in Sirup)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Speculaas (Gewürzplätzchen)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Pralines (belgische Pralinen)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Trdelník mit Sahne (Bratislava)",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Medovník (tschechisch-slowakischer Honigkuchen)",
+      "c": "Slowakei"
     }
   ],
   "kaffee": [

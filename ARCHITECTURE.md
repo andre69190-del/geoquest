@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 323 (Stand: Mai 2026)
+**Version:** Phase 324 (Stand: Mai 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.78 MB | 721 Spielmodi | verify: 137/137
 
 ---
@@ -1080,11 +1080,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **321** | patch_321.py | **Neue Modi: Reisezeit-Schätzer (MC) + Strecken-Duell (HL) — 80 europäische Zugstrecken, zug_uic_laender-Duplikat entfernt** |
 | **322** | patch_322.py | **Zug-Reisezeiten Upgrade: Heimvorteil-Algorithmus (70/30, land-basiert), 177 Strecken, Zugtyp im Strecken-Duell, genZugReisezeitHL verbessert** |
 | **323** | patch_323.py | **Kultur-Balancing: wahrzeichen +40, museen +23, kunstwerke +21 — 16 unterrepräsentierte Länder (PL/CZ/HU/RO/SE/NO/FI/DK/HR/BG/BE/SK/NL/PT) ergänzt** |
+| **324** | patches/patch_324_gastro_balancing.py | **Gastronomie-Arrays geografisch ausbalanciert: nationalgerichte (+30), streetfood (neu, 32), hausmannskost (+20), suessspeisen (neu, 31) — Fokus Ziel-Länder EU-Ost/Nord/West** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 323 -- Kultur-Balancing: wahrzeichen +40, museen +23, kunstwerke +21 — 16 unterrepräsentierte Länder (PL/CZ/HU/RO/SE/NO/FI/DK/HR/BG/BE/SK/NL/PT) ergänzt, 539 Modi, 39 Datendateien, Mai 2026.*
+*Letztes Update: Phase 324 -- Gastronomie-Arrays geografisch ausbalanciert: nationalgerichte (+30), streetfood (neu, 32), hausmannskost (+20), suessspeisen (neu, 31) — Fokus Ziel-Länder EU-Ost/Nord/West, 539 Modi, 39 Datendateien, Mai 2026.*
 
 
 ---

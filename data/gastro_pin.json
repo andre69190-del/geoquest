@@ -251,6 +251,156 @@
         "n": "Moussaka (Griechenland)",
         "lat": 37.98,
         "lng": 23.73
+      },
+      {
+        "n": "Svíčková (Prag, Tschechien)",
+        "lat": 50.0755,
+        "lng": 14.4378
+      },
+      {
+        "n": "Vepřo-knedlo-zelo (Brünn, Tschechien)",
+        "lat": 49.1951,
+        "lng": 16.6068
+      },
+      {
+        "n": "Trdelník (Bratislava / Prag)",
+        "lat": 50.0755,
+        "lng": 14.4378
+      },
+      {
+        "n": "Mămăligă (Bukarest, Rumänien)",
+        "lat": 44.4268,
+        "lng": 26.1025
+      },
+      {
+        "n": "Sarmale (Cluj-Napoca, Rumänien)",
+        "lat": 46.7712,
+        "lng": 23.6236
+      },
+      {
+        "n": "Ciorbă de burtă (Bukarest, Rumänien)",
+        "lat": 44.4268,
+        "lng": 26.1025
+      },
+      {
+        "n": "Köttbullar (Stockholm, Schweden)",
+        "lat": 59.3293,
+        "lng": 18.0686
+      },
+      {
+        "n": "Gravlax (Göteborg, Schweden)",
+        "lat": 57.7089,
+        "lng": 11.9746
+      },
+      {
+        "n": "Smörgåsbord (Uppsala, Schweden)",
+        "lat": 59.8586,
+        "lng": 17.6389
+      },
+      {
+        "n": "Rakfisk (Valdres, Norwegen)",
+        "lat": 61.0,
+        "lng": 9.1
+      },
+      {
+        "n": "Fårikål (Oslo, Norwegen)",
+        "lat": 59.9139,
+        "lng": 10.7522
+      },
+      {
+        "n": "Lutefisk (Bergen, Norwegen)",
+        "lat": 60.3913,
+        "lng": 5.3221
+      },
+      {
+        "n": "Karjalanpiirakka (Joensuu, Finnland)",
+        "lat": 62.601,
+        "lng": 29.7636
+      },
+      {
+        "n": "Poronkäristys (Rovaniemi, Finnland)",
+        "lat": 66.5039,
+        "lng": 25.7294
+      },
+      {
+        "n": "Kalakukko (Kuopio, Finnland)",
+        "lat": 62.8924,
+        "lng": 27.678
+      },
+      {
+        "n": "Smørrebrød (Kopenhagen, Dänemark)",
+        "lat": 55.6761,
+        "lng": 12.5683
+      },
+      {
+        "n": "Flæskesteg (Odense, Dänemark)",
+        "lat": 55.4038,
+        "lng": 10.4024
+      },
+      {
+        "n": "Æbleskiver (Aarhus, Dänemark)",
+        "lat": 56.1629,
+        "lng": 10.2039
+      },
+      {
+        "n": "Peka (Split, Kroatien)",
+        "lat": 43.5081,
+        "lng": 16.4402
+      },
+      {
+        "n": "Štrukli (Zagreb, Kroatien)",
+        "lat": 45.815,
+        "lng": 15.9819
+      },
+      {
+        "n": "Pasticada (Dubrovnik, Kroatien)",
+        "lat": 42.6507,
+        "lng": 18.0944
+      },
+      {
+        "n": "Banitsa (Sofia, Bulgarien)",
+        "lat": 42.6977,
+        "lng": 23.3219
+      },
+      {
+        "n": "Kavarma (Plovdiv, Bulgarien)",
+        "lat": 42.1354,
+        "lng": 24.7453
+      },
+      {
+        "n": "Shkembe Chorba (Sofia, Bulgarien)",
+        "lat": 42.6977,
+        "lng": 23.3219
+      },
+      {
+        "n": "Moules-frites (Brüssel, Belgien)",
+        "lat": 50.8503,
+        "lng": 4.3517
+      },
+      {
+        "n": "Stoofvlees (Gent, Belgien)",
+        "lat": 51.0543,
+        "lng": 3.7174
+      },
+      {
+        "n": "Waterzooi (Gent, Belgien)",
+        "lat": 51.0543,
+        "lng": 3.7174
+      },
+      {
+        "n": "Bryndzové halušky (Bratislava, Slowakei)",
+        "lat": 48.1486,
+        "lng": 17.1077
+      },
+      {
+        "n": "Kapustnica (Košice, Slowakei)",
+        "lat": 48.7164,
+        "lng": 21.2611
+      },
+      {
+        "n": "Lokše (Bratislava, Slowakei)",
+        "lat": 48.1486,
+        "lng": 17.1077
       }
     ]
   },
@@ -2291,6 +2441,171 @@
         "n": "Poutine-Festival (Montreal, Kanada)",
         "lat": 45.5017,
         "lng": -73.5673
+      }
+    ]
+  },
+  "streetfood": {
+    "prompt": "Wo findet man dieses Street-Food-Gericht?",
+    "items": [
+      {
+        "n": "Zapiekanka (Krakau, Polen)",
+        "lat": 50.0647,
+        "lng": 19.945
+      },
+      {
+        "n": "Obwarzanek Krakowski (Krakau, Polen)",
+        "lat": 50.0647,
+        "lng": 19.945
+      },
+      {
+        "n": "Párek v rohlíku (Prag, Tschechien)",
+        "lat": 50.0755,
+        "lng": 14.4378
+      },
+      {
+        "n": "Trdelník-Eis (Prag, Tschechien)",
+        "lat": 50.0755,
+        "lng": 14.4378
+      },
+      {
+        "n": "Kürtőskalács (Budapest, Ungarn)",
+        "lat": 47.4979,
+        "lng": 19.0402
+      },
+      {
+        "n": "Lángos (Budapest, Ungarn)",
+        "lat": 47.4979,
+        "lng": 19.0402
+      },
+      {
+        "n": "Covrigi (Bukarest, Rumänien)",
+        "lat": 44.4268,
+        "lng": 26.1025
+      },
+      {
+        "n": "Mici (Bukarest, Rumänien)",
+        "lat": 44.4268,
+        "lng": 26.1025
+      },
+      {
+        "n": "Tunnbrödsrulle (Stockholm, Schweden)",
+        "lat": 59.3293,
+        "lng": 18.0686
+      },
+      {
+        "n": "Räkmacka (Göteborg, Schweden)",
+        "lat": 57.7089,
+        "lng": 11.9746
+      },
+      {
+        "n": "Vafler (Oslo, Norwegen)",
+        "lat": 59.9139,
+        "lng": 10.7522
+      },
+      {
+        "n": "Pølse med lompe (Bergen, Norwegen)",
+        "lat": 60.3913,
+        "lng": 5.3221
+      },
+      {
+        "n": "Makkara (Tampere, Finnland)",
+        "lat": 61.4978,
+        "lng": 23.761
+      },
+      {
+        "n": "Munkki (Helsinki, Finnland)",
+        "lat": 60.1699,
+        "lng": 24.9384
+      },
+      {
+        "n": "Rød Pølse (Kopenhagen, Dänemark)",
+        "lat": 55.6761,
+        "lng": 12.5683
+      },
+      {
+        "n": "Friturestegt flæsk (Aarhus, Dänemark)",
+        "lat": 56.1629,
+        "lng": 10.2039
+      },
+      {
+        "n": "Burek (Zagreb, Kroatien)",
+        "lat": 45.815,
+        "lng": 15.9819
+      },
+      {
+        "n": "Ćevapi (Split, Kroatien)",
+        "lat": 43.5081,
+        "lng": 16.4402
+      },
+      {
+        "n": "Mekitsa (Sofia, Bulgarien)",
+        "lat": 42.6977,
+        "lng": 23.3219
+      },
+      {
+        "n": "Banitsa (Plovdiv, Bulgarien)",
+        "lat": 42.1354,
+        "lng": 24.7453
+      },
+      {
+        "n": "Souvlaki (Athen, Griechenland)",
+        "lat": 37.9838,
+        "lng": 23.7275
+      },
+      {
+        "n": "Koulouri (Thessaloniki, Griechenland)",
+        "lat": 40.6401,
+        "lng": 22.9444
+      },
+      {
+        "n": "Pastel de Nata (Lissabon, Portugal)",
+        "lat": 38.7223,
+        "lng": -9.1393
+      },
+      {
+        "n": "Bifanas (Porto, Portugal)",
+        "lat": 41.1579,
+        "lng": -8.6291
+      },
+      {
+        "n": "Stroopwafel (Gouda, Niederlande)",
+        "lat": 52.0116,
+        "lng": 4.7083
+      },
+      {
+        "n": "Haring (Amsterdam, Niederlande)",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      {
+        "n": "Gaufre de Liège (Lüttich, Belgien)",
+        "lat": 50.6326,
+        "lng": 5.5797
+      },
+      {
+        "n": "Frieten / Frites (Brüssel, Belgien)",
+        "lat": 50.8503,
+        "lng": 4.3517
+      },
+      {
+        "n": "Langoše (Bratislava, Slowakei)",
+        "lat": 48.1486,
+        "lng": 17.1077
+      },
+      {
+        "n": "Trdelník (Bratislava, Slowakei)",
+        "lat": 48.1486,
+        "lng": 17.1077
+      },
+      {
+        "n": "Simit (Istanbul, Türkei)",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "n": "Balık Ekmek (Istanbul, Türkei)",
+        "lat": 41.0082,
+        "lng": 28.9784
       }
     ]
   }
