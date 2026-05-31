@@ -5073,7 +5073,17 @@ function mpCountdown(seed,mode,filt,dif){
       const _ch=S.mp.channel,_oppName=S.mp.oppName||"Gegner";
       window.mpGameCh=_ch;
       _ch.on("broadcast",{event:"score_update"},({payload})=>{
-        S.mpOppScore=payload.score||0;S.mpOppRd=payload.rd||0;if("lid" in payload){S.mpOppLid=payload.lid;S.mpOppSel=payload.sel;S.mpOppSelOk=!!payload.selOk;}
+        S.mpOppScore=payload.score||0;S.mpOppRd=payload.rd||0;
+        if("lid" in payload){
+          S.mpOppLid=payload.lid;
+          /* Phase 318: buffer sel/selOk — only apply after local player has answered */
+          if(S.sel!==null){
+            S.mpOppSel=payload.sel;S.mpOppSelOk=!!payload.selOk;
+          }else if(payload.sel!==undefined){
+            /* Opponent answered before us — store in buffer, apply at reveal */
+            S._mpPendingOppSel=payload.sel;S._mpPendingOppSelOk=!!payload.selOk;
+          }
+        }
         /* Phase 316: opponent answered — trigger reveal if we already locked */
         S.mpOppLocked=true;
         if(S.mpLockAnswer!==undefined){_mpReveal(_secretGameToken);return;}
@@ -5090,11 +5100,35 @@ function mpCountdown(seed,mode,filt,dif){
       })
       /* Phase 316: NEXT_QUESTION — host signals advance (guest waits for this) */
       .on("broadcast",{event:"NEXT_QUESTION"},()=>{
-        if(S.mp?.role!=="host"){ /* guest: advance on host signal */
+        if(S.mpRole==="guest"){ /* Phase 317/319: use S.mpRole (S.mp null during game) */
           clearTimeout(fTo);S.mpOppLocked=false;S.mpLockAnswer=undefined;
+          S._mpPendingOppScore=undefined;S._mpPendingOppRd=undefined; /* Phase 319 */
           const nr=S.rd+1;
           if(S.diff!=="survival"&&nr>=ROUNDS){S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();render();}
           else{S.rd=nr;lq();}
+        }
+      })
+      /* Phase 317/319: GAMEOVER_SYNC — host finished, guest syncs gameover */
+      .on("broadcast",{event:"GAMEOVER_SYNC"},({payload})=>{
+        if(S.mpRole==="guest"&&S.ph!=="gameover"){
+          clearTimeout(fTo);
+          if(S._mpSoftlockTo){clearTimeout(S._mpSoftlockTo);S._mpSoftlockTo=null;}
+          S.mpOppLocked=false;S.mpLockAnswer=undefined;
+          S._mpPendingOppScore=undefined;S._mpPendingOppRd=undefined;
+          S.mpOppFinal=payload;
+          S.ph="gameover";S.scoreSaved=false;S.convModal=true;
+          soundOver();checkMastery();render();
+        }
+      })
+      /* Phase 319: in-game disconnect detection via Supabase system events */
+      .on("system",{},(status)=>{
+        if(status==="CHANNEL_ERROR"||status==="TIMED_OUT"||status==="CLOSED"){
+          mpLog("in-game channel lost:",status);
+          if(S.mpOpponent&&S.ph==="playing"){
+            showToast("⚠️ Verbindung zum Gegner verloren — Spiel wird fortgesetzt.");
+            if(S.mpLockAnswer!==undefined){_mpReveal(_secretGameToken);}
+            window.mpGameCh=null;S.mpOpponent=null;S.mpRole=null;
+          }
         }
       });
       S.mp=null;
@@ -10237,6 +10271,11 @@ function _mpReveal(tok){
   if(S._mpSoftlockTo){clearTimeout(S._mpSoftlockTo);S._mpSoftlockTo=null;}
   if(myAns===undefined)return;
   answer(myAns==='__t'?null:myAns,tok,true); /* _bypassMpLock=true */
+  /* Phase 318: flush buffered opponent sel/selOk now that we have answered */
+  if(S._mpPendingOppSel!==undefined){
+    S.mpOppSel=S._mpPendingOppSel;S.mpOppSelOk=!!S._mpPendingOppSelOk;
+    S._mpPendingOppSel=undefined;S._mpPendingOppSelOk=undefined;
+  }
   /* Phase 317: send sel/selOk AFTER reveal (anti-cheat — opponent gets answer only post-reveal) */
   if(window.mpGameCh&&S.mpOpponent&&S.q){
     var _revAns=myAns==='__t'?null:myAns;
@@ -11003,7 +11042,7 @@ function startGame(m,_mpSeed){
     survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,blitzTimeLeft:S.diff==="blitz"?60:0,lives:S.diff==="casual"?999:3,
     q:null,sel:null,ok:null,slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0,
     /* Phase 217 QA: clear mp carry-over so solo games never show duell HUD */
-    mpOpponent:null,mpOppScore:0,mpOppFinal:null,mpOppRd:0,mpOppSel:null,mpOppLid:null,mpOppSelOk:null});  /* P208/P210: always reset sub-game state on new game */
+    mpOpponent:null,mpOppScore:0,mpOppFinal:null,mpOppRd:0,mpOppSel:null,mpOppLid:null,mpOppSelOk:null,_mpPendingOppSel:undefined,_mpPendingOppSelOk:undefined});  /* P208/P210 + Phase 318 */
   if(_mpSeed!=null)initRng(_mpSeed);  /* P285: MP-Seed VOR erstem lq() -> Runde 1 synchron; Solo/Daily unberührt (undefined) */
   _secretGameToken=Math.random().toString(36).substring(2,15);
   /* Phase 86 – custom puzzle modes */
@@ -12065,7 +12104,8 @@ if(mode==="slf"&&S.ph==="playing"){
         qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;margin:.75rem 0">${_csvg}</div>`;
       }
       { const _isFootball=(q.type==="stadium"||q.type==="jersey"||q.type==="crest");const _isHLBeta=(q.type&&q.type.startsWith('hl_b_'));
-  const btns=(q.opts||[]).map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";const _omk=(S.mpOpponent&&S.mpOppLid===q.lid&&S.mpOppSel!=null&&o===S.mpOppSel)?`<span class="opp-pick" title="Wahl des Gegners" style="margin-left:5px;font-size:.62rem;font-weight:800;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694</span>`:"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${(_isHLBeta&&HL_BETA_CC[o])?`<img src="https://flagcdn.com/w40/${HL_BETA_CC[o].toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:_isFootball&&String(o).length===2?`<img src="https://flagcdn.com/w40/${String(o).toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:""}${esc(q.type==="map_ivr"?o:_isHLBeta?(displayCountry(HL_BETA_CC[o])||o):_isFootball?(displayCountry(String(o))||String(o)):displayCountry(o))}${mk}${_omk}</button>`;}).join("");
+  const btns=(q.opts||[]).map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";/* Phase 318: show opp marker only AFTER local has answered */
+const _omk=(S.mpOpponent&&S.sel!==null&&S.mpOppLid===q.lid&&S.mpOppSel!=null&&o===S.mpOppSel)?`<span class="opp-pick" title="Wahl des Gegners" style="margin-left:5px;font-size:.62rem;font-weight:800;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694</span>`:"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${(_isHLBeta&&HL_BETA_CC[o])?`<img src="https://flagcdn.com/w40/${HL_BETA_CC[o].toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:_isFootball&&String(o).length===2?`<img src="https://flagcdn.com/w40/${String(o).toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:""}${esc(q.type==="map_ivr"?o:_isHLBeta?(displayCountry(HL_BETA_CC[o])||o):_isFootball?(displayCountry(String(o))||String(o)):displayCountry(o))}${mk}${_omk}</button>`;}).join("");
       const _twoOpts=q.opts&&q.opts.length===2?' two-opts':'';
       answerHtml=`<div class="answers${_twoOpts}">${btns}</div>`;
     }
@@ -12099,7 +12139,8 @@ if(mode==="slf"&&S.ph==="playing"){
       </div>
     </div>
     ${S.mpOpponent?`<div class="duell-bar-wrap"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
-    ${(S.mpOpponent&&S.mpOppLid===q.lid&&typeof S.mpOppSel!=="undefined")?`<div style="text-align:center;font-size:.72rem;font-weight:800;margin:1px 0 5px;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694 ${esc(S.mpOpponent.slice(0,10))} ${S.mpOppSel===null?"verpasste die Zeit":"wählte: "+esc(displayCountry(S.mpOppSel)||S.mpOppSel)} ${S.mpOppSelOk?"\u2713":"\u2717"}</div>`:""}
+    ${/* Phase 318: never show opponent answer before local has answered */
+    (S.mpOpponent&&S.sel!==null&&S.mpOppLid===q.lid&&typeof S.mpOppSel!=="undefined")?`<div style="text-align:center;font-size:.72rem;font-weight:800;margin:1px 0 5px;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694 ${esc(S.mpOpponent.slice(0,10))} ${S.mpOppSel===null?"verpasste die Zeit":"wählte: "+esc(displayCountry(S.mpOppSel)||S.mpOppSel)} ${S.mpOppSelOk?"\u2713":"\u2717"}</div>`:""}
     ${st>=3?`<div style="text-align:center;font-size:.76rem;font-weight:700;color:#fb923c;margin-bottom:6px">${_tr.l}</div>`:""}
     <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
     <div class="qcard">${qBody}<div class="qtimer" style="color:${col}">${tm}</div></div>
