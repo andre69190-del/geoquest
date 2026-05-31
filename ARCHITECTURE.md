@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 322 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.77 MB | 721 Spielmodi | verify: 137/137
+**Version:** Phase 323 (Stand: Mai 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.78 MB | 721 Spielmodi | verify: 137/137
 
 ---
 
@@ -1079,11 +1079,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **320** | patch_320.py | **MP Sync: Lock & Reveal, Anti-Cheat, Disconnect UX, Score/Round Buffer, 5500ms Reveal Delay (Phasen 316-320)** |
 | **321** | patch_321.py | **Neue Modi: Reisezeit-Schätzer (MC) + Strecken-Duell (HL) — 80 europäische Zugstrecken, zug_uic_laender-Duplikat entfernt** |
 | **322** | patch_322.py | **Zug-Reisezeiten Upgrade: Heimvorteil-Algorithmus (70/30, land-basiert), 177 Strecken, Zugtyp im Strecken-Duell, genZugReisezeitHL verbessert** |
+| **323** | patch_323.py | **Kultur-Balancing: wahrzeichen +40, museen +23, kunstwerke +21 — 16 unterrepräsentierte Länder (PL/CZ/HU/RO/SE/NO/FI/DK/HR/BG/BE/SK/NL/PT) ergänzt** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 322 -- Zug-Reisezeiten Upgrade: Heimvorteil-Algorithmus (70/30, land-basiert), 177 Strecken, Zugtyp im Strecken-Duell, genZugReisezeitHL verbessert, 539 Modi, 39 Datendateien, Mai 2026.*
+*Letztes Update: Phase 323 -- Kultur-Balancing: wahrzeichen +40, museen +23, kunstwerke +21 — 16 unterrepräsentierte Länder (PL/CZ/HU/RO/SE/NO/FI/DK/HR/BG/BE/SK/NL/PT) ergänzt, 539 Modi, 39 Datendateien, Mai 2026.*
 
 
 ---

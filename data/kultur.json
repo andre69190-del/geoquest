@@ -3218,6 +3218,166 @@
     {
       "n": "Ayers Rock Uluru",
       "c": "Australien"
+    },
+    {
+      "n": "Wawel-Schloss",
+      "c": "Polen"
+    },
+    {
+      "n": "Marienburg (Malbork)",
+      "c": "Polen"
+    },
+    {
+      "n": "Altstadt Krakau",
+      "c": "Polen"
+    },
+    {
+      "n": "Prager Burg",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Karlsbrücke",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Kutná Hora (Knochenkirche)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Parlamentsgebäude Budapest",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Fischerbastei",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Heldendenkmal Budapest",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Schloss Bran",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Parlamentspalast Bukarest",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Sinaia-Kloster",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Gamla Stan Stockholm",
+      "c": "Schweden"
+    },
+    {
+      "n": "Schloss Drottningholm",
+      "c": "Schweden"
+    },
+    {
+      "n": "Kalmar Burg",
+      "c": "Schweden"
+    },
+    {
+      "n": "Bryggen (Bergen)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Holmenkollen-Sprungschanze",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Nidarosdom",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Dom von Helsinki",
+      "c": "Finnland"
+    },
+    {
+      "n": "Festung Suomenlinna",
+      "c": "Finnland"
+    },
+    {
+      "n": "Temppeliaukio-Kirche",
+      "c": "Finnland"
+    },
+    {
+      "n": "Die Kleine Meerjungfrau",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Schloss Kronborg",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Rosenborg Schloss",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Diokletianspalast (Split)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Altstadt Dubrovnik",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Plitvicer Seen",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Rila-Kloster",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Alexander-Newski-Kathedrale",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Antike Stadt Nessebar",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Grand Place Brüssel",
+      "c": "Belgien"
+    },
+    {
+      "n": "Gravensteen Burg (Gent)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Belfried von Brügge",
+      "c": "Belgien"
+    },
+    {
+      "n": "Burg Bratislava",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Spiš-Burg",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Windmühlen von Kinderdijk",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Anne-Frank-Haus",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Keukenhof",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Kloster Jerónimos",
+      "c": "Portugal"
+    },
+    {
+      "n": "Turm von Belém",
+      "c": "Portugal"
     }
   ],
   "feste": [
@@ -7062,6 +7222,144 @@
       "lat": 48.19,
       "lng": 16.38,
       "c": "Österreich"
+    },
+    {
+      "n": "Nationalmuseum Warschau",
+      "lat": 52.231,
+      "lng": 21.014,
+      "c": "Polen"
+    },
+    {
+      "n": "Wawel-Schatzkammer Krakau",
+      "lat": 50.054,
+      "lng": 19.935,
+      "c": "Polen"
+    },
+    {
+      "n": "Nationalmuseum Prag",
+      "lat": 50.076,
+      "lng": 14.431,
+      "c": "Tschechien"
+    },
+    {
+      "n": "Kunsthandwerksmuseum Prag",
+      "lat": 50.089,
+      "lng": 14.414,
+      "c": "Tschechien"
+    },
+    {
+      "n": "Ungarisches Nationalmuseum",
+      "lat": 47.491,
+      "lng": 19.063,
+      "c": "Ungarn"
+    },
+    {
+      "n": "Museum der Schönen Künste Budapest",
+      "lat": 47.515,
+      "lng": 19.077,
+      "c": "Ungarn"
+    },
+    {
+      "n": "Nationalmuseum Rumänien",
+      "lat": 44.432,
+      "lng": 26.098,
+      "c": "Rumänien"
+    },
+    {
+      "n": "Vasa-Museum Stockholm",
+      "lat": 59.328,
+      "lng": 18.091,
+      "c": "Schweden"
+    },
+    {
+      "n": "Munch-Museum Oslo",
+      "lat": 59.903,
+      "lng": 10.753,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Vikingschiff-Museum Oslo",
+      "lat": 59.904,
+      "lng": 10.685,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Nationalmuseum Finnland",
+      "lat": 60.174,
+      "lng": 24.924,
+      "c": "Finnland"
+    },
+    {
+      "n": "Ateneum Kunstmuseum Helsinki",
+      "lat": 60.17,
+      "lng": 24.943,
+      "c": "Finnland"
+    },
+    {
+      "n": "Nationalmuseum Dänemark",
+      "lat": 55.675,
+      "lng": 12.571,
+      "c": "Dänemark"
+    },
+    {
+      "n": "Ny Carlsberg Glyptotek",
+      "lat": 55.672,
+      "lng": 12.571,
+      "c": "Dänemark"
+    },
+    {
+      "n": "Museum der zerbrochenen Beziehungen",
+      "lat": 45.812,
+      "lng": 15.974,
+      "c": "Kroatien"
+    },
+    {
+      "n": "Archäologisches Museum Split",
+      "lat": 43.51,
+      "lng": 16.437,
+      "c": "Kroatien"
+    },
+    {
+      "n": "Nationalhistorisches Museum Sofia",
+      "lat": 42.651,
+      "lng": 23.271,
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Königliche Museen der Schönen Künste",
+      "lat": 50.842,
+      "lng": 4.36,
+      "c": "Belgien"
+    },
+    {
+      "n": "Magritte-Museum Brüssel",
+      "lat": 50.842,
+      "lng": 4.356,
+      "c": "Belgien"
+    },
+    {
+      "n": "Slowakische Nationalgalerie",
+      "lat": 48.143,
+      "lng": 17.106,
+      "c": "Slowakei"
+    },
+    {
+      "n": "Kunstmuseum Lissabon (MNAA)",
+      "lat": 38.709,
+      "lng": -9.135,
+      "c": "Portugal"
+    },
+    {
+      "n": "Calouste-Gulbenkian-Museum",
+      "lat": 38.736,
+      "lng": -9.153,
+      "c": "Portugal"
+    },
+    {
+      "n": "Topkapi-Palast-Museum",
+      "lat": 41.012,
+      "lng": 28.984,
+      "c": "Türkei"
     }
   ],
   "kunstwerke": [
@@ -7544,6 +7842,132 @@
       "lat": 51.52,
       "lng": -0.13,
       "c": "England"
+    },
+    {
+      "n": "Altar von Veit Stoß (Krakau)",
+      "lat": 50.062,
+      "lng": 19.939,
+      "c": "Polen"
+    },
+    {
+      "n": "Schwarze Madonna von Tschenstochau",
+      "lat": 50.814,
+      "lng": 19.093,
+      "c": "Polen"
+    },
+    {
+      "n": "Alfons-Mucha-Gemälde (Prag)",
+      "lat": 50.085,
+      "lng": 14.421,
+      "c": "Tschechien"
+    },
+    {
+      "n": "Böhmische Kronjuwelen (Prager Burg)",
+      "lat": 50.091,
+      "lng": 14.4,
+      "c": "Tschechien"
+    },
+    {
+      "n": "Große Kettenbrücke (Budapest)",
+      "lat": 47.498,
+      "lng": 19.046,
+      "c": "Ungarn"
+    },
+    {
+      "n": "Zsolnay-Keramik (Pécs)",
+      "lat": 46.073,
+      "lng": 18.228,
+      "c": "Ungarn"
+    },
+    {
+      "n": "Säule des Stefan cel Mare (Suceava)",
+      "lat": 47.633,
+      "lng": 26.252,
+      "c": "Rumänien"
+    },
+    {
+      "n": "Fresken der Moldauklöster",
+      "lat": 47.518,
+      "lng": 25.744,
+      "c": "Rumänien"
+    },
+    {
+      "n": "Nacht der Walpurgis (Carl Larsson)",
+      "lat": 60.172,
+      "lng": 14.96,
+      "c": "Schweden"
+    },
+    {
+      "n": "Der Schrei (Edvard Munch)",
+      "lat": 59.903,
+      "lng": 10.753,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Madonna von Akseli Gallen-Kallela",
+      "lat": 60.184,
+      "lng": 24.829,
+      "c": "Finnland"
+    },
+    {
+      "n": "Der Goldene Schnitt – Thorvaldsens Marmorwerke",
+      "lat": 55.674,
+      "lng": 12.577,
+      "c": "Dänemark"
+    },
+    {
+      "n": "Diokletianspalast-Mosaike (Split)",
+      "lat": 43.508,
+      "lng": 16.44,
+      "c": "Kroatien"
+    },
+    {
+      "n": "Thrakischer Goldschatz von Panagyurishte",
+      "lat": 42.501,
+      "lng": 24.183,
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Trionf van de Dood – Bruegel (Brüssel)",
+      "lat": 50.842,
+      "lng": 4.36,
+      "c": "Belgien"
+    },
+    {
+      "n": "Madonna mit dem Tintenfisch (Delft)",
+      "lat": 52.011,
+      "lng": 4.36,
+      "c": "Niederlande"
+    },
+    {
+      "n": "Adoração dos Magos (Hieronymus Bosch)",
+      "lat": 38.709,
+      "lng": -9.135,
+      "c": "Portugal"
+    },
+    {
+      "n": "Miniaturen des Buch von Kells",
+      "lat": 53.343,
+      "lng": -6.255,
+      "c": "Irland"
+    },
+    {
+      "n": "Iznik-Keramik (Istanbul)",
+      "lat": 41.01,
+      "lng": 28.978,
+      "c": "Türkei"
+    },
+    {
+      "n": "Elfenbeinschnitzereien (Griechenland)",
+      "lat": 37.971,
+      "lng": 23.726,
+      "c": "Griechenland"
+    },
+    {
+      "n": "Prienská madona (Bratislava)",
+      "lat": 48.143,
+      "lng": 17.106,
+      "c": "Slowakei"
     }
   ],
   "filmsets": [
