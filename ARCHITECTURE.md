@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 326 (Stand: Mai 2026)
+**Version:** Phase 327 (Stand: Mai 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.78 MB | 721 Spielmodi | verify: 138/138
 
 ---
@@ -1083,11 +1083,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **324** | patches/patch_324_gastro_balancing.py | **Gastronomie-Arrays geografisch ausbalanciert: nationalgerichte (+30), streetfood (neu, 32), hausmannskost (+20), suessspeisen (neu, 31) — Fokus Ziel-Länder EU-Ost/Nord/West** |
 | **325** | patches/patch_325_kultur_balancing.py | **Kultur-Finale: kleidung (+28), instrumente (+26), taenze (+18) — alle 16 Ziel-Länder EU-Ost/Nord/West vollständig abgedeckt** |
 | **326** | patches/patch_326_natur_balancing.py | **Natur-Balancing: nationaltiere (+27), nationalpflanzen (+28), gewuerze (+17), nationalblumen (+15) — 16 Ziel-Länder EU-Ost/Nord/West abgedeckt** |
+| **327** | patches/patch_327_rest_balancing.py | **Sport/Geo/Archäologie-Balancing: sport_herkunft, sport_sportlegende_land, geo_hoehlen_land, repatriierung, megalithanlagen — nur semantisch valide Länder-Arrays erweitert** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 326 -- Natur-Balancing: nationaltiere (+27), nationalpflanzen (+28), gewuerze (+17), nationalblumen (+15) — 16 Ziel-Länder EU-Ost/Nord/West abgedeckt, 539 Modi, 39 Datendateien, Mai 2026.*
+*Letztes Update: Phase 327 -- Sport/Geo/Archäologie-Balancing: sport_herkunft, sport_sportlegende_land, geo_hoehlen_land, repatriierung, megalithanlagen — nur semantisch valide Länder-Arrays erweitert, 539 Modi, 39 Datendateien, Mai 2026.*
 
 
 ---

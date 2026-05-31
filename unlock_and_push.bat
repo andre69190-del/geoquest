@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 326. Natur-Balancing: nationaltiere (+27), nationalpflanzen (+28), gewuerze (+17), nationalblumen (+15) — 16 Ziel-Länder EU-Ost/Nord/West abgedeckt. verify: 138/138."
+git commit -m "Content: Phase 327. Sport/Geo/Archäologie-Balancing: sport_herkunft, sport_sportlegende_land, geo_hoehlen_land, repatriierung, megalithanlagen — nur semantisch valide Länder-Arrays erweitert. verify: 138/138."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

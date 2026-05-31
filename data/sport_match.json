@@ -321,6 +321,78 @@
       {
         "n": "Schwimmen Wettkampf",
         "c": "England"
+      },
+      {
+        "n": "Palant (Schlagballspiel)",
+        "c": "Polen"
+      },
+      {
+        "n": "Sokol-Gymnastik",
+        "c": "Tschechien"
+      },
+      {
+        "n": "Wasserball (internationale Regelentwicklung)",
+        "c": "Ungarn"
+      },
+      {
+        "n": "Oina (rumänisches Schlagballspiel)",
+        "c": "Rumänien"
+      },
+      {
+        "n": "Bandy (Eissport)",
+        "c": "Schweden"
+      },
+      {
+        "n": "Orientierungslauf",
+        "c": "Schweden"
+      },
+      {
+        "n": "Pesäpallo (Finnisches Baseball)",
+        "c": "Finnland"
+      },
+      {
+        "n": "Handball (Feldhandball)",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Picigin (Strandwasserspiel)",
+        "c": "Kroatien"
+      },
+      {
+        "n": "Bulgarisches Ringen (Kabakçı güreş)",
+        "c": "Bulgarien"
+      },
+      {
+        "n": "Antike Olympische Spiele",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Diskuswurf (antike Disziplin)",
+        "c": "Griechenland"
+      },
+      {
+        "n": "Jogo do Pau (Stockfechten)",
+        "c": "Portugal"
+      },
+      {
+        "n": "Korfball",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Fierljeppen (Polsstokspringen)",
+        "c": "Niederlande"
+      },
+      {
+        "n": "Brieftaubenrennen (Colombophilie)",
+        "c": "Belgien"
+      },
+      {
+        "n": "Yağlı güreş / Kırkpınar (Öl-Ringen)",
+        "c": "Türkei"
+      },
+      {
+        "n": "Cirit (Reiterlanzenspiel)",
+        "c": "Türkei"
       }
     ]
   },
@@ -2271,6 +2343,78 @@
       {
         "n": "Steffi Graf Tennis",
         "c": "Deutschland"
+      },
+      {
+        "n": "Robert Lewandowski (Fußball)",
+        "c": "Polen"
+      },
+      {
+        "n": "Anita Włodarczyk (Hammerwurf-Weltrekord)",
+        "c": "Polen"
+      },
+      {
+        "n": "Emil Zátopek (Leichtathletik, 3× Gold Helsinki 1952)",
+        "c": "Tschechien"
+      },
+      {
+        "n": "Jaromír Jágr (Eishockey)",
+        "c": "Tschechien"
+      },
+      {
+        "n": "Nadia Comăneci (Turnen, erste 10,0)",
+        "c": "Rumänien"
+      },
+      {
+        "n": "Gheorghe Hagi (Fußball)",
+        "c": "Rumänien"
+      },
+      {
+        "n": "Paavo Nurmi (Leichtathletik, 9× Olympiagold)",
+        "c": "Finnland"
+      },
+      {
+        "n": "Mika Häkkinen (Formel 1, 2× Weltmeister)",
+        "c": "Finnland"
+      },
+      {
+        "n": "Peter Schmeichel (Fußball-Torwart)",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Caroline Wozniacki (Tennis, US-Open-Siegerin)",
+        "c": "Dänemark"
+      },
+      {
+        "n": "Luka Modrić (Fußball, Ballon d'Or 2018)",
+        "c": "Kroatien"
+      },
+      {
+        "n": "Janica Kostelić (4× Olympiagold Ski Alpin)",
+        "c": "Kroatien"
+      },
+      {
+        "n": "Hristo Stoichkov (Fußball, Ballon d'Or 1994)",
+        "c": "Bulgarien"
+      },
+      {
+        "n": "Stefka Kostadinova (Hochsprung-Weltrekord 2,09 m)",
+        "c": "Bulgarien"
+      },
+      {
+        "n": "Peter Šatan (Eishockey)",
+        "c": "Slowakei"
+      },
+      {
+        "n": "Stan Mikita (Eishockey, NHL-Legende)",
+        "c": "Slowakei"
+      },
+      {
+        "n": "Naim Süleymanoğlu (Gewichtheben, 3× Olympiagold)",
+        "c": "Türkei"
+      },
+      {
+        "n": "Burhan Felek (Leichtathletik-Pionier Türkei)",
+        "c": "Türkei"
       }
     ]
   },

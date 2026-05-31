@@ -806,6 +806,116 @@
         "n": "Carrowkeel Megalith-Friedhof (Sligo, Irland)",
         "lat": 54.08,
         "lng": -8.44
+      },
+      {
+        "n": "Wietrzychowice Langhügel (Polen)",
+        "lat": 52.26,
+        "lng": 18.95
+      },
+      {
+        "n": "Gaj-Megalith (Kujawy, Polen)",
+        "lat": 52.5,
+        "lng": 18.7
+      },
+      {
+        "n": "Mšecké Žehrovice Megalith (Tschechien)",
+        "lat": 50.15,
+        "lng": 13.94
+      },
+      {
+        "n": "Ság-hegy Megalith-Areal (Ungarn)",
+        "lat": 47.53,
+        "lng": 17.19
+      },
+      {
+        "n": "Sarmizegetusa Regia (Dakische Festung, Rumänien)",
+        "lat": 45.62,
+        "lng": 23.31
+      },
+      {
+        "n": "Ales Stenar (Schiffssetzung, Schweden)",
+        "lat": 55.38,
+        "lng": 14.05
+      },
+      {
+        "n": "Blomsholm Schiffssetzung (Schweden)",
+        "lat": 58.67,
+        "lng": 11.4
+      },
+      {
+        "n": "Borre-Grabhügel (Vestfold, Norwegen)",
+        "lat": 59.38,
+        "lng": 10.46
+      },
+      {
+        "n": "Raknehaugen (größter Grabhügel Norwegens)",
+        "lat": 60.09,
+        "lng": 11.35
+      },
+      {
+        "n": "Kong Askers Høj (Dysse, Dänemark)",
+        "lat": 55.79,
+        "lng": 12.02
+      },
+      {
+        "n": "Klekkende Høj (Megalithgrab, Møn)",
+        "lat": 54.97,
+        "lng": 12.5
+      },
+      {
+        "n": "Vela Spila Megalith-Gebiet (Korčula)",
+        "lat": 42.96,
+        "lng": 16.87
+      },
+      {
+        "n": "Thrakische Großgrabhügel Kazanlak (Bulgarien)",
+        "lat": 42.6,
+        "lng": 25.4
+      },
+      {
+        "n": "Svetitsata Megalith-Komplex (Bulgarien)",
+        "lat": 42.39,
+        "lng": 25.64
+      },
+      {
+        "n": "Sesklo (älteste Siedlung Europas, Griechenland)",
+        "lat": 39.38,
+        "lng": 22.7
+      },
+      {
+        "n": "Hunebedden D27 (Borger, Niederlande)",
+        "lat": 52.92,
+        "lng": 6.8
+      },
+      {
+        "n": "Hunebed D53 (Drenthe, Niederlande)",
+        "lat": 52.84,
+        "lng": 6.63
+      },
+      {
+        "n": "Dolmen du Pont d'Arcole (Wallonien, Belgien)",
+        "lat": 50.46,
+        "lng": 4.39
+      },
+      {
+        "n": "Pierre Brunehault (Menhir, Belgien)",
+        "lat": 50.56,
+        "lng": 3.85
+      },
+      {
+        "n": "Svodín Rondell (Neolithikum, Slowakei)",
+        "lat": 47.88,
+        "lng": 18.42
+      },
+      {
+        "n": "Göbekli Tepe (ältestes Heiligtum der Welt)",
+        "lat": 37.22,
+        "lng": 38.92
+      },
+      {
+        "n": "Karahan Tepe (Taş Tepeler, Türkei)",
+        "lat": 37.05,
+        "lng": 39.27
       }
     ]
   },
