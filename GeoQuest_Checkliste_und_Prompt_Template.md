@@ -11,7 +11,7 @@
 
 **ARCHITECTURE.md** — Mindestens diese Felder prüfen/updaten:
 - `**Version:**` — Phase-Nummer und Datum
-- `**Build:**` — Modi-Zahl (z.B. 718 Spielmodi)
+- `**Build:**` — Modi-Zahl (z.B. 721 Spielmodi)
 - Patch-Tabelle am Ende des Dokuments — neue Phase eintragen mit Datum und kurzer Beschreibung
 - Tiere-Modus-Tabelle falls neue tiere/pflanzen/etc. Modi hinzugekommen
 
