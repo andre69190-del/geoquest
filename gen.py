@@ -10353,9 +10353,10 @@ S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
   /* P133: longer delay for text-heavy beta/IATA questions */
   const _qt=S.q&&S.q.type||"";
   /* Phase 316: MP sync — extended reveal delay, guest waits for NEXT_QUESTION */
-  const _isMpHost=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null;
-  const _isMpGuest=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null&&S.mp?.role==="guest";
-  const _fd=_qt==="iata"?2800:(_isMpHost||_isMpGuest)?3500:1900;
+  const _isMpHost=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null&&S.mpRole!=="guest";
+  const _isMpGuest=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null&&S.mpRole==="guest"; /* Phase 317/320: use S.mpRole */
+  /* Phase 320: MP reveal delay extended to 5500ms so players can read both answers */
+  const _fd=(_isMpHost||_isMpGuest)?5500:(_qt==="iata"?2800:1900);
   fTo=setTimeout(()=>{
     if(_isMpGuest){return;} /* Phase 316: guest waits for NEXT_QUESTION from host */
     /* Phase 316: host signals advancement to guest */
