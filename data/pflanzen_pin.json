@@ -3056,6 +3056,86 @@
         "n": "Rafflesia arnoldii (Borneo-Regenwald)",
         "lat": 1.5533,
         "lng": 110.3592
+      },
+      {
+        "n": "Kornblumenfelder Masowien (Polen)",
+        "lat": 52.0,
+        "lng": 21.0
+      },
+      {
+        "n": "Lindenallee Prag (Tschechien)",
+        "lat": 50.0755,
+        "lng": 14.4378
+      },
+      {
+        "n": "Tulpenfelder Debrecen (Ungarn)",
+        "lat": 47.5316,
+        "lng": 21.6273
+      },
+      {
+        "n": "Rosengärten Kazanlak-Stil (Rumänien)",
+        "lat": 45.9432,
+        "lng": 24.9668
+      },
+      {
+        "n": "Linnaea-Vorkommen Dalarna (Schweden)",
+        "lat": 61.0,
+        "lng": 14.5
+      },
+      {
+        "n": "Seerosen-See Mjøsa (Norwegen)",
+        "lat": 60.6,
+        "lng": 10.7
+      },
+      {
+        "n": "Maiglöckchen-Wälder Turku (Finnland)",
+        "lat": 60.4518,
+        "lng": 22.2666
+      },
+      {
+        "n": "Kleefelder Fünen (Dänemark)",
+        "lat": 55.4,
+        "lng": 10.4
+      },
+      {
+        "n": "Iris adriatica (Dalmatien, Kroatien)",
+        "lat": 43.5,
+        "lng": 16.4
+      },
+      {
+        "n": "Rosental Kazanlak (Bulgarien)",
+        "lat": 42.619,
+        "lng": 25.398
+      },
+      {
+        "n": "Olive Athen / Akropolis (Griechenland)",
+        "lat": 37.9715,
+        "lng": 23.7257
+      },
+      {
+        "n": "Lavendelfelder Alentejo (Portugal)",
+        "lat": 38.5,
+        "lng": -7.9
+      },
+      {
+        "n": "Keukenhof Tulpenpark Lisse (Niederlande)",
+        "lat": 52.27,
+        "lng": 4.55
+      },
+      {
+        "n": "Azaleengärten Gent (Belgien)",
+        "lat": 51.0543,
+        "lng": 3.7174
+      },
+      {
+        "n": "Edelweiß Hohe Tatra (Slowakei)",
+        "lat": 49.18,
+        "lng": 20.13
+      },
+      {
+        "n": "Tulpengärten Istanbul (Türkei)",
+        "lat": 41.0082,
+        "lng": 28.9784
       }
     ]
   }

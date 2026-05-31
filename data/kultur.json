@@ -21672,6 +21672,122 @@
     {
       "n": "Mimosa (Acacia)",
       "c": "Australien"
+    },
+    {
+      "n": "Kornblume (Centaurea cyanus)",
+      "c": "Polen"
+    },
+    {
+      "n": "Linde (Tilia cordata)",
+      "c": "Polen"
+    },
+    {
+      "n": "Weißer Klee",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Linde (Tschechien)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Akazie (Robinia pseudoacacia)",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Hundsrose (Rosa canina)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Päonie (Rumänien)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Linnaea (Linnaea borealis)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Trollblume (Trollius europaeus)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Weiß-Seerose (Nymphaea alba)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Purpurheidekraut (Calluna vulgaris)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Maiglöckchen (Convallaria majalis)",
+      "c": "Finnland"
+    },
+    {
+      "n": "Sumpf-Labkraut",
+      "c": "Finnland"
+    },
+    {
+      "n": "Roter Klee (Trifolium pratense)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Buchweizen (Fagopyrum esculentum)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Iris (Iris adriatica)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Degenia (Degenia velebitica)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Traubenpfingstrose (Paeonia mascula)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Rose (Rosa damascena, Rosenöl)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Acanthus (Bärenklau)",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Olive (Olea europaea)",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Lavendelblüte",
+      "c": "Portugal"
+    },
+    {
+      "n": "Arbutus (Erdbeerbaum)",
+      "c": "Portugal"
+    },
+    {
+      "n": "Iris xiphium",
+      "c": "Belgien"
+    },
+    {
+      "n": "Azalee (Flandern)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Edelweiß (Tatra)",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Linde (Slowakei)",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Tulpe (Osmanisches Reich)",
+      "c": "Türkei"
+    },
+    {
+      "n": "Roter Mohn (Papaver rhoeas)",
+      "c": "Türkei"
     }
   ],
   "nationaltiere": [
@@ -21846,6 +21962,126 @@
     {
       "n": "Leopard",
       "c": "Somalia"
+    },
+    {
+      "n": "Weißer Adler",
+      "c": "Polen"
+    },
+    {
+      "n": "Doppelzahnotter (Viper berus)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Hermelin",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Turul (myth. Greifvogel)",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Ungarisches Graurind",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Luchs (Lynx lynx)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Braunbär (Karpaten)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Stockente (Anas platyrhynchos)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Braunbär (Skandinavien)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Löwe (heraldisch)",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Braunbär (Suomi)",
+      "c": "Finnland"
+    },
+    {
+      "n": "Whooper-Schwan",
+      "c": "Finnland"
+    },
+    {
+      "n": "Schwan (Sangsvane)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Rotmilan",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Marder (Kuna Marten)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Griffon-Geier (Gyps fulvus)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Löwe (heraldisch bulgar.)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Bulgarische Stockente",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Phönix (mythol. Griechenland)",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Kleine Eule (Athene noctua)",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Iberischer Wolf",
+      "c": "Portugal"
+    },
+    {
+      "n": "Gallo de Barcelos (Hahn)",
+      "c": "Portugal"
+    },
+    {
+      "n": "Löwe (heraldisch niederl.)",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Schwarzschwanz-Godwit",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Löwe (heraldisch belgisch)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Rotkehlchen",
+      "c": "Belgien"
+    },
+    {
+      "n": "Tatra-Steinbock (Capra ibex)",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Luchs (Lynx lynx, Tatra)",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Grauer Wolf (Türkei)",
+      "c": "Türkei"
+    },
+    {
+      "n": "Anatolischer Leopard",
+      "c": "Türkei"
     }
   ],
   "religionen": [

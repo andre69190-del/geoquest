@@ -59,7 +59,7 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 | Zahl | Label |
 |------|-------|
-| **718** | Spielmodi |
+| **721** | Spielmodi |
 | **21** | Kategorien |
 | **2.4 MB** | App-Groesse |
 | **100%** | Kostenlos |
@@ -236,4 +236,4 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 ---
 
-*Konzept erstellt: Mai 2026 | Phase 325 | GeoQuest v4.78 MB | 721 Modi*
+*Konzept erstellt: Mai 2026 | Phase 326 | GeoQuest v4.78 MB | 721 Modi*
