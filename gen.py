@@ -3595,7 +3595,7 @@ function initTierWortSchmiede(key){
   tIv=setInterval(function(){
     if(!S.wsData||S.wsData.phase!=="playing"){clearInterval(tIv);return;}
     S.wsData.timeLeft=Math.max(0,(S.wsData.timeLeft||0)-1);
-    if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();}
+    if(S.wsData.timeLeft<=0){S.wsData.phase="timeout";clearInterval(tIv);_wsDetachKb();trackZugWsStreak();}
     render();
   },1000);
   _wsAttachKb();
@@ -9901,6 +9901,26 @@ document.addEventListener("keydown",function(e){
     if(k>=1&&k<=4){e.preventDefault();answerByIdx(k-1);}
   }
 });
+
+// === ZUG-WS STREAK BADGE ===
+var _ZUG_WS_MODES=["ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_panorama","ws_zug_nightjet","ws_zug_acela"];
+function loadZugWsPlayed(){var r=localStorage.getItem("gq_zug_ws_played");return r?new Set(JSON.parse(r)):new Set();}
+function saveZugWsPlayed(s){localStorage.setItem("gq_zug_ws_played",JSON.stringify([...s]));}
+function trackZugWsStreak(){
+  if(!S||!S.mode)return;
+  if(_ZUG_WS_MODES.indexOf(S.mode)===-1)return;
+  var played=loadZugWsPlayed();
+  var wasNew=!played.has(S.mode);
+  played.add(S.mode);
+  saveZugWsPlayed(played);
+  if(wasNew&&played.size===_ZUG_WS_MODES.length){
+    setTimeout(function(){
+      showToast("🏆 ZUG-WS MEISTER! Alle 17 Wortschmiede-Züge gespielt!");
+    },1500);
+  }
+}
+function getZugWsProgress(){var p=loadZugWsPlayed();return{played:p.size,total:_ZUG_WS_MODES.length,pct:Math.round(p.size/_ZUG_WS_MODES.length*100)};}
+
 // === TRAIN DEPOT ===
 function loadTrainDepot(){var raw=localStorage.getItem("gq_train_depot");return raw?JSON.parse(raw):[];}
 function saveTrainDepot(arr){localStorage.setItem("gq_train_depot",JSON.stringify(arr));}
@@ -9946,6 +9966,19 @@ function showTrainDepot(){
   html+=renderSec(_tc("Zug-Hersteller"),allHerst);
 
   if(!allVkm.length&&!allPan.length&&!allDs.length)html+="<p style='color:#999'>Keine Zug-Daten gefunden.</p>";
+  // WS-Streak Badge
+  var _wsP=getZugWsProgress();
+  var _wsBar='<div style="background:#1a2535;border-radius:10px;padding:10px 14px;margin:12px 0">'
+    +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">'
+    +'<span style="color:#fff;font-weight:700;font-size:.85rem">🏆 WS-Meister</span>'
+    +'<span style="color:#f59e0b;font-weight:800;font-size:.85rem">'+_wsP.played+'/'+_wsP.total+'</span>'
+    +'</div>'
+    +'<div style="background:rgba(255,255,255,.15);border-radius:4px;height:5px;overflow:hidden">'
+    +'<div style="background:#f59e0b;height:100%;width:'+_wsP.pct+'%;border-radius:4px"></div>'
+    +'</div>'
+    +(_wsP.played===_wsP.total?'<div style="color:#f59e0b;font-size:.75rem;margin-top:5px;text-align:center">🎖️ Alle Wortschmiede-Züge gemeistert!</div>':'')
+    +'</div>';
+  html+=_wsBar;
   html+="</div>";
   document.getElementById("app").innerHTML=html;
 }
@@ -10931,7 +10964,11 @@ function startDailyChallenge(){
     /* Vergleich & Timeline */
     "comp_area","comp_pop","comp_gdp",
     /* Sport & Geo-Wissen */
-    "uk_sportwissen_olympia_standort","timeline_geo_erdbeben"
+    "uk_sportwissen_olympia_standort","timeline_geo_erdbeben",
+    /* Züge & Bahn (Phase 309) */
+    "zug_panorama","zug_vkm","zug_metro_logos","zug_routen","zug_bahnhof_typ",
+    "zug_hersteller","hl_zug_speed","hl_zug_taktfrequenz","zug_rekorde_pin",
+    "timeline_zug_bahnhof_bau"
   ];
   S.mode=DAILY_POOL[getDailySeed()%DAILY_POOL.length];S.diff="casual";S.isDailyRun=true;
   const _prog=loadDailyProgress();
@@ -10993,12 +11030,17 @@ function renderDailyHero(){
       </div>
     </div>`;
   }
+  const _zugM=["zug_panorama","zug_vkm","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller","hl_zug_speed","hl_zug_taktfrequenz","zug_rekorde_pin","timeline_zug_bahnhof_bau"];
+  const _todayMode=DAILY_POOL[getDailySeed()%DAILY_POOL.length];
+  const _isZugDay=_zugM.indexOf(_todayMode)!==-1;
+  const _dIcon=_isZugDay?"\u{1F686}":"\u{1F4C5}";
+  const _dTag=_isZugDay?`<span style="background:#006064;color:#fff;font-size:.65rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-left:6px">\u{1F682} Zug-Tag</span>`:""; 
   return`<div class="daily-hero" onclick="startDailyChallenge()" role="button">
     <div style="display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:12px">
-        <div style="font-size:2.2rem">\u{1F4C5}</div>
+        <div style="font-size:2.2rem">${_dIcon}</div>
         <div>
-          <div class="dh-title">Daily Challenge</div>
+          <div class="dh-title">Daily Challenge${_dTag}</div>
           <div class="dh-sub">Endet in <span class="dh-cd">${cd}</span> \u00b7 +100 GeoCoins</div>
         </div>
       </div>
@@ -13153,7 +13195,7 @@ function handleWsCheck(){
   if(_wsBonusPts>0)showToast("\uD83C\uDF0D "+esc(inp)+" — Multilingual! +"+pts+" +"+_wsBonusPts+" Bonus");
   if(window.mpGameCh)mpSend("score_update",{score:S.sc,rd:S.rd||0,correct:S.correct||0});
   if(S.wsData.foundWords.length>=S.wsData.allWords.length){
-    S.wsData.phase="perfect";clearInterval(tIv);_wsDetachKb();
+    S.wsData.phase="perfect";clearInterval(tIv);_wsDetachKb();trackZugWsStreak();
   }
   render();
 }
