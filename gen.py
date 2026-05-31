@@ -12383,9 +12383,9 @@ function renderCollectionScreen(){
   const _trainTotal=721;
   const _trainCount=_trainDepotItems.length;
   const _trainPct=Math.round(_trainCount/_trainTotal*100);
-  const _depotBtn=_trainCount>=10?`<div style="background:linear-gradient(135deg,#004d40,#00695c);border-radius:12px;padding:10px 14px;margin:10px 0;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="showTrainDepot()">
+  const _depotBtn=_trainCount>=10?`<div style="background:linear-gradient(135deg,#004d40,#00695c);border-radius:12px;padding:10px 14px;margin:10px 0;display:flex;align-items:center;gap:10px;cursor:pointer;max-width:100%;box-sizing:border-box;overflow:hidden" onclick="showTrainDepot()">
     <div style="font-size:1.8rem">🚉</div>
-    <div style="flex:1">
+    <div style="flex:1;min-width:0;overflow:hidden">
       <div style="color:#fff;font-weight:800;font-size:.9rem">${_tc("Zug-Depot")}</div>
       <div style="color:#b2dfdb;font-size:.72rem;margin-top:1px">${_trainCount} / ${_trainTotal} ${_tc("gesammelt")}</div>
       <div style="background:rgba(255,255,255,.2);border-radius:4px;height:5px;margin-top:5px;overflow:hidden">
