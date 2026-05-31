@@ -14315,6 +14315,10 @@ function renderHomeTab(){
       </div>`;
     });
     if(catId==='eu_plates')cardArr.push(`<div class="mode-card" data-category="eu_plates" onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6"><span class="mode-icon">\u{1F4D4}</span><div class="mode-title" style="color:#fff">Album</div><div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div></div>`);
+    if(catId==='zuege'){
+      var _uicLogCount=0;try{_uicLogCount=JSON.parse(localStorage.getItem('gq_uic_log')||'[]').length;}catch(_e){}
+      cardArr.unshift(`<div class="mode-card" data-category="zuege" onclick="S._spotterTab='waggons';S.tab='album';render()" role="button" data-title="Waggon-Scanner" style="background:linear-gradient(135deg,#0d47a1,#1565c0);border-color:#1565c0"><span class="mode-icon">📸</span><div class="mode-title" style="color:#fff">${_tc('Waggon-Scanner')}</div><div class="mode-desc" style="color:rgba(255,255,255,.8)">${_uicLogCount} ges.</div></div>`);
+    }
     const lockPill=!unlocked?`<span style="font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:10px;margin-left:4px">\u{1F512} ${cat.cost?cat.cost.toLocaleString():'?'} Coins</span>`:'';
     /* Carousel pagination */
     const _cols=S.gridCols||(parseInt(localStorage.getItem('geoquest_grid_cols'))||4);
