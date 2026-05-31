@@ -40,10 +40,15 @@ RESET = "\033[0m"
 BOLD  = "\033[1m"
 
 warnings = []
+infos    = []   # INFO-only: never block --strict
 
 def warn(file, key, item_id, msg):
     tag = f"{file} › {key}" + (f" › {item_id}" if item_id else "")
     warnings.append((tag, msg))
+
+def info(file, key, item_id, msg):
+    tag = f"{file} › {key}" + (f" › {item_id}" if item_id else "")
+    infos.append((tag, msg))
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Helpers
@@ -117,7 +122,7 @@ def check_pin(filename, data):
             # Duplicate check (4 decimal places ≈ 11m accuracy)
             coord_key = (round4(lat), round4(lng))
             if coord_key in seen_coords:
-                warn(filename, key, n,
+                info(filename, key, n,
                      f"Duplicate coordinates {coord_key} shared with '{seen_coords[coord_key]}'")
             else:
                 seen_coords[coord_key] = n
@@ -168,7 +173,7 @@ def check_hl(filename, data):
                 continue
 
             if v < 0:
-                warn(filename, key, name, f"Negative val={v} — check if sign is intentional")
+                info(filename, key, name, f"Negative val={v} — check if sign is intentional")
 
             vals.append((name, v))
 
@@ -187,7 +192,7 @@ def check_hl(filename, data):
         if min_v > 0 and max_v > min_v * 10_000_000:  # Phase 237: raised for biological/geological ranges
             ratio = max_v / min_v
             extremes = [(n, v) for n, v in vals if v == min_v or v == max_v]
-            warn(filename, key, None,
+            info(filename, key, None,
                  f"Extreme value ratio {ratio:.0f}× (min={min_v}, max={max_v}) — "
                  f"possible mixed units. Check: {extremes}")
 
@@ -242,7 +247,7 @@ def check_match(filename, data):
                  f"Only {len(unique_c)} unique answer category — game is broken "
                  f"(all items have the same answer). Found: {sorted(unique_c)}")
         elif len(unique_c) < 4:
-            warn(filename, key, None,
+            info(filename, key, None,
                  f"Only {len(unique_c)} unique answer categories (c-values) — "
                  f"engine will use fewer than 3 distractors. "
                  f"OK for binary/ternary questions; add more variety otherwise. "
@@ -534,6 +539,8 @@ def main():
                 print(f"  {WARN}{indent}{msg}{RESET}")
             print()
 
+        if infos:
+            print(f"\n  ℹ  {len(infos)} info-only notice(s) (not counted in strict mode)")
         if STRICT:
             print(f"{ERR}--strict mode: exiting with code 1 due to {len(warnings)} warning(s){RESET}\n")
             sys.exit(1)

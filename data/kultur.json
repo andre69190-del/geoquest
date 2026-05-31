@@ -27289,327 +27289,489 @@
   "ds100": [
     {
       "q": "Frankfurt (Main) Hbf",
-      "a": "FF"
+      "a": "FF",
+      "n": "Frankfurt (Main) Hbf",
+      "c": "FF"
     },
     {
       "q": "München Hbf",
-      "a": "MH"
+      "a": "MH",
+      "n": "München Hbf",
+      "c": "MH"
     },
     {
       "q": "Hamburg Hbf",
-      "a": "AH"
+      "a": "AH",
+      "n": "Hamburg Hbf",
+      "c": "AH"
     },
     {
       "q": "Berlin Hbf",
-      "a": "BLB"
+      "a": "BLB",
+      "n": "Berlin Hbf",
+      "c": "BLB"
     },
     {
       "q": "Köln Hbf",
-      "a": "KK"
+      "a": "KK",
+      "n": "Köln Hbf",
+      "c": "KK"
     },
     {
       "q": "Stuttgart Hbf",
-      "a": "TS"
+      "a": "TS",
+      "n": "Stuttgart Hbf",
+      "c": "TS"
     },
     {
       "q": "Düsseldorf Hbf",
-      "a": "KD"
+      "a": "KD",
+      "n": "Düsseldorf Hbf",
+      "c": "KD"
     },
     {
       "q": "Hannover Hbf",
-      "a": "HH"
+      "a": "HH",
+      "n": "Hannover Hbf",
+      "c": "HH"
     },
     {
       "q": "Leipzig Hbf",
-      "a": "LE"
+      "a": "LE",
+      "n": "Leipzig Hbf",
+      "c": "LE"
     },
     {
       "q": "Nürnberg Hbf",
-      "a": "NN"
+      "a": "NN",
+      "n": "Nürnberg Hbf",
+      "c": "NN"
     },
     {
       "q": "Dortmund Hbf",
-      "a": "EDO"
+      "a": "EDO",
+      "n": "Dortmund Hbf",
+      "c": "EDO"
     },
     {
       "q": "Dresden Hbf",
-      "a": "DD"
+      "a": "DD",
+      "n": "Dresden Hbf",
+      "c": "DD"
     },
     {
       "q": "Mannheim Hbf",
-      "a": "RM"
+      "a": "RM",
+      "n": "Mannheim Hbf",
+      "c": "RM"
     },
     {
       "q": "Karlsruhe Hbf",
-      "a": "RK"
+      "a": "RK",
+      "n": "Karlsruhe Hbf",
+      "c": "RK"
     },
     {
       "q": "Bremen Hbf",
-      "a": "HB"
+      "a": "HB",
+      "n": "Bremen Hbf",
+      "c": "HB"
     },
     {
       "q": "Augsburg Hbf",
-      "a": "MA"
+      "a": "MA",
+      "n": "Augsburg Hbf",
+      "c": "MA"
     },
     {
       "q": "Essen Hbf",
-      "a": "EE"
+      "a": "EE",
+      "n": "Essen Hbf",
+      "c": "EE"
     },
     {
       "q": "Freiburg (Breisgau) Hbf",
-      "a": "RFB"
+      "a": "RFB",
+      "n": "Freiburg (Breisgau) Hbf",
+      "c": "RFB"
     },
     {
       "q": "Erfurt Hbf",
-      "a": "EF"
+      "a": "EF",
+      "n": "Erfurt Hbf",
+      "c": "EF"
     },
     {
       "q": "Mainz Hbf",
-      "a": "RMZ"
+      "a": "RMZ",
+      "n": "Mainz Hbf",
+      "c": "RMZ"
     },
     {
       "q": "Rostock Hbf",
-      "a": "NRS"
+      "a": "NRS",
+      "n": "Rostock Hbf",
+      "c": "NRS"
     },
     {
       "q": "Kiel Hbf",
-      "a": "AKI"
+      "a": "AKI",
+      "n": "Kiel Hbf",
+      "c": "AKI"
     },
     {
       "q": "Saarbrücken Hbf",
-      "a": "RSB"
+      "a": "RSB",
+      "n": "Saarbrücken Hbf",
+      "c": "RSB"
     },
     {
       "q": "Wiesbaden Hbf",
-      "a": "RWI"
+      "a": "RWI",
+      "n": "Wiesbaden Hbf",
+      "c": "RWI"
     },
     {
       "q": "Kassel Hbf",
-      "a": "KS"
+      "a": "KS",
+      "n": "Kassel Hbf",
+      "c": "KS"
     },
     {
       "q": "Bielefeld Hbf",
-      "a": "EBD"
+      "a": "EBD",
+      "n": "Bielefeld Hbf",
+      "c": "EBD"
     },
     {
       "q": "Magdeburg Hbf",
-      "a": "MD"
+      "a": "MD",
+      "n": "Magdeburg Hbf",
+      "c": "MD"
     },
     {
       "q": "Bochum Hbf",
-      "a": "EBO"
+      "a": "EBO",
+      "n": "Bochum Hbf",
+      "c": "EBO"
     },
     {
       "q": "Halle (Saale) Hbf",
-      "a": "MLH"
+      "a": "MLH",
+      "n": "Halle (Saale) Hbf",
+      "c": "MLH"
     },
     {
       "q": "Lübeck Hbf",
-      "a": "AL"
+      "a": "AL",
+      "n": "Lübeck Hbf",
+      "c": "AL"
     },
     {
       "q": "Wien Hbf",
-      "a": "WHF"
+      "a": "WHF",
+      "n": "Wien Hbf",
+      "c": "WHF"
     },
     {
       "q": "Wien Westbahnhof",
-      "a": "WW"
+      "a": "WW",
+      "n": "Wien Westbahnhof",
+      "c": "WW"
     },
     {
       "q": "Salzburg Hbf",
-      "a": "SZ"
+      "a": "SZ",
+      "n": "Salzburg Hbf",
+      "c": "SZ"
     },
     {
       "q": "Graz Hbf",
-      "a": "GZ"
+      "a": "GZ",
+      "n": "Graz Hbf",
+      "c": "GZ"
     },
     {
       "q": "Innsbruck Hbf",
-      "a": "INN"
+      "a": "INN",
+      "n": "Innsbruck Hbf",
+      "c": "INN"
     },
     {
       "q": "Zürich HB",
-      "a": "ZUE"
+      "a": "ZUE",
+      "n": "Zürich HB",
+      "c": "ZUE"
     },
     {
       "q": "Bern",
-      "a": "BN"
+      "a": "BN",
+      "n": "Bern",
+      "c": "BN"
     },
     {
       "q": "Basel SBB",
-      "a": "BAS"
+      "a": "BAS",
+      "n": "Basel SBB",
+      "c": "BAS"
     },
     {
       "q": "Genf",
-      "a": "GE"
+      "a": "GE",
+      "n": "Genf",
+      "c": "GE"
     },
     {
       "q": "Lausanne",
-      "a": "LS"
+      "a": "LS",
+      "n": "Lausanne",
+      "c": "LS"
     },
     {
       "q": "Paris Gare de Lyon",
-      "a": "PFGL"
+      "a": "PFGL",
+      "n": "Paris Gare de Lyon",
+      "c": "PFGL"
     },
     {
       "q": "Amsterdam Centraal",
-      "a": "NASC"
+      "a": "NASC",
+      "n": "Amsterdam Centraal",
+      "c": "NASC"
     },
     {
       "q": "Brüssel Midi/Zuid",
-      "a": "BBMU"
+      "a": "BBMU",
+      "n": "Brüssel Midi/Zuid",
+      "c": "BBMU"
     },
     {
       "q": "Wien Meidling",
-      "a": "WMEID"
+      "a": "WMEID",
+      "n": "Wien Meidling",
+      "c": "WMEID"
     },
     {
       "q": "Dortmund Signal Iduna Park",
-      "a": "EDSI"
+      "a": "EDSI",
+      "n": "Dortmund Signal Iduna Park",
+      "c": "EDSI"
     },
     {
       "q": "Hannover Messe/Laatzen",
-      "a": "HHLM"
+      "a": "HHLM",
+      "n": "Hannover Messe/Laatzen",
+      "c": "HHLM"
     },
     {
       "q": "München Ost",
-      "a": "MHO"
+      "a": "MHO",
+      "n": "München Ost",
+      "c": "MHO"
     },
     {
       "q": "Berlin Ostbahnhof",
-      "a": "BLO"
+      "a": "BLO",
+      "n": "Berlin Ostbahnhof",
+      "c": "BLO"
     },
     {
       "q": "Köln Messe/Deutz",
-      "a": "KKMD"
+      "a": "KKMD",
+      "n": "Köln Messe/Deutz",
+      "c": "KKMD"
     },
     {
       "q": "Hamburg-Altona",
-      "a": "AHAT"
+      "a": "AHAT",
+      "n": "Hamburg-Altona",
+      "c": "AHAT"
     },
     {
       "q": "Nuernberg Hbf",
-      "a": "NN"
+      "a": "NN",
+      "n": "Nuernberg Hbf",
+      "c": "NN"
     },
     {
       "q": "Duesseldorf Hbf",
-      "a": "DU"
+      "a": "DU",
+      "n": "Duesseldorf Hbf",
+      "c": "DU"
     },
     {
       "q": "Wuppertal Hbf",
-      "a": "EWP"
+      "a": "EWP",
+      "n": "Wuppertal Hbf",
+      "c": "EWP"
     },
     {
       "q": "Freiburg Hbf",
-      "a": "RF"
+      "a": "RF",
+      "n": "Freiburg Hbf",
+      "c": "RF"
     },
     {
       "q": "Luebeck Hbf",
-      "a": "ALR"
+      "a": "ALR",
+      "n": "Luebeck Hbf",
+      "c": "ALR"
     },
     {
       "q": "Halle Hbf",
-      "a": "HLH"
+      "a": "HLH",
+      "n": "Halle Hbf",
+      "c": "HLH"
     },
     {
       "q": "Braunschweig Hbf",
-      "a": "BS"
+      "a": "BS",
+      "n": "Braunschweig Hbf",
+      "c": "BS"
     },
     {
       "q": "Osnabrueck Hbf",
-      "a": "EON"
+      "a": "EON",
+      "n": "Osnabrueck Hbf",
+      "c": "EON"
     },
     {
       "q": "Muenster Hbf",
-      "a": "EMU"
+      "a": "EMU",
+      "n": "Muenster Hbf",
+      "c": "EMU"
     },
     {
       "q": "Aachen Hbf",
-      "a": "KA"
+      "a": "KA",
+      "n": "Aachen Hbf",
+      "c": "KA"
     },
     {
       "q": "Bonn Hbf",
-      "a": "BN"
+      "a": "BN",
+      "n": "Bonn Hbf",
+      "c": "BN"
     },
     {
       "q": "Saarbruecken Hbf",
-      "a": "SB"
+      "a": "SB",
+      "n": "Saarbruecken Hbf",
+      "c": "SB"
     },
     {
       "q": "Regensburg Hbf",
-      "a": "MR"
+      "a": "MR",
+      "n": "Regensburg Hbf",
+      "c": "MR"
     },
     {
       "q": "Ingolstadt Hbf",
-      "a": "MI"
+      "a": "MI",
+      "n": "Ingolstadt Hbf",
+      "c": "MI"
     },
     {
       "q": "Ulm Hbf",
-      "a": "TU"
+      "a": "TU",
+      "n": "Ulm Hbf",
+      "c": "TU"
     },
     {
       "q": "Heilbronn Hbf",
-      "a": "RHN"
+      "a": "RHN",
+      "n": "Heilbronn Hbf",
+      "c": "RHN"
     },
     {
       "q": "Heidelberg Hbf",
-      "a": "RHE"
+      "a": "RHE",
+      "n": "Heidelberg Hbf",
+      "c": "RHE"
     },
     {
       "q": "Pforzheim Hbf",
-      "a": "RPF"
+      "a": "RPF",
+      "n": "Pforzheim Hbf",
+      "c": "RPF"
     },
     {
       "q": "Fulda Bahnhof",
-      "a": "FD"
+      "a": "FD",
+      "n": "Fulda Bahnhof",
+      "c": "FD"
     },
     {
       "q": "Wuerzburg Hbf",
-      "a": "NWZ"
+      "a": "NWZ",
+      "n": "Wuerzburg Hbf",
+      "c": "NWZ"
     },
     {
       "q": "Bamberg Bahnhof",
-      "a": "NBM"
+      "a": "NBM",
+      "n": "Bamberg Bahnhof",
+      "c": "NBM"
     },
     {
       "q": "Bayreuth Hbf",
-      "a": "NBT"
+      "a": "NBT",
+      "n": "Bayreuth Hbf",
+      "c": "NBT"
     },
     {
       "q": "Passau Hbf",
-      "a": "PAS"
+      "a": "PAS",
+      "n": "Passau Hbf",
+      "c": "PAS"
     },
     {
       "q": "Kempten Hbf",
-      "a": "MKE"
+      "a": "MKE",
+      "n": "Kempten Hbf",
+      "c": "MKE"
     },
     {
       "q": "Lindau Hbf",
-      "a": "MLD"
+      "a": "MLD",
+      "n": "Lindau Hbf",
+      "c": "MLD"
     },
     {
       "q": "Konstanz Bahnhof",
-      "a": "RKN"
+      "a": "RKN",
+      "n": "Konstanz Bahnhof",
+      "c": "RKN"
     },
     {
       "q": "Singen Bahnhof",
-      "a": "RSI"
+      "a": "RSI",
+      "n": "Singen Bahnhof",
+      "c": "RSI"
     },
     {
       "q": "Offenburg Hbf",
-      "a": "ROG"
+      "a": "ROG",
+      "n": "Offenburg Hbf",
+      "c": "ROG"
     },
     {
       "q": "Flensburg Bahnhof",
-      "a": "AFL"
+      "a": "AFL",
+      "n": "Flensburg Bahnhof",
+      "c": "AFL"
     },
     {
       "q": "Stralsund Hbf",
-      "a": "ANS"
+      "a": "ANS",
+      "n": "Stralsund Hbf",
+      "c": "ANS"
     },
     {
       "q": "Greifswald Bahnhof",
-      "a": "AGF"
+      "a": "AGF",
+      "n": "Greifswald Bahnhof",
+      "c": "AGF"
     }
   ],
   "bahnhof_pin": [
