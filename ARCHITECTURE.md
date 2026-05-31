@@ -2,7 +2,7 @@
 ## Systemdokumentation & Entwicklerhandbuch
 
 **Version:** Phase 310 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.71 MB | 716 Spielmodi | verify: 136/136
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.71 MB | 718 Spielmodi | verify: 136/136
 
 ---
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 716 Modi, 716/716/716 — perfekte Konsistenz.
+**Aktueller Stand:** 718 Modi, 718/718/718 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 

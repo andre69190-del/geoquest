@@ -437,5 +437,26 @@ def generate(phase=269, n_tests=90):
 
 
 if __name__ == '__main__':
-    n = generate()
-    print(f'✓ GeoQuest_Spielübersicht.html generiert — {n} Modi')
+    # Phase aus ARCHITECTURE.md lesen
+    import re as _re, os as _os
+    _phase = 310
+    _arch = _os.path.join(_os.path.dirname(__file__), 'ARCHITECTURE.md')
+    try:
+        with open(_arch, encoding='utf-8') as _f:
+            _m = _re.search(r'Phase\s+(\d+)', _f.read())
+            if _m:
+                _phase = int(_m.group(1))
+    except Exception:
+        pass
+    n = generate(phase=_phase)
+    print(f'✓ GeoQuest_Spielübersicht.html generiert — {n} Modi (Phase {_phase})')
+    _arch = _os.path.join(_os.path.dirname(__file__), 'ARCHITECTURE.md')
+    try:
+        with open(_arch, encoding='utf-8') as _f:
+            _m = _re.search(r'Phase\s+(\d+)', _f.read())
+            if _m:
+                _phase = int(_m.group(1))
+    except Exception:
+        pass
+    n = generate(phase=_phase)
+    print(f'✓ GeoQuest_Spielübersicht.html generiert — {n} Modi (Phase {_phase})')

@@ -19,11 +19,11 @@ begeistert sein und es sofort spielen / installieren.
 
 ## 2. Kernbotschaften (USP)
 
-1. **716 Spielmodi** -- groesste kostenlose Geografie-Quiz-App der Welt
+1. **718 Spielmodi** -- groesste kostenlose Geografie-Quiz-App der Welt
 2. **Komplett kostenlos & werbefrei** -- keine Zahlschranken, kein In-App-Kauf
 3. **Offline spielbar** -- einmal oeffnen, dann auch ohne Internet
 4. **Eine Datei** -- 2.4 MB, kein App-Store, kein Install-Prozess
-5. **20 Kategorien** -- von Erdkunde-Klassikern bis Astronomie, Gastronomie, E-Mobilitaet
+5. **21 Kategorien** -- von Erdkunde-Klassikern bis Astronomie, Gastronomie, E-Mobilitaet
 6. **Daily Challenge** -- taeglich neue globale Herausforderung mit Leaderboard
 7. **Bilingual** -- Deutsch & Englisch
 
@@ -42,7 +42,7 @@ begeistert sein und es sofort spielen / installieren.
 > "Wie gut kennst du die Welt?"
 
 **Subline (kleiner, grau):**
-> 716 Spielmodi. Kostenlos. Offline. Direkt im Browser.
+> 718 Spielmodi. Kostenlos. Offline. Direkt im Browser.
 
 **2 CTA-Buttons:**
 - `[Jetzt spielen]` -- gross, gruen, primaer -- oeffnet GeoQuest.html
@@ -59,8 +59,8 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 | Zahl | Label |
 |------|-------|
-| **716** | Spielmodi |
-| **20** | Kategorien |
+| **718** | Spielmodi |
+| **21** | Kategorien |
 | **2.4 MB** | App-Groesse |
 | **100%** | Kostenlos |
 
@@ -68,9 +68,9 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 ### SEKTION 3 -- Kategorie-Showcase (Was kann GeoQuest?)
 
-**Ueberschrift:** "716 Modi. 20 Welten. Unendlich viel zu entdecken."
+**Ueberschrift:** "718 Modi. 20 Welten. Unendlich viel zu entdecken."
 
-**Grid mit 20 Kategorie-Karten** (4x5 oder 5x4), je Karte:
+**Grid mit 21 Kategorie-Karten** (4x5 oder 5x4), je Karte:
 - Grosses Emoji / Icon
 - Kategoriename (z.B. "Tiere", "Gastronomie", "Astronomie")
 - Kurze Beschreibung (1 Zeile)
@@ -220,7 +220,7 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 | Domain | geoquest.app oder subdomain landing.geoquest.app |
 | Performance | Landingpage < 200 KB (kein unnoetige Bibliotheken) |
 | Mobile-first | Vollstaendig responsive, Touch-optimiert |
-| SEO | Meta-Tags: "Geografie Quiz", "716 Spielmodi", "kostenlos" |
+| SEO | Meta-Tags: "Geografie Quiz", "718 Spielmodi", "kostenlos" |
 | Analytics | Optional: Vercel Analytics (bereits vorhanden) |
 
 ---
@@ -229,11 +229,11 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 1. **Design-Mockup** -- Figma/HTML-Wireframe der Hero-Sektion
 2. **Hero-Screenshot** -- Aktuelles GeoQuest im Spiel fotografieren/screenshoten
-3. **Kategorie-Icons** -- SVG oder Emoji fuer alle 20 Kategorien
+3. **Kategorie-Icons** -- SVG oder Emoji fuer alle 21 Kategorien
 4. **Landingpage bauen** -- Statisches HTML/CSS (kein Framework)
 5. **Domain konfigurieren** -- Vercel-Redirect einrichten
 6. **SEO optimieren** -- Meta-Tags, OpenGraph, structured data
 
 ---
 
-*Konzept erstellt: Mai 2026 | Phase 310 | GeoQuest v4.71 MB | 716 Modi*
+*Konzept erstellt: Mai 2026 | Phase 310 | GeoQuest v4.71 MB | 718 Modi*

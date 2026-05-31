@@ -175,7 +175,7 @@ def update_architecture(phase, summary, patch_file, size_str, counts=None):
     # 3. Letztes Update
     new_text, n = re.subn(
         r'\*Letztes Update: Phase \d+ --[^\n]*\n',
-        f'*Letztes Update: Phase {phase} -- {summary}, {len(counts) if counts else 716} Modi, 39 Datendateien, {month_year}.*\n',
+        f'*Letztes Update: Phase {phase} -- {summary}, {len(counts) if counts else 718} Modi, 39 Datendateien, {month_year}.*\n',
         text
     )
     text = new_text; changes += n
@@ -183,7 +183,7 @@ def update_architecture(phase, summary, patch_file, size_str, counts=None):
     # 4. Stand Phase im Katalog-Header
     new_text, n = re.subn(
         r'\*\*Stand Phase \d+ -- 681 Modi[^*]*\*\*',
-        f'**Stand Phase {phase} -- 716 Modi in 20 Kategorien**',
+        f'**Stand Phase {phase} -- 718 Modi in 20 Kategorien**',
         text
     )
     text = new_text; changes += n
@@ -191,7 +191,7 @@ def update_architecture(phase, summary, patch_file, size_str, counts=None):
     # 5. Footer-Zeile
     new_text, n = re.subn(
         r'\*Katalog: 681 Modi \| Stand Phase \d+ \|[^*]*\*',
-        f'*Katalog: 716 Modi | Stand Phase {phase} | {month_year}*',
+        f'*Katalog: 718 Modi | Stand Phase {phase} | {month_year}*',
         text
     )
     text = new_text; changes += n
@@ -220,7 +220,7 @@ def update_architecture(phase, summary, patch_file, size_str, counts=None):
 
 # ─── Schritt 3: README.md ────────────────────────────────────────────────────
 
-def update_readme(phase, new_modi=716, _vscore='136/136'):
+def update_readme(phase, new_modi=718, _vscore='136/136'):
     readme_path = os.path.join(BASE, "README.md")
     if not os.path.exists(readme_path):
         err("README.md nicht gefunden!")
@@ -262,7 +262,7 @@ def update_konzept(phase, size_str):
 
     new_text, n = re.subn(
         r'\*Konzept erstellt: [^|]+\| Phase \d+ \| GeoQuest v[\d.]+ MB \| \d+ Modi\*',
-        f'*Konzept erstellt: {month_year} | Phase {phase} | GeoQuest v{size_str} MB | 716 Modi*',
+        f'*Konzept erstellt: {month_year} | Phase {phase} | GeoQuest v{size_str} MB | 718 Modi*',
         text
     )
 
@@ -302,7 +302,7 @@ def update_spieluebersicht(phase, counts):
     )
     text = re.sub(
         r'GeoQuest Phase \d+ · \d+ Modi',
-        f'GeoQuest Phase {phase} · 716 Modi',
+        f'GeoQuest Phase {phase} · 718 Modi',
         text
     )
 

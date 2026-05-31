@@ -11612,59 +11612,81 @@
     },
     {
       "n": "Fish River Canyon",
-      "c": "Namibia"
+      "c": "Namibia",
+      "lat": -27.716,
+      "lng": 17.587
     },
     {
       "n": "Copper Canyon (Barranca del Cobre)",
-      "c": "Mexiko"
+      "c": "Mexiko",
+      "lat": 27.32,
+      "lng": -107.7
     },
     {
       "n": "Ordesa Canyon",
-      "c": "Spanien"
+      "c": "Spanien",
+      "lat": 42.64,
+      "lng": -0.05
     },
     {
       "n": "Colca Canyon",
-      "c": "Peru"
+      "c": "Peru",
+      "lat": -15.613,
+      "lng": -71.868
     },
     {
       "n": "Cotahuasi Canyon",
-      "c": "Peru"
-    },
-    {
-      "n": "Copper Canyon (Barrancas del Cobre)",
-      "c": "Mexiko"
+      "c": "Peru",
+      "lat": -15.215,
+      "lng": -72.89
     },
     {
       "n": "Yarlung Tsangpo Grand Canyon",
-      "c": "Tibet/China"
+      "c": "Tibet/China",
+      "lat": 29.6,
+      "lng": 95.0
     },
     {
       "n": "Kings Canyon",
-      "c": "Australien"
+      "c": "Australien",
+      "lat": -26.1,
+      "lng": 128.3
     },
     {
       "n": "Isalo Canyon",
-      "c": "Madagaskar"
+      "c": "Madagaskar",
+      "lat": -22.533,
+      "lng": 45.35
     },
     {
       "n": "Dadès-Schlucht",
-      "c": "Marokko"
+      "c": "Marokko",
+      "lat": 31.335,
+      "lng": -5.983
     },
     {
       "n": "Todra-Schlucht",
-      "c": "Marokko"
+      "c": "Marokko",
+      "lat": 31.594,
+      "lng": -5.604
     },
     {
       "n": "Inntal (Inn-Schlucht)",
-      "c": "Tirol, Österreich"
+      "c": "Tirol, Österreich",
+      "lat": 47.25,
+      "lng": 11.4
     },
     {
       "n": "Vintschgau/Vinschgau",
-      "c": "Südtirol, Italien"
+      "c": "Südtirol, Italien",
+      "lat": 46.7,
+      "lng": 10.7
     },
     {
       "n": "Viamala-Schlucht",
-      "c": "Schweiz"
+      "c": "Schweiz",
+      "lat": 46.567,
+      "lng": 9.383
     },
     {
       "n": "Bryce Canyon (Utah, USA)",
@@ -12451,9 +12473,9 @@
       "lng": 139.69
     },
     {
-      "n": "2027 scheduled",
-      "lat": 0.0,
-      "lng": 0.0
+      "n": "Tokio 2027",
+      "lat": 35.6762,
+      "lng": 139.6503
     },
     {
       "n": "1993 Stuttgart Germany",
@@ -15863,13 +15885,13 @@
     },
     {
       "n": "Ratte Laborverwendung weltweit",
-      "lat": 51.5,
-      "lng": 0.0
+      "lat": 51.5074,
+      "lng": -0.1278
     },
     {
       "n": "Papagei Afrika Domestizierung",
-      "lat": 0.0,
-      "lng": 20.0
+      "lat": 0.0236,
+      "lng": 37.9062
     },
     {
       "n": "Wellensittich Australien",
@@ -15880,11 +15902,6 @@
       "n": "Koi Karpfen Japan",
       "lat": 35.0,
       "lng": 138.0
-    },
-    {
-      "n": "Bettlaken und Topfpflanzen weltweit",
-      "lat": 0.0,
-      "lng": 0.0
     }
   ],
   "tiere_nationaltier_pin": [
@@ -20395,100 +20412,56 @@
       "c": "Griechenland"
     },
     {
-      "name": "Sokrates",
-      "country": "Griechenland"
+      "n": "Sokrates",
+      "c": "Griechenland"
     },
     {
-      "name": "Platon",
-      "country": "Griechenland"
+      "n": "Epikur",
+      "c": "Griechenland"
     },
     {
-      "name": "Aristoteles",
-      "country": "Griechenland"
+      "n": "Mark Aurel",
+      "c": "Römisches Reich"
     },
     {
-      "name": "Epikur",
-      "country": "Griechenland"
+      "n": "Augustinus von Hippo",
+      "c": "Nordafrika (Algerien)"
     },
     {
-      "name": "Mark Aurel",
-      "country": "Römisches Reich"
+      "n": "Thomas von Aquin",
+      "c": "Italien"
     },
     {
-      "name": "Augustinus von Hippo",
-      "country": "Nordafrika (Algerien)"
+      "n": "Francis Bacon",
+      "c": "England"
     },
     {
-      "name": "Thomas von Aquin",
-      "country": "Italien"
+      "n": "Jean-Jacques Rousseau",
+      "c": "Frankreich/Schweiz"
     },
     {
-      "name": "Francis Bacon",
-      "country": "England"
+      "n": "Georg Wilhelm Friedrich Hegel",
+      "c": "Deutschland"
     },
     {
-      "name": "René Descartes",
-      "country": "Frankreich"
+      "n": "Arthur Schopenhauer",
+      "c": "Deutschland"
     },
     {
-      "name": "Baruch Spinoza",
-      "country": "Niederlande"
+      "n": "John Stuart Mill",
+      "c": "England"
     },
     {
-      "name": "John Locke",
-      "country": "England"
+      "n": "Søren Kierkegaard",
+      "c": "Dänemark"
     },
     {
-      "name": "David Hume",
-      "country": "Schottland"
+      "n": "Edmund Husserl",
+      "c": "Deutschland"
     },
     {
-      "name": "Jean-Jacques Rousseau",
-      "country": "Frankreich/Schweiz"
-    },
-    {
-      "name": "Immanuel Kant",
-      "country": "Deutschland"
-    },
-    {
-      "name": "Georg Wilhelm Friedrich Hegel",
-      "country": "Deutschland"
-    },
-    {
-      "name": "Arthur Schopenhauer",
-      "country": "Deutschland"
-    },
-    {
-      "name": "Friedrich Nietzsche",
-      "country": "Deutschland"
-    },
-    {
-      "name": "Karl Marx",
-      "country": "Deutschland"
-    },
-    {
-      "name": "John Stuart Mill",
-      "country": "England"
-    },
-    {
-      "name": "Søren Kierkegaard",
-      "country": "Dänemark"
-    },
-    {
-      "name": "Edmund Husserl",
-      "country": "Deutschland"
-    },
-    {
-      "name": "Martin Heidegger",
-      "country": "Deutschland"
-    },
-    {
-      "name": "Jean-Paul Sartre",
-      "country": "Frankreich"
-    },
-    {
-      "name": "Simone de Beauvoir",
-      "country": "Frankreich"
+      "n": "Martin Heidegger",
+      "c": "Deutschland"
     },
     {
       "n": "Voltaire",
@@ -20589,108 +20562,88 @@
       "c": "Mexiko"
     },
     {
-      "name": "Ahorn-Blatt",
-      "country": "Kanada"
+      "n": "Ahorn-Blatt",
+      "c": "Kanada"
     },
     {
-      "name": "Distel",
-      "country": "Schottland"
+      "n": "Shamrock (Klee)",
+      "c": "Irland"
     },
     {
-      "name": "Shamrock (Klee)",
-      "country": "Irland"
+      "n": "Rose",
+      "c": "England"
     },
     {
-      "name": "Rose",
-      "country": "England"
+      "n": "Lilie",
+      "c": "Frankreich"
     },
     {
-      "name": "Lilie",
-      "country": "Frankreich"
+      "n": "Lavendel",
+      "c": "Frankreich (Provence)"
     },
     {
-      "name": "Tulpe",
-      "country": "Niederlande"
+      "n": "Eiche (Quercus)",
+      "c": "Deutschland"
     },
     {
-      "name": "Edelweiß",
-      "country": "Österreich / Schweiz"
+      "n": "Ginkgo",
+      "c": "China (Kultursymbol)"
     },
     {
-      "name": "Lavendel",
-      "country": "Frankreich (Provence)"
+      "n": "Sakura (Kirschblüte)",
+      "c": "Japan"
     },
     {
-      "name": "Eiche (Quercus)",
-      "country": "Deutschland"
+      "n": "Orchidee (Cattleya trianae)",
+      "c": "Kolumbien"
     },
     {
-      "name": "Ginkgo",
-      "country": "China (Kultursymbol)"
+      "n": "Kaktus",
+      "c": "Mexiko (Symbol)"
     },
     {
-      "name": "Sakura (Kirschblüte)",
-      "country": "Japan"
+      "n": "Protea cynaroides",
+      "c": "Südafrika"
     },
     {
-      "name": "Lotus",
-      "country": "Indien"
+      "n": "Pohutukawa",
+      "c": "Neuseeland"
     },
     {
-      "name": "Orchidee (Cattleya trianae)",
-      "country": "Kolumbien"
+      "n": "Wattle (Akazie)",
+      "c": "Australien"
     },
     {
-      "name": "Kaktus",
-      "country": "Mexiko (Symbol)"
+      "n": "Puya raimondii",
+      "c": "Peru"
     },
     {
-      "name": "Protea cynaroides",
-      "country": "Südafrika"
+      "n": "Kantūt (Bougainvillea)",
+      "c": "Papua-Neuguinea"
     },
     {
-      "name": "Pohutukawa",
-      "country": "Neuseeland"
+      "n": "Balsa-Baum",
+      "c": "Ecuador"
     },
     {
-      "name": "Wattle (Akazie)",
-      "country": "Australien"
+      "n": "Seerosenblatt",
+      "c": "Bangladesch"
     },
     {
-      "name": "Puya raimondii",
-      "country": "Peru"
+      "n": "Hagtorn (Weißdorn)",
+      "c": "Schweden (historisch)"
     },
     {
-      "name": "Kantūt (Bougainvillea)",
-      "country": "Papua-Neuguinea"
+      "n": "Freesie / Fynbos",
+      "c": "Südafrika (Kap)"
     },
     {
-      "name": "Balsa-Baum",
-      "country": "Ecuador"
+      "n": "Chrysantheme",
+      "c": "Japan (Kaiserhaus)"
     },
     {
-      "name": "Seerosenblatt",
-      "country": "Bangladesch"
-    },
-    {
-      "name": "Hagtorn (Weißdorn)",
-      "country": "Schweden (historisch)"
-    },
-    {
-      "name": "Freesie / Fynbos",
-      "country": "Südafrika (Kap)"
-    },
-    {
-      "name": "Jasmin",
-      "country": "Pakistan / Syrien"
-    },
-    {
-      "name": "Chrysantheme",
-      "country": "Japan (Kaiserhaus)"
-    },
-    {
-      "name": "Papyrus",
-      "country": "Ägypten"
+      "n": "Papyrus",
+      "c": "Ägypten"
     },
     {
       "n": "Maple Leaf (Zucker-Ahorn)",
@@ -20795,136 +20748,108 @@
       "c": "Deutschland"
     },
     {
-      "name": "Känguru",
-      "country": "Australien"
+      "n": "Kanadischer Biber",
+      "c": "Kanada"
     },
     {
-      "name": "Kanadischer Biber",
-      "country": "Kanada"
+      "n": "Bald Eagle",
+      "c": "USA"
     },
     {
-      "name": "Bald Eagle",
-      "country": "USA"
+      "n": "Roter Drache",
+      "c": "Wales"
     },
     {
-      "name": "Braunbär",
-      "country": "Russland"
+      "n": "Einhorn",
+      "c": "Schottland"
     },
     {
-      "name": "Roter Drache",
-      "country": "Wales"
+      "n": "Gallischer Hahn",
+      "c": "Frankreich"
     },
     {
-      "name": "Einhorn",
-      "country": "Schottland"
+      "n": "Schwarzer Adler",
+      "c": "Deutschland"
     },
     {
-      "name": "Löwe",
-      "country": "England"
+      "n": "Tigerfisch",
+      "c": "Indien"
     },
     {
-      "name": "Gallischer Hahn",
-      "country": "Frankreich"
+      "n": "Pfau",
+      "c": "Indien"
     },
     {
-      "name": "Schwarzer Adler",
-      "country": "Deutschland"
+      "n": "Delfin",
+      "c": "Griechenland"
     },
     {
-      "name": "Weißer Elefant",
-      "country": "Thailand"
+      "n": "Stier",
+      "c": "Spanien"
     },
     {
-      "name": "Tigerfisch",
-      "country": "Indien"
+      "n": "Bulle",
+      "c": "Österreich"
     },
     {
-      "name": "Pfau",
-      "country": "Indien"
+      "n": "Wisent",
+      "c": "Polen"
     },
     {
-      "name": "Schneeleopard",
-      "country": "Pakistan"
+      "n": "Kiwi",
+      "c": "Neuseeland"
     },
     {
-      "name": "Delfin",
-      "country": "Griechenland"
+      "n": "Silberne Fern",
+      "c": "Neuseeland (Symbol)"
     },
     {
-      "name": "Stier",
-      "country": "Spanien"
+      "n": "Condor der Anden",
+      "c": "Argentinien"
     },
     {
-      "name": "Bulle",
-      "country": "Österreich"
+      "n": "Flamingo",
+      "c": "Bahamas"
     },
     {
-      "name": "Wisent",
-      "country": "Polen"
+      "n": "Storch",
+      "c": "Belarus"
     },
     {
-      "name": "Springbok",
-      "country": "Südafrika"
+      "n": "Elch / Moose",
+      "c": "Norwegen / Schweden"
     },
     {
-      "name": "Kiwi",
-      "country": "Neuseeland"
+      "n": "Panda (Großer)",
+      "c": "China"
     },
     {
-      "name": "Silberne Fern",
-      "country": "Neuseeland (Symbol)"
+      "n": "Dodo (historisch)",
+      "c": "Mauritius"
     },
     {
-      "name": "Condor der Anden",
-      "country": "Argentinien"
+      "n": "Nashorn (Breitmaulnashorn)",
+      "c": "Simbabwe"
     },
     {
-      "name": "Jaguar",
-      "country": "Mexiko / Brasilien"
+      "n": "Bengalischer Tiger",
+      "c": "Bangladesch"
     },
     {
-      "name": "Flamingo",
-      "country": "Bahamas"
+      "n": "Stier / Büffel",
+      "c": "Nepal"
     },
     {
-      "name": "Storch",
-      "country": "Belarus"
+      "n": "Yak",
+      "c": "Tibet (inoffiziell)"
     },
     {
-      "name": "Elch / Moose",
-      "country": "Norwegen / Schweden"
+      "n": "Bison",
+      "c": "USA (inoffiziell)"
     },
     {
-      "name": "Panda (Großer)",
-      "country": "China"
-    },
-    {
-      "name": "Dodo (historisch)",
-      "country": "Mauritius"
-    },
-    {
-      "name": "Nashorn (Breitmaulnashorn)",
-      "country": "Simbabwe"
-    },
-    {
-      "name": "Bengalischer Tiger",
-      "country": "Bangladesch"
-    },
-    {
-      "name": "Stier / Büffel",
-      "country": "Nepal"
-    },
-    {
-      "name": "Yak",
-      "country": "Tibet (inoffiziell)"
-    },
-    {
-      "name": "Bison",
-      "country": "USA (inoffiziell)"
-    },
-    {
-      "name": "Wapiti / Elch",
-      "country": "Kanada (inoffiziell)"
+      "n": "Wapiti / Elch",
+      "c": "Kanada (inoffiziell)"
     },
     {
       "n": "Roter Ara",
