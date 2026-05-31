@@ -10947,29 +10947,31 @@ function getDailyCountdown(){
   const h=~~(s/3600);s%=3600;const m=~~(s/60);s%=60;
   return String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
 }
+/* Phase 311: DAILY_POOL global — used by startDailyChallenge() AND renderDailyHero() */
+const DAILY_POOL=[
+  /* Geografie Kern */
+  "city","flag","capital","river","outline","neighbor","map_guess","map_capital",
+  /* Higher / Lower */
+  "hl_pop","hl_area","hl_gdp","hl_elevation","hl_lifeexp","hl_b_temp","hl_b_rain",
+  /* Tiere & Natur */
+  "uk_tiere_endemisch","uk_tiere_bigfive","uk_tiere_grosskatzen","hl_tiere_speed_land",
+  "uk_tiere_nationaltier_pin","hl_tiere_gewicht_land",
+  /* Kultur & Wissen */
+  "uk_wahrzeichen","uk_getraenke","food","currency","plate_casual",
+  /* Vergleich & Timeline */
+  "comp_area","comp_pop","comp_gdp",
+  /* Sport & Geo-Wissen */
+  "uk_sportwissen_olympia_standort","timeline_geo_erdbeben",
+  /* Züge & Bahn (Phase 309) */
+  "zug_panorama","zug_vkm","zug_metro_logos","zug_routen","zug_bahnhof_typ",
+  "zug_hersteller","hl_zug_speed","hl_zug_taktfrequenz","zug_rekorde_pin",
+  "timeline_zug_bahnhof_bau"
+];
 function startDailyChallenge(){
   if(isDailyDone())return;
   const seed=getDailySeed();
   /* Phase 295: Pool auf 30 Modi erweitert; Auswahl per getDailySeed() statt dayIndex */
-  const DAILY_POOL=[
-    /* Geografie Kern */
-    "city","flag","capital","river","outline","neighbor","map_guess","map_capital",
-    /* Higher / Lower */
-    "hl_pop","hl_area","hl_gdp","hl_elevation","hl_lifeexp","hl_b_temp","hl_b_rain",
-    /* Tiere & Natur */
-    "uk_tiere_endemisch","uk_tiere_bigfive","uk_tiere_grosskatzen","hl_tiere_speed_land",
-    "uk_tiere_nationaltier_pin","hl_tiere_gewicht_land",
-    /* Kultur & Wissen */
-    "uk_wahrzeichen","uk_getraenke","food","currency","plate_casual",
-    /* Vergleich & Timeline */
-    "comp_area","comp_pop","comp_gdp",
-    /* Sport & Geo-Wissen */
-    "uk_sportwissen_olympia_standort","timeline_geo_erdbeben",
-    /* Züge & Bahn (Phase 309) */
-    "zug_panorama","zug_vkm","zug_metro_logos","zug_routen","zug_bahnhof_typ",
-    "zug_hersteller","hl_zug_speed","hl_zug_taktfrequenz","zug_rekorde_pin",
-    "timeline_zug_bahnhof_bau"
-  ];
+  /* Phase 311: DAILY_POOL in globalen Scope verschoben — war local var, daher ReferenceError in renderDailyHero */
   S.mode=DAILY_POOL[getDailySeed()%DAILY_POOL.length];S.diff="casual";S.isDailyRun=true;
   const _prog=loadDailyProgress();
   if(_prog&&(_prog.rd||0)>0){
