@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 324 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.78 MB | 721 Spielmodi | verify: 137/137
+**Version:** Phase 325 (Stand: Mai 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.78 MB | 721 Spielmodi | verify: 138/138
 
 ---
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 721 Modi, 718/718/718 — perfekte Konsistenz.
+**Aktueller Stand:** 721 Modi, 539/539/539 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -1081,11 +1081,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **322** | patch_322.py | **Zug-Reisezeiten Upgrade: Heimvorteil-Algorithmus (70/30, land-basiert), 177 Strecken, Zugtyp im Strecken-Duell, genZugReisezeitHL verbessert** |
 | **323** | patch_323.py | **Kultur-Balancing: wahrzeichen +40, museen +23, kunstwerke +21 — 16 unterrepräsentierte Länder (PL/CZ/HU/RO/SE/NO/FI/DK/HR/BG/BE/SK/NL/PT) ergänzt** |
 | **324** | patches/patch_324_gastro_balancing.py | **Gastronomie-Arrays geografisch ausbalanciert: nationalgerichte (+30), streetfood (neu, 32), hausmannskost (+20), suessspeisen (neu, 31) — Fokus Ziel-Länder EU-Ost/Nord/West** |
+| **325** | patches/patch_325_kultur_balancing.py | **Kultur-Finale: kleidung (+28), instrumente (+26), taenze (+18) — alle 16 Ziel-Länder EU-Ost/Nord/West vollständig abgedeckt** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 324 -- Gastronomie-Arrays geografisch ausbalanciert: nationalgerichte (+30), streetfood (neu, 32), hausmannskost (+20), suessspeisen (neu, 31) — Fokus Ziel-Länder EU-Ost/Nord/West, 539 Modi, 39 Datendateien, Mai 2026.*
+*Letztes Update: Phase 325 -- Kultur-Finale: kleidung (+28), instrumente (+26), taenze (+18) — alle 16 Ziel-Länder EU-Ost/Nord/West vollständig abgedeckt, 539 Modi, 39 Datendateien, Mai 2026.*
 
 
 ---

@@ -2214,6 +2214,70 @@
     {
       "n": "Djembe Tanz",
       "c": "Guinea/Westafrika"
+    },
+    {
+      "n": "Căluș",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Hambo",
+      "c": "Schweden"
+    },
+    {
+      "n": "Polska (Tanz)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Halling",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Springar",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Jenkka",
+      "c": "Finnland"
+    },
+    {
+      "n": "Polska (Finnland)",
+      "c": "Finnland"
+    },
+    {
+      "n": "Sekstur",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Masurka (Dänemark)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Linđo",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Klompendans",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Driekusman",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Ballo del Fiocco",
+      "c": "Belgien"
+    },
+    {
+      "n": "Vlaamse Bal Folklorique",
+      "c": "Belgien"
+    },
+    {
+      "n": "Odzemok",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Verbunk (Slowakei)",
+      "c": "Slowakei"
     }
   ],
   "kleidung": [
@@ -2536,6 +2600,118 @@
     {
       "n": "Panama Hut",
       "c": "Ecuador"
+    },
+    {
+      "n": "Strój łowicki",
+      "c": "Polen"
+    },
+    {
+      "n": "Krakowiak-Tracht",
+      "c": "Polen"
+    },
+    {
+      "n": "Mährische Volkstracht",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Kroj (böhmisch)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Magyar Szűr (Schafwollmantel)",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Kalocsa-Stickereikleid",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Ie (rumänische Bluse)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Cojoc (Schafspelzweste)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Folkdräkt (Schweden)",
+      "c": "Schweden"
+    },
+    {
+      "n": "Dalarna-Tracht",
+      "c": "Schweden"
+    },
+    {
+      "n": "Kansallispuku",
+      "c": "Finnland"
+    },
+    {
+      "n": "Sámi-Gákti",
+      "c": "Finnland"
+    },
+    {
+      "n": "Amager-Tracht",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Hedebo-Tracht",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Šokačka Nošnja",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Lijerica-Tracht (Dubrovnik)",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Saya (bulgar. Volkskleid)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Shayak-Wollmantel",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Fustanella",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Evzone-Uniform",
+      "c": "Griechenland"
+    },
+    {
+      "n": "Traje à Vianesa",
+      "c": "Portugal"
+    },
+    {
+      "n": "Capote Alentejano",
+      "c": "Portugal"
+    },
+    {
+      "n": "Volendam-Tracht",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Zeeland-Haube",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Brügger Spitzentracht",
+      "c": "Belgien"
+    },
+    {
+      "n": "Antwerpener Sonntagstracht",
+      "c": "Belgien"
+    },
+    {
+      "n": "Čičmany-Tracht",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Detva-Volkstracht",
+      "c": "Slowakei"
     }
   ],
   "instrumente": [
@@ -2858,6 +3034,110 @@
     {
       "n": "Rudra Vina",
       "c": "Indien"
+    },
+    {
+      "n": "Mazanki (Geige)",
+      "c": "Polen"
+    },
+    {
+      "n": "Suka biłgorajska",
+      "c": "Polen"
+    },
+    {
+      "n": "Fujara (Hirtenflöte)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Dudy (böhmischer Dudelsack)",
+      "c": "Tschechien"
+    },
+    {
+      "n": "Tárogató",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Koboz (Laute)",
+      "c": "Ungarn"
+    },
+    {
+      "n": "Nai (Panflöte)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Cobza (Laute)",
+      "c": "Rumänien"
+    },
+    {
+      "n": "Hardingfele",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Langeleik",
+      "c": "Norwegen"
+    },
+    {
+      "n": "Kantele",
+      "c": "Finnland"
+    },
+    {
+      "n": "Jouhikko",
+      "c": "Finnland"
+    },
+    {
+      "n": "Lur (Bronzehorn)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Humle (Tischzither)",
+      "c": "Dänemark"
+    },
+    {
+      "n": "Lijerica",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Tamburica",
+      "c": "Kroatien"
+    },
+    {
+      "n": "Gaida (bulgar. Sackpfeife)",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Gadulka",
+      "c": "Bulgarien"
+    },
+    {
+      "n": "Guitarra Portuguesa",
+      "c": "Portugal"
+    },
+    {
+      "n": "Cavaquinho",
+      "c": "Portugal"
+    },
+    {
+      "n": "Boerenfluit",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Klompenklapper",
+      "c": "Niederlande"
+    },
+    {
+      "n": "Carillon (Glockenspiel)",
+      "c": "Belgien"
+    },
+    {
+      "n": "Vlaamse Doedelzak",
+      "c": "Belgien"
+    },
+    {
+      "n": "Fujara (Slowakei)",
+      "c": "Slowakei"
+    },
+    {
+      "n": "Gajdy (slowak. Dudelsack)",
+      "c": "Slowakei"
     }
   ],
   "literatur": [
