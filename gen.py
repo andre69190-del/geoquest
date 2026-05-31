@@ -8660,7 +8660,25 @@ function _mkMatchQ(DATA){
     var d=DATA[cat];
     if(!d||!d.items||!d.items.length)return null;
     var items=d.items;
-    var idx=~~(rng()*items.length);
+    /* Phase 328: Heimvorteil 70/30 — bevorzuge Einträge aus Nutzer-Land */
+    var _hv_lang=(S&&S.language)||"de";
+    var _hv_cmap={
+      "de":"Deutschland","at":"Österreich","ch":"Schweiz",
+      "fr":"Frankreich","it":"Italien","es":"Spanien",
+      "pt":"Portugal","nl":"Niederlande","be":"Belgien",
+      "pl":"Polen","cs":"Tschechien","sk":"Slowakei",
+      "hu":"Ungarn","ro":"Rumänien","bg":"Bulgarien",
+      "el":"Griechenland","hr":"Kroatien","tr":"Türkei",
+      "sv":"Schweden","no":"Norwegen","da":"Dänemark","fi":"Finnland",
+      "en":"Großbritannien","ru":"Russland","uk":"Ukraine",
+      "ja":"Japan","zh":"China","ko":"Südkorea",
+      "ar":"Ägypten","hi":"Indien","id":"Indonesien"
+    };
+    var _hv_cn=_hv_cmap[_hv_lang];
+    var _hv_lp=_hv_cn?items.filter(function(x){return x.c===_hv_cn;}):[];
+    var idx=(_hv_lp.length>0&&rng()<0.7)
+      ?items.indexOf(_hv_lp[~~(rng()*_hv_lp.length)])
+      :~~(rng()*items.length);
     var correct=items[idx];
     var opts;
     if(d.fixedOpts){

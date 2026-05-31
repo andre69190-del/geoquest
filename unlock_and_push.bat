@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 327. Sport/Geo/Archäologie-Balancing: sport_herkunft, sport_sportlegende_land, geo_hoehlen_land, repatriierung, megalithanlagen — nur semantisch valide Länder-Arrays erweitert. verify: 138/138."
+git commit -m "Content: Phase 328. ENGINE: Heimvorteil 70/30 in _mkMatchQ() — alle Match-Modi bevorzugen jetzt Einträge aus dem Heimatland des Nutzers (S.language → Ländername-Mapping, localPool, rng()<0.7). Fallback 100% global für nicht-geographische c-Felder.. verify: 138/138."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
