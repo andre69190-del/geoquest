@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 310. Zug-Streak-Badge + Daily Train Challenge (Zug-Tag-Indikator, 10 Zug-Modi im Pool). verify: 136/136."
+git commit -m "Content: Phase 315. UIC-Scanner, Live-Spotting UI, Unified Spotter Dashboard (Tabs+Swipe), Waggon-Album Shortcut in Züge-Kategorie. verify: 137/137."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
