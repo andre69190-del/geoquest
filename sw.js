@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-de58d028';
+const CACHE_NAME = 'geoquest-4927db0d';
 /* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
   './GeoQuest.html',
@@ -43,7 +43,8 @@ const ASSETS = [
   './data/tiere_match.json',
   './data/tiere_pin.json',
   './data/tiere_ws.json',
-  './data/timeline.json'
+  './data/timeline.json',
+  './data/zug_uic.json'
 ];
 
 self.addEventListener('install', function(e) {

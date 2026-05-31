@@ -15,6 +15,7 @@ CJ = json.dumps(cities_slim, separators=(',',':'), ensure_ascii=False)
 # ─── DATA JSON FILES ─── Phase 225: Data-Logic Separation ───────────────────
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_ws.json'), 'r', encoding='utf-8') as _f: TIER_WS_DATA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/kultur.json'), 'r', encoding='utf-8') as _f: KULTUR_DATA_J = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/zug_uic.json'), 'r', encoding='utf-8') as _f: ZUG_UIC_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_hl.json'), 'r', encoding='utf-8') as _f: TIER_HL_DATA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_match.json'), 'r', encoding='utf-8') as _f: TIER_MATCH_DATA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/pflanzen_pin.json'), 'r', encoding='utf-8') as _f: PFLANZEN_PIN_J = _f.read()
@@ -553,6 +554,39 @@ function submitDS100Input(){
   answer(val,_secretGameToken);
 }
 window.submitDS100Input=submitDS100Input;
+
+/* Phase 312: UIC Wagennummer-Quiz */
+function genUICInputQ(){
+  var pool=ZUG_UIC_DATA&&ZUG_UIC_DATA.waggontypen;
+  if(!pool||pool.length<4)return null;
+  var laender=ZUG_UIC_DATA.laendercodes||{};
+  var cor=pool[~~(rng()*pool.length)];
+  var code=cor.land_code;
+  var correctLand=laender[code]||cor.land;
+  var allCodes=Object.keys(laender).filter(function(k){return k!==code;});
+  var dis=[];var tries=0;
+  while(dis.length<3&&tries<50){
+    var rk=allCodes[~~(rng()*allCodes.length)];
+    var rl=laender[rk];
+    if(rl&&dis.indexOf(rl)===-1&&rl!==correctLand)dis.push(rl);
+    tries++;
+  }
+  var serial=String(Math.floor(1000000+rng()*8999999));
+  var checkDigit=~~(rng()*10);
+  var displayNum=code+" "+cor.uic_typ+" "+serial.slice(0,4)+" "+serial.slice(4)+"-"+checkDigit;
+  return{
+    type:"uic_mc",
+    prompt:_tc("Welchem Land gehört dieser Waggon?"),
+    subj:displayNum,
+    meta:cor.gattung+" · "+cor.typ_name+" · "+cor.betreiber,
+    ans:correctLand,
+    opts:sh([correctLand].concat(dis)),
+    lid:"uic_"+code+"_"+serial,
+    cc:""
+  };
+}
+window.genUICInputQ=genUICInputQ;
+
 
 function renderVersusArea(){
 const pair=getVersusCountryPair('area');
@@ -2902,6 +2936,7 @@ const MODES=[
     {id:"zug_routen",       icon:"\u{1F5FA}\uFE0F",title:"Legendaere Routen",      group:"zuege",prompt:"Aus welchem Land faehrt dieser beruehmt Zug?",desc:"Glacier Express bis Transsibirische Eisenbahn — kenne deine Strecken"},
     {id:"zug_bahnhof_typ", icon:"\u{1F3DB}\uFE0F",title:"Bahnhofs-Architektur",   group:"zuege",prompt:"Welche Bauform hat dieser Bahnhof?",              desc:"Kopfbahnhof, Durchgangsbahnhof, Turmbahnhof — die Typen der grossen Hubs"},
     {id:"zug_hersteller",  icon:"\u{1F3ED}",      title:"Zug-Hersteller",          group:"zuege",prompt:"Von welchem Hersteller stammt dieser Zug?",        desc:"Alstom, Siemens, Hitachi, Stadler — wer baut die schnellsten Zuege?"},
+    {id:"zug_uic_laender",   icon:"\uD83D\uDD22",title:"UIC-L\u00e4ndercodes",          group:"zuege",prompt:"Welchem Land geh\u00f6rt dieser Waggon?",prompt_en:"Which country does this wagon belong to?",desc:"Erkenne das Land an der 12-stelligen UIC-Wagennummer"},
     {id:"zug_ds100_input",    icon:"\u2328\uFE0F",title:"DS100 (Hardcore)",                group:"zuege",prompt:"Tippe das DS100-Betriebsstellenkürzel!",                       desc:"Freie Texteingabe — FF, MH, AH… Kennst du alle?"},
 
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
@@ -3405,7 +3440,7 @@ const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
-  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","hl_zug_taktfrequenz","timeline_zug_hsb","timeline_zug_bahnhof_bau","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_panorama","ws_zug_nightjet","ws_zug_acela","uk_bahnhof_pin","zug_rekorde_pin","zug_ds100","zug_ds100_input","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
+  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","hl_zug_taktfrequenz","timeline_zug_hsb","timeline_zug_bahnhof_bau","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_panorama","ws_zug_nightjet","ws_zug_acela","uk_bahnhof_pin","zug_rekorde_pin","zug_ds100","zug_uic_laender","zug_ds100_input","zug_uic_laender","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
@@ -8380,6 +8415,7 @@ function genSprachenKompassQ(){
 
 /* Phase 211: Kultur & Lifestyle universal data matrix */
 const KULTUR_DATA=PLACEHOLDER_KULTUR_DATA;
+const ZUG_UIC_DATA=PLACEHOLDER_ZUG_UIC_DATA;
 const TIER_PIN_DATA=PLACEHOLDER_TIER_PIN;
 Object.assign(KULTUR_DATA,TIER_PIN_DATA);
 
@@ -9557,6 +9593,7 @@ const GEN={
   zug_bahnhof_typ:()=>genTiereMatchQ("zug_bahnhof_typ"),
   zug_hersteller:()=>genTiereMatchQ("zug_hersteller"),
   zug_ds100_input:()=>genDS100InputQ(),
+  zug_uic_laender:()=>genUICInputQ(),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),
@@ -9964,6 +10001,34 @@ function showTrainDepot(){
   html+=renderSec(_tc("Legendäre Routen"),allRouten);
   html+=renderSec(_tc("Bahnhofs-Architektur"),allBahnTyp);
   html+=renderSec(_tc("Zug-Hersteller"),allHerst);
+
+
+  /* Phase 312: UIC Scanner Logbuch */
+  var _uicLog=[];try{_uicLog=JSON.parse(localStorage.getItem('gq_uic_log')||'[]');}catch(e){}
+  var _uicLaender=(ZUG_UIC_DATA&&ZUG_UIC_DATA.laendercodes)||{};
+  var _uicHtml='<div style="background:var(--bg2);border-radius:10px;padding:12px;margin-bottom:12px">'
+    +'<div style="font-weight:800;font-size:.95rem;margin-bottom:8px;display:flex;align-items:center;gap:8px">'
+    +'<span style="font-size:1.2rem">🔢</span>'+_tc("UIC-Logbuch")
+    +' <span style="font-size:.72rem;background:#004d40;color:#4db6ac;padding:2px 8px;border-radius:20px;font-weight:700">'+_uicLog.length+' '+_tc("gespottet")+'</span></div>'
+    +'<div style="display:flex;gap:6px;margin-bottom:8px">'
+    +'<input id="uic-log-inp" placeholder="z.B. 80 51 2345 678-9" maxlength="25" '
+    +'style="flex:1;min-width:0;background:var(--bg3);color:var(--text);border:1.5px solid var(--border);border-radius:6px;padding:6px 10px;font-size:.82rem;font-family:monospace">'
+    +'<button onclick="(function(){var v=document.getElementById(\'uic-log-inp\').value.trim();if(!v)return;'
+    +'var l=[];try{l=JSON.parse(localStorage.getItem(\'gq_uic_log\')||\'[]\');}catch(_e){}'
+    +'if(l.indexOf(v)===-1){l.push(v);try{localStorage.setItem(\'gq_uic_log\',JSON.stringify(l));}catch(_e){}}'
+    +'document.getElementById(\'uic-log-inp\').value=\'\';render();})()" '
+    +'style="background:#00695c;color:#fff;border:none;border-radius:6px;padding:6px 12px;font-weight:700;cursor:pointer;white-space:nowrap">+ '+_tc("Eintragen")+'</button></div>';
+  if(_uicLog.length>0){
+    _uicHtml+='<div style="display:flex;flex-wrap:wrap;gap:5px">'
+    +_uicLog.slice().reverse().slice(0,30).map(function(n){
+      return'<div style="background:#e0f7fa;color:#006064;border:1px solid #00838f;border-radius:5px;padding:3px 8px;font-size:.78rem;font-family:monospace;font-weight:700">'+n+'</div>';
+    }).join('')+'</div>';
+    if(_uicLog.length>30)_uicHtml+='<div style="font-size:.72rem;color:var(--text3);margin-top:4px">+'+(_uicLog.length-30)+' '+_tc("weitere")+'</div>';
+  }else{
+    _uicHtml+='<div style="font-size:.82rem;color:var(--text3)">'+_tc("Noch keine Waggons gescannt — tippe eine echte UIC-Nummer ein!")+'</div>';
+  }
+  _uicHtml+='</div>';
+  html+=_uicHtml;
 
   if(!allVkm.length&&!allPan.length&&!allDs.length)html+="<p style='color:#999'>Keine Zug-Daten gefunden.</p>";
   // WS-Streak Badge
@@ -14825,6 +14890,7 @@ JS = (JS
   .replace('PLACEHOLDER_HCCH', HCCHJ)
   .replace('PLACEHOLDER_SPORTPOI', SPORT_POI_J)
   .replace('PLACEHOLDER_TIER_WS_DATA', TIER_WS_DATA_J)
+  .replace('PLACEHOLDER_ZUG_UIC_DATA', ZUG_UIC_J)
   .replace('PLACEHOLDER_KULTUR_DATA', KULTUR_DATA_J)
   .replace('PLACEHOLDER_TIER_PIN', TIER_PIN_J)
   .replace('PLACEHOLDER_TIER_HL_DATA', TIER_HL_DATA_J)
