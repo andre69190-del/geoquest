@@ -3,480 +3,1239 @@
     "von": "München Hbf",
     "nach": "Berlin Hbf",
     "dauer_min": 235,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Berlin Hbf",
     "nach": "Hamburg Hbf",
     "dauer_min": 103,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Frankfurt Hbf",
     "nach": "Köln Hbf",
     "dauer_min": 75,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Frankfurt Hbf",
     "nach": "München Hbf",
     "dauer_min": 188,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Köln Hbf",
     "nach": "Berlin Hbf",
     "dauer_min": 258,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Stuttgart Hbf",
     "nach": "München Hbf",
     "dauer_min": 130,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Frankfurt Hbf",
     "nach": "Berlin Hbf",
     "dauer_min": 268,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Hamburg Hbf",
     "nach": "München Hbf",
     "dauer_min": 362,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Düsseldorf Hbf",
     "nach": "Frankfurt Hbf",
     "dauer_min": 68,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Hannover Hbf",
     "nach": "München Hbf",
     "dauer_min": 283,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Nürnberg Hbf",
     "nach": "München Hbf",
     "dauer_min": 65,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Dresden Hbf",
     "nach": "Berlin Hbf",
     "dauer_min": 115,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "de"
   },
   {
     "von": "Leipzig Hbf",
     "nach": "München Hbf",
     "dauer_min": 197,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Stuttgart Hbf",
     "nach": "Frankfurt Hbf",
     "dauer_min": 75,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Köln Hbf",
     "nach": "Hamburg Hbf",
     "dauer_min": 228,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Wien Hbf",
     "nach": "Salzburg Hbf",
     "dauer_min": 147,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "at"
   },
   {
     "von": "Wien Hbf",
     "nach": "Graz Hbf",
     "dauer_min": 160,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "at"
   },
   {
     "von": "Wien Hbf",
     "nach": "Innsbruck Hbf",
     "dauer_min": 286,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "at"
   },
   {
     "von": "Wien Hbf",
     "nach": "Linz Hbf",
     "dauer_min": 75,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "at"
   },
   {
     "von": "Salzburg Hbf",
     "nach": "München Hbf",
     "dauer_min": 83,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "at"
   },
   {
     "von": "Wien Hbf",
     "nach": "Zürich HB",
     "dauer_min": 476,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "at"
   },
   {
     "von": "Zürich HB",
     "nach": "Basel SBB",
     "dauer_min": 55,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "ch"
   },
   {
     "von": "Zürich HB",
     "nach": "Bern",
     "dauer_min": 57,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "ch"
   },
   {
     "von": "Zürich HB",
     "nach": "Genf",
     "dauer_min": 168,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "ch"
   },
   {
     "von": "Bern",
     "nach": "Genf",
     "dauer_min": 96,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "ch"
   },
   {
     "von": "Zürich HB",
     "nach": "Luzern",
     "dauer_min": 46,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "ch"
   },
   {
     "von": "Basel SBB",
     "nach": "Bern",
     "dauer_min": 55,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "ch"
   },
   {
     "von": "Zürich HB",
     "nach": "St. Gallen",
     "dauer_min": 66,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "ch"
   },
   {
     "von": "Paris Gare de Lyon",
     "nach": "Lyon Part-Dieu",
     "dauer_min": 117,
-    "typ": "TGV"
+    "typ": "TGV",
+    "land": "fr"
   },
   {
     "von": "Paris Gare de Lyon",
     "nach": "Marseille St-Charles",
     "dauer_min": 189,
-    "typ": "TGV"
+    "typ": "TGV",
+    "land": "fr"
   },
   {
     "von": "Paris Est",
     "nach": "Strasbourg",
     "dauer_min": 108,
-    "typ": "TGV"
+    "typ": "TGV",
+    "land": "fr"
   },
   {
     "von": "Paris Est",
     "nach": "Frankfurt Hbf",
     "dauer_min": 215,
-    "typ": "TGV/ICE"
+    "typ": "TGV/ICE",
+    "land": "fr"
   },
   {
     "von": "Paris Nord",
     "nach": "Brüssel Midi",
     "dauer_min": 82,
-    "typ": "Thalys"
+    "typ": "Thalys",
+    "land": "fr"
   },
   {
     "von": "Paris Nord",
     "nach": "London St Pancras",
     "dauer_min": 135,
-    "typ": "Eurostar"
+    "typ": "Eurostar",
+    "land": "fr"
   },
   {
     "von": "Paris Nord",
     "nach": "Amsterdam Centraal",
     "dauer_min": 215,
-    "typ": "Thalys"
+    "typ": "Thalys",
+    "land": "fr"
   },
   {
     "von": "Paris Gare de Lyon",
     "nach": "Turin Porta Susa",
     "dauer_min": 315,
-    "typ": "TGV"
+    "typ": "TGV",
+    "land": "fr"
   },
   {
     "von": "Paris Gare de Lyon",
     "nach": "Zürich HB",
     "dauer_min": 222,
-    "typ": "TGV"
+    "typ": "TGV",
+    "land": "fr"
   },
   {
     "von": "Lyon Part-Dieu",
     "nach": "Marseille St-Charles",
     "dauer_min": 97,
-    "typ": "TGV"
+    "typ": "TGV",
+    "land": "fr"
   },
   {
     "von": "Amsterdam Centraal",
     "nach": "Brüssel Midi",
     "dauer_min": 113,
-    "typ": "Thalys"
+    "typ": "Thalys",
+    "land": "nl"
   },
   {
     "von": "Amsterdam Centraal",
     "nach": "London St Pancras",
     "dauer_min": 228,
-    "typ": "Eurostar"
+    "typ": "Eurostar",
+    "land": "nl"
   },
   {
     "von": "Brüssel Midi",
     "nach": "London St Pancras",
     "dauer_min": 110,
-    "typ": "Eurostar"
+    "typ": "Eurostar",
+    "land": "be"
   },
   {
     "von": "Brüssel Midi",
     "nach": "Köln Hbf",
     "dauer_min": 115,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "be"
   },
   {
     "von": "Madrid Atocha",
     "nach": "Barcelona Sants",
     "dauer_min": 165,
-    "typ": "AVE"
+    "typ": "AVE",
+    "land": "es"
   },
   {
     "von": "Madrid Atocha",
     "nach": "Sevilla",
     "dauer_min": 150,
-    "typ": "AVE"
+    "typ": "AVE",
+    "land": "es"
   },
   {
     "von": "Barcelona Sants",
     "nach": "Valencia Joaquín Sorolla",
     "dauer_min": 165,
-    "typ": "AVE"
+    "typ": "AVE",
+    "land": "es"
   },
   {
     "von": "Madrid Atocha",
     "nach": "Valencia Joaquín Sorolla",
     "dauer_min": 100,
-    "typ": "AVE"
+    "typ": "AVE",
+    "land": "es"
   },
   {
     "von": "Rom Termini",
     "nach": "Mailand Centrale",
     "dauer_min": 187,
-    "typ": "Frecciarossa"
+    "typ": "Frecciarossa",
+    "land": "it"
   },
   {
     "von": "Rom Termini",
     "nach": "Florenz SMN",
     "dauer_min": 91,
-    "typ": "Frecciarossa"
+    "typ": "Frecciarossa",
+    "land": "it"
   },
   {
     "von": "Mailand Centrale",
     "nach": "Turin Porta Nuova",
     "dauer_min": 63,
-    "typ": "Frecciarossa"
+    "typ": "Frecciarossa",
+    "land": "it"
   },
   {
     "von": "Mailand Centrale",
     "nach": "Venedig Santa Lucia",
     "dauer_min": 132,
-    "typ": "Frecciarossa"
+    "typ": "Frecciarossa",
+    "land": "it"
   },
   {
     "von": "Rom Termini",
     "nach": "Neapel Centrale",
     "dauer_min": 70,
-    "typ": "Frecciarossa"
+    "typ": "Frecciarossa",
+    "land": "it"
   },
   {
     "von": "Wien Hbf",
     "nach": "München Hbf",
     "dauer_min": 245,
-    "typ": "RailJet/ICE"
+    "typ": "RailJet/ICE",
+    "land": "at"
   },
   {
     "von": "Wien Hbf",
     "nach": "Budapest Keleti",
     "dauer_min": 157,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "at"
   },
   {
     "von": "Wien Hbf",
     "nach": "Prag Hlavní",
     "dauer_min": 241,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "at"
   },
   {
     "von": "Berlin Hbf",
     "nach": "Prag Hlavní",
     "dauer_min": 256,
-    "typ": "EC"
+    "typ": "EC",
+    "land": "de"
   },
   {
     "von": "München Hbf",
     "nach": "Zürich HB",
     "dauer_min": 235,
-    "typ": "EC"
+    "typ": "EC",
+    "land": "de"
   },
   {
     "von": "München Hbf",
     "nach": "Wien Hbf",
     "dauer_min": 245,
-    "typ": "RailJet/ICE"
+    "typ": "RailJet/ICE",
+    "land": "de"
   },
   {
     "von": "München Hbf",
     "nach": "Venedig Santa Lucia",
     "dauer_min": 349,
-    "typ": "EC"
+    "typ": "EC",
+    "land": "de"
   },
   {
     "von": "Frankfurt Hbf",
     "nach": "Zürich HB",
     "dauer_min": 220,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Frankfurt Hbf",
     "nach": "Paris Est",
     "dauer_min": 218,
-    "typ": "TGV/ICE"
+    "typ": "TGV/ICE",
+    "land": "de"
   },
   {
     "von": "Hamburg Hbf",
     "nach": "Kopenhagen H",
     "dauer_min": 274,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "de"
   },
   {
     "von": "Berlin Hbf",
     "nach": "Warschau Centrale",
     "dauer_min": 337,
-    "typ": "EC"
+    "typ": "EC",
+    "land": "de"
   },
   {
     "von": "Berlin Hbf",
     "nach": "Wien Hbf",
     "dauer_min": 421,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "de"
   },
   {
     "von": "Zürich HB",
     "nach": "Wien Hbf",
     "dauer_min": 476,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "ch"
   },
   {
     "von": "Zürich HB",
     "nach": "Hamburg Hbf",
     "dauer_min": 440,
-    "typ": "EC/ICE"
+    "typ": "EC/ICE",
+    "land": "ch"
   },
   {
     "von": "London St Pancras",
     "nach": "Paris Nord",
     "dauer_min": 135,
-    "typ": "Eurostar"
+    "typ": "Eurostar",
+    "land": "gb"
   },
   {
     "von": "London St Pancras",
     "nach": "Brüssel Midi",
     "dauer_min": 110,
-    "typ": "Eurostar"
+    "typ": "Eurostar",
+    "land": "gb"
   },
   {
     "von": "Budapest Keleti",
     "nach": "Bratislava hl.st.",
     "dauer_min": 152,
-    "typ": "EC"
+    "typ": "EC",
+    "land": "hu"
   },
   {
     "von": "Prag Hlavní",
     "nach": "Wien Hbf",
     "dauer_min": 241,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "cz"
   },
   {
     "von": "Brüssel Midi",
     "nach": "Amsterdam Centraal",
     "dauer_min": 113,
-    "typ": "Thalys"
+    "typ": "Thalys",
+    "land": "be"
   },
   {
     "von": "Strasbourg",
     "nach": "Zürich HB",
     "dauer_min": 80,
-    "typ": "TGV"
+    "typ": "TGV",
+    "land": "fr"
   },
   {
     "von": "Basel SBB",
     "nach": "Frankfurt Hbf",
     "dauer_min": 154,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "ch"
   },
   {
     "von": "Köln Hbf",
     "nach": "Frankfurt Hbf",
     "dauer_min": 75,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Stuttgart Hbf",
     "nach": "Zürich HB",
     "dauer_min": 176,
-    "typ": "IC"
+    "typ": "IC",
+    "land": "de"
   },
   {
     "von": "Nürnberg Hbf",
     "nach": "Frankfurt Hbf",
     "dauer_min": 108,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "Hannover Hbf",
     "nach": "Berlin Hbf",
     "dauer_min": 98,
-    "typ": "ICE"
+    "typ": "ICE",
+    "land": "de"
   },
   {
     "von": "München Hbf",
     "nach": "Salzburg Hbf",
     "dauer_min": 83,
-    "typ": "RailJet"
+    "typ": "RailJet",
+    "land": "de"
   },
   {
     "von": "Florenz SMN",
     "nach": "Bologna Centrale",
     "dauer_min": 36,
-    "typ": "Frecciarossa"
+    "typ": "Frecciarossa",
+    "land": "it"
   },
   {
     "von": "Bologna Centrale",
     "nach": "Mailand Centrale",
     "dauer_min": 68,
-    "typ": "Frecciarossa"
+    "typ": "Frecciarossa",
+    "land": "it"
   },
   {
     "von": "Madrid Atocha",
     "nach": "Bilbao Abando",
     "dauer_min": 248,
-    "typ": "Alvia"
+    "typ": "Alvia",
+    "land": "es"
+  },
+  {
+    "von": "Stockholm C",
+    "nach": "Göteborg C",
+    "dauer_min": 175,
+    "typ": "X2000",
+    "land": "se"
+  },
+  {
+    "von": "Stockholm C",
+    "nach": "Malmö C",
+    "dauer_min": 285,
+    "typ": "X2000",
+    "land": "se"
+  },
+  {
+    "von": "Stockholm C",
+    "nach": "Uppsala C",
+    "dauer_min": 38,
+    "typ": "SJ Regional",
+    "land": "se"
+  },
+  {
+    "von": "Göteborg C",
+    "nach": "Malmö C",
+    "dauer_min": 163,
+    "typ": "SJ",
+    "land": "se"
+  },
+  {
+    "von": "Stockholm C",
+    "nach": "Sundsvall C",
+    "dauer_min": 184,
+    "typ": "SJ Intercity",
+    "land": "se"
+  },
+  {
+    "von": "Oslo S",
+    "nach": "Bergen",
+    "dauer_min": 393,
+    "typ": "NSB",
+    "land": "no"
+  },
+  {
+    "von": "Oslo S",
+    "nach": "Trondheim S",
+    "dauer_min": 441,
+    "typ": "NSB",
+    "land": "no"
+  },
+  {
+    "von": "Oslo S",
+    "nach": "Stavanger",
+    "dauer_min": 489,
+    "typ": "NSB",
+    "land": "no"
+  },
+  {
+    "von": "Kopenhagen H",
+    "nach": "Aarhus H",
+    "dauer_min": 185,
+    "typ": "IC",
+    "land": "dk"
+  },
+  {
+    "von": "Kopenhagen H",
+    "nach": "Odense H",
+    "dauer_min": 73,
+    "typ": "IC",
+    "land": "dk"
+  },
+  {
+    "von": "Helsinki",
+    "nach": "Tampere",
+    "dauer_min": 97,
+    "typ": "IC",
+    "land": "fi"
+  },
+  {
+    "von": "Helsinki",
+    "nach": "Turku",
+    "dauer_min": 120,
+    "typ": "IC",
+    "land": "fi"
+  },
+  {
+    "von": "Helsinki",
+    "nach": "Oulu",
+    "dauer_min": 270,
+    "typ": "IC",
+    "land": "fi"
+  },
+  {
+    "von": "Helsinki",
+    "nach": "Rovaniemi",
+    "dauer_min": 555,
+    "typ": "IC Night",
+    "land": "fi"
+  },
+  {
+    "von": "Warszawa Centralna",
+    "nach": "Kraków Główny",
+    "dauer_min": 145,
+    "typ": "EIP",
+    "land": "pl"
+  },
+  {
+    "von": "Warszawa Centralna",
+    "nach": "Gdańsk Główny",
+    "dauer_min": 175,
+    "typ": "EIP",
+    "land": "pl"
+  },
+  {
+    "von": "Warszawa Centralna",
+    "nach": "Wrocław Główny",
+    "dauer_min": 196,
+    "typ": "IC",
+    "land": "pl"
+  },
+  {
+    "von": "Kraków Główny",
+    "nach": "Wrocław Główny",
+    "dauer_min": 215,
+    "typ": "IC",
+    "land": "pl"
+  },
+  {
+    "von": "Warszawa Centralna",
+    "nach": "Poznań Główny",
+    "dauer_min": 165,
+    "typ": "EIP",
+    "land": "pl"
+  },
+  {
+    "von": "Warszawa Centralna",
+    "nach": "Łódź Kaliska",
+    "dauer_min": 75,
+    "typ": "IC",
+    "land": "pl"
+  },
+  {
+    "von": "Prag Hlavní",
+    "nach": "Brno Hlavní nádraží",
+    "dauer_min": 143,
+    "typ": "EC",
+    "land": "cz"
+  },
+  {
+    "von": "Prag Hlavní",
+    "nach": "Ostrava Hlavní",
+    "dauer_min": 195,
+    "typ": "EC",
+    "land": "cz"
+  },
+  {
+    "von": "Bratislava hl.st.",
+    "nach": "Košice",
+    "dauer_min": 215,
+    "typ": "EC",
+    "land": "sk"
+  },
+  {
+    "von": "Bratislava hl.st.",
+    "nach": "Žilina",
+    "dauer_min": 100,
+    "typ": "IC",
+    "land": "sk"
+  },
+  {
+    "von": "Bratislava hl.st.",
+    "nach": "Prag Hlavní",
+    "dauer_min": 262,
+    "typ": "EC",
+    "land": "sk"
+  },
+  {
+    "von": "Budapest Keleti",
+    "nach": "Debrecen",
+    "dauer_min": 130,
+    "typ": "IC",
+    "land": "hu"
+  },
+  {
+    "von": "Budapest Keleti",
+    "nach": "Pécs",
+    "dauer_min": 165,
+    "typ": "IC",
+    "land": "hu"
+  },
+  {
+    "von": "București Nord",
+    "nach": "Cluj-Napoca",
+    "dauer_min": 391,
+    "typ": "IC",
+    "land": "ro"
+  },
+  {
+    "von": "București Nord",
+    "nach": "Timișoara Nord",
+    "dauer_min": 345,
+    "typ": "IC",
+    "land": "ro"
+  },
+  {
+    "von": "București Nord",
+    "nach": "Brașov",
+    "dauer_min": 170,
+    "typ": "IC",
+    "land": "ro"
+  },
+  {
+    "von": "Sofia",
+    "nach": "Plovdiv",
+    "dauer_min": 130,
+    "typ": "Intercity",
+    "land": "bg"
+  },
+  {
+    "von": "Sofia",
+    "nach": "Varna",
+    "dauer_min": 430,
+    "typ": "IC",
+    "land": "bg"
+  },
+  {
+    "von": "Athen (Larissis)",
+    "nach": "Thessaloniki",
+    "dauer_min": 210,
+    "typ": "IC",
+    "land": "el"
+  },
+  {
+    "von": "Thessaloniki",
+    "nach": "Alexandroupolis",
+    "dauer_min": 256,
+    "typ": "IC",
+    "land": "el"
+  },
+  {
+    "von": "Zagreb Glavni kol.",
+    "nach": "Split",
+    "dauer_min": 383,
+    "typ": "IC",
+    "land": "hr"
+  },
+  {
+    "von": "Zagreb Glavni kol.",
+    "nach": "Rijeka",
+    "dauer_min": 208,
+    "typ": "IC",
+    "land": "hr"
+  },
+  {
+    "von": "Ljubljana",
+    "nach": "Maribor",
+    "dauer_min": 116,
+    "typ": "IC",
+    "land": "si"
+  },
+  {
+    "von": "Ljubljana",
+    "nach": "Koper",
+    "dauer_min": 105,
+    "typ": "IC",
+    "land": "si"
+  },
+  {
+    "von": "Istanbul Pendik",
+    "nach": "Ankara",
+    "dauer_min": 250,
+    "typ": "YHT",
+    "land": "tr"
+  },
+  {
+    "von": "Ankara",
+    "nach": "Konya",
+    "dauer_min": 82,
+    "typ": "YHT",
+    "land": "tr"
+  },
+  {
+    "von": "Istanbul Pendik",
+    "nach": "Eskişehir",
+    "dauer_min": 125,
+    "typ": "YHT",
+    "land": "tr"
+  },
+  {
+    "von": "Ankara",
+    "nach": "Sivas",
+    "dauer_min": 122,
+    "typ": "YHT",
+    "land": "tr"
+  },
+  {
+    "von": "Istanbul Pendik",
+    "nach": "Konya",
+    "dauer_min": 327,
+    "typ": "YHT",
+    "land": "tr"
+  },
+  {
+    "von": "Amsterdam Centraal",
+    "nach": "Utrecht Centraal",
+    "dauer_min": 27,
+    "typ": "IC",
+    "land": "nl"
+  },
+  {
+    "von": "Amsterdam Centraal",
+    "nach": "Den Haag Centraal",
+    "dauer_min": 50,
+    "typ": "IC",
+    "land": "nl"
+  },
+  {
+    "von": "Rotterdam Centraal",
+    "nach": "Amsterdam Centraal",
+    "dauer_min": 40,
+    "typ": "IC",
+    "land": "nl"
+  },
+  {
+    "von": "Brüssel Midi",
+    "nach": "Brügge",
+    "dauer_min": 55,
+    "typ": "IC",
+    "land": "be"
+  },
+  {
+    "von": "Brüssel Midi",
+    "nach": "Antwerpen C",
+    "dauer_min": 38,
+    "typ": "IC",
+    "land": "be"
+  },
+  {
+    "von": "Luxemburg",
+    "nach": "Brüssel Midi",
+    "dauer_min": 182,
+    "typ": "IC",
+    "land": "lu"
+  },
+  {
+    "von": "London Euston",
+    "nach": "Manchester Piccadilly",
+    "dauer_min": 127,
+    "typ": "Avanti",
+    "land": "gb"
+  },
+  {
+    "von": "London King's Cross",
+    "nach": "Edinburgh Waverley",
+    "dauer_min": 260,
+    "typ": "LNER",
+    "land": "gb"
+  },
+  {
+    "von": "London Paddington",
+    "nach": "Bristol Temple Meads",
+    "dauer_min": 84,
+    "typ": "GWR",
+    "land": "gb"
+  },
+  {
+    "von": "London King's Cross",
+    "nach": "Leeds",
+    "dauer_min": 128,
+    "typ": "LNER",
+    "land": "gb"
+  },
+  {
+    "von": "London Paddington",
+    "nach": "Cardiff Central",
+    "dauer_min": 120,
+    "typ": "GWR",
+    "land": "gb"
+  },
+  {
+    "von": "London Euston",
+    "nach": "Birmingham New St.",
+    "dauer_min": 82,
+    "typ": "Avanti",
+    "land": "gb"
+  },
+  {
+    "von": "Barcelona Sants",
+    "nach": "Zaragoza Delicias",
+    "dauer_min": 73,
+    "typ": "AVE",
+    "land": "es"
+  },
+  {
+    "von": "Madrid Atocha",
+    "nach": "Zaragoza Delicias",
+    "dauer_min": 80,
+    "typ": "AVE",
+    "land": "es"
+  },
+  {
+    "von": "Madrid Atocha",
+    "nach": "Málaga Maria Z.",
+    "dauer_min": 165,
+    "typ": "AVE",
+    "land": "es"
+  },
+  {
+    "von": "Valencia Joaquín Sorolla",
+    "nach": "Alicante",
+    "dauer_min": 75,
+    "typ": "AVE",
+    "land": "es"
+  },
+  {
+    "von": "Lisboa Oriente",
+    "nach": "Porto Campanhã",
+    "dauer_min": 165,
+    "typ": "Alfa Pendular",
+    "land": "pt"
+  },
+  {
+    "von": "Lisboa Oriente",
+    "nach": "Coimbra B",
+    "dauer_min": 70,
+    "typ": "Alfa Pendular",
+    "land": "pt"
+  },
+  {
+    "von": "Porto Campanhã",
+    "nach": "Braga",
+    "dauer_min": 43,
+    "typ": "Urbano",
+    "land": "pt"
+  },
+  {
+    "von": "Paris Gare de Lyon",
+    "nach": "Nice Ville",
+    "dauer_min": 333,
+    "typ": "TGV",
+    "land": "fr"
+  },
+  {
+    "von": "Paris Montparnasse",
+    "nach": "Nantes",
+    "dauer_min": 124,
+    "typ": "TGV",
+    "land": "fr"
+  },
+  {
+    "von": "Paris Montparnasse",
+    "nach": "Rennes",
+    "dauer_min": 91,
+    "typ": "TGV",
+    "land": "fr"
+  },
+  {
+    "von": "Lyon Part-Dieu",
+    "nach": "Paris Gare de Lyon",
+    "dauer_min": 117,
+    "typ": "TGV",
+    "land": "fr"
+  },
+  {
+    "von": "Bordeaux St-Jean",
+    "nach": "Toulouse Matabiau",
+    "dauer_min": 120,
+    "typ": "TGV",
+    "land": "fr"
+  },
+  {
+    "von": "Mailand Centrale",
+    "nach": "Genua Brignole",
+    "dauer_min": 85,
+    "typ": "IC",
+    "land": "it"
+  },
+  {
+    "von": "Rom Termini",
+    "nach": "Bari Centrale",
+    "dauer_min": 225,
+    "typ": "Frecciarossa",
+    "land": "it"
+  },
+  {
+    "von": "Venedig Santa Lucia",
+    "nach": "Verona Porta Nuova",
+    "dauer_min": 65,
+    "typ": "Frecciarossa",
+    "land": "it"
+  },
+  {
+    "von": "Bologna Centrale",
+    "nach": "Florenz SMN",
+    "dauer_min": 36,
+    "typ": "Frecciarossa",
+    "land": "it"
+  },
+  {
+    "von": "Neapel Centrale",
+    "nach": "Salerno",
+    "dauer_min": 38,
+    "typ": "Regionale",
+    "land": "it"
+  },
+  {
+    "von": "Freiburg Hbf",
+    "nach": "Frankfurt Hbf",
+    "dauer_min": 147,
+    "typ": "ICE",
+    "land": "de"
+  },
+  {
+    "von": "Kiel Hbf",
+    "nach": "Hamburg Hbf",
+    "dauer_min": 88,
+    "typ": "IC",
+    "land": "de"
+  },
+  {
+    "von": "Rostock Hbf",
+    "nach": "Berlin Hbf",
+    "dauer_min": 148,
+    "typ": "IC",
+    "land": "de"
+  },
+  {
+    "von": "Erfurt Hbf",
+    "nach": "Berlin Hbf",
+    "dauer_min": 102,
+    "typ": "ICE",
+    "land": "de"
+  },
+  {
+    "von": "Karlsruhe Hbf",
+    "nach": "Frankfurt Hbf",
+    "dauer_min": 44,
+    "typ": "ICE",
+    "land": "de"
+  },
+  {
+    "von": "Dortmund Hbf",
+    "nach": "Köln Hbf",
+    "dauer_min": 60,
+    "typ": "ICE",
+    "land": "de"
+  },
+  {
+    "von": "Bremen Hbf",
+    "nach": "Hamburg Hbf",
+    "dauer_min": 58,
+    "typ": "IC",
+    "land": "de"
+  },
+  {
+    "von": "Würzburg Hbf",
+    "nach": "München Hbf",
+    "dauer_min": 115,
+    "typ": "ICE",
+    "land": "de"
+  },
+  {
+    "von": "Wien Hbf",
+    "nach": "Klagenfurt Hbf",
+    "dauer_min": 198,
+    "typ": "RailJet",
+    "land": "at"
+  },
+  {
+    "von": "Graz Hbf",
+    "nach": "Klagenfurt Hbf",
+    "dauer_min": 176,
+    "typ": "IC",
+    "land": "at"
+  },
+  {
+    "von": "Innsbruck Hbf",
+    "nach": "Salzburg Hbf",
+    "dauer_min": 130,
+    "typ": "RailJet",
+    "land": "at"
+  },
+  {
+    "von": "München Hbf",
+    "nach": "Innsbruck Hbf",
+    "dauer_min": 108,
+    "typ": "RailJet",
+    "land": "de"
+  },
+  {
+    "von": "Frankfurt Hbf",
+    "nach": "Wien Hbf",
+    "dauer_min": 461,
+    "typ": "EC",
+    "land": "de"
+  },
+  {
+    "von": "Paris Nord",
+    "nach": "Rotterdam Centraal",
+    "dauer_min": 150,
+    "typ": "Thalys",
+    "land": "fr"
+  },
+  {
+    "von": "Stockholm C",
+    "nach": "Oslo S",
+    "dauer_min": 395,
+    "typ": "SJ/NSB",
+    "land": "se"
+  },
+  {
+    "von": "Kopenhagen H",
+    "nach": "Hamburg Hbf",
+    "dauer_min": 274,
+    "typ": "IC",
+    "land": "dk"
+  },
+  {
+    "von": "Zürich HB",
+    "nach": "Mailand Centrale",
+    "dauer_min": 215,
+    "typ": "EC",
+    "land": "ch"
+  },
+  {
+    "von": "Zürich HB",
+    "nach": "München Hbf",
+    "dauer_min": 235,
+    "typ": "EC",
+    "land": "ch"
+  },
+  {
+    "von": "Budapest Keleti",
+    "nach": "Wien Hbf",
+    "dauer_min": 157,
+    "typ": "RailJet",
+    "land": "hu"
+  },
+  {
+    "von": "Prag Hlavní",
+    "nach": "Dresden Hbf",
+    "dauer_min": 125,
+    "typ": "EC",
+    "land": "cz"
+  },
+  {
+    "von": "Warschau Centralna",
+    "nach": "Berlin Ostbahnhof",
+    "dauer_min": 332,
+    "typ": "EC",
+    "land": "pl"
+  },
+  {
+    "von": "Zagreb Glavni kol.",
+    "nach": "Wien Hbf",
+    "dauer_min": 375,
+    "typ": "EC",
+    "land": "hr"
+  },
+  {
+    "von": "Bratislava hl.st.",
+    "nach": "Wien Hbf",
+    "dauer_min": 60,
+    "typ": "RailJet",
+    "land": "sk"
+  },
+  {
+    "von": "Mailand Centrale",
+    "nach": "Frankfurt Hbf",
+    "dauer_min": 498,
+    "typ": "EC/ICE",
+    "land": "it"
+  },
+  {
+    "von": "Barcelona Sants",
+    "nach": "Marseille St-Charles",
+    "dauer_min": 211,
+    "typ": "TGV",
+    "land": "es"
   }
 ]

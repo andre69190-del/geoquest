@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 321. Neue Modi: Reisezeit-Schätzer (MC) + Strecken-Duell (HL) — 80 europäische Zugstrecken, zug_uic_laender-Duplikat entfernt. verify: 138/138."
+git commit -m "Content: Phase 322. Zug-Reisezeiten Upgrade: Heimvorteil-Algorithmus (70/30, land-basiert), 177 Strecken, Zugtyp im Strecken-Duell, genZugReisezeitHL verbessert. verify: 138/138."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

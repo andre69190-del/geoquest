@@ -10300,7 +10300,13 @@ function _fmtMin(m){
 function genZugReisezeitMC(){
   var pool=ZUG_REISEZEITEN_DATA;
   if(!pool||pool.length<4)return null;
-  var cor=pool[~~(rng()*pool.length)];
+  /* Phase 321b: Heimvorteil — 70% local, 30% global */
+  var _langLandMap={"de":["de","at","ch"],"fr":["fr","be","ch"],"it":["it","ch"],"es":["es","pt"],"pt":["pt","es"],"nl":["nl","be"],"pl":["pl"],"cs":["cz","sk"],"sk":["sk","cz"],"hu":["hu"],"ro":["ro"],"bg":["bg"],"el":["el"],"hr":["hr","si"],"tr":["tr"],"sv":["se"],"no":["no"],"da":["dk"],"fi":["fi"],"en":["gb"]};
+  var _userLang=(S&&S.language)||"de";
+  var _localLands=_langLandMap[_userLang]||["de"];
+  var _localPool=pool.filter(function(r){return _localLands.indexOf(r.land)!==-1;});
+  var _useLocal=_localPool.length>=3&&rng()<0.7;
+  var cor=_useLocal?_localPool[~~(rng()*_localPool.length)]:pool[~~(rng()*pool.length)];
   var correct=cor.dauer_min;
   /* Plausible distractors: pick from pool with similar duration range */
   var sorted=pool.slice().sort(function(a,b){return Math.abs(a.dauer_min-correct)-Math.abs(b.dauer_min-correct);});
@@ -10338,24 +10344,28 @@ window.genZugReisezeitMC=genZugReisezeitMC;
 function genZugReisezeitHL(){
   var pool=ZUG_REISEZEITEN_DATA;
   if(!pool||pool.length<4)return null;
-  /* Pick two routes with meaningfully different durations (min 15 min apart) */
+  /* Phase 321b: Heimvorteil 70/30 — at least one local route */
+  var _llm={"de":["de","at","ch"],"fr":["fr","be","ch"],"it":["it","ch"],"es":["es","pt"],"pt":["pt","es"],"nl":["nl","be"],"pl":["pl"],"cs":["cz","sk"],"sk":["sk","cz"],"hu":["hu"],"ro":["ro"],"bg":["bg"],"el":["el"],"hr":["hr","si"],"tr":["tr"],"sv":["se"],"no":["no"],"da":["dk"],"fi":["fi"],"en":["gb"]};
+  var _ul=(S&&S.language)||"de";
+  var _ll=_llm[_ul]||["de"];
+  var _lp=pool.filter(function(r){return _ll.indexOf(r.land)!==-1;});
   var tries=0;var corA,corB;
-  while(tries<30){
-    corA=pool[~~(rng()*pool.length)];
-    corB=pool[~~(rng()*pool.length)];
-    if(corA!==corB&&Math.abs(corA.dauer_min-corB.dauer_min)>=15)break;
+  while(tries<40){
+    if(_lp.length>=2&&rng()<0.7){corA=_lp[~~(rng()*_lp.length)];corB=pool[~~(rng()*pool.length)];}
+    else{corA=pool[~~(rng()*pool.length)];corB=pool[~~(rng()*pool.length)];}
+    if(corA&&corB&&corA!==corB&&Math.abs(corA.dauer_min-corB.dauer_min)>=15)break;
     tries++;
   }
   if(!corA||!corB)return null;
   var correct=corA.dauer_min>corB.dauer_min?0:1;
-  var opts=[corA.von+"→"+corA.nach+" ("+corA.typ+")",corB.von+"→"+corB.nach+" ("+corB.typ+")"];
+  var opts=[corA.von+"→"+corA.nach,corB.von+"→"+corB.nach];
   return{
     type:"hl",
     prompt:_tc("Welche Zugfahrt dauert länger?"),
-    subj:null,
+    subj:corA.typ+" vs. "+corB.typ,
     ans:opts[correct],
     opts:opts,
-    meta:_fmtMin(corA.dauer_min)+" vs. "+_fmtMin(corB.dauer_min),
+    meta:_fmtMin(corA.dauer_min)+" · "+corA.typ+" vs. "+_fmtMin(corB.dauer_min)+" · "+corB.typ,
     lid:"rzhl_"+corA.von.slice(0,4)+"_"+corB.von.slice(0,4),
     cc:""
   };
