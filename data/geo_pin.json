@@ -396,6 +396,11 @@
         "n": "Augustine (Alaska, USA)",
         "lat": 59.36,
         "lng": -153.43
+      },
+      {
+        "n": "Ubinas (Peru, aktivster Vulkan Perus)",
+        "lat": -16.355,
+        "lng": -70.903
       }
     ]
   },
@@ -1606,6 +1611,11 @@
         "n": "Lewis and Clark Caverns (Montana)",
         "lat": 45.83,
         "lng": -111.83
+      },
+      {
+        "n": "Waitomo Caves (Neuseeland, Gluehwuermchen)",
+        "lat": -38.261,
+        "lng": 175.107
       }
     ]
   },
@@ -1996,6 +2006,21 @@
         "n": "Quebrada de Humahuaca (Argentinien)",
         "lat": -23.2,
         "lng": -65.35
+      },
+      {
+        "n": "Kali Gandaki Gorge (Nepal, tiefster Canyon der Welt)",
+        "lat": 28.596,
+        "lng": 83.718
+      },
+      {
+        "n": "Vikos Gorge (Griechenland, tiefster Canyon Europas)",
+        "lat": 39.895,
+        "lng": 20.742
+      },
+      {
+        "n": "Colca Canyon (Peru, zweittiefster Canyon der Welt)",
+        "lat": -15.53,
+        "lng": -71.897
       }
     ]
   },
@@ -2391,6 +2416,16 @@
         "n": "Waipio Valley Springs (Hawaii)",
         "lat": 20.12,
         "lng": -155.59
+      },
+      {
+        "n": "Wai-O-Tapu Champagne Pool (Neuseeland)",
+        "lat": -38.362,
+        "lng": 176.369
+      },
+      {
+        "n": "Deildartunguhver (Island, heisseste Quelle Europas)",
+        "lat": 64.685,
+        "lng": -21.4
       }
     ]
   },
@@ -2786,6 +2821,16 @@
         "n": "Liaoning Feather Dino Site (China)",
         "lat": 41.88,
         "lng": 121.6
+      },
+      {
+        "n": "Messel Pit (Deutschland, UNESCO Welterbe Eozaen)",
+        "lat": 49.92,
+        "lng": 8.751
+      },
+      {
+        "n": "Hadar (Aethiopien, Fundort Lucy/Australopithecus)",
+        "lat": 11.082,
+        "lng": 40.582
       }
     ]
   },
@@ -3341,6 +3386,11 @@
         "n": "Hispar Glacier (Pakistan)",
         "lat": 36.1,
         "lng": 75.0
+      },
+      {
+        "n": "Vatnajokull (Island, groesster Gletscher Europas)",
+        "lat": 64.411,
+        "lng": -16.965
       }
     ]
   },
@@ -3721,6 +3771,31 @@
         "n": "Taudeni Basin (Mali)",
         "lat": 22.5,
         "lng": -4.0
+      },
+      {
+        "n": "Namib (aelteste Wueste der Welt, 55 Mio. Jahre)",
+        "lat": -24.75,
+        "lng": 15.667
+      },
+      {
+        "n": "Rub al-Khali (groesstes Sandmeer der Welt)",
+        "lat": 21.0,
+        "lng": 51.0
+      },
+      {
+        "n": "Taklamakan (China, zweite groesste Wueste Asiens)",
+        "lat": 38.853,
+        "lng": 83.647
+      },
+      {
+        "n": "Mojave Desert (USA, Death Valley)",
+        "lat": 36.588,
+        "lng": -116.941
+      },
+      {
+        "n": "Dasht-e Lut (Iran, heisseste Oberflaeche der Erde)",
+        "lat": 31.085,
+        "lng": 58.556
       }
     ]
   },
@@ -4521,6 +4596,16 @@
         "n": "Eger Rift Cheb Basin (Tschechien)",
         "lat": 50.1,
         "lng": 12.4
+      },
+      {
+        "n": "Thingvellir (Island, einziger sichtbarer Kontinentaldrift)",
+        "lat": 64.255,
+        "lng": -21.131
+      },
+      {
+        "n": "Afar-Dreieck (Aethiopien, kuenftiger Ozean)",
+        "lat": 11.8,
+        "lng": 41.0
       }
     ]
   },

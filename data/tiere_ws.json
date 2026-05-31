@@ -1738,7 +1738,6 @@
       "en": [
         "TRAIN",
         "REIN",
-        "REIN",
         "RAIN",
         "INTER",
         "INERT",
@@ -1793,11 +1792,22 @@
     "validWords": {
       "de": [
         "GLUF",
-        "GILF"
+        "GILF",
+        "FIG",
+        "GUL",
+        "FLU",
+        "LUG",
+        "FULIG",
+        "FIX"
       ],
       "en": [
         "FLUX",
-        "GILF"
+        "GILF",
+        "FIG",
+        "GUL",
+        "FLU",
+        "LUG",
+        "FIX"
       ]
     }
   },
@@ -1806,7 +1816,11 @@
     "validWords": {
       "de": [
         "CALE",
-        "LACE"
+        "LACE",
+        "ACE",
+        "ALE",
+        "ALEC",
+        "ACEA"
       ],
       "en": [
         "LACE",
@@ -1814,8 +1828,92 @@
         "ALCE",
         "ALEC",
         "CELA",
-        "LACE",
-        "ACEA"
+        "ACEA",
+        "ACE",
+        "ALE"
+      ]
+    }
+  },
+  "zug_panorama": {
+    "word": "PANORAMA",
+    "validWords": {
+      "de": [
+        "PAN",
+        "MAN",
+        "RAN",
+        "MANOR",
+        "ROMAN",
+        "MOAN",
+        "ROAN",
+        "PRAM",
+        "NORM",
+        "ROAM",
+        "PARA",
+        "ANOA",
+        "NOMA",
+        "OMAN",
+        "MARA",
+        "NAPA",
+        "RAMP",
+        "AROMA",
+        "PRANA"
+      ],
+      "en": [
+        "PAN",
+        "MAN",
+        "RAN",
+        "MANOR",
+        "ROMAN",
+        "MOAN",
+        "ROAN",
+        "PRAM",
+        "NORM",
+        "ROAM",
+        "PARA",
+        "ANOA",
+        "RAMP",
+        "AROMA"
+      ]
+    }
+  },
+  "zug_nightjet": {
+    "word": "NIGHTJET",
+    "validWords": {
+      "de": [
+        "JET",
+        "NET",
+        "HIT",
+        "HINT",
+        "THIN",
+        "THEN",
+        "GENT",
+        "TINGE",
+        "NIGHT",
+        "NIGH",
+        "TING",
+        "HINGE",
+        "HEIT",
+        "GETH",
+        "GITE",
+        "JETTING",
+        "TIGHT",
+        "EIGHT"
+      ],
+      "en": [
+        "JET",
+        "GET",
+        "NET",
+        "HIT",
+        "HINT",
+        "THIN",
+        "THEN",
+        "GENT",
+        "TINGE",
+        "NIGHT",
+        "EIGHT",
+        "NIGH",
+        "TING",
+        "HINGE"
       ]
     }
   }

@@ -2311,6 +2311,9 @@ const _CONTENT_I18N={"pl": {"Auf welchem Kontinent wurde diese Sportart erfunden
 "Zug-Depot": "Depot Pociągów",
 "Zurück": "Wstecz",
 "Zum Zug-Depot": "Do Depotu Pociągów",
+"gesammelt": "zebrane",
+"Dein Fortschritt": "Twój postęp",
+"Sammlung vervollständigen": "Uzupełnij kolekcję",
 "Halterkürzel (VKM)": "Kody VKM",
 "Panoramabahnen": "Koleje widokowe",
 "Bahnhofskürzel (DS100)": "Kody stacji (DS100)",
@@ -2337,6 +2340,9 @@ const _CONTENT_I18N={"pl": {"Auf welchem Kontinent wurde diese Sportart erfunden
 "Zug-Depot": "Train Depot",
 "Zurück": "Back",
 "Zum Zug-Depot": "To Train Depot",
+"gesammelt": "collected",
+"Dein Fortschritt": "Your Progress",
+"Sammlung vervollständigen": "Complete the Collection",
 "Halterkürzel (VKM)": "Keeper Codes (VKM)",
 "Panoramabahnen": "Panoramic Railways",
 "Bahnhofskürzel (DS100)": "Station Codes (DS100)",
@@ -2886,6 +2892,8 @@ const MODES=[
     {id:"ws_zug_talgo",        icon:"\u{1F524}",title:"WS: Talgo",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: TALGO — 5 Buchstaben"},
     {id:"ws_zug_maglev",        icon:"\u{1F524}",title:"WS: Maglev",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: MAGLEV — 6 Buchstaben"},
     {id:"ws_zug_flixzug",        icon:"\u{1F524}",title:"WS: Flixzug",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: FLIXZUG — 7 Buchstaben"},
+    {id:"ws_zug_panorama",  icon:"\u{1F5BC}\uFE0F",title:"WS: Panorama",         group:"zuege",prompt:"Bilde Wörter aus PANORAMA!",         desc:"Panoramabahn — 8 Buchstaben, unendlich viele Wörter"},
+    {id:"ws_zug_nightjet",  icon:"\u{1F319}",      title:"WS: NightJet",          group:"zuege",prompt:"Bilde Wörter aus NIGHTJET!",          desc:"ÖBBs Nachtzug — 8 Buchstaben, viele versteckte Wörter"},
     {id:"ws_zug_acela",        icon:"\u{1F524}",title:"WS: Acela",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: ACELA — 5 Buchstaben"},
     {id:"zug_rekorde_pin",  icon:"\u{1F3C6}",title:"Bahn-Rekorde: Wo liegt das?",group:"zuege",prompt:"\u{1F4CD} Wo auf der Karte liegt diese Rekord-Strecke?",  desc:"Schnellster Zug, laengster Tunnel, hoechste Bahn — pin sie!"},
     {id:"uk_bahnhof_pin",   icon:"\u{1F689}",title:"Bahnhöfe weltweit",             group:"zuege",prompt:"\u{1F4CD} Wo auf der Karte liegt dieser Bahnhof?",       desc:"Grand Central, Tokyo Station, Estação da Luz & 77 weitere"},
@@ -3397,7 +3405,7 @@ const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
-  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","hl_zug_taktfrequenz","timeline_zug_hsb","timeline_zug_bahnhof_bau","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_acela","uk_bahnhof_pin","zug_rekorde_pin","zug_ds100","zug_ds100_input","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
+  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","hl_zug_taktfrequenz","timeline_zug_hsb","timeline_zug_bahnhof_bau","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_panorama","ws_zug_nightjet","ws_zug_acela","uk_bahnhof_pin","zug_rekorde_pin","zug_ds100","zug_ds100_input","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
@@ -9538,6 +9546,8 @@ const GEN={
   ws_zug_talgo:()=>initTierWortSchmiede("zug_talgo"),
   ws_zug_maglev:()=>initTierWortSchmiede("zug_maglev"),
   ws_zug_flixzug:()=>initTierWortSchmiede("zug_flixzug"),
+  ws_zug_panorama:()=>initTierWortSchmiede("zug_panorama"),
+  ws_zug_nightjet:()=>initTierWortSchmiede("zug_nightjet"),
   ws_zug_acela:()=>initTierWortSchmiede("zug_acela"),
   zug_rekorde_pin:()=>genUniversalPinQ("zug_rekorde_pin"),
   uk_bahnhof_pin:()=>genUniversalPinQ("bahnhof_pin"),
@@ -12325,7 +12335,21 @@ function renderCollectionScreen(){
 
   const backBtn=`<button onclick="S.tab='home';render()" style="display:inline-flex;align-items:center;gap:6px;background:var(--bg3);border:1px solid var(--border);color:var(--text2);font-size:.82rem;font-weight:700;cursor:pointer;padding:.45rem .85rem;border-radius:8px;margin-bottom:.75rem;transition:background .15s" onmouseenter="this.style.background='var(--border)'" onmouseleave="this.style.background='var(--bg3)'"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>${t('btn_back')}</button>`;
   const exitFooter=`<div style="margin-top:1.2rem;padding-top:.8rem;border-top:1px solid var(--border)"><button onclick="S.tab='home';render()" class="btn-g" style="width:100%;font-size:.9rem">\u{1F3E0} ${t('btn_menu')||'Hauptmen\u00fc'}</button></div>`;
-  const _depotBtn=`<div style="text-align:center;margin:8px 0"><button onclick="showTrainDepot()" class="btn-g" style="background:#006064;color:#fff">🚉 '+_tc("Zum Zug-Depot")+'</button></div>`;return`<div>${backBtn}${_depotBtn}${spotter}${progressBar}${achBar}${controls}${listContent}${mapContent}${exitFooter}</div>`;
+  const _trainDepotItems=loadTrainDepot();
+  const _trainTotal=721;
+  const _trainCount=_trainDepotItems.length;
+  const _trainPct=Math.round(_trainCount/_trainTotal*100);
+  const _depotBtn=_trainCount>=10?`<div style="background:linear-gradient(135deg,#004d40,#00695c);border-radius:12px;padding:10px 14px;margin:10px 0;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="showTrainDepot()">
+    <div style="font-size:1.8rem">🚉</div>
+    <div style="flex:1">
+      <div style="color:#fff;font-weight:800;font-size:.9rem">${_tc("Zug-Depot")}</div>
+      <div style="color:#b2dfdb;font-size:.72rem;margin-top:1px">${_trainCount} / ${_trainTotal} ${_tc("gesammelt")}</div>
+      <div style="background:rgba(255,255,255,.2);border-radius:4px;height:5px;margin-top:5px;overflow:hidden">
+        <div style="background:#4db6ac;height:100%;width:${_trainPct}%;border-radius:4px;transition:width .4s"></div>
+      </div>
+    </div>
+    <div style="color:#4db6ac;font-weight:900;font-size:.85rem">${_trainPct}%</div>
+  </div>`:"";return`<div>${backBtn}${_depotBtn}${spotter}${progressBar}${achBar}${controls}${listContent}${mapContent}${exitFooter}</div>`;
 }
 
 /* â”€â”€ Trophy Map â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/

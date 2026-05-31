@@ -142,6 +142,9 @@ def _parse_sport_poi(src):
 
 def _parse_gen_dispatch(src):
     d = {}
+    # Zero-arg dispatches: id:()=>fn()
+    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*(\w+)\s*\(\s*\)', src):
+        if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': ''}
     for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*(\w+)\s*\(\s*["\'\']([^"\'\']*)["\'\'\']\s*\)', src):
         d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
     for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*\{\s*(\w+)\s*\(\s*["\'\']([^"\'\']*)["\'\'\']\s*\)', src):
@@ -162,6 +165,10 @@ def _get_count(mid, dispatch, store, sport_poi):
         print(f'WARNING: No data count for mode \'{mid}\' (no dispatch)')
         return '—', 0
     fn, key = disp['fn'], disp['key']
+    # Zero-arg special cases
+    if fn == 'genDS100McQ': return '50 DS100-Kürzel', 50
+    if fn == 'genDS100InputQ': return '50 DS100-Kürzel (Input)', 50
+    if fn == 'genMetroLogoQ': return '80 Metro-Logos', 80
     if any(f in fn for f in WS_FN_FRAGMENTS):
         return '1 Basiswort', 1
     if fn == 'genSportPoiQ':

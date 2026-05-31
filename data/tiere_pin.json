@@ -356,6 +356,51 @@
         "n": "Okapi Wildlife Reserve (DRC)",
         "lat": 2.25,
         "lng": 28.5
+      },
+      {
+        "n": "Limpopo NP (Mozambik)",
+        "lat": -23.5,
+        "lng": 32.0
+      },
+      {
+        "n": "Gonarezhou NP (Simbabwe)",
+        "lat": -21.5,
+        "lng": 32.4
+      },
+      {
+        "n": "Chobe National Park (Botswana, groesste Elefantenpopulation)",
+        "lat": -18.75,
+        "lng": 24.5
+      },
+      {
+        "n": "Niokolo-Koba (Senegal, westafrik. Big Five)",
+        "lat": 13.05,
+        "lng": -13.02
+      },
+      {
+        "n": "Zakouma NP (Tschad)",
+        "lat": 10.79,
+        "lng": 19.64
+      },
+      {
+        "n": "Garamba NP (Kongo, letztes Weisses Rhinozeros)",
+        "lat": 4.06,
+        "lng": 28.9
+      },
+      {
+        "n": "Tsavo West NP (Kenia)",
+        "lat": -3.3,
+        "lng": 38.0
+      },
+      {
+        "n": "Ruaha-Rungwa Complex (Tansania)",
+        "lat": -7.7,
+        "lng": 34.3
+      },
+      {
+        "n": "Nyerere NP (Tansania, ehem. Selous Kern)",
+        "lat": -8.1,
+        "lng": 36.5
       }
     ]
   },

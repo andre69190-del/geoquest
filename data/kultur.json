@@ -27561,6 +27561,130 @@
     {
       "q": "Hamburg-Altona",
       "a": "AHAT"
+    },
+    {
+      "q": "Nuernberg Hbf",
+      "a": "NN"
+    },
+    {
+      "q": "Duesseldorf Hbf",
+      "a": "DU"
+    },
+    {
+      "q": "Wuppertal Hbf",
+      "a": "EWP"
+    },
+    {
+      "q": "Freiburg Hbf",
+      "a": "RF"
+    },
+    {
+      "q": "Luebeck Hbf",
+      "a": "ALR"
+    },
+    {
+      "q": "Halle Hbf",
+      "a": "HLH"
+    },
+    {
+      "q": "Braunschweig Hbf",
+      "a": "BS"
+    },
+    {
+      "q": "Osnabrueck Hbf",
+      "a": "EON"
+    },
+    {
+      "q": "Muenster Hbf",
+      "a": "EMU"
+    },
+    {
+      "q": "Aachen Hbf",
+      "a": "KA"
+    },
+    {
+      "q": "Bonn Hbf",
+      "a": "BN"
+    },
+    {
+      "q": "Saarbruecken Hbf",
+      "a": "SB"
+    },
+    {
+      "q": "Regensburg Hbf",
+      "a": "MR"
+    },
+    {
+      "q": "Ingolstadt Hbf",
+      "a": "MI"
+    },
+    {
+      "q": "Ulm Hbf",
+      "a": "TU"
+    },
+    {
+      "q": "Heilbronn Hbf",
+      "a": "RHN"
+    },
+    {
+      "q": "Heidelberg Hbf",
+      "a": "RHE"
+    },
+    {
+      "q": "Pforzheim Hbf",
+      "a": "RPF"
+    },
+    {
+      "q": "Fulda Bahnhof",
+      "a": "FD"
+    },
+    {
+      "q": "Wuerzburg Hbf",
+      "a": "NWZ"
+    },
+    {
+      "q": "Bamberg Bahnhof",
+      "a": "NBM"
+    },
+    {
+      "q": "Bayreuth Hbf",
+      "a": "NBT"
+    },
+    {
+      "q": "Passau Hbf",
+      "a": "PAS"
+    },
+    {
+      "q": "Kempten Hbf",
+      "a": "MKE"
+    },
+    {
+      "q": "Lindau Hbf",
+      "a": "MLD"
+    },
+    {
+      "q": "Konstanz Bahnhof",
+      "a": "RKN"
+    },
+    {
+      "q": "Singen Bahnhof",
+      "a": "RSI"
+    },
+    {
+      "q": "Offenburg Hbf",
+      "a": "ROG"
+    },
+    {
+      "q": "Flensburg Bahnhof",
+      "a": "AFL"
+    },
+    {
+      "q": "Stralsund Hbf",
+      "a": "ANS"
+    },
+    {
+      "q": "Greifswald Bahnhof",
+      "a": "AGF"
     }
   ],
   "bahnhof_pin": [
@@ -28478,6 +28602,300 @@
       "lat": 37.617,
       "lng": -122.384,
       "c": "USA"
+    },
+    {
+      "n": "Brennerbahn (niedrigster Alpenpass, 1371m)",
+      "lat": 47.002,
+      "lng": 11.507,
+      "c": "Oesterreich"
+    },
+    {
+      "n": "Mont-Cenis-Tunnel (erster Eisenbahntunnel durch Alpen)",
+      "lat": 45.164,
+      "lng": 6.673,
+      "c": "Frankreich"
+    },
+    {
+      "n": "Simplon-Tunnel (laengster Eisenbahntunnel Europas bis 2016)",
+      "lat": 46.196,
+      "lng": 8.101,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Channel Tunnel (laengster Unterwassertunnel)",
+      "lat": 51.093,
+      "lng": 1.337,
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "Seikan-Tunnel (laengster Unterwassertunnel Japans)",
+      "lat": 41.543,
+      "lng": 140.319,
+      "c": "Japan"
+    },
+    {
+      "n": "Lötschberg-Basistunnel (34,6 km, 2007)",
+      "lat": 46.558,
+      "lng": 7.697,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Ceneri-Basistunnel (15,4 km, 2020)",
+      "lat": 46.13,
+      "lng": 8.965,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Takeshima-Bahn (steilste Zahnradbahn, 48 Promille)",
+      "lat": 36.227,
+      "lng": 137.972,
+      "c": "Japan"
+    },
+    {
+      "n": "Pilatus-Bahn (steilste Zahnradbahn Europas, 480 Promille)",
+      "lat": 46.978,
+      "lng": 8.252,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Wendelstein-Bahn (erste elektrische Bergbahn Deutschlands)",
+      "lat": 47.706,
+      "lng": 12.003,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Zugspitzbahn (hoechste Bergbahn Deutschlands)",
+      "lat": 47.421,
+      "lng": 10.985,
+      "c": "Deutschland"
+    },
+    {
+      "n": "Jungfraujoch-Bahn (hoechster Bahnhof Europas, 3454m)",
+      "lat": 46.547,
+      "lng": 7.971,
+      "c": "Schweiz"
+    },
+    {
+      "n": "Snowdon Mountain Railway (hoechste Bahn Grossbritanniens)",
+      "lat": 53.068,
+      "lng": -4.076,
+      "c": "Grossbritannien"
+    },
+    {
+      "n": "White Pass & Yukon Route (historische Goldrausch-Bahn)",
+      "lat": 59.449,
+      "lng": -135.313,
+      "c": "USA"
+    },
+    {
+      "n": "Pikes Peak Cog Railway (hoechste Bahn USA, 4302m)",
+      "lat": 38.842,
+      "lng": -105.044,
+      "c": "USA"
+    },
+    {
+      "n": "Nariz del Diablo (Teufelsnase, Ecuadors Andenbahn)",
+      "lat": -2.163,
+      "lng": -78.849,
+      "c": "Ecuador"
+    },
+    {
+      "n": "Virunga-Bahn (Zahnradbahn im Kongo-Regenwald)",
+      "lat": -1.691,
+      "lng": 29.296,
+      "c": "Kongo"
+    },
+    {
+      "n": "Andes-Bahn Lima–Huancayo (hoechste Bahn Suedamerikas)",
+      "lat": -11.996,
+      "lng": -75.212,
+      "c": "Peru"
+    },
+    {
+      "n": "Trans-Sahara-Eisenbahn Algier–Niamey (geplant)",
+      "lat": 36.737,
+      "lng": 3.086,
+      "c": "Algerien"
+    },
+    {
+      "n": "Uganda–Mombasa SGR (neue Ostafrika-Standardspur)",
+      "lat": -1.292,
+      "lng": 36.821,
+      "c": "Kenia"
+    },
+    {
+      "n": "Transiranische Eisenbahn (UNESCO-Welterbe)",
+      "lat": 35.689,
+      "lng": 51.388,
+      "c": "Iran"
+    },
+    {
+      "n": "Hijaz Railway (historisch, Osmanisches Reich)",
+      "lat": 24.469,
+      "lng": 39.612,
+      "c": "Saudi-Arabien"
+    },
+    {
+      "n": "Karakorum Highway Bahnprojekt (geplant CPEC)",
+      "lat": 36.893,
+      "lng": 75.522,
+      "c": "Pakistan"
+    },
+    {
+      "n": "Kuala Lumpur–Singapur HSR (geplant/gestoppt)",
+      "lat": 3.139,
+      "lng": 101.686,
+      "c": "Malaysia"
+    },
+    {
+      "n": "Jakarta–Bandung HSR (erste HSR Suedostasiens)",
+      "lat": -6.909,
+      "lng": 107.613,
+      "c": "Indonesien"
+    },
+    {
+      "n": "Addis Abeba–Dschibuti Bahn (erste elektr. Bahn Afrikas)",
+      "lat": 9.025,
+      "lng": 38.747,
+      "c": "Aethiopien"
+    },
+    {
+      "n": "Mombasa–Nairobi SGR (Madaraka Express)",
+      "lat": -4.043,
+      "lng": 39.668,
+      "c": "Kenia"
+    },
+    {
+      "n": "Cape Town–Cairo Railway (Rhodes' Vision, nie vollendet)",
+      "lat": -33.924,
+      "lng": 18.424,
+      "c": "Suedafrika"
+    },
+    {
+      "n": "Belem–Brasilia Bahnprojekt (geplant)",
+      "lat": -1.455,
+      "lng": -48.503,
+      "c": "Brasilien"
+    },
+    {
+      "n": "Rio de Janeiro–Sao Paulo HSR (geplant TAV)",
+      "lat": -22.906,
+      "lng": -43.172,
+      "c": "Brasilien"
+    },
+    {
+      "n": "Alaska Railroad (einzige US-Staatsbahn)",
+      "lat": 61.218,
+      "lng": -149.9,
+      "c": "USA"
+    },
+    {
+      "n": "Churchill Manitoba (noerdlichste regulaere Bahnlinie Kanadas)",
+      "lat": 58.768,
+      "lng": -94.165,
+      "c": "Kanada"
+    },
+    {
+      "n": "Kuranda Scenic Railway (Queensland, Regenwaldstrecke)",
+      "lat": -16.82,
+      "lng": 145.638,
+      "c": "Australien"
+    },
+    {
+      "n": "Zig Zag Railway (steile Bergbahn NSW, Australien)",
+      "lat": -33.354,
+      "lng": 150.161,
+      "c": "Australien"
+    },
+    {
+      "n": "Dunedin Railway Station (schoenster Bahnhof NZ)",
+      "lat": -45.874,
+      "lng": 170.503,
+      "c": "Neuseeland"
+    },
+    {
+      "n": "TranzAlpine-Endpunkt Greymouth (Westküste NZ)",
+      "lat": -42.455,
+      "lng": 171.209,
+      "c": "Neuseeland"
+    },
+    {
+      "n": "Irkutsk (Trans-Sibirische, Baikalsee-Abschnitt)",
+      "lat": 52.29,
+      "lng": 104.296,
+      "c": "Russland"
+    },
+    {
+      "n": "Circum-Baikal Railway (malerischste Strecke Russlands)",
+      "lat": 51.748,
+      "lng": 104.012,
+      "c": "Russland"
+    },
+    {
+      "n": "Severomuisk-Tunnel (laengster Tunnel Russlands, 15,3 km)",
+      "lat": 56.524,
+      "lng": 113.274,
+      "c": "Russland"
+    },
+    {
+      "n": "Baikal-Amur Magistrale BAM (zweite Trans-Sib.)",
+      "lat": 53.741,
+      "lng": 108.148,
+      "c": "Russland"
+    },
+    {
+      "n": "Erlian–Zamyn-Uud Grenze (Spurwechsel China–Mongolei)",
+      "lat": 43.648,
+      "lng": 111.977,
+      "c": "Mongolei"
+    },
+    {
+      "n": "Norilsk (einzige Bahn noerdlich des Polarkreises Russland)",
+      "lat": 69.346,
+      "lng": 88.202,
+      "c": "Russland"
+    },
+    {
+      "n": "Inlandsbanan (laengste Schmalspurbahn Schwedens, 1288 km)",
+      "lat": 63.826,
+      "lng": 20.264,
+      "c": "Schweden"
+    },
+    {
+      "n": "Ofotbahn (Narvik, eisfreier Hafen–Eisenerzminen)",
+      "lat": 68.438,
+      "lng": 17.427,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Flaamsbana (steilste Normalspurbahn Europas)",
+      "lat": 60.865,
+      "lng": 7.114,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Bergensbahn (hoechster Bahnhof Nordeuropas, 1301m)",
+      "lat": 60.626,
+      "lng": 7.345,
+      "c": "Norwegen"
+    },
+    {
+      "n": "Malmbanan (Eisenerzbahn Schweden–Norwegen)",
+      "lat": 68.348,
+      "lng": 18.828,
+      "c": "Schweden"
+    },
+    {
+      "n": "Tallinn–Helsinki Tunnel Rail Baltica (geplant)",
+      "lat": 59.437,
+      "lng": 24.753,
+      "c": "Estland"
+    },
+    {
+      "n": "Lyon–Turin HSR (Mont-Cenis Basistunnel, im Bau)",
+      "lat": 45.765,
+      "lng": 4.835,
+      "c": "Frankreich"
     }
   ]
 }

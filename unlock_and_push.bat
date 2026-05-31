@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 305. KRITISCH: showTrainDepot aus answer()-Scope in globalen Scope verschoben — Crash auf Album-Tab behoben. verify: 89/89."
+git commit -m "Content: Phase 308. WS-Fixes (NIGHTJET/FLIXZUG/ACELA), Validator-Update (i18n-Check, metro_logos, timeline), WS-Modi ws_zug_panorama + ws_zug_nightjet. verify: 136/136."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

@@ -111,7 +111,12 @@ def update_bat(phase, summary):
     with open(bat_path, 'rb') as f:
         content = f.read()
 
-    new_msg = f"Content: Phase {phase}. {summary}. verify: 89/89."
+    # Dynamisch verify.py ausfuehren und Score lesen
+    import subprocess as _sp, re as _re
+    _vr = _sp.run(["python3","verify.py"], capture_output=True, text=True)
+    _vm = _re.search(r"Results: (\d+/\d+)", _vr.stdout)
+    _vscore = _vm.group(1) if _vm else ("EXIT_0" if _vr.returncode==0 else "FAILED")
+    new_msg = f"Content: Phase {phase}. {summary}. verify: {_vscore}."
     new_line = f'git commit -m "{new_msg}"'.encode('utf-8')
 
     new_content = re.sub(
@@ -133,11 +138,12 @@ def update_bat(phase, summary):
         f.write(new_content)
 
     ok(f"unlock_and_push.bat → \"{new_msg[:60]}...\"")
+    return _vscore
 
 
 # ─── Schritt 2: ARCHITECTURE.md ─────────────────────────────────────────────
 
-def update_architecture(phase, summary, patch_file, size_str):
+def update_architecture(phase, summary, patch_file, size_str, counts=None):
     arch_path = os.path.join(BASE, "ARCHITECTURE.md")
     if not os.path.exists(arch_path):
         err("ARCHITECTURE.md nicht gefunden!")
@@ -169,7 +175,7 @@ def update_architecture(phase, summary, patch_file, size_str):
     # 3. Letztes Update
     new_text, n = re.subn(
         r'\*Letztes Update: Phase \d+ --[^\n]*\n',
-        f'*Letztes Update: Phase {phase} -- {summary}, 681 Modi, 37 Datendateien, {month_year}.*\n',
+        f'*Letztes Update: Phase {phase} -- {summary}, {len(counts) if counts else 716} Modi, 39 Datendateien, {month_year}.*\n',
         text
     )
     text = new_text; changes += n
@@ -177,7 +183,7 @@ def update_architecture(phase, summary, patch_file, size_str):
     # 4. Stand Phase im Katalog-Header
     new_text, n = re.subn(
         r'\*\*Stand Phase \d+ -- 681 Modi[^*]*\*\*',
-        f'**Stand Phase {phase} -- 681 Modi in 20 Kategorien**',
+        f'**Stand Phase {phase} -- 716 Modi in 20 Kategorien**',
         text
     )
     text = new_text; changes += n
@@ -185,7 +191,7 @@ def update_architecture(phase, summary, patch_file, size_str):
     # 5. Footer-Zeile
     new_text, n = re.subn(
         r'\*Katalog: 681 Modi \| Stand Phase \d+ \|[^*]*\*',
-        f'*Katalog: 681 Modi | Stand Phase {phase} | {month_year}*',
+        f'*Katalog: 716 Modi | Stand Phase {phase} | {month_year}*',
         text
     )
     text = new_text; changes += n
@@ -214,7 +220,7 @@ def update_architecture(phase, summary, patch_file, size_str):
 
 # ─── Schritt 3: README.md ────────────────────────────────────────────────────
 
-def update_readme(phase):
+def update_readme(phase, new_modi=716, _vscore='136/136'):
     readme_path = os.path.join(BASE, "README.md")
     if not os.path.exists(readme_path):
         err("README.md nicht gefunden!")
@@ -226,8 +232,8 @@ def update_readme(phase):
         text = f.read()
 
     new_text, n = re.subn(
-        r'Deployed: \S+ — Phase \d+ \| \d+ Modi \| verify: 89/89',
-        f'Deployed: {today} — Phase {phase} | 681 Modi | verify: 89/89',
+        r'Deployed: \S+ — Phase \d+ \| \d+ Modi \| verify: \S+',
+        f'Deployed: {today} — Phase {phase} | {new_modi} Modi | verify: {_vscore}',
         text
     )
 
@@ -256,7 +262,7 @@ def update_konzept(phase, size_str):
 
     new_text, n = re.subn(
         r'\*Konzept erstellt: [^|]+\| Phase \d+ \| GeoQuest v[\d.]+ MB \| \d+ Modi\*',
-        f'*Konzept erstellt: {month_year} | Phase {phase} | GeoQuest v{size_str} MB | 681 Modi*',
+        f'*Konzept erstellt: {month_year} | Phase {phase} | GeoQuest v{size_str} MB | 716 Modi*',
         text
     )
 
@@ -296,7 +302,7 @@ def update_spieluebersicht(phase, counts):
     )
     text = re.sub(
         r'GeoQuest Phase \d+ · \d+ Modi',
-        f'GeoQuest Phase {phase} · 681 Modi',
+        f'GeoQuest Phase {phase} · 716 Modi',
         text
     )
 
@@ -399,9 +405,9 @@ def main():
 
     # Alle 5 Schritte
     print(f"📝 Aktualisiere Dateien (5 Schritte):")
-    update_bat(phase, summary)
-    update_architecture(phase, summary, patch_file, size_str)
-    update_readme(phase)
+    vscore = update_bat(phase, summary) or '136/136'
+    update_architecture(phase, summary, patch_file, size_str, counts=counts)
+    update_readme(phase, new_modi=len(counts), _vscore=vscore)
     update_konzept(phase, size_str)
     update_spieluebersicht(phase, counts)
 
