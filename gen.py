@@ -10323,6 +10323,8 @@ S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
     if(_isMpHost){try{window.mpGameCh.send({type:"broadcast",event:"NEXT_QUESTION",payload:{}});}catch(_e){}}
     const nr=S.rd+1;
     if(S.diff\!=="survival"&&nr>=ROUNDS){
+      /* Phase 317: GAMEOVER_SYNC — host notifies guest game is over */
+      if(_isMpHost){try{window.mpGameCh.send({type:"broadcast",event:"GAMEOVER_SYNC",payload:{score:S.sc,rd:nr}});}catch(_e){}}
       S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
       if(S.isDailyRun&&\!isDailyDone()){
         markDailyDone(S.sc);
