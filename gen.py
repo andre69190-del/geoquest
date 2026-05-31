@@ -16,6 +16,7 @@ CJ = json.dumps(cities_slim, separators=(',',':'), ensure_ascii=False)
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_ws.json'), 'r', encoding='utf-8') as _f: TIER_WS_DATA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/kultur.json'), 'r', encoding='utf-8') as _f: KULTUR_DATA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/zug_uic.json'), 'r', encoding='utf-8') as _f: ZUG_UIC_J = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/zug_reisezeiten.json'), 'r', encoding='utf-8') as _f: ZUG_REISEZEITEN_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_hl.json'), 'r', encoding='utf-8') as _f: TIER_HL_DATA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_match.json'), 'r', encoding='utf-8') as _f: TIER_MATCH_DATA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/pflanzen_pin.json'), 'r', encoding='utf-8') as _f: PFLANZEN_PIN_J = _f.read()
@@ -2936,6 +2937,8 @@ const MODES=[
     {id:"zug_routen",       icon:"\u{1F5FA}\uFE0F",title:"Legendaere Routen",      group:"zuege",prompt:"Aus welchem Land faehrt dieser beruehmt Zug?",desc:"Glacier Express bis Transsibirische Eisenbahn — kenne deine Strecken"},
     {id:"zug_bahnhof_typ", icon:"\u{1F3DB}\uFE0F",title:"Bahnhofs-Architektur",   group:"zuege",prompt:"Welche Bauform hat dieser Bahnhof?",              desc:"Kopfbahnhof, Durchgangsbahnhof, Turmbahnhof — die Typen der grossen Hubs"},
     {id:"zug_hersteller",  icon:"\u{1F3ED}",      title:"Zug-Hersteller",          group:"zuege",prompt:"Von welchem Hersteller stammt dieser Zug?",        desc:"Alstom, Siemens, Hitachi, Stadler — wer baut die schnellsten Zuege?"},
+    {id:"zug_reisezeit_mc", icon:"\u23F1\uFE0F",title:"Reisezeit-Sch\u00e4tzer",       group:"zuege",prompt:"Wie lange dauert diese Zugfahrt planm\u00e4\u00dfig?",prompt_en:"How long does this train journey take?",desc:"Sch\u00e4tze die Reisezeit zwischen europ\u00e4ischen Bahnhöfen"},
+    {id:"zug_reisezeit_hl",  icon:"\u2696\uFE0F",title:"Strecken-Duell",                 group:"zuege",prompt:"Welche Zugfahrt dauert l\u00e4nger?",prompt_en:"Which train journey takes longer?",desc:"Vergleiche Reisezeiten europäischer Zugstrecken"},
     {id:"zug_uic_laender",   icon:"\uD83D\uDD22",title:"UIC-L\u00e4ndercodes",          group:"zuege",prompt:"Welchem Land geh\u00f6rt dieser Waggon?",prompt_en:"Which country does this wagon belong to?",desc:"Erkenne das Land an der 12-stelligen UIC-Wagennummer"},
     {id:"zug_ds100_input",    icon:"\u2328\uFE0F",title:"DS100 (Hardcore)",                group:"zuege",prompt:"Tippe das DS100-Betriebsstellenkürzel!",                       desc:"Freie Texteingabe — FF, MH, AH… Kennst du alle?"},
 
@@ -3440,7 +3443,7 @@ const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
-  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","hl_zug_taktfrequenz","timeline_zug_hsb","timeline_zug_bahnhof_bau","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_panorama","ws_zug_nightjet","ws_zug_acela","uk_bahnhof_pin","zug_rekorde_pin","zug_ds100","zug_uic_laender","zug_ds100_input","zug_uic_laender","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
+  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","hl_zug_taktfrequenz","timeline_zug_hsb","timeline_zug_bahnhof_bau","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_panorama","ws_zug_nightjet","ws_zug_acela","uk_bahnhof_pin","zug_rekorde_pin","zug_ds100","zug_uic_laender","zug_ds100_input","zug_reisezeit_mc","zug_reisezeit_hl","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
@@ -8469,6 +8472,7 @@ function genSprachenKompassQ(){
 /* Phase 211: Kultur & Lifestyle universal data matrix */
 const KULTUR_DATA=PLACEHOLDER_KULTUR_DATA;
 const ZUG_UIC_DATA=PLACEHOLDER_ZUG_UIC_DATA;
+const ZUG_REISEZEITEN_DATA=PLACEHOLDER_ZUG_REISEZEITEN_DATA;
 const TIER_PIN_DATA=PLACEHOLDER_TIER_PIN;
 Object.assign(KULTUR_DATA,TIER_PIN_DATA);
 
@@ -9647,6 +9651,8 @@ const GEN={
   zug_hersteller:()=>genTiereMatchQ("zug_hersteller"),
   zug_ds100_input:()=>genDS100InputQ(),
   zug_uic_laender:()=>genUICInputQ(),
+  zug_reisezeit_mc:()=>genZugReisezeitMC(),
+  zug_reisezeit_hl:()=>genZugReisezeitHL(),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),
@@ -10285,6 +10291,77 @@ function _mpReveal(tok){
   }
 }
 window._mpReveal=_mpReveal;
+
+/* Phase 321: Zug-Reisezeiten — MC + H/L Generatoren */
+function _fmtMin(m){
+  var h=Math.floor(m/60),min=m%60;
+  return h>0?(h+'h '+String(min).padStart(2,'0')+'m'):min+'m';
+}
+function genZugReisezeitMC(){
+  var pool=ZUG_REISEZEITEN_DATA;
+  if(!pool||pool.length<4)return null;
+  var cor=pool[~~(rng()*pool.length)];
+  var correct=cor.dauer_min;
+  /* Plausible distractors: pick from pool with similar duration range */
+  var sorted=pool.slice().sort(function(a,b){return Math.abs(a.dauer_min-correct)-Math.abs(b.dauer_min-correct);});
+  var candidates=sorted.slice(1,10).filter(function(r){return Math.abs(r.dauer_min-correct)>=15;});
+  var dis=[];
+  var tries=0;
+  while(dis.length<3&&tries<30){
+    var c=candidates[~~(rng()*candidates.length)];
+    if(c&&dis.indexOf(c.dauer_min)===-1&&c.dauer_min!==correct)dis.push(c.dauer_min);
+    tries++;
+  }
+  /* Fallback: offset-based if pool too similar */
+  var offsets=[30,60,90,45,75];
+  var oi=0;
+  while(dis.length<3&&oi<offsets.length){
+    var v=correct+(rng()>0.5?offsets[oi]:-offsets[oi]);
+    v=Math.max(20,v);
+    if(dis.indexOf(v)===-1&&v!==correct)dis.push(v);
+    oi++;
+  }
+  var opts=sh([correct].concat(dis)).map(function(m){return _fmtMin(m);});
+  return{
+    type:"uic_mc",
+    prompt:_tc("Wie lange dauert die planmäßige Fahrt?"),
+    subj:cor.von+" → "+cor.nach,
+    meta:cor.typ,
+    ans:_fmtMin(correct),
+    opts:opts,
+    lid:"rzmc_"+cor.von.slice(0,4)+"_"+cor.nach.slice(0,4),
+    cc:""
+  };
+}
+window.genZugReisezeitMC=genZugReisezeitMC;
+
+function genZugReisezeitHL(){
+  var pool=ZUG_REISEZEITEN_DATA;
+  if(!pool||pool.length<4)return null;
+  /* Pick two routes with meaningfully different durations (min 15 min apart) */
+  var tries=0;var corA,corB;
+  while(tries<30){
+    corA=pool[~~(rng()*pool.length)];
+    corB=pool[~~(rng()*pool.length)];
+    if(corA!==corB&&Math.abs(corA.dauer_min-corB.dauer_min)>=15)break;
+    tries++;
+  }
+  if(!corA||!corB)return null;
+  var correct=corA.dauer_min>corB.dauer_min?0:1;
+  var opts=[corA.von+"→"+corA.nach+" ("+corA.typ+")",corB.von+"→"+corB.nach+" ("+corB.typ+")"];
+  return{
+    type:"hl",
+    prompt:_tc("Welche Zugfahrt dauert länger?"),
+    subj:null,
+    ans:opts[correct],
+    opts:opts,
+    meta:_fmtMin(corA.dauer_min)+" vs. "+_fmtMin(corB.dauer_min),
+    lid:"rzhl_"+corA.von.slice(0,4)+"_"+corB.von.slice(0,4),
+    cc:""
+  };
+}
+window.genZugReisezeitHL=genZugReisezeitHL;
+
 
   function answer(a,tok,_bypassMpLock){
   if(tok!==_secretGameToken){if(typeof tok!=="undefined")console.warn("%c\uD83D\uDEAB GeoQuest Anti-Cheat: invalid token","color:#ef4444;font-weight:bold");return;}
@@ -15292,6 +15369,7 @@ JS = (JS
   .replace('PLACEHOLDER_SPORTPOI', SPORT_POI_J)
   .replace('PLACEHOLDER_TIER_WS_DATA', TIER_WS_DATA_J)
   .replace('PLACEHOLDER_ZUG_UIC_DATA', ZUG_UIC_J)
+  .replace('PLACEHOLDER_ZUG_REISEZEITEN_DATA', ZUG_REISEZEITEN_J)
   .replace('PLACEHOLDER_KULTUR_DATA', KULTUR_DATA_J)
   .replace('PLACEHOLDER_TIER_PIN', TIER_PIN_J)
   .replace('PLACEHOLDER_TIER_HL_DATA', TIER_HL_DATA_J)

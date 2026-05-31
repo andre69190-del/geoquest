@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 320 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.75 MB | 719 Spielmodi | verify: 137/137
+**Version:** Phase 321 (Stand: Mai 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.76 MB | 721 Spielmodi | verify: 137/137
 
 ---
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 719 Modi, 718/718/718 — perfekte Konsistenz.
+**Aktueller Stand:** 721 Modi, 718/718/718 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -1077,11 +1077,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **310** | patch_310.py | **Zug-Streak-Badge + Daily Train Challenge (Zug-Tag-Indikator, 10 Zug-Modi im Pool)** |
 | **315** | patch_315.py | **UIC-Scanner, Live-Spotting UI, Unified Spotter Dashboard (Tabs+Swipe), Waggon-Album Shortcut in Züge-Kategorie** |
 | **320** | patch_320.py | **MP Sync: Lock & Reveal, Anti-Cheat, Disconnect UX, Score/Round Buffer, 5500ms Reveal Delay (Phasen 316-320)** |
+| **321** | patch_321.py | **Neue Modi: Reisezeit-Schätzer (MC) + Strecken-Duell (HL) — 80 europäische Zugstrecken, zug_uic_laender-Duplikat entfernt** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 320 -- MP Sync: Lock & Reveal, Anti-Cheat, Disconnect UX, Score/Round Buffer, 5500ms Reveal Delay (Phasen 316-320), 539 Modi, 39 Datendateien, Mai 2026.*
+*Letztes Update: Phase 321 -- Neue Modi: Reisezeit-Schätzer (MC) + Strecken-Duell (HL) — 80 europäische Zugstrecken, zug_uic_laender-Duplikat entfernt, 539 Modi, 39 Datendateien, Mai 2026.*
 
 
 ---

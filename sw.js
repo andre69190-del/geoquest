@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-c6aeabec';
+const CACHE_NAME = 'geoquest-5054d874';
 /* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
   './GeoQuest.html',
@@ -44,6 +44,7 @@ const ASSETS = [
   './data/tiere_pin.json',
   './data/tiere_ws.json',
   './data/timeline.json',
+  './data/zug_reisezeiten.json',
   './data/zug_uic.json'
 ];
 

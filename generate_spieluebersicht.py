@@ -169,6 +169,8 @@ def _get_count(mid, dispatch, store, sport_poi):
     if fn == 'genDS100McQ': return '50 DS100-Kürzel', 50
     if fn == 'genDS100InputQ': return '50 DS100-Kürzel (Input)', 50
     if fn == 'genUICInputQ': return '57 UIC-Ländercodes', 57
+    if fn == 'genZugReisezeitMC': return '80 Zugstrecken', 80
+    if fn == 'genZugReisezeitHL': return '80 Zugstrecken', 80
     if fn == 'genMetroLogoQ': return '80 Metro-Logos', 80
     if any(f in fn for f in WS_FN_FRAGMENTS):
         return '1 Basiswort', 1
