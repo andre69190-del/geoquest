@@ -2363,7 +2363,7 @@ const _CONTENT_I18N={"pl": {"Auf welchem Kontinent wurde diese Sportart erfunden
 "Aus welchem Land faehrt dieser beruehmt Zug?": "Which country does this famous train operate in?",
 "Welchem Nahverkehrsnetz gehört dieses Logo?": "Which public transit network does this logo belong to?"
 }};
-function _tc(s){if(!s)return s;var _l=(typeof S!=="undefined"&&S.language)||localStorage.getItem("gq_lang")||"de";if(_l==="de")return s;var _m=_CONTENT_I18N[_l];return(_m&&_m[s])||s;}
+function _tc(s){if(!s)return s;var _l="de";try{_l=(S&&S.language)||localStorage.getItem("gq_lang")||"de";}catch(_e){try{_l=localStorage.getItem("gq_lang")||"de";}catch(_e2){_l="de";}}if(_l==="de")return s;var _m=_CONTENT_I18N[_l];return(_m&&_m[s])||s;}
 /* P293: länder-bewusste Inhalts-Übersetzung — dt. Ländername -> cc -> displayCountry */
 let _DE2CC=null;
 function _deCountryCc(name){if(_DE2CC===null){_DE2CC={};try{for(var i=0;i<COUNTRIES.length;i++){var cc=COUNTRIES[i].cc;var dn=getCountryName(cc,"de");if(dn)_DE2CC[dn]=cc;if(COUNTRIES[i].c)_DE2CC[COUNTRIES[i].c]=cc;}}catch(_e){}}return _DE2CC[name]||null;}
@@ -2898,7 +2898,7 @@ const MODES=[
     {id:"zug_rekorde_pin",  icon:"\u{1F3C6}",title:"Bahn-Rekorde: Wo liegt das?",group:"zuege",prompt:"\u{1F4CD} Wo auf der Karte liegt diese Rekord-Strecke?",  desc:"Schnellster Zug, laengster Tunnel, hoechste Bahn — pin sie!"},
     {id:"uk_bahnhof_pin",   icon:"\u{1F689}",title:"Bahnhöfe weltweit",             group:"zuege",prompt:"\u{1F4CD} Wo auf der Karte liegt dieser Bahnhof?",       desc:"Grand Central, Tokyo Station, Estação da Luz & 77 weitere"},
     {id:"zug_ds100",          icon:"\u{1F3AB}",title:"DS100 (Auswahl)",              group:"zuege",prompt:"Welches Betriebsstellenkürzel hat dieser Bahnhof?",        desc:"FF=Frankfurt, MH=München — das Alphabet der Eisenbahn"},
-    {id:"zug_metro_logos", icon:"\u{1F687}",title:"Metro-Logos weltweit",  group:"zuege",prompt:_tc("Welchem Nahverkehrsnetz gehört dieses Logo?"),desc:"Underground, Métro, U-Bahn — erkennst du die Logos der Weltmetropolen?"},
+    {id:"zug_metro_logos", icon:"\u{1F687}",title:"Metro-Logos weltweit",  group:"zuege",prompt:"Welchem Nahverkehrsnetz gehört dieses Logo?",desc:"Underground, Métro, U-Bahn — erkennst du die Logos der Weltmetropolen?"},
     {id:"zug_routen",       icon:"\u{1F5FA}\uFE0F",title:"Legendaere Routen",      group:"zuege",prompt:"Aus welchem Land faehrt dieser beruehmt Zug?",desc:"Glacier Express bis Transsibirische Eisenbahn — kenne deine Strecken"},
     {id:"zug_bahnhof_typ", icon:"\u{1F3DB}\uFE0F",title:"Bahnhofs-Architektur",   group:"zuege",prompt:"Welche Bauform hat dieser Bahnhof?",              desc:"Kopfbahnhof, Durchgangsbahnhof, Turmbahnhof — die Typen der grossen Hubs"},
     {id:"zug_hersteller",  icon:"\u{1F3ED}",      title:"Zug-Hersteller",          group:"zuege",prompt:"Von welchem Hersteller stammt dieser Zug?",        desc:"Alstom, Siemens, Hitachi, Stadler — wer baut die schnellsten Zuege?"},

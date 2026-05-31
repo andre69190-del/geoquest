@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 308 (Stand: Mai 2026)
+**Version:** Phase 309 (Stand: Mai 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.71 MB | 716 Spielmodi | verify: 136/136
 
 ---
@@ -1073,11 +1073,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **306** | patch_306.py | **Spotter-Dashboard: Depot-Widget mit Progress-Bar (ab 10 Items) + i18n EN/PL** |
 | **307** | patch_307.py | **Upscale: zug_rekorde_pin/ds100 auf 80, geo_pin/tiere_pin repariert, Spieluebersicht-Regex fix** |
 | **308** | patch_308.py | **WS-Fixes (NIGHTJET/FLIXZUG/ACELA), Validator-Update (i18n-Check, metro_logos, timeline), WS-Modi ws_zug_panorama + ws_zug_nightjet** |
+| **309** | patch_309.py | **KRITISCH: _tc() TDZ-Fix (S before initialization), _tc() aus MODES entfernt** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 308 -- WS-Fixes (NIGHTJET/FLIXZUG/ACELA), Validator-Update (i18n-Check, metro_logos, timeline), WS-Modi ws_zug_panorama + ws_zug_nightjet, 537 Modi, 39 Datendateien, Mai 2026.*
+*Letztes Update: Phase 309 -- KRITISCH: _tc() TDZ-Fix (S before initialization), _tc() aus MODES entfernt, 537 Modi, 39 Datendateien, Mai 2026.*
 
 
 ---

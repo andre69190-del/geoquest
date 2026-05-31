@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 308. WS-Fixes (NIGHTJET/FLIXZUG/ACELA), Validator-Update (i18n-Check, metro_logos, timeline), WS-Modi ws_zug_panorama + ws_zug_nightjet. verify: 136/136."
+git commit -m "Content: Phase 309. KRITISCH: _tc() TDZ-Fix (S before initialization), _tc() aus MODES entfernt. verify: 136/136."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
