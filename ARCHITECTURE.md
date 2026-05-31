@@ -1088,8 +1088,72 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 
 ---
 
+## Datenqualitäts-Audit (Stand Phase 328, Mai 2026)
+
+Durchgeführt mit `audit_safety_check.py` + `validate_content.py` nach Abschluss der Balancing-Sprints 324–328.
+
+### Ergebnisse
+
+| Prüfung | Ergebnis | Befund |
+|---|---|---|
+| XSS / Injection-Scan | ✅ SAUBER | 0 unsichere Felder in 41 JSON-Dateien |
+| Schema-Integrität | ✅ SAUBER | Alle Items haben gültige Pflichtfelder (n/c oder n/lat/lng) |
+| Koordinaten-Plausibilität | ✅ SAUBER | Alle lat/lng-Werte im gültigen Bereich |
+| JSON-Parse | ✅ SAUBER | Alle 41 Dateien fehlerfrei parsebar |
+| validate_content.py | ✅ 41/41 ohne Warnings | Keine neuen Warnungen nach Phasen 324–328 |
+
+### i18n Fallback-Analyse (c-Feld)
+
+Das `audit_safety_check.py`-Skript identifiziert zwei Klassen von `c`-Werten:
+
+**Klasse A — ISO-Ländernamen (automatisch übersetzt):** Alle Standard-Ländernamen (z.B. "Polen", "Schweden", "Türkei") werden durch `_tcc()` → `_deCountryCc()` → `Intl.DisplayNames` vollautomatisch in alle 24 Sprachen übersetzt. Kein manueller Aufwand.
+
+**Klasse B — Semantische Kategorie-Werte (kein Bug):** Arrays wie `sport_teamgroesse` ("11 Spieler"), `geo_gesteinsarten` ("Magmatisch"), `zug_bahnhof_typ` ("Kopfbahnhof"), `sport_olympisch` ("Ja/Nein") nutzen `c` als Antwort-Kategorie, nicht als Ländername. Der `_tcc()`-Fallback zu `_tc()` greift hier korrekt; für 22 Sprachen ohne `_CONTENT_I18N`-Eintrag wird auf Deutsch zurückgefallen. Dies ist bekanntes Verhalten (dokumentiert als i18n Gap C).
+
+**Bekannte Lücke (nicht kritisch):** `_CONTENT_I18N` hat nur `pl` und `en`. Prompt-Strings für fr, es, it, nl, ro, hu, cs, sk, hr, bg, el, da, sv, fi, et, lv, lt, mt, ga, sl erscheinen für Sprecher dieser Sprachen auf Deutsch. Adressierung in zukünftigen i18n-Sprints.
+
+---
+
+## i18n Technical Debt & Roadmap (Stand Phase 328, Mai 2026)
+
+### Status Quo — Was bereits funktioniert
+
+**Länder-Übersetzung (Klasse A, ~84% aller Geo-Felder):** `_tcc()` → `_deCountryCc()` → `Intl.DisplayNames` übersetzt alle Standard-ISO-Ländernamen vollautomatisch in alle 24 Sprachen. Kein manueller Aufwand, keine Lookup-Tabelle. Funktioniert seit Phase 293.
+
+**Heimvorteil-Algorithmus (Phase 328):** `_mkMatchQ()` priorisiert Einträge aus dem Heimatland des Nutzers (70/30) via `S.language` → deutschem Ländernamen-Mapping. Fallback für nicht-geografische Arrays automatisch.
+
+**Validierung:** `validate_content.py` prüft ab Phase 328 für 18 bekannte Geo-Arrays, ob `c`-Werte im ISO-Mapping vorhanden sind (als `info()`-Notice, nicht als blocking Warning).
+
+### Known Limitations (Technical Debt)
+
+**Klasse B — Geo-Regionen ohne ISO (201 Einträge, 16% der Geo-Felder):**
+Werte wie "Westafrika", "Naher Osten", "Mesopotamien", "Nordamerika" haben keinen ISO-cc und fallen für 22 Sprachen auf Deutsch zurück. Vollständige Liste in `audit_i18n_gap.py` (Klasse-B-Ausgabe).
+
+**Multi-Country `c`-Werte (173 Infos aus validate_content.py):**
+Einträge wie `c="Portugal / Hawaii"`, `c="Slowenien/Kroatien"`, `c="Naher Osten/Südasien"` sind für den Heimvorteil-Algorithmus wertlos (kein Match auf einfachen Ländernamen) und erscheinen für 22 Sprachen auf Deutsch.
+
+**`_CONTENT_I18N` deckt nur EN + PL:**
+Prompt-Strings (Frage-Texte) sind für die 22 anderen Sprachen (fr, es, it, nl, ro, hu, cs, sk, hr, bg, el, da, sv, fi, et, lv, lt, mt, ga, sl) nicht übersetzt.
+
+### Korrektur-Strategie (Roadmap)
+
+1. **Sprints 329–332 (Geo-Regionen):** Die Top-10 Klasse-B-Werte ("Westafrika", "Naher Osten", "Nordamerika", "Südamerika", "Mesopotamien", "Zentralasien", "Persien", "Europa", "Asien", "Skandinavien") in `_CONTENT_I18N` mit EN + PL aufnehmen. Aufwand: ~20 Einträge pro Sprint.
+2. **Multi-Country-Bereinigung:** `c`-Werte mit "/" auf Hauptland normieren (z.B. "Portugal / Hawaii" → "Portugal") oder in zwei separate Einträge aufteilen.
+3. **`_CONTENT_I18N` Expansion:** Sukzessive Erweiterung um FR, ES, IT, NL (die 4 größten Nicht-DE Nutzergruppen). Pro Sprint: eine Sprache, alle 937 Keys.
+4. **validate_content.py ISO-Check schärfen:** Aus `info()` → `warn()` promoten, sobald die Multi-Country-Bereinigung abgeschlossen ist.
+
+### Tooling
+
+| Skript | Zweck |
+|---|---|
+| `audit_safety_check.py` | XSS-Scan + c-Feld-Klassen-Übersicht |
+| `audit_i18n_gap.py` | Detaillierte Klasse-B-Liste als Sprint-To-Do |
+| `validate_content.py` (Phase 328+) | ISO-Check für 18 Geo-Arrays als `info()`-Notice |
+
+---
+
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 328 -- ENGINE: Heimvorteil 70/30 in _mkMatchQ() — alle Match-Modi bevorzugen jetzt Einträge aus dem Heimatland des Nutzers (S.language → Ländername-Mapping, localPool, rng()<0.7). Fallback 100% global für nicht-geographische c-Felder., 539 Modi, 39 Datendateien, Mai 2026.*
+*Letztes Update: Phase 328 — Heimvorteil-Engine + i18n Technical Debt Roadmap, 539 Modi, 41 Datendateien, Mai 2026.*
 
 
 ---

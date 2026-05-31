@@ -259,6 +259,69 @@ def check_match(filename, data):
             if count > 1:
                 warn(filename, key, n, f"Duplicate subject (n='{n}') appears {count}× — removes variety")
 
+        # Phase 328: ISO-Code-Prüfung für bekannte geografische Arrays
+        # Nur für Arrays aktiviert, bei denen c SEMANTISCH ein Länder-/Geo-Feld ist.
+        # → stellt sicher, dass _tcc() / _deCountryCc() zur Laufzeit auflösen kann.
+        _GEO_ARRAYS = {
+            # kultur.json
+            'nationaltiere','nationalpflanzen','kleidung','instrumente','taenze',
+            'wahrzeichen','museen','kunstwerke','feste','begruessung',
+            'sport','wein_regionen','filmsets',
+            # gastro_match.json
+            'hausmannskost','suessspeisen',
+            # pflanzen_match.json (nur herkunft hat Ländernamen)
+            'gewuerze',
+            # sport_match.json
+            'sport_herkunft','sport_nationalsport_match','sport_sportlegende_land',
+            'sport_wm_gastgeber_match',
+            # geo_match.json
+            'geo_vulkan_land','geo_hoehlen_land',
+            # archaeologie_match.json
+            'repatriierung','wikinger','museen',
+        }
+        _DE_TO_CC_FAST = {
+            'Afghanistan','Albanien','Algerien','Andorra','Angola','Armenien',
+            'Argentinien','Australien','Österreich','Aserbaidschan','Bahamas',
+            'Bahrain','Bangladesh','Belgien','Belarus','Bolivien','Brasilien',
+            'Bulgarien','Burkina Faso','Burundi','Kamerun','Kanada','Chile',
+            'China','Kolumbien','Kroatien','Kuba','Zypern','Tschechien',
+            'Dänemark','Dominikanische Republik','Ecuador','Ägypten',
+            'El Salvador','Eritrea','Estland','Äthiopien','Fidschi','Finnland',
+            'Frankreich','Georgien','Deutschland','Ghana','Griechenland',
+            'Guatemala','Guinea','Guyana','Haiti','Honduras','Ungarn','Island',
+            'Indien','Indonesien','Iran','Irak','Irland','Israel','Italien',
+            'Elfenbeinküste','Jamaika','Japan','Jordanien','Kasachstan',
+            'Kenia','Nordkorea','Südkorea','Kuwait','Kirgisistan','Laos',
+            'Lettland','Libanon','Libyen','Liechtenstein','Litauen','Luxemburg',
+            'Madagaskar','Malawi','Malaysia','Mali','Malta','Marokko',
+            'Mauritanien','Mexiko','Moldau','Monaco','Mongolei','Montenegro',
+            'Mosambik','Myanmar','Namibia','Nepal','Niederlande','Neuseeland',
+            'Nicaragua','Nigeria','Nordmazedonien','Norwegen','Oman','Pakistan',
+            'Palästina','Panama','Paraguay','Peru','Philippinen','Polen',
+            'Portugal','Katar','Rumänien','Russland','Ruanda','San Marino',
+            'Saudi-Arabien','Senegal','Serbien','Sierra Leone','Singapur',
+            'Slowakei','Slowenien','Somalia','Südafrika','Spanien','Sri Lanka',
+            'Sudan','Suriname','Schweden','Schweiz','Syrien','Taiwan',
+            'Tadschikistan','Tansania','Thailand','Tschad','Togo','Tonga',
+            'Trinidad und Tobago','Tunesien','Türkei','Turkmenistan','Uganda',
+            'Ukraine','Vereinigte Arabische Emirate','Großbritannien','USA',
+            'Uruguay','Usbekistan','Venezuela','Vietnam','Jemen','Sambia',
+            'Simbabwe',
+            # Aliase die _deCountryCc() auch auflöst
+            'England','Schottland','Wales','Nordirland','Grönland',
+            'Indien (Punjab)','Indien/Pakistan','Großbritannien / Indien',
+            'Hawaii/Portugal','Bolivien/Peru','Peru/Bolivien',
+            'Serbien/Kroatien','Rumänien/Israel','Tibet/China','Tibet',
+        }
+        if key in _GEO_ARRAYS:
+            for item in items:
+                c_val = item.get('c', '')
+                if isinstance(c_val, str) and c_val and c_val not in _DE_TO_CC_FAST:
+                    info(filename, key, item.get('n','?'),
+                         f"c='{c_val}' nicht im ISO-Mapping — _tcc() fällt auf "
+                         f"_tc()-Fallback zurück (22 Sprachen sehen DE-String). "
+                         f"Ggf. in _CONTENT_I18N aufnehmen oder Ländername anpassen.")
+
 # ──────────────────────────────────────────────────────────────────────────────
 # CHECK 4 — WS data   (*_ws.json, tiere_ws.json)
 # ──────────────────────────────────────────────────────────────────────────────
@@ -469,24 +532,28 @@ def detect_and_check(filename):
     elif name.endswith("_ws.json") or "ws_" in name:
         check_ws(filename, data)
     elif name == "metro_logos.json":
-        # SVG-Array: [{svg, city, cc}] — prüfe auf leere SVGs und fehlende city
         for i, item in enumerate(data if isinstance(data, list) else []):
-            if not item.get("svg","").startswith("<svg"):
-                warn(filename, "metro_logos", item.get("city","?"), "SVG fehlt oder ungültig")
-            if not item.get("city","").strip():
+            if not item.get("svg", "").startswith("<svg"):
+                warn(filename, "metro_logos", item.get("city", "?"), "SVG fehlt oder ungültig")
+            if not item.get("city", "").strip():
                 warn(filename, "metro_logos", f"item[{i}]", "city-Feld leer")
     elif name == "timeline.json":
-        # Timeline-Format: {key: {prompt, unit, items:[{n,year,hint}]}}
         for key, block in (data.items() if isinstance(data, dict) else {}.items()):
-            if not isinstance(block, dict): continue
+            if not isinstance(block, dict):
+                continue
             items = block.get("items", [])
-            bad_year = [i.get("n","?") for i in items if not isinstance(i.get("year"), (int,float))]
+            bad_year = [i.get("n", "?") for i in items
+                        if not isinstance(i.get("year"), (int, float))]
             if bad_year:
-                warn(filename, key, bad_year[0], f"year-Feld fehlt/ungültig ({len(bad_year)} Items)")
-            # Sortierbarkeit: Timeline muss sortierbar sein
-            years = [i.get("year",0) for i in items if isinstance(i.get("year"),(int,float))]
+                warn(filename, key, bad_year[0],
+                     f"year-Feld fehlt/ungültig ({len(bad_year)} Items)")
+            years = [i.get("year", 0) for i in items
+                     if isinstance(i.get("year"), (int, float))]
             if years and max(years) - min(years) < 10:
-                warn(filename, key, "range", f"Jahres-Spanne nur {max(years)-min(years)} — zu eng für Timeline")
+                warn(filename, key, "range",
+                     f"Jahres-Spanne nur {max(years)-min(years)} — zu eng für Timeline")
+
+
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Main
@@ -495,15 +562,14 @@ def detect_and_check(filename):
 def main():
     json_files = sorted(f for f in os.listdir(DATA) if f.endswith(".json"))
     if not json_files:
-        print(f"{ERR}No JSON files found in {DATA}{RESET}")
+        print(ERR + "No JSON files found in " + DATA + RESET)
         sys.exit(1)
 
-    print(f"\n{BOLD}{'='*62}")
-    print(f" GeoQuest Content Validator")
-    print(f"{'='*62}{RESET}")
-    print(f"Scanning {len(json_files)} JSON files in data/\n")
+    print("\n" + BOLD + "=" * 62)
+    print(" GeoQuest Content Validator")
+    print("=" * 62 + RESET)
+    print("Scanning " + str(len(json_files)) + " JSON files in data/\n")
 
-    # i18n-Check (einmalig, nicht pro Datei)
     print("  [i18n-Check gen.py]", end=" ")
     check_i18n()
 
@@ -512,42 +578,42 @@ def main():
         try:
             before = len(warnings)
             detect_and_check(filename)
-            after  = len(warnings)
-            new    = after - before
-            status = f"{WARN}{new} warning(s){RESET}" if new else f"{OK}OK{RESET}"
-            print(f"  {filename:<38} {status}")
+            after = len(warnings)
+            new = after - before
+            status = (WARN + str(new) + " warning(s)" + RESET) if new else (OK + "OK" + RESET)
+            print("  " + filename.ljust(38) + " " + status)
             checked += 1
         except Exception as exc:
-            print(f"  {ERR}{filename}: LOAD ERROR — {exc}{RESET}")
-            warnings.append((filename, f"LOAD ERROR: {exc}"))
+            print("  " + ERR + filename + ": LOAD ERROR - " + str(exc) + RESET)
+            warnings.append((filename, "LOAD ERROR: " + str(exc)))
 
-    print(f"\n{BOLD}{'='*62}")
-    print(f" Results: {checked}/{len(json_files)} files scanned  |  {len(warnings)} warning(s)")
-    print(f"{'='*62}{RESET}\n")
+    print("\n" + BOLD + "=" * 62)
+    print(" Results: " + str(checked) + "/" + str(len(json_files)) + " files scanned  |  " + str(len(warnings)) + " warning(s)")
+    print("=" * 62 + RESET + "\n")
 
     if warnings:
         by_file = defaultdict(list)
         for tag, msg in warnings:
-            file_part = tag.split(" › ")[0]
+            file_part = tag.split(" > ")[0]
             by_file[file_part].append((tag, msg))
 
         for file_part, items in by_file.items():
-            print(f"{BOLD}{file_part}{RESET}")
+            print(BOLD + file_part + RESET)
             for tag, msg in items:
-                key_parts = tag.split(" › ")[1:]
-                indent    = "  " + " › ".join(key_parts) + " — " if key_parts else "  "
-                print(f"  {WARN}{indent}{msg}{RESET}")
+                key_parts = tag.split(" > ")[1:]
+                indent = "  " + " > ".join(key_parts) + " - " if key_parts else "  "
+                print("  " + WARN + indent + msg + RESET)
             print()
 
         if infos:
-            print(f"\n  ℹ  {len(infos)} info-only notice(s) (not counted in strict mode)")
+            print("\n  i  " + str(len(infos)) + " info-only notice(s) (not counted in strict mode)")
         if STRICT:
-            print(f"{ERR}--strict mode: exiting with code 1 due to {len(warnings)} warning(s){RESET}\n")
+            print(ERR + "--strict mode: exiting with code 1 due to " + str(len(warnings)) + " warning(s)" + RESET + "\n")
             sys.exit(1)
         else:
-            print(f"ℹ  Re-run with --strict to fail CI on warnings.\n")
+            print("i  Re-run with --strict to fail CI on warnings.\n")
     else:
-        print(f"{OK}All content checks passed — no warnings found.{RESET}\n")
+        print(OK + "All content checks passed - no warnings found." + RESET + "\n")
 
 
 if __name__ == "__main__":
