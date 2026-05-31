@@ -168,6 +168,7 @@ def _get_count(mid, dispatch, store, sport_poi):
     # Zero-arg special cases
     if fn == 'genDS100McQ': return '50 DS100-Kürzel', 50
     if fn == 'genDS100InputQ': return '50 DS100-Kürzel (Input)', 50
+    if fn == 'genUICInputQ': return '57 UIC-Ländercodes', 57
     if fn == 'genMetroLogoQ': return '80 Metro-Logos', 80
     if any(f in fn for f in WS_FN_FRAGMENTS):
         return '1 Basiswort', 1
@@ -450,13 +451,4 @@ if __name__ == '__main__':
         pass
     n = generate(phase=_phase)
     print(f'✓ GeoQuest_Spielübersicht.html generiert — {n} Modi (Phase {_phase})')
-    _arch = _os.path.join(_os.path.dirname(__file__), 'ARCHITECTURE.md')
-    try:
-        with open(_arch, encoding='utf-8') as _f:
-            _m = _re.search(r'Phase\s+(\d+)', _f.read())
-            if _m:
-                _phase = int(_m.group(1))
-    except Exception:
-        pass
-    n = generate(phase=_phase)
-    print(f'✓ GeoQuest_Spielübersicht.html generiert — {n} Modi (Phase {_phase})')
+   

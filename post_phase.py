@@ -183,7 +183,7 @@ def update_architecture(phase, summary, patch_file, size_str, counts=None):
     # 4. Stand Phase im Katalog-Header
     new_text, n = re.subn(
         r'\*\*Stand Phase \d+ -- 681 Modi[^*]*\*\*',
-        f'**Stand Phase {phase} -- 718 Modi in 20 Kategorien**',
+        f'**Stand Phase {phase} -- 719 Modi in 21 Kategorien**',
         text
     )
     text = new_text; changes += n
@@ -191,7 +191,7 @@ def update_architecture(phase, summary, patch_file, size_str, counts=None):
     # 5. Footer-Zeile
     new_text, n = re.subn(
         r'\*Katalog: 681 Modi \| Stand Phase \d+ \|[^*]*\*',
-        f'*Katalog: 718 Modi | Stand Phase {phase} | {month_year}*',
+        f'*Katalog: 719 Modi | Stand Phase {phase} | {month_year}*',
         text
     )
     text = new_text; changes += n

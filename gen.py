@@ -10021,7 +10021,7 @@ function showTrainDepot(){
   if(_uicLog.length>0){
     _uicHtml+='<div style="display:flex;flex-wrap:wrap;gap:5px">'
     +_uicLog.slice().reverse().slice(0,30).map(function(n){
-      return'<div style="background:#e0f7fa;color:#006064;border:1px solid #00838f;border-radius:5px;padding:3px 8px;font-size:.78rem;font-family:monospace;font-weight:700">'+n+'</div>';
+      var _uicCc={'80':'de','81':'at','85':'ch','87':'fr','83':'it','84':'nl','88':'be','86':'dk','74':'se','76':'no','51':'pl','54':'cz','55':'hu','53':'ro','56':'sk','57':'si','70':'gb','71':'es','73':'gr','94':'pt','52':'bg','50':'hr','40':'rs','20':'ru','24':'lt','25':'lv','26':'ee','10':'fi'};var _uicCode=n.split(' ')[0];var _uicFlag=_uicCc[_uicCode]?'\uD83C'+(String.fromCodePoint(0xDDE6+(_uicCc[_uicCode].charCodeAt(0)-97))+String.fromCodePoint(0xDDE6+(_uicCc[_uicCode].charCodeAt(1)-97))):'🚃';return'<div style="background:#e0f7fa;color:#006064;border:1px solid #00838f;border-radius:5px;padding:3px 8px;font-size:.78rem;font-family:monospace;font-weight:700">'+_uicFlag+' '+n+'</div>';
     }).join('')+'</div>';
     if(_uicLog.length>30)_uicHtml+='<div style="font-size:.72rem;color:var(--text3);margin-top:4px">+'+(_uicLog.length-30)+' '+_tc("weitere")+'</div>';
   }else{
@@ -11030,7 +11030,8 @@ const DAILY_POOL=[
   /* Züge & Bahn (Phase 309) */
   "zug_panorama","zug_vkm","zug_metro_logos","zug_routen","zug_bahnhof_typ",
   "zug_hersteller","hl_zug_speed","hl_zug_taktfrequenz","zug_rekorde_pin",
-  "timeline_zug_bahnhof_bau"
+  "timeline_zug_bahnhof_bau",
+  "zug_uic_laender"
 ];
 function startDailyChallenge(){
   if(isDailyDone())return;
