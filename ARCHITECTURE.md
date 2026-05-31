@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 303 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.69 MB | 716 Spielmodi | verify: 136/136
+**Version:** Phase 304 (Stand: Mai 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.70 MB | 716 Spielmodi | verify: 136/136
 
 ---
 
@@ -1068,11 +1068,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **301** | patch_301.py | **Bugfixes: Crash-Guard, Pferde-HL-Key, WS-Cleanup, Züge-Kategorie sichtbar, landing.html aktualisiert** |
 | **302** | patch_302.py | **Housekeeping: Duplikate entfernt, alle Zug-Arrays auf 80 Items (taktfrequenz, panorama, vkm, bahnhof_bau)** |
 | **303** | patch_303.py | **Bugfix: breitengrad_match aus Match-Distractor-Pool entfernt (Koordinaten als Antwortoptionen)** |
+| **304** | patch_304.py | **i18n-Fix: Züge-Kategorie vollständig übersetzt (EN+PL) — DS100, Metro-Logos, Depot-Labels** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 303 -- Bugfix: breitengrad_match aus Match-Distractor-Pool entfernt (Koordinaten als Antwortoptionen), 681 Modi, 37 Datendateien, Mai 2026.*
+*Letztes Update: Phase 304 -- i18n-Fix: Züge-Kategorie vollständig übersetzt (EN+PL) — DS100, Metro-Logos, Depot-Labels, 681 Modi, 37 Datendateien, Mai 2026.*
 
 
 ---
