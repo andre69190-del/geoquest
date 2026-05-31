@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 315 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.74 MB | 719 Spielmodi | verify: 137/137
+**Version:** Phase 320 (Stand: Mai 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.75 MB | 719 Spielmodi | verify: 137/137
 
 ---
 
@@ -1076,11 +1076,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **309** | patch_309.py | **KRITISCH: _tc() TDZ-Fix (S before initialization), _tc() aus MODES entfernt** |
 | **310** | patch_310.py | **Zug-Streak-Badge + Daily Train Challenge (Zug-Tag-Indikator, 10 Zug-Modi im Pool)** |
 | **315** | patch_315.py | **UIC-Scanner, Live-Spotting UI, Unified Spotter Dashboard (Tabs+Swipe), Waggon-Album Shortcut in Züge-Kategorie** |
+| **320** | patch_320.py | **MP Sync: Lock & Reveal, Anti-Cheat, Disconnect UX, Score/Round Buffer, 5500ms Reveal Delay (Phasen 316-320)** |
 
 ---
 
 *Dieses Dokument wird bei jedem signifikanten Architektur-Sprint aktualisiert.*
-*Letztes Update: Phase 315 -- UIC-Scanner, Live-Spotting UI, Unified Spotter Dashboard (Tabs+Swipe), Waggon-Album Shortcut in Züge-Kategorie, 539 Modi, 39 Datendateien, Mai 2026.*
+*Letztes Update: Phase 320 -- MP Sync: Lock & Reveal, Anti-Cheat, Disconnect UX, Score/Round Buffer, 5500ms Reveal Delay (Phasen 316-320), 539 Modi, 39 Datendateien, Mai 2026.*
 
 
 ---

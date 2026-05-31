@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 315. UIC-Scanner, Live-Spotting UI, Unified Spotter Dashboard (Tabs+Swipe), Waggon-Album Shortcut in Züge-Kategorie. verify: 137/137."
+git commit -m "Content: Phase 320. MP Sync: Lock & Reveal, Anti-Cheat, Disconnect UX, Score/Round Buffer, 5500ms Reveal Delay (Phasen 316-320). verify: 137/137."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
