@@ -2342,7 +2342,7 @@ const _CONTENT_I18N={"pl": {"Auf welchem Kontinent wurde diese Sportart erfunden
 "Tippe das DS100-Betriebsstellenkürzel:": "Wpisz kod stacji DS100:",
 "z.B. FF für Frankfurt, MH für München": "np. FF dla Frankfurtu, MH dla Monachium",
 "Welchem Nahverkehrsnetz gehört dieses Logo?": "Do której sieci komunikacji miejskiej należy to logo?",
-"Zug-Depot": "Depot Pociągów","Waggon-Scanner":"Skaner Wagonów","Nummer am Zug gesehen? Sofort eintragen!":"Widzisz numer wagonu? Zapisz natychmiast!","Format: CC TT NNNN NNN-P (12 Ziffern)":"Format: CC TT NNNN NNN-P (12 cyfr)","Sammeln":"Zbierz","Waggon-Album":"Album Wagonów","der Länder gespottet":"krajów zebranych","Noch keine Waggons erfasst — scanne deine erste Nummer!":"Brak wagonów — zeskanuj swój pierwszy numer!",
+"Zug-Depot": "Depot Pociągów","Waggon-Scanner":"Skaner Wagonów","Nummer am Zug gesehen? Sofort eintragen!":"Widzisz numer wagonu? Zapisz natychmiast!","Format: CC TT NNNN NNN-P (12 Ziffern)":"Format: CC TT NNNN NNN-P (12 cyfr)","UIC-Format: CC TT NNNN NNN-P (12 Ziffern)":"Format UIC: CC TT NNNN NNN-P (12 cyfr)","Sammeln":"Zbierz","Waggon-Album":"Album Wagonów","der Länder gespottet":"krajów zebranych","Noch keine Waggons erfasst — scanne deine erste Nummer!":"Brak wagonów — zeskanuj swój pierwszy numer!",
 "Zurück": "Wstecz",
 "Zum Zug-Depot": "Do Depotu Pociągów",
 "gesammelt": "zebrane",
@@ -2371,7 +2371,7 @@ const _CONTENT_I18N={"pl": {"Auf welchem Kontinent wurde diese Sportart erfunden
 "Tippe das DS100-Betriebsstellenkürzel:": "Type the DS100 station code:",
 "z.B. FF für Frankfurt, MH für München": "e.g. FF for Frankfurt, MH for Munich",
 "Welchem Nahverkehrsnetz gehört dieses Logo?": "Which public transit network does this logo belong to?",
-"Zug-Depot": "Train Depot","Waggon-Scanner":"Wagon Scanner","UIC-Format: CC TT NNNN NNN-P (12 Ziffern)":"UIC format: CC TT NNNN NNN-P (12 digits)","Erfassen":"Log it","Gesammelte Waggons":"Collected Wagons","Noch keine Waggons erfasst — scanne deine erste Nummer!":"No wagons logged yet — scan your first number!",
+"Zug-Depot": "Train Depot","Waggon-Scanner":"Wagon Scanner","UIC-Format: CC TT NNNN NNN-P (12 Ziffern)":"UIC format: CC TT NNNN NNN-P (12 digits)","Format: CC TT NNNN NNN-P (12 Ziffern)":"Format: CC TT NNNN NNN-P (12 digits)","Nummer am Zug gesehen? Sofort eintragen!":"Spotted a wagon number? Log it now!","der Länder gespottet":"countries spotted","Erfassen":"Log it","Gesammelte Waggons":"Collected Wagons","Noch keine Waggons erfasst — scanne deine erste Nummer!":"No wagons logged yet — scan your first number!",
 "Zurück": "Back",
 "Zum Zug-Depot": "To Train Depot",
 "gesammelt": "collected",
@@ -5040,7 +5040,7 @@ function mpLeave(){
   if(S.mp?.channel)try{S.mp.channel.unsubscribe();}catch(e){}
   if(window.mpGameCh)try{window.mpGameCh.unsubscribe();}catch(e){}  /* Phase 212: fix mpGameCh memory leak */
   window.mpGameCh=null;
-  S.mp=null;S.mpModal=false;S.mpOpponent=null;S.mpSeed=null;render();
+  S.mp=null;S.mpModal=false;S.mpOpponent=null;S.mpSeed=null;S.mpLockAnswer=undefined;S.mpOppLocked=false;render();
 }
 
 /* Send a broadcast on the current channel */
@@ -5073,10 +5073,29 @@ function mpCountdown(seed,mode,filt,dif){
       const _ch=S.mp.channel,_oppName=S.mp.oppName||"Gegner";
       window.mpGameCh=_ch;
       _ch.on("broadcast",{event:"score_update"},({payload})=>{
-        S.mpOppScore=payload.score||0;S.mpOppRd=payload.rd||0;if("lid" in payload){S.mpOppLid=payload.lid;S.mpOppSel=payload.sel;S.mpOppSelOk=!!payload.selOk;}render();
+        S.mpOppScore=payload.score||0;S.mpOppRd=payload.rd||0;if("lid" in payload){S.mpOppLid=payload.lid;S.mpOppSel=payload.sel;S.mpOppSelOk=!!payload.selOk;}
+        /* Phase 316: opponent answered — trigger reveal if we already locked */
+        S.mpOppLocked=true;
+        if(S.mpLockAnswer!==undefined){_mpReveal(_secretGameToken);return;}
+        render();
       }).on("broadcast",{event:"game_over"},({payload})=>{
         S.mpOppFinal=payload;
         if(S.ph==="gameover")render();
+      })
+      /* Phase 316: ANSWER_LOCKED — opponent has locked, reveal if we also locked */
+      .on("broadcast",{event:"ANSWER_LOCKED"},()=>{
+        S.mpOppLocked=true;
+        if(S.mpLockAnswer!==undefined){_mpReveal(_secretGameToken);return;}
+        render(); /* show opponent locked indicator */
+      })
+      /* Phase 316: NEXT_QUESTION — host signals advance (guest waits for this) */
+      .on("broadcast",{event:"NEXT_QUESTION"},()=>{
+        if(S.mp?.role!=="host"){ /* guest: advance on host signal */
+          clearTimeout(fTo);S.mpOppLocked=false;S.mpLockAnswer=undefined;
+          const nr=S.rd+1;
+          if(S.diff!=="survival"&&nr>=ROUNDS){S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();render();}
+          else{S.rd=nr;lq();}
+        }
       });
       S.mp=null;
       /* Sync start – same seed on both sides.
@@ -10208,11 +10227,38 @@ function showTrainDepot(){
   document.getElementById("app").innerHTML=html;
 }
 
-  function answer(a,tok){
+
+/* Phase 316/317: MP Reveal — both players locked, resolve the round */
+function _mpReveal(tok){
+  var myAns=S.mpLockAnswer;
+  S.mpLockAnswer=undefined;
+  S.mpOppLocked=false;
+  /* Phase 317: clear softlock timer */
+  if(S._mpSoftlockTo){clearTimeout(S._mpSoftlockTo);S._mpSoftlockTo=null;}
+  if(myAns===undefined)return;
+  answer(myAns==='__t'?null:myAns,tok,true); /* _bypassMpLock=true */
+  /* Phase 317: send sel/selOk AFTER reveal (anti-cheat — opponent gets answer only post-reveal) */
+  if(window.mpGameCh&&S.mpOpponent&&S.q){
+    var _revAns=myAns==='__t'?null:myAns;
+    var _revOk=S.ok;
+    try{window.mpGameCh.send({type:'broadcast',event:'score_update',
+      payload:{score:S.sc,rd:S.rd,correct:S.correct,sel:_revAns,selOk:_revOk,lid:(S.q&&S.q.lid)}});}catch(_re){}
+  }
+}
+window._mpReveal=_mpReveal;
+
+  function answer(a,tok,_bypassMpLock){
   if(tok!==_secretGameToken){if(typeof tok!=="undefined")console.warn("%c\uD83D\uDEAB GeoQuest Anti-Cheat: invalid token","color:#ef4444;font-weight:bold");return;}
   if(!S||!S.q)return; /* P143: guard against missing question */
   if(S.sel\!==null)return;
   if(S.qRenderedAt&&Date.now()-S.qRenderedAt<250)return; /* anti-cheat: ignore clicks <250ms after render */
+  /* Phase 316: MP Lock & Reveal — intercept before resolving */
+  if(!_bypassMpLock&&window.mpGameCh&&S.mpOpponent&&S.mpLockAnswer===undefined){
+    S.mpLockAnswer=a||"__t";
+    try{window.mpGameCh.send({type:"broadcast",event:"ANSWER_LOCKED",payload:{}});}catch(_e){}
+    if(S.mpOppLocked){_mpReveal(tok);}else{render();} /* opponent already in → reveal immediately */
+    return;
+  }
   clr();
   const ok=a===S.q.ans;
   S.sel=a||"__t";S.ok=ok;
@@ -10267,8 +10313,14 @@ S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
   }
   /* P133: longer delay for text-heavy beta/IATA questions */
   const _qt=S.q&&S.q.type||"";
-  const _fd=_qt==="iata"?2800:1900;
+  /* Phase 316: MP sync — extended reveal delay, guest waits for NEXT_QUESTION */
+  const _isMpHost=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null;
+  const _isMpGuest=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null&&S.mp?.role==="guest";
+  const _fd=_qt==="iata"?2800:(_isMpHost||_isMpGuest)?3500:1900;
   fTo=setTimeout(()=>{
+    if(_isMpGuest){return;} /* Phase 316: guest waits for NEXT_QUESTION from host */
+    /* Phase 316: host signals advancement to guest */
+    if(_isMpHost){try{window.mpGameCh.send({type:"broadcast",event:"NEXT_QUESTION",payload:{}});}catch(_e){}}
     const nr=S.rd+1;
     if(S.diff\!=="survival"&&nr>=ROUNDS){
       S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
@@ -11564,7 +11616,10 @@ app.innerHTML=`<div class="scr">
         <div style="background:var(--bg3);border-radius:12px;padding:.75rem .5rem;text-align:center"><div style="font-size:1.5rem;font-weight:900;color:#ef4444">${survived}</div><div style="font-size:.64rem;color:var(--text3)">\u00dcberlebt</div></div>
         <div style="background:var(--bg3);border-radius:12px;padding:.75rem .5rem;text-align:center"><div style="font-size:1.5rem;font-weight:900;color:#fbbf24">${survBest}</div><div style="font-size:.64rem;color:var(--text3)">Rekord</div></div>
       </div>`:"";
-const _scoreIndicator=S.isOffline?'<div style="background:#f97316;color:#fff;border-radius:8px;padding:7px 12px;margin-top:5px;font-size:.74rem;font-weight:600;text-align:center">&#x1F50C; Ergebnis lokal gespeichert &mdash; wird beim n&auml;chsten Online-Start synchronisiert.</div>':(sbOK?`<div style="font-size:.76rem;color:${S.scoreSaved?"#34d399":"var(--text3)"}">${S.scoreSaved?"\u2713 Score gespeichert":"Speichere \u2026"}</div>`:'');
+/* Phase 316: MP waiting overlay when answer locked but opponent not yet */
+  const _mpWaitingOverlay=(window.mpGameCh&&S.mpOpponent&&S.mpLockAnswer!==undefined&&!S.mpOppLocked)
+    ?'<div style="position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#1e293b;border:1.5px solid #6366f1;border-radius:12px;padding:10px 20px;font-size:.85rem;font-weight:700;color:#c4b5fd;z-index:999;display:flex;align-items:center;gap:8px;"><div style="width:10px;height:10px;border-radius:50%;background:#6366f1;animation:pulse 1s infinite"></div>Warte auf Gegner…</div>':'';
+  const _scoreIndicator=S.isOffline?'<div style="background:#f97316;color:#fff;border-radius:8px;padding:7px 12px;margin-top:5px;font-size:.74rem;font-weight:600;text-align:center">&#x1F50C; Ergebnis lokal gespeichert &mdash; wird beim n&auml;chsten Online-Start synchronisiert.</div>':(sbOK?`<div style="font-size:.76rem;color:${S.scoreSaved?"#34d399":"var(--text3)"}">${S.scoreSaved?"\u2713 Score gespeichert":"Speichere \u2026"}</div>`:'');
 app.innerHTML=`<div class="scr">
       <div style="font-size:2.5rem;text-align:center">${isSurv?"\ud83d\udc80":"\u{1F3C6}"}</div>
       <h2 style="text-align:center;font-size:1.7rem;font-weight:900;color:var(--text);margin:3px 0">GAME OVER</h2>
@@ -11586,7 +11641,7 @@ app.innerHTML=`<div class="scr">
           <div style="color:#fbbf24;font-size:1rem;font-weight:900">+100 GeoCoins</div>
         </div>`:""}
         ${S.diff==="hardcore"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">âš¡ ${t("score_mult_max")}: <strong style="color:#f59e0b">${(S.hcMaxMult||1).toFixed(1)}×</strong></div>`:S.diff==="survival"?`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">⏱ ${t("score_time_bonus")}: <strong style="color:#34d399">+${S.survTimeBonusTotal||0} ${t("pts_abbr")}</strong></div>`:`<div style="background:var(--bg3);border-radius:10px;padding:.55rem .75rem;margin-bottom:.6rem;text-align:center;font-size:.78rem;color:var(--text2)">📋 ${S.correct}/${ROUNDS} ${t("score_correct_lbl")} × 10 ${t("pts_abbr")} = <strong style="color:#60a5fa">${S.sc} ${t("pts_abbr")}</strong></div>`}
-        ${_scoreIndicator}
+        ${_mpWaitingOverlay}${_scoreIndicator}
       </div>
       ${isGuest&&S.correct>0&&S.convModal?`<div class="conv-modal-bg" onclick="if(event.target===this){S.convModal=false;render()}">
   <div class="conv-modal">
