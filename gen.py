@@ -9621,6 +9621,8 @@ function _tlTouchEnd(e){
 }
 function checkTimeline(){
   if(!S.q||S.q.type!=='timeline')return;
+  if(S.sel!==null)return; /* iOS guard: ignore stale touchend during feedback */
+  if(S.qRenderedAt&&Date.now()-S.qRenderedAt<500)return; /* iOS guard: ignore events <500ms after question load */
   var list=document.getElementById('tl-list');
   if(!list)return;
   var tiles=Array.from(list.children);
@@ -10766,7 +10768,7 @@ function lq(){
   if(\!q&&S.diff==="casual"&&S.queueExtra.length>0)q=S.queueExtra.shift();
   if(\!q){S.ph="menu";render();return;}
   S.askedLids.add(q.lid);
-  S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
+  S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";_tlDrag=null;_tlTouchN=null; /* iOS: clear stale touch state */S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
   if(S.ttsOn)setTimeout(_ttsCurrentQ,350); /* Phase 256: Auto-TTS */;
   S.half_removed=false;S.freezeActive=false;S.airportPinDist=0;S.airportPinPts=0;
   render();
