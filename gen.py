@@ -2878,8 +2878,8 @@ const MODES=[
     {id:"hl_zug_jahr",       icon:"\u{1F4C5}",title:"H/L: Bahn-Geschichte",          group:"zuege",prompt:"Früher in Betrieb genommen?",                              desc:"Wann eröffnete dieses Netz oder dieser Zug?"},
     {id:"hl_zug_taktfrequenz",icon:"\u23F1",title:"H/L: Taktfrequenz",          group:"zuege",prompt:"Höhere Taktfrequenz (Züge/Stunde)?",               desc:"Shinkansen vs. ICE vs. U-Bahn — wer faehrt oefter?"},
     {id:"hl_zug_km",         icon:"\u{1F4CF}",title:"H/L: Streckenkil. Fernzug",     group:"zuege",prompt:"Längere Strecke?",                                        desc:"Trans-Sibirisch vs. Glacier Express — Streckenlängen"},
-    {id:"timeline_zug_bahnhof_bau",icon:"\u{1F3DB}\uFE0F",title:"Timeline: Bahnhofs-Bau",    group:"zuege",prompt:"Wann wurde dieser Bahnhof eroeffnet?",                desc:"Grand Central, Gare du Nord, Shinjuku — wann oeffneten die Groessten?"},
-    {id:"timeline_zug_hsb",  icon:"\u{1F686}",title:"Bahn-Timeline",                 group:"zuege",prompt:"Chronologisch sortieren — Bahn-Meilensteine!",                 desc:"Erste HSR, Metro-Eröffnungen & Zuggeschichte"},
+    {id:"timeline_zug_bahnhof_bau",icon:"\u{1F3DB}\uFE0F",title:"Timeline: Bahnhofs-Bau",    group:"zuege",prompt:"Wann wurde dieser Bahnhof eroeffnet?",                desc:"Grand Central, Gare du Nord, Shinjuku — wann oeffneten die Groessten?",time:24},
+    {id:"timeline_zug_hsb",  icon:"\u{1F686}",title:"Bahn-Timeline",                 group:"zuege",prompt:"Chronologisch sortieren — Bahn-Meilensteine!",                 desc:"Erste HSR, Metro-Eröffnungen & Zuggeschichte",time:24},
     {id:"ws_zug_intercity",        icon:"\u{1F524}",title:"WS: Intercity",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: INTERCITY — 9 Buchstaben"},
     {id:"ws_zug_shinkansen",        icon:"\u{1F524}",title:"WS: Shinkansen",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: SHINKANSEN — 10 Buchstaben"},
     {id:"ws_zug_frecciarossa",        icon:"\u{1F524}",title:"WS: Frecciarossa",              group:"zuege",prompt:"Bilde Wörter aus dem Zugnamen!",                     desc:"Anagramm-Rätsel: FRECCIAROSSA — 12 Buchstaben"},
@@ -2910,7 +2910,7 @@ const MODES=[
     {id:"zug_ds100_input",    icon:"\u2328\uFE0F",title:"DS100 (Hardcore)",                group:"zuege",prompt:"Tippe das DS100-Betriebsstellenkürzel!",                       desc:"Freie Texteingabe — FF, MH, AH… Kennst du alle?"},
 
     /* === Phase 329: Auto-Quartett === */
-    {id:"hl_auto_ps",    icon:"\u{1F3CE}\uFE0F",title:"Auto-Quartett: Leistung",  group:"autos",prompt:"Welches Fahrzeug hat mehr PS?",desc:"Von 9 PS (2CV) bis 1914 PS (Rimac Nevera) — ",prompt_en:"Which car has more horsepower?"},
+    {id:"hl_auto_ps",    icon:"\u{1F3CE}\uFE0F",title:"Auto-Quartett: Leistung",  group:"autos",prompt:"Welches Fahrzeug hat mehr PS?",desc:"Von 9 PS (2CV) bis 1914 PS (Rimac Nevera) — ",prompt_en:"Which car has more horsepower?",time:24},
     {id:"hl_auto_vmax",  icon:"\u{1F3C1}",title:"Auto-Quartett: Top-Speed",   group:"autos",prompt:"Welches Fahrzeug ist schneller?",desc:"Höchstgeschwindigkeit — 85 bis 447 km/h",prompt_en:"Which car has a higher top speed?"},
     {id:"hl_auto_accel", icon:"\u23F1\uFE0F",title:"Auto-Quartett: 0-100 km/h",  group:"autos",prompt:"Welches Fahrzeug braucht L\u00e4nger auf 100?",desc:"H\u00f6herer Wert = langsamer = h\u00f6her in diesem Modus",prompt_en:"Which car takes LONGER to reach 100 km/h?"},
     {id:"hl_auto_ccm",   icon:"\u2699\uFE0F",title:"Auto-Quartett: Hubraum",      group:"autos",prompt:"Welcher Verbrenner hat mehr Hubraum?",desc:"Nur Verbrenner — 375 ccm bis 7993 ccm",prompt_en:"Which combustion car has the larger engine displacement?"},
@@ -2974,7 +2974,7 @@ const MODES=[
     {id:"games_match_f2p",      icon:"\u{1F193}",title:"F2P oder Kaufspiel?",            group:"games",prompt:"Ist dieses Spiel kostenlos spielbar?",                      desc:"Free-to-Play oder Vollpreis — 26 vs. 24 Spiele",        prompt_en:"Is this game free-to-play or paid?"},
     {id:"hl_games_peak",        icon:"\u{1F4C8}",title:"Game-Quartett: Peak-Spieler",    group:"games",prompt:"Welches Spiel hatte mehr gleichzeitige Spieler?",            desc:"Gemessene Peak-Concurrent-Zahlen in Millionen",              prompt_en:"Which game had more peak concurrent players?"},
     {id:"hl_games_dev_lat",     icon:"\u{1F9ED}",title:"Game-Studio: Wo liegt es?",      group:"games",prompt:"Welches Entwicklerstudio liegt weiter nördlich?",       desc:"Von Singapur (1°N) bis Espoo, Finnland (60°N)",    prompt_en:"Which game studio is located further north?"},
-    {id:"timeline_konsolen_bj",  icon:"\u{1F4C5}",title:"Hardware-Timeline",         group:"games",prompt:"Sortiere die Konsolen nach Erscheinungsjahr!",               desc:"Von Atari bis PS5 — die Geschichte der Spielkonsolen.",                  prompt_en:"Sort the consoles by release year!"},
+    {id:"timeline_konsolen_bj",  icon:"\u{1F4C5}",title:"Hardware-Timeline",         group:"games",prompt:"Sortiere die Konsolen nach Erscheinungsjahr!",               desc:"Von Atari bis PS5 — die Geschichte der Spielkonsolen.",                  prompt_en:"Sort the consoles by release year!",time:24},
     {id:"hl_konsolen_verkauf",   icon:"\u{1F4E6}",title:"Konsolen-Quartett: Absatz",  group:"games",prompt:"Welche Konsole hat mehr Einheiten verkauft?",                desc:"In Millionen — von 0,25 Mio. bis 155 Mio.",                             prompt_en:"Which console sold more units?"},
     {id:"hl_konsolen_preis",     icon:"\u{1F4B5}",title:"Konsolen-Quartett: Preis",   group:"games",prompt:"Welche Konsole war beim Launch teurer?",                     desc:"Launch-Preis in USD — manchmal spiegelt er Epik wider.",                 prompt_en:"Which console had the higher launch price?"},
     {id:"match_konsolen_hersteller",icon:"\u{1F3ED}",title:"Konsole: Hersteller",     group:"games",prompt:"Welches Unternehmen hat diese Konsole hergestellt?",          desc:"Sony, Nintendo, Microsoft, Sega oder Atari?",                           prompt_en:"Which company manufactured this console?"},
@@ -3471,9 +3471,9 @@ const MODES=[
   {id:"ws_sportwissen_athletik",icon:"\u{1F3CB}\uFE0F",title:"WS: Athletik",group:"sport_wissen",noMultiplayer:true,prompt:"Bilde Woerter aus ATHLETIK!",desc:"Anagramm-Raetsel -- 8 Buchstaben"},
   {id:"ws_sportwissen_sportgeist",icon:"\u{1F4AA}",title:"WS: Sportgeist",group:"sport_wissen",noMultiplayer:true,prompt:"Bilde Woerter aus SPORTGEIST!",desc:"Anagramm-Raetsel -- 10 Buchstaben"},
   /* === Phase 266 Timeline-Modi === */
-  {id:"timeline_geo_erdbeben",  icon:"\u{1F30D}",title:"Erdbeben-Zeitleiste", group:"geologie",    prompt:"Ordne die Erdbeben chronologisch!",     desc:"Historische Erdbeben nach Jahr sortieren"},
-  {id:"timeline_sport_stadien", icon:"\u{1F3DF}\uFE0F",title:"Stadion-Zeitleiste",  group:"sport_wissen",prompt:"Ordne die Stadien nach Er\u00f6ffnungsjahr!", desc:"Stadien chronologisch sortieren"},
-  {id:"timeline_astro_entdeckung",icon:"\u{1F52D}",title:"Entdeckungs-Zeitleiste",group:"astronomie", prompt:"Ordne die Himmelsk\u00f6rper nach Entdeckungsjahr!",desc:"Astronomische Entdeckungen sortieren"},
+  {id:"timeline_geo_erdbeben",  icon:"\u{1F30D}",title:"Erdbeben-Zeitleiste", group:"geologie",    prompt:"Ordne die Erdbeben chronologisch!",     desc:"Historische Erdbeben nach Jahr sortieren",time:24},
+  {id:"timeline_sport_stadien", icon:"\u{1F3DF}\uFE0F",title:"Stadion-Zeitleiste",  group:"sport_wissen",prompt:"Ordne die Stadien nach Er\u00f6ffnungsjahr!", desc:"Stadien chronologisch sortieren",time:24},
+  {id:"timeline_astro_entdeckung",icon:"\u{1F52D}",title:"Entdeckungs-Zeitleiste",group:"astronomie", prompt:"Ordne die Himmelsk\u00f6rper nach Entdeckungsjahr!",desc:"Astronomische Entdeckungen sortieren",time:24},
   {id:"timeline_tech_release",  icon:"\u{1F4BB}",title:"Tech-Zeitleiste",    group:"technologie", prompt:"Ordne die Technologien nach Release-Jahr!",desc:"Tech-Releases chronologisch sortieren"}
 ];
 
@@ -3975,7 +3975,7 @@ const _EU_MEMBERS=new Set(["Austria","Belgium","Bulgaria","Croatia","Cyprus","Cz
 
 /* Row pool: geographic criteria (continent, subregion, border, special) */
 const GRID_ROW_POOL=[
-  {id:"eu", type:"continent",value:"Europe",        label:"In Europa"},
+  {id:"eu", type:"continent",value:"Europe",        label:"In Europa",time:24},
   {id:"as", type:"continent",value:"Asia",          label:"In Asien"},
   {id:"af", type:"continent",value:"Africa",        label:"In Afrika"},
   {id:"sa", type:"continent",value:"South America", label:"In S\u00fcdamerika"},
