@@ -166,3 +166,4 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | (inline) games_extended.json | 405 | peak_year + publisher_lat/lng zu allen 70 Eintraegen |
 | (inline) gen.py direkt | 405 | 3 neue Modi: hl_games_peak_year, hl_games_publisher_lat, games_peak_year_mc (genGamesPeakYearMC). i18n +6 Strings. MODES: 771->774 |
 | (inline) validate_content.py | 405 | Indie zu KATEGORIE-Enum, optionale Typ-Checks fuer peak_year/publisher_lat/lng |
+| (inline) gen.py direkt | 406 | BUG: genGamesPinQ subj enthielt Developer+Land (Spoiler auf Karte) → nur noch game-Name. BUG: games_match_kategorie immer null (fixedPool 3 Einträge → nach Entfernen richtiger Antwort nur 2 Distraktoren, <3 → return null) → Indie als 4. Option. catLabels["games"] fehlte → Gaming-Suche blind. hl_games_dev_lat Syntaxfehler (fehlende Klammern). JS 143/143 |

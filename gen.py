@@ -2937,7 +2937,7 @@ const MODES=[
     {id:"games_match_genre",  icon:"\u{1F3AE}",title:"Spielgenre zuordnen",               group:"games",prompt:"Welchem Genre geh\u00f6rt dieses Spiel an?",                    desc:"Battle Royale, RPG, MOBA, Sandbox \u2014 15 Genres",        prompt_en:"Which genre does this game belong to?"},
     {id:"games_match_adaption",icon:"\u{1F3AC}",title:"Game-Verfilmung",                  group:"games",prompt:"Wurde dieses Spiel verfilmt oder als Serie adaptiert?",           desc:"Film / Serie / Anime \u2014 oder kein Remake?",             prompt_en:"Has this game been adapted as film or series?"},
     {id:"games_match_plattform",icon:"\u{1F4BB}",title:"Spielplattform",                  group:"games",prompt:"F\u00fcr welche Plattform erschien dieses Spiel prim\u00e4r?",  desc:"PC / Konsole / Mobil / Multiplattform",                      prompt_en:"On which platform did this game primarily release?"},
-    {id:"games_match_kategorie",icon:"\u{1F4C2}",title:"Gaming-\u00c4ra",               group:"games",prompt:"Zu welcher Gaming-Kategorie geh\u00f6rt dieses Spiel?",          desc:"Modern Youth / Global Mobile / Klassiker",                   prompt_en:"Which gaming era does this game belong to?"},
+    {id:"games_match_kategorie",icon:"\u{1F4C2}",title:"Gaming-\u00c4ra",               group:"games",prompt:"Zu welcher Gaming-Kategorie geh\u00f6rt dieses Spiel?",          desc:"Modern Youth / Global Mobile / Klassiker / Indie",                   prompt_en:"Which gaming era does this game belong to?"},
     {id:"hl_games_release",   icon:"\u{1F4C5}",title:"Game-Quartett: Erscheinungsjahr",   group:"games",prompt:"Welches Spiel erschien sp\u00e4ter?",                           desc:"Von Pac-Man (1980) bis EA FC 24 (2023)",                     prompt_en:"Which game was released later?"},
     {id:"hl_games_vk",        icon:"\u{1F4B0}",title:"Game-Quartett: Verkaufszahlen",     group:"games",prompt:"Welches Spiel wurde h\u00e4ufiger verkauft?",                   desc:"Nur Kaufspiele \u2014 in Millionen verkaufter Exemplare",    prompt_en:"Which game sold more copies?"},
     {id:"hl_games_downloads",  icon:"\u{1F4F1}",title:"Game-Quartett: Downloads",         group:"games",prompt:"Welches F2P-Spiel wurde \u00f6fter heruntergeladen?",            desc:"Nur Free-to-Play \u2014 in Millionen Downloads",             prompt_en:"Which F2P game has more downloads?"},
@@ -8830,7 +8830,7 @@ function genGamesPinQ(){
   var idx=~~(rng()*valid.length);
   var game=valid[idx];
   var d=_GE[game];
-  var subj=game+" — "+d.developer+" ("+d.dev_land+")";
+  var subj=game;  /* Phase 406 FIX: kein Developer/Land im subj — wäre Spoiler auf der Karte */
   return{type:"uk_pin",
     prompt:_tc("Wo hat das Entwicklerstudio von ")+game+_tc(" seinen Hauptsitz?"),
     subj:subj,ans:game+" → "+d.dev_city,
@@ -10163,7 +10163,7 @@ const GEN={
   games_match_genre:()=>genGamesMatchExt("genre",_tc("Welchem Genre geh\u00f6rt dieses Spiel an?"),null),
   games_match_adaption:()=>genGamesMatchExt("adaption",_tc("Wurde dieses Spiel verfilmt oder als Serie adaptiert?"),null),
   games_match_plattform:()=>genGamesMatchExt("plattform",_tc("Auf welcher Plattform l\u00e4uft dieses Spiel?"),["PC","Konsole","Mobil","Multiplattform"]),
-  games_match_kategorie:()=>genGamesMatchExt("kategorie",_tc("Zu welcher Gaming-\u00c4ra geh\u00f6rt dieses Spiel?"),["Modern Youth","Global Mobile","Klassiker"]),
+  games_match_kategorie:()=>genGamesMatchExt("kategorie",_tc("Zu welcher Gaming-\u00c4ra geh\u00f6rt dieses Spiel?"),["Modern Youth","Global Mobile","Klassiker","Indie"]),
   hl_games_release:()=>genGamesHLExt("release",{unit:"Jahr",prompt:_tc("Welches Spiel erschien sp\u00e4ter?")}),
   hl_games_vk:()=>genGamesHLExt("vk_mio",{unit:"Mio. Exemplare",prompt:_tc("Welches Spiel wurde h\u00e4ufiger verkauft?")}),
   hl_games_downloads:()=>genGamesHLExt("downloads_mio",{unit:"Mio. Downloads",prompt:_tc("Welches F2P-Spiel wurde \u00f6fter heruntergeladen?")}),
@@ -10175,7 +10175,7 @@ const GEN={
   games_match_publisher:()=>genGamesMatchExt("publisher",_tc("Welcher Publisher steckt hinter diesem Spiel?"),null),
   games_match_f2p:()=>genGamesF2PQ(),
   hl_games_peak:()=>genGamesHLExt("peak_concurrent_mio",{unit:"Mio. gleichz. Spieler",prompt:_tc("Welches Spiel hatte mehr gleichzeitige Spieler?")}),
-  hl_games_dev_lat:()=>genGamesHLExt("dev_lat",{unit:"°N",prompt:_tc("Welches Entwicklerstudio liegt weiter n\u00f6rdlich?")});
+  hl_games_dev_lat:()=>genGamesHLExt("dev_lat",{unit:"°N",prompt:_tc("Welches Entwicklerstudio liegt weiter n\u00f6rdlich?")}),
   games_match_esports:()=>genGamesEsportsQ(),
   hl_games_peak_year:()=>genGamesHLExt("peak_year",{unit:"Jahr",prompt:_tc("Welches Spiel hatte seinen Höhepunkt später?")}),
   hl_games_publisher_lat:()=>genGamesHLExt("publisher_lat",{unit:"°N",prompt:_tc("Welcher Publisher hat seinen Sitz weiter nördlich?")}),
@@ -14815,7 +14815,7 @@ function filterGames(){
   }
   var catLabels={pure_geo:'pure geo',lifestyle:'lifestyle',eu_plates:'kennzeichen plates',
     sport:'sport',hl_compare:'higher lower',comparisons:'vergleiche',
-    airports:'airports flughaefen',neighbors:'nachbarlaender',map_mode:'weltkarte map',tiere:'tiere natur animals nature tierwelt'};
+    airports:'airports flughaefen',neighbors:'nachbarlaender',map_mode:'weltkarte map',tiere:'tiere natur animals nature tierwelt',games:'gaming spiele games sport esport'};
   // Search: show all sections, auto-expand those with matches
   document.querySelectorAll('.accordion-section').forEach(function(section){
     section.style.removeProperty('display');
