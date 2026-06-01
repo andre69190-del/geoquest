@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 402 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.23 MB | 769 Spielmodi | verify: 141/141 | data: 44 JSON
+**Version:** Phase 405 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.23 MB | 774 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 769 Modi, 769/769/769 — perfekte Konsistenz.
+**Aktueller Stand:** 774 Modi, 774/774/774 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -1107,6 +1107,9 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **354** | patches/patch_354_feedback_delay.py | **UX: Feedback-Anzeigedauer +1,5 s — Einzel: 1900→3400 ms, IATA: 2800→4300 ms, startNextRound: 1500→3000 ms (5×). Multiplayer (5500 ms) unverändert.** |
 | **360** | patches/patch_360_games_engine.py | **Gaming-Kategorie: 50 Spiele (30 Modern/Mobile + 20 Klassiker), 13 Modi (games_pin, genre/land/adaption-Match, H/L release/vk/metacritic/usk, Baujahr-MC). Bridge: dev_lat/dev_lng → echter GeoQuest-Pin-Modus.** |
 | **402** | patch_402.py | **Phase 401/402: Audit-Fixes (XSS, Zero-Trap, Sort, ES5) + 4 neue Gaming-Modi + games_extended Validator** |
+| **403** | patch_403.py | **i18n Gaming-Modi: 16 Prompts via _tc() fuer EN/PL + post_phase MODES-Fix + Spieluebersicht-Auto + Backup-Cleanup** |
+| **404** | patch_404.py | **Phase 403 Audit-Polish (JSON try/except, Prototype-Guard) + Phase 404: Modi esports+pegi, i18n +4, Backup-Policy 2-Backup-Regel** |
+| **405** | patch_405.py | **Batch 3: 20 Indie/Klassiker-Spiele + peak_year + publisher_lat/lng + 3 neue Modi (peak_year_mc, hl_peak_year, hl_publisher_lat) + validate_content Indie-Enum** |
 
 ---
 

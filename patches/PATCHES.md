@@ -157,3 +157,12 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | (inline) validate_content.py | 401 | check_games_extended() + Routing + Cross-Validation für games_extended.json: 22 Pflichtfelder, Enums, Typ-Checks, Koordinaten, F2P-Logik. validate: 44/44 ✓ |
 | (inline) verify.py | 401 | games_extended.json in Section 10 JSON-Roundtrip-Test aufgenommen |
 | (inline) gen.py direkt | 402 | Phase 402 neue Gaming-Modi: games_match_publisher, games_match_f2p (genGamesF2PQ mit Ja/Nein-UI), hl_games_peak (peak_concurrent_mio), hl_games_dev_lat (Studio-Latitude). MODE_CATS games: 13→17 Modi. MODES: 765→769 |
+| patches/patch_403_audit_polish.py | 403 | Audit-Polish: JSON-Parser try/except fuer autos_extended+games_extended; Prototype-Pollution hasOwnProperty-Guard in 10 Object.keys()-Aufrufen (genGamesHLExt, Match, Pin, Baujahr, F2P, genAutosHLExt, forEach x2, Match) |
+| (inline) gen.py direkt | 404 | 2 neue Gaming-Modi: games_match_esports (genGamesEsportsQ Ja/Nein) + hl_games_pegi (PEGI H/L). i18n +4 Strings. MODE_CATS games: 17->19. MODES: 769->771 |
+| (inline) post_phase.py | 404 | Backup-Policy: Nur loeschen wenn >=2 neuere Backups vorhanden (Sicherheitsnetz). MODES-Count aus gen.py statt JSON-Keys |
+| check_session.py | 404 | Neues Session-End-Check Script: verify+validate+Dokumente-Sync+MODES-Konsistenz+Backup-Status in einem Rutsch |
+| CLAUDE_SESSION_STARTER.md | 403/404 | i18n-Mandat (_tc Pflicht), Validator-Sync-Regel, H/L-Inversions-Falle-Merksatz eingefuegt |
+| patches/games_batch3.py | 405 | Batch 3: 20 Indie/Klassiker-Spiele (Stardew Valley, Hollow Knight, Celeste, Elden Ring, Baldurs Gate 3 u.a.). Neue Kategorie Indie. 50->70 Spiele in games_extended.json |
+| (inline) games_extended.json | 405 | peak_year + publisher_lat/lng zu allen 70 Eintraegen |
+| (inline) gen.py direkt | 405 | 3 neue Modi: hl_games_peak_year, hl_games_publisher_lat, games_peak_year_mc (genGamesPeakYearMC). i18n +6 Strings. MODES: 771->774 |
+| (inline) validate_content.py | 405 | Indie zu KATEGORIE-Enum, optionale Typ-Checks fuer peak_year/publisher_lat/lng |

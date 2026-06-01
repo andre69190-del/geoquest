@@ -21,7 +21,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2022,
+    "publisher_lat": 37.5629,
+    "publisher_lng": -122.3255
   },
   "Fortnite": {
     "release": 2017,
@@ -45,7 +48,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2018,
+    "publisher_lat": 35.7915,
+    "publisher_lng": -78.7811
   },
   "Among Us": {
     "release": 2018,
@@ -69,7 +75,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 47.6739,
+    "publisher_lng": -122.1215
   },
   "Fall Guys": {
     "release": 2020,
@@ -93,7 +102,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 35.7915,
+    "publisher_lng": -78.7811
   },
   "Brawl Stars": {
     "release": 2018,
@@ -117,7 +129,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2023,
+    "publisher_lat": 60.1695,
+    "publisher_lng": 24.9354
   },
   "Clash of Clans": {
     "release": 2012,
@@ -141,7 +156,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2015,
+    "publisher_lat": 60.1695,
+    "publisher_lng": 24.9354
   },
   "Clash Royale": {
     "release": 2016,
@@ -165,7 +183,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2017,
+    "publisher_lat": 60.1695,
+    "publisher_lng": 24.9354
   },
   "PUBG Mobile": {
     "release": 2018,
@@ -189,7 +210,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2021,
+    "publisher_lat": 37.5665,
+    "publisher_lng": 126.978
   },
   "Garena Free Fire": {
     "release": 2017,
@@ -213,7 +237,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 1.3521,
+    "publisher_lng": 103.8198
   },
   "Genshin Impact": {
     "release": 2020,
@@ -237,7 +264,10 @@
     "vorbild_land": null,
     "adaption": "Anime",
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 31.2304,
+    "publisher_lng": 121.4737
   },
   "Honkai: Star Rail": {
     "release": 2023,
@@ -261,7 +291,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2023,
+    "publisher_lat": 31.2304,
+    "publisher_lng": 121.4737
   },
   "Mobile Legends: Bang Bang": {
     "release": 2016,
@@ -285,7 +318,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2019,
+    "publisher_lat": 31.2304,
+    "publisher_lng": 121.4737
   },
   "Honor of Kings": {
     "release": 2015,
@@ -309,7 +345,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 22.5431,
+    "publisher_lng": 114.0579
   },
   "Subway Surfers": {
     "release": 2012,
@@ -333,7 +372,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2018,
+    "publisher_lat": 55.6761,
+    "publisher_lng": 12.5683
   },
   "Stumble Guys": {
     "release": 2021,
@@ -357,7 +399,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2022,
+    "publisher_lat": 34.0522,
+    "publisher_lng": -118.2437
   },
   "Valorant": {
     "release": 2020,
@@ -381,7 +426,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 34.0195,
+    "publisher_lng": -118.4912
   },
   "Apex Legends": {
     "release": 2019,
@@ -405,7 +453,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2019,
+    "publisher_lat": 37.3861,
+    "publisher_lng": -122.0839
   },
   "Rocket League": {
     "release": 2015,
@@ -429,7 +480,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2015,
+    "publisher_lat": 32.7157,
+    "publisher_lng": -117.1611
   },
   "EA FC 24": {
     "release": 2023,
@@ -453,7 +507,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2023,
+    "publisher_lat": 37.3861,
+    "publisher_lng": -122.0839
   },
   "Pokémon GO": {
     "release": 2016,
@@ -477,7 +534,10 @@
     "vorbild_land": null,
     "adaption": "Anime",
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2016,
+    "publisher_lat": 37.7749,
+    "publisher_lng": -122.4194
   },
   "League of Legends": {
     "release": 2009,
@@ -501,7 +561,10 @@
     "vorbild_land": null,
     "adaption": "Serie",
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2019,
+    "publisher_lat": 34.0195,
+    "publisher_lng": -118.4912
   },
   "Overwatch 2": {
     "release": 2022,
@@ -525,7 +588,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2022,
+    "publisher_lat": 33.6846,
+    "publisher_lng": -117.8265
   },
   "Candy Crush Saga": {
     "release": 2012,
@@ -549,7 +615,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2014,
+    "publisher_lat": 59.3293,
+    "publisher_lng": 18.0686
   },
   "Angry Birds 2": {
     "release": 2015,
@@ -573,7 +642,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2015,
+    "publisher_lat": 60.2052,
+    "publisher_lng": 24.6522
   },
   "Call of Duty: Mobile": {
     "release": 2019,
@@ -597,7 +669,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 34.0522,
+    "publisher_lng": -118.2437
   },
   "Mario Kart Tour": {
     "release": 2019,
@@ -621,7 +696,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 35.0116,
+    "publisher_lng": 135.7681
   },
   "Teamfight Tactics": {
     "release": 2019,
@@ -645,7 +723,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 34.0195,
+    "publisher_lng": -118.4912
   },
   "Brawlhalla": {
     "release": 2017,
@@ -669,7 +750,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2021,
+    "publisher_lat": 48.8566,
+    "publisher_lng": 2.3522
   },
   "FIFA 23": {
     "release": 2022,
@@ -693,7 +777,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 1
+    "sequel_count": 1,
+    "peak_year": 2022,
+    "publisher_lat": 37.3861,
+    "publisher_lng": -122.0839
   },
   "Minecraft": {
     "release": 2009,
@@ -717,7 +804,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 47.6062,
+    "publisher_lng": -122.3321
   },
   "GTA V": {
     "release": 2013,
@@ -741,7 +831,10 @@
     "vorbild_land": "Vereinigte Staaten",
     "adaption": null,
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2013,
+    "publisher_lat": 40.7128,
+    "publisher_lng": -74.006
   },
   "The Witcher 3: Wild Hunt": {
     "release": 2015,
@@ -765,7 +858,10 @@
     "vorbild_land": null,
     "adaption": "Serie",
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2015,
+    "publisher_lat": 52.2297,
+    "publisher_lng": 21.0122
   },
   "Pokémon Rot/Blau": {
     "release": 1996,
@@ -789,7 +885,10 @@
     "vorbild_land": null,
     "adaption": "Anime",
     "esports": false,
-    "sequel_count": 8
+    "sequel_count": 8,
+    "peak_year": 1998,
+    "publisher_lat": 35.0116,
+    "publisher_lng": 135.7681
   },
   "Super Mario 64": {
     "release": 1996,
@@ -813,7 +912,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 3
+    "sequel_count": 3,
+    "peak_year": 1996,
+    "publisher_lat": 35.0116,
+    "publisher_lng": 135.7681
   },
   "Tetris": {
     "release": 1984,
@@ -837,7 +939,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 2
+    "sequel_count": 2,
+    "peak_year": 1989,
+    "publisher_lat": 37.3861,
+    "publisher_lng": -122.0839
   },
   "Pac-Man": {
     "release": 1980,
@@ -861,7 +966,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 4
+    "sequel_count": 4,
+    "peak_year": 1980,
+    "publisher_lat": 35.6895,
+    "publisher_lng": 139.6917
   },
   "The Last of Us": {
     "release": 2013,
@@ -885,7 +993,10 @@
     "vorbild_land": "Vereinigte Staaten",
     "adaption": "Serie",
     "esports": false,
-    "sequel_count": 1
+    "sequel_count": 1,
+    "peak_year": 2013,
+    "publisher_lat": 35.5652,
+    "publisher_lng": 139.7182
   },
   "Tomb Raider": {
     "release": 1996,
@@ -909,7 +1020,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 6
+    "sequel_count": 6,
+    "peak_year": 1996,
+    "publisher_lat": 51.5074,
+    "publisher_lng": -0.1278
   },
   "World of Warcraft": {
     "release": 2004,
@@ -933,7 +1047,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 9
+    "sequel_count": 9,
+    "peak_year": 2005,
+    "publisher_lat": 33.6846,
+    "publisher_lng": -117.8265
   },
   "Sonic the Hedgehog": {
     "release": 1991,
@@ -957,7 +1074,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 5
+    "sequel_count": 5,
+    "peak_year": 1991,
+    "publisher_lat": 35.6895,
+    "publisher_lng": 139.6917
   },
   "Half-Life": {
     "release": 1998,
@@ -981,7 +1101,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 2
+    "sequel_count": 2,
+    "peak_year": 1998,
+    "publisher_lat": 47.6769,
+    "publisher_lng": -122.206
   },
   "Counter-Strike": {
     "release": 2000,
@@ -1005,7 +1128,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 2
+    "sequel_count": 2,
+    "peak_year": 2015,
+    "publisher_lat": 47.6769,
+    "publisher_lng": -122.206
   },
   "Doom": {
     "release": 1993,
@@ -1029,7 +1155,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 4
+    "sequel_count": 4,
+    "peak_year": 1993,
+    "publisher_lat": 32.7668,
+    "publisher_lng": -96.5992
   },
   "The Legend of Zelda: Ocarina of Time": {
     "release": 1998,
@@ -1053,7 +1182,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 5
+    "sequel_count": 5,
+    "peak_year": 1998,
+    "publisher_lat": 35.0116,
+    "publisher_lng": 135.7681
   },
   "Grand Theft Auto": {
     "release": 1997,
@@ -1077,7 +1209,10 @@
     "vorbild_land": "Vereinigte Staaten",
     "adaption": null,
     "esports": false,
-    "sequel_count": 5
+    "sequel_count": 5,
+    "peak_year": 1997,
+    "publisher_lat": 51.5074,
+    "publisher_lng": -0.1278
   },
   "Diablo II": {
     "release": 2000,
@@ -1101,7 +1236,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 2
+    "sequel_count": 2,
+    "peak_year": 2001,
+    "publisher_lat": 33.6846,
+    "publisher_lng": -117.8265
   },
   "StarCraft": {
     "release": 1998,
@@ -1125,7 +1263,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": true,
-    "sequel_count": 1
+    "sequel_count": 1,
+    "peak_year": 1998,
+    "publisher_lat": 33.6846,
+    "publisher_lng": -117.8265
   },
   "Assassin's Creed": {
     "release": 2007,
@@ -1149,7 +1290,10 @@
     "vorbild_land": null,
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 11
+    "sequel_count": 11,
+    "peak_year": 2009,
+    "publisher_lat": 48.8566,
+    "publisher_lng": 2.3522
   },
   "The Elder Scrolls V: Skyrim": {
     "release": 2011,
@@ -1173,7 +1317,10 @@
     "vorbild_land": null,
     "adaption": null,
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2011,
+    "publisher_lat": 39.084,
+    "publisher_lng": -77.1528
   },
   "Ghost of Tsushima": {
     "release": 2020,
@@ -1197,6 +1344,549 @@
     "vorbild_land": "Japan",
     "adaption": "Film",
     "esports": false,
-    "sequel_count": 0
+    "sequel_count": 0,
+    "peak_year": 2020,
+    "publisher_lat": 35.5652,
+    "publisher_lng": 139.7182
+  },
+  "Stardew Valley": {
+    "release": 2016,
+    "kategorie": "Indie",
+    "publisher": "ConcernedApe",
+    "publisher_land": "Vereinigte Staaten",
+    "developer": "ConcernedApe",
+    "dev_land": "Vereinigte Staaten",
+    "dev_city": "Seattle",
+    "dev_lat": 47.6062,
+    "dev_lng": -122.3321,
+    "genre": "Rollenspiel",
+    "usk": 6,
+    "pegi": 7,
+    "f2p": false,
+    "vk_mio": 20.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.074,
+    "peak_year": 2016,
+    "metacritic": 89,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 47.6062,
+    "publisher_lng": -122.3321
+  },
+  "Hollow Knight": {
+    "release": 2017,
+    "kategorie": "Indie",
+    "publisher": "Team Cherry",
+    "publisher_land": "Australien",
+    "developer": "Team Cherry",
+    "dev_land": "Australien",
+    "dev_city": "Adelaide",
+    "dev_lat": -34.9285,
+    "dev_lng": 138.6007,
+    "genre": "Action-Adventure",
+    "usk": 12,
+    "pegi": 12,
+    "f2p": false,
+    "vk_mio": 3.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.014,
+    "peak_year": 2017,
+    "metacritic": 87,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": -34.9285,
+    "publisher_lng": 138.6007
+  },
+  "Celeste": {
+    "release": 2018,
+    "kategorie": "Indie",
+    "publisher": "Matt Makes Games",
+    "publisher_land": "Kanada",
+    "developer": "Matt Makes Games",
+    "dev_land": "Kanada",
+    "dev_city": "Victoria",
+    "dev_lat": 48.4284,
+    "dev_lng": -123.3656,
+    "genre": "Jump 'n' Run",
+    "usk": 0,
+    "pegi": 3,
+    "f2p": false,
+    "vk_mio": 1.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.008,
+    "peak_year": 2018,
+    "metacritic": 94,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 48.4284,
+    "publisher_lng": -123.3656
+  },
+  "Terraria": {
+    "release": 2011,
+    "kategorie": "Indie",
+    "publisher": "Re-Logic",
+    "publisher_land": "Vereinigte Staaten",
+    "developer": "Re-Logic",
+    "dev_land": "Vereinigte Staaten",
+    "dev_city": "Indianapolis",
+    "dev_lat": 39.7684,
+    "dev_lng": -86.1581,
+    "genre": "Action-Adventure",
+    "usk": 12,
+    "pegi": 12,
+    "f2p": false,
+    "vk_mio": 44.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.49,
+    "peak_year": 2020,
+    "metacritic": 83,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 39.7684,
+    "publisher_lng": -86.1581
+  },
+  "Undertale": {
+    "release": 2015,
+    "kategorie": "Indie",
+    "publisher": "Toby Fox",
+    "publisher_land": "Vereinigte Staaten",
+    "developer": "Toby Fox",
+    "dev_land": "Vereinigte Staaten",
+    "dev_city": "Boston",
+    "dev_lat": 42.3601,
+    "dev_lng": -71.0589,
+    "genre": "Rollenspiel",
+    "usk": 6,
+    "pegi": 7,
+    "f2p": false,
+    "vk_mio": 3.5,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.023,
+    "peak_year": 2015,
+    "metacritic": 92,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 1,
+    "publisher_lat": 42.3601,
+    "publisher_lng": -71.0589
+  },
+  "Hades": {
+    "release": 2020,
+    "kategorie": "Indie",
+    "publisher": "Supergiant Games",
+    "publisher_land": "Vereinigte Staaten",
+    "developer": "Supergiant Games",
+    "dev_land": "Vereinigte Staaten",
+    "dev_city": "San Francisco",
+    "dev_lat": 37.7749,
+    "dev_lng": -122.4194,
+    "genre": "Action-Adventure",
+    "usk": 16,
+    "pegi": 16,
+    "f2p": false,
+    "vk_mio": 3.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.049,
+    "peak_year": 2020,
+    "metacritic": 93,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 1,
+    "publisher_lat": 37.7749,
+    "publisher_lng": -122.4194
+  },
+  "Among Trees": {
+    "release": 2021,
+    "kategorie": "Indie",
+    "publisher": "FJRD Interactive",
+    "publisher_land": "Frankreich",
+    "developer": "FJRD Interactive",
+    "dev_land": "Frankreich",
+    "dev_city": "Paris",
+    "dev_lat": 48.8566,
+    "dev_lng": 2.3522,
+    "genre": "Sandbox",
+    "usk": 0,
+    "pegi": 3,
+    "f2p": false,
+    "vk_mio": 0.3,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": null,
+    "peak_year": 2021,
+    "metacritic": null,
+    "plattform": "PC",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 48.8566,
+    "publisher_lng": 2.3522
+  },
+  "Cuphead": {
+    "release": 2017,
+    "kategorie": "Indie",
+    "publisher": "Studio MDHR",
+    "publisher_land": "Kanada",
+    "developer": "Studio MDHR",
+    "dev_land": "Kanada",
+    "dev_city": "Regina",
+    "dev_lat": 50.4452,
+    "dev_lng": -104.6189,
+    "genre": "Action-Adventure",
+    "usk": 0,
+    "pegi": 7,
+    "f2p": false,
+    "vk_mio": 6.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.035,
+    "peak_year": 2017,
+    "metacritic": 88,
+    "plattform": "Multiplattform",
+    "vorbild_land": "Vereinigte Staaten",
+    "adaption": "Serie",
+    "esports": false,
+    "sequel_count": 1,
+    "publisher_lat": 50.4452,
+    "publisher_lng": -104.6189
+  },
+  "Disco Elysium": {
+    "release": 2019,
+    "kategorie": "Indie",
+    "publisher": "ZA/UM",
+    "publisher_land": "Vereinigtes Königreich",
+    "developer": "ZA/UM",
+    "dev_land": "Estland",
+    "dev_city": "Tallinn",
+    "dev_lat": 59.437,
+    "dev_lng": 24.7536,
+    "genre": "Rollenspiel",
+    "usk": 16,
+    "pegi": 18,
+    "f2p": false,
+    "vk_mio": 1.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.013,
+    "peak_year": 2019,
+    "metacritic": 97,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 51.5074,
+    "publisher_lng": -0.1278
+  },
+  "Factorio": {
+    "release": 2020,
+    "kategorie": "Indie",
+    "publisher": "Wube Software",
+    "publisher_land": "Tschechien",
+    "developer": "Wube Software",
+    "dev_land": "Tschechien",
+    "dev_city": "Prag",
+    "dev_lat": 50.0755,
+    "dev_lng": 14.4378,
+    "genre": "Strategie",
+    "usk": 0,
+    "pegi": 3,
+    "f2p": false,
+    "vk_mio": 3.5,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.071,
+    "peak_year": 2020,
+    "metacritic": 90,
+    "plattform": "PC",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 50.0755,
+    "publisher_lng": 14.4378
+  },
+  "Portal 2": {
+    "release": 2011,
+    "kategorie": "Klassiker",
+    "publisher": "Valve",
+    "publisher_land": "Vereinigte Staaten",
+    "developer": "Valve",
+    "dev_land": "Vereinigte Staaten",
+    "dev_city": "Kirkland",
+    "dev_lat": 47.6769,
+    "dev_lng": -122.206,
+    "genre": "Puzzle",
+    "usk": 12,
+    "pegi": 12,
+    "f2p": false,
+    "vk_mio": 4.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.064,
+    "peak_year": 2011,
+    "metacritic": 95,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 47.6769,
+    "publisher_lng": -122.206
+  },
+  "Red Dead Redemption 2": {
+    "release": 2018,
+    "kategorie": "Klassiker",
+    "publisher": "Rockstar Games",
+    "publisher_land": "Vereinigte Staaten",
+    "developer": "Rockstar Studios",
+    "dev_land": "Vereinigte Staaten",
+    "dev_city": "New York",
+    "dev_lat": 40.7128,
+    "dev_lng": -74.006,
+    "genre": "Action-Adventure",
+    "usk": 18,
+    "pegi": 18,
+    "f2p": false,
+    "vk_mio": 61.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.089,
+    "peak_year": 2018,
+    "metacritic": 97,
+    "plattform": "Multiplattform",
+    "vorbild_land": "Vereinigte Staaten",
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 40.7128,
+    "publisher_lng": -74.006
+  },
+  "Dark Souls": {
+    "release": 2011,
+    "kategorie": "Klassiker",
+    "publisher": "Bandai Namco",
+    "publisher_land": "Japan",
+    "developer": "FromSoftware",
+    "dev_land": "Japan",
+    "dev_city": "Tokyo",
+    "dev_lat": 35.6895,
+    "dev_lng": 139.6917,
+    "genre": "Rollenspiel",
+    "usk": 16,
+    "pegi": 16,
+    "f2p": false,
+    "vk_mio": 10.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.022,
+    "peak_year": 2012,
+    "metacritic": 89,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 2,
+    "publisher_lat": 35.6895,
+    "publisher_lng": 139.6917
+  },
+  "Cyberpunk 2077": {
+    "release": 2020,
+    "kategorie": "Klassiker",
+    "publisher": "CD Projekt",
+    "publisher_land": "Polen",
+    "developer": "CD Projekt Red",
+    "dev_land": "Polen",
+    "dev_city": "Warschau",
+    "dev_lat": 52.2297,
+    "dev_lng": 21.0122,
+    "genre": "Rollenspiel",
+    "usk": 18,
+    "pegi": 18,
+    "f2p": false,
+    "vk_mio": 25.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 1.054,
+    "peak_year": 2023,
+    "metacritic": 86,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": "Serie",
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 52.2297,
+    "publisher_lng": 21.0122
+  },
+  "Elden Ring": {
+    "release": 2022,
+    "kategorie": "Klassiker",
+    "publisher": "Bandai Namco",
+    "publisher_land": "Japan",
+    "developer": "FromSoftware",
+    "dev_land": "Japan",
+    "dev_city": "Tokyo",
+    "dev_lat": 35.6895,
+    "dev_lng": 139.6917,
+    "genre": "Rollenspiel",
+    "usk": 16,
+    "pegi": 16,
+    "f2p": false,
+    "vk_mio": 25.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.952,
+    "peak_year": 2022,
+    "metacritic": 96,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 35.6895,
+    "publisher_lng": 139.6917
+  },
+  "Baldur's Gate 3": {
+    "release": 2023,
+    "kategorie": "Klassiker",
+    "publisher": "Larian Studios",
+    "publisher_land": "Belgien",
+    "developer": "Larian Studios",
+    "dev_land": "Belgien",
+    "dev_city": "Gent",
+    "dev_lat": 51.0543,
+    "dev_lng": 3.7174,
+    "genre": "Rollenspiel",
+    "usk": 16,
+    "pegi": 18,
+    "f2p": false,
+    "vk_mio": 10.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.875,
+    "peak_year": 2023,
+    "metacritic": 96,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 51.0543,
+    "publisher_lng": 3.7174
+  },
+  "God of War (2018)": {
+    "release": 2018,
+    "kategorie": "Klassiker",
+    "publisher": "Sony Interactive Entertainment",
+    "publisher_land": "Japan",
+    "developer": "Santa Monica Studio",
+    "dev_land": "Vereinigte Staaten",
+    "dev_city": "Los Angeles",
+    "dev_lat": 34.0195,
+    "dev_lng": -118.4912,
+    "genre": "Action-Adventure",
+    "usk": 18,
+    "pegi": 18,
+    "f2p": false,
+    "vk_mio": 23.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": null,
+    "peak_year": 2018,
+    "metacritic": 94,
+    "plattform": "Konsole",
+    "vorbild_land": "Griechenland",
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 1,
+    "publisher_lat": 35.5652,
+    "publisher_lng": 139.7182
+  },
+  "Ori and the Blind Forest": {
+    "release": 2015,
+    "kategorie": "Indie",
+    "publisher": "Microsoft",
+    "publisher_land": "Vereinigte Staaten",
+    "developer": "Moon Studios",
+    "dev_land": "Österreich",
+    "dev_city": "Wien",
+    "dev_lat": 48.2082,
+    "dev_lng": 16.3738,
+    "genre": "Jump 'n' Run",
+    "usk": 6,
+    "pegi": 7,
+    "f2p": false,
+    "vk_mio": 4.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": 0.025,
+    "peak_year": 2015,
+    "metacritic": 88,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 1,
+    "publisher_lat": 47.6062,
+    "publisher_lng": -122.3321
+  },
+  "Minecraft Dungeons": {
+    "release": 2020,
+    "kategorie": "Modern Youth",
+    "publisher": "Mojang Studios",
+    "publisher_land": "Schweden",
+    "developer": "Mojang Studios",
+    "dev_land": "Schweden",
+    "dev_city": "Stockholm",
+    "dev_lat": 59.3293,
+    "dev_lng": 18.0686,
+    "genre": "Action-Adventure",
+    "usk": 6,
+    "pegi": 7,
+    "f2p": false,
+    "vk_mio": 15.0,
+    "downloads_mio": 0.0,
+    "peak_concurrent_mio": null,
+    "peak_year": 2020,
+    "metacritic": 71,
+    "plattform": "Multiplattform",
+    "vorbild_land": null,
+    "adaption": null,
+    "esports": false,
+    "sequel_count": 0,
+    "publisher_lat": 47.6062,
+    "publisher_lng": -122.3321
+  },
+  "Dota 2": {
+    "release": 2013,
+    "kategorie": "Klassiker",
+    "publisher": "Valve",
+    "publisher_land": "Vereinigte Staaten",
+    "developer": "Valve",
+    "dev_land": "Vereinigte Staaten",
+    "dev_city": "Kirkland",
+    "dev_lat": 47.6769,
+    "dev_lng": -122.206,
+    "genre": "MOBA",
+    "usk": 12,
+    "pegi": 12,
+    "f2p": true,
+    "vk_mio": 0.0,
+    "downloads_mio": 180.0,
+    "peak_concurrent_mio": 1.3,
+    "peak_year": 2016,
+    "metacritic": 90,
+    "plattform": "PC",
+    "vorbild_land": null,
+    "adaption": "Serie",
+    "esports": true,
+    "sequel_count": 0,
+    "publisher_lat": 47.6769,
+    "publisher_lng": -122.206
   }
 }

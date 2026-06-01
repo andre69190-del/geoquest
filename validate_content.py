@@ -498,7 +498,7 @@ def check_games_extended(filename, data):
                  "Social Deduction","Endless Runner","MMO"}
     PLATTFORM = {"PC","Konsole","Mobil","Multiplattform"}
     ADAPTION  = {"Film","Serie","Anime",None}
-    KATEGORIE = {"Modern Youth","Global Mobile","Klassiker"}
+    KATEGORIE = {"Modern Youth","Global Mobile","Klassiker","Indie"}
     REQUIRED  = ["release","kategorie","publisher","publisher_land","developer",
                  "dev_land","dev_city","dev_lat","dev_lng","genre","usk","pegi",
                  "f2p","vk_mio","downloads_mio","peak_concurrent_mio","metacritic",
@@ -533,7 +533,14 @@ def check_games_extended(filename, data):
             v = entry.get(field)
             if v is not None and not isinstance(v, (int,float)):
                 warn(filename, f"typ:{field}", name, f"{field} muss float sein")
-        lat, lng = entry.get("dev_lat"), entry.get("dev_lng")
+        # Optionale neue Felder: peak_year, publisher_lat/lng
+        if "peak_year" in entry and not isinstance(entry.get("peak_year"), int):
+            warn(filename, "typ:peak_year", name, f"peak_year muss int sein")
+        for _fl in ("publisher_lat","publisher_lng"):
+            _v = entry.get(_fl)
+            if _v is not None and not isinstance(_v, (int,float)):
+                warn(filename, f"typ:{_fl}", name, f"{_fl} muss float sein")
+                lat, lng = entry.get("dev_lat"), entry.get("dev_lng")
         if lat is None or lng is None:
             warn(filename, "coords", name, "dev_lat/dev_lng fehlt — Pin-Modus crasht")
         else:

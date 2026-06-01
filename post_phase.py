@@ -395,10 +395,19 @@ def main():
     print(f"   Patch   : {patch_file}")
     print()
 
-    # JSON-Counts einlesen
-    print(f"📊 Lese JSON-Daten aus data/...")
-    counts = recalc_item_counts()
-    print(f"   {len(counts)} JSON-Schlüssel eingelesen\n")
+    # MODES-Count korrekt aus gen.py lesen (nicht JSON-Keys)
+    print(f"📊 Lese MODES-Zählung aus gen.py...")
+    counts = recalc_item_counts()   # weiter für Spielübersicht-Badges
+    gen_path = os.path.join(BASE, "gen.py")
+    modi_count = len(counts)  # Fallback
+    if os.path.exists(gen_path):
+        import re as _re
+        with open(gen_path, encoding="utf-8") as _gf:
+            _gjs = _gf.read()
+        _m = _re.search(r'const MODES=\[(.*?)\];', _gjs, _re.DOTALL)
+        if _m:
+            modi_count = len(_re.findall(r'id:"([^"]+)"', _m.group(1)))
+    print(f"   {modi_count} Spielmodi in MODES-Array\n")
 
     # GeoQuest.html Größe
     size_str = get_geoquest_size_str()
@@ -407,21 +416,68 @@ def main():
     print(f"📝 Aktualisiere Dateien (5 Schritte):")
     vscore = update_bat(phase, summary) or '136/136'
     update_architecture(phase, summary, patch_file, size_str, counts=counts)
-    update_readme(phase, new_modi=len(counts), _vscore=vscore)
+    update_readme(phase, new_modi=modi_count, _vscore=vscore)
     update_konzept(phase, size_str)
     update_spieluebersicht(phase, counts)
+
+    # Schritt 6: GeoQuest_Spielübersicht.html neu generieren
+    print(f"\n📋 Generiere GeoQuest_Spielübersicht.html...")
+    spieluebersicht_script = os.path.join(BASE, "generate_spieluebersicht.py")
+    if os.path.exists(spieluebersicht_script):
+        import subprocess as _sp
+        r = _sp.run([sys.executable, spieluebersicht_script], capture_output=True, text=True, cwd=BASE)
+        if r.returncode == 0:
+            out_path = os.path.join(BASE, "GeoQuest_Spiel\u00fcbersicht.html")
+            import glob as _gl
+            su_files = _gl.glob(os.path.join(BASE, "GeoQuest_Spiel*.html"))
+            su_size  = os.path.getsize(su_files[0]) if su_files else 0
+            ok("GeoQuest_Spieluebersicht.html neu generiert (" + str(su_size) + " Bytes)")
+        else:
+            warn("generate_spieluebersicht.py Fehler: " + r.stderr.strip()[:120])
+    else:
+        warn("generate_spieluebersicht.py nicht gefunden")
+
+    # Schritt 7: Backup-Cleanup (gen.py.bak_* aelter als 7 Tage)
+    # Regel: Nur loeschen wenn mind. 2 neuere Backups vorhanden (Sicherheitsnetz)
+    print("\n  Backup-Cleanup (gen.py.bak_* > 7 Tage, nur wenn >=2 neuere vorhanden)...")
+    import glob as _gl2, time as _time
+    bak_files = sorted(_gl2.glob(os.path.join(BASE, "gen.py.bak_*")))
+    cutoff = _time.time() - 7 * 86400
+    old_baks  = [b for b in bak_files if os.path.getmtime(b) < cutoff]
+    new_baks  = [b for b in bak_files if os.path.getmtime(b) >= cutoff]
+    deleted, kept = [], list(bak_files)
+    # Nur loeschen wenn mindestens 2 neuere Backups als Sicherheitsnetz vorhanden
+    if len(new_baks) >= 2:
+        for bak in old_baks:
+            try:
+                os.remove(bak)
+                deleted.append(os.path.basename(bak))
+                kept.remove(bak)
+            except Exception as e:
+                warn("Konnte " + os.path.basename(bak) + " nicht loeschen: " + str(e))
+    elif old_baks:
+        warn(str(len(old_baks)) + " altes Backup vorhanden, aber nur " +
+             str(len(new_baks)) + " neuere — behalte alle (mind. 2 neuere noetig)")
+    if deleted:
+        ok(str(len(deleted)) + " altes Backup geloescht (>7 Tage, " +
+           str(len(new_baks)) + " neuere vorhanden): " + deleted[0])
+    if kept:
+        ok(str(len(kept)) + " Backup(s) behalten, neuestes: " + os.path.basename(kept[-1]))
+    if not bak_files:
+        ok("Keine Backup-Dateien vorhanden")
 
     # Abschluss-Stats
     geoquest_path = os.path.join(BASE, "GeoQuest.html")
     if os.path.exists(geoquest_path):
         size_bytes = os.path.getsize(geoquest_path)
-        print(f"\n{GREEN}{BOLD}✅ Phase {phase} — alle Metadaten aktualisiert!{RESET}")
-        print(f"   GeoQuest.html : {size_str} MB ({size_bytes:,} Bytes)")
+        print("\n" + GREEN + BOLD + "Phase " + str(phase) + " -- alle Metadaten aktualisiert!" + RESET)
+        print("   GeoQuest.html : " + size_str + " MB (" + str(size_bytes) + " Bytes)")
+        print("   Spielmodi     : " + str(modi_count))
     else:
-        print(f"\n{GREEN}{BOLD}✅ Phase {phase} — alle Metadaten aktualisiert!{RESET}")
-        print(f"   GeoQuest.html : nicht gefunden (gen.py noch nicht ausgeführt?)")
+        print("\n" + GREEN + BOLD + "Phase " + str(phase) + " -- alle Metadaten aktualisiert!" + RESET)
+        print("   GeoQuest.html : nicht gefunden (gen.py noch nicht ausgefuehrt?)")
 
-    print(f"\n{YELLOW}💡 Nächster Schritt:{RESET} unlock_and_push.bat ausführen\n")
+    print("\n" + YELLOW + "Naechster Schritt: unlock_and_push.bat ausfuehren" + RESET + "\n")
 
 
 if __name__ == "__main__":

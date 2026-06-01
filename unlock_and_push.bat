@@ -14,8 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 402. Phase 401/402: Audit-Fixes (XSS, Zero-Trap, Sort, ES5) + 4 neue Gaming-Modi + games_extended Validator. verify: 143/143."
+git commit -m "Content: Phase 405. Batch 3: 20 Indie/Klassiker-Spiele + peak_year + publisher_lat/lng + 3 neue Modi (peak_year_mc, hl_peak_year, hl_publisher_lat) + validate_content Indie-Enum. verify: 143/143."
 git push origin main
 echo.
-echo Done! Vercel will deploy in ~60 seconds.
-pause
+echo Done! Vercel will deploy in ~60 seconds
