@@ -54,6 +54,7 @@ with open(os.path.join(os.path.dirname(__file__), 'data/sport_match.json'), 'r',
 with open(os.path.join(os.path.dirname(__file__), 'data/sport_ws.json'),    'r', encoding='utf-8') as _f: SPORT_WS_J    = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/timeline.json'),   'r', encoding='utf-8') as _f: TIMELINE_J    = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/autos.json'),       'r', encoding='utf-8') as _f: AUTOS_J       = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/autos_extended.json'), 'r', encoding='utf-8') as _f: AUTOS_EXT_J  = _f.read()
 
 
 # â”€â”€ STATIC DATA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -2949,6 +2950,31 @@ const MODES=[
     {id:"hl_auto_accel", icon:"\u23F1\uFE0F",title:"Auto-Quartett: 0-100 km/h",  group:"autos",prompt:"Welches Fahrzeug braucht L\u00e4nger auf 100?",desc:"H\u00f6herer Wert = langsamer = h\u00f6her in diesem Modus",prompt_en:"Which car takes LONGER to reach 100 km/h?"},
     {id:"hl_auto_ccm",   icon:"\u2699\uFE0F",title:"Auto-Quartett: Hubraum",      group:"autos",prompt:"Welcher Verbrenner hat mehr Hubraum?",desc:"Nur Verbrenner — 375 ccm bis 7993 ccm",prompt_en:"Which combustion car has the larger engine displacement?"},
     {id:"hl_auto_bj",    icon:"\u{1F4C5}",title:"Auto-Quartett: Baujahr",       group:"autos",prompt:"Welches Fahrzeug wurde SPÄTER gebaut?",desc:"Neueres Modell gewinnt — 1949 bis heute",prompt_en:"Which car was built LATER?"},
+    {id:"hl_auto_gewicht",    icon:"\u2696\uFE0F",title:"Auto-Quartett: Gewicht",      group:"autos",prompt:"Welches Fahrzeug ist schwerer?",         desc:"Leergewicht in kg \u2014 495 bis 2.300 kg",           prompt_en:"Which car is heavier?"},
+    {id:"hl_auto_drehmoment", icon:"\u{1F300}",  title:"Auto-Quartett: Drehmoment",  group:"autos",prompt:"Welches hat mehr Drehmoment?",            desc:"Max. Drehmoment in Nm",                                prompt_en:"Which car has more torque?"},
+    {id:"hl_auto_cw",         icon:"\u{1F4A8}",  title:"Auto-Quartett: Aerodynamik", group:"autos",prompt:"Welches ist aerodynamischer (cw)?",        desc:"NIEDRIGERER cw-Wert gewinnt \u2014 weniger Luftwiderstand", prompt_en:"Which car is more aerodynamic (lower cw)?"},
+    {id:"hl_auto_kofferraum", icon:"\u{1F9F3}",  title:"Auto-Quartett: Kofferraum",  group:"autos",prompt:"Welches hat mehr Kofferraum?",             desc:"VDA-Volumen in Litern hinter den R\u00fccksitzen",     prompt_en:"Which car has more trunk space?"},
+    {id:"hl_auto_laenge",     icon:"\u{1F4CF}",  title:"Auto-Quartett: L\u00e4nge", group:"autos",prompt:"Welches Fahrzeug ist l\u00e4nger?",       desc:"Fahrzeug-L\u00e4nge in mm",                           prompt_en:"Which car is longer?"},
+    {id:"hl_auto_neupreis",   icon:"\u{1F4B0}",  title:"Auto-Quartett: Neupreis",    group:"autos",prompt:"Welches war bei Einf\u00fchrung teurer?",  desc:"Historischer Basis-UVP in EUR (nicht inflationsbereinigt)", prompt_en:"Which car had a higher launch price?"},
+    {id:"hl_auto_tank",        icon:"\u26FD",     title:"Auto-Quartett: Tank",          group:"autos",prompt:"Welches hat mehr Tankvolumen?",           desc:"Nur Verbrenner \u2014 Tankvolumen in Litern (filter: EVs)",      prompt_en:"Which car has a larger fuel tank?"},
+    {id:"hl_auto_akku",        icon:"\u{1F50B}",  title:"Auto-Quartett: Batterie",      group:"autos",prompt:"Welche EV-Batterie ist gr\u00f6\u00dfer?", desc:"Nur Elektroautos \u2014 Netto-Kapazit\u00e4t in kWh",          prompt_en:"Which EV has a larger battery?"},
+    {id:"hl_auto_reichweite",  icon:"\u{1F30D}",  title:"Auto-Quartett: EV-Reichweite", group:"autos",prompt:"Welches EV hat mehr Reichweite?",           desc:"WLTP/NEFZ-Reichweite in km \u2014 nur Elektroautos",           prompt_en:"Which EV has more range?"},
+    {id:"hl_auto_verbrauch_l", icon:"\u{1F6E2}\uFE0F",title:"Auto-Quartett: Verbrauch L",  group:"autos",prompt:"Welcher Verbrenner verbraucht WENIGER?",  desc:"L/100 km \u2014 niedrigerer Wert gewinnt",                     prompt_en:"Which combustion car consumes LESS fuel?"},
+    {id:"hl_auto_verbrauch_e", icon:"\u26A1",     title:"Auto-Quartett: Verbrauch kWh", group:"autos",prompt:"Welches EV verbraucht WENIGER Strom?",       desc:"kWh/100 km \u2014 niedrigerer Wert gewinnt",                   prompt_en:"Which EV consumes LESS energy?"},
+    {id:"hl_auto_zylinder",    icon:"\u{1F527}",  title:"Auto-Quartett: Zylinder",      group:"autos",prompt:"Welches hat mehr Zylinder?",                desc:"Nur Verbrenner (EVs/Wankel ausgefiltert)",                      prompt_en:"Which car has more cylinders?"},
+    {id:"auto_match_antrieb",     icon:"\u{1F6E3}\uFE0F",title:"Auto-Quiz: Antriebskonzept", group:"autos",prompt:"Welches Antriebskonzept hat dieses Fahrzeug?",   desc:"Front / Heck / Allrad",                           prompt_en:"What drivetrain does this car have?"},
+    {id:"auto_match_karosserie",  icon:"\u{1F699}",title:"Auto-Quiz: Karosserieform",    group:"autos",prompt:"Welche Karosserieform hat dieses Fahrzeug?",    desc:"Hatchback / SUV / Kombi / Coupé / …",             prompt_en:"What body style does this car have?"},
+    {id:"auto_match_antriebsart", icon:"\u{1F4A1}",title:"Auto-Quiz: Antriebsart",      group:"autos",prompt:"Womit wird dieses Fahrzeug angetrieben?",       desc:"Benzin / Diesel / EV / Hybrid / PHEV",            prompt_en:"How is this car powered?"},
+    {id:"auto_match_motorbauart", icon:"\u2699\uFE0F",title:"Auto-Quiz: Motorbauart",   group:"autos",prompt:"Welche Motorbauart hat dieses Fahrzeug?",       desc:"Reihe / V / Boxer / Wankel / E-Motor",            prompt_en:"What engine layout does this car use?"},
+    {id:"auto_match_konzern",     icon:"\u{1F3E2}",title:"Auto-Quiz: Konzern",           group:"autos",prompt:"Zu welchem Konzern geh\u00f6rte dieses Fahrzeug bei Produktion?", desc:"VW / BMW / Mercedes / Stellantis / Ford / …",   prompt_en:"Which group owned this car brand?"},
+    {id:"auto_match_getriebe",    icon:"\u{1F504}",title:"Auto-Quiz: Getriebe",          group:"autos",prompt:"Welches Getriebe hat dieses Fahrzeug?",         desc:"Handschalter / Automatik / E-Getriebe",           prompt_en:"What transmission does this car have?"},
+    {id:"auto_match_turbo",       icon:"\u{1F32C}\uFE0F",title:"Auto-Quiz: Aufladung",  group:"autos",prompt:"Hat dieses Fahrzeug einen Turbo oder Kompressor ab Werk?", desc:"true = Turbo/Kompressor vorhanden",              prompt_en:"Does this car have a turbo or supercharger?"},
+    {id:"auto_match_sitze",       icon:"\u{1F4BA}",title:"Auto-Quiz: Sitzpl\u00e4tze", group:"autos",prompt:"Wie viele Sitzpl\u00e4tze hat dieses Fahrzeug?",  desc:"Von 2 bis 7 Sitzpl\u00e4tze",                    prompt_en:"How many seats does this car have?"},
+    {id:"auto_baujahr_mc",  icon:"\u{1F4C5}\u2753",title:"Auto-Quiz: Baujahr-Raten",    group:"autos",prompt:"In welchem Jahr kam dieses Modell auf den Markt?",desc:"4 Jahreszahlen zur Auswahl \u2014 welche ist richtig?",       prompt_en:"In which year did this model launch?"},
+    {id:"auto_match_land",  icon:"\u{1F30D}\u{1F697}",title:"Auto-Quiz: Herkunftsland", group:"autos",prompt:"Aus welchem Land kommt dieses Fahrzeug?",           desc:"Extrahiert aus Fahrzeugnamen \u2014 431 Modelle",            prompt_en:"Which country is this car from?"},
+    {id:"hl_auto_ps_kg",    icon:"\u{1F3CB}\uFE0F",title:"Auto-Quartett: Leistungsgewicht",group:"autos",prompt:"Welches hat das bessere Leistungsgewicht (PS/kg)?",desc:"PS dividiert durch Leergewicht \u2014 berechnet",             prompt_en:"Which car has a better power-to-weight ratio?"},
+    {id:"hl_auto_co2",      icon:"\u{1F333}\u{1F4A8}",title:"Auto-Quartett: CO\u2082-Aussto\u00df",group:"autos",prompt:"Welches Fahrzeug st\u00f6\u00dft mehr CO\u2082 aus?",desc:"Approximiert aus Kraftstoffverbrauch (nur Verbrenner)",  prompt_en:"Which combustion car emits more CO\u2082?"},
+    {id:"auto_match_dekade",icon:"\u{1F5C3}\uFE0F",title:"Auto-Quiz: Jahrzehnt",        group:"autos",prompt:"Aus welchem Jahrzehnt stammt dieses Fahrzeug?",    desc:"50er / 60er / 70er / … bis 2020er",                          prompt_en:"From which decade does this car originate?"},
 
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
     {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
@@ -3618,7 +3644,7 @@ const MODE_CATS={
     "ws_sportwissen_fussball","ws_sportwissen_olympiade","ws_sportwissen_weltmeister",
     "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist","timeline_sport_stadien"
   ],cost:0},
-  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj"],cost:0},
+  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj","hl_auto_gewicht","hl_auto_drehmoment","hl_auto_cw","hl_auto_kofferraum","hl_auto_laenge","hl_auto_neupreis","hl_auto_tank","hl_auto_akku","hl_auto_reichweite","hl_auto_verbrauch_l","hl_auto_verbrauch_e","hl_auto_zylinder","auto_match_antrieb","auto_match_karosserie","auto_match_antriebsart","auto_match_motorbauart","auto_match_konzern","auto_match_getriebe","auto_match_turbo","auto_match_sitze","auto_baujahr_mc","auto_match_land","hl_auto_ps_kg","hl_auto_co2","auto_match_dekade"],cost:0},
 };
 
 /* === Phase 227 Part 3: Tier-Wort-Schmiede (10 Tiere, words verified letter-by-letter) === */
@@ -8577,6 +8603,7 @@ const GEO_WS_DATA=PLACEHOLDER_GEO_WS;
 const SPORT_PIN_DATA=PLACEHOLDER_SPORT_PIN;
 const SPORT_HL_DATA=PLACEHOLDER_SPORT_HL;
 const AUTOS_DATA=PLACEHOLDER_AUTOS;
+const AUTOS_EXT_DATA=PLACEHOLDER_AUTOS_EXT;
 const SPORT_MATCH_DATA=PLACEHOLDER_SPORT_MATCH;
 const SPORT_WS_DATA=PLACEHOLDER_SPORT_WS;
 const TIMELINE_DATA=PLACEHOLDER_TIMELINE;
@@ -8749,6 +8776,212 @@ var genSportWissenMatchQ=_mkMatchQ(SPORT_MATCH_DATA);
 var initSportWissenWS=_mkWS(SPORT_WS_DATA,"SportW");
 /* === Phase 329: Auto-Quartett-Generator === */
 var genAutosHL=_mkHL(AUTOS_DATA);
+/* Phase 352c: Kreative Auto-Modi */
+
+/* auto_baujahr_mc — Baujahr Multiple Choice: 4 Jahreszahlen zur Auswahl */
+function genAutoBaujahrMC(){
+  var _bjItems=AUTOS_DATA["auto_bj"]&&AUTOS_DATA["auto_bj"].items;
+  if(!_bjItems||_bjItems.length<8)return null;
+  var idx=~~(rng()*_bjItems.length);
+  var car=_bjItems[idx];
+  var correct=car.val;
+  /* Distraktoren: andere Jahre mit Abstand 3–25 Jahre */
+  var allYears=_bjItems.map(function(i){return i.val;});
+  var pool=allYears.filter(function(y){
+    var d=Math.abs(y-correct);
+    return d>=3&&d<=25;
+  });
+  if(pool.length<3){
+    pool=allYears.filter(function(y){return y!==correct;}).sort(function(){return rng()-0.5;});
+  }
+  var p=pool.slice();
+  for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
+  var dis=p.slice(0,3);
+  var opts=[correct].concat(dis);
+  for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
+  var subj=car.name.replace(/ \([^)]+\)$/,"");
+  return{type:"uk_match",prompt:"In welchem Jahr kam dieses Modell auf den Markt?",
+    subj:subj,ans:String(correct),opts:opts.map(String),
+    lid:"abj_mc_"+idx,cc:"de"};
+}
+
+/* auto_match_land — Herkunftsland aus dem (Land, Jahr)-Suffix extrahieren */
+function genAutoMatchLand(){
+  var _bjItems=AUTOS_DATA["auto_bj"]&&AUTOS_DATA["auto_bj"].items;
+  if(!_bjItems||_bjItems.length<8)return null;
+  /* Extrahiere Land aus Name "(Land, Jahr)" */
+  function getLand(name){
+    var m=name.match(/\(([^,)]+),/);
+    return m?m[1].trim():null;
+  }
+  var valid=_bjItems.filter(function(i){return getLand(i.name)!==null;});
+  if(valid.length<8)return null;
+  var idx=~~(rng()*valid.length);
+  var car=valid[idx];
+  var correct=getLand(car.name);
+  var pool=[...new Set(valid.map(function(i){return getLand(i.name);}))].filter(function(l){return l!==correct;});
+  if(pool.length<3)return null;
+  var p=pool.slice();
+  for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
+  var dis=p.slice(0,3);
+  var opts=[correct].concat(dis);
+  for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
+  var subj=car.name.replace(/ \([^)]+\)$/,"");
+  return{type:"uk_match",prompt:"Aus welchem Land kommt dieses Fahrzeug?",
+    subj:subj,ans:correct,opts:opts,lid:"aland_"+idx,cc:"de"};
+}
+
+/* hl_auto_ps_kg — Leistungsgewicht PS/kg (berechnet aus extended data) */
+function genAutoPsKg(){
+  var _AE=AUTOS_EXT_DATA;
+  var _ps=AUTOS_DATA["auto_ps"]&&AUTOS_DATA["auto_ps"].items;
+  if(!_AE||!_ps)return null;
+  var psMap={};
+  _ps.forEach(function(i){psMap[i.name]=i.val;});
+  var items=[];
+  Object.keys(_AE).forEach(function(n){
+    var g=_AE[n].gewicht;
+    var p=psMap[n];
+    if(!g||!p||g<=0||p<=0)return;
+    items.push({name:n,val:Math.round((p/g)*100)/100});
+  });
+  if(items.length<4)return null;
+  items.sort(function(a,b){return a.val-b.val;});
+  var len=items.length;
+  var tries=0;
+  while(tries++<40){
+    var ai=~~(rng()*len);
+    var W=Math.max(1,Math.floor(len*(S.diff==='hardcore'?0.03:0.10)));
+    var lo=Math.max(0,ai-W),hi=Math.min(len-1,ai+W);
+    var pool=[];
+    for(var i=lo;i<=hi;i++){if(i!==ai)pool.push(i);}
+    if(!pool.length)continue;
+    var bi=pool[~~(rng()*pool.length)];
+    var a=items[ai],b=items[bi];
+    if(a.val===b.val)continue;
+    var winner=a.val>b.val?a:b;
+    var meta=a.name.split(" (")[0]+": "+a.val+" PS/kg · "+b.name.split(" (")[0]+": "+b.val+" PS/kg";
+    return{type:"beta_hl",prompt:"Welches Fahrzeug hat das bessere Leistungsgewicht (PS/kg)?",
+      subj:"",opts:[a.name,b.name],ans:winner.name,meta:meta,
+      lid:"apskq_"+ai+"_"+bi,cc:"de"};
+  }
+  return null;
+}
+
+/* hl_auto_co2 — CO₂-Ausstoß g/km (approximiert: verbrauch_l × 2350 / 10) */
+function genAutoCO2(){
+  var _AE=AUTOS_EXT_DATA;
+  var items=[];
+  Object.keys(_AE).forEach(function(n){
+    var vl=_AE[n].verbrauch_l;
+    if(!vl||vl<=0)return;
+    items.push({name:n,val:Math.round(vl*23.5)});
+  });
+  if(items.length<4)return null;
+  items.sort(function(a,b){return a.val-b.val;});
+  var len=items.length;
+  var tries=0;
+  while(tries++<40){
+    var ai=~~(rng()*len);
+    var W=Math.max(1,Math.floor(len*(S.diff==='hardcore'?0.03:0.10)));
+    var lo=Math.max(0,ai-W),hi=Math.min(len-1,ai+W);
+    var pool=[];
+    for(var i=lo;i<=hi;i++){if(i!==ai)pool.push(i);}
+    if(!pool.length)continue;
+    var bi=pool[~~(rng()*pool.length)];
+    var a=items[ai],b=items[bi];
+    if(a.val===b.val)continue;
+    var span=items[len-1].val-items[0].val;
+    if(span>0&&Math.abs(a.val-b.val)<span*0.02)continue;
+    var winner=a.val>b.val?a:b;
+    var meta=a.name.split(" (")[0]+": ~"+a.val+" g/km · "+b.name.split(" (")[0]+": ~"+b.val+" g/km";
+    return{type:"beta_hl",prompt:"Welches Fahrzeug st\u00f6\u00dft mehr CO\u2082 aus?",
+      subj:"",opts:[a.name,b.name],ans:winner.name,meta:meta,
+      lid:"aco2_"+ai+"_"+bi,cc:"de"};
+  }
+  return null;
+}
+
+/* auto_match_dekade — Aus welchem Jahrzehnt stammt dieses Auto? */
+function genAutoMatchDekade(){
+  var _bjItems=AUTOS_DATA["auto_bj"]&&AUTOS_DATA["auto_bj"].items;
+  if(!_bjItems||_bjItems.length<8)return null;
+  function toDekade(y){return (Math.floor(y/10)*10)+"er";}
+  var idx=~~(rng()*_bjItems.length);
+  var car=_bjItems[idx];
+  var correct=toDekade(car.val);
+  var allDekaden=[...new Set(_bjItems.map(function(i){return toDekade(i.val);}))].filter(function(d){return d!==correct;});
+  if(allDekaden.length<3)return null;
+  var p=allDekaden.slice();
+  for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
+  var opts=[correct].concat(p.slice(0,3));
+  for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
+  var subj=car.name.replace(/ \([^)]+\)$/,"");
+  return{type:"uk_match",prompt:"Aus welchem Jahrzehnt stammt dieses Fahrzeug?",
+    subj:subj,ans:correct,opts:opts,lid:"adek_"+idx,cc:"de"};
+}
+
+/* Phase 352b: genAutosMatchExt — Match-Quiz aus AUTOS_EXT_DATA */
+function genAutosMatchExt(field,prompt,fixedPool){
+  var _AE=AUTOS_EXT_DATA;
+  var valid=Object.keys(_AE).filter(function(n){
+    var v=_AE[n][field];
+    return v!==undefined&&v!==null&&v!==""&&v!==0&&v!==0.0;
+  });
+  if(valid.length<4)return null;
+  var idx=~~(rng()*valid.length);
+  var car=valid[idx];
+  var correct=String(_AE[car][field]);
+  var pool=fixedPool
+    ?fixedPool.filter(function(v){return v!==correct;})
+    :[...new Set(valid.map(function(n){return String(_AE[n][field]);}))].filter(function(v){return v!==correct;});
+  if(pool.length<3)return null;
+  var p=pool.slice();
+  for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
+  var dis=p.slice(0,3);
+  var opts=[correct].concat(dis);
+  for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
+  var subj=car.replace(/ \([^)]+\)$/,""); /* Ohne (Land, Jahr) */
+  return{type:"uk_match",prompt:prompt||("Welche Eigenschaft hat "+subj+"?"),
+    subj:subj,ans:correct,opts:opts,lid:"amatch_"+field+"_"+idx,cc:"de"};
+}
+/* Phase 352a: genAutosHLExt — H/L aus AUTOS_EXT_DATA mit La-Paz-Fenster */
+function genAutosHLExt(field,opts){
+  var o=opts||{};
+  var items=[];
+  var _AE=AUTOS_EXT_DATA;
+  var _ks=Object.keys(_AE);
+  for(var _i=0;_i<_ks.length;_i++){
+    var _n=_ks[_i];
+    var _v=+(_AE[_n][field]);
+    if(!_v||isNaN(_v)||_v<=0)continue;
+    items.push({name:_n,val:_v});
+  }
+  if(items.length<4)return null;
+  items.sort(function(a,b){return a.val-b.val;});
+  var len=items.length;
+  var tries=0;
+  while(tries++<40){
+    var ai=~~(rng()*len);
+    var W=Math.max(1,Math.floor(len*(S.diff==='hardcore'?0.03:0.10)));
+    var lo=Math.max(0,ai-W),hi=Math.min(len-1,ai+W);
+    var pool=[];
+    for(var i=lo;i<=hi;i++){if(i!==ai)pool.push(i);}
+    if(!pool.length)continue;
+    var bi=pool[~~(rng()*pool.length)];
+    var a=items[ai],b=items[bi];
+    if(a.val===b.val)continue;
+    var span=items[len-1].val-items[0].val;
+    if(span>0&&Math.abs(a.val-b.val)<span*0.02)continue;
+    var winner=o.lowerWins?(a.val<b.val?a:b):(a.val>b.val?a:b);
+    var unit=o.unit||"";
+    var meta=a.name.split(" (")[0]+": "+a.val+(unit?" "+unit:"")+" · "+b.name.split(" (")[0]+": "+b.val+(unit?" "+unit:"");
+    return{type:"beta_hl",prompt:o.prompt||"Welches ist höher?",subj:"",
+      opts:[a.name,b.name],ans:winner.name,meta:meta,
+      lid:"ahlx_"+field+"_"+ai+"_"+bi,cc:"de"};
+  }
+  return null;
+}
 
 /* === Phase 228: Pflanzen-Generatoren === */
 function genPflanzenPinQ(cat){
@@ -9689,6 +9922,31 @@ const GEN={
   hl_auto_accel:()=>genAutosHL("auto_accel"),
   hl_auto_ccm:()=>genAutosHL("auto_ccm"),
   hl_auto_bj:()=>genAutosHL("auto_bj"),
+  hl_auto_gewicht:()=>genAutosHLExt("gewicht",{unit:"kg",prompt:"Welches Fahrzeug ist schwerer?"}),
+  hl_auto_drehmoment:()=>genAutosHLExt("drehmoment",{unit:"Nm",prompt:"Welches hat mehr Drehmoment?"}),
+  hl_auto_cw:()=>genAutosHLExt("cw",{lowerWins:true,prompt:"Welches ist aerodynamischer (niedrigerer cw)?"}),
+  hl_auto_kofferraum:()=>genAutosHLExt("kofferraum",{unit:"L",prompt:"Welches hat mehr Kofferraum?"}),
+  hl_auto_laenge:()=>genAutosHLExt("laenge",{unit:"mm",prompt:"Welches Fahrzeug ist l\u00e4nger?"}),
+  hl_auto_neupreis:()=>genAutosHLExt("neupreis_eur",{unit:"EUR",prompt:"Welches war bei Einf\u00fchrung teurer?"}),
+  hl_auto_tank:()=>genAutosHLExt("tank",{unit:"L",prompt:"Welches hat mehr Tankvolumen?"}),
+  hl_auto_akku:()=>genAutosHLExt("akku",{unit:"kWh",prompt:"Welche EV-Batterie ist gr\u00f6\u00dfer?"}),
+  hl_auto_reichweite:()=>genAutosHLExt("reichweite_km",{unit:"km",prompt:"Welches EV hat mehr Reichweite?"}),
+  hl_auto_verbrauch_l:()=>genAutosHLExt("verbrauch_l",{lowerWins:true,unit:"L/100km",prompt:"Welcher Verbrenner verbraucht WENIGER?"}),
+  hl_auto_verbrauch_e:()=>genAutosHLExt("verbrauch_kwh",{lowerWins:true,unit:"kWh/100km",prompt:"Welches EV verbraucht WENIGER Strom?"}),
+  hl_auto_zylinder:()=>genAutosHLExt("zylinder",{unit:"Zyl.",prompt:"Welches hat mehr Zylinder?"}),
+  auto_match_antrieb:()=>genAutosMatchExt("antrieb","Welches Antriebskonzept hat dieses Fahrzeug?",["Front","Heck","Allrad"]),
+  auto_match_karosserie:()=>genAutosMatchExt("karosserie","Welche Karosserieform hat dieses Fahrzeug?",["Hatchback","Limousine","Kombi","SUV","Coupé","Cabrio","Roadster","Sportwagen"]),
+  auto_match_antriebsart:()=>genAutosMatchExt("antriebsart","Womit wird dieses Fahrzeug angetrieben?",["Benzin","Diesel","EV","Hybrid","PHEV","MHEV"]),
+  auto_match_motorbauart:()=>genAutosMatchExt("motorbauart","Welche Motorbauart hat dieses Fahrzeug?",["Reihe","V","Boxer","Wankel","E-Motor"]),
+  auto_match_konzern:()=>genAutosMatchExt("konzern","Zu welchem Konzern geh\u00f6rte dieses Fahrzeug?",["VW","BMW","Mercedes","Stellantis","Ford","Renault-Nissan","Toyota","Hyundai-Kia","Geely","Honda","unabh\u00e4ngig"]),
+  auto_match_getriebe:()=>genAutosMatchExt("getriebe","Welches Getriebe hat dieses Fahrzeug?",["Handschalter","Automatik","E-Getriebe"]),
+  auto_match_turbo:()=>genAutosMatchExt("turbo","Hat dieses Fahrzeug einen Turbo/Kompressor ab Werk?",["true","false"]),
+  auto_match_sitze:()=>genAutosMatchExt("sitze","Wie viele Sitzpl\u00e4tze hat dieses Fahrzeug?",null),
+  auto_baujahr_mc:()=>genAutoBaujahrMC(),
+  auto_match_land:()=>genAutoMatchLand(),
+  hl_auto_ps_kg:()=>genAutoPsKg(),
+  hl_auto_co2:()=>genAutoCO2(),
+  auto_match_dekade:()=>genAutoMatchDekade(),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),
@@ -15453,7 +15711,9 @@ JS = (JS
   .replace('PLACEHOLDER_SPORT_MATCH', SPORT_MATCH_J)
   .replace('PLACEHOLDER_SPORT_WS',    SPORT_WS_J)
   .replace('PLACEHOLDER_TIMELINE',     TIMELINE_J)
+  .replace('PLACEHOLDER_AUTOS_EXT',      AUTOS_EXT_J)
   .replace('PLACEHOLDER_AUTOS',          AUTOS_J)
+  .replace('PLACEHOLDER_AUTOS_EXT',      AUTOS_EXT_J)
 )
 # Phase 201: fix unicode escapes — JS=r'''...''' keeps \UXXXXXXXX literal
 JS = re.sub(r'\\U([0-9A-Fa-f]{8})', lambda m: chr(int(m.group(1), 16)), JS)

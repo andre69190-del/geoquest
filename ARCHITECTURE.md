@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 351 (Stand: Juni 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 5.00 MB | 721 Spielmodi | verify: 138/138
+**Version:** Phase 352 (Stand: Juni 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 5.25 MB | 721 Spielmodi | verify: 138/138
 
 ---
 
@@ -1102,6 +1102,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **343** | patches/patch_343_data_completion_c.py | **Data Completion Sprint 330c: BMW 1er/7er/X5, MB S/A/SL/G-Klasse, Audi A8/TT, Porsche Boxster/Cayenne, Opel Manta/Calibra, Ford Fiesta/Focus/Capri/Sierra, Volvo 240/V70/XC90, Saab, Smart W453, Mini** |
 | **350** | patches/patch_350_enrich_merge.py | **autos_extended.json: 431 Fahrzeuge mit 22 technischen Zusatzfeldern (gewicht, drehmoment, cw, karosserie, antriebsart, konzern, …)** |
 | **351** | patches/patch_351_validate_autos.py | **validate_content.py: check_autos_extended() + autos.json HL-Routing + auto_ccm EV-Check + Cross-Validation autos <-> autos_extended** |
+| **352** | patches/patch_352c_auto_creative.py | **ENGINE SPRINT 352: Auto-Universum komplett — 25 neue Modi (12 H/L + 8 Match + 5 kreativ). AUTOS_EXT_DATA (431 Fzg., 22 Felder) inline. genAutosHLExt + genAutosMatchExt + Baujahr-MC + Leistungsgewicht + CO2 + Dekaden-Quiz.** |
 
 ---
 

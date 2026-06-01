@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 351. validate_content.py: check_autos_extended() + autos.json HL-Routing + auto_ccm EV-Check + Cross-Val autos<->extended (43/43 Dateien OK, 0 Warnings). verify: 140/140."
+git commit -m "Content: Phase 352. ENGINE SPRINT 352: Auto-Universum komplett — 25 neue Modi (12 H/L + 8 Match + 5 kreativ). AUTOS_EXT_DATA (431 Fzg., 22 Felder) inline. genAutosHLExt + genAutosMatchExt + Baujahr-MC + Leistungsgewicht + CO2 + Dekaden-Quiz.. verify: 140/140."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
