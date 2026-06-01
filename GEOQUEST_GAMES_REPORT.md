@@ -1,6 +1,6 @@
 # 🗺️ GeoQuest — Integritäts- & Spielebericht
 
-> Stand: Phase 352 | 751 Spielmodi | 431 Fahrzeuge in autos_extended.json
+> Stand: Phase 360 | 765 Spielmodi | 431 Fahrzeuge in autos_extended.json
 
 ## Vollständige Liste aller deklarierten Spielmodi
 

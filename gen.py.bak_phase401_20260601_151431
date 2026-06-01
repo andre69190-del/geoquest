@@ -8807,8 +8807,7 @@ function genGamesHLExt(field,opts){
   for(var _i=0;_i<_ks.length;_i++){
     var _n=_ks[_i];
     var _v=_GE[_n][field];
-    if(_v===null||_v===undefined)continue;
-    if((_v===0||_v===0.0)&&field!=='usk'&&field!=='sequel_count'&&field!=='pegi')continue;
+    if(_v===null||_v===undefined||_v===0||_v===0.0)continue;
     items.push({name:_n,val:+_v});
   }
   if(items.length<4)return null;
@@ -8848,7 +8847,7 @@ function genGamesMatchExt(field,prompt,fixedPool){
   var correct=String(_GE[game][field]);
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
-    :valid.map(function(n){return String(_GE[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i}).filter(function(v){return v!==correct;});
+    :[...new Set(valid.map(function(n){return String(_GE[n][field]);}))].filter(function(v){return v!==correct;});
   if(pool.length<3)return null;
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
@@ -8887,7 +8886,7 @@ function genGamesBaujahrMC(){
   var correct=_GE[game].release;
   var allYears=keys.map(function(n){return _GE[n].release;});
   var pool=allYears.filter(function(y){var d=Math.abs(y-correct);return d>=2&&d<=20;});
-  if(pool.length<3)pool=allYears.filter(function(y){return y!==correct;}).map(function(v){return{v:v,r:rng()}}).sort(function(a,b){return a.r-b.r}).map(function(o){return o.v});
+  if(pool.length<3)pool=allYears.filter(function(y){return y!==correct;}).sort(function(){return rng()-0.5;});
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var opts=[correct].concat(p.slice(0,3));
@@ -8986,7 +8985,7 @@ function genAutoBaujahrMC(){
     return d>=3&&d<=25;
   });
   if(pool.length<3){
-    pool=allYears.filter(function(y){return y!==correct;}).map(function(v){return{v:v,r:rng()}}).sort(function(a,b){return a.r-b.r}).map(function(o){return o.v});
+    pool=allYears.filter(function(y){return y!==correct;}).sort(function(){return rng()-0.5;});
   }
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
@@ -9013,7 +9012,7 @@ function genAutoMatchLand(){
   var idx=~~(rng()*valid.length);
   var car=valid[idx];
   var correct=getLand(car.name);
-  var pool=valid.map(function(i){return getLand(i.name);}).filter(function(v,i,a){return a.indexOf(v)===i}).filter(function(l){return l!==correct;});
+  var pool=[...new Set(valid.map(function(i){return getLand(i.name);}))].filter(function(l){return l!==correct;});
   if(pool.length<3)return null;
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
@@ -9128,7 +9127,7 @@ function genAutosMatchExt(field,prompt,fixedPool){
   var correct=String(_AE[car][field]);
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
-    :valid.map(function(n){return String(_AE[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i}).filter(function(v){return v!==correct;});
+    :[...new Set(valid.map(function(n){return String(_AE[n][field]);}))].filter(function(v){return v!==correct;});
   if(pool.length<3)return null;
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
@@ -10134,7 +10133,7 @@ const GEN={
   auto_match_motorbauart:()=>genAutosMatchExt("motorbauart","Welche Motorbauart hat dieses Fahrzeug?",["Reihe","V","Boxer","Wankel","E-Motor"]),
   auto_match_konzern:()=>genAutosMatchExt("konzern","Zu welchem Konzern geh\u00f6rte dieses Fahrzeug?",["VW","BMW","Mercedes","Stellantis","Ford","Renault-Nissan","Toyota","Hyundai-Kia","Geely","Honda","unabh\u00e4ngig"]),
   auto_match_getriebe:()=>genAutosMatchExt("getriebe","Welches Getriebe hat dieses Fahrzeug?",["Handschalter","Automatik","E-Getriebe"]),
-  auto_match_turbo:()=>genAutosMatchExt("turbo","Hat dieses Fahrzeug ab Werk einen Turbo/Kompressor?",null),
+  auto_match_turbo:()=>genAutosMatchExt("turbo","Hat dieses Fahrzeug einen Turbo/Kompressor ab Werk?",["true","false"]),
   auto_match_sitze:()=>genAutosMatchExt("sitze","Wie viele Sitzpl\u00e4tze hat dieses Fahrzeug?",null),
   auto_baujahr_mc:()=>genAutoBaujahrMC(),
   auto_match_land:()=>genAutoMatchLand(),
@@ -10145,7 +10144,7 @@ const GEN={
   games_pin:()=>genGamesPinQ(),
   games_match_land:()=>genGamesMatchExt("dev_land","Aus welchem Land kommt das Studio hinter diesem Spiel?",null),
   games_match_genre:()=>genGamesMatchExt("genre","Welchem Genre geh\u00f6rt dieses Spiel an?",null),
-  games_match_adaption:()=>genGamesMatchExt("adaption","Wurde dieses Spiel verfilmt oder als Serie adaptiert?",null),
+  games_match_adaption:()=>genGamesMatchExt("adaption","Wurde dieses Spiel verfilmt?",["Film","Serie","Anime"]),
   games_match_plattform:()=>genGamesMatchExt("plattform","Auf welcher Plattform l\u00e4uft dieses Spiel?",["PC","Konsole","Mobil","Multiplattform"]),
   games_match_kategorie:()=>genGamesMatchExt("kategorie","Zu welcher Gaming-\u00c4ra geh\u00f6rt dieses Spiel?",["Modern Youth","Global Mobile","Klassiker"]),
   hl_games_release:()=>genGamesHLExt("release",{unit:"Jahr",prompt:"Welches Spiel erschien sp\u00e4ter?"}),
@@ -12347,14 +12346,14 @@ if(mode==="slf"&&S.ph==="playing"){
   }else if(q.type==="outline"){
     qBody=`<div class="qprompt">${q.prompt}</div><div class="outline-wrap" id="gq-outline-svg"></div>`;
   }else if(q.type==="food"){
-    qBody=`<div class="qprompt">${q.prompt}</div><div class="food-emoji">${q.emoji||"\u{1F37D}"}</div><div class="qmain">${esc(q.subj)}</div>`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div class="food-emoji">${q.emoji||"\u{1F37D}"}</div><div class="qmain">${q.subj}</div>`;
   }else if(q.type==="brand"){
-    qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;color:#94a3b8;font-size:.68rem;margin:2px 0 4px">${esc(q.industry||"")}</div><div class="qmain" style="font-size:2.2rem">${esc(q.subj)}</div>`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;color:#94a3b8;font-size:.68rem;margin:2px 0 4px">${q.industry||""}</div><div class="qmain" style="font-size:2.2rem">${q.subj}</div>`;
   }else if(q.type==="uk_match"){
     const _ukIcon={"getraenke":"\u{1F37A}","streetfood":"\u{1F32E}","kaese":"\u{1F9C0}","suessspeisen":"\u{1F36E}","kaffee":"\u2615","taenze":"\u{1F483}","kleidung":"\u{1F458}","instrumente":"\u{1F3B8}","literatur":"\u{1F4DA}","wahrzeichen":"\u{1F5FD}","feste":"\u{1F389}","begruessung":"\u{1F44B}","feiertage":"\u{1F386}","erfindungen":"\u{1F4A1}","exporte":"\u{1F69A}","blumen":"\u{1F338}","entdecker":"\u{1F9ED}","sport":"\u{1F3C6}","brettspiele":"\u265F"}[q.cat]||"\u{1F30D}";
     const _ukSubj=q.subj.replace(/\s*\([^)]+\)/g,'').trim();qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;font-size:1.8rem;margin:6px 0 2px">${_ukIcon}</div><div class="qmain" style="font-size:1.6rem">${esc(_ukSubj)}</div>` /* Phase 295: strip parenthetical country spoilers */;
 }else if(q.type==="currency"){
-    qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;margin:6px 0 2px"><span class="currency-symbol">${q.symbol||""}</span></div><div class="qmain">${esc(q.subj)}</div>`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div style="text-align:center;margin:6px 0 2px"><span class="currency-symbol">${q.symbol||""}</span></div><div class="qmain">${q.subj}</div>`;
     }else if(q.type==="ds100_input"){
     /* Phase 297.1: DS100 Hardcore — Text-Input */
     const _dbg=sel!==null?(ok?'style="border:2.5px solid #10b981;background:#f0fdf4"':'style="border:2.5px solid #ef4444;background:#fff1f2"'):'';
@@ -12451,7 +12450,7 @@ if(mode==="slf"&&S.ph==="playing"){
 }else if(q.type==="curr_real"){
     /* Show country name; hide currency name (meta) until answered */
     qBody=`<div class="qprompt">${q.prompt}</div>
-      <div class="qmain">${esc(q.subj)}</div>
+      <div class="qmain">${q.subj}</div>
       ${sel\!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="metro_logo"){
     qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;align-items:center;margin:12px auto;max-height:25vh;max-width:200px">${q.svg}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
@@ -12460,7 +12459,7 @@ if(mode==="slf"&&S.ph==="playing"){
   }else if(q.type==="neighbor"||q.type==="neighbor_fake"||q.type==="neighbor_count"){
     qBody=`<div class="qprompt" style="font-size:1rem">${q.prompt}</div>
       <div style="text-align:center;margin:10px 0 6px">
-        <div class="qmain" style="font-size:2.2rem">${esc(q.subj)}</div>
+        <div class="qmain" style="font-size:2.2rem">${q.subj}</div>
         <div style="font-size:1.2rem;margin-top:4px">${flagOf(q.subj)}</div>
       </div>`;
   }else if(q.type==="border_q"){
@@ -12514,7 +12513,7 @@ if(mode==="slf"&&S.ph==="playing"){
       +(sel===null?'<button onclick="checkTimeline()" style="width:100%;padding:13px;background:var(--accent);color:#fff;border:none;border-radius:12px;font-weight:700;font-size:1rem;cursor:pointer">\u2714 Pr\u00fcfen</button>':'')
       +(sel!==null?'<div style="text-align:center;font-size:.71rem;color:var(--text3);margin-top:4px">Sortierung nach '+esc(q.unit||'Jahr')+'</div>':'')+'';
   }else{
-    qBody=`<div class="qprompt">${q.prompt}</div><div class="qmain">${esc(q.subj)}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+    qBody=`<div class="qprompt">${q.prompt}</div><div class="qmain">${q.subj}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }
   /* Phase 203: sport_poi reveal */
   let sportPoiReveal="";
@@ -12685,7 +12684,7 @@ if(mode==="slf"&&S.ph==="playing"){
       answerHtml="";
     }else{
       if(q.type==="stadium"){
-        qBody=`<div class="qprompt">${q.prompt}</div><div class="qmain" style="font-size:1.3rem;font-weight:900">${esc(q.subj)}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+        qBody=`<div class="qprompt">${q.prompt}</div><div class="qmain" style="font-size:1.3rem;font-weight:900">${q.subj}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
       }else if(q.type==="jersey"){
         const _jsvg=_drawJersey(q.subj.cc,q.subj.color,q.subj.style);
         qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;margin:.75rem 0">${_jsvg}</div>`;

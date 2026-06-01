@@ -489,6 +489,70 @@ def check_i18n():
     else:
         print(f"    ⚠ i18n: {missing_count} fehlende Übersetzungen (EN:{total_en}, PL:{total_pl})")
 
+
+def check_games_extended(filename, data):
+    """Validiert data/games_extended.json (22 Pflichtfelder, Enums, Typen, Logik)."""
+    GENRE     = {"Sandbox","Battle Royale","Rollenspiel","Ego-Shooter",
+                 "Action-Adventure","Strategie","Jump 'n' Run","Sportsimulation",
+                 "Puzzle","MOBA","Party-Spiel","Kampfspiel","Rennspiel",
+                 "Social Deduction","Endless Runner","MMO"}
+    PLATTFORM = {"PC","Konsole","Mobil","Multiplattform"}
+    ADAPTION  = {"Film","Serie","Anime",None}
+    KATEGORIE = {"Modern Youth","Global Mobile","Klassiker"}
+    REQUIRED  = ["release","kategorie","publisher","publisher_land","developer",
+                 "dev_land","dev_city","dev_lat","dev_lng","genre","usk","pegi",
+                 "f2p","vk_mio","downloads_mio","peak_concurrent_mio","metacritic",
+                 "plattform","vorbild_land","adaption","esports","sequel_count"]
+    if not isinstance(data, dict):
+        warn(filename, "struktur", "root", "games_extended.json muss ein Dict sein")
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, "eintrag", name, "Wert ist kein Dict")
+            continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, "pflichtfeld", name, f"Feld '{f}' fehlt")
+        for field, allowed in [("genre",GENRE),("plattform",PLATTFORM),
+                                ("adaption",ADAPTION),("kategorie",KATEGORIE)]:
+            val = entry.get(field)
+            if val not in allowed:
+                warn(filename, f"enum:{field}", name,
+                     f"Wert {val!r} nicht erlaubt. Erlaubt: {sorted(str(v) for v in allowed)}")
+        if not isinstance(entry.get("f2p"), bool):
+            warn(filename, "typ:f2p", name, f"f2p muss bool sein, ist {type(entry.get('f2p')).__name__}")
+        if not isinstance(entry.get("esports"), bool):
+            warn(filename, "typ:esports", name, "esports muss bool sein")
+        if not isinstance(entry.get("release"), int):
+            warn(filename, "typ:release", name, "release muss int sein")
+        for field in ("usk","pegi","sequel_count"):
+            v = entry.get(field)
+            if v is not None and not isinstance(v, int):
+                warn(filename, f"typ:{field}", name, f"{field} muss int sein, ist {type(v).__name__}")
+        for field in ("vk_mio","downloads_mio"):
+            v = entry.get(field)
+            if v is not None and not isinstance(v, (int,float)):
+                warn(filename, f"typ:{field}", name, f"{field} muss float sein")
+        lat, lng = entry.get("dev_lat"), entry.get("dev_lng")
+        if lat is None or lng is None:
+            warn(filename, "coords", name, "dev_lat/dev_lng fehlt — Pin-Modus crasht")
+        else:
+            try:
+                if not (-90 <= float(lat) <= 90):
+                    warn(filename, "coords", name, f"dev_lat={lat} ausserhalb [-90,90]")
+                if not (-180 <= float(lng) <= 180):
+                    warn(filename, "coords", name, f"dev_lng={lng} ausserhalb [-180,180]")
+                if float(lat)==0.0 and float(lng)==0.0:
+                    warn(filename, "null-island", name, "dev_lat/lng = 0.0 — Platzhalter?")
+            except (TypeError, ValueError):
+                warn(filename, "coords", name, f"dev_lat/lng nicht numerisch: {lat}, {lng}")
+        if entry.get("f2p") is True and entry.get("vk_mio",0) > 0:
+            warn(filename, "logik:f2p", name,
+                 f"f2p=True aber vk_mio={entry.get('vk_mio')} > 0")
+        if entry.get("f2p") is False and entry.get("downloads_mio",0) > 0:
+            info(filename, "logik:f2p", name,
+                 f"f2p=False aber downloads_mio={entry.get('downloads_mio')} > 0 — pruefen")
+
 def check_autos_extended(filename, data):
     """Validiert data/autos_extended.json (flaches Dict, 22 Pflichtfelder)."""
     REQUIRED_FIELDS = [
@@ -682,6 +746,25 @@ def main():
     print("\n" + BOLD + "=" * 62)
     print(" Results: " + str(checked) + "/" + str(len(json_files)) + " files scanned  |  " + str(len(warnings)) + " warning(s)")
     print("=" * 62 + RESET + "\n")
+
+
+    # Cross-Validation games_extended: dev_lat/lng numeric check
+    _gext_p = os.path.join(DATA, "games_extended.json")
+    import json as _json2
+    if os.path.exists(_gext_p):
+        print("  [Cross-Val games_extended]", end=" ")
+        try:
+            with open(_gext_p, encoding="utf-8") as _fh: _ge = _json2.load(_fh)
+            _bad = [n for n, e in _ge.items()
+                    if not isinstance(e.get("dev_lat"),(int,float)) or not isinstance(e.get("dev_lng"),(int,float))]
+            if _bad:
+                for _n in _bad:
+                    warn("cross_val", "games_extended", _n, "dev_lat/lng fehlt oder nicht numerisch")
+                print(WARN + f"{len(_bad)} fehlerhaft" + RESET)
+            else:
+                print(OK + f"OK -- alle {len(_ge)} Spiele haben gueltige Koordinaten" + RESET)
+        except Exception as _e:
+            print(WARN + f"Fehler: {_e}" + RESET)
 
     if warnings:
         by_file = defaultdict(list)

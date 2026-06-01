@@ -2,7 +2,7 @@
 ## Systemdokumentation & Entwicklerhandbuch
 
 **Version:** Phase 360 (Stand: Juni 2026)
-**Build:** gen.py → 1.35 MB | GeoQuest.html → 5.23 MB | 751 Spielmodi | verify: 140/140 | data: 43 JSON
+**Build:** gen.py → 1.35 MB | GeoQuest.html → 5.23 MB | 765 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -75,7 +75,7 @@ Die zentrale Architekturentscheidung ist die strikte Trennung von **Inhalt** (Da
 10. Python liest data/astro_*.json       → ASTRO_*_J
 11. Python liest data/geo_*.json         → GEO_*_J
 12. Python liest data/sport_*.json       → SPORT_*_J
-   ... (weitere Datensätze — 43 JSON-Dateien gesamt (inkl. autos.json, autos_extended.json))
+   ... (weitere Datensätze — 44 JSON-Dateien gesamt (inkl. autos.json, autos_extended.json, games_extended.json))
 
 10. JS = r'''...'''                    Großer Raw-String mit gesamtem JavaScript.
                                        Enthält PLACEHOLDER_*-Marker.
@@ -410,9 +410,9 @@ python3 run_patch.py patches/patch_240_offline_sync.py
 | 7 | Generators (6x) | genUniversalPinQ, genTiereMatchQ, genTiereHL, initTierWortSchmiede, genHauptstadtDistanzQ, getSmartMatch |
 | 8 | Anti-cheat | `_displaySubj` + `subj:_displaySubj` vorhanden |
 | 9 | Mojibake | Keine neuen Â/Ã-Sequenzen (15 Legacy-Patterns whitelisted) |
-| 10 | JSON round-trip | Alle 43 JSON-Dateien valide + Top-Level-Keys gezählt |
+| 10 | JSON round-trip | Alle 44 JSON-Dateien valide + Top-Level-Keys gezählt |
 | 11 | _GQ_SALT | Salt im Output vorhanden (User-Saves-Schutz) |
-| 12 | Service Worker | sw.js existiert, CACHE_NAME hash-versioniert, alle 43 data/*.json in ASSETS, Promise.allSettled vorhanden |
+| 12 | Service Worker | sw.js existiert, CACHE_NAME hash-versioniert, alle 44 data/*.json in ASSETS, Promise.allSettled vorhanden |
 
 ### Vollständiger Sprint-Workflow
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 751 Modi, 751/751/751 — perfekte Konsistenz.
+**Aktueller Stand:** 765 Modi, 765/765/765 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -763,7 +763,7 @@ Wort-Schmiede Modi tragen `noMultiplayer: true` — sie sind zu zeitintensiv fü
 GeoQuest implementiert eine dreistufige Offline-Strategie:
 
 ```
-Stufe 1 — SW-Cache (Phase 238):   App-Shell + alle 43 data/*.json offline verfügbar
+Stufe 1 — SW-Cache (Phase 238):   App-Shell + alle 44 data/*.json offline verfügbar
 Stufe 2 — Auth-UX (Phase 239):    navigator.onLine-Guards + _authErrMsg() für saubere Fehlermeldungen
 Stufe 3 — Score-Queue (Phase 240): Optimistic writes → localStorage → Supabase bei Reconnect
 ```

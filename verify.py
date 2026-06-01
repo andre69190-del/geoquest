@@ -167,6 +167,8 @@ for fname in [
         'geo_hl.json', 'geo_match.json', 'geo_pin.json', 'geo_ws.json',
         'astro_hl.json', 'astro_match.json', 'astro_pin.json', 'astro_ws.json',
         'sport_hl.json', 'sport_match.json', 'sport_pin.json', 'sport_ws.json',
+        'autos_extended.json',
+        'games_extended.json',
         'tiere_pin.json', 'timeline.json',
     ]:
     path = os.path.join(DATA_DIR, fname)
