@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 409. Phase 409/410: Zuletzt-gespielt-Leiste (letzte 5 Modi, gq_recent), Gespielt-Tracking (gq_played), Fortschrittsbalken X/Y im Akkordeon-Header, Carousel-Grid-Reinit-Fix fuer Gaming. verify: 143/143."
+git commit -m "Content: Phase 411. Games & Hardware: 30 Konsolen (Atari bis PS5), Kategorie umbenannt, 6 neue Modi (Timeline, 2x H/L Verkauf+Preis, 3x Match Hersteller/Medium/Handheld). verify: 145/145."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

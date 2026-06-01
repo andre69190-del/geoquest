@@ -12,27 +12,29 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 402):
+Aktueller Stand (Stand: Phase 410):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
-- 769 Spielmodi in MODES-Array (gen.py)
+- 777 Spielmodi in MODES-Array (gen.py)
 - 44 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
 - Patch-System: patches/patch_NNN_description.py via run_patch.py
 - Zero-Bug-Policy: assert c.count(old)==1 vor jedem c.replace()
 
 Pflicht-Workflow nach JEDER Änderung:
-1. python3 gen.py           → baut GeoQuest.html neu
-2. python3 verify.py        → muss 141/141 (oder mehr) zeigen
-3. python3 validate_content.py → muss 0 warnings zeigen
+1. python3 gen.py                → baut GeoQuest.html neu
+2. python3 verify.py             → muss 143/143 (oder mehr) zeigen
+3. python3 validate_content.py   → muss 0 warnings zeigen
 4. python3 post_phase.py --phase NNN --summary "Beschreibung"
-5. unlock_and_push.bat      → deployed auf Vercel
+5. python3 check_session.py      → 14/14 Checks grün (NEU: alles in einem Rutsch)
+6. unlock_and_push.bat           → deployed auf Vercel
 
 Wichtige Dateien zum Lesen:
-- gen.py                    → Haupt-Build-Datei (16.600 Zeilen JS+Python)
-- data/games_extended.json  → 50 Spiele, 22 Felder je Eintrag
+- gen.py                    → Haupt-Build-Datei (~1.5 MB JS+Python)
+- data/games_extended.json  → 70 Spiele, 27 Felder je Eintrag (inkl. protagonist, howlong_h)
 - data/autos_extended.json  → 431 Autos, 22 Felder je Eintrag
 - patches/PATCHES.md        → Alle bisherigen Patches mit Phase-Nummern
 - ARCHITECTURE.md           → Systemdokumentation
-- GeoQuest_Checkliste_und_Prompt_Template.md → Pflicht-Checkliste
+- CLAUDE_SESSION_STARTER.md → Dieses Dokument (immer aktuell halten!)
+- check_session.py          → NEU: Session-End-Check (14 Punkte)
 ```
 
 ---
@@ -71,10 +73,12 @@ mein_modus: () => meinGenerator()
 release, kategorie*, publisher, publisher_land, developer, dev_land,
 dev_city, dev_lat, dev_lng, genre*, usk, pegi, f2p (bool), vk_mio,
 downloads_mio, peak_concurrent_mio, metacritic, plattform*,
-vorbild_land, adaption*, esports (bool), sequel_count
+vorbild_land, adaption*, esports (bool), sequel_count,
+peak_year, publisher_lat, publisher_lng,  ← Phase 405
+protagonist, howlong_h                    ← Phase 410 (optional, None erlaubt)
 
 * Enum-Felder:
-  kategorie:  "Modern Youth" | "Global Mobile" | "Klassiker"
+  kategorie:  "Modern Youth" | "Global Mobile" | "Klassiker" | "Indie"
   plattform:  "PC" | "Konsole" | "Mobil" | "Multiplattform"
   adaption:   null | "Film" | "Serie" | "Anime"
   genre:      "Sandbox" | "Battle Royale" | "Rollenspiel" | "Ego-Shooter" |
@@ -130,7 +134,7 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 python3 check_session.py   # prüft ALLES in einem Rutsch (14 Checks)
 ```
 Oder manuell:
-- [ ] verify.py: X/143+ passed, 0 failed
+- [ ] verify.py: X/143 passed, 0 failed
 - [ ] validate_content.py: 44/44 OK, 0 warnings
 - [ ] ARCHITECTURE.md: Phase + Modi-Zahl aktualisiert
 - [ ] README.md: Deployed-Zeile aktualisiert
@@ -160,7 +164,7 @@ Oder manuell:
 - `"Audit Phase NNN"` → Claude liest alle Kern-Dateien und liefert Findings + Fixes
 
 ### Für größere Erweiterungen (gib diese Infos mit):
-- **Phase-Nummer** (nächste wäre 405)
+- **Phase-Nummer** (nächste wäre 411)
 - **Kategorie** (games, autos, tiere, pflanzen, gastro, tech, emob, archäologie, astro, geo, sport)
 - **Daten-Format** (JSON-Schema, Python-Dict mit Feldbeschreibungen)
 - **Erwartete Modi-Typen** (H/L, Match, Pin, Wort-Schmiede, Multiple-Choice)
@@ -187,17 +191,17 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **771** |
+| Spielmodi | **777** |
 | Fahrzeuge (autos_extended) | 431 |
-| Spiele (games_extended) | 50 |
+| Spiele (games_extended) | 70 |
 | JSON-Datendateien | 44 |
 | gen.py Größe | ~1.49 MB |
 | GeoQuest.html Größe | ~5.5 MB |
-| verify.py | 141/141 ✓ |
+| verify.py | 143/143 ✓ |
 | validate_content.py | 44/44 ✓ 0 Warnings |
 | Sprachen vollständig (de/en/pl) | ✓ |
 | Offline/PWA | ✓ |
-| i18n-Schlüssel | 937 EN / 937 PL |
+| i18n-Schlüssel | 961 EN / 961 PL |
 
 ### Gaming-Kategorie (Phase 360-402)
 | Modi-ID | Beschreibung |
@@ -218,9 +222,27 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | hl_games_sequel | Teile-Anzahl H/L |
 | hl_games_peak | Peak Concurrent Players H/L (Phase 402) |
 | hl_games_dev_lat | Studio-Breitengrad (nördlichstes Studio) H/L (Phase 402) |
+| games_match_protagonist | Erkenne den Protagonisten (Phase 410) |
+| games_match_pub_is_dev | Publisher = Developer? (Phase 410) |
+| hl_games_howlong | Spielzeit H/L — HowLongToBeat (Phase 410) |
+| games_match_esports | E-Sports-Szene? Ja/Nein (Phase 404) |
+| hl_games_pegi | PEGI-Rating H/L (Phase 404) |
+| hl_games_peak_year | Peak-Popularitätsjahr H/L (Phase 405) |
+| hl_games_publisher_lat | Publisher-Standort: Wer liegt nördlicher? (Phase 405) |
+| games_peak_year_mc | Hype-Jahr raten Multiple-Choice (Phase 405) |
 | games_baujahr_mc | Erscheinungsjahr Multiple-Choice |
 
 ---
+
+## UX-FEATURES (bereits implementiert ab Phase 408)
+
+| Feature | Status | Beschreibung |
+|---------|--------|-------------|
+| Kategorie-Rückkehr nach Exit | ✅ Phase 408 | `_exitToMenu()` öffnet automatisch die Kategorie des gespielten Modus |
+| "Zuletzt gespielt"-Leiste | ✅ Phase 409 | Letzte 5 Modi als Schnellstart über dem Akkordeon (`gq_recent`) |
+| Gespielt-Tracking | ✅ Phase 409 | `gq_played` in localStorage — welche Modi wurden je gespielt |
+| Fortschrittsbalken | ✅ Phase 409/410 | X/Y-Badge + Balken am Akkordeon-Header je Kategorie |
+| Favoriten-Pin | ✅ bereits vorhanden | ❤️-Button auf jeder Karte, `showFavorites()`-Filter |
 
 ## SICHERHEITS-CHECKLISTE (nach Phase 401)
 
@@ -233,7 +255,7 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | games_extended Validator in validate_content.py | ✅ |
 | games_extended in verify.py Section 10 | ✅ |
 | Placeholder-Reihenfolge korrekt (AUTOS_EXT vor AUTOS) | ✅ |
-| Prototype-Schutz (`hasOwnProperty`) | ⚠️ noch offen |
+| Prototype-Schutz (`hasOwnProperty`) | ✅ Phase 403 (10x) |
 | JSON-Parser try/catch in gen.py | ⚠️ noch offen |
 | Lazy-Init für Extended-Daten | ⚠️ Low Priority |
 
@@ -253,5 +275,4 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ### Infrastruktur
 - **Auto-Backup-Cleanup**: `gen.py.bak_*` älter als 7 Tage automatisch löschen
-- **Session-End-Check**: Script das alle 5 Checklisten-Punkte in einem Rutsch prüft
-- **i18n für Gaming-Modi**: games_match_* Prompts über `_tc()` für EN/PL
+- **Session-End-Check**: Script das alle 5 Checkli

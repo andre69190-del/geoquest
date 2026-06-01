@@ -1,0 +1,322 @@
+{
+  "Magnavox Odyssey": {
+    "year": 1972,
+    "company": "Magnavox",
+    "company_land": "Vereinigte Staaten",
+    "generation": 1,
+    "type": "Heimkonsole",
+    "units_mio": 0.3,
+    "cpu_mhz": null,
+    "bits": null
+  },
+  "Atari 2600": {
+    "year": 1977,
+    "company": "Atari",
+    "company_land": "Vereinigte Staaten",
+    "generation": 2,
+    "type": "Heimkonsole",
+    "units_mio": 30.0,
+    "cpu_mhz": 1.19,
+    "bits": 8
+  },
+  "Intellivision": {
+    "year": 1979,
+    "company": "Mattel",
+    "company_land": "Vereinigte Staaten",
+    "generation": 2,
+    "type": "Heimkonsole",
+    "units_mio": 3.0,
+    "cpu_mhz": 0.895,
+    "bits": 16
+  },
+  "Commodore 64": {
+    "year": 1982,
+    "company": "Commodore",
+    "company_land": "Vereinigte Staaten",
+    "generation": 2,
+    "type": "Heimcomputer",
+    "units_mio": 17.0,
+    "cpu_mhz": 1.02,
+    "bits": 8
+  },
+  "NES / Famicom": {
+    "year": 1983,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 3,
+    "type": "Heimkonsole",
+    "units_mio": 61.9,
+    "cpu_mhz": 1.79,
+    "bits": 8
+  },
+  "Sega Master System": {
+    "year": 1985,
+    "company": "Sega",
+    "company_land": "Japan",
+    "generation": 3,
+    "type": "Heimkonsole",
+    "units_mio": 13.0,
+    "cpu_mhz": 3.58,
+    "bits": 8
+  },
+  "Game Boy": {
+    "year": 1989,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 4,
+    "type": "Handheld",
+    "units_mio": 118.7,
+    "cpu_mhz": 4.19,
+    "bits": 8
+  },
+  "Sega Mega Drive / Genesis": {
+    "year": 1988,
+    "company": "Sega",
+    "company_land": "Japan",
+    "generation": 4,
+    "type": "Heimkonsole",
+    "units_mio": 35.0,
+    "cpu_mhz": 7.67,
+    "bits": 16
+  },
+  "Super Nintendo (SNES)": {
+    "year": 1990,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 4,
+    "type": "Heimkonsole",
+    "units_mio": 49.1,
+    "cpu_mhz": 3.58,
+    "bits": 16
+  },
+  "Sega Saturn": {
+    "year": 1994,
+    "company": "Sega",
+    "company_land": "Japan",
+    "generation": 5,
+    "type": "Heimkonsole",
+    "units_mio": 9.5,
+    "cpu_mhz": 28.6,
+    "bits": 32
+  },
+  "PlayStation": {
+    "year": 1994,
+    "company": "Sony",
+    "company_land": "Japan",
+    "generation": 5,
+    "type": "Heimkonsole",
+    "units_mio": 102.5,
+    "cpu_mhz": 33.9,
+    "bits": 32
+  },
+  "Nintendo 64": {
+    "year": 1996,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 5,
+    "type": "Heimkonsole",
+    "units_mio": 33.0,
+    "cpu_mhz": 93.75,
+    "bits": 64
+  },
+  "Game Boy Color": {
+    "year": 1998,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 4,
+    "type": "Handheld",
+    "units_mio": 118.7,
+    "cpu_mhz": 8.39,
+    "bits": 8
+  },
+  "Sega Dreamcast": {
+    "year": 1998,
+    "company": "Sega",
+    "company_land": "Japan",
+    "generation": 6,
+    "type": "Heimkonsole",
+    "units_mio": 10.6,
+    "cpu_mhz": 200.0,
+    "bits": 32
+  },
+  "Game Boy Advance": {
+    "year": 2001,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 6,
+    "type": "Handheld",
+    "units_mio": 81.5,
+    "cpu_mhz": 16.78,
+    "bits": 32
+  },
+  "PlayStation 2": {
+    "year": 2000,
+    "company": "Sony",
+    "company_land": "Japan",
+    "generation": 6,
+    "type": "Heimkonsole",
+    "units_mio": 155.0,
+    "cpu_mhz": 294.9,
+    "bits": 128
+  },
+  "Xbox": {
+    "year": 2001,
+    "company": "Microsoft",
+    "company_land": "Vereinigte Staaten",
+    "generation": 6,
+    "type": "Heimkonsole",
+    "units_mio": 24.0,
+    "cpu_mhz": 733.0,
+    "bits": 32
+  },
+  "Nintendo GameCube": {
+    "year": 2001,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 6,
+    "type": "Heimkonsole",
+    "units_mio": 21.7,
+    "cpu_mhz": 485.0,
+    "bits": 32
+  },
+  "Nintendo DS": {
+    "year": 2004,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 7,
+    "type": "Handheld",
+    "units_mio": 154.0,
+    "cpu_mhz": 67.0,
+    "bits": 32
+  },
+  "PlayStation Portable (PSP)": {
+    "year": 2004,
+    "company": "Sony",
+    "company_land": "Japan",
+    "generation": 7,
+    "type": "Handheld",
+    "units_mio": 80.8,
+    "cpu_mhz": 333.0,
+    "bits": 32
+  },
+  "Xbox 360": {
+    "year": 2005,
+    "company": "Microsoft",
+    "company_land": "Vereinigte Staaten",
+    "generation": 7,
+    "type": "Heimkonsole",
+    "units_mio": 84.0,
+    "cpu_mhz": 3200.0,
+    "bits": 64
+  },
+  "PlayStation 3": {
+    "year": 2006,
+    "company": "Sony",
+    "company_land": "Japan",
+    "generation": 7,
+    "type": "Heimkonsole",
+    "units_mio": 87.4,
+    "cpu_mhz": 3200.0,
+    "bits": 64
+  },
+  "Nintendo Wii": {
+    "year": 2006,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 7,
+    "type": "Heimkonsole",
+    "units_mio": 101.6,
+    "cpu_mhz": 729.0,
+    "bits": 32
+  },
+  "Nintendo 3DS": {
+    "year": 2011,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 8,
+    "type": "Handheld",
+    "units_mio": 76.0,
+    "cpu_mhz": 268.0,
+    "bits": 32
+  },
+  "PlayStation Vita": {
+    "year": 2011,
+    "company": "Sony",
+    "company_land": "Japan",
+    "generation": 8,
+    "type": "Handheld",
+    "units_mio": 16.0,
+    "cpu_mhz": 2000.0,
+    "bits": 32
+  },
+  "Xbox One": {
+    "year": 2013,
+    "company": "Microsoft",
+    "company_land": "Vereinigte Staaten",
+    "generation": 8,
+    "type": "Heimkonsole",
+    "units_mio": 47.9,
+    "cpu_mhz": 1750.0,
+    "bits": 64
+  },
+  "PlayStation 4": {
+    "year": 2013,
+    "company": "Sony",
+    "company_land": "Japan",
+    "generation": 8,
+    "type": "Heimkonsole",
+    "units_mio": 117.2,
+    "cpu_mhz": 1600.0,
+    "bits": 64
+  },
+  "Nintendo Wii U": {
+    "year": 2012,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 8,
+    "type": "Heimkonsole",
+    "units_mio": 13.6,
+    "cpu_mhz": 1243.0,
+    "bits": 64
+  },
+  "Nintendo Switch": {
+    "year": 2017,
+    "company": "Nintendo",
+    "company_land": "Japan",
+    "generation": 9,
+    "type": "Hybrid",
+    "units_mio": 141.0,
+    "cpu_mhz": 1020.0,
+    "bits": 64
+  },
+  "Xbox Series X": {
+    "year": 2020,
+    "company": "Microsoft",
+    "company_land": "Vereinigte Staaten",
+    "generation": 9,
+    "type": "Heimkonsole",
+    "units_mio": 21.0,
+    "cpu_mhz": 3800.0,
+    "bits": 64
+  },
+  "PlayStation 5": {
+    "year": 2020,
+    "company": "Sony",
+    "company_land": "Japan",
+    "generation": 9,
+    "type": "Heimkonsole",
+    "units_mio": 59.0,
+    "cpu_mhz": 3500.0,
+    "bits": 64
+  },
+  "Steam Deck": {
+    "year": 2022,
+    "company": "Valve",
+    "company_land": "Vereinigte Staaten",
+    "generation": 9,
+    "type": "Handheld",
+    "units_mio": 3.0,
+    "cpu_mhz": 2800.0,
+    "bits": 64
+  }
+}

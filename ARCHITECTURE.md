@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 409 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.25 MB | 774 Spielmodi | verify: 141/141 | data: 44 JSON
+**Version:** Phase 411 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.30 MB | 791 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 774 Modi, 774/774/774 — perfekte Konsistenz.
+**Aktueller Stand:** 779 Modi, 779/779/779 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -1114,6 +1114,8 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **407** | patch_407.py | **generate_spieluebersicht: Datenbasis-Badges fuer Gaming (70 Spiele) + Auto-Extended (431) + genAutosHL korrekt; Dispatch-Regex 4 neue Muster; 0 von 774 Modi ohne Badge** |
 | **408** | patch_408.py | **UX: _exitToMenu() — nach Spielende kehrt die App zur Kategorie des gespielten Modus zurueck (11x Exit-Button ersetzt, smooth scroll, filterCat gesetzt)** |
 | **409** | patch_409.py | **Phase 409/410: Zuletzt-gespielt-Leiste (letzte 5 Modi, gq_recent), Gespielt-Tracking (gq_played), Fortschrittsbalken X/Y im Akkordeon-Header, Carousel-Grid-Reinit-Fix fuer Gaming** |
+| **410** | patch_410.py | **Phase 410: 3 neue Gaming-Modi — games_match_protagonist (42 Helden), games_match_pub_is_dev (0 neue Felder!), hl_games_howlong (37 Spielzeiten). protagonist+howlong_h zu games_extended. 774->777 Modi** |
+| **411** | patch_411.py | **Phase 411: wendekreis_m + zuladung_kg zu 431 Autos (91/74 gefüllt), 2 neue Auto-Modi hl_auto_wendekreis (lowerWins!) + hl_auto_zuladung. 777->779 Modi** |
 
 ---
 

@@ -21,7 +21,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1990,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Chevrolet Corvette C1 (USA, 1953)": {
     "gewicht": 1329,
@@ -45,7 +47,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1962,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": 11.5,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 300 SL (Deutschland, 1954)": {
     "gewicht": 1295,
@@ -69,7 +73,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1963,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche 356 A (Deutschland, 1955)": {
     "gewicht": 820,
@@ -93,7 +99,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1959,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Tatra 603 (Tschechien, 1956)": {
     "gewicht": 1800,
@@ -117,7 +125,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1975,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Fiat 500 (Italien, 1957)": {
     "gewicht": 470,
@@ -141,7 +151,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1975,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mini Classic (Vereinigtes Königreich, 1959)": {
     "gewicht": 617,
@@ -165,7 +177,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Jaguar E-Type (UK, 1961)": {
     "gewicht": 1118,
@@ -189,7 +203,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1975,
     "nordschleife": 0,
-    "konzern": "Tata"
+    "konzern": "Tata",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Volvo P1800 (Schweden, 1961)": {
     "gewicht": 1070,
@@ -213,7 +229,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1973,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ferrari 250 GTO (Italien, 1962)": {
     "gewicht": 880,
@@ -237,7 +255,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1964,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alpine A110 Berlinette (Frankreich, 1962)": {
     "gewicht": 620,
@@ -261,7 +281,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1977,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche 911 Carrera (Deutschland, 1963)": {
     "gewicht": 1075,
@@ -285,7 +307,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.6,
+    "zuladung_kg": 380
   },
   "Aston Martin DB5 (UK, 1963)": {
     "gewicht": 1465,
@@ -309,7 +333,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1965,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Trabant P601 (Deutschland, 1963)": {
     "gewicht": 615,
@@ -333,7 +359,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1991,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mini Cooper S (UK, 1964)": {
     "gewicht": 660,
@@ -357,7 +385,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1971,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": 10.7,
+    "zuladung_kg": 365
   },
   "Ford Mustang GT (USA, 1964)": {
     "gewicht": 1390,
@@ -381,7 +411,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 12.0,
+    "zuladung_kg": 400
   },
   "Ford GT40 (USA/UK, 1964)": {
     "gewicht": 1020,
@@ -405,7 +437,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1969,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Käfer 1200 (Deutschland, 1965)": {
     "gewicht": 740,
@@ -429,7 +463,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1978,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo Giulia GTA (Italien, 1965)": {
     "gewicht": 745,
@@ -453,7 +489,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1972,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Rolls-Royce Silver Shadow (UK, 1965)": {
     "gewicht": 2150,
@@ -477,7 +515,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1980,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Lamborghini Miura (Italien, 1966)": {
     "gewicht": 1125,
@@ -501,7 +541,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1973,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Anadol A1 (Türkei, 1966)": {
     "gewicht": 780,
@@ -525,7 +567,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1974,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Toyota 2000GT (Japan, 1967)": {
     "gewicht": 1120,
@@ -549,7 +593,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1970,
     "nordschleife": 0,
-    "konzern": "Toyota"
+    "konzern": "Toyota",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Chevrolet Camaro Z28 (USA, 1967)": {
     "gewicht": 1440,
@@ -573,7 +619,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel GT (Deutschland, 1968)": {
     "gewicht": 940,
@@ -597,7 +645,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1973,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Dacia 1300 (Rumänien, 1969)": {
     "gewicht": 875,
@@ -621,7 +671,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1979,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Citroën SM (Frankreich, 1970)": {
     "gewicht": 1390,
@@ -645,7 +697,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1975,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "NAMCO Pony (Griechenland, 1972)": {
     "gewicht": 500,
@@ -669,7 +723,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1983,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 518 E12 (Deutschland, 1972)": {
     "gewicht": 1140,
@@ -693,7 +749,9 @@
     "neupreis_eur": 15850,
     "baujahr_ende": 1981,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 2002 Turbo (Deutschland, 1973)": {
     "gewicht": 1080,
@@ -717,7 +775,9 @@
     "neupreis_eur": 19904,
     "baujahr_ende": 1974,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Lancia Stratos HF (Italien, 1973)": {
     "gewicht": 870,
@@ -741,7 +801,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1978,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B1 (Deutschland, 1973)": {
     "gewicht": 875,
@@ -765,7 +827,9 @@
     "neupreis_eur": 8800,
     "baujahr_ende": 1980,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Lamborghini Countach LP400 (Italien, 1974)": {
     "gewicht": 1065,
@@ -789,7 +853,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1990,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Golf 1 (Deutschland, 1974)": {
     "gewicht": 790,
@@ -813,7 +879,9 @@
     "neupreis_eur": 7627,
     "baujahr_ende": 1983,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.9,
+    "zuladung_kg": 430
   },
   "Volvo 244 (Schweden, 1974)": {
     "gewicht": 1260,
@@ -837,7 +905,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1993,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Škoda 130 RS (Tschechien, 1975)": {
     "gewicht": 700,
@@ -861,7 +931,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1981,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ferrari 308 GTB (Italien, 1975)": {
     "gewicht": 1090,
@@ -885,7 +957,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1985,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 450 SEL 6.9 (Deutschland, 1975)": {
     "gewicht": 2015,
@@ -909,7 +983,9 @@
     "neupreis_eur": 34926,
     "baujahr_ende": 1980,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 1 (Deutschland, 1975)": {
     "gewicht": 680,
@@ -933,7 +1009,9 @@
     "neupreis_eur": 5903,
     "baujahr_ende": 1981,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "VW Passat B1 TS (Deutschland, 1975)": {
     "gewicht": 940,
@@ -957,7 +1035,9 @@
     "neupreis_eur": 10600,
     "baujahr_ende": 1980,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "BMW 316 E21 (Deutschland, 1975)": {
     "gewicht": 1030,
@@ -981,7 +1061,9 @@
     "neupreis_eur": 13474,
     "baujahr_ende": 1983,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Manta B (Deutschland, 1975)": {
     "gewicht": 980,
@@ -1005,7 +1087,9 @@
     "neupreis_eur": 9793,
     "baujahr_ende": 1988,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Manta B GT/E (Deutschland, 1975)": {
     "gewicht": 1010,
@@ -1029,7 +1113,9 @@
     "neupreis_eur": 11730,
     "baujahr_ende": 1988,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Golf 1 GTI (VW, Deutschland, 1976)": {
     "gewicht": 840,
@@ -1053,7 +1139,9 @@
     "neupreis_eur": 13950,
     "baujahr_ende": 1983,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 230 E W123 (Deutschland, 1976)": {
     "gewicht": 1350,
@@ -1077,7 +1165,9 @@
     "neupreis_eur": 17835,
     "baujahr_ende": 1985,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Fiesta Mk1 (Deutschland, 1976)": {
     "gewicht": 730,
@@ -1101,7 +1191,9 @@
     "neupreis_eur": 8000,
     "baujahr_ende": 1983,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 10.4,
+    "zuladung_kg": 432
   },
   "BMW 323i E21 (Deutschland, 1977)": {
     "gewicht": 1100,
@@ -1125,7 +1217,9 @@
     "neupreis_eur": 18500,
     "baujahr_ende": 1983,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 528i E12 (Deutschland, 1977)": {
     "gewicht": 1380,
@@ -1149,7 +1243,9 @@
     "neupreis_eur": 24300,
     "baujahr_ende": 1981,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 280 E W123 (Deutschland, 1977)": {
     "gewicht": 1430,
@@ -1173,7 +1269,9 @@
     "neupreis_eur": 22900,
     "baujahr_ende": 1985,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "FSO Polonez (Polen, 1978)": {
     "gewicht": 970,
@@ -1197,7 +1295,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M1 (Deutschland, 1978)": {
     "gewicht": 1300,
@@ -1221,7 +1321,9 @@
     "neupreis_eur": 55520,
     "baujahr_ende": 1981,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Saab 900 Turbo (Schweden, 1978)": {
     "gewicht": 1160,
@@ -1245,7 +1347,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Capri Mk3 (Deutschland, 1978)": {
     "gewicht": 1055,
@@ -1269,7 +1373,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1986,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Saab 900 (Schweden, 1978)": {
     "gewicht": 1100,
@@ -1293,7 +1399,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 1 Coupe GT (Deutschland, 1979)": {
     "gewicht": 750,
@@ -1317,7 +1425,9 @@
     "neupreis_eur": 6500,
     "baujahr_ende": 1981,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "Opel Kadett D (Deutschland, 1979)": {
     "gewicht": 840,
@@ -1341,7 +1451,9 @@
     "neupreis_eur": 7200,
     "baujahr_ende": 1984,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 280 S W126 (Deutschland, 1979)": {
     "gewicht": 1640,
@@ -1365,7 +1477,9 @@
     "neupreis_eur": 24000,
     "baujahr_ende": 1985,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault 5 Turbo (Frankreich, 1980)": {
     "gewicht": 970,
@@ -1389,7 +1503,9 @@
     "neupreis_eur": 16000,
     "baujahr_ende": 1986,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi Quattro Urquattro (Deutschland, 1980)": {
     "gewicht": 1290,
@@ -1413,7 +1529,9 @@
     "neupreis_eur": 25700,
     "baujahr_ende": 1991,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B2 (Deutschland, 1980)": {
     "gewicht": 990,
@@ -1437,7 +1555,9 @@
     "neupreis_eur": 11500,
     "baujahr_ende": 1988,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "VW Polo 2 (Deutschland, 1981)": {
     "gewicht": 740,
@@ -1461,7 +1581,9 @@
     "neupreis_eur": 8200,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "BMW 518 E28 (Deutschland, 1981)": {
     "gewicht": 1260,
@@ -1485,7 +1607,9 @@
     "neupreis_eur": 16500,
     "baujahr_ende": 1987,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Fiesta XR2 (Deutschland, 1981)": {
     "gewicht": 810,
@@ -1509,7 +1633,9 @@
     "neupreis_eur": 9500,
     "baujahr_ende": 1989,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 10.4,
+    "zuladung_kg": 432
   },
   "Ford Capri 2.8 Injection (Vereinigtes Königreich, 1981)": {
     "gewicht": 1090,
@@ -1533,7 +1659,9 @@
     "neupreis_eur": 10000,
     "baujahr_ende": 1987,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Volvo 244 Turbo (Schweden, 1981)": {
     "gewicht": 1310,
@@ -1557,7 +1685,9 @@
     "neupreis_eur": 18000,
     "baujahr_ende": 1984,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Manta 400 (Deutschland, 1982)": {
     "gewicht": 970,
@@ -1581,7 +1711,9 @@
     "neupreis_eur": 22000,
     "baujahr_ende": 1988,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Corsa A (Deutschland, 1982)": {
     "gewicht": 730,
@@ -1605,7 +1737,9 @@
     "neupreis_eur": 8000,
     "baujahr_ende": 1993,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Kadett D SR (Deutschland, 1982)": {
     "gewicht": 870,
@@ -1629,7 +1763,9 @@
     "neupreis_eur": 9500,
     "baujahr_ende": 1984,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 316 E30 (Deutschland, 1982)": {
     "gewicht": 1070,
@@ -1653,7 +1789,9 @@
     "neupreis_eur": 16500,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 190 W201 (Deutschland, 1982)": {
     "gewicht": 1060,
@@ -1677,7 +1815,9 @@
     "neupreis_eur": 18500,
     "baujahr_ende": 1993,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Sierra (Deutschland, 1982)": {
     "gewicht": 1050,
@@ -1701,7 +1841,9 @@
     "neupreis_eur": 13000,
     "baujahr_ende": 1993,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Golf 2 (Deutschland, 1983)": {
     "gewicht": 870,
@@ -1725,7 +1867,9 @@
     "neupreis_eur": 11000,
     "baujahr_ende": 1992,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.9,
+    "zuladung_kg": 430
   },
   "Peugeot 205 (Frankreich, 1983)": {
     "gewicht": 760,
@@ -1749,7 +1893,9 @@
     "neupreis_eur": 7500,
     "baujahr_ende": 1998,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Fiat Uno (Italien, 1983)": {
     "gewicht": 720,
@@ -1773,7 +1919,9 @@
     "neupreis_eur": 6500,
     "baujahr_ende": 2013,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Peugeot 205 GTI (Frankreich, 1984)": {
     "gewicht": 890,
@@ -1797,7 +1945,9 @@
     "neupreis_eur": 13000,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi Sport Quattro (Deutschland, 1984)": {
     "gewicht": 1305,
@@ -1821,7 +1971,9 @@
     "neupreis_eur": 56000,
     "baujahr_ende": 1987,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 190E 2.3-16 Cosworth (Deutschland, 1984)": {
     "gewicht": 1160,
@@ -1845,7 +1997,9 @@
     "neupreis_eur": 36000,
     "baujahr_ende": 1988,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ferrari Testarossa (Italien, 1984)": {
     "gewicht": 1506,
@@ -1869,7 +2023,9 @@
     "neupreis_eur": 95000,
     "baujahr_ende": 1996,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Kadett E (Deutschland, 1984)": {
     "gewicht": 870,
@@ -1893,7 +2049,9 @@
     "neupreis_eur": 10000,
     "baujahr_ende": 1991,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 200 E W124 (Deutschland, 1984)": {
     "gewicht": 1250,
@@ -1917,7 +2075,9 @@
     "neupreis_eur": 26000,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "SEAT Ibiza Mk1 (Spanien, 1984)": {
     "gewicht": 780,
@@ -1941,7 +2101,9 @@
     "neupreis_eur": 7000,
     "baujahr_ende": 1993,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "UMM Alter II (Portugal, 1985)": {
     "gewicht": 1450,
@@ -1965,7 +2127,9 @@
     "neupreis_eur": 12000,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B2 GLI 5-Zyl (Deutschland, 1985)": {
     "gewicht": 1080,
@@ -1989,7 +2153,9 @@
     "neupreis_eur": 16000,
     "baujahr_ende": 1988,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "BMW M535i E28 (Deutschland, 1985)": {
     "gewicht": 1350,
@@ -2013,7 +2179,9 @@
     "neupreis_eur": 34000,
     "baujahr_ende": 1987,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Fiat Uno Turbo i.e. (Italien, 1985)": {
     "gewicht": 870,
@@ -2037,7 +2205,9 @@
     "neupreis_eur": 12000,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 560 SEL W126 (Deutschland, 1985)": {
     "gewicht": 1970,
@@ -2061,7 +2231,9 @@
     "neupreis_eur": 65000,
     "baujahr_ende": 1991,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M3 E30 (Deutschland, 1986)": {
     "gewicht": 1165,
@@ -2085,7 +2257,9 @@
     "neupreis_eur": 38000,
     "baujahr_ende": 1992,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Sierra RS Cosworth (UK, 1986)": {
     "gewicht": 1180,
@@ -2109,7 +2283,9 @@
     "neupreis_eur": 22000,
     "baujahr_ende": 1992,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 730i E32 (Deutschland, 1986)": {
     "gewicht": 1680,
@@ -2133,7 +2309,9 @@
     "neupreis_eur": 46000,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Golf 2 GTI 16V (VW, Deutschland, 1987)": {
     "gewicht": 955,
@@ -2157,7 +2335,9 @@
     "neupreis_eur": 20000,
     "baujahr_ende": 1992,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Kadett E GSi (Deutschland, 1987)": {
     "gewicht": 985,
@@ -2181,7 +2361,9 @@
     "neupreis_eur": 18000,
     "baujahr_ende": 1991,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ferrari F40 (Italien, 1987)": {
     "gewicht": 1100,
@@ -2205,7 +2387,9 @@
     "neupreis_eur": 250000,
     "baujahr_ende": 1992,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 2 G40 (Deutschland, 1987)": {
     "gewicht": 815,
@@ -2229,7 +2413,9 @@
     "neupreis_eur": 15000,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "Opel Corsa A GSi (Deutschland, 1987)": {
     "gewicht": 830,
@@ -2253,7 +2439,9 @@
     "neupreis_eur": 14000,
     "baujahr_ende": 1993,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 750iL E32 (Deutschland, 1987)": {
     "gewicht": 1960,
@@ -2277,7 +2465,9 @@
     "neupreis_eur": 90000,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M5 E34 (Deutschland, 1988)": {
     "gewicht": 1670,
@@ -2301,7 +2491,9 @@
     "neupreis_eur": 72000,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B3 (Deutschland, 1988)": {
     "gewicht": 1030,
@@ -2325,7 +2517,9 @@
     "neupreis_eur": 19000,
     "baujahr_ende": 1993,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Opel Vectra A (Deutschland, 1988)": {
     "gewicht": 1070,
@@ -2349,7 +2543,9 @@
     "neupreis_eur": 17000,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 518i E34 (Deutschland, 1988)": {
     "gewicht": 1280,
@@ -2373,7 +2569,9 @@
     "neupreis_eur": 26000,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Toyota MR2 SW20 (Japan, 1989)": {
     "gewicht": 1220,
@@ -2397,7 +2595,9 @@
     "neupreis_eur": 22000,
     "baujahr_ende": 1999,
     "nordschleife": 0,
-    "konzern": "Toyota"
+    "konzern": "Toyota",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Nissan Skyline R32 GT-R (Japan, 1989)": {
     "gewicht": 1430,
@@ -2421,7 +2621,9 @@
     "neupreis_eur": 27000,
     "baujahr_ende": 1994,
     "nordschleife": 440,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mazda MX-5 NA (Japan, 1989)": {
     "gewicht": 955,
@@ -2445,7 +2647,9 @@
     "neupreis_eur": 15000,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Mazda"
+    "konzern": "Mazda",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B3 G60 Syncro (Deutschland, 1989)": {
     "gewicht": 1280,
@@ -2469,7 +2673,9 @@
     "neupreis_eur": 28000,
     "baujahr_ende": 1993,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Opel Vectra A GSi 16V (Deutschland, 1989)": {
     "gewicht": 1160,
@@ -2493,7 +2699,9 @@
     "neupreis_eur": 28000,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz SL 300 R129 (Deutschland, 1989)": {
     "gewicht": 1690,
@@ -2517,7 +2725,9 @@
     "neupreis_eur": 75000,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz G 300 W463 (Deutschland, 1989)": {
     "gewicht": 2100,
@@ -2541,7 +2751,9 @@
     "neupreis_eur": 65000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Fiesta Mk3 (Deutschland, 1989)": {
     "gewicht": 820,
@@ -2565,7 +2777,9 @@
     "neupreis_eur": 11000,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 10.4,
+    "zuladung_kg": 432
   },
   "Honda NSX (Japan, 1990)": {
     "gewicht": 1370,
@@ -2589,7 +2803,9 @@
     "neupreis_eur": 65000,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "Honda"
+    "konzern": "Honda",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 316i E36 (Deutschland, 1990)": {
     "gewicht": 1170,
@@ -2613,7 +2829,9 @@
     "neupreis_eur": 22000,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Clio I (Frankreich, 1990)": {
     "gewicht": 840,
@@ -2637,7 +2855,9 @@
     "neupreis_eur": 9500,
     "baujahr_ende": 1998,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Opel Calibra (Deutschland, 1990)": {
     "gewicht": 1110,
@@ -2661,7 +2881,9 @@
     "neupreis_eur": 18300,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Golf 3 (Deutschland, 1991)": {
     "gewicht": 1050,
@@ -2685,7 +2907,9 @@
     "neupreis_eur": 16400,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.9,
+    "zuladung_kg": 430
   },
   "Opel Astra F (Deutschland, 1991)": {
     "gewicht": 1020,
@@ -2709,7 +2933,9 @@
     "neupreis_eur": 15200,
     "baujahr_ende": 1998,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 300 SE W140 (Deutschland, 1991)": {
     "gewicht": 1910,
@@ -2733,7 +2959,9 @@
     "neupreis_eur": 61900,
     "baujahr_ende": 1998,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Volvo 850 (Schweden, 1991)": {
     "gewicht": 1360,
@@ -2757,7 +2985,9 @@
     "neupreis_eur": 27000,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mazda RX-7 FD (Japan, 1992)": {
     "gewicht": 1280,
@@ -2781,7 +3011,9 @@
     "neupreis_eur": 38000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Mazda"
+    "konzern": "Mazda",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "McLaren F1 (UK, 1992)": {
     "gewicht": 1138,
@@ -2805,7 +3037,9 @@
     "neupreis_eur": 540000,
     "baujahr_ende": 1998,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Golf 3 GTI 2.0 (VW, Deutschland, 1992)": {
     "gewicht": 1095,
@@ -2829,7 +3063,9 @@
     "neupreis_eur": 21500,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Corrado VR6 (Deutschland, 1992)": {
     "gewicht": 1290,
@@ -2853,7 +3089,9 @@
     "neupreis_eur": 28000,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Lancia Delta HF Integrale Evo (Italien, 1992)": {
     "gewicht": 1350,
@@ -2877,7 +3115,9 @@
     "neupreis_eur": 35000,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mitsubishi 3000GT VR4 (Japan, 1992)": {
     "gewicht": 1740,
@@ -2901,7 +3141,9 @@
     "neupreis_eur": 43000,
     "baujahr_ende": 1999,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Jaguar XJ220 (UK, 1992)": {
     "gewicht": 1470,
@@ -2925,7 +3167,9 @@
     "neupreis_eur": 470000,
     "baujahr_ende": 1994,
     "nordschleife": 0,
-    "konzern": "Tata"
+    "konzern": "Tata",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz 500E W124 (Deutschland, 1992)": {
     "gewicht": 1680,
@@ -2949,7 +3193,9 @@
     "neupreis_eur": 56500,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Astra F GSi 16V (Deutschland, 1992)": {
     "gewicht": 1120,
@@ -2973,7 +3219,9 @@
     "neupreis_eur": 22500,
     "baujahr_ende": 1996,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M3 E36 (Deutschland, 1992)": {
     "gewicht": 1460,
@@ -2997,7 +3245,9 @@
     "neupreis_eur": 50000,
     "baujahr_ende": 1999,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo 155 1.8 TS (Italien, 1992)": {
     "gewicht": 1210,
@@ -3021,7 +3271,9 @@
     "neupreis_eur": 25000,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo 155 Q4 (Italien, 1992)": {
     "gewicht": 1460,
@@ -3045,7 +3297,9 @@
     "neupreis_eur": 46000,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz S 600 W140 (Deutschland, 1992)": {
     "gewicht": 2090,
@@ -3069,7 +3323,9 @@
     "neupreis_eur": 130000,
     "baujahr_ende": 1998,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Calibra Turbo 4x4 (Deutschland, 1992)": {
     "gewicht": 1365,
@@ -3093,7 +3349,9 @@
     "neupreis_eur": 42000,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Fiesta XR2i 16V (Deutschland, 1992)": {
     "gewicht": 955,
@@ -3117,7 +3375,9 @@
     "neupreis_eur": 16500,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 10.4,
+    "zuladung_kg": 432
   },
   "Toyota Supra MK4 (Japan, 1993)": {
     "gewicht": 1570,
@@ -3141,7 +3401,9 @@
     "neupreis_eur": 60000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Toyota"
+    "konzern": "Toyota",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B4 (Deutschland, 1993)": {
     "gewicht": 1175,
@@ -3165,7 +3427,9 @@
     "neupreis_eur": 24000,
     "baujahr_ende": 1996,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Opel Corsa B (Deutschland, 1993)": {
     "gewicht": 890,
@@ -3189,7 +3453,9 @@
     "neupreis_eur": 12500,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz C 180 W202 (Deutschland, 1993)": {
     "gewicht": 1290,
@@ -3213,7 +3479,9 @@
     "neupreis_eur": 29000,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Clio I Williams (Frankreich, 1993)": {
     "gewicht": 970,
@@ -3237,7 +3505,9 @@
     "neupreis_eur": 20000,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Fiat Punto Mk1 (Italien, 1993)": {
     "gewicht": 880,
@@ -3261,7 +3531,9 @@
     "neupreis_eur": 11500,
     "baujahr_ende": 1999,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi RS2 Avant (Deutschland, 1994)": {
     "gewicht": 1595,
@@ -3285,7 +3557,9 @@
     "neupreis_eur": 62000,
     "baujahr_ende": 1995,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Toyota Celica GT-Four (Japan, 1994)": {
     "gewicht": 1380,
@@ -3309,7 +3583,9 @@
     "neupreis_eur": 37000,
     "baujahr_ende": 1999,
     "nordschleife": 0,
-    "konzern": "Toyota"
+    "konzern": "Toyota",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Volvo 850 T5-R (Schweden, 1994)": {
     "gewicht": 1430,
@@ -3333,7 +3609,9 @@
     "neupreis_eur": 44000,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 3 (Deutschland, 1994)": {
     "gewicht": 875,
@@ -3357,7 +3635,9 @@
     "neupreis_eur": 13500,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "VW Passat B4 VR6 (Deutschland, 1994)": {
     "gewicht": 1340,
@@ -3381,7 +3661,9 @@
     "neupreis_eur": 34000,
     "baujahr_ende": 1996,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Mercedes-Benz C 36 AMG W202 (Deutschland, 1994)": {
     "gewicht": 1490,
@@ -3405,7 +3687,9 @@
     "neupreis_eur": 72000,
     "baujahr_ende": 1997,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A4 B5 (Deutschland, 1994)": {
     "gewicht": 1235,
@@ -3429,7 +3713,9 @@
     "neupreis_eur": 28500,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.0,
+    "zuladung_kg": 530
   },
   "Fiat Punto GT (Italien, 1994)": {
     "gewicht": 1010,
@@ -3453,7 +3739,9 @@
     "neupreis_eur": 22000,
     "baujahr_ende": 1999,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 728i E38 (Deutschland, 1994)": {
     "gewicht": 1760,
@@ -3477,7 +3765,9 @@
     "neupreis_eur": 57000,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 750iL E38 (Deutschland, 1994)": {
     "gewicht": 1985,
@@ -3501,7 +3791,9 @@
     "neupreis_eur": 110000,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A8 2.8 D2 (Deutschland, 1994)": {
     "gewicht": 1840,
@@ -3525,7 +3817,9 @@
     "neupreis_eur": 72000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Corsa B GSi (Deutschland, 1995)": {
     "gewicht": 975,
@@ -3549,7 +3843,9 @@
     "neupreis_eur": 18500,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Vectra B (Deutschland, 1995)": {
     "gewicht": 1290,
@@ -3573,7 +3869,9 @@
     "neupreis_eur": 24000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz E 200 W210 (Deutschland, 1995)": {
     "gewicht": 1430,
@@ -3597,7 +3895,9 @@
     "neupreis_eur": 34000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Megane I (Frankreich, 1995)": {
     "gewicht": 1060,
@@ -3621,7 +3921,9 @@
     "neupreis_eur": 17500,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Dodge Viper GTS (USA, 1996)": {
     "gewicht": 1550,
@@ -3645,7 +3947,9 @@
     "neupreis_eur": 72000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Peugeot 306 Maxi Kit Car (Frankreich, 1996)": {
     "gewicht": 960,
@@ -3669,7 +3973,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 1999,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Lotus Elise S1 (UK, 1996)": {
     "gewicht": 725,
@@ -3693,7 +3999,9 @@
     "neupreis_eur": 24000,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B5 (Deutschland, 1996)": {
     "gewicht": 1340,
@@ -3717,7 +4025,9 @@
     "neupreis_eur": 28000,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "BMW 520i E39 (Deutschland, 1996)": {
     "gewicht": 1510,
@@ -3741,7 +4051,9 @@
     "neupreis_eur": 40000,
     "baujahr_ende": 2003,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A3 8L (Deutschland, 1996)": {
     "gewicht": 1110,
@@ -3765,7 +4077,9 @@
     "neupreis_eur": 24000,
     "baujahr_ende": 2003,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.7,
+    "zuladung_kg": 425
   },
   "Škoda Octavia I (Tschechien, 1996)": {
     "gewicht": 1185,
@@ -3789,7 +4103,9 @@
     "neupreis_eur": 16000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi S8 D2 (Deutschland, 1996)": {
     "gewicht": 1895,
@@ -3813,7 +4129,9 @@
     "neupreis_eur": 105000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Boxster 986 (Deutschland, 1996)": {
     "gewicht": 1250,
@@ -3837,7 +4155,9 @@
     "neupreis_eur": 50000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Volvo V70 (Schweden, 1996)": {
     "gewicht": 1530,
@@ -3861,7 +4181,9 @@
     "neupreis_eur": 36000,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Honda Civic Type R EK9 (Japan, 1997)": {
     "gewicht": 1050,
@@ -3885,7 +4207,9 @@
     "neupreis_eur": 23000,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "Honda"
+    "konzern": "Honda",
+    "wendekreis_m": 10.6,
+    "zuladung_kg": 400
   },
   "VW Golf 4 (Deutschland, 1997)": {
     "gewicht": 1200,
@@ -3909,7 +4233,9 @@
     "neupreis_eur": 21000,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.9,
+    "zuladung_kg": 430
   },
   "Mercedes-Benz E 55 AMG W210 (Deutschland, 1997)": {
     "gewicht": 1775,
@@ -3933,7 +4259,9 @@
     "neupreis_eur": 97000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo 156 1.6 TS (Italien, 1997)": {
     "gewicht": 1270,
@@ -3957,7 +4285,9 @@
     "neupreis_eur": 23000,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz A 140 W168 (Deutschland, 1997)": {
     "gewicht": 1020,
@@ -3981,7 +4311,9 @@
     "neupreis_eur": 19500,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi TT 8N (Deutschland, 1998)": {
     "gewicht": 1290,
@@ -4005,7 +4337,9 @@
     "neupreis_eur": 34000,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Smart Fortwo (Deutschland, 1998)": {
     "gewicht": 730,
@@ -4029,7 +4363,9 @@
     "neupreis_eur": 10000,
     "baujahr_ende": 2007,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 3 GTI 16V (Deutschland, 1998)": {
     "gewicht": 1075,
@@ -4053,7 +4389,9 @@
     "neupreis_eur": 18500,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "Opel Astra G (Deutschland, 1998)": {
     "gewicht": 1175,
@@ -4077,7 +4415,9 @@
     "neupreis_eur": 18000,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 316i E46 (Deutschland, 1998)": {
     "gewicht": 1365,
@@ -4101,7 +4441,9 @@
     "neupreis_eur": 27000,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M5 E39 (Deutschland, 1998)": {
     "gewicht": 1795,
@@ -4125,7 +4467,9 @@
     "neupreis_eur": 98000,
     "baujahr_ende": 2003,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Peugeot 206 (Frankreich, 1998)": {
     "gewicht": 990,
@@ -4149,7 +4493,9 @@
     "neupreis_eur": 13000,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Clio II (Frankreich, 1998)": {
     "gewicht": 975,
@@ -4173,7 +4519,9 @@
     "neupreis_eur": 12500,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Mercedes-Benz G 500 W463 (Deutschland, 1998)": {
     "gewicht": 2370,
@@ -4197,7 +4545,9 @@
     "neupreis_eur": 95000,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Focus Mk1 (Deutschland, 1998)": {
     "gewicht": 1150,
@@ -4221,7 +4571,9 @@
     "neupreis_eur": 18000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 11.1,
+    "zuladung_kg": 508
   },
   "Volvo V70 R (Schweden, 1998)": {
     "gewicht": 1582,
@@ -4245,7 +4597,9 @@
     "neupreis_eur": 52000,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Saab 9-3 (Schweden, 1998)": {
     "gewicht": 1370,
@@ -4269,7 +4623,9 @@
     "neupreis_eur": 28000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Nissan Skyline R34 GT-R (Japan, 1999)": {
     "gewicht": 1560,
@@ -4293,7 +4649,9 @@
     "neupreis_eur": 58000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Vectra B V6 (Deutschland, 1999)": {
     "gewicht": 1430,
@@ -4317,7 +4675,9 @@
     "neupreis_eur": 30000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi S3 8L (Deutschland, 1999)": {
     "gewicht": 1415,
@@ -4341,7 +4701,9 @@
     "neupreis_eur": 38000,
     "baujahr_ende": 2003,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Peugeot 206 GTI 2.0 (Frankreich, 1999)": {
     "gewicht": 1090,
@@ -4365,7 +4727,9 @@
     "neupreis_eur": 19000,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Megane I RS 2.0 (Frankreich, 1999)": {
     "gewicht": 1110,
@@ -4389,7 +4753,9 @@
     "neupreis_eur": 19500,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Fiat Punto Mk2 (Italien, 1999)": {
     "gewicht": 1020,
@@ -4413,7 +4779,9 @@
     "neupreis_eur": 12000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW X5 3.0i E53 (Deutschland, 1999)": {
     "gewicht": 2035,
@@ -4437,7 +4805,9 @@
     "neupreis_eur": 58000,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": 12.6,
+    "zuladung_kg": 625
   },
   "Mercedes-Benz SL 73 AMG R129 (Deutschland, 1999)": {
     "gewicht": 1990,
@@ -4461,7 +4831,9 @@
     "neupreis_eur": 295000,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "SEAT Ibiza Cupra (Spanien, 2000)": {
     "gewicht": 1165,
@@ -4485,7 +4857,9 @@
     "neupreis_eur": 21000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Spyker C8 (Niederlande, 2000)": {
     "gewicht": 1100,
@@ -4509,7 +4883,9 @@
     "neupreis_eur": 160000,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW Z8 (Deutschland, 2000)": {
     "gewicht": 1585,
@@ -4533,7 +4909,9 @@
     "neupreis_eur": 129000,
     "baujahr_ende": 2003,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Honda S2000 (Japan, 2000)": {
     "gewicht": 1270,
@@ -4557,7 +4935,9 @@
     "neupreis_eur": 32000,
     "baujahr_ende": 2009,
     "nordschleife": 0,
-    "konzern": "Honda"
+    "konzern": "Honda",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "TVR Cerbera Speed 12 (UK, 2000)": {
     "gewicht": 1000,
@@ -4581,7 +4961,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 2000,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Corsa C (Deutschland, 2000)": {
     "gewicht": 1045,
@@ -4605,7 +4987,9 @@
     "neupreis_eur": 12500,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M3 E46 (Deutschland, 2000)": {
     "gewicht": 1495,
@@ -4629,7 +5013,9 @@
     "neupreis_eur": 55000,
     "baujahr_ende": 2006,
     "nordschleife": 476,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz C 180 W203 (Deutschland, 2000)": {
     "gewicht": 1390,
@@ -4653,7 +5039,9 @@
     "neupreis_eur": 26500,
     "baujahr_ende": 2007,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi RS4 B5 (Deutschland, 2000)": {
     "gewicht": 1620,
@@ -4677,7 +5065,9 @@
     "neupreis_eur": 68000,
     "baujahr_ende": 2001,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A4 B6 (Deutschland, 2000)": {
     "gewicht": 1425,
@@ -4701,7 +5091,9 @@
     "neupreis_eur": 27000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.0,
+    "zuladung_kg": 530
   },
   "Mercedes-Benz A 210 Evo W168 (Deutschland, 2000)": {
     "gewicht": 1165,
@@ -4725,7 +5117,9 @@
     "neupreis_eur": 25500,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Boxster S 986 (Deutschland, 2000)": {
     "gewicht": 1295,
@@ -4749,7 +5143,9 @@
     "neupreis_eur": 56000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 4 (Deutschland, 2001)": {
     "gewicht": 1055,
@@ -4773,7 +5169,9 @@
     "neupreis_eur": 14000,
     "baujahr_ende": 2009,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "VW Passat B5 W8 (Deutschland, 2001)": {
     "gewicht": 1755,
@@ -4797,7 +5195,9 @@
     "neupreis_eur": 50000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Mercedes-Benz C 32 AMG W203 (Deutschland, 2001)": {
     "gewicht": 1590,
@@ -4821,7 +5221,9 @@
     "neupreis_eur": 55000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Clio II RS (Frankreich, 2001)": {
     "gewicht": 1090,
@@ -4845,7 +5247,9 @@
     "neupreis_eur": 20000,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Škoda Octavia I RS (Tschechien, 2001)": {
     "gewicht": 1390,
@@ -4869,7 +5273,9 @@
     "neupreis_eur": 28000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 730i E65 (Deutschland, 2001)": {
     "gewicht": 1695,
@@ -4893,7 +5299,9 @@
     "neupreis_eur": 68000,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW Mini One R50 (Vereinigtes Königreich, 2001)": {
     "gewicht": 1085,
@@ -4917,7 +5325,9 @@
     "neupreis_eur": 17000,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Golf 4 R32 (VW, Deutschland, 2002)": {
     "gewicht": 1511,
@@ -4941,7 +5351,9 @@
     "neupreis_eur": 31000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Phaeton W12 (Deutschland, 2002)": {
     "gewicht": 2303,
@@ -4965,7 +5377,9 @@
     "neupreis_eur": 104000,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Saab 9-3 Aero (Schweden, 2002)": {
     "gewicht": 1420,
@@ -4989,7 +5403,9 @@
     "neupreis_eur": 36000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo 147 GTA (Italien, 2002)": {
     "gewicht": 1370,
@@ -5013,7 +5429,9 @@
     "neupreis_eur": 38000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Astra G OPC (Deutschland, 2002)": {
     "gewicht": 1295,
@@ -5037,7 +5455,9 @@
     "neupreis_eur": 25000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Vectra C (Deutschland, 2002)": {
     "gewicht": 1440,
@@ -5061,7 +5481,9 @@
     "neupreis_eur": 22000,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz E 200 W211 (Deutschland, 2002)": {
     "gewicht": 1530,
@@ -5085,7 +5507,9 @@
     "neupreis_eur": 37000,
     "baujahr_ende": 2009,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz E 55 AMG W211 (Deutschland, 2002)": {
     "gewicht": 1800,
@@ -5109,7 +5533,9 @@
     "neupreis_eur": 88000,
     "baujahr_ende": 2006,
     "nordschleife": 478,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Megane II (Frankreich, 2002)": {
     "gewicht": 1225,
@@ -5133,7 +5559,9 @@
     "neupreis_eur": 17500,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Fiat Punto HGT Abarth (Italien, 2002)": {
     "gewicht": 1085,
@@ -5157,7 +5585,9 @@
     "neupreis_eur": 16500,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo 156 GTA (Italien, 2002)": {
     "gewicht": 1430,
@@ -5181,7 +5611,9 @@
     "neupreis_eur": 40000,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW X5 4.6is E53 (Deutschland, 2002)": {
     "gewicht": 2310,
@@ -5205,7 +5637,9 @@
     "neupreis_eur": 75000,
     "baujahr_ende": 2003,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": 12.6,
+    "zuladung_kg": 625
   },
   "Audi A8 3.0 D3 (Deutschland, 2002)": {
     "gewicht": 1895,
@@ -5229,7 +5663,9 @@
     "neupreis_eur": 68000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Cayenne V6 9PA (Deutschland, 2002)": {
     "gewicht": 2175,
@@ -5253,7 +5689,9 @@
     "neupreis_eur": 54900,
     "baujahr_ende": 2007,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 12.3,
+    "zuladung_kg": 615
   },
   "Porsche Cayenne Turbo 9PA (Deutschland, 2002)": {
     "gewicht": 2355,
@@ -5277,7 +5715,9 @@
     "neupreis_eur": 89900,
     "baujahr_ende": 2007,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 12.3,
+    "zuladung_kg": 615
   },
   "Ford Focus RS Mk1 (Vereinigtes Königreich, 2002)": {
     "gewicht": 1278,
@@ -5301,7 +5741,9 @@
     "neupreis_eur": 22000,
     "baujahr_ende": 2002,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 11.1,
+    "zuladung_kg": 508
   },
   "Volvo XC90 T5 Gen1 (Schweden, 2002)": {
     "gewicht": 2005,
@@ -5325,7 +5767,9 @@
     "neupreis_eur": 42000,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW Mini Cooper S R53 (Vereinigtes Königreich, 2002)": {
     "gewicht": 1140,
@@ -5349,7 +5793,9 @@
     "neupreis_eur": 19500,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": 10.7,
+    "zuladung_kg": 365
   },
   "Bentley Continental GT (UK, 2003)": {
     "gewicht": 2385,
@@ -5373,7 +5819,9 @@
     "neupreis_eur": 150000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Gillet Vertigo (Belgien, 2003)": {
     "gewicht": 525,
@@ -5397,7 +5845,9 @@
     "neupreis_eur": 115000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Carrera GT (Deutschland, 2003)": {
     "gewicht": 1380,
@@ -5421,7 +5871,9 @@
     "neupreis_eur": 452000,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Clio V6 Phase 2 (Frankreich, 2003)": {
     "gewicht": 1335,
@@ -5445,7 +5897,9 @@
     "neupreis_eur": 34500,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Mazda RX-8 (Japan, 2003)": {
     "gewicht": 1310,
@@ -5469,7 +5923,9 @@
     "neupreis_eur": 28500,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Mazda"
+    "konzern": "Mazda",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Seat Leon Cupra R (Spanien, 2003)": {
     "gewicht": 1310,
@@ -5493,7 +5949,9 @@
     "neupreis_eur": 25000,
     "baujahr_ende": 2005,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Golf 5 (Deutschland, 2003)": {
     "gewicht": 1246,
@@ -5517,7 +5975,9 @@
     "neupreis_eur": 16200,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.9,
+    "zuladung_kg": 430
   },
   "Opel Corsa C OPC (Deutschland, 2003)": {
     "gewicht": 1175,
@@ -5541,7 +6001,9 @@
     "neupreis_eur": 16500,
     "baujahr_ende": 2006,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Vectra C OPC (Deutschland, 2003)": {
     "gewicht": 1490,
@@ -5565,7 +6027,9 @@
     "neupreis_eur": 32000,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 520i E60 (Deutschland, 2003)": {
     "gewicht": 1530,
@@ -5589,7 +6053,9 @@
     "neupreis_eur": 35000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A3 8P (Deutschland, 2003)": {
     "gewicht": 1215,
@@ -5613,7 +6079,9 @@
     "neupreis_eur": 19500,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.7,
+    "zuladung_kg": 425
   },
   "K1 Attack (Slowakei, 2003)": {
     "gewicht": 550,
@@ -5637,7 +6105,9 @@
     "neupreis_eur": 58000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 760Li E65 (Deutschland, 2003)": {
     "gewicht": 2095,
@@ -5661,7 +6131,9 @@
     "neupreis_eur": 120000,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Golf 5 GTI (VW, Deutschland, 2004)": {
     "gewicht": 1320,
@@ -5685,7 +6157,9 @@
     "neupreis_eur": 23500,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Astra H (Deutschland, 2004)": {
     "gewicht": 1230,
@@ -5709,7 +6183,9 @@
     "neupreis_eur": 16000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M5 E60 (Deutschland, 2004)": {
     "gewicht": 1755,
@@ -5733,7 +6209,9 @@
     "neupreis_eur": 85000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi RS4 B6 (Deutschland, 2004)": {
     "gewicht": 1650,
@@ -5757,7 +6235,9 @@
     "neupreis_eur": 57000,
     "baujahr_ende": 2004,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Megane II RS 225 (Frankreich, 2004)": {
     "gewicht": 1326,
@@ -5781,7 +6261,9 @@
     "neupreis_eur": 22500,
     "baujahr_ende": 2009,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Škoda Octavia II (Tschechien, 2004)": {
     "gewicht": 1280,
@@ -5805,7 +6287,9 @@
     "neupreis_eur": 15500,
     "baujahr_ende": 2013,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 116i E87 (Deutschland, 2004)": {
     "gewicht": 1255,
@@ -5829,7 +6313,9 @@
     "neupreis_eur": 20500,
     "baujahr_ende": 2011,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Focus Mk2 (Deutschland, 2004)": {
     "gewicht": 1230,
@@ -5853,7 +6339,9 @@
     "neupreis_eur": 16000,
     "baujahr_ende": 2011,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 11.1,
+    "zuladung_kg": 508
   },
   "Bugatti Veyron 16.4 (Frankreich, 2005)": {
     "gewicht": 1888,
@@ -5877,7 +6365,9 @@
     "neupreis_eur": 1000000,
     "baujahr_ende": 2011,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Subaru Impreza WRX STI (Japan, 2005)": {
     "gewicht": 1470,
@@ -5901,7 +6391,9 @@
     "neupreis_eur": 32000,
     "baujahr_ende": 2007,
     "nordschleife": 0,
-    "konzern": "Subaru"
+    "konzern": "Subaru",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mitsubishi Lancer Evo IX (Japan, 2005)": {
     "gewicht": 1410,
@@ -5925,7 +6417,9 @@
     "neupreis_eur": 33500,
     "baujahr_ende": 2007,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Pagani Zonda F (Italien, 2005)": {
     "gewicht": 1230,
@@ -5949,7 +6443,9 @@
     "neupreis_eur": 650000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B6 (Deutschland, 2005)": {
     "gewicht": 1405,
@@ -5973,7 +6469,9 @@
     "neupreis_eur": 23000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Opel Astra H OPC (Deutschland, 2005)": {
     "gewicht": 1390,
@@ -5997,7 +6495,9 @@
     "neupreis_eur": 27000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 316i E90 (Deutschland, 2005)": {
     "gewicht": 1430,
@@ -6021,7 +6521,9 @@
     "neupreis_eur": 24500,
     "baujahr_ende": 2011,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A4 B7 (Deutschland, 2005)": {
     "gewicht": 1430,
@@ -6045,7 +6547,9 @@
     "neupreis_eur": 27000,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.0,
+    "zuladung_kg": 530
   },
   "Audi RS4 B7 (Deutschland, 2005)": {
     "gewicht": 1680,
@@ -6069,7 +6573,9 @@
     "neupreis_eur": 60000,
     "baujahr_ende": 2008,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Clio III (Frankreich, 2005)": {
     "gewicht": 1068,
@@ -6093,7 +6599,9 @@
     "neupreis_eur": 13000,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Fiat Grande Punto (Italien, 2005)": {
     "gewicht": 1090,
@@ -6117,7 +6625,9 @@
     "neupreis_eur": 11500,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 130i E87 (Deutschland, 2005)": {
     "gewicht": 1385,
@@ -6141,7 +6651,9 @@
     "neupreis_eur": 28500,
     "baujahr_ende": 2011,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz S 350 W221 (Deutschland, 2005)": {
     "gewicht": 1945,
@@ -6165,7 +6677,9 @@
     "neupreis_eur": 72000,
     "baujahr_ende": 2013,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Focus ST Mk2 (Vereinigtes Königreich, 2005)": {
     "gewicht": 1335,
@@ -6189,7 +6703,9 @@
     "neupreis_eur": 22500,
     "baujahr_ende": 2011,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 11.1,
+    "zuladung_kg": 508
   },
   "Volvo XC90 V8 Gen1 (Schweden, 2005)": {
     "gewicht": 2241,
@@ -6213,7 +6729,9 @@
     "neupreis_eur": 60000,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz C63 AMG (Deutschland, 2006)": {
     "gewicht": 1730,
@@ -6237,7 +6755,9 @@
     "neupreis_eur": 61000,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche 911 GT3 RS (Deutschland, 2006)": {
     "gewicht": 1375,
@@ -6261,7 +6781,9 @@
     "neupreis_eur": 130000,
     "baujahr_ende": 2009,
     "nordschleife": 487,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.6,
+    "zuladung_kg": 380
   },
   "VW Polo 4 GTI (Deutschland, 2006)": {
     "gewicht": 1175,
@@ -6285,7 +6807,9 @@
     "neupreis_eur": 17000,
     "baujahr_ende": 2009,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "Opel Corsa D (Deutschland, 2006)": {
     "gewicht": 1090,
@@ -6309,7 +6833,9 @@
     "neupreis_eur": 11000,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Peugeot 207 (Frankreich, 2006)": {
     "gewicht": 1085,
@@ -6333,7 +6859,9 @@
     "neupreis_eur": 13000,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Clio III RS 197 (Frankreich, 2006)": {
     "gewicht": 1185,
@@ -6357,7 +6885,9 @@
     "neupreis_eur": 21500,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Škoda Octavia II RS (Tschechien, 2006)": {
     "gewicht": 1380,
@@ -6381,7 +6911,9 @@
     "neupreis_eur": 24000,
     "baujahr_ende": 2013,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz S 65 AMG W221 (Deutschland, 2006)": {
     "gewicht": 2150,
@@ -6405,7 +6937,9 @@
     "neupreis_eur": 200000,
     "baujahr_ende": 2013,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi S8 D3 (Deutschland, 2006)": {
     "gewicht": 1985,
@@ -6429,7 +6963,9 @@
     "neupreis_eur": 97000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi TT 1.8 TFSI 8J (Deutschland, 2006)": {
     "gewicht": 1285,
@@ -6453,7 +6989,9 @@
     "neupreis_eur": 29500,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Nissan GT-R R35 (Japan, 2007)": {
     "gewicht": 1740,
@@ -6477,7 +7015,9 @@
     "neupreis_eur": 80000,
     "baujahr_ende": 0,
     "nordschleife": 473,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Corsa OPC (Deutschland, 2007)": {
     "gewicht": 1175,
@@ -6501,7 +7041,9 @@
     "neupreis_eur": 21990,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Smart Fortwo Brabus (Deutschland, 2007)": {
     "gewicht": 760,
@@ -6525,7 +7067,9 @@
     "neupreis_eur": 15990,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo 8C Competizione (Italien, 2007)": {
     "gewicht": 1585,
@@ -6549,7 +7093,9 @@
     "neupreis_eur": 143000,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B6 R36 (Deutschland, 2007)": {
     "gewicht": 1695,
@@ -6573,7 +7119,9 @@
     "neupreis_eur": 42500,
     "baujahr_ende": 2010,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Mercedes-Benz C 180 W204 (Deutschland, 2007)": {
     "gewicht": 1455,
@@ -6597,7 +7145,9 @@
     "neupreis_eur": 31500,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A4 B8 (Deutschland, 2007)": {
     "gewicht": 1480,
@@ -6621,7 +7171,9 @@
     "neupreis_eur": 31900,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.0,
+    "zuladung_kg": 530
   },
   "Peugeot 207 GTI (Frankreich, 2007)": {
     "gewicht": 1217,
@@ -6645,7 +7197,9 @@
     "neupreis_eur": 21900,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Fiat Grande Punto Abarth (Italien, 2007)": {
     "gewicht": 1230,
@@ -6669,7 +7223,9 @@
     "neupreis_eur": 20500,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Think City (Norwegen, 2008, EV)": {
     "gewicht": 1045,
@@ -6693,7 +7249,9 @@
     "neupreis_eur": 29900,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M3 E92 (Deutschland, 2008)": {
     "gewicht": 1655,
@@ -6717,7 +7275,9 @@
     "neupreis_eur": 66000,
     "baujahr_ende": 2013,
     "nordschleife": 478,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Golf 6 (Deutschland, 2008)": {
     "gewicht": 1246,
@@ -6741,7 +7301,9 @@
     "neupreis_eur": 17950,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.9,
+    "zuladung_kg": 430
   },
   "Opel Insignia A (Deutschland, 2008)": {
     "gewicht": 1620,
@@ -6765,7 +7327,9 @@
     "neupreis_eur": 24900,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Megane III (Frankreich, 2008)": {
     "gewicht": 1285,
@@ -6789,7 +7353,9 @@
     "neupreis_eur": 17400,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Buddy Electric (Norwegen, 2008)": {
     "gewicht": 640,
@@ -6813,7 +7379,9 @@
     "neupreis_eur": 19900,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi TTS 8J (Deutschland, 2008)": {
     "gewicht": 1395,
@@ -6837,7 +7405,9 @@
     "neupreis_eur": 42900,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Fiesta Mk7 (Deutschland, 2008)": {
     "gewicht": 1070,
@@ -6861,7 +7431,9 @@
     "neupreis_eur": 12550,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 10.4,
+    "zuladung_kg": 432
   },
   "Golf 6 GTI (VW, Deutschland, 2009)": {
     "gewicht": 1358,
@@ -6885,7 +7457,9 @@
     "neupreis_eur": 26900,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi R8 V10 (Deutschland, 2009)": {
     "gewicht": 1620,
@@ -6909,7 +7483,9 @@
     "neupreis_eur": 140700,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ferrari 458 Italia (Italien, 2009)": {
     "gewicht": 1380,
@@ -6933,7 +7509,9 @@
     "neupreis_eur": 197000,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz E 63 AMG T-Modell (Deutschland, 2009)": {
     "gewicht": 1945,
@@ -6957,7 +7535,9 @@
     "neupreis_eur": 97750,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 5 (Deutschland, 2009)": {
     "gewicht": 1080,
@@ -6981,7 +7561,9 @@
     "neupreis_eur": 12225,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "Opel Astra J (Deutschland, 2009)": {
     "gewicht": 1300,
@@ -7005,7 +7587,9 @@
     "neupreis_eur": 18450,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Insignia A OPC (Deutschland, 2009)": {
     "gewicht": 1849,
@@ -7029,7 +7613,9 @@
     "neupreis_eur": 43900,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz E 200 W212 (Deutschland, 2009)": {
     "gewicht": 1595,
@@ -7053,7 +7639,9 @@
     "neupreis_eur": 41500,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz SLS AMG (Deutschland, 2010)": {
     "gewicht": 1620,
@@ -7077,7 +7665,9 @@
     "neupreis_eur": 177310,
     "baujahr_ende": 2014,
     "nordschleife": 458,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 5 GTI (Deutschland, 2010)": {
     "gewicht": 1230,
@@ -7101,7 +7691,9 @@
     "neupreis_eur": 21500,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "VW Passat B7 (Deutschland, 2010)": {
     "gewicht": 1488,
@@ -7125,7 +7717,9 @@
     "neupreis_eur": 25825,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "BMW 520i F10 (Deutschland, 2010)": {
     "gewicht": 1595,
@@ -7149,7 +7743,9 @@
     "neupreis_eur": 39500,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A8 3.0 TFSI D4 (Deutschland, 2010)": {
     "gewicht": 1945,
@@ -7173,7 +7769,9 @@
     "neupreis_eur": 80200,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Lamborghini Aventador LP700-4 (Italien, 2011)": {
     "gewicht": 1575,
@@ -7197,7 +7795,9 @@
     "neupreis_eur": 319765,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.5,
+    "zuladung_kg": null
   },
   "Citroën DS3 Racing (Frankreich, 2011)": {
     "gewicht": 1170,
@@ -7221,7 +7821,9 @@
     "neupreis_eur": 26900,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Pagani Huayra (Italien, 2011)": {
     "gewicht": 1350,
@@ -7245,7 +7847,9 @@
     "neupreis_eur": 1150000,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B7 V6 (Deutschland, 2011)": {
     "gewicht": 1715,
@@ -7269,7 +7873,9 @@
     "neupreis_eur": 44800,
     "baujahr_ende": 2014,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "BMW M5 F10 (Deutschland, 2011)": {
     "gewicht": 1870,
@@ -7293,7 +7899,9 @@
     "neupreis_eur": 99800,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi RS3 8P (Deutschland, 2011)": {
     "gewicht": 1505,
@@ -7317,7 +7925,9 @@
     "neupreis_eur": 48900,
     "baujahr_ende": 2012,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 116i F20 (Deutschland, 2011)": {
     "gewicht": 1305,
@@ -7341,7 +7951,9 @@
     "neupreis_eur": 22550,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Focus Mk3 (Deutschland, 2011)": {
     "gewicht": 1295,
@@ -7365,7 +7977,9 @@
     "neupreis_eur": 18400,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 11.1,
+    "zuladung_kg": 508
   },
   "KTM X-Bow R (Österreich, 2012)": {
     "gewicht": 790,
@@ -7389,7 +8003,9 @@
     "neupreis_eur": 58900,
     "baujahr_ende": 0,
     "nordschleife": 487,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz G 63 AMG (Deutschland, 2012)": {
     "gewicht": 2620,
@@ -7413,7 +8029,9 @@
     "neupreis_eur": 159226,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz B 250 Sport (Deutschland, 2012)": {
     "gewicht": 1555,
@@ -7437,7 +8055,9 @@
     "neupreis_eur": 31940,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz CLS 63 AMG (Deutschland, 2012)": {
     "gewicht": 1915,
@@ -7461,7 +8081,9 @@
     "neupreis_eur": 120070,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Golf 7 (Deutschland, 2012)": {
     "gewicht": 1205,
@@ -7485,7 +8107,9 @@
     "neupreis_eur": 18975,
     "baujahr_ende": 2020,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.9,
+    "zuladung_kg": 430
   },
   "Opel Astra J OPC (Deutschland, 2012)": {
     "gewicht": 1435,
@@ -7509,7 +8133,9 @@
     "neupreis_eur": 32990,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 316i F30 (Deutschland, 2012)": {
     "gewicht": 1455,
@@ -7533,7 +8159,9 @@
     "neupreis_eur": 28450,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A3 8V (Deutschland, 2012)": {
     "gewicht": 1230,
@@ -7557,7 +8185,9 @@
     "neupreis_eur": 21400,
     "baujahr_ende": 2020,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.7,
+    "zuladung_kg": 425
   },
   "Audi RS4 B8 (Deutschland, 2012)": {
     "gewicht": 1825,
@@ -7581,7 +8211,9 @@
     "neupreis_eur": 72600,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Peugeot 208 (Frankreich, 2012)": {
     "gewicht": 1035,
@@ -7605,7 +8237,9 @@
     "neupreis_eur": 13200,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": 10.7,
+    "zuladung_kg": null
   },
   "Renault Clio IV (Frankreich, 2012)": {
     "gewicht": 1084,
@@ -7629,7 +8263,9 @@
     "neupreis_eur": 13990,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Puli X3 (Ungarn, 2012)": {
     "gewicht": 850,
@@ -7653,7 +8289,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M135i F20 (Deutschland, 2012)": {
     "gewicht": 1450,
@@ -7677,7 +8315,9 @@
     "neupreis_eur": 37600,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz A 160 W176 (Deutschland, 2012)": {
     "gewicht": 1385,
@@ -7701,7 +8341,9 @@
     "neupreis_eur": 23418,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi S8 D4 (Deutschland, 2012)": {
     "gewicht": 2050,
@@ -7725,7 +8367,9 @@
     "neupreis_eur": 104000,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Boxster 981 (Deutschland, 2012)": {
     "gewicht": 1320,
@@ -7749,7 +8393,9 @@
     "neupreis_eur": 49168,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Boxster S 981 (Deutschland, 2012)": {
     "gewicht": 1350,
@@ -7773,7 +8419,9 @@
     "neupreis_eur": 59168,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Donkervoort D8 GTO (Niederlande, 2013)": {
     "gewicht": 650,
@@ -7797,7 +8445,9 @@
     "neupreis_eur": 89000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche 918 Spyder (Deutschland, 2013)": {
     "gewicht": 1674,
@@ -7821,7 +8471,9 @@
     "neupreis_eur": 845000,
     "baujahr_ende": 2015,
     "nordschleife": 419,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ferrari LaFerrari (Italien, 2013)": {
     "gewicht": 1255,
@@ -7845,7 +8497,9 @@
     "neupreis_eur": 1150000,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Golf 7 R (VW, Deutschland, 2013)": {
     "gewicht": 1470,
@@ -7869,7 +8523,9 @@
     "neupreis_eur": 33900,
     "baujahr_ende": 2020,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Caterham Seven 620R (UK, 2013)": {
     "gewicht": 520,
@@ -7893,7 +8549,9 @@
     "neupreis_eur": 49000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "McLaren P1 (UK, 2013)": {
     "gewicht": 1395,
@@ -7917,7 +8575,9 @@
     "neupreis_eur": 866000,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Volvo C30 Polestar (Schweden, 2013)": {
     "gewicht": 1399,
@@ -7941,7 +8601,9 @@
     "neupreis_eur": 38000,
     "baujahr_ende": 2013,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz A45 AMG (Deutschland, 2013)": {
     "gewicht": 1530,
@@ -7965,7 +8627,9 @@
     "neupreis_eur": 44000,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz CLA 45 AMG (Deutschland, 2013)": {
     "gewicht": 1555,
@@ -7989,7 +8653,9 @@
     "neupreis_eur": 46000,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Peugeot 208 GTI (Frankreich, 2013)": {
     "gewicht": 1163,
@@ -8013,7 +8679,9 @@
     "neupreis_eur": 24000,
     "baujahr_ende": 2015,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": 10.7,
+    "zuladung_kg": null
   },
   "Škoda Octavia III (Tschechien, 2013)": {
     "gewicht": 1250,
@@ -8037,7 +8705,9 @@
     "neupreis_eur": 21000,
     "baujahr_ende": 2020,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Škoda Octavia III RS (Tschechien, 2013)": {
     "gewicht": 1360,
@@ -8061,7 +8731,9 @@
     "neupreis_eur": 30000,
     "baujahr_ende": 2020,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW X5 xDrive25d F15 (Deutschland, 2013)": {
     "gewicht": 2080,
@@ -8085,7 +8757,9 @@
     "neupreis_eur": 56000,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": 12.6,
+    "zuladung_kg": 625
   },
   "Ford Fiesta ST Mk7 (Deutschland, 2013)": {
     "gewicht": 1111,
@@ -8109,7 +8783,9 @@
     "neupreis_eur": 19500,
     "baujahr_ende": 2017,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 10.4,
+    "zuladung_kg": 432
   },
   "Arrinera Hussarya GT (Polen, 2014)": {
     "gewicht": 1200,
@@ -8133,7 +8809,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Sin Cars R1 (Bulgarien, 2014)": {
     "gewicht": 650,
@@ -8157,7 +8835,9 @@
     "neupreis_eur": 85000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Passat B8 (Deutschland, 2014)": {
     "gewicht": 1385,
@@ -8181,7 +8861,9 @@
     "neupreis_eur": 28000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Opel Corsa E (Deutschland, 2014)": {
     "gewicht": 1050,
@@ -8205,7 +8887,9 @@
     "neupreis_eur": 13900,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M3 F80 (Deutschland, 2014)": {
     "gewicht": 1500,
@@ -8229,7 +8913,9 @@
     "neupreis_eur": 67000,
     "baujahr_ende": 2020,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz C 180 W205 (Deutschland, 2014)": {
     "gewicht": 1435,
@@ -8253,7 +8939,9 @@
     "neupreis_eur": 37000,
     "baujahr_ende": 2021,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Megane III RS Trophy (Frankreich, 2014)": {
     "gewicht": 1360,
@@ -8277,7 +8965,9 @@
     "neupreis_eur": 33000,
     "baujahr_ende": 2016,
     "nordschleife": 476,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW X5 M F85 (Deutschland, 2014)": {
     "gewicht": 2265,
@@ -8301,7 +8991,9 @@
     "neupreis_eur": 110000,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": 12.6,
+    "zuladung_kg": 625
   },
   "Audi TT 2.0 TFSI 8S (Deutschland, 2014)": {
     "gewicht": 1230,
@@ -8325,7 +9017,9 @@
     "neupreis_eur": 34000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Volvo XC90 T5 Gen2 (Schweden, 2014)": {
     "gewicht": 1950,
@@ -8349,7 +9043,9 @@
     "neupreis_eur": 54000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Smart Fortwo W453 (Deutschland, 2014)": {
     "gewicht": 900,
@@ -8373,7 +9069,9 @@
     "neupreis_eur": 12500,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW Mini One F56 (Vereinigtes Königreich, 2014)": {
     "gewicht": 1085,
@@ -8397,7 +9095,9 @@
     "neupreis_eur": 17500,
     "baujahr_ende": 2021,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Dacia Sandero RS (Rumänien, 2015)": {
     "gewicht": 1150,
@@ -8421,7 +9121,9 @@
     "neupreis_eur": 16500,
     "baujahr_ende": 2016,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Koenigsegg Agera RS (Schweden, 2015)": {
     "gewicht": 1395,
@@ -8445,7 +9147,9 @@
     "neupreis_eur": 2500000,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Cayman GT4 (Deutschland, 2015)": {
     "gewicht": 1340,
@@ -8469,7 +9173,9 @@
     "neupreis_eur": 85000,
     "baujahr_ende": 2016,
     "nordschleife": 487,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Dodge Challenger SRT Hellcat (USA, 2015)": {
     "gewicht": 1963,
@@ -8493,7 +9199,9 @@
     "neupreis_eur": 55000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": 13.1,
+    "zuladung_kg": null
   },
   "Dodge Charger SRT Hellcat (USA, 2015)": {
     "gewicht": 2006,
@@ -8517,7 +9225,9 @@
     "neupreis_eur": 58000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz GLE 63 S AMG (Deutschland, 2015)": {
     "gewicht": 2280,
@@ -8541,7 +9251,9 @@
     "neupreis_eur": 110000,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Corsa E OPC (Deutschland, 2015)": {
     "gewicht": 1198,
@@ -8565,7 +9277,9 @@
     "neupreis_eur": 24000,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Astra K (Deutschland, 2015)": {
     "gewicht": 1200,
@@ -8589,7 +9303,9 @@
     "neupreis_eur": 19000,
     "baujahr_ende": 2021,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz C 63 S AMG W205 (Deutschland, 2015)": {
     "gewicht": 1755,
@@ -8613,7 +9329,9 @@
     "neupreis_eur": 81000,
     "baujahr_ende": 2021,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi RS3 8V (Deutschland, 2015)": {
     "gewicht": 1475,
@@ -8637,7 +9355,9 @@
     "neupreis_eur": 46000,
     "baujahr_ende": 2020,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A4 B9 (Deutschland, 2015)": {
     "gewicht": 1400,
@@ -8661,7 +9381,9 @@
     "neupreis_eur": 36000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.0,
+    "zuladung_kg": 530
   },
   "Renault Clio IV RS 220 Trophy (Frankreich, 2015)": {
     "gewicht": 1246,
@@ -8685,7 +9407,9 @@
     "neupreis_eur": 29000,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Toroidion 1MW (Finnland, 2015)": {
     "gewicht": 1000,
@@ -8709,7 +9433,9 @@
     "neupreis_eur": 0,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 730i G11 (Deutschland, 2015)": {
     "gewicht": 1710,
@@ -8733,7 +9459,9 @@
     "neupreis_eur": 82000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Volvo XC90 T8 Twin Engine Gen2 (Schweden, 2015)": {
     "gewicht": 2228,
@@ -8757,7 +9485,9 @@
     "neupreis_eur": 72000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Geely"
+    "konzern": "Geely",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW Mini JCW F56 (Vereinigtes Königreich, 2015)": {
     "gewicht": 1180,
@@ -8781,7 +9511,9 @@
     "neupreis_eur": 27000,
     "baujahr_ende": 2021,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Bugatti Chiron (Frankreich, 2016)": {
     "gewicht": 1995,
@@ -8805,7 +9537,9 @@
     "neupreis_eur": 2400000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo Giulia Quadrifoglio (Italien, 2016)": {
     "gewicht": 1524,
@@ -8829,7 +9563,9 @@
     "neupreis_eur": 75000,
     "baujahr_ende": 0,
     "nordschleife": 477,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Focus RS (UK, 2016)": {
     "gewicht": 1587,
@@ -8853,7 +9589,9 @@
     "neupreis_eur": 36900,
     "baujahr_ende": 2018,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 11.1,
+    "zuladung_kg": 508
   },
   "Acura NSX Gen2 (USA/Japan, 2016)": {
     "gewicht": 1725,
@@ -8877,7 +9615,9 @@
     "neupreis_eur": 160000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Honda"
+    "konzern": "Honda",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz E 200 W213 (Deutschland, 2016)": {
     "gewicht": 1580,
@@ -8901,7 +9641,9 @@
     "neupreis_eur": 45000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Megane IV (Frankreich, 2016)": {
     "gewicht": 1258,
@@ -8925,7 +9667,9 @@
     "neupreis_eur": 21000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alfa Romeo Giulia 2.0T (Italien, 2016)": {
     "gewicht": 1420,
@@ -8949,7 +9693,9 @@
     "neupreis_eur": 38000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M760Li G11 (Deutschland, 2016)": {
     "gewicht": 2100,
@@ -8973,7 +9719,9 @@
     "neupreis_eur": 160000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi TT RS 8S (Deutschland, 2016)": {
     "gewicht": 1450,
@@ -8997,7 +9745,9 @@
     "neupreis_eur": 64000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Smart Fortwo Brabus W453 (Deutschland, 2016)": {
     "gewicht": 950,
@@ -9021,7 +9771,9 @@
     "neupreis_eur": 18000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Hyundai i30 N (Südkorea, 2017)": {
     "gewicht": 1420,
@@ -9045,7 +9797,9 @@
     "neupreis_eur": 28000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Hyundai-Kia"
+    "konzern": "Hyundai-Kia",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Kia Stinger GT (Südkorea, 2017)": {
     "gewicht": 1820,
@@ -9069,7 +9823,9 @@
     "neupreis_eur": 49990,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "Hyundai-Kia"
+    "konzern": "Hyundai-Kia",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Alpine A110 (Frankreich, 2017)": {
     "gewicht": 1103,
@@ -9093,7 +9849,9 @@
     "neupreis_eur": 58500,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Honda Civic Type R FK8 (Japan, 2017)": {
     "gewicht": 1380,
@@ -9117,7 +9875,9 @@
     "neupreis_eur": 36950,
     "baujahr_ende": 2022,
     "nordschleife": 473,
-    "konzern": "Honda"
+    "konzern": "Honda",
+    "wendekreis_m": 10.6,
+    "zuladung_kg": 400
   },
   "McLaren 720S (UK, 2017)": {
     "gewicht": 1283,
@@ -9141,7 +9901,9 @@
     "neupreis_eur": 242000,
     "baujahr_ende": 2021,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Suzuki Swift Sport (Japan, 2017)": {
     "gewicht": 970,
@@ -9165,7 +9927,9 @@
     "neupreis_eur": 20490,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz GLC 63 S AMG (Deutschland, 2017)": {
     "gewicht": 2010,
@@ -9189,7 +9953,9 @@
     "neupreis_eur": 92000,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 6 (Deutschland, 2017)": {
     "gewicht": 1090,
@@ -9213,7 +9979,9 @@
     "neupreis_eur": 15990,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "Opel Astra K GSi (Deutschland, 2017)": {
     "gewicht": 1445,
@@ -9237,7 +10005,9 @@
     "neupreis_eur": 29900,
     "baujahr_ende": 2021,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Insignia B (Deutschland, 2017)": {
     "gewicht": 1530,
@@ -9261,7 +10031,9 @@
     "neupreis_eur": 28990,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 520i G30 (Deutschland, 2017)": {
     "gewicht": 1595,
@@ -9285,7 +10057,9 @@
     "neupreis_eur": 43900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz E 63 S AMG W213 (Deutschland, 2017)": {
     "gewicht": 1970,
@@ -9309,7 +10083,9 @@
     "neupreis_eur": 107000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi RS4 B9 (Deutschland, 2017)": {
     "gewicht": 1735,
@@ -9333,7 +10109,9 @@
     "neupreis_eur": 79900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Cayenne V6 9YA (Deutschland, 2017)": {
     "gewicht": 1985,
@@ -9357,7 +10135,9 @@
     "neupreis_eur": 72800,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 12.3,
+    "zuladung_kg": 615
   },
   "Zenvo TSR-S (Dänemark, 2018)": {
     "gewicht": 1458,
@@ -9381,7 +10161,9 @@
     "neupreis_eur": 1700000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Rimac C_Two (Kroatien, 2018)": {
     "gewicht": 1950,
@@ -9405,7 +10187,9 @@
     "neupreis_eur": 2000000,
     "baujahr_ende": 2021,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "McLaren Senna (UK, 2018)": {
     "gewicht": 1198,
@@ -9429,7 +10213,9 @@
     "neupreis_eur": 1000000,
     "baujahr_ende": 2019,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "VW Polo 6 GTI (Deutschland, 2018)": {
     "gewicht": 1262,
@@ -9453,7 +10239,9 @@
     "neupreis_eur": 24975,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.1,
+    "zuladung_kg": 400
   },
   "Opel Insignia B GSi (Deutschland, 2018)": {
     "gewicht": 1695,
@@ -9477,7 +10265,9 @@
     "neupreis_eur": 43500,
     "baujahr_ende": 2022,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW 318i G20 (Deutschland, 2018)": {
     "gewicht": 1460,
@@ -9501,7 +10291,9 @@
     "neupreis_eur": 33950,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M5 F90 (Deutschland, 2018)": {
     "gewicht": 1855,
@@ -9525,7 +10317,9 @@
     "neupreis_eur": 117000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi RS6 C8 Avant (Deutschland, 2019)": {
     "gewicht": 2075,
@@ -9549,7 +10343,9 @@
     "neupreis_eur": 118000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Mégane RS Trophy-R (Frankreich, 2019)": {
     "gewicht": 1306,
@@ -9573,7 +10369,9 @@
     "neupreis_eur": 54000,
     "baujahr_ende": 2020,
     "nordschleife": 465,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 11.0,
+    "zuladung_kg": null
   },
   "VW Golf 8 (Deutschland, 2019)": {
     "gewicht": 1270,
@@ -9597,7 +10395,9 @@
     "neupreis_eur": 24990,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.9,
+    "zuladung_kg": 430
   },
   "VW Passat B8 2.0 TSI (Deutschland, 2019)": {
     "gewicht": 1455,
@@ -9621,7 +10421,9 @@
     "neupreis_eur": 34490,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 11.2,
+    "zuladung_kg": 540
   },
   "Opel Corsa F (Deutschland, 2019)": {
     "gewicht": 1095,
@@ -9645,7 +10447,9 @@
     "neupreis_eur": 16590,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Renault Clio V (Frankreich, 2019)": {
     "gewicht": 1155,
@@ -9669,7 +10473,9 @@
     "neupreis_eur": 16490,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "BMW 116i F40 (Deutschland, 2019)": {
     "gewicht": 1310,
@@ -9693,7 +10499,9 @@
     "neupreis_eur": 26250,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M135i xDrive F40 (Deutschland, 2019)": {
     "gewicht": 1560,
@@ -9717,7 +10525,9 @@
     "neupreis_eur": 46300,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Porsche Cayenne Turbo S E-Hybrid 9YA (Deutschland, 2019)": {
     "gewicht": 2715,
@@ -9741,7 +10551,9 @@
     "neupreis_eur": 177137,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 12.3,
+    "zuladung_kg": 615
   },
   "Toyota GR Yaris (Japan, 2020)": {
     "gewicht": 1280,
@@ -9765,7 +10577,9 @@
     "neupreis_eur": 33250,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Toyota"
+    "konzern": "Toyota",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Ford Mustang Shelby GT500 (USA, 2020)": {
     "gewicht": 1866,
@@ -9789,7 +10603,9 @@
     "neupreis_eur": 80000,
     "baujahr_ende": 2023,
     "nordschleife": 0,
-    "konzern": "Ford"
+    "konzern": "Ford",
+    "wendekreis_m": 12.0,
+    "zuladung_kg": 400
   },
   "Mercedes-AMG GT Black Series (Deutschland, 2020)": {
     "gewicht": 1625,
@@ -9813,7 +10629,9 @@
     "neupreis_eur": 335000,
     "baujahr_ende": 2023,
     "nordschleife": 415,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz GLS 63 AMG (Deutschland, 2020)": {
     "gewicht": 2600,
@@ -9837,7 +10655,9 @@
     "neupreis_eur": 175000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Corsa-e (Deutschland, 2020)": {
     "gewicht": 1530,
@@ -9861,7 +10681,9 @@
     "neupreis_eur": 29900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi A3 8Y (Deutschland, 2020)": {
     "gewicht": 1295,
@@ -9885,7 +10707,9 @@
     "neupreis_eur": 29900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": 10.7,
+    "zuladung_kg": 425
   },
   "Renault Clio V RS Line (Frankreich, 2020)": {
     "gewicht": 1205,
@@ -9909,7 +10733,9 @@
     "neupreis_eur": 22990,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Renault-Nissan"
+    "konzern": "Renault-Nissan",
+    "wendekreis_m": 10.3,
+    "zuladung_kg": null
   },
   "Škoda Octavia IV (Tschechien, 2020)": {
     "gewicht": 1355,
@@ -9933,7 +10759,9 @@
     "neupreis_eur": 23590,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Škoda Octavia IV RS (Tschechien, 2020)": {
     "gewicht": 1480,
@@ -9957,7 +10785,9 @@
     "neupreis_eur": 38690,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz S 500 W223 (Deutschland, 2020)": {
     "gewicht": 2185,
@@ -9981,7 +10811,9 @@
     "neupreis_eur": 109127,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Cupra Formentor VZ5 (Spanien, 2021)": {
     "gewicht": 1686,
@@ -10005,7 +10837,9 @@
     "neupreis_eur": 59900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Rimac Nevera (Kroatien, 2021)": {
     "gewicht": 2150,
@@ -10029,7 +10863,9 @@
     "neupreis_eur": 2000000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Tesla Model S Plaid (USA, 2021)": {
     "gewicht": 2162,
@@ -10053,7 +10889,9 @@
     "neupreis_eur": 135000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": 12.3,
+    "zuladung_kg": 415
   },
   "Golf 8 GTI Clubsport (VW, Deutschland, 2021)": {
     "gewicht": 1450,
@@ -10077,7 +10915,9 @@
     "neupreis_eur": 43090,
     "baujahr_ende": 0,
     "nordschleife": 476,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi e-tron GT (Deutschland, 2021)": {
     "gewicht": 2340,
@@ -10101,7 +10941,9 @@
     "neupreis_eur": 99800,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M4 Competition (Deutschland, 2021)": {
     "gewicht": 1725,
@@ -10125,7 +10967,9 @@
     "neupreis_eur": 85900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Cupra Born (Spanien, 2021)": {
     "gewicht": 1779,
@@ -10149,7 +10993,9 @@
     "neupreis_eur": 37990,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Astra L (Deutschland, 2021)": {
     "gewicht": 1370,
@@ -10173,7 +11019,9 @@
     "neupreis_eur": 24890,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "BMW M3 G80 (Deutschland, 2021)": {
     "gewicht": 1730,
@@ -10197,7 +11045,9 @@
     "neupreis_eur": 82900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "BMW"
+    "konzern": "BMW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Audi RS3 8Y (Deutschland, 2021)": {
     "gewicht": 1570,
@@ -10221,7 +11071,9 @@
     "neupreis_eur": 56900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "VW"
+    "konzern": "VW",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-Benz S 63 AMG W223 (Deutschland, 2021)": {
     "gewicht": 2640,
@@ -10245,7 +11097,9 @@
     "neupreis_eur": 219009,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Togg T10X (Türkei, 2023)": {
     "gewicht": 2100,
@@ -10269,7 +11123,9 @@
     "neupreis_eur": 40000,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "unabhängig"
+    "konzern": "unabhängig",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Mercedes-AMG ONE (Deutschland, 2023)": {
     "gewicht": 1773,
@@ -10293,7 +11149,9 @@
     "neupreis_eur": 2750000,
     "baujahr_ende": 2023,
     "nordschleife": 415,
-    "konzern": "Mercedes"
+    "konzern": "Mercedes",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Hyundai Ioniq 5 N (Südkorea, 2023)": {
     "gewicht": 2235,
@@ -10317,7 +11175,9 @@
     "neupreis_eur": 69900,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Hyundai-Kia"
+    "konzern": "Hyundai-Kia",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   },
   "Opel Astra L GSe (Deutschland, 2023)": {
     "gewicht": 1640,
@@ -10341,6 +11201,8 @@
     "neupreis_eur": 44700,
     "baujahr_ende": 0,
     "nordschleife": 0,
-    "konzern": "Stellantis"
+    "konzern": "Stellantis",
+    "wendekreis_m": null,
+    "zuladung_kg": null
   }
 }

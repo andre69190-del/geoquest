@@ -171,3 +171,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | generate_spieluebersicht.py | 407 | Dispatch-Regex 4 neue Muster; genGamesHLExt/Match→70 Spiele; genAutosHLExt/Match→431 Fahrzeuge; genAutosHL→autos.json. 0 von 774 Modi ohne Badge |
 | (inline) gen.py direkt | 408 | UX: _exitToMenu() — zentraler Exit-Handler: speichert Modus-Gruppe in S.filterCat, scrollt smooth zur Akkordeon-Sektion. 11x Exit-Button ersetzt. verify: 143/143 |
 | (inline) gen.py direkt | 409/410 | UX: _trackPlayedMode() speichert gq_played+gq_recent (localStorage). renderRecentBar() zeigt letzte 5 Modi als Schnellstart-Leiste. Fortschritts-Badge X/Y + Fortschrittsbalken im Akkordeon-Header. Carousel-Grid-Reinit-Fix (doppeltes setTimeout). verify: 143/143 |
+| (data) games_extended.json | 410 | protagonist (42/70 benannt: Link, Geralt, Lara Croft, Arthur Morgan, ...) + howlong_h (37/70: HowLongToBeat Hauptstory-Dauer) |
+| (inline) gen.py direkt | 410 | 3 neue Modi: games_match_protagonist (Erkenne den Protagonist), games_match_pub_is_dev (Publisher=Developer?), hl_games_howlong (Spielzeit H/L). i18n +6. MODES: 774->777 |
+| (data) autos_extended.json | 411 | wendekreis_m (Wendekreis in m, 91/431 gefüllt) + zuladung_kg (Nutzlast in kg, 74/431 gefüllt) |
+| (inline) gen.py direkt | 411 | 2 neue Auto-Modi: hl_auto_wendekreis (lowerWins! Smart 8.75m bis F-150 14m), hl_auto_zuladung. i18n +4 Strings. MODES: 777->779 |

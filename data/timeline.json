@@ -2434,5 +2434,111 @@
         "hint": "Buenos Aires — britische Eisenbahninfrastruktur"
       }
     ]
+  },
+  "konsolen_bj": {
+    "prompt": "Sortiere die Konsolen nach Erscheinungsjahr (älteste zuerst)!",
+    "unit": "Jahr",
+    "items": [
+      {
+        "n": "Atari 2600",
+        "year": 1977,
+        "hint": "Erste echte Heimkonsole für die Massen"
+      },
+      {
+        "n": "NES",
+        "year": 1983,
+        "hint": "Rettete die Videospielbranche nach dem Crash 1983"
+      },
+      {
+        "n": "Sega Mega Drive",
+        "year": 1988,
+        "hint": "Sega does what Nintendon't"
+      },
+      {
+        "n": "Game Boy",
+        "year": 1989,
+        "hint": "118 Mio verkaufte Einheiten — Tetris inklusive"
+      },
+      {
+        "n": "Super Nintendo",
+        "year": 1990,
+        "hint": "Rivals mit dem Mega Drive — der 16-bit-Krieg"
+      },
+      {
+        "n": "Sony PlayStation",
+        "year": 1994,
+        "hint": "Sonys erster Schritt ins Konsolen-Business"
+      },
+      {
+        "n": "Sega Saturn",
+        "year": 1994,
+        "hint": "Überraschender Früh-Launch — kostet Sega teuer"
+      },
+      {
+        "n": "Nintendo 64",
+        "year": 1996,
+        "hint": "Letzter Cartridge-Veteran der großen Drei"
+      },
+      {
+        "n": "Sega Dreamcast",
+        "year": 1998,
+        "hint": "Segas letzte Heimkonsole — mit Online-Modem"
+      },
+      {
+        "n": "PlayStation 2",
+        "year": 2000,
+        "hint": "Meistverkaufte Konsole aller Zeiten: 155 Mio"
+      },
+      {
+        "n": "Xbox",
+        "year": 2001,
+        "hint": "Microsofts Debüt — mit eingebautem Halo"
+      },
+      {
+        "n": "Nintendo DS",
+        "year": 2004,
+        "hint": "Zwei Bildschirme, einer davon Touch"
+      },
+      {
+        "n": "Xbox 360",
+        "year": 2005,
+        "hint": "Startete die HD-Ära mit Achievements"
+      },
+      {
+        "n": "Nintendo Wii",
+        "year": 2006,
+        "hint": "Bewegungssteuerung für alle — Wii Sports Kult"
+      },
+      {
+        "n": "PlayStation 3",
+        "year": 2006,
+        "hint": "Blu-ray-Player und Cell-Prozessor im Paket"
+      },
+      {
+        "n": "Nintendo 3DS",
+        "year": 2011,
+        "hint": "3D ohne Brille — später Pokémon X/Y"
+      },
+      {
+        "n": "PlayStation 4",
+        "year": 2013,
+        "hint": "117 Mio Einheiten — dominante Gen-8-Konsole"
+      },
+      {
+        "n": "Nintendo Switch",
+        "year": 2017,
+        "hint": "Hybrid: Heimkonsole und Handheld in einem"
+      },
+      {
+        "n": "PlayStation 5",
+        "year": 2020,
+        "hint": "SSD-Revolution und DualSense Haptics"
+      },
+      {
+        "n": "Xbox Series X",
+        "year": 2020,
+        "hint": "Quick Resume und Game Pass — MS setzt auf Services"
+      }
+    ]
   }
 }

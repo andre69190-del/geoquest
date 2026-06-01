@@ -490,6 +490,36 @@ def check_i18n():
         print(f"    ⚠ i18n: {missing_count} fehlende Übersetzungen (EN:{total_en}, PL:{total_pl})")
 
 
+
+def check_konsolen(filename, data):
+    REQUIRED = [
+        "hersteller", "erscheinungsjahr", "eingestellt_jahr", "generation",
+        "verkauf_mio", "preis_usd", "cpu_mhz", "ram_kb", "herkunftsland",
+        "nachfolger_von", "medium", "aufloesung_max", "online_faehig",
+        "handheld", "bekannteste_spiele"
+    ]
+    MEDIUM = {"Cartridge", "CD", "DVD", "Blu-ray", "GD-ROM", "UMD", "Mini-DVD", "Digital"}
+    AUFLOESUNG = {"144p", "240p", "480i", "480p", "576p", "720p", "1080p", "4K"}
+    HERSTELLER = {"Nintendo", "Sony", "Microsoft", "Sega", "Atari", "SNK", "Coleco",
+                  "NEC", "3DO Company", "Mattel"}
+    for name, entry in data.items():
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, name, f, f"Pflichtfeld fehlt")
+        m = entry.get("medium")
+        if m and m not in MEDIUM:
+            warn(filename, name, "medium", f"Unbekanntes Medium: {m!r}")
+        a = entry.get("aufloesung_max")
+        if a and a not in AUFLOESUNG:
+            warn(filename, name, "aufloesung_max", f"Unbekannte Auflösung: {a!r}")
+        if not isinstance(entry.get("online_faehig"), bool):
+            warn(filename, name, "online_faehig", "Kein Bool")
+        if not isinstance(entry.get("handheld"), bool):
+            warn(filename, name, "handheld", "Kein Bool")
+        spiele = entry.get("bekannteste_spiele", [])
+        if not isinstance(spiele, list) or len(spiele) < 1:
+            warn(filename, name, "bekannteste_spiele", "Mindestens 1 Spiel erwartet")
+
 def check_games_extended(filename, data):
     """Validiert data/games_extended.json (22 Pflichtfelder, Enums, Typen, Logik)."""
     GENRE     = {"Sandbox","Battle Royale","Rollenspiel","Ego-Shooter",
@@ -678,6 +708,8 @@ def detect_and_check(filename):
                                  f"{len(bad)} Eintraege mit ccm=0 (EVs muessen ausgeschlossen sein)")
     elif name == "autos_extended.json":
         check_autos_extended(filename, data)
+    elif name == "konsolen.json":
+        check_konsolen(filename, data)
     elif name == "timeline.json":
         for key, block in (data.items() if isinstance(data, dict) else {}.items()):
             if not isinstance(block, dict):

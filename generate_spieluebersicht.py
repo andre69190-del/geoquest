@@ -180,11 +180,16 @@ def _get_count(mid, dispatch, store, sport_poi):
     _GAMES_FNS = {
         'genGamesHLExt','genGamesMatchExt','genGamesPinQ',
         'genGamesBaujahrMC','genGamesEsportsQ','genGamesF2PQ',
-        'genGamesPeakYearMC',
+        'genGamesPeakYearMC','genGamesProtagonistQ','genGamesPubDevQ',
     }
     if fn in _GAMES_FNS:
         n = len(store.get('games_extended', {}))
         return f'{n} Spiele', n
+    # ── Hardware-Generatoren (gaming_hardware.json — flaches Dict) ───────────
+    _HW_FNS = {'genHWBaujahrMC', 'genHWMatchQ', 'genHWHLQ'}
+    if fn in _HW_FNS:
+        n = len(store.get('gaming_hardware', {}))
+        return f'{n} Konsolen', n
     # ── Auto-Extended-Generatoren (autos_extended.json — flaches Dict) ───────
     _AUTOS_EXT_FNS = {
         'genAutosHLExt','genAutosMatchExt','genAutoPsKg','genAutoCO2',
