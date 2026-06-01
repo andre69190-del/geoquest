@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-a187c9bd';
+const CACHE_NAME = 'geoquest-743c8bff';
 /* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
   './GeoQuest.html',
@@ -14,6 +14,7 @@ const ASSETS = [
   './data/astro_pin.json',
   './data/astro_ws.json',
   './data/autos.json',
+  './data/autos_extended.json',
   './data/emob_hl.json',
   './data/emob_match.json',
   './data/emob_pin.json',

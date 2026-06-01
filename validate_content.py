@@ -489,6 +489,62 @@ def check_i18n():
     else:
         print(f"    ⚠ i18n: {missing_count} fehlende Übersetzungen (EN:{total_en}, PL:{total_pl})")
 
+def check_autos_extended(filename, data):
+    """Validiert data/autos_extended.json (flaches Dict, 22 Pflichtfelder)."""
+    REQUIRED_FIELDS = [
+        "gewicht", "drehmoment", "cw", "kofferraum", "laenge",
+        "tank", "akku", "reichweite_km", "verbrauch_l", "verbrauch_kwh",
+        "antrieb", "karosserie", "antriebsart", "motorbauart", "zylinder",
+        "turbo", "getriebe", "sitze", "neupreis_eur", "baujahr_ende",
+        "nordschleife", "konzern",
+    ]
+    ENUMS = {
+        "antrieb":     {"Front", "Heck", "Allrad"},
+        "getriebe":    {"Handschalter", "Automatik", "E-Getriebe"},
+        "motorbauart": {"Reihe", "V", "W", "Boxer", "Wankel", "E-Motor"},
+        "antriebsart": {"Benzin", "Diesel", "EV", "Hybrid", "PHEV", "MHEV"},
+        "karosserie":  {"Hatchback", "Limousine", "Kombi", "SUV",
+                        "Coupé", "Cabrio", "Roadster", "Sportwagen", "Van", "Pickup"},
+        "konzern":     {"VW", "BMW", "Mercedes", "Stellantis", "Ford",
+                        "Renault-Nissan", "Toyota", "Hyundai-Kia", "Tata",
+                        "Geely", "Honda", "Mazda", "Subaru", "unabhaengig", "unabhängig"},
+    }
+    if not isinstance(data, dict):
+        warn(filename, "struktur", "root", "autos_extended.json muss ein Dict sein")
+        return
+    for car_name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, "eintrag", car_name, "Wert ist kein Dict")
+            continue
+        # Pflichtfelder
+        for f in REQUIRED_FIELDS:
+            if f not in entry:
+                warn(filename, "pflichtfeld", car_name, f"Feld '{f}' fehlt")
+        # Enum-Checks
+        for field, allowed in ENUMS.items():
+            val = entry.get(field)
+            if val is not None and val not in allowed:
+                warn(filename, f"enum:{field}", car_name,
+                     f"Wert {val!r} nicht erlaubt")
+        # Logik-Checks
+        art = entry.get("antriebsart", "")
+        if art == "EV":
+            if entry.get("tank", -1) != 0:
+                warn(filename, "logik:EV-tank", car_name,
+                     f"EV muss tank=0 haben (ist {entry.get('tank')})")
+            if entry.get("verbrauch_l", -1) != 0.0:
+                warn(filename, "logik:EV-verbrauch_l", car_name,
+                     f"EV muss verbrauch_l=0.0 haben (ist {entry.get('verbrauch_l')})")
+            if entry.get("zylinder", -1) != 0:
+                warn(filename, "logik:EV-zylinder", car_name,
+                     f"EV muss zylinder=0 haben (ist {entry.get('zylinder')})")
+        if art not in ("EV", "Hybrid", "PHEV", "MHEV"):
+            akku = entry.get("akku", None)
+            if akku is not None and float(akku) != 0.0:
+                warn(filename, "logik:akku", car_name,
+                     f"{art}: akku muss 0.0 sein (ist {akku})")
+
+
 def detect_and_check(filename):
     data = load(filename)
     name = filename.lower()
@@ -537,6 +593,20 @@ def detect_and_check(filename):
                 warn(filename, "metro_logos", item.get("city", "?"), "SVG fehlt oder ungültig")
             if not item.get("city", "").strip():
                 warn(filename, "metro_logos", f"item[{i}]", "city-Feld leer")
+    elif name == "autos.json":
+        # Lücke 1: 5 HL-Arrays per check_hl validieren
+        if isinstance(data, dict):
+            for arr_key, block in data.items():
+                if isinstance(block, dict) and "items" in block:
+                    check_hl(filename, {arr_key: block})
+                    if arr_key == "auto_ccm":
+                        bad = [i.get("name", "?") for i in block.get("items", [])
+                               if i.get("val", 1) == 0]
+                        if bad:
+                            warn(filename, "auto_ccm", bad[0],
+                                 f"{len(bad)} Eintraege mit ccm=0 (EVs muessen ausgeschlossen sein)")
+    elif name == "autos_extended.json":
+        check_autos_extended(filename, data)
     elif name == "timeline.json":
         for key, block in (data.items() if isinstance(data, dict) else {}.items()):
             if not isinstance(block, dict):
@@ -586,6 +656,28 @@ def main():
         except Exception as exc:
             print("  " + ERR + filename + ": LOAD ERROR - " + str(exc) + RESET)
             warnings.append((filename, "LOAD ERROR: " + str(exc)))
+
+    # Lücke 3: Cross-Validation autos.json <-> autos_extended.json
+    import json as _json
+    _autos_p    = os.path.join(DATA, "autos.json")
+    _extended_p = os.path.join(DATA, "autos_extended.json")
+    if os.path.exists(_autos_p) and os.path.exists(_extended_p):
+        print("  [Cross-Val autos <-> extended]", end=" ")
+        try:
+            with open(_autos_p,    encoding="utf-8") as _fh: _a = _json.load(_fh)
+            with open(_extended_p, encoding="utf-8") as _fh: _e = _json.load(_fh)
+            _all  = {i["name"] for i in _a.get("auto_bj", {}).get("items", [])}
+            _miss = sorted(n for n in _all if n not in _e)
+            if _miss:
+                for _n in _miss:
+                    warn("cross_validation", "autos_extended", _n,
+                         "Auto in autos.json aber NICHT in autos_extended.json")
+                print(WARN + f"{len(_miss)} fehlend" + RESET)
+            else:
+                print(OK + f"OK -- alle {len(_all)} Autos im Extended-Dict" + RESET)
+        except Exception as _exc:
+            warn("cross_validation", "load", "", f"Fehler: {_exc}")
+            print(WARN + "Fehler" + RESET)
 
     print("\n" + BOLD + "=" * 62)
     print(" Results: " + str(checked) + "/" + str(len(json_files)) + " files scanned  |  " + str(len(warnings)) + " warning(s)")
