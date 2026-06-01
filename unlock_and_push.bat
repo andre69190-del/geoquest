@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 329. Auto-Quartett: 4 HL-Modi (PS, vmax, accel, ccm) aus data/autos.json — 50 Fahrzeuge von VW Käfer bis Rimac Nevera, 17 Länder, EVs im ccm-Array ausgeschlossen. verify: 139/139."
+git commit -m "Content: Phase 330. Auto-Quartett EU-Completion: +5 verifizierte Fahrzeuge (Belgien, Norwegen, Bulgarien, Portugal, Griechenland) — SK/FI/HU weggelassen (keine verifizierbaren Seriendaten). verify: 139/139."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

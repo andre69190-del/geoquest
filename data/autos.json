@@ -202,6 +202,26 @@
       {
         "name": "Rimac C_Two (Kroatien, 2018)",
         "val": 1888
+      },
+      {
+        "name": "Gillet Vertigo (Belgien, 2003)",
+        "val": 400
+      },
+      {
+        "name": "Think City (Norwegen, 2008, EV)",
+        "val": 37
+      },
+      {
+        "name": "Sin Cars R1 (Bulgarien, 2014)",
+        "val": 300
+      },
+      {
+        "name": "UMM Alter II (Portugal, 1985)",
+        "val": 70
+      },
+      {
+        "name": "NAMCO Pony (Griechenland, 1972)",
+        "val": 34
       }
     ]
   },
@@ -408,6 +428,26 @@
       {
         "name": "Rimac C_Two (Kroatien, 2018)",
         "val": 412
+      },
+      {
+        "name": "Gillet Vertigo (Belgien, 2003)",
+        "val": 300
+      },
+      {
+        "name": "Think City (Norwegen, 2008, EV)",
+        "val": 100
+      },
+      {
+        "name": "Sin Cars R1 (Bulgarien, 2014)",
+        "val": 250
+      },
+      {
+        "name": "UMM Alter II (Portugal, 1985)",
+        "val": 120
+      },
+      {
+        "name": "NAMCO Pony (Griechenland, 1972)",
+        "val": 90
       }
     ]
   },
@@ -614,6 +654,26 @@
       {
         "name": "Rimac C_Two (Kroatien, 2018)",
         "val": 1.97
+      },
+      {
+        "name": "Gillet Vertigo (Belgien, 2003)",
+        "val": 3.9
+      },
+      {
+        "name": "Think City (Norwegen, 2008, EV)",
+        "val": 16.0
+      },
+      {
+        "name": "Sin Cars R1 (Bulgarien, 2014)",
+        "val": 4.5
+      },
+      {
+        "name": "UMM Alter II (Portugal, 1985)",
+        "val": 24.0
+      },
+      {
+        "name": "NAMCO Pony (Griechenland, 1972)",
+        "val": 28.0
       }
     ]
   },
@@ -804,6 +864,22 @@
       {
         "name": "Zenvo TSR-S (Dänemark, 2018)",
         "val": 5854
+      },
+      {
+        "name": "Gillet Vertigo (Belgien, 2003)",
+        "val": 5665
+      },
+      {
+        "name": "Sin Cars R1 (Bulgarien, 2014)",
+        "val": 4163
+      },
+      {
+        "name": "UMM Alter II (Portugal, 1985)",
+        "val": 2498
+      },
+      {
+        "name": "NAMCO Pony (Griechenland, 1972)",
+        "val": 1192
       }
     ]
   }

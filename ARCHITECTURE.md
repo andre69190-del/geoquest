@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 329 (Stand: Juni 2026)
+**Version:** Phase 330 (Stand: Juni 2026)
 **Build:** gen.py → 1.29 MB | GeoQuest.html → 4.83 MB | 721 Spielmodi | verify: 138/138
 
 ---
@@ -1086,6 +1086,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **327** | patches/patch_327_rest_balancing.py | **Sport/Geo/Archäologie-Balancing: sport_herkunft, sport_sportlegende_land, geo_hoehlen_land, repatriierung, megalithanlagen — nur semantisch valide Länder-Arrays erweitert** |
 | **328** | patches/patch_328_heimvorteil_engine.py | **ENGINE: Heimvorteil 70/30 in _mkMatchQ() — alle Match-Modi bevorzugen jetzt Einträge aus dem Heimatland des Nutzers (S.language → Ländername-Mapping, localPool, rng()<0.7). Fallback 100% global für nicht-geographische c-Felder.** |
 | **329** | patches/patch_329_autos.py | **Auto-Quartett: 4 HL-Modi (PS, vmax, accel, ccm) aus data/autos.json — 50 Fahrzeuge von VW Käfer bis Rimac Nevera, 17 Länder, EVs im ccm-Array ausgeschlossen** |
+| **330** | patches/patch_330_autos_eu_completion.py | **Auto-Quartett EU-Completion: +5 verifizierte Fahrzeuge (Belgien, Norwegen, Bulgarien, Portugal, Griechenland) — SK/FI/HU weggelassen (keine verifizierbaren Seriendaten)** |
 
 ---
 
