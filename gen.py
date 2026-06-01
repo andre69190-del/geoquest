@@ -2948,6 +2948,7 @@ const MODES=[
     {id:"hl_auto_vmax",  icon:"\u{1F3C1}",title:"Auto-Quartett: Top-Speed",   group:"autos",prompt:"Welches Fahrzeug ist schneller?",desc:"Höchstgeschwindigkeit — 85 bis 447 km/h",prompt_en:"Which car has a higher top speed?"},
     {id:"hl_auto_accel", icon:"\u23F1\uFE0F",title:"Auto-Quartett: 0-100 km/h",  group:"autos",prompt:"Welches Fahrzeug braucht L\u00e4nger auf 100?",desc:"H\u00f6herer Wert = langsamer = h\u00f6her in diesem Modus",prompt_en:"Which car takes LONGER to reach 100 km/h?"},
     {id:"hl_auto_ccm",   icon:"\u2699\uFE0F",title:"Auto-Quartett: Hubraum",      group:"autos",prompt:"Welcher Verbrenner hat mehr Hubraum?",desc:"Nur Verbrenner — 375 ccm bis 7993 ccm",prompt_en:"Which combustion car has the larger engine displacement?"},
+    {id:"hl_auto_bj",    icon:"\u{1F4C5}",title:"Auto-Quartett: Baujahr",       group:"autos",prompt:"Welches Fahrzeug wurde SPÄTER gebaut?",desc:"Neueres Modell gewinnt — 1949 bis heute",prompt_en:"Which car was built LATER?"},
 
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
     {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
@@ -3617,7 +3618,7 @@ const MODE_CATS={
     "ws_sportwissen_fussball","ws_sportwissen_olympiade","ws_sportwissen_weltmeister",
     "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist","timeline_sport_stadien"
   ],cost:0},
-  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm"],cost:0},
+  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj"],cost:0},
 };
 
 /* === Phase 227 Part 3: Tier-Wort-Schmiede (10 Tiere, words verified letter-by-letter) === */
@@ -9687,6 +9688,7 @@ const GEN={
   hl_auto_vmax:()=>genAutosHL("auto_vmax"),
   hl_auto_accel:()=>genAutosHL("auto_accel"),
   hl_auto_ccm:()=>genAutosHL("auto_ccm"),
+  hl_auto_bj:()=>genAutosHL("auto_bj"),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),

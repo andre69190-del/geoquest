@@ -222,6 +222,1162 @@
       {
         "name": "NAMCO Pony (Griechenland, 1972)",
         "val": 34
+      },
+      {
+        "name": "Golf 1 GTI (VW, Deutschland, 1976)",
+        "val": 110
+      },
+      {
+        "name": "Golf 2 GTI 16V (VW, Deutschland, 1987)",
+        "val": 139
+      },
+      {
+        "name": "Golf 3 GTI 2.0 (VW, Deutschland, 1992)",
+        "val": 115
+      },
+      {
+        "name": "Golf 4 R32 (VW, Deutschland, 2002)",
+        "val": 241
+      },
+      {
+        "name": "Golf 5 GTI (VW, Deutschland, 2004)",
+        "val": 200
+      },
+      {
+        "name": "Golf 6 GTI (VW, Deutschland, 2009)",
+        "val": 210
+      },
+      {
+        "name": "Golf 7 R (VW, Deutschland, 2013)",
+        "val": 300
+      },
+      {
+        "name": "Golf 8 GTI Clubsport (VW, Deutschland, 2021)",
+        "val": 300
+      },
+      {
+        "name": "VW Corrado VR6 (Deutschland, 1992)",
+        "val": 190
+      },
+      {
+        "name": "VW Phaeton W12 (Deutschland, 2002)",
+        "val": 420
+      },
+      {
+        "name": "Audi Quattro Urquattro (Deutschland, 1980)",
+        "val": 200
+      },
+      {
+        "name": "Audi Sport Quattro (Deutschland, 1984)",
+        "val": 306
+      },
+      {
+        "name": "Audi RS2 Avant (Deutschland, 1994)",
+        "val": 315
+      },
+      {
+        "name": "Audi TT 8N (Deutschland, 1998)",
+        "val": 180
+      },
+      {
+        "name": "Audi R8 V10 (Deutschland, 2009)",
+        "val": 525
+      },
+      {
+        "name": "Audi RS6 C8 Avant (Deutschland, 2019)",
+        "val": 600
+      },
+      {
+        "name": "Audi e-tron GT (Deutschland, 2021)",
+        "val": 476
+      },
+      {
+        "name": "BMW 2002 Turbo (Deutschland, 1973)",
+        "val": 170
+      },
+      {
+        "name": "BMW M1 (Deutschland, 1978)",
+        "val": 277
+      },
+      {
+        "name": "BMW M5 E34 (Deutschland, 1988)",
+        "val": 315
+      },
+      {
+        "name": "BMW Z8 (Deutschland, 2000)",
+        "val": 400
+      },
+      {
+        "name": "BMW M3 E92 (Deutschland, 2008)",
+        "val": 420
+      },
+      {
+        "name": "BMW M4 Competition (Deutschland, 2021)",
+        "val": 510
+      },
+      {
+        "name": "Opel Manta 400 (Deutschland, 1982)",
+        "val": 144
+      },
+      {
+        "name": "Opel GT (Deutschland, 1968)",
+        "val": 90
+      },
+      {
+        "name": "Opel Kadett E GSi (Deutschland, 1987)",
+        "val": 115
+      },
+      {
+        "name": "Opel Corsa OPC (Deutschland, 2007)",
+        "val": 192
+      },
+      {
+        "name": "Smart Fortwo (Deutschland, 1998)",
+        "val": 45
+      },
+      {
+        "name": "Smart Fortwo Brabus (Deutschland, 2007)",
+        "val": 98
+      },
+      {
+        "name": "Lancia Stratos HF (Italien, 1973)",
+        "val": 190
+      },
+      {
+        "name": "Lancia Delta HF Integrale Evo (Italien, 1992)",
+        "val": 215
+      },
+      {
+        "name": "Saab 900 Turbo (Schweden, 1978)",
+        "val": 145
+      },
+      {
+        "name": "Saab 9-3 Aero (Schweden, 2002)",
+        "val": 210
+      },
+      {
+        "name": "Subaru Impreza WRX STI (Japan, 2005)",
+        "val": 265
+      },
+      {
+        "name": "Mitsubishi Lancer Evo IX (Japan, 2005)",
+        "val": 280
+      },
+      {
+        "name": "Mitsubishi 3000GT VR4 (Japan, 1992)",
+        "val": 286
+      },
+      {
+        "name": "Trabant P601 (Deutschland, 1963)",
+        "val": 26
+      },
+      {
+        "name": "Mercedes-Benz 190E 2.3-16 Cosworth (Deutschland, 1984)",
+        "val": 185
+      },
+      {
+        "name": "Mercedes-Benz C63 AMG (Deutschland, 2006)",
+        "val": 457
+      },
+      {
+        "name": "Mercedes-AMG ONE (Deutschland, 2023)",
+        "val": 1063
+      },
+      {
+        "name": "Porsche 356 A (Deutschland, 1955)",
+        "val": 60
+      },
+      {
+        "name": "Porsche Carrera GT (Deutschland, 2003)",
+        "val": 612
+      },
+      {
+        "name": "Porsche 911 GT3 RS (Deutschland, 2006)",
+        "val": 415
+      },
+      {
+        "name": "Porsche Cayman GT4 (Deutschland, 2015)",
+        "val": 385
+      },
+      {
+        "name": "Ferrari 308 GTB (Italien, 1975)",
+        "val": 255
+      },
+      {
+        "name": "Ferrari Testarossa (Italien, 1984)",
+        "val": 390
+      },
+      {
+        "name": "Ferrari 458 Italia (Italien, 2009)",
+        "val": 570
+      },
+      {
+        "name": "Ferrari F40 (Italien, 1987)",
+        "val": 478
+      },
+      {
+        "name": "Lamborghini Countach LP400 (Italien, 1974)",
+        "val": 375
+      },
+      {
+        "name": "Lamborghini Aventador LP700-4 (Italien, 2011)",
+        "val": 700
+      },
+      {
+        "name": "Alfa Romeo 147 GTA (Italien, 2002)",
+        "val": 250
+      },
+      {
+        "name": "Alfa Romeo Giulia Quadrifoglio (Italien, 2016)",
+        "val": 510
+      },
+      {
+        "name": "Alpine A110 (Frankreich, 2017)",
+        "val": 252
+      },
+      {
+        "name": "Alpine A110 Berlinette (Frankreich, 1962)",
+        "val": 60
+      },
+      {
+        "name": "Renault Clio V6 Phase 2 (Frankreich, 2003)",
+        "val": 255
+      },
+      {
+        "name": "Renault Mégane RS Trophy-R (Frankreich, 2019)",
+        "val": 300
+      },
+      {
+        "name": "Peugeot 306 Maxi Kit Car (Frankreich, 1996)",
+        "val": 270
+      },
+      {
+        "name": "Citroën SM (Frankreich, 1970)",
+        "val": 170
+      },
+      {
+        "name": "Citroën DS3 Racing (Frankreich, 2011)",
+        "val": 207
+      },
+      {
+        "name": "Honda S2000 (Japan, 2000)",
+        "val": 241
+      },
+      {
+        "name": "Honda Civic Type R EK9 (Japan, 1997)",
+        "val": 185
+      },
+      {
+        "name": "Honda Civic Type R FK8 (Japan, 2017)",
+        "val": 320
+      },
+      {
+        "name": "Toyota MR2 SW20 (Japan, 1989)",
+        "val": 165
+      },
+      {
+        "name": "Toyota Celica GT-Four (Japan, 1994)",
+        "val": 239
+      },
+      {
+        "name": "Toyota GR Yaris (Japan, 2020)",
+        "val": 261
+      },
+      {
+        "name": "Toyota 2000GT (Japan, 1967)",
+        "val": 150
+      },
+      {
+        "name": "Nissan Skyline R32 GT-R (Japan, 1989)",
+        "val": 280
+      },
+      {
+        "name": "Nissan Skyline R34 GT-R (Japan, 1999)",
+        "val": 280
+      },
+      {
+        "name": "Mazda MX-5 NA (Japan, 1989)",
+        "val": 114
+      },
+      {
+        "name": "Mazda RX-8 (Japan, 2003)",
+        "val": 238
+      },
+      {
+        "name": "Lotus Elise S1 (UK, 1996)",
+        "val": 120
+      },
+      {
+        "name": "Caterham Seven 620R (UK, 2013)",
+        "val": 310
+      },
+      {
+        "name": "TVR Cerbera Speed 12 (UK, 2000)",
+        "val": 880
+      },
+      {
+        "name": "Jaguar XJ220 (UK, 1992)",
+        "val": 549
+      },
+      {
+        "name": "Chevrolet Camaro Z28 (USA, 1967)",
+        "val": 295
+      },
+      {
+        "name": "Dodge Challenger SRT Hellcat (USA, 2015)",
+        "val": 717
+      },
+      {
+        "name": "Ford Mustang Shelby GT500 (USA, 2020)",
+        "val": 760
+      },
+      {
+        "name": "Ford Sierra RS Cosworth (UK, 1986)",
+        "val": 204
+      },
+      {
+        "name": "Ford Focus RS (UK, 2016)",
+        "val": 350
+      },
+      {
+        "name": "McLaren P1 (UK, 2013)",
+        "val": 916
+      },
+      {
+        "name": "McLaren 720S (UK, 2017)",
+        "val": 720
+      },
+      {
+        "name": "McLaren Senna (UK, 2018)",
+        "val": 800
+      },
+      {
+        "name": "Pagani Zonda F (Italien, 2005)",
+        "val": 602
+      },
+      {
+        "name": "Pagani Huayra (Italien, 2011)",
+        "val": 730
+      },
+      {
+        "name": "Seat Leon Cupra R (Spanien, 2003)",
+        "val": 210
+      },
+      {
+        "name": "Volvo 850 T5-R (Schweden, 1994)",
+        "val": 240
+      },
+      {
+        "name": "Volvo C30 Polestar (Schweden, 2013)",
+        "val": 256
+      },
+      {
+        "name": "Alfa Romeo 8C Competizione (Italien, 2007)",
+        "val": 450
+      },
+      {
+        "name": "Suzuki Swift Sport (Japan, 2017)",
+        "val": 140
+      },
+      {
+        "name": "Dodge Charger SRT Hellcat (USA, 2015)",
+        "val": 717
+      },
+      {
+        "name": "Acura NSX Gen2 (USA/Japan, 2016)",
+        "val": 581
+      },
+      {
+        "name": "Cupra Born (Spanien, 2021)",
+        "val": 231
+      },
+      {
+        "name": "Hyundai Ioniq 5 N (Südkorea, 2023)",
+        "val": 650
+      },
+      {
+        "name": "Mercedes-Benz 450 SEL 6.9 (Deutschland, 1975)",
+        "val": 286
+      },
+      {
+        "name": "Mercedes-Benz 500E W124 (Deutschland, 1992)",
+        "val": 326
+      },
+      {
+        "name": "Mercedes-Benz SLS AMG (Deutschland, 2010)",
+        "val": 571
+      },
+      {
+        "name": "Mercedes-Benz A45 AMG (Deutschland, 2013)",
+        "val": 381
+      },
+      {
+        "name": "Mercedes-AMG GT Black Series (Deutschland, 2020)",
+        "val": 730
+      },
+      {
+        "name": "Mercedes-Benz G 63 AMG (Deutschland, 2012)",
+        "val": 544
+      },
+      {
+        "name": "Mercedes-Benz E 63 AMG T-Modell (Deutschland, 2009)",
+        "val": 525
+      },
+      {
+        "name": "Mercedes-Benz B 250 Sport (Deutschland, 2012)",
+        "val": 211
+      },
+      {
+        "name": "Mercedes-Benz CLA 45 AMG (Deutschland, 2013)",
+        "val": 381
+      },
+      {
+        "name": "Mercedes-Benz CLS 63 AMG (Deutschland, 2012)",
+        "val": 557
+      },
+      {
+        "name": "Mercedes-Benz GLC 63 S AMG (Deutschland, 2017)",
+        "val": 510
+      },
+      {
+        "name": "Mercedes-Benz GLE 63 S AMG (Deutschland, 2015)",
+        "val": 585
+      },
+      {
+        "name": "Mercedes-Benz GLS 63 AMG (Deutschland, 2020)",
+        "val": 630
+      },
+      {
+        "name": "VW Golf 1 (Deutschland, 1974)",
+        "val": 70
+      },
+      {
+        "name": "VW Golf 2 (Deutschland, 1983)",
+        "val": 55
+      },
+      {
+        "name": "VW Golf 3 (Deutschland, 1991)",
+        "val": 60
+      },
+      {
+        "name": "VW Golf 4 (Deutschland, 1997)",
+        "val": 75
+      },
+      {
+        "name": "VW Golf 5 (Deutschland, 2003)",
+        "val": 80
+      },
+      {
+        "name": "VW Golf 6 (Deutschland, 2008)",
+        "val": 86
+      },
+      {
+        "name": "VW Golf 7 (Deutschland, 2012)",
+        "val": 85
+      },
+      {
+        "name": "VW Golf 8 (Deutschland, 2019)",
+        "val": 90
+      },
+      {
+        "name": "VW Polo 1 (Deutschland, 1975)",
+        "val": 40
+      },
+      {
+        "name": "VW Polo 1 Coupe GT (Deutschland, 1979)",
+        "val": 60
+      },
+      {
+        "name": "VW Polo 2 (Deutschland, 1981)",
+        "val": 40
+      },
+      {
+        "name": "VW Polo 2 G40 (Deutschland, 1987)",
+        "val": 113
+      },
+      {
+        "name": "VW Polo 3 (Deutschland, 1994)",
+        "val": 45
+      },
+      {
+        "name": "VW Polo 3 GTI 16V (Deutschland, 1998)",
+        "val": 125
+      },
+      {
+        "name": "VW Polo 4 (Deutschland, 2001)",
+        "val": 54
+      },
+      {
+        "name": "VW Polo 4 GTI (Deutschland, 2006)",
+        "val": 150
+      },
+      {
+        "name": "VW Polo 5 (Deutschland, 2009)",
+        "val": 60
+      },
+      {
+        "name": "VW Polo 5 GTI (Deutschland, 2010)",
+        "val": 180
+      },
+      {
+        "name": "VW Polo 6 (Deutschland, 2017)",
+        "val": 65
+      },
+      {
+        "name": "VW Polo 6 GTI (Deutschland, 2018)",
+        "val": 200
+      },
+      {
+        "name": "VW Passat B1 (Deutschland, 1973)",
+        "val": 55
+      },
+      {
+        "name": "VW Passat B1 TS (Deutschland, 1975)",
+        "val": 85
+      },
+      {
+        "name": "VW Passat B2 (Deutschland, 1980)",
+        "val": 60
+      },
+      {
+        "name": "VW Passat B2 GLI 5-Zyl (Deutschland, 1985)",
+        "val": 136
+      },
+      {
+        "name": "VW Passat B3 (Deutschland, 1988)",
+        "val": 72
+      },
+      {
+        "name": "VW Passat B3 G60 Syncro (Deutschland, 1989)",
+        "val": 160
+      },
+      {
+        "name": "VW Passat B4 (Deutschland, 1993)",
+        "val": 101
+      },
+      {
+        "name": "VW Passat B4 VR6 (Deutschland, 1994)",
+        "val": 174
+      },
+      {
+        "name": "VW Passat B5 (Deutschland, 1996)",
+        "val": 101
+      },
+      {
+        "name": "VW Passat B5 W8 (Deutschland, 2001)",
+        "val": 275
+      },
+      {
+        "name": "VW Passat B6 (Deutschland, 2005)",
+        "val": 102
+      },
+      {
+        "name": "VW Passat B6 R36 (Deutschland, 2007)",
+        "val": 300
+      },
+      {
+        "name": "VW Passat B7 (Deutschland, 2010)",
+        "val": 122
+      },
+      {
+        "name": "VW Passat B7 V6 (Deutschland, 2011)",
+        "val": 300
+      },
+      {
+        "name": "VW Passat B8 (Deutschland, 2014)",
+        "val": 125
+      },
+      {
+        "name": "VW Passat B8 2.0 TSI (Deutschland, 2019)",
+        "val": 272
+      },
+      {
+        "name": "Opel Corsa A (Deutschland, 1982)",
+        "val": 55
+      },
+      {
+        "name": "Opel Corsa A GSi (Deutschland, 1987)",
+        "val": 100
+      },
+      {
+        "name": "Opel Corsa B (Deutschland, 1993)",
+        "val": 45
+      },
+      {
+        "name": "Opel Corsa B GSi (Deutschland, 1995)",
+        "val": 106
+      },
+      {
+        "name": "Opel Corsa C (Deutschland, 2000)",
+        "val": 58
+      },
+      {
+        "name": "Opel Corsa C OPC (Deutschland, 2003)",
+        "val": 180
+      },
+      {
+        "name": "Opel Corsa D (Deutschland, 2006)",
+        "val": 60
+      },
+      {
+        "name": "Opel Corsa E (Deutschland, 2014)",
+        "val": 90
+      },
+      {
+        "name": "Opel Corsa E OPC (Deutschland, 2015)",
+        "val": 207
+      },
+      {
+        "name": "Opel Corsa F (Deutschland, 2019)",
+        "val": 100
+      },
+      {
+        "name": "Opel Corsa-e (Deutschland, 2020)",
+        "val": 136
+      },
+      {
+        "name": "Opel Kadett D (Deutschland, 1979)",
+        "val": 55
+      },
+      {
+        "name": "Opel Kadett D SR (Deutschland, 1982)",
+        "val": 90
+      },
+      {
+        "name": "Opel Kadett E (Deutschland, 1984)",
+        "val": 60
+      },
+      {
+        "name": "Opel Astra F (Deutschland, 1991)",
+        "val": 60
+      },
+      {
+        "name": "Opel Astra F GSi 16V (Deutschland, 1992)",
+        "val": 150
+      },
+      {
+        "name": "Opel Astra G (Deutschland, 1998)",
+        "val": 90
+      },
+      {
+        "name": "Opel Astra G OPC (Deutschland, 2002)",
+        "val": 192
+      },
+      {
+        "name": "Opel Astra H (Deutschland, 2004)",
+        "val": 90
+      },
+      {
+        "name": "Opel Astra H OPC (Deutschland, 2005)",
+        "val": 240
+      },
+      {
+        "name": "Opel Astra J (Deutschland, 2009)",
+        "val": 100
+      },
+      {
+        "name": "Opel Astra J OPC (Deutschland, 2012)",
+        "val": 280
+      },
+      {
+        "name": "Opel Astra K (Deutschland, 2015)",
+        "val": 105
+      },
+      {
+        "name": "Opel Astra K GSi (Deutschland, 2017)",
+        "val": 200
+      },
+      {
+        "name": "Opel Astra L (Deutschland, 2021)",
+        "val": 110
+      },
+      {
+        "name": "Opel Astra L GSe (Deutschland, 2023)",
+        "val": 225
+      },
+      {
+        "name": "Opel Vectra A (Deutschland, 1988)",
+        "val": 75
+      },
+      {
+        "name": "Opel Vectra A GSi 16V (Deutschland, 1989)",
+        "val": 150
+      },
+      {
+        "name": "Opel Vectra B (Deutschland, 1995)",
+        "val": 100
+      },
+      {
+        "name": "Opel Vectra B V6 (Deutschland, 1999)",
+        "val": 170
+      },
+      {
+        "name": "Opel Vectra C (Deutschland, 2002)",
+        "val": 122
+      },
+      {
+        "name": "Opel Vectra C OPC (Deutschland, 2003)",
+        "val": 255
+      },
+      {
+        "name": "Opel Insignia A (Deutschland, 2008)",
+        "val": 180
+      },
+      {
+        "name": "Opel Insignia A OPC (Deutschland, 2009)",
+        "val": 325
+      },
+      {
+        "name": "Opel Insignia B (Deutschland, 2017)",
+        "val": 140
+      },
+      {
+        "name": "Opel Insignia B GSi (Deutschland, 2018)",
+        "val": 260
+      },
+      {
+        "name": "BMW 316 E21 (Deutschland, 1975)",
+        "val": 90
+      },
+      {
+        "name": "BMW 323i E21 (Deutschland, 1977)",
+        "val": 143
+      },
+      {
+        "name": "BMW 316 E30 (Deutschland, 1982)",
+        "val": 90
+      },
+      {
+        "name": "BMW 316i E36 (Deutschland, 1990)",
+        "val": 102
+      },
+      {
+        "name": "BMW M3 E36 (Deutschland, 1992)",
+        "val": 286
+      },
+      {
+        "name": "BMW 316i E46 (Deutschland, 1998)",
+        "val": 115
+      },
+      {
+        "name": "BMW M3 E46 (Deutschland, 2000)",
+        "val": 343
+      },
+      {
+        "name": "BMW 316i E90 (Deutschland, 2005)",
+        "val": 115
+      },
+      {
+        "name": "BMW 316i F30 (Deutschland, 2012)",
+        "val": 136
+      },
+      {
+        "name": "BMW M3 F80 (Deutschland, 2014)",
+        "val": 431
+      },
+      {
+        "name": "BMW 318i G20 (Deutschland, 2018)",
+        "val": 156
+      },
+      {
+        "name": "BMW M3 G80 (Deutschland, 2021)",
+        "val": 480
+      },
+      {
+        "name": "BMW 518 E12 (Deutschland, 1972)",
+        "val": 90
+      },
+      {
+        "name": "BMW 528i E12 (Deutschland, 1977)",
+        "val": 165
+      },
+      {
+        "name": "BMW 518 E28 (Deutschland, 1981)",
+        "val": 90
+      },
+      {
+        "name": "BMW M535i E28 (Deutschland, 1985)",
+        "val": 218
+      },
+      {
+        "name": "BMW 518i E34 (Deutschland, 1988)",
+        "val": 113
+      },
+      {
+        "name": "BMW 520i E39 (Deutschland, 1996)",
+        "val": 150
+      },
+      {
+        "name": "BMW M5 E39 (Deutschland, 1998)",
+        "val": 400
+      },
+      {
+        "name": "BMW 520i E60 (Deutschland, 2003)",
+        "val": 170
+      },
+      {
+        "name": "BMW M5 E60 (Deutschland, 2004)",
+        "val": 507
+      },
+      {
+        "name": "BMW 520i F10 (Deutschland, 2010)",
+        "val": 184
+      },
+      {
+        "name": "BMW M5 F10 (Deutschland, 2011)",
+        "val": 560
+      },
+      {
+        "name": "BMW 520i G30 (Deutschland, 2017)",
+        "val": 184
+      },
+      {
+        "name": "BMW M5 F90 (Deutschland, 2018)",
+        "val": 600
+      },
+      {
+        "name": "Mercedes-Benz 190 W201 (Deutschland, 1982)",
+        "val": 90
+      },
+      {
+        "name": "Mercedes-Benz C 180 W202 (Deutschland, 1993)",
+        "val": 122
+      },
+      {
+        "name": "Mercedes-Benz C 36 AMG W202 (Deutschland, 1994)",
+        "val": 280
+      },
+      {
+        "name": "Mercedes-Benz C 180 W203 (Deutschland, 2000)",
+        "val": 143
+      },
+      {
+        "name": "Mercedes-Benz C 32 AMG W203 (Deutschland, 2001)",
+        "val": 354
+      },
+      {
+        "name": "Mercedes-Benz C 180 W204 (Deutschland, 2007)",
+        "val": 156
+      },
+      {
+        "name": "Mercedes-Benz C 180 W205 (Deutschland, 2014)",
+        "val": 156
+      },
+      {
+        "name": "Mercedes-Benz C 63 S AMG W205 (Deutschland, 2015)",
+        "val": 510
+      },
+      {
+        "name": "Mercedes-Benz 230 E W123 (Deutschland, 1976)",
+        "val": 136
+      },
+      {
+        "name": "Mercedes-Benz 280 E W123 (Deutschland, 1977)",
+        "val": 185
+      },
+      {
+        "name": "Mercedes-Benz 200 E W124 (Deutschland, 1984)",
+        "val": 118
+      },
+      {
+        "name": "Mercedes-Benz E 200 W210 (Deutschland, 1995)",
+        "val": 136
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W210 (Deutschland, 1997)",
+        "val": 354
+      },
+      {
+        "name": "Mercedes-Benz E 200 W211 (Deutschland, 2002)",
+        "val": 163
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W211 (Deutschland, 2002)",
+        "val": 476
+      },
+      {
+        "name": "Mercedes-Benz E 200 W212 (Deutschland, 2009)",
+        "val": 184
+      },
+      {
+        "name": "Mercedes-Benz E 200 W213 (Deutschland, 2016)",
+        "val": 184
+      },
+      {
+        "name": "Mercedes-Benz E 63 S AMG W213 (Deutschland, 2017)",
+        "val": 612
+      },
+      {
+        "name": "Audi A3 8L (Deutschland, 1996)",
+        "val": 101
+      },
+      {
+        "name": "Audi S3 8L (Deutschland, 1999)",
+        "val": 210
+      },
+      {
+        "name": "Audi A3 8P (Deutschland, 2003)",
+        "val": 102
+      },
+      {
+        "name": "Audi RS3 8P (Deutschland, 2011)",
+        "val": 340
+      },
+      {
+        "name": "Audi A3 8V (Deutschland, 2012)",
+        "val": 105
+      },
+      {
+        "name": "Audi RS3 8V (Deutschland, 2015)",
+        "val": 367
+      },
+      {
+        "name": "Audi A3 8Y (Deutschland, 2020)",
+        "val": 110
+      },
+      {
+        "name": "Audi RS3 8Y (Deutschland, 2021)",
+        "val": 400
+      },
+      {
+        "name": "Audi A4 B5 (Deutschland, 1994)",
+        "val": 101
+      },
+      {
+        "name": "Audi RS4 B5 (Deutschland, 2000)",
+        "val": 380
+      },
+      {
+        "name": "Audi A4 B6 (Deutschland, 2000)",
+        "val": 102
+      },
+      {
+        "name": "Audi RS4 B6 (Deutschland, 2004)",
+        "val": 420
+      },
+      {
+        "name": "Audi A4 B7 (Deutschland, 2005)",
+        "val": 102
+      },
+      {
+        "name": "Audi RS4 B7 (Deutschland, 2005)",
+        "val": 420
+      },
+      {
+        "name": "Audi A4 B8 (Deutschland, 2007)",
+        "val": 160
+      },
+      {
+        "name": "Audi RS4 B8 (Deutschland, 2012)",
+        "val": 450
+      },
+      {
+        "name": "Audi A4 B9 (Deutschland, 2015)",
+        "val": 150
+      },
+      {
+        "name": "Audi RS4 B9 (Deutschland, 2017)",
+        "val": 450
+      },
+      {
+        "name": "Peugeot 205 (Frankreich, 1983)",
+        "val": 45
+      },
+      {
+        "name": "Peugeot 206 (Frankreich, 1998)",
+        "val": 60
+      },
+      {
+        "name": "Peugeot 206 GTI 2.0 (Frankreich, 1999)",
+        "val": 136
+      },
+      {
+        "name": "Peugeot 207 (Frankreich, 2006)",
+        "val": 75
+      },
+      {
+        "name": "Peugeot 207 GTI (Frankreich, 2007)",
+        "val": 175
+      },
+      {
+        "name": "Peugeot 208 (Frankreich, 2012)",
+        "val": 68
+      },
+      {
+        "name": "Peugeot 208 GTI (Frankreich, 2013)",
+        "val": 208
+      },
+      {
+        "name": "Renault Clio I (Frankreich, 1990)",
+        "val": 55
+      },
+      {
+        "name": "Renault Clio I Williams (Frankreich, 1993)",
+        "val": 150
+      },
+      {
+        "name": "Renault Clio II (Frankreich, 1998)",
+        "val": 58
+      },
+      {
+        "name": "Renault Clio II RS (Frankreich, 2001)",
+        "val": 172
+      },
+      {
+        "name": "Renault Clio III (Frankreich, 2005)",
+        "val": 75
+      },
+      {
+        "name": "Renault Clio III RS 197 (Frankreich, 2006)",
+        "val": 197
+      },
+      {
+        "name": "Renault Clio IV (Frankreich, 2012)",
+        "val": 75
+      },
+      {
+        "name": "Renault Clio IV RS 220 Trophy (Frankreich, 2015)",
+        "val": 220
+      },
+      {
+        "name": "Renault Clio V (Frankreich, 2019)",
+        "val": 90
+      },
+      {
+        "name": "Renault Clio V RS Line (Frankreich, 2020)",
+        "val": 131
+      },
+      {
+        "name": "Renault Megane I (Frankreich, 1995)",
+        "val": 75
+      },
+      {
+        "name": "Renault Megane I RS 2.0 (Frankreich, 1999)",
+        "val": 147
+      },
+      {
+        "name": "Renault Megane II (Frankreich, 2002)",
+        "val": 98
+      },
+      {
+        "name": "Renault Megane II RS 225 (Frankreich, 2004)",
+        "val": 225
+      },
+      {
+        "name": "Renault Megane III (Frankreich, 2008)",
+        "val": 100
+      },
+      {
+        "name": "Renault Megane III RS Trophy (Frankreich, 2014)",
+        "val": 275
+      },
+      {
+        "name": "Renault Megane IV (Frankreich, 2016)",
+        "val": 100
+      },
+      {
+        "name": "Fiat Uno (Italien, 1983)",
+        "val": 45
+      },
+      {
+        "name": "Fiat Uno Turbo i.e. (Italien, 1985)",
+        "val": 105
+      },
+      {
+        "name": "Fiat Punto Mk1 (Italien, 1993)",
+        "val": 54
+      },
+      {
+        "name": "Fiat Punto GT (Italien, 1994)",
+        "val": 133
+      },
+      {
+        "name": "Fiat Punto Mk2 (Italien, 1999)",
+        "val": 60
+      },
+      {
+        "name": "Fiat Punto HGT Abarth (Italien, 2002)",
+        "val": 130
+      },
+      {
+        "name": "Fiat Grande Punto (Italien, 2005)",
+        "val": 65
+      },
+      {
+        "name": "Fiat Grande Punto Abarth (Italien, 2007)",
+        "val": 155
+      },
+      {
+        "name": "Alfa Romeo 155 1.8 TS (Italien, 1992)",
+        "val": 129
+      },
+      {
+        "name": "Alfa Romeo 155 Q4 (Italien, 1992)",
+        "val": 190
+      },
+      {
+        "name": "Alfa Romeo 156 1.6 TS (Italien, 1997)",
+        "val": 120
+      },
+      {
+        "name": "Alfa Romeo 156 GTA (Italien, 2002)",
+        "val": 250
+      },
+      {
+        "name": "Alfa Romeo Giulia 2.0T (Italien, 2016)",
+        "val": 200
+      },
+      {
+        "name": "K1 Attack (Slowakei, 2003)",
+        "val": 125
+      },
+      {
+        "name": "Toroidion 1MW (Finnland, 2015)",
+        "val": 1360
+      },
+      {
+        "name": "Buddy Electric (Norwegen, 2008)",
+        "val": 13
+      },
+      {
+        "name": "Puli X3 (Ungarn, 2012)",
+        "val": 160
+      },
+      {
+        "name": "SEAT Ibiza Mk1 (Spanien, 1984)",
+        "val": 63
+      },
+      {
+        "name": "Škoda Octavia I (Tschechien, 1996)",
+        "val": 68
+      },
+      {
+        "name": "Škoda Octavia I RS (Tschechien, 2001)",
+        "val": 180
+      },
+      {
+        "name": "Škoda Octavia II (Tschechien, 2004)",
+        "val": 75
+      },
+      {
+        "name": "Škoda Octavia II RS (Tschechien, 2006)",
+        "val": 200
+      },
+      {
+        "name": "Škoda Octavia III (Tschechien, 2013)",
+        "val": 85
+      },
+      {
+        "name": "Škoda Octavia III RS (Tschechien, 2013)",
+        "val": 220
+      },
+      {
+        "name": "Škoda Octavia IV (Tschechien, 2020)",
+        "val": 110
+      },
+      {
+        "name": "Škoda Octavia IV RS (Tschechien, 2020)",
+        "val": 245
       }
     ]
   },
@@ -448,6 +1604,1162 @@
       {
         "name": "NAMCO Pony (Griechenland, 1972)",
         "val": 90
+      },
+      {
+        "name": "Golf 1 GTI (VW, Deutschland, 1976)",
+        "val": 182
+      },
+      {
+        "name": "Golf 2 GTI 16V (VW, Deutschland, 1987)",
+        "val": 205
+      },
+      {
+        "name": "Golf 3 GTI 2.0 (VW, Deutschland, 1992)",
+        "val": 200
+      },
+      {
+        "name": "Golf 4 R32 (VW, Deutschland, 2002)",
+        "val": 250
+      },
+      {
+        "name": "Golf 5 GTI (VW, Deutschland, 2004)",
+        "val": 236
+      },
+      {
+        "name": "Golf 6 GTI (VW, Deutschland, 2009)",
+        "val": 244
+      },
+      {
+        "name": "Golf 7 R (VW, Deutschland, 2013)",
+        "val": 250
+      },
+      {
+        "name": "Golf 8 GTI Clubsport (VW, Deutschland, 2021)",
+        "val": 250
+      },
+      {
+        "name": "VW Corrado VR6 (Deutschland, 1992)",
+        "val": 231
+      },
+      {
+        "name": "VW Phaeton W12 (Deutschland, 2002)",
+        "val": 300
+      },
+      {
+        "name": "Audi Quattro Urquattro (Deutschland, 1980)",
+        "val": 220
+      },
+      {
+        "name": "Audi Sport Quattro (Deutschland, 1984)",
+        "val": 250
+      },
+      {
+        "name": "Audi RS2 Avant (Deutschland, 1994)",
+        "val": 262
+      },
+      {
+        "name": "Audi TT 8N (Deutschland, 1998)",
+        "val": 235
+      },
+      {
+        "name": "Audi R8 V10 (Deutschland, 2009)",
+        "val": 316
+      },
+      {
+        "name": "Audi RS6 C8 Avant (Deutschland, 2019)",
+        "val": 305
+      },
+      {
+        "name": "Audi e-tron GT (Deutschland, 2021)",
+        "val": 245
+      },
+      {
+        "name": "BMW 2002 Turbo (Deutschland, 1973)",
+        "val": 211
+      },
+      {
+        "name": "BMW M1 (Deutschland, 1978)",
+        "val": 262
+      },
+      {
+        "name": "BMW M5 E34 (Deutschland, 1988)",
+        "val": 250
+      },
+      {
+        "name": "BMW Z8 (Deutschland, 2000)",
+        "val": 250
+      },
+      {
+        "name": "BMW M3 E92 (Deutschland, 2008)",
+        "val": 250
+      },
+      {
+        "name": "BMW M4 Competition (Deutschland, 2021)",
+        "val": 290
+      },
+      {
+        "name": "Opel Manta 400 (Deutschland, 1982)",
+        "val": 220
+      },
+      {
+        "name": "Opel GT (Deutschland, 1968)",
+        "val": 185
+      },
+      {
+        "name": "Opel Kadett E GSi (Deutschland, 1987)",
+        "val": 200
+      },
+      {
+        "name": "Opel Corsa OPC (Deutschland, 2007)",
+        "val": 230
+      },
+      {
+        "name": "Smart Fortwo (Deutschland, 1998)",
+        "val": 130
+      },
+      {
+        "name": "Smart Fortwo Brabus (Deutschland, 2007)",
+        "val": 155
+      },
+      {
+        "name": "Lancia Stratos HF (Italien, 1973)",
+        "val": 230
+      },
+      {
+        "name": "Lancia Delta HF Integrale Evo (Italien, 1992)",
+        "val": 220
+      },
+      {
+        "name": "Saab 900 Turbo (Schweden, 1978)",
+        "val": 195
+      },
+      {
+        "name": "Saab 9-3 Aero (Schweden, 2002)",
+        "val": 240
+      },
+      {
+        "name": "Subaru Impreza WRX STI (Japan, 2005)",
+        "val": 240
+      },
+      {
+        "name": "Mitsubishi Lancer Evo IX (Japan, 2005)",
+        "val": 250
+      },
+      {
+        "name": "Mitsubishi 3000GT VR4 (Japan, 1992)",
+        "val": 249
+      },
+      {
+        "name": "Trabant P601 (Deutschland, 1963)",
+        "val": 110
+      },
+      {
+        "name": "Mercedes-Benz 190E 2.3-16 Cosworth (Deutschland, 1984)",
+        "val": 232
+      },
+      {
+        "name": "Mercedes-Benz C63 AMG (Deutschland, 2006)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-AMG ONE (Deutschland, 2023)",
+        "val": 352
+      },
+      {
+        "name": "Porsche 356 A (Deutschland, 1955)",
+        "val": 170
+      },
+      {
+        "name": "Porsche Carrera GT (Deutschland, 2003)",
+        "val": 330
+      },
+      {
+        "name": "Porsche 911 GT3 RS (Deutschland, 2006)",
+        "val": 310
+      },
+      {
+        "name": "Porsche Cayman GT4 (Deutschland, 2015)",
+        "val": 295
+      },
+      {
+        "name": "Ferrari 308 GTB (Italien, 1975)",
+        "val": 238
+      },
+      {
+        "name": "Ferrari Testarossa (Italien, 1984)",
+        "val": 290
+      },
+      {
+        "name": "Ferrari 458 Italia (Italien, 2009)",
+        "val": 325
+      },
+      {
+        "name": "Ferrari F40 (Italien, 1987)",
+        "val": 324
+      },
+      {
+        "name": "Lamborghini Countach LP400 (Italien, 1974)",
+        "val": 300
+      },
+      {
+        "name": "Lamborghini Aventador LP700-4 (Italien, 2011)",
+        "val": 350
+      },
+      {
+        "name": "Alfa Romeo 147 GTA (Italien, 2002)",
+        "val": 246
+      },
+      {
+        "name": "Alfa Romeo Giulia Quadrifoglio (Italien, 2016)",
+        "val": 307
+      },
+      {
+        "name": "Alpine A110 (Frankreich, 2017)",
+        "val": 250
+      },
+      {
+        "name": "Alpine A110 Berlinette (Frankreich, 1962)",
+        "val": 175
+      },
+      {
+        "name": "Renault Clio V6 Phase 2 (Frankreich, 2003)",
+        "val": 250
+      },
+      {
+        "name": "Renault Mégane RS Trophy-R (Frankreich, 2019)",
+        "val": 272
+      },
+      {
+        "name": "Peugeot 306 Maxi Kit Car (Frankreich, 1996)",
+        "val": 230
+      },
+      {
+        "name": "Citroën SM (Frankreich, 1970)",
+        "val": 220
+      },
+      {
+        "name": "Citroën DS3 Racing (Frankreich, 2011)",
+        "val": 230
+      },
+      {
+        "name": "Honda S2000 (Japan, 2000)",
+        "val": 240
+      },
+      {
+        "name": "Honda Civic Type R EK9 (Japan, 1997)",
+        "val": 220
+      },
+      {
+        "name": "Honda Civic Type R FK8 (Japan, 2017)",
+        "val": 272
+      },
+      {
+        "name": "Toyota MR2 SW20 (Japan, 1989)",
+        "val": 225
+      },
+      {
+        "name": "Toyota Celica GT-Four (Japan, 1994)",
+        "val": 230
+      },
+      {
+        "name": "Toyota GR Yaris (Japan, 2020)",
+        "val": 230
+      },
+      {
+        "name": "Toyota 2000GT (Japan, 1967)",
+        "val": 220
+      },
+      {
+        "name": "Nissan Skyline R32 GT-R (Japan, 1989)",
+        "val": 250
+      },
+      {
+        "name": "Nissan Skyline R34 GT-R (Japan, 1999)",
+        "val": 250
+      },
+      {
+        "name": "Mazda MX-5 NA (Japan, 1989)",
+        "val": 185
+      },
+      {
+        "name": "Mazda RX-8 (Japan, 2003)",
+        "val": 230
+      },
+      {
+        "name": "Lotus Elise S1 (UK, 1996)",
+        "val": 201
+      },
+      {
+        "name": "Caterham Seven 620R (UK, 2013)",
+        "val": 249
+      },
+      {
+        "name": "TVR Cerbera Speed 12 (UK, 2000)",
+        "val": 330
+      },
+      {
+        "name": "Jaguar XJ220 (UK, 1992)",
+        "val": 349
+      },
+      {
+        "name": "Chevrolet Camaro Z28 (USA, 1967)",
+        "val": 201
+      },
+      {
+        "name": "Dodge Challenger SRT Hellcat (USA, 2015)",
+        "val": 320
+      },
+      {
+        "name": "Ford Mustang Shelby GT500 (USA, 2020)",
+        "val": 290
+      },
+      {
+        "name": "Ford Sierra RS Cosworth (UK, 1986)",
+        "val": 244
+      },
+      {
+        "name": "Ford Focus RS (UK, 2016)",
+        "val": 266
+      },
+      {
+        "name": "McLaren P1 (UK, 2013)",
+        "val": 350
+      },
+      {
+        "name": "McLaren 720S (UK, 2017)",
+        "val": 341
+      },
+      {
+        "name": "McLaren Senna (UK, 2018)",
+        "val": 340
+      },
+      {
+        "name": "Pagani Zonda F (Italien, 2005)",
+        "val": 345
+      },
+      {
+        "name": "Pagani Huayra (Italien, 2011)",
+        "val": 383
+      },
+      {
+        "name": "Seat Leon Cupra R (Spanien, 2003)",
+        "val": 247
+      },
+      {
+        "name": "Volvo 850 T5-R (Schweden, 1994)",
+        "val": 250
+      },
+      {
+        "name": "Volvo C30 Polestar (Schweden, 2013)",
+        "val": 250
+      },
+      {
+        "name": "Alfa Romeo 8C Competizione (Italien, 2007)",
+        "val": 292
+      },
+      {
+        "name": "Suzuki Swift Sport (Japan, 2017)",
+        "val": 210
+      },
+      {
+        "name": "Dodge Charger SRT Hellcat (USA, 2015)",
+        "val": 328
+      },
+      {
+        "name": "Acura NSX Gen2 (USA/Japan, 2016)",
+        "val": 308
+      },
+      {
+        "name": "Cupra Born (Spanien, 2021)",
+        "val": 160
+      },
+      {
+        "name": "Hyundai Ioniq 5 N (Südkorea, 2023)",
+        "val": 260
+      },
+      {
+        "name": "Mercedes-Benz 450 SEL 6.9 (Deutschland, 1975)",
+        "val": 225
+      },
+      {
+        "name": "Mercedes-Benz 500E W124 (Deutschland, 1992)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz SLS AMG (Deutschland, 2010)",
+        "val": 317
+      },
+      {
+        "name": "Mercedes-Benz A45 AMG (Deutschland, 2013)",
+        "val": 270
+      },
+      {
+        "name": "Mercedes-AMG GT Black Series (Deutschland, 2020)",
+        "val": 325
+      },
+      {
+        "name": "Mercedes-Benz G 63 AMG (Deutschland, 2012)",
+        "val": 230
+      },
+      {
+        "name": "Mercedes-Benz E 63 AMG T-Modell (Deutschland, 2009)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz B 250 Sport (Deutschland, 2012)",
+        "val": 240
+      },
+      {
+        "name": "Mercedes-Benz CLA 45 AMG (Deutschland, 2013)",
+        "val": 270
+      },
+      {
+        "name": "Mercedes-Benz CLS 63 AMG (Deutschland, 2012)",
+        "val": 300
+      },
+      {
+        "name": "Mercedes-Benz GLC 63 S AMG (Deutschland, 2017)",
+        "val": 270
+      },
+      {
+        "name": "Mercedes-Benz GLE 63 S AMG (Deutschland, 2015)",
+        "val": 280
+      },
+      {
+        "name": "Mercedes-Benz GLS 63 AMG (Deutschland, 2020)",
+        "val": 280
+      },
+      {
+        "name": "VW Golf 1 (Deutschland, 1974)",
+        "val": 157
+      },
+      {
+        "name": "VW Golf 2 (Deutschland, 1983)",
+        "val": 152
+      },
+      {
+        "name": "VW Golf 3 (Deutschland, 1991)",
+        "val": 163
+      },
+      {
+        "name": "VW Golf 4 (Deutschland, 1997)",
+        "val": 175
+      },
+      {
+        "name": "VW Golf 5 (Deutschland, 2003)",
+        "val": 178
+      },
+      {
+        "name": "VW Golf 6 (Deutschland, 2008)",
+        "val": 182
+      },
+      {
+        "name": "VW Golf 7 (Deutschland, 2012)",
+        "val": 185
+      },
+      {
+        "name": "VW Golf 8 (Deutschland, 2019)",
+        "val": 192
+      },
+      {
+        "name": "VW Polo 1 (Deutschland, 1975)",
+        "val": 130
+      },
+      {
+        "name": "VW Polo 1 Coupe GT (Deutschland, 1979)",
+        "val": 165
+      },
+      {
+        "name": "VW Polo 2 (Deutschland, 1981)",
+        "val": 130
+      },
+      {
+        "name": "VW Polo 2 G40 (Deutschland, 1987)",
+        "val": 180
+      },
+      {
+        "name": "VW Polo 3 (Deutschland, 1994)",
+        "val": 143
+      },
+      {
+        "name": "VW Polo 3 GTI 16V (Deutschland, 1998)",
+        "val": 200
+      },
+      {
+        "name": "VW Polo 4 (Deutschland, 2001)",
+        "val": 153
+      },
+      {
+        "name": "VW Polo 4 GTI (Deutschland, 2006)",
+        "val": 210
+      },
+      {
+        "name": "VW Polo 5 (Deutschland, 2009)",
+        "val": 160
+      },
+      {
+        "name": "VW Polo 5 GTI (Deutschland, 2010)",
+        "val": 232
+      },
+      {
+        "name": "VW Polo 6 (Deutschland, 2017)",
+        "val": 170
+      },
+      {
+        "name": "VW Polo 6 GTI (Deutschland, 2018)",
+        "val": 230
+      },
+      {
+        "name": "VW Passat B1 (Deutschland, 1973)",
+        "val": 148
+      },
+      {
+        "name": "VW Passat B1 TS (Deutschland, 1975)",
+        "val": 170
+      },
+      {
+        "name": "VW Passat B2 (Deutschland, 1980)",
+        "val": 155
+      },
+      {
+        "name": "VW Passat B2 GLI 5-Zyl (Deutschland, 1985)",
+        "val": 205
+      },
+      {
+        "name": "VW Passat B3 (Deutschland, 1988)",
+        "val": 170
+      },
+      {
+        "name": "VW Passat B3 G60 Syncro (Deutschland, 1989)",
+        "val": 210
+      },
+      {
+        "name": "VW Passat B4 (Deutschland, 1993)",
+        "val": 185
+      },
+      {
+        "name": "VW Passat B4 VR6 (Deutschland, 1994)",
+        "val": 225
+      },
+      {
+        "name": "VW Passat B5 (Deutschland, 1996)",
+        "val": 192
+      },
+      {
+        "name": "VW Passat B5 W8 (Deutschland, 2001)",
+        "val": 250
+      },
+      {
+        "name": "VW Passat B6 (Deutschland, 2005)",
+        "val": 195
+      },
+      {
+        "name": "VW Passat B6 R36 (Deutschland, 2007)",
+        "val": 250
+      },
+      {
+        "name": "VW Passat B7 (Deutschland, 2010)",
+        "val": 200
+      },
+      {
+        "name": "VW Passat B7 V6 (Deutschland, 2011)",
+        "val": 250
+      },
+      {
+        "name": "VW Passat B8 (Deutschland, 2014)",
+        "val": 207
+      },
+      {
+        "name": "VW Passat B8 2.0 TSI (Deutschland, 2019)",
+        "val": 250
+      },
+      {
+        "name": "Opel Corsa A (Deutschland, 1982)",
+        "val": 148
+      },
+      {
+        "name": "Opel Corsa A GSi (Deutschland, 1987)",
+        "val": 185
+      },
+      {
+        "name": "Opel Corsa B (Deutschland, 1993)",
+        "val": 145
+      },
+      {
+        "name": "Opel Corsa B GSi (Deutschland, 1995)",
+        "val": 193
+      },
+      {
+        "name": "Opel Corsa C (Deutschland, 2000)",
+        "val": 153
+      },
+      {
+        "name": "Opel Corsa C OPC (Deutschland, 2003)",
+        "val": 225
+      },
+      {
+        "name": "Opel Corsa D (Deutschland, 2006)",
+        "val": 158
+      },
+      {
+        "name": "Opel Corsa E (Deutschland, 2014)",
+        "val": 183
+      },
+      {
+        "name": "Opel Corsa E OPC (Deutschland, 2015)",
+        "val": 230
+      },
+      {
+        "name": "Opel Corsa F (Deutschland, 2019)",
+        "val": 190
+      },
+      {
+        "name": "Opel Corsa-e (Deutschland, 2020)",
+        "val": 150
+      },
+      {
+        "name": "Opel Kadett D (Deutschland, 1979)",
+        "val": 148
+      },
+      {
+        "name": "Opel Kadett D SR (Deutschland, 1982)",
+        "val": 178
+      },
+      {
+        "name": "Opel Kadett E (Deutschland, 1984)",
+        "val": 158
+      },
+      {
+        "name": "Opel Astra F (Deutschland, 1991)",
+        "val": 162
+      },
+      {
+        "name": "Opel Astra F GSi 16V (Deutschland, 1992)",
+        "val": 213
+      },
+      {
+        "name": "Opel Astra G (Deutschland, 1998)",
+        "val": 178
+      },
+      {
+        "name": "Opel Astra G OPC (Deutschland, 2002)",
+        "val": 230
+      },
+      {
+        "name": "Opel Astra H (Deutschland, 2004)",
+        "val": 178
+      },
+      {
+        "name": "Opel Astra H OPC (Deutschland, 2005)",
+        "val": 237
+      },
+      {
+        "name": "Opel Astra J (Deutschland, 2009)",
+        "val": 188
+      },
+      {
+        "name": "Opel Astra J OPC (Deutschland, 2012)",
+        "val": 250
+      },
+      {
+        "name": "Opel Astra K (Deutschland, 2015)",
+        "val": 190
+      },
+      {
+        "name": "Opel Astra K GSi (Deutschland, 2017)",
+        "val": 235
+      },
+      {
+        "name": "Opel Astra L (Deutschland, 2021)",
+        "val": 190
+      },
+      {
+        "name": "Opel Astra L GSe (Deutschland, 2023)",
+        "val": 235
+      },
+      {
+        "name": "Opel Vectra A (Deutschland, 1988)",
+        "val": 170
+      },
+      {
+        "name": "Opel Vectra A GSi 16V (Deutschland, 1989)",
+        "val": 213
+      },
+      {
+        "name": "Opel Vectra B (Deutschland, 1995)",
+        "val": 185
+      },
+      {
+        "name": "Opel Vectra B V6 (Deutschland, 1999)",
+        "val": 228
+      },
+      {
+        "name": "Opel Vectra C (Deutschland, 2002)",
+        "val": 205
+      },
+      {
+        "name": "Opel Vectra C OPC (Deutschland, 2003)",
+        "val": 250
+      },
+      {
+        "name": "Opel Insignia A (Deutschland, 2008)",
+        "val": 220
+      },
+      {
+        "name": "Opel Insignia A OPC (Deutschland, 2009)",
+        "val": 250
+      },
+      {
+        "name": "Opel Insignia B (Deutschland, 2017)",
+        "val": 205
+      },
+      {
+        "name": "Opel Insignia B GSi (Deutschland, 2018)",
+        "val": 250
+      },
+      {
+        "name": "BMW 316 E21 (Deutschland, 1975)",
+        "val": 165
+      },
+      {
+        "name": "BMW 323i E21 (Deutschland, 1977)",
+        "val": 200
+      },
+      {
+        "name": "BMW 316 E30 (Deutschland, 1982)",
+        "val": 165
+      },
+      {
+        "name": "BMW 316i E36 (Deutschland, 1990)",
+        "val": 190
+      },
+      {
+        "name": "BMW M3 E36 (Deutschland, 1992)",
+        "val": 250
+      },
+      {
+        "name": "BMW 316i E46 (Deutschland, 1998)",
+        "val": 195
+      },
+      {
+        "name": "BMW M3 E46 (Deutschland, 2000)",
+        "val": 250
+      },
+      {
+        "name": "BMW 316i E90 (Deutschland, 2005)",
+        "val": 198
+      },
+      {
+        "name": "BMW 316i F30 (Deutschland, 2012)",
+        "val": 210
+      },
+      {
+        "name": "BMW M3 F80 (Deutschland, 2014)",
+        "val": 250
+      },
+      {
+        "name": "BMW 318i G20 (Deutschland, 2018)",
+        "val": 215
+      },
+      {
+        "name": "BMW M3 G80 (Deutschland, 2021)",
+        "val": 290
+      },
+      {
+        "name": "BMW 518 E12 (Deutschland, 1972)",
+        "val": 170
+      },
+      {
+        "name": "BMW 528i E12 (Deutschland, 1977)",
+        "val": 200
+      },
+      {
+        "name": "BMW 518 E28 (Deutschland, 1981)",
+        "val": 170
+      },
+      {
+        "name": "BMW M535i E28 (Deutschland, 1985)",
+        "val": 230
+      },
+      {
+        "name": "BMW 518i E34 (Deutschland, 1988)",
+        "val": 190
+      },
+      {
+        "name": "BMW 520i E39 (Deutschland, 1996)",
+        "val": 215
+      },
+      {
+        "name": "BMW M5 E39 (Deutschland, 1998)",
+        "val": 250
+      },
+      {
+        "name": "BMW 520i E60 (Deutschland, 2003)",
+        "val": 228
+      },
+      {
+        "name": "BMW M5 E60 (Deutschland, 2004)",
+        "val": 250
+      },
+      {
+        "name": "BMW 520i F10 (Deutschland, 2010)",
+        "val": 235
+      },
+      {
+        "name": "BMW M5 F10 (Deutschland, 2011)",
+        "val": 250
+      },
+      {
+        "name": "BMW 520i G30 (Deutschland, 2017)",
+        "val": 235
+      },
+      {
+        "name": "BMW M5 F90 (Deutschland, 2018)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz 190 W201 (Deutschland, 1982)",
+        "val": 185
+      },
+      {
+        "name": "Mercedes-Benz C 180 W202 (Deutschland, 1993)",
+        "val": 206
+      },
+      {
+        "name": "Mercedes-Benz C 36 AMG W202 (Deutschland, 1994)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz C 180 W203 (Deutschland, 2000)",
+        "val": 213
+      },
+      {
+        "name": "Mercedes-Benz C 32 AMG W203 (Deutschland, 2001)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz C 180 W204 (Deutschland, 2007)",
+        "val": 217
+      },
+      {
+        "name": "Mercedes-Benz C 180 W205 (Deutschland, 2014)",
+        "val": 218
+      },
+      {
+        "name": "Mercedes-Benz C 63 S AMG W205 (Deutschland, 2015)",
+        "val": 290
+      },
+      {
+        "name": "Mercedes-Benz 230 E W123 (Deutschland, 1976)",
+        "val": 195
+      },
+      {
+        "name": "Mercedes-Benz 280 E W123 (Deutschland, 1977)",
+        "val": 210
+      },
+      {
+        "name": "Mercedes-Benz 200 E W124 (Deutschland, 1984)",
+        "val": 187
+      },
+      {
+        "name": "Mercedes-Benz E 200 W210 (Deutschland, 1995)",
+        "val": 210
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W210 (Deutschland, 1997)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz E 200 W211 (Deutschland, 2002)",
+        "val": 220
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W211 (Deutschland, 2002)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz E 200 W212 (Deutschland, 2009)",
+        "val": 230
+      },
+      {
+        "name": "Mercedes-Benz E 200 W213 (Deutschland, 2016)",
+        "val": 237
+      },
+      {
+        "name": "Mercedes-Benz E 63 S AMG W213 (Deutschland, 2017)",
+        "val": 300
+      },
+      {
+        "name": "Audi A3 8L (Deutschland, 1996)",
+        "val": 195
+      },
+      {
+        "name": "Audi S3 8L (Deutschland, 1999)",
+        "val": 250
+      },
+      {
+        "name": "Audi A3 8P (Deutschland, 2003)",
+        "val": 190
+      },
+      {
+        "name": "Audi RS3 8P (Deutschland, 2011)",
+        "val": 250
+      },
+      {
+        "name": "Audi A3 8V (Deutschland, 2012)",
+        "val": 195
+      },
+      {
+        "name": "Audi RS3 8V (Deutschland, 2015)",
+        "val": 280
+      },
+      {
+        "name": "Audi A3 8Y (Deutschland, 2020)",
+        "val": 200
+      },
+      {
+        "name": "Audi RS3 8Y (Deutschland, 2021)",
+        "val": 290
+      },
+      {
+        "name": "Audi A4 B5 (Deutschland, 1994)",
+        "val": 195
+      },
+      {
+        "name": "Audi RS4 B5 (Deutschland, 2000)",
+        "val": 250
+      },
+      {
+        "name": "Audi A4 B6 (Deutschland, 2000)",
+        "val": 192
+      },
+      {
+        "name": "Audi RS4 B6 (Deutschland, 2004)",
+        "val": 250
+      },
+      {
+        "name": "Audi A4 B7 (Deutschland, 2005)",
+        "val": 192
+      },
+      {
+        "name": "Audi RS4 B7 (Deutschland, 2005)",
+        "val": 250
+      },
+      {
+        "name": "Audi A4 B8 (Deutschland, 2007)",
+        "val": 225
+      },
+      {
+        "name": "Audi RS4 B8 (Deutschland, 2012)",
+        "val": 250
+      },
+      {
+        "name": "Audi A4 B9 (Deutschland, 2015)",
+        "val": 221
+      },
+      {
+        "name": "Audi RS4 B9 (Deutschland, 2017)",
+        "val": 280
+      },
+      {
+        "name": "Peugeot 205 (Frankreich, 1983)",
+        "val": 143
+      },
+      {
+        "name": "Peugeot 206 (Frankreich, 1998)",
+        "val": 160
+      },
+      {
+        "name": "Peugeot 206 GTI 2.0 (Frankreich, 1999)",
+        "val": 210
+      },
+      {
+        "name": "Peugeot 207 (Frankreich, 2006)",
+        "val": 170
+      },
+      {
+        "name": "Peugeot 207 GTI (Frankreich, 2007)",
+        "val": 225
+      },
+      {
+        "name": "Peugeot 208 (Frankreich, 2012)",
+        "val": 166
+      },
+      {
+        "name": "Peugeot 208 GTI (Frankreich, 2013)",
+        "val": 240
+      },
+      {
+        "name": "Renault Clio I (Frankreich, 1990)",
+        "val": 155
+      },
+      {
+        "name": "Renault Clio I Williams (Frankreich, 1993)",
+        "val": 214
+      },
+      {
+        "name": "Renault Clio II (Frankreich, 1998)",
+        "val": 157
+      },
+      {
+        "name": "Renault Clio II RS (Frankreich, 2001)",
+        "val": 220
+      },
+      {
+        "name": "Renault Clio III (Frankreich, 2005)",
+        "val": 167
+      },
+      {
+        "name": "Renault Clio III RS 197 (Frankreich, 2006)",
+        "val": 215
+      },
+      {
+        "name": "Renault Clio IV (Frankreich, 2012)",
+        "val": 173
+      },
+      {
+        "name": "Renault Clio IV RS 220 Trophy (Frankreich, 2015)",
+        "val": 240
+      },
+      {
+        "name": "Renault Clio V (Frankreich, 2019)",
+        "val": 183
+      },
+      {
+        "name": "Renault Clio V RS Line (Frankreich, 2020)",
+        "val": 204
+      },
+      {
+        "name": "Renault Megane I (Frankreich, 1995)",
+        "val": 170
+      },
+      {
+        "name": "Renault Megane I RS 2.0 (Frankreich, 1999)",
+        "val": 210
+      },
+      {
+        "name": "Renault Megane II (Frankreich, 2002)",
+        "val": 182
+      },
+      {
+        "name": "Renault Megane II RS 225 (Frankreich, 2004)",
+        "val": 235
+      },
+      {
+        "name": "Renault Megane III (Frankreich, 2008)",
+        "val": 188
+      },
+      {
+        "name": "Renault Megane III RS Trophy (Frankreich, 2014)",
+        "val": 255
+      },
+      {
+        "name": "Renault Megane IV (Frankreich, 2016)",
+        "val": 192
+      },
+      {
+        "name": "Fiat Uno (Italien, 1983)",
+        "val": 136
+      },
+      {
+        "name": "Fiat Uno Turbo i.e. (Italien, 1985)",
+        "val": 195
+      },
+      {
+        "name": "Fiat Punto Mk1 (Italien, 1993)",
+        "val": 150
+      },
+      {
+        "name": "Fiat Punto GT (Italien, 1994)",
+        "val": 202
+      },
+      {
+        "name": "Fiat Punto Mk2 (Italien, 1999)",
+        "val": 158
+      },
+      {
+        "name": "Fiat Punto HGT Abarth (Italien, 2002)",
+        "val": 209
+      },
+      {
+        "name": "Fiat Grande Punto (Italien, 2005)",
+        "val": 162
+      },
+      {
+        "name": "Fiat Grande Punto Abarth (Italien, 2007)",
+        "val": 218
+      },
+      {
+        "name": "Alfa Romeo 155 1.8 TS (Italien, 1992)",
+        "val": 203
+      },
+      {
+        "name": "Alfa Romeo 155 Q4 (Italien, 1992)",
+        "val": 230
+      },
+      {
+        "name": "Alfa Romeo 156 1.6 TS (Italien, 1997)",
+        "val": 200
+      },
+      {
+        "name": "Alfa Romeo 156 GTA (Italien, 2002)",
+        "val": 250
+      },
+      {
+        "name": "Alfa Romeo Giulia 2.0T (Italien, 2016)",
+        "val": 237
+      },
+      {
+        "name": "K1 Attack (Slowakei, 2003)",
+        "val": 200
+      },
+      {
+        "name": "Toroidion 1MW (Finnland, 2015)",
+        "val": 400
+      },
+      {
+        "name": "Buddy Electric (Norwegen, 2008)",
+        "val": 80
+      },
+      {
+        "name": "Puli X3 (Ungarn, 2012)",
+        "val": 200
+      },
+      {
+        "name": "SEAT Ibiza Mk1 (Spanien, 1984)",
+        "val": 155
+      },
+      {
+        "name": "Škoda Octavia I (Tschechien, 1996)",
+        "val": 163
+      },
+      {
+        "name": "Škoda Octavia I RS (Tschechien, 2001)",
+        "val": 232
+      },
+      {
+        "name": "Škoda Octavia II (Tschechien, 2004)",
+        "val": 170
+      },
+      {
+        "name": "Škoda Octavia II RS (Tschechien, 2006)",
+        "val": 243
+      },
+      {
+        "name": "Škoda Octavia III (Tschechien, 2013)",
+        "val": 183
+      },
+      {
+        "name": "Škoda Octavia III RS (Tschechien, 2013)",
+        "val": 247
+      },
+      {
+        "name": "Škoda Octavia IV (Tschechien, 2020)",
+        "val": 194
+      },
+      {
+        "name": "Škoda Octavia IV RS (Tschechien, 2020)",
+        "val": 250
       }
     ]
   },
@@ -674,6 +2986,1162 @@
       {
         "name": "NAMCO Pony (Griechenland, 1972)",
         "val": 28.0
+      },
+      {
+        "name": "Golf 1 GTI (VW, Deutschland, 1976)",
+        "val": 9.0
+      },
+      {
+        "name": "Golf 2 GTI 16V (VW, Deutschland, 1987)",
+        "val": 8.3
+      },
+      {
+        "name": "Golf 3 GTI 2.0 (VW, Deutschland, 1992)",
+        "val": 9.2
+      },
+      {
+        "name": "Golf 4 R32 (VW, Deutschland, 2002)",
+        "val": 6.6
+      },
+      {
+        "name": "Golf 5 GTI (VW, Deutschland, 2004)",
+        "val": 7.2
+      },
+      {
+        "name": "Golf 6 GTI (VW, Deutschland, 2009)",
+        "val": 6.9
+      },
+      {
+        "name": "Golf 7 R (VW, Deutschland, 2013)",
+        "val": 4.9
+      },
+      {
+        "name": "Golf 8 GTI Clubsport (VW, Deutschland, 2021)",
+        "val": 5.6
+      },
+      {
+        "name": "VW Corrado VR6 (Deutschland, 1992)",
+        "val": 7.3
+      },
+      {
+        "name": "VW Phaeton W12 (Deutschland, 2002)",
+        "val": 5.7
+      },
+      {
+        "name": "Audi Quattro Urquattro (Deutschland, 1980)",
+        "val": 7.1
+      },
+      {
+        "name": "Audi Sport Quattro (Deutschland, 1984)",
+        "val": 5.0
+      },
+      {
+        "name": "Audi RS2 Avant (Deutschland, 1994)",
+        "val": 5.4
+      },
+      {
+        "name": "Audi TT 8N (Deutschland, 1998)",
+        "val": 7.4
+      },
+      {
+        "name": "Audi R8 V10 (Deutschland, 2009)",
+        "val": 3.9
+      },
+      {
+        "name": "Audi RS6 C8 Avant (Deutschland, 2019)",
+        "val": 3.6
+      },
+      {
+        "name": "Audi e-tron GT (Deutschland, 2021)",
+        "val": 4.1
+      },
+      {
+        "name": "BMW 2002 Turbo (Deutschland, 1973)",
+        "val": 6.9
+      },
+      {
+        "name": "BMW M1 (Deutschland, 1978)",
+        "val": 5.6
+      },
+      {
+        "name": "BMW M5 E34 (Deutschland, 1988)",
+        "val": 5.9
+      },
+      {
+        "name": "BMW Z8 (Deutschland, 2000)",
+        "val": 4.7
+      },
+      {
+        "name": "BMW M3 E92 (Deutschland, 2008)",
+        "val": 4.8
+      },
+      {
+        "name": "BMW M4 Competition (Deutschland, 2021)",
+        "val": 3.9
+      },
+      {
+        "name": "Opel Manta 400 (Deutschland, 1982)",
+        "val": 7.5
+      },
+      {
+        "name": "Opel GT (Deutschland, 1968)",
+        "val": 11.0
+      },
+      {
+        "name": "Opel Kadett E GSi (Deutschland, 1987)",
+        "val": 9.2
+      },
+      {
+        "name": "Opel Corsa OPC (Deutschland, 2007)",
+        "val": 6.8
+      },
+      {
+        "name": "Smart Fortwo (Deutschland, 1998)",
+        "val": 15.0
+      },
+      {
+        "name": "Smart Fortwo Brabus (Deutschland, 2007)",
+        "val": 8.2
+      },
+      {
+        "name": "Lancia Stratos HF (Italien, 1973)",
+        "val": 6.5
+      },
+      {
+        "name": "Lancia Delta HF Integrale Evo (Italien, 1992)",
+        "val": 5.7
+      },
+      {
+        "name": "Saab 900 Turbo (Schweden, 1978)",
+        "val": 9.0
+      },
+      {
+        "name": "Saab 9-3 Aero (Schweden, 2002)",
+        "val": 7.2
+      },
+      {
+        "name": "Subaru Impreza WRX STI (Japan, 2005)",
+        "val": 5.0
+      },
+      {
+        "name": "Mitsubishi Lancer Evo IX (Japan, 2005)",
+        "val": 5.3
+      },
+      {
+        "name": "Mitsubishi 3000GT VR4 (Japan, 1992)",
+        "val": 5.9
+      },
+      {
+        "name": "Trabant P601 (Deutschland, 1963)",
+        "val": 28.0
+      },
+      {
+        "name": "Mercedes-Benz 190E 2.3-16 Cosworth (Deutschland, 1984)",
+        "val": 7.5
+      },
+      {
+        "name": "Mercedes-Benz C63 AMG (Deutschland, 2006)",
+        "val": 4.5
+      },
+      {
+        "name": "Mercedes-AMG ONE (Deutschland, 2023)",
+        "val": 2.9
+      },
+      {
+        "name": "Porsche 356 A (Deutschland, 1955)",
+        "val": 13.0
+      },
+      {
+        "name": "Porsche Carrera GT (Deutschland, 2003)",
+        "val": 3.9
+      },
+      {
+        "name": "Porsche 911 GT3 RS (Deutschland, 2006)",
+        "val": 4.2
+      },
+      {
+        "name": "Porsche Cayman GT4 (Deutschland, 2015)",
+        "val": 4.4
+      },
+      {
+        "name": "Ferrari 308 GTB (Italien, 1975)",
+        "val": 6.5
+      },
+      {
+        "name": "Ferrari Testarossa (Italien, 1984)",
+        "val": 5.8
+      },
+      {
+        "name": "Ferrari 458 Italia (Italien, 2009)",
+        "val": 3.4
+      },
+      {
+        "name": "Ferrari F40 (Italien, 1987)",
+        "val": 4.1
+      },
+      {
+        "name": "Lamborghini Countach LP400 (Italien, 1974)",
+        "val": 5.6
+      },
+      {
+        "name": "Lamborghini Aventador LP700-4 (Italien, 2011)",
+        "val": 2.9
+      },
+      {
+        "name": "Alfa Romeo 147 GTA (Italien, 2002)",
+        "val": 6.3
+      },
+      {
+        "name": "Alfa Romeo Giulia Quadrifoglio (Italien, 2016)",
+        "val": 3.9
+      },
+      {
+        "name": "Alpine A110 (Frankreich, 2017)",
+        "val": 4.5
+      },
+      {
+        "name": "Alpine A110 Berlinette (Frankreich, 1962)",
+        "val": 14.0
+      },
+      {
+        "name": "Renault Clio V6 Phase 2 (Frankreich, 2003)",
+        "val": 5.8
+      },
+      {
+        "name": "Renault Mégane RS Trophy-R (Frankreich, 2019)",
+        "val": 5.4
+      },
+      {
+        "name": "Peugeot 306 Maxi Kit Car (Frankreich, 1996)",
+        "val": 5.2
+      },
+      {
+        "name": "Citroën SM (Frankreich, 1970)",
+        "val": 9.0
+      },
+      {
+        "name": "Citroën DS3 Racing (Frankreich, 2011)",
+        "val": 6.5
+      },
+      {
+        "name": "Honda S2000 (Japan, 2000)",
+        "val": 6.2
+      },
+      {
+        "name": "Honda Civic Type R EK9 (Japan, 1997)",
+        "val": 7.5
+      },
+      {
+        "name": "Honda Civic Type R FK8 (Japan, 2017)",
+        "val": 5.8
+      },
+      {
+        "name": "Toyota MR2 SW20 (Japan, 1989)",
+        "val": 6.6
+      },
+      {
+        "name": "Toyota Celica GT-Four (Japan, 1994)",
+        "val": 5.9
+      },
+      {
+        "name": "Toyota GR Yaris (Japan, 2020)",
+        "val": 5.5
+      },
+      {
+        "name": "Toyota 2000GT (Japan, 1967)",
+        "val": 8.4
+      },
+      {
+        "name": "Nissan Skyline R32 GT-R (Japan, 1989)",
+        "val": 5.6
+      },
+      {
+        "name": "Nissan Skyline R34 GT-R (Japan, 1999)",
+        "val": 5.0
+      },
+      {
+        "name": "Mazda MX-5 NA (Japan, 1989)",
+        "val": 9.2
+      },
+      {
+        "name": "Mazda RX-8 (Japan, 2003)",
+        "val": 6.4
+      },
+      {
+        "name": "Lotus Elise S1 (UK, 1996)",
+        "val": 5.8
+      },
+      {
+        "name": "Caterham Seven 620R (UK, 2013)",
+        "val": 2.8
+      },
+      {
+        "name": "TVR Cerbera Speed 12 (UK, 2000)",
+        "val": 3.5
+      },
+      {
+        "name": "Jaguar XJ220 (UK, 1992)",
+        "val": 3.8
+      },
+      {
+        "name": "Chevrolet Camaro Z28 (USA, 1967)",
+        "val": 6.7
+      },
+      {
+        "name": "Dodge Challenger SRT Hellcat (USA, 2015)",
+        "val": 3.7
+      },
+      {
+        "name": "Ford Mustang Shelby GT500 (USA, 2020)",
+        "val": 3.3
+      },
+      {
+        "name": "Ford Sierra RS Cosworth (UK, 1986)",
+        "val": 6.2
+      },
+      {
+        "name": "Ford Focus RS (UK, 2016)",
+        "val": 4.7
+      },
+      {
+        "name": "McLaren P1 (UK, 2013)",
+        "val": 2.8
+      },
+      {
+        "name": "McLaren 720S (UK, 2017)",
+        "val": 2.9
+      },
+      {
+        "name": "McLaren Senna (UK, 2018)",
+        "val": 2.8
+      },
+      {
+        "name": "Pagani Zonda F (Italien, 2005)",
+        "val": 3.6
+      },
+      {
+        "name": "Pagani Huayra (Italien, 2011)",
+        "val": 3.3
+      },
+      {
+        "name": "Seat Leon Cupra R (Spanien, 2003)",
+        "val": 6.6
+      },
+      {
+        "name": "Volvo 850 T5-R (Schweden, 1994)",
+        "val": 6.8
+      },
+      {
+        "name": "Volvo C30 Polestar (Schweden, 2013)",
+        "val": 5.9
+      },
+      {
+        "name": "Alfa Romeo 8C Competizione (Italien, 2007)",
+        "val": 4.2
+      },
+      {
+        "name": "Suzuki Swift Sport (Japan, 2017)",
+        "val": 8.1
+      },
+      {
+        "name": "Dodge Charger SRT Hellcat (USA, 2015)",
+        "val": 3.7
+      },
+      {
+        "name": "Acura NSX Gen2 (USA/Japan, 2016)",
+        "val": 3.0
+      },
+      {
+        "name": "Cupra Born (Spanien, 2021)",
+        "val": 6.6
+      },
+      {
+        "name": "Hyundai Ioniq 5 N (Südkorea, 2023)",
+        "val": 3.4
+      },
+      {
+        "name": "Mercedes-Benz 450 SEL 6.9 (Deutschland, 1975)",
+        "val": 7.4
+      },
+      {
+        "name": "Mercedes-Benz 500E W124 (Deutschland, 1992)",
+        "val": 6.1
+      },
+      {
+        "name": "Mercedes-Benz SLS AMG (Deutschland, 2010)",
+        "val": 3.8
+      },
+      {
+        "name": "Mercedes-Benz A45 AMG (Deutschland, 2013)",
+        "val": 4.6
+      },
+      {
+        "name": "Mercedes-AMG GT Black Series (Deutschland, 2020)",
+        "val": 3.2
+      },
+      {
+        "name": "Mercedes-Benz G 63 AMG (Deutschland, 2012)",
+        "val": 5.4
+      },
+      {
+        "name": "Mercedes-Benz E 63 AMG T-Modell (Deutschland, 2009)",
+        "val": 4.5
+      },
+      {
+        "name": "Mercedes-Benz B 250 Sport (Deutschland, 2012)",
+        "val": 6.8
+      },
+      {
+        "name": "Mercedes-Benz CLA 45 AMG (Deutschland, 2013)",
+        "val": 4.6
+      },
+      {
+        "name": "Mercedes-Benz CLS 63 AMG (Deutschland, 2012)",
+        "val": 4.4
+      },
+      {
+        "name": "Mercedes-Benz GLC 63 S AMG (Deutschland, 2017)",
+        "val": 3.8
+      },
+      {
+        "name": "Mercedes-Benz GLE 63 S AMG (Deutschland, 2015)",
+        "val": 4.2
+      },
+      {
+        "name": "Mercedes-Benz GLS 63 AMG (Deutschland, 2020)",
+        "val": 4.2
+      },
+      {
+        "name": "VW Golf 1 (Deutschland, 1974)",
+        "val": 14.0
+      },
+      {
+        "name": "VW Golf 2 (Deutschland, 1983)",
+        "val": 16.5
+      },
+      {
+        "name": "VW Golf 3 (Deutschland, 1991)",
+        "val": 14.6
+      },
+      {
+        "name": "VW Golf 4 (Deutschland, 1997)",
+        "val": 12.9
+      },
+      {
+        "name": "VW Golf 5 (Deutschland, 2003)",
+        "val": 13.7
+      },
+      {
+        "name": "VW Golf 6 (Deutschland, 2008)",
+        "val": 12.3
+      },
+      {
+        "name": "VW Golf 7 (Deutschland, 2012)",
+        "val": 12.3
+      },
+      {
+        "name": "VW Golf 8 (Deutschland, 2019)",
+        "val": 11.9
+      },
+      {
+        "name": "VW Polo 1 (Deutschland, 1975)",
+        "val": 22.0
+      },
+      {
+        "name": "VW Polo 1 Coupe GT (Deutschland, 1979)",
+        "val": 12.0
+      },
+      {
+        "name": "VW Polo 2 (Deutschland, 1981)",
+        "val": 22.0
+      },
+      {
+        "name": "VW Polo 2 G40 (Deutschland, 1987)",
+        "val": 8.5
+      },
+      {
+        "name": "VW Polo 3 (Deutschland, 1994)",
+        "val": 18.5
+      },
+      {
+        "name": "VW Polo 3 GTI 16V (Deutschland, 1998)",
+        "val": 8.2
+      },
+      {
+        "name": "VW Polo 4 (Deutschland, 2001)",
+        "val": 17.3
+      },
+      {
+        "name": "VW Polo 4 GTI (Deutschland, 2006)",
+        "val": 7.9
+      },
+      {
+        "name": "VW Polo 5 (Deutschland, 2009)",
+        "val": 15.2
+      },
+      {
+        "name": "VW Polo 5 GTI (Deutschland, 2010)",
+        "val": 6.9
+      },
+      {
+        "name": "VW Polo 6 (Deutschland, 2017)",
+        "val": 14.4
+      },
+      {
+        "name": "VW Polo 6 GTI (Deutschland, 2018)",
+        "val": 6.7
+      },
+      {
+        "name": "VW Passat B1 (Deutschland, 1973)",
+        "val": 15.5
+      },
+      {
+        "name": "VW Passat B1 TS (Deutschland, 1975)",
+        "val": 11.5
+      },
+      {
+        "name": "VW Passat B2 (Deutschland, 1980)",
+        "val": 15.0
+      },
+      {
+        "name": "VW Passat B2 GLI 5-Zyl (Deutschland, 1985)",
+        "val": 9.0
+      },
+      {
+        "name": "VW Passat B3 (Deutschland, 1988)",
+        "val": 13.5
+      },
+      {
+        "name": "VW Passat B3 G60 Syncro (Deutschland, 1989)",
+        "val": 8.4
+      },
+      {
+        "name": "VW Passat B4 (Deutschland, 1993)",
+        "val": 11.3
+      },
+      {
+        "name": "VW Passat B4 VR6 (Deutschland, 1994)",
+        "val": 8.4
+      },
+      {
+        "name": "VW Passat B5 (Deutschland, 1996)",
+        "val": 11.6
+      },
+      {
+        "name": "VW Passat B5 W8 (Deutschland, 2001)",
+        "val": 6.6
+      },
+      {
+        "name": "VW Passat B6 (Deutschland, 2005)",
+        "val": 11.0
+      },
+      {
+        "name": "VW Passat B6 R36 (Deutschland, 2007)",
+        "val": 5.6
+      },
+      {
+        "name": "VW Passat B7 (Deutschland, 2010)",
+        "val": 9.7
+      },
+      {
+        "name": "VW Passat B7 V6 (Deutschland, 2011)",
+        "val": 5.6
+      },
+      {
+        "name": "VW Passat B8 (Deutschland, 2014)",
+        "val": 9.6
+      },
+      {
+        "name": "VW Passat B8 2.0 TSI (Deutschland, 2019)",
+        "val": 5.9
+      },
+      {
+        "name": "Opel Corsa A (Deutschland, 1982)",
+        "val": 15.0
+      },
+      {
+        "name": "Opel Corsa A GSi (Deutschland, 1987)",
+        "val": 9.5
+      },
+      {
+        "name": "Opel Corsa B (Deutschland, 1993)",
+        "val": 18.0
+      },
+      {
+        "name": "Opel Corsa B GSi (Deutschland, 1995)",
+        "val": 9.3
+      },
+      {
+        "name": "Opel Corsa C (Deutschland, 2000)",
+        "val": 15.9
+      },
+      {
+        "name": "Opel Corsa C OPC (Deutschland, 2003)",
+        "val": 7.0
+      },
+      {
+        "name": "Opel Corsa D (Deutschland, 2006)",
+        "val": 14.9
+      },
+      {
+        "name": "Opel Corsa E (Deutschland, 2014)",
+        "val": 11.9
+      },
+      {
+        "name": "Opel Corsa E OPC (Deutschland, 2015)",
+        "val": 6.8
+      },
+      {
+        "name": "Opel Corsa F (Deutschland, 2019)",
+        "val": 10.1
+      },
+      {
+        "name": "Opel Corsa-e (Deutschland, 2020)",
+        "val": 8.1
+      },
+      {
+        "name": "Opel Kadett D (Deutschland, 1979)",
+        "val": 16.5
+      },
+      {
+        "name": "Opel Kadett D SR (Deutschland, 1982)",
+        "val": 10.5
+      },
+      {
+        "name": "Opel Kadett E (Deutschland, 1984)",
+        "val": 14.5
+      },
+      {
+        "name": "Opel Astra F (Deutschland, 1991)",
+        "val": 14.8
+      },
+      {
+        "name": "Opel Astra F GSi 16V (Deutschland, 1992)",
+        "val": 7.8
+      },
+      {
+        "name": "Opel Astra G (Deutschland, 1998)",
+        "val": 11.5
+      },
+      {
+        "name": "Opel Astra G OPC (Deutschland, 2002)",
+        "val": 7.3
+      },
+      {
+        "name": "Opel Astra H (Deutschland, 2004)",
+        "val": 12.0
+      },
+      {
+        "name": "Opel Astra H OPC (Deutschland, 2005)",
+        "val": 6.3
+      },
+      {
+        "name": "Opel Astra J (Deutschland, 2009)",
+        "val": 11.7
+      },
+      {
+        "name": "Opel Astra J OPC (Deutschland, 2012)",
+        "val": 5.9
+      },
+      {
+        "name": "Opel Astra K (Deutschland, 2015)",
+        "val": 11.9
+      },
+      {
+        "name": "Opel Astra K GSi (Deutschland, 2017)",
+        "val": 7.0
+      },
+      {
+        "name": "Opel Astra L (Deutschland, 2021)",
+        "val": 10.7
+      },
+      {
+        "name": "Opel Astra L GSe (Deutschland, 2023)",
+        "val": 7.5
+      },
+      {
+        "name": "Opel Vectra A (Deutschland, 1988)",
+        "val": 13.5
+      },
+      {
+        "name": "Opel Vectra A GSi 16V (Deutschland, 1989)",
+        "val": 7.9
+      },
+      {
+        "name": "Opel Vectra B (Deutschland, 1995)",
+        "val": 11.5
+      },
+      {
+        "name": "Opel Vectra B V6 (Deutschland, 1999)",
+        "val": 8.1
+      },
+      {
+        "name": "Opel Vectra C (Deutschland, 2002)",
+        "val": 10.9
+      },
+      {
+        "name": "Opel Vectra C OPC (Deutschland, 2003)",
+        "val": 6.2
+      },
+      {
+        "name": "Opel Insignia A (Deutschland, 2008)",
+        "val": 8.8
+      },
+      {
+        "name": "Opel Insignia A OPC (Deutschland, 2009)",
+        "val": 5.9
+      },
+      {
+        "name": "Opel Insignia B (Deutschland, 2017)",
+        "val": 9.4
+      },
+      {
+        "name": "Opel Insignia B GSi (Deutschland, 2018)",
+        "val": 7.0
+      },
+      {
+        "name": "BMW 316 E21 (Deutschland, 1975)",
+        "val": 13.0
+      },
+      {
+        "name": "BMW 323i E21 (Deutschland, 1977)",
+        "val": 9.0
+      },
+      {
+        "name": "BMW 316 E30 (Deutschland, 1982)",
+        "val": 12.5
+      },
+      {
+        "name": "BMW 316i E36 (Deutschland, 1990)",
+        "val": 11.5
+      },
+      {
+        "name": "BMW M3 E36 (Deutschland, 1992)",
+        "val": 5.5
+      },
+      {
+        "name": "BMW 316i E46 (Deutschland, 1998)",
+        "val": 11.5
+      },
+      {
+        "name": "BMW M3 E46 (Deutschland, 2000)",
+        "val": 4.9
+      },
+      {
+        "name": "BMW 316i E90 (Deutschland, 2005)",
+        "val": 11.8
+      },
+      {
+        "name": "BMW 316i F30 (Deutschland, 2012)",
+        "val": 9.7
+      },
+      {
+        "name": "BMW M3 F80 (Deutschland, 2014)",
+        "val": 4.1
+      },
+      {
+        "name": "BMW 318i G20 (Deutschland, 2018)",
+        "val": 8.9
+      },
+      {
+        "name": "BMW M3 G80 (Deutschland, 2021)",
+        "val": 3.9
+      },
+      {
+        "name": "BMW 518 E12 (Deutschland, 1972)",
+        "val": 14.0
+      },
+      {
+        "name": "BMW 528i E12 (Deutschland, 1977)",
+        "val": 9.5
+      },
+      {
+        "name": "BMW 518 E28 (Deutschland, 1981)",
+        "val": 14.5
+      },
+      {
+        "name": "BMW M535i E28 (Deutschland, 1985)",
+        "val": 7.0
+      },
+      {
+        "name": "BMW 518i E34 (Deutschland, 1988)",
+        "val": 12.0
+      },
+      {
+        "name": "BMW 520i E39 (Deutschland, 1996)",
+        "val": 10.0
+      },
+      {
+        "name": "BMW M5 E39 (Deutschland, 1998)",
+        "val": 5.3
+      },
+      {
+        "name": "BMW 520i E60 (Deutschland, 2003)",
+        "val": 9.4
+      },
+      {
+        "name": "BMW M5 E60 (Deutschland, 2004)",
+        "val": 4.7
+      },
+      {
+        "name": "BMW 520i F10 (Deutschland, 2010)",
+        "val": 8.0
+      },
+      {
+        "name": "BMW M5 F10 (Deutschland, 2011)",
+        "val": 4.4
+      },
+      {
+        "name": "BMW 520i G30 (Deutschland, 2017)",
+        "val": 7.8
+      },
+      {
+        "name": "BMW M5 F90 (Deutschland, 2018)",
+        "val": 3.4
+      },
+      {
+        "name": "Mercedes-Benz 190 W201 (Deutschland, 1982)",
+        "val": 12.5
+      },
+      {
+        "name": "Mercedes-Benz C 180 W202 (Deutschland, 1993)",
+        "val": 11.5
+      },
+      {
+        "name": "Mercedes-Benz C 36 AMG W202 (Deutschland, 1994)",
+        "val": 6.1
+      },
+      {
+        "name": "Mercedes-Benz C 180 W203 (Deutschland, 2000)",
+        "val": 10.2
+      },
+      {
+        "name": "Mercedes-Benz C 32 AMG W203 (Deutschland, 2001)",
+        "val": 5.2
+      },
+      {
+        "name": "Mercedes-Benz C 180 W204 (Deutschland, 2007)",
+        "val": 9.2
+      },
+      {
+        "name": "Mercedes-Benz C 180 W205 (Deutschland, 2014)",
+        "val": 9.4
+      },
+      {
+        "name": "Mercedes-Benz C 63 S AMG W205 (Deutschland, 2015)",
+        "val": 3.9
+      },
+      {
+        "name": "Mercedes-Benz 230 E W123 (Deutschland, 1976)",
+        "val": 10.5
+      },
+      {
+        "name": "Mercedes-Benz 280 E W123 (Deutschland, 1977)",
+        "val": 9.5
+      },
+      {
+        "name": "Mercedes-Benz 200 E W124 (Deutschland, 1984)",
+        "val": 12.0
+      },
+      {
+        "name": "Mercedes-Benz E 200 W210 (Deutschland, 1995)",
+        "val": 11.0
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W210 (Deutschland, 1997)",
+        "val": 5.7
+      },
+      {
+        "name": "Mercedes-Benz E 200 W211 (Deutschland, 2002)",
+        "val": 10.8
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W211 (Deutschland, 2002)",
+        "val": 4.7
+      },
+      {
+        "name": "Mercedes-Benz E 200 W212 (Deutschland, 2009)",
+        "val": 9.2
+      },
+      {
+        "name": "Mercedes-Benz E 200 W213 (Deutschland, 2016)",
+        "val": 8.5
+      },
+      {
+        "name": "Mercedes-Benz E 63 S AMG W213 (Deutschland, 2017)",
+        "val": 3.4
+      },
+      {
+        "name": "Audi A3 8L (Deutschland, 1996)",
+        "val": 10.5
+      },
+      {
+        "name": "Audi S3 8L (Deutschland, 1999)",
+        "val": 6.6
+      },
+      {
+        "name": "Audi A3 8P (Deutschland, 2003)",
+        "val": 11.5
+      },
+      {
+        "name": "Audi RS3 8P (Deutschland, 2011)",
+        "val": 4.6
+      },
+      {
+        "name": "Audi A3 8V (Deutschland, 2012)",
+        "val": 11.5
+      },
+      {
+        "name": "Audi RS3 8V (Deutschland, 2015)",
+        "val": 4.3
+      },
+      {
+        "name": "Audi A3 8Y (Deutschland, 2020)",
+        "val": 11.0
+      },
+      {
+        "name": "Audi RS3 8Y (Deutschland, 2021)",
+        "val": 3.8
+      },
+      {
+        "name": "Audi A4 B5 (Deutschland, 1994)",
+        "val": 11.3
+      },
+      {
+        "name": "Audi RS4 B5 (Deutschland, 2000)",
+        "val": 4.9
+      },
+      {
+        "name": "Audi A4 B6 (Deutschland, 2000)",
+        "val": 12.2
+      },
+      {
+        "name": "Audi RS4 B6 (Deutschland, 2004)",
+        "val": 4.9
+      },
+      {
+        "name": "Audi A4 B7 (Deutschland, 2005)",
+        "val": 12.2
+      },
+      {
+        "name": "Audi RS4 B7 (Deutschland, 2005)",
+        "val": 4.8
+      },
+      {
+        "name": "Audi A4 B8 (Deutschland, 2007)",
+        "val": 9.4
+      },
+      {
+        "name": "Audi RS4 B8 (Deutschland, 2012)",
+        "val": 4.7
+      },
+      {
+        "name": "Audi A4 B9 (Deutschland, 2015)",
+        "val": 9.3
+      },
+      {
+        "name": "Audi RS4 B9 (Deutschland, 2017)",
+        "val": 4.1
+      },
+      {
+        "name": "Peugeot 205 (Frankreich, 1983)",
+        "val": 18.0
+      },
+      {
+        "name": "Peugeot 206 (Frankreich, 1998)",
+        "val": 14.9
+      },
+      {
+        "name": "Peugeot 206 GTI 2.0 (Frankreich, 1999)",
+        "val": 8.3
+      },
+      {
+        "name": "Peugeot 207 (Frankreich, 2006)",
+        "val": 13.9
+      },
+      {
+        "name": "Peugeot 207 GTI (Frankreich, 2007)",
+        "val": 7.1
+      },
+      {
+        "name": "Peugeot 208 (Frankreich, 2012)",
+        "val": 14.9
+      },
+      {
+        "name": "Peugeot 208 GTI (Frankreich, 2013)",
+        "val": 6.5
+      },
+      {
+        "name": "Renault Clio I (Frankreich, 1990)",
+        "val": 15.5
+      },
+      {
+        "name": "Renault Clio I Williams (Frankreich, 1993)",
+        "val": 7.8
+      },
+      {
+        "name": "Renault Clio II (Frankreich, 1998)",
+        "val": 15.2
+      },
+      {
+        "name": "Renault Clio II RS (Frankreich, 2001)",
+        "val": 7.5
+      },
+      {
+        "name": "Renault Clio III (Frankreich, 2005)",
+        "val": 14.0
+      },
+      {
+        "name": "Renault Clio III RS 197 (Frankreich, 2006)",
+        "val": 6.9
+      },
+      {
+        "name": "Renault Clio IV (Frankreich, 2012)",
+        "val": 13.8
+      },
+      {
+        "name": "Renault Clio IV RS 220 Trophy (Frankreich, 2015)",
+        "val": 6.6
+      },
+      {
+        "name": "Renault Clio V (Frankreich, 2019)",
+        "val": 11.0
+      },
+      {
+        "name": "Renault Clio V RS Line (Frankreich, 2020)",
+        "val": 9.0
+      },
+      {
+        "name": "Renault Megane I (Frankreich, 1995)",
+        "val": 13.5
+      },
+      {
+        "name": "Renault Megane I RS 2.0 (Frankreich, 1999)",
+        "val": 8.2
+      },
+      {
+        "name": "Renault Megane II (Frankreich, 2002)",
+        "val": 12.0
+      },
+      {
+        "name": "Renault Megane II RS 225 (Frankreich, 2004)",
+        "val": 6.5
+      },
+      {
+        "name": "Renault Megane III (Frankreich, 2008)",
+        "val": 11.8
+      },
+      {
+        "name": "Renault Megane III RS Trophy (Frankreich, 2014)",
+        "val": 5.8
+      },
+      {
+        "name": "Renault Megane IV (Frankreich, 2016)",
+        "val": 11.5
+      },
+      {
+        "name": "Fiat Uno (Italien, 1983)",
+        "val": 17.0
+      },
+      {
+        "name": "Fiat Uno Turbo i.e. (Italien, 1985)",
+        "val": 7.7
+      },
+      {
+        "name": "Fiat Punto Mk1 (Italien, 1993)",
+        "val": 15.5
+      },
+      {
+        "name": "Fiat Punto GT (Italien, 1994)",
+        "val": 7.8
+      },
+      {
+        "name": "Fiat Punto Mk2 (Italien, 1999)",
+        "val": 13.9
+      },
+      {
+        "name": "Fiat Punto HGT Abarth (Italien, 2002)",
+        "val": 8.0
+      },
+      {
+        "name": "Fiat Grande Punto (Italien, 2005)",
+        "val": 14.4
+      },
+      {
+        "name": "Fiat Grande Punto Abarth (Italien, 2007)",
+        "val": 7.9
+      },
+      {
+        "name": "Alfa Romeo 155 1.8 TS (Italien, 1992)",
+        "val": 9.8
+      },
+      {
+        "name": "Alfa Romeo 155 Q4 (Italien, 1992)",
+        "val": 7.0
+      },
+      {
+        "name": "Alfa Romeo 156 1.6 TS (Italien, 1997)",
+        "val": 11.5
+      },
+      {
+        "name": "Alfa Romeo 156 GTA (Italien, 2002)",
+        "val": 6.3
+      },
+      {
+        "name": "Alfa Romeo Giulia 2.0T (Italien, 2016)",
+        "val": 6.6
+      },
+      {
+        "name": "K1 Attack (Slowakei, 2003)",
+        "val": 5.9
+      },
+      {
+        "name": "Toroidion 1MW (Finnland, 2015)",
+        "val": 2.5
+      },
+      {
+        "name": "Buddy Electric (Norwegen, 2008)",
+        "val": 15.0
+      },
+      {
+        "name": "Puli X3 (Ungarn, 2012)",
+        "val": 7.5
+      },
+      {
+        "name": "SEAT Ibiza Mk1 (Spanien, 1984)",
+        "val": 14.5
+      },
+      {
+        "name": "Škoda Octavia I (Tschechien, 1996)",
+        "val": 14.7
+      },
+      {
+        "name": "Škoda Octavia I RS (Tschechien, 2001)",
+        "val": 7.3
+      },
+      {
+        "name": "Škoda Octavia II (Tschechien, 2004)",
+        "val": 13.5
+      },
+      {
+        "name": "Škoda Octavia II RS (Tschechien, 2006)",
+        "val": 7.0
+      },
+      {
+        "name": "Škoda Octavia III (Tschechien, 2013)",
+        "val": 12.3
+      },
+      {
+        "name": "Škoda Octavia III RS (Tschechien, 2013)",
+        "val": 6.6
+      },
+      {
+        "name": "Škoda Octavia IV (Tschechien, 2020)",
+        "val": 11.1
+      },
+      {
+        "name": "Škoda Octavia IV RS (Tschechien, 2020)",
+        "val": 6.4
       }
     ]
   },
@@ -880,6 +4348,2516 @@
       {
         "name": "NAMCO Pony (Griechenland, 1972)",
         "val": 1192
+      },
+      {
+        "name": "Golf 1 GTI (VW, Deutschland, 1976)",
+        "val": 1588
+      },
+      {
+        "name": "Golf 2 GTI 16V (VW, Deutschland, 1987)",
+        "val": 1781
+      },
+      {
+        "name": "Golf 3 GTI 2.0 (VW, Deutschland, 1992)",
+        "val": 1984
+      },
+      {
+        "name": "Golf 4 R32 (VW, Deutschland, 2002)",
+        "val": 3189
+      },
+      {
+        "name": "Golf 5 GTI (VW, Deutschland, 2004)",
+        "val": 1984
+      },
+      {
+        "name": "Golf 6 GTI (VW, Deutschland, 2009)",
+        "val": 1984
+      },
+      {
+        "name": "Golf 7 R (VW, Deutschland, 2013)",
+        "val": 1984
+      },
+      {
+        "name": "Golf 8 GTI Clubsport (VW, Deutschland, 2021)",
+        "val": 1984
+      },
+      {
+        "name": "VW Corrado VR6 (Deutschland, 1992)",
+        "val": 2861
+      },
+      {
+        "name": "VW Phaeton W12 (Deutschland, 2002)",
+        "val": 5998
+      },
+      {
+        "name": "Audi Quattro Urquattro (Deutschland, 1980)",
+        "val": 2144
+      },
+      {
+        "name": "Audi Sport Quattro (Deutschland, 1984)",
+        "val": 2133
+      },
+      {
+        "name": "Audi RS2 Avant (Deutschland, 1994)",
+        "val": 2226
+      },
+      {
+        "name": "Audi TT 8N (Deutschland, 1998)",
+        "val": 1781
+      },
+      {
+        "name": "Audi R8 V10 (Deutschland, 2009)",
+        "val": 5204
+      },
+      {
+        "name": "Audi RS6 C8 Avant (Deutschland, 2019)",
+        "val": 3996
+      },
+      {
+        "name": "BMW 2002 Turbo (Deutschland, 1973)",
+        "val": 1990
+      },
+      {
+        "name": "BMW M1 (Deutschland, 1978)",
+        "val": 3453
+      },
+      {
+        "name": "BMW M5 E34 (Deutschland, 1988)",
+        "val": 3535
+      },
+      {
+        "name": "BMW Z8 (Deutschland, 2000)",
+        "val": 4941
+      },
+      {
+        "name": "BMW M3 E92 (Deutschland, 2008)",
+        "val": 3999
+      },
+      {
+        "name": "BMW M4 Competition (Deutschland, 2021)",
+        "val": 2993
+      },
+      {
+        "name": "Opel Manta 400 (Deutschland, 1982)",
+        "val": 1979
+      },
+      {
+        "name": "Opel GT (Deutschland, 1968)",
+        "val": 1897
+      },
+      {
+        "name": "Opel Kadett E GSi (Deutschland, 1987)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Corsa OPC (Deutschland, 2007)",
+        "val": 1598
+      },
+      {
+        "name": "Smart Fortwo (Deutschland, 1998)",
+        "val": 599
+      },
+      {
+        "name": "Smart Fortwo Brabus (Deutschland, 2007)",
+        "val": 698
+      },
+      {
+        "name": "Lancia Stratos HF (Italien, 1973)",
+        "val": 2418
+      },
+      {
+        "name": "Lancia Delta HF Integrale Evo (Italien, 1992)",
+        "val": 1995
+      },
+      {
+        "name": "Saab 900 Turbo (Schweden, 1978)",
+        "val": 1985
+      },
+      {
+        "name": "Saab 9-3 Aero (Schweden, 2002)",
+        "val": 1985
+      },
+      {
+        "name": "Subaru Impreza WRX STI (Japan, 2005)",
+        "val": 1994
+      },
+      {
+        "name": "Mitsubishi Lancer Evo IX (Japan, 2005)",
+        "val": 1997
+      },
+      {
+        "name": "Mitsubishi 3000GT VR4 (Japan, 1992)",
+        "val": 2972
+      },
+      {
+        "name": "Trabant P601 (Deutschland, 1963)",
+        "val": 595
+      },
+      {
+        "name": "Mercedes-Benz 190E 2.3-16 Cosworth (Deutschland, 1984)",
+        "val": 2299
+      },
+      {
+        "name": "Mercedes-Benz C63 AMG (Deutschland, 2006)",
+        "val": 6208
+      },
+      {
+        "name": "Mercedes-AMG ONE (Deutschland, 2023)",
+        "val": 1599
+      },
+      {
+        "name": "Porsche 356 A (Deutschland, 1955)",
+        "val": 1582
+      },
+      {
+        "name": "Porsche Carrera GT (Deutschland, 2003)",
+        "val": 5733
+      },
+      {
+        "name": "Porsche 911 GT3 RS (Deutschland, 2006)",
+        "val": 3600
+      },
+      {
+        "name": "Porsche Cayman GT4 (Deutschland, 2015)",
+        "val": 3800
+      },
+      {
+        "name": "Ferrari 308 GTB (Italien, 1975)",
+        "val": 2926
+      },
+      {
+        "name": "Ferrari Testarossa (Italien, 1984)",
+        "val": 4942
+      },
+      {
+        "name": "Ferrari 458 Italia (Italien, 2009)",
+        "val": 4499
+      },
+      {
+        "name": "Ferrari F40 (Italien, 1987)",
+        "val": 2936
+      },
+      {
+        "name": "Lamborghini Countach LP400 (Italien, 1974)",
+        "val": 3929
+      },
+      {
+        "name": "Lamborghini Aventador LP700-4 (Italien, 2011)",
+        "val": 6498
+      },
+      {
+        "name": "Alfa Romeo 147 GTA (Italien, 2002)",
+        "val": 3179
+      },
+      {
+        "name": "Alfa Romeo Giulia Quadrifoglio (Italien, 2016)",
+        "val": 2891
+      },
+      {
+        "name": "Alpine A110 (Frankreich, 2017)",
+        "val": 1798
+      },
+      {
+        "name": "Alpine A110 Berlinette (Frankreich, 1962)",
+        "val": 1108
+      },
+      {
+        "name": "Renault Clio V6 Phase 2 (Frankreich, 2003)",
+        "val": 2946
+      },
+      {
+        "name": "Renault Mégane RS Trophy-R (Frankreich, 2019)",
+        "val": 1798
+      },
+      {
+        "name": "Peugeot 306 Maxi Kit Car (Frankreich, 1996)",
+        "val": 1999
+      },
+      {
+        "name": "Citroën SM (Frankreich, 1970)",
+        "val": 2670
+      },
+      {
+        "name": "Citroën DS3 Racing (Frankreich, 2011)",
+        "val": 1598
+      },
+      {
+        "name": "Honda S2000 (Japan, 2000)",
+        "val": 1997
+      },
+      {
+        "name": "Honda Civic Type R EK9 (Japan, 1997)",
+        "val": 1595
+      },
+      {
+        "name": "Honda Civic Type R FK8 (Japan, 2017)",
+        "val": 1996
+      },
+      {
+        "name": "Toyota MR2 SW20 (Japan, 1989)",
+        "val": 1998
+      },
+      {
+        "name": "Toyota Celica GT-Four (Japan, 1994)",
+        "val": 1998
+      },
+      {
+        "name": "Toyota GR Yaris (Japan, 2020)",
+        "val": 1618
+      },
+      {
+        "name": "Toyota 2000GT (Japan, 1967)",
+        "val": 1988
+      },
+      {
+        "name": "Nissan Skyline R32 GT-R (Japan, 1989)",
+        "val": 2568
+      },
+      {
+        "name": "Nissan Skyline R34 GT-R (Japan, 1999)",
+        "val": 2568
+      },
+      {
+        "name": "Mazda MX-5 NA (Japan, 1989)",
+        "val": 1597
+      },
+      {
+        "name": "Mazda RX-8 (Japan, 2003)",
+        "val": 1308
+      },
+      {
+        "name": "Lotus Elise S1 (UK, 1996)",
+        "val": 1796
+      },
+      {
+        "name": "Caterham Seven 620R (UK, 2013)",
+        "val": 1999
+      },
+      {
+        "name": "TVR Cerbera Speed 12 (UK, 2000)",
+        "val": 7737
+      },
+      {
+        "name": "Jaguar XJ220 (UK, 1992)",
+        "val": 3498
+      },
+      {
+        "name": "Chevrolet Camaro Z28 (USA, 1967)",
+        "val": 4948
+      },
+      {
+        "name": "Dodge Challenger SRT Hellcat (USA, 2015)",
+        "val": 6166
+      },
+      {
+        "name": "Ford Mustang Shelby GT500 (USA, 2020)",
+        "val": 5163
+      },
+      {
+        "name": "Ford Sierra RS Cosworth (UK, 1986)",
+        "val": 1993
+      },
+      {
+        "name": "Ford Focus RS (UK, 2016)",
+        "val": 1999
+      },
+      {
+        "name": "McLaren P1 (UK, 2013)",
+        "val": 3799
+      },
+      {
+        "name": "McLaren 720S (UK, 2017)",
+        "val": 3994
+      },
+      {
+        "name": "McLaren Senna (UK, 2018)",
+        "val": 3994
+      },
+      {
+        "name": "Pagani Zonda F (Italien, 2005)",
+        "val": 7291
+      },
+      {
+        "name": "Pagani Huayra (Italien, 2011)",
+        "val": 5980
+      },
+      {
+        "name": "Seat Leon Cupra R (Spanien, 2003)",
+        "val": 1984
+      },
+      {
+        "name": "Volvo 850 T5-R (Schweden, 1994)",
+        "val": 2319
+      },
+      {
+        "name": "Volvo C30 Polestar (Schweden, 2013)",
+        "val": 2521
+      },
+      {
+        "name": "Alfa Romeo 8C Competizione (Italien, 2007)",
+        "val": 4691
+      },
+      {
+        "name": "Suzuki Swift Sport (Japan, 2017)",
+        "val": 1373
+      },
+      {
+        "name": "Dodge Charger SRT Hellcat (USA, 2015)",
+        "val": 6166
+      },
+      {
+        "name": "Acura NSX Gen2 (USA/Japan, 2016)",
+        "val": 3493
+      },
+      {
+        "name": "Mercedes-Benz 450 SEL 6.9 (Deutschland, 1975)",
+        "val": 6834
+      },
+      {
+        "name": "Mercedes-Benz 500E W124 (Deutschland, 1992)",
+        "val": 4973
+      },
+      {
+        "name": "Mercedes-Benz SLS AMG (Deutschland, 2010)",
+        "val": 6208
+      },
+      {
+        "name": "Mercedes-Benz A45 AMG (Deutschland, 2013)",
+        "val": 1991
+      },
+      {
+        "name": "Mercedes-AMG GT Black Series (Deutschland, 2020)",
+        "val": 3982
+      },
+      {
+        "name": "Mercedes-Benz G 63 AMG (Deutschland, 2012)",
+        "val": 5461
+      },
+      {
+        "name": "Mercedes-Benz E 63 AMG T-Modell (Deutschland, 2009)",
+        "val": 6208
+      },
+      {
+        "name": "Mercedes-Benz B 250 Sport (Deutschland, 2012)",
+        "val": 1991
+      },
+      {
+        "name": "Mercedes-Benz CLA 45 AMG (Deutschland, 2013)",
+        "val": 1991
+      },
+      {
+        "name": "Mercedes-Benz CLS 63 AMG (Deutschland, 2012)",
+        "val": 5461
+      },
+      {
+        "name": "Mercedes-Benz GLC 63 S AMG (Deutschland, 2017)",
+        "val": 3982
+      },
+      {
+        "name": "Mercedes-Benz GLE 63 S AMG (Deutschland, 2015)",
+        "val": 5461
+      },
+      {
+        "name": "Mercedes-Benz GLS 63 AMG (Deutschland, 2020)",
+        "val": 3982
+      },
+      {
+        "name": "VW Golf 1 (Deutschland, 1974)",
+        "val": 1471
+      },
+      {
+        "name": "VW Golf 2 (Deutschland, 1983)",
+        "val": 1272
+      },
+      {
+        "name": "VW Golf 3 (Deutschland, 1991)",
+        "val": 1390
+      },
+      {
+        "name": "VW Golf 4 (Deutschland, 1997)",
+        "val": 1390
+      },
+      {
+        "name": "VW Golf 5 (Deutschland, 2003)",
+        "val": 1390
+      },
+      {
+        "name": "VW Golf 6 (Deutschland, 2008)",
+        "val": 1197
+      },
+      {
+        "name": "VW Golf 7 (Deutschland, 2012)",
+        "val": 1197
+      },
+      {
+        "name": "VW Golf 8 (Deutschland, 2019)",
+        "val": 999
+      },
+      {
+        "name": "VW Polo 1 (Deutschland, 1975)",
+        "val": 895
+      },
+      {
+        "name": "VW Polo 1 Coupe GT (Deutschland, 1979)",
+        "val": 1272
+      },
+      {
+        "name": "VW Polo 2 (Deutschland, 1981)",
+        "val": 895
+      },
+      {
+        "name": "VW Polo 2 G40 (Deutschland, 1987)",
+        "val": 1272
+      },
+      {
+        "name": "VW Polo 3 (Deutschland, 1994)",
+        "val": 999
+      },
+      {
+        "name": "VW Polo 3 GTI 16V (Deutschland, 1998)",
+        "val": 1598
+      },
+      {
+        "name": "VW Polo 4 (Deutschland, 2001)",
+        "val": 1198
+      },
+      {
+        "name": "VW Polo 4 GTI (Deutschland, 2006)",
+        "val": 1798
+      },
+      {
+        "name": "VW Polo 5 (Deutschland, 2009)",
+        "val": 1198
+      },
+      {
+        "name": "VW Polo 5 GTI (Deutschland, 2010)",
+        "val": 1390
+      },
+      {
+        "name": "VW Polo 6 (Deutschland, 2017)",
+        "val": 999
+      },
+      {
+        "name": "VW Polo 6 GTI (Deutschland, 2018)",
+        "val": 1984
+      },
+      {
+        "name": "VW Passat B1 (Deutschland, 1973)",
+        "val": 1297
+      },
+      {
+        "name": "VW Passat B1 TS (Deutschland, 1975)",
+        "val": 1471
+      },
+      {
+        "name": "VW Passat B2 (Deutschland, 1980)",
+        "val": 1272
+      },
+      {
+        "name": "VW Passat B2 GLI 5-Zyl (Deutschland, 1985)",
+        "val": 2144
+      },
+      {
+        "name": "VW Passat B3 (Deutschland, 1988)",
+        "val": 1595
+      },
+      {
+        "name": "VW Passat B3 G60 Syncro (Deutschland, 1989)",
+        "val": 1781
+      },
+      {
+        "name": "VW Passat B4 (Deutschland, 1993)",
+        "val": 1595
+      },
+      {
+        "name": "VW Passat B4 VR6 (Deutschland, 1994)",
+        "val": 2792
+      },
+      {
+        "name": "VW Passat B5 (Deutschland, 1996)",
+        "val": 1595
+      },
+      {
+        "name": "VW Passat B5 W8 (Deutschland, 2001)",
+        "val": 3999
+      },
+      {
+        "name": "VW Passat B6 (Deutschland, 2005)",
+        "val": 1595
+      },
+      {
+        "name": "VW Passat B6 R36 (Deutschland, 2007)",
+        "val": 3597
+      },
+      {
+        "name": "VW Passat B7 (Deutschland, 2010)",
+        "val": 1390
+      },
+      {
+        "name": "VW Passat B7 V6 (Deutschland, 2011)",
+        "val": 3597
+      },
+      {
+        "name": "VW Passat B8 (Deutschland, 2014)",
+        "val": 1395
+      },
+      {
+        "name": "VW Passat B8 2.0 TSI (Deutschland, 2019)",
+        "val": 1984
+      },
+      {
+        "name": "Opel Corsa A (Deutschland, 1982)",
+        "val": 1196
+      },
+      {
+        "name": "Opel Corsa A GSi (Deutschland, 1987)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Corsa B (Deutschland, 1993)",
+        "val": 1196
+      },
+      {
+        "name": "Opel Corsa B GSi (Deutschland, 1995)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Corsa C (Deutschland, 2000)",
+        "val": 973
+      },
+      {
+        "name": "Opel Corsa C OPC (Deutschland, 2003)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Corsa D (Deutschland, 2006)",
+        "val": 998
+      },
+      {
+        "name": "Opel Corsa E (Deutschland, 2014)",
+        "val": 999
+      },
+      {
+        "name": "Opel Corsa E OPC (Deutschland, 2015)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Corsa F (Deutschland, 2019)",
+        "val": 1199
+      },
+      {
+        "name": "Opel Kadett D (Deutschland, 1979)",
+        "val": 1196
+      },
+      {
+        "name": "Opel Kadett D SR (Deutschland, 1982)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Kadett E (Deutschland, 1984)",
+        "val": 1297
+      },
+      {
+        "name": "Opel Astra F (Deutschland, 1991)",
+        "val": 1389
+      },
+      {
+        "name": "Opel Astra F GSi 16V (Deutschland, 1992)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Astra G (Deutschland, 1998)",
+        "val": 1389
+      },
+      {
+        "name": "Opel Astra G OPC (Deutschland, 2002)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Astra H (Deutschland, 2004)",
+        "val": 1389
+      },
+      {
+        "name": "Opel Astra H OPC (Deutschland, 2005)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Astra J (Deutschland, 2009)",
+        "val": 1364
+      },
+      {
+        "name": "Opel Astra J OPC (Deutschland, 2012)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Astra K (Deutschland, 2015)",
+        "val": 999
+      },
+      {
+        "name": "Opel Astra K GSi (Deutschland, 2017)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Astra L (Deutschland, 2021)",
+        "val": 1199
+      },
+      {
+        "name": "Opel Astra L GSe (Deutschland, 2023)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Vectra A (Deutschland, 1988)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Vectra A GSi 16V (Deutschland, 1989)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Vectra B (Deutschland, 1995)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Vectra B V6 (Deutschland, 1999)",
+        "val": 2498
+      },
+      {
+        "name": "Opel Vectra C (Deutschland, 2002)",
+        "val": 1796
+      },
+      {
+        "name": "Opel Vectra C OPC (Deutschland, 2003)",
+        "val": 2792
+      },
+      {
+        "name": "Opel Insignia A (Deutschland, 2008)",
+        "val": 1598
+      },
+      {
+        "name": "Opel Insignia A OPC (Deutschland, 2009)",
+        "val": 2792
+      },
+      {
+        "name": "Opel Insignia B (Deutschland, 2017)",
+        "val": 1490
+      },
+      {
+        "name": "Opel Insignia B GSi (Deutschland, 2018)",
+        "val": 1998
+      },
+      {
+        "name": "BMW 316 E21 (Deutschland, 1975)",
+        "val": 1573
+      },
+      {
+        "name": "BMW 323i E21 (Deutschland, 1977)",
+        "val": 2315
+      },
+      {
+        "name": "BMW 316 E30 (Deutschland, 1982)",
+        "val": 1573
+      },
+      {
+        "name": "BMW 316i E36 (Deutschland, 1990)",
+        "val": 1596
+      },
+      {
+        "name": "BMW M3 E36 (Deutschland, 1992)",
+        "val": 2990
+      },
+      {
+        "name": "BMW 316i E46 (Deutschland, 1998)",
+        "val": 1596
+      },
+      {
+        "name": "BMW M3 E46 (Deutschland, 2000)",
+        "val": 3246
+      },
+      {
+        "name": "BMW 316i E90 (Deutschland, 2005)",
+        "val": 1596
+      },
+      {
+        "name": "BMW 316i F30 (Deutschland, 2012)",
+        "val": 1598
+      },
+      {
+        "name": "BMW M3 F80 (Deutschland, 2014)",
+        "val": 2979
+      },
+      {
+        "name": "BMW 318i G20 (Deutschland, 2018)",
+        "val": 1499
+      },
+      {
+        "name": "BMW M3 G80 (Deutschland, 2021)",
+        "val": 2993
+      },
+      {
+        "name": "BMW 518 E12 (Deutschland, 1972)",
+        "val": 1766
+      },
+      {
+        "name": "BMW 528i E12 (Deutschland, 1977)",
+        "val": 2788
+      },
+      {
+        "name": "BMW 518 E28 (Deutschland, 1981)",
+        "val": 1766
+      },
+      {
+        "name": "BMW M535i E28 (Deutschland, 1985)",
+        "val": 3453
+      },
+      {
+        "name": "BMW 518i E34 (Deutschland, 1988)",
+        "val": 1796
+      },
+      {
+        "name": "BMW 520i E39 (Deutschland, 1996)",
+        "val": 1991
+      },
+      {
+        "name": "BMW M5 E39 (Deutschland, 1998)",
+        "val": 4941
+      },
+      {
+        "name": "BMW 520i E60 (Deutschland, 2003)",
+        "val": 2171
+      },
+      {
+        "name": "BMW M5 E60 (Deutschland, 2004)",
+        "val": 4999
+      },
+      {
+        "name": "BMW 520i F10 (Deutschland, 2010)",
+        "val": 1997
+      },
+      {
+        "name": "BMW M5 F10 (Deutschland, 2011)",
+        "val": 4395
+      },
+      {
+        "name": "BMW 520i G30 (Deutschland, 2017)",
+        "val": 1998
+      },
+      {
+        "name": "BMW M5 F90 (Deutschland, 2018)",
+        "val": 4395
+      },
+      {
+        "name": "Mercedes-Benz 190 W201 (Deutschland, 1982)",
+        "val": 1797
+      },
+      {
+        "name": "Mercedes-Benz C 180 W202 (Deutschland, 1993)",
+        "val": 1799
+      },
+      {
+        "name": "Mercedes-Benz C 36 AMG W202 (Deutschland, 1994)",
+        "val": 3606
+      },
+      {
+        "name": "Mercedes-Benz C 180 W203 (Deutschland, 2000)",
+        "val": 1796
+      },
+      {
+        "name": "Mercedes-Benz C 32 AMG W203 (Deutschland, 2001)",
+        "val": 3199
+      },
+      {
+        "name": "Mercedes-Benz C 180 W204 (Deutschland, 2007)",
+        "val": 1597
+      },
+      {
+        "name": "Mercedes-Benz C 180 W205 (Deutschland, 2014)",
+        "val": 1595
+      },
+      {
+        "name": "Mercedes-Benz C 63 S AMG W205 (Deutschland, 2015)",
+        "val": 3982
+      },
+      {
+        "name": "Mercedes-Benz 230 E W123 (Deutschland, 1976)",
+        "val": 2307
+      },
+      {
+        "name": "Mercedes-Benz 280 E W123 (Deutschland, 1977)",
+        "val": 2746
+      },
+      {
+        "name": "Mercedes-Benz 200 E W124 (Deutschland, 1984)",
+        "val": 1997
+      },
+      {
+        "name": "Mercedes-Benz E 200 W210 (Deutschland, 1995)",
+        "val": 1998
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W210 (Deutschland, 1997)",
+        "val": 5439
+      },
+      {
+        "name": "Mercedes-Benz E 200 W211 (Deutschland, 2002)",
+        "val": 1796
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W211 (Deutschland, 2002)",
+        "val": 5439
+      },
+      {
+        "name": "Mercedes-Benz E 200 W212 (Deutschland, 2009)",
+        "val": 1796
+      },
+      {
+        "name": "Mercedes-Benz E 200 W213 (Deutschland, 2016)",
+        "val": 1991
+      },
+      {
+        "name": "Mercedes-Benz E 63 S AMG W213 (Deutschland, 2017)",
+        "val": 3982
+      },
+      {
+        "name": "Audi A3 8L (Deutschland, 1996)",
+        "val": 1595
+      },
+      {
+        "name": "Audi S3 8L (Deutschland, 1999)",
+        "val": 1781
+      },
+      {
+        "name": "Audi A3 8P (Deutschland, 2003)",
+        "val": 1595
+      },
+      {
+        "name": "Audi RS3 8P (Deutschland, 2011)",
+        "val": 2480
+      },
+      {
+        "name": "Audi A3 8V (Deutschland, 2012)",
+        "val": 1197
+      },
+      {
+        "name": "Audi RS3 8V (Deutschland, 2015)",
+        "val": 2480
+      },
+      {
+        "name": "Audi A3 8Y (Deutschland, 2020)",
+        "val": 999
+      },
+      {
+        "name": "Audi RS3 8Y (Deutschland, 2021)",
+        "val": 2480
+      },
+      {
+        "name": "Audi A4 B5 (Deutschland, 1994)",
+        "val": 1595
+      },
+      {
+        "name": "Audi RS4 B5 (Deutschland, 2000)",
+        "val": 2671
+      },
+      {
+        "name": "Audi A4 B6 (Deutschland, 2000)",
+        "val": 1595
+      },
+      {
+        "name": "Audi RS4 B6 (Deutschland, 2004)",
+        "val": 4163
+      },
+      {
+        "name": "Audi A4 B7 (Deutschland, 2005)",
+        "val": 1595
+      },
+      {
+        "name": "Audi RS4 B7 (Deutschland, 2005)",
+        "val": 4163
+      },
+      {
+        "name": "Audi A4 B8 (Deutschland, 2007)",
+        "val": 1798
+      },
+      {
+        "name": "Audi RS4 B8 (Deutschland, 2012)",
+        "val": 4163
+      },
+      {
+        "name": "Audi A4 B9 (Deutschland, 2015)",
+        "val": 1395
+      },
+      {
+        "name": "Audi RS4 B9 (Deutschland, 2017)",
+        "val": 2894
+      },
+      {
+        "name": "Peugeot 205 (Frankreich, 1983)",
+        "val": 954
+      },
+      {
+        "name": "Peugeot 206 (Frankreich, 1998)",
+        "val": 1124
+      },
+      {
+        "name": "Peugeot 206 GTI 2.0 (Frankreich, 1999)",
+        "val": 1997
+      },
+      {
+        "name": "Peugeot 207 (Frankreich, 2006)",
+        "val": 1360
+      },
+      {
+        "name": "Peugeot 207 GTI (Frankreich, 2007)",
+        "val": 1598
+      },
+      {
+        "name": "Peugeot 208 (Frankreich, 2012)",
+        "val": 999
+      },
+      {
+        "name": "Peugeot 208 GTI (Frankreich, 2013)",
+        "val": 1598
+      },
+      {
+        "name": "Renault Clio I (Frankreich, 1990)",
+        "val": 1171
+      },
+      {
+        "name": "Renault Clio I Williams (Frankreich, 1993)",
+        "val": 1998
+      },
+      {
+        "name": "Renault Clio II (Frankreich, 1998)",
+        "val": 1149
+      },
+      {
+        "name": "Renault Clio II RS (Frankreich, 2001)",
+        "val": 1998
+      },
+      {
+        "name": "Renault Clio III (Frankreich, 2005)",
+        "val": 1149
+      },
+      {
+        "name": "Renault Clio III RS 197 (Frankreich, 2006)",
+        "val": 1998
+      },
+      {
+        "name": "Renault Clio IV (Frankreich, 2012)",
+        "val": 1149
+      },
+      {
+        "name": "Renault Clio IV RS 220 Trophy (Frankreich, 2015)",
+        "val": 1618
+      },
+      {
+        "name": "Renault Clio V (Frankreich, 2019)",
+        "val": 999
+      },
+      {
+        "name": "Renault Clio V RS Line (Frankreich, 2020)",
+        "val": 1333
+      },
+      {
+        "name": "Renault Megane I (Frankreich, 1995)",
+        "val": 1390
+      },
+      {
+        "name": "Renault Megane I RS 2.0 (Frankreich, 1999)",
+        "val": 1998
+      },
+      {
+        "name": "Renault Megane II (Frankreich, 2002)",
+        "val": 1390
+      },
+      {
+        "name": "Renault Megane II RS 225 (Frankreich, 2004)",
+        "val": 1998
+      },
+      {
+        "name": "Renault Megane III (Frankreich, 2008)",
+        "val": 1397
+      },
+      {
+        "name": "Renault Megane III RS Trophy (Frankreich, 2014)",
+        "val": 1998
+      },
+      {
+        "name": "Renault Megane IV (Frankreich, 2016)",
+        "val": 1197
+      },
+      {
+        "name": "Fiat Uno (Italien, 1983)",
+        "val": 999
+      },
+      {
+        "name": "Fiat Uno Turbo i.e. (Italien, 1985)",
+        "val": 1301
+      },
+      {
+        "name": "Fiat Punto Mk1 (Italien, 1993)",
+        "val": 1108
+      },
+      {
+        "name": "Fiat Punto GT (Italien, 1994)",
+        "val": 1372
+      },
+      {
+        "name": "Fiat Punto Mk2 (Italien, 1999)",
+        "val": 1242
+      },
+      {
+        "name": "Fiat Punto HGT Abarth (Italien, 2002)",
+        "val": 1747
+      },
+      {
+        "name": "Fiat Grande Punto (Italien, 2005)",
+        "val": 1242
+      },
+      {
+        "name": "Fiat Grande Punto Abarth (Italien, 2007)",
+        "val": 1368
+      },
+      {
+        "name": "Alfa Romeo 155 1.8 TS (Italien, 1992)",
+        "val": 1747
+      },
+      {
+        "name": "Alfa Romeo 155 Q4 (Italien, 1992)",
+        "val": 1995
+      },
+      {
+        "name": "Alfa Romeo 156 1.6 TS (Italien, 1997)",
+        "val": 1598
+      },
+      {
+        "name": "Alfa Romeo 156 GTA (Italien, 2002)",
+        "val": 3179
+      },
+      {
+        "name": "Alfa Romeo Giulia 2.0T (Italien, 2016)",
+        "val": 1995
+      },
+      {
+        "name": "K1 Attack (Slowakei, 2003)",
+        "val": 998
+      },
+      {
+        "name": "SEAT Ibiza Mk1 (Spanien, 1984)",
+        "val": 1193
+      },
+      {
+        "name": "Škoda Octavia I (Tschechien, 1996)",
+        "val": 1390
+      },
+      {
+        "name": "Škoda Octavia I RS (Tschechien, 2001)",
+        "val": 1781
+      },
+      {
+        "name": "Škoda Octavia II (Tschechien, 2004)",
+        "val": 1390
+      },
+      {
+        "name": "Škoda Octavia II RS (Tschechien, 2006)",
+        "val": 1984
+      },
+      {
+        "name": "Škoda Octavia III (Tschechien, 2013)",
+        "val": 1197
+      },
+      {
+        "name": "Škoda Octavia III RS (Tschechien, 2013)",
+        "val": 1984
+      },
+      {
+        "name": "Škoda Octavia IV (Tschechien, 2020)",
+        "val": 999
+      },
+      {
+        "name": "Škoda Octavia IV RS (Tschechien, 2020)",
+        "val": 1984
+      }
+    ]
+  },
+  "auto_bj": {
+    "prompt": "Welches Fahrzeug wurde SPÄTER gebaut?",
+    "unit": "Jahr",
+    "items": [
+      {
+        "name": "VW Käfer 1200 (Deutschland, 1965)",
+        "val": 1965
+      },
+      {
+        "name": "Citroën 2CV (Frankreich, 1949)",
+        "val": 1949
+      },
+      {
+        "name": "Fiat 500 (Italien, 1957)",
+        "val": 1957
+      },
+      {
+        "name": "Mini Cooper S (UK, 1964)",
+        "val": 1964
+      },
+      {
+        "name": "Ford Mustang GT (USA, 1964)",
+        "val": 1964
+      },
+      {
+        "name": "Porsche 911 Carrera (Deutschland, 1963)",
+        "val": 1963
+      },
+      {
+        "name": "Ferrari 250 GTO (Italien, 1962)",
+        "val": 1962
+      },
+      {
+        "name": "Jaguar E-Type (UK, 1961)",
+        "val": 1961
+      },
+      {
+        "name": "Chevrolet Corvette C1 (USA, 1953)",
+        "val": 1953
+      },
+      {
+        "name": "Toyota Supra MK4 (Japan, 1993)",
+        "val": 1993
+      },
+      {
+        "name": "Lamborghini Miura (Italien, 1966)",
+        "val": 1966
+      },
+      {
+        "name": "Aston Martin DB5 (UK, 1963)",
+        "val": 1963
+      },
+      {
+        "name": "Peugeot 205 GTI (Frankreich, 1984)",
+        "val": 1984
+      },
+      {
+        "name": "BMW M3 E30 (Deutschland, 1986)",
+        "val": 1986
+      },
+      {
+        "name": "Honda NSX (Japan, 1990)",
+        "val": 1990
+      },
+      {
+        "name": "Škoda 130 RS (Tschechien, 1975)",
+        "val": 1975
+      },
+      {
+        "name": "Tatra 603 (Tschechien, 1956)",
+        "val": 1956
+      },
+      {
+        "name": "Dacia 1300 (Rumänien, 1969)",
+        "val": 1969
+      },
+      {
+        "name": "Dacia Sandero RS (Rumänien, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "FSO Polonez (Polen, 1978)",
+        "val": 1978
+      },
+      {
+        "name": "Arrinera Hussarya GT (Polen, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "Volvo P1800 (Schweden, 1961)",
+        "val": 1961
+      },
+      {
+        "name": "Koenigsegg Agera RS (Schweden, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "SEAT Ibiza Cupra (Spanien, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Cupra Formentor VZ5 (Spanien, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "Donkervoort D8 GTO (Niederlande, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Spyker C8 (Niederlande, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Rimac Nevera (Kroatien, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "Zenvo TSR-S (Dänemark, 2018)",
+        "val": 2018
+      },
+      {
+        "name": "KTM X-Bow R (Österreich, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Togg T10X (Türkei, 2023)",
+        "val": 2023
+      },
+      {
+        "name": "Anadol A1 (Türkei, 1966)",
+        "val": 1966
+      },
+      {
+        "name": "Hyundai i30 N (Südkorea, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Kia Stinger GT (Südkorea, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Renault 5 Turbo (Frankreich, 1980)",
+        "val": 1980
+      },
+      {
+        "name": "Alfa Romeo Giulia GTA (Italien, 1965)",
+        "val": 1965
+      },
+      {
+        "name": "Bugatti Veyron 16.4 (Frankreich, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Bugatti Chiron (Frankreich, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "Bentley Continental GT (UK, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Rolls-Royce Silver Shadow (UK, 1965)",
+        "val": 1965
+      },
+      {
+        "name": "Dodge Viper GTS (USA, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "Ford GT40 (USA/UK, 1964)",
+        "val": 1964
+      },
+      {
+        "name": "Nissan GT-R R35 (Japan, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "Mazda RX-7 FD (Japan, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Mercedes-Benz 300 SL (Deutschland, 1954)",
+        "val": 1954
+      },
+      {
+        "name": "Porsche 918 Spyder (Deutschland, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Ferrari LaFerrari (Italien, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "McLaren F1 (UK, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Tesla Model S Plaid (USA, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "Rimac C_Two (Kroatien, 2018)",
+        "val": 2018
+      },
+      {
+        "name": "Gillet Vertigo (Belgien, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Think City (Norwegen, 2008, EV)",
+        "val": 2008
+      },
+      {
+        "name": "Sin Cars R1 (Bulgarien, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "UMM Alter II (Portugal, 1985)",
+        "val": 1985
+      },
+      {
+        "name": "NAMCO Pony (Griechenland, 1972)",
+        "val": 1972
+      },
+      {
+        "name": "Golf 1 GTI (VW, Deutschland, 1976)",
+        "val": 1976
+      },
+      {
+        "name": "Golf 2 GTI 16V (VW, Deutschland, 1987)",
+        "val": 1987
+      },
+      {
+        "name": "Golf 3 GTI 2.0 (VW, Deutschland, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Golf 4 R32 (VW, Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Golf 5 GTI (VW, Deutschland, 2004)",
+        "val": 2004
+      },
+      {
+        "name": "Golf 6 GTI (VW, Deutschland, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "Golf 7 R (VW, Deutschland, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Golf 8 GTI Clubsport (VW, Deutschland, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "VW Corrado VR6 (Deutschland, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "VW Phaeton W12 (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Audi Quattro Urquattro (Deutschland, 1980)",
+        "val": 1980
+      },
+      {
+        "name": "Audi Sport Quattro (Deutschland, 1984)",
+        "val": 1984
+      },
+      {
+        "name": "Audi RS2 Avant (Deutschland, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "Audi TT 8N (Deutschland, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Audi R8 V10 (Deutschland, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "Audi RS6 C8 Avant (Deutschland, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "Audi e-tron GT (Deutschland, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "BMW 2002 Turbo (Deutschland, 1973)",
+        "val": 1973
+      },
+      {
+        "name": "BMW M1 (Deutschland, 1978)",
+        "val": 1978
+      },
+      {
+        "name": "BMW M5 E34 (Deutschland, 1988)",
+        "val": 1988
+      },
+      {
+        "name": "BMW Z8 (Deutschland, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "BMW M3 E92 (Deutschland, 2008)",
+        "val": 2008
+      },
+      {
+        "name": "BMW M4 Competition (Deutschland, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "Opel Manta 400 (Deutschland, 1982)",
+        "val": 1982
+      },
+      {
+        "name": "Opel GT (Deutschland, 1968)",
+        "val": 1968
+      },
+      {
+        "name": "Opel Kadett E GSi (Deutschland, 1987)",
+        "val": 1987
+      },
+      {
+        "name": "Opel Corsa OPC (Deutschland, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "Smart Fortwo (Deutschland, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Smart Fortwo Brabus (Deutschland, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "Lancia Stratos HF (Italien, 1973)",
+        "val": 1973
+      },
+      {
+        "name": "Lancia Delta HF Integrale Evo (Italien, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Saab 900 Turbo (Schweden, 1978)",
+        "val": 1978
+      },
+      {
+        "name": "Saab 9-3 Aero (Schweden, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Subaru Impreza WRX STI (Japan, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Mitsubishi Lancer Evo IX (Japan, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Mitsubishi 3000GT VR4 (Japan, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Trabant P601 (Deutschland, 1963)",
+        "val": 1963
+      },
+      {
+        "name": "Mercedes-Benz 190E 2.3-16 Cosworth (Deutschland, 1984)",
+        "val": 1984
+      },
+      {
+        "name": "Mercedes-Benz C63 AMG (Deutschland, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Mercedes-AMG ONE (Deutschland, 2023)",
+        "val": 2023
+      },
+      {
+        "name": "Porsche 356 A (Deutschland, 1955)",
+        "val": 1955
+      },
+      {
+        "name": "Porsche Carrera GT (Deutschland, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Porsche 911 GT3 RS (Deutschland, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Porsche Cayman GT4 (Deutschland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Ferrari 308 GTB (Italien, 1975)",
+        "val": 1975
+      },
+      {
+        "name": "Ferrari Testarossa (Italien, 1984)",
+        "val": 1984
+      },
+      {
+        "name": "Ferrari 458 Italia (Italien, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "Ferrari F40 (Italien, 1987)",
+        "val": 1987
+      },
+      {
+        "name": "Lamborghini Countach LP400 (Italien, 1974)",
+        "val": 1974
+      },
+      {
+        "name": "Lamborghini Aventador LP700-4 (Italien, 2011)",
+        "val": 2011
+      },
+      {
+        "name": "Alfa Romeo 147 GTA (Italien, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Alfa Romeo Giulia Quadrifoglio (Italien, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "Alpine A110 (Frankreich, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Alpine A110 Berlinette (Frankreich, 1962)",
+        "val": 1962
+      },
+      {
+        "name": "Renault Clio V6 Phase 2 (Frankreich, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Renault Mégane RS Trophy-R (Frankreich, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "Peugeot 306 Maxi Kit Car (Frankreich, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "Citroën SM (Frankreich, 1970)",
+        "val": 1970
+      },
+      {
+        "name": "Citroën DS3 Racing (Frankreich, 2011)",
+        "val": 2011
+      },
+      {
+        "name": "Honda S2000 (Japan, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Honda Civic Type R EK9 (Japan, 1997)",
+        "val": 1997
+      },
+      {
+        "name": "Honda Civic Type R FK8 (Japan, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Toyota MR2 SW20 (Japan, 1989)",
+        "val": 1989
+      },
+      {
+        "name": "Toyota Celica GT-Four (Japan, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "Toyota GR Yaris (Japan, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "Toyota 2000GT (Japan, 1967)",
+        "val": 1967
+      },
+      {
+        "name": "Nissan Skyline R32 GT-R (Japan, 1989)",
+        "val": 1989
+      },
+      {
+        "name": "Nissan Skyline R34 GT-R (Japan, 1999)",
+        "val": 1999
+      },
+      {
+        "name": "Mazda MX-5 NA (Japan, 1989)",
+        "val": 1989
+      },
+      {
+        "name": "Mazda RX-8 (Japan, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Lotus Elise S1 (UK, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "Caterham Seven 620R (UK, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "TVR Cerbera Speed 12 (UK, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Jaguar XJ220 (UK, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Chevrolet Camaro Z28 (USA, 1967)",
+        "val": 1967
+      },
+      {
+        "name": "Dodge Challenger SRT Hellcat (USA, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Ford Mustang Shelby GT500 (USA, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "Ford Sierra RS Cosworth (UK, 1986)",
+        "val": 1986
+      },
+      {
+        "name": "Ford Focus RS (UK, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "McLaren P1 (UK, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "McLaren 720S (UK, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "McLaren Senna (UK, 2018)",
+        "val": 2018
+      },
+      {
+        "name": "Pagani Zonda F (Italien, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Pagani Huayra (Italien, 2011)",
+        "val": 2011
+      },
+      {
+        "name": "Seat Leon Cupra R (Spanien, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Volvo 850 T5-R (Schweden, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "Volvo C30 Polestar (Schweden, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Alfa Romeo 8C Competizione (Italien, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "Suzuki Swift Sport (Japan, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Dodge Charger SRT Hellcat (USA, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Acura NSX Gen2 (USA/Japan, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "Cupra Born (Spanien, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "Hyundai Ioniq 5 N (Südkorea, 2023)",
+        "val": 2023
+      },
+      {
+        "name": "Mercedes-Benz 450 SEL 6.9 (Deutschland, 1975)",
+        "val": 1975
+      },
+      {
+        "name": "Mercedes-Benz 500E W124 (Deutschland, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Mercedes-Benz SLS AMG (Deutschland, 2010)",
+        "val": 2010
+      },
+      {
+        "name": "Mercedes-Benz A45 AMG (Deutschland, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Mercedes-AMG GT Black Series (Deutschland, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "Mercedes-Benz G 63 AMG (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Mercedes-Benz E 63 AMG T-Modell (Deutschland, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "Mercedes-Benz B 250 Sport (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Mercedes-Benz CLA 45 AMG (Deutschland, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Mercedes-Benz CLS 63 AMG (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Mercedes-Benz GLC 63 S AMG (Deutschland, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Mercedes-Benz GLE 63 S AMG (Deutschland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Mercedes-Benz GLS 63 AMG (Deutschland, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "VW Golf 1 (Deutschland, 1974)",
+        "val": 1974
+      },
+      {
+        "name": "VW Golf 2 (Deutschland, 1983)",
+        "val": 1983
+      },
+      {
+        "name": "VW Golf 3 (Deutschland, 1991)",
+        "val": 1991
+      },
+      {
+        "name": "VW Golf 4 (Deutschland, 1997)",
+        "val": 1997
+      },
+      {
+        "name": "VW Golf 5 (Deutschland, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "VW Golf 6 (Deutschland, 2008)",
+        "val": 2008
+      },
+      {
+        "name": "VW Golf 7 (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "VW Golf 8 (Deutschland, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "VW Polo 1 (Deutschland, 1975)",
+        "val": 1975
+      },
+      {
+        "name": "VW Polo 1 Coupe GT (Deutschland, 1979)",
+        "val": 1979
+      },
+      {
+        "name": "VW Polo 2 (Deutschland, 1981)",
+        "val": 1981
+      },
+      {
+        "name": "VW Polo 2 G40 (Deutschland, 1987)",
+        "val": 1987
+      },
+      {
+        "name": "VW Polo 3 (Deutschland, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "VW Polo 3 GTI 16V (Deutschland, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "VW Polo 4 (Deutschland, 2001)",
+        "val": 2001
+      },
+      {
+        "name": "VW Polo 4 GTI (Deutschland, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "VW Polo 5 (Deutschland, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "VW Polo 5 GTI (Deutschland, 2010)",
+        "val": 2010
+      },
+      {
+        "name": "VW Polo 6 (Deutschland, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "VW Polo 6 GTI (Deutschland, 2018)",
+        "val": 2018
+      },
+      {
+        "name": "VW Passat B1 (Deutschland, 1973)",
+        "val": 1973
+      },
+      {
+        "name": "VW Passat B1 TS (Deutschland, 1975)",
+        "val": 1975
+      },
+      {
+        "name": "VW Passat B2 (Deutschland, 1980)",
+        "val": 1980
+      },
+      {
+        "name": "VW Passat B2 GLI 5-Zyl (Deutschland, 1985)",
+        "val": 1985
+      },
+      {
+        "name": "VW Passat B3 (Deutschland, 1988)",
+        "val": 1988
+      },
+      {
+        "name": "VW Passat B3 G60 Syncro (Deutschland, 1989)",
+        "val": 1989
+      },
+      {
+        "name": "VW Passat B4 (Deutschland, 1993)",
+        "val": 1993
+      },
+      {
+        "name": "VW Passat B4 VR6 (Deutschland, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "VW Passat B5 (Deutschland, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "VW Passat B5 W8 (Deutschland, 2001)",
+        "val": 2001
+      },
+      {
+        "name": "VW Passat B6 (Deutschland, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "VW Passat B6 R36 (Deutschland, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "VW Passat B7 (Deutschland, 2010)",
+        "val": 2010
+      },
+      {
+        "name": "VW Passat B7 V6 (Deutschland, 2011)",
+        "val": 2011
+      },
+      {
+        "name": "VW Passat B8 (Deutschland, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "VW Passat B8 2.0 TSI (Deutschland, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "Opel Corsa A (Deutschland, 1982)",
+        "val": 1982
+      },
+      {
+        "name": "Opel Corsa A GSi (Deutschland, 1987)",
+        "val": 1987
+      },
+      {
+        "name": "Opel Corsa B (Deutschland, 1993)",
+        "val": 1993
+      },
+      {
+        "name": "Opel Corsa B GSi (Deutschland, 1995)",
+        "val": 1995
+      },
+      {
+        "name": "Opel Corsa C (Deutschland, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Opel Corsa C OPC (Deutschland, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Opel Corsa D (Deutschland, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Opel Corsa E (Deutschland, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "Opel Corsa E OPC (Deutschland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Opel Corsa F (Deutschland, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "Opel Corsa-e (Deutschland, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "Opel Kadett D (Deutschland, 1979)",
+        "val": 1979
+      },
+      {
+        "name": "Opel Kadett D SR (Deutschland, 1982)",
+        "val": 1982
+      },
+      {
+        "name": "Opel Kadett E (Deutschland, 1984)",
+        "val": 1984
+      },
+      {
+        "name": "Opel Astra F (Deutschland, 1991)",
+        "val": 1991
+      },
+      {
+        "name": "Opel Astra F GSi 16V (Deutschland, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Opel Astra G (Deutschland, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Astra G OPC (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Opel Astra H (Deutschland, 2004)",
+        "val": 2004
+      },
+      {
+        "name": "Opel Astra H OPC (Deutschland, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Opel Astra J (Deutschland, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "Opel Astra J OPC (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Opel Astra K (Deutschland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Opel Astra K GSi (Deutschland, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Opel Astra L (Deutschland, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "Opel Astra L GSe (Deutschland, 2023)",
+        "val": 2023
+      },
+      {
+        "name": "Opel Vectra A (Deutschland, 1988)",
+        "val": 1988
+      },
+      {
+        "name": "Opel Vectra A GSi 16V (Deutschland, 1989)",
+        "val": 1989
+      },
+      {
+        "name": "Opel Vectra B (Deutschland, 1995)",
+        "val": 1995
+      },
+      {
+        "name": "Opel Vectra B V6 (Deutschland, 1999)",
+        "val": 1999
+      },
+      {
+        "name": "Opel Vectra C (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Opel Vectra C OPC (Deutschland, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Opel Insignia A (Deutschland, 2008)",
+        "val": 2008
+      },
+      {
+        "name": "Opel Insignia A OPC (Deutschland, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "Opel Insignia B (Deutschland, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Opel Insignia B GSi (Deutschland, 2018)",
+        "val": 2018
+      },
+      {
+        "name": "BMW 316 E21 (Deutschland, 1975)",
+        "val": 1975
+      },
+      {
+        "name": "BMW 323i E21 (Deutschland, 1977)",
+        "val": 1977
+      },
+      {
+        "name": "BMW 316 E30 (Deutschland, 1982)",
+        "val": 1982
+      },
+      {
+        "name": "BMW 316i E36 (Deutschland, 1990)",
+        "val": 1990
+      },
+      {
+        "name": "BMW M3 E36 (Deutschland, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "BMW 316i E46 (Deutschland, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "BMW M3 E46 (Deutschland, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "BMW 316i E90 (Deutschland, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "BMW 316i F30 (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "BMW M3 F80 (Deutschland, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "BMW 318i G20 (Deutschland, 2018)",
+        "val": 2018
+      },
+      {
+        "name": "BMW M3 G80 (Deutschland, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "BMW 518 E12 (Deutschland, 1972)",
+        "val": 1972
+      },
+      {
+        "name": "BMW 528i E12 (Deutschland, 1977)",
+        "val": 1977
+      },
+      {
+        "name": "BMW 518 E28 (Deutschland, 1981)",
+        "val": 1981
+      },
+      {
+        "name": "BMW M535i E28 (Deutschland, 1985)",
+        "val": 1985
+      },
+      {
+        "name": "BMW 518i E34 (Deutschland, 1988)",
+        "val": 1988
+      },
+      {
+        "name": "BMW 520i E39 (Deutschland, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "BMW M5 E39 (Deutschland, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "BMW 520i E60 (Deutschland, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "BMW M5 E60 (Deutschland, 2004)",
+        "val": 2004
+      },
+      {
+        "name": "BMW 520i F10 (Deutschland, 2010)",
+        "val": 2010
+      },
+      {
+        "name": "BMW M5 F10 (Deutschland, 2011)",
+        "val": 2011
+      },
+      {
+        "name": "BMW 520i G30 (Deutschland, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "BMW M5 F90 (Deutschland, 2018)",
+        "val": 2018
+      },
+      {
+        "name": "Mercedes-Benz 190 W201 (Deutschland, 1982)",
+        "val": 1982
+      },
+      {
+        "name": "Mercedes-Benz C 180 W202 (Deutschland, 1993)",
+        "val": 1993
+      },
+      {
+        "name": "Mercedes-Benz C 36 AMG W202 (Deutschland, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "Mercedes-Benz C 180 W203 (Deutschland, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Mercedes-Benz C 32 AMG W203 (Deutschland, 2001)",
+        "val": 2001
+      },
+      {
+        "name": "Mercedes-Benz C 180 W204 (Deutschland, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "Mercedes-Benz C 180 W205 (Deutschland, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "Mercedes-Benz C 63 S AMG W205 (Deutschland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Mercedes-Benz 230 E W123 (Deutschland, 1976)",
+        "val": 1976
+      },
+      {
+        "name": "Mercedes-Benz 280 E W123 (Deutschland, 1977)",
+        "val": 1977
+      },
+      {
+        "name": "Mercedes-Benz 200 E W124 (Deutschland, 1984)",
+        "val": 1984
+      },
+      {
+        "name": "Mercedes-Benz E 200 W210 (Deutschland, 1995)",
+        "val": 1995
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W210 (Deutschland, 1997)",
+        "val": 1997
+      },
+      {
+        "name": "Mercedes-Benz E 200 W211 (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Mercedes-Benz E 55 AMG W211 (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Mercedes-Benz E 200 W212 (Deutschland, 2009)",
+        "val": 2009
+      },
+      {
+        "name": "Mercedes-Benz E 200 W213 (Deutschland, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "Mercedes-Benz E 63 S AMG W213 (Deutschland, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Audi A3 8L (Deutschland, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "Audi S3 8L (Deutschland, 1999)",
+        "val": 1999
+      },
+      {
+        "name": "Audi A3 8P (Deutschland, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Audi RS3 8P (Deutschland, 2011)",
+        "val": 2011
+      },
+      {
+        "name": "Audi A3 8V (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Audi RS3 8V (Deutschland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Audi A3 8Y (Deutschland, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "Audi RS3 8Y (Deutschland, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "Audi A4 B5 (Deutschland, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "Audi RS4 B5 (Deutschland, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Audi A4 B6 (Deutschland, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Audi RS4 B6 (Deutschland, 2004)",
+        "val": 2004
+      },
+      {
+        "name": "Audi A4 B7 (Deutschland, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Audi RS4 B7 (Deutschland, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Audi A4 B8 (Deutschland, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "Audi RS4 B8 (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Audi A4 B9 (Deutschland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Audi RS4 B9 (Deutschland, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Peugeot 205 (Frankreich, 1983)",
+        "val": 1983
+      },
+      {
+        "name": "Peugeot 206 (Frankreich, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Peugeot 206 GTI 2.0 (Frankreich, 1999)",
+        "val": 1999
+      },
+      {
+        "name": "Peugeot 207 (Frankreich, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Peugeot 207 GTI (Frankreich, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "Peugeot 208 (Frankreich, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Peugeot 208 GTI (Frankreich, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Renault Clio I (Frankreich, 1990)",
+        "val": 1990
+      },
+      {
+        "name": "Renault Clio I Williams (Frankreich, 1993)",
+        "val": 1993
+      },
+      {
+        "name": "Renault Clio II (Frankreich, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Renault Clio II RS (Frankreich, 2001)",
+        "val": 2001
+      },
+      {
+        "name": "Renault Clio III (Frankreich, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Renault Clio III RS 197 (Frankreich, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Renault Clio IV (Frankreich, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Renault Clio IV RS 220 Trophy (Frankreich, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Renault Clio V (Frankreich, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "Renault Clio V RS Line (Frankreich, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "Renault Megane I (Frankreich, 1995)",
+        "val": 1995
+      },
+      {
+        "name": "Renault Megane I RS 2.0 (Frankreich, 1999)",
+        "val": 1999
+      },
+      {
+        "name": "Renault Megane II (Frankreich, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Renault Megane II RS 225 (Frankreich, 2004)",
+        "val": 2004
+      },
+      {
+        "name": "Renault Megane III (Frankreich, 2008)",
+        "val": 2008
+      },
+      {
+        "name": "Renault Megane III RS Trophy (Frankreich, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "Renault Megane IV (Frankreich, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "Fiat Uno (Italien, 1983)",
+        "val": 1983
+      },
+      {
+        "name": "Fiat Uno Turbo i.e. (Italien, 1985)",
+        "val": 1985
+      },
+      {
+        "name": "Fiat Punto Mk1 (Italien, 1993)",
+        "val": 1993
+      },
+      {
+        "name": "Fiat Punto GT (Italien, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "Fiat Punto Mk2 (Italien, 1999)",
+        "val": 1999
+      },
+      {
+        "name": "Fiat Punto HGT Abarth (Italien, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Fiat Grande Punto (Italien, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Fiat Grande Punto Abarth (Italien, 2007)",
+        "val": 2007
+      },
+      {
+        "name": "Alfa Romeo 155 1.8 TS (Italien, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Alfa Romeo 155 Q4 (Italien, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Alfa Romeo 156 1.6 TS (Italien, 1997)",
+        "val": 1997
+      },
+      {
+        "name": "Alfa Romeo 156 GTA (Italien, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Alfa Romeo Giulia 2.0T (Italien, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "K1 Attack (Slowakei, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "Toroidion 1MW (Finnland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Buddy Electric (Norwegen, 2008)",
+        "val": 2008
+      },
+      {
+        "name": "Puli X3 (Ungarn, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "SEAT Ibiza Mk1 (Spanien, 1984)",
+        "val": 1984
+      },
+      {
+        "name": "Škoda Octavia I (Tschechien, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "Škoda Octavia I RS (Tschechien, 2001)",
+        "val": 2001
+      },
+      {
+        "name": "Škoda Octavia II (Tschechien, 2004)",
+        "val": 2004
+      },
+      {
+        "name": "Škoda Octavia II RS (Tschechien, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Škoda Octavia III (Tschechien, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Škoda Octavia III RS (Tschechien, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Škoda Octavia IV (Tschechien, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "Škoda Octavia IV RS (Tschechien, 2020)",
+        "val": 2020
       }
     ]
   }

@@ -41,7 +41,7 @@ Das Skript erledigt: verify → ARCHITECTURE.md → README.md → landing.html �
 **GeoQuest_Spieluebersicht.html** — Neu generieren!
 - Skript: Aus den MODES-Daten in gen.py direkt generieren
 - Zeigt alle Modi gruppiert nach Kategorie mit Suche
-- Aktueller Stand: 543 Modi, Phase 330
+- Aktueller Stand: 544 Modi, Phase 331
 
 **validate_content.py** ausführen — prüft:
 - JSON-Dateien auf fehlende Pflichtfelder
@@ -74,7 +74,7 @@ Das Skript erledigt: verify → ARCHITECTURE.md → README.md → landing.html �
 GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 
 **Aktueller Stand:**
-- Phase 330, 543 Modi, verify: 139/139
+- Phase 334, 544 Modi, verify: 139/139
 - gen.py ist die einzige Build-Quelle (Single-File-Output)
 - Patch-System: patches/patch_[NUMMER]_[name].py — jeder Patch nutzt content.replace(old, new, 1)
 
@@ -107,7 +107,7 @@ GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 GeoQuest Phase [NUMMER]: Neuer Spielmodus "[Name]"
 
 **Aktueller Stand:**
-- Phase 330, 543 Modi, verify: 139/139
+- Phase 334, 544 Modi, verify: 139/139
 - 4 Universal-Engines: genUniversalPinQ(cat), genTiereHL(cat), genTiereMatchQ(cat), initTierWortSchmiede(key)
 
 **Neue Daten (JSON-Dateien in data/):**
@@ -147,7 +147,7 @@ GeoQuest Phase [NUMMER]: Neuer Spielmodus "[Name]"
 ```
 GeoQuest Phase [NUMMER]: Neue Kategorie "[Kategorie-Name]"
 
-**Aktueller Stand:** Phase 330, 543 Modi
+**Aktueller Stand:** Phase 334, 544 Modi
 
 **Schritte (analog zu Phase 228 Pflanzen / Phase 229 Gastronomie):**
 
@@ -191,16 +191,16 @@ GeoQuest Phase [NUMMER]: Neue Kategorie "[Kategorie-Name]"
 | _ttsSpeakNow() | Suche nach `function _ttsSpeakNow` |
 | Home-Header (eingeloggt) | Suche nach `\u{1FA99} \${_gc}` |
 
-## Teil 4: Dateien-Checkliste (Stand Phase 330)
+## Teil 4: Dateien-Checkliste (Stand Phase 334)
 
 | Datei | Zeigt Phasennummer? | Zeigt Modi-Zahl? | Stand |
 |-------|--------------------|--------------------|-------|
-| ARCHITECTURE.md | ✅ Phase 330 | ✅ 725 / verify 139/139 | aktuell |
-| README.md | ✅ Phase 330 | ✅ 543 | aktuell |
+| ARCHITECTURE.md | ✅ Phase 334 | ✅ 726 / verify 139/139 | aktuell |
+| README.md | ✅ Phase 334 | ✅ 544 | aktuell |
 | landing.html | — | ✅ (prüfen nach gen.py-Rebuild) | ggf. updaten |
-| GeoQuest_Website_Konzept.md | ✅ Phase 330 | ✅ 725 | aktuell |
-| GeoQuest_Spieluebersicht.html | ✅ Phase 330 | ✅ 725 | aktuell |
-| unlock_and_push.bat | ✅ Phase 330 | ✅ 139/139 | aktuell |
+| GeoQuest_Website_Konzept.md | ✅ Phase 334 | ✅ 726 | aktuell |
+| GeoQuest_Spieluebersicht.html | ✅ Phase 334 | ✅ 726 | aktuell |
+| unlock_and_push.bat | ✅ Phase 334 | ✅ 139/139 | aktuell |
 | landing.html URL | — | https://geoquest-web-git-main-andre69190-7419s-projects.vercel.app/ | deploy via unlock_and_push.bat |
 | GEOQUEST_GAMES_REPORT.md | ❌ Phase ~99 | ❌ 55 | historisch, nicht updaten |
 

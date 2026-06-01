@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 330 (Stand: Juni 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.83 MB | 721 Spielmodi | verify: 138/138
+**Version:** Phase 342 (Stand: Juni 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.96 MB | 721 Spielmodi | verify: 138/138
 
 ---
 
@@ -1087,6 +1087,18 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **328** | patches/patch_328_heimvorteil_engine.py | **ENGINE: Heimvorteil 70/30 in _mkMatchQ() — alle Match-Modi bevorzugen jetzt Einträge aus dem Heimatland des Nutzers (S.language → Ländername-Mapping, localPool, rng()<0.7). Fallback 100% global für nicht-geographische c-Felder.** |
 | **329** | patches/patch_329_autos.py | **Auto-Quartett: 4 HL-Modi (PS, vmax, accel, ccm) aus data/autos.json — 50 Fahrzeuge von VW Käfer bis Rimac Nevera, 17 Länder, EVs im ccm-Array ausgeschlossen** |
 | **330** | patches/patch_330_autos_eu_completion.py | **Auto-Quartett EU-Completion: +5 verifizierte Fahrzeuge (Belgien, Norwegen, Bulgarien, Portugal, Griechenland) — SK/FI/HU weggelassen (keine verifizierbaren Seriendaten)** |
+| **331** | patches/patch_331_vw_bj.py | **VW-Sprint: Golf 1-8 GTI/R + Corrado VR6 + Phaeton W12 (10 Modelle) + NEU: auto_bj Baujahr-Array + hl_auto_bj Modus (726 Modi)** |
+| **332** | patches/patch_332_audi.py | **Audi-Sprint: Quattro, Sport Quattro, RS2, TT, R8 V10, RS6 C8, e-tron GT (7 Modelle)** |
+| **333** | patches/patch_333_bmw.py | **BMW-Sprint: 2002 Turbo, M1, M5 E34, Z8, M3 E92, M4 Competition (6 Modelle)** |
+| **334** | patches/patch_334_opel.py | **Opel-Sprint: Manta 400, GT, Kadett E GSi, Corsa OPC (4 Modelle)** |
+| **335** | patches/patch_335_smart.py | **Smart-Sprint: Fortwo (1998), Fortwo Brabus (2007) (2 Modelle)** |
+| **336** | patches/patch_336_lancia.py | **Lancia-Sprint: Stratos HF, Delta HF Integrale Evo (2 Modelle)** |
+| **337** | patches/patch_337_saab.py | **Saab-Sprint: 900 Turbo, 9-3 Aero (2 Modelle)** |
+| **338** | patches/patch_338_subaru.py | **Subaru-Sprint: Impreza WRX STI (1 Modell)** |
+| **339** | patches/patch_339_mercedes.py | **Mercedes-Benz-Sprint: 450 SEL 6.9, 500E W124, SLS AMG, A45 AMG, AMG GT Black Series (5 neue Modelle — gesamt 9 Mercedes)** |
+| **340** | patches/patch_340_mercedes_suv_kombi.py | **Mercedes-Kategorie-Ergänzung: G 63 AMG (SUV) + E 63 AMG T-Modell (Kombi) — alle 6 MB-Kategorien jetzt repräsentiert (gesamt 11 Mercedes)** |
+| **341** | patches/patch_341_mercedes_complete.py | **Mercedes-Vollständigkeit: B 250 Sport, CLA 45 AMG, CLS 63 AMG, GLC 63 S, GLE 63 S, GLS 63 AMG (6 Modelle) — alle Hauptbaureihen komplett** |
+| **342** | patches/patch_342_data_completion.py | **Data Completion Sprint: Golf/Polo/Passat B1-B8, Corsa/Astra/Vectra, BMW 3er/5er, MB C/E-Klasse, Audi A3/A4, Peugeot/Renault, Fiat/Alfa, Škoda Octavia I-IV — 50 Jahre EU-Auto-Historie** |
 
 ---
 
