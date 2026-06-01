@@ -53,6 +53,7 @@ with open(os.path.join(os.path.dirname(__file__), 'data/sport_hl.json'),    'r',
 with open(os.path.join(os.path.dirname(__file__), 'data/sport_match.json'), 'r', encoding='utf-8') as _f: SPORT_MATCH_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/sport_ws.json'),    'r', encoding='utf-8') as _f: SPORT_WS_J    = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/timeline.json'),   'r', encoding='utf-8') as _f: TIMELINE_J    = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/autos.json'),       'r', encoding='utf-8') as _f: AUTOS_J       = _f.read()
 
 
 # â”€â”€ STATIC DATA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -2942,6 +2943,12 @@ const MODES=[
     {id:"zug_uic_laender",   icon:"\uD83D\uDD22",title:"UIC-L\u00e4ndercodes",          group:"zuege",prompt:"Welchem Land geh\u00f6rt dieser Waggon?",prompt_en:"Which country does this wagon belong to?",desc:"Erkenne das Land an der 12-stelligen UIC-Wagennummer"},
     {id:"zug_ds100_input",    icon:"\u2328\uFE0F",title:"DS100 (Hardcore)",                group:"zuege",prompt:"Tippe das DS100-Betriebsstellenkürzel!",                       desc:"Freie Texteingabe — FF, MH, AH… Kennst du alle?"},
 
+    /* === Phase 329: Auto-Quartett === */
+    {id:"hl_auto_ps",    icon:"\u{1F3CE}\uFE0F",title:"Auto-Quartett: Leistung",  group:"autos",prompt:"Welches Fahrzeug hat mehr PS?",desc:"Von 9 PS (2CV) bis 1914 PS (Rimac Nevera) — ",prompt_en:"Which car has more horsepower?"},
+    {id:"hl_auto_vmax",  icon:"\u{1F3C1}",title:"Auto-Quartett: Top-Speed",   group:"autos",prompt:"Welches Fahrzeug ist schneller?",desc:"Höchstgeschwindigkeit — 85 bis 447 km/h",prompt_en:"Which car has a higher top speed?"},
+    {id:"hl_auto_accel", icon:"\u23F1\uFE0F",title:"Auto-Quartett: 0-100 km/h",  group:"autos",prompt:"Welches Fahrzeug braucht L\u00e4nger auf 100?",desc:"H\u00f6herer Wert = langsamer = h\u00f6her in diesem Modus",prompt_en:"Which car takes LONGER to reach 100 km/h?"},
+    {id:"hl_auto_ccm",   icon:"\u2699\uFE0F",title:"Auto-Quartett: Hubraum",      group:"autos",prompt:"Welcher Verbrenner hat mehr Hubraum?",desc:"Nur Verbrenner — 375 ccm bis 7993 ccm",prompt_en:"Which combustion car has the larger engine displacement?"},
+
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
     {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
     {id:"uk_reedereien",      icon:"\u{1F6A2}",title:"Reedereien zuordnen",      group:"airports",prompt:"Aus welchem Land kommt diese Reederei?",          desc:"Maersk, MSC, Hapag-Lloyd und mehr"},
@@ -3610,6 +3617,7 @@ const MODE_CATS={
     "ws_sportwissen_fussball","ws_sportwissen_olympiade","ws_sportwissen_weltmeister",
     "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist","timeline_sport_stadien"
   ],cost:0},
+  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm"],cost:0},
 };
 
 /* === Phase 227 Part 3: Tier-Wort-Schmiede (10 Tiere, words verified letter-by-letter) === */
@@ -8567,6 +8575,7 @@ const GEO_MATCH_DATA=PLACEHOLDER_GEO_MATCH;
 const GEO_WS_DATA=PLACEHOLDER_GEO_WS;
 const SPORT_PIN_DATA=PLACEHOLDER_SPORT_PIN;
 const SPORT_HL_DATA=PLACEHOLDER_SPORT_HL;
+const AUTOS_DATA=PLACEHOLDER_AUTOS;
 const SPORT_MATCH_DATA=PLACEHOLDER_SPORT_MATCH;
 const SPORT_WS_DATA=PLACEHOLDER_SPORT_WS;
 const TIMELINE_DATA=PLACEHOLDER_TIMELINE;
@@ -8737,6 +8746,8 @@ var genSportWissenPinQ=_mkPinQ(SPORT_PIN_DATA);
 var genSportWissenHL=_mkHL(SPORT_HL_DATA);
 var genSportWissenMatchQ=_mkMatchQ(SPORT_MATCH_DATA);
 var initSportWissenWS=_mkWS(SPORT_WS_DATA,"SportW");
+/* === Phase 329: Auto-Quartett-Generator === */
+var genAutosHL=_mkHL(AUTOS_DATA);
 
 /* === Phase 228: Pflanzen-Generatoren === */
 function genPflanzenPinQ(cat){
@@ -9671,6 +9682,11 @@ const GEN={
   zug_uic_laender:()=>genUICInputQ(),
   zug_reisezeit_mc:()=>genZugReisezeitMC(),
   zug_reisezeit_hl:()=>genZugReisezeitHL(),
+  /* === Phase 329: Auto-Quartett === */
+  hl_auto_ps:()=>genAutosHL("auto_ps"),
+  hl_auto_vmax:()=>genAutosHL("auto_vmax"),
+  hl_auto_accel:()=>genAutosHL("auto_accel"),
+  hl_auto_ccm:()=>genAutosHL("auto_ccm"),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),
@@ -15435,6 +15451,7 @@ JS = (JS
   .replace('PLACEHOLDER_SPORT_MATCH', SPORT_MATCH_J)
   .replace('PLACEHOLDER_SPORT_WS',    SPORT_WS_J)
   .replace('PLACEHOLDER_TIMELINE',     TIMELINE_J)
+  .replace('PLACEHOLDER_AUTOS',          AUTOS_J)
 )
 # Phase 201: fix unicode escapes — JS=r'''...''' keeps \UXXXXXXXX literal
 JS = re.sub(r'\\U([0-9A-Fa-f]{8})', lambda m: chr(int(m.group(1), 16)), JS)

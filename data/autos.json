@@ -1,0 +1,810 @@
+{
+  "auto_ps": {
+    "prompt": "Welches Fahrzeug hat mehr PS?",
+    "unit": "PS",
+    "items": [
+      {
+        "name": "VW Käfer 1200 (Deutschland, 1965)",
+        "val": 34
+      },
+      {
+        "name": "Citroën 2CV (Frankreich, 1949)",
+        "val": 9
+      },
+      {
+        "name": "Fiat 500 (Italien, 1957)",
+        "val": 13
+      },
+      {
+        "name": "Mini Cooper S (UK, 1964)",
+        "val": 76
+      },
+      {
+        "name": "Ford Mustang GT (USA, 1964)",
+        "val": 271
+      },
+      {
+        "name": "Porsche 911 Carrera (Deutschland, 1963)",
+        "val": 130
+      },
+      {
+        "name": "Ferrari 250 GTO (Italien, 1962)",
+        "val": 302
+      },
+      {
+        "name": "Jaguar E-Type (UK, 1961)",
+        "val": 265
+      },
+      {
+        "name": "Chevrolet Corvette C1 (USA, 1953)",
+        "val": 150
+      },
+      {
+        "name": "Toyota Supra MK4 (Japan, 1993)",
+        "val": 280
+      },
+      {
+        "name": "Lamborghini Miura (Italien, 1966)",
+        "val": 350
+      },
+      {
+        "name": "Aston Martin DB5 (UK, 1963)",
+        "val": 282
+      },
+      {
+        "name": "Peugeot 205 GTI (Frankreich, 1984)",
+        "val": 115
+      },
+      {
+        "name": "BMW M3 E30 (Deutschland, 1986)",
+        "val": 200
+      },
+      {
+        "name": "Honda NSX (Japan, 1990)",
+        "val": 274
+      },
+      {
+        "name": "Škoda 130 RS (Tschechien, 1975)",
+        "val": 140
+      },
+      {
+        "name": "Tatra 603 (Tschechien, 1956)",
+        "val": 95
+      },
+      {
+        "name": "Dacia 1300 (Rumänien, 1969)",
+        "val": 54
+      },
+      {
+        "name": "Dacia Sandero RS (Rumänien, 2015)",
+        "val": 150
+      },
+      {
+        "name": "FSO Polonez (Polen, 1978)",
+        "val": 82
+      },
+      {
+        "name": "Arrinera Hussarya GT (Polen, 2014)",
+        "val": 650
+      },
+      {
+        "name": "Volvo P1800 (Schweden, 1961)",
+        "val": 100
+      },
+      {
+        "name": "Koenigsegg Agera RS (Schweden, 2015)",
+        "val": 1360
+      },
+      {
+        "name": "SEAT Ibiza Cupra (Spanien, 2000)",
+        "val": 180
+      },
+      {
+        "name": "Cupra Formentor VZ5 (Spanien, 2021)",
+        "val": 390
+      },
+      {
+        "name": "Donkervoort D8 GTO (Niederlande, 2013)",
+        "val": 400
+      },
+      {
+        "name": "Spyker C8 (Niederlande, 2000)",
+        "val": 400
+      },
+      {
+        "name": "Rimac Nevera (Kroatien, 2021)",
+        "val": 1914
+      },
+      {
+        "name": "Zenvo TSR-S (Dänemark, 2018)",
+        "val": 1177
+      },
+      {
+        "name": "KTM X-Bow R (Österreich, 2012)",
+        "val": 300
+      },
+      {
+        "name": "Togg T10X (Türkei, 2023)",
+        "val": 476
+      },
+      {
+        "name": "Anadol A1 (Türkei, 1966)",
+        "val": 40
+      },
+      {
+        "name": "Hyundai i30 N (Südkorea, 2017)",
+        "val": 275
+      },
+      {
+        "name": "Kia Stinger GT (Südkorea, 2017)",
+        "val": 365
+      },
+      {
+        "name": "Renault 5 Turbo (Frankreich, 1980)",
+        "val": 160
+      },
+      {
+        "name": "Alfa Romeo Giulia GTA (Italien, 1965)",
+        "val": 115
+      },
+      {
+        "name": "Bugatti Veyron 16.4 (Frankreich, 2005)",
+        "val": 1001
+      },
+      {
+        "name": "Bugatti Chiron (Frankreich, 2016)",
+        "val": 1500
+      },
+      {
+        "name": "Bentley Continental GT (UK, 2003)",
+        "val": 552
+      },
+      {
+        "name": "Rolls-Royce Silver Shadow (UK, 1965)",
+        "val": 197
+      },
+      {
+        "name": "Dodge Viper GTS (USA, 1996)",
+        "val": 450
+      },
+      {
+        "name": "Ford GT40 (USA/UK, 1964)",
+        "val": 350
+      },
+      {
+        "name": "Nissan GT-R R35 (Japan, 2007)",
+        "val": 480
+      },
+      {
+        "name": "Mazda RX-7 FD (Japan, 1992)",
+        "val": 255
+      },
+      {
+        "name": "Mercedes-Benz 300 SL (Deutschland, 1954)",
+        "val": 240
+      },
+      {
+        "name": "Porsche 918 Spyder (Deutschland, 2013)",
+        "val": 887
+      },
+      {
+        "name": "Ferrari LaFerrari (Italien, 2013)",
+        "val": 963
+      },
+      {
+        "name": "McLaren F1 (UK, 1992)",
+        "val": 627
+      },
+      {
+        "name": "Tesla Model S Plaid (USA, 2021)",
+        "val": 1020
+      },
+      {
+        "name": "Rimac C_Two (Kroatien, 2018)",
+        "val": 1888
+      }
+    ]
+  },
+  "auto_vmax": {
+    "prompt": "Welches Fahrzeug ist schneller (Höchstgeschwindigkeit)?",
+    "unit": "km/h",
+    "items": [
+      {
+        "name": "VW Käfer 1200 (Deutschland, 1965)",
+        "val": 115
+      },
+      {
+        "name": "Citroën 2CV (Frankreich, 1949)",
+        "val": 85
+      },
+      {
+        "name": "Fiat 500 (Italien, 1957)",
+        "val": 95
+      },
+      {
+        "name": "Mini Cooper S (UK, 1964)",
+        "val": 157
+      },
+      {
+        "name": "Ford Mustang GT (USA, 1964)",
+        "val": 185
+      },
+      {
+        "name": "Porsche 911 Carrera (Deutschland, 1963)",
+        "val": 210
+      },
+      {
+        "name": "Ferrari 250 GTO (Italien, 1962)",
+        "val": 280
+      },
+      {
+        "name": "Jaguar E-Type (UK, 1961)",
+        "val": 241
+      },
+      {
+        "name": "Chevrolet Corvette C1 (USA, 1953)",
+        "val": 200
+      },
+      {
+        "name": "Toyota Supra MK4 (Japan, 1993)",
+        "val": 250
+      },
+      {
+        "name": "Lamborghini Miura (Italien, 1966)",
+        "val": 280
+      },
+      {
+        "name": "Aston Martin DB5 (UK, 1963)",
+        "val": 233
+      },
+      {
+        "name": "Peugeot 205 GTI (Frankreich, 1984)",
+        "val": 195
+      },
+      {
+        "name": "BMW M3 E30 (Deutschland, 1986)",
+        "val": 238
+      },
+      {
+        "name": "Honda NSX (Japan, 1990)",
+        "val": 270
+      },
+      {
+        "name": "Škoda 130 RS (Tschechien, 1975)",
+        "val": 195
+      },
+      {
+        "name": "Tatra 603 (Tschechien, 1956)",
+        "val": 160
+      },
+      {
+        "name": "Dacia 1300 (Rumänien, 1969)",
+        "val": 140
+      },
+      {
+        "name": "Dacia Sandero RS (Rumänien, 2015)",
+        "val": 200
+      },
+      {
+        "name": "FSO Polonez (Polen, 1978)",
+        "val": 155
+      },
+      {
+        "name": "Arrinera Hussarya GT (Polen, 2014)",
+        "val": 320
+      },
+      {
+        "name": "Volvo P1800 (Schweden, 1961)",
+        "val": 175
+      },
+      {
+        "name": "Koenigsegg Agera RS (Schweden, 2015)",
+        "val": 447
+      },
+      {
+        "name": "SEAT Ibiza Cupra (Spanien, 2000)",
+        "val": 220
+      },
+      {
+        "name": "Cupra Formentor VZ5 (Spanien, 2021)",
+        "val": 250
+      },
+      {
+        "name": "Donkervoort D8 GTO (Niederlande, 2013)",
+        "val": 270
+      },
+      {
+        "name": "Spyker C8 (Niederlande, 2000)",
+        "val": 290
+      },
+      {
+        "name": "Rimac Nevera (Kroatien, 2021)",
+        "val": 412
+      },
+      {
+        "name": "Zenvo TSR-S (Dänemark, 2018)",
+        "val": 325
+      },
+      {
+        "name": "KTM X-Bow R (Österreich, 2012)",
+        "val": 220
+      },
+      {
+        "name": "Togg T10X (Türkei, 2023)",
+        "val": 180
+      },
+      {
+        "name": "Anadol A1 (Türkei, 1966)",
+        "val": 120
+      },
+      {
+        "name": "Hyundai i30 N (Südkorea, 2017)",
+        "val": 250
+      },
+      {
+        "name": "Kia Stinger GT (Südkorea, 2017)",
+        "val": 270
+      },
+      {
+        "name": "Renault 5 Turbo (Frankreich, 1980)",
+        "val": 200
+      },
+      {
+        "name": "Alfa Romeo Giulia GTA (Italien, 1965)",
+        "val": 195
+      },
+      {
+        "name": "Bugatti Veyron 16.4 (Frankreich, 2005)",
+        "val": 408
+      },
+      {
+        "name": "Bugatti Chiron (Frankreich, 2016)",
+        "val": 420
+      },
+      {
+        "name": "Bentley Continental GT (UK, 2003)",
+        "val": 318
+      },
+      {
+        "name": "Rolls-Royce Silver Shadow (UK, 1965)",
+        "val": 185
+      },
+      {
+        "name": "Dodge Viper GTS (USA, 1996)",
+        "val": 282
+      },
+      {
+        "name": "Ford GT40 (USA/UK, 1964)",
+        "val": 321
+      },
+      {
+        "name": "Nissan GT-R R35 (Japan, 2007)",
+        "val": 315
+      },
+      {
+        "name": "Mazda RX-7 FD (Japan, 1992)",
+        "val": 255
+      },
+      {
+        "name": "Mercedes-Benz 300 SL (Deutschland, 1954)",
+        "val": 250
+      },
+      {
+        "name": "Porsche 918 Spyder (Deutschland, 2013)",
+        "val": 345
+      },
+      {
+        "name": "Ferrari LaFerrari (Italien, 2013)",
+        "val": 350
+      },
+      {
+        "name": "McLaren F1 (UK, 1992)",
+        "val": 391
+      },
+      {
+        "name": "Tesla Model S Plaid (USA, 2021)",
+        "val": 322
+      },
+      {
+        "name": "Rimac C_Two (Kroatien, 2018)",
+        "val": 412
+      }
+    ]
+  },
+  "auto_accel": {
+    "prompt": "Welches Fahrzeug braucht LÄNGER für 0-100 km/h?",
+    "unit": "Sek.",
+    "items": [
+      {
+        "name": "VW Käfer 1200 (Deutschland, 1965)",
+        "val": 27.0
+      },
+      {
+        "name": "Citroën 2CV (Frankreich, 1949)",
+        "val": 37.5
+      },
+      {
+        "name": "Fiat 500 (Italien, 1957)",
+        "val": 45.0
+      },
+      {
+        "name": "Mini Cooper S (UK, 1964)",
+        "val": 13.5
+      },
+      {
+        "name": "Ford Mustang GT (USA, 1964)",
+        "val": 8.1
+      },
+      {
+        "name": "Porsche 911 Carrera (Deutschland, 1963)",
+        "val": 9.1
+      },
+      {
+        "name": "Ferrari 250 GTO (Italien, 1962)",
+        "val": 6.1
+      },
+      {
+        "name": "Jaguar E-Type (UK, 1961)",
+        "val": 7.1
+      },
+      {
+        "name": "Chevrolet Corvette C1 (USA, 1953)",
+        "val": 11.0
+      },
+      {
+        "name": "Toyota Supra MK4 (Japan, 1993)",
+        "val": 5.1
+      },
+      {
+        "name": "Lamborghini Miura (Italien, 1966)",
+        "val": 6.7
+      },
+      {
+        "name": "Aston Martin DB5 (UK, 1963)",
+        "val": 8.1
+      },
+      {
+        "name": "Peugeot 205 GTI (Frankreich, 1984)",
+        "val": 7.9
+      },
+      {
+        "name": "BMW M3 E30 (Deutschland, 1986)",
+        "val": 6.7
+      },
+      {
+        "name": "Honda NSX (Japan, 1990)",
+        "val": 5.7
+      },
+      {
+        "name": "Škoda 130 RS (Tschechien, 1975)",
+        "val": 9.5
+      },
+      {
+        "name": "Tatra 603 (Tschechien, 1956)",
+        "val": 14.0
+      },
+      {
+        "name": "Dacia 1300 (Rumänien, 1969)",
+        "val": 22.0
+      },
+      {
+        "name": "Dacia Sandero RS (Rumänien, 2015)",
+        "val": 7.5
+      },
+      {
+        "name": "FSO Polonez (Polen, 1978)",
+        "val": 14.2
+      },
+      {
+        "name": "Arrinera Hussarya GT (Polen, 2014)",
+        "val": 3.2
+      },
+      {
+        "name": "Volvo P1800 (Schweden, 1961)",
+        "val": 12.5
+      },
+      {
+        "name": "Koenigsegg Agera RS (Schweden, 2015)",
+        "val": 2.8
+      },
+      {
+        "name": "SEAT Ibiza Cupra (Spanien, 2000)",
+        "val": 7.9
+      },
+      {
+        "name": "Cupra Formentor VZ5 (Spanien, 2021)",
+        "val": 4.2
+      },
+      {
+        "name": "Donkervoort D8 GTO (Niederlande, 2013)",
+        "val": 2.7
+      },
+      {
+        "name": "Spyker C8 (Niederlande, 2000)",
+        "val": 4.5
+      },
+      {
+        "name": "Rimac Nevera (Kroatien, 2021)",
+        "val": 1.85
+      },
+      {
+        "name": "Zenvo TSR-S (Dänemark, 2018)",
+        "val": 2.8
+      },
+      {
+        "name": "KTM X-Bow R (Österreich, 2012)",
+        "val": 3.9
+      },
+      {
+        "name": "Togg T10X (Türkei, 2023)",
+        "val": 4.8
+      },
+      {
+        "name": "Anadol A1 (Türkei, 1966)",
+        "val": 25.0
+      },
+      {
+        "name": "Hyundai i30 N (Südkorea, 2017)",
+        "val": 6.1
+      },
+      {
+        "name": "Kia Stinger GT (Südkorea, 2017)",
+        "val": 4.9
+      },
+      {
+        "name": "Renault 5 Turbo (Frankreich, 1980)",
+        "val": 6.9
+      },
+      {
+        "name": "Alfa Romeo Giulia GTA (Italien, 1965)",
+        "val": 11.0
+      },
+      {
+        "name": "Bugatti Veyron 16.4 (Frankreich, 2005)",
+        "val": 2.5
+      },
+      {
+        "name": "Bugatti Chiron (Frankreich, 2016)",
+        "val": 2.4
+      },
+      {
+        "name": "Bentley Continental GT (UK, 2003)",
+        "val": 4.8
+      },
+      {
+        "name": "Rolls-Royce Silver Shadow (UK, 1965)",
+        "val": 10.9
+      },
+      {
+        "name": "Dodge Viper GTS (USA, 1996)",
+        "val": 4.1
+      },
+      {
+        "name": "Ford GT40 (USA/UK, 1964)",
+        "val": 5.3
+      },
+      {
+        "name": "Nissan GT-R R35 (Japan, 2007)",
+        "val": 3.5
+      },
+      {
+        "name": "Mazda RX-7 FD (Japan, 1992)",
+        "val": 5.3
+      },
+      {
+        "name": "Mercedes-Benz 300 SL (Deutschland, 1954)",
+        "val": 10.0
+      },
+      {
+        "name": "Porsche 918 Spyder (Deutschland, 2013)",
+        "val": 2.6
+      },
+      {
+        "name": "Ferrari LaFerrari (Italien, 2013)",
+        "val": 2.9
+      },
+      {
+        "name": "McLaren F1 (UK, 1992)",
+        "val": 3.2
+      },
+      {
+        "name": "Tesla Model S Plaid (USA, 2021)",
+        "val": 2.1
+      },
+      {
+        "name": "Rimac C_Two (Kroatien, 2018)",
+        "val": 1.97
+      }
+    ]
+  },
+  "auto_ccm": {
+    "prompt": "Welches Fahrzeug hat den größeren Hubraum?",
+    "unit": "ccm",
+    "items": [
+      {
+        "name": "Citroën 2CV (Frankreich, 1949)",
+        "val": 375
+      },
+      {
+        "name": "Fiat 500 (Italien, 1957)",
+        "val": 479
+      },
+      {
+        "name": "VW Käfer 1200 (Deutschland, 1965)",
+        "val": 1192
+      },
+      {
+        "name": "Mini Cooper S (UK, 1964)",
+        "val": 1275
+      },
+      {
+        "name": "Peugeot 205 GTI (Frankreich, 1984)",
+        "val": 1580
+      },
+      {
+        "name": "Škoda 130 RS (Tschechien, 1975)",
+        "val": 1289
+      },
+      {
+        "name": "Dacia 1300 (Rumänien, 1969)",
+        "val": 1289
+      },
+      {
+        "name": "FSO Polonez (Polen, 1978)",
+        "val": 1481
+      },
+      {
+        "name": "Anadol A1 (Türkei, 1966)",
+        "val": 1198
+      },
+      {
+        "name": "Volvo P1800 (Schweden, 1961)",
+        "val": 1778
+      },
+      {
+        "name": "SEAT Ibiza Cupra (Spanien, 2000)",
+        "val": 1781
+      },
+      {
+        "name": "Alfa Romeo Giulia GTA (Italien, 1965)",
+        "val": 1570
+      },
+      {
+        "name": "Renault 5 Turbo (Frankreich, 1980)",
+        "val": 1397
+      },
+      {
+        "name": "Mazda RX-7 FD (Japan, 1992)",
+        "val": 1308
+      },
+      {
+        "name": "BMW M3 E30 (Deutschland, 1986)",
+        "val": 2302
+      },
+      {
+        "name": "Ford Mustang GT (USA, 1964)",
+        "val": 4727
+      },
+      {
+        "name": "Porsche 911 Carrera (Deutschland, 1963)",
+        "val": 1991
+      },
+      {
+        "name": "Aston Martin DB5 (UK, 1963)",
+        "val": 3995
+      },
+      {
+        "name": "Jaguar E-Type (UK, 1961)",
+        "val": 3781
+      },
+      {
+        "name": "Mercedes-Benz 300 SL (Deutschland, 1954)",
+        "val": 2996
+      },
+      {
+        "name": "Chevrolet Corvette C1 (USA, 1953)",
+        "val": 3850
+      },
+      {
+        "name": "Ferrari 250 GTO (Italien, 1962)",
+        "val": 2953
+      },
+      {
+        "name": "Rolls-Royce Silver Shadow (UK, 1965)",
+        "val": 6230
+      },
+      {
+        "name": "Bentley Continental GT (UK, 2003)",
+        "val": 5998
+      },
+      {
+        "name": "Lamborghini Miura (Italien, 1966)",
+        "val": 3929
+      },
+      {
+        "name": "Honda NSX (Japan, 1990)",
+        "val": 2977
+      },
+      {
+        "name": "Toyota Supra MK4 (Japan, 1993)",
+        "val": 2997
+      },
+      {
+        "name": "Ford GT40 (USA/UK, 1964)",
+        "val": 4736
+      },
+      {
+        "name": "Dodge Viper GTS (USA, 1996)",
+        "val": 7990
+      },
+      {
+        "name": "Nissan GT-R R35 (Japan, 2007)",
+        "val": 3799
+      },
+      {
+        "name": "Spyker C8 (Niederlande, 2000)",
+        "val": 4163
+      },
+      {
+        "name": "Donkervoort D8 GTO (Niederlande, 2013)",
+        "val": 2480
+      },
+      {
+        "name": "KTM X-Bow R (Österreich, 2012)",
+        "val": 1984
+      },
+      {
+        "name": "Hyundai i30 N (Südkorea, 2017)",
+        "val": 1998
+      },
+      {
+        "name": "Kia Stinger GT (Südkorea, 2017)",
+        "val": 3342
+      },
+      {
+        "name": "Dacia Sandero RS (Rumänien, 2015)",
+        "val": 1618
+      },
+      {
+        "name": "Cupra Formentor VZ5 (Spanien, 2021)",
+        "val": 2480
+      },
+      {
+        "name": "Tatra 603 (Tschechien, 1956)",
+        "val": 2545
+      },
+      {
+        "name": "Koenigsegg Agera RS (Schweden, 2015)",
+        "val": 4994
+      },
+      {
+        "name": "Arrinera Hussarya GT (Polen, 2014)",
+        "val": 6162
+      },
+      {
+        "name": "McLaren F1 (UK, 1992)",
+        "val": 6064
+      },
+      {
+        "name": "Bugatti Veyron 16.4 (Frankreich, 2005)",
+        "val": 7993
+      },
+      {
+        "name": "Bugatti Chiron (Frankreich, 2016)",
+        "val": 7993
+      },
+      {
+        "name": "Porsche 918 Spyder (Deutschland, 2013)",
+        "val": 4593
+      },
+      {
+        "name": "Ferrari LaFerrari (Italien, 2013)",
+        "val": 6262
+      },
+      {
+        "name": "Zenvo TSR-S (Dänemark, 2018)",
+        "val": 5854
+      }
+    ]
+  }
+}

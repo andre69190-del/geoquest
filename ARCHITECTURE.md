@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 328 (Stand: Mai 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.81 MB | 721 Spielmodi | verify: 138/138
+**Version:** Phase 329 (Stand: Juni 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.83 MB | 721 Spielmodi | verify: 138/138
 
 ---
 
@@ -1085,6 +1085,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **326** | patches/patch_326_natur_balancing.py | **Natur-Balancing: nationaltiere (+27), nationalpflanzen (+28), gewuerze (+17), nationalblumen (+15) — 16 Ziel-Länder EU-Ost/Nord/West abgedeckt** |
 | **327** | patches/patch_327_rest_balancing.py | **Sport/Geo/Archäologie-Balancing: sport_herkunft, sport_sportlegende_land, geo_hoehlen_land, repatriierung, megalithanlagen — nur semantisch valide Länder-Arrays erweitert** |
 | **328** | patches/patch_328_heimvorteil_engine.py | **ENGINE: Heimvorteil 70/30 in _mkMatchQ() — alle Match-Modi bevorzugen jetzt Einträge aus dem Heimatland des Nutzers (S.language → Ländername-Mapping, localPool, rng()<0.7). Fallback 100% global für nicht-geographische c-Felder.** |
+| **329** | patches/patch_329_autos.py | **Auto-Quartett: 4 HL-Modi (PS, vmax, accel, ccm) aus data/autos.json — 50 Fahrzeuge von VW Käfer bis Rimac Nevera, 17 Länder, EVs im ccm-Array ausgeschlossen** |
 
 ---
 
@@ -1918,88 +1919,4 @@ Prompt-Strings (Frage-Texte) sind für die 22 anderen Sprachen (fr, es, it, nl, 
 | H/L: Höhlenlänge | H/L | `hl_geo_hoehlen_laenge` |
 | H/L: Gesteinsalter | H/L | `hl_geo_gesteins_alter` |
 | H/L: Schluchten-Tiefe | H/L | `hl_geo_schluchten_tiefe` |
-| H/L: Kontinentaldrift | H/L | `hl_geo_kontinentaldrift` |
-| H/L: Schmelztemperatur | H/L | `hl_geo_schmelztemperatur` |
-| H/L: Gletschervolumen | H/L | `hl_geo_gletscher_volumen` |
-| H/L: Tsunami-Höhe | H/L | `hl_geo_tsunami_hoehe` |
-| H/L: Bohrtiefe | H/L | `hl_geo_bohrtiefe` |
-| Vulkan-Länder zuordnen | Match | `uk_geo_vulkan_land` |
-| Berg zum Gebirge | Match | `uk_geo_berg_gebirge` |
-| Naturwunder & Entstehung | Match | `uk_geo_wunder_entstehung` |
-| Fossilien & Erdzeitalter | Match | `uk_geo_fossil_zeitalter` |
-| Historische Erdbeben | Match | `uk_geo_erdbeben_jahr` |
-| Gestein & Nutzung | Match | `uk_geo_gestein_nutzung` |
-| Landschaftsformen & Ursprung | Match | `uk_geo_landschaft_ursprung` |
-| Mineral-Farben | Match | `uk_geo_mineral_farbe` |
-| Kontinente & Platten | Match | `uk_geo_kontinent_platte` |
-| Höhlensystem → Land | Match | `uk_geo_hoehlen_land` |
-| Mineral-Kristallsysteme | Match | `uk_geo_mineral_kristall` |
-| Gebirge & Entstehung | Match | `uk_geo_gebirge_entstehung` |
-| WS: Tropfstein | WS | `ws_geo_tropfstein` |
-| WS: Magmakammer | WS | `ws_geo_magmakammer` |
-| WS: Kontinent | WS | `ws_geo_kontinent` |
-| WS: Fossilien | WS | `ws_geo_fossilien` |
-| WS: Erdkruste | WS | `ws_geo_erdkruste` |
-| WS: Mineralien | WS | `ws_geo_mineralien` |
-
-## 13.18 Sport-Wissen -- 40 Modi
-
-*Stadien/Rennstrecken pinnen, H/L Transferrekorde/Olympia-Gold, Nationalsportarten*
-
-`10 H/L | 21 Match | 9 WS`
-
-
-| Titel | Typ | Modus-ID |
-|-------|-----|---------|
-| Olympiastadien-Standorte | Match | `uk_sportwissen_olympiastadien` |
-| Marathon-Standorte | Match | `uk_sportwissen_marathonstrecken` |
-| H/L: Marathon-Geschichte | H/L | `hl_sportwissen_marathon_alter` |
-| H/L: Stadion-Kapazität | H/L | `hl_sportwissen_stadien_kapazitaet` |
-| Sportarten-Herkunft | Match | `uk_sportwissen_herkunft` |
-| Teamgrößen-Quiz | Match | `uk_sportwissen_teamgroesse` |
-| Olympia-Austragungsorte | Match | `uk_sportwissen_olympia_standort` |
-| WS: Marathon | WS | `ws_sportwissen_marathon` |
-| WS: Triathlon | WS | `ws_sportwissen_triathlon` |
-| WS: Staffellauf | WS | `ws_sportwissen_staffellauf` |
-| Fussballstadien | Match | `uk_sportwissen_fussballstadien` |
-| Motorsport-Rennstrecken | Match | `uk_sportwissen_motorsport_strecken` |
-| Wintersport-Orte | Match | `uk_sportwissen_wintersport_orte` |
-| Grand-Slam-Arenen | Match | `uk_sportwissen_grand_slam_arenen` |
-| Ski-Pisten weltweit | Match | `uk_sportwissen_ski_pisten` |
-| Golfplaetze weltweit | Match | `uk_sportwissen_golf_platze` |
-| Surf-Spots weltweit | Match | `uk_sportwissen_surfspots_welt` |
-| Klettergebiete | Match | `uk_sportwissen_klettergebiete` |
-| H/L: Transferrekorde | H/L | `hl_sportwissen_transferrekorde` |
-| H/L: Hochsprung-Rekorde | H/L | `hl_sportwissen_hochsprung_rekorde` |
-| H/L: Sportler-Gehaelter | H/L | `hl_sportwissen_sportler_gehalt` |
-| H/L: Olympia-Gold | H/L | `hl_sportwissen_olympia_goldmedaillen` |
-| H/L: Fussball-Marktwert | H/L | `hl_sportwissen_fussball_marktwert` |
-| H/L: Gewichtheben-Rekorde | H/L | `hl_sportwissen_gewichtheben_rekorde` |
-| H/L: Stadion-Baujahr | H/L | `hl_sportwissen_stadion_baujahr` |
-| H/L: Tore pro Saison | H/L | `hl_sportwissen_tore_saison` |
-| Sport-Weltverband | Match | `uk_sportwissen_weltverband` |
-| Olympisch? | Match | `uk_sportwissen_olympisch` |
-| Nationalsport weltweit | Match | `uk_sportwissen_nationalsport_match` |
-| Sportlegenden-Herkunft | Match | `uk_sportwissen_sportlegende_land` |
-| Weltrekord-Halter | Match | `uk_sportwissen_rekordhalter` |
-| WM-Gastgeber | Match | `uk_sportwissen_wm_gastgeber_match` |
-| Disziplin-Zuordnung | Match | `uk_sportwissen_disziplin_kategorie` |
-| Sportart & Kontinent | Match | `uk_sportwissen_sportart_kontinent` |
-| WS: Fussball | WS | `ws_sportwissen_fussball` |
-| WS: Olympiade | WS | `ws_sportwissen_olympiade` |
-| WS: Weltmeister | WS | `ws_sportwissen_weltmeister` |
-| WS: Startschuss | WS | `ws_sportwissen_startschuss` |
-| WS: Athletik | WS | `ws_sportwissen_athletik` |
-| WS: Sportgeist | WS | `ws_sportwissen_sportgeist` |
-
-## 13.19 Kultur -- 27 Modi
-
-*Wahrzeichen/Museen/Kunstwerke/Filmsets pinnen, Erfindungen, Brettspiele*
-
-`27 Match`
-
-
-| Titel | Typ | Modus-ID |
-|-------|-----|---------|
-| Getr\u00e4nke & Herkunft | Match | `uk_getraenke` |
-| Streetfood-Klassiker | Match | 
+| H/L: Kontinentaldrift | H/L | `hl_geo_kontinentaldrift` 
