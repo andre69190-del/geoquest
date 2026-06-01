@@ -57,6 +57,8 @@ with open(os.path.join(os.path.dirname(__file__), 'data/autos.json'),       'r',
 with open(os.path.join(os.path.dirname(__file__), 'data/autos_extended.json'), 'r', encoding='utf-8') as _f:
     import json as _ejson
     AUTOS_EXT_J  = _ejson.dumps(_ejson.load(_f), ensure_ascii=False, separators=(',',':'))
+with open(os.path.join(os.path.dirname(__file__), 'data/games_extended.json'), 'r', encoding='utf-8') as _gf:
+    GAMES_EXT_J  = __import__('json').dumps(__import__('json').load(_gf), ensure_ascii=False, separators=(',',':'))
 
 
 # â”€â”€ STATIC DATA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -2978,6 +2980,19 @@ const MODES=[
     {id:"hl_auto_co2",      icon:"\u{1F333}\u{1F4A8}",title:"Auto-Quartett: CO\u2082-Aussto\u00df",group:"autos",prompt:"Welches Fahrzeug st\u00f6\u00dft mehr CO\u2082 aus?",desc:"Approximiert aus Kraftstoffverbrauch (nur Verbrenner)",  prompt_en:"Which combustion car emits more CO\u2082?"},
     {id:"auto_match_dekade",icon:"\u{1F5C3}\uFE0F",title:"Auto-Quiz: Jahrzehnt",        group:"autos",prompt:"Aus welchem Jahrzehnt stammt dieses Fahrzeug?",    desc:"50er / 60er / 70er / … bis 2020er",                          prompt_en:"From which decade does this car originate?"},
     {id:"auto_generationen_match",icon:"\u{1F9EC}\u{1F697}",title:"Modell-Generationen-Match",group:"autos",prompt:"Wann erschien dieses Modell der Modellreihe?",desc:"Distraktor-Optionen sind echte andere Generationen \u2014 21 Modellreihen erkannt",prompt_en:"When did this generation of the model line appear?"},
+    {id:"games_pin",          icon:"\u{1F579}\uFE0F",title:"Game-Studio pinnen",        group:"games",prompt:"Wo hat das Entwicklerstudio dieses Spiels seinen Hauptsitz?",      desc:"50 Studios weltweit \u2014 von Tokyo bis Helsinki",         prompt_en:"Where is the game's developer studio located?"},
+    {id:"games_match_land",   icon:"\u{1F30D}\u{1F3AE}",title:"Game-Studio: Herkunftsland",group:"games",prompt:"Aus welchem Land kommt das Studio hinter diesem Spiel?",        desc:"Japan, USA, Schweden, Polen \u2014 50 Studios",              prompt_en:"Which country is this game studio from?"},
+    {id:"games_match_genre",  icon:"\u{1F3AE}",title:"Spielgenre zuordnen",               group:"games",prompt:"Welchem Genre geh\u00f6rt dieses Spiel an?",                    desc:"Battle Royale, RPG, MOBA, Sandbox \u2014 15 Genres",        prompt_en:"Which genre does this game belong to?"},
+    {id:"games_match_adaption",icon:"\u{1F3AC}",title:"Game-Verfilmung",                  group:"games",prompt:"Wurde dieses Spiel verfilmt oder als Serie adaptiert?",           desc:"Film / Serie / Anime \u2014 oder kein Remake?",             prompt_en:"Has this game been adapted as film or series?"},
+    {id:"games_match_plattform",icon:"\u{1F4BB}",title:"Spielplattform",                  group:"games",prompt:"F\u00fcr welche Plattform erschien dieses Spiel prim\u00e4r?",  desc:"PC / Konsole / Mobil / Multiplattform",                      prompt_en:"On which platform did this game primarily release?"},
+    {id:"games_match_kategorie",icon:"\u{1F4C2}",title:"Gaming-\u00c4ra",               group:"games",prompt:"Zu welcher Gaming-Kategorie geh\u00f6rt dieses Spiel?",          desc:"Modern Youth / Global Mobile / Klassiker",                   prompt_en:"Which gaming era does this game belong to?"},
+    {id:"hl_games_release",   icon:"\u{1F4C5}",title:"Game-Quartett: Erscheinungsjahr",   group:"games",prompt:"Welches Spiel erschien sp\u00e4ter?",                           desc:"Von Pac-Man (1980) bis EA FC 24 (2023)",                     prompt_en:"Which game was released later?"},
+    {id:"hl_games_vk",        icon:"\u{1F4B0}",title:"Game-Quartett: Verkaufszahlen",     group:"games",prompt:"Welches Spiel wurde h\u00e4ufiger verkauft?",                   desc:"Nur Kaufspiele \u2014 in Millionen verkaufter Exemplare",    prompt_en:"Which game sold more copies?"},
+    {id:"hl_games_downloads",  icon:"\u{1F4F1}",title:"Game-Quartett: Downloads",         group:"games",prompt:"Welches F2P-Spiel wurde \u00f6fter heruntergeladen?",            desc:"Nur Free-to-Play \u2014 in Millionen Downloads",             prompt_en:"Which F2P game has more downloads?"},
+    {id:"hl_games_metacritic", icon:"\u2B50",   title:"Game-Quartett: Metacritic",        group:"games",prompt:"Welches Spiel wurde von Kritikern besser bewertet?",              desc:"Nur Spiele mit offiziellem Metacritic-Score",                 prompt_en:"Which game has a higher Metacritic score?"},
+    {id:"hl_games_usk",       icon:"\u{1F51E}",title:"Game-Quartett: Altersfreigabe USK", group:"games",prompt:"Welches Spiel hat eine h\u00f6here USK-Freigabe?",              desc:"USK 0 / 6 / 12 / 16 / 18",                                   prompt_en:"Which game has a higher USK age rating?"},
+    {id:"hl_games_sequel",    icon:"\u{1F522}",title:"Game-Quartett: Teile-Anzahl",       group:"games",prompt:"Welche Spielserie hat mehr direkte Nachfolger?",                  desc:"Anzahl direkter Hauptteile nach diesem Spiel",               prompt_en:"Which game franchise has more sequels?"},
+    {id:"games_baujahr_mc",   icon:"\u{1F5D3}\uFE0F\u2753",title:"Gaming: Erscheinungsjahr raten",group:"games",prompt:"In welchem Jahr erschien dieses Spiel erstmals?",  desc:"4 Jahreszahlen \u2014 welche ist die richtige?",             prompt_en:"In which year was this game first released?"},
 
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
     {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
@@ -3647,6 +3662,7 @@ const MODE_CATS={
     "ws_sportwissen_fussball","ws_sportwissen_olympiade","ws_sportwissen_weltmeister",
     "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist","timeline_sport_stadien"
   ],cost:0},
+  games:{label:"Gaming",icon:"\u{1F3AE}",modes:["games_pin","games_match_land","games_match_genre","games_match_adaption","games_match_plattform","games_match_kategorie","hl_games_release","hl_games_vk","hl_games_downloads","hl_games_metacritic","hl_games_usk","hl_games_sequel","games_baujahr_mc"],cost:0},
   autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj","hl_auto_gewicht","hl_auto_drehmoment","hl_auto_cw","hl_auto_kofferraum","hl_auto_laenge","hl_auto_neupreis","hl_auto_tank","hl_auto_akku","hl_auto_reichweite","hl_auto_verbrauch_l","hl_auto_verbrauch_e","hl_auto_zylinder","auto_match_antrieb","auto_match_karosserie","auto_match_antriebsart","auto_match_motorbauart","auto_match_konzern","auto_match_getriebe","auto_match_turbo","auto_match_sitze","auto_baujahr_mc","auto_match_land","hl_auto_ps_kg","hl_auto_co2","auto_match_dekade","auto_generationen_match"],cost:0},
 };
 
@@ -8607,6 +8623,7 @@ const SPORT_PIN_DATA=PLACEHOLDER_SPORT_PIN;
 const SPORT_HL_DATA=PLACEHOLDER_SPORT_HL;
 const AUTOS_DATA=PLACEHOLDER_AUTOS;
 const AUTOS_EXT_DATA=PLACEHOLDER_AUTOS_EXT;
+const GAMES_EXT_DATA=PLACEHOLDER_GAMES_EXT;
 const SPORT_MATCH_DATA=PLACEHOLDER_SPORT_MATCH;
 const SPORT_WS_DATA=PLACEHOLDER_SPORT_WS;
 const TIMELINE_DATA=PLACEHOLDER_TIMELINE;
@@ -8779,6 +8796,106 @@ var genSportWissenMatchQ=_mkMatchQ(SPORT_MATCH_DATA);
 var initSportWissenWS=_mkWS(SPORT_WS_DATA,"SportW");
 /* === Phase 329: Auto-Quartett-Generator === */
 var genAutosHL=_mkHL(AUTOS_DATA);
+/* Phase 360: Gaming-Engines */
+
+/* genGamesHLExt — H/L aus GAMES_EXT_DATA */
+function genGamesHLExt(field,opts){
+  var o=opts||{};
+  var items=[];
+  var _GE=GAMES_EXT_DATA;
+  var _ks=Object.keys(_GE);
+  for(var _i=0;_i<_ks.length;_i++){
+    var _n=_ks[_i];
+    var _v=_GE[_n][field];
+    if(_v===null||_v===undefined||_v===0||_v===0.0)continue;
+    items.push({name:_n,val:+_v});
+  }
+  if(items.length<4)return null;
+  items.sort(function(a,b){return a.val-b.val;});
+  var len=items.length;
+  var tries=0;
+  while(tries++<40){
+    var ai=~~(rng()*len);
+    var W=Math.max(1,Math.floor(len*(S.diff==='hardcore'?0.03:0.15)));
+    var lo=Math.max(0,ai-W),hi=Math.min(len-1,ai+W);
+    var pool=[];
+    for(var i=lo;i<=hi;i++){if(i!==ai)pool.push(i);}
+    if(!pool.length)continue;
+    var bi=pool[~~(rng()*pool.length)];
+    var a=items[ai],b=items[bi];
+    if(a.val===b.val)continue;
+    var winner=o.lowerWins?(a.val<b.val?a:b):(a.val>b.val?a:b);
+    var unit=o.unit||"";
+    var meta=a.name+": "+a.val+(unit?" "+unit:"")+" · "+b.name+": "+b.val+(unit?" "+unit:"");
+    return{type:"beta_hl",prompt:o.prompt||"Welches ist höher?",subj:"",
+      opts:[a.name,b.name],ans:winner.name,meta:meta,
+      lid:"ghl_"+field+"_"+ai+"_"+bi,cc:"de"};
+  }
+  return null;
+}
+
+/* genGamesMatchExt — Match aus GAMES_EXT_DATA */
+function genGamesMatchExt(field,prompt,fixedPool){
+  var _GE=GAMES_EXT_DATA;
+  var valid=Object.keys(_GE).filter(function(n){
+    var v=_GE[n][field];
+    return v!==null&&v!==undefined&&v!=="";
+  });
+  if(valid.length<4)return null;
+  var idx=~~(rng()*valid.length);
+  var game=valid[idx];
+  var correct=String(_GE[game][field]);
+  var pool=fixedPool
+    ?fixedPool.filter(function(v){return v!==correct;})
+    :[...new Set(valid.map(function(n){return String(_GE[n][field]);}))].filter(function(v){return v!==correct;});
+  if(pool.length<3)return null;
+  var p=pool.slice();
+  for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
+  var opts=[correct].concat(p.slice(0,3));
+  for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
+  return{type:"uk_match",prompt:prompt||("Was gilt für "+game+"?"),
+    subj:game,ans:correct,opts:opts,lid:"gmatch_"+field+"_"+idx,cc:"de"};
+}
+
+/* genGamesPinQ — Entwicklerstudio auf Weltkarte einpinnen */
+function genGamesPinQ(){
+  var _GE=GAMES_EXT_DATA;
+  var valid=Object.keys(_GE).filter(function(n){
+    var d=_GE[n];
+    return d.dev_lat&&d.dev_lng&&d.dev_city&&d.developer;
+  });
+  if(valid.length<2)return null;
+  var idx=~~(rng()*valid.length);
+  var game=valid[idx];
+  var d=_GE[game];
+  var subj=game+" — "+d.developer+" ("+d.dev_land+")";
+  return{type:"uk_pin",
+    prompt:"Wo hat das Entwicklerstudio von "+game+" seinen Hauptsitz?",
+    subj:subj,ans:game+" → "+d.dev_city,
+    targetLat:d.dev_lat,targetLng:d.dev_lng,
+    lid:"gpin_"+idx,cc:"de"};
+}
+
+/* genGamesBaujahrMC — "Wann erschien dieses Spiel?" */
+function genGamesBaujahrMC(){
+  var _GE=GAMES_EXT_DATA;
+  var keys=Object.keys(_GE);
+  if(keys.length<8)return null;
+  var idx=~~(rng()*keys.length);
+  var game=keys[idx];
+  var correct=_GE[game].release;
+  var allYears=keys.map(function(n){return _GE[n].release;});
+  var pool=allYears.filter(function(y){var d=Math.abs(y-correct);return d>=2&&d<=20;});
+  if(pool.length<3)pool=allYears.filter(function(y){return y!==correct;}).sort(function(){return rng()-0.5;});
+  var p=pool.slice();
+  for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
+  var opts=[correct].concat(p.slice(0,3));
+  for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
+  return{type:"uk_match",prompt:"In welchem Jahr erschien dieses Spiel erstmals?",
+    subj:game,ans:String(correct),opts:opts.map(String),
+    lid:"gbj_"+idx,cc:"de"};
+}
+
 /* Phase 353: Generationen-Match — Distraktor-Optionen aus derselben Modellreihe */
 function genAutoGenerationenMatch(){
   var _bj=AUTOS_DATA["auto_bj"]&&AUTOS_DATA["auto_bj"].items;
@@ -10024,6 +10141,19 @@ const GEN={
   hl_auto_co2:()=>genAutoCO2(),
   auto_match_dekade:()=>genAutoMatchDekade(),
   auto_generationen_match:()=>genAutoGenerationenMatch(),
+  games_pin:()=>genGamesPinQ(),
+  games_match_land:()=>genGamesMatchExt("dev_land","Aus welchem Land kommt das Studio hinter diesem Spiel?",null),
+  games_match_genre:()=>genGamesMatchExt("genre","Welchem Genre geh\u00f6rt dieses Spiel an?",null),
+  games_match_adaption:()=>genGamesMatchExt("adaption","Wurde dieses Spiel verfilmt?",["Film","Serie","Anime"]),
+  games_match_plattform:()=>genGamesMatchExt("plattform","Auf welcher Plattform l\u00e4uft dieses Spiel?",["PC","Konsole","Mobil","Multiplattform"]),
+  games_match_kategorie:()=>genGamesMatchExt("kategorie","Zu welcher Gaming-\u00c4ra geh\u00f6rt dieses Spiel?",["Modern Youth","Global Mobile","Klassiker"]),
+  hl_games_release:()=>genGamesHLExt("release",{unit:"Jahr",prompt:"Welches Spiel erschien sp\u00e4ter?"}),
+  hl_games_vk:()=>genGamesHLExt("vk_mio",{unit:"Mio. Exemplare",prompt:"Welches Spiel wurde h\u00e4ufiger verkauft?"}),
+  hl_games_downloads:()=>genGamesHLExt("downloads_mio",{unit:"Mio. Downloads",prompt:"Welches F2P-Spiel wurde \u00f6fter heruntergeladen?"}),
+  hl_games_metacritic:()=>genGamesHLExt("metacritic",{unit:"Punkte",prompt:"Welches Spiel wurde besser bewertet?"}),
+  hl_games_usk:()=>genGamesHLExt("usk",{unit:"USK",prompt:"Welches Spiel hat eine h\u00f6here Altersfreigabe?"}),
+  hl_games_sequel:()=>genGamesHLExt("sequel_count",{unit:"Teile",prompt:"Welche Spielserie hat mehr direkte Nachfolger?"}),
+  games_baujahr_mc:()=>genGamesBaujahrMC(),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),
@@ -15789,8 +15919,8 @@ JS = (JS
   .replace('PLACEHOLDER_SPORT_WS',    SPORT_WS_J)
   .replace('PLACEHOLDER_TIMELINE',     TIMELINE_J)
   .replace('PLACEHOLDER_AUTOS_EXT',      AUTOS_EXT_J)
+  .replace('PLACEHOLDER_GAMES_EXT',      GAMES_EXT_J)
   .replace('PLACEHOLDER_AUTOS',          AUTOS_J)
-  .replace('PLACEHOLDER_AUTOS_EXT',      AUTOS_EXT_J)
 )
 # Phase 201: fix unicode escapes — JS=r'''...''' keeps \UXXXXXXXX literal
 JS = re.sub(r'\\U([0-9A-Fa-f]{8})', lambda m: chr(int(m.group(1), 16)), JS)

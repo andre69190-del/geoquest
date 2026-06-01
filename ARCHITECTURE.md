@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 354 (Stand: Juni 2026)
-**Build:** gen.py → 1.35 MB | GeoQuest.html → 5.19 MB | 751 Spielmodi | verify: 140/140 | data: 43 JSON
+**Version:** Phase 360 (Stand: Juni 2026)
+**Build:** gen.py → 1.35 MB | GeoQuest.html → 5.23 MB | 751 Spielmodi | verify: 140/140 | data: 43 JSON
 
 ---
 
@@ -1105,6 +1105,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **352** | patches/patch_352c_auto_creative.py | **ENGINE SPRINT 352: Auto-Universum komplett — 25 neue Modi (12 H/L + 8 Match + 5 kreativ). AUTOS_EXT_DATA (431 Fzg., 22 Felder) inline. genAutosHLExt + genAutosMatchExt + Baujahr-MC + Leistungsgewicht + CO2 + Dekaden-Quiz.** |
 | **353** | patches/patch_353_gen_match.py | **Generationen-Match: 21 Modellreihen (Golf/M3/Clio/Corsa/…) — Distraktor-Optionen = echte andere Generationen derselben Baureihe. JSON-Komprimierung: -60 KB (AUTOS_EXT_J compact)** |
 | **354** | patches/patch_354_feedback_delay.py | **UX: Feedback-Anzeigedauer +1,5 s — Einzel: 1900→3400 ms, IATA: 2800→4300 ms, startNextRound: 1500→3000 ms (5×). Multiplayer (5500 ms) unverändert.** |
+| **360** | patches/patch_360_games_engine.py | **Gaming-Kategorie: 50 Spiele (30 Modern/Mobile + 20 Klassiker), 13 Modi (games_pin, genre/land/adaption-Match, H/L release/vk/metacritic/usk, Baujahr-MC). Bridge: dev_lat/dev_lng → echter GeoQuest-Pin-Modus.** |
 
 ---
 
