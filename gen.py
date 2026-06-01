@@ -10251,11 +10251,28 @@ function clr(){
   if(S.wsData){S.wsData.phase='done';_wsDetachKb();}
 }
 
-/* Phase 408: _exitToMenu() — kehrt zum Menu zurück und öffnet die Kategorie des gespielten Modus */
+/* Phase 408/409: _exitToMenu() + Played-Tracking */
+function _trackPlayedMode(modeId){
+  if(!modeId)return;
+  /* geoquest_played: Set aller je gespielten Modi */
+  try{
+    var played=JSON.parse(localStorage.getItem('gq_played')||'[]');
+    if(!played.includes(modeId)){played.push(modeId);localStorage.setItem('gq_played',JSON.stringify(played));}
+  }catch(_e){}
+  /* gq_recent: Die letzten 5 gespielten Modi (neuester zuerst) */
+  try{
+    var recent=JSON.parse(localStorage.getItem('gq_recent')||'[]');
+    recent=recent.filter(function(id){return id!==modeId;});
+    recent.unshift(modeId);
+    if(recent.length>5)recent=recent.slice(0,5);
+    localStorage.setItem('gq_recent',JSON.stringify(recent));
+  }catch(_e){}
+}
 function _exitToMenu(){
-  /* Gruppe des aktuellen Modus speichern BEVOR clr() S.mode löscht */
+  /* Gruppe + Mode speichern BEVOR clr() S.mode löscht */
   var _grp='';
   if(S.mode){
+    _trackPlayedMode(S.mode);
     var _mEntry=MODES.find(function(m){return m.id===S.mode;});
     if(_mEntry&&_mEntry.group)_grp=_mEntry.group;
   }
@@ -10263,12 +10280,15 @@ function _exitToMenu(){
   S.ph='menu';S.tab='home';rngSeed=null;
   if(_grp)S.filterCat=_grp;
   render();
-  /* Nach render: Akkordeon-Sektion scrollen */
   if(_grp){
+    /* Carousel-Grid-Fix: initAllCarousels sicherstellen DANN scrollen */
     setTimeout(function(){
-      var sec=document.querySelector('.accordion-section[data-cat="'+_grp+'"]');
-      if(sec)sec.scrollIntoView({behavior:'smooth',block:'start'});
-    },120);
+      if(typeof window._initAllCarousels==='function')window._initAllCarousels();
+      setTimeout(function(){
+        var sec=document.querySelector('.accordion-section[data-cat="'+_grp+'"]');
+        if(sec)sec.scrollIntoView({behavior:'smooth',block:'start'});
+      },60);
+    },100);
   }
 }
 
@@ -12264,6 +12284,7 @@ app.innerHTML=`<div class="scr">
       ${S.settingsModal?renderSettingsModal():""}${S.adModal?renderAdModal():""}
     </div>${renderBottomNav()}${(S.pwaPrompt||(_isIOS()&&!_isInStandaloneMode()&&!localStorage.getItem('gq_pwa_ios_dismissed')))?renderPwaBanner():""}`;
     if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
+  if(S.tab==="home")setTimeout(function(){if(typeof window.renderRecentBar==="function")window.renderRecentBar();},90);
     return;
   }
 
@@ -14933,6 +14954,29 @@ function toggleFavorite(modeId,ev){
   });
 }
 window.toggleFavorite=toggleFavorite;
+
+/* Phase 409: renderRecentBar() — "Zuletzt gespielt"-Leiste */
+function renderRecentBar(){
+  var bar=document.getElementById('gq-recent-bar');
+  if(!bar)return;
+  var recent=[];
+  try{recent=JSON.parse(localStorage.getItem('gq_recent')||'[]');}catch(_e){}
+  if(!recent.length){bar.innerHTML='';bar.style.display='none';return;}
+  bar.style.display='block';
+  var items=recent.map(function(mid){
+    var m=MODES.find(function(x){return x.id===mid;});
+    if(!m)return'';
+    var title=modeTitle(m);
+    return'<button onclick="startGame(\''+mid+'\')" style="display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:72px;max-width:90px;padding:6px 4px;background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;cursor:pointer;flex-shrink:0;line-height:1.2;text-align:center" title="'+title+'">'
+      +'<span style="font-size:1.3rem">'+m.icon+'</span>'
+      +'<span style="font-size:.58rem;color:var(--text2);font-weight:600;overflow:hidden;max-width:80px;white-space:nowrap;text-overflow:ellipsis">'+title+'</span>'
+      +'</button>';
+  }).join('');
+  bar.innerHTML='<div style="padding:8px 0 6px"><div style="font-size:.63rem;font-weight:700;color:var(--text3);letter-spacing:.7px;margin-bottom:5px">ZULETZT GESPIELT</div>'
+    +'<div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none">'+items+'</div></div>';
+}
+window.renderRecentBar=renderRecentBar;
+
 function showFavorites(){
   var favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
   if(!favs.length){
@@ -15074,7 +15118,7 @@ function renderHomeTab(){
     }).join('')}</div>`;
     return`<div class="accordion-section" data-cat="${catId}">
       <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
-        <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}</span>
+        <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}${(function(){var _p=JSON.parse(localStorage.getItem('gq_played')||'[]');var _tot=catModes.length;var _dn=catModes.filter(function(mm){return _p.includes(mm.id);}).length;if(!_tot||!_dn)return'';var _pct=Math.round(_dn/_tot*100);var _col=_dn===_tot?'#10b981':'#6366f1';return '<span style="font-size:.6rem;color:'+_col+';margin-left:6px;font-weight:700;display:inline-flex;align-items:center;gap:3px">'+_dn+'/'+_tot+'<span style="display:inline-block;width:30px;height:3px;background:var(--bg3);border-radius:2px;overflow:hidden"><span style="display:block;width:'+_pct+'%;height:100%;background:'+_col+'"></span></span></span>';})()}</span>
         <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
       </div>
       <div class="accordion-content${isDefault?' open':''}">
@@ -15119,6 +15163,7 @@ function renderHomeTab(){
       <button onclick="window.showFavorites()" style="background:var(--bg2);color:#ef4444;border:2px solid var(--border);padding:8px 11px;border-radius:10px;font-size:1rem;cursor:pointer;flex-shrink:0;line-height:1" title="Favoriten">❤️</button>
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
+    <div id="gq-recent-bar" style="padding:0 15px 0"></div>
     <div id="mainGamesGrid" style="padding:0 15px">${_accordionHTML}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">

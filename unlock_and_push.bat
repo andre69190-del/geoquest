@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 408. UX: _exitToMenu() — nach Spielende kehrt die App zur Kategorie des gespielten Modus zurueck (11x Exit-Button ersetzt, smooth scroll, filterCat gesetzt). verify: 143/143."
+git commit -m "Content: Phase 409. Phase 409/410: Zuletzt-gespielt-Leiste (letzte 5 Modi, gq_recent), Gespielt-Tracking (gq_played), Fortschrittsbalken X/Y im Akkordeon-Header, Carousel-Grid-Reinit-Fix fuer Gaming. verify: 143/143."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
