@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 407. generate_spieluebersicht: Datenbasis-Badges fuer Gaming (70 Spiele) + Auto-Extended (431) + genAutosHL korrekt; Dispatch-Regex 4 neue Muster; 0 von 774 Modi ohne Badge. verify: 143/143."
+git commit -m "Content: Phase 408. UX: _exitToMenu() — nach Spielende kehrt die App zur Kategorie des gespielten Modus zurueck (11x Exit-Button ersetzt, smooth scroll, filterCat gesetzt). verify: 143/143."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
