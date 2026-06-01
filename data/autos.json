@@ -1378,6 +1378,354 @@
       {
         "name": "Škoda Octavia IV RS (Tschechien, 2020)",
         "val": 245
+      },
+      {
+        "name": "BMW 116i E87 (Deutschland, 2004)",
+        "val": 115
+      },
+      {
+        "name": "BMW 130i E87 (Deutschland, 2005)",
+        "val": 265
+      },
+      {
+        "name": "BMW 116i F20 (Deutschland, 2011)",
+        "val": 136
+      },
+      {
+        "name": "BMW M135i F20 (Deutschland, 2012)",
+        "val": 320
+      },
+      {
+        "name": "BMW 116i F40 (Deutschland, 2019)",
+        "val": 109
+      },
+      {
+        "name": "BMW M135i xDrive F40 (Deutschland, 2019)",
+        "val": 306
+      },
+      {
+        "name": "BMW 730i E32 (Deutschland, 1986)",
+        "val": 188
+      },
+      {
+        "name": "BMW 750iL E32 (Deutschland, 1987)",
+        "val": 300
+      },
+      {
+        "name": "BMW 728i E38 (Deutschland, 1994)",
+        "val": 193
+      },
+      {
+        "name": "BMW 750iL E38 (Deutschland, 1994)",
+        "val": 326
+      },
+      {
+        "name": "BMW 730i E65 (Deutschland, 2001)",
+        "val": 231
+      },
+      {
+        "name": "BMW 760Li E65 (Deutschland, 2003)",
+        "val": 445
+      },
+      {
+        "name": "BMW 730i G11 (Deutschland, 2015)",
+        "val": 258
+      },
+      {
+        "name": "BMW M760Li G11 (Deutschland, 2016)",
+        "val": 585
+      },
+      {
+        "name": "BMW X5 3.0i E53 (Deutschland, 1999)",
+        "val": 231
+      },
+      {
+        "name": "BMW X5 4.6is E53 (Deutschland, 2002)",
+        "val": 347
+      },
+      {
+        "name": "BMW X5 xDrive25d F15 (Deutschland, 2013)",
+        "val": 218
+      },
+      {
+        "name": "BMW X5 M F85 (Deutschland, 2014)",
+        "val": 575
+      },
+      {
+        "name": "Mercedes-Benz 280 S W126 (Deutschland, 1979)",
+        "val": 185
+      },
+      {
+        "name": "Mercedes-Benz 560 SEL W126 (Deutschland, 1985)",
+        "val": 300
+      },
+      {
+        "name": "Mercedes-Benz 300 SE W140 (Deutschland, 1991)",
+        "val": 197
+      },
+      {
+        "name": "Mercedes-Benz S 600 W140 (Deutschland, 1992)",
+        "val": 394
+      },
+      {
+        "name": "Mercedes-Benz S 350 W221 (Deutschland, 2005)",
+        "val": 272
+      },
+      {
+        "name": "Mercedes-Benz S 65 AMG W221 (Deutschland, 2006)",
+        "val": 612
+      },
+      {
+        "name": "Mercedes-Benz S 500 W223 (Deutschland, 2020)",
+        "val": 435
+      },
+      {
+        "name": "Mercedes-Benz S 63 AMG W223 (Deutschland, 2021)",
+        "val": 612
+      },
+      {
+        "name": "Mercedes-Benz A 140 W168 (Deutschland, 1997)",
+        "val": 82
+      },
+      {
+        "name": "Mercedes-Benz A 210 Evo W168 (Deutschland, 2000)",
+        "val": 140
+      },
+      {
+        "name": "Mercedes-Benz A 160 W176 (Deutschland, 2012)",
+        "val": 102
+      },
+      {
+        "name": "Mercedes-Benz SL 300 R129 (Deutschland, 1989)",
+        "val": 231
+      },
+      {
+        "name": "Mercedes-Benz SL 73 AMG R129 (Deutschland, 1999)",
+        "val": 525
+      },
+      {
+        "name": "Mercedes-Benz G 300 W463 (Deutschland, 1989)",
+        "val": 170
+      },
+      {
+        "name": "Mercedes-Benz G 500 W463 (Deutschland, 1998)",
+        "val": 296
+      },
+      {
+        "name": "Audi A8 2.8 D2 (Deutschland, 1994)",
+        "val": 174
+      },
+      {
+        "name": "Audi S8 D2 (Deutschland, 1996)",
+        "val": 360
+      },
+      {
+        "name": "Audi A8 3.0 D3 (Deutschland, 2002)",
+        "val": 220
+      },
+      {
+        "name": "Audi S8 D3 (Deutschland, 2006)",
+        "val": 450
+      },
+      {
+        "name": "Audi A8 3.0 TFSI D4 (Deutschland, 2010)",
+        "val": 310
+      },
+      {
+        "name": "Audi S8 D4 (Deutschland, 2012)",
+        "val": 520
+      },
+      {
+        "name": "Audi TT 1.8 TFSI 8J (Deutschland, 2006)",
+        "val": 160
+      },
+      {
+        "name": "Audi TTS 8J (Deutschland, 2008)",
+        "val": 272
+      },
+      {
+        "name": "Audi TT 2.0 TFSI 8S (Deutschland, 2014)",
+        "val": 230
+      },
+      {
+        "name": "Audi TT RS 8S (Deutschland, 2016)",
+        "val": 400
+      },
+      {
+        "name": "Porsche Boxster 986 (Deutschland, 1996)",
+        "val": 204
+      },
+      {
+        "name": "Porsche Boxster S 986 (Deutschland, 2000)",
+        "val": 252
+      },
+      {
+        "name": "Porsche Boxster 981 (Deutschland, 2012)",
+        "val": 265
+      },
+      {
+        "name": "Porsche Boxster S 981 (Deutschland, 2012)",
+        "val": 315
+      },
+      {
+        "name": "Porsche Cayenne V6 9PA (Deutschland, 2002)",
+        "val": 250
+      },
+      {
+        "name": "Porsche Cayenne Turbo 9PA (Deutschland, 2002)",
+        "val": 450
+      },
+      {
+        "name": "Porsche Cayenne V6 9YA (Deutschland, 2017)",
+        "val": 340
+      },
+      {
+        "name": "Porsche Cayenne Turbo S E-Hybrid 9YA (Deutschland, 2019)",
+        "val": 680
+      },
+      {
+        "name": "Opel Manta B (Deutschland, 1975)",
+        "val": 75
+      },
+      {
+        "name": "Opel Manta B GT/E (Deutschland, 1975)",
+        "val": 105
+      },
+      {
+        "name": "Opel Calibra (Deutschland, 1990)",
+        "val": 115
+      },
+      {
+        "name": "Opel Calibra Turbo 4x4 (Deutschland, 1992)",
+        "val": 204
+      },
+      {
+        "name": "Ford Fiesta Mk1 (Deutschland, 1976)",
+        "val": 40
+      },
+      {
+        "name": "Ford Fiesta XR2 (Deutschland, 1981)",
+        "val": 84
+      },
+      {
+        "name": "Ford Fiesta Mk3 (Deutschland, 1989)",
+        "val": 50
+      },
+      {
+        "name": "Ford Fiesta XR2i 16V (Deutschland, 1992)",
+        "val": 133
+      },
+      {
+        "name": "Ford Fiesta Mk7 (Deutschland, 2008)",
+        "val": 60
+      },
+      {
+        "name": "Ford Fiesta ST Mk7 (Deutschland, 2013)",
+        "val": 182
+      },
+      {
+        "name": "Ford Focus Mk1 (Deutschland, 1998)",
+        "val": 75
+      },
+      {
+        "name": "Ford Focus RS Mk1 (Vereinigtes Königreich, 2002)",
+        "val": 215
+      },
+      {
+        "name": "Ford Focus Mk2 (Deutschland, 2004)",
+        "val": 80
+      },
+      {
+        "name": "Ford Focus ST Mk2 (Vereinigtes Königreich, 2005)",
+        "val": 225
+      },
+      {
+        "name": "Ford Focus Mk3 (Deutschland, 2011)",
+        "val": 100
+      },
+      {
+        "name": "Ford Capri Mk3 (Deutschland, 1978)",
+        "val": 73
+      },
+      {
+        "name": "Ford Capri 2.8 Injection (Vereinigtes Königreich, 1981)",
+        "val": 160
+      },
+      {
+        "name": "Ford Sierra (Deutschland, 1982)",
+        "val": 75
+      },
+      {
+        "name": "Volvo 244 (Schweden, 1974)",
+        "val": 97
+      },
+      {
+        "name": "Volvo 244 Turbo (Schweden, 1981)",
+        "val": 155
+      },
+      {
+        "name": "Volvo 850 (Schweden, 1991)",
+        "val": 144
+      },
+      {
+        "name": "Volvo V70 (Schweden, 1996)",
+        "val": 140
+      },
+      {
+        "name": "Volvo V70 R (Schweden, 1998)",
+        "val": 250
+      },
+      {
+        "name": "Volvo XC90 T5 Gen1 (Schweden, 2002)",
+        "val": 210
+      },
+      {
+        "name": "Volvo XC90 V8 Gen1 (Schweden, 2005)",
+        "val": 315
+      },
+      {
+        "name": "Volvo XC90 T5 Gen2 (Schweden, 2014)",
+        "val": 254
+      },
+      {
+        "name": "Volvo XC90 T8 Twin Engine Gen2 (Schweden, 2015)",
+        "val": 407
+      },
+      {
+        "name": "Saab 900 (Schweden, 1978)",
+        "val": 100
+      },
+      {
+        "name": "Saab 9-3 (Schweden, 1998)",
+        "val": 150
+      },
+      {
+        "name": "Smart Fortwo W453 (Deutschland, 2014)",
+        "val": 71
+      },
+      {
+        "name": "Smart Fortwo Brabus W453 (Deutschland, 2016)",
+        "val": 109
+      },
+      {
+        "name": "Mini Classic (Vereinigtes Königreich, 1959)",
+        "val": 34
+      },
+      {
+        "name": "BMW Mini One R50 (Vereinigtes Königreich, 2001)",
+        "val": 90
+      },
+      {
+        "name": "BMW Mini Cooper S R53 (Vereinigtes Königreich, 2002)",
+        "val": 163
+      },
+      {
+        "name": "BMW Mini One F56 (Vereinigtes Königreich, 2014)",
+        "val": 102
+      },
+      {
+        "name": "BMW Mini JCW F56 (Vereinigtes Königreich, 2015)",
+        "val": 231
       }
     ]
   },
@@ -2759,6 +3107,354 @@
       },
       {
         "name": "Škoda Octavia IV RS (Tschechien, 2020)",
+        "val": 250
+      },
+      {
+        "name": "BMW 116i E87 (Deutschland, 2004)",
+        "val": 196
+      },
+      {
+        "name": "BMW 130i E87 (Deutschland, 2005)",
+        "val": 250
+      },
+      {
+        "name": "BMW 116i F20 (Deutschland, 2011)",
+        "val": 208
+      },
+      {
+        "name": "BMW M135i F20 (Deutschland, 2012)",
+        "val": 250
+      },
+      {
+        "name": "BMW 116i F40 (Deutschland, 2019)",
+        "val": 198
+      },
+      {
+        "name": "BMW M135i xDrive F40 (Deutschland, 2019)",
+        "val": 250
+      },
+      {
+        "name": "BMW 730i E32 (Deutschland, 1986)",
+        "val": 225
+      },
+      {
+        "name": "BMW 750iL E32 (Deutschland, 1987)",
+        "val": 250
+      },
+      {
+        "name": "BMW 728i E38 (Deutschland, 1994)",
+        "val": 225
+      },
+      {
+        "name": "BMW 750iL E38 (Deutschland, 1994)",
+        "val": 250
+      },
+      {
+        "name": "BMW 730i E65 (Deutschland, 2001)",
+        "val": 250
+      },
+      {
+        "name": "BMW 760Li E65 (Deutschland, 2003)",
+        "val": 250
+      },
+      {
+        "name": "BMW 730i G11 (Deutschland, 2015)",
+        "val": 250
+      },
+      {
+        "name": "BMW M760Li G11 (Deutschland, 2016)",
+        "val": 250
+      },
+      {
+        "name": "BMW X5 3.0i E53 (Deutschland, 1999)",
+        "val": 210
+      },
+      {
+        "name": "BMW X5 4.6is E53 (Deutschland, 2002)",
+        "val": 237
+      },
+      {
+        "name": "BMW X5 xDrive25d F15 (Deutschland, 2013)",
+        "val": 223
+      },
+      {
+        "name": "BMW X5 M F85 (Deutschland, 2014)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz 280 S W126 (Deutschland, 1979)",
+        "val": 210
+      },
+      {
+        "name": "Mercedes-Benz 560 SEL W126 (Deutschland, 1985)",
+        "val": 238
+      },
+      {
+        "name": "Mercedes-Benz 300 SE W140 (Deutschland, 1991)",
+        "val": 228
+      },
+      {
+        "name": "Mercedes-Benz S 600 W140 (Deutschland, 1992)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz S 350 W221 (Deutschland, 2005)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz S 65 AMG W221 (Deutschland, 2006)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz S 500 W223 (Deutschland, 2020)",
+        "val": 250
+      },
+      {
+        "name": "Mercedes-Benz S 63 AMG W223 (Deutschland, 2021)",
+        "val": 300
+      },
+      {
+        "name": "Mercedes-Benz A 140 W168 (Deutschland, 1997)",
+        "val": 160
+      },
+      {
+        "name": "Mercedes-Benz A 210 Evo W168 (Deutschland, 2000)",
+        "val": 210
+      },
+      {
+        "name": "Mercedes-Benz A 160 W176 (Deutschland, 2012)",
+        "val": 200
+      },
+      {
+        "name": "Mercedes-Benz SL 300 R129 (Deutschland, 1989)",
+        "val": 245
+      },
+      {
+        "name": "Mercedes-Benz SL 73 AMG R129 (Deutschland, 1999)",
+        "val": 300
+      },
+      {
+        "name": "Mercedes-Benz G 300 W463 (Deutschland, 1989)",
+        "val": 160
+      },
+      {
+        "name": "Mercedes-Benz G 500 W463 (Deutschland, 1998)",
+        "val": 210
+      },
+      {
+        "name": "Audi A8 2.8 D2 (Deutschland, 1994)",
+        "val": 225
+      },
+      {
+        "name": "Audi S8 D2 (Deutschland, 1996)",
+        "val": 250
+      },
+      {
+        "name": "Audi A8 3.0 D3 (Deutschland, 2002)",
+        "val": 250
+      },
+      {
+        "name": "Audi S8 D3 (Deutschland, 2006)",
+        "val": 250
+      },
+      {
+        "name": "Audi A8 3.0 TFSI D4 (Deutschland, 2010)",
+        "val": 250
+      },
+      {
+        "name": "Audi S8 D4 (Deutschland, 2012)",
+        "val": 250
+      },
+      {
+        "name": "Audi TT 1.8 TFSI 8J (Deutschland, 2006)",
+        "val": 225
+      },
+      {
+        "name": "Audi TTS 8J (Deutschland, 2008)",
+        "val": 250
+      },
+      {
+        "name": "Audi TT 2.0 TFSI 8S (Deutschland, 2014)",
+        "val": 250
+      },
+      {
+        "name": "Audi TT RS 8S (Deutschland, 2016)",
+        "val": 280
+      },
+      {
+        "name": "Porsche Boxster 986 (Deutschland, 1996)",
+        "val": 240
+      },
+      {
+        "name": "Porsche Boxster S 986 (Deutschland, 2000)",
+        "val": 260
+      },
+      {
+        "name": "Porsche Boxster 981 (Deutschland, 2012)",
+        "val": 264
+      },
+      {
+        "name": "Porsche Boxster S 981 (Deutschland, 2012)",
+        "val": 278
+      },
+      {
+        "name": "Porsche Cayenne V6 9PA (Deutschland, 2002)",
+        "val": 217
+      },
+      {
+        "name": "Porsche Cayenne Turbo 9PA (Deutschland, 2002)",
+        "val": 266
+      },
+      {
+        "name": "Porsche Cayenne V6 9YA (Deutschland, 2017)",
+        "val": 245
+      },
+      {
+        "name": "Porsche Cayenne Turbo S E-Hybrid 9YA (Deutschland, 2019)",
+        "val": 295
+      },
+      {
+        "name": "Opel Manta B (Deutschland, 1975)",
+        "val": 165
+      },
+      {
+        "name": "Opel Manta B GT/E (Deutschland, 1975)",
+        "val": 186
+      },
+      {
+        "name": "Opel Calibra (Deutschland, 1990)",
+        "val": 200
+      },
+      {
+        "name": "Opel Calibra Turbo 4x4 (Deutschland, 1992)",
+        "val": 240
+      },
+      {
+        "name": "Ford Fiesta Mk1 (Deutschland, 1976)",
+        "val": 130
+      },
+      {
+        "name": "Ford Fiesta XR2 (Deutschland, 1981)",
+        "val": 170
+      },
+      {
+        "name": "Ford Fiesta Mk3 (Deutschland, 1989)",
+        "val": 145
+      },
+      {
+        "name": "Ford Fiesta XR2i 16V (Deutschland, 1992)",
+        "val": 200
+      },
+      {
+        "name": "Ford Fiesta Mk7 (Deutschland, 2008)",
+        "val": 158
+      },
+      {
+        "name": "Ford Fiesta ST Mk7 (Deutschland, 2013)",
+        "val": 222
+      },
+      {
+        "name": "Ford Focus Mk1 (Deutschland, 1998)",
+        "val": 175
+      },
+      {
+        "name": "Ford Focus RS Mk1 (Vereinigtes Königreich, 2002)",
+        "val": 235
+      },
+      {
+        "name": "Ford Focus Mk2 (Deutschland, 2004)",
+        "val": 175
+      },
+      {
+        "name": "Ford Focus ST Mk2 (Vereinigtes Königreich, 2005)",
+        "val": 247
+      },
+      {
+        "name": "Ford Focus Mk3 (Deutschland, 2011)",
+        "val": 193
+      },
+      {
+        "name": "Ford Capri Mk3 (Deutschland, 1978)",
+        "val": 175
+      },
+      {
+        "name": "Ford Capri 2.8 Injection (Vereinigtes Königreich, 1981)",
+        "val": 217
+      },
+      {
+        "name": "Ford Sierra (Deutschland, 1982)",
+        "val": 175
+      },
+      {
+        "name": "Volvo 244 (Schweden, 1974)",
+        "val": 170
+      },
+      {
+        "name": "Volvo 244 Turbo (Schweden, 1981)",
+        "val": 195
+      },
+      {
+        "name": "Volvo 850 (Schweden, 1991)",
+        "val": 195
+      },
+      {
+        "name": "Volvo V70 (Schweden, 1996)",
+        "val": 200
+      },
+      {
+        "name": "Volvo V70 R (Schweden, 1998)",
+        "val": 250
+      },
+      {
+        "name": "Volvo XC90 T5 Gen1 (Schweden, 2002)",
+        "val": 210
+      },
+      {
+        "name": "Volvo XC90 V8 Gen1 (Schweden, 2005)",
+        "val": 225
+      },
+      {
+        "name": "Volvo XC90 T5 Gen2 (Schweden, 2014)",
+        "val": 220
+      },
+      {
+        "name": "Volvo XC90 T8 Twin Engine Gen2 (Schweden, 2015)",
+        "val": 230
+      },
+      {
+        "name": "Saab 900 (Schweden, 1978)",
+        "val": 175
+      },
+      {
+        "name": "Saab 9-3 (Schweden, 1998)",
+        "val": 210
+      },
+      {
+        "name": "Smart Fortwo W453 (Deutschland, 2014)",
+        "val": 155
+      },
+      {
+        "name": "Smart Fortwo Brabus W453 (Deutschland, 2016)",
+        "val": 160
+      },
+      {
+        "name": "Mini Classic (Vereinigtes Königreich, 1959)",
+        "val": 116
+      },
+      {
+        "name": "BMW Mini One R50 (Vereinigtes Königreich, 2001)",
+        "val": 175
+      },
+      {
+        "name": "BMW Mini Cooper S R53 (Vereinigtes Königreich, 2002)",
+        "val": 218
+      },
+      {
+        "name": "BMW Mini One F56 (Vereinigtes Königreich, 2014)",
+        "val": 183
+      },
+      {
+        "name": "BMW Mini JCW F56 (Vereinigtes Königreich, 2015)",
         "val": 250
       }
     ]
@@ -4142,6 +4838,354 @@
       {
         "name": "Škoda Octavia IV RS (Tschechien, 2020)",
         "val": 6.4
+      },
+      {
+        "name": "BMW 116i E87 (Deutschland, 2004)",
+        "val": 11.0
+      },
+      {
+        "name": "BMW 130i E87 (Deutschland, 2005)",
+        "val": 6.1
+      },
+      {
+        "name": "BMW 116i F20 (Deutschland, 2011)",
+        "val": 9.7
+      },
+      {
+        "name": "BMW M135i F20 (Deutschland, 2012)",
+        "val": 4.9
+      },
+      {
+        "name": "BMW 116i F40 (Deutschland, 2019)",
+        "val": 10.4
+      },
+      {
+        "name": "BMW M135i xDrive F40 (Deutschland, 2019)",
+        "val": 4.8
+      },
+      {
+        "name": "BMW 730i E32 (Deutschland, 1986)",
+        "val": 9.3
+      },
+      {
+        "name": "BMW 750iL E32 (Deutschland, 1987)",
+        "val": 7.4
+      },
+      {
+        "name": "BMW 728i E38 (Deutschland, 1994)",
+        "val": 9.5
+      },
+      {
+        "name": "BMW 750iL E38 (Deutschland, 1994)",
+        "val": 7.4
+      },
+      {
+        "name": "BMW 730i E65 (Deutschland, 2001)",
+        "val": 8.5
+      },
+      {
+        "name": "BMW 760Li E65 (Deutschland, 2003)",
+        "val": 5.5
+      },
+      {
+        "name": "BMW 730i G11 (Deutschland, 2015)",
+        "val": 6.8
+      },
+      {
+        "name": "BMW M760Li G11 (Deutschland, 2016)",
+        "val": 3.9
+      },
+      {
+        "name": "BMW X5 3.0i E53 (Deutschland, 1999)",
+        "val": 8.7
+      },
+      {
+        "name": "BMW X5 4.6is E53 (Deutschland, 2002)",
+        "val": 6.5
+      },
+      {
+        "name": "BMW X5 xDrive25d F15 (Deutschland, 2013)",
+        "val": 8.3
+      },
+      {
+        "name": "BMW X5 M F85 (Deutschland, 2014)",
+        "val": 4.2
+      },
+      {
+        "name": "Mercedes-Benz 280 S W126 (Deutschland, 1979)",
+        "val": 10.5
+      },
+      {
+        "name": "Mercedes-Benz 560 SEL W126 (Deutschland, 1985)",
+        "val": 7.0
+      },
+      {
+        "name": "Mercedes-Benz 300 SE W140 (Deutschland, 1991)",
+        "val": 9.5
+      },
+      {
+        "name": "Mercedes-Benz S 600 W140 (Deutschland, 1992)",
+        "val": 6.1
+      },
+      {
+        "name": "Mercedes-Benz S 350 W221 (Deutschland, 2005)",
+        "val": 7.2
+      },
+      {
+        "name": "Mercedes-Benz S 65 AMG W221 (Deutschland, 2006)",
+        "val": 4.4
+      },
+      {
+        "name": "Mercedes-Benz S 500 W223 (Deutschland, 2020)",
+        "val": 4.9
+      },
+      {
+        "name": "Mercedes-Benz S 63 AMG W223 (Deutschland, 2021)",
+        "val": 3.4
+      },
+      {
+        "name": "Mercedes-Benz A 140 W168 (Deutschland, 1997)",
+        "val": 13.5
+      },
+      {
+        "name": "Mercedes-Benz A 210 Evo W168 (Deutschland, 2000)",
+        "val": 7.9
+      },
+      {
+        "name": "Mercedes-Benz A 160 W176 (Deutschland, 2012)",
+        "val": 11.5
+      },
+      {
+        "name": "Mercedes-Benz SL 300 R129 (Deutschland, 1989)",
+        "val": 7.6
+      },
+      {
+        "name": "Mercedes-Benz SL 73 AMG R129 (Deutschland, 1999)",
+        "val": 4.6
+      },
+      {
+        "name": "Mercedes-Benz G 300 W463 (Deutschland, 1989)",
+        "val": 14.5
+      },
+      {
+        "name": "Mercedes-Benz G 500 W463 (Deutschland, 1998)",
+        "val": 8.0
+      },
+      {
+        "name": "Audi A8 2.8 D2 (Deutschland, 1994)",
+        "val": 9.0
+      },
+      {
+        "name": "Audi S8 D2 (Deutschland, 1996)",
+        "val": 5.6
+      },
+      {
+        "name": "Audi A8 3.0 D3 (Deutschland, 2002)",
+        "val": 7.6
+      },
+      {
+        "name": "Audi S8 D3 (Deutschland, 2006)",
+        "val": 5.1
+      },
+      {
+        "name": "Audi A8 3.0 TFSI D4 (Deutschland, 2010)",
+        "val": 6.1
+      },
+      {
+        "name": "Audi S8 D4 (Deutschland, 2012)",
+        "val": 4.2
+      },
+      {
+        "name": "Audi TT 1.8 TFSI 8J (Deutschland, 2006)",
+        "val": 8.5
+      },
+      {
+        "name": "Audi TTS 8J (Deutschland, 2008)",
+        "val": 5.4
+      },
+      {
+        "name": "Audi TT 2.0 TFSI 8S (Deutschland, 2014)",
+        "val": 5.9
+      },
+      {
+        "name": "Audi TT RS 8S (Deutschland, 2016)",
+        "val": 3.7
+      },
+      {
+        "name": "Porsche Boxster 986 (Deutschland, 1996)",
+        "val": 6.9
+      },
+      {
+        "name": "Porsche Boxster S 986 (Deutschland, 2000)",
+        "val": 5.9
+      },
+      {
+        "name": "Porsche Boxster 981 (Deutschland, 2012)",
+        "val": 5.7
+      },
+      {
+        "name": "Porsche Boxster S 981 (Deutschland, 2012)",
+        "val": 5.1
+      },
+      {
+        "name": "Porsche Cayenne V6 9PA (Deutschland, 2002)",
+        "val": 9.1
+      },
+      {
+        "name": "Porsche Cayenne Turbo 9PA (Deutschland, 2002)",
+        "val": 5.6
+      },
+      {
+        "name": "Porsche Cayenne V6 9YA (Deutschland, 2017)",
+        "val": 6.2
+      },
+      {
+        "name": "Porsche Cayenne Turbo S E-Hybrid 9YA (Deutschland, 2019)",
+        "val": 3.8
+      },
+      {
+        "name": "Opel Manta B (Deutschland, 1975)",
+        "val": 13.5
+      },
+      {
+        "name": "Opel Manta B GT/E (Deutschland, 1975)",
+        "val": 10.5
+      },
+      {
+        "name": "Opel Calibra (Deutschland, 1990)",
+        "val": 10.8
+      },
+      {
+        "name": "Opel Calibra Turbo 4x4 (Deutschland, 1992)",
+        "val": 7.6
+      },
+      {
+        "name": "Ford Fiesta Mk1 (Deutschland, 1976)",
+        "val": 20.0
+      },
+      {
+        "name": "Ford Fiesta XR2 (Deutschland, 1981)",
+        "val": 9.8
+      },
+      {
+        "name": "Ford Fiesta Mk3 (Deutschland, 1989)",
+        "val": 16.0
+      },
+      {
+        "name": "Ford Fiesta XR2i 16V (Deutschland, 1992)",
+        "val": 8.3
+      },
+      {
+        "name": "Ford Fiesta Mk7 (Deutschland, 2008)",
+        "val": 16.8
+      },
+      {
+        "name": "Ford Fiesta ST Mk7 (Deutschland, 2013)",
+        "val": 6.9
+      },
+      {
+        "name": "Ford Focus Mk1 (Deutschland, 1998)",
+        "val": 13.0
+      },
+      {
+        "name": "Ford Focus RS Mk1 (Vereinigtes Königreich, 2002)",
+        "val": 6.5
+      },
+      {
+        "name": "Ford Focus Mk2 (Deutschland, 2004)",
+        "val": 13.3
+      },
+      {
+        "name": "Ford Focus ST Mk2 (Vereinigtes Königreich, 2005)",
+        "val": 6.8
+      },
+      {
+        "name": "Ford Focus Mk3 (Deutschland, 2011)",
+        "val": 10.5
+      },
+      {
+        "name": "Ford Capri Mk3 (Deutschland, 1978)",
+        "val": 13.5
+      },
+      {
+        "name": "Ford Capri 2.8 Injection (Vereinigtes Königreich, 1981)",
+        "val": 8.7
+      },
+      {
+        "name": "Ford Sierra (Deutschland, 1982)",
+        "val": 13.5
+      },
+      {
+        "name": "Volvo 244 (Schweden, 1974)",
+        "val": 13.5
+      },
+      {
+        "name": "Volvo 244 Turbo (Schweden, 1981)",
+        "val": 9.6
+      },
+      {
+        "name": "Volvo 850 (Schweden, 1991)",
+        "val": 10.6
+      },
+      {
+        "name": "Volvo V70 (Schweden, 1996)",
+        "val": 10.3
+      },
+      {
+        "name": "Volvo V70 R (Schweden, 1998)",
+        "val": 6.1
+      },
+      {
+        "name": "Volvo XC90 T5 Gen1 (Schweden, 2002)",
+        "val": 9.5
+      },
+      {
+        "name": "Volvo XC90 V8 Gen1 (Schweden, 2005)",
+        "val": 7.8
+      },
+      {
+        "name": "Volvo XC90 T5 Gen2 (Schweden, 2014)",
+        "val": 7.3
+      },
+      {
+        "name": "Volvo XC90 T8 Twin Engine Gen2 (Schweden, 2015)",
+        "val": 5.6
+      },
+      {
+        "name": "Saab 900 (Schweden, 1978)",
+        "val": 11.0
+      },
+      {
+        "name": "Saab 9-3 (Schweden, 1998)",
+        "val": 9.5
+      },
+      {
+        "name": "Smart Fortwo W453 (Deutschland, 2014)",
+        "val": 11.0
+      },
+      {
+        "name": "Smart Fortwo Brabus W453 (Deutschland, 2016)",
+        "val": 9.5
+      },
+      {
+        "name": "Mini Classic (Vereinigtes Königreich, 1959)",
+        "val": 27.0
+      },
+      {
+        "name": "BMW Mini One R50 (Vereinigtes Königreich, 2001)",
+        "val": 12.0
+      },
+      {
+        "name": "BMW Mini Cooper S R53 (Vereinigtes Königreich, 2002)",
+        "val": 7.4
+      },
+      {
+        "name": "BMW Mini One F56 (Vereinigtes Königreich, 2014)",
+        "val": 10.5
+      },
+      {
+        "name": "BMW Mini JCW F56 (Vereinigtes Königreich, 2015)",
+        "val": 6.3
       }
     ]
   },
@@ -5476,6 +6520,354 @@
       {
         "name": "Škoda Octavia IV RS (Tschechien, 2020)",
         "val": 1984
+      },
+      {
+        "name": "BMW 116i E87 (Deutschland, 2004)",
+        "val": 1596
+      },
+      {
+        "name": "BMW 130i E87 (Deutschland, 2005)",
+        "val": 2996
+      },
+      {
+        "name": "BMW 116i F20 (Deutschland, 2011)",
+        "val": 1598
+      },
+      {
+        "name": "BMW M135i F20 (Deutschland, 2012)",
+        "val": 2979
+      },
+      {
+        "name": "BMW 116i F40 (Deutschland, 2019)",
+        "val": 1499
+      },
+      {
+        "name": "BMW M135i xDrive F40 (Deutschland, 2019)",
+        "val": 1998
+      },
+      {
+        "name": "BMW 730i E32 (Deutschland, 1986)",
+        "val": 2986
+      },
+      {
+        "name": "BMW 750iL E32 (Deutschland, 1987)",
+        "val": 4988
+      },
+      {
+        "name": "BMW 728i E38 (Deutschland, 1994)",
+        "val": 2793
+      },
+      {
+        "name": "BMW 750iL E38 (Deutschland, 1994)",
+        "val": 4988
+      },
+      {
+        "name": "BMW 730i E65 (Deutschland, 2001)",
+        "val": 2996
+      },
+      {
+        "name": "BMW 760Li E65 (Deutschland, 2003)",
+        "val": 5972
+      },
+      {
+        "name": "BMW 730i G11 (Deutschland, 2015)",
+        "val": 1998
+      },
+      {
+        "name": "BMW M760Li G11 (Deutschland, 2016)",
+        "val": 6592
+      },
+      {
+        "name": "BMW X5 3.0i E53 (Deutschland, 1999)",
+        "val": 2979
+      },
+      {
+        "name": "BMW X5 4.6is E53 (Deutschland, 2002)",
+        "val": 4619
+      },
+      {
+        "name": "BMW X5 xDrive25d F15 (Deutschland, 2013)",
+        "val": 1995
+      },
+      {
+        "name": "BMW X5 M F85 (Deutschland, 2014)",
+        "val": 4395
+      },
+      {
+        "name": "Mercedes-Benz 280 S W126 (Deutschland, 1979)",
+        "val": 2746
+      },
+      {
+        "name": "Mercedes-Benz 560 SEL W126 (Deutschland, 1985)",
+        "val": 5547
+      },
+      {
+        "name": "Mercedes-Benz 300 SE W140 (Deutschland, 1991)",
+        "val": 2960
+      },
+      {
+        "name": "Mercedes-Benz S 600 W140 (Deutschland, 1992)",
+        "val": 5987
+      },
+      {
+        "name": "Mercedes-Benz S 350 W221 (Deutschland, 2005)",
+        "val": 3498
+      },
+      {
+        "name": "Mercedes-Benz S 65 AMG W221 (Deutschland, 2006)",
+        "val": 5980
+      },
+      {
+        "name": "Mercedes-Benz S 500 W223 (Deutschland, 2020)",
+        "val": 2999
+      },
+      {
+        "name": "Mercedes-Benz S 63 AMG W223 (Deutschland, 2021)",
+        "val": 3982
+      },
+      {
+        "name": "Mercedes-Benz A 140 W168 (Deutschland, 1997)",
+        "val": 1397
+      },
+      {
+        "name": "Mercedes-Benz A 210 Evo W168 (Deutschland, 2000)",
+        "val": 2084
+      },
+      {
+        "name": "Mercedes-Benz A 160 W176 (Deutschland, 2012)",
+        "val": 1595
+      },
+      {
+        "name": "Mercedes-Benz SL 300 R129 (Deutschland, 1989)",
+        "val": 2962
+      },
+      {
+        "name": "Mercedes-Benz SL 73 AMG R129 (Deutschland, 1999)",
+        "val": 7291
+      },
+      {
+        "name": "Mercedes-Benz G 300 W463 (Deutschland, 1989)",
+        "val": 2874
+      },
+      {
+        "name": "Mercedes-Benz G 500 W463 (Deutschland, 1998)",
+        "val": 4966
+      },
+      {
+        "name": "Audi A8 2.8 D2 (Deutschland, 1994)",
+        "val": 2771
+      },
+      {
+        "name": "Audi S8 D2 (Deutschland, 1996)",
+        "val": 4172
+      },
+      {
+        "name": "Audi A8 3.0 D3 (Deutschland, 2002)",
+        "val": 2976
+      },
+      {
+        "name": "Audi S8 D3 (Deutschland, 2006)",
+        "val": 5204
+      },
+      {
+        "name": "Audi A8 3.0 TFSI D4 (Deutschland, 2010)",
+        "val": 2995
+      },
+      {
+        "name": "Audi S8 D4 (Deutschland, 2012)",
+        "val": 3993
+      },
+      {
+        "name": "Audi TT 1.8 TFSI 8J (Deutschland, 2006)",
+        "val": 1798
+      },
+      {
+        "name": "Audi TTS 8J (Deutschland, 2008)",
+        "val": 1984
+      },
+      {
+        "name": "Audi TT 2.0 TFSI 8S (Deutschland, 2014)",
+        "val": 1984
+      },
+      {
+        "name": "Audi TT RS 8S (Deutschland, 2016)",
+        "val": 2480
+      },
+      {
+        "name": "Porsche Boxster 986 (Deutschland, 1996)",
+        "val": 2480
+      },
+      {
+        "name": "Porsche Boxster S 986 (Deutschland, 2000)",
+        "val": 3179
+      },
+      {
+        "name": "Porsche Boxster 981 (Deutschland, 2012)",
+        "val": 2706
+      },
+      {
+        "name": "Porsche Boxster S 981 (Deutschland, 2012)",
+        "val": 3436
+      },
+      {
+        "name": "Porsche Cayenne V6 9PA (Deutschland, 2002)",
+        "val": 3179
+      },
+      {
+        "name": "Porsche Cayenne Turbo 9PA (Deutschland, 2002)",
+        "val": 4511
+      },
+      {
+        "name": "Porsche Cayenne V6 9YA (Deutschland, 2017)",
+        "val": 2995
+      },
+      {
+        "name": "Porsche Cayenne Turbo S E-Hybrid 9YA (Deutschland, 2019)",
+        "val": 3996
+      },
+      {
+        "name": "Opel Manta B (Deutschland, 1975)",
+        "val": 1584
+      },
+      {
+        "name": "Opel Manta B GT/E (Deutschland, 1975)",
+        "val": 1979
+      },
+      {
+        "name": "Opel Calibra (Deutschland, 1990)",
+        "val": 1998
+      },
+      {
+        "name": "Opel Calibra Turbo 4x4 (Deutschland, 1992)",
+        "val": 1998
+      },
+      {
+        "name": "Ford Fiesta Mk1 (Deutschland, 1976)",
+        "val": 957
+      },
+      {
+        "name": "Ford Fiesta XR2 (Deutschland, 1981)",
+        "val": 1599
+      },
+      {
+        "name": "Ford Fiesta Mk3 (Deutschland, 1989)",
+        "val": 1118
+      },
+      {
+        "name": "Ford Fiesta XR2i 16V (Deutschland, 1992)",
+        "val": 1597
+      },
+      {
+        "name": "Ford Fiesta Mk7 (Deutschland, 2008)",
+        "val": 1242
+      },
+      {
+        "name": "Ford Fiesta ST Mk7 (Deutschland, 2013)",
+        "val": 1596
+      },
+      {
+        "name": "Ford Focus Mk1 (Deutschland, 1998)",
+        "val": 1388
+      },
+      {
+        "name": "Ford Focus RS Mk1 (Vereinigtes Königreich, 2002)",
+        "val": 1988
+      },
+      {
+        "name": "Ford Focus Mk2 (Deutschland, 2004)",
+        "val": 1388
+      },
+      {
+        "name": "Ford Focus ST Mk2 (Vereinigtes Königreich, 2005)",
+        "val": 2521
+      },
+      {
+        "name": "Ford Focus Mk3 (Deutschland, 2011)",
+        "val": 999
+      },
+      {
+        "name": "Ford Capri Mk3 (Deutschland, 1978)",
+        "val": 1593
+      },
+      {
+        "name": "Ford Capri 2.8 Injection (Vereinigtes Königreich, 1981)",
+        "val": 2792
+      },
+      {
+        "name": "Ford Sierra (Deutschland, 1982)",
+        "val": 1593
+      },
+      {
+        "name": "Volvo 244 (Schweden, 1974)",
+        "val": 1986
+      },
+      {
+        "name": "Volvo 244 Turbo (Schweden, 1981)",
+        "val": 1986
+      },
+      {
+        "name": "Volvo 850 (Schweden, 1991)",
+        "val": 2435
+      },
+      {
+        "name": "Volvo V70 (Schweden, 1996)",
+        "val": 1984
+      },
+      {
+        "name": "Volvo V70 R (Schweden, 1998)",
+        "val": 2319
+      },
+      {
+        "name": "Volvo XC90 T5 Gen1 (Schweden, 2002)",
+        "val": 2521
+      },
+      {
+        "name": "Volvo XC90 V8 Gen1 (Schweden, 2005)",
+        "val": 4414
+      },
+      {
+        "name": "Volvo XC90 T5 Gen2 (Schweden, 2014)",
+        "val": 1969
+      },
+      {
+        "name": "Volvo XC90 T8 Twin Engine Gen2 (Schweden, 2015)",
+        "val": 1969
+      },
+      {
+        "name": "Saab 900 (Schweden, 1978)",
+        "val": 1985
+      },
+      {
+        "name": "Saab 9-3 (Schweden, 1998)",
+        "val": 1985
+      },
+      {
+        "name": "Smart Fortwo W453 (Deutschland, 2014)",
+        "val": 999
+      },
+      {
+        "name": "Smart Fortwo Brabus W453 (Deutschland, 2016)",
+        "val": 898
+      },
+      {
+        "name": "Mini Classic (Vereinigtes Königreich, 1959)",
+        "val": 848
+      },
+      {
+        "name": "BMW Mini One R50 (Vereinigtes Königreich, 2001)",
+        "val": 1598
+      },
+      {
+        "name": "BMW Mini Cooper S R53 (Vereinigtes Königreich, 2002)",
+        "val": 1598
+      },
+      {
+        "name": "BMW Mini One F56 (Vereinigtes Königreich, 2014)",
+        "val": 1198
+      },
+      {
+        "name": "BMW Mini JCW F56 (Vereinigtes Königreich, 2015)",
+        "val": 1998
       }
     ]
   },
@@ -6858,6 +8250,354 @@
       {
         "name": "Škoda Octavia IV RS (Tschechien, 2020)",
         "val": 2020
+      },
+      {
+        "name": "BMW 116i E87 (Deutschland, 2004)",
+        "val": 2004
+      },
+      {
+        "name": "BMW 130i E87 (Deutschland, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "BMW 116i F20 (Deutschland, 2011)",
+        "val": 2011
+      },
+      {
+        "name": "BMW M135i F20 (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "BMW 116i F40 (Deutschland, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "BMW M135i xDrive F40 (Deutschland, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "BMW 730i E32 (Deutschland, 1986)",
+        "val": 1986
+      },
+      {
+        "name": "BMW 750iL E32 (Deutschland, 1987)",
+        "val": 1987
+      },
+      {
+        "name": "BMW 728i E38 (Deutschland, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "BMW 750iL E38 (Deutschland, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "BMW 730i E65 (Deutschland, 2001)",
+        "val": 2001
+      },
+      {
+        "name": "BMW 760Li E65 (Deutschland, 2003)",
+        "val": 2003
+      },
+      {
+        "name": "BMW 730i G11 (Deutschland, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "BMW M760Li G11 (Deutschland, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "BMW X5 3.0i E53 (Deutschland, 1999)",
+        "val": 1999
+      },
+      {
+        "name": "BMW X5 4.6is E53 (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "BMW X5 xDrive25d F15 (Deutschland, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "BMW X5 M F85 (Deutschland, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "Mercedes-Benz 280 S W126 (Deutschland, 1979)",
+        "val": 1979
+      },
+      {
+        "name": "Mercedes-Benz 560 SEL W126 (Deutschland, 1985)",
+        "val": 1985
+      },
+      {
+        "name": "Mercedes-Benz 300 SE W140 (Deutschland, 1991)",
+        "val": 1991
+      },
+      {
+        "name": "Mercedes-Benz S 600 W140 (Deutschland, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Mercedes-Benz S 350 W221 (Deutschland, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Mercedes-Benz S 65 AMG W221 (Deutschland, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Mercedes-Benz S 500 W223 (Deutschland, 2020)",
+        "val": 2020
+      },
+      {
+        "name": "Mercedes-Benz S 63 AMG W223 (Deutschland, 2021)",
+        "val": 2021
+      },
+      {
+        "name": "Mercedes-Benz A 140 W168 (Deutschland, 1997)",
+        "val": 1997
+      },
+      {
+        "name": "Mercedes-Benz A 210 Evo W168 (Deutschland, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Mercedes-Benz A 160 W176 (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Mercedes-Benz SL 300 R129 (Deutschland, 1989)",
+        "val": 1989
+      },
+      {
+        "name": "Mercedes-Benz SL 73 AMG R129 (Deutschland, 1999)",
+        "val": 1999
+      },
+      {
+        "name": "Mercedes-Benz G 300 W463 (Deutschland, 1989)",
+        "val": 1989
+      },
+      {
+        "name": "Mercedes-Benz G 500 W463 (Deutschland, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Audi A8 2.8 D2 (Deutschland, 1994)",
+        "val": 1994
+      },
+      {
+        "name": "Audi S8 D2 (Deutschland, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "Audi A8 3.0 D3 (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Audi S8 D3 (Deutschland, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Audi A8 3.0 TFSI D4 (Deutschland, 2010)",
+        "val": 2010
+      },
+      {
+        "name": "Audi S8 D4 (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Audi TT 1.8 TFSI 8J (Deutschland, 2006)",
+        "val": 2006
+      },
+      {
+        "name": "Audi TTS 8J (Deutschland, 2008)",
+        "val": 2008
+      },
+      {
+        "name": "Audi TT 2.0 TFSI 8S (Deutschland, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "Audi TT RS 8S (Deutschland, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "Porsche Boxster 986 (Deutschland, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "Porsche Boxster S 986 (Deutschland, 2000)",
+        "val": 2000
+      },
+      {
+        "name": "Porsche Boxster 981 (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Porsche Boxster S 981 (Deutschland, 2012)",
+        "val": 2012
+      },
+      {
+        "name": "Porsche Cayenne V6 9PA (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Porsche Cayenne Turbo 9PA (Deutschland, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Porsche Cayenne V6 9YA (Deutschland, 2017)",
+        "val": 2017
+      },
+      {
+        "name": "Porsche Cayenne Turbo S E-Hybrid 9YA (Deutschland, 2019)",
+        "val": 2019
+      },
+      {
+        "name": "Opel Manta B (Deutschland, 1975)",
+        "val": 1975
+      },
+      {
+        "name": "Opel Manta B GT/E (Deutschland, 1975)",
+        "val": 1975
+      },
+      {
+        "name": "Opel Calibra (Deutschland, 1990)",
+        "val": 1990
+      },
+      {
+        "name": "Opel Calibra Turbo 4x4 (Deutschland, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Ford Fiesta Mk1 (Deutschland, 1976)",
+        "val": 1976
+      },
+      {
+        "name": "Ford Fiesta XR2 (Deutschland, 1981)",
+        "val": 1981
+      },
+      {
+        "name": "Ford Fiesta Mk3 (Deutschland, 1989)",
+        "val": 1989
+      },
+      {
+        "name": "Ford Fiesta XR2i 16V (Deutschland, 1992)",
+        "val": 1992
+      },
+      {
+        "name": "Ford Fiesta Mk7 (Deutschland, 2008)",
+        "val": 2008
+      },
+      {
+        "name": "Ford Fiesta ST Mk7 (Deutschland, 2013)",
+        "val": 2013
+      },
+      {
+        "name": "Ford Focus Mk1 (Deutschland, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Ford Focus RS Mk1 (Vereinigtes Königreich, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Ford Focus Mk2 (Deutschland, 2004)",
+        "val": 2004
+      },
+      {
+        "name": "Ford Focus ST Mk2 (Vereinigtes Königreich, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Ford Focus Mk3 (Deutschland, 2011)",
+        "val": 2011
+      },
+      {
+        "name": "Ford Capri Mk3 (Deutschland, 1978)",
+        "val": 1978
+      },
+      {
+        "name": "Ford Capri 2.8 Injection (Vereinigtes Königreich, 1981)",
+        "val": 1981
+      },
+      {
+        "name": "Ford Sierra (Deutschland, 1982)",
+        "val": 1982
+      },
+      {
+        "name": "Volvo 244 (Schweden, 1974)",
+        "val": 1974
+      },
+      {
+        "name": "Volvo 244 Turbo (Schweden, 1981)",
+        "val": 1981
+      },
+      {
+        "name": "Volvo 850 (Schweden, 1991)",
+        "val": 1991
+      },
+      {
+        "name": "Volvo V70 (Schweden, 1996)",
+        "val": 1996
+      },
+      {
+        "name": "Volvo V70 R (Schweden, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Volvo XC90 T5 Gen1 (Schweden, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "Volvo XC90 V8 Gen1 (Schweden, 2005)",
+        "val": 2005
+      },
+      {
+        "name": "Volvo XC90 T5 Gen2 (Schweden, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "Volvo XC90 T8 Twin Engine Gen2 (Schweden, 2015)",
+        "val": 2015
+      },
+      {
+        "name": "Saab 900 (Schweden, 1978)",
+        "val": 1978
+      },
+      {
+        "name": "Saab 9-3 (Schweden, 1998)",
+        "val": 1998
+      },
+      {
+        "name": "Smart Fortwo W453 (Deutschland, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "Smart Fortwo Brabus W453 (Deutschland, 2016)",
+        "val": 2016
+      },
+      {
+        "name": "Mini Classic (Vereinigtes Königreich, 1959)",
+        "val": 1959
+      },
+      {
+        "name": "BMW Mini One R50 (Vereinigtes Königreich, 2001)",
+        "val": 2001
+      },
+      {
+        "name": "BMW Mini Cooper S R53 (Vereinigtes Königreich, 2002)",
+        "val": 2002
+      },
+      {
+        "name": "BMW Mini One F56 (Vereinigtes Königreich, 2014)",
+        "val": 2014
+      },
+      {
+        "name": "BMW Mini JCW F56 (Vereinigtes Königreich, 2015)",
+        "val": 2015
       }
     ]
   }

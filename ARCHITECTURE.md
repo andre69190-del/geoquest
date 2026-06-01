@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 342 (Stand: Juni 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 4.96 MB | 721 Spielmodi | verify: 138/138
+**Version:** Phase 343 (Stand: Juni 2026)
+**Build:** gen.py → 1.29 MB | GeoQuest.html → 5.00 MB | 721 Spielmodi | verify: 138/138
 
 ---
 
@@ -1099,6 +1099,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **340** | patches/patch_340_mercedes_suv_kombi.py | **Mercedes-Kategorie-Ergänzung: G 63 AMG (SUV) + E 63 AMG T-Modell (Kombi) — alle 6 MB-Kategorien jetzt repräsentiert (gesamt 11 Mercedes)** |
 | **341** | patches/patch_341_mercedes_complete.py | **Mercedes-Vollständigkeit: B 250 Sport, CLA 45 AMG, CLS 63 AMG, GLC 63 S, GLE 63 S, GLS 63 AMG (6 Modelle) — alle Hauptbaureihen komplett** |
 | **342** | patches/patch_342_data_completion.py | **Data Completion Sprint: Golf/Polo/Passat B1-B8, Corsa/Astra/Vectra, BMW 3er/5er, MB C/E-Klasse, Audi A3/A4, Peugeot/Renault, Fiat/Alfa, Škoda Octavia I-IV — 50 Jahre EU-Auto-Historie** |
+| **343** | patches/patch_343_data_completion_c.py | **Data Completion Sprint 330c: BMW 1er/7er/X5, MB S/A/SL/G-Klasse, Audi A8/TT, Porsche Boxster/Cayenne, Opel Manta/Calibra, Ford Fiesta/Focus/Capri/Sierra, Volvo 240/V70/XC90, Saab, Smart W453, Mini** |
 
 ---
 

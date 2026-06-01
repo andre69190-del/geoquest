@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 342. Data Completion Sprint: Golf/Polo/Passat B1-B8, Corsa/Astra/Vectra, BMW 3er/5er, MB C/E-Klasse, Audi A3/A4, Peugeot/Renault, Fiat/Alfa, Škoda Octavia I-IV — 50 Jahre EU-Auto-Historie. verify: 139/139."
+git commit -m "Content: Phase 343. Data Completion Sprint 330c: BMW 1er/7er/X5, MB S/A/SL/G-Klasse, Audi A8/TT, Porsche Boxster/Cayenne, Opel Manta/Calibra, Ford Fiesta/Focus/Capri/Sierra, Volvo 240/V70/XC90, Saab, Smart W453, Mini. verify: 139/139."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
