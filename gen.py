@@ -54,7 +54,9 @@ with open(os.path.join(os.path.dirname(__file__), 'data/sport_match.json'), 'r',
 with open(os.path.join(os.path.dirname(__file__), 'data/sport_ws.json'),    'r', encoding='utf-8') as _f: SPORT_WS_J    = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/timeline.json'),   'r', encoding='utf-8') as _f: TIMELINE_J    = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/autos.json'),       'r', encoding='utf-8') as _f: AUTOS_J       = _f.read()
-with open(os.path.join(os.path.dirname(__file__), 'data/autos_extended.json'), 'r', encoding='utf-8') as _f: AUTOS_EXT_J  = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/autos_extended.json'), 'r', encoding='utf-8') as _f:
+    import json as _ejson
+    AUTOS_EXT_J  = _ejson.dumps(_ejson.load(_f), ensure_ascii=False, separators=(',',':'))
 
 
 # â”€â”€ STATIC DATA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -2975,6 +2977,7 @@ const MODES=[
     {id:"hl_auto_ps_kg",    icon:"\u{1F3CB}\uFE0F",title:"Auto-Quartett: Leistungsgewicht",group:"autos",prompt:"Welches hat das bessere Leistungsgewicht (PS/kg)?",desc:"PS dividiert durch Leergewicht \u2014 berechnet",             prompt_en:"Which car has a better power-to-weight ratio?"},
     {id:"hl_auto_co2",      icon:"\u{1F333}\u{1F4A8}",title:"Auto-Quartett: CO\u2082-Aussto\u00df",group:"autos",prompt:"Welches Fahrzeug st\u00f6\u00dft mehr CO\u2082 aus?",desc:"Approximiert aus Kraftstoffverbrauch (nur Verbrenner)",  prompt_en:"Which combustion car emits more CO\u2082?"},
     {id:"auto_match_dekade",icon:"\u{1F5C3}\uFE0F",title:"Auto-Quiz: Jahrzehnt",        group:"autos",prompt:"Aus welchem Jahrzehnt stammt dieses Fahrzeug?",    desc:"50er / 60er / 70er / … bis 2020er",                          prompt_en:"From which decade does this car originate?"},
+    {id:"auto_generationen_match",icon:"\u{1F9EC}\u{1F697}",title:"Modell-Generationen-Match",group:"autos",prompt:"Wann erschien dieses Modell der Modellreihe?",desc:"Distraktor-Optionen sind echte andere Generationen \u2014 21 Modellreihen erkannt",prompt_en:"When did this generation of the model line appear?"},
 
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
     {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
@@ -3644,7 +3647,7 @@ const MODE_CATS={
     "ws_sportwissen_fussball","ws_sportwissen_olympiade","ws_sportwissen_weltmeister",
     "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist","timeline_sport_stadien"
   ],cost:0},
-  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj","hl_auto_gewicht","hl_auto_drehmoment","hl_auto_cw","hl_auto_kofferraum","hl_auto_laenge","hl_auto_neupreis","hl_auto_tank","hl_auto_akku","hl_auto_reichweite","hl_auto_verbrauch_l","hl_auto_verbrauch_e","hl_auto_zylinder","auto_match_antrieb","auto_match_karosserie","auto_match_antriebsart","auto_match_motorbauart","auto_match_konzern","auto_match_getriebe","auto_match_turbo","auto_match_sitze","auto_baujahr_mc","auto_match_land","hl_auto_ps_kg","hl_auto_co2","auto_match_dekade"],cost:0},
+  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj","hl_auto_gewicht","hl_auto_drehmoment","hl_auto_cw","hl_auto_kofferraum","hl_auto_laenge","hl_auto_neupreis","hl_auto_tank","hl_auto_akku","hl_auto_reichweite","hl_auto_verbrauch_l","hl_auto_verbrauch_e","hl_auto_zylinder","auto_match_antrieb","auto_match_karosserie","auto_match_antriebsart","auto_match_motorbauart","auto_match_konzern","auto_match_getriebe","auto_match_turbo","auto_match_sitze","auto_baujahr_mc","auto_match_land","hl_auto_ps_kg","hl_auto_co2","auto_match_dekade","auto_generationen_match"],cost:0},
 };
 
 /* === Phase 227 Part 3: Tier-Wort-Schmiede (10 Tiere, words verified letter-by-letter) === */
@@ -8776,6 +8779,79 @@ var genSportWissenMatchQ=_mkMatchQ(SPORT_MATCH_DATA);
 var initSportWissenWS=_mkWS(SPORT_WS_DATA,"SportW");
 /* === Phase 329: Auto-Quartett-Generator === */
 var genAutosHL=_mkHL(AUTOS_DATA);
+/* Phase 353: Generationen-Match — Distraktor-Optionen aus derselben Modellreihe */
+function genAutoGenerationenMatch(){
+  var _bj=AUTOS_DATA["auto_bj"]&&AUTOS_DATA["auto_bj"].items;
+  if(!_bj||_bj.length<8)return null;
+
+  /* Extrahiere Modell-Familie aus vollem Fahrzeugnamen */
+  function getFamily(name){
+    var BRANDS=/^(VW|Golf|BMW|Mercedes-Benz|Mercedes|Opel|Audi|Ford|Renault|Peugeot|Fiat|Alfa Romeo|Volvo|Saab|Porsche|Toyota|Honda|Nissan|Mazda|Subaru|\u0160koda|SEAT|Seat|Smart|Cupra|Lancia|Citro\u00EBn|Alpine)\s+/;
+    var SPECS=/\s+(GTI|RS\d*|AMG|OPC|Turbo\b|16V|Aero|Clubsport|Competition|Trophy[\w-]*|Williams|R32|VR6|Cosworth|SRT|Hellcat|GSi|GTA|Quattro)\b.*$/;
+    var GEN=/\s+([EFG]\d{2,}|[0-9][A-Z][A-Z0-9]*|[BD]\d+|Mk\d+|Gen\d+|9[PY]A|98[01]|[IVX]{1,4}|W\d{3}|R\d{3}|[A-K])$/;
+    var n=name.replace(/\s*\([^)]+\)\s*$/,"").trim();
+    n=n.replace(SPECS,"").trim();
+    n=n.replace(GEN,"").trim();
+    n=n.replace(/\s+\d+$/,"").trim();
+    n=n.replace(BRANDS,"").trim();
+    return n;
+  }
+
+  /* Baue Familien-Map: Familie → [{name, val}] */
+  var families={};
+  _bj.forEach(function(item){
+    var fam=getFamily(item.name);
+    if(fam.length<3)return;
+    if(!families[fam])families[fam]=[];
+    families[fam].push(item);
+  });
+
+  /* Filtere Familien mit ≥3 verschiedenen Jahren */
+  var validFams=Object.keys(families).filter(function(f){
+    var years=new Set(families[f].map(function(m){return m.val;}));
+    return years.size>=3;
+  });
+  if(!validFams.length)return null;
+
+  /* Wähle zufällige Familie */
+  var fam=validFams[~~(rng()*validFams.length)];
+  /* Dedupliziere nach Jahr (behalte erste Nennung) */
+  var seen=new Set();
+  var members=families[fam].filter(function(m){
+    if(seen.has(m.val))return false;
+    seen.add(m.val);
+    return true;
+  }).sort(function(a,b){return a.val-b.val;});
+
+  if(members.length<3)return null;
+
+  /* Wähle zufälliges Mitglied als Frage */
+  var qIdx=~~(rng()*members.length);
+  var correct=members[qIdx];
+
+  /* Distraktor-Optionen = andere Generationen derselben Familie */
+  var others=members.filter(function(m,i){return i!==qIdx;});
+  for(var j=others.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=others[j];others[j]=others[k];others[k]=t;}
+  var distraktoren=others.slice(0,3).map(function(m){return m.val;});
+
+  /* Auffüllen mit zufälligen nahen Jahren wenn nötig */
+  var tries=0;
+  while(distraktoren.length<3&&tries++<30){
+    var ry=_bj[~~(rng()*_bj.length)].val;
+    if(ry!==correct.val&&distraktoren.indexOf(ry)===-1)distraktoren.push(ry);
+  }
+  if(distraktoren.length<3)return null;
+
+  var opts=[correct.val].concat(distraktoren);
+  for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
+
+  var subj=correct.name.replace(/\s*\([^)]+\)\s*$/,"");
+  return{type:"uk_match",
+    prompt:"Wann erschien dieses Modell der "+fam+"-Reihe?",
+    subj:subj,ans:String(correct.val),opts:opts.map(String),
+    lid:"agen_"+fam.replace(/\W/g,"_")+"_"+qIdx,cc:"de"};
+}
+
 /* Phase 352c: Kreative Auto-Modi */
 
 /* auto_baujahr_mc — Baujahr Multiple Choice: 4 Jahreszahlen zur Auswahl */
@@ -9947,6 +10023,7 @@ const GEN={
   hl_auto_ps_kg:()=>genAutoPsKg(),
   hl_auto_co2:()=>genAutoCO2(),
   auto_match_dekade:()=>genAutoMatchDekade(),
+  auto_generationen_match:()=>genAutoGenerationenMatch(),
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),
