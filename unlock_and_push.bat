@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 406. Phase 406: Bugfixes — Spoiler genGamesPinQ, games_match_kategorie immer null (fixedPool 3->4), catLabels games, hl_games_dev_lat Syntax; JS 143/143. verify: 143/143."
+git commit -m "Content: Phase 407. generate_spieluebersicht: Datenbasis-Badges fuer Gaming (70 Spiele) + Auto-Extended (431) + genAutosHL korrekt; Dispatch-Regex 4 neue Muster; 0 von 774 Modi ohne Badge. verify: 143/143."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

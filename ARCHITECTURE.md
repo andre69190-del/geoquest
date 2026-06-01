@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 406 (Stand: Juni 2026)
+**Version:** Phase 407 (Stand: Juni 2026)
 **Build:** gen.py → 1.49 MB | GeoQuest.html → 5.25 MB | 774 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
@@ -1111,6 +1111,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **404** | patch_404.py | **Phase 403 Audit-Polish (JSON try/except, Prototype-Guard) + Phase 404: Modi esports+pegi, i18n +4, Backup-Policy 2-Backup-Regel** |
 | **405** | patch_405.py | **Batch 3: 20 Indie/Klassiker-Spiele + peak_year + publisher_lat/lng + 3 neue Modi (peak_year_mc, hl_peak_year, hl_publisher_lat) + validate_content Indie-Enum** |
 | **406** | patch_406.py | **Phase 406: Bugfixes — Spoiler genGamesPinQ, games_match_kategorie immer null (fixedPool 3->4), catLabels games, hl_games_dev_lat Syntax; JS 143/143** |
+| **407** | patch_407.py | **generate_spieluebersicht: Datenbasis-Badges fuer Gaming (70 Spiele) + Auto-Extended (431) + genAutosHL korrekt; Dispatch-Regex 4 neue Muster; 0 von 774 Modi ohne Badge** |
 
 ---
 

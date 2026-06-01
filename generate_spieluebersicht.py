@@ -142,14 +142,25 @@ def _parse_sport_poi(src):
 
 def _parse_gen_dispatch(src):
     d = {}
-    # Zero-arg dispatches: id:()=>fn()
+    # Zero-arg: id:()=>fn()
     for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*(\w+)\s*\(\s*\)', src):
         if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': ''}
-    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*(\w+)\s*\(\s*["\'\']([^"\'\']*)["\'\'\']\s*\)', src):
+    # One string arg: id:()=>fn("key")
+    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*(\w+)\s*\(\s*"([^"]*)"\s*\)', src):
         d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
-    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*\{\s*(\w+)\s*\(\s*["\'\']([^"\'\']*)["\'\'\']\s*\)', src):
+    # One string arg + object: id:()=>fn("key",{...}) — e.g. genAutosHLExt/genGamesHLExt
+    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*(\w+)\s*\(\s*"([^"]*)"\s*,\s*\{', src):
         if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
-    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*\{\s*(\w+)\s*\(\s*["\'\']([^"\'\']*)["\'\'\'],', src):
+    # Two string args: id:()=>fn("key","prompt",...) -- e.g. genAutosMatchExt
+    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*(\w+)\s*\(\s*"([^"]*)"\s*,\s*"', src):
+        if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
+    # One string arg + _tc() + opts: id:()=>fn("key",_tc("..."),...)
+    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*(\w+)\s*\(\s*"([^"]*)"\s*,\s*_tc\(', src):
+        if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
+    # Block arrow with string: id:()=>{fn("key"
+    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*\{\s*(\w+)\s*\(\s*"([^"]*)"\s*\)', src):
+        if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
+    for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*\{\s*(\w+)\s*\(\s*"([^"]*)"[,\s]', src):
         if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
     return d
 
@@ -165,7 +176,34 @@ def _get_count(mid, dispatch, store, sport_poi):
         print(f'WARNING: No data count for mode \'{mid}\' (no dispatch)')
         return '—', 0
     fn, key = disp['fn'], disp['key']
-    # Zero-arg special cases
+    # ── Gaming-Generatoren (games_extended.json — flaches Dict) ──────────────
+    _GAMES_FNS = {
+        'genGamesHLExt','genGamesMatchExt','genGamesPinQ',
+        'genGamesBaujahrMC','genGamesEsportsQ','genGamesF2PQ',
+        'genGamesPeakYearMC',
+    }
+    if fn in _GAMES_FNS:
+        n = len(store.get('games_extended', {}))
+        return f'{n} Spiele', n
+    # ── Auto-Extended-Generatoren (autos_extended.json — flaches Dict) ───────
+    _AUTOS_EXT_FNS = {
+        'genAutosHLExt','genAutosMatchExt','genAutoPsKg','genAutoCO2',
+        'genAutoMatchDekade','genAutoMatchLand','genAutoBaujahrMC',
+        'genAutoGenerationenMatch',
+    }
+    if fn in _AUTOS_EXT_FNS:
+        n = len(store.get('autos_extended', {}))
+        return f'{n} Fahrzeuge', n
+    # ── genAutosHL — nutzt autos.json HL-Arrays (auto_ps, auto_bj, etc.) ─────
+    if fn == 'genAutosHL':
+        autos_data = store.get('autos', {})
+        items = autos_data.get(key, {}).get('items', []) if isinstance(autos_data.get(key), dict) else []
+        n = len(items)
+        if n: return f'{n} Fahrzeuge', n
+        # Fallback: Gesamtzahl aus auto_bj
+        n2 = len(autos_data.get('auto_bj', {}).get('items', []))
+        return (f'{n2} Fahrzeuge', n2) if n2 else ('431 Fahrzeuge', 431)
+    # ── Zero-arg special cases ────────────────────────────────────────────────
     if fn == 'genDS100McQ': return '50 DS100-Kürzel', 50
     if fn == 'genDS100InputQ': return '50 DS100-Kürzel (Input)', 50
     if fn == 'genUICInputQ': return '57 UIC-Ländercodes', 57
@@ -415,42 +453,16 @@ def generate(phase=269, n_tests=90):
     H.append(f'<div class="cats" id="cats">\n{cats_html}\n</div>')
     H.append(f'<div class="legend">\n  {legend_html}\n</div>')
     H.append('<div class="tbl"><table id="tbl"><thead><tr>')
-    H.append('<th class="n">#</th><th class="mid">Modus-ID</th>')
-    H.append('<th class="ttl">Titel &amp; Beschreibung</th>')
-    H.append('<th class="db">Typ</th><th class="dc" style="text-align:right">Datenbasis (Items)</th>')
-    H.append(f'</tr></thead><tbody>\n{tbody}\n</tbody></table></div>')
-    H.append(f'<footer>Auto-generiert aus gen.py · Phase {phase} · {total_modes} Modi in {len(group_order)} Kategorien</footer>')
-    js = ('var all=document.querySelectorAll(".mr,.gh");'
-          'function filt(){var q=document.getElementById("q").value.toLowerCase();'
-          'all.forEach(function(r){if(r.classList.contains("gh"))return;'
-          'r.classList.toggle("hidden",!!q&&!r.textContent.toLowerCase().includes(q));});'
-          'document.querySelectorAll(".gh").forEach(function(h){'
-          'var g=h.getAttribute("data-group"),any=false;'
-          'document.querySelectorAll(".mr[data-group=\""+g+"\"]").forEach(function(r){if(!r.classList.contains("hidden"))any=true;});'
-          'h.classList.toggle("hidden",!any);});}'
-          'function clr(){document.getElementById("q").value="";filt();fg(null);}'
-          'function fg(g){document.querySelectorAll(".sc").forEach(function(b){'
-          'b.classList.toggle("on",b.getAttribute("data-group")===g);});'
-          'all.forEach(function(r){r.classList.toggle("hidden",!!g&&r.getAttribute("data-group")!==g);});}')
-    H.append(f'<script>{js}</script></body></html>')
-    html = '\n'.join(H)
+    H.append('<th class="n">#</th><th class="mid">Modus-ID</th><th class="cat">Kategorie</th><th class="title">Titel</th><th class="cnt">Datenbasis</th><th class="badge">Badge</th></tr></thead><tbody>')
+    for row_num,(row_html) in enumerate(rows,1):
+        H.append(row_html)
+    H.append('</tbody></table></div>')
+    H.append('<footer>GeoQuest Spielübersicht &mdash; auto-generiert aus gen.py</footer></body></html>')
+    html=''.join(H)
     with open(OUT,'w',encoding='utf-8') as f:
         f.write(html)
-    return total_modes
+    return len(modes)
 
-
-if __name__ == '__main__':
-    # Phase aus ARCHITECTURE.md lesen
-    import re as _re, os as _os
-    _phase = 310
-    _arch = _os.path.join(_os.path.dirname(__file__), 'ARCHITECTURE.md')
-    try:
-        with open(_arch, encoding='utf-8') as _f:
-            _m = _re.search(r'Phase\s+(\d+)', _f.read())
-            if _m:
-                _phase = int(_m.group(1))
-    except Exception:
-        pass
-    n = generate(phase=_phase)
-    print(f'✓ GeoQuest_Spielübersicht.html generiert — {n} Modi (Phase {_phase})')
-   
+if __name__=='__main__':
+    n=generate()
+    print(f'Written: {OUT} ({n} Modi)')
