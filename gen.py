@@ -10750,7 +10750,7 @@ function lq(){
   window._mapZoom=null; /* Phase 226: reset map zoom on every new question */
   if(\!S.queueExtra)S.queueExtra=[];
   if(\!S.askedLids)S.askedLids=new Set();
-  const _mCfg=(typeof GAME_MODES!=="undefined"?GAME_MODES:[]).find(m=>m.id===S.mode);const dur=S.diff==="blitz"?(S.blitzTimeLeft>0?S.blitzTimeLeft:60):S.diff==="survival"?8:(_mCfg&&_mCfg.time)||12;
+  const _mCfg=(typeof MODES!=="undefined"?MODES:[]).find(m=>m.id===S.mode);const dur=S.diff==="blitz"?(S.blitzTimeLeft>0?S.blitzTimeLeft:60):S.diff==="survival"?8:(_mCfg&&_mCfg.time)||12;
   /* Try up to 25 times to get a question whose lid hasn't appeared this round */
   let q=null,_att=0;
   while(_att<25){
@@ -11179,7 +11179,7 @@ window.genZugReisezeitHL=genZugReisezeitHL;
     return;
   }
   clr();
-  const ok=a===S.q.ans;
+  const ok=(S.q&&S.q.type==="timeline")?!!a:(a===S.q.ans);
   S.sel=a||"__t";S.ok=ok;
   if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:ok});
   let pts=0;
@@ -12777,8 +12777,8 @@ if(mode==="slf"&&S.ph==="playing"){
       ?q._tlUserOrder.map(function(n){var f=null;for(var _j=0;_j<q.items.length;_j++){if(q.items[_j].n===n){f=q.items[_j];break;}}return f||{n:n,year:'?',hint:''};}) 
       :q.items;
     var _tlTilesHtml=_tlShowItems.map(function(it,_i){
-      var bg=sel!==null&&q._tlUserOrder?(q._tlUserOrder[_i]===q.ans[_i]?'#d1fae5':'#fee2e2'):'var(--bg2)';
-      var brd=sel!==null&&q._tlUserOrder?(q._tlUserOrder[_i]===q.ans[_i]?'2px solid #10b981':'2px solid #ef4444'):'2px solid var(--border)';
+      var _tlFb=sel!==null&&q._tlUserOrder&&S.ph==="feedback";var bg=_tlFb?(q._tlUserOrder[_i]===q.ans[_i]?'#d1fae5':'#fee2e2'):'var(--bg2)';
+      var brd=_tlFb?(q._tlUserOrder[_i]===q.ans[_i]?'2px solid #10b981':'2px solid #ef4444'):'2px solid var(--border)';
       var esc_n=esc(it.n);
       var raw_n=it.n.replace(/"/g,'&quot;').replace(/'/g,'&#39;');
       var drag_attr=sel===null?'draggable="true"':'' ;
@@ -12786,7 +12786,7 @@ if(mode==="slf"&&S.ph==="playing"){
         ?'ondragstart="_tlDragStart(this)" ondragover="_tlDragOver(event)" ondrop="_tlDrop(event,this)" ontouchstart="_tlTouchStart(event,this)" ontouchmove="_tlTouchMove(event)" ontouchend="_tlTouchEnd(event)"'
         :'';
       var icon_part=sel===null?'<span style="font-size:1.1rem;opacity:.4;flex-shrink:0">\u2630</span>'
-        :(q._tlUserOrder&&q._tlUserOrder[_i]===q.ans[_i]?'<span style="color:#10b981;font-weight:700;flex-shrink:0">\u2713</span>':'<span style="color:#ef4444;font-weight:700;flex-shrink:0">\u2717</span>');
+        :(_tlFb&&q._tlUserOrder[_i]===q.ans[_i]?'<span style="color:#10b981;font-weight:700;flex-shrink:0">\u2713</span>':'<span style="color:#ef4444;font-weight:700;flex-shrink:0">\u2717</span>');
       var year_part=sel!==null&&it.year?'<span style="font-size:.73rem;color:var(--text3);margin-left:6px">('+it.year+')</span>':'' ;
       var hint_part=sel!==null&&it.hint?'<br><span style="font-size:.7rem;color:var(--text3);font-style:italic">'+esc(it.hint)+'</span>':'' ;
       return '<div class="tl-tile" data-tn="'+raw_n+'" '+drag_attr+' '+drag_evts
