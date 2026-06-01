@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 360 (Stand: Juni 2026)
-**Build:** gen.py → 1.35 MB | GeoQuest.html → 5.23 MB | 765 Spielmodi | verify: 141/141 | data: 44 JSON
+**Version:** Phase 402 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.23 MB | 769 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 765 Modi, 765/765/765 — perfekte Konsistenz.
+**Aktueller Stand:** 769 Modi, 769/769/769 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -1106,6 +1106,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **353** | patches/patch_353_gen_match.py | **Generationen-Match: 21 Modellreihen (Golf/M3/Clio/Corsa/…) — Distraktor-Optionen = echte andere Generationen derselben Baureihe. JSON-Komprimierung: -60 KB (AUTOS_EXT_J compact)** |
 | **354** | patches/patch_354_feedback_delay.py | **UX: Feedback-Anzeigedauer +1,5 s — Einzel: 1900→3400 ms, IATA: 2800→4300 ms, startNextRound: 1500→3000 ms (5×). Multiplayer (5500 ms) unverändert.** |
 | **360** | patches/patch_360_games_engine.py | **Gaming-Kategorie: 50 Spiele (30 Modern/Mobile + 20 Klassiker), 13 Modi (games_pin, genre/land/adaption-Match, H/L release/vk/metacritic/usk, Baujahr-MC). Bridge: dev_lat/dev_lng → echter GeoQuest-Pin-Modus.** |
+| **402** | patch_402.py | **Phase 401/402: Audit-Fixes (XSS, Zero-Trap, Sort, ES5) + 4 neue Gaming-Modi + games_extended Validator** |
 
 ---
 

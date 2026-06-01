@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 360. Gaming-Kategorie: 50 Spiele (30 Modern/Mobile + 20 Klassiker), 13 Modi (games_pin, genre/land/adaption-Match, H/L release/vk/metacritic/usk, Baujahr-MC). Bridge: dev_lat/dev_lng → echter GeoQuest-Pin-Modus.. verify: 141/141."
+git commit -m "Content: Phase 402. Phase 401/402: Audit-Fixes (XSS, Zero-Trap, Sort, ES5) + 4 neue Gaming-Modi + games_extended Validator. verify: 143/143."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.

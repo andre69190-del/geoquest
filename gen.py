@@ -2993,6 +2993,10 @@ const MODES=[
     {id:"hl_games_usk",       icon:"\u{1F51E}",title:"Game-Quartett: Altersfreigabe USK", group:"games",prompt:"Welches Spiel hat eine h\u00f6here USK-Freigabe?",              desc:"USK 0 / 6 / 12 / 16 / 18",                                   prompt_en:"Which game has a higher USK age rating?"},
     {id:"hl_games_sequel",    icon:"\u{1F522}",title:"Game-Quartett: Teile-Anzahl",       group:"games",prompt:"Welche Spielserie hat mehr direkte Nachfolger?",                  desc:"Anzahl direkter Hauptteile nach diesem Spiel",               prompt_en:"Which game franchise has more sequels?"},
     {id:"games_baujahr_mc",   icon:"\u{1F5D3}\uFE0F\u2753",title:"Gaming: Erscheinungsjahr raten",group:"games",prompt:"In welchem Jahr erschien dieses Spiel erstmals?",  desc:"4 Jahreszahlen \u2014 welche ist die richtige?",             prompt_en:"In which year was this game first released?"},
+    {id:"games_match_publisher",icon:"\u{1F3E2}",title:"Game-Publisher",                 group:"games",prompt:"Welcher Publisher steckt hinter diesem Spiel?",             desc:"Von Nintendo bis Epic Games — 35 Publisher",            prompt_en:"Which publisher is behind this game?"},
+    {id:"games_match_f2p",      icon:"\u{1F193}",title:"F2P oder Kaufspiel?",            group:"games",prompt:"Ist dieses Spiel kostenlos spielbar?",                      desc:"Free-to-Play oder Vollpreis — 26 vs. 24 Spiele",        prompt_en:"Is this game free-to-play or paid?"},
+    {id:"hl_games_peak",        icon:"\u{1F4C8}",title:"Game-Quartett: Peak-Spieler",    group:"games",prompt:"Welches Spiel hatte mehr gleichzeitige Spieler?",            desc:"Gemessene Peak-Concurrent-Zahlen in Millionen",              prompt_en:"Which game had more peak concurrent players?"},
+    {id:"hl_games_dev_lat",     icon:"\u{1F9ED}",title:"Game-Studio: Wo liegt es?",      group:"games",prompt:"Welches Entwicklerstudio liegt weiter nördlich?",       desc:"Von Singapur (1°N) bis Espoo, Finnland (60°N)",    prompt_en:"Which game studio is located further north?"},
 
     {id:"uk_hafen_world",     icon:"\u{1F6A2}",title:"Welthafen zuordnen",       group:"airports",prompt:"In welchem Land liegt dieser Hafen?",             desc:"Rotterdam, Shanghai, Hamburg und mehr"},
     {id:"uk_kanaele",         icon:"\u{1F6F3}",title:"Kan\u00e4le zuordnen",    group:"airports",prompt:"In welchem Land liegt dieser Kanal?",             desc:"Suez, Panama, Kieler Kanal und mehr"},
@@ -3662,7 +3666,7 @@ const MODE_CATS={
     "ws_sportwissen_fussball","ws_sportwissen_olympiade","ws_sportwissen_weltmeister",
     "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist","timeline_sport_stadien"
   ],cost:0},
-  games:{label:"Gaming",icon:"\u{1F3AE}",modes:["games_pin","games_match_land","games_match_genre","games_match_adaption","games_match_plattform","games_match_kategorie","hl_games_release","hl_games_vk","hl_games_downloads","hl_games_metacritic","hl_games_usk","hl_games_sequel","games_baujahr_mc"],cost:0},
+  games:{label:"Gaming",icon:"\u{1F3AE}",modes:["games_pin","games_match_land","games_match_genre","games_match_adaption","games_match_plattform","games_match_kategorie","games_match_publisher","games_match_f2p","hl_games_release","hl_games_vk","hl_games_downloads","hl_games_metacritic","hl_games_usk","hl_games_sequel","hl_games_peak","hl_games_dev_lat","games_baujahr_mc"],cost:0},
   autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj","hl_auto_gewicht","hl_auto_drehmoment","hl_auto_cw","hl_auto_kofferraum","hl_auto_laenge","hl_auto_neupreis","hl_auto_tank","hl_auto_akku","hl_auto_reichweite","hl_auto_verbrauch_l","hl_auto_verbrauch_e","hl_auto_zylinder","auto_match_antrieb","auto_match_karosserie","auto_match_antriebsart","auto_match_motorbauart","auto_match_konzern","auto_match_getriebe","auto_match_turbo","auto_match_sitze","auto_baujahr_mc","auto_match_land","hl_auto_ps_kg","hl_auto_co2","auto_match_dekade","auto_generationen_match"],cost:0},
 };
 
@@ -8897,6 +8901,24 @@ function genGamesBaujahrMC(){
     lid:"gbj_"+idx,cc:"de"};
 }
 
+/* genGamesF2PQ — Free-to-Play oder Kaufspiel? (Phase 402) */
+function genGamesF2PQ(){
+  var _GE=GAMES_EXT_DATA;
+  var keys=Object.keys(_GE);
+  if(keys.length<8)return null;
+  var idx=~~(rng()*keys.length);
+  var game=keys[idx];
+  var isF2P=_GE[game].f2p===true;
+  var correct=isF2P?"Free-to-Play":"Kaufspiel";
+  var opts=[correct,isF2P?"Kaufspiel":"Free-to-Play"];
+  for(var j=opts.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=opts[j];opts[j]=opts[k];opts[k]=t;}
+  return{type:"uk_match",
+    prompt:"Ist dieses Spiel kostenlos spielbar (Free-to-Play)?",
+    subj:game,ans:correct,opts:opts,
+    lid:"gf2p_"+idx,cc:"de"};
+}
+
+
 /* Phase 353: Generationen-Match — Distraktor-Optionen aus derselben Modellreihe */
 function genAutoGenerationenMatch(){
   var _bj=AUTOS_DATA["auto_bj"]&&AUTOS_DATA["auto_bj"].items;
@@ -10155,6 +10177,10 @@ const GEN={
   hl_games_usk:()=>genGamesHLExt("usk",{unit:"USK",prompt:"Welches Spiel hat eine h\u00f6here Altersfreigabe?"}),
   hl_games_sequel:()=>genGamesHLExt("sequel_count",{unit:"Teile",prompt:"Welche Spielserie hat mehr direkte Nachfolger?"}),
   games_baujahr_mc:()=>genGamesBaujahrMC(),
+  games_match_publisher:()=>genGamesMatchExt("publisher","Welcher Publisher steckt hinter diesem Spiel?",null),
+  games_match_f2p:()=>genGamesF2PQ(),
+  hl_games_peak:()=>genGamesHLExt("peak_concurrent_mio",{unit:"Mio. gleichz. Spieler",prompt:"Welches Spiel hatte mehr gleichzeitige Spieler?"}),
+  hl_games_dev_lat:()=>genGamesHLExt("dev_lat",{unit:"°N",prompt:"Welches Entwicklerstudio liegt weiter n\u00f6rdlich?"});
   uk_hafen_world:()=>genUniversalMatchQ("hafen_world"),
   uk_kanaele:()=>genUniversalMatchQ("kanaele"),
   uk_reedereien:()=>genUniversalMatchQ("reedereien"),
@@ -16642,5 +16668,4 @@ try:
     _sp.loader.exec_module(_gsu)
     _n = _gsu.generate()
     print(f"Written: GeoQuest_Spielübersicht.html ({_n} Modi, auto)")
-except Exception as _e:
-    print(f"WARN: Spielübersicht auto-update skipped: {_e}")
+e

@@ -150,3 +150,10 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_292_tpgt_i18n.py | 292 | Tiere/Pflanzen/Gastro/Tech de/en/pl: genTiere*/genPflanzen*/genUniversal* mit _tc gewrappt; +337 en/pl (162 Prompts + 36 Einheiten + 139 fixedOpts). verify: 90/90, node OK |
 | patch_293_country_answers.py | 293 | _tcc(): dt. Ländername→cc→displayCountry für Match-opts/ans (astro/geo/sport, lifestyle/airports). verify: 90/90, node OK |
 | patch_294_clean_c_categories.py | 294 | Saubere .c-Kategorien de/en/pl: Gesteinsklassen, Kristallsysteme, Erdzeitalter, Sternenhimmel, Kontinente (101 Werte). verify: 90/90, node OK |
+| (data) patches/games_batch1.py | 360 | Gaming-Kategorie: 31 Spiele (Modern Youth + Global Mobile) als games_extended.json Einträge. 28 Datenkorrekturen (Fall Guys publisher/land, Brawl Stars genre/usk, Clash pegi, Among Us downloads, Roblox peak, Koordinaten) |
+| (data) patches/games_batch2.py | 360 | Gaming-Kategorie: 20 Spiele (Klassiker) als games_extended.json Einträge. GTA V, Witcher 3, Pokémon, Zelda, Half-Life u.a. |
+| (audit) PHASE400_SYSTEM_AUDIT.md | 400 | Phase 400 Full-Architecture & Security Review: XSS, Zero-Trap, Biased Sort, Spread-Operator, Placeholder-Reihenfolge, validate_content-Lücken, Performance-Analyse. 10 Findings (3 kritisch, 2 hoch, 3 mittel, 2 low) |
+| (inline) gen.py direkt | 401 | Phase 401 Audit-Fixes: 7× XSS esc(q.subj) in innerHTML-Pfaden; Zero-Trap USK/pegi/sequel_count=0 erlaubt; 2× Biased sort→Schwartzian Transform; 3× Spread→ES5-indexOf; Adaption+Turbo fixedPool→null |
+| (inline) validate_content.py | 401 | check_games_extended() + Routing + Cross-Validation für games_extended.json: 22 Pflichtfelder, Enums, Typ-Checks, Koordinaten, F2P-Logik. validate: 44/44 ✓ |
+| (inline) verify.py | 401 | games_extended.json in Section 10 JSON-Roundtrip-Test aufgenommen |
+| (inline) gen.py direkt | 402 | Phase 402 neue Gaming-Modi: games_match_publisher, games_match_f2p (genGamesF2PQ mit Ja/Nein-UI), hl_games_peak (peak_concurrent_mio), hl_games_dev_lat (Studio-Latitude). MODE_CATS games: 13→17 Modi. MODES: 765→769 |
