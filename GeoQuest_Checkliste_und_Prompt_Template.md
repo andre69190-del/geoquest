@@ -11,7 +11,7 @@
 
 **ARCHITECTURE.md** — Mindestens diese Felder prüfen/updaten:
 - `**Version:**` — Phase-Nummer und Datum
-- `**Build:**` — Modi-Zahl (z.B. 721 Spielmodi)
+- `**Build:**` — Modi-Zahl (aktuell: 751 Spielmodi)
 - Patch-Tabelle am Ende des Dokuments — neue Phase eintragen mit Datum und kurzer Beschreibung
 - Tiere-Modus-Tabelle falls neue tiere/pflanzen/etc. Modi hinzugekommen
 
@@ -41,7 +41,7 @@ Das Skript erledigt: verify → ARCHITECTURE.md → README.md → landing.html �
 **GeoQuest_Spieluebersicht.html** — Neu generieren!
 - Skript: Aus den MODES-Daten in gen.py direkt generieren
 - Zeigt alle Modi gruppiert nach Kategorie mit Suche
-- Aktueller Stand: 544 Modi, Phase 331
+- Aktueller Stand: 751 Modi, Phase 352
 
 **validate_content.py** ausführen — prüft:
 - JSON-Dateien auf fehlende Pflichtfelder
@@ -74,7 +74,7 @@ Das Skript erledigt: verify → ARCHITECTURE.md → README.md → landing.html �
 GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 
 **Aktueller Stand:**
-- Phase 334, 544 Modi, verify: 139/139
+- Phase 352, 751 Modi, verify: 140/140
 - gen.py ist die einzige Build-Quelle (Single-File-Output)
 - Patch-System: patches/patch_[NUMMER]_[name].py — jeder Patch nutzt content.replace(old, new, 1)
 
@@ -107,7 +107,7 @@ GeoQuest Phase [NUMMER]: [Kurze Beschreibung]
 GeoQuest Phase [NUMMER]: Neuer Spielmodus "[Name]"
 
 **Aktueller Stand:**
-- Phase 334, 544 Modi, verify: 139/139
+- Phase 352, 751 Modi, verify: 140/140
 - 4 Universal-Engines: genUniversalPinQ(cat), genTiereHL(cat), genTiereMatchQ(cat), initTierWortSchmiede(key)
 
 **Neue Daten (JSON-Dateien in data/):**

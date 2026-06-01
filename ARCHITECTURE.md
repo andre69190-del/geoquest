@@ -2,7 +2,7 @@
 ## Systemdokumentation & Entwicklerhandbuch
 
 **Version:** Phase 352 (Stand: Juni 2026)
-**Build:** gen.py → 1.29 MB | GeoQuest.html → 5.25 MB | 721 Spielmodi | verify: 138/138
+**Build:** gen.py → 1.35 MB | GeoQuest.html → 5.25 MB | 751 Spielmodi | verify: 140/140 | data: 43 JSON
 
 ---
 
@@ -30,7 +30,7 @@ GeoQuest ist ein **vollständig clientseitiges, lokal persistiertes Geografie- u
 - **Zero-Backend-Dependency für Gameplay:** Alle Spielmodi laufen komplett offline. Supabase wird optional für Cloud-Highscores genutzt, ist aber kein Pflichtbestandteil.
 - **Single-File Output:** Das Build-System kompiliert alle Quellen zu einer einzigen `GeoQuest.html`. Hosting = eine Datei deployen.
 - **Clientseitige Persistenz:** Spielfortschritt, Einstellungen und Sammlungen werden über `localStorage` gespeichert. Ein kryptografischer Salt schützt die Daten vor Manipulation.
-- **PWA-Ready:** Externer Service Worker (`sw.js`, hash-versioniert, generiert durch `gen.py`) cached die App und alle 37 Datendateien für vollständigen Offline-Betrieb nach erstem Laden.
+- **PWA-Ready:** Externer Service Worker (`sw.js`, hash-versioniert, generiert durch `gen.py`) cached die App und alle 43 Datendateien für vollständigen Offline-Betrieb nach erstem Laden.
 - **Offline-Score-Queue:** Scores, die offline gespielt werden, landen in `localStorage` (`gq_offline_queue`) und werden bei Rückkehr ins Netz automatisch mit Supabase synchronisiert.
 
 ### Philosophie: Content ≠ Logic
@@ -46,7 +46,7 @@ Die zentrale Architekturentscheidung ist die strikte Trennung von **Inhalt** (Da
 ```
 ┌─────────────────────────────────────────────────────┐
 │  CONTENT-SCHICHT          data/*.json               │
-│  37 Datendateien: Kultur, Tiere, Pflanzen, Gastro,  │
+│  43 Datendateien: Kultur, Tiere, Pflanzen, Gastro,  │
 │  Tech, E-Mob, Archäologie, Astronomie, Geologie,    │
 │  Sport-Wissen — je 4 Spieltypen                     │
 ├─────────────────────────────────────────────────────┤
@@ -75,7 +75,7 @@ Die zentrale Architekturentscheidung ist die strikte Trennung von **Inhalt** (Da
 10. Python liest data/astro_*.json       → ASTRO_*_J
 11. Python liest data/geo_*.json         → GEO_*_J
 12. Python liest data/sport_*.json       → SPORT_*_J
-   ... (weitere Datensätze — 37 JSON-Dateien gesamt + kultur.json)
+   ... (weitere Datensätze — 43 JSON-Dateien gesamt (inkl. autos.json, autos_extended.json))
 
 10. JS = r'''...'''                    Großer Raw-String mit gesamtem JavaScript.
                                        Enthält PLACEHOLDER_*-Marker.
@@ -113,7 +113,7 @@ Die zentrale Architekturentscheidung ist die strikte Trennung von **Inhalt** (Da
 | MODES-Array ≥ 200 Einträge | `verify.py` Check 6 |
 | `_GQ_SALT` unverändert | `verify.py` Check 11 |
 | sw.js: CACHE_NAME hash-versioniert | `verify.py` Check 12 |
-| sw.js: alle 37 data/*.json in ASSETS | `verify.py` Check 12 |
+| sw.js: alle data/*.json in ASSETS (43 Dateien) | `verify.py` Check 12 |
 | sw.js: Promise.allSettled vorhanden | `verify.py` Check 12 |
 
 ---
@@ -410,9 +410,9 @@ python3 run_patch.py patches/patch_240_offline_sync.py
 | 7 | Generators (6x) | genUniversalPinQ, genTiereMatchQ, genTiereHL, initTierWortSchmiede, genHauptstadtDistanzQ, getSmartMatch |
 | 8 | Anti-cheat | `_displaySubj` + `subj:_displaySubj` vorhanden |
 | 9 | Mojibake | Keine neuen Â/Ã-Sequenzen (15 Legacy-Patterns whitelisted) |
-| 10 | JSON round-trip | Alle 37 JSON-Dateien valide + Top-Level-Keys gezählt |
+| 10 | JSON round-trip | Alle 43 JSON-Dateien valide + Top-Level-Keys gezählt |
 | 11 | _GQ_SALT | Salt im Output vorhanden (User-Saves-Schutz) |
-| 12 | Service Worker | sw.js existiert, CACHE_NAME hash-versioniert, alle 37 data/*.json in ASSETS, Promise.allSettled vorhanden |
+| 12 | Service Worker | sw.js existiert, CACHE_NAME hash-versioniert, alle 43 data/*.json in ASSETS, Promise.allSettled vorhanden |
 
 ### Vollständiger Sprint-Workflow
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 721 Modi, 539/539/539 — perfekte Konsistenz.
+**Aktueller Stand:** 751 Modi, 751/751/751 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -763,7 +763,7 @@ Wort-Schmiede Modi tragen `noMultiplayer: true` — sie sind zu zeitintensiv fü
 GeoQuest implementiert eine dreistufige Offline-Strategie:
 
 ```
-Stufe 1 — SW-Cache (Phase 238):   App-Shell + alle 37 data/*.json offline verfügbar
+Stufe 1 — SW-Cache (Phase 238):   App-Shell + alle 43 data/*.json offline verfügbar
 Stufe 2 — Auth-UX (Phase 239):    navigator.onLine-Guards + _authErrMsg() für saubere Fehlermeldungen
 Stufe 3 — Score-Queue (Phase 240): Optimistic writes → localStorage → Supabase bei Reconnect
 ```
@@ -1936,4 +1936,4 @@ Prompt-Strings (Frage-Texte) sind für die 22 anderen Sprachen (fr, es, it, nl, 
 | H/L: Höhlenlänge | H/L | `hl_geo_hoehlen_laenge` |
 | H/L: Gesteinsalter | H/L | `hl_geo_gesteins_alter` |
 | H/L: Schluchten-Tiefe | H/L | `hl_geo_schluchten_tiefe` |
-| H/L: Kontinentaldrift | H/L | `hl_geo_kontinentaldrift` 
+| H/L: Kontinentaldrift | H/L | `hl_geo_ko

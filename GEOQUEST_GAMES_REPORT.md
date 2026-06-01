@@ -1,6 +1,6 @@
 # 🗺️ GeoQuest — Integritäts- & Spielebericht
 
-> Generiert von fix99.py | 55 Modi total
+> Stand: Phase 352 | 751 Spielmodi | 431 Fahrzeuge in autos_extended.json
 
 ## Vollständige Liste aller deklarierten Spielmodi
 
