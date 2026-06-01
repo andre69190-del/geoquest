@@ -880,7 +880,7 @@ S.score+=10;
 S.score-=5;
 }
 showMessage(selectedIdx===correctIdx?'Richtig!':'Falsch!');
-setTimeout(startNextRound,1500);
+setTimeout(startNextRound,3000);
 }
 
 function handleFoodAnswerClick(index,isCorrect){
@@ -891,7 +891,7 @@ S.score+=10;
 S.score-=5;
 }
 showMessage(isCorrect?'Richtig!':'Falsch!');
-setTimeout(startNextRound,1500);
+setTimeout(startNextRound,3000);
 }
 
 function renderWordGenerator() {
@@ -10814,7 +10814,7 @@ S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
   const _isMpHost=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null&&S.mpRole!=="guest";
   const _isMpGuest=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null&&S.mpRole==="guest"; /* Phase 317/320: use S.mpRole */
   /* Phase 320: MP reveal delay extended to 5500ms so players can read both answers */
-  const _fd=(_isMpHost||_isMpGuest)?5500:(_qt==="iata"?2800:1900);
+  const _fd=(_isMpHost||_isMpGuest)?5500:(_qt==="iata"?4300:3400);
   fTo=setTimeout(()=>{
     if(_isMpGuest){return;} /* Phase 316: guest waits for NEXT_QUESTION from host */
     /* Phase 316: host signals advancement to guest */
@@ -11461,7 +11461,7 @@ S.score+=10;
 S.score-=5;
 }
 showMessage(isCorrect?'Richtig!':'Falsch!');
-setTimeout(startNextRound,1500);
+setTimeout(startNextRound,3000);
 }
 
 function handleTravelAnswerClick(index,isCorrect){
@@ -11472,7 +11472,7 @@ S.score+=10;
 S.score-=5;
 }
 showMessage(isCorrect?'Richtig!':'Falsch!');
-setTimeout(startNextRound,1500);
+setTimeout(startNextRound,3000);
 }
 
 function handleLogicAnswerClick(index,isCorrect){
@@ -11483,7 +11483,7 @@ S.score+=15;
 S.score-=5;
 }
 showMessage(isCorrect?'Richtig!':'Falsch!');
-setTimeout(startNextRound,1500);
+setTimeout(startNextRound,3000);
 }
 
 function startGame(m,_mpSeed){

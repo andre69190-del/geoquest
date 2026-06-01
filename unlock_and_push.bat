@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 353. Generationen-Match: 21 Modellreihen (Golf/M3/Clio/Corsa/…) — Distraktor-Optionen = echte andere Generationen derselben Baureihe. JSON-Komprimierung: -60 KB (AUTOS_EXT_J compact). verify: 140/140."
+git commit -m "Content: Phase 354. UX: Feedback-Anzeigedauer +1,5 s — Einzel: 1900→3400 ms, IATA: 2800→4300 ms, startNextRound: 1500→3000 ms (5×). Multiplayer (5500 ms) unverändert.. verify: 140/140."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds.
