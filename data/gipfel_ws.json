@@ -1,0 +1,62 @@
+{
+  "himalaya": {
+    "word": "HIMALAYA",
+    "validWords": {
+      "de": [
+        "MAIL",
+        "LIMA",
+        "LAMA",
+        "MALI",
+        "HAIL",
+        "ALMA",
+        "HALM",
+        "ALIM",
+        "MAHIA",
+        "LAIMA"
+      ],
+      "en": [
+        "MAIL",
+        "LIMA",
+        "LAMA",
+        "HAIL",
+        "MALI",
+        "HALM",
+        "ALMA",
+        "LAIM"
+      ],
+      "pl": [
+        "MAIL",
+        "LIMA",
+        "LAMA",
+        "HAIL",
+        "MALI",
+        "ALMA"
+      ]
+    }
+  },
+  "aconcagua": {
+    "word": "ACONCAGUA",
+    "validWords": {
+      "de": [
+        "CONGA",
+        "GUANO",
+        "ACON",
+        "CONC",
+        "NAOC",
+        "ANOA",
+        "NOCA"
+      ],
+      "en": [
+        "CONGA",
+        "GUANO",
+        "ACON"
+      ],
+      "pl": [
+        "CONGA",
+        "GUANO",
+        "ACON",
+        "ANOA"
+      ]
+    }
+  }
+}

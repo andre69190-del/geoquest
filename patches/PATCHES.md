@@ -258,3 +258,28 @@ python3 run_patch.py patches/patch_228_new_feature.py
 **Daten:** capitals_extended.json (80 Hauptstädte mit dist_aequator-Feld), capitals_ws.json.
 **Bugfix:** IIFE in GEN-Dispatcher vermieden (}; bricht GEN-Regex ab) — dist_aequator-Feld stattdessen.
 **Total:** 970 Modi
+
+## Phase 446 — Inseln weltweit
+**Datum:** 2026-06-02
+**Modi:** 7 neue (hl_insel_flaeche, hl_insel_einwohner, insel_match_ozean, insel_match_kontinent, insel_pin_lage, hl_insel_aequator, ws_insel_groenland)
+**Daten:** inseln_extended.json (80 Inseln), inseln_ws.json.
+**Total:** 977 Modi
+
+## Phase 447 — Gipfel & Berge
+**Datum:** 2026-06-02
+**Modi:** 7 neue (hl_gipfel_hoehe, gipfel_match_gebirge, gipfel_match_kontinent, gipfel_pin_lage, hl_gipfel_erstbesteigung, timeline_gipfel_besteigung, ws_gipfel_himalaya)
+**Daten:** gipfel_extended.json (80 Gipfel), gipfel_ws.json.
+**Total:** 984 Modi
+
+## Phase 448 — Klimazonen weltweit
+**Datum:** 2026-06-02
+**Modi:** 7 neue (klima_match_zone, klima_match_kontinent, hl_klima_temp, hl_klima_niederschlag, klima_pin_land, hl_klima_temp_diff, ws_klima_monsun)
+**Daten:** klima_extended.json (80 Länder), klima_ws.json.
+**Total:** 991 Modi
+
+## Phase 449 — Ozeane & Meere
+**Datum:** 2026-06-02
+**Modi:** 8 neue (hl_ozean_flaeche, hl_ozean_tiefe, ozean_match_typ, ozean_match_kontinent, hl_ozean_flaeche_klein, ozean_match_name, ws_ozean_atlantik, hl_ozean_tiefe_klein)
+**Daten:** ozeane_extended.json (80 Gewässer), ozeane_ws.json.
+**Meilenstein:** 999 Modi erreicht!
+**Total:** 999 Modi

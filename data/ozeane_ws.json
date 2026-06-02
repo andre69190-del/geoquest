@@ -1,0 +1,76 @@
+{
+  "atlantik": {
+    "word": "ATLANTIK",
+    "validWords": {
+      "de": [
+        "KALT",
+        "TALK",
+        "TANK",
+        "TAIL",
+        "ANTI",
+        "ALAI",
+        "LANK",
+        "ALIT",
+        "TALI",
+        "LAIN",
+        "KAIL",
+        "NAIK",
+        "INKA",
+        "KNIT",
+        "LAIT",
+        "TAKT",
+        "ALAIN",
+        "LAIK"
+      ],
+      "en": [
+        "TALK",
+        "TANK",
+        "TAIL",
+        "ANTI",
+        "LANK",
+        "ALIT",
+        "TALI",
+        "LAIN",
+        "KAIL",
+        "NAIK",
+        "KNIT",
+        "LAIT"
+      ],
+      "pl": [
+        "TALK",
+        "TANK",
+        "TAIL",
+        "ANTI",
+        "LANK",
+        "ALIT",
+        "TALI",
+        "LAIN"
+      ]
+    }
+  },
+  "pazifik": {
+    "word": "PAZIFIK",
+    "validWords": {
+      "de": [
+        "FIKA",
+        "KAIF",
+        "PIKA",
+        "PAIK",
+        "ZAKIF",
+        "PIAF"
+      ],
+      "en": [
+        "KAIF",
+        "PIKA",
+        "PAIK",
+        "ZAKIF"
+      ],
+      "pl": [
+        "PIKA",
+        "PAIK",
+        "FIKA",
+        "KAIF"
+      ]
+    }
+  }
+}

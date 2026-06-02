@@ -1,0 +1,722 @@
+{
+  "Grönland": {
+    "land": "Dänemark",
+    "ozean": "Arktischer Ozean",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 2166086,
+    "einwohner_tsd": 57,
+    "lat": 71.7,
+    "lng": -42.6
+  },
+  "Großbritannien": {
+    "land": "Vereinigtes Königreich",
+    "ozean": "Atlantik",
+    "kontinent": "Europa",
+    "flaeche_km2": 209331,
+    "einwohner_tsd": 67891,
+    "lat": 54.0,
+    "lng": -2.0
+  },
+  "Island": {
+    "land": "Island",
+    "ozean": "Atlantik",
+    "kontinent": "Europa",
+    "flaeche_km2": 103000,
+    "einwohner_tsd": 372,
+    "lat": 65.0,
+    "lng": -18.0
+  },
+  "Irland": {
+    "land": "Irland",
+    "ozean": "Atlantik",
+    "kontinent": "Europa",
+    "flaeche_km2": 84421,
+    "einwohner_tsd": 5123,
+    "lat": 53.2,
+    "lng": -8.2
+  },
+  "Neufundland": {
+    "land": "Kanada",
+    "ozean": "Atlantik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 108860,
+    "einwohner_tsd": 520,
+    "lat": 49.0,
+    "lng": -56.0
+  },
+  "Kuba": {
+    "land": "Kuba",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 109884,
+    "einwohner_tsd": 11326,
+    "lat": 21.5,
+    "lng": -79.5
+  },
+  "Hispaniola": {
+    "land": "Haiti",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 76480,
+    "einwohner_tsd": 22250,
+    "lat": 19.0,
+    "lng": -72.0
+  },
+  "Jamaika": {
+    "land": "Jamaika",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 10991,
+    "einwohner_tsd": 2961,
+    "lat": 18.1,
+    "lng": -77.3
+  },
+  "Puerto Rico": {
+    "land": "USA",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 9104,
+    "einwohner_tsd": 3194,
+    "lat": 18.2,
+    "lng": -66.5
+  },
+  "Trinidad": {
+    "land": "Trinidad und Tobago",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 4768,
+    "einwohner_tsd": 1400,
+    "lat": 10.5,
+    "lng": -61.2
+  },
+  "Feuerland": {
+    "land": "Argentinien",
+    "ozean": "Atlantik",
+    "kontinent": "Südamerika",
+    "flaeche_km2": 48100,
+    "einwohner_tsd": 150,
+    "lat": -54.0,
+    "lng": -69.0
+  },
+  "Falkland-Inseln": {
+    "land": "Vereinigtes Königreich",
+    "ozean": "Atlantik",
+    "kontinent": "Südamerika",
+    "flaeche_km2": 12173,
+    "einwohner_tsd": 3,
+    "lat": -51.7,
+    "lng": -59.0
+  },
+  "Azoren": {
+    "land": "Portugal",
+    "ozean": "Atlantik",
+    "kontinent": "Europa",
+    "flaeche_km2": 2322,
+    "einwohner_tsd": 244,
+    "lat": 37.7,
+    "lng": -25.7
+  },
+  "Madeira": {
+    "land": "Portugal",
+    "ozean": "Atlantik",
+    "kontinent": "Europa",
+    "flaeche_km2": 801,
+    "einwohner_tsd": 252,
+    "lat": 32.6,
+    "lng": -17.0
+  },
+  "Teneriffa": {
+    "land": "Spanien",
+    "ozean": "Atlantik",
+    "kontinent": "Afrika",
+    "flaeche_km2": 2034,
+    "einwohner_tsd": 917,
+    "lat": 28.3,
+    "lng": -16.6
+  },
+  "Kap Verde": {
+    "land": "Kap Verde",
+    "ozean": "Atlantik",
+    "kontinent": "Afrika",
+    "flaeche_km2": 4033,
+    "einwohner_tsd": 556,
+    "lat": 16.0,
+    "lng": -24.0
+  },
+  "Sizilien": {
+    "land": "Italien",
+    "ozean": "Mittelmeer",
+    "kontinent": "Europa",
+    "flaeche_km2": 25460,
+    "einwohner_tsd": 4875,
+    "lat": 37.5,
+    "lng": 14.0
+  },
+  "Sardinien": {
+    "land": "Italien",
+    "ozean": "Mittelmeer",
+    "kontinent": "Europa",
+    "flaeche_km2": 24090,
+    "einwohner_tsd": 1611,
+    "lat": 39.9,
+    "lng": 9.1
+  },
+  "Zypern": {
+    "land": "Zypern",
+    "ozean": "Mittelmeer",
+    "kontinent": "Asien",
+    "flaeche_km2": 9251,
+    "einwohner_tsd": 1198,
+    "lat": 35.1,
+    "lng": 33.4
+  },
+  "Korsika": {
+    "land": "Frankreich",
+    "ozean": "Mittelmeer",
+    "kontinent": "Europa",
+    "flaeche_km2": 8680,
+    "einwohner_tsd": 344,
+    "lat": 42.0,
+    "lng": 9.0
+  },
+  "Kreta": {
+    "land": "Griechenland",
+    "ozean": "Mittelmeer",
+    "kontinent": "Europa",
+    "flaeche_km2": 8336,
+    "einwohner_tsd": 623,
+    "lat": 35.2,
+    "lng": 24.9
+  },
+  "Mallorca": {
+    "land": "Spanien",
+    "ozean": "Mittelmeer",
+    "kontinent": "Europa",
+    "flaeche_km2": 3640,
+    "einwohner_tsd": 923,
+    "lat": 39.7,
+    "lng": 3.0
+  },
+  "Malta": {
+    "land": "Malta",
+    "ozean": "Mittelmeer",
+    "kontinent": "Europa",
+    "flaeche_km2": 316,
+    "einwohner_tsd": 515,
+    "lat": 35.9,
+    "lng": 14.5
+  },
+  "Rhodos": {
+    "land": "Griechenland",
+    "ozean": "Mittelmeer",
+    "kontinent": "Europa",
+    "flaeche_km2": 1400,
+    "einwohner_tsd": 115,
+    "lat": 36.2,
+    "lng": 27.9
+  },
+  "Madagaskar": {
+    "land": "Madagaskar",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Afrika",
+    "flaeche_km2": 587041,
+    "einwohner_tsd": 27534,
+    "lat": -20.0,
+    "lng": 47.0
+  },
+  "Sri Lanka": {
+    "land": "Sri Lanka",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 65610,
+    "einwohner_tsd": 21670,
+    "lat": 7.9,
+    "lng": 80.7
+  },
+  "Sumatra": {
+    "land": "Indonesien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 473481,
+    "einwohner_tsd": 55198,
+    "lat": 0.0,
+    "lng": 102.0
+  },
+  "Java": {
+    "land": "Indonesien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 132107,
+    "einwohner_tsd": 156900,
+    "lat": -7.0,
+    "lng": 110.0
+  },
+  "Borneo": {
+    "land": "Indonesien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 743330,
+    "einwohner_tsd": 21258,
+    "lat": 1.0,
+    "lng": 114.0
+  },
+  "Tasmanien": {
+    "land": "Australien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 67830,
+    "einwohner_tsd": 542,
+    "lat": -42.0,
+    "lng": 146.5
+  },
+  "Réunion": {
+    "land": "Frankreich",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Afrika",
+    "flaeche_km2": 2512,
+    "einwohner_tsd": 895,
+    "lat": -21.1,
+    "lng": 55.6
+  },
+  "Mauritius": {
+    "land": "Mauritius",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Afrika",
+    "flaeche_km2": 2040,
+    "einwohner_tsd": 1266,
+    "lat": -20.3,
+    "lng": 57.6
+  },
+  "Seychellen": {
+    "land": "Seychellen",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Afrika",
+    "flaeche_km2": 451,
+    "einwohner_tsd": 97,
+    "lat": -4.6,
+    "lng": 55.5
+  },
+  "Malediven": {
+    "land": "Malediven",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 298,
+    "einwohner_tsd": 521,
+    "lat": 3.2,
+    "lng": 73.2
+  },
+  "Andamanen": {
+    "land": "Indien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 8249,
+    "einwohner_tsd": 380,
+    "lat": 11.7,
+    "lng": 92.7
+  },
+  "Sokotra": {
+    "land": "Jemen",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 3625,
+    "einwohner_tsd": 60,
+    "lat": 12.5,
+    "lng": 53.8
+  },
+  "Neuguinea": {
+    "land": "Papua-Neuguinea",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 786000,
+    "einwohner_tsd": 9076,
+    "lat": -5.0,
+    "lng": 141.0
+  },
+  "Honshu": {
+    "land": "Japan",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 227960,
+    "einwohner_tsd": 104000,
+    "lat": 36.5,
+    "lng": 138.0
+  },
+  "Sulawesi": {
+    "land": "Indonesien",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 180681,
+    "einwohner_tsd": 19017,
+    "lat": -2.0,
+    "lng": 121.0
+  },
+  "Südinsel NZ": {
+    "land": "Neuseeland",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 151215,
+    "einwohner_tsd": 1110,
+    "lat": -44.0,
+    "lng": 170.0
+  },
+  "Nordinsel NZ": {
+    "land": "Neuseeland",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 113729,
+    "einwohner_tsd": 3750,
+    "lat": -38.5,
+    "lng": 176.0
+  },
+  "Luzon": {
+    "land": "Philippinen",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 104688,
+    "einwohner_tsd": 60800,
+    "lat": 16.0,
+    "lng": 121.0
+  },
+  "Mindanao": {
+    "land": "Philippinen",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 97530,
+    "einwohner_tsd": 25540,
+    "lat": 7.5,
+    "lng": 125.0
+  },
+  "Hokkaido": {
+    "land": "Japan",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 83453,
+    "einwohner_tsd": 5320,
+    "lat": 43.5,
+    "lng": 142.5
+  },
+  "Sachalin": {
+    "land": "Russland",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 76400,
+    "einwohner_tsd": 490,
+    "lat": 51.0,
+    "lng": 143.0
+  },
+  "Hainan": {
+    "land": "China",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 33920,
+    "einwohner_tsd": 9252,
+    "lat": 19.5,
+    "lng": 109.5
+  },
+  "Taiwan": {
+    "land": "China",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 36193,
+    "einwohner_tsd": 23588,
+    "lat": 23.7,
+    "lng": 120.9
+  },
+  "Kyushu": {
+    "land": "Japan",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 35640,
+    "einwohner_tsd": 12970,
+    "lat": 32.7,
+    "lng": 130.7
+  },
+  "Okinawa": {
+    "land": "Japan",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 1207,
+    "einwohner_tsd": 1467,
+    "lat": 26.5,
+    "lng": 127.9
+  },
+  "Spitzbergen": {
+    "land": "Norwegen",
+    "ozean": "Arktischer Ozean",
+    "kontinent": "Arktis",
+    "flaeche_km2": 37673,
+    "einwohner_tsd": 3,
+    "lat": 78.0,
+    "lng": 17.0
+  },
+  "Baffin-Insel": {
+    "land": "Kanada",
+    "ozean": "Arktischer Ozean",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 507451,
+    "einwohner_tsd": 11,
+    "lat": 68.0,
+    "lng": -72.0
+  },
+  "Galápagos": {
+    "land": "Ecuador",
+    "ozean": "Pazifik",
+    "kontinent": "Südamerika",
+    "flaeche_km2": 7995,
+    "einwohner_tsd": 25,
+    "lat": -0.9,
+    "lng": -90.9
+  },
+  "Hawaii": {
+    "land": "USA",
+    "ozean": "Pazifik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 10433,
+    "einwohner_tsd": 200,
+    "lat": 19.9,
+    "lng": -155.5
+  },
+  "Tahiti": {
+    "land": "Frankreich",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 1048,
+    "einwohner_tsd": 189,
+    "lat": -17.5,
+    "lng": -149.6
+  },
+  "Fiji": {
+    "land": "Fidschi",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 10429,
+    "einwohner_tsd": 898,
+    "lat": -17.7,
+    "lng": 178.0
+  },
+  "Bali": {
+    "land": "Indonesien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 5780,
+    "einwohner_tsd": 4310,
+    "lat": -8.4,
+    "lng": 115.2
+  },
+  "Lombok": {
+    "land": "Indonesien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 4725,
+    "einwohner_tsd": 3400,
+    "lat": -8.5,
+    "lng": 116.3
+  },
+  "Flores": {
+    "land": "Indonesien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 14300,
+    "einwohner_tsd": 2050,
+    "lat": -8.7,
+    "lng": 121.0
+  },
+  "Komodo": {
+    "land": "Indonesien",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 390,
+    "einwohner_tsd": 2,
+    "lat": -8.5,
+    "lng": 119.5
+  },
+  "Timor": {
+    "land": "Timor-Leste",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Asien",
+    "flaeche_km2": 15007,
+    "einwohner_tsd": 1342,
+    "lat": -9.0,
+    "lng": 125.5
+  },
+  "Jeju": {
+    "land": "Südkorea",
+    "ozean": "Pazifik",
+    "kontinent": "Asien",
+    "flaeche_km2": 1849,
+    "einwohner_tsd": 670,
+    "lat": 33.4,
+    "lng": 126.5
+  },
+  "Barbados": {
+    "land": "Barbados",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 431,
+    "einwohner_tsd": 287,
+    "lat": 13.2,
+    "lng": -59.6
+  },
+  "Martinique": {
+    "land": "Frankreich",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 1128,
+    "einwohner_tsd": 376,
+    "lat": 14.7,
+    "lng": -61.0
+  },
+  "Guadeloupe": {
+    "land": "Frankreich",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 1628,
+    "einwohner_tsd": 395,
+    "lat": 16.3,
+    "lng": -61.6
+  },
+  "Antigua": {
+    "land": "Antigua und Barbuda",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 281,
+    "einwohner_tsd": 97,
+    "lat": 17.1,
+    "lng": -61.8
+  },
+  "Bermuda": {
+    "land": "Vereinigtes Königreich",
+    "ozean": "Atlantik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 53,
+    "einwohner_tsd": 64,
+    "lat": 32.3,
+    "lng": -64.7
+  },
+  "Kanaren": {
+    "land": "Spanien",
+    "ozean": "Atlantik",
+    "kontinent": "Afrika",
+    "flaeche_km2": 7447,
+    "einwohner_tsd": 2127,
+    "lat": 28.3,
+    "lng": -15.0
+  },
+  "Ascension": {
+    "land": "Vereinigtes Königreich",
+    "ozean": "Atlantik",
+    "kontinent": "Afrika",
+    "flaeche_km2": 88,
+    "einwohner_tsd": 1,
+    "lat": -7.9,
+    "lng": -14.4
+  },
+  "São Tomé": {
+    "land": "São Tomé und Príncipe",
+    "ozean": "Atlantik",
+    "kontinent": "Afrika",
+    "flaeche_km2": 1001,
+    "einwohner_tsd": 219,
+    "lat": 0.2,
+    "lng": 6.6
+  },
+  "Zanzibar": {
+    "land": "Tansania",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Afrika",
+    "flaeche_km2": 1666,
+    "einwohner_tsd": 1303,
+    "lat": -6.2,
+    "lng": 39.2
+  },
+  "Komoren": {
+    "land": "Komoren",
+    "ozean": "Indischer Ozean",
+    "kontinent": "Afrika",
+    "flaeche_km2": 2235,
+    "einwohner_tsd": 869,
+    "lat": -11.7,
+    "lng": 43.3
+  },
+  "Fernando de Noronha": {
+    "land": "Brasilien",
+    "ozean": "Atlantik",
+    "kontinent": "Südamerika",
+    "flaeche_km2": 26,
+    "einwohner_tsd": 3,
+    "lat": -3.9,
+    "lng": -32.4
+  },
+  "Osterinsel": {
+    "land": "Chile",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 163,
+    "einwohner_tsd": 8,
+    "lat": -27.1,
+    "lng": -109.4
+  },
+  "Vanuatu": {
+    "land": "Vanuatu",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 12190,
+    "einwohner_tsd": 307,
+    "lat": -15.4,
+    "lng": 167.0
+  },
+  "Samoa": {
+    "land": "Samoa",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 2842,
+    "einwohner_tsd": 218,
+    "lat": -13.8,
+    "lng": -172.1
+  },
+  "Tonga": {
+    "land": "Tonga",
+    "ozean": "Pazifik",
+    "kontinent": "Ozeanien",
+    "flaeche_km2": 748,
+    "einwohner_tsd": 101,
+    "lat": -21.2,
+    "lng": -175.2
+  },
+  "Kaiman-Inseln": {
+    "land": "Vereinigtes Königreich",
+    "ozean": "Karibik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 264,
+    "einwohner_tsd": 65,
+    "lat": 19.5,
+    "lng": -80.5
+  },
+  "Bahamas": {
+    "land": "Bahamas",
+    "ozean": "Atlantik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 13943,
+    "einwohner_tsd": 393,
+    "lat": 25.0,
+    "lng": -77.4
+  },
+  "Maui": {
+    "land": "USA",
+    "ozean": "Pazifik",
+    "kontinent": "Nordamerika",
+    "flaeche_km2": 1883,
+    "einwohner_tsd": 167,
+    "lat": 20.8,
+    "lng": -156.3
+  },
+  "Fuerteventura": {
+    "land": "Spanien",
+    "ozean": "Atlantik",
+    "kontinent": "Afrika",
+    "flaeche_km2": 1660,
+    "einwohner_tsd": 119,
+    "lat": 28.4,
+    "lng": -14.0
+  }
+}

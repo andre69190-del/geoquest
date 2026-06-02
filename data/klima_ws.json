@@ -1,0 +1,65 @@
+{
+  "monsun": {
+    "word": "MONSUN",
+    "validWords": {
+      "de": [
+        "MONS",
+        "NOUS",
+        "ONUS",
+        "MONU",
+        "NOUM",
+        "MONUS",
+        "SUNMO"
+      ],
+      "en": [
+        "MONS",
+        "NOUS",
+        "ONUS",
+        "MUSO",
+        "NOMS"
+      ],
+      "pl": [
+        "MONS",
+        "NOUS",
+        "ONUS",
+        "NOMS"
+      ]
+    }
+  },
+  "savanne": {
+    "word": "SAVANNE",
+    "validWords": {
+      "de": [
+        "NAVE",
+        "SANE",
+        "NASE",
+        "VANE",
+        "SAVE",
+        "AVEN",
+        "ANNA",
+        "AVENS",
+        "NAVES",
+        "VANES",
+        "SENNA",
+        "EVAN"
+      ],
+      "en": [
+        "NAVE",
+        "SANE",
+        "VANE",
+        "SAVE",
+        "AVEN",
+        "AVENS",
+        "NAVES",
+        "SENNA"
+      ],
+      "pl": [
+        "NAVE",
+        "SANE",
+        "VANE",
+        "SAVE",
+        "AVEN"
+      ]
+    }
+  }
+}

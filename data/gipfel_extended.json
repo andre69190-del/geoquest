@@ -1,0 +1,722 @@
+{
+  "Mount Everest": {
+    "hoehe_m": 8849,
+    "gebirge": "Himalaya",
+    "land": "Nepal/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1953,
+    "lat": 27.99,
+    "lng": 86.93
+  },
+  "K2": {
+    "hoehe_m": 8611,
+    "gebirge": "Karakorum",
+    "land": "Pakistan/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1954,
+    "lat": 35.88,
+    "lng": 76.51
+  },
+  "Kangchendzönga": {
+    "hoehe_m": 8586,
+    "gebirge": "Himalaya",
+    "land": "Nepal/Indien",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1955,
+    "lat": 27.7,
+    "lng": 88.15
+  },
+  "Lhotse": {
+    "hoehe_m": 8516,
+    "gebirge": "Himalaya",
+    "land": "Nepal/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1956,
+    "lat": 27.96,
+    "lng": 86.93
+  },
+  "Makalu": {
+    "hoehe_m": 8485,
+    "gebirge": "Himalaya",
+    "land": "Nepal/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1955,
+    "lat": 27.89,
+    "lng": 87.09
+  },
+  "Cho Oyu": {
+    "hoehe_m": 8188,
+    "gebirge": "Himalaya",
+    "land": "Nepal/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1954,
+    "lat": 28.09,
+    "lng": 86.66
+  },
+  "Dhaulagiri": {
+    "hoehe_m": 8167,
+    "gebirge": "Himalaya",
+    "land": "Nepal",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1960,
+    "lat": 28.7,
+    "lng": 83.49
+  },
+  "Manaslu": {
+    "hoehe_m": 8163,
+    "gebirge": "Himalaya",
+    "land": "Nepal",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1956,
+    "lat": 28.55,
+    "lng": 84.56
+  },
+  "Nanga Parbat": {
+    "hoehe_m": 8126,
+    "gebirge": "Himalaya",
+    "land": "Pakistan",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1953,
+    "lat": 35.24,
+    "lng": 74.59
+  },
+  "Annapurna": {
+    "hoehe_m": 8091,
+    "gebirge": "Himalaya",
+    "land": "Nepal",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1950,
+    "lat": 28.6,
+    "lng": 83.82
+  },
+  "Gasherbrum I": {
+    "hoehe_m": 8080,
+    "gebirge": "Karakorum",
+    "land": "Pakistan/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1958,
+    "lat": 35.72,
+    "lng": 76.7
+  },
+  "Broad Peak": {
+    "hoehe_m": 8051,
+    "gebirge": "Karakorum",
+    "land": "Pakistan/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1957,
+    "lat": 35.81,
+    "lng": 76.57
+  },
+  "Gasherbrum II": {
+    "hoehe_m": 8035,
+    "gebirge": "Karakorum",
+    "land": "Pakistan/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1956,
+    "lat": 35.76,
+    "lng": 76.65
+  },
+  "Shishapangma": {
+    "hoehe_m": 8027,
+    "gebirge": "Himalaya",
+    "land": "China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1964,
+    "lat": 28.35,
+    "lng": 85.78
+  },
+  "Gyachung Kang": {
+    "hoehe_m": 7952,
+    "gebirge": "Himalaya",
+    "land": "Nepal/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1964,
+    "lat": 28.1,
+    "lng": 86.74
+  },
+  "Aconcagua": {
+    "hoehe_m": 6961,
+    "gebirge": "Anden",
+    "land": "Argentinien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1897,
+    "lat": -32.65,
+    "lng": -70.01
+  },
+  "Ojos del Salado": {
+    "hoehe_m": 6893,
+    "gebirge": "Anden",
+    "land": "Chile/Argentinien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1937,
+    "lat": -27.11,
+    "lng": -68.54
+  },
+  "Monte Pissis": {
+    "hoehe_m": 6795,
+    "gebirge": "Anden",
+    "land": "Argentinien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1937,
+    "lat": -27.75,
+    "lng": -68.8
+  },
+  "Huascarán": {
+    "hoehe_m": 6768,
+    "gebirge": "Anden",
+    "land": "Peru",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1932,
+    "lat": -9.12,
+    "lng": -77.6
+  },
+  "Llullaillaco": {
+    "hoehe_m": 6739,
+    "gebirge": "Anden",
+    "land": "Chile/Argentinien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1952,
+    "lat": -24.72,
+    "lng": -68.53
+  },
+  "Denali": {
+    "hoehe_m": 6190,
+    "gebirge": "Alaska Range",
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "erstbesteigung_jahr": 1913,
+    "lat": 63.07,
+    "lng": -151.01
+  },
+  "Logan": {
+    "hoehe_m": 5959,
+    "gebirge": "St. Elias",
+    "land": "Kanada",
+    "kontinent": "Nordamerika",
+    "erstbesteigung_jahr": 1925,
+    "lat": 60.57,
+    "lng": -140.41
+  },
+  "Pico de Orizaba": {
+    "hoehe_m": 5636,
+    "gebirge": "Trans-Mexikanischer Vulkangürtel",
+    "land": "Mexiko",
+    "kontinent": "Nordamerika",
+    "erstbesteigung_jahr": 1848,
+    "lat": 19.03,
+    "lng": -97.27
+  },
+  "Mount Saint Elias": {
+    "hoehe_m": 5489,
+    "gebirge": "St. Elias",
+    "land": "USA/Kanada",
+    "kontinent": "Nordamerika",
+    "erstbesteigung_jahr": 1897,
+    "lat": 60.29,
+    "lng": -140.93
+  },
+  "Popocatépetl": {
+    "hoehe_m": 5426,
+    "gebirge": "Trans-Mexikanischer Vulkangürtel",
+    "land": "Mexiko",
+    "kontinent": "Nordamerika",
+    "erstbesteigung_jahr": 1519,
+    "lat": 19.02,
+    "lng": -98.63
+  },
+  "Kilimandscharo": {
+    "hoehe_m": 5895,
+    "gebirge": "Ostafr. Graben",
+    "land": "Tansania",
+    "kontinent": "Afrika",
+    "erstbesteigung_jahr": 1889,
+    "lat": -3.07,
+    "lng": 37.35
+  },
+  "Mount Kenya": {
+    "hoehe_m": 5199,
+    "gebirge": "Ostafr. Hochland",
+    "land": "Kenia",
+    "kontinent": "Afrika",
+    "erstbesteigung_jahr": 1899,
+    "lat": -0.15,
+    "lng": 37.31
+  },
+  "Margherita Peak": {
+    "hoehe_m": 5109,
+    "gebirge": "Ruwenzori",
+    "land": "Uganda/DR Kongo",
+    "kontinent": "Afrika",
+    "erstbesteigung_jahr": 1906,
+    "lat": 0.38,
+    "lng": 29.87
+  },
+  "Ras Dashen": {
+    "hoehe_m": 4550,
+    "gebirge": "Semien",
+    "land": "Äthiopien",
+    "kontinent": "Afrika",
+    "erstbesteigung_jahr": 1841,
+    "lat": 13.23,
+    "lng": 38.37
+  },
+  "Toubkal": {
+    "hoehe_m": 4167,
+    "gebirge": "Atlas",
+    "land": "Marokko",
+    "kontinent": "Afrika",
+    "erstbesteigung_jahr": 1923,
+    "lat": 31.06,
+    "lng": -7.92
+  },
+  "Mont Blanc": {
+    "hoehe_m": 4808,
+    "gebirge": "Alpen",
+    "land": "Frankreich/Italien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1786,
+    "lat": 45.83,
+    "lng": 6.86
+  },
+  "Monte Rosa": {
+    "hoehe_m": 4634,
+    "gebirge": "Alpen",
+    "land": "Schweiz/Italien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1855,
+    "lat": 45.94,
+    "lng": 7.87
+  },
+  "Dom": {
+    "hoehe_m": 4545,
+    "gebirge": "Alpen",
+    "land": "Schweiz",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1858,
+    "lat": 46.1,
+    "lng": 7.86
+  },
+  "Matterhorn": {
+    "hoehe_m": 4478,
+    "gebirge": "Alpen",
+    "land": "Schweiz/Italien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1865,
+    "lat": 45.98,
+    "lng": 7.66
+  },
+  "Finsteraarhorn": {
+    "hoehe_m": 4274,
+    "gebirge": "Alpen",
+    "land": "Schweiz",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1812,
+    "lat": 46.54,
+    "lng": 8.13
+  },
+  "Großglockner": {
+    "hoehe_m": 3798,
+    "gebirge": "Alpen",
+    "land": "Österreich",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1800,
+    "lat": 47.07,
+    "lng": 12.69
+  },
+  "Zugspitze": {
+    "hoehe_m": 2962,
+    "gebirge": "Alpen",
+    "land": "Deutschland/Österreich",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1820,
+    "lat": 47.42,
+    "lng": 10.99
+  },
+  "Elbrus": {
+    "hoehe_m": 5642,
+    "gebirge": "Kaukasus",
+    "land": "Russland",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1874,
+    "lat": 43.35,
+    "lng": 42.44
+  },
+  "Dufourspitze": {
+    "hoehe_m": 4634,
+    "gebirge": "Alpen",
+    "land": "Schweiz",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1855,
+    "lat": 45.94,
+    "lng": 7.87
+  },
+  "Vinson Massif": {
+    "hoehe_m": 4892,
+    "gebirge": "Ellsworth",
+    "land": "Antarktis",
+    "kontinent": "Antarktis",
+    "erstbesteigung_jahr": 1966,
+    "lat": -78.53,
+    "lng": -85.62
+  },
+  "Carstensz-Pyramide": {
+    "hoehe_m": 4884,
+    "gebirge": "Maoke",
+    "land": "Indonesien",
+    "kontinent": "Ozeanien",
+    "erstbesteigung_jahr": 1962,
+    "lat": -4.08,
+    "lng": 137.15
+  },
+  "Mount Wilhelm": {
+    "hoehe_m": 4509,
+    "gebirge": "Bismarck",
+    "land": "Papua-Neuguinea",
+    "kontinent": "Ozeanien",
+    "erstbesteigung_jahr": 1938,
+    "lat": -5.78,
+    "lng": 145.03
+  },
+  "Mauna Kea": {
+    "hoehe_m": 4205,
+    "gebirge": "Hawaii",
+    "land": "USA",
+    "kontinent": "Ozeanien",
+    "erstbesteigung_jahr": 1820,
+    "lat": 19.82,
+    "lng": -155.47
+  },
+  "Kosciuszko": {
+    "hoehe_m": 2228,
+    "gebirge": "Snowy Mountains",
+    "land": "Australien",
+    "kontinent": "Ozeanien",
+    "erstbesteigung_jahr": 1840,
+    "lat": -36.46,
+    "lng": 148.26
+  },
+  "Puncak Jaya": {
+    "hoehe_m": 4884,
+    "gebirge": "Sudirman",
+    "land": "Indonesien",
+    "kontinent": "Ozeanien",
+    "erstbesteigung_jahr": 1962,
+    "lat": -4.08,
+    "lng": 137.18
+  },
+  "Cerro Torre": {
+    "hoehe_m": 3128,
+    "gebirge": "Patagonien",
+    "land": "Argentinien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1974,
+    "lat": -49.31,
+    "lng": -73.1
+  },
+  "Fitz Roy": {
+    "hoehe_m": 3405,
+    "gebirge": "Patagonien",
+    "land": "Argentinien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1952,
+    "lat": -49.27,
+    "lng": -73.04
+  },
+  "Chimborazo": {
+    "hoehe_m": 6268,
+    "gebirge": "Anden",
+    "land": "Ecuador",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1880,
+    "lat": -1.47,
+    "lng": -78.82
+  },
+  "Cotopaxi": {
+    "hoehe_m": 5897,
+    "gebirge": "Anden",
+    "land": "Ecuador",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1872,
+    "lat": -0.68,
+    "lng": -78.44
+  },
+  "Nevado Sajama": {
+    "hoehe_m": 6542,
+    "gebirge": "Anden",
+    "land": "Bolivien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1939,
+    "lat": -18.1,
+    "lng": -68.88
+  },
+  "Illimani": {
+    "hoehe_m": 6438,
+    "gebirge": "Anden",
+    "land": "Bolivien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1898,
+    "lat": -16.63,
+    "lng": -67.78
+  },
+  "Nevado Coropuna": {
+    "hoehe_m": 6377,
+    "gebirge": "Anden",
+    "land": "Peru",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1911,
+    "lat": -15.53,
+    "lng": -72.65
+  },
+  "Yerupajá": {
+    "hoehe_m": 6634,
+    "gebirge": "Anden",
+    "land": "Peru",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1950,
+    "lat": -10.27,
+    "lng": -76.89
+  },
+  "Tupungato": {
+    "hoehe_m": 6550,
+    "gebirge": "Anden",
+    "land": "Chile/Argentinien",
+    "kontinent": "Südamerika",
+    "erstbesteigung_jahr": 1897,
+    "lat": -33.36,
+    "lng": -69.78
+  },
+  "Mount Cook": {
+    "hoehe_m": 3724,
+    "gebirge": "Südalpen",
+    "land": "Neuseeland",
+    "kontinent": "Ozeanien",
+    "erstbesteigung_jahr": 1894,
+    "lat": -43.6,
+    "lng": 170.14
+  },
+  "Fujisan": {
+    "hoehe_m": 3776,
+    "gebirge": "Honshu",
+    "land": "Japan",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 663,
+    "lat": 35.36,
+    "lng": 138.73
+  },
+  "Damavand": {
+    "hoehe_m": 5610,
+    "gebirge": "Elburs",
+    "land": "Iran",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1837,
+    "lat": 35.95,
+    "lng": 52.11
+  },
+  "Tirich Mir": {
+    "hoehe_m": 7708,
+    "gebirge": "Hindukusch",
+    "land": "Pakistan",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1950,
+    "lat": 36.26,
+    "lng": 71.84
+  },
+  "Mustagh Ata": {
+    "hoehe_m": 7546,
+    "gebirge": "Pamir",
+    "land": "China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1956,
+    "lat": 38.28,
+    "lng": 75.12
+  },
+  "Lenin Peak": {
+    "hoehe_m": 7134,
+    "gebirge": "Trans-Alay",
+    "land": "Kirgisistan/Tadschikistan",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1928,
+    "lat": 39.67,
+    "lng": 73.0
+  },
+  "Khan Tengri": {
+    "hoehe_m": 7010,
+    "gebirge": "Tian Shan",
+    "land": "Kasachstan/Kirgisistan",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1931,
+    "lat": 42.22,
+    "lng": 80.18
+  },
+  "Ismoil Somoni": {
+    "hoehe_m": 7495,
+    "gebirge": "Pamir",
+    "land": "Tadschikistan",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1933,
+    "lat": 38.94,
+    "lng": 72.01
+  },
+  "Pik Pobeda": {
+    "hoehe_m": 7439,
+    "gebirge": "Tian Shan",
+    "land": "Kirgisistan/China",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1956,
+    "lat": 42.03,
+    "lng": 80.13
+  },
+  "Noshaq": {
+    "hoehe_m": 7492,
+    "gebirge": "Hindukusch",
+    "land": "Afghanistan",
+    "kontinent": "Asien",
+    "erstbesteigung_jahr": 1960,
+    "lat": 36.43,
+    "lng": 71.83
+  },
+  "Olymp": {
+    "hoehe_m": 2917,
+    "gebirge": "Makedonien",
+    "land": "Griechenland",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1913,
+    "lat": 40.09,
+    "lng": 22.36
+  },
+  "Teide": {
+    "hoehe_m": 3715,
+    "gebirge": "Kanaren",
+    "land": "Spanien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1705,
+    "lat": 28.27,
+    "lng": -16.64
+  },
+  "Ben Nevis": {
+    "hoehe_m": 1345,
+    "gebirge": "Grampians",
+    "land": "Großbritannien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1771,
+    "lat": 56.8,
+    "lng": -5.0
+  },
+  "Galdhøpiggen": {
+    "hoehe_m": 2469,
+    "gebirge": "Jotunheimen",
+    "land": "Norwegen",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1850,
+    "lat": 61.64,
+    "lng": 8.31
+  },
+  "Kebnekaise": {
+    "hoehe_m": 2099,
+    "gebirge": "Skandinavien",
+    "land": "Schweden",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1883,
+    "lat": 67.9,
+    "lng": 18.56
+  },
+  "Vesuvio": {
+    "hoehe_m": 1281,
+    "gebirge": "Kampanien",
+    "land": "Italien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 79,
+    "lat": 40.82,
+    "lng": 14.43
+  },
+  "Etna": {
+    "hoehe_m": 3357,
+    "gebirge": "Sizilien",
+    "land": "Italien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 396,
+    "lat": 37.75,
+    "lng": 15.0
+  },
+  "Mont Perdu": {
+    "hoehe_m": 3355,
+    "gebirge": "Pyrenäen",
+    "land": "Frankreich/Spanien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1802,
+    "lat": 42.68,
+    "lng": 0.03
+  },
+  "Mulhacén": {
+    "hoehe_m": 3479,
+    "gebirge": "Sierra Nevada",
+    "land": "Spanien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1840,
+    "lat": 37.05,
+    "lng": -3.31
+  },
+  "Musala": {
+    "hoehe_m": 2925,
+    "gebirge": "Rila",
+    "land": "Bulgarien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1741,
+    "lat": 42.18,
+    "lng": 23.59
+  },
+  "Moldoveanu": {
+    "hoehe_m": 2544,
+    "gebirge": "Karpaten",
+    "land": "Rumänien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1860,
+    "lat": 45.6,
+    "lng": 24.73
+  },
+  "Rysy": {
+    "hoehe_m": 2503,
+    "gebirge": "Tatra",
+    "land": "Polen/Slowakei",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1793,
+    "lat": 49.18,
+    "lng": 20.09
+  },
+  "Snæfellsjökull": {
+    "hoehe_m": 1446,
+    "gebirge": "Island",
+    "land": "Island",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1754,
+    "lat": 64.81,
+    "lng": -23.78
+  },
+  "Pico": {
+    "hoehe_m": 2351,
+    "gebirge": "Azoren",
+    "land": "Portugal",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1718,
+    "lat": 38.47,
+    "lng": -28.4
+  },
+  "Triglav": {
+    "hoehe_m": 2864,
+    "gebirge": "Julische Alpen",
+    "land": "Slowenien",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1778,
+    "lat": 46.38,
+    "lng": 13.84
+  },
+  "Großvenediger": {
+    "hoehe_m": 3666,
+    "gebirge": "Alpen",
+    "land": "Österreich",
+    "kontinent": "Europa",
+    "erstbesteigung_jahr": 1841,
+    "lat": 47.11,
+    "lng": 12.35
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "Deutschland": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 9.6,
+    "jahresniederschlag_mm": 700,
+    "kontinent": "Europa"
+  },
+  "Frankreich": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 11.0,
+    "jahresniederschlag_mm": 640,
+    "kontinent": "Europa"
+  },
+  "Spanien": {
+    "klimazone": "Mediterran",
+    "durchschnitt_temp_c": 13.3,
+    "jahresniederschlag_mm": 636,
+    "kontinent": "Europa"
+  },
+  "Italien": {
+    "klimazone": "Mediterran",
+    "durchschnitt_temp_c": 12.0,
+    "jahresniederschlag_mm": 832,
+    "kontinent": "Europa"
+  },
+  "Vereinigtes Königreich": {
+    "klimazone": "Ozeanisch",
+    "durchschnitt_temp_c": 9.5,
+    "jahresniederschlag_mm": 1220,
+    "kontinent": "Europa"
+  },
+  "Schweden": {
+    "klimazone": "Subarktisch",
+    "durchschnitt_temp_c": 2.1,
+    "jahresniederschlag_mm": 624,
+    "kontinent": "Europa"
+  },
+  "Norwegen": {
+    "klimazone": "Subarktisch",
+    "durchschnitt_temp_c": 1.5,
+    "jahresniederschlag_mm": 1400,
+    "kontinent": "Europa"
+  },
+  "Finnland": {
+    "klimazone": "Subarktisch",
+    "durchschnitt_temp_c": 3.0,
+    "jahresniederschlag_mm": 611,
+    "kontinent": "Europa"
+  },
+  "Polen": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 8.2,
+    "jahresniederschlag_mm": 600,
+    "kontinent": "Europa"
+  },
+  "Österreich": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 8.0,
+    "jahresniederschlag_mm": 1100,
+    "kontinent": "Europa"
+  },
+  "Schweiz": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 7.0,
+    "jahresniederschlag_mm": 1500,
+    "kontinent": "Europa"
+  },
+  "Portugal": {
+    "klimazone": "Mediterran",
+    "durchschnitt_temp_c": 15.6,
+    "jahresniederschlag_mm": 854,
+    "kontinent": "Europa"
+  },
+  "Griechenland": {
+    "klimazone": "Mediterran",
+    "durchschnitt_temp_c": 16.0,
+    "jahresniederschlag_mm": 652,
+    "kontinent": "Europa"
+  },
+  "Russland": {
+    "klimazone": "Kontinental",
+    "durchschnitt_temp_c": -5.1,
+    "jahresniederschlag_mm": 460,
+    "kontinent": "Europa"
+  },
+  "Ukraine": {
+    "klimazone": "Kontinental",
+    "durchschnitt_temp_c": 7.8,
+    "jahresniederschlag_mm": 565,
+    "kontinent": "Europa"
+  },
+  "China": {
+    "klimazone": "Kontinental",
+    "durchschnitt_temp_c": 8.7,
+    "jahresniederschlag_mm": 645,
+    "kontinent": "Asien"
+  },
+  "Indien": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 24.7,
+    "jahresniederschlag_mm": 1083,
+    "kontinent": "Asien"
+  },
+  "Japan": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 12.4,
+    "jahresniederschlag_mm": 1668,
+    "kontinent": "Asien"
+  },
+  "Saudi-Arabien": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 24.9,
+    "jahresniederschlag_mm": 59,
+    "kontinent": "Asien"
+  },
+  "Indonesien": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 26.0,
+    "jahresniederschlag_mm": 2702,
+    "kontinent": "Asien"
+  },
+  "Pakistan": {
+    "klimazone": "Arid",
+    "durchschnitt_temp_c": 20.0,
+    "jahresniederschlag_mm": 254,
+    "kontinent": "Asien"
+  },
+  "Iran": {
+    "klimazone": "Arid",
+    "durchschnitt_temp_c": 17.5,
+    "jahresniederschlag_mm": 252,
+    "kontinent": "Asien"
+  },
+  "Thailand": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 28.0,
+    "jahresniederschlag_mm": 1476,
+    "kontinent": "Asien"
+  },
+  "Vietnam": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 24.5,
+    "jahresniederschlag_mm": 1821,
+    "kontinent": "Asien"
+  },
+  "Philippinen": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 26.6,
+    "jahresniederschlag_mm": 2348,
+    "kontinent": "Asien"
+  },
+  "Südkorea": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 11.0,
+    "jahresniederschlag_mm": 1274,
+    "kontinent": "Asien"
+  },
+  "Malaysia": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 27.0,
+    "jahresniederschlag_mm": 2875,
+    "kontinent": "Asien"
+  },
+  "Bangladesh": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 25.0,
+    "jahresniederschlag_mm": 2666,
+    "kontinent": "Asien"
+  },
+  "Nepal": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 9.0,
+    "jahresniederschlag_mm": 1500,
+    "kontinent": "Asien"
+  },
+  "Mongolei": {
+    "klimazone": "Kontinental",
+    "durchschnitt_temp_c": -0.4,
+    "jahresniederschlag_mm": 241,
+    "kontinent": "Asien"
+  },
+  "Ägypten": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 21.4,
+    "jahresniederschlag_mm": 18,
+    "kontinent": "Afrika"
+  },
+  "Nigeria": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 26.6,
+    "jahresniederschlag_mm": 1150,
+    "kontinent": "Afrika"
+  },
+  "Äthiopien": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 16.1,
+    "jahresniederschlag_mm": 848,
+    "kontinent": "Afrika"
+  },
+  "Südafrika": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 17.5,
+    "jahresniederschlag_mm": 464,
+    "kontinent": "Afrika"
+  },
+  "Kenia": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 19.0,
+    "jahresniederschlag_mm": 630,
+    "kontinent": "Afrika"
+  },
+  "Ghana": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 27.1,
+    "jahresniederschlag_mm": 1100,
+    "kontinent": "Afrika"
+  },
+  "Tansania": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 21.3,
+    "jahresniederschlag_mm": 800,
+    "kontinent": "Afrika"
+  },
+  "DR Kongo": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 24.7,
+    "jahresniederschlag_mm": 1543,
+    "kontinent": "Afrika"
+  },
+  "Marokko": {
+    "klimazone": "Mediterran",
+    "durchschnitt_temp_c": 17.5,
+    "jahresniederschlag_mm": 346,
+    "kontinent": "Afrika"
+  },
+  "Algerien": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 12.3,
+    "jahresniederschlag_mm": 89,
+    "kontinent": "Afrika"
+  },
+  "Libyen": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 22.5,
+    "jahresniederschlag_mm": 25,
+    "kontinent": "Afrika"
+  },
+  "Madagaskar": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 21.6,
+    "jahresniederschlag_mm": 1513,
+    "kontinent": "Afrika"
+  },
+  "Sudan": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 26.6,
+    "jahresniederschlag_mm": 416,
+    "kontinent": "Afrika"
+  },
+  "Mosambik": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 24.0,
+    "jahresniederschlag_mm": 1032,
+    "kontinent": "Afrika"
+  },
+  "Namibia": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 18.3,
+    "jahresniederschlag_mm": 254,
+    "kontinent": "Afrika"
+  },
+  "USA": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 11.8,
+    "jahresniederschlag_mm": 715,
+    "kontinent": "Nordamerika"
+  },
+  "Kanada": {
+    "klimazone": "Subarktisch",
+    "durchschnitt_temp_c": -5.6,
+    "jahresniederschlag_mm": 537,
+    "kontinent": "Nordamerika"
+  },
+  "Mexiko": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 18.3,
+    "jahresniederschlag_mm": 758,
+    "kontinent": "Nordamerika"
+  },
+  "Kuba": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 25.2,
+    "jahresniederschlag_mm": 1335,
+    "kontinent": "Nordamerika"
+  },
+  "Guatemala": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 19.8,
+    "jahresniederschlag_mm": 1996,
+    "kontinent": "Nordamerika"
+  },
+  "Jamaika": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 26.9,
+    "jahresniederschlag_mm": 1974,
+    "kontinent": "Nordamerika"
+  },
+  "Panama": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 25.7,
+    "jahresniederschlag_mm": 3217,
+    "kontinent": "Nordamerika"
+  },
+  "Costa Rica": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 20.4,
+    "jahresniederschlag_mm": 3041,
+    "kontinent": "Nordamerika"
+  },
+  "Brasilien": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 22.0,
+    "jahresniederschlag_mm": 1761,
+    "kontinent": "Südamerika"
+  },
+  "Argentinien": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 14.9,
+    "jahresniederschlag_mm": 591,
+    "kontinent": "Südamerika"
+  },
+  "Peru": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 12.6,
+    "jahresniederschlag_mm": 1738,
+    "kontinent": "Südamerika"
+  },
+  "Chile": {
+    "klimazone": "Mediterran",
+    "durchschnitt_temp_c": 8.6,
+    "jahresniederschlag_mm": 1522,
+    "kontinent": "Südamerika"
+  },
+  "Kolumbien": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 21.8,
+    "jahresniederschlag_mm": 3240,
+    "kontinent": "Südamerika"
+  },
+  "Venezuela": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 26.4,
+    "jahresniederschlag_mm": 1875,
+    "kontinent": "Südamerika"
+  },
+  "Ecuador": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 15.5,
+    "jahresniederschlag_mm": 2087,
+    "kontinent": "Südamerika"
+  },
+  "Bolivien": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 9.7,
+    "jahresniederschlag_mm": 1146,
+    "kontinent": "Südamerika"
+  },
+  "Uruguay": {
+    "klimazone": "Gemäßigt",
+    "durchschnitt_temp_c": 17.5,
+    "jahresniederschlag_mm": 1200,
+    "kontinent": "Südamerika"
+  },
+  "Paraguay": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 23.0,
+    "jahresniederschlag_mm": 1316,
+    "kontinent": "Südamerika"
+  },
+  "Australien": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 21.8,
+    "jahresniederschlag_mm": 534,
+    "kontinent": "Ozeanien"
+  },
+  "Neuseeland": {
+    "klimazone": "Ozeanisch",
+    "durchschnitt_temp_c": 12.5,
+    "jahresniederschlag_mm": 1732,
+    "kontinent": "Ozeanien"
+  },
+  "Papua-Neuguinea": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 26.1,
+    "jahresniederschlag_mm": 3142,
+    "kontinent": "Ozeanien"
+  },
+  "Fidschi": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 25.5,
+    "jahresniederschlag_mm": 3000,
+    "kontinent": "Ozeanien"
+  },
+  "Singapur": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 27.0,
+    "jahresniederschlag_mm": 2166,
+    "kontinent": "Asien"
+  },
+  "Sri Lanka": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 27.2,
+    "jahresniederschlag_mm": 1712,
+    "kontinent": "Asien"
+  },
+  "Türkei": {
+    "klimazone": "Mediterran",
+    "durchschnitt_temp_c": 12.4,
+    "jahresniederschlag_mm": 593,
+    "kontinent": "Asien"
+  },
+  "Irak": {
+    "klimazone": "Wüste",
+    "durchschnitt_temp_c": 22.7,
+    "jahresniederschlag_mm": 216,
+    "kontinent": "Asien"
+  },
+  "Kasachstan": {
+    "klimazone": "Kontinental",
+    "durchschnitt_temp_c": 7.3,
+    "jahresniederschlag_mm": 250,
+    "kontinent": "Asien"
+  },
+  "Afghanistan": {
+    "klimazone": "Arid",
+    "durchschnitt_temp_c": 12.1,
+    "jahresniederschlag_mm": 327,
+    "kontinent": "Asien"
+  },
+  "Tunesien": {
+    "klimazone": "Mediterran",
+    "durchschnitt_temp_c": 18.0,
+    "jahresniederschlag_mm": 207,
+    "kontinent": "Afrika"
+  },
+  "Angola": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 21.4,
+    "jahresniederschlag_mm": 1010,
+    "kontinent": "Afrika"
+  },
+  "Sambia": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 20.0,
+    "jahresniederschlag_mm": 1020,
+    "kontinent": "Afrika"
+  },
+  "Senegal": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 27.8,
+    "jahresniederschlag_mm": 686,
+    "kontinent": "Afrika"
+  },
+  "Kamerun": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 24.3,
+    "jahresniederschlag_mm": 1604,
+    "kontinent": "Afrika"
+  },
+  "Simbabwe": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 18.9,
+    "jahresniederschlag_mm": 657,
+    "kontinent": "Afrika"
+  },
+  "Myanmar": {
+    "klimazone": "Tropisch",
+    "durchschnitt_temp_c": 25.9,
+    "jahresniederschlag_mm": 2090,
+    "kontinent": "Asien"
+  }
+}

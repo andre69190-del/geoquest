@@ -1,0 +1,106 @@
+{
+  "groenland": {
+    "word": "GROENLAND",
+    "validWords": {
+      "de": [
+        "LAND",
+        "RAND",
+        "DORN",
+        "GRAN",
+        "LORD",
+        "LORE",
+        "ORAL",
+        "GORE",
+        "ROLE",
+        "LOAN",
+        "LANE",
+        "NOEL",
+        "LARD",
+        "DALE",
+        "OGLE",
+        "DONE",
+        "LONE",
+        "LODEN",
+        "ORLAND",
+        "LARGE",
+        "OLDER",
+        "DRONE",
+        "ALONG",
+        "RONDEL",
+        "LOANED",
+        "GLARED"
+      ],
+      "en": [
+        "LAND",
+        "RAND",
+        "LORD",
+        "LORE",
+        "ORAL",
+        "GORE",
+        "ROLE",
+        "LOAN",
+        "LANE",
+        "NOEL",
+        "LARD",
+        "DONE",
+        "LONE",
+        "DRONE",
+        "OLDER",
+        "LARGE"
+      ],
+      "pl": [
+        "LAND",
+        "GRAN",
+        "LORD",
+        "LORE",
+        "ORAL",
+        "GORE",
+        "ROLE",
+        "LANE"
+      ]
+    }
+  },
+  "madagaskar": {
+    "word": "MADAGASKAR",
+    "validWords": {
+      "de": [
+        "KARA",
+        "SAGA",
+        "MARK",
+        "MARS",
+        "GRAM",
+        "KARMA",
+        "DRAMA",
+        "ADAM",
+        "RAGAS",
+        "MARKA",
+        "SARKA",
+        "AGRA",
+        "MARKS",
+        "GRAMS",
+        "DRAMAS"
+      ],
+      "en": [
+        "KARA",
+        "SAGA",
+        "MARK",
+        "MARS",
+        "GRAM",
+        "KARMA",
+        "DRAMA",
+        "ADAM",
+        "MARKS",
+        "GRAMS"
+      ],
+      "pl": [
+        "KARA",
+        "SAGA",
+        "MARK",
+        "MARS",
+        "GRAM",
+        "KARMA",
+        "DRAMA"
+      ]
+    }
+  }
+}

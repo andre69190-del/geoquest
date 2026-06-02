@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 445 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.77 MB | 970 Spielmodi | verify: 159/159 | data: 60 JSON
+**Version:** Phase 449 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.83 MB | 999 Spielmodi | verify: 159/159 | data: 60 JSON
 
 ---
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 779 Modi, 779/779/779 — perfekte Konsistenz.
+**Aktueller Stand:** 999 Modi, 999/999/999 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -1115,7 +1115,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **408** | patch_408.py | **UX: _exitToMenu() — nach Spielende kehrt die App zur Kategorie des gespielten Modus zurueck (11x Exit-Button ersetzt, smooth scroll, filterCat gesetzt)** |
 | **409** | patch_409.py | **Phase 409/410: Zuletzt-gespielt-Leiste (letzte 5 Modi, gq_recent), Gespielt-Tracking (gq_played), Fortschrittsbalken X/Y im Akkordeon-Header, Carousel-Grid-Reinit-Fix fuer Gaming** |
 | **410** | patch_410.py | **Phase 410: 3 neue Gaming-Modi — games_match_protagonist (42 Helden), games_match_pub_is_dev (0 neue Felder!), hl_games_howlong (37 Spielzeiten). protagonist+howlong_h zu games_extended. 774->777 Modi** |
-| **411** | patch_411.py | **Phase 411: wendekreis_m + zuladung_kg zu 431 Autos (91/74 gefüllt), 2 neue Auto-Modi hl_auto_wendekreis (lowerWins!) + hl_auto_zuladung. 777->779 Modi** |
+| **411** | patch_411.py | **Phase 411: wendekreis_m + zuladung_kg zu 431 Autos (91/74 gefüllt), 2 neue Auto-Modi hl_auto_wendekreis (lowerWins!) + hl_auto_zuladung. 777->999 Modi** |
 | **412** | patch_412.py | **Bugfixes + 6 neue Konsolen-Modi: match_konsolen_handheld→Ja/Nein, timeline_auto_bj, generate_spieluebersicht Syntax-Error, hl_konsolen_ram/cpu, match_konsolen_generation/land. iOS Timeline-Bug (5 Fixes). MODES: 802→802** |
 | **413** | patch_413.py | **Neue Kategorie 'Regionale Kultur & Kulinarik': 30 D-A-CH Einträge (Speisen, Weine, Getränke, Brauchtum), 6 Modi (Pin, 3x Match Land/Region/Kategorie, 2x H/L Alkohol/Saison), validate_content + i18n DE/EN/PL. MODES: 802→802** |
 | **414** | patch_414.py | **Dual Menu Layout: Tab-Ansicht (3 Reihen × 8 Kategorien) + Settings-Toggle gq_menu_layout (accordion/tabs). CSS-Klasse tabs-mode blendet Akkordeon-Header aus, Carousel-Logik unverändert. verify: 146/146** |
@@ -1149,6 +1149,10 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **442** | patch_442.py | **Geo-Pin-Welle: 13 neue Pin-Modi fuer Hunde, Brettspiele, Robotik, Serien, Musik, Webkultur, Literatur, Themeparks, Wirtschaft, Filme, Konsolen, Gaming-Hardware, Gartenbau. SPRACHEN_DATA Duplikat-Bug behoben.** |
 | **444** | patch_444.py | **Nationalparks weltweit: 80 Parks, 7 neue Modi (Fläche, Gründung, Land, Kontinent, Ökosystem, Pin, WS Yellowstone). LAND_LATLON +14 Länder. i18n-Doppelquote-Bug gefixt.** |
 | **445** | patch_445.py | **Hauptstädte weltweit: 80 Hauptstädte, 7 Modi (Einwohner, Höhe, Kontinent, Größenklasse, Pin, Äquator-Distanz, WS Reykjavik). LAND_LATLON erweitert.** |
+| **446** | patch_446.py | **Inseln weltweit: 80 Inseln, 7 Modi (Fläche, Einwohner, Ozean, Kontinent, Pin, Äquator, WS Grönland). verify: 191/191.** |
+| **447** | patch_447.py | **Gipfel & Berge: 80 Gipfel, 7 Modi (Höhe, Gebirge, Kontinent, Pin, Erstbesteigung, Timeline, WS Himalaya). verify: 191/191.** |
+| **448** | patch_448.py | **Klimazonen weltweit: 80 Länder, 7 Modi (Zone, Kontinent, Temp, Niederschlag, Pin, Kälter, WS Monsun). verify: 191/191.** |
+| **449** | patch_449.py | **Ozeane & Meere: 80 Gewässer, 8 Modi (Fläche, Tiefe, Typ, Kontinent, Kleiner, Seichter, Name, WS Atlantik). 999 Modi erreicht! verify: 191/191.** |
 
 ---
 

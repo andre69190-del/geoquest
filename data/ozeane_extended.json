@@ -1,0 +1,482 @@
+{
+  "Pazifischer Ozean": {
+    "typ": "Ozean",
+    "flaeche_km2": 165250000,
+    "max_tiefe_m": 11034,
+    "kontinent_grenze": "Asien/Amerika/Ozeanien"
+  },
+  "Atlantischer Ozean": {
+    "typ": "Ozean",
+    "flaeche_km2": 106460000,
+    "max_tiefe_m": 8376,
+    "kontinent_grenze": "Amerika/Europa/Afrika"
+  },
+  "Indischer Ozean": {
+    "typ": "Ozean",
+    "flaeche_km2": 70560000,
+    "max_tiefe_m": 7258,
+    "kontinent_grenze": "Asien/Afrika/Ozeanien"
+  },
+  "Südlicher Ozean": {
+    "typ": "Ozean",
+    "flaeche_km2": 21960000,
+    "max_tiefe_m": 7235,
+    "kontinent_grenze": "Antarktis"
+  },
+  "Arktischer Ozean": {
+    "typ": "Ozean",
+    "flaeche_km2": 14056000,
+    "max_tiefe_m": 5567,
+    "kontinent_grenze": "Nordamerika/Europa/Asien"
+  },
+  "Mittelmeer": {
+    "typ": "Meer",
+    "flaeche_km2": 2500000,
+    "max_tiefe_m": 5267,
+    "kontinent_grenze": "Europa/Afrika/Asien"
+  },
+  "Arabisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 3862000,
+    "max_tiefe_m": 5803,
+    "kontinent_grenze": "Asien/Afrika"
+  },
+  "Südchinesisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 3500000,
+    "max_tiefe_m": 5016,
+    "kontinent_grenze": "Asien"
+  },
+  "Karibisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 2754000,
+    "max_tiefe_m": 7686,
+    "kontinent_grenze": "Nordamerika/Südamerika"
+  },
+  "Ostchinesisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 1249000,
+    "max_tiefe_m": 2719,
+    "kontinent_grenze": "Asien"
+  },
+  "Gelbes Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 380000,
+    "max_tiefe_m": 152,
+    "kontinent_grenze": "Asien"
+  },
+  "Japanisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 978000,
+    "max_tiefe_m": 3742,
+    "kontinent_grenze": "Asien"
+  },
+  "Nordpolarmeer": {
+    "typ": "Meer",
+    "flaeche_km2": 14056000,
+    "max_tiefe_m": 5567,
+    "kontinent_grenze": "Nordamerika/Europa/Asien"
+  },
+  "Ostsee": {
+    "typ": "Meer",
+    "flaeche_km2": 377000,
+    "max_tiefe_m": 459,
+    "kontinent_grenze": "Europa"
+  },
+  "Nordsee": {
+    "typ": "Meer",
+    "flaeche_km2": 570000,
+    "max_tiefe_m": 725,
+    "kontinent_grenze": "Europa"
+  },
+  "Schwarzes Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 436000,
+    "max_tiefe_m": 2212,
+    "kontinent_grenze": "Europa/Asien"
+  },
+  "Rotes Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 438000,
+    "max_tiefe_m": 3040,
+    "kontinent_grenze": "Afrika/Asien"
+  },
+  "Kaspisches Meer": {
+    "typ": "See",
+    "flaeche_km2": 371000,
+    "max_tiefe_m": 1025,
+    "kontinent_grenze": "Europa/Asien"
+  },
+  "Persischer Golf": {
+    "typ": "Golf",
+    "flaeche_km2": 239000,
+    "max_tiefe_m": 90,
+    "kontinent_grenze": "Asien"
+  },
+  "Golf von Mexiko": {
+    "typ": "Golf",
+    "flaeche_km2": 1550000,
+    "max_tiefe_m": 4384,
+    "kontinent_grenze": "Nordamerika"
+  },
+  "Golf von Bengalen": {
+    "typ": "Golf",
+    "flaeche_km2": 2172000,
+    "max_tiefe_m": 4694,
+    "kontinent_grenze": "Asien"
+  },
+  "Golf von Aden": {
+    "typ": "Golf",
+    "flaeche_km2": 410000,
+    "max_tiefe_m": 3785,
+    "kontinent_grenze": "Asien/Afrika"
+  },
+  "Golf von Guinea": {
+    "typ": "Golf",
+    "flaeche_km2": 1533000,
+    "max_tiefe_m": 5208,
+    "kontinent_grenze": "Afrika"
+  },
+  "Golf von Oman": {
+    "typ": "Golf",
+    "flaeche_km2": 181000,
+    "max_tiefe_m": 3731,
+    "kontinent_grenze": "Asien"
+  },
+  "Golf von Alaska": {
+    "typ": "Golf",
+    "flaeche_km2": 1533000,
+    "max_tiefe_m": 5075,
+    "kontinent_grenze": "Nordamerika"
+  },
+  "Straße von Gibraltar": {
+    "typ": "Meerenge",
+    "flaeche_km2": 11000,
+    "max_tiefe_m": 900,
+    "kontinent_grenze": "Europa/Afrika"
+  },
+  "Straße von Malakka": {
+    "typ": "Meerenge",
+    "flaeche_km2": 65000,
+    "max_tiefe_m": 3821,
+    "kontinent_grenze": "Asien"
+  },
+  "Straße von Hormus": {
+    "typ": "Meerenge",
+    "flaeche_km2": 35000,
+    "max_tiefe_m": 100,
+    "kontinent_grenze": "Asien"
+  },
+  "Suezkanal": {
+    "typ": "Meerenge",
+    "flaeche_km2": 2000,
+    "max_tiefe_m": 24,
+    "kontinent_grenze": "Afrika/Asien"
+  },
+  "Panamakanal": {
+    "typ": "Meerenge",
+    "flaeche_km2": 1700,
+    "max_tiefe_m": 26,
+    "kontinent_grenze": "Nordamerika/Südamerika"
+  },
+  "Korallenmeer": {
+    "typ": "Meer",
+    "flaeche_km2": 4791000,
+    "max_tiefe_m": 9140,
+    "kontinent_grenze": "Ozeanien"
+  },
+  "Tasmanische See": {
+    "typ": "Meer",
+    "flaeche_km2": 2300000,
+    "max_tiefe_m": 5466,
+    "kontinent_grenze": "Ozeanien"
+  },
+  "Weddellmeer": {
+    "typ": "Meer",
+    "flaeche_km2": 2800000,
+    "max_tiefe_m": 4500,
+    "kontinent_grenze": "Antarktis"
+  },
+  "Barentssee": {
+    "typ": "Meer",
+    "flaeche_km2": 1405000,
+    "max_tiefe_m": 600,
+    "kontinent_grenze": "Europa/Arktis"
+  },
+  "Beringsee": {
+    "typ": "Meer",
+    "flaeche_km2": 2261000,
+    "max_tiefe_m": 4097,
+    "kontinent_grenze": "Asien/Nordamerika"
+  },
+  "Karasee": {
+    "typ": "Meer",
+    "flaeche_km2": 926000,
+    "max_tiefe_m": 620,
+    "kontinent_grenze": "Asien/Arktis"
+  },
+  "Laptewsee": {
+    "typ": "Meer",
+    "flaeche_km2": 700000,
+    "max_tiefe_m": 3385,
+    "kontinent_grenze": "Asien/Arktis"
+  },
+  "Ostsibirische See": {
+    "typ": "Meer",
+    "flaeche_km2": 987000,
+    "max_tiefe_m": 155,
+    "kontinent_grenze": "Asien/Arktis"
+  },
+  "Beaufortsee": {
+    "typ": "Meer",
+    "flaeche_km2": 450000,
+    "max_tiefe_m": 4683,
+    "kontinent_grenze": "Nordamerika/Arktis"
+  },
+  "Labradorsee": {
+    "typ": "Meer",
+    "flaeche_km2": 841000,
+    "max_tiefe_m": 4316,
+    "kontinent_grenze": "Nordamerika"
+  },
+  "Irmingersee": {
+    "typ": "Meer",
+    "flaeche_km2": 780000,
+    "max_tiefe_m": 3000,
+    "kontinent_grenze": "Europa/Nordamerika"
+  },
+  "Norweigsche See": {
+    "typ": "Meer",
+    "flaeche_km2": 1380000,
+    "max_tiefe_m": 3970,
+    "kontinent_grenze": "Europa"
+  },
+  "Grönlandsee": {
+    "typ": "Meer",
+    "flaeche_km2": 1205000,
+    "max_tiefe_m": 4846,
+    "kontinent_grenze": "Europa/Arktis"
+  },
+  "Adria": {
+    "typ": "Meer",
+    "flaeche_km2": 138600,
+    "max_tiefe_m": 1233,
+    "kontinent_grenze": "Europa"
+  },
+  "Ägäis": {
+    "typ": "Meer",
+    "flaeche_km2": 214000,
+    "max_tiefe_m": 3543,
+    "kontinent_grenze": "Europa/Asien"
+  },
+  "Tyrrhenisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 275000,
+    "max_tiefe_m": 3719,
+    "kontinent_grenze": "Europa"
+  },
+  "Ligurisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 15000,
+    "max_tiefe_m": 2850,
+    "kontinent_grenze": "Europa"
+  },
+  "Balearisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 86000,
+    "max_tiefe_m": 2121,
+    "kontinent_grenze": "Europa"
+  },
+  "Ionisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 169000,
+    "max_tiefe_m": 5267,
+    "kontinent_grenze": "Europa"
+  },
+  "Alboran-See": {
+    "typ": "Meer",
+    "flaeche_km2": 53000,
+    "max_tiefe_m": 1535,
+    "kontinent_grenze": "Europa/Afrika"
+  },
+  "Sargassosee": {
+    "typ": "Meer",
+    "flaeche_km2": 3100000,
+    "max_tiefe_m": 7200,
+    "kontinent_grenze": "Nordamerika"
+  },
+  "Philippinisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 5695000,
+    "max_tiefe_m": 10540,
+    "kontinent_grenze": "Asien"
+  },
+  "Andamanensee": {
+    "typ": "Meer",
+    "flaeche_km2": 600000,
+    "max_tiefe_m": 4198,
+    "kontinent_grenze": "Asien"
+  },
+  "Javanesisches Meer": {
+    "typ": "Meer",
+    "flaeche_km2": 433000,
+    "max_tiefe_m": 1272,
+    "kontinent_grenze": "Asien"
+  },
+  "Sulawesisee": {
+    "typ": "Meer",
+    "flaeche_km2": 280000,
+    "max_tiefe_m": 6220,
+    "kontinent_grenze": "Asien"
+  },
+  "Molukensee": {
+    "typ": "Meer",
+    "flaeche_km2": 307000,
+    "max_tiefe_m": 4970,
+    "kontinent_grenze": "Asien"
+  },
+  "Bandasee": {
+    "typ": "Meer",
+    "flaeche_km2": 695000,
+    "max_tiefe_m": 7440,
+    "kontinent_grenze": "Asien"
+  },
+  "Timorseee": {
+    "typ": "Meer",
+    "flaeche_km2": 610000,
+    "max_tiefe_m": 3300,
+    "kontinent_grenze": "Asien/Ozeanien"
+  },
+  "Arafurasee": {
+    "typ": "Meer",
+    "flaeche_km2": 1037000,
+    "max_tiefe_m": 3680,
+    "kontinent_grenze": "Asien/Ozeanien"
+  },
+  "Straße von Bab el-Mandeb": {
+    "typ": "Meerenge",
+    "flaeche_km2": 10000,
+    "max_tiefe_m": 323,
+    "kontinent_grenze": "Afrika/Asien"
+  },
+  "Drakespassage": {
+    "typ": "Meerenge",
+    "flaeche_km2": 293000,
+    "max_tiefe_m": 4800,
+    "kontinent_grenze": "Südamerika/Antarktis"
+  },
+  "Magellanstraße": {
+    "typ": "Meerenge",
+    "flaeche_km2": 12000,
+    "max_tiefe_m": 1150,
+    "kontinent_grenze": "Südamerika"
+  },
+  "Beringstraße": {
+    "typ": "Meerenge",
+    "flaeche_km2": 95000,
+    "max_tiefe_m": 55,
+    "kontinent_grenze": "Asien/Nordamerika"
+  },
+  "Dänemarkstraße": {
+    "typ": "Meerenge",
+    "flaeche_km2": 178000,
+    "max_tiefe_m": 850,
+    "kontinent_grenze": "Europa/Arktis"
+  },
+  "Straße von Dover": {
+    "typ": "Meerenge",
+    "flaeche_km2": 8500,
+    "max_tiefe_m": 174,
+    "kontinent_grenze": "Europa"
+  },
+  "Straße von Sizilien": {
+    "typ": "Meerenge",
+    "flaeche_km2": 18000,
+    "max_tiefe_m": 316,
+    "kontinent_grenze": "Europa/Afrika"
+  },
+  "Meerenge von Messina": {
+    "typ": "Meerenge",
+    "flaeche_km2": 4000,
+    "max_tiefe_m": 260,
+    "kontinent_grenze": "Europa"
+  },
+  "Oresund": {
+    "typ": "Meerenge",
+    "flaeche_km2": 2000,
+    "max_tiefe_m": 48,
+    "kontinent_grenze": "Europa"
+  },
+  "Bosporus": {
+    "typ": "Meerenge",
+    "flaeche_km2": 700,
+    "max_tiefe_m": 110,
+    "kontinent_grenze": "Europa/Asien"
+  },
+  "Dardanellen": {
+    "typ": "Meerenge",
+    "flaeche_km2": 2000,
+    "max_tiefe_m": 100,
+    "kontinent_grenze": "Europa/Asien"
+  },
+  "Straße von Korea": {
+    "typ": "Meerenge",
+    "flaeche_km2": 34000,
+    "max_tiefe_m": 228,
+    "kontinent_grenze": "Asien"
+  },
+  "Straße von Tsugaru": {
+    "typ": "Meerenge",
+    "flaeche_km2": 15000,
+    "max_tiefe_m": 449,
+    "kontinent_grenze": "Asien"
+  },
+  "Palk-Straße": {
+    "typ": "Meerenge",
+    "flaeche_km2": 30000,
+    "max_tiefe_m": 81,
+    "kontinent_grenze": "Asien"
+  },
+  "Sundastraße": {
+    "typ": "Meerenge",
+    "flaeche_km2": 30000,
+    "max_tiefe_m": 1000,
+    "kontinent_grenze": "Asien"
+  },
+  "Lombok-Straße": {
+    "typ": "Meerenge",
+    "flaeche_km2": 10000,
+    "max_tiefe_m": 1400,
+    "kontinent_grenze": "Asien"
+  },
+  "Makassarstraße": {
+    "typ": "Meerenge",
+    "flaeche_km2": 150000,
+    "max_tiefe_m": 2100,
+    "kontinent_grenze": "Asien"
+  },
+  "Roßmeer": {
+    "typ": "Meer",
+    "flaeche_km2": 960000,
+    "max_tiefe_m": 4200,
+    "kontinent_grenze": "Antarktis"
+  },
+  "Amundsenmeer": {
+    "typ": "Meer",
+    "flaeche_km2": 98000,
+    "max_tiefe_m": 585,
+    "kontinent_grenze": "Antarktis"
+  },
+  "Baffin-Bucht": {
+    "typ": "Meer",
+    "flaeche_km2": 689000,
+    "max_tiefe_m": 2136,
+    "kontinent_grenze": "Nordamerika/Arktis"
+  },
+  "Hudsonbai": {
+    "typ": "Meer",
+    "flaeche_km2": 1230000,
+    "max_tiefe_m": 270,
+    "kontinent_grenze": "Nordamerika"
+  }
+}
