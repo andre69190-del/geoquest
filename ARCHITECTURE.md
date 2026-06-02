@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 418 (Stand: Juni 2026)
+**Version:** Phase 419 (Stand: Juni 2026)
 **Build:** gen.py → 1.49 MB | GeoQuest.html → 5.32 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
@@ -1123,6 +1123,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **416** | patch_416.py | **Tab-Ansicht fix: Inline-Grid statt CSS-Klassen, Accordion-Header im JS-Rendering ausgeblendet. PWA-Banner: Schließen-Button für Android/Desktop, gq_pwa_dismissed in localStorage, Reaktivierung in Einstellungen** |
 | **417** | patch_417.py | **Settings-Modal bereinigt: Dark Mode entfernt (doppelt mit Profilseite), Untertitel hinzugefügt. Tab-Ansicht + PWA-Dismiss aus Phase 416 finalisiert.** |
 | **418** | patch_418.py | **Settings-Modal final: Menü-Ansicht entfernt (steht auf Profilseite), App installieren vor Schließen, saubere Reihenfolge: Heimatregion→TTS→Hardcore→Raster→Feedback→App installieren→Schließen** |
+| **419** | patch_419.py | **Settings-Modal bugfix: App-installieren Button-Code war fälschlich in onclick eingebettet → korrektes IIFE-Pattern. Modal finale Struktur: Heimatregion→TTS→Hardcore→Raster→Feedback→App installieren (conditional)→Schließen** |
 
 ---
 

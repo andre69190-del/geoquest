@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 418. Settings-Modal final: Menü-Ansicht entfernt (steht auf Profilseite), App installieren vor Schließen, saubere Reihenfolge: Heimatregion→TTS→Hardcore→Raster→Feedback→App installieren→Schließen. verify: 146/146."
+git commit -m "Content: Phase 419. Settings-Modal bugfix: App-installieren Button-Code war fälschlich in onclick eingebettet → korrektes IIFE-Pattern. Modal finale Struktur: Heimatregion→TTS→Hardcore→Raster→Feedback→App installieren (conditional)→Schließen. verify: 146/146."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

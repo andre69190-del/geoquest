@@ -15876,7 +15876,13 @@ function renderSettingsModal(){
       <span style="font-size:1.2rem">\u{1F4A1}</span>
       <div><div style="font-weight:700;font-size:.85rem">Feedback &amp; Kontakt</div><div style="font-size:.75rem;color:var(--text3)">Fehler melden, Ideen einreichen</div></div>
     </div>
-    <button class="btn-g" style="margin-bottom:0" onclick="    ${!_isInStandaloneMode()&&(S.pwaPrompt||(_isIOS()&&!_isInStandaloneMode()))?`<button onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(r=>{localStorage.setItem('gq_pwa_dismissed','1');S.pwaPrompt=null;render();});}" class="btn-g" style="margin-bottom:.5rem">\u{1F4F1} App installieren</button>`:''}
+    ${(()=>{
+      if(!_isInStandaloneMode()&&S.pwaPrompt){
+        return '<button onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(function(r){localStorage.setItem(\'gq_pwa_dismissed\',\'1\');S.pwaPrompt=null;render();});}'  
+          +' class="btn-g" style="margin-bottom:.5rem">\u{1F4F1}\uFE0F App installieren</button>';
+      }
+      return '';
+    })()}
     <button onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
   </div></div>`;
 }
