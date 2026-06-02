@@ -9636,6 +9636,30 @@ function genUniversalMatchQ(cat){
   if(!data||!data.length)return null;
   const item=data[~~(rng()*data.length)];
   const cor=item.c;
+  /* Categories where answers are cities — use only same-cat distractors */
+  const _CITY_CATS=new Set(["breitengrad_match","metrostaedte"]);
+  if(_CITY_CATS.has(cat)){
+    /* Filter: only real city-pairs (no °, ~, commas) */
+    const _cityData=data.filter(function(d){return !/[°~,]/.test(d.n)&&!/[°~,]/.test(d.c);});
+    if(!_cityData.length)return null;
+    const item2=_cityData[~~(rng()*_cityData.length)];
+    const cor2=item2.c;
+    const samePool=[...new Set(_cityData.map(function(d){return d.c;}).filter(function(v){return v!==cor2;}))];
+    if(samePool.length<3)return null;
+    const wrong2=sh(samePool).slice(0,3);
+    const opts2=sh([cor2,...wrong2]);
+    const modeObj3=(typeof MODES!=="undefined"?MODES:[]).find(function(m){return m.id==="uk_"+cat;})||{};
+    return{type:"uk_match",cat,prompt:_tc(modeObj3.prompt)||t("q_uk_match"),subj:item2.n,ans:_tcc(cor2),opts:opts2.map(_tcc),lid:"ukm_"+cat+"_"+item2.n.replace(/\s+/g,"_"),cc:null};
+  }
+  /* ---- dead code below, replaced above ---- */
+  if(false&&_CITY_CATS.has(cat)){
+    const samePool=[...new Set(data.map(function(d){return d.c;}).filter(function(v){return v!==cor;}))];
+    const wrong=sh(samePool).slice(0,3);
+    if(wrong.length<3)return null;
+    const opts=sh([cor,...wrong]);
+    const modeObj2=(typeof MODES!=="undefined"?MODES:[]).find(function(m){return m.id==="uk_"+cat;})||{};
+    return{type:"uk_match",cat,prompt:_tc(modeObj2.prompt)||t("q_uk_match"),subj:item.n,ans:_tcc(cor),opts:opts.map(_tcc),lid:"ukm_"+cat+"_"+item.n.replace(/\s+/g,"_"),cc:null};
+  }
   /* Build distractor pool: all unique countries across ALL match categories */
   const _matchCats=["getraenke","streetfood","kaese","suessspeisen","kaffee","taenze","kleidung",
     "instrumente","literatur","wahrzeichen","feste","begruessung","feiertage","erfindungen",
