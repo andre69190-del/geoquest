@@ -68,7 +68,7 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 ### SEKTION 3 -- Kategorie-Showcase (Was kann GeoQuest?)
 
-**Ueberschrift:** "936 Modi. 20 Welten. Unendlich viel zu entdecken."
+**Ueberschrift:** "999 Modi. 30 Welten. Unendlich viel zu entdecken."
 
 **Grid mit 21 Kategorie-Karten** (4x5 oder 5x4), je Karte:
 - Grosses Emoji / Icon
@@ -236,4 +236,4 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 ---
 
-*Konzept erstellt: Juni 2026 | Phase 449 | GeoQuest v5.83 MB | 718 Modi*
+*Konzept erstellt: Juni 2026 | Phase 449 | GeoQuest v5.83 MB | 999 Modi*

@@ -449,4 +449,3 @@ if 'boardgame_jahr' not in tl:
     print('  OK  timeline.json: boardgame_jahr hinzugefügt')
 
 print('\nPatch 439 fertig!')
-         

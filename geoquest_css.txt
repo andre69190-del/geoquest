@@ -721,4 +721,4 @@ input[type=text]::placeholder{color:var(--text3)}
   .pu-bar{max-width:840px;margin-left:auto;margin-right:auto}
   .map-container{height:calc(100vh - 160px)!important;max-height:none!important;min-height:320px!important}
   .map-scr{display:grid;grid-template-columns:1fr 280px;grid-template-rows:auto auto 1fr auto auto;column-gap:1.2rem;max-width:100%}
-  .map-scr>.hud{grid-column:1/-1
+  .map-scr>.hud{grid-column:1/-1}

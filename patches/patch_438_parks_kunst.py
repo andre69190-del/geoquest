@@ -569,4 +569,4 @@ patch(GEN, [
     (REPL_OLD,        REPL_NEW,        'Replace-Kette: PARKS_WS/PARKS/KUNST_WS/KUNST'),
 ])
 
-print('\n✅ Patch 438 abgeschlossen! Führe jetzt `python3 check_session.py` aus
+print('\n✅ Patch 438 abgeschlossen! Führe jetzt `python3 check_session.py` aus.')

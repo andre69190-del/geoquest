@@ -201,4 +201,9 @@ GeoQuest Phase [NUMMER]: Neue Kategorie "[Kategorie-Name]"
 | README.md | ✅ Phase 421 | ✅ 802 | auto via post_phase |
 | landing.html | — | ✅ (prüfen nach gen.py-Rebuild) | ggf. updaten |
 | GeoQuest_Website_Konzept.md | ✅ Phase 421 | ✅ 802 | auto via post_phase |
-| GeoQuest_Spieluebe
+| GeoQuest_Spieluebersicht.html | ✅ Phase 421 | ✅ 802 | auto via post_phase |
+| unlock_and_push.bat | ✅ Phase 421 | ✅ 146/146 | auto via post_phase |
+| landing.html URL | — | https://geoquest-web-git-main-andre69190-7419s-projects.vercel.app/ | deploy via unlock_and_push.bat |
+| GEOQUEST_GAMES_REPORT.md | ❌ Phase ~99 | ❌ 55 | historisch, nicht updaten |
+
+---

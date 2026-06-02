@@ -4,7 +4,7 @@
   <!-- Hauptseite / Landing Page -->
   <url>
     <loc>https://geoquest-web.vercel.app/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Landing Page explizit -->
   <url>
     <loc>https://geoquest-web.vercel.app/landing.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Impressum -->
   <url>
     <loc>https://geoquest-web.vercel.app/impressum.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Datenschutz -->
   <url>
     <loc>https://geoquest-web.vercel.app/datenschutz.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
