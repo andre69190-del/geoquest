@@ -11,7 +11,8 @@
     { "src": "sw.js",           "use": "@vercel/static" },
     { "src": "manifest.json",   "use": "@vercel/static" },
     { "src": "icon.svg",        "use": "@vercel/static" },
-    { "src": "cities_data.js",  "use": "@vercel/static" }
+    { "src": "cities_data.js",  "use": "@vercel/static" },
+    { "src": "google1b9fe4381920a332.html", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/sw.js",              "dest": "/sw.js" },
@@ -23,6 +24,7 @@
     { "src": "/landing.html",       "dest": "/landing.html" },
     { "src": "/impressum.html",     "dest": "/impressum.html" },
     { "src": "/datenschutz.html",   "dest": "/datenschutz.html" },
+    { "src": "/google1b9fe4381920a332.html", "dest": "/google1b9fe4381920a332.html", "headers": { "Content-Type": "text/html" } },
     { "src": "/([^/]+\\.json)",     "dest": "/$1" },
     { "src": "/(.*)",               "dest": "/index.html" }
   ]
