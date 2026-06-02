@@ -15307,13 +15307,14 @@ function renderRecentBar(){
     var m=MODES.find(function(x){return x.id===mid;});
     if(!m)return'';
     var title=modeTitle(m);
-    return'<button onclick="startGame(\''+mid+'\')" style="display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:72px;max-width:90px;padding:6px 4px;background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;cursor:pointer;flex-shrink:0;line-height:1.2;text-align:center" title="'+title+'">'
+    return'<button onclick="startGame(\''+mid+'\')" style="display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:76px;max-width:92px;width:76px;padding:7px 5px;background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;cursor:pointer;flex-shrink:0;line-height:1.2;text-align:center" title="'+title+'">'
       +'<span style="font-size:1.3rem">'+m.icon+'</span>'
-      +'<span style="font-size:.58rem;color:var(--text2);font-weight:600;overflow:hidden;max-width:80px;white-space:nowrap;text-overflow:ellipsis">'+title+'</span>'
+      +'<span style="font-size:.58rem;color:var(--text2);font-weight:600;overflow:hidden;width:100%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-word;hyphens:auto">'+title+'</span>'
       +'</button>';
   }).join('');
   bar.innerHTML='<div style="padding:8px 0 6px"><div style="font-size:.63rem;font-weight:700;color:var(--text3);letter-spacing:.7px;margin-bottom:5px">ZULETZT GESPIELT</div>'
-    +'<div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none">'+items+'</div></div>';
+    +'<div style="position:relative"><div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;-ms-overflow-style:none;padding-right:24px">'+items+'</div>'
+    +'<div style="position:absolute;top:0;right:0;bottom:4px;width:32px;background:linear-gradient(to right,transparent,var(--bg));pointer-events:none"></div></div></div>';
 }
 window.renderRecentBar=renderRecentBar;
 
