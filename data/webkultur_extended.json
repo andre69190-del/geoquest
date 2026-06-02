@@ -1,42 +1,366 @@
 {
-  "YouTube": {"kategorie": "Plattform", "start_jahr": 2005, "reichweite_mio": 2700.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Jawed Karim"},
-  "Facebook": {"kategorie": "Plattform", "start_jahr": 2004, "reichweite_mio": 3050.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Mark Zuckerberg"},
-  "Instagram": {"kategorie": "Plattform", "start_jahr": 2010, "reichweite_mio": 2000.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Kevin Systrom"},
-  "TikTok": {"kategorie": "Plattform", "start_jahr": 2016, "reichweite_mio": 1700.0, "ursprungsland": "China", "gruender_creator": "Zhang Yiming"},
-  "Twitter/X": {"kategorie": "Plattform", "start_jahr": 2006, "reichweite_mio": 650.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Jack Dorsey"},
-  "WhatsApp": {"kategorie": "Plattform", "start_jahr": 2009, "reichweite_mio": 2780.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Jan Koum"},
-  "Snapchat": {"kategorie": "Plattform", "start_jahr": 2011, "reichweite_mio": 750.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Evan Spiegel"},
-  "Reddit": {"kategorie": "Plattform", "start_jahr": 2005, "reichweite_mio": 430.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Steve Huffman"},
-  "Twitch": {"kategorie": "Plattform", "start_jahr": 2011, "reichweite_mio": 240.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Justin Kan"},
-  "LinkedIn": {"kategorie": "Plattform", "start_jahr": 2003, "reichweite_mio": 1000.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Reid Hoffman"},
-  "Pinterest": {"kategorie": "Plattform", "start_jahr": 2010, "reichweite_mio": 465.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Ben Silbermann"},
-  "Telegram": {"kategorie": "Plattform", "start_jahr": 2013, "reichweite_mio": 900.0, "ursprungsland": "Russland", "gruender_creator": "Pavel Durov"},
-  "Discord": {"kategorie": "Plattform", "start_jahr": 2015, "reichweite_mio": 500.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Jason Citron"},
-  "Wikipedia": {"kategorie": "Plattform", "start_jahr": 2001, "reichweite_mio": 1700.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Jimmy Wales"},
-  "MrBeast": {"kategorie": "Creator", "start_jahr": 2012, "reichweite_mio": 320.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Jimmy Donaldson"},
-  "PewDiePie": {"kategorie": "Creator", "start_jahr": 2010, "reichweite_mio": 111.0, "ursprungsland": "Schweden", "gruender_creator": "Felix Kjellberg"},
-  "T-Series": {"kategorie": "Creator", "start_jahr": 2006, "reichweite_mio": 270.0, "ursprungsland": "Indien", "gruender_creator": "Bhushan Kumar"},
-  "Charli D'Amelio": {"kategorie": "Creator", "start_jahr": 2019, "reichweite_mio": 155.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Charli D'Amelio"},
-  "Khaby Lame": {"kategorie": "Creator", "start_jahr": 2020, "reichweite_mio": 162.0, "ursprungsland": "Italien", "gruender_creator": "Khaby Lame"},
-  "MKBHD": {"kategorie": "Creator", "start_jahr": 2008, "reichweite_mio": 18.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Marques Brownlee"},
-  "Ninja": {"kategorie": "Creator", "start_jahr": 2011, "reichweite_mio": 24.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Tyler Blevins"},
-  "Bibisbeautypalace": {"kategorie": "Creator", "start_jahr": 2012, "reichweite_mio": 7.0, "ursprungsland": "Deutschland", "gruender_creator": "Bianca Heinicke"},
-  "LeFloid": {"kategorie": "Creator", "start_jahr": 2011, "reichweite_mio": 3.0, "ursprungsland": "Deutschland", "gruender_creator": "Florian Mundt"},
-  "Gronkh": {"kategorie": "Creator", "start_jahr": 2010, "reichweite_mio": 4.5, "ursprungsland": "Deutschland", "gruender_creator": "Erik Range"},
-  "Nyan Cat": {"kategorie": "Meme", "start_jahr": 2011, "reichweite_mio": 220.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Chris Torres"},
-  "Harlem Shake": {"kategorie": "Meme", "start_jahr": 2013, "reichweite_mio": 480.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Baauer"},
-  "Ice Bucket Challenge": {"kategorie": "Meme", "start_jahr": 2014, "reichweite_mio": 1200.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Pete Frates"},
-  "Rickroll": {"kategorie": "Meme", "start_jahr": 2007, "reichweite_mio": 600.0, "ursprungsland": "Vereinigtes Königreich", "gruender_creator": "Rick Astley"},
-  "Gangnam Style": {"kategorie": "Meme", "start_jahr": 2012, "reichweite_mio": 5300.0, "ursprungsland": "Südkorea", "gruender_creator": "PSY"},
-  "Dogecoin-Meme": {"kategorie": "Meme", "start_jahr": 2013, "reichweite_mio": 410.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Billy Markus"},
-  "iPhone (1. Gen.)": {"kategorie": "Hardware", "start_jahr": 2007, "reichweite_mio": 1500.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Steve Jobs"},
-  "iPad": {"kategorie": "Hardware", "start_jahr": 2010, "reichweite_mio": 630.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Steve Jobs"},
-  "Nintendo Switch": {"kategorie": "Hardware", "start_jahr": 2017, "reichweite_mio": 143.0, "ursprungsland": "Japan", "gruender_creator": "Nintendo"},
-  "PlayStation 5": {"kategorie": "Hardware", "start_jahr": 2020, "reichweite_mio": 54.0, "ursprungsland": "Japan", "gruender_creator": "Sony"},
-  "Oculus Quest 2": {"kategorie": "Hardware", "start_jahr": 2020, "reichweite_mio": 20.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Meta"},
-  "AirPods": {"kategorie": "Hardware", "start_jahr": 2016, "reichweite_mio": 300.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Apple"},
-  "Raspberry Pi": {"kategorie": "Hardware", "start_jahr": 2012, "reichweite_mio": 57.0, "ursprungsland": "Vereinigtes Königreich", "gruender_creator": "Eben Upton"},
-  "GoPro": {"kategorie": "Hardware", "start_jahr": 2004, "reichweite_mio": 38.0, "ursprungsland": "Vereinigte Staaten", "gruender_creator": "Nick Woodman"},
-  "Twitch Streamer xQc": {"kategorie": "Creator", "start_jahr": 2014, "reichweite_mio": 12.5, "ursprungsland": "Kanada", "gruender_creator": "Félix Lengyel"},
-  "Luisito Comunica": {"kategorie": "Creator", "start_jahr": 2013, "reichweite_mio": 40.0, "ursprungsland": "Mexiko", "gruender_creator": "Luis Arturo Villar"}
+  "YouTube": {
+    "kategorie": "Plattform",
+    "start_jahr": 2005,
+    "reichweite_mio": 2700.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jawed Karim"
+  },
+  "Facebook": {
+    "kategorie": "Plattform",
+    "start_jahr": 2004,
+    "reichweite_mio": 3050.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Mark Zuckerberg"
+  },
+  "Instagram": {
+    "kategorie": "Plattform",
+    "start_jahr": 2010,
+    "reichweite_mio": 2000.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Kevin Systrom"
+  },
+  "TikTok": {
+    "kategorie": "Plattform",
+    "start_jahr": 2016,
+    "reichweite_mio": 1700.0,
+    "ursprungsland": "China",
+    "gruender_creator": "Zhang Yiming"
+  },
+  "Twitter/X": {
+    "kategorie": "Plattform",
+    "start_jahr": 2006,
+    "reichweite_mio": 650.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jack Dorsey"
+  },
+  "WhatsApp": {
+    "kategorie": "Plattform",
+    "start_jahr": 2009,
+    "reichweite_mio": 2780.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jan Koum"
+  },
+  "Snapchat": {
+    "kategorie": "Plattform",
+    "start_jahr": 2011,
+    "reichweite_mio": 750.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Evan Spiegel"
+  },
+  "Reddit": {
+    "kategorie": "Plattform",
+    "start_jahr": 2005,
+    "reichweite_mio": 430.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Steve Huffman"
+  },
+  "Twitch": {
+    "kategorie": "Plattform",
+    "start_jahr": 2011,
+    "reichweite_mio": 240.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Justin Kan"
+  },
+  "LinkedIn": {
+    "kategorie": "Plattform",
+    "start_jahr": 2003,
+    "reichweite_mio": 1000.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Reid Hoffman"
+  },
+  "Pinterest": {
+    "kategorie": "Plattform",
+    "start_jahr": 2010,
+    "reichweite_mio": 465.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Ben Silbermann"
+  },
+  "Telegram": {
+    "kategorie": "Plattform",
+    "start_jahr": 2013,
+    "reichweite_mio": 900.0,
+    "ursprungsland": "Russland",
+    "gruender_creator": "Pavel Durov"
+  },
+  "Discord": {
+    "kategorie": "Plattform",
+    "start_jahr": 2015,
+    "reichweite_mio": 500.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jason Citron"
+  },
+  "Wikipedia": {
+    "kategorie": "Plattform",
+    "start_jahr": 2001,
+    "reichweite_mio": 1700.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jimmy Wales"
+  },
+  "MrBeast": {
+    "kategorie": "Creator",
+    "start_jahr": 2012,
+    "reichweite_mio": 320.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jimmy Donaldson"
+  },
+  "PewDiePie": {
+    "kategorie": "Creator",
+    "start_jahr": 2010,
+    "reichweite_mio": 111.0,
+    "ursprungsland": "Schweden",
+    "gruender_creator": "Felix Kjellberg"
+  },
+  "T-Series": {
+    "kategorie": "Creator",
+    "start_jahr": 2006,
+    "reichweite_mio": 270.0,
+    "ursprungsland": "Indien",
+    "gruender_creator": "Bhushan Kumar"
+  },
+  "Charli D'Amelio": {
+    "kategorie": "Creator",
+    "start_jahr": 2019,
+    "reichweite_mio": 155.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Charli D'Amelio"
+  },
+  "Khaby Lame": {
+    "kategorie": "Creator",
+    "start_jahr": 2020,
+    "reichweite_mio": 162.0,
+    "ursprungsland": "Italien",
+    "gruender_creator": "Khaby Lame"
+  },
+  "MKBHD": {
+    "kategorie": "Creator",
+    "start_jahr": 2008,
+    "reichweite_mio": 18.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Marques Brownlee"
+  },
+  "Ninja": {
+    "kategorie": "Creator",
+    "start_jahr": 2011,
+    "reichweite_mio": 24.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Tyler Blevins"
+  },
+  "Bibisbeautypalace": {
+    "kategorie": "Creator",
+    "start_jahr": 2012,
+    "reichweite_mio": 7.0,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Bianca Heinicke"
+  },
+  "LeFloid": {
+    "kategorie": "Creator",
+    "start_jahr": 2011,
+    "reichweite_mio": 3.0,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Florian Mundt"
+  },
+  "Gronkh": {
+    "kategorie": "Creator",
+    "start_jahr": 2010,
+    "reichweite_mio": 4.5,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Erik Range"
+  },
+  "Nyan Cat": {
+    "kategorie": "Meme",
+    "start_jahr": 2011,
+    "reichweite_mio": 220.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Chris Torres"
+  },
+  "Harlem Shake": {
+    "kategorie": "Meme",
+    "start_jahr": 2013,
+    "reichweite_mio": 480.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Baauer"
+  },
+  "Ice Bucket Challenge": {
+    "kategorie": "Meme",
+    "start_jahr": 2014,
+    "reichweite_mio": 1200.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Pete Frates"
+  },
+  "Rickroll": {
+    "kategorie": "Meme",
+    "start_jahr": 2007,
+    "reichweite_mio": 600.0,
+    "ursprungsland": "Vereinigtes Königreich",
+    "gruender_creator": "Rick Astley"
+  },
+  "Gangnam Style": {
+    "kategorie": "Meme",
+    "start_jahr": 2012,
+    "reichweite_mio": 5300.0,
+    "ursprungsland": "Südkorea",
+    "gruender_creator": "PSY"
+  },
+  "Dogecoin-Meme": {
+    "kategorie": "Meme",
+    "start_jahr": 2013,
+    "reichweite_mio": 410.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Billy Markus"
+  },
+  "iPhone (1. Gen.)": {
+    "kategorie": "Hardware",
+    "start_jahr": 2007,
+    "reichweite_mio": 1500.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Steve Jobs"
+  },
+  "iPad": {
+    "kategorie": "Hardware",
+    "start_jahr": 2010,
+    "reichweite_mio": 630.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Steve Jobs"
+  },
+  "Nintendo Switch": {
+    "kategorie": "Hardware",
+    "start_jahr": 2017,
+    "reichweite_mio": 143.0,
+    "ursprungsland": "Japan",
+    "gruender_creator": "Nintendo"
+  },
+  "PlayStation 5": {
+    "kategorie": "Hardware",
+    "start_jahr": 2020,
+    "reichweite_mio": 54.0,
+    "ursprungsland": "Japan",
+    "gruender_creator": "Sony"
+  },
+  "Oculus Quest 2": {
+    "kategorie": "Hardware",
+    "start_jahr": 2020,
+    "reichweite_mio": 20.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Meta"
+  },
+  "AirPods": {
+    "kategorie": "Hardware",
+    "start_jahr": 2016,
+    "reichweite_mio": 300.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Apple"
+  },
+  "Raspberry Pi": {
+    "kategorie": "Hardware",
+    "start_jahr": 2012,
+    "reichweite_mio": 57.0,
+    "ursprungsland": "Vereinigtes Königreich",
+    "gruender_creator": "Eben Upton"
+  },
+  "GoPro": {
+    "kategorie": "Hardware",
+    "start_jahr": 2004,
+    "reichweite_mio": 38.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Nick Woodman"
+  },
+  "Twitch Streamer xQc": {
+    "kategorie": "Creator",
+    "start_jahr": 2014,
+    "reichweite_mio": 12.5,
+    "ursprungsland": "Kanada",
+    "gruender_creator": "Félix Lengyel"
+  },
+  "Luisito Comunica": {
+    "kategorie": "Creator",
+    "start_jahr": 2013,
+    "reichweite_mio": 40.0,
+    "ursprungsland": "Mexiko",
+    "gruender_creator": "Luis Arturo Villar"
+  },
+  "Threads": {
+    "kategorie": "Plattform",
+    "start_jahr": 2023,
+    "reichweite_mio": 175.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Mark Zuckerberg"
+  },
+  "BeReal": {
+    "kategorie": "Plattform",
+    "start_jahr": 2020,
+    "reichweite_mio": 40.0,
+    "ursprungsland": "Frankreich",
+    "gruender_creator": "Alexis Barreyat"
+  },
+  "Mastodon": {
+    "kategorie": "Plattform",
+    "start_jahr": 2016,
+    "reichweite_mio": 12.0,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Eugen Rochko"
+  },
+  "MrBeast Burger": {
+    "kategorie": "Meme",
+    "start_jahr": 2020,
+    "reichweite_mio": 300.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jimmy Donaldson"
+  },
+  "Among Us": {
+    "kategorie": "Meme",
+    "start_jahr": 2018,
+    "reichweite_mio": 500.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "InnerSloth"
+  },
+  "ChatGPT": {
+    "kategorie": "Plattform",
+    "start_jahr": 2022,
+    "reichweite_mio": 180.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Sam Altman"
+  },
+  "Wordle": {
+    "kategorie": "Meme",
+    "start_jahr": 2021,
+    "reichweite_mio": 300.0,
+    "ursprungsland": "Vereinigtes Königreich",
+    "gruender_creator": "Josh Wardle"
+  },
+  "Apple Vision Pro": {
+    "kategorie": "Hardware",
+    "start_jahr": 2024,
+    "reichweite_mio": 1.5,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Apple"
+  },
+  "Linus Tech Tips": {
+    "kategorie": "Creator",
+    "start_jahr": 2008,
+    "reichweite_mio": 16.0,
+    "ursprungsland": "Kanada",
+    "gruender_creator": "Linus Sebastian"
+  },
+  "MontanaBlack": {
+    "kategorie": "Creator",
+    "start_jahr": 2011,
+    "reichweite_mio": 5.5,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Marcel Thomas"
+  },
+  "Ali Abdaal": {
+    "kategorie": "Creator",
+    "start_jahr": 2017,
+    "reichweite_mio": 5.5,
+    "ursprungsland": "Vereinigtes Königreich",
+    "gruender_creator": "Ali Abdaal"
+  },
+  "Samsung Galaxy": {
+    "kategorie": "Hardware",
+    "start_jahr": 2009,
+    "reichweite_mio": 1000.0,
+    "ursprungsland": "Südkorea",
+    "gruender_creator": "Samsung"
+  }
 }

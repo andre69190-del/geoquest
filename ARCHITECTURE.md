@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 435 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.54 MB | 886 Spielmodi | verify: 159/159 | data: 60 JSON
+**Version:** Phase 437 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.56 MB | 893 Spielmodi | verify: 159/159 | data: 60 JSON
 
 ---
 
@@ -1136,10 +1136,12 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **429** | patch_429.py | **2 neue Kategorien: Literatur & Comics (40 Werke: Roman/Comic/Manga/Kinderbuch global) + KI, Robotik & Hardware (40 Systeme: WRO/FLL/Arduino/ChatGPT/AlphaGo/KUKA). Fix: MYTH_DATA/ARCH_DATA Placeholder-Bug (Phase 428 retrofix). 12 neue Modi: hl_lit_sales/release + lit_match_autor/land/protagonist + timeline_lit_release + hl_robot_jahr + robot_match_kategorie/land/entwickler/fakt + timeline_robot_jahr. MODES 840->852. verify: 152/152** |
 | **430** | patch_430.py | **Phase 430: Wort-Schmiede für Literatur & Robotik/KI — ws_lit_protagonist (TINTENHERZ) + ws_robot_name (MASCHINENLERNEN). Neue Dateien: literatur_ws.json, robotik_ws.json. MODES: 859→861** |
 | **431** | patch_431.py | **Phase 431: Kategorien Anatomie & Medizin + Wirtschaft & Marken. 13 neue Modi (6 Medizin, 7 Wirtschaft). Neue Dateien: medizin_extended.json (40), wirtschaft_extended.json (40), medizin_ws.json, wirtschaft_ws.json. MODES: 861→874** |
-| **432** | patch_432.py | **Bugfix: match_regional_land öffnete sich nicht (genRegionalMatchQ pool.length<3 statt <2 — D-A-CH hat nur 3 Länder). Fix: Threshold auf 2 gesenkt, dis=p.slice(0,Math.min(3,p.length)). verify: 163/163** |
-| **433** | patch_433.py | **Phase 433: EU-Erweiterung Regionale Kulinarik (30→80 Einträge, 22 EU-Länder). Bugfix match_regional_land: fixedPool entfernt (nutzt jetzt Echtdaten). validate_content.py: LAND-Enum EU-weit. Label: Regionale & EU-Kulinarik. verify: 163/163** |
-| **434** | patch_434.py | **Phase 434: Datenbasis-Upgrade. generate_spieluebersicht.py: 3 neue Fn-Mappings (0 Warnings). literatur_extended 40→80, robotik_extended 40→80. timeline.json: robot_jahr auf 80 Einträge. verify: 163/163** |
-| **435** | patch_435.py | **Phase 435 (432-Fortsetzung): Kategorien Weltgeschichte & Imperien + Webkultur & Social Media. 12 neue Modi. 4 neue JSON-Dateien (je 40 Einträge). Generatoren, i18n DE/EN/PL, timeline. verify: 163/163. MODES: 874→886** |
+| **432** | patch_432.py | **Bugfix: match_regional_land öffnete sich nicht (genRegionalMatchQ pool.length<3 statt <2 — D-A-CH hat nur 3 Länder). Fix: Threshold auf 2 gesenkt, dis=p.slice(0,Math.min(3,p.length)). verify: 165/165** |
+| **433** | patch_433.py | **Phase 433: EU-Erweiterung Regionale Kulinarik (30→80 Einträge, 22 EU-Länder). Bugfix match_regional_land: fixedPool entfernt (nutzt jetzt Echtdaten). validate_content.py: LAND-Enum EU-weit. Label: Regionale & EU-Kulinarik. verify: 165/165** |
+| **434** | patch_434.py | **Phase 434: Datenbasis-Upgrade. generate_spieluebersicht.py: 3 neue Fn-Mappings (0 Warnings). literatur_extended 40→80, robotik_extended 40→80. timeline.json: robot_jahr auf 80 Einträge. verify: 165/165** |
+| **435** | patch_435.py | **Phase 435 (432-Fortsetzung): Kategorien Weltgeschichte & Imperien + Webkultur & Social Media. 12 neue Modi. 4 neue JSON-Dateien (je 40 Einträge). Generatoren, i18n DE/EN/PL, timeline. verify: 165/165. MODES: 874→886** |
+| **436** | patch_436.py | **Phase 436: WS Mythologie (PANTHEON, UNTERWELT) + WS Architektur (WOLKENKRATZER, FUNDAMENT) + hl_arch_laenge + timeline_arch_baujahr + myth_match_tier. 7 neue Modi. post_phase.py: landing.html Auto-Update. MODES: 886→893** |
+| **437** | patch_437.py | **Phase 437: Datenbasis-Erweiterung. Serien 98→105 (+7), Filme 40→46 (+6), Musik 40→46 (+6), Webkultur 40→52 (+12), Wirtschaft 40→49 (+9). Serien-Enum-Fix (Sci-Fi→Sci-Fi/Mystery, Vergangenheit→Historisch). Timeline eco+web refreshed. verify: 165/165** |
 
 ---
 

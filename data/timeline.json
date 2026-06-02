@@ -3169,6 +3169,14 @@
         "year": 1926
       },
       {
+        "n": "Porsche AG",
+        "year": 1931
+      },
+      {
+        "n": "Lego Group",
+        "year": 1932
+      },
+      {
         "n": "Volkswagen",
         "year": 1937
       },
@@ -3183,6 +3191,14 @@
       {
         "n": "Ferrari",
         "year": 1939
+      },
+      {
+        "n": "IKEA",
+        "year": 1943
+      },
+      {
+        "n": "H&M",
+        "year": 1947
       },
       {
         "n": "Adidas",
@@ -3225,6 +3241,10 @@
         "year": 1991
       },
       {
+        "n": "NVIDIA",
+        "year": 1993
+      },
+      {
         "n": "Amazon",
         "year": 1994
       },
@@ -3257,12 +3277,28 @@
         "year": 2003
       },
       {
+        "n": "Klarna",
+        "year": 2005
+      },
+      {
         "n": "Spotify",
         "year": 2006
       },
       {
         "n": "Zalando",
         "year": 2008
+      },
+      {
+        "n": "Airbnb",
+        "year": 2008
+      },
+      {
+        "n": "Uber",
+        "year": 2009
+      },
+      {
+        "n": "Delivery Hero",
+        "year": 2011
       },
       {
         "n": "Stellantis",
@@ -3483,7 +3519,15 @@
         "year": 2008
       },
       {
+        "n": "Linus Tech Tips",
+        "year": 2008
+      },
+      {
         "n": "WhatsApp",
+        "year": 2009
+      },
+      {
+        "n": "Samsung Galaxy",
         "year": 2009
       },
       {
@@ -3524,6 +3568,10 @@
       },
       {
         "n": "Nyan Cat",
+        "year": 2011
+      },
+      {
+        "n": "MontanaBlack",
         "year": 2011
       },
       {
@@ -3579,8 +3627,20 @@
         "year": 2016
       },
       {
+        "n": "Mastodon",
+        "year": 2016
+      },
+      {
         "n": "Nintendo Switch",
         "year": 2017
+      },
+      {
+        "n": "Ali Abdaal",
+        "year": 2017
+      },
+      {
+        "n": "Among Us",
+        "year": 2018
       },
       {
         "n": "Charli D'Amelio",
@@ -3597,6 +3657,195 @@
       {
         "n": "Oculus Quest 2",
         "year": 2020
+      },
+      {
+        "n": "BeReal",
+        "year": 2020
+      },
+      {
+        "n": "MrBeast Burger",
+        "year": 2020
+      },
+      {
+        "n": "Wordle",
+        "year": 2021
+      },
+      {
+        "n": "ChatGPT",
+        "year": 2022
+      },
+      {
+        "n": "Threads",
+        "year": 2023
+      },
+      {
+        "n": "Apple Vision Pro",
+        "year": 2024
+      }
+    ]
+  },
+  "arch_baujahr": {
+    "prompt": "Welches Bauwerk ist älter?",
+    "items": [
+      {
+        "n": "Parthenon",
+        "year": -438
+      },
+      {
+        "n": "Kolosseum",
+        "year": 80
+      },
+      {
+        "n": "Hagia Sophia",
+        "year": 537
+      },
+      {
+        "n": "Angkor Wat",
+        "year": 1150
+      },
+      {
+        "n": "Machu Picchu",
+        "year": 1450
+      },
+      {
+        "n": "Taj Mahal",
+        "year": 1653
+      },
+      {
+        "n": "Sagrada Família",
+        "year": 1882
+      },
+      {
+        "n": "Brooklyn Bridge",
+        "year": 1883
+      },
+      {
+        "n": "Freiheitsstatue",
+        "year": 1886
+      },
+      {
+        "n": "Neuschwanstein",
+        "year": 1886
+      },
+      {
+        "n": "Eiffelturm",
+        "year": 1889
+      },
+      {
+        "n": "Tower Bridge",
+        "year": 1894
+      },
+      {
+        "n": "Empire State Building",
+        "year": 1931
+      },
+      {
+        "n": "Christ the Redeemer",
+        "year": 1931
+      },
+      {
+        "n": "Hoover Dam",
+        "year": 1936
+      },
+      {
+        "n": "Golden Gate Bridge",
+        "year": 1937
+      },
+      {
+        "n": "Kariba-Damm",
+        "year": 1959
+      },
+      {
+        "n": "Grande Dixence",
+        "year": 1961
+      },
+      {
+        "n": "Assuandamm",
+        "year": 1970
+      },
+      {
+        "n": "Sydney Opera House",
+        "year": 1973
+      },
+      {
+        "n": "Bosporus Bridge",
+        "year": 1973
+      },
+      {
+        "n": "CN Tower",
+        "year": 1976
+      },
+      {
+        "n": "Itaipu-Damm",
+        "year": 1984
+      },
+      {
+        "n": "Seikan-Tunnel",
+        "year": 1988
+      },
+      {
+        "n": "Kanaltunnel",
+        "year": 1994
+      },
+      {
+        "n": "Petronas Towers",
+        "year": 1998
+      },
+      {
+        "n": "Akashi-Kaikyō-Brücke",
+        "year": 1998
+      },
+      {
+        "n": "Burj Al Arab",
+        "year": 1999
+      },
+      {
+        "n": "Øresundbrücke",
+        "year": 2000
+      },
+      {
+        "n": "Drei-Schluchten-Damm",
+        "year": 2003
+      },
+      {
+        "n": "Taipei 101",
+        "year": 2004
+      },
+      {
+        "n": "Millau-Viadukt",
+        "year": 2004
+      },
+      {
+        "n": "Lötschberg-Basistunnel",
+        "year": 2007
+      },
+      {
+        "n": "Burj Khalifa",
+        "year": 2010
+      },
+      {
+        "n": "Abraj Al-Bait",
+        "year": 2012
+      },
+      {
+        "n": "Freedom Tower",
+        "year": 2014
+      },
+      {
+        "n": "Shanghai Tower",
+        "year": 2015
+      },
+      {
+        "n": "Lotte World Tower",
+        "year": 2016
+      },
+      {
+        "n": "Gotthard-Basistunnel",
+        "year": 2016
+      },
+      {
+        "n": "Brenner-Basistunnel",
+        "year": 2032
       }
     ]
   }

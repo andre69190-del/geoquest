@@ -1,0 +1,87 @@
+{
+  "wolkenkratzer": {
+    "word": "WOLKENKRATZER",
+    "validWords": {
+      "de": [
+        "WOLKE",
+        "WOLKEN",
+        "KRONE",
+        "KRATZEN",
+        "LAKEN",
+        "KRATZE",
+        "RANKE",
+        "KORKEN",
+        "KLAR",
+        "KLAREN",
+        "WANKT",
+        "TORKEL",
+        "RANZE",
+        "ANKER",
+        "KLARE",
+        "WORTE"
+      ],
+      "en": [
+        "WORK",
+        "WOKE",
+        "LEARN",
+        "LOWER",
+        "WOKEN",
+        "TOWER"
+      ],
+      "pl": [
+        "WOLKE",
+        "KRONE",
+        "KLAR",
+        "WANKT",
+        "KRATZE"
+      ]
+    }
+  },
+  "fundament": {
+    "word": "FUNDAMENT",
+    "validWords": {
+      "de": [
+        "FUND",
+        "DAME",
+        "MUND",
+        "FADEN",
+        "DAMEN",
+        "MUNDEN",
+        "TANDEM",
+        "ATMEN",
+        "UNTEN",
+        "TAND",
+        "FAND",
+        "MUNDE",
+        "ANMUT",
+        "DATUM",
+        "DUFTEN",
+        "FUNDEN",
+        "AMEND"
+      ],
+      "en": [
+        "FUND",
+        "MEND",
+        "FEND",
+        "TUNE",
+        "DUNE",
+        "FUME",
+        "ANTE",
+        "MATE",
+        "DAME",
+        "NUDE",
+        "MUTED",
+        "FATED",
+        "NAMED",
+        "TAMED"
+      ],
+      "pl": [
+        "FUND",
+        "DAME",
+        "MUND",
+        "TANDEM",
+        "DATUM"
+      ]
+    }
+  }
+}

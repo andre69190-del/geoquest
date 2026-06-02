@@ -1,0 +1,35 @@
+{
+  "pantheon": {
+    "word": "PANTHEON",
+    "validWords": {
+      "de": [
+        "NEON", "NOTE", "PATE", "APNOE", "TONNE", "ANNO", "PHON",
+        "PATEN", "ATHEN", "POET"
+      ],
+      "en": [
+        "NEON", "NOTE", "PANT", "TONE", "ANTE", "ATONE", "PHONE",
+        "AEON", "ANON", "PONE"
+      ],
+      "pl": [
+        "NEON", "NOTE", "TONE", "ANTE"
+      ]
+    }
+  },
+  "unterwelt": {
+    "word": "UNTERWELT",
+    "validWords": {
+      "de": [
+        "WELT", "UNTER", "WERT", "RENTE", "TREU", "NETTER", "EUTER",
+        "WETTERN", "UNWERT", "TURNE", "WETTER", "TEUER", "TRETEN",
+        "ELTERN", "ERNTE", "RETTEN", "RETTE", "LETTERN"
+      ],
+      "en": [
+        "WELT", "WREN", "TERN", "RENT", "LURE", "TRUE", "RUNE",
+        "NEWT", "TUNER", "WELTER", "TURTLE", "UNLET"
+      ],
+      "pl": [
+        "WELT", "WERT", "RENTE", "TREU", "ERNTE"
+      ]
+    }
+  }
+}

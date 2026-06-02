@@ -398,5 +398,65 @@
     "drehort_land": "Deutschland",
     "oscars": 4,
     "imdb_rating": 8.1
+  },
+  "Das Leben ist schön": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1997,
+    "boxoffice_mio": 229.2,
+    "laenge_min": 116,
+    "regisseur": "Roberto Benigni",
+    "drehort_land": "Italien",
+    "oscars": 3,
+    "imdb_rating": 8.6
+  },
+  "Pulp Fiction": {
+    "kategorie": "Indie",
+    "release_jahr": 1994,
+    "boxoffice_mio": 213.9,
+    "laenge_min": 154,
+    "regisseur": "Quentin Tarantino",
+    "drehort_land": "Vereinigte Staaten",
+    "oscars": 1,
+    "imdb_rating": 8.9
+  },
+  "Barbie": {
+    "kategorie": "Blockbuster",
+    "release_jahr": 2023,
+    "boxoffice_mio": 1441.7,
+    "laenge_min": 114,
+    "regisseur": "Greta Gerwig",
+    "drehort_land": "Vereinigtes Königreich",
+    "oscars": 1,
+    "imdb_rating": 6.9
+  },
+  "Lola rennt": {
+    "kategorie": "Indie",
+    "release_jahr": 1998,
+    "boxoffice_mio": 7.3,
+    "laenge_min": 81,
+    "regisseur": "Tom Tykwer",
+    "drehort_land": "Deutschland",
+    "oscars": 0,
+    "imdb_rating": 7.7
+  },
+  "Babylon Berlin": {
+    "kategorie": "Indie",
+    "release_jahr": 2017,
+    "boxoffice_mio": 0.0,
+    "laenge_min": 60,
+    "regisseur": "Tom Tykwer",
+    "drehort_land": "Deutschland",
+    "oscars": 0,
+    "imdb_rating": 8.0
+  },
+  "Good Will Hunting": {
+    "kategorie": "Indie",
+    "release_jahr": 1997,
+    "boxoffice_mio": 225.9,
+    "laenge_min": 126,
+    "regisseur": "Gus Van Sant",
+    "drehort_land": "Vereinigte Staaten",
+    "oscars": 2,
+    "imdb_rating": 8.3
   }
 }

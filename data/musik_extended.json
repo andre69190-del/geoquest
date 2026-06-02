@@ -358,5 +358,59 @@
     "herkunftsland": "Kolumbien",
     "grammys": 3,
     "groesster_hit": "Hips Don't Lie"
+  },
+  "Billie Eilish": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2015,
+    "streams_mrd": 30.0,
+    "verkaeufe_mio": 20.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 9,
+    "groesster_hit": "Bad Guy"
+  },
+  "Nena": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1979,
+    "streams_mrd": 1.8,
+    "verkaeufe_mio": 9.0,
+    "herkunftsland": "Deutschland",
+    "grammys": 0,
+    "groesster_hit": "99 Luftballons"
+  },
+  "Capital Bra": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 2012,
+    "streams_mrd": 3.2,
+    "verkaeufe_mio": 0.5,
+    "herkunftsland": "Deutschland",
+    "grammys": 0,
+    "groesster_hit": "Cherry Lady"
+  },
+  "Bob Dylan": {
+    "kategorie": "Legend",
+    "gruendungsjahr": 1961,
+    "streams_mrd": 5.0,
+    "verkaeufe_mio": 125.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 11,
+    "groesster_hit": "Blowin' in the Wind"
+  },
+  "Fleetwood Mac": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1967,
+    "streams_mrd": 8.0,
+    "verkaeufe_mio": 120.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 1,
+    "groesster_hit": "Dreams"
+  },
+  "Cro": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 2010,
+    "streams_mrd": 1.5,
+    "verkaeufe_mio": 1.0,
+    "herkunftsland": "Deutschland",
+    "grammys": 0,
+    "groesster_hit": "Easy"
   }
 }

@@ -204,3 +204,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | inline | 434 | Datenbasis-Upgrade: generate_spieluebersicht.py 3 neue Fn-Mappings (0 Warnings). literatur_extended 40→80. robotik_extended 40→80. timeline robot_jahr auf 80. verify: 160/160 |
 
 | patch_432_hist_web (inline) | 435 | Kategorien Weltgeschichte & Imperien + Webkultur & Social Media. 12 Modi (hl_hist_ausdehnung/dauer/start, hist_match_figur, timeline_hist_start, ws_hist_renaissance, hl_web_reichweite/start, web_match_land/kategorie, timeline_web_start, ws_web_algorithmus). timeline hist_start+web_start. verify: 163/163. MODES: 874→886 |
+
+| inline gen.py | 436 | WS Mythologie (PANTHEON+UNTERWELT) + WS Architektur (WOLKENKRATZER+FUNDAMENT) + hl_arch_laenge + timeline_arch_baujahr + myth_match_tier. 7 Modi. post_phase.py: landing.html Auto-Update. Substring-Fix: MYTH_WS/ARCHITEKTUR_WS vor MYTH/ARCH in Replace-Kette. verify: 165/165. MODES: 886→893 |
+
+| inline data/*.json | 437 | Datenbasis-Erweiterung: Serien 98→105, Filme 40→46, Musik 40→46, Webkultur 40→52, Wirtschaft 40→49. Enum-Fix Serien. Timeline eco+web refreshed. verify: 165/165 |

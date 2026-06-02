@@ -276,6 +276,35 @@ def update_konzept(phase, size_str):
     ok(f"GeoQuest_Website_Konzept.md → Phase {phase}, v{size_str} MB")
 
 
+# ─── Schritt 4b: landing.html ───────────────────────────────────────────────
+
+def update_landing(modi_count, prev_modi=None):
+    landing_path = os.path.join(BASE, "landing.html")
+    if not os.path.exists(landing_path):
+        warn("landing.html nicht gefunden!")
+        return
+    raw = open(landing_path, 'rb').read()
+    if prev_modi:
+        prev_b = str(prev_modi).encode()
+        if prev_b in raw:
+            raw = raw.replace(prev_b, str(modi_count).encode())
+            open(landing_path, 'wb').write(raw)
+            ok(f"landing.html → {modi_count} Modi ({raw.count(str(modi_count).encode())}x ersetzt)")
+            return
+    # Fallback: replace all 3-4 digit numbers that look like mode counts
+    import re as _re
+    text = raw.decode('utf-8', errors='replace')
+    # Find current count pattern near "Modi"
+    m = _re.search(r'(\d{3,4})\s*(?:Spielmodi|Modi)', text)
+    if m:
+        old_count = m.group(1).encode()
+        raw = raw.replace(old_count, str(modi_count).encode())
+        open(landing_path, 'wb').write(raw)
+        ok(f"landing.html → {modi_count} Modi")
+    else:
+        warn(f"landing.html: Modi-Zahl nicht gefunden — manuell auf {modi_count} setzen!")
+
+
 # ─── Schritt 5: GeoQuest_Spielübersicht.html ────────────────────────────────
 
 def update_spieluebersicht(phase, counts):
@@ -468,6 +497,7 @@ def main():
     update_architecture(phase, summary, patch_file, size_str, counts=counts)
     update_readme(phase, new_modi=modi_count, _vscore=vscore)
     update_konzept(phase, size_str)
+    update_landing(modi_count)
     update_spieluebersicht(phase, counts)
     update_session_starter(phase, modi_count, vscore=vscore, validate_score=get_validate_score())
 

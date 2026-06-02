@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 435. Phase 435 (432-Fortsetzung): Kategorien Weltgeschichte & Imperien + Webkultur & Social Media. 12 neue Modi. 4 neue JSON-Dateien (je 40 Einträge). Generatoren, i18n DE/EN/PL, timeline. verify: 163/163. MODES: 874→886. verify: 163/163."
+git commit -m "Content: Phase 437. Phase 437: Datenbasis-Erweiterung. Serien 98→105 (+7), Filme 40→46 (+6), Musik 40→46 (+6), Webkultur 40→52 (+12), Wirtschaft 40→49 (+9). Serien-Enum-Fix (Sci-Fi→Sci-Fi/Mystery, Vergangenheit→Historisch). Timeline eco+web refreshed. verify: 165/165. verify: 165/165."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
