@@ -15801,15 +15801,35 @@ function renderProfilTab(){
   </select>`;
 
   const block4=`<div class="panel" style="padding:.85rem;margin-top:.15rem">
-    <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.75rem">EINSTELLUNGEN</div>
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.65rem">
-      <div style="color:var(--text);font-size:.88rem;font-weight:700">${S.darkMode?"🌙 Dunkles Design":"☀️ Helles Design"}</div>
-      <button onclick="S.darkMode=\!S.darkMode;applyTheme();render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">Wechseln</button>
+    <div style="color:var(--text3);font-size:.65rem;font-weight:700;letter-spacing:1px;margin-bottom:.85rem">EINSTELLUNGEN</div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
+      <div style="color:var(--text);font-size:.88rem;font-weight:700">🎨 Design</div>
+      <div style="display:flex;background:var(--bg3);border-radius:8px;padding:2px;gap:2px">
+        ${['hell','dunkel','auto'].map(m=>`<button onclick="if('${m}'==='hell'){S.darkMode=false;}else if('${m}'==='dunkel'){S.darkMode=true;}else{S.darkMode=window.matchMedia('(prefers-color-scheme:dark)').matches;}applyTheme();render()" style="font-size:.72rem;padding:4px 9px;border-radius:6px;border:none;cursor:pointer;background:${(m==='hell'&&!S.darkMode)||(m==='dunkel'&&S.darkMode)||(m==='auto'&&false)?'var(--bg)':'transparent'};color:var(--text);font-weight:${(m==='hell'&&!S.darkMode)||(m==='dunkel'&&S.darkMode)?'700':'400'}">${m==='hell'?'☀️':''}${m==='dunkel'?'🌙':''}${m==='auto'?'⚙️':''} ${m.charAt(0).toUpperCase()+m.slice(1)}</button>`).join('')}
+      </div>
     </div>
+
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="color:var(--text);font-size:.88rem;font-weight:700">🌐 ${t("language_select")}</div>
       ${langSelect}
     </div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
+      <div style="color:var(--text);font-size:.88rem;font-weight:700">📋 Menü-Ansicht</div>
+      <div style="display:flex;background:var(--bg3);border-radius:8px;padding:2px;gap:2px">
+        ${['accordion','tabs'].map(m=>{const _cur=(()=>{try{return localStorage.getItem('gq_menu_layout')||'accordion';}catch(e){return 'accordion';}})();return`<button onclick="localStorage.setItem('gq_menu_layout','${m}');render()" style="font-size:.72rem;padding:4px 10px;border-radius:6px;border:none;cursor:pointer;background:${_cur===m?'var(--bg)':'transparent'};color:var(--text);font-weight:${_cur===m?'700':'400'}">${m==='accordion'?'☰ Akkordeon':'⊟ Tabs'}</button>`;}).join('')}
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
+      <div>
+        <div style="color:var(--text);font-size:.88rem;font-weight:700">⚙️ Weitere Einstellungen</div>
+        <div style="font-size:.72rem;color:var(--text3);margin-top:2px">TTS, Heimatregion, Layout & Raster</div>
+      </div>
+      <button onclick="S.settingsModal=true;render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">Öffnen ›</button>
+    </div>
+
     <hr style="border:none;border-top:1px solid var(--border);margin:.65rem 0 .75rem">
     <div style="text-align:center;font-size:.62rem;color:var(--text3);line-height:1.9;margin-bottom:.75rem">
       <strong style="color:var(--text2)">GeoQuest</strong> &mdash; Das Geografie-Quiz<br>
@@ -15818,20 +15838,8 @@ function renderProfilTab(){
     </div>
   </div>`;
 
-  /* ── Block 5: App-Einstellungen (Layout & Raster) ── */
-  var block5=`<div style="margin:0 15px 8px 15px;padding:20px;background:var(--bg2);border-radius:15px;border:1px solid var(--border)">
-    <div style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:1px;margin-bottom:12px">APP-EINSTELLUNGEN</div>
-    <button onclick="S.settingsModal=true;render()" style="width:100%;background:var(--card-bg,var(--bg));border:2px solid var(--border);border-radius:10px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer;text-align:left">
-      <span style="font-size:1.4rem">⚙️</span>
-      <div style="flex:1">
-        <div style="font-size:.88rem;font-weight:700;color:var(--text)">Layout & Raster</div>
-        <div style="font-size:.72rem;color:var(--text3);margin-top:2px">Spaltenanzahl, Darstellung</div>
-      </div>
-      <span style="color:var(--text3);font-size:1rem">›</span>
-    </button>
-  </div>`;
 
-  /* ── Block 6: Gefahrenzone (immer am Ende) ── */
+  /* ── Block 6: Gef  /* ── Block 6: Gefahrenzone (immer am Ende) ── */
   var block6=sbUser?.email?`<div style="margin:0 15px 20px 15px;padding:16px 20px;background:var(--bg2);border-radius:15px;border:1px solid rgba(239,68,68,.35)">
     <div style="font-size:.62rem;color:#f87171;font-weight:700;letter-spacing:1px;margin-bottom:.75rem">⚠️ GEFAHRENZONE</div>
     <button class="btn-g" style="margin-bottom:.5rem;color:#f87171;border-color:#f87171" onclick="if(confirm('Wirklich abmelden?'))doLogout()">🚪 Abmelden</button>
@@ -15840,19 +15848,14 @@ function renderProfilTab(){
   const _offlineBanner=S.isOffline
     ?'<div style="background:#ef4444;color:#fff;padding:10px 16px;border-radius:8px;margin-bottom:12px;font-weight:600;text-align:center">&#x1F4F5; Du bist offline. Ergebnisse werden lokal gespeichert und beim n\u00e4chsten Online-Start automatisch synchronisiert.</div>'
     :'';
-  return '<div style="padding-bottom:100px">'+_offlineBanner+block1+block2+block3+block4+block5+block6+'</div>';
+  return '<div style="padding-bottom:100px">'+_offlineBanner+block1+block2+block3+block4+block6+'</div>';
 }
 
 /* SETTINGS MODAL */
 function renderSettingsModal(){
   return`<div class="modal-overlay" onclick="if(event.target===this){S.settingsModal=false;render()}"><div class="modal-box" style="max-width:320px">
-    <div style="font-size:1.1rem;font-weight:900;margin-bottom:1rem">\u2699\ufe0f Einstellungen</div>
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem">
-      <div style="font-weight:700">\u{1F310} Sprache / Language</div>
-      <select onchange="setLanguage(this.value)" style="font-size:.82rem;padding:.25rem .4rem;border-radius:8px;border:1.5px solid var(--border);background:var(--bg3);color:var(--text);cursor:pointer">
-        ${[["de","Deutsch"],["en","English"],["fr","Français"],["es","Español"],["it","Italiano"],["nl","Nederlands"],["pt","Portugußªs"],["pl","Polski"],["ro","Romß¢nńƒ"],["hu","Magyar"],["cs","ńŒeŚ¡tina"],["sk","Slovenńina"],["hr","Hrvatski"],["sl","SlovenŚ¡ńina"],["bg","Ð‘ÑŠÐ»Ð³Ð°Ñ€ÑÐºÐ¸"],["el","Î•Î»Î»Î·Î½Î¹ÎºÎ¬"],["da","Dansk"],["sv","Svenska"],["fi","Suomi"],["et","Eesti"],["lv","LatvieŚ¡u"],["lt","LietuviŚ³"],["mt","Malti"],["ga","Gaeilge"]].map(([l,n])=>`<option value="${l}" ${S.language===l?"selected":""}>${n}</option>`).join("")}
-      </select>
-    </div>
+    <div style="font-size:1.1rem;font-weight:900;margin-bottom:1rem">\u2699\ufe0f Weitere Einstellungen</div>
+
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="font-weight:700">\u{1F4CD} Heimatregion</div>
       <span style="font-size:.78rem;color:#3b82f6;font-weight:700;cursor:pointer" onclick="localStorage.removeItem('geoquest_last_detected_country');showToast('Erkennung wird beim n\u00e4chsten Start wiederholt')">\u21ba Reset</span>

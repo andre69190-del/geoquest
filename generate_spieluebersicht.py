@@ -229,6 +229,14 @@ def _get_count(mid, dispatch, store, sport_poi):
     if fn == 'genFixedPoolMatchQ':
         print(f'WARNING: No data count for mode \'{mid}\' (genFixedPoolMatchQ)')
         return '—', 0
+    _KONSOLEN_FNS = {'genKonsolenHL','genKonsolenMatch','genKonsolenHandheldQ'}
+    if fn in _KONSOLEN_FNS:
+        n = len(store.get('konsolen', {}))
+        return f'{n} Konsolen', n
+    _REGIONAL_FNS = {'genRegionalPinQ','genRegionalMatchQ','genRegionalHLQ'}
+    if fn in _REGIONAL_FNS:
+        n = len(store.get('regional_extended', {}))
+        return f'{n} Einträge', n
     mapping = GEN_FILE_MAP.get(fn)
     if not mapping:
         print(f'WARNING: No data count for mode \'{mid}\' (unmapped fn={fn})')
@@ -465,15 +473,4 @@ def generate(phase=269, n_tests=90):
     H.append(f'<div class="cats" id="cats">\n{cats_html}\n</div>')
     H.append(f'<div class="legend">\n  {legend_html}\n</div>')
     H.append('<div class="tbl"><table id="tbl"><thead><tr>')
-    H.append('<th class="n">#</th><th class="mid">Modus-ID</th><th class="cat">Kategorie</th><th class="title">Titel</th><th class="cnt">Datenbasis</th><th class="badge">Badge</th></tr></thead><tbody>')
-    for row_num,(row_html) in enumerate(rows,1):
-        H.append(row_html)
-    H.append('</tbody></table></div>')
-    H.append('<footer>GeoQuest Spielübersicht &mdash; auto-generiert aus gen.py</footer></body></html>')
-    html = '\n'.join(H)
-    with open(os.path.join(BASE, 'GeoQuest_Spielübersicht.html'), 'w', encoding='utf-8') as f:
-        f.write(html)
-    print(f"Written: GeoQuest_Spielübersicht.html ({len(rows)} Modi, auto)")
-
-if __name__ == '__main__':
-    generate()
+    H.append('<th class="n">#</th><th class="mid">Modus-ID</th><th class="cat">Kategorie</th><th class="title">T
