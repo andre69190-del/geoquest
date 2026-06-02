@@ -15855,7 +15855,8 @@ function renderProfilTab(){
 /* SETTINGS MODAL */
 function renderSettingsModal(){
   return`<div class="modal-overlay" onclick="if(event.target===this){S.settingsModal=false;render()}"><div class="modal-box" style="max-width:320px">
-    <div style="font-size:1.1rem;font-weight:900;margin-bottom:1rem">\u2699\ufe0f Weitere Einstellungen</div>
+    <div style="font-size:1.1rem;font-weight:900;margin-bottom:.3rem">\u2699\ufe0f Weitere Einstellungen</div>
+    <div style="font-size:.72rem;color:var(--text2);margin-bottom:1rem">Region, TTS, Raster &amp; mehr</div>
 
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="font-weight:700">\u{1F4CD} Heimatregion</div>
@@ -15867,10 +15868,6 @@ function renderSettingsModal(){
       <button onclick="_ttsToggle()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.ttsOn?"An":"Aus"}</button>
     </div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
-      <div style="font-weight:700">\u{1F319} Dark Mode</div>
-      <button onclick="S.darkMode=!S.darkMode;applyTheme();render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.darkMode?'An':'Aus'}</button>
-    </div>
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="font-weight:700">\u{1F525} Hardcore-Modus</div>
       <button onclick="S.diff=(S.diff==='hardcore'?'casual':'hardcore');localStorage.setItem('gq_diffx',S.diff);render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.diff==='hardcore'?'An':'Aus'}</button>
     </div>
@@ -15879,8 +15876,7 @@ function renderSettingsModal(){
       <span style="font-size:1.2rem">\u{1F4A1}</span>
       <div><div style="font-weight:700;font-size:.85rem">Feedback &amp; Kontakt</div><div style="font-size:.75rem;color:var(--text3)">Fehler melden, Ideen einreichen</div></div>
     </div>
-    <button class="btn-g" style="margin-bottom:0" onclick="${!_isInStandaloneMode()&&(localStorage.getItem('gq_pwa_dismissed')||localStorage.getItem('gq_pwa_ios_dismissed'))?`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div style="font-weight:700">📲 App installieren</div><button class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem" onclick="localStorage.removeItem('gq_pwa_dismissed');localStorage.removeItem('gq_pwa_ios_dismissed');render()">Erneut anzeigen</button></div>`:''}
-    <button onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
+    <button class="btn-g" style="margin-bottom:0" onclick="    <button onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
     <div style="margin-bottom:.9rem"><div style="font-weight:700;margin-bottom:.5rem">\u{1F4CB} Men\u00fc-Ansicht</div><div style="display:flex;gap:8px"><div onclick="localStorage.setItem('gq_menu_layout','accordion');render()" style="flex:1;border:2px solid ${(()=>{try{return localStorage.getItem('gq_menu_layout')||'accordion';}catch(e){return 'accordion';}})()==='accordion'?'#7F77DD':'var(--border)'};border-radius:10px;padding:8px;cursor:pointer;background:var(--bg2);text-align:center"><div style="font-size:.7rem;margin-bottom:4px">Akkordeon</div><div style="display:flex;flex-direction:column;gap:2px">${['','open','',''].map(t=>`<div style="height:${t?'14':'7'}px;background:${t?'#EEEDFE':'var(--bg)'};border:1px solid ${t?'#AFA9EC':'var(--border)'};border-radius:3px"></div>`).join('')}</div></div><div onclick="localStorage.setItem('gq_menu_layout','tabs');render()" style="flex:1;border:2px solid ${(()=>{try{return localStorage.getItem('gq_menu_layout')||'accordion';}catch(e){return 'accordion';}})()==='tabs'?'#7F77DD':'var(--border)'};border-radius:10px;padding:8px;cursor:pointer;background:var(--bg2);text-align:center"><div style="font-size:.7rem;margin-bottom:4px">Tabs</div><div style="display:flex;flex-wrap:wrap;gap:2px">${Array.from({length:8}).map((_,i)=>`<div style="width:10px;height:10px;background:${i===0?'#7F77DD':'var(--bg)'};border:1px solid ${i===0?'#534AB7':'var(--border)'};border-radius:2px"></div>`).join('')}<div style="width:100%;height:20px;background:var(--bg);border:1px solid var(--border);border-radius:3px;margin-top:2px"></div></div></div></div></div>  </div></div>`;
 }
 

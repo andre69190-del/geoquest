@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 416. Tab-Ansicht fix: Inline-Grid statt CSS-Klassen, Accordion-Header im JS-Rendering ausgeblendet. PWA-Banner: Schließen-Button für Android/Desktop, gq_pwa_dismissed in localStorage, Reaktivierung in Einstellungen. verify: 146/146."
+git commit -m "Content: Phase 417. Settings-Modal bereinigt: Dark Mode entfernt (doppelt mit Profilseite), Untertitel hinzugefügt. Tab-Ansicht + PWA-Dismiss aus Phase 416 finalisiert.. verify: 146/146."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
