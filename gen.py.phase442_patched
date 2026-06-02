@@ -6803,7 +6803,7 @@ const INSEL_DATA=[
   {n:"USA",island:false},{n:"Mexiko",island:false},{n:"Argentinien",island:false},
   {n:"Kenia",island:false},{n:"Nigeria",island:false}
 ];
-const SPRACHEN_KOMPASS_DATA=[
+const SPRACHEN_DATA=[
   {word:"Hej",lang:"Schwedisch",country:"Schweden"},
   {word:"Ciao",lang:"Italienisch",country:"Italien"},
   {word:"Bonjour",lang:"Franzoesisch",country:"Frankreich"},
@@ -8818,10 +8818,10 @@ function genInselFestlandQ(){
 
 /* -- Phase 204: sprachen_kompass ------------------------------------------- */
 function genSprachenKompassQ(){
-  if(!SPRACHEN_KOMPASS_DATA||SPRACHEN_KOMPASS_DATA.length<4)return null;
-  var idx=~~(rng()*SPRACHEN_KOMPASS_DATA.length);
-  var cor=SPRACHEN_KOMPASS_DATA[idx];
-  var others=sh(SPRACHEN_KOMPASS_DATA.filter(function(_,i){return i!==idx;})).slice(0,3);
+  if(!SPRACHEN_DATA||SPRACHEN_DATA.length<4)return null;
+  var idx=~~(rng()*SPRACHEN_DATA.length);
+  var cor=SPRACHEN_DATA[idx];
+  var others=sh(SPRACHEN_DATA.filter(function(_,i){return i!==idx;})).slice(0,3);
   var ans=cor.country;
   var dis=others.map(function(x){return x.country;});
   var uniq=[];

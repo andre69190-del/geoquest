@@ -231,3 +231,10 @@ python3 run_patch.py patches/patch_228_new_feature.py
 **Datum:** 2026-06-02
 **Fixes:** (1) Build-Breaker: ungültiger Unicode-Escape im Wort „gießen" (Modus garten_match_wasser, Phase 440) → JS-Syntaxfehler behoben (verify 172/173 → 177/177). (2) 13 fehlende PL-Übersetzungen in _CONTENT_I18N ergänzt (Film-/Musik-Kategorie: Regisseur, IMDb, Oscars, Grammys, Streams, Tonträger u.a.) → validate 0 Warnings.
 **Doku:** AUDIT-UMFANG (9 Dimensionen) in CLAUDE_SESSION_STARTER.md dokumentiert; GeoQuest_Audit_Phase438.md erstellt. verify 177/177, validate 78/78, check_session 15/15.
+
+## Phase 442 — Geo-Pin-Welle (13 neue Pin-Modi)
+**Datum:** 2026-06-02
+**Modi:** 13 neue (hund_pin_land, boardgame_pin_land, robot_pin_land, serie_pin_land, musik_pin_land, web_pin_land, lit_pin_land, park_pin_land, eco_pin_land, film_pin_land, konsole_pin_land, hw_pin_land, garten_pin_region)
+**Infrastruktur:** LAND_LATLON Lookup-Tabelle (65 Länder+Regionen), genExtPinByLand() Universalgenerator, genLitPinQ()
+**Bugfix:** SPRACHEN_KOMPASS_DATA Umbenennung (pre-existing duplicate const SPRACHEN_DATA)
+**Total:** 949 Modi
