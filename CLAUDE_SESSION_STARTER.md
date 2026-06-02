@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 410):
+Aktueller Stand (Stand: Phase 421):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 777 Spielmodi in MODES-Array (gen.py)
 - 44 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -29,6 +29,7 @@ Pflicht-Workflow nach JEDER Änderung:
 
 Wichtige Dateien zum Lesen:
 - gen.py                    → Haupt-Build-Datei (~1.5 MB JS+Python)
+- geoquest_css.txt          → ECHTE CSS-Quelle! (wird in gen.py geladen) — CSS NICHT in gen.py editieren, die dortigen .mode-card o.ä. sind tote Duplikate
 - data/games_extended.json  → 70 Spiele, 27 Felder je Eintrag (inkl. protagonist, howlong_h)
 - data/autos_extended.json  → 431 Autos, 22 Felder je Eintrag
 - patches/PATCHES.md        → Alle bisherigen Patches mit Phase-Nummern
@@ -187,19 +188,19 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 412)
+## AKTUELLER PROJEKT-STATUS (Phase 421)
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **796** |
+| Spielmodi | **802** |
 | Fahrzeuge (autos_extended) | 431 |
 | Spiele (games_extended) | 70 |
 | Konsolen (konsolen.json) | 30 |
 | JSON-Datendateien | 47 |
 | gen.py Größe | ~1.53 MB |
 | GeoQuest.html Größe | ~5.5 MB |
-| verify.py | 145/145 ✓ |
-| validate_content.py | 46/46 ✓ 0 Warnings |
+| verify.py | 146/146 ✓ |
+| validate_content.py | 47/47 ✓ 0 Warnings |
 | Sprachen vollständig (de/en/pl) | ✓ |
 | Offline/PWA | ✓ |
 | iOS Timeline-Bug | ✅ gefixt (Phase 412) |
@@ -244,6 +245,8 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | Gespielt-Tracking | ✅ Phase 409 | `gq_played` in localStorage — welche Modi wurden je gespielt |
 | Fortschrittsbalken | ✅ Phase 409/410 | X/Y-Badge + Balken am Akkordeon-Header je Kategorie |
 | Favoriten-Pin | ✅ bereits vorhanden | ❤️-Button auf jeder Karte, `showFavorites()`-Filter |
+| Kategorie-Wisch-Leiste | ✅ Phase 420 | Kategorie-Nav als Carousel (`data-cat="_catnav"`), 4 Spalten × konfigurierbare Reihen (`geoquest_catnav_rows`, Standard 3), volle Namen statt Abkürzungen |
+| Kompaktere Spielkarten | ✅ Phase 421 | mode-card Padding/Radius reduziert, Icon 1.25rem, Info-Button 28px (CSS in `geoquest_css.txt`) |
 
 ## SICHERHEITS-CHECKLISTE (nach Phase 401)
 

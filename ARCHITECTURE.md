@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 419 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.32 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
+**Version:** Phase 421 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.33 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -1124,6 +1124,8 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **417** | patch_417.py | **Settings-Modal bereinigt: Dark Mode entfernt (doppelt mit Profilseite), Untertitel hinzugefügt. Tab-Ansicht + PWA-Dismiss aus Phase 416 finalisiert.** |
 | **418** | patch_418.py | **Settings-Modal final: Menü-Ansicht entfernt (steht auf Profilseite), App installieren vor Schließen, saubere Reihenfolge: Heimatregion→TTS→Hardcore→Raster→Feedback→App installieren→Schließen** |
 | **419** | patch_419.py | **Settings-Modal bugfix: App-installieren Button-Code war fälschlich in onclick eingebettet → korrektes IIFE-Pattern. Modal finale Struktur: Heimatregion→TTS→Hardcore→Raster→Feedback→App installieren (conditional)→Schließen** |
+| **420** | patch_420.py | **Kategorie-Navigation als wischbares Karussell (data-cat=_catnav) statt 8-Spalten-Raster: 4 Spalten x 3 Reihen pro Seite, volle Kategorienamen, Schrift von 0.48rem auf 0.66rem vergroessert. Reihen pro Seite via neuer Einstellung geoquest_catnav_rows (2-6, Standard 3) im Einstellungs-Modal konfigurierbar. Nutzt bestehende Carousel-Engine (Swipe/Pfeile/Punkte/Seiten-Persistenz). verify 146/146, validate 0 Warnings.** |
+| **421** | patch_421.py | **UI-Feinschliff Spielkarten: mode-card kompakter (Padding .6rem .4rem 30px -> .5rem .32rem 28px, Radius 12px->11px), mode-icon 1.4rem->1.25rem, Info-Button (i) 32x32px->28x28px (Radius 7px, Font .72rem). Aenderungen in geoquest_css.txt (echte CSS-Quelle) + Info-Btn inline in gen.py. Leserlichkeit und Tap-Flaeche bleiben erhalten (Button >=24px WCAG). verify 146/146, validate 0 Warnings.** |
 
 ---
 

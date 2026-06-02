@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 419. Settings-Modal bugfix: App-installieren Button-Code war fälschlich in onclick eingebettet → korrektes IIFE-Pattern. Modal finale Struktur: Heimatregion→TTS→Hardcore→Raster→Feedback→App installieren (conditional)→Schließen. verify: 146/146."
+git commit -m "Content: Phase 421. UI-Feinschliff Spielkarten: mode-card kompakter (Padding .6rem .4rem 30px -> .5rem .32rem 28px, Radius 12px->11px), mode-icon 1.4rem->1.25rem, Info-Button (i) 32x32px->28x28px (Radius 7px, Font .72rem). Aenderungen in geoquest_css.txt (echte CSS-Quelle) + Info-Btn inline in gen.py. Leserlichkeit und Tap-Flaeche bleiben erhalten (Button >=24px WCAG). verify 146/146, validate 0 Warnings.. verify: 146/146."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
