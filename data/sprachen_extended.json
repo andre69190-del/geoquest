@@ -1,0 +1,562 @@
+{
+  "Mandarin (Chinesisch)": {
+    "sprachfamilie": "Sino-Tibetisch",
+    "muttersprachler_mio": 920.0,
+    "anzahl_laender": 3,
+    "schrift": "Chinesisch",
+    "ursprungsregion": "Ostasien"
+  },
+  "Spanisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 475.0,
+    "anzahl_laender": 21,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Iberische Halbinsel"
+  },
+  "Englisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 380.0,
+    "anzahl_laender": 67,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Britische Inseln"
+  },
+  "Hindi": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 340.0,
+    "anzahl_laender": 2,
+    "schrift": "Devanagari",
+    "ursprungsregion": "Nordindien"
+  },
+  "Arabisch": {
+    "sprachfamilie": "Afroasiatisch",
+    "muttersprachler_mio": 310.0,
+    "anzahl_laender": 25,
+    "schrift": "Arabisch",
+    "ursprungsregion": "Arabische Halbinsel"
+  },
+  "Bengalisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 230.0,
+    "anzahl_laender": 2,
+    "schrift": "Bengalisch",
+    "ursprungsregion": "Bengalen"
+  },
+  "Portugiesisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 220.0,
+    "anzahl_laender": 10,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Iberische Halbinsel"
+  },
+  "Russisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 154.0,
+    "anzahl_laender": 4,
+    "schrift": "Kyrillisch",
+    "ursprungsregion": "Osteuropa"
+  },
+  "Japanisch": {
+    "sprachfamilie": "Isoliert",
+    "muttersprachler_mio": 125.0,
+    "anzahl_laender": 1,
+    "schrift": "Japanisch",
+    "ursprungsregion": "Japan"
+  },
+  "Punjabi": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 113.0,
+    "anzahl_laender": 2,
+    "schrift": "Gurmukhi",
+    "ursprungsregion": "Nordindien"
+  },
+  "Deutsch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 76.0,
+    "anzahl_laender": 6,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Mitteleuropa"
+  },
+  "Französisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 75.0,
+    "anzahl_laender": 29,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Westeuropa"
+  },
+  "Türkisch": {
+    "sprachfamilie": "Turkisch",
+    "muttersprachler_mio": 84.0,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Anatolien"
+  },
+  "Koreanisch": {
+    "sprachfamilie": "Isoliert",
+    "muttersprachler_mio": 78.0,
+    "anzahl_laender": 2,
+    "schrift": "Hangul",
+    "ursprungsregion": "Koreanische Halbinsel"
+  },
+  "Vietnamesisch": {
+    "sprachfamilie": "Austroasiatisch",
+    "muttersprachler_mio": 76.0,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Südostasien"
+  },
+  "Urdu": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 70.0,
+    "anzahl_laender": 2,
+    "schrift": "Arabisch",
+    "ursprungsregion": "Nordindien"
+  },
+  "Italienisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 64.0,
+    "anzahl_laender": 4,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Apenninhalbinsel"
+  },
+  "Kantonesisch": {
+    "sprachfamilie": "Sino-Tibetisch",
+    "muttersprachler_mio": 62.0,
+    "anzahl_laender": 3,
+    "schrift": "Chinesisch",
+    "ursprungsregion": "Südchina"
+  },
+  "Javanese": {
+    "sprachfamilie": "Austronesisch",
+    "muttersprachler_mio": 68.0,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Java/Indonesien"
+  },
+  "Persisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 60.0,
+    "anzahl_laender": 3,
+    "schrift": "Arabisch",
+    "ursprungsregion": "Iran"
+  },
+  "Polnisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 45.0,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Mittelosteuropa"
+  },
+  "Pashto": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 40.0,
+    "anzahl_laender": 2,
+    "schrift": "Arabisch",
+    "ursprungsregion": "Afghanistan"
+  },
+  "Tagalog": {
+    "sprachfamilie": "Austronesisch",
+    "muttersprachler_mio": 28.0,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Philippinen"
+  },
+  "Malaiisch": {
+    "sprachfamilie": "Austronesisch",
+    "muttersprachler_mio": 23.0,
+    "anzahl_laender": 6,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Südostasien"
+  },
+  "Ukrainisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 32.0,
+    "anzahl_laender": 2,
+    "schrift": "Kyrillisch",
+    "ursprungsregion": "Osteuropa"
+  },
+  "Tamil": {
+    "sprachfamilie": "Dravidisch",
+    "muttersprachler_mio": 78.0,
+    "anzahl_laender": 4,
+    "schrift": "Tamilisch",
+    "ursprungsregion": "Südindien"
+  },
+  "Telugu": {
+    "sprachfamilie": "Dravidisch",
+    "muttersprachler_mio": 82.0,
+    "anzahl_laender": 1,
+    "schrift": "Telugu",
+    "ursprungsregion": "Südindien"
+  },
+  "Kannada": {
+    "sprachfamilie": "Dravidisch",
+    "muttersprachler_mio": 43.0,
+    "anzahl_laender": 1,
+    "schrift": "Kannada",
+    "ursprungsregion": "Südindien"
+  },
+  "Malayalam": {
+    "sprachfamilie": "Dravidisch",
+    "muttersprachler_mio": 38.0,
+    "anzahl_laender": 2,
+    "schrift": "Malayalam",
+    "ursprungsregion": "Südindien"
+  },
+  "Swahili": {
+    "sprachfamilie": "Niger-Kongo",
+    "muttersprachler_mio": 18.0,
+    "anzahl_laender": 5,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Ostafrika"
+  },
+  "Hausa": {
+    "sprachfamilie": "Afroasiatisch",
+    "muttersprachler_mio": 80.0,
+    "anzahl_laender": 9,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Westafrika"
+  },
+  "Yoruba": {
+    "sprachfamilie": "Niger-Kongo",
+    "muttersprachler_mio": 43.0,
+    "anzahl_laender": 3,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Westafrika"
+  },
+  "Igbo": {
+    "sprachfamilie": "Niger-Kongo",
+    "muttersprachler_mio": 27.0,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Nigeria"
+  },
+  "Amharisch": {
+    "sprachfamilie": "Afroasiatisch",
+    "muttersprachler_mio": 32.0,
+    "anzahl_laender": 1,
+    "schrift": "Äthiopisch",
+    "ursprungsregion": "Äthiopien"
+  },
+  "Zulu": {
+    "sprachfamilie": "Niger-Kongo",
+    "muttersprachler_mio": 12.0,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Südafrika"
+  },
+  "Niederländisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 24.0,
+    "anzahl_laender": 6,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Westeuropa"
+  },
+  "Griechisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 13.0,
+    "anzahl_laender": 3,
+    "schrift": "Griechisch",
+    "ursprungsregion": "Südosteuropa"
+  },
+  "Schwedisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 10.0,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Skandinavien"
+  },
+  "Dänisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 5.5,
+    "anzahl_laender": 3,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Skandinavien"
+  },
+  "Norwegisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 5.3,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Skandinavien"
+  },
+  "Finnisch": {
+    "sprachfamilie": "Uralisch",
+    "muttersprachler_mio": 4.8,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Fennoskandien"
+  },
+  "Ungarisch": {
+    "sprachfamilie": "Uralisch",
+    "muttersprachler_mio": 12.0,
+    "anzahl_laender": 3,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Mittelosteuropa"
+  },
+  "Estnisch": {
+    "sprachfamilie": "Uralisch",
+    "muttersprachler_mio": 1.1,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Baltikum"
+  },
+  "Baskisch": {
+    "sprachfamilie": "Isoliert",
+    "muttersprachler_mio": 0.7,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Pyrenäen"
+  },
+  "Walisisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 0.9,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Wales"
+  },
+  "Irisch-Gälisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 0.2,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Irland"
+  },
+  "Isländisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 0.36,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Island"
+  },
+  "Rumänisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 24.0,
+    "anzahl_laender": 4,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Südosteuropa"
+  },
+  "Tschechisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 10.7,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Mitteleuropa"
+  },
+  "Slowakisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 5.2,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Mitteleuropa"
+  },
+  "Serbisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 9.5,
+    "anzahl_laender": 3,
+    "schrift": "Kyrillisch",
+    "ursprungsregion": "Südosteuropa"
+  },
+  "Kroatisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 5.6,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Südosteuropa"
+  },
+  "Bulgarisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 6.5,
+    "anzahl_laender": 2,
+    "schrift": "Kyrillisch",
+    "ursprungsregion": "Südosteuropa"
+  },
+  "Hebräisch": {
+    "sprachfamilie": "Afroasiatisch",
+    "muttersprachler_mio": 5.3,
+    "anzahl_laender": 1,
+    "schrift": "Hebräisch",
+    "ursprungsregion": "Levante"
+  },
+  "Georgisch": {
+    "sprachfamilie": "Kartvelisch",
+    "muttersprachler_mio": 3.7,
+    "anzahl_laender": 1,
+    "schrift": "Georgisch",
+    "ursprungsregion": "Kaukasus"
+  },
+  "Armenisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 5.0,
+    "anzahl_laender": 2,
+    "schrift": "Armenisch",
+    "ursprungsregion": "Kaukasus"
+  },
+  "Tibetisch": {
+    "sprachfamilie": "Sino-Tibetisch",
+    "muttersprachler_mio": 6.0,
+    "anzahl_laender": 3,
+    "schrift": "Tibetisch",
+    "ursprungsregion": "Hochasien"
+  },
+  "Mongolisch": {
+    "sprachfamilie": "Turkisch",
+    "muttersprachler_mio": 5.2,
+    "anzahl_laender": 2,
+    "schrift": "Kyrillisch",
+    "ursprungsregion": "Zentralasien"
+  },
+  "Kasachisch": {
+    "sprachfamilie": "Turkisch",
+    "muttersprachler_mio": 13.0,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Zentralasien"
+  },
+  "Usbekisch": {
+    "sprachfamilie": "Turkisch",
+    "muttersprachler_mio": 34.0,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Zentralasien"
+  },
+  "Indonesisch": {
+    "sprachfamilie": "Austronesisch",
+    "muttersprachler_mio": 43.0,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Indonesien"
+  },
+  "Thai": {
+    "sprachfamilie": "Kra-Dai",
+    "muttersprachler_mio": 60.0,
+    "anzahl_laender": 1,
+    "schrift": "Thailändisch",
+    "ursprungsregion": "Südostasien"
+  },
+  "Burmesisch": {
+    "sprachfamilie": "Sino-Tibetisch",
+    "muttersprachler_mio": 33.0,
+    "anzahl_laender": 1,
+    "schrift": "Myanmar",
+    "ursprungsregion": "Südostasien"
+  },
+  "Khmer": {
+    "sprachfamilie": "Austroasiatisch",
+    "muttersprachler_mio": 16.0,
+    "anzahl_laender": 1,
+    "schrift": "Khmer",
+    "ursprungsregion": "Südostasien"
+  },
+  "Quechua": {
+    "sprachfamilie": "Quechua",
+    "muttersprachler_mio": 8.5,
+    "anzahl_laender": 6,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Anden"
+  },
+  "Nahuatl": {
+    "sprachfamilie": "Uto-Aztekisch",
+    "muttersprachler_mio": 1.7,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Mesoamerika"
+  },
+  "Guaraní": {
+    "sprachfamilie": "Tupisch",
+    "muttersprachler_mio": 6.5,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Südamerika"
+  },
+  "Maori": {
+    "sprachfamilie": "Austronesisch",
+    "muttersprachler_mio": 0.06,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Neuseeland"
+  },
+  "Hawaiianisch": {
+    "sprachfamilie": "Austronesisch",
+    "muttersprachler_mio": 0.02,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Hawaii"
+  },
+  "Esperanto": {
+    "sprachfamilie": "Kunstsprache",
+    "muttersprachler_mio": 0.002,
+    "anzahl_laender": 120,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Polen"
+  },
+  "Lateinisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 0.0,
+    "anzahl_laender": 1,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Apenninhalbinsel"
+  },
+  "Althochdeutsch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 0.0,
+    "anzahl_laender": 0,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Mitteleuropa"
+  },
+  "Altgriechisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 0.0,
+    "anzahl_laender": 0,
+    "schrift": "Griechisch",
+    "ursprungsregion": "Südosteuropa"
+  },
+  "Sanskrit": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 0.025,
+    "anzahl_laender": 1,
+    "schrift": "Devanagari",
+    "ursprungsregion": "Nordindien"
+  },
+  "Klingonisch": {
+    "sprachfamilie": "Kunstsprache",
+    "muttersprachler_mio": 0.0,
+    "anzahl_laender": 0,
+    "schrift": "Klingonisch",
+    "ursprungsregion": "Fiktiv (USA)"
+  },
+  "Sindhi": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 33.0,
+    "anzahl_laender": 2,
+    "schrift": "Arabisch",
+    "ursprungsregion": "Sindh"
+  },
+  "Albanisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 7.5,
+    "anzahl_laender": 5,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Balkan"
+  },
+  "Litauisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 3.0,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Baltikum"
+  },
+  "Lettisch": {
+    "sprachfamilie": "Indogermanisch",
+    "muttersprachler_mio": 1.75,
+    "anzahl_laender": 2,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Baltikum"
+  },
+  "Oromo": {
+    "sprachfamilie": "Afroasiatisch",
+    "muttersprachler_mio": 40.0,
+    "anzahl_laender": 4,
+    "schrift": "Lateinisch",
+    "ursprungsregion": "Ostafrika"
+  }
+}

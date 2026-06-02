@@ -225,3 +225,9 @@ python3 run_patch.py patches/patch_228_new_feature.py
 **Datum:** 2026-06-02
 **Fixes:** (1) Build-Breaker: ungültiger Unicode-Escape im Wort „gießen" (Modus garten_match_wasser, Phase 440) → JS-Syntaxfehler behoben (verify 172/173 → 173/173). (2) 13 fehlende PL-Übersetzungen in _CONTENT_I18N ergänzt (Film-/Musik-Kategorie: Regisseur, IMDb, Oscars, Grammys, Streams, Tonträger u.a.) → validate 0 Warnings.
 **Doku:** AUDIT-UMFANG (9 Dimensionen) in CLAUDE_SESSION_STARTER.md dokumentiert; GeoQuest_Audit_Phase438.md erstellt. verify 173/173, validate 74/74, check_session 15/15.
+
+## Phase 439 — Brettspiele & Sprachen
+**Datum:** 2026-06-02
+**Modi:** 14 neue (hl_boardgame_jahr, hl_boardgame_spieler, hl_boardgame_dauer, hl_boardgame_rating, boardgame_match_autor, boardgame_match_land, timeline_boardgame_jahr, ws_boardgame_spielbrett, hl_sprache_muttersprachler, hl_sprache_laender, sprache_match_familie, sprache_match_schrift, sprache_match_region, ws_sprache_grammatik)
+**Daten:** boardgames_extended.json (80), sprachen_extended.json (80), boardgames_ws.json, sprachen_ws.json
+**Total:** 936 Modi

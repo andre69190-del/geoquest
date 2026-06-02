@@ -12,16 +12,16 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 441):
+Aktueller Stand (Stand: Phase 439):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
-- 922 Spielmodi in MODES-Array (gen.py)
-- 53 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
+- 936 Spielmodi in MODES-Array (gen.py)
+- 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
 - Patch-System: patches/patch_NNN_description.py via run_patch.py
 - Zero-Bug-Policy: assert c.count(old)==1 vor jedem c.replace()
 
 Pflicht-Workflow nach JEDER Änderung:
 1. python3 gen.py                → baut GeoQuest.html neu
-2. python3 verify.py             → muss 143/143 (oder mehr) zeigen
+2. python3 verify.py             → muss 173/173 (oder mehr) zeigen
 3. python3 validate_content.py   → muss 0 warnings zeigen
 4. python3 post_phase.py --phase NNN --summary "Beschreibung"
    ↳ aktualisiert AUTOMATISCH: ARCHITECTURE.md, README.md, GeoQuest_Website_Konzept.md,
@@ -128,6 +128,13 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 - [ ] **Schema-Änderung = Validator-Update!** Wenn ein neues Feld hinzukommt (z.B. `peak_year`), MUSS es sofort in `validate_content.py` → `check_games_extended()` als Pflicht- oder optionales Feld eingetragen werden. Sonst bleibt der Gatekeeper blind.
 - [ ] validate_content.py ausführen
 
+### Bei neuen WS-JSONs (Wortschmiede-Daten)
+- [ ] `validate_content.py` nach dem Patch ausführen — stellt sicher, dass beide WS-Dateien mit **✓ OK** ausgewiesen werden
+- [ ] Validator prüft: jeder Buchstabe im `validWords`-Eintrag muss aus dem Basis-Wort spellbar sein (z.B. BORN in RHODODENDRON = Fehler, kein B vorhanden)
+- [ ] Keine Duplikate innerhalb derselben Sprache (EN, DE, PL)
+- [ ] Mindestens 20 deutsche Wörter pro WS-Eintrag anstreben; Validator warnt ab <3 spielbaren Wörtern
+- [ ] Bei kurzen Basis-Wörtern (≤8 Buchstaben, z.B. LOOPING) sind 20 DE-Wörter ggf. nicht erreichbar — dann mindestens 10 anstreben
+
 ### Bei Bugfixes / Audits
 - [ ] verify.py ausführen und Ergebnis prüfen
 - [ ] validate_content.py ausführen
@@ -157,8 +164,8 @@ Ein vollständiges Audit deckt diese 9 Dimensionen ab. Findings + angewandte Fix
 python3 check_session.py   # prüft ALLES in einem Rutsch (14 Checks)
 ```
 Oder manuell:
-- [ ] verify.py: X/152 passed, 0 failed
-- [ ] validate_content.py: 53/53 OK, 0 warnings
+- [ ] verify.py: X/173 passed, 0 failed
+- [ ] validate_content.py: 74/74 OK, 0 warnings
 - [ ] ARCHITECTURE.md: Phase + Modi-Zahl aktualisiert
 - [ ] README.md: Deployed-Zeile aktualisiert
 - [ ] landing.html: Modi-Zahl aktualisiert
@@ -210,19 +217,19 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 441)
+## AKTUELLER PROJEKT-STATUS (Phase 439)
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **922** |
+| Spielmodi | **936** |
 | Fahrzeuge (autos_extended) | 431 |
 | Spiele (games_extended) | 70 |
 | Konsolen (konsolen.json) | 30 |
-| JSON-Datendateien | 47 |
+| JSON-Datendateien | 74 |
 | gen.py Größe | ~1.53 MB |
 | GeoQuest.html Größe | ~5.5 MB |
-| verify.py | 173/173 ✓ |
-| validate_content.py | 74/74 ✓ 0 Warnings |
+| verify.py | 177/177 ✓ |
+| validate_content.py | 78/78 ✓ 0 Warnings |
 | Sprachen vollständig (de/en/pl) | ✓ |
 | Offline/PWA | ✓ |
 | iOS Timeline-Bug | ✅ gefixt (Phase 412) |
@@ -231,17 +238,4 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | Modi-ID | Beschreibung |
 |---------|-------------|
 | games_pin | Studio auf Weltkarte einpinnen |
-| games_match_land | Herkunftsland des Studios |
-| games_match_genre | Genre zuordnen |
-| games_match_adaption | Verfilmung/Adaption |
-| games_match_plattform | Plattform |
-| games_match_kategorie | Gaming-Ära (Modern/Mobile/Klassiker) |
-| games_match_publisher | Publisher (Phase 402) |
-| games_match_f2p | F2P oder Kaufspiel? (Phase 402) |
-| hl_games_release | Erscheinungsjahr H/L |
-| hl_games_vk | Verkaufszahlen H/L |
-| hl_games_downloads | Downloads H/L |
-| hl_games_metacritic | Metacritic H/L |
-| hl_games_usk | Altersfreigabe USK H/L |
-| hl_games_sequel | Teile-Anzahl H/L |
-| hl_games_peak | Peak Concurrent Players H/L (Phase 402)
+| gam

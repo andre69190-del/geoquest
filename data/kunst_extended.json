@@ -430,5 +430,213 @@
     "kuenstler": "Refik Anadol",
     "epoche": "Digitale Kunst",
     "standort_museum": "Diverse Ausstellungen"
+  },
+  "Der Garten der Lüste": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1510,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Hieronymus Bosch",
+    "epoche": "Spätgotik",
+    "standort_museum": "Prado, Madrid"
+  },
+  "Saturnus verschlingt seinen Sohn": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1823,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Francisco de Goya",
+    "epoche": "Romantik",
+    "standort_museum": "Prado, Madrid"
+  },
+  "Die drei Grazien": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1635,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Peter Paul Rubens",
+    "epoche": "Barock",
+    "standort_museum": "Prado, Madrid"
+  },
+  "Der Frühling": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1482,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Sandro Botticelli",
+    "epoche": "Renaissance",
+    "standort_museum": "Uffizien, Florenz"
+  },
+  "Judith mit dem Haupt des Holofernes": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1620,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Artemisia Gentileschi",
+    "epoche": "Barock",
+    "standort_museum": "Uffizien, Florenz"
+  },
+  "Das Milchmädchen": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1658,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Johannes Vermeer",
+    "epoche": "Barock",
+    "standort_museum": "Rijksmuseum, Amsterdam"
+  },
+  "Olympia": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1863,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Édouard Manet",
+    "epoche": "Realismus",
+    "standort_museum": "Musée d'Orsay, Paris"
+  },
+  "Die Ballettklasse": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1874,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Edgar Degas",
+    "epoche": "Impressionismus",
+    "standort_museum": "Musée d'Orsay, Paris"
+  },
+  "Der Kuss": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1907,
+    "schaetzwert_mio_usd": 200.0,
+    "kuenstler": "Gustav Klimt",
+    "epoche": "Jugendstil",
+    "standort_museum": "Österreichische Galerie Belvedere, Wien"
+  },
+  "David": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 1504,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Michelangelo Buonarroti",
+    "epoche": "Renaissance",
+    "standort_museum": "Galleria dell'Accademia, Florenz"
+  },
+  "Isenheimer Altar": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1516,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Matthias Grünewald",
+    "epoche": "Renaissance",
+    "standort_museum": "Musée d'Unterlinden, Colmar"
+  },
+  "Porträt eines jungen Mannes (Raffael)": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1514,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Raffael",
+    "epoche": "Renaissance",
+    "standort_museum": "Nationalmuseum, Warschau"
+  },
+  "Dame mit dem Hermelin": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1490,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Leonardo da Vinci",
+    "epoche": "Renaissance",
+    "standort_museum": "Czartoryski-Museum, Krakau"
+  },
+  "Les Demoiselles d'Avignon": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1907,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Pablo Picasso",
+    "epoche": "Kubismus",
+    "standort_museum": "MoMA, New York"
+  },
+  "Die große Welle vor Kanagawa": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1831,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Katsushika Hokusai",
+    "epoche": "Ukiyo-e",
+    "standort_museum": "Metropolitan Museum, New York"
+  },
+  "Selbstporträt mit Dornenhalskette": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1940,
+    "schaetzwert_mio_usd": 34.9,
+    "kuenstler": "Frida Kahlo",
+    "epoche": "Surrealismus",
+    "standort_museum": "Harry Ransom Center, Austin"
+  },
+  "Balloon Dog (Orange)": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 1994,
+    "schaetzwert_mio_usd": 58.4,
+    "kuenstler": "Jeff Koons",
+    "epoche": "Post-Moderne",
+    "standort_museum": "Verschiedene Privatsammlungen"
+  },
+  "Die Heilige Familie (Raffael)": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1507,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Raffael",
+    "epoche": "Renaissance",
+    "standort_museum": "Hermitage, Sankt Petersburg"
+  },
+  "Selbstporträt (Dürer, 1500)": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1500,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Albrecht Dürer",
+    "epoche": "Renaissance",
+    "standort_museum": "Alte Pinakothek, München"
+  },
+  "Die Botschafter": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1533,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Hans Holbein d. J.",
+    "epoche": "Renaissance",
+    "standort_museum": "National Gallery, London"
+  },
+  "Sonnenblumen (Van Gogh)": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1888,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Vincent van Gogh",
+    "epoche": "Post-Impressionismus",
+    "standort_museum": "National Gallery, London"
+  },
+  "Flügelaltar (Elsheimer)": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1610,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Adam Elsheimer",
+    "epoche": "Frühbarock",
+    "standort_museum": "Städel Museum, Frankfurt"
+  },
+  "Beethoven-Fries": {
+    "kategorie": "Installation",
+    "entstehungsjahr": 1902,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Gustav Klimt",
+    "epoche": "Jugendstil",
+    "standort_museum": "Secession, Wien"
+  },
+  "Dreiunddreißig Ansichten des Fuji": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1835,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Katsushika Hokusai",
+    "epoche": "Ukiyo-e",
+    "standort_museum": "Nationalmuseum, Tokio"
+  },
+  "Der verwundete Hirsch": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1946,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Frida Kahlo",
+    "epoche": "Surrealismus",
+    "standort_museum": "Museo de Arte Moderno, Mexiko-Stadt"
+  },
+  "No. 61 (Rust and Blue)": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1953,
+    "schaetzwert_mio_usd": 46.5,
+    "kuenstler": "Mark Rothko",
+    "epoche": "Abstrakter Expressionismus",
+    "standort_museum": "Museum of Contemporary Art, Los Angeles"
   }
 }

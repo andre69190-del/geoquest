@@ -458,5 +458,345 @@
     "drehort_land": "Vereinigte Staaten",
     "oscars": 2,
     "imdb_rating": 8.3
+  },
+  "Amelie": {
+    "kategorie": "Indie",
+    "release_jahr": 2001,
+    "boxoffice_mio": 174.2,
+    "laenge_min": 122,
+    "regisseur": "Jean-Pierre Jeunet",
+    "drehort_land": "Frankreich",
+    "oscars": 0,
+    "imdb_rating": 8.3
+  },
+  "Außer Atem": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1960,
+    "boxoffice_mio": 0.5,
+    "laenge_min": 90,
+    "regisseur": "Jean-Luc Godard",
+    "drehort_land": "Frankreich",
+    "oscars": 0,
+    "imdb_rating": 7.8
+  },
+  "La Haine": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1995,
+    "boxoffice_mio": 3.0,
+    "laenge_min": 98,
+    "regisseur": "Mathieu Kassovitz",
+    "drehort_land": "Frankreich",
+    "oscars": 0,
+    "imdb_rating": 8.1
+  },
+  "Portrait of a Lady on Fire": {
+    "kategorie": "Indie",
+    "release_jahr": 2019,
+    "boxoffice_mio": 8.0,
+    "laenge_min": 122,
+    "regisseur": "Céline Sciamma",
+    "drehort_land": "Frankreich",
+    "oscars": 0,
+    "imdb_rating": 8.1
+  },
+  "La Dolce Vita": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1960,
+    "boxoffice_mio": 8.0,
+    "laenge_min": 174,
+    "regisseur": "Federico Fellini",
+    "drehort_land": "Italien",
+    "oscars": 1,
+    "imdb_rating": 8.0
+  },
+  "Cinema Paradiso": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1988,
+    "boxoffice_mio": 12.0,
+    "laenge_min": 155,
+    "regisseur": "Giuseppe Tornatore",
+    "drehort_land": "Italien",
+    "oscars": 1,
+    "imdb_rating": 8.5
+  },
+  "Der Leopard": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1963,
+    "boxoffice_mio": 4.0,
+    "laenge_min": 186,
+    "regisseur": "Luchino Visconti",
+    "drehort_land": "Italien",
+    "oscars": 1,
+    "imdb_rating": 8.0
+  },
+  "Das Leben der Anderen": {
+    "kategorie": "Blockbuster",
+    "release_jahr": 2006,
+    "boxoffice_mio": 77.0,
+    "laenge_min": 137,
+    "regisseur": "Florian Henckel v. D.",
+    "drehort_land": "Deutschland",
+    "oscars": 1,
+    "imdb_rating": 8.4
+  },
+  "Amour": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2012,
+    "boxoffice_mio": 14.0,
+    "laenge_min": 127,
+    "regisseur": "Michael Haneke",
+    "drehort_land": "Österreich",
+    "oscars": 1,
+    "imdb_rating": 7.9
+  },
+  "Alles über meine Mutter": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1999,
+    "boxoffice_mio": 67.0,
+    "laenge_min": 101,
+    "regisseur": "Pedro Almodóvar",
+    "drehort_land": "Spanien",
+    "oscars": 1,
+    "imdb_rating": 7.9
+  },
+  "Pans Labyrinth": {
+    "kategorie": "Blockbuster",
+    "release_jahr": 2006,
+    "boxoffice_mio": 83.3,
+    "laenge_min": 118,
+    "regisseur": "Guillermo del Toro",
+    "drehort_land": "Spanien",
+    "oscars": 3,
+    "imdb_rating": 8.2
+  },
+  "2001 A Space Odyssey": {
+    "kategorie": "Blockbuster",
+    "release_jahr": 1968,
+    "boxoffice_mio": 190.0,
+    "laenge_min": 149,
+    "regisseur": "Stanley Kubrick",
+    "drehort_land": "Vereinigtes Königreich",
+    "oscars": 1,
+    "imdb_rating": 8.3
+  },
+  "28 Days Later": {
+    "kategorie": "Indie",
+    "release_jahr": 2002,
+    "boxoffice_mio": 82.7,
+    "laenge_min": 113,
+    "regisseur": "Danny Boyle",
+    "drehort_land": "Vereinigtes Königreich",
+    "oscars": 0,
+    "imdb_rating": 7.6
+  },
+  "Das doppelte Leben der Véronique": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1991,
+    "boxoffice_mio": 3.0,
+    "laenge_min": 98,
+    "regisseur": "Krzysztof Kieślowski",
+    "drehort_land": "Polen",
+    "oscars": 0,
+    "imdb_rating": 7.7
+  },
+  "Burning": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2018,
+    "boxoffice_mio": 5.5,
+    "laenge_min": 148,
+    "regisseur": "Lee Chang-dong",
+    "drehort_land": "Südkorea",
+    "oscars": 0,
+    "imdb_rating": 7.5
+  },
+  "Drive My Car": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2021,
+    "boxoffice_mio": 3.5,
+    "laenge_min": 179,
+    "regisseur": "Ryusuke Hamaguchi",
+    "drehort_land": "Japan",
+    "oscars": 1,
+    "imdb_rating": 7.8
+  },
+  "Shoplifters": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2018,
+    "boxoffice_mio": 28.0,
+    "laenge_min": 121,
+    "regisseur": "Hirokazu Kore-eda",
+    "drehort_land": "Japan",
+    "oscars": 0,
+    "imdb_rating": 7.9
+  },
+  "City of God": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2002,
+    "boxoffice_mio": 30.6,
+    "laenge_min": 130,
+    "regisseur": "Fernando Meirelles",
+    "drehort_land": "Brasilien",
+    "oscars": 0,
+    "imdb_rating": 8.6
+  },
+  "3 Idiots": {
+    "kategorie": "Indie",
+    "release_jahr": 2009,
+    "boxoffice_mio": 62.0,
+    "laenge_min": 170,
+    "regisseur": "Rajkumar Hirani",
+    "drehort_land": "Indien",
+    "oscars": 0,
+    "imdb_rating": 8.4
+  },
+  "Timbuktu": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2014,
+    "boxoffice_mio": 4.7,
+    "laenge_min": 100,
+    "regisseur": "Abderrahmane Sissako",
+    "drehort_land": "Mali",
+    "oscars": 0,
+    "imdb_rating": 7.4
+  },
+  "Die Unbezähmbaren (Bergman)": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1960,
+    "boxoffice_mio": 1.0,
+    "laenge_min": 89,
+    "regisseur": "Ingmar Bergman",
+    "drehort_land": "Schweden",
+    "oscars": 0,
+    "imdb_rating": 7.8
+  },
+  "Das Fest": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1998,
+    "boxoffice_mio": 4.5,
+    "laenge_min": 105,
+    "regisseur": "Thomas Vinterberg",
+    "drehort_land": "Dänemark",
+    "oscars": 0,
+    "imdb_rating": 8.0
+  },
+  "Force Majeure": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2014,
+    "boxoffice_mio": 7.2,
+    "laenge_min": 120,
+    "regisseur": "Ruben Östlund",
+    "drehort_land": "Schweden",
+    "oscars": 0,
+    "imdb_rating": 7.6
+  },
+  "Stalker": {
+    "kategorie": "Blockbuster",
+    "release_jahr": 1979,
+    "boxoffice_mio": 1.0,
+    "laenge_min": 162,
+    "regisseur": "Andrei Tarkowski",
+    "drehort_land": "Russland",
+    "oscars": 0,
+    "imdb_rating": 8.1
+  },
+  "Once Upon a Time in Anatolia": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2011,
+    "boxoffice_mio": 1.5,
+    "laenge_min": 157,
+    "regisseur": "Nuri Bilge Ceylan",
+    "drehort_land": "Türkei",
+    "oscars": 0,
+    "imdb_rating": 7.8
+  },
+  "Mad Max Fury Road": {
+    "kategorie": "Blockbuster",
+    "release_jahr": 2015,
+    "boxoffice_mio": 375.4,
+    "laenge_min": 120,
+    "regisseur": "George Miller",
+    "drehort_land": "Australien",
+    "oscars": 6,
+    "imdb_rating": 8.1
+  },
+  "Incendies": {
+    "kategorie": "Klassiker",
+    "release_jahr": 2010,
+    "boxoffice_mio": 6.9,
+    "laenge_min": 131,
+    "regisseur": "Denis Villeneuve",
+    "drehort_land": "Kanada",
+    "oscars": 0,
+    "imdb_rating": 8.2
+  },
+  "Shoah": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1985,
+    "boxoffice_mio": 2.0,
+    "laenge_min": 566,
+    "regisseur": "Claude Lanzmann",
+    "drehort_land": "Polen/Israel/Deutschland",
+    "oscars": 0,
+    "imdb_rating": 9.1
+  },
+  "The Piano": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1993,
+    "boxoffice_mio": 140.1,
+    "laenge_min": 121,
+    "regisseur": "Jane Campion",
+    "drehort_land": "Neuseeland",
+    "oscars": 3,
+    "imdb_rating": 7.5
+  },
+  "Intouchables": {
+    "kategorie": "Blockbuster",
+    "release_jahr": 2011,
+    "boxoffice_mio": 426.6,
+    "laenge_min": 112,
+    "regisseur": "Olivier Nakache",
+    "drehort_land": "Frankreich",
+    "oscars": 0,
+    "imdb_rating": 8.5
+  },
+  "La vita è bella": {
+    "kategorie": "Klassiker",
+    "release_jahr": 1997,
+    "boxoffice_mio": 229.2,
+    "laenge_min": 116,
+    "regisseur": "Roberto Benigni",
+    "drehort_land": "Italien",
+    "oscars": 3,
+    "imdb_rating": 8.6
+  },
+  "The Hunt (Jagten)": {
+    "kategorie": "Indie",
+    "release_jahr": 2012,
+    "boxoffice_mio": 14.5,
+    "laenge_min": 115,
+    "regisseur": "Thomas Vinterberg",
+    "drehort_land": "Dänemark",
+    "oscars": 0,
+    "imdb_rating": 8.3
+  },
+  "Wadjda": {
+    "kategorie": "Indie",
+    "release_jahr": 2012,
+    "boxoffice_mio": 1.5,
+    "laenge_min": 97,
+    "regisseur": "Haifaa al-Mansour",
+    "drehort_land": "Saudi-Arabien",
+    "oscars": 0,
+    "imdb_rating": 7.4
+  },
+  "Capernaum": {
+    "kategorie": "Indie",
+    "release_jahr": 2018,
+    "boxoffice_mio": 64.5,
+    "laenge_min": 126,
+    "regisseur": "Nadine Labaki",
+    "drehort_land": "Libanon",
+    "oscars": 0,
+    "imdb_rating": 8.4
   }
 }

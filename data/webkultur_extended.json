@@ -80,7 +80,7 @@
     "kategorie": "Plattform",
     "start_jahr": 2013,
     "reichweite_mio": 900.0,
-    "ursprungsland": "Russland",
+    "ursprungsland": "Deutschland",
     "gruender_creator": "Pavel Durov"
   },
   "Discord": {
@@ -362,5 +362,236 @@
     "reichweite_mio": 1000.0,
     "ursprungsland": "Südkorea",
     "gruender_creator": "Samsung"
+  },
+  "Spotify": {
+    "kategorie": "Plattform",
+    "start_jahr": 2006,
+    "reichweite_mio": 600.0,
+    "ursprungsland": "Schweden",
+    "gruender_creator": "Daniel Ek"
+  },
+  "Skype": {
+    "kategorie": "Plattform",
+    "start_jahr": 2003,
+    "reichweite_mio": 300.0,
+    "ursprungsland": "Estland",
+    "gruender_creator": "Niklas Zennström"
+  },
+  "TransferWise (Wise)": {
+    "kategorie": "Plattform",
+    "start_jahr": 2011,
+    "reichweite_mio": 16.0,
+    "ursprungsland": "Estland",
+    "gruender_creator": "Taavet Hinrikus"
+  },
+  "Booking.com": {
+    "kategorie": "Plattform",
+    "start_jahr": 1996,
+    "reichweite_mio": 500.0,
+    "ursprungsland": "Niederlande",
+    "gruender_creator": "Geert-Jan Bruinsma"
+  },
+  "Deezer": {
+    "kategorie": "Plattform",
+    "start_jahr": 2007,
+    "reichweite_mio": 16.0,
+    "ursprungsland": "Frankreich",
+    "gruender_creator": "Daniel Marhely"
+  },
+  "Dailymotion": {
+    "kategorie": "Plattform",
+    "start_jahr": 2005,
+    "reichweite_mio": 300.0,
+    "ursprungsland": "Frankreich",
+    "gruender_creator": "Benjamin Bejbaum"
+  },
+  "XING": {
+    "kategorie": "Plattform",
+    "start_jahr": 2003,
+    "reichweite_mio": 22.0,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Lars Hinrichs"
+  },
+  "Zalando": {
+    "kategorie": "Plattform",
+    "start_jahr": 2008,
+    "reichweite_mio": 50.0,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Robert Gentz"
+  },
+  "Shazam": {
+    "kategorie": "Plattform",
+    "start_jahr": 2002,
+    "reichweite_mio": 200.0,
+    "ursprungsland": "Vereinigtes Königreich",
+    "gruender_creator": "Chris Barton"
+  },
+  "SoundCloud": {
+    "kategorie": "Plattform",
+    "start_jahr": 2007,
+    "reichweite_mio": 175.0,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Alexander Ljung"
+  },
+  "KSI": {
+    "kategorie": "Creator",
+    "start_jahr": 2009,
+    "reichweite_mio": 24.0,
+    "ursprungsland": "Vereinigtes Königreich",
+    "gruender_creator": "Olajide Olatunji"
+  },
+  "Markiplier": {
+    "kategorie": "Creator",
+    "start_jahr": 2012,
+    "reichweite_mio": 35.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Mark Fischbach"
+  },
+  "Kurzgesagt": {
+    "kategorie": "Creator",
+    "start_jahr": 2013,
+    "reichweite_mio": 22.0,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Philipp Dettmer"
+  },
+  "EinfachManny": {
+    "kategorie": "Creator",
+    "start_jahr": 2014,
+    "reichweite_mio": 3.5,
+    "ursprungsland": "Deutschland",
+    "gruender_creator": "Manuel Hamann"
+  },
+  "WeChat": {
+    "kategorie": "Plattform",
+    "start_jahr": 2011,
+    "reichweite_mio": 1350.0,
+    "ursprungsland": "China",
+    "gruender_creator": "Zhang Xiaolong"
+  },
+  "LINE": {
+    "kategorie": "Plattform",
+    "start_jahr": 2011,
+    "reichweite_mio": 178.0,
+    "ursprungsland": "Japan",
+    "gruender_creator": "Naver Corporation"
+  },
+  "KakaoTalk": {
+    "kategorie": "Plattform",
+    "start_jahr": 2010,
+    "reichweite_mio": 53.0,
+    "ursprungsland": "Südkorea",
+    "gruender_creator": "Kim Beom-su"
+  },
+  "Mercado Libre": {
+    "kategorie": "Plattform",
+    "start_jahr": 1999,
+    "reichweite_mio": 100.0,
+    "ursprungsland": "Argentinien",
+    "gruender_creator": "Marcos Galperin"
+  },
+  "Flipkart": {
+    "kategorie": "Plattform",
+    "start_jahr": 2007,
+    "reichweite_mio": 150.0,
+    "ursprungsland": "Indien",
+    "gruender_creator": "Sachin Bansal"
+  },
+  "Baidu": {
+    "kategorie": "Plattform",
+    "start_jahr": 2000,
+    "reichweite_mio": 1000.0,
+    "ursprungsland": "China",
+    "gruender_creator": "Robin Li"
+  },
+  "Cocomelon": {
+    "kategorie": "Creator",
+    "start_jahr": 2006,
+    "reichweite_mio": 175.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jay Jeon"
+  },
+  "Fairphone": {
+    "kategorie": "Hardware",
+    "start_jahr": 2013,
+    "reichweite_mio": 2.0,
+    "ursprungsland": "Niederlande",
+    "gruender_creator": "Bas van Abel"
+  },
+  "Clubhouse": {
+    "kategorie": "Plattform",
+    "start_jahr": 2020,
+    "reichweite_mio": 10.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Paul Davison"
+  },
+  "Bandcamp": {
+    "kategorie": "Plattform",
+    "start_jahr": 2008,
+    "reichweite_mio": 5.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Ethan Diamond"
+  },
+  "Vimeo": {
+    "kategorie": "Plattform",
+    "start_jahr": 2004,
+    "reichweite_mio": 230.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jakob Lodwick"
+  },
+  "Patreon": {
+    "kategorie": "Plattform",
+    "start_jahr": 2013,
+    "reichweite_mio": 8.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jack Conte"
+  },
+  "Substack": {
+    "kategorie": "Plattform",
+    "start_jahr": 2017,
+    "reichweite_mio": 35.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Chris Best"
+  },
+  "Bluesky": {
+    "kategorie": "Plattform",
+    "start_jahr": 2023,
+    "reichweite_mio": 25.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jack Dorsey"
+  },
+  "Netflix": {
+    "kategorie": "Plattform",
+    "start_jahr": 2007,
+    "reichweite_mio": 260.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Reed Hastings"
+  },
+  "Google": {
+    "kategorie": "Plattform",
+    "start_jahr": 1998,
+    "reichweite_mio": 4300.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Larry Page & Sergey Brin"
+  },
+  "Amazon": {
+    "kategorie": "Plattform",
+    "start_jahr": 1994,
+    "reichweite_mio": 310.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Jeff Bezos"
+  },
+  "Apple App Store": {
+    "kategorie": "Plattform",
+    "start_jahr": 2008,
+    "reichweite_mio": 500.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Steve Jobs"
+  },
+  "Duolingo": {
+    "kategorie": "Plattform",
+    "start_jahr": 2012,
+    "reichweite_mio": 74.0,
+    "ursprungsland": "Vereinigte Staaten",
+    "gruender_creator": "Luis von Ahn"
   }
 }

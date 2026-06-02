@@ -943,5 +943,365 @@
     "produktionsland": "Vereinigte Staaten",
     "imdb_rating": 8.6,
     "epochen_setting": "Historisch"
+  },
+  "Call My Agent!": {
+    "genre": "Comedy",
+    "start_jahr": 2015,
+    "staffeln": 4,
+    "episoden": 24,
+    "produktionsland": "Frankreich",
+    "imdb_rating": 8.3,
+    "epochen_setting": "Gegenwart"
+  },
+  "Money Heist": {
+    "genre": "Krimi",
+    "start_jahr": 2017,
+    "staffeln": 5,
+    "episoden": 41,
+    "produktionsland": "Spanien",
+    "imdb_rating": 8.2,
+    "epochen_setting": "Gegenwart"
+  },
+  "Kingdom": {
+    "genre": "Sci-Fi/Mystery",
+    "start_jahr": 2019,
+    "staffeln": 2,
+    "episoden": 12,
+    "produktionsland": "Südkorea",
+    "imdb_rating": 8.4,
+    "epochen_setting": "Historisch"
+  },
+  "Sacred Games": {
+    "genre": "Krimi",
+    "start_jahr": 2018,
+    "staffeln": 2,
+    "episoden": 16,
+    "produktionsland": "Indien",
+    "imdb_rating": 8.7,
+    "epochen_setting": "Gegenwart"
+  },
+  "Elite": {
+    "genre": "Drama",
+    "start_jahr": 2018,
+    "staffeln": 7,
+    "episoden": 56,
+    "produktionsland": "Spanien",
+    "imdb_rating": 7.4,
+    "epochen_setting": "Gegenwart"
+  },
+  "Engrenages (Spiral)": {
+    "genre": "Krimi",
+    "start_jahr": 2005,
+    "staffeln": 8,
+    "episoden": 104,
+    "produktionsland": "Frankreich",
+    "imdb_rating": 8.3,
+    "epochen_setting": "Gegenwart"
+  },
+  "Au service de la France": {
+    "genre": "Comedy",
+    "start_jahr": 2015,
+    "staffeln": 2,
+    "episoden": 20,
+    "produktionsland": "Frankreich",
+    "imdb_rating": 7.7,
+    "epochen_setting": "Historisch"
+  },
+  "La Mante": {
+    "genre": "Krimi",
+    "start_jahr": 2017,
+    "staffeln": 1,
+    "episoden": 6,
+    "produktionsland": "Frankreich",
+    "imdb_rating": 7.2,
+    "epochen_setting": "Gegenwart"
+  },
+  "Emily in Paris": {
+    "genre": "Comedy",
+    "start_jahr": 2020,
+    "staffeln": 4,
+    "episoden": 40,
+    "produktionsland": "Frankreich",
+    "imdb_rating": 6.9,
+    "epochen_setting": "Gegenwart"
+  },
+  "Into the Night": {
+    "genre": "Sci-Fi/Mystery",
+    "start_jahr": 2020,
+    "staffeln": 2,
+    "episoden": 12,
+    "produktionsland": "Belgien",
+    "imdb_rating": 6.9,
+    "epochen_setting": "Gegenwart"
+  },
+  "Gran Hotel": {
+    "genre": "Drama",
+    "start_jahr": 2011,
+    "staffeln": 3,
+    "episoden": 39,
+    "produktionsland": "Spanien",
+    "imdb_rating": 8.3,
+    "epochen_setting": "Historisch"
+  },
+  "Vis a Vis": {
+    "genre": "Drama",
+    "start_jahr": 2015,
+    "staffeln": 4,
+    "episoden": 56,
+    "produktionsland": "Spanien",
+    "imdb_rating": 8.0,
+    "epochen_setting": "Gegenwart"
+  },
+  "Hierro": {
+    "genre": "Krimi",
+    "start_jahr": 2019,
+    "staffeln": 2,
+    "episoden": 14,
+    "produktionsland": "Spanien",
+    "imdb_rating": 7.5,
+    "epochen_setting": "Gegenwart"
+  },
+  "Gomorra": {
+    "genre": "Krimi",
+    "start_jahr": 2014,
+    "staffeln": 5,
+    "episoden": 74,
+    "produktionsland": "Italien",
+    "imdb_rating": 8.6,
+    "epochen_setting": "Gegenwart"
+  },
+  "Meine geniale Freundin": {
+    "genre": "Drama",
+    "start_jahr": 2018,
+    "staffeln": 4,
+    "episoden": 32,
+    "produktionsland": "Italien",
+    "imdb_rating": 8.4,
+    "epochen_setting": "Historisch"
+  },
+  "Zero": {
+    "genre": "Drama",
+    "start_jahr": 2021,
+    "staffeln": 1,
+    "episoden": 6,
+    "produktionsland": "Italien",
+    "imdb_rating": 6.5,
+    "epochen_setting": "Gegenwart"
+  },
+  "The Young Pope": {
+    "genre": "Drama",
+    "start_jahr": 2016,
+    "staffeln": 1,
+    "episoden": 10,
+    "produktionsland": "Italien",
+    "imdb_rating": 8.4,
+    "epochen_setting": "Gegenwart"
+  },
+  "Borgen": {
+    "genre": "Drama",
+    "start_jahr": 2010,
+    "staffeln": 4,
+    "episoden": 40,
+    "produktionsland": "Dänemark",
+    "imdb_rating": 8.5,
+    "epochen_setting": "Gegenwart"
+  },
+  "Forbrydelsen (The Killing)": {
+    "genre": "Krimi",
+    "start_jahr": 2007,
+    "staffeln": 3,
+    "episoden": 40,
+    "produktionsland": "Dänemark",
+    "imdb_rating": 8.4,
+    "epochen_setting": "Gegenwart"
+  },
+  "Rita": {
+    "genre": "Comedy",
+    "start_jahr": 2012,
+    "staffeln": 5,
+    "episoden": 60,
+    "produktionsland": "Dänemark",
+    "imdb_rating": 8.2,
+    "epochen_setting": "Gegenwart"
+  },
+  "Broen (The Bridge)": {
+    "genre": "Krimi",
+    "start_jahr": 2011,
+    "staffeln": 4,
+    "episoden": 38,
+    "produktionsland": "Schweden",
+    "imdb_rating": 8.6,
+    "epochen_setting": "Gegenwart"
+  },
+  "Before We Die": {
+    "genre": "Krimi",
+    "start_jahr": 2017,
+    "staffeln": 2,
+    "episoden": 12,
+    "produktionsland": "Schweden",
+    "imdb_rating": 7.8,
+    "epochen_setting": "Gegenwart"
+  },
+  "Quicksand": {
+    "genre": "Krimi",
+    "start_jahr": 2019,
+    "staffeln": 1,
+    "episoden": 6,
+    "produktionsland": "Schweden",
+    "imdb_rating": 7.4,
+    "epochen_setting": "Gegenwart"
+  },
+  "Lilyhammer": {
+    "genre": "Comedy",
+    "start_jahr": 2012,
+    "staffeln": 3,
+    "episoden": 24,
+    "produktionsland": "Norwegen",
+    "imdb_rating": 7.6,
+    "epochen_setting": "Gegenwart"
+  },
+  "Occupied": {
+    "genre": "Drama",
+    "start_jahr": 2015,
+    "staffeln": 3,
+    "episoden": 24,
+    "produktionsland": "Norwegen",
+    "imdb_rating": 7.6,
+    "epochen_setting": "Gegenwart"
+  },
+  "1983": {
+    "genre": "Sci-Fi/Mystery",
+    "start_jahr": 2018,
+    "staffeln": 1,
+    "episoden": 8,
+    "produktionsland": "Polen",
+    "imdb_rating": 7.3,
+    "epochen_setting": "Historisch"
+  },
+  "Wataha": {
+    "genre": "Krimi",
+    "start_jahr": 2014,
+    "staffeln": 3,
+    "episoden": 18,
+    "produktionsland": "Polen",
+    "imdb_rating": 7.8,
+    "epochen_setting": "Gegenwart"
+  },
+  "Penoza": {
+    "genre": "Krimi",
+    "start_jahr": 2010,
+    "staffeln": 5,
+    "episoden": 45,
+    "produktionsland": "Niederlande",
+    "imdb_rating": 7.9,
+    "epochen_setting": "Gegenwart"
+  },
+  "Familie": {
+    "genre": "Drama",
+    "start_jahr": 1991,
+    "staffeln": 20,
+    "episoden": 400,
+    "produktionsland": "Belgien",
+    "imdb_rating": 7.1,
+    "epochen_setting": "Gegenwart"
+  },
+  "Downton Abbey": {
+    "genre": "Drama",
+    "start_jahr": 2010,
+    "staffeln": 6,
+    "episoden": 52,
+    "produktionsland": "Vereinigtes Königreich",
+    "imdb_rating": 8.7,
+    "epochen_setting": "Historisch"
+  },
+  "Broadchurch": {
+    "genre": "Krimi",
+    "start_jahr": 2013,
+    "staffeln": 3,
+    "episoden": 24,
+    "produktionsland": "Vereinigtes Königreich",
+    "imdb_rating": 8.4,
+    "epochen_setting": "Gegenwart"
+  },
+  "Bodyguard": {
+    "genre": "Krimi",
+    "start_jahr": 2018,
+    "staffeln": 1,
+    "episoden": 6,
+    "produktionsland": "Vereinigtes Königreich",
+    "imdb_rating": 8.1,
+    "epochen_setting": "Gegenwart"
+  },
+  "The IT Crowd": {
+    "genre": "Comedy",
+    "start_jahr": 2006,
+    "staffeln": 4,
+    "episoden": 24,
+    "produktionsland": "Vereinigtes Königreich",
+    "imdb_rating": 8.5,
+    "epochen_setting": "Gegenwart"
+  },
+  "Lost": {
+    "genre": "Sci-Fi/Mystery",
+    "start_jahr": 2004,
+    "staffeln": 6,
+    "episoden": 121,
+    "produktionsland": "Vereinigte Staaten",
+    "imdb_rating": 8.3,
+    "epochen_setting": "Gegenwart"
+  },
+  "The Office (US)": {
+    "genre": "Comedy",
+    "start_jahr": 2005,
+    "staffeln": 9,
+    "episoden": 201,
+    "produktionsland": "Vereinigte Staaten",
+    "imdb_rating": 9.0,
+    "epochen_setting": "Gegenwart"
+  },
+  "Westworld": {
+    "genre": "Sci-Fi/Mystery",
+    "start_jahr": 2016,
+    "staffeln": 4,
+    "episoden": 36,
+    "produktionsland": "Vereinigte Staaten",
+    "imdb_rating": 8.6,
+    "epochen_setting": "Zukunft"
+  },
+  "House of Cards": {
+    "genre": "Drama",
+    "start_jahr": 2013,
+    "staffeln": 6,
+    "episoden": 73,
+    "produktionsland": "Vereinigte Staaten",
+    "imdb_rating": 8.7,
+    "epochen_setting": "Gegenwart"
+  },
+  "Ted Lasso": {
+    "genre": "Comedy",
+    "start_jahr": 2020,
+    "staffeln": 3,
+    "episoden": 34,
+    "produktionsland": "Vereinigtes Königreich",
+    "imdb_rating": 8.8,
+    "epochen_setting": "Gegenwart"
+  },
+  "The Mandalorian": {
+    "genre": "Sci-Fi/Mystery",
+    "start_jahr": 2019,
+    "staffeln": 3,
+    "episoden": 24,
+    "produktionsland": "Vereinigte Staaten",
+    "imdb_rating": 8.7,
+    "epochen_setting": "Zukunft"
+  },
+  "Avatar TLOK": {
+    "genre": "Sci-Fi/Mystery",
+    "start_jahr": 2012,
+    "staffeln": 4,
+    "episoden": 52,
+    "produktionsland": "Vereinigte Staaten",
+    "imdb_rating": 8.7,
+    "epochen_setting": "Zukunft"
   }
 }

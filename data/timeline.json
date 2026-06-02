@@ -3938,5 +3938,50 @@
         "year": 2006
       }
     ]
+  },
+  "boardgame_jahr": {
+    "prompt": "Welches Brettspiel ist älter?",
+    "items": [
+      {
+        "n": "Go",
+        "year": -2000
+      },
+      {
+        "n": "Backgammon",
+        "year": -3000
+      },
+      {
+        "n": "Schach",
+        "year": 600
+      },
+      {
+        "n": "Mah-Jong",
+        "year": 1850
+      },
+      {
+        "n": "Monopoly",
+        "year": 1935
+      },
+      {
+        "n": "Risk",
+        "year": 1957
+      },
+      {
+        "n": "Dungeons and Dragons",
+        "year": 1974
+      },
+      {
+        "n": "Siedler von Catan",
+        "year": 1995
+      },
+      {
+        "n": "Codenames",
+        "year": 2015
+      },
+      {
+        "n": "Wingspan",
+        "year": 2019
+      }
+    ]
   }
 }

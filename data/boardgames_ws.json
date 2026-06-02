@@ -1,0 +1,112 @@
+{
+  "spielbrett": {
+    "word": "SPIELBRETT",
+    "validWords": {
+      "de": [
+        "SPIEL",
+        "BRETT",
+        "REIST",
+        "STIEL",
+        "TIERE",
+        "PREIS",
+        "BIEST",
+        "STERIL",
+        "STIER",
+        "LEISTE",
+        "BREITE",
+        "TEILER",
+        "LEISER",
+        "ELITE",
+        "LIEST",
+        "RIESE",
+        "ELSTER",
+        "LISTE",
+        "BREIT",
+        "STEILE"
+      ],
+      "en": [
+        "PRIEST",
+        "STRIPE",
+        "SPRITE",
+        "TRIBES",
+        "LITERS",
+        "TILTS",
+        "BITER",
+        "STIR",
+        "TRIBE",
+        "BLISTER",
+        "RELIT",
+        "TILES",
+        "SPLIT",
+        "SPIRE",
+        "BLEST",
+        "TILER",
+        "LITER",
+        "SLEET"
+      ],
+      "pl": [
+        "SPIEL",
+        "BRETT",
+        "PREIS",
+        "STIEL",
+        "LISTE",
+        "TIERE",
+        "ELITE",
+        "STIER",
+        "LIEST"
+      ]
+    }
+  },
+  "wuerfelwurf": {
+    "word": "WUERFELWURF",
+    "validWords": {
+      "de": [
+        "WURF",
+        "FEUER",
+        "WERFER",
+        "WURFER",
+        "WUERFE",
+        "WUERFEL",
+        "RUFER",
+        "UFER",
+        "EUER",
+        "FREUE",
+        "RUFF",
+        "LUFF",
+        "FURL",
+        "WERF",
+        "EWER",
+        "LURER",
+        "FLUR",
+        "FLURE",
+        "WER",
+        "LURE"
+      ],
+      "en": [
+        "FEWER",
+        "FURL",
+        "RUFF",
+        "LUFF",
+        "FLEW",
+        "RULE",
+        "FUEL",
+        "REEL",
+        "FLEE",
+        "FLUE",
+        "WURF",
+        "RULER",
+        "REEF"
+      ],
+      "pl": [
+        "FEUER",
+        "WURF",
+        "UFER",
+        "EUER",
+        "RUFF",
+        "FLUR",
+        "WERF",
+        "WER"
+      ]
+    }
+  }
+}

@@ -1,42 +1,642 @@
 {
-  "Golden Retriever": {"kategorie": "Begleithund", "max_gewicht_kg": 34.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 56, "ursprungsland": "Grossbritannien", "fci_gruppe": 8},
-  "Labrador Retriever": {"kategorie": "Begleithund", "max_gewicht_kg": 36.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 57, "ursprungsland": "Kanada", "fci_gruppe": 8},
-  "Deutscher Schäferhund": {"kategorie": "Hütehund", "max_gewicht_kg": 40.0, "lebenserwartung_jahre": 11, "widerristhoehe_cm": 65, "ursprungsland": "Deutschland", "fci_gruppe": 1},
-  "Border Collie": {"kategorie": "Hütehund", "max_gewicht_kg": 23.0, "lebenserwartung_jahre": 15, "widerristhoehe_cm": 56, "ursprungsland": "Grossbritannien", "fci_gruppe": 1},
-  "Dackel": {"kategorie": "Jagdhund", "max_gewicht_kg": 9.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 23, "ursprungsland": "Deutschland", "fci_gruppe": 4},
-  "Beagle": {"kategorie": "Jagdhund", "max_gewicht_kg": 14.0, "lebenserwartung_jahre": 13, "widerristhoehe_cm": 41, "ursprungsland": "Grossbritannien", "fci_gruppe": 6},
-  "Pudel": {"kategorie": "Begleithund", "max_gewicht_kg": 32.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 60, "ursprungsland": "Frankreich", "fci_gruppe": 9},
-  "Chihuahua": {"kategorie": "Begleithund", "max_gewicht_kg": 3.0, "lebenserwartung_jahre": 16, "widerristhoehe_cm": 20, "ursprungsland": "Mexiko", "fci_gruppe": 9},
-  "Yorkshire Terrier": {"kategorie": "Terrier", "max_gewicht_kg": 3.2, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 23, "ursprungsland": "Grossbritannien", "fci_gruppe": 3},
-  "Englische Bulldogge": {"kategorie": "Molosser", "max_gewicht_kg": 25.0, "lebenserwartung_jahre": 10, "widerristhoehe_cm": 40, "ursprungsland": "Grossbritannien", "fci_gruppe": 2},
-  "Shiba Inu": {"kategorie": "Jagdhund", "max_gewicht_kg": 10.0, "lebenserwartung_jahre": 15, "widerristhoehe_cm": 41, "ursprungsland": "Japan", "fci_gruppe": 5},
-  "Rottweiler": {"kategorie": "Molosser", "max_gewicht_kg": 61.0, "lebenserwartung_jahre": 10, "widerristhoehe_cm": 69, "ursprungsland": "Deutschland", "fci_gruppe": 2},
-  "Boxer": {"kategorie": "Molosser", "max_gewicht_kg": 32.0, "lebenserwartung_jahre": 11, "widerristhoehe_cm": 63, "ursprungsland": "Deutschland", "fci_gruppe": 2},
-  "Siberian Husky": {"kategorie": "Hütehund", "max_gewicht_kg": 27.0, "lebenserwartung_jahre": 13, "widerristhoehe_cm": 60, "ursprungsland": "Russland", "fci_gruppe": 5},
-  "Dobermann": {"kategorie": "Molosser", "max_gewicht_kg": 45.0, "lebenserwartung_jahre": 11, "widerristhoehe_cm": 70, "ursprungsland": "Deutschland", "fci_gruppe": 2},
-  "Jack Russell Terrier": {"kategorie": "Terrier", "max_gewicht_kg": 8.0, "lebenserwartung_jahre": 15, "widerristhoehe_cm": 35, "ursprungsland": "Grossbritannien", "fci_gruppe": 3},
-  "Bernhardiner": {"kategorie": "Molosser", "max_gewicht_kg": 120.0, "lebenserwartung_jahre": 10, "widerristhoehe_cm": 90, "ursprungsland": "Schweiz", "fci_gruppe": 2},
-  "Dalmatiner": {"kategorie": "Begleithund", "max_gewicht_kg": 27.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 61, "ursprungsland": "Kroatien", "fci_gruppe": 6},
-  "Pomeranian": {"kategorie": "Begleithund", "max_gewicht_kg": 3.5, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 20, "ursprungsland": "Deutschland", "fci_gruppe": 5},
-  "Samojede": {"kategorie": "Hütehund", "max_gewicht_kg": 30.0, "lebenserwartung_jahre": 13, "widerristhoehe_cm": 60, "ursprungsland": "Russland", "fci_gruppe": 5},
-  "Australian Shepherd": {"kategorie": "Hütehund", "max_gewicht_kg": 32.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 58, "ursprungsland": "USA", "fci_gruppe": 1},
-  "Akita Inu": {"kategorie": "Molosser", "max_gewicht_kg": 50.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 70, "ursprungsland": "Japan", "fci_gruppe": 5},
-  "Weimaraner": {"kategorie": "Jagdhund", "max_gewicht_kg": 32.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 67, "ursprungsland": "Deutschland", "fci_gruppe": 7},
-  "Chow-Chow": {"kategorie": "Molosser", "max_gewicht_kg": 32.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 56, "ursprungsland": "China", "fci_gruppe": 5},
-  "Corgi Pembroke": {"kategorie": "Hütehund", "max_gewicht_kg": 14.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 31, "ursprungsland": "Wales", "fci_gruppe": 1},
-  "Whippet": {"kategorie": "Jagdhund", "max_gewicht_kg": 14.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 51, "ursprungsland": "Grossbritannien", "fci_gruppe": 10},
-  "Shar-Pei": {"kategorie": "Molosser", "max_gewicht_kg": 27.0, "lebenserwartung_jahre": 11, "widerristhoehe_cm": 51, "ursprungsland": "China", "fci_gruppe": 2},
-  "Malteser": {"kategorie": "Begleithund", "max_gewicht_kg": 4.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 25, "ursprungsland": "Malta", "fci_gruppe": 9},
-  "Irischer Wolfshund": {"kategorie": "Jagdhund", "max_gewicht_kg": 68.0, "lebenserwartung_jahre": 8, "widerristhoehe_cm": 86, "ursprungsland": "Irland", "fci_gruppe": 10},
-  "Cairn Terrier": {"kategorie": "Terrier", "max_gewicht_kg": 8.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 32, "ursprungsland": "Schottland", "fci_gruppe": 3},
-  "Basenji": {"kategorie": "Jagdhund", "max_gewicht_kg": 12.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 43, "ursprungsland": "Kongo", "fci_gruppe": 5},
-  "Rhodesian Ridgeback": {"kategorie": "Jagdhund", "max_gewicht_kg": 41.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 69, "ursprungsland": "Simbabwe", "fci_gruppe": 6},
-  "Deutsche Dogge": {"kategorie": "Molosser", "max_gewicht_kg": 90.0, "lebenserwartung_jahre": 9, "widerristhoehe_cm": 86, "ursprungsland": "Deutschland", "fci_gruppe": 2},
-  "Bichon Frisé": {"kategorie": "Begleithund", "max_gewicht_kg": 5.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 29, "ursprungsland": "Belgien", "fci_gruppe": 9},
-  "Schnauzer": {"kategorie": "Terrier", "max_gewicht_kg": 20.0, "lebenserwartung_jahre": 13, "widerristhoehe_cm": 50, "ursprungsland": "Deutschland", "fci_gruppe": 2},
-  "Bullterrier": {"kategorie": "Terrier", "max_gewicht_kg": 29.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 53, "ursprungsland": "Grossbritannien", "fci_gruppe": 3},
-  "Malinois": {"kategorie": "Hütehund", "max_gewicht_kg": 30.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 66, "ursprungsland": "Belgien", "fci_gruppe": 1},
-  "Havaneser": {"kategorie": "Begleithund", "max_gewicht_kg": 6.0, "lebenserwartung_jahre": 14, "widerristhoehe_cm": 27, "ursprungsland": "Kuba", "fci_gruppe": 9},
-  "Leonberger": {"kategorie": "Molosser", "max_gewicht_kg": 77.0, "lebenserwartung_jahre": 10, "widerristhoehe_cm": 80, "ursprungsland": "Deutschland", "fci_gruppe": 2},
-  "Alaskan Malamute": {"kategorie": "Hütehund", "max_gewicht_kg": 43.0, "lebenserwartung_jahre": 12, "widerristhoehe_cm": 71, "ursprungsland": "USA", "fci_gruppe": 5}
+  "Golden Retriever": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 34.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 56,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 8
+  },
+  "Labrador Retriever": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 36.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 57,
+    "ursprungsland": "Kanada",
+    "fci_gruppe": 8
+  },
+  "Deutscher Schäferhund": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 40.0,
+    "lebenserwartung_jahre": 11,
+    "widerristhoehe_cm": 65,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 1
+  },
+  "Border Collie": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 23.0,
+    "lebenserwartung_jahre": 15,
+    "widerristhoehe_cm": 56,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 1
+  },
+  "Dackel": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 9.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 23,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 4
+  },
+  "Beagle": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 14.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 41,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 6
+  },
+  "Pudel": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 32.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 60,
+    "ursprungsland": "Frankreich",
+    "fci_gruppe": 9
+  },
+  "Chihuahua": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 3.0,
+    "lebenserwartung_jahre": 16,
+    "widerristhoehe_cm": 20,
+    "ursprungsland": "Mexiko",
+    "fci_gruppe": 9
+  },
+  "Yorkshire Terrier": {
+    "kategorie": "Terrier",
+    "max_gewicht_kg": 3.2,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 23,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 3
+  },
+  "Englische Bulldogge": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 25.0,
+    "lebenserwartung_jahre": 10,
+    "widerristhoehe_cm": 40,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 2
+  },
+  "Shiba Inu": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 10.0,
+    "lebenserwartung_jahre": 15,
+    "widerristhoehe_cm": 41,
+    "ursprungsland": "Japan",
+    "fci_gruppe": 5
+  },
+  "Rottweiler": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 61.0,
+    "lebenserwartung_jahre": 10,
+    "widerristhoehe_cm": 69,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 2
+  },
+  "Boxer": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 32.0,
+    "lebenserwartung_jahre": 11,
+    "widerristhoehe_cm": 63,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 2
+  },
+  "Siberian Husky": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 27.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 60,
+    "ursprungsland": "Russland",
+    "fci_gruppe": 5
+  },
+  "Dobermann": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 45.0,
+    "lebenserwartung_jahre": 11,
+    "widerristhoehe_cm": 70,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 2
+  },
+  "Jack Russell Terrier": {
+    "kategorie": "Terrier",
+    "max_gewicht_kg": 8.0,
+    "lebenserwartung_jahre": 15,
+    "widerristhoehe_cm": 35,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 3
+  },
+  "Bernhardiner": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 120.0,
+    "lebenserwartung_jahre": 10,
+    "widerristhoehe_cm": 90,
+    "ursprungsland": "Schweiz",
+    "fci_gruppe": 2
+  },
+  "Dalmatiner": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 27.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 61,
+    "ursprungsland": "Kroatien",
+    "fci_gruppe": 6
+  },
+  "Pomeranian": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 3.5,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 20,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 5
+  },
+  "Samojede": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 30.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 60,
+    "ursprungsland": "Russland",
+    "fci_gruppe": 5
+  },
+  "Australian Shepherd": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 32.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 58,
+    "ursprungsland": "USA",
+    "fci_gruppe": 1
+  },
+  "Akita Inu": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 50.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 70,
+    "ursprungsland": "Japan",
+    "fci_gruppe": 5
+  },
+  "Weimaraner": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 32.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 67,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 7
+  },
+  "Chow-Chow": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 32.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 56,
+    "ursprungsland": "China",
+    "fci_gruppe": 5
+  },
+  "Corgi Pembroke": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 14.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 31,
+    "ursprungsland": "Wales",
+    "fci_gruppe": 1
+  },
+  "Whippet": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 14.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 51,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 10
+  },
+  "Shar-Pei": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 27.0,
+    "lebenserwartung_jahre": 11,
+    "widerristhoehe_cm": 51,
+    "ursprungsland": "China",
+    "fci_gruppe": 2
+  },
+  "Malteser": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 4.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 25,
+    "ursprungsland": "Malta",
+    "fci_gruppe": 9
+  },
+  "Irischer Wolfshund": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 68.0,
+    "lebenserwartung_jahre": 8,
+    "widerristhoehe_cm": 86,
+    "ursprungsland": "Irland",
+    "fci_gruppe": 10
+  },
+  "Cairn Terrier": {
+    "kategorie": "Terrier",
+    "max_gewicht_kg": 8.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 32,
+    "ursprungsland": "Schottland",
+    "fci_gruppe": 3
+  },
+  "Basenji": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 12.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 43,
+    "ursprungsland": "Kongo",
+    "fci_gruppe": 5
+  },
+  "Rhodesian Ridgeback": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 41.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 69,
+    "ursprungsland": "Simbabwe",
+    "fci_gruppe": 6
+  },
+  "Deutsche Dogge": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 90.0,
+    "lebenserwartung_jahre": 9,
+    "widerristhoehe_cm": 86,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 2
+  },
+  "Bichon Frisé": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 5.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 29,
+    "ursprungsland": "Belgien",
+    "fci_gruppe": 9
+  },
+  "Schnauzer": {
+    "kategorie": "Terrier",
+    "max_gewicht_kg": 20.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 50,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 2
+  },
+  "Bullterrier": {
+    "kategorie": "Terrier",
+    "max_gewicht_kg": 29.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 53,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 3
+  },
+  "Malinois": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 30.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 66,
+    "ursprungsland": "Belgien",
+    "fci_gruppe": 1
+  },
+  "Havaneser": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 6.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 27,
+    "ursprungsland": "Kuba",
+    "fci_gruppe": 9
+  },
+  "Leonberger": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 77.0,
+    "lebenserwartung_jahre": 10,
+    "widerristhoehe_cm": 80,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 2
+  },
+  "Alaskan Malamute": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 43.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 71,
+    "ursprungsland": "USA",
+    "fci_gruppe": 5
+  },
+  "Hovawart": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 45.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 70,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 2
+  },
+  "Eurasier": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 26.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 60,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 5
+  },
+  "Mittelspitz": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 11.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 38,
+    "ursprungsland": "Deutschland",
+    "fci_gruppe": 5
+  },
+  "Berner Sennenhund": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 52.0,
+    "lebenserwartung_jahre": 8,
+    "widerristhoehe_cm": 70,
+    "ursprungsland": "Schweiz",
+    "fci_gruppe": 2
+  },
+  "Grosser Schweizer Sennenhund": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 60.0,
+    "lebenserwartung_jahre": 9,
+    "widerristhoehe_cm": 72,
+    "ursprungsland": "Schweiz",
+    "fci_gruppe": 2
+  },
+  "Appenzeller Sennenhund": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 25.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 56,
+    "ursprungsland": "Schweiz",
+    "fci_gruppe": 1
+  },
+  "Entlebucher Sennenhund": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 16.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 50,
+    "ursprungsland": "Schweiz",
+    "fci_gruppe": 1
+  },
+  "Briard": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 45.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 68,
+    "ursprungsland": "Frankreich",
+    "fci_gruppe": 1
+  },
+  "Bouvier des Flandres": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 40.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 68,
+    "ursprungsland": "Belgien",
+    "fci_gruppe": 1
+  },
+  "Pyrenäenberghund": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 60.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 82,
+    "ursprungsland": "Frankreich",
+    "fci_gruppe": 2
+  },
+  "Barbet": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 28.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 64,
+    "ursprungsland": "Frankreich",
+    "fci_gruppe": 8
+  },
+  "Basset Hound": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 35.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 38,
+    "ursprungsland": "Frankreich",
+    "fci_gruppe": 6
+  },
+  "Bloodhound": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 50.0,
+    "lebenserwartung_jahre": 11,
+    "widerristhoehe_cm": 69,
+    "ursprungsland": "Belgien",
+    "fci_gruppe": 6
+  },
+  "Irish Setter": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 32.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 67,
+    "ursprungsland": "Irland",
+    "fci_gruppe": 7
+  },
+  "Gordon Setter": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 36.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 69,
+    "ursprungsland": "Schottland",
+    "fci_gruppe": 7
+  },
+  "English Setter": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 36.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 69,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 7
+  },
+  "Cocker Spaniel": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 13.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 40,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 8
+  },
+  "English Springer Spaniel": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 23.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 51,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 8
+  },
+  "Airedale Terrier": {
+    "kategorie": "Terrier",
+    "max_gewicht_kg": 29.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 61,
+    "ursprungsland": "Grossbritannien",
+    "fci_gruppe": 3
+  },
+  "West Highland White Terrier": {
+    "kategorie": "Terrier",
+    "max_gewicht_kg": 10.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 28,
+    "ursprungsland": "Schottland",
+    "fci_gruppe": 3
+  },
+  "Vizsla": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 30.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 64,
+    "ursprungsland": "Ungarn",
+    "fci_gruppe": 7
+  },
+  "Komondor": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 60.0,
+    "lebenserwartung_jahre": 11,
+    "widerristhoehe_cm": 80,
+    "ursprungsland": "Ungarn",
+    "fci_gruppe": 1
+  },
+  "Puli": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 16.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 45,
+    "ursprungsland": "Ungarn",
+    "fci_gruppe": 1
+  },
+  "Kuvasz": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 52.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 75,
+    "ursprungsland": "Ungarn",
+    "fci_gruppe": 1
+  },
+  "Mudi": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 13.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 47,
+    "ursprungsland": "Ungarn",
+    "fci_gruppe": 1
+  },
+  "Cane Corso": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 50.0,
+    "lebenserwartung_jahre": 11,
+    "widerristhoehe_cm": 70,
+    "ursprungsland": "Italien",
+    "fci_gruppe": 2
+  },
+  "Neapolitanischer Mastiff": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 70.0,
+    "lebenserwartung_jahre": 9,
+    "widerristhoehe_cm": 75,
+    "ursprungsland": "Italien",
+    "fci_gruppe": 2
+  },
+  "Lagotto Romagnolo": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 16.0,
+    "lebenserwartung_jahre": 17,
+    "widerristhoehe_cm": 48,
+    "ursprungsland": "Italien",
+    "fci_gruppe": 8
+  },
+  "Spinone Italiano": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 40.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 70,
+    "ursprungsland": "Italien",
+    "fci_gruppe": 7
+  },
+  "Finnischer Spitz": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 13.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 50,
+    "ursprungsland": "Finnland",
+    "fci_gruppe": 5
+  },
+  "Isländischer Schäferhund": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 14.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 46,
+    "ursprungsland": "Island",
+    "fci_gruppe": 5
+  },
+  "Tibetischer Mastiff": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 82.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 80,
+    "ursprungsland": "Tibet",
+    "fci_gruppe": 2
+  },
+  "Chinesischer Schopfhund": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 5.5,
+    "lebenserwartung_jahre": 15,
+    "widerristhoehe_cm": 33,
+    "ursprungsland": "China",
+    "fci_gruppe": 9
+  },
+  "Kangal": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 65.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 81,
+    "ursprungsland": "Türkei",
+    "fci_gruppe": 2
+  },
+  "Afghan Hound": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 27.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 74,
+    "ursprungsland": "Afghanistan",
+    "fci_gruppe": 10
+  },
+  "Saluki": {
+    "kategorie": "Jagdhund",
+    "max_gewicht_kg": 30.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 71,
+    "ursprungsland": "Orient",
+    "fci_gruppe": 10
+  },
+  "Dogo Argentino": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 50.0,
+    "lebenserwartung_jahre": 12,
+    "widerristhoehe_cm": 68,
+    "ursprungsland": "Argentinien",
+    "fci_gruppe": 2
+  },
+  "Xoloitzcuintle": {
+    "kategorie": "Begleithund",
+    "max_gewicht_kg": 14.0,
+    "lebenserwartung_jahre": 13,
+    "widerristhoehe_cm": 55,
+    "ursprungsland": "Mexiko",
+    "fci_gruppe": 5
+  },
+  "Boerboel": {
+    "kategorie": "Molosser",
+    "max_gewicht_kg": 80.0,
+    "lebenserwartung_jahre": 11,
+    "widerristhoehe_cm": 70,
+    "ursprungsland": "Südafrika",
+    "fci_gruppe": 2
+  },
+  "Australian Cattle Dog": {
+    "kategorie": "Hütehund",
+    "max_gewicht_kg": 22.0,
+    "lebenserwartung_jahre": 14,
+    "widerristhoehe_cm": 51,
+    "ursprungsland": "Australien",
+    "fci_gruppe": 1
+  }
 }

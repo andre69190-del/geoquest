@@ -893,6 +893,132 @@ def check_kunst_extended(filename, data):
                  f"Muss Int (auch negativ) sein, ist {type(j).__name__}")
 
 
+def check_boardgames_extended(filename, data):
+    """Validiert data/boardgames_extended.json (7 Pflichtfelder, Enums, Typen)."""
+    REQUIRED = ['kategorie', 'erscheinungsjahr', 'max_spieler', 'spieldauer_min',
+                'bgg_rating', 'autor', 'ursprungsland']
+    KAT_ENUM = {'Strategie', 'Party', 'Familie', 'Kartenspiel'}
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'boardgames_extended.json muss ein Dict sein')
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, 'eintrag', name, 'Wert ist kein Dict'); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, 'pflichtfeld', name, "Feld '%s' fehlt" % f)
+        kat = entry.get('kategorie')
+        if kat is not None and kat not in KAT_ENUM:
+            warn(filename, 'enum:kategorie', name, "'%s' nicht erlaubt" % kat)
+        for int_f in ('erscheinungsjahr', 'max_spieler', 'spieldauer_min'):
+            v = entry.get(int_f)
+            if v is not None and not isinstance(v, int):
+                warn(filename, 'typ:' + int_f, name,
+                     'Muss Int sein, ist %s' % type(v).__name__)
+        r = entry.get('bgg_rating')
+        if r is not None and not isinstance(r, (int, float)):
+            warn(filename, 'typ:bgg_rating', name,
+                 'Muss Float sein, ist %s' % type(r).__name__)
+        elif r is not None and not (0.0 <= float(r) <= 10.0):
+            warn(filename, 'range:bgg_rating', name,
+                 'bgg_rating muss 0-10 sein (ist %s)' % r)
+
+
+def check_sprachen_extended(filename, data):
+    """Validiert data/sprachen_extended.json (5 Pflichtfelder, Enums, Typen)."""
+    REQUIRED = ['sprachfamilie', 'muttersprachler_mio', 'anzahl_laender',
+                'schrift', 'ursprungsregion']
+    FAM_ENUM = {
+        'Indogermanisch', 'Sino-Tibetisch', 'Afroasiatisch', 'Austronesisch',
+        'Isoliert', 'Turkisch', 'Dravidisch', 'Niger-Kongo', 'Uralisch',
+        'Kartvelisch', 'Austroasiatisch', 'Kra-Dai', 'Quechua',
+        'Uto-Aztekisch', 'Tupisch', 'Kunstsprache',
+    }
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'sprachen_extended.json muss ein Dict sein')
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, 'eintrag', name, 'Wert ist kein Dict'); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, 'pflichtfeld', name, "Feld '%s' fehlt" % f)
+        fam = entry.get('sprachfamilie')
+        if fam is not None and fam not in FAM_ENUM:
+            warn(filename, 'enum:sprachfamilie', name, "'%s' nicht erlaubt" % fam)
+        v = entry.get('muttersprachler_mio')
+        if v is not None and not isinstance(v, (int, float)):
+            warn(filename, 'typ:muttersprachler_mio', name,
+                 'Muss Float sein, ist %s' % type(v).__name__)
+        n = entry.get('anzahl_laender')
+        if n is not None and not isinstance(n, int):
+            warn(filename, 'typ:anzahl_laender', name,
+                 'Muss Int sein, ist %s' % type(n).__name__)
+
+
+def check_boardgames_extended(filename, data):
+    """Validiert data/boardgames_extended.json (7 Pflichtfelder, Enums, Typen)."""
+    REQUIRED = ['kategorie', 'erscheinungsjahr', 'max_spieler', 'spieldauer_min',
+                'bgg_rating', 'autor', 'ursprungsland']
+    KAT_ENUM = {'Strategie', 'Party', 'Familie', 'Kartenspiel'}
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'boardgames_extended.json muss ein Dict sein')
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, 'eintrag', name, 'Wert ist kein Dict'); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, 'pflichtfeld', name, "Feld '%s' fehlt" % f)
+        kat = entry.get('kategorie')
+        if kat is not None and kat not in KAT_ENUM:
+            warn(filename, 'enum:kategorie', name, "'%s' nicht erlaubt" % kat)
+        for int_f in ('erscheinungsjahr', 'max_spieler', 'spieldauer_min'):
+            v = entry.get(int_f)
+            if v is not None and not isinstance(v, int):
+                warn(filename, 'typ:' + int_f, name,
+                     'Muss Int sein, ist %s' % type(v).__name__)
+        r = entry.get('bgg_rating')
+        if r is not None and not isinstance(r, (int, float)):
+            warn(filename, 'typ:bgg_rating', name,
+                 'Muss Float sein, ist %s' % type(r).__name__)
+        elif r is not None and not (0.0 <= float(r) <= 10.0):
+            warn(filename, 'range:bgg_rating', name,
+                 'bgg_rating muss 0-10 sein (ist %s)' % r)
+
+
+def check_sprachen_extended(filename, data):
+    """Validiert data/sprachen_extended.json (5 Pflichtfelder, Enums, Typen)."""
+    REQUIRED = ['sprachfamilie', 'muttersprachler_mio', 'anzahl_laender',
+                'schrift', 'ursprungsregion']
+    FAM_ENUM = {
+        'Indogermanisch', 'Sino-Tibetisch', 'Afroasiatisch', 'Austronesisch',
+        'Isoliert', 'Turkisch', 'Dravidisch', 'Niger-Kongo', 'Uralisch',
+        'Kartvelisch', 'Austroasiatisch', 'Kra-Dai', 'Quechua',
+        'Uto-Aztekisch', 'Tupisch', 'Kunstsprache',
+    }
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'sprachen_extended.json muss ein Dict sein')
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, 'eintrag', name, 'Wert ist kein Dict'); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, 'pflichtfeld', name, "Feld '%s' fehlt" % f)
+        fam = entry.get('sprachfamilie')
+        if fam is not None and fam not in FAM_ENUM:
+            warn(filename, 'enum:sprachfamilie', name, "'%s' nicht erlaubt" % fam)
+        v = entry.get('muttersprachler_mio')
+        if v is not None and not isinstance(v, (int, float)):
+            warn(filename, 'typ:muttersprachler_mio', name,
+                 'Muss Float sein, ist %s' % type(v).__name__)
+        n = entry.get('anzahl_laender')
+        if n is not None and not isinstance(n, int):
+            warn(filename, 'typ:anzahl_laender', name,
+                 'Muss Int sein, ist %s' % type(n).__name__)
+
+
 def check_hunde_extended(filename, data):
     """Validiert data/hunde_extended.json (flaches Dict, 6 Felder)."""
     REQUIRED = ['kategorie', 'max_gewicht_kg', 'lebenserwartung_jahre',
@@ -1108,6 +1234,14 @@ def detect_and_check(filename):
         check_themeparks_extended(filename, data)
     elif name == "kunst_extended.json":
         check_kunst_extended(filename, data)
+    elif name == "boardgames_extended.json":
+        check_boardgames_extended(filename, data)
+    elif name == "sprachen_extended.json":
+        check_sprachen_extended(filename, data)
+    elif name == "boardgames_extended.json":
+        check_boardgames_extended(filename, data)
+    elif name == "sprachen_extended.json":
+        check_sprachen_extended(filename, data)
     elif name == "hunde_extended.json":
         check_hunde_extended(filename, data)
     elif name == "gartenbau_extended.json":

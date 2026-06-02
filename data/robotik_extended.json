@@ -558,5 +558,138 @@
     "entwickler": "Intel",
     "ursprungsland": "Vereinigte Staaten",
     "meilenstein_fakt": "Weltweit meistgenutzte Open-Source-Bildverarbeitungsbibliothek, Basis aller Computer-Vision-Systeme"
+  },
+  "ABB Yumi": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2015,
+    "ursprungsland": "Schweiz",
+    "entwickler": "ABB",
+    "meilenstein_fakt": "Erster kollaborativer Zweiarmroboter"
+  },
+  "KUKA LBR iiwa": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2013,
+    "ursprungsland": "Deutschland",
+    "entwickler": "KUKA AG",
+    "meilenstein_fakt": "7-Achs kollaborativer Roboter"
+  },
+  "Franka Emika Panda": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2017,
+    "ursprungsland": "Deutschland",
+    "entwickler": "Franka Robotics",
+    "meilenstein_fakt": "Open-Source Robotik-Plattform"
+  },
+  "PAL Robotics TALOS": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2017,
+    "ursprungsland": "Spanien",
+    "entwickler": "PAL Robotics",
+    "meilenstein_fakt": "Vollständig torque-gesteuerter Humanoide"
+  },
+  "Shadow Dexterous Hand": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2003,
+    "ursprungsland": "Vereinigtes Königreich",
+    "entwickler": "Shadow Robot",
+    "meilenstein_fakt": "24-Freiheitsgrad-Roboterhand"
+  },
+  "SOMA (Soft Robotics)": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2018,
+    "ursprungsland": "Deutschland",
+    "entwickler": "Max-Planck-Institut",
+    "meilenstein_fakt": "EU Horizon 2020 Flagship-Projekt"
+  },
+  "iCub": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2004,
+    "ursprungsland": "Italien",
+    "entwickler": "IIT Genua",
+    "meilenstein_fakt": "Weltweit meistgenutzte humanoid-Forschungsplattform"
+  },
+  "NAO (Aldebaran)": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2006,
+    "ursprungsland": "Frankreich",
+    "entwickler": "Aldebaran Robotics",
+    "meilenstein_fakt": "Am häufigsten in Schulen eingesetzter Roboter"
+  },
+  "Spot (EU-Einsatz)": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2019,
+    "ursprungsland": "Dänemark",
+    "entwickler": "DTU/Boston Dynamics",
+    "meilenstein_fakt": "Skandinaviens meistgenutzter Inspektionsroboter"
+  },
+  "Kawasaki RS010N": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2010,
+    "ursprungsland": "Japan",
+    "entwickler": "Kawasaki Robotics",
+    "meilenstein_fakt": "6-Achs-Roboter für Automobilindustrie"
+  },
+  "FANUC M-2000iA": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2009,
+    "ursprungsland": "Japan",
+    "entwickler": "FANUC Corporation",
+    "meilenstein_fakt": "Hebt bis 2300 kg, stärkster Serienroboter"
+  },
+  "Doosan H2515": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2016,
+    "ursprungsland": "Südkorea",
+    "entwickler": "Doosan Robotics",
+    "meilenstein_fakt": "Kollaborativer Roboter mit Force-Sensing"
+  },
+  "Hyundai Exoskeleton": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2019,
+    "ursprungsland": "Südkorea",
+    "entwickler": "Hyundai Motor",
+    "meilenstein_fakt": "Medizinisches Exoskelett für Schlaganfall-Patienten"
+  },
+  "Xiaomi CyberDog": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2021,
+    "ursprungsland": "China",
+    "entwickler": "Xiaomi",
+    "meilenstein_fakt": "Günstigster Quadruped-Roboter (1500 USD)"
+  },
+  "Unitree Go1": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2021,
+    "ursprungsland": "China",
+    "entwickler": "Unitree Robotics",
+    "meilenstein_fakt": "Rekordpreis: komplett unter 3000 USD"
+  },
+  "DJI RoboMaster S1": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2019,
+    "ursprungsland": "China",
+    "entwickler": "DJI",
+    "meilenstein_fakt": "Programmierroboter für STEM-Bildung"
+  },
+  "Robonaut 2 (NASA)": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2010,
+    "ursprungsland": "Vereinigte Staaten",
+    "entwickler": "NASA/GM",
+    "meilenstein_fakt": "Erster Humanoide auf der ISS"
+  },
+  "CIMON (ESA)": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2018,
+    "ursprungsland": "Deutschland",
+    "entwickler": "Airbus/DLR/IBM",
+    "meilenstein_fakt": "ESA KI-Begleiter auf der ISS"
+  },
+  "ExoMars Rover": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2022,
+    "ursprungsland": "Europa",
+    "entwickler": "ESA/Thales Alenia",
+    "meilenstein_fakt": "Erster EU-Rover auf dem Mars"
   }
 }

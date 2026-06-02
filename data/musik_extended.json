@@ -412,5 +412,374 @@
     "herkunftsland": "Deutschland",
     "grammys": 0,
     "groesster_hit": "Easy"
+  },
+  "Scorpions": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1965,
+    "streams_mrd": 3.1,
+    "verkaeufe_mio": 110.0,
+    "herkunftsland": "Deutschland",
+    "grammys": 0,
+    "groesster_hit": "Wind of Change"
+  },
+  "Herbert Grönemeyer": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1979,
+    "streams_mrd": 0.8,
+    "verkaeufe_mio": 14.0,
+    "herkunftsland": "Deutschland",
+    "grammys": 0,
+    "groesster_hit": "Männer"
+  },
+  "David Guetta": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 2001,
+    "streams_mrd": 9.0,
+    "verkaeufe_mio": 10.0,
+    "herkunftsland": "Frankreich",
+    "grammys": 2,
+    "groesster_hit": "Titanium"
+  },
+  "Roxette": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1986,
+    "streams_mrd": 2.8,
+    "verkaeufe_mio": 75.0,
+    "herkunftsland": "Schweden",
+    "grammys": 0,
+    "groesster_hit": "It Must Have Been Love"
+  },
+  "Robyn": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1995,
+    "streams_mrd": 2.1,
+    "verkaeufe_mio": 4.0,
+    "herkunftsland": "Schweden",
+    "grammys": 0,
+    "groesster_hit": "Dancing On My Own"
+  },
+  "Aurora": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2012,
+    "streams_mrd": 1.4,
+    "verkaeufe_mio": 1.0,
+    "herkunftsland": "Norwegen",
+    "grammys": 0,
+    "groesster_hit": "Runaway"
+  },
+  "Sigur Rós": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1994,
+    "streams_mrd": 0.9,
+    "verkaeufe_mio": 2.0,
+    "herkunftsland": "Island",
+    "grammys": 0,
+    "groesster_hit": "Hoppípolla"
+  },
+  "Amy Winehouse": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2003,
+    "streams_mrd": 4.8,
+    "verkaeufe_mio": 20.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 5,
+    "groesster_hit": "Rehab"
+  },
+  "U2": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1976,
+    "streams_mrd": 6.2,
+    "verkaeufe_mio": 170.0,
+    "herkunftsland": "Irland",
+    "grammys": 22,
+    "groesster_hit": "One"
+  },
+  "Frank Ocean": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2009,
+    "streams_mrd": 7.5,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 2,
+    "groesster_hit": "Thinking Bout You"
+  },
+  "J Balvin": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2004,
+    "streams_mrd": 14.0,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Kolumbien",
+    "grammys": 0,
+    "groesster_hit": "Mi Gente"
+  },
+  "BLACKPINK": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2016,
+    "streams_mrd": 10.0,
+    "verkaeufe_mio": 5.0,
+    "herkunftsland": "Südkorea",
+    "grammys": 0,
+    "groesster_hit": "How You Like That"
+  },
+  "Wizkid": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2009,
+    "streams_mrd": 6.0,
+    "verkaeufe_mio": 2.0,
+    "herkunftsland": "Nigeria",
+    "grammys": 1,
+    "groesster_hit": "Essence"
+  },
+  "Anitta": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2010,
+    "streams_mrd": 4.0,
+    "verkaeufe_mio": 1.0,
+    "herkunftsland": "Brasilien",
+    "grammys": 0,
+    "groesster_hit": "Envolver"
+  },
+  "Pink Floyd": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1965,
+    "streams_mrd": 6.5,
+    "verkaeufe_mio": 250.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 1,
+    "groesster_hit": "Comfortably Numb"
+  },
+  "Led Zeppelin": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1968,
+    "streams_mrd": 7.0,
+    "verkaeufe_mio": 300.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 1,
+    "groesster_hit": "Stairway to Heaven"
+  },
+  "Depeche Mode": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 1980,
+    "streams_mrd": 4.1,
+    "verkaeufe_mio": 100.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 0,
+    "groesster_hit": "Personal Jesus"
+  },
+  "Hozier": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 2008,
+    "streams_mrd": 3.2,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Irland",
+    "grammys": 0,
+    "groesster_hit": "Take Me To Church"
+  },
+  "Stormzy": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 2011,
+    "streams_mrd": 2.5,
+    "verkaeufe_mio": 1.5,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 0,
+    "groesster_hit": "Blinded By Your Grace"
+  },
+  "A-ha": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1982,
+    "streams_mrd": 2.9,
+    "verkaeufe_mio": 60.0,
+    "herkunftsland": "Norwegen",
+    "grammys": 0,
+    "groesster_hit": "Take On Me"
+  },
+  "Kygo": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 2012,
+    "streams_mrd": 4.5,
+    "verkaeufe_mio": 2.0,
+    "herkunftsland": "Norwegen",
+    "grammys": 0,
+    "groesster_hit": "Firestone"
+  },
+  "Nightwish": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1996,
+    "streams_mrd": 1.8,
+    "verkaeufe_mio": 10.0,
+    "herkunftsland": "Finnland",
+    "grammys": 0,
+    "groesster_hit": "Nemo"
+  },
+  "Phoenix": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1995,
+    "streams_mrd": 1.9,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Frankreich",
+    "grammys": 1,
+    "groesster_hit": "1901"
+  },
+  "Angele": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2015,
+    "streams_mrd": 2.1,
+    "verkaeufe_mio": 1.5,
+    "herkunftsland": "Belgien",
+    "grammys": 0,
+    "groesster_hit": "Balance ton quoi"
+  },
+  "Falco": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1977,
+    "streams_mrd": 0.8,
+    "verkaeufe_mio": 15.0,
+    "herkunftsland": "Österreich",
+    "grammys": 0,
+    "groesster_hit": "Rock Me Amadeus"
+  },
+  "Within Temptation": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1996,
+    "streams_mrd": 1.2,
+    "verkaeufe_mio": 5.0,
+    "herkunftsland": "Niederlande",
+    "grammys": 0,
+    "groesster_hit": "Angels"
+  },
+  "Youssou NDour": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1979,
+    "streams_mrd": 0.6,
+    "verkaeufe_mio": 8.0,
+    "herkunftsland": "Senegal",
+    "grammys": 1,
+    "groesster_hit": "7 Seconds"
+  },
+  "Angelique Kidjo": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1980,
+    "streams_mrd": 0.5,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Benin",
+    "grammys": 5,
+    "groesster_hit": "Agolo"
+  },
+  "Caetano Veloso": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1965,
+    "streams_mrd": 0.7,
+    "verkaeufe_mio": 12.0,
+    "herkunftsland": "Brasilien",
+    "grammys": 1,
+    "groesster_hit": "Cucurrucucu Paloma"
+  },
+  "Juanes": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 2000,
+    "streams_mrd": 2.4,
+    "verkaeufe_mio": 15.0,
+    "herkunftsland": "Kolumbien",
+    "grammys": 26,
+    "groesster_hit": "La Camisa Negra"
+  },
+  "Babymetal": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 2010,
+    "streams_mrd": 1.5,
+    "verkaeufe_mio": 2.0,
+    "herkunftsland": "Japan",
+    "grammys": 0,
+    "groesster_hit": "Gimme Chocolate"
+  },
+  "G-Dragon": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 2006,
+    "streams_mrd": 2.8,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Südkorea",
+    "grammys": 0,
+    "groesster_hit": "Crayon"
+  },
+  "Crowded House": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1985,
+    "streams_mrd": 1.0,
+    "verkaeufe_mio": 15.0,
+    "herkunftsland": "Neuseeland",
+    "grammys": 0,
+    "groesster_hit": "Weather With You"
+  },
+  "Sia": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2000,
+    "streams_mrd": 9.5,
+    "verkaeufe_mio": 8.0,
+    "herkunftsland": "Australien",
+    "grammys": 0,
+    "groesster_hit": "Chandelier"
+  },
+  "Metallica": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1981,
+    "streams_mrd": 6.0,
+    "verkaeufe_mio": 125.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 9,
+    "groesster_hit": "Enter Sandman"
+  },
+  "Red Hot Chili Peppers": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1983,
+    "streams_mrd": 7.5,
+    "verkaeufe_mio": 80.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 6,
+    "groesster_hit": "Under the Bridge"
+  },
+  "Linkin Park": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1996,
+    "streams_mrd": 8.0,
+    "verkaeufe_mio": 70.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 2,
+    "groesster_hit": "In the End"
+  },
+  "Nirvana": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1987,
+    "streams_mrd": 5.8,
+    "verkaeufe_mio": 75.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 0,
+    "groesster_hit": "Smells Like Teen Spirit"
+  },
+  "Guns N Roses": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1985,
+    "streams_mrd": 3.2,
+    "verkaeufe_mio": 100.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 0,
+    "groesster_hit": "November Rain"
+  },
+  "Rihanna": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2003,
+    "streams_mrd": 16.0,
+    "verkaeufe_mio": 250.0,
+    "herkunftsland": "Barbados",
+    "grammys": 9,
+    "groesster_hit": "Umbrella"
+  },
+  "Bruno Mars": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2004,
+    "streams_mrd": 12.0,
+    "verkaeufe_mio": 130.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 15,
+    "groesster_hit": "Uptown Funk"
   }
 }

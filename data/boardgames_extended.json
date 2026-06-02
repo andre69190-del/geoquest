@@ -1,0 +1,722 @@
+{
+  "Siedler von Catan": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 1995,
+    "max_spieler": 4,
+    "spieldauer_min": 90,
+    "bgg_rating": 7.1,
+    "autor": "Klaus Teuber",
+    "ursprungsland": "Deutschland"
+  },
+  "Carcassonne": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2000,
+    "max_spieler": 5,
+    "spieldauer_min": 45,
+    "bgg_rating": 7.4,
+    "autor": "Klaus-Jürgen Wrede",
+    "ursprungsland": "Deutschland"
+  },
+  "Agricola": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2007,
+    "max_spieler": 5,
+    "spieldauer_min": 150,
+    "bgg_rating": 7.9,
+    "autor": "Uwe Rosenberg",
+    "ursprungsland": "Deutschland"
+  },
+  "Puerto Rico": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2002,
+    "max_spieler": 5,
+    "spieldauer_min": 120,
+    "bgg_rating": 7.9,
+    "autor": "Andreas Seyfarth",
+    "ursprungsland": "Deutschland"
+  },
+  "Power Grid": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2004,
+    "max_spieler": 6,
+    "spieldauer_min": 120,
+    "bgg_rating": 7.8,
+    "autor": "Friedemann Friese",
+    "ursprungsland": "Deutschland"
+  },
+  "Pandemic": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2008,
+    "max_spieler": 4,
+    "spieldauer_min": 45,
+    "bgg_rating": 7.6,
+    "autor": "Matt Leacock",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Dominion": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 2008,
+    "max_spieler": 4,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.6,
+    "autor": "Donald X. Vaccarino",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "7 Wonders": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2010,
+    "max_spieler": 7,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.7,
+    "autor": "Antoine Bauza",
+    "ursprungsland": "Frankreich"
+  },
+  "Dixit": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 2008,
+    "max_spieler": 6,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.3,
+    "autor": "Jean-Louis Roubira",
+    "ursprungsland": "Frankreich"
+  },
+  "Dobble": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 2009,
+    "max_spieler": 8,
+    "spieldauer_min": 15,
+    "bgg_rating": 6.9,
+    "autor": "Denis Blanchot",
+    "ursprungsland": "Frankreich"
+  },
+  "Codenames": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 2015,
+    "max_spieler": 8,
+    "spieldauer_min": 15,
+    "bgg_rating": 7.6,
+    "autor": "Vlaada Chvátil",
+    "ursprungsland": "Tschechien"
+  },
+  "Lost Ruins of Arnak": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2020,
+    "max_spieler": 4,
+    "spieldauer_min": 120,
+    "bgg_rating": 8.0,
+    "autor": "Mín & Elwen",
+    "ursprungsland": "Tschechien"
+  },
+  "Azul": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2017,
+    "max_spieler": 4,
+    "spieldauer_min": 45,
+    "bgg_rating": 7.8,
+    "autor": "Michael Kiesling",
+    "ursprungsland": "Deutschland"
+  },
+  "The Quacks of Quedlinburg": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 2018,
+    "max_spieler": 4,
+    "spieldauer_min": 45,
+    "bgg_rating": 7.7,
+    "autor": "Wolfgang Warsch",
+    "ursprungsland": "Deutschland"
+  },
+  "Patchwork": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2014,
+    "max_spieler": 2,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.8,
+    "autor": "Uwe Rosenberg",
+    "ursprungsland": "Deutschland"
+  },
+  "Terraforming Mars": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2016,
+    "max_spieler": 5,
+    "spieldauer_min": 120,
+    "bgg_rating": 8.4,
+    "autor": "Jacob Fryxelius",
+    "ursprungsland": "Schweden"
+  },
+  "Wingspan": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2019,
+    "max_spieler": 5,
+    "spieldauer_min": 70,
+    "bgg_rating": 8.1,
+    "autor": "Elizabeth Hargrave",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Gloomhaven": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2017,
+    "max_spieler": 4,
+    "spieldauer_min": 120,
+    "bgg_rating": 8.7,
+    "autor": "Isaac Childres",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Pandemic Legacy Season 1": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2015,
+    "max_spieler": 4,
+    "spieldauer_min": 60,
+    "bgg_rating": 8.6,
+    "autor": "Rob Daviau",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Scythe": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2016,
+    "max_spieler": 5,
+    "spieldauer_min": 115,
+    "bgg_rating": 8.2,
+    "autor": "Jamey Stegmaier",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Ticket to Ride": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 2004,
+    "max_spieler": 5,
+    "spieldauer_min": 75,
+    "bgg_rating": 7.4,
+    "autor": "Alan R. Moon",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Robinson Crusoe": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2012,
+    "max_spieler": 4,
+    "spieldauer_min": 120,
+    "bgg_rating": 7.9,
+    "autor": "Ignacy Trzewiczek",
+    "ursprungsland": "Polen"
+  },
+  "Brass Birmingham": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2018,
+    "max_spieler": 4,
+    "spieldauer_min": 120,
+    "bgg_rating": 8.7,
+    "autor": "Gavan Brown & Matt Tolman",
+    "ursprungsland": "Vereinigtes Königreich"
+  },
+  "Spirit Island": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2017,
+    "max_spieler": 4,
+    "spieldauer_min": 120,
+    "bgg_rating": 8.3,
+    "autor": "R. Eric Reuss",
+    "ursprungsland": "Kanada"
+  },
+  "Viticulture": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2013,
+    "max_spieler": 6,
+    "spieldauer_min": 90,
+    "bgg_rating": 7.8,
+    "autor": "Jamey Stegmaier",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Splendor": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2014,
+    "max_spieler": 4,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.4,
+    "autor": "Marc André",
+    "ursprungsland": "Frankreich"
+  },
+  "Skull": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 2011,
+    "max_spieler": 6,
+    "spieldauer_min": 20,
+    "bgg_rating": 7.2,
+    "autor": "Hervé Marly",
+    "ursprungsland": "Frankreich"
+  },
+  "Kingdomino": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 2016,
+    "max_spieler": 4,
+    "spieldauer_min": 15,
+    "bgg_rating": 7.0,
+    "autor": "Bruno Cathala",
+    "ursprungsland": "Frankreich"
+  },
+  "Sherlock Holmes Consulting Detective": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 1981,
+    "max_spieler": 8,
+    "spieldauer_min": 90,
+    "bgg_rating": 7.8,
+    "autor": "Gary Grady & Suzanne Goldberg",
+    "ursprungsland": "Vereinigtes Königreich"
+  },
+  "Hive": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2000,
+    "max_spieler": 2,
+    "spieldauer_min": 20,
+    "bgg_rating": 7.4,
+    "autor": "John Yianni",
+    "ursprungsland": "Vereinigtes Königreich"
+  },
+  "Dungeons and Dragons": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 1974,
+    "max_spieler": 8,
+    "spieldauer_min": 240,
+    "bgg_rating": 7.5,
+    "autor": "Gary Gygax & Dave Arneson",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Magic The Gathering": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1993,
+    "max_spieler": 2,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.6,
+    "autor": "Richard Garfield",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Pokemon TCG": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1996,
+    "max_spieler": 2,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.0,
+    "autor": "Tsunekazu Ishihara",
+    "ursprungsland": "Japan"
+  },
+  "Yu-Gi-Oh! TCG": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1999,
+    "max_spieler": 2,
+    "spieldauer_min": 20,
+    "bgg_rating": 6.5,
+    "autor": "Kazuki Takahashi",
+    "ursprungsland": "Japan"
+  },
+  "Schach": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 600,
+    "max_spieler": 2,
+    "spieldauer_min": 60,
+    "bgg_rating": 7.7,
+    "autor": "Unbekannt",
+    "ursprungsland": "Indien"
+  },
+  "Go": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": -2000,
+    "max_spieler": 2,
+    "spieldauer_min": 90,
+    "bgg_rating": 7.7,
+    "autor": "Unbekannt",
+    "ursprungsland": "China"
+  },
+  "Backgammon": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": -3000,
+    "max_spieler": 2,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.1,
+    "autor": "Unbekannt",
+    "ursprungsland": "Iran"
+  },
+  "Mah-Jong": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 1850,
+    "max_spieler": 4,
+    "spieldauer_min": 90,
+    "bgg_rating": 7.3,
+    "autor": "Unbekannt",
+    "ursprungsland": "China"
+  },
+  "Monopoly": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 1935,
+    "max_spieler": 8,
+    "spieldauer_min": 180,
+    "bgg_rating": 4.4,
+    "autor": "Charles Darrow",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Scrabble": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1938,
+    "max_spieler": 4,
+    "spieldauer_min": 90,
+    "bgg_rating": 6.5,
+    "autor": "Alfred Mosher Butts",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Risk": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 1957,
+    "max_spieler": 6,
+    "spieldauer_min": 180,
+    "bgg_rating": 5.6,
+    "autor": "Albert Lamorisse",
+    "ursprungsland": "Frankreich"
+  },
+  "Clue (Cluedo)": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 1949,
+    "max_spieler": 6,
+    "spieldauer_min": 45,
+    "bgg_rating": 5.9,
+    "autor": "Anthony Pratt",
+    "ursprungsland": "Vereinigtes Königreich"
+  },
+  "Trivial Pursuit": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1981,
+    "max_spieler": 6,
+    "spieldauer_min": 60,
+    "bgg_rating": 6.0,
+    "autor": "Chris Haney & Scott Abbott",
+    "ursprungsland": "Kanada"
+  },
+  "UNO": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1971,
+    "max_spieler": 10,
+    "spieldauer_min": 30,
+    "bgg_rating": 5.3,
+    "autor": "Merle Robbins",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Jenga": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 1983,
+    "max_spieler": 8,
+    "spieldauer_min": 20,
+    "bgg_rating": 6.1,
+    "autor": "Leslie Scott",
+    "ursprungsland": "Vereinigtes Königreich"
+  },
+  "Pictionary": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1985,
+    "max_spieler": 8,
+    "spieldauer_min": 60,
+    "bgg_rating": 6.0,
+    "autor": "Robert Angel",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Othello (Reversi)": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 1883,
+    "max_spieler": 2,
+    "spieldauer_min": 30,
+    "bgg_rating": 6.7,
+    "autor": "Lewis Waterman",
+    "ursprungsland": "Vereinigtes Königreich"
+  },
+  "Exploding Kittens": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 2015,
+    "max_spieler": 5,
+    "spieldauer_min": 15,
+    "bgg_rating": 6.0,
+    "autor": "Elan Lee & Matthew Inman",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Werwolf (Mafia)": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1986,
+    "max_spieler": 18,
+    "spieldauer_min": 30,
+    "bgg_rating": 6.5,
+    "autor": "Dmitry Davidoff",
+    "ursprungsland": "Russland"
+  },
+  "Jungle Speed": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1991,
+    "max_spieler": 10,
+    "spieldauer_min": 15,
+    "bgg_rating": 6.6,
+    "autor": "Thomas Vuarchex",
+    "ursprungsland": "Frankreich"
+  },
+  "Hanabi": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 2010,
+    "max_spieler": 5,
+    "spieldauer_min": 25,
+    "bgg_rating": 7.0,
+    "autor": "Antoine Bauza",
+    "ursprungsland": "Frankreich"
+  },
+  "The Mind": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 2018,
+    "max_spieler": 4,
+    "spieldauer_min": 20,
+    "bgg_rating": 6.8,
+    "autor": "Wolfgang Warsch",
+    "ursprungsland": "Deutschland"
+  },
+  "Sushi Go": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 2013,
+    "max_spieler": 5,
+    "spieldauer_min": 15,
+    "bgg_rating": 7.0,
+    "autor": "Phil Walker-Harding",
+    "ursprungsland": "Australien"
+  },
+  "Love Letter": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 2012,
+    "max_spieler": 4,
+    "spieldauer_min": 20,
+    "bgg_rating": 7.2,
+    "autor": "Seiji Kanai",
+    "ursprungsland": "Japan"
+  },
+  "Pandemic Legacy Season 2": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2017,
+    "max_spieler": 4,
+    "spieldauer_min": 60,
+    "bgg_rating": 8.3,
+    "autor": "Rob Daviau & Matt Leacock",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Everdell": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2018,
+    "max_spieler": 4,
+    "spieldauer_min": 80,
+    "bgg_rating": 8.1,
+    "autor": "James A. Wilson",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Great Western Trail": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2016,
+    "max_spieler": 4,
+    "spieldauer_min": 120,
+    "bgg_rating": 8.3,
+    "autor": "Alexander Pfister",
+    "ursprungsland": "Österreich"
+  },
+  "Oh Hell (Stich-Fürst)": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1930,
+    "max_spieler": 7,
+    "spieldauer_min": 30,
+    "bgg_rating": 6.9,
+    "autor": "Unbekannt",
+    "ursprungsland": "Vereinigtes Königreich"
+  },
+  "Skull King": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1986,
+    "max_spieler": 6,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.3,
+    "autor": "Brent Beck",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Coup": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 2012,
+    "max_spieler": 6,
+    "spieldauer_min": 15,
+    "bgg_rating": 7.3,
+    "autor": "Rikki Tahta",
+    "ursprungsland": "Kanada"
+  },
+  "Sechsundsechzig": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1750,
+    "max_spieler": 2,
+    "spieldauer_min": 20,
+    "bgg_rating": 6.8,
+    "autor": "Unbekannt",
+    "ursprungsland": "Deutschland"
+  },
+  "Doppelkopf": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1700,
+    "max_spieler": 4,
+    "spieldauer_min": 60,
+    "bgg_rating": 7.1,
+    "autor": "Unbekannt",
+    "ursprungsland": "Deutschland"
+  },
+  "Skat": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1813,
+    "max_spieler": 3,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.2,
+    "autor": "Johann Friedrich Ludwig Hempel",
+    "ursprungsland": "Deutschland"
+  },
+  "Canasta": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1939,
+    "max_spieler": 6,
+    "spieldauer_min": 60,
+    "bgg_rating": 6.2,
+    "autor": "Segundo Santos & Arturo Cabrera Infante",
+    "ursprungsland": "Uruguay"
+  },
+  "Tarot (Kartenspiel)": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 1450,
+    "max_spieler": 4,
+    "spieldauer_min": 45,
+    "bgg_rating": 6.5,
+    "autor": "Unbekannt",
+    "ursprungsland": "Norditalien"
+  },
+  "Halma": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 1883,
+    "max_spieler": 4,
+    "spieldauer_min": 30,
+    "bgg_rating": 5.8,
+    "autor": "George Howard Monks",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Scotland Yard": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 1983,
+    "max_spieler": 6,
+    "spieldauer_min": 45,
+    "bgg_rating": 7.1,
+    "autor": "Manfred Burggraf",
+    "ursprungsland": "Deutschland"
+  },
+  "Taboo": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1989,
+    "max_spieler": 8,
+    "spieldauer_min": 30,
+    "bgg_rating": 6.5,
+    "autor": "Brian Hersch",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Pantomime (Charade)": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1860,
+    "max_spieler": 20,
+    "spieldauer_min": 30,
+    "bgg_rating": 6.3,
+    "autor": "Unbekannt",
+    "ursprungsland": "Frankreich"
+  },
+  "Activity": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1990,
+    "max_spieler": 16,
+    "spieldauer_min": 60,
+    "bgg_rating": 6.3,
+    "autor": "Heinz Meister",
+    "ursprungsland": "Deutschland"
+  },
+  "Kahoot!": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 2013,
+    "max_spieler": 300,
+    "spieldauer_min": 20,
+    "bgg_rating": 6.8,
+    "autor": "Åsmund Furuseth",
+    "ursprungsland": "Norwegen"
+  },
+  "Bamboleo": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 1998,
+    "max_spieler": 6,
+    "spieldauer_min": 20,
+    "bgg_rating": 6.2,
+    "autor": "Thierry Denoual",
+    "ursprungsland": "Frankreich"
+  },
+  "Codenames Duet": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2017,
+    "max_spieler": 2,
+    "spieldauer_min": 15,
+    "bgg_rating": 7.8,
+    "autor": "Vlaada Chvátil & Scot Eaton",
+    "ursprungsland": "Tschechien"
+  },
+  "Blokus": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 2000,
+    "max_spieler": 4,
+    "spieldauer_min": 20,
+    "bgg_rating": 7.0,
+    "autor": "Bernard Tavitian",
+    "ursprungsland": "Frankreich"
+  },
+  "Point Salad": {
+    "kategorie": "Kartenspiel",
+    "erscheinungsjahr": 2019,
+    "max_spieler": 6,
+    "spieldauer_min": 30,
+    "bgg_rating": 7.3,
+    "autor": "Molly Johnson & Robert Melvin",
+    "ursprungsland": "Kanada"
+  },
+  "Die Werwölfe von Düsterwald": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 2001,
+    "max_spieler": 18,
+    "spieldauer_min": 30,
+    "bgg_rating": 6.9,
+    "autor": "Philippe des Pallières",
+    "ursprungsland": "Frankreich"
+  },
+  "Ludo (Mensch ärgere dich nicht)": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 1907,
+    "max_spieler": 4,
+    "spieldauer_min": 30,
+    "bgg_rating": 4.0,
+    "autor": "Josef Friedrich Schmidt",
+    "ursprungsland": "Deutschland"
+  },
+  "Stratego": {
+    "kategorie": "Strategie",
+    "erscheinungsjahr": 1946,
+    "max_spieler": 2,
+    "spieldauer_min": 45,
+    "bgg_rating": 6.4,
+    "autor": "Léonce Zondine",
+    "ursprungsland": "Niederlande"
+  },
+  "Schiffe versenken": {
+    "kategorie": "Familie",
+    "erscheinungsjahr": 1931,
+    "max_spieler": 2,
+    "spieldauer_min": 20,
+    "bgg_rating": 5.5,
+    "autor": "Unbekannt",
+    "ursprungsland": "Vereinigte Staaten"
+  },
+  "Boggle": {
+    "kategorie": "Party",
+    "erscheinungsjahr": 1972,
+    "max_spieler": 8,
+    "spieldauer_min": 15,
+    "bgg_rating": 6.0,
+    "autor": "Alan Turoff",
+    "ursprungsland": "Vereinigte Staaten"
+  }
+}

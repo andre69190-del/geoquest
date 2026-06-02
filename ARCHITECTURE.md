@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 441 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.62 MB | 922 Spielmodi | verify: 159/159 | data: 60 JSON
+**Version:** Phase 439 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.62 MB | 936 Spielmodi | verify: 159/159 | data: 60 JSON
 
 ---
 
@@ -1145,6 +1145,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **438** | patch_438.py | **Freizeitparks & Kunstgeschichte: 15 neue Modi (HL, Match, Timeline, WS)** |
 | **440** | patch_440.py | **Hunderassen & Gartenbau: 14 neue Modi (HL, Match, WS)** |
 | **441** | patch_441.py | **Audit-Fixes: (1) Build-Breaker behoben — ungueltiger Unicode-Escape im Wort gießen (Modus garten_match_wasser), verify war 172/173 JS-Syntaxfehler. (2) 13 fehlende PL-Uebersetzungen in _CONTENT_I18N ergaenzt (Film-/Musik-Kategorie: Regisseur, IMDb, Oscars, Grammys, Streams, Tontraeger u.a.). verify 173/173, validate 74/74 0 Warnings, check_session 15/15.** |
+| **439** | patch_439.py | **Brettspiele & Sprachen: 14 neue Modi (HL, Match, Timeline, WS)** |
 
 ---
 

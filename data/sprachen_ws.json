@@ -1,0 +1,110 @@
+{
+  "grammatik": {
+    "word": "GRAMMATIK",
+    "validWords": {
+      "de": [
+        "MAMA",
+        "KARMA",
+        "GRAMM",
+        "GRAM",
+        "KRAM",
+        "MARK",
+        "MARKT",
+        "TRAM",
+        "MAGMA",
+        "KITA",
+        "IRAK",
+        "TAIGA",
+        "MARKIG",
+        "KAM",
+        "TAG",
+        "MAG",
+        "MIT",
+        "GRIM",
+        "AMI",
+        "KATA"
+      ],
+      "en": [
+        "KARMA",
+        "TRIM",
+        "GRAM",
+        "GRIT",
+        "MARK",
+        "TRAM",
+        "KAMI",
+        "MAIM",
+        "GRIM",
+        "MART",
+        "TAIGA",
+        "IRAK"
+      ],
+      "pl": [
+        "MAMA",
+        "KARMA",
+        "GRAMM",
+        "MARK",
+        "TRAM",
+        "KRAM",
+        "KITA",
+        "TAG",
+        "MIT"
+      ]
+    }
+  },
+  "vokabular": {
+    "word": "VOKABULAR",
+    "validWords": {
+      "de": [
+        "LAUB",
+        "OVAL",
+        "LABOR",
+        "VOKAL",
+        "KOALA",
+        "ORAL",
+        "URAL",
+        "ALB",
+        "KORB",
+        "KOBRA",
+        "KALB",
+        "ARK",
+        "KAROB",
+        "BAUR",
+        "BOA",
+        "LAB",
+        "BORA",
+        "KUBA",
+        "KLAR",
+        "BLUR"
+      ],
+      "en": [
+        "LABOR",
+        "OVAL",
+        "ORAL",
+        "KOALA",
+        "BARK",
+        "LARK",
+        "BALOR",
+        "BURKA",
+        "KABAL",
+        "KORBA",
+        "VALOR",
+        "KAROB",
+        "BAUR",
+        "BLUR",
+        "BORA",
+        "KLAR"
+      ],
+      "pl": [
+        "LAUB",
+        "OVAL",
+        "LABOR",
+        "VOKAL",
+        "ORAL",
+        "KORB",
+        "KALB",
+        "BOA",
+        "KLAR"
+      ]
+    }
+  }
+}
