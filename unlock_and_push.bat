@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 424. 4 neue Geo/Zug-Modi: zug_match_land (177 Strecken→Land), odd_one_out (6 Kategorien: EU/NATO/Insel/Binnen/G7/Euro), clue_country (progressive Hinweise: Kontinent→Hauptstadt→Währung), sort_rank (4 Länder nach Metrik sortieren). MODES 810→814. verify: 146/146."
+git commit -m "Content: Phase 423. Hilfe-Funktion: dauerhaftes Hilfe-Overlay per neuem ?-Button im Header (renderHelpModal). Erklaert kindgerecht die Spiel-Typen (H/L, Match, Pin, Wort-Schmiede, Multiple-Choice), Schwierigkeit (Casual/Hardcore/Survival), Coins, Favoriten, Suche, Kategorie-Leiste. i18n DE/EN/PL (19 Keys je Sprache). verify 146/146, validate 0 Warnings.. verify: 146/146."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

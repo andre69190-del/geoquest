@@ -1316,6 +1316,25 @@ const PAY_PRODUCTS = [
 /* â”€â”€ Phase 47/48: i18n – DE / EN / PL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const LANG={
 de:{
+  help_btn_title:"Hilfe",
+  help_title:"❓ Hilfe – So funktioniert GeoQuest",
+  help_intro:"Wähle oben eine Kategorie und dann ein Spiel. Beantworte Fragen, sammle Punkte und \u{1FA99} Coins. Viel Spaß!",
+  help_modes_h:"\u{1F3AE} Die Spiel-Typen",
+  help_hl:"Höher/Tiefer (H/L): Schätze, welches von zwei Dingen größer, höher oder mehr ist.",
+  help_match:"Zuordnen (Match): Wähle aus mehreren Antworten die richtige.",
+  help_pin:"Karte (Pin): Tippe den richtigen Ort auf der Weltkarte an.",
+  help_word:"Wort-Schmiede: Bilde aus vorgegebenen Buchstaben passende Wörter.",
+  help_mc:"Multiple-Choice: Eine Frage, mehrere Antworten – tippe die richtige an.",
+  help_diff_h:"⚡ Schwierigkeit",
+  help_casual:"Casual: Entspannt, kein Zeitlimit, unbegrenzt Leben.",
+  help_hardcore:"Hardcore: Kein Zeitlimit, aber nur 3 Leben.",
+  help_survival:"Survival: 8 Sekunden pro Frage, 3 Leben.",
+  help_extras_h:"✨ Weitere Funktionen",
+  help_coins:"\u{1FA99} Coins bekommst du für richtige Antworten – damit schaltest du neue Kategorien frei.",
+  help_fav:"❤️ Tippe auf das Herz, um ein Spiel als Favorit zu speichern.",
+  help_search:"\u{1F50D} Über die Suche findest du jedes Spiel schnell.",
+  help_cats:"Oben wischt du durch die Kategorien – tippe eine an, um ihre Spiele zu sehen.",
+  help_close:"Verstanden!",
   play:"SPIELEN",again:"NOCHMAL",q_neighbor_fake:"Welches Land grenzt NICHT an …?",q_neighbor_count:"Wie viele Nachbarländer hat dieses Land?",q_border_shared:"Teilen diese L\u00e4nder eine gemeinsame Grenze?",q_de_plate:"Welche Stadt/Region hat dieses Kennzeichen?",q_map_reverse:"Welches Land ist hervorgehoben?",q_stadium:"\u26BD In welchem Land steht dieses Stadion?",q_jersey:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",q_crest:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",q_beta_hl_stadium:"Welches Stadion liegt höher über dem Meeresspiegel?",q_beta_spotter:"Weltkarte",q_sport_poi:"In welchem Land liegt das?",q_wappen:"Welchem Land gehört dieses Wappen?",menu:"Hauptmenü",board:"Bestenliste",pass:"Reisepass",
   fav_empty:"Noch keine Favoriten gespeichert",
   profile:"Profil",stats:"Statistik",casual:"Casual",hardcore:"Hardcore",rounds:"Runden",
@@ -1374,6 +1393,25 @@ de:{
   q_uk_match:"Aus welchem Land stammt:",q_uk_pin:"Wo liegt das auf der Karte?",uk_hl_higher:"H\u00f6her \u2191",uk_hl_lower:"Niedriger \u2193",uk_hl_prompt:"Welches Geb\u00e4ude ist h\u00f6her?"
 },
 en:{
+  help_btn_title:"Help",
+  help_title:"❓ Help – How GeoQuest works",
+  help_intro:"Pick a category at the top, then a game. Answer questions, earn points and \u{1FA99} coins. Have fun!",
+  help_modes_h:"\u{1F3AE} The game types",
+  help_hl:"Higher/Lower (H/L): Guess which of two things is bigger, higher or more.",
+  help_match:"Match: Choose the correct answer from several options.",
+  help_pin:"Map (Pin): Tap the correct place on the world map.",
+  help_word:"Word Forge: Build valid words from the given letters.",
+  help_mc:"Multiple choice: One question, several answers – tap the right one.",
+  help_diff_h:"⚡ Difficulty",
+  help_casual:"Casual: Relaxed, no time limit, unlimited lives.",
+  help_hardcore:"Hardcore: No time limit, but only 3 lives.",
+  help_survival:"Survival: 8 seconds per question, 3 lives.",
+  help_extras_h:"✨ More features",
+  help_coins:"\u{1FA99} Earn coins for correct answers – use them to unlock new categories.",
+  help_fav:"❤️ Tap the heart to save a game as a favourite.",
+  help_search:"\u{1F50D} Use search to find any game quickly.",
+  help_cats:"Swipe through the categories at the top – tap one to see its games.",
+  help_close:"Got it!",
   play:"PLAY",again:"PLAY AGAIN",q_neighbor_fake:"Which country does NOT border …?",q_neighbor_count:"How many neighbouring countries does this country have?",q_border_shared:"Do these countries share a border?",q_de_plate:"Which city/region has this licence plate?",q_map_reverse:"Which country is highlighted?",q_stadium:"⚽ In which country is this stadium?",q_jersey:"👕 Which country wears this jersey?",q_crest:"🛡 Which country does this crest belong to?",q_beta_hl_stadium:"Which stadium is higher above sea level?",q_beta_spotter:"World map",q_sport_poi:"In which country is this?",q_wappen:"Which country does this coat of arms belong to?",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
   fav_empty:"No favourites saved yet",
   profile:"Profile",stats:"Stats",casual:"Casual",hardcore:"Hardcore",rounds:"Rounds",
@@ -1432,6 +1470,25 @@ en:{
   q_uk_match:"Where does this come from?",q_uk_pin:"Find it on the map",uk_hl_higher:"Higher \u2191",uk_hl_lower:"Lower \u2193",uk_hl_prompt:"Which building is taller?"
 },
 pl:{
+  help_btn_title:"Pomoc",
+  help_title:"❓ Pomoc – Jak działa GeoQuest",
+  help_intro:"Wybierz u góry kategorię, a potem grę. Odpowiadaj na pytania, zdobywaj punkty i \u{1FA99} monety. Baw się dobrze!",
+  help_modes_h:"\u{1F3AE} Rodzaje gier",
+  help_hl:"Wyżej/Niżej (H/L): Zgadnij, która z dwóch rzeczy jest większa, wyższa lub liczniejsza.",
+  help_match:"Dopasuj (Match): Wybierz poprawną odpowiedź spośród kilku.",
+  help_pin:"Mapa (Pin): Dotknij właściwego miejsca na mapie świata.",
+  help_word:"Kuźnia Słów: Twórz słowa z podanych liter.",
+  help_mc:"Wielokrotny wybór: Jedno pytanie, kilka odpowiedzi – dotknij właściwej.",
+  help_diff_h:"⚡ Poziom trudności",
+  help_casual:"Casual: Na luzie, bez limitu czasu, nieograniczone życia.",
+  help_hardcore:"Hardcore: Bez limitu czasu, ale tylko 3 życia.",
+  help_survival:"Survival: 8 sekund na pytanie, 3 życia.",
+  help_extras_h:"✨ Więcej funkcji",
+  help_coins:"\u{1FA99} Zdobywaj monety za poprawne odpowiedzi – odblokuj nimi nowe kategorie.",
+  help_fav:"❤️ Dotknij serca, aby zapisać grę jako ulubioną.",
+  help_search:"\u{1F50D} Użyj wyszukiwarki, aby szybko znaleźć dowolną grę.",
+  help_cats:"Przesuwaj kategorie u góry – dotknij jednej, aby zobaczyć jej gry.",
+  help_close:"Rozumiem!",
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",q_neighbor_fake:"Który kraj NIE graniczy z …?",q_neighbor_count:"Ile sąsiadów ma ten kraj?",q_border_shared:"Czy te kraje mają wspólną granicę?",q_de_plate:"Które miasto/region ma tę tablicę rejestracyjną?",q_map_reverse:"Który kraj jest podświetlony?",q_stadium:"⚽ W którym kraju jest ten stadion?",q_jersey:"👕 Który kraj nosi tę koszulkę?",q_crest:"🛡 Do którego kraju należy ten herb?",q_beta_hl_stadium:"Który stadion leży wyżej nad poziomem morza?",q_beta_spotter:"Mapa świata",q_sport_poi:"W którym kraju to się znajduje?",q_wappen:"Do którego kraju należy ten herb?",q_hl_gdp:"Wyższe PKB/os. niż {a}?",q_hl_density:"Gęściej zaludnione niż {a}?",q_hl_elevation:"Wyższy szczyt niż {a}?",q_hl_coastline:"Dłuższe wybrzeże niż {a}?",q_hl_borders:"Więcej sąsiadów niż {a}?",q_hl_lifeexp:"Dłuższe życie niż w {a}?",q_hl_median_age:"Wyższy wiek mediany niż {a}?",q_hl_forest:"Więcej lasów niż {a}?",mode_hauptstadt_dist:"Odległość stolic",mode_flugrouten_duell:"Pojedynek tras lotniczych",mode_insel_festland:"Wyspa czy ląd stały",mode_aequator:"Na północ czy na południe?",mode_wort_schmiede:"Kuźnia Słów",diff_desc_blitz:"⚡ Blitz: 60 sekund · Jak najwięcej pytań",q_airport_pin:"Gdzie leży to lotnisko?",click_map:"Dotknij mapy",q_uk_match:"Z jakiego kraju pochodzi:",q_uk_pin:"Gdzie to jest na mapie?",uk_hl_higher:"Wyżej ↑",uk_hl_lower:"Niżej ↓",uk_hl_prompt:"Który budynek jest wyższy?",spotter_no_region:"nie ma regionów – wpisz \"{code}\"!",ws_found:"Znalezione",ws_enter_word:"Wpisz słowo…",ws_check:"Sprawdź",ws_all_found:"Znaleziono wszystkie słowa!",ws_next_city:"Następne miasto",ws_duplicate:"✓ Już znalezione!",ws_invalid:"✕ Nieprawidłowe słowo",ws_lang_label:"Język",ws_letters_hint:"Twórz słowa z liter miasta",menu:"Menu",board:"Ranking",pass:"Paszport",
   fav_empty:"Nie zapisano jeszcze ulubionych",
   profile:"Profil",stats:"Statystyki",casual:"Zwykły",hardcore:"Trudny",rounds:"Rundy",
@@ -6095,6 +6152,7 @@ let S={
   authMode:"login",authEmail:"",authPassword:"",authConfirm:"",authUsername:"",authError:"",authLoading:false,
   lvModal:false,lv:null,lvSetupMode:"random",lvSelType:"random",lvSetupCat:null,mpSelType:"random",mpSelCat:"",mpSelMode:"",
   settingsModal:false,
+  helpModal:false,
   convModal:false,
   collectedPlates:loadCollectedPlates(),
   ligaData:[],ligaLoading:false,leagueEvalResult:null,
@@ -12229,7 +12287,7 @@ function shareGame(){
 function updateHdrGuest(){
   const hdr=document.getElementById("g-hdr");
   const _uname=sbProfile?.username||localStorage.getItem("gq_username")||null;
-  if(hdr)hdr.innerHTML=`<span class="g-logo">GEO<span>QUEST</span></span><div class="g-stats">${_uname?`<span class="g-stat" style="color:#10b981">\uD83D\uDC64 ${esc(_uname)}</span>`:""}<span class="g-stat">\u{1F525} ${S.st}</span><span class="g-stat">\u{1F4B0} ${(sbProfile?.geo_coins||0).toLocaleString()}</span><button class="hdr-gear" onclick="S.settingsModal=!S.settingsModal;render()" title="Einstellungen">\u2699\ufe0f</button></div>`;
+  if(hdr)hdr.innerHTML=`<span class="g-logo">GEO<span>QUEST</span></span><div class="g-stats">${_uname?`<span class="g-stat" style="color:#10b981">\uD83D\uDC64 ${esc(_uname)}</span>`:""}<span class="g-stat">\u{1F525} ${S.st}</span><span class="g-stat">\u{1F4B0} ${(sbProfile?.geo_coins||0).toLocaleString()}</span><button class="hdr-gear" onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}">\u2753</button><button class="hdr-gear" onclick="S.settingsModal=!S.settingsModal;render()" title="Einstellungen">\u2699\ufe0f</button></div>`;
 }
 function stampHtml(cc,rank,rot){
   const cn=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc))?.c||cc.toUpperCase();
@@ -12755,7 +12813,7 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="album"?renderCollectionScreen():""}
       ${S.tab==="stats"?renderStatsTab():""}
       ${S.tab==="admin"?renderAdminTab():""}
-      ${S.settingsModal?renderSettingsModal():""}${S.adModal?renderAdModal():""}
+      ${S.settingsModal?renderSettingsModal():""}${S.helpModal?renderHelpModal():""}${S.adModal?renderAdModal():""}
     </div>${renderBottomNav()}${((!localStorage.getItem('gq_pwa_dismissed')&&S.pwaPrompt)||(_isIOS()&&!_isInStandaloneMode()&&!localStorage.getItem('gq_pwa_ios_dismissed')))?renderPwaBanner():""}`;
     if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
   if(S.tab==="home")setTimeout(function(){if(typeof window.renderRecentBar==="function")window.renderRecentBar();},90);
@@ -16047,6 +16105,20 @@ function renderProfilTab(){
     ?'<div style="background:#ef4444;color:#fff;padding:10px 16px;border-radius:8px;margin-bottom:12px;font-weight:600;text-align:center">&#x1F4F5; Du bist offline. Ergebnisse werden lokal gespeichert und beim n\u00e4chsten Online-Start automatisch synchronisiert.</div>'
     :'';
   return '<div style="padding-bottom:100px">'+_offlineBanner+block1+block2+block3+block4+block6+'</div>';
+}
+
+/* HELP MODAL (Phase 423) — dauerhafte Hilfe, jederzeit per ?-Button erreichbar */
+function renderHelpModal(){
+  const row=(txt)=>`<div style="display:flex;gap:.5rem;align-items:flex-start;margin-bottom:.5rem;font-size:.83rem;line-height:1.45;color:var(--text2)"><span style="color:#10b981;flex-shrink:0;font-weight:900">•</span><span>${txt}</span></div>`;
+  const hd=(txt)=>`<div style="font-weight:800;font-size:.92rem;color:var(--text);margin:1rem 0 .5rem">${txt}</div>`;
+  return`<div class="modal-overlay" onclick="if(event.target===this){S.helpModal=false;render()}"><div class="modal-box" style="max-width:340px;max-height:82vh;overflow-y:auto">
+    <div style="font-size:1.05rem;font-weight:900;margin-bottom:.45rem">${t('help_title')}</div>
+    <div style="font-size:.85rem;color:var(--text2);line-height:1.5;margin-bottom:.2rem">${t('help_intro')}</div>
+    ${hd(t('help_modes_h'))}${row(t('help_hl'))}${row(t('help_match'))}${row(t('help_pin'))}${row(t('help_word'))}${row(t('help_mc'))}
+    ${hd(t('help_diff_h'))}${row(t('help_casual'))}${row(t('help_hardcore'))}${row(t('help_survival'))}
+    ${hd(t('help_extras_h'))}${row(t('help_coins'))}${row(t('help_fav'))}${row(t('help_search'))}${row(t('help_cats'))}
+    <button onclick="S.helpModal=false;render()" class="btn-g" style="margin-top:1.1rem;margin-bottom:0">${t('help_close')}</button>
+  </div></div>`;
 }
 
 /* SETTINGS MODAL */
