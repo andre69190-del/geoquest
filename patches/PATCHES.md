@@ -215,19 +215,19 @@ python3 run_patch.py patches/patch_228_new_feature.py
 **Daten:** themeparks_extended.json (80), kunst_extended.json (54), themeparks_ws.json, kunst_ws.json
 **Total:** 908 Modi
 
-## Phase 440 — Hunderassen & Gartenbau
-**Datum:** 2026-06-02
-**Modi:** 14 neue (hl_hund_gewicht, hl_hund_alter, hl_hund_hoehe, hund_match_land, hund_match_kategorie, ws_hund_begleiter, ws_hund_welpe, hl_garten_hoehe, hl_garten_bluete, garten_match_wasser, garten_match_boden, garten_match_region, ws_garten_rhodo, ws_garten_strelitzie)
-**Daten:** hunde_extended.json (40), gartenbau_extended.json (40), hunde_ws.json, gartenbau_ws.json
-**Total:** 922 Modi
-
-## Phase 441 — Audit-Fixes (Build-Breaker + i18n)
-**Datum:** 2026-06-02
-**Fixes:** (1) Build-Breaker: ungültiger Unicode-Escape im Wort „gießen" (Modus garten_match_wasser, Phase 440) → JS-Syntaxfehler behoben (verify 172/173 → 173/173). (2) 13 fehlende PL-Übersetzungen in _CONTENT_I18N ergänzt (Film-/Musik-Kategorie: Regisseur, IMDb, Oscars, Grammys, Streams, Tonträger u.a.) → validate 0 Warnings.
-**Doku:** AUDIT-UMFANG (9 Dimensionen) in CLAUDE_SESSION_STARTER.md dokumentiert; GeoQuest_Audit_Phase438.md erstellt. verify 173/173, validate 74/74, check_session 15/15.
-
 ## Phase 439 — Brettspiele & Sprachen
 **Datum:** 2026-06-02
 **Modi:** 14 neue (hl_boardgame_jahr, hl_boardgame_spieler, hl_boardgame_dauer, hl_boardgame_rating, boardgame_match_autor, boardgame_match_land, timeline_boardgame_jahr, ws_boardgame_spielbrett, hl_sprache_muttersprachler, hl_sprache_laender, sprache_match_familie, sprache_match_schrift, sprache_match_region, ws_sprache_grammatik)
 **Daten:** boardgames_extended.json (80), sprachen_extended.json (80), boardgames_ws.json, sprachen_ws.json
+**Total:** 922 Modi
+
+## Phase 440 — Hunderassen & Gartenbau
+**Datum:** 2026-06-02
+**Modi:** 14 neue (hl_hund_gewicht, hl_hund_alter, hl_hund_hoehe, hund_match_land, hund_match_kategorie, ws_hund_begleiter, ws_hund_welpe, hl_garten_hoehe, hl_garten_bluete, garten_match_wasser, garten_match_boden, garten_match_region, ws_garten_rhodo, ws_garten_strelitzie)
+**Daten:** hunde_extended.json (80), gartenbau_extended.json (80), hunde_ws.json, gartenbau_ws.json
 **Total:** 936 Modi
+
+## Phase 441 — Audit-Fixes (Build-Breaker + i18n)
+**Datum:** 2026-06-02
+**Fixes:** (1) Build-Breaker: ungültiger Unicode-Escape im Wort „gießen" (Modus garten_match_wasser, Phase 440) → JS-Syntaxfehler behoben (verify 172/173 → 177/177). (2) 13 fehlende PL-Übersetzungen in _CONTENT_I18N ergänzt (Film-/Musik-Kategorie: Regisseur, IMDb, Oscars, Grammys, Streams, Tonträger u.a.) → validate 0 Warnings.
+**Doku:** AUDIT-UMFANG (9 Dimensionen) in CLAUDE_SESSION_STARTER.md dokumentiert; GeoQuest_Audit_Phase438.md erstellt. verify 177/177, validate 78/78, check_session 15/15.

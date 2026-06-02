@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 439):
+Aktueller Stand (Stand: Phase 440):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 936 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -194,10 +194,23 @@ Oder manuell:
 - `"Audit Phase NNN"` → Claude liest alle Kern-Dateien und liefert Findings + Fixes
 
 ### Für größere Erweiterungen (gib diese Infos mit):
-- **Phase-Nummer** (nächste wäre 425)
-- **Kategorie** (games, autos, tiere, pflanzen, gastro, tech, emob, archäologie, astro, geo, sport)
+- **Phase-Nummer** (nächste wäre 442)
+- **Kategorie** — bereits vorhandene Kategorien in MODE_CATS:
+  `games, autos, tiere, pflanzen, gastro, tech, emob, archaeologie, astro, geo, sport,`
+  `zug, kultur, architektur, mythologie, geschichte, kunst, themeparks, boardgames,`
+  `sprachen, hunde, gartenbau, literatur, musik, filme, serien, medizin, wirtschaft,`
+  `webkultur, robotik, regional`
 - **Daten-Format** (JSON-Schema, Python-Dict mit Feldbeschreibungen)
-- **Erwartete Modi-Typen** (H/L, Match, Pin, Wort-Schmiede, Multiple-Choice)
+- **Erwartete Modi-Typen** (H/L, Match, Pin, Wort-Schmiede, Timeline)
+
+### ⚠️ Duplikat-Guard bei neuen Kategorien (PFLICHT vor Sprint-Start):
+Bevor du einen Feature-Sprint startest, **prüfe ob der Patch schon angewendet wurde**:
+```bash
+# Schnelltest: Existiert die erste neue Modus-ID bereits?
+grep -c "hl_MEINMODUS" gen.py   # 0 = noch nicht da, >0 = Patch bereits gelaufen!
+```
+Wenn `>0`: **Führe NICHT den Patch aus** — nur `post_phase.py` und Doku aktualisieren.
+`check_session.py` warnt ebenfalls, wenn `patch_NNN_*.py` noch nicht in `PATCHES.md` dokumentiert ist.
 
 ### H/L-Inversions-Falle (KRITISCH):
 **Wenn ein kleinerer Wert "besser" oder "schneller" ist, MUSS `lowerWins: true` gesetzt sein.**  
@@ -217,7 +230,7 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 439)
+## AKTUELLER PROJEKT-STATUS (Phase 440)
 
 | Metrik | Wert |
 |--------|------|
@@ -225,17 +238,23 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | Fahrzeuge (autos_extended) | 431 |
 | Spiele (games_extended) | 70 |
 | Konsolen (konsolen.json) | 30 |
-| JSON-Datendateien | 74 |
+| JSON-Datendateien | 78 |
 | gen.py Größe | ~1.53 MB |
-| GeoQuest.html Größe | ~5.5 MB |
+| GeoQuest.html Größe | ~5.62 MB |
 | verify.py | 177/177 ✓ |
 | validate_content.py | 78/78 ✓ 0 Warnings |
 | Sprachen vollständig (de/en/pl) | ✓ |
 | Offline/PWA | ✓ |
 | iOS Timeline-Bug | ✅ gefixt (Phase 412) |
 
-### Gaming-Kategorie (Phase 360-402)
+### Neue Kategorien (Phase 438–440)
 | Modi-ID | Beschreibung |
 |---------|-------------|
-| games_pin | Studio auf Weltkarte einpinnen |
-| gam
+| hl_park_speed | Freizeitpark: Höchstgeschwindigkeit |
+| park_match_land | Freizeitpark: Ursprungsland |
+| hl_kunst_jahr | Kunstgeschichte: Entstehungsjahr |
+| kunst_match_museum | Kunstgeschichte: Museum |
+| hl_hund_gewicht | Hunderassen: Max. Gewicht |
+| hund_match_land | Hunderassen: Ursprungsland |
+| hl_garten_bluete | Gartenbau: Frühester Blüher (lowerWins) |
+| garten_match_boden | Gartenbau: Bodenanspruch |

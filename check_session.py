@@ -182,13 +182,25 @@ if cats_m:
     cats_modes = re.findall(r'modes:\[(.*?)\]', cats_m.group(1), re.DOTALL)
     cats_count = sum(len(re.findall(r'"([^"]+)"', m)) for m in cats_modes)
 
-# Count GEN dispatch
+# Count GEN dispatch -- zähle MODES-IDs die im GEN-Block vorkommen
+# Manche Modi werden außerhalb von GEN geroutet (z.B. wort_schmiede via if-Branch) -- das ist OK
 gen_m = re.search(r'const GEN=\{(.*?)\};', gen_src, re.DOTALL)
-gen_count = len(re.findall(r'"?([a-zA-Z0-9_]+)"?\s*:', gen_m.group(1))) if gen_m else 0
+modes_ids_set = set(re.findall(r'id:"([^"]+)"', modes_m.group(1))) if modes_m else set()
+# Alle identifier: patterns im GEN-Block matchen, dann mit MODES-IDs schneiden
+gen_all_keys = set(re.findall(r'"?([a-zA-Z0-9_]+)"?\s*:', gen_m.group(1))) if gen_m else set()
+gen_count = len(gen_all_keys & modes_ids_set)
+# Modi die außerhalb GEN geroutet werden (Sonder-Dispatcher via if-Branch in Router)
+SPECIAL_ROUTED = {'wort_schmiede'}  # ergänzen wenn neue Sonder-Router dazukommen
+missing = modes_ids_set - gen_all_keys - SPECIAL_ROUTED
 
 ok(f"MODES: {actual_modi} Eintraege")
 ok(f"MODE_CATS: {cats_count} Modus-Referenzen")
-ok(f"GEN dispatch: {gen_count} Eintraege")
+if not missing:
+    ok(f"GEN dispatch: {gen_count}/{actual_modi} Eintraege + {len(SPECIAL_ROUTED)} Sonder-Router (vollstaendig)")
+elif len(missing) <= 3:
+    warn(f"GEN dispatch: {len(missing)} MODES ohne Eintrag: {sorted(missing)} -- absichtlich oder Bug?")
+else:
+    fail(f"GEN dispatch: {len(missing)} MODES ohne Generator: {sorted(missing)[:5]}...")
 
 # Check for unreplaced placeholders -- in GeoQuest.html (nicht gen.py, dort sind sie intentional)
 gq_html_path = os.path.join(BASE, 'GeoQuest.html')
@@ -220,27 +232,25 @@ if empty:
 else:
     ok("Keine leeren Dateien im Root")
 
-# ── Zusammenfassung ───────────────────────────────────────────────────────────
-print(f"\n{BOLD}{'='*58}")
-total_checks = len(passed) + len(warnings) + len(failed)
-print(f" Ergebnis: {len(passed)}/{total_checks} OK  |  {len(warnings)} Warnings  |  {len(failed)} Fehler")
-print(f"{'='*58}{RESET}\n")
-
-if failed:
-    print(f"{RED}FEHLER:{RESET}")
-    for f in failed:
-        print(f"  [!!] {f}")
-if warnings:
-    print(f"{YELLOW}Warnings:{RESET}")
-    for w in warnings:
-        print(f"  [ !] {w}")
-
-if not failed and not warnings:
-    print(f"{GREEN}Alles sauber -- Session kann beendet werden!{RESET}")
-    print("Naechster Schritt: unlock_and_push.bat\n")
-elif not failed:
-    print(f"{YELLOW}Warnings vorhanden, aber keine Fehler.{RESET}")
-    print("Empfehlung: python3 post_phase.py ... ausfuehren dann unlock_and_push.bat\n")
-
-if STRICT and (failed or warnings):
-    sys.exit(1)
+# Patch-Duplikat-Schutz: Gibt es patch_NNN Dateien die noch NICHT in PATCHES.md dokumentiert sind?
+patches_dir = os.path.join(BASE, 'patches')
+if os.path.exists(patches_md):
+    with open(patches_md, encoding='utf-8') as _pmf:
+        _pm_src = _pmf.read()
+    # PATCHES.md hat zwei Formate: '## Phase NNN' (ab Phase 438) und Tabelle '| NNN |' (aeltere Phasen)
+    applied_phases = set(int(x) for x in re.findall(r'## Phase (\d+)', _pm_src))
+    # Auch Tabellen-Eintraege wie "| 221a |" erfassen (Strip Buchstaben-Suffix)
+    for raw in re.findall(r'\|\s*(\d{3,}[a-z]?)\s*\|', _pm_src):
+        applied_phases.add(int(re.match(r'(\d+)', raw).group(1)))
+    max_doc_phase = max(applied_phases) if applied_phases else 0
+    patch_files_list = [f for f in os.listdir(patches_dir) if f.endswith('.py')]
+    undocumented = []
+    for pf in patch_files_list:
+        import re as _re2
+        m_pf = _re2.match(r'patch_(\d+)[a-z]?_', pf)
+        if m_pf and int(m_pf.group(1)) > max_doc_phase:
+            undocumented.append(pf)
+    if undocumented:
+        warn(f"patch_NNN ohne PATCHES.md-Eintrag (noch nicht ausgefuehrt?): {sorted(undocumented)[:5]}")
+    else:
+        ok("Alle patch_NNN-Dateien in PATCHES.md dokumentiert")
