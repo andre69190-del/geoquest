@@ -15419,12 +15419,12 @@ function renderHomeTab(){
     archaeologie:'Arch',astronomie:'Astr',geologie:'Geo-V',
     sport_wissen:'S-W',games:'Game',autos:'Auto',regional:'Reg'};
   const _activeCat=S.filterCat||'pure_geo';
-  const _tabNavHtml=_menuLayout==='tabs'?`<div class="tabs-nav">${_CAT_ORDER.filter(k=>MODE_CATS[k]).map(k=>{
-    const cat=MODE_CATS[k];
+  const _tabNavHtml=_menuLayout==='tabs'?`<div style="display:grid;grid-template-columns:repeat(8,1fr);gap:3px;padding:0 10px 8px;width:100%;box-sizing:border-box">${_CAT_ORDER.filter(k=>MODE_CATS[k]).map(k=>{
+    const cat=MODE_CATS[k];const _ia=k===_activeCat;
     const abbr=_catAbbrev[k]||(cat.label.split(' ')[0].substring(0,5));
-    return`<div class="cat-tab${k===_activeCat?' active':''}" onclick="window.filterByCategory('${k}');render()">
-      <span class="ct-icon">${cat.icon}</span>
-      <span class="ct-lbl">${abbr}</span>
+    return`<div onclick="window.filterByCategory('${k}');render()" style="display:flex;flex-direction:column;align-items:center;padding:5px 2px;border-radius:8px;border:1.5px solid ${_ia?'#534AB7':'var(--border)'};background:${_ia?'#7F77DD':'var(--bg2)'};cursor:pointer;overflow:hidden;touch-action:manipulation">
+      <span style="font-size:1.1rem;line-height:1">${cat.icon}</span>
+      <span style="font-size:.48rem;text-align:center;color:${_ia?'#fff':'var(--text2)'};overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;padding:0 1px">${abbr}</span>
     </div>`;
   }).join('')}</div>`:'';
   const _tabsModeClass=_menuLayout==='tabs'?' tabs-mode':'';
