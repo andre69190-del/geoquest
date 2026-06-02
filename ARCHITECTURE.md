@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 423 (Stand: Juni 2026)
+**Version:** Phase 424 (Stand: Juni 2026)
 **Build:** gen.py → 1.49 MB | GeoQuest.html → 5.35 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---

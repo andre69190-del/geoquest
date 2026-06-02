@@ -1335,6 +1335,12 @@ de:{
   help_search:"\u{1F50D} Über die Suche findest du jedes Spiel schnell.",
   help_cats:"Oben wischt du durch die Kategorien – tippe eine an, um ihre Spiele zu sehen.",
   help_close:"Verstanden!",
+  help_tour_btn:"▶️ Kurze Einführung ansehen",
+  ob_help_hint:"Tipp: Oben rechts auf ❓ tippen – dort gibt es jederzeit Hilfe.",
+  tour_skip:"Überspringen",tour_next:"Weiter →",tour_done:"Los geht's!",
+  tour_t1:"Spiel auswählen",tour_d1:"Wähle oben eine Kategorie und wisch dich durch die Spiele. Tippe ein Spiel an, um zu starten.",
+  tour_t2:"Spielen & sammeln",tour_d2:"Beantworte Fragen, sammle Punkte und 🪙 Coins – damit schaltest du neue Kategorien frei.",
+  tour_t3:"Hilfe ist immer da",tour_d3:"Brauchst du eine Erklärung? Tippe oben auf ❓. Viel Spaß!",
   play:"SPIELEN",again:"NOCHMAL",q_neighbor_fake:"Welches Land grenzt NICHT an …?",q_neighbor_count:"Wie viele Nachbarländer hat dieses Land?",q_border_shared:"Teilen diese L\u00e4nder eine gemeinsame Grenze?",q_de_plate:"Welche Stadt/Region hat dieses Kennzeichen?",q_map_reverse:"Welches Land ist hervorgehoben?",q_stadium:"\u26BD In welchem Land steht dieses Stadion?",q_jersey:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",q_crest:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",q_beta_hl_stadium:"Welches Stadion liegt höher über dem Meeresspiegel?",q_beta_spotter:"Weltkarte",q_sport_poi:"In welchem Land liegt das?",q_wappen:"Welchem Land gehört dieses Wappen?",menu:"Hauptmenü",board:"Bestenliste",pass:"Reisepass",
   fav_empty:"Noch keine Favoriten gespeichert",
   profile:"Profil",stats:"Statistik",casual:"Casual",hardcore:"Hardcore",rounds:"Runden",
@@ -1412,6 +1418,12 @@ en:{
   help_search:"\u{1F50D} Use search to find any game quickly.",
   help_cats:"Swipe through the categories at the top – tap one to see its games.",
   help_close:"Got it!",
+  help_tour_btn:"▶️ Watch the quick intro",
+  ob_help_hint:"Tip: tap ❓ at the top right – help is available anytime.",
+  tour_skip:"Skip",tour_next:"Next →",tour_done:"Let's go!",
+  tour_t1:"Pick a game",tour_d1:"Choose a category at the top and swipe through the games. Tap a game to start.",
+  tour_t2:"Play & collect",tour_d2:"Answer questions, earn points and 🪙 coins – use them to unlock new categories.",
+  tour_t3:"Help is always there",tour_d3:"Need an explanation? Tap ❓ at the top. Have fun!",
   play:"PLAY",again:"PLAY AGAIN",q_neighbor_fake:"Which country does NOT border …?",q_neighbor_count:"How many neighbouring countries does this country have?",q_border_shared:"Do these countries share a border?",q_de_plate:"Which city/region has this licence plate?",q_map_reverse:"Which country is highlighted?",q_stadium:"⚽ In which country is this stadium?",q_jersey:"👕 Which country wears this jersey?",q_crest:"🛡 Which country does this crest belong to?",q_beta_hl_stadium:"Which stadium is higher above sea level?",q_beta_spotter:"World map",q_sport_poi:"In which country is this?",q_wappen:"Which country does this coat of arms belong to?",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
   fav_empty:"No favourites saved yet",
   profile:"Profile",stats:"Stats",casual:"Casual",hardcore:"Hardcore",rounds:"Rounds",
@@ -1489,6 +1501,12 @@ pl:{
   help_search:"\u{1F50D} Użyj wyszukiwarki, aby szybko znaleźć dowolną grę.",
   help_cats:"Przesuwaj kategorie u góry – dotknij jednej, aby zobaczyć jej gry.",
   help_close:"Rozumiem!",
+  help_tour_btn:"▶️ Zobacz krótkie wprowadzenie",
+  ob_help_hint:"Wskazówka: dotknij ❓ u góry – pomoc jest dostępna zawsze.",
+  tour_skip:"Pomiń",tour_next:"Dalej →",tour_done:"Zaczynamy!",
+  tour_t1:"Wybierz grę",tour_d1:"Wybierz kategorię u góry i przesuwaj gry. Dotknij grę, aby zacząć.",
+  tour_t2:"Graj i zbieraj",tour_d2:"Odpowiadaj na pytania, zdobywaj punkty i 🪙 monety – odblokuj nimi nowe kategorie.",
+  tour_t3:"Pomoc jest zawsze",tour_d3:"Potrzebujesz wyjaśnienia? Dotknij ❓ u góry. Baw się dobrze!",
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",q_neighbor_fake:"Który kraj NIE graniczy z …?",q_neighbor_count:"Ile sąsiadów ma ten kraj?",q_border_shared:"Czy te kraje mają wspólną granicę?",q_de_plate:"Które miasto/region ma tę tablicę rejestracyjną?",q_map_reverse:"Który kraj jest podświetlony?",q_stadium:"⚽ W którym kraju jest ten stadion?",q_jersey:"👕 Który kraj nosi tę koszulkę?",q_crest:"🛡 Do którego kraju należy ten herb?",q_beta_hl_stadium:"Który stadion leży wyżej nad poziomem morza?",q_beta_spotter:"Mapa świata",q_sport_poi:"W którym kraju to się znajduje?",q_wappen:"Do którego kraju należy ten herb?",q_hl_gdp:"Wyższe PKB/os. niż {a}?",q_hl_density:"Gęściej zaludnione niż {a}?",q_hl_elevation:"Wyższy szczyt niż {a}?",q_hl_coastline:"Dłuższe wybrzeże niż {a}?",q_hl_borders:"Więcej sąsiadów niż {a}?",q_hl_lifeexp:"Dłuższe życie niż w {a}?",q_hl_median_age:"Wyższy wiek mediany niż {a}?",q_hl_forest:"Więcej lasów niż {a}?",mode_hauptstadt_dist:"Odległość stolic",mode_flugrouten_duell:"Pojedynek tras lotniczych",mode_insel_festland:"Wyspa czy ląd stały",mode_aequator:"Na północ czy na południe?",mode_wort_schmiede:"Kuźnia Słów",diff_desc_blitz:"⚡ Blitz: 60 sekund · Jak najwięcej pytań",q_airport_pin:"Gdzie leży to lotnisko?",click_map:"Dotknij mapy",q_uk_match:"Z jakiego kraju pochodzi:",q_uk_pin:"Gdzie to jest na mapie?",uk_hl_higher:"Wyżej ↑",uk_hl_lower:"Niżej ↓",uk_hl_prompt:"Który budynek jest wyższy?",spotter_no_region:"nie ma regionów – wpisz \"{code}\"!",ws_found:"Znalezione",ws_enter_word:"Wpisz słowo…",ws_check:"Sprawdź",ws_all_found:"Znaleziono wszystkie słowa!",ws_next_city:"Następne miasto",ws_duplicate:"✓ Już znalezione!",ws_invalid:"✕ Nieprawidłowe słowo",ws_lang_label:"Język",ws_letters_hint:"Twórz słowa z liter miasta",menu:"Menu",board:"Ranking",pass:"Paszport",
   fav_empty:"Nie zapisano jeszcze ulubionych",
   profile:"Profil",stats:"Statystyki",casual:"Zwykły",hardcore:"Trudny",rounds:"Rundy",
@@ -6153,6 +6171,7 @@ let S={
   lvModal:false,lv:null,lvSetupMode:"random",lvSelType:"random",lvSetupCat:null,mpSelType:"random",mpSelCat:"",mpSelMode:"",
   settingsModal:false,
   helpModal:false,
+  tourStep:0,
   convModal:false,
   collectedPlates:loadCollectedPlates(),
   ligaData:[],ligaLoading:false,leagueEvalResult:null,
@@ -12757,6 +12776,8 @@ function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.can
     if(S.obStep<0)S.obStep=0;
     app.innerHTML=renderOnboarding(S.obStep);return;
   }
+  /* Tour-Gate (Phase 424) — optionale Einfuehrung, per ?-Hilfe abrufbar (kein Auto-Start, Onboarding deckt Erstkontakt) */
+  if(S.tourStep>0){app.innerHTML=renderTourModal(S.tourStep);return;}
   if(S.leagueEvalResult){app.innerHTML=renderLeagueEvalModal(S.leagueEvalResult);return;}
   if(S.waitingForLandscape){
     app.innerHTML=`<div style="min-height:100vh;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem"><div style="font-size:3rem;margin-bottom:1rem">\u{1F4F1}\u27A1\u{1F5FA}</div><div style="font-size:1.1rem;font-weight:900;color:var(--text);margin-bottom:.5rem">Bitte Ger\u00e4t drehen</div><div style="font-size:.8rem;color:var(--text3);margin-bottom:1.5rem">Dieser Modus ben\u00f6tigt das Querformat</div><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';S.waitingForLandscape=false;render()">🚪 Beenden</button></div>`;
@@ -16107,6 +16128,28 @@ function renderProfilTab(){
   return '<div style="padding-bottom:100px">'+_offlineBanner+block1+block2+block3+block4+block6+'</div>';
 }
 
+/* FIRST-RUN TOUR (Phase 424) — kurze, ueberspringbare Einfuehrung; nutzt ob-* Styles */
+function finishTour(){try{localStorage.setItem('gq_tour_seen','1');}catch(_e){}S.tourStep=0;render();}
+function renderTourModal(step){
+  const slides=[
+    {e:"🎯",t:t('tour_t1'),d:t('tour_d1')},
+    {e:"🏆",t:t('tour_t2'),d:t('tour_d2')},
+    {e:"❓",t:t('tour_t3'),d:t('tour_d3')}
+  ];
+  const i=Math.min(Math.max(step-1,0),slides.length-1);
+  const s=slides[i];
+  const last=i===slides.length-1;
+  const dots=slides.map((_,k)=>`<div class="ob-dot ${k===i?'active':''}"></div>`).join("");
+  return`<div class="ob-overlay"><div class="ob-card">
+    <div class="ob-emoji">${s.e}</div>
+    <div class="ob-title">${s.t}</div>
+    <div class="ob-sub">${s.d}</div>
+    <div class="ob-dots">${dots}</div>
+    <button class="btn-p" onclick="${last?'finishTour()':'S.tourStep='+(step+1)+';render()'}">${last?t('tour_done'):t('tour_next')}</button>
+    <button class="btn-g" style="margin-top:.3rem;margin-bottom:0;font-size:.82rem;color:var(--text3);background:transparent;border:none;text-decoration:underline" onclick="finishTour()">${t('tour_skip')}</button>
+  </div></div>`;
+}
+
 /* HELP MODAL (Phase 423) — dauerhafte Hilfe, jederzeit per ?-Button erreichbar */
 function renderHelpModal(){
   const row=(txt)=>`<div style="display:flex;gap:.5rem;align-items:flex-start;margin-bottom:.5rem;font-size:.83rem;line-height:1.45;color:var(--text2)"><span style="color:#10b981;flex-shrink:0;font-weight:900">•</span><span>${txt}</span></div>`;
@@ -16117,7 +16160,8 @@ function renderHelpModal(){
     ${hd(t('help_modes_h'))}${row(t('help_hl'))}${row(t('help_match'))}${row(t('help_pin'))}${row(t('help_word'))}${row(t('help_mc'))}
     ${hd(t('help_diff_h'))}${row(t('help_casual'))}${row(t('help_hardcore'))}${row(t('help_survival'))}
     ${hd(t('help_extras_h'))}${row(t('help_coins'))}${row(t('help_fav'))}${row(t('help_search'))}${row(t('help_cats'))}
-    <button onclick="S.helpModal=false;render()" class="btn-g" style="margin-top:1.1rem;margin-bottom:0">${t('help_close')}</button>
+    <button onclick="S.helpModal=false;S.tourStep=1;render()" class="btn-g" style="margin-top:1.1rem;margin-bottom:.5rem;background:var(--bg3)">${t('help_tour_btn')}</button>
+    <button onclick="S.helpModal=false;render()" class="btn-g" style="margin-bottom:0">${t('help_close')}</button>
   </div></div>`;
 }
 
@@ -16213,14 +16257,15 @@ function renderOnboarding(step){
   return`<div class="ob-overlay"><div class="ob-card">
     <div class="ob-emoji">\u{1F9ED}</div>
     <div class="ob-title">${t("ob_modes_title")}</div>
-    <div class="ob-sub">${t("ob_modes_sub")}</div>
+    <div class="ob-sub">${t("ob_modes_sub").replace(/\d[\d. ,]*/,MODES.length)}</div>
     <div class="ob-dots">${dots}</div>
     <div style="margin-bottom:1rem">
       <div class="ob-mode-row"><div class="ob-mode-icon">\u{1F3D9}</div><div><div style="color:var(--text);font-weight:700;font-size:.83rem">${t("ob_mode1_name")}</div><div class="ob-mode-desc">${t("ob_mode1_desc")}</div></div></div>
       <div class="ob-mode-row"><div class="ob-mode-icon">\u{1F697}</div><div><div style="color:var(--text);font-weight:700;font-size:.83rem">${t("ob_mode2_name")}</div><div class="ob-mode-desc">${t("ob_mode2_desc")}</div></div></div>
       <div class="ob-mode-row"><div class="ob-mode-icon">\u{1F687}</div><div><div style="color:var(--text);font-weight:700;font-size:.83rem">${t("ob_mode3_name")}</div><div class="ob-mode-desc">${t("ob_mode3_desc")}</div></div></div>
-      <div style="color:var(--text3);font-size:.7rem;text-align:center;margin-top:4px">${t("ob_more_modes")}</div>
+      <div style="color:var(--text3);font-size:.7rem;text-align:center;margin-top:4px">${t("ob_more_modes").replace(/\d[\d. ,]*/,Math.max(0,MODES.length-3))}</div>
     </div>
+    <div style="background:var(--bg3);border-radius:10px;padding:.55rem .7rem;margin-bottom:.9rem;font-size:.76rem;color:var(--text2);line-height:1.4">${t("ob_help_hint")}</div>
     <button class="btn-p" onclick="finishOb()">${t("ob_start")}</button>
     <button class="btn-g" style="margin-bottom:0" onclick="S.obStep=1;render()">${t("ob_back")}</button>
   </div></div>`;

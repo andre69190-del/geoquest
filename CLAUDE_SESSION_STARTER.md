@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 423):
+Aktueller Stand (Stand: Phase 424):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 814 Spielmodi in MODES-Array (gen.py)
 - 47 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -24,7 +24,11 @@ Pflicht-Workflow nach JEDER Änderung:
 2. python3 verify.py             → muss 143/143 (oder mehr) zeigen
 3. python3 validate_content.py   → muss 0 warnings zeigen
 4. python3 post_phase.py --phase NNN --summary "Beschreibung"
-5. python3 check_session.py      → 14/14 Checks grün (NEU: alles in einem Rutsch)
+   ↳ aktualisiert AUTOMATISCH: ARCHITECTURE.md, README.md, GeoQuest_Website_Konzept.md,
+     GeoQuest_Spielübersicht.html, unlock_and_push.bat UND dieses Dokument
+     (CLAUDE_SESSION_STARTER.md: Phase, Modi-Zahl, verify-/validate-Score) — nicht von Hand pflegen!
+5. python3 check_session.py      → Checks grün (prüft AUTOMATISCH auch, ob die Modi-Zahl in
+     diesem Dokument zu gen.py passt, und warnt bei Abweichung)
 6. unlock_and_push.bat           → deployed auf Vercel
 
 Wichtige Dateien zum Lesen:
@@ -34,7 +38,7 @@ Wichtige Dateien zum Lesen:
 - data/autos_extended.json  → 431 Autos, 22 Felder je Eintrag
 - patches/PATCHES.md        → Alle bisherigen Patches mit Phase-Nummern
 - ARCHITECTURE.md           → Systemdokumentation
-- CLAUDE_SESSION_STARTER.md → Dieses Dokument (immer aktuell halten!)
+- CLAUDE_SESSION_STARTER.md → Dieses Dokument — Phase/Modi/Scores werden von post_phase.py AUTOMATISCH aktualisiert & von check_session.py geprüft (Phase 422+); inhaltliche Notizen weiterhin manuell pflegen
 - GeoQuest_Checkliste_und_Prompt_Template.md → AM ANFANG JEDER SESSION LESEN! Prompt-Vorlagen + Datei-Checkliste
 - check_session.py          → NEU: Session-End-Check (14 Punkte)
 ```
@@ -189,7 +193,7 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 423)
+## AKTUELLER PROJEKT-STATUS (Phase 424)
 
 | Metrik | Wert |
 |--------|------|
