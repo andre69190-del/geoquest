@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 430 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.45 MB | 861 Spielmodi | verify: 155/155 | data: 56 JSON
+**Version:** Phase 431 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.48 MB | 874 Spielmodi | verify: 159/159 | data: 60 JSON
 
 ---
 
@@ -1135,6 +1135,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **428** | patch_428.py | **2 neue Kategorien: Mythologie & Sagenwelt (40 Gottheiten: GR/NO/AE/RO/JP/AZ/MES) + Architektur & Megabauten (40 Bauwerke: Wolkenkratzer/Brücken/Staudämme/Tunnel/Tempel/Denkmäler). 11 neue Modi: myth_match_domain/kultur/typ/roemisch + myth_pin_herkunft + hl_arch_height/span/baujahr + arch_match_land/typ + arch_pin_megaprojects. MODES 829->840** |
 | **429** | patch_429.py | **2 neue Kategorien: Literatur & Comics (40 Werke: Roman/Comic/Manga/Kinderbuch global) + KI, Robotik & Hardware (40 Systeme: WRO/FLL/Arduino/ChatGPT/AlphaGo/KUKA). Fix: MYTH_DATA/ARCH_DATA Placeholder-Bug (Phase 428 retrofix). 12 neue Modi: hl_lit_sales/release + lit_match_autor/land/protagonist + timeline_lit_release + hl_robot_jahr + robot_match_kategorie/land/entwickler/fakt + timeline_robot_jahr. MODES 840->852. verify: 152/152** |
 | **430** | patch_430.py | **Phase 430: Wort-Schmiede für Literatur & Robotik/KI — ws_lit_protagonist (TINTENHERZ) + ws_robot_name (MASCHINENLERNEN). Neue Dateien: literatur_ws.json, robotik_ws.json. MODES: 859→861** |
+| **431** | patch_431.py | **Phase 431: Kategorien Anatomie & Medizin + Wirtschaft & Marken. 13 neue Modi (6 Medizin, 7 Wirtschaft). Neue Dateien: medizin_extended.json (40), wirtschaft_extended.json (40), medizin_ws.json, wirtschaft_ws.json. MODES: 861→874** |
 
 ---
 

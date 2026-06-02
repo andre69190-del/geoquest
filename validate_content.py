@@ -647,6 +647,46 @@ def check_robotik_extended(filename, data):
         if not isinstance(entry.get("gruendungsjahr"),int):
             warn(filename,"typ:gruendungsjahr",name,"gruendungsjahr muss int sein")
 
+def check_medizin_extended(filename, data):
+    """Validiert data/medizin_extended.json"""
+    KATEG = {"Organ","Knochen","Meilenstein","Krankheit"}
+    REQUIRED = ["kategorie","jahr_entdeckung","gewicht_gramm","anzahl_knochen","lateinischer_begriff","entdecker"]
+    if not isinstance(data, dict): warn(filename,"struktur","root","muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict): warn(filename,"eintrag",name,"kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry: warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        if entry.get("kategorie") not in KATEG:
+            warn(filename,"enum:kategorie",name,f"Kategorie {entry.get('kategorie')!r} unbekannt")
+        # Null-Werte erlaubt für jahr_entdeckung, gewicht_gramm, anzahl_knochen, entdecker
+        jd = entry.get("jahr_entdeckung")
+        if jd is not None and not isinstance(jd, int):
+            warn(filename,"typ:jahr_entdeckung",name,"jahr_entdeckung muss int oder null sein")
+        gg = entry.get("gewicht_gramm")
+        if gg is not None and not isinstance(gg, (int, float)):
+            warn(filename,"typ:gewicht_gramm",name,"gewicht_gramm muss float oder null sein")
+        ak = entry.get("anzahl_knochen")
+        if ak is not None and not isinstance(ak, int):
+            warn(filename,"typ:anzahl_knochen",name,"anzahl_knochen muss int oder null sein")
+
+def check_wirtschaft_extended(filename, data):
+    """Validiert data/wirtschaft_extended.json"""
+    KATEG = {"Tech","Automobil","FMCG","Pharma","Finanzen","Software"}
+    REQUIRED = ["kategorie","gruendungsjahr","umsatz_mrd_usd","mitarbeiter_tausend","hauptsitz_land","gruender"]
+    if not isinstance(data, dict): warn(filename,"struktur","root","muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict): warn(filename,"eintrag",name,"kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry: warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        if entry.get("kategorie") not in KATEG:
+            warn(filename,"enum:kategorie",name,f"Kategorie {entry.get('kategorie')!r} unbekannt")
+        if not isinstance(entry.get("gruendungsjahr"), int):
+            warn(filename,"typ:gruendungsjahr",name,"gruendungsjahr muss int sein")
+        if not isinstance(entry.get("umsatz_mrd_usd"), (int, float)):
+            warn(filename,"typ:umsatz_mrd_usd",name,"umsatz_mrd_usd muss float sein")
+        if not isinstance(entry.get("mitarbeiter_tausend"), (int, float)):
+            warn(filename,"typ:mitarbeiter_tausend",name,"mitarbeiter_tausend muss float sein")
+
 def check_mythologie(filename, data):
     """Validiert data/mythologie.json"""
     KATEG = {"Griechisch","Nordisch","Ägyptisch","Römisch","Japanisch","Aztekisch","Mesopotamisch","Keltisch"}
@@ -886,6 +926,10 @@ def detect_and_check(filename):
         check_literatur_extended(filename, data)
     elif name == "robotik_extended.json":
         check_robotik_extended(filename, data)
+    elif name == "medizin_extended.json":
+        check_medizin_extended(filename, data)
+    elif name == "wirtschaft_extended.json":
+        check_wirtschaft_extended(filename, data)
     elif name == "mythologie.json":
         check_mythologie(filename, data)
     elif name == "architektur.json":

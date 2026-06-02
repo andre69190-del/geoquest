@@ -194,3 +194,5 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | inline gen.py | 424 | 4 neue Geo/Zug-Modi: zug_match_land (177 Strecken→Landzuordnung), odd_one_out (6 Kategorien: EU/NATO/Insel/Binnenstaat/G7/Euro), clue_country (progressive Hinweise Kontinent→Hauptstadt→Währung, neues type:"clue_country"), sort_rank (4 Länder nach Metrik klicken, neues type:"sort_rank"). generate_spieluebersicht.py: 4 neue Generator-Sonderfälle. MODES 810→814. verify: 146/146 |
 | inline gen.py + neue JSONs | 427 | 2 neue Kategorien "Kino 
 | patch_430_lit_robotik_ws.py | 430 | Wort-Schmiede Literatur & Robotik: ws_lit_protagonist (TINTENHERZ) + ws_robot_name (MASCHINENLERNEN). data/literatur_ws.json + data/robotik_ws.json. verify: 155/155. MODES: 859→861 |
+
+| patch_431_med_eco.py | 431 | Kategorien Anatomie & Medizin + Wirtschaft & Marken. 13 neue Modi, 4 neue JSON-Dateien (medizin_extended 40, wirtschaft_extended 40, 2x WS). Timeline: med_meilensteine + eco_gruendung. verify: 159/159. MODES: 861→874 |

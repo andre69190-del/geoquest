@@ -1,0 +1,40 @@
+{
+  "aktiengesellschaft": {
+    "word": "AKTIENGESELLSCHAFT",
+    "validWords": {
+      "de": [
+        "AKTIE", "AKTIEN", "GESELLE", "GESELLSCHAFT", "STELLEN", "TALENTE",
+        "SCHALL", "STILLE", "GESTEIN", "STEIN", "STAHL", "SCHIENE", "LEHNE",
+        "KEINE", "LEISTE", "LINSE", "TEICHE", "SCHLANGE", "SENKEL", "KNECHT",
+        "FLECKEN", "STEIGEN", "STELLE", "LACHS", "SECHS", "INSEKT",
+        "SCHLEGEL", "GELENK", "ELCH", "ACHSE"
+      ],
+      "en": [
+        "SKILL", "STILL", "STALE", "STEAL", "STEEL", "ELITE", "SLEEK",
+        "TEACH", "LEACH", "SCALE", "LEAST", "FLESH", "EAGLE", "SIGNAL",
+        "INSECT", "KNIGHT"
+      ],
+      "pl": [
+        "STEIN", "AKTIE", "ELCH", "STAHL", "KEINE"
+      ]
+    }
+  },
+  "bilanzierung": {
+    "word": "BILANZIERUNG",
+    "validWords": {
+      "de": [
+        "BILANZ", "BIER", "LINER", "RINGE", "NEIN", "REIN", "BERLIN",
+        "LUNGE", "RING", "LANG", "BRINGEN", "RUNGE", "LABERN", "RINGEN",
+        "GRABEN", "LAGUNE", "LAUGE", "GABEL", "ANGEL", "BIRNE",
+        "BRAUN", "BANGEN", "GREIN"
+      ],
+      "en": [
+        "BILGE", "RAIN", "RUIN", "LURE", "BLUR", "RILE", "LINE", "GRIN",
+        "BRINE", "ALIEN", "LINER", "REGAL", "ANGEL", "GRAIL"
+      ],
+      "pl": [
+        "BILANZ", "NEIN", "REIN", "RING", "LANG"
+      ]
+    }
+  }
+}

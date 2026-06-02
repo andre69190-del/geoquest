@@ -1,0 +1,38 @@
+{
+  "stoffwechsel": {
+    "word": "STOFFWECHSEL",
+    "validWords": {
+      "de": [
+        "STOFF", "WECHSEL", "SECHS", "SECHSTEL", "ELCH", "ECHO", "HOSE",
+        "CHOSE", "FLOSS", "WOLF", "SCHOTE", "LOCH", "SCHLOT", "HEFT",
+        "LOSE", "SOLE", "HOLE"
+      ],
+      "en": [
+        "SELF", "FELT", "LEFT", "FLEW", "CLOT", "SHOE", "HOSE", "ECHO",
+        "WOLF", "CHEF", "FLESH", "WHOLE", "SHELF", "CLOSE", "CLOTH",
+        "STOLE", "CHOSE"
+      ],
+      "pl": [
+        "ECHO", "STOFF", "ELCH", "LOCH", "HOSE"
+      ]
+    }
+  },
+  "blutkreislauf": {
+    "word": "BLUTKREISLAUF",
+    "validWords": {
+      "de": [
+        "BLUT", "KREIS", "KREISLAUF", "BRUST", "FLUR", "KURS", "LAUS",
+        "LUST", "FRAU", "BAUER", "FRUST", "BLAU", "KLAR", "KRAFT",
+        "KRAUSE", "KLAUE", "KRAUT", "RITUAL", "BALLET", "BULLE",
+        "KULI", "FLIRT", "BLUSE", "UFER", "FABRIK", "BIRKE"
+      ],
+      "en": [
+        "BLURT", "FRUIT", "LURK", "FLAK", "BRISK", "FLUTE", "BUILT",
+        "BURST", "STALK", "BULK", "SILK", "FLASK", "FLIRTS"
+      ],
+      "pl": [
+        "BLUT", "KREIS", "KLAR", "LUST", "KURS"
+      ]
+    }
+  }
+}

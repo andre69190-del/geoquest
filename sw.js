@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-fb154272';
+const CACHE_NAME = 'geoquest-a9ce3265';
 /* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
   './GeoQuest.html',
@@ -35,6 +35,8 @@ const ASSETS = [
   './data/kultur.json',
   './data/literatur_extended.json',
   './data/literatur_ws.json',
+  './data/medizin_extended.json',
+  './data/medizin_ws.json',
   './data/metro_logos.json',
   './data/musik_extended.json',
   './data/mythologie.json',
@@ -59,6 +61,8 @@ const ASSETS = [
   './data/tiere_pin.json',
   './data/tiere_ws.json',
   './data/timeline.json',
+  './data/wirtschaft_extended.json',
+  './data/wirtschaft_ws.json',
   './data/zug_reisezeiten.json',
   './data/zug_uic.json'
 ];

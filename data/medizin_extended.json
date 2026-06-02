@@ -1,0 +1,322 @@
+{
+  "Herz": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 300.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Cor",
+    "entdecker": null
+  },
+  "Leber": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 1500.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Hepar",
+    "entdecker": null
+  },
+  "Lunge": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 1100.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Pulmo",
+    "entdecker": null
+  },
+  "Gehirn": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 1400.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Cerebrum",
+    "entdecker": null
+  },
+  "Niere": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 150.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Ren",
+    "entdecker": null
+  },
+  "Milz": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 170.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Lien",
+    "entdecker": null
+  },
+  "Magen": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 150.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Gaster",
+    "entdecker": null
+  },
+  "Bauchspeicheldrüse": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 80.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Pancreas",
+    "entdecker": null
+  },
+  "Haut": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 5000.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Cutis",
+    "entdecker": null
+  },
+  "Schilddrüse": {
+    "kategorie": "Organ",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 25.0,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Glandula thyroidea",
+    "entdecker": null
+  },
+  "Oberschenkelknochen": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 250.0,
+    "anzahl_knochen": 2,
+    "lateinischer_begriff": "Femur",
+    "entdecker": null
+  },
+  "Schienbein": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 110.0,
+    "anzahl_knochen": 2,
+    "lateinischer_begriff": "Tibia",
+    "entdecker": null
+  },
+  "Schlüsselbein": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 70.0,
+    "anzahl_knochen": 2,
+    "lateinischer_begriff": "Clavicula",
+    "entdecker": null
+  },
+  "Schulterblatt": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 200.0,
+    "anzahl_knochen": 2,
+    "lateinischer_begriff": "Scapula",
+    "entdecker": null
+  },
+  "Steißbein": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 15.0,
+    "anzahl_knochen": 1,
+    "lateinischer_begriff": "Coccyx",
+    "entdecker": null
+  },
+  "Wadenbein": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 50.0,
+    "anzahl_knochen": 2,
+    "lateinischer_begriff": "Fibula",
+    "entdecker": null
+  },
+  "Speiche": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 60.0,
+    "anzahl_knochen": 2,
+    "lateinischer_begriff": "Radius",
+    "entdecker": null
+  },
+  "Elle": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 55.0,
+    "anzahl_knochen": 2,
+    "lateinischer_begriff": "Ulna",
+    "entdecker": null
+  },
+  "Brustbein": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 100.0,
+    "anzahl_knochen": 1,
+    "lateinischer_begriff": "Sternum",
+    "entdecker": null
+  },
+  "Entdeckung der Penicillin": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1928,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Penicillinum",
+    "entdecker": "Alexander Fleming"
+  },
+  "Erste Herzoperation": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1896,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Chirurgia cardiaca",
+    "entdecker": "Ludwig Rehn"
+  },
+  "Erste Herztransplantation": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1967,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Transplantatio cordis",
+    "entdecker": "Christiaan Barnard"
+  },
+  "Entdeckung der Röntgenstrahlen": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1895,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Radiatio Roentgeni",
+    "entdecker": "Wilhelm Conrad Röntgen"
+  },
+  "Entdeckung der DNA-Doppelhelix": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1953,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Acidi deoxyribonucleici structura",
+    "entdecker": "Watson und Crick"
+  },
+  "Erste Polio-Impfung": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1955,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Vaccinatio poliomyelitis",
+    "entdecker": "Jonas Salk"
+  },
+  "Entdeckung des Insulins": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1921,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Insulinum",
+    "entdecker": "Banting und Best"
+  },
+  "Erste In-vitro-Fertilisation": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1978,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Fertilisatio in vitro",
+    "entdecker": "Robert Edwards"
+  },
+  "Entdeckung der Blutgruppen": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1901,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Systema gruppi sanguinis",
+    "entdecker": "Karl Landsteiner"
+  },
+  "Erste erfolgreiche Nierentransplantation": {
+    "kategorie": "Meilenstein",
+    "jahr_entdeckung": 1954,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Transplantatio renis",
+    "entdecker": "Joseph Murray"
+  },
+  "Pest": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 541,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Pestis",
+    "entdecker": null
+  },
+  "Cholera": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1817,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Cholera",
+    "entdecker": "Robert Koch"
+  },
+  "Tuberkulose": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1882,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Tuberculosis",
+    "entdecker": "Robert Koch"
+  },
+  "Malaria": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1880,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Malaria",
+    "entdecker": "Charles Louis Alphonse Laveran"
+  },
+  "Alzheimer": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1906,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Morbus Alzheimer",
+    "entdecker": "Alois Alzheimer"
+  },
+  "Parkinson": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1817,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Morbus Parkinson",
+    "entdecker": "James Parkinson"
+  },
+  "Diabetes mellitus": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1552,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Diabetes mellitus",
+    "entdecker": null
+  },
+  "Influenza": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1580,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Influenza",
+    "entdecker": null
+  },
+  "HIV": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1983,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Immunodeficientia humana viralis",
+    "entdecker": "Luc Montagnier"
+  },
+  "Krebs": {
+    "kategorie": "Krankheit",
+    "jahr_entdeckung": 1761,
+    "gewicht_gramm": null,
+    "anzahl_knochen": null,
+    "lateinischer_begriff": "Carcinoma",
+    "entdecker": "Giovanni Battista Morgagni"
+  },
+  "Rippe": {
+    "kategorie": "Knochen",
+    "jahr_entdeckung": null,
+    "gewicht_gramm": 40.0,
+    "anzahl_knochen": 24,
+    "lateinischer_begriff": "Costa",
+    "entdecker": null
+  }
+}

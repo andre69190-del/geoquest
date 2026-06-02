@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 430. Phase 430: Wort-Schmiede für Literatur & Robotik/KI — ws_lit_protagonist (TINTENHERZ) + ws_robot_name (MASCHINENLERNEN). Neue Dateien: literatur_ws.json, robotik_ws.json. MODES: 859→861. verify: 155/155."
+git commit -m "Content: Phase 431. Phase 431: Kategorien Anatomie & Medizin + Wirtschaft & Marken. 13 neue Modi (6 Medizin, 7 Wirtschaft). Neue Dateien: medizin_extended.json (40), wirtschaft_extended.json (40), medizin_ws.json, wirtschaft_ws.json. MODES: 861→874. verify: 159/159."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

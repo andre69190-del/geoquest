@@ -2787,5 +2787,215 @@
         "year": 2020
       }
     ]
+  },
+  "med_meilensteine": {
+    "prompt": "Welcher Meilenstein kam zuerst?",
+    "items": [
+      {
+        "n": "Entdeckung der Röntgenstrahlen",
+        "year": 1895
+      },
+      {
+        "n": "Erste Herzoperation",
+        "year": 1896
+      },
+      {
+        "n": "Entdeckung der Blutgruppen",
+        "year": 1901
+      },
+      {
+        "n": "Entdeckung des Insulins",
+        "year": 1921
+      },
+      {
+        "n": "Entdeckung der Penicillin",
+        "year": 1928
+      },
+      {
+        "n": "Entdeckung der DNA-Doppelhelix",
+        "year": 1953
+      },
+      {
+        "n": "Erste erfolgreiche Nierentransplantation",
+        "year": 1954
+      },
+      {
+        "n": "Erste Polio-Impfung",
+        "year": 1955
+      },
+      {
+        "n": "Erste Herztransplantation",
+        "year": 1967
+      },
+      {
+        "n": "Erste In-vitro-Fertilisation",
+        "year": 1978
+      }
+    ]
+  },
+  "eco_gruendung": {
+    "prompt": "Welches Unternehmen wurde früher gegründet?",
+    "items": [
+      {
+        "n": "Siemens",
+        "year": 1847
+      },
+      {
+        "n": "Bayer",
+        "year": 1863
+      },
+      {
+        "n": "Heineken",
+        "year": 1864
+      },
+      {
+        "n": "HSBC",
+        "year": 1865
+      },
+      {
+        "n": "BASF",
+        "year": 1865
+      },
+      {
+        "n": "Nestlé",
+        "year": 1866
+      },
+      {
+        "n": "Ericsson",
+        "year": 1876
+      },
+      {
+        "n": "Bosch",
+        "year": 1886
+      },
+      {
+        "n": "Allianz",
+        "year": 1890
+      },
+      {
+        "n": "Philips",
+        "year": 1891
+      },
+      {
+        "n": "Roche",
+        "year": 1896
+      },
+      {
+        "n": "L'Oréal",
+        "year": 1909
+      },
+      {
+        "n": "BMW",
+        "year": 1916
+      },
+      {
+        "n": "Novo Nordisk",
+        "year": 1923
+      },
+      {
+        "n": "Mercedes-Benz",
+        "year": 1926
+      },
+      {
+        "n": "Volkswagen",
+        "year": 1937
+      },
+      {
+        "n": "Toyota",
+        "year": 1937
+      },
+      {
+        "n": "Samsung",
+        "year": 1938
+      },
+      {
+        "n": "Ferrari",
+        "year": 1939
+      },
+      {
+        "n": "Adidas",
+        "year": 1949
+      },
+      {
+        "n": "Kering",
+        "year": 1963
+      },
+      {
+        "n": "Airbus",
+        "year": 1970
+      },
+      {
+        "n": "SAP",
+        "year": 1972
+      },
+      {
+        "n": "Microsoft",
+        "year": 1975
+      },
+      {
+        "n": "Apple",
+        "year": 1976
+      },
+      {
+        "n": "ASML",
+        "year": 1984
+      },
+      {
+        "n": "Inditex",
+        "year": 1985
+      },
+      {
+        "n": "LVMH",
+        "year": 1987
+      },
+      {
+        "n": "ING Group",
+        "year": 1991
+      },
+      {
+        "n": "Amazon",
+        "year": 1994
+      },
+      {
+        "n": "CD Projekt",
+        "year": 1994
+      },
+      {
+        "n": "Novartis",
+        "year": 1996
+      },
+      {
+        "n": "Google",
+        "year": 1998
+      },
+      {
+        "n": "AstraZeneca",
+        "year": 1999
+      },
+      {
+        "n": "JPMorgan Chase",
+        "year": 2000
+      },
+      {
+        "n": "BNP Paribas",
+        "year": 2000
+      },
+      {
+        "n": "Tesla",
+        "year": 2003
+      },
+      {
+        "n": "Spotify",
+        "year": 2006
+      },
+      {
+        "n": "Zalando",
+        "year": 2008
+      },
+      {
+        "n": "Stellantis",
+        "year": 2021
+      }
+    ]
   }
 }
