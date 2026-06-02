@@ -11485,7 +11485,7 @@ S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
   const _isMpHost=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null&&S.mpRole!=="guest";
   const _isMpGuest=window.mpGameCh&&S.mpOpponent&&S.mpSeed!==null&&S.mpRole==="guest"; /* Phase 317/320: use S.mpRole */
   /* Phase 320: MP reveal delay extended to 5500ms so players can read both answers */
-  const _fd=(_isMpHost||_isMpGuest)?5500:(_qt==="iata"?4300:3400);
+  const _fd=(_isMpHost||_isMpGuest)?5500:(_qt==="iata"?2800:1800);
   fTo=setTimeout(()=>{
     if(_isMpGuest){return;} /* Phase 316: guest waits for NEXT_QUESTION from host */
     /* Phase 316: host signals advancement to guest */
