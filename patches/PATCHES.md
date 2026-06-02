@@ -208,3 +208,20 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | inline gen.py | 436 | WS Mythologie (PANTHEON+UNTERWELT) + WS Architektur (WOLKENKRATZER+FUNDAMENT) + hl_arch_laenge + timeline_arch_baujahr + myth_match_tier. 7 Modi. post_phase.py: landing.html Auto-Update. Substring-Fix: MYTH_WS/ARCHITEKTUR_WS vor MYTH/ARCH in Replace-Kette. verify: 165/165. MODES: 886→893 |
 
 | inline data/*.json | 437 | Datenbasis-Erweiterung: Serien 98→105, Filme 40→46, Musik 40→46, Webkultur 40→52, Wirtschaft 40→49. Enum-Fix Serien. Timeline eco+web refreshed. verify: 165/165 |
+
+## Phase 438 — Freizeitparks & Kunstgeschichte
+**Datum:** 2026-06-02
+**Modi:** 15 neue (hl_park_speed, hl_park_hoehe, hl_park_inversionen, hl_park_baujahr, park_match_land, park_match_kategorie, timeline_park_baujahr, ws_park_achterbahn, hl_kunst_jahr, hl_kunst_wert, kunst_match_kuenstler, kunst_match_epoche, kunst_match_museum, timeline_kunst_jahr, ws_kunst_renaissance)
+**Daten:** themeparks_extended.json (80), kunst_extended.json (54), themeparks_ws.json, kunst_ws.json
+**Total:** 908 Modi
+
+## Phase 440 — Hunderassen & Gartenbau
+**Datum:** 2026-06-02
+**Modi:** 14 neue (hl_hund_gewicht, hl_hund_alter, hl_hund_hoehe, hund_match_land, hund_match_kategorie, ws_hund_begleiter, ws_hund_welpe, hl_garten_hoehe, hl_garten_bluete, garten_match_wasser, garten_match_boden, garten_match_region, ws_garten_rhodo, ws_garten_strelitzie)
+**Daten:** hunde_extended.json (40), gartenbau_extended.json (40), hunde_ws.json, gartenbau_ws.json
+**Total:** 922 Modi
+
+## Phase 441 — Audit-Fixes (Build-Breaker + i18n)
+**Datum:** 2026-06-02
+**Fixes:** (1) Build-Breaker: ungültiger Unicode-Escape im Wort „gießen" (Modus garten_match_wasser, Phase 440) → JS-Syntaxfehler behoben (verify 172/173 → 173/173). (2) 13 fehlende PL-Übersetzungen in _CONTENT_I18N ergänzt (Film-/Musik-Kategorie: Regisseur, IMDb, Oscars, Grammys, Streams, Tonträger u.a.) → validate 0 Warnings.
+**Doku:** AUDIT-UMFANG (9 Dimensionen) in CLAUDE_SESSION_STARTER.md dokumentiert; GeoQuest_Audit_Phase438.md erstellt. verify 173/173, validate 74/74, check_session 15/15.

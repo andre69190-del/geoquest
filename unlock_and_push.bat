@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 437. Phase 437: Datenbasis-Erweiterung. Serien 98→105 (+7), Filme 40→46 (+6), Musik 40→46 (+6), Webkultur 40→52 (+12), Wirtschaft 40→49 (+9). Serien-Enum-Fix (Sci-Fi→Sci-Fi/Mystery, Vergangenheit→Historisch). Timeline eco+web refreshed. verify: 165/165. verify: 165/165."
+git commit -m "Content: Phase 441. Audit-Fixes: (1) Build-Breaker behoben — ungueltiger Unicode-Escape im Wort gießen (Modus garten_match_wasser), verify war 172/173 JS-Syntaxfehler. (2) 13 fehlende PL-Uebersetzungen in _CONTENT_I18N ergaenzt (Film-/Musik-Kategorie: Regisseur, IMDb, Oscars, Grammys, Streams, Tontraeger u.a.). verify 173/173, validate 74/74 0 Warnings, check_session 15/15.. verify: 173/173."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

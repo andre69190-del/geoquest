@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 437 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.56 MB | 893 Spielmodi | verify: 159/159 | data: 60 JSON
+**Version:** Phase 441 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.62 MB | 922 Spielmodi | verify: 159/159 | data: 60 JSON
 
 ---
 
@@ -1142,6 +1142,9 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **435** | patch_435.py | **Phase 435 (432-Fortsetzung): Kategorien Weltgeschichte & Imperien + Webkultur & Social Media. 12 neue Modi. 4 neue JSON-Dateien (je 40 Einträge). Generatoren, i18n DE/EN/PL, timeline. verify: 165/165. MODES: 874→886** |
 | **436** | patch_436.py | **Phase 436: WS Mythologie (PANTHEON, UNTERWELT) + WS Architektur (WOLKENKRATZER, FUNDAMENT) + hl_arch_laenge + timeline_arch_baujahr + myth_match_tier. 7 neue Modi. post_phase.py: landing.html Auto-Update. MODES: 886→893** |
 | **437** | patch_437.py | **Phase 437: Datenbasis-Erweiterung. Serien 98→105 (+7), Filme 40→46 (+6), Musik 40→46 (+6), Webkultur 40→52 (+12), Wirtschaft 40→49 (+9). Serien-Enum-Fix (Sci-Fi→Sci-Fi/Mystery, Vergangenheit→Historisch). Timeline eco+web refreshed. verify: 165/165** |
+| **438** | patch_438.py | **Freizeitparks & Kunstgeschichte: 15 neue Modi (HL, Match, Timeline, WS)** |
+| **440** | patch_440.py | **Hunderassen & Gartenbau: 14 neue Modi (HL, Match, WS)** |
+| **441** | patch_441.py | **Audit-Fixes: (1) Build-Breaker behoben — ungueltiger Unicode-Escape im Wort gießen (Modus garten_match_wasser), verify war 172/173 JS-Syntaxfehler. (2) 13 fehlende PL-Uebersetzungen in _CONTENT_I18N ergaenzt (Film-/Musik-Kategorie: Regisseur, IMDb, Oscars, Grammys, Streams, Tontraeger u.a.). verify 173/173, validate 74/74 0 Warnings, check_session 15/15.** |
 
 ---
 

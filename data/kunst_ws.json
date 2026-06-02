@@ -1,0 +1,112 @@
+{
+  "renaissance": {
+    "word": "RENAISSANCE",
+    "validWords": {
+      "de": [
+        "REISE",
+        "EINS",
+        "EINE",
+        "SEIN",
+        "REIN",
+        "SERIE",
+        "NASE",
+        "ARSEN",
+        "NASEN",
+        "RASSEN",
+        "NEIN",
+        "SIRENE",
+        "SINN",
+        "SINNE",
+        "ESSEN",
+        "INNERE",
+        "REINE",
+        "EINES",
+        "RASEN",
+        "REINES"
+      ],
+      "en": [
+        "RAINS",
+        "REINS",
+        "SIREN",
+        "INNER",
+        "INSANE",
+        "SINCE",
+        "CRANE",
+        "SCENE",
+        "SANER",
+        "NICE",
+        "RICE",
+        "RAIN",
+        "RAISE",
+        "RINSE",
+        "NICER",
+        "SEINE",
+        "ARCS",
+        "INANE"
+      ],
+      "pl": [
+        "REISE",
+        "EINS",
+        "SEIN",
+        "REIN",
+        "NASE",
+        "ARSEN",
+        "NASEN",
+        "NEIN",
+        "RASSEN",
+        "RASEN"
+      ]
+    }
+  },
+  "pinselstrich": {
+    "word": "PINSELSTRICH",
+    "validWords": {
+      "de": [
+        "PINSEL",
+        "STRICH",
+        "LIEST",
+        "LISTE",
+        "LINSE",
+        "REIST",
+        "PREIS",
+        "STERIL",
+        "LICHTER",
+        "LICHTE",
+        "TISCHE",
+        "RICHTEN",
+        "STRICHE",
+        "PREIST",
+        "LERNT",
+        "SPLINT",
+        "REIN",
+        "STEIN",
+        "SPRINT",
+        "TISCH",
+        "SPRIT"
+      ],
+      "en": [
+        "CHISEL",
+        "LITRE",
+        "SPLINE",
+        "TRENCH",
+        "STENCH",
+        "PRINTS",
+        "INSECT",
+        "PENCIL",
+        "PLIERS",
+        "SIREN",
+        "PRIEST",
+        "SLICE",
+        "NICER",
+        "STEIN"
+      ],
+      "pl": [
+        "PINSEL",
+        "LIEST",
+        "PREIS",
+        "LINSE",
+        "LISTE"
+      ]
+    }
+  }
+}

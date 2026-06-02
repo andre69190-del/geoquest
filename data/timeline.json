@@ -3848,5 +3848,95 @@
         "year": 2032
       }
     ]
+  },
+  "park_baujahr": {
+    "prompt": "Welcher Freizeitpark / welche Achterbahn ist älter?",
+    "items": [
+      {
+        "n": "Tivoli Gardens (DK)",
+        "year": 1843
+      },
+      {
+        "n": "Blackpool Pleasure Beach",
+        "year": 1896
+      },
+      {
+        "n": "Efteling (NL)",
+        "year": 1952
+      },
+      {
+        "n": "Europa-Park (DE)",
+        "year": 1975
+      },
+      {
+        "n": "Phantasialand (DE)",
+        "year": 1967
+      },
+      {
+        "n": "Disneyland (USA)",
+        "year": 1955
+      },
+      {
+        "n": "Cedar Point (USA)",
+        "year": 1870
+      },
+      {
+        "n": "Fuji-Q Highland (JP)",
+        "year": 1966
+      },
+      {
+        "n": "Heide Park (DE)",
+        "year": 1978
+      },
+      {
+        "n": "Movie Park Germany",
+        "year": 1996
+      }
+    ]
+  },
+  "kunst_jahr": {
+    "prompt": "Welches Kunstwerk ist älter?",
+    "items": [
+      {
+        "n": "Diskuswerfer (Myron)",
+        "year": -450
+      },
+      {
+        "n": "Venus von Milo",
+        "year": -100
+      },
+      {
+        "n": "Mona Lisa",
+        "year": 1503
+      },
+      {
+        "n": "Sixtinische Kapelle",
+        "year": 1512
+      },
+      {
+        "n": "Nachtwache (Rembrandt)",
+        "year": 1642
+      },
+      {
+        "n": "Sternennacht (van Gogh)",
+        "year": 1889
+      },
+      {
+        "n": "Guernica (Picasso)",
+        "year": 1937
+      },
+      {
+        "n": "Fountain (Duchamp)",
+        "year": 1917
+      },
+      {
+        "n": "The Scream (Munch)",
+        "year": 1893
+      },
+      {
+        "n": "Cloud Gate",
+        "year": 2006
+      }
+    ]
   }
 }

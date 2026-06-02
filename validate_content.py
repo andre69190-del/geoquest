@@ -839,6 +839,133 @@ def check_musik_extended(filename, data):
             if not isinstance(entry.get(field),str):
                 warn(filename,f"typ:{field}",name,f"{field} muss str sein")
 
+def check_themeparks_extended(filename, data):
+    """Validiert data/themeparks_extended.json (flaches Dict, 6 Felder)."""
+    REQUIRED = ['kategorie', 'baujahr', 'max_speed_kmh', 'max_hoehe_m',
+                'inversionen', 'park_land']
+    KAT_ENUM = {'Achterbahn', 'Wasserbahn', 'Darkride', 'Park'}
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'themeparks_extended.json muss ein Dict sein')
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, 'eintrag', name, 'Wert ist kein Dict'); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, 'pflichtfeld', name, f"Feld '{f}' fehlt")
+        kat = entry.get('kategorie')
+        if kat is not None and kat not in KAT_ENUM:
+            warn(filename, 'enum:kategorie', name, f"'{kat}' nicht erlaubt")
+        for float_f in ('max_speed_kmh', 'max_hoehe_m'):
+            v = entry.get(float_f)
+            if v is not None and not isinstance(v, (int, float)):
+                warn(filename, f'typ:{float_f}', name, f"Muss Float/null sein, ist {type(v).__name__}")
+        for int_f in ('baujahr', 'inversionen'):
+            v = entry.get(int_f)
+            if v is not None and not isinstance(v, int):
+                warn(filename, f'typ:{int_f}', name, f"Muss Int/null sein, ist {type(v).__name__}")
+
+
+def check_kunst_extended(filename, data):
+    """Validiert data/kunst_extended.json (flaches Dict, 6 Felder)."""
+    REQUIRED = ['kategorie', 'entstehungsjahr', 'schaetzwert_mio_usd',
+                'kuenstler', 'epoche', 'standort_museum']
+    KAT_ENUM = {'Gemälde', 'Skulptur', 'Installation'}
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'kunst_extended.json muss ein Dict sein')
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, 'eintrag', name, 'Wert ist kein Dict'); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, 'pflichtfeld', name, f"Feld '{f}' fehlt")
+        kat = entry.get('kategorie')
+        if kat is not None and kat not in KAT_ENUM:
+            warn(filename, 'enum:kategorie', name, f"'{kat}' nicht erlaubt")
+        v = entry.get('schaetzwert_mio_usd')
+        if v is not None and not isinstance(v, (int, float)):
+            warn(filename, 'typ:schaetzwert_mio_usd', name,
+                 f"Muss Float/null sein, ist {type(v).__name__}")
+        j = entry.get('entstehungsjahr')
+        if j is not None and not isinstance(j, int):
+            warn(filename, 'typ:entstehungsjahr', name,
+                 f"Muss Int (auch negativ) sein, ist {type(j).__name__}")
+
+
+def check_hunde_extended(filename, data):
+    """Validiert data/hunde_extended.json (flaches Dict, 6 Felder)."""
+    REQUIRED = ['kategorie', 'max_gewicht_kg', 'lebenserwartung_jahre',
+                'widerristhoehe_cm', 'ursprungsland', 'fci_gruppe']
+    KAT_ENUM = {'Huetehund', 'Begleithund', 'Jagdhund', 'Terrier', 'Molosser',
+                'Hütehund'}
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'hunde_extended.json muss ein Dict sein')
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, 'eintrag', name, 'Wert ist kein Dict'); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, 'pflichtfeld', name, "Feld '%s' fehlt" % f)
+        kat = entry.get('kategorie')
+        if kat is not None and kat not in KAT_ENUM:
+            warn(filename, 'enum:kategorie', name, "'%s' nicht erlaubt" % kat)
+        for float_f in ('max_gewicht_kg',):
+            v = entry.get(float_f)
+            if v is not None and not isinstance(v, (int, float)):
+                warn(filename, 'typ:' + float_f, name,
+                     'Muss Float sein, ist %s' % type(v).__name__)
+        for int_f in ('lebenserwartung_jahre', 'widerristhoehe_cm'):
+            v = entry.get(int_f)
+            if v is not None and not isinstance(v, int):
+                warn(filename, 'typ:' + int_f, name,
+                     'Muss Int sein, ist %s' % type(v).__name__)
+        fg = entry.get('fci_gruppe')
+        if fg is not None and not isinstance(fg, int):
+            warn(filename, 'typ:fci_gruppe', name,
+                 'Muss Int/null sein, ist %s' % type(fg).__name__)
+
+
+def check_gartenbau_extended(filename, data):
+    """Validiert data/gartenbau_extended.json (flaches Dict, 6 Felder)."""
+    REQUIRED = ['kategorie', 'max_wuchshoehe_cm', 'wasserbedarf',
+                'bodenanspruch', 'ursprungsregion', 'bluetezeit_start_monat']
+    KAT_ENUM   = {'Zierpflanze', 'Nutzpflanze', 'Baum', 'Strauch'}
+    WASSER_ENUM = {'Wenig', 'Mittel', 'Hoch'}
+    BODEN_ENUM  = {'Sauer', 'Neutral', 'Alkalisch', 'Tolerant'}
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'gartenbau_extended.json muss ein Dict sein')
+        return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename, 'eintrag', name, 'Wert ist kein Dict'); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, 'pflichtfeld', name, "Feld '%s' fehlt" % f)
+        kat = entry.get('kategorie')
+        if kat is not None and kat not in KAT_ENUM:
+            warn(filename, 'enum:kategorie', name, "'%s' nicht erlaubt" % kat)
+        w = entry.get('wasserbedarf')
+        if w is not None and w not in WASSER_ENUM:
+            warn(filename, 'enum:wasserbedarf', name, "'%s' nicht erlaubt" % w)
+        b = entry.get('bodenanspruch')
+        if b is not None and b not in BODEN_ENUM:
+            warn(filename, 'enum:bodenanspruch', name, "'%s' nicht erlaubt" % b)
+        v = entry.get('max_wuchshoehe_cm')
+        if v is not None and not isinstance(v, int):
+            warn(filename, 'typ:max_wuchshoehe_cm', name,
+                 'Muss Int sein, ist %s' % type(v).__name__)
+        m = entry.get('bluetezeit_start_monat')
+        if m is not None:
+            if not isinstance(m, int):
+                warn(filename, 'typ:bluetezeit_start_monat', name,
+                     'Muss Int/null sein, ist %s' % type(m).__name__)
+            elif not (1 <= m <= 12):
+                warn(filename, 'range:bluetezeit_start_monat', name,
+                     'Monat muss 1-12 sein, ist %d' % m)
+
+
 def check_autos_extended(filename, data):
     """Validiert data/autos_extended.json (flaches Dict, 22 Pflichtfelder)."""
     REQUIRED_FIELDS = [
@@ -977,6 +1104,14 @@ def detect_and_check(filename):
         check_serien_extended(filename, data)
     elif name == "musik_extended.json":
         check_musik_extended(filename, data)
+    elif name == "themeparks_extended.json":
+        check_themeparks_extended(filename, data)
+    elif name == "kunst_extended.json":
+        check_kunst_extended(filename, data)
+    elif name == "hunde_extended.json":
+        check_hunde_extended(filename, data)
+    elif name == "gartenbau_extended.json":
+        check_gartenbau_extended(filename, data)
     elif name == "autos_extended.json":
         check_autos_extended(filename, data)
     elif name == "konsolen.json":

@@ -1,0 +1,434 @@
+{
+  "Mona Lisa": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1503,
+    "schaetzwert_mio_usd": 860.0,
+    "kuenstler": "Leonardo da Vinci",
+    "epoche": "Renaissance",
+    "standort_museum": "Louvre, Paris"
+  },
+  "Sternennacht": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1889,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Vincent van Gogh",
+    "epoche": "Post-Impressionismus",
+    "standort_museum": "MoMA, New York"
+  },
+  "Das Mädchen mit dem Perlenohrring": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1665,
+    "schaetzwert_mio_usd": 37.4,
+    "kuenstler": "Johannes Vermeer",
+    "epoche": "Barock",
+    "standort_museum": "Mauritshuis, Den Haag"
+  },
+  "Guernica": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1937,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Pablo Picasso",
+    "epoche": "Kubismus",
+    "standort_museum": "Museo Reina Sofía, Madrid"
+  },
+  "Die Sixtinische Kapelle": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1512,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Michelangelo",
+    "epoche": "Renaissance",
+    "standort_museum": "Vatikan, Rom"
+  },
+  "Der Schrei": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1893,
+    "schaetzwert_mio_usd": 119.9,
+    "kuenstler": "Edvard Munch",
+    "epoche": "Expressionismus",
+    "standort_museum": "Nationalmuseum, Oslo"
+  },
+  "Wasserlilien": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1906,
+    "schaetzwert_mio_usd": 84.7,
+    "kuenstler": "Claude Monet",
+    "epoche": "Impressionismus",
+    "standort_museum": "Orangerie, Paris"
+  },
+  "Selbstporträt mit Bandage": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1889,
+    "schaetzwert_mio_usd": 71.5,
+    "kuenstler": "Vincent van Gogh",
+    "epoche": "Post-Impressionismus",
+    "standort_museum": "National Gallery of Art, Washington"
+  },
+  "Las Meninas": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1656,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Diego Velázquez",
+    "epoche": "Barock",
+    "standort_museum": "Prado, Madrid"
+  },
+  "Die Geburt der Venus": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1485,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Sandro Botticelli",
+    "epoche": "Renaissance",
+    "standort_museum": "Uffizien, Florenz"
+  },
+  "Der Kuss (Klimt)": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1908,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Gustav Klimt",
+    "epoche": "Jugendstil",
+    "standort_museum": "Österreichische Galerie Belvedere, Wien"
+  },
+  "Komposition VIII": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1923,
+    "schaetzwert_mio_usd": 23.3,
+    "kuenstler": "Wassily Kandinsky",
+    "epoche": "Abstrakte Kunst",
+    "standort_museum": "Guggenheim, New York"
+  },
+  "Schwarzes Quadrat": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1915,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Kasimir Malewitsch",
+    "epoche": "Suprematismus",
+    "standort_museum": "Tretjakow-Galerie, Moskau"
+  },
+  "Campbell's Soup Cans": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1962,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Andy Warhol",
+    "epoche": "Pop-Art",
+    "standort_museum": "MoMA, New York"
+  },
+  "Girl with Balloon": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 2002,
+    "schaetzwert_mio_usd": 1.0,
+    "kuenstler": "Banksy",
+    "epoche": "Street Art",
+    "standort_museum": "Diverse Standorte"
+  },
+  "Impression, Sonnenaufgang": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1872,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Claude Monet",
+    "epoche": "Impressionismus",
+    "standort_museum": "Musée Marmottan Monet, Paris"
+  },
+  "Tanz I": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1909,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Henri Matisse",
+    "epoche": "Fauvismus",
+    "standort_museum": "Hermitage, St. Petersburg"
+  },
+  "Drei Musiker": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1921,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Pablo Picasso",
+    "epoche": "Kubismus",
+    "standort_museum": "MoMA, New York"
+  },
+  "Bal du Moulin de la Galette": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1876,
+    "schaetzwert_mio_usd": 78.1,
+    "kuenstler": "Pierre-Auguste Renoir",
+    "epoche": "Impressionismus",
+    "standort_museum": "Musée d'Orsay, Paris"
+  },
+  "A Sunday on La Grande Jatte": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1886,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Georges Seurat",
+    "epoche": "Pointillismus",
+    "standort_museum": "Art Institute of Chicago"
+  },
+  "Nighthawks": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1942,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Edward Hopper",
+    "epoche": "Realismus",
+    "standort_museum": "Art Institute of Chicago"
+  },
+  "American Gothic": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1930,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Grant Wood",
+    "epoche": "Regionalismus",
+    "standort_museum": "Art Institute of Chicago"
+  },
+  "Das Abendmahl": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1498,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Leonardo da Vinci",
+    "epoche": "Renaissance",
+    "standort_museum": "Santa Maria delle Grazie, Mailand"
+  },
+  "Die Schule von Athen": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1511,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Raffael",
+    "epoche": "Renaissance",
+    "standort_museum": "Vatikanische Museen, Rom"
+  },
+  "Judith und Holofernes": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1614,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Artemisia Gentileschi",
+    "epoche": "Barock",
+    "standort_museum": "Uffizien, Florenz"
+  },
+  "Kreuzigung Petri": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1601,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Caravaggio",
+    "epoche": "Barock",
+    "standort_museum": "Santa Maria del Popolo, Rom"
+  },
+  "Die Nachtwache": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1642,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Rembrandt van Rijn",
+    "epoche": "Barock",
+    "standort_museum": "Rijksmuseum, Amsterdam"
+  },
+  "Sonnenblumen": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1888,
+    "schaetzwert_mio_usd": 39.9,
+    "kuenstler": "Vincent van Gogh",
+    "epoche": "Post-Impressionismus",
+    "standort_museum": "National Gallery, London"
+  },
+  "Der Sämann": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1888,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Vincent van Gogh",
+    "epoche": "Post-Impressionismus",
+    "standort_museum": "Kröller-Müller Museum"
+  },
+  "Frida Kahlo Selbstporträt": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1940,
+    "schaetzwert_mio_usd": 34.9,
+    "kuenstler": "Frida Kahlo",
+    "epoche": "Surrealismus",
+    "standort_museum": "Diverse Museen"
+  },
+  "Die Beständigkeit der Erinnerung": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1931,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Salvador Dalí",
+    "epoche": "Surrealismus",
+    "standort_museum": "MoMA, New York"
+  },
+  "Composition with Red Yellow and Blue": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1930,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Piet Mondrian",
+    "epoche": "De Stijl",
+    "standort_museum": "Tate Modern, London"
+  },
+  "No. 5, 1948": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1948,
+    "schaetzwert_mio_usd": 140.0,
+    "kuenstler": "Jackson Pollock",
+    "epoche": "Abstrakten Expressionismus",
+    "standort_museum": "Privatsammlung"
+  },
+  "Irises": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1889,
+    "schaetzwert_mio_usd": 53.9,
+    "kuenstler": "Vincent van Gogh",
+    "epoche": "Post-Impressionismus",
+    "standort_museum": "Getty Museum, Los Angeles"
+  },
+  "Orange, Red, Yellow": {
+    "kategorie": "Gemälde",
+    "entstehungsjahr": 1961,
+    "schaetzwert_mio_usd": 86.9,
+    "kuenstler": "Mark Rothko",
+    "epoche": "Abstrakten Expressionismus",
+    "standort_museum": "Privatsammlung"
+  },
+  "Venus von Milo": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": -100,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Unbekannt",
+    "epoche": "Antike",
+    "standort_museum": "Louvre, Paris"
+  },
+  "Davide (Michelangelo)": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 1504,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Michelangelo",
+    "epoche": "Renaissance",
+    "standort_museum": "Galleria dell'Accademia, Florenz"
+  },
+  "Der Denker": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 1904,
+    "schaetzwert_mio_usd": 15.0,
+    "kuenstler": "Auguste Rodin",
+    "epoche": "Impressionismus",
+    "standort_museum": "Musée Rodin, Paris"
+  },
+  "Diskuswerfer": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": -450,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Myron (Kopie)",
+    "epoche": "Antike",
+    "standort_museum": "Nationalgalerie, Rom"
+  },
+  "Nike von Samothrake": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": -200,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Unbekannt",
+    "epoche": "Hellenismus",
+    "standort_museum": "Louvre, Paris"
+  },
+  "Pieta": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 1499,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Michelangelo",
+    "epoche": "Renaissance",
+    "standort_museum": "Petersdom, Vatikan"
+  },
+  "Der Kuss (Rodin)": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 1889,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Auguste Rodin",
+    "epoche": "Realismus",
+    "standort_museum": "Musée Rodin, Paris"
+  },
+  "Terrakotta-Armee": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": -210,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Unbekannt",
+    "epoche": "Antike",
+    "standort_museum": "Xi'an, China"
+  },
+  "Balloon Dog": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 1994,
+    "schaetzwert_mio_usd": 58.4,
+    "kuenstler": "Jeff Koons",
+    "epoche": "Neo-Pop",
+    "standort_museum": "Diverse Ausstellungen"
+  },
+  "Cloud Gate (The Bean)": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 2006,
+    "schaetzwert_mio_usd": 23.0,
+    "kuenstler": "Anish Kapoor",
+    "epoche": "Zeitgenössisch",
+    "standort_museum": "Millennium Park, Chicago"
+  },
+  "Manneken Pis": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": 1619,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Hieronimus Duquesnoy",
+    "epoche": "Barock",
+    "standort_museum": "Brüssel"
+  },
+  "Laokoon-Gruppe": {
+    "kategorie": "Skulptur",
+    "entstehungsjahr": -25,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Agesander",
+    "epoche": "Antike",
+    "standort_museum": "Vatikanische Museen, Rom"
+  },
+  "Fountain (Duchamp)": {
+    "kategorie": "Installation",
+    "entstehungsjahr": 1917,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Marcel Duchamp",
+    "epoche": "Dadaismus",
+    "standort_museum": "Tate Modern, London"
+  },
+  "The Physical Impossibility of Death": {
+    "kategorie": "Installation",
+    "entstehungsjahr": 1991,
+    "schaetzwert_mio_usd": 12.0,
+    "kuenstler": "Damien Hirst",
+    "epoche": "Zeitgenössisch",
+    "standort_museum": "Metropolitan Museum, New York"
+  },
+  "Wrapped Reichstag": {
+    "kategorie": "Installation",
+    "entstehungsjahr": 1995,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Christo und Jeanne-Claude",
+    "epoche": "Zeitgenössisch",
+    "standort_museum": "Berlin (temporär)"
+  },
+  "The Weather Project": {
+    "kategorie": "Installation",
+    "entstehungsjahr": 2003,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Olafur Eliasson",
+    "epoche": "Zeitgenössisch",
+    "standort_museum": "Tate Modern, London"
+  },
+  "Infinity Mirrored Room": {
+    "kategorie": "Installation",
+    "entstehungsjahr": 1965,
+    "schaetzwert_mio_usd": 2.1,
+    "kuenstler": "Yayoi Kusama",
+    "epoche": "Zeitgenössisch",
+    "standort_museum": "Diverse Museen"
+  },
+  "The Gates": {
+    "kategorie": "Installation",
+    "entstehungsjahr": 2005,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Christo und Jeanne-Claude",
+    "epoche": "Zeitgenössisch",
+    "standort_museum": "Central Park, New York (temporär)"
+  },
+  "Four Seasons (Vivaldi)": {
+    "kategorie": "Installation",
+    "entstehungsjahr": 2020,
+    "schaetzwert_mio_usd": null,
+    "kuenstler": "Refik Anadol",
+    "epoche": "Digitale Kunst",
+    "standort_museum": "Diverse Ausstellungen"
+  }
+}

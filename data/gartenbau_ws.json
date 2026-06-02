@@ -1,0 +1,116 @@
+{
+  "rhododendron": {
+    "word": "RHODODENDRON",
+    "validWords": {
+      "de": [
+        "ORDEN",
+        "NORDEN",
+        "RONDO",
+        "DONNER",
+        "ORDNEN",
+        "DONOR",
+        "HONOR",
+        "RODEN",
+        "HORDE",
+        "HERD",
+        "NERD",
+        "DORNEN",
+        "DORN",
+        "OHR",
+        "HORN",
+        "NORD",
+        "DROHNEN",
+        "DROHNE",
+        "DOHNE",
+        "HODEN"
+      ],
+      "en": [
+        "DONOR",
+        "HONOR",
+        "HERON",
+        "DONER",
+        "RONDO",
+        "DRONE",
+        "DONNE",
+        "HORNED",
+        "NOONER",
+        "HONORE",
+        "REND",
+        "HERD",
+        "NERD",
+        "NODE",
+        "HORN",
+        "NORD"
+      ],
+      "pl": [
+        "ORDEN",
+        "NORDEN",
+        "DONOR",
+        "HORN",
+        "HERD",
+        "DORN",
+        "NORD",
+        "OHR",
+        "HORDE"
+      ]
+    }
+  },
+  "strelitzie": {
+    "word": "STRELITZIE",
+    "validWords": {
+      "de": [
+        "REIST",
+        "STIEL",
+        "STERIL",
+        "LIEST",
+        "LISTE",
+        "STEILE",
+        "ELITE",
+        "ZIERT",
+        "ZIEL",
+        "ZIELE",
+        "RITZE",
+        "TIERE",
+        "TIER",
+        "SITZ",
+        "SITZE",
+        "LITZE",
+        "SEITE",
+        "LEISTE",
+        "LETZTE",
+        "LETZT"
+      ],
+      "en": [
+        "LITERS",
+        "LISTER",
+        "RELIT",
+        "TILES",
+        "ELITES",
+        "STERIL",
+        "TITERS",
+        "STILE",
+        "SLIT",
+        "TILE",
+        "SITE",
+        "ZEST",
+        "RILE",
+        "ISLE",
+        "LEST",
+        "RITES",
+        "TRIES",
+        "TRITE"
+      ],
+      "pl": [
+        "STIEL",
+        "LIEST",
+        "LISTE",
+        "ZIEL",
+        "TIER",
+        "SITZ",
+        "SEITE",
+        "REIST",
+        "ELITE"
+      ]
+    }
+  }
+}

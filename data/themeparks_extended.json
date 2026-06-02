@@ -1,0 +1,642 @@
+{
+  "Europa-Park": {
+    "kategorie": "Park",
+    "baujahr": 1975,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Phantasialand": {
+    "kategorie": "Park",
+    "baujahr": 1967,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Heide Park": {
+    "kategorie": "Park",
+    "baujahr": 1978,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Movie Park Germany": {
+    "kategorie": "Park",
+    "baujahr": 1996,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Hansa-Park": {
+    "kategorie": "Park",
+    "baujahr": 1973,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Legoland Deutschland": {
+    "kategorie": "Park",
+    "baujahr": 2002,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Wiener Prater Wurstelprater": {
+    "kategorie": "Park",
+    "baujahr": 1766,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Österreich"
+  },
+  "Gardaland": {
+    "kategorie": "Park",
+    "baujahr": 1975,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Italien"
+  },
+  "PortAventura": {
+    "kategorie": "Park",
+    "baujahr": 1995,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Spanien"
+  },
+  "Disneyland Paris": {
+    "kategorie": "Park",
+    "baujahr": 1992,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Frankreich"
+  },
+  "Walt Disney World": {
+    "kategorie": "Park",
+    "baujahr": 1971,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Universal Studios Orlando": {
+    "kategorie": "Park",
+    "baujahr": 1990,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Disneyland California": {
+    "kategorie": "Park",
+    "baujahr": 1955,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Alton Towers": {
+    "kategorie": "Park",
+    "baujahr": 1980,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigtes Königreich"
+  },
+  "Tivoli Gardens": {
+    "kategorie": "Park",
+    "baujahr": 1843,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Dänemark"
+  },
+  "Tokyo Disneyland": {
+    "kategorie": "Park",
+    "baujahr": 1983,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Japan"
+  },
+  "Everland": {
+    "kategorie": "Park",
+    "baujahr": 1976,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Südkorea"
+  },
+  "Ocean Park Hong Kong": {
+    "kategorie": "Park",
+    "baujahr": 1977,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "China"
+  },
+  "Ferrari World Abu Dhabi": {
+    "kategorie": "Park",
+    "baujahr": 2010,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Arabische Emirate"
+  },
+  "Six Flags Magic Mountain": {
+    "kategorie": "Park",
+    "baujahr": 1971,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Blue Fire (Europa-Park)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2009,
+    "max_speed_kmh": 100.0,
+    "max_hoehe_m": 38.0,
+    "inversionen": 4,
+    "park_land": "Deutschland"
+  },
+  "Wodan – Timburcoaster": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2012,
+    "max_speed_kmh": 100.0,
+    "max_hoehe_m": 40.0,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Silver Star (Europa-Park)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2002,
+    "max_speed_kmh": 130.0,
+    "max_hoehe_m": 73.0,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Taron (Phantasialand)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2016,
+    "max_speed_kmh": 117.0,
+    "max_hoehe_m": 30.7,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Black Mamba (Phantasialand)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2006,
+    "max_speed_kmh": 80.0,
+    "max_hoehe_m": 38.0,
+    "inversionen": 4,
+    "park_land": "Deutschland"
+  },
+  "Colossos (Heide Park)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2001,
+    "max_speed_kmh": 110.0,
+    "max_hoehe_m": 63.0,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Flug der Dämonen (Heide Park)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2013,
+    "max_speed_kmh": 100.0,
+    "max_hoehe_m": 48.0,
+    "inversionen": 5,
+    "park_land": "Deutschland"
+  },
+  "Shambhala (PortAventura)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2012,
+    "max_speed_kmh": 134.0,
+    "max_hoehe_m": 76.0,
+    "inversionen": 0,
+    "park_land": "Spanien"
+  },
+  "Dragon Khan (PortAventura)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 1995,
+    "max_speed_kmh": 110.0,
+    "max_hoehe_m": 45.0,
+    "inversionen": 8,
+    "park_land": "Spanien"
+  },
+  "Nemesis (Alton Towers)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 1994,
+    "max_speed_kmh": 80.0,
+    "max_hoehe_m": 13.0,
+    "inversionen": 4,
+    "park_land": "Vereinigtes Königreich"
+  },
+  "The Smiler (Alton Towers)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2013,
+    "max_speed_kmh": 85.0,
+    "max_hoehe_m": 30.0,
+    "inversionen": 14,
+    "park_land": "Vereinigtes Königreich"
+  },
+  "Formula Rossa (Ferrari World)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2010,
+    "max_speed_kmh": 240.0,
+    "max_hoehe_m": 52.0,
+    "inversionen": 0,
+    "park_land": "Vereinigte Arabische Emirate"
+  },
+  "Kingda Ka (Six Flags)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2005,
+    "max_speed_kmh": 206.0,
+    "max_hoehe_m": 139.0,
+    "inversionen": 0,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Top Thrill Dragster": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2003,
+    "max_speed_kmh": 193.0,
+    "max_hoehe_m": 130.0,
+    "inversionen": 0,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Steel Vengeance": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2018,
+    "max_speed_kmh": 116.0,
+    "max_hoehe_m": 62.0,
+    "inversionen": 4,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Fury 325": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2015,
+    "max_speed_kmh": 152.0,
+    "max_hoehe_m": 99.0,
+    "inversionen": 0,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Millennium Force": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2000,
+    "max_speed_kmh": 150.0,
+    "max_hoehe_m": 94.0,
+    "inversionen": 0,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Twisted Colossus": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2015,
+    "max_speed_kmh": 90.0,
+    "max_hoehe_m": 49.0,
+    "inversionen": 2,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Intimidator 305": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2010,
+    "max_speed_kmh": 145.0,
+    "max_hoehe_m": 93.0,
+    "inversionen": 0,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Do-Dodonpa (Fuji-Q)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2017,
+    "max_speed_kmh": 180.0,
+    "max_hoehe_m": 51.0,
+    "inversionen": 0,
+    "park_land": "Japan"
+  },
+  "Takabisha (Fuji-Q)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2011,
+    "max_speed_kmh": 100.0,
+    "max_hoehe_m": 43.0,
+    "inversionen": 7,
+    "park_land": "Japan"
+  },
+  "T Express (Everland)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2008,
+    "max_speed_kmh": 104.0,
+    "max_hoehe_m": 56.0,
+    "inversionen": 0,
+    "park_land": "Südkorea"
+  },
+  "Behemoth (Canada's Wonderland)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2008,
+    "max_speed_kmh": 122.0,
+    "max_hoehe_m": 70.0,
+    "inversionen": 0,
+    "park_land": "Kanada"
+  },
+  "Leviathan (Canada's Wonderland)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2012,
+    "max_speed_kmh": 148.0,
+    "max_hoehe_m": 93.0,
+    "inversionen": 0,
+    "park_land": "Kanada"
+  },
+  "Phantom's Revenge (Kennywood)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2001,
+    "max_speed_kmh": 117.0,
+    "max_hoehe_m": 68.0,
+    "inversionen": 0,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Expedition GeForce (Holiday Park)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2001,
+    "max_speed_kmh": 120.0,
+    "max_hoehe_m": 62.0,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Hyperion (Energylandia)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2018,
+    "max_speed_kmh": 142.0,
+    "max_hoehe_m": 77.0,
+    "inversionen": 0,
+    "park_land": "Polen"
+  },
+  "Zadra (Energylandia)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2019,
+    "max_speed_kmh": 121.0,
+    "max_hoehe_m": 63.0,
+    "inversionen": 3,
+    "park_land": "Polen"
+  },
+  "Wildfire (Kolmården)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2016,
+    "max_speed_kmh": 112.0,
+    "max_hoehe_m": 56.0,
+    "inversionen": 3,
+    "park_land": "Schweden"
+  },
+  "Baron 1898 (Efteling)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2015,
+    "max_speed_kmh": 90.0,
+    "max_hoehe_m": 37.0,
+    "inversionen": 0,
+    "park_land": "Niederlande"
+  },
+  "Poseidon (Europa-Park)": {
+    "kategorie": "Wasserbahn",
+    "baujahr": 2000,
+    "max_speed_kmh": 70.0,
+    "max_hoehe_m": 20.0,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Chiapas (Phantasialand)": {
+    "kategorie": "Wasserbahn",
+    "baujahr": 2014,
+    "max_speed_kmh": 65.0,
+    "max_hoehe_m": 18.0,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Piraten in Batavia (Europa-Park)": {
+    "kategorie": "Wasserbahn",
+    "baujahr": 1987,
+    "max_speed_kmh": 25.0,
+    "max_hoehe_m": 10.0,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Krake Waterfall (Heide Park)": {
+    "kategorie": "Wasserbahn",
+    "baujahr": 1999,
+    "max_speed_kmh": 60.0,
+    "max_hoehe_m": 25.0,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Tutuki Splash (PortAventura)": {
+    "kategorie": "Wasserbahn",
+    "baujahr": 1995,
+    "max_speed_kmh": 70.0,
+    "max_hoehe_m": 21.0,
+    "inversionen": null,
+    "park_land": "Spanien"
+  },
+  "Ripsaw Falls (Universal Orlando)": {
+    "kategorie": "Wasserbahn",
+    "baujahr": 1999,
+    "max_speed_kmh": 65.0,
+    "max_hoehe_m": 15.0,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Shoot the Rapids (Cedar Point)": {
+    "kategorie": "Wasserbahn",
+    "baujahr": 2010,
+    "max_speed_kmh": 50.0,
+    "max_hoehe_m": 20.0,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Mack Dark Ride (Europa-Park)": {
+    "kategorie": "Darkride",
+    "baujahr": 2023,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Winja's Fear & Force (Phantasialand)": {
+    "kategorie": "Darkride",
+    "baujahr": 2003,
+    "max_speed_kmh": 75.0,
+    "max_hoehe_m": 21.0,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Mysteria (Europa-Park)": {
+    "kategorie": "Darkride",
+    "baujahr": 2019,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Harry Potter and the Forbidden Journey": {
+    "kategorie": "Darkride",
+    "baujahr": 2010,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Rise of the Resistance (Star Wars)": {
+    "kategorie": "Darkride",
+    "baujahr": 2019,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Haunted Mansion (Disney)": {
+    "kategorie": "Darkride",
+    "baujahr": 1969,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Pirates of the Caribbean (Disney)": {
+    "kategorie": "Darkride",
+    "baujahr": 1967,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  },
+  "Symbolica (Efteling)": {
+    "kategorie": "Darkride",
+    "baujahr": 2017,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Niederlande"
+  },
+  "Droomvlucht (Efteling)": {
+    "kategorie": "Darkride",
+    "baujahr": 1993,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Niederlande"
+  },
+  "Mack Rides Testtrack (Europa-Park)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2022,
+    "max_speed_kmh": 105.0,
+    "max_hoehe_m": 35.0,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Karacho (Tripsdrill)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2015,
+    "max_speed_kmh": 110.0,
+    "max_hoehe_m": 40.0,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Schwur des Kärnan (Hansa-Park)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2015,
+    "max_speed_kmh": 127.0,
+    "max_hoehe_m": 73.0,
+    "inversionen": 0,
+    "park_land": "Deutschland"
+  },
+  "Goliath (Walibi Holland)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2002,
+    "max_speed_kmh": 110.0,
+    "max_hoehe_m": 62.0,
+    "inversionen": 0,
+    "park_land": "Niederlande"
+  },
+  "Goudurix (Parc Astérix)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 1989,
+    "max_speed_kmh": 90.0,
+    "max_hoehe_m": 35.0,
+    "inversionen": 7,
+    "park_land": "Frankreich"
+  },
+  "Speed Monster (Tusenfryd)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2006,
+    "max_speed_kmh": 90.0,
+    "max_hoehe_m": 32.0,
+    "inversionen": 3,
+    "park_land": "Norwegen"
+  },
+  "Helix (Liseberg)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 2014,
+    "max_speed_kmh": 100.0,
+    "max_hoehe_m": 39.0,
+    "inversionen": 4,
+    "park_land": "Schweden"
+  },
+  "Lisebergbanan (Liseberg)": {
+    "kategorie": "Achterbahn",
+    "baujahr": 1987,
+    "max_speed_kmh": 75.0,
+    "max_hoehe_m": 23.0,
+    "inversionen": 0,
+    "park_land": "Schweden"
+  },
+  "Kondor (Efteling)": {
+    "kategorie": "Park",
+    "baujahr": 1994,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Niederlande"
+  },
+  "Energylandia": {
+    "kategorie": "Park",
+    "baujahr": 2014,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Polen"
+  },
+  "Liseberg": {
+    "kategorie": "Park",
+    "baujahr": 1923,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Schweden"
+  },
+  "Tripsdrill": {
+    "kategorie": "Park",
+    "baujahr": 1929,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Deutschland"
+  },
+  "Fuji-Q Highland": {
+    "kategorie": "Park",
+    "baujahr": 1969,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Japan"
+  },
+  "Cedar Point": {
+    "kategorie": "Park",
+    "baujahr": 1870,
+    "max_speed_kmh": null,
+    "max_hoehe_m": null,
+    "inversionen": null,
+    "park_land": "Vereinigte Staaten"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "begleithund": {
+    "word": "BEGLEITHUND",
+    "validWords": {
+      "de": [
+        "HUND",
+        "HUNDE",
+        "BILDUNG",
+        "LEITUNG",
+        "LEIDEN",
+        "TEILEN",
+        "GLEITEN",
+        "BLINDE",
+        "GILDE",
+        "HELDIN",
+        "BELEG",
+        "ELEND",
+        "LEGEND",
+        "BLUT",
+        "LUNGE",
+        "NEID",
+        "BEULE",
+        "HEILEN",
+        "BEUTEL",
+        "HEIDE"
+      ],
+      "en": [
+        "BUILD",
+        "BUILT",
+        "BLEND",
+        "BLUNT",
+        "LUNGE",
+        "GUIDE",
+        "GLIDE",
+        "UNTIL",
+        "LINED",
+        "INDUE",
+        "DUNITE",
+        "BELIE",
+        "ELIDE",
+        "HUNTED",
+        "BLUED",
+        "TILED",
+        "GUILD"
+      ],
+      "pl": [
+        "HUND",
+        "HUNDE",
+        "BILDUNG",
+        "LEIDEN",
+        "BLUT",
+        "LUNGE",
+        "HEIDE",
+        "NEID",
+        "ELEND"
+      ]
+    }
+  },
+  "welpenschule": {
+    "word": "WELPENSCHULE",
+    "validWords": {
+      "de": [
+        "WELPE",
+        "WELPEN",
+        "SCHULE",
+        "SCHULEN",
+        "SCHEUNE",
+        "LESEN",
+        "HEULEN",
+        "SPULE",
+        "SPULEN",
+        "PULS",
+        "LUPE",
+        "LUPEN",
+        "PECH",
+        "WELS",
+        "ESEL",
+        "ELCHE",
+        "PUSCHEN",
+        "PULEN",
+        "PULSE",
+        "WUNSCH"
+      ],
+      "en": [
+        "CLUES",
+        "LUNES",
+        "PULES",
+        "SHEWN",
+        "HELEN",
+        "PEELS",
+        "SLEEP",
+        "HELPS",
+        "PLUSH",
+        "SPLEEN",
+        "WHEELS",
+        "SLEW",
+        "LEECH",
+        "NEWEL",
+        "PENCE"
+      ],
+      "pl": [
+        "WELPE",
+        "WELPEN",
+        "SCHULE",
+        "LESEN",
+        "PULS",
+        "ESEL",
+        "WELS",
+        "PECH"
+      ]
+    }
+  }
+}

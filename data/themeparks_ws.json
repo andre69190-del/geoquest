@@ -1,0 +1,93 @@
+{
+  "achterbahn": {
+    "word": "ACHTERBAHN",
+    "validWords": {
+      "de": [
+        "ACHTER",
+        "ACHTEN",
+        "BAHN",
+        "BACH",
+        "RACHE",
+        "RECHT",
+        "RATEN",
+        "NACH",
+        "HABT",
+        "TRANCE",
+        "NAHER",
+        "BRACHTE",
+        "NACHT",
+        "BRATEN",
+        "BRACH",
+        "NAHE",
+        "ACHER",
+        "ACHT",
+        "ARCHE",
+        "NABE",
+        "RATE"
+      ],
+      "en": [
+        "RANCH",
+        "BRANCH",
+        "RANT",
+        "EARN",
+        "BATH",
+        "BRAN",
+        "CRANE",
+        "EACH",
+        "BEAN",
+        "TEACH",
+        "REACH",
+        "CHAR",
+        "ARCH",
+        "BARE",
+        "HARE",
+        "RATE",
+        "RACE",
+        "RETCH"
+      ],
+      "pl": [
+        "BAHN",
+        "NACH",
+        "RACHE",
+        "RECHT",
+        "RATEN"
+      ]
+    }
+  },
+  "looping": {
+    "word": "LOOPING",
+    "validWords": {
+      "de": [
+        "POLO",
+        "POOL",
+        "PING",
+        "PLING",
+        "PONG",
+        "LING",
+        "LOG",
+        "POL",
+        "PIN",
+        "NIL",
+        "GIN",
+        "POLIN",
+        "POLIO",
+        "PION",
+        "GON"
+      ],
+      "en": [
+        "POLO",
+        "POOL",
+        "LOOP",
+        "LION",
+        "PION",
+        "PING",
+        "LOGIN"
+      ],
+      "pl": [
+        "POLO",
+        "POOL",
+        "PING"
+      ]
+    }
+  }
+}

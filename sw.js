@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-cdf89f39';
+const CACHE_NAME = 'geoquest-dd3a30ed';
 /* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
   './GeoQuest.html',
@@ -24,6 +24,8 @@ const ASSETS = [
   './data/filme_extended.json',
   './data/games_extended.json',
   './data/gaming_hardware.json',
+  './data/gartenbau_extended.json',
+  './data/gartenbau_ws.json',
   './data/gastro_hl.json',
   './data/gastro_match.json',
   './data/gastro_pin.json',
@@ -34,8 +36,12 @@ const ASSETS = [
   './data/geo_ws.json',
   './data/geschichte_extended.json',
   './data/geschichte_ws.json',
+  './data/hunde_extended.json',
+  './data/hunde_ws.json',
   './data/konsolen.json',
   './data/kultur.json',
+  './data/kunst_extended.json',
+  './data/kunst_ws.json',
   './data/literatur_extended.json',
   './data/literatur_ws.json',
   './data/medizin_extended.json',
@@ -60,6 +66,8 @@ const ASSETS = [
   './data/tech_match.json',
   './data/tech_pin.json',
   './data/tech_ws.json',
+  './data/themeparks_extended.json',
+  './data/themeparks_ws.json',
   './data/tiere_hl.json',
   './data/tiere_match.json',
   './data/tiere_pin.json',

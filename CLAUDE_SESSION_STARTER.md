@@ -12,9 +12,9 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 437):
+Aktueller Stand (Stand: Phase 441):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
-- 893 Spielmodi in MODES-Array (gen.py)
+- 922 Spielmodi in MODES-Array (gen.py)
 - 53 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
 - Patch-System: patches/patch_NNN_description.py via run_patch.py
 - Zero-Bug-Policy: assert c.count(old)==1 vor jedem c.replace()
@@ -134,6 +134,23 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 - [ ] Fixes direkt anwenden (nicht nur beschreiben)
 - [ ] PHASE4XX_AUDIT.md erstellen mit Findings-Tabelle
 - [ ] PATCHES.md aktualisieren
+- [ ] **Vollständiger Umfang siehe Sektion „AUDIT-UMFANG" unten**
+
+---
+
+## AUDIT-UMFANG (was IMMER geprüft wird)
+
+Ein vollständiges Audit deckt diese 9 Dimensionen ab. Findings + angewandte Fixes in `PHASE<NNN>_AUDIT.md` (Tabelle: Befund · Schweregrad · Fix). Schweregrade: 🔴 kritisch · 🟠 mittel · 🟡 niedrig · ✅ ok.
+
+1. **Build-Integrität** — `python3 gen.py` läuft fehlerfrei · `verify.py` grün · `validate_content.py` 0 Warnings · `check_session.py` grün · GeoQuest.html == index.html · keine `PLACEHOLDER_`-Reste im HTML.
+2. **Sicherheit** — `esc()` in ALLEN innerHTML-Pfaden mit Nutzer-/Daten-Inhalt · kein `eval`/`new Function` mit Fremddaten · Prototype-Schutz (`hasOwnProperty`) · `JSON.parse`/`localStorage` in try/catch.
+3. **MODES-Konsistenz** — MODES ↔ MODE_CATS ↔ GEN-Dispatch deckungsgleich · keine doppelten `id:` · H/L-Inversions-Falle (`lowerWins:true`, wenn kleiner = besser).
+4. **Daten-Qualität** — alle Pflichtfelder · Enums gültig · Koordinaten plausibel (nicht 0/0, korrektes Land) · Cross-Validation (validate_content.py).
+5. **i18n** — KEINE hartkodierten deutschen UI-Strings (alles via `t()`/`_tc()`) · DE/EN/PL vollständig · neue Keys in allen Sprachen.
+6. **UX / Barrierefreiheit** — Touch-Targets ≥ 24px · lesbare Schriftgrößen (Labels nicht < ~10px) · interaktive Elemente tastatur-/ARIA-tauglich (`role`, `tabindex`, `aria-label`) · keine gequetschten/umbrechenden Layouts.
+7. **Performance** — GeoQuest.html-Größe & Parse-Last im Blick (Lazy-Loading erwägen, wenn Startzeit problematisch) · keine Endlos-Renders/Timer-Leaks.
+8. **Doku-Sync** — ARCHITECTURE/README/Konzept/Spielübersicht/Session-Starter aktuell (post_phase.py automatisch) · PATCHES.md-Eintrag vorhanden.
+9. **Toter / redundanter Code** — keine ungenutzten CSS-Klassen oder Duplikate (z.B. CSS gehört NUR in geoquest_css.txt) · alte Backups aufräumen.
 
 ### Immer am Ende — SCHNELLWEG
 ```bash
@@ -193,19 +210,19 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 437)
+## AKTUELLER PROJEKT-STATUS (Phase 441)
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **893** |
+| Spielmodi | **922** |
 | Fahrzeuge (autos_extended) | 431 |
 | Spiele (games_extended) | 70 |
 | Konsolen (konsolen.json) | 30 |
 | JSON-Datendateien | 47 |
 | gen.py Größe | ~1.53 MB |
 | GeoQuest.html Größe | ~5.5 MB |
-| verify.py | 165/165 ✓ |
-| validate_content.py | 66/66 ✓ 0 Warnings |
+| verify.py | 173/173 ✓ |
+| validate_content.py | 74/74 ✓ 0 Warnings |
 | Sprachen vollständig (de/en/pl) | ✓ |
 | Offline/PWA | ✓ |
 | iOS Timeline-Bug | ✅ gefixt (Phase 412) |
@@ -227,37 +244,4 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | hl_games_metacritic | Metacritic H/L |
 | hl_games_usk | Altersfreigabe USK H/L |
 | hl_games_sequel | Teile-Anzahl H/L |
-| hl_games_peak | Peak Concurrent Players H/L (Phase 402) |
-| hl_games_dev_lat | Studio-Breitengrad (nördlichstes Studio) H/L (Phase 402) |
-| games_match_protagonist | Erkenne den Protagonisten (Phase 410) |
-| games_match_pub_is_dev | Publisher = Developer? (Phase 410) |
-| hl_games_howlong | Spielzeit H/L — HowLongToBeat (Phase 410) |
-| games_match_esports | E-Sports-Szene? Ja/Nein (Phase 404) |
-| hl_games_pegi | PEGI-Rating H/L (Phase 404) |
-| hl_games_peak_year | Peak-Popularitätsjahr H/L (Phase 405) |
-| hl_games_publisher_lat | Publisher-Standort: Wer liegt nördlicher? (Phase 405) |
-| games_peak_year_mc | Hype-Jahr raten Multiple-Choice (Phase 405) |
-| games_baujahr_mc | Erscheinungsjahr Multiple-Choice |
-
----
-
-## UX-FEATURES (bereits implementiert ab Phase 408)
-
-| Feature | Status | Beschreibung |
-|---------|--------|-------------|
-| Kategorie-Rückkehr nach Exit | ✅ Phase 408 | `_exitToMenu()` öffnet automatisch die Kategorie des gespielten Modus |
-| "Zuletzt gespielt"-Leiste | ✅ Phase 409 | Letzte 5 Modi als Schnellstart über dem Akkordeon (`gq_recent`) |
-| Gespielt-Tracking | ✅ Phase 409 | `gq_played` in localStorage — welche Modi wurden je gespielt |
-| Fortschrittsbalken | ✅ Phase 409/410 | X/Y-Badge + Balken am Akkordeon-Header je Kategorie |
-| Favoriten-Pin | ✅ bereits vorhanden | ❤️-Button auf jeder Karte, `showFavorites()`-Filter |
-| Kategorie-Wisch-Leiste | ✅ Phase 420 | Kategorie-Nav als Carousel (`data-cat="_catnav"`), 4 Spalten × konfigurierbare Reihen (`geoquest_catnav_rows`, Standard 3), volle Namen statt Abkürzungen |
-| Kompaktere Spielkarten | ✅ Phase 421 | mode-card Padding/Radius reduziert, Icon 1.25rem, Info-Button 28px (CSS in `geoquest_css.txt`) |
-
-## SICHERHEITS-CHECKLISTE (nach Phase 401)
-
-| Thema | Status |
-|-------|--------|
-| XSS: alle `q.subj` in innerHTML via `esc()` | ✅ gefixt |
-| Zero-Trap: USK/pegi/sequel=0 erlaubt | ✅ gefixt |
-| Biased sort() eliminiert | ✅ gefixt |
-| Spread-Operator 
+| hl_games_peak | Peak Concurrent Players H/L (Phase 402)
