@@ -175,3 +175,6 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | (inline) gen.py direkt | 410 | 3 neue Modi: games_match_protagonist (Erkenne den Protagonist), games_match_pub_is_dev (Publisher=Developer?), hl_games_howlong (Spielzeit H/L). i18n +6. MODES: 774->777 |
 | (data) autos_extended.json | 411 | wendekreis_m (Wendekreis in m, 91/431 gefüllt) + zuladung_kg (Nutzlast in kg, 74/431 gefüllt) |
 | (inline) gen.py direkt | 411 | 2 neue Auto-Modi: hl_auto_wendekreis (lowerWins! Smart 8.75m bis F-150 14m), hl_auto_zuladung. i18n +4 Strings. MODES: 777->779 |
+
+| patch_412_fixes_new_modes.py | 412 | Bugfixes (handheld Ja/Nein, timeline_auto_bj, spieluebersicht Syntax-Fix) + 4 neue Konsolen-Modi (hl_ram/cpu, match_generation/land) + iOS Timeline-Bug (5 Fixes). MODES: 791→796 |
+| patch_413_regional_kultur.py | 413 | Neue Kategorie Regionale Kultur & Kulinarik: 30 D-A-CH Einträge, 6 Modi (Pin + 3 Match + 2 H/L), validate_content, i18n DE/EN/PL. MODES: 796→802 |

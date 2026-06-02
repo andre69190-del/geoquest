@@ -187,21 +187,22 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 402)
+## AKTUELLER PROJEKT-STATUS (Phase 412)
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **777** |
+| Spielmodi | **796** |
 | Fahrzeuge (autos_extended) | 431 |
 | Spiele (games_extended) | 70 |
-| JSON-Datendateien | 44 |
-| gen.py Größe | ~1.49 MB |
+| Konsolen (konsolen.json) | 30 |
+| JSON-Datendateien | 47 |
+| gen.py Größe | ~1.53 MB |
 | GeoQuest.html Größe | ~5.5 MB |
-| verify.py | 143/143 ✓ |
-| validate_content.py | 44/44 ✓ 0 Warnings |
+| verify.py | 145/145 ✓ |
+| validate_content.py | 46/46 ✓ 0 Warnings |
 | Sprachen vollständig (de/en/pl) | ✓ |
 | Offline/PWA | ✓ |
-| i18n-Schlüssel | 961 EN / 961 PL |
+| iOS Timeline-Bug | ✅ gefixt (Phase 412) |
 
 ### Gaming-Kategorie (Phase 360-402)
 | Modi-ID | Beschreibung |

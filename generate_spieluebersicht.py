@@ -463,11 +463,10 @@ def generate(phase=269, n_tests=90):
         H.append(row_html)
     H.append('</tbody></table></div>')
     H.append('<footer>GeoQuest Spielübersicht &mdash; auto-generiert aus gen.py</footer></body></html>')
-    html=''.join(H)
-    with open(OUT,'w',encoding='utf-8') as f:
+    html = '\n'.join(H)
+    with open(os.path.join(HERE, 'GeoQuest_Spielübersicht.html'), 'w', encoding='utf-8') as f:
         f.write(html)
-    return len(modes)
+    print(f"Written: GeoQuest_Spielübersicht.html ({len(rows)} Modi, auto)")
 
-if __name__=='__main__':
-    n=generate()
-    print(f'Written: {OUT} ({n} Modi)')
+if __name__ == '__main__':
+    main()

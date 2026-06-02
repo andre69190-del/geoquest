@@ -2540,5 +2540,56 @@
         "hint": "Quick Resume und Game Pass — MS setzt auf Services"
       }
     ]
+  },
+  "auto_bj": {
+    "prompt": "Sortiere die Autos nach Baujahr (ältestes zuerst)!",
+    "unit": "Jahr",
+    "items": [
+      {
+        "n": "Citroën 2CV",
+        "year": 1949,
+        "hint": "Baujahr 1949"
+      },
+      {
+        "n": "Chevrolet Corvette C1",
+        "year": 1953,
+        "hint": "Baujahr 1953"
+      },
+      {
+        "n": "Jaguar E-Type",
+        "year": 1961,
+        "hint": "Baujahr 1961"
+      },
+      {
+        "n": "Citroën SM",
+        "year": 1970,
+        "hint": "Baujahr 1970"
+      },
+      {
+        "n": "Renault 5 Turbo",
+        "year": 1980,
+        "hint": "Baujahr 1980"
+      },
+      {
+        "n": "Honda NSX",
+        "year": 1990,
+        "hint": "Baujahr 1990"
+      },
+      {
+        "n": "SEAT Ibiza Cupra",
+        "year": 2000,
+        "hint": "Baujahr 2000"
+      },
+      {
+        "n": "Mercedes-Benz SLS AMG",
+        "year": 2010,
+        "hint": "Baujahr 2010"
+      },
+      {
+        "n": "Toyota GR Yaris",
+        "year": 2020,
+        "hint": "Baujahr 2020"
+      }
+    ]
   }
 }

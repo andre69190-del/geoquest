@@ -491,6 +491,33 @@ def check_i18n():
 
 
 
+
+def check_regional_extended(filename, data):
+    REQUIRED = ["kategorie","land","region","ort","lat","lng",
+                "saison_start_monat","basis_zutat","alkoholgehalt","brauchtum_monat"]
+    KAT  = {"Speise","Getränk","Wein","Brauchtum"}
+    LAND = {"Deutschland","Österreich","Schweiz"}
+    for name, entry in data.items():
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename, name, f, "Pflichtfeld fehlt")
+        k = entry.get("kategorie")
+        if k and k not in KAT:
+            warn(filename, name, "kategorie", f"Unbekannte kategorie: {k!r}")
+        l = entry.get("land")
+        if l and l not in LAND:
+            warn(filename, name, "land", f"Unbekanntes land: {l!r}")
+        m = entry.get("saison_start_monat")
+        if m is not None and not (1 <= m <= 12):
+            warn(filename, name, "saison_start_monat", f"Außerhalb 1-12: {m}")
+        bm = entry.get("brauchtum_monat")
+        if k == "Brauchtum" and bm is None:
+            warn(filename, name, "brauchtum_monat", "Brauchtum braucht brauchtum_monat")
+        lat = entry.get("lat",0)
+        lng = entry.get("lng",0)
+        if lat == 0.0 or lng == 0.0:
+            warn(filename, name, "lat/lng", "Koordinaten sind 0.0")
+
 def check_konsolen(filename, data):
     REQUIRED = [
         "hersteller", "erscheinungsjahr", "eingestellt_jahr", "generation",
@@ -710,6 +737,8 @@ def detect_and_check(filename):
         check_autos_extended(filename, data)
     elif name == "konsolen.json":
         check_konsolen(filename, data)
+    elif name == "regional_extended.json":
+        check_regional_extended(filename, data)
     elif name == "timeline.json":
         for key, block in (data.items() if isinstance(data, dict) else {}.items()):
             if not isinstance(block, dict):
