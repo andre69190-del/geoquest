@@ -1,0 +1,92 @@
+{
+  "yellowstone": {
+    "word": "YELLOWSTONE",
+    "validWords": {
+      "de": [
+        "LENS",
+        "LOTS",
+        "LOWE",
+        "LOWES",
+        "NOELL",
+        "OLES",
+        "SLOT",
+        "SNOW",
+        "SOLO",
+        "STOLE",
+        "STOLLEN",
+        "STONE",
+        "TOLL",
+        "TOLLE",
+        "TONE",
+        "TONES",
+        "TOWN",
+        "TOWNS",
+        "WELL",
+        "WELLE",
+        "WELLEN",
+        "WELLS",
+        "WELT",
+        "WOLLT",
+        "YELL",
+        "YELLS"
+      ],
+      "en": [
+        "STONE",
+        "TOWN",
+        "WELL",
+        "YELL",
+        "TONE",
+        "LENS",
+        "STOLE",
+        "ONES",
+        "SNOW",
+        "LOWLY"
+      ],
+      "pl": [
+        "LOWY",
+        "TONY",
+        "ONES",
+        "OLES"
+      ]
+    }
+  },
+  "serengeti": {
+    "word": "SERENGETI",
+    "validWords": {
+      "de": [
+        "GENRE",
+        "GERNE",
+        "GIER",
+        "GRIES",
+        "NEGER",
+        "REGEN",
+        "RENTE",
+        "RISEN",
+        "SEGEN",
+        "SEITE",
+        "STEIN",
+        "STERN",
+        "STIEG",
+        "TIGER",
+        "TREISE"
+      ],
+      "en": [
+        "TIGER",
+        "STERN",
+        "GENIE",
+        "GENE",
+        "TEENS",
+        "GREET",
+        "GENRE",
+        "STING",
+        "RESIGN"
+      ],
+      "pl": [
+        "STEIN",
+        "TIGER",
+        "GENE",
+        "SERIN"
+      ]
+    }
+  }
+}

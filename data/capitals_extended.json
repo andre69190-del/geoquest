@@ -1,0 +1,802 @@
+{
+  "Berlin": {
+    "land": "Deutschland",
+    "kontinent": "Europa",
+    "einwohner_mio": 3.7,
+    "hoehe_m": 34,
+    "lat": 52.52,
+    "lng": 13.41,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 52.52
+  },
+  "Paris": {
+    "land": "Frankreich",
+    "kontinent": "Europa",
+    "einwohner_mio": 2.1,
+    "hoehe_m": 35,
+    "lat": 48.85,
+    "lng": 2.35,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 48.85
+  },
+  "London": {
+    "land": "Vereinigtes Königreich",
+    "kontinent": "Europa",
+    "einwohner_mio": 9.0,
+    "hoehe_m": 11,
+    "lat": 51.51,
+    "lng": -0.13,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 51.51
+  },
+  "Madrid": {
+    "land": "Spanien",
+    "kontinent": "Europa",
+    "einwohner_mio": 3.3,
+    "hoehe_m": 667,
+    "lat": 40.42,
+    "lng": -3.7,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 40.42
+  },
+  "Rom": {
+    "land": "Italien",
+    "kontinent": "Europa",
+    "einwohner_mio": 2.9,
+    "hoehe_m": 21,
+    "lat": 41.9,
+    "lng": 12.5,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 41.9
+  },
+  "Wien": {
+    "land": "Österreich",
+    "kontinent": "Europa",
+    "einwohner_mio": 1.9,
+    "hoehe_m": 151,
+    "lat": 48.21,
+    "lng": 16.37,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 48.21
+  },
+  "Warschau": {
+    "land": "Polen",
+    "kontinent": "Europa",
+    "einwohner_mio": 1.8,
+    "hoehe_m": 113,
+    "lat": 52.23,
+    "lng": 21.01,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 52.23
+  },
+  "Prag": {
+    "land": "Tschechien",
+    "kontinent": "Europa",
+    "einwohner_mio": 1.3,
+    "hoehe_m": 231,
+    "lat": 50.09,
+    "lng": 14.43,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 50.09
+  },
+  "Budapest": {
+    "land": "Ungarn",
+    "kontinent": "Europa",
+    "einwohner_mio": 1.7,
+    "hoehe_m": 96,
+    "lat": 47.5,
+    "lng": 19.05,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 47.5
+  },
+  "Stockholm": {
+    "land": "Schweden",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.97,
+    "hoehe_m": 28,
+    "lat": 59.33,
+    "lng": 18.07,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 59.33
+  },
+  "Oslo": {
+    "land": "Norwegen",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.7,
+    "hoehe_m": 23,
+    "lat": 59.91,
+    "lng": 10.75,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 59.91
+  },
+  "Kopenhagen": {
+    "land": "Dänemark",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.79,
+    "hoehe_m": 5,
+    "lat": 55.68,
+    "lng": 12.57,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 55.68
+  },
+  "Helsinki": {
+    "land": "Finnland",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.66,
+    "hoehe_m": 26,
+    "lat": 60.17,
+    "lng": 24.94,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 60.17
+  },
+  "Lissabon": {
+    "land": "Portugal",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.55,
+    "hoehe_m": 77,
+    "lat": 38.72,
+    "lng": -9.14,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 38.72
+  },
+  "Athen": {
+    "land": "Griechenland",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.66,
+    "hoehe_m": 70,
+    "lat": 37.98,
+    "lng": 23.73,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 37.98
+  },
+  "Brüssel": {
+    "land": "Belgien",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.18,
+    "hoehe_m": 56,
+    "lat": 50.85,
+    "lng": 4.35,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 50.85
+  },
+  "Amsterdam": {
+    "land": "Niederlande",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.87,
+    "hoehe_m": -2,
+    "lat": 52.37,
+    "lng": 4.9,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 52.37
+  },
+  "Bern": {
+    "land": "Schweiz",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.14,
+    "hoehe_m": 542,
+    "lat": 46.95,
+    "lng": 7.44,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 46.95
+  },
+  "Tokio": {
+    "land": "Japan",
+    "kontinent": "Asien",
+    "einwohner_mio": 13.96,
+    "hoehe_m": 44,
+    "lat": 35.69,
+    "lng": 139.69,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 35.69
+  },
+  "Peking": {
+    "land": "China",
+    "kontinent": "Asien",
+    "einwohner_mio": 21.54,
+    "hoehe_m": 43,
+    "lat": 39.91,
+    "lng": 116.39,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 39.91
+  },
+  "Neu-Delhi": {
+    "land": "Indien",
+    "kontinent": "Asien",
+    "einwohner_mio": 32.94,
+    "hoehe_m": 216,
+    "lat": 28.61,
+    "lng": 77.21,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 28.61
+  },
+  "Seoul": {
+    "land": "Südkorea",
+    "kontinent": "Asien",
+    "einwohner_mio": 9.99,
+    "hoehe_m": 38,
+    "lat": 37.57,
+    "lng": 126.98,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 37.57
+  },
+  "Jakarta": {
+    "land": "Indonesien",
+    "kontinent": "Asien",
+    "einwohner_mio": 10.56,
+    "hoehe_m": 8,
+    "lat": -6.21,
+    "lng": 106.85,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 6.21
+  },
+  "Bangkok": {
+    "land": "Thailand",
+    "kontinent": "Asien",
+    "einwohner_mio": 10.72,
+    "hoehe_m": 2,
+    "lat": 13.75,
+    "lng": 100.52,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 13.75
+  },
+  "Teheran": {
+    "land": "Iran",
+    "kontinent": "Asien",
+    "einwohner_mio": 9.13,
+    "hoehe_m": 1200,
+    "lat": 35.69,
+    "lng": 51.39,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 35.69
+  },
+  "Bagdad": {
+    "land": "Irak",
+    "kontinent": "Asien",
+    "einwohner_mio": 7.71,
+    "hoehe_m": 34,
+    "lat": 33.34,
+    "lng": 44.4,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 33.34
+  },
+  "Riad": {
+    "land": "Saudi-Arabien",
+    "kontinent": "Asien",
+    "einwohner_mio": 7.68,
+    "hoehe_m": 613,
+    "lat": 24.69,
+    "lng": 46.72,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 24.69
+  },
+  "Singapur": {
+    "land": "Singapur",
+    "kontinent": "Asien",
+    "einwohner_mio": 5.69,
+    "hoehe_m": 15,
+    "lat": 1.35,
+    "lng": 103.82,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 1.35
+  },
+  "Kuala Lumpur": {
+    "land": "Malaysia",
+    "kontinent": "Asien",
+    "einwohner_mio": 1.79,
+    "hoehe_m": 62,
+    "lat": 3.14,
+    "lng": 101.69,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 3.14
+  },
+  "Manila": {
+    "land": "Philippinen",
+    "kontinent": "Asien",
+    "einwohner_mio": 1.78,
+    "hoehe_m": 16,
+    "lat": 14.6,
+    "lng": 120.98,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 14.6
+  },
+  "Dhaka": {
+    "land": "Bangladesch",
+    "kontinent": "Asien",
+    "einwohner_mio": 10.27,
+    "hoehe_m": 4,
+    "lat": 23.72,
+    "lng": 90.41,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 23.72
+  },
+  "Kabul": {
+    "land": "Afghanistan",
+    "kontinent": "Asien",
+    "einwohner_mio": 4.63,
+    "hoehe_m": 1791,
+    "lat": 34.53,
+    "lng": 69.17,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 34.53
+  },
+  "Kathmandu": {
+    "land": "Nepal",
+    "kontinent": "Asien",
+    "einwohner_mio": 1.47,
+    "hoehe_m": 1400,
+    "lat": 27.71,
+    "lng": 85.32,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 27.71
+  },
+  "Taschkent": {
+    "land": "Usbekistan",
+    "kontinent": "Asien",
+    "einwohner_mio": 2.59,
+    "hoehe_m": 455,
+    "lat": 41.3,
+    "lng": 69.27,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 41.3
+  },
+  "Islamabad": {
+    "land": "Pakistan",
+    "kontinent": "Asien",
+    "einwohner_mio": 1.01,
+    "hoehe_m": 507,
+    "lat": 33.72,
+    "lng": 73.04,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 33.72
+  },
+  "Colombo": {
+    "land": "Sri Lanka",
+    "kontinent": "Asien",
+    "einwohner_mio": 0.75,
+    "hoehe_m": 7,
+    "lat": 6.93,
+    "lng": 79.85,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 6.93
+  },
+  "Amman": {
+    "land": "Jordanien",
+    "kontinent": "Asien",
+    "einwohner_mio": 4.01,
+    "hoehe_m": 773,
+    "lat": 31.95,
+    "lng": 35.93,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 31.95
+  },
+  "Astana": {
+    "land": "Kasachstan",
+    "kontinent": "Asien",
+    "einwohner_mio": 1.23,
+    "hoehe_m": 347,
+    "lat": 51.18,
+    "lng": 71.45,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 51.18
+  },
+  "Kairo": {
+    "land": "Ägypten",
+    "kontinent": "Afrika",
+    "einwohner_mio": 10.11,
+    "hoehe_m": 23,
+    "lat": 30.05,
+    "lng": 31.25,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 30.05
+  },
+  "Lagos": {
+    "land": "Nigeria",
+    "kontinent": "Afrika",
+    "einwohner_mio": 14.36,
+    "hoehe_m": 41,
+    "lat": 6.45,
+    "lng": 3.39,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 6.45
+  },
+  "Kinshasa": {
+    "land": "Demokratische Republik Kongo",
+    "kontinent": "Afrika",
+    "einwohner_mio": 17.07,
+    "hoehe_m": 312,
+    "lat": -4.32,
+    "lng": 15.32,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 4.32
+  },
+  "Nairobi": {
+    "land": "Kenia",
+    "kontinent": "Afrika",
+    "einwohner_mio": 4.4,
+    "hoehe_m": 1795,
+    "lat": -1.29,
+    "lng": 36.82,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 1.29
+  },
+  "Johannesburg": {
+    "land": "Südafrika",
+    "kontinent": "Afrika",
+    "einwohner_mio": 5.78,
+    "hoehe_m": 1753,
+    "lat": -26.2,
+    "lng": 28.04,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 26.2
+  },
+  "Addis Abeba": {
+    "land": "Äthiopien",
+    "kontinent": "Afrika",
+    "einwohner_mio": 5.01,
+    "hoehe_m": 2355,
+    "lat": 9.02,
+    "lng": 38.75,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 9.02
+  },
+  "Dar es Salaam": {
+    "land": "Tansania",
+    "kontinent": "Afrika",
+    "einwohner_mio": 7.4,
+    "hoehe_m": 55,
+    "lat": -6.8,
+    "lng": 39.27,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 6.8
+  },
+  "Luanda": {
+    "land": "Angola",
+    "kontinent": "Afrika",
+    "einwohner_mio": 8.33,
+    "hoehe_m": 67,
+    "lat": -8.84,
+    "lng": 13.23,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 8.84
+  },
+  "Khartum": {
+    "land": "Sudan",
+    "kontinent": "Afrika",
+    "einwohner_mio": 7.28,
+    "hoehe_m": 376,
+    "lat": 15.55,
+    "lng": 32.53,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 15.55
+  },
+  "Accra": {
+    "land": "Ghana",
+    "kontinent": "Afrika",
+    "einwohner_mio": 2.27,
+    "hoehe_m": 61,
+    "lat": 5.56,
+    "lng": -0.2,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 5.56
+  },
+  "Rabat": {
+    "land": "Marokko",
+    "kontinent": "Afrika",
+    "einwohner_mio": 0.58,
+    "hoehe_m": 75,
+    "lat": 34.01,
+    "lng": -6.85,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 34.01
+  },
+  "Kampala": {
+    "land": "Uganda",
+    "kontinent": "Afrika",
+    "einwohner_mio": 3.63,
+    "hoehe_m": 1189,
+    "lat": 0.35,
+    "lng": 32.58,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 0.35
+  },
+  "Harare": {
+    "land": "Simbabwe",
+    "kontinent": "Afrika",
+    "einwohner_mio": 1.56,
+    "hoehe_m": 1490,
+    "lat": -17.83,
+    "lng": 31.05,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 17.83
+  },
+  "Windhoek": {
+    "land": "Namibia",
+    "kontinent": "Afrika",
+    "einwohner_mio": 0.43,
+    "hoehe_m": 1728,
+    "lat": -22.56,
+    "lng": 17.08,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 22.56
+  },
+  "Gaborone": {
+    "land": "Botswana",
+    "kontinent": "Afrika",
+    "einwohner_mio": 0.27,
+    "hoehe_m": 994,
+    "lat": -24.65,
+    "lng": 25.91,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 24.65
+  },
+  "Dakar": {
+    "land": "Senegal",
+    "kontinent": "Afrika",
+    "einwohner_mio": 3.77,
+    "hoehe_m": 22,
+    "lat": 14.72,
+    "lng": -17.47,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 14.72
+  },
+  "Washington D.C.": {
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 0.68,
+    "hoehe_m": 8,
+    "lat": 38.9,
+    "lng": -77.04,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 38.9
+  },
+  "Ottawa": {
+    "land": "Kanada",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 1.02,
+    "hoehe_m": 70,
+    "lat": 45.42,
+    "lng": -75.7,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 45.42
+  },
+  "Mexiko-Stadt": {
+    "land": "Mexiko",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 9.21,
+    "hoehe_m": 2240,
+    "lat": 19.43,
+    "lng": -99.13,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 19.43
+  },
+  "Havanna": {
+    "land": "Kuba",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 2.13,
+    "hoehe_m": 59,
+    "lat": 23.13,
+    "lng": -82.38,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 23.13
+  },
+  "Guatemala-Stadt": {
+    "land": "Guatemala",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 1.1,
+    "hoehe_m": 1529,
+    "lat": 14.64,
+    "lng": -90.51,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 14.64
+  },
+  "San José": {
+    "land": "Costa Rica",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 0.34,
+    "hoehe_m": 1172,
+    "lat": 9.93,
+    "lng": -84.08,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 9.93
+  },
+  "Nassau": {
+    "land": "Bahamas",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 0.28,
+    "hoehe_m": 4,
+    "lat": 25.05,
+    "lng": -77.35,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 25.05
+  },
+  "Kingston": {
+    "land": "Jamaika",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 0.59,
+    "hoehe_m": 0,
+    "lat": 18.0,
+    "lng": -76.79,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 18.0
+  },
+  "Panama-Stadt": {
+    "land": "Panama",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 0.88,
+    "hoehe_m": 37,
+    "lat": 8.99,
+    "lng": -79.52,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 8.99
+  },
+  "Managua": {
+    "land": "Nicaragua",
+    "kontinent": "Nordamerika",
+    "einwohner_mio": 1.07,
+    "hoehe_m": 82,
+    "lat": 12.13,
+    "lng": -86.29,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 12.13
+  },
+  "Brasília": {
+    "land": "Brasilien",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 3.04,
+    "hoehe_m": 1172,
+    "lat": -15.77,
+    "lng": -47.93,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 15.77
+  },
+  "Buenos Aires": {
+    "land": "Argentinien",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 3.08,
+    "hoehe_m": 25,
+    "lat": -34.6,
+    "lng": -58.38,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 34.6
+  },
+  "Lima": {
+    "land": "Peru",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 10.55,
+    "hoehe_m": 154,
+    "lat": -12.05,
+    "lng": -77.04,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 12.05
+  },
+  "Bogotá": {
+    "land": "Kolumbien",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 7.74,
+    "hoehe_m": 2625,
+    "lat": 4.71,
+    "lng": -74.07,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 4.71
+  },
+  "Santiago": {
+    "land": "Chile",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 5.61,
+    "hoehe_m": 520,
+    "lat": -33.46,
+    "lng": -70.65,
+    "grossstadt": "Megastadt",
+    "dist_aequator": 33.46
+  },
+  "Montevideo": {
+    "land": "Uruguay",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 1.32,
+    "hoehe_m": 43,
+    "lat": -34.9,
+    "lng": -56.19,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 34.9
+  },
+  "Caracas": {
+    "land": "Venezuela",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 2.9,
+    "hoehe_m": 900,
+    "lat": 10.49,
+    "lng": -66.88,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 10.49
+  },
+  "Quito": {
+    "land": "Ecuador",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 1.88,
+    "hoehe_m": 2850,
+    "lat": -0.22,
+    "lng": -78.51,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 0.22
+  },
+  "Canberra": {
+    "land": "Australien",
+    "kontinent": "Ozeanien",
+    "einwohner_mio": 0.45,
+    "hoehe_m": 578,
+    "lat": -35.28,
+    "lng": 149.13,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 35.28
+  },
+  "Wellington": {
+    "land": "Neuseeland",
+    "kontinent": "Ozeanien",
+    "einwohner_mio": 0.21,
+    "hoehe_m": 126,
+    "lat": -41.29,
+    "lng": 174.78,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 41.29
+  },
+  "Suva": {
+    "land": "Fidschi",
+    "kontinent": "Ozeanien",
+    "einwohner_mio": 0.09,
+    "hoehe_m": 6,
+    "lat": -18.14,
+    "lng": 178.44,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 18.14
+  },
+  "Port Moresby": {
+    "land": "Papua-Neuguinea",
+    "kontinent": "Ozeanien",
+    "einwohner_mio": 0.33,
+    "hoehe_m": 39,
+    "lat": -9.44,
+    "lng": 147.18,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 9.44
+  },
+  "La Paz": {
+    "land": "Bolivien",
+    "kontinent": "Südamerika",
+    "einwohner_mio": 0.87,
+    "hoehe_m": 3632,
+    "lat": -16.5,
+    "lng": -68.14,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 16.5
+  },
+  "Reykjavik": {
+    "land": "Island",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.13,
+    "hoehe_m": 18,
+    "lat": 64.13,
+    "lng": -21.94,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 64.13
+  },
+  "Ulaanbaatar": {
+    "land": "Mongolei",
+    "kontinent": "Asien",
+    "einwohner_mio": 1.56,
+    "hoehe_m": 1350,
+    "lat": 47.9,
+    "lng": 106.9,
+    "grossstadt": "Millionenstadt",
+    "dist_aequator": 47.9
+  },
+  "Tallinn": {
+    "land": "Estland",
+    "kontinent": "Europa",
+    "einwohner_mio": 0.45,
+    "hoehe_m": 55,
+    "lat": 59.44,
+    "lng": 24.75,
+    "grossstadt": "Großstadt",
+    "dist_aequator": 59.44
+  }
+}

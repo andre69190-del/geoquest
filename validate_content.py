@@ -1019,6 +1019,110 @@ def check_sprachen_extended(filename, data):
                  'Muss Int sein, ist %s' % type(n).__name__)
 
 
+def check_fluesse_extended(filename, data):
+    """Validiert data/fluesse_extended.json."""
+    REQUIRED = ['laenge_km', 'einzugsgebiet_km2', 'kontinent',
+                'hauptland', 'muendung', 'lat', 'lng']
+    KONT_ENUM = {'Afrika','Asien','Europa','Nordamerika','Südamerika','Australien'}
+    if not isinstance(data, dict):
+        warn(filename, 'struktur', 'root', 'muss ein Dict sein')
+        return
+    for name, e in data.items():
+        if not isinstance(e, dict):
+            warn(filename, 'eintrag', name, 'kein Dict'); continue
+        for f in REQUIRED:
+            if f not in e:
+                warn(filename, 'pflichtfeld', name, f"Feld '{f}' fehlt")
+        k = e.get('kontinent')
+        if k and k not in KONT_ENUM:
+            warn(filename, 'enum:kontinent', name, f"'{k}' ungültig")
+
+
+def check_capitals_extended(filename, data):
+    """Validiert data/capitals_extended.json."""
+    REQUIRED = ['land','kontinent','einwohner_mio','hoehe_m','lat','lng']
+    KONT = {'Europa','Asien','Afrika','Nordamerika','Südamerika','Ozeanien'}
+    if not isinstance(data, dict):
+        warn(filename,'struktur','root','muss ein Dict sein'); return
+    for name, e in data.items():
+        if not isinstance(e, dict):
+            warn(filename,'eintrag',name,'kein Dict'); continue
+        for f in REQUIRED:
+            if f not in e:
+                warn(filename,'pflichtfeld',name,f"Feld '{f}' fehlt")
+        k = e.get('kontinent')
+        if k and k not in KONT:
+            warn(filename,'enum:kontinent',name,f"'{k}' ungültig")
+
+
+def check_capitals_extended(filename, data):
+    """Validiert data/capitals_extended.json."""
+    REQUIRED = ['land','kontinent','einwohner_mio','hoehe_m','lat','lng']
+    KONT = {'Europa','Asien','Afrika','Nordamerika','Südamerika','Ozeanien'}
+    if not isinstance(data, dict):
+        warn(filename,'struktur','root','muss ein Dict sein'); return
+    for name, e in data.items():
+        if not isinstance(e, dict):
+            warn(filename,'eintrag',name,'kein Dict'); continue
+        for f in REQUIRED:
+            if f not in e:
+                warn(filename,'pflichtfeld',name,f"Feld '{f}' fehlt")
+        k = e.get('kontinent')
+        if k and k not in KONT:
+            warn(filename,'enum:kontinent',name,f"'{k}' ungültig")
+
+
+def check_capitals_extended(filename, data):
+    """Validiert data/capitals_extended.json."""
+    REQUIRED = ['land','kontinent','einwohner_mio','hoehe_m','lat','lng']
+    KONT = {'Europa','Asien','Afrika','Nordamerika','Südamerika','Ozeanien'}
+    if not isinstance(data, dict):
+        warn(filename,'struktur','root','muss ein Dict sein'); return
+    for name, e in data.items():
+        if not isinstance(e, dict):
+            warn(filename,'eintrag',name,'kein Dict'); continue
+        for f in REQUIRED:
+            if f not in e:
+                warn(filename,'pflichtfeld',name,f"Feld '{f}' fehlt")
+        k = e.get('kontinent')
+        if k and k not in KONT:
+            warn(filename,'enum:kontinent',name,f"'{k}' ungültig")
+
+
+def check_nparks_extended(filename, data):
+    """Validiert data/nparks_extended.json."""
+    REQUIRED = ['flaeche_km2','gruendung','land','kontinent','oekosystem','lat','lng']
+    KONT_ENUM = {'Nordamerika','Südamerika','Europa','Afrika','Asien','Ozeanien','Arktis'}
+    if not isinstance(data, dict):
+        warn(filename,'struktur','root','muss ein Dict sein'); return
+    for name, e in data.items():
+        if not isinstance(e, dict):
+            warn(filename,'eintrag',name,'kein Dict'); continue
+        for f in REQUIRED:
+            if f not in e:
+                warn(filename,'pflichtfeld',name,f"Feld '{f}' fehlt")
+        k = e.get('kontinent')
+        if k and k not in KONT_ENUM:
+            warn(filename,'enum:kontinent',name,f"'{k}' ungültig")
+
+
+def check_capitals_extended(filename, data):
+    """Validiert data/capitals_extended.json."""
+    REQUIRED = ['land','kontinent','einwohner_mio','hoehe_m','lat','lng','grossstadt']
+    KONT = {'Europa','Asien','Afrika','Nordamerika','Südamerika','Ozeanien'}
+    if not isinstance(data, dict):
+        warn(filename,'struktur','root','muss ein Dict sein'); return
+    for name, e in data.items():
+        if not isinstance(e, dict):
+            warn(filename,'eintrag',name,'kein Dict'); continue
+        for f in REQUIRED:
+            if f not in e:
+                warn(filename,'pflichtfeld',name,f"Feld '{f}' fehlt")
+        k = e.get('kontinent')
+        if k and k not in KONT:
+            warn(filename,'enum:kontinent',name,f"'{k}' ungültig")
+
+
 def check_hunde_extended(filename, data):
     """Validiert data/hunde_extended.json (flaches Dict, 6 Felder)."""
     REQUIRED = ['kategorie', 'max_gewicht_kg', 'lebenserwartung_jahre',
@@ -1242,6 +1346,18 @@ def detect_and_check(filename):
         check_boardgames_extended(filename, data)
     elif name == "sprachen_extended.json":
         check_sprachen_extended(filename, data)
+    elif name == "fluesse_extended.json":
+        check_fluesse_extended(filename, data)
+    elif name == "capitals_extended.json":
+        check_capitals_extended(filename, data)
+    elif name == "capitals_extended.json":
+        check_capitals_extended(filename, data)
+    elif name == "capitals_extended.json":
+        check_capitals_extended(filename, data)
+    elif name == "nparks_extended.json":
+        check_nparks_extended(filename, data)
+    elif name == "capitals_extended.json":
+        check_capitals_extended(filename, data)
     elif name == "hunde_extended.json":
         check_hunde_extended(filename, data)
     elif name == "gartenbau_extended.json":

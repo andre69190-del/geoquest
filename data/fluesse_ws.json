@@ -1,0 +1,71 @@
+{
+  "amazonas": {
+    "word": "AMAZONAS",
+    "validWords": {
+      "de": [
+        "MONAS",
+        "MONA",
+        "SOMA",
+        "ZONA",
+        "MAN",
+        "NOM",
+        "MONS",
+        "AZOM",
+        "NOMA",
+        "MASA",
+        "ZOAS",
+        "ANOA",
+        "OMAN",
+        "MANO",
+        "AMOS",
+        "NAOS",
+        "ZONAS",
+        "MASON",
+        "MANOS"
+      ],
+      "en": [
+        "MAN",
+        "MOAN",
+        "SOMA",
+        "OMAN",
+        "AMOS",
+        "MANOS",
+        "MASON",
+        "MONAS",
+        "ZONA"
+      ],
+      "pl": [
+        "MONA",
+        "ZONA",
+        "MASA",
+        "MANOS",
+        "OMAN",
+        "AMOS"
+      ]
+    }
+  },
+  "mississippi": {
+    "word": "MISSISSIPPI",
+    "validWords": {
+      "de": [
+        "MISS",
+        "SPIS",
+        "PIPS",
+        "MIPS",
+        "PIPI"
+      ],
+      "en": [
+        "MISS",
+        "IMPS",
+        "PISS",
+        "SIMI",
+        "MIPS"
+      ],
+      "pl": [
+        "MISS",
+        "PISM",
+        "MISI"
+      ]
+    }
+  }
+}

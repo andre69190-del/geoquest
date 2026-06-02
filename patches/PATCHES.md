@@ -238,3 +238,23 @@ python3 run_patch.py patches/patch_228_new_feature.py
 **Infrastruktur:** LAND_LATLON Lookup-Tabelle (65 Länder+Regionen), genExtPinByLand() Universalgenerator, genLitPinQ()
 **Bugfix:** SPRACHEN_KOMPASS_DATA Umbenennung (pre-existing duplicate const SPRACHEN_DATA)
 **Total:** 949 Modi
+
+## Phase 443 — Flüsse & Gewässer
+**Datum:** 2026-06-02
+**Modi:** 7 neue (hl_fluss_laenge, hl_fluss_einzug, fluss_match_kontinent, fluss_match_land, fluss_match_muendung, fluss_pin_muendung, ws_fluss_amazonas)
+**Daten:** fluesse_extended.json (80 Weltflüsse), fluesse_ws.json. LAND_LATLON +9 Länder.
+**Total:** 956 Modi
+
+## Phase 444 — Nationalparks weltweit
+**Datum:** 2026-06-02
+**Modi:** 7 neue (hl_npark_flaeche, hl_npark_gruendung, npark_match_land, npark_match_kontinent, npark_match_oekosystem, npark_pin_lage, ws_npark_yellowstone)
+**Daten:** nparks_extended.json (80 Parks), nparks_ws.json. LAND_LATLON +14 Länder.
+**Bugfix:** i18n-Doppelquote in dynamischen replace()-Ankern (Y muss mit , nicht " beginnen).
+**Total:** 963 Modi
+
+## Phase 445 — Hauptstädte weltweit
+**Datum:** 2026-06-02
+**Modi:** 7 neue (hl_capital_einwohner, hl_capital_hoehe, capital_match_kontinent, capital_match_grossstadt, capital_pin_lage, hl_capital_aequator, ws_capital_reykjavik)
+**Daten:** capitals_extended.json (80 Hauptstädte mit dist_aequator-Feld), capitals_ws.json.
+**Bugfix:** IIFE in GEN-Dispatcher vermieden (}; bricht GEN-Regex ab) — dist_aequator-Feld stattdessen.
+**Total:** 970 Modi

@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 442. Geo-Pin-Welle: 13 neue Pin-Modi fuer Hunde, Brettspiele, Robotik, Serien, Musik, Webkultur, Literatur, Themeparks, Wirtschaft, Filme, Konsolen, Gaming-Hardware, Gartenbau. SPRACHEN_DATA Duplikat-Bug behoben.. verify: 177/177."
+git commit -m "Content: Phase 445. Hauptstädte weltweit: 80 Hauptstädte, 7 Modi (Einwohner, Höhe, Kontinent, Größenklasse, Pin, Äquator-Distanz, WS Reykjavik). LAND_LATLON erweitert.. verify: 183/183."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

@@ -1,0 +1,722 @@
+{
+  "Yellowstone": {
+    "flaeche_km2": 8983,
+    "gruendung": 1872,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Gebirge",
+    "lat": 44.4,
+    "lng": -110.5
+  },
+  "Yosemite": {
+    "flaeche_km2": 3073,
+    "gruendung": 1890,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Gebirge",
+    "lat": 37.8,
+    "lng": -119.5
+  },
+  "Grand Canyon": {
+    "flaeche_km2": 4926,
+    "gruendung": 1919,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Schlucht",
+    "lat": 36.1,
+    "lng": -112.1
+  },
+  "Banff": {
+    "flaeche_km2": 6641,
+    "gruendung": 1885,
+    "land": "Kanada",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Gebirge",
+    "lat": 51.5,
+    "lng": -116.0
+  },
+  "Jasper": {
+    "flaeche_km2": 10878,
+    "gruendung": 1907,
+    "land": "Kanada",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Gebirge",
+    "lat": 52.9,
+    "lng": -117.9
+  },
+  "Denali": {
+    "flaeche_km2": 24585,
+    "gruendung": 1917,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Gebirge",
+    "lat": 63.3,
+    "lng": -150.5
+  },
+  "Everglades": {
+    "flaeche_km2": 6107,
+    "gruendung": 1947,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Feuchtgebiet",
+    "lat": 25.3,
+    "lng": -80.9
+  },
+  "Zion": {
+    "flaeche_km2": 593,
+    "gruendung": 1919,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Schlucht",
+    "lat": 37.3,
+    "lng": -113.0
+  },
+  "Olympic": {
+    "flaeche_km2": 3734,
+    "gruendung": 1938,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Regenwald",
+    "lat": 47.8,
+    "lng": -123.6
+  },
+  "Glacier": {
+    "flaeche_km2": 4100,
+    "gruendung": 1910,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Gebirge",
+    "lat": 48.7,
+    "lng": -113.7
+  },
+  "Rocky Mountain": {
+    "flaeche_km2": 1076,
+    "gruendung": 1915,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Gebirge",
+    "lat": 40.4,
+    "lng": -105.7
+  },
+  "Acadia": {
+    "flaeche_km2": 198,
+    "gruendung": 1916,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Küste",
+    "lat": 44.3,
+    "lng": -68.2
+  },
+  "Wood Buffalo": {
+    "flaeche_km2": 44807,
+    "gruendung": 1922,
+    "land": "Kanada",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Wald",
+    "lat": 59.3,
+    "lng": -112.6
+  },
+  "Waterton": {
+    "flaeche_km2": 525,
+    "gruendung": 1895,
+    "land": "Kanada",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Gebirge",
+    "lat": 49.1,
+    "lng": -113.9
+  },
+  "Redwood": {
+    "flaeche_km2": 562,
+    "gruendung": 1968,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Wald",
+    "lat": 41.3,
+    "lng": -124.0
+  },
+  "Bryce Canyon": {
+    "flaeche_km2": 145,
+    "gruendung": 1928,
+    "land": "USA",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Schlucht",
+    "lat": 37.6,
+    "lng": -112.2
+  },
+  "Monteverde": {
+    "flaeche_km2": 105,
+    "gruendung": 1972,
+    "land": "Costa Rica",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Regenwald",
+    "lat": 10.3,
+    "lng": -84.8
+  },
+  "Manuel Antonio": {
+    "flaeche_km2": 16,
+    "gruendung": 1972,
+    "land": "Costa Rica",
+    "kontinent": "Nordamerika",
+    "oekosystem": "Küste",
+    "lat": 9.4,
+    "lng": -84.1
+  },
+  "Torres del Paine": {
+    "flaeche_km2": 2420,
+    "gruendung": 1959,
+    "land": "Chile",
+    "kontinent": "Südamerika",
+    "oekosystem": "Gebirge",
+    "lat": -51.0,
+    "lng": -73.0
+  },
+  "Los Glaciares": {
+    "flaeche_km2": 7269,
+    "gruendung": 1945,
+    "land": "Argentinien",
+    "kontinent": "Südamerika",
+    "oekosystem": "Gletscher",
+    "lat": -50.0,
+    "lng": -73.0
+  },
+  "Galápagos": {
+    "flaeche_km2": 7995,
+    "gruendung": 1959,
+    "land": "Ecuador",
+    "kontinent": "Südamerika",
+    "oekosystem": "Küste",
+    "lat": -0.9,
+    "lng": -90.9
+  },
+  "Parna Amazonia": {
+    "flaeche_km2": 9940,
+    "gruendung": 1974,
+    "land": "Brasilien",
+    "kontinent": "Südamerika",
+    "oekosystem": "Regenwald",
+    "lat": -2.6,
+    "lng": -57.5
+  },
+  "Iguazú": {
+    "flaeche_km2": 2529,
+    "gruendung": 1934,
+    "land": "Argentinien",
+    "kontinent": "Südamerika",
+    "oekosystem": "Regenwald",
+    "lat": -25.7,
+    "lng": -54.4
+  },
+  "Manu": {
+    "flaeche_km2": 17163,
+    "gruendung": 1973,
+    "land": "Peru",
+    "kontinent": "Südamerika",
+    "oekosystem": "Regenwald",
+    "lat": -12.0,
+    "lng": -71.5
+  },
+  "Canaima": {
+    "flaeche_km2": 30000,
+    "gruendung": 1962,
+    "land": "Venezuela",
+    "kontinent": "Südamerika",
+    "oekosystem": "Steppe",
+    "lat": 6.1,
+    "lng": -62.5
+  },
+  "Pantanal": {
+    "flaeche_km2": 1350,
+    "gruendung": 1981,
+    "land": "Brasilien",
+    "kontinent": "Südamerika",
+    "oekosystem": "Feuchtgebiet",
+    "lat": -17.0,
+    "lng": -57.5
+  },
+  "Chapada Diamantina": {
+    "flaeche_km2": 1520,
+    "gruendung": 1985,
+    "land": "Brasilien",
+    "kontinent": "Südamerika",
+    "oekosystem": "Steppe",
+    "lat": -12.5,
+    "lng": -41.5
+  },
+  "Berchtesgaden": {
+    "flaeche_km2": 210,
+    "gruendung": 1978,
+    "land": "Deutschland",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 47.6,
+    "lng": 13.0
+  },
+  "Bayerischer Wald": {
+    "flaeche_km2": 243,
+    "gruendung": 1970,
+    "land": "Deutschland",
+    "kontinent": "Europa",
+    "oekosystem": "Wald",
+    "lat": 48.9,
+    "lng": 13.4
+  },
+  "Triglav": {
+    "flaeche_km2": 840,
+    "gruendung": 1924,
+    "land": "Slowenien",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 46.4,
+    "lng": 13.8
+  },
+  "Vanoise": {
+    "flaeche_km2": 529,
+    "gruendung": 1963,
+    "land": "Frankreich",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 45.4,
+    "lng": 6.8
+  },
+  "Sarek": {
+    "flaeche_km2": 1984,
+    "gruendung": 1909,
+    "land": "Schweden",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 67.1,
+    "lng": 17.7
+  },
+  "Picos de Europa": {
+    "flaeche_km2": 665,
+    "gruendung": 1918,
+    "land": "Spanien",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 43.2,
+    "lng": -4.9
+  },
+  "Biebrza": {
+    "flaeche_km2": 592,
+    "gruendung": 1993,
+    "land": "Polen",
+    "kontinent": "Europa",
+    "oekosystem": "Feuchtgebiet",
+    "lat": 53.7,
+    "lng": 22.7
+  },
+  "Cairngorms": {
+    "flaeche_km2": 4528,
+    "gruendung": 2003,
+    "land": "Vereinigtes Königreich",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 57.1,
+    "lng": -3.6
+  },
+  "Białowieża": {
+    "flaeche_km2": 105,
+    "gruendung": 1932,
+    "land": "Polen",
+    "kontinent": "Europa",
+    "oekosystem": "Wald",
+    "lat": 52.7,
+    "lng": 23.9
+  },
+  "Abruzzo": {
+    "flaeche_km2": 500,
+    "gruendung": 1923,
+    "land": "Italien",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 41.8,
+    "lng": 13.8
+  },
+  "Plitvice": {
+    "flaeche_km2": 297,
+    "gruendung": 1949,
+    "land": "Kroatien",
+    "kontinent": "Europa",
+    "oekosystem": "Wald",
+    "lat": 44.9,
+    "lng": 15.6
+  },
+  "Gran Paradiso": {
+    "flaeche_km2": 703,
+    "gruendung": 1922,
+    "land": "Italien",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 45.5,
+    "lng": 7.2
+  },
+  "Snowdonia": {
+    "flaeche_km2": 2142,
+    "gruendung": 1951,
+    "land": "Vereinigtes Königreich",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 53.1,
+    "lng": -3.8
+  },
+  "Serengeti": {
+    "flaeche_km2": 14763,
+    "gruendung": 1951,
+    "land": "Tansania",
+    "kontinent": "Afrika",
+    "oekosystem": "Steppe",
+    "lat": -2.3,
+    "lng": 34.8
+  },
+  "Kruger": {
+    "flaeche_km2": 19485,
+    "gruendung": 1926,
+    "land": "Südafrika",
+    "kontinent": "Afrika",
+    "oekosystem": "Savanne",
+    "lat": -23.0,
+    "lng": 31.5
+  },
+  "Virunga": {
+    "flaeche_km2": 7800,
+    "gruendung": 1925,
+    "land": "Demokratische Republik Kongo",
+    "kontinent": "Afrika",
+    "oekosystem": "Gebirge",
+    "lat": -0.5,
+    "lng": 29.3
+  },
+  "Amboseli": {
+    "flaeche_km2": 392,
+    "gruendung": 1974,
+    "land": "Kenia",
+    "kontinent": "Afrika",
+    "oekosystem": "Savanne",
+    "lat": -2.7,
+    "lng": 37.3
+  },
+  "Bwindi": {
+    "flaeche_km2": 331,
+    "gruendung": 1991,
+    "land": "Uganda",
+    "kontinent": "Afrika",
+    "oekosystem": "Regenwald",
+    "lat": -1.0,
+    "lng": 29.7
+  },
+  "Etosha": {
+    "flaeche_km2": 22912,
+    "gruendung": 1907,
+    "land": "Namibia",
+    "kontinent": "Afrika",
+    "oekosystem": "Wüste",
+    "lat": -19.0,
+    "lng": 16.4
+  },
+  "Tsavo": {
+    "flaeche_km2": 20812,
+    "gruendung": 1948,
+    "land": "Kenia",
+    "kontinent": "Afrika",
+    "oekosystem": "Savanne",
+    "lat": -2.5,
+    "lng": 38.5
+  },
+  "Okavango NP": {
+    "flaeche_km2": 4871,
+    "gruendung": 1994,
+    "land": "Botswana",
+    "kontinent": "Afrika",
+    "oekosystem": "Feuchtgebiet",
+    "lat": -19.5,
+    "lng": 23.0
+  },
+  "Chobe": {
+    "flaeche_km2": 11700,
+    "gruendung": 1967,
+    "land": "Botswana",
+    "kontinent": "Afrika",
+    "oekosystem": "Savanne",
+    "lat": -18.8,
+    "lng": 24.3
+  },
+  "Drakensberg": {
+    "flaeche_km2": 2428,
+    "gruendung": 1916,
+    "land": "Südafrika",
+    "kontinent": "Afrika",
+    "oekosystem": "Gebirge",
+    "lat": -29.3,
+    "lng": 29.5
+  },
+  "Simien": {
+    "flaeche_km2": 412,
+    "gruendung": 1969,
+    "land": "Äthiopien",
+    "kontinent": "Afrika",
+    "oekosystem": "Gebirge",
+    "lat": 13.2,
+    "lng": 38.1
+  },
+  "Hwange": {
+    "flaeche_km2": 14651,
+    "gruendung": 1929,
+    "land": "Simbabwe",
+    "kontinent": "Afrika",
+    "oekosystem": "Savanne",
+    "lat": -19.5,
+    "lng": 26.5
+  },
+  "Mole": {
+    "flaeche_km2": 4577,
+    "gruendung": 1971,
+    "land": "Ghana",
+    "kontinent": "Afrika",
+    "oekosystem": "Savanne",
+    "lat": 9.4,
+    "lng": -1.8
+  },
+  "Maputo": {
+    "flaeche_km2": 700,
+    "gruendung": 1932,
+    "land": "Mosambik",
+    "kontinent": "Afrika",
+    "oekosystem": "Küste",
+    "lat": -26.4,
+    "lng": 32.9
+  },
+  "Sagarmatha": {
+    "flaeche_km2": 1148,
+    "gruendung": 1976,
+    "land": "Nepal",
+    "kontinent": "Asien",
+    "oekosystem": "Gebirge",
+    "lat": 27.9,
+    "lng": 86.7
+  },
+  "Komodo": {
+    "flaeche_km2": 1817,
+    "gruendung": 1980,
+    "land": "Indonesien",
+    "kontinent": "Asien",
+    "oekosystem": "Küste",
+    "lat": -8.5,
+    "lng": 119.5
+  },
+  "Jiuzhaigou": {
+    "flaeche_km2": 720,
+    "gruendung": 1997,
+    "land": "China",
+    "kontinent": "Asien",
+    "oekosystem": "Gebirge",
+    "lat": 33.2,
+    "lng": 103.9
+  },
+  "Zhangjiajie": {
+    "flaeche_km2": 130,
+    "gruendung": 1982,
+    "land": "China",
+    "kontinent": "Asien",
+    "oekosystem": "Gebirge",
+    "lat": 29.3,
+    "lng": 110.4
+  },
+  "Ranthambore": {
+    "flaeche_km2": 392,
+    "gruendung": 1980,
+    "land": "Indien",
+    "kontinent": "Asien",
+    "oekosystem": "Savanne",
+    "lat": 26.0,
+    "lng": 76.5
+  },
+  "Gir Forest": {
+    "flaeche_km2": 1412,
+    "gruendung": 1975,
+    "land": "Indien",
+    "kontinent": "Asien",
+    "oekosystem": "Wald",
+    "lat": 21.1,
+    "lng": 70.8
+  },
+  "Sundarbans": {
+    "flaeche_km2": 6017,
+    "gruendung": 1984,
+    "land": "Bangladesch",
+    "kontinent": "Asien",
+    "oekosystem": "Mangrove",
+    "lat": 21.9,
+    "lng": 89.2
+  },
+  "Chitwan": {
+    "flaeche_km2": 952,
+    "gruendung": 1973,
+    "land": "Nepal",
+    "kontinent": "Asien",
+    "oekosystem": "Steppe",
+    "lat": 27.5,
+    "lng": 84.3
+  },
+  "Fuji-Hakone": {
+    "flaeche_km2": 1227,
+    "gruendung": 1936,
+    "land": "Japan",
+    "kontinent": "Asien",
+    "oekosystem": "Vulkan",
+    "lat": 35.4,
+    "lng": 138.7
+  },
+  "Khao Yai": {
+    "flaeche_km2": 2168,
+    "gruendung": 1962,
+    "land": "Thailand",
+    "kontinent": "Asien",
+    "oekosystem": "Regenwald",
+    "lat": 14.4,
+    "lng": 101.4
+  },
+  "Taman Negara": {
+    "flaeche_km2": 4343,
+    "gruendung": 1939,
+    "land": "Malaysia",
+    "kontinent": "Asien",
+    "oekosystem": "Regenwald",
+    "lat": 4.4,
+    "lng": 102.3
+  },
+  "Wadi Rum": {
+    "flaeche_km2": 720,
+    "gruendung": 1998,
+    "land": "Jordanien",
+    "kontinent": "Asien",
+    "oekosystem": "Wüste",
+    "lat": 29.6,
+    "lng": 35.4
+  },
+  "Yala": {
+    "flaeche_km2": 979,
+    "gruendung": 1938,
+    "land": "Sri Lanka",
+    "kontinent": "Asien",
+    "oekosystem": "Savanne",
+    "lat": 6.4,
+    "lng": 81.5
+  },
+  "Ala Archa": {
+    "flaeche_km2": 350,
+    "gruendung": 1976,
+    "land": "Kirgisistan",
+    "kontinent": "Asien",
+    "oekosystem": "Gebirge",
+    "lat": 42.5,
+    "lng": 74.5
+  },
+  "Fiordland": {
+    "flaeche_km2": 12607,
+    "gruendung": 1952,
+    "land": "Neuseeland",
+    "kontinent": "Ozeanien",
+    "oekosystem": "Fjord",
+    "lat": -45.4,
+    "lng": 167.7
+  },
+  "Tongariro": {
+    "flaeche_km2": 796,
+    "gruendung": 1887,
+    "land": "Neuseeland",
+    "kontinent": "Ozeanien",
+    "oekosystem": "Vulkan",
+    "lat": -39.2,
+    "lng": 175.6
+  },
+  "Kakadu": {
+    "flaeche_km2": 19804,
+    "gruendung": 1979,
+    "land": "Australien",
+    "kontinent": "Ozeanien",
+    "oekosystem": "Feuchtgebiet",
+    "lat": -12.8,
+    "lng": 132.4
+  },
+  "Blue Mountains NP": {
+    "flaeche_km2": 2679,
+    "gruendung": 1959,
+    "land": "Australien",
+    "kontinent": "Ozeanien",
+    "oekosystem": "Wald",
+    "lat": -33.6,
+    "lng": 150.4
+  },
+  "Uluru": {
+    "flaeche_km2": 1326,
+    "gruendung": 1950,
+    "land": "Australien",
+    "kontinent": "Ozeanien",
+    "oekosystem": "Wüste",
+    "lat": -25.3,
+    "lng": 131.0
+  },
+  "Abel Tasman": {
+    "flaeche_km2": 225,
+    "gruendung": 1942,
+    "land": "Neuseeland",
+    "kontinent": "Ozeanien",
+    "oekosystem": "Küste",
+    "lat": -40.9,
+    "lng": 173.0
+  },
+  "Daintree": {
+    "flaeche_km2": 1200,
+    "gruendung": 1988,
+    "land": "Australien",
+    "kontinent": "Ozeanien",
+    "oekosystem": "Regenwald",
+    "lat": -16.2,
+    "lng": 145.4
+  },
+  "Wet Tropics": {
+    "flaeche_km2": 8945,
+    "gruendung": 1988,
+    "land": "Australien",
+    "kontinent": "Ozeanien",
+    "oekosystem": "Regenwald",
+    "lat": -17.3,
+    "lng": 145.7
+  },
+  "Northeast Greenland": {
+    "flaeche_km2": 972000,
+    "gruendung": 1974,
+    "land": "Dänemark",
+    "kontinent": "Arktis",
+    "oekosystem": "Arktisch",
+    "lat": 74.0,
+    "lng": -25.0
+  },
+  "Wrangel Island": {
+    "flaeche_km2": 22256,
+    "gruendung": 1976,
+    "land": "Russland",
+    "kontinent": "Arktis",
+    "oekosystem": "Arktisch",
+    "lat": 71.0,
+    "lng": 179.0
+  },
+  "Jungfrau-Aletsch": {
+    "flaeche_km2": 539,
+    "gruendung": 2001,
+    "land": "Schweiz",
+    "kontinent": "Europa",
+    "oekosystem": "Gebirge",
+    "lat": 46.5,
+    "lng": 8.0
+  },
+  "Bale Mountains": {
+    "flaeche_km2": 2200,
+    "gruendung": 1970,
+    "land": "Äthiopien",
+    "kontinent": "Afrika",
+    "oekosystem": "Gebirge",
+    "lat": 6.9,
+    "lng": 39.8
+  }
+}

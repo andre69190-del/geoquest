@@ -19,7 +19,7 @@ begeistert sein und es sofort spielen / installieren.
 
 ## 2. Kernbotschaften (USP)
 
-1. **949 Spielmodi** -- groesste kostenlose Geografie-Quiz-App der Welt
+1. **970 Spielmodi** -- groesste kostenlose Geografie-Quiz-App der Welt
 2. **Komplett kostenlos & werbefrei** -- keine Zahlschranken, kein In-App-Kauf
 3. **Offline spielbar** -- einmal oeffnen, dann auch ohne Internet
 4. **Eine Datei** -- 2.4 MB, kein App-Store, kein Install-Prozess
@@ -42,7 +42,7 @@ begeistert sein und es sofort spielen / installieren.
 > "Wie gut kennst du die Welt?"
 
 **Subline (kleiner, grau):**
-> 949 Spielmodi. Kostenlos. Offline. Direkt im Browser.
+> 970 Spielmodi. Kostenlos. Offline. Direkt im Browser.
 
 **2 CTA-Buttons:**
 - `[Jetzt spielen]` -- gross, gruen, primaer -- oeffnet GeoQuest.html
@@ -220,7 +220,7 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 | Domain | geoquest.app oder subdomain landing.geoquest.app |
 | Performance | Landingpage < 200 KB (kein unnoetige Bibliotheken) |
 | Mobile-first | Vollstaendig responsive, Touch-optimiert |
-| SEO | Meta-Tags: "Geografie Quiz", "949 Spielmodi", "kostenlos" |
+| SEO | Meta-Tags: "Geografie Quiz", "970 Spielmodi", "kostenlos" |
 | Analytics | Optional: Vercel Analytics (bereits vorhanden) |
 
 ---
@@ -236,4 +236,4 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 ---
 
-*Konzept erstellt: Juni 2026 | Phase 442 | GeoQuest v5.71 MB | 718 Modi*
+*Konzept erstellt: Juni 2026 | Phase 445 | GeoQuest v5.77 MB | 718 Modi*

@@ -1,0 +1,73 @@
+{
+  "reykjavik": {
+    "word": "REYKJAVIK",
+    "validWords": {
+      "de": [
+        "ARVE",
+        "KARE",
+        "IKEA",
+        "RAKI",
+        "YAKI",
+        "ARKI",
+        "AVRI",
+        "RIKA",
+        "KARI",
+        "VARI"
+      ],
+      "en": [
+        "AIRY",
+        "RAVE",
+        "RAKI",
+        "VARY",
+        "YIKE",
+        "KIVER"
+      ],
+      "pl": [
+        "RAKI",
+        "RIKA",
+        "KARY",
+        "RIVE"
+      ]
+    }
+  },
+  "washington": {
+    "word": "WASHINGTON",
+    "validWords": {
+      "de": [
+        "WOHN",
+        "WOHN",
+        "SHINO",
+        "NAHOST",
+        "HOIST",
+        "GNAW",
+        "OAST",
+        "TOWN",
+        "THAN",
+        "SHIN",
+        "TONGA",
+        "SONG",
+        "THAW",
+        "INTO",
+        "SING"
+      ],
+      "en": [
+        "WASHING",
+        "TOWNS",
+        "GNASH",
+        "THAWS",
+        "OATHS",
+        "SHINTO",
+        "TANGO",
+        "HANGS",
+        "NOTHING",
+        "OWNS"
+      ],
+      "pl": [
+        "TANGO",
+        "HOST",
+        "GNASH",
+        "THAW"
+      ]
+    }
+  }
+}

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-ddf2cb94';
+const CACHE_NAME = 'geoquest-40108058';
 /* Phase 238: full offline cache — auto-versioned from asset hash */
 const ASSETS = [
   './GeoQuest.html',
@@ -19,11 +19,15 @@ const ASSETS = [
   './data/autos_extended.json',
   './data/boardgames_extended.json',
   './data/boardgames_ws.json',
+  './data/capitals_extended.json',
+  './data/capitals_ws.json',
   './data/emob_hl.json',
   './data/emob_match.json',
   './data/emob_pin.json',
   './data/emob_ws.json',
   './data/filme_extended.json',
+  './data/fluesse_extended.json',
+  './data/fluesse_ws.json',
   './data/games_extended.json',
   './data/gaming_hardware.json',
   './data/gartenbau_extended.json',
@@ -52,6 +56,8 @@ const ASSETS = [
   './data/musik_extended.json',
   './data/mythologie.json',
   './data/mythologie_ws.json',
+  './data/nparks_extended.json',
+  './data/nparks_ws.json',
   './data/pflanzen_hl.json',
   './data/pflanzen_match.json',
   './data/pflanzen_pin.json',
