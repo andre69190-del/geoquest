@@ -14721,7 +14721,7 @@ function renderWortSchmiede(sc){
   '<div class="tbar"><div class="tfill" style="width:'+tPct+'%;background:'+tCol+';transition:width 1s linear"></div></div>';
 
   /* ── Shake CSS ── */
-  const shakeCSS='<style>@keyframes wsShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-9px)}40%{transform:translateX(9px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}</style>';
+  const shakeCSS='<style>@keyframes wsShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-9px)}40%{transform:translateX(9px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}.tabs-nav{display:flex;flex-wrap:wrap;gap:3px;padding:0 10px 8px;}.cat-tab{flex:0 0 calc(12.5% - 3px);min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5px 0;border-radius:8px;border:1.5px solid var(--border);background:var(--bg2);cursor:pointer;font-size:.6rem;color:var(--text2);line-height:1.2;transition:all .15s;gap:1px;touch-action:manipulation;user-select:none;}.cat-tab .ct-icon{font-size:1.1rem;line-height:1;}.cat-tab .ct-lbl{font-size:.48rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;text-align:center;padding:0 2px;}.cat-tab.active{background:#7F77DD;border-color:#534AB7;color:#fff;}.cat-tab.active .ct-lbl{color:#fff;}.tabs-mode .accordion-header{display:none!important;}.tabs-mode .accordion-section{margin-bottom:0!important;}.tabs-mode .accordion-content{border-radius:10px;}.tabs-mode #mainGamesGrid{padding:0 10px!important;}</style>';
 
   /* ── End screens ── */
   if(phase==="perfect"||phase==="timeout"){
@@ -15409,6 +15409,25 @@ function closeGameInfo(){
 function renderHomeTab(){
   const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","zuege","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","emobilitaet","archaeologie","astronomie","geologie","sport_wissen"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));return fixed.concat(extra);})();
 
+
+  /* Phase 414: Tab-Ansicht */
+  const _menuLayout=(()=>{try{return localStorage.getItem('gq_menu_layout')||'accordion';}catch(e){return 'accordion';}})();
+  const _catAbbrev={pure_geo:'Geo',lifestyle:'Kult',eu_plates:'Kz',zuege:'Zug',
+    sport:'Sprt',hl_compare:'H/L',comparisons:'Vrgl',airports:'Air',
+    neighbors:'Nbr',map_mode:'Map',tiere:'Tier',pflanzen:'Pflz',
+    gastronomie:'Gast',technologie:'Tech',emobilitaet:'E-Mob',
+    archaeologie:'Arch',astronomie:'Astr',geologie:'Geo-V',
+    sport_wissen:'S-W',games:'Game',autos:'Auto',regional:'Reg'};
+  const _activeCat=S.filterCat||'pure_geo';
+  const _tabNavHtml=_menuLayout==='tabs'?`<div class="tabs-nav">${_CAT_ORDER.filter(k=>MODE_CATS[k]).map(k=>{
+    const cat=MODE_CATS[k];
+    const abbr=_catAbbrev[k]||(cat.label.split(' ')[0].substring(0,5));
+    return`<div class="cat-tab${k===_activeCat?' active':''}" onclick="window.filterByCategory('${k}');render()">
+      <span class="ct-icon">${cat.icon}</span>
+      <span class="ct-lbl">${abbr}</span>
+    </div>`;
+  }).join('')}</div>`:'';
+  const _tabsModeClass=_menuLayout==='tabs'?' tabs-mode':'';
   // Build accordion sections — Pure Geo auto-open, others closed
   const _favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
   const _accordionHTML=_CAT_ORDER.map(catId=>{
@@ -15503,7 +15522,7 @@ function renderHomeTab(){
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
     <div id="gq-recent-bar" style="padding:0 15px 0"></div>
-    <div id="mainGamesGrid" style="padding:0 15px">${_accordionHTML}</div>
+    ${_tabNavHtml}<div id="mainGamesGrid" class="accordion-grid${_tabsModeClass}" style="padding:0 15px">${_accordionHTML}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
       <button class="diff-btn ${S.diff==="casual"?"active":""}" onclick="S.diff='casual';localStorage.setItem('gq_diffx','casual');render()">Casual</button>
@@ -15857,7 +15876,7 @@ function renderSettingsModal(){
       <div><div style="font-weight:700;font-size:.85rem">Feedback &amp; Kontakt</div><div style="font-size:.75rem;color:var(--text3)">Fehler melden, Ideen einreichen</div></div>
     </div>
     <button class="btn-g" style="margin-bottom:0" onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
-  </div></div>`;
+    <div style="margin-bottom:.9rem"><div style="font-weight:700;margin-bottom:.5rem">\u{1F4CB} Men\u00fc-Ansicht</div><div style="display:flex;gap:8px"><div onclick="localStorage.setItem('gq_menu_layout','accordion');render()" style="flex:1;border:2px solid ${(()=>{try{return localStorage.getItem('gq_menu_layout')||'accordion';}catch(e){return 'accordion';}})()==='accordion'?'#7F77DD':'var(--border)'};border-radius:10px;padding:8px;cursor:pointer;background:var(--bg2);text-align:center"><div style="font-size:.7rem;margin-bottom:4px">Akkordeon</div><div style="display:flex;flex-direction:column;gap:2px">${['','open','',''].map(t=>`<div style="height:${t?'14':'7'}px;background:${t?'#EEEDFE':'var(--bg)'};border:1px solid ${t?'#AFA9EC':'var(--border)'};border-radius:3px"></div>`).join('')}</div></div><div onclick="localStorage.setItem('gq_menu_layout','tabs');render()" style="flex:1;border:2px solid ${(()=>{try{return localStorage.getItem('gq_menu_layout')||'accordion';}catch(e){return 'accordion';}})()==='tabs'?'#7F77DD':'var(--border)'};border-radius:10px;padding:8px;cursor:pointer;background:var(--bg2);text-align:center"><div style="font-size:.7rem;margin-bottom:4px">Tabs</div><div style="display:flex;flex-wrap:wrap;gap:2px">${Array.from({length:8}).map((_,i)=>`<div style="width:10px;height:10px;background:${i===0?'#7F77DD':'var(--bg)'};border:1px solid ${i===0?'#534AB7':'var(--border)'};border-radius:2px"></div>`).join('')}<div style="width:100%;height:20px;background:var(--bg);border:1px solid var(--border);border-radius:3px;margin-top:2px"></div></div></div></div></div>  </div></div>`;
 }
 
 /* LEADERBOARD helper (used from home) */

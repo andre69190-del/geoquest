@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 413 (Stand: Juni 2026)
+**Version:** Phase 414 (Stand: Juni 2026)
 **Build:** gen.py → 1.49 MB | GeoQuest.html → 5.32 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
@@ -1118,6 +1118,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **411** | patch_411.py | **Phase 411: wendekreis_m + zuladung_kg zu 431 Autos (91/74 gefüllt), 2 neue Auto-Modi hl_auto_wendekreis (lowerWins!) + hl_auto_zuladung. 777->779 Modi** |
 | **412** | patch_412.py | **Bugfixes + 6 neue Konsolen-Modi: match_konsolen_handheld→Ja/Nein, timeline_auto_bj, generate_spieluebersicht Syntax-Error, hl_konsolen_ram/cpu, match_konsolen_generation/land. iOS Timeline-Bug (5 Fixes). MODES: 802→802** |
 | **413** | patch_413.py | **Neue Kategorie 'Regionale Kultur & Kulinarik': 30 D-A-CH Einträge (Speisen, Weine, Getränke, Brauchtum), 6 Modi (Pin, 3x Match Land/Region/Kategorie, 2x H/L Alkohol/Saison), validate_content + i18n DE/EN/PL. MODES: 802→802** |
+| **414** | patch_414.py | **Dual Menu Layout: Tab-Ansicht (3 Reihen × 8 Kategorien) + Settings-Toggle gq_menu_layout (accordion/tabs). CSS-Klasse tabs-mode blendet Akkordeon-Header aus, Carousel-Logik unverändert. verify: 146/146** |
 
 ---
 
