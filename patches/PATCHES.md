@@ -180,3 +180,4 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_413_regional_kultur.py | 413 | Neue Kategorie Regionale Kultur & Kulinarik: 30 D-A-CH Einträge, 6 Modi (Pin + 3 Match + 2 H/L), validate_content, i18n DE/EN/PL. MODES: 796→802 |
 | patch_414_menu_layout.py | 414 | Dual Menu Layout: Tab-Ansicht (3 Reihen × 8 Kategorien) + Settings-Toggle (gq_menu_layout accordion/tabs). CSS tabs-mode, bestehende Carousel-Logik unverändert. verify: 146/146 |
 | patch_415_settings_consolidation.py | 415 | Settings konsolidiert: block4+block5 zu einem EINSTELLUNGEN-Block (Design-Segmented, Sprache, Menü-Ansicht-Toggle inline). Spielübersicht: _get_type() Match/Pin-Fix, Konsolen/Regional Datenbasis-Badges, return len(rows). 14/14 session checks |
+| patch_416_tabs_pwa.py | 416 | Tab-Ansicht: Inline-Grid + Accordion-Header im JS ausgeblendet. PWA: Schließen-Button Android/Desktop, gq_pwa_dismissed, Reaktivierung in Einstellungen. verify: 146/146 |

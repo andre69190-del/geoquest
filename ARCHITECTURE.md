@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 415 (Stand: Juni 2026)
+**Version:** Phase 416 (Stand: Juni 2026)
 **Build:** gen.py → 1.49 MB | GeoQuest.html → 5.32 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
@@ -1120,6 +1120,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **413** | patch_413.py | **Neue Kategorie 'Regionale Kultur & Kulinarik': 30 D-A-CH Einträge (Speisen, Weine, Getränke, Brauchtum), 6 Modi (Pin, 3x Match Land/Region/Kategorie, 2x H/L Alkohol/Saison), validate_content + i18n DE/EN/PL. MODES: 802→802** |
 | **414** | patch_414.py | **Dual Menu Layout: Tab-Ansicht (3 Reihen × 8 Kategorien) + Settings-Toggle gq_menu_layout (accordion/tabs). CSS-Klasse tabs-mode blendet Akkordeon-Header aus, Carousel-Logik unverändert. verify: 146/146** |
 | **415** | patch_415.py | **Settings konsolidiert: block4+block5 zu einem EINSTELLUNGEN-Block (Design-Segmented, Sprache, Menü-Ansicht-Toggle), Sprache aus Modal entfernt, Modal heißt 'Weitere Einstellungen'. Spielübersicht: _get_type() Match/Pin-Erkennung, Konsolen/Regional-Badges, return len(rows)** |
+| **416** | patch_416.py | **Tab-Ansicht fix: Inline-Grid statt CSS-Klassen, Accordion-Header im JS-Rendering ausgeblendet. PWA-Banner: Schließen-Button für Android/Desktop, gq_pwa_dismissed in localStorage, Reaktivierung in Einstellungen** |
 
 ---
 

@@ -12621,7 +12621,7 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="stats"?renderStatsTab():""}
       ${S.tab==="admin"?renderAdminTab():""}
       ${S.settingsModal?renderSettingsModal():""}${S.adModal?renderAdModal():""}
-    </div>${renderBottomNav()}${(S.pwaPrompt||(_isIOS()&&!_isInStandaloneMode()&&!localStorage.getItem('gq_pwa_ios_dismissed')))?renderPwaBanner():""}`;
+    </div>${renderBottomNav()}${((!localStorage.getItem('gq_pwa_dismissed')&&S.pwaPrompt)||(_isIOS()&&!_isInStandaloneMode()&&!localStorage.getItem('gq_pwa_ios_dismissed')))?renderPwaBanner():""}`;
     if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
   if(S.tab==="home")setTimeout(function(){if(typeof window.renderRecentBar==="function")window.renderRecentBar();},90);
     return;
@@ -13287,7 +13287,8 @@ function renderPwaBanner(){
   /* Android / Desktop Chrome: nativer beforeinstallprompt-Flow */
   return`<div id="pwa-banner" class="pwa-banner">
     <span>📱 GeoQuest als App installieren &mdash; offline spielbar!</span>
-    <button class="pwa-install-btn" onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(r=>{S.pwaPrompt=null;render();});}">&#x1F4E5; Installieren</button>
+    <button class="pwa-install-btn" onclick="if(S.pwaPrompt){S.pwaPrompt.prompt();S.pwaPrompt.userChoice.then(r=>{localStorage.setItem('gq_pwa_dismissed','1');S.pwaPrompt=null;render();});}">&#x1F4E5; Installieren</button>
+    <button class="pwa-dismiss-btn" onclick="localStorage.setItem('gq_pwa_dismissed','1');S.pwaPrompt=null;render();" aria-label="Schliessen">&#x2715;</button>
   </div>`;
 }
 function renderBottomNav(){
@@ -15878,7 +15879,8 @@ function renderSettingsModal(){
       <span style="font-size:1.2rem">\u{1F4A1}</span>
       <div><div style="font-weight:700;font-size:.85rem">Feedback &amp; Kontakt</div><div style="font-size:.75rem;color:var(--text3)">Fehler melden, Ideen einreichen</div></div>
     </div>
-    <button class="btn-g" style="margin-bottom:0" onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
+    <button class="btn-g" style="margin-bottom:0" onclick="${!_isInStandaloneMode()&&(localStorage.getItem('gq_pwa_dismissed')||localStorage.getItem('gq_pwa_ios_dismissed'))?`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div style="font-weight:700">📲 App installieren</div><button class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem" onclick="localStorage.removeItem('gq_pwa_dismissed');localStorage.removeItem('gq_pwa_ios_dismissed');render()">Erneut anzeigen</button></div>`:''}
+    <button onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
     <div style="margin-bottom:.9rem"><div style="font-weight:700;margin-bottom:.5rem">\u{1F4CB} Men\u00fc-Ansicht</div><div style="display:flex;gap:8px"><div onclick="localStorage.setItem('gq_menu_layout','accordion');render()" style="flex:1;border:2px solid ${(()=>{try{return localStorage.getItem('gq_menu_layout')||'accordion';}catch(e){return 'accordion';}})()==='accordion'?'#7F77DD':'var(--border)'};border-radius:10px;padding:8px;cursor:pointer;background:var(--bg2);text-align:center"><div style="font-size:.7rem;margin-bottom:4px">Akkordeon</div><div style="display:flex;flex-direction:column;gap:2px">${['','open','',''].map(t=>`<div style="height:${t?'14':'7'}px;background:${t?'#EEEDFE':'var(--bg)'};border:1px solid ${t?'#AFA9EC':'var(--border)'};border-radius:3px"></div>`).join('')}</div></div><div onclick="localStorage.setItem('gq_menu_layout','tabs');render()" style="flex:1;border:2px solid ${(()=>{try{return localStorage.getItem('gq_menu_layout')||'accordion';}catch(e){return 'accordion';}})()==='tabs'?'#7F77DD':'var(--border)'};border-radius:10px;padding:8px;cursor:pointer;background:var(--bg2);text-align:center"><div style="font-size:.7rem;margin-bottom:4px">Tabs</div><div style="display:flex;flex-wrap:wrap;gap:2px">${Array.from({length:8}).map((_,i)=>`<div style="width:10px;height:10px;background:${i===0?'#7F77DD':'var(--bg)'};border:1px solid ${i===0?'#534AB7':'var(--border)'};border-radius:2px"></div>`).join('')}<div style="width:100%;height:20px;background:var(--bg);border:1px solid var(--border);border-radius:3px;margin-top:2px"></div></div></div></div></div>  </div></div>`;
 }
 

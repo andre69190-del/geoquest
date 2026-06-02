@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 415. Settings konsolidiert: block4+block5 zu einem EINSTELLUNGEN-Block (Design-Segmented, Sprache, Menü-Ansicht-Toggle), Sprache aus Modal entfernt, Modal heißt 'Weitere Einstellungen'. Spielübersicht: _get_type() Match/Pin-Erkennung, Konsolen/Regional-Badges, return len(rows). verify: 146/146."
+git commit -m "Content: Phase 416. Tab-Ansicht fix: Inline-Grid statt CSS-Klassen, Accordion-Header im JS-Rendering ausgeblendet. PWA-Banner: Schließen-Button für Android/Desktop, gq_pwa_dismissed in localStorage, Reaktivierung in Einstellungen. verify: 146/146."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
