@@ -473,4 +473,39 @@ def generate(phase=269, n_tests=90):
     H.append(f'<div class="cats" id="cats">\n{cats_html}\n</div>')
     H.append(f'<div class="legend">\n  {legend_html}\n</div>')
     H.append('<div class="tbl"><table id="tbl"><thead><tr>')
-    H.append('<th class="n">#</th><th class="mid">Modus-ID</th><th class="cat">Kategorie</th><th class="title">T
+    H.append('<th class="n">#</th><th class="mid">Modus-ID</th><th class="ttl">Titel</th><th class="db">Typ</th><th class="dc">Datenbasis</th></tr></thead>')
+    H.append(f'<tbody id="tb">{tbody}</tbody></table></div>')
+    H.append('<footer>GeoQuest · Auto-generiert</footer>')
+    H.append('''<script>
+var _rows=document.querySelectorAll('tr.mr,tr.gh');
+var _cats=document.querySelectorAll('.sc');
+function vis(){
+  var q=document.getElementById('q').value.toLowerCase();
+  var ag=document.querySelector('.sc.on');
+  var grp=ag?ag.dataset.group:'';
+  _rows.forEach(function(r){
+    var show=true;
+    if(grp&&r.dataset.group!==grp)show=false;
+    if(q&&!r.textContent.toLowerCase().includes(q))show=false;
+    if(r.classList.contains('gh')){
+      var any=false;
+      document.querySelectorAll('tr.mr[data-group="'+r.dataset.group+'"]').forEach(function(d){if(!d.classList.contains('hidden'))any=true;});
+      show=any;
+    }
+    r.classList.toggle('hidden',!show);
+  });
+}
+function filt(){vis();}
+function clr(){document.getElementById('q').value='';_cats.forEach(function(c){c.classList.remove('on');});_rows.forEach(function(r){r.classList.remove('hidden');});}
+function fg(g){_cats.forEach(function(c){c.classList.toggle('on',c.dataset.group===g);});vis();}
+</script>''')
+    H.append('</body></html>')
+    out = '\n'.join(H)
+    with open(OUT, 'w', encoding='utf-8') as _f:
+        _f.write(out)
+    return total_modes
+
+
+if __name__ == '__main__':
+    n = generate()
+    print(f'Done: {n} Modi')
