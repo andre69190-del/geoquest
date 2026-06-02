@@ -135,6 +135,20 @@ if os.path.exists(konzept_path):
     else:
         warn(f"GeoQuest_Website_Konzept.md: {modi_konz} Modi (gen.py hat {actual_modi})")
 
+# CLAUDE_SESSION_STARTER.md -- manuell gepflegt, aber von post_phase.py auto-aktualisiert
+ss_path = os.path.join(BASE, 'CLAUDE_SESSION_STARTER.md')
+if os.path.exists(ss_path):
+    with open(ss_path, encoding='utf-8') as f:
+        ss = f.read()
+    m_ss_modi = re.search(r'\| Spielmodi \| \*\*(\d+)\*\*', ss)
+    modi_ss = int(m_ss_modi.group(1)) if m_ss_modi else 0
+    if modi_ss == actual_modi:
+        ok(f"CLAUDE_SESSION_STARTER.md: {actual_modi} Modi korrekt")
+    else:
+        warn(f"CLAUDE_SESSION_STARTER.md: {modi_ss} Modi (gen.py hat {actual_modi}) -- post_phase.py ausfuehren!")
+else:
+    warn("CLAUDE_SESSION_STARTER.md nicht gefunden")
+
 # PATCHES.md -- pruefen ob letzter Eintrag aktuell ist
 patches_md = os.path.join(BASE, 'patches', 'PATCHES.md')
 if os.path.exists(patches_md):

@@ -372,6 +372,56 @@ def update_spieluebersicht(phase, counts):
     )
 
 
+# ─── Schritt 6: CLAUDE_SESSION_STARTER.md ───────────────────────────────────
+
+def update_session_starter(phase, modi_count, vscore="146/146", validate_score=None):
+    """Aktualisiert die manuell gepflegte Session-Starter-Doku automatisch:
+    Phase-Marker (2x), Spielmodi-Zahl, verify- und validate-Score."""
+    ss_path = os.path.join(BASE, "CLAUDE_SESSION_STARTER.md")
+    if not os.path.exists(ss_path):
+        warn("CLAUDE_SESSION_STARTER.md nicht gefunden — uebersprungen")
+        return
+
+    with open(ss_path, encoding="utf-8") as f:
+        text = f.read()
+
+    changes = 0
+
+    # Phase-Marker im Pflicht-Kontext + Status-Header
+    text, n = re.subn(r'(Aktueller Stand \(Stand: Phase )\d+(\):)', rf'\g<1>{phase}\2', text); changes += n
+    text, n = re.subn(r'(## AKTUELLER PROJEKT-STATUS \(Phase )\d+(\))', rf'\g<1>{phase}\2', text); changes += n
+
+    # Spielmodi-Zahl (Status-Tabelle)
+    text, n = re.subn(r'(\| Spielmodi \| \*\*)\d+(\*\* \|)', rf'\g<1>{modi_count}\2', text); changes += n
+
+    # Spielmodi-Zahl (Pflicht-Kontext-Block: "NNN Spielmodi in MODES-Array")
+    text, n = re.subn(r'(- )\d+( Spielmodi in MODES-Array)', rf'\g<1>{modi_count}\2', text); changes += n
+
+    # verify-Score
+    text, n = re.subn(r'(\| verify\.py \| )\d+/\d+( ✓ \|)', rf'\g<1>{vscore}\2', text); changes += n
+
+    # validate-Score (falls ermittelt)
+    if validate_score:
+        text, n = re.subn(r'(\| validate_content\.py \| )\d+/\d+( ✓ 0 Warnings \|)',
+                          rf'\g<1>{validate_score}\2', text); changes += n
+
+    with open(ss_path, encoding="utf-8", mode='w') as f:
+        f.write(text)
+
+    ok(f"CLAUDE_SESSION_STARTER.md → Phase {phase}, {modi_count} Modi ({changes} Änderungen)")
+
+
+def get_validate_score():
+    """Liest 'X/Y files scanned' aus validate_content.py."""
+    import subprocess as _sp
+    try:
+        r = _sp.run([sys.executable, "validate_content.py"], capture_output=True, text=True, cwd=BASE)
+        m = re.search(r'(\d+/\d+) files scanned', r.stdout)
+        return m.group(1) if m else None
+    except Exception:
+        return None
+
+
 # ─── Main ────────────────────────────────────────────────────────────────────
 
 def main():
@@ -413,12 +463,13 @@ def main():
     size_str = get_geoquest_size_str()
 
     # Alle 5 Schritte
-    print(f"📝 Aktualisiere Dateien (5 Schritte):")
+    print(f"📝 Aktualisiere Dateien (6 Schritte):")
     vscore = update_bat(phase, summary) or '136/136'
     update_architecture(phase, summary, patch_file, size_str, counts=counts)
     update_readme(phase, new_modi=modi_count, _vscore=vscore)
     update_konzept(phase, size_str)
     update_spieluebersicht(phase, counts)
+    update_session_starter(phase, modi_count, vscore=vscore, validate_score=get_validate_score())
 
     # Schritt 6: GeoQuest_Spielübersicht.html neu generieren
     print(f"\n📋 Generiere GeoQuest_Spielübersicht.html...")

@@ -14,7 +14,7 @@ Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
 Aktueller Stand (Stand: Phase 421):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
-- 777 Spielmodi in MODES-Array (gen.py)
+- 802 Spielmodi in MODES-Array (gen.py)
 - 44 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
 - Patch-System: patches/patch_NNN_description.py via run_patch.py
 - Zero-Bug-Policy: assert c.count(old)==1 vor jedem c.replace()
@@ -35,6 +35,7 @@ Wichtige Dateien zum Lesen:
 - patches/PATCHES.md        → Alle bisherigen Patches mit Phase-Nummern
 - ARCHITECTURE.md           → Systemdokumentation
 - CLAUDE_SESSION_STARTER.md → Dieses Dokument (immer aktuell halten!)
+- GeoQuest_Checkliste_und_Prompt_Template.md → AM ANFANG JEDER SESSION LESEN! Prompt-Vorlagen + Datei-Checkliste
 - check_session.py          → NEU: Session-End-Check (14 Punkte)
 ```
 
@@ -269,14 +270,4 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ### Daten (sofort umsetzbar)
 - **`peak_year`-Feld** in games_extended: Jahr der größten Beliebtheit → neuer Timeline-Modus
-- **Batch 3: Indie-Klassiker** (20 weitere Spiele: Stardew Valley, Hollow Knight, Celeste, …)
-- **publisher_lat/lng** in games_extended: ermöglicht `games_pin_publisher`-Modus
-
-### Neue Modi (Daten bereits vorhanden)
-- `games_match_vorbild_land` — "In welchem Land spielt dieses Spiel?"
-- `hl_games_pegi` — PEGI-Rating H/L (analog zu USK)
-- `games_match_esports` — Hat dieses Spiel eine E-Sports-Szene?
-
-### Infrastruktur
-- **Auto-Backup-Cleanup**: `gen.py.bak_*` älter als 7 Tage automatisch löschen
-- **Session-End-Check**: Script das alle 5 Checkli
+- **Batch 3: Indie-Klassiker** (20 weitere Spiele: Stardew Va
