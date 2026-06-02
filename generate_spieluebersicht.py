@@ -222,6 +222,10 @@ def _get_count(mid, dispatch, store, sport_poi):
         if n: return f'{n} POI-Orte', n
         print(f'WARNING: No data count for mode \'{mid}\' (genSportPoiQ/{key})')
         return '—', 0
+    if fn in {'genMythMatchExt','genMythPinQ'}:
+        n=len(store.get('mythologie',{}));return(f'{n} Gottheiten',n)if n else('40 Gottheiten',40)
+    if fn in {'genArchHLExt','genArchMatchExt','genArchPinQ'}:
+        n=len(store.get('architektur',{}));return(f'{n} Bauwerke',n)if n else('40 Bauwerke',40)
     if fn in {'genFilmeHLExt','genFilmeMatchExt'}:
         n=len(store.get('filme_extended',{}));return(f'{n} Filme',n)if n else('40 Filme',40)
     if fn in {'genMusikHLExt','genMusikMatchExt'}:

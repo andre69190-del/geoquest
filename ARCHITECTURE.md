@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 427 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.38 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
+**Version:** Phase 428 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.39 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -1132,6 +1132,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **425** | patch_425.py | **Hilfe-Button sichtbar gemacht: ?-Button zusaetzlich in die sichtbare Home-Kopfzeile (_hdr, eingeloggt + Gast) neben das Feedback-Symbol gesetzt. Vorher nur in der GEOQUEST-Logo-Leiste, die auf dem Home-Tab nicht sichtbar ist -> Hilfe wurde nicht gefunden. verify 146/146, validate 0 Warnings.** |
 | **426** | patch_426.py | **Home-Kopfzeile entzerrt (war gequetscht): Begruessung+Streak links, einheitliche runde 34px ?/Feedback-Icons rechts; Streak-Pille bricht nicht mehr um (nowrap); Gast-Variante: 'Fortschritt sichern' jetzt eigene volle Zeile statt eingequetscht. verify 146/146, validate 0 Warnings.** |
 | **427** | patch_427.py | **2 neue Kategorien: Kino & Film + Musikgeschichte. 40 Filme + 40 Künstler (global: DE/FR/JP/PL/IN/KR/AU/CO). 15 neue Modi: 8x Film (H/L+Match+Timeline) + 7x Musik (H/L+Match+Timeline). Neue Generatoren genFilmeHLExt/MatchExt/genMusikHLExt/MatchExt. Validator-Update. MODES 814->829** |
+| **428** | patch_428.py | **2 neue Kategorien: Mythologie & Sagenwelt (40 Gottheiten: GR/NO/AE/RO/JP/AZ/MES) + Architektur & Megabauten (40 Bauwerke: Wolkenkratzer/Brücken/Staudämme/Tunnel/Tempel/Denkmäler). 11 neue Modi: myth_match_domain/kultur/typ/roemisch + myth_pin_herkunft + hl_arch_height/span/baujahr + arch_match_land/typ + arch_pin_megaprojects. MODES 829->840** |
 
 ---
 

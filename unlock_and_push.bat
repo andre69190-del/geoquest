@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 427. 2 neue Kategorien: Kino & Film + Musikgeschichte. 40 Filme + 40 Künstler (global: DE/FR/JP/PL/IN/KR/AU/CO). 15 neue Modi: 8x Film (H/L+Match+Timeline) + 7x Musik (H/L+Match+Timeline). Neue Generatoren genFilmeHLExt/MatchExt/genMusikHLExt/MatchExt. Validator-Update. MODES 814->829. verify: 148/148."
+git commit -m "Content: Phase 428. 2 neue Kategorien: Mythologie & Sagenwelt (40 Gottheiten: GR/NO/AE/RO/JP/AZ/MES) + Architektur & Megabauten (40 Bauwerke: Wolkenkratzer/Brücken/Staudämme/Tunnel/Tempel/Denkmäler). 11 neue Modi: myth_match_domain/kultur/typ/roemisch + myth_pin_herkunft + hl_arch_height/span/baujahr + arch_match_land/typ + arch_pin_megaprojects. MODES 829->840. verify: 150/150."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

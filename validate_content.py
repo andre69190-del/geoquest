@@ -617,6 +617,37 @@ def check_games_extended(filename, data):
             info(filename, "logik:f2p", name,
                  f"f2p=False aber downloads_mio={entry.get('downloads_mio')} > 0 — pruefen")
 
+def check_mythologie(filename, data):
+    """Validiert data/mythologie.json"""
+    KATEG = {"Griechisch","Nordisch","Ägyptisch","Römisch","Japanisch","Aztekisch","Mesopotamisch","Keltisch"}
+    TYPEN = {"Gott","Göttin","Kreatur","Titan","Halbgott"}
+    REQUIRED = ["kategorie","typ","domain","herkunftsland","lat","lng"]
+    if not isinstance(data, dict):
+        warn(filename,"struktur","root","mythologie.json muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict): warn(filename,"eintrag",name,"kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry: warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        if entry.get("kategorie") not in KATEG:
+            warn(filename,"enum:kategorie",name,f"Kategorie {entry.get('kategorie')!r} unbekannt")
+        if entry.get("typ") not in TYPEN:
+            warn(filename,"enum:typ",name,f"Typ {entry.get('typ')!r} unbekannt")
+
+def check_architektur(filename, data):
+    """Validiert data/architektur.json"""
+    KATEG = {"Wolkenkratzer","Brücke","Staudamm","Tunnel","Tempel","Denkmal"}
+    REQUIRED = ["kategorie","land","lat","lng","baujahr"]
+    if not isinstance(data, dict):
+        warn(filename,"struktur","root","architektur.json muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict): warn(filename,"eintrag",name,"kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry: warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        if entry.get("kategorie") not in KATEG:
+            warn(filename,"enum:kategorie",name,f"Kategorie {entry.get('kategorie')!r} unbekannt")
+        if not isinstance(entry.get("baujahr"),(int,float)):
+            warn(filename,"typ:baujahr",name,"baujahr muss numerisch sein")
+
 def check_filme_extended(filename, data):
     """Validiert data/filme_extended.json (8 Pflichtfelder, Enums, Typen)."""
     KATEGORIE = {"Blockbuster","Klassiker","Franchise","Indie"}
@@ -786,6 +817,10 @@ def detect_and_check(filename):
                         if bad:
                             warn(filename, "auto_ccm", bad[0],
                                  f"{len(bad)} Eintraege mit ccm=0 (EVs muessen ausgeschlossen sein)")
+    elif name == "mythologie.json":
+        check_mythologie(filename, data)
+    elif name == "architektur.json":
+        check_architektur(filename, data)
     elif name == "filme_extended.json":
         check_filme_extended(filename, data)
     elif name == "musik_extended.json":

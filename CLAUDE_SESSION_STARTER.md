@@ -12,10 +12,10 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 427):
+Aktueller Stand (Stand: Phase 428):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
-- 829 Spielmodi in MODES-Array (gen.py)
-- 49 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
+- 840 Spielmodi in MODES-Array (gen.py)
+- 51 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
 - Patch-System: patches/patch_NNN_description.py via run_patch.py
 - Zero-Bug-Policy: assert c.count(old)==1 vor jedem c.replace()
 
@@ -140,8 +140,8 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 python3 check_session.py   # prüft ALLES in einem Rutsch (14 Checks)
 ```
 Oder manuell:
-- [ ] verify.py: X/146 passed, 0 failed
-- [ ] validate_content.py: 47/47 OK, 0 warnings
+- [ ] verify.py: X/150 passed, 0 failed
+- [ ] validate_content.py: 51/51 OK, 0 warnings
 - [ ] ARCHITECTURE.md: Phase + Modi-Zahl aktualisiert
 - [ ] README.md: Deployed-Zeile aktualisiert
 - [ ] landing.html: Modi-Zahl aktualisiert
@@ -193,19 +193,19 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 427)
+## AKTUELLER PROJEKT-STATUS (Phase 428)
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **829** |
+| Spielmodi | **840** |
 | Fahrzeuge (autos_extended) | 431 |
 | Spiele (games_extended) | 70 |
 | Konsolen (konsolen.json) | 30 |
 | JSON-Datendateien | 47 |
 | gen.py Größe | ~1.53 MB |
 | GeoQuest.html Größe | ~5.5 MB |
-| verify.py | 148/148 ✓ |
-| validate_content.py | 49/49 ✓ 0 Warnings |
+| verify.py | 150/150 ✓ |
+| validate_content.py | 51/51 ✓ 0 Warnings |
 | Sprachen vollständig (de/en/pl) | ✓ |
 | Offline/PWA | ✓ |
 | iOS Timeline-Bug | ✅ gefixt (Phase 412) |
