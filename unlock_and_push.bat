@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 434. Phase 434: Datenbasis-Upgrade. generate_spieluebersicht.py: 3 neue Fn-Mappings (0 Warnings). literatur_extended 40→80, robotik_extended 40→80. timeline.json: robot_jahr auf 80 Einträge. verify: 160/160. verify: 160/160."
+git commit -m "Content: Phase 435. Phase 435 (432-Fortsetzung): Kategorien Weltgeschichte & Imperien + Webkultur & Social Media. 12 neue Modi. 4 neue JSON-Dateien (je 40 Einträge). Generatoren, i18n DE/EN/PL, timeline. verify: 163/163. MODES: 874→886. verify: 163/163."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

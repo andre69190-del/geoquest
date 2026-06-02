@@ -232,6 +232,10 @@ def _get_count(mid, dispatch, store, sport_poi):
         n=len(store.get('medizin_extended',{}));return(f'{n} Einträge',n)if n else('40 Einträge',40)
     if fn in {'genWirtschaftHLExt','genWirtschaftMatchExt'}:
         n=len(store.get('wirtschaft_extended',{}));return(f'{n} Unternehmen',n)if n else('40 Unternehmen',40)
+    if fn in {'genGeschichteHLExt','genGeschichteMatchExt'}:
+        n=len(store.get('geschichte_extended',{}));return(f'{n} Ereignisse',n)if n else('40 Ereignisse',40)
+    if fn in {'genWebkulturHLExt','genWebkulturMatchExt'}:
+        n=len(store.get('webkultur_extended',{}));return(f'{n} Einträge',n)if n else('40 Einträge',40)
     if fn in {'genMythMatchExt','genMythPinQ'}:
         n=len(store.get('mythologie',{}));return(f'{n} Gottheiten',n)if n else('40 Gottheiten',40)
     if fn in {'genArchHLExt','genArchMatchExt','genArchPinQ'}:

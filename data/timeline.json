@@ -3269,5 +3269,335 @@
         "year": 2021
       }
     ]
+  },
+  "hist_start": {
+    "prompt": "Was begann früher?",
+    "items": [
+      {
+        "n": "Steinzeit",
+        "year": -3300000
+      },
+      {
+        "n": "Bronzezeit",
+        "year": -3300
+      },
+      {
+        "n": "Antike",
+        "year": -800
+      },
+      {
+        "n": "Olympische Spiele Antike",
+        "year": -776
+      },
+      {
+        "n": "Persisches Achämenidenreich",
+        "year": -550
+      },
+      {
+        "n": "Battle of Marathon",
+        "year": -490
+      },
+      {
+        "n": "Battle of Thermopylae",
+        "year": -480
+      },
+      {
+        "n": "Alexanderreich",
+        "year": -336
+      },
+      {
+        "n": "Han-Dynastie",
+        "year": -206
+      },
+      {
+        "n": "Römisches Reich",
+        "year": -27
+      },
+      {
+        "n": "Byzantinisches Reich",
+        "year": 330
+      },
+      {
+        "n": "Mittelalter",
+        "year": 476
+      },
+      {
+        "n": "Arabisches Abbasidenkalifat",
+        "year": 750
+      },
+      {
+        "n": "Karolingerreich",
+        "year": 768
+      },
+      {
+        "n": "Battle of Hastings",
+        "year": 1066
+      },
+      {
+        "n": "Mongolisches Reich",
+        "year": 1206
+      },
+      {
+        "n": "Osmanisches Reich",
+        "year": 1299
+      },
+      {
+        "n": "Renaissance",
+        "year": 1300
+      },
+      {
+        "n": "Schwarzer Tod",
+        "year": 1347
+      },
+      {
+        "n": "Ming-Dynastie",
+        "year": 1368
+      },
+      {
+        "n": "Aztekisches Reich",
+        "year": 1428
+      },
+      {
+        "n": "Inkareich",
+        "year": 1438
+      },
+      {
+        "n": "Erfindung des Buchdrucks",
+        "year": 1440
+      },
+      {
+        "n": "Kolonialzeit",
+        "year": 1492
+      },
+      {
+        "n": "Entdeckung Amerikas",
+        "year": 1492
+      },
+      {
+        "n": "Mogulenreich",
+        "year": 1526
+      },
+      {
+        "n": "Britisches Empire",
+        "year": 1583
+      },
+      {
+        "n": "Aufklärung",
+        "year": 1690
+      },
+      {
+        "n": "Russisches Zarenreich",
+        "year": 1721
+      },
+      {
+        "n": "Industrielle Revolution",
+        "year": 1760
+      },
+      {
+        "n": "Amerikanische Revolution",
+        "year": 1775
+      },
+      {
+        "n": "Französische Revolution",
+        "year": 1789
+      },
+      {
+        "n": "Battle of Waterloo",
+        "year": 1815
+      },
+      {
+        "n": "Erster Weltkrieg",
+        "year": 1914
+      },
+      {
+        "n": "Russische Revolution",
+        "year": 1917
+      },
+      {
+        "n": "Zweiter Weltkrieg",
+        "year": 1939
+      },
+      {
+        "n": "Battle of Stalingrad",
+        "year": 1942
+      },
+      {
+        "n": "Kalter Krieg",
+        "year": 1947
+      },
+      {
+        "n": "Erste Mondlandung",
+        "year": 1969
+      },
+      {
+        "n": "Fall der Berliner Mauer",
+        "year": 1989
+      }
+    ]
+  },
+  "web_start": {
+    "prompt": "Was startete früher?",
+    "items": [
+      {
+        "n": "Wikipedia",
+        "year": 2001
+      },
+      {
+        "n": "LinkedIn",
+        "year": 2003
+      },
+      {
+        "n": "Facebook",
+        "year": 2004
+      },
+      {
+        "n": "GoPro",
+        "year": 2004
+      },
+      {
+        "n": "YouTube",
+        "year": 2005
+      },
+      {
+        "n": "Reddit",
+        "year": 2005
+      },
+      {
+        "n": "Twitter/X",
+        "year": 2006
+      },
+      {
+        "n": "T-Series",
+        "year": 2006
+      },
+      {
+        "n": "Rickroll",
+        "year": 2007
+      },
+      {
+        "n": "iPhone (1. Gen.)",
+        "year": 2007
+      },
+      {
+        "n": "MKBHD",
+        "year": 2008
+      },
+      {
+        "n": "WhatsApp",
+        "year": 2009
+      },
+      {
+        "n": "Instagram",
+        "year": 2010
+      },
+      {
+        "n": "Pinterest",
+        "year": 2010
+      },
+      {
+        "n": "PewDiePie",
+        "year": 2010
+      },
+      {
+        "n": "Gronkh",
+        "year": 2010
+      },
+      {
+        "n": "iPad",
+        "year": 2010
+      },
+      {
+        "n": "Snapchat",
+        "year": 2011
+      },
+      {
+        "n": "Twitch",
+        "year": 2011
+      },
+      {
+        "n": "Ninja",
+        "year": 2011
+      },
+      {
+        "n": "LeFloid",
+        "year": 2011
+      },
+      {
+        "n": "Nyan Cat",
+        "year": 2011
+      },
+      {
+        "n": "MrBeast",
+        "year": 2012
+      },
+      {
+        "n": "Bibisbeautypalace",
+        "year": 2012
+      },
+      {
+        "n": "Gangnam Style",
+        "year": 2012
+      },
+      {
+        "n": "Raspberry Pi",
+        "year": 2012
+      },
+      {
+        "n": "Telegram",
+        "year": 2013
+      },
+      {
+        "n": "Harlem Shake",
+        "year": 2013
+      },
+      {
+        "n": "Dogecoin-Meme",
+        "year": 2013
+      },
+      {
+        "n": "Luisito Comunica",
+        "year": 2013
+      },
+      {
+        "n": "Ice Bucket Challenge",
+        "year": 2014
+      },
+      {
+        "n": "Twitch Streamer xQc",
+        "year": 2014
+      },
+      {
+        "n": "Discord",
+        "year": 2015
+      },
+      {
+        "n": "TikTok",
+        "year": 2016
+      },
+      {
+        "n": "AirPods",
+        "year": 2016
+      },
+      {
+        "n": "Nintendo Switch",
+        "year": 2017
+      },
+      {
+        "n": "Charli D'Amelio",
+        "year": 2019
+      },
+      {
+        "n": "Khaby Lame",
+        "year": 2020
+      },
+      {
+        "n": "PlayStation 5",
+        "year": 2020
+      },
+      {
+        "n": "Oculus Quest 2",
+        "year": 2020
+      }
+    ]
   }
 }

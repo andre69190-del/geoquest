@@ -687,6 +687,39 @@ def check_wirtschaft_extended(filename, data):
         if not isinstance(entry.get("mitarbeiter_tausend"), (int, float)):
             warn(filename,"typ:mitarbeiter_tausend",name,"mitarbeiter_tausend muss float sein")
 
+def check_geschichte_extended(filename, data):
+    """Validiert data/geschichte_extended.json"""
+    KATEG = {"Imperium","Epoche","Ereignis","Schlacht"}
+    REQUIRED = ["kategorie","start_jahr","dauer_jahre","ausdehnung_mio_km2","zentrum_hauptstadt","schluesselfigur"]
+    if not isinstance(data, dict): warn(filename,"struktur","root","muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict): warn(filename,"eintrag",name,"kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry: warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        if entry.get("kategorie") not in KATEG:
+            warn(filename,"enum:kategorie",name,f"Kategorie {entry.get('kategorie')!r} unbekannt")
+        if not isinstance(entry.get("start_jahr"), int):
+            warn(filename,"typ:start_jahr",name,"start_jahr muss int sein")
+        dj = entry.get("dauer_jahre")
+        if dj is not None and not isinstance(dj, int):
+            warn(filename,"typ:dauer_jahre",name,"dauer_jahre muss int oder null sein")
+
+def check_webkultur_extended(filename, data):
+    """Validiert data/webkultur_extended.json"""
+    KATEG = {"Plattform","Creator","Meme","Hardware"}
+    REQUIRED = ["kategorie","start_jahr","reichweite_mio","ursprungsland","gruender_creator"]
+    if not isinstance(data, dict): warn(filename,"struktur","root","muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict): warn(filename,"eintrag",name,"kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry: warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        if entry.get("kategorie") not in KATEG:
+            warn(filename,"enum:kategorie",name,f"Kategorie {entry.get('kategorie')!r} unbekannt")
+        if not isinstance(entry.get("start_jahr"), int):
+            warn(filename,"typ:start_jahr",name,"start_jahr muss int sein")
+        if not isinstance(entry.get("reichweite_mio"), (int, float)):
+            warn(filename,"typ:reichweite_mio",name,"reichweite_mio muss float sein")
+
 def check_mythologie(filename, data):
     """Validiert data/mythologie.json"""
     KATEG = {"Griechisch","Nordisch","Ägyptisch","Römisch","Japanisch","Aztekisch","Mesopotamisch","Keltisch"}
@@ -930,6 +963,10 @@ def detect_and_check(filename):
         check_medizin_extended(filename, data)
     elif name == "wirtschaft_extended.json":
         check_wirtschaft_extended(filename, data)
+    elif name == "geschichte_extended.json":
+        check_geschichte_extended(filename, data)
+    elif name == "webkultur_extended.json":
+        check_webkultur_extended(filename, data)
     elif name == "mythologie.json":
         check_mythologie(filename, data)
     elif name == "architektur.json":

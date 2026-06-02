@@ -202,3 +202,5 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | inline gen.py + regional_extended.json + validate_content.py | 433 | EU-Erweiterung Regionale Kulinarik: 30→80 Einträge, 22 Länder (DE/AT/CH + 19 EU). Bugfix: match_regional_land fixedPool entfernt → echte Datenländer als Pool. Label: Regionale & EU-Kulinarik. validate LAND-Enum EU-weit. verify: 160/160 |
 
 | inline | 434 | Datenbasis-Upgrade: generate_spieluebersicht.py 3 neue Fn-Mappings (0 Warnings). literatur_extended 40→80. robotik_extended 40→80. timeline robot_jahr auf 80. verify: 160/160 |
+
+| patch_432_hist_web (inline) | 435 | Kategorien Weltgeschichte & Imperien + Webkultur & Social Media. 12 Modi (hl_hist_ausdehnung/dauer/start, hist_match_figur, timeline_hist_start, ws_hist_renaissance, hl_web_reichweite/start, web_match_land/kategorie, timeline_web_start, ws_web_algorithmus). timeline hist_start+web_start. verify: 163/163. MODES: 874→886 |

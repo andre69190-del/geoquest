@@ -1,0 +1,37 @@
+{
+  "renaissance": {
+    "word": "RENAISSANCE",
+    "validWords": {
+      "de": [
+        "REIN", "SEIN", "NEIN", "EINE", "RASSE", "NASSE", "ESSEN", "RIESEN",
+        "REISEN", "SEINE", "SENSE", "ANRISSE", "EINS", "NASEN", "RASSEN",
+        "REISE", "NASE", "ARSEN", "SINNE", "REINEN", "NIESEN", "SEINS", "EINES"
+      ],
+      "en": [
+        "CRANE", "RISEN", "SNARE", "INNER", "RINSE", "SIREN", "NICER",
+        "REINS", "EARNS", "NICE", "RAIN", "CANE", "RICE", "SCENE", "INSANE",
+        "INANE", "SEINE"
+      ],
+      "pl": [
+        "REIN", "SEIN", "NEIN", "EINE", "EINS"
+      ]
+    }
+  },
+  "mittelalter": {
+    "word": "MITTELALTER",
+    "validWords": {
+      "de": [
+        "MITTEL", "MITTLER", "MALER", "MALTER", "LITER", "LEITER", "TITEL",
+        "LATTE", "ALTER", "MALEREI", "TELLER", "TELL", "REIM", "ELITE",
+        "MATTE", "MATTER", "TEIL", "LITERAT", "MATERIE", "ATELIER"
+      ],
+      "en": [
+        "MALT", "TILE", "MIRE", "LITE", "EARL", "MALE", "TALE", "LAME",
+        "LITER", "TITLE", "RIAL", "MAIL", "TRAIL", "TILER", "METAL", "MILLET"
+      ],
+      "pl": [
+        "MITTEL", "LITER", "ALTER", "TEIL", "REIM"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "algorithmus": {
+    "word": "ALGORITHMUS",
+    "validWords": {
+      "de": [
+        "MORAL", "TURM", "MAST", "LAUT", "TUMOR", "HUMOR", "ORAL", "MAUL",
+        "LOGIS", "MOHR", "SOLARIUM", "RITUAL", "LOTUS", "GLAMOUR", "STURM",
+        "HOLM", "ARMUT", "GOURAMI"
+      ],
+      "en": [
+        "MORTAL", "STORM", "HAUL", "ORAL", "GIST", "MOST", "LUST", "MALT",
+        "SLOG", "GROAT", "SLIGHT", "HUMOR", "GLAMOUR", "RITUAL", "GHOST",
+        "TOUGH", "ULTRA"
+      ],
+      "pl": [
+        "MORAL", "TURM", "MAST", "ORAL", "RITUAL"
+      ]
+    }
+  },
+  "influencer": {
+    "word": "INFLUENCER",
+    "validWords": {
+      "de": [
+        "REIN", "NEIN", "EINE", "FEIN", "FEUER", "FERNE", "FEUERN", "LEIERN",
+        "FIELEN", "REIFE", "NIEREN", "FREUEN", "REIFEN", "FEILEN", "FERNEN",
+        "NIERE", "URIN", "LEINE", "REINEN", "LINER"
+      ],
+      "en": [
+        "LINER", "LURE", "RUNE", "UNCLE", "NICE", "FUEL", "LINE", "FINE",
+        "RULE", "LIEN", "RIFE", "FERN", "RILE", "CURL", "CLUE", "RIFLE",
+        "FINER", "INCUR", "INURE", "FLUENCE"
+      ],
+      "pl": [
+        "REIN", "NEIN", "EINE", "FEIN", "FEUER"
+      ]
+    }
+  }
+}
