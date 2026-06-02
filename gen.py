@@ -11343,25 +11343,33 @@ function genOddOneOutQ(){
 }
 window.genOddOneOutQ=genOddOneOutQ;
 
-/* Phase 424: genClueCountryQ */
+/* Phase 424b: genClueCountryQ — Distraktor-Fix: gleicher Kontinent */
 function genClueCountryQ(){
   if(!CAPITALS||!CAPITALS.length)return null;
   var CD={"Africa":"Afrika","Asia":"Asien","Europe":"Europa","North America":"Nordamerika","South America":"S\u00fcdamerika","Oceania":"Ozeanien"};
   var tries=0;
-  while(tries++<40){
+  while(tries++<50){
     var idx=~~(rng()*CAPITALS.length),cap=CAPITALS[idx];
-    if(!cap||!cap.cc||!cap.capital)continue;
+    if(!cap||!cap.cc||!cap.capital||!cap.continent)continue;
     var nd=getCountryName(cap.cc,"de");if(!nd)continue;
-    var oth=CAPITALS.filter(function(x){return x.cc!==cap.cc&&getCountryName(x.cc,"de");});
-    if(oth.length<3)continue;
-    for(var i=oth.length-1;i>0;i--){var t=~~(rng()*(i+1));var ti=oth[i];oth[i]=oth[t];oth[t]=ti;}
-    var opts=[nd].concat(oth.slice(0,3).map(function(x){return getCountryName(x.cc,"de");}));
+    /* Distraktoren: gleicher Kontinent für Hint-1-Fairness */
+    var sameCont=CAPITALS.filter(function(x){
+      return x.cc!==cap.cc&&x.continent===cap.continent&&getCountryName(x.cc,"de");
+    });
+    if(sameCont.length<3)continue;
+    for(var i=sameCont.length-1;i>0;i--){var t=~~(rng()*(i+1));var ti=sameCont[i];sameCont[i]=sameCont[t];sameCont[t]=ti;}
+    var opts=[nd].concat(sameCont.slice(0,3).map(function(x){return getCountryName(x.cc,"de");}));
     for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
     var cur="";
     if(CURRENCIES_DATA&&CURRENCIES_DATA.length){var cf=CURRENCIES_DATA.filter(function(x){return x.cc===cap.cc;});if(cf.length)cur=cf[0].currency||cf[0].currencyLabel||"";}
-    var h1=(CD[cap.continent]||cap.continent||"")+(cap.subregion?" ("+cap.subregion+")":"");
-    if(!h1||!cap.capital)continue;
-    return{type:"clue_country",hints:["\u{1F30D} "+h1,"\u{1F3DB}\uFE0F "+cap.capital,(cur?"\u{1F4B1} "+cur:"\u{1F310} "+cap.subregion)],opts:opts,ans:nd,lid:"clue_"+idx,cc:cap.cc};
+    var contDE=CD[cap.continent]||cap.continent;
+    /* Hint 1: nur Kontinent (kein Sub-Region-Spoiler) */
+    /* Hint 2: Sub-Region (schränkt ein) */
+    /* Hint 3: Hauptstadt (sollte eindeutig sein) */
+    var h3=cur?"\u{1F4B1} "+cur:"\u{1F3DB}\uFE0F "+cap.capital;
+    return{type:"clue_country",
+      hints:["\u{1F30D} "+contDE,"\u{1F5FA}\uFE0F "+cap.subregion,"\u{1F3DB}\uFE0F "+cap.capital+(cur?" \u00b7 "+cur:"")],
+      opts:opts,ans:nd,lid:"clue_"+idx,cc:cap.cc};
   }return null;
 }
 window.genClueCountryQ=genClueCountryQ;
