@@ -229,7 +229,7 @@ def _get_count(mid, dispatch, store, sport_poi):
     if fn == 'genFixedPoolMatchQ':
         print(f'WARNING: No data count for mode \'{mid}\' (genFixedPoolMatchQ)')
         return '—', 0
-    _KONSOLEN_FNS = {'genKonsolenHL','genKonsolenMatch','genKonsolenHandheldQ'}
+    _KONSOLEN_FNS = {'genKonsolenHL','genKonsolenMatch','genKonsolenHandheldQ','genKonsolenSpielQ'}
     if fn in _KONSOLEN_FNS:
         n = len(store.get('konsolen', {}))
         return f'{n} Konsolen', n

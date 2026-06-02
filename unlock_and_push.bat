@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 422. Tech-Debt + UX: totes CSS-Duplikat (~555 Zeilen <style> in _HTML_HEAD) aus gen.py entfernt (echte Quelle bleibt geoquest_css.txt). Kategorie-Chips barrierefrei: role=button, tabindex, aria-label, Tastatur (Enter/Space). mode-desc .65rem->.68rem. verify 146/146, validate 0 Warnings.. verify: 146/146."
+git commit -m "Content: Phase 423. 8 neue Modi aus ungenutzten Datenfeldern: hl_konsolen_erscheinungsjahr/eingestellt, konsolen_match_spiel/aufloesung, hl_auto_nordschleife/baujahr_ende, games_match_publisher_land, hl_games_publisher_lng. MODES 802->810. verify: 146/146."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

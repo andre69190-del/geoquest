@@ -2946,6 +2946,10 @@ const MODES=[
     {id:"hl_auto_co2",      icon:"\u{1F333}\u{1F4A8}",title:"Auto-Quartett: CO\u2082-Aussto\u00df",group:"autos",prompt:"Welches Fahrzeug st\u00f6\u00dft mehr CO\u2082 aus?",desc:"Approximiert aus Kraftstoffverbrauch (nur Verbrenner)",  prompt_en:"Which combustion car emits more CO\u2082?"},
     {id:"auto_match_dekade",icon:"\u{1F5C3}\uFE0F",title:"Auto-Quiz: Jahrzehnt",        group:"autos",prompt:"Aus welchem Jahrzehnt stammt dieses Fahrzeug?",    desc:"50er / 60er / 70er / … bis 2020er",                          prompt_en:"From which decade does this car originate?"},
     {id:"auto_generationen_match",icon:"\u{1F9EC}\u{1F697}",title:"Modell-Generationen-Match",group:"autos",prompt:"Wann erschien dieses Modell der Modellreihe?",desc:"Distraktor-Optionen sind echte andere Generationen \u2014 21 Modellreihen erkannt",prompt_en:"When did this generation of the model line appear?"},
+    {id:"hl_auto_nordschleife",icon:"\u{1F3C1}",title:"Auto-Quartett: Nordschleife",group:"autos",prompt:"Wer war schneller auf der Nürburgring-Nordschleife?",desc:"Rundenzeiten in Sekunden — niedrigere Zeit gewinnt.",prompt_en:"Which car was faster at the N\u00fcrburgring Nordschleife?"},
+    {id:"hl_auto_baujahr_ende",icon:"\u{1F4C5}",title:"Auto-Quartett: Produktionsende",group:"autos",prompt:"Welches Auto wurde später eingestellt?",desc:"Das Jahr, in dem das letzte Exemplar das Band verließ.",prompt_en:"Which car had a later production end year?"},
+    {id:"games_match_publisher_land",icon:"\u{1F30D}",title:"Games: Publisher-Land",group:"games",prompt:"Aus welchem Land kommt der Publisher dieses Spiels?",desc:"Von den USA bis Finnland — wo sitzen die großen Publisher?",prompt_en:"Which country is this game's publisher from?"},
+    {id:"hl_games_publisher_lng",icon:"\u{1F9ED}",title:"Games: Publisher — Wer liegt östlicher?",group:"games",prompt:"Welcher Publisher sitzt weiter östlich?",desc:"Vom Silicon Valley bis Tokio — Längengrade der Spielebranche.",prompt_en:"Which game publisher is located further east?"},
     {id:"games_pin",          icon:"\u{1F579}\uFE0F",title:"Game-Studio pinnen",        group:"games",prompt:"Wo hat das Entwicklerstudio dieses Spiels seinen Hauptsitz?",      desc:"50 Studios weltweit \u2014 von Tokyo bis Helsinki",         prompt_en:"Where is the game's developer studio located?"},
     {id:"games_match_land",   icon:"\u{1F30D}\u{1F3AE}",title:"Game-Studio: Herkunftsland",group:"games",prompt:"Aus welchem Land kommt das Studio hinter diesem Spiel?",        desc:"Japan, USA, Schweden, Polen \u2014 50 Studios",              prompt_en:"Which country is this game studio from?"},
     {id:"games_match_genre",  icon:"\u{1F3AE}",title:"Spielgenre zuordnen",               group:"games",prompt:"Welchem Genre geh\u00f6rt dieses Spiel an?",                    desc:"Battle Royale, RPG, MOBA, Sandbox \u2014 15 Genres",        prompt_en:"Which genre does this game belong to?"},
@@ -2972,6 +2976,10 @@ const MODES=[
     {id:"hw_match_generation",icon:"🔢",title:"Hardware: Konsolengeneration",group:"hardware",prompt:"Zu welcher Konsolengeneration gehört diese Konsole?",desc:"Generation 1 (1972) bis Generation 9 (2020+)",prompt_en:"Which console generation does this belong to?"},
     {id:"hl_hw_year",icon:"📅",title:"Hardware-Quartett: Release-Jahr",group:"hardware",prompt:"Welche Konsole erschien später?",desc:"50 Jahre Konsolen-Geschichte im Vergleich",prompt_en:"Which console was released later?"},
     {id:"hl_hw_units",icon:"💰",title:"Hardware-Quartett: Verkaufszahlen",group:"hardware",prompt:"Welche Konsole verkaufte sich häufiger?",desc:"Von 0.3 Mio. (Odyssey) bis 155 Mio. (PS2)",prompt_en:"Which console sold more units?"},
+    {id:"hl_konsolen_erscheinungsjahr",icon:"\u{1F4C5}",title:"Konsolen-Quartett: Erscheinungsjahr",group:"games",prompt:"Welche Konsole erschien später?",desc:"Von 1972 (Odyssey) bis 2020 — wann kam die Konsole?",prompt_en:"Which console was released later?"},
+    {id:"hl_konsolen_eingestellt",icon:"⚰️",title:"Konsolen-Quartett: Produktionsende",group:"games",prompt:"Welche Konsole wurde später eingestellt?",desc:"Das offizielle Ende der Produktion — manche laufen jahrzehntelang.",prompt_en:"Which console was discontinued later?"},
+    {id:"konsolen_match_spiel",icon:"\u{1F3AE}",title:"Konsolen-Quiz: Welche Konsole?",group:"games",prompt:"Für welche Konsole ist dieses Spiel bekannt?",desc:"89 Klassiker — erkenne die Heimkonsole anhand des Spiels.",prompt_en:"Which console is this game known for?"},
+    {id:"konsolen_match_aufloesung",icon:"\u{1F5A5}\uFE0F",title:"Konsolen-Quiz: Auflösung",group:"games",prompt:"Welche maximale Auflösung unterstützt diese Konsole?",desc:"Von 240p bis 4K — die Evolution der Grafik.",prompt_en:"What is the maximum resolution of this console?"},
     {id:"games_baujahr_mc",   icon:"\u{1F5D3}\uFE0F\u2753",title:"Gaming: Erscheinungsjahr raten",group:"games",prompt:"In welchem Jahr erschien dieses Spiel erstmals?",  desc:"4 Jahreszahlen \u2014 welche ist die richtige?",             prompt_en:"In which year was this game first released?"},
     {id:"games_match_publisher",icon:"\u{1F3E2}",title:"Game-Publisher",                 group:"games",prompt:"Welcher Publisher steckt hinter diesem Spiel?",             desc:"Von Nintendo bis Epic Games — 35 Publisher",            prompt_en:"Which publisher is behind this game?"},
     {id:"games_match_f2p",      icon:"\u{1F193}",title:"F2P oder Kaufspiel?",            group:"games",prompt:"Ist dieses Spiel kostenlos spielbar?",                      desc:"Free-to-Play oder Vollpreis — 26 vs. 24 Spiele",        prompt_en:"Is this game free-to-play or paid?"},
@@ -3662,7 +3670,7 @@ const MODE_CATS={
     "ws_sportwissen_fussball","ws_sportwissen_olympiade","ws_sportwissen_weltmeister",
     "ws_sportwissen_startschuss","ws_sportwissen_athletik","ws_sportwissen_sportgeist","timeline_sport_stadien"
   ],cost:0},
-  games:{label:"Games & Hardware",icon:"\u{1F3AE}",modes:["games_pin","games_match_land","games_match_genre","games_match_adaption","games_match_plattform","games_match_kategorie","games_match_publisher","games_match_f2p","hl_games_release","hl_games_vk","hl_games_downloads","hl_games_metacritic","hl_games_usk","hl_games_sequel","hl_games_peak","hl_games_dev_lat","games_match_protagonist","games_match_pub_is_dev","hl_games_howlong","games_match_esports","hl_games_pegi","hl_games_peak_year","hl_games_publisher_lat","games_peak_year_mc","games_baujahr_mc","timeline_konsolen_bj","hl_konsolen_verkauf","hl_konsolen_preis","match_konsolen_hersteller","match_konsolen_medium","match_konsolen_handheld","hl_konsolen_ram","hl_konsolen_cpu","match_konsolen_generation","match_konsolen_land","hw_baujahr_mc","hw_match_company","hw_match_type","hw_match_generation","hl_hw_year","hl_hw_units"],cost:0},  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj","timeline_auto_bj","hl_auto_gewicht","hl_auto_drehmoment","hl_auto_cw","hl_auto_kofferraum","hl_auto_laenge","hl_auto_neupreis","hl_auto_tank","hl_auto_akku","hl_auto_reichweite","hl_auto_verbrauch_l","hl_auto_verbrauch_e","hl_auto_zylinder","auto_match_antrieb","auto_match_karosserie","auto_match_antriebsart","auto_match_motorbauart","hl_auto_wendekreis","hl_auto_zuladung","auto_match_konzern","auto_match_getriebe","auto_match_turbo","auto_match_sitze","auto_baujahr_mc","auto_match_land","hl_auto_ps_kg","hl_auto_co2","auto_match_dekade","auto_generationen_match"],cost:0},
+  games:{label:"Games & Hardware",icon:"\u{1F3AE}",modes:["games_pin","games_match_land","games_match_genre","games_match_adaption","games_match_plattform","games_match_kategorie","games_match_publisher","games_match_f2p","hl_games_release","hl_games_vk","hl_games_downloads","hl_games_metacritic","hl_games_usk","hl_games_sequel","hl_games_peak","hl_games_dev_lat","games_match_protagonist","games_match_pub_is_dev","hl_games_howlong","games_match_esports","hl_games_pegi","hl_games_peak_year","hl_games_publisher_lat","games_peak_year_mc","games_baujahr_mc","timeline_konsolen_bj","hl_konsolen_verkauf","hl_konsolen_preis","match_konsolen_hersteller","match_konsolen_medium","match_konsolen_handheld","hl_konsolen_ram","hl_konsolen_cpu","match_konsolen_generation","match_konsolen_land","hw_baujahr_mc","hw_match_company","hw_match_type","hw_match_generation","hl_hw_year","hl_hw_units","hl_konsolen_erscheinungsjahr","hl_konsolen_eingestellt","konsolen_match_spiel","konsolen_match_aufloesung","games_match_publisher_land","hl_games_publisher_lng"],cost:0},  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj","timeline_auto_bj","hl_auto_gewicht","hl_auto_drehmoment","hl_auto_cw","hl_auto_kofferraum","hl_auto_laenge","hl_auto_neupreis","hl_auto_tank","hl_auto_akku","hl_auto_reichweite","hl_auto_verbrauch_l","hl_auto_verbrauch_e","hl_auto_zylinder","auto_match_antrieb","auto_match_karosserie","auto_match_antriebsart","auto_match_motorbauart","hl_auto_wendekreis","hl_auto_zuladung","auto_match_konzern","auto_match_getriebe","auto_match_turbo","auto_match_sitze","auto_baujahr_mc","auto_match_land","hl_auto_ps_kg","hl_auto_co2","auto_match_dekade","auto_generationen_match","hl_auto_nordschleife","hl_auto_baujahr_ende"],cost:0},
   regional:{label:"Regionale Kultur & Kulinarik",icon:"\u{1F35E}",modes:["regional_pin","match_regional_kategorie","match_regional_land","match_regional_region","hl_regional_alkohol","hl_regional_saison"],cost:0},
 };
 
@@ -10500,6 +10508,14 @@ const GEN={
   hl_konsolen_cpu:()=>genKonsolenHL("cpu_mhz",{unit:"MHz",prompt:_tc("Welche Konsole hat den schnelleren Prozessor?")}),
   match_konsolen_generation:()=>genKonsolenMatch("generation",_tc("Welcher Konsolengeneration geh\u00f6rt dieses Modell an?"),["1","2","3","4","5","6","7","8","9"]),
   match_konsolen_land:()=>genKonsolenMatch("herkunftsland",_tc("Aus welchem Land stammt diese Konsole?"),["Japan","USA"]),
+  hl_konsolen_erscheinungsjahr:()=>genKonsolenHL("erscheinungsjahr",{unit:"",prompt:_tc("Welche Konsole erschien später?")}),
+  hl_konsolen_eingestellt:()=>genKonsolenHL("eingestellt_jahr",{unit:"",prompt:_tc("Welche Konsole wurde später eingestellt?")}),
+  konsolen_match_spiel:()=>genKonsolenSpielQ(),
+  konsolen_match_aufloesung:()=>genKonsolenMatch("aufloesung_max",_tc("Welche maximale Auflösung unterstützt diese Konsole?"),["240p","480i","480p","1080p","4K"]),
+  hl_auto_nordschleife:()=>genAutosHLExt("nordschleife",{lowerWins:true,unit:"s",prompt:_tc("Wer war schneller auf der Nürburgring-Nordschleife?")}),
+  hl_auto_baujahr_ende:()=>genAutosHLExt("baujahr_ende",{unit:"",prompt:_tc("Welches Auto wurde später eingestellt?")}),
+  games_match_publisher_land:()=>genGamesMatchExt("publisher_land",_tc("Aus welchem Land kommt der Publisher?"),["Vereinigte Staaten","Japan","Finnland","China","Schweden","Frankreich","Vereinigtes Königreich","Polen","Kanada","Südkorea"]),
+  hl_games_publisher_lng:()=>genGamesHLExt("publisher_lng",{unit:"°",prompt:_tc("Welcher Publisher sitzt weiter östlich?")}),
 
   hw_baujahr_mc:()=>genHWBaujahrMC(),
   hw_match_company:()=>genHWMatchQ("company",_tc("Von welchem Unternehmen stammt diese Konsole?"),null),
@@ -15316,6 +15332,31 @@ function renderRecentBar(){
     +'<div style="position:relative"><div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;-ms-overflow-style:none;padding-right:24px">'+items+'</div>'
     +'<div style="position:absolute;top:0;right:0;bottom:4px;width:32px;background:linear-gradient(to right,transparent,var(--bg));pointer-events:none"></div></div></div>';
 }
+/* Phase 413: genKonsolenSpielQ -- Reverse: Spiel -> Konsole */
+function genKonsolenSpielQ(){
+  var _KD=KONSOLEN_DATA;
+  var keys=Object.keys(_KD).filter(function(k){return Object.prototype.hasOwnProperty.call(_KD,k);});
+  var pairs=[];
+  for(var i=0;i<keys.length;i++){
+    var cn=keys[i];
+    var gs=_KD[cn].bekannteste_spiele;
+    if(!gs||!gs.length)continue;
+    for(var j=0;j<gs.length;j++){pairs.push({game:gs[j],console:cn});}
+  }
+  if(pairs.length<4)return null;
+  var idx=~~(rng()*pairs.length);
+  var correct=pairs[idx].console;
+  var game=pairs[idx].game;
+  var others=keys.filter(function(n){return n!==correct;});
+  for(var k=others.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=others[k];others[k]=others[t];others[t]=tmp;}
+  if(others.length<3)return null;
+  var opts=[correct].concat(others.slice(0,3));
+  for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tmp2=opts[m];opts[m]=opts[t2];opts[t2]=tmp2;}
+  return{type:"uk_match",prompt:_tc("Für welche Konsole ist dieses Spiel bekannt?"),
+    subj:game,ans:correct,opts:opts,lid:"kspiel_"+idx,cc:"de"};
+}
+window.genKonsolenSpielQ=genKonsolenSpielQ;
+
 window.renderRecentBar=renderRecentBar;
 
 function showFavorites(){

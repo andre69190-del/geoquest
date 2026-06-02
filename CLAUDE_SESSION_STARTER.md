@@ -12,10 +12,10 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 422):
+Aktueller Stand (Stand: Phase 423):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
-- 802 Spielmodi in MODES-Array (gen.py)
-- 44 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
+- 810 Spielmodi in MODES-Array (gen.py)
+- 47 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
 - Patch-System: patches/patch_NNN_description.py via run_patch.py
 - Zero-Bug-Policy: assert c.count(old)==1 vor jedem c.replace()
 
@@ -136,8 +136,8 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 python3 check_session.py   # prüft ALLES in einem Rutsch (14 Checks)
 ```
 Oder manuell:
-- [ ] verify.py: X/143 passed, 0 failed
-- [ ] validate_content.py: 44/44 OK, 0 warnings
+- [ ] verify.py: X/146 passed, 0 failed
+- [ ] validate_content.py: 47/47 OK, 0 warnings
 - [ ] ARCHITECTURE.md: Phase + Modi-Zahl aktualisiert
 - [ ] README.md: Deployed-Zeile aktualisiert
 - [ ] landing.html: Modi-Zahl aktualisiert
@@ -166,7 +166,7 @@ Oder manuell:
 - `"Audit Phase NNN"` → Claude liest alle Kern-Dateien und liefert Findings + Fixes
 
 ### Für größere Erweiterungen (gib diese Infos mit):
-- **Phase-Nummer** (nächste wäre 411)
+- **Phase-Nummer** (nächste wäre 424)
 - **Kategorie** (games, autos, tiere, pflanzen, gastro, tech, emob, archäologie, astro, geo, sport)
 - **Daten-Format** (JSON-Schema, Python-Dict mit Feldbeschreibungen)
 - **Erwartete Modi-Typen** (H/L, Match, Pin, Wort-Schmiede, Multiple-Choice)
@@ -189,11 +189,11 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 422)
+## AKTUELLER PROJEKT-STATUS (Phase 423)
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **802** |
+| Spielmodi | **810** |
 | Fahrzeuge (autos_extended) | 431 |
 | Spiele (games_extended) | 70 |
 | Konsolen (konsolen.json) | 30 |

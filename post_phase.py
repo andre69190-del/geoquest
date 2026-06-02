@@ -488,46 +488,6 @@ def main():
     else:
         warn("generate_spieluebersicht.py nicht gefunden")
 
-    # Schritt 7: Backup-Cleanup (gen.py.bak_* aelter als 7 Tage)
-    # Regel: Nur loeschen wenn mind. 2 neuere Backups vorhanden (Sicherheitsnetz)
-    print("\n  Backup-Cleanup (gen.py.bak_* > 7 Tage, nur wenn >=2 neuere vorhanden)...")
-    import glob as _gl2, time as _time
-    bak_files = sorted(_gl2.glob(os.path.join(BASE, "gen.py.bak_*")))
-    cutoff = _time.time() - 7 * 86400
-    old_baks  = [b for b in bak_files if os.path.getmtime(b) < cutoff]
-    new_baks  = [b for b in bak_files if os.path.getmtime(b) >= cutoff]
-    deleted, kept = [], list(bak_files)
-    # Nur loeschen wenn mindestens 2 neuere Backups als Sicherheitsnetz vorhanden
-    if len(new_baks) >= 2:
-        for bak in old_baks:
-            try:
-                os.remove(bak)
-                deleted.append(os.path.basename(bak))
-                kept.remove(bak)
-            except Exception as e:
-                warn("Konnte " + os.path.basename(bak) + " nicht loeschen: " + str(e))
-    elif old_baks:
-        warn(str(len(old_baks)) + " altes Backup vorhanden, aber nur " +
-             str(len(new_baks)) + " neuere — behalte alle (mind. 2 neuere noetig)")
-    if deleted:
-        ok(str(len(deleted)) + " altes Backup geloescht (>7 Tage, " +
-           str(len(new_baks)) + " neuere vorhanden): " + deleted[0])
-    if kept:
-        ok(str(len(kept)) + " Backup(s) behalten, neuestes: " + os.path.basename(kept[-1]))
-    if not bak_files:
-        ok("Keine Backup-Dateien vorhanden")
-
-    # Abschluss-Stats
-    geoquest_path = os.path.join(BASE, "GeoQuest.html")
-    if os.path.exists(geoquest_path):
-        size_bytes = os.path.getsize(geoquest_path)
-        print("\n" + GREEN + BOLD + "Phase " + str(phase) + " -- alle Metadaten aktualisiert!" + RESET)
-        print("   GeoQuest.html : " + size_str + " MB (" + str(size_bytes) + " Bytes)")
-        print("   Spielmodi     : " + str(modi_count))
-    else:
-        print("\n" + GREEN + BOLD + "Phase " + str(phase) + " -- alle Metadaten aktualisiert!" + RESET)
-        print("   GeoQuest.html : nicht gefunden (gen.py noch nicht ausgefuehrt?)")
-
     print("\n" + YELLOW + "Naechster Schritt: unlock_and_push.bat ausfuehren" + RESET + "\n")
 
 
