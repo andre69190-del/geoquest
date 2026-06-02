@@ -15475,10 +15475,10 @@ function renderHomeTab(){
       return`<div class="carousel-page" style="--cc:${_cols};min-width:100%;flex-shrink:0${_pgDisp}">${pg.join('')}</div>`;
     }).join('')}</div>`;
     return`<div class="accordion-section" data-cat="${catId}">
-      <div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
+      ${_menuLayout==='tabs'?'':`<div class="accordion-header" onclick="window.toggleAccordion(this,'${catId}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:var(--bg2);border-radius:10px;cursor:pointer;font-weight:700;font-size:.9rem;border:1px solid var(--border);user-select:none">
         <span style="display:flex;align-items:center;gap:8px">${cat.icon} ${cat.label}${lockPill}${(function(){var _p=JSON.parse(localStorage.getItem('gq_played')||'[]');var _tot=catModes.length;var _dn=catModes.filter(function(mm){return _p.includes(mm.id);}).length;if(!_tot||!_dn)return'';var _pct=Math.round(_dn/_tot*100);var _col=_dn===_tot?'#10b981':'#6366f1';return '<span style="font-size:.6rem;color:'+_col+';margin-left:6px;font-weight:700;display:inline-flex;align-items:center;gap:3px">'+_dn+'/'+_tot+'<span style="display:inline-block;width:30px;height:3px;background:var(--bg3);border-radius:2px;overflow:hidden"><span style="display:block;width:'+_pct+'%;height:100%;background:'+_col+'"></span></span></span>';})()}</span>
         <span class="acc-arrow" style="transition:transform .2s;display:inline-block;transform:${isDefault?'rotate(180deg)':'rotate(0deg)'}">▼</span>
-      </div>
+      </div>`}
       <div class="accordion-content${isDefault?' open':''}">
         ${_dots}${_track}
       </div>
