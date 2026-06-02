@@ -1,0 +1,362 @@
+{
+  "The Beatles": {
+    "kategorie": "Legend",
+    "gruendungsjahr": 1960,
+    "streams_mrd": 8.5,
+    "verkaeufe_mio": 600.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 7,
+    "groesster_hit": "Hey Jude"
+  },
+  "Michael Jackson": {
+    "kategorie": "Legend",
+    "gruendungsjahr": 1971,
+    "streams_mrd": 12.0,
+    "verkaeufe_mio": 350.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 13,
+    "groesster_hit": "Thriller"
+  },
+  "Madonna": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1983,
+    "streams_mrd": 5.5,
+    "verkaeufe_mio": 300.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 7,
+    "groesster_hit": "Like a Virgin"
+  },
+  "Elvis Presley": {
+    "kategorie": "Legend",
+    "gruendungsjahr": 1954,
+    "streams_mrd": 7.0,
+    "verkaeufe_mio": 500.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 3,
+    "groesster_hit": "Suspicious Minds"
+  },
+  "Queen": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1970,
+    "streams_mrd": 15.0,
+    "verkaeufe_mio": 200.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 0,
+    "groesster_hit": "Bohemian Rhapsody"
+  },
+  "Taylor Swift": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2006,
+    "streams_mrd": 45.0,
+    "verkaeufe_mio": 200.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 14,
+    "groesster_hit": "Shake It Off"
+  },
+  "Drake": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 2006,
+    "streams_mrd": 50.0,
+    "verkaeufe_mio": 170.0,
+    "herkunftsland": "Kanada",
+    "grammys": 4,
+    "groesster_hit": "God's Plan"
+  },
+  "Eminem": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 1996,
+    "streams_mrd": 20.0,
+    "verkaeufe_mio": 230.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 15,
+    "groesster_hit": "Lose Yourself"
+  },
+  "Daft Punk": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 1993,
+    "streams_mrd": 8.0,
+    "verkaeufe_mio": 12.0,
+    "herkunftsland": "Frankreich",
+    "grammys": 6,
+    "groesster_hit": "Get Lucky"
+  },
+  "The Weeknd": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2010,
+    "streams_mrd": 35.0,
+    "verkaeufe_mio": 75.0,
+    "herkunftsland": "Kanada",
+    "grammys": 4,
+    "groesster_hit": "Blinding Lights"
+  },
+  "Ed Sheeran": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2011,
+    "streams_mrd": 60.0,
+    "verkaeufe_mio": 150.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 4,
+    "groesster_hit": "Shape of You"
+  },
+  "Adele": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2006,
+    "streams_mrd": 18.0,
+    "verkaeufe_mio": 120.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 15,
+    "groesster_hit": "Hello"
+  },
+  "Rammstein": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1994,
+    "streams_mrd": 5.0,
+    "verkaeufe_mio": 20.0,
+    "herkunftsland": "Deutschland",
+    "grammys": 0,
+    "groesster_hit": "Du Hast"
+  },
+  "ABBA": {
+    "kategorie": "Legend",
+    "gruendungsjahr": 1972,
+    "streams_mrd": 10.0,
+    "verkaeufe_mio": 380.0,
+    "herkunftsland": "Schweden",
+    "grammys": 0,
+    "groesster_hit": "Dancing Queen"
+  },
+  "Kendrick Lamar": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 2003,
+    "streams_mrd": 15.0,
+    "verkaeufe_mio": 20.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 17,
+    "groesster_hit": "HUMBLE."
+  },
+  "Coldplay": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1996,
+    "streams_mrd": 20.0,
+    "verkaeufe_mio": 100.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 9,
+    "groesster_hit": "Yellow"
+  },
+  "Beyoncé": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2003,
+    "streams_mrd": 25.0,
+    "verkaeufe_mio": 160.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 32,
+    "groesster_hit": "Crazy in Love"
+  },
+  "Kraftwerk": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 1970,
+    "streams_mrd": 2.5,
+    "verkaeufe_mio": 6.0,
+    "herkunftsland": "Deutschland",
+    "grammys": 1,
+    "groesster_hit": "Autobahn"
+  },
+  "BTS": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2013,
+    "streams_mrd": 20.0,
+    "verkaeufe_mio": 20.0,
+    "herkunftsland": "Südkorea",
+    "grammys": 0,
+    "groesster_hit": "Dynamite"
+  },
+  "Radiohead": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1985,
+    "streams_mrd": 6.0,
+    "verkaeufe_mio": 30.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 1,
+    "groesster_hit": "Creep"
+  },
+  "Jay-Z": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 1995,
+    "streams_mrd": 12.0,
+    "verkaeufe_mio": 100.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 23,
+    "groesster_hit": "Empire State of Mind"
+  },
+  "Dua Lipa": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2015,
+    "streams_mrd": 18.0,
+    "verkaeufe_mio": 50.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 3,
+    "groesster_hit": "Levitating"
+  },
+  "Bob Marley": {
+    "kategorie": "Legend",
+    "gruendungsjahr": 1963,
+    "streams_mrd": 12.0,
+    "verkaeufe_mio": 250.0,
+    "herkunftsland": "Jamaika",
+    "grammys": 0,
+    "groesster_hit": "No Woman, No Cry"
+  },
+  "Aphex Twin": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 1991,
+    "streams_mrd": 1.0,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 1,
+    "groesster_hit": "Windowlicker"
+  },
+  "Stromae": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 2009,
+    "streams_mrd": 4.0,
+    "verkaeufe_mio": 8.0,
+    "herkunftsland": "Belgien",
+    "grammys": 0,
+    "groesster_hit": "Alors on danse"
+  },
+  "AC/DC": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1973,
+    "streams_mrd": 18.0,
+    "verkaeufe_mio": 200.0,
+    "herkunftsland": "Australien",
+    "grammys": 1,
+    "groesster_hit": "Highway to Hell"
+  },
+  "Lady Pank": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1981,
+    "streams_mrd": 0.5,
+    "verkaeufe_mio": 4.0,
+    "herkunftsland": "Polen",
+    "grammys": 0,
+    "groesster_hit": "Minus Zero"
+  },
+  "Sanah": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2020,
+    "streams_mrd": 1.2,
+    "verkaeufe_mio": 0.5,
+    "herkunftsland": "Polen",
+    "grammys": 0,
+    "groesster_hit": "Melodia ulotna"
+  },
+  "Die Toten Hosen": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 1982,
+    "streams_mrd": 2.0,
+    "verkaeufe_mio": 15.0,
+    "herkunftsland": "Deutschland",
+    "grammys": 0,
+    "groesster_hit": "Hier kommt Alex"
+  },
+  "Basement Jaxx": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 1994,
+    "streams_mrd": 1.5,
+    "verkaeufe_mio": 4.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 2,
+    "groesster_hit": "Where's Your Head At"
+  },
+  "Björk": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 1993,
+    "streams_mrd": 2.5,
+    "verkaeufe_mio": 12.0,
+    "herkunftsland": "Island",
+    "grammys": 0,
+    "groesster_hit": "Human Behaviour"
+  },
+  "Justice": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 2003,
+    "streams_mrd": 2.0,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Frankreich",
+    "grammys": 2,
+    "groesster_hit": "D.A.N.C.E."
+  },
+  "Gorillaz": {
+    "kategorie": "Electronic",
+    "gruendungsjahr": 1998,
+    "streams_mrd": 7.0,
+    "verkaeufe_mio": 25.0,
+    "herkunftsland": "Vereinigtes Königreich",
+    "grammys": 0,
+    "groesster_hit": "Feel Good Inc."
+  },
+  "Burna Boy": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2012,
+    "streams_mrd": 5.0,
+    "verkaeufe_mio": 8.0,
+    "herkunftsland": "Nigeria",
+    "grammys": 1,
+    "groesster_hit": "Last Last"
+  },
+  "Bad Bunny": {
+    "kategorie": "Hip-Hop",
+    "gruendungsjahr": 2016,
+    "streams_mrd": 30.0,
+    "verkaeufe_mio": 20.0,
+    "herkunftsland": "Puerto Rico",
+    "grammys": 0,
+    "groesster_hit": "Tití Me Preguntó"
+  },
+  "Rosalía": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 2017,
+    "streams_mrd": 5.0,
+    "verkaeufe_mio": 3.0,
+    "herkunftsland": "Spanien",
+    "grammys": 2,
+    "groesster_hit": "MALAMENTE"
+  },
+  "Mitski": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 2012,
+    "streams_mrd": 3.0,
+    "verkaeufe_mio": 2.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 0,
+    "groesster_hit": "Nobody"
+  },
+  "Tame Impala": {
+    "kategorie": "Rock",
+    "gruendungsjahr": 2007,
+    "streams_mrd": 8.0,
+    "verkaeufe_mio": 5.0,
+    "herkunftsland": "Australien",
+    "grammys": 0,
+    "groesster_hit": "The Less I Know the Better"
+  },
+  "Coltrane, John": {
+    "kategorie": "Legend",
+    "gruendungsjahr": 1955,
+    "streams_mrd": 1.5,
+    "verkaeufe_mio": 10.0,
+    "herkunftsland": "Vereinigte Staaten",
+    "grammys": 5,
+    "groesster_hit": "A Love Supreme"
+  },
+  "Shakira": {
+    "kategorie": "Pop",
+    "gruendungsjahr": 1991,
+    "streams_mrd": 15.0,
+    "verkaeufe_mio": 75.0,
+    "herkunftsland": "Kolumbien",
+    "grammys": 3,
+    "groesster_hit": "Hips Don't Lie"
+  }
+}

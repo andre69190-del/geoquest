@@ -617,6 +617,59 @@ def check_games_extended(filename, data):
             info(filename, "logik:f2p", name,
                  f"f2p=False aber downloads_mio={entry.get('downloads_mio')} > 0 — pruefen")
 
+def check_filme_extended(filename, data):
+    """Validiert data/filme_extended.json (8 Pflichtfelder, Enums, Typen)."""
+    KATEGORIE = {"Blockbuster","Klassiker","Franchise","Indie"}
+    REQUIRED  = ["kategorie","release_jahr","boxoffice_mio","laenge_min",
+                 "regisseur","drehort_land","oscars","imdb_rating"]
+    if not isinstance(data, dict):
+        warn(filename,"struktur","root","filme_extended.json muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename,"eintrag",name,"Wert ist kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        val = entry.get("kategorie")
+        if val not in KATEGORIE:
+            warn(filename,"enum:kategorie",name,f"Wert {val!r} nicht erlaubt. Erlaubt: {sorted(KATEGORIE)}")
+        for field,typ in [("release_jahr",int),("oscars",int),("laenge_min",int)]:
+            if not isinstance(entry.get(field),typ):
+                warn(filename,f"typ:{field}",name,f"{field} muss {typ.__name__} sein")
+        for field in ("boxoffice_mio","imdb_rating"):
+            if not isinstance(entry.get(field),(int,float)):
+                warn(filename,f"typ:{field}",name,f"{field} muss float sein")
+        if not isinstance(entry.get("regisseur"),str):
+            warn(filename,"typ:regisseur",name,"regisseur muss str sein")
+        if not isinstance(entry.get("drehort_land"),str):
+            warn(filename,"typ:drehort_land",name,"drehort_land muss str sein")
+
+def check_musik_extended(filename, data):
+    """Validiert data/musik_extended.json (7 Pflichtfelder, Enums, Typen)."""
+    KATEGORIE = {"Pop","Rock","Hip-Hop","Electronic","Legend"}
+    REQUIRED  = ["kategorie","gruendungsjahr","streams_mrd","verkaeufe_mio",
+                 "herkunftsland","grammys","groesster_hit"]
+    if not isinstance(data, dict):
+        warn(filename,"struktur","root","musik_extended.json muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename,"eintrag",name,"Wert ist kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        val = entry.get("kategorie")
+        if val not in KATEGORIE:
+            warn(filename,"enum:kategorie",name,f"Wert {val!r} nicht erlaubt. Erlaubt: {sorted(KATEGORIE)}")
+        for field,typ in [("gruendungsjahr",int),("grammys",int)]:
+            if not isinstance(entry.get(field),typ):
+                warn(filename,f"typ:{field}",name,f"{field} muss {typ.__name__} sein")
+        for field in ("streams_mrd","verkaeufe_mio"):
+            if not isinstance(entry.get(field),(int,float)):
+                warn(filename,f"typ:{field}",name,f"{field} muss float sein")
+        for field in ("herkunftsland","groesster_hit"):
+            if not isinstance(entry.get(field),str):
+                warn(filename,f"typ:{field}",name,f"{field} muss str sein")
+
 def check_autos_extended(filename, data):
     """Validiert data/autos_extended.json (flaches Dict, 22 Pflichtfelder)."""
     REQUIRED_FIELDS = [
@@ -733,6 +786,10 @@ def detect_and_check(filename):
                         if bad:
                             warn(filename, "auto_ccm", bad[0],
                                  f"{len(bad)} Eintraege mit ccm=0 (EVs muessen ausgeschlossen sein)")
+    elif name == "filme_extended.json":
+        check_filme_extended(filename, data)
+    elif name == "musik_extended.json":
+        check_musik_extended(filename, data)
     elif name == "autos_extended.json":
         check_autos_extended(filename, data)
     elif name == "konsolen.json":

@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 425 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.35 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
+**Version:** Phase 427 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.38 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -1130,6 +1130,8 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **423** | patch_423.py | **8 neue Modi aus ungenutzten Datenfeldern: hl_konsolen_erscheinungsjahr/eingestellt, konsolen_match_spiel/aufloesung, hl_auto_nordschleife/baujahr_ende, games_match_publisher_land, hl_games_publisher_lng. MODES 802->810** |
 | **424** | patch_424.py | **4 neue Geo/Zug-Modi: zug_match_land (177 Strecken→Land), odd_one_out (6 Kategorien: EU/NATO/Insel/Binnen/G7/Euro), clue_country (progressive Hinweise: Kontinent→Hauptstadt→Währung), sort_rank (4 Länder nach Metrik sortieren). MODES 810→814** |
 | **425** | patch_425.py | **Hilfe-Button sichtbar gemacht: ?-Button zusaetzlich in die sichtbare Home-Kopfzeile (_hdr, eingeloggt + Gast) neben das Feedback-Symbol gesetzt. Vorher nur in der GEOQUEST-Logo-Leiste, die auf dem Home-Tab nicht sichtbar ist -> Hilfe wurde nicht gefunden. verify 146/146, validate 0 Warnings.** |
+| **426** | patch_426.py | **Home-Kopfzeile entzerrt (war gequetscht): Begruessung+Streak links, einheitliche runde 34px ?/Feedback-Icons rechts; Streak-Pille bricht nicht mehr um (nowrap); Gast-Variante: 'Fortschritt sichern' jetzt eigene volle Zeile statt eingequetscht. verify 146/146, validate 0 Warnings.** |
+| **427** | patch_427.py | **2 neue Kategorien: Kino & Film + Musikgeschichte. 40 Filme + 40 Künstler (global: DE/FR/JP/PL/IN/KR/AU/CO). 15 neue Modi: 8x Film (H/L+Match+Timeline) + 7x Musik (H/L+Match+Timeline). Neue Generatoren genFilmeHLExt/MatchExt/genMusikHLExt/MatchExt. Validator-Update. MODES 814->829** |
 
 ---
 

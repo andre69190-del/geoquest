@@ -2591,5 +2591,95 @@
         "hint": "Baujahr 2020"
       }
     ]
+  },
+  "film_release": {
+    "prompt": "Welcher Film erschien zuerst?",
+    "items": [
+      {
+        "n": "Citizen Kane",
+        "year": 1941
+      },
+      {
+        "n": "Psycho",
+        "year": 1960
+      },
+      {
+        "n": "Der Pate",
+        "year": 1972
+      },
+      {
+        "n": "Indiana Jones: Jäger des verlorenen Schatzes",
+        "year": 1981
+      },
+      {
+        "n": "Titanic",
+        "year": 1997
+      },
+      {
+        "n": "The Dark Knight",
+        "year": 2008
+      },
+      {
+        "n": "Inception",
+        "year": 2010
+      },
+      {
+        "n": "Interstellar",
+        "year": 2014
+      },
+      {
+        "n": "Parasite",
+        "year": 2019
+      },
+      {
+        "n": "Oppenheimer",
+        "year": 2023
+      }
+    ]
+  },
+  "musik_gruendung": {
+    "prompt": "Welcher Künstler/welche Band ist älter?",
+    "items": [
+      {
+        "n": "Elvis Presley",
+        "year": 1954
+      },
+      {
+        "n": "The Beatles",
+        "year": 1960
+      },
+      {
+        "n": "Bob Marley",
+        "year": 1963
+      },
+      {
+        "n": "Queen",
+        "year": 1970
+      },
+      {
+        "n": "ABBA",
+        "year": 1972
+      },
+      {
+        "n": "Madonna",
+        "year": 1983
+      },
+      {
+        "n": "Eminem",
+        "year": 1996
+      },
+      {
+        "n": "Coldplay",
+        "year": 1996
+      },
+      {
+        "n": "Taylor Swift",
+        "year": 2006
+      },
+      {
+        "n": "Ed Sheeran",
+        "year": 2011
+      }
+    ]
   }
 }

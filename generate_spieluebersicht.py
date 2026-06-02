@@ -222,6 +222,10 @@ def _get_count(mid, dispatch, store, sport_poi):
         if n: return f'{n} POI-Orte', n
         print(f'WARNING: No data count for mode \'{mid}\' (genSportPoiQ/{key})')
         return '—', 0
+    if fn in {'genFilmeHLExt','genFilmeMatchExt'}:
+        n=len(store.get('filme_extended',{}));return(f'{n} Filme',n)if n else('40 Filme',40)
+    if fn in {'genMusikHLExt','genMusikMatchExt'}:
+        n=len(store.get('musik_extended',{}));return(f'{n} Künstler',n)if n else('40 Künstler',40)
     if fn in {'genZugMatchLandQ'}:
         n = len(store.get('zug_reisezeiten', [])); return (f'{n} Strecken', n) if n else ('177 Strecken', 177)
     if fn in {'genOddOneOutQ','genClueCountryQ'}: return '195 Länder', 195
