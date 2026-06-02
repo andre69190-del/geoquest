@@ -480,7 +480,7 @@ input[type=text]::placeholder{color:var(--text3)}
 /* ── Phase 88b: Mode-Card Typografie ────────────────────────────────────── */
 .mode-desc{
   color:#64748b;
-  font-size:.65rem;
+  font-size:.68rem;
   line-height:1.25;
   margin-top:2px;
   word-break:break-word;
