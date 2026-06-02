@@ -182,3 +182,4 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_415_settings_consolidation.py | 415 | Settings konsolidiert: block4+block5 zu einem EINSTELLUNGEN-Block (Design-Segmented, Sprache, Menü-Ansicht-Toggle inline). Spielübersicht: _get_type() Match/Pin-Fix, Konsolen/Regional Datenbasis-Badges, return len(rows). 14/14 session checks |
 | patch_416_tabs_pwa.py | 416 | Tab-Ansicht: Inline-Grid + Accordion-Header im JS ausgeblendet. PWA: Schließen-Button Android/Desktop, gq_pwa_dismissed, Reaktivierung in Einstellungen. verify: 146/146 |
 | patch_417_settings_cleanup.py | 417 | Settings-Modal: Dark Mode entfernt (doppelt), Untertitel. Tab-Ansicht inline-Grid fix + Accordion-Header JS-Rendering fix. PWA-Banner Schließen-Button + gq_pwa_dismissed. verify: 146/146 |
+| patch_418_modal_final.py | 418 | Modal final: Menü-Ansicht raus, App installieren vor Schließen, Reihenfolge: Heimatregion→TTS→Hardcore→Raster→Feedback→App→Schließen. verify: 146/146 |
