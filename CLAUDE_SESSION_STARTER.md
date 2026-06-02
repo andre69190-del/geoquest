@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 424):
+Aktueller Stand (Stand: Phase 425):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 814 Spielmodi in MODES-Array (gen.py)
 - 47 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -193,7 +193,7 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 424)
+## AKTUELLER PROJEKT-STATUS (Phase 425)
 
 | Metrik | Wert |
 |--------|------|
@@ -260,17 +260,4 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | XSS: alle `q.subj` in innerHTML via `esc()` | ✅ gefixt |
 | Zero-Trap: USK/pegi/sequel=0 erlaubt | ✅ gefixt |
 | Biased sort() eliminiert | ✅ gefixt |
-| Spread-Operator → ES5 | ✅ gefixt |
-| games_extended Validator in validate_content.py | ✅ |
-| games_extended in verify.py Section 10 | ✅ |
-| Placeholder-Reihenfolge korrekt (AUTOS_EXT vor AUTOS) | ✅ |
-| Prototype-Schutz (`hasOwnProperty`) | ✅ Phase 403 (10x) |
-| JSON-Parser try/catch in gen.py | ⚠️ noch offen |
-| Lazy-Init für Extended-Daten | ⚠️ Low Priority |
-
----
-
-## NÄCHSTE SINNVOLLE ERWEITERUNGEN
-
-### Daten (sofort umsetzbar)
-- **`peak_year`-Feld** in games_extended: Ja
+| Spread-Operator 

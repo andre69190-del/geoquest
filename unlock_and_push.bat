@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 424. Erstnutzer-Tour + Onboarding-Politur: kurze 3-Slide-Tour (renderTourModal, ueberspringbar) per ?-Hilfe abrufbar (Button help_tour_btn). Onboarding-Modi-Slide: veraltete Zahlen (19/16) durch dynamische MODES.length ersetzt + ?-Hilfe-Hinweis (ob_help_hint). i18n DE/EN/PL. verify 146/146, validate 0 Warnings.. verify: 146/146."
+git commit -m "Content: Phase 425. Hilfe-Button sichtbar gemacht: ?-Button zusaetzlich in die sichtbare Home-Kopfzeile (_hdr, eingeloggt + Gast) neben das Feedback-Symbol gesetzt. Vorher nur in der GEOQUEST-Logo-Leiste, die auf dem Home-Tab nicht sichtbar ist -> Hilfe wurde nicht gefunden. verify 146/146, validate 0 Warnings.. verify: 146/146."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
