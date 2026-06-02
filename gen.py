@@ -15421,14 +15421,35 @@ function renderHomeTab(){
     archaeologie:'Arch',astronomie:'Astr',geologie:'Geo-V',
     sport_wissen:'S-W',games:'Game',autos:'Auto',regional:'Reg'};
   const _activeCat=S.filterCat||'pure_geo';
-  const _tabNavHtml=_menuLayout==='tabs'?`<div style="display:grid;grid-template-columns:repeat(8,1fr);gap:3px;padding:0 10px 8px;width:100%;box-sizing:border-box">${_CAT_ORDER.filter(k=>MODE_CATS[k]).map(k=>{
-    const cat=MODE_CATS[k];const _ia=k===_activeCat;
-    const abbr=_catAbbrev[k]||(cat.label.split(' ')[0].substring(0,5));
-    return`<div onclick="window.filterByCategory('${k}');render()" style="display:flex;flex-direction:column;align-items:center;padding:5px 2px;border-radius:8px;border:1.5px solid ${_ia?'#534AB7':'var(--border)'};background:${_ia?'#7F77DD':'var(--bg2)'};cursor:pointer;overflow:hidden;touch-action:manipulation">
-      <span style="font-size:1.1rem;line-height:1">${cat.icon}</span>
-      <span style="font-size:.48rem;text-align:center;color:${_ia?'#fff':'var(--text2)'};overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;padding:0 1px">${abbr}</span>
-    </div>`;
-  }).join('')}</div>`:'';
+  /* Phase 415: Kategorie-Nav als wischbares Carousel (data-cat="_catnav").
+     Nutzt die bestehende Carousel-Engine (Swipe/Pfeile/Punkte + Seiten-Persistenz).
+     Standard 3 Reihen x 4 Spalten, Reihen in den Einstellungen via geoquest_catnav_rows konfigurierbar. */
+  const _tabNavHtml=_menuLayout==='tabs'?(()=>{
+    const _cnKeys=_CAT_ORDER.filter(k=>MODE_CATS[k]);
+    const _cnCols=4;
+    let _cnRows=parseInt(localStorage.getItem('geoquest_catnav_rows'));
+    if(isNaN(_cnRows)||_cnRows<2||_cnRows>6)_cnRows=3;
+    const _cnIpp=_cnCols*_cnRows;
+    const _cnPages=Math.ceil(_cnKeys.length/_cnIpp)||1;
+    const _cnLs=parseInt(localStorage.getItem('gq_cp__catnav'));
+    const _cnSaved=(S.carouselPages&&S.carouselPages['_catnav']!==undefined)?S.carouselPages['_catnav']:(!isNaN(_cnLs)?_cnLs:0);
+    const _cnStart=(_cnSaved>0&&_cnSaved<_cnPages)?_cnSaved:0;
+    const _cnArrow='background:none;border:none;font-size:1.05rem;padding:2px 8px;cursor:pointer;color:var(--text);transition:opacity .2s;-webkit-tap-highlight-color:transparent;line-height:1';
+    const _cnChip=(k)=>{
+      const cat=MODE_CATS[k];const _ia=k===_activeCat;
+      return`<div onclick="window.filterByCategory('${k}');render()" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:9px 3px;border-radius:10px;border:1.5px solid ${_ia?'#534AB7':'var(--border)'};background:${_ia?'#7F77DD':'var(--bg2)'};cursor:pointer;overflow:hidden;touch-action:manipulation;min-height:54px">
+        <span style="font-size:1.3rem;line-height:1">${cat.icon}</span>
+        <span style="font-size:.66rem;text-align:center;color:${_ia?'#fff':'var(--text2)'};line-height:1.15;font-weight:600;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-word;hyphens:auto;width:100%;padding:0 1px">${cat.label}</span>
+      </div>`;
+    };
+    const _cnDots=_cnPages>1?`<div class="carousel-dots" style="display:flex;align-items:center;justify-content:center;gap:4px;padding:2px 0 6px;user-select:none"><button class="car-arrow car-arrow-prev" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)-1);})(this);event.stopPropagation()" style="${_cnArrow};opacity:${_cnStart===0?'0.2':'1'};pointer-events:${_cnStart===0?'none':'auto'}" title="Vorherige Seite">&#9664;</button><span style="display:flex;align-items:center;gap:4px">${Array.from({length:_cnPages}).map((_,i)=>`<span class="dot" onclick="(function(d){var w=d.parentElement.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,${i});})(this);event.stopPropagation()" style="display:inline-block;width:10px;height:10px;background:${i===_cnStart?'#7F77DD':'#cbd5e1'};border-radius:50%;cursor:pointer;transition:background .25s;-webkit-tap-highlight-color:transparent"></span>`).join('')}</span><button class="car-arrow car-arrow-next" onclick="(function(b){var w=b.parentElement.nextElementSibling;if(w&&w.classList.contains('carousel-wrapper'))window._carouselGoTo(w,(w._cPage||0)+1);})(this);event.stopPropagation()" style="${_cnArrow};opacity:${_cnPages<=1?'0.2':'1'};pointer-events:${_cnPages<=1?'none':'auto'}" title="Nächste Seite">&#9654;</button></div>`:'';
+    const _cnTrack=`<div class="carousel-wrapper">${Array.from({length:_cnPages}).map((_,pi)=>{
+      const pg=_cnKeys.slice(pi*_cnIpp,(pi+1)*_cnIpp);
+      const _disp=pi!==_cnStart?";display:none":"";
+      return`<div class="carousel-page" style="--cc:${_cnCols};min-width:100%;flex-shrink:0;padding:2px 0 4px${_disp}">${pg.map(_cnChip).join('')}</div>`;
+    }).join('')}</div>`;
+    return`<div class="accordion-section" data-cat="_catnav" style="padding:0 10px 4px">${_cnDots}${_cnTrack}</div>`;
+  })():'';
   const _tabsModeClass=_menuLayout==='tabs'?' tabs-mode':'';
   // Build accordion sections — Pure Geo auto-open, others closed
   const _favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
@@ -15873,6 +15894,7 @@ function renderSettingsModal(){
       <button onclick="S.diff=(S.diff==='hardcore'?'casual':'hardcore');localStorage.setItem('gq_diffx',S.diff);render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.diff==='hardcore'?'An':'Aus'}</button>
     </div>
     ${(()=>{const _gc=parseInt(localStorage.getItem('geoquest_grid_cols'))||4;const _gr=parseInt(localStorage.getItem('geoquest_grid_rows'))||6;return`<div style="margin:20px 0;padding-top:15px;border-top:1px solid var(--border)"><div style="font-weight:700;margin-bottom:10px">\u{1F4CA} Spiele nebeneinander (Raster)</div><div style="display:flex;justify-content:center;gap:8px;margin-bottom:14px">${[2,3,4,5].map(n=>`<button onclick="saveGridCols(${n});render()" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gc===n?'#3b82f6':'var(--bg3)'};color:${_gc===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div><div style="font-weight:700;margin-bottom:10px">\u{1F4D6} Reihen pro Seite (Carousel)</div><div style="display:flex;justify-content:center;gap:8px">${[3,4,5,6,8].map(n=>`<button onclick="saveGridRows(${n})" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_gr===n?'#10b981':'var(--bg3)'};color:${_gr===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div></div>`;})()}
+    ${(()=>{let _cnr=parseInt(localStorage.getItem('geoquest_catnav_rows'));if(isNaN(_cnr)||_cnr<2||_cnr>6)_cnr=3;return`<div style="margin:20px 0;padding-top:15px;border-top:1px solid var(--border)"><div style="font-weight:700;margin-bottom:4px">\u{1F5C2}️ Kategorie-Reihen (Wisch-Leiste)</div><div style="font-size:.72rem;color:var(--text3);margin-bottom:10px">Reihen pro Seite in der Kategorie-Leiste oben</div><div style="display:flex;justify-content:center;gap:8px">${[2,3,4,5,6].map(n=>`<button onclick="localStorage.setItem('geoquest_catnav_rows','${n}');render()" style="padding:10px 15px;font-weight:700;border:none;border-radius:8px;cursor:pointer;background:${_cnr===n?'#7F77DD':'var(--bg3)'};color:${_cnr===n?'#fff':'var(--text)'}">${n}</button>`).join('')}</div></div>`;})()}
     <div onclick="S.settingsModal=false;openFeedback();render()" style="display:flex;align-items:center;gap:.6rem;padding:.6rem .85rem;border-radius:10px;background:var(--bg3);cursor:pointer;margin-bottom:.75rem;border:1px solid var(--border)">
       <span style="font-size:1.2rem">\u{1F4A1}</span>
       <div><div style="font-weight:700;font-size:.85rem">Feedback &amp; Kontakt</div><div style="font-size:.75rem;color:var(--text3)">Fehler melden, Ideen einreichen</div></div>
