@@ -617,6 +617,36 @@ def check_games_extended(filename, data):
             info(filename, "logik:f2p", name,
                  f"f2p=False aber downloads_mio={entry.get('downloads_mio')} > 0 — pruefen")
 
+def check_literatur_extended(filename, data):
+    """Validiert data/literatur_extended.json"""
+    KATEG = {"Roman","Comic","Manga","Kinderbuch"}
+    REQUIRED = ["kategorie","erscheinungsjahr","verkaeufe_mio","autor","ursprungsland","protagonist"]
+    if not isinstance(data, dict): warn(filename,"struktur","root","muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict): warn(filename,"eintrag",name,"kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry: warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        if entry.get("kategorie") not in KATEG:
+            warn(filename,"enum:kategorie",name,f"Kategorie {entry.get('kategorie')!r} unbekannt")
+        if not isinstance(entry.get("erscheinungsjahr"),int):
+            warn(filename,"typ:erscheinungsjahr",name,"erscheinungsjahr muss int sein")
+        if not isinstance(entry.get("verkaeufe_mio"),(int,float)):
+            warn(filename,"typ:verkaeufe_mio",name,"verkaeufe_mio muss float sein")
+
+def check_robotik_extended(filename, data):
+    """Validiert data/robotik_extended.json"""
+    KATEG = {"Wettbewerb","Educational","Industrie","Künstliche Intelligenz","Meilenstein"}
+    REQUIRED = ["kategorie","gruendungsjahr","entwickler","ursprungsland","meilenstein_fakt"]
+    if not isinstance(data, dict): warn(filename,"struktur","root","muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict): warn(filename,"eintrag",name,"kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry: warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        if entry.get("kategorie") not in KATEG:
+            warn(filename,"enum:kategorie",name,f"Kategorie {entry.get('kategorie')!r} unbekannt")
+        if not isinstance(entry.get("gruendungsjahr"),int):
+            warn(filename,"typ:gruendungsjahr",name,"gruendungsjahr muss int sein")
+
 def check_mythologie(filename, data):
     """Validiert data/mythologie.json"""
     KATEG = {"Griechisch","Nordisch","Ägyptisch","Römisch","Japanisch","Aztekisch","Mesopotamisch","Keltisch"}
@@ -674,6 +704,41 @@ def check_filme_extended(filename, data):
             warn(filename,"typ:regisseur",name,"regisseur muss str sein")
         if not isinstance(entry.get("drehort_land"),str):
             warn(filename,"typ:drehort_land",name,"drehort_land muss str sein")
+
+def check_serien_extended(filename, data):
+    """Validiert data/serien_extended.json (7 Pflichtfelder, Enums, Typen)."""
+    GENRE  = {"Krimi","Comedy","Drama","Sci-Fi/Mystery","Doku"}
+    EPOCHE = {"Gegenwart","Historisch","Zukunft"}
+    REQUIRED = ["genre","start_jahr","staffeln","episoden",
+                "produktionsland","imdb_rating","epochen_setting"]
+    if not isinstance(data, dict):
+        warn(filename,"struktur","root","serien_extended.json muss ein Dict sein"); return
+    for name, entry in data.items():
+        if not isinstance(entry, dict):
+            warn(filename,"eintrag",name,"Wert ist kein Dict"); continue
+        for f in REQUIRED:
+            if f not in entry:
+                warn(filename,"pflichtfeld",name,f"Feld '{f}' fehlt")
+        g = entry.get("genre")
+        if g not in GENRE:
+            warn(filename,"enum:genre",name,f"Wert {g!r} nicht erlaubt. Erlaubt: {sorted(GENRE)}")
+        ep = entry.get("epochen_setting")
+        if ep not in EPOCHE:
+            warn(filename,"enum:epochen_setting",name,f"Wert {ep!r} nicht erlaubt. Erlaubt: {sorted(EPOCHE)}")
+        for field in ("start_jahr","staffeln","episoden"):
+            v = entry.get(field)
+            if not isinstance(v, int) or isinstance(v, bool):
+                warn(filename,f"typ:{field}",name,f"{field} muss int sein")
+            elif v <= 0:
+                warn(filename,f"wert:{field}",name,f"{field} muss > 0 sein (ist {v})")
+        r = entry.get("imdb_rating")
+        if not isinstance(r,(int,float)) or isinstance(r, bool):
+            warn(filename,"typ:imdb_rating",name,"imdb_rating muss float sein")
+        elif not (0.0 <= r <= 10.0):
+            warn(filename,"wert:imdb_rating",name,f"imdb_rating ausserhalb 0-10 (ist {r})")
+        if not isinstance(entry.get("produktionsland"), str) or not entry.get("produktionsland","").strip():
+            warn(filename,"typ:produktionsland",name,"produktionsland muss nicht-leerer str sein")
+
 
 def check_musik_extended(filename, data):
     """Validiert data/musik_extended.json (7 Pflichtfelder, Enums, Typen)."""
@@ -817,12 +882,18 @@ def detect_and_check(filename):
                         if bad:
                             warn(filename, "auto_ccm", bad[0],
                                  f"{len(bad)} Eintraege mit ccm=0 (EVs muessen ausgeschlossen sein)")
+    elif name == "literatur_extended.json":
+        check_literatur_extended(filename, data)
+    elif name == "robotik_extended.json":
+        check_robotik_extended(filename, data)
     elif name == "mythologie.json":
         check_mythologie(filename, data)
     elif name == "architektur.json":
         check_architektur(filename, data)
     elif name == "filme_extended.json":
         check_filme_extended(filename, data)
+    elif name == "serien_extended.json":
+        check_serien_extended(filename, data)
     elif name == "musik_extended.json":
         check_musik_extended(filename, data)
     elif name == "autos_extended.json":

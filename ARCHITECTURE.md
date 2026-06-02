@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 428 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.39 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
+**Version:** Phase 429 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.43 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -1133,6 +1133,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **426** | patch_426.py | **Home-Kopfzeile entzerrt (war gequetscht): Begruessung+Streak links, einheitliche runde 34px ?/Feedback-Icons rechts; Streak-Pille bricht nicht mehr um (nowrap); Gast-Variante: 'Fortschritt sichern' jetzt eigene volle Zeile statt eingequetscht. verify 146/146, validate 0 Warnings.** |
 | **427** | patch_427.py | **2 neue Kategorien: Kino & Film + Musikgeschichte. 40 Filme + 40 Künstler (global: DE/FR/JP/PL/IN/KR/AU/CO). 15 neue Modi: 8x Film (H/L+Match+Timeline) + 7x Musik (H/L+Match+Timeline). Neue Generatoren genFilmeHLExt/MatchExt/genMusikHLExt/MatchExt. Validator-Update. MODES 814->829** |
 | **428** | patch_428.py | **2 neue Kategorien: Mythologie & Sagenwelt (40 Gottheiten: GR/NO/AE/RO/JP/AZ/MES) + Architektur & Megabauten (40 Bauwerke: Wolkenkratzer/Brücken/Staudämme/Tunnel/Tempel/Denkmäler). 11 neue Modi: myth_match_domain/kultur/typ/roemisch + myth_pin_herkunft + hl_arch_height/span/baujahr + arch_match_land/typ + arch_pin_megaprojects. MODES 829->840** |
+| **429** | patch_429.py | **2 neue Kategorien: Literatur & Comics (40 Werke: Roman/Comic/Manga/Kinderbuch global) + KI, Robotik & Hardware (40 Systeme: WRO/FLL/Arduino/ChatGPT/AlphaGo/KUKA). Fix: MYTH_DATA/ARCH_DATA Placeholder-Bug (Phase 428 retrofix). 12 neue Modi: hl_lit_sales/release + lit_match_autor/land/protagonist + timeline_lit_release + hl_robot_jahr + robot_match_kategorie/land/entwickler/fakt + timeline_robot_jahr. MODES 840->852. verify: 152/152** |
 
 ---
 

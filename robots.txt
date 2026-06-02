@@ -3,4 +3,4 @@ Allow: /
 Disallow: /GeoQuest.html
 
 # Sitemap
-Sitemap: https://geoquest-web-git-main-andre69190-7419s-projects.vercel.app/sitemap.xml
+Sitemap: https://geoquest-web.vercel.app/sitemap.xml

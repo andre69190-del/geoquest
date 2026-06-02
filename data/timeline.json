@@ -2681,5 +2681,111 @@
         "year": 2011
       }
     ]
+  },
+  "lit_release": {
+    "prompt": "Welches Werk erschien zuerst?",
+    "items": [
+      {
+        "n": "Hamlet",
+        "year": 1603
+      },
+      {
+        "n": "Don Quijote",
+        "year": 1605
+      },
+      {
+        "n": "Robinson Crusoe",
+        "year": 1719
+      },
+      {
+        "n": "Faust",
+        "year": 1808
+      },
+      {
+        "n": "Moby Dick",
+        "year": 1851
+      },
+      {
+        "n": "Alice im Wunderland",
+        "year": 1865
+      },
+      {
+        "n": "Sherlock Holmes",
+        "year": 1887
+      },
+      {
+        "n": "Der kleine Prinz",
+        "year": 1943
+      },
+      {
+        "n": "1984",
+        "year": 1949
+      },
+      {
+        "n": "Der Herr der Ringe",
+        "year": 1954
+      },
+      {
+        "n": "Harry Potter",
+        "year": 1997
+      },
+      {
+        "n": "Demon Slayer",
+        "year": 2016
+      }
+    ]
+  },
+  "robot_jahr": {
+    "prompt": "Welcher Meilenstein/welches System kam zuerst?",
+    "items": [
+      {
+        "n": "ENIAC",
+        "year": 1945
+      },
+      {
+        "n": "Turing-Test",
+        "year": 1950
+      },
+      {
+        "n": "Perceptron",
+        "year": 1958
+      },
+      {
+        "n": "Shakey the Robot",
+        "year": 1966
+      },
+      {
+        "n": "KUKA",
+        "year": 1898
+      },
+      {
+        "n": "Deep Blue",
+        "year": 1996
+      },
+      {
+        "n": "ASIMO",
+        "year": 2000
+      },
+      {
+        "n": "Arduino",
+        "year": 2005
+      },
+      {
+        "n": "AlexNet",
+        "year": 2012
+      },
+      {
+        "n": "AlphaGo",
+        "year": 2016
+      },
+      {
+        "n": "ChatGPT",
+        "year": 2022
+      },
+      {
+        "n": "AlphaFold",
+        "year": 2020
+      }
+    ]
   }
 }

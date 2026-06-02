@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 428. 2 neue Kategorien: Mythologie & Sagenwelt (40 Gottheiten: GR/NO/AE/RO/JP/AZ/MES) + Architektur & Megabauten (40 Bauwerke: Wolkenkratzer/Brücken/Staudämme/Tunnel/Tempel/Denkmäler). 11 neue Modi: myth_match_domain/kultur/typ/roemisch + myth_pin_herkunft + hl_arch_height/span/baujahr + arch_match_land/typ + arch_pin_megaprojects. MODES 829->840. verify: 150/150."
+git commit -m "Content: Phase 429. 2 neue Kategorien: Literatur & Comics (40 Werke: Roman/Comic/Manga/Kinderbuch global) + KI, Robotik & Hardware (40 Systeme: WRO/FLL/Arduino/ChatGPT/AlphaGo/KUKA). Fix: MYTH_DATA/ARCH_DATA Placeholder-Bug (Phase 428 retrofix). 12 neue Modi: hl_lit_sales/release + lit_match_autor/land/protagonist + timeline_lit_release + hl_robot_jahr + robot_match_kategorie/land/entwickler/fakt + timeline_robot_jahr. MODES 840->852. verify: 152/152. verify: 152/152."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
