@@ -1,0 +1,105 @@
+{
+  "tintenherz": {
+    "word": "TINTENHERZ",
+    "validWords": {
+      "de": [
+        "TINTE",
+        "TINTEN",
+        "TIER",
+        "REIN",
+        "NEIN",
+        "HINTER",
+        "RENTE",
+        "NETZ",
+        "HERZ",
+        "ENTE",
+        "INTER",
+        "HEITER",
+        "HIER",
+        "NIETE",
+        "REITEN",
+        "TRETEN",
+        "RITZEN",
+        "NIEREN",
+        "ZIEREN",
+        "RITTEN",
+        "NETZE",
+        "RITZ"
+      ],
+      "en": [
+        "TINT",
+        "TENT",
+        "REIN",
+        "HINT",
+        "HIRE",
+        "TIRE",
+        "RENT",
+        "TIER",
+        "RITE",
+        "HEIR",
+        "TERN",
+        "RITZ",
+        "INTER",
+        "INERT",
+        "NITRE"
+      ],
+      "pl": [
+        "TERN",
+        "REIN",
+        "HINT",
+        "INERT",
+        "INTER"
+      ]
+    }
+  },
+  "lesezeichen": {
+    "word": "LESEZEICHEN",
+    "validWords": {
+      "de": [
+        "LESEN",
+        "SEHEN",
+        "SEINE",
+        "EICHE",
+        "LEICHE",
+        "ZEILE",
+        "SEIL",
+        "HEIL",
+        "LEIN",
+        "ESEL",
+        "SEELE",
+        "EINE",
+        "SEIN",
+        "LEISE",
+        "SCHEIN",
+        "LEHNE",
+        "ELCH",
+        "ZINS",
+        "INSEL",
+        "NISCHE",
+        "LEHEN",
+        "HEIZEN",
+        "SICHELN",
+        "SIECH",
+        "SCHIENE"
+      ],
+      "en": [
+        "LEIS",
+        "LINE",
+        "LENS",
+        "HEEL",
+        "LIES",
+        "SINE",
+        "SHINE",
+        "LENIS",
+        "LIEN",
+        "ISLE"
+      ],
+      "pl": [
+        "LESEN",
+        "SEINE",
+        "EINE",
+        "SEIL"
+      ]
+    }
+  }
+}

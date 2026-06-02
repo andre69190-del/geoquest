@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 429. 2 neue Kategorien: Literatur & Comics (40 Werke: Roman/Comic/Manga/Kinderbuch global) + KI, Robotik & Hardware (40 Systeme: WRO/FLL/Arduino/ChatGPT/AlphaGo/KUKA). Fix: MYTH_DATA/ARCH_DATA Placeholder-Bug (Phase 428 retrofix). 12 neue Modi: hl_lit_sales/release + lit_match_autor/land/protagonist + timeline_lit_release + hl_robot_jahr + robot_match_kategorie/land/entwickler/fakt + timeline_robot_jahr. MODES 840->852. verify: 152/152. verify: 152/152."
+git commit -m "Content: Phase 430. Phase 430: Wort-Schmiede für Literatur & Robotik/KI — ws_lit_protagonist (TINTENHERZ) + ws_robot_name (MASCHINENLERNEN). Neue Dateien: literatur_ws.json, robotik_ws.json. MODES: 859→861. verify: 155/155."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

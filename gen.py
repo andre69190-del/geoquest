@@ -75,6 +75,10 @@ try:
         LIT_J = __import__('json').dumps(__import__('json').load(_lf), ensure_ascii=False, separators=(',',':'))
     with open(os.path.join(os.path.dirname(__file__), 'data/robotik_extended.json'), 'r', encoding='utf-8') as _rf:
         ROBOT_J = __import__('json').dumps(__import__('json').load(_rf), ensure_ascii=False, separators=(',',':'))
+    with open(os.path.join(os.path.dirname(__file__), 'data/literatur_ws.json'), 'r', encoding='utf-8') as _lwf:
+        LIT_WS_J = __import__('json').dumps(__import__('json').load(_lwf), ensure_ascii=False, separators=(',',':'))
+    with open(os.path.join(os.path.dirname(__file__), 'data/robotik_ws.json'), 'r', encoding='utf-8') as _rwf:
+        ROBOT_WS_J = __import__('json').dumps(__import__('json').load(_rwf), ensure_ascii=False, separators=(',',':'))
     with open(os.path.join(os.path.dirname(__file__), 'data/filme_extended.json'), 'r', encoding='utf-8') as _ff:
         FILME_EXT_J = __import__('json').dumps(__import__('json').load(_ff), ensure_ascii=False, separators=(',',':'))
     with open(os.path.join(os.path.dirname(__file__), 'data/musik_extended.json'), 'r', encoding='utf-8') as _mf:
@@ -3149,12 +3153,14 @@ const MODES=[
     {id:"lit_match_land",icon:"\u{1F30D}",title:"Literatur-Quiz: Ursprungsland",group:"literatur",prompt:"Aus welchem Land stammt dieses Werk?",desc:"Von Deutschland bis Japan \u2014 erkenne die Heimat.",prompt_en:"Which country does this work originate from?"},
     {id:"lit_match_protagonist",icon:"\u{1F9B8}",title:"Literatur-Quiz: Protagonist",group:"literatur",prompt:"Wer ist der Protagonist dieses Werks?",desc:"Harry, Frodo, Luffy \u2014 erkenne den Helden.",prompt_en:"Who is the protagonist of this work?"},
     {id:"timeline_lit_release",icon:"\u{1F4DA}",title:"Literatur-Timeline",group:"literatur",prompt:"Welches Werk erschien zuerst?",desc:"Von Hamlet bis Demon Slayer \u2014 Literaturgeschichte sortieren.",prompt_en:"Which work came first?"},
+    {id:"ws_lit_protagonist",icon:"\u270F\uFE0F",title:"WS: Tintenherz",group:"literatur",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus TINTENHERZ!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben",prompt_en:"Form words from TINTENHERZ!"},
     {id:"hl_robot_jahr",icon:"\u{1F4C5}",title:"KI/Robotik: \u00c4ltestes System",group:"robotik",prompt:"Welcher Meilenstein/welches System kam zuerst?",desc:"Von ENIAC (1945) bis ChatGPT (2022).",prompt_en:"Which milestone/system came first?"},
     {id:"robot_match_kategorie",icon:"\u{1F916}",title:"KI/Robotik-Quiz: Kategorie",group:"robotik",prompt:"Welcher Kategorie geh\u00f6rt dieses KI/Robotik-System an?",desc:"Wettbewerb, Educational, Industrie, KI oder Meilenstein?",prompt_en:"Which category does this AI/robotics system belong to?"},
     {id:"robot_match_land",icon:"\u{1F30D}",title:"KI/Robotik-Quiz: Ursprungsland",group:"robotik",prompt:"Aus welchem Land stammt dieses System?",desc:"Von den USA bis Japan \u2014 erkenne die Herkunft.",prompt_en:"Which country does this system originate from?"},
     {id:"robot_match_entwickler",icon:"\u{1F4BB}",title:"KI/Robotik-Quiz: Entwickler",group:"robotik",prompt:"Wer entwickelte dieses System?",desc:"OpenAI, LEGO, IBM, DeepMind \u2014 erkenne das Team.",prompt_en:"Who developed this system?"},
     {id:"robot_match_fakt",icon:"\u2139\uFE0F",title:"KI/Robotik-Quiz: Fakten-Match",group:"robotik",prompt:"Welcher Fakt beschreibt dieses System am besten?",desc:"Meilenstein-Fakten den Systemen zuordnen.",prompt_en:"Which fact best describes this system?"},
     {id:"timeline_robot_jahr",icon:"\u{1F916}",title:"KI/Robotik-Timeline",group:"robotik",prompt:"Welcher Meilenstein kam zuerst?",desc:"ENIAC bis ChatGPT \u2014 die Geschichte der KI.",prompt_en:"Which milestone came first?"},
+    {id:"ws_robot_name",icon:"\u{1F9E0}",title:"WS: Maschinenlernen",group:"robotik",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus MASCHINENLERNEN!",desc:"Anagramm-R\u00e4tsel \u2014 15 Buchstaben",prompt_en:"Form words from MASCHINENLERNEN!"},
     {id:"b60",icon:"\u{1F303}",icon:"\u{1F303}",title:"Nacht-Satellit",         group:"map_mode",prompt:"Welche Region leuchtet nachts am hellsten?",             desc:"Lichtintensitaet auf Satellitenkarten"},
     /* === Phase 227: Tiere & Natur — Pin Modi (10) === */
     {id:"uk_tiere_endemisch",      icon:"\u{1F98E}",title:"Endemische Arten",       group:"tiere",prompt:"\u{1F4CD} Wo lebt dieses Tier exklusiv?",           desc:"Lemur, Kiwi, Komodo-Waran — nur an einem Ort"},
@@ -3646,8 +3652,8 @@ const MODE_CATS={
   comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable","sort_rank"],cost:0},  filme:{label:"Kino & Film",icon:"\u{1F3AC}",modes:["hl_film_boxoffice","hl_film_laenge","hl_film_oscars","hl_film_imdb","hl_film_release","timeline_film_release","film_match_regisseur","film_match_drehort"],cost:0},  musik:{label:"Musikgeschichte",icon:"\u{1F3B5}",modes:["hl_musik_streams","hl_musik_verkaeufe","hl_musik_grammys","hl_musik_gruendung","timeline_musik_gruendung","musik_match_land","musik_match_hit"],cost:0},  serien:{label:"Serien",icon:"\u{1F4FA}",modes:["hl_serie_start","hl_serie_staffeln","hl_serie_episoden","hl_serie_imdb","serie_match_land","serie_match_genre","timeline_serie_start"],cost:0},
   mythologie:{label:"Mythologie & Sagenwelt",icon:"\u{1F9DC}",modes:["myth_match_domain","myth_match_kultur","myth_match_typ","myth_match_roemisch","myth_pin_herkunft"],cost:0},
   architektur:{label:"Architektur & Megabauten",icon:"\u{1F3D7}\uFE0F",modes:["hl_arch_height","hl_arch_span","hl_arch_baujahr","arch_match_land","arch_match_typ","arch_pin_megaprojects"],cost:0},
-  literatur:{label:"Literatur & Comics",icon:"\u{1F4DA}",modes:["hl_lit_sales","hl_lit_release","lit_match_autor","lit_match_land","lit_match_protagonist","timeline_lit_release"],cost:0},
-  robotik:{label:"KI, Robotik & Hardware",icon:"\u{1F916}",modes:["hl_robot_jahr","robot_match_kategorie","robot_match_land","robot_match_entwickler","robot_match_fakt","timeline_robot_jahr"],cost:0},
+  literatur:{label:"Literatur & Comics",icon:"\u{1F4DA}",modes:["hl_lit_sales","hl_lit_release","lit_match_autor","lit_match_land","lit_match_protagonist","timeline_lit_release","ws_lit_protagonist"],cost:0},
+  robotik:{label:"KI, Robotik & Hardware",icon:"\u{1F916}",modes:["hl_robot_jahr","robot_match_kategorie","robot_match_land","robot_match_entwickler","robot_match_fakt","timeline_robot_jahr","ws_robot_name"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q","uk_enklave","uk_grenzfluesse","uk_halbinseln","uk_deltamuendungen","uk_kaps","uk_meerbusen","uk_inselgruppen","uk_gebirge_match","uk_seen_match"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","kontinent_klicker","insel_festland","landlocked_quiz","sprachen_kompass","flagcolor","climate_quiz","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60","uk_kartenausschnitt","uk_mercator_illusion"],cost:0},
@@ -8779,6 +8785,8 @@ const MYTH_DATA=PLACEHOLDER_MYTH;
 const ARCH_DATA=PLACEHOLDER_ARCH;
 const LIT_DATA=PLACEHOLDER_LIT;
 const ROBOT_DATA=PLACEHOLDER_ROBOT;
+const LIT_WS_DATA=PLACEHOLDER_LIT_WS;
+const ROBOT_WS_DATA=PLACEHOLDER_ROBOT_WS;
 const FILME_EXT_DATA=PLACEHOLDER_FILME_EXT;
 const MUSIK_EXT_DATA=PLACEHOLDER_MUSIK_EXT;
 const GAMES_EXT_DATA=PLACEHOLDER_GAMES_EXT;
@@ -9778,6 +9786,8 @@ var genGastroPinQ=_mkPinQ(GASTRO_PIN_DATA);
 var genGastroHL=_mkHL(GASTRO_HL_DATA);
 var genGastroMatchQ=_mkMatchQ(GASTRO_MATCH_DATA);
 var initGastroWS=_mkWS(GASTRO_WS_DATA,"Gastro");
+var initLitWS=_mkWS(LIT_WS_DATA,"Lit");
+var initRobotWS=_mkWS(ROBOT_WS_DATA,"Robot");
 function genUniversalMatchQ(cat){
   const data=KULTUR_DATA[cat];
   if(!data||!data.length)return null;
@@ -10662,12 +10672,14 @@ const GEN={
   lit_match_land:()=>genLitMatchExt("ursprungsland",_tc("Aus welchem Land stammt dieses Werk?")),
   lit_match_protagonist:()=>genLitMatchExt("protagonist",_tc("Wer ist der Protagonist dieses Werks?")),
   timeline_lit_release:()=>genTimelineQ("lit_release"),
+  ws_lit_protagonist:()=>{initLitWS("tintenherz");return null;},
   hl_robot_jahr:()=>genRobotHLExt("gruendungsjahr",{lowerWins:true,unit:"",prompt:_tc("Welcher Meilenstein/welches System kam zuerst?")}),
   robot_match_kategorie:()=>genRobotMatchExt("kategorie",_tc("Welcher Kategorie geh\u00f6rt dieses KI/Robotik-System an?"),["Wettbewerb","Educational","Industrie","K\u00fcnstliche Intelligenz","Meilenstein"]),
   robot_match_land:()=>genRobotMatchExt("ursprungsland",_tc("Aus welchem Land stammt dieses System?")),
   robot_match_entwickler:()=>genRobotMatchExt("entwickler",_tc("Wer entwickelte dieses System?")),
   robot_match_fakt:()=>genRobotMatchExt("meilenstein_fakt",_tc("Welcher Fakt beschreibt dieses System am besten?")),
   timeline_robot_jahr:()=>genTimelineQ("robot_jahr"),
+  ws_robot_name:()=>{initRobotWS("maschinenlernen");return null;},
   /* === Phase 329: Auto-Quartett === */
   hl_auto_ps:()=>genAutosHL("auto_ps"),
   hl_auto_vmax:()=>genAutosHL("auto_vmax"),
@@ -17132,7 +17144,9 @@ JS = (JS
   .replace('PLACEHOLDER_KONSOLEN',         KONSOLEN_J)
   .replace('PLACEHOLDER_MYTH',           MYTH_J)
   .replace('PLACEHOLDER_ARCH',           ARCH_J)
+  .replace('PLACEHOLDER_LIT_WS',         LIT_WS_J)
   .replace('PLACEHOLDER_LIT',            LIT_J)
+  .replace('PLACEHOLDER_ROBOT_WS',       ROBOT_WS_J)
   .replace('PLACEHOLDER_ROBOT',          ROBOT_J)
   .replace('PLACEHOLDER_FILME_EXT',      FILME_EXT_J)
   .replace('PLACEHOLDER_MUSIK_EXT',      MUSIK_EXT_J)
