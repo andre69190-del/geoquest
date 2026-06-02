@@ -9,6 +9,14 @@
     <priority>1.0</priority>
   </url>
 
+
+  <!-- Game App -->
+  <url>
+    <loc>https://geoquest-web.vercel.app/play</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Landing Page explizit -->
   <url>
     <loc>https://geoquest-web.vercel.app/landing.html</loc>

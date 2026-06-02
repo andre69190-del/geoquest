@@ -21,6 +21,8 @@
     { "src": "/cities_data.js",     "dest": "/cities_data.js" },
     { "src": "/robots.txt",         "dest": "/robots.txt",         "headers": { "Content-Type": "text/plain" } },
     { "src": "/sitemap.xml",        "dest": "/sitemap.xml",        "headers": { "Content-Type": "application/xml" } },
+    { "src": "/",                    "dest": "/landing.html" },
+    { "src": "/play",               "dest": "/index.html" },
     { "src": "/landing.html",       "dest": "/landing.html" },
     { "src": "/impressum.html",     "dest": "/impressum.html" },
     { "src": "/datenschutz.html",   "dest": "/datenschutz.html" },

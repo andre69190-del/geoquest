@@ -372,9 +372,7 @@
   <!-- ========== Cookie-Banner ========== -->
   <div id="cookie-banner" role="dialog" aria-label="Datenschutzhinweis" aria-live="polite">
     <p>
-      Diese Website selbst verwendet keine Tracking-Cookies. Das Spiel GeoQuest nutzt <strong>localStorage</strong>
-      für Spielstand und Einstellungen. Für optionale Cloud-Scores wird
-      <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> verwendet.
+      GeoQuest verwendet <strong>keine Tracking-Cookies und kein Analytics</strong>. Für den Spielbetrieb wird <strong>localStorage</strong> technisch benötigt (Spielstand, Einstellungen) — dies ist gemäß § 25 Abs. 2 TDDDG einwilligungsfrei. Optionale Cloud-Scores nutzen <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>.
       Mehr Infos: <a href="datenschutz.html">Datenschutz</a>
     </p>
     <div class="cookie-btns">
@@ -394,7 +392,7 @@
         <a href="#how" class="nav-hide" role="listitem" data-i18n="nav_how">Spielprinzip</a>
         <a href="#download" class="nav-hide" role="listitem" data-i18n="nav_install">Installieren</a>
         <a href="#faq" class="nav-hide" role="listitem" data-i18n="nav_faq">FAQ</a>
-        <a href="GeoQuest.html" class="nav-cta" role="listitem" data-i18n="nav_play">Spielen →</a>
+        <a href="/play" class="nav-cta" role="listitem" data-i18n="nav_play">Spielen →</a>
       </div>
     </div>
   </nav>
@@ -411,7 +409,7 @@
         <h1 id="hero-h1" data-i18n="hero_h1">Wie gut kennst<br>du die Welt?</h1>
         <p class="hero-sub" data-i18n="hero_sub">999&nbsp;Spielmodi · 30&nbsp;Kategorien · Komplett&nbsp;kostenlos · Offline&nbsp;spielbar</p>
         <div class="cta-group">
-          <a href="GeoQuest.html" class="btn btn-primary" role="button">
+          <a href="/play" class="btn btn-primary" role="button">
             <span data-i18n="cta_play">▶ Jetzt spielen — kostenlos</span>
           </a>
           <a href="#download" class="btn btn-outline" role="button">
@@ -563,7 +561,7 @@
               <li>Desktop, Tablet & Smartphone</li>
               <li>Automatisch offline nach erstem Start</li>
             </ul>
-            <a href="GeoQuest.html" class="btn btn-primary" style="text-align:center;justify-content:center;">
+            <a href="/play" class="btn btn-primary" style="text-align:center;justify-content:center;">
               <span data-i18n="dl_play_btn">Jetzt spielen →</span>
             </a>
           </div>
@@ -585,7 +583,7 @@
                 <li>Desktop: Adressleiste → Install-Icon</li>
               </ol>
             </div>
-            <a href="GeoQuest.html" id="pwa-install-btn" class="btn btn-outline" style="text-align:center;justify-content:center;">
+            <a href="/play" id="pwa-install-btn" class="btn btn-outline" style="text-align:center;justify-content:center;">
               App öffnen & installieren
             </a>
           </div>
@@ -660,7 +658,7 @@
         <div class="footer-links-grid">
           <div class="footer-col">
             <h4>Spielen</h4>
-            <a href="GeoQuest.html">App starten</a>
+            <a href="/play">App starten</a>
             <a href="#categories">Alle Kategorien</a>
             <a href="#download">App installieren</a>
           </div>
@@ -767,7 +765,7 @@
             deferredPrompt.prompt();
             deferredPrompt.userChoice.then(function(){ deferredPrompt = null; });
           } else {
-            window.location.href = 'GeoQuest.html';
+            window.location.href = '/play';
           }
         });
       }
