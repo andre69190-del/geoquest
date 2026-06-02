@@ -196,3 +196,9 @@ python3 run_patch.py patches/patch_228_new_feature.py
 | patch_430_lit_robotik_ws.py | 430 | Wort-Schmiede Literatur & Robotik: ws_lit_protagonist (TINTENHERZ) + ws_robot_name (MASCHINENLERNEN). data/literatur_ws.json + data/robotik_ws.json. verify: 155/155. MODES: 859→861 |
 
 | patch_431_med_eco.py | 431 | Kategorien Anatomie & Medizin + Wirtschaft & Marken. 13 neue Modi, 4 neue JSON-Dateien (medizin_extended 40, wirtschaft_extended 40, 2x WS). Timeline: med_meilensteine + eco_gruendung. verify: 159/159. MODES: 861→874 |
+
+| patch_432_regional_bugfix (inline) | 432 | Bugfix: match_regional_land öffnete sich nie (genRegionalMatchQ pool.length<3, D-A-CH hat nur 3 Länder → nach Filterung 2<3 → null). Fix: Threshold auf 2, dis=p.slice(0,Math.min(3)). verify: 160/160. MODES: 874 |
+
+| inline gen.py + regional_extended.json + validate_content.py | 433 | EU-Erweiterung Regionale Kulinarik: 30→80 Einträge, 22 Länder (DE/AT/CH + 19 EU). Bugfix: match_regional_land fixedPool entfernt → echte Datenländer als Pool. Label: Regionale & EU-Kulinarik. validate LAND-Enum EU-weit. verify: 160/160 |
+
+| inline | 434 | Datenbasis-Upgrade: generate_spieluebersicht.py 3 neue Fn-Mappings (0 Warnings). literatur_extended 40→80. robotik_extended 40→80. timeline robot_jahr auf 80. verify: 160/160 |

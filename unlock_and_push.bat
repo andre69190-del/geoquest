@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 431. Phase 431: Kategorien Anatomie & Medizin + Wirtschaft & Marken. 13 neue Modi (6 Medizin, 7 Wirtschaft). Neue Dateien: medizin_extended.json (40), wirtschaft_extended.json (40), medizin_ws.json, wirtschaft_ws.json. MODES: 861→874. verify: 159/159."
+git commit -m "Content: Phase 434. Phase 434: Datenbasis-Upgrade. generate_spieluebersicht.py: 3 neue Fn-Mappings (0 Warnings). literatur_extended 40→80, robotik_extended 40→80. timeline.json: robot_jahr auf 80 Einträge. verify: 160/160. verify: 160/160."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

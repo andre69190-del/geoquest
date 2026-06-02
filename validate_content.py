@@ -496,7 +496,7 @@ def check_regional_extended(filename, data):
     REQUIRED = ["kategorie","land","region","ort","lat","lng",
                 "saison_start_monat","basis_zutat","alkoholgehalt","brauchtum_monat"]
     KAT  = {"Speise","Getränk","Wein","Brauchtum"}
-    LAND = {"Deutschland","Österreich","Schweiz"}
+    LAND = {"Deutschland","Österreich","Schweiz","Frankreich","Italien","Spanien","Niederlande","Belgien","Portugal","Griechenland","Polen","Tschechien","Ungarn","Dänemark","Schweden","Finnland","Norwegen","Irland","Rumänien","Kroatien","Slowenien","Slowakei","Litauen","Lettland","Estland","Bulgarien","Malta","Zypern","Luxemburg"}
     for name, entry in data.items():
         for f in REQUIRED:
             if f not in entry:

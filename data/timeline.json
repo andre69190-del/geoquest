@@ -2739,12 +2739,28 @@
     "prompt": "Welcher Meilenstein/welches System kam zuerst?",
     "items": [
       {
+        "n": "KUKA",
+        "year": 1898
+      },
+      {
+        "n": "Asimovs Robotergesetze",
+        "year": 1942
+      },
+      {
         "n": "ENIAC",
         "year": 1945
       },
       {
         "n": "Turing-Test",
         "year": 1950
+      },
+      {
+        "n": "Fanuc",
+        "year": 1956
+      },
+      {
+        "n": "Dartmouth Conference",
+        "year": 1956
       },
       {
         "n": "Perceptron",
@@ -2755,36 +2771,292 @@
         "year": 1966
       },
       {
-        "n": "KUKA",
-        "year": 1898
+        "n": "ELIZA",
+        "year": 1966
+      },
+      {
+        "n": "ABB Robotics",
+        "year": 1974
+      },
+      {
+        "n": "Sumo Robot Competition",
+        "year": 1989
+      },
+      {
+        "n": "FIRST Robotics Competition",
+        "year": 1992
       },
       {
         "n": "Deep Blue",
         "year": 1996
       },
       {
+        "n": "RoboCup",
+        "year": 1997
+      },
+      {
+        "n": "Botball",
+        "year": 1997
+      },
+      {
+        "n": "Kasparov vs. Deep Blue",
+        "year": 1997
+      },
+      {
+        "n": "FIRST LEGO League",
+        "year": 1998
+      },
+      {
+        "n": "Eurobot",
+        "year": 1998
+      },
+      {
+        "n": "LEGO Mindstorms",
+        "year": 1998
+      },
+      {
         "n": "ASIMO",
         "year": 2000
+      },
+      {
+        "n": "OpenCV",
+        "year": 2000
+      },
+      {
+        "n": "iRobot Roomba",
+        "year": 2002
+      },
+      {
+        "n": "ABU Robocon",
+        "year": 2002
+      },
+      {
+        "n": "VEX Robotics Competition",
+        "year": 2003
+      },
+      {
+        "n": "World Robot Olympiad",
+        "year": 2004
       },
       {
         "n": "Arduino",
         "year": 2005
       },
       {
+        "n": "Universal Robots",
+        "year": 2005
+      },
+      {
+        "n": "DJI",
+        "year": 2006
+      },
+      {
+        "n": "NAO Robot",
+        "year": 2006
+      },
+      {
+        "n": "Scratch",
+        "year": 2007
+      },
+      {
+        "n": "Wolfram Alpha",
+        "year": 2009
+      },
+      {
+        "n": "Waymo",
+        "year": 2009
+      },
+      {
+        "n": "Watson",
+        "year": 2010
+      },
+      {
+        "n": "ImageNet Challenge",
+        "year": 2010
+      },
+      {
+        "n": "TinkerCAD",
+        "year": 2011
+      },
+      {
+        "n": "Robonaut 2",
+        "year": 2011
+      },
+      {
+        "n": "IBM Watson Jeopardy",
+        "year": 2011
+      },
+      {
+        "n": "Raspberry Pi",
+        "year": 2012
+      },
+      {
         "n": "AlexNet",
         "year": 2012
+      },
+      {
+        "n": "Baxter",
+        "year": 2012
+      },
+      {
+        "n": "Toyota HSR",
+        "year": 2012
+      },
+      {
+        "n": "Curiosity Rover",
+        "year": 2012
+      },
+      {
+        "n": "Boston Dynamics Atlas",
+        "year": 2013
+      },
+      {
+        "n": "ev3dev",
+        "year": 2013
+      },
+      {
+        "n": "Open Roberta",
+        "year": 2013
+      },
+      {
+        "n": "mBot",
+        "year": 2014
+      },
+      {
+        "n": "Pepper (SoftBank)",
+        "year": 2014
+      },
+      {
+        "n": "Nao vs Atlas Challenge",
+        "year": 2015
+      },
+      {
+        "n": "Micro:bit",
+        "year": 2016
       },
       {
         "n": "AlphaGo",
         "year": 2016
       },
       {
-        "n": "ChatGPT",
-        "year": 2022
+        "n": "Sophia",
+        "year": 2016
+      },
+      {
+        "n": "RoboRace",
+        "year": 2016
+      },
+      {
+        "n": "ANYmal",
+        "year": 2016
+      },
+      {
+        "n": "FarmBot",
+        "year": 2016
+      },
+      {
+        "n": "Festo Bionic Cobot",
+        "year": 2017
+      },
+      {
+        "n": "AlphaZero",
+        "year": 2017
+      },
+      {
+        "n": "Calliope mini",
+        "year": 2017
+      },
+      {
+        "n": "Transformer-Architektur",
+        "year": 2017
+      },
+      {
+        "n": "Pybricks",
+        "year": 2018
+      },
+      {
+        "n": "LEGO Spike Prime",
+        "year": 2019
+      },
+      {
+        "n": "Spot",
+        "year": 2019
+      },
+      {
+        "n": "Digit (Agility Robotics)",
+        "year": 2019
+      },
+      {
+        "n": "GPT-2",
+        "year": 2019
       },
       {
         "n": "AlphaFold",
         "year": 2020
+      },
+      {
+        "n": "GPT-3",
+        "year": 2020
+      },
+      {
+        "n": "Boston Dynamics Spot",
+        "year": 2020
+      },
+      {
+        "n": "DALL-E",
+        "year": 2021
+      },
+      {
+        "n": "Copilot",
+        "year": 2021
+      },
+      {
+        "n": "MakeBlock mBot2",
+        "year": 2021
+      },
+      {
+        "n": "GitHub Copilot",
+        "year": 2021
+      },
+      {
+        "n": "ChatGPT",
+        "year": 2022
+      },
+      {
+        "n": "Stable Diffusion",
+        "year": 2022
+      },
+      {
+        "n": "Midjourney",
+        "year": 2022
+      },
+      {
+        "n": "AlphaCode",
+        "year": 2022
+      },
+      {
+        "n": "Whisper",
+        "year": 2022
+      },
+      {
+        "n": "Gemini",
+        "year": 2023
+      },
+      {
+        "n": "Claude",
+        "year": 2023
+      },
+      {
+        "n": "Llama",
+        "year": 2023
+      },
+      {
+        "n": "Stable Diffusion XL",
+        "year": 2023
+      },
+      {
+        "n": "Sora",
+        "year": 2024
       }
     ]
   },

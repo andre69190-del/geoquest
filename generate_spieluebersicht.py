@@ -226,6 +226,12 @@ def _get_count(mid, dispatch, store, sport_poi):
         n=len(store.get('literatur_extended',{}));return(f'{n} Werke',n)if n else('40 Werke',40)
     if fn in {'genRobotHLExt','genRobotMatchExt'}:
         n=len(store.get('robotik_extended',{}));return(f'{n} Systeme',n)if n else('40 Systeme',40)
+    if fn in {'genSerienHLExt','genSerienMatchExt','genSerienTimelineQ'}:
+        n=len(store.get('serien_extended',{}));return(f'{n} Serien',n)if n else('98 Serien',98)
+    if fn in {'genMedizinHLExt','genMedizinMatchExt'}:
+        n=len(store.get('medizin_extended',{}));return(f'{n} Einträge',n)if n else('40 Einträge',40)
+    if fn in {'genWirtschaftHLExt','genWirtschaftMatchExt'}:
+        n=len(store.get('wirtschaft_extended',{}));return(f'{n} Unternehmen',n)if n else('40 Unternehmen',40)
     if fn in {'genMythMatchExt','genMythPinQ'}:
         n=len(store.get('mythologie',{}));return(f'{n} Gottheiten',n)if n else('40 Gottheiten',40)
     if fn in {'genArchHLExt','genArchMatchExt','genArchPinQ'}:

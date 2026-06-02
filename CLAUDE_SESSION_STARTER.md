@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 431):
+Aktueller Stand (Stand: Phase 434):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 874 Spielmodi in MODES-Array (gen.py)
 - 53 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -193,7 +193,7 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 431)
+## AKTUELLER PROJEKT-STATUS (Phase 434)
 
 | Metrik | Wert |
 |--------|------|
@@ -204,8 +204,8 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | JSON-Datendateien | 47 |
 | gen.py Größe | ~1.53 MB |
 | GeoQuest.html Größe | ~5.5 MB |
-| verify.py | 159/159 ✓ |
-| validate_content.py | 60/60 ✓ 0 Warnings |
+| verify.py | 160/160 ✓ |
+| validate_content.py | 61/61 ✓ 0 Warnings |
 | Sprachen vollständig (de/en/pl) | ✓ |
 | Offline/PWA | ✓ |
 | iOS Timeline-Bug | ✅ gefixt (Phase 412) |

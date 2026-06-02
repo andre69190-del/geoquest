@@ -1,42 +1,562 @@
 {
-  "FIRST LEGO League": {"kategorie":"Wettbewerb","gruendungsjahr":1998,"entwickler":"FIRST & LEGO","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Globale Robotik-Olympiade für Kinder 9-16 Jahre, jährliche Themenwechsel"},
-  "World Robot Olympiad": {"kategorie":"Wettbewerb","gruendungsjahr":2004,"entwickler":"WRO Association","ursprungsland":"Dänemark","meilenstein_fakt":"Internationale Robotik-Meisterschaft in 85+ Ländern, LEGO-basiert"},
-  "RoboCup": {"kategorie":"Wettbewerb","gruendungsjahr":1997,"entwickler":"RoboCup Federation","ursprungsland":"Japan","meilenstein_fakt":"Ziel: 2050 ein KI-Team gegen den menschlichen Weltmeister gewinnen lassen"},
-  "VEX Robotics Competition": {"kategorie":"Wettbewerb","gruendungsjahr":2003,"entwickler":"Robotics Education & Competition Foundation","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Größte Schul-Robotik-Meisterschaft weltweit, V5-System"},
-  "Eurobot": {"kategorie":"Wettbewerb","gruendungsjahr":1998,"entwickler":"Planète Sciences","ursprungsland":"Frankreich","meilenstein_fakt":"Europäische Hochschul-Robotik-Meisterschaft, autonome Roboter"},
-  "Botball": {"kategorie":"Wettbewerb","gruendungsjahr":1997,"entwickler":"KISS Institute","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Mittelstufen-Wettbewerb für autonome Teamroboter"},
-  "LEGO Mindstorms": {"kategorie":"Educational","gruendungsjahr":1998,"entwickler":"LEGO Group","ursprungsland":"Dänemark","meilenstein_fakt":"Revolutionierte Robotik-Bildung, EV3 mit ARM9-Prozessor"},
-  "LEGO Spike Prime": {"kategorie":"Educational","gruendungsjahr":2019,"entwickler":"LEGO Group","ursprungsland":"Dänemark","meilenstein_fakt":"Nachfolger von Mindstorms, Python & Scratch programmierbar"},
-  "Pybricks": {"kategorie":"Educational","gruendungsjahr":2018,"entwickler":"Laurens Valk & David Lechner","ursprungsland":"Niederlande","meilenstein_fakt":"Python-Firmware für LEGO Mindstorms/Spike, quelloffen"},
-  "Arduino": {"kategorie":"Educational","gruendungsjahr":2005,"entwickler":"Massimo Banzi et al.","ursprungsland":"Italien","meilenstein_fakt":"Open-Source-Microcontroller, revolutionierte Maker-Kultur weltweit"},
-  "Raspberry Pi": {"kategorie":"Educational","gruendungsjahr":2012,"entwickler":"Raspberry Pi Foundation","ursprungsland":"Vereinigtes Königreich","meilenstein_fakt":"35-Dollar-Computer, über 50 Millionen Einheiten verkauft"},
-  "Micro:bit": {"kategorie":"Educational","gruendungsjahr":2016,"entwickler":"Micro:bit Educational Foundation","ursprungsland":"Vereinigtes Königreich","meilenstein_fakt":"Einplatinencomputer für UK-Schulen, 6+ Millionen Schüler erreicht"},
-  "KUKA": {"kategorie":"Industrie","gruendungsjahr":1898,"entwickler":"KUKA AG","ursprungsland":"Deutschland","meilenstein_fakt":"Weltmarktführer für Industrieroboter, 6-Achs-Gelenkarmroboter FAMULUS (1973)"},
-  "ABB Robotics": {"kategorie":"Industrie","gruendungsjahr":1974,"entwickler":"ABB Ltd.","ursprungsland":"Schweiz","meilenstein_fakt":"IRB 6 – erster elektrisch gesteuerter Industrieroboter der Welt"},
-  "Fanuc": {"kategorie":"Industrie","gruendungsjahr":1956,"entwickler":"Fanuc Corporation","ursprungsland":"Japan","meilenstein_fakt":"Weltgrößter Hersteller von CNC-Systemen und Industrierobotern"},
-  "Universal Robots": {"kategorie":"Industrie","gruendungsjahr":2005,"entwickler":"Universal Robots A/S","ursprungsland":"Dänemark","meilenstein_fakt":"Pionier kollaborativer Roboter (Cobots), UR5 mit Nullpunkt-Einrichtung"},
-  "Boston Dynamics Atlas": {"kategorie":"Industrie","gruendungsjahr":2013,"entwickler":"Boston Dynamics","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Humanoider Roboter, bekannt für Parkour und Saltos in Echtzeit"},
-  "iRobot Roomba": {"kategorie":"Industrie","gruendungsjahr":2002,"entwickler":"iRobot Corporation","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Erster kommerziell erfolgreicher Haushaltsroboter, 40+ Mio. verkauft"},
-  "DJI": {"kategorie":"Industrie","gruendungsjahr":2006,"entwickler":"DJI","ursprungsland":"China","meilenstein_fakt":"Weltmarktführer für Verbraucherdrohnen, über 70% Marktanteil"},
-  "Festo Bionic Cobot": {"kategorie":"Industrie","gruendungsjahr":2017,"entwickler":"Festo SE","ursprungsland":"Deutschland","meilenstein_fakt":"Bionischer kollaborativer Roboter, inspiriert von Elefantenrüssel"},
-  "Deep Blue": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":1996,"entwickler":"IBM","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Erstes Schachprogramm, das amtierenden Weltmeister Kasparov besiegte"},
-  "Watson": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2010,"entwickler":"IBM","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Besiegte 2011 menschliche Champions in der Quizshow Jeopardy!"},
-  "AlphaGo": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2016,"entwickler":"DeepMind","ursprungsland":"Vereinigtes Königreich","meilenstein_fakt":"Erste KI, die einen Go-Weltmeister (Lee Sedol) besiegte"},
-  "AlphaFold": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2020,"entwickler":"DeepMind","ursprungsland":"Vereinigtes Königreich","meilenstein_fakt":"Löste 50-jähriges Proteinfaltungsproblem, 200 Mio. Strukturen vorhergesagt"},
-  "ChatGPT": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2022,"entwickler":"OpenAI","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"100 Mio. Nutzer in 2 Monaten – schnellste Adoption einer App in der Geschichte"},
-  "DALL-E": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2021,"entwickler":"OpenAI","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Text-zu-Bild-KI, revolutionierte digitale Kunstproduktion"},
-  "Stable Diffusion": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2022,"entwickler":"Stability AI","ursprungsland":"Vereinigtes Königreich","meilenstein_fakt":"Quelloffenes Text-zu-Bild-Modell, ermöglichte KI-Kunst für alle"},
-  "Gemini": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2023,"entwickler":"Google DeepMind","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Multimodales KI-Modell, erstes das GPT-4 in mehreren Benchmarks übertrifft"},
-  "Copilot": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2021,"entwickler":"GitHub & OpenAI","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"KI-Programmierhilfe, generiert ca. 46% des Codes bei aktiven Nutzern"},
-  "Turing-Test": {"kategorie":"Meilenstein","gruendungsjahr":1950,"entwickler":"Alan Turing","ursprungsland":"Vereinigtes Königreich","meilenstein_fakt":"Definiert Intelligenz als menschlich-untescheidbares Gesprächsverhalten"},
-  "ENIAC": {"kategorie":"Meilenstein","gruendungsjahr":1945,"entwickler":"Eckert & Mauchly","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Erster elektronischer Universalcomputer, 18.000 Vakuumröhren, 30 Tonnen"},
-  "Shakey the Robot": {"kategorie":"Meilenstein","gruendungsjahr":1966,"entwickler":"SRI International","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Erster mobiler Allzweckroboter mit KI-Planung (A*-Algorithmus)"},
-  "ASIMO": {"kategorie":"Meilenstein","gruendungsjahr":2000,"entwickler":"Honda","ursprungsland":"Japan","meilenstein_fakt":"Fortschrittlichster humanoider Roboter seiner Zeit, konnte Treppen steigen"},
-  "Sophia": {"kategorie":"Meilenstein","gruendungsjahr":2016,"entwickler":"Hanson Robotics","ursprungsland":"Hongkong","meilenstein_fakt":"Erster Roboter mit Staatsbürgerschaft (Saudi-Arabien 2017)"},
-  "AlexNet": {"kategorie":"Meilenstein","gruendungsjahr":2012,"entwickler":"University of Toronto","ursprungsland":"Kanada","meilenstein_fakt":"Startschuss der Deep-Learning-Revolution, gewann ImageNet mit 15% Fehlerrate"},
-  "GPT-3": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2020,"entwickler":"OpenAI","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"175 Milliarden Parameter, erster LLM mit emergenten Fähigkeiten"},
-  "Asimovs Robotergesetze": {"kategorie":"Meilenstein","gruendungsjahr":1942,"entwickler":"Isaac Asimov","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Drei ethische Grundregeln für Roboter, prägen KI-Ethikdebatte bis heute"},
-  "Perceptron": {"kategorie":"Meilenstein","gruendungsjahr":1958,"entwickler":"Frank Rosenblatt","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Erstes lernfähiges neuronales Netz, Vorläufer aller modernen KI"},
-  "AlphaZero": {"kategorie":"Künstliche Intelligenz","gruendungsjahr":2017,"entwickler":"DeepMind","ursprungsland":"Vereinigtes Königreich","meilenstein_fakt":"Meisterte Schach, Go und Shōgi ohne menschliches Vorwissen in 24h"},
-  "Spot": {"kategorie":"Industrie","gruendungsjahr":2019,"entwickler":"Boston Dynamics","ursprungsland":"Vereinigte Staaten","meilenstein_fakt":"Erster kommerziell verfügbarer Laufroboter, 75.000+ USD Stückpreis"}
+  "FIRST LEGO League": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 1998,
+    "entwickler": "FIRST & LEGO",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Globale Robotik-Olympiade für Kinder 9-16 Jahre, jährliche Themenwechsel"
+  },
+  "World Robot Olympiad": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 2004,
+    "entwickler": "WRO Association",
+    "ursprungsland": "Dänemark",
+    "meilenstein_fakt": "Internationale Robotik-Meisterschaft in 85+ Ländern, LEGO-basiert"
+  },
+  "RoboCup": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 1997,
+    "entwickler": "RoboCup Federation",
+    "ursprungsland": "Japan",
+    "meilenstein_fakt": "Ziel: 2050 ein KI-Team gegen den menschlichen Weltmeister gewinnen lassen"
+  },
+  "VEX Robotics Competition": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 2003,
+    "entwickler": "Robotics Education & Competition Foundation",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Größte Schul-Robotik-Meisterschaft weltweit, V5-System"
+  },
+  "Eurobot": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 1998,
+    "entwickler": "Planète Sciences",
+    "ursprungsland": "Frankreich",
+    "meilenstein_fakt": "Europäische Hochschul-Robotik-Meisterschaft, autonome Roboter"
+  },
+  "Botball": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 1997,
+    "entwickler": "KISS Institute",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Mittelstufen-Wettbewerb für autonome Teamroboter"
+  },
+  "LEGO Mindstorms": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 1998,
+    "entwickler": "LEGO Group",
+    "ursprungsland": "Dänemark",
+    "meilenstein_fakt": "Revolutionierte Robotik-Bildung, EV3 mit ARM9-Prozessor"
+  },
+  "LEGO Spike Prime": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2019,
+    "entwickler": "LEGO Group",
+    "ursprungsland": "Dänemark",
+    "meilenstein_fakt": "Nachfolger von Mindstorms, Python & Scratch programmierbar"
+  },
+  "Pybricks": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2018,
+    "entwickler": "Laurens Valk & David Lechner",
+    "ursprungsland": "Niederlande",
+    "meilenstein_fakt": "Python-Firmware für LEGO Mindstorms/Spike, quelloffen"
+  },
+  "Arduino": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2005,
+    "entwickler": "Massimo Banzi et al.",
+    "ursprungsland": "Italien",
+    "meilenstein_fakt": "Open-Source-Microcontroller, revolutionierte Maker-Kultur weltweit"
+  },
+  "Raspberry Pi": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2012,
+    "entwickler": "Raspberry Pi Foundation",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "35-Dollar-Computer, über 50 Millionen Einheiten verkauft"
+  },
+  "Micro:bit": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2016,
+    "entwickler": "Micro:bit Educational Foundation",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "Einplatinencomputer für UK-Schulen, 6+ Millionen Schüler erreicht"
+  },
+  "KUKA": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 1898,
+    "entwickler": "KUKA AG",
+    "ursprungsland": "Deutschland",
+    "meilenstein_fakt": "Weltmarktführer für Industrieroboter, 6-Achs-Gelenkarmroboter FAMULUS (1973)"
+  },
+  "ABB Robotics": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 1974,
+    "entwickler": "ABB Ltd.",
+    "ursprungsland": "Schweiz",
+    "meilenstein_fakt": "IRB 6 – erster elektrisch gesteuerter Industrieroboter der Welt"
+  },
+  "Fanuc": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 1956,
+    "entwickler": "Fanuc Corporation",
+    "ursprungsland": "Japan",
+    "meilenstein_fakt": "Weltgrößter Hersteller von CNC-Systemen und Industrierobotern"
+  },
+  "Universal Robots": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2005,
+    "entwickler": "Universal Robots A/S",
+    "ursprungsland": "Dänemark",
+    "meilenstein_fakt": "Pionier kollaborativer Roboter (Cobots), UR5 mit Nullpunkt-Einrichtung"
+  },
+  "Boston Dynamics Atlas": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2013,
+    "entwickler": "Boston Dynamics",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Humanoider Roboter, bekannt für Parkour und Saltos in Echtzeit"
+  },
+  "iRobot Roomba": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2002,
+    "entwickler": "iRobot Corporation",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erster kommerziell erfolgreicher Haushaltsroboter, 40+ Mio. verkauft"
+  },
+  "DJI": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2006,
+    "entwickler": "DJI",
+    "ursprungsland": "China",
+    "meilenstein_fakt": "Weltmarktführer für Verbraucherdrohnen, über 70% Marktanteil"
+  },
+  "Festo Bionic Cobot": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2017,
+    "entwickler": "Festo SE",
+    "ursprungsland": "Deutschland",
+    "meilenstein_fakt": "Bionischer kollaborativer Roboter, inspiriert von Elefantenrüssel"
+  },
+  "Deep Blue": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 1996,
+    "entwickler": "IBM",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erstes Schachprogramm, das amtierenden Weltmeister Kasparov besiegte"
+  },
+  "Watson": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2010,
+    "entwickler": "IBM",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Besiegte 2011 menschliche Champions in der Quizshow Jeopardy!"
+  },
+  "AlphaGo": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2016,
+    "entwickler": "DeepMind",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "Erste KI, die einen Go-Weltmeister (Lee Sedol) besiegte"
+  },
+  "AlphaFold": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2020,
+    "entwickler": "DeepMind",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "Löste 50-jähriges Proteinfaltungsproblem, 200 Mio. Strukturen vorhergesagt"
+  },
+  "ChatGPT": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2022,
+    "entwickler": "OpenAI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "100 Mio. Nutzer in 2 Monaten – schnellste Adoption einer App in der Geschichte"
+  },
+  "DALL-E": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2021,
+    "entwickler": "OpenAI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Text-zu-Bild-KI, revolutionierte digitale Kunstproduktion"
+  },
+  "Stable Diffusion": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2022,
+    "entwickler": "Stability AI",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "Quelloffenes Text-zu-Bild-Modell, ermöglichte KI-Kunst für alle"
+  },
+  "Gemini": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2023,
+    "entwickler": "Google DeepMind",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Multimodales KI-Modell, erstes das GPT-4 in mehreren Benchmarks übertrifft"
+  },
+  "Copilot": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2021,
+    "entwickler": "GitHub & OpenAI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "KI-Programmierhilfe, generiert ca. 46% des Codes bei aktiven Nutzern"
+  },
+  "Turing-Test": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 1950,
+    "entwickler": "Alan Turing",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "Definiert Intelligenz als menschlich-untescheidbares Gesprächsverhalten"
+  },
+  "ENIAC": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 1945,
+    "entwickler": "Eckert & Mauchly",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erster elektronischer Universalcomputer, 18.000 Vakuumröhren, 30 Tonnen"
+  },
+  "Shakey the Robot": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 1966,
+    "entwickler": "SRI International",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erster mobiler Allzweckroboter mit KI-Planung (A*-Algorithmus)"
+  },
+  "ASIMO": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2000,
+    "entwickler": "Honda",
+    "ursprungsland": "Japan",
+    "meilenstein_fakt": "Fortschrittlichster humanoider Roboter seiner Zeit, konnte Treppen steigen"
+  },
+  "Sophia": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2016,
+    "entwickler": "Hanson Robotics",
+    "ursprungsland": "Hongkong",
+    "meilenstein_fakt": "Erster Roboter mit Staatsbürgerschaft (Saudi-Arabien 2017)"
+  },
+  "AlexNet": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2012,
+    "entwickler": "University of Toronto",
+    "ursprungsland": "Kanada",
+    "meilenstein_fakt": "Startschuss der Deep-Learning-Revolution, gewann ImageNet mit 15% Fehlerrate"
+  },
+  "GPT-3": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2020,
+    "entwickler": "OpenAI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "175 Milliarden Parameter, erster LLM mit emergenten Fähigkeiten"
+  },
+  "Asimovs Robotergesetze": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 1942,
+    "entwickler": "Isaac Asimov",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Drei ethische Grundregeln für Roboter, prägen KI-Ethikdebatte bis heute"
+  },
+  "Perceptron": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 1958,
+    "entwickler": "Frank Rosenblatt",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erstes lernfähiges neuronales Netz, Vorläufer aller modernen KI"
+  },
+  "AlphaZero": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2017,
+    "entwickler": "DeepMind",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "Meisterte Schach, Go und Shōgi ohne menschliches Vorwissen in 24h"
+  },
+  "Spot": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2019,
+    "entwickler": "Boston Dynamics",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erster kommerziell verfügbarer Laufroboter, 75.000+ USD Stückpreis"
+  },
+  "FIRST Robotics Competition": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 1992,
+    "entwickler": "FIRST",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Hochschul-Robotikwettbewerb für 14-18 Jährige mit Industriepartnern wie Google und Boeing"
+  },
+  "Sumo Robot Competition": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 1989,
+    "entwickler": "Fuji Soft",
+    "ursprungsland": "Japan",
+    "meilenstein_fakt": "Autonome Roboter kämpfen nach Sumo-Regeln, weltweit 15.000+ Teams"
+  },
+  "RoboRace": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 2016,
+    "entwickler": "Kinetik",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "Erste autonome Rennserie für selbstfahrende Rennwagen ohne Fahrer"
+  },
+  "ABU Robocon": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 2002,
+    "entwickler": "Asia-Pacific Broadcasting Union",
+    "ursprungsland": "Japan",
+    "meilenstein_fakt": "Asien-Pazifik-Robotikwettbewerb für Universitäten, jährlich wechselnde Aufgaben"
+  },
+  "Calliope mini": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2017,
+    "entwickler": "Calliope gGmbH",
+    "ursprungsland": "Deutschland",
+    "meilenstein_fakt": "Offizieller Lerncomputer für deutsche Grundschulen, basiert auf BBC micro:bit"
+  },
+  "Scratch": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2007,
+    "entwickler": "MIT Media Lab",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Visuelle Programmiersprache von MIT, über 100 Mio. Projekte, für Kinder ab 8"
+  },
+  "mBot": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2014,
+    "entwickler": "Makeblock",
+    "ursprungsland": "China",
+    "meilenstein_fakt": "MINT-Roboter für Schulen weltweit, über 5 Mio. verkaufte Einheiten"
+  },
+  "TinkerCAD": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2011,
+    "entwickler": "Autodesk",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Browser-3D-Design für Schüler, Basis für erste Druckprojekte und Elektronik"
+  },
+  "ev3dev": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2013,
+    "entwickler": "ev3dev Community",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Linux-basiertes Betriebssystem für LEGO Mindstorms EV3, Python-Programmierung"
+  },
+  "Open Roberta": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2013,
+    "entwickler": "Fraunhofer IAIS",
+    "ursprungsland": "Deutschland",
+    "meilenstein_fakt": "Cloudbasierte Robotikprogrammierung des Fraunhofer-Instituts, über 1 Mio. Nutzer"
+  },
+  "Pepper (SoftBank)": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2014,
+    "entwickler": "SoftBank Robotics",
+    "ursprungsland": "Japan",
+    "meilenstein_fakt": "Humanoider Serviceroboter mit Emotionserkennung, in über 70 Ländern eingesetzt"
+  },
+  "Baxter": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2012,
+    "entwickler": "Rethink Robotics",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erster kollaborativer Industrieroboter mit Gesichtsdisplay und lernfähigen Armen"
+  },
+  "Toyota HSR": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2012,
+    "entwickler": "Toyota",
+    "ursprungsland": "Japan",
+    "meilenstein_fakt": "Human Support Robot für häusliche Pflege, greift Objekte und öffnet Schubladen"
+  },
+  "Digit (Agility Robotics)": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2019,
+    "entwickler": "Agility Robotics",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Zweibeiniger Lagerroboter, Amazon orderte über 20.000 Einheiten für Logistikzentren"
+  },
+  "ANYmal": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2016,
+    "entwickler": "ANYbotics",
+    "ursprungsland": "Schweiz",
+    "meilenstein_fakt": "Vierbeiniger Inspektionsroboter für Öl- und Gasindustrie, autonome Datenerfassung"
+  },
+  "Robonaut 2": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2011,
+    "entwickler": "NASA/GM",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erster humanoide Roboter auf der ISS, kann Werkzeuge wie ein Astronaut benutzen"
+  },
+  "Midjourney": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2022,
+    "entwickler": "Midjourney Inc.",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Text-zu-Bild-KI, gewann 2022 Colorado State Fair Kunstwettbewerb (KI-Kontroverse)"
+  },
+  "Claude": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2023,
+    "entwickler": "Anthropic",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Constitutional AI – erster Chatbot mit eingebautem Werterahmen, trainiert auf RLHF"
+  },
+  "Llama": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2023,
+    "entwickler": "Meta AI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Open-Source-Sprachmodell von Meta, Basis für tausende Community-Modelle weltweit"
+  },
+  "Sora": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2024,
+    "entwickler": "OpenAI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Text-zu-Video-Modell von OpenAI, generiert realistische Videos aus Textbeschreibungen"
+  },
+  "AlphaCode": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2022,
+    "entwickler": "DeepMind",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "KI-Programmierer von DeepMind, erreichte Top-50%-Platzierung bei Competitive Programming"
+  },
+  "Whisper": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2022,
+    "entwickler": "OpenAI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Open-Source-Spracherkennungs-KI von OpenAI, trainiert auf 680.000 Stunden Audio"
+  },
+  "Dartmouth Conference": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 1956,
+    "entwickler": "John McCarthy et al.",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Geburtsstunde des Begriffs 'Artificial Intelligence', Grundstein der KI-Forschung"
+  },
+  "ELIZA": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 1966,
+    "entwickler": "Joseph Weizenbaum",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erster Chatbot der Geschichte, täuschte Nutzer über menschliche Qualität (ELIZA-Effekt)"
+  },
+  "Kasparov vs. Deep Blue": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 1997,
+    "entwickler": "IBM",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "IBM Deep Blue besiegte Schachweltmeister Garry Kasparov – Meilenstein der KI"
+  },
+  "ImageNet Challenge": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2010,
+    "entwickler": "Fei-Fei Li",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Bilderkennungswettbewerb, der 2012 den Deep-Learning-Durchbruch (AlexNet) auslöste"
+  },
+  "GPT-2": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2019,
+    "entwickler": "OpenAI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "OpenAI hielt GPT-2 wegen 'gefährlicher Fähigkeiten' zurück – erste KI-Sicherheitsdebatte"
+  },
+  "Transformer-Architektur": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2017,
+    "entwickler": "Google Brain",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "'Attention is All You Need' – Grundlage aller modernen Sprachmodelle (ChatGPT, Gemini)"
+  },
+  "Boston Dynamics Spot": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2020,
+    "entwickler": "Boston Dynamics",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erste kommerziell erhältliche Version von Spot, eingesetzt bei Chevron, NYC Police"
+  },
+  "MakeBlock mBot2": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2021,
+    "entwickler": "Makeblock",
+    "ursprungsland": "China",
+    "meilenstein_fakt": "Zweite Generation des mBot mit KI-Kamera, Spracherkennung und 5G-Modul für MINT"
+  },
+  "NAO Robot": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2006,
+    "entwickler": "SoftBank Robotics",
+    "ursprungsland": "Frankreich",
+    "meilenstein_fakt": "Beliebtester humanoider Forschungsroboter weltweit, Standard-Plattform beim RoboCup"
+  },
+  "Nao vs Atlas Challenge": {
+    "kategorie": "Wettbewerb",
+    "gruendungsjahr": 2015,
+    "entwickler": "DARPA",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "DARPA Robotics Challenge: Katastrophenhilfe-Roboter auf Hindernisparcours, $3.5M Preis"
+  },
+  "Wolfram Alpha": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2009,
+    "entwickler": "Wolfram Research",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erste 'computational knowledge engine', beantwortet Faktenfragen direkt mit Berechnungen"
+  },
+  "IBM Watson Jeopardy": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2011,
+    "entwickler": "IBM",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Watson besiegte 2011 Jeopardy-Champions Ken Jennings und Brad Rutter live im TV"
+  },
+  "Waymo": {
+    "kategorie": "Industrie",
+    "gruendungsjahr": 2009,
+    "entwickler": "Alphabet/Google",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Erstes kommerzielles Robotaxi-Netz, über 1 Mio. autonome Meilen ohne Unfall in 2020"
+  },
+  "FarmBot": {
+    "kategorie": "Educational",
+    "gruendungsjahr": 2016,
+    "entwickler": "FarmBot Inc.",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Open-Source-Agrarroboter für Schulen und Gärten, vollautomatisch via Webbrowser steuerbar"
+  },
+  "Stable Diffusion XL": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2023,
+    "entwickler": "Stability AI",
+    "ursprungsland": "Vereinigtes Königreich",
+    "meilenstein_fakt": "Open-Source-Bildgenerator, erste KI die lizenzfreie Bilder in Profiqualität liefert"
+  },
+  "GitHub Copilot": {
+    "kategorie": "Künstliche Intelligenz",
+    "gruendungsjahr": 2021,
+    "entwickler": "GitHub/OpenAI",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "KI-Programmierhilfe in VS Code, über 1 Mio. zahlende Nutzer in ersten 6 Monaten"
+  },
+  "Curiosity Rover": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2012,
+    "entwickler": "NASA/JPL",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Mars-Rover mit KI-Navigation, entdeckte Hinweise auf frühere Wasservorkommen auf dem Mars"
+  },
+  "OpenCV": {
+    "kategorie": "Meilenstein",
+    "gruendungsjahr": 2000,
+    "entwickler": "Intel",
+    "ursprungsland": "Vereinigte Staaten",
+    "meilenstein_fakt": "Weltweit meistgenutzte Open-Source-Bildverarbeitungsbibliothek, Basis aller Computer-Vision-Systeme"
+  }
 }
