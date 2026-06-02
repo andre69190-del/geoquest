@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 423. 8 neue Modi aus ungenutzten Datenfeldern: hl_konsolen_erscheinungsjahr/eingestellt, konsolen_match_spiel/aufloesung, hl_auto_nordschleife/baujahr_ende, games_match_publisher_land, hl_games_publisher_lng. MODES 802->810. verify: 146/146."
+git commit -m "Content: Phase 424. 4 neue Geo/Zug-Modi: zug_match_land (177 Strecken→Land), odd_one_out (6 Kategorien: EU/NATO/Insel/Binnen/G7/Euro), clue_country (progressive Hinweise: Kontinent→Hauptstadt→Währung), sort_rank (4 Länder nach Metrik sortieren). MODES 810→814. verify: 146/146."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

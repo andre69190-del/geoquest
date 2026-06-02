@@ -12,9 +12,9 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 423):
+Aktueller Stand (Stand: Phase 424):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
-- 810 Spielmodi in MODES-Array (gen.py)
+- 814 Spielmodi in MODES-Array (gen.py)
 - 47 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
 - Patch-System: patches/patch_NNN_description.py via run_patch.py
 - Zero-Bug-Policy: assert c.count(old)==1 vor jedem c.replace()
@@ -166,7 +166,7 @@ Oder manuell:
 - `"Audit Phase NNN"` → Claude liest alle Kern-Dateien und liefert Findings + Fixes
 
 ### Für größere Erweiterungen (gib diese Infos mit):
-- **Phase-Nummer** (nächste wäre 424)
+- **Phase-Nummer** (nächste wäre 425)
 - **Kategorie** (games, autos, tiere, pflanzen, gastro, tech, emob, archäologie, astro, geo, sport)
 - **Daten-Format** (JSON-Schema, Python-Dict mit Feldbeschreibungen)
 - **Erwartete Modi-Typen** (H/L, Match, Pin, Wort-Schmiede, Multiple-Choice)
@@ -189,11 +189,11 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 423)
+## AKTUELLER PROJEKT-STATUS (Phase 424)
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **810** |
+| Spielmodi | **814** |
 | Fahrzeuge (autos_extended) | 431 |
 | Spiele (games_extended) | 70 |
 | Konsolen (konsolen.json) | 30 |

@@ -2906,6 +2906,7 @@ const MODES=[
     {id:"zug_routen",       icon:"\u{1F5FA}\uFE0F",title:"Legendaere Routen",      group:"zuege",prompt:"Aus welchem Land faehrt dieser beruehmt Zug?",desc:"Glacier Express bis Transsibirische Eisenbahn — kenne deine Strecken"},
     {id:"zug_bahnhof_typ", icon:"\u{1F3DB}\uFE0F",title:"Bahnhofs-Architektur",   group:"zuege",prompt:"Welche Bauform hat dieser Bahnhof?",              desc:"Kopfbahnhof, Durchgangsbahnhof, Turmbahnhof — die Typen der grossen Hubs"},
     {id:"zug_hersteller",  icon:"\u{1F3ED}",      title:"Zug-Hersteller",          group:"zuege",prompt:"Von welchem Hersteller stammt dieser Zug?",        desc:"Alstom, Siemens, Hitachi, Stadler — wer baut die schnellsten Zuege?"},
+    {id:"zug_match_land",icon:"\u{1F5FA}\uFE0F",title:"Zug-Quiz: Welches Land?",group:"zuege",prompt:"In welchem Land f\u00e4hrt dieser Zug haupts\u00e4chlich?",desc:"Von ICE bis AVE \u2014 erkenne das Land anhand der Strecke.",prompt_en:"In which country does this train mainly operate?"},
     {id:"zug_reisezeit_mc", icon:"\u23F1\uFE0F",title:"Reisezeit-Sch\u00e4tzer",       group:"zuege",prompt:"Wie lange dauert diese Zugfahrt planm\u00e4\u00dfig?",prompt_en:"How long does this train journey take?",desc:"Sch\u00e4tze die Reisezeit zwischen europ\u00e4ischen Bahnhöfen"},
     {id:"zug_reisezeit_hl",  icon:"\u2696\uFE0F",title:"Strecken-Duell",                 group:"zuege",prompt:"Welche Zugfahrt dauert l\u00e4nger?",prompt_en:"Which train journey takes longer?",desc:"Vergleiche Reisezeiten europäischer Zugstrecken"},
     {id:"zug_uic_laender",   icon:"\uD83D\uDD22",title:"UIC-L\u00e4ndercodes",          group:"zuege",prompt:"Welchem Land geh\u00f6rt dieser Waggon?",prompt_en:"Which country does this wagon belong to?",desc:"Erkenne das Land an der 12-stelligen UIC-Wagennummer"},
@@ -3017,6 +3018,9 @@ const MODES=[
     {id:"uk_distanz_schaetzer",icon:"\u{1F4CF}",title:"Distanz-Sch\u00e4tzer",  group:"airports",prompt:"Wie weit ist diese Strecke (ca.)?",               desc:"Sch\u00e4tze Entfernungen zwischen St\u00e4dten"},
     {id:"uk_flugzeit_schaetzer",icon:"\u2708",title:"Flugzeit-Sch\u00e4tzer",    group:"airports",prompt:"Wie lange dauert dieser Flug?",                   desc:"Sch\u00e4tze Flugzeiten zwischen Metropolen"},
     {id:"uk_breitengrad_match",icon:"\u{1F4CD}",title:"Breitengrad-Match",       group:"pure_geo",prompt:"Welche Stadt liegt auf dem gleichen Breitengrad?", desc:"Erstaunliche Breitengrad-Paare entdecken"},
+    {id:"odd_one_out",icon:"\u{1F50D}",title:"Welches passt nicht?",group:"pure_geo",prompt:"Welches dieser L\u00e4nder passt NICHT zur Kategorie?",desc:"3 L\u00e4nder geh\u00f6ren zusammen \u2014 eines nicht.",prompt_en:"Which country does NOT belong to the category?"},
+    {id:"clue_country",icon:"\u{1F575}\uFE0F",title:"3 Hinweise \u2014 1 Land",group:"pure_geo",prompt:"Welches Land versteckt sich hinter diesen Hinweisen?",desc:"Kontinent \u2192 Hauptstadt \u2192 W\u00e4hrung \u2014 mit jedem Hinweis klarer.",prompt_en:"Which country hides behind these clues?"},
+    {id:"sort_rank",icon:"\u{1F4CA}",title:"Rank-Sortierung: 4 L\u00e4nder",group:"comparisons",prompt:"Sortiere die L\u00e4nder vom niedrigsten zum h\u00f6chsten Wert!",desc:"Klicke in der richtigen Reihenfolge \u2014 von klein nach gro\u00df.",prompt_en:"Sort these countries from lowest to highest value!"},
     {id:"b60",icon:"\u{1F303}",title:"Nacht-Satellit",         group:"map_mode",prompt:"Welche Region leuchtet nachts am hellsten?",             desc:"Lichtintensitaet auf Satellitenkarten"},
     /* === Phase 227: Tiere & Natur — Pin Modi (10) === */
     {id:"uk_tiere_endemisch",      icon:"\u{1F98E}",title:"Endemische Arten",       group:"tiere",prompt:"\u{1F4CD} Wo lebt dieses Tier exklusiv?",           desc:"Lemur, Kiwi, Komodo-Waran — nur an einem Ort"},
@@ -3500,12 +3504,12 @@ const MODES=[
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
 const MODE_CATS={
-  pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match"],cost:0},
+  pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match","odd_one_out","clue_country"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
   eu_plates:{label:"Kennzeichen",icon:"\u{1F697}",modes:["plate_casual","plate_hard","map_ivr","de_plate"],cost:500},
-  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","hl_zug_taktfrequenz","timeline_zug_hsb","timeline_zug_bahnhof_bau","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_panorama","ws_zug_nightjet","ws_zug_acela","uk_bahnhof_pin","zug_rekorde_pin","zug_ds100","zug_uic_laender","zug_ds100_input","zug_reisezeit_mc","zug_reisezeit_hl","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller"],cost:0},
+  zuege:{label:"Z\u00fcge & Bahn",icon:"\u{1F686}",modes:["zug_panorama","zug_vkm","uk_bahnstrecken","hl_b_rail","hl_zug_speed","hl_zug_jahr","hl_zug_km","hl_zug_taktfrequenz","timeline_zug_hsb","timeline_zug_bahnhof_bau","ws_zug_intercity","ws_zug_shinkansen","ws_zug_frecciarossa","ws_zug_pendolino","ws_zug_railjet","ws_zug_eurostar","ws_zug_thalys","ws_zug_velaro","ws_zug_bernina","ws_zug_trenitalia","ws_zug_itineraire","ws_zug_talgo","ws_zug_maglev","ws_zug_flixzug","ws_zug_panorama","ws_zug_nightjet","ws_zug_acela","uk_bahnhof_pin","zug_rekorde_pin","zug_ds100","zug_uic_laender","zug_ds100_input","zug_reisezeit_mc","zug_reisezeit_hl","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller","zug_match_land"],cost:0},
   hl_compare:{label:"Higher / Lower",icon:"\u2b06\ufe0f",modes:["hl_pop","hl_river","hl_area","hl_gdp","hl_density","hl_elevation","hl_coastline","hl_borders","hl_lifeexp","hl_median_age","hl_forest"],cost:0},
-  comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable"],cost:0},
+  comparisons:{label:"Vergleiche",icon:"\u2696\ufe0f",modes:["comp_area","comp_pop","comp_north","comp_gdp","comp_density","comp_elevation","comp_coast","comp_borders","comp_life","comp_age","comp_forest","comp_airports","comp_mountain","comp_nsextent","hl_b_parks","hl_b_roads","hl_b_rail","hl_b_net","hl_b_ev","hl_b_urban","plate_compare","hl_b_total_lang","hl_b_nobel","hl_b_medals","hl_b_ns_km","hl_b_bikes","hl_b_land_border","hl_b_military","hl_b_renewable","sort_rank"],cost:0},
   airports:{label:"Airports & Spezial",icon:"\u2708\uFE0F",modes:["airport_pin","iata","tz_quiz","airport_map","flugrouten_duell","inlandsflug_intl","sunrise_guesser","sonnen_kompass","aequator_magnet","hauptstadt_distanz","naechster_airport","iata_reverse","jetlag_rechner","kuehlschrank_backofen","regen_radar","hoehenmeter_schaetzer","klima_ausreisser","uk_automarken","uk_fluggesellschaften","uk_bahnstrecken","uk_hafen_world","uk_kanaele","uk_reedereien","uk_autobahnen_beruhmt","uk_metrostaedte","uk_luft_rekorde","uk_distanz_schaetzer","uk_flugzeit_schaetzer"]/* PHASE204_CATS */,cost:0},
   neighbors:{label:"Nachbarl\u00e4nder",icon:"\u{1F91D}",modes:["neighbor","neighbor_fake","neighbor_count","b21","b22","b23","b25","b29","b37","b40","border_q","uk_enklave","uk_grenzfluesse","uk_halbinseln","uk_deltamuendungen","uk_kaps","uk_meerbusen","uk_inselgruppen","uk_gebirge_match","uk_seen_match"],cost:0},
   map_mode:{label:"Weltkarte",icon:"\u{1F5FA}",modes:["map_guess","map_reverse","map_capital","kontinent_klicker","insel_festland","landlocked_quiz","sprachen_kompass","flagcolor","climate_quiz","b41","b42","b44","b45","b46","b47","b51","b53","b54","b58","b60","uk_kartenausschnitt","uk_mercator_illusion"],cost:0},
@@ -10444,6 +10448,10 @@ const GEN={
   zug_uic_laender:()=>genUICInputQ(),
   zug_reisezeit_mc:()=>genZugReisezeitMC(),
   zug_reisezeit_hl:()=>genZugReisezeitHL(),
+  zug_match_land:()=>genZugMatchLandQ(),
+  odd_one_out:()=>genOddOneOutQ(),
+  clue_country:()=>genClueCountryQ(),
+  sort_rank:()=>genSortRankQ(),
   /* === Phase 329: Auto-Quartett === */
   hl_auto_ps:()=>genAutosHL("auto_ps"),
   hl_auto_vmax:()=>genAutosHL("auto_vmax"),
@@ -10896,7 +10904,7 @@ function lq(){
   if(\!q&&S.diff==="casual"&&S.queueExtra.length>0)q=S.queueExtra.shift();
   if(\!q){S.ph="menu";render();return;}
   S.askedLids.add(q.lid);
-  S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.ph="playing";_tlDrag=null;_tlTouchN=null; /* iOS: clear stale touch state */S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
+  S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.clueStep=0;S.rankOrder=[];S.ph="playing";_tlDrag=null;_tlTouchN=null; /* iOS: clear stale touch state */S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
   if(S.ttsOn)setTimeout(_ttsCurrentQ,350); /* Phase 256: Auto-TTS */;
   S.half_removed=false;S.freezeActive=false;S.airportPinDist=0;S.airportPinPts=0;
   render();
@@ -11294,6 +11302,85 @@ function genZugReisezeitHL(){
   };
 }
 window.genZugReisezeitHL=genZugReisezeitHL;
+
+/* Phase 424: genZugMatchLandQ */
+function genZugMatchLandQ(){
+  var pool=ZUG_REISEZEITEN_DATA;if(!pool||pool.length<4)return null;
+  var LN={"de":"Deutschland","at":"\u00d6sterreich","ch":"Schweiz","fr":"Frankreich","it":"Italien","es":"Spanien","gb":"Gro\u00dfbritannien","pl":"Polen","nl":"Niederlande","be":"Belgien","se":"Schweden","no":"Norwegen","dk":"D\u00e4nemark","fi":"Finnland","hu":"Ungarn","cz":"Tschechien","sk":"Slowakei","ro":"Rum\u00e4nien","bg":"Bulgarien","el":"Griechenland","hr":"Kroatien","si":"Slowenien","tr":"T\u00fcrkei","lu":"Luxemburg","pt":"Portugal"};
+  var tries=0;
+  while(tries++<30){
+    var i2=~~(rng()*pool.length),e=pool[i2],cor=LN[e.land];if(!cor)continue;
+    var oth=Object.values(LN).filter(function(n){return n!==cor;});
+    for(var k=oth.length-1;k>0;k--){var tt=~~(rng()*(k+1));var tmp=oth[k];oth[k]=oth[tt];oth[tt]=tmp;}
+    var opts=[cor].concat(oth.slice(0,3));
+    for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
+    return{type:"uk_match",prompt:_tc("In welchem Land f\u00e4hrt dieser Zug haupts\u00e4chlich?"),subj:e.von+" \u2192 "+e.nach+" ("+e.typ+")",ans:cor,opts:opts,lid:"zugland_"+i2,cc:"de"};
+  }return null;
+}
+window.genZugMatchLandQ=genZugMatchLandQ;
+
+/* Phase 424: genOddOneOutQ */
+function genOddOneOutQ(){
+  var SETS=[
+    {cat:"EU-Mitglied",inc:["Deutschland","Frankreich","Italien","Spanien","Polen","Niederlande","Belgien","\u00d6sterreich","Portugal","Schweden","D\u00e4nemark","Finnland","Irland","Griechenland","Tschechien","Ungarn","Rum\u00e4nien","Bulgarien","Slowakei","Slowenien","Kroatien","Estland","Lettland","Litauen","Luxemburg","Malta","Zypern"],exc:["Schweiz","Norwegen","Island","T\u00fcrkei","Serbien","Ukraine","Albanien","Montenegro","Nordmazedonien","Gro\u00dfbritannien","Russland","Georgien","Armenien"]},
+    {cat:"NATO-Mitglied",inc:["Deutschland","Frankreich","Italien","Spanien","Polen","Niederlande","Belgien","Portugal","D\u00e4nemark","Norwegen","T\u00fcrkei","Griechenland","Tschechien","Ungarn","Rum\u00e4nien","Bulgarien","Slowakei","Slowenien","Kroatien","Albanien","Montenegro","Finnland","Schweden","USA","Kanada","Gro\u00dfbritannien","Estland","Lettland","Litauen","Luxemburg","Island"],exc:["Schweiz","\u00d6sterreich","Ukraine","Serbien","Irland","Malta","Zypern","Georgien","Armenien","Moldawien"]},
+    {cat:"Inselstaat",inc:["Japan","Gro\u00dfbritannien","Australien","Indonesien","Philippinen","Neuseeland","Irland","Island","Kuba","Sri Lanka","Malta","Zypern","Madagaskar"],exc:["Deutschland","Frankreich","Spanien","Polen","Schweiz","\u00d6sterreich","Tschechien","Ungarn","Bolivien","Serbien","Kasachstan","Nepal"]},
+    {cat:"Binnenstaat",inc:["Schweiz","\u00d6sterreich","Ungarn","Tschechien","Slowakei","Luxemburg","Serbien","Bolivien","Paraguay","Afghanistan","Kasachstan","Mongolei","Nepal","Bhutan"],exc:["Deutschland","Frankreich","Spanien","Polen","Norwegen","Schweden","D\u00e4nemark","Portugal","Griechenland","Japan","Australien"]},
+    {cat:"G7-Mitglied",inc:["Deutschland","Frankreich","Italien","Japan","USA","Kanada","Gro\u00dfbritannien"],exc:["Russland","China","Indien","Brasilien","Australien","Spanien","Mexiko","Argentinien","S\u00fcdkorea","T\u00fcrkei","\u00d6sterreich","Schweiz","Schweden","Norwegen"]},
+    {cat:"Euro (\u20ac) als W\u00e4hrung",inc:["Deutschland","Frankreich","Italien","Spanien","Portugal","Niederlande","Belgien","\u00d6sterreich","Finnland","Irland","Griechenland","Slowakei","Slowenien","Estland","Lettland","Litauen","Luxemburg","Malta","Zypern","Kroatien"],exc:["Polen","Tschechien","Ungarn","Rum\u00e4nien","Bulgarien","Schweden","D\u00e4nemark","Schweiz","Norwegen","Gro\u00dfbritannien","USA","Japan","China","Russland","T\u00fcrkei"]}
+  ];
+  var tries=0;
+  while(tries++<30){
+    var si=~~(rng()*SETS.length),s=SETS[si];
+    if(s.inc.length<3||s.exc.length<1)continue;
+    var inc=s.inc.slice(),exc=s.exc.slice();
+    for(var ii=inc.length-1;ii>0;ii--){var tt=~~(rng()*(ii+1));var ti=inc[ii];inc[ii]=inc[tt];inc[tt]=ti;}
+    for(var jj=exc.length-1;jj>0;jj--){var tt2=~~(rng()*(jj+1));var tj=exc[jj];exc[jj]=exc[tt2];exc[tt2]=tj;}
+    var odd=exc[0],opts=inc.slice(0,3).concat([odd]);
+    for(var kk=opts.length-1;kk>0;kk--){var tt3=~~(rng()*(kk+1));var tk=opts[kk];opts[kk]=opts[tt3];opts[tt3]=tk;}
+    return{type:"uk_match",prompt:_tc("Welches Land ist KEIN")+" "+s.cat+"?",subj:_tc("Drei L\u00e4nder geh\u00f6ren zur Kategorie \u2014 eins nicht."),ans:odd,opts:opts,lid:"ooo_"+si,cc:"de"};
+  }return null;
+}
+window.genOddOneOutQ=genOddOneOutQ;
+
+/* Phase 424: genClueCountryQ */
+function genClueCountryQ(){
+  if(!CAPITALS||!CAPITALS.length)return null;
+  var CD={"Africa":"Afrika","Asia":"Asien","Europe":"Europa","North America":"Nordamerika","South America":"S\u00fcdamerika","Oceania":"Ozeanien"};
+  var tries=0;
+  while(tries++<40){
+    var idx=~~(rng()*CAPITALS.length),cap=CAPITALS[idx];
+    if(!cap||!cap.cc||!cap.capital)continue;
+    var nd=getCountryName(cap.cc,"de");if(!nd)continue;
+    var oth=CAPITALS.filter(function(x){return x.cc!==cap.cc&&getCountryName(x.cc,"de");});
+    if(oth.length<3)continue;
+    for(var i=oth.length-1;i>0;i--){var t=~~(rng()*(i+1));var ti=oth[i];oth[i]=oth[t];oth[t]=ti;}
+    var opts=[nd].concat(oth.slice(0,3).map(function(x){return getCountryName(x.cc,"de");}));
+    for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
+    var cur="";
+    if(CURRENCIES_DATA&&CURRENCIES_DATA.length){var cf=CURRENCIES_DATA.filter(function(x){return x.cc===cap.cc;});if(cf.length)cur=cf[0].currency||cf[0].currencyLabel||"";}
+    var h1=(CD[cap.continent]||cap.continent||"")+(cap.subregion?" ("+cap.subregion+")":"");
+    if(!h1||!cap.capital)continue;
+    return{type:"clue_country",hints:["\u{1F30D} "+h1,"\u{1F3DB}\uFE0F "+cap.capital,(cur?"\u{1F4B1} "+cur:"\u{1F310} "+cap.subregion)],opts:opts,ans:nd,lid:"clue_"+idx,cc:cap.cc};
+  }return null;
+}
+window.genClueCountryQ=genClueCountryQ;
+
+/* Phase 424: genSortRankQ */
+function genSortRankQ(){
+  var BD=HL_BETA_DATA;if(!BD)return null;
+  var METS=[{key:"tour",lbl:"Touristen/Jahr (Mio.)"},{key:"rail",lbl:"Schienennetz (km)"},{key:"roads",lbl:"Stra\u00dfennetz (km)"},{key:"unesco",lbl:"UNESCO-Welterbe-St\u00e4tten"},{key:"parks",lbl:"Nationalparks"}];
+  var tries=0;
+  while(tries++<30){
+    var mi=~~(rng()*METS.length),met=METS[mi];
+    var valid=Object.keys(BD).filter(function(n){return Object.prototype.hasOwnProperty.call(BD,n)&&BD[n][met.key]>0;});
+    if(valid.length<8)continue;
+    for(var i=valid.length-1;i>0;i--){var t=~~(rng()*(i+1));var tv=valid[i];valid[i]=valid[t];valid[t]=tv;}
+    var four=valid.slice(0,4),sorted=four.slice().sort(function(a,b){return BD[a][met.key]-BD[b][met.key];});
+    return{type:"sort_rank",countries:four,sortedAns:sorted,ans:sorted.join("|"),metric:met,lid:"sort_"+mi,cc:"de"};
+  }return null;
+}
+window.genSortRankQ=genSortRankQ;
 
 
   function answer(a,tok,_bypassMpLock){
@@ -12875,6 +12962,21 @@ if(mode==="slf"&&S.ph==="playing"){
     qBody=`<div class="qprompt">${q.prompt}</div>
       <div class="qmain">${esc(q.subj)}</div>
       ${sel\!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
+  }else if(q.type==="clue_country"){
+    var _cs=S.clueStep||0;
+    var _hh=q.hints.slice(0,_cs+1).map(function(h){return'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:8px 12px;margin:4px 0;font-size:.95rem">'+esc(h)+'</div>';}).join("");
+    var _nx=(_cs<q.hints.length-1)?'<button onclick="S.clueStep=(S.clueStep||0)+1;render()" style="background:var(--bg2);border:1.5px solid var(--accent);color:var(--accent);border-radius:8px;padding:6px 16px;font-weight:700;cursor:pointer;margin-top:6px">\u{1F50E} '+_tc("N\u00e4chster Hinweis")+'</button>':"";
+    qBody='<div class="qprompt">'+esc(q.prompt)+'</div><div style="margin:8px 0">'+_hh+_nx+'</div>';
+  }else if(q.type==="sort_rank"){
+    var _so2=S.rankOrder||[];
+    var _bts=q.countries.map(function(n){
+      var _ri=_so2.indexOf(n),_pk=_ri>=0;
+      return'<button onclick="if(!S.rankOrder)S.rankOrder=[];var _nm='+JSON.stringify(n)+';if(S.rankOrder.indexOf(_nm)<0){S.rankOrder.push(_nm);if(S.rankOrder.length===4)checkAnswer(S.rankOrder.join(\'|\'));else render();}" '
+        +'style="display:block;width:100%;background:'+(_pk?"var(--accent)":"var(--bg2)")+';color:'+(_pk?"#fff":"var(--text)")+';border:1.5px solid var(--border);border-radius:10px;padding:10px 14px;font-size:1rem;font-weight:600;cursor:pointer;margin:5px 0;text-align:left">'
+        +(_pk?'<span style="font-weight:900;margin-right:6px">'+(_ri+1)+'.</span>':"")+esc(n)+'</button>';
+    }).join("");
+    qBody='<div class="qprompt">'+_tc("Sortiere: niedrigster Wert zuerst!")+'</div>'
+      +'<div style="font-size:.75rem;color:var(--text2);text-align:center;margin-bottom:6px">'+esc(q.metric.lbl)+'</div>'+_bts;
   }else if(q.type==="metro_logo"){
     qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;align-items:center;margin:12px auto;max-height:25vh;max-width:200px">${q.svg}</div>${sel!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="wappen"){

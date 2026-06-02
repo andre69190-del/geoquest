@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 423 (Stand: Juni 2026)
-**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.33 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
+**Version:** Phase 424 (Stand: Juni 2026)
+**Build:** gen.py → 1.49 MB | GeoQuest.html → 5.34 MB | 802 Spielmodi | verify: 141/141 | data: 44 JSON
 
 ---
 
@@ -1128,6 +1128,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **421** | patch_421.py | **UI-Feinschliff Spielkarten: mode-card kompakter (Padding .6rem .4rem 30px -> .5rem .32rem 28px, Radius 12px->11px), mode-icon 1.4rem->1.25rem, Info-Button (i) 32x32px->28x28px (Radius 7px, Font .72rem). Aenderungen in geoquest_css.txt (echte CSS-Quelle) + Info-Btn inline in gen.py. Leserlichkeit und Tap-Flaeche bleiben erhalten (Button >=24px WCAG). verify 146/146, validate 0 Warnings.** |
 | **422** | patch_422.py | **Tech-Debt + UX: totes CSS-Duplikat (~555 Zeilen <style> in _HTML_HEAD) aus gen.py entfernt (echte Quelle bleibt geoquest_css.txt). Kategorie-Chips barrierefrei: role=button, tabindex, aria-label, Tastatur (Enter/Space). mode-desc .65rem->.68rem. verify 146/146, validate 0 Warnings.** |
 | **423** | patch_423.py | **8 neue Modi aus ungenutzten Datenfeldern: hl_konsolen_erscheinungsjahr/eingestellt, konsolen_match_spiel/aufloesung, hl_auto_nordschleife/baujahr_ende, games_match_publisher_land, hl_games_publisher_lng. MODES 802->810** |
+| **424** | patch_424.py | **4 neue Geo/Zug-Modi: zug_match_land (177 Strecken→Land), odd_one_out (6 Kategorien: EU/NATO/Insel/Binnen/G7/Euro), clue_country (progressive Hinweise: Kontinent→Hauptstadt→Währung), sort_rank (4 Länder nach Metrik sortieren). MODES 810→814** |
 
 ---
 

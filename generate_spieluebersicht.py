@@ -222,6 +222,10 @@ def _get_count(mid, dispatch, store, sport_poi):
         if n: return f'{n} POI-Orte', n
         print(f'WARNING: No data count for mode \'{mid}\' (genSportPoiQ/{key})')
         return '—', 0
+    if fn in {'genZugMatchLandQ'}:
+        n = len(store.get('zug_reisezeiten', [])); return (f'{n} Strecken', n) if n else ('177 Strecken', 177)
+    if fn in {'genOddOneOutQ','genClueCountryQ'}: return '195 Länder', 195
+    if fn in {'genSortRankQ'}: return '112 Länder', 112
     if fn == 'genHLBeta':
         return '195 Länder', 195
     if fn == 'genFootballQ':
