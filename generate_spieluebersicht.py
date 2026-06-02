@@ -271,11 +271,18 @@ TYPE_EMOJI = {'pin':'📍','hl':'↕️','match':'🃏',
 def _get_type(mid):
     if mid.startswith('hl_') or '_hl_' in mid or mid.endswith('_hl'): return 'hl'
     if mid.startswith('ws_') or mid == 'wort_schmiede':               return 'ws'
-    if mid.startswith('uk_') and ('pin' in mid):                       return 'pin'
-    if mid.startswith('uk_'):                                           return 'match'
     if 'timeline' in mid:                                               return 'timeline'
     if mid.startswith('comp_'):                                         return 'comp'
-    if 'pin' in mid or mid.endswith('_map'):                           return 'pin'
+    # Pin: uk_*_pin, *_pin, *_map, regional_pin, games_pin etc.
+    if (mid.startswith('uk_') and 'pin' in mid) or mid.endswith('_pin') or mid.endswith('_map'): return 'pin'
+    # Match: uk_*, *_match_*, match_*, *_mc (Multiple Choice), *_f2p, *_esports, *_pub_is_dev
+    if (mid.startswith('uk_') or '_match_' in mid or mid.startswith('match_')
+            or mid.endswith('_mc') or mid.endswith('_f2p') or mid.endswith('_esports')
+            or mid.endswith('_pub_is_dev') or mid.endswith('_handheld')
+            or mid.endswith('_kategorie') or mid.endswith('_genre')
+            or mid.endswith('_land') or mid.endswith('_region')
+            or '_match' in mid):                                        return 'match'
+    if 'pin' in mid:                                                    return 'pin'
     return 'classic'
 
 def _badge(mid):
@@ -464,9 +471,9 @@ def generate(phase=269, n_tests=90):
     H.append('</tbody></table></div>')
     H.append('<footer>GeoQuest Spielübersicht &mdash; auto-generiert aus gen.py</footer></body></html>')
     html = '\n'.join(H)
-    with open(os.path.join(HERE, 'GeoQuest_Spielübersicht.html'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(BASE, 'GeoQuest_Spielübersicht.html'), 'w', encoding='utf-8') as f:
         f.write(html)
     print(f"Written: GeoQuest_Spielübersicht.html ({len(rows)} Modi, auto)")
 
 if __name__ == '__main__':
-    main()
+    generate()
