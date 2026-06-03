@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 456 (Stand: Juni 2026)
+**Version:** Phase 460 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.84 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1160,6 +1160,10 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **454** | patch_454.py | **KRITISCHER FIX + Personalisierung Portion 3/4: Home-Tab rief undefinierte Symbole auf (_getKidsMode, _toggleKidsMode, KIDS_CATS, _getTotalPlays, _getTopCats, _renderPlaylistStrip, PLAYLISTS) -> Laufzeit-ReferenceError, Home crashte (von verify/node nicht erkannt, da nur Syntax). Alle Helfer definiert und mit CAT_META verdrahtet: Kinder-Modus-Toggle (KIDS_CATS aus CAT_META audience), 5 kuratierte Playlists, Für-dich-Empfehlung (top-Kategorien aus Spielhistorie ab 10 Spielen, sonst aus Onboarding-Interessen via _getInterestCats). i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
 | **455** | patch_455.py | **Spiel-Ebene-Filter fuer Kinder-Modus: _modeLevel(m) bewertet Modi heuristisch (1 leicht / 2 mittel / 3 schwer) nach Mechanik (Match=1, H/L=2, Wort-Schmiede=3) + harten Schluesselwoertern (Metacritic, PEGI, Hubraum, BGG, Oscars u.a.). _kidHidden(m) blendet im Kinder-Modus Level-3-Modi auch innerhalb erlaubter Kategorien aus (catModes-Filter). Loest: zu schwere Spiele wie Auto-Hubraum/Game-Metacritic in Kinder-Kategorien. verify 191/191, validate 0 Warnings.** |
 | **456** | patch_456.py | **Lehrplan-konforme Alters-Tags: Grundschul-Sachunterricht (Kl. 1-4) behandelt Pflanzenwelt, Jahreszeiten/Wetter, Raum/Geografie/Karten, Sonne/Mond. Daher CAT_META audience um 'kids' erweitert fuer pflanzen, gartenbau, klima, fluesse, gipfel. Kinder-geeignete Modi 348->410/999 (per-Mode-Level-Filter blendet schwere Modi darin weiter aus). Spielübersicht zeigt automatisch 🧒-Marker + 'Kindgeeignet X/999'. verify 191/191, validate 0 Warnings.** |
+| **457** | patch_457.py | **Sticker-Sammlung (renderStickerModal: Kategorie-Sticker aus gq_played, Eintrag in Einstellungen, i18n DE/EN/PL) + Header-Icons app-weit 34->30px entzerrt. post_phase.py stempelt nun PERSONALISIERUNG_STATUS.md automatisch. verify 191/191, validate 0 Warnings.** |
+| **458** | patch_458.py | **Antwort-Audit-Fix: _modeLevel erkennt nun Jahr/Zahl-Antwort-Modi per ID (_bj, baujahr, release, peak_year, erscheinungsjahr, reisezeit, breitengrad, dekade) als Level 3 -> im Kinder-Modus ausgeblendet (Erwachsene unberuehrt). 24 Modi mit Zahl/Jahr-Antwort in Kinder-Kategorien identifiziert und gefiltert. verify 191/191, validate 0 Warnings.** |
+| **459** | patch_459.py | **Unterwegs-Vorschlag (Geolocation, opt-in, Standard AUS): bei aktiviertem gq_travel_hint startet watchPosition; bei anhaltend hoher Geschwindigkeit (coords.speed>9 m/s, 3 Messungen) einmaliger dezenter Banner mit Auto/Zug-Wahl (Kennzeichen-/Waggon-Sammeln). Einstellungs-Toggle, i18n DE/EN/PL. Keine Auto/Zug-Auto-Erkennung (unzuverlaessig) - Nutzer waehlt. verify 191/191, validate 0 Warnings.** |
+| **460** | patch_460.py | **Familienduell als eigene Rubrik im Hot-Seat: initLV(family)-Param; im Familien-Modus generiert _lvNext pro Zug eine FRISCHE Frage (kein roundQ-Reuse) mit Level-Filter: Spieler1/Kind = Level 1 + kindersicher (KIDS_CATS), Spieler2/Erwachsen = Level>=2. Button im LV-Setup, Gameover-Nochmal behaelt Family. Normaler 1:1-Pfad unveraendert. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
 
 ---
 

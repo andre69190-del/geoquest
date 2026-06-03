@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 456. Lehrplan-konforme Alters-Tags: Grundschul-Sachunterricht (Kl. 1-4) behandelt Pflanzenwelt, Jahreszeiten/Wetter, Raum/Geografie/Karten, Sonne/Mond. Daher CAT_META audience um 'kids' erweitert fuer pflanzen, gartenbau, klima, fluesse, gipfel. Kinder-geeignete Modi 348->410/999 (per-Mode-Level-Filter blendet schwere Modi darin weiter aus). Spielübersicht zeigt automatisch 🧒-Marker + 'Kindgeeignet X/999'. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 460. Familienduell als eigene Rubrik im Hot-Seat: initLV(family)-Param; im Familien-Modus generiert _lvNext pro Zug eine FRISCHE Frage (kein roundQ-Reuse) mit Level-Filter: Spieler1/Kind = Level 1 + kindersicher (KIDS_CATS), Spieler2/Erwachsen = Level>=2. Button im LV-Setup, Gameover-Nochmal behaelt Family. Normaler 1:1-Pfad unveraendert. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

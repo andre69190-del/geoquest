@@ -1424,7 +1424,7 @@ de:{
   help_fav:"❤️ Tippe auf das Herz, um ein Spiel als Favorit zu speichern.",
   help_search:"\u{1F50D} Über die Suche findest du jedes Spiel schnell.",
   help_cats:"Oben wischt du durch die Kategorien – tippe eine an, um ihre Spiele zu sehen.",
-  help_close:"Verstanden!",kids_mode_on:"Kinder-Modus ist AN",kids_mode_off:"Kinder-Modus ist AUS",pl_foryou:"Für dich",pl_geo:"Geografie",pl_natur:"Natur & Tiere",pl_mint:"MINT & Technik",pl_pop:"Pop & Medien",pl_kultur:"Kultur & Geschichte",play_portrait:"Trotzdem im Hochformat spielen",rotate_lock_hint:"Tipp: Falls Drehen nicht klappt, ist evtl. die Bildschirmsperre (Display-Rotation) aktiv.",
+  help_close:"Verstanden!",family_duel:"Familienduell (Kind vs. Erwachsen)",travel_setting:"Unterwegs-Vorschläge",travel_title:"Unterwegs? Sammle, was du siehst!",travel_plates:"Kennzeichen",travel_trains:"Waggons",stickers_title:"🏅 Meine Sticker",stickers_sub:"Du hast {n} von {t} Kategorien freigespielt — sammle alle!",kids_mode_on:"Kinder-Modus ist AN",kids_mode_off:"Kinder-Modus ist AUS",pl_foryou:"Für dich",pl_geo:"Geografie",pl_natur:"Natur & Tiere",pl_mint:"MINT & Technik",pl_pop:"Pop & Medien",pl_kultur:"Kultur & Geschichte",play_portrait:"Trotzdem im Hochformat spielen",rotate_lock_hint:"Tipp: Falls Drehen nicht klappt, ist evtl. die Bildschirmsperre (Display-Rotation) aktiv.",
   help_tour_btn:"▶️ Kurze Einführung ansehen",
   ob_help_hint:"Tipp: Oben rechts auf ❓ tippen – dort gibt es jederzeit Hilfe.",
   tour_skip:"Überspringen",tour_next:"Weiter →",tour_done:"Los geht's!",
@@ -1507,7 +1507,7 @@ en:{
   help_fav:"❤️ Tap the heart to save a game as a favourite.",
   help_search:"\u{1F50D} Use search to find any game quickly.",
   help_cats:"Swipe through the categories at the top – tap one to see its games.",
-  help_close:"Got it!",kids_mode_on:"Kids mode is ON",kids_mode_off:"Kids mode is OFF",pl_foryou:"For you",pl_geo:"Geography",pl_natur:"Nature & Animals",pl_mint:"STEM & Tech",pl_pop:"Pop & Media",pl_kultur:"Culture & History",play_portrait:"Play in portrait anyway",rotate_lock_hint:"Tip: if rotating does not work, the screen rotation lock may be on.",
+  help_close:"Got it!",family_duel:"Family duel (kid vs. adult)",travel_setting:"On-the-go tips",travel_title:"On the move? Collect what you see!",travel_plates:"Plates",travel_trains:"Wagons",stickers_title:"🏅 My stickers",stickers_sub:"You unlocked {n} of {t} categories — collect them all!",kids_mode_on:"Kids mode is ON",kids_mode_off:"Kids mode is OFF",pl_foryou:"For you",pl_geo:"Geography",pl_natur:"Nature & Animals",pl_mint:"STEM & Tech",pl_pop:"Pop & Media",pl_kultur:"Culture & History",play_portrait:"Play in portrait anyway",rotate_lock_hint:"Tip: if rotating does not work, the screen rotation lock may be on.",
   help_tour_btn:"▶️ Watch the quick intro",
   ob_help_hint:"Tip: tap ❓ at the top right – help is available anytime.",
   tour_skip:"Skip",tour_next:"Next →",tour_done:"Let's go!",
@@ -1590,7 +1590,7 @@ pl:{
   help_fav:"❤️ Dotknij serca, aby zapisać grę jako ulubioną.",
   help_search:"\u{1F50D} Użyj wyszukiwarki, aby szybko znaleźć dowolną grę.",
   help_cats:"Przesuwaj kategorie u góry – dotknij jednej, aby zobaczyć jej gry.",
-  help_close:"Rozumiem!",kids_mode_on:"Tryb dla dzieci WŁĄCZONY",kids_mode_off:"Tryb dla dzieci WYŁĄCZONY",pl_foryou:"Dla Ciebie",pl_geo:"Geografia",pl_natur:"Natura i zwierzęta",pl_mint:"Nauka i technika",pl_pop:"Pop i media",pl_kultur:"Kultura i historia",play_portrait:"Graj mimo to w pionie",rotate_lock_hint:"Wskazówka: jeśli obrót nie działa, może być włączona blokada orientacji.",
+  help_close:"Rozumiem!",family_duel:"Pojedynek rodzinny (dziecko vs. dorosły)",travel_setting:"Podpowiedzi w podróży",travel_title:"W drodze? Zbieraj, co widzisz!",travel_plates:"Tablice",travel_trains:"Wagony",stickers_title:"🏅 Moje naklejki",stickers_sub:"Odblokowałeś {n} z {t} kategorii — zbierz wszystkie!",kids_mode_on:"Tryb dla dzieci WŁĄCZONY",kids_mode_off:"Tryb dla dzieci WYŁĄCZONY",pl_foryou:"Dla Ciebie",pl_geo:"Geografia",pl_natur:"Natura i zwierzęta",pl_mint:"Nauka i technika",pl_pop:"Pop i media",pl_kultur:"Kultura i historia",play_portrait:"Graj mimo to w pionie",rotate_lock_hint:"Wskazówka: jeśli obrót nie działa, może być włączona blokada orientacji.",
   help_tour_btn:"▶️ Zobacz krótkie wprowadzenie",
   ob_help_hint:"Wskazówka: dotknij ❓ u góry – pomoc jest dostępna zawsze.",
   tour_skip:"Pomiń",tour_next:"Dalej →",tour_done:"Zaczynamy!",
@@ -3883,8 +3883,25 @@ function _toggleKidsMode(){try{localStorage.setItem('gq_kids_mode',_getKidsMode(
 function _getTotalPlays(){try{return (JSON.parse(localStorage.getItem('gq_played')||'[]')).length;}catch(e){return 0;}}
 function _getTopCats(n){try{var pl=JSON.parse(localStorage.getItem('gq_played')||'[]');var c={};pl.forEach(function(mid){var m=MODES.find(function(x){return x.id===mid;});if(m&&m.group){c[m.group]=(c[m.group]||0)+1;}});return Object.keys(c).sort(function(a,b){return c[b]-c[a];}).slice(0,n||3);}catch(e){return [];}}
 function _getInterestCats(){try{var ints=JSON.parse(localStorage.getItem('gq_interests')||'[]');if(!ints.length)return [];return Object.keys(CAT_META).filter(function(k){return MODE_CATS[k]&&CAT_META[k].i.some(function(x){return ints.indexOf(x)>=0;});}).slice(0,8);}catch(e){return [];}}
-function _modeLevel(m){if(!m)return 2;var id=(m.id||'');var txt=(id+' '+(m.title||'')+' '+(m.prompt||'')).toLowerCase();var HARD=['metacritic','metakritik','imdb','pegi','hubraum','ccm','verbrauch','wendekreis','zuladung','drehmoment','bgg','bewertung','dichte','niederschlag','wirkstoff','megalith','versicherung','streams','umsatz','rendite','marktkapital','exoplanet','lichtjahr','magnitude','schwerkraft','fundtiefe','oscars','grammys','tonträger','concurrent','sequel','downloads'];var lvl=2;if(id.indexOf('ws_')===0||id.indexOf('_ws_')>=0)lvl=3;else if(id.indexOf('match')>=0||id.indexOf('_mc')>=0||id.indexOf('timeline')>=0)lvl=1;else if(id.indexOf('hl_')===0||id.indexOf('_hl_')>=0)lvl=2;for(var i=0;i<HARD.length;i++){if(txt.indexOf(HARD[i])>=0){lvl=3;break;}}return lvl;}
+function _modeLevel(m){if(!m)return 2;var id=(m.id||'');var txt=(id+' '+(m.title||'')+' '+(m.prompt||'')).toLowerCase();var HARD=['metacritic','metakritik','imdb','pegi','hubraum','ccm','verbrauch','wendekreis','zuladung','drehmoment','bgg','bewertung','dichte','niederschlag','wirkstoff','megalith','versicherung','streams','umsatz','rendite','marktkapital','exoplanet','lichtjahr','magnitude','schwerkraft','fundtiefe','oscars','grammys','tonträger','concurrent','sequel','downloads'];var lvl=2;if(id.indexOf('ws_')===0||id.indexOf('_ws_')>=0)lvl=3;else if(id.indexOf('match')>=0||id.indexOf('_mc')>=0||id.indexOf('timeline')>=0)lvl=1;else if(id.indexOf('hl_')===0||id.indexOf('_hl_')>=0)lvl=2;for(var i=0;i<HARD.length;i++){if(txt.indexOf(HARD[i])>=0){lvl=3;break;}}var HID=['_bj','baujahr','_release','peak_year','erscheinungsjahr','reisezeit','breitengrad','_dekade'];for(var j=0;j<HID.length;j++){if(id.indexOf(HID[j])>=0){lvl=3;break;}}return lvl;}
 function _kidHidden(m){return _getKidsMode()&&_modeLevel(m)>=3;}
+var _travelWatching=false;
+function _initTravelHint(){
+  if(_travelWatching)return;
+  try{if(localStorage.getItem('gq_travel_hint')!=='1')return;}catch(e){return;}
+  if(!navigator.geolocation)return;
+  _travelWatching=true;var fast=0;
+  try{navigator.geolocation.watchPosition(function(pos){
+    var sp=pos&&pos.coords&&pos.coords.speed;
+    if(sp!=null&&sp>9){fast++;}else{fast=Math.max(0,fast-1);}
+    if(fast>=3&&!S.travelHint){var last=0;try{last=parseInt(localStorage.getItem('gq_travel_shown')||'0');}catch(_e){}if(Date.now()-last>3*3600*1000){S.travelHint=true;render();}}
+  },function(){},{enableHighAccuracy:false,maximumAge:10000,timeout:20000});}catch(e){}
+}
+function _dismissTravel(){S.travelHint=false;try{localStorage.setItem('gq_travel_shown',String(Date.now()));}catch(e){}render();}
+function _travelBanner(){
+  return '<div style="position:fixed;left:12px;right:12px;bottom:70px;z-index:9000;background:var(--bg2);border:1.5px solid #6366f1;border-radius:14px;padding:.7rem .9rem;box-shadow:0 6px 24px rgba(0,0,0,.35)"><div style="font-weight:800;font-size:.9rem;margin-bottom:.5rem">'+t('travel_title')+'</div><div style="display:flex;gap:8px;align-items:center"><button onclick="_dismissTravel();S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F697 '+t('travel_plates')+'</button><button onclick="_dismissTravel();S._spotterTab=\'waggons\';S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F686 '+t('travel_trains')+'</button><button onclick="_dismissTravel()" class="btn-g" style="margin:0;background:transparent;width:auto;padding:.4rem .6rem">✕</button></div></div>';
+}
+
 function _renderPlaylistStrip(title,icon,cats,km){var ks=(cats||[]).filter(function(k){return MODE_CATS[k]&&(!km||KIDS_CATS.has(k));});if(!ks.length)return '';var items=ks.map(function(k){var c=MODE_CATS[k];return '<button onclick="window.filterByCategory(\''+k+'\');render()" style="display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:80px;width:80px;padding:8px 5px;background:var(--bg2);border:1.5px solid var(--border);border-radius:11px;cursor:pointer;flex-shrink:0;line-height:1.15;text-align:center"><span style="font-size:1.35rem">'+c.icon+'</span><span style="font-size:.62rem;color:var(--text2);font-weight:600;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+c.label+'</span></button>';}).join('');return '<div style="padding:7px 0 3px"><div style="font-size:.72rem;font-weight:800;color:var(--text3);letter-spacing:.4px;margin:0 0 6px 2px">'+icon+' '+esc(title)+'</div><div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:5px;scrollbar-width:none">'+items+'</div></div>';}
 const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match","odd_one_out","clue_country"],cost:0},
@@ -6501,6 +6518,8 @@ let S={
   settingsModal:false,
   helpModal:false,
   tourStep:0,
+  stickerModal:false,
+  travelHint:false,
   convModal:false,
   collectedPlates:loadCollectedPlates(),
   ligaData:[],ligaLoading:false,leagueEvalResult:null,
@@ -11407,12 +11426,13 @@ function _lvPickMode(selType,selMode,selCat){
   const _pool=MODES.filter(m=>GEN[m.id]&&!m.comingSoon&&!m.noMultiplayer).map(m=>m.id);
   return _pool.length?_pool[~~(Math.random()*_pool.length)]:"flag"; /* intentional: LV unseeded */
 }
-function initLV(){
-  const selType=S.lvSelType||"random";
-  const selMode=selType==="specific"?(S.lvSetupMode||null):null;
-  const selCat=selType==="cat"?(S.lvSetupCat||null):null;
+function initLV(family){
+  family=!!family;
+  const selType=family?"random":(S.lvSelType||"random");
+  const selMode=family?null:(selType==="specific"?(S.lvSetupMode||null):null);
+  const selCat=family?null:(selType==="cat"?(S.lvSetupCat||null):null);
   S.lv={round:0,phase:"q",p1:{name:"Spieler 1",sc:0},p2:{name:"Spieler 2",sc:0},current:1,q:null,sel:null,timer:LV_TIME,
-    mode:selMode,selType,selCat};
+    mode:selMode,selType,selCat,family:family};
   _lvNext();
 }
 function _lvNext(){
@@ -11422,11 +11442,12 @@ function _lvNext(){
   if(lv.round>=LV_ROUNDS){lv.phase="gameover";render();return;}
   lv.phase="q";lv.sel=null;lv.timer=LV_TIME;
   /* Fix: P1 generates the question, P2 reuses it */
-  if(lv.current===1||!lv.roundQ){
+  if(lv.current===1||!lv.roundQ||lv.family){
     /* P280: retry-loop guards against pin/HL/timeline modes that produce no opts */
     var _lvTries=0,_lvQ=null;
     while(_lvTries++<8&&!_lvQ){
       var _lvModeId=lv.mode||_lvPickMode(lv.selType||"random",null,lv.selCat);
+      if(lv.family){var _fm=MODES.find(function(m){return m.id===_lvModeId;});var _fl=_modeLevel(_fm);var _fg=_fm&&_fm.group;if(lv.current===1){if(_fl>1||!KIDS_CATS.has(_fg))continue;}else{if(_fl<2)continue;}}
       var _lvFn=GEN[_lvModeId]||genFlagQ;
       try{
         var _lvCandidate=_lvFn();
@@ -11587,6 +11608,7 @@ function renderLVSetup(){
       <div style="font-size:.65rem;font-weight:700;color:var(--text3);margin-bottom:.4rem">SPIELMODUS W\u00c4HLEN</div>
       ${typeRow}${catSection}${gameSection}
       <button class="btn-p" style="width:100%;opacity:${canStart?1:.4};pointer-events:${canStart?"auto":"none"}" onclick="initLV()">\u{1F680} Spiel starten</button>
+      <button class="btn-g" style="width:100%;margin-top:.45rem" onclick="initLV(true)">\u{1F46A} ${t('family_duel')}</button>
     </div>
   </div>`;
 }
@@ -11606,7 +11628,7 @@ function renderLVGameover(){
         <div style="font-size:2.5rem;font-weight:900;color:${lv.p2.sc>lv.p1.sc?"#10b981":"var(--text)"}">${lv.p2.sc}</div>
       </div>
     </div>
-    <button class="btn-p" style="width:100%;max-width:320px;margin-bottom:.75rem" onclick="initLV()">\u{1F504} Nochmal spielen</button>
+    <button class="btn-p" style="width:100%;max-width:320px;margin-bottom:.75rem" onclick="initLV(S.lv&&S.lv.family)">\u{1F504} Nochmal spielen</button>
     <button class="btn-g" style="width:100%;max-width:320px" onclick="S.lvModal=false;S.lv=null;render()">Hauptmen\u00fc</button>
   </div>`;
 }
@@ -14254,7 +14276,7 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="album"?renderCollectionScreen():""}
       ${S.tab==="stats"?renderStatsTab():""}
       ${S.tab==="admin"?renderAdminTab():""}
-      ${S.settingsModal?renderSettingsModal():""}${S.helpModal?renderHelpModal():""}${S.adModal?renderAdModal():""}
+      ${S.settingsModal?renderSettingsModal():""}${S.helpModal?renderHelpModal():""}${S.stickerModal?renderStickerModal():""}${S.travelHint?_travelBanner():""}${S.adModal?renderAdModal():""}
     </div>${renderBottomNav()}${((!localStorage.getItem('gq_pwa_dismissed')&&S.pwaPrompt)||(_isIOS()&&!_isInStandaloneMode()&&!localStorage.getItem('gq_pwa_ios_dismissed')))?renderPwaBanner():""}`;
     if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
   if(S.tab==="home")setTimeout(function(){if(typeof window.renderRecentBar==="function")window.renderRecentBar();},90);
@@ -14599,7 +14621,7 @@ if(mode==="slf"&&S.ph==="playing"){
           <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
           ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}
         </div>
-        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+        <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -14630,7 +14652,7 @@ if(mode==="slf"&&S.ph==="playing"){
           <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
           ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
         </div>
-        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+        <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -14660,7 +14682,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
           ${S.mpOpponent?`<div class="pill" style="opacity:.7"><div class="hlbl" style="color:#8b5cf6">\u2694</div><div class="hval" style="color:#8b5cf6">${(S.mpOppScore||0).toLocaleString()}</div></div>`:""}
         </div>
-        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+        <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -14688,7 +14710,7 @@ if(mode==="slf"&&S.ph==="playing"){
           <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
           ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
         </div>
-        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+        <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -14705,7 +14727,7 @@ if(mode==="slf"&&S.ph==="playing"){
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:8px;flex-shrink:0">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
     answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
@@ -14776,7 +14798,7 @@ const _omk=(S.mpOpponent&&S.sel!==null&&S.mpOppLid===q.lid&&S.mpOppSel!=null&&o=
         <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
         ${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">\u00d7${st}</div></div>`:""}
       </div>
-      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+      <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
         ${diff==="survival"
           ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
           :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
@@ -15917,7 +15939,7 @@ function renderLogikGitter(sc){
         <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
         <div style="font-size:1rem;letter-spacing:1px">${hearts}</div>
       </div>
-      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+      <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
         <div style="font-size:.75rem;color:var(--text3)">${gd.correctCount}/9</div>
         <div style="font-size:.85rem;font-weight:700;min-width:2.2rem;text-align:right;color:${tc()}">${S.tm}s</div>
         <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
@@ -16041,7 +16063,7 @@ function renderReiseroute(sc){
         <div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>
         <div style="font-size:1rem;letter-spacing:1px">${hearts}</div>
       </div>
-      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+      <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
         <div style="font-size:.75rem;color:var(--text3)">${rd.steps} Schr.</div>
         <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
       </div>
@@ -17083,6 +17105,7 @@ function closeGameInfo(){
   if(el)el.remove();
 }
 function renderHomeTab(){
+  try{_initTravelHint();}catch(_e){}
   const _kidsMode=_getKidsMode();
   const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","zuege","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","emobilitaet","archaeologie","astronomie","geologie","sport_wissen"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));const all=fixed.concat(extra);return _kidsMode?all.filter(k=>KIDS_CATS.has(k)):all;})();
 
@@ -17192,20 +17215,20 @@ function renderHomeTab(){
   const _hdr=_li
     ?`<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
         <div style="display:flex;align-items:center;gap:8px;min-width:0"><div style="font-size:1.05rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t("home_hi",{name:_un})}</div>${_streakBadge}</div>
-        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
-          <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
-          <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
-          <button onclick="_toggleKidsMode()" title="${_getKidsMode()?t('kids_mode_on'):t('kids_mode_off')}" aria-label="Kids Mode" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:${_getKidsMode()?'rgba(16,185,129,.2)':'var(--bg2)'};color:${_getKidsMode()?'#10b981':'var(--text2,#94a3b8)'};border:1px solid ${_getKidsMode()?'#10b981':'var(--border,#334155)'};font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👦</button>
+        <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
+          <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
+          <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
+          <button onclick="_toggleKidsMode()" title="${_getKidsMode()?t('kids_mode_on'):t('kids_mode_off')}" aria-label="Kids Mode" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:${_getKidsMode()?'rgba(16,185,129,.2)':'var(--bg2)'};color:${_getKidsMode()?'#10b981':'var(--text2,#94a3b8)'};border:1px solid ${_getKidsMode()?'#10b981':'var(--border,#334155)'};font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👦</button>
           <div style="display:flex;align-items:center;gap:5px;background:var(--bg2);border-radius:20px;padding:.3rem .75rem;font-size:.82rem;font-weight:700;color:#f59e0b;border:1px solid rgba(245,158,11,.25);white-space:nowrap">🪙 ${_gc}</div>
         </div>
       </div>`
     :`<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
         <div style="display:flex;align-items:center;gap:8px;min-width:0"><div style="font-size:1.05rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t("home_guest")}</div>${_streakBadge}</div>
-        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
-          <button onclick="S.tab='profil';render()" title="${t('home_login_btn')}" aria-label="${t('home_login_btn')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👤</button>
-          <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
-          <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
-          <button onclick="_toggleKidsMode()" title="${_getKidsMode()?t('kids_mode_on'):t('kids_mode_off')}" aria-label="Kids Mode" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:${_getKidsMode()?'rgba(16,185,129,.2)':'var(--bg2)'};color:${_getKidsMode()?'#10b981':'var(--text2,#94a3b8)'};border:1px solid ${_getKidsMode()?'#10b981':'var(--border,#334155)'};font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👦</button>
+        <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
+          <button onclick="S.tab='profil';render()" title="${t('home_login_btn')}" aria-label="${t('home_login_btn')}" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👤</button>
+          <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
+          <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
+          <button onclick="_toggleKidsMode()" title="${_getKidsMode()?t('kids_mode_on'):t('kids_mode_off')}" aria-label="Kids Mode" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:${_getKidsMode()?'rgba(16,185,129,.2)':'var(--bg2)'};color:${_getKidsMode()?'#10b981':'var(--text2,#94a3b8)'};border:1px solid ${_getKidsMode()?'#10b981':'var(--border,#334155)'};font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👦</button>
         </div>
       </div>`;
   const _homeHTML=`${_hdr}${renderDailyHero()}
@@ -17590,6 +17613,16 @@ function renderTourModal(step){
   </div></div>`;
 }
 
+/* STICKER-SAMMLUNG (Kinder-Belohnung) — abgeleitet aus gespielten Kategorien */
+function _earnedStickers(){try{var pl=JSON.parse(localStorage.getItem('gq_played')||'[]');var s={};pl.forEach(function(mid){var m=MODES.find(function(x){return x.id===mid;});if(m&&m.group)s[m.group]=1;});return s;}catch(e){return {};}}
+function renderStickerModal(){
+  var earned=_earnedStickers();var order=Object.keys(MODE_CATS).filter(function(k){return MODE_CATS[k];});
+  var got=order.filter(function(k){return earned[k];}).length;
+  var cells=order.map(function(k){var c=MODE_CATS[k];var e=!!earned[k];
+    return '<div style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;border-radius:12px;background:'+(e?'rgba(16,185,129,.12)':'var(--bg3)')+';border:1.5px solid '+(e?'#10b981':'var(--border)')+';'+(e?'':'opacity:.45;filter:grayscale(.7);')+'"><span style="font-size:1.6rem">'+(e?c.icon:'\u{1F512}')+'</span><span style="font-size:.56rem;text-align:center;color:var(--text2);line-height:1.1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(c.label)+'</span></div>';}).join('');
+  return '<div class="modal-overlay" onclick="if(event.target===this){S.stickerModal=false;render()}"><div class="modal-box" style="max-width:360px;max-height:82vh;overflow-y:auto"><div style="font-size:1.05rem;font-weight:900;margin-bottom:.3rem">'+t('stickers_title')+'</div><div style="font-size:.8rem;color:var(--text2);margin-bottom:.8rem">'+t('stickers_sub').replace('{n}',got).replace('{t}',order.length)+'</div><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1rem">'+cells+'</div><button onclick="S.stickerModal=false;render()" class="btn-g" style="margin-bottom:0">'+t('help_close')+'</button></div></div>';
+}
+
 /* HELP MODAL (Phase 423) — dauerhafte Hilfe, jederzeit per ?-Button erreichbar */
 function renderHelpModal(){
   const row=(txt)=>`<div style="display:flex;gap:.5rem;align-items:flex-start;margin-bottom:.5rem;font-size:.83rem;line-height:1.45;color:var(--text2)"><span style="color:#10b981;flex-shrink:0;font-weight:900">•</span><span>${txt}</span></div>`;
@@ -17637,6 +17670,8 @@ function renderSettingsModal(){
       }
       return '';
     })()}
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div style="font-weight:700">🚗🚆 ${t('travel_setting')}</div><button onclick="var on=localStorage.getItem('gq_travel_hint')==='1';localStorage.setItem('gq_travel_hint',on?'0':'1');if(!on){_travelWatching=false;_initTravelHint();}render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_travel_hint')==='1'?'An':'Aus'}</button></div>
+    <button onclick="S.settingsModal=false;S.stickerModal=true;render()" class="btn-g" style="margin-bottom:.5rem;background:var(--bg3)">${t('stickers_title')}</button>
     <button onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
   </div></div>`;
 }

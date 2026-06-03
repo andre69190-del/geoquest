@@ -500,6 +500,18 @@ def main():
     update_landing(modi_count)
     update_spieluebersicht(phase, counts)
     update_session_starter(phase, modi_count, vscore=vscore, validate_score=get_validate_score())
+    # Status-Doku der Personalisierung stempeln (Reset-Sicherheitsnetz)
+    try:
+        _sp=os.path.join(BASE,"PERSONALISIERUNG_STATUS.md")
+        if os.path.exists(_sp):
+            _sc=open(_sp,encoding="utf-8").read()
+            import re as _re2
+            _sc2=_re2.sub(r"Letztes Update: Phase \d+", "Letztes Update: Phase %d"%phase, _sc, count=1)
+            if _sc2!=_sc:
+                open(_sp,"w",encoding="utf-8").write(_sc2); ok("PERSONALISIERUNG_STATUS.md -> Phase %d gestempelt"%phase)
+    except Exception as _e:
+        warn("Status-Doku-Stempel uebersprungen: %s"%_e)
+    _stamp_status_doc=True
 
     # Schritt 6: GeoQuest_Spielübersicht.html neu generieren
     print(f"\n📋 Generiere GeoQuest_Spielübersicht.html...")

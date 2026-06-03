@@ -311,3 +311,19 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 456 — Lehrplan-konforme Kinder-Tags
 **Datum:** 2026-06-02
 **Pädagogik:** Recherche Grundschul-Sachunterricht (Kl. 1-4): Pflanzenwelt, Jahreszeiten/Wetter, Raum/Karten, Sonne/Mond. → CAT_META audience +'kids' für pflanzen, gartenbau, klima, fluesse, gipfel. Kinder-geeignet 348→410/999. Per-Mode-Level-Filter (Phase 455) blendet schwere Modi innerhalb weiter aus. Spielübersicht zählt automatisch (🧒 + „Kindgeeignet 410/999").
+
+## Phase 457 — Sticker-Sammlung + Header-Entzerrung + Status-Auto-Stempel
+**Datum:** 2026-06-02
+**Features:** (1) Sticker-Sammlung (renderStickerModal): pro Kategorie ein Sticker, freigespielt = farbig, sonst 🔒; abgeleitet aus gq_played; Eintrag im Einstellungs-Modal; i18n DE/EN/PL. (2) Header-Icons app-weit 34→30px + Abstände enger (entzerrt; alle ≥24px WCAG). (3) Tooling: post_phase.py stempelt jetzt automatisch PERSONALISIERUNG_STATUS.md (Reset-Sicherheitsnetz). verify 191/191, validate 0 Warnings.
+
+## Phase 458 — Antwort-Audit-Fix (Kinder)
+**Datum:** 2026-06-02
+**Audit:** 24 Kinder-Modi (Level 1-2) verlangten Zahl/Jahr-Antwort (Auto-Baujahr, Game-Release, Zug-Reisezeit, Breitengrad …) — für Kinder zu schwer. _modeLevel um ID-Signale (_bj/baujahr/release/peak_year/erscheinungsjahr/reisezeit/breitengrad/_dekade → Level 3) erweitert → im Kinder-Modus ausgeblendet, Erwachsene unberührt. verify 191/191, validate 0 Warnings.
+
+## Phase 459 — Unterwegs-Vorschlag (Geolocation, opt-in)
+**Datum:** 2026-06-02
+**Feature:** _initTravelHint/_travelBanner/_dismissTravel — opt-in (gq_travel_hint, Standard AUS): watchPosition, bei coords.speed>9 m/s (3 Messungen) einmaliger Banner „Unterwegs? 🚗 Kennzeichen / 🚆 Waggons" (Nutzer wählt, keine Auto-Erkennung). Einstellungs-Toggle, i18n DE/EN/PL. Standard AUS = null Risiko für bestehende Nutzer. Mobil-Test ausstehend. verify 191/191, validate 0 Warnings.
+
+## Phase 460 — Familienduell (Hot-Seat-Rubrik)
+**Datum:** 2026-06-03
+**Feature:** initLV(family); im Familien-Modus generiert _lvNext pro Zug eine frische Frage (kein roundQ-Reuse) mit Level-Filter — Spieler 1 (Kind) = Level 1 + kindersicher, Spieler 2 (Erwachsen) = Level≥2. Button „👨‍👩‍👧 Familienduell" im LV-Setup; Gameover-Nochmal behält family. Normaler 1:1-Pfad unverändert. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.

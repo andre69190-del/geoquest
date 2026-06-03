@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 456):
+Aktueller Stand (Stand: Phase 460):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 999 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -40,6 +40,7 @@ Wichtige Dateien zum Lesen:
 - ARCHITECTURE.md           → Systemdokumentation
 - CLAUDE_SESSION_STARTER.md → Dieses Dokument — Phase/Modi/Scores werden von post_phase.py AUTOMATISCH aktualisiert & von check_session.py geprüft (Phase 422+); inhaltliche Notizen weiterhin manuell pflegen
 - GeoQuest_Checkliste_und_Prompt_Template.md → AM ANFANG JEDER SESSION LESEN! Prompt-Vorlagen + Datei-Checkliste
+- PERSONALISIERUNG_STATUS.md → Stand & offene Roadmap der Kinder-/Personalisierungs-Features (bei Neustart lesen!)
 - check_session.py          → NEU: Session-End-Check (14 Punkte)
 ```
 
@@ -230,7 +231,7 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 456)
+## AKTUELLER PROJEKT-STATUS (Phase 460)
 
 | Metrik | Wert |
 |--------|------|
@@ -255,6 +256,4 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 | hl_kunst_jahr | Kunstgeschichte: Entstehungsjahr |
 | kunst_match_museum | Kunstgeschichte: Museum |
 | hl_hund_gewicht | Hunderassen: Max. Gewicht |
-| hund_match_land | Hunderassen: Ursprungsland |
-| hl_garten_bluete | Gartenbau: Frühester Blüher (lowerWins) |
-| garten_match_boden | Gartenbau: Bodenanspruch |
+| hund_match_land | Hunderassen: Ursprungsland 
