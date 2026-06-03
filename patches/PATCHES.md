@@ -299,3 +299,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 **Datum:** 2026-06-02
 **Bug:** renderHomeTab rief 7 undefinierte Symbole auf (_getKidsMode, _toggleKidsMode, KIDS_CATS, _getTotalPlays, _getTopCats, _renderPlaylistStrip, PLAYLISTS) → Laufzeit-ReferenceError → Home-Tab crashte. Von verify/node --check NICHT erkannt (nur Syntax, kein Runtime). Scaffold war angelegt, Implementierung fehlte.
 **Fix:** Alle Helfer definiert, verdrahtet mit CAT_META (Phase 452) als einziger Quelle: KIDS_CATS = Kategorien mit audience 'kids'; _getKidsMode/_toggleKidsMode (localStorage gq_kids_mode); _getTotalPlays/_getTopCats (Spielhistorie gq_played); 5 kuratierte PLAYLISTS; _renderPlaylistStrip (horizontale Kategorie-Leiste). „Für dich": top-Kategorien ab 10 Spielen, sonst aus Onboarding-Interessen (_getInterestCats). i18n DE/EN/PL (kids_mode_on/off, pl_foryou, pl_geo/natur/mint/pop/kultur). verify 191/191, validate 0 Warnings.
+
+## Phase 455 — Spiel-Ebene-Filter (Kinder-Modus)
+**Datum:** 2026-06-02
+**Feature:** _modeLevel(m) klassifiziert jeden Modus heuristisch (1=leicht/Match, 2=mittel/H-L, 3=schwer/Wort-Schmiede + harte Keywords wie Metacritic/PEGI/Hubraum/BGG/Oscars). _kidHidden(m)=KidsMode && Level>=3. catModes-Filter blendet diese im Kinder-Modus aus — auch INNERHALB erlaubter Kategorien (löst „Auto-Hubraum/Game-Metacritic für Kinder zu schwer"). verify 191/191, validate 0 Warnings.
