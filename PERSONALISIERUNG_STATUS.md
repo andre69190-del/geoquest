@@ -2,7 +2,7 @@
 
 > **Bei Session-Neustart:** zuerst `CLAUDE_SESSION_STARTER.md` lesen, dann dieses Dokument.
 > Es hält den Stand der Personalisierungs-/Kinder-Features fest, damit nahtlos weitergearbeitet werden kann.
-> Letztes Update: Phase 463. (Diese Zeile wird von post_phase.py automatisch gestempelt.)
+> Letztes Update: Phase 464. (Diese Zeile wird von post_phase.py automatisch gestempelt.)
 
 ## Architektur dieser Feature-Familie (wo liegt was)
 
@@ -17,6 +17,16 @@ Alles in `gen.py` (CSS in `geoquest_css.txt`, Übersicht in `generate_spielueber
 - **Playlists/Empfehlungen:** `PLAYLISTS` (5 kuratierte), `_renderPlaylistStrip()`, `_getTopCats()` (aus `gq_played`), `_getInterestCats()` (aus `gq_interests`). „Für dich"-Leiste im Home (`#gq-playlists`).
 - **Onboarding (4 Schritte):** `renderOnboarding()` step 0 Sprache, 1 „Wer spielt?" (`gq_audience`), 2 Interessen (`gq_interests`), 3 Zeit (`gq_time`). `finishOb()` speichert.
 - **Übersicht:** `generate_spieluebersicht.py` zeigt 🧒-Marker + „Kindgeeignet X/999" (selbst-aktualisierend aus CAT_META + Heuristik).
+
+## WICHTIG: Bestenlisten & Fairness (Code-Analyse Phase 464)
+
+- **Scores werden in Supabase-Tabelle `game_sessions` geschrieben** (`saveSession()`): Spalten user_id, mode, score, best_streak, **rounds:ROUNDS (immer 10)**, accuracy, username, device_type.
+- **Die sichtbaren Bestenlisten/Liga lesen aus `leaderboard_weekly`** (server-seitig aggregiert), **IMMER `.eq("mode", mode)`** → **streng pro Spielmodus**, sortiert nach vorab berechnetem `rank`.
+- **Es gibt KEINE globale/modusübergreifende Rangliste** (grep bestätigt).
+- **⇒ Fazit: Bestenlisten sind bereits strukturell fair.** Man konkurriert nur mit Spielern desselben Modus + gleicher Rundenzahl (10). Kind und Erwachsener landen nie in derselben Rangliste, solange sie nicht denselben Modus spielen — und im Kinder-Modus sind schwere Modi ohnehin gefiltert.
+- **⇒ Eine getrennte Kinder-Bestenliste ist NICHT nötig** (Modus-Trennung erledigt das). Nicht bauen — unnötige Komplexität/Backend-Risiko.
+- **⇒ `const ROUNDS=10` NICHT variabel machen** — steckt im Score + Anti-Cheat-Cap (`_maxScore`) + `rounds`-Spalte. Variable Runden = unfaire Bestenliste. Kürzere Runden NUR im Übungsmodus (ohne Eintrag) erlaubt.
+- **Übungsmodus (Phase 464):** `gq_practice`-Toggle; `saveSession()` schreibt dann nur lokale Historie und bricht VOR dem Leaderboard-Insert/Offline-Queue ab. Keine Runden-/Struktur-Änderung.
 
 ## Erledigt (Phasen 452–456, alle verify 191/191, validate 0 Warnings)
 
@@ -37,20 +47,4 @@ Alles in `gen.py` (CSS in `geoquest_css.txt`, Übersicht in `generate_spielueber
 
 ## OFFENE ROADMAP — ⚠️ = berührt Scoring/Backend, NICHT blind bauen
 
-1. **Übungsmodus ohne Wertung** — Kinder/Casual spielen ohne Bestenlisten-Eintrag. ⚠️ Greift in `saveSession()` ein (Score+Supabase). Sauber: ein `practice`-Flag, das nur den Leaderboard-Submit überspringt (lokale Historie ok). Mit Test bauen.
-2. **Getrennte Kinder-/Familien-Bestenliste** — fairste Lösung gegen „Erwachsene dominieren". ⚠️ Supabase-Schema (Leaderboard-Tabelle) ansehen + ggf. Spalte/Filter. Server-seitig, Entscheidung nötig.
-3. **Adaptive Schwierigkeit** — pro Kategorie Trefferquote tracken → Level automatisch wählen. ⚠️ Muss in den Antwort-/Gameover-Fluss eingehängt werden.
-4. **Casual-Schnellrunden** („2 Min" → 5 Fragen) — ⚠️ `const ROUNDS=10` steckt in `saveSession` (rounds:ROUNDS + Anti-Cheat-Cap). Variable Runden = Bestenlisten unfair. NUR als Teil des Übungsmodus (ohne Wertung) sicher.
-5. **Performance / Lazy-Loading** — Daten nicht mehr komplett inline; pro Kategorie/Alter nachladen (siehe unten). Erst Lighthouse messen.
-6. **Mobil-Test Unterwegs-Hinweis** (Phase 459) — auf echtem Handy im Auto/Zug prüfen.
-
-## Performance & 1-MB-/Größen-Grenze (wichtig)
-
-- GeoQuest.html ist ~5.8 MB Single-File (alle 74 data/*.json inline). Das skaliert nicht unendlich.
-- **Empfehlung:** Größte Datenblöcke (CITIES ~306 KB, AUTOS ~196 KB, neue Extended-JSONs) NICHT mehr inline, sondern per `fetch()` laden, wenn Kategorie geöffnet wird (Muster existiert: Kennzeichen + einige Phase-28-Payloads laden bereits zur Laufzeit).
-- **Alters-basiertes Nachladen:** Beim Start nur Kinder-/gewählte-Interessen-Daten laden, Rest „on demand". Spart Startup-Parse, genau dein Gedanke.
-- Das ist ein eigener, größerer Umbau — am besten messen (Lighthouse Mobile) und dann gezielt die Top-3-Datenblöcke auslagern.
-
-## Build-Hinweise für Folge-Sessions
-- Bei jeder gen.py-Änderung: assert-gesicherte `.replace()` (Zero-Bug), dann `python3 gen.py && verify.py && validate_content.py && post_phase.py --phase NNN && check_session.py`.
-- Sandbox-Mount kann nach Edits eine veraltete/abgeschnittene gen.py liefern; im Zweifel programmatisch (Python-Skript: lesen→assert→replace→compile→schreiben) editieren, nicht blind cp eines alten /tmp-S
+1. **Übungsmodus ohne Wertung** — Kinder/Casual spielen ohne Bestenlisten-E

@@ -339,3 +339,8 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 463 — Eltern-PIN (Kinder-Modus sichern)
 **Datum:** 2026-06-03
 **Feature:** _toggleKidsMode fragt beim Ausschalten den 4-stelligen PIN ab (renderPinModal mit Modus set/check, _pinSubmit/_pinRemove/_hasPin, gq_kids_pin). Setzen/Ändern/Entfernen im Einstellungs-Modal. Kinder können den Kinder-Modus nicht mehr selbst deaktivieren. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.
+
+## Phase 464 — Übungsmodus + Bestenlisten-Fairness-Analyse
+**Datum:** 2026-06-03
+**Analyse:** Bestenlisten lesen aus `leaderboard_weekly` STRENG pro Modus (`.eq("mode",mode)`) + feste 10 Runden; keine globale Rangliste → strukturell fair. Getrennte Kinder-Bestenliste unnötig.
+**Feature:** Übungsmodus (gq_practice-Toggle): saveSession() schreibt nur lokale Historie, bricht VOR Leaderboard-Insert/Offline-Queue ab. Keine ROUNDS-/Struktur-Änderung → Fairness unberührt. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.
