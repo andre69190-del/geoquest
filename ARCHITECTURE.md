@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 460 (Stand: Juni 2026)
+**Version:** Phase 461 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.84 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1164,6 +1164,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **458** | patch_458.py | **Antwort-Audit-Fix: _modeLevel erkennt nun Jahr/Zahl-Antwort-Modi per ID (_bj, baujahr, release, peak_year, erscheinungsjahr, reisezeit, breitengrad, dekade) als Level 3 -> im Kinder-Modus ausgeblendet (Erwachsene unberuehrt). 24 Modi mit Zahl/Jahr-Antwort in Kinder-Kategorien identifiziert und gefiltert. verify 191/191, validate 0 Warnings.** |
 | **459** | patch_459.py | **Unterwegs-Vorschlag (Geolocation, opt-in, Standard AUS): bei aktiviertem gq_travel_hint startet watchPosition; bei anhaltend hoher Geschwindigkeit (coords.speed>9 m/s, 3 Messungen) einmaliger dezenter Banner mit Auto/Zug-Wahl (Kennzeichen-/Waggon-Sammeln). Einstellungs-Toggle, i18n DE/EN/PL. Keine Auto/Zug-Auto-Erkennung (unzuverlaessig) - Nutzer waehlt. verify 191/191, validate 0 Warnings.** |
 | **460** | patch_460.py | **Familienduell als eigene Rubrik im Hot-Seat: initLV(family)-Param; im Familien-Modus generiert _lvNext pro Zug eine FRISCHE Frage (kein roundQ-Reuse) mit Level-Filter: Spieler1/Kind = Level 1 + kindersicher (KIDS_CATS), Spieler2/Erwachsen = Level>=2. Button im LV-Setup, Gameover-Nochmal behaelt Family. Normaler 1:1-Pfad unveraendert. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
+| **461** | patch_461.py | **Home-Hero-Layout: Live 1vs1 Duell + Lokal Hot-Seat als kompaktes Paar nebeneinander (je halbe Breite, vertikale Karten: Icon/Label/Button, Untertitel entfernt). Daily Challenge bleibt voll breit als Haupt-Hero. Spart Banner-Hoehe -> Empfehlungen rutschen nach oben. verify 191/191, validate 0 Warnings.** |
 
 ---
 

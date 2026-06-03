@@ -327,3 +327,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 460 — Familienduell (Hot-Seat-Rubrik)
 **Datum:** 2026-06-03
 **Feature:** initLV(family); im Familien-Modus generiert _lvNext pro Zug eine frische Frage (kein roundQ-Reuse) mit Level-Filter — Spieler 1 (Kind) = Level 1 + kindersicher, Spieler 2 (Erwachsen) = Level≥2. Button „👨‍👩‍👧 Familienduell" im LV-Setup; Gameover-Nochmal behält family. Normaler 1:1-Pfad unverändert. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.
+
+## Phase 461 — Home-Hero: Duell-Modi als Paar
+**Datum:** 2026-06-03
+**Layout:** Live 1vs1 + Lokal Hot-Seat nebeneinander (je halbe Breite, kompakte vertikale Karten, Untertitel weg). Daily Challenge bleibt voll breit (Haupt-Hero). Spart Höhe → „Empfohlen für dich" rückt nach oben. verify 191/191, validate 0 Warnings.

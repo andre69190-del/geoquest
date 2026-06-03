@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 460. Familienduell als eigene Rubrik im Hot-Seat: initLV(family)-Param; im Familien-Modus generiert _lvNext pro Zug eine FRISCHE Frage (kein roundQ-Reuse) mit Level-Filter: Spieler1/Kind = Level 1 + kindersicher (KIDS_CATS), Spieler2/Erwachsen = Level>=2. Button im LV-Setup, Gameover-Nochmal behaelt Family. Normaler 1:1-Pfad unveraendert. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 461. Home-Hero-Layout: Live 1vs1 Duell + Lokal Hot-Seat als kompaktes Paar nebeneinander (je halbe Breite, vertikale Karten: Icon/Label/Button, Untertitel entfernt). Daily Challenge bleibt voll breit als Haupt-Hero. Spart Banner-Hoehe -> Empfehlungen rutschen nach oben. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

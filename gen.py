@@ -17232,20 +17232,17 @@ function renderHomeTab(){
         </div>
       </div>`;
   const _homeHTML=`${_hdr}${renderDailyHero()}
-    <div class="pvp-hero" onclick="S.mpModal=true;render()" role="button" aria-label="Live 1vs1 starten">
-      <div style="display:flex;align-items:center;gap:14px">
-        <div style="font-size:2.2rem">⚔️</div>
-        <div>
-          <div style="font-size:1rem;font-weight:900;color:#fff">Live 1vs1 Duell</div>
-          <div style="font-size:.74rem;color:rgba(255,255,255,.75);margin-top:2px">${t("home_pvp_sub")}</div>
-        </div>
-        <div style="margin-left:auto;background:#7c3aed;color:#fff;border-radius:20px;padding:.3rem .85rem;font-size:.76rem;font-weight:700">► Spielen</div>
+    <div style="display:flex;gap:10px;margin-bottom:.55rem">
+      <div class="pvp-hero" onclick="S.mpModal=true;render()" role="button" aria-label="Live 1vs1 starten" style="flex:1;margin:0;padding:.7rem;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center">
+        <div style="font-size:1.8rem">⚔️</div>
+        <div style="font-size:.84rem;font-weight:900;color:#fff;line-height:1.05">Live 1vs1</div>
+        <div style="background:#7c3aed;color:#fff;border-radius:16px;padding:.22rem .7rem;font-size:.72rem;font-weight:700;margin-top:1px">► Spielen</div>
       </div>
-    </div>
-    <div style="background:linear-gradient(135deg,#4f46e5,#7c3aed);border-radius:14px;padding:.7rem 1rem;margin-bottom:.55rem;cursor:pointer;display:flex;align-items:center;gap:12px;box-shadow:0 2px 10px rgba(99,102,241,.25)" onclick="S.lvModal=true;S.lv=null;render()" role="button">
-      <div style="font-size:2rem">🕹️</div>
-      <div style="flex:1"><div style="font-size:.9rem;font-weight:900;color:#fff">Lokal 1:1 Hot-Seat</div><div style="font-size:.7rem;color:rgba(255,255,255,.75)">Zwei Spieler · Ein Gerät · 10 Runden</div></div>
-      <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:.25rem .75rem;font-size:.72rem;font-weight:700">► Los</div>
+      <div onclick="S.lvModal=true;S.lv=null;render()" role="button" aria-label="Hot-Seat starten" style="flex:1;background:linear-gradient(135deg,#4f46e5,#7c3aed);border-radius:14px;padding:.7rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;box-shadow:0 2px 10px rgba(99,102,241,.25)">
+        <div style="font-size:1.8rem">🕹️</div>
+        <div style="font-size:.84rem;font-weight:900;color:#fff;line-height:1.05">Hot-Seat</div>
+        <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:16px;padding:.22rem .7rem;font-size:.72rem;font-weight:700;margin-top:1px">► Los</div>
+      </div>
     </div>
     <div class="menu-search-container" style="display:flex;gap:8px;margin:15px 15px 12px;align-items:center;flex-wrap:nowrap">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">
