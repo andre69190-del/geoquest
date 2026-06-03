@@ -1470,7 +1470,7 @@ de:{
   ob_welcome:"Willkommen bei GeoQuest",ob_sub1:"Das Geografie-Quiz – sammle Stempel, steige in der Liga auf!",ob_difficulty:"Schwierigkeitsgrad",ob_diff_sub:"W\u00e4hle deinen Stil. \u00c4nderbar jederzeit.",
   ob_diff_casual_desc:"Gro\u00dfe St\u00e4dte \u2022 12 Sek.",ob_diff_hc_desc:"Alle St\u00e4dte \u2022 8 Sek.",ob_back:"\u2190 Zur\u00fcck",ob_modes_title:"Spielmodi",
   ob_modes_sub:"19 Modi, ein Ziel: Die Welt kennenlernen.",ob_more_modes:"\u2026 und 16 weitere Modi",ob_start:"\u{1F680} Los geht's!",ob_have_account:"Ich habe bereits einen Account",ob_register:"Neu hier? Registrieren",
-  home_hi:"Hallo, {name} \u{1F44B}",home_guest:"Willkommen, Gast \u{1F30D}",home_save:"\u{1F510} Fortschritt sichern",home_pvp_sub:"Echtzeit gegen einen Freund spielen",
+  home_hi:"Hallo, {name} \u{1F44B}",home_guest:"Willkommen, Gast \u{1F30D}",home_save:"\u{1F510} Fortschritt sichern",home_login_btn:"Anmelden / Registrieren",home_pvp_sub:"Echtzeit gegen einen Freund spielen",
   ob_mode1_name:"Stadt →’ Land",ob_mode1_desc:"Land zur Stadt \u00b7 Casual 1k, HC 10k, Survival 30k St\u00e4dte",ob_mode2_name:"EU-Kennzeichen",ob_mode2_desc:"Woher kommt dieses Kennzeichen?",ob_mode3_name:"U-Bahn-Netz",ob_mode3_desc:"Linien und km der Metros.",
   language_select:"SPRACHE",
   badge_beta:"Beta",beta_warning:"Spielbar, aber es k\u00f6nnen noch Fehler auftreten.",
@@ -1553,7 +1553,7 @@ en:{
   ob_welcome:"Welcome to GeoQuest",ob_sub1:"The geography quiz – collect stamps, climb the league!",ob_difficulty:"Difficulty",ob_diff_sub:"Choose your style. Changeable at any time.",
   ob_diff_casual_desc:"Major cities \u2022 12 sec.",ob_diff_hc_desc:"All cities \u2022 8 sec.",ob_back:"\u2190 Back",ob_modes_title:"Game Modes",
   ob_modes_sub:"19 modes, one goal: know the world.",ob_more_modes:"\u2026 and 16 more modes",ob_start:"\u{1F680} Let's go!",ob_have_account:"I already have an account",ob_register:"New here? Register",
-  home_hi:"Hi, {name} \u{1F44B}",home_guest:"Welcome, Guest \u{1F30D}",home_save:"\u{1F510} Save progress",home_pvp_sub:"Play in real time against a friend",
+  home_hi:"Hi, {name} \u{1F44B}",home_guest:"Welcome, Guest \u{1F30D}",home_save:"\u{1F510} Save progress",home_login_btn:"Login / Register",home_pvp_sub:"Play in real time against a friend",
   ob_mode1_name:"City →’ Country",ob_mode1_desc:"Which country does this city belong to?",ob_mode2_name:"EU Licence Plates",ob_mode2_desc:"Where does this number plate come from?",ob_mode3_name:"Metro Networks",ob_mode3_desc:"Lines and km of metro systems.",
   language_select:"LANGUAGE",
   badge_beta:"Beta",beta_warning:"Playable, but may still contain bugs.",
@@ -1636,7 +1636,7 @@ pl:{
   ob_welcome:"Witaj w GeoQuest",ob_sub1:"Quiz geograficzny – zbieraj stemple, awansuj w lidze!",ob_difficulty:"Poziom trudnoŚ›ci",ob_diff_sub:"Wybierz swój styl. ZmieŚ„ w dowolnym momencie.",
   ob_diff_casual_desc:"Duże miasta • 12 sek.",ob_diff_hc_desc:"Wszystkie miasta • 8 sek.",ob_back:"→ Wróć",ob_modes_title:"Tryby gry",
   ob_modes_sub:"19 trybów, jeden cel: poznać Ś›wiat.",ob_more_modes:"… i 16 kolejnych trybów",ob_start:"\u{1F680} Zaczynamy!",ob_have_account:"Mam już konto",ob_register:"Nowy? Zarejestruj się",
-  home_hi:"CzeŚ›ć, {name} \u{1F44B}",home_guest:"Witaj, GoŚ›ciu \u{1F30D}",home_save:"\u{1F510} Zapisz postęp",home_pvp_sub:"Graj w czasie rzeczywistym z przyjacielem",
+  home_hi:"CzeŚ›ć, {name} \u{1F44B}",home_guest:"Witaj, GoŚ›ciu \u{1F30D}",home_save:"\u{1F510} Zapisz postęp",home_login_btn:"Zaloguj / Zarejestruj",home_pvp_sub:"Graj w czasie rzeczywistym z przyjacielem",
   ob_mode1_name:"Miasto →’ Kraj",ob_mode1_desc:"Do jakiego kraju należy to miasto?",ob_mode2_name:"Tablice UE",ob_mode2_desc:"Skń…d pochodzi ta tablica?",ob_mode3_name:"Sieci metra",ob_mode3_desc:"Linie i km metra.",
   language_select:"Jń˜ZYK",
   badge_beta:"Beta",beta_warning:"Grywalny, ale mogń… wystń…pić błędy.",
@@ -1693,7 +1693,7 @@ fr:{
   ob_welcome:"Bienvenue sur GeoQuest",ob_sub1:"Le quiz de géographie – collectez des tampons, montez en ligue !",ob_difficulty:"Niveau de difficulté",ob_diff_sub:"Choisissez votre style. Modifiable ß  tout moment.",
   ob_diff_casual_desc:"Grandes villes • 12 sec.",ob_diff_hc_desc:"Toutes les villes • 8 sec.",ob_back:"→ Retour",ob_modes_title:"Modes de jeu",
   ob_modes_sub:"19 modes, un objectif : connaß®tre le monde.",ob_more_modes:"… et 16 autres modes",ob_start:"\u{1F680} C'est parti !",ob_have_account:"J'ai déjß  un compte",ob_register:"Nouveau ? S'inscrire",
-  home_hi:"Salut, {name} \u{1F44B}",home_guest:"Bienvenue, invité \u{1F30D}",home_save:"\u{1F510} Sauvegarder la progression",home_pvp_sub:"Jouer en temps réel contre un ami",
+  home_hi:"Salut, {name} \u{1F44B}",home_guest:"Bienvenue, invité \u{1F30D}",home_save:"\u{1F510} Sauvegarder la progression",home_login_btn:"Connexion / Inscription",home_pvp_sub:"Jouer en temps réel contre un ami",
   ob_mode1_name:"Ville →’ Pays",ob_mode1_desc:"ß€ quel pays appartient cette ville ?",ob_mode2_name:"Plaques UE",ob_mode2_desc:"D'oß¹ vient cette plaque ?",ob_mode3_name:"Réseaux de métro",ob_mode3_desc:"Lignes et km des métros.",
   language_select:"LANGUE",
   badge_beta:"B\u00eata",beta_warning:"Jouable, mais peut contenir des bugs.",
@@ -1750,7 +1750,7 @@ es:{
   ob_welcome:"Bienvenido a GeoQuest",ob_sub1:"El quiz de geografía – colecciona sellos, sube en la liga.",ob_difficulty:"Nivel de dificultad",ob_diff_sub:"Elige tu estilo. Cambiable en cualquier momento.",
   ob_diff_casual_desc:"Ciudades grandes • 12 seg.",ob_diff_hc_desc:"Todas las ciudades • 8 seg.",ob_back:"→ Volver",ob_modes_title:"Modos de juego",
   ob_modes_sub:"19 modos, un objetivo: conocer el mundo.",ob_more_modes:"… y 16 modos más",ob_start:"\u{1F680} ¡Vamos!",ob_have_account:"Ya tengo una cuenta",ob_register:"¿Nuevo? Regsístrate",
-  home_hi:"Hola, {name} \u{1F44B}",home_guest:"Bienvenido, invitado \u{1F30D}",home_save:"\u{1F510} Guardar progreso",home_pvp_sub:"Jugar en tiempo real contra un amigo",
+  home_hi:"Hola, {name} \u{1F44B}",home_guest:"Bienvenido, invitado \u{1F30D}",home_save:"\u{1F510} Guardar progreso",home_login_btn:"Iniciar sesión / Registrarse",home_pvp_sub:"Jugar en tiempo real contra un amigo",
   ob_mode1_name:"Ciudad →’ País",ob_mode1_desc:"¿A qué país pertenece esta ciudad?",ob_mode2_name:"Matrículas UE",ob_mode2_desc:"¿De dónde viene esta matrícula?",ob_mode3_name:"Redes de metro",ob_mode3_desc:"Líneas y km de los metros.",
   language_select:"IDIOMA",
   badge_beta:"Beta",beta_warning:"Jugable, pero puede contener errores.",
@@ -1807,7 +1807,7 @@ it:{
   ob_welcome:"Benvenuto su GeoQuest",ob_sub1:"Il quiz di geografia – colleziona timbri, sali in classifica!",ob_difficulty:"Livello di difficoltß ",ob_diff_sub:"Scegli il tuo stile. Modificabile in qualsiasi momento.",
   ob_diff_casual_desc:"Cittß  principali • 12 sec.",ob_diff_hc_desc:"Tutte le cittß  • 8 sec.",ob_back:"→ Indietro",ob_modes_title:"Modalitß  di gioco",
   ob_modes_sub:"19 modalitß , un obiettivo: conoscere il mondo.",ob_more_modes:"… e altre 16 modalitß ",ob_start:"\u{1F680} Andiamo!",ob_have_account:"Ho giß  un account",ob_register:"Nuovo? Registrati",
-  home_hi:"Ciao, {name} \u{1F44B}",home_guest:"Benvenuto, ospite \u{1F30D}",home_save:"\u{1F510} Salva i progressi",home_pvp_sub:"Gioca in tempo reale contro un amico",
+  home_hi:"Ciao, {name} \u{1F44B}",home_guest:"Benvenuto, ospite \u{1F30D}",home_save:"\u{1F510} Salva i progressi",home_login_btn:"Accedi / Registrati",home_pvp_sub:"Gioca in tempo reale contro un amico",
   ob_mode1_name:"Cittß  →’ Paese",ob_mode1_desc:"A quale paese appartiene questa cittß ?",ob_mode2_name:"Targhe UE",ob_mode2_desc:"Da dove viene questa targa?",ob_mode3_name:"Reti metro",ob_mode3_desc:"Linee e km delle metropolitane.",
   language_select:"LINGUA",
   badge_beta:"Beta",beta_warning:"Giocabile, ma potrebbe contenere bug.",
@@ -2168,7 +2168,7 @@ bg:{
   ob_welcome:"Добре дошли в GeoQuest",ob_sub1:"Географският куиз – събирай печати, изкачвай се в лигата!",ob_difficulty:"Ниво на трудност",ob_diff_sub:"Избери своя стил. Може да се промени по всяко време.",
   ob_diff_casual_desc:"Големи градове • 12 сек.",ob_diff_hc_desc:"Всички градове • 8 сек.",ob_back:"← Назад",ob_modes_title:"Игрови режими",
   ob_modes_sub:"19 режима, една цел: Опознай света.",ob_more_modes:"… и 16 други режима",ob_start:"\u{1F680} Да тръгваме!",ob_have_account:"Вече имам акаунт",ob_register:"Нов потребител? Регистрирай се",
-  home_hi:"Здравей, {name} \u{1F44B}",home_guest:"Добре дошъл, Гост \u{1F30D}",home_save:"\u{1F510} Запази прогреса",home_pvp_sub:"Играй в реално време срещу приятел",
+  home_hi:"Здравей, {name} \u{1F44B}",home_guest:"Добре дошъл, Гост \u{1F30D}",home_save:"\u{1F510} Запази прогреса",home_login_btn:"Вход / Регистрация",home_pvp_sub:"Играй в реално време срещу приятел",
   ob_mode1_name:"Град → Държава",ob_mode1_desc:"Държава за града · Casual 1k, HC 10k",ob_mode2_name:"ЕС Табели",ob_mode2_desc:"От коя държава е тази табела?",ob_mode3_name:"Метро мрежа",ob_mode3_desc:"Линии и км на метрото.",
   language_select:"ЕЗИК",
   badge_beta:"Бета",beta_warning:"Играбело, но може да има грешки.",
@@ -17177,15 +17177,13 @@ function renderHomeTab(){
           <div style="display:flex;align-items:center;gap:5px;background:var(--bg2);border-radius:20px;padding:.3rem .75rem;font-size:.82rem;font-weight:700;color:#f59e0b;border:1px solid rgba(245,158,11,.25);white-space:nowrap">🪙 ${_gc}</div>
         </div>
       </div>`
-    :`<div style="padding:.85rem 1rem .6rem;margin-bottom:.1rem">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:.65rem">
-          <div style="display:flex;align-items:center;gap:8px;min-width:0"><div style="font-size:1.05rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t("home_guest")}</div>${_streakBadge}</div>
-          <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
-            <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
-            <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
-          </div>
+    :`<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
+        <div style="display:flex;align-items:center;gap:8px;min-width:0"><div style="font-size:1.05rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t("home_guest")}</div>${_streakBadge}</div>
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+          <button onclick="S.tab='profil';render()" title="${t('home_login_btn')}" aria-label="${t('home_login_btn')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👤</button>
+          <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
+          <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
         </div>
-        <button onclick="S.tab='profil';render()" style="width:100%;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:12px;padding:.62rem 1rem;font-size:.85rem;font-weight:700;cursor:pointer;box-shadow:0 2px 8px rgba(99,102,241,.35)">${t("home_save")}</button>
       </div>`;
   const _homeHTML=`${_hdr}${renderDailyHero()}
     <div class="pvp-hero" onclick="S.mpModal=true;render()" role="button" aria-label="Live 1vs1 starten">

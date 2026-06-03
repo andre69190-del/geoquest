@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 449. Ozeane & Meere: 80 Gewässer, 8 Modi (Fläche, Tiefe, Typ, Kontinent, Kleiner, Seichter, Name, WS Atlantik). 999 Modi erreicht! verify: 191/191.. verify: 191/191."
+git commit -m "Content: Phase 450. UX: Fortschritt-sichern-Button aus Gast-Header entfernt, stattdessen 👤-Login-Icon in Header-Iconreihe. 7 i18n-Keys (home_login_btn) in allen Sprachen.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

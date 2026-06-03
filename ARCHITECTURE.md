@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 449 (Stand: Juni 2026)
+**Version:** Phase 450 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.83 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1153,6 +1153,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **447** | patch_447.py | **Gipfel & Berge: 80 Gipfel, 7 Modi (Höhe, Gebirge, Kontinent, Pin, Erstbesteigung, Timeline, WS Himalaya). verify: 191/191.** |
 | **448** | patch_448.py | **Klimazonen weltweit: 80 Länder, 7 Modi (Zone, Kontinent, Temp, Niederschlag, Pin, Kälter, WS Monsun). verify: 191/191.** |
 | **449** | patch_449.py | **Ozeane & Meere: 80 Gewässer, 8 Modi (Fläche, Tiefe, Typ, Kontinent, Kleiner, Seichter, Name, WS Atlantik). 999 Modi erreicht! verify: 191/191.** |
+| **450** | patch_450.py | **UX: Fortschritt-sichern-Button aus Gast-Header entfernt, stattdessen 👤-Login-Icon in Header-Iconreihe. 7 i18n-Keys (home_login_btn) in allen Sprachen.** |
 
 ---
 
