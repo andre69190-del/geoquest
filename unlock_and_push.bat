@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 455. Spiel-Ebene-Filter fuer Kinder-Modus: _modeLevel(m) bewertet Modi heuristisch (1 leicht / 2 mittel / 3 schwer) nach Mechanik (Match=1, H/L=2, Wort-Schmiede=3) + harten Schluesselwoertern (Metacritic, PEGI, Hubraum, BGG, Oscars u.a.). _kidHidden(m) blendet im Kinder-Modus Level-3-Modi auch innerhalb erlaubter Kategorien aus (catModes-Filter). Loest: zu schwere Spiele wie Auto-Hubraum/Game-Metacritic in Kinder-Kategorien. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 456. Lehrplan-konforme Alters-Tags: Grundschul-Sachunterricht (Kl. 1-4) behandelt Pflanzenwelt, Jahreszeiten/Wetter, Raum/Geografie/Karten, Sonne/Mond. Daher CAT_META audience um 'kids' erweitert fuer pflanzen, gartenbau, klima, fluesse, gipfel. Kinder-geeignete Modi 348->410/999 (per-Mode-Level-Filter blendet schwere Modi darin weiter aus). Spielübersicht zeigt automatisch 🧒-Marker + 'Kindgeeignet X/999'. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

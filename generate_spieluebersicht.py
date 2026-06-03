@@ -384,9 +384,31 @@ CAT_META = {
 CAT_ORDER = list(CAT_META.keys())
 
 
+_HARD_AUD=['metacritic','metakritik','imdb','pegi','hubraum','ccm','verbrauch','wendekreis','zuladung','drehmoment','bgg','bewertung','dichte','niederschlag','wirkstoff','megalith','versicherung','streams','umsatz','rendite','marktkapital','exoplanet','lichtjahr','magnitude','schwerkraft','fundtiefe','oscars','grammys','tontr\u00e4ger'.encode().decode('unicode_escape') if False else 'tonträger','concurrent','sequel','downloads']
+def _parse_cat_audience(src):
+    import re as _re
+    m=_re.search(r'const CAT_META=\{(.*?)\};',src,_re.S); d={}
+    if m:
+        for k,a in _re.findall(r'(\w+):\{a:\[([^\]]*)\]',m.group(1)):
+            d[k]=_re.findall(r'"([^"]+)"',a)
+    return d
+def _mode_level(mid,title):
+    txt=(mid+' '+title).lower(); l=2
+    if mid.startswith('ws_') or '_ws_' in mid: l=3
+    elif 'match' in mid or '_mc' in mid or 'timeline' in mid: l=1
+    elif mid.startswith('hl_') or '_hl_' in mid: l=2
+    if any(h in txt for h in _HARD_AUD): l=3
+    return l
+def _mode_kidsafe(mid,title,group,audmap):
+    aud=audmap.get(group,['teens','adults'])
+    if 'kids' not in aud: return False
+    return _mode_level(mid,title)<3
+
 def generate(phase=269, n_tests=90):
     src       = open(GEN,'r',encoding='utf-8').read()
     modes     = _parse_modes(src)
+    aud_map   = _parse_cat_audience(src)
+    kids_n    = 0
     dispatch  = _parse_gen_dispatch(src)
     store     = _load_all_json()
     sport_poi = _parse_sport_poi(src)
@@ -428,6 +450,9 @@ def generate(phase=269, n_tests=90):
             t = m['title'].replace('<','&lt;').replace('>','&gt;')
             d = m['desc'].replace('<','&lt;').replace('>','&gt;') if m['desc'] else ''
             b = _badge(m['id'])
+            if _mode_kidsafe(m['id'], m['title'], g, aud_map):
+                b += '<span title="kindgeeignet" style="margin-left:.35rem;font-size:.85rem">🧒</span>'
+                kids_n += 1
             cs, rn = _get_count(m['id'], dispatch, store, sport_poi)
             total_items += rn
             if cs == '—': missing += 1
@@ -454,6 +479,7 @@ def generate(phase=269, n_tests=90):
         leg.append(f'<span class="lgi"><span style="background:{bg};color:{fg};border-radius:4px;padding:.1rem .3rem">{em}</span>'
                    f' {lbl} <strong style="color:{fg}">{cnt}</strong></span>')
     legend_html = '\n  '.join(leg)
+    legend_html += '\n  <span class="lgi"><span style="background:#10b981;color:#fff;border-radius:4px;padding:.1rem .3rem">🧒</span> Kindgeeignet <strong style="color:#10b981">'+str(kids_n)+'</strong> / '+str(total_modes)+'</span>'
 
     H = []
     H.append('<!DOCTYPE html><html lang="de"><head>')

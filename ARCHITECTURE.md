@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 455 (Stand: Juni 2026)
+**Version:** Phase 456 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.84 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1159,6 +1159,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **453** | patch_453.py | **Querformat-Notausgang (Plan B): Auf dem 'Bitte Gerät drehen'-Screen neuer Button 'Trotzdem im Hochformat spielen' (S.ignoreLandscape) + Hinweis auf Bildschirmsperre. Loest das Festhaengen bei aktiver OS-Rotationssperre. Querformat-Pflicht (waitingForLandscape + Orientation-Overlay) respektiert das Override. Bonus: hartkodierter deutscher Dreh-Text -> t() (i18n DE/EN/PL). verify 191/191, validate 0 Warnings.** |
 | **454** | patch_454.py | **KRITISCHER FIX + Personalisierung Portion 3/4: Home-Tab rief undefinierte Symbole auf (_getKidsMode, _toggleKidsMode, KIDS_CATS, _getTotalPlays, _getTopCats, _renderPlaylistStrip, PLAYLISTS) -> Laufzeit-ReferenceError, Home crashte (von verify/node nicht erkannt, da nur Syntax). Alle Helfer definiert und mit CAT_META verdrahtet: Kinder-Modus-Toggle (KIDS_CATS aus CAT_META audience), 5 kuratierte Playlists, Für-dich-Empfehlung (top-Kategorien aus Spielhistorie ab 10 Spielen, sonst aus Onboarding-Interessen via _getInterestCats). i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
 | **455** | patch_455.py | **Spiel-Ebene-Filter fuer Kinder-Modus: _modeLevel(m) bewertet Modi heuristisch (1 leicht / 2 mittel / 3 schwer) nach Mechanik (Match=1, H/L=2, Wort-Schmiede=3) + harten Schluesselwoertern (Metacritic, PEGI, Hubraum, BGG, Oscars u.a.). _kidHidden(m) blendet im Kinder-Modus Level-3-Modi auch innerhalb erlaubter Kategorien aus (catModes-Filter). Loest: zu schwere Spiele wie Auto-Hubraum/Game-Metacritic in Kinder-Kategorien. verify 191/191, validate 0 Warnings.** |
+| **456** | patch_456.py | **Lehrplan-konforme Alters-Tags: Grundschul-Sachunterricht (Kl. 1-4) behandelt Pflanzenwelt, Jahreszeiten/Wetter, Raum/Geografie/Karten, Sonne/Mond. Daher CAT_META audience um 'kids' erweitert fuer pflanzen, gartenbau, klima, fluesse, gipfel. Kinder-geeignete Modi 348->410/999 (per-Mode-Level-Filter blendet schwere Modi darin weiter aus). Spielübersicht zeigt automatisch 🧒-Marker + 'Kindgeeignet X/999'. verify 191/191, validate 0 Warnings.** |
 
 ---
 

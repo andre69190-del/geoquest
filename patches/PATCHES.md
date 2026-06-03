@@ -303,3 +303,11 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 455 — Spiel-Ebene-Filter (Kinder-Modus)
 **Datum:** 2026-06-02
 **Feature:** _modeLevel(m) klassifiziert jeden Modus heuristisch (1=leicht/Match, 2=mittel/H-L, 3=schwer/Wort-Schmiede + harte Keywords wie Metacritic/PEGI/Hubraum/BGG/Oscars). _kidHidden(m)=KidsMode && Level>=3. catModes-Filter blendet diese im Kinder-Modus aus — auch INNERHALB erlaubter Kategorien (löst „Auto-Hubraum/Game-Metacritic für Kinder zu schwer"). verify 191/191, validate 0 Warnings.
+
+## Phase 455b — Spielübersicht: Zielgruppen-Auswertung
+**Datum:** 2026-06-02
+**Tooling:** generate_spieluebersicht.py: pro Modus 🧒-Marker (kindgeeignet) + Legende „Kindgeeignet X/999". Abgeleitet aus CAT_META-audience + Schwierigkeits-Heuristik (_mode_level/_mode_kidsafe) — selbst-aktualisierend. Aktuell: 348/999 kindgeeignet (35%).
+
+## Phase 456 — Lehrplan-konforme Kinder-Tags
+**Datum:** 2026-06-02
+**Pädagogik:** Recherche Grundschul-Sachunterricht (Kl. 1-4): Pflanzenwelt, Jahreszeiten/Wetter, Raum/Karten, Sonne/Mond. → CAT_META audience +'kids' für pflanzen, gartenbau, klima, fluesse, gipfel. Kinder-geeignet 348→410/999. Per-Mode-Level-Filter (Phase 455) blendet schwere Modi innerhalb weiter aus. Spielübersicht zählt automatisch (🧒 + „Kindgeeignet 410/999").
