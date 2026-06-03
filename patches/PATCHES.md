@@ -283,3 +283,19 @@ python3 run_patch.py patches/patch_228_new_feature.py
 **Daten:** ozeane_extended.json (80 Gewässer), ozeane_ws.json.
 **Meilenstein:** 999 Modi erreicht!
 **Total:** 999 Modi
+
+## Phase 452 — Personalisierung Portion 1+2
+**Datum:** 2026-06-02
+**Portion 1:** CAT_META-Konstante (audience kids/teens/adults + interests geo/natur/mint/pop/kultur/sport/alltag je Kategorie) als Filter-Basis. Reine Daten, keine UI-Wirkung.
+**Portion 2:** Onboarding auf 4 Schritte erweitert (Willkommen+Sprache → „Wer spielt?" → „Was interessiert dich?" Mehrfachauswahl → „Wie viel Zeit?") statt Schwierigkeits-/Modi-Slides. Speichert gq_audience/gq_interests/gq_time, überspringbar, i18n DE/EN/PL (23 Keys/Sprache).
+**Sonstiges:** eu_plates (Kennzeichen-Sammeln) auf alle Altersstufen getaggt.
+**Offen (Roadmap):** Portion 3 „Für dich"-Filter (weich) + Mode-Level-Schwierigkeit; Portion 4 Empfehlungen („ähnliche Spiele"); In-Auto-Hinweis (geolocation speed). verify 191/191, validate 0 Warnings.
+
+## Phase 453 — Querformat-Notausgang (Plan B)
+**Datum:** 2026-06-02
+**Fix:** Auf dem "Bitte Gerät drehen"-Screen neuer Button "Trotzdem im Hochformat spielen" (setzt S.ignoreLandscape) + Hinweis auf OS-Bildschirmsperre. Behebt das Festhängen, wenn die Display-Rotation gesperrt ist (Drehen wirkt dann nicht → Nutzer war ausgesperrt). waitingForLandscape-Gate + updateOrientationWarning respektieren das Override. Bonus: hartkodierter deutscher Dreh-Text → t() (i18n DE/EN/PL). Erkennung _isPortrait() bleibt 3-stufig (screen.orientation → window.orientation → Dimensions-Fallback, Android+iOS). verify 191/191, validate 0 Warnings.
+
+## Phase 454 — KRITISCHER FIX: Kinder-Modus/Playlists vervollständigt
+**Datum:** 2026-06-02
+**Bug:** renderHomeTab rief 7 undefinierte Symbole auf (_getKidsMode, _toggleKidsMode, KIDS_CATS, _getTotalPlays, _getTopCats, _renderPlaylistStrip, PLAYLISTS) → Laufzeit-ReferenceError → Home-Tab crashte. Von verify/node --check NICHT erkannt (nur Syntax, kein Runtime). Scaffold war angelegt, Implementierung fehlte.
+**Fix:** Alle Helfer definiert, verdrahtet mit CAT_META (Phase 452) als einziger Quelle: KIDS_CATS = Kategorien mit audience 'kids'; _getKidsMode/_toggleKidsMode (localStorage gq_kids_mode); _getTotalPlays/_getTopCats (Spielhistorie gq_played); 5 kuratierte PLAYLISTS; _renderPlaylistStrip (horizontale Kategorie-Leiste). „Für dich": top-Kategorien ab 10 Spielen, sonst aus Onboarding-Interessen (_getInterestCats). i18n DE/EN/PL (kids_mode_on/off, pl_foryou, pl_geo/natur/mint/pop/kultur). verify 191/191, validate 0 Warnings.

@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 451 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.83 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Version:** Phase 454 (Stand: Juni 2026)
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.84 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -1155,6 +1155,9 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **449** | patch_449.py | **Ozeane & Meere: 80 Gewässer, 8 Modi (Fläche, Tiefe, Typ, Kontinent, Kleiner, Seichter, Name, WS Atlantik). 999 Modi erreicht! verify: 191/191.** |
 | **450** | patch_450.py | **UX: Fortschritt-sichern-Button aus Gast-Header entfernt, stattdessen 👤-Login-Icon in Header-Iconreihe. 7 i18n-Keys (home_login_btn) in allen Sprachen.** |
 | **451** | patch_451.py | **UX-Personalisierung: Smart Playlists (5 thematische Strips: Geo, MINT, Natur, Kultur, Lifestyle), Kids-Modus Toggle (👦 in Header, filtert 14 nicht-kindgerechte Kategorien), implizite Personalisierung (Kategorie-Tracking, Empfohlen-Strip ab 10 Spielen). i18n DE/EN/PL.** |
+| **452** | patch_452.py | **Personalisierung Portion 1+2: CAT_META (audience kids/teens/adults + interests je Kategorie) als Filter-Basis. Onboarding zu 4 Schritten erweitert (Wer spielt? / Interessen-Mehrfachauswahl / Wie viel Zeit?) statt Schwierigkeits-Auswahl; speichert gq_audience/gq_interests/gq_time; ueberspringbar; i18n DE/EN/PL. eu_plates (Kennzeichen-Sammeln) auf alle Altersstufen getaggt. Noch ohne Filterwirkung (folgt). verify 191/191, validate 0 Warnings.** |
+| **453** | patch_453.py | **Querformat-Notausgang (Plan B): Auf dem 'Bitte Gerät drehen'-Screen neuer Button 'Trotzdem im Hochformat spielen' (S.ignoreLandscape) + Hinweis auf Bildschirmsperre. Loest das Festhaengen bei aktiver OS-Rotationssperre. Querformat-Pflicht (waitingForLandscape + Orientation-Overlay) respektiert das Override. Bonus: hartkodierter deutscher Dreh-Text -> t() (i18n DE/EN/PL). verify 191/191, validate 0 Warnings.** |
+| **454** | patch_454.py | **KRITISCHER FIX + Personalisierung Portion 3/4: Home-Tab rief undefinierte Symbole auf (_getKidsMode, _toggleKidsMode, KIDS_CATS, _getTotalPlays, _getTopCats, _renderPlaylistStrip, PLAYLISTS) -> Laufzeit-ReferenceError, Home crashte (von verify/node nicht erkannt, da nur Syntax). Alle Helfer definiert und mit CAT_META verdrahtet: Kinder-Modus-Toggle (KIDS_CATS aus CAT_META audience), 5 kuratierte Playlists, Für-dich-Empfehlung (top-Kategorien aus Spielhistorie ab 10 Spielen, sonst aus Onboarding-Interessen via _getInterestCats). i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
 
 ---
 

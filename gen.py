@@ -1424,7 +1424,7 @@ de:{
   help_fav:"❤️ Tippe auf das Herz, um ein Spiel als Favorit zu speichern.",
   help_search:"\u{1F50D} Über die Suche findest du jedes Spiel schnell.",
   help_cats:"Oben wischt du durch die Kategorien – tippe eine an, um ihre Spiele zu sehen.",
-  help_close:"Verstanden!",
+  help_close:"Verstanden!",kids_mode_on:"Kinder-Modus ist AN",kids_mode_off:"Kinder-Modus ist AUS",pl_foryou:"Für dich",pl_geo:"Geografie",pl_natur:"Natur & Tiere",pl_mint:"MINT & Technik",pl_pop:"Pop & Medien",pl_kultur:"Kultur & Geschichte",play_portrait:"Trotzdem im Hochformat spielen",rotate_lock_hint:"Tipp: Falls Drehen nicht klappt, ist evtl. die Bildschirmsperre (Display-Rotation) aktiv.",
   help_tour_btn:"▶️ Kurze Einführung ansehen",
   ob_help_hint:"Tipp: Oben rechts auf ❓ tippen – dort gibt es jederzeit Hilfe.",
   tour_skip:"Überspringen",tour_next:"Weiter →",tour_done:"Los geht's!",
@@ -1468,7 +1468,7 @@ de:{
   map_unavail:"Karte nicht verfügbar",map_loading:"Kartendaten werden geladen…",
   q_subway_km:"Wie lang ist das U-Bahn-Netz … (km)?",q_subway_lines:"Wie viele U-Bahn-Linien hat …?",
   ob_welcome:"Willkommen bei GeoQuest",ob_sub1:"Das Geografie-Quiz – sammle Stempel, steige in der Liga auf!",ob_difficulty:"Schwierigkeitsgrad",ob_diff_sub:"W\u00e4hle deinen Stil. \u00c4nderbar jederzeit.",
-  ob_diff_casual_desc:"Gro\u00dfe St\u00e4dte \u2022 12 Sek.",ob_diff_hc_desc:"Alle St\u00e4dte \u2022 8 Sek.",ob_back:"\u2190 Zur\u00fcck",ob_modes_title:"Spielmodi",
+  ob_diff_casual_desc:"Gro\u00dfe St\u00e4dte \u2022 12 Sek.",ob_diff_hc_desc:"Alle St\u00e4dte \u2022 8 Sek.",ob_back:"\u2190 Zur\u00fcck",ob_modes_title:"Spielmodi",pq_who:"Wer spielt?",pa_kid:"Kind",pa_teen:"Jugendlich",pa_adult:"Erwachsen",pa_family:"Familie",pq_interests:"Was interessiert dich?",pq_interests_sub:"(mehrere auswählbar)",int_geo:"Geo & Länder",int_natur:"Natur & Tiere",int_mint:"Technik & Forschen",int_pop:"Games & Medien",int_kultur:"Kultur & Geschichte",int_sport:"Sport",pq_time:"Wie viel Zeit hast du gerade?",pt_quick:"2 Min",pt_mid:"10 Min",pt_much:"Viel Zeit",
   ob_modes_sub:"19 Modi, ein Ziel: Die Welt kennenlernen.",ob_more_modes:"\u2026 und 16 weitere Modi",ob_start:"\u{1F680} Los geht's!",ob_have_account:"Ich habe bereits einen Account",ob_register:"Neu hier? Registrieren",
   home_hi:"Hallo, {name} \u{1F44B}",home_guest:"Willkommen, Gast \u{1F30D}",home_save:"\u{1F510} Fortschritt sichern",home_login_btn:"Anmelden / Registrieren",kids_mode_off:"Kids-Modus",kids_mode_on:"👦 Kids aktiv",pl_foryou:"Empfohlen für dich",pl_geo:"Geo & Karten",pl_mint:"MINT & Technik",pl_nature:"Natur & Tiere",pl_kultur:"Kultur & Wissen",pl_life:"Leben & Lifestyle",home_pvp_sub:"Echtzeit gegen einen Freund spielen",
   ob_mode1_name:"Stadt →’ Land",ob_mode1_desc:"Land zur Stadt \u00b7 Casual 1k, HC 10k, Survival 30k St\u00e4dte",ob_mode2_name:"EU-Kennzeichen",ob_mode2_desc:"Woher kommt dieses Kennzeichen?",ob_mode3_name:"U-Bahn-Netz",ob_mode3_desc:"Linien und km der Metros.",
@@ -1507,7 +1507,7 @@ en:{
   help_fav:"❤️ Tap the heart to save a game as a favourite.",
   help_search:"\u{1F50D} Use search to find any game quickly.",
   help_cats:"Swipe through the categories at the top – tap one to see its games.",
-  help_close:"Got it!",
+  help_close:"Got it!",kids_mode_on:"Kids mode is ON",kids_mode_off:"Kids mode is OFF",pl_foryou:"For you",pl_geo:"Geography",pl_natur:"Nature & Animals",pl_mint:"STEM & Tech",pl_pop:"Pop & Media",pl_kultur:"Culture & History",play_portrait:"Play in portrait anyway",rotate_lock_hint:"Tip: if rotating does not work, the screen rotation lock may be on.",
   help_tour_btn:"▶️ Watch the quick intro",
   ob_help_hint:"Tip: tap ❓ at the top right – help is available anytime.",
   tour_skip:"Skip",tour_next:"Next →",tour_done:"Let's go!",
@@ -1551,7 +1551,7 @@ en:{
   map_unavail:"Map not available",map_loading:"Loading map data…",
   q_subway_km:"How long is the metro network … (km)?",q_subway_lines:"How many metro lines does … have?",
   ob_welcome:"Welcome to GeoQuest",ob_sub1:"The geography quiz – collect stamps, climb the league!",ob_difficulty:"Difficulty",ob_diff_sub:"Choose your style. Changeable at any time.",
-  ob_diff_casual_desc:"Major cities \u2022 12 sec.",ob_diff_hc_desc:"All cities \u2022 8 sec.",ob_back:"\u2190 Back",ob_modes_title:"Game Modes",
+  ob_diff_casual_desc:"Major cities \u2022 12 sec.",ob_diff_hc_desc:"All cities \u2022 8 sec.",ob_back:"\u2190 Back",ob_modes_title:"Game Modes",pq_who:"Who is playing?",pa_kid:"Kid",pa_teen:"Teen",pa_adult:"Adult",pa_family:"Family",pq_interests:"What are you into?",pq_interests_sub:"(pick several)",int_geo:"Geo & Countries",int_natur:"Nature & Animals",int_mint:"Tech & Science",int_pop:"Games & Media",int_kultur:"Culture & History",int_sport:"Sport",pq_time:"How much time do you have?",pt_quick:"2 min",pt_mid:"10 min",pt_much:"Lots",
   ob_modes_sub:"19 modes, one goal: know the world.",ob_more_modes:"\u2026 and 16 more modes",ob_start:"\u{1F680} Let's go!",ob_have_account:"I already have an account",ob_register:"New here? Register",
   home_hi:"Hi, {name} \u{1F44B}",home_guest:"Welcome, Guest \u{1F30D}",home_save:"\u{1F510} Save progress",home_login_btn:"Login / Register",kids_mode_off:"Kids Mode",kids_mode_on:"👦 Kids active",pl_foryou:"Recommended for you",pl_geo:"Geo & Maps",pl_mint:"STEM & Tech",pl_nature:"Nature & Animals",pl_kultur:"Culture & Knowledge",pl_life:"Life & Lifestyle",home_pvp_sub:"Play in real time against a friend",
   ob_mode1_name:"City →’ Country",ob_mode1_desc:"Which country does this city belong to?",ob_mode2_name:"EU Licence Plates",ob_mode2_desc:"Where does this number plate come from?",ob_mode3_name:"Metro Networks",ob_mode3_desc:"Lines and km of metro systems.",
@@ -1590,7 +1590,7 @@ pl:{
   help_fav:"❤️ Dotknij serca, aby zapisać grę jako ulubioną.",
   help_search:"\u{1F50D} Użyj wyszukiwarki, aby szybko znaleźć dowolną grę.",
   help_cats:"Przesuwaj kategorie u góry – dotknij jednej, aby zobaczyć jej gry.",
-  help_close:"Rozumiem!",
+  help_close:"Rozumiem!",kids_mode_on:"Tryb dla dzieci WŁĄCZONY",kids_mode_off:"Tryb dla dzieci WYŁĄCZONY",pl_foryou:"Dla Ciebie",pl_geo:"Geografia",pl_natur:"Natura i zwierzęta",pl_mint:"Nauka i technika",pl_pop:"Pop i media",pl_kultur:"Kultura i historia",play_portrait:"Graj mimo to w pionie",rotate_lock_hint:"Wskazówka: jeśli obrót nie działa, może być włączona blokada orientacji.",
   help_tour_btn:"▶️ Zobacz krótkie wprowadzenie",
   ob_help_hint:"Wskazówka: dotknij ❓ u góry – pomoc jest dostępna zawsze.",
   tour_skip:"Pomiń",tour_next:"Dalej →",tour_done:"Zaczynamy!",
@@ -1634,7 +1634,7 @@ pl:{
   q_subway_km:"Jak długa jest sieć metra … (km)?",q_subway_lines:"Ile linii metra ma …?",
   hl_longer:"⬆️ Dłuższy",hl_shorter:"⬇️ Krótszy",hl_bigger:"⬆️ Większy (obszar)",hl_smaller:"⬇️ Mniejszy (obszar)",
   ob_welcome:"Witaj w GeoQuest",ob_sub1:"Quiz geograficzny – zbieraj stemple, awansuj w lidze!",ob_difficulty:"Poziom trudnoŚ›ci",ob_diff_sub:"Wybierz swój styl. ZmieŚ„ w dowolnym momencie.",
-  ob_diff_casual_desc:"Duże miasta • 12 sek.",ob_diff_hc_desc:"Wszystkie miasta • 8 sek.",ob_back:"→ Wróć",ob_modes_title:"Tryby gry",
+  ob_diff_casual_desc:"Duże miasta • 12 sek.",ob_diff_hc_desc:"Wszystkie miasta • 8 sek.",ob_back:"→ Wróć",ob_modes_title:"Tryby gry",pq_who:"Kto gra?",pa_kid:"Dziecko",pa_teen:"Nastolatek",pa_adult:"Dorosły",pa_family:"Rodzina",pq_interests:"Co cię interesuje?",pq_interests_sub:"(wybierz kilka)",int_geo:"Geo i kraje",int_natur:"Natura i zwierzęta",int_mint:"Technika i nauka",int_pop:"Gry i media",int_kultur:"Kultura i historia",int_sport:"Sport",pq_time:"Ile masz czasu?",pt_quick:"2 min",pt_mid:"10 min",pt_much:"Dużo",
   ob_modes_sub:"19 trybów, jeden cel: poznać Ś›wiat.",ob_more_modes:"… i 16 kolejnych trybów",ob_start:"\u{1F680} Zaczynamy!",ob_have_account:"Mam już konto",ob_register:"Nowy? Zarejestruj się",
   home_hi:"CzeŚ›ć, {name} \u{1F44B}",home_guest:"Witaj, GoŚ›ciu \u{1F30D}",home_save:"\u{1F510} Zapisz postęp",home_login_btn:"Zaloguj / Zarejestruj",kids_mode_off:"Tryb dzieci",kids_mode_on:"👦 Dzieci aktywny",pl_foryou:"Polecane dla Ciebie",pl_geo:"Geo i Mapy",pl_mint:"Nauka i Tech",pl_nature:"Natura i Zwierzęta",pl_kultur:"Kultura i Wiedza",pl_life:"Życie i Styl",home_pvp_sub:"Graj w czasie rzeczywistym z przyjacielem",
   ob_mode1_name:"Miasto →’ Kraj",ob_mode1_desc:"Do jakiego kraju należy to miasto?",ob_mode2_name:"Tablice UE",ob_mode2_desc:"Skń…d pochodzi ta tablica?",ob_mode3_name:"Sieci metra",ob_mode3_desc:"Linie i km metra.",
@@ -3867,6 +3867,23 @@ const MODES=[
 ];
 
 function modeTitle(m){return m&&m.t_key?t(m.t_key):m?m.title:"";}
+/* Phase: Kategorie-Metadaten fuer Alters-/Interessen-Filter (a=audience, i=interests). UI liest CAT_META[catId]; fehlt eine Kat, gilt Default all/keins. */
+const CAT_META={pure_geo:{a:["kids","teens","adults"],i:["geo"]},capitals:{a:["kids","teens","adults"],i:["geo"]},inseln:{a:["kids","teens","adults"],i:["geo"]},map_mode:{a:["kids","teens","adults"],i:["geo"]},ozeane:{a:["kids","teens","adults"],i:["geo","natur"]},nparks:{a:["kids","teens","adults"],i:["geo","natur"]},fluesse:{a:["teens","adults"],i:["geo","natur"]},gipfel:{a:["teens","adults"],i:["geo","natur"]},klima:{a:["teens","adults"],i:["geo","natur","mint"]},neighbors:{a:["teens","adults"],i:["geo"]},comparisons:{a:["teens","adults"],i:["geo"]},hl_compare:{a:["teens","adults"],i:["geo"]},airports:{a:["teens","adults"],i:["geo","alltag"]},eu_plates:{a:["kids","teens","adults"],i:["alltag","geo"]},regional:{a:["teens","adults"],i:["alltag","geo"]},tiere:{a:["kids","teens","adults"],i:["natur"]},hunde:{a:["kids","teens","adults"],i:["natur"]},pflanzen:{a:["teens","adults"],i:["natur"]},gartenbau:{a:["teens","adults"],i:["natur"]},astronomie:{a:["kids","teens","adults"],i:["mint"]},geologie:{a:["kids","teens","adults"],i:["mint","natur"]},games:{a:["kids","teens","adults"],i:["pop","mint"]},autos:{a:["kids","teens","adults"],i:["mint","alltag"]},zuege:{a:["kids","teens","adults"],i:["mint","alltag"]},robotik:{a:["teens","adults"],i:["mint"]},technologie:{a:["teens","adults"],i:["mint"]},emobilitaet:{a:["teens","adults"],i:["mint","alltag"]},medizin:{a:["teens","adults"],i:["mint"]},themeparks:{a:["kids","teens","adults"],i:["pop","alltag"]},boardgames:{a:["kids","teens","adults"],i:["pop"]},filme:{a:["teens","adults"],i:["pop"]},serien:{a:["teens","adults"],i:["pop"]},musik:{a:["teens","adults"],i:["pop"]},webkultur:{a:["teens","adults"],i:["pop"]},mythologie:{a:["kids","teens","adults"],i:["kultur"]},literatur:{a:["kids","teens","adults"],i:["kultur","pop"]},geschichte:{a:["teens","adults"],i:["kultur"]},kunst:{a:["teens","adults"],i:["kultur"]},architektur:{a:["teens","adults"],i:["kultur"]},archaeologie:{a:["teens","adults"],i:["kultur"]},sprachen:{a:["teens","adults"],i:["kultur"]},lifestyle:{a:["teens","adults"],i:["kultur","alltag"]},wirtschaft:{a:["teens","adults"],i:["alltag"]},gastronomie:{a:["teens","adults"],i:["alltag","kultur"]},sport:{a:["kids","teens","adults"],i:["sport"]},sport_wissen:{a:["teens","adults"],i:["sport"]}};
+/* === Personalisierung: Kinder-Modus, Playlists, Empfehlungen (Phase 454) === */
+const KIDS_CATS=new Set(Object.keys(CAT_META).filter(function(k){return CAT_META[k].a.indexOf('kids')>=0;}));
+const PLAYLISTS=[
+  {key:'pl_geo',icon:'\u{1F30D}',cats:['pure_geo','capitals','fluesse','inseln','gipfel','klima','ozeane','nparks','neighbors','map_mode']},
+  {key:'pl_natur',icon:'\u{1F43E}',cats:['tiere','hunde','pflanzen','gartenbau']},
+  {key:'pl_mint',icon:'\u{1F52C}',cats:['robotik','technologie','emobilitaet','astronomie','geologie','medizin','games','autos']},
+  {key:'pl_pop',icon:'\u{1F3AE}',cats:['games','filme','serien','musik','webkultur','boardgames','themeparks']},
+  {key:'pl_kultur',icon:'\u{1F3DB}',cats:['geschichte','kunst','architektur','mythologie','literatur','sprachen','archaeologie']}
+];
+function _getKidsMode(){try{return localStorage.getItem('gq_kids_mode')==='1';}catch(e){return false;}}
+function _toggleKidsMode(){try{localStorage.setItem('gq_kids_mode',_getKidsMode()?'0':'1');}catch(e){}render();}
+function _getTotalPlays(){try{return (JSON.parse(localStorage.getItem('gq_played')||'[]')).length;}catch(e){return 0;}}
+function _getTopCats(n){try{var pl=JSON.parse(localStorage.getItem('gq_played')||'[]');var c={};pl.forEach(function(mid){var m=MODES.find(function(x){return x.id===mid;});if(m&&m.group){c[m.group]=(c[m.group]||0)+1;}});return Object.keys(c).sort(function(a,b){return c[b]-c[a];}).slice(0,n||3);}catch(e){return [];}}
+function _getInterestCats(){try{var ints=JSON.parse(localStorage.getItem('gq_interests')||'[]');if(!ints.length)return [];return Object.keys(CAT_META).filter(function(k){return MODE_CATS[k]&&CAT_META[k].i.some(function(x){return ints.indexOf(x)>=0;});}).slice(0,8);}catch(e){return [];}}
+function _renderPlaylistStrip(title,icon,cats,km){var ks=(cats||[]).filter(function(k){return MODE_CATS[k]&&(!km||KIDS_CATS.has(k));});if(!ks.length)return '';var items=ks.map(function(k){var c=MODE_CATS[k];return '<button onclick="window.filterByCategory(\''+k+'\');render()" style="display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:80px;width:80px;padding:8px 5px;background:var(--bg2);border:1.5px solid var(--border);border-radius:11px;cursor:pointer;flex-shrink:0;line-height:1.15;text-align:center"><span style="font-size:1.35rem">'+c.icon+'</span><span style="font-size:.62rem;color:var(--text2);font-weight:600;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+c.label+'</span></button>';}).join('');return '<div style="padding:7px 0 3px"><div style="font-size:.72rem;font-weight:800;color:var(--text3);letter-spacing:.4px;margin:0 0 6px 2px">'+icon+' '+esc(title)+'</div><div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:5px;scrollbar-width:none">'+items+'</div></div>';}
 const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match","odd_one_out","clue_country"],cost:0},
   lifestyle:{label:"Kultur & Lifestyle",icon:"\u{1F3A8}",modes:["outline","food","brand","currency","curr_real","pop_compare","hl_b_tour","hl_b_unesco","hl_b_lang","uk_getraenke","uk_streetfood","uk_kaese","uk_suessspeisen","uk_kaffee","uk_taenze","uk_kleidung","uk_instrumente","uk_literatur","uk_wahrzeichen","uk_feste","uk_begruessung","uk_feiertage","uk_erfindungen","uk_exporte","uk_blumen","uk_entdecker","uk_sport","uk_brettspiele","uk_museen","uk_wolkenkratzer","uk_wuesten","uk_berggipfel","uk_meerengen","uk_wasserfaelle","uk_canyons","uk_surf_spots","uk_insel_match","uk_ehemalige_hauptstaedte","uk_philosophen","uk_nationalpflanzen","uk_nationaltiere","uk_religionen","uk_schriften","uk_schatten_gedreht","hl_b_coffee","uk_weinregionen","uk_kunstwerke","uk_filmsets","uk_ruinen","uk_bruecken","uk_kirchen"],cost:1000},
@@ -6462,7 +6479,7 @@ let S={
   q:null,sel:null,ok:null,pts:0,lid:null,
   lbData:[],lbLoading:false,scoreSaved:false,newUsername:"",
   sessionAnswers:[],newStamps:[],modal:null,
-  obStep:-1,obLang:"de",obDiff:"casual",
+  obStep:-1,obLang:"de",obDiff:"casual",obAud:"",obInt:[],obTime:"",
   payModal:false,mpModal:false,mp:null,
   challenge:null,challengeSeed:null,
   pwaPrompt:null,
@@ -11629,7 +11646,7 @@ function lq(){
   S.half_removed=false;S.freezeActive=false;S.airportPinDist=0;S.airportPinPts=0;
   render();
   /* P167: for landscape-required modes, defer timer until device is rotated */
-  if(_LANDSCAPE_MODES_SET.has(S.mode)&&_isPortrait()){
+  if(_LANDSCAPE_MODES_SET.has(S.mode)&&_isPortrait()&&!S.ignoreLandscape){
     S.waitingForLandscape=true;
   }else{
     S.waitingForLandscape=false;
@@ -14038,7 +14055,7 @@ function _isInStandaloneMode(){
 function updateOrientationWarning(){
   const ow=document.getElementById("gq-orient-warn");
   if(\!ow)return false;
-  const needsLandscape=_LANDSCAPE_MODES_SET.has(S.mode)&&S.ph==="playing";
+  const needsLandscape=_LANDSCAPE_MODES_SET.has(S.mode)&&S.ph==="playing"&&!S.ignoreLandscape;
   const show=_isPortrait()&&needsLandscape;
   ow.style.display=show?"flex":"none";
   const txt=ow.querySelector(".gq-ow-txt");if(txt)txt.textContent=t("rotate_device");
@@ -14181,7 +14198,7 @@ function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.can
   if(S.tourStep>0){app.innerHTML=renderTourModal(S.tourStep);return;}
   if(S.leagueEvalResult){app.innerHTML=renderLeagueEvalModal(S.leagueEvalResult);return;}
   if(S.waitingForLandscape){
-    app.innerHTML=`<div style="min-height:100vh;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem"><div style="font-size:3rem;margin-bottom:1rem">\u{1F4F1}\u27A1\u{1F5FA}</div><div style="font-size:1.1rem;font-weight:900;color:var(--text);margin-bottom:.5rem">Bitte Ger\u00e4t drehen</div><div style="font-size:.8rem;color:var(--text3);margin-bottom:1.5rem">Dieser Modus ben\u00f6tigt das Querformat</div><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';S.waitingForLandscape=false;render()">🚪 Beenden</button></div>`;
+    app.innerHTML=`<div style="min-height:100vh;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem"><div style="font-size:3rem;margin-bottom:1rem">\u{1F4F1}\u27A1\u{1F5FA}</div><div style="font-size:1.05rem;font-weight:900;color:var(--text);margin-bottom:.7rem;max-width:300px">${t("rotate_device")}</div><button class="btn-g" style="max-width:300px;margin-bottom:.4rem" onclick="S.ignoreLandscape=true;S.waitingForLandscape=false;render()">${t("play_portrait")}</button><div style="font-size:.72rem;color:var(--text3);margin-bottom:1.5rem;max-width:300px;line-height:1.4">${t("rotate_lock_hint")}</div><button class="btn-exit-global" onclick="clr();S.ph='menu';S.tab='home';S.waitingForLandscape=false;render()">🚪 Beenden</button></div>`;
     return;
   }
   if(S.lvModal){app.innerHTML=renderLVModal();return;}
@@ -17215,10 +17232,8 @@ function renderHomeTab(){
       const _km=_getKidsMode();
       const _tp=_getTotalPlays();
       let _ph='';
-      if(_tp>=10){
-        const _tc=_getTopCats(3);
-        if(_tc.length) _ph+=_renderPlaylistStrip(t('pl_foryou'),'⭐',_tc,_km);
-      }
+      var _fy=_tp>=10?_getTopCats(3):_getInterestCats();
+      if(_fy.length) _ph+=_renderPlaylistStrip(t('pl_foryou'),'⭐',_fy,_km);
       PLAYLISTS.forEach(function(pl){_ph+=_renderPlaylistStrip(t(pl.key),pl.icon,pl.cats,_km);});
       return _ph;
     })()}</div>
@@ -17644,14 +17659,16 @@ function saveHistory(entry){
 /* ONBOARDING */
 function loadOb(){try{return JSON.parse(localStorage.getItem("gq_onboarding")||"null")}catch(e){return null}}
 function finishOb(){
-  const l=S.obLang||"de",d=S.obDiff||"casual";
-  localStorage.setItem("gq_onboarding",JSON.stringify({done:true,lang:l,diff:d}));
+  const l=S.obLang||"de";const aud=S.obAud||"adults";
+  localStorage.setItem("gq_onboarding",JSON.stringify({done:true,lang:l,diff:"casual",aud:aud}));
   localStorage.setItem("gq_lang",l);
-  S.diff=d;S.obStep=0;render();
+  try{localStorage.setItem("gq_audience",aud);localStorage.setItem("gq_interests",JSON.stringify(S.obInt||[]));localStorage.setItem("gq_time",S.obTime||"mid");}catch(_e){}
+  S.diff="casual";S.obStep=0;render();
 }
 const OB_LANGS=[["de","\u{1F1E9}\u{1F1EA}","Deutsch"],["en","\u{1F1EC}\u{1F1E7}","English"],["fr","\u{1F1EB}\u{1F1F7}","Fran\u00e7ais"],["es","\u{1F1EA}\u{1F1F8}","Espa\u00f1ol"],["it","\u{1F1EE}\u{1F1F9}","Italiano"],["pl","\u{1F1F5}\u{1F1F1}","Polski"]];
 function renderOnboarding(step){
-  const dots=[0,1,2].map(i=>`<div class="ob-dot ${i===step?"active":""}"></div>`).join("");
+  const dots=[0,1,2,3].map(i=>`<div class="ob-dot ${i===step?"active":""}"></div>`).join("");
+  const _oT=(sel,oc,em,lb)=>`<div class="ob-lang ${sel?'sel':''}" onclick="${oc}" style="padding:.85rem .5rem;text-align:center"><div style="font-size:1.5rem;margin-bottom:3px">${em}</div><div style="font-weight:800;font-size:.8rem;line-height:1.15">${lb}</div></div>`;
   if(step===0)return`<div class="ob-overlay"><div class="ob-card">
     <div class="ob-emoji">\u{1F30D}</div>
     <div class="ob-title">${t("ob_welcome")}</div>
@@ -17665,32 +17682,43 @@ function renderOnboarding(step){
     <button class="btn-g" style="margin-top:.3rem;margin-bottom:0;font-size:.82rem;color:var(--text3);background:transparent;border:none;text-decoration:underline" onclick="const ob=loadOb();if(!ob)localStorage.setItem('gq_onboarding',JSON.stringify({done:true,lang:'de',diff:'casual'}));S.obStep=0;S.tab='profil';S.authMode='login';render()">${t("ob_have_account")}</button>
     <button class="btn-g" style="margin-top:.2rem;margin-bottom:0;font-size:.82rem;color:var(--text3);background:transparent;border:none;text-decoration:underline" onclick="const ob=loadOb();if(!ob)localStorage.setItem('gq_onboarding',JSON.stringify({done:true,lang:'de',diff:'casual'}));S.obStep=0;S.tab='profil';S.authMode='register';render()">${t("ob_register")}</button>
   </div></div>`;
-  if(step===1)return`<div class="ob-overlay"><div class="ob-card">
-    <div class="ob-emoji">\u{1F9E0}</div>
-    <div class="ob-title">${t("ob_difficulty")}</div>
-    <div class="ob-sub">${t("ob_diff_sub")}</div>
+  if(step===1){const A=S.obAud||"";return`<div class="ob-overlay"><div class="ob-card">
+    <div class="ob-emoji">\u{1F44B}</div>
+    <div class="ob-title">${t("pq_who")}</div>
     <div class="ob-dots">${dots}</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1rem">
-      <div class="ob-lang ${S.obDiff==="casual"?"sel":""}" onclick="S.obDiff='casual';render()" style="padding:.9rem"><div style="font-size:1.6rem;margin-bottom:4px">\u{1F7E2}</div><div style="font-weight:900;font-size:.88rem">Casual</div><div style="color:var(--text3);font-size:.7rem;margin-top:3px">${t("ob_diff_casual_desc")}</div></div>
-      <div class="ob-lang ${S.obDiff==="hardcore"?"sel":""}" onclick="S.obDiff='hardcore';render()" style="padding:.9rem"><div style="font-size:1.6rem;margin-bottom:4px">\u{1F525}</div><div style="font-weight:900;font-size:.88rem">Hardcore</div><div style="color:var(--text3);font-size:.7rem;margin-top:3px">${t("ob_diff_hc_desc")}</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1rem 0">
+      ${_oT(A==="kids","S.obAud='kids';render()","\u{1F9D2}",t("pa_kid"))}
+      ${_oT(A==="teens","S.obAud='teens';render()","\u{1F9D1}",t("pa_teen"))}
+      ${_oT(A==="adults","S.obAud='adults';render()","\u{1F464}",t("pa_adult"))}
+      ${_oT(A==="family","S.obAud='family';render()","\u{1F46A}",t("pa_family"))}
     </div>
     <button class="btn-p" onclick="S.obStep=2;render()">${t("btn_next")}</button>
-    <button class="btn-g" style="margin-bottom:0" onclick="S.obStep=0;render()">${t("ob_back")}</button>
-  </div></div>`;
-  return`<div class="ob-overlay"><div class="ob-card">
-    <div class="ob-emoji">\u{1F9ED}</div>
-    <div class="ob-title">${t("ob_modes_title")}</div>
-    <div class="ob-sub">${t("ob_modes_sub").replace(/\d[\d. ,]*/,MODES.length)}</div>
+    <button class="btn-g" style="margin-bottom:.2rem" onclick="S.obStep=0;render()">${t("ob_back")}</button>
+    <button class="btn-g" style="margin-bottom:0;font-size:.8rem;color:var(--text3);background:transparent;border:none;text-decoration:underline" onclick="finishOb()">${t("tour_skip")}</button>
+  </div></div>`;}
+  if(step===2){const I=S.obInt||[];const _iT=(k,em,lb)=>_oT(I.indexOf(k)>=0,"S.obInt=(S.obInt||[]).indexOf('"+k+"')>=0?(S.obInt||[]).filter(function(x){return x!=='"+k+"';}):(S.obInt||[]).concat(['"+k+"']);render()",em,lb);return`<div class="ob-overlay"><div class="ob-card">
+    <div class="ob-emoji">✨</div>
+    <div class="ob-title">${t("pq_interests")}</div>
+    <div class="ob-sub">${t("pq_interests_sub")}</div>
     <div class="ob-dots">${dots}</div>
-    <div style="margin-bottom:1rem">
-      <div class="ob-mode-row"><div class="ob-mode-icon">\u{1F3D9}</div><div><div style="color:var(--text);font-weight:700;font-size:.83rem">${t("ob_mode1_name")}</div><div class="ob-mode-desc">${t("ob_mode1_desc")}</div></div></div>
-      <div class="ob-mode-row"><div class="ob-mode-icon">\u{1F697}</div><div><div style="color:var(--text);font-weight:700;font-size:.83rem">${t("ob_mode2_name")}</div><div class="ob-mode-desc">${t("ob_mode2_desc")}</div></div></div>
-      <div class="ob-mode-row"><div class="ob-mode-icon">\u{1F687}</div><div><div style="color:var(--text);font-weight:700;font-size:.83rem">${t("ob_mode3_name")}</div><div class="ob-mode-desc">${t("ob_mode3_desc")}</div></div></div>
-      <div style="color:var(--text3);font-size:.7rem;text-align:center;margin-top:4px">${t("ob_more_modes").replace(/\d[\d. ,]*/,Math.max(0,MODES.length-3))}</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:1rem 0">
+      ${_iT("geo","\u{1F30D}",t("int_geo"))}${_iT("natur","\u{1F43E}",t("int_natur"))}${_iT("mint","\u{1F52C}",t("int_mint"))}${_iT("pop","\u{1F3AE}",t("int_pop"))}${_iT("kultur","\u{1F3DB}️",t("int_kultur"))}${_iT("sport","⚽",t("int_sport"))}
     </div>
-    <div style="background:var(--bg3);border-radius:10px;padding:.55rem .7rem;margin-bottom:.9rem;font-size:.76rem;color:var(--text2);line-height:1.4">${t("ob_help_hint")}</div>
-    <button class="btn-p" onclick="finishOb()">${t("ob_start")}</button>
+    <button class="btn-p" onclick="S.obStep=3;render()">${t("btn_next")}</button>
     <button class="btn-g" style="margin-bottom:0" onclick="S.obStep=1;render()">${t("ob_back")}</button>
+  </div></div>`;}
+  const T=S.obTime||"";return`<div class="ob-overlay"><div class="ob-card">
+    <div class="ob-emoji">⏱️</div>
+    <div class="ob-title">${t("pq_time")}</div>
+    <div class="ob-dots">${dots}</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin:1rem 0">
+      ${_oT(T==="quick","S.obTime='quick';render()","⚡",t("pt_quick"))}
+      ${_oT(T==="mid","S.obTime='mid';render()","☕",t("pt_mid"))}
+      ${_oT(T==="much","S.obTime='much';render()","\u{1F3AF}",t("pt_much"))}
+    </div>
+    <div style="background:var(--bg3);border-radius:10px;padding:.55rem .7rem;margin-bottom:.9rem;font-size:.74rem;color:var(--text2);line-height:1.4">${t("ob_help_hint")}</div>
+    <button class="btn-p" onclick="finishOb()">${t("ob_start")}</button>
+    <button class="btn-g" style="margin-bottom:0" onclick="S.obStep=2;render()">${t("ob_back")}</button>
   </div></div>`;
 }
 

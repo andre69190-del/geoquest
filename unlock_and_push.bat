@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 451. UX-Personalisierung: Smart Playlists (5 thematische Strips: Geo, MINT, Natur, Kultur, Lifestyle), Kids-Modus Toggle (👦 in Header, filtert 14 nicht-kindgerechte Kategorien), implizite Personalisierung (Kategorie-Tracking, Empfohlen-Strip ab 10 Spielen). i18n DE/EN/PL.. verify: 191/191."
+git commit -m "Content: Phase 454. KRITISCHER FIX + Personalisierung Portion 3/4: Home-Tab rief undefinierte Symbole auf (_getKidsMode, _toggleKidsMode, KIDS_CATS, _getTotalPlays, _getTopCats, _renderPlaylistStrip, PLAYLISTS) -> Laufzeit-ReferenceError, Home crashte (von verify/node nicht erkannt, da nur Syntax). Alle Helfer definiert und mit CAT_META verdrahtet: Kinder-Modus-Toggle (KIDS_CATS aus CAT_META audience), 5 kuratierte Playlists, Für-dich-Empfehlung (top-Kategorien aus Spielhistorie ab 10 Spielen, sonst aus Onboarding-Interessen via _getInterestCats). i18n DE/EN/PL. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
