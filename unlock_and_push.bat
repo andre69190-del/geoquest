@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 450. UX: Fortschritt-sichern-Button aus Gast-Header entfernt, stattdessen 👤-Login-Icon in Header-Iconreihe. 7 i18n-Keys (home_login_btn) in allen Sprachen.. verify: 191/191."
+git commit -m "Content: Phase 451. UX-Personalisierung: Smart Playlists (5 thematische Strips: Geo, MINT, Natur, Kultur, Lifestyle), Kids-Modus Toggle (👦 in Header, filtert 14 nicht-kindgerechte Kategorien), implizite Personalisierung (Kategorie-Tracking, Empfohlen-Strip ab 10 Spielen). i18n DE/EN/PL.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

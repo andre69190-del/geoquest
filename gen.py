@@ -1470,7 +1470,7 @@ de:{
   ob_welcome:"Willkommen bei GeoQuest",ob_sub1:"Das Geografie-Quiz – sammle Stempel, steige in der Liga auf!",ob_difficulty:"Schwierigkeitsgrad",ob_diff_sub:"W\u00e4hle deinen Stil. \u00c4nderbar jederzeit.",
   ob_diff_casual_desc:"Gro\u00dfe St\u00e4dte \u2022 12 Sek.",ob_diff_hc_desc:"Alle St\u00e4dte \u2022 8 Sek.",ob_back:"\u2190 Zur\u00fcck",ob_modes_title:"Spielmodi",
   ob_modes_sub:"19 Modi, ein Ziel: Die Welt kennenlernen.",ob_more_modes:"\u2026 und 16 weitere Modi",ob_start:"\u{1F680} Los geht's!",ob_have_account:"Ich habe bereits einen Account",ob_register:"Neu hier? Registrieren",
-  home_hi:"Hallo, {name} \u{1F44B}",home_guest:"Willkommen, Gast \u{1F30D}",home_save:"\u{1F510} Fortschritt sichern",home_login_btn:"Anmelden / Registrieren",home_pvp_sub:"Echtzeit gegen einen Freund spielen",
+  home_hi:"Hallo, {name} \u{1F44B}",home_guest:"Willkommen, Gast \u{1F30D}",home_save:"\u{1F510} Fortschritt sichern",home_login_btn:"Anmelden / Registrieren",kids_mode_off:"Kids-Modus",kids_mode_on:"👦 Kids aktiv",pl_foryou:"Empfohlen für dich",pl_geo:"Geo & Karten",pl_mint:"MINT & Technik",pl_nature:"Natur & Tiere",pl_kultur:"Kultur & Wissen",pl_life:"Leben & Lifestyle",home_pvp_sub:"Echtzeit gegen einen Freund spielen",
   ob_mode1_name:"Stadt →’ Land",ob_mode1_desc:"Land zur Stadt \u00b7 Casual 1k, HC 10k, Survival 30k St\u00e4dte",ob_mode2_name:"EU-Kennzeichen",ob_mode2_desc:"Woher kommt dieses Kennzeichen?",ob_mode3_name:"U-Bahn-Netz",ob_mode3_desc:"Linien und km der Metros.",
   language_select:"SPRACHE",
   badge_beta:"Beta",beta_warning:"Spielbar, aber es k\u00f6nnen noch Fehler auftreten.",
@@ -1553,7 +1553,7 @@ en:{
   ob_welcome:"Welcome to GeoQuest",ob_sub1:"The geography quiz – collect stamps, climb the league!",ob_difficulty:"Difficulty",ob_diff_sub:"Choose your style. Changeable at any time.",
   ob_diff_casual_desc:"Major cities \u2022 12 sec.",ob_diff_hc_desc:"All cities \u2022 8 sec.",ob_back:"\u2190 Back",ob_modes_title:"Game Modes",
   ob_modes_sub:"19 modes, one goal: know the world.",ob_more_modes:"\u2026 and 16 more modes",ob_start:"\u{1F680} Let's go!",ob_have_account:"I already have an account",ob_register:"New here? Register",
-  home_hi:"Hi, {name} \u{1F44B}",home_guest:"Welcome, Guest \u{1F30D}",home_save:"\u{1F510} Save progress",home_login_btn:"Login / Register",home_pvp_sub:"Play in real time against a friend",
+  home_hi:"Hi, {name} \u{1F44B}",home_guest:"Welcome, Guest \u{1F30D}",home_save:"\u{1F510} Save progress",home_login_btn:"Login / Register",kids_mode_off:"Kids Mode",kids_mode_on:"👦 Kids active",pl_foryou:"Recommended for you",pl_geo:"Geo & Maps",pl_mint:"STEM & Tech",pl_nature:"Nature & Animals",pl_kultur:"Culture & Knowledge",pl_life:"Life & Lifestyle",home_pvp_sub:"Play in real time against a friend",
   ob_mode1_name:"City →’ Country",ob_mode1_desc:"Which country does this city belong to?",ob_mode2_name:"EU Licence Plates",ob_mode2_desc:"Where does this number plate come from?",ob_mode3_name:"Metro Networks",ob_mode3_desc:"Lines and km of metro systems.",
   language_select:"LANGUAGE",
   badge_beta:"Beta",beta_warning:"Playable, but may still contain bugs.",
@@ -1636,7 +1636,7 @@ pl:{
   ob_welcome:"Witaj w GeoQuest",ob_sub1:"Quiz geograficzny – zbieraj stemple, awansuj w lidze!",ob_difficulty:"Poziom trudnoŚ›ci",ob_diff_sub:"Wybierz swój styl. ZmieŚ„ w dowolnym momencie.",
   ob_diff_casual_desc:"Duże miasta • 12 sek.",ob_diff_hc_desc:"Wszystkie miasta • 8 sek.",ob_back:"→ Wróć",ob_modes_title:"Tryby gry",
   ob_modes_sub:"19 trybów, jeden cel: poznać Ś›wiat.",ob_more_modes:"… i 16 kolejnych trybów",ob_start:"\u{1F680} Zaczynamy!",ob_have_account:"Mam już konto",ob_register:"Nowy? Zarejestruj się",
-  home_hi:"CzeŚ›ć, {name} \u{1F44B}",home_guest:"Witaj, GoŚ›ciu \u{1F30D}",home_save:"\u{1F510} Zapisz postęp",home_login_btn:"Zaloguj / Zarejestruj",home_pvp_sub:"Graj w czasie rzeczywistym z przyjacielem",
+  home_hi:"CzeŚ›ć, {name} \u{1F44B}",home_guest:"Witaj, GoŚ›ciu \u{1F30D}",home_save:"\u{1F510} Zapisz postęp",home_login_btn:"Zaloguj / Zarejestruj",kids_mode_off:"Tryb dzieci",kids_mode_on:"👦 Dzieci aktywny",pl_foryou:"Polecane dla Ciebie",pl_geo:"Geo i Mapy",pl_mint:"Nauka i Tech",pl_nature:"Natura i Zwierzęta",pl_kultur:"Kultura i Wiedza",pl_life:"Życie i Styl",home_pvp_sub:"Graj w czasie rzeczywistym z przyjacielem",
   ob_mode1_name:"Miasto →’ Kraj",ob_mode1_desc:"Do jakiego kraju należy to miasto?",ob_mode2_name:"Tablice UE",ob_mode2_desc:"Skń…d pochodzi ta tablica?",ob_mode3_name:"Sieci metra",ob_mode3_desc:"Linie i km metra.",
   language_select:"Jń˜ZYK",
   badge_beta:"Beta",beta_warning:"Grywalny, ale mogń… wystń…pić błędy.",
@@ -11349,6 +11349,7 @@ function _trackPlayedMode(modeId){
     if(recent.length>5)recent=recent.slice(0,5);
     localStorage.setItem('gq_recent',JSON.stringify(recent));
   }catch(_e){}
+  try{var _mo=MODES.find(function(x){return x.id===modeId;});if(_mo&&_mo.group)_trackCatPlay(_mo.group);}catch(_e){}
 }
 function _exitToMenu(){
   /* Gruppe + Mode speichern BEVOR clr() S.mode löscht */
@@ -17063,7 +17064,8 @@ function closeGameInfo(){
   if(el)el.remove();
 }
 function renderHomeTab(){
-  const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","zuege","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","emobilitaet","archaeologie","astronomie","geologie","sport_wissen"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));return fixed.concat(extra);})();
+  const _kidsMode=_getKidsMode();
+  const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","zuege","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","emobilitaet","archaeologie","astronomie","geologie","sport_wissen"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));const all=fixed.concat(extra);return _kidsMode?all.filter(k=>KIDS_CATS.has(k)):all;})();
 
 
   /* Phase 414: Tab-Ansicht */
@@ -17174,6 +17176,7 @@ function renderHomeTab(){
         <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
           <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
+          <button onclick="_toggleKidsMode()" title="${_getKidsMode()?t('kids_mode_on'):t('kids_mode_off')}" aria-label="Kids Mode" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:${_getKidsMode()?'rgba(16,185,129,.2)':'var(--bg2)'};color:${_getKidsMode()?'#10b981':'var(--text2,#94a3b8)'};border:1px solid ${_getKidsMode()?'#10b981':'var(--border,#334155)'};font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👦</button>
           <div style="display:flex;align-items:center;gap:5px;background:var(--bg2);border-radius:20px;padding:.3rem .75rem;font-size:.82rem;font-weight:700;color:#f59e0b;border:1px solid rgba(245,158,11,.25);white-space:nowrap">🪙 ${_gc}</div>
         </div>
       </div>`
@@ -17183,6 +17186,7 @@ function renderHomeTab(){
           <button onclick="S.tab='profil';render()" title="${t('home_login_btn')}" aria-label="${t('home_login_btn')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👤</button>
           <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
           <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
+          <button onclick="_toggleKidsMode()" title="${_getKidsMode()?t('kids_mode_on'):t('kids_mode_off')}" aria-label="Kids Mode" style="width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:${_getKidsMode()?'rgba(16,185,129,.2)':'var(--bg2)'};color:${_getKidsMode()?'#10b981':'var(--text2,#94a3b8)'};border:1px solid ${_getKidsMode()?'#10b981':'var(--border,#334155)'};font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👦</button>
         </div>
       </div>`;
   const _homeHTML=`${_hdr}${renderDailyHero()}
@@ -17207,6 +17211,17 @@ function renderHomeTab(){
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>
     </div>
     <div id="gq-recent-bar" style="padding:0 15px 0"></div>
+    <div id="gq-playlists">${(()=>{
+      const _km=_getKidsMode();
+      const _tp=_getTotalPlays();
+      let _ph='';
+      if(_tp>=10){
+        const _tc=_getTopCats(3);
+        if(_tc.length) _ph+=_renderPlaylistStrip(t('pl_foryou'),'⭐',_tc,_km);
+      }
+      PLAYLISTS.forEach(function(pl){_ph+=_renderPlaylistStrip(t(pl.key),pl.icon,pl.cats,_km);});
+      return _ph;
+    })()}</div>
     ${_tabNavHtml}<div id="mainGamesGrid" class="accordion-grid${_tabsModeClass}" style="padding:0 15px">${_accordionHTML}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><span style="font-size:.65rem;color:var(--text3);font-weight:700;letter-spacing:.8px">SCHWIERIGKEIT</span><span title="Casual: Entspannt, kein Zeitlimit, unendlich Leben&#10;Hardcore: Kein Zeitlimit, 3 Leben (Game Over nach 3 Fehlern)&#10;Survival: 8 Sek. pro Frage, 3 Leben" style="font-size:.72rem;cursor:help;color:var(--text3)">ℹ️</span></div>
     <div class="diff-toggle">
