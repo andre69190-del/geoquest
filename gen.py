@@ -1424,7 +1424,7 @@ de:{
   help_fav:"❤️ Tippe auf das Herz, um ein Spiel als Favorit zu speichern.",
   help_search:"\u{1F50D} Über die Suche findest du jedes Spiel schnell.",
   help_cats:"Oben wischt du durch die Kategorien – tippe eine an, um ihre Spiele zu sehen.",
-  help_close:"Verstanden!",family_duel:"Familienduell (Kind vs. Erwachsen)",travel_setting:"Unterwegs-Vorschläge",travel_title:"Unterwegs? Sammle, was du siehst!",travel_plates:"Kennzeichen",travel_trains:"Waggons",stickers_title:"🏅 Meine Sticker",stickers_sub:"Du hast {n} von {t} Kategorien freigespielt — sammle alle!",kids_mode_on:"Kinder-Modus ist AN",kids_mode_off:"Kinder-Modus ist AUS",pl_foryou:"Für dich",pl_geo:"Geografie",pl_natur:"Natur & Tiere",pl_mint:"MINT & Technik",pl_pop:"Pop & Medien",pl_kultur:"Kultur & Geschichte",play_portrait:"Trotzdem im Hochformat spielen",rotate_lock_hint:"Tipp: Falls Drehen nicht klappt, ist evtl. die Bildschirmsperre (Display-Rotation) aktiv.",
+  help_close:"Verstanden!",pin_setting:"Eltern-PIN (Kinder-Modus sichern)",pin_set_title:"Eltern-PIN setzen (4 Ziffern)",pin_check_title:"PIN eingeben zum Beenden",pin_wrong:"Falscher PIN",pin_ok:"OK",pin_remove:"PIN entfernen",kids_grade_label:"Kind-Alter (Klassenstufe)",kids_grade_young:"6–8 J. (Kl. 1–2)",kids_grade_older:"8–10 J. (Kl. 3–4)",family_duel:"Familienduell (Kind vs. Erwachsen)",travel_setting:"Unterwegs-Vorschläge",travel_title:"Unterwegs? Sammle, was du siehst!",travel_plates:"Kennzeichen",travel_trains:"Waggons",stickers_title:"🏅 Meine Sticker",stickers_sub:"Du hast {n} von {t} Kategorien freigespielt — sammle alle!",kids_mode_on:"Kinder-Modus ist AN",kids_mode_off:"Kinder-Modus ist AUS",pl_foryou:"Für dich",pl_geo:"Geografie",pl_natur:"Natur & Tiere",pl_mint:"MINT & Technik",pl_pop:"Pop & Medien",pl_kultur:"Kultur & Geschichte",play_portrait:"Trotzdem im Hochformat spielen",rotate_lock_hint:"Tipp: Falls Drehen nicht klappt, ist evtl. die Bildschirmsperre (Display-Rotation) aktiv.",
   help_tour_btn:"▶️ Kurze Einführung ansehen",
   ob_help_hint:"Tipp: Oben rechts auf ❓ tippen – dort gibt es jederzeit Hilfe.",
   tour_skip:"Überspringen",tour_next:"Weiter →",tour_done:"Los geht's!",
@@ -1507,7 +1507,7 @@ en:{
   help_fav:"❤️ Tap the heart to save a game as a favourite.",
   help_search:"\u{1F50D} Use search to find any game quickly.",
   help_cats:"Swipe through the categories at the top – tap one to see its games.",
-  help_close:"Got it!",family_duel:"Family duel (kid vs. adult)",travel_setting:"On-the-go tips",travel_title:"On the move? Collect what you see!",travel_plates:"Plates",travel_trains:"Wagons",stickers_title:"🏅 My stickers",stickers_sub:"You unlocked {n} of {t} categories — collect them all!",kids_mode_on:"Kids mode is ON",kids_mode_off:"Kids mode is OFF",pl_foryou:"For you",pl_geo:"Geography",pl_natur:"Nature & Animals",pl_mint:"STEM & Tech",pl_pop:"Pop & Media",pl_kultur:"Culture & History",play_portrait:"Play in portrait anyway",rotate_lock_hint:"Tip: if rotating does not work, the screen rotation lock may be on.",
+  help_close:"Got it!",pin_setting:"Parent PIN (lock kids mode)",pin_set_title:"Set parent PIN (4 digits)",pin_check_title:"Enter PIN to exit",pin_wrong:"Wrong PIN",pin_ok:"OK",pin_remove:"Remove PIN",kids_grade_label:"Child age (grade)",kids_grade_young:"6–8 (gr. 1–2)",kids_grade_older:"8–10 (gr. 3–4)",family_duel:"Family duel (kid vs. adult)",travel_setting:"On-the-go tips",travel_title:"On the move? Collect what you see!",travel_plates:"Plates",travel_trains:"Wagons",stickers_title:"🏅 My stickers",stickers_sub:"You unlocked {n} of {t} categories — collect them all!",kids_mode_on:"Kids mode is ON",kids_mode_off:"Kids mode is OFF",pl_foryou:"For you",pl_geo:"Geography",pl_natur:"Nature & Animals",pl_mint:"STEM & Tech",pl_pop:"Pop & Media",pl_kultur:"Culture & History",play_portrait:"Play in portrait anyway",rotate_lock_hint:"Tip: if rotating does not work, the screen rotation lock may be on.",
   help_tour_btn:"▶️ Watch the quick intro",
   ob_help_hint:"Tip: tap ❓ at the top right – help is available anytime.",
   tour_skip:"Skip",tour_next:"Next →",tour_done:"Let's go!",
@@ -1590,7 +1590,7 @@ pl:{
   help_fav:"❤️ Dotknij serca, aby zapisać grę jako ulubioną.",
   help_search:"\u{1F50D} Użyj wyszukiwarki, aby szybko znaleźć dowolną grę.",
   help_cats:"Przesuwaj kategorie u góry – dotknij jednej, aby zobaczyć jej gry.",
-  help_close:"Rozumiem!",family_duel:"Pojedynek rodzinny (dziecko vs. dorosły)",travel_setting:"Podpowiedzi w podróży",travel_title:"W drodze? Zbieraj, co widzisz!",travel_plates:"Tablice",travel_trains:"Wagony",stickers_title:"🏅 Moje naklejki",stickers_sub:"Odblokowałeś {n} z {t} kategorii — zbierz wszystkie!",kids_mode_on:"Tryb dla dzieci WŁĄCZONY",kids_mode_off:"Tryb dla dzieci WYŁĄCZONY",pl_foryou:"Dla Ciebie",pl_geo:"Geografia",pl_natur:"Natura i zwierzęta",pl_mint:"Nauka i technika",pl_pop:"Pop i media",pl_kultur:"Kultura i historia",play_portrait:"Graj mimo to w pionie",rotate_lock_hint:"Wskazówka: jeśli obrót nie działa, może być włączona blokada orientacji.",
+  help_close:"Rozumiem!",pin_setting:"PIN rodzica (blokada trybu dzieci)",pin_set_title:"Ustaw PIN rodzica (4 cyfry)",pin_check_title:"Wpisz PIN, aby wyjść",pin_wrong:"Błędny PIN",pin_ok:"OK",pin_remove:"Usuń PIN",kids_grade_label:"Wiek dziecka (klasa)",kids_grade_young:"6–8 (kl. 1–2)",kids_grade_older:"8–10 (kl. 3–4)",family_duel:"Pojedynek rodzinny (dziecko vs. dorosły)",travel_setting:"Podpowiedzi w podróży",travel_title:"W drodze? Zbieraj, co widzisz!",travel_plates:"Tablice",travel_trains:"Wagony",stickers_title:"🏅 Moje naklejki",stickers_sub:"Odblokowałeś {n} z {t} kategorii — zbierz wszystkie!",kids_mode_on:"Tryb dla dzieci WŁĄCZONY",kids_mode_off:"Tryb dla dzieci WYŁĄCZONY",pl_foryou:"Dla Ciebie",pl_geo:"Geografia",pl_natur:"Natura i zwierzęta",pl_mint:"Nauka i technika",pl_pop:"Pop i media",pl_kultur:"Kultura i historia",play_portrait:"Graj mimo to w pionie",rotate_lock_hint:"Wskazówka: jeśli obrót nie działa, może być włączona blokada orientacji.",
   help_tour_btn:"▶️ Zobacz krótkie wprowadzenie",
   ob_help_hint:"Wskazówka: dotknij ❓ u góry – pomoc jest dostępna zawsze.",
   tour_skip:"Pomiń",tour_next:"Dalej →",tour_done:"Zaczynamy!",
@@ -3879,12 +3879,17 @@ const PLAYLISTS=[
   {key:'pl_kultur',icon:'\u{1F3DB}',cats:['geschichte','kunst','architektur','mythologie','literatur','sprachen','archaeologie']}
 ];
 function _getKidsMode(){try{return localStorage.getItem('gq_kids_mode')==='1';}catch(e){return false;}}
-function _toggleKidsMode(){try{localStorage.setItem('gq_kids_mode',_getKidsMode()?'0':'1');}catch(e){}render();}
+function _hasPin(){try{return !!localStorage.getItem('gq_kids_pin');}catch(e){return false;}}
+function _toggleKidsMode(){var on=_getKidsMode();if(on){var pin='';try{pin=localStorage.getItem('gq_kids_pin')||'';}catch(e){}if(pin){S.pinMode='check';S.pinErr=false;S.pinModal=true;render();return;}}try{localStorage.setItem('gq_kids_mode',on?'0':'1');}catch(e){}render();}
+function _pinSubmit(){var el=document.getElementById('gq-pin');var v=el?el.value:'';if(S.pinMode==='set'){if(/^\d{4}$/.test(v)){try{localStorage.setItem('gq_kids_pin',v);}catch(e){}S.pinModal=false;S.pinErr=false;render();}else{S.pinErr=true;render();}return;}var pin='';try{pin=localStorage.getItem('gq_kids_pin')||'';}catch(e){}if(v===pin){try{localStorage.setItem('gq_kids_mode','0');}catch(e){}S.pinModal=false;S.pinErr=false;render();}else{S.pinErr=true;render();}}
+function _pinRemove(){try{localStorage.removeItem('gq_kids_pin');}catch(e){}S.pinModal=false;render();}
+function renderPinModal(){var isSet=S.pinMode==='set';return '<div class="modal-overlay" onclick="if(event.target===this){S.pinModal=false;render()}"><div class="modal-box" style="max-width:300px;text-align:center"><div style="font-size:1.05rem;font-weight:900;margin-bottom:.6rem">\u{1F512} '+t(isSet?'pin_set_title':'pin_check_title')+'</div><input id="gq-pin" type="password" inputmode="numeric" maxlength="4" autocomplete="off" style="width:130px;text-align:center;font-size:1.5rem;letter-spacing:.4rem;padding:.5rem;border:2px solid var(--border);border-radius:10px;background:var(--bg3);color:var(--text);margin-bottom:.5rem"/>'+(S.pinErr?'<div style="color:#ef4444;font-size:.8rem;margin-bottom:.5rem">'+t('pin_wrong')+'</div>':'')+'<button onclick="_pinSubmit()" class="btn-p" style="margin-bottom:.4rem">'+t('pin_ok')+'</button>'+((isSet&&_hasPin())?'<button onclick="_pinRemove()" class="btn-g" style="margin-bottom:.4rem">'+t('pin_remove')+'</button>':'')+'<button onclick="S.pinModal=false;render()" class="btn-g" style="margin-bottom:0;background:transparent">'+t('help_close')+'</button></div></div>';}
 function _getTotalPlays(){try{return (JSON.parse(localStorage.getItem('gq_played')||'[]')).length;}catch(e){return 0;}}
 function _getTopCats(n){try{var pl=JSON.parse(localStorage.getItem('gq_played')||'[]');var c={};pl.forEach(function(mid){var m=MODES.find(function(x){return x.id===mid;});if(m&&m.group){c[m.group]=(c[m.group]||0)+1;}});return Object.keys(c).sort(function(a,b){return c[b]-c[a];}).slice(0,n||3);}catch(e){return [];}}
 function _getInterestCats(){try{var ints=JSON.parse(localStorage.getItem('gq_interests')||'[]');if(!ints.length)return [];return Object.keys(CAT_META).filter(function(k){return MODE_CATS[k]&&CAT_META[k].i.some(function(x){return ints.indexOf(x)>=0;});}).slice(0,8);}catch(e){return [];}}
 function _modeLevel(m){if(!m)return 2;var id=(m.id||'');var txt=(id+' '+(m.title||'')+' '+(m.prompt||'')).toLowerCase();var HARD=['metacritic','metakritik','imdb','pegi','hubraum','ccm','verbrauch','wendekreis','zuladung','drehmoment','bgg','bewertung','dichte','niederschlag','wirkstoff','megalith','versicherung','streams','umsatz','rendite','marktkapital','exoplanet','lichtjahr','magnitude','schwerkraft','fundtiefe','oscars','grammys','tonträger','concurrent','sequel','downloads'];var lvl=2;if(id.indexOf('ws_')===0||id.indexOf('_ws_')>=0)lvl=3;else if(id.indexOf('match')>=0||id.indexOf('_mc')>=0||id.indexOf('timeline')>=0)lvl=1;else if(id.indexOf('hl_')===0||id.indexOf('_hl_')>=0)lvl=2;for(var i=0;i<HARD.length;i++){if(txt.indexOf(HARD[i])>=0){lvl=3;break;}}var HID=['_bj','baujahr','_release','peak_year','erscheinungsjahr','reisezeit','breitengrad','_dekade'];for(var j=0;j<HID.length;j++){if(id.indexOf(HID[j])>=0){lvl=3;break;}}return lvl;}
-function _kidHidden(m){return _getKidsMode()&&_modeLevel(m)>=3;}
+function _kidLevelMax(){try{return localStorage.getItem('gq_kids_grade')==='1'?1:2;}catch(e){return 2;}}
+function _kidHidden(m){return _getKidsMode()&&_modeLevel(m)>_kidLevelMax();}
 var _travelWatching=false;
 function _initTravelHint(){
   if(_travelWatching)return;
@@ -6520,6 +6525,9 @@ let S={
   tourStep:0,
   stickerModal:false,
   travelHint:false,
+  pinModal:false,
+  pinMode:"",
+  pinErr:false,
   convModal:false,
   collectedPlates:loadCollectedPlates(),
   ligaData:[],ligaLoading:false,leagueEvalResult:null,
@@ -14276,7 +14284,7 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="album"?renderCollectionScreen():""}
       ${S.tab==="stats"?renderStatsTab():""}
       ${S.tab==="admin"?renderAdminTab():""}
-      ${S.settingsModal?renderSettingsModal():""}${S.helpModal?renderHelpModal():""}${S.stickerModal?renderStickerModal():""}${S.travelHint?_travelBanner():""}${S.adModal?renderAdModal():""}
+      ${S.settingsModal?renderSettingsModal():""}${S.helpModal?renderHelpModal():""}${S.stickerModal?renderStickerModal():""}${S.travelHint?_travelBanner():""}${S.pinModal?renderPinModal():""}${S.adModal?renderAdModal():""}
     </div>${renderBottomNav()}${((!localStorage.getItem('gq_pwa_dismissed')&&S.pwaPrompt)||(_isIOS()&&!_isInStandaloneMode()&&!localStorage.getItem('gq_pwa_ios_dismissed')))?renderPwaBanner():""}`;
     if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
   if(S.tab==="home")setTimeout(function(){if(typeof window.renderRecentBar==="function")window.renderRecentBar();},90);
@@ -17668,6 +17676,8 @@ function renderSettingsModal(){
       return '';
     })()}
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div style="font-weight:700">🚗🚆 ${t('travel_setting')}</div><button onclick="var on=localStorage.getItem('gq_travel_hint')==='1';localStorage.setItem('gq_travel_hint',on?'0':'1');if(!on){_travelWatching=false;_initTravelHint();}render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_travel_hint')==='1'?'An':'Aus'}</button></div>
+    <div style="margin-bottom:.75rem"><div style="font-weight:700;margin-bottom:6px">🧒 ${t('kids_grade_label')}</div><div style="display:flex;gap:8px">${[['1',t('kids_grade_young')],['2',t('kids_grade_older')]].map(function(o){var cur=(localStorage.getItem('gq_kids_grade')||'2')===o[0];return '<button onclick="localStorage.setItem(\'gq_kids_grade\',\''+o[0]+'\');render()" style="flex:1;padding:.5rem;border-radius:8px;border:none;cursor:pointer;font-weight:700;font-size:.78rem;background:'+(cur?'#10b981':'var(--bg3)')+';color:'+(cur?'#fff':'var(--text)')+'">'+o[1]+'</button>';}).join('')}</div></div>
+    <button onclick="S.pinMode='set';S.pinErr=false;S.settingsModal=false;S.pinModal=true;render()" class="btn-g" style="margin-bottom:.5rem;background:var(--bg3)">🔒 ${t('pin_setting')}</button>
     <button onclick="S.settingsModal=false;S.stickerModal=true;render()" class="btn-g" style="margin-bottom:.5rem;background:var(--bg3)">${t('stickers_title')}</button>
     <button onclick="S.settingsModal=false;render()">Schlie\u00dfen</button>
   </div></div>`;

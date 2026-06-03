@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 461 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.84 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Version:** Phase 463 (Stand: Juni 2026)
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.85 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -1165,6 +1165,8 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **459** | patch_459.py | **Unterwegs-Vorschlag (Geolocation, opt-in, Standard AUS): bei aktiviertem gq_travel_hint startet watchPosition; bei anhaltend hoher Geschwindigkeit (coords.speed>9 m/s, 3 Messungen) einmaliger dezenter Banner mit Auto/Zug-Wahl (Kennzeichen-/Waggon-Sammeln). Einstellungs-Toggle, i18n DE/EN/PL. Keine Auto/Zug-Auto-Erkennung (unzuverlaessig) - Nutzer waehlt. verify 191/191, validate 0 Warnings.** |
 | **460** | patch_460.py | **Familienduell als eigene Rubrik im Hot-Seat: initLV(family)-Param; im Familien-Modus generiert _lvNext pro Zug eine FRISCHE Frage (kein roundQ-Reuse) mit Level-Filter: Spieler1/Kind = Level 1 + kindersicher (KIDS_CATS), Spieler2/Erwachsen = Level>=2. Button im LV-Setup, Gameover-Nochmal behaelt Family. Normaler 1:1-Pfad unveraendert. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
 | **461** | patch_461.py | **Home-Hero-Layout: Live 1vs1 Duell + Lokal Hot-Seat als kompaktes Paar nebeneinander (je halbe Breite, vertikale Karten: Icon/Label/Button, Untertitel entfernt). Daily Challenge bleibt voll breit als Haupt-Hero. Spart Banner-Hoehe -> Empfehlungen rutschen nach oben. verify 191/191, validate 0 Warnings.** |
+| **462** | patch_462.py | **Klassenstufen: _kidLevelMax() liest gq_kids_grade (1=6-8 J./Kl.1-2 -> nur Level 1; sonst 2=8-10 J./Kl.3-4 -> Level 1-2). _kidHidden nutzt die Schwelle. Auswahl im Einstellungs-Modal. Macht Kinder-Modus altersgerechter (junge Kinder nur leichteste Spiele). Standard=2 -> kein Regress. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
+| **463** | patch_463.py | **Eltern-PIN: Kinder-Modus mit 4-stelligem PIN sicherbar. _toggleKidsMode fragt beim Ausschalten den PIN ab (renderPinModal, _pinSubmit/_pinRemove, gq_kids_pin). Setzen/Aendern/Entfernen im Einstellungs-Modal. Kinder koennen den Kinder-Modus nicht mehr selbst abschalten. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
 
 ---
 

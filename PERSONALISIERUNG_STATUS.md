@@ -2,7 +2,7 @@
 
 > **Bei Session-Neustart:** zuerst `CLAUDE_SESSION_STARTER.md` lesen, dann dieses Dokument.
 > Es hält den Stand der Personalisierungs-/Kinder-Features fest, damit nahtlos weitergearbeitet werden kann.
-> Letztes Update: Phase 461. (Diese Zeile wird von post_phase.py automatisch gestempelt.)
+> Letztes Update: Phase 463. (Diese Zeile wird von post_phase.py automatisch gestempelt.)
 
 ## Architektur dieser Feature-Familie (wo liegt was)
 
@@ -28,15 +28,21 @@ Alles in `gen.py` (CSS in `geoquest_css.txt`, Übersicht in `generate_spielueber
 | 455 | Spiel-Ebene-Filter (`_modeLevel`/`_kidHidden`) + Übersicht-🧒-Auswertung |
 | 456 | Lehrplan-konforme Kinder-Tags (pflanzen/gartenbau/klima/fluesse/gipfel) → 410/999 kindgeeignet |
 | 457 | Sticker-Sammlung (renderStickerModal, aus gq_played, Eintrag in Einstellungen) + Header-Icons app-weit auf 30px verkleinert |
+| 458 | Antwort-Audit-Fix: 24 Jahr/Zahl-Modi (`_modeLevel` ID-Signale) im Kinder-Modus ausgeblendet |
+| 459 | Unterwegs-Vorschlag (Geolocation, opt-in, `gq_travel_hint`, `_travelBanner`) — **Mobil-Test offen** |
+| 460 | Familienduell (Hot-Seat-Rubrik, `initLV(family)`, pro Zug eigene Frage nach Spieler-Level) |
+| 461 | Home-Hero: Daily voll breit, Live 1vs1 + Hot-Seat als kompaktes Paar |
+| 462 | Klassenstufen (`_kidLevelMax`/`gq_kids_grade`: Kl.1-2 → Level 1, Kl.3-4 → Level 1-2) |
+| 463 | Eltern-PIN (`gq_kids_pin`, `renderPinModal`, Kinder-Modus nur mit PIN abschaltbar) |
 
-## OFFENE ROADMAP (priorisiert) — ⚠️ = braucht Entscheidung/Geräte-Test
+## OFFENE ROADMAP — ⚠️ = berührt Scoring/Backend, NICHT blind bauen
 
-1. **Familien-Duell** — mit `_modeLevel` abwechselnd leicht/schwer (fair Kind↔Erwachsen). *Engine-nah, mittel.*
-4. **Klassenstufen** (Grundschule 1–2 vs 3–4) statt nur „kids" — feinere Empfehlung. *Daten+Onboarding, mittel.*
-5. **Casual-Schnellrunden** („2 Min" → 5 Fragen) — ⚠️ NUR Casual/Solo, NICHT Ranked/Daily/1v1 (sonst Bestenlisten unfair, `const ROUNDS=10` ist Scoring-Kern). Vorher Round-Logik prüfen.
-6. **Unterwegs-Hinweis** (Auto/Zug via Geolocation-Speed → Kennzeichen-/Waggon-Sammeln vorschlagen, einmalig, opt-in). ⚠️ Braucht Standort-Berechtigung + **Test auf echten Geräten** — nicht blind shippen.
-7. **Antwort-Qualität pro Alter prüfen** — bei Kinder-Modi: sind Distraktoren altersgerecht? Ggf. mehr leichte Inhalte generieren. *Content-Audit, groß.*
-8. **Performance / Lazy-Loading** — Daten nicht mehr komplett inline; pro Kategorie/Alter nachladen (siehe unten).
+1. **Übungsmodus ohne Wertung** — Kinder/Casual spielen ohne Bestenlisten-Eintrag. ⚠️ Greift in `saveSession()` ein (Score+Supabase). Sauber: ein `practice`-Flag, das nur den Leaderboard-Submit überspringt (lokale Historie ok). Mit Test bauen.
+2. **Getrennte Kinder-/Familien-Bestenliste** — fairste Lösung gegen „Erwachsene dominieren". ⚠️ Supabase-Schema (Leaderboard-Tabelle) ansehen + ggf. Spalte/Filter. Server-seitig, Entscheidung nötig.
+3. **Adaptive Schwierigkeit** — pro Kategorie Trefferquote tracken → Level automatisch wählen. ⚠️ Muss in den Antwort-/Gameover-Fluss eingehängt werden.
+4. **Casual-Schnellrunden** („2 Min" → 5 Fragen) — ⚠️ `const ROUNDS=10` steckt in `saveSession` (rounds:ROUNDS + Anti-Cheat-Cap). Variable Runden = Bestenlisten unfair. NUR als Teil des Übungsmodus (ohne Wertung) sicher.
+5. **Performance / Lazy-Loading** — Daten nicht mehr komplett inline; pro Kategorie/Alter nachladen (siehe unten). Erst Lighthouse messen.
+6. **Mobil-Test Unterwegs-Hinweis** (Phase 459) — auf echtem Handy im Auto/Zug prüfen.
 
 ## Performance & 1-MB-/Größen-Grenze (wichtig)
 

@@ -331,3 +331,11 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 461 — Home-Hero: Duell-Modi als Paar
 **Datum:** 2026-06-03
 **Layout:** Live 1vs1 + Lokal Hot-Seat nebeneinander (je halbe Breite, kompakte vertikale Karten, Untertitel weg). Daily Challenge bleibt voll breit (Haupt-Hero). Spart Höhe → „Empfohlen für dich" rückt nach oben. verify 191/191, validate 0 Warnings.
+
+## Phase 462 — Klassenstufen (Kinder-Feinabstufung)
+**Datum:** 2026-06-03
+**Feature:** _kidLevelMax() (gq_kids_grade: '1'=6-8 J./Kl.1-2 → max Level 1; sonst 2=8-10 J./Kl.3-4 → max Level 2). _kidHidden blendet >Schwelle aus. Auswahl im Einstellungs-Modal (i18n DE/EN/PL). Junge Kinder bekommen nur leichteste Spiele. Standard=2 → kein Regress. verify 191/191, validate 0 Warnings.
+
+## Phase 463 — Eltern-PIN (Kinder-Modus sichern)
+**Datum:** 2026-06-03
+**Feature:** _toggleKidsMode fragt beim Ausschalten den 4-stelligen PIN ab (renderPinModal mit Modus set/check, _pinSubmit/_pinRemove/_hasPin, gq_kids_pin). Setzen/Ändern/Entfernen im Einstellungs-Modal. Kinder können den Kinder-Modus nicht mehr selbst deaktivieren. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.

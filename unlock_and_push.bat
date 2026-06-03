@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 461. Home-Hero-Layout: Live 1vs1 Duell + Lokal Hot-Seat als kompaktes Paar nebeneinander (je halbe Breite, vertikale Karten: Icon/Label/Button, Untertitel entfernt). Daily Challenge bleibt voll breit als Haupt-Hero. Spart Banner-Hoehe -> Empfehlungen rutschen nach oben. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 463. Eltern-PIN: Kinder-Modus mit 4-stelligem PIN sicherbar. _toggleKidsMode fragt beim Ausschalten den PIN ab (renderPinModal, _pinSubmit/_pinRemove, gq_kids_pin). Setzen/Aendern/Entfernen im Einstellungs-Modal. Kinder koennen den Kinder-Modus nicht mehr selbst abschalten. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
