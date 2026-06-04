@@ -485,3 +485,7 @@ Nicht-curriculare Trivia-Kategorien (Games, Autos, Mythologie, Literatur, Bretts
 ## Phase 508 — UX: leere Kategorien im Kinder-Modus ausblenden
 **Datum:** 2026-06-03
 Neuer Helfer `_catKidCount(k)` (zählt nicht-`_kidHidden` Modi einer Kategorie). `_CAT_ORDER`-Kinderfilter blendet Kategorien mit 0 sichtbaren Modi für die aktuelle Stufe aus. Stufe 1: 14 statt 24 Kategorien (keine leeren Inseln/Gipfel/Autos/Games), Stufe 2: 22, Stufe 3/4: alle. Kein Kind landet mehr auf einer leeren Kategorie; Kategorien erscheinen mit dem Alter. verify 193/193, 0 THROW.
+
+## Phase 509 — Hochstufen-System für clevere Kinder (nicht streng nach Alter)
+**Datum:** 2026-06-03
+`_kidLevelMax` = Basis-Stufe + `gq_kid_boost` (gedeckelt). Kind-Knopf „🚀 Schwerere Fragen" am Spielende (Kinder-Modus, ≥8/10, solange Cap nicht erreicht) erhöht Boost +1. **Cap:** Basis <3 → max 4 (nie 16+); Basis ≥3 (11–15) → bis 5 (16+) erreichbar, AUSSER `gq_block_adult` gesetzt. Eltern-Schalter „16+ ab Stufe 11–13 zulassen" (PIN-gesichert via `pinMode='adultblock'`) + Schwierigkeit-Reset in Einstellungen. Grade-Wechsel resettet Boost. i18n de/en/pl. verify 193/193, 0 THROW.

@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 508. UX: Leere Kategorien im Kinder-Modus pro Stufe ausblenden. Neuer Helfer _catKidCount(k) zaehlt sichtbare (nicht _kidHidden) Modi einer Kategorie; _CAT_ORDER-Kinderfilter blendet Kategorien mit 0 Modi fuer die aktuelle Stufe aus. Ergebnis: Stufe 1 zeigt 14 statt 24 Kategorien (keine leeren wie Inseln/Gipfel/Autos/Games), Stufe 2 zeigt 22, Stufe 3/4 alle 24. Kein Kind tippt mehr auf eine leere Kategorie. verify 193/193, 0 THROW, 1088 Modi.. verify: 193/193."
+git commit -m "Content: Phase 509. Hochstufen-System (cleveren Kindern, nicht streng nach Alter): _kidLevelMax nutzt jetzt gq_kid_boost (effektive Stufe = Basis+Boost). Kind-Knopf '🚀 Schwerere Fragen' am Spielende (nur Kinder-Modus, bei >=8/10 richtig, solange Cap nicht erreicht) erhoeht Boost um 1. Cap: Basis-Stufe <3 -> max 4 (nie 16+); Basis-Stufe >=3 (11-13/14-15) -> bis 5 (16+) erreichbar, AUSSER gq_block_adult gesetzt. Eltern-Schalter in Einstellungen '16+ ab Stufe 11-13 zulassen' (PIN-gesichert via pinMode adultblock, falls PIN gesetzt) + Schwierigkeit-Reset. Grade-Wechsel setzt Boost zurueck. i18n de/en/pl. verify 193/193, 0 THROW.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
