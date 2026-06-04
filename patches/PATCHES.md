@@ -392,3 +392,7 @@ Ursache, warum deployte Änderungen „nicht ankamen": `vercel.json` hatte keine
 ## Phase 476 — SW-Cache verschlankt (QuotaExceededError behoben)
 **Datum:** 2026-06-03
 Der Service Worker cachte `GeoQuest.html` UND das byte-identische `index.html` (2× 6 MB) → sprengte das Storage-Quota (`QuotaExceededError`, v.a. Inkognito), einzelne data/*.json wurden beim Install übersprungen. Fix: `index.html` aus `_cache_assets` entfernt; `GeoQuest.html` bleibt Precache + Offline-Fallback, `/play` wird zur Laufzeit gecacht. Cache-Hash ändert sich → alter Cache wird ersetzt. verify 191/191, validate 0 Warnings.
+
+## Phase 477 — Kategorie-Reihen am Desktop scrollbar (Mausrad → horizontal)
+**Datum:** 2026-06-03
+Symptom „wischen geht nicht": Am Desktop kein Touch + keine sichtbare Scrollbar → angeschnittene Kacheln unerreichbar. `onwheel`-Handler auf Playlist- und Recent-Leisten wandelt vertikales Mausrad in horizontales Scrollen (`scrollLeft+=deltaY`); `preventDefault` nur, solange die Leiste tatsächlich scrollt (am Ende bleibt Seiten-Scroll frei). `cursor:grab` als Hinweis. Touch-Wischen unverändert nativ. verify 191/191, validate 0 Warnings.

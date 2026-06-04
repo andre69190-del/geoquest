@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 476. SW-Cache verschlankt: index.html (byte-identisch mit GeoQuest.html, 6 MB) nicht mehr vorab cachen -> behebt QuotaExceededError beim SW-Install (v.a. Inkognito mit kleinem Storage-Quota). GeoQuest.html bleibt Precache + Offline-Fallback; /play wird zur Laufzeit gecacht. Neuer Cache-Hash invalidiert alten Cache.. verify: 191/191."
+git commit -m "Content: Phase 477. Kategorie-/Recent-Reihen am Desktop scrollbar gemacht: ohne sichtbare Scrollbar + ohne Touch kam man an die angeschnittenen Kacheln nicht ran ('wischen geht nicht'). Neuer onwheel-Handler wandelt vertikales Mausrad in horizontales Scrollen (this.scrollLeft+=deltaY), preventDefault nur solange die Leiste noch scrollen kann -> Seiten-Scroll am Ende frei. cursor:grab als Hinweis. Touch-Wischen unveraendert nativ.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
