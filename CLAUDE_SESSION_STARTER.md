@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 471):
+Aktueller Stand (Stand: Phase 472):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 999 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -30,6 +30,16 @@ Pflicht-Workflow nach JEDER Änderung:
 5. python3 check_session.py      → Checks grün (prüft AUTOMATISCH auch, ob die Modi-Zahl in
      diesem Dokument zu gen.py passt, und warnt bei Abweichung)
 6. unlock_and_push.bat           → deployed auf Vercel
+
+⚠️ DEPLOY-/CACHE-FALLE (Phase 472): GeoQuest ist eine PWA mit cache-first Service Worker.
+   Wenn Änderungen nach Deploy "nicht ankommen" (z.B. alte Karten trotz neuer Phase),
+   liegt es fast immer am SW-Cache, NICHT am Build. Absicherung:
+   - vercel.json setzt jetzt Cache-Control: no-cache auf /sw.js, /index.html (/play, Catch-all)
+     und /manifest.json → Browser holt sw.js immer frisch, SW aktualisiert sich pro Build.
+   - Beim Testen nach Deploy: einmal DevTools → Application → Service Workers → "Unregister"
+     (oder "Clear site data"), dann neu laden. Ein blosses Strg+Shift+R umgeht den SW oft NICHT.
+   - Konsistenz-Check: Sind ALLE neuen Features gleichzeitig weg, ist es der SW-Cache (eine alte
+     index.html). Fehlt nur EIN Feature, ist es ein echter Code-Bug.
 
 Wichtige Dateien zum Lesen:
 - gen.py                    → Haupt-Build-Datei (~1.5 MB JS+Python)
@@ -231,29 +241,8 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 471)
+## AKTUELLER PROJEKT-STATUS (Phase 472)
 
 | Metrik | Wert |
 |--------|------|
-| Spielmodi | **999** |
-| Fahrzeuge (autos_extended) | 431 |
-| Spiele (games_extended) | 70 |
-| Konsolen (konsolen.json) | 30 |
-| JSON-Datendateien | 78 |
-| gen.py Größe | ~1.53 MB |
-| GeoQuest.html Größe | ~5.62 MB |
-| verify.py | 191/191 ✓ |
-| validate_content.py | 92/92 ✓ 0 Warnings |
-| Sprachen vollständig (de/en/pl) | ✓ |
-| Offline/PWA | ✓ |
-| iOS Timeline-Bug | ✅ gefixt (Phase 412) |
-
-### Neue Kategorien (Phase 438–440)
-| Modi-ID | Beschreibung |
-|---------|-------------|
-| hl_park_speed | Freizeitpark: Höchstgeschwindigkeit |
-| park_match_land | Freizeitpark: Ursprungsland |
-| hl_kunst_jahr | Kunstgeschichte: Entstehungsjahr |
-| kunst_match_museum | Kunstgeschichte: Museum |
-| hl_hund_gewicht | Hunderassen: Max. Gewicht |
-| hund_match_land | Hunderassen: Ursprungsland 
+| Spie

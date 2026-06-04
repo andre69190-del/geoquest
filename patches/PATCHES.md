@@ -372,3 +372,7 @@ Recent-Leiste an den neuen Pastell-Look angeglichen: Helper `_recCat(mid)` ermit
 ## Phase 471 — BUGFIX: Kategorie-Karten reagierten nicht
 **Datum:** 2026-06-03
 Klick auf die Pastell-Kategorie-Strips (`#gq-playlists`) rief `filterByCategory()`, das die Zielsektion zwar aufklappte, aber weit unten im `#mainGamesGrid` außerhalb des Sichtfelds → wirkte wie „passiert nichts". Neuer Helper `window._goCat(k)`: setzt `S.filterCat`, rendert (Filter greift über `_scheduleFilterRefresh`) und scrollt die aufgeklappte `.accordion-section[data-cat=k]` sanft ins Bild. Playlist-Karten-onclick auf `_goCat` umgestellt. verify 191/191, validate 0 Warnings.
+
+## Phase 472 — DEPLOY-FIX: PWA Stale-Cache (vercel.json Cache-Control)
+**Datum:** 2026-06-03
+Ursache, warum deployte Änderungen „nicht ankamen": `vercel.json` hatte keine Cache-Control-Header. Der cache-first Service Worker + Browser-Cache lieferten ewig die alte `index.html`/`sw.js` aus — Symptom: ALLE neuen Features gleichzeitig weg (konsistent mit einer einzigen alten gecachten HTML). Fix: `Cache-Control: no-cache` auf `/sw.js` (+`no-store, must-revalidate`), `/index.html` (`/play` + Catch-all), `/manifest.json`. Session-Starter um „Deploy-/Cache-Falle" ergänzt. Keine gen.py-Änderung. vercel.json wird host-seitig vom .bat committet (Mount-Truncation im Sandbox).

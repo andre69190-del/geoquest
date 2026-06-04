@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 471. BUGFIX Kategorie-Karten klickbar: Die Pastell-Kategorie-Strips (#gq-playlists, 'Empfohlen fuer dich' + Gruppen) riefen filterByCategory(), das die Sektion zwar aufklappte - aber weit unten im #mainGamesGrid ausserhalb des Sichtfelds, also schien 'nichts zu passieren'. Neu: window._goCat(k) setzt S.filterCat, rendert (Filter greift via _scheduleFilterRefresh) und scrollt die aufgeklappte .accordion-section[data-cat=k] sanft ins Bild. Playlist-Karten-onclick auf _goCat umgestellt. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 472. DEPLOY-FIX (PWA Stale-Cache): vercel.json hatte KEINE Cache-Control-Header. Service Worker ist cache-first -> Browser cachte alte index.html/sw.js, neue Builds kamen nie an (Symptom: alle neuen Features gleichzeitig 'weg', konsistent mit EINER alten gecachten HTML). Jetzt Cache-Control:no-cache auf /sw.js (+no-store,must-revalidate), /index.html (/play+catch-all), /manifest.json. Session-Starter um Deploy-/Cache-Falle ergaenzt. Keine gen.py-Aenderung.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

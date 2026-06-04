@@ -15,19 +15,19 @@
     { "src": "google1b9fe4381920a332.html", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/sw.js",              "dest": "/sw.js" },
-    { "src": "/manifest.json",      "dest": "/manifest.json" },
+    { "src": "/sw.js",              "dest": "/sw.js",              "headers": { "Cache-Control": "no-cache, no-store, must-revalidate" } },
+    { "src": "/manifest.json",      "dest": "/manifest.json",      "headers": { "Cache-Control": "no-cache" } },
     { "src": "/icon.svg",           "dest": "/icon.svg" },
     { "src": "/cities_data.js",     "dest": "/cities_data.js" },
     { "src": "/robots.txt",         "dest": "/robots.txt",         "headers": { "Content-Type": "text/plain" } },
     { "src": "/sitemap.xml",        "dest": "/sitemap.xml",        "headers": { "Content-Type": "application/xml" } },
     { "src": "/",                    "dest": "/landing.html" },
-    { "src": "/play",               "dest": "/index.html" },
+    { "src": "/play",               "dest": "/index.html",         "headers": { "Cache-Control": "no-cache" } },
     { "src": "/landing.html",       "dest": "/landing.html" },
     { "src": "/impressum.html",     "dest": "/impressum.html" },
     { "src": "/datenschutz.html",   "dest": "/datenschutz.html" },
     { "src": "/google1b9fe4381920a332.html", "dest": "/google1b9fe4381920a332.html", "headers": { "Content-Type": "text/html" } },
     { "src": "/([^/]+\\.json)",     "dest": "/$1" },
-    { "src": "/(.*)",               "dest": "/index.html" }
+    { "src": "/(.*)",               "dest": "/index.html",         "headers": { "Cache-Control": "no-cache" } }
   ]
 }

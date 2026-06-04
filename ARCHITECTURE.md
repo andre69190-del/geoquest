@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 471 (Stand: Juni 2026)
+**Version:** Phase 472 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.86 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1175,6 +1175,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **469** | patch_469.py | **Ausfuehrliches Handbuch (renderGuideModal): 2 Tabs 'Fuer Kinder' (kindgerecht: Wie spiele ich, Spielarten, Punkte/Streak/Sticker, Tipps) + 'Fuer Eltern & alle' (Kinder-Modus, Klassenstufen, Eltern-PIN, Mehrspieler, Bestenlisten/Fairness/Uebungsmodus, weitere Funktionen). Erreichbar via Einstellungen-Button + Link aus Hilfe-Overlay. Texte DE/EN/PL in LANG (guide_*), uebrige Sprachen Fallback EN. State S.guideModal/guideTab. verify 191/191, validate 0 Warnings.** |
 | **470** | patch_470.py | **Zuletzt-gespielt-Leiste vereinheitlicht: (1) Pastell-Toenung pro Karte via _catTint - neue Helper _recCat(mid) findet die Kategorie des Modus in MODE_CATS, gleicher Look wie Kategorie-/Empfehlungskarten. (2) Anschnitt sauberer: rechter Verlauf von 32px auf 52px verbreitert + ab 70% deckend (kein harter Wort-Abriss mehr), scroll-snap-type:x proximity + scroll-snap-align:start fuer sauberes Wischen. verify 191/191, validate 0 Warnings.** |
 | **471** | patch_471.py | **BUGFIX Kategorie-Karten klickbar: Die Pastell-Kategorie-Strips (#gq-playlists, 'Empfohlen fuer dich' + Gruppen) riefen filterByCategory(), das die Sektion zwar aufklappte - aber weit unten im #mainGamesGrid ausserhalb des Sichtfelds, also schien 'nichts zu passieren'. Neu: window._goCat(k) setzt S.filterCat, rendert (Filter greift via _scheduleFilterRefresh) und scrollt die aufgeklappte .accordion-section[data-cat=k] sanft ins Bild. Playlist-Karten-onclick auf _goCat umgestellt. verify 191/191, validate 0 Warnings.** |
+| **472** | patch_472.py | **DEPLOY-FIX (PWA Stale-Cache): vercel.json hatte KEINE Cache-Control-Header. Service Worker ist cache-first -> Browser cachte alte index.html/sw.js, neue Builds kamen nie an (Symptom: alle neuen Features gleichzeitig 'weg', konsistent mit EINER alten gecachten HTML). Jetzt Cache-Control:no-cache auf /sw.js (+no-store,must-revalidate), /index.html (/play+catch-all), /manifest.json. Session-Starter um Deploy-/Cache-Falle ergaenzt. Keine gen.py-Aenderung.** |
 
 ---
 
