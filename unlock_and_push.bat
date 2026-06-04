@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 470. Zuletzt-gespielt-Leiste vereinheitlicht: (1) Pastell-Toenung pro Karte via _catTint - neue Helper _recCat(mid) findet die Kategorie des Modus in MODE_CATS, gleicher Look wie Kategorie-/Empfehlungskarten. (2) Anschnitt sauberer: rechter Verlauf von 32px auf 52px verbreitert + ab 70% deckend (kein harter Wort-Abriss mehr), scroll-snap-type:x proximity + scroll-snap-align:start fuer sauberes Wischen. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 471. BUGFIX Kategorie-Karten klickbar: Die Pastell-Kategorie-Strips (#gq-playlists, 'Empfohlen fuer dich' + Gruppen) riefen filterByCategory(), das die Sektion zwar aufklappte - aber weit unten im #mainGamesGrid ausserhalb des Sichtfelds, also schien 'nichts zu passieren'. Neu: window._goCat(k) setzt S.filterCat, rendert (Filter greift via _scheduleFilterRefresh) und scrollt die aufgeklappte .accordion-section[data-cat=k] sanft ins Bild. Playlist-Karten-onclick auf _goCat umgestellt. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

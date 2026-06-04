@@ -368,3 +368,7 @@ Neues `renderGuideModal()` — zweigeteiltes Nachschlagewerk, ergänzt das knapp
 ## Phase 470 — Zuletzt-gespielt: Pastell + sauberer Anschnitt
 **Datum:** 2026-06-03
 Recent-Leiste an den neuen Pastell-Look angeglichen: Helper `_recCat(mid)` ermittelt die Kategorie des Modus aus MODE_CATS, `_catTint` tönt jede Karte wie die Kategorie-/Empfehlungskarten. Anschnitt der letzten Karte entschärft: rechter Verlauf 32→52px + ab 70% deckend (kein harter Wort-Abriss), `scroll-snap-type:x proximity` + `scroll-snap-align:start` fürs Wischen. verify 191/191, validate 0 Warnings.
+
+## Phase 471 — BUGFIX: Kategorie-Karten reagierten nicht
+**Datum:** 2026-06-03
+Klick auf die Pastell-Kategorie-Strips (`#gq-playlists`) rief `filterByCategory()`, das die Zielsektion zwar aufklappte, aber weit unten im `#mainGamesGrid` außerhalb des Sichtfelds → wirkte wie „passiert nichts". Neuer Helper `window._goCat(k)`: setzt `S.filterCat`, rendert (Filter greift über `_scheduleFilterRefresh`) und scrollt die aufgeklappte `.accordion-section[data-cat=k]` sanft ins Bild. Playlist-Karten-onclick auf `_goCat` umgestellt. verify 191/191, validate 0 Warnings.
