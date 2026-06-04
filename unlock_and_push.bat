@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 479. verify.py erweitert (Check 20: undefinierte/ungeschuetzte *_DATA-Referenzen -> faengt Runtime-Crash-Klasse aus Phase 478 ab, jetzt 192/192) + grosses 9-Dimensionen-Audit nach Umbau 467-478. Ergebnis: alle Dimensionen gruen, keine offenen kritischen/mittleren Punkte. Bericht in PHASE479_AUDIT.md. Beobachtungen (niedrig): i18n-Schuld im Einstellungs-Modal (vorbestehend), home_hi-Namensumbruch kosmetisch.. verify: 192/192."
+git commit -m "Content: Phase 480. Spiel-Empfehlungen: _forYouGames() schlaegt einzelne Spiele vor (ab 5 Spielen, Mix 60% neu / 40% bewaehrt aus Top-Kategorien + Interessen, Kinder-Filter, nur spielbare GEN). Neue Home-Leiste '🎯 Empfohlene Spiele' (_renderGameStrip) mit Pastell-Tint + Mausrad/Touch-Scroll. Abschaltbar via Einstellungs-Schalter gq_rec_games (Standard an). i18n rec_games_title/rec_setting/rec_sub in de/en/pl.. verify: 192/192."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

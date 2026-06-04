@@ -404,3 +404,7 @@ Symptom „wischen geht nicht": Am Desktop kein Touch + keine sichtbare Scrollba
 ## Phase 479 — verify.py-Check (Daten-Variablen) + großes Audit
 **Datum:** 2026-06-03
 `verify.py` Check 20 ergänzt: jede genutzte `*_DATA` muss definiert oder `typeof`-guarded sein (192/192). Großes 9-Dimensionen-Audit (Build, Sicherheit, Runtime-Refs, i18n, Generatoren, Daten, UX, Fairness, Performance) nach Umbau 467–478 — alle grün, keine offenen 🔴/🟠. Bericht: PHASE479_AUDIT.md.
+
+## Phase 480 — Spiel-Empfehlungen (einzelne Spiele statt nur Kategorien)
+**Datum:** 2026-06-03
+`_forYouGames()`: schlägt einzelne Spiele vor — ab 5 gespielten Runden, Mix ~60% neu / 40% bewährt aus Top-Kategorien (`gq_played`) + Interessen, mit Kinder-Filter (`_kidHidden`) und nur spielbare (`GEN`). Neue Home-Leiste „🎯 Empfohlene Spiele" (`_renderGameStrip`, Pastell-Tint, Mausrad/Touch-Scroll, weicher Auslauf). Abschaltbar über Einstellungs-Schalter `gq_rec_games` (Standard an). i18n `rec_games_title/rec_setting/rec_sub` de/en/pl. Best-Practice-konform (wischbare Liste, kein Auto-Play, abschaltbar). verify 192/192, validate 0 Warnings.
