@@ -421,3 +421,7 @@ Symptom „wischen geht nicht": Am Desktop kein Touch + keine sichtbare Scrollba
 ## Phase 482 — i18n Hot-Seat-Screen + Zurück rechts
 **Datum:** 2026-06-03
 Alle hartkodierten DE-Strings im Hot-Seat (renderLVSetup/Handoff/Gameover) → `t()` (de/en/pl, `lv_*`-Keys + `ui_on/ui_off`). „Zurück" von links nach rechts (`align-self:flex-end`). verify 193/193, validate 0 Warnings.
+
+## Phase 483 — i18n Einstellungs-Modal
+**Datum:** 2026-06-03
+Alle sichtbaren Labels im `renderSettingsModal` → `t()` (de/en/pl, `set_*` + `ui_close`). Nur im isolierten Funktionskörper ersetzt, damit gleichnamige Strings in Profil-Tab/Home-Schwierigkeitsschalter unberührt bleiben. Install-Button via String-Konkatenation (steht in single-quoted JS-String, kein Template-Literal). Verbleibend: An/Aus-Toggle-Texte (ui_on/ui_off-Keys liegen bereit). verify 193/193, validate 0 Warnings.
