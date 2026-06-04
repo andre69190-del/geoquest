@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 495 (Stand: Juni 2026)
+**Version:** Phase 496 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.88 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1199,6 +1199,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **493** | patch_493.py | **FIX (Regression aus 492): Onboarding-Gate unterdrueckte ALLE, weil die App jeden Besucher anonym anmeldet (signInAnonymously) -> sbUser immer gesetzt. Gate prueft jetzt sbUser.is_anonymous: Onboarding erscheint wenn nicht-onboarded UND (kein User ODER anonymer User) UND Auth nicht pending. Registrierte ueberspringen, Erst-/Anonymnutzer (auch Inkognito) sehen es. verify 193/193, 0 THROW.** |
 | **494** | patch_494.py | **Onboarding-Alter (auf Nutzerwunsch) + 2 Fixes: (1) Bei Auswahl Kind/Jugendlich erscheint darunter eine Altersstufen-Auswahl (Kind: 6-8/8-10, Jugendlich: 11-13/14-15) -> setzt gq_kids_grade praezise; nur bei Kind/Jugendlich sichtbar, keine Reibung fuer Erwachsene. finishOb nutzt S.obGrade (validiert je Audience). (2) btn_next: ueberfluessiges Hochkomma nach Pfeil in ALLEN Sprachen entfernt (Weiter →' -> Weiter →). (3) Landing: .nav-cta Kontrast gefixt (.nav-links a ueberschrieb color:#fff -> Spezifitaet erhoeht, weisser Text auf gruen). verify 193/193, 0 THROW.** |
 | **495** | patch_495.py | **Tippfehler-Bereinigung: ueberfluessiges Hochkomma-Zeichen ’ nach dem Pfeil → auch in Modus-Namen entfernt (z.B. 'Stadt →’ Land' -> 'Stadt → Land'), alle Sprachen. verify 193/193, 0 THROW.** |
+| **496** | patch_496.py | **Altersstufen-Inhaltspruefung Stufe 1 (6-8 J.): Heuristik korrigiert - 'match/_mc/timeline' standardmaessig nicht mehr Level 1, sondern Level 2. Vorher sahen 6-8-Jaehrige 77 Modi, davon fast alle zu schwer (Motorbauart, Konsolengeneration, roemische Mythologie-Gegenstuecke, Fluss-Muendungslaender...). Jetzt zeigt Stufe 1 nur die 5 verstaendlichen Lehrplan-Spiele (Kontinente, Ozeane, Tiere, Kompass, Jahreszeiten). Schwerere Modi rutschen zu hoeheren Stufen (Stufe 2-4 Pruefung folgt). verify 193/193, 0 THROW.** |
 
 ---
 

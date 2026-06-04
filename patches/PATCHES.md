@@ -473,3 +473,7 @@ Regression aus Phase 492: Die App meldet jeden Besucher anonym an (`signInAnonym
 ## Phase 495 — Tippfehler: `→’` → `→` global
 **Datum:** 2026-06-03
 Überflüssiges `’` nach dem Pfeil auch in Modus-Namen entfernt (z. B. „Stadt →' Land" → „Stadt → Land"), alle Sprachen. verify 193/193, 0 THROW.
+
+## Phase 496 — Altersstufen-Inhaltsprüfung: Stufe 1 (6–8 J.)
+**Datum:** 2026-06-03
+Inhaltliche Prüfung pro Stufe (jüngste zuerst). Befund: `_modeLevel` stufte alle `match/_mc/timeline` pauschal als Level 1 ein → 6–8-Jährige sahen 77 Modi, fast alle zu schwer (z. B. Motorbauart, Konsolengeneration, röm. Mythologie-Gegenstücke, Fluss-Mündungsländer). Fix: `match/_mc/timeline` Standard → **Level 2** statt 1. Stufe 1 zeigt jetzt nur die 5 verständlichen Lehrplan-Spiele. Schwerere wandern nach oben (Stufe 2–4-Prüfung folgt). verify 193/193, 0 THROW.
