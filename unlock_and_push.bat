@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 472. DEPLOY-FIX (PWA Stale-Cache): vercel.json hatte KEINE Cache-Control-Header. Service Worker ist cache-first -> Browser cachte alte index.html/sw.js, neue Builds kamen nie an (Symptom: alle neuen Features gleichzeitig 'weg', konsistent mit EINER alten gecachten HTML). Jetzt Cache-Control:no-cache auf /sw.js (+no-store,must-revalidate), /index.html (/play+catch-all), /manifest.json. Session-Starter um Deploy-/Cache-Falle ergaenzt. Keine gen.py-Aenderung.. verify: 191/191."
+git commit -m "Content: Phase 473. Onboarding-Tipp korrigiert: 'Oben rechts auf ? tippen' verwies auf das Hilfe-? im Header, das waehrend des Onboardings gar nicht sichtbar ist. Neu formuliert als Hinweis auf SPAETER in der App (de/en/pl). Keine Funktionsaenderung.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

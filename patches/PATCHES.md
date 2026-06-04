@@ -376,3 +376,7 @@ Klick auf die Pastell-Kategorie-Strips (`#gq-playlists`) rief `filterByCategory(
 ## Phase 472 — DEPLOY-FIX: PWA Stale-Cache (vercel.json Cache-Control)
 **Datum:** 2026-06-03
 Ursache, warum deployte Änderungen „nicht ankamen": `vercel.json` hatte keine Cache-Control-Header. Der cache-first Service Worker + Browser-Cache lieferten ewig die alte `index.html`/`sw.js` aus — Symptom: ALLE neuen Features gleichzeitig weg (konsistent mit einer einzigen alten gecachten HTML). Fix: `Cache-Control: no-cache` auf `/sw.js` (+`no-store, must-revalidate`), `/index.html` (`/play` + Catch-all), `/manifest.json`. Session-Starter um „Deploy-/Cache-Falle" ergänzt. Keine gen.py-Änderung. vercel.json wird host-seitig vom .bat committet (Mount-Truncation im Sandbox).
+
+## Phase 473 — Onboarding-Tipp korrigiert
+**Datum:** 2026-06-03
+`ob_help_hint` verwies auf „oben rechts auf ❓ tippen", aber das Header-❓ ist während des Onboardings nicht sichtbar. Umformuliert als Hinweis auf später/in der App (de/en/pl). verify 191/191, validate 0 Warnings.
