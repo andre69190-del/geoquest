@@ -364,3 +364,7 @@ Phase 467 hatte die 🌍 nur aus DE/EN `home_guest` entfernt → PL/FR/ES/IT/BG 
 ## Phase 469 — Ausführliches Handbuch (Profil/Einstellungen)
 **Datum:** 2026-06-03
 Neues `renderGuideModal()` — zweigeteiltes Nachschlagewerk, ergänzt das knappe Hilfe-Overlay. Tab „Für Kinder" (kindgerechte Sprache: Spielablauf, Spielarten, Punkte/Streak/Sticker, Tipps) + Tab „Für Eltern & alle" (Kinder-Modus & Filter, Klassenstufen/Lehrplan, Eltern-PIN, Mehrspieler, Bestenlisten & Fairness + Übungsmodus, weitere Funktionen). Öffnet über Button in den Einstellungen und Link im Hilfe-Overlay. Texte in `guide_*` (DE/EN/PL, Rest Fallback EN), State `S.guideModal`/`S.guideTab`. verify 191/191, validate 0 Warnings.
+
+## Phase 470 — Zuletzt-gespielt: Pastell + sauberer Anschnitt
+**Datum:** 2026-06-03
+Recent-Leiste an den neuen Pastell-Look angeglichen: Helper `_recCat(mid)` ermittelt die Kategorie des Modus aus MODE_CATS, `_catTint` tönt jede Karte wie die Kategorie-/Empfehlungskarten. Anschnitt der letzten Karte entschärft: rechter Verlauf 32→52px + ab 70% deckend (kein harter Wort-Abriss), `scroll-snap-type:x proximity` + `scroll-snap-align:start` fürs Wischen. verify 191/191, validate 0 Warnings.

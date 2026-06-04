@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 469. Ausfuehrliches Handbuch (renderGuideModal): 2 Tabs 'Fuer Kinder' (kindgerecht: Wie spiele ich, Spielarten, Punkte/Streak/Sticker, Tipps) + 'Fuer Eltern & alle' (Kinder-Modus, Klassenstufen, Eltern-PIN, Mehrspieler, Bestenlisten/Fairness/Uebungsmodus, weitere Funktionen). Erreichbar via Einstellungen-Button + Link aus Hilfe-Overlay. Texte DE/EN/PL in LANG (guide_*), uebrige Sprachen Fallback EN. State S.guideModal/guideTab. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 470. Zuletzt-gespielt-Leiste vereinheitlicht: (1) Pastell-Toenung pro Karte via _catTint - neue Helper _recCat(mid) findet die Kategorie des Modus in MODE_CATS, gleicher Look wie Kategorie-/Empfehlungskarten. (2) Anschnitt sauberer: rechter Verlauf von 32px auf 52px verbreitert + ab 70% deckend (kein harter Wort-Abriss mehr), scroll-snap-type:x proximity + scroll-snap-align:start fuer sauberes Wischen. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

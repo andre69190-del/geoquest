@@ -16987,18 +16987,20 @@ function renderRecentBar(){
   try{recent=JSON.parse(localStorage.getItem('gq_recent')||'[]');}catch(_e){}
   if(!recent.length){bar.innerHTML='';bar.style.display='none';return;}
   bar.style.display='block';
+  function _recCat(mid){for(var k in MODE_CATS){if(Object.prototype.hasOwnProperty.call(MODE_CATS,k)&&MODE_CATS[k].modes&&MODE_CATS[k].modes.indexOf(mid)>=0)return k;}return null;}
   var items=recent.map(function(mid){
     var m=MODES.find(function(x){return x.id===mid;});
     if(!m)return'';
     var title=modeTitle(m);
-    return'<button onclick="startGame(\''+mid+'\')" style="display:inline-flex;flex-direction:row;align-items:center;gap:9px;min-width:152px;width:152px;padding:9px 11px;background:var(--bg2);border:1.5px solid var(--border);border-radius:12px;cursor:pointer;flex-shrink:0;line-height:1.2;text-align:left" title="'+title+'">'
+    var _ck=_recCat(mid);var _t=_ck?_catTint(_ck):{bg:'var(--bg2)',bd:'var(--border)'};
+    return'<button onclick="startGame(\''+mid+'\')" style="display:inline-flex;flex-direction:row;align-items:center;gap:9px;min-width:152px;width:152px;padding:9px 11px;background:'+_t.bg+';border:1.5px solid '+_t.bd+';border-radius:12px;cursor:pointer;flex-shrink:0;line-height:1.2;text-align:left;scroll-snap-align:start" title="'+title+'">'
       +'<span style="font-size:1.6rem;flex-shrink:0">'+m.icon+'</span>'
       +'<span style="font-size:.72rem;color:var(--text2);font-weight:600;overflow:hidden;flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-word;hyphens:auto">'+(title.indexOf(': ')>=0?title.substring(title.indexOf(': ')+2):title)+'</span>'
       +'</button>';
   }).join('');
   bar.innerHTML='<div style="padding:8px 0 6px"><div style="font-size:.63rem;font-weight:700;color:var(--text3);letter-spacing:.7px;margin-bottom:5px">ZULETZT GESPIELT</div>'
-    +'<div style="position:relative"><div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;-ms-overflow-style:none;padding-right:24px">'+items+'</div>'
-    +'<div style="position:absolute;top:0;right:0;bottom:4px;width:32px;background:linear-gradient(to right,transparent,var(--bg));pointer-events:none"></div></div></div>';
+    +'<div style="position:relative"><div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;-ms-overflow-style:none;padding-right:44px;scroll-snap-type:x proximity">'+items+'</div>'
+    +'<div style="position:absolute;top:0;right:0;bottom:4px;width:52px;background:linear-gradient(to right,transparent,var(--bg) 70%);pointer-events:none"></div></div></div>';
 }
 /* Phase 413: genKonsolenSpielQ -- Reverse: Spiel -> Konsole */
 function genKonsolenSpielQ(){
