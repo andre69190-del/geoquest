@@ -417,3 +417,7 @@ Symptom „wischen geht nicht": Am Desktop kein Touch + keine sichtbare Scrollba
 - `_trackCatPlay` undefiniert (in try/catch, still) → implementiert (zählt Kategorie-Plays in `gq_catplays`).
 
 **Lehre / Zukunfts-Schutz:** `verify.py` prüfte nur Syntax/Struktur, nicht ob Generatoren laufen → diese Crashes waren unsichtbar. Neu: **Check 20** (undefinierte `*_DATA`) + **Check 21** (undefinierte Helfer-Funktionen, Block-Kommentare ignoriert). Beide Fehlerklassen werden jetzt beim Build erkannt. verify **193/193**, validate 0 Warnings.
+
+## Phase 482 — i18n Hot-Seat-Screen + Zurück rechts
+**Datum:** 2026-06-03
+Alle hartkodierten DE-Strings im Hot-Seat (renderLVSetup/Handoff/Gameover) → `t()` (de/en/pl, `lv_*`-Keys + `ui_on/ui_off`). „Zurück" von links nach rechts (`align-self:flex-end`). verify 193/193, validate 0 Warnings.

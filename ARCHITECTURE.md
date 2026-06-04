@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 481 (Stand: Juni 2026)
+**Version:** Phase 482 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.87 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1185,6 +1185,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **479** | patch_479.py | **verify.py erweitert (Check 20: undefinierte/ungeschuetzte *_DATA-Referenzen -> faengt Runtime-Crash-Klasse aus Phase 478 ab, jetzt 192/192) + grosses 9-Dimensionen-Audit nach Umbau 467-478. Ergebnis: alle Dimensionen gruen, keine offenen kritischen/mittleren Punkte. Bericht in PHASE479_AUDIT.md. Beobachtungen (niedrig): i18n-Schuld im Einstellungs-Modal (vorbestehend), home_hi-Namensumbruch kosmetisch.** |
 | **480** | patch_480.py | **Spiel-Empfehlungen: _forYouGames() schlaegt einzelne Spiele vor (ab 5 Spielen, Mix 60% neu / 40% bewaehrt aus Top-Kategorien + Interessen, Kinder-Filter, nur spielbare GEN). Neue Home-Leiste '🎯 Empfohlene Spiele' (_renderGameStrip) mit Pastell-Tint + Mausrad/Touch-Scroll. Abschaltbar via Einstellungs-Schalter gq_rec_games (Standard an). i18n rec_games_title/rec_setting/rec_sub in de/en/pl.** |
 | **481** | patch_481.py | **RUNTIME-CRASH-FIX (viele Spiele): (1) _mkHLQ war NIE definiert -> alle HL-Vergleichsspiele in Inseln/Gipfel/Klima/Ozeane crashten (ReferenceError -> lq() exhausted). _mkHLQ jetzt definiert (2-Optionen beta_hl, respektiert lowerWins/unit). (2) genKlimaPinQ las window.LAND_LATLON (const ist nicht auf window) -> jede Frage null -> klima_pin_land leer. Auf echtes LAND_LATLON umgestellt. (3) _trackCatPlay implementiert (war undefiniert, in try/catch). ZUKUNFTS-SCHUTZ: verify.py Check 21 faengt jetzt undefinierte Helfer-Funktionen ab (193/193). Beide Fehlerklassen (undefinierte *_DATA + undefinierte Funktionen) werden nun beim Build erkannt.** |
+| **482** | patch_482.py | **i18n Hot-Seat-Screen: alle hartkodierten DE-Strings (Titel, Untertitel, SPIELMODUS/RUBRIK/SPIEL WÄHLEN, Zufall/Rubrik/Spiel, Spiel starten, Handoff-Hinweis, Ich bin bereit, gewinnt/Unentschieden, Nochmal spielen, Hauptmenü) -> t() in de/en/pl (lv_*). Zurück-Button von links nach rechts (align-self:flex-end). verify 193/193.** |
 
 ---
 
