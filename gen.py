@@ -1434,7 +1434,7 @@ de:{
   play:"SPIELEN",again:"NOCHMAL",q_neighbor_fake:"Welches Land grenzt NICHT an …?",q_neighbor_count:"Wie viele Nachbarländer hat dieses Land?",q_border_shared:"Teilen diese L\u00e4nder eine gemeinsame Grenze?",q_de_plate:"Welche Stadt/Region hat dieses Kennzeichen?",q_map_reverse:"Welches Land ist hervorgehoben?",q_stadium:"\u26BD In welchem Land steht dieses Stadion?",q_jersey:"\u{1F455} Welches Land tr\u00e4gt dieses Trikot?",q_crest:"\u{1F6E1} Welchem Land geh\u00f6rt dieses Wappen?",q_beta_hl_stadium:"Welches Stadion liegt höher über dem Meeresspiegel?",q_beta_spotter:"Weltkarte",q_sport_poi:"In welchem Land liegt das?",q_wappen:"Welchem Land gehört dieses Wappen?",menu:"Hauptmenü",board:"Bestenliste",pass:"Reisepass",
   fav_empty:"Noch keine Favoriten gespeichert",
   profile:"Profil",stats:"Statistik",casual:"Casual",hardcore:"Hardcore",rounds:"Runden",
-  btn_collect:"Sammeln",btn_back:"Zurück zum Hauptmenü",btn_next:"Weiter →’",
+  btn_collect:"Sammeln",btn_back:"Zurück zum Hauptmenü",btn_next:"Weiter →",
   btn_again:"Nochmal",btn_menu:"Hauptmenü",btn_adapt:"Anpassen",
   spotter_title:"\u{1F697} Roadtrip-Spotter",
   spotter_hint:"Kennzeichen gesehen? Sofort eintragen!",
@@ -1517,7 +1517,7 @@ en:{
   play:"PLAY",again:"PLAY AGAIN",q_neighbor_fake:"Which country does NOT border …?",q_neighbor_count:"How many neighbouring countries does this country have?",q_border_shared:"Do these countries share a border?",q_de_plate:"Which city/region has this licence plate?",q_map_reverse:"Which country is highlighted?",q_stadium:"⚽ In which country is this stadium?",q_jersey:"👕 Which country wears this jersey?",q_crest:"🛡 Which country does this crest belong to?",q_beta_hl_stadium:"Which stadium is higher above sea level?",q_beta_spotter:"World map",q_sport_poi:"In which country is this?",q_wappen:"Which country does this coat of arms belong to?",menu:"Main Menu",board:"Leaderboard",pass:"Passport",
   fav_empty:"No favourites saved yet",
   profile:"Profile",stats:"Stats",casual:"Casual",hardcore:"Hardcore",rounds:"Rounds",
-  btn_collect:"Collect",btn_back:"Back to Main Menu",btn_next:"Next →’",
+  btn_collect:"Collect",btn_back:"Back to Main Menu",btn_next:"Next →",
   btn_again:"Play Again",btn_menu:"Main Menu",btn_adapt:"Adapt",
   spotter_title:"\u{1F697} Road Trip Spotter",
   spotter_hint:"Spotted a plate? Log it now!",
@@ -1600,7 +1600,7 @@ pl:{
   play:"GRAJ",again:"ZAGRAJ PONOWNIE",q_neighbor_fake:"Który kraj NIE graniczy z …?",q_neighbor_count:"Ile sąsiadów ma ten kraj?",q_border_shared:"Czy te kraje mają wspólną granicę?",q_de_plate:"Które miasto/region ma tę tablicę rejestracyjną?",q_map_reverse:"Który kraj jest podświetlony?",q_stadium:"⚽ W którym kraju jest ten stadion?",q_jersey:"👕 Który kraj nosi tę koszulkę?",q_crest:"🛡 Do którego kraju należy ten herb?",q_beta_hl_stadium:"Który stadion leży wyżej nad poziomem morza?",q_beta_spotter:"Mapa świata",q_sport_poi:"W którym kraju to się znajduje?",q_wappen:"Do którego kraju należy ten herb?",q_hl_gdp:"Wyższe PKB/os. niż {a}?",q_hl_density:"Gęściej zaludnione niż {a}?",q_hl_elevation:"Wyższy szczyt niż {a}?",q_hl_coastline:"Dłuższe wybrzeże niż {a}?",q_hl_borders:"Więcej sąsiadów niż {a}?",q_hl_lifeexp:"Dłuższe życie niż w {a}?",q_hl_median_age:"Wyższy wiek mediany niż {a}?",q_hl_forest:"Więcej lasów niż {a}?",mode_hauptstadt_dist:"Odległość stolic",mode_flugrouten_duell:"Pojedynek tras lotniczych",mode_insel_festland:"Wyspa czy ląd stały",mode_aequator:"Na północ czy na południe?",mode_wort_schmiede:"Kuźnia Słów",diff_desc_blitz:"⚡ Blitz: 60 sekund · Jak najwięcej pytań",q_airport_pin:"Gdzie leży to lotnisko?",click_map:"Dotknij mapy",q_uk_match:"Z jakiego kraju pochodzi:",q_uk_pin:"Gdzie to jest na mapie?",uk_hl_higher:"Wyżej ↑",uk_hl_lower:"Niżej ↓",uk_hl_prompt:"Który budynek jest wyższy?",spotter_no_region:"nie ma regionów – wpisz \"{code}\"!",ws_found:"Znalezione",ws_enter_word:"Wpisz słowo…",ws_check:"Sprawdź",ws_all_found:"Znaleziono wszystkie słowa!",ws_next_city:"Następne miasto",ws_duplicate:"✓ Już znalezione!",ws_invalid:"✕ Nieprawidłowe słowo",ws_lang_label:"Język",ws_letters_hint:"Twórz słowa z liter miasta",menu:"Menu",board:"Ranking",pass:"Paszport",
   fav_empty:"Nie zapisano jeszcze ulubionych",
   profile:"Profil",stats:"Statystyki",casual:"Zwykły",hardcore:"Trudny",rounds:"Rundy",
-  btn_collect:"Zbierz",btn_back:"Powrót do menu",btn_next:"Dalej →’",
+  btn_collect:"Zbierz",btn_back:"Powrót do menu",btn_next:"Dalej →",
   btn_again:"Zagraj ponownie",btn_menu:"Menu",btn_adapt:"Dostosuj",
   spotter_title:"\u{1F697} Spotter Podróżnika",
   spotter_hint:"Widzisz tablicę? Zapisz jń… od razu!",
@@ -1657,7 +1657,7 @@ fr:{
   play:"JOUER",again:"REJOUER",menu:"Menu principal",board:"Classement",pass:"Passeport",
   fav_empty:"Aucun favori enregistré pour l'instant",
   profile:"Profil",stats:"Statistiques",casual:"Casual",hardcore:"Hardcore",rounds:"Manches",
-  btn_collect:"Collecter",btn_back:"Retour au menu",btn_next:"Suivant →’",
+  btn_collect:"Collecter",btn_back:"Retour au menu",btn_next:"Suivant →",
   btn_again:"Rejouer",btn_menu:"Menu principal",btn_adapt:"Adapter",
   spotter_title:"\u{1F697} Spotter de voyage",
   spotter_hint:"Vu une plaque ? Notez-la !",
@@ -1714,7 +1714,7 @@ es:{
   play:"JUGAR",again:"JUGAR DE NUEVO",menu:"Menú principal",board:"Clasificación",pass:"Pasaporte",
   fav_empty:"Aún no hay favoritos guardados",
   profile:"Perfil",stats:"Estadísticas",casual:"Casual",hardcore:"Hardcore",rounds:"Rondas",
-  btn_collect:"Coleccionar",btn_back:"Volver al menú",btn_next:"Siguiente →’",
+  btn_collect:"Coleccionar",btn_back:"Volver al menú",btn_next:"Siguiente →",
   btn_again:"Jugar de nuevo",btn_menu:"Menú principal",btn_adapt:"Adaptar",
   spotter_title:"\u{1F697} Spotter de viaje",
   spotter_hint:"¿Has visto una matrícula? ¡Anótala!",
@@ -1771,7 +1771,7 @@ it:{
   play:"GIOCA",again:"GIOCA ANCORA",menu:"Menu principale",board:"Classifica",pass:"Passaporto",
   fav_empty:"Nessun preferito salvato ancora",
   profile:"Profilo",stats:"Statistiche",casual:"Casual",hardcore:"Hardcore",rounds:"Round",
-  btn_collect:"Colleziona",btn_back:"Torna al menu",btn_next:"Avanti →’",
+  btn_collect:"Colleziona",btn_back:"Torna al menu",btn_next:"Avanti →",
   btn_again:"Gioca ancora",btn_menu:"Menu principale",btn_adapt:"Adatta",
   spotter_title:"\u{1F697} Spotter di viaggio",
   spotter_hint:"Hai visto una targa? Registrala subito!",
@@ -1828,7 +1828,7 @@ nl:{
   play:"SPELEN",again:"OPNIEUW SPELEN",menu:"Hoofdmenu",board:"Ranglijst",pass:"Paspoort",
   fav_empty:"Nog geen favorieten opgeslagen",
   profile:"Profiel",stats:"Statistieken",casual:"Casual",hardcore:"Hardcore",rounds:"Rondes",
-  btn_collect:"Verzamelen",btn_back:"Terug naar menu",btn_next:"Volgende →’",
+  btn_collect:"Verzamelen",btn_back:"Terug naar menu",btn_next:"Volgende →",
   btn_again:"Opnieuw spelen",btn_menu:"Hoofdmenu",btn_adapt:"Aanpassen",
   spotter_title:"\u{1F697} Reisspotter",
   spotter_hint:"Kenteken gezien? Noteer het nu!",
@@ -1866,7 +1866,7 @@ pt:{
   play:"JOGAR",again:"JOGAR NOVAMENTE",menu:"Menu principal",board:"Classificaçß£o",pass:"Passaporte",
   fav_empty:"Nenhum favorito guardado ainda",
   profile:"Perfil",stats:"Estatß­sticas",casual:"Casual",hardcore:"Hardcore",rounds:"Rodadas",
-  btn_collect:"Coletar",btn_back:"Voltar ao menu",btn_next:"Próximo →’",
+  btn_collect:"Coletar",btn_back:"Voltar ao menu",btn_next:"Próximo →",
   btn_again:"Jogar novamente",btn_menu:"Menu principal",btn_adapt:"Adaptar",
   spotter_title:"\u{1F697} Spotter de viagem",
   spotter_hint:"Viu uma placa? Registre agora!",
@@ -1904,7 +1904,7 @@ ro:{
   play:"JOACń‚",again:"JOACń‚ DIN NOU",menu:"Meniu principal",board:"Clasament",pass:"PaÈ™aport",
   fav_empty:"Nu există favorite salvate încă",
   profile:"Profil",stats:"Statistici",casual:"Casual",hardcore:"Hardcore",rounds:"Runde",
-  btn_collect:"Colecteazńƒ",btn_back:"ßŽnapoi la meniu",btn_next:"Urmńƒtor →’",
+  btn_collect:"Colecteazńƒ",btn_back:"ßŽnapoi la meniu",btn_next:"Urmńƒtor →",
   btn_again:"Joacńƒ din nou",btn_menu:"Meniu principal",btn_adapt:"Adapteazńƒ",
   spotter_title:"\u{1F697} Spotter de cńƒlńƒtorie",
   spotter_hint:"Ai vńƒzut o plńƒcuÈ›ńƒ? ßŽnregistreaz-o acum!",
@@ -1942,7 +1942,7 @@ hu:{
   play:"JßTß‰K",again:"ßšJRA JßTSZANI",menu:"FŚ‘menü",board:"Rangsor",pass:"ßštlevél",
   fav_empty:"Még nincsenek mentett kedvencek",
   profile:"Profil",stats:"Statisztikák",casual:"KönnyŚ±",hardcore:"Nehéz",rounds:"Körök",
-  btn_collect:"GyŚ±jt",btn_back:"Vissza a fŚ‘menübe",btn_next:"Tovább →’",
+  btn_collect:"GyŚ±jt",btn_back:"Vissza a fŚ‘menübe",btn_next:"Tovább →",
   btn_again:"ßšjra játszani",btn_menu:"FŚ‘menü",btn_adapt:"Módosß­t",
   spotter_title:"\u{1F697} Utazó Spotter",
   spotter_hint:"Rendszámot láttál? Jegyezd fel azonnal!",
@@ -1980,7 +1980,7 @@ cs:{
   play:"HRÁT",again:"HRÁT ZNOVU",menu:"Hlavní menu",board:"Ś½ebŚ™íńek",pass:"Pas",
   fav_empty:"Zatím žádné oblíbené uloženy",
   profile:"Profil",stats:"Statistiky",casual:"Casual",hardcore:"Hardcore",rounds:"Kola",
-  btn_collect:"Sbírat",btn_back:"Zpń›t do menu",btn_next:"DalŚ¡í →’",
+  btn_collect:"Sbírat",btn_back:"Zpń›t do menu",btn_next:"DalŚ¡í →",
   btn_again:"Hrát znovu",btn_menu:"Hlavní menu",btn_adapt:"PŚ™izpŚ¯sobit",
   spotter_title:"\u{1F697} Cestovní Spotter",
   spotter_hint:"Vidń›l jsi SPZ? ZapiŚ¡ ji hned!",
@@ -2018,7 +2018,7 @@ sk:{
   play:"HRAŚ¤",again:"HRAŚ¤ ZNOVA",menu:"Hlavné menu",board:"Rebrß­ńek",pass:"Pas",
   fav_empty:"Zatiaľ žiadne obľúbené uložené",
   profile:"Profil",stats:"Ś tatistiky",casual:"Casual",hardcore:"Hardcore",rounds:"Kolá",
-  btn_collect:"Zbierať",btn_back:"Späť do menu",btn_next:"ďalej →’",
+  btn_collect:"Zbierať",btn_back:"Späť do menu",btn_next:"ďalej →",
   btn_again:"HraŚ¥ znova",btn_menu:"Hlavné menu",btn_adapt:"Prispß´sobiŚ¥",
   spotter_title:"\u{1F697} Cestovný Spotter",
   spotter_hint:"Videl si EČV? Zaznań ju hneń!",
@@ -2056,7 +2056,7 @@ hr:{
   play:"IGRAJ",again:"IGRAJ PONOVO",menu:"Glavni izbornik",board:"Ljestvica",pass:"Putovnica",
   fav_empty:"Još nema spremljenih favorita",
   profile:"Profil",stats:"Statistike",casual:"Casual",hardcore:"Hardcore",rounds:"Runde",
-  btn_collect:"Sakupi",btn_back:"Natrag na izbornik",btn_next:"Sljedeće →’",
+  btn_collect:"Sakupi",btn_back:"Natrag na izbornik",btn_next:"Sljedeće →",
   btn_again:"Igraj ponovo",btn_menu:"Glavni izbornik",btn_adapt:"Prilagodi",
   spotter_title:"\u{1F697} Putni Spotter",
   spotter_hint:"Vidio registraciju? ZabiljeŚ¾i odmah!",
@@ -2094,7 +2094,7 @@ sl:{
   play:"IGRAJ",again:"IGRAJ ZNOVA",menu:"Glavni meni",board:"Lestvica",pass:"Potni list",
   fav_empty:"Še ni shranjenih priljubljenih",
   profile:"Profil",stats:"Statistike",casual:"Casual",hardcore:"Hardcore",rounds:"Runde",
-  btn_collect:"Zberi",btn_back:"Nazaj v meni",btn_next:"Naprej →’",
+  btn_collect:"Zberi",btn_back:"Nazaj v meni",btn_next:"Naprej →",
   btn_again:"Igraj znova",btn_menu:"Glavni meni",btn_adapt:"Prilagodi",
   spotter_title:"\u{1F697} Potovalni Spotter",
   spotter_hint:"Si videl tablico? ZapiŚ¡i jo takoj!",
@@ -2188,7 +2188,7 @@ bg:{
 el:{
   play:"Î Î‘Î™ÎžÎ•",again:"Î Î‘Î™ÎžÎ• ÎžÎ‘ÎÎ‘",menu:"ÎšÏÏÎ¹Î¿ Î¼ÎµÎ½Î¿Ï",board:"ÎšÎ±Ï„Î¬Ï„Î±Î¾Î·",pass:"Î”Î¹Î±Î²Î±Ï„Î®ÏÎ¹Î¿",
   profile:"Î ÏÎ¿Ï–Î¯Î»",stats:"Î£Ï„Î±Ï„Î¹ÏƒÏ„Î¹ÎºÎ¬",casual:"Î•ÏÎºÎ¿Î»Î¿",hardcore:"Î”ÏÏƒÎºÎ¿Î»Î¿",rounds:"Î“ÏÏÎ¿Î¹",
-  btn_collect:"Î£Ï…Î»Î»Î¿Î³Î®",btn_back:"Î Î¯ÏƒÏ‰ ÏƒÏ„Î¿ Î¼ÎµÎ½Î¿Ï",btn_next:"Î•Ï€ÏŒÎ¼ÎµÎ½Î¿ →’",
+  btn_collect:"Î£Ï…Î»Î»Î¿Î³Î®",btn_back:"Î Î¯ÏƒÏ‰ ÏƒÏ„Î¿ Î¼ÎµÎ½Î¿Ï",btn_next:"Î•Ï€ÏŒÎ¼ÎµÎ½Î¿ →",
   btn_again:"Î Î±Î¯Î¾Îµ Î¾Î±Î½Î¬",btn_menu:"ÎšÏÏÎ¹Î¿ Î¼ÎµÎ½Î¿Ï",btn_adapt:"Î ÏÎ¿ÏƒÎ±ÏÎ¼Î¿Î³Î®",
   spotter_title:"\u{1F697} Spotter Î¤Î±Î¾Î¹Î´Î¹Î¿Ï",
   spotter_hint:"Î•Î¯Î´ÎµÏ‚ Ï€Î¹Î½Î±ÎºÎ¯Î´Î±; ÎšÎ±Ï„Î±Ï‡ÏŽÏÎ·ÏƒÎ­ Ï„Î·Î½ Ï„ÏŽÏÎ±!",
@@ -2225,7 +2225,7 @@ el:{
 da:{
   play:"SPIL",again:"SPIL IGEN",menu:"Hovedmenu",board:"Rangliste",pass:"Pas",
   profile:"Profil",stats:"Statistik",casual:"Casual",hardcore:"Hardcore",rounds:"Runder",
-  btn_collect:"Samle",btn_back:"Tilbage til menu",btn_next:"Nß¦ste →’",
+  btn_collect:"Samle",btn_back:"Tilbage til menu",btn_next:"Nß¦ste →",
   btn_again:"Spil igen",btn_menu:"Hovedmenu",btn_adapt:"Tilpas",
   spotter_title:"\u{1F697} Rejse-Spotter",
   spotter_hint:"Set en nummerplade? Notér den nu!",
@@ -2262,7 +2262,7 @@ da:{
 sv:{
   play:"SPELA",again:"SPELA IGEN",menu:"Huvudmeny",board:"Rankningslista",pass:"Pass",
   profile:"Profil",stats:"Statistik",casual:"Casual",hardcore:"Hardcore",rounds:"Rundor",
-  btn_collect:"Samla",btn_back:"Tillbaka till menyn",btn_next:"Nästa →’",
+  btn_collect:"Samla",btn_back:"Tillbaka till menyn",btn_next:"Nästa →",
   btn_again:"Spela igen",btn_menu:"Huvudmeny",btn_adapt:"Anpassa",
   spotter_title:"\u{1F697} Resespotter",
   spotter_hint:"Sett en skylt? Notera den nu!",
@@ -2299,7 +2299,7 @@ sv:{
 fi:{
   play:"PELAA",again:"PELAA UUDELLEEN",menu:"Päävalikko",board:"Tulostaulukko",pass:"Passi",
   profile:"Profiili",stats:"Tilastot",casual:"Helppo",hardcore:"Vaikea",rounds:"Kierrokset",
-  btn_collect:"Kerää",btn_back:"Takaisin päävalikkoon",btn_next:"Seuraava →’",
+  btn_collect:"Kerää",btn_back:"Takaisin päävalikkoon",btn_next:"Seuraava →",
   btn_again:"Pelaa uudelleen",btn_menu:"Päävalikko",btn_adapt:"Muokkaa",
   spotter_title:"\u{1F697} Matkaspotter",
   spotter_hint:"Näitkö rekisterikilven? Kirjaa se heti!",
@@ -2336,7 +2336,7 @@ fi:{
 et:{
   play:"MÄNGI",again:"MÄNGI UUESTI",menu:"Peamenüü",board:"Edetabel",pass:"Pass",
   profile:"Profiil",stats:"Statistika",casual:"Lihtne",hardcore:"Raske",rounds:"Voorud",
-  btn_collect:"Kogu",btn_back:"Tagasi menüüsse",btn_next:"Järgmine →’",
+  btn_collect:"Kogu",btn_back:"Tagasi menüüsse",btn_next:"Järgmine →",
   btn_again:"Mängi uuesti",btn_menu:"Peamenüü",btn_adapt:"Kohanda",
   spotter_title:"\u{1F697} Reisispotter",
   spotter_hint:"Nägid numbrimärki? Kirjuta kohe üles!",
@@ -2373,7 +2373,7 @@ et:{
 lv:{
   play:"SPń’Lń’T",again:"SPń’Lń’T Vń’LREIZ",menu:"Galvenń izvń“lne",board:"Vń“rtń“jums",pass:"Pase",
   profile:"Profils",stats:"Statistika",casual:"Viegls",hardcore:"GrŚ«ts",rounds:"Kńrtas",
-  btn_collect:"Savńkt",btn_back:"Atpakań¼ uz izvń“lni",btn_next:"Tńlńk →’",
+  btn_collect:"Savńkt",btn_back:"Atpakań¼ uz izvń“lni",btn_next:"Tńlńk →",
   btn_again:"Spń“lń“t vń“lreiz",btn_menu:"Galvenń izvń“lne",btn_adapt:"Pielńgot",
   spotter_title:"\u{1F697} Ceń¼ojuma Spotter",
   spotter_hint:"Redzń“ji numura zń«mi? Reń£istrń“ to tagad!",
@@ -2410,7 +2410,7 @@ lv:{
 lt:{
   play:"Ś½AISTI",again:"Ś½AISTI IŚ  NAUJO",menu:"Pagrindinis meniu",board:"Reitingas",pass:"Pasas",
   profile:"Profilis",stats:"Statistika",casual:"Lengvas",hardcore:"Sunkus",rounds:"Raundai",
-  btn_collect:"Rinkti",btn_back:"Atgal ń¯ meniu",btn_next:"Kitas →’",
+  btn_collect:"Rinkti",btn_back:"Atgal ń¯ meniu",btn_next:"Kitas →",
   btn_again:"Ś½aisti iŚ¡ naujo",btn_menu:"Pagrindinis meniu",btn_adapt:"Pritaikyti",
   spotter_title:"\u{1F697} Kelionń—s Spotter",
   spotter_hint:"Matei numerń¯? UŚ¾raŚ¡yk dabar!",
@@ -2447,7 +2447,7 @@ lt:{
 mt:{
   play:"ILGń¦AB",again:"ILGń¦AB MILL-ń DID",menu:"Menu Prinń‹ipali",board:"Klassifika",pass:"Passaport",
   profile:"Profil",stats:"Statistiń‹i",casual:"Casual",hardcore:"Hardcore",rounds:"Rawnd",
-  btn_collect:"Iń¡bor",btn_back:"Lura gń§all-menu",btn_next:"Li Jmiss →’",
+  btn_collect:"Iń¡bor",btn_back:"Lura gń§all-menu",btn_next:"Li Jmiss →",
   btn_again:"Ilgń§ab mill-ń¡did",btn_menu:"Menu Prinń‹ipali",btn_adapt:"Adatta",
   spotter_title:"\u{1F697} Spotter tal-Vjań¡ń¡",
   spotter_hint:"Rajt pjanń‹a? Irreń¡istraha issa!",
@@ -2484,7 +2484,7 @@ mt:{
 ga:{
   play:"IMIR",again:"IMIR ARßS",menu:"Prß­omh-roghchlár",board:"Clár na mBuaiteoirß­",pass:"Pas",
   profile:"Próifß­l",stats:"Staitisticß­",casual:"ß‰asca",hardcore:"Deacair",rounds:"Babhtaß­",
-  btn_collect:"Bailigh",btn_back:"Ar ais go dtß­ an roghchlár",btn_next:"Ar Aghaidh →’",
+  btn_collect:"Bailigh",btn_back:"Ar ais go dtß­ an roghchlár",btn_next:"Ar Aghaidh →",
   btn_again:"Imir arß­s",btn_menu:"Prß­omh-roghchlár",btn_adapt:"Oirißºnaigh",
   spotter_title:"\u{1F697} Spotter Taistil",
   spotter_hint:"Chonaic tßº pláta? Taifeadaigh anois é!",
@@ -17852,7 +17852,7 @@ function finishOb(){
   const l=S.obLang||"de";const aud=S.obAud||"adults";
   localStorage.setItem("gq_onboarding",JSON.stringify({done:true,lang:l,diff:"casual",aud:aud}));
   localStorage.setItem("gq_lang",l);
-  try{localStorage.setItem("gq_audience",aud);localStorage.setItem("gq_interests",JSON.stringify(S.obInt||[]));localStorage.setItem("gq_time",S.obTime||"mid");}catch(_e){}try{if(aud==='kids'){localStorage.setItem('gq_kids_mode','1');localStorage.setItem('gq_kids_grade','1');}else if(aud==='teens'){localStorage.setItem('gq_kids_mode','1');localStorage.setItem('gq_kids_grade','3');}else{localStorage.setItem('gq_kids_mode','0');}}catch(_kg){}
+  try{localStorage.setItem("gq_audience",aud);localStorage.setItem("gq_interests",JSON.stringify(S.obInt||[]));localStorage.setItem("gq_time",S.obTime||"mid");}catch(_e){}try{var _g=S.obGrade||'';if(aud==='kids'){localStorage.setItem('gq_kids_mode','1');localStorage.setItem('gq_kids_grade',(_g==='1'||_g==='2')?_g:'1');}else if(aud==='teens'){localStorage.setItem('gq_kids_mode','1');localStorage.setItem('gq_kids_grade',(_g==='3'||_g==='4')?_g:'3');}else{localStorage.setItem('gq_kids_mode','0');}}catch(_kg){}
   S.diff="casual";S.obStep=0;render();
 }
 const OB_LANGS=[["de","\u{1F1E9}\u{1F1EA}","Deutsch"],["en","\u{1F1EC}\u{1F1E7}","English"],["fr","\u{1F1EB}\u{1F1F7}","Fran\u00e7ais"],["es","\u{1F1EA}\u{1F1F8}","Espa\u00f1ol"],["it","\u{1F1EE}\u{1F1F9}","Italiano"],["pl","\u{1F1F5}\u{1F1F1}","Polski"]];
@@ -17877,11 +17877,12 @@ function renderOnboarding(step){
     <div class="ob-title">${t("pq_who")}</div>
     <div class="ob-dots">${dots}</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1rem 0">
-      ${_oT(A==="kids","S.obAud='kids';render()","\u{1F9D2}",t("pa_kid"))}
-      ${_oT(A==="teens","S.obAud='teens';render()","\u{1F9D1}",t("pa_teen"))}
+      ${_oT(A==="kids","S.obAud='kids';S.obGrade='';render()","\u{1F9D2}",t("pa_kid"))}
+      ${_oT(A==="teens","S.obAud='teens';S.obGrade='';render()","\u{1F9D1}",t("pa_teen"))}
       ${_oT(A==="adults","S.obAud='adults';render()","\u{1F464}",t("pa_adult"))}
       ${_oT(A==="family","S.obAud='family';render()","\u{1F46A}",t("pa_family"))}
     </div>
+    ${(A==='kids'||A==='teens')?`<div style="margin-bottom:.8rem"><div style="font-size:.72rem;color:var(--text3);font-weight:700;margin-bottom:6px;text-align:left">${t('kids_grade_label')}</div><div style="display:flex;gap:8px">${(A==='kids'?[['1','kids_grade_young'],['2','kids_grade_older']]:[['3','kids_grade_t3'],['4','kids_grade_t4']]).map(function(o){return '<button onclick="S.obGrade=\''+o[0]+'\';render()" style="flex:1;padding:.5rem;border-radius:8px;cursor:pointer;font-weight:700;font-size:.74rem;border:1.5px solid '+(S.obGrade===o[0]?'#10b981':'var(--border)')+';background:'+(S.obGrade===o[0]?'#10b981':'var(--bg2)')+';color:'+(S.obGrade===o[0]?'#fff':'var(--text)')+'">'+t(o[1])+'</button>';}).join('')}</div></div>`:''}
     <button class="btn-p" onclick="S.obStep=2;render()">${t("btn_next")}</button>
     <button class="btn-g" style="margin-bottom:.2rem" onclick="S.obStep=0;render()">${t("ob_back")}</button>
     <button class="btn-g" style="margin-bottom:0;font-size:.8rem;color:var(--text3);background:transparent;border:none;text-decoration:underline" onclick="finishOb()">${t("tour_skip")}</button>

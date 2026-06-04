@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 493. FIX (Regression aus 492): Onboarding-Gate unterdrueckte ALLE, weil die App jeden Besucher anonym anmeldet (signInAnonymously) -> sbUser immer gesetzt. Gate prueft jetzt sbUser.is_anonymous: Onboarding erscheint wenn nicht-onboarded UND (kein User ODER anonymer User) UND Auth nicht pending. Registrierte ueberspringen, Erst-/Anonymnutzer (auch Inkognito) sehen es. verify 193/193, 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 494. Onboarding-Alter (auf Nutzerwunsch) + 2 Fixes: (1) Bei Auswahl Kind/Jugendlich erscheint darunter eine Altersstufen-Auswahl (Kind: 6-8/8-10, Jugendlich: 11-13/14-15) -> setzt gq_kids_grade praezise; nur bei Kind/Jugendlich sichtbar, keine Reibung fuer Erwachsene. finishOb nutzt S.obGrade (validiert je Audience). (2) btn_next: ueberfluessiges Hochkomma nach Pfeil in ALLEN Sprachen entfernt (Weiter →' -> Weiter →). (3) Landing: .nav-cta Kontrast gefixt (.nav-links a ueberschrieb color:#fff -> Spezifitaet erhoeht, weisser Text auf gruen). verify 193/193, 0 THROW.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

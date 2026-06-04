@@ -465,3 +465,7 @@ Die 5 Lernspiele liefern jetzt `meta`-Erklärungen nach der Antwort (Kontinent: 
 ## Phase 493 — FIX: Onboarding-Gate (anonyme = Erstnutzer)
 **Datum:** 2026-06-03
 Regression aus Phase 492: Die App meldet jeden Besucher anonym an (`signInAnonymously`) → `sbUser` ist immer gesetzt → `!sbUser`-Gate unterdrückte das Onboarding für ALLE (Symptom: in Inkognito kein Onboarding). Fix: Gate prüft `sbUser.is_anonymous` → Onboarding wenn nicht-onboarded UND (kein User ODER anonym) UND `!sbAuthPending`. Registrierte überspringen, Erst-/Anonymnutzer sehen es. verify 193/193, 0 THROW.
+
+## Phase 494 — Onboarding-Alter + btn_next-Fix + Landing-Kontrast
+**Datum:** 2026-06-03
+(1) **Alters-Auswahl im Onboarding:** Bei „Kind"/„Jugendlich" erscheint darunter eine Stufen-Auswahl (Kind: 6–8/8–10 · Jugendlich: 11–13/14–15) → setzt `gq_kids_grade` präzise via `S.obGrade`; nur bei Kind/Jugendlich sichtbar (keine Reibung für Erwachsene). `finishOb` validiert die Stufe je Audience. (2) `btn_next`: überflüssiges `’` nach dem Pfeil in allen Sprachen entfernt. (3) **landing.html:** `.nav-cta`-Kontrast gefixt — `.nav-links a` (spezifischer) überschrieb `color:#fff`; jetzt `.nav-links a.nav-cta` → weißer Text auf Grün lesbar. verify 193/193, 0 THROW.
