@@ -344,3 +344,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 **Datum:** 2026-06-03
 **Analyse:** Bestenlisten lesen aus `leaderboard_weekly` STRENG pro Modus (`.eq("mode",mode)`) + feste 10 Runden; keine globale Rangliste → strukturell fair. Getrennte Kinder-Bestenliste unnötig.
 **Feature:** Übungsmodus (gq_practice-Toggle): saveSession() schreibt nur lokale Historie, bricht VOR Leaderboard-Insert/Offline-Queue ab. Keine ROUNDS-/Struktur-Änderung → Fairness unberührt. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.
+
+## Phase 465 — Home-Strips poliert
+**Datum:** 2026-06-03
+**UX:** (1) Zuletzt-gespielt zeigt Titelteil nach ': ' (unterscheidbar statt 4× „Regionale Kultur: …"). (2) „Für dich" via _forYouCats() auf ~6 aufgefüllt (topCats + _getInterestCats + populäre Fallbacks, kindgefiltert, dedupliziert). (3) Begrüßung umbruchfähig statt abgeschnitten (nowrap/ellipsis entfernt). verify 191/191, validate 0 Warnings.

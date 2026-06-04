@@ -3907,6 +3907,7 @@ function _travelBanner(){
   return '<div style="position:fixed;left:12px;right:12px;bottom:70px;z-index:9000;background:var(--bg2);border:1.5px solid #6366f1;border-radius:14px;padding:.7rem .9rem;box-shadow:0 6px 24px rgba(0,0,0,.35)"><div style="font-weight:800;font-size:.9rem;margin-bottom:.5rem">'+t('travel_title')+'</div><div style="display:flex;gap:8px;align-items:center"><button onclick="_dismissTravel();S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F697 '+t('travel_plates')+'</button><button onclick="_dismissTravel();S._spotterTab=\'waggons\';S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F686 '+t('travel_trains')+'</button><button onclick="_dismissTravel()" class="btn-g" style="margin:0;background:transparent;width:auto;padding:.4rem .6rem">✕</button></div></div>';
 }
 
+function _forYouCats(){var out=[],seen={};var km=_getKidsMode();function add(arr){(arr||[]).forEach(function(k){if(k&&!seen[k]&&MODE_CATS[k]&&(!km||KIDS_CATS.has(k))){seen[k]=1;out.push(k);}});}add(_getTopCats(6));add(_getInterestCats());add(['pure_geo','tiere','games','capitals','sport','astronomie','themeparks','hunde','map_mode']);return out.slice(0,6);}
 function _renderPlaylistStrip(title,icon,cats,km){var ks=(cats||[]).filter(function(k){return MODE_CATS[k]&&(!km||KIDS_CATS.has(k));});if(!ks.length)return '';var items=ks.map(function(k){var c=MODE_CATS[k];return '<button onclick="window.filterByCategory(\''+k+'\');render()" style="display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:80px;width:80px;padding:8px 5px;background:var(--bg2);border:1.5px solid var(--border);border-radius:11px;cursor:pointer;flex-shrink:0;line-height:1.15;text-align:center"><span style="font-size:1.35rem">'+c.icon+'</span><span style="font-size:.62rem;color:var(--text2);font-weight:600;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+c.label+'</span></button>';}).join('');return '<div style="padding:7px 0 3px"><div style="font-size:.72rem;font-weight:800;color:var(--text3);letter-spacing:.4px;margin:0 0 6px 2px">'+icon+' '+esc(title)+'</div><div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:5px;scrollbar-width:none">'+items+'</div></div>';}
 const MODE_CATS={
   pure_geo:{label:"Pure Geo",icon:"\u{1F30D}",modes:["city","flag","capital","river","landmark","park","unesco","citymark","subway","flagsel","rcapital","rcity","rriver","river_real","logic_grid","travel_route","flag_fusion","climate_mystery","alpha_sprint","timezone_jumper","wappen_meister","slf","hl_b_rain","hl_b_temp","hl_b_sun","hl_b_vulc","hl_b_isl","hl_b_tz","hl_b_founded","river_map","unesco_map","wort_schmiede","uk_kontinent_mitte","uk_sort_kontinente","uk_sort_ozeane","uk_breitengrad_match","odd_one_out","clue_country"],cost:0},
@@ -16990,7 +16991,7 @@ function renderRecentBar(){
     var title=modeTitle(m);
     return'<button onclick="startGame(\''+mid+'\')" style="display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:76px;max-width:92px;width:76px;padding:7px 5px;background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;cursor:pointer;flex-shrink:0;line-height:1.2;text-align:center" title="'+title+'">'
       +'<span style="font-size:1.3rem">'+m.icon+'</span>'
-      +'<span style="font-size:.58rem;color:var(--text2);font-weight:600;overflow:hidden;width:100%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-word;hyphens:auto">'+title+'</span>'
+      +'<span style="font-size:.58rem;color:var(--text2);font-weight:600;overflow:hidden;width:100%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-word;hyphens:auto">'+(title.indexOf(': ')>=0?title.substring(title.indexOf(': ')+2):title)+'</span>'
       +'</button>';
   }).join('');
   bar.innerHTML='<div style="padding:8px 0 6px"><div style="font-size:.63rem;font-weight:700;color:var(--text3);letter-spacing:.7px;margin-bottom:5px">ZULETZT GESPIELT</div>'
@@ -17224,7 +17225,7 @@ function renderHomeTab(){
   const _streakBadge=_streakN>0?`<div style="display:flex;align-items:center;gap:3px;white-space:nowrap;background:rgba(239,68,68,.13);border-radius:16px;padding:.18rem .55rem;font-size:.78rem;font-weight:700;color:#ef4444;border:1px solid rgba(239,68,68,.22)">\u{1F525} ${_streakN}${_streakN===1?' Tag':' Tage'}</div>`:'';
   const _hdr=_li
     ?`<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
-        <div style="display:flex;align-items:center;gap:8px;min-width:0"><div style="font-size:1.05rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t("home_hi",{name:_un})}</div>${_streakBadge}</div>
+        <div style="display:flex;align-items:center;gap:8px;min-width:0"><div style="font-size:1.05rem;font-weight:700;color:var(--text);line-height:1.2">${t("home_hi",{name:_un})}</div>${_streakBadge}</div>
         <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
           <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
           <button onclick="openFeedback()" title="Feedback senden" aria-label="Feedback" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">💡</button>
@@ -17233,7 +17234,7 @@ function renderHomeTab(){
         </div>
       </div>`
     :`<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:.85rem 1rem .6rem;margin-bottom:.1rem">
-        <div style="display:flex;align-items:center;gap:8px;min-width:0"><div style="font-size:1.05rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t("home_guest")}</div>${_streakBadge}</div>
+        <div style="display:flex;align-items:center;gap:8px;min-width:0"><div style="font-size:1.05rem;font-weight:700;color:var(--text);line-height:1.2">${t("home_guest")}</div>${_streakBadge}</div>
         <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
           <button onclick="S.tab='profil';render()" title="${t('home_login_btn')}" aria-label="${t('home_login_btn')}" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👤</button>
           <button onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bg2);color:var(--text2,#94a3b8);border:1px solid var(--border,#334155);font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">❓</button>
@@ -17264,7 +17265,7 @@ function renderHomeTab(){
       const _km=_getKidsMode();
       const _tp=_getTotalPlays();
       let _ph='';
-      var _fy=_tp>=10?_getTopCats(3):_getInterestCats();
+      var _fy=_forYouCats();
       if(_fy.length) _ph+=_renderPlaylistStrip(t('pl_foryou'),'⭐',_fy,_km);
       PLAYLISTS.forEach(function(pl){_ph+=_renderPlaylistStrip(t(pl.key),pl.icon,pl.cats,_km);});
       return _ph;

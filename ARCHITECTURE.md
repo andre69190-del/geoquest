@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 464 (Stand: Juni 2026)
+**Version:** Phase 465 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.85 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1168,6 +1168,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **462** | patch_462.py | **Klassenstufen: _kidLevelMax() liest gq_kids_grade (1=6-8 J./Kl.1-2 -> nur Level 1; sonst 2=8-10 J./Kl.3-4 -> Level 1-2). _kidHidden nutzt die Schwelle. Auswahl im Einstellungs-Modal. Macht Kinder-Modus altersgerechter (junge Kinder nur leichteste Spiele). Standard=2 -> kein Regress. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
 | **463** | patch_463.py | **Eltern-PIN: Kinder-Modus mit 4-stelligem PIN sicherbar. _toggleKidsMode fragt beim Ausschalten den PIN ab (renderPinModal, _pinSubmit/_pinRemove, gq_kids_pin). Setzen/Aendern/Entfernen im Einstellungs-Modal. Kinder koennen den Kinder-Modus nicht mehr selbst abschalten. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
 | **464** | patch_464.py | **Uebungsmodus ohne Wertung: gq_practice-Toggle (Einstellungen); saveSession() schreibt im Uebungsmodus nur lokale Historie und bricht VOR Leaderboard-Insert/Offline-Queue ab. Keine ROUNDS-/Struktur-Aenderung -> Bestenlisten bleiben fair. Code-Analyse bestaetigt: leaderboard_weekly ist streng pro Modus + feste 10 Runden, keine globale Rangliste -> strukturell fair, getrennte Kinder-Bestenliste unnoetig. i18n DE/EN/PL. verify 191/191, validate 0 Warnings.** |
+| **465** | patch_465.py | **Home-Strips poliert: (1) Zuletzt-gespielt zeigt unterscheidbaren Titelteil nach ': ' (statt 4x 'Regionale Kultur: ...'). (2) 'Fuer dich' via _forYouCats() auf ~6 Vorschlaege aufgefuellt (topCats + Interessen + populaere Fallbacks, kindgefiltert, dedupliziert). (3) Begruessung darf umbrechen statt abzuschneiden (kein nowrap/ellipsis mehr). verify 191/191, validate 0 Warnings.** |
 
 ---
 
