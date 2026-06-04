@@ -433,3 +433,7 @@ Neues `smoke_test.js`: lädt `GeoQuest.html` in eine Node-VM mit Browser-Stubs, 
 ## Phase 485 — Altersstufen 3+4 (11–13 / 14–15)
 **Datum:** 2026-06-03
 `_kidLevelMax` 1→4 (`gq_kids_grade` 1/2/3/4). `_modeLevel`: Erwachsenen-Trivia (HARD-Keywords + Jahr/Metacritic-ID-Signale) → **Level 5** statt 3, bleibt damit selbst für Stufe 4 (14–15) ausgeblendet (nur 16+). Grade-Selektor auf 4 Stufen erweitert (6–8 · 8–10 · 11–13 · 14–15) + flex-wrap, i18n `kids_grade_t3/t4` de/en/pl. verify 193/193, validate 0, Rauchtest 0 THROW.
+
+## Phase 486 — Lernspiel 1/5: Kompass & Himmelsrichtungen
+**Datum:** 2026-06-03
+`kompass_richtung` (map_mode): Pfeil-Emoji → Himmelsrichtung antippen (`uk_match`). Mitwachsend: Stufe 1 = 4 Hauptrichtungen, ab Stufe 2 alle 8. Generativ/spracharm, länderübergreifend. i18n `mt_kompass`/`kompass_prompt`/`dir_*` (de/en/pl), `_modeLevel=1`. Lehrplan KS1/KS2 Karten-Orientierung. 999→1000 Modi. verify 193/193, Rauchtest 0 THROW.

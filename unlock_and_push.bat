@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 485. Altersstufen erweitert: _kidLevelMax jetzt 1-4 (gq_kids_grade 1/2/3/4). _modeLevel: Erwachsenen-Trivia (HARD-Keywords + Jahr/Metacritic-Signale) jetzt Level 5 statt 3 -> bleibt selbst fuer Stufe 4 (14-15) ausgeblendet, nur 16+ sieht es. Grade-Selektor in Einstellungen auf 4 Stufen erweitert (6-8/8-10/11-13/14-15) + flex-wrap, i18n kids_grade_t3/t4 de/en/pl. verify 193/193, Rauchtest 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 486. Lernspiel 1/5: Kompass & Himmelsrichtungen (kompass_richtung, Kategorie map_mode). genKompassQ: Pfeil-Emoji -> Himmelsrichtung antippen (uk_match-Typ). Waechst mit Alter: Stufe 1 nur 4 Hauptrichtungen, ab Stufe 2 alle 8 (N/NO/O/SO/S/SW/W/NW). Spracharm/generativ, laenderuebergreifend. i18n mt_kompass/kompass_prompt/dir_* de/en/pl. _modeLevel=1 (skaliert selbst). Lehrplan KS1/KS2 Karten-Orientierung. verify 193/193, Rauchtest 0 THROW, 1000 Modi.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
