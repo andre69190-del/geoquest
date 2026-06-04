@@ -356,3 +356,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 467 — UX-Review Paket 4+6 + Greeting-Fix
 **Datum:** 2026-06-03
 **UX:** (4) Zuletzt-gespielt: breite horizontale Wisch-Karten (152px, Icon links + 2-Zeilen-Text rechts). (6) _catTint(k): Pastell-rgba-Tönung pro Kategorie aus CAT_META-Interesse (geo/natur/mint/pop/kultur/sport/alltag), hell+dunkel-tauglich, gegen „Box-in-Box". (Fix) Begrüßung wieder einzeilig (white-space:nowrap zurück), 🌍 aus Gast-Gruß entfernt (war durch Phase-466-Umbruch in 2. Zeile gerutscht). verify 191/191, validate 0 Warnings.
+
+## Phase 468 — Greeting i18n-Fix
+**Datum:** 2026-06-03
+Phase 467 hatte die 🌍 nur aus DE/EN `home_guest` entfernt → PL/FR/ES/IT/BG hätten dasselbe Umbruch-Problem. Globe nun aus allen 7 Sprachen raus + polnische Korruption „GoŚ›ciu" → „Gościu" repariert. Alle Gast-Grüße einzeilig. verify 191/191, validate 0 Warnings.
