@@ -380,3 +380,7 @@ Ursache, warum deployte Änderungen „nicht ankamen": `vercel.json` hatte keine
 ## Phase 473 — Onboarding-Tipp korrigiert
 **Datum:** 2026-06-03
 `ob_help_hint` verwies auf „oben rechts auf ❓ tippen", aber das Header-❓ ist während des Onboardings nicht sichtbar. Umformuliert als Hinweis auf später/in der App (de/en/pl). verify 191/191, validate 0 Warnings.
+
+## Phase 474 — Kategorie-Strips: weicher Auslauf statt harter Abschnitt
+**Datum:** 2026-06-03
+`_renderPlaylistStrip` (Empfohlen + Gruppen) lief rechts hart abgeschnitten aus. Jetzt wie die Recent-Leiste: weicher rechter Verlauf (46px, ab 72% deckend), `padding-right:40px` als Anschnitt-Hinweis, `scroll-snap` fürs Wischen. verify 191/191, validate 0 Warnings.

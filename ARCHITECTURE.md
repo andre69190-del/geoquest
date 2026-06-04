@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 473 (Stand: Juni 2026)
+**Version:** Phase 474 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.86 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1177,6 +1177,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **471** | patch_471.py | **BUGFIX Kategorie-Karten klickbar: Die Pastell-Kategorie-Strips (#gq-playlists, 'Empfohlen fuer dich' + Gruppen) riefen filterByCategory(), das die Sektion zwar aufklappte - aber weit unten im #mainGamesGrid ausserhalb des Sichtfelds, also schien 'nichts zu passieren'. Neu: window._goCat(k) setzt S.filterCat, rendert (Filter greift via _scheduleFilterRefresh) und scrollt die aufgeklappte .accordion-section[data-cat=k] sanft ins Bild. Playlist-Karten-onclick auf _goCat umgestellt. verify 191/191, validate 0 Warnings.** |
 | **472** | patch_472.py | **DEPLOY-FIX (PWA Stale-Cache): vercel.json hatte KEINE Cache-Control-Header. Service Worker ist cache-first -> Browser cachte alte index.html/sw.js, neue Builds kamen nie an (Symptom: alle neuen Features gleichzeitig 'weg', konsistent mit EINER alten gecachten HTML). Jetzt Cache-Control:no-cache auf /sw.js (+no-store,must-revalidate), /index.html (/play+catch-all), /manifest.json. Session-Starter um Deploy-/Cache-Falle ergaenzt. Keine gen.py-Aenderung.** |
 | **473** | patch_473.py | **Onboarding-Tipp korrigiert: 'Oben rechts auf ? tippen' verwies auf das Hilfe-? im Header, das waehrend des Onboardings gar nicht sichtbar ist. Neu formuliert als Hinweis auf SPAETER in der App (de/en/pl). Keine Funktionsaenderung.** |
+| **474** | patch_474.py | **Kategorie-Strips (_renderPlaylistStrip: Empfohlen + Gruppen) liefen rechts hart abgeschnitten raus. Jetzt wie die Zuletzt-gespielt-Leiste: weicher rechter Verlauf (46px, ab 72% deckend), padding-right 40px fuer Anschnitt-Hinweis, scroll-snap fuers Wischen. verify 191/191, validate 0 Warnings.** |
 
 ---
 

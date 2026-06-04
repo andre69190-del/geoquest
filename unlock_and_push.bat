@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 473. Onboarding-Tipp korrigiert: 'Oben rechts auf ? tippen' verwies auf das Hilfe-? im Header, das waehrend des Onboardings gar nicht sichtbar ist. Neu formuliert als Hinweis auf SPAETER in der App (de/en/pl). Keine Funktionsaenderung.. verify: 191/191."
+git commit -m "Content: Phase 474. Kategorie-Strips (_renderPlaylistStrip: Empfohlen + Gruppen) liefen rechts hart abgeschnitten raus. Jetzt wie die Zuletzt-gespielt-Leiste: weicher rechter Verlauf (46px, ab 72% deckend), padding-right 40px fuer Anschnitt-Hinweis, scroll-snap fuers Wischen. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
