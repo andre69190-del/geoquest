@@ -461,3 +461,7 @@ Die 5 Lernspiele liefern jetzt `meta`-Erklärungen nach der Antwort (Kontinent: 
 ## Phase 492 — Onboarding: Gate-Fix + Audience→Stufe (Extra 1, schlank)
 **Datum:** 2026-06-03
 (a) **Gate-Fix:** Onboarding nur noch wenn nicht onboarded UND `!sbUser` UND `!sbAuthPending` → Eingeloggte (auch auf neuem Gerät) sehen die Abfragen nicht, kein Flash während Auth-Check; Direktstart via `/play` für Erstnutzer bleibt. (b) `finishOb` mappt „Wer spielt?" automatisch auf Stufe: kids→Kinder-Modus+Stufe 1, teens→Kinder-Modus+Stufe 3, sonst aus. **Keine extra Onboarding-Frage** (bewusst, Anti-Reibung). Themen-Fortschritt + separate Altersfrage **verworfen** (Aufwand/Nutzen, Reibung). verify 193/193, 0 THROW.
+
+## Phase 493 — FIX: Onboarding-Gate (anonyme = Erstnutzer)
+**Datum:** 2026-06-03
+Regression aus Phase 492: Die App meldet jeden Besucher anonym an (`signInAnonymously`) → `sbUser` ist immer gesetzt → `!sbUser`-Gate unterdrückte das Onboarding für ALLE (Symptom: in Inkognito kein Onboarding). Fix: Gate prüft `sbUser.is_anonymous` → Onboarding wenn nicht-onboarded UND (kein User ODER anonym) UND `!sbAuthPending`. Registrierte überspringen, Erst-/Anonymnutzer sehen es. verify 193/193, 0 THROW.

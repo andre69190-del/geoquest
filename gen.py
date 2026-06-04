@@ -14345,7 +14345,7 @@ function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.can
 
   /* Onboarding gate */
   const ob=loadOb();
-  if((\!ob||\!ob.done)&&(typeof sbUser==='undefined'||\!sbUser)&&(typeof sbAuthPending==='undefined'||\!sbAuthPending)){
+  if((\!ob||\!ob.done)&&(typeof sbUser==='undefined'||\!sbUser||sbUser.is_anonymous)&&(typeof sbAuthPending==='undefined'||\!sbAuthPending)){
     if(S.obStep<0)S.obStep=0;
     app.innerHTML=renderOnboarding(S.obStep);return;
   }

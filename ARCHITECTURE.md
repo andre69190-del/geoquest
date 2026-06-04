@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 492 (Stand: Juni 2026)
+**Version:** Phase 493 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.88 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1196,6 +1196,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **490** | patch_490.py | **Lernspiel 5/5: Jahreszeiten & Halbkugeln (jahreszeit_halbkugel, Kategorie klima). genJahreszeitQ: Flagge+Land + Monat -> welche Jahreszeit? (uk_match, 4 Jahreszeiten). Internationaler Twist: Suedhalbkugel umgekehrt (NZ Sept=Fruehling, Chile Aug=Winter). Mitwachsend: Stufe 1 nur Nordhalbkugel (einfach), ab Stufe 2 auch Suedhalbkugel. i18n mt_jahr/jahr_prompt/sea_*/mon_1..12 de/en/pl. Lehrplan KS2 Halbkugeln. ALLE 5 Lernspiele fertig. verify 193/193, 0 THROW, 1004 Modi.** |
 | **491** | patch_491.py | **Lern-Erklaerungen (Extra 2): die 5 neuen Lernspiele liefern jetzt meta-Erklaerungen nach der Antwort (Kontinent: Land->Kontinent, Tiere: Emoji->Lebensraum, Ozeane: ocf_*-Fakten, Jahreszeiten: Suedhalbkugel-Hinweis, Kompass: Karten-Tipp). uk_match-Renderer zeigt q.meta jetzt nach Antwort (sel!=null) - war vorher unsichtbar. i18n kompass_meta/ocf_*/jahr_meta_south de/en/pl. verify 193/193, 0 THROW.** |
 | **492** | patch_492.py | **Onboarding (Extra 1, bewusst schlank): (a) Gate-Fix - Onboarding erscheint nur noch wenn NICHT onboarded UND nicht eingeloggt (sbUser) UND Auth nicht pending. Eingeloggte auf neuem Geraet sehen die Abfragen nicht mehr, kein Flash waehrend Auth-Check. Direktstart via /play funktioniert weiterhin fuer Erstnutzer. (b) finishOb mappt 'Wer spielt?' automatisch auf Altersstufe: kids->Kinder-Modus+Stufe1, teens->Kinder-Modus+Stufe3, sonst Kinder-Modus aus. KEINE zusaetzliche Onboarding-Frage (bewusst, Anti-Reibung). Themen-Fortschritt + extra Altersfrage verworfen (nicht sinnvoll/nervig). verify 193/193, 0 THROW.** |
+| **493** | patch_493.py | **FIX (Regression aus 492): Onboarding-Gate unterdrueckte ALLE, weil die App jeden Besucher anonym anmeldet (signInAnonymously) -> sbUser immer gesetzt. Gate prueft jetzt sbUser.is_anonymous: Onboarding erscheint wenn nicht-onboarded UND (kein User ODER anonymer User) UND Auth nicht pending. Registrierte ueberspringen, Erst-/Anonymnutzer (auch Inkognito) sehen es. verify 193/193, 0 THROW.** |
 
 ---
 
