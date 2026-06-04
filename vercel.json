@@ -26,4 +26,8 @@
     { "src": "/landing.html",       "dest": "/landing.html" },
     { "src": "/impressum.html",     "dest": "/impressum.html" },
     { "src": "/datenschutz.html",   "dest": "/datenschutz.html" },
-    { "src": "/google1b9fe4381920a332.html", "dest": "/google1b9f
+    { "src": "/google1b9fe4381920a332.html", "dest": "/google1b9fe4381920a332.html", "headers": { "Content-Type": "text/html" } },
+    { "src": "/([^/]+\\.json)",     "dest": "/$1" },
+    { "src": "/(.*)",               "dest": "/index.html",         "headers": { "Cache-Control": "no-cache" } }
+  ]
+}

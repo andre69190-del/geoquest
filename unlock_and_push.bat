@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 474. Kategorie-Strips (_renderPlaylistStrip: Empfohlen + Gruppen) liefen rechts hart abgeschnitten raus. Jetzt wie die Zuletzt-gespielt-Leiste: weicher rechter Verlauf (46px, ab 72% deckend), padding-right 40px fuer Anschnitt-Hinweis, scroll-snap fuers Wischen. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 475. (1) FIX kaputte vercel.json: war als abgeschnittene 1817-Byte-Version (invalides JSON) committet worden (Sandbox-Mount-Truncation) - haette Vercel-Deploy gebrochen. Sandbox-seitig neu geschrieben, valide (14 Routes, Cache-Control intakt). (2) _goCat robuster: Filter garantiert anwenden + Retry + harter window.scrollTo-Fallback (smooth scrollIntoView scrollte in der PWA evtl. nicht -> Sektion klappte unsichtbar weit unten auf).. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

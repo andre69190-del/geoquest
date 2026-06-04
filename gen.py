@@ -16936,7 +16936,7 @@ function filterByCategory(cat){
   if(typeof window._initAllCarousels==='function')window._initAllCarousels();
 }
 window.filterByCategory=filterByCategory;
-function _goCat(k){try{if(typeof S!=='undefined')S.filterCat=k;if(typeof render==='function')render();setTimeout(function(){var s=document.querySelector('.accordion-section[data-cat="'+k+'"]');if(s&&s.scrollIntoView){s.scrollIntoView({behavior:'smooth',block:'start'});}},170);}catch(e){}}
+function _goCat(k){try{if(typeof S!=='undefined')S.filterCat=k;if(typeof render==='function')render();var tries=0;var iv=setInterval(function(){tries++;try{if(typeof window.filterByCategory==='function')window.filterByCategory(k);}catch(_e){}var s=document.querySelector('.accordion-section[data-cat="'+k+'"]');if(s){var y=0;try{y=s.getBoundingClientRect().top+(window.pageYOffset||document.documentElement.scrollTop||0)-8;}catch(_g){}try{window.scrollTo({top:y,behavior:'smooth'});}catch(_s){try{window.scrollTo(0,y);}catch(_s2){}}clearInterval(iv);}if(tries>=10)clearInterval(iv);},70);}catch(e){}}
 window._goCat=_goCat;
 window.toggleAccordion=function(header,catId){
   var content=header.nextElementSibling;

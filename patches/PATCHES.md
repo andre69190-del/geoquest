@@ -384,3 +384,7 @@ Ursache, warum deployte Änderungen „nicht ankamen": `vercel.json` hatte keine
 ## Phase 474 — Kategorie-Strips: weicher Auslauf statt harter Abschnitt
 **Datum:** 2026-06-03
 `_renderPlaylistStrip` (Empfohlen + Gruppen) lief rechts hart abgeschnitten aus. Jetzt wie die Recent-Leiste: weicher rechter Verlauf (46px, ab 72% deckend), `padding-right:40px` als Anschnitt-Hinweis, `scroll-snap` fürs Wischen. verify 191/191, validate 0 Warnings.
+
+## Phase 475 — FIX kaputte vercel.json + _goCat robuster
+**Datum:** 2026-06-03
+(1) Die in 473/474 mit-committete `vercel.json` war die abgeschnittene 1817-B-Sandbox-Version (invalides JSON) → hätte den Vercel-Deploy gebrochen. Sandbox-seitig neu geschrieben (2054 B, valide, 14 Routes, Cache-Control intakt). (2) `_goCat`: garantiert `filterByCategory(k)` + Retry-Loop + harter `window.scrollTo`-Fallback, weil `scrollIntoView({behavior:'smooth'})` in der installierten PWA evtl. nicht scrollte (Sektion klappte unsichtbar weit unten auf = „nichts passiert"). verify 191/191, validate 0 Warnings.
