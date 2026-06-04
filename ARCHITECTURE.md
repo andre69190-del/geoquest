@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 484 (Stand: Juni 2026)
+**Version:** Phase 485 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.87 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1188,6 +1188,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **482** | patch_482.py | **i18n Hot-Seat-Screen: alle hartkodierten DE-Strings (Titel, Untertitel, SPIELMODUS/RUBRIK/SPIEL WÄHLEN, Zufall/Rubrik/Spiel, Spiel starten, Handoff-Hinweis, Ich bin bereit, gewinnt/Unentschieden, Nochmal spielen, Hauptmenü) -> t() in de/en/pl (lv_*). Zurück-Button von links nach rechts (align-self:flex-end). verify 193/193.** |
 | **483** | patch_483.py | **i18n Einstellungs-Modal: alle Labels (Weitere Einstellungen, Heimatregion, Vorlesen/TTS, Hardcore-Modus, Raster, Reihen, Kategorie-Reihen, Feedback, App installieren, Schliessen, Reset-Toast, 'Nicht gesetzt') -> t() de/en/pl (set_*/ui_close). Nur im isolierten renderSettingsModal-Body ersetzt (Profil-/Home-Duplikate unberuehrt). Install-Button via String-Konkat (single-quoted String). verify 193/193.** |
 | **484** | patch_484.py | **Generator-Rauchtest (smoke_test.js): laedt GeoQuest.html in Node-VM mit Browser-Stubs, ruft jeden GEN-Modus 6x auf, meldet THROW (Crash) und persistentes NULL. Fand+fixte hl_river (genHLRiverQ: lokale 'const RIVERS_REAL=_rvPool' ueberschattete die globale -> TDZ-Crash; lokalen Schatten entfernt, _rvPool genutzt). Ergebnis: 998 getestet, 859 OK, 0 THROW, 120 ws_null (erwartet), 19 NULL (brauchen Live-Daten/Spielzustand - zur Sichtung). verify 193/193.** |
+| **485** | patch_485.py | **Altersstufen erweitert: _kidLevelMax jetzt 1-4 (gq_kids_grade 1/2/3/4). _modeLevel: Erwachsenen-Trivia (HARD-Keywords + Jahr/Metacritic-Signale) jetzt Level 5 statt 3 -> bleibt selbst fuer Stufe 4 (14-15) ausgeblendet, nur 16+ sieht es. Grade-Selektor in Einstellungen auf 4 Stufen erweitert (6-8/8-10/11-13/14-15) + flex-wrap, i18n kids_grade_t3/t4 de/en/pl. verify 193/193, Rauchtest 0 THROW.** |
 
 ---
 

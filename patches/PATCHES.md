@@ -429,3 +429,7 @@ Alle sichtbaren Labels im `renderSettingsModal` → `t()` (de/en/pl, `set_*` + `
 ## Phase 484 — Generator-Rauchtest + hl_river-Fix
 **Datum:** 2026-06-03
 Neues `smoke_test.js`: lädt `GeoQuest.html` in eine Node-VM mit Browser-Stubs, ruft **jeden** GEN-Modus 6× auf und meldet `THROW` (Crash) + persistentes `NULL`. Fand + fixte **`hl_river`** (`genHLRiverQ`: lokale `const RIVERS_REAL=_rvPool` überschattete die globale `RIVERS_REAL` → TDZ-Crash „before initialization"; lokalen Schatten entfernt, durchgängig `_rvPool`). Ergebnis: 998 getestet, 859 OK, **0 THROW**, 120 `ws_`-NULL (erwartet), 19 NULL (brauchen Live-Daten/Spielzustand → Sichtungsliste). verify 193/193, validate 0 Warnings.
+
+## Phase 485 — Altersstufen 3+4 (11–13 / 14–15)
+**Datum:** 2026-06-03
+`_kidLevelMax` 1→4 (`gq_kids_grade` 1/2/3/4). `_modeLevel`: Erwachsenen-Trivia (HARD-Keywords + Jahr/Metacritic-ID-Signale) → **Level 5** statt 3, bleibt damit selbst für Stufe 4 (14–15) ausgeblendet (nur 16+). Grade-Selektor auf 4 Stufen erweitert (6–8 · 8–10 · 11–13 · 14–15) + flex-wrap, i18n `kids_grade_t3/t4` de/en/pl. verify 193/193, validate 0, Rauchtest 0 THROW.
