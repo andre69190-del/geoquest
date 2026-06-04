@@ -14345,7 +14345,7 @@ function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.can
 
   /* Onboarding gate */
   const ob=loadOb();
-  if(\!ob||\!ob.done){
+  if((\!ob||\!ob.done)&&(typeof sbUser==='undefined'||\!sbUser)&&(typeof sbAuthPending==='undefined'||\!sbAuthPending)){
     if(S.obStep<0)S.obStep=0;
     app.innerHTML=renderOnboarding(S.obStep);return;
   }
@@ -17852,7 +17852,7 @@ function finishOb(){
   const l=S.obLang||"de";const aud=S.obAud||"adults";
   localStorage.setItem("gq_onboarding",JSON.stringify({done:true,lang:l,diff:"casual",aud:aud}));
   localStorage.setItem("gq_lang",l);
-  try{localStorage.setItem("gq_audience",aud);localStorage.setItem("gq_interests",JSON.stringify(S.obInt||[]));localStorage.setItem("gq_time",S.obTime||"mid");}catch(_e){}
+  try{localStorage.setItem("gq_audience",aud);localStorage.setItem("gq_interests",JSON.stringify(S.obInt||[]));localStorage.setItem("gq_time",S.obTime||"mid");}catch(_e){}try{if(aud==='kids'){localStorage.setItem('gq_kids_mode','1');localStorage.setItem('gq_kids_grade','1');}else if(aud==='teens'){localStorage.setItem('gq_kids_mode','1');localStorage.setItem('gq_kids_grade','3');}else{localStorage.setItem('gq_kids_mode','0');}}catch(_kg){}
   S.diff="casual";S.obStep=0;render();
 }
 const OB_LANGS=[["de","\u{1F1E9}\u{1F1EA}","Deutsch"],["en","\u{1F1EC}\u{1F1E7}","English"],["fr","\u{1F1EB}\u{1F1F7}","Fran\u00e7ais"],["es","\u{1F1EA}\u{1F1F8}","Espa\u00f1ol"],["it","\u{1F1EE}\u{1F1F9}","Italiano"],["pl","\u{1F1F5}\u{1F1F1}","Polski"]];

@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 491. Lern-Erklaerungen (Extra 2): die 5 neuen Lernspiele liefern jetzt meta-Erklaerungen nach der Antwort (Kontinent: Land->Kontinent, Tiere: Emoji->Lebensraum, Ozeane: ocf_*-Fakten, Jahreszeiten: Suedhalbkugel-Hinweis, Kompass: Karten-Tipp). uk_match-Renderer zeigt q.meta jetzt nach Antwort (sel!=null) - war vorher unsichtbar. i18n kompass_meta/ocf_*/jahr_meta_south de/en/pl. verify 193/193, 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 492. Onboarding (Extra 1, bewusst schlank): (a) Gate-Fix - Onboarding erscheint nur noch wenn NICHT onboarded UND nicht eingeloggt (sbUser) UND Auth nicht pending. Eingeloggte auf neuem Geraet sehen die Abfragen nicht mehr, kein Flash waehrend Auth-Check. Direktstart via /play funktioniert weiterhin fuer Erstnutzer. (b) finishOb mappt 'Wer spielt?' automatisch auf Altersstufe: kids->Kinder-Modus+Stufe1, teens->Kinder-Modus+Stufe3, sonst Kinder-Modus aus. KEINE zusaetzliche Onboarding-Frage (bewusst, Anti-Reibung). Themen-Fortschritt + extra Altersfrage verworfen (nicht sinnvoll/nervig). verify 193/193, 0 THROW.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
