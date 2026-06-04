@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 505. 29 neue L1/L2 Modi: Astronomie(+4 L1), Capitals(+4 L1), Hunde(+4 L1), Map-Mode(+4 L1), Ozeane(+4 L1), Pure-Geo(+4 L1), Themeparks(+4 L1), Games(+1 L2: hl_digital_vk). Alle hardcoded emoji/flag-basiert, mitwachsend. i18n DE/EN/PL. 1059→1088 Modi.. verify: 193/193."
+git commit -m "Content: Phase 506. MODE_CATS-Fix: alle 84 neuen Modi aus Phasen 498-505 in ihre jeweiligen Kategorien eingetragen (astronomie, autos, boardgames, capitals, eu_plates, fluesse, games, hunde, klima, map_mode, nparks, ozeane, pflanzen, pure_geo, sport, themeparks, tiere, zuege). Ohne diesen Fix waren die neuen Spiele im Kategorie-Grid unsichtbar. verify 193/193 ✓. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
