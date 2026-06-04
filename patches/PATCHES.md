@@ -481,3 +481,7 @@ Inhaltliche Prüfung pro Stufe (jüngste zuerst). Befund: `_modeLevel` stufte al
 ## Phase 497 — Altersstufen-Inhaltsprüfung: Stufe 2 (8–10 J.)
 **Datum:** 2026-06-03
 Nicht-curriculare Trivia-Kategorien (Games, Autos, Mythologie, Literatur, Brettspiele, Züge/Bahn-Technik, Konsolen) + Zeitleisten → **Level 3** (Teens), via Token-Treffer im Modus-Namen (`auto/games/konsole/hw_/myth/lit_/boardgame/zug/bahn/timeline`, fängt auch `hl_`-Varianten). Stufe 2 zeigt jetzt Geografie + Natur (Flaggen, Hauptstädte, Flüsse, Kontinente, Tiere, Pflanzen, Themenparks, Hunde, Astro/Geo-Vergleiche). verify 193/193, 0 THROW.
+
+## Phase 508 — UX: leere Kategorien im Kinder-Modus ausblenden
+**Datum:** 2026-06-03
+Neuer Helfer `_catKidCount(k)` (zählt nicht-`_kidHidden` Modi einer Kategorie). `_CAT_ORDER`-Kinderfilter blendet Kategorien mit 0 sichtbaren Modi für die aktuelle Stufe aus. Stufe 1: 14 statt 24 Kategorien (keine leeren Inseln/Gipfel/Autos/Games), Stufe 2: 22, Stufe 3/4: alle. Kein Kind landet mehr auf einer leeren Kategorie; Kategorien erscheinen mit dem Alter. verify 193/193, 0 THROW.
