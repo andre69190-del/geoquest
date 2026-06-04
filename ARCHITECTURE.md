@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 480 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.86 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Version:** Phase 481 (Stand: Juni 2026)
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.87 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -1184,6 +1184,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **478** | patch_478.py | **BUGFIX Runtime-Crash 'Land pinnen': 5 Pin-Generatoren referenzierten nicht existierende Daten-Variablen (ReferenceError -> lq() exhausted -> Spiel startet nicht). Korrigiert: park_pin_land THEMEPARKS_DATA->PARKS_DATA, serie_pin_land SERIEN_DATA->SERIEN_EXT_DATA, musik_pin_land MUSIK_DATA->MUSIK_EXT_DATA, web_pin_land WEBKULTUR_DATA->WEB_DATA, film_pin_land FILME_DATA->FILME_EXT_DATA. Felder verifiziert (park_land/produktionsland/herkunftsland/ursprungsland/drehort_land existieren). Audit: keine weiteren undefinierten/ungeschuetzten *_DATA-Referenzen (TECH_DATA ist typeof-guarded).** |
 | **479** | patch_479.py | **verify.py erweitert (Check 20: undefinierte/ungeschuetzte *_DATA-Referenzen -> faengt Runtime-Crash-Klasse aus Phase 478 ab, jetzt 192/192) + grosses 9-Dimensionen-Audit nach Umbau 467-478. Ergebnis: alle Dimensionen gruen, keine offenen kritischen/mittleren Punkte. Bericht in PHASE479_AUDIT.md. Beobachtungen (niedrig): i18n-Schuld im Einstellungs-Modal (vorbestehend), home_hi-Namensumbruch kosmetisch.** |
 | **480** | patch_480.py | **Spiel-Empfehlungen: _forYouGames() schlaegt einzelne Spiele vor (ab 5 Spielen, Mix 60% neu / 40% bewaehrt aus Top-Kategorien + Interessen, Kinder-Filter, nur spielbare GEN). Neue Home-Leiste '🎯 Empfohlene Spiele' (_renderGameStrip) mit Pastell-Tint + Mausrad/Touch-Scroll. Abschaltbar via Einstellungs-Schalter gq_rec_games (Standard an). i18n rec_games_title/rec_setting/rec_sub in de/en/pl.** |
+| **481** | patch_481.py | **RUNTIME-CRASH-FIX (viele Spiele): (1) _mkHLQ war NIE definiert -> alle HL-Vergleichsspiele in Inseln/Gipfel/Klima/Ozeane crashten (ReferenceError -> lq() exhausted). _mkHLQ jetzt definiert (2-Optionen beta_hl, respektiert lowerWins/unit). (2) genKlimaPinQ las window.LAND_LATLON (const ist nicht auf window) -> jede Frage null -> klima_pin_land leer. Auf echtes LAND_LATLON umgestellt. (3) _trackCatPlay implementiert (war undefiniert, in try/catch). ZUKUNFTS-SCHUTZ: verify.py Check 21 faengt jetzt undefinierte Helfer-Funktionen ab (193/193). Beide Fehlerklassen (undefinierte *_DATA + undefinierte Funktionen) werden nun beim Build erkannt.** |
 
 ---
 

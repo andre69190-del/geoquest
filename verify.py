@@ -537,6 +537,21 @@ if not _miss_d:
 else:
     fail("Undefinierte Daten-Variablen (Runtime-Crash-Gefahr): " + ", ".join(_miss_d))
 
+# -- 21. Undefinierte Helfer-Funktionen (Phase 481) -----------
+section("21. Undefinierte Helfer-Funktionen (Runtime)")
+# Aufrufe von App-Helfern (_xxx / genXxx / initXxx), NICHT als Methode (kein . davor)
+_js_nc = re.sub(r'/\*.*?\*/', '', js, flags=re.S)  # Block-Kommentare entfernen (Fehlalarme)
+_called_fn = set(re.findall(r'(?<![.\w])(_[a-zA-Z]\w*|gen[A-Z]\w*|init[A-Z]\w*)\s*\(', _js_nc))
+_def_fn  = set(re.findall(r'function\s+([A-Za-z_]\w*)\s*\(', js))
+_def_fn |= set(re.findall(r'\b([A-Za-z_]\w*)\s*=\s*function', js))
+_def_fn |= set(re.findall(r'window\.([A-Za-z_]\w*)\s*=', js))
+_def_fn |= set(re.findall(r'\b(?:const|let|var)\s+([A-Za-z_]\w*)\s*=', js))
+_miss_fn = sorted(f for f in _called_fn if f not in _def_fn)
+if not _miss_fn:
+    ok("Alle aufgerufenen Helfer-Funktionen sind definiert")
+else:
+    fail("Undefinierte Helfer-Funktionen (Runtime-Crash-Gefahr): " + ", ".join(_miss_fn))
+
 # =============================================================
 print("\n" + "=" * 58)
 total = len(PASS_LIST) + len(FAIL_LIST)

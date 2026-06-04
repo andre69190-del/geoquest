@@ -12563,6 +12563,18 @@ function genFluessHLExt(field,opts){var o=opts||{};var items=[];var _FD=FLUESSE_
     return{type:"beta_hl",prompt:o.prompt||_tc("Welcher Fluss ist l\u00e4nger?"),subj:"",opts:[a.name,b.name],ans:winner.name,meta:meta,lid:"fluss_"+field+"_"+ai+"_"+bi,cc:"de"};
   }return null;}
 window.genFluessHLExt=genFluessHLExt;
+function _mkHLQ(chosen,distractors,choices,prompt,o){o=o||{};
+  var pool=(choices&&choices.length)?choices.slice():[chosen].concat(distractors||[]);
+  pool=pool.filter(function(x){return x&&x.val!=null;});
+  if(pool.length<2)return null;
+  var a=null,b=null;
+  for(var i=0;i<pool.length&&!b;i++){for(var j=i+1;j<pool.length;j++){if(pool[j].val!==pool[i].val){a=pool[i];b=pool[j];break;}}}
+  if(!a||!b)return null;
+  var winner=o.lowerWins?(a.val<b.val?a:b):(a.val>b.val?a:b);
+  var unit=o.unit||"";
+  var meta=a.name+": "+a.val+(unit?" "+unit:"")+" \u00b7 "+b.name+": "+b.val+(unit?" "+unit:"");
+  return{type:"beta_hl",prompt:prompt||"",subj:"",opts:[a.name,b.name],ans:winner.name,meta:meta,lid:"hlx_"+a.name+"_"+b.name+"_"+unit,cc:"de"};}
+function _trackCatPlay(g){try{if(!g)return;var pl=JSON.parse(localStorage.getItem('gq_catplays')||'{}');pl[g]=(pl[g]||0)+1;localStorage.setItem('gq_catplays',JSON.stringify(pl));}catch(e){}}
 
 function genFluessMatchExt(field,prompt,fixedPool){var _FD=FLUESSE_DATA;
   var valid=Object.keys(_FD).filter(function(k){return Object.prototype.hasOwnProperty.call(_FD,k)&&_FD[k][field]!=null&&_FD[k][field]!=="";});
@@ -12680,7 +12692,7 @@ window.genGipfelPinQ=genGipfelPinQ;
 window.genGipfelTimelineQ=genGipfelTimelineQ;
 function genKlimaHLExt(field,opts){var o=opts||{};var items=[];var _KD=KLIMA_DATA;for(var k in _KD){var e=_KD[k];var v=e[field];if(v!=null){items.push({name:k,val:v,klimazone:e.klimazone||"",kontinent:e.kontinent||"",_raw:v});}}if(items.length<4)return null;items.sort(function(a,b){return b.val-a.val;});var pool=items.slice(0,40);var idx=Math.floor(Math.random()*pool.length);var chosen=pool[idx];var distractors=pool.filter(function(x){return x.name!==chosen.name;}).sort(function(){return Math.random()-0.5;}).slice(0,3);var choices=[chosen].concat(distractors).sort(function(){return Math.random()-0.5;});var prompt=o.prompt||_tc("Welches Land ist wärmer?");return _mkHLQ(chosen,distractors,choices,prompt,o);}
 function genKlimaMatchExt(field,prompt){var _KD=KLIMA_DATA;var pool=Object.keys(_KD).map(function(k){return{name:k,val:_KD[k][field]};}).filter(function(x){return x.val!=null;});if(pool.length<4)return null;var shuffled=pool.sort(function(){return Math.random()-0.5;}).slice(0,4);var correct=shuffled[0];var choices=shuffled.map(function(x){return x.name;}).sort(function(){return Math.random()-0.5;});return {type:"match",prompt:prompt||_tc("Welche Klimazone hat dieses Land?"),subject:correct.val,choices:choices,answer:correct.name,explanation:correct.name+" → "+correct.val};}
-function genKlimaPinQ(){var _KD=KLIMA_DATA;var keys=Object.keys(_KD);if(keys.length<1)return null;var k=keys[Math.floor(Math.random()*keys.length)];var e=_KD[k];var LL=window.LAND_LATLON||{};var coords=LL[k];if(!coords)return null;return {type:"pin",prompt:_tc("Wo liegt dieses Land (Klimazone: "+e.klimazone+")?"),subject:k,lat:coords[0],lng:coords[1],explanation:k+" ("+e.klimazone+")",radius:600};}
+function genKlimaPinQ(){var _KD=KLIMA_DATA;var keys=Object.keys(_KD);if(keys.length<1)return null;var k=keys[Math.floor(Math.random()*keys.length)];var e=_KD[k];var LL=(typeof LAND_LATLON!=='undefined'?LAND_LATLON:{});var coords=LL[k];if(!coords)return null;return {type:"pin",prompt:_tc("Wo liegt dieses Land (Klimazone: "+e.klimazone+")?"),subject:k,lat:coords[0],lng:coords[1],explanation:k+" ("+e.klimazone+")",radius:600};}
 window.genKlimaHLExt=genKlimaHLExt;
 window.genKlimaMatchExt=genKlimaMatchExt;
 window.genKlimaPinQ=genKlimaPinQ;

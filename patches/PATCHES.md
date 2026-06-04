@@ -408,3 +408,12 @@ Symptom „wischen geht nicht": Am Desktop kein Touch + keine sichtbare Scrollba
 ## Phase 480 — Spiel-Empfehlungen (einzelne Spiele statt nur Kategorien)
 **Datum:** 2026-06-03
 `_forYouGames()`: schlägt einzelne Spiele vor — ab 5 gespielten Runden, Mix ~60% neu / 40% bewährt aus Top-Kategorien (`gq_played`) + Interessen, mit Kinder-Filter (`_kidHidden`) und nur spielbare (`GEN`). Neue Home-Leiste „🎯 Empfohlene Spiele" (`_renderGameStrip`, Pastell-Tint, Mausrad/Touch-Scroll, weicher Auslauf). Abschaltbar über Einstellungs-Schalter `gq_rec_games` (Standard an). i18n `rec_games_title/rec_setting/rec_sub` de/en/pl. Best-Practice-konform (wischbare Liste, kein Auto-Play, abschaltbar). verify 192/192, validate 0 Warnings.
+
+## Phase 481 — RUNTIME-CRASH-FIX: viele Spiele + Zukunfts-Schutz
+**Datum:** 2026-06-03
+**Bugs (betraf viele Spiele):**
+- `_mkHLQ` war nie definiert → ALLE HL-Vergleichsspiele in Inseln/Gipfel/Klima/Ozeane crashten (`ReferenceError` → `lq() exhausted`). Jetzt definiert: 2-Optionen-`beta_hl`, respektiert `lowerWins`/`unit`.
+- `genKlimaPinQ` las `window.LAND_LATLON` — `const LAND_LATLON` liegt NICHT auf `window` → coords immer null → `klima_pin_land` leer. Auf echtes `LAND_LATLON` umgestellt.
+- `_trackCatPlay` undefiniert (in try/catch, still) → implementiert (zählt Kategorie-Plays in `gq_catplays`).
+
+**Lehre / Zukunfts-Schutz:** `verify.py` prüfte nur Syntax/Struktur, nicht ob Generatoren laufen → diese Crashes waren unsichtbar. Neu: **Check 20** (undefinierte `*_DATA`) + **Check 21** (undefinierte Helfer-Funktionen, Block-Kommentare ignoriert). Beide Fehlerklassen werden jetzt beim Build erkannt. verify **193/193**, validate 0 Warnings.
