@@ -445,3 +445,7 @@ Neues `smoke_test.js`: lädt `GeoQuest.html` in eine Node-VM mit Browser-Stubs, 
 ## Phase 488 — Lernspiel 3/5: Die 5 Ozeane
 **Datum:** 2026-06-03
 `ozean_finder` (ozeane): Frage (größter/tiefster/umgibt Antarktis/Nordpol/bei Indien/zwischen Amerika+Europa) → Ozean-Name antippen (`uk_match`, 🌊). Mitwachsend: Stufe 1 nur 3 einfache Fragen, ab Stufe 2 alle 7. i18n `mt_ozean`/`ocn_*`/`ocq_*` de/en/pl. Lehrplan KS1. verify 193/193, 0 THROW, 1001→1002 Modi.
+
+## Phase 489 — Lernspiel 4/5: Tiere & Lebensräume
+**Datum:** 2026-06-03
+`tier_lebensraum` (tiere): Tier-Emoji → Lebensraum (`uk_match`, 7 Habitate). Mitwachsend: Stufe 1 = 10 bekannte Tiere, ab Stufe 2 alle 25, international, spracharm. i18n `mt_tier`/`tier_prompt`/`hab_*` de/en/pl. Lehrplan KS1/KS2. verify 193/193, 0 THROW, 1002→1003 Modi.
