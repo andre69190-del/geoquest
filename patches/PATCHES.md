@@ -360,3 +360,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 468 — Greeting i18n-Fix
 **Datum:** 2026-06-03
 Phase 467 hatte die 🌍 nur aus DE/EN `home_guest` entfernt → PL/FR/ES/IT/BG hätten dasselbe Umbruch-Problem. Globe nun aus allen 7 Sprachen raus + polnische Korruption „GoŚ›ciu" → „Gościu" repariert. Alle Gast-Grüße einzeilig. verify 191/191, validate 0 Warnings.
+
+## Phase 469 — Ausführliches Handbuch (Profil/Einstellungen)
+**Datum:** 2026-06-03
+Neues `renderGuideModal()` — zweigeteiltes Nachschlagewerk, ergänzt das knappe Hilfe-Overlay. Tab „Für Kinder" (kindgerechte Sprache: Spielablauf, Spielarten, Punkte/Streak/Sticker, Tipps) + Tab „Für Eltern & alle" (Kinder-Modus & Filter, Klassenstufen/Lehrplan, Eltern-PIN, Mehrspieler, Bestenlisten & Fairness + Übungsmodus, weitere Funktionen). Öffnet über Button in den Einstellungen und Link im Hilfe-Overlay. Texte in `guide_*` (DE/EN/PL, Rest Fallback EN), State `S.guideModal`/`S.guideTab`. verify 191/191, validate 0 Warnings.

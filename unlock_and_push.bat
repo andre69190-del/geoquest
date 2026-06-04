@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 468. Greeting-Fix i18n: 🌍 auch aus PL/FR/ES/IT/BG home_guest entfernt (war nur DE/EN entfernt) - sonst gleiches Umbruch-Problem in 5 Sprachen. Polnisch 'GoŚ›ciu'-Korruption -> 'Gościu' repariert. Alle 7 Gast-Gruesse jetzt einzeilig & globe-frei. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 469. Ausfuehrliches Handbuch (renderGuideModal): 2 Tabs 'Fuer Kinder' (kindgerecht: Wie spiele ich, Spielarten, Punkte/Streak/Sticker, Tipps) + 'Fuer Eltern & alle' (Kinder-Modus, Klassenstufen, Eltern-PIN, Mehrspieler, Bestenlisten/Fairness/Uebungsmodus, weitere Funktionen). Erreichbar via Einstellungen-Button + Link aus Hilfe-Overlay. Texte DE/EN/PL in LANG (guide_*), uebrige Sprachen Fallback EN. State S.guideModal/guideTab. verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

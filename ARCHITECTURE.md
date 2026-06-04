@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 468 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.85 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Version:** Phase 469 (Stand: Juni 2026)
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.86 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -1172,6 +1172,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **466** | patch_466.py | **UX-Review Paket 1+2+3: (1) Kontrast: --text3 #94a3b8->#64748b (war WCAG-Fail ~2.8:1), mode-desc #64748b->#475569. (2) Mode-Karten: Info-i als runder Badge oben rechts (22px, border-radius 50%), Favoriten-Herz als Outline (🤍/❤️) oben links, 28px-Boden-Reserve entfernt -> Titel hat untere Haelfte frei. (3) Spacing: Suchleiste mehr Luft. verify 191/191, validate 0 Warnings.** |
 | **467** | patch_467.py | **UX-Review Paket 4+6 + Greeting-Fix: (4) Zuletzt-gespielt als breite Wisch-Karten (152px, Icon links + 2-Zeilen-Text rechts, laeuft rechts raus = Wisch-Signal). (6) Pastell-Themen pro Kategorie: _catTint(k) leitet aus CAT_META-Interesse eine dezente rgba-Toenung ab (geo blau, natur gruen, mint lila, pop pink, kultur amber, sport orange) - funktioniert hell+dunkel, gegen Box-in-Box. (Fix) Begruessung wieder einzeilig (nowrap), Globe aus Gast-Gruss entfernt (war in 2. Zeile gerutscht). verify 191/191, validate 0 Warnings.** |
 | **468** | patch_468.py | **Greeting-Fix i18n: 🌍 auch aus PL/FR/ES/IT/BG home_guest entfernt (war nur DE/EN entfernt) - sonst gleiches Umbruch-Problem in 5 Sprachen. Polnisch 'GoŚ›ciu'-Korruption -> 'Gościu' repariert. Alle 7 Gast-Gruesse jetzt einzeilig & globe-frei. verify 191/191, validate 0 Warnings.** |
+| **469** | patch_469.py | **Ausfuehrliches Handbuch (renderGuideModal): 2 Tabs 'Fuer Kinder' (kindgerecht: Wie spiele ich, Spielarten, Punkte/Streak/Sticker, Tipps) + 'Fuer Eltern & alle' (Kinder-Modus, Klassenstufen, Eltern-PIN, Mehrspieler, Bestenlisten/Fairness/Uebungsmodus, weitere Funktionen). Erreichbar via Einstellungen-Button + Link aus Hilfe-Overlay. Texte DE/EN/PL in LANG (guide_*), uebrige Sprachen Fallback EN. State S.guideModal/guideTab. verify 191/191, validate 0 Warnings.** |
 
 ---
 
