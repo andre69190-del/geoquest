@@ -477,3 +477,7 @@ Regression aus Phase 492: Die App meldet jeden Besucher anonym an (`signInAnonym
 ## Phase 496 — Altersstufen-Inhaltsprüfung: Stufe 1 (6–8 J.)
 **Datum:** 2026-06-03
 Inhaltliche Prüfung pro Stufe (jüngste zuerst). Befund: `_modeLevel` stufte alle `match/_mc/timeline` pauschal als Level 1 ein → 6–8-Jährige sahen 77 Modi, fast alle zu schwer (z. B. Motorbauart, Konsolengeneration, röm. Mythologie-Gegenstücke, Fluss-Mündungsländer). Fix: `match/_mc/timeline` Standard → **Level 2** statt 1. Stufe 1 zeigt jetzt nur die 5 verständlichen Lehrplan-Spiele. Schwerere wandern nach oben (Stufe 2–4-Prüfung folgt). verify 193/193, 0 THROW.
+
+## Phase 497 — Altersstufen-Inhaltsprüfung: Stufe 2 (8–10 J.)
+**Datum:** 2026-06-03
+Nicht-curriculare Trivia-Kategorien (Games, Autos, Mythologie, Literatur, Brettspiele, Züge/Bahn-Technik, Konsolen) + Zeitleisten → **Level 3** (Teens), via Token-Treffer im Modus-Namen (`auto/games/konsole/hw_/myth/lit_/boardgame/zug/bahn/timeline`, fängt auch `hl_`-Varianten). Stufe 2 zeigt jetzt Geografie + Natur (Flaggen, Hauptstädte, Flüsse, Kontinente, Tiere, Pflanzen, Themenparks, Hunde, Astro/Geo-Vergleiche). verify 193/193, 0 THROW.
