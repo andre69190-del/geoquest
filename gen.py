@@ -17178,8 +17178,8 @@ function renderHomeTab(){
         ${cs?`<span class="cs-badge">Bald</span>`:""}
         ${isLocked?`<span style="position:absolute;top:4px;right:4px;font-size:.75rem">\u{1F512}</span>`:""}
         <span class="mode-icon">${m.icon}</span><div class="mode-title">${modeTitle(m)}</div>
-        ${!cs&&unlocked?`<button type="button" class="fav-btn" data-fav-id="${m.id}" onclick="event.preventDefault();event.stopPropagation();window.toggleFavorite('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:4px;left:4px;z-index:2;width:28px;height:28px;background:transparent;border:none;font-size:.75rem;cursor:pointer;line-height:1;padding:0;touch-action:manipulation;opacity:${isFav?'1':'.35'}">❤️</button>`:""}
-        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;bottom:4px;right:4px;z-index:2;width:28px;height:28px;background:#3b82f6;color:#fff;border:none;border-radius:7px;font-size:.72rem;font-weight:900;cursor:pointer;line-height:1;padding:0;touch-action:manipulation">i</button>`:""}
+        ${!cs&&unlocked?`<button type="button" class="fav-btn" data-fav-id="${m.id}" onclick="event.preventDefault();event.stopPropagation();window.toggleFavorite('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;top:4px;left:4px;z-index:2;width:26px;height:26px;background:transparent;border:none;font-size:.9rem;cursor:pointer;line-height:1;padding:0;touch-action:manipulation">${isFav?'❤️':'🤍'}</button>`:""}
+        ${!cs&&unlocked?`<button type="button" class="info-btn-fix" onclick="event.preventDefault();event.stopPropagation();window.showGameInfo('${m.id}',event);" onpointerdown="event.stopPropagation();" ontouchstart="event.stopPropagation();" style="position:absolute;top:4px;right:4px;z-index:2;width:22px;height:22px;background:#3b82f6;color:#fff;border:none;border-radius:50%;font-size:.66rem;font-weight:900;cursor:pointer;line-height:1;padding:0;touch-action:manipulation">i</button>`:""}
       </div>`;
     });
     if(catId==='eu_plates')cardArr.push(`<div class="mode-card" data-category="eu_plates" onclick="S.tab='album';render()" role="button" data-title="Kennzeichen-Album" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-color:#3b82f6"><span class="mode-icon">\u{1F4D4}</span><div class="mode-title" style="color:#fff">Album</div><div class="mode-desc" style="color:rgba(255,255,255,.8)">${S.collectedPlates.length} ges.</div></div>`);
@@ -17255,7 +17255,7 @@ function renderHomeTab(){
         <div style="background:rgba(255,255,255,.2);color:#fff;border-radius:16px;padding:.22rem .7rem;font-size:.72rem;font-weight:700;margin-top:1px">► Los</div>
       </div>
     </div>
-    <div class="menu-search-container" style="display:flex;gap:8px;margin:15px 15px 12px;align-items:center;flex-wrap:nowrap">
+    <div class="menu-search-container" style="display:flex;gap:8px;margin:20px 15px 16px;align-items:center;flex-wrap:nowrap">
       <input type="text" id="gameSearch" placeholder="🔍 Spiel suchen..." oninput="window.filterGames()" style="flex:1;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font-size:16px;outline:none;min-width:0">
       <button onclick="window.showFavorites()" style="background:var(--bg2);color:#ef4444;border:2px solid var(--border);padding:8px 11px;border-radius:10px;font-size:1rem;cursor:pointer;flex-shrink:0;line-height:1" title="Favoriten">❤️</button>
       <button onclick="playRandomGame()" style="background:#4f46e5;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">🎲 Zufall</button>

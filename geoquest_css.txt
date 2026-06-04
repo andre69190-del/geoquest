@@ -1,4 +1,4 @@
-:root{--bg:#f0f4f8;--bg2:#ffffff;--bg3:#f8fafc;--bg4:#e2e8f0;--border:#e2e8f0;--text:#0f172a;--text2:#475569;--text3:#94a3b8;--accent:#10b981;--shadow:0 1px 8px rgba(0,0,0,.08);--qcard:#fff;--hdr-bg:#fff;--hdr-border:#e2e8f0}
+:root{--bg:#f0f4f8;--bg2:#ffffff;--bg3:#f8fafc;--bg4:#e2e8f0;--border:#e2e8f0;--text:#0f172a;--text2:#475569;--text3:#64748b;--accent:#10b981;--shadow:0 1px 8px rgba(0,0,0,.08);--qcard:#fff;--hdr-bg:#fff;--hdr-border:#e2e8f0}
 [data-theme=dark]{--bg:#0f172a;--bg2:#1e293b;--bg3:#0a0f1e;--bg4:#334155;--border:#334155;--text:#f1f5f9;--text2:#94a3b8;--text3:#475569;--shadow:0 2px 20px rgba(0,0,0,.4);--qcard:#fff;--hdr-bg:#0a0f1e;--hdr-border:#1e293b}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;background:var(--bg);font-family:system-ui,-apple-system,sans-serif;color:var(--text);-webkit-tap-highlight-color:transparent;transition:background .25s,color .25s}
@@ -53,7 +53,7 @@ input[type=text]::placeholder{color:var(--text3)}
 .mode-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;width:100%;box-sizing:border-box;margin-bottom:.6rem}
 .mode-grid-4{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:5px;width:100%;box-sizing:border-box;margin-bottom:.5rem}
 .mode-grid-life{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:.5rem}
-.mode-card{position:relative;box-sizing:border-box;max-width:100%;min-width:0;overflow:hidden;background:var(--bg2);border:2px solid var(--border);border-radius:11px;padding:.5rem .32rem 28px;cursor:pointer;transition:border-color .15s,background .15s;text-align:center;box-shadow:var(--shadow)}
+.mode-card{position:relative;box-sizing:border-box;max-width:100%;min-width:0;overflow:hidden;background:var(--bg2);border:2px solid var(--border);border-radius:11px;padding:.55rem .35rem .5rem;cursor:pointer;transition:border-color .15s,background .15s;text-align:center;box-shadow:var(--shadow)}
 .mode-card:hover{border-color:#10b981;background:var(--bg3)}
 .mode-card.mini{border-radius:9px;padding:.38rem .25rem}
 .mode-card.mini .mode-icon{font-size:1.1rem;margin-bottom:2px}
@@ -479,7 +479,7 @@ input[type=text]::placeholder{color:var(--text3)}
 
 /* ── Phase 88b: Mode-Card Typografie ────────────────────────────────────── */
 .mode-desc{
-  color:#64748b;
+  color:#475569;
   font-size:.68rem;
   line-height:1.25;
   margin-top:2px;

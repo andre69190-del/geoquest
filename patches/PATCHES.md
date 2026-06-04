@@ -348,3 +348,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 465 — Home-Strips poliert
 **Datum:** 2026-06-03
 **UX:** (1) Zuletzt-gespielt zeigt Titelteil nach ': ' (unterscheidbar statt 4× „Regionale Kultur: …"). (2) „Für dich" via _forYouCats() auf ~6 aufgefüllt (topCats + _getInterestCats + populäre Fallbacks, kindgefiltert, dedupliziert). (3) Begrüßung umbruchfähig statt abgeschnitten (nowrap/ellipsis entfernt). verify 191/191, validate 0 Warnings.
+
+## Phase 466 — UX-Review Paket 1+2+3 (Kontrast/Karten/Spacing)
+**Datum:** 2026-06-03
+**UX:** (1) Kontrast: geoquest_css.txt --text3 #94a3b8→#64748b (Light, war WCAG-Fail), .mode-desc #64748b→#475569. (2) Mode-Karten: Info-i runder Badge oben rechts (22px/50%), Favoriten-Herz Outline 🤍/❤️ oben links, padding-bottom-Reserve (28px) entfernt → Titel-Platz unten. (3) Suchleisten-Spacing 15/12→20/16. verify 191/191, validate 0 Warnings.
