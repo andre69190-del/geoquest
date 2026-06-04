@@ -4986,11 +4986,9 @@ function genHLRiverQ(){
   const _rvPool=(RIVERS_REAL&&RIVERS_REAL.length>=2)?RIVERS_REAL
     :RIVERS_GEO_DATA.map(r=>({n:r.name,c:r.cc,cc:r.cc,len:r.length}));
   if(_rvPool.length<2)return null;
-  /* shadow RIVERS_REAL with merged pool for rest of function */
-  const RIVERS_REAL=_rvPool;  // eslint-disable-line no-shadow
   const _fcr=_rfilt(COUNTRIES,4);const _ccr=new Set(_fcr.map(x=>x.cc));
-  let pool=RIVERS_REAL.filter(r=>r.len>100&&_ccr.has(ccFromCountry(r.c)));
-  if(pool.length<2)pool=RIVERS_REAL.filter(r=>r.len>100);if(pool.length<2)return null;
+  let pool=_rvPool.filter(r=>r.len>100&&_ccr.has(ccFromCountry(r.c)));
+  if(pool.length<2)pool=_rvPool.filter(r=>r.len>100);if(pool.length<2)return null;
   const ai=~~(rng()*pool.length);
   const a=pool[ai];
   const restR=pool.filter((_,i)=>i!==ai);

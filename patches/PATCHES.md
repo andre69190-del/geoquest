@@ -425,3 +425,7 @@ Alle hartkodierten DE-Strings im Hot-Seat (renderLVSetup/Handoff/Gameover) → `
 ## Phase 483 — i18n Einstellungs-Modal
 **Datum:** 2026-06-03
 Alle sichtbaren Labels im `renderSettingsModal` → `t()` (de/en/pl, `set_*` + `ui_close`). Nur im isolierten Funktionskörper ersetzt, damit gleichnamige Strings in Profil-Tab/Home-Schwierigkeitsschalter unberührt bleiben. Install-Button via String-Konkatenation (steht in single-quoted JS-String, kein Template-Literal). Verbleibend: An/Aus-Toggle-Texte (ui_on/ui_off-Keys liegen bereit). verify 193/193, validate 0 Warnings.
+
+## Phase 484 — Generator-Rauchtest + hl_river-Fix
+**Datum:** 2026-06-03
+Neues `smoke_test.js`: lädt `GeoQuest.html` in eine Node-VM mit Browser-Stubs, ruft **jeden** GEN-Modus 6× auf und meldet `THROW` (Crash) + persistentes `NULL`. Fand + fixte **`hl_river`** (`genHLRiverQ`: lokale `const RIVERS_REAL=_rvPool` überschattete die globale `RIVERS_REAL` → TDZ-Crash „before initialization"; lokalen Schatten entfernt, durchgängig `_rvPool`). Ergebnis: 998 getestet, 859 OK, **0 THROW**, 120 `ws_`-NULL (erwartet), 19 NULL (brauchen Live-Daten/Spielzustand → Sichtungsliste). verify 193/193, validate 0 Warnings.
