@@ -1,7 +1,8 @@
 # GeoQuest — 5 Lehrplan-Spiele für die Altersstufen (Ideen / Übergabe)
 
 > **Status (Phase 490):** ✅ Altersstufen 1–5 gebaut · ✅ Generator-Rauchtest gebaut · ✅ ALLE 5 Spiele gebaut & verifiziert.
-> **Noch offen:** Alter im Onboarding · Lern-Erklärungen · Themen-Fortschritt.
+> **Erledigt:** Lern-Erklärungen (meta) · Onboarding für Eingeloggte überspringen · Audience→Stufe-Mapping.
+> **Bewusst verworfen** (nicht sinnvoll/Reibung): separate Altersfrage im Onboarding · prominenter Themen-Fortschritt.
 > Spiele: kompass_richtung · kontinent_finder · ozean_finder · tier_lebensraum · jahreszeit_halbkugel.
 > **Datum:** 2026-06-03
 
