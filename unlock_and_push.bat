@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 490. Lernspiel 5/5: Jahreszeiten & Halbkugeln (jahreszeit_halbkugel, Kategorie klima). genJahreszeitQ: Flagge+Land + Monat -> welche Jahreszeit? (uk_match, 4 Jahreszeiten). Internationaler Twist: Suedhalbkugel umgekehrt (NZ Sept=Fruehling, Chile Aug=Winter). Mitwachsend: Stufe 1 nur Nordhalbkugel (einfach), ab Stufe 2 auch Suedhalbkugel. i18n mt_jahr/jahr_prompt/sea_*/mon_1..12 de/en/pl. Lehrplan KS2 Halbkugeln. ALLE 5 Lernspiele fertig. verify 193/193, 0 THROW, 1004 Modi.. verify: 193/193."
+git commit -m "Content: Phase 491. Lern-Erklaerungen (Extra 2): die 5 neuen Lernspiele liefern jetzt meta-Erklaerungen nach der Antwort (Kontinent: Land->Kontinent, Tiere: Emoji->Lebensraum, Ozeane: ocf_*-Fakten, Jahreszeiten: Suedhalbkugel-Hinweis, Kompass: Karten-Tipp). uk_match-Renderer zeigt q.meta jetzt nach Antwort (sel!=null) - war vorher unsichtbar. i18n kompass_meta/ocf_*/jahr_meta_south de/en/pl. verify 193/193, 0 THROW.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

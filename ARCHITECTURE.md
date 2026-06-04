@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 490 (Stand: Juni 2026)
+**Version:** Phase 491 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.88 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1194,6 +1194,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **488** | patch_488.py | **Lernspiel 3/5: Die 5 Ozeane (ozean_finder, Kategorie ozeane). genOzeanFinderQ: Frage (groesster/tiefster/umgibt Antarktis/Nordpol/bei Indien/zwischen Amerika+Europa) -> Ozean-Name antippen (uk_match). Mitwachsend: Stufe 1 nur 3 einfache Fragen, ab Stufe 2 alle 7. 5 Ozeane Pazifik/Atlantik/Indik/Arktik/Suedpolarmeer. i18n mt_ozean/ocn_*/ocq_* de/en/pl. Lehrplan KS1 '5 Ozeane'. verify 193/193, 0 THROW, 1002 Modi.** |
 | **489** | patch_489.py | **Lernspiel 4/5: Tiere & Lebensraeume (tier_lebensraum, Kategorie tiere). genTierLebensraumQ: Tier-Emoji -> Lebensraum antippen (uk_match, 7 Lebensraeume: Wueste/Ozean/Polar/Regenwald/Savanne/Wald/Gebirge). Mitwachsend: Stufe 1 nur 10 sehr bekannte Tiere, ab Stufe 2 alle 25 (international). Spracharm (Emoji). i18n mt_tier/tier_prompt/hab_* de/en/pl. Lehrplan KS1/KS2 Habitate. verify 193/193, 0 THROW, 1003 Modi.** |
 | **490** | patch_490.py | **Lernspiel 5/5: Jahreszeiten & Halbkugeln (jahreszeit_halbkugel, Kategorie klima). genJahreszeitQ: Flagge+Land + Monat -> welche Jahreszeit? (uk_match, 4 Jahreszeiten). Internationaler Twist: Suedhalbkugel umgekehrt (NZ Sept=Fruehling, Chile Aug=Winter). Mitwachsend: Stufe 1 nur Nordhalbkugel (einfach), ab Stufe 2 auch Suedhalbkugel. i18n mt_jahr/jahr_prompt/sea_*/mon_1..12 de/en/pl. Lehrplan KS2 Halbkugeln. ALLE 5 Lernspiele fertig. verify 193/193, 0 THROW, 1004 Modi.** |
+| **491** | patch_491.py | **Lern-Erklaerungen (Extra 2): die 5 neuen Lernspiele liefern jetzt meta-Erklaerungen nach der Antwort (Kontinent: Land->Kontinent, Tiere: Emoji->Lebensraum, Ozeane: ocf_*-Fakten, Jahreszeiten: Suedhalbkugel-Hinweis, Kompass: Karten-Tipp). uk_match-Renderer zeigt q.meta jetzt nach Antwort (sel!=null) - war vorher unsichtbar. i18n kompass_meta/ocf_*/jahr_meta_south de/en/pl. verify 193/193, 0 THROW.** |
 
 ---
 

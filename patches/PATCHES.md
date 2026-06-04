@@ -453,3 +453,7 @@ Neues `smoke_test.js`: lädt `GeoQuest.html` in eine Node-VM mit Browser-Stubs, 
 ## Phase 490 — Lernspiel 5/5: Jahreszeiten & Halbkugeln
 **Datum:** 2026-06-03
 `jahreszeit_halbkugel` (klima): Flagge+Land + Monat → Jahreszeit (`uk_match`). Internationaler Twist: Südhalbkugel umgekehrt (NZ Sept=Frühling, Chile Aug=Winter). Mitwachsend: Stufe 1 nur Nordhalbkugel, ab Stufe 2 auch Süd. i18n `mt_jahr`/`jahr_prompt`/`sea_*`/`mon_1..12` de/en/pl. Lehrplan KS2. **Alle 5 Lernspiele fertig.** verify 193/193, 0 THROW, 1003→1004 Modi.
+
+## Phase 491 — Lern-Erklärungen (Extra 2)
+**Datum:** 2026-06-03
+Die 5 Lernspiele liefern jetzt `meta`-Erklärungen nach der Antwort (Kontinent: Land→Kontinent · Tiere: Emoji→Lebensraum · Ozeane: `ocf_*`-Fakten · Jahreszeiten: Südhalbkugel-Hinweis · Kompass: Karten-Tipp). `uk_match`-Renderer zeigt `q.meta` jetzt nach der Antwort (`sel!==null`) — war vorher gar nicht gerendert. i18n `kompass_meta`/`ocf_*`/`jahr_meta_south` de/en/pl. verify 193/193, 0 THROW.
