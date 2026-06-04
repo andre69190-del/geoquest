@@ -396,3 +396,7 @@ Der Service Worker cachte `GeoQuest.html` UND das byte-identische `index.html` (
 ## Phase 477 — Kategorie-Reihen am Desktop scrollbar (Mausrad → horizontal)
 **Datum:** 2026-06-03
 Symptom „wischen geht nicht": Am Desktop kein Touch + keine sichtbare Scrollbar → angeschnittene Kacheln unerreichbar. `onwheel`-Handler auf Playlist- und Recent-Leisten wandelt vertikales Mausrad in horizontales Scrollen (`scrollLeft+=deltaY`); `preventDefault` nur, solange die Leiste tatsächlich scrollt (am Ende bleibt Seiten-Scroll frei). `cursor:grab` als Hinweis. Touch-Wischen unverändert nativ. verify 191/191, validate 0 Warnings.
+
+## Phase 478 — BUGFIX: „Land pinnen"-Spiele crashten (undefinierte Daten-Variablen)
+**Datum:** 2026-06-03
+5 `*_pin_land`-Generatoren referenzierten nicht existierende Daten-Vars → `ReferenceError` → `lq() exhausted` → Spiel startete nicht. Fix: `park_pin_land` THEMEPARKS_DATA→PARKS_DATA · `serie_pin_land` SERIEN_DATA→SERIEN_EXT_DATA · `musik_pin_land` MUSIK_DATA→MUSIK_EXT_DATA · `web_pin_land` WEBKULTUR_DATA→WEB_DATA · `film_pin_land` FILME_DATA→FILME_EXT_DATA. Felder verifiziert. Voll-Audit: keine weiteren undefinierten/ungeschützten `*_DATA`-Referenzen (TECH_DATA ist `typeof`-guarded). verify 191/191, validate 0 Warnings.
