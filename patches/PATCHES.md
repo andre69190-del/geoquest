@@ -441,3 +441,7 @@ Neues `smoke_test.js`: lädt `GeoQuest.html` in eine Node-VM mit Browser-Stubs, 
 ## Phase 487 — Lernspiel 2/5: Kontinente-Finder
 **Datum:** 2026-06-03
 `kontinent_finder` (pure_geo): Flaggen-Emoji + lokalisierter Ländername → „Auf welchem Kontinent?" (`uk_match`, 4 Kontinent-Optionen). Mitwachsend: Stufe 1 nur sehr bekannte Länder (kuratierte cc-Liste), ab Stufe 2 alle ~181. Nutzt COUNTRIES-Schema `{c,cc,ct,sr}` (ct=Kontinent). i18n `mt_kontinent`/`kontinent_prompt`/`cont_*` de/en/pl. Lehrplan KS1. **Rauchtest fand+fixte Schema-Bug** (`continent`→`ct`, sonst immer null). verify 193/193, 0 THROW, 1000→1001 Modi.
+
+## Phase 488 — Lernspiel 3/5: Die 5 Ozeane
+**Datum:** 2026-06-03
+`ozean_finder` (ozeane): Frage (größter/tiefster/umgibt Antarktis/Nordpol/bei Indien/zwischen Amerika+Europa) → Ozean-Name antippen (`uk_match`, 🌊). Mitwachsend: Stufe 1 nur 3 einfache Fragen, ab Stufe 2 alle 7. i18n `mt_ozean`/`ocn_*`/`ocq_*` de/en/pl. Lehrplan KS1. verify 193/193, 0 THROW, 1001→1002 Modi.
