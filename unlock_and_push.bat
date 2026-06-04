@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 466. UX-Review Paket 1+2+3: (1) Kontrast: --text3 #94a3b8->#64748b (war WCAG-Fail ~2.8:1), mode-desc #64748b->#475569. (2) Mode-Karten: Info-i als runder Badge oben rechts (22px, border-radius 50%), Favoriten-Herz als Outline (🤍/❤️) oben links, 28px-Boden-Reserve entfernt -> Titel hat untere Haelfte frei. (3) Spacing: Suchleiste mehr Luft. verify 191/191, validate 0 Warnings.. verify: 191/191."
+git commit -m "Content: Phase 467. UX-Review Paket 4+6 + Greeting-Fix: (4) Zuletzt-gespielt als breite Wisch-Karten (152px, Icon links + 2-Zeilen-Text rechts, laeuft rechts raus = Wisch-Signal). (6) Pastell-Themen pro Kategorie: _catTint(k) leitet aus CAT_META-Interesse eine dezente rgba-Toenung ab (geo blau, natur gruen, mint lila, pop pink, kultur amber, sport orange) - funktioniert hell+dunkel, gegen Box-in-Box. (Fix) Begruessung wieder einzeilig (nowrap), Globe aus Gast-Gruss entfernt (war in 2. Zeile gerutscht). verify 191/191, validate 0 Warnings.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

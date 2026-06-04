@@ -352,3 +352,7 @@ python3 run_patch.py patches/patch_228_new_feature.py
 ## Phase 466 — UX-Review Paket 1+2+3 (Kontrast/Karten/Spacing)
 **Datum:** 2026-06-03
 **UX:** (1) Kontrast: geoquest_css.txt --text3 #94a3b8→#64748b (Light, war WCAG-Fail), .mode-desc #64748b→#475569. (2) Mode-Karten: Info-i runder Badge oben rechts (22px/50%), Favoriten-Herz Outline 🤍/❤️ oben links, padding-bottom-Reserve (28px) entfernt → Titel-Platz unten. (3) Suchleisten-Spacing 15/12→20/16. verify 191/191, validate 0 Warnings.
+
+## Phase 467 — UX-Review Paket 4+6 + Greeting-Fix
+**Datum:** 2026-06-03
+**UX:** (4) Zuletzt-gespielt: breite horizontale Wisch-Karten (152px, Icon links + 2-Zeilen-Text rechts). (6) _catTint(k): Pastell-rgba-Tönung pro Kategorie aus CAT_META-Interesse (geo/natur/mint/pop/kultur/sport/alltag), hell+dunkel-tauglich, gegen „Box-in-Box". (Fix) Begrüßung wieder einzeilig (white-space:nowrap zurück), 🌍 aus Gast-Gruß entfernt (war durch Phase-466-Umbruch in 2. Zeile gerutscht). verify 191/191, validate 0 Warnings.
