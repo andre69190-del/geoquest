@@ -130,6 +130,27 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 - [ ] post_phase.py mit korrekter Phase-Nummer ausführen
 - [ ] PATCHES.md Eintrag ergänzen
 
+## ALTERSSTUFEN-KRITERIEN (für neue Spiele) — Phase 496–497
+
+Die sichtbare Schwierigkeit steuert **`_modeLevel(m)`** (in gen.py) + **`_kidLevelMax()`** (aus `gq_kids_grade`). Ein Kind/Jugendlicher sieht einen Modus nur, wenn `_modeLevel(m) <= _kidLevelMax()`. Stufen: 1=6–8 · 2=8–10 · 3=11–13 · 4=14–15 · 5=16+/Erwachsene.
+
+**So wird ein neuer Modus eingestuft (Reihenfolge in `_modeLevel`):**
+1. **Explizite Level-1-Liste** (am Anfang von `_modeLevel`): die Lehrplan-Spiele (`kompass_richtung`, `kontinent_finder`, `ozean_finder`, `tier_lebensraum`, `jahreszeit_halbkugel`). Neues Stufe-1-Spiel ⇒ ID hier eintragen.
+2. **`ws_…` / `_ws_`** (Wort-Schmiede) ⇒ Level 3.
+3. **`match` / `_mc` / `timeline`** im id ⇒ Level 2 (NICHT mehr 1!).
+4. **`hl_…`** (Höher/Tiefer-Vergleich) ⇒ Level 2.
+5. **Teen-Token im id** (`auto`,`games`,`konsole`,`hw_`,`myth`,`lit_`,`boardgame`,`zug`,`bahn`,`timeline`) ⇒ Level 3 (auch `hl_`-Varianten).
+6. **HARD-Keywords** (metacritic, imdb, pegi, hubraum, dichte, streams, umsatz, exoplanet, grammys, oscars … ) **oder HID-Signale** (`_bj`,`baujahr`,`_release`,`peak_year`,`erscheinungsjahr`,`reisezeit`,`breitengrad`,`_dekade`) ⇒ **Level 5** (erst ab 16).
+
+**Was ein Spiel je Stufe erfüllen muss (Curriculum-Leitlinie, international):**
+- **Stufe 1 (6–8, KS1):** bild-/symbolbasiert & spracharm (Emoji/Flagge/Pfeil als Frage), genau 1 klare richtige Antwort aus ≤4 Optionen, KEINE auswendig zu wissenden Eigennamen/Fakten außer sehr bekannten; Inhalt: Kontinente, Ozeane, Tiere↔Lebensraum, Himmelsrichtungen, Wetter/Jahreszeiten. Sollte intern mitwachsen. ⇒ in die explizite Level-1-Liste.
+- **Stufe 2 (8–10, KS2):** Geografie & Natur: Kontinent-/Land-/Ozean-Zuordnung, Flaggen, Hauptstädte, Flüsse/Inseln/Gipfel, Klimazonen, Tiere/Pflanzen, einfache Vergleiche (größer/höher/schneller). Mechanik `match`/`_mc`/`hl_` reicht für Level 2. KEIN Spezial-/Industrie-Trivia.
+- **Stufe 3 (11–13, Sek. I):** Special-Interest & vertieftes Wissen: Games (Genre/Publisher/Plattform), Autos (Technik/Marke), Mythologie, Literatur, Brettspiele, Bahn/Technik, Wort-Schmiede. Vertiefte Geografie ohne reine Zahlentrivia.
+- **Stufe 4 (14–15):** vertiefte physische/menschliche Geografie & Naturwissenschaft (Klimadiagramme, Tektonik, Bevölkerung) — OHNE reines Erwachsenen-Trivia. (Aktuell sieht Stufe 4 dasselbe wie Stufe 3, da kein Modus exklusiv Level 4 ist; bei Bedarf gezielt Level-4-Inhalte ergänzen.)
+- **Erst ab 16 (Erwachsene):** reines Trivia/Industriedaten — Jahreszahlen, Metacritic/IMDb, Oscars/Grammys, Streams/Verkäufe, technische Kennzahlen (Hubraum, Dichte, Breitengrad). Wird über HARD/HID automatisch auf Level 5 gesetzt.
+
+**Faustregel beim Neubau:** Kann ein typisches Kind dieser Stufe die Frage UND die Antwort ohne Spezialwissen verstehen? Wenn nein → höhere Stufe. Prüfen mit dem Stufen-Runtime-Check (siehe `/tmp/age1.js`-Muster: App laden, `gq_kids_grade` setzen, `_modeLevel` je Modus auswerten).
+
 ### Bei neuen Daten (games/autos_extended.json)
 - [ ] Alle 22 Pflichtfelder vorhanden
 - [ ] Enums korrekt (kategorie, plattform, adaption, genre)
