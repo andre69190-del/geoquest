@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 506. MODE_CATS-Fix: alle 84 neuen Modi aus Phasen 498-505 in ihre jeweiligen Kategorien eingetragen (astronomie, autos, boardgames, capitals, eu_plates, fluesse, games, hunde, klima, map_mode, nparks, ozeane, pflanzen, pure_geo, sport, themeparks, tiere, zuege). Ohne diesen Fix waren die neuen Spiele im Kategorie-Grid unsichtbar. verify 193/193 ✓. verify: 193/193."
+git commit -m "Content: Phase 507. Spielübersicht: neue Spalte 'Altersstufen' zeigt farbige Badges (1=6-8J grün, 2=8-10J blau, 3=11-13J lila, 4=14-15J orange) pro Modus. _mode_level vollständig mit gen.py synchronisiert (L1-Hardcode-Liste, TEEN/HID-Tokens, HARD-Keywords Level 5). _grade_badges() berechnet Sichtbarkeit je Alterskategorie. generate_spieluebersicht.py aktualisiert.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

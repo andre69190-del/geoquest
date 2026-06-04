@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 506 (Stand: Juni 2026)
+**Version:** Phase 507 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.99 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1210,6 +1210,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **504** | patch_504.py | **Stufe-2-Fixes mit sicheren IDs (kein TEEN-Token): Autos(+5): fahrzeug_match_karosserie/konzern/sitze, hl_fahrzeug_gewicht/kofferraum. Games(+5): digital_match_plattform/genre/f2p/land, hl_digital_downloads. Züge(+5): schienen_match_typ/land/antrieb, hl_schienen_dauer/tempo. Sport L1(+2): sport_sommer_winter_oly, sport_wasser_land_sport. KZ L1(+2): kz_anfangsbuchstabe, kz_nachbarland. 1040→1059 Modi.** |
 | **505** | patch_505.py | **29 neue L1/L2 Modi: Astronomie(+4 L1), Capitals(+4 L1), Hunde(+4 L1), Map-Mode(+4 L1), Ozeane(+4 L1), Pure-Geo(+4 L1), Themeparks(+4 L1), Games(+1 L2: hl_digital_vk). Alle hardcoded emoji/flag-basiert, mitwachsend. i18n DE/EN/PL. 1059→1088 Modi.** |
 | **506** | patch_506.py | **MODE_CATS-Fix: alle 84 neuen Modi aus Phasen 498-505 in ihre jeweiligen Kategorien eingetragen (astronomie, autos, boardgames, capitals, eu_plates, fluesse, games, hunde, klima, map_mode, nparks, ozeane, pflanzen, pure_geo, sport, themeparks, tiere, zuege). Ohne diesen Fix waren die neuen Spiele im Kategorie-Grid unsichtbar. verify 193/193 ✓** |
+| **507** | patch_507.py | **Spielübersicht: neue Spalte 'Altersstufen' zeigt farbige Badges (1=6-8J grün, 2=8-10J blau, 3=11-13J lila, 4=14-15J orange) pro Modus. _mode_level vollständig mit gen.py synchronisiert (L1-Hardcode-Liste, TEEN/HID-Tokens, HARD-Keywords Level 5). _grade_badges() berechnet Sichtbarkeit je Alterskategorie. generate_spieluebersicht.py aktualisiert.** |
 
 ---
 

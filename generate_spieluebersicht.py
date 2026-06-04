@@ -384,7 +384,17 @@ CAT_META = {
 CAT_ORDER = list(CAT_META.keys())
 
 
-_HARD_AUD=['metacritic','metakritik','imdb','pegi','hubraum','ccm','verbrauch','wendekreis','zuladung','drehmoment','bgg','bewertung','dichte','niederschlag','wirkstoff','megalith','versicherung','streams','umsatz','rendite','marktkapital','exoplanet','lichtjahr','magnitude','schwerkraft','fundtiefe','oscars','grammys','tontr\u00e4ger'.encode().decode('unicode_escape') if False else 'tonträger','concurrent','sequel','downloads']
+_HARD_AUD=['metacritic','metakritik','imdb','pegi','hubraum','ccm','verbrauch','wendekreis','zuladung','drehmoment','bgg','bewertung','dichte','niederschlag','wirkstoff','megalith','versicherung','streams','umsatz','rendite','marktkapital','exoplanet','lichtjahr','magnitude','schwerkraft','fundtiefe','oscars','grammys','tonträger','concurrent','sequel','downloads']
+_HID_AUD=['_bj','baujahr','_release','peak_year','erscheinungsjahr','reisezeit','breitengrad','_dekade']
+_TEEN_AUD=['auto','games','konsole','hw_','myth','lit_','boardgame','zug','bahn','timeline']
+
+def _load_l1_list(src):
+    import re as _re
+    m = _re.search(r'\[([^\]]{100,})\]\.indexOf\(id\)>=0', src)
+    if m:
+        return set(_re.findall(r"'([^']+)'", m.group(1)))
+    return set()
+
 def _parse_cat_audience(src):
     import re as _re
     m=_re.search(r'const CAT_META=\{(.*?)\};',src,_re.S); d={}
@@ -392,22 +402,49 @@ def _parse_cat_audience(src):
         for k,a in _re.findall(r'(\w+):\{a:\[([^\]]*)\]',m.group(1)):
             d[k]=_re.findall(r'"([^"]+)"',a)
     return d
-def _mode_level(mid,title):
-    txt=(mid+' '+title).lower(); l=2
-    if mid.startswith('ws_') or '_ws_' in mid: l=3
-    elif 'match' in mid or '_mc' in mid or 'timeline' in mid: l=1
-    elif mid.startswith('hl_') or '_hl_' in mid: l=2
-    if any(h in txt for h in _HARD_AUD): l=3
-    return l
-def _mode_kidsafe(mid,title,group,audmap):
-    aud=audmap.get(group,['teens','adults'])
+
+def _mode_level(mid, title, l1_set=None):
+    if l1_set and mid in l1_set: return 1
+    txt = (mid + ' ' + (title or '')).lower()
+    for h in _HARD_AUD:
+        if h in txt: return 5
+    for h in _HID_AUD:
+        if h in mid: return 5
+    base = 3 if (mid.startswith('ws_') or '_ws_' in mid) else 2
+    for tk in _TEEN_AUD:
+        if tk in mid and base < 3: base = 3; break
+    return base
+
+def _grade_badges(mid, title, group, audmap, l1_set):
+    aud = audmap.get(group, ['teens','adults'])
+    lvl = _mode_level(mid, title, l1_set)
+    if lvl >= 5:
+        return '<span style="color:#475569;font-size:.75rem">nur Erw.</span>'
+    if 'kids' not in aud and 'teens' not in aud:
+        return '<span style="color:#475569;font-size:.75rem">nur Erw.</span>'
+    gc = {1:'#10b981',2:'#3b82f6',3:'#8b5cf6',4:'#f59e0b'}
+    gl = {1:'6-8 J.',2:'8-10 J.',3:'11-13 J.',4:'14-15 J.'}
+    badges = []
+    for grade in [1,2,3,4]:
+        if grade <= 2 and 'kids' not in aud: continue
+        if grade == 3 and 'teens' not in aud and 'adults' not in aud: continue
+        if lvl <= grade:
+            badges.append(
+                f'<span title="Stufe {grade}: {gl[grade]}" style="display:inline-block;'
+                f'background:{gc[grade]};color:#fff;border-radius:3px;padding:.05rem .28rem;'
+                f'font-size:.68rem;font-weight:700;margin:.05rem">{grade}</span>')
+    return ''.join(badges) if badges else '<span style="color:#475569;font-size:.75rem">—</span>'
+
+def _mode_kidsafe(mid, title, group, audmap, l1_set=None):
+    aud = audmap.get(group, ['teens','adults'])
     if 'kids' not in aud: return False
-    return _mode_level(mid,title)<3
+    return _mode_level(mid, title, l1_set) <= 2
 
 def generate(phase=269, n_tests=90):
     src       = open(GEN,'r',encoding='utf-8').read()
     modes     = _parse_modes(src)
     aud_map   = _parse_cat_audience(src)
+    l1_set    = _load_l1_list(src)
     kids_n    = 0
     dispatch  = _parse_gen_dispatch(src)
     store     = _load_all_json()
@@ -443,14 +480,14 @@ def generate(phase=269, n_tests=90):
         if g not in groups: continue
         em,lbl = CAT_META.get(g,('📂',g))
         cnt = len(groups[g])
-        rows.append(f'<tr class="gh" data-group="{g}"><td colspan="5">'
+        rows.append(f'<tr class="gh" data-group="{g}"><td colspan="6">'
                     f'{em} {lbl} <span class="cnt">({cnt})</span></td></tr>')
         for m in groups[g]:
             n += 1
             t = m['title'].replace('<','&lt;').replace('>','&gt;')
             d = m['desc'].replace('<','&lt;').replace('>','&gt;') if m['desc'] else ''
             b = _badge(m['id'])
-            if _mode_kidsafe(m['id'], m['title'], g, aud_map):
+            if _mode_kidsafe(m['id'], m['title'], g, aud_map, l1_set):
                 b += '<span title="kindgeeignet" style="margin-left:.35rem;font-size:.85rem">🧒</span>'
                 kids_n += 1
             cs, rn = _get_count(m['id'], dispatch, store, sport_poi)
@@ -461,12 +498,14 @@ def generate(phase=269, n_tests=90):
             elif rn==1: cc='#c084fc'
             elif rn<20: cc='#fb923c'
             else:       cc='#94a3b8'
+            ag = _grade_badges(m['id'], m['title'], g, aud_map, l1_set)
             rows.append(
                 f'<tr class="mr" data-group="{g}">'
                 f'<td class="n">{n}</td>'
                 f'<td class="mid">{m["id"]}</td>'
                 f'<td class="ttl">{t}{sub}</td>'
                 f'<td class="db">{b}</td>'
+                f'<td class="ag">{ag}</td>'
                 f'<td class="dc"><span style="color:{cc};font-weight:700">{cs}</span></td>'
                 f'</tr>')
     if missing:
@@ -501,7 +540,7 @@ def generate(phase=269, n_tests=90):
     H.append('.sc{background:var(--bg);border:1px solid var(--bg3);border-radius:7px;padding:.26rem .55rem;display:flex;align-items:center;gap:.3rem;font-size:.74rem;cursor:pointer;transition:all .12s;white-space:nowrap}')
     H.append('.sc:hover{border-color:var(--ac)}.sc.on{border-color:var(--ac);background:#1e1b4b}')
     H.append('.se{font-size:.86rem}.sl{color:#94a3b8}.sn{font-weight:700;color:var(--ac)}')
-    H.append('.tbl{padding:.4rem .8rem 3rem;overflow-x:auto}table{width:max-content;border-collapse:collapse}')
+    H.append('.tbl{padding:.4rem .8rem 3rem;overflow-x:auto}table{width:max-content;border-collapse:collapse}.ag{min-width:90px;white-space:nowrap}')
     H.append('thead th{background:var(--bg3);padding:.38rem .55rem;text-align:left;font-size:.72rem;color:#94a3b8;white-space:nowrap;position:sticky;top:42px;z-index:5}')
     H.append('.gh td{background:#141e2e;font-weight:700;font-size:.88rem;padding:.48rem .6rem;border-top:2px solid var(--bg3);position:sticky;top:74px;z-index:4}')
     H.append('.cnt{color:#475569;font-weight:400;font-size:.72rem;margin-left:.25rem}')
@@ -525,7 +564,7 @@ def generate(phase=269, n_tests=90):
     H.append(f'<div class="cats" id="cats">\n{cats_html}\n</div>')
     H.append(f'<div class="legend">\n  {legend_html}\n</div>')
     H.append('<div class="tbl"><table id="tbl"><thead><tr>')
-    H.append('<th class="n">#</th><th class="mid">Modus-ID</th><th class="ttl">Titel</th><th class="db">Typ</th><th class="dc">Datenbasis</th></tr></thead>')
+    H.append('<th class="n">#</th><th class="mid">Modus-ID</th><th class="ttl">Titel</th><th class="db">Typ</th><th class="ag">Altersstufen</th><th class="dc">Datenbasis</th></tr></thead>')
     H.append(f'<tbody id="tb">{tbody}</tbody></table></div>')
     H.append('<footer>GeoQuest · Auto-generiert</footer>')
     H.append('''<script>
