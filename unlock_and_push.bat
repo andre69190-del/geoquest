@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 497. Altersstufen-Inhaltspruefung Stufe 2 (8-10 J.): nicht-curriculare Trivia-Kategorien (Games, Autos, Mythologie, Literatur, Brettspiele, Zuege/Bahn-Technik, Konsolen) + Zeitleisten auf Level 3 (Teens) gehoben - via Token-Treffer im Modus-Namen (auto/games/konsole/hw_/myth/lit_/boardgame/zug/bahn/timeline), faengt auch hl_-Varianten. Stufe 2 zeigt jetzt Geografie+Natur (Flaggen, Hauptstaedte, Fluesse, Kontinente, Tiere, Pflanzen, Themenparks, Hunde, Astro/Geo-Vergleiche). verify 193/193, 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 505. 29 neue L1/L2 Modi: Astronomie(+4 L1), Capitals(+4 L1), Hunde(+4 L1), Map-Mode(+4 L1), Ozeane(+4 L1), Pure-Geo(+4 L1), Themeparks(+4 L1), Games(+1 L2: hl_digital_vk). Alle hardcoded emoji/flag-basiert, mitwachsend. i18n DE/EN/PL. 1059→1088 Modi.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

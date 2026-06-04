@@ -1424,7 +1424,7 @@ de:{
   help_fav:"❤️ Tippe auf das Herz, um ein Spiel als Favorit zu speichern.",
   help_search:"\u{1F50D} Über die Suche findest du jedes Spiel schnell.",
   help_cats:"Oben wischt du durch die Kategorien – tippe eine an, um ihre Spiele zu sehen.",
-  help_close:"Verstanden!",guide_title:"📖 Handbuch & Hilfe",guide_tab_kids:"Für Kinder",guide_tab_par:"Für Eltern & alle",guide_open:"📖 Handbuch & Hilfe (ausführlich)",guide_close:"Schließen",guide_more:"Mehr erklärt: Handbuch öffnen",rec_games_title:"Empfohlene Spiele",rec_setting:"Spiel-Empfehlungen",rec_sub:"Passende Spiele im Home vorschlagen",lv_title:"Lokal 1:1 Hot-Seat",lv_sub:"Zwei Spieler · Ein Gerät · {n} Runden",lv_pick_mode:"SPIELMODUS WÄHLEN",lv_pick_cat:"RUBRIK WÄHLEN",lv_pick_game:"SPIEL WÄHLEN",lv_type_random:"Zufall",lv_type_cat:"Rubrik",lv_type_game:"Spiel",lv_start:"Spiel starten",lv_back:"Zurück",lv_handoff_hint:"Schau nicht hin, während der andere spielt!",lv_ready:"Ich bin bereit",lv_wins:"{name} gewinnt!",lv_draw:"Unentschieden!",lv_again:"Nochmal spielen",lv_home:"Hauptmenü",ui_on:"An",ui_off:"Aus",set_title:"Weitere Einstellungen",set_sub:"Region, TTS, Raster & mehr",set_region:"Heimatregion",set_reset_toast:"Erkennung wird beim nächsten Start wiederholt",set_not_set:"Nicht gesetzt (auto)",set_tts:"Vorlesen (TTS)",set_hardcore:"Hardcore-Modus",set_grid:"Spiele nebeneinander (Raster)",set_rows:"Reihen pro Seite (Carousel)",set_catrows:"Kategorie-Reihen (Wisch-Leiste)",set_catrows_sub:"Reihen pro Seite in der Kategorie-Leiste oben",set_feedback:"Feedback & Kontakt",set_feedback_sub:"Fehler melden, Ideen einreichen",set_install:"App installieren",ui_close:"Schließen",guide_kids_intro:"Willkommen bei GeoQuest! Hier lernst du spielerisch die ganze Welt kennen. So funktioniert es:",guide_k1_h:"🎮 Wie spiele ich?",guide_k1:"Wähle oben eine Kategorie (zum Beispiel Tiere oder Länder) und tippe ein Spiel an. Jede Runde hat 10 Fragen. Tippe die Antwort an, die du für richtig hältst – du erfährst sofort, ob sie stimmt.",guide_k2_h:"🧩 Die Spielarten",guide_k2:"• Auswahl: Tippe eine von mehreren Antworten an.\n• Höher oder tiefer: Du siehst zwei Dinge – tippe das größere oder höhere an.\n• Zuordnen: Verbinde die Paare, die zusammengehören.\n• Wort-Schmiede: Baue aus den Buchstaben echte Wörter.",guide_k3_h:"⭐ Punkte, Streak & Sticker",guide_k3:"Für jede richtige Antwort bekommst du Punkte. Mehrere richtige hintereinander ergeben eine Streak 🔥 und extra Punkte. Mit Münzen 💰 kannst du dir einen Tipp kaufen. Für jede Kategorie, die du spielst, gibt es einen Sticker 🏅 – sammle alle!",guide_k4_h:"💡 Tipps für dich",guide_k4:"Hab keine Angst vor Fehlern – die sind zum Lernen da! Wenn eine Frage zu schwer ist, frag einen Erwachsenen oder probier eine leichtere Kategorie. Oben mit dem ❓ findest du jederzeit Hilfe.",guide_p_intro:"GeoQuest ist ein Lern-Quiz für alle Altersgruppen. Dieser Teil erklärt die Steuerungs- und Sicherheitsfunktionen für Eltern und Lehrkräfte.",guide_p1_h:"🧒 Kinder-Modus",guide_p1:"Über den 🧒-Knopf oben aktivierbar. Er blendet zu schwere Spiele und Themen aus (z. B. Jahreszahlen oder komplexe Statistik) und zeigt nur altersgerechte, lehrplannahe Inhalte – auch innerhalb der Kinder-Kategorien.",guide_p2_h:"🎓 Klassenstufen",guide_p2:"In den Einstellungen wählbar: Klasse 1–2 (6–8 Jahre) zeigt nur die einfachste Stufe, Klasse 3–4 (8–10 Jahre) erlaubt auch mittlere Aufgaben. Orientiert am Sachunterricht der Grundschule.",guide_p3_h:"🔒 Eltern-PIN",guide_p3:"Sie können eine 4-stellige PIN setzen. Ist sie aktiv, lässt sich der Kinder-Modus nur mit PIN abschalten – so bleibt die kindgerechte Auswahl geschützt.",guide_p4_h:"👥 Mehrspieler",guide_p4:"Live 1vs1 spielt online gegen andere. Hot-Seat reicht ein Gerät reihum weiter. Das Familienduell stellt Kind und Erwachsenem je nach Spielstärke passende Fragen – fair für beide.",guide_p5_h:"🏆 Bestenlisten & Fairness",guide_p5:"Ranglisten gelten immer nur pro Spielmodus und feste 10 Runden – man tritt nie quer über verschiedene Spiele gegeneinander an. Kind und Erwachsener landen also nicht in derselben Liste, außer sie spielen denselben Modus. Der Übungsmodus (Einstellungen) läuft ganz ohne Wertung – ideal zum Lernen ohne Druck.",guide_p6_h:"⚙️ Weitere Funktionen",guide_p6:"Münzen und Sticker motivieren, der Offline-Modus funktioniert ohne Netz, die Sprache lässt sich umstellen, und die Unterwegs-Vorschläge regen bei Auto- oder Zugfahrten zum Kennzeichen- oder Waggon-Sammeln an (optional, nur mit Standort-Freigabe).",practice_setting:"Übungsmodus",practice_sub:"Spielen ohne Bestenlisten-Eintrag (kein Druck)",pin_setting:"Eltern-PIN (Kinder-Modus sichern)",pin_set_title:"Eltern-PIN setzen (4 Ziffern)",pin_check_title:"PIN eingeben zum Beenden",pin_wrong:"Falscher PIN",pin_ok:"OK",pin_remove:"PIN entfernen",kids_grade_label:"Kind-Alter (Klassenstufe)",kids_grade_young:"6–8 J. (Kl. 1–2)",kids_grade_older:"8–10 J. (Kl. 3–4)",kids_grade_t3:"11–13 J. (Kl. 5–7)",kids_grade_t4:"14–15 J. (Kl. 8–9)",mt_kompass:"Kompass: Himmelsrichtungen",kompass_prompt:"In welche Himmelsrichtung zeigt der Pfeil?",dir_n:"Norden",dir_no:"Nordosten",dir_o:"Osten",dir_so:"Südosten",dir_s:"Süden",dir_sw:"Südwesten",dir_w:"Westen",dir_nw:"Nordwesten",mt_kontinent:"Kontinente-Finder",kontinent_prompt:"Auf welchem Kontinent liegt dieses Land?",mt_ozean:"Die 5 Ozeane",ocn_pazifik:"Pazifik",ocn_atlantik:"Atlantik",ocn_indik:"Indischer Ozean",ocn_arktik:"Arktischer Ozean",ocn_suedpolar:"Südpolarmeer",ocq_largest:"Welcher Ozean ist der größte?",ocq_smallest:"Welcher Ozean ist der kleinste?",ocq_deepest:"Welcher Ozean ist der tiefste?",ocq_antarctica:"Welcher Ozean umgibt die Antarktis?",ocq_northpole:"Welcher Ozean liegt am Nordpol?",ocq_india:"Welcher Ozean liegt südlich von Asien (bei Indien)?",ocq_america_europe:"Welcher Ozean liegt zwischen Amerika und Europa?",mt_tier:"Tiere & Lebensräume",tier_prompt:"Wo lebt dieses Tier?",mt_jahr:"Jahreszeiten & Halbkugeln",jahr_prompt:"Welche Jahreszeit ist dort im {m}?",sea_spring:"Frühling",sea_summer:"Sommer",sea_autumn:"Herbst",sea_winter:"Winter",mon_1:"Januar",mon_2:"Februar",mon_3:"März",mon_4:"April",mon_5:"Mai",mon_6:"Juni",mon_7:"Juli",mon_8:"August",mon_9:"September",mon_10:"Oktober",mon_11:"November",mon_12:"Dezember",kompass_meta:"Tipp: Auf Karten ist Norden meist oben.",ocf_pazifik:"Der Pazifik ist der größte und tiefste Ozean.",ocf_atlantik:"Der Atlantik liegt zwischen Amerika, Europa und Afrika.",ocf_indik:"Der Indische Ozean liegt südlich von Asien.",ocf_arktik:"Der Arktische Ozean ist der kleinste und liegt am Nordpol.",ocf_suedpolar:"Das Südpolarmeer umgibt die Antarktis.",jahr_meta_south:"Auf der Südhalbkugel sind die Jahreszeiten umgekehrt!",hab_wueste:"Wüste",hab_ozean:"Ozean",hab_polar:"Polargebiet",hab_regenwald:"Regenwald",hab_savanne:"Savanne",hab_wald:"Wald",hab_gebirge:"Gebirge",cont_eu:"Europa",cont_af:"Afrika",cont_as:"Asien",cont_na:"Nordamerika",cont_sa:"Südamerika",cont_oc:"Ozeanien",family_duel:"Familienduell (Kind vs. Erwachsen)",travel_setting:"Unterwegs-Vorschläge",travel_title:"Unterwegs? Sammle, was du siehst!",travel_plates:"Kennzeichen",travel_trains:"Waggons",stickers_title:"🏅 Meine Sticker",stickers_sub:"Du hast {n} von {t} Kategorien freigespielt — sammle alle!",kids_mode_on:"Kinder-Modus ist AN",kids_mode_off:"Kinder-Modus ist AUS",pl_foryou:"Für dich",pl_geo:"Geografie",pl_natur:"Natur & Tiere",pl_mint:"MINT & Technik",pl_pop:"Pop & Medien",pl_kultur:"Kultur & Geschichte",play_portrait:"Trotzdem im Hochformat spielen",rotate_lock_hint:"Tipp: Falls Drehen nicht klappt, ist evtl. die Bildschirmsperre (Display-Rotation) aktiv.",
+  help_close:"Verstanden!",guide_title:"📖 Handbuch & Hilfe",guide_tab_kids:"Für Kinder",guide_tab_par:"Für Eltern & alle",guide_open:"📖 Handbuch & Hilfe (ausführlich)",guide_close:"Schließen",guide_more:"Mehr erklärt: Handbuch öffnen",rec_games_title:"Empfohlene Spiele",rec_setting:"Spiel-Empfehlungen",rec_sub:"Passende Spiele im Home vorschlagen",lv_title:"Lokal 1:1 Hot-Seat",lv_sub:"Zwei Spieler · Ein Gerät · {n} Runden",lv_pick_mode:"SPIELMODUS WÄHLEN",lv_pick_cat:"RUBRIK WÄHLEN",lv_pick_game:"SPIEL WÄHLEN",lv_type_random:"Zufall",lv_type_cat:"Rubrik",lv_type_game:"Spiel",lv_start:"Spiel starten",lv_back:"Zurück",lv_handoff_hint:"Schau nicht hin, während der andere spielt!",lv_ready:"Ich bin bereit",lv_wins:"{name} gewinnt!",lv_draw:"Unentschieden!",lv_again:"Nochmal spielen",lv_home:"Hauptmenü",ui_on:"An",ui_off:"Aus",set_title:"Weitere Einstellungen",set_sub:"Region, TTS, Raster & mehr",set_region:"Heimatregion",set_reset_toast:"Erkennung wird beim nächsten Start wiederholt",set_not_set:"Nicht gesetzt (auto)",set_tts:"Vorlesen (TTS)",set_hardcore:"Hardcore-Modus",set_grid:"Spiele nebeneinander (Raster)",set_rows:"Reihen pro Seite (Carousel)",set_catrows:"Kategorie-Reihen (Wisch-Leiste)",set_catrows_sub:"Reihen pro Seite in der Kategorie-Leiste oben",set_feedback:"Feedback & Kontakt",set_feedback_sub:"Fehler melden, Ideen einreichen",set_install:"App installieren",ui_close:"Schließen",guide_kids_intro:"Willkommen bei GeoQuest! Hier lernst du spielerisch die ganze Welt kennen. So funktioniert es:",guide_k1_h:"🎮 Wie spiele ich?",guide_k1:"Wähle oben eine Kategorie (zum Beispiel Tiere oder Länder) und tippe ein Spiel an. Jede Runde hat 10 Fragen. Tippe die Antwort an, die du für richtig hältst – du erfährst sofort, ob sie stimmt.",guide_k2_h:"🧩 Die Spielarten",guide_k2:"• Auswahl: Tippe eine von mehreren Antworten an.\n• Höher oder tiefer: Du siehst zwei Dinge – tippe das größere oder höhere an.\n• Zuordnen: Verbinde die Paare, die zusammengehören.\n• Wort-Schmiede: Baue aus den Buchstaben echte Wörter.",guide_k3_h:"⭐ Punkte, Streak & Sticker",guide_k3:"Für jede richtige Antwort bekommst du Punkte. Mehrere richtige hintereinander ergeben eine Streak 🔥 und extra Punkte. Mit Münzen 💰 kannst du dir einen Tipp kaufen. Für jede Kategorie, die du spielst, gibt es einen Sticker 🏅 – sammle alle!",guide_k4_h:"💡 Tipps für dich",guide_k4:"Hab keine Angst vor Fehlern – die sind zum Lernen da! Wenn eine Frage zu schwer ist, frag einen Erwachsenen oder probier eine leichtere Kategorie. Oben mit dem ❓ findest du jederzeit Hilfe.",guide_p_intro:"GeoQuest ist ein Lern-Quiz für alle Altersgruppen. Dieser Teil erklärt die Steuerungs- und Sicherheitsfunktionen für Eltern und Lehrkräfte.",guide_p1_h:"🧒 Kinder-Modus",guide_p1:"Über den 🧒-Knopf oben aktivierbar. Er blendet zu schwere Spiele und Themen aus (z. B. Jahreszahlen oder komplexe Statistik) und zeigt nur altersgerechte, lehrplannahe Inhalte – auch innerhalb der Kinder-Kategorien.",guide_p2_h:"🎓 Klassenstufen",guide_p2:"In den Einstellungen wählbar: Klasse 1–2 (6–8 Jahre) zeigt nur die einfachste Stufe, Klasse 3–4 (8–10 Jahre) erlaubt auch mittlere Aufgaben. Orientiert am Sachunterricht der Grundschule.",guide_p3_h:"🔒 Eltern-PIN",guide_p3:"Sie können eine 4-stellige PIN setzen. Ist sie aktiv, lässt sich der Kinder-Modus nur mit PIN abschalten – so bleibt die kindgerechte Auswahl geschützt.",guide_p4_h:"👥 Mehrspieler",guide_p4:"Live 1vs1 spielt online gegen andere. Hot-Seat reicht ein Gerät reihum weiter. Das Familienduell stellt Kind und Erwachsenem je nach Spielstärke passende Fragen – fair für beide.",guide_p5_h:"🏆 Bestenlisten & Fairness",guide_p5:"Ranglisten gelten immer nur pro Spielmodus und feste 10 Runden – man tritt nie quer über verschiedene Spiele gegeneinander an. Kind und Erwachsener landen also nicht in derselben Liste, außer sie spielen denselben Modus. Der Übungsmodus (Einstellungen) läuft ganz ohne Wertung – ideal zum Lernen ohne Druck.",guide_p6_h:"⚙️ Weitere Funktionen",guide_p6:"Münzen und Sticker motivieren, der Offline-Modus funktioniert ohne Netz, die Sprache lässt sich umstellen, und die Unterwegs-Vorschläge regen bei Auto- oder Zugfahrten zum Kennzeichen- oder Waggon-Sammeln an (optional, nur mit Standort-Freigabe).",practice_setting:"Übungsmodus",practice_sub:"Spielen ohne Bestenlisten-Eintrag (kein Druck)",pin_setting:"Eltern-PIN (Kinder-Modus sichern)",pin_set_title:"Eltern-PIN setzen (4 Ziffern)",pin_check_title:"PIN eingeben zum Beenden",pin_wrong:"Falscher PIN",pin_ok:"OK",pin_remove:"PIN entfernen",kids_grade_label:"Kind-Alter (Klassenstufe)",kids_grade_young:"6–8 J. (Kl. 1–2)",kids_grade_older:"8–10 J. (Kl. 3–4)",kids_grade_t3:"11–13 J. (Kl. 5–7)",kids_grade_t4:"14–15 J. (Kl. 8–9)",mt_kompass:"Kompass: Himmelsrichtungen",kompass_prompt:"In welche Himmelsrichtung zeigt der Pfeil?",dir_n:"Norden",dir_no:"Nordosten",dir_o:"Osten",dir_so:"Südosten",dir_s:"Süden",dir_sw:"Südwesten",dir_w:"Westen",dir_nw:"Nordwesten",mt_kontinent:"Kontinente-Finder",kontinent_prompt:"Auf welchem Kontinent liegt dieses Land?",mt_ozean:"Die 5 Ozeane",ocn_pazifik:"Pazifik",ocn_atlantik:"Atlantik",ocn_indik:"Indischer Ozean",ocn_arktik:"Arktischer Ozean",ocn_suedpolar:"Südpolarmeer",ocq_largest:"Welcher Ozean ist der größte?",ocq_smallest:"Welcher Ozean ist der kleinste?",ocq_deepest:"Welcher Ozean ist der tiefste?",ocq_antarctica:"Welcher Ozean umgibt die Antarktis?",ocq_northpole:"Welcher Ozean liegt am Nordpol?",ocq_india:"Welcher Ozean liegt südlich von Asien (bei Indien)?",ocq_america_europe:"Welcher Ozean liegt zwischen Amerika und Europa?",mt_tier:"Tiere & Lebensräume",tier_prompt:"Wo lebt dieses Tier?",mt_jahr:"Jahreszeiten & Halbkugeln",mt_beine:"Tiere: Wie viele Beine?",beine_meta:"Ein {e} hat {n} Beine.",mt_planet:"Planeten: Näher zur Sonne?",planet_prompt:"Welcher ist näher an der Sonne? {p1} oder {p2}?",planet_meta:"{p} ist Planet Nr. {pos} von der Sonne.",pl_mercury:"Merkur",pl_venus:"Venus",pl_earth:"Erde",pl_mars:"Mars",pl_jupiter:"Jupiter",pl_saturn:"Saturn",pl_uranus:"Uranus",pl_neptune:"Neptun",mt_hundgross:"Hunde: Groß oder Klein?",dog_size_klein:"Klein",dog_size_mittel:"Mittel",dog_size_gross:"Groß",dog_size_meta:"{breed} wird {h} cm groß — das ist {size}.",mt_tpkont:"Freizeitparks: Welcher Kontinent?",tp_kont_meta:"{park} liegt in {cont}.",mt_npkont:"Nationalparks: Welcher Kontinent?",mt_kzone:"Klimazonen: Welche Zone?",mt_obstgem:"Obst oder Gemüse?",og_obst:"Obst",og_gemuese:"Gemüse",mt_baumblum:"Baum, Blume oder Strauch?",bb_baum:"Baum",bb_blume:"Blume",bb_strauch:"Strauch",mt_pfhab:"Wo wächst diese Pflanze?",pfhab_wueste:"Wüste",pfhab_tropen:"Tropen",pfhab_wald:"Wald",pfhab_wasser:"Wasser",pfhab_wiese:"Wiese",pfhab_garten:"Garten",mt_pffarbe:"Welche Farbe hat diese Blume?",pfarbe_rot:"Rot",pfarbe_gelb:"Gelb",pfarbe_rosa:"Rosa",pfarbe_bunt:"Bunt",pfarbe_gruen:"Grün",pfarbe_lila:"Lila",pfarbe_weiss:"Weiß",pfarbe_orange:"Orange",mt_pfessbar:"Essbar oder giftig?",ess_essbar:"Essbar",ess_nicht:"Giftig",ess_vorsicht:"Vorsicht!",mt_haustwild:"Haustier oder Wildtier?",hw_haus:"Haustier",hw_wild:"Wildtier",mt_wasserland:"Wasser- oder Landtier?",wl_wasser:"Wassertier",wl_land:"Landtier",wl_luft:"Vogel/Luft",mt_warmkalt:"Warmes oder kaltes Land?",wkl_warm:"Warm",wkl_kalt:"Kalt",wkl_mild:"Gemäßigt",mt_regentroc:"Regenreich oder trocken?",mt_sportball:"Ballsport?",ball_ja:"Ja, Ballsport",ball_nein:"Kein Ballsport",mt_teamsp:"Team- oder Einzelsport?",ts_team:"Teamsport",ts_einzel:"Einzelsport",ts_beides:"Beides möglich",mt_olymp:"Sommer- oder Wintersport?",ol_sommer:"Sommersport",ol_winter:"Wintersport",mt_spielanz:"Wie viele Spieler?",mt_kzland:"Kennzeichen: Welches Land?",kz_meta:"{k} steht für {l}.",mt_kztipp:"Anfangsbuchstabe des Kürzels?",mt_kzeu:"EU-Kennzeichen?",eu_ja:"EU",eu_nein:"Nicht-EU",eu_meta:"{l}: {eu}",mt_spielsplr:"Brettspiel: Wie viele Spieler?",spielsplr_meta:"{n} kann mit max. {m} Spielern gespielt werden.",mt_spielzeit:"Kurzes oder langes Spiel?",sz_kurz:"Kurz (≤30 Min)",sz_mittel:"Mittel (≤90 Min)",sz_lang:"Lang (>90 Min)",mt_spielursp:"Brettspiel: Woher?",mt_spieltyp:"Strategie oder Glück?",stz_strategie:"Strategie",stz_zufall:"Glück/Zufall",mt_splhl:"Mehr Spieler?",spieler_unit:"Spieler",splhl_prompt:"Welches Spiel kann mit mehr Spielern gespielt werden?",mt_fzkaro:"Auto: Welcher Typ?",mt_fzkonz:"Von welchem Konzern?",mt_fzgew:"Welches Auto ist schwerer?",fzgew_prompt:"Welches Fahrzeug ist schwerer?",mt_fzkoff:"Mehr Kofferraum?",fzkoff_prompt:"Welches Auto hat mehr Kofferraum?",mt_fzsitz:"Wie viele Sitze?",mt_digplat:"PC, Konsole oder Mobil?",mt_digdl:"Mehr Downloads?",digdl_prompt:"Welches Spiel wurde öfter heruntergeladen?",mt_diggre:"Welches Genre?",mt_digf2p:"Free-to-Play?",f2p_ja:"Kostenlos (F2P)",f2p_nein:"Kaufspiel",mt_digland:"Aus welchem Land?",mt_digvk:"Mehr Verkäufe?",digvk_prompt:"Welches Spiel hat mehr Verkäufe?",mt_sternpl:"Stern oder Planet?",sp_stern:"Stern",sp_planet:"Planet",mt_plgross:"Groß oder klein?",pg_gross:"Großer Planet",pg_mittel:"Mittelgroß",pg_klein:"Kleiner Planet",mt_tagnacht:"Tag oder Nacht?",tn_tag:"Tag",tn_nacht:"Nacht",mt_sonmond:"Sonne, Mond oder Stern?",sm_sonne:"Sonne",sm_mond:"Mond",sm_stern:"Stern",mt_capeu:"Europäische Hauptstadt?",eu_ja2:"Ja, Europa",eu_nein2:"Kein Europa",capeu_meta:"{c}: {eu}",mt_capod:"Hauptstadt oder nicht?",cn_ja:"Ja, Hauptstadt",cn_nein:"Keine Hauptstadt",mt_capanf:"Anfangsbuchstabe?",mt_capisl:"Inselhauptstadt?",ci_ja:"Ja, Insel",ci_nein:"Kein Inselland",mt_hodka:"Hund oder Katze?",hk_hund:"Hund",hk_katze:"Katze",mt_hpelz:"Kurzes oder langes Fell?",hp_kurz:"Kurz",hp_lang:"Lang",mt_hwkr:"Arbeitshund oder Schoßhund?",hab_arbeit:"Arbeitshund",hab_begleiter:"Schoßhund",mt_hgkr:"Große oder kleine Rasse?",mt_nordsued:"Nord- oder Südhalbkugel?",ns_nord:"Nordhalbkugel",ns_sued:"Südhalbkugel",mt_leu:"In Europa?",eu_ja3:"In Europa",eu_nein3:"Nicht in Europa",mt_nachbar:"Nachbarländer?",nb_ja:"Ja",nb_nein:"Nein",mt_kontgr:"Größerer Kontinent?",kg_prompt:"{a} oder {b}?",mt_ozkw:"Kalt oder warm?",okw_kalt:"Kalt",okw_warm:"Warm",mt_moo:"Meer oder Ozean?",moo_ozean:"Ozean",moo_meer:"Meer",mt_ozgr:"Welcher ist größer?",ozg_prompt:"{a} oder {b}?",mt_ozth:"In welchem Ozean?",mt_ffh:"Welche Farbe?",mt_lion:"Inselland?",il_ja:"Inselland",il_nein:"Kein Inselland",mt_leu2:"EU-Mitglied?",eu_mja:"EU-Mitglied",eu_mnein:"Kein EU-Mitglied",mt_nsk:"Nord- oder Südhalbkugel?",nsk_nord:"Nordhalbkugel",nsk_sued:"Südhalbkugel",mt_pieu:"In Europa?",pieu_ja:"Ja",pieu_nein:"Nein",mt_paw:"Park-Typ?",paw_achterbahn:"Achterbahnpark",paw_wasser:"Wasserpark",mt_pdon:"Disney?",pd_disney:"Disney",pd_nicht:"Kein Disney",mt_pbq:"Echter Park?",pb_echt:"Echter Park",pb_fiktiv:"Fiktiv",mt_schtyp:"Was für ein Zug?",schtyp_schnellzug:"Schnellzug",schtyp_sbahn:"S-Bahn",schtyp_ubahn:"U-Bahn",schtyp_tram:"Tram",schtyp_regional:"Regionalzug",schtyp_gueter:"Güterzug",schtyp_nacht:"Nachtzug",mt_schland:"Welches Land?",mt_schdau:"Welche Fahrt dauert länger?",schdau_prompt:"Welche Zugstrecke dauert länger?",mt_schatr:"Elektro oder Diesel?",schatr_elektro:"Elektro",schatr_diesel:"Diesel",schatr_dampf:"Dampf",schatr_wasserstoff:"Wasserstoff",mt_schtmp:"Welcher Zug ist schneller?",schtmp_prompt:"Welcher Zug fährt schneller?",mt_sw2:"Sommer- oder Wintersport?",sw_sommer:"Sommersport",sw_winter:"Wintersport",mt_wls:"Wasser- oder Landsport?",wls_wasser:"Wassersport",wls_land:"Landsport",mt_kzab:"Kennzeichen-ABC",mt_kznbl:"Nachbarland von Deutschland?",nbl_ja:"Ja, Nachbarland",nbl_nein:"Kein Nachbarland",rt_regen:"Regenreich",rt_trocken:"Trocken",kzone_meta:"{c} liegt in der Klimazone {z}.",mt_klwarm:"Klima: Wärmer oder kälter?",klwarm_prompt:"Welches Land hat die höhere Durchschnittstemperatur?",mt_klkontz:"Kontinent & Klimazone",klkontz_meta:"{c} hat typischerweise Klimazone {z}.",mt_hundkl:"Hunde: Größenklasse",mt_hundfci:"Hunde: FCI-Gruppe",hund_fci_meta:"{breed} gehört zur FCI-Gruppe: {fci}.",mt_hundland:"Hunde: Ursprungsland",hund_land_meta:"{breed} kommt aus {land}.",npark_kont_meta:"{park} liegt in {cont}.",mt_flusskont:"Flüsse: Welcher Kontinent?",fluss_kont_meta:"{r} liegt in {c}.",mt_hptkont:"Hauptstädte: Welcher Kontinent?",hptst_kont_meta:"{h} liegt in {c}.",mt_wetter:"Wetter-Symbole",wt_sunny:"Sonnig",wt_rainy:"Regen",wt_snowy:"Schnee",wt_stormy:"Gewitter",wt_foggy:"Nebel",wt_rainbow:"Regenbogen",wt_windy:"Sturm",wt_cloudy:"Bewölkt",mt_tiergross:"Tiere: Größenvergleich",tiergross_prompt:"Welches Tier ist größer: {a} oder {b}?",tiergross_meta:"Das {big} ist größer!",jahr_prompt:"Welche Jahreszeit ist dort im {m}?",sea_spring:"Frühling",sea_summer:"Sommer",sea_autumn:"Herbst",sea_winter:"Winter",mon_1:"Januar",mon_2:"Februar",mon_3:"März",mon_4:"April",mon_5:"Mai",mon_6:"Juni",mon_7:"Juli",mon_8:"August",mon_9:"September",mon_10:"Oktober",mon_11:"November",mon_12:"Dezember",kompass_meta:"Tipp: Auf Karten ist Norden meist oben.",ocf_pazifik:"Der Pazifik ist der größte und tiefste Ozean.",ocf_atlantik:"Der Atlantik liegt zwischen Amerika, Europa und Afrika.",ocf_indik:"Der Indische Ozean liegt südlich von Asien.",ocf_arktik:"Der Arktische Ozean ist der kleinste und liegt am Nordpol.",ocf_suedpolar:"Das Südpolarmeer umgibt die Antarktis.",jahr_meta_south:"Auf der Südhalbkugel sind die Jahreszeiten umgekehrt!",hab_wueste:"Wüste",hab_ozean:"Ozean",hab_polar:"Polargebiet",hab_regenwald:"Regenwald",hab_savanne:"Savanne",hab_wald:"Wald",hab_gebirge:"Gebirge",cont_eu:"Europa",cont_af:"Afrika",cont_as:"Asien",cont_na:"Nordamerika",cont_sa:"Südamerika",cont_oc:"Ozeanien",family_duel:"Familienduell (Kind vs. Erwachsen)",travel_setting:"Unterwegs-Vorschläge",travel_title:"Unterwegs? Sammle, was du siehst!",travel_plates:"Kennzeichen",travel_trains:"Waggons",stickers_title:"🏅 Meine Sticker",stickers_sub:"Du hast {n} von {t} Kategorien freigespielt — sammle alle!",kids_mode_on:"Kinder-Modus ist AN",kids_mode_off:"Kinder-Modus ist AUS",pl_foryou:"Für dich",pl_geo:"Geografie",pl_natur:"Natur & Tiere",pl_mint:"MINT & Technik",pl_pop:"Pop & Medien",pl_kultur:"Kultur & Geschichte",play_portrait:"Trotzdem im Hochformat spielen",rotate_lock_hint:"Tipp: Falls Drehen nicht klappt, ist evtl. die Bildschirmsperre (Display-Rotation) aktiv.",
   help_tour_btn:"▶️ Kurze Einführung ansehen",
   ob_help_hint:"Tipp: Später findest du in der App oben rechts jederzeit Hilfe über das ❓.",
   tour_skip:"Überspringen",tour_next:"Weiter →",tour_done:"Los geht's!",
@@ -1440,7 +1440,7 @@ de:{
   spotter_hint:"Kennzeichen gesehen? Sofort eintragen!",
   spotter_all:"Alle Länder",spotter_unknown:"Unbekanntes Kennzeichen",
   spotter_not_in:"nicht in",spotter_but_in:"aber in",spotter_no_region:"hat keine Regionen – gib \"{code}\" ein\!",
-  album_title:"\u{1F4D4} Kennzeichen-Album",album_list:"\u{1F4DD} Liste",album_map:"\u{1F5FA} Karte",
+  album_title:"\u{1F4D4} Kennzeichen-Album",album_kids_title:"🚗 License Plate Album",album_kids_sub:"Collect plates from across Europe!",album_kids_btn:"Open →",pl_sport:"Sport & Games",album_kids_title:"🚗 Kennzeichen-Album",album_kids_sub:"Sammle Kennzeichen aus ganz Europa!",album_kids_btn:"Öffnen →",pl_sport:"Sport & Spiel",album_list:"\u{1F4DD} Liste",album_map:"\u{1F5FA} Karte",
   album_empty_country:"Noch nichts aus {country} gesammelt – nutze den Spotter!",
   album_empty:"Noch nichts gesammelt!\nSpiele EU-Kennzeichen oder benutze den Spotter.",
   album_codes:"Kürzel",
@@ -1507,7 +1507,7 @@ en:{
   help_fav:"❤️ Tap the heart to save a game as a favourite.",
   help_search:"\u{1F50D} Use search to find any game quickly.",
   help_cats:"Swipe through the categories at the top – tap one to see its games.",
-  help_close:"Got it!",guide_title:"📖 Handbook & Help",guide_tab_kids:"For kids",guide_tab_par:"For parents & everyone",guide_open:"📖 Handbook & Help (detailed)",guide_close:"Close",guide_more:"More detail: open the handbook",rec_games_title:"Recommended games",rec_setting:"Game suggestions",rec_sub:"Suggest matching games on the home screen",lv_title:"Local 1:1 Hot-Seat",lv_sub:"Two players · One device · {n} rounds",lv_pick_mode:"CHOOSE GAME MODE",lv_pick_cat:"CHOOSE CATEGORY",lv_pick_game:"CHOOSE GAME",lv_type_random:"Random",lv_type_cat:"Category",lv_type_game:"Game",lv_start:"Start game",lv_back:"Back",lv_handoff_hint:"Don't look while the other player is playing!",lv_ready:"I'm ready",lv_wins:"{name} wins!",lv_draw:"Draw!",lv_again:"Play again",lv_home:"Main menu",ui_on:"On",ui_off:"Off",set_title:"More settings",set_sub:"Region, TTS, grid & more",set_region:"Home region",set_reset_toast:"Detection will repeat on next start",set_not_set:"Not set (auto)",set_tts:"Read aloud (TTS)",set_hardcore:"Hardcore mode",set_grid:"Games per row (grid)",set_rows:"Rows per page (carousel)",set_catrows:"Category rows (swipe bar)",set_catrows_sub:"Rows per page in the category bar above",set_feedback:"Feedback & contact",set_feedback_sub:"Report bugs, submit ideas",set_install:"Install app",ui_close:"Close",guide_kids_intro:"Welcome to GeoQuest! Here you explore the whole world while playing. Here is how it works:",guide_k1_h:"🎮 How do I play?",guide_k1:"Pick a category at the top (for example Animals or Countries) and tap a game. Each round has 10 questions. Tap the answer you think is correct – you find out right away if it was right.",guide_k2_h:"🧩 The game types",guide_k2:"• Multiple choice: Tap one of several answers.\n• Higher or lower: You see two things – tap the bigger or higher one.\n• Match: Connect the pairs that belong together.\n• Word forge: Build real words from the letters.",guide_k3_h:"⭐ Points, streak & stickers",guide_k3:"You earn points for every correct answer. Several correct in a row make a streak 🔥 and extra points. With coins 💰 you can buy a hint. For every category you play you get a sticker 🏅 – collect them all!",guide_k4_h:"💡 Tips for you",guide_k4:"Do not worry about mistakes – they help you learn! If a question is too hard, ask a grown-up or try an easier category. The ❓ at the top gives you help any time.",guide_p_intro:"GeoQuest is a learning quiz for all ages. This part explains the control and safety features for parents and teachers.",guide_p1_h:"🧒 Kids mode",guide_p1:"Toggle it with the 🧒 button at the top. It hides games and topics that are too hard (such as years or complex statistics) and shows only age-appropriate, curriculum-friendly content – even within the kids categories.",guide_p2_h:"🎓 Grade levels",guide_p2:"Selectable in settings: grade 1–2 (ages 6–8) shows only the easiest level, grade 3–4 (ages 8–10) also allows medium tasks. Based on primary-school general studies.",guide_p3_h:"🔒 Parent PIN",guide_p3:"You can set a 4-digit PIN. While active, kids mode can only be turned off with the PIN – keeping the child-safe selection protected.",guide_p4_h:"👥 Multiplayer",guide_p4:"Live 1vs1 plays online against others. Hot-Seat passes one device around. The family duel gives the child and the adult questions matched to their level – fair for both.",guide_p5_h:"🏆 Leaderboards & fairness",guide_p5:"Leaderboards always apply per game mode and a fixed 10 rounds – you never compete across different games. So a child and an adult never share a list unless they play the same mode. Practice mode (settings) runs with no scoring at all – ideal for pressure-free learning.",guide_p6_h:"⚙️ More features",guide_p6:"Coins and stickers motivate, offline mode works without a connection, the language can be changed, and the on-the-go tips encourage collecting plates or train wagons during car or train rides (optional, only with location permission).",practice_setting:"Practice mode",practice_sub:"Play without leaderboard entry (no pressure)",pin_setting:"Parent PIN (lock kids mode)",pin_set_title:"Set parent PIN (4 digits)",pin_check_title:"Enter PIN to exit",pin_wrong:"Wrong PIN",pin_ok:"OK",pin_remove:"Remove PIN",kids_grade_label:"Child age (grade)",kids_grade_young:"6–8 (gr. 1–2)",kids_grade_older:"8–10 (gr. 3–4)",kids_grade_t3:"11–13 (gr. 5–7)",kids_grade_t4:"14–15 (gr. 8–9)",mt_kompass:"Compass: Directions",kompass_prompt:"Which direction does the arrow point?",dir_n:"North",dir_no:"Northeast",dir_o:"East",dir_so:"Southeast",dir_s:"South",dir_sw:"Southwest",dir_w:"West",dir_nw:"Northwest",mt_kontinent:"Continent Finder",kontinent_prompt:"On which continent is this country?",mt_ozean:"The 5 Oceans",ocn_pazifik:"Pacific",ocn_atlantik:"Atlantic",ocn_indik:"Indian Ocean",ocn_arktik:"Arctic Ocean",ocn_suedpolar:"Southern Ocean",ocq_largest:"Which ocean is the largest?",ocq_smallest:"Which ocean is the smallest?",ocq_deepest:"Which ocean is the deepest?",ocq_antarctica:"Which ocean surrounds Antarctica?",ocq_northpole:"Which ocean is at the North Pole?",ocq_india:"Which ocean lies south of Asia (near India)?",ocq_america_europe:"Which ocean lies between America and Europe?",mt_tier:"Animals & Habitats",tier_prompt:"Where does this animal live?",mt_jahr:"Seasons & Hemispheres",jahr_prompt:"Which season is it there in {m}?",sea_spring:"Spring",sea_summer:"Summer",sea_autumn:"Autumn",sea_winter:"Winter",mon_1:"January",mon_2:"February",mon_3:"March",mon_4:"April",mon_5:"May",mon_6:"June",mon_7:"July",mon_8:"August",mon_9:"September",mon_10:"October",mon_11:"November",mon_12:"December",kompass_meta:"Tip: north is usually at the top of a map.",ocf_pazifik:"The Pacific is the largest and deepest ocean.",ocf_atlantik:"The Atlantic lies between the Americas, Europe and Africa.",ocf_indik:"The Indian Ocean lies south of Asia.",ocf_arktik:"The Arctic Ocean is the smallest, at the North Pole.",ocf_suedpolar:"The Southern Ocean surrounds Antarctica.",jahr_meta_south:"In the Southern Hemisphere the seasons are reversed!",hab_wueste:"Desert",hab_ozean:"Ocean",hab_polar:"Polar region",hab_regenwald:"Rainforest",hab_savanne:"Savanna",hab_wald:"Forest",hab_gebirge:"Mountains",cont_eu:"Europe",cont_af:"Africa",cont_as:"Asia",cont_na:"North America",cont_sa:"South America",cont_oc:"Oceania",family_duel:"Family duel (kid vs. adult)",travel_setting:"On-the-go tips",travel_title:"On the move? Collect what you see!",travel_plates:"Plates",travel_trains:"Wagons",stickers_title:"🏅 My stickers",stickers_sub:"You unlocked {n} of {t} categories — collect them all!",kids_mode_on:"Kids mode is ON",kids_mode_off:"Kids mode is OFF",pl_foryou:"For you",pl_geo:"Geography",pl_natur:"Nature & Animals",pl_mint:"STEM & Tech",pl_pop:"Pop & Media",pl_kultur:"Culture & History",play_portrait:"Play in portrait anyway",rotate_lock_hint:"Tip: if rotating does not work, the screen rotation lock may be on.",
+  help_close:"Got it!",guide_title:"📖 Handbook & Help",guide_tab_kids:"For kids",guide_tab_par:"For parents & everyone",guide_open:"📖 Handbook & Help (detailed)",guide_close:"Close",guide_more:"More detail: open the handbook",rec_games_title:"Recommended games",rec_setting:"Game suggestions",rec_sub:"Suggest matching games on the home screen",lv_title:"Local 1:1 Hot-Seat",lv_sub:"Two players · One device · {n} rounds",lv_pick_mode:"CHOOSE GAME MODE",lv_pick_cat:"CHOOSE CATEGORY",lv_pick_game:"CHOOSE GAME",lv_type_random:"Random",lv_type_cat:"Category",lv_type_game:"Game",lv_start:"Start game",lv_back:"Back",lv_handoff_hint:"Don't look while the other player is playing!",lv_ready:"I'm ready",lv_wins:"{name} wins!",lv_draw:"Draw!",lv_again:"Play again",lv_home:"Main menu",ui_on:"On",ui_off:"Off",set_title:"More settings",set_sub:"Region, TTS, grid & more",set_region:"Home region",set_reset_toast:"Detection will repeat on next start",set_not_set:"Not set (auto)",set_tts:"Read aloud (TTS)",set_hardcore:"Hardcore mode",set_grid:"Games per row (grid)",set_rows:"Rows per page (carousel)",set_catrows:"Category rows (swipe bar)",set_catrows_sub:"Rows per page in the category bar above",set_feedback:"Feedback & contact",set_feedback_sub:"Report bugs, submit ideas",set_install:"Install app",ui_close:"Close",guide_kids_intro:"Welcome to GeoQuest! Here you explore the whole world while playing. Here is how it works:",guide_k1_h:"🎮 How do I play?",guide_k1:"Pick a category at the top (for example Animals or Countries) and tap a game. Each round has 10 questions. Tap the answer you think is correct – you find out right away if it was right.",guide_k2_h:"🧩 The game types",guide_k2:"• Multiple choice: Tap one of several answers.\n• Higher or lower: You see two things – tap the bigger or higher one.\n• Match: Connect the pairs that belong together.\n• Word forge: Build real words from the letters.",guide_k3_h:"⭐ Points, streak & stickers",guide_k3:"You earn points for every correct answer. Several correct in a row make a streak 🔥 and extra points. With coins 💰 you can buy a hint. For every category you play you get a sticker 🏅 – collect them all!",guide_k4_h:"💡 Tips for you",guide_k4:"Do not worry about mistakes – they help you learn! If a question is too hard, ask a grown-up or try an easier category. The ❓ at the top gives you help any time.",guide_p_intro:"GeoQuest is a learning quiz for all ages. This part explains the control and safety features for parents and teachers.",guide_p1_h:"🧒 Kids mode",guide_p1:"Toggle it with the 🧒 button at the top. It hides games and topics that are too hard (such as years or complex statistics) and shows only age-appropriate, curriculum-friendly content – even within the kids categories.",guide_p2_h:"🎓 Grade levels",guide_p2:"Selectable in settings: grade 1–2 (ages 6–8) shows only the easiest level, grade 3–4 (ages 8–10) also allows medium tasks. Based on primary-school general studies.",guide_p3_h:"🔒 Parent PIN",guide_p3:"You can set a 4-digit PIN. While active, kids mode can only be turned off with the PIN – keeping the child-safe selection protected.",guide_p4_h:"👥 Multiplayer",guide_p4:"Live 1vs1 plays online against others. Hot-Seat passes one device around. The family duel gives the child and the adult questions matched to their level – fair for both.",guide_p5_h:"🏆 Leaderboards & fairness",guide_p5:"Leaderboards always apply per game mode and a fixed 10 rounds – you never compete across different games. So a child and an adult never share a list unless they play the same mode. Practice mode (settings) runs with no scoring at all – ideal for pressure-free learning.",guide_p6_h:"⚙️ More features",guide_p6:"Coins and stickers motivate, offline mode works without a connection, the language can be changed, and the on-the-go tips encourage collecting plates or train wagons during car or train rides (optional, only with location permission).",practice_setting:"Practice mode",practice_sub:"Play without leaderboard entry (no pressure)",pin_setting:"Parent PIN (lock kids mode)",pin_set_title:"Set parent PIN (4 digits)",pin_check_title:"Enter PIN to exit",pin_wrong:"Wrong PIN",pin_ok:"OK",pin_remove:"Remove PIN",kids_grade_label:"Child age (grade)",kids_grade_young:"6–8 (gr. 1–2)",kids_grade_older:"8–10 (gr. 3–4)",kids_grade_t3:"11–13 (gr. 5–7)",kids_grade_t4:"14–15 (gr. 8–9)",mt_kompass:"Compass: Directions",kompass_prompt:"Which direction does the arrow point?",dir_n:"North",dir_no:"Northeast",dir_o:"East",dir_so:"Southeast",dir_s:"South",dir_sw:"Southwest",dir_w:"West",dir_nw:"Northwest",mt_kontinent:"Continent Finder",kontinent_prompt:"On which continent is this country?",mt_ozean:"The 5 Oceans",ocn_pazifik:"Pacific",ocn_atlantik:"Atlantic",ocn_indik:"Indian Ocean",ocn_arktik:"Arctic Ocean",ocn_suedpolar:"Southern Ocean",ocq_largest:"Which ocean is the largest?",ocq_smallest:"Which ocean is the smallest?",ocq_deepest:"Which ocean is the deepest?",ocq_antarctica:"Which ocean surrounds Antarctica?",ocq_northpole:"Which ocean is at the North Pole?",ocq_india:"Which ocean lies south of Asia (near India)?",ocq_america_europe:"Which ocean lies between America and Europe?",mt_tier:"Animals & Habitats",tier_prompt:"Where does this animal live?",mt_jahr:"Seasons & Hemispheres",mt_beine:"Animals: How many legs?",beine_meta:"A {e} has {n} legs.",mt_planet:"Planets: Closer to the Sun?",planet_prompt:"Which is closer to the Sun? {p1} or {p2}?",planet_meta:"{p} is planet No. {pos} from the Sun.",pl_mercury:"Mercury",pl_venus:"Venus",pl_earth:"Earth",pl_mars:"Mars",pl_jupiter:"Jupiter",pl_saturn:"Saturn",pl_uranus:"Uranus",pl_neptune:"Neptune",mt_hundgross:"Dogs: Big or Small?",dog_size_klein:"Small",dog_size_mittel:"Medium",dog_size_gross:"Large",dog_size_meta:"{breed} grows {h} cm tall — that is {size}.",mt_tpkont:"Theme Parks: Which Continent?",tp_kont_meta:"{park} is in {cont}.",mt_npkont:"National Parks: Which Continent?",mt_kzone:"Climate Zones: Which Zone?",mt_obstgem:"Fruit or Vegetable?",og_obst:"Fruit",og_gemuese:"Vegetable",mt_baumblum:"Tree, Flower or Shrub?",bb_baum:"Tree",bb_blume:"Flower",bb_strauch:"Shrub",mt_pfhab:"Where does this plant grow?",pfhab_wueste:"Desert",pfhab_tropen:"Tropics",pfhab_wald:"Forest",pfhab_wasser:"Water",pfhab_wiese:"Meadow",pfhab_garten:"Garden",mt_pffarbe:"What color is this flower?",pfarbe_rot:"Red",pfarbe_gelb:"Yellow",pfarbe_rosa:"Pink",pfarbe_bunt:"Colorful",pfarbe_gruen:"Green",pfarbe_lila:"Purple",pfarbe_weiss:"White",pfarbe_orange:"Orange",mt_pfessbar:"Edible or poisonous?",ess_essbar:"Edible",ess_nicht:"Poisonous",ess_vorsicht:"Be careful!",mt_haustwild:"Pet or Wild animal?",hw_haus:"Pet",hw_wild:"Wild animal",mt_wasserland:"Water or Land animal?",wl_wasser:"Water animal",wl_land:"Land animal",wl_luft:"Bird/Flying",mt_warmkalt:"Warm or cold country?",wkl_warm:"Warm",wkl_kalt:"Cold",wkl_mild:"Temperate",mt_regentroc:"Rainy or dry?",mt_sportball:"Ball sport?",ball_ja:"Yes, ball sport",ball_nein:"Not a ball sport",mt_teamsp:"Team or individual sport?",ts_team:"Team sport",ts_einzel:"Individual sport",ts_beides:"Both possible",mt_olymp:"Summer or winter sport?",ol_sommer:"Summer sport",ol_winter:"Winter sport",mt_spielanz:"How many players?",mt_kzland:"License plate: Which country?",kz_meta:"{k} stands for {l}.",mt_kztipp:"First letter of the code?",mt_kzeu:"EU plates?",eu_ja:"EU",eu_nein:"Non-EU",eu_meta:"{l}: {eu}",mt_spielsplr:"Board game: How many players?",spielsplr_meta:"{n} can be played with up to {m} players.",mt_spielzeit:"Short or long game?",sz_kurz:"Short (≤30 min)",sz_mittel:"Medium (≤90 min)",sz_lang:"Long (>90 min)",mt_spielursp:"Board game: Where from?",mt_spieltyp:"Strategy or luck?",stz_strategie:"Strategy",stz_zufall:"Luck/Chance",mt_splhl:"More players?",spieler_unit:"players",splhl_prompt:"Which game can be played with more players?",mt_fzkaro:"Car: What type?",mt_fzkonz:"Which car group?",mt_fzgew:"Which car is heavier?",fzgew_prompt:"Which vehicle is heavier?",mt_fzkoff:"More trunk space?",fzkoff_prompt:"Which car has more trunk space?",mt_fzsitz:"How many seats?",mt_digplat:"PC, Console or Mobile?",mt_digdl:"More downloads?",digdl_prompt:"Which game was downloaded more?",mt_diggre:"Which genre?",mt_digf2p:"Free-to-Play?",f2p_ja:"Free (F2P)",f2p_nein:"Paid game",mt_digland:"Which country?",mt_digvk:"More sales?",digvk_prompt:"Which game sold more?",mt_sternpl:"Star or planet?",sp_stern:"Star",sp_planet:"Planet",mt_plgross:"Big or small?",pg_gross:"Big planet",pg_mittel:"Medium",pg_klein:"Small planet",mt_tagnacht:"Day or night?",tn_tag:"Day",tn_nacht:"Night",mt_sonmond:"Sun, Moon or Star?",sm_sonne:"Sun",sm_mond:"Moon",sm_stern:"Star",mt_capeu:"European capital?",eu_ja2:"Yes, Europe",eu_nein2:"Not Europe",capeu_meta:"{c}: {eu}",mt_capod:"Capital or not?",cn_ja:"Yes, capital",cn_nein:"Not a capital",mt_capanf:"First letter?",mt_capisl:"Island capital?",ci_ja:"Island",ci_nein:"Not island",mt_hodka:"Dog or cat?",hk_hund:"Dog",hk_katze:"Cat",mt_hpelz:"Short or long fur?",hp_kurz:"Short",hp_lang:"Long",mt_hwkr:"Working or lap dog?",hab_arbeit:"Working dog",hab_begleiter:"Lap dog",mt_hgkr:"Big or small breed?",mt_nordsued:"Northern or southern?",ns_nord:"Northern",ns_sued:"Southern",mt_leu:"In Europe?",eu_ja3:"In Europe",eu_nein3:"Not in Europe",mt_nachbar:"Neighbors?",nb_ja:"Yes",nb_nein:"No",mt_kontgr:"Bigger continent?",kg_prompt:"{a} or {b}?",mt_ozkw:"Cold or warm?",okw_kalt:"Cold",okw_warm:"Warm",mt_moo:"Sea or Ocean?",moo_ozean:"Ocean",moo_meer:"Sea",mt_ozgr:"Which is bigger?",ozg_prompt:"{a} or {b}?",mt_ozth:"Which ocean?",mt_ffh:"Which color?",mt_lion:"Island country?",il_ja:"Island",il_nein:"Not island",mt_leu2:"EU member?",eu_mja:"EU member",eu_mnein:"Not EU",mt_nsk:"North or south?",nsk_nord:"Northern",nsk_sued:"Southern",mt_pieu:"In Europe?",pieu_ja:"Yes",pieu_nein:"No",mt_paw:"Park type?",paw_achterbahn:"Thrill park",paw_wasser:"Water park",mt_pdon:"Disney?",pd_disney:"Disney",pd_nicht:"Not Disney",mt_pbq:"Real park?",pb_echt:"Real park",pb_fiktiv:"Fictional",mt_schtyp:"What kind of train?",schtyp_schnellzug:"High-speed",schtyp_sbahn:"S-Train",schtyp_ubahn:"Subway",schtyp_tram:"Tram",schtyp_regional:"Regional",schtyp_gueter:"Freight",schtyp_nacht:"Night train",mt_schland:"Which country?",mt_schdau:"Which journey takes longer?",schdau_prompt:"Which train route takes longer?",mt_schatr:"Electric or diesel?",schatr_elektro:"Electric",schatr_diesel:"Diesel",schatr_dampf:"Steam",schatr_wasserstoff:"Hydrogen",mt_schtmp:"Which train is faster?",schtmp_prompt:"Which train goes faster?",mt_sw2:"Summer or winter sport?",sw_sommer:"Summer sport",sw_winter:"Winter sport",mt_wls:"Water or land sport?",wls_wasser:"Water sport",wls_land:"Land sport",mt_kzab:"License plate ABC",mt_kznbl:"Neighbor of Germany?",nbl_ja:"Yes, neighbor",nbl_nein:"Not a neighbor",rt_regen:"Rainy",rt_trocken:"Dry",kzone_meta:"{c} has the climate zone {z}.",mt_klwarm:"Climate: Warmer or cooler?",klwarm_prompt:"Which country has the higher average temperature?",mt_klkontz:"Continent & Climate Zone",klkontz_meta:"{c} typically has climate zone {z}.",mt_hundkl:"Dogs: Size Class",mt_hundfci:"Dogs: FCI Group",hund_fci_meta:"{breed} belongs to FCI group: {fci}.",mt_hundland:"Dogs: Country of Origin",hund_land_meta:"{breed} comes from {land}.",npark_kont_meta:"{park} is in {cont}.",mt_flusskont:"Rivers: Which Continent?",fluss_kont_meta:"{r} is in {c}.",mt_hptkont:"Capitals: Which Continent?",hptst_kont_meta:"{h} is in {c}.",mt_wetter:"Weather Symbols",wt_sunny:"Sunny",wt_rainy:"Rainy",wt_snowy:"Snowy",wt_stormy:"Stormy",wt_foggy:"Foggy",wt_rainbow:"Rainbow",wt_windy:"Windy",wt_cloudy:"Cloudy",mt_tiergross:"Animals: Size Comparison",tiergross_prompt:"Which animal is bigger: {a} or {b}?",tiergross_meta:"The {big} is bigger!",jahr_prompt:"Which season is it there in {m}?",sea_spring:"Spring",sea_summer:"Summer",sea_autumn:"Autumn",sea_winter:"Winter",mon_1:"January",mon_2:"February",mon_3:"March",mon_4:"April",mon_5:"May",mon_6:"June",mon_7:"July",mon_8:"August",mon_9:"September",mon_10:"October",mon_11:"November",mon_12:"December",kompass_meta:"Tip: north is usually at the top of a map.",ocf_pazifik:"The Pacific is the largest and deepest ocean.",ocf_atlantik:"The Atlantic lies between the Americas, Europe and Africa.",ocf_indik:"The Indian Ocean lies south of Asia.",ocf_arktik:"The Arctic Ocean is the smallest, at the North Pole.",ocf_suedpolar:"The Southern Ocean surrounds Antarctica.",jahr_meta_south:"In the Southern Hemisphere the seasons are reversed!",hab_wueste:"Desert",hab_ozean:"Ocean",hab_polar:"Polar region",hab_regenwald:"Rainforest",hab_savanne:"Savanna",hab_wald:"Forest",hab_gebirge:"Mountains",cont_eu:"Europe",cont_af:"Africa",cont_as:"Asia",cont_na:"North America",cont_sa:"South America",cont_oc:"Oceania",family_duel:"Family duel (kid vs. adult)",travel_setting:"On-the-go tips",travel_title:"On the move? Collect what you see!",travel_plates:"Plates",travel_trains:"Wagons",stickers_title:"🏅 My stickers",stickers_sub:"You unlocked {n} of {t} categories — collect them all!",kids_mode_on:"Kids mode is ON",kids_mode_off:"Kids mode is OFF",pl_foryou:"For you",pl_geo:"Geography",pl_natur:"Nature & Animals",pl_mint:"STEM & Tech",pl_pop:"Pop & Media",pl_kultur:"Culture & History",play_portrait:"Play in portrait anyway",rotate_lock_hint:"Tip: if rotating does not work, the screen rotation lock may be on.",
   help_tour_btn:"▶️ Watch the quick intro",
   ob_help_hint:"Tip: later, the ❓ at the top right of the app gives you help anytime.",
   tour_skip:"Skip",tour_next:"Next →",tour_done:"Let's go!",
@@ -1523,7 +1523,7 @@ en:{
   spotter_hint:"Spotted a plate? Log it now!",
   spotter_all:"All Countries",spotter_unknown:"Unknown plate",
   spotter_not_in:"not in",spotter_but_in:"but found in",spotter_no_region:"has no regions – enter \"{code}\" to collect\!",
-  album_title:"\u{1F4D4} Plate Collection",album_list:"\u{1F4DD} List",album_map:"\u{1F5FA} Map",
+  album_title:"\u{1F4D4} Plate Collection",album_kids_title:"🚗 License Plate Album",album_kids_sub:"Collect plates from across Europe!",album_kids_btn:"Open →",pl_sport:"Sport & Games",album_list:"\u{1F4DD} List",album_map:"\u{1F5FA} Map",
   album_empty_country:"Nothing from {country} yet – use the Spotter!",
   album_empty:"Nothing collected yet!\nPlay EU plates or use the Spotter above.",
   album_codes:"codes",
@@ -1590,7 +1590,7 @@ pl:{
   help_fav:"❤️ Dotknij serca, aby zapisać grę jako ulubioną.",
   help_search:"\u{1F50D} Użyj wyszukiwarki, aby szybko znaleźć dowolną grę.",
   help_cats:"Przesuwaj kategorie u góry – dotknij jednej, aby zobaczyć jej gry.",
-  help_close:"Rozumiem!",guide_title:"📖 Podręcznik i pomoc",guide_tab_kids:"Dla dzieci",guide_tab_par:"Dla rodziców i wszystkich",guide_open:"📖 Podręcznik i pomoc (szczegółowo)",guide_close:"Zamknij",guide_more:"Więcej wyjaśnień: otwórz podręcznik",rec_games_title:"Polecane gry",rec_setting:"Propozycje gier",rec_sub:"Pokazuj pasujące gry na ekranie głównym",lv_title:"Lokalny 1:1 Hot-Seat",lv_sub:"Dwóch graczy · Jedno urządzenie · {n} rund",lv_pick_mode:"WYBIERZ TRYB GRY",lv_pick_cat:"WYBIERZ KATEGORIĘ",lv_pick_game:"WYBIERZ GRĘ",lv_type_random:"Losowo",lv_type_cat:"Kategoria",lv_type_game:"Gra",lv_start:"Rozpocznij grę",lv_back:"Wstecz",lv_handoff_hint:"Nie patrz, gdy gra drugi gracz!",lv_ready:"Jestem gotowy",lv_wins:"{name} wygrywa!",lv_draw:"Remis!",lv_again:"Zagraj ponownie",lv_home:"Menu główne",ui_on:"Wł.",ui_off:"Wył.",set_title:"Więcej ustawień",set_sub:"Region, TTS, siatka i więcej",set_region:"Region domowy",set_reset_toast:"Wykrywanie powtórzy się przy następnym starcie",set_not_set:"Nie ustawiono (auto)",set_tts:"Czytanie (TTS)",set_hardcore:"Tryb hardcore",set_grid:"Gry obok siebie (siatka)",set_rows:"Rzędy na stronę (karuzela)",set_catrows:"Rzędy kategorii (pasek)",set_catrows_sub:"Rzędy na stronę w pasku kategorii u góry",set_feedback:"Opinie i kontakt",set_feedback_sub:"Zgłoś błędy, podziel się pomysłami",set_install:"Zainstaluj aplikację",ui_close:"Zamknij",guide_kids_intro:"Witaj w GeoQuest! Tutaj poznajesz cały świat przez zabawę. Oto jak to działa:",guide_k1_h:"🎮 Jak grać?",guide_k1:"Wybierz kategorię na górze (np. Zwierzęta albo Kraje) i dotknij gry. Każda runda ma 10 pytań. Dotknij odpowiedzi, którą uważasz za poprawną – od razu zobaczysz, czy była dobra.",guide_k2_h:"🧩 Rodzaje gier",guide_k2:"• Wybór: dotknij jednej z kilku odpowiedzi.\n• Wyżej czy niżej: widzisz dwie rzeczy – dotknij większej lub wyższej.\n• Dopasowanie: połącz pasujące pary.\n• Kuźnia słów: ułóż prawdziwe słowa z liter.",guide_k3_h:"⭐ Punkty, seria i naklejki",guide_k3:"Za każdą dobrą odpowiedź dostajesz punkty. Kilka dobrych pod rząd to seria 🔥 i dodatkowe punkty. Za monety 💰 kupisz podpowiedź. Za każdą zagraną kategorię dostajesz naklejkę 🏅 – zbierz wszystkie!",guide_k4_h:"💡 Wskazówki dla Ciebie",guide_k4:"Nie bój się błędów – dzięki nim się uczysz! Jeśli pytanie jest za trudne, zapytaj dorosłego albo wybierz łatwiejszą kategorię. Na górze pod ❓ zawsze znajdziesz pomoc.",guide_p_intro:"GeoQuest to quiz edukacyjny dla każdego wieku. Ta część wyjaśnia funkcje sterowania i bezpieczeństwa dla rodziców i nauczycieli.",guide_p1_h:"🧒 Tryb dla dzieci",guide_p1:"Włączysz go przyciskiem 🧒 na górze. Ukrywa zbyt trudne gry i tematy (np. daty albo złożone statystyki) i pokazuje tylko treści odpowiednie do wieku, bliskie programowi szkolnemu – także w kategoriach dla dzieci.",guide_p2_h:"🎓 Poziomy klas",guide_p2:"Do wyboru w ustawieniach: klasa 1–2 (6–8 lat) pokazuje tylko najłatwiejszy poziom, klasa 3–4 (8–10 lat) dopuszcza też zadania średnie. Oparte na nauczaniu wczesnoszkolnym.",guide_p3_h:"🔒 PIN rodzica",guide_p3:"Możesz ustawić 4-cyfrowy PIN. Gdy jest aktywny, tryb dla dzieci można wyłączyć tylko PIN-em – dzięki temu bezpieczny dla dziecka wybór pozostaje chroniony.",guide_p4_h:"👥 Tryb wieloosobowy",guide_p4:"Live 1vs1 gra online z innymi. Hot-Seat podaje jedno urządzenie po kolei. Pojedynek rodzinny daje dziecku i dorosłemu pytania dopasowane do poziomu – sprawiedliwie dla obojga.",guide_p5_h:"🏆 Rankingi i sprawiedliwość",guide_p5:"Rankingi zawsze dotyczą jednego trybu i stałych 10 rund – nigdy nie rywalizujesz między różnymi grami. Dziecko i dorosły nie trafiają więc do tego samego rankingu, chyba że grają w ten sam tryb. Tryb ćwiczeń (ustawienia) działa całkiem bez punktacji – idealny do nauki bez presji.",guide_p6_h:"⚙️ Więcej funkcji",guide_p6:"Monety i naklejki motywują, tryb offline działa bez sieci, język można zmienić, a podpowiedzi w podróży zachęcają do zbierania tablic lub wagonów podczas jazdy autem lub pociągiem (opcjonalnie, tylko za zgodą na lokalizację).",practice_setting:"Tryb ćwiczeń",practice_sub:"Graj bez wpisu do rankingu (bez presji)",pin_setting:"PIN rodzica (blokada trybu dzieci)",pin_set_title:"Ustaw PIN rodzica (4 cyfry)",pin_check_title:"Wpisz PIN, aby wyjść",pin_wrong:"Błędny PIN",pin_ok:"OK",pin_remove:"Usuń PIN",kids_grade_label:"Wiek dziecka (klasa)",kids_grade_young:"6–8 (kl. 1–2)",kids_grade_older:"8–10 (kl. 3–4)",kids_grade_t3:"11–13 (kl. 5–7)",kids_grade_t4:"14–15 (kl. 8–9)",mt_kompass:"Kompas: Kierunki",kompass_prompt:"W którym kierunku wskazuje strzałka?",dir_n:"Północ",dir_no:"Północny wschód",dir_o:"Wschód",dir_so:"Południowy wschód",dir_s:"Południe",dir_sw:"Południowy zachód",dir_w:"Zachód",dir_nw:"Północny zachód",mt_kontinent:"Znajdź kontynent",kontinent_prompt:"Na którym kontynencie leży ten kraj?",mt_ozean:"5 oceanów",ocn_pazifik:"Pacyfik",ocn_atlantik:"Atlantyk",ocn_indik:"Ocean Indyjski",ocn_arktik:"Ocean Arktyczny",ocn_suedpolar:"Ocean Południowy",ocq_largest:"Który ocean jest największy?",ocq_smallest:"Który ocean jest najmniejszy?",ocq_deepest:"Który ocean jest najgłębszy?",ocq_antarctica:"Który ocean otacza Antarktydę?",ocq_northpole:"Który ocean jest na biegunie północnym?",ocq_india:"Który ocean leży na południe od Azji (koło Indii)?",ocq_america_europe:"Który ocean leży między Ameryką a Europą?",mt_tier:"Zwierzęta i siedliska",tier_prompt:"Gdzie żyje to zwierzę?",mt_jahr:"Pory roku i półkule",jahr_prompt:"Jaka pora roku jest tam w {m}?",sea_spring:"Wiosna",sea_summer:"Lato",sea_autumn:"Jesień",sea_winter:"Zima",mon_1:"Styczeń",mon_2:"Luty",mon_3:"Marzec",mon_4:"Kwiecień",mon_5:"Maj",mon_6:"Czerwiec",mon_7:"Lipiec",mon_8:"Sierpień",mon_9:"Wrzesień",mon_10:"Październik",mon_11:"Listopad",mon_12:"Grudzień",kompass_meta:"Wskazówka: na mapie północ jest zwykle u góry.",ocf_pazifik:"Pacyfik to największy i najgłębszy ocean.",ocf_atlantik:"Atlantyk leży między Amerykami, Europą i Afryką.",ocf_indik:"Ocean Indyjski leży na południe od Azji.",ocf_arktik:"Ocean Arktyczny jest najmniejszy, na biegunie północnym.",ocf_suedpolar:"Ocean Południowy otacza Antarktydę.",jahr_meta_south:"Na półkuli południowej pory roku są odwrócone!",hab_wueste:"Pustynia",hab_ozean:"Ocean",hab_polar:"Strefa polarna",hab_regenwald:"Las deszczowy",hab_savanne:"Sawanna",hab_wald:"Las",hab_gebirge:"Góry",cont_eu:"Europa",cont_af:"Afryka",cont_as:"Azja",cont_na:"Ameryka Północna",cont_sa:"Ameryka Południowa",cont_oc:"Oceania",family_duel:"Pojedynek rodzinny (dziecko vs. dorosły)",travel_setting:"Podpowiedzi w podróży",travel_title:"W drodze? Zbieraj, co widzisz!",travel_plates:"Tablice",travel_trains:"Wagony",stickers_title:"🏅 Moje naklejki",stickers_sub:"Odblokowałeś {n} z {t} kategorii — zbierz wszystkie!",kids_mode_on:"Tryb dla dzieci WŁĄCZONY",kids_mode_off:"Tryb dla dzieci WYŁĄCZONY",pl_foryou:"Dla Ciebie",pl_geo:"Geografia",pl_natur:"Natura i zwierzęta",pl_mint:"Nauka i technika",pl_pop:"Pop i media",pl_kultur:"Kultura i historia",play_portrait:"Graj mimo to w pionie",rotate_lock_hint:"Wskazówka: jeśli obrót nie działa, może być włączona blokada orientacji.",
+  help_close:"Rozumiem!",guide_title:"📖 Podręcznik i pomoc",guide_tab_kids:"Dla dzieci",guide_tab_par:"Dla rodziców i wszystkich",guide_open:"📖 Podręcznik i pomoc (szczegółowo)",guide_close:"Zamknij",guide_more:"Więcej wyjaśnień: otwórz podręcznik",rec_games_title:"Polecane gry",rec_setting:"Propozycje gier",rec_sub:"Pokazuj pasujące gry na ekranie głównym",lv_title:"Lokalny 1:1 Hot-Seat",lv_sub:"Dwóch graczy · Jedno urządzenie · {n} rund",lv_pick_mode:"WYBIERZ TRYB GRY",lv_pick_cat:"WYBIERZ KATEGORIĘ",lv_pick_game:"WYBIERZ GRĘ",lv_type_random:"Losowo",lv_type_cat:"Kategoria",lv_type_game:"Gra",lv_start:"Rozpocznij grę",lv_back:"Wstecz",lv_handoff_hint:"Nie patrz, gdy gra drugi gracz!",lv_ready:"Jestem gotowy",lv_wins:"{name} wygrywa!",lv_draw:"Remis!",lv_again:"Zagraj ponownie",lv_home:"Menu główne",ui_on:"Wł.",ui_off:"Wył.",set_title:"Więcej ustawień",set_sub:"Region, TTS, siatka i więcej",set_region:"Region domowy",set_reset_toast:"Wykrywanie powtórzy się przy następnym starcie",set_not_set:"Nie ustawiono (auto)",set_tts:"Czytanie (TTS)",set_hardcore:"Tryb hardcore",set_grid:"Gry obok siebie (siatka)",set_rows:"Rzędy na stronę (karuzela)",set_catrows:"Rzędy kategorii (pasek)",set_catrows_sub:"Rzędy na stronę w pasku kategorii u góry",set_feedback:"Opinie i kontakt",set_feedback_sub:"Zgłoś błędy, podziel się pomysłami",set_install:"Zainstaluj aplikację",ui_close:"Zamknij",guide_kids_intro:"Witaj w GeoQuest! Tutaj poznajesz cały świat przez zabawę. Oto jak to działa:",guide_k1_h:"🎮 Jak grać?",guide_k1:"Wybierz kategorię na górze (np. Zwierzęta albo Kraje) i dotknij gry. Każda runda ma 10 pytań. Dotknij odpowiedzi, którą uważasz za poprawną – od razu zobaczysz, czy była dobra.",guide_k2_h:"🧩 Rodzaje gier",guide_k2:"• Wybór: dotknij jednej z kilku odpowiedzi.\n• Wyżej czy niżej: widzisz dwie rzeczy – dotknij większej lub wyższej.\n• Dopasowanie: połącz pasujące pary.\n• Kuźnia słów: ułóż prawdziwe słowa z liter.",guide_k3_h:"⭐ Punkty, seria i naklejki",guide_k3:"Za każdą dobrą odpowiedź dostajesz punkty. Kilka dobrych pod rząd to seria 🔥 i dodatkowe punkty. Za monety 💰 kupisz podpowiedź. Za każdą zagraną kategorię dostajesz naklejkę 🏅 – zbierz wszystkie!",guide_k4_h:"💡 Wskazówki dla Ciebie",guide_k4:"Nie bój się błędów – dzięki nim się uczysz! Jeśli pytanie jest za trudne, zapytaj dorosłego albo wybierz łatwiejszą kategorię. Na górze pod ❓ zawsze znajdziesz pomoc.",guide_p_intro:"GeoQuest to quiz edukacyjny dla każdego wieku. Ta część wyjaśnia funkcje sterowania i bezpieczeństwa dla rodziców i nauczycieli.",guide_p1_h:"🧒 Tryb dla dzieci",guide_p1:"Włączysz go przyciskiem 🧒 na górze. Ukrywa zbyt trudne gry i tematy (np. daty albo złożone statystyki) i pokazuje tylko treści odpowiednie do wieku, bliskie programowi szkolnemu – także w kategoriach dla dzieci.",guide_p2_h:"🎓 Poziomy klas",guide_p2:"Do wyboru w ustawieniach: klasa 1–2 (6–8 lat) pokazuje tylko najłatwiejszy poziom, klasa 3–4 (8–10 lat) dopuszcza też zadania średnie. Oparte na nauczaniu wczesnoszkolnym.",guide_p3_h:"🔒 PIN rodzica",guide_p3:"Możesz ustawić 4-cyfrowy PIN. Gdy jest aktywny, tryb dla dzieci można wyłączyć tylko PIN-em – dzięki temu bezpieczny dla dziecka wybór pozostaje chroniony.",guide_p4_h:"👥 Tryb wieloosobowy",guide_p4:"Live 1vs1 gra online z innymi. Hot-Seat podaje jedno urządzenie po kolei. Pojedynek rodzinny daje dziecku i dorosłemu pytania dopasowane do poziomu – sprawiedliwie dla obojga.",guide_p5_h:"🏆 Rankingi i sprawiedliwość",guide_p5:"Rankingi zawsze dotyczą jednego trybu i stałych 10 rund – nigdy nie rywalizujesz między różnymi grami. Dziecko i dorosły nie trafiają więc do tego samego rankingu, chyba że grają w ten sam tryb. Tryb ćwiczeń (ustawienia) działa całkiem bez punktacji – idealny do nauki bez presji.",guide_p6_h:"⚙️ Więcej funkcji",guide_p6:"Monety i naklejki motywują, tryb offline działa bez sieci, język można zmienić, a podpowiedzi w podróży zachęcają do zbierania tablic lub wagonów podczas jazdy autem lub pociągiem (opcjonalnie, tylko za zgodą na lokalizację).",practice_setting:"Tryb ćwiczeń",practice_sub:"Graj bez wpisu do rankingu (bez presji)",pin_setting:"PIN rodzica (blokada trybu dzieci)",pin_set_title:"Ustaw PIN rodzica (4 cyfry)",pin_check_title:"Wpisz PIN, aby wyjść",pin_wrong:"Błędny PIN",pin_ok:"OK",pin_remove:"Usuń PIN",kids_grade_label:"Wiek dziecka (klasa)",kids_grade_young:"6–8 (kl. 1–2)",kids_grade_older:"8–10 (kl. 3–4)",kids_grade_t3:"11–13 (kl. 5–7)",kids_grade_t4:"14–15 (kl. 8–9)",mt_kompass:"Kompas: Kierunki",kompass_prompt:"W którym kierunku wskazuje strzałka?",dir_n:"Północ",dir_no:"Północny wschód",dir_o:"Wschód",dir_so:"Południowy wschód",dir_s:"Południe",dir_sw:"Południowy zachód",dir_w:"Zachód",dir_nw:"Północny zachód",mt_kontinent:"Znajdź kontynent",kontinent_prompt:"Na którym kontynencie leży ten kraj?",mt_ozean:"5 oceanów",ocn_pazifik:"Pacyfik",ocn_atlantik:"Atlantyk",ocn_indik:"Ocean Indyjski",ocn_arktik:"Ocean Arktyczny",ocn_suedpolar:"Ocean Południowy",ocq_largest:"Który ocean jest największy?",ocq_smallest:"Który ocean jest najmniejszy?",ocq_deepest:"Który ocean jest najgłębszy?",ocq_antarctica:"Który ocean otacza Antarktydę?",ocq_northpole:"Który ocean jest na biegunie północnym?",ocq_india:"Który ocean leży na południe od Azji (koło Indii)?",ocq_america_europe:"Który ocean leży między Ameryką a Europą?",mt_tier:"Zwierzęta i siedliska",tier_prompt:"Gdzie żyje to zwierzę?",mt_jahr:"Pory roku i półkule",mt_beine:"Zwierzęta: Ile nóg?",beine_meta:"A {e} ma {n} nóg.",mt_planet:"Planety: Bliżej Słońca?",planet_prompt:"Który jest bliżej Słońca? {p1} czy {p2}?",planet_meta:"{p} to planeta nr {pos} od Słońca.",pl_mercury:"Merkury",pl_venus:"Wenus",pl_earth:"Ziemia",pl_mars:"Mars",pl_jupiter:"Jowisz",pl_saturn:"Saturn",pl_uranus:"Uran",pl_neptune:"Neptun",mt_hundgross:"Psy: Duży czy Mały?",dog_size_klein:"Mały",dog_size_mittel:"Średni",dog_size_gross:"Duży",dog_size_meta:"{breed} rośnie {h} cm — to jest {size}.",mt_tpkont:"Parki rozrywki: Który kontynent?",tp_kont_meta:"{park} jest w {cont}.",mt_npkont:"Parki narodowe: Który kontynent?",mt_kzone:"Strefy klimatyczne: Która strefa?",mt_obstgem:"Owoc czy warzywo?",og_obst:"Owoc",og_gemuese:"Warzywo",mt_baumblum:"Drzewo, kwiat czy krzew?",bb_baum:"Drzewo",bb_blume:"Kwiat",bb_strauch:"Krzew",mt_pfhab:"Gdzie rośnie ta roślina?",pfhab_wueste:"Pustynia",pfhab_tropen:"Tropiki",pfhab_wald:"Las",pfhab_wasser:"Woda",pfhab_wiese:"Łąka",pfhab_garten:"Ogród",mt_pffarbe:"Jakiego koloru jest ten kwiat?",pfarbe_rot:"Czerwony",pfarbe_gelb:"Żółty",pfarbe_rosa:"Różowy",pfarbe_bunt:"Kolorowy",pfarbe_gruen:"Zielony",pfarbe_lila:"Fioletowy",pfarbe_weiss:"Biały",pfarbe_orange:"Pomarańczowy",mt_pfessbar:"Jadalny czy trujący?",ess_essbar:"Jadalny",ess_nicht:"Trujący",ess_vorsicht:"Ostrożnie!",mt_haustwild:"Zwierzę domowe czy dzikie?",hw_haus:"Zwierzę domowe",hw_wild:"Dzikie zwierzę",mt_wasserland:"Zwierzę wodne czy lądowe?",wl_wasser:"Wodne",wl_land:"Lądowe",wl_luft:"Ptaki/Latające",mt_warmkalt:"Ciepły czy zimny kraj?",wkl_warm:"Ciepły",wkl_kalt:"Zimny",wkl_mild:"Umiarkowany",mt_regentroc:"Deszczowy czy suchy?",mt_sportball:"Sport z piłką?",ball_ja:"Tak, z piłką",ball_nein:"Bez piłki",mt_teamsp:"Drużynowy czy indywidualny?",ts_team:"Drużynowy",ts_einzel:"Indywidualny",ts_beides:"Oba możliwe",mt_olymp:"Letni czy zimowy sport?",ol_sommer:"Letni",ol_winter:"Zimowy",mt_spielanz:"Ilu graczy?",mt_kzland:"Tablica rejestracyjna: Który kraj?",kz_meta:"{k} to {l}.",mt_kztipp:"Pierwsza litera kodu?",mt_kzeu:"Tablice UE?",eu_ja:"UE",eu_nein:"Spoza UE",eu_meta:"{l}: {eu}",mt_spielsplr:"Gra planszowa: Ilu graczy?",spielsplr_meta:"{n} można grać max. {m} graczy.",mt_spielzeit:"Krótka czy długa gra?",sz_kurz:"Krótka (≤30 min)",sz_mittel:"Średnia (≤90 min)",sz_lang:"Długa (>90 min)",mt_spielursp:"Gra planszowa: Skąd pochodzi?",mt_spieltyp:"Strategia czy szczęście?",stz_strategie:"Strategia",stz_zufall:"Szczęście",mt_splhl:"Więcej graczy?",spieler_unit:"graczy",splhl_prompt:"Która gra pozwala na więcej graczy?",mt_fzkaro:"Auto: Jaki typ?",mt_fzkonz:"Który koncern?",mt_fzgew:"Które auto jest cięższe?",fzgew_prompt:"Które pojazd jest cięższy?",mt_fzkoff:"Więcej bagażnika?",fzkoff_prompt:"Które auto ma więcej bagażnika?",mt_fzsitz:"Ile miejsc?",mt_digplat:"PC, Konsola czy Mobilna?",mt_digdl:"Więcej pobrań?",digdl_prompt:"Która gra była częściej pobierana?",mt_diggre:"Który gatunek?",mt_digf2p:"Free-to-Play?",f2p_ja:"Darmowa (F2P)",f2p_nein:"Płatna",mt_digland:"Z którego kraju?",mt_digvk:"Więcej sprzedaży?",digvk_prompt:"Która gra sprzedała się więcej?",mt_sternpl:"Gwiazda czy planeta?",sp_stern:"Gwiazda",sp_planet:"Planeta",mt_plgross:"Duża czy mała?",pg_gross:"Duża",pg_mittel:"Średnia",pg_klein:"Mała",mt_tagnacht:"Dzień czy noc?",tn_tag:"Dzień",tn_nacht:"Noc",mt_sonmond:"Słońce, Księżyc czy Gwiazda?",sm_sonne:"Słońce",sm_mond:"Księżyc",sm_stern:"Gwiazda",mt_capeu:"Europejska stolica?",eu_ja2:"Tak, Europa",eu_nein2:"Nie Europa",capeu_meta:"{c}: {eu}",mt_capod:"Stolica?",cn_ja:"Tak",cn_nein:"Nie",mt_capanf:"Pierwsza litera?",mt_capisl:"Stolica wyspy?",ci_ja:"Wyspa",ci_nein:"Nie wyspa",mt_hodka:"Pies czy kot?",hk_hund:"Pies",hk_katze:"Kot",mt_hpelz:"Krótka czy długa sierść?",hp_kurz:"Krótka",hp_lang:"Długa",mt_hwkr:"Pracujący czy towarzyszący?",hab_arbeit:"Pracujący",hab_begleiter:"Towarzyszący",mt_hgkr:"Duża czy mała rasa?",mt_nordsued:"Północ czy południe?",ns_nord:"Północ",ns_sued:"Południe",mt_leu:"W Europie?",eu_ja3:"Tak",eu_nein3:"Nie",mt_nachbar:"Sąsiedzi?",nb_ja:"Tak",nb_nein:"Nie",mt_kontgr:"Większy kontynent?",kg_prompt:"{a} czy {b}?",mt_ozkw:"Zimny czy ciepły?",okw_kalt:"Zimny",okw_warm:"Ciepły",mt_moo:"Morze czy Ocean?",moo_ozean:"Ocean",moo_meer:"Morze",mt_ozgr:"Który większy?",ozg_prompt:"{a} czy {b}?",mt_ozth:"Który ocean?",mt_ffh:"Jaki kolor?",mt_lion:"Kraj wyspowy?",il_ja:"Wyspa",il_nein:"Nie wyspa",mt_leu2:"Członek UE?",eu_mja:"Tak",eu_mnein:"Nie",mt_nsk:"Półkula?",nsk_nord:"Północna",nsk_sued:"Południowa",mt_pieu:"W Europie?",pieu_ja:"Tak",pieu_nein:"Nie",mt_paw:"Typ parku?",paw_achterbahn:"Kolejki",paw_wasser:"Wodny",mt_pdon:"Disney?",pd_disney:"Disney",pd_nicht:"Nie Disney",mt_pbq:"Prawdziwy park?",pb_echt:"Prawdziwy",pb_fiktiv:"Fikcyjny",mt_schtyp:"Jaki rodzaj pociągu?",schtyp_schnellzug:"Szybki pociąg",schtyp_sbahn:"Kolej miejska",schtyp_ubahn:"Metro",schtyp_tram:"Tramwaj",schtyp_regional:"Regionalny",schtyp_gueter:"Towarowy",schtyp_nacht:"Nocny",mt_schland:"Który kraj?",mt_schdau:"Która trasa jest dłuższa?",schdau_prompt:"Która trasa pociągu trwa dłużej?",mt_schatr:"Elektryczny czy dieselowy?",schatr_elektro:"Elektryczny",schatr_diesel:"Diesel",schatr_dampf:"Parowy",schatr_wasserstoff:"Wodorowy",mt_schtmp:"Który pociąg jest szybszy?",schtmp_prompt:"Który pociąg jedzie szybciej?",mt_sw2:"Letni czy zimowy sport?",sw_sommer:"Letni",sw_winter:"Zimowy",mt_wls:"Wodny czy lądowy?",wls_wasser:"Wodny",wls_land:"Lądowy",mt_kzab:"Tablica rejestracyjna ABC",mt_kznbl:"Sąsiad Niemiec?",nbl_ja:"Tak, sąsiad",nbl_nein:"Nie sąsiad",rt_regen:"Deszczowy",rt_trocken:"Suchy",kzone_meta:"{c} ma strefę klimatyczną {z}.",mt_klwarm:"Klimat: Cieplej czy chłodniej?",klwarm_prompt:"Które państwo ma wyższą średnią temperaturę?",mt_klkontz:"Kontynent i strefa klimatyczna",klkontz_meta:"{c} ma typowo strefę {z}.",mt_hundkl:"Psy: Klasa rozmiaru",mt_hundfci:"Psy: Grupa FCI",hund_fci_meta:"{breed} należy do grupy FCI: {fci}.",mt_hundland:"Psy: Kraj pochodzenia",hund_land_meta:"{breed} pochodzi z {land}.",npark_kont_meta:"{park} jest w {cont}.",mt_flusskont:"Rzeki: Który kontynent?",fluss_kont_meta:"{r} jest w {c}.",mt_hptkont:"Stolice: Który kontynent?",hptst_kont_meta:"{h} jest w {c}.",mt_wetter:"Symbole pogody",wt_sunny:"Słonecznie",wt_rainy:"Deszczowo",wt_snowy:"Śnieg",wt_stormy:"Burza",wt_foggy:"Mgła",wt_rainbow:"Tęcza",wt_windy:"Wietrznie",wt_cloudy:"Zachmurzenie",mt_tiergross:"Zwierzęta: Porównanie wielkości",tiergross_prompt:"Które zwierzę jest większe: {a} czy {b}?",tiergross_meta:"{big} jest większe!",jahr_prompt:"Jaka pora roku jest tam w {m}?",sea_spring:"Wiosna",sea_summer:"Lato",sea_autumn:"Jesień",sea_winter:"Zima",mon_1:"Styczeń",mon_2:"Luty",mon_3:"Marzec",mon_4:"Kwiecień",mon_5:"Maj",mon_6:"Czerwiec",mon_7:"Lipiec",mon_8:"Sierpień",mon_9:"Wrzesień",mon_10:"Październik",mon_11:"Listopad",mon_12:"Grudzień",kompass_meta:"Wskazówka: na mapie północ jest zwykle u góry.",ocf_pazifik:"Pacyfik to największy i najgłębszy ocean.",ocf_atlantik:"Atlantyk leży między Amerykami, Europą i Afryką.",ocf_indik:"Ocean Indyjski leży na południe od Azji.",ocf_arktik:"Ocean Arktyczny jest najmniejszy, na biegunie północnym.",ocf_suedpolar:"Ocean Południowy otacza Antarktydę.",jahr_meta_south:"Na półkuli południowej pory roku są odwrócone!",hab_wueste:"Pustynia",hab_ozean:"Ocean",hab_polar:"Strefa polarna",hab_regenwald:"Las deszczowy",hab_savanne:"Sawanna",hab_wald:"Las",hab_gebirge:"Góry",cont_eu:"Europa",cont_af:"Afryka",cont_as:"Azja",cont_na:"Ameryka Północna",cont_sa:"Ameryka Południowa",cont_oc:"Oceania",family_duel:"Pojedynek rodzinny (dziecko vs. dorosły)",travel_setting:"Podpowiedzi w podróży",travel_title:"W drodze? Zbieraj, co widzisz!",travel_plates:"Tablice",travel_trains:"Wagony",stickers_title:"🏅 Moje naklejki",stickers_sub:"Odblokowałeś {n} z {t} kategorii — zbierz wszystkie!",kids_mode_on:"Tryb dla dzieci WŁĄCZONY",kids_mode_off:"Tryb dla dzieci WYŁĄCZONY",pl_foryou:"Dla Ciebie",pl_geo:"Geografia",pl_natur:"Natura i zwierzęta",pl_mint:"Nauka i technika",pl_pop:"Pop i media",pl_kultur:"Kultura i historia",play_portrait:"Graj mimo to w pionie",rotate_lock_hint:"Wskazówka: jeśli obrót nie działa, może być włączona blokada orientacji.",
   help_tour_btn:"▶️ Zobacz krótkie wprowadzenie",
   ob_help_hint:"Wskazówka: później w aplikacji ❓ u góry po prawej daje pomoc w każdej chwili.",
   tour_skip:"Pomiń",tour_next:"Dalej →",tour_done:"Zaczynamy!",
@@ -1606,7 +1606,7 @@ pl:{
   spotter_hint:"Widzisz tablicę? Zapisz jń… od razu!",
   spotter_all:"Wszystkie kraje",spotter_unknown:"Nieznana tablica",
   spotter_not_in:"nie ma w",spotter_but_in:"ale jest w",
-  album_title:"\u{1F4D4} Album Tablic",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mapa",
+  album_title:"\u{1F4D4} Album Tablic",album_kids_title:"🚗 Album Tablic Rejestracyjnych",album_kids_sub:"Zbieraj tablice z całej Europy!",album_kids_btn:"Otwórz →",pl_sport:"Sport i Gry",album_list:"\u{1F4DD} Lista",album_map:"\u{1F5FA} Mapa",
   album_empty_country:"Nic z {country} jeszcze – użyj Spottera!",
   album_empty:"Nic jeszcze nie zebrano!\nGraj w tablice EU lub użyj Spottera.",
   album_codes:"kodów",
@@ -2939,6 +2939,16 @@ const MODES=[
   {id:"ozean_finder",        icon:"\u{1F30A}",    t_key:"mt_ozean",     title:"Die 5 Ozeane",              group:"ozeane",  prompt:"Welcher Ozean wird gesucht?",          desc:"Die 5 Ozeane (w\u00e4chst mit Alter)"},
   {id:"tier_lebensraum",     icon:"\u{1F981}",    t_key:"mt_tier",      title:"Tiere & Lebensr\u00e4ume",      group:"tiere",   prompt:"Wo lebt dieses Tier?",                 desc:"Tier \u2192 Lebensraum (w\u00e4chst mit Alter)"},
   {id:"jahreszeit_halbkugel",icon:"\u2600\uFE0F",   t_key:"mt_jahr",      title:"Jahreszeiten & Halbkugeln", group:"klima",   prompt:"Welche Jahreszeit ist dort?",          desc:"Monat+Halbkugel \u2192 Jahreszeit (w\u00e4chst mit Alter)"},
+  /* Phase 498: Level-1 Lernspiele Batch 2 */
+  {id:"tiere_anzahl_beine",    icon:"\u{1F43E}", t_key:"mt_beine",    title:"Tiere: Wie viele Beine?",    group:"tiere",      prompt:"Wie viele Beine hat dieses Tier?",      desc:"Tier-Emoji \u2192 Beinanzahl (w\u00e4chst mit Alter)"},
+  {id:"planet_reihenfolge",    icon:"\u{1FA90}", t_key:"mt_planet",   title:"Planeten: Näher zur Sonne?", group:"astronomie", prompt:"Welcher Planet ist näher an der Sonne?", desc:"Planetenkenntnis (w\u00e4chst mit Alter)"},
+  {id:"hund_tier_gross",       icon:"\u{1F415}", t_key:"mt_hundgross",title:"Hunde: Groß oder Klein?",    group:"hunde",      prompt:"Wie groß ist diese Hunderasse?",         desc:"Hundegröße einschätzen (w\u00e4chst mit Alter)"},
+  {id:"themepark_kontinent",   icon:"\u{1F3A2}", t_key:"mt_tpkont",   title:"Freizeitparks: Kontinent?",  group:"themeparks", prompt:"Auf welchem Kontinent liegt dieser Park?",desc:"Park \u2192 Kontinent (w\u00e4chst mit Alter)"},
+  {id:"npark_kontinent_finder",icon:"\u{1F33F}", t_key:"mt_npkont",   title:"Nationalparks: Kontinent?",  group:"nparks",     prompt:"Auf welchem Kontinent liegt dieser Nationalpark?", desc:"Nationalpark \u2192 Kontinent (w\u00e4chst mit Alter)"},
+  {id:"fluss_kontinent_finder", icon:"\u{1F30A}", t_key:"mt_flusskont",  title:"Flüsse: Welcher Kontinent?",    group:"fluesse",    prompt:"Auf welchem Kontinent liegt dieser Fluss?",        desc:"Fluss \u2192 Kontinent (w\u00e4chst mit Alter)"},
+  {id:"hauptstadt_kontinent",   icon:"\u{1F3DB}", t_key:"mt_hptkont",    title:"Hauptstädte: Welcher Kontinent?",group:"capitals",  prompt:"Auf welchem Kontinent liegt diese Hauptstadt?",    desc:"Hauptstadt \u2192 Kontinent (w\u00e4chst mit Alter)"},
+  {id:"wetter_piktogramm",      icon:"\u26C5",    t_key:"mt_wetter",     title:"Wetter-Symbole",                group:"klima",      prompt:"Welches Wetter zeigt dieses Symbol?",              desc:"Wetter-Emoji \u2192 Wetter-Typ (Stufe 1)"},
+  {id:"tiere_gross_klein",      icon:"\u{1F418}", t_key:"mt_tiergross",  title:"Tiere: Größenvergleich",        group:"tiere",      prompt:"Welches Tier ist größer?",                        desc:"Welches Tier ist größer? (w\u00e4chst mit Alter)"},
   {id:"hauptstadt_distanz",  icon:"\u{1F3DB}",    title:"Hauptstadt-Distanz",         group:"airports",prompt:"Wie weit liegt die Stadt von der Hauptstadt?",     desc:"\u00dcber oder unter 500 km zur Landeshauptstadt"},
   {id:"naechster_airport",   icon:"\u{1F6EC}",    title:"N\u00e4chster Flughafen",   group:"airports",prompt:"Welcher Flughafen liegt dieser Stadt am n\u00e4chsten?",desc:"Haversine-Distanz zu 40 Weltflugh\u00e4fen"},
   {id:"airport_pin",         icon:"\u{1F4CD}",   title:"Airport Pinnen",   group:"airports",prompt:"Flughafen pinnen",desc:"Setze den Pin auf den richtigen Flughafen",time:30},
@@ -3325,6 +3335,10 @@ const MODES=[
     {id:"ws_garten_strelitzie",icon:"\u{1F33A}",title:"WS: Strelitzie",group:"gartenbau",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus STRELITZIE!",desc:"Anagramm-R\u00e4tsel \u2014 10 Buchstaben",prompt_en:"Form words from STRELITZIE!"},
     /* Phase 442: Geo-Pin-Welle */
     {id:"hund_pin_land",icon:"\u{1F436}",title:"Hunde: Herkunft pinnen",group:"hunde",prompt:"Wo kommt diese Hunderasse her?",desc:"Pinne das Ursprungsland auf der Weltkarte.",prompt_en:"Where does this dog breed come from?"},
+  /* Phase 501: Hunde Kids-Modi */
+  {id:"hund_groesse_klasse",  icon:"\u{1F415}", t_key:"mt_hundkl",   title:"Hunde: Größenklasse",           group:"hunde",  prompt:"Zu welcher Größenklasse gehört diese Rasse?",desc:"Rasse \u2192 Klein/Mittel/Groß aus Daten"},
+  {id:"hund_match_fci_gruppe",icon:"\u{1F9EC}", t_key:"mt_hundfci",  title:"Hunde: FCI-Gruppe",             group:"hunde",  prompt:"Zu welcher FCI-Gruppe gehört diese Rasse?", desc:"Jagd-/Arbeits-/Begleithund etc. (Stufe 3)"},
+  {id:"hund_rasse_laender",   icon:"\u{1F1E9}\u{1F1EA}",t_key:"mt_hundland", title:"Hunde: Ursprungsland?", group:"hunde",  prompt:"Aus welchem Land kommt diese Hunderasse?",  desc:"Rasse \u2192 Herkunftsland"},
     {id:"boardgame_pin_land",icon:"\u{1F3B2}",title:"Brettspiele: Herkunft pinnen",group:"boardgames",prompt:"Wo kommt dieses Brettspiel her?",desc:"Pinne das Ursprungsland auf der Weltkarte.",prompt_en:"Where does this board game come from?"},
     {id:"robot_pin_land",icon:"\u{1F916}",title:"Robotik: Herkunft pinnen",group:"robotik",prompt:"Wo wurde dieser Roboter entwickelt?",desc:"Pinne das Ursprungsland auf der Weltkarte.",prompt_en:"Where was this robot developed?"},
     {id:"serie_pin_land",icon:"\u{1F4FA}",title:"Serien: Produktionsland pinnen",group:"serien",prompt:"Aus welchem Land stammt diese Serie?",desc:"Pinne das Produktionsland auf der Weltkarte.",prompt_en:"Which country does this series come from?"},
@@ -3382,6 +3396,82 @@ const MODES=[
     {id:"klima_pin_land",icon:"\u{1F321}\uFE0F",title:"Klima: Land auf der Karte",group:"klima",prompt:"Wo liegt dieses Land?",desc:"Pin auf der Weltkarte",prompt_en:"Where is this country located?"},
     {id:"hl_klima_temp_diff",icon:"\u{1F321}\uFE0F",title:"Klima: K\u00e4lter?",group:"klima",prompt:"Welches Land ist k\u00e4lter?",desc:"K\u00e4ltestes Land finden",prompt_en:"Which country is colder?"},
     {id:"ws_klima_monsun",icon:"\u{1F321}\uFE0F",title:"WS: Monsun",group:"klima",noMultiplayer:true,prompt:"Bilde W\u00f6rter aus MONSUN!",desc:"Anagramm-R\u00e4tsel \u2014 6 Buchstaben",prompt_en:"Form words from MONSUN!"},
+  /* Phase 501: Klima Kids-Modi */
+  {id:"klima_zone_emoji",    icon:"\u{1F321}",  t_key:"mt_kzone",    title:"Klimazonen: Welche Zone?",      group:"klima",  prompt:"In welcher Klimazone liegt dieses Land?",   desc:"Land \u2192 Klimazone, visuell (w\u00e4chst mit Alter)"},
+  /* Phase 502: Stufe-1 Lernspiele — Pflanzen, Tiere, Klima */
+  {id:"pflanze_obst_gemuese",  icon:"\u{1F34E}", t_key:"mt_obstgem",  title:"Obst oder Gemüse?",         group:"pflanzen", prompt:"Ist das Obst oder Gemüse?",            desc:"Emoji \u2192 Obst/Gemüse (Stufe 1)"},
+  {id:"pflanze_baum_blume",    icon:"\u{1F333}", t_key:"mt_baumblum", title:"Baum, Blume oder Strauch?",  group:"pflanzen", prompt:"Was ist das?",                         desc:"Pflanze einordnen (w\u00e4chst mit Alter)"},
+  {id:"pflanze_habitat",       icon:"\u{1F331}", t_key:"mt_pfhab",    title:"Wo wächst diese Pflanze?",   group:"pflanzen", prompt:"Wo wächst diese Pflanze?",              desc:"Pflanze \u2192 Lebensraum (w\u00e4chst mit Alter)"},
+  {id:"pflanze_farbe",         icon:"\u{1F338}", t_key:"mt_pffarbe",  title:"Welche Farbe hat diese Blume?",group:"pflanzen",prompt:"Welche Farbe hat diese Blüte?",        desc:"Blumen-Emoji \u2192 Farbe (Stufe 1)"},
+  {id:"pflanze_essbar",        icon:"\u{1F966}", t_key:"mt_pfessbar", title:"Essbar oder giftig?",        group:"pflanzen", prompt:"Ist diese Pflanze essbar?",             desc:"Essbar / Giftig / Beides (w\u00e4chst mit Alter)"},
+  {id:"tiere_haustier_wild",   icon:"\u{1F43B}", t_key:"mt_haustwild",title:"Haustier oder Wildtier?",    group:"tiere",    prompt:"Ist das ein Haustier oder ein Wildtier?",desc:"Tier-Emoji \u2192 Haustier/Wildtier (Stufe 1)"},
+  {id:"tiere_wasser_land",     icon:"\u{1F420}", t_key:"mt_wasserland",title:"Wasser- oder Landtier?",   group:"tiere",    prompt:"Wo lebt dieses Tier hauptsächlich?",   desc:"Tier \u2192 Wasser/Land/Luft (Stufe 1)"},
+  {id:"klima_warm_kalt_land",  icon:"\u{1F321}", t_key:"mt_warmkalt", title:"Warmes oder kaltes Land?",  group:"klima",    prompt:"Hat dieses Land eher warmes oder kaltes Klima?",desc:"Land \u2192 warm/kalt/gemäßigt (Stufe 1)"},
+  {id:"klima_regen_trocken",   icon:"\u{1F327}", t_key:"mt_regentroc",title:"Regenreich oder trocken?",  group:"klima",    prompt:"Ist das Klima dort regenreich oder trocken?",desc:"Land \u2192 nass/trocken (Stufe 1)"},
+  /* Phase 503: Sport L1, eu_plates L1, Brettspiele L2 */
+  {id:"sport_ball_oder_nicht",  icon:"\u26BD", t_key:"mt_sportball",  title:"Ballsport?",                  group:"sport",     prompt:"Ist das ein Ballsport?",               desc:"Sport-Emoji \u2192 Ja/Nein (Stufe 1)"},
+  {id:"sport_teamsport",        icon:"\u{1F3C6}",t_key:"mt_teamsp",   title:"Team- oder Einzelsport?",     group:"sport",     prompt:"Wird dieser Sport in Teams gespielt?",  desc:"Team/Einzel/Beides (w\u00e4chst mit Alter)"},
+  {id:"sport_olympia_sommer",   icon:"\u{1F3C5}",t_key:"mt_olymp",    title:"Sommer- oder Wintersport?",   group:"sport",     prompt:"Ist das ein Sommer- oder Wintersport?", desc:"Olympische Zuordnung (w\u00e4chst mit Alter)"},
+  {id:"sport_spieler_anzahl",   icon:"\u{1F46B}",t_key:"mt_spielanz", title:"Wie viele Spieler pro Team?", group:"sport",     prompt:"Wie viele Spieler hat ein Team in diesem Sport?",desc:"Spielerzahl pro Team (Stufe 2)"},
+  {id:"kz_land_einfach",        icon:"\u{1F697}",t_key:"mt_kzland",   title:"Kennzeichen: Welches Land?",  group:"eu_plates", prompt:"Zu welchem Land gehört dieses Kennzeichen?",desc:"Bekannte Kürzel \u2192 Land (w\u00e4chst mit Alter)"},
+  {id:"kz_buchstabe_tipp",      icon:"\u{1F4CD}",t_key:"mt_kztipp",   title:"Kennzeichen-Tipp",            group:"eu_plates", prompt:"Mit welchem Buchstaben beginnt dieses Länderkürzel?",desc:"Kürzel-Anfangsbuchstabe (Stufe 1)"},
+  {id:"kz_eu_oder_nicht",       icon:"\u{1F1EA}\u{1F1FA}",t_key:"mt_kzeu", title:"EU-Kennzeichen?",      group:"eu_plates", prompt:"Hat dieses Land EU-Kennzeichen?",       desc:"EU / Nicht-EU (Stufe 1)"},
+  {id:"spiel_spieler_anzahl",   icon:"\u{1F3B2}",t_key:"mt_spielsplr",title:"Wie viele Spieler?",         group:"boardgames", prompt:"Wie viele Spieler kann man maximal spielen?",desc:"Spieler-Anzahl aus Daten (Stufe 2)"},
+  {id:"spiel_kurz_lang",        icon:"\u23F1",   t_key:"mt_spielzeit",title:"Kurzes oder langes Spiel?",   group:"boardgames", prompt:"Wie lange dauert eine Partie?",         desc:"Spieldauer einschätzen (Stufe 2)"},
+  {id:"spiel_match_ursprung",   icon:"\u{1F30D}",t_key:"mt_spielursp",title:"Brettspiel: Woher?",          group:"boardgames", prompt:"Aus welchem Land kommt dieses Spiel?",  desc:"Spiel \u2192 Ursprungsland (Stufe 2)"},
+  {id:"spiel_strategie_zufall", icon:"\u{1F9E0}",t_key:"mt_spieltyp", title:"Strategie oder Glück?",       group:"boardgames", prompt:"Basiert dieses Spiel mehr auf Strategie oder Glück?",desc:"Spielcharakter einordnen (Stufe 3)"},
+  {id:"spiel_hl_spieler",       icon:"\u{1F465}",t_key:"mt_splhl",    title:"Welches Spiel hat mehr Spieler?",group:"boardgames",prompt:"Welches Spiel kann mit mehr Spielern gespielt werden?",desc:"Max. Spieleranzahl vergleichen"},
+  /* Phase 504: Stufe-2 Fixes + Sport/KZ L1 */
+  {id:"fahrzeug_match_karosserie",icon:"\u{1F697}",t_key:"mt_fzkaro", title:"Auto: Welcher Typ?",          group:"autos",   prompt:"Was für ein Fahrzeugtyp ist das?",         desc:"Limousine/SUV/Kombi/Coupé etc. (Stufe 2)"},
+  {id:"fahrzeug_match_konzern",   icon:"\u{1F3ED}",t_key:"mt_fzkonz", title:"Auto: Welcher Konzern?",      group:"autos",   prompt:"Von welchem Konzern kommt dieses Auto?",   desc:"Hersteller \u2192 Konzern (Stufe 2)"},
+  {id:"hl_fahrzeug_gewicht",      icon:"\u2696",   t_key:"mt_fzgew",  title:"Autos: Welches ist schwerer?",group:"autos",   prompt:"Welches Auto ist schwerer?",               desc:"Gewichtsvergleich (Stufe 2)"},
+  {id:"hl_fahrzeug_kofferraum",   icon:"\u{1F9F3}",t_key:"mt_fzkoff", title:"Autos: Mehr Kofferraum?",     group:"autos",   prompt:"Welches Auto hat mehr Kofferraum?",        desc:"Kofferraumvolumen (Stufe 2)"},
+  {id:"fahrzeug_match_sitze",     icon:"\u{1FA91}",t_key:"mt_fzsitz", title:"Wie viele Sitze hat dieses Auto?",group:"autos",prompt:"Wie viele Sitzplätze hat dieses Fahrzeug?",desc:"Sitzanzahl einschätzen (Stufe 2)"},
+  {id:"digital_match_plattform",  icon:"\u{1F3AE}",t_key:"mt_digplat",title:"Spiel: PC, Konsole oder Mobil?",group:"games", prompt:"Auf welcher Plattform erschien dieses Spiel?",desc:"Plattform-Zuordnung (Stufe 2)"},
+  {id:"hl_digital_downloads",     icon:"\u{1F4E5}",t_key:"mt_digdl",  title:"Welches Spiel wurde öfter heruntergeladen?",group:"games",prompt:"Welches Spiel hat mehr Downloads?",desc:"Downloads-Vergleich (Stufe 2)"},
+  {id:"digital_match_genre",      icon:"\u{1F3B2}",t_key:"mt_diggre", title:"Spiel: Welches Genre?",       group:"games",  prompt:"Welchem Genre gehört dieses Spiel an?",    desc:"Genre-Zuordnung (Stufe 2)"},
+  {id:"digital_match_f2p",        icon:"\u{1F193}",t_key:"mt_digf2p", title:"Free-to-Play?",               group:"games",  prompt:"Ist dieses Spiel kostenlos spielbar?",     desc:"F2P / Kaufspiel (Stufe 2)"},
+  {id:"digital_match_land",       icon:"\u{1F30D}",t_key:"mt_digland",title:"Spiel: Entwicklerland?",      group:"games",  prompt:"Aus welchem Land kommt dieses Spiel?",     desc:"Dev-Land-Zuordnung (Stufe 2)"},
+  {id:"schienen_match_typ",       icon:"\u{1F686}",t_key:"mt_schtyp", title:"ICE, S-Bahn oder Tram?",      group:"zuege",  prompt:"Was für ein Zug ist das?",                 desc:"Zug-Typ einordnen (Stufe 2)"},
+  {id:"schienen_match_land",      icon:"\u{1F1E9}\u{1F1EA}",t_key:"mt_schland",title:"Zugstrecke: Welches Land?",group:"zuege",prompt:"In welchem Land liegt diese Bahnstrecke?",desc:"Strecke \u2192 Land (Stufe 2)"},
+  {id:"hl_schienen_dauer",        icon:"\u23F1",   t_key:"mt_schdau", title:"Welche Fahrt dauert länger?",  group:"zuege",  prompt:"Welche Zugfahrt dauert länger?",           desc:"Fahrtzeit-Vergleich (Stufe 2)"},
+  {id:"schienen_match_antrieb",   icon:"\u26A1",   t_key:"mt_schatr", title:"Elektro oder Diesel?",         group:"zuege",  prompt:"Womit fährt dieser Zug?",                 desc:"Antriebsart (Stufe 2)"},
+  {id:"hl_schienen_tempo",        icon:"\u{1F4A8}",t_key:"mt_schtmp", title:"Welcher Zug ist schneller?",  group:"zuege",  prompt:"Welcher Zug fährt schneller?",             desc:"Tempo-Vergleich Zuggattungen (Stufe 2)"},
+  {id:"sport_sommer_winter_oly",  icon:"\u{1F3C5}",t_key:"mt_sw2",    title:"Olympia: Sommer oder Winter?",group:"sport",  prompt:"Bei welchen Olympischen Spielen dabei?",   desc:"Olympia-Zuordnung (Stufe 1)"},
+  {id:"sport_wasser_land_sport",  icon:"\u{1F3CA}",t_key:"mt_wls",    title:"Wassersport oder Landsport?", group:"sport",  prompt:"Ist das ein Wasser- oder Landsport?",      desc:"Sport-Kategorie (Stufe 1)"},
+  {id:"kz_anfangsbuchstabe",      icon:"\u{1F697}",t_key:"mt_kzab",   title:"Kennzeichen-ABC",             group:"eu_plates",prompt:"Was ist der erste Buchstabe dieses Länderkennzeichens?",desc:"KZ-Anfangsbuchstabe (Stufe 1)"},
+  {id:"kz_nachbarland",           icon:"\u{1F5FA}",t_key:"mt_kznbl",  title:"Kennzeichen: Nachbarland?",   group:"eu_plates",prompt:"Ist dieses Land ein Nachbar von Deutschland?",desc:"Nachbarland-Kennzeichen (Stufe 1)"},
+  {id:"astro_stern_planet",    icon:"\u2B50", t_key:"mt_sternpl",  title:"Stern oder Planet?",           group:"astronomie",prompt:"Ist das ein Stern oder ein Planet?",     desc:"Stern/Planet erkennen"},
+  {id:"astro_planet_groesse",  icon:"\u{1FA90}",t_key:"mt_plgross",title:"Großer oder kleiner Planet?",  group:"astronomie",prompt:"Groß oder klein?",                         desc:"Planetengröße einschätzen"},
+  {id:"astro_tag_nacht",       icon:"\u{1F311}",t_key:"mt_tagnacht",title:"Tag oder Nacht?",             group:"astronomie",prompt:"Tag oder Nacht?",                          desc:"Tag/Nacht-Konzept"},
+  {id:"astro_sonne_mond",      icon:"\u{1F31E}",t_key:"mt_sonmond", title:"Sonne, Mond oder Stern?",     group:"astronomie",prompt:"Was ist das?",                             desc:"Sonne/Mond/Stern"},
+  {id:"capital_europa_quiz",   icon:"\u{1F1EA}\u{1F1FA}",t_key:"mt_capeu",title:"Europäische Hauptstadt?",group:"capitals",prompt:"In Europa?",                              desc:"Europa-Zuordnung"},
+  {id:"capital_oder_nicht",    icon:"\u{1F3DB}",t_key:"mt_capod",  title:"Hauptstadt oder nicht?",       group:"capitals",  prompt:"Hauptstadt?",                            desc:"Hauptstadt erkennen"},
+  {id:"capital_anfang",        icon:"\u{1F524}",t_key:"mt_capanf", title:"Mit welchem Buchstaben?",      group:"capitals",  prompt:"Anfangsbuchstabe?",                      desc:"Anfangsbuchstabe"},
+  {id:"capital_insel",         icon:"\u{1F3DD}",t_key:"mt_capisl", title:"Inselhauptstadt?",             group:"capitals",  prompt:"Auf einer Insel?",                       desc:"Insel-Zuordnung"},
+  {id:"hund_oder_katze_rasse", icon:"\u{1F436}",t_key:"mt_hodka",  title:"Hund oder Katze?",             group:"hunde",     prompt:"Hund oder Katze?",                       desc:"Rasse einordnen"},
+  {id:"hund_pelz_art",         icon:"\u{1F9B1}",t_key:"mt_hpelz",  title:"Kurzes oder langes Fell?",     group:"hunde",     prompt:"Fell-Typ?",                              desc:"Fell-Typ"},
+  {id:"hund_arbeits_begleiter",icon:"\u{1F9BA}",t_key:"mt_hwkr",   title:"Arbeitshund oder Schoßhund?",  group:"hunde",     prompt:"Arbeitshund oder Schoßhund?",            desc:"Hundecharakter"},
+  {id:"hund_gross_oder_klein_r",icon:"\u{1F415}",t_key:"mt_hgkr",  title:"Große oder kleine Rasse?",     group:"hunde",     prompt:"Groß oder klein?",                      desc:"Rassengroße"},
+  {id:"karte_nord_sued",       icon:"\u{1F5FA}",t_key:"mt_nordsued",title:"Nördlich oder südlich?",      group:"map_mode",  prompt:"Nördlich oder südlich?",                 desc:"Halbkugel-Zuordnung"},
+  {id:"land_in_europa_quiz",   icon:"\u{1F1EA}\u{1F1FA}",t_key:"mt_leu", title:"Land in Europa?",      group:"map_mode",  prompt:"In Europa?",                             desc:"Europa-Quiz"},
+  {id:"nachbar_ja_nein",       icon:"\u{1F91D}",t_key:"mt_nachbar",title:"Nachbarländer?",               group:"map_mode",  prompt:"Nachbarländer?",                         desc:"Nachbarschafts-Quiz"},
+  {id:"kontinent_groesser",    icon:"\u{1F30E}",t_key:"mt_kontgr",  title:"Welcher Kontinent ist größer?",group:"map_mode", prompt:"Welcher ist größer?",                    desc:"Kontinent-Vergleich"},
+  {id:"ozean_kalt_warm",       icon:"\u{1F9CA}",t_key:"mt_ozkw",   title:"Kalter oder warmer Ozean?",    group:"ozeane",    prompt:"Kalt oder warm?",                        desc:"Ozean-Temperatur"},
+  {id:"meer_oder_ozean",       icon:"\u{1F30A}",t_key:"mt_moo",    title:"Meer oder Ozean?",             group:"ozeane",    prompt:"Meer oder Ozean?",                       desc:"Gewässer-Typ"},
+  {id:"ozean_groesser",        icon:"\u{1F30F}",t_key:"mt_ozgr",   title:"Welcher Ozean ist größer?",    group:"ozeane",    prompt:"Welcher ist größer?",                    desc:"Ozean-Vergleich"},
+  {id:"ozean_tier_heimat",     icon:"\u{1F433}",t_key:"mt_ozth",   title:"Heimat-Ozean?",                group:"ozeane",    prompt:"In welchem Ozean?",                      desc:"Tier → Ozean"},
+  {id:"flagge_farbe_haupt",    icon:"\u{1F3F3}",t_key:"mt_ffh",    title:"Flaggenfarbe?",                group:"pure_geo",  prompt:"Welche Farbe?",                          desc:"Flaggen-Farbe"},
+  {id:"land_insel_oder_nicht", icon:"\u{1F3DD}",t_key:"mt_lion",   title:"Inselland?",                   group:"pure_geo",  prompt:"Inselland?",                             desc:"Inselland erkennen"},
+  {id:"land_in_eu",            icon:"\u{1F1EA}\u{1F1FA}",t_key:"mt_leu2",title:"EU-Mitglied?",          group:"pure_geo",  prompt:"EU-Mitglied?",                           desc:"EU-Mitgliedschaft"},
+  {id:"nord_sued_kugel",       icon:"\u{1F310}",t_key:"mt_nsk",    title:"Nord- oder Südhalbkugel?",     group:"pure_geo",  prompt:"Nord- oder Süd?",                        desc:"Halbkugel"},
+  {id:"park_in_europa_quiz",   icon:"\u{1F3A2}",t_key:"mt_pieu",   title:"Freizeitpark in Europa?",      group:"themeparks",prompt:"In Europa?",                             desc:"Europa-Quiz Parks"},
+  {id:"park_achterbahn_wasser",icon:"\u{1F4A6}",t_key:"mt_paw",    title:"Achterbahn- oder Wasserpark?", group:"themeparks",prompt:"Park-Typ?",                             desc:"Park-Typ"},
+  {id:"park_disney_oder_nicht",icon:"\u{1F3F0}",t_key:"mt_pdon",   title:"Disney-Park?",                 group:"themeparks",prompt:"Disney?",                               desc:"Disney / Sonstiger"},
+  {id:"park_bekannt_quiz",     icon:"\u{1F3A1}",t_key:"mt_pbq",    title:"Echter Park?",                 group:"themeparks",prompt:"Echter Park?",                          desc:"Bekannte Parks"},
+  {id:"hl_digital_vk",         icon:"\u{1F4B0}",t_key:"mt_digvk",  title:"Mehr Verkäufe?",               group:"games",     prompt:"Mehr Verkäufe?",                        desc:"Verkaufszahlen"},
+  {id:"hl_klima_warm",       icon:"\u{1F525}",  t_key:"mt_klwarm",   title:"Klima: Wärmer oder kälter?",    group:"klima",  prompt:"Welches Land hat die höhere Durchschnittstemperatur?", desc:"Temperaturvergleich Länder"},
+  {id:"klima_kontinent_zone",icon:"\u{1F30E}",  t_key:"mt_klkontz",  title:"Kontinent & Klimazone",         group:"klima",  prompt:"Welche Klimazone passt zu diesem Kontinent?", desc:"Kontinent \u2192 Klimazonen"},
     {id:"hl_ozean_flaeche",icon:"\u{1F30A}",title:"Ozeane: Fl\u00e4che",group:"ozeane",prompt:"Welches Gew\u00e4sser ist gr\u00f6\u00dfer?",desc:"Fl\u00e4che in km\u00b2",prompt_en:"Which body of water is larger?"},
     {id:"hl_ozean_tiefe",icon:"\u{1F30A}",title:"Ozeane: Tiefe",group:"ozeane",prompt:"Welches Gew\u00e4sser ist tiefer?",desc:"Maximale Tiefe vergleichen",prompt_en:"Which body of water is deeper?"},
     {id:"ozean_match_typ",icon:"\u{1F30A}",title:"Ozeane: Typ-Zuordnung",group:"ozeane",prompt:"Welcher Typ ist dieses Gew\u00e4sser?",desc:"Gew\u00e4sser \u2192 Typ",prompt_en:"What type of water body is this?"},
@@ -3877,11 +3967,12 @@ const CAT_META={pure_geo:{a:["kids","teens","adults"],i:["geo"]},capitals:{a:["k
 /* === Personalisierung: Kinder-Modus, Playlists, Empfehlungen (Phase 454) === */
 const KIDS_CATS=new Set(Object.keys(CAT_META).filter(function(k){return CAT_META[k].a.indexOf('kids')>=0;}));
 const PLAYLISTS=[
-  {key:'pl_geo',icon:'\u{1F30D}',cats:['pure_geo','capitals','fluesse','inseln','gipfel','klima','ozeane','nparks','neighbors','map_mode']},
+  {key:'pl_geo',icon:'\u{1F30D}',cats:['pure_geo','capitals','fluesse','inseln','gipfel','klima','ozeane','nparks','neighbors','map_mode','eu_plates']},
   {key:'pl_natur',icon:'\u{1F43E}',cats:['tiere','hunde','pflanzen','gartenbau']},
   {key:'pl_mint',icon:'\u{1F52C}',cats:['robotik','technologie','emobilitaet','astronomie','geologie','medizin','games','autos']},
   {key:'pl_pop',icon:'\u{1F3AE}',cats:['games','filme','serien','musik','webkultur','boardgames','themeparks']},
-  {key:'pl_kultur',icon:'\u{1F3DB}',cats:['geschichte','kunst','architektur','mythologie','literatur','sprachen','archaeologie']}
+  {key:'pl_kultur',icon:'\u{1F3DB}',cats:['geschichte','kunst','architektur','mythologie','literatur','sprachen','archaeologie']},
+  {key:'pl_sport',icon:'\u26BD',cats:['sport','sport_wissen']}
 ];
 function _getKidsMode(){try{return localStorage.getItem('gq_kids_mode')==='1';}catch(e){return false;}}
 function _hasPin(){try{return !!localStorage.getItem('gq_kids_pin');}catch(e){return false;}}
@@ -3892,7 +3983,7 @@ function renderPinModal(){var isSet=S.pinMode==='set';return '<div class="modal-
 function _getTotalPlays(){try{return (JSON.parse(localStorage.getItem('gq_played')||'[]')).length;}catch(e){return 0;}}
 function _getTopCats(n){try{var pl=JSON.parse(localStorage.getItem('gq_played')||'[]');var c={};pl.forEach(function(mid){var m=MODES.find(function(x){return x.id===mid;});if(m&&m.group){c[m.group]=(c[m.group]||0)+1;}});return Object.keys(c).sort(function(a,b){return c[b]-c[a];}).slice(0,n||3);}catch(e){return [];}}
 function _getInterestCats(){try{var ints=JSON.parse(localStorage.getItem('gq_interests')||'[]');if(!ints.length)return [];return Object.keys(CAT_META).filter(function(k){return MODE_CATS[k]&&CAT_META[k].i.some(function(x){return ints.indexOf(x)>=0;});}).slice(0,8);}catch(e){return [];}}
-function _modeLevel(m){if(!m)return 2;var id=(m.id||'');if(['kompass_richtung','kontinent_finder','ozean_finder','tier_lebensraum','jahreszeit_halbkugel'].indexOf(id)>=0)return 1;var txt=(id+' '+(m.title||'')+' '+(m.prompt||'')).toLowerCase();var HARD=['metacritic','metakritik','imdb','pegi','hubraum','ccm','verbrauch','wendekreis','zuladung','drehmoment','bgg','bewertung','dichte','niederschlag','wirkstoff','megalith','versicherung','streams','umsatz','rendite','marktkapital','exoplanet','lichtjahr','magnitude','schwerkraft','fundtiefe','oscars','grammys','tonträger','concurrent','sequel','downloads'];var lvl=2;if(id.indexOf('ws_')===0||id.indexOf('_ws_')>=0)lvl=3;else if(id.indexOf('match')>=0||id.indexOf('_mc')>=0||id.indexOf('timeline')>=0)lvl=2;else if(id.indexOf('hl_')===0||id.indexOf('_hl_')>=0)lvl=2;for(var i=0;i<HARD.length;i++){if(txt.indexOf(HARD[i])>=0){lvl=5;break;}}var HID=['_bj','baujahr','_release','peak_year','erscheinungsjahr','reisezeit','breitengrad','_dekade'];for(var j=0;j<HID.length;j++){if(id.indexOf(HID[j])>=0){lvl=5;break;}}var _TEEN=['auto','games','konsole','hw_','myth','lit_','boardgame','zug','bahn','timeline'];for(var tp=0;tp<_TEEN.length;tp++){if(id.indexOf(_TEEN[tp])>=0&&lvl<3){lvl=3;break;}}return lvl;}
+function _modeLevel(m){if(!m)return 2;var id=(m.id||'');if(['kompass_richtung','kontinent_finder','ozean_finder','tier_lebensraum','jahreszeit_halbkugel','tiere_anzahl_beine','planet_reihenfolge','hund_tier_gross','themepark_kontinent','npark_kontinent_finder','fluss_kontinent_finder','hauptstadt_kontinent','wetter_piktogramm','tiere_gross_klein','klima_zone_emoji','pflanze_obst_gemuese','pflanze_baum_blume','pflanze_habitat','pflanze_farbe','pflanze_essbar','tiere_haustier_wild','tiere_wasser_land','klima_warm_kalt_land','klima_regen_trocken','sport_ball_oder_nicht','sport_teamsport','sport_olympia_sommer','kz_buchstabe_tipp','kz_eu_oder_nicht','kz_land_einfach','sport_sommer_winter_oly','sport_wasser_land_sport','kz_anfangsbuchstabe','kz_nachbarland','astro_stern_planet','astro_planet_groesse','astro_tag_nacht','astro_sonne_mond','capital_europa_quiz','capital_oder_nicht','capital_anfang','capital_insel','hund_oder_katze_rasse','hund_pelz_art','hund_arbeits_begleiter','hund_gross_oder_klein_r','karte_nord_sued','land_in_europa_quiz','nachbar_ja_nein','kontinent_groesser','ozean_kalt_warm','meer_oder_ozean','ozean_groesser','ozean_tier_heimat','flagge_farbe_haupt','land_insel_oder_nicht','land_in_eu','nord_sued_kugel','park_in_europa_quiz','park_achterbahn_wasser','park_disney_oder_nicht','park_bekannt_quiz'].indexOf(id)>=0)return 1;var txt=(id+' '+(m.title||'')+' '+(m.prompt||'')).toLowerCase();var HARD=['metacritic','metakritik','imdb','pegi','hubraum','ccm','verbrauch','wendekreis','zuladung','drehmoment','bgg','bewertung','dichte','niederschlag','wirkstoff','megalith','versicherung','streams','umsatz','rendite','marktkapital','exoplanet','lichtjahr','magnitude','schwerkraft','fundtiefe','oscars','grammys','tonträger','concurrent','sequel','downloads'];var lvl=2;if(id.indexOf('ws_')===0||id.indexOf('_ws_')>=0)lvl=3;else if(id.indexOf('match')>=0||id.indexOf('_mc')>=0||id.indexOf('timeline')>=0)lvl=2;else if(id.indexOf('hl_')===0||id.indexOf('_hl_')>=0)lvl=2;for(var i=0;i<HARD.length;i++){if(txt.indexOf(HARD[i])>=0){lvl=5;break;}}var HID=['_bj','baujahr','_release','peak_year','erscheinungsjahr','reisezeit','breitengrad','_dekade'];for(var j=0;j<HID.length;j++){if(id.indexOf(HID[j])>=0){lvl=5;break;}}var _TEEN=['auto','games','konsole','hw_','myth','lit_','boardgame','zug','bahn','timeline'];for(var tp=0;tp<_TEEN.length;tp++){if(id.indexOf(_TEEN[tp])>=0&&lvl<3){lvl=3;break;}}return lvl;}
 function _kidLevelMax(){try{var g=localStorage.getItem('gq_kids_grade')||'2';return ({'1':1,'2':2,'3':3,'4':4})[g]||2;}catch(e){return 2;}}
 function _kidHidden(m){return _getKidsMode()&&_modeLevel(m)>_kidLevelMax();}
 var _travelWatching=false;
@@ -10550,6 +10641,90 @@ const GEN={
   sonnen_kompass:genSonnenKompassQ,
   aequator_magnet:genAequatorMagnetQ,
   kontinent_klicker:genKontinentKlickerQ,kompass_richtung:()=>genKompassQ(),kontinent_finder:()=>genKontinentFinderQ(),ozean_finder:()=>genOzeanFinderQ(),tier_lebensraum:()=>genTierLebensraumQ(),jahreszeit_halbkugel:()=>genJahreszeitQ(),
+  tiere_anzahl_beine:()=>genTiereAnzahlBeineQ(),
+  planet_reihenfolge:()=>genPlanetReihenfolgeQ(),
+  hund_tier_gross:()=>genHundTierGrossQ(),
+  themepark_kontinent:()=>genThemeparkKontinentQ(),
+  npark_kontinent_finder:()=>genNparkKontinentFinderQ(),
+  klima_zone_emoji:()=>genKlimaZoneEmojiQ(),
+  sport_ball_oder_nicht:()=>genSportBallOderNicht(),
+  sport_teamsport:()=>genSportTeamsport(),
+  sport_olympia_sommer:()=>genSportOlympiaSommer(),
+  sport_spieler_anzahl:()=>genSportSpielerAnzahl(),
+  kz_land_einfach:()=>genKZLandEinfach(),
+  kz_buchstabe_tipp:()=>genKZBuchstabeTipp(),
+  kz_eu_oder_nicht:()=>genKZEuOderNicht(),
+  spiel_spieler_anzahl:()=>genSpielSpielerAnzahl(),
+  spiel_kurz_lang:()=>genSpielKurzLang(),
+  spiel_match_ursprung:()=>genSpielMatchUrsprung(),
+  spiel_strategie_zufall:()=>genSpielStrategieZufall(),
+  spiel_hl_spieler:()=>genSpielHLSpieler(),
+  fahrzeug_match_karosserie:()=>genFahrzeugMatchKarosserie(),
+  fahrzeug_match_konzern:()=>genFahrzeugMatchKonzern(),
+  hl_fahrzeug_gewicht:()=>genHLFahrzeugGewicht(),
+  hl_fahrzeug_kofferraum:()=>genHLFahrzeugKofferraum(),
+  fahrzeug_match_sitze:()=>genFahrzeugMatchSitze(),
+  digital_match_plattform:()=>genDigitalMatchPlattform(),
+  hl_digital_downloads:()=>genHLDigitalDownloads(),
+  hl_digital_vk:()=>genHLDigitalVK(),
+  astro_stern_planet:()=>genAstroSternPlanet(),
+  astro_planet_groesse:()=>genAstroPlanetGroesse(),
+  astro_tag_nacht:()=>genAstroTagNacht(),
+  astro_sonne_mond:()=>genAstroSonneMond(),
+  capital_europa_quiz:()=>genCapitalEuropaQuiz(),
+  capital_oder_nicht:()=>genCapitalOderNicht(),
+  capital_anfang:()=>genCapitalAnfang(),
+  capital_insel:()=>genCapitalInsel(),
+  hund_oder_katze_rasse:()=>genHundOderKatze(),
+  hund_pelz_art:()=>genHundPelzArt(),
+  hund_arbeits_begleiter:()=>genHundArbeitsBegleiter(),
+  hund_gross_oder_klein_r:()=>genHundGrossOderKleinR(),
+  karte_nord_sued:()=>genKarteNordSued(),
+  land_in_europa_quiz:()=>genLandInEuropaQuiz(),
+  nachbar_ja_nein:()=>genNachbarJaNein(),
+  kontinent_groesser:()=>genKontinentGroesser(),
+  ozean_kalt_warm:()=>genOzeanKaltWarm(),
+  meer_oder_ozean:()=>genMeerOderOzean(),
+  ozean_groesser:()=>genOzeanGroesser(),
+  ozean_tier_heimat:()=>genOzeanTierHeimat(),
+  flagge_farbe_haupt:()=>genFlaggeFarbeHaupt(),
+  land_insel_oder_nicht:()=>genLandInselOderNicht(),
+  land_in_eu:()=>genLandInEU(),
+  nord_sued_kugel:()=>genNordSuedKugel(),
+  park_in_europa_quiz:()=>genParkInEuropaQuiz(),
+  park_achterbahn_wasser:()=>genParkAchterbahnWasser(),
+  park_disney_oder_nicht:()=>genParkDisneyOderNicht(),
+  park_bekannt_quiz:()=>genParkBekannt(),
+  digital_match_genre:()=>genDigitalMatchGenre(),
+  digital_match_f2p:()=>genDigitalMatchF2P(),
+  digital_match_land:()=>genDigitalMatchLand(),
+  schienen_match_typ:()=>genSchienenMatchTyp(),
+  schienen_match_land:()=>genSchienenMatchLand(),
+  hl_schienen_dauer:()=>genHLSchienenDauer(),
+  schienen_match_antrieb:()=>genSchienenMatchAntrieb(),
+  hl_schienen_tempo:()=>genHLSchienenTempo(),
+  sport_sommer_winter_oly:()=>genSportSommerWinterOly(),
+  sport_wasser_land_sport:()=>genSportWasserLandSport(),
+  kz_anfangsbuchstabe:()=>genKZAnfangsbuchstabe(),
+  kz_nachbarland:()=>genKZNachbarland(),
+  pflanze_obst_gemuese:()=>genPflanzeObstGemuese(),
+  pflanze_baum_blume:()=>genPflanzeBaumBlume(),
+  pflanze_habitat:()=>genPflanzeHabitat(),
+  pflanze_farbe:()=>genPflanzeFarbe(),
+  pflanze_essbar:()=>genPflanzeEssbar(),
+  tiere_haustier_wild:()=>genTiereHaustierWild(),
+  tiere_wasser_land:()=>genTiereWasserLand(),
+  klima_warm_kalt_land:()=>genKlimaWarmKaltLand(),
+  klima_regen_trocken:()=>genKlimaRegenTrocken(),
+  hl_klima_warm:()=>genHLKlimaWarmQ(),
+  klima_kontinent_zone:()=>genKlimaKontinentZoneQ(),
+  hund_groesse_klasse:()=>genHundGroesseKlasseQ(),
+  hund_match_fci_gruppe:()=>genHundMatchFCIQ(),
+  hund_rasse_laender:()=>genHundRasseLaenderQ(),
+  fluss_kontinent_finder:()=>genFlussKontinentFinderQ(),
+  hauptstadt_kontinent:()=>genHauptstadtKontinentQ(),
+  wetter_piktogramm:()=>genWetterPiktogrammQ(),
+  tiere_gross_klein:()=>genTiereGrossKleinQ(),
   hauptstadt_distanz:genHauptstadtDistanzQ,
   naechster_airport:genNaechsterAirportQ,
   iata_reverse:genIataReverseQ,
@@ -17239,6 +17414,994 @@ function closeGameInfo(){
   const el=document.getElementById('game-info-modal');
   if(el)el.remove();
 }
+
+/* ── Phase 498: Level-1 Lernspiele Batch 2 ──────────────────── */
+
+function genTiereAnzahlBeineQ(){
+  // Emoji-Tier → Beinanzahl. Stufe 1: nur 0/4. Stufe 2+: alle 5 Kategorien.
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var animals=[
+    {e:'🐟',n:0,lvl:1},{e:'🐠',n:0,lvl:1},{e:'🐍',n:0,lvl:1},{e:'🐛',n:6,lvl:1},
+    {e:'🦋',n:6,lvl:1},{e:'🐝',n:6,lvl:1},{e:'🐶',n:4,lvl:1},{e:'🐱',n:4,lvl:1},
+    {e:'🐘',n:4,lvl:1},{e:'🦁',n:4,lvl:1},{e:'🐦',n:2,lvl:1},{e:'🦆',n:2,lvl:1},
+    {e:'🕷',n:8,lvl:2},{e:'🦀',n:10,lvl:2},{e:'🐙',n:8,lvl:2},{e:'🦂',n:8,lvl:2},
+    {e:'🦑',n:10,lvl:2},{e:'🐊',n:4,lvl:2},{e:'🦎',n:4,lvl:2},{e:'🐢',n:4,lvl:2}
+  ];
+  var pool=lvl<=1?animals.filter(function(a){return a.lvl<=1;}):animals;
+  var pick=pool[~~(rng()*pool.length)];
+  // Options: if lvl1 show 0/2/4/6; else show 0/2/4/6/8/10 but pick 4 including correct
+  var allNums=lvl<=1?[0,2,4,6]:[0,2,4,6,8,10];
+  var opts=[pick.n];
+  var others=shuf(allNums.filter(function(n){return n!==pick.n;}));
+  opts=shuf(opts.concat(others.slice(0,3)));
+  return {type:'uk_match',question:pick.e,options:opts.map(function(n){return n+'';})  ,correct:pick.n+'',
+    meta:t('beine_meta',{n:pick.n,e:pick.e})};
+}
+
+function genPlanetReihenfolgeQ(){
+  // Welcher Planet ist näher an der Sonne? uk_match mit 4 Planeten
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  // Planets in order from sun, with emoji and i18n key
+  var planets=[
+    {k:'mercury',e:'☿',pos:1,lvl:1},{k:'venus',e:'♀',pos:2,lvl:1},
+    {k:'earth',e:'🌍',pos:3,lvl:1},{k:'mars',e:'🔴',pos:4,lvl:1},
+    {k:'jupiter',e:'🟠',pos:5,lvl:2},{k:'saturn',e:'🪐',pos:6,lvl:2},
+    {k:'uranus',e:'🔵',pos:7,lvl:2},{k:'neptune',e:'🌊',pos:8,lvl:2}
+  ];
+  var pool=lvl<=1?planets.filter(function(p){return p.lvl<=1;}):planets;
+  // Pick 2 planets and ask which is closer to sun
+  var shuffled=shuf(pool.slice());
+  var p1=shuffled[0],p2=shuffled[1];
+  var closer=p1.pos<p2.pos?p1:p2;
+  var opts=shuf([t('pl_'+p1.k),t('pl_'+p2.k)]);
+  return {type:'uk_match',question:t('planet_prompt',{p1:p1.e+' '+t('pl_'+p1.k),p2:p2.e+' '+t('pl_'+p2.k)}),
+    options:opts,correct:t('pl_'+closer.k),
+    meta:t('planet_meta',{p:t('pl_'+closer.k),pos:closer.pos})};
+}
+
+function genHundTierGrossQ(){
+  // Breed name → Groß/Mittel/Klein. Uses hunde_extended.json (HUNDE_DATA)
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  if(!HUNDE_DATA||!Object.keys(HUNDE_DATA).length)return null;
+  var keys=Object.keys(HUNDE_DATA);
+  // Classify by widerristhoehe: <40=klein, 40-65=mittel, >65=groß
+  function classify(h){return h<40?'klein':h<=65?'mittel':'gross';}
+  // Stufe 1: only very obvious breeds (known emojis)
+  var knownBreeds=lvl<=1?['Golden Retriever','Chihuahua','Dackel','Labrador Retriever','Pudel','Bernhardiner','Deutschen Schäferhund']:keys;
+  var pool=keys.filter(function(k){
+    var d=HUNDE_DATA[k];
+    return d&&d.widerristhoehe_cm&&(lvl>1||knownBreeds.indexOf(k)>=0);
+  });
+  if(!pool.length)return null;
+  var breed=pool[~~(rng()*pool.length)];
+  var data=HUNDE_DATA[breed];
+  var correct=classify(data.widerristhoehe_cm);
+  var opts=shuf(['klein','mittel','gross']).map(function(s){return t('dog_size_'+s);});
+  return {type:'uk_match',question:'🐕 '+breed,options:opts,correct:t('dog_size_'+correct),
+    meta:t('dog_size_meta',{breed:breed,h:data.widerristhoehe_cm,size:t('dog_size_'+correct)})};
+}
+
+function genThemeparkKontinentQ(){
+  // Famous themepark → continent. Hardcoded for reliability, grows with level.
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var parks=[
+    {n:'Disneyland Paris',    c:'eu',  lvl:1},
+    {n:'Europa-Park',         c:'eu',  lvl:1},
+    {n:'Walt Disney World',   c:'na', lvl:1},
+    {n:'Disneyland California',c:'na',lvl:1},
+    {n:'Universal Studios',   c:'na', lvl:1},
+    {n:'Phantasialand',       c:'eu',  lvl:2},
+    {n:'Legoland Billund',    c:'eu',  lvl:2},
+    {n:'Efteling',            c:'eu',  lvl:2},
+    {n:'Universal Studios Japan',c:'as',lvl:2},
+    {n:'Everland',            c:'as',   lvl:2},
+    {n:'Ocean Park Hong Kong',c:'as',   lvl:2},
+    {n:'Busch Gardens',       c:'na',lvl:2},
+    {n:'Alton Towers',        c:'eu',  lvl:2},
+    {n:'PortAventura',        c:'eu',  lvl:2},
+  ];
+  var allConts=['eu','na','as','sa','oc','af'];
+  var pool=lvl<=1?parks.filter(function(p){return p.lvl<=1;}):parks;
+  var pick=pool[~~(rng()*pool.length)];
+  var usedConts=[pick.c];
+  var otherConts=shuf(allConts.filter(function(c){return c!==pick.c;})).slice(0,3);
+  var opts=shuf([pick.c].concat(otherConts)).map(function(c){return t('cont_'+c);});
+  return {type:'uk_match',question:'🎢 '+pick.n,options:opts,correct:t('cont_'+pick.c),
+    meta:t('tp_kont_meta',{park:pick.n,cont:t('cont_'+pick.c)})};
+}
+
+function genNparkKontinentFinderQ(){
+  // Famous national park → continent. Hardcoded, grows with level.
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var parks=[
+    {n:'Yellowstone',       c:'na',lvl:1},
+    {n:'Serengeti',         c:'af',     lvl:1},
+    {n:'Amazon Rainforest', c:'sa',lvl:1},
+    {n:'Great Barrier Reef',c:'oc',   lvl:1},
+    {n:'Schwarzwald',       c:'eu',     lvl:1},
+    {n:'Banff',             c:'na',lvl:2},
+    {n:'Kruger',            c:'af',     lvl:2},
+    {n:'Torres del Paine',  c:'sa',lvl:2},
+    {n:'Fiordland',         c:'oc',   lvl:2},
+    {n:'Białowieża',        c:'eu',     lvl:2},
+    {n:'Fuji-Hakone-Izu',   c:'as',      lvl:2},
+    {n:'Sagarmatha',        c:'as',      lvl:2},
+  ];
+  var allConts=['eu','na','as','sa','oc','af'];
+  var pool=lvl<=1?parks.filter(function(p){return p.lvl<=1;}):parks;
+  var pick=pool[~~(rng()*pool.length)];
+  var otherConts=shuf(allConts.filter(function(c){return c!==pick.c;})).slice(0,3);
+  var opts=shuf([pick.c].concat(otherConts)).map(function(c){return t('cont_'+c);});
+  return {type:'uk_match',question:'🌿 '+pick.n,options:opts,correct:t('cont_'+pick.c),
+    meta:t('npark_kont_meta',{park:pick.n,cont:t('cont_'+pick.c)})};
+}
+
+
+/* Phase 499: L1 Lernspiele Batch 3 */
+function genFlussKontinentFinderQ(){
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var rivers=[
+    {n:'Nil',c:'af',lvl:1},{n:'Amazonas',c:'sa',lvl:1},{n:'Rhein',c:'eu',lvl:1},
+    {n:'Mississippi',c:'na',lvl:1},{n:'Ganges',c:'as',lvl:1},
+    {n:'Donau',c:'eu',lvl:2},{n:'Jangtse',c:'as',lvl:2},{n:'Kongo',c:'af',lvl:2},
+    {n:'Lena',c:'as',lvl:2},{n:'Murray',c:'oc',lvl:2},{n:'Orinoco',c:'sa',lvl:2},
+    {n:'Mekong',c:'as',lvl:2},{n:'Niger',c:'af',lvl:2},{n:'Wolga',c:'eu',lvl:2},
+    {n:'Colorado',c:'na',lvl:2},{n:'Huang He',c:'as',lvl:2},
+  ];
+  var allC=['eu','af','as','na','sa','oc'];
+  var pool=lvl<=1?rivers.filter(function(r){return r.lvl<=1;}):rivers;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=shuf([pick.c].concat(shuf(allC.filter(function(c){return c!==pick.c;})).slice(0,3))).map(function(c){return t('cont_'+c);});
+  return {type:'uk_match',question:'💧 '+pick.n,options:opts,correct:t('cont_'+pick.c),
+    meta:t('fluss_kont_meta',{r:pick.n,c:t('cont_'+pick.c)})};
+}
+
+function genHauptstadtKontinentQ(){
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var caps=[
+    {n:'Berlin',c:'eu',lvl:1},{n:'Paris',c:'eu',lvl:1},{n:'Tokio',c:'as',lvl:1},
+    {n:'Washington D.C.',c:'na',lvl:1},{n:'Brasília',c:'sa',lvl:1},
+    {n:'Kairo',c:'af',lvl:1},{n:'Canberra',c:'oc',lvl:1},
+    {n:'Peking',c:'as',lvl:2},{n:'Moskau',c:'eu',lvl:2},{n:'Nairobi',c:'af',lvl:2},
+    {n:'Buenos Aires',c:'sa',lvl:2},{n:'Ottawa',c:'na',lvl:2},
+    {n:'Jakarta',c:'as',lvl:2},{n:'Pretoria',c:'af',lvl:2},
+    {n:'Lima',c:'sa',lvl:2},{n:'Wellington',c:'oc',lvl:2},
+  ];
+  var allC=['eu','af','as','na','sa','oc'];
+  var pool=lvl<=1?caps.filter(function(r){return r.lvl<=1;}):caps;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=shuf([pick.c].concat(shuf(allC.filter(function(c){return c!==pick.c;})).slice(0,3))).map(function(c){return t('cont_'+c);});
+  return {type:'uk_match',question:'🏛️ '+pick.n,options:opts,correct:t('cont_'+pick.c),
+    meta:t('hptst_kont_meta',{h:pick.n,c:t('cont_'+pick.c)})};
+}
+
+function genWetterPiktogrammQ(){
+  // Pure emoji → weather type. Only Level 1, no growth needed.
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var weathers=[
+    {e:'☀️',k:'wt_sunny'},{e:'🌧️',k:'wt_rainy'},{e:'❄️',k:'wt_snowy'},
+    {e:'⛈️',k:'wt_stormy'},{e:'🌫️',k:'wt_foggy'},{e:'🌈',k:'wt_rainbow'},
+    {e:'🌪️',k:'wt_windy'},{e:'⛅',k:'wt_cloudy'},
+  ];
+  var pick=weathers[~~(rng()*weathers.length)];
+  var opts=shuf([pick].concat(shuf(weathers.filter(function(w){return w.k!==pick.k;})).slice(0,3))).map(function(w){return t(w.k);});
+  return {type:'uk_match',question:pick.e,options:opts,correct:t(pick.k)};
+}
+
+function genTiereGrossKleinQ(){
+  // Two animal emojis — which is bigger in real life?
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  // pairs: [biggerEmoji, smallerEmoji, lvl]
+  var pairs=[
+    {a:'🐘',b:'🐭',big:'a',lvl:1},{a:'🦁',b:'🐈',big:'a',lvl:1},
+    {a:'🐋',b:'🐟',big:'a',lvl:1},{a:'🦒',b:'🐇',big:'a',lvl:1},
+    {a:'🐊',b:'🦎',big:'a',lvl:1},{a:'🦅',b:'🐦',big:'a',lvl:1},
+    {a:'🦛',b:'🐕',big:'a',lvl:2},{a:'🐆',b:'🐈',big:'a',lvl:2},
+    {a:'🦓',b:'🐑',big:'a',lvl:2},{a:'🐻',b:'🦊',big:'a',lvl:2},
+    {a:'🦈',b:'🐠',big:'a',lvl:2},{a:'🦅',b:'🐝',big:'a',lvl:2},
+  ];
+  var pool=lvl<=1?pairs.filter(function(p){return p.lvl<=1;}):pairs;
+  var pair=pool[~~(rng()*pool.length)];
+  var bigEmoji=pair.big==='a'?pair.a:pair.b;
+  var opts=shuf([pair.a,pair.b]);
+  return {type:'uk_match',question:t('tiergross_prompt',{a:pair.a,b:pair.b}),
+    options:opts,correct:bigEmoji,meta:t('tiergross_meta',{big:bigEmoji})};
+}
+
+/* Phase 501: Klima + Hunde Kids-Modi */
+
+function genKlimaZoneEmojiQ(){
+  // Country + flag → climate zone. Hardcoded known countries, level-adapted.
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var entries=[
+    {c:'🇩🇪 Deutschland', z:'Gemäßigt',  lvl:1},{c:'🇧🇷 Brasilien',  z:'Tropisch',   lvl:1},
+    {c:'🇸🇦 Saudi-Arabien',z:'Wüste',    lvl:1},{c:'🇦🇺 Australien', z:'Arid',        lvl:1},
+    {c:'🇫🇮 Finnland',     z:'Subarktisch',lvl:2},{c:'🇲🇽 Mexiko',    z:'Mediterran',  lvl:2},
+    {c:'🇮🇳 Indien',       z:'Tropisch',  lvl:2},{c:'🇷🇺 Russland',   z:'Kontinental', lvl:2},
+    {c:'🇬🇧 Großbritannien',z:'Ozeanisch',lvl:2},{c:'🇳🇴 Norwegen',   z:'Subarktisch', lvl:2},
+    {c:'🇨🇱 Chile',        z:'Mediterran',lvl:2},{c:'🇨🇳 China',      z:'Kontinental', lvl:2},
+  ];
+  var allZones=['Tropisch','Gemäßigt','Wüste','Kontinental','Arid','Mediterran','Ozeanisch','Subarktisch'];
+  var pool=lvl<=1?entries.filter(function(e){return e.lvl<=1;}):entries;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=shuf([pick.z].concat(shuf(allZones.filter(function(z){return z!==pick.z;})).slice(0,3)));
+  return {type:'uk_match',question:pick.c,options:opts,correct:pick.z,
+    meta:t('kzone_meta',{c:pick.c,z:pick.z})};
+}
+
+function genHLKlimaWarmQ(){
+  // HL: which country has higher avg temperature — SAFE ID (no "niederschlag")
+  if(!KLIMA_DATA)return null;
+  var keys=Object.keys(KLIMA_DATA);
+  if(keys.length<2)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var sh2=shuf(keys.slice());
+  var a=KLIMA_DATA[sh2[0]],b=KLIMA_DATA[sh2[1]];
+  if(!a||!b||a.durchschnitt_temp_c==null||b.durchschnitt_temp_c==null)return null;
+  var bigger=a.durchschnitt_temp_c>=b.durchschnitt_temp_c?sh2[0]:sh2[1];
+  return {type:'hl',
+    left:{label:sh2[0],val:a.durchschnitt_temp_c},
+    right:{label:sh2[1],val:b.durchschnitt_temp_c},
+    correct:bigger,unit:'°C',prompt:t('klwarm_prompt'),lowerWins:false};
+}
+
+function genKlimaKontinentZoneQ(){
+  // Continent → which climate zone is typical there
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var pairs=[
+    {cont:'🌍 Afrika',     z:'Tropisch'},{cont:'🌏 Asien',      z:'Kontinental'},
+    {cont:'🌎 Südamerika', z:'Tropisch'},{cont:'🌍 Europa',     z:'Gemäßigt'},
+    {cont:'🌏 Ozeanien',   z:'Arid'},   {cont:'🌎 Nordamerika',z:'Kontinental'},
+  ];
+  var allZones=['Tropisch','Gemäßigt','Wüste','Kontinental','Arid','Mediterran','Subarktisch'];
+  var pick=pairs[~~(rng()*pairs.length)];
+  var opts=shuf([pick.z].concat(shuf(allZones.filter(function(z){return z!==pick.z;})).slice(0,3)));
+  return {type:'uk_match',question:pick.cont,options:opts,correct:pick.z,
+    meta:t('klkontz_meta',{c:pick.cont,z:pick.z})};
+}
+
+function genHundGroesseKlasseQ(){
+  if(!HUNDE_DATA||!Object.keys(HUNDE_DATA).length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function cls(h){return h<40?'klein':h<=65?'mittel':'gross';}
+  var keys=Object.keys(HUNDE_DATA).filter(function(k){return HUNDE_DATA[k]&&HUNDE_DATA[k].widerristhoehe_cm;});
+  var breed=keys[~~(rng()*keys.length)];
+  var data=HUNDE_DATA[breed];
+  var correct=cls(data.widerristhoehe_cm);
+  var opts=shuf(['klein','mittel','gross']).map(function(s){return t('dog_size_'+s);});
+  return {type:'uk_match',question:'🐕 '+breed,options:opts,correct:t('dog_size_'+correct),
+    meta:t('dog_size_meta',{breed:breed,h:data.widerristhoehe_cm,size:t('dog_size_'+correct)})};
+}
+
+function genHundMatchFCIQ(){
+  if(!HUNDE_DATA||!Object.keys(HUNDE_DATA).length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(HUNDE_DATA).filter(function(k){return HUNDE_DATA[k]&&HUNDE_DATA[k].fci_gruppe;});
+  var breed=keys[~~(rng()*keys.length)];
+  var data=HUNDE_DATA[breed];
+  var correct=data.fci_gruppe;
+  var allGroups=Array.from(new Set(keys.map(function(k){return HUNDE_DATA[k].fci_gruppe;}))).filter(Boolean);
+  var opts=shuf([correct].concat(shuf(allGroups.filter(function(g){return g!==correct;})).slice(0,3)));
+  return {type:'uk_match',question:'🐕 '+breed,options:opts,correct:correct,
+    meta:t('hund_fci_meta',{breed:breed,fci:correct})};
+}
+
+function genHundRasseLaenderQ(){
+  if(!HUNDE_DATA||!Object.keys(HUNDE_DATA).length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(HUNDE_DATA).filter(function(k){return HUNDE_DATA[k]&&HUNDE_DATA[k].ursprungsland;});
+  var breed=keys[~~(rng()*keys.length)];
+  var data=HUNDE_DATA[breed];
+  var correct=data.ursprungsland;
+  var allLands=Array.from(new Set(keys.map(function(k){return HUNDE_DATA[k].ursprungsland;}))).filter(Boolean);
+  var opts=shuf([correct].concat(shuf(allLands.filter(function(l){return l!==correct;})).slice(0,3)));
+  return {type:'uk_match',question:'🐕 '+breed,options:opts,correct:correct,
+    meta:t('hund_land_meta',{breed:breed,land:correct})};
+}
+
+
+/* Phase 502: Pflanzen/Tiere/Klima L1 */
+function genPflanzeObstGemuese(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {e:'🍎',k:'obst',lvl:1},{e:'🍌',k:'obst',lvl:1},{e:'🍓',k:'obst',lvl:1},
+    {e:'🍋',k:'obst',lvl:1},{e:'🍇',k:'obst',lvl:1},{e:'🥕',k:'gemuese',lvl:1},
+    {e:'🥦',k:'gemuese',lvl:1},{e:'🥔',k:'gemuese',lvl:1},{e:'🌽',k:'gemuese',lvl:1},
+    {e:'🍅',k:'obst',lvl:1},{e:'🥑',k:'obst',lvl:2},{e:'🍍',k:'obst',lvl:2},
+    {e:'🥝',k:'obst',lvl:2},{e:'🧅',k:'gemuese',lvl:2},{e:'🥒',k:'gemuese',lvl:2},
+  ];
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=shuf([t('og_obst'),t('og_gemuese')]);
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('og_'+pick.k)};
+}
+function genPflanzeBaumBlume(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var items=[
+    {e:'🌸',k:'blume',lvl:1},{e:'🌻',k:'blume',lvl:1},{e:'🌹',k:'blume',lvl:1},
+    {e:'🌷',k:'blume',lvl:1},{e:'🌳',k:'baum',lvl:1},{e:'🌲',k:'baum',lvl:1},
+    {e:'🌴',k:'baum',lvl:1},{e:'🌵',k:'strauch',lvl:2},{e:'🍀',k:'blume',lvl:2},
+    {e:'🌾',k:'blume',lvl:2},{e:'🌿',k:'strauch',lvl:2},{e:'🎋',k:'baum',lvl:2},
+  ];
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var allOpts=lvl<=1?[t('bb_baum'),t('bb_blume')]:shuf([t('bb_baum'),t('bb_blume'),t('bb_strauch')]);
+  var opts=shuf(allOpts.indexOf(t('bb_'+pick.k))>=0?allOpts:[t('bb_'+pick.k)].concat(allOpts.slice(0,lvl<=1?1:2)));
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('bb_'+pick.k)};
+}
+function genPflanzeHabitat(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var items=[
+    {e:'🌵',h:'wueste',lvl:1},{e:'🌴',h:'tropen',lvl:1},{e:'🌲',h:'wald',lvl:1},
+    {e:'🌊',h:'wasser',lvl:1},{e:'🌾',h:'wiese',lvl:1},
+    {e:'🍄',h:'wald',lvl:2},{e:'🌸',h:'garten',lvl:2},{e:'🎋',h:'tropen',lvl:2},
+  ];
+  var habs=['wueste','tropen','wald','wasser','wiese','garten'];
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=shuf([pick.h].concat(shuf(habs.filter(function(h){return h!==pick.h;})).slice(0,3))).map(function(h){return t('pfhab_'+h);});
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('pfhab_'+pick.h)};
+}
+function genPflanzeFarbe(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {e:'🌹',c:'rot'},{e:'🌻',c:'gelb'},{e:'💐',c:'bunt'},{e:'🌸',c:'rosa'},
+    {e:'🌷',c:'rot'},{e:'🍀',c:'gruen'},{e:'🌼',c:'gelb'},{e:'💜',c:'lila'},
+  ];
+  var allC=['rot','gelb','rosa','bunt','gruen','lila','weiss','orange'];
+  var pick=items[~~(rng()*items.length)];
+  var opts=shuf([pick.c].concat(shuf(allC.filter(function(c){return c!==pick.c;})).slice(0,3))).map(function(c){return t('pfarbe_'+c);});
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('pfarbe_'+pick.c)};
+}
+function genPflanzeEssbar(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var items=[
+    {e:'🍎',k:'essbar',lvl:1},{e:'🌹',k:'nicht',lvl:1},{e:'🍋',k:'essbar',lvl:1},
+    {e:'🌵',k:'nicht',lvl:1},{e:'🍄',k:'vorsicht',lvl:2},{e:'🌿',k:'essbar',lvl:2},
+    {e:'🍇',k:'essbar',lvl:2},{e:'🌸',k:'nicht',lvl:2},
+  ];
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=lvl<=1?shuf([t('ess_essbar'),t('ess_nicht')]):shuf([t('ess_essbar'),t('ess_nicht'),t('ess_vorsicht')]);
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('ess_'+pick.k)};
+}
+function genTiereHaustierWild(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {e:'🐶',k:'haus',lvl:1},{e:'🐱',k:'haus',lvl:1},{e:'🦁',k:'wild',lvl:1},
+    {e:'🐘',k:'wild',lvl:1},{e:'🐇',k:'haus',lvl:1},{e:'🦊',k:'wild',lvl:1},
+    {e:'🐄',k:'haus',lvl:2},{e:'🦅',k:'wild',lvl:2},{e:'🐍',k:'wild',lvl:2},
+    {e:'🐠',k:'wild',lvl:2},{e:'🐦',k:'haus',lvl:2},{e:'🐺',k:'wild',lvl:2},
+  ];
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=shuf([t('hw_haus'),t('hw_wild')]);
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('hw_'+pick.k)};
+}
+function genTiereWasserLand(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var items=[
+    {e:'🐟',k:'wasser',lvl:1},{e:'🐊',k:'wasser',lvl:1},{e:'🦁',k:'land',lvl:1},
+    {e:'🐘',k:'land',lvl:1},{e:'🦅',k:'luft',lvl:1},{e:'🦈',k:'wasser',lvl:1},
+    {e:'🐦',k:'luft',lvl:2},{e:'🐢',k:'wasser',lvl:2},{e:'🦎',k:'land',lvl:2},
+    {e:'🦭',k:'wasser',lvl:2},{e:'🦋',k:'luft',lvl:2},{e:'🐸',k:'wasser',lvl:2},
+  ];
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=lvl<=1?shuf([t('wl_wasser'),t('wl_land'),t('wl_luft')]):shuf([t('wl_wasser'),t('wl_land'),t('wl_luft')]);
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('wl_'+pick.k)};
+}
+function genKlimaWarmKaltLand(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var items=[
+    {c:'🇧🇷 Brasilien',k:'warm',lvl:1},{c:'🇮🇸 Island',k:'kalt',lvl:1},
+    {c:'🇪🇬 Ägypten',k:'warm',lvl:1},{c:'🇨🇦 Kanada',k:'kalt',lvl:1},
+    {c:'🇩🇪 Deutschland',k:'mild',lvl:2},{c:'🇮🇳 Indien',k:'warm',lvl:2},
+    {c:'🇷🇺 Russland',k:'kalt',lvl:2},{c:'🇦🇺 Australien',k:'warm',lvl:2},
+  ];
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=lvl<=1?shuf([t('wkl_warm'),t('wkl_kalt')]):shuf([t('wkl_warm'),t('wkl_kalt'),t('wkl_mild')]);
+  return {type:'uk_match',question:pick.c,options:opts,correct:t('wkl_'+pick.k)};
+}
+function genKlimaRegenTrocken(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {c:'🇧🇷 Amazonas',k:'regen'},{c:'🇸🇦 Saudi-Arabien',k:'trocken'},
+    {c:'🇬🇧 Großbritannien',k:'regen'},{c:'🇪🇬 Ägypten',k:'trocken'},
+    {c:'🇮🇩 Indonesien',k:'regen'},{c:'🇨🇱 Atacama',k:'trocken'},
+    {c:'🇮🇪 Irland',k:'regen'},{c:'🇦🇺 Outback',k:'trocken'},
+  ];
+  var pick=items[~~(rng()*items.length)];
+  var opts=shuf([t('rt_regen'),t('rt_trocken')]);
+  return {type:'uk_match',question:pick.c,options:opts,correct:t('rt_'+pick.k)};
+}
+
+/* Phase 503: Sport L1, KZ L1, Brettspiele L2 */
+function genSportBallOderNicht(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {e:'⚽',k:'ja',lvl:1},{e:'🎿',k:'nein',lvl:1},{e:'🏊',k:'nein',lvl:1},
+    {e:'🎾',k:'ja',lvl:1},{e:'🏈',k:'ja',lvl:1},{e:'🚴',k:'nein',lvl:1},
+    {e:'🏐',k:'ja',lvl:2},{e:'🤸',k:'nein',lvl:2},{e:'🏑',k:'ja',lvl:2},
+    {e:'🥊',k:'nein',lvl:2},{e:'🏒',k:'ja',lvl:2},{e:'🎯',k:'nein',lvl:2},
+  ];
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  return {type:'uk_match',question:pick.e,options:shuf([t('ball_ja'),t('ball_nein')]),correct:t('ball_'+pick.k)};
+}
+function genSportTeamsport(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var items=[
+    {e:'⚽',k:'team',lvl:1},{e:'🎿',k:'einzel',lvl:1},{e:'🏊',k:'einzel',lvl:1},
+    {e:'🏀',k:'team',lvl:1},{e:'🎾',k:'beides',lvl:2},{e:'🏈',k:'team',lvl:2},
+    {e:'🤸',k:'beides',lvl:2},{e:'🚴',k:'beides',lvl:2},{e:'🤼',k:'einzel',lvl:2},
+  ];
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=lvl<=1?shuf([t('ts_team'),t('ts_einzel')]):shuf([t('ts_team'),t('ts_einzel'),t('ts_beides')]);
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('ts_'+pick.k)};
+}
+function genSportOlympiaSommer(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var items=[
+    {e:'⚽',k:'sommer',lvl:1},{e:'🎿',k:'winter',lvl:1},{e:'🏊',k:'sommer',lvl:1},
+    {e:'⛷️',k:'winter',lvl:1},{e:'🏀',k:'sommer',lvl:2},{e:'🏒',k:'winter',lvl:2},
+    {e:'🎾',k:'sommer',lvl:2},{e:'🛷',k:'winter',lvl:2},{e:'🏇',k:'sommer',lvl:2},
+  ];
+  var pool=lvl<=1?items.filter(function(x){return x.lvl<=1;}):items;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=shuf([t('ol_sommer'),t('ol_winter')]);
+  return {type:'uk_match',question:pick.e,options:opts,correct:t('ol_'+pick.k)};
+}
+function genSportSpielerAnzahl(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {n:'⚽ Fußball',t:11},{n:'🏀 Basketball',t:5},{n:'🏐 Volleyball',t:6},
+    {n:'🏈 American Football',t:11},{n:'🏑 Hockey',t:11},{n:'🏒 Eishockey',t:6},
+    {n:'🤾 Handball',t:7},{n:'🏉 Rugby',t:15},{n:'🎾 Tennis',t:1},
+  ];
+  var pick=items[~~(rng()*items.length)];
+  var nums=shuf([1,5,6,7,11,15]).filter(function(n){return n!==pick.t;}).slice(0,3);
+  var opts=shuf([pick.t].concat(nums)).map(function(n){return n+'';});
+  return {type:'uk_match',question:pick.n,options:opts,correct:pick.t+''};
+}
+function genKZLandEinfach(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var known=[
+    {k:'D',l:'Deutschland',lvl:1},{k:'A',l:'Österreich',lvl:1},{k:'CH',l:'Schweiz',lvl:1},
+    {k:'F',l:'Frankreich',lvl:1},{k:'I',l:'Italien',lvl:1},{k:'GB',l:'Großbritannien',lvl:2},
+    {k:'NL',l:'Niederlande',lvl:2},{k:'B',l:'Belgien',lvl:2},{k:'PL',l:'Polen',lvl:2},
+    {k:'E',l:'Spanien',lvl:2},{k:'CZ',l:'Tschechien',lvl:2},{k:'SK',l:'Slowakei',lvl:2},
+  ];
+  var pool=lvl<=1?known.filter(function(x){return x.lvl<=1;}):known;
+  var pick=pool[~~(rng()*pool.length)];
+  var opts=shuf([pick.l].concat(shuf(pool.filter(function(x){return x.l!==pick.l;})).slice(0,3).map(function(x){return x.l;})));
+  return {type:'uk_match',question:'🚗 '+pick.k,options:opts,correct:pick.l,
+    meta:t('kz_meta',{k:pick.k,l:pick.l})};
+}
+function genKZBuchstabeTipp(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var codes=['D','A','F','I','B','E','P','H','CZ','SK','PL','CH','NL','GB','GR'];
+  var pick=codes[~~(rng()*codes.length)];
+  var first=pick[0];
+  var others=shuf(['A','B','C','D','E','F','G','H','I','K','L','M','N','P','R','S'].filter(function(c){return c!==first;})).slice(0,3);
+  var opts=shuf([first].concat(others));
+  return {type:'uk_match',question:'🚗 '+pick,options:opts,correct:first};
+}
+function genKZEuOderNicht(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {k:'D',l:'Deutschland',eu:true},{k:'CH',l:'Schweiz',eu:false},
+    {k:'F',l:'Frankreich',eu:true},{k:'NO',l:'Norwegen',eu:false},
+    {k:'PL',l:'Polen',eu:true},{k:'GB',l:'Großbritannien',eu:false},
+    {k:'I',l:'Italien',eu:true},{k:'TR',l:'Türkei',eu:false},
+    {k:'E',l:'Spanien',eu:true},{k:'RS',l:'Serbien',eu:false},
+  ];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:'🚗 '+pick.k+' ('+pick.l+')',
+    options:shuf([t('eu_ja'),t('eu_nein')]),correct:t(pick.eu?'eu_ja':'eu_nein'),
+    meta:t('eu_meta',{l:pick.l,eu:pick.eu?t('eu_ja'):t('eu_nein')})};
+}
+function genSpielSpielerAnzahl(){
+  if(!BOARDGAMES_DATA||!BOARDGAMES_DATA.length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var pool=BOARDGAMES_DATA.filter(function(g){return g&&g.name&&g.max_spieler;});
+  if(pool.length<4)return null;
+  var pick=pool[~~(rng()*pool.length)];
+  var nums=[2,3,4,5,6,8,10].filter(function(n){return n!==pick.max_spieler;});
+  var opts=shuf([pick.max_spieler].concat(shuf(nums).slice(0,3))).map(function(n){return n+'';});
+  return {type:'uk_match',question:'🎲 '+pick.name,options:opts,correct:pick.max_spieler+'',
+    meta:t('spielsplr_meta',{n:pick.name,m:pick.max_spieler})};
+}
+function genSpielKurzLang(){
+  if(!BOARDGAMES_DATA||!BOARDGAMES_DATA.length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function cls(m){return m<=30?'kurz':m<=90?'mittel':'lang';}
+  var pool=BOARDGAMES_DATA.filter(function(g){return g&&g.name&&g.spieldauer_min;});
+  if(!pool.length)return null;
+  var pick=pool[~~(rng()*pool.length)];
+  var correct=cls(pick.spieldauer_min);
+  var opts=shuf([t('sz_kurz'),t('sz_mittel'),t('sz_lang')]);
+  return {type:'uk_match',question:'🎲 '+pick.name,options:opts,correct:t('sz_'+correct)};
+}
+function genSpielMatchUrsprung(){
+  if(!BOARDGAMES_DATA||!BOARDGAMES_DATA.length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var pool=BOARDGAMES_DATA.filter(function(g){return g&&g.name&&g.ursprungsland;});
+  if(pool.length<4)return null;
+  var pick=pool[~~(rng()*pool.length)];
+  var allLands=Array.from(new Set(pool.map(function(g){return g.ursprungsland;}))).filter(Boolean);
+  var opts=shuf([pick.ursprungsland].concat(shuf(allLands.filter(function(l){return l!==pick.ursprungsland;})).slice(0,3)));
+  return {type:'uk_match',question:'🎲 '+pick.name,options:opts,correct:pick.ursprungsland};
+}
+function genSpielStrategieZufall(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {n:'🎲 Mensch ärgere dich nicht',k:'zufall'},{n:'♟️ Schach',k:'strategie'},
+    {n:'🎯 Risiko',k:'strategie'},{n:'🃏 Uno',k:'zufall'},
+    {n:'🔴 4 gewinnt',k:'strategie'},{n:'🎪 Ludo',k:'zufall'},
+    {n:'⬛ Go',k:'strategie'},{n:'🎰 Snakes & Ladders',k:'zufall'},
+  ];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:pick.n,options:shuf([t('stz_strategie'),t('stz_zufall')]),correct:t('stz_'+pick.k)};
+}
+function genSpielHLSpieler(){
+  if(!BOARDGAMES_DATA||!BOARDGAMES_DATA.length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var pool=BOARDGAMES_DATA.filter(function(g){return g&&g.name&&g.max_spieler;});
+  if(pool.length<2)return null;
+  var sh2=shuf(pool.slice());
+  var a=sh2[0],b=sh2[1];
+  var bigger=a.max_spieler>=b.max_spieler?a.name:b.name;
+  return {type:'hl',
+    left:{label:a.name,val:a.max_spieler},right:{label:b.name,val:b.max_spieler},
+    correct:bigger,unit:t('spieler_unit'),prompt:t('splhl_prompt'),lowerWins:false};
+}
+
+/* Phase 504: Fahrzeug/Digital/Schienen L2 + Sport/KZ L1 */
+
+function genFahrzeugMatchKarosserie(){
+  if(!AUTOS_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(AUTOS_EXT_DATA).filter(function(k){return AUTOS_EXT_DATA[k]&&AUTOS_EXT_DATA[k].karosserie;});
+  if(keys.length<4)return null;
+  var pick=keys[~~(rng()*keys.length)];
+  var correct=AUTOS_EXT_DATA[pick].karosserie;
+  var all=Array.from(new Set(keys.map(function(k){return AUTOS_EXT_DATA[k].karosserie;}))).filter(Boolean);
+  var opts=shuf([correct].concat(shuf(all.filter(function(x){return x!==correct;})).slice(0,3)));
+  return {type:'uk_match',question:'🚗 '+pick,options:opts,correct:correct};
+}
+function genFahrzeugMatchKonzern(){
+  if(!AUTOS_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(AUTOS_EXT_DATA).filter(function(k){return AUTOS_EXT_DATA[k]&&AUTOS_EXT_DATA[k].konzern;});
+  if(keys.length<4)return null;
+  var pick=keys[~~(rng()*keys.length)];
+  var correct=AUTOS_EXT_DATA[pick].konzern;
+  var all=Array.from(new Set(keys.map(function(k){return AUTOS_EXT_DATA[k].konzern;}))).filter(Boolean);
+  var opts=shuf([correct].concat(shuf(all.filter(function(x){return x!==correct;})).slice(0,3)));
+  return {type:'uk_match',question:'🚗 '+pick,options:opts,correct:correct};
+}
+function genHLFahrzeugGewicht(){
+  if(!AUTOS_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(AUTOS_EXT_DATA).filter(function(k){return AUTOS_EXT_DATA[k]&&AUTOS_EXT_DATA[k].gewicht;});
+  if(keys.length<2)return null;
+  var sh=shuf(keys.slice());
+  var a=sh[0],b=sh[1];
+  var bigger=AUTOS_EXT_DATA[a].gewicht>=AUTOS_EXT_DATA[b].gewicht?a:b;
+  return {type:'hl',left:{label:a,val:AUTOS_EXT_DATA[a].gewicht},right:{label:b,val:AUTOS_EXT_DATA[b].gewicht},
+    correct:bigger,unit:'kg',prompt:t('fzgew_prompt'),lowerWins:false};
+}
+function genHLFahrzeugKofferraum(){
+  if(!AUTOS_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(AUTOS_EXT_DATA).filter(function(k){return AUTOS_EXT_DATA[k]&&AUTOS_EXT_DATA[k].kofferraum;});
+  if(keys.length<2)return null;
+  var sh=shuf(keys.slice());
+  var a=sh[0],b=sh[1];
+  var bigger=AUTOS_EXT_DATA[a].kofferraum>=AUTOS_EXT_DATA[b].kofferraum?a:b;
+  return {type:'hl',left:{label:a,val:AUTOS_EXT_DATA[a].kofferraum},right:{label:b,val:AUTOS_EXT_DATA[b].kofferraum},
+    correct:bigger,unit:'L',prompt:t('fzkoff_prompt'),lowerWins:false};
+}
+function genFahrzeugMatchSitze(){
+  if(!AUTOS_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(AUTOS_EXT_DATA).filter(function(k){return AUTOS_EXT_DATA[k]&&AUTOS_EXT_DATA[k].sitze;});
+  if(!keys.length)return null;
+  var pick=keys[~~(rng()*keys.length)];
+  var correct=AUTOS_EXT_DATA[pick].sitze;
+  var nums=[2,4,5,7].filter(function(n){return n!==correct;});
+  var opts=shuf([correct].concat(shuf(nums).slice(0,3))).map(function(n){return n+'';});
+  return {type:'uk_match',question:'🚗 '+pick,options:opts,correct:correct+''};
+}
+function genDigitalMatchPlattform(){
+  if(!GAMES_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(GAMES_EXT_DATA).filter(function(k){return GAMES_EXT_DATA[k]&&GAMES_EXT_DATA[k].plattform;});
+  if(!keys.length)return null;
+  var pick=keys[~~(rng()*keys.length)];
+  var correct=GAMES_EXT_DATA[pick].plattform;
+  var all=['PC','Konsole','Mobil','Multiplattform'];
+  var opts=shuf([correct].concat(shuf(all.filter(function(x){return x!==correct;})).slice(0,3)));
+  return {type:'uk_match',question:'🎮 '+pick,options:opts,correct:correct};
+}
+function genHLDigitalDownloads(){
+  if(!GAMES_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(GAMES_EXT_DATA).filter(function(k){return GAMES_EXT_DATA[k]&&GAMES_EXT_DATA[k].downloads_mio;});
+  if(keys.length<2)return null;
+  var sh=shuf(keys.slice());
+  var a=sh[0],b=sh[1];
+  var bigger=GAMES_EXT_DATA[a].downloads_mio>=GAMES_EXT_DATA[b].downloads_mio?a:b;
+  return {type:'hl',left:{label:a,val:GAMES_EXT_DATA[a].downloads_mio},right:{label:b,val:GAMES_EXT_DATA[b].downloads_mio},
+    correct:bigger,unit:'Mio',prompt:t('digdl_prompt'),lowerWins:false};
+}
+function genDigitalMatchGenre(){
+  if(!GAMES_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(GAMES_EXT_DATA).filter(function(k){return GAMES_EXT_DATA[k]&&GAMES_EXT_DATA[k].genre;});
+  if(!keys.length)return null;
+  var pick=keys[~~(rng()*keys.length)];
+  var correct=GAMES_EXT_DATA[pick].genre;
+  var all=Array.from(new Set(keys.map(function(k){return GAMES_EXT_DATA[k].genre;}))).filter(Boolean);
+  var opts=shuf([correct].concat(shuf(all.filter(function(x){return x!==correct;})).slice(0,3)));
+  return {type:'uk_match',question:'🎮 '+pick,options:opts,correct:correct};
+}
+function genDigitalMatchF2P(){
+  if(!GAMES_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(GAMES_EXT_DATA).filter(function(k){return GAMES_EXT_DATA[k]&&GAMES_EXT_DATA[k].f2p!==undefined;});
+  if(!keys.length)return null;
+  var pick=keys[~~(rng()*keys.length)];
+  var correct=GAMES_EXT_DATA[pick].f2p?t('f2p_ja'):t('f2p_nein');
+  return {type:'uk_match',question:'🎮 '+pick,options:shuf([t('f2p_ja'),t('f2p_nein')]),correct:correct};
+}
+function genDigitalMatchLand(){
+  if(!GAMES_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(GAMES_EXT_DATA).filter(function(k){return GAMES_EXT_DATA[k]&&GAMES_EXT_DATA[k].dev_land;});
+  if(!keys.length)return null;
+  var pick=keys[~~(rng()*keys.length)];
+  var correct=GAMES_EXT_DATA[pick].dev_land;
+  var all=Array.from(new Set(keys.map(function(k){return GAMES_EXT_DATA[k].dev_land;}))).filter(Boolean);
+  var opts=shuf([correct].concat(shuf(all.filter(function(x){return x!==correct;})).slice(0,3)));
+  return {type:'uk_match',question:'🎮 '+pick,options:opts,correct:correct};
+}
+function genSchienenMatchTyp(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var typen=[
+    {n:'ICE',t:'schnellzug'},{n:'TGV',t:'schnellzug'},{n:'Eurostar',t:'schnellzug'},
+    {n:'S-Bahn',t:'sbahn'},{n:'U-Bahn',t:'ubahn'},{n:'Straßenbahn',t:'tram'},
+    {n:'IC',t:'schnellzug'},{n:'RegionalExpress',t:'regional'},
+    {n:'Güterzug',t:'gueter'},{n:'Nachtzug',t:'nacht'},
+  ];
+  var all=['schnellzug','sbahn','ubahn','tram','regional','gueter','nacht'];
+  var pick=typen[~~(rng()*typen.length)];
+  var opts=shuf([pick.t].concat(shuf(all.filter(function(x){return x!==pick.t;})).slice(0,3))).map(function(k){return t('schtyp_'+k);});
+  return {type:'uk_match',question:'🚄 '+pick.n,options:opts,correct:t('schtyp_'+pick.t)};
+}
+function genSchienenMatchLand(){
+  if(!ZUG_REISEZEITEN_DATA||!ZUG_REISEZEITEN_DATA.length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var pool=ZUG_REISEZEITEN_DATA.filter(function(z){return z&&z.von&&z.nach&&z.land;});
+  if(!pool.length)return null;
+  var pick=pool[~~(rng()*pool.length)];
+  var lMap={'de':'Deutschland','at':'Österreich','ch':'Schweiz','fr':'Frankreich','gb':'Großbritannien','it':'Italien','es':'Spanien','pl':'Polen','nl':'Niederlande','be':'Belgien'};
+  var correct=lMap[pick.land]||pick.land;
+  var others=shuf(Object.values(lMap).filter(function(l){return l!==correct;})).slice(0,3);
+  var opts=shuf([correct].concat(others));
+  return {type:'uk_match',question:'🚄 '+pick.von+' → '+pick.nach,options:opts,correct:correct};
+}
+function genHLSchienenDauer(){
+  if(!ZUG_REISEZEITEN_DATA||!ZUG_REISEZEITEN_DATA.length)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var pool=ZUG_REISEZEITEN_DATA.filter(function(z){return z&&z.von&&z.nach&&z.dauer_min;});
+  if(pool.length<2)return null;
+  var sh=shuf(pool.slice());
+  var a=sh[0],b=sh[1];
+  var bigger=a.dauer_min>=b.dauer_min?a.von+' → '+a.nach:b.von+' → '+b.nach;
+  return {type:'hl',left:{label:a.von+' → '+a.nach,val:a.dauer_min},right:{label:b.von+' → '+b.nach,val:b.dauer_min},
+    correct:bigger,unit:'Min',prompt:t('schdau_prompt'),lowerWins:false};
+}
+function genSchienenMatchAntrieb(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {n:'ICE 3',k:'elektro'},{n:'TGV',k:'elektro'},{n:'Diesel-Triebwagen',k:'diesel'},
+    {n:'Dampflokomotive',k:'dampf'},{n:'Eurocity',k:'elektro'},
+    {n:'Diesellok BR 218',k:'diesel'},{n:'Maglev Shinkansen',k:'elektro'},
+  ];
+  var all=['elektro','diesel','dampf','wasserstoff'];
+  var pick=items[~~(rng()*items.length)];
+  var opts=shuf([pick.k].concat(shuf(all.filter(function(x){return x!==pick.k;})).slice(0,3))).map(function(k){return t('schatr_'+k);});
+  return {type:'uk_match',question:'🚄 '+pick.n,options:opts,correct:t('schatr_'+pick.k)};
+}
+function genHLSchienenTempo(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var typen=[
+    {n:'ICE (Deutschland)',v:330},{n:'TGV (Frankreich)',v:320},
+    {n:'Shinkansen N700',v:285},{n:'S-Bahn',v:120},{n:'Straßenbahn',v:70},
+    {n:'Eurostar',v:300},{n:'Maglev (Japan)',v:603},{n:'U-Bahn',v:90},
+  ];
+  var sh=shuf(typen.slice());
+  var a=sh[0],b=sh[1];
+  var bigger=a.v>=b.v?a.n:b.n;
+  return {type:'hl',left:{label:a.n,val:a.v},right:{label:b.n,val:b.v},
+    correct:bigger,unit:'km/h',prompt:t('schtmp_prompt'),lowerWins:false};
+}
+function genSportSommerWinterOly(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {e:'⚽',k:'sommer'},{e:'🎿',k:'winter'},{e:'🏊',k:'sommer'},{e:'⛷️',k:'winter'},
+    {e:'🏀',k:'sommer'},{e:'🏒',k:'winter'},{e:'🎾',k:'sommer'},{e:'🛷',k:'winter'},
+    {e:'🏋️',k:'sommer'},{e:'🏂',k:'winter'},{e:'🚵',k:'sommer'},{e:'🥌',k:'winter'},
+  ];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:pick.e,options:shuf([t('sw_sommer'),t('sw_winter')]),correct:t('sw_'+pick.k)};
+}
+function genSportWasserLandSport(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[
+    {e:'🏊',k:'wasser'},{e:'⚽',k:'land'},{e:'🤿',k:'wasser'},{e:'🎿',k:'land'},
+    {e:'🚣',k:'wasser'},{e:'🏋️',k:'land'},{e:'🏄',k:'wasser'},{e:'🎾',k:'land'},
+    {e:'⛵',k:'wasser'},{e:'🏀',k:'land'},
+  ];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:pick.e,options:shuf([t('wls_wasser'),t('wls_land')]),correct:t('wls_'+pick.k)};
+}
+function genKZAnfangsbuchstabe(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var codes=['D','A','F','I','B','E','P','H','N','S','M','R','G','CZ','SK','PL','CH','NL','GB','GR'];
+  var pick=codes[~~(rng()*codes.length)];
+  var first=pick[0];
+  var allLetters=['A','B','C','D','E','F','G','H','I','K','L','M','N','P','R','S'];
+  var others=shuf(allLetters.filter(function(c){return c!==first;})).slice(0,3);
+  return {type:'uk_match',question:'🚗 '+pick,options:shuf([first].concat(others)),correct:first};
+}
+function genKZNachbarland(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var nachbarn={D:true,A:true,F:true,CH:true,NL:true,B:true,PL:true,CZ:true,DK:true,L:true};
+  var codes=['D','A','F','CH','NL','B','PL','CZ','DK','L','GB','I','E','PT','GR','SE','RO'];
+  var pick=codes[~~(rng()*codes.length)];
+  var correct=nachbarn[pick]?t('nbl_ja'):t('nbl_nein');
+  return {type:'uk_match',question:'🚗 '+pick,options:shuf([t('nbl_ja'),t('nbl_nein')]),correct:correct};
+}
+
+/* Phase 505 Generators */
+function genAstroSternPlanet(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{e:'☀️ Sonne',k:'stern'},{e:'🌍 Erde',k:'planet'},{e:'🔴 Mars',k:'planet'},{e:'⭐ Sirius',k:'stern'},{e:'🪐 Saturn',k:'planet'},{e:'⭐ Polarstern',k:'stern'},{e:'♀ Venus',k:'planet'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:pick.e,options:shuf([t('sp_stern'),t('sp_planet')]),correct:t('sp_'+pick.k)};
+}
+function genAstroPlanetGroesse(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var gross=['🪐 Jupiter','🟠 Saturn'],mittel=['🌍 Erde','🌊 Neptun'],klein=['☿ Merkur','🔴 Mars'];
+  var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
+  var all=gross.concat(mittel).concat(klein);
+  var pick=all[~~(rng()*all.length)];
+  var k=gross.indexOf(pick)>=0?'gross':klein.indexOf(pick)>=0?'klein':'mittel';
+  var opts=lvl<=1?shuf([t('pg_gross'),t('pg_klein')]):shuf([t('pg_gross'),t('pg_mittel'),t('pg_klein')]);
+  if(lvl<=1&&k==='mittel')k='gross';
+  return {type:'uk_match',question:pick,options:opts,correct:t('pg_'+k)};
+}
+function genAstroTagNacht(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{e:'🌞 Mittag',k:'tag'},{e:'🌙 Mitternacht',k:'nacht'},{e:'⭐ Sternenhimmel',k:'nacht'},{e:'☀️ Sonnenschein',k:'tag'},{e:'🌃 Abendröte',k:'nacht'},{e:'🌅 Sonnenaufgang',k:'tag'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:pick.e,options:shuf([t('tn_tag'),t('tn_nacht')]),correct:t('tn_'+pick.k)};
+}
+function genAstroSonneMond(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{e:'☀️',k:'sonne'},{e:'🌕',k:'mond'},{e:'⭐',k:'stern'},{e:'🌙',k:'mond'},{e:'🌟',k:'stern'},{e:'🌞',k:'sonne'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:pick.e,options:shuf([t('sm_sonne'),t('sm_mond'),t('sm_stern')]),correct:t('sm_'+pick.k)};
+}
+function genCapitalEuropaQuiz(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{c:'Berlin',eu:true},{c:'Paris',eu:true},{c:'Tokio',eu:false},{c:'Washington D.C.',eu:false},{c:'Madrid',eu:true},{c:'Peking',eu:false},{c:'Rom',eu:true},{c:'Canberra',eu:false},{c:'Wien',eu:true},{c:'Nairobi',eu:false}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:'🏛️ '+pick.c,options:shuf([t('eu_ja2'),t('eu_nein2')]),correct:t(pick.eu?'eu_ja2':'eu_nein2')};
+}
+function genCapitalOderNicht(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var ja=['Berlin','Paris','Tokio','Rom','Madrid','Wien','London','Bern','Peking','Ottawa'];
+  var nein=['Hamburg','Lyon','Osaka','Mailand','Barcelona','New York','Sydney','Toronto'];
+  var all=ja.concat(nein);
+  var pick=all[~~(rng()*all.length)];
+  return {type:'uk_match',question:'🏛️ '+pick,options:shuf([t('cn_ja'),t('cn_nein')]),correct:ja.indexOf(pick)>=0?t('cn_ja'):t('cn_nein')};
+}
+function genCapitalAnfang(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var caps=['Berlin','Paris','Tokio','Roma','Madrid','Wien','London','Bern','Ottawa','Peking','Moskau'];
+  var pick=caps[~~(rng()*caps.length)];
+  var first=pick[0];
+  var others=shuf(['A','B','D','E','F','G','H','I','K','L','M','N','O','P','R','S','T','W'].filter(function(c){return c!==first;})).slice(0,3);
+  return {type:'uk_match',question:'🏛️ '+pick,options:shuf([first].concat(others)),correct:first};
+}
+function genCapitalInsel(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{c:'London',k:'nein'},{c:'Tokio',k:'nein'},{c:'Reykjavik',k:'ja'},{c:'Berlin',k:'nein'},{c:'Wellington',k:'ja'},{c:'Paris',k:'nein'},{c:'Valletta',k:'ja'},{c:'Wien',k:'nein'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:'🏛️ '+pick.c,options:shuf([t('ci_ja'),t('ci_nein')]),correct:t('ci_'+pick.k)};
+}
+function genHundOderKatze(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var hunde=['Labrador','Dackel','Pudel','Schäferhund','Golden Retriever','Bulldogge','Husky','Chihuahua'];
+  var katzen=['Perser','Siamkatze','Maine Coon','Bengal','Ragdoll','Sphynx'];
+  var all=hunde.concat(katzen);
+  var pick=all[~~(rng()*all.length)];
+  return {type:'uk_match',question:'🐾 '+pick,options:shuf([t('hk_hund'),t('hk_katze')]),correct:hunde.indexOf(pick)>=0?t('hk_hund'):t('hk_katze')};
+}
+function genHundPelzArt(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var lang=['Golden Retriever','Pudel','Husky','Bernhardiner','Chow-Chow','Yorkshire Terrier'];
+  var kurz=['Dackel','Bulldogge','Weimaraner','Dobermann','Boxer'];
+  var all=lang.concat(kurz);
+  var pick=all[~~(rng()*all.length)];
+  return {type:'uk_match',question:'🐕 '+pick,options:shuf([t('hp_lang'),t('hp_kurz')]),correct:lang.indexOf(pick)>=0?t('hp_lang'):t('hp_kurz')};
+}
+function genHundArbeitsBegleiter(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var arbeit=['Schäferhund','Border Collie','Husky','Labrador','Rottweiler','Beagle'];
+  var begleiter=['Chihuahua','Pudel','Yorkshire Terrier','Malteser','Pekinese'];
+  var all=arbeit.concat(begleiter);
+  var pick=all[~~(rng()*all.length)];
+  return {type:'uk_match',question:'🐕 '+pick,options:shuf([t('hab_arbeit'),t('hab_begleiter')]),correct:arbeit.indexOf(pick)>=0?t('hab_arbeit'):t('hab_begleiter')};
+}
+function genHundGrossOderKleinR(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var gross=['Bernhardiner','Deutschen Dogge','Rottweiler','Husky','Berner Sennenhund'];
+  var klein=['Chihuahua','Dackel','Yorkshire Terrier','Malteser','Zwergspitz'];
+  var all=gross.concat(klein);
+  var pick=all[~~(rng()*all.length)];
+  return {type:'uk_match',question:'🐕 '+pick,options:shuf([t('dog_size_gross'),t('dog_size_klein')]),correct:gross.indexOf(pick)>=0?t('dog_size_gross'):t('dog_size_klein')};
+}
+function genKarteNordSued(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function flag(cc){return cc.toUpperCase().replace(/[A-Z]/g,function(ch){return String.fromCodePoint(127397+ch.charCodeAt(0));});}
+  var items=[{cc:'NO',k:'nord'},{cc:'BR',k:'sued'},{cc:'DE',k:'nord'},{cc:'AU',k:'sued'},{cc:'CA',k:'nord'},{cc:'ZA',k:'sued'},{cc:'JP',k:'nord'},{cc:'NZ',k:'sued'},{cc:'EG',k:'nord'},{cc:'AR',k:'sued'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:flag(pick.cc),options:shuf([t('ns_nord'),t('ns_sued')]),correct:t('ns_'+pick.k)};
+}
+function genLandInEuropaQuiz(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function flag(cc){return cc.toUpperCase().replace(/[A-Z]/g,function(ch){return String.fromCodePoint(127397+ch.charCodeAt(0));});}
+  var items=[{cc:'DE',eu:true},{cc:'BR',eu:false},{cc:'FR',eu:true},{cc:'JP',eu:false},{cc:'IT',eu:true},{cc:'US',eu:false},{cc:'PL',eu:true},{cc:'AU',eu:false},{cc:'ES',eu:true},{cc:'IN',eu:false}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:flag(pick.cc),options:shuf([t('eu_ja3'),t('eu_nein3')]),correct:t(pick.eu?'eu_ja3':'eu_nein3')};
+}
+function genNachbarJaNein(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var ja=[['Deutschland','Frankreich'],['Österreich','Schweiz'],['Polen','Deutschland'],['Spanien','Portugal'],['Brasilien','Argentinien'],['USA','Kanada']];
+  var nein=[['Deutschland','Japan'],['Frankreich','Australien'],['Polen','Spanien'],['Brasilien','Chile'],['USA','Russland']];
+  var isJa=rng()<0.5;
+  var pool=isJa?ja:nein;
+  var pair=pool[~~(rng()*pool.length)];
+  return {type:'uk_match',question:'🗺️ '+pair[0]+' & '+pair[1],options:shuf([t('nb_ja'),t('nb_nein')]),correct:t(isJa?'nb_ja':'nb_nein')};
+}
+function genKontinentGroesser(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var conts=[{k:'as',v:44614000},{k:'af',v:30365000},{k:'na',v:24256000},{k:'sa',v:17840000},{k:'eu',v:10530000},{k:'oc',v:7688000}];
+  var sh=shuf(conts.slice());
+  var a=sh[0],b=sh[1];
+  var bigger=a.v>=b.v?a.k:b.k;
+  return {type:'uk_match',question:t('kg_prompt',{a:t('cont_'+a.k),b:t('cont_'+b.k)}),options:shuf([a.k,b.k]).map(function(k){return t('cont_'+k);}),correct:t('cont_'+bigger)};
+}
+function genOzeanKaltWarm(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{n:'Arktischer Ozean',k:'kalt'},{n:'Indischer Ozean',k:'warm'},{n:'Nordatlantik',k:'kalt'},{n:'Pazifik (tropisch)',k:'warm'},{n:'Südpolarmeer',k:'kalt'},{n:'Karibik',k:'warm'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:'🌊 '+pick.n,options:shuf([t('okw_kalt'),t('okw_warm')]),correct:t('okw_'+pick.k)};
+}
+function genMeerOderOzean(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{n:'Pazifik',k:'ozean'},{n:'Mittelmeer',k:'meer'},{n:'Atlantik',k:'ozean'},{n:'Nordsee',k:'meer'},{n:'Indischer Ozean',k:'ozean'},{n:'Ostsee',k:'meer'},{n:'Arktischer Ozean',k:'ozean'},{n:'Rotes Meer',k:'meer'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:'🌊 '+pick.n,options:shuf([t('moo_ozean'),t('moo_meer')]),correct:t('moo_'+pick.k)};
+}
+function genOzeanGroesser(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var ozeane=[{n:'Pazifik',v:165250000},{n:'Atlantik',v:82400000},{n:'Indischer Ozean',v:70560000},{n:'Arktischer Ozean',v:14056000},{n:'Südpolarmeer',v:20327000}];
+  var sh=shuf(ozeane.slice());
+  var a=sh[0],b=sh[1];
+  return {type:'uk_match',question:t('ozg_prompt',{a:a.n,b:b.n}),options:shuf([a.n,b.n]),correct:a.v>=b.v?a.n:b.n};
+}
+function genOzeanTierHeimat(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{e:'🐧',oz:'Südpolarmeer'},{e:'🦭',oz:'Arktischer Ozean'},{e:'🐠',oz:'Pazifik'},{e:'🐋',oz:'Atlantik'},{e:'🦈',oz:'Pazifik'},{e:'🐬',oz:'Indischer Ozean'}];
+  var ozeane=['Pazifik','Atlantik','Indischer Ozean','Arktischer Ozean','Südpolarmeer'];
+  var pick=items[~~(rng()*items.length)];
+  var opts=shuf([pick.oz].concat(shuf(ozeane.filter(function(o){return o!==pick.oz;})).slice(0,3)));
+  return {type:'uk_match',question:pick.e,options:opts,correct:pick.oz};
+}
+function genFlaggeFarbeHaupt(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function flag(cc){return cc.toUpperCase().replace(/[A-Z]/g,function(ch){return String.fromCodePoint(127397+ch.charCodeAt(0));});}
+  var items=[{cc:'DE',c:'schwarz'},{cc:'FR',c:'blau'},{cc:'JP',c:'weiss'},{cc:'CN',c:'rot'},{cc:'IT',c:'gruen'},{cc:'CH',c:'rot'},{cc:'BR',c:'gruen'},{cc:'SE',c:'blau'},{cc:'CA',c:'rot'},{cc:'AU',c:'blau'}];
+  var allC=['rot','blau','gruen','schwarz','gelb','weiss'];
+  var pick=items[~~(rng()*items.length)];
+  var opts=shuf([pick.c].concat(shuf(allC.filter(function(c){return c!==pick.c;})).slice(0,3))).map(function(c){return t('pfarbe_'+c);});
+  return {type:'uk_match',question:flag(pick.cc),options:opts,correct:t('pfarbe_'+pick.c)};
+}
+function genLandInselOderNicht(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function flag(cc){return cc.toUpperCase().replace(/[A-Z]/g,function(ch){return String.fromCodePoint(127397+ch.charCodeAt(0));});}
+  var items=[{cc:'JP',k:'ja'},{cc:'DE',k:'nein'},{cc:'GB',k:'ja'},{cc:'FR',k:'nein'},{cc:'AU',k:'ja'},{cc:'BR',k:'nein'},{cc:'NZ',k:'ja'},{cc:'PL',k:'nein'},{cc:'IS',k:'ja'},{cc:'ES',k:'nein'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:flag(pick.cc),options:shuf([t('il_ja'),t('il_nein')]),correct:t('il_'+pick.k)};
+}
+function genLandInEU(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function flag(cc){return cc.toUpperCase().replace(/[A-Z]/g,function(ch){return String.fromCodePoint(127397+ch.charCodeAt(0));});}
+  var items=[{cc:'DE',k:'ja'},{cc:'CH',k:'nein'},{cc:'FR',k:'ja'},{cc:'NO',k:'nein'},{cc:'IT',k:'ja'},{cc:'GB',k:'nein'},{cc:'PL',k:'ja'},{cc:'TR',k:'nein'},{cc:'ES',k:'ja'},{cc:'US',k:'nein'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:flag(pick.cc),options:shuf([t('eu_mja'),t('eu_mnein')]),correct:t('eu_m'+pick.k)};
+}
+function genNordSuedKugel(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function flag(cc){return cc.toUpperCase().replace(/[A-Z]/g,function(ch){return String.fromCodePoint(127397+ch.charCodeAt(0));});}
+  var items=[{cc:'NO',k:'nord'},{cc:'BR',k:'sued'},{cc:'DE',k:'nord'},{cc:'AU',k:'sued'},{cc:'CA',k:'nord'},{cc:'ZA',k:'sued'},{cc:'JP',k:'nord'},{cc:'NZ',k:'sued'},{cc:'SE',k:'nord'},{cc:'AR',k:'sued'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:flag(pick.cc),options:shuf([t('nsk_nord'),t('nsk_sued')]),correct:t('nsk_'+pick.k)};
+}
+function genParkInEuropaQuiz(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{n:'Europa-Park',eu:true},{n:'Disneyland Paris',eu:true},{n:'Walt Disney World',eu:false},{n:'Phantasialand',eu:true},{n:'Universal Studios Orlando',eu:false},{n:'Efteling',eu:true},{n:'Universal Studios Japan',eu:false},{n:'Legoland Billund',eu:true}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:'🎢 '+pick.n,options:shuf([t('pieu_ja'),t('pieu_nein')]),correct:t(pick.eu?'pieu_ja':'pieu_nein')};
+}
+function genParkAchterbahnWasser(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{n:'Europa-Park',k:'achterbahn'},{n:'Tropical Islands',k:'wasser'},{n:'Phantasialand',k:'achterbahn'},{n:'Aquatica',k:'wasser'},{n:'Heide Park',k:'achterbahn'},{n:'Siam Park',k:'wasser'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:'🎪 '+pick.n,options:shuf([t('paw_achterbahn'),t('paw_wasser')]),correct:t('paw_'+pick.k)};
+}
+function genParkDisneyOderNicht(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var items=[{n:'Disneyland Paris',k:'disney'},{n:'Europa-Park',k:'nicht'},{n:'Walt Disney World',k:'disney'},{n:'Phantasialand',k:'nicht'},{n:'Tokyo Disneyland',k:'disney'},{n:'Heide Park',k:'nicht'}];
+  var pick=items[~~(rng()*items.length)];
+  return {type:'uk_match',question:'🏰 '+pick.n,options:shuf([t('pd_disney'),t('pd_nicht')]),correct:t('pd_'+pick.k)};
+}
+function genParkBekannt(){
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var echte=['Europa-Park','Disneyland','Phantasialand','Heide Park','Efteling','Legoland','Alton Towers'];
+  var fake=['Fantasy World','Wonder Land Park','Happy Valley Fun Park','Magic Kingdom East'];
+  var all=echte.concat(fake);
+  var pick=all[~~(rng()*all.length)];
+  return {type:'uk_match',question:'🎡 '+pick,options:shuf([t('pb_echt'),t('pb_fiktiv')]),correct:echte.indexOf(pick)>=0?t('pb_echt'):t('pb_fiktiv')};
+}
+function genHLDigitalVK(){
+  if(!GAMES_EXT_DATA)return null;
+  function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  var keys=Object.keys(GAMES_EXT_DATA).filter(function(k){return GAMES_EXT_DATA[k]&&GAMES_EXT_DATA[k].vk_mio!=null;});
+  if(keys.length<2)return null;
+  var sh=shuf(keys.slice());
+  var a=sh[0],b=sh[1];
+  var bigger=GAMES_EXT_DATA[a].vk_mio>=GAMES_EXT_DATA[b].vk_mio?a:b;
+  return {type:'hl',left:{label:a,val:GAMES_EXT_DATA[a].vk_mio},right:{label:b,val:GAMES_EXT_DATA[b].vk_mio},correct:bigger,unit:'Mio',prompt:t('digvk_prompt'),lowerWins:false};
+}
 function renderHomeTab(){
   try{_initTravelHint();}catch(_e){}
   const _kidsMode=_getKidsMode();
@@ -17391,6 +18554,12 @@ function renderHomeTab(){
       let _ph='';
       var _fy=_forYouCats();
       if(_fy.length) _ph+=_renderPlaylistStrip(t('pl_foryou'),'⭐',_fy,_km);
+      /* Album-Banner im Kids-Modus */
+      if(_km) _ph+=`<div onclick="S.tab='album';render()" role="button" style="margin:0 15px 12px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:14px;padding:.7rem 1rem;cursor:pointer;display:flex;align-items:center;gap:12px">
+        <div style="font-size:2rem">📖</div>
+        <div style="flex:1"><div style="font-size:.92rem;font-weight:900;color:#fff">${t('album_kids_title')}</div><div style="font-size:.72rem;color:rgba(255,255,255,.8)">${t('album_kids_sub')}</div></div>
+        <div style="font-size:.75rem;font-weight:700;color:#fff;background:rgba(255,255,255,.2);padding:.25rem .7rem;border-radius:20px">${t('album_kids_btn')}</div>
+      </div>`;
       var _fyg=_forYouGames(8);if(_fyg.length) _ph+=_renderGameStrip(t('rec_games_title'),'🎯',_fyg);
       PLAYLISTS.forEach(function(pl){_ph+=_renderPlaylistStrip(t(pl.key),pl.icon,pl.cats,_km);});
       return _ph;

@@ -12,9 +12,9 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 497):
+Aktueller Stand (Stand: Phase 505):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
-- 1004 Spielmodi in MODES-Array (gen.py)
+- 1088 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
 - Patch-System: patches/patch_NNN_description.py via run_patch.py
 - Zero-Bug-Policy: assert c.count(old)==1 vor jedem c.replace()
@@ -262,7 +262,7 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 497)
+## AKTUELLER PROJEKT-STATUS (Phase 505)
 
 | Metrik | Wert |
 |--------|------|

@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 497 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.88 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Version:** Phase 505 (Stand: Juni 2026)
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.98 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -1201,6 +1201,14 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **495** | patch_495.py | **Tippfehler-Bereinigung: ueberfluessiges Hochkomma-Zeichen ’ nach dem Pfeil → auch in Modus-Namen entfernt (z.B. 'Stadt →’ Land' -> 'Stadt → Land'), alle Sprachen. verify 193/193, 0 THROW.** |
 | **496** | patch_496.py | **Altersstufen-Inhaltspruefung Stufe 1 (6-8 J.): Heuristik korrigiert - 'match/_mc/timeline' standardmaessig nicht mehr Level 1, sondern Level 2. Vorher sahen 6-8-Jaehrige 77 Modi, davon fast alle zu schwer (Motorbauart, Konsolengeneration, roemische Mythologie-Gegenstuecke, Fluss-Muendungslaender...). Jetzt zeigt Stufe 1 nur die 5 verstaendlichen Lehrplan-Spiele (Kontinente, Ozeane, Tiere, Kompass, Jahreszeiten). Schwerere Modi rutschen zu hoeheren Stufen (Stufe 2-4 Pruefung folgt). verify 193/193, 0 THROW.** |
 | **497** | patch_497.py | **Altersstufen-Inhaltspruefung Stufe 2 (8-10 J.): nicht-curriculare Trivia-Kategorien (Games, Autos, Mythologie, Literatur, Brettspiele, Zuege/Bahn-Technik, Konsolen) + Zeitleisten auf Level 3 (Teens) gehoben - via Token-Treffer im Modus-Namen (auto/games/konsole/hw_/myth/lit_/boardgame/zug/bahn/timeline), faengt auch hl_-Varianten. Stufe 2 zeigt jetzt Geografie+Natur (Flaggen, Hauptstaedte, Fluesse, Kontinente, Tiere, Pflanzen, Themenparks, Hunde, Astro/Geo-Vergleiche). verify 193/193, 0 THROW.** |
+| **498** | patch_498.py | **5 neue Level-1 Lernspiele: tiere_anzahl_beine (Tier→Beinanzahl), planet_reihenfolge (Planeten→Sonnennähe), hund_tier_gross (Rasse→Groß/Mittel/Klein), themepark_kontinent (Park→Kontinent), npark_kontinent_finder (Nationalpark→Kontinent). Alle mitwachsend (Stufe 1–2), i18n DE/EN/PL. Level-1-Liste in _modeLevel erweitert.** |
+| **499** | patch_499.py | **4 weitere Level-1 Lernspiele: fluss_kontinent_finder (Fluss→Kontinent), hauptstadt_kontinent (Hauptstadt→Kontinent), wetter_piktogramm (Wetter-Emoji→Typ), tiere_gross_klein (Größenvergleich Tier-Emojis). Kontinentschlüssel-Fix (cont_eu/na/as statt cont_europa). i18n DE/EN/PL. 1009→1013 Modi.** |
+| **500** | patch_500.py | **Kennzeichen-Album für alle Altersstufen: Album-Banner direkt im Kids-Modus Home-Screen (📖-Shortcut), eu_plates in Geo-Playlist, neue Sport-Playlist (Sport & Spiel). i18n DE/EN/PL.** |
+| **501** | patch_501.py | **Klima + Hunde Kids-Modi: klima_zone_emoji (L1 Klimazone), hl_klima_warm (L2 Temperaturvergleich, sicherer ID statt niederschlag), klima_kontinent_zone (L2), hund_groesse_klasse (L2), hund_match_fci_gruppe (L3), hund_rasse_laender (L2). i18n DE/EN/PL. 1013→1019 Modi.** |
+| **502** | patch_502.py | **9 Stufe-1 Lernspiele: Pflanzen(+5): pflanze_obst_gemuese, pflanze_baum_blume, pflanze_habitat, pflanze_farbe, pflanze_essbar. Tiere(+2): tiere_haustier_wild, tiere_wasser_land. Klima(+2): klima_warm_kalt_land, klima_regen_trocken. Alle hardcoded emoji-basiert, mitwachsend, i18n DE/EN/PL. 1019→1028 Modi.** |
+| **503** | patch_503.py | **Sport L1(+4): sport_ball_oder_nicht, sport_teamsport, sport_olympia_sommer, sport_spieler_anzahl. KZ L1(+3): kz_land_einfach, kz_buchstabe_tipp, kz_eu_oder_nicht. Boardgames L2(+5, IDs ohne boardgame-Token): spiel_spieler_anzahl, spiel_kurz_lang, spiel_match_ursprung, spiel_strategie_zufall, spiel_hl_spieler. i18n DE/EN/PL. 1028→1040 Modi.** |
+| **504** | patch_504.py | **Stufe-2-Fixes mit sicheren IDs (kein TEEN-Token): Autos(+5): fahrzeug_match_karosserie/konzern/sitze, hl_fahrzeug_gewicht/kofferraum. Games(+5): digital_match_plattform/genre/f2p/land, hl_digital_downloads. Züge(+5): schienen_match_typ/land/antrieb, hl_schienen_dauer/tempo. Sport L1(+2): sport_sommer_winter_oly, sport_wasser_land_sport. KZ L1(+2): kz_anfangsbuchstabe, kz_nachbarland. 1040→1059 Modi.** |
+| **505** | patch_505.py | **29 neue L1/L2 Modi: Astronomie(+4 L1), Capitals(+4 L1), Hunde(+4 L1), Map-Mode(+4 L1), Ozeane(+4 L1), Pure-Geo(+4 L1), Themeparks(+4 L1), Games(+1 L2: hl_digital_vk). Alle hardcoded emoji/flag-basiert, mitwachsend. i18n DE/EN/PL. 1059→1088 Modi.** |
 
 ---
 
