@@ -400,3 +400,7 @@ Symptom „wischen geht nicht": Am Desktop kein Touch + keine sichtbare Scrollba
 ## Phase 478 — BUGFIX: „Land pinnen"-Spiele crashten (undefinierte Daten-Variablen)
 **Datum:** 2026-06-03
 5 `*_pin_land`-Generatoren referenzierten nicht existierende Daten-Vars → `ReferenceError` → `lq() exhausted` → Spiel startete nicht. Fix: `park_pin_land` THEMEPARKS_DATA→PARKS_DATA · `serie_pin_land` SERIEN_DATA→SERIEN_EXT_DATA · `musik_pin_land` MUSIK_DATA→MUSIK_EXT_DATA · `web_pin_land` WEBKULTUR_DATA→WEB_DATA · `film_pin_land` FILME_DATA→FILME_EXT_DATA. Felder verifiziert. Voll-Audit: keine weiteren undefinierten/ungeschützten `*_DATA`-Referenzen (TECH_DATA ist `typeof`-guarded). verify 191/191, validate 0 Warnings.
+
+## Phase 479 — verify.py-Check (Daten-Variablen) + großes Audit
+**Datum:** 2026-06-03
+`verify.py` Check 20 ergänzt: jede genutzte `*_DATA` muss definiert oder `typeof`-guarded sein (192/192). Großes 9-Dimensionen-Audit (Build, Sicherheit, Runtime-Refs, i18n, Generatoren, Daten, UX, Fairness, Performance) nach Umbau 467–478 — alle grün, keine offenen 🔴/🟠. Bericht: PHASE479_AUDIT.md.

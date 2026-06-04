@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 478 (Stand: Juni 2026)
+**Version:** Phase 479 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.86 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1182,6 +1182,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **476** | patch_476.py | **SW-Cache verschlankt: index.html (byte-identisch mit GeoQuest.html, 6 MB) nicht mehr vorab cachen -> behebt QuotaExceededError beim SW-Install (v.a. Inkognito mit kleinem Storage-Quota). GeoQuest.html bleibt Precache + Offline-Fallback; /play wird zur Laufzeit gecacht. Neuer Cache-Hash invalidiert alten Cache.** |
 | **477** | patch_477.py | **Kategorie-/Recent-Reihen am Desktop scrollbar gemacht: ohne sichtbare Scrollbar + ohne Touch kam man an die angeschnittenen Kacheln nicht ran ('wischen geht nicht'). Neuer onwheel-Handler wandelt vertikales Mausrad in horizontales Scrollen (this.scrollLeft+=deltaY), preventDefault nur solange die Leiste noch scrollen kann -> Seiten-Scroll am Ende frei. cursor:grab als Hinweis. Touch-Wischen unveraendert nativ.** |
 | **478** | patch_478.py | **BUGFIX Runtime-Crash 'Land pinnen': 5 Pin-Generatoren referenzierten nicht existierende Daten-Variablen (ReferenceError -> lq() exhausted -> Spiel startet nicht). Korrigiert: park_pin_land THEMEPARKS_DATA->PARKS_DATA, serie_pin_land SERIEN_DATA->SERIEN_EXT_DATA, musik_pin_land MUSIK_DATA->MUSIK_EXT_DATA, web_pin_land WEBKULTUR_DATA->WEB_DATA, film_pin_land FILME_DATA->FILME_EXT_DATA. Felder verifiziert (park_land/produktionsland/herkunftsland/ursprungsland/drehort_land existieren). Audit: keine weiteren undefinierten/ungeschuetzten *_DATA-Referenzen (TECH_DATA ist typeof-guarded).** |
+| **479** | patch_479.py | **verify.py erweitert (Check 20: undefinierte/ungeschuetzte *_DATA-Referenzen -> faengt Runtime-Crash-Klasse aus Phase 478 ab, jetzt 192/192) + grosses 9-Dimensionen-Audit nach Umbau 467-478. Ergebnis: alle Dimensionen gruen, keine offenen kritischen/mittleren Punkte. Bericht in PHASE479_AUDIT.md. Beobachtungen (niedrig): i18n-Schuld im Einstellungs-Modal (vorbestehend), home_hi-Namensumbruch kosmetisch.** |
 
 ---
 

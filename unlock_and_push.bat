@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 478. BUGFIX Runtime-Crash 'Land pinnen': 5 Pin-Generatoren referenzierten nicht existierende Daten-Variablen (ReferenceError -> lq() exhausted -> Spiel startet nicht). Korrigiert: park_pin_land THEMEPARKS_DATA->PARKS_DATA, serie_pin_land SERIEN_DATA->SERIEN_EXT_DATA, musik_pin_land MUSIK_DATA->MUSIK_EXT_DATA, web_pin_land WEBKULTUR_DATA->WEB_DATA, film_pin_land FILME_DATA->FILME_EXT_DATA. Felder verifiziert (park_land/produktionsland/herkunftsland/ursprungsland/drehort_land existieren). Audit: keine weiteren undefinierten/ungeschuetzten *_DATA-Referenzen (TECH_DATA ist typeof-guarded).. verify: 191/191."
+git commit -m "Content: Phase 479. verify.py erweitert (Check 20: undefinierte/ungeschuetzte *_DATA-Referenzen -> faengt Runtime-Crash-Klasse aus Phase 478 ab, jetzt 192/192) + grosses 9-Dimensionen-Audit nach Umbau 467-478. Ergebnis: alle Dimensionen gruen, keine offenen kritischen/mittleren Punkte. Bericht in PHASE479_AUDIT.md. Beobachtungen (niedrig): i18n-Schuld im Einstellungs-Modal (vorbestehend), home_hi-Namensumbruch kosmetisch.. verify: 192/192."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

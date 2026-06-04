@@ -526,6 +526,17 @@ if "zug_metro_logos" in js:
 else:
     fail("zug_metro_logos fehlt im JS")
 
+# -- 20. Undefinierte *_DATA-Referenzen (Phase 478) -----------
+section("20. Undefinierte Daten-Variablen (Runtime)")
+_used_d = set(re.findall(r'\b([A-Z][A-Z0-9_]*_DATA)\b', js))
+_def_d  = set(re.findall(r'\b([A-Z][A-Z0-9_]*_DATA)\s*=', js))
+_grd_d  = set(re.findall(r'typeof\s+([A-Z][A-Z0-9_]*_DATA)\s*!==', js))
+_miss_d = sorted(u for u in _used_d if u not in _def_d and u not in _grd_d)
+if not _miss_d:
+    ok("Alle " + str(len(_used_d)) + " genutzten *_DATA-Variablen sind definiert oder typeof-guarded")
+else:
+    fail("Undefinierte Daten-Variablen (Runtime-Crash-Gefahr): " + ", ".join(_miss_d))
+
 # =============================================================
 print("\n" + "=" * 58)
 total = len(PASS_LIST) + len(FAIL_LIST)
