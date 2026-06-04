@@ -449,3 +449,7 @@ Neues `smoke_test.js`: lädt `GeoQuest.html` in eine Node-VM mit Browser-Stubs, 
 ## Phase 489 — Lernspiel 4/5: Tiere & Lebensräume
 **Datum:** 2026-06-03
 `tier_lebensraum` (tiere): Tier-Emoji → Lebensraum (`uk_match`, 7 Habitate). Mitwachsend: Stufe 1 = 10 bekannte Tiere, ab Stufe 2 alle 25, international, spracharm. i18n `mt_tier`/`tier_prompt`/`hab_*` de/en/pl. Lehrplan KS1/KS2. verify 193/193, 0 THROW, 1002→1003 Modi.
+
+## Phase 490 — Lernspiel 5/5: Jahreszeiten & Halbkugeln
+**Datum:** 2026-06-03
+`jahreszeit_halbkugel` (klima): Flagge+Land + Monat → Jahreszeit (`uk_match`). Internationaler Twist: Südhalbkugel umgekehrt (NZ Sept=Frühling, Chile Aug=Winter). Mitwachsend: Stufe 1 nur Nordhalbkugel, ab Stufe 2 auch Süd. i18n `mt_jahr`/`jahr_prompt`/`sea_*`/`mon_1..12` de/en/pl. Lehrplan KS2. **Alle 5 Lernspiele fertig.** verify 193/193, 0 THROW, 1003→1004 Modi.

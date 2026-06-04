@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 489. Lernspiel 4/5: Tiere & Lebensraeume (tier_lebensraum, Kategorie tiere). genTierLebensraumQ: Tier-Emoji -> Lebensraum antippen (uk_match, 7 Lebensraeume: Wueste/Ozean/Polar/Regenwald/Savanne/Wald/Gebirge). Mitwachsend: Stufe 1 nur 10 sehr bekannte Tiere, ab Stufe 2 alle 25 (international). Spracharm (Emoji). i18n mt_tier/tier_prompt/hab_* de/en/pl. Lehrplan KS1/KS2 Habitate. verify 193/193, 0 THROW, 1003 Modi.. verify: 193/193."
+git commit -m "Content: Phase 490. Lernspiel 5/5: Jahreszeiten & Halbkugeln (jahreszeit_halbkugel, Kategorie klima). genJahreszeitQ: Flagge+Land + Monat -> welche Jahreszeit? (uk_match, 4 Jahreszeiten). Internationaler Twist: Suedhalbkugel umgekehrt (NZ Sept=Fruehling, Chile Aug=Winter). Mitwachsend: Stufe 1 nur Nordhalbkugel (einfach), ab Stufe 2 auch Suedhalbkugel. i18n mt_jahr/jahr_prompt/sea_*/mon_1..12 de/en/pl. Lehrplan KS2 Halbkugeln. ALLE 5 Lernspiele fertig. verify 193/193, 0 THROW, 1004 Modi.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 489 (Stand: Juni 2026)
+**Version:** Phase 490 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.88 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1193,6 +1193,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **487** | patch_487.py | **Lernspiel 2/5: Kontinente-Finder (kontinent_finder, Kategorie pure_geo). genKontinentFinderQ: Flaggen-Emoji + lokalisierter Laendername -> auf welchem Kontinent? (uk_match, 4 Kontinent-Optionen). Waechst mit Alter: Stufe 1 nur sehr bekannte Laender (kuratierte cc-Liste), ab Stufe 2 alle ~181. Laenderuebergreifend. COUNTRIES-Schema {c,cc,ct,sr} genutzt (ct=Kontinent). i18n mt_kontinent/kontinent_prompt/cont_* de/en/pl. Lehrplan KS1 '7 Kontinente'. Rauchtest fand+fixte Schema-Bug (continent->ct). verify 193/193, 0 THROW, 1001 Modi.** |
 | **488** | patch_488.py | **Lernspiel 3/5: Die 5 Ozeane (ozean_finder, Kategorie ozeane). genOzeanFinderQ: Frage (groesster/tiefster/umgibt Antarktis/Nordpol/bei Indien/zwischen Amerika+Europa) -> Ozean-Name antippen (uk_match). Mitwachsend: Stufe 1 nur 3 einfache Fragen, ab Stufe 2 alle 7. 5 Ozeane Pazifik/Atlantik/Indik/Arktik/Suedpolarmeer. i18n mt_ozean/ocn_*/ocq_* de/en/pl. Lehrplan KS1 '5 Ozeane'. verify 193/193, 0 THROW, 1002 Modi.** |
 | **489** | patch_489.py | **Lernspiel 4/5: Tiere & Lebensraeume (tier_lebensraum, Kategorie tiere). genTierLebensraumQ: Tier-Emoji -> Lebensraum antippen (uk_match, 7 Lebensraeume: Wueste/Ozean/Polar/Regenwald/Savanne/Wald/Gebirge). Mitwachsend: Stufe 1 nur 10 sehr bekannte Tiere, ab Stufe 2 alle 25 (international). Spracharm (Emoji). i18n mt_tier/tier_prompt/hab_* de/en/pl. Lehrplan KS1/KS2 Habitate. verify 193/193, 0 THROW, 1003 Modi.** |
+| **490** | patch_490.py | **Lernspiel 5/5: Jahreszeiten & Halbkugeln (jahreszeit_halbkugel, Kategorie klima). genJahreszeitQ: Flagge+Land + Monat -> welche Jahreszeit? (uk_match, 4 Jahreszeiten). Internationaler Twist: Suedhalbkugel umgekehrt (NZ Sept=Fruehling, Chile Aug=Winter). Mitwachsend: Stufe 1 nur Nordhalbkugel (einfach), ab Stufe 2 auch Suedhalbkugel. i18n mt_jahr/jahr_prompt/sea_*/mon_1..12 de/en/pl. Lehrplan KS2 Halbkugeln. ALLE 5 Lernspiele fertig. verify 193/193, 0 THROW, 1004 Modi.** |
 
 ---
 
