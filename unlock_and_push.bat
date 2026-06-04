@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 475. (1) FIX kaputte vercel.json: war als abgeschnittene 1817-Byte-Version (invalides JSON) committet worden (Sandbox-Mount-Truncation) - haette Vercel-Deploy gebrochen. Sandbox-seitig neu geschrieben, valide (14 Routes, Cache-Control intakt). (2) _goCat robuster: Filter garantiert anwenden + Retry + harter window.scrollTo-Fallback (smooth scrollIntoView scrollte in der PWA evtl. nicht -> Sektion klappte unsichtbar weit unten auf).. verify: 191/191."
+git commit -m "Content: Phase 476. SW-Cache verschlankt: index.html (byte-identisch mit GeoQuest.html, 6 MB) nicht mehr vorab cachen -> behebt QuotaExceededError beim SW-Install (v.a. Inkognito mit kleinem Storage-Quota). GeoQuest.html bleibt Precache + Offline-Fallback; /play wird zur Laufzeit gecacht. Neuer Cache-Hash invalidiert alten Cache.. verify: 191/191."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

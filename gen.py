@@ -18317,7 +18317,9 @@ out = 'GeoQuest.html'
 # ── Phase 238: Generate sw.js (hash-versioned, all data/*.json) ────────────────────
 import hashlib as _hashlib
 _data_files = sorted('./data/' + f for f in _os.listdir('data') if f.endswith('.json'))
-_cache_assets = ['./GeoQuest.html', './index.html', './manifest.json', './icon.svg'] + _data_files
+# Phase 476: index.html NICHT mehr vorab cachen — byte-identisch mit GeoQuest.html
+# (6 MB Duplikat sprengte das Storage-Quota -> QuotaExceededError). /play wird zur Laufzeit gecacht.
+_cache_assets = ['./GeoQuest.html', './manifest.json', './icon.svg'] + _data_files
 # Phase 294+: Hash basiert auf Datei-INHALTEN (nicht nur Namen) → Cache invalidiert bei jeder Änderung
 _hash_parts = []
 for _a in _cache_assets:

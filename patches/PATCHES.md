@@ -388,3 +388,7 @@ Ursache, warum deployte Änderungen „nicht ankamen": `vercel.json` hatte keine
 ## Phase 475 — FIX kaputte vercel.json + _goCat robuster
 **Datum:** 2026-06-03
 (1) Die in 473/474 mit-committete `vercel.json` war die abgeschnittene 1817-B-Sandbox-Version (invalides JSON) → hätte den Vercel-Deploy gebrochen. Sandbox-seitig neu geschrieben (2054 B, valide, 14 Routes, Cache-Control intakt). (2) `_goCat`: garantiert `filterByCategory(k)` + Retry-Loop + harter `window.scrollTo`-Fallback, weil `scrollIntoView({behavior:'smooth'})` in der installierten PWA evtl. nicht scrollte (Sektion klappte unsichtbar weit unten auf = „nichts passiert"). verify 191/191, validate 0 Warnings.
+
+## Phase 476 — SW-Cache verschlankt (QuotaExceededError behoben)
+**Datum:** 2026-06-03
+Der Service Worker cachte `GeoQuest.html` UND das byte-identische `index.html` (2× 6 MB) → sprengte das Storage-Quota (`QuotaExceededError`, v.a. Inkognito), einzelne data/*.json wurden beim Install übersprungen. Fix: `index.html` aus `_cache_assets` entfernt; `GeoQuest.html` bleibt Precache + Offline-Fallback, `/play` wird zur Laufzeit gecacht. Cache-Hash ändert sich → alter Cache wird ersetzt. verify 191/191, validate 0 Warnings.

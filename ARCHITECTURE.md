@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 475 (Stand: Juni 2026)
+**Version:** Phase 476 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.86 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1179,6 +1179,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **473** | patch_473.py | **Onboarding-Tipp korrigiert: 'Oben rechts auf ? tippen' verwies auf das Hilfe-? im Header, das waehrend des Onboardings gar nicht sichtbar ist. Neu formuliert als Hinweis auf SPAETER in der App (de/en/pl). Keine Funktionsaenderung.** |
 | **474** | patch_474.py | **Kategorie-Strips (_renderPlaylistStrip: Empfohlen + Gruppen) liefen rechts hart abgeschnitten raus. Jetzt wie die Zuletzt-gespielt-Leiste: weicher rechter Verlauf (46px, ab 72% deckend), padding-right 40px fuer Anschnitt-Hinweis, scroll-snap fuers Wischen. verify 191/191, validate 0 Warnings.** |
 | **475** | patch_475.py | **(1) FIX kaputte vercel.json: war als abgeschnittene 1817-Byte-Version (invalides JSON) committet worden (Sandbox-Mount-Truncation) - haette Vercel-Deploy gebrochen. Sandbox-seitig neu geschrieben, valide (14 Routes, Cache-Control intakt). (2) _goCat robuster: Filter garantiert anwenden + Retry + harter window.scrollTo-Fallback (smooth scrollIntoView scrollte in der PWA evtl. nicht -> Sektion klappte unsichtbar weit unten auf).** |
+| **476** | patch_476.py | **SW-Cache verschlankt: index.html (byte-identisch mit GeoQuest.html, 6 MB) nicht mehr vorab cachen -> behebt QuotaExceededError beim SW-Install (v.a. Inkognito mit kleinem Storage-Quota). GeoQuest.html bleibt Precache + Offline-Fallback; /play wird zur Laufzeit gecacht. Neuer Cache-Hash invalidiert alten Cache.** |
 
 ---
 
