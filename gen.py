@@ -1311,7 +1311,7 @@ function initMapMarkers() {
 }
 
 /**
- * Extrahiere Country Code aus Kennzeichen-Key (z.B. "DE::CODE" →’ "DE")
+ * Extrahiere Country Code aus Kennzeichen-Key (z.B. "DE::CODE" → "DE")
  */
 function extractCountryFromPlateKey(key) {
   if (!key || typeof key !== 'string') return null;
@@ -1471,7 +1471,7 @@ de:{
   ob_diff_casual_desc:"Gro\u00dfe St\u00e4dte \u2022 12 Sek.",ob_diff_hc_desc:"Alle St\u00e4dte \u2022 8 Sek.",ob_back:"\u2190 Zur\u00fcck",ob_modes_title:"Spielmodi",pq_who:"Wer spielt?",pa_kid:"Kind",pa_teen:"Jugendlich",pa_adult:"Erwachsen",pa_family:"Familie",pq_interests:"Was interessiert dich?",pq_interests_sub:"(mehrere auswählbar)",int_geo:"Geo & Länder",int_natur:"Natur & Tiere",int_mint:"Technik & Forschen",int_pop:"Games & Medien",int_kultur:"Kultur & Geschichte",int_sport:"Sport",pq_time:"Wie viel Zeit hast du gerade?",pt_quick:"2 Min",pt_mid:"10 Min",pt_much:"Viel Zeit",
   ob_modes_sub:"19 Modi, ein Ziel: Die Welt kennenlernen.",ob_more_modes:"\u2026 und 16 weitere Modi",ob_start:"\u{1F680} Los geht's!",ob_have_account:"Ich habe bereits einen Account",ob_register:"Neu hier? Registrieren",
   home_hi:"Hallo, {name} \u{1F44B}",home_guest:"Willkommen, Gast",home_save:"\u{1F510} Fortschritt sichern",home_login_btn:"Anmelden / Registrieren",kids_mode_off:"Kids-Modus",kids_mode_on:"👦 Kids aktiv",pl_foryou:"Empfohlen für dich",pl_geo:"Geo & Karten",pl_mint:"MINT & Technik",pl_nature:"Natur & Tiere",pl_kultur:"Kultur & Wissen",pl_life:"Leben & Lifestyle",home_pvp_sub:"Echtzeit gegen einen Freund spielen",
-  ob_mode1_name:"Stadt →’ Land",ob_mode1_desc:"Land zur Stadt \u00b7 Casual 1k, HC 10k, Survival 30k St\u00e4dte",ob_mode2_name:"EU-Kennzeichen",ob_mode2_desc:"Woher kommt dieses Kennzeichen?",ob_mode3_name:"U-Bahn-Netz",ob_mode3_desc:"Linien und km der Metros.",
+  ob_mode1_name:"Stadt → Land",ob_mode1_desc:"Land zur Stadt \u00b7 Casual 1k, HC 10k, Survival 30k St\u00e4dte",ob_mode2_name:"EU-Kennzeichen",ob_mode2_desc:"Woher kommt dieses Kennzeichen?",ob_mode3_name:"U-Bahn-Netz",ob_mode3_desc:"Linien und km der Metros.",
   language_select:"SPRACHE",
   badge_beta:"Beta",beta_warning:"Spielbar, aber es k\u00f6nnen noch Fehler auftreten.",
   rotate_device:"Bitte drehe dein Ger\u00e4t ins Querformat \u{1F4F1}\u27A1\u{1F5FA}",
@@ -1554,7 +1554,7 @@ en:{
   ob_diff_casual_desc:"Major cities \u2022 12 sec.",ob_diff_hc_desc:"All cities \u2022 8 sec.",ob_back:"\u2190 Back",ob_modes_title:"Game Modes",pq_who:"Who is playing?",pa_kid:"Kid",pa_teen:"Teen",pa_adult:"Adult",pa_family:"Family",pq_interests:"What are you into?",pq_interests_sub:"(pick several)",int_geo:"Geo & Countries",int_natur:"Nature & Animals",int_mint:"Tech & Science",int_pop:"Games & Media",int_kultur:"Culture & History",int_sport:"Sport",pq_time:"How much time do you have?",pt_quick:"2 min",pt_mid:"10 min",pt_much:"Lots",
   ob_modes_sub:"19 modes, one goal: know the world.",ob_more_modes:"\u2026 and 16 more modes",ob_start:"\u{1F680} Let's go!",ob_have_account:"I already have an account",ob_register:"New here? Register",
   home_hi:"Hi, {name} \u{1F44B}",home_guest:"Welcome, Guest",home_save:"\u{1F510} Save progress",home_login_btn:"Login / Register",kids_mode_off:"Kids Mode",kids_mode_on:"👦 Kids active",pl_foryou:"Recommended for you",pl_geo:"Geo & Maps",pl_mint:"STEM & Tech",pl_nature:"Nature & Animals",pl_kultur:"Culture & Knowledge",pl_life:"Life & Lifestyle",home_pvp_sub:"Play in real time against a friend",
-  ob_mode1_name:"City →’ Country",ob_mode1_desc:"Which country does this city belong to?",ob_mode2_name:"EU Licence Plates",ob_mode2_desc:"Where does this number plate come from?",ob_mode3_name:"Metro Networks",ob_mode3_desc:"Lines and km of metro systems.",
+  ob_mode1_name:"City → Country",ob_mode1_desc:"Which country does this city belong to?",ob_mode2_name:"EU Licence Plates",ob_mode2_desc:"Where does this number plate come from?",ob_mode3_name:"Metro Networks",ob_mode3_desc:"Lines and km of metro systems.",
   language_select:"LANGUAGE",
   badge_beta:"Beta",beta_warning:"Playable, but may still contain bugs.",
   rotate_device:"Please rotate your device to landscape mode \u{1F4F1}\u27A1\u{1F5FA}",
@@ -1637,7 +1637,7 @@ pl:{
   ob_diff_casual_desc:"Duże miasta • 12 sek.",ob_diff_hc_desc:"Wszystkie miasta • 8 sek.",ob_back:"→ Wróć",ob_modes_title:"Tryby gry",pq_who:"Kto gra?",pa_kid:"Dziecko",pa_teen:"Nastolatek",pa_adult:"Dorosły",pa_family:"Rodzina",pq_interests:"Co cię interesuje?",pq_interests_sub:"(wybierz kilka)",int_geo:"Geo i kraje",int_natur:"Natura i zwierzęta",int_mint:"Technika i nauka",int_pop:"Gry i media",int_kultur:"Kultura i historia",int_sport:"Sport",pq_time:"Ile masz czasu?",pt_quick:"2 min",pt_mid:"10 min",pt_much:"Dużo",
   ob_modes_sub:"19 trybów, jeden cel: poznać Ś›wiat.",ob_more_modes:"… i 16 kolejnych trybów",ob_start:"\u{1F680} Zaczynamy!",ob_have_account:"Mam już konto",ob_register:"Nowy? Zarejestruj się",
   home_hi:"CzeŚ›ć, {name} \u{1F44B}",home_guest:"Witaj, Gościu",home_save:"\u{1F510} Zapisz postęp",home_login_btn:"Zaloguj / Zarejestruj",kids_mode_off:"Tryb dzieci",kids_mode_on:"👦 Dzieci aktywny",pl_foryou:"Polecane dla Ciebie",pl_geo:"Geo i Mapy",pl_mint:"Nauka i Tech",pl_nature:"Natura i Zwierzęta",pl_kultur:"Kultura i Wiedza",pl_life:"Życie i Styl",home_pvp_sub:"Graj w czasie rzeczywistym z przyjacielem",
-  ob_mode1_name:"Miasto →’ Kraj",ob_mode1_desc:"Do jakiego kraju należy to miasto?",ob_mode2_name:"Tablice UE",ob_mode2_desc:"Skń…d pochodzi ta tablica?",ob_mode3_name:"Sieci metra",ob_mode3_desc:"Linie i km metra.",
+  ob_mode1_name:"Miasto → Kraj",ob_mode1_desc:"Do jakiego kraju należy to miasto?",ob_mode2_name:"Tablice UE",ob_mode2_desc:"Skń…d pochodzi ta tablica?",ob_mode3_name:"Sieci metra",ob_mode3_desc:"Linie i km metra.",
   language_select:"Jń˜ZYK",
   badge_beta:"Beta",beta_warning:"Grywalny, ale mogń… wystń…pić błędy.",
   rotate_device:"Obróć urzń…dzenie poziomo \u{1F4F1}\u27A1\u{1F5FA}",
@@ -1694,7 +1694,7 @@ fr:{
   ob_diff_casual_desc:"Grandes villes • 12 sec.",ob_diff_hc_desc:"Toutes les villes • 8 sec.",ob_back:"→ Retour",ob_modes_title:"Modes de jeu",
   ob_modes_sub:"19 modes, un objectif : connaß®tre le monde.",ob_more_modes:"… et 16 autres modes",ob_start:"\u{1F680} C'est parti !",ob_have_account:"J'ai déjß  un compte",ob_register:"Nouveau ? S'inscrire",
   home_hi:"Salut, {name} \u{1F44B}",home_guest:"Bienvenue, invité",home_save:"\u{1F510} Sauvegarder la progression",home_login_btn:"Connexion / Inscription",home_pvp_sub:"Jouer en temps réel contre un ami",
-  ob_mode1_name:"Ville →’ Pays",ob_mode1_desc:"ß€ quel pays appartient cette ville ?",ob_mode2_name:"Plaques UE",ob_mode2_desc:"D'oß¹ vient cette plaque ?",ob_mode3_name:"Réseaux de métro",ob_mode3_desc:"Lignes et km des métros.",
+  ob_mode1_name:"Ville → Pays",ob_mode1_desc:"ß€ quel pays appartient cette ville ?",ob_mode2_name:"Plaques UE",ob_mode2_desc:"D'oß¹ vient cette plaque ?",ob_mode3_name:"Réseaux de métro",ob_mode3_desc:"Lignes et km des métros.",
   language_select:"LANGUE",
   badge_beta:"B\u00eata",beta_warning:"Jouable, mais peut contenir des bugs.",
   rotate_device:"Veuillez faire pivoter votre appareil \u{1F4F1}\u27A1\u{1F5FA}",
@@ -1751,7 +1751,7 @@ es:{
   ob_diff_casual_desc:"Ciudades grandes • 12 seg.",ob_diff_hc_desc:"Todas las ciudades • 8 seg.",ob_back:"→ Volver",ob_modes_title:"Modos de juego",
   ob_modes_sub:"19 modos, un objetivo: conocer el mundo.",ob_more_modes:"… y 16 modos más",ob_start:"\u{1F680} ¡Vamos!",ob_have_account:"Ya tengo una cuenta",ob_register:"¿Nuevo? Regsístrate",
   home_hi:"Hola, {name} \u{1F44B}",home_guest:"Bienvenido, invitado",home_save:"\u{1F510} Guardar progreso",home_login_btn:"Iniciar sesión / Registrarse",home_pvp_sub:"Jugar en tiempo real contra un amigo",
-  ob_mode1_name:"Ciudad →’ País",ob_mode1_desc:"¿A qué país pertenece esta ciudad?",ob_mode2_name:"Matrículas UE",ob_mode2_desc:"¿De dónde viene esta matrícula?",ob_mode3_name:"Redes de metro",ob_mode3_desc:"Líneas y km de los metros.",
+  ob_mode1_name:"Ciudad → País",ob_mode1_desc:"¿A qué país pertenece esta ciudad?",ob_mode2_name:"Matrículas UE",ob_mode2_desc:"¿De dónde viene esta matrícula?",ob_mode3_name:"Redes de metro",ob_mode3_desc:"Líneas y km de los metros.",
   language_select:"IDIOMA",
   badge_beta:"Beta",beta_warning:"Jugable, pero puede contener errores.",
   rotate_device:"Por favor, gira tu dispositivo al modo horizontal \u{1F4F1}\u27A1\u{1F5FA}",
@@ -1808,7 +1808,7 @@ it:{
   ob_diff_casual_desc:"Cittß  principali • 12 sec.",ob_diff_hc_desc:"Tutte le cittß  • 8 sec.",ob_back:"→ Indietro",ob_modes_title:"Modalitß  di gioco",
   ob_modes_sub:"19 modalitß , un obiettivo: conoscere il mondo.",ob_more_modes:"… e altre 16 modalitß ",ob_start:"\u{1F680} Andiamo!",ob_have_account:"Ho giß  un account",ob_register:"Nuovo? Registrati",
   home_hi:"Ciao, {name} \u{1F44B}",home_guest:"Benvenuto, ospite",home_save:"\u{1F510} Salva i progressi",home_login_btn:"Accedi / Registrati",home_pvp_sub:"Gioca in tempo reale contro un amico",
-  ob_mode1_name:"Cittß  →’ Paese",ob_mode1_desc:"A quale paese appartiene questa cittß ?",ob_mode2_name:"Targhe UE",ob_mode2_desc:"Da dove viene questa targa?",ob_mode3_name:"Reti metro",ob_mode3_desc:"Linee e km delle metropolitane.",
+  ob_mode1_name:"Cittß  → Paese",ob_mode1_desc:"A quale paese appartiene questa cittß ?",ob_mode2_name:"Targhe UE",ob_mode2_desc:"Da dove viene questa targa?",ob_mode3_name:"Reti metro",ob_mode3_desc:"Linee e km delle metropolitane.",
   language_select:"LINGUA",
   badge_beta:"Beta",beta_warning:"Giocabile, ma potrebbe contenere bug.",
   rotate_device:"Ruota il dispositivo in modalit\u00e0 orizzontale \u{1F4F1}\u27A1\u{1F5FA}",
@@ -6031,7 +6031,7 @@ const TIERS=[
 /* SUPABASE */
 let sb=null,sbUser=null,sbProfile=null,sbStamps=new Set();
 /* CURR_REAL, CAPS_POP, RIVERS_REAL populated by loadGameData() */
-/* Helper: country name →’ cc */
+/* Helper: country name → cc */
 function ccFromCountry(name){const c=COUNTRIES.find(x=>x.c===name);return c?c.cc:null;}
 function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://flagcdn.com/w40/${cc}.png" style="height:22px;vertical-align:middle;border-radius:2px" alt="${name}">`:"";}
 
@@ -6044,7 +6044,7 @@ function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://
     if(!('serviceWorker' in navigator)){localStorage.setItem(LS_KEY,SW_VER);return;}
     navigator.serviceWorker.getRegistrations().then(function(regs){
       if(regs.length===0){localStorage.setItem(LS_KEY,SW_VER);return;}
-      /* Alter/zombie SW gefunden →’ nuklearer Reset */
+      /* Alter/zombie SW gefunden → nuklearer Reset */
       console.warn('[GQ] Zombie-SW: killing',regs.length,'registration(s) + wiping caches...');
       /* 1. Korrupte Auth-Tokens löschen */
       try{
@@ -13703,9 +13703,9 @@ const dist1_3=calculateCityDistance(city1,city3);
 const dist1_4=calculateCityDistance(city1,city4);
 
 // Create route options
-const route1={desc:(city1.name||city1.n||'City')+' →’ '+(city2.name||city2.n||'City'),dist:dist1_2,correct:true};
-const route2={desc:(city1.name||city1.n||'City')+' →’ '+(city3.name||city3.n||'City'),dist:dist1_3,correct:false};
-const route3={desc:(city1.name||city1.n||'City')+' →’ '+(city4.name||city4.n||'City'),dist:dist1_4,correct:false};
+const route1={desc:(city1.name||city1.n||'City')+' → '+(city2.name||city2.n||'City'),dist:dist1_2,correct:true};
+const route2={desc:(city1.name||city1.n||'City')+' → '+(city3.name||city3.n||'City'),dist:dist1_3,correct:false};
+const route3={desc:(city1.name||city1.n||'City')+' → '+(city4.name||city4.n||'City'),dist:dist1_4,correct:false};
 
 const routes=sh([route1,route2,route3]);
 const correctIdx=routes.findIndex(r=>r.correct);
@@ -13955,7 +13955,7 @@ function getStreak(){return _gqLoad('gq_streak',0)||0;}
 
 
 function _smartDefaultCountry(){
-  /* Priority: new unified pref →’ old spotter key →’ navigator.language →’ fallback */
+  /* Priority: new unified pref → old spotter key → navigator.language → fallback */
   const saved=localStorage.getItem("geoquest_pref_country")||localStorage.getItem("gq_spotter_country");
   if(saved&&saved!=="all")return saved;
   const lang=(navigator.language||"de-DE").toLowerCase();
@@ -14885,7 +14885,7 @@ if(mode==="slf"&&S.ph==="playing"){
           <button class="${lessCls}" ${pcDis} onclick="answer('less',_secretGameToken)">${t("hl_less")}</button>
         </div>
         ${sel\!==null?`<div class="meta-line">${q.meta||""}</div>`:""}
-        ${sel\!==null?`<button class="btn-p" onclick="nextRound()">Weiter →’</button>`:""}
+        ${sel\!==null?`<button class="btn-p" onclick="nextRound()">Weiter →</button>`:""}
       </div>`;
       app.innerHTML=pcHtml;return;
     }
@@ -15110,7 +15110,7 @@ return`<nav class="bottom-nav">${tabs.map(t=>`<button class="bn-item${S.tab===t.
 
 /* â”€â”€â”€ Phase 43: Kennzeichen-Album â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-/* Country name →’ English for world-110m matching */
+/* Country name → English for world-110m matching */
 const PLATE_COUNTRY_EN={
   "Deutschland":"Germany","Österreich":"Austria","Frankreich":"France",
   "Italien":"Italy","Spanien":"Spain","Polen":"Poland","Tschechien":"Czechia",
@@ -15135,7 +15135,7 @@ function collKey(code,country){return code+"::"+country;}
 function parseCollKey(k){const i=k.indexOf("::");return i<0?{code:k,country:"?"}:{code:k.slice(0,i),country:k.slice(i+2)};}
 function isCollected(code,country){return S.collectedPlates.includes(collKey(code,country));}
 
-/* Migrate old plain-code format →’ code::country */
+/* Migrate old plain-code format → code::country */
 function migrateCollectedPlates(){
   if(\!PLATES_DATA.length)return;
   let changed=false;
@@ -15178,10 +15178,10 @@ function spotterCollect(){
   const code=(S.spotterInput||"").toUpperCase().replace(/\s+/g,"").trim();
   if(\!code){S.spotterMsg="Bitte Kennzeichen eingeben\!";S.spotterOk=null;render();return;}
   const country=S.spotterCountry&&S.spotterCountry\!=="all"?S.spotterCountry:null;
-  /* Phase 104: Fuzzy-Lookup – normalisiere zuerst (0→’O, 1→’I) */
+  /* Phase 104: Fuzzy-Lookup – normalisiere zuerst (0→O, 1→I) */
   const _norm=s=>s.replace(/0/g,'O').replace(/1/g,'I').replace(/Ü/g,'UE').replace(/Ö/g,'OE').replace(/Ä/g,'AE');
   const codeNorm=_norm(code);
-  /* Find matching plates: exact →’ normalisiert →’ prefix */
+  /* Find matching plates: exact → normalisiert → prefix */
   const _match=(c,p)=>p.code===c&&(country===null||p.country===country);
   let candidates=PLATES_DATA.filter(p=>_match(code,p));
   /* Fallback 1: Normalisierung (0→”O, Umlaute) */
@@ -15662,7 +15662,7 @@ function drawAlbumMap(){
   if(\!el||typeof d3==="undefined"||typeof topojson==="undefined"||\!window.WORLD_TOPO)return;
 
   const coll=S.collectedPlates;
-  /* Collected countries (EN) →’ unique codes collected there */
+  /* Collected countries (EN) → unique codes collected there */
   const collByCountryEn={};
   coll.forEach(key=>{
     const {code,country}=parseCollKey(key);
@@ -16595,7 +16595,7 @@ function renderAdModal(){
       <div style="font-size:.8rem;font-weight:700">Werbung</div>
       <div style="font-size:.68rem;margin-top:2px">Hier könnte deine Anzeige stehen</div>
     </div>
-    <button class="btn-p" onclick="closeAd()">Weiter spielen →’</button>
+    <button class="btn-p" onclick="closeAd()">Weiter spielen →</button>
     <button class="btn-g" style="margin-bottom:0;font-size:.76rem;color:#f59e0b;border-color:#f59e0b" onclick="S.payModal=true;closeAd()">👑 Werbung entfernen (Premium)</button>
   </div></div>`;
 }

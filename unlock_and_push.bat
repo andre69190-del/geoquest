@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 494. Onboarding-Alter (auf Nutzerwunsch) + 2 Fixes: (1) Bei Auswahl Kind/Jugendlich erscheint darunter eine Altersstufen-Auswahl (Kind: 6-8/8-10, Jugendlich: 11-13/14-15) -> setzt gq_kids_grade praezise; nur bei Kind/Jugendlich sichtbar, keine Reibung fuer Erwachsene. finishOb nutzt S.obGrade (validiert je Audience). (2) btn_next: ueberfluessiges Hochkomma nach Pfeil in ALLEN Sprachen entfernt (Weiter →' -> Weiter →). (3) Landing: .nav-cta Kontrast gefixt (.nav-links a ueberschrieb color:#fff -> Spezifitaet erhoeht, weisser Text auf gruen). verify 193/193, 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 495. Tippfehler-Bereinigung: ueberfluessiges Hochkomma-Zeichen ’ nach dem Pfeil → auch in Modus-Namen entfernt (z.B. 'Stadt →’ Land' -> 'Stadt → Land'), alle Sprachen. verify 193/193, 0 THROW.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

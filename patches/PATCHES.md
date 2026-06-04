@@ -469,3 +469,7 @@ Regression aus Phase 492: Die App meldet jeden Besucher anonym an (`signInAnonym
 ## Phase 494 — Onboarding-Alter + btn_next-Fix + Landing-Kontrast
 **Datum:** 2026-06-03
 (1) **Alters-Auswahl im Onboarding:** Bei „Kind"/„Jugendlich" erscheint darunter eine Stufen-Auswahl (Kind: 6–8/8–10 · Jugendlich: 11–13/14–15) → setzt `gq_kids_grade` präzise via `S.obGrade`; nur bei Kind/Jugendlich sichtbar (keine Reibung für Erwachsene). `finishOb` validiert die Stufe je Audience. (2) `btn_next`: überflüssiges `’` nach dem Pfeil in allen Sprachen entfernt. (3) **landing.html:** `.nav-cta`-Kontrast gefixt — `.nav-links a` (spezifischer) überschrieb `color:#fff`; jetzt `.nav-links a.nav-cta` → weißer Text auf Grün lesbar. verify 193/193, 0 THROW.
+
+## Phase 495 — Tippfehler: `→’` → `→` global
+**Datum:** 2026-06-03
+Überflüssiges `’` nach dem Pfeil auch in Modus-Namen entfernt (z. B. „Stadt →' Land" → „Stadt → Land"), alle Sprachen. verify 193/193, 0 THROW.
