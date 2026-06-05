@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 513. Test-Suite gehaertet+dokumentiert: ingame_render_test.js (In-Game-Render-Test aller 1088 Modi, 943 OK 0 Render-Fehler) verfeinert - Timeline-Feedback uebersprungen (braucht Drag-Zustand), ans-in-opts nur fuer uk_match mit Klammer-Bereinigung als Info (31 Treffer zur spaeteren Pruefung). Session-Starter um TEST-SUITE-Sektion ergaenzt: verify.py + validate_content.py + node smoke_test.js + node ingame_render_test.js, jeweils mit Sollwerten und Bug-Klassen-Erklaerung.. verify: 193/193."
+git commit -m "Content: Phase 514. LOESBARKEITS-GARANTIE: in lq() sichergestellt, dass bei type:uk_match die richtige Antwort IMMER unter den Optionen ist (sonst wird ein Distraktor durch q.ans ersetzt). Behebt 33 uk_*-Wissensquartett-Modi, deren fixedOpts den korrekten Wert nicht enthielten (z.B. Insektivor/Nektarivor fehlten bei [Omnivor/Herbivor/Karnivor/Frugivor]) -> Frage war unloesbar. Jetzt alle loesbar (verifiziert: roh unloesbar -> nach lq loesbar). HINWEIS: einige Generatoren (z.B. uk_emob_bidirektional) ziehen die Antwort aus einem falschen Datenfeld (Land statt Kategorie) - jetzt loesbar aber inhaltlich schwach, separate Daten-Pruefung empfohlen. verify 193/193, 0 THROW.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

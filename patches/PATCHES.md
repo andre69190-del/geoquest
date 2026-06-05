@@ -505,3 +505,7 @@ In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer
 ## Phase 513 — Test-Suite gehärtet + dokumentiert
 **Datum:** 2026-06-03
 `ingame_render_test.js` verfeinert (Timeline-Feedback übersprungen, `ans-in-opts` nur für `uk_match` mit Klammer-Bereinigung → Info: 31 Treffer). Session-Starter um **TEST-SUITE**-Sektion ergänzt (verify.py + validate_content.py + smoke_test.js + ingame_render_test.js, Sollwerte + Bug-Klassen). 4-Ebenen-Absicherung gegen Struktur-, Generator-, Render- und Anzeigefehler.
+
+## Phase 514 — Lösbarkeits-Garantie (uk_match: ans immer in opts)
+**Datum:** 2026-06-03
+`lq()` stellt jetzt sicher: bei `type:"uk_match"` ist die richtige Antwort IMMER unter den Optionen (sonst wird ein Distraktor durch `q.ans` ersetzt). Behebt 33 `uk_*`-Wissensquartett-Modi, deren `fixedOpts` den korrekten Wert nicht enthielten (z. B. „Insektivor"/„Nektarivor" fehlten) → Frage war **unlösbar**. Verifiziert: roh unlösbar → nach lq lösbar. **Hinweis:** einige Generatoren (z. B. `uk_emob_bidirektional`) ziehen die Antwort aus einem falschen Datenfeld (Land statt Kategorie) → jetzt lösbar, aber inhaltlich schwach (separate Datenprüfung empfohlen). verify 193/193, 0 THROW.

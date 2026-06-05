@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 513 (Stand: Juni 2026)
+**Version:** Phase 514 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.99 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1217,6 +1217,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **511** | patch_511.py | **GROSSER ABSTURZ-FIX (74 Spiele): die parallel ergaenzten einfachen Kinder-Modi gaben type:uk_match mit FALSCHEN Feldnamen zurueck (question/options/correct statt subj/opts/ans) -> Renderer q.subj.replace(undefined) -> App-Absturz beim Spielen. Zentrale Schema-Normalisierung in lq() eingefuegt (question->subj, options->opts, correct->ans, fehlender prompt aus Modus-Titel, fehlende lid generiert, timeline-items label->n). Zusaetzlich Optionen-Render gehaertet (String(o).replace statt o.replace -> numerische Optionen wie FCI-Gruppe 9). In-Game-Render-Test (alle 1088 Modi im Spiel-Screen): 942 OK, 0 echte Fehler. verify 193/193, 0 THROW.** |
 | **512** | patch_512.py | **Admin: Altersstufen-Vorschau-Schalter in Einstellungen, nur sichtbar fuer sbUser.email=andre69190@gmail.com. 6 Buttons: Erwachsen / 1(6-8) / 2(8-10) / 3(11-13) / 4(14-15) / 16+(Boost). Setzt gq_kids_mode+gq_kids_grade(+boost), schliesst Settings -> Home zeigt die jeweilige Stufe. Damit kann der Admin jede Altersstufe separat ansehen. verify 193/193.** |
 | **513** | patch_513.py | **Test-Suite gehaertet+dokumentiert: ingame_render_test.js (In-Game-Render-Test aller 1088 Modi, 943 OK 0 Render-Fehler) verfeinert - Timeline-Feedback uebersprungen (braucht Drag-Zustand), ans-in-opts nur fuer uk_match mit Klammer-Bereinigung als Info (31 Treffer zur spaeteren Pruefung). Session-Starter um TEST-SUITE-Sektion ergaenzt: verify.py + validate_content.py + node smoke_test.js + node ingame_render_test.js, jeweils mit Sollwerten und Bug-Klassen-Erklaerung.** |
+| **514** | patch_514.py | **LOESBARKEITS-GARANTIE: in lq() sichergestellt, dass bei type:uk_match die richtige Antwort IMMER unter den Optionen ist (sonst wird ein Distraktor durch q.ans ersetzt). Behebt 33 uk_*-Wissensquartett-Modi, deren fixedOpts den korrekten Wert nicht enthielten (z.B. Insektivor/Nektarivor fehlten bei [Omnivor/Herbivor/Karnivor/Frugivor]) -> Frage war unloesbar. Jetzt alle loesbar (verifiziert: roh unloesbar -> nach lq loesbar). HINWEIS: einige Generatoren (z.B. uk_emob_bidirektional) ziehen die Antwort aus einem falschen Datenfeld (Land statt Kategorie) - jetzt loesbar aber inhaltlich schwach, separate Daten-Pruefung empfohlen. verify 193/193, 0 THROW.** |
 
 ---
 
