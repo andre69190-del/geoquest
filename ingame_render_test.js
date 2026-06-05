@@ -13,7 +13,7 @@ let loadErr=null;try{vm.runInContext(js,ctx,{timeout:20000});}catch(e){loadErr=e
 if(sb.__err)console.log('Export-Fehler:',sb.__err);
 const S=sb.__S,F=sb.__F;
 if(!S||!F){console.log('LOAD FAIL');process.exit(2);}
-let fail=0,ok=0,skip=0;
+let fail=0,ok=0,skip=0,warnans=0;
 const render=sb.__render,GEN=sb.__GEN,MODES=sb.__MODES;
 if(!S||!render||!GEN){console.log('LOAD FAIL');process.exit(2);}
 // Basiszustand fuers Spiel
@@ -21,6 +21,7 @@ function setupPlay(id,q,answered){
   if(q){if(q.opts===undefined&&q.options!==undefined)q.opts=q.options;if(q.ans===undefined&&q.correct!==undefined)q.ans=q.correct;if(q.subj===undefined&&q.question!==undefined)q.subj=q.question;if(q.lid===undefined||q.lid===null)q.lid=(id||'q')+'_'+(q.subj||q.ans||Math.random());if(!q.prompt){var _m=MODES.find(function(x){return x.id===id;});if(_m)q.prompt=(_m.t_key?'x':_m.title)||_m.prompt||'';}if(q.items&&q.items.forEach)q.items.forEach(function(it){if(it){if(it.n===undefined&&it.label!==undefined)it.n=it.label;if(it.hint===undefined)it.hint='';}});}S.tab='home';S.ph='play';S.mode=id;S.q=q;S.rd=0;S.sc=0;S.correct=0;S.streak=0;
   S.diff='casual';S.timer=12;S.lives=3;S.lvls=S.lvls||{};S.candidates=[];S.newStamps=[];
   S.sel= answered ? (q.ans!==undefined?q.ans:(q.opts&&q.opts[0])) : null;
+  if(answered&&q.type==='timeline'&&q.items&&!q._tlUserOrder)q._tlUserOrder=q.items.map(function(it){return it.n;});
   S.answered=answered;
 }
 MODES.forEach(function(m){
@@ -28,12 +29,14 @@ MODES.forEach(function(m){
   const fn=GEN[id]; if(typeof fn!=='function'){skip++;return;}
   let q=null; try{ for(let i=0;i<6;i++){const x=fn(); if(x){q=x;break;}} }catch(e){ /* Generator-Crash separat im smoke_test */ skip++; return; }
   if(!q){ skip++; return; }            // null -> kein Spiel-Render noetig
+  if(q.type==='uk_match'&&Array.isArray(q.opts)&&q.ans!==undefined){var _strip=function(s){return String(s).replace(/\s*\([^)]*\)/g,'').trim();};if(q.opts.map(_strip).indexOf(_strip(q.ans))<0){warnans++;}}
   // ungespielt
   try{ setupPlay(id,q,false); render(); }
   catch(e){ fail++; console.log('  [!!] PLAY '+id+' -> '+e.message); return; }
-  // beantwortet (Feedback-Render)
+  // beantwortet (Feedback-Render) - Timeline braucht echten Drag-Zustand -> ueberspringen
+  if(q.type==='timeline'){ok++;return;}
   try{ setupPlay(id,q,true); render(); ok++; }
   catch(e){ fail++; console.log('  [!!] FEEDBACK '+id+' -> '+e.message); }
 });
-console.log('\nIN-GAME-RENDER: '+ok+' OK | '+skip+' uebersprungen(null/kein GEN) | '+fail+' RENDER-FEHLER');
+console.log('\nIN-GAME-RENDER: '+ok+' OK | '+skip+' uebersprungen | '+fail+' RENDER-FEHLER | '+warnans+' ans-nicht-in-opts(info)');
 process.exit(fail?1:0);

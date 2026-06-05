@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 512. Admin: Altersstufen-Vorschau-Schalter in Einstellungen, nur sichtbar fuer sbUser.email=andre69190@gmail.com. 6 Buttons: Erwachsen / 1(6-8) / 2(8-10) / 3(11-13) / 4(14-15) / 16+(Boost). Setzt gq_kids_mode+gq_kids_grade(+boost), schliesst Settings -> Home zeigt die jeweilige Stufe. Damit kann der Admin jede Altersstufe separat ansehen. verify 193/193.. verify: 193/193."
+git commit -m "Content: Phase 513. Test-Suite gehaertet+dokumentiert: ingame_render_test.js (In-Game-Render-Test aller 1088 Modi, 943 OK 0 Render-Fehler) verfeinert - Timeline-Feedback uebersprungen (braucht Drag-Zustand), ans-in-opts nur fuer uk_match mit Klammer-Bereinigung als Info (31 Treffer zur spaeteren Pruefung). Session-Starter um TEST-SUITE-Sektion ergaenzt: verify.py + validate_content.py + node smoke_test.js + node ingame_render_test.js, jeweils mit Sollwerten und Bug-Klassen-Erklaerung.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

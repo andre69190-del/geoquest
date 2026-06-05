@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 512):
+Aktueller Stand (Stand: Phase 513):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 1088 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -129,6 +129,19 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 - [ ] MODES-Zahl in gen.py zählen (nicht JSON-Keys!)
 - [ ] post_phase.py mit korrekter Phase-Nummer ausführen
 - [ ] PATCHES.md Eintrag ergänzen
+
+## TEST-SUITE (gegen Fehler & Anzeigefehler) — Phase 511+
+
+Drei Ebenen, die unterschiedliche Bug-Klassen fangen. **Vor jedem Deploy laufen lassen:**
+
+1. `python3 verify.py` — Struktur/Build: undefinierte `*_DATA` (Check 20) & Helfer-Funktionen (Check 21), Dispatch, node --check. Muss **193+/… | 0 failed**.
+2. `python3 validate_content.py` — Daten/JSON. Muss **0 warnings**.
+3. `node smoke_test.js` — **Generator-Laufzeit:** ruft jeden GEN-Modus 6× auf. Muss **0 THROW** (NULL = braucht Live-Daten/Zustand, ok).
+4. `node ingame_render_test.js` — **Render-Laufzeit:** rendert JEDEN Modus im Spiel-Screen (ungespielt + beantwortet) mit echter Normalisierung. Muss **0 RENDER-FEHLER**. Fand z. B. die 74 abstürzenden Kinder-Modi (falsche Feldnamen) und die `type:"match"`-Crashes. Meldet zusätzlich `ans-nicht-in-opts` (info): richtige Antwort evtl. nicht unter den Optionen.
+
+**Warum getrennt:** verify prüft Struktur, smoke_test prüft ob Generatoren *laufen*, ingame_render_test prüft ob das Ergebnis *darstellbar* ist (ohne JS-Crash). Ein Bug rutscht nur durch, wenn er alle drei besteht.
+
+**Offene Test-Ideen:** i18n-Vollständigkeit (jeder genutzte `t()`-Key in de/en/pl vorhanden), die 31 `ans-nicht-in-opts`-Treffer einzeln prüfen, automatischer Lighthouse-Lauf für Performance.
 
 ## ALTERSSTUFEN-KRITERIEN (für neue Spiele) — Phase 496–497
 
@@ -262,7 +275,7 @@ hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
 
 ---
 
-## AKTUELLER PROJEKT-STATUS (Phase 512)
+## AKTUELLER PROJEKT-STATUS (Phase 513)
 
 | Metrik | Wert |
 |--------|------|

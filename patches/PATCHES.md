@@ -501,3 +501,7 @@ Die parallel (Phase 505) ergänzten einfachen Kinder-Modi gaben `type:"uk_match"
 ## Phase 512 — Admin: Altersstufen-Vorschau-Schalter
 **Datum:** 2026-06-03
 In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer Schalter mit 6 Buttons (Erwachsen / 1 · 6–8 / 2 · 8–10 / 3 · 11–13 / 4 · 14–15 / 16+ Boost). Klick setzt `gq_kids_mode`+`gq_kids_grade`(+`gq_kid_boost`), schließt Settings → Home zeigt die gewählte Stufe. Admin kann jede Altersstufe separat ansehen. verify 193/193, 0 THROW.
+
+## Phase 513 — Test-Suite gehärtet + dokumentiert
+**Datum:** 2026-06-03
+`ingame_render_test.js` verfeinert (Timeline-Feedback übersprungen, `ans-in-opts` nur für `uk_match` mit Klammer-Bereinigung → Info: 31 Treffer). Session-Starter um **TEST-SUITE**-Sektion ergänzt (verify.py + validate_content.py + smoke_test.js + ingame_render_test.js, Sollwerte + Bug-Klassen). 4-Ebenen-Absicherung gegen Struktur-, Generator-, Render- und Anzeigefehler.
