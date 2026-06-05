@@ -627,7 +627,7 @@ function genDS100McQ(){
   const others=sh(pool.filter(x=>x.a!==cor.a));
   const disPfx=sh(samePfx).slice(0,2).map(x=>x.a);
   const disRnd=sh(others.filter(x=>!disPfx.includes(x.a))).slice(0,3-disPfx.length).map(x=>x.a);
-  const dis=sh([...disPfx,...disRnd]).slice(0,3);
+  const dis=sh([...new Set([...disPfx,...disRnd])].filter(function(a){return a!==cor.a;})).slice(0,3);
   if(dis.length<3)return null;
   return{
     type:"ds100_mc",
@@ -9045,9 +9045,9 @@ function genNaechsterAirportQ(){
 function genIataReverseQ(){
   if(!AIRPORTS_GEO_DATA||AIRPORTS_GEO_DATA.length<4)return null;
   var cor=AIRPORTS_GEO_DATA[~~(rng()*AIRPORTS_GEO_DATA.length)];
-  var others=sh(AIRPORTS_GEO_DATA.filter(function(a){return a.iata!==cor.iata;})).slice(0,3);
   var ans=cor.city;
-  var dis=others.map(function(a){return a.city;});
+  var dis=[];var _seen=new Set([ans]);var _shuf=sh(AIRPORTS_GEO_DATA.slice());
+  for(var _i=0;_i<_shuf.length;_i++){var _c=_shuf[_i].city;if(_seen.has(_c))continue;_seen.add(_c);dis.push(_c);if(dis.length>=3)break;}
   return{type:'iata_reverse',
     prompt:'Zu welcher Stadt gehört dieser IATA-Code?',
     subj:cor.iata,

@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 517 (Stand: Juni 2026)
+**Version:** Phase 518 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.99 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1221,6 +1221,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **515** | patch_515.py | **Gezielte Reparatur unloesbarer uk_match-Fragen am GENERATOR: _mkMatchQ (emob/gastro/arch/...), genTiereMatchQ und genPflanzenMatchQ nutzen fixedOpts jetzt NUR, wenn die richtige Antwort (correct.c/cor.c) darin enthalten ist; sonst werden Optionen dynamisch aus den ECHTEN Werten DIESES Modus gebaut (gleiche Art wie die Antwort) -> konsistent + loesbar. ans-nicht-in-opts von 33 auf 0 (mehrere Zufallslaeufe). Beispiel: Tempel-Ordnungen Korinthisch unter [Dorisch/Ionisch/Korinthisch/Toskanisch]. Zusammen mit lq()-Inject (Phase 514) doppelt abgesichert. verify 193/193, 0 THROW, 0 Render-Fehler.** |
 | **516** | patch_516.py | **Datenreparatur tiere_match.ernaehrung: 20 vertauschte Eintraege (n=Nahrung/c=Tiername) richtiggestellt (n=Tier, c=Ernaehrungstyp), alle c auf 8 kanonische Typen normalisiert (Karnivor/Herbivor/Omnivor/Frugivor/Aasfresser/Insektivor/Nektarivor/Filtrierer), 2 Dubletten entfernt (80->78), fixedOpts entfernt. genTiereMatchQ-Fallback zieht Distraktoren jetzt NUR aus derselben Kategorie (keine fremden Tiernamen mehr als Optionen). Ergebnis: kohaerente Fragen (Koala->Herbivor), 0 unloesbar ueber 2480 Stichproben. gastro_gewuerzmischungen geprueft = stimmig (X->Herkunft).** |
 | **517** | patch_517.py | **Options-Qualitaet: 4 Jahr-MC-Generatoren (auto/games/hw baujahr, games peak_year) + subway erzeugten doppelte Optionen (z.B. 1999/1999, subway sogar Antwort 12 doppelt), weil Distraktor-Pools nicht dedupliziert wurden. Fix: Pools per Set deduplizieren und Antwort ausschliessen. Neuer Dauertest option_quality_test.js (5. Ebene) findet doppelte/Einzel-Optionen ueber alle MC-Modi. Ergebnis: 0 DUP, 0 SINGLE.** |
+| **518** | patch_518.py | **Options-Dedup vervollstaendigt: genDS100McQ, genCurrRealQ, genIataReverseQ erzeugten sporadisch doppelte Optionen (gleicher DS100-Code / Euro mehrfach / Stadt mit mehreren Flughaefen). Alle drei deduplizieren jetzt per Set und schliessen die Antwort aus. Bekannte 8 Kandidaten: 0/2000 dup. option_quality_test.js gruen.** |
 
 ---
 

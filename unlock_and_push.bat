@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 517. Options-Qualitaet: 4 Jahr-MC-Generatoren (auto/games/hw baujahr, games peak_year) + subway erzeugten doppelte Optionen (z.B. 1999/1999, subway sogar Antwort 12 doppelt), weil Distraktor-Pools nicht dedupliziert wurden. Fix: Pools per Set deduplizieren und Antwort ausschliessen. Neuer Dauertest option_quality_test.js (5. Ebene) findet doppelte/Einzel-Optionen ueber alle MC-Modi. Ergebnis: 0 DUP, 0 SINGLE.. verify: 193/193."
+git commit -m "Content: Phase 518. Options-Dedup vervollstaendigt: genDS100McQ, genCurrRealQ, genIataReverseQ erzeugten sporadisch doppelte Optionen (gleicher DS100-Code / Euro mehrfach / Stadt mit mehreren Flughaefen). Alle drei deduplizieren jetzt per Set und schliessen die Antwort aus. Bekannte 8 Kandidaten: 0/2000 dup. option_quality_test.js gruen.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
