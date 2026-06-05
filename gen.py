@@ -11959,6 +11959,7 @@ function lq(){
   /* Duolingo casual: once normal round exhausted, pull retries */
   if(\!q&&S.diff==="casual"&&S.queueExtra.length>0)q=S.queueExtra.shift();
   if(\!q){S.ph="menu";render();return;}
+  /* Phase 511: Schema-Normalisierung — verhindert Render-Abstuerze bei abweichenden Feldnamen */if(q.opts===undefined&&q.options!==undefined)q.opts=q.options;if(q.ans===undefined&&q.correct!==undefined)q.ans=q.correct;if(q.subj===undefined&&q.question!==undefined)q.subj=q.question;if(q.lid===undefined||q.lid===null){q.lid=(S.mode||'q')+'_'+(q.subj||q.ans||(''+Math.floor(Math.random()*1e6)));}if(!q.prompt){var _qm=(typeof MODES!=='undefined'?MODES:[]).find(function(m){return m.id===S.mode;});if(_qm)q.prompt=(_qm.t_key?t(_qm.t_key):_qm.title)||_qm.prompt||'';}if(q.items&&q.items.forEach)q.items.forEach(function(it){if(it){if(it.n===undefined&&it.label!==undefined)it.n=it.label;if(it.hint===undefined)it.hint='';}});
   S.askedLids.add(q.lid);
   S.q=q;S.tm=dur;S.dur=dur;S.sel=null;S.ok=null;S.clueStep=0;S.rankOrder=[];S.ph="playing";_tlDrag=null;_tlTouchN=null; /* iOS: clear stale touch state */S.qRenderedAt=Date.now()+180; /* allow 180ms buffer for render */;
   if(S.ttsOn)setTimeout(_ttsCurrentQ,350); /* Phase 256: Auto-TTS */;
@@ -15079,7 +15080,7 @@ if(mode==="slf"&&S.ph==="playing"){
         qBody=`<div class="qprompt">${q.prompt}</div><div style="display:flex;justify-content:center;margin:.75rem 0">${_csvg}</div>`;
       }
       { const _isFootball=(q.type==="stadium"||q.type==="jersey"||q.type==="crest");const _isHLBeta=(q.type&&q.type.startsWith('hl_b_'));
-  const btns=(q.opts||[]).map((o,i)=>{let cls="btn-a";const os=o.replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";/* Phase 318: show opp marker only AFTER local has answered */
+  const btns=(q.opts||[]).map((o,i)=>{let cls="btn-a";const os=String(o).replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";/* Phase 318: show opp marker only AFTER local has answered */
 const _omk=(S.mpOpponent&&S.sel!==null&&S.mpOppLid===q.lid&&S.mpOppSel!=null&&o===S.mpOppSel)?`<span class="opp-pick" title="Wahl des Gegners" style="margin-left:5px;font-size:.62rem;font-weight:800;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694</span>`:"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${(_isHLBeta&&HL_BETA_CC[o])?`<img src="https://flagcdn.com/w40/${HL_BETA_CC[o].toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:_isFootball&&String(o).length===2?`<img src="https://flagcdn.com/w40/${String(o).toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:""}${esc(q.type==="map_ivr"?o:_isHLBeta?(displayCountry(HL_BETA_CC[o])||o):_isFootball?(displayCountry(String(o))||String(o)):displayCountry(o))}${mk}${_omk}</button>`;}).join("");
       const _twoOpts=q.opts&&q.opts.length===2?' two-opts':'';
       answerHtml=`<div class="answers${_twoOpts}">${btns}</div>`;

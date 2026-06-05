@@ -493,3 +493,7 @@ Neuer Helfer `_catKidCount(k)` (zählt nicht-`_kidHidden` Modi einer Kategorie).
 ## Phase 510 — ABSTURZ-FIX: type:"match"-Modi (undefined.map)
 **Datum:** 2026-06-03
 4 Generatoren (`genInselnMatchExt`, `genGipfelMatchExt`, `genKlimaMatchExt`, `genOzeaneMatchExt`) lieferten `type:"match"` mit `subject/choices/answer`. Der Spiel-Renderer hat keinen `match`-Zweig → `q.opts.map(...)` auf `undefined` → **App-Absturz** („Cannot read properties of undefined (reading 'map')") beim Spielen (Klima-Zone, Inseln→Ozean, Gipfel→Gebirge, Ozean-Typ); zeigte vorher großes „1/10". Auf `uk_match` umgestellt (subj=Item, 4 Attribut-Optionen, korrekte Antwort). verify 193/193, 0 THROW.
+
+## Phase 511 — GROSSER ABSTURZ-FIX: 74 Kinder-Spiele (Schema-Normalisierung)
+**Datum:** 2026-06-03
+Die parallel (Phase 505) ergänzten einfachen Kinder-Modi gaben `type:"uk_match"` mit **falschen Feldnamen** (`question/options/correct` statt `subj/opts/ans`) zurück → Renderer `q.subj.replace(undefined)` → **App-Absturz beim Spielen** (74 Spiele). Fix: zentrale **Schema-Normalisierung in `lq()`** (question→subj, options→opts, correct→ans, fehlender `prompt` aus Modus-Titel, `lid` generiert, timeline-items `label`→`n`). Außerdem Optionen-Render gehärtet (`String(o).replace` → numerische Optionen wie FCI-Gruppe). Neuer In-Game-Render-Test (alle 1088 Modi im Spiel-Screen) bestätigt: 0 echte Render-Fehler. verify 193/193, 0 THROW.

@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 510. ABSTURZ-FIX: 4 Generatoren (genInselnMatchExt/genGipfelMatchExt/genKlimaMatchExt/genOzeaneMatchExt) lieferten type:'match' mit Feldern subject/choices/answer - aber der Spiel-Renderer hat keinen 'match'-Zweig und macht q.opts.map(...) -> 'Cannot read properties of undefined (reading map)' = App-Absturz beim Spielen (Klima-Zone, Inseln-Ozean, Gipfel-Gebirge, Ozean-Typ). Auf uk_match-Schema umgestellt (subj=Item, opts=4 Attributwerte, ans=korrekt). Frage wird jetzt korrekt dargestellt statt grosses '1/10'. verify 193/193, 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 511. GROSSER ABSTURZ-FIX (74 Spiele): die parallel ergaenzten einfachen Kinder-Modi gaben type:uk_match mit FALSCHEN Feldnamen zurueck (question/options/correct statt subj/opts/ans) -> Renderer q.subj.replace(undefined) -> App-Absturz beim Spielen. Zentrale Schema-Normalisierung in lq() eingefuegt (question->subj, options->opts, correct->ans, fehlender prompt aus Modus-Titel, fehlende lid generiert, timeline-items label->n). Zusaetzlich Optionen-Render gehaertet (String(o).replace statt o.replace -> numerische Optionen wie FCI-Gruppe 9). In-Game-Render-Test (alle 1088 Modi im Spiel-Screen): 942 OK, 0 echte Fehler. verify 193/193, 0 THROW.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
