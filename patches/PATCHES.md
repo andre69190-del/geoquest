@@ -513,3 +513,7 @@ In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer
 ## Phase 515 — Gezielte Reparatur: unlösbare uk_match-Fragen am Generator
 **Datum:** 2026-06-03
 `_mkMatchQ` (emob/gastro/arch/…), `genTiereMatchQ`, `genPflanzenMatchQ`: `fixedOpts` wird nur noch verwendet, wenn die richtige Antwort (`cor.c`) enthalten ist; sonst Optionen **dynamisch aus den echten Werten dieses Modus** (gleiche Art wie die Antwort) → konsistent + lösbar. `ans-nicht-in-opts` 33 → **0** (mehrere Zufallsläufe). Zusammen mit der `lq()`-Garantie (Phase 514) doppelt abgesichert. verify 193/193, 0 THROW, 0 Render-Fehler.
+
+## Phase 516 — Datenreparatur: tiere_match.ernaehrung + genTiereMatchQ-Distraktoren
+**Datum:** 2026-06-03
+20 vertauschte Einträge (n=Nahrung/c=Tiername) richtiggestellt → n=Tier, c=Ernährungstyp; alle `c` auf 8 kanonische Typen normalisiert; 2 Dubletten entfernt (80→78); `fixedOpts` entfernt. `genTiereMatchQ` baut Distraktoren jetzt **nur aus derselben Kategorie** (keine fremden Tiernamen mehr als Optionen). Ergebnis: kohärent („Koala → Herbivor"), 0 unlösbar über 2480 Stichproben. `gastro_gewuerzmischungen` geprüft = stimmig.

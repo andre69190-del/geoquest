@@ -976,12 +976,6 @@
   },
   "ernaehrung": {
     "prompt": "Welchem Ernaehrungstyp gehoert dieses Tier an?",
-    "fixedOpts": [
-      "Karnivor",
-      "Herbivor",
-      "Omnivor",
-      "Frugivor"
-    ],
     "items": [
       {
         "n": "Loewe",
@@ -1064,84 +1058,76 @@
         "c": "Frugivor"
       },
       {
-        "n": "Bambus (99% der Nahrung)",
-        "c": "Großer Panda"
+        "n": "Großer Panda",
+        "c": "Herbivor"
       },
       {
-        "n": "Blätter, Früchte, Rinde",
-        "c": "Gorilla"
+        "n": "Gorilla",
+        "c": "Herbivor"
       },
       {
-        "n": "Ausschließlich Nektar + Pollen",
-        "c": "Biene"
+        "n": "Biene",
+        "c": "Nektarivor"
       },
       {
-        "n": "Blut (Hämatophagie)",
-        "c": "Vampirfledermaus"
+        "n": "Vampirfledermaus",
+        "c": "Karnivor"
       },
       {
-        "n": "Nur Fleisch (Raubtier)",
-        "c": "Orca / Killerwal"
+        "n": "Orca / Killerwal",
+        "c": "Karnivor"
       },
       {
-        "n": "Plankton + Krill (Filterfressen)",
-        "c": "Bartenwal"
+        "n": "Bartenwal",
+        "c": "Filtrierer"
       },
       {
-        "n": "Aas + Knochen",
-        "c": "Beingeier"
+        "n": "Beingeier",
+        "c": "Aasfresser"
       },
       {
-        "n": "Insekten + kleine Reptilien",
-        "c": "Chamäleon"
+        "n": "Chamäleon",
+        "c": "Insektivor"
       },
       {
-        "n": "Fisch + Tintenfisch",
-        "c": "Pinguin"
+        "n": "Pinguin",
+        "c": "Karnivor"
       },
       {
-        "n": "Krill allein (Milliarden Krebstiere)",
-        "c": "Blauwal"
+        "n": "Blauwal",
+        "c": "Filtrierer"
       },
       {
-        "n": "Früchte, Insekten, kleine Wirbeltiere",
-        "c": "Schimpanse"
+        "n": "Seekuh / Dugong",
+        "c": "Herbivor"
       },
       {
-        "n": "Eukalyptusblätter (fast ausschließlich)",
-        "c": "Koala"
+        "n": "Specht",
+        "c": "Insektivor"
       },
       {
-        "n": "Seegras (Seegrasfluss)",
-        "c": "Seekuh / Dugong"
+        "n": "Haussperling",
+        "c": "Omnivor"
       },
       {
-        "n": "Insekten (unter Baumrinde)",
-        "c": "Specht"
+        "n": "Seeotter",
+        "c": "Karnivor"
       },
       {
-        "n": "Körnerfresser (Samen + Früchte)",
-        "c": "Haussperling"
+        "n": "Hauskatze (Wildform)",
+        "c": "Karnivor"
       },
       {
-        "n": "Muscheln, Seeigel, Algen",
-        "c": "Seeotter"
+        "n": "Breitmaulnashorn",
+        "c": "Herbivor"
       },
       {
-        "n": "Ratten + Mäuse (obligater Carnivore)",
-        "c": "Hauskatze (Wildform)"
+        "n": "Bussard",
+        "c": "Karnivor"
       },
       {
-        "n": "Zuckerrohr + Früchte",
-        "c": "Breitmaulnashorn"
-      },
-      {
-        "n": "Kleinsäuger + Vögel + Reptilien",
-        "c": "Bussard"
-      },
-      {
-        "n": "Totholz (Zelluloseabbau)",
-        "c": "Termite"
+        "n": "Termite",
+        "c": "Herbivor"
       },
       {
         "n": "Kiwi",
@@ -1149,11 +1135,11 @@
       },
       {
         "n": "Panda (Riesenpanda)",
-        "c": "Herbivor (Bambus-Spezialist)"
+        "c": "Herbivor"
       },
       {
         "n": "Hyäne",
-        "c": "Aasfresser + Karnivor"
+        "c": "Aasfresser"
       },
       {
         "n": "Geier",
@@ -1161,15 +1147,15 @@
       },
       {
         "n": "Flamingo",
-        "c": "Filtrierer (Algen, Krebse)"
+        "c": "Filtrierer"
       },
       {
         "n": "Wal (Blauwal)",
-        "c": "Filtrierer (Krill)"
+        "c": "Filtrierer"
       },
       {
         "n": "Seestern",
-        "c": "Omnivor / Karnivor"
+        "c": "Omnivor"
       },
       {
         "n": "Oktopus",
@@ -1177,7 +1163,7 @@
       },
       {
         "n": "Biber",
-        "c": "Herbivor (Holz, Rinde)"
+        "c": "Herbivor"
       },
       {
         "n": "Pandabär",
@@ -1185,7 +1171,7 @@
       },
       {
         "n": "Gorilla (Westlicher Flachland)",
-        "c": "Herbivor / Frungivor"
+        "c": "Frugivor"
       },
       {
         "n": "Braunbär (Ursus arctos)",
@@ -1201,23 +1187,23 @@
       },
       {
         "n": "Nilpferd (Hippopotamus amphibius)",
-        "c": "Herbivor (Gras)"
+        "c": "Herbivor"
       },
       {
         "n": "Giraffe (Giraffa camelopardalis)",
-        "c": "Herbivor (Blätter/Zweige)"
+        "c": "Herbivor"
       },
       {
         "n": "Koala (Phascolarctos cinereus)",
-        "c": "Herbivor (Eukalyptus)"
+        "c": "Herbivor"
       },
       {
         "n": "Riesenameisenbär (Myrmecophaga tridactyla)",
-        "c": "Insektivor (Ameisen/Termiten)"
+        "c": "Insektivor"
       },
       {
         "n": "Gürteltier (Dasypus novemcinctus)",
-        "c": "Omnivor / Insektivor"
+        "c": "Insektivor"
       },
       {
         "n": "Kolibri (Trochilidae, allgemein)",
@@ -1229,43 +1215,43 @@
       },
       {
         "n": "Flamingo (Phoenicopterus roseus)",
-        "c": "Filtrierer (Algen/Kleinkrebse)"
+        "c": "Filtrierer"
       },
       {
         "n": "Mantarochen (Mobula birostris)",
-        "c": "Filtrierer (Plankton/Krill)"
+        "c": "Filtrierer"
       },
       {
         "n": "Grauwal (Eschrichtius robustus)",
-        "c": "Benthos-Filtrierer (Sediment)"
+        "c": "Filtrierer"
       },
       {
         "n": "Storch (Ciconia ciconia)",
-        "c": "Karnivor (Frösche/Mäuse/Fische)"
+        "c": "Karnivor"
       },
       {
         "n": "Seehund (Phoca vitulina)",
-        "c": "Karnivor (Fische/Tintenfische)"
+        "c": "Karnivor"
       },
       {
         "n": "Seeotter (Enhydra lutris)",
-        "c": "Karnivor (Meeresfrüchte/Seeigel)"
+        "c": "Karnivor"
       },
       {
         "n": "Pelikan (Pelecanus onocrotalus)",
-        "c": "Karnivor (Fische)"
+        "c": "Karnivor"
       },
       {
         "n": "Kabeljau (Gadus morhua)",
-        "c": "Karnivor (Fische/Krebse)"
+        "c": "Karnivor"
       },
       {
         "n": "Nilnilbarsch (Lates niloticus)",
-        "c": "Karnivor (Apex-Fisch)"
+        "c": "Karnivor"
       },
       {
         "n": "Tintenfisch (Loligo vulgaris)",
-        "c": "Karnivor (Fische/Krebse)"
+        "c": "Karnivor"
       },
       {
         "n": "Schnecke (Helix pomatia)",
@@ -1277,15 +1263,15 @@
       },
       {
         "n": "Elefant (Asiatisch)",
-        "c": "Herbivor (Rinde/Gras/Früchte)"
+        "c": "Herbivor"
       },
       {
         "n": "Jaguar (Panthera onca)",
-        "c": "Karnivor (Apex)"
+        "c": "Karnivor"
       },
       {
         "n": "Fischotter (Lutra lutra)",
-        "c": "Karnivor (Fische)"
+        "c": "Karnivor"
       },
       {
         "n": "Waschbär (Procyon lotor)",
@@ -1297,7 +1283,7 @@
       },
       {
         "n": "Flughund (Pteropus vampyrus)",
-        "c": "Frungivor"
+        "c": "Frugivor"
       },
       {
         "n": "Nasenbär (Nasua nasua)",

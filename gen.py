@@ -9385,23 +9385,9 @@ function genTiereMatchQ(cat){
     /* Fix-Optionen nur wenn die richtige Antwort enthalten ist */
     opts=sh(cfg.fixedOpts.slice());
   }else{
-    /* Build distractor pool from ALL tiere match categories */
-    var pool=[];
-    var keys=Object.keys(TIER_MATCH_DATA);
-    for(var _ki=0;_ki<keys.length;_ki++){
-      var _k=keys[_ki];
-      var _kItems=(TIER_MATCH_DATA[_k].items||[]);
-      for(var _ii=0;_ii<_kItems.length;_ii++){
-        var _c=_kItems[_ii].c;
-        if(_c&&_c!==cor.c)pool.push(_c);
-      }
-    }
-    var unique=[...new Set(pool)];
-    var dis=_rfilt(unique,3);
-    if(dis.length<3){
-      var sameCat=items.filter(function(x){return x.c!==cor.c;}).map(function(x){return x.c;});
-      dis=_rfilt([...new Set(sameCat)],3);
-    }
+    /* Distraktoren NUR aus derselben Kategorie -> gleiche Art wie die Antwort */
+    var sameCat=items.filter(function(x){return x.c!==cor.c;}).map(function(x){return x.c;});
+    var dis=_rfilt([...new Set(sameCat)],3);
     opts=sh([cor.c].concat(dis.slice(0,3)));
   }
   var prompt=_tc(cfg.prompt||"Welches Tier ist das?");
