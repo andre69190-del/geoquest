@@ -497,3 +497,7 @@ Neuer Helfer `_catKidCount(k)` (zählt nicht-`_kidHidden` Modi einer Kategorie).
 ## Phase 511 — GROSSER ABSTURZ-FIX: 74 Kinder-Spiele (Schema-Normalisierung)
 **Datum:** 2026-06-03
 Die parallel (Phase 505) ergänzten einfachen Kinder-Modi gaben `type:"uk_match"` mit **falschen Feldnamen** (`question/options/correct` statt `subj/opts/ans`) zurück → Renderer `q.subj.replace(undefined)` → **App-Absturz beim Spielen** (74 Spiele). Fix: zentrale **Schema-Normalisierung in `lq()`** (question→subj, options→opts, correct→ans, fehlender `prompt` aus Modus-Titel, `lid` generiert, timeline-items `label`→`n`). Außerdem Optionen-Render gehärtet (`String(o).replace` → numerische Optionen wie FCI-Gruppe). Neuer In-Game-Render-Test (alle 1088 Modi im Spiel-Screen) bestätigt: 0 echte Render-Fehler. verify 193/193, 0 THROW.
+
+## Phase 512 — Admin: Altersstufen-Vorschau-Schalter
+**Datum:** 2026-06-03
+In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer Schalter mit 6 Buttons (Erwachsen / 1 · 6–8 / 2 · 8–10 / 3 · 11–13 / 4 · 14–15 / 16+ Boost). Klick setzt `gq_kids_mode`+`gq_kids_grade`(+`gq_kid_boost`), schließt Settings → Home zeigt die gewählte Stufe. Admin kann jede Altersstufe separat ansehen. verify 193/193, 0 THROW.

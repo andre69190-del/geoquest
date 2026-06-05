@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 511. GROSSER ABSTURZ-FIX (74 Spiele): die parallel ergaenzten einfachen Kinder-Modi gaben type:uk_match mit FALSCHEN Feldnamen zurueck (question/options/correct statt subj/opts/ans) -> Renderer q.subj.replace(undefined) -> App-Absturz beim Spielen. Zentrale Schema-Normalisierung in lq() eingefuegt (question->subj, options->opts, correct->ans, fehlender prompt aus Modus-Titel, fehlende lid generiert, timeline-items label->n). Zusaetzlich Optionen-Render gehaertet (String(o).replace statt o.replace -> numerische Optionen wie FCI-Gruppe 9). In-Game-Render-Test (alle 1088 Modi im Spiel-Screen): 942 OK, 0 echte Fehler. verify 193/193, 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 512. Admin: Altersstufen-Vorschau-Schalter in Einstellungen, nur sichtbar fuer sbUser.email=andre69190@gmail.com. 6 Buttons: Erwachsen / 1(6-8) / 2(8-10) / 3(11-13) / 4(14-15) / 16+(Boost). Setzt gq_kids_mode+gq_kids_grade(+boost), schliesst Settings -> Home zeigt die jeweilige Stufe. Damit kann der Admin jede Altersstufe separat ansehen. verify 193/193.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

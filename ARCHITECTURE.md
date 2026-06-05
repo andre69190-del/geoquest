@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 511 (Stand: Juni 2026)
+**Version:** Phase 512 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.99 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1215,6 +1215,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **509** | patch_509.py | **Hochstufen-System (cleveren Kindern, nicht streng nach Alter): _kidLevelMax nutzt jetzt gq_kid_boost (effektive Stufe = Basis+Boost). Kind-Knopf '🚀 Schwerere Fragen' am Spielende (nur Kinder-Modus, bei >=8/10 richtig, solange Cap nicht erreicht) erhoeht Boost um 1. Cap: Basis-Stufe <3 -> max 4 (nie 16+); Basis-Stufe >=3 (11-13/14-15) -> bis 5 (16+) erreichbar, AUSSER gq_block_adult gesetzt. Eltern-Schalter in Einstellungen '16+ ab Stufe 11-13 zulassen' (PIN-gesichert via pinMode adultblock, falls PIN gesetzt) + Schwierigkeit-Reset. Grade-Wechsel setzt Boost zurueck. i18n de/en/pl. verify 193/193, 0 THROW.** |
 | **510** | patch_510.py | **ABSTURZ-FIX: 4 Generatoren (genInselnMatchExt/genGipfelMatchExt/genKlimaMatchExt/genOzeaneMatchExt) lieferten type:'match' mit Feldern subject/choices/answer - aber der Spiel-Renderer hat keinen 'match'-Zweig und macht q.opts.map(...) -> 'Cannot read properties of undefined (reading map)' = App-Absturz beim Spielen (Klima-Zone, Inseln-Ozean, Gipfel-Gebirge, Ozean-Typ). Auf uk_match-Schema umgestellt (subj=Item, opts=4 Attributwerte, ans=korrekt). Frage wird jetzt korrekt dargestellt statt grosses '1/10'. verify 193/193, 0 THROW.** |
 | **511** | patch_511.py | **GROSSER ABSTURZ-FIX (74 Spiele): die parallel ergaenzten einfachen Kinder-Modi gaben type:uk_match mit FALSCHEN Feldnamen zurueck (question/options/correct statt subj/opts/ans) -> Renderer q.subj.replace(undefined) -> App-Absturz beim Spielen. Zentrale Schema-Normalisierung in lq() eingefuegt (question->subj, options->opts, correct->ans, fehlender prompt aus Modus-Titel, fehlende lid generiert, timeline-items label->n). Zusaetzlich Optionen-Render gehaertet (String(o).replace statt o.replace -> numerische Optionen wie FCI-Gruppe 9). In-Game-Render-Test (alle 1088 Modi im Spiel-Screen): 942 OK, 0 echte Fehler. verify 193/193, 0 THROW.** |
+| **512** | patch_512.py | **Admin: Altersstufen-Vorschau-Schalter in Einstellungen, nur sichtbar fuer sbUser.email=andre69190@gmail.com. 6 Buttons: Erwachsen / 1(6-8) / 2(8-10) / 3(11-13) / 4(14-15) / 16+(Boost). Setzt gq_kids_mode+gq_kids_grade(+boost), schliesst Settings -> Home zeigt die jeweilige Stufe. Damit kann der Admin jede Altersstufe separat ansehen. verify 193/193.** |
 
 ---
 
