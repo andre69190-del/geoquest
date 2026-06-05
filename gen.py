@@ -4269,8 +4269,9 @@ function genCurrRealQ(){
   const idx=~~(rng()*_crSrc.length);
   const cor=_crSrc[idx];
   /* Show only currency name+ISO – NOT country name (would give away the answer) */
-  const dis=sh(CURR_REAL.filter((_,i)=>i!==idx)).slice(0,3).map(x=>x.n+" ("+x.iso+")");
   const ans=cor.n+" ("+cor.iso+")";
+  const _seen=new Set([ans]);const dis=[];
+  for(const _x of sh(CURR_REAL.slice())){const _s=_x.n+" ("+_x.iso+")";if(_seen.has(_s))continue;_seen.add(_s);dis.push(_s);if(dis.length>=3)break;}
   return{type:"curr_real",prompt:t("q_curr_real"),subj:displayCountry(ccFromCountry(cor.c))||cor.c,ans,opts:sh([ans,...dis]),meta:cor.n,lid:cor.c,cc:ccFromCountry(cor.c)};
 }
 function genPopCompareQ(){
