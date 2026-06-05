@@ -517,3 +517,7 @@ In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer
 ## Phase 516 — Datenreparatur: tiere_match.ernaehrung + genTiereMatchQ-Distraktoren
 **Datum:** 2026-06-03
 20 vertauschte Einträge (n=Nahrung/c=Tiername) richtiggestellt → n=Tier, c=Ernährungstyp; alle `c` auf 8 kanonische Typen normalisiert; 2 Dubletten entfernt (80→78); `fixedOpts` entfernt. `genTiereMatchQ` baut Distraktoren jetzt **nur aus derselben Kategorie** (keine fremden Tiernamen mehr als Optionen). Ergebnis: kohärent („Koala → Herbivor"), 0 unlösbar über 2480 Stichproben. `gastro_gewuerzmischungen` geprüft = stimmig.
+
+## Phase 517 — Options-Qualität: doppelte Optionen behoben + Dauertest
+**Datum:** 2026-06-03
+4 Jahr-MC-Generatoren (`genAutoBaujahrMC`/`genGamesBaujahrMC`/`genHWBaujahrMC`/`genGamesPeakYearMC`) + `genSubwayQ` zeigten **doppelte Optionen** (z. B. `1999/1999`; subway sogar die Antwort `12` doppelt), weil die Distraktor-Pools nicht dedupliziert wurden. Fix: Pool per `Set` deduplizieren und die Antwort ausschließen. Neuer Dauertest **`option_quality_test.js`** (5. Test-Ebene) prüft alle MC-Modi auf doppelte/einzelne Optionen. Ergebnis: **0 DUP, 0 SINGLE**.

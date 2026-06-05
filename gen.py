@@ -6843,7 +6843,7 @@ function genSubwayQ(){
   const ansVal=t===0?cor.km:cor.lines;
   const prompt=t===0?"Wie lang ist das U-Bahn-Netz in \u2026 (km)?":"Wie viele U-Bahn-Linien hat \u2026?";
   const suffix=t===0?" km":" Linien";
-  return{type:"subway",prompt,subj:cor.city,ans:String(ansVal),opts:sh([String(ansVal),...dis3.map(String)]),meta:cor.country+" \u00b7 "+suffix.trim(),lid:cor.city,cc:cor.cc};
+  return{type:"subway",prompt,subj:cor.city,ans:String(ansVal),opts:sh([...new Set([String(ansVal),...dis3.map(String)])]),meta:cor.country+" \u00b7 "+suffix.trim(),lid:cor.city,cc:cor.cc};
 }
 function genFlagselQ(){
   let pool=_rfilt(COUNTRIES.filter(x=>x.cc\!==S.lid),4); if(pool.length<4) pool=COUNTRIES.filter(x=>x.cc\!==S.lid); if(pool.length<4) return null;
@@ -9619,7 +9619,7 @@ function genGamesBaujahrMC(){
   var allYears=keys.map(function(n){return _GE[n].release;});
   var pool=allYears.filter(function(y){var d=Math.abs(y-correct);return d>=2&&d<=20;});
   if(pool.length<3)pool=allYears.filter(function(y){return y!==correct;}).map(function(v){return{v:v,r:rng()}}).sort(function(a,b){return a.r-b.r}).map(function(o){return o.v});
-  var p=pool.slice();
+  var p=[...new Set(pool)].filter(function(y){return y!==correct;});
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var opts=[correct].concat(p.slice(0,3));
   for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
@@ -9640,7 +9640,7 @@ function genHWBaujahrMC(){
   var allYears=keys.map(function(n){return _HW[n].year;});
   var pool=allYears.filter(function(y){var d=Math.abs(y-correct);return d>=2&&d<=15;});
   if(pool.length<3)pool=allYears.filter(function(y){return y!==correct;}).map(function(v){return{v:v,r:rng()}}).sort(function(a,b){return a.r-b.r}).map(function(o){return o.v});
-  var p=pool.slice();
+  var p=[...new Set(pool)].filter(function(y){return y!==correct;});
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var opts=[correct].concat(p.slice(0,3));
   for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
@@ -9712,7 +9712,7 @@ function genGamesPeakYearMC(){
   var allYears=keys.map(function(n){return _GE[n].peak_year;});
   var pool=allYears.filter(function(y){var d=Math.abs(y-correct);return d>=2&&d<=15;});
   if(pool.length<3)pool=allYears.filter(function(y){return y!==correct;}).map(function(v){return{v:v,r:rng()}}).sort(function(a,b){return a.r-b.r}).map(function(o){return o.v});
-  var p=pool.slice();
+  var p=[...new Set(pool)].filter(function(y){return y!==correct;});
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var opts=[correct].concat(p.slice(0,3));
   for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
@@ -9889,7 +9889,7 @@ function genAutoBaujahrMC(){
   if(pool.length<3){
     pool=allYears.filter(function(y){return y!==correct;}).map(function(v){return{v:v,r:rng()}}).sort(function(a,b){return a.r-b.r}).map(function(o){return o.v});
   }
-  var p=pool.slice();
+  var p=[...new Set(pool)].filter(function(y){return y!==correct;});
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var dis=p.slice(0,3);
   var opts=[correct].concat(dis);

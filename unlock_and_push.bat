@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 516. Datenreparatur tiere_match.ernaehrung: 20 vertauschte Eintraege (n=Nahrung/c=Tiername) richtiggestellt (n=Tier, c=Ernaehrungstyp), alle c auf 8 kanonische Typen normalisiert (Karnivor/Herbivor/Omnivor/Frugivor/Aasfresser/Insektivor/Nektarivor/Filtrierer), 2 Dubletten entfernt (80->78), fixedOpts entfernt. genTiereMatchQ-Fallback zieht Distraktoren jetzt NUR aus derselben Kategorie (keine fremden Tiernamen mehr als Optionen). Ergebnis: kohaerente Fragen (Koala->Herbivor), 0 unloesbar ueber 2480 Stichproben. gastro_gewuerzmischungen geprueft = stimmig (X->Herkunft).. verify: 193/193."
+git commit -m "Content: Phase 517. Options-Qualitaet: 4 Jahr-MC-Generatoren (auto/games/hw baujahr, games peak_year) + subway erzeugten doppelte Optionen (z.B. 1999/1999, subway sogar Antwort 12 doppelt), weil Distraktor-Pools nicht dedupliziert wurden. Fix: Pools per Set deduplizieren und Antwort ausschliessen. Neuer Dauertest option_quality_test.js (5. Ebene) findet doppelte/Einzel-Optionen ueber alle MC-Modi. Ergebnis: 0 DUP, 0 SINGLE.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
