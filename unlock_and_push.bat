@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 509. Hochstufen-System (cleveren Kindern, nicht streng nach Alter): _kidLevelMax nutzt jetzt gq_kid_boost (effektive Stufe = Basis+Boost). Kind-Knopf '🚀 Schwerere Fragen' am Spielende (nur Kinder-Modus, bei >=8/10 richtig, solange Cap nicht erreicht) erhoeht Boost um 1. Cap: Basis-Stufe <3 -> max 4 (nie 16+); Basis-Stufe >=3 (11-13/14-15) -> bis 5 (16+) erreichbar, AUSSER gq_block_adult gesetzt. Eltern-Schalter in Einstellungen '16+ ab Stufe 11-13 zulassen' (PIN-gesichert via pinMode adultblock, falls PIN gesetzt) + Schwierigkeit-Reset. Grade-Wechsel setzt Boost zurueck. i18n de/en/pl. verify 193/193, 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 510. ABSTURZ-FIX: 4 Generatoren (genInselnMatchExt/genGipfelMatchExt/genKlimaMatchExt/genOzeaneMatchExt) lieferten type:'match' mit Feldern subject/choices/answer - aber der Spiel-Renderer hat keinen 'match'-Zweig und macht q.opts.map(...) -> 'Cannot read properties of undefined (reading map)' = App-Absturz beim Spielen (Klima-Zone, Inseln-Ozean, Gipfel-Gebirge, Ozean-Typ). Auf uk_match-Schema umgestellt (subj=Item, opts=4 Attributwerte, ans=korrekt). Frage wird jetzt korrekt dargestellt statt grosses '1/10'. verify 193/193, 0 THROW.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

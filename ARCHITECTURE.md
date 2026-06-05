@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 509 (Stand: Juni 2026)
+**Version:** Phase 510 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 5.99 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1213,6 +1213,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **507** | patch_507.py | **Spielübersicht: neue Spalte 'Altersstufen' zeigt farbige Badges (1=6-8J grün, 2=8-10J blau, 3=11-13J lila, 4=14-15J orange) pro Modus. _mode_level vollständig mit gen.py synchronisiert (L1-Hardcode-Liste, TEEN/HID-Tokens, HARD-Keywords Level 5). _grade_badges() berechnet Sichtbarkeit je Alterskategorie. generate_spieluebersicht.py aktualisiert.** |
 | **508** | patch_508.py | **UX: Leere Kategorien im Kinder-Modus pro Stufe ausblenden. Neuer Helfer _catKidCount(k) zaehlt sichtbare (nicht _kidHidden) Modi einer Kategorie; _CAT_ORDER-Kinderfilter blendet Kategorien mit 0 Modi fuer die aktuelle Stufe aus. Ergebnis: Stufe 1 zeigt 14 statt 24 Kategorien (keine leeren wie Inseln/Gipfel/Autos/Games), Stufe 2 zeigt 22, Stufe 3/4 alle 24. Kein Kind tippt mehr auf eine leere Kategorie. verify 193/193, 0 THROW, 1088 Modi.** |
 | **509** | patch_509.py | **Hochstufen-System (cleveren Kindern, nicht streng nach Alter): _kidLevelMax nutzt jetzt gq_kid_boost (effektive Stufe = Basis+Boost). Kind-Knopf '🚀 Schwerere Fragen' am Spielende (nur Kinder-Modus, bei >=8/10 richtig, solange Cap nicht erreicht) erhoeht Boost um 1. Cap: Basis-Stufe <3 -> max 4 (nie 16+); Basis-Stufe >=3 (11-13/14-15) -> bis 5 (16+) erreichbar, AUSSER gq_block_adult gesetzt. Eltern-Schalter in Einstellungen '16+ ab Stufe 11-13 zulassen' (PIN-gesichert via pinMode adultblock, falls PIN gesetzt) + Schwierigkeit-Reset. Grade-Wechsel setzt Boost zurueck. i18n de/en/pl. verify 193/193, 0 THROW.** |
+| **510** | patch_510.py | **ABSTURZ-FIX: 4 Generatoren (genInselnMatchExt/genGipfelMatchExt/genKlimaMatchExt/genOzeaneMatchExt) lieferten type:'match' mit Feldern subject/choices/answer - aber der Spiel-Renderer hat keinen 'match'-Zweig und macht q.opts.map(...) -> 'Cannot read properties of undefined (reading map)' = App-Absturz beim Spielen (Klima-Zone, Inseln-Ozean, Gipfel-Gebirge, Ozean-Typ). Auf uk_match-Schema umgestellt (subj=Item, opts=4 Attributwerte, ans=korrekt). Frage wird jetzt korrekt dargestellt statt grosses '1/10'. verify 193/193, 0 THROW.** |
 
 ---
 

@@ -489,3 +489,7 @@ Neuer Helfer `_catKidCount(k)` (zählt nicht-`_kidHidden` Modi einer Kategorie).
 ## Phase 509 — Hochstufen-System für clevere Kinder (nicht streng nach Alter)
 **Datum:** 2026-06-03
 `_kidLevelMax` = Basis-Stufe + `gq_kid_boost` (gedeckelt). Kind-Knopf „🚀 Schwerere Fragen" am Spielende (Kinder-Modus, ≥8/10, solange Cap nicht erreicht) erhöht Boost +1. **Cap:** Basis <3 → max 4 (nie 16+); Basis ≥3 (11–15) → bis 5 (16+) erreichbar, AUSSER `gq_block_adult` gesetzt. Eltern-Schalter „16+ ab Stufe 11–13 zulassen" (PIN-gesichert via `pinMode='adultblock'`) + Schwierigkeit-Reset in Einstellungen. Grade-Wechsel resettet Boost. i18n de/en/pl. verify 193/193, 0 THROW.
+
+## Phase 510 — ABSTURZ-FIX: type:"match"-Modi (undefined.map)
+**Datum:** 2026-06-03
+4 Generatoren (`genInselnMatchExt`, `genGipfelMatchExt`, `genKlimaMatchExt`, `genOzeaneMatchExt`) lieferten `type:"match"` mit `subject/choices/answer`. Der Spiel-Renderer hat keinen `match`-Zweig → `q.opts.map(...)` auf `undefined` → **App-Absturz** („Cannot read properties of undefined (reading 'map')") beim Spielen (Klima-Zone, Inseln→Ozean, Gipfel→Gebirge, Ozean-Typ); zeigte vorher großes „1/10". Auf `uk_match` umgestellt (subj=Item, 4 Attribut-Optionen, korrekte Antwort). verify 193/193, 0 THROW.
