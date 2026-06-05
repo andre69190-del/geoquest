@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 514. LOESBARKEITS-GARANTIE: in lq() sichergestellt, dass bei type:uk_match die richtige Antwort IMMER unter den Optionen ist (sonst wird ein Distraktor durch q.ans ersetzt). Behebt 33 uk_*-Wissensquartett-Modi, deren fixedOpts den korrekten Wert nicht enthielten (z.B. Insektivor/Nektarivor fehlten bei [Omnivor/Herbivor/Karnivor/Frugivor]) -> Frage war unloesbar. Jetzt alle loesbar (verifiziert: roh unloesbar -> nach lq loesbar). HINWEIS: einige Generatoren (z.B. uk_emob_bidirektional) ziehen die Antwort aus einem falschen Datenfeld (Land statt Kategorie) - jetzt loesbar aber inhaltlich schwach, separate Daten-Pruefung empfohlen. verify 193/193, 0 THROW.. verify: 193/193."
+git commit -m "Content: Phase 515. Gezielte Reparatur unloesbarer uk_match-Fragen am GENERATOR: _mkMatchQ (emob/gastro/arch/...), genTiereMatchQ und genPflanzenMatchQ nutzen fixedOpts jetzt NUR, wenn die richtige Antwort (correct.c/cor.c) darin enthalten ist; sonst werden Optionen dynamisch aus den ECHTEN Werten DIESES Modus gebaut (gleiche Art wie die Antwort) -> konsistent + loesbar. ans-nicht-in-opts von 33 auf 0 (mehrere Zufallslaeufe). Beispiel: Tempel-Ordnungen Korinthisch unter [Dorisch/Ionisch/Korinthisch/Toskanisch]. Zusammen mit lq()-Inject (Phase 514) doppelt abgesichert. verify 193/193, 0 THROW, 0 Render-Fehler.. verify: 193/193."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

@@ -9381,8 +9381,8 @@ function genTiereMatchQ(cat){
   var cor=items[~~(rng()*items.length)];
   if(!cor||!cor.n||!cor.c)return null;
   var opts;
-  if(cfg.fixedOpts){
-    /* Ernaehrungstypen: always show all 4 fixed categories */
+  if(cfg.fixedOpts&&cfg.fixedOpts.indexOf(cor.c)>=0){
+    /* Fix-Optionen nur wenn die richtige Antwort enthalten ist */
     opts=sh(cfg.fixedOpts.slice());
   }else{
     /* Build distractor pool from ALL tiere match categories */
@@ -9483,7 +9483,7 @@ function _mkMatchQ(DATA){
       :~~(rng()*items.length);
     var correct=items[idx];
     var opts;
-    if(d.fixedOpts){
+    if(d.fixedOpts&&d.fixedOpts.indexOf(correct.c)>=0){
       opts=d.fixedOpts.slice();
     } else {
       var pool=items.map(function(x){return x.c;}).filter(function(c){return c!==correct.c;});
@@ -10290,8 +10290,10 @@ function genPflanzenMatchQ(cat){
   var cor=items[~~(rng()*items.length)];
   if(!cor||!cor.n||!cor.c)return null;
   var opts;
-  if(cfg.fixedOpts){
+  if(cfg.fixedOpts&&cfg.fixedOpts.indexOf(cor.c)>=0){
     opts=sh(cfg.fixedOpts.slice());
+  }else if(cfg.fixedOpts){
+    var _ipp=items.filter(function(x){return x.c!==cor.c;}).map(function(x){return x.c;});opts=sh([cor.c].concat(_rfilt([...new Set(_ipp)],3).slice(0,3)));
   }else if(cfg.yearMode){
     var sameCat=items.filter(function(x){return x.c!==cor.c;}).map(function(x){return x.c;});
     var uniq=[...new Set(sameCat)];

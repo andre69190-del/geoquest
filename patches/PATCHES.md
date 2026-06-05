@@ -509,3 +509,7 @@ In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer
 ## Phase 514 — Lösbarkeits-Garantie (uk_match: ans immer in opts)
 **Datum:** 2026-06-03
 `lq()` stellt jetzt sicher: bei `type:"uk_match"` ist die richtige Antwort IMMER unter den Optionen (sonst wird ein Distraktor durch `q.ans` ersetzt). Behebt 33 `uk_*`-Wissensquartett-Modi, deren `fixedOpts` den korrekten Wert nicht enthielten (z. B. „Insektivor"/„Nektarivor" fehlten) → Frage war **unlösbar**. Verifiziert: roh unlösbar → nach lq lösbar. **Hinweis:** einige Generatoren (z. B. `uk_emob_bidirektional`) ziehen die Antwort aus einem falschen Datenfeld (Land statt Kategorie) → jetzt lösbar, aber inhaltlich schwach (separate Datenprüfung empfohlen). verify 193/193, 0 THROW.
+
+## Phase 515 — Gezielte Reparatur: unlösbare uk_match-Fragen am Generator
+**Datum:** 2026-06-03
+`_mkMatchQ` (emob/gastro/arch/…), `genTiereMatchQ`, `genPflanzenMatchQ`: `fixedOpts` wird nur noch verwendet, wenn die richtige Antwort (`cor.c`) enthalten ist; sonst Optionen **dynamisch aus den echten Werten dieses Modus** (gleiche Art wie die Antwort) → konsistent + lösbar. `ans-nicht-in-opts` 33 → **0** (mehrere Zufallsläufe). Zusammen mit der `lq()`-Garantie (Phase 514) doppelt abgesichert. verify 193/193, 0 THROW, 0 Render-Fehler.
