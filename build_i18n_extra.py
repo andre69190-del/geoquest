@@ -658,3 +658,14 @@ _json.dump({"en":en2,"pl":pl2},open('data/i18n_extra.json','w',encoding='utf-8')
 _still2=[s for s in union if s not in T]
 print("Endgueltig fehlend:",len(_still2),_still2)
 print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
+
+# --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
+EXTRA_UI = {
+ "Zeit abgelaufen – kein Pin gesetzt": ("Time's up – no pin placed", "Czas minął – nie postawiono pinezki"),
+}
+T.update(EXTRA_UI)
+keys = list(union) + [k for k in EXTRA_UI if k not in union]
+en3 = {s: T[s][0] for s in keys if s in T}
+pl3 = {s: T[s][1] for s in keys if s in T}
+_json.dump({"en": en3, "pl": pl3}, open('data/i18n_extra.json','w',encoding='utf-8'), ensure_ascii=False, indent=1)
+print("i18n_extra.json final: en=%d pl=%d" % (len(en3), len(pl3)))

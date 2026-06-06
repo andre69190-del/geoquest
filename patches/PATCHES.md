@@ -533,3 +533,7 @@ Der neue `contrast_check.py` deckte auf: im **Dunkel-Theme** blieb `--qcard:#fff
 ## Phase 522 — Service-Worker-Precache verschlankt (App-Shell statt alles)
 **Datum:** 2026-06-03
 Beim Install wird nur noch die **App-Shell** (`GeoQuest.html`/`manifest`/`icon`, ~6.1 MB) vorab gecacht; alle `data/*.json` werden vom bestehenden Fetch-Handler **bei Bedarf zur Laufzeit** gecacht (`cache.put`). Hash bleibt über ALLE Assets (inkl. Daten) → `CACHE_NAME` bumpt bei Datenänderung, alte Runtime-Caches werden in `activate` gelöscht (kein veraltetes Offline-Datum). SW-Precache **10.1 → 6.1 MB** (Quota-Risiko weg). verify-Check 12 angepasst (Shell + Runtime-Cache statt „alle Daten im Precache"). `perf_check.py` 0 WARN.
+
+## Phase 523 — uk_pin Feedback-Bug (0 km fälschlich falsch)
+**Datum:** 2026-06-03
+Bei Zeitablauf wurde eine Pin-Frage über das generische `answer(null)` beantwortet (`S.sel="__t"`), `airportPinDist` blieb ungesetzt → Anzeige „✗ 0 km entfernt" (widersprüchlich, 0 km wäre perfekt). Fix: Pin-Feedback prüft `S.sel==='coord'` (echter Pin gesetzt); sonst Meldung „Zeit abgelaufen – kein Pin gesetzt" (DE/EN/PL). `build_i18n_extra.py` um `EXTRA_UI` erweitert.

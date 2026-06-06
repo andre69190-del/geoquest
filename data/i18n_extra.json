@@ -703,7 +703,8 @@
   "Ordne die Himmelskörper nach Entdeckungsjahr!": "Sort the celestial bodies by discovery year!",
   "Ordne die Technologien nach Release-Jahr!": "Sort the technologies by release year!",
   "Erfassen": "Capture",
-  "Gesammelte Waggons": "Collected cars"
+  "Gesammelte Waggons": "Collected cars",
+  "Zeit abgelaufen – kein Pin gesetzt": "Time's up – no pin placed"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1409,6 +1410,7 @@
   "Ordne die Himmelskörper nach Entdeckungsjahr!": "Uporządkuj ciała niebieskie według roku odkrycia!",
   "Ordne die Technologien nach Release-Jahr!": "Uporządkuj technologie według roku premiery!",
   "Erfassen": "Zarejestruj",
-  "Gesammelte Waggons": "Zebrane wagony"
+  "Gesammelte Waggons": "Zebrane wagony",
+  "Zeit abgelaufen – kein Pin gesetzt": "Czas minął – nie postawiono pinezki"
  }
 }

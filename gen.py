@@ -14944,7 +14944,9 @@ if(mode==="slf"&&S.ph==="playing"){
   if(q.type==="airport_pin"||q.type==="uk_pin"){
     const apDist=S.airportPinDist||0;
     const apPts=S.airportPinPts||0;
+    const apPlaced=(S.sel==="coord");
     const apFb=sel===null?""
+      :!apPlaced?`<div class="fb ng">\u23F1 ${_tc("Zeit abgelaufen \u2013 kein Pin gesetzt")}</div>`
       :S.ok?`<div class="fb ok">\u2713 ${apDist} km entfernt · +${apPts} Pkt.</div>`
       :`<div class="fb ng">\u2717 ${apDist} km entfernt${apPts>0?" · +"+apPts+" Pkt.":""}</div>`;
     app.innerHTML=`<div class="scr map-scr">
