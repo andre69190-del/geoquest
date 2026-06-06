@@ -19626,10 +19626,14 @@ with open(out, 'w', encoding='utf-8') as _f_swv:
     _f_swv.write(HTML)
 with open('index.html', 'w', encoding='utf-8') as _f_swv:
     _f_swv.write(HTML)
-_assets_js = ',\n  '.join("'" + a + "'" for a in _cache_assets)
+# Phase 522: Nur App-Shell vorab cachen (Install schlank); data/*.json werden vom
+# Fetch-Handler bei Bedarf zur Laufzeit gecacht. Hash bleibt ueber ALLE Assets
+# (inkl. Daten) -> CACHE_NAME bumpt bei Datenaenderung, alte Runtime-Caches werden geloescht.
+_precache_assets = ['./GeoQuest.html', './manifest.json', './icon.svg']
+_assets_js = ',\n  '.join("'" + a + "'" for a in _precache_assets)
 _sw_content = (
     "const CACHE_NAME = '" + _cache_name + "';\n"
-    "/* Phase 238: full offline cache — auto-versioned from asset hash */\n"
+    "/* Phase 238/522: App-Shell-Precache (auto-versioned); Daten lazy via fetch-Handler */\n"
     "const ASSETS = [\n  " + _assets_js + "\n];\n\n"
     "self.addEventListener('install', function(e) {\n"
     "  e.waitUntil(\n"
@@ -19680,7 +19684,7 @@ _sw_content = (
 )
 with open('sw.js', 'w', encoding='utf-8') as _sw_f:
     _sw_f.write(_sw_content)
-print('Written: sw.js (cache=' + _cache_name + ', ' + str(len(_data_files)) + ' data files)')
+print('Written: sw.js (cache=' + _cache_name + ', precache=' + str(len(_precache_assets)) + ' Shell, ' + str(len(_data_files)) + ' Daten lazy)')
 
 # ── Phase 238: Generate manifest.json (synced theme_color + SVG icon) ──────────────
 import json as _json_m

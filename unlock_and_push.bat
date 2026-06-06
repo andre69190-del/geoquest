@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 521. Kontrast-Fix Dunkel-Theme: --qcard war auch im Dark Mode weiss (#fff) -> Quizkarten-Text (var(--text)=#f1f5f9) faktisch unsichtbar (1.10:1). Gefixt: --qcard:#1e293b + --text3:#8a96ab (heller). Zwei neue Dauertests: contrast_check.py (WCAG AA fuer Text-auf-Flaeche, beide Themes) und perf_check.py (HTML-/SW-Precache-Groesse). Kontrast 0 FAIL, perf 0 FAIL (1 WARN: SW-Precache ~10MB). Damit 8 Test-Ebenen.. verify: 194/194."
+git commit -m "Content: Phase 522. SW-Precache verschlankt: nur noch App-Shell (GeoQuest.html/manifest/icon, ~6.1MB) wird beim Install vorab gecacht; alle data/*.json werden vom bestehenden Fetch-Handler bei Bedarf zur Laufzeit gecacht (cache.put). Hash bleibt ueber ALLE Assets inkl. Daten -> CACHE_NAME bumpt bei Datenaenderung, alte Runtime-Caches werden in activate geloescht. SW-Precache 10.1MB -> 6.1MB (Quota-Risiko weg). verify-Check 12 angepasst (Shell+Runtime-Cache statt 'alle Daten im Precache'). perf_check 0 WARN. 195/195.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

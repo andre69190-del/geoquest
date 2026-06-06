@@ -529,3 +529,7 @@ In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer
 ## Phase 521 — Kontrast-Fix Dunkel-Theme + Kontrast-/Performance-Tests
 **Datum:** 2026-06-03
 Der neue `contrast_check.py` deckte auf: im **Dunkel-Theme** blieb `--qcard:#fff` (weiß) bei `--text:#f1f5f9` → Quizkarten-Text faktisch unsichtbar (**1.10:1**). Fix: `--qcard:#1e293b`, `--text3:#8a96ab` (heller). Zwei neue Dauertests: **`contrast_check.py`** (WCAG AA für Text-auf-Fläche, Hell+Dunkel) und **`perf_check.py`** (HTML-/SW-Precache-Größe). Kontrast 0 FAIL, perf 0 FAIL (1 WARN: SW-Precache ~10 MB). Test-Suite jetzt **8 Ebenen**.
+
+## Phase 522 — Service-Worker-Precache verschlankt (App-Shell statt alles)
+**Datum:** 2026-06-03
+Beim Install wird nur noch die **App-Shell** (`GeoQuest.html`/`manifest`/`icon`, ~6.1 MB) vorab gecacht; alle `data/*.json` werden vom bestehenden Fetch-Handler **bei Bedarf zur Laufzeit** gecacht (`cache.put`). Hash bleibt über ALLE Assets (inkl. Daten) → `CACHE_NAME` bumpt bei Datenänderung, alte Runtime-Caches werden in `activate` gelöscht (kein veraltetes Offline-Datum). SW-Precache **10.1 → 6.1 MB** (Quota-Risiko weg). verify-Check 12 angepasst (Shell + Runtime-Cache statt „alle Daten im Precache"). `perf_check.py` 0 WARN.

@@ -204,12 +204,17 @@ else:
         fail("sw.js: CACHE_NAME hash-version pattern missing")
     else:
         ok("sw.js: CACHE_NAME hash-version present")
-    data_json_files = sorted(f for f in os.listdir(DATA_DIR) if f.endswith('.json'))
-    missing_in_sw = [f for f in data_json_files if "./data/" + f not in sw]
-    if missing_in_sw:
-        fail("sw.js: " + str(len(missing_in_sw)) + " data files missing from ASSETS: " + str(missing_in_sw[:3]))
+    # Phase 522: App-Shell wird vorab gecacht; data/*.json lazy via fetch-Handler.
+    shell = ["./GeoQuest.html", "./manifest.json", "./icon.svg"]
+    missing_shell = [a for a in shell if a not in sw]
+    if missing_shell:
+        fail("sw.js: App-Shell fehlt im Precache: " + str(missing_shell))
     else:
-        ok("sw.js: all " + str(len(data_json_files)) + " data/*.json in ASSETS (" + str(sw_size) + " bytes)")
+        ok("sw.js: App-Shell im Precache (" + str(sw_size) + " bytes)")
+    if "cache.put" not in sw:
+        fail("sw.js: Runtime-Cache (cache.put) fehlt — Daten offline nicht verfuegbar")
+    else:
+        ok("sw.js: Runtime-Cache (cache.put) fuer Daten vorhanden")
     if 'Promise.allSettled' not in sw:
         fail("sw.js: Promise.allSettled missing — install could abort atomically")
     else:

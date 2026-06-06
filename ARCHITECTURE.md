@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 521 (Stand: Juni 2026)
+**Version:** Phase 522 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1225,6 +1225,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **519** | patch_519.py | **i18n-Vollstaendigkeit: 704 bisher unuebersetzte, tatsaechlich genutzte Prompt-Strings nach EN+PL uebersetzt (data/i18n_extra.json), per Object.assign in _CONTENT_I18N gemergt (gen.py laedt + PLACEHOLDER_I18N_EXTRA). build_i18n_extra.py erzeugt die Datei reproduzierbar (inkl. Auto-Template fuer 'Bilde Woerter aus X!'). Luecke en/pl: 0 (vorher 702/704). Neuer Dauertest i18n_test.js (6. Ebene): jeder genutzte _tc/_tcc-String + MODES.prompt muss in en UND pl existieren. verify 194/194, validate 0 Warnungen, 0 Render-/Options-Fehler.** |
 | **520** | patch_520.py | **Kosmetik lange Optionen: .opt-btn line-height:1.25 (kompaktere mehrzeilige Buttons) + Media-Query max-width:360px (kleinere Schrift fuer .opt-btn/.btn-a). KEIN Datenkuerzen — Texte brachen schon sicher um (word-break/overflow-wrap/hyphens vorhanden, kein Clipping). 37 Modi mit Option>42 Zeichen betroffen, jetzt sauberer auf schmalen Screens.** |
 | **521** | patch_521.py | **Kontrast-Fix Dunkel-Theme: --qcard war auch im Dark Mode weiss (#fff) -> Quizkarten-Text (var(--text)=#f1f5f9) faktisch unsichtbar (1.10:1). Gefixt: --qcard:#1e293b + --text3:#8a96ab (heller). Zwei neue Dauertests: contrast_check.py (WCAG AA fuer Text-auf-Flaeche, beide Themes) und perf_check.py (HTML-/SW-Precache-Groesse). Kontrast 0 FAIL, perf 0 FAIL (1 WARN: SW-Precache ~10MB). Damit 8 Test-Ebenen.** |
+| **522** | patch_522.py | **SW-Precache verschlankt: nur noch App-Shell (GeoQuest.html/manifest/icon, ~6.1MB) wird beim Install vorab gecacht; alle data/*.json werden vom bestehenden Fetch-Handler bei Bedarf zur Laufzeit gecacht (cache.put). Hash bleibt ueber ALLE Assets inkl. Daten -> CACHE_NAME bumpt bei Datenaenderung, alte Runtime-Caches werden in activate geloescht. SW-Precache 10.1MB -> 6.1MB (Quota-Risiko weg). verify-Check 12 angepasst (Shell+Runtime-Cache statt 'alle Daten im Precache'). perf_check 0 WARN. 195/195.** |
 
 ---
 
