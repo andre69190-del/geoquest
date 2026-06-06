@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 520. Kosmetik lange Optionen: .opt-btn line-height:1.25 (kompaktere mehrzeilige Buttons) + Media-Query max-width:360px (kleinere Schrift fuer .opt-btn/.btn-a). KEIN Datenkuerzen — Texte brachen schon sicher um (word-break/overflow-wrap/hyphens vorhanden, kein Clipping). 37 Modi mit Option>42 Zeichen betroffen, jetzt sauberer auf schmalen Screens.. verify: 194/194."
+git commit -m "Content: Phase 521. Kontrast-Fix Dunkel-Theme: --qcard war auch im Dark Mode weiss (#fff) -> Quizkarten-Text (var(--text)=#f1f5f9) faktisch unsichtbar (1.10:1). Gefixt: --qcard:#1e293b + --text3:#8a96ab (heller). Zwei neue Dauertests: contrast_check.py (WCAG AA fuer Text-auf-Flaeche, beide Themes) und perf_check.py (HTML-/SW-Precache-Groesse). Kontrast 0 FAIL, perf 0 FAIL (1 WARN: SW-Precache ~10MB). Damit 8 Test-Ebenen.. verify: 194/194."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

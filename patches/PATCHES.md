@@ -525,3 +525,7 @@ In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer
 ## Phase 519 — i18n-Vollständigkeit (EN/PL) + Dauertest
 **Datum:** 2026-06-03
 704 bisher unübersetzte, tatsächlich genutzte Prompt-Strings nach **EN + PL** übersetzt (`data/i18n_extra.json`), zur Laufzeit per `Object.assign` in `_CONTENT_I18N` gemergt (`gen.py` lädt die Datei + `PLACEHOLDER_I18N_EXTRA`, Merge hinter `_tcc`-Def). `build_i18n_extra.py` erzeugt die Datei reproduzierbar (inkl. Auto-Template „Bilde Wörter aus X!"). Lücke en/pl: **0** (vorher 702/704). Neuer Dauertest **`i18n_test.js`** (6. Ebene): jeder genutzte `_tc/_tcc`-String + `MODES.prompt` muss in `en` UND `pl` existieren. verify 194/194, validate 0 Warnungen.
+
+## Phase 521 — Kontrast-Fix Dunkel-Theme + Kontrast-/Performance-Tests
+**Datum:** 2026-06-03
+Der neue `contrast_check.py` deckte auf: im **Dunkel-Theme** blieb `--qcard:#fff` (weiß) bei `--text:#f1f5f9` → Quizkarten-Text faktisch unsichtbar (**1.10:1**). Fix: `--qcard:#1e293b`, `--text3:#8a96ab` (heller). Zwei neue Dauertests: **`contrast_check.py`** (WCAG AA für Text-auf-Fläche, Hell+Dunkel) und **`perf_check.py`** (HTML-/SW-Precache-Größe). Kontrast 0 FAIL, perf 0 FAIL (1 WARN: SW-Precache ~10 MB). Test-Suite jetzt **8 Ebenen**.
