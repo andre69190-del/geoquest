@@ -1,7 +1,7 @@
 const fs=require('fs'),vm=require('vm');
 let js=[...fs.readFileSync('GeoQuest.html','utf8').matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)].filter(m=>!/\bsrc\s*=/.test(m[1])).map(m=>m[2]).join('\n;\n');
 const FNS=['renderHomeTab','renderLernenTab','renderLigaTab','renderProfilTab','renderCollectionScreen','renderStatsTab','renderAdminTab','renderSettingsModal','renderHelpModal','renderGuideModal','renderStickerModal','renderPinModal','renderLVSetup','renderLVGameover','renderLVHandoff','renderBottomNav','renderTourModalSKIP'];
-js+=";try{globalThis.__S=S;globalThis.__render=render;globalThis.__GEN=GEN;globalThis.__MODES=MODES;globalThis.__F={};["+FNS.map(f=>"'"+f+"'").join(',')+"].forEach(function(n){try{globalThis.__F[n]=eval(n);}catch(e){}});globalThis.__OB=function(){try{return renderOnboarding;}catch(e){return null;}}();}catch(e){globalThis.__err=e&&e.message;}";
+js+=";try{globalThis.__S=S;globalThis.__render=render;globalThis.__GEN=GEN;globalThis.__MODES=MODES;globalThis.__seed=function(nb,rv,pl,ar){try{NEIGHBORS=parseNeighbors(nb)}catch(e){}try{RIVERS_REAL=parseRivers(rv)}catch(e){}try{PLATES_DATA=parsePlates(pl)}catch(e){}try{var _a=parseArea(ar);if(_a&&_a.length)AREA_DATA=_a}catch(e){}};globalThis.__F={};["+FNS.map(f=>"'"+f+"'").join(',')+"].forEach(function(n){try{globalThis.__F[n]=eval(n);}catch(e){}});globalThis.__OB=function(){try{return renderOnboarding;}catch(e){return null;}}();}catch(e){globalThis.__err=e&&e.message;}";
 const ls=new Map();ls.set('gq_onboarding',JSON.stringify({done:true,lang:'de'}));
 const elProto={style:new Proxy({},{get:()=>'',set:()=>true}),classList:{add(){},remove(){},toggle(){},contains(){return false}},appendChild(){},setAttribute(){},getAttribute(){return null},removeAttribute(){},addEventListener(){},removeEventListener(){},remove(){},focus(){},click(){},querySelector(){return null},querySelectorAll(){return []},getBoundingClientRect(){return{top:0,left:0,width:0,height:0}},insertBefore(){},scrollIntoView(){}};
 const el=new Proxy(elProto,{get:(t,k)=>k in t?t[k]:(typeof k==='string'&&/^(set|get|add|remove|append|insert|query|scroll|focus|click|toggle)/.test(k)?()=>{}:'')});
@@ -13,6 +13,7 @@ let loadErr=null;try{vm.runInContext(js,ctx,{timeout:20000});}catch(e){loadErr=e
 if(sb.__err)console.log('Export-Fehler:',sb.__err);
 const S=sb.__S,F=sb.__F;
 if(!S||!F){console.log('LOAD FAIL');process.exit(2);}
+try{const _J=f=>{try{return JSON.parse(fs.readFileSync(f,'utf8'))}catch(e){return null}};if(sb.__seed)sb.__seed(_J('neighbors.json'),_J('rivers.json'),_J('license_plates.json'),_J('area.json'));}catch(e){}
 let fail=0,ok=0,skip=0,warnans=0;
 const render=sb.__render,GEN=sb.__GEN,MODES=sb.__MODES;
 if(!S||!render||!GEN){console.log('LOAD FAIL');process.exit(2);}
