@@ -19,6 +19,7 @@ with open(os.path.join(os.path.dirname(__file__), 'data/zug_uic.json'), 'r', enc
 with open(os.path.join(os.path.dirname(__file__), 'data/zug_reisezeiten.json'), 'r', encoding='utf-8') as _f: ZUG_REISEZEITEN_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_hl.json'), 'r', encoding='utf-8') as _f: TIER_HL_DATA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/tiere_match.json'), 'r', encoding='utf-8') as _f: TIER_MATCH_DATA_J = _f.read()
+with open(os.path.join(os.path.dirname(__file__), 'data/i18n_extra.json'), 'r', encoding='utf-8') as _f: I18N_EXTRA_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/pflanzen_pin.json'), 'r', encoding='utf-8') as _f: PFLANZEN_PIN_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/pflanzen_hl.json'), 'r', encoding='utf-8') as _f: PFLANZEN_HL_J = _f.read()
 with open(os.path.join(os.path.dirname(__file__), 'data/pflanzen_match.json'), 'r', encoding='utf-8') as _f: PFLANZEN_MATCH_J = _f.read()
@@ -2537,6 +2538,8 @@ function _tc(s){if(!s)return s;var _l="de";try{_l=(S&&S.language)||localStorage.
 let _DE2CC=null;
 function _deCountryCc(name){if(_DE2CC===null){_DE2CC={};try{for(var i=0;i<COUNTRIES.length;i++){var cc=COUNTRIES[i].cc;var dn=getCountryName(cc,"de");if(dn)_DE2CC[dn]=cc;if(COUNTRIES[i].c)_DE2CC[COUNTRIES[i].c]=cc;}}catch(_e){}}return _DE2CC[name]||null;}
 function _tcc(s){if(!s)return s;var _l=(typeof S!=="undefined"&&S.language)||localStorage.getItem("gq_lang")||"de";if(_l==="de")return s;var _cc=_deCountryCc(s);if(_cc)return displayCountry(_cc);return _tc(s);}
+try{var _IX=PLACEHOLDER_I18N_EXTRA;Object.assign(_CONTENT_I18N.en,_IX.en||{});Object.assign(_CONTENT_I18N.pl,_IX.pl||{});}catch(_e){}
+
 
 /* setLanguage – persists choice, marks as manual override */
 function setLanguage(lang){
@@ -19464,6 +19467,7 @@ JS = (JS
   .replace('PLACEHOLDER_TIER_PIN', TIER_PIN_J)
   .replace('PLACEHOLDER_TIER_HL_DATA', TIER_HL_DATA_J)
   .replace('PLACEHOLDER_TIER_MATCH_DATA', TIER_MATCH_DATA_J)
+  .replace('PLACEHOLDER_I18N_EXTRA', I18N_EXTRA_J)
   .replace('PLACEHOLDER_PFLANZEN_PIN', PFLANZEN_PIN_J)
   .replace('PLACEHOLDER_PFLANZEN_HL', PFLANZEN_HL_J)
   .replace('PLACEHOLDER_PFLANZEN_MATCH', PFLANZEN_MATCH_J)

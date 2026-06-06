@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 518 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 5.99 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Version:** Phase 519 (Stand: Juni 2026)
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -1222,6 +1222,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **516** | patch_516.py | **Datenreparatur tiere_match.ernaehrung: 20 vertauschte Eintraege (n=Nahrung/c=Tiername) richtiggestellt (n=Tier, c=Ernaehrungstyp), alle c auf 8 kanonische Typen normalisiert (Karnivor/Herbivor/Omnivor/Frugivor/Aasfresser/Insektivor/Nektarivor/Filtrierer), 2 Dubletten entfernt (80->78), fixedOpts entfernt. genTiereMatchQ-Fallback zieht Distraktoren jetzt NUR aus derselben Kategorie (keine fremden Tiernamen mehr als Optionen). Ergebnis: kohaerente Fragen (Koala->Herbivor), 0 unloesbar ueber 2480 Stichproben. gastro_gewuerzmischungen geprueft = stimmig (X->Herkunft).** |
 | **517** | patch_517.py | **Options-Qualitaet: 4 Jahr-MC-Generatoren (auto/games/hw baujahr, games peak_year) + subway erzeugten doppelte Optionen (z.B. 1999/1999, subway sogar Antwort 12 doppelt), weil Distraktor-Pools nicht dedupliziert wurden. Fix: Pools per Set deduplizieren und Antwort ausschliessen. Neuer Dauertest option_quality_test.js (5. Ebene) findet doppelte/Einzel-Optionen ueber alle MC-Modi. Ergebnis: 0 DUP, 0 SINGLE.** |
 | **518** | patch_518.py | **Options-Dedup vervollstaendigt: genDS100McQ, genCurrRealQ, genIataReverseQ erzeugten sporadisch doppelte Optionen (gleicher DS100-Code / Euro mehrfach / Stadt mit mehreren Flughaefen). Alle drei deduplizieren jetzt per Set und schliessen die Antwort aus. Bekannte 8 Kandidaten: 0/2000 dup. option_quality_test.js gruen.** |
+| **519** | patch_519.py | **i18n-Vollstaendigkeit: 704 bisher unuebersetzte, tatsaechlich genutzte Prompt-Strings nach EN+PL uebersetzt (data/i18n_extra.json), per Object.assign in _CONTENT_I18N gemergt (gen.py laedt + PLACEHOLDER_I18N_EXTRA). build_i18n_extra.py erzeugt die Datei reproduzierbar (inkl. Auto-Template fuer 'Bilde Woerter aus X!'). Luecke en/pl: 0 (vorher 702/704). Neuer Dauertest i18n_test.js (6. Ebene): jeder genutzte _tc/_tcc-String + MODES.prompt muss in en UND pl existieren. verify 194/194, validate 0 Warnungen, 0 Render-/Options-Fehler.** |
 
 ---
 

@@ -521,3 +521,7 @@ In den Einstellungen nur für `sbUser.email==='andre69190@gmail.com'` sichtbarer
 ## Phase 517 — Options-Qualität: doppelte Optionen behoben + Dauertest
 **Datum:** 2026-06-03
 4 Jahr-MC-Generatoren (`genAutoBaujahrMC`/`genGamesBaujahrMC`/`genHWBaujahrMC`/`genGamesPeakYearMC`) + `genSubwayQ` zeigten **doppelte Optionen** (z. B. `1999/1999`; subway sogar die Antwort `12` doppelt), weil die Distraktor-Pools nicht dedupliziert wurden. Fix: Pool per `Set` deduplizieren und die Antwort ausschließen. Neuer Dauertest **`option_quality_test.js`** (5. Test-Ebene) prüft alle MC-Modi auf doppelte/einzelne Optionen. Ergebnis: **0 DUP, 0 SINGLE**.
+
+## Phase 519 — i18n-Vollständigkeit (EN/PL) + Dauertest
+**Datum:** 2026-06-03
+704 bisher unübersetzte, tatsächlich genutzte Prompt-Strings nach **EN + PL** übersetzt (`data/i18n_extra.json`), zur Laufzeit per `Object.assign` in `_CONTENT_I18N` gemergt (`gen.py` lädt die Datei + `PLACEHOLDER_I18N_EXTRA`, Merge hinter `_tcc`-Def). `build_i18n_extra.py` erzeugt die Datei reproduzierbar (inkl. Auto-Template „Bilde Wörter aus X!"). Lücke en/pl: **0** (vorher 702/704). Neuer Dauertest **`i18n_test.js`** (6. Ebene): jeder genutzte `_tc/_tcc`-String + `MODES.prompt` muss in `en` UND `pl` existieren. verify 194/194, validate 0 Warnungen.
