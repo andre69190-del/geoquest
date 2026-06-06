@@ -9513,7 +9513,7 @@ function _mkWS(DATA,tag){
     _wsAttachKb();
   };
 }
-var genArchPinQ=_mkPinQ(ARCH_PIN_DATA);
+/* Phase 525: entfernt — ueberschrieb die korrekte genArchPinQ()-Funktion (ARCH_DATA); _mkPinQ braucht cat-Arg */
 var genArchHL=_mkHL(ARCH_HL_DATA);
 var genArchMatchQ=_mkMatchQ(ARCH_MATCH_DATA);
 var initArchWS=_mkWS(ARCH_WS_DATA,"Arch");
@@ -9584,7 +9584,7 @@ function genGamesMatchExt(field,prompt,fixedPool){
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_GE[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i}).filter(function(v){return v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var opts=[correct].concat(p.slice(0,3));
@@ -9664,7 +9664,7 @@ function genHWMatchQ(field,prompt,fixedPool){
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_HW[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i}).filter(function(v){return v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var opts=[correct].concat(p.slice(0,3));
@@ -9919,7 +9919,7 @@ function genAutoMatchLand(){
   var car=valid[idx];
   var correct=getLand(car.name);
   var pool=valid.map(function(i){return getLand(i.name);}).filter(function(v,i,a){return a.indexOf(v)===i}).filter(function(l){return l!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var dis=p.slice(0,3);
@@ -10034,13 +10034,15 @@ function genAutosMatchExt(field,prompt,fixedPool){
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_AE[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i}).filter(function(v){return v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var dis=p.slice(0,3);
   var opts=[correct].concat(dis);
   for(var j2=opts.length-1;j2>0;j2--){var k2=~~(rng()*(j2+1));var t2=opts[j2];opts[j2]=opts[k2];opts[k2]=t2;}
   var subj=car.replace(/ \([^)]+\)$/,""); /* Ohne (Land, Jahr) */
+  var _bm={"true":_tc("Ja"),"false":_tc("Nein")};
+  correct=_bm[correct]||correct;opts=opts.map(function(o){return _bm[o]||o;});
   return{type:"uk_match",prompt:prompt||("Welche Eigenschaft hat "+subj+"?"),
     subj:subj,ans:correct,opts:opts,lid:"amatch_"+field+"_"+idx,cc:"de"};
 }
@@ -10137,7 +10139,7 @@ function genKonsolenMatch(field,prompt,fixedPool){
         var rv=_KD[n][field];
         return typeof rv==="boolean"?(rv?_tc("Handheld"):_tc("Heimkonsole")):String(rv);
       }).filter(function(v,i,a){return a.indexOf(v)===i}).filter(function(v){return v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   var p=pool.slice();
   for(var j=p.length-1;j>0;j--){var k=~~(rng()*(j+1));var t=p[j];p[j]=p[k];p[k]=t;}
   var dis=p.slice(0,3);
@@ -12480,7 +12482,7 @@ function genFilmeMatchExt(field,prompt,fixedPool){
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_FD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12527,7 +12529,7 @@ function genMusikMatchExt(field,prompt,fixedPool){
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_MD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12576,7 +12578,7 @@ function genSerienMatchExt(field,prompt,fixedPool){
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_SD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12606,7 +12608,7 @@ function genParksMatchExt(field,prompt,fixedPool){var _PD=PARKS_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_PD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_PD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12640,7 +12642,7 @@ function genKunstMatchExt(field,prompt,fixedPool){var _KD=KUNST_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_KD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_KD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12671,7 +12673,7 @@ function genBoardgamesMatchExt(field,prompt,fixedPool){var _BD=BOARDGAMES_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_BD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_BD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12702,7 +12704,7 @@ function genSprachenMatchExt(field,prompt,fixedPool){var _SD=SPRACHEN_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_SD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_SD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12732,7 +12734,7 @@ function genHundeMatchExt(field,prompt,fixedPool){var _HD=HUNDE_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_HD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_HD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12762,7 +12764,7 @@ function genGartenMatchExt(field,prompt,fixedPool){var _GD=GARTEN_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_GD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_GD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12828,7 +12830,7 @@ function genFluessMatchExt(field,prompt,fixedPool){var _FD=FLUESSE_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_FD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_FD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12867,7 +12869,7 @@ function genNparksMatchExt(field,prompt,fixedPool){var _ND=NPARKS_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_ND[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_ND[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12906,7 +12908,7 @@ function genCapitalsMatchExt(field,prompt,fixedPool){var _CD=CAPITALS_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_CD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_CD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -12976,7 +12978,7 @@ function genMythMatchExt(field,prompt,fixedPool){
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_MD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -13032,7 +13034,7 @@ function genArchMatchExt(field,prompt,fixedPool){
   var pool=fixedPool
     ?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_AD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -13074,7 +13076,7 @@ function genLitMatchExt(field,prompt,fixedPool){var _LD=LIT_DATA;
   var idx=~~(rng()*valid.length),work=valid[idx],correct=String(_LD[work][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_LD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -13105,7 +13107,7 @@ function genRobotMatchExt(field,prompt,fixedPool){var _RD=ROBOT_DATA;
   var idx=~~(rng()*valid.length),sys=valid[idx],correct=String(_RD[sys][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_RD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -13135,7 +13137,7 @@ function genMedizinMatchExt(field,prompt,fixedPool){var _MD=MED_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_MD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_MD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -13165,7 +13167,7 @@ function genWirtschaftMatchExt(field,prompt,fixedPool){var _ED=ECO_DATA;
   var idx=~~(rng()*valid.length),co=valid[idx],correct=String(_ED[co][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_ED[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -13195,7 +13197,7 @@ function genGeschichteMatchExt(field,prompt,fixedPool){var _HD=HIST_DATA;
   var idx=~~(rng()*valid.length),entry=valid[idx],correct=String(_HD[entry][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_HD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -13225,7 +13227,7 @@ function genWebkulturMatchExt(field,prompt,fixedPool){var _WD=WEB_DATA;
   var idx=~~(rng()*valid.length),item=valid[idx],correct=String(_WD[item][field]);
   var pool=fixedPool?fixedPool.filter(function(v){return v!==correct;})
     :valid.map(function(n){return String(_WD[n][field]);}).filter(function(v,i,a){return a.indexOf(v)===i&&v!==correct;});
-  if(pool.length<3)return null;
+  if(pool.length<1)return null;
   for(var k=pool.length-1;k>0;k--){var t=~~(rng()*(k+1));var tmp=pool[k];pool[k]=pool[t];pool[t]=tmp;}
   var opts=[correct].concat(pool.slice(0,3));
   for(var m=opts.length-1;m>0;m--){var t2=~~(rng()*(m+1));var tm=opts[m];opts[m]=opts[t2];opts[t2]=tm;}
@@ -17920,10 +17922,11 @@ function genKZEuOderNicht(){
     options:shuf([t('eu_ja'),t('eu_nein')]),correct:t(pick.eu?'eu_ja':'eu_nein'),
     meta:t('eu_meta',{l:pick.l,eu:pick.eu?t('eu_ja'):t('eu_nein')})};
 }
+function _bgArr(){return Array.isArray(BOARDGAMES_DATA)?BOARDGAMES_DATA:Object.keys(BOARDGAMES_DATA||{}).map(function(k){var o=BOARDGAMES_DATA[k]||{};return{name:k,max_spieler:o.max_spieler,spieldauer_min:o.spieldauer_min,ursprungsland:o.ursprungsland};});}
 function genSpielSpielerAnzahl(){
-  if(!BOARDGAMES_DATA||!BOARDGAMES_DATA.length)return null;
+  if(!_bgArr().length)return null;
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
-  var pool=BOARDGAMES_DATA.filter(function(g){return g&&g.name&&g.max_spieler;});
+  var pool=_bgArr().filter(function(g){return g&&g.name&&g.max_spieler;});
   if(pool.length<4)return null;
   var pick=pool[~~(rng()*pool.length)];
   var nums=[2,3,4,5,6,8,10].filter(function(n){return n!==pick.max_spieler;});
@@ -17932,10 +17935,10 @@ function genSpielSpielerAnzahl(){
     meta:t('spielsplr_meta',{n:pick.name,m:pick.max_spieler})};
 }
 function genSpielKurzLang(){
-  if(!BOARDGAMES_DATA||!BOARDGAMES_DATA.length)return null;
+  if(!_bgArr().length)return null;
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
   function cls(m){return m<=30?'kurz':m<=90?'mittel':'lang';}
-  var pool=BOARDGAMES_DATA.filter(function(g){return g&&g.name&&g.spieldauer_min;});
+  var pool=_bgArr().filter(function(g){return g&&g.name&&g.spieldauer_min;});
   if(!pool.length)return null;
   var pick=pool[~~(rng()*pool.length)];
   var correct=cls(pick.spieldauer_min);
@@ -17943,9 +17946,9 @@ function genSpielKurzLang(){
   return {type:'uk_match',question:'🎲 '+pick.name,options:opts,correct:t('sz_'+correct)};
 }
 function genSpielMatchUrsprung(){
-  if(!BOARDGAMES_DATA||!BOARDGAMES_DATA.length)return null;
+  if(!_bgArr().length)return null;
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
-  var pool=BOARDGAMES_DATA.filter(function(g){return g&&g.name&&g.ursprungsland;});
+  var pool=_bgArr().filter(function(g){return g&&g.name&&g.ursprungsland;});
   if(pool.length<4)return null;
   var pick=pool[~~(rng()*pool.length)];
   var allLands=Array.from(new Set(pool.map(function(g){return g.ursprungsland;}))).filter(Boolean);
@@ -17964,9 +17967,9 @@ function genSpielStrategieZufall(){
   return {type:'uk_match',question:pick.n,options:shuf([t('stz_strategie'),t('stz_zufall')]),correct:t('stz_'+pick.k)};
 }
 function genSpielHLSpieler(){
-  if(!BOARDGAMES_DATA||!BOARDGAMES_DATA.length)return null;
+  if(!_bgArr().length)return null;
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
-  var pool=BOARDGAMES_DATA.filter(function(g){return g&&g.name&&g.max_spieler;});
+  var pool=_bgArr().filter(function(g){return g&&g.name&&g.max_spieler;});
   if(pool.length<2)return null;
   var sh2=shuf(pool.slice());
   var a=sh2[0],b=sh2[1];

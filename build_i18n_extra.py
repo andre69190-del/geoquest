@@ -661,6 +661,8 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ "Ja": ("Yes", "Tak"),
+ "Nein": ("No", "Nie"),
  "Zeit abgelaufen – kein Pin gesetzt": ("Time's up – no pin placed", "Czas minął – nie postawiono pinezki"),
 }
 T.update(EXTRA_UI)

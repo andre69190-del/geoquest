@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 524 (Stand: Juni 2026)
+**Version:** Phase 525 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1228,6 +1228,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **522** | patch_522.py | **SW-Precache verschlankt: nur noch App-Shell (GeoQuest.html/manifest/icon, ~6.1MB) wird beim Install vorab gecacht; alle data/*.json werden vom bestehenden Fetch-Handler bei Bedarf zur Laufzeit gecacht (cache.put). Hash bleibt ueber ALLE Assets inkl. Daten -> CACHE_NAME bumpt bei Datenaenderung, alte Runtime-Caches werden in activate geloescht. SW-Precache 10.1MB -> 6.1MB (Quota-Risiko weg). verify-Check 12 angepasst (Shell+Runtime-Cache statt 'alle Daten im Precache'). perf_check 0 WARN. 195/195.** |
 | **523** | patch_523.py | **uk_pin/airport_pin Feedback-Bug: bei Timeout (Frage ueber generisches answer(null) beantwortet, S.sel='__t') blieb airportPinDist ungesetzt -> Anzeige '✗ 0 km entfernt' (widerspruechlich: 0 km waere perfekt). Fix: Pin-Feedback prueft S.sel==='coord' (echter Pin); sonst Meldung 'Zeit abgelaufen – kein Pin gesetzt' (DE/EN/PL in i18n_extra). build_i18n_extra.py um EXTRA_UI erweitert + Writer schreibt Zusatz-Strings. 195/195, i18n 0 Luecken.** |
 | **524** | patch_524.py | **Pin-Bug (echte Ursache): genCapitalsPinQ (und genGeoConstQ) liefern lat/lng, das uk_pin-Scoring/Drawing liest aber targetLat/targetLng -> Distanz=NaN -> JEDE Pin-Eingabe '✗ 0 km entfernt' (Capitals-Pin komplett kaputt). Fix in der Schema-Normalisierung (nextQ): uk_pin/airport_pin bekommen targetLat/targetLng als Fallback aus lat/lng (+ ans aus subj). Deckt alle Pin-Generatoren ab (Scoring UND Kartenmarker). Verifiziert: Capitals-Pin self-dist=0, ok=true. 195/195.** |
+| **525** | patch_525.py | **Tote/immer-NULL Modi repariert: (1) Attribut-Match-Generatoren (genAutosMatchExt/Games/Konsolen/Garten/Capitals) verlangten 3 Distraktoren, aber Felder wie antrieb/herkunftsland/wasserbedarf/grossstadt/adaption haben nur 2-3 verschiedene Werte -> Schwelle auf >=1 gesenkt (2-4 Optionen) + Boolean->Ja/Nein-Mapping (turbo). (2) spiel_* Generatoren behandelten BOARDGAMES_DATA (Objekt) als Array -> _bgArr()-Adapter. (3) genArchPinQ war doppelt definiert; var-Zuweisung (_mkPinQ, braucht cat-Arg) ueberschrieb die korrekte Funktion -> entfernt. 12 Modi wieder spielbar (smoke OK 944->956). smoke_test: EXPECTED_NULL-Allowlist (async-Daten + Custom-Flow), unerwartete NULL faillt jetzt.** |
 
 ---
 

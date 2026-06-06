@@ -62,7 +62,8 @@ if (!GEN || !MODES) {
 }
 // minimalen Spielzustand seeden (Generatoren erwarten teils S.askedLids etc.)
 try { const S = sandbox.__S; if (S) { S.askedLids = new Set(); S.mode = S.mode||''; S.diff = S.diff||'casual'; S.lvls = S.lvls||{}; } } catch(_e){}
-const throwsArr = [], nullsArr = [];
+const EXPECTED_NULL = new Set(['river_real','plate_casual','plate_hard','hl_area','neighbor','neighbor_fake','neighbor_count','border_q','logic_grid','travel_route','slf']);
+const throwsArr = [], nullsArr = [], unexpectedNull = [];
 let okCount = 0, tested = 0, wsNull = 0;
 for (const mode of MODES) {
   const id = mode && mode.id; if (!id) continue;
@@ -78,6 +79,7 @@ for (const mode of MODES) {
   // leer geblieben: ws_* geben absichtlich null zurueck (initWS-Pattern)
   if (/^ws_/.test(id) || /_ws_/.test(id)) { wsNull++; continue; }
   nullsArr.push(id);
+  if (!EXPECTED_NULL.has(id)) unexpectedNull.push(id);
 }
 console.log('='.repeat(58));
 console.log(' GeoQuest Generator-Rauchtest');
@@ -85,5 +87,6 @@ console.log('='.repeat(58));
 console.log(' Getestet: ' + tested + ' | OK: ' + okCount + ' | NULL: ' + nullsArr.length + ' | THROW: ' + throwsArr.length + ' | ws_null(ok): ' + wsNull);
 if (throwsArr.length) { console.log('\n THROW (Crash) - MUSS gefixt werden:'); throwsArr.forEach(s => console.log('  [!!] ' + s)); }
 if (nullsArr.length) { console.log('\n NULL (leer zurueck):'); console.log('  ' + nullsArr.join(', ')); }
+if (unexpectedNull.length) { console.log('\n UNERWARTET NULL - MUSS gefixt/allowlisted werden:'); unexpectedNull.forEach(function(s){console.log('  [!!] ' + s);}); }
 if (loadErr) console.log('\n (Top-Level-Load warf: ' + loadErr.message + ' - Generatoren trotzdem getestet.)');
-process.exit(throwsArr.length ? 1 : 0);
+process.exit((throwsArr.length || unexpectedNull.length) ? 1 : 0);

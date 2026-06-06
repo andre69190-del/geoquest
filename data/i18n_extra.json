@@ -704,7 +704,9 @@
   "Ordne die Technologien nach Release-Jahr!": "Sort the technologies by release year!",
   "Erfassen": "Capture",
   "Gesammelte Waggons": "Collected cars",
-  "Zeit abgelaufen – kein Pin gesetzt": "Time's up – no pin placed"
+  "Zeit abgelaufen – kein Pin gesetzt": "Time's up – no pin placed",
+  "Ja": "Yes",
+  "Nein": "No"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1411,6 +1413,8 @@
   "Ordne die Technologien nach Release-Jahr!": "Uporządkuj technologie według roku premiery!",
   "Erfassen": "Zarejestruj",
   "Gesammelte Waggons": "Zebrane wagony",
-  "Zeit abgelaufen – kein Pin gesetzt": "Czas minął – nie postawiono pinezki"
+  "Zeit abgelaufen – kein Pin gesetzt": "Czas minął – nie postawiono pinezki",
+  "Ja": "Tak",
+  "Nein": "Nie"
  }
 }

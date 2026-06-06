@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 524. Pin-Bug (echte Ursache): genCapitalsPinQ (und genGeoConstQ) liefern lat/lng, das uk_pin-Scoring/Drawing liest aber targetLat/targetLng -> Distanz=NaN -> JEDE Pin-Eingabe '✗ 0 km entfernt' (Capitals-Pin komplett kaputt). Fix in der Schema-Normalisierung (nextQ): uk_pin/airport_pin bekommen targetLat/targetLng als Fallback aus lat/lng (+ ans aus subj). Deckt alle Pin-Generatoren ab (Scoring UND Kartenmarker). Verifiziert: Capitals-Pin self-dist=0, ok=true. 195/195.. verify: 195/195."
+git commit -m "Content: Phase 525. Tote/immer-NULL Modi repariert: (1) Attribut-Match-Generatoren (genAutosMatchExt/Games/Konsolen/Garten/Capitals) verlangten 3 Distraktoren, aber Felder wie antrieb/herkunftsland/wasserbedarf/grossstadt/adaption haben nur 2-3 verschiedene Werte -> Schwelle auf >=1 gesenkt (2-4 Optionen) + Boolean->Ja/Nein-Mapping (turbo). (2) spiel_* Generatoren behandelten BOARDGAMES_DATA (Objekt) als Array -> _bgArr()-Adapter. (3) genArchPinQ war doppelt definiert; var-Zuweisung (_mkPinQ, braucht cat-Arg) ueberschrieb die korrekte Funktion -> entfernt. 12 Modi wieder spielbar (smoke OK 944->956). smoke_test: EXPECTED_NULL-Allowlist (async-Daten + Custom-Flow), unerwartete NULL faillt jetzt.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
