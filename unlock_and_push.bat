@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 526. Rest-i18n: spielerseitige UI-Labels gewrappt (_tc): Verfuegbare Buchstaben:, Ueberpruefen, Schliessen, WOERTER, Keine Woerter gefunden, Laender/Staedte (Logik-Gitter), Zum Menue. Uebersetzungen EN/PL in i18n_extra.json + build_i18n_extra.py EXTRA_UI (reproduzierbar). i18n 0 Luecken, alle 8 Test-Ebenen gruen. Bewusst NICHT uebersetzt (edge): Admin-Panel, Ad-Platzhalter, Absturz-Screen.. verify: 195/195."
+git commit -m "Content: Phase 527. White-Screen-Crash behoben: Render rief .map auf moeglicherweise undefinierten Feldern auf (q.hints, q.countries, q.opts in 2 Zweigen, q._tlUserOrder, q.ans) -> bei Modi, die der Render-Test ueberspringt (async-Daten wie border_q/neighbor/plate/river, headless=null), konnte das die GANZE App abstuerzen lassen ('Cannot read properties of undefined reading map'). Alle q.X.map-Aufrufe im Render mit ||[]/Array.isArray abgesichert (0 ungeschuetzt). sort_rank/clue_country-Generatoren setzen ihre Felder korrekt (Guard = Absicherung). 195/195, alle Ebenen gruen.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

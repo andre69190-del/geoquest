@@ -549,3 +549,7 @@ Drei Ursachen für immer-NULL: (1) Attribut-Match-Generatoren (`genAutosMatchExt
 ## Phase 526 — Rest-i18n: spielerseitige UI-Labels
 **Datum:** 2026-06-03
 Verbleibende hartkodierte deutsche UI-Labels auf Spieler-Screens (Wortschmiede/Logik-Gitter/Navigation) in `_tc()` gewrappt: „Verfügbare Buchstaben:", „Überprüfen", „Schließen", „WÖRTER", „Keine Wörter gefunden", „Länder"/„Städte", „Zum Menü". EN/PL in `i18n_extra.json` + `build_i18n_extra.py` EXTRA_UI (reproduzierbar). i18n 0 Lücken. Bewusst nicht übersetzt (Edge/intern): Admin-Panel, Ad-Platzhalter, Absturz-Screen.
+
+## Phase 527 — White-Screen-Crash behoben (.map auf undefined im Render)
+**Datum:** 2026-06-03
+Der Render rief `.map` auf evtl. undefinierten Feldern auf (`q.hints`, `q.countries`, `q.opts` in 2 Zweigen, `q._tlUserOrder`, `q.ans`). Bei Modi, die der Render-Test überspringt (async-Daten: border_q/neighbor/plate/river — headless = null), konnte das die **ganze App** abstürzen lassen („Cannot read properties of undefined (reading 'map')"). Alle `q.X.map`-Aufrufe im Render mit `||[]`/`Array.isArray` abgesichert (0 ungeschützt). Generatoren von `sort_rank`/`clue_country` setzen ihre Felder korrekt — der Guard ist reine Absicherung gegen White-Screens.

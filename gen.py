@@ -14820,12 +14820,12 @@ if(mode==="slf"&&S.ph==="playing"){
       ${sel\!==null?`<div class="qmeta">${q.meta||""}</div>`:""}`;
   }else if(q.type==="clue_country"){
     var _cs=S.clueStep||0;
-    var _hh=q.hints.slice(0,_cs+1).map(function(h){return'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:8px 12px;margin:4px 0;font-size:.95rem">'+esc(h)+'</div>';}).join("");
+    var _hh=(q.hints||[]).slice(0,_cs+1).map(function(h){return'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:8px 12px;margin:4px 0;font-size:.95rem">'+esc(h)+'</div>';}).join("");
     var _nx=(_cs<q.hints.length-1)?'<button onclick="S.clueStep=(S.clueStep||0)+1;render()" style="background:var(--bg2);border:1.5px solid var(--accent);color:var(--accent);border-radius:8px;padding:6px 16px;font-weight:700;cursor:pointer;margin-top:6px">\u{1F50E} '+_tc("N\u00e4chster Hinweis")+'</button>':"";
     qBody='<div class="qprompt">'+esc(q.prompt)+'</div><div style="margin:8px 0">'+_hh+_nx+'</div>';
   }else if(q.type==="sort_rank"){
     var _so2=S.rankOrder||[];
-    var _bts=q.countries.map(function(n){
+    var _bts=(q.countries||[]).map(function(n){
       var _ri=_so2.indexOf(n),_pk=_ri>=0;
       return'<button onclick="if(!S.rankOrder)S.rankOrder=[];var _nm='+JSON.stringify(n)+';if(S.rankOrder.indexOf(_nm)<0){S.rankOrder.push(_nm);if(S.rankOrder.length===4)checkAnswer(S.rankOrder.join(\'|\'));else render();}" '
         +'style="display:block;width:100%;background:'+(_pk?"var(--accent)":"var(--bg2)")+';color:'+(_pk?"#fff":"var(--text)")+';border:1.5px solid var(--border);border-radius:10px;padding:10px 14px;font-size:1rem;font-weight:600;cursor:pointer;margin:5px 0;text-align:left">'
@@ -14862,7 +14862,7 @@ if(mode==="slf"&&S.ph==="playing"){
   }else if(q.type==="timeline"){
     /* Phase 266: Timeline drag-and-drop */
     var _tlShowItems=sel!==null&&q._tlUserOrder
-      ?q._tlUserOrder.map(function(n){var f=null;for(var _j=0;_j<q.items.length;_j++){if(q.items[_j].n===n){f=q.items[_j];break;}}return f||{n:n,year:'?',hint:''};}) 
+      ?(q._tlUserOrder||[]).map(function(n){var f=null;for(var _j=0;_j<q.items.length;_j++){if(q.items[_j].n===n){f=q.items[_j];break;}}return f||{n:n,year:'?',hint:''};}) 
       :q.items;
     var _tlTilesHtml=_tlShowItems.map(function(it,_i){
       var _tlFb=sel!==null&&q._tlUserOrder&&S.ph==="feedback";var bg=_tlFb?(q._tlUserOrder[_i]===q.ans[_i]?'#d1fae5':'#fee2e2'):'var(--bg2)';
@@ -14884,7 +14884,7 @@ if(mode==="slf"&&S.ph==="playing"){
     }).join('');
     var _tlFb=sel!==null
       ?(ok?'<div class="fb ok" style="text-align:center;margin-bottom:6px">\u2713 Perfekte Reihenfolge!</div>'
-          :'<div class="fb ng" style="text-align:center;margin-bottom:6px">\u2717 Falsch &mdash; Korrekt: '+q.ans.map(function(n,i){return(i+1)+'. '+esc(n);}).join(' \u2192 ')+'</div>')
+          :'<div class="fb ng" style="text-align:center;margin-bottom:6px">\u2717 Falsch &mdash; Korrekt: '+(q.ans||[]).map(function(n,i){return(i+1)+'. '+esc(n);}).join(' \u2192 ')+'</div>')
       :'';
     qBody='<div class="qprompt">'+q.prompt+'</div>'
       +_tlFb
@@ -14914,7 +14914,7 @@ if(mode==="slf"&&S.ph==="playing"){
       :`<div class="fb ng">✗ Falsch → ${q.ans}</div>`;
     const disabled=sel\!==null?"disabled":"";
     /* P208: answerByIdx — option values not in DOM */
-    const optHtml=q.opts.map((o,_i)=>{
+    const optHtml=(q.opts||[]).map((o,_i)=>{
       const cls=sel\!==null?(o===q.ans?" opt-ok":o===sel?" opt-ng":""):"";
       return`<button class="opt-btn${cls}" onclick="answerByIdx(${_i})" ${disabled}>${esc(o)}</button>`;
     }).join("");
@@ -15035,7 +15035,7 @@ if(mode==="slf"&&S.ph==="playing"){
   const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
-    answerHtml='<div class="flag-grid">'+q.opts.map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
+    answerHtml='<div class="flag-grid">'+(q.opts||[]).map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
     // Population comparison: special subj rendering
     if(q.type==="pop_compare"&&q.subj&&typeof q.subj==='object'){
       const pcDis=sel!==null?"disabled":"";

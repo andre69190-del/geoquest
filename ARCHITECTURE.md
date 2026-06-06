@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 526 (Stand: Juni 2026)
+**Version:** Phase 527 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1230,6 +1230,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **524** | patch_524.py | **Pin-Bug (echte Ursache): genCapitalsPinQ (und genGeoConstQ) liefern lat/lng, das uk_pin-Scoring/Drawing liest aber targetLat/targetLng -> Distanz=NaN -> JEDE Pin-Eingabe '✗ 0 km entfernt' (Capitals-Pin komplett kaputt). Fix in der Schema-Normalisierung (nextQ): uk_pin/airport_pin bekommen targetLat/targetLng als Fallback aus lat/lng (+ ans aus subj). Deckt alle Pin-Generatoren ab (Scoring UND Kartenmarker). Verifiziert: Capitals-Pin self-dist=0, ok=true. 195/195.** |
 | **525** | patch_525.py | **Tote/immer-NULL Modi repariert: (1) Attribut-Match-Generatoren (genAutosMatchExt/Games/Konsolen/Garten/Capitals) verlangten 3 Distraktoren, aber Felder wie antrieb/herkunftsland/wasserbedarf/grossstadt/adaption haben nur 2-3 verschiedene Werte -> Schwelle auf >=1 gesenkt (2-4 Optionen) + Boolean->Ja/Nein-Mapping (turbo). (2) spiel_* Generatoren behandelten BOARDGAMES_DATA (Objekt) als Array -> _bgArr()-Adapter. (3) genArchPinQ war doppelt definiert; var-Zuweisung (_mkPinQ, braucht cat-Arg) ueberschrieb die korrekte Funktion -> entfernt. 12 Modi wieder spielbar (smoke OK 944->956). smoke_test: EXPECTED_NULL-Allowlist (async-Daten + Custom-Flow), unerwartete NULL faillt jetzt.** |
 | **526** | patch_526.py | **Rest-i18n: spielerseitige UI-Labels gewrappt (_tc): Verfuegbare Buchstaben:, Ueberpruefen, Schliessen, WOERTER, Keine Woerter gefunden, Laender/Staedte (Logik-Gitter), Zum Menue. Uebersetzungen EN/PL in i18n_extra.json + build_i18n_extra.py EXTRA_UI (reproduzierbar). i18n 0 Luecken, alle 8 Test-Ebenen gruen. Bewusst NICHT uebersetzt (edge): Admin-Panel, Ad-Platzhalter, Absturz-Screen.** |
+| **527** | patch_527.py | **White-Screen-Crash behoben: Render rief .map auf moeglicherweise undefinierten Feldern auf (q.hints, q.countries, q.opts in 2 Zweigen, q._tlUserOrder, q.ans) -> bei Modi, die der Render-Test ueberspringt (async-Daten wie border_q/neighbor/plate/river, headless=null), konnte das die GANZE App abstuerzen lassen ('Cannot read properties of undefined reading map'). Alle q.X.map-Aufrufe im Render mit ||[]/Array.isArray abgesichert (0 ungeschuetzt). sort_rank/clue_country-Generatoren setzen ihre Felder korrekt (Guard = Absicherung). 195/195, alle Ebenen gruen.** |
 
 ---
 
