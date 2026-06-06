@@ -661,6 +661,13 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ "Verfügbare Buchstaben:": ("Available letters:", "Dostępne litery:"),
+ "Überprüfen": ("Check", "Sprawdź"),
+ "Schließen": ("Close", "Zamknij"),
+ "WÖRTER": ("WORDS", "SŁOWA"),
+ "Keine Wörter gefunden": ("No words found", "Nie znaleziono słów"),
+ "Städte": ("Cities", "Miasta"),
+ "Zum Menü": ("To menu", "Do menu"),
  "Ja": ("Yes", "Tak"),
  "Nein": ("No", "Nie"),
  "Zeit abgelaufen – kein Pin gesetzt": ("Time's up – no pin placed", "Czas minął – nie postawiono pinezki"),

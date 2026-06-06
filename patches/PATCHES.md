@@ -545,3 +545,7 @@ Echte Ursache des „0 km ✗"-Bugs: `genCapitalsPinQ` (u. a.) liefert `lat/lng`
 ## Phase 525 — Tote Spielmodi repariert (12 Modi) + smoke-Gate
 **Datum:** 2026-06-03
 Drei Ursachen für immer-NULL: (1) Attribut-Match-Generatoren (`genAutosMatchExt`/Games/Konsolen/Garten/Capitals) verlangten 3 Distraktoren, aber Felder wie `antrieb`/`herkunftsland`/`wasserbedarf`/`grossstadt`/`adaption` haben nur 2–3 verschiedene Werte → Schwelle `pool<3`→`<1` (2–4 Optionen) + Boolean→Ja/Nein-Mapping (turbo). (2) `spiel_*` behandelten `BOARDGAMES_DATA` (Objekt) als Array → `_bgArr()`-Adapter. (3) `genArchPinQ` doppelt definiert — die `var`-Zuweisung (`_mkPinQ`, braucht `cat`-Arg) überschrieb die korrekte Funktion → entfernt. **12 Modi wieder spielbar** (smoke OK 944→956). `smoke_test.js` mit `EXPECTED_NULL`-Allowlist (async-Daten + Custom-Flow); unerwartete NULL lässt den Test jetzt fehlschlagen. Fehlalarme: 8 async-Daten-Modi (license_plates/rivers/neighbors/area.json) + 3 Custom-Flow-Modi (logic_grid/travel_route/slf).
+
+## Phase 526 — Rest-i18n: spielerseitige UI-Labels
+**Datum:** 2026-06-03
+Verbleibende hartkodierte deutsche UI-Labels auf Spieler-Screens (Wortschmiede/Logik-Gitter/Navigation) in `_tc()` gewrappt: „Verfügbare Buchstaben:", „Überprüfen", „Schließen", „WÖRTER", „Keine Wörter gefunden", „Länder"/„Städte", „Zum Menü". EN/PL in `i18n_extra.json` + `build_i18n_extra.py` EXTRA_UI (reproduzierbar). i18n 0 Lücken. Bewusst nicht übersetzt (Edge/intern): Admin-Panel, Ad-Platzhalter, Absturz-Screen.

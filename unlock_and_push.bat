@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 525. Tote/immer-NULL Modi repariert: (1) Attribut-Match-Generatoren (genAutosMatchExt/Games/Konsolen/Garten/Capitals) verlangten 3 Distraktoren, aber Felder wie antrieb/herkunftsland/wasserbedarf/grossstadt/adaption haben nur 2-3 verschiedene Werte -> Schwelle auf >=1 gesenkt (2-4 Optionen) + Boolean->Ja/Nein-Mapping (turbo). (2) spiel_* Generatoren behandelten BOARDGAMES_DATA (Objekt) als Array -> _bgArr()-Adapter. (3) genArchPinQ war doppelt definiert; var-Zuweisung (_mkPinQ, braucht cat-Arg) ueberschrieb die korrekte Funktion -> entfernt. 12 Modi wieder spielbar (smoke OK 944->956). smoke_test: EXPECTED_NULL-Allowlist (async-Daten + Custom-Flow), unerwartete NULL faillt jetzt.. verify: 195/195."
+git commit -m "Content: Phase 526. Rest-i18n: spielerseitige UI-Labels gewrappt (_tc): Verfuegbare Buchstaben:, Ueberpruefen, Schliessen, WOERTER, Keine Woerter gefunden, Laender/Staedte (Logik-Gitter), Zum Menue. Uebersetzungen EN/PL in i18n_extra.json + build_i18n_extra.py EXTRA_UI (reproduzierbar). i18n 0 Luecken, alle 8 Test-Ebenen gruen. Bewusst NICHT uebersetzt (edge): Admin-Panel, Ad-Platzhalter, Absturz-Screen.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

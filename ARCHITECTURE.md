@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 525 (Stand: Juni 2026)
+**Version:** Phase 526 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1229,6 +1229,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **523** | patch_523.py | **uk_pin/airport_pin Feedback-Bug: bei Timeout (Frage ueber generisches answer(null) beantwortet, S.sel='__t') blieb airportPinDist ungesetzt -> Anzeige '✗ 0 km entfernt' (widerspruechlich: 0 km waere perfekt). Fix: Pin-Feedback prueft S.sel==='coord' (echter Pin); sonst Meldung 'Zeit abgelaufen – kein Pin gesetzt' (DE/EN/PL in i18n_extra). build_i18n_extra.py um EXTRA_UI erweitert + Writer schreibt Zusatz-Strings. 195/195, i18n 0 Luecken.** |
 | **524** | patch_524.py | **Pin-Bug (echte Ursache): genCapitalsPinQ (und genGeoConstQ) liefern lat/lng, das uk_pin-Scoring/Drawing liest aber targetLat/targetLng -> Distanz=NaN -> JEDE Pin-Eingabe '✗ 0 km entfernt' (Capitals-Pin komplett kaputt). Fix in der Schema-Normalisierung (nextQ): uk_pin/airport_pin bekommen targetLat/targetLng als Fallback aus lat/lng (+ ans aus subj). Deckt alle Pin-Generatoren ab (Scoring UND Kartenmarker). Verifiziert: Capitals-Pin self-dist=0, ok=true. 195/195.** |
 | **525** | patch_525.py | **Tote/immer-NULL Modi repariert: (1) Attribut-Match-Generatoren (genAutosMatchExt/Games/Konsolen/Garten/Capitals) verlangten 3 Distraktoren, aber Felder wie antrieb/herkunftsland/wasserbedarf/grossstadt/adaption haben nur 2-3 verschiedene Werte -> Schwelle auf >=1 gesenkt (2-4 Optionen) + Boolean->Ja/Nein-Mapping (turbo). (2) spiel_* Generatoren behandelten BOARDGAMES_DATA (Objekt) als Array -> _bgArr()-Adapter. (3) genArchPinQ war doppelt definiert; var-Zuweisung (_mkPinQ, braucht cat-Arg) ueberschrieb die korrekte Funktion -> entfernt. 12 Modi wieder spielbar (smoke OK 944->956). smoke_test: EXPECTED_NULL-Allowlist (async-Daten + Custom-Flow), unerwartete NULL faillt jetzt.** |
+| **526** | patch_526.py | **Rest-i18n: spielerseitige UI-Labels gewrappt (_tc): Verfuegbare Buchstaben:, Ueberpruefen, Schliessen, WOERTER, Keine Woerter gefunden, Laender/Staedte (Logik-Gitter), Zum Menue. Uebersetzungen EN/PL in i18n_extra.json + build_i18n_extra.py EXTRA_UI (reproduzierbar). i18n 0 Luecken, alle 8 Test-Ebenen gruen. Bewusst NICHT uebersetzt (edge): Admin-Panel, Ad-Platzhalter, Absturz-Screen.** |
 
 ---
 

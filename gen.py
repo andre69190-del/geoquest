@@ -1015,10 +1015,10 @@ function renderWordGenerator() {
   const lettersHtml = game.letters.map(l => '<span class="letter-badge">' + l + '</span>').join('');
 
   let html = '<div style="margin: 15px 0">';
-  html += '<p style="font-size:0.9rem;color:var(--text2)">Verfügbare Buchstaben:</p>';
+  html += '<p style="font-size:0.9rem;color:var(--text2)">'+_tc("Verfügbare Buchstaben:")+'</p>';
   html += '<div class="available-letters">' + lettersHtml + '</div>';
   html += '<input type="text" class="word-generator-input" placeholder="Wort bilden..." />';
-  html += '<button onclick="checkWord(this.previousElementSibling.value)" style="width:100%;margin-top:8px">Überprüfen</button>';
+  html += '<button onclick="checkWord(this.previousElementSibling.value)" style="width:100%;margin-top:8px">'+_tc("Überprüfen")+'</button>';
   html += '</div>';
 
   return html;
@@ -16255,8 +16255,8 @@ function renderLogikGitter(sc){
     <div style="text-align:center;margin:.1rem 0 .45rem">
       <select onchange="changeGridType(this.value)" style="padding:5px 12px;border-radius:8px;border:1.5px solid var(--primary,#6366f1);background:var(--bg2);color:var(--text);font-size:.8rem;outline:none;cursor:pointer">
         <option value="random" ${(!S.gridTypeMode||S.gridTypeMode==="random")?"selected":""}>🎲 Zufall (Mix)</option>
-        <option value="land" ${S.gridTypeMode==="land"?"selected":""}>🌍 Länder</option>
-        <option value="stadt" ${S.gridTypeMode==="stadt"?"selected":""}>🏙 Städte</option>
+        <option value="land" ${S.gridTypeMode==="land"?"selected":""}>🌍 ${_tc("Länder")}</option>
+        <option value="stadt" ${S.gridTypeMode==="stadt"?"selected":""}>🏙 ${_tc("Städte")}</option>
         <option value="wahrzeichen" ${S.gridTypeMode==="wahrzeichen"?"selected":""}>🏛 Wahrzeichen</option>
         <option value="unesco" ${S.gridTypeMode==="unesco"?"selected":""}>🌎 UNESCO</option>
     <option value="food" ${S.gridTypeMode==="food"?"selected":""}>🍽️ Gerichte</option>
@@ -16523,7 +16523,7 @@ function renderLandHauptstadt(sc){
     <div class="slf-field"><label class="slf-label">\u{1F30D} LAND</label><input id="slf-country" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Land mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.country)}" oninput="S.slfData.answers.country=this.value" onkeydown="if(event.key==='Enter')document.getElementById('slf-river')?.focus()"></div>
     <div class="slf-field"><label class="slf-label">\u{1F4A7} FLUSS</label><input id="slf-river" type="text" dir="ltr" class="slf-input" style="direction:ltr;text-align:left;padding-left:10px" placeholder="Fluss mit ${letter}…" autocomplete="off" autocorrect="off" value="${esc(answers.river)}" oninput="S.slfData.answers.river=this.value" onkeydown="if(event.key==='Enter')handleSLFSubmit()"></div>
     <button class="btn-p" style="margin-top:.85rem" onclick="handleSLFSubmit()">✓ Auswerten</button>
-    <button class="btn-g" style="margin-bottom:0;font-size:.78rem" onclick="_exitToMenu()">✖ Schließen</button>
+    <button class="btn-g" style="margin-bottom:0;font-size:.78rem" onclick="_exitToMenu()">✖ ${_tc("Schließen")}</button>
   </div></div>`;
 }
 
@@ -16688,7 +16688,7 @@ function renderWortSchmiede(sc){
   const hud='<div class="hud"><div style="display:flex;gap:8px;align-items:center">'+
     '<div class="pill"><div class="hlbl">SCORE</div><div class="hval">'+sc.toLocaleString()+'</div></div>'+
     '<div class="pill-s" style="background:rgba(239,68,68,.1)"><div class="hlbl" style="color:'+tCol+'">ZEIT</div><div class="hval-s" style="color:'+tCol+';font-weight:900">'+tl+'s</div></div>'+
-    '<div class="pill-s"><div class="hlbl" style="color:#10b981">WÖRTER</div><div class="hval-s" style="color:#10b981">'+found+'/'+total+'</div></div>'+
+    '<div class="pill-s"><div class="hlbl" style="color:#10b981">'+_tc("WÖRTER")+'</div><div class="hval-s" style="color:#10b981">'+found+'/'+total+'</div></div>'+
     '</div>'+
     '<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center">'+
       '<button class="btn-exit-global" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button>'+
@@ -16709,7 +16709,7 @@ function renderWortSchmiede(sc){
       '<div style="text-align:center;font-size:1.2rem;font-weight:900;margin-bottom:.2rem">'+(ok?"🎉 Perfekt! Alle Wörter gefunden!":"⏰ Zeit abgelaufen!")+'</div>'+
       '<div style="text-align:center;font-size:.8rem;color:var(--text3);margin-bottom:.8rem">'+esc(city)+' · '+found+'/'+total+' Wörter · +'+allPts.toLocaleString()+' Punkte</div>'+
       (found>0?'<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2px;margin-bottom:.8rem">'+chips+'</div>':
-        '<div style="text-align:center;color:var(--text3);font-size:.8rem;margin-bottom:.8rem">Keine Wörter gefunden</div>')+
+        '<div style="text-align:center;color:var(--text3);font-size:.8rem;margin-bottom:.8rem">'+_tc("Keine Wörter gefunden")+'</div>')+
       (usingFallback?'<div style="text-align:center;font-size:.7rem;color:#d97706;margin-bottom:.5rem">⚠️ Englische Wörter wurden verwendet</div>':"")+
       '<button class="btn-p" style="margin-top:.5rem" onclick="'+(tierWsKey?'initTierWortSchmiede(\''+tierWsKey+'\')':'initWortSchmiede()')+';render()">\u{1F501} '+(tierWsKey?'Nochmal':'Neue Stadt')+'</button>'+
       '<button class="btn-g" style="margin-bottom:0" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()">\u{1F6AA} Menü</button>'+
@@ -19108,7 +19108,7 @@ function renderChallengeResult(ch,myScore,mode){
       <div class="ch-score-box"><div style="color:#34d399;font-size:.65rem;margin-bottom:3px">Du</div><div style="font-size:1.6rem;font-weight:900;color:${myWin?"#34d399":tie?"#fbbf24":"var(--text)"}">${myScore.toLocaleString()}</div></div>
     </div>
     <button class="btn-p" onclick="generateChallengeLink(${S.challengeSeed||Date.now()},${myScore})">\u{1F517} Weitergeben</button>
-    <button class="btn-g" onclick="S.challenge=null;rngSeed=null;S.ph='menu';S.tab='home';render()">Zum Menü</button>
+    <button class="btn-g" onclick="S.challenge=null;rngSeed=null;S.ph='menu';S.tab='home';render()">${_tc("Zum Menü")}</button>
   </div></div>`;
 }
 
