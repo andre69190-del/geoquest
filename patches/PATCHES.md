@@ -537,3 +537,7 @@ Beim Install wird nur noch die **App-Shell** (`GeoQuest.html`/`manifest`/`icon`,
 ## Phase 523 — uk_pin Feedback-Bug (0 km fälschlich falsch)
 **Datum:** 2026-06-03
 Bei Zeitablauf wurde eine Pin-Frage über das generische `answer(null)` beantwortet (`S.sel="__t"`), `airportPinDist` blieb ungesetzt → Anzeige „✗ 0 km entfernt" (widersprüchlich, 0 km wäre perfekt). Fix: Pin-Feedback prüft `S.sel==='coord'` (echter Pin gesetzt); sonst Meldung „Zeit abgelaufen – kein Pin gesetzt" (DE/EN/PL). `build_i18n_extra.py` um `EXTRA_UI` erweitert.
+
+## Phase 524 — Pin-Modus komplett kaputt (lat/lng vs targetLat/targetLng)
+**Datum:** 2026-06-03
+Echte Ursache des „0 km ✗"-Bugs: `genCapitalsPinQ` (u. a.) liefert `lat/lng`, aber uk_pin-**Scoring & Kartenmarker** lesen `targetLat/targetLng` → Distanz `NaN` → **jede** Pin-Eingabe „✗ 0 km entfernt" (Hauptstädte-Pin völlig unspielbar). Fix in der Schema-Normalisierung (`nextQ`): `uk_pin`/`airport_pin` erhalten `targetLat/targetLng` als Fallback aus `lat/lng` (+ `ans` aus `subj`) → deckt **alle** Pin-Generatoren ab. Verifiziert: Capitals-Pin self-dist 0, ok=true.

@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 523 (Stand: Juni 2026)
+**Version:** Phase 524 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1227,6 +1227,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **521** | patch_521.py | **Kontrast-Fix Dunkel-Theme: --qcard war auch im Dark Mode weiss (#fff) -> Quizkarten-Text (var(--text)=#f1f5f9) faktisch unsichtbar (1.10:1). Gefixt: --qcard:#1e293b + --text3:#8a96ab (heller). Zwei neue Dauertests: contrast_check.py (WCAG AA fuer Text-auf-Flaeche, beide Themes) und perf_check.py (HTML-/SW-Precache-Groesse). Kontrast 0 FAIL, perf 0 FAIL (1 WARN: SW-Precache ~10MB). Damit 8 Test-Ebenen.** |
 | **522** | patch_522.py | **SW-Precache verschlankt: nur noch App-Shell (GeoQuest.html/manifest/icon, ~6.1MB) wird beim Install vorab gecacht; alle data/*.json werden vom bestehenden Fetch-Handler bei Bedarf zur Laufzeit gecacht (cache.put). Hash bleibt ueber ALLE Assets inkl. Daten -> CACHE_NAME bumpt bei Datenaenderung, alte Runtime-Caches werden in activate geloescht. SW-Precache 10.1MB -> 6.1MB (Quota-Risiko weg). verify-Check 12 angepasst (Shell+Runtime-Cache statt 'alle Daten im Precache'). perf_check 0 WARN. 195/195.** |
 | **523** | patch_523.py | **uk_pin/airport_pin Feedback-Bug: bei Timeout (Frage ueber generisches answer(null) beantwortet, S.sel='__t') blieb airportPinDist ungesetzt -> Anzeige '✗ 0 km entfernt' (widerspruechlich: 0 km waere perfekt). Fix: Pin-Feedback prueft S.sel==='coord' (echter Pin); sonst Meldung 'Zeit abgelaufen – kein Pin gesetzt' (DE/EN/PL in i18n_extra). build_i18n_extra.py um EXTRA_UI erweitert + Writer schreibt Zusatz-Strings. 195/195, i18n 0 Luecken.** |
+| **524** | patch_524.py | **Pin-Bug (echte Ursache): genCapitalsPinQ (und genGeoConstQ) liefern lat/lng, das uk_pin-Scoring/Drawing liest aber targetLat/targetLng -> Distanz=NaN -> JEDE Pin-Eingabe '✗ 0 km entfernt' (Capitals-Pin komplett kaputt). Fix in der Schema-Normalisierung (nextQ): uk_pin/airport_pin bekommen targetLat/targetLng als Fallback aus lat/lng (+ ans aus subj). Deckt alle Pin-Generatoren ab (Scoring UND Kartenmarker). Verifiziert: Capitals-Pin self-dist=0, ok=true. 195/195.** |
 
 ---
 

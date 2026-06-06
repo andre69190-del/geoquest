@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 523. uk_pin/airport_pin Feedback-Bug: bei Timeout (Frage ueber generisches answer(null) beantwortet, S.sel='__t') blieb airportPinDist ungesetzt -> Anzeige '✗ 0 km entfernt' (widerspruechlich: 0 km waere perfekt). Fix: Pin-Feedback prueft S.sel==='coord' (echter Pin); sonst Meldung 'Zeit abgelaufen – kein Pin gesetzt' (DE/EN/PL in i18n_extra). build_i18n_extra.py um EXTRA_UI erweitert + Writer schreibt Zusatz-Strings. 195/195, i18n 0 Luecken.. verify: 195/195."
+git commit -m "Content: Phase 524. Pin-Bug (echte Ursache): genCapitalsPinQ (und genGeoConstQ) liefern lat/lng, das uk_pin-Scoring/Drawing liest aber targetLat/targetLng -> Distanz=NaN -> JEDE Pin-Eingabe '✗ 0 km entfernt' (Capitals-Pin komplett kaputt). Fix in der Schema-Normalisierung (nextQ): uk_pin/airport_pin bekommen targetLat/targetLng als Fallback aus lat/lng (+ ans aus subj). Deckt alle Pin-Generatoren ab (Scoring UND Kartenmarker). Verifiziert: Capitals-Pin self-dist=0, ok=true. 195/195.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
