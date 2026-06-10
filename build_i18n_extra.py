@@ -661,6 +661,9 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ "Fehler-Tagebuch": ("Mistake log", "Dziennik błędów"),
+ "Keine Fehler gespeichert": ("No mistakes saved", "Brak zapisanych błędów"),
+ "Dein Tipp": ("Your guess", "Twój typ"),
  "Schwächen üben": ("Practice weak spots", "Ćwicz słabe punkty"),
  "fällig": ("due", "do powtórki"),
  "Üben": ("Practice", "Ćwicz"),

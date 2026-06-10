@@ -13703,6 +13703,7 @@ function answerAirportPin(clickedLat,clickedLng,tok){
   const pts=Math.max(0,Math.round(500*(1-dist/2500)));
   clr();
   S.sel="coord";S.ok=dist<=250;  /* "correct" if within 250km */
+  S.lastPinLat=clickedLat;S.lastPinLng=clickedLng;
   S.airportPinDist=dist;
   S.airportPinPts=pts;
   if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:S.ok});
@@ -13794,6 +13795,14 @@ function drawAirportPinMap(readOnly){
       .attr("text-anchor","middle").attr("font-size","9px").attr("fill","#10b981")
       .attr("font-weight","700")
       .text((S.q.ans||"").length>35?(S.q.ans||"").slice(0,33)+"…":S.q.ans||"");
+  }
+  /* Phase 535: eigenen Tipp + Verbindungslinie nach der Antwort zeigen */
+  if(readOnly&&S.sel==="coord"&&S.lastPinLat!=null&&S.q&&S.q.targetLat!=null){
+    const [_ux,_uy]=proj([S.lastPinLng,S.lastPinLat])||[0,0];
+    const [_cx,_cy]=proj([S.q.targetLng,S.q.targetLat])||[0,0];
+    g.append("line").attr("x1",_ux).attr("y1",_uy).attr("x2",_cx).attr("y2",_cy).attr("stroke","#ef4444").attr("stroke-width",1.5).attr("stroke-dasharray","4 3").attr("opacity",.65);
+    g.append("circle").attr("cx",_ux).attr("cy",_uy).attr("r",8).attr("fill","#ef4444").attr("stroke","#fff").attr("stroke-width",2).style("filter","drop-shadow(0 2px 4px rgba(0,0,0,.5))");
+    g.append("text").attr("x",_ux).attr("y",_uy+18).attr("text-anchor","middle").attr("font-size","8px").attr("fill","#ef4444").attr("font-weight","700").text(typeof _tc==="function"?_tc("Dein Tipp"):"Dein Tipp");
   }
   /* Click handler: place user pin */
   if(!readOnly){
@@ -14139,7 +14148,8 @@ function _srsDue(){var m=_srsLoad(),now=Date.now(),out=[];for(var lid in m){if(m
 function _srsCount(){return _srsDue().length;}
 function startSrsReview(){var due=_srsDue();if(!due.length){showToast(_tc("Keine Wiederholungen fällig"));return;}S.srsRun=true;S.srsQueue=due.slice(0,20);S.srsTotal=S.srsQueue.length;S.srsCorrect=0;S.mode="srs_review";S.tab="home";S.sc=0;S.rd=0;S.correct=0;S.st=0;rngSeed=null;S.askedLids=new Set();srsNext();}
 function srsNext(){if(!S.srsQueue||!S.srsQueue.length){S.srsRun=false;S.ph="menu";S.tab="home";showToast(_tc("Wiederholung fertig!")+" "+(S.srsCorrect||0)+"/"+(S.srsTotal||0));render();return;}var lid=S.srsQueue.shift();var m=_srsLoad();var e=m[lid];if(!e)return srsNext();var q;try{q=JSON.parse(JSON.stringify(e.q));}catch(_e){return srsNext();}S.q=q;S.sel=null;S.ok=null;S.clueStep=0;S.rankOrder=[];S.ph="playing";S.rd=(S.srsTotal-S.srsQueue.length);S.qRenderedAt=Date.now()+180;render();}
-function renderSrsHero(){var n=_srsCount();if(n<=0)return"";return'<div class="daily-hero" onclick="startSrsReview()" role="button" style="margin-top:8px"><div style="display:flex;align-items:center;justify-content:space-between"><div style="display:flex;align-items:center;gap:12px"><div style="font-size:2.2rem">\u{1F9E0}</div><div><div class="dh-title">'+_tc("Schwächen üben")+'</div><div class="dh-sub">'+n+' '+_tc("fällig")+'</div></div></div><button class="dh-btn" style="background:#8b5cf6">'+_tc("Üben")+'</button></div></div>';}
+function renderSrsHero(){var n=_srsCount();if(n<=0)return"";return'<div class="daily-hero" onclick="startSrsReview()" role="button" style="margin-top:8px"><div style="display:flex;align-items:center;justify-content:space-between"><div style="display:flex;align-items:center;gap:12px"><div style="font-size:2.2rem">\u{1F9E0}</div><div><div class="dh-title">'+_tc("Schwächen üben")+'</div><div class="dh-sub">'+n+' '+_tc("fällig")+'</div></div></div><button class="dh-btn" style="background:var(--bg3);color:var(--text);margin-right:6px" aria-label="Fehler-Tagebuch" onclick="event.stopPropagation();S.srsListModal=true;render()">\u{1F4D3}</button><button class="dh-btn" style="background:#8b5cf6">'+_tc("Üben")+'</button></div></div>';}
+function renderSrsListModal(){var m=_srsLoad();var ks=Object.keys(m);ks.sort(function(a,b){return (m[a].due-m[b].due)||((m[a].box||1)-(m[b].box||1));});var rows=ks.length?ks.map(function(lid){var e=m[lid];var q=e.q||{};var dots="";for(var i=1;i<=4;i++){dots+=(i<(e.box||1)?"\u25CF":"\u25CB");}return '<div style="padding:.5rem 0;border-bottom:1px solid var(--border)"><div style="font-weight:600;font-size:.88rem;color:var(--text)">'+esc(q.subj||q.prompt||lid)+'</div><div style="font-size:.82rem;color:var(--text2)">\u2713 '+esc(String(q.ans!=null?q.ans:""))+'</div><div style="font-size:.7rem;color:#8b5cf6;letter-spacing:2px">'+dots+'</div></div>';}).join(""):'<div style="text-align:center;color:var(--text3);padding:2rem">'+_tc("Keine Fehler gespeichert")+'</div>';return '<div class="modal-overlay" onclick="if(event.target===this){S.srsListModal=false;render()}"><div class="modal-box" style="max-width:360px;max-height:82vh;overflow-y:auto"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem"><div style="font-size:1.05rem;font-weight:900">\u{1F4D3} '+_tc("Fehler-Tagebuch")+'</div><button class="btn-g" style="width:auto;margin:0;padding:.3rem .6rem" aria-label="Schließen" onclick="S.srsListModal=false;render()">\u2715</button></div>'+(ks.length?'<button class="btn-p" style="margin-bottom:.7rem" onclick="S.srsListModal=false;startSrsReview()">'+_tc("Schwächen üben")+'</button>':'')+rows+'</div></div>';}
 
 
 function _smartDefaultCountry(){
@@ -14617,7 +14627,7 @@ app.innerHTML=`<div class="scr">
       ${S.tab==="album"?renderCollectionScreen():""}
       ${S.tab==="stats"?renderStatsTab():""}
       ${S.tab==="admin"?renderAdminTab():""}
-      ${S.settingsModal?renderSettingsModal():""}${S.helpModal?renderHelpModal():""}${S.guideModal?renderGuideModal():""}${S.stickerModal?renderStickerModal():""}${S.travelHint?_travelBanner():""}${S.pinModal?renderPinModal():""}${S.adModal?renderAdModal():""}
+      ${S.settingsModal?renderSettingsModal():""}${S.helpModal?renderHelpModal():""}${S.guideModal?renderGuideModal():""}${S.stickerModal?renderStickerModal():""}${S.travelHint?_travelBanner():""}${S.pinModal?renderPinModal():""}${S.srsListModal?renderSrsListModal():""}${S.adModal?renderAdModal():""}
     </div>${renderBottomNav()}${((!localStorage.getItem('gq_pwa_dismissed')&&S.pwaPrompt)||(_isIOS()&&!_isInStandaloneMode()&&!localStorage.getItem('gq_pwa_ios_dismissed')))?renderPwaBanner():""}`;
     if(S.tab==="home")setTimeout(_scheduleFilterRefresh,80);
   if(S.tab==="home")setTimeout(function(){if(typeof window.renderRecentBar==="function")window.renderRecentBar();},90);

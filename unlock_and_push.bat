@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 534. Spaced Repetition / Fehler-Training (Leitner): Falsch beantwortete Fragen werden als Snapshot in gq_srs erfasst (answer + answerAirportPin, nur replaybare Typen MC/HL/Pin). Boxen 1-5 mit Intervallen (0/0/2/5/12 Tage), Box 5 = gemeistert (entfernt). Neuer Modus 'Schwächen üben' (startSrsReview/srsNext) spielt faellige Items wieder; nextRound erkennt S.srsRun und ruft srsNext. Home-Card renderSrsHero zeigt Faelligkeits-Zahl (nur wenn >0). i18n DE/EN/PL. Verifiziert: Erfassen/Box-Logik/Mastery/Review-Start korrekt. Adressiert den haeufigsten App-Store-Wunsch (smart review statt Zufall).. verify: 195/195."
+git commit -m "Content: Phase 535. Fehler-Tagebuch + Pin-Tipp-Anzeige. (1) renderSrsListModal: Modal listet alle gq_srs-Eintraege (Frage -> richtige Antwort + Box-Punkte), Zugang via Tagebuch-Button in der SRS-Home-Card, mit 'Schwaechen ueben'-Shortcut. (2) Pin-Modus: Klickkoordinaten in S.lastPinLat/Lng gespeichert; im readOnly-Karten-Render wird der eigene Tipp (roter Marker) + Verbindungslinie zur richtigen Lage gezeichnet. i18n DE/EN/PL. Verifiziert: Tagebuch listet korrekt, Pin-Code im Build.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

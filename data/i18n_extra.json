@@ -722,7 +722,10 @@
   "fällig": "due",
   "Üben": "Practice",
   "Keine Wiederholungen fällig": "No reviews due",
-  "Wiederholung fertig!": "Review complete!"
+  "Wiederholung fertig!": "Review complete!",
+  "Fehler-Tagebuch": "Mistake log",
+  "Keine Fehler gespeichert": "No mistakes saved",
+  "Dein Tipp": "Your guess"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1447,6 +1450,9 @@
   "fällig": "do powtórki",
   "Üben": "Ćwicz",
   "Keine Wiederholungen fällig": "Brak powtórek",
-  "Wiederholung fertig!": "Powtórka ukończona!"
+  "Wiederholung fertig!": "Powtórka ukończona!",
+  "Fehler-Tagebuch": "Dziennik błędów",
+  "Keine Fehler gespeichert": "Brak zapisanych błędów",
+  "Dein Tipp": "Twój typ"
  }
 }

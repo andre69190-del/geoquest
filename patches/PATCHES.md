@@ -581,3 +581,7 @@ Die Daily Challenge (Seed/Pool/Resume/7-Tage-Streak) existierte bereits — es f
 ## Phase 534 — Spaced Repetition / Fehler-Training (Leitner)
 **Datum:** 2026-06-03
 Falsch beantwortete Fragen werden als **Snapshot** in `gq_srs` erfasst (`answer`+`answerAirportPin`, nur replaybare Typen MC/HL/Pin). Leitner-Boxen 1–5 mit Intervallen (0/0/2/5/12 Tage), Box 5 = gemeistert (entfernt). Neuer Modus **„Schwächen üben"** (`startSrsReview`/`srsNext`) spielt fällige Items wieder; `nextRound` erkennt `S.srsRun`. Home-Card `renderSrsHero` zeigt die Fälligkeits-Zahl (nur wenn > 0). i18n DE/EN/PL. Verifiziert: Erfassen/Box-Logik/Mastery/Review-Start korrekt. Adressiert den häufigsten App-Store-Wunsch („smart review statt Zufall").
+
+## Phase 535 — Fehler-Tagebuch (Liste) + Pin-Tipp-Anzeige
+**Datum:** 2026-06-03
+(1) **Fehler-Tagebuch** `renderSrsListModal`: Modal listet alle `gq_srs`-Einträge (Frage → richtige Antwort + Box-Punkte ●○○○), Zugang über 📓-Button in der SRS-Home-Card, mit „Schwächen üben"-Shortcut. (2) **Pin-Tipp-Anzeige**: Klickkoordinaten in `S.lastPinLat/Lng`; im readOnly-Karten-Render wird **der eigene Tipp** (roter Marker) + **Verbindungslinie** zur richtigen Lage gezeichnet (vorher nur die richtige Lösung sichtbar). i18n DE/EN/PL. Adressiert die App-Store-Wünsche „study errors" + „show where incorrect guesses are".
