@@ -565,3 +565,7 @@ Der Render rief `.map` auf evtl. undefinierten Feldern auf (`q.hints`, `q.countr
 ## Phase 530 — Barrierefreiheit (alt + aria-label) + Dauertest
 **Datum:** 2026-06-03
 7 Flaggen-`<img>` ohne `alt` → `alt="Flagge"` ergänzt (0 verbleibend). `aria-label` für Icon-only-Buttons: HUD (Vorlesen/Feedback/Beenden/Einstellungen, 27×) + Löschen/Bestätigen/Aktualisieren/Schließen (7×). Neuer Dauertest **`a11y_check.py`** (9. Ebene): **FAIL** bei `<img>` ohne `alt`, **WARN** bei Icon-only-Buttons ohne Label. Ergebnis: 0 FAIL, 69→3 WARN.
+
+## Phase 531 — Performance: license_plates.json nicht-blockierend laden
+**Datum:** 2026-06-03
+`license_plates.json` (3,2 MB) war die **erste** sequenzielle `await`-Fetch beim Start (18 %) und blockierte die App-Initialisierung. Jetzt **nicht-blockierend** nachgeladen: App startet sofort, `PLATES_DATA` wird per `fetch().then()` befüllt, sobald die Datei da ist. Plate-Modi liefern bis dahin `null` (graceful, identisch zum Ladefehler-Fall) und funktionieren danach. Verifiziert: vor Load `null`, nach Load OK. SW-Runtime-Cache übernimmt die Datei nach dem ersten Laden.

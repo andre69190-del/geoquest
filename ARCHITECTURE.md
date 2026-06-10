@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 530 (Stand: Juni 2026)
+**Version:** Phase 531 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1234,6 +1234,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **528** | patch_528.py | **Globales Render-Sicherheitsnetz: render() in Wrapper mit try/catch gekapselt (render->_renderInner + Wrapper). Bei JEDEM Render-Fehler erscheint ein sanfter Fallback (Ueberspringen via clr()+nextRound() / Zum Menue) statt White-Screen-Absturz 'GeoQuest ist abgestuerzt'. Fallback i18n DE/EN/PL. Verifiziert: Wrapper faengt echten Render-Fehler ab (loggt '[GQ] render error', kein Throw); 955 Render OK, keine Regression. Das faengt kuenftige unbekannte Render-Ursachen generell ab.** |
 | **529** | patch_529.py | **Testluecke async-Modi geschlossen: ingame_render_test seedet jetzt NEIGHBORS=_DEFAULT_NEIGHBORS (Live-Fallback, da neighbors.json leer ist) und transformiert rivers/license_plates/area.json direkt ins Zielformat (Parser sind inner-scoped, nicht aufrufbar). Dadurch werden border_q/neighbor/river_real/plate/hl_area jetzt wirklich gerendert (955->962 OK, 0 Render-Fehler). Diese Modi waren bisher ungetestet (headless=null) und der Weg, ueber den der White-Screen-Crash durchrutschte.** |
 | **530** | patch_530.py | **Barrierefreiheit: 7 Flaggen-<img> ohne alt -> alt='Flagge' ergaenzt (0 verbleibend). aria-label fuer Icon-only-Buttons: HUD (Vorlesen/Feedback/Beenden/Einstellungen, 27x) + Loeschen/Bestaetigen/Aktualisieren/Schliessen (7x). Neuer Dauertest a11y_check.py (9. Ebene): FAIL bei <img> ohne alt, WARN bei Icon-only-Buttons ohne Label. Ergebnis 0 FAIL, 69->3 WARN.** |
+| **531** | patch_531.py | **Performance: license_plates.json (3,2 MB) blockierte den Start (erste sequenzielle await-Fetch bei 18%). Jetzt nicht-blockierend nachgeladen: App startet sofort, PLATES_DATA wird per fetch().then() befuellt sobald da. Plate-Modi liefern bis dahin null (graceful, wie bei Ladefehler) und funktionieren danach. Verifiziert: vor Load null, nach Load OK. Kein blockierendes await mehr; SW-Cache unveraendert 6,1 MB.** |
 
 ---
 

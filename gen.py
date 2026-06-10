@@ -19250,7 +19250,7 @@ async function loadGameData(){
     }
   }
   const errors=[];
-  const pRaw  =await safeFetch('./license_plates.json',  'Lade Kennzeichen…',  18)||[];
+  /* Phase 531: license_plates.json (3,2 MB) blockiert den Start nicht mehr — nicht-blockierend nachgeladen (s.u.) */
   const cRaw  =await safeFetch('./currencies.json',       'Lade Währungen…', 32)||[];
   const capRaw=await safeFetch('./capitals_population.json','Lade Hauptstädte…',48)||[];
   const rRaw  =await safeFetch('./rivers.json',           'Lade Flüsse…',    62)||[];
@@ -19259,7 +19259,7 @@ async function loadGameData(){
   const topoRaw=await safeFetch('./world-110m.json',       'Lade Weltkarte…',98);
   if(topoRaw)window.WORLD_TOPO=topoRaw;
 
-  PLATES_DATA = parsePlates(Array.isArray(pRaw)?pRaw:(pRaw?.results?.bindings||[]));
+  try{fetch('./license_plates.json').then(function(r){return r.ok?r.json():null;}).then(function(p){if(p){try{PLATES_DATA=parsePlates(Array.isArray(p)?p:(p&&p.results&&p.results.bindings||[]));}catch(_e){}}}).catch(function(){});}catch(_e){} /* Phase 531: Kennzeichen nicht-blockierend */
   CURR_REAL   = parseCurr(cRaw);
   const _cps=parseCaps(capRaw);if(_cps.length>0)CAPS_POP=_cps; /* Phase 95: guard empty overwrite */
   RIVERS_REAL = parseRivers(rRaw);
