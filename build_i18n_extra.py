@@ -661,6 +661,10 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Einträge': ('entries', 'wpisy'),
+ 'Tagebuch leeren': ('Clear log', 'Wyczyść dziennik'),
+ 'Wirklich leeren?': ('Really clear?', 'Na pewno wyczyścić?'),
+ 'Tagebuch geleert': ('Log cleared', 'Dziennik wyczyszczony'),
  "Zu welcher Region gehört dieses Land?": ("Which region does this country belong to?", "Do jakiego regionu należy ten kraj?"),
  'Jetzt testen': ('Test now', 'Testuj teraz'),
  'Erst lernen, dann testen:': ('Learn first, then test:', 'Najpierw ucz się, potem test:'),

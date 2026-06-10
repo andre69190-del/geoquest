@@ -773,7 +773,11 @@
   "Wählen": "Choose",
   "Jetzt testen": "Test now",
   "Erst lernen, dann testen:": "Learn first, then test:",
-  "Zu welcher Region gehört dieses Land?": "Which region does this country belong to?"
+  "Zu welcher Region gehört dieses Land?": "Which region does this country belong to?",
+  "Einträge": "entries",
+  "Tagebuch leeren": "Clear log",
+  "Wirklich leeren?": "Really clear?",
+  "Tagebuch geleert": "Log cleared"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1549,6 +1553,10 @@
   "Wählen": "Wybierz",
   "Jetzt testen": "Testuj teraz",
   "Erst lernen, dann testen:": "Najpierw ucz się, potem test:",
-  "Zu welcher Region gehört dieses Land?": "Do jakiego regionu należy ten kraj?"
+  "Zu welcher Region gehört dieses Land?": "Do jakiego regionu należy ten kraj?",
+  "Einträge": "wpisy",
+  "Tagebuch leeren": "Wyczyść dziennik",
+  "Wirklich leeren?": "Na pewno wyczyścić?",
+  "Tagebuch geleert": "Dziennik wyczyszczony"
  }
 }

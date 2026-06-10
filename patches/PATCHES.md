@@ -605,3 +605,7 @@ In den Region-Flow integriert: Ein Region-Chip öffnet jetzt eine **Lernkarten-S
 ## Phase 540 — Neues Spiel „Land → Region" (geo_subregion)
 **Datum:** 2026-06-03
 Neuer Modus `geo_subregion` (Kategorie pure_geo): zeigt ein Land, wähle die **Weltregion (Subregion)** aus 4 Optionen. Nutzt `COUNTRIES.sr` + `_SR_DE` (lokalisiert), bestehender `uk_match`-Renderer (kein neues Crash-Risiko). MODES + modes-Liste + GEN-Dispatch + `genSubregionQ` + i18n DE/EN/PL. Verifiziert: Samoa→Polynesien, Sudan→Nordafrika, alle lösbar; **1088 → 1089 Modi**; Render 963 OK, smoke 957/0 THROW. Passt thematisch zum Regionen-/Lern-Feature (538/539).
+
+## Phase 541 — Fehler-Tagebuch: Statistik + Leeren
+**Datum:** 2026-06-03
+Fehler-Tagebuch-Modal erweitert: **Statistik-Zeile** (Anzahl Einträge · fällig) + **2-stufiger „Tagebuch leeren"** (Tap → „Wirklich leeren?" → `srsClear()` löscht `gq_srs`). `srsConfirmClear`-Reset beim Schließen. i18n DE/EN/PL. Verifiziert.

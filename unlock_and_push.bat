@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 540. Neues Spiel 'Land -> Region' (geo_subregion, pure_geo): zeigt ein Land, waehle die Weltregion (Subregion) aus 4 Optionen. Nutzt COUNTRIES.sr + _SR_DE (lokalisiert), bestehender uk_match-Renderer. MODES + modes-Liste + GEN + genSubregionQ + i18n DE/EN/PL. Verifiziert: Samoa->Polynesien, Sudan->Nordafrika, alle loesbar; 1088->1089 Modi; Render 963 OK, smoke 957/0 THROW. Passt thematisch zum neuen Regionen-Feature.. verify: 195/195."
+git commit -m "Content: Phase 541. Fehler-Tagebuch erweitert: Statistik-Zeile (Anzahl Eintraege + faellig) + 2-stufiger 'Tagebuch leeren'-Button (Tap -> 'Wirklich leeren?' -> srsClear loescht gq_srs). srsConfirmClear-Reset beim Schliessen. i18n DE/EN/PL. Verifiziert.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
