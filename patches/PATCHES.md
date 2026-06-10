@@ -593,3 +593,7 @@ Falsch beantwortete Fragen werden als **Snapshot** in `gq_srs` erfasst (`answer`
 ## Phase 537 — SRS-Replay im Render-Test abgedeckt
 **Datum:** 2026-06-03
 `ingame_render_test.js` rendert jetzt auch ~25 SRS-Snapshots im Review-Modus (`S.srsRun`) + die neuen UI-Flächen `renderSrsHero`/`renderSrsListModal`/`renderDailyHero` (25 OK, 0 Fehler). Schließt die Test-Lücke der Spaced-Repetition-Wiedergabe.
+
+## Phase 538 — Feinere Regionen (Sub-Regionen-Filter)
+**Datum:** 2026-06-03
+`_regionOk` um `sub:<Subregion>` erweitert (nutzt `COUNTRIES.sr`). **Alle** Geo-Generatoren, die `_rfilt` nutzen (capital/flag/city/river/landmark/park/unesco/…), respektieren den Filter automatisch — keine Generator-Änderungen. Filter **pro Spiel gescopt** (`S._pendingFilter` → `startGame` setzt/räumt `S.filter`, kein Leak). **Region-Picker-Modal** (21 Subregionen in 5 Gruppen) + Home-Karte „Region üben" → `startRegionQuiz('sub:X','capital')`. i18n DE/EN/PL für alle Regionsnamen. Verifiziert: Osteuropa → Polen/Ukraine…, Nordafrika → Ägypten/Marokko…, Distraktoren regional.

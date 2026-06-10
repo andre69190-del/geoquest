@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 537. ingame_render_test deckt jetzt SRS-Replay ab: ~25 falsch-Snapshots werden gespeichert und im Review-Modus (S.srsRun) gerendert (25 OK, 0 Fehler), plus renderSrsHero/renderSrsListModal/renderDailyHero. fail-Zaehler integriert.. verify: 195/195."
+git commit -m "Content: Phase 538. Feinere Regionen (Sub-Regionen-Filter): _regionOk um 'sub:<Subregion>' erweitert (nutzt COUNTRIES.sr) - alle Geo-Generatoren, die _rfilt nutzen (capital/flag/city/river/landmark/park/unesco...), respektieren den Filter automatisch. Filter pro Spiel gescopt (S._pendingFilter -> startGame setzt/raeumt S.filter). Region-Picker-Modal (21 Subregionen in 5 Gruppen) + Home-Karte 'Region ueben' -> startRegionQuiz('sub:X','capital'). i18n DE/EN/PL fuer alle Regionsnamen. Verifiziert: Osteuropa->Polen/Ukraine.., Nordafrika->Aegypten/Marokko.., Distraktoren regional.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
