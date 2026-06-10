@@ -569,3 +569,7 @@ Der Render rief `.map` auf evtl. undefinierten Feldern auf (`q.hints`, `q.countr
 ## Phase 531 — Performance: license_plates.json nicht-blockierend laden
 **Datum:** 2026-06-03
 `license_plates.json` (3,2 MB) war die **erste** sequenzielle `await`-Fetch beim Start (18 %) und blockierte die App-Initialisierung. Jetzt **nicht-blockierend** nachgeladen: App startet sofort, `PLATES_DATA` wird per `fetch().then()` befüllt, sobald die Datei da ist. Plate-Modi liefern bis dahin `null` (graceful, identisch zum Ladefehler-Fall) und funktionieren danach. Verifiziert: vor Load `null`, nach Load OK. SW-Runtime-Cache übernimmt die Datei nach dem ersten Laden.
+
+## Phase 532 — Inhaltsfeinschliff emob_match (bidirektional + level_autonomy)
+**Datum:** 2026-06-03
+`bidirektional`: `c` enthielt echten Müll (`Deutschland`, `Wirtschaftlichkeit`, `Batterieverschleiß`) und Varianten (`V2H Backup`, `V2G Japan`, `V2L KIA`) → n-basiert auf saubere **V2H/V2G/V2L/V2V** normalisiert. `level_autonomy`: Varianten (`Level 4`, `Level 5`, `Level 2+`, `Level 0`, `Level 4 (begrenzt)`) → die 4 Stufen. Beide jetzt 100 % in `fixedOpts` → klare 4-Optionen-Fragen. **Bewusst belassen:** `stecker`/`zellchemie`/`motorentypen`/… — ihre reicheren `c`-Werte (J1772/NACS/…) sind *korrekter* als ein Zwang in 4 Buckets und liefern seit Phase 515 bereits präzise Fragen.

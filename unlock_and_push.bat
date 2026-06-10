@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 531. Performance: license_plates.json (3,2 MB) blockierte den Start (erste sequenzielle await-Fetch bei 18%). Jetzt nicht-blockierend nachgeladen: App startet sofort, PLATES_DATA wird per fetch().then() befuellt sobald da. Plate-Modi liefern bis dahin null (graceful, wie bei Ladefehler) und funktionieren danach. Verifiziert: vor Load null, nach Load OK. Kein blockierendes await mehr; SW-Cache unveraendert 6,1 MB.. verify: 195/195."
+git commit -m "Content: Phase 532. Inhaltsfeinschliff emob_match: bidirektional (c hatte Muell wie Deutschland/Wirtschaftlichkeit/Batterieverschleiss + Varianten V2H Backup/V2G Japan) auf saubere V2H/V2G/V2L/V2V normalisiert (n-basiert zugeordnet); level_autonomy Varianten (Level 4/5/2+/0/4 begrenzt) auf die 4 Stufen gemappt. Beide jetzt 100% in fixedOpts -> klare 4-Optionen-Fragen. Andere emob-Kategorien (stecker/zellchemie/motorentypen/...) BEWUSST belassen: ihre reicheren c-Werte (J1772/NACS/...) sind korrekter als ein Zwang in 4 Buckets und liefern nach Phase 515 bereits praezise Fragen.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

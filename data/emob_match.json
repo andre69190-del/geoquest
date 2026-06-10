@@ -922,7 +922,7 @@
       },
       {
         "n": "Vollautomatisches Fahren ohne Fahrer im Fahrzeug",
-        "c": "Level 5"
+        "c": "Level 4/5"
       },
       {
         "n": "Autobahnautomat ab 130 km/h (Hände-frei erlaubt)",
@@ -934,7 +934,7 @@
       },
       {
         "n": "Automatisches Einparken ohne Fahrer im Fahrzeug",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "Notbremsassistent aktiviert bei Hindernis",
@@ -946,31 +946,31 @@
       },
       {
         "n": "Waymo One — Robotaxi ohne Sicherheitsfahrer",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "Cruise AV — kommerzieller Robotaxi-Betrieb",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "Tesla FSD Beta (supervised, nicht legal Level 3)",
-        "c": "Level 2+"
+        "c": "Level 2"
       },
       {
         "n": "Baidu Apollo Go — autonome Taxis China",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "Torc Robotics Freightliner — autonome LKW",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "Zoox Bidirektionalfahrzeug — kein Lenkrad",
-        "c": "Level 5"
+        "c": "Level 4/5"
       },
       {
         "n": "Mobileye SuperVision (8 Kameras, kein Lidar)",
-        "c": "Level 2+"
+        "c": "Level 2"
       },
       {
         "n": "Mercedes EQ Drive Pilot StVO §1b (60 km/h D)",
@@ -982,15 +982,15 @@
       },
       {
         "n": "GM Ultra Cruise — Hände-frei auf 95% US-Straßen",
-        "c": "Level 2+"
+        "c": "Level 2"
       },
       {
         "n": "Nuro R3 — fahrerloses Lieferfahrzeug",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "Xpeng XNGP — City NGP autonomes Stadtfahren",
-        "c": "Level 2+"
+        "c": "Level 2"
       },
       {
         "n": "Robert Bosch Highway Assist Level 2 Serie",
@@ -1002,23 +1002,23 @@
       },
       {
         "n": "Einparken per App gesteuert (Remote Parking)",
-        "c": "Level 4 (begrenzt)"
+        "c": "Level 4/5"
       },
       {
         "n": "ADAS Spurhalter: warnt aber greift nicht ein",
-        "c": "Level 0"
+        "c": "Level 1"
       },
       {
         "n": "Knightscope Sicherheitsroboter (Patrouillengebiet)",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "TuSimple Selbstfahrender LKW (Interstate US)",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "Pony.ai Robotaxi Peking (Geofence)",
-        "c": "Level 4"
+        "c": "Level 4/5"
       },
       {
         "n": "Einparkassistent: lenkt, Fahrer bremst",
@@ -1030,15 +1030,15 @@
       },
       {
         "n": "Blindspot-Warnung — kein Eingriff",
-        "c": "Level 0"
+        "c": "Level 1"
       },
       {
         "n": "Lidarloses FSD-Kamerasystem (rein visuell)",
-        "c": "Level 2+"
+        "c": "Level 2"
       },
       {
         "n": "Nvidia DRIVE Orin: Chip für Level 2+ Systeme",
-        "c": "Level 2+"
+        "c": "Level 2"
       }
     ]
   },
@@ -1555,31 +1555,31 @@
       },
       {
         "n": "EV liefert Strom an Heimnetz im Stromausfall",
-        "c": "V2H Backup"
+        "c": "V2H"
       },
       {
         "n": "EV puffert Solarstrom tagsüber, gibt nachts ab",
-        "c": "Solar-Puffer"
+        "c": "V2H"
       },
       {
         "n": "EV lädt zu Niedrigtarifzeiten, gibt zu Hochzeiten ab",
-        "c": "Peak Shaving"
+        "c": "V2G"
       },
       {
         "n": "Nissan LEAF V2G-Pilot in Japan",
-        "c": "V2G Japan"
+        "c": "V2G"
       },
       {
         "n": "Volkswagen MEB-Plattform mit bidirektionalem Laden",
-        "c": "V2H VW"
+        "c": "V2H"
       },
       {
         "n": "BDEW-Standard Deutschland V2G-Protokoll",
-        "c": "Deutschland"
+        "c": "V2G"
       },
       {
         "n": "ISO 15118 — Norm für V2G-Kommunikation",
-        "c": "Internationaler Standard"
+        "c": "V2G"
       },
       {
         "n": "Vehicle-to-Load (V2L) — 230V-Steckdose im Auto",
@@ -1587,87 +1587,87 @@
       },
       {
         "n": "Vehicle-to-Grid stabilisiert Frequenz im Netz",
-        "c": "V2G Netzstabilität"
+        "c": "V2G"
       },
       {
         "n": "Hyundai IONIQ 5 — V2L-fähig ab Werk",
-        "c": "V2L Hyundai"
+        "c": "V2L"
       },
       {
         "n": "KIA EV6 — V2L-Steckdose unter Ladeschwelle",
-        "c": "V2L KIA"
+        "c": "V2L"
       },
       {
         "n": "Mitsubishi Outlander PHEV — V2H Japan",
-        "c": "V2H Mitsubishi"
+        "c": "V2H"
       },
       {
         "n": "CHAdeMO-Standard unterstützt V2G nativ",
-        "c": "CHAdeMO V2G"
+        "c": "V2G"
       },
       {
         "n": "CCS2 V2G-Erweiterung in Entwicklung",
-        "c": "CCS V2G"
+        "c": "V2G"
       },
       {
         "n": "Renault 5 E-Tech — V2L-Funktion ab 2025",
-        "c": "V2L Renault"
+        "c": "V2L"
       },
       {
         "n": "BYD Atto 3 — V2L in Australien",
-        "c": "V2L BYD"
+        "c": "V2L"
       },
       {
         "n": "Bidirektionale Wallbox Enphase IQ8",
-        "c": "Heimspeicher"
+        "c": "V2H"
       },
       {
         "n": "Smart Grid Integration V2G Holland-Pilotprojekt",
-        "c": "Niederlande V2G"
+        "c": "V2G"
       },
       {
         "n": "EV als rollende Batterie im Netzverbund",
-        "c": "Virtual Power Plant"
+        "c": "V2G"
       },
       {
         "n": "V2G Erlöspotenzial bis 2.000 €/Jahr",
-        "c": "Wirtschaftlichkeit"
+        "c": "V2G"
       },
       {
         "n": "Verschleiß durch V2G-Betrieb: +2 % Degradation",
-        "c": "Batterieverschleiß"
+        "c": "V2G"
       },
       {
         "n": "Vertikale Netzintegration: EV ↔ Smart Meter",
-        "c": "Digitale Integration"
+        "c": "V2G"
       },
       {
         "n": "AC-Bidirektional vs. DC-Bidirektional",
-        "c": "Ladetechnik-Unterschied"
+        "c": "V2G"
       },
       {
         "n": "Schulen als V2G-Puffer tagsüber (Pilotprojekte)",
-        "c": "Community V2G"
+        "c": "V2G"
       },
       {
         "n": "Flottenmanagement mit bidirektionalen EVs",
-        "c": "Fleet V2G"
+        "c": "V2G"
       },
       {
         "n": "Regelenergiemarkt: EVs bieten Primärreserve",
-        "c": "Regelenergie"
+        "c": "V2G"
       },
       {
         "n": "USA: Pacific Gas & Electric V2G-Tarif",
-        "c": "USA V2G"
+        "c": "V2G"
       },
       {
         "n": "Australien: AGL V2H-Abo-Tarif",
-        "c": "Australien V2G"
+        "c": "V2G"
       },
       {
         "n": "Off-Grid Camping mit V2L (Wildnis-Strom)",
-        "c": "Off-Grid"
+        "c": "V2L"
       },
       {
         "n": "Fahrzeug versorgt weiteres Fahrzeug (Notladung)",
