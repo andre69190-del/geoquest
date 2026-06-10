@@ -577,3 +577,7 @@ Der Render rief `.map` auf evtl. undefinierten Feldern auf (`q.hints`, `q.countr
 ## Phase 533 — Daily Challenge: teilbares Emoji-Ergebnis (Worldle-Stil)
 **Datum:** 2026-06-03
 Die Daily Challenge (Seed/Pool/Resume/7-Tage-Streak) existierte bereits — es fehlte der **virale Kern**. Ergänzt: pro Runde ✓/✗ in `S.dailyMarks` (in `answer`+`answerAirportPin`), persistiert in Daily-Progress + `markDailyDone`. Im „erledigt"-Hero: 10-Felder-Emoji-Raster (🟩/🟥) + **Teilen-Button** → `shareDailyResult()` (navigator.share bzw. Clipboard; Text: Datum, Emoji, X/10, Streak 🔥, URL). i18n DE/EN/PL. Verifiziert: Emoji/Share/Persistenz korrekt.
+
+## Phase 534 — Spaced Repetition / Fehler-Training (Leitner)
+**Datum:** 2026-06-03
+Falsch beantwortete Fragen werden als **Snapshot** in `gq_srs` erfasst (`answer`+`answerAirportPin`, nur replaybare Typen MC/HL/Pin). Leitner-Boxen 1–5 mit Intervallen (0/0/2/5/12 Tage), Box 5 = gemeistert (entfernt). Neuer Modus **„Schwächen üben"** (`startSrsReview`/`srsNext`) spielt fällige Items wieder; `nextRound` erkennt `S.srsRun`. Home-Card `renderSrsHero` zeigt die Fälligkeits-Zahl (nur wenn > 0). i18n DE/EN/PL. Verifiziert: Erfassen/Box-Logik/Mastery/Review-Start korrekt. Adressiert den häufigsten App-Store-Wunsch („smart review statt Zufall").

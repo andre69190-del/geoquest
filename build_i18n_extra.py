@@ -661,6 +661,11 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ "Schwächen üben": ("Practice weak spots", "Ćwicz słabe punkty"),
+ "fällig": ("due", "do powtórki"),
+ "Üben": ("Practice", "Ćwicz"),
+ "Keine Wiederholungen fällig": ("No reviews due", "Brak powtórek"),
+ "Wiederholung fertig!": ("Review complete!", "Powtórka ukończona!"),
  "Ergebnis teilen": ("Share result", "Udostępnij wynik"),
  "Ergebnis kopiert!": ("Result copied!", "Wynik skopiowany!"),
  "Diese Ansicht konnte nicht geladen werden.": ("This view could not be loaded.", "Nie udało się załadować tego widoku."),

@@ -717,7 +717,12 @@
   "Diese Ansicht konnte nicht geladen werden.": "This view could not be loaded.",
   "Überspringen": "Skip",
   "Ergebnis teilen": "Share result",
-  "Ergebnis kopiert!": "Result copied!"
+  "Ergebnis kopiert!": "Result copied!",
+  "Schwächen üben": "Practice weak spots",
+  "fällig": "due",
+  "Üben": "Practice",
+  "Keine Wiederholungen fällig": "No reviews due",
+  "Wiederholung fertig!": "Review complete!"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1437,6 +1442,11 @@
   "Diese Ansicht konnte nicht geladen werden.": "Nie udało się załadować tego widoku.",
   "Überspringen": "Pomiń",
   "Ergebnis teilen": "Udostępnij wynik",
-  "Ergebnis kopiert!": "Wynik skopiowany!"
+  "Ergebnis kopiert!": "Wynik skopiowany!",
+  "Schwächen üben": "Ćwicz słabe punkty",
+  "fällig": "do powtórki",
+  "Üben": "Ćwicz",
+  "Keine Wiederholungen fällig": "Brak powtórek",
+  "Wiederholung fertig!": "Powtórka ukończona!"
  }
 }

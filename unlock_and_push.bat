@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 533. Daily Challenge: teilbares Emoji-Ergebnis (Worldle-Stil) ergaenzt. Pro Runde wird ✓/✗ in S.dailyMarks getrackt (answer + answerAirportPin), in Daily-Progress + markDailyDone persistiert. Im 'erledigt'-Hero: 10-Felder Emoji-Raster (🟩/🟥) + Teilen-Button -> shareDailyResult() nutzt navigator.share bzw. Clipboard (Text: Datum, Emoji, X/10, Streak, URL). i18n DE/EN/PL. Bestehende Daily-Mechanik (Seed/Pool/Resume/7-Tage-Streak) war schon da; das virale Teilen fehlte.. verify: 195/195."
+git commit -m "Content: Phase 534. Spaced Repetition / Fehler-Training (Leitner): Falsch beantwortete Fragen werden als Snapshot in gq_srs erfasst (answer + answerAirportPin, nur replaybare Typen MC/HL/Pin). Boxen 1-5 mit Intervallen (0/0/2/5/12 Tage), Box 5 = gemeistert (entfernt). Neuer Modus 'Schwächen üben' (startSrsReview/srsNext) spielt faellige Items wieder; nextRound erkennt S.srsRun und ruft srsNext. Home-Card renderSrsHero zeigt Faelligkeits-Zahl (nur wenn >0). i18n DE/EN/PL. Verifiziert: Erfassen/Box-Logik/Mastery/Review-Start korrekt. Adressiert den haeufigsten App-Store-Wunsch (smart review statt Zufall).. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

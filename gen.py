@@ -11687,7 +11687,7 @@ function _exitToMenu(){
     if(_mEntry&&_mEntry.group)_grp=_mEntry.group;
   }
   clr();
-  S.ph='menu';S.tab='home';rngSeed=null;
+  S.ph='menu';S.tab='home';rngSeed=null;S.srsRun=false;
   if(_grp)S.filterCat=_grp;
   render();
   if(_grp){
@@ -11924,6 +11924,7 @@ function renderLVGameover(){
 
 function nextRound(){
   clr();
+  if(S.srsRun){srsNext();return;}
   const nr=S.rd+1;
   if(S.diff!=="survival"&&S.diff!=="blitz"&&nr>=ROUNDS){
     S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
@@ -13253,6 +13254,7 @@ window.genWebkulturMatchExt=genWebkulturMatchExt;
   S.sel=a||"__t";S.ok=ok;
   if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:ok});
   if(S.isDailyRun){(S.dailyMarks=S.dailyMarks||[]).push(ok?1:0);}
+  if(S.srsRun){_srsGrade(S.q.lid,ok);if(ok)S.srsCorrect=(S.srsCorrect||0)+1;}else if(!ok){_srsAdd(S.q);}
   let pts=0;
   if(ok){trackTrainDepot();const ns=S.st+1,t=tier(ns);if(S.diff==="casual"||S.diff==="blitz"){pts=10;}else if(S.diff==="survival"){pts=20+S.tm;S.survTimeBonusTotal=(S.survTimeBonusTotal||0)+S.tm;}else{/* hardcore */S.hcMult=Math.min(2.5,parseFloat((+(S.hcMult||1.0)+0.1).toFixed(1)));S.hcMaxMult=Math.max(S.hcMaxMult||1.0,S.hcMult);pts=Math.ceil(10*1.5);}S.sc+=pts;S.st=ns;S.bs=Math.max(S.bs,ns);S.correct++;soundCorrect();if(ns>=3)setTimeout(()=>soundStreak(ns),250);showPtsPopup(pts,S.diff==='hardcore'?'(1.5x)':'');if(navigator.vibrate)navigator.vibrate([50]);}
   else{S.st=0;if(S.diff==="hardcore"){S.hcMult=1.0;}soundWrong();if(navigator.vibrate)navigator.vibrate([100,50,100]);
@@ -13705,6 +13707,7 @@ function answerAirportPin(clickedLat,clickedLng,tok){
   S.airportPinPts=pts;
   if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:S.ok});
   if(S.isDailyRun){(S.dailyMarks=S.dailyMarks||[]).push(S.ok?1:0);}
+  if(S.srsRun){_srsGrade(S.q.lid,S.ok);if(S.ok)S.srsCorrect=(S.srsCorrect||0)+1;}else if(!S.ok){_srsAdd(S.q);}
   if(pts>0){S.sc+=pts;S.st=S.ok?S.st+1:0;S.correct+=S.ok?1:0;}
   else{S.st=0;}
   render();
@@ -13990,7 +13993,7 @@ function startGame(m,_mpSeed){
   const survBest=parseInt(localStorage.getItem('gq_surv_best')||'0');
   const _m=m||S.mode;
   Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",mode:_m,
-    scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,
+    scoreSaved:false,convModal:false,sessionAnswers:[],newStamps:[],isDailyRun:false,challengeStarted:false,srsRun:false,
     half_removed:false,freezeActive:false,queueExtra:[],askedLids:new Set(),
     survivalBest:survBest,gameStartTime:Date.now(),hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0,blitzTimeLeft:S.diff==="blitz"?60:0,lives:S.diff==="casual"?999:3,
     q:null,sel:null,ok:null,slfData:null,wsData:null,lhData:null,airportPinDist:0,airportPinPts:0,
@@ -14125,6 +14128,18 @@ function updateDailyStreak(){
   }catch(e){return 0;}
 }
 function getStreak(){return _gqLoad('gq_streak',0)||0;}
+/* ===== Phase 534: Spaced Repetition (Leitner) — Fehler-Training ===== */
+var _SRS_IV=[0,0,2,5,12];
+function _srsLoad(){try{return _gqLoad("gq_srs",{})||{};}catch(_e){return {};}}
+function _srsSave(m){try{_gqSave("gq_srs",m);}catch(_e){}}
+function _srsReplayable(q){if(!q||!q.lid)return false;var t=q.type||"";if(t==="uk_pin"||t==="airport_pin")return (q.targetLat!=null&&q.targetLng!=null);return Array.isArray(q.opts)&&q.opts.length>=2&&q.ans!=null;}
+function _srsAdd(q){if(!_srsReplayable(q))return;var m=_srsLoad();var lid=q.lid;var snap;try{snap=JSON.parse(JSON.stringify(q));}catch(_e){return;}if(m[lid]){m[lid].box=1;m[lid].due=Date.now();}else{m[lid]={q:snap,box:1,due:Date.now(),n:0};}var ks=Object.keys(m);if(ks.length>300){ks.sort(function(a,b){return (m[b].box-m[a].box)||(m[a].due-m[b].due);});for(var i=0;i<ks.length-300;i++)delete m[ks[i]];}_srsSave(m);}
+function _srsGrade(lid,ok){var m=_srsLoad();var e=m[lid];if(!e)return;if(ok){e.box=(e.box||1)+1;e.n=(e.n||0)+1;if(e.box>=5){delete m[lid];}else{e.due=Date.now()+_SRS_IV[e.box-1]*86400000;}}else{e.box=1;e.due=Date.now();}_srsSave(m);}
+function _srsDue(){var m=_srsLoad(),now=Date.now(),out=[];for(var lid in m){if(m[lid]&&m[lid].due<=now)out.push(lid);}return out;}
+function _srsCount(){return _srsDue().length;}
+function startSrsReview(){var due=_srsDue();if(!due.length){showToast(_tc("Keine Wiederholungen fällig"));return;}S.srsRun=true;S.srsQueue=due.slice(0,20);S.srsTotal=S.srsQueue.length;S.srsCorrect=0;S.mode="srs_review";S.tab="home";S.sc=0;S.rd=0;S.correct=0;S.st=0;rngSeed=null;S.askedLids=new Set();srsNext();}
+function srsNext(){if(!S.srsQueue||!S.srsQueue.length){S.srsRun=false;S.ph="menu";S.tab="home";showToast(_tc("Wiederholung fertig!")+" "+(S.srsCorrect||0)+"/"+(S.srsTotal||0));render();return;}var lid=S.srsQueue.shift();var m=_srsLoad();var e=m[lid];if(!e)return srsNext();var q;try{q=JSON.parse(JSON.stringify(e.q));}catch(_e){return srsNext();}S.q=q;S.sel=null;S.ok=null;S.clueStep=0;S.rankOrder=[];S.ph="playing";S.rd=(S.srsTotal-S.srsQueue.length);S.qRenderedAt=Date.now()+180;render();}
+function renderSrsHero(){var n=_srsCount();if(n<=0)return"";return'<div class="daily-hero" onclick="startSrsReview()" role="button" style="margin-top:8px"><div style="display:flex;align-items:center;justify-content:space-between"><div style="display:flex;align-items:center;gap:12px"><div style="font-size:2.2rem">\u{1F9E0}</div><div><div class="dh-title">'+_tc("Schwächen üben")+'</div><div class="dh-sub">'+n+' '+_tc("fällig")+'</div></div></div><button class="dh-btn" style="background:#8b5cf6">'+_tc("Üben")+'</button></div></div>';}
 
 
 function _smartDefaultCountry(){
@@ -18553,7 +18568,7 @@ function renderHomeTab(){
           <button onclick="_toggleKidsMode()" title="${_getKidsMode()?t('kids_mode_on'):t('kids_mode_off')}" aria-label="Kids Mode" style="width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:${_getKidsMode()?'rgba(16,185,129,.2)':'var(--bg2)'};color:${_getKidsMode()?'#10b981':'var(--text2,#94a3b8)'};border:1px solid ${_getKidsMode()?'#10b981':'var(--border,#334155)'};font-size:.95rem;cursor:pointer;line-height:1;flex-shrink:0;padding:0">👦</button>
         </div>
       </div>`;
-  const _homeHTML=`${_hdr}${renderDailyHero()}
+  const _homeHTML=`${_hdr}${renderDailyHero()}${renderSrsHero()}
     <div style="display:flex;gap:10px;margin-bottom:.55rem">
       <div class="pvp-hero" onclick="S.mpModal=true;render()" role="button" aria-label="Live 1vs1 starten" style="flex:1;margin:0;padding:.7rem;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center">
         <div style="font-size:1.8rem">⚔️</div>
