@@ -589,3 +589,7 @@ Falsch beantwortete Fragen werden als **Snapshot** in `gq_srs` erfasst (`answer`
 ## Phase 536 — Daily-Karte i18n + a11y 0 WARN + i18n-HTML-Gate
 **Datum:** 2026-06-03
 (1) **Daily-Challenge-Karte** vollständig i18n (DE/EN/PL) — 11 Stellen (Daily Challenge / erledigt / fortsetzen / Runde / Pkt. / Endet in / Weiter / Spielen / Zug-Tag / Letzte 7 Tage / Neue Challenge in). (2) 3 restliche Icon-Buttons (→/✕/↺) mit `aria-label` → **a11y 0 WARN**. (3) Neuer informativer Check **`i18n_html_check.py`**: findet hartkodiertes Deutsch im HTML (Umlaut-Tag-Text + dt. `title`-Tooltips), das **nicht** über `_tc` läuft — 30 Kandidaten (überwiegend Sekundär-Screens: Konto/Statistik/WS + bewusst belassene Admin/Ads/Crash). Ergänzt das harte `i18n_test.js`.
+
+## Phase 537 — SRS-Replay im Render-Test abgedeckt
+**Datum:** 2026-06-03
+`ingame_render_test.js` rendert jetzt auch ~25 SRS-Snapshots im Review-Modus (`S.srsRun`) + die neuen UI-Flächen `renderSrsHero`/`renderSrsListModal`/`renderDailyHero` (25 OK, 0 Fehler). Schließt die Test-Lücke der Spaced-Repetition-Wiedergabe.

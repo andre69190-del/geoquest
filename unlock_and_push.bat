@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 536. Politur: (1) Daily-Challenge-Karte vollstaendig i18n (DE/EN/PL) - 11 Stellen (Daily Challenge/erledigt/fortsetzen/Runde/Pkt./Endet in/Weiter/Spielen/Zug-Tag/Letzte 7 Tage/Neue Challenge in). (2) 3 restliche Icon-Buttons mit aria-label -> a11y 0 WARN. (3) Neuer informativer Check i18n_html_check.py: findet hartkodiertes Deutsch im HTML (Umlaut-Tag-Text + dt. title-Tooltips), das nicht ueber _tc laeuft - 30 Kandidaten (ueberwiegend Sekundaer-Screens), als Wegweiser.. verify: 195/195."
+git commit -m "Content: Phase 537. ingame_render_test deckt jetzt SRS-Replay ab: ~25 falsch-Snapshots werden gespeichert und im Review-Modus (S.srsRun) gerendert (25 OK, 0 Fehler), plus renderSrsHero/renderSrsListModal/renderDailyHero. fail-Zaehler integriert.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

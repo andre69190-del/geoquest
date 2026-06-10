@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 536 (Stand: Juni 2026)
+**Version:** Phase 537 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.11 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1240,6 +1240,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **534** | patch_534.py | **Spaced Repetition / Fehler-Training (Leitner): Falsch beantwortete Fragen werden als Snapshot in gq_srs erfasst (answer + answerAirportPin, nur replaybare Typen MC/HL/Pin). Boxen 1-5 mit Intervallen (0/0/2/5/12 Tage), Box 5 = gemeistert (entfernt). Neuer Modus 'Schwächen üben' (startSrsReview/srsNext) spielt faellige Items wieder; nextRound erkennt S.srsRun und ruft srsNext. Home-Card renderSrsHero zeigt Faelligkeits-Zahl (nur wenn >0). i18n DE/EN/PL. Verifiziert: Erfassen/Box-Logik/Mastery/Review-Start korrekt. Adressiert den haeufigsten App-Store-Wunsch (smart review statt Zufall).** |
 | **535** | patch_535.py | **Fehler-Tagebuch + Pin-Tipp-Anzeige. (1) renderSrsListModal: Modal listet alle gq_srs-Eintraege (Frage -> richtige Antwort + Box-Punkte), Zugang via Tagebuch-Button in der SRS-Home-Card, mit 'Schwaechen ueben'-Shortcut. (2) Pin-Modus: Klickkoordinaten in S.lastPinLat/Lng gespeichert; im readOnly-Karten-Render wird der eigene Tipp (roter Marker) + Verbindungslinie zur richtigen Lage gezeichnet. i18n DE/EN/PL. Verifiziert: Tagebuch listet korrekt, Pin-Code im Build.** |
 | **536** | patch_536.py | **Politur: (1) Daily-Challenge-Karte vollstaendig i18n (DE/EN/PL) - 11 Stellen (Daily Challenge/erledigt/fortsetzen/Runde/Pkt./Endet in/Weiter/Spielen/Zug-Tag/Letzte 7 Tage/Neue Challenge in). (2) 3 restliche Icon-Buttons mit aria-label -> a11y 0 WARN. (3) Neuer informativer Check i18n_html_check.py: findet hartkodiertes Deutsch im HTML (Umlaut-Tag-Text + dt. title-Tooltips), das nicht ueber _tc laeuft - 30 Kandidaten (ueberwiegend Sekundaer-Screens), als Wegweiser.** |
+| **537** | patch_537.py | **ingame_render_test deckt jetzt SRS-Replay ab: ~25 falsch-Snapshots werden gespeichert und im Review-Modus (S.srsRun) gerendert (25 OK, 0 Fehler), plus renderSrsHero/renderSrsListModal/renderDailyHero. fail-Zaehler integriert.** |
 
 ---
 

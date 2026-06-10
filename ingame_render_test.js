@@ -1,7 +1,7 @@
 const fs=require('fs'),vm=require('vm');
 let js=[...fs.readFileSync('GeoQuest.html','utf8').matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)].filter(m=>!/\bsrc\s*=/.test(m[1])).map(m=>m[2]).join('\n;\n');
 const FNS=['renderHomeTab','renderLernenTab','renderLigaTab','renderProfilTab','renderCollectionScreen','renderStatsTab','renderAdminTab','renderSettingsModal','renderHelpModal','renderGuideModal','renderStickerModal','renderPinModal','renderLVSetup','renderLVGameover','renderLVHandoff','renderBottomNav','renderTourModalSKIP'];
-js+=";try{globalThis.__S=S;globalThis.__render=render;globalThis.__GEN=GEN;globalThis.__MODES=MODES;globalThis.__seed=function(rv,pl,ar){try{if(typeof _DEFAULT_NEIGHBORS!=='undefined')NEIGHBORS=_DEFAULT_NEIGHBORS;}catch(e){}try{RIVERS_REAL=rv;}catch(e){}try{PLATES_DATA=pl;}catch(e){}try{if(ar&&ar.length)AREA_DATA=ar;}catch(e){}};globalThis.__F={};["+FNS.map(f=>"'"+f+"'").join(',')+"].forEach(function(n){try{globalThis.__F[n]=eval(n);}catch(e){}});globalThis.__OB=function(){try{return renderOnboarding;}catch(e){return null;}}();}catch(e){globalThis.__err=e&&e.message;}";
+js+=";try{globalThis.__S=S;globalThis.__render=render;globalThis.__GEN=GEN;globalThis.__MODES=MODES;globalThis.__srsAdd=(typeof _srsAdd!=='undefined')?_srsAdd:null;globalThis.__srsHero=(typeof renderSrsHero!=='undefined')?renderSrsHero:null;globalThis.__srsList=(typeof renderSrsListModal!=='undefined')?renderSrsListModal:null;globalThis.__dailyHero=(typeof renderDailyHero!=='undefined')?renderDailyHero:null;globalThis.__seed=function(rv,pl,ar){try{if(typeof _DEFAULT_NEIGHBORS!=='undefined')NEIGHBORS=_DEFAULT_NEIGHBORS;}catch(e){}try{RIVERS_REAL=rv;}catch(e){}try{PLATES_DATA=pl;}catch(e){}try{if(ar&&ar.length)AREA_DATA=ar;}catch(e){}};globalThis.__F={};["+FNS.map(f=>"'"+f+"'").join(',')+"].forEach(function(n){try{globalThis.__F[n]=eval(n);}catch(e){}});globalThis.__OB=function(){try{return renderOnboarding;}catch(e){return null;}}();}catch(e){globalThis.__err=e&&e.message;}";
 const ls=new Map();ls.set('gq_onboarding',JSON.stringify({done:true,lang:'de'}));
 const elProto={style:new Proxy({},{get:()=>'',set:()=>true}),classList:{add(){},remove(){},toggle(){},contains(){return false}},appendChild(){},setAttribute(){},getAttribute(){return null},removeAttribute(){},addEventListener(){},removeEventListener(){},remove(){},focus(){},click(){},querySelector(){return null},querySelectorAll(){return []},getBoundingClientRect(){return{top:0,left:0,width:0,height:0}},insertBefore(){},scrollIntoView(){}};
 const el=new Proxy(elProto,{get:(t,k)=>k in t?t[k]:(typeof k==='string'&&/^(set|get|add|remove|append|insert|query|scroll|focus|click|toggle)/.test(k)?()=>{}:'')});
@@ -39,5 +39,23 @@ MODES.forEach(function(m){
   try{ setupPlay(id,q,true); render(); ok++; }
   catch(e){ fail++; console.log('  [!!] FEEDBACK '+id+' -> '+e.message); }
 });
+/* Phase 537: SRS-Replay + neue UI-Flaechen rendern */
+var srsFail=0,srsOk=0;
+try{
+  var _srsAdd=sb.__srsAdd, _srsHero=sb.__srsHero, _srsList=sb.__srsList, _dailyHero=sb.__dailyHero;
+  if(_srsAdd){var _added=0;
+    for(var _mi=0;_mi<MODES.length&&_added<25;_mi++){var _id=MODES[_mi].id;var _fn=GEN[_id];if(typeof _fn!=='function')continue;var _q=null;try{_q=_fn();}catch(_e){}if(!_q)continue;if(!(Array.isArray(_q.opts)&&_q.opts.length>=2)&&_q.type!=='uk_pin')continue;_q.lid=_q.lid||('srs_'+_id);try{_srsAdd(_q);_added++;}catch(_e){}}
+    /* jeden gespeicherten Snapshot im Review-Modus rendern */
+    var _store={};try{_store=JSON.parse(sb.localStorage.getItem('gq_srs')||'{}');if(_store&&_store.d)_store=_store.d;}catch(_e){}
+    for(var _lid in _store){var _e=_store[_lid];if(!_e||!_e.q)continue;S.srsRun=true;S.q=JSON.parse(JSON.stringify(_e.q));S.sel=null;S.ok=null;S.ph='playing';S.mode='srs_review';S.sc=0;S.rd=0;try{render();srsOk++;}catch(_err){srsFail++;if(srsFail<=5)console.log('  [!!] SRS-RENDER '+_lid+' -> '+_err.message);}}
+    S.srsRun=false;
+  }
+  /* neue UI-Flaechen */
+  if(_srsHero){try{_srsHero();}catch(_e){srsFail++;console.log('  [!!] renderSrsHero -> '+_e.message);}}
+  if(_srsList){try{_srsList();}catch(_e){srsFail++;console.log('  [!!] renderSrsListModal -> '+_e.message);}}
+  if(_dailyHero){try{_dailyHero();}catch(_e){srsFail++;console.log('  [!!] renderDailyHero -> '+_e.message);}}
+}catch(_e){console.log('  [!!] SRS-Block -> '+_e.message);}
+console.log('SRS-REPLAY: '+srsOk+' OK | '+srsFail+' FEHLER');
+fail+=srsFail;
 console.log('\nIN-GAME-RENDER: '+ok+' OK | '+skip+' uebersprungen | '+fail+' RENDER-FEHLER | '+warnans+' ans-nicht-in-opts(info)');
 process.exit(fail?1:0);
