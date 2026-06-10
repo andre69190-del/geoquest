@@ -621,3 +621,7 @@ Neuer Modus `geo_continent` (pure_geo): Land zeigen, Kontinent aus 4 wählen. `g
 ## Phase 544 — Daily-Streak-Kalender (30 Tage)
 **Datum:** 2026-06-03
 30-Tage-**Punkteraster** (`_dailyDots`) im Daily-erledigt-Hero — gespielte Tage grün, sonst grau (ergänzt die 7-Tage-Score-Liste). i18n „Letzte 30 Tage" DE/EN/PL. Verifiziert: 30 Dots.
+
+## Phase 545 — Einstellung: SRS an/aus („Fehler merken")
+**Datum:** 2026-06-03
+SRS-an/aus-Schalter im Settings-Modal („Fehler merken"): `gq_srs_off=1` → `_srsAdd` erfasst keine Fehler mehr; `_srsToggle` schaltet um. (Standard-Schwierigkeit persistiert bereits via `gq_diffx` — bestätigt, kein Handlungsbedarf.) i18n „Fehler merken/An/Aus" DE/EN/PL. Verifiziert: an erfasst, aus blockt, wieder an erfasst.

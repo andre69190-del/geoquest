@@ -780,7 +780,10 @@
   "Tagebuch geleert": "Log cleared",
   "Hauptstädte": "Capitals",
   "Flaggen": "Flags",
-  "Letzte 30 Tage": "Last 30 days"
+  "Letzte 30 Tage": "Last 30 days",
+  "Fehler merken": "Track mistakes",
+  "An": "On",
+  "Aus": "Off"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1563,6 +1566,9 @@
   "Tagebuch geleert": "Dziennik wyczyszczony",
   "Hauptstädte": "Stolice",
   "Flaggen": "Flagi",
-  "Letzte 30 Tage": "Ostatnie 30 dni"
+  "Letzte 30 Tage": "Ostatnie 30 dni",
+  "Fehler merken": "Zapisuj błędy",
+  "An": "Wł.",
+  "Aus": "Wył."
  }
 }

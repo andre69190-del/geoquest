@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 544. Daily-Streak-Kalender: 30-Tage-Punkteraster (_dailyDots) im erledigt-Hero - gespielte Tage gruen, sonst grau. i18n 'Letzte 30 Tage' DE/EN/PL. Verifiziert: 30 Dots.. verify: 195/195."
+git commit -m "Content: Phase 545. Einstellungen: SRS an/aus-Schalter ('Fehler merken') im Settings-Modal. gq_srs_off=1 -> _srsAdd erfasst keine Fehler mehr; _srsToggle schaltet um. Schwierigkeit persistiert bereits via gq_diffx (bestaetigt). i18n Fehler merken/An/Aus DE/EN/PL. Verifiziert: an erfasst, aus blockt, wieder an erfasst.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

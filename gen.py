@@ -14166,9 +14166,10 @@ function getStreak(){return _gqLoad('gq_streak',0)||0;}
 var _SRS_IV=[0,0,2,5,12];
 function _srsLoad(){try{return _gqLoad("gq_srs",{})||{};}catch(_e){return {};}}
 function _srsSave(m){try{_gqSave("gq_srs",m);}catch(_e){}}
+function _srsToggle(){var off=localStorage.getItem("gq_srs_off")==="1";try{if(off)localStorage.removeItem("gq_srs_off");else localStorage.setItem("gq_srs_off","1");}catch(_e){}render();}
 function srsClear(){try{localStorage.removeItem("gq_srs");}catch(_e){}S.srsConfirmClear=false;if(typeof showToast==="function")showToast(_tc("Tagebuch geleert"));render();}
 function _srsReplayable(q){if(!q||!q.lid)return false;var t=q.type||"";if(t==="uk_pin"||t==="airport_pin")return (q.targetLat!=null&&q.targetLng!=null);return Array.isArray(q.opts)&&q.opts.length>=2&&q.ans!=null;}
-function _srsAdd(q){if(!_srsReplayable(q))return;var m=_srsLoad();var lid=q.lid;var snap;try{snap=JSON.parse(JSON.stringify(q));}catch(_e){return;}if(m[lid]){m[lid].box=1;m[lid].due=Date.now();}else{m[lid]={q:snap,box:1,due:Date.now(),n:0};}var ks=Object.keys(m);if(ks.length>300){ks.sort(function(a,b){return (m[b].box-m[a].box)||(m[a].due-m[b].due);});for(var i=0;i<ks.length-300;i++)delete m[ks[i]];}_srsSave(m);}
+function _srsAdd(q){if(localStorage.getItem("gq_srs_off")==="1")return;if(!_srsReplayable(q))return;var m=_srsLoad();var lid=q.lid;var snap;try{snap=JSON.parse(JSON.stringify(q));}catch(_e){return;}if(m[lid]){m[lid].box=1;m[lid].due=Date.now();}else{m[lid]={q:snap,box:1,due:Date.now(),n:0};}var ks=Object.keys(m);if(ks.length>300){ks.sort(function(a,b){return (m[b].box-m[a].box)||(m[a].due-m[b].due);});for(var i=0;i<ks.length-300;i++)delete m[ks[i]];}_srsSave(m);}
 function _srsGrade(lid,ok){var m=_srsLoad();var e=m[lid];if(!e)return;if(ok){e.box=(e.box||1)+1;e.n=(e.n||0)+1;if(e.box>=5){delete m[lid];}else{e.due=Date.now()+_SRS_IV[e.box-1]*86400000;}}else{e.box=1;e.due=Date.now();}_srsSave(m);}
 function _srsDue(){var m=_srsLoad(),now=Date.now(),out=[];for(var lid in m){if(m[lid]&&m[lid].due<=now)out.push(lid);}return out;}
 function _srsCount(){return _srsDue().length;}
@@ -19055,6 +19056,10 @@ function renderSettingsModal(){
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="font-weight:700">\u{1F50A} ${t('set_tts')}</div>
       <button onclick="_ttsToggle()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${S.ttsOn?"An":"Aus"}</button>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
+      <div style="font-weight:700">\u{1F9E0} ${_tc("Fehler merken")}</div>
+      <button onclick="_srsToggle()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_srs_off')==='1'?_tc("Aus"):_tc("An")}</button>
     </div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="font-weight:700">\u{1F525} ${t('set_hardcore')}</div>

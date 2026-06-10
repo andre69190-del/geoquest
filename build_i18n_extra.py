@@ -661,6 +661,9 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Fehler merken': ('Track mistakes', 'Zapisuj błędy'),
+ 'An': ('On', 'Wł.'),
+ 'Aus': ('Off', 'Wył.'),
  "Letzte 30 Tage": ("Last 30 days", "Ostatnie 30 dni"),
  'Hauptstädte': ('Capitals', 'Stolice'),
  'Flaggen': ('Flags', 'Flagi'),
