@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 538 (Stand: Juni 2026)
+**Version:** Phase 539 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.12 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1242,6 +1242,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **536** | patch_536.py | **Politur: (1) Daily-Challenge-Karte vollstaendig i18n (DE/EN/PL) - 11 Stellen (Daily Challenge/erledigt/fortsetzen/Runde/Pkt./Endet in/Weiter/Spielen/Zug-Tag/Letzte 7 Tage/Neue Challenge in). (2) 3 restliche Icon-Buttons mit aria-label -> a11y 0 WARN. (3) Neuer informativer Check i18n_html_check.py: findet hartkodiertes Deutsch im HTML (Umlaut-Tag-Text + dt. title-Tooltips), das nicht ueber _tc laeuft - 30 Kandidaten (ueberwiegend Sekundaer-Screens), als Wegweiser.** |
 | **537** | patch_537.py | **ingame_render_test deckt jetzt SRS-Replay ab: ~25 falsch-Snapshots werden gespeichert und im Review-Modus (S.srsRun) gerendert (25 OK, 0 Fehler), plus renderSrsHero/renderSrsListModal/renderDailyHero. fail-Zaehler integriert.** |
 | **538** | patch_538.py | **Feinere Regionen (Sub-Regionen-Filter): _regionOk um 'sub:<Subregion>' erweitert (nutzt COUNTRIES.sr) - alle Geo-Generatoren, die _rfilt nutzen (capital/flag/city/river/landmark/park/unesco...), respektieren den Filter automatisch. Filter pro Spiel gescopt (S._pendingFilter -> startGame setzt/raeumt S.filter). Region-Picker-Modal (21 Subregionen in 5 Gruppen) + Home-Karte 'Region ueben' -> startRegionQuiz('sub:X','capital'). i18n DE/EN/PL fuer alle Regionsnamen. Verifiziert: Osteuropa->Polen/Ukraine.., Nordafrika->Aegypten/Marokko.., Distraktoren regional.** |
+| **539** | patch_539.py | **Lern-/Uebungsmodus (Lernkarten vor dem Test), integriert in den Region-Flow: Region-Chip oeffnet jetzt eine Lernkarten-Strecke (renderLearnDeck) mit Flagge + Land + Hauptstadt + Vor/Zurueck + 'Jetzt testen' -> startRegionQuiz('sub:X','capital'). _capByCc nutzt CAPITALS. So 'erst lernen, dann testen' (haeufiger Seterra-Wunsch) + Sub-Regionen kombiniert. i18n DE/EN/PL. renderRegionEntry/Modal/LearnDeck im Render-Test abgedeckt. Alle Ebenen gruen.** |
 
 ---
 

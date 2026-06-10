@@ -770,7 +770,9 @@
   "Hauptstädte einer Weltregion": "Capitals of a world region",
   "Hauptstädte-Quiz für eine Region:": "Capital quiz for a region:",
   "Ganze Welt": "Whole world",
-  "Wählen": "Choose"
+  "Wählen": "Choose",
+  "Jetzt testen": "Test now",
+  "Erst lernen, dann testen:": "Learn first, then test:"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1543,6 +1545,8 @@
   "Hauptstädte einer Weltregion": "Stolice regionu świata",
   "Hauptstädte-Quiz für eine Region:": "Quiz stolic dla regionu:",
   "Ganze Welt": "Cały świat",
-  "Wählen": "Wybierz"
+  "Wählen": "Wybierz",
+  "Jetzt testen": "Testuj teraz",
+  "Erst lernen, dann testen:": "Najpierw ucz się, potem test:"
  }
 }

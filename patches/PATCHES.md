@@ -597,3 +597,7 @@ Falsch beantwortete Fragen werden als **Snapshot** in `gq_srs` erfasst (`answer`
 ## Phase 538 — Feinere Regionen (Sub-Regionen-Filter)
 **Datum:** 2026-06-03
 `_regionOk` um `sub:<Subregion>` erweitert (nutzt `COUNTRIES.sr`). **Alle** Geo-Generatoren, die `_rfilt` nutzen (capital/flag/city/river/landmark/park/unesco/…), respektieren den Filter automatisch — keine Generator-Änderungen. Filter **pro Spiel gescopt** (`S._pendingFilter` → `startGame` setzt/räumt `S.filter`, kein Leak). **Region-Picker-Modal** (21 Subregionen in 5 Gruppen) + Home-Karte „Region üben" → `startRegionQuiz('sub:X','capital')`. i18n DE/EN/PL für alle Regionsnamen. Verifiziert: Osteuropa → Polen/Ukraine…, Nordafrika → Ägypten/Marokko…, Distraktoren regional.
+
+## Phase 539 — Lern-/Übungsmodus (Lernkarten vor dem Test)
+**Datum:** 2026-06-03
+In den Region-Flow integriert: Ein Region-Chip öffnet jetzt eine **Lernkarten-Strecke** (`renderLearnDeck`) — Flagge + Land + Hauptstadt, Vor/Zurück, „Jetzt testen" → `startRegionQuiz('sub:X','capital')`. `_capByCc` nutzt `CAPITALS`. Damit „erst lernen, dann testen" (häufiger Seterra-Wunsch) **kombiniert mit** Sub-Regionen. i18n DE/EN/PL. `renderRegionEntry/Modal/LearnDeck` im Render-Test abgedeckt (0 Fehler).
