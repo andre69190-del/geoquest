@@ -613,3 +613,7 @@ Fehler-Tagebuch-Modal erweitert: **Statistik-Zeile** (Anzahl Einträge · fälli
 ## Phase 542 — Region-Picker: Modus-Wahl (Hauptstädte/Flaggen) + Kontinent-Quiz
 **Datum:** 2026-06-03
 Region-Picker erweitert: (1) Lernkarten bieten **Modus-Wahl** — Hauptstädte ODER Flaggen testen (`startRegionQuiz` mit `capital`/`flag`, beide respektieren den Sub-Filter via `_rfilt`). (2) Pro Kontinent-Gruppe ein **🌍-Quiz-Button** (`startContinent` → `_GRP_FILTER` Europa→europe … → ganzer Kontinent). i18n DE/EN/PL. Verifiziert: Flaggen+Osteuropa regional (Ukraine/Belarus/…), Kontinent-Filter (Europa).
+
+## Phase 543 — Neues Spiel „Land → Kontinent" (geo_continent)
+**Datum:** 2026-06-03
+Neuer Modus `geo_continent` (pure_geo): Land zeigen, Kontinent aus 4 wählen. `genContinentQ` nutzt `COUNTRIES.ct` + `_CONT_DE` (lokalisiert). Kontinent-Namen + Prompt waren bereits übersetzt → 0 neue i18n. **1089 → 1090 Modi**. Verifiziert: Ungarn→Europa, Ghana→Afrika, Ecuador→Südamerika. Einfache Grundgeografie für jüngere Stufen.
