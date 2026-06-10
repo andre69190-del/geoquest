@@ -725,7 +725,20 @@
   "Wiederholung fertig!": "Review complete!",
   "Fehler-Tagebuch": "Mistake log",
   "Keine Fehler gespeichert": "No mistakes saved",
-  "Dein Tipp": "Your guess"
+  "Dein Tipp": "Your guess",
+  "Daily fortgesetzt – Runde": "Daily resumed – round",
+  "Letzte 7 Tage": "Last 7 days",
+  "Daily Challenge erledigt!": "Daily challenge done!",
+  "Score:": "Score:",
+  "Neue Challenge in": "New challenge in",
+  "Daily fortsetzen": "Resume daily",
+  "Runde": "Round",
+  "Pkt.": "pts",
+  "Endet in": "Ends in",
+  "Weiter": "Continue",
+  "Zug-Tag": "Train day",
+  "Daily Challenge": "Daily Challenge",
+  "Spielen": "Play"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1453,6 +1466,19 @@
   "Wiederholung fertig!": "Powtórka ukończona!",
   "Fehler-Tagebuch": "Dziennik błędów",
   "Keine Fehler gespeichert": "Brak zapisanych błędów",
-  "Dein Tipp": "Twój typ"
+  "Dein Tipp": "Twój typ",
+  "Daily fortgesetzt – Runde": "Wznowiono – runda",
+  "Letzte 7 Tage": "Ostatnie 7 dni",
+  "Daily Challenge erledigt!": "Wyzwanie dnia ukończone!",
+  "Score:": "Wynik:",
+  "Neue Challenge in": "Nowe wyzwanie za",
+  "Daily fortsetzen": "Wznów wyzwanie",
+  "Runde": "Runda",
+  "Pkt.": "pkt",
+  "Endet in": "Kończy się za",
+  "Weiter": "Dalej",
+  "Zug-Tag": "Dzień pociągów",
+  "Daily Challenge": "Wyzwanie dnia",
+  "Spielen": "Graj"
  }
 }

@@ -661,6 +661,19 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Daily fortgesetzt – Runde': ('Daily resumed – round', 'Wznowiono – runda'),
+ 'Letzte 7 Tage': ('Last 7 days', 'Ostatnie 7 dni'),
+ 'Daily Challenge erledigt!': ('Daily challenge done!', 'Wyzwanie dnia ukończone!'),
+ 'Score:': ('Score:', 'Wynik:'),
+ 'Neue Challenge in': ('New challenge in', 'Nowe wyzwanie za'),
+ 'Daily fortsetzen': ('Resume daily', 'Wznów wyzwanie'),
+ 'Runde': ('Round', 'Runda'),
+ 'Pkt.': ('pts', 'pkt'),
+ 'Endet in': ('Ends in', 'Kończy się za'),
+ 'Weiter': ('Continue', 'Dalej'),
+ 'Zug-Tag': ('Train day', 'Dzień pociągów'),
+ 'Daily Challenge': ('Daily Challenge', 'Wyzwanie dnia'),
+ 'Spielen': ('Play', 'Graj'),
  "Fehler-Tagebuch": ("Mistake log", "Dziennik błędów"),
  "Keine Fehler gespeichert": ("No mistakes saved", "Brak zapisanych błędów"),
  "Dein Tipp": ("Your guess", "Twój typ"),

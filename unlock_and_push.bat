@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 535. Fehler-Tagebuch + Pin-Tipp-Anzeige. (1) renderSrsListModal: Modal listet alle gq_srs-Eintraege (Frage -> richtige Antwort + Box-Punkte), Zugang via Tagebuch-Button in der SRS-Home-Card, mit 'Schwaechen ueben'-Shortcut. (2) Pin-Modus: Klickkoordinaten in S.lastPinLat/Lng gespeichert; im readOnly-Karten-Render wird der eigene Tipp (roter Marker) + Verbindungslinie zur richtigen Lage gezeichnet. i18n DE/EN/PL. Verifiziert: Tagebuch listet korrekt, Pin-Code im Build.. verify: 195/195."
+git commit -m "Content: Phase 536. Politur: (1) Daily-Challenge-Karte vollstaendig i18n (DE/EN/PL) - 11 Stellen (Daily Challenge/erledigt/fortsetzen/Runde/Pkt./Endet in/Weiter/Spielen/Zug-Tag/Letzte 7 Tage/Neue Challenge in). (2) 3 restliche Icon-Buttons mit aria-label -> a11y 0 WARN. (3) Neuer informativer Check i18n_html_check.py: findet hartkodiertes Deutsch im HTML (Umlaut-Tag-Text + dt. title-Tooltips), das nicht ueber _tc laeuft - 30 Kandidaten (ueberwiegend Sekundaer-Screens), als Wegweiser.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

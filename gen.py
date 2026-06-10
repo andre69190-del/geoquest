@@ -14282,7 +14282,7 @@ function startDailyChallenge(){
       askedLids:new Set(_prog.lids||[]),dailyMarks:_prog.marks||[],
       gameStartTime:Date.now(),adShownThisGame:false,adModal:false,
       slfData:null,wsData:null,lhData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});
-    showToast("\u{1F4CD} Daily fortgesetzt – Runde "+((_prog.rd||0)+1)+"/10");
+    showToast("\u{1F4CD} "+_tc("Daily fortgesetzt – Runde")+" "+((_prog.rd||0)+1)+"/10");
     lq();
     return;
   }
@@ -14310,13 +14310,13 @@ function renderDailyHero(){
   if(done){
     const _hist=getDailyHistory();
     const _today=new Date().toISOString().slice(0,10);
-    const _histHtml=_hist.length>1?`<div style="margin-top:.75rem;border-top:1px solid var(--border);padding-top:.6rem"><div style="font-size:.68rem;font-weight:700;color:var(--text3);letter-spacing:.05em;margin-bottom:.35rem">\u{1F4CA} LETZTE 7 TAGE</div>${_hist.map(_h=>`<div style="display:flex;justify-content:space-between;font-size:.78rem;padding:.12rem 0"><span style="color:var(--text2)">${_h.date.slice(5).replace('-','.')}</span><span style="font-weight:700;color:${_h.date===_today?'#6366f1':'var(--text)'}">${_h.score.toLocaleString()}</span></div>`).join("")}</div>`:"";
+    const _histHtml=_hist.length>1?`<div style="margin-top:.75rem;border-top:1px solid var(--border);padding-top:.6rem"><div style="font-size:.68rem;font-weight:700;color:var(--text3);letter-spacing:.05em;margin-bottom:.35rem">\u{1F4CA} ${_tc("Letzte 7 Tage")}</div>${_hist.map(_h=>`<div style="display:flex;justify-content:space-between;font-size:.78rem;padding:.12rem 0"><span style="color:var(--text2)">${_h.date.slice(5).replace('-','.')}</span><span style="font-weight:700;color:${_h.date===_today?'#6366f1':'var(--text)'}">${_h.score.toLocaleString()}</span></div>`).join("")}</div>`:"";
     return`<div class="daily-hero done">
       <div style="display:flex;align-items:center;gap:12px">
         <div style="font-size:2rem">\u{1F3C6}</div>
         <div>
-          <div class="dh-title">Daily Challenge erledigt\!</div>
-          <div class="dh-sub" style="color:var(--text2)">Score: <b>${stored?.score?.toLocaleString()||"?"}</b> \u00b7 Neue Challenge in <span style="font-family:monospace;color:#f59e0b">${cd}</span></div>
+          <div class="dh-title">${_tc("Daily Challenge erledigt!")}</div>
+          <div class="dh-sub" style="color:var(--text2)">${_tc("Score:")} <b>${stored?.score?.toLocaleString()||"?"}</b> \u00b7 ${_tc("Neue Challenge in")} <span style="font-family:monospace;color:#f59e0b">${cd}</span></div>
         </div>
       </div>
       <div style="margin-top:.7rem;text-align:center"><div style="font-size:1.05rem;letter-spacing:2px">${_dailyEmoji(stored&&stored.marks)}</div><button class="btn-g" style="margin-top:.5rem;width:auto;padding:.4rem 1rem" aria-label="Ergebnis teilen" onclick="event.stopPropagation();shareDailyResult()">\u{1F4E4} ${_tc("Ergebnis teilen")}</button></div>
@@ -14330,11 +14330,11 @@ function renderDailyHero(){
         <div style="display:flex;align-items:center;gap:12px">
           <div style="font-size:2.2rem">\u{1F4CD}</div>
           <div>
-            <div class="dh-title">Daily fortsetzen</div>
-            <div class="dh-sub">Runde ${(_prog.rd||0)+1}/10 · ${(_prog.sc||0).toLocaleString()} Pkt. · Endet in <span class="dh-cd">${cd}</span></div>
+            <div class="dh-title">${_tc("Daily fortsetzen")}</div>
+            <div class="dh-sub">${_tc("Runde")} ${(_prog.rd||0)+1}/10 · ${(_prog.sc||0).toLocaleString()} ${_tc("Pkt.")} · ${_tc("Endet in")} <span class="dh-cd">${cd}</span></div>
           </div>
         </div>
-        <button class="dh-btn" style="background:#6366f1">Weiter</button>
+        <button class="dh-btn" style="background:#6366f1">${_tc("Weiter")}</button>
       </div>
     </div>`;
   }
@@ -14342,17 +14342,17 @@ function renderDailyHero(){
   const _todayMode=DAILY_POOL[getDailySeed()%DAILY_POOL.length];
   const _isZugDay=_zugM.indexOf(_todayMode)!==-1;
   const _dIcon=_isZugDay?"\u{1F686}":"\u{1F4C5}";
-  const _dTag=_isZugDay?`<span style="background:#006064;color:#fff;font-size:.65rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-left:6px">\u{1F682} Zug-Tag</span>`:""; 
+  const _dTag=_isZugDay?`<span style="background:#006064;color:#fff;font-size:.65rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-left:6px">\u{1F682} ${_tc("Zug-Tag")}</span>`:""; 
   return`<div class="daily-hero" onclick="startDailyChallenge()" role="button">
     <div style="display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:12px">
         <div style="font-size:2.2rem">${_dIcon}</div>
         <div>
-          <div class="dh-title">Daily Challenge${_dTag}</div>
-          <div class="dh-sub">Endet in <span class="dh-cd">${cd}</span> \u00b7 +100 GeoCoins</div>
+          <div class="dh-title">${_tc("Daily Challenge")}${_dTag}</div>
+          <div class="dh-sub">${_tc("Endet in")} <span class="dh-cd">${cd}</span> \u00b7 +100 GeoCoins</div>
         </div>
       </div>
-      <button class="dh-btn">Spielen</button>
+      <button class="dh-btn">${_tc("Spielen")}</button>
     </div>
   </div>`;
 }
@@ -16398,7 +16398,7 @@ function renderReiseroute(sc){
         oninput="S.routeInput=this.value;S.routeSugg=getRouteSugg(this.value);render()"
         onkeydown="if(event.key==='Enter')handleRouteSubmit(S.routeInput)"
         style="flex:1;min-width:0">
-      <button class="btn-p" style="padding:.45rem 1rem;margin-bottom:0;width:auto;flex-shrink:0;min-width:2.6rem;font-size:1.1rem" onclick="handleRouteSubmit(S.routeInput)">\u2192</button>
+      <button class="btn-p" style="padding:.45rem 1rem;margin-bottom:0;width:auto;flex-shrink:0;min-width:2.6rem;font-size:1.1rem" aria-label="Antwort senden" onclick="handleRouteSubmit(S.routeInput)">\u2192</button>
     </div>
     <div class="rr-sugg">${suggHtml}</div>
     ${rd.errMsg?`<div style="color:#ef4444;font-size:.8rem;margin-top:4px">${esc(rd.errMsg)}</div>`:""}
@@ -16779,7 +16779,7 @@ function renderWortSchmiede(sc){
       '<div style="display:flex;gap:8px;margin-bottom:.45rem">'+
         '<button class="btn-p" style="flex:1;padding:.65rem;font-weight:900;font-size:1rem" onclick="handleWsCheck()">✔ OK</button>'+
         '<button style="padding:.65rem 1rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:1rem;cursor:pointer;font-weight:900;color:var(--text)" onclick="wsBackspace()" aria-label="Buchstabe löschen">⌫</button>'+
-        '<button style="padding:.65rem 1rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:.75rem;cursor:pointer;font-weight:700;color:var(--text3)" onclick="if(S.wsData)S.wsData.input=\'\';render()">✕</button>'+
+        '<button style="padding:.65rem 1rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:.75rem;cursor:pointer;font-weight:700;color:var(--text3)" aria-label="Schließen" onclick="if(S.wsData)S.wsData.input=\'\';render()">✕</button>'+
       '</div>'+
       /* Fallback / lang indicator */
       fbBadge+
@@ -19040,7 +19040,7 @@ function renderSettingsModal(){
     <div style="margin-bottom:.75rem"><div style="font-weight:700;margin-bottom:6px">🧒 ${t('kids_grade_label')}</div><div style="display:flex;flex-wrap:wrap;gap:8px">${[['1',t('kids_grade_young')],['2',t('kids_grade_older')],['3',t('kids_grade_t3')],['4',t('kids_grade_t4')]].map(function(o){var cur=(localStorage.getItem('gq_kids_grade')||'2')===o[0];return '<button onclick="localStorage.setItem(\'gq_kids_grade\',\''+o[0]+'\');localStorage.removeItem(\'gq_kid_boost\');render()" style="flex:1 1 46%;padding:.5rem;border-radius:8px;border:none;cursor:pointer;font-weight:700;font-size:.78rem;background:'+(cur?'#10b981':'var(--bg3)')+';color:'+(cur?'#fff':'var(--text)')+'">'+o[1]+'</button>';}).join('')}</div></div>
     ${(typeof sbUser!=='undefined'&&sbUser&&sbUser.email==='andre69190@gmail.com')?`<div style="border-top:2px solid #6366f1;margin:.5rem 0 .6rem;padding-top:.6rem"><div style="font-weight:800;margin-bottom:6px;color:#6366f1">🛠️ Admin: Altersstufen-Vorschau</div><div style="display:flex;flex-wrap:wrap;gap:6px">${[['0','Erwachsen','0',''],['1','1 · 6–8','1',''],['2','2 · 8–10','2',''],['3','3 · 11–13','3',''],['4','4 · 14–15','4',''],['16','16+ (Boost)','3','2']].map(function(s){var oc="S.settingsModal=false;localStorage.removeItem(\'gq_block_adult\');";oc+= s[0]==='0' ? "localStorage.setItem(\'gq_kids_mode\',\'0\');" : "localStorage.setItem(\'gq_kids_mode\',\'1\');localStorage.setItem(\'gq_kids_grade\',\'"+s[2]+"\');";oc+= s[3] ? "localStorage.setItem(\'gq_kid_boost\',\'"+s[3]+"\');" : "localStorage.removeItem(\'gq_kid_boost\');";oc+="render()";return '<button onclick="'+oc+'" style="flex:1 1 30%;padding:.45rem;border-radius:8px;border:1.5px solid var(--border);background:var(--bg2);color:var(--text);font-weight:700;font-size:.72rem;cursor:pointer">'+s[1]+'</button>';}).join('')}</div><div style="font-size:.66rem;color:var(--text3);margin-top:5px">Setzt Kinder-Modus + Stufe; danach Home öffnen. „16+" = Stufe 3 mit Boost auf Erwachsenen-Inhalte.</div></div>`:''}
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem"><div><div style="font-weight:700">🔓 ${t('set_adult')}</div><div style="font-size:.72rem;color:var(--text3);margin-top:2px">${t('set_adult_sub')}</div></div><button onclick="var _hp=false;try{_hp=!!localStorage.getItem('gq_kids_pin');}catch(e){}if(_hp){S.pinMode='adultblock';S.pinErr=false;S.pinModal=true;render();}else{var ab=localStorage.getItem('gq_block_adult')==='1';localStorage.setItem('gq_block_adult',ab?'0':'1');render();}" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_block_adult')==='1'?'Aus':'An'}</button></div>
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div style="font-weight:700;font-size:.82rem;color:var(--text2)">${t('kid_reset')}</div><button onclick="localStorage.removeItem('gq_kid_boost');render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">↺</button></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div style="font-weight:700;font-size:.82rem;color:var(--text2)">${t('kid_reset')}</div><button onclick="localStorage.removeItem('gq_kid_boost');render()" aria-label="Zurücksetzen" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">↺</button></div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div><div style="font-weight:700">🎯 ${t('practice_setting')}</div><div style="font-size:.72rem;color:var(--text3);margin-top:2px">${t('practice_sub')}</div></div><button onclick="var on=localStorage.getItem('gq_practice')==='1';localStorage.setItem('gq_practice',on?'0':'1');render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_practice')==='1'?'An':'Aus'}</button></div>
     <button onclick="S.pinMode='set';S.pinErr=false;S.settingsModal=false;S.pinModal=true;render()" class="btn-g" style="margin-bottom:.5rem;background:var(--bg3)">🔒 ${t('pin_setting')}</button>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div><div style="font-weight:700">🎯 ${t('rec_setting')}</div><div style="font-size:.72rem;color:var(--text3);margin-top:2px">${t('rec_sub')}</div></div><button onclick="var on=localStorage.getItem('gq_rec_games')!=='0';localStorage.setItem('gq_rec_games',on?'0':'1');render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_rec_games')!=='0'?'An':'Aus'}</button></div>

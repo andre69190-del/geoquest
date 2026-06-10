@@ -585,3 +585,7 @@ Falsch beantwortete Fragen werden als **Snapshot** in `gq_srs` erfasst (`answer`
 ## Phase 535 — Fehler-Tagebuch (Liste) + Pin-Tipp-Anzeige
 **Datum:** 2026-06-03
 (1) **Fehler-Tagebuch** `renderSrsListModal`: Modal listet alle `gq_srs`-Einträge (Frage → richtige Antwort + Box-Punkte ●○○○), Zugang über 📓-Button in der SRS-Home-Card, mit „Schwächen üben"-Shortcut. (2) **Pin-Tipp-Anzeige**: Klickkoordinaten in `S.lastPinLat/Lng`; im readOnly-Karten-Render wird **der eigene Tipp** (roter Marker) + **Verbindungslinie** zur richtigen Lage gezeichnet (vorher nur die richtige Lösung sichtbar). i18n DE/EN/PL. Adressiert die App-Store-Wünsche „study errors" + „show where incorrect guesses are".
+
+## Phase 536 — Daily-Karte i18n + a11y 0 WARN + i18n-HTML-Gate
+**Datum:** 2026-06-03
+(1) **Daily-Challenge-Karte** vollständig i18n (DE/EN/PL) — 11 Stellen (Daily Challenge / erledigt / fortsetzen / Runde / Pkt. / Endet in / Weiter / Spielen / Zug-Tag / Letzte 7 Tage / Neue Challenge in). (2) 3 restliche Icon-Buttons (→/✕/↺) mit `aria-label` → **a11y 0 WARN**. (3) Neuer informativer Check **`i18n_html_check.py`**: findet hartkodiertes Deutsch im HTML (Umlaut-Tag-Text + dt. `title`-Tooltips), das **nicht** über `_tc` läuft — 30 Kandidaten (überwiegend Sekundär-Screens: Konto/Statistik/WS + bewusst belassene Admin/Ads/Crash). Ergänzt das harte `i18n_test.js`.
