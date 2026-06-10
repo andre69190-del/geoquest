@@ -617,3 +617,7 @@ Region-Picker erweitert: (1) Lernkarten bieten **Modus-Wahl** — Hauptstädte O
 ## Phase 543 — Neues Spiel „Land → Kontinent" (geo_continent)
 **Datum:** 2026-06-03
 Neuer Modus `geo_continent` (pure_geo): Land zeigen, Kontinent aus 4 wählen. `genContinentQ` nutzt `COUNTRIES.ct` + `_CONT_DE` (lokalisiert). Kontinent-Namen + Prompt waren bereits übersetzt → 0 neue i18n. **1089 → 1090 Modi**. Verifiziert: Ungarn→Europa, Ghana→Afrika, Ecuador→Südamerika. Einfache Grundgeografie für jüngere Stufen.
+
+## Phase 544 — Daily-Streak-Kalender (30 Tage)
+**Datum:** 2026-06-03
+30-Tage-**Punkteraster** (`_dailyDots`) im Daily-erledigt-Hero — gespielte Tage grün, sonst grau (ergänzt die 7-Tage-Score-Liste). i18n „Letzte 30 Tage" DE/EN/PL. Verifiziert: 30 Dots.

@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 543. Neues Spiel 'Land -> Kontinent' (geo_continent, pure_geo): Land zeigen, Kontinent aus 4 waehlen. genContinentQ nutzt COUNTRIES.ct + _CONT_DE (lokalisiert). Kontinent-Namen + Prompt schon uebersetzt -> 0 neue i18n. 1089->1090 Modi. Verifiziert: Ungarn->Europa, Ghana->Afrika, Ecuador->Suedamerika. Gut fuer juengere Stufen.. verify: 195/195."
+git commit -m "Content: Phase 544. Daily-Streak-Kalender: 30-Tage-Punkteraster (_dailyDots) im erledigt-Hero - gespielte Tage gruen, sonst grau. i18n 'Letzte 30 Tage' DE/EN/PL. Verifiziert: 30 Dots.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

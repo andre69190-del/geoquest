@@ -779,7 +779,8 @@
   "Wirklich leeren?": "Really clear?",
   "Tagebuch geleert": "Log cleared",
   "Hauptstädte": "Capitals",
-  "Flaggen": "Flags"
+  "Flaggen": "Flags",
+  "Letzte 30 Tage": "Last 30 days"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1561,6 +1562,7 @@
   "Wirklich leeren?": "Na pewno wyczyścić?",
   "Tagebuch geleert": "Dziennik wyczyszczony",
   "Hauptstädte": "Stolice",
-  "Flaggen": "Flagi"
+  "Flaggen": "Flagi",
+  "Letzte 30 Tage": "Ostatnie 30 dni"
  }
 }

@@ -14339,6 +14339,7 @@ function shareDailyResult(){
   if(navigator.share){navigator.share({text:txt}).catch(function(){});}
   else{try{navigator.clipboard.writeText(txt).then(function(){showToast(_tc("Ergebnis kopiert!"));},function(){});}catch(_e){}}
 }
+function _dailyDots(){var out="";var today=new Date();for(var k=29;k>=0;k--){var d=new Date(today);d.setDate(d.getDate()-k);var key="gq_daily_"+d.toISOString().slice(0,10);var done=false;try{done=!!localStorage.getItem(key);}catch(_e){}out+='<span style="display:inline-block;width:9px;height:9px;border-radius:2px;margin:1px;background:'+(done?"#10b981":"var(--bg4,#e2e8f0)")+'"></span>';}return out;}
 function renderDailyHero(){
   const done=isDailyDone();
   const stored=done?JSON.parse(localStorage.getItem(getDailyKey())||"null"):null;
@@ -14355,7 +14356,7 @@ function renderDailyHero(){
           <div class="dh-sub" style="color:var(--text2)">${_tc("Score:")} <b>${stored?.score?.toLocaleString()||"?"}</b> \u00b7 ${_tc("Neue Challenge in")} <span style="font-family:monospace;color:#f59e0b">${cd}</span></div>
         </div>
       </div>
-      <div style="margin-top:.7rem;text-align:center"><div style="font-size:1.05rem;letter-spacing:2px">${_dailyEmoji(stored&&stored.marks)}</div><button class="btn-g" style="margin-top:.5rem;width:auto;padding:.4rem 1rem" aria-label="Ergebnis teilen" onclick="event.stopPropagation();shareDailyResult()">\u{1F4E4} ${_tc("Ergebnis teilen")}</button></div>
+      <div style="margin-top:.7rem;text-align:center"><div style="font-size:1.05rem;letter-spacing:2px">${_dailyEmoji(stored&&stored.marks)}</div><button class="btn-g" style="margin-top:.5rem;width:auto;padding:.4rem 1rem" aria-label="Ergebnis teilen" onclick="event.stopPropagation();shareDailyResult()">\u{1F4E4} ${_tc("Ergebnis teilen")}</button></div><div style="margin-top:.6rem"><div style="font-size:.68rem;font-weight:700;color:var(--text3);letter-spacing:.05em;margin-bottom:.3rem">${_tc("Letzte 30 Tage")}</div><div style="line-height:1">${_dailyDots()}</div></div>
       ${_histHtml}
     </div>`;}
   /* P284: Bereits begonnen aber nicht abgeschlossen? Resume-Karte zeigen */
