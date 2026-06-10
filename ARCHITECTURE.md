@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 528 (Stand: Juni 2026)
+**Version:** Phase 529 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1232,6 +1232,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **526** | patch_526.py | **Rest-i18n: spielerseitige UI-Labels gewrappt (_tc): Verfuegbare Buchstaben:, Ueberpruefen, Schliessen, WOERTER, Keine Woerter gefunden, Laender/Staedte (Logik-Gitter), Zum Menue. Uebersetzungen EN/PL in i18n_extra.json + build_i18n_extra.py EXTRA_UI (reproduzierbar). i18n 0 Luecken, alle 8 Test-Ebenen gruen. Bewusst NICHT uebersetzt (edge): Admin-Panel, Ad-Platzhalter, Absturz-Screen.** |
 | **527** | patch_527.py | **White-Screen-Crash behoben: Render rief .map auf moeglicherweise undefinierten Feldern auf (q.hints, q.countries, q.opts in 2 Zweigen, q._tlUserOrder, q.ans) -> bei Modi, die der Render-Test ueberspringt (async-Daten wie border_q/neighbor/plate/river, headless=null), konnte das die GANZE App abstuerzen lassen ('Cannot read properties of undefined reading map'). Alle q.X.map-Aufrufe im Render mit ||[]/Array.isArray abgesichert (0 ungeschuetzt). sort_rank/clue_country-Generatoren setzen ihre Felder korrekt (Guard = Absicherung). 195/195, alle Ebenen gruen.** |
 | **528** | patch_528.py | **Globales Render-Sicherheitsnetz: render() in Wrapper mit try/catch gekapselt (render->_renderInner + Wrapper). Bei JEDEM Render-Fehler erscheint ein sanfter Fallback (Ueberspringen via clr()+nextRound() / Zum Menue) statt White-Screen-Absturz 'GeoQuest ist abgestuerzt'. Fallback i18n DE/EN/PL. Verifiziert: Wrapper faengt echten Render-Fehler ab (loggt '[GQ] render error', kein Throw); 955 Render OK, keine Regression. Das faengt kuenftige unbekannte Render-Ursachen generell ab.** |
+| **529** | patch_529.py | **Testluecke async-Modi geschlossen: ingame_render_test seedet jetzt NEIGHBORS=_DEFAULT_NEIGHBORS (Live-Fallback, da neighbors.json leer ist) und transformiert rivers/license_plates/area.json direkt ins Zielformat (Parser sind inner-scoped, nicht aufrufbar). Dadurch werden border_q/neighbor/river_real/plate/hl_area jetzt wirklich gerendert (955->962 OK, 0 Render-Fehler). Diese Modi waren bisher ungetestet (headless=null) und der Weg, ueber den der White-Screen-Crash durchrutschte.** |
 
 ---
 

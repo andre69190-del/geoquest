@@ -557,3 +557,7 @@ Der Render rief `.map` auf evtl. undefinierten Feldern auf (`q.hints`, `q.countr
 ## Phase 528 — Globales Render-Sicherheitsnetz (kein White-Screen mehr)
 **Datum:** 2026-06-03
 `render()` ist jetzt ein Wrapper mit `try/catch` um `_renderInner()`. Bei **jedem** Render-Fehler erscheint ein sanfter Fallback („Überspringen" via `clr()+nextRound()` / „Zum Menü") statt des kompletten App-Absturzes („GeoQuest ist abgestürzt"). Fallback-Texte DE/EN/PL. Verifiziert: Wrapper fängt echten Render-Fehler ab (loggt `[GQ] render error`, propagiert nicht); 955 Render OK, keine Regression. Fängt künftige unbekannte Render-Ursachen generell ab — Ergänzung zu den `.map`-Guards (Phase 527).
+
+## Phase 529 — Testlücke async-Modi geschlossen
+**Datum:** 2026-06-03
+`ingame_render_test.js` seedet jetzt die async geladenen Daten: `NEIGHBORS=_DEFAULT_NEIGHBORS` (Live-Fallback, da `neighbors.json` leere `neighbors` enthält) und transformiert `rivers/license_plates/area.json` direkt ins Zielformat (die Parser sind inner-scoped, nicht von außen aufrufbar). Damit werden `border_q`/`neighbor`/`river_real`/`plate_*`/`hl_area` **wirklich gerendert** (955→**962 OK**, 0 Render-Fehler) — genau die Modi, über die der White-Screen-Crash durchrutschte.
