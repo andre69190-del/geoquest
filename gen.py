@@ -14499,7 +14499,20 @@ function _scheduleFilterRefresh(){
   /* Phase 218 FIX: final restore pass after all inits settle */
   setTimeout(function(){if(typeof window._restoreCarouselPages==="function")window._restoreCarouselPages();},300);
 }
-function render(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
+function render(){ try{ return _renderInner(); }catch(_re){ try{console.error("[GQ] render error:",_re&&_re.message);}catch(_e){} try{ _renderCrashFallback(_re); }catch(_e2){ try{location.reload();}catch(_e3){} } } }
+function _renderCrashFallback(_re){
+  var _app=document.getElementById("app"); if(!_app)return;
+  var _inPlay=(typeof S!=="undefined"&&S&&S.ph==="playing");
+  var _esc=(typeof esc==="function")?esc:function(s){return s;};
+  var _T=(typeof _tc==="function")?_tc:function(s){return s;};
+  _app.innerHTML='<div class="scr" style="padding:2.5rem 1.5rem;text-align:center">'
+    +'<div style="font-size:2.2rem;margin-bottom:.6rem">\u26A0\uFE0F</div>'
+    +'<div style="color:var(--text2);font-size:.95rem;margin-bottom:1.2rem">'+_esc(_T("Diese Ansicht konnte nicht geladen werden."))+'</div>'
+    +(_inPlay?'<button class="btn-g" onclick="try{clr();nextRound()}catch(e){try{location.reload()}catch(_){}}">'+_esc(_T("\u00dcberspringen"))+' \u2192</button>':'')
+    +'<button class="btn-g" style="margin-top:.5rem" onclick="try{S.ph=\'menu\';S.tab=\'home\';render()}catch(e){try{location.reload()}catch(_){}}">'+_esc(_T("Zum Men\u00fc"))+'</button>'
+    +'</div>';
+}
+function _renderInner(){ const candidates=(typeof S!=="undefined"&&S.candidates)?S.candidates:[];
   /* Surgical Scope Guard for candidates */
   const candidates_safe = (typeof S !== "undefined" && S.candidates) ? S.candidates : ((typeof candidates !== "undefined") ? candidates : []);
 

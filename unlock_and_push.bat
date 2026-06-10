@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 527. White-Screen-Crash behoben: Render rief .map auf moeglicherweise undefinierten Feldern auf (q.hints, q.countries, q.opts in 2 Zweigen, q._tlUserOrder, q.ans) -> bei Modi, die der Render-Test ueberspringt (async-Daten wie border_q/neighbor/plate/river, headless=null), konnte das die GANZE App abstuerzen lassen ('Cannot read properties of undefined reading map'). Alle q.X.map-Aufrufe im Render mit ||[]/Array.isArray abgesichert (0 ungeschuetzt). sort_rank/clue_country-Generatoren setzen ihre Felder korrekt (Guard = Absicherung). 195/195, alle Ebenen gruen.. verify: 195/195."
+git commit -m "Content: Phase 528. Globales Render-Sicherheitsnetz: render() in Wrapper mit try/catch gekapselt (render->_renderInner + Wrapper). Bei JEDEM Render-Fehler erscheint ein sanfter Fallback (Ueberspringen via clr()+nextRound() / Zum Menue) statt White-Screen-Absturz 'GeoQuest ist abgestuerzt'. Fallback i18n DE/EN/PL. Verifiziert: Wrapper faengt echten Render-Fehler ab (loggt '[GQ] render error', kein Throw); 955 Render OK, keine Regression. Das faengt kuenftige unbekannte Render-Ursachen generell ab.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

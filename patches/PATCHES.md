@@ -553,3 +553,7 @@ Verbleibende hartkodierte deutsche UI-Labels auf Spieler-Screens (Wortschmiede/L
 ## Phase 527 — White-Screen-Crash behoben (.map auf undefined im Render)
 **Datum:** 2026-06-03
 Der Render rief `.map` auf evtl. undefinierten Feldern auf (`q.hints`, `q.countries`, `q.opts` in 2 Zweigen, `q._tlUserOrder`, `q.ans`). Bei Modi, die der Render-Test überspringt (async-Daten: border_q/neighbor/plate/river — headless = null), konnte das die **ganze App** abstürzen lassen („Cannot read properties of undefined (reading 'map')"). Alle `q.X.map`-Aufrufe im Render mit `||[]`/`Array.isArray` abgesichert (0 ungeschützt). Generatoren von `sort_rank`/`clue_country` setzen ihre Felder korrekt — der Guard ist reine Absicherung gegen White-Screens.
+
+## Phase 528 — Globales Render-Sicherheitsnetz (kein White-Screen mehr)
+**Datum:** 2026-06-03
+`render()` ist jetzt ein Wrapper mit `try/catch` um `_renderInner()`. Bei **jedem** Render-Fehler erscheint ein sanfter Fallback („Überspringen" via `clr()+nextRound()` / „Zum Menü") statt des kompletten App-Absturzes („GeoQuest ist abgestürzt"). Fallback-Texte DE/EN/PL. Verifiziert: Wrapper fängt echten Render-Fehler ab (loggt `[GQ] render error`, propagiert nicht); 955 Render OK, keine Regression. Fängt künftige unbekannte Render-Ursachen generell ab — Ergänzung zu den `.map`-Guards (Phase 527).

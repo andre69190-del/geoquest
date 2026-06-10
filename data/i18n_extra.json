@@ -713,7 +713,9 @@
   "Zum Menü": "To menu",
   "Ja": "Yes",
   "Nein": "No",
-  "Zeit abgelaufen – kein Pin gesetzt": "Time's up – no pin placed"
+  "Zeit abgelaufen – kein Pin gesetzt": "Time's up – no pin placed",
+  "Diese Ansicht konnte nicht geladen werden.": "This view could not be loaded.",
+  "Überspringen": "Skip"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1429,6 +1431,8 @@
   "Zum Menü": "Do menu",
   "Ja": "Tak",
   "Nein": "Nie",
-  "Zeit abgelaufen – kein Pin gesetzt": "Czas minął – nie postawiono pinezki"
+  "Zeit abgelaufen – kein Pin gesetzt": "Czas minął – nie postawiono pinezki",
+  "Diese Ansicht konnte nicht geladen werden.": "Nie udało się załadować tego widoku.",
+  "Überspringen": "Pomiń"
  }
 }
