@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 539 (Stand: Juni 2026)
+**Version:** Phase 540 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.12 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1243,6 +1243,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **537** | patch_537.py | **ingame_render_test deckt jetzt SRS-Replay ab: ~25 falsch-Snapshots werden gespeichert und im Review-Modus (S.srsRun) gerendert (25 OK, 0 Fehler), plus renderSrsHero/renderSrsListModal/renderDailyHero. fail-Zaehler integriert.** |
 | **538** | patch_538.py | **Feinere Regionen (Sub-Regionen-Filter): _regionOk um 'sub:<Subregion>' erweitert (nutzt COUNTRIES.sr) - alle Geo-Generatoren, die _rfilt nutzen (capital/flag/city/river/landmark/park/unesco...), respektieren den Filter automatisch. Filter pro Spiel gescopt (S._pendingFilter -> startGame setzt/raeumt S.filter). Region-Picker-Modal (21 Subregionen in 5 Gruppen) + Home-Karte 'Region ueben' -> startRegionQuiz('sub:X','capital'). i18n DE/EN/PL fuer alle Regionsnamen. Verifiziert: Osteuropa->Polen/Ukraine.., Nordafrika->Aegypten/Marokko.., Distraktoren regional.** |
 | **539** | patch_539.py | **Lern-/Uebungsmodus (Lernkarten vor dem Test), integriert in den Region-Flow: Region-Chip oeffnet jetzt eine Lernkarten-Strecke (renderLearnDeck) mit Flagge + Land + Hauptstadt + Vor/Zurueck + 'Jetzt testen' -> startRegionQuiz('sub:X','capital'). _capByCc nutzt CAPITALS. So 'erst lernen, dann testen' (haeufiger Seterra-Wunsch) + Sub-Regionen kombiniert. i18n DE/EN/PL. renderRegionEntry/Modal/LearnDeck im Render-Test abgedeckt. Alle Ebenen gruen.** |
+| **540** | patch_540.py | **Neues Spiel 'Land -> Region' (geo_subregion, pure_geo): zeigt ein Land, waehle die Weltregion (Subregion) aus 4 Optionen. Nutzt COUNTRIES.sr + _SR_DE (lokalisiert), bestehender uk_match-Renderer. MODES + modes-Liste + GEN + genSubregionQ + i18n DE/EN/PL. Verifiziert: Samoa->Polynesien, Sudan->Nordafrika, alle loesbar; 1088->1089 Modi; Render 963 OK, smoke 957/0 THROW. Passt thematisch zum neuen Regionen-Feature.** |
 
 ---
 

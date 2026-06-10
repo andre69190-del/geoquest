@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 539. Lern-/Uebungsmodus (Lernkarten vor dem Test), integriert in den Region-Flow: Region-Chip oeffnet jetzt eine Lernkarten-Strecke (renderLearnDeck) mit Flagge + Land + Hauptstadt + Vor/Zurueck + 'Jetzt testen' -> startRegionQuiz('sub:X','capital'). _capByCc nutzt CAPITALS. So 'erst lernen, dann testen' (haeufiger Seterra-Wunsch) + Sub-Regionen kombiniert. i18n DE/EN/PL. renderRegionEntry/Modal/LearnDeck im Render-Test abgedeckt. Alle Ebenen gruen.. verify: 195/195."
+git commit -m "Content: Phase 540. Neues Spiel 'Land -> Region' (geo_subregion, pure_geo): zeigt ein Land, waehle die Weltregion (Subregion) aus 4 Optionen. Nutzt COUNTRIES.sr + _SR_DE (lokalisiert), bestehender uk_match-Renderer. MODES + modes-Liste + GEN + genSubregionQ + i18n DE/EN/PL. Verifiziert: Samoa->Polynesien, Sudan->Nordafrika, alle loesbar; 1088->1089 Modi; Render 963 OK, smoke 957/0 THROW. Passt thematisch zum neuen Regionen-Feature.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

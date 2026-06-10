@@ -772,7 +772,8 @@
   "Ganze Welt": "Whole world",
   "Wählen": "Choose",
   "Jetzt testen": "Test now",
-  "Erst lernen, dann testen:": "Learn first, then test:"
+  "Erst lernen, dann testen:": "Learn first, then test:",
+  "Zu welcher Region gehört dieses Land?": "Which region does this country belong to?"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1547,6 +1548,7 @@
   "Ganze Welt": "Cały świat",
   "Wählen": "Wybierz",
   "Jetzt testen": "Testuj teraz",
-  "Erst lernen, dann testen:": "Najpierw ucz się, potem test:"
+  "Erst lernen, dann testen:": "Najpierw ucz się, potem test:",
+  "Zu welcher Region gehört dieses Land?": "Do jakiego regionu należy ten kraj?"
  }
 }

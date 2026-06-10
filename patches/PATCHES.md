@@ -601,3 +601,7 @@ Falsch beantwortete Fragen werden als **Snapshot** in `gq_srs` erfasst (`answer`
 ## Phase 539 — Lern-/Übungsmodus (Lernkarten vor dem Test)
 **Datum:** 2026-06-03
 In den Region-Flow integriert: Ein Region-Chip öffnet jetzt eine **Lernkarten-Strecke** (`renderLearnDeck`) — Flagge + Land + Hauptstadt, Vor/Zurück, „Jetzt testen" → `startRegionQuiz('sub:X','capital')`. `_capByCc` nutzt `CAPITALS`. Damit „erst lernen, dann testen" (häufiger Seterra-Wunsch) **kombiniert mit** Sub-Regionen. i18n DE/EN/PL. `renderRegionEntry/Modal/LearnDeck` im Render-Test abgedeckt (0 Fehler).
+
+## Phase 540 — Neues Spiel „Land → Region" (geo_subregion)
+**Datum:** 2026-06-03
+Neuer Modus `geo_subregion` (Kategorie pure_geo): zeigt ein Land, wähle die **Weltregion (Subregion)** aus 4 Optionen. Nutzt `COUNTRIES.sr` + `_SR_DE` (lokalisiert), bestehender `uk_match`-Renderer (kein neues Crash-Risiko). MODES + modes-Liste + GEN-Dispatch + `genSubregionQ` + i18n DE/EN/PL. Verifiziert: Samoa→Polynesien, Sudan→Nordafrika, alle lösbar; **1088 → 1089 Modi**; Render 963 OK, smoke 957/0 THROW. Passt thematisch zum Regionen-/Lern-Feature (538/539).
