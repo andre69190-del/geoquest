@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 529. Testluecke async-Modi geschlossen: ingame_render_test seedet jetzt NEIGHBORS=_DEFAULT_NEIGHBORS (Live-Fallback, da neighbors.json leer ist) und transformiert rivers/license_plates/area.json direkt ins Zielformat (Parser sind inner-scoped, nicht aufrufbar). Dadurch werden border_q/neighbor/river_real/plate/hl_area jetzt wirklich gerendert (955->962 OK, 0 Render-Fehler). Diese Modi waren bisher ungetestet (headless=null) und der Weg, ueber den der White-Screen-Crash durchrutschte.. verify: 195/195."
+git commit -m "Content: Phase 530. Barrierefreiheit: 7 Flaggen-<img> ohne alt -> alt='Flagge' ergaenzt (0 verbleibend). aria-label fuer Icon-only-Buttons: HUD (Vorlesen/Feedback/Beenden/Einstellungen, 27x) + Loeschen/Bestaetigen/Aktualisieren/Schliessen (7x). Neuer Dauertest a11y_check.py (9. Ebene): FAIL bei <img> ohne alt, WARN bei Icon-only-Buttons ohne Label. Ergebnis 0 FAIL, 69->3 WARN.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

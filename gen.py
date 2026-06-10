@@ -4006,7 +4006,7 @@ function _initTravelHint(){
 }
 function _dismissTravel(){S.travelHint=false;try{localStorage.setItem('gq_travel_shown',String(Date.now()));}catch(e){}render();}
 function _travelBanner(){
-  return '<div style="position:fixed;left:12px;right:12px;bottom:70px;z-index:9000;background:var(--bg2);border:1.5px solid #6366f1;border-radius:14px;padding:.7rem .9rem;box-shadow:0 6px 24px rgba(0,0,0,.35)"><div style="font-weight:800;font-size:.9rem;margin-bottom:.5rem">'+t('travel_title')+'</div><div style="display:flex;gap:8px;align-items:center"><button onclick="_dismissTravel();S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F697 '+t('travel_plates')+'</button><button onclick="_dismissTravel();S._spotterTab=\'waggons\';S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F686 '+t('travel_trains')+'</button><button onclick="_dismissTravel()" class="btn-g" style="margin:0;background:transparent;width:auto;padding:.4rem .6rem">✕</button></div></div>';
+  return '<div style="position:fixed;left:12px;right:12px;bottom:70px;z-index:9000;background:var(--bg2);border:1.5px solid #6366f1;border-radius:14px;padding:.7rem .9rem;box-shadow:0 6px 24px rgba(0,0,0,.35)"><div style="font-weight:800;font-size:.9rem;margin-bottom:.5rem">'+t('travel_title')+'</div><div style="display:flex;gap:8px;align-items:center"><button onclick="_dismissTravel();S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F697 '+t('travel_plates')+'</button><button onclick="_dismissTravel();S._spotterTab=\'waggons\';S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F686 '+t('travel_trains')+'</button><button onclick="_dismissTravel()" aria-label="Schließen" class="btn-g" style="margin:0;background:transparent;width:auto;padding:.4rem .6rem">✕</button></div></div>';
 }
 
 function _forYouCats(){var out=[],seen={};var km=_getKidsMode();function add(arr){(arr||[]).forEach(function(k){if(k&&!seen[k]&&MODE_CATS[k]&&(!km||KIDS_CATS.has(k))){seen[k]=1;out.push(k);}});}add(_getTopCats(6));add(_getInterestCats());add(['pure_geo','tiere','games','capitals','sport','astronomie','themeparks','hunde','map_mode']);return out.slice(0,6);}
@@ -11798,7 +11798,7 @@ function renderLVModal(){
   let qDisplay="";
   if(isFlag&&q.subj){
     const _lcc=String(q.subj||"").toLowerCase();
-    qDisplay=`<img src="https://flagcdn.com/h80/${_lcc}.png" style="max-height:70px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.15);margin:.3rem 0">`;
+    qDisplay=`<img alt="Flagge" src="https://flagcdn.com/h80/${_lcc}.png" style="max-height:70px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.15);margin:.3rem 0">`;
   }else if(isComp){
     /* comp modes: show the two country names + flags inline */
     const _oA=q.opts&&q.opts[0]||"",_oB=q.opts&&q.opts[1]||"";
@@ -14014,7 +14014,7 @@ function showStampToast(cc){
   clearTimeout(toastTo);const old=document.getElementById("stamp-toast");if(old)old.remove();
   const el=document.createElement("div");el.id="stamp-toast";el.className="stamp-toast";
   const cn=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc))?.c||cc.toUpperCase();
-  el.innerHTML=`<img src="https://flagcdn.com/w40/${cc}.png" style="width:22px;height:auto;border-radius:2px"> Neuer Stempel: ${cn}`;
+  el.innerHTML=`<img alt="Flagge" src="https://flagcdn.com/w40/${cc}.png" style="width:22px;height:auto;border-radius:2px"> Neuer Stempel: ${cn}`;
   document.body.appendChild(el);soundStamp();toastTo=setTimeout(()=>el.remove(),3000);
 }
 function showCopyToast(){
@@ -14050,7 +14050,7 @@ function shareGame(){
 function updateHdrGuest(){
   const hdr=document.getElementById("g-hdr");
   const _uname=sbProfile?.username||localStorage.getItem("gq_username")||null;
-  if(hdr)hdr.innerHTML=`<span class="g-logo">GEO<span>QUEST</span></span><div class="g-stats">${_uname?`<span class="g-stat" style="color:#10b981">\uD83D\uDC64 ${esc(_uname)}</span>`:""}<span class="g-stat">\u{1F525} ${S.st}</span><span class="g-stat">\u{1F4B0} ${(sbProfile?.geo_coins||0).toLocaleString()}</span><button class="hdr-gear" onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}">\u2753</button><button class="hdr-gear" onclick="S.settingsModal=!S.settingsModal;render()" title="Einstellungen">\u2699\ufe0f</button></div>`;
+  if(hdr)hdr.innerHTML=`<span class="g-logo">GEO<span>QUEST</span></span><div class="g-stats">${_uname?`<span class="g-stat" style="color:#10b981">\uD83D\uDC64 ${esc(_uname)}</span>`:""}<span class="g-stat">\u{1F525} ${S.st}</span><span class="g-stat">\u{1F4B0} ${(sbProfile?.geo_coins||0).toLocaleString()}</span><button class="hdr-gear" onclick="S.helpModal=true;render()" title="${t('help_btn_title')}" aria-label="${t('help_btn_title')}">\u2753</button><button class="hdr-gear" onclick="S.settingsModal=!S.settingsModal;render()" aria-label="Einstellungen" title="Einstellungen">\u2699\ufe0f</button></div>`;
 }
 function stampHtml(cc,rank,rot){
   const cn=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc))?.c||cc.toUpperCase();
@@ -14569,7 +14569,7 @@ function _renderInner(){ const candidates=(typeof S!=="undefined"&&S.candidates)
     const rl={gold:"\u{1F947} Gold",silver:"\u{1F948} Silber",bronze:"\u{1F949} Bronze"}[rank]||"Gesperrt";
     const rc={gold:"#d97706",silver:"#94a3b8",bronze:"#c2410c"}[rank]||"var(--text3)";
     app.innerHTML=`<div class="modal-overlay" onclick="if(event.target===this){S.modal=null;render()}"><div class="modal-box">
-      <img src="https://flagcdn.com/w80/${S.modal}.png" style="height:44px;width:auto;border-radius:4px;margin-bottom:.75rem">
+      <img alt="Flagge" src="https://flagcdn.com/w80/${S.modal}.png" style="height:44px;width:auto;border-radius:4px;margin-bottom:.75rem">
       <div style="font-size:1.2rem;font-weight:900;color:var(--text);margin-bottom:4px">${cn}</div>
       <div style="font-size:.82rem;font-weight:700;color:${rc};margin-bottom:.85rem">${rl}</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1rem">
@@ -14612,7 +14612,7 @@ app.innerHTML=`<div class="scr">
     const stampBanners=S.newStamps.map(({cc,rank})=>{
       const cn=COUNTRIES.find(c=>c.cc===(cc ? cc.toLowerCase() : cc))?.c||cc.toUpperCase();
       const rl={gold:"\u{1F947} Gold-Stempel",silver:"\u{1F948} Silber-Stempel",bronze:"\u{1F949} Bronze-Stempel"}[rank]||"Stempel";
-      return`<div class="new-stamp-banner"><img src="https://flagcdn.com/w40/${cc}.png" style="width:28px;height:auto;border-radius:3px"><div><div style="color:#34d399;font-weight:900;font-size:.88rem">NEUER STEMPEL\!</div><div style="color:var(--text2);font-size:.78rem">${rl} \u2022 ${cn}</div></div></div>`;
+      return`<div class="new-stamp-banner"><img alt="Flagge" src="https://flagcdn.com/w40/${cc}.png" style="width:28px;height:auto;border-radius:3px"><div><div style="color:#34d399;font-weight:900;font-size:.88rem">NEUER STEMPEL\!</div><div style="color:var(--text2);font-size:.78rem">${rl} \u2022 ${cn}</div></div></div>`;
     }).join("");
     const survivalPanel=isSurv?`
       ${isNewRecord?`<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b);border:2px solid #ef4444;border-radius:12px;padding:.85rem;text-align:center;margin-bottom:.75rem">
@@ -14747,7 +14747,7 @@ if(mode==="slf"&&S.ph==="playing"){
           placeholder="Kürzel…" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false"    
           style="text-transform:uppercase;width:90px;padding:10px 14px;font-size:1.4rem;font-weight:900;letter-spacing:3px;border:2px solid var(--border);border-radius:10px;background:var(--bg2);color:var(--text);text-align:center"    
           onkeydown="if(event.key==='Enter'){submitDS100Input();}">
-        ${sel===null?`<button class="btn-p" onclick="submitDS100Input()" style="padding:10px 18px;font-size:1rem">✓</button>`:''}
+        ${sel===null?`<button class="btn-p" onclick="submitDS100Input()" aria-label="Antwort bestätigen" style="padding:10px 18px;font-size:1rem">✓</button>`:''}
       </div>${_dfb}`;
 }else if(q.type==="de_plate"||q.type==="plate_casual"||q.type==="plate_hard"){
     qBody=`<div class="qprompt">${q.prompt}</div>
@@ -14941,7 +14941,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" aria-label="Spiel beenden" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
         </div>
       </div>
       <div class="q-area" style="padding:0 8px 8px">
@@ -14974,7 +14974,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" aria-label="Spiel beenden" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
         </div>
       </div>
       <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
@@ -15004,7 +15004,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" aria-label="Spiel beenden" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
         </div>
       </div>
       ${S.mpOpponent?`<div class="duell-bar-wrap" style="margin:0 0 4px"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -15032,7 +15032,7 @@ if(mode==="slf"&&S.ph==="playing"){
           ${diff==="survival"
             ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\u{1F480} SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
             :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
+          <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" aria-label="Spiel beenden" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
         </div>
       </div>
       <div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>
@@ -15045,10 +15045,10 @@ if(mode==="slf"&&S.ph==="playing"){
     return;
   }
   /* topBar: shared HUD wrapper used by pop_compare early-return */
-  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
+  const topBar=`<div class="scr"><div class="hud"><div style="display:flex;gap:8px;align-items:center"><div class="pill"><div class="hlbl">SCORE</div><div class="hval">${sc.toLocaleString()}</div></div>${st>0?`<div class="pill-s"><div class="hlbl" style="color:#fb923c">STREAK</div><div class="hval-s">×${st}</div></div>`:""}${(diff==="hardcore"||diff==="survival")?`<div class="pill-s" style="background:rgba(239,68,68,.15)"><div class="hlbl" style="color:#ef4444">${t("hud_lives")}</div><div class="hval-s" style="color:#ef4444">${S.lives||3}</div></div>`:""}</div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0">${diff==="survival"?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">💀 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">∞</span></div></div>`:`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" aria-label="Spiel beenden" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div></div></div><div class="tbar${S.freezeActive?" frozen":""}"><div class="tfill" style="width:${p}%;background:${col}"></div></div>`;
   let answerHtml="";
   if(q.type==="flagsel"){
-    answerHtml='<div class="flag-grid">'+(q.opts||[]).map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
+    answerHtml='<div class="flag-grid">'+(q.opts||[]).map(cc=>{let cls="btn-base";if(typeof sel!=="undefined"&&sel!==null){if(cc===q.ans)cls+=" ok";else if(cc===sel)cls+=" ng";else cls+=" dm";}const lowerCc=String(cc||"").toLowerCase();return'<button class="'+cls+'" onclick="answer(&quot;'+cc+'&quot;,_secretGameToken)"><img alt="Flagge" src="https://flagcdn.com/h80/'+lowerCc+'.png" style="max-height:50px;border-radius:4px;pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,0.1)"></button>';}).join("")+'</div>';} else {
     // Population comparison: special subj rendering
     if(q.type==="pop_compare"&&q.subj&&typeof q.subj==='object'){
       const pcDis=sel!==null?"disabled":"";
@@ -15090,7 +15090,7 @@ if(mode==="slf"&&S.ph==="playing"){
       }
       { const _isFootball=(q.type==="stadium"||q.type==="jersey"||q.type==="crest");const _isHLBeta=(q.type&&q.type.startsWith('hl_b_'));
   const btns=(q.opts||[]).map((o,i)=>{let cls="btn-a";const os=String(o).replace(/'/g,"\'");if(sel\!==null){if(o===q.ans)cls+=" ok";else if(o===sel)cls+=" ng";else cls+=" dm";}const mk=sel?(o===q.ans?`<span>\u2713</span>`:o===sel?`<span>\u2717</span>`:""):"";/* Phase 318: show opp marker only AFTER local has answered */
-const _omk=(S.mpOpponent&&S.sel!==null&&S.mpOppLid===q.lid&&S.mpOppSel!=null&&o===S.mpOppSel)?`<span class="opp-pick" title="Wahl des Gegners" style="margin-left:5px;font-size:.62rem;font-weight:800;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694</span>`:"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${(_isHLBeta&&HL_BETA_CC[o])?`<img src="https://flagcdn.com/w40/${HL_BETA_CC[o].toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:_isFootball&&String(o).length===2?`<img src="https://flagcdn.com/w40/${String(o).toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:""}${esc(q.type==="map_ivr"?o:_isHLBeta?(displayCountry(HL_BETA_CC[o])||o):_isFootball?(displayCountry(String(o))||String(o)):displayCountry(o))}${mk}${_omk}</button>`;}).join("");
+const _omk=(S.mpOpponent&&S.sel!==null&&S.mpOppLid===q.lid&&S.mpOppSel!=null&&o===S.mpOppSel)?`<span class="opp-pick" title="Wahl des Gegners" style="margin-left:5px;font-size:.62rem;font-weight:800;color:${S.mpOppSelOk?"#10b981":"#ef4444"}">\u2694</span>`:"";return`<button class="${cls}" ${sel?"disabled":""} onclick="answerByIdx(${i})">${(_isHLBeta&&HL_BETA_CC[o])?`<img alt="Flagge" src="https://flagcdn.com/w40/${HL_BETA_CC[o].toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:_isFootball&&String(o).length===2?`<img alt="Flagge" src="https://flagcdn.com/w40/${String(o).toLowerCase()}.png" style="height:14px;vertical-align:middle;margin-right:3px;border-radius:2px" onerror="this.style.display=\'none\'">`:""}${esc(q.type==="map_ivr"?o:_isHLBeta?(displayCountry(HL_BETA_CC[o])||o):_isFootball?(displayCountry(String(o))||String(o)):displayCountry(o))}${mk}${_omk}</button>`;}).join("");
       const _twoOpts=q.opts&&q.opts.length===2?' two-opts':'';
       answerHtml=`<div class="answers${_twoOpts}">${btns}</div>`;
     }
@@ -15120,7 +15120,7 @@ const _omk=(S.mpOpponent&&S.sel!==null&&S.mpOppLid===q.lid&&S.mpOppSel!=null&&o=
         ${diff==="survival"
           ?`<div style="text-align:right"><div class="hlbl" style="color:#ef4444">\ud83d\udc80 SURVIVAL</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">\u221e</span></div></div>`
           :`<div style="text-align:right"><div class="hlbl" style="color:var(--text3)">RUNDE</div><div style="color:var(--text);font-weight:700;font-size:.9rem">${rd+1}<span style="color:var(--text3)">/${ROUNDS}</span></div></div>`}
-        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" aria-label="Spiel beenden" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
       </div>
     </div>
     ${S.mpOpponent?`<div class="duell-bar-wrap"><div class="duell-lbl duell-you">Ich<span class="duell-score">${sc.toLocaleString()}</span></div><div class="duell-track"><div class="duell-fill-you" style="width:${duellPct(sc,S.mpOppScore||0)}%"></div><div class="duell-fill-opp" style="width:${duellPct(S.mpOppScore||0,sc)}%"></div></div><div class="duell-lbl duell-opp"><span class="duell-score">${(S.mpOppScore||0).toLocaleString()}</span>${esc(S.mpOpponent.slice(0,8))}</div></div>`:""}
@@ -16260,7 +16260,7 @@ function renderLogikGitter(sc){
       <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
         <div style="font-size:.75rem;color:var(--text3)">${gd.correctCount}/9</div>
         <div style="font-size:.85rem;font-weight:700;min-width:2.2rem;text-align:right;color:${tc()}">${S.tm}s</div>
-        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" aria-label="Spiel beenden" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
       </div>
     </div>
     <div class="tbar"><div class="tfill" style="width:${pct()}%;background:${tc()}"></div></div>
@@ -16383,7 +16383,7 @@ function renderReiseroute(sc){
       </div>
       <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
         <div style="font-size:.75rem;color:var(--text3)">${rd.steps} Schr.</div>
-        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
+        <div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center"><button class="btn-exit-global" onclick="_exitToMenu()" aria-label="Spiel beenden" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button><button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button></div>
       </div>
     </div>
     <div style="background:var(--bg2);border-radius:12px;padding:.6rem .75rem;margin:.3rem 0">
@@ -16689,7 +16689,7 @@ function renderWortSchmiede(sc){
     :'<span style="font-size:.85rem;font-weight:400;color:var(--text3);letter-spacing:0">Buchstaben antippen oder tippen…</span>';
   const display='<div id="ws-display" style="min-height:3.4rem;background:var(--bg2);border:2.5px solid '+(input.length?"var(--text)":"var(--border)")+';border-radius:12px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:1px;padding:4px 2.5rem 4px .6rem;position:relative">'+
     dispLetters+preview+
-    (input.length?'<button onclick="wsBackspace()" style="position:absolute;right:.4rem;top:50%;transform:translateY(-50%);background:none;border:none;font-size:1.15rem;color:var(--text3);cursor:pointer;padding:4px 8px;line-height:1">⌫</button>':"")+
+    (input.length?'<button onclick="wsBackspace()" aria-label="Buchstabe löschen" style="position:absolute;right:.4rem;top:50%;transform:translateY(-50%);background:none;border:none;font-size:1.15rem;color:var(--text3);cursor:pointer;padding:4px 8px;line-height:1">⌫</button>':"")+
   '</div>';
 
   /* ── Fallback badge (language switch indicator) ── */
@@ -16704,8 +16704,8 @@ function renderWortSchmiede(sc){
     '<div class="pill-s"><div class="hlbl" style="color:#10b981">'+_tc("WÖRTER")+'</div><div class="hval-s" style="color:#10b981">'+found+'/'+total+'</div></div>'+
     '</div>'+
     '<div class="action-bar" style="display:flex;flex-direction:row-reverse;gap:10px;align-items:center">'+
-      '<button class="btn-exit-global" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button>'+
-      '<button onclick="openFeedback()" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button>'+
+      '<button class="btn-exit-global" aria-label="Spiel beenden" onclick="clr();S.ph=\'menu\';S.tab=\'home\';render()" style="background:#ef4444;color:#fff;border:none;padding:4px 10px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer">✕</button>'+
+      '<button onclick="openFeedback()" aria-label="Vorschlag oder Feedback senden" title="Vorschlag / Feedback" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">💡</button><button onclick="_ttsCurrentQ()" aria-label="Frage vorlesen" title="Frage vorlesen" style="background:#e2e8f0;color:#475569;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:1rem">🔊</button>'+
     '</div>'+
   '</div>'+
   '<div class="tbar"><div class="tfill" style="width:'+tPct+'%;background:'+tCol+';transition:width 1s linear"></div></div>';
@@ -16742,7 +16742,7 @@ function renderWortSchmiede(sc){
       /* Action buttons */
       '<div style="display:flex;gap:8px;margin-bottom:.45rem">'+
         '<button class="btn-p" style="flex:1;padding:.65rem;font-weight:900;font-size:1rem" onclick="handleWsCheck()">✔ OK</button>'+
-        '<button style="padding:.65rem 1rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:1rem;cursor:pointer;font-weight:900;color:var(--text)" onclick="wsBackspace()">⌫</button>'+
+        '<button style="padding:.65rem 1rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:1rem;cursor:pointer;font-weight:900;color:var(--text)" onclick="wsBackspace()" aria-label="Buchstabe löschen">⌫</button>'+
         '<button style="padding:.65rem 1rem;background:var(--bg3);border:2px solid var(--border);border-radius:10px;font-size:.75rem;cursor:pointer;font-weight:700;color:var(--text3)" onclick="if(S.wsData)S.wsData.input=\'\';render()">✕</button>'+
       '</div>'+
       /* Fallback / lang indicator */
@@ -16858,7 +16858,7 @@ function renderStatsTab(){
   return`<div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="font-size:1.1rem;font-weight:900;color:var(--text)">\u{1F4CA} Deine Statistiken</div>
-      <button onclick="S.statsData=null;render()" style="background:none;border:1.5px solid var(--border);border-radius:8px;padding:.25rem .6rem;font-size:.72rem;color:var(--text3);cursor:pointer">↺</button>
+      <button onclick="S.statsData=null;render()" aria-label="Aktualisieren" style="background:none;border:1.5px solid var(--border);border-radius:8px;padding:.25rem .6rem;font-size:.72rem;color:var(--text3);cursor:pointer">↺</button>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:.85rem">
       <div class="panel" style="text-align:center;padding:.75rem .5rem"><div style="font-size:1.6rem;font-weight:900;color:#34d399">${totalGames}</div><div style="font-size:.65rem;color:var(--text3)">Spiele gesamt</div></div>
@@ -17109,7 +17109,7 @@ function renderAdminTab(){
   return`<div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
       <div style="font-size:1.1rem;font-weight:900;color:var(--text)">\u{1F6E1}️ Admin-Dashboard</div>
-      <button onclick="S.adminData=null;render()" style="background:none;border:1.5px solid var(--border);border-radius:8px;padding:.25rem .6rem;font-size:.72rem;color:var(--text3);cursor:pointer">↺</button>
+      <button onclick="S.adminData=null;render()" aria-label="Aktualisieren" style="background:none;border:1.5px solid var(--border);border-radius:8px;padding:.25rem .6rem;font-size:.72rem;color:var(--text3);cursor:pointer">↺</button>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:.85rem">
       <div class="panel" style="text-align:center;padding:.65rem .4rem"><div style="font-size:1.5rem;font-weight:900;color:#34d399">${rows.length.toLocaleString()}</div><div style="font-size:.6rem;color:var(--text3)">Sessions gesamt</div></div>

@@ -561,3 +561,7 @@ Der Render rief `.map` auf evtl. undefinierten Feldern auf (`q.hints`, `q.countr
 ## Phase 529 — Testlücke async-Modi geschlossen
 **Datum:** 2026-06-03
 `ingame_render_test.js` seedet jetzt die async geladenen Daten: `NEIGHBORS=_DEFAULT_NEIGHBORS` (Live-Fallback, da `neighbors.json` leere `neighbors` enthält) und transformiert `rivers/license_plates/area.json` direkt ins Zielformat (die Parser sind inner-scoped, nicht von außen aufrufbar). Damit werden `border_q`/`neighbor`/`river_real`/`plate_*`/`hl_area` **wirklich gerendert** (955→**962 OK**, 0 Render-Fehler) — genau die Modi, über die der White-Screen-Crash durchrutschte.
+
+## Phase 530 — Barrierefreiheit (alt + aria-label) + Dauertest
+**Datum:** 2026-06-03
+7 Flaggen-`<img>` ohne `alt` → `alt="Flagge"` ergänzt (0 verbleibend). `aria-label` für Icon-only-Buttons: HUD (Vorlesen/Feedback/Beenden/Einstellungen, 27×) + Löschen/Bestätigen/Aktualisieren/Schließen (7×). Neuer Dauertest **`a11y_check.py`** (9. Ebene): **FAIL** bei `<img>` ohne `alt`, **WARN** bei Icon-only-Buttons ohne Label. Ergebnis: 0 FAIL, 69→3 WARN.
