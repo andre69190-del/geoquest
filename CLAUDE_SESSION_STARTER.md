@@ -130,18 +130,33 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 - [ ] post_phase.py mit korrekter Phase-Nummer ausführen
 - [ ] PATCHES.md Eintrag ergänzen
 
-## TEST-SUITE (gegen Fehler & Anzeigefehler) — Phase 511+
+## TEST-SUITE (gegen Fehler & Anzeigefehler) — Phase 511–545
 
-Drei Ebenen, die unterschiedliche Bug-Klassen fangen. **Vor jedem Deploy laufen lassen:**
+**9 Ebenen**, die unterschiedliche Bug-Klassen fangen. **Vor jedem Deploy alle laufen lassen:**
 
-1. `python3 verify.py` — Struktur/Build: undefinierte `*_DATA` (Check 20) & Helfer-Funktionen (Check 21), Dispatch, node --check. Muss **193+/… | 0 failed**.
+1. `python3 verify.py` — Struktur/Build: undefinierte `*_DATA` (Check 20) & Helfer (Check 21), Dispatch, node --check, SW-App-Shell+Runtime-Cache (Check 12). Muss **195+/… | 0 failed**.
 2. `python3 validate_content.py` — Daten/JSON. Muss **0 warnings**.
-3. `node smoke_test.js` — **Generator-Laufzeit:** ruft jeden GEN-Modus 6× auf. Muss **0 THROW** (NULL = braucht Live-Daten/Zustand, ok).
-4. `node ingame_render_test.js` — **Render-Laufzeit:** rendert JEDEN Modus im Spiel-Screen (ungespielt + beantwortet) mit echter Normalisierung. Muss **0 RENDER-FEHLER**. Fand z. B. die 74 abstürzenden Kinder-Modi (falsche Feldnamen) und die `type:"match"`-Crashes. Meldet zusätzlich `ans-nicht-in-opts` (info): richtige Antwort evtl. nicht unter den Optionen.
+3. `node smoke_test.js` — **Generator-Laufzeit:** jeder GEN-Modus 6×. Muss **0 THROW** + **0 UNERWARTET NULL** (Allowlist `EXPECTED_NULL` = async-Daten + Custom-Flow).
+4. `node ingame_render_test.js` — **Render-Laufzeit:** rendert JEDEN Modus (ungespielt + beantwortet) + seedet async-Daten (border/neighbor/plate/river/hl_area) + SRS-Replay + neue UI (Daily/SRS/Region). Muss **0 RENDER-FEHLER**.
+5. `node option_quality_test.js` — doppelte/einzelne MC-Optionen. Muss **0 DUP / 0 SINGLE**.
+6. `node i18n_test.js` — **i18n-Vollständigkeit:** jeder genutzte `_tc/_tcc`-String + `MODES.prompt` in de/en/pl. Muss **0 FEHLT**. (Übersetzungen in `data/i18n_extra.json`, reproduzierbar via `build_i18n_extra.py`.)
+7. `python3 contrast_check.py` — WCAG-AA Text-auf-Fläche (Hell+Dunkel). Muss **0 FAIL**.
+8. `python3 perf_check.py` — HTML-/SW-Precache-Größe. Muss **0 FAIL** (WARN = Hinweis).
+9. `python3 a11y_check.py` — `<img>` ohne `alt` (FAIL) + Icon-Buttons ohne Label (WARN). Muss **0 FAIL**.
 
-**Warum getrennt:** verify prüft Struktur, smoke_test prüft ob Generatoren *laufen*, ingame_render_test prüft ob das Ergebnis *darstellbar* ist (ohne JS-Crash). Ein Bug rutscht nur durch, wenn er alle drei besteht.
+Zusätzlich informativ (blockt nicht): `python3 i18n_html_check.py` — findet hartkodiertes Deutsch im HTML, das nicht über `_tc` läuft (Wegweiser für i18n-Restarbeiten).
 
-**Offene Test-Ideen:** i18n-Vollständigkeit (jeder genutzte `t()`-Key in de/en/pl vorhanden), die 31 `ans-nicht-in-opts`-Treffer einzeln prüfen, automatischer Lighthouse-Lauf für Performance.
+**Warum getrennt:** verify=Struktur, smoke=Generatoren *laufen*, ingame_render=Ergebnis *darstellbar*, dann Options/i18n/Kontrast/Performance/A11y. Ein Bug rutscht nur durch, wenn er ALLE besteht.
+
+**Globales Render-Sicherheitsnetz (Phase 528):** `render()` ist ein try/catch-Wrapper um `_renderInner()` — bei jedem Render-Fehler erscheint ein Fallback („Überspringen"/„Zum Menü") statt White-Screen.
+
+## LERN-/RETENTION-FEATURES (Phase 533–546) — Überblick
+
+- **Daily Challenge** (`startDailyChallenge`/`renderDailyHero`): 1 Modus/Tag über `DAILY_POOL`+`getDailySeed`, Resume, 7-Tage-Liste, **30-Tage-Streak-Raster** (`_dailyDots`), **teilbares Emoji-Ergebnis** (`shareDailyResult`, `S.dailyMarks`).
+- **Spaced Repetition / Fehler-Training** (`gq_srs`, Leitner): falsche Fragen → Snapshot (`_srsAdd`, nur MC/HL/Pin), Boxen 1–5 (`_srsGrade`), Modus „Schwächen üben" (`startSrsReview`/`srsNext`, `S.srsRun` → `nextRound` ruft `srsNext`). **Fehler-Tagebuch** (`renderSrsListModal`, Statistik + Leeren). An/aus via `gq_srs_off` (Einstellungen, `_srsToggle`). Home-Card `renderSrsHero`.
+- **Region üben** (`renderRegionModal`/`renderRegionEntry`): Sub-Regionen-Filter zentral über `_regionOk` (`sub:<sr>`) — alle Geo-Generatoren via `_rfilt` betroffen, pro Spiel gescopt (`S._pendingFilter`→`startGame`). **Lernkarten** (`renderLearnDeck`, Flagge+Land+Hauptstadt) → „Jetzt testen" mit **Hauptstädten ODER Flaggen**; Kontinent-Quiz (`startContinent`/`_GRP_FILTER`).
+- **Neue Spiele:** `geo_subregion` (Land→Region) + `geo_continent` (Land→Kontinent), beide `uk_match`, nutzen `COUNTRIES.sr`/`.ct` + `_SR_DE`/`_CONT_DE`.
+- **In-Game-Doku:** Header-„?" → Hilfe (`renderHelpModal`) → „Mehr" → Handbuch (`renderGuideModal`, Tabs Kinder/Eltern). Neuer Abschnitt `guide_p7` „Lernen & Wiederholen" deckt obige Features ab (DE/EN/PL).
 
 ## ALTERSSTUFEN-KRITERIEN (für neue Spiele) — Phase 496–497
 
@@ -234,49 +249,4 @@ Oder manuell:
 ## TIPPS FÜR EFFIZIENTE SESSIONS
 
 ### Schnelle Aufgaben (sag einfach):
-- `"Füge Spiel X zu games_extended.json hinzu"` → Claude prüft Schema, fügt ein, validiert
-- `"Neuer Modus: [Beschreibung]"` → Claude implementiert alle 3 Einträge + Generator
-- `"Audit Phase NNN"` → Claude liest alle Kern-Dateien und liefert Findings + Fixes
-
-### Für größere Erweiterungen (gib diese Infos mit):
-- **Phase-Nummer** (nächste wäre 442)
-- **Kategorie** — bereits vorhandene Kategorien in MODE_CATS:
-  `games, autos, tiere, pflanzen, gastro, tech, emob, archaeologie, astro, geo, sport,`
-  `zug, kultur, architektur, mythologie, geschichte, kunst, themeparks, boardgames,`
-  `sprachen, hunde, gartenbau, literatur, musik, filme, serien, medizin, wirtschaft,`
-  `webkultur, robotik, regional`
-- **Daten-Format** (JSON-Schema, Python-Dict mit Feldbeschreibungen)
-- **Erwartete Modi-Typen** (H/L, Match, Pin, Wort-Schmiede, Timeline)
-
-### ⚠️ Duplikat-Guard bei neuen Kategorien (PFLICHT vor Sprint-Start):
-Bevor du einen Feature-Sprint startest, **prüfe ob der Patch schon angewendet wurde**:
-```bash
-# Schnelltest: Existiert die erste neue Modus-ID bereits?
-grep -c "hl_MEINMODUS" gen.py   # 0 = noch nicht da, >0 = Patch bereits gelaufen!
-```
-Wenn `>0`: **Führe NICHT den Patch aus** — nur `post_phase.py` und Doku aktualisieren.
-`check_session.py` warnt ebenfalls, wenn `patch_NNN_*.py` noch nicht in `PATCHES.md` dokumentiert ist.
-
-### H/L-Inversions-Falle (KRITISCH):
-**Wenn ein kleinerer Wert "besser" oder "schneller" ist, MUSS `lowerWins: true` gesetzt sein.**  
-Beispiele: 0–100 km/h Beschleunigung, Spritverbrauch (L/100km), cw-Wert, Platzierungen.  
-Ohne `lowerWins: true` gewinnt immer die höhere Zahl — das wäre bei Verbrauch oder Beschleunigung falsch.
-```javascript
-// RICHTIG:
-hl_auto_accel: ()=>genAutosHLExt("accel",{lowerWins:true, unit:"s", prompt:_tc("...")})
-// FALSCH (fehlendes lowerWins):
-hl_auto_accel: ()=>genAutosHLExt("accel",{unit:"s", prompt:_tc("...")})
-```
-
-### Für Sicherheits-/Qualitäts-Sprints:
-- Sag explizit: `"Phase 400 Audit"` oder `"Security Review"`
-- Claude wendet Fixes direkt an (kein reines Reporting)
-- Claude führt danach validate + verify aus
-
----
-
-## AKTUELLER PROJEKT-STATUS (Phase 546)
-
-| Metrik | Wert |
-|--------|------|
-| Spie
+- `"Füge Spiel X zu games_extended.json hinzu
