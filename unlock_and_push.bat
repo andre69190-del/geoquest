@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 546. Handbuch aktualisiert: neuer Abschnitt 'Lernen & Wiederholen' (guide_p7) im Eltern-Tab dokumentiert Daily Challenge (+ teilen, Streak-Kalender), Schwächen üben / Spaced Repetition / Fehler-Tagebuch (+ an/aus) und Region üben / Lernkarten. DE/EN/PL. Bisher war keines der neuen Features dokumentiert. Verifiziert in allen 3 Sprachen.. verify: 195/195."
+git commit -m "Content: Phase 547. Doku-Zugang + Erstnutzer-Hinweise: (1) Prominenter 'Handbuch & Hilfe'-Button im Profil-Tab -> oeffnet renderGuideModal direkt (statt 2 Klicks ueber Hilfe->Mehr). (2) Einmaliger Tipp-Toast beim ERSTEN Oeffnen von 'Region ueben' (openRegionModal, gq_seen_region) und 'Schwaechen ueben' (startSrsReview, gq_seen_srs). i18n DE/EN/PL. Verifiziert: Button da, Toast nur 1x.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

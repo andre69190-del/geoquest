@@ -629,3 +629,7 @@ SRS-an/aus-Schalter im Settings-Modal („Fehler merken"): `gq_srs_off=1` → `_
 ## Phase 546 — Handbuch: Abschnitt „Lernen & Wiederholen"
 **Datum:** 2026-06-03
 Das In-Game-Handbuch (renderGuideModal, Eltern-Tab) dokumentierte **keines** der neuen Features. Neuer Abschnitt `guide_p7` „Lernen & Wiederholen" (DE/EN/PL): Daily Challenge (+ teilen, Streak-Kalender), Schwächen üben / Spaced Repetition / Fehler-Tagebuch (+ an/aus), Region üben / Lernkarten. Verifiziert in allen 3 Sprachen. Einstieg: Header-„?" → Hilfe → „Mehr".
+
+## Phase 547 — Doku-Zugang (Profil) + Erstnutzer-Hinweise
+**Datum:** 2026-06-03
+(1) Prominenter **„📖 Handbuch & Hilfe"-Button** im Profil-Tab → öffnet `renderGuideModal` direkt (vorher 2 Klicks via Hilfe→Mehr). (2) Einmaliger **Tipp-Toast** beim ersten Öffnen von „Region üben" (`openRegionModal`, `gq_seen_region`) und „Schwächen üben" (`startSrsReview`, `gq_seen_srs`). i18n DE/EN/PL. Verifiziert: Button vorhanden, Toast nur 1×.

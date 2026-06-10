@@ -783,7 +783,12 @@
   "Letzte 30 Tage": "Last 30 days",
   "Fehler merken": "Track mistakes",
   "An": "On",
-  "Aus": "Off"
+  "Aus": "Off",
+  "Handbuch & Hilfe": "Manual & Help",
+  "Spielarten, Lernen, Eltern-Infos": "Game types, learning, parent info",
+  "Öffnen": "Open",
+  "Tipp: erst lernen, dann mit Hauptstädten oder Flaggen testen.": "Tip: learn first, then test with capitals or flags.",
+  "Hier wiederholst du gezielt deine Fehler.": "Here you review your mistakes."
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1569,6 +1574,11 @@
   "Letzte 30 Tage": "Ostatnie 30 dni",
   "Fehler merken": "Zapisuj błędy",
   "An": "Wł.",
-  "Aus": "Wył."
+  "Aus": "Wył.",
+  "Handbuch & Hilfe": "Podręcznik i pomoc",
+  "Spielarten, Lernen, Eltern-Infos": "Tryby gry, nauka, info dla rodziców",
+  "Öffnen": "Otwórz",
+  "Tipp: erst lernen, dann mit Hauptstädten oder Flaggen testen.": "Wskazówka: najpierw naucz się, potem testuj stolicami lub flagami.",
+  "Hier wiederholst du gezielt deine Fehler.": "Tu powtarzasz swoje błędy."
  }
 }

@@ -661,6 +661,11 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Handbuch & Hilfe': ('Manual & Help', 'Podręcznik i pomoc'),
+ 'Spielarten, Lernen, Eltern-Infos': ('Game types, learning, parent info', 'Tryby gry, nauka, info dla rodziców'),
+ 'Öffnen': ('Open', 'Otwórz'),
+ 'Tipp: erst lernen, dann mit Hauptstädten oder Flaggen testen.': ('Tip: learn first, then test with capitals or flags.', 'Wskazówka: najpierw naucz się, potem testuj stolicami lub flagami.'),
+ 'Hier wiederholst du gezielt deine Fehler.': ('Here you review your mistakes.', 'Tu powtarzasz swoje błędy.'),
  'Fehler merken': ('Track mistakes', 'Zapisuj błędy'),
  'An': ('On', 'Wł.'),
  'Aus': ('Off', 'Wył.'),
