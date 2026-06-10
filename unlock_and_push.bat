@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 545. Einstellungen: SRS an/aus-Schalter ('Fehler merken') im Settings-Modal. gq_srs_off=1 -> _srsAdd erfasst keine Fehler mehr; _srsToggle schaltet um. Schwierigkeit persistiert bereits via gq_diffx (bestaetigt). i18n Fehler merken/An/Aus DE/EN/PL. Verifiziert: an erfasst, aus blockt, wieder an erfasst.. verify: 195/195."
+git commit -m "Content: Phase 546. Handbuch aktualisiert: neuer Abschnitt 'Lernen & Wiederholen' (guide_p7) im Eltern-Tab dokumentiert Daily Challenge (+ teilen, Streak-Kalender), Schwächen üben / Spaced Repetition / Fehler-Tagebuch (+ an/aus) und Region üben / Lernkarten. DE/EN/PL. Bisher war keines der neuen Features dokumentiert. Verifiziert in allen 3 Sprachen.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

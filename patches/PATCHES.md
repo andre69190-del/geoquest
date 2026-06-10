@@ -625,3 +625,7 @@ Neuer Modus `geo_continent` (pure_geo): Land zeigen, Kontinent aus 4 wählen. `g
 ## Phase 545 — Einstellung: SRS an/aus („Fehler merken")
 **Datum:** 2026-06-03
 SRS-an/aus-Schalter im Settings-Modal („Fehler merken"): `gq_srs_off=1` → `_srsAdd` erfasst keine Fehler mehr; `_srsToggle` schaltet um. (Standard-Schwierigkeit persistiert bereits via `gq_diffx` — bestätigt, kein Handlungsbedarf.) i18n „Fehler merken/An/Aus" DE/EN/PL. Verifiziert: an erfasst, aus blockt, wieder an erfasst.
+
+## Phase 546 — Handbuch: Abschnitt „Lernen & Wiederholen"
+**Datum:** 2026-06-03
+Das In-Game-Handbuch (renderGuideModal, Eltern-Tab) dokumentierte **keines** der neuen Features. Neuer Abschnitt `guide_p7` „Lernen & Wiederholen" (DE/EN/PL): Daily Challenge (+ teilen, Streak-Kalender), Schwächen üben / Spaced Repetition / Fehler-Tagebuch (+ an/aus), Region üben / Lernkarten. Verifiziert in allen 3 Sprachen. Einstieg: Header-„?" → Hilfe → „Mehr".

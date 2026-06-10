@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 545 (Stand: Juni 2026)
+**Version:** Phase 546 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.12 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1249,6 +1249,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **543** | patch_543.py | **Neues Spiel 'Land -> Kontinent' (geo_continent, pure_geo): Land zeigen, Kontinent aus 4 waehlen. genContinentQ nutzt COUNTRIES.ct + _CONT_DE (lokalisiert). Kontinent-Namen + Prompt schon uebersetzt -> 0 neue i18n. 1089->1090 Modi. Verifiziert: Ungarn->Europa, Ghana->Afrika, Ecuador->Suedamerika. Gut fuer juengere Stufen.** |
 | **544** | patch_544.py | **Daily-Streak-Kalender: 30-Tage-Punkteraster (_dailyDots) im erledigt-Hero - gespielte Tage gruen, sonst grau. i18n 'Letzte 30 Tage' DE/EN/PL. Verifiziert: 30 Dots.** |
 | **545** | patch_545.py | **Einstellungen: SRS an/aus-Schalter ('Fehler merken') im Settings-Modal. gq_srs_off=1 -> _srsAdd erfasst keine Fehler mehr; _srsToggle schaltet um. Schwierigkeit persistiert bereits via gq_diffx (bestaetigt). i18n Fehler merken/An/Aus DE/EN/PL. Verifiziert: an erfasst, aus blockt, wieder an erfasst.** |
+| **546** | patch_546.py | **Handbuch aktualisiert: neuer Abschnitt 'Lernen & Wiederholen' (guide_p7) im Eltern-Tab dokumentiert Daily Challenge (+ teilen, Streak-Kalender), Schwächen üben / Spaced Repetition / Fehler-Tagebuch (+ an/aus) und Region üben / Lernkarten. DE/EN/PL. Bisher war keines der neuen Features dokumentiert. Verifiziert in allen 3 Sprachen.** |
 
 ---
 
