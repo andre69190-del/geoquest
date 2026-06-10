@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 532 (Stand: Juni 2026)
+**Version:** Phase 533 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.10 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1236,6 +1236,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **530** | patch_530.py | **Barrierefreiheit: 7 Flaggen-<img> ohne alt -> alt='Flagge' ergaenzt (0 verbleibend). aria-label fuer Icon-only-Buttons: HUD (Vorlesen/Feedback/Beenden/Einstellungen, 27x) + Loeschen/Bestaetigen/Aktualisieren/Schliessen (7x). Neuer Dauertest a11y_check.py (9. Ebene): FAIL bei <img> ohne alt, WARN bei Icon-only-Buttons ohne Label. Ergebnis 0 FAIL, 69->3 WARN.** |
 | **531** | patch_531.py | **Performance: license_plates.json (3,2 MB) blockierte den Start (erste sequenzielle await-Fetch bei 18%). Jetzt nicht-blockierend nachgeladen: App startet sofort, PLATES_DATA wird per fetch().then() befuellt sobald da. Plate-Modi liefern bis dahin null (graceful, wie bei Ladefehler) und funktionieren danach. Verifiziert: vor Load null, nach Load OK. Kein blockierendes await mehr; SW-Cache unveraendert 6,1 MB.** |
 | **532** | patch_532.py | **Inhaltsfeinschliff emob_match: bidirektional (c hatte Muell wie Deutschland/Wirtschaftlichkeit/Batterieverschleiss + Varianten V2H Backup/V2G Japan) auf saubere V2H/V2G/V2L/V2V normalisiert (n-basiert zugeordnet); level_autonomy Varianten (Level 4/5/2+/0/4 begrenzt) auf die 4 Stufen gemappt. Beide jetzt 100% in fixedOpts -> klare 4-Optionen-Fragen. Andere emob-Kategorien (stecker/zellchemie/motorentypen/...) BEWUSST belassen: ihre reicheren c-Werte (J1772/NACS/...) sind korrekter als ein Zwang in 4 Buckets und liefern nach Phase 515 bereits praezise Fragen.** |
+| **533** | patch_533.py | **Daily Challenge: teilbares Emoji-Ergebnis (Worldle-Stil) ergaenzt. Pro Runde wird ✓/✗ in S.dailyMarks getrackt (answer + answerAirportPin), in Daily-Progress + markDailyDone persistiert. Im 'erledigt'-Hero: 10-Felder Emoji-Raster (🟩/🟥) + Teilen-Button -> shareDailyResult() nutzt navigator.share bzw. Clipboard (Text: Datum, Emoji, X/10, Streak, URL). i18n DE/EN/PL. Bestehende Daily-Mechanik (Seed/Pool/Resume/7-Tage-Streak) war schon da; das virale Teilen fehlte.** |
 
 ---
 

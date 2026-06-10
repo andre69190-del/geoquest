@@ -573,3 +573,7 @@ Der Render rief `.map` auf evtl. undefinierten Feldern auf (`q.hints`, `q.countr
 ## Phase 532 — Inhaltsfeinschliff emob_match (bidirektional + level_autonomy)
 **Datum:** 2026-06-03
 `bidirektional`: `c` enthielt echten Müll (`Deutschland`, `Wirtschaftlichkeit`, `Batterieverschleiß`) und Varianten (`V2H Backup`, `V2G Japan`, `V2L KIA`) → n-basiert auf saubere **V2H/V2G/V2L/V2V** normalisiert. `level_autonomy`: Varianten (`Level 4`, `Level 5`, `Level 2+`, `Level 0`, `Level 4 (begrenzt)`) → die 4 Stufen. Beide jetzt 100 % in `fixedOpts` → klare 4-Optionen-Fragen. **Bewusst belassen:** `stecker`/`zellchemie`/`motorentypen`/… — ihre reicheren `c`-Werte (J1772/NACS/…) sind *korrekter* als ein Zwang in 4 Buckets und liefern seit Phase 515 bereits präzise Fragen.
+
+## Phase 533 — Daily Challenge: teilbares Emoji-Ergebnis (Worldle-Stil)
+**Datum:** 2026-06-03
+Die Daily Challenge (Seed/Pool/Resume/7-Tage-Streak) existierte bereits — es fehlte der **virale Kern**. Ergänzt: pro Runde ✓/✗ in `S.dailyMarks` (in `answer`+`answerAirportPin`), persistiert in Daily-Progress + `markDailyDone`. Im „erledigt"-Hero: 10-Felder-Emoji-Raster (🟩/🟥) + **Teilen-Button** → `shareDailyResult()` (navigator.share bzw. Clipboard; Text: Datum, Emoji, X/10, Streak 🔥, URL). i18n DE/EN/PL. Verifiziert: Emoji/Share/Persistenz korrekt.

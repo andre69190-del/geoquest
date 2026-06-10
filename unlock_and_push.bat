@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 532. Inhaltsfeinschliff emob_match: bidirektional (c hatte Muell wie Deutschland/Wirtschaftlichkeit/Batterieverschleiss + Varianten V2H Backup/V2G Japan) auf saubere V2H/V2G/V2L/V2V normalisiert (n-basiert zugeordnet); level_autonomy Varianten (Level 4/5/2+/0/4 begrenzt) auf die 4 Stufen gemappt. Beide jetzt 100% in fixedOpts -> klare 4-Optionen-Fragen. Andere emob-Kategorien (stecker/zellchemie/motorentypen/...) BEWUSST belassen: ihre reicheren c-Werte (J1772/NACS/...) sind korrekter als ein Zwang in 4 Buckets und liefern nach Phase 515 bereits praezise Fragen.. verify: 195/195."
+git commit -m "Content: Phase 533. Daily Challenge: teilbares Emoji-Ergebnis (Worldle-Stil) ergaenzt. Pro Runde wird ✓/✗ in S.dailyMarks getrackt (answer + answerAirportPin), in Daily-Progress + markDailyDone persistiert. Im 'erledigt'-Hero: 10-Felder Emoji-Raster (🟩/🟥) + Teilen-Button -> shareDailyResult() nutzt navigator.share bzw. Clipboard (Text: Datum, Emoji, X/10, Streak, URL). i18n DE/EN/PL. Bestehende Daily-Mechanik (Seed/Pool/Resume/7-Tage-Streak) war schon da; das virale Teilen fehlte.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

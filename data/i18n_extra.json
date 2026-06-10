@@ -715,7 +715,9 @@
   "Nein": "No",
   "Zeit abgelaufen – kein Pin gesetzt": "Time's up – no pin placed",
   "Diese Ansicht konnte nicht geladen werden.": "This view could not be loaded.",
-  "Überspringen": "Skip"
+  "Überspringen": "Skip",
+  "Ergebnis teilen": "Share result",
+  "Ergebnis kopiert!": "Result copied!"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1433,6 +1435,8 @@
   "Nein": "Nie",
   "Zeit abgelaufen – kein Pin gesetzt": "Czas minął – nie postawiono pinezki",
   "Diese Ansicht konnte nicht geladen werden.": "Nie udało się załadować tego widoku.",
-  "Überspringen": "Pomiń"
+  "Überspringen": "Pomiń",
+  "Ergebnis teilen": "Udostępnij wynik",
+  "Ergebnis kopiert!": "Wynik skopiowany!"
  }
 }

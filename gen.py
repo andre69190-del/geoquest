@@ -11927,7 +11927,7 @@ function nextRound(){
   const nr=S.rd+1;
   if(S.diff!=="survival"&&S.diff!=="blitz"&&nr>=ROUNDS){
     S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
-    if(S.isDailyRun&&!isDailyDone()){markDailyDone(S.sc);if(sbProfile)sbProfile.geo_coins=(sbProfile.geo_coins||0)+100;if(sb&&sbUser)sb.rpc("add_coins",{p_user_id:sbUser.id,p_amount:100}).then(r=>{if(r.data!=null&&sbProfile)sbProfile.geo_coins=r.data;},()=>{});}
+    if(S.isDailyRun&&!isDailyDone()){markDailyDone(S.sc,S.dailyMarks||[]);if(sbProfile)sbProfile.geo_coins=(sbProfile.geo_coins||0)+100;if(sb&&sbUser)sb.rpc("add_coins",{p_user_id:sbUser.id,p_amount:100}).then(r=>{if(r.data!=null&&sbProfile)sbProfile.geo_coins=r.data;},()=>{});}
     saveHistory({mode:S.mode,score:S.sc,correct:S.correct,rounds:ROUNDS,date:Date.now(),answers:S.sessionAnswers.map(a=>({cc:a.cc,correct:a.correct}))});
     if(sbOK)saveSession(S.mode,S.sc,S.bs,S.correct,Date.now()-(S.gameStartTime||Date.now())).then(()=>{S.scoreSaved=true;render();});
     render();
@@ -13252,6 +13252,7 @@ window.genWebkulturMatchExt=genWebkulturMatchExt;
   const ok=(S.q&&S.q.type==="timeline")?!!a:(a===S.q.ans);
   S.sel=a||"__t";S.ok=ok;
   if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:ok});
+  if(S.isDailyRun){(S.dailyMarks=S.dailyMarks||[]).push(ok?1:0);}
   let pts=0;
   if(ok){trackTrainDepot();const ns=S.st+1,t=tier(ns);if(S.diff==="casual"||S.diff==="blitz"){pts=10;}else if(S.diff==="survival"){pts=20+S.tm;S.survTimeBonusTotal=(S.survTimeBonusTotal||0)+S.tm;}else{/* hardcore */S.hcMult=Math.min(2.5,parseFloat((+(S.hcMult||1.0)+0.1).toFixed(1)));S.hcMaxMult=Math.max(S.hcMaxMult||1.0,S.hcMult);pts=Math.ceil(10*1.5);}S.sc+=pts;S.st=ns;S.bs=Math.max(S.bs,ns);S.correct++;soundCorrect();if(ns>=3)setTimeout(()=>soundStreak(ns),250);showPtsPopup(pts,S.diff==='hardcore'?'(1.5x)':'');if(navigator.vibrate)navigator.vibrate([50]);}
   else{S.st=0;if(S.diff==="hardcore"){S.hcMult=1.0;}soundWrong();if(navigator.vibrate)navigator.vibrate([100,50,100]);
@@ -13317,7 +13318,7 @@ S.pts=pts;S.lid=S.q.lid;S.ph="feedback";render();
       if(_isMpHost){try{window.mpGameCh.send({type:"broadcast",event:"GAMEOVER_SYNC",payload:{score:S.sc,rd:nr}});}catch(_e){}}
       S.ph="gameover";S.scoreSaved=false;S.convModal=true;soundOver();checkMastery();updateDailyStreak();
       if(S.isDailyRun&&\!isDailyDone()){
-        markDailyDone(S.sc);
+        markDailyDone(S.sc,S.dailyMarks||[]);
         if(sbProfile)sbProfile.geo_coins=(sbProfile.geo_coins||0)+100;
         if(sb&&sbUser)sb.rpc("add_coins",{p_user_id:sbUser.id,p_amount:100}).then(r=>{if(r.data!=null&&sbProfile)sbProfile.geo_coins=r.data;},()=>{});
       }
@@ -13703,6 +13704,7 @@ function answerAirportPin(clickedLat,clickedLng,tok){
   S.airportPinDist=dist;
   S.airportPinPts=pts;
   if(S.q.cc)S.sessionAnswers.push({cc:S.q.cc,correct:S.ok});
+  if(S.isDailyRun){(S.dailyMarks=S.dailyMarks||[]).push(S.ok?1:0);}
   if(pts>0){S.sc+=pts;S.st=S.ok?S.st+1:0;S.correct+=S.ok?1:0;}
   else{S.st=0;}
   render();
@@ -14065,7 +14067,7 @@ function saveDailyProgress(){
   if(!S.isDailyRun||isDailyDone())return;
   try{localStorage.setItem(getDailyProgressKey(),JSON.stringify({
     sc:S.sc,rd:S.rd,correct:S.correct,st:S.st,bs:S.bs,
-    lids:[...S.askedLids],
+    lids:[...S.askedLids],marks:S.dailyMarks||[],
     rngState:rngState  /* Phase 295: RNG-Zustand speichern → Resume bleibt deterministisch */
   }));}catch(_e){}
 }
@@ -14189,8 +14191,8 @@ function getRarity(code){
 function rarityLabel(r){return{common:"\u{1F7E2} Common",rare:"\u{1F535} Rare",epic:"\u{1F7E3} Epic",legendary:"\u{1F7E1} Legendary"}[r]||r;}
 function rarityColor(r){return{common:"#10b981",rare:"#3b82f6",epic:"#8b5cf6",legendary:"#f59e0b"}[r]||"#999";}
 function isDailyDone(){try{return\!\!JSON.parse(localStorage.getItem(getDailyKey())||"null");}catch(e){return false;}}
-function markDailyDone(score){
-  try{localStorage.setItem(getDailyKey(),JSON.stringify({score,ts:Date.now()}));}catch(e){}
+function markDailyDone(score,marks){
+  try{localStorage.setItem(getDailyKey(),JSON.stringify({score,ts:Date.now(),marks:marks||[]}));}catch(e){}
   try{localStorage.removeItem(getDailyProgressKey());}catch(_e){} /* P284: Progress loeschen */
   if(sb&&sbUser){const _d=new Date().toISOString().slice(0,10);sb.from("profiles").update({last_daily_date:_d}).eq("id",sbUser.id).then(()=>{},()=>{});}
 }
@@ -14252,7 +14254,7 @@ function startDailyChallenge(){
       st:_prog.st||0,bs:_prog.bs||0,
       lid:null,ph:"playing",scoreSaved:false,sessionAnswers:[],newStamps:[],
       half_removed:false,freezeActive:false,queueExtra:[],
-      askedLids:new Set(_prog.lids||[]),
+      askedLids:new Set(_prog.lids||[]),dailyMarks:_prog.marks||[],
       gameStartTime:Date.now(),adShownThisGame:false,adModal:false,
       slfData:null,wsData:null,lhData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});
     showToast("\u{1F4CD} Daily fortgesetzt – Runde "+((_prog.rd||0)+1)+"/10");
@@ -14263,10 +14265,18 @@ function startDailyChallenge(){
   initRng(seed);
   Object.assign(S,{sc:0,st:0,bs:0,rd:0,correct:0,lid:null,ph:"playing",scoreSaved:false,
     sessionAnswers:[],newStamps:[],half_removed:false,freezeActive:false,queueExtra:[],
-    askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,
+    askedLids:new Set(),gameStartTime:Date.now(),adShownThisGame:false,adModal:false,dailyMarks:[],
     slfData:null,wsData:null,lhData:null,hcMult:1.0,hcMaxMult:1.0,survTimeBonusTotal:0});
   saveDailyProgress();  /* sofort beim Start speichern – verhindert Neustart-Exploit */
   lq();
+}
+function _dailyEmoji(marks){if(!marks||!marks.length)return"";return marks.map(function(m){return m?"\u{1F7E9}":"\u{1F7E5}";}).join("");}
+function shareDailyResult(){
+  var stored=null;try{stored=JSON.parse(localStorage.getItem(getDailyKey())||"null");}catch(_e){}
+  if(!stored)return;var marks=stored.marks||[];var ng=marks.filter(function(m){return m;}).length;
+  var txt="\u{1F30D} GeoQuest Daily "+new Date().toLocaleDateString()+"\n"+_dailyEmoji(marks)+"  "+ng+"/"+marks.length+"\n\u{1F525} "+getStreak()+" \u00b7 https://geoquest-web.vercel.app/play";
+  if(navigator.share){navigator.share({text:txt}).catch(function(){});}
+  else{try{navigator.clipboard.writeText(txt).then(function(){showToast(_tc("Ergebnis kopiert!"));},function(){});}catch(_e){}}
 }
 function renderDailyHero(){
   const done=isDailyDone();
@@ -14284,6 +14294,7 @@ function renderDailyHero(){
           <div class="dh-sub" style="color:var(--text2)">Score: <b>${stored?.score?.toLocaleString()||"?"}</b> \u00b7 Neue Challenge in <span style="font-family:monospace;color:#f59e0b">${cd}</span></div>
         </div>
       </div>
+      <div style="margin-top:.7rem;text-align:center"><div style="font-size:1.05rem;letter-spacing:2px">${_dailyEmoji(stored&&stored.marks)}</div><button class="btn-g" style="margin-top:.5rem;width:auto;padding:.4rem 1rem" aria-label="Ergebnis teilen" onclick="event.stopPropagation();shareDailyResult()">\u{1F4E4} ${_tc("Ergebnis teilen")}</button></div>
       ${_histHtml}
     </div>`;}
   /* P284: Bereits begonnen aber nicht abgeschlossen? Resume-Karte zeigen */
