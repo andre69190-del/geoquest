@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 541 (Stand: Juni 2026)
+**Version:** Phase 542 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.12 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1245,6 +1245,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **539** | patch_539.py | **Lern-/Uebungsmodus (Lernkarten vor dem Test), integriert in den Region-Flow: Region-Chip oeffnet jetzt eine Lernkarten-Strecke (renderLearnDeck) mit Flagge + Land + Hauptstadt + Vor/Zurueck + 'Jetzt testen' -> startRegionQuiz('sub:X','capital'). _capByCc nutzt CAPITALS. So 'erst lernen, dann testen' (haeufiger Seterra-Wunsch) + Sub-Regionen kombiniert. i18n DE/EN/PL. renderRegionEntry/Modal/LearnDeck im Render-Test abgedeckt. Alle Ebenen gruen.** |
 | **540** | patch_540.py | **Neues Spiel 'Land -> Region' (geo_subregion, pure_geo): zeigt ein Land, waehle die Weltregion (Subregion) aus 4 Optionen. Nutzt COUNTRIES.sr + _SR_DE (lokalisiert), bestehender uk_match-Renderer. MODES + modes-Liste + GEN + genSubregionQ + i18n DE/EN/PL. Verifiziert: Samoa->Polynesien, Sudan->Nordafrika, alle loesbar; 1088->1089 Modi; Render 963 OK, smoke 957/0 THROW. Passt thematisch zum neuen Regionen-Feature.** |
 | **541** | patch_541.py | **Fehler-Tagebuch erweitert: Statistik-Zeile (Anzahl Eintraege + faellig) + 2-stufiger 'Tagebuch leeren'-Button (Tap -> 'Wirklich leeren?' -> srsClear loescht gq_srs). srsConfirmClear-Reset beim Schliessen. i18n DE/EN/PL. Verifiziert.** |
+| **542** | patch_542.py | **Region-Picker erweitert: (1) Lernkarten bieten Modus-Wahl - Hauptstaedte ODER Flaggen testen (startRegionQuiz mit capital/flag, beide respektieren den Sub-Filter). (2) Pro Kontinent-Gruppe ein Quiz-Button (startContinent -> _GRP_FILTER Europa->europe etc. -> ganzer Kontinent). i18n DE/EN/PL (Hauptstaedte/Flaggen). Verifiziert: Flaggen+Osteuropa regional, Kontinent-Filter, Buttons rendern.** |
 
 ---
 

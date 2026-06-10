@@ -777,7 +777,9 @@
   "Einträge": "entries",
   "Tagebuch leeren": "Clear log",
   "Wirklich leeren?": "Really clear?",
-  "Tagebuch geleert": "Log cleared"
+  "Tagebuch geleert": "Log cleared",
+  "Hauptstädte": "Capitals",
+  "Flaggen": "Flags"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1557,6 +1559,8 @@
   "Einträge": "wpisy",
   "Tagebuch leeren": "Wyczyść dziennik",
   "Wirklich leeren?": "Na pewno wyczyścić?",
-  "Tagebuch geleert": "Dziennik wyczyszczony"
+  "Tagebuch geleert": "Dziennik wyczyszczony",
+  "Hauptstädte": "Stolice",
+  "Flaggen": "Flagi"
  }
 }

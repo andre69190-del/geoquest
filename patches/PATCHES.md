@@ -609,3 +609,7 @@ Neuer Modus `geo_subregion` (Kategorie pure_geo): zeigt ein Land, wähle die **W
 ## Phase 541 — Fehler-Tagebuch: Statistik + Leeren
 **Datum:** 2026-06-03
 Fehler-Tagebuch-Modal erweitert: **Statistik-Zeile** (Anzahl Einträge · fällig) + **2-stufiger „Tagebuch leeren"** (Tap → „Wirklich leeren?" → `srsClear()` löscht `gq_srs`). `srsConfirmClear`-Reset beim Schließen. i18n DE/EN/PL. Verifiziert.
+
+## Phase 542 — Region-Picker: Modus-Wahl (Hauptstädte/Flaggen) + Kontinent-Quiz
+**Datum:** 2026-06-03
+Region-Picker erweitert: (1) Lernkarten bieten **Modus-Wahl** — Hauptstädte ODER Flaggen testen (`startRegionQuiz` mit `capital`/`flag`, beide respektieren den Sub-Filter via `_rfilt`). (2) Pro Kontinent-Gruppe ein **🌍-Quiz-Button** (`startContinent` → `_GRP_FILTER` Europa→europe … → ganzer Kontinent). i18n DE/EN/PL. Verifiziert: Flaggen+Osteuropa regional (Ukraine/Belarus/…), Kontinent-Filter (Europa).

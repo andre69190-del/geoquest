@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 541. Fehler-Tagebuch erweitert: Statistik-Zeile (Anzahl Eintraege + faellig) + 2-stufiger 'Tagebuch leeren'-Button (Tap -> 'Wirklich leeren?' -> srsClear loescht gq_srs). srsConfirmClear-Reset beim Schliessen. i18n DE/EN/PL. Verifiziert.. verify: 195/195."
+git commit -m "Content: Phase 542. Region-Picker erweitert: (1) Lernkarten bieten Modus-Wahl - Hauptstaedte ODER Flaggen testen (startRegionQuiz mit capital/flag, beide respektieren den Sub-Filter). (2) Pro Kontinent-Gruppe ein Quiz-Button (startContinent -> _GRP_FILTER Europa->europe etc. -> ganzer Kontinent). i18n DE/EN/PL (Hauptstaedte/Flaggen). Verifiziert: Flaggen+Osteuropa regional, Kontinent-Filter, Buttons rendern.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

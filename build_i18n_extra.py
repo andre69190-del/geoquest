@@ -661,6 +661,8 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Hauptstädte': ('Capitals', 'Stolice'),
+ 'Flaggen': ('Flags', 'Flagi'),
  'Einträge': ('entries', 'wpisy'),
  'Tagebuch leeren': ('Clear log', 'Wyczyść dziennik'),
  'Wirklich leeren?': ('Really clear?', 'Na pewno wyczyścić?'),
