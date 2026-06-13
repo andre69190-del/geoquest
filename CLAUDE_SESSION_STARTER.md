@@ -120,6 +120,7 @@ protagonist, howlong_h                    ← Phase 410 (optional, None erlaubt)
 Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 
 ### Bei neuen Spielmodi
+- [ ] **GEO-BEZUG-PFLICHT (oberste Regel):** JEDES Spiel MUSS einen geografischen Bezug haben — der Name ist „**Geo**Quest“. Eine Frage muss sich auf Länder, Kontinente, Regionen, Orte, Karten **oder** darauf beziehen, *wo* etwas vorkommt (z. B. „wo lebt dieses Tier“, „aus welchem Land kommt dieses Essen“). Reines Sach-/Tier-/Allgemeintrivia ohne Ortsbezug ist **nicht erlaubt**. Im Zweifel: Geo-Bezug ergänzen oder Spiel verwerfen.
 - [ ] MODES-Eintrag mit allen Feldern (id, icon, title, group, prompt, desc, prompt_en)
 - [ ] MODE_CATS-Eintrag in der richtigen Kategorie
 - [ ] GEN-Dispatch-Eintrag
