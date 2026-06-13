@@ -661,6 +661,16 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Aus welchem Land kommt dieses Essen?': ('Which country does this food come from?', 'Z jakiego kraju pochodzi to jedzenie?'),
+ 'Italien': ('Italy', 'Włochy'),
+ 'Japan': ('Japan', 'Japonia'),
+ 'Frankreich': ('France', 'Francja'),
+ 'Mexiko': ('Mexico', 'Meksyk'),
+ 'Deutschland': ('Germany', 'Niemcy'),
+ 'China': ('China', 'Chiny'),
+ 'USA': ('USA', 'USA'),
+ 'Indien': ('India', 'Indie'),
+ 'Spanien': ('Spain', 'Hiszpania'),
  "Auf welchem Kontinent lebt dieses Tier?": ("On which continent does this animal live?", "Na jakim kontynencie żyje to zwierzę?"),
  'Welches Tierkind gehört dazu?': ('Which baby belongs to this animal?', 'Które młode należy do tego zwierzęcia?'),
  'Welpe': ('Puppy', 'Szczeniak'),

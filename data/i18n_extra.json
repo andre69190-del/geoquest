@@ -800,7 +800,17 @@
   "Kaulquappe": "Tadpole",
   "Kitz": "Fawn",
   "Zicklein": "Kid (goat)",
-  "Auf welchem Kontinent lebt dieses Tier?": "On which continent does this animal live?"
+  "Auf welchem Kontinent lebt dieses Tier?": "On which continent does this animal live?",
+  "Aus welchem Land kommt dieses Essen?": "Which country does this food come from?",
+  "Italien": "Italy",
+  "Japan": "Japan",
+  "Frankreich": "France",
+  "Mexiko": "Mexico",
+  "Deutschland": "Germany",
+  "China": "China",
+  "USA": "USA",
+  "Indien": "India",
+  "Spanien": "Spain"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1603,6 +1613,16 @@
   "Kaulquappe": "Kijanka",
   "Kitz": "Jelonek",
   "Zicklein": "Koźlę",
-  "Auf welchem Kontinent lebt dieses Tier?": "Na jakim kontynencie żyje to zwierzę?"
+  "Auf welchem Kontinent lebt dieses Tier?": "Na jakim kontynencie żyje to zwierzę?",
+  "Aus welchem Land kommt dieses Essen?": "Z jakiego kraju pochodzi to jedzenie?",
+  "Italien": "Włochy",
+  "Japan": "Japonia",
+  "Frankreich": "Francja",
+  "Mexiko": "Meksyk",
+  "Deutschland": "Niemcy",
+  "China": "Chiny",
+  "USA": "USA",
+  "Indien": "Indie",
+  "Spanien": "Hiszpania"
  }
 }
