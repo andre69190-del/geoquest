@@ -788,7 +788,18 @@
   "Spielarten, Lernen, Eltern-Infos": "Game types, learning, parent info",
   "Öffnen": "Open",
   "Tipp: erst lernen, dann mit Hauptstädten oder Flaggen testen.": "Tip: learn first, then test with capitals or flags.",
-  "Hier wiederholst du gezielt deine Fehler.": "Here you review your mistakes."
+  "Hier wiederholst du gezielt deine Fehler.": "Here you review your mistakes.",
+  "Welches Tierkind gehört dazu?": "Which baby belongs to this animal?",
+  "Welpe": "Puppy",
+  "Kätzchen": "Kitten",
+  "Kalb": "Calf",
+  "Fohlen": "Foal",
+  "Lamm": "Lamb",
+  "Ferkel": "Piglet",
+  "Küken": "Chick",
+  "Kaulquappe": "Tadpole",
+  "Kitz": "Fawn",
+  "Zicklein": "Kid (goat)"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1579,6 +1590,17 @@
   "Spielarten, Lernen, Eltern-Infos": "Tryby gry, nauka, info dla rodziców",
   "Öffnen": "Otwórz",
   "Tipp: erst lernen, dann mit Hauptstädten oder Flaggen testen.": "Wskazówka: najpierw naucz się, potem testuj stolicami lub flagami.",
-  "Hier wiederholst du gezielt deine Fehler.": "Tu powtarzasz swoje błędy."
+  "Hier wiederholst du gezielt deine Fehler.": "Tu powtarzasz swoje błędy.",
+  "Welches Tierkind gehört dazu?": "Które młode należy do tego zwierzęcia?",
+  "Welpe": "Szczeniak",
+  "Kätzchen": "Kociak",
+  "Kalb": "Cielę",
+  "Fohlen": "Źrebię",
+  "Lamm": "Jagnię",
+  "Ferkel": "Prosię",
+  "Küken": "Pisklę",
+  "Kaulquappe": "Kijanka",
+  "Kitz": "Jelonek",
+  "Zicklein": "Koźlę"
  }
 }

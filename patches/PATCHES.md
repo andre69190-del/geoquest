@@ -633,3 +633,7 @@ Das In-Game-Handbuch (renderGuideModal, Eltern-Tab) dokumentierte **keines** der
 ## Phase 547 — Doku-Zugang (Profil) + Erstnutzer-Hinweise
 **Datum:** 2026-06-03
 (1) Prominenter **„📖 Handbuch & Hilfe"-Button** im Profil-Tab → öffnet `renderGuideModal` direkt (vorher 2 Klicks via Hilfe→Mehr). (2) Einmaliger **Tipp-Toast** beim ersten Öffnen von „Region üben" (`openRegionModal`, `gq_seen_region`) und „Schwächen üben" (`startSrsReview`, `gq_seen_srs`). i18n DE/EN/PL. Verifiziert: Button vorhanden, Toast nur 1×.
+
+## Phase 548 — Neues Stufe-1-Spiel „Tierkinder" (tiere_baby)
+**Datum:** 2026-06-13
+Erstes altersgerechtes Auffüll-Spiel für Stufe 1 (6–8): `tiere_baby` (Kategorie tiere, **Level 1**) — Emoji-Tier → Tierkind (Welpe/Kätzchen/Kalb …). **Template:** sprachneutrale Emoji-Frage + i18n-Optionen via `_tc` → automatisch DE/EN/PL (Antworten + Prompt übersetzt). Inline-Daten. Eingetragen in L1-Liste, tiere-modes, GEN. 1090→1091 Modi.

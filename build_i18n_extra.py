@@ -661,6 +661,17 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Welches Tierkind gehört dazu?': ('Which baby belongs to this animal?', 'Które młode należy do tego zwierzęcia?'),
+ 'Welpe': ('Puppy', 'Szczeniak'),
+ 'Kätzchen': ('Kitten', 'Kociak'),
+ 'Kalb': ('Calf', 'Cielę'),
+ 'Fohlen': ('Foal', 'Źrebię'),
+ 'Lamm': ('Lamb', 'Jagnię'),
+ 'Ferkel': ('Piglet', 'Prosię'),
+ 'Küken': ('Chick', 'Pisklę'),
+ 'Kaulquappe': ('Tadpole', 'Kijanka'),
+ 'Kitz': ('Fawn', 'Jelonek'),
+ 'Zicklein': ('Kid (goat)', 'Koźlę'),
  'Handbuch & Hilfe': ('Manual & Help', 'Podręcznik i pomoc'),
  'Spielarten, Lernen, Eltern-Infos': ('Game types, learning, parent info', 'Tryby gry, nauka, info dla rodziców'),
  'Öffnen': ('Open', 'Otwórz'),

@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 547. Doku-Zugang + Erstnutzer-Hinweise: (1) Prominenter 'Handbuch & Hilfe'-Button im Profil-Tab -> oeffnet renderGuideModal direkt (statt 2 Klicks ueber Hilfe->Mehr). (2) Einmaliger Tipp-Toast beim ERSTEN Oeffnen von 'Region ueben' (openRegionModal, gq_seen_region) und 'Schwaechen ueben' (startSrsReview, gq_seen_srs). i18n DE/EN/PL. Verifiziert: Button da, Toast nur 1x.. verify: 195/195."
+git commit -m "Content: Phase 548. Neues Stufe-1-Spiel 'Tierkinder' (tiere_baby, Kategorie tiere, Level 1): Emoji-Tier zeigen, Tierkind aus 4 waehlen (Welpe/Kaetzchen/...). Template fuer altersgerechte Kinderspiele: sprachneutrale Emoji-Frage + i18n-Optionen (_tc) -> automatisch DE/EN/PL. Inline-Daten. In L1-Liste, tiere-modes, GEN. 1090->1091 Modi. Verifiziert: Level 1, loesbar, EN/PL.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

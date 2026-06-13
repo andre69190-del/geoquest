@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 547 (Stand: Juni 2026)
+**Version:** Phase 548 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.13 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1251,6 +1251,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **545** | patch_545.py | **Einstellungen: SRS an/aus-Schalter ('Fehler merken') im Settings-Modal. gq_srs_off=1 -> _srsAdd erfasst keine Fehler mehr; _srsToggle schaltet um. Schwierigkeit persistiert bereits via gq_diffx (bestaetigt). i18n Fehler merken/An/Aus DE/EN/PL. Verifiziert: an erfasst, aus blockt, wieder an erfasst.** |
 | **546** | patch_546.py | **Handbuch aktualisiert: neuer Abschnitt 'Lernen & Wiederholen' (guide_p7) im Eltern-Tab dokumentiert Daily Challenge (+ teilen, Streak-Kalender), Schwächen üben / Spaced Repetition / Fehler-Tagebuch (+ an/aus) und Region üben / Lernkarten. DE/EN/PL. Bisher war keines der neuen Features dokumentiert. Verifiziert in allen 3 Sprachen.** |
 | **547** | patch_547.py | **Doku-Zugang + Erstnutzer-Hinweise: (1) Prominenter 'Handbuch & Hilfe'-Button im Profil-Tab -> oeffnet renderGuideModal direkt (statt 2 Klicks ueber Hilfe->Mehr). (2) Einmaliger Tipp-Toast beim ERSTEN Oeffnen von 'Region ueben' (openRegionModal, gq_seen_region) und 'Schwaechen ueben' (startSrsReview, gq_seen_srs). i18n DE/EN/PL. Verifiziert: Button da, Toast nur 1x.** |
+| **548** | patch_548.py | **Neues Stufe-1-Spiel 'Tierkinder' (tiere_baby, Kategorie tiere, Level 1): Emoji-Tier zeigen, Tierkind aus 4 waehlen (Welpe/Kaetzchen/...). Template fuer altersgerechte Kinderspiele: sprachneutrale Emoji-Frage + i18n-Optionen (_tc) -> automatisch DE/EN/PL. Inline-Daten. In L1-Liste, tiere-modes, GEN. 1090->1091 Modi. Verifiziert: Level 1, loesbar, EN/PL.** |
 
 ---
 
