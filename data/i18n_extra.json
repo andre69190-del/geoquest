@@ -799,7 +799,8 @@
   "Küken": "Chick",
   "Kaulquappe": "Tadpole",
   "Kitz": "Fawn",
-  "Zicklein": "Kid (goat)"
+  "Zicklein": "Kid (goat)",
+  "Auf welchem Kontinent lebt dieses Tier?": "On which continent does this animal live?"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1601,6 +1602,7 @@
   "Küken": "Pisklę",
   "Kaulquappe": "Kijanka",
   "Kitz": "Jelonek",
-  "Zicklein": "Koźlę"
+  "Zicklein": "Koźlę",
+  "Auf welchem Kontinent lebt dieses Tier?": "Na jakim kontynencie żyje to zwierzę?"
  }
 }

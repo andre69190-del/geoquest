@@ -661,6 +661,7 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ "Auf welchem Kontinent lebt dieses Tier?": ("On which continent does this animal live?", "Na jakim kontynencie żyje to zwierzę?"),
  'Welches Tierkind gehört dazu?': ('Which baby belongs to this animal?', 'Które młode należy do tego zwierzęcia?'),
  'Welpe': ('Puppy', 'Szczeniak'),
  'Kätzchen': ('Kitten', 'Kociak'),
