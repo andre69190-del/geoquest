@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 553. Empfehlungen (_forYouGames) und Daily Challenge nur noch Geo: NON_GEO_IDS-Filter in _forYouGames; DAILY_POOL_GEO (42->31) ersetzt DAILY_POOL an beiden Pick-Stellen. Haelt den Geo-Hauptbereich konsequent geo-only.. verify: 195/195."
+git commit -m "Content: Phase 554. Geo-Luecke geschichte geschlossen: neuer Geo-Modus 'hist_match_zentrum' (Reich -> Zentrumsstadt) via vorhandenem genGeschichteMatchExt(zentrum_hauptstadt). Damit hat jede geo-faehige Kategorie >=1 Geo-Modus im Hauptbereich. 1092->1093.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

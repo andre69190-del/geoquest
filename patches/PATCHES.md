@@ -645,3 +645,7 @@ Hauptbereich zeigt nur noch **Geo-Spiele**. Neuer Button **„Allgemeinwissen"**
 ## Phase 553 — Empfehlungen + Daily geo-only
 **Datum:** 2026-06-13
 `_forYouGames` schließt `NON_GEO_IDS` aus; neuer `DAILY_POOL_GEO` (42→31) ersetzt `DAILY_POOL` an beiden Pick-Stellen (startDailyChallenge + renderDailyHero). Geo-Hauptbereich bleibt konsequent geo-only.
+
+## Phase 554 — geschichte: Geo-Modus „Reich → Zentrum"
+**Datum:** 2026-06-13
+Neuer Geo-Modus `hist_match_zentrum` („Welche Stadt war das Zentrum dieses Reichs?") über vorhandenes `genGeschichteMatchExt("zentrum_hauptstadt")`. Schließt die letzte Geo-Lücke — jede geo-fähige Kategorie hat jetzt ≥1 Geo-Modus im Hauptbereich. 1092→1093.

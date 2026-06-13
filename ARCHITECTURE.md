@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 553 (Stand: Juni 2026)
+**Version:** Phase 554 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.14 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1254,6 +1254,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **548** | patch_548.py | **Neues Stufe-1-Spiel 'Tierkinder' (tiere_baby, Kategorie tiere, Level 1): Emoji-Tier zeigen, Tierkind aus 4 waehlen (Welpe/Kaetzchen/...). Template fuer altersgerechte Kinderspiele: sprachneutrale Emoji-Frage + i18n-Optionen (_tc) -> automatisch DE/EN/PL. Inline-Daten. In L1-Liste, tiere-modes, GEN. 1090->1091 Modi. Verifiziert: Level 1, loesbar, EN/PL.** |
 | **552** | patch_552.py | **Allgemeinwissen-Split: Hauptbereich zeigt nur noch Geo-Spiele, neuer Button 'Allgemeinwissen' (Banner ueber Empfehlungen) schaltet auf Nicht-Geo-Ansicht (Kategorien bleiben erhalten, gefiltert). Umkehrbar per Filter (NON_GEO_IDS, 545 IDs aus Geo-Audit) - nichts geloescht. Geo-Heroes/Empfehlungen nur in Geo-Ansicht. Album-Oeffnen-Button ~1/3 kleiner. i18n DE/EN/PL.** |
 | **553** | patch_553.py | **Empfehlungen (_forYouGames) und Daily Challenge nur noch Geo: NON_GEO_IDS-Filter in _forYouGames; DAILY_POOL_GEO (42->31) ersetzt DAILY_POOL an beiden Pick-Stellen. Haelt den Geo-Hauptbereich konsequent geo-only.** |
+| **554** | patch_554.py | **Geo-Luecke geschichte geschlossen: neuer Geo-Modus 'hist_match_zentrum' (Reich -> Zentrumsstadt) via vorhandenem genGeschichteMatchExt(zentrum_hauptstadt). Damit hat jede geo-faehige Kategorie >=1 Geo-Modus im Hauptbereich. 1092->1093.** |
 
 ---
 

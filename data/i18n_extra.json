@@ -813,7 +813,8 @@
   "Spanien": "Spain",
   "Allgemeinwissen": "General Knowledge",
   "Spiele ohne Geo-Bezug": "Games without geography",
-  "Zurück zu Geo": "Back to Geo"
+  "Zurück zu Geo": "Back to Geo",
+  "Welche Stadt war das Zentrum dieses Reichs?": "Which city was the center of this empire?"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1629,6 +1630,7 @@
   "Spanien": "Hiszpania",
   "Allgemeinwissen": "Wiedza ogólna",
   "Spiele ohne Geo-Bezug": "Gry bez geografii",
-  "Zurück zu Geo": "Powrót do Geo"
+  "Zurück zu Geo": "Powrót do Geo",
+  "Welche Stadt war das Zentrum dieses Reichs?": "Które miasto było centrum tego imperium?"
  }
 }
