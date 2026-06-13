@@ -810,7 +810,10 @@
   "China": "China",
   "USA": "USA",
   "Indien": "India",
-  "Spanien": "Spain"
+  "Spanien": "Spain",
+  "Allgemeinwissen": "General Knowledge",
+  "Spiele ohne Geo-Bezug": "Games without geography",
+  "Zurück zu Geo": "Back to Geo"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1623,6 +1626,9 @@
   "China": "Chiny",
   "USA": "USA",
   "Indien": "Indie",
-  "Spanien": "Hiszpania"
+  "Spanien": "Hiszpania",
+  "Allgemeinwissen": "Wiedza ogólna",
+  "Spiele ohne Geo-Bezug": "Gry bez geografii",
+  "Zurück zu Geo": "Powrót do Geo"
  }
 }

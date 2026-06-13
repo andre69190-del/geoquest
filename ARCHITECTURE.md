@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 548 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 6.13 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Version:** Phase 552 (Stand: Juni 2026)
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 6.14 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -1252,6 +1252,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **546** | patch_546.py | **Handbuch aktualisiert: neuer Abschnitt 'Lernen & Wiederholen' (guide_p7) im Eltern-Tab dokumentiert Daily Challenge (+ teilen, Streak-Kalender), Schwächen üben / Spaced Repetition / Fehler-Tagebuch (+ an/aus) und Region üben / Lernkarten. DE/EN/PL. Bisher war keines der neuen Features dokumentiert. Verifiziert in allen 3 Sprachen.** |
 | **547** | patch_547.py | **Doku-Zugang + Erstnutzer-Hinweise: (1) Prominenter 'Handbuch & Hilfe'-Button im Profil-Tab -> oeffnet renderGuideModal direkt (statt 2 Klicks ueber Hilfe->Mehr). (2) Einmaliger Tipp-Toast beim ERSTEN Oeffnen von 'Region ueben' (openRegionModal, gq_seen_region) und 'Schwaechen ueben' (startSrsReview, gq_seen_srs). i18n DE/EN/PL. Verifiziert: Button da, Toast nur 1x.** |
 | **548** | patch_548.py | **Neues Stufe-1-Spiel 'Tierkinder' (tiere_baby, Kategorie tiere, Level 1): Emoji-Tier zeigen, Tierkind aus 4 waehlen (Welpe/Kaetzchen/...). Template fuer altersgerechte Kinderspiele: sprachneutrale Emoji-Frage + i18n-Optionen (_tc) -> automatisch DE/EN/PL. Inline-Daten. In L1-Liste, tiere-modes, GEN. 1090->1091 Modi. Verifiziert: Level 1, loesbar, EN/PL.** |
+| **552** | patch_552.py | **Allgemeinwissen-Split: Hauptbereich zeigt nur noch Geo-Spiele, neuer Button 'Allgemeinwissen' (Banner ueber Empfehlungen) schaltet auf Nicht-Geo-Ansicht (Kategorien bleiben erhalten, gefiltert). Umkehrbar per Filter (NON_GEO_IDS, 545 IDs aus Geo-Audit) - nichts geloescht. Geo-Heroes/Empfehlungen nur in Geo-Ansicht. Album-Oeffnen-Button ~1/3 kleiner. i18n DE/EN/PL.** |
 
 ---
 

@@ -637,3 +637,7 @@ Das In-Game-Handbuch (renderGuideModal, Eltern-Tab) dokumentierte **keines** der
 ## Phase 548 — Neues Stufe-1-Spiel „Tierkinder" (tiere_baby)
 **Datum:** 2026-06-13
 Erstes altersgerechtes Auffüll-Spiel für Stufe 1 (6–8): `tiere_baby` (Kategorie tiere, **Level 1**) — Emoji-Tier → Tierkind (Welpe/Kätzchen/Kalb …). **Template:** sprachneutrale Emoji-Frage + i18n-Optionen via `_tc` → automatisch DE/EN/PL (Antworten + Prompt übersetzt). Inline-Daten. Eingetragen in L1-Liste, tiere-modes, GEN. 1090→1091 Modi.
+
+## Phase 552 — „Allgemeinwissen"-Split (Geo-Hauptbereich)
+**Datum:** 2026-06-13
+Hauptbereich zeigt nur noch **Geo-Spiele**. Neuer Button **„Allgemeinwissen"** (Banner über „Empfohlene Spiele") schaltet via `S.nonGeo` auf die Nicht-Geo-Ansicht — **Kategorien bleiben erhalten**, nur gefiltert. Umsetzung **nicht-destruktiv per Filter**: `NON_GEO_IDS` (545 IDs aus GEO_AUDIT, ohne Geo-Kategorie-Falschtreffer); `_CAT_ORDER` + `catModes` view-aware, leere Kategorien werden übersprungen. Geo-Heroes (Daily/SRS/Region) + Empfehlungen nur in Geo-Ansicht. Album-„Öffnen"-Pille ~⅓ kleiner. i18n DE/EN/PL. Verifiziert: Geo-Ansicht 0 Nicht-Geo-Lecks, Allgemeinwissen 0 Geo-Lecks.

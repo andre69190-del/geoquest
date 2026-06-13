@@ -661,6 +661,9 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Allgemeinwissen': ('General Knowledge', 'Wiedza ogólna'),
+ 'Spiele ohne Geo-Bezug': ('Games without geography', 'Gry bez geografii'),
+ 'Zurück zu Geo': ('Back to Geo', 'Powrót do Geo'),
  'Aus welchem Land kommt dieses Essen?': ('Which country does this food come from?', 'Z jakiego kraju pochodzi to jedzenie?'),
  'Italien': ('Italy', 'Włochy'),
  'Japan': ('Japan', 'Japonia'),
