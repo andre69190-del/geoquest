@@ -649,3 +649,7 @@ Hauptbereich zeigt nur noch **Geo-Spiele**. Neuer Button **„Allgemeinwissen"**
 ## Phase 554 — geschichte: Geo-Modus „Reich → Zentrum"
 **Datum:** 2026-06-13
 Neuer Geo-Modus `hist_match_zentrum` („Welche Stadt war das Zentrum dieses Reichs?") über vorhandenes `genGeschichteMatchExt("zentrum_hauptstadt")`. Schließt die letzte Geo-Lücke — jede geo-fähige Kategorie hat jetzt ≥1 Geo-Modus im Hauptbereich. 1092→1093.
+
+## Phase 555 — mythologie: Geo-Modus „Herkunftsland"
+**Datum:** 2026-06-13
+Zusätzlicher Geo-Modus `myth_match_land` („Aus welchem Land stammt diese Mythologie?") via `genMythMatchExt("herkunftsland")` — ergänzt den vorhandenen Geo-Pin `myth_pin_herkunft`. 1093→1094.

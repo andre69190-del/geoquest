@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 554 (Stand: Juni 2026)
+**Version:** Phase 555 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.14 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1255,6 +1255,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **552** | patch_552.py | **Allgemeinwissen-Split: Hauptbereich zeigt nur noch Geo-Spiele, neuer Button 'Allgemeinwissen' (Banner ueber Empfehlungen) schaltet auf Nicht-Geo-Ansicht (Kategorien bleiben erhalten, gefiltert). Umkehrbar per Filter (NON_GEO_IDS, 545 IDs aus Geo-Audit) - nichts geloescht. Geo-Heroes/Empfehlungen nur in Geo-Ansicht. Album-Oeffnen-Button ~1/3 kleiner. i18n DE/EN/PL.** |
 | **553** | patch_553.py | **Empfehlungen (_forYouGames) und Daily Challenge nur noch Geo: NON_GEO_IDS-Filter in _forYouGames; DAILY_POOL_GEO (42->31) ersetzt DAILY_POOL an beiden Pick-Stellen. Haelt den Geo-Hauptbereich konsequent geo-only.** |
 | **554** | patch_554.py | **Geo-Luecke geschichte geschlossen: neuer Geo-Modus 'hist_match_zentrum' (Reich -> Zentrumsstadt) via vorhandenem genGeschichteMatchExt(zentrum_hauptstadt). Damit hat jede geo-faehige Kategorie >=1 Geo-Modus im Hauptbereich. 1092->1093.** |
+| **555** | patch_555.py | **mythologie: zusaetzlicher Geo-Modus 'myth_match_land' (Herkunftsland, Multiple Choice) via genMythMatchExt - ergaenzt den vorhandenen Geo-Pin. 1093->1094.** |
 
 ---
 

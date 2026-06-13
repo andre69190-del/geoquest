@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 554. Geo-Luecke geschichte geschlossen: neuer Geo-Modus 'hist_match_zentrum' (Reich -> Zentrumsstadt) via vorhandenem genGeschichteMatchExt(zentrum_hauptstadt). Damit hat jede geo-faehige Kategorie >=1 Geo-Modus im Hauptbereich. 1092->1093.. verify: 195/195."
+git commit -m "Content: Phase 555. mythologie: zusaetzlicher Geo-Modus 'myth_match_land' (Herkunftsland, Multiple Choice) via genMythMatchExt - ergaenzt den vorhandenen Geo-Pin. 1093->1094.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

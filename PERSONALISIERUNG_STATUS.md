@@ -2,7 +2,7 @@
 
 > **Bei Session-Neustart:** zuerst `CLAUDE_SESSION_STARTER.md` lesen, dann dieses Dokument.
 > Es hält den Stand der Personalisierungs-/Kinder-Features fest, damit nahtlos weitergearbeitet werden kann.
-> Letztes Update: Phase 554. (Diese Zeile wird von post_phase.py automatisch gestempelt.)
+> Letztes Update: Phase 555. (Diese Zeile wird von post_phase.py automatisch gestempelt.)
 
 ## Architektur dieser Feature-Familie (wo liegt was)
 
