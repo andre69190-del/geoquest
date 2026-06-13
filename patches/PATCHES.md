@@ -653,3 +653,7 @@ Neuer Geo-Modus `hist_match_zentrum` („Welche Stadt war das Zentrum dieses Rei
 ## Phase 555 — mythologie: Geo-Modus „Herkunftsland"
 **Datum:** 2026-06-13
 Zusätzlicher Geo-Modus `myth_match_land` („Aus welchem Land stammt diese Mythologie?") via `genMythMatchExt("herkunftsland")` — ergänzt den vorhandenen Geo-Pin `myth_pin_herkunft`. 1093→1094.
+
+## Phase 556 — Geo-Hauptbereich: Recent + Empfehlungen geo-konsistent
+**Datum:** 2026-06-13
+„Zuletzt gespielt" (`renderRecentBar`) filtert nach aktueller Ansicht (Geo→nur Geo, Allgemeinwissen→nur Nicht-Geo). Kategorie-Empfehlungen (`_forYouCats`) + Spiel-Empfehlungen (`_forYouGames`) nur noch **geo-reiche** Kategorien via `_catGeoRich` (geo-Modi ≥ ⅓) → kein „Games & Hardware"/„Astronomie" mehr in der Geo-Empfehlung. Hin-/Zurück-Buttons + Labels verifiziert.

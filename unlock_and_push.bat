@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 555. mythologie: zusaetzlicher Geo-Modus 'myth_match_land' (Herkunftsland, Multiple Choice) via genMythMatchExt - ergaenzt den vorhandenen Geo-Pin. 1093->1094.. verify: 195/195."
+git commit -m "Content: Phase 556. Geo-Hauptbereich konsequent: 'Zuletzt gespielt'-Leiste nach Ansicht gefiltert (Geo zeigt nur Geo, Allgemeinwissen nur Nicht-Geo); Kategorie-Empfehlungen (_forYouCats/_forYouGames) nur geo-reiche Kategorien (_catGeoRich: geo>=1/3) -> kein 'Games & Hardware' mehr im Geo-Bereich. Hin/Zurueck-Buttons + Labels verifiziert.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
