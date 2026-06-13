@@ -4029,7 +4029,7 @@ function _forYouGames(n){try{
   var fresh=[],known=[],mseen={};
   cats.forEach(function(k){(MODE_CATS[k].modes||[]).forEach(function(mid){
     if(mseen[mid])return;var m=MODES.find(function(x){return x.id===mid;});
-    if(!m||m.comingSoon||_kidHidden(m)||!GEN[mid])return;mseen[mid]=1;
+    if(!m||m.comingSoon||_kidHidden(m)||!GEN[mid]||NON_GEO_IDS.has(mid))return;mseen[mid]=1;
     if(pset[mid])known.push(mid);else fresh.push(mid);});});
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
   shuf(fresh);shuf(known);
@@ -14323,12 +14323,13 @@ const DAILY_POOL=[
   "timeline_zug_bahnhof_bau",
   "zug_uic_laender"
 ];
+const DAILY_POOL_GEO=DAILY_POOL.filter(function(id){return !NON_GEO_IDS.has(id);});
 function startDailyChallenge(){
   if(isDailyDone())return;
   const seed=getDailySeed();
   /* Phase 295: Pool auf 30 Modi erweitert; Auswahl per getDailySeed() statt dayIndex */
   /* Phase 311: DAILY_POOL in globalen Scope verschoben — war local var, daher ReferenceError in renderDailyHero */
-  S.mode=DAILY_POOL[getDailySeed()%DAILY_POOL.length];S.diff="casual";S.isDailyRun=true;
+  S.mode=DAILY_POOL_GEO[getDailySeed()%DAILY_POOL_GEO.length];S.diff="casual";S.isDailyRun=true;
   const _prog=loadDailyProgress();
   if(_prog&&(_prog.rd||0)>0){
     /* P284: RESUME – Spieler hat heute schon angefangen, weiterspielen */
@@ -14399,7 +14400,7 @@ function renderDailyHero(){
     </div>`;
   }
   const _zugM=["zug_panorama","zug_vkm","zug_metro_logos","zug_routen","zug_bahnhof_typ","zug_hersteller","hl_zug_speed","hl_zug_taktfrequenz","zug_rekorde_pin","timeline_zug_bahnhof_bau"];
-  const _todayMode=DAILY_POOL[getDailySeed()%DAILY_POOL.length];
+  const _todayMode=DAILY_POOL_GEO[getDailySeed()%DAILY_POOL_GEO.length];
   const _isZugDay=_zugM.indexOf(_todayMode)!==-1;
   const _dIcon=_isZugDay?"\u{1F686}":"\u{1F4C5}";
   const _dTag=_isZugDay?`<span style="background:#006064;color:#fff;font-size:.65rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-left:6px">\u{1F682} ${_tc("Zug-Tag")}</span>`:""; 

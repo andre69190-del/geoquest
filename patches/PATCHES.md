@@ -641,3 +641,7 @@ Erstes altersgerechtes Auffüll-Spiel für Stufe 1 (6–8): `tiere_baby` (Katego
 ## Phase 552 — „Allgemeinwissen"-Split (Geo-Hauptbereich)
 **Datum:** 2026-06-13
 Hauptbereich zeigt nur noch **Geo-Spiele**. Neuer Button **„Allgemeinwissen"** (Banner über „Empfohlene Spiele") schaltet via `S.nonGeo` auf die Nicht-Geo-Ansicht — **Kategorien bleiben erhalten**, nur gefiltert. Umsetzung **nicht-destruktiv per Filter**: `NON_GEO_IDS` (545 IDs aus GEO_AUDIT, ohne Geo-Kategorie-Falschtreffer); `_CAT_ORDER` + `catModes` view-aware, leere Kategorien werden übersprungen. Geo-Heroes (Daily/SRS/Region) + Empfehlungen nur in Geo-Ansicht. Album-„Öffnen"-Pille ~⅓ kleiner. i18n DE/EN/PL. Verifiziert: Geo-Ansicht 0 Nicht-Geo-Lecks, Allgemeinwissen 0 Geo-Lecks.
+
+## Phase 553 — Empfehlungen + Daily geo-only
+**Datum:** 2026-06-13
+`_forYouGames` schließt `NON_GEO_IDS` aus; neuer `DAILY_POOL_GEO` (42→31) ersetzt `DAILY_POOL` an beiden Pick-Stellen (startDailyChallenge + renderDailyHero). Geo-Hauptbereich bleibt konsequent geo-only.

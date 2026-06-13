@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 552. Allgemeinwissen-Split: Hauptbereich zeigt nur noch Geo-Spiele, neuer Button 'Allgemeinwissen' (Banner ueber Empfehlungen) schaltet auf Nicht-Geo-Ansicht (Kategorien bleiben erhalten, gefiltert). Umkehrbar per Filter (NON_GEO_IDS, 545 IDs aus Geo-Audit) - nichts geloescht. Geo-Heroes/Empfehlungen nur in Geo-Ansicht. Album-Oeffnen-Button ~1/3 kleiner. i18n DE/EN/PL.. verify: 195/195."
+git commit -m "Content: Phase 553. Empfehlungen (_forYouGames) und Daily Challenge nur noch Geo: NON_GEO_IDS-Filter in _forYouGames; DAILY_POOL_GEO (42->31) ersetzt DAILY_POOL an beiden Pick-Stellen. Haelt den Geo-Hauptbereich konsequent geo-only.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
