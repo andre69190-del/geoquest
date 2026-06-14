@@ -725,3 +725,7 @@ Einstellungen: **„Spielstand sichern"** (lädt alle `gq_`/`geoquest_`-localSto
 ## Phase 573 — geschichte: 66 → 80 (Ideal)
 **Datum:** 2026-06-13
 +5 Reiche (Xin, Östl. Jin, Chagatai-Khanat, Köktürken, Uigur. Kaganat) +9 bekannte Ereignisse/Schlachten/Epochen (Reformation, Dt. Wiedervereinigung, D-Day, Cannae, Issos, Gaugamela, Wiener Kongress, Berliner Mauerbau, Dampfmaschine). Stabile Fakten; ausdehnung/zentrum=null bei Ereignissen. Datensatz-Ziel 80 erreicht.
+
+## Phase 574 — architektur: 55 → 76 (web-verifiziert)
+**Datum:** 2026-06-13
++21 weltbekannte Bauwerke (Koordinaten/Höhe/Baujahr per Subagent aus Wikipedia verifiziert). 5 Kandidaten ausgelassen, weil Höhe/Jahr nicht belegbar oder Koordinate fehlerhaft (Wat Arun, Goldener Tempel, Stonehenge, El Castillo, Berliner Fernsehturm) — keine Schätzung. Eindeutige Städte ergänzt.

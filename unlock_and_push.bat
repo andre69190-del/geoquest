@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 573. geschichte von 66 auf 80 (Ideal erreicht): 5 weitere Reiche (Xin, Oestliche Jin, Chagatai-Khanat, Koektuerken, Uigurisches Kaganat) + 9 bekannte Ereignisse/Schlachten/Epochen (Reformation, Dt. Wiedervereinigung, D-Day, Cannae, Issos, Gaugamela, Wiener Kongress, Mauerbau, Dampfmaschine). Stabile Fakten, ausdehnung/zentrum=null wo nicht zutreffend.. verify: 196/196."
+git commit -m "Content: Phase 574. architektur von 55 auf 76: 21 weltbekannte Bauwerke web-verifiziert (Koordinaten/Hoehe/Baujahr per Subagent aus Wikipedia). 5 ausgelassen wegen unbelegter Hoehe/Jahr bzw. falscher Koordinate (Wat Arun, Goldener Tempel, Stonehenge, El Castillo, Berliner Fernsehturm) - keine Schaetzung. Ostankino, Oriental Pearl, Tokyo Tower, Koelner Dom, Notre-Dame, Potala u.a.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

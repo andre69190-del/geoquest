@@ -552,5 +552,188 @@
     "baujahr": 1958,
     "hoehe_m": 102,
     "stadt": "Brüssel"
+  },
+  "Ostankino-Turm": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Russland",
+    "lat": 55.82,
+    "lng": 37.612,
+    "baujahr": 1967,
+    "hoehe_m": 540,
+    "stadt": "Moskau"
+  },
+  "Oriental Pearl Tower": {
+    "kategorie": "Wolkenkratzer",
+    "land": "China",
+    "lat": 31.242,
+    "lng": 121.495,
+    "baujahr": 1994,
+    "hoehe_m": 468,
+    "stadt": "Shanghai"
+  },
+  "Space Needle": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Vereinigte Staaten",
+    "lat": 47.62,
+    "lng": -122.349,
+    "baujahr": 1962,
+    "hoehe_m": 184,
+    "stadt": "Seattle"
+  },
+  "Lachta-Center": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Russland",
+    "lat": 59.987,
+    "lng": 30.178,
+    "baujahr": 2019,
+    "hoehe_m": 462,
+    "stadt": "Sankt Petersburg"
+  },
+  "Shanghai World Financial Center": {
+    "kategorie": "Wolkenkratzer",
+    "land": "China",
+    "lat": 31.237,
+    "lng": 121.503,
+    "baujahr": 2008,
+    "hoehe_m": 492,
+    "stadt": "Shanghai"
+  },
+  "Marina Bay Sands": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Singapur",
+    "lat": 1.283,
+    "lng": 103.86,
+    "baujahr": 2010,
+    "hoehe_m": 194,
+    "stadt": "Singapur"
+  },
+  "Tokyo Tower": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Japan",
+    "lat": 35.659,
+    "lng": 139.746,
+    "baujahr": 1958,
+    "hoehe_m": 333,
+    "stadt": "Tokio"
+  },
+  "Gateway Arch": {
+    "kategorie": "Denkmal",
+    "land": "Vereinigte Staaten",
+    "lat": 38.625,
+    "lng": -90.185,
+    "baujahr": 1965,
+    "hoehe_m": 192,
+    "stadt": "St. Louis"
+  },
+  "Forth Bridge": {
+    "kategorie": "Brücke",
+    "land": "Vereinigtes Königreich",
+    "lat": 56.0,
+    "lng": -3.389,
+    "baujahr": 1890,
+    "hoehe_m": 110
+  },
+  "Sydney Harbour Bridge": {
+    "kategorie": "Brücke",
+    "land": "Australien",
+    "lat": -33.852,
+    "lng": 151.211,
+    "baujahr": 1932,
+    "hoehe_m": 134,
+    "stadt": "Sydney"
+  },
+  "Ponte 25 de Abril": {
+    "kategorie": "Brücke",
+    "land": "Portugal",
+    "lat": 38.689,
+    "lng": -9.177,
+    "baujahr": 1966,
+    "hoehe_m": 190
+  },
+  "Grand-Coulee-Talsperre": {
+    "kategorie": "Staudamm",
+    "land": "Vereinigte Staaten",
+    "lat": 47.957,
+    "lng": -118.978,
+    "baujahr": 1942,
+    "hoehe_m": 168
+  },
+  "Sajano-Schuschensker Staudamm": {
+    "kategorie": "Staudamm",
+    "land": "Russland",
+    "lat": 52.826,
+    "lng": 91.37,
+    "baujahr": 1985,
+    "hoehe_m": 242
+  },
+  "Tarbela-Talsperre": {
+    "kategorie": "Staudamm",
+    "land": "Pakistan",
+    "lat": 34.09,
+    "lng": 72.698,
+    "baujahr": 1976,
+    "hoehe_m": 143
+  },
+  "Kölner Dom": {
+    "kategorie": "Tempel",
+    "land": "Deutschland",
+    "lat": 50.941,
+    "lng": 6.958,
+    "baujahr": 1880,
+    "hoehe_m": 157,
+    "stadt": "Köln"
+  },
+  "Stephansdom": {
+    "kategorie": "Tempel",
+    "land": "Österreich",
+    "lat": 48.209,
+    "lng": 16.373,
+    "baujahr": 1578,
+    "hoehe_m": 136,
+    "stadt": "Wien"
+  },
+  "Notre-Dame de Paris": {
+    "kategorie": "Tempel",
+    "land": "Frankreich",
+    "lat": 48.853,
+    "lng": 2.35,
+    "baujahr": 1345,
+    "hoehe_m": 69,
+    "stadt": "Paris"
+  },
+  "Arc de Triomphe": {
+    "kategorie": "Denkmal",
+    "land": "Frankreich",
+    "lat": 48.874,
+    "lng": 2.295,
+    "baujahr": 1836,
+    "hoehe_m": 50,
+    "stadt": "Paris"
+  },
+  "Potala-Palast": {
+    "kategorie": "Denkmal",
+    "land": "China",
+    "lat": 29.658,
+    "lng": 91.117,
+    "baujahr": 1694,
+    "hoehe_m": 119,
+    "stadt": "Lhasa"
+  },
+  "Westminster Abbey": {
+    "kategorie": "Tempel",
+    "land": "Vereinigtes Königreich",
+    "lat": 51.499,
+    "lng": -0.128,
+    "baujahr": 1745,
+    "hoehe_m": 69,
+    "stadt": "London"
+  },
+  "Mount Rushmore": {
+    "kategorie": "Denkmal",
+    "land": "Vereinigte Staaten",
+    "lat": 43.879,
+    "lng": -103.459,
+    "baujahr": 1941,
+    "hoehe_m": 18
   }
 }
