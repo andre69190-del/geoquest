@@ -127,6 +127,7 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 - [ ] GEN-Dispatch-Eintrag
 - [ ] Generator-Funktion (falls neu benötigt)
 - [ ] **NIEMALS harte Strings ins UI rendern!** Neue Prompts/Labels MÜSSEN in `_CONTENT_I18N` (DE/EN/PL) eingetragen und im Code via `_tc()` oder `_tcc()` abgerufen werden. Deutsche Texte direkt im JS schließen EN/PL-Spieler aus — striktes Verbot.
+- [ ] **Datenbasis IMMER gefüllt:** Jeder neue Modus braucht eine echte Datengrundlage (genug Items für sinnvolle Frage + Distraktoren). In der Spielübersicht (`generate_spieluebersicht.py`) muss die Spalte „Datenbasis“ einen Wert zeigen — eine Zahl **oder** „dyn“ (laufzeit-/COUNTRIES-/Inline-basiert, per Smoke-Test geprüft). **Niemals leer/„—“.** Pflicht: `node smoke_test.js` deckt den Modus mit echten Fragen ab (0 NULL/THROW).
 - [ ] validate_content.py ausführen → 0 warnings
 - [ ] MODES-Zahl in gen.py zählen (nicht JSON-Keys!)
 - [ ] post_phase.py mit korrekter Phase-Nummer ausführen
