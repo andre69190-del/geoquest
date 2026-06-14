@@ -661,3 +661,7 @@ Zusätzlicher Geo-Modus `myth_match_land` („Aus welchem Land stammt diese Myth
 ## Phase 557 — Banner: Überschrift = aktueller Bereich
 **Datum:** 2026-06-13
 Banner zeigt jetzt den **aktuellen** Bereich als Überschrift und führt per Button zum **anderen**: Geo-Ansicht „🌍 GeoQuest / Spiele mit Geo-Bezug" → Button „Allgemeinwissen ›"; Allgemeinwissen „🧠 Allgemeinwissen / Spiele ohne Geo-Bezug" → Button „‹ GeoQuest". Behebt die Doppeldeutigkeit (vorher beidseitig „Allgemeinwissen").
+
+## Phase 558 — Banner-Position + Pfeilrichtung
+**Datum:** 2026-06-13
+Geo/Allgemeinwissen-Banner sitzt jetzt **direkt unter der Begrüßungszeile** (in beiden Ansichten, vor PvP/Suche). Richtungslogik korrigiert: Zurück-Button „‹ GeoQuest" **links** vor der Überschrift, Vorwärts-Button „Allgemeinwissen ›" rechts.
