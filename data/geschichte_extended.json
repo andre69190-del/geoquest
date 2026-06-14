@@ -1,42 +1,530 @@
 {
-  "Römisches Reich": {"kategorie": "Imperium", "start_jahr": -27, "dauer_jahre": 503, "ausdehnung_mio_km2": 5.0, "zentrum_hauptstadt": "Rom", "schluesselfigur": "Augustus"},
-  "Mongolisches Reich": {"kategorie": "Imperium", "start_jahr": 1206, "dauer_jahre": 162, "ausdehnung_mio_km2": 24.0, "zentrum_hauptstadt": "Karakorum", "schluesselfigur": "Dschingis Khan"},
-  "Britisches Empire": {"kategorie": "Imperium", "start_jahr": 1583, "dauer_jahre": 354, "ausdehnung_mio_km2": 35.5, "zentrum_hauptstadt": "London", "schluesselfigur": "Königin Victoria"},
-  "Osmanisches Reich": {"kategorie": "Imperium", "start_jahr": 1299, "dauer_jahre": 624, "ausdehnung_mio_km2": 5.2, "zentrum_hauptstadt": "Konstantinopel", "schluesselfigur": "Suleiman I."},
-  "Byzantinisches Reich": {"kategorie": "Imperium", "start_jahr": 330, "dauer_jahre": 1123, "ausdehnung_mio_km2": 3.5, "zentrum_hauptstadt": "Konstantinopel", "schluesselfigur": "Justinian I."},
-  "Alexanderreich": {"kategorie": "Imperium", "start_jahr": -336, "dauer_jahre": 13, "ausdehnung_mio_km2": 5.2, "zentrum_hauptstadt": "Babylon", "schluesselfigur": "Alexander der Große"},
-  "Persisches Achämenidenreich": {"kategorie": "Imperium", "start_jahr": -550, "dauer_jahre": 220, "ausdehnung_mio_km2": 5.5, "zentrum_hauptstadt": "Persepolis", "schluesselfigur": "Kyros II."},
-  "Mogulenreich": {"kategorie": "Imperium", "start_jahr": 1526, "dauer_jahre": 331, "ausdehnung_mio_km2": 4.0, "zentrum_hauptstadt": "Agra", "schluesselfigur": "Akbar I."},
-  "Ming-Dynastie": {"kategorie": "Imperium", "start_jahr": 1368, "dauer_jahre": 276, "ausdehnung_mio_km2": 6.5, "zentrum_hauptstadt": "Nanjing", "schluesselfigur": "Hongwu-Kaiser"},
-  "Aztekisches Reich": {"kategorie": "Imperium", "start_jahr": 1428, "dauer_jahre": 93, "ausdehnung_mio_km2": 0.22, "zentrum_hauptstadt": "Tenochtitlan", "schluesselfigur": "Moctezuma II."},
-  "Inkareich": {"kategorie": "Imperium", "start_jahr": 1438, "dauer_jahre": 94, "ausdehnung_mio_km2": 2.0, "zentrum_hauptstadt": "Cusco", "schluesselfigur": "Pachacutec"},
-  "Han-Dynastie": {"kategorie": "Imperium", "start_jahr": -206, "dauer_jahre": 426, "ausdehnung_mio_km2": 6.0, "zentrum_hauptstadt": "Chang'an", "schluesselfigur": "Liu Bang"},
-  "Russisches Zarenreich": {"kategorie": "Imperium", "start_jahr": 1721, "dauer_jahre": 196, "ausdehnung_mio_km2": 21.8, "zentrum_hauptstadt": "Sankt Petersburg", "schluesselfigur": "Peter der Große"},
-  "Arabisches Abbasidenkalifat": {"kategorie": "Imperium", "start_jahr": 750, "dauer_jahre": 508, "ausdehnung_mio_km2": 11.1, "zentrum_hauptstadt": "Bagdad", "schluesselfigur": "Harun al-Rashid"},
-  "Karolingerreich": {"kategorie": "Imperium", "start_jahr": 768, "dauer_jahre": 79, "ausdehnung_mio_km2": 1.2, "zentrum_hauptstadt": "Aachen", "schluesselfigur": "Karl der Große"},
-  "Steinzeit": {"kategorie": "Epoche", "start_jahr": -3300000, "dauer_jahre": 3297700, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Homo sapiens"},
-  "Bronzezeit": {"kategorie": "Epoche", "start_jahr": -3300, "dauer_jahre": 2100, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Mesopotamische Hochkulturen"},
-  "Antike": {"kategorie": "Epoche", "start_jahr": -800, "dauer_jahre": 1400, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Sokrates"},
-  "Mittelalter": {"kategorie": "Epoche", "start_jahr": 476, "dauer_jahre": 1000, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Karl der Große"},
-  "Renaissance": {"kategorie": "Epoche", "start_jahr": 1300, "dauer_jahre": 300, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Florenz", "schluesselfigur": "Leonardo da Vinci"},
-  "Aufklärung": {"kategorie": "Epoche", "start_jahr": 1690, "dauer_jahre": 130, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Immanuel Kant"},
-  "Industrielle Revolution": {"kategorie": "Epoche", "start_jahr": 1760, "dauer_jahre": 80, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Manchester", "schluesselfigur": "James Watt"},
-  "Kalter Krieg": {"kategorie": "Epoche", "start_jahr": 1947, "dauer_jahre": 44, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Harry S. Truman"},
-  "Kolonialzeit": {"kategorie": "Epoche", "start_jahr": 1492, "dauer_jahre": 450, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Christoph Kolumbus"},
-  "Erste Mondlandung": {"kategorie": "Ereignis", "start_jahr": 1969, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Neil Armstrong"},
-  "Zweiter Weltkrieg": {"kategorie": "Ereignis", "start_jahr": 1939, "dauer_jahre": 6, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Winston Churchill"},
-  "Erster Weltkrieg": {"kategorie": "Ereignis", "start_jahr": 1914, "dauer_jahre": 4, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Wilhelm II."},
-  "Französische Revolution": {"kategorie": "Ereignis", "start_jahr": 1789, "dauer_jahre": 10, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Paris", "schluesselfigur": "Maximilien de Robespierre"},
-  "Amerikanische Revolution": {"kategorie": "Ereignis", "start_jahr": 1775, "dauer_jahre": 8, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Philadelphia", "schluesselfigur": "George Washington"},
-  "Russische Revolution": {"kategorie": "Ereignis", "start_jahr": 1917, "dauer_jahre": 5, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Petrograd", "schluesselfigur": "Wladimir Lenin"},
-  "Fall der Berliner Mauer": {"kategorie": "Ereignis", "start_jahr": 1989, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Berlin", "schluesselfigur": "Helmut Kohl"},
-  "Entdeckung Amerikas": {"kategorie": "Ereignis", "start_jahr": 1492, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Christoph Kolumbus"},
-  "Schwarzer Tod": {"kategorie": "Ereignis", "start_jahr": 1347, "dauer_jahre": 7, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Giovanni Boccaccio"},
-  "Erfindung des Buchdrucks": {"kategorie": "Ereignis", "start_jahr": 1440, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Mainz", "schluesselfigur": "Johannes Gutenberg"},
-  "Olympische Spiele Antike": {"kategorie": "Ereignis", "start_jahr": -776, "dauer_jahre": 1169, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Olympia", "schluesselfigur": "Koroibos"},
-  "Battle of Thermopylae": {"kategorie": "Schlacht", "start_jahr": -480, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Leonidas I."},
-  "Battle of Marathon": {"kategorie": "Schlacht", "start_jahr": -490, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Miltiades"},
-  "Battle of Waterloo": {"kategorie": "Schlacht", "start_jahr": 1815, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Napoleon Bonaparte"},
-  "Battle of Hastings": {"kategorie": "Schlacht", "start_jahr": 1066, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": null, "schluesselfigur": "Wilhelm der Eroberer"},
-  "Battle of Stalingrad": {"kategorie": "Schlacht", "start_jahr": 1942, "dauer_jahre": null, "ausdehnung_mio_km2": null, "zentrum_hauptstadt": "Stalingrad", "schluesselfigur": "Georgi Schukow"}
+  "Römisches Reich": {
+    "kategorie": "Imperium",
+    "start_jahr": -27,
+    "dauer_jahre": 503,
+    "ausdehnung_mio_km2": 5.0,
+    "zentrum_hauptstadt": "Rom",
+    "schluesselfigur": "Augustus"
+  },
+  "Mongolisches Reich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1206,
+    "dauer_jahre": 162,
+    "ausdehnung_mio_km2": 24.0,
+    "zentrum_hauptstadt": "Karakorum",
+    "schluesselfigur": "Dschingis Khan"
+  },
+  "Britisches Empire": {
+    "kategorie": "Imperium",
+    "start_jahr": 1583,
+    "dauer_jahre": 354,
+    "ausdehnung_mio_km2": 35.5,
+    "zentrum_hauptstadt": "London",
+    "schluesselfigur": "Königin Victoria"
+  },
+  "Osmanisches Reich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1299,
+    "dauer_jahre": 624,
+    "ausdehnung_mio_km2": 5.2,
+    "zentrum_hauptstadt": "Konstantinopel",
+    "schluesselfigur": "Suleiman I."
+  },
+  "Byzantinisches Reich": {
+    "kategorie": "Imperium",
+    "start_jahr": 330,
+    "dauer_jahre": 1123,
+    "ausdehnung_mio_km2": 3.5,
+    "zentrum_hauptstadt": "Konstantinopel",
+    "schluesselfigur": "Justinian I."
+  },
+  "Alexanderreich": {
+    "kategorie": "Imperium",
+    "start_jahr": -336,
+    "dauer_jahre": 13,
+    "ausdehnung_mio_km2": 5.2,
+    "zentrum_hauptstadt": "Babylon",
+    "schluesselfigur": "Alexander der Große"
+  },
+  "Persisches Achämenidenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": -550,
+    "dauer_jahre": 220,
+    "ausdehnung_mio_km2": 5.5,
+    "zentrum_hauptstadt": "Persepolis",
+    "schluesselfigur": "Kyros II."
+  },
+  "Mogulenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1526,
+    "dauer_jahre": 331,
+    "ausdehnung_mio_km2": 4.0,
+    "zentrum_hauptstadt": "Agra",
+    "schluesselfigur": "Akbar I."
+  },
+  "Ming-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 1368,
+    "dauer_jahre": 276,
+    "ausdehnung_mio_km2": 6.5,
+    "zentrum_hauptstadt": "Nanjing",
+    "schluesselfigur": "Hongwu-Kaiser"
+  },
+  "Aztekisches Reich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1428,
+    "dauer_jahre": 93,
+    "ausdehnung_mio_km2": 0.22,
+    "zentrum_hauptstadt": "Tenochtitlan",
+    "schluesselfigur": "Moctezuma II."
+  },
+  "Inkareich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1438,
+    "dauer_jahre": 94,
+    "ausdehnung_mio_km2": 2.0,
+    "zentrum_hauptstadt": "Cusco",
+    "schluesselfigur": "Pachacutec"
+  },
+  "Han-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": -206,
+    "dauer_jahre": 426,
+    "ausdehnung_mio_km2": 6.0,
+    "zentrum_hauptstadt": "Chang'an",
+    "schluesselfigur": "Liu Bang"
+  },
+  "Russisches Zarenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1721,
+    "dauer_jahre": 196,
+    "ausdehnung_mio_km2": 21.8,
+    "zentrum_hauptstadt": "Sankt Petersburg",
+    "schluesselfigur": "Peter der Große"
+  },
+  "Arabisches Abbasidenkalifat": {
+    "kategorie": "Imperium",
+    "start_jahr": 750,
+    "dauer_jahre": 508,
+    "ausdehnung_mio_km2": 11.1,
+    "zentrum_hauptstadt": "Bagdad",
+    "schluesselfigur": "Harun al-Rashid"
+  },
+  "Karolingerreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 768,
+    "dauer_jahre": 79,
+    "ausdehnung_mio_km2": 1.2,
+    "zentrum_hauptstadt": "Aachen",
+    "schluesselfigur": "Karl der Große"
+  },
+  "Steinzeit": {
+    "kategorie": "Epoche",
+    "start_jahr": -3300000,
+    "dauer_jahre": 3297700,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Homo sapiens"
+  },
+  "Bronzezeit": {
+    "kategorie": "Epoche",
+    "start_jahr": -3300,
+    "dauer_jahre": 2100,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Mesopotamische Hochkulturen"
+  },
+  "Antike": {
+    "kategorie": "Epoche",
+    "start_jahr": -800,
+    "dauer_jahre": 1400,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Sokrates"
+  },
+  "Mittelalter": {
+    "kategorie": "Epoche",
+    "start_jahr": 476,
+    "dauer_jahre": 1000,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Karl der Große"
+  },
+  "Renaissance": {
+    "kategorie": "Epoche",
+    "start_jahr": 1300,
+    "dauer_jahre": 300,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Florenz",
+    "schluesselfigur": "Leonardo da Vinci"
+  },
+  "Aufklärung": {
+    "kategorie": "Epoche",
+    "start_jahr": 1690,
+    "dauer_jahre": 130,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Immanuel Kant"
+  },
+  "Industrielle Revolution": {
+    "kategorie": "Epoche",
+    "start_jahr": 1760,
+    "dauer_jahre": 80,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Manchester",
+    "schluesselfigur": "James Watt"
+  },
+  "Kalter Krieg": {
+    "kategorie": "Epoche",
+    "start_jahr": 1947,
+    "dauer_jahre": 44,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Harry S. Truman"
+  },
+  "Kolonialzeit": {
+    "kategorie": "Epoche",
+    "start_jahr": 1492,
+    "dauer_jahre": 450,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Christoph Kolumbus"
+  },
+  "Erste Mondlandung": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1969,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Neil Armstrong"
+  },
+  "Zweiter Weltkrieg": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1939,
+    "dauer_jahre": 6,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Winston Churchill"
+  },
+  "Erster Weltkrieg": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1914,
+    "dauer_jahre": 4,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Wilhelm II."
+  },
+  "Französische Revolution": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1789,
+    "dauer_jahre": 10,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Paris",
+    "schluesselfigur": "Maximilien de Robespierre"
+  },
+  "Amerikanische Revolution": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1775,
+    "dauer_jahre": 8,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Philadelphia",
+    "schluesselfigur": "George Washington"
+  },
+  "Russische Revolution": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1917,
+    "dauer_jahre": 5,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Petrograd",
+    "schluesselfigur": "Wladimir Lenin"
+  },
+  "Fall der Berliner Mauer": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1989,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Berlin",
+    "schluesselfigur": "Helmut Kohl"
+  },
+  "Entdeckung Amerikas": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1492,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Christoph Kolumbus"
+  },
+  "Schwarzer Tod": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1347,
+    "dauer_jahre": 7,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Giovanni Boccaccio"
+  },
+  "Erfindung des Buchdrucks": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1440,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Mainz",
+    "schluesselfigur": "Johannes Gutenberg"
+  },
+  "Olympische Spiele Antike": {
+    "kategorie": "Ereignis",
+    "start_jahr": -776,
+    "dauer_jahre": 1169,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Olympia",
+    "schluesselfigur": "Koroibos"
+  },
+  "Battle of Thermopylae": {
+    "kategorie": "Schlacht",
+    "start_jahr": -480,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Leonidas I."
+  },
+  "Battle of Marathon": {
+    "kategorie": "Schlacht",
+    "start_jahr": -490,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Miltiades"
+  },
+  "Battle of Waterloo": {
+    "kategorie": "Schlacht",
+    "start_jahr": 1815,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Napoleon Bonaparte"
+  },
+  "Battle of Hastings": {
+    "kategorie": "Schlacht",
+    "start_jahr": 1066,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Wilhelm der Eroberer"
+  },
+  "Battle of Stalingrad": {
+    "kategorie": "Schlacht",
+    "start_jahr": 1942,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Stalingrad",
+    "schluesselfigur": "Georgi Schukow"
+  },
+  "Qing-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 1636,
+    "dauer_jahre": 276,
+    "ausdehnung_mio_km2": 14.7,
+    "zentrum_hauptstadt": "Peking",
+    "schluesselfigur": "Kaiser Qianlong"
+  },
+  "Spanisches Kolonialreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1492,
+    "dauer_jahre": 484,
+    "ausdehnung_mio_km2": 13.7,
+    "zentrum_hauptstadt": "Madrid",
+    "schluesselfigur": "Philipp II."
+  },
+  "Französisches Kolonialreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1830,
+    "dauer_jahre": 130,
+    "ausdehnung_mio_km2": 11.5,
+    "zentrum_hauptstadt": "Paris",
+    "schluesselfigur": "Jules Ferry"
+  },
+  "Umayyaden-Kalifat": {
+    "kategorie": "Imperium",
+    "start_jahr": 661,
+    "dauer_jahre": 89,
+    "ausdehnung_mio_km2": 11.1,
+    "zentrum_hauptstadt": "Damaskus",
+    "schluesselfigur": "Abd al-Malik"
+  },
+  "Yuan-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 1271,
+    "dauer_jahre": 97,
+    "ausdehnung_mio_km2": 11.0,
+    "zentrum_hauptstadt": "Peking",
+    "schluesselfigur": "Kublai Khan"
+  },
+  "Japanisches Kaiserreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1868,
+    "dauer_jahre": 79,
+    "ausdehnung_mio_km2": 8.51,
+    "zentrum_hauptstadt": "Tokio",
+    "schluesselfigur": "Kaiser Hirohito"
+  },
+  "Kaiserreich Brasilien": {
+    "kategorie": "Imperium",
+    "start_jahr": 1822,
+    "dauer_jahre": 67,
+    "ausdehnung_mio_km2": 8.337,
+    "zentrum_hauptstadt": "Rio de Janeiro",
+    "schluesselfigur": "Pedro II."
+  },
+  "Rashidun-Kalifat": {
+    "kategorie": "Imperium",
+    "start_jahr": 632,
+    "dauer_jahre": 29,
+    "ausdehnung_mio_km2": 6.4,
+    "zentrum_hauptstadt": "Medina",
+    "schluesselfigur": "Umar ibn al-Chattab"
+  },
+  "Goldene Horde": {
+    "kategorie": "Imperium",
+    "start_jahr": 1242,
+    "dauer_jahre": 260,
+    "ausdehnung_mio_km2": 6.0,
+    "zentrum_hauptstadt": "Sarai",
+    "schluesselfigur": "Batu Khan"
+  },
+  "Tang-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 618,
+    "dauer_jahre": 289,
+    "ausdehnung_mio_km2": 5.4,
+    "zentrum_hauptstadt": "Chang'an",
+    "schluesselfigur": "Kaiser Taizong"
+  },
+  "Maurya-Reich": {
+    "kategorie": "Imperium",
+    "start_jahr": -322,
+    "dauer_jahre": 137,
+    "ausdehnung_mio_km2": 5.0,
+    "zentrum_hauptstadt": "Pataliputra",
+    "schluesselfigur": "Ashoka"
+  },
+  "Tibetisches Reich": {
+    "kategorie": "Imperium",
+    "start_jahr": 618,
+    "dauer_jahre": 224,
+    "ausdehnung_mio_km2": 4.6,
+    "zentrum_hauptstadt": "Lhasa",
+    "schluesselfigur": "Songtsen Gampo"
+  },
+  "Timuridenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1370,
+    "dauer_jahre": 137,
+    "ausdehnung_mio_km2": 4.4,
+    "zentrum_hauptstadt": "Samarkand",
+    "schluesselfigur": "Timur"
+  },
+  "Fatimiden-Kalifat": {
+    "kategorie": "Imperium",
+    "start_jahr": 909,
+    "dauer_jahre": 262,
+    "ausdehnung_mio_km2": 4.1,
+    "zentrum_hauptstadt": "Kairo",
+    "schluesselfigur": "al-Muizz"
+  },
+  "Seldschukenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1037,
+    "dauer_jahre": 157,
+    "ausdehnung_mio_km2": 3.9,
+    "zentrum_hauptstadt": "Isfahan",
+    "schluesselfigur": "Malik-Schah I."
+  },
+  "Seleukidenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": -312,
+    "dauer_jahre": 249,
+    "ausdehnung_mio_km2": 3.9,
+    "zentrum_hauptstadt": "Antiochia",
+    "schluesselfigur": "Seleukos I."
+  },
+  "Ilchanat": {
+    "kategorie": "Imperium",
+    "start_jahr": 1256,
+    "dauer_jahre": 79,
+    "ausdehnung_mio_km2": 3.75,
+    "zentrum_hauptstadt": "Täbris",
+    "schluesselfigur": "Hülegü"
+  },
+  "Sassanidenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 224,
+    "dauer_jahre": 427,
+    "ausdehnung_mio_km2": 3.5,
+    "zentrum_hauptstadt": "Ktesiphon",
+    "schluesselfigur": "Schapur I."
+  },
+  "Ghaznawidenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 977,
+    "dauer_jahre": 209,
+    "ausdehnung_mio_km2": 3.4,
+    "zentrum_hauptstadt": "Ghazni",
+    "schluesselfigur": "Mahmud von Ghazni"
+  },
+  "Sultanat von Delhi": {
+    "kategorie": "Imperium",
+    "start_jahr": 1206,
+    "dauer_jahre": 320,
+    "ausdehnung_mio_km2": 3.2,
+    "zentrum_hauptstadt": "Delhi",
+    "schluesselfigur": "Alauddin Khalji"
+  },
+  "Song-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 960,
+    "dauer_jahre": 167,
+    "ausdehnung_mio_km2": 3.1,
+    "zentrum_hauptstadt": "Kaifeng",
+    "schluesselfigur": "Kaiser Taizu"
+  },
+  "Westliche Jin-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 266,
+    "dauer_jahre": 50,
+    "ausdehnung_mio_km2": 3.1,
+    "zentrum_hauptstadt": "Luoyang",
+    "schluesselfigur": "Kaiser Wu (Sima Yan)"
+  },
+  "Sui-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 581,
+    "dauer_jahre": 37,
+    "ausdehnung_mio_km2": 3.0,
+    "zentrum_hauptstadt": "Chang'an",
+    "schluesselfigur": "Kaiser Wen"
+  },
+  "Safawidenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 1501,
+    "dauer_jahre": 235,
+    "ausdehnung_mio_km2": 2.9,
+    "zentrum_hauptstadt": "Isfahan",
+    "schluesselfigur": "Abbas I."
+  },
+  "Samanidenreich": {
+    "kategorie": "Imperium",
+    "start_jahr": 819,
+    "dauer_jahre": 180,
+    "ausdehnung_mio_km2": 2.85,
+    "zentrum_hauptstadt": "Buchara",
+    "schluesselfigur": "Ismail Samani"
+  },
+  "Mederreich": {
+    "kategorie": "Imperium",
+    "start_jahr": -678,
+    "dauer_jahre": 128,
+    "ausdehnung_mio_km2": 2.8,
+    "zentrum_hauptstadt": "Ekbatana",
+    "schluesselfigur": "Kyaxares"
+  }
 }

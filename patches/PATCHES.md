@@ -701,3 +701,7 @@ Erstes Beispiel für echte neue Geo-Felder (Aufwand statt Ableiten): `architektu
 ## Phase 567 — Genauigkeit: architektur 'stadt' bereinigt + Anti-Halluzinations-Regel
 **Datum:** 2026-06-13
 `stadt` nur noch für **23 eindeutig in einer Stadt** stehende Bauwerke; 17 mehrdeutige (Tunnel, Grenz-Staudämme, spannende Brücken, Anlagen außerhalb von Städten) entfernt — kein Raten. Neue Regel im Session-Starter: **Genauigkeit über allem, keine Halluzinationen** (nur kuratierte oder web-verifizierte Daten; im Zweifel weglassen).
+
+## Phase 568 — geschichte: +26 Reiche (web-verifiziert) → 66
+**Datum:** 2026-06-13
+`geschichte_extended.json` 40→66: 26 große Reiche ergänzt. Spitzenausdehnung aus Wikipedia „List of largest empires"; Zeitraum/Zentrum/Schlüsselfigur stabile, belegte Fakten (Qing, Span./Franz. Kolonialreich, Umayyaden, Yuan, Tang, Maurya, Sassaniden, Timuriden, Safawiden, Song, Sui, Delhi-Sultanat, Goldene Horde, Seleukiden, Mederreich u. a.). Ziel ≥50 erreicht.

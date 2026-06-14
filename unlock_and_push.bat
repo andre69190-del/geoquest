@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 567. GENAUIGKEIT: architektur 'stadt' auf 23 eindeutige Bauwerke reduziert (mehrdeutige Tunnel/Grenz-Daemme/spannende Bruecken entfernt - kein Raten). fluss_match_muendung existierte bereits (nichts doppelt gebaut). Genauigkeits-/Anti-Halluzinations-Regel im Session-Starter verankert.. verify: 196/196."
+git commit -m "Content: Phase 568. geschichte_extended von 40 auf 66 erweitert: 26 grosse Reiche web-verifiziert (Spitzenflaeche aus Wikipedia 'List of largest empires'; Datum/Hauptstadt/Schluesselfigur stabile Fakten) - Qing, Spanisches/Franzoesisches Kolonialreich, Umayyaden, Yuan, Tang, Maurya, Sassaniden, Timuriden, Safawiden, Song, Sui u.a. Bereichert hist_match_zentrum/hl_hist_*.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

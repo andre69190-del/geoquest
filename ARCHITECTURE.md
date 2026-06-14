@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 567 (Stand: Juni 2026)
+**Version:** Phase 568 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.15 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1265,6 +1265,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **564** | patch_564.py | **inseln + gipfel auf 8 Geo-Spiele aufgefuellt: neue Modi insel_match_land + gipfel_match_land (In welchem Land liegt diese Insel/dieser Gipfel?) via genInselnMatchExt/genGipfelMatchExt. Damit alle Geo-Rubriken >=8 ausser astronomie (7, nicht geo-mergebar). 1094->1096.** |
 | **566** | patch_566.py | **Neues Geo-Feld (echte Daten): architektur.json um 'stadt' fuer alle 40 Bauwerke erweitert (akkurat, weltbekannt) + neues Spiel arch_match_stadt 'In welcher Stadt steht dieses Bauwerk?'. Beweis: neue Felder ermoeglichen neue interessante Geo-Spiele (nicht nur ableiten). 1096->1097.** |
 | **567** | patch_567.py | **GENAUIGKEIT: architektur 'stadt' auf 23 eindeutige Bauwerke reduziert (mehrdeutige Tunnel/Grenz-Daemme/spannende Bruecken entfernt - kein Raten). fluss_match_muendung existierte bereits (nichts doppelt gebaut). Genauigkeits-/Anti-Halluzinations-Regel im Session-Starter verankert.** |
+| **568** | patch_568.py | **geschichte_extended von 40 auf 66 erweitert: 26 grosse Reiche web-verifiziert (Spitzenflaeche aus Wikipedia 'List of largest empires'; Datum/Hauptstadt/Schluesselfigur stabile Fakten) - Qing, Spanisches/Franzoesisches Kolonialreich, Umayyaden, Yuan, Tang, Maurya, Sassaniden, Timuriden, Safawiden, Song, Sui u.a. Bereichert hist_match_zentrum/hl_hist_*.** |
 
 ---
 
