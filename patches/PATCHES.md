@@ -697,3 +697,7 @@ Neue Modi `insel_match_land` + `gipfel_match_land` („In welchem Land liegt die
 ## Phase 566 — Neues Geo-Feld: architektur 'stadt'
 **Datum:** 2026-06-13
 Erstes Beispiel für echte neue Geo-Felder (Aufwand statt Ableiten): `architektur.json` um **`stadt`** für alle 40 Bauwerke erweitert (akkurat, weltbekannte Strukturen) → neues Spiel `arch_match_stadt` „In welcher Stadt steht dieses Bauwerk?". Zeigt: neue Datenfelder schaffen neue, interessante Geo-Spiele über das Ableiten hinaus. 1096→1097.
+
+## Phase 567 — Genauigkeit: architektur 'stadt' bereinigt + Anti-Halluzinations-Regel
+**Datum:** 2026-06-13
+`stadt` nur noch für **23 eindeutig in einer Stadt** stehende Bauwerke; 17 mehrdeutige (Tunnel, Grenz-Staudämme, spannende Brücken, Anlagen außerhalb von Städten) entfernt — kein Raten. Neue Regel im Session-Starter: **Genauigkeit über allem, keine Halluzinationen** (nur kuratierte oder web-verifizierte Daten; im Zweifel weglassen).

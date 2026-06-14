@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 566. Neues Geo-Feld (echte Daten): architektur.json um 'stadt' fuer alle 40 Bauwerke erweitert (akkurat, weltbekannt) + neues Spiel arch_match_stadt 'In welcher Stadt steht dieses Bauwerk?'. Beweis: neue Felder ermoeglichen neue interessante Geo-Spiele (nicht nur ableiten). 1096->1097.. verify: 196/196."
+git commit -m "Content: Phase 567. GENAUIGKEIT: architektur 'stadt' auf 23 eindeutige Bauwerke reduziert (mehrdeutige Tunnel/Grenz-Daemme/spannende Bruecken entfernt - kein Raten). fluss_match_muendung existierte bereits (nichts doppelt gebaut). Genauigkeits-/Anti-Halluzinations-Regel im Session-Starter verankert.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

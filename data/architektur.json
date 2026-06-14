@@ -139,8 +139,7 @@
     "baujahr": 1150,
     "hoehe_m": 65.0,
     "spannweite_m": null,
-    "laenge_m": null,
-    "stadt": "Siem Reap"
+    "laenge_m": null
   },
   "Kolosseum": {
     "kategorie": "Denkmal",
@@ -205,8 +204,7 @@
     "baujahr": 1998,
     "hoehe_m": 298.0,
     "spannweite_m": 1991.0,
-    "laenge_m": 3911.0,
-    "stadt": "Kobe"
+    "laenge_m": 3911.0
   },
   "Golden Gate Bridge": {
     "kategorie": "Brücke",
@@ -216,8 +214,7 @@
     "baujahr": 1937,
     "hoehe_m": 227.0,
     "spannweite_m": 1280.0,
-    "laenge_m": 2737.0,
-    "stadt": "San Francisco"
+    "laenge_m": 2737.0
   },
   "Millau-Viadukt": {
     "kategorie": "Brücke",
@@ -227,8 +224,7 @@
     "baujahr": 2004,
     "hoehe_m": 270.0,
     "spannweite_m": 342.0,
-    "laenge_m": 2460.0,
-    "stadt": "Millau"
+    "laenge_m": 2460.0
   },
   "Øresundbrücke": {
     "kategorie": "Brücke",
@@ -238,8 +234,7 @@
     "baujahr": 2000,
     "hoehe_m": 57.0,
     "spannweite_m": 490.0,
-    "laenge_m": 7845.0,
-    "stadt": "Malmö"
+    "laenge_m": 7845.0
   },
   "Tower Bridge": {
     "kategorie": "Brücke",
@@ -282,8 +277,7 @@
     "baujahr": 2016,
     "hoehe_m": null,
     "spannweite_m": null,
-    "laenge_m": 57091.0,
-    "stadt": "Göschenen"
+    "laenge_m": 57091.0
   },
   "Kanaltunnel": {
     "kategorie": "Tunnel",
@@ -293,8 +287,7 @@
     "baujahr": 1994,
     "hoehe_m": null,
     "spannweite_m": null,
-    "laenge_m": 50450.0,
-    "stadt": "Folkestone"
+    "laenge_m": 50450.0
   },
   "Seikan-Tunnel": {
     "kategorie": "Tunnel",
@@ -304,8 +297,7 @@
     "baujahr": 1988,
     "hoehe_m": null,
     "spannweite_m": null,
-    "laenge_m": 53850.0,
-    "stadt": "Hakodate"
+    "laenge_m": 53850.0
   },
   "Lötschberg-Basistunnel": {
     "kategorie": "Tunnel",
@@ -315,8 +307,7 @@
     "baujahr": 2007,
     "hoehe_m": null,
     "spannweite_m": null,
-    "laenge_m": 34577.0,
-    "stadt": "Frutigen"
+    "laenge_m": 34577.0
   },
   "Brenner-Basistunnel": {
     "kategorie": "Tunnel",
@@ -326,8 +317,7 @@
     "baujahr": 2032,
     "hoehe_m": null,
     "spannweite_m": null,
-    "laenge_m": 55000.0,
-    "stadt": "Innsbruck"
+    "laenge_m": 55000.0
   },
   "Drei-Schluchten-Damm": {
     "kategorie": "Staudamm",
@@ -337,8 +327,7 @@
     "baujahr": 2003,
     "hoehe_m": 185.0,
     "spannweite_m": null,
-    "laenge_m": 2335.0,
-    "stadt": "Yichang"
+    "laenge_m": 2335.0
   },
   "Itaipu-Damm": {
     "kategorie": "Staudamm",
@@ -348,8 +337,7 @@
     "baujahr": 1984,
     "hoehe_m": 196.0,
     "spannweite_m": null,
-    "laenge_m": 7919.0,
-    "stadt": "Foz do Iguaçu"
+    "laenge_m": 7919.0
   },
   "Hoover Dam": {
     "kategorie": "Staudamm",
@@ -359,8 +347,7 @@
     "baujahr": 1936,
     "hoehe_m": 221.0,
     "spannweite_m": null,
-    "laenge_m": 379.0,
-    "stadt": "Boulder City"
+    "laenge_m": 379.0
   },
   "Grande Dixence": {
     "kategorie": "Staudamm",
@@ -370,8 +357,7 @@
     "baujahr": 1961,
     "hoehe_m": 285.0,
     "spannweite_m": null,
-    "laenge_m": 695.0,
-    "stadt": "Hérémence"
+    "laenge_m": 695.0
   },
   "Assuandamm": {
     "kategorie": "Staudamm",
@@ -381,8 +367,7 @@
     "baujahr": 1970,
     "hoehe_m": 111.0,
     "spannweite_m": null,
-    "laenge_m": 3830.0,
-    "stadt": "Assuan"
+    "laenge_m": 3830.0
   },
   "Kariba-Damm": {
     "kategorie": "Staudamm",
@@ -392,8 +377,7 @@
     "baujahr": 1959,
     "hoehe_m": 128.0,
     "spannweite_m": null,
-    "laenge_m": 617.0,
-    "stadt": "Kariba"
+    "laenge_m": 617.0
   },
   "Burj Al Arab": {
     "kategorie": "Wolkenkratzer",
@@ -425,8 +409,7 @@
     "baujahr": 1450,
     "hoehe_m": 30.0,
     "spannweite_m": null,
-    "laenge_m": null,
-    "stadt": "Cusco"
+    "laenge_m": null
   },
   "Neuschwanstein": {
     "kategorie": "Denkmal",

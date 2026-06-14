@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 566 (Stand: Juni 2026)
+**Version:** Phase 567 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.15 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1264,6 +1264,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **563** | patch_563.py | **Rubrik-Merge (nicht-destruktiv): duenne Trivia-Rubriken zusammengelegt. Absorbiert: hunde->tiere, gartenbau->pflanzen, regional->gastronomie, hl_compare->comparisons, robotik/autos/wirtschaft->technologie (jetzt 'Technik & Industrie'). Neue Sammel-Rubriken: 'Pop & Medien' (filme/serien/musik/webkultur/boardgames), 'Kunst, Kultur & Geschichte' (kunst/literatur/architektur/mythologie/geschichte/sprachen). 29 Geo-Rubriken, alle >=8 ausser astronomie/inseln/gipfel(7). 0 verwaiste Modi. Per MODE_CATS-Postprocessing + _MERGED_CHILDREN-Filter, keine Modi geloescht.** |
 | **564** | patch_564.py | **inseln + gipfel auf 8 Geo-Spiele aufgefuellt: neue Modi insel_match_land + gipfel_match_land (In welchem Land liegt diese Insel/dieser Gipfel?) via genInselnMatchExt/genGipfelMatchExt. Damit alle Geo-Rubriken >=8 ausser astronomie (7, nicht geo-mergebar). 1094->1096.** |
 | **566** | patch_566.py | **Neues Geo-Feld (echte Daten): architektur.json um 'stadt' fuer alle 40 Bauwerke erweitert (akkurat, weltbekannt) + neues Spiel arch_match_stadt 'In welcher Stadt steht dieses Bauwerk?'. Beweis: neue Felder ermoeglichen neue interessante Geo-Spiele (nicht nur ableiten). 1096->1097.** |
+| **567** | patch_567.py | **GENAUIGKEIT: architektur 'stadt' auf 23 eindeutige Bauwerke reduziert (mehrdeutige Tunnel/Grenz-Daemme/spannende Bruecken entfernt - kein Raten). fluss_match_muendung existierte bereits (nichts doppelt gebaut). Genauigkeits-/Anti-Halluzinations-Regel im Session-Starter verankert.** |
 
 ---
 

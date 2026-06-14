@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 566):
+Aktueller Stand (Stand: Phase 567):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 1097 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -127,6 +127,7 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 - [ ] GEN-Dispatch-Eintrag
 - [ ] Generator-Funktion (falls neu benötigt)
 - [ ] **NIEMALS harte Strings ins UI rendern!** Neue Prompts/Labels MÜSSEN in `_CONTENT_I18N` (DE/EN/PL) eingetragen und im Code via `_tc()` oder `_tcc()` abgerufen werden. Deutsche Texte direkt im JS schließen EN/PL-Spieler aus — striktes Verbot.
+- [ ] **GENAUIGKEIT ÜBER ALLEM — keine Halluzinationen:** Niemals Daten raten/erfinden. Neue Datenwerte nur aus **kuratierten Projektdaten** oder **per Web-Recherche verifiziert**. Bei Unsicherheit: Feld weglassen (lieber weniger Einträge als ein falscher). Mehrdeutige Fälle (Grenz-Bauwerke, Tunnel, spannende Brücken) bekommen kein eindeutiges Ortsfeld.
 - [ ] **Datenbasis IMMER gefüllt:** Jeder neue Modus braucht eine echte Datengrundlage (genug Items für sinnvolle Frage + Distraktoren). In der Spielübersicht (`generate_spieluebersicht.py`) muss die Spalte „Datenbasis“ einen Wert zeigen — eine Zahl **oder** „dyn“ (laufzeit-/COUNTRIES-/Inline-basiert, per Smoke-Test geprüft). **Niemals leer/„—“.** Pflicht: `node smoke_test.js` deckt den Modus mit echten Fragen ab (0 NULL/THROW).
 - [ ] validate_content.py ausführen → 0 warnings
 - [ ] MODES-Zahl in gen.py zählen (nicht JSON-Keys!)
