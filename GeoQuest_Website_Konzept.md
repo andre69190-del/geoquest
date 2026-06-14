@@ -236,4 +236,4 @@ Schmale horizontale Leiste, 4 grosse Zahlen nebeneinander:
 
 ---
 
-*Konzept erstellt: Juni 2026 | Phase 577 | GeoQuest v6.17 MB | 718 Modi*
+*Konzept erstellt: Juni 2026 | Phase 578 | GeoQuest v6.17 MB | 718 Modi*

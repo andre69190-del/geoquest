@@ -6821,7 +6821,7 @@ function genCapitalQ(){
 }
 var _CONT_DE={"Asia":"Asien","Europe":"Europa","Africa":"Afrika","North America":"Nordamerika","South America":"Südamerika","Oceania":"Ozeanien"};
 function genTierKontinentQ(){
-  var P=[["\u{1F981}","Afrika"],["\u{1F992}","Afrika"],["\u{1F993}","Afrika"],["\u{1F418}","Afrika"],["\u{1F998}","Ozeanien"],["\u{1F428}","Ozeanien"],["\u{1F43C}","Asien"],["\u{1F405}","Asien"],["\u{1F9A5}","Südamerika"],["\u{1F999}","Südamerika"],["\u{1F9AC}","Nordamerika"],["\u{1F99D}","Nordamerika"]];
+  var P=[["\u{1F981}","Afrika"],["\u{1F992}","Afrika"],["\u{1F993}","Afrika"],["\u{1F418}","Afrika"],["\u{1F998}","Ozeanien"],["\u{1F428}","Ozeanien"],["\u{1F43C}","Asien"],["\u{1F405}","Asien"],["\u{1F9A5}","Südamerika"],["\u{1F999}","Südamerika"],["\u{1F9AC}","Nordamerika"],["\u{1F99D}","Nordamerika"],["\u{1F99B}","Afrika"],["\u{1F98D}","Afrika"],["\u{1F99A}","Asien"],["\u{1F9A7}","Asien"],["\u{1F983}","Nordamerika"]];
   var i=~~(rng()*P.length);var cor=P[i];
   var conts=[];P.forEach(function(x){if(x[1]!==cor[1]&&conts.indexOf(x[1])<0)conts.push(x[1]);});
   conts=sh(conts).slice(0,3);

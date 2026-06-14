@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 577. essen_land von 9 auf 16 Gerichte erweitert (eindeutige Herkunft, Windows-sichere Emojis): +Pasta(IT), Fondue(CH), Waffel(BE), Burrito(MX), Donut(US), Mooncake(CN), Onigiri(JP). Neue Laender Schweiz/Belgien.. verify: 196/196."
+git commit -m "Content: Phase 578. tiere_kontinent von 12 auf 17: 5 eindeutig einem Kontinent zuzuordnende Tiere ergaenzt (Nilpferd/Gorilla->Afrika, Pfau/Orang-Utan->Asien, Truthahn->Nordamerika). Nur Single-Kontinent-Tiere (keine mehrdeutigen wie Nashorn/Leopard). essen_land vorher 9->16.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

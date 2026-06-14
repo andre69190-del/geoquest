@@ -741,3 +741,7 @@ ARCHITECTURE.md (999) + GeoQuest_Website_Konzept.md (999/718) auf **1099** aktua
 ## Phase 577 — essen_land 9 → 16
 **Datum:** 2026-06-13
 +7 eindeutig zuordenbare Gerichte (🍝 Italien, 🫕 Schweiz, 🧇 Belgien, 🌯 Mexiko, 🍩 USA, 🥮 China, 🍙 Japan) — neue Länder Schweiz/Belgien. Nur Gerichte mit klarer Einzel-Herkunft (keine umstrittenen).
+
+## Phase 578 — tiere_kontinent 12 → 17
+**Datum:** 2026-06-13
++5 eindeutig einem Kontinent zugeordnete Tiere (🦛 Nilpferd, 🦍 Gorilla → Afrika; 🦚 Pfau, 🦧 Orang-Utan → Asien; 🦃 Truthahn → Nordamerika). Nur Single-Kontinent-Tiere — mehrdeutige (Nashorn, Leopard, Elefant grenzwertig) bewusst weggelassen.

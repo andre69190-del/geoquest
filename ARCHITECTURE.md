@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 577 (Stand: Juni 2026)
+**Version:** Phase 578 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.17 MB | 1099 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1273,6 +1273,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **574** | patch_574.py | **architektur von 55 auf 76: 21 weltbekannte Bauwerke web-verifiziert (Koordinaten/Hoehe/Baujahr per Subagent aus Wikipedia). 5 ausgelassen wegen unbelegter Hoehe/Jahr bzw. falscher Koordinate (Wat Arun, Goldener Tempel, Stonehenge, El Castillo, Berliner Fernsehturm) - keine Schaetzung. Ostankino, Oriental Pearl, Tokyo Tower, Koelner Dom, Notre-Dame, Potala u.a.** |
 | **575** | patch_575.py | **medizin von 6 auf 8 Spiele aufgestockt: 2 neue Modi aus Bestandsfeldern - med_match_kategorie (Organ/Knochen/Meilenstein/Krankheit) + med_match_entdecker (Wer entdeckte das?). Damit haben ALLE Rubriken >=8 Spiele (ausser astronomie 7). Non-geo -> in NON_GEO_IDS.** |
 | **577** | patch_577.py | **essen_land von 9 auf 16 Gerichte erweitert (eindeutige Herkunft, Windows-sichere Emojis): +Pasta(IT), Fondue(CH), Waffel(BE), Burrito(MX), Donut(US), Mooncake(CN), Onigiri(JP). Neue Laender Schweiz/Belgien.** |
+| **578** | patch_578.py | **tiere_kontinent von 12 auf 17: 5 eindeutig einem Kontinent zuzuordnende Tiere ergaenzt (Nilpferd/Gorilla->Afrika, Pfau/Orang-Utan->Asien, Truthahn->Nordamerika). Nur Single-Kontinent-Tiere (keine mehrdeutigen wie Nashorn/Leopard). essen_land vorher 9->16.** |
 
 ---
 
