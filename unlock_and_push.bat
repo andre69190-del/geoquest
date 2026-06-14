@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 559. Verbesserungen: 'Zufall' (playRandomGame) respektiert Geo/Allgemeinwissen-Split; 19 alte gen.py-Backups entfernt; Session-Starter Doku-Note zum Geo-Split (NON_GEO_IDS); Spieluebersicht-Generator nach Bereichen GeoQuest(549)/Allgemeinwissen(545) getrennt + Hero-Zaehler.. verify: 195/195."
+git commit -m "Content: Phase 562. Geo/Allgemeinwissen-Umschalter als Segmented Control (zwei Tabs nebeneinander: GeoQuest | Allgemeinwissen, aktiver hervorgehoben) statt Vollbreit-Balken - leichter, klar als Navigation erkennbar, spart Hoehe. Direkt unter Begruessung.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

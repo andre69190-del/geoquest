@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 559 (Stand: Juni 2026)
+**Version:** Phase 562 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.14 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1260,6 +1260,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **557** | patch_557.py | **Banner ueberarbeitet: Ueberschrift = aktueller Bereich, Button = anderer Bereich. Geo-Ansicht: 'GeoQuest / Spiele mit Geo-Bezug' + Button 'Allgemeinwissen ›'. Allgemeinwissen: 'Allgemeinwissen / Spiele ohne Geo-Bezug' + Button '‹ GeoQuest'. Kein doppeldeutiges 'Allgemeinwissen' mehr.** |
 | **558** | patch_558.py | **Geo/Allgemeinwissen-Banner direkt unter die Begruessungszeile verschoben (beide Ansichten). Zurueck-Button '‹ GeoQuest' jetzt LINKS vor der Ueberschrift (back=links), Vorwaerts-Button 'Allgemeinwissen ›' rechts.** |
 | **559** | patch_559.py | **Verbesserungen: 'Zufall' (playRandomGame) respektiert Geo/Allgemeinwissen-Split; 19 alte gen.py-Backups entfernt; Session-Starter Doku-Note zum Geo-Split (NON_GEO_IDS); Spieluebersicht-Generator nach Bereichen GeoQuest(549)/Allgemeinwissen(545) getrennt + Hero-Zaehler.** |
+| **562** | patch_562.py | **Geo/Allgemeinwissen-Umschalter als Segmented Control (zwei Tabs nebeneinander: GeoQuest | Allgemeinwissen, aktiver hervorgehoben) statt Vollbreit-Balken - leichter, klar als Navigation erkennbar, spart Hoehe. Direkt unter Begruessung.** |
 
 ---
 

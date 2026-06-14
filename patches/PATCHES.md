@@ -677,3 +677,7 @@ Geo/Allgemeinwissen-Banner sitzt jetzt **direkt unter der Begrüßungszeile** (i
 ## Phase 561 — verify.py: NON_GEO_IDS-Schutz
 **Datum:** 2026-06-13
 Neuer Check „14b. NON_GEO_IDS validity": stellt sicher, dass jede ID in `NON_GEO_IDS` noch in MODES existiert (fängt veraltete Einträge bei künftigen Umbenennungen/Entfernungen). verify 195→196 Checks. Suche (`filterGames`) bereits bereichskonform (durchsucht nur DOM-Karten, die schon geo-gefiltert sind) — keine Änderung nötig.
+
+## Phase 562 — Umschalter als Segmented Control
+**Datum:** 2026-06-13
+Geo/Allgemeinwissen-Umschalter von Vollbreit-Balken auf **Segmented Control** umgestellt: zwei gleich breite Tabs nebeneinander („🌍 GeoQuest" | „🧠 Allgemeinwissen"), aktiver mit Farbverlauf hervorgehoben, inaktiver dezent. Hebt sich klar als Navigation von den Aktions-Karten (Daily/Region) ab und spart vertikale Höhe. Direkt unter der Begrüßungszeile.
