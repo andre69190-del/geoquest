@@ -665,3 +665,7 @@ Banner zeigt jetzt den **aktuellen** Bereich als Überschrift und führt per But
 ## Phase 558 — Banner-Position + Pfeilrichtung
 **Datum:** 2026-06-13
 Geo/Allgemeinwissen-Banner sitzt jetzt **direkt unter der Begrüßungszeile** (in beiden Ansichten, vor PvP/Suche). Richtungslogik korrigiert: Zurück-Button „‹ GeoQuest" **links** vor der Überschrift, Vorwärts-Button „Allgemeinwissen ›" rechts.
+
+## Phase 559 — Geo-Konsistenz-Feinschliff + Spielübersicht-Split
+**Datum:** 2026-06-13
+„Zufall" (`playRandomGame`) zieht nur noch aus dem aktuellen Bereich (Geo bzw. Allgemeinwissen). 19 alte `gen.py.bak_*` entfernt. Session-Starter um Doku-Note zum Geo-Split (`NON_GEO_IDS`) ergänzt. **GeoQuest_Spielübersicht.html** jetzt nach Bereichen getrennt: „🌍 GeoQuest" (549) und „🧠 Allgemeinwissen" (545), je nach Kategorie gruppiert, plus Hero-Zähler.

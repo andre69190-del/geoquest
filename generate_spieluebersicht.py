@@ -443,6 +443,8 @@ def _mode_kidsafe(mid, title, group, audmap, l1_set=None):
 def generate(phase=269, n_tests=90):
     src       = open(GEN,'r',encoding='utf-8').read()
     modes     = _parse_modes(src)
+    _ng       = re.search(r'const NON_GEO_IDS=new Set\(\[(.*?)\]\)', src)
+    NON_GEO   = set(re.findall(r'"([^"]+)"', _ng.group(1))) if _ng else set()
     aud_map   = _parse_cat_audience(src)
     l1_set    = _load_l1_list(src)
     kids_n    = 0
@@ -462,6 +464,7 @@ def generate(phase=269, n_tests=90):
         if g not in seen: group_order.append(g)
 
     total_modes  = len(modes)
+    geo_n=sum(1 for m in modes if m['id'] not in NON_GEO); nongeo_n=total_modes-geo_n
     group_counts = Counter(m['group'] for m in modes)
     type_counts  = Counter(_get_type(m['id']) for m in modes)
 
@@ -476,38 +479,43 @@ def generate(phase=269, n_tests=90):
     cats_html = '\n'.join(cat_btns)
 
     rows=[]; n=0; missing=0; total_items=0
-    for g in group_order:
-        if g not in groups: continue
-        em,lbl = CAT_META.get(g,('📂',g))
-        cnt = len(groups[g])
-        rows.append(f'<tr class="gh" data-group="{g}"><td colspan="6">'
-                    f'{em} {lbl} <span class="cnt">({cnt})</span></td></tr>')
-        for m in groups[g]:
-            n += 1
-            t = m['title'].replace('<','&lt;').replace('>','&gt;')
-            d = m['desc'].replace('<','&lt;').replace('>','&gt;') if m['desc'] else ''
-            b = _badge(m['id'])
-            if _mode_kidsafe(m['id'], m['title'], g, aud_map, l1_set):
-                b += '<span title="kindgeeignet" style="margin-left:.35rem;font-size:.85rem">🧒</span>'
-                kids_n += 1
-            cs, rn = _get_count(m['id'], dispatch, store, sport_poi)
-            total_items += rn
-            if cs == '—': missing += 1
-            sub = f'<div class="sub">{d}</div>'
-            if rn==0:   cc='#ef4444'
-            elif rn==1: cc='#c084fc'
-            elif rn<20: cc='#fb923c'
-            else:       cc='#94a3b8'
-            ag = _grade_badges(m['id'], m['title'], g, aud_map, l1_set)
-            rows.append(
-                f'<tr class="mr" data-group="{g}">'
-                f'<td class="n">{n}</td>'
-                f'<td class="mid">{m["id"]}</td>'
-                f'<td class="ttl">{t}{sub}</td>'
-                f'<td class="db">{b}</td>'
-                f'<td class="ag">{ag}</td>'
-                f'<td class="dc"><span style="color:{cc};font-weight:700">{cs}</span></td>'
-                f'</tr>')
+    _BEREICH=[('geo','\U0001F30D GeoQuest \u2014 Spiele mit Geo-Bezug'),('nongeo','\U0001F9E0 Allgemeinwissen \u2014 Spiele ohne Geo-Bezug')]
+    for _bk,_bl in _BEREICH:
+        _bmodes=[mm for mm in modes if (mm['id'] in NON_GEO)==(_bk=='nongeo')]
+        rows.append(f'<tr class="bh"><td colspan="6">{_bl} <span class="cnt">({len(_bmodes)})</span></td></tr>')
+        for g in group_order:
+            if g not in groups: continue
+            gm=[mm for mm in groups[g] if (mm['id'] in NON_GEO)==(_bk=='nongeo')]
+            if not gm: continue
+            em,lbl = CAT_META.get(g,('\U0001F4C2',g))
+            rows.append(f'<tr class="gh" data-group="{g}"><td colspan="6">'
+                        f'{em} {lbl} <span class="cnt">({len(gm)})</span></td></tr>')
+            for m in gm:
+                n += 1
+                t = m['title'].replace('<','&lt;').replace('>','&gt;')
+                d = m['desc'].replace('<','&lt;').replace('>','&gt;') if m['desc'] else ''
+                b = _badge(m['id'])
+                if _mode_kidsafe(m['id'], m['title'], g, aud_map, l1_set):
+                    b += '<span title="kindgeeignet" style="margin-left:.35rem;font-size:.85rem">\U0001F9D2</span>'
+                    kids_n += 1
+                cs, rn = _get_count(m['id'], dispatch, store, sport_poi)
+                total_items += rn
+                if cs == '\u2014': missing += 1
+                sub = f'<div class="sub">{d}</div>'
+                if rn==0:   cc='#ef4444'
+                elif rn==1: cc='#c084fc'
+                elif rn<20: cc='#fb923c'
+                else:       cc='#94a3b8'
+                ag = _grade_badges(m['id'], m['title'], g, aud_map, l1_set)
+                rows.append(
+                    f'<tr class="mr" data-group="{g}">'
+                    f'<td class="n">{n}</td>'
+                    f'<td class="mid">{m["id"]}</td>'
+                    f'<td class="ttl">{t}{sub}</td>'
+                    f'<td class="db">{b}</td>'
+                    f'<td class="ag">{ag}</td>'
+                    f'<td class="dc"><span style="color:{cc};font-weight:700">{cs}</span></td>'
+                    f'</tr>')
     if missing:
         print(f'WARNING: {missing} Modi ohne Datenbasis-Wert')
     tbody = '\n'.join(rows)
@@ -543,6 +551,7 @@ def generate(phase=269, n_tests=90):
     H.append('.tbl{padding:.4rem .8rem 3rem;overflow-x:auto}table{width:max-content;border-collapse:collapse}.ag{min-width:90px;white-space:nowrap}')
     H.append('thead th{background:var(--bg3);padding:.38rem .55rem;text-align:left;font-size:.72rem;color:#94a3b8;white-space:nowrap;position:sticky;top:42px;z-index:5}')
     H.append('.gh td{background:#141e2e;font-weight:700;font-size:.88rem;padding:.48rem .6rem;border-top:2px solid var(--bg3);position:sticky;top:74px;z-index:4}')
+    H.append('.bh td{background:linear-gradient(135deg,#1e1b4b,#312e81);font-weight:800;font-size:1.05rem;padding:.7rem .6rem;color:#c7d2fe;border-top:3px solid #4338ca;letter-spacing:.02em}')
     H.append('.cnt{color:#475569;font-weight:400;font-size:.72rem;margin-left:.25rem}')
     H.append('.mr:hover td{background:#12202e}.mr td{padding:.32rem .55rem;border-bottom:1px solid rgba(255,255,255,.025);vertical-align:top}')
     H.append('.n{color:#475569;font-size:.7rem;width:1%;white-space:nowrap}.mid{font-family:"SF Mono","Fira Code",monospace;font-size:.7rem;color:#818cf8;white-space:nowrap;width:1%}')
@@ -555,6 +564,8 @@ def generate(phase=269, n_tests=90):
     H.append('<header><h1>GeoQuest Spielübersicht</h1><div class="hero">')
     H.append(f'<div class="hs"><span class="hn">{total_modes}</span><span class="hl2">Spielmodi</span></div>')
     H.append(f'<div class="hs"><span class="hn">{len(group_order)}</span><span class="hl2">Kategorien</span></div>')
+    H.append(f'<div class="hs"><span class="hn" style="color:#60a5fa">{geo_n}</span><span class="hl2">Geo</span></div>')
+    H.append(f'<div class="hs"><span class="hn" style="color:#94a3b8">{nongeo_n}</span><span class="hl2">Allgemeinwissen</span></div>')
     H.append(f'<div class="hs"><span class="hn">{n_tests}/{n_tests}</span><span class="hl2">Tests ✓</span></div>')
     H.append(f'<div class="hs"><span class="hn">{total_items:,}</span><span class="hl2">Datenbasis (Items)</span></div>')
     H.append('</div>')

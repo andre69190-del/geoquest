@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 558):
+Aktueller Stand (Stand: Phase 559):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 1094 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -121,6 +121,7 @@ Wenn du eine neue Aufgabe gibst, soll Claude **ohne Nachfragen**:
 
 ### Bei neuen Spielmodi
 - [ ] **GEO-BEZUG-PFLICHT (oberste Regel):** JEDES Spiel MUSS einen geografischen Bezug haben — der Name ist „**Geo**Quest“. Eine Frage muss sich auf Länder, Kontinente, Regionen, Orte, Karten **oder** darauf beziehen, *wo* etwas vorkommt (z. B. „wo lebt dieses Tier“, „aus welchem Land kommt dieses Essen“). Reines Sach-/Tier-/Allgemeintrivia ohne Ortsbezug ist **nicht erlaubt**. Im Zweifel: Geo-Bezug ergänzen oder Spiel verwerfen.
+- [ ] **Geo-Split (Allgemeinwissen):** Neue Modi gelten automatisch als **Geo** (Hauptbereich). Ein bewusst NICHT-geo Modus muss seine id in `NON_GEO_IDS` (gen.py, nahe `KIDS_CATS`) eintragen, sonst erscheint er im Geo-Hauptbereich. Steuert mit: `_catGeoRich` (Empfehlungen), `DAILY_POOL_GEO` (Daily), `renderRecentBar`/`playRandomGame` (geo-gefiltert). Umschalter: `S.nonGeo`.
 - [ ] MODES-Eintrag mit allen Feldern (id, icon, title, group, prompt, desc, prompt_en)
 - [ ] MODE_CATS-Eintrag in der richtigen Kategorie
 - [ ] GEN-Dispatch-Eintrag

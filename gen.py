@@ -17476,7 +17476,7 @@ function showFavorites(){
 }
 window.showFavorites=showFavorites;
 function playRandomGame(){
-  const pool=MODES.filter(m=>!m.comingSoon);
+  const pool=MODES.filter(m=>!m.comingSoon&&(S.nonGeo?NON_GEO_IDS.has(m.id):!NON_GEO_IDS.has(m.id)));
   if(!pool.length)return;
   const m=pool[~~(Math.random()*pool.length)]; /* intentional: user-triggered, unseeded */
   startGame(m.id);

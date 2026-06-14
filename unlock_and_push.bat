@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 558. Geo/Allgemeinwissen-Banner direkt unter die Begruessungszeile verschoben (beide Ansichten). Zurueck-Button '‹ GeoQuest' jetzt LINKS vor der Ueberschrift (back=links), Vorwaerts-Button 'Allgemeinwissen ›' rechts.. verify: 195/195."
+git commit -m "Content: Phase 559. Verbesserungen: 'Zufall' (playRandomGame) respektiert Geo/Allgemeinwissen-Split; 19 alte gen.py-Backups entfernt; Session-Starter Doku-Note zum Geo-Split (NON_GEO_IDS); Spieluebersicht-Generator nach Bereichen GeoQuest(549)/Allgemeinwissen(545) getrennt + Hero-Zaehler.. verify: 195/195."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
