@@ -689,3 +689,7 @@ Dünne Trivia-Rubriken nicht-destruktiv zusammengelegt (MODE_CATS-Postprocessing
 ## Phase 564 — inseln/gipfel auf 8 Geo-Spiele
 **Datum:** 2026-06-13
 Neue Modi `insel_match_land` + `gipfel_match_land` („In welchem Land liegt diese Insel/dieser Gipfel?") via vorhandene genInselnMatchExt/genGipfelMatchExt. inseln 7→8, gipfel 7→8. Damit haben **alle Geo-Rubriken ≥8** außer astronomie (7, nicht sinnvoll geo-mergebar/-erweiterbar). 1094→1096.
+
+## Phase 565 — Spielübersicht: Merge-Rubriken abbilden
+**Datum:** 2026-06-13
+`generate_spieluebersicht.py`: `CAT_MERGE`-Map remappt `m.group` der absorbierten/zusammengelegten Kinder auf ihre Sammel-Rubrik (Pop & Medien, Kunst/Kultur/Geschichte, Technik & Industrie, tiere/pflanzen/gastronomie/comparisons). Übersicht zeigt jetzt dieselben Rubriken wie die App — keine veralteten Einzel-Kategorien mehr. (Tooling-only.)

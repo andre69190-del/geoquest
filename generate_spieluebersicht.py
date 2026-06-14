@@ -382,7 +382,11 @@ CAT_META = {
     'astronomie': ('🔭','Astronomie'),
     'geologie':   ('⛰️','Geologie'),
     'sport_wissen':('🏆','Sport-Wissen'),
+    'pop_medien': ('🎬','Pop & Medien'),
+    'kunst_kultur':('🎭','Kunst, Kultur & Geschichte'),
 }
+CAT_META['technologie']=('💻','Technik & Industrie')
+CAT_MERGE = {'hunde':'tiere','gartenbau':'pflanzen','regional':'gastronomie','hl_compare':'comparisons','robotik':'technologie','autos':'technologie','wirtschaft':'technologie','filme':'pop_medien','serien':'pop_medien','musik':'pop_medien','webkultur':'pop_medien','boardgames':'pop_medien','kunst':'kunst_kultur','literatur':'kunst_kultur','architektur':'kunst_kultur','mythologie':'kunst_kultur','geschichte':'kunst_kultur','sprachen':'kunst_kultur'}
 CAT_ORDER = list(CAT_META.keys())
 
 
@@ -497,7 +501,7 @@ def generate(phase=269, n_tests=90):
 
     from collections import defaultdict, Counter
     groups = defaultdict(list)
-    for m in modes: groups[m['group']].append(m)
+    for m in modes: groups[CAT_MERGE.get(m['group'], m['group'])].append(m)
 
     group_order = []
     seen = set()
@@ -508,7 +512,7 @@ def generate(phase=269, n_tests=90):
 
     total_modes  = len(modes)
     geo_n=sum(1 for m in modes if m['id'] not in NON_GEO); nongeo_n=total_modes-geo_n
-    group_counts = Counter(m['group'] for m in modes)
+    group_counts = Counter(CAT_MERGE.get(m['group'], m['group']) for m in modes)
     type_counts  = Counter(_get_type(m['id']) for m in modes)
 
     cat_btns = []
