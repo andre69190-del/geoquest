@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 563 (Stand: Juni 2026)
+**Version:** Phase 564 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.15 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1262,6 +1262,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **559** | patch_559.py | **Verbesserungen: 'Zufall' (playRandomGame) respektiert Geo/Allgemeinwissen-Split; 19 alte gen.py-Backups entfernt; Session-Starter Doku-Note zum Geo-Split (NON_GEO_IDS); Spieluebersicht-Generator nach Bereichen GeoQuest(549)/Allgemeinwissen(545) getrennt + Hero-Zaehler.** |
 | **562** | patch_562.py | **Geo/Allgemeinwissen-Umschalter als Segmented Control (zwei Tabs nebeneinander: GeoQuest | Allgemeinwissen, aktiver hervorgehoben) statt Vollbreit-Balken - leichter, klar als Navigation erkennbar, spart Hoehe. Direkt unter Begruessung.** |
 | **563** | patch_563.py | **Rubrik-Merge (nicht-destruktiv): duenne Trivia-Rubriken zusammengelegt. Absorbiert: hunde->tiere, gartenbau->pflanzen, regional->gastronomie, hl_compare->comparisons, robotik/autos/wirtschaft->technologie (jetzt 'Technik & Industrie'). Neue Sammel-Rubriken: 'Pop & Medien' (filme/serien/musik/webkultur/boardgames), 'Kunst, Kultur & Geschichte' (kunst/literatur/architektur/mythologie/geschichte/sprachen). 29 Geo-Rubriken, alle >=8 ausser astronomie/inseln/gipfel(7). 0 verwaiste Modi. Per MODE_CATS-Postprocessing + _MERGED_CHILDREN-Filter, keine Modi geloescht.** |
+| **564** | patch_564.py | **inseln + gipfel auf 8 Geo-Spiele aufgefuellt: neue Modi insel_match_land + gipfel_match_land (In welchem Land liegt diese Insel/dieser Gipfel?) via genInselnMatchExt/genGipfelMatchExt. Damit alle Geo-Rubriken >=8 ausser astronomie (7, nicht geo-mergebar). 1094->1096.** |
 
 ---
 

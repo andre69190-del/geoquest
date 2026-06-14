@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 563. Rubrik-Merge (nicht-destruktiv): duenne Trivia-Rubriken zusammengelegt. Absorbiert: hunde->tiere, gartenbau->pflanzen, regional->gastronomie, hl_compare->comparisons, robotik/autos/wirtschaft->technologie (jetzt 'Technik & Industrie'). Neue Sammel-Rubriken: 'Pop & Medien' (filme/serien/musik/webkultur/boardgames), 'Kunst, Kultur & Geschichte' (kunst/literatur/architektur/mythologie/geschichte/sprachen). 29 Geo-Rubriken, alle >=8 ausser astronomie/inseln/gipfel(7). 0 verwaiste Modi. Per MODE_CATS-Postprocessing + _MERGED_CHILDREN-Filter, keine Modi geloescht.. verify: 196/196."
+git commit -m "Content: Phase 564. inseln + gipfel auf 8 Geo-Spiele aufgefuellt: neue Modi insel_match_land + gipfel_match_land (In welchem Land liegt diese Insel/dieser Gipfel?) via genInselnMatchExt/genGipfelMatchExt. Damit alle Geo-Rubriken >=8 ausser astronomie (7, nicht geo-mergebar). 1094->1096.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
