@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 575. medizin von 6 auf 8 Spiele aufgestockt: 2 neue Modi aus Bestandsfeldern - med_match_kategorie (Organ/Knochen/Meilenstein/Krankheit) + med_match_entdecker (Wer entdeckte das?). Damit haben ALLE Rubriken >=8 Spiele (ausser astronomie 7). Non-geo -> in NON_GEO_IDS.. verify: 196/196."
+git commit -m "Content: Phase 577. essen_land von 9 auf 16 Gerichte erweitert (eindeutige Herkunft, Windows-sichere Emojis): +Pasta(IT), Fondue(CH), Waffel(BE), Burrito(MX), Donut(US), Mooncake(CN), Onigiri(JP). Neue Laender Schweiz/Belgien.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

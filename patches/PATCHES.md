@@ -737,3 +737,7 @@ Letzte dünne Rubrik aufgestockt: `med_match_kategorie` (Organ/Knochen/Meilenste
 ## Phase 576 — Doku-Sync: alle Modi-Zahlen auf 1099
 **Datum:** 2026-06-13
 ARCHITECTURE.md (999) + GeoQuest_Website_Konzept.md (999/718) auf **1099** aktualisiert (post_phase-Lücke kompensiert). check_session.py: zwei Fehlalarm-Regexe gefixt (landing `\d{3}`→`\d{3,4}`; Session-Starter sucht jetzt „N Spielmodi" statt veraltetem Tabellenformat). Alle Dokumente-Sync-Checks grün.
+
+## Phase 577 — essen_land 9 → 16
+**Datum:** 2026-06-13
++7 eindeutig zuordenbare Gerichte (🍝 Italien, 🫕 Schweiz, 🧇 Belgien, 🌯 Mexiko, 🍩 USA, 🥮 China, 🍙 Japan) — neue Länder Schweiz/Belgien. Nur Gerichte mit klarer Einzel-Herkunft (keine umstrittenen).

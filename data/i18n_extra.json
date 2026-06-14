@@ -827,7 +827,9 @@
   "Ungültige Datei": "Invalid file",
   "Spielstand sichern/laden (für Schule/Offline)": "Save/load progress (school/offline)",
   "Was ist das — Organ, Knochen, Meilenstein oder Krankheit?": "What is it — organ, bone, milestone or disease?",
-  "Wer hat das entdeckt oder erforscht?": "Who discovered or researched this?"
+  "Wer hat das entdeckt oder erforscht?": "Who discovered or researched this?",
+  "Schweiz": "Switzerland",
+  "Belgien": "Belgium"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1657,6 +1659,8 @@
   "Ungültige Datei": "Nieprawidłowy plik",
   "Spielstand sichern/laden (für Schule/Offline)": "Zapis/wczytanie postępu (szkoła/offline)",
   "Was ist das — Organ, Knochen, Meilenstein oder Krankheit?": "Co to jest — narząd, kość, kamień milowy czy choroba?",
-  "Wer hat das entdeckt oder erforscht?": "Kto to odkrył lub zbadał?"
+  "Wer hat das entdeckt oder erforscht?": "Kto to odkrył lub zbadał?",
+  "Schweiz": "Szwajcaria",
+  "Belgien": "Belgia"
  }
 }

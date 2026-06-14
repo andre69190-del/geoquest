@@ -6829,7 +6829,7 @@ function genTierKontinentQ(){
   return{type:"uk_match",prompt:_tc("Auf welchem Kontinent lebt dieses Tier?"),subj:cor[0],ans:_tc(cor[1]),opts:opts,lid:"tkont_"+i,cc:"de"};
 }
 function genEssenLandQ(){
-  var P=[["\u{1F355}","Italien"],["\u{1F363}","Japan"],["\u{1F956}","Frankreich"],["\u{1F32E}","Mexiko"],["\u{1F968}","Deutschland"],["\u{1F95F}","China"],["\u{1F354}","USA"],["\u{1F35B}","Indien"],["\u{1F958}","Spanien"]];
+  var P=[["\u{1F355}","Italien"],["\u{1F363}","Japan"],["\u{1F956}","Frankreich"],["\u{1F32E}","Mexiko"],["\u{1F968}","Deutschland"],["\u{1F95F}","China"],["\u{1F354}","USA"],["\u{1F35B}","Indien"],["\u{1F958}","Spanien"],["\u{1F35D}","Italien"],["\u{1FAD5}","Schweiz"],["\u{1F9C7}","Belgien"],["\u{1F32F}","Mexiko"],["\u{1F369}","USA"],["\u{1F96E}","China"],["\u{1F359}","Japan"]];
   var i=~~(rng()*P.length);var cor=P[i];
   var ld=[];P.forEach(function(x){if(x[1]!==cor[1]&&ld.indexOf(x[1])<0)ld.push(x[1]);});
   ld=sh(ld).slice(0,3);
