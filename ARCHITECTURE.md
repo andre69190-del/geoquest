@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 572 (Stand: Juni 2026)
+**Version:** Phase 573 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.16 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1269,6 +1269,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **570** | patch_570.py | **mythologie von 40 auf 88 erweitert: 48 bekannte Gottheiten/Wesen (Griechisch/Nordisch/Aegyptisch/Roemisch/Japanisch/Aztekisch/Mesopotamisch + neue Kultur Keltisch). Stabile, belegte Fakten; Koordinaten = Kultur-Region wie Bestandsdaten. Bereichert myth_match_domain/kultur/typ/land + myth_pin_herkunft.** |
 | **571** | patch_571.py | **Spielstand Export/Import (Schulen/Offline): Einstellungen -> 'Spielstand sichern' (alle gq_/geoquest_-Keys als geoquest-spielstand.json herunterladen) + 'Spielstand laden' (JSON einlesen, Keys zuruckschreiben, reload). Kein Cloud-Konto noetig - ideal fuer Kiosk-Modus, der localStorage loescht. i18n DE/EN/PL.** |
 | **572** | patch_572.py | **architektur von 40 auf 55 erweitert (>=50 erreicht): 15 weltbekannte Bauwerke web-verifiziert (Koordinaten/Hoehe/Baujahr per Subagent aus Wikipedia; Hangzhou-Bay-Bruecke ohne belegte Hoehe ausgelassen - keine Schaetzung). Inkl. eindeutiger Staedte fuer arch_match_stadt. Willis Tower, The Shard, Skytree, Chrysler, Merdeka 118, Petersdom, Brandenburger Tor, Pisa, Cheops-Pyramide, Big Ben u.a.** |
+| **573** | patch_573.py | **geschichte von 66 auf 80 (Ideal erreicht): 5 weitere Reiche (Xin, Oestliche Jin, Chagatai-Khanat, Koektuerken, Uigurisches Kaganat) + 9 bekannte Ereignisse/Schlachten/Epochen (Reformation, Dt. Wiedervereinigung, D-Day, Cannae, Issos, Gaugamela, Wiener Kongress, Mauerbau, Dampfmaschine). Stabile Fakten, ausdehnung/zentrum=null wo nicht zutreffend.** |
 
 ---
 

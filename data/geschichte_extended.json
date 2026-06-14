@@ -526,5 +526,117 @@
     "ausdehnung_mio_km2": 2.8,
     "zentrum_hauptstadt": "Ekbatana",
     "schluesselfigur": "Kyaxares"
+  },
+  "Xin-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 9,
+    "dauer_jahre": 14,
+    "ausdehnung_mio_km2": 4.7,
+    "zentrum_hauptstadt": "Chang'an",
+    "schluesselfigur": "Wang Mang"
+  },
+  "Östliche Jin-Dynastie": {
+    "kategorie": "Imperium",
+    "start_jahr": 317,
+    "dauer_jahre": 103,
+    "ausdehnung_mio_km2": 2.8,
+    "zentrum_hauptstadt": "Jiankang",
+    "schluesselfigur": "Sima Rui"
+  },
+  "Chagatai-Khanat": {
+    "kategorie": "Imperium",
+    "start_jahr": 1226,
+    "dauer_jahre": 121,
+    "ausdehnung_mio_km2": 3.5,
+    "zentrum_hauptstadt": "Almaliq",
+    "schluesselfigur": "Tschagatai Khan"
+  },
+  "Köktürken-Reich": {
+    "kategorie": "Imperium",
+    "start_jahr": 552,
+    "dauer_jahre": 51,
+    "ausdehnung_mio_km2": 6.0,
+    "zentrum_hauptstadt": "Ötüken",
+    "schluesselfigur": "Bumin Khan"
+  },
+  "Uigurisches Kaganat": {
+    "kategorie": "Imperium",
+    "start_jahr": 744,
+    "dauer_jahre": 96,
+    "ausdehnung_mio_km2": 3.1,
+    "zentrum_hauptstadt": "Ordu-Baliq",
+    "schluesselfigur": "Bayanchur Khan"
+  },
+  "Reformation": {
+    "kategorie": "Epoche",
+    "start_jahr": 1517,
+    "dauer_jahre": 131,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Wittenberg",
+    "schluesselfigur": "Martin Luther"
+  },
+  "Deutsche Wiedervereinigung": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1990,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Helmut Kohl"
+  },
+  "Landung in der Normandie": {
+    "kategorie": "Schlacht",
+    "start_jahr": 1944,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Dwight D. Eisenhower"
+  },
+  "Schlacht von Cannae": {
+    "kategorie": "Schlacht",
+    "start_jahr": -216,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Hannibal"
+  },
+  "Schlacht bei Issos": {
+    "kategorie": "Schlacht",
+    "start_jahr": -333,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Alexander der Große"
+  },
+  "Schlacht von Gaugamela": {
+    "kategorie": "Schlacht",
+    "start_jahr": -331,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Alexander der Große"
+  },
+  "Wiener Kongress": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1814,
+    "dauer_jahre": 1,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": "Wien",
+    "schluesselfigur": "Klemens von Metternich"
+  },
+  "Berliner Mauerbau": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1961,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "Walter Ulbricht"
+  },
+  "Erfindung der Dampfmaschine": {
+    "kategorie": "Ereignis",
+    "start_jahr": 1769,
+    "dauer_jahre": null,
+    "ausdehnung_mio_km2": null,
+    "zentrum_hauptstadt": null,
+    "schluesselfigur": "James Watt"
   }
 }

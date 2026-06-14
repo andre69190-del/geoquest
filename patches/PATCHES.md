@@ -721,3 +721,7 @@ Einstellungen: **„Spielstand sichern"** (lädt alle `gq_`/`geoquest_`-localSto
 ## Phase 572 — architektur: +15 Bauwerke (web-verifiziert) → 55
 **Datum:** 2026-06-13
 `architektur.json` 40→55 (≥50-Minimum erreicht): 15 weltbekannte Bauwerke, Koordinaten/Höhe/Baujahr per Subagent aus Wikipedia verifiziert (Hangzhou-Bay-Brücke ohne belegte Höhe weggelassen — keine Schätzung). Eindeutige Städte ergänzt (→ arch_match_stadt). Damit alle geo-relevanten Datensätze ≥50 (geschichte 66, mythologie 88, architektur 55; übrige bereits 80). wirtschaft/medizin bewusst nicht (volatil/kein Geo).
+
+## Phase 573 — geschichte: 66 → 80 (Ideal)
+**Datum:** 2026-06-13
++5 Reiche (Xin, Östl. Jin, Chagatai-Khanat, Köktürken, Uigur. Kaganat) +9 bekannte Ereignisse/Schlachten/Epochen (Reformation, Dt. Wiedervereinigung, D-Day, Cannae, Issos, Gaugamela, Wiener Kongress, Berliner Mauerbau, Dampfmaschine). Stabile Fakten; ausdehnung/zentrum=null bei Ereignissen. Datensatz-Ziel 80 erreicht.
