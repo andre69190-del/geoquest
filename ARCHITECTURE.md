@@ -2,7 +2,7 @@
 ## Systemdokumentation & Entwicklerhandbuch
 
 **Version:** Phase 575 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 6.17 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 6.17 MB | 1099 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -709,7 +709,7 @@ MODE_CATS → Kategorisierung (Welche Kachel gehört zu welcher Kategorie)
 GEN       → Dispatch-Table (mode-ID → Generator-Funktion)
 ```
 
-**Aktueller Stand:** 999 Modi, 999/999/999 — perfekte Konsistenz.
+**Aktueller Stand:** 1099 Modi, 1099/1099/1099 — perfekte Konsistenz.
 
 ### MODES-Eintrag (Beispiel)
 
@@ -1115,7 +1115,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **408** | patch_408.py | **UX: _exitToMenu() — nach Spielende kehrt die App zur Kategorie des gespielten Modus zurueck (11x Exit-Button ersetzt, smooth scroll, filterCat gesetzt)** |
 | **409** | patch_409.py | **Phase 409/410: Zuletzt-gespielt-Leiste (letzte 5 Modi, gq_recent), Gespielt-Tracking (gq_played), Fortschrittsbalken X/Y im Akkordeon-Header, Carousel-Grid-Reinit-Fix fuer Gaming** |
 | **410** | patch_410.py | **Phase 410: 3 neue Gaming-Modi — games_match_protagonist (42 Helden), games_match_pub_is_dev (0 neue Felder!), hl_games_howlong (37 Spielzeiten). protagonist+howlong_h zu games_extended. 774->777 Modi** |
-| **411** | patch_411.py | **Phase 411: wendekreis_m + zuladung_kg zu 431 Autos (91/74 gefüllt), 2 neue Auto-Modi hl_auto_wendekreis (lowerWins!) + hl_auto_zuladung. 777->999 Modi** |
+| **411** | patch_411.py | **Phase 411: wendekreis_m + zuladung_kg zu 431 Autos (91/74 gefüllt), 2 neue Auto-Modi hl_auto_wendekreis (lowerWins!) + hl_auto_zuladung. 777->1099 Modi** |
 | **412** | patch_412.py | **Bugfixes + 6 neue Konsolen-Modi: match_konsolen_handheld→Ja/Nein, timeline_auto_bj, generate_spieluebersicht Syntax-Error, hl_konsolen_ram/cpu, match_konsolen_generation/land. iOS Timeline-Bug (5 Fixes). MODES: 802→802** |
 | **413** | patch_413.py | **Neue Kategorie 'Regionale Kultur & Kulinarik': 30 D-A-CH Einträge (Speisen, Weine, Getränke, Brauchtum), 6 Modi (Pin, 3x Match Land/Region/Kategorie, 2x H/L Alkohol/Saison), validate_content + i18n DE/EN/PL. MODES: 802→802** |
 | **414** | patch_414.py | **Dual Menu Layout: Tab-Ansicht (3 Reihen × 8 Kategorien) + Settings-Toggle gq_menu_layout (accordion/tabs). CSS-Klasse tabs-mode blendet Akkordeon-Header aus, Carousel-Logik unverändert. verify: 146/146** |
@@ -1152,7 +1152,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **446** | patch_446.py | **Inseln weltweit: 80 Inseln, 7 Modi (Fläche, Einwohner, Ozean, Kontinent, Pin, Äquator, WS Grönland). verify: 191/191.** |
 | **447** | patch_447.py | **Gipfel & Berge: 80 Gipfel, 7 Modi (Höhe, Gebirge, Kontinent, Pin, Erstbesteigung, Timeline, WS Himalaya). verify: 191/191.** |
 | **448** | patch_448.py | **Klimazonen weltweit: 80 Länder, 7 Modi (Zone, Kontinent, Temp, Niederschlag, Pin, Kälter, WS Monsun). verify: 191/191.** |
-| **449** | patch_449.py | **Ozeane & Meere: 80 Gewässer, 8 Modi (Fläche, Tiefe, Typ, Kontinent, Kleiner, Seichter, Name, WS Atlantik). 999 Modi erreicht! verify: 191/191.** |
+| **449** | patch_449.py | **Ozeane & Meere: 80 Gewässer, 8 Modi (Fläche, Tiefe, Typ, Kontinent, Kleiner, Seichter, Name, WS Atlantik). 1099 Modi erreicht! verify: 191/191.** |
 | **450** | patch_450.py | **UX: Fortschritt-sichern-Button aus Gast-Header entfernt, stattdessen 👤-Login-Icon in Header-Iconreihe. 7 i18n-Keys (home_login_btn) in allen Sprachen.** |
 | **451** | patch_451.py | **UX-Personalisierung: Smart Playlists (5 thematische Strips: Geo, MINT, Natur, Kultur, Lifestyle), Kids-Modus Toggle (👦 in Header, filtert 14 nicht-kindgerechte Kategorien), implizite Personalisierung (Kategorie-Tracking, Empfohlen-Strip ab 10 Spielen). i18n DE/EN/PL.** |
 | **452** | patch_452.py | **Personalisierung Portion 1+2: CAT_META (audience kids/teens/adults + interests je Kategorie) als Filter-Basis. Onboarding zu 4 Schritten erweitert (Wer spielt? / Interessen-Mehrfachauswahl / Wie viel Zeit?) statt Schwierigkeits-Auswahl; speichert gq_audience/gq_interests/gq_time; ueberspringbar; i18n DE/EN/PL. eu_plates (Kennzeichen-Sammeln) auf alle Altersstufen getaggt. Noch ohne Filterwirkung (folgt). verify 191/191, validate 0 Warnings.** |

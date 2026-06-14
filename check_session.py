@@ -114,7 +114,7 @@ if os.path.exists(landing_path):
     with open(landing_path, 'rb') as f:
         landing_raw = f.read()
     landing = landing_raw.decode('utf-8', errors='replace')
-    m_land = re.search(r'(\d{3}) (?:Spielmodi|Modi)', landing)
+    m_land = re.search(r'(\d{3,4}) (?:Spielmodi|Modi)', landing)
     modi_land = int(m_land.group(1)) if m_land else 0
     if modi_land == actual_modi:
         ok(f"landing.html: {actual_modi} Modi korrekt")
@@ -140,7 +140,7 @@ ss_path = os.path.join(BASE, 'CLAUDE_SESSION_STARTER.md')
 if os.path.exists(ss_path):
     with open(ss_path, encoding='utf-8') as f:
         ss = f.read()
-    m_ss_modi = re.search(r'\| Spielmodi \| \*\*(\d+)\*\*', ss)
+    m_ss_modi = re.search(r'(\d+) Spielmodi', ss)
     modi_ss = int(m_ss_modi.group(1)) if m_ss_modi else 0
     if modi_ss == actual_modi:
         ok(f"CLAUDE_SESSION_STARTER.md: {actual_modi} Modi korrekt")

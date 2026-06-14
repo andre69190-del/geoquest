@@ -733,3 +733,7 @@ Einstellungen: **„Spielstand sichern"** (lädt alle `gq_`/`geoquest_`-localSto
 ## Phase 575 — medizin: 6 → 8 Spiele
 **Datum:** 2026-06-13
 Letzte dünne Rubrik aufgestockt: `med_match_kategorie` (Organ/Knochen/Meilenstein/Krankheit) + `med_match_entdecker` (Entdecker/Forscher) aus vorhandenen Feldern. medizin 6→8. Beide non-geo (in NON_GEO_IDS). Damit haben alle Rubriken ≥8 Spiele (Ausnahme astronomie 7 — Weltraum, nicht sinnvoll erweiterbar).
+
+## Phase 576 — Doku-Sync: alle Modi-Zahlen auf 1099
+**Datum:** 2026-06-13
+ARCHITECTURE.md (999) + GeoQuest_Website_Konzept.md (999/718) auf **1099** aktualisiert (post_phase-Lücke kompensiert). check_session.py: zwei Fehlalarm-Regexe gefixt (landing `\d{3}`→`\d{3,4}`; Session-Starter sucht jetzt „N Spielmodi" statt veraltetem Tabellenformat). Alle Dokumente-Sync-Checks grün.
