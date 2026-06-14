@@ -421,5 +421,136 @@
     "spannweite_m": null,
     "laenge_m": null,
     "stadt": "Schwangau"
+  },
+  "Willis Tower": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Vereinigte Staaten",
+    "lat": 41.879,
+    "lng": -87.636,
+    "baujahr": 1974,
+    "hoehe_m": 442,
+    "stadt": "Chicago"
+  },
+  "The Shard": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Vereinigtes Königreich",
+    "lat": 51.505,
+    "lng": -0.087,
+    "baujahr": 2012,
+    "hoehe_m": 310,
+    "stadt": "London"
+  },
+  "Tokyo Skytree": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Japan",
+    "lat": 35.71,
+    "lng": 139.811,
+    "baujahr": 2012,
+    "hoehe_m": 634,
+    "stadt": "Tokio"
+  },
+  "Chrysler Building": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Vereinigte Staaten",
+    "lat": 40.752,
+    "lng": -73.975,
+    "baujahr": 1930,
+    "hoehe_m": 319,
+    "stadt": "New York"
+  },
+  "Merdeka 118": {
+    "kategorie": "Wolkenkratzer",
+    "land": "Malaysia",
+    "lat": 3.142,
+    "lng": 101.701,
+    "baujahr": 2023,
+    "hoehe_m": 679,
+    "stadt": "Kuala Lumpur"
+  },
+  "Storebælt-Brücke": {
+    "kategorie": "Brücke",
+    "land": "Dänemark",
+    "lat": 55.342,
+    "lng": 11.036,
+    "baujahr": 1998,
+    "hoehe_m": 254
+  },
+  "Vasco-da-Gama-Brücke": {
+    "kategorie": "Brücke",
+    "land": "Portugal",
+    "lat": 38.762,
+    "lng": -9.043,
+    "baujahr": 1998,
+    "hoehe_m": 148
+  },
+  "Glen-Canyon-Staudamm": {
+    "kategorie": "Staudamm",
+    "land": "Vereinigte Staaten",
+    "lat": 36.938,
+    "lng": -111.484,
+    "baujahr": 1966,
+    "hoehe_m": 220
+  },
+  "Borobudur": {
+    "kategorie": "Tempel",
+    "land": "Indonesien",
+    "lat": -7.608,
+    "lng": 110.204,
+    "baujahr": 833,
+    "hoehe_m": 35
+  },
+  "Petersdom": {
+    "kategorie": "Tempel",
+    "land": "Vatikanstadt",
+    "lat": 41.902,
+    "lng": 12.453,
+    "baujahr": 1626,
+    "hoehe_m": 137,
+    "stadt": "Vatikanstadt"
+  },
+  "Brandenburger Tor": {
+    "kategorie": "Denkmal",
+    "land": "Deutschland",
+    "lat": 52.516,
+    "lng": 13.378,
+    "baujahr": 1791,
+    "hoehe_m": 26,
+    "stadt": "Berlin"
+  },
+  "Schiefer Turm von Pisa": {
+    "kategorie": "Denkmal",
+    "land": "Italien",
+    "lat": 43.723,
+    "lng": 10.396,
+    "baujahr": 1372,
+    "hoehe_m": 56,
+    "stadt": "Pisa"
+  },
+  "Cheops-Pyramide": {
+    "kategorie": "Denkmal",
+    "land": "Ägypten",
+    "lat": 29.979,
+    "lng": 31.134,
+    "baujahr": -2600,
+    "hoehe_m": 147,
+    "stadt": "Gizeh"
+  },
+  "Elizabeth Tower": {
+    "kategorie": "Denkmal",
+    "land": "Vereinigtes Königreich",
+    "lat": 51.501,
+    "lng": -0.125,
+    "baujahr": 1859,
+    "hoehe_m": 96,
+    "stadt": "London"
+  },
+  "Atomium": {
+    "kategorie": "Denkmal",
+    "land": "Belgien",
+    "lat": 50.895,
+    "lng": 4.341,
+    "baujahr": 1958,
+    "hoehe_m": 102,
+    "stadt": "Brüssel"
   }
 }

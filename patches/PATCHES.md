@@ -717,3 +717,7 @@ landing.html: H1-Textextraktion „kennstdu" gefixt (Leerzeichen vor `<br>` → 
 ## Phase 571 — Spielstand Export/Import (Schule/Offline)
 **Datum:** 2026-06-13
 Einstellungen: **„Spielstand sichern"** (lädt alle `gq_`/`geoquest_`-localStorage-Keys als `geoquest-spielstand.json`) + **„Spielstand laden"** (liest JSON, schreibt Keys zurück, reload). Für Schul-/Kiosk-PCs, die beim Schließen den localStorage löschen — kein Cloud-Konto nötig. `_exportProgress`/`_importProgress`, i18n DE/EN/PL.
+
+## Phase 572 — architektur: +15 Bauwerke (web-verifiziert) → 55
+**Datum:** 2026-06-13
+`architektur.json` 40→55 (≥50-Minimum erreicht): 15 weltbekannte Bauwerke, Koordinaten/Höhe/Baujahr per Subagent aus Wikipedia verifiziert (Hangzhou-Bay-Brücke ohne belegte Höhe weggelassen — keine Schätzung). Eindeutige Städte ergänzt (→ arch_match_stadt). Damit alle geo-relevanten Datensätze ≥50 (geschichte 66, mythologie 88, architektur 55; übrige bereits 80). wirtschaft/medizin bewusst nicht (volatil/kein Geo).

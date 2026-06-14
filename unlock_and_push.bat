@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 571. Spielstand Export/Import (Schulen/Offline): Einstellungen -> 'Spielstand sichern' (alle gq_/geoquest_-Keys als geoquest-spielstand.json herunterladen) + 'Spielstand laden' (JSON einlesen, Keys zuruckschreiben, reload). Kein Cloud-Konto noetig - ideal fuer Kiosk-Modus, der localStorage loescht. i18n DE/EN/PL.. verify: 196/196."
+git commit -m "Content: Phase 572. architektur von 40 auf 55 erweitert (>=50 erreicht): 15 weltbekannte Bauwerke web-verifiziert (Koordinaten/Hoehe/Baujahr per Subagent aus Wikipedia; Hangzhou-Bay-Bruecke ohne belegte Hoehe ausgelassen - keine Schaetzung). Inkl. eindeutiger Staedte fuer arch_match_stadt. Willis Tower, The Shard, Skytree, Chrysler, Merdeka 118, Petersdom, Brandenburger Tor, Pisa, Cheops-Pyramide, Big Ben u.a.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
