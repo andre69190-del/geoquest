@@ -669,3 +669,7 @@ Geo/Allgemeinwissen-Banner sitzt jetzt **direkt unter der Begrüßungszeile** (i
 ## Phase 559 — Geo-Konsistenz-Feinschliff + Spielübersicht-Split
 **Datum:** 2026-06-13
 „Zufall" (`playRandomGame`) zieht nur noch aus dem aktuellen Bereich (Geo bzw. Allgemeinwissen). 19 alte `gen.py.bak_*` entfernt. Session-Starter um Doku-Note zum Geo-Split (`NON_GEO_IDS`) ergänzt. **GeoQuest_Spielübersicht.html** jetzt nach Bereichen getrennt: „🌍 GeoQuest" (549) und „🧠 Allgemeinwissen" (545), je nach Kategorie gruppiert, plus Hero-Zähler.
+
+## Phase 560 — Spielübersicht: „Datenbasis" ehrlich (kein falsches „—")
+**Datum:** 2026-06-13
+`generate_spieluebersicht.py`: Fallback-Zähler für Modi, die der statische Parser bisher als „—" zeigte. Erkennt COUNTRIES-basierte (→ 181) und Inline-Array-Generatoren (z. B. essen_land 9, tiere_kontinent 12) und ergänzt die Direktreferenz-Dispatchform `id:genFn`. Nicht statisch zählbare, aber per Smoke-Test geprüfte Modi zeigen jetzt „dyn" (grau) statt rotem „—". **0 rote „—"** (vorher 181). Legende ergänzt. (Reine Tooling-Änderung, kein App-Build betroffen.)

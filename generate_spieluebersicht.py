@@ -162,6 +162,8 @@ def _parse_gen_dispatch(src):
         if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
     for m in re.finditer(r'(\w+)\s*:\s*\(\)\s*=>\s*\{\s*(\w+)\s*\(\s*"([^"]*)"[,\s]', src):
         if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': m.group(3)}
+    for m in re.finditer(r'(\w+)\s*:\s*(gen[A-Za-z0-9_]+)\s*[,}]', src):
+        if m.group(1) not in d: d[m.group(1)] = {'fn': m.group(2), 'key': ''}
     return d
 
 
@@ -440,8 +442,49 @@ def _mode_kidsafe(mid, title, group, audmap, l1_set=None):
     if 'kids' not in aud: return False
     return _mode_level(mid, title, l1_set) <= 2
 
+def _countries_n(src):
+    m = re.search(r'const COUNTRIES\s*=\s*\[', src)
+    if not m: return 0
+    start = m.end(); depth = 1; i = start
+    while i < len(src) and depth > 0:
+        ch = src[i]
+        if ch == '[': depth += 1
+        elif ch == ']': depth -= 1
+        i += 1
+    return len(re.findall(r'\bcc:"', src[start:i]))
+
+def _fallback_count(fn, src, countries_n):
+    if not fn: return None
+    m = re.search(r'function\s+' + re.escape(fn) + r'\s*\(', src)
+    if not m: return None
+    bstart = src.find('{', m.end()-1)
+    if bstart < 0: return None
+    depth = 0; i = bstart
+    while i < len(src):
+        if src[i] == '{': depth += 1
+        elif src[i] == '}':
+            depth -= 1
+            if depth == 0: break
+        i += 1
+    body = src[bstart:i+1]
+    if 'COUNTRIES' in body and countries_n: return countries_n
+    am = re.search(r'=\s*\[', body)
+    if am:
+        s = body.find('[', am.start()); d = 0; j = s; commas = 0
+        while j < len(body):
+            ch = body[j]
+            if ch == '[': d += 1
+            elif ch == ']':
+                d -= 1
+                if d == 0: break
+            elif ch == ',' and d == 1: commas += 1
+            j += 1
+        if d == 0 and commas > 0: return commas + 1
+    return None
+
 def generate(phase=269, n_tests=90):
     src       = open(GEN,'r',encoding='utf-8').read()
+    COUNTRIES_N = _countries_n(src)
     modes     = _parse_modes(src)
     _ng       = re.search(r'const NON_GEO_IDS=new Set\(\[(.*?)\]\)', src)
     NON_GEO   = set(re.findall(r'"([^"]+)"', _ng.group(1))) if _ng else set()
@@ -499,10 +542,15 @@ def generate(phase=269, n_tests=90):
                     b += '<span title="kindgeeignet" style="margin-left:.35rem;font-size:.85rem">\U0001F9D2</span>'
                     kids_n += 1
                 cs, rn = _get_count(m['id'], dispatch, store, sport_poi)
-                total_items += rn
+                if cs == '\u2014':
+                    _fb = _fallback_count((dispatch.get(m['id']) or {}).get('fn'), src, COUNTRIES_N)
+                    if _fb: cs, rn = f'{_fb} (dyn)', _fb
+                    else:   cs, rn = 'dyn', -1
+                total_items += max(rn, 0)
                 if cs == '\u2014': missing += 1
                 sub = f'<div class="sub">{d}</div>'
-                if rn==0:   cc='#ef4444'
+                if rn==-1:  cc='#64748b'
+                elif rn==0: cc='#ef4444'
                 elif rn==1: cc='#c084fc'
                 elif rn<20: cc='#fb923c'
                 else:       cc='#94a3b8'
@@ -527,6 +575,7 @@ def generate(phase=269, n_tests=90):
                    f' {lbl} <strong style="color:{fg}">{cnt}</strong></span>')
     legend_html = '\n  '.join(leg)
     legend_html += '\n  <span class="lgi"><span style="background:#10b981;color:#fff;border-radius:4px;padding:.1rem .3rem">🧒</span> Kindgeeignet <strong style="color:#10b981">'+str(kids_n)+'</strong> / '+str(total_modes)+'</span>'
+    legend_html += '\n  <span class="lgi"><span style="color:#64748b">dyn</span> = Laufzeit-generiert (COUNTRIES/Inline), per Test gepr\u00fcft</span>'
 
     H = []
     H.append('<!DOCTYPE html><html lang="de"><head>')
