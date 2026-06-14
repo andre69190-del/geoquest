@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 578. tiere_kontinent von 12 auf 17: 5 eindeutig einem Kontinent zuzuordnende Tiere ergaenzt (Nilpferd/Gorilla->Afrika, Pfau/Orang-Utan->Asien, Truthahn->Nordamerika). Nur Single-Kontinent-Tiere (keine mehrdeutigen wie Nashorn/Leopard). essen_land vorher 9->16.. verify: 196/196."
+git commit -m "Content: Phase 579. 4b-Kinderspiele aufgestockt (akkurate Inline-Items): tiere_haustier_wild 12->18, tiere_wasser_land 12->17, tiere_gross_klein 12->17, pflanze_farbe 8->14 (neue Farben blau/orange), pflanze_essbar 8->12. Nur eindeutige Tiere/Pflanzen.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

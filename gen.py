@@ -17733,7 +17733,7 @@ function genTiereGrossKleinQ(){
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
   // pairs: [biggerEmoji, smallerEmoji, lvl]
   var pairs=[
-    {a:'🐘',b:'🐭',big:'a',lvl:1},{a:'🦁',b:'🐈',big:'a',lvl:1},
+    {a:'🦒',b:'🐁',big:'a',lvl:2},{a:'🐻',b:'🐿️',big:'a',lvl:2},{a:'🐅',b:'🐈',big:'a',lvl:2},{a:'🐳',b:'🐠',big:'a',lvl:2},{a:'🦍',b:'🐒',big:'a',lvl:2},{a:'🐘',b:'🐭',big:'a',lvl:1},{a:'🦁',b:'🐈',big:'a',lvl:1},
     {a:'🐋',b:'🐟',big:'a',lvl:1},{a:'🦒',b:'🐇',big:'a',lvl:1},
     {a:'🐊',b:'🦎',big:'a',lvl:1},{a:'🦅',b:'🐦',big:'a',lvl:1},
     {a:'🦛',b:'🐕',big:'a',lvl:2},{a:'🐆',b:'🐈',big:'a',lvl:2},
@@ -17889,7 +17889,7 @@ function genPflanzeHabitat(){
 function genPflanzeFarbe(){
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
   var items=[
-    {e:'🌹',c:'rot'},{e:'🌻',c:'gelb'},{e:'💐',c:'bunt'},{e:'🌸',c:'rosa'},
+    {e:'🌵',c:'gruen'},{e:'🌽',c:'gelb'},{e:'🍆',c:'lila'},{e:'🫐',c:'blau'},{e:'🥕',c:'orange'},{e:'🍓',c:'rot'},{e:'🌹',c:'rot'},{e:'🌻',c:'gelb'},{e:'💐',c:'bunt'},{e:'🌸',c:'rosa'},
     {e:'🌷',c:'rot'},{e:'🍀',c:'gruen'},{e:'🌼',c:'gelb'},{e:'💜',c:'lila'},
   ];
   var allC=['rot','gelb','rosa','bunt','gruen','lila','weiss','orange'];
@@ -17901,7 +17901,7 @@ function genPflanzeEssbar(){
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
   var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
   var items=[
-    {e:'🍎',k:'essbar',lvl:1},{e:'🌹',k:'nicht',lvl:1},{e:'🍋',k:'essbar',lvl:1},
+    {e:'🍓',k:'essbar',lvl:2},{e:'🥕',k:'essbar',lvl:2},{e:'🌽',k:'essbar',lvl:2},{e:'🌷',k:'nicht',lvl:2},{e:'🍎',k:'essbar',lvl:1},{e:'🌹',k:'nicht',lvl:1},{e:'🍋',k:'essbar',lvl:1},
     {e:'🌵',k:'nicht',lvl:1},{e:'🍄',k:'vorsicht',lvl:2},{e:'🌿',k:'essbar',lvl:2},
     {e:'🍇',k:'essbar',lvl:2},{e:'🌸',k:'nicht',lvl:2},
   ];
@@ -17913,7 +17913,7 @@ function genPflanzeEssbar(){
 function genTiereHaustierWild(){
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
   var items=[
-    {e:'🐶',k:'haus',lvl:1},{e:'🐱',k:'haus',lvl:1},{e:'🦁',k:'wild',lvl:1},
+    {e:'🐹',k:'haus',lvl:2},{e:'🐎',k:'haus',lvl:2},{e:'🐐',k:'haus',lvl:2},{e:'🐻',k:'wild',lvl:2},{e:'🦌',k:'wild',lvl:2},{e:'🐅',k:'wild',lvl:2},{e:'🐶',k:'haus',lvl:1},{e:'🐱',k:'haus',lvl:1},{e:'🦁',k:'wild',lvl:1},
     {e:'🐘',k:'wild',lvl:1},{e:'🐇',k:'haus',lvl:1},{e:'🦊',k:'wild',lvl:1},
     {e:'🐄',k:'haus',lvl:2},{e:'🦅',k:'wild',lvl:2},{e:'🐍',k:'wild',lvl:2},
     {e:'🐠',k:'wild',lvl:2},{e:'🐦',k:'haus',lvl:2},{e:'🐺',k:'wild',lvl:2},
@@ -17928,7 +17928,7 @@ function genTiereWasserLand(){
   function shuf(a){for(var i=a.length-1;i>0;i--){var j=~~(rng()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
   var lvl=(typeof _kidLevelMax==='function')?_kidLevelMax():2;
   var items=[
-    {e:'🐟',k:'wasser',lvl:1},{e:'🐊',k:'wasser',lvl:1},{e:'🦁',k:'land',lvl:1},
+    {e:'🐬',k:'wasser',lvl:2},{e:'🐙',k:'wasser',lvl:2},{e:'🦒',k:'land',lvl:2},{e:'🐄',k:'land',lvl:2},{e:'🦋',k:'luft',lvl:2},{e:'🦉',k:'luft',lvl:2},{e:'🐟',k:'wasser',lvl:1},{e:'🐊',k:'wasser',lvl:1},{e:'🦁',k:'land',lvl:1},
     {e:'🐘',k:'land',lvl:1},{e:'🦅',k:'luft',lvl:1},{e:'🦈',k:'wasser',lvl:1},
     {e:'🐦',k:'luft',lvl:2},{e:'🐢',k:'wasser',lvl:2},{e:'🦎',k:'land',lvl:2},
     {e:'🦭',k:'wasser',lvl:2},{e:'🦋',k:'luft',lvl:2},{e:'🐸',k:'wasser',lvl:2},

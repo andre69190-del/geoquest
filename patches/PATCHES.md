@@ -745,3 +745,7 @@ ARCHITECTURE.md (999) + GeoQuest_Website_Konzept.md (999/718) auf **1099** aktua
 ## Phase 578 — tiere_kontinent 12 → 17
 **Datum:** 2026-06-13
 +5 eindeutig einem Kontinent zugeordnete Tiere (🦛 Nilpferd, 🦍 Gorilla → Afrika; 🦚 Pfau, 🦧 Orang-Utan → Asien; 🦃 Truthahn → Nordamerika). Nur Single-Kontinent-Tiere — mehrdeutige (Nashorn, Leopard, Elefant grenzwertig) bewusst weggelassen.
+
+## Phase 579 — 4b-Kinderspiele aufgestockt
+**Datum:** 2026-06-13
+Inline-Items ergänzt (akkurat, eindeutig): tiere_haustier_wild 12→18 · tiere_wasser_land 12→17 · tiere_gross_klein 12→17 · pflanze_farbe 8→14 (neue Farben Blau/Orange via 🫐🥕) · pflanze_essbar 8→12. Logisch begrenzte 4a-Spiele (Kompass, Halbkugeln, *_oder_nicht) bewusst unverändert.
