@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 579 (Stand: Juni 2026)
+**Version:** Phase 580 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.17 MB | 1099 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1275,6 +1275,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **577** | patch_577.py | **essen_land von 9 auf 16 Gerichte erweitert (eindeutige Herkunft, Windows-sichere Emojis): +Pasta(IT), Fondue(CH), Waffel(BE), Burrito(MX), Donut(US), Mooncake(CN), Onigiri(JP). Neue Laender Schweiz/Belgien.** |
 | **578** | patch_578.py | **tiere_kontinent von 12 auf 17: 5 eindeutig einem Kontinent zuzuordnende Tiere ergaenzt (Nilpferd/Gorilla->Afrika, Pfau/Orang-Utan->Asien, Truthahn->Nordamerika). Nur Single-Kontinent-Tiere (keine mehrdeutigen wie Nashorn/Leopard). essen_land vorher 9->16.** |
 | **579** | patch_579.py | **4b-Kinderspiele aufgestockt (akkurate Inline-Items): tiere_haustier_wild 12->18, tiere_wasser_land 12->17, tiere_gross_klein 12->17, pflanze_farbe 8->14 (neue Farben blau/orange), pflanze_essbar 8->12. Nur eindeutige Tiere/Pflanzen.** |
+| **580** | patch_580.py | **Fakten-Check-Korrekturen (unabhaengiger Subagent): Stephansdom baujahr 1578->1433 (136m=Suedturm 1433; 1578 war Nordturm-Haube); Qing-Dynastie Schluesselfigur Qianlong->Hong Taiji (Gruender 1636, konsistent zu start_jahr). Tyr->Norwegen belassen (Konvention aller nordischen Gottheiten).** |
 
 ---
 

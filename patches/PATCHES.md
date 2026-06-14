@@ -749,3 +749,7 @@ ARCHITECTURE.md (999) + GeoQuest_Website_Konzept.md (999/718) auf **1099** aktua
 ## Phase 579 — 4b-Kinderspiele aufgestockt
 **Datum:** 2026-06-13
 Inline-Items ergänzt (akkurat, eindeutig): tiere_haustier_wild 12→18 · tiere_wasser_land 12→17 · tiere_gross_klein 12→17 · pflanze_farbe 8→14 (neue Farben Blau/Orange via 🫐🥕) · pflanze_essbar 8→12. Logisch begrenzte 4a-Spiele (Kompass, Halbkugeln, *_oder_nicht) bewusst unverändert.
+
+## Phase 580 — Fakten-Check-Korrekturen
+**Datum:** 2026-06-13
+Unabhängiger Subagent-Faktencheck der neuen Daten (geschichte/mythologie/architektur, Stichprobe 28): **1 Fehler korrigiert** — Stephansdom baujahr 1578→1433 (Höhe 136 m = Südturm 1433; 1578 = Nordturm-Haube). Qing-Schlüsselfigur Qianlong→Hong Taiji (Gründer 1636). Tyr→Norwegen belassen (Konvention aller nordischen Gottheiten, inkl. lat/lng). Übrige Stichprobe fehlerfrei.
