@@ -709,3 +709,7 @@ Erstes Beispiel für echte neue Geo-Felder (Aufwand statt Ableiten): `architektu
 ## Phase 569 — Landing-Page-Korrekturen (Review)
 **Datum:** 2026-06-13
 landing.html: H1-Textextraktion „kennstdu" gefixt (Leerzeichen vor `<br>` → „kennst du"); **Dateigröße vereinheitlicht** auf reale **6,2 MB** (vorher widersprüchlich 5,8 / 2,4); **Kategorien 21→30** (reale angezeigte Rubrik-Zahl) in allen Meta/Schema-Stellen; **Counter-SEO-Fallback**: Statistik zeigt statisch echte Zahlen (1097 Modi, 30 Kategorien) statt „0" (für Crawler/No-JS). Offen: GitHub-Footer-Link zeigt generisch auf github.com — echtes Repo-URL nötig (nicht erfunden).
+
+## Phase 570 — mythologie: +48 Gottheiten → 88
+**Datum:** 2026-06-13
+`mythologie.json` 40→88: 48 bekannte Gottheiten/Wesen (Griechisch, Nordisch, Ägyptisch, Römisch, Japanisch, Aztekisch, Mesopotamisch + **neue Kultur Keltisch**). Stabile, belegte Fakten; lat/lng = Kultur-Region (konsistent mit Bestand); röm. Pendant bei griech. Gottheiten. Ziel ~80 übertroffen.

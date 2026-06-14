@@ -1,42 +1,795 @@
 {
-  "Zeus": {"kategorie":"Griechisch","typ":"Gott","domain":"Donner & Himmel","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Adler","roemisches_pendant":"Jupiter"},
-  "Poseidon": {"kategorie":"Griechisch","typ":"Gott","domain":"Meer & Erdbeben","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Pferd","roemisches_pendant":"Neptun"},
-  "Hades": {"kategorie":"Griechisch","typ":"Gott","domain":"Unterwelt & Tod","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Cerberus","roemisches_pendant":"Pluto"},
-  "Athena": {"kategorie":"Griechisch","typ":"Göttin","domain":"Weisheit & Kriegsstrategie","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Eule","roemisches_pendant":"Minerva"},
-  "Aphrodite": {"kategorie":"Griechisch","typ":"Göttin","domain":"Liebe & Schönheit","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Taube","roemisches_pendant":"Venus"},
-  "Apollo": {"kategorie":"Griechisch","typ":"Gott","domain":"Sonne, Musik & Dichtung","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Wolf","roemisches_pendant":"Apollo"},
-  "Artemis": {"kategorie":"Griechisch","typ":"Göttin","domain":"Jagd & Mond","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Hirsch","roemisches_pendant":"Diana"},
-  "Hermes": {"kategorie":"Griechisch","typ":"Gott","domain":"Handel, Boten & Diebe","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Schildkröte","roemisches_pendant":"Merkur"},
-  "Ares": {"kategorie":"Griechisch","typ":"Gott","domain":"Krieg & Kampf","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Geier","roemisches_pendant":"Mars"},
-  "Medusa": {"kategorie":"Griechisch","typ":"Kreatur","domain":"Versteinernder Blick","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Schlangen","roemisches_pendant":null},
-  "Minotaurus": {"kategorie":"Griechisch","typ":"Kreatur","domain":"Labyrinth von Kreta","herkunftsland":"Griechenland","lat":35.24,"lng":25.14,"tier":null,"roemisches_pendant":null},
-  "Prometheus": {"kategorie":"Griechisch","typ":"Titan","domain":"Feuer & Menschenschöpfer","herkunftsland":"Griechenland","lat":37.97,"lng":23.72,"tier":"Adler","roemisches_pendant":null},
-  "Odin": {"kategorie":"Nordisch","typ":"Gott","domain":"Weisheit, Tod & Runen","herkunftsland":"Norwegen","lat":60.47,"lng":8.47,"tier":"Rabe","roemisches_pendant":null},
-  "Thor": {"kategorie":"Nordisch","typ":"Gott","domain":"Donner & Stärke","herkunftsland":"Norwegen","lat":60.47,"lng":8.47,"tier":"Ziege","roemisches_pendant":null},
-  "Loki": {"kategorie":"Nordisch","typ":"Gott","domain":"Täuschung & Chaos","herkunftsland":"Norwegen","lat":60.47,"lng":8.47,"tier":"Schlange","roemisches_pendant":null},
-  "Freya": {"kategorie":"Nordisch","typ":"Göttin","domain":"Liebe, Fruchtbarkeit & Magie","herkunftsland":"Schweden","lat":59.33,"lng":18.07,"tier":"Katze","roemisches_pendant":null},
-  "Fenrir": {"kategorie":"Nordisch","typ":"Kreatur","domain":"Riesenwolf, Fessel & Ragnarök","herkunftsland":"Norwegen","lat":60.47,"lng":8.47,"tier":null,"roemisches_pendant":null},
-  "Jörmungandr": {"kategorie":"Nordisch","typ":"Kreatur","domain":"Midgard-Schlange, Weltende","herkunftsland":"Norwegen","lat":60.47,"lng":8.47,"tier":"Schlange","roemisches_pendant":null},
-  "Valkyrie": {"kategorie":"Nordisch","typ":"Halbgott","domain":"Schicksalswähler der Gefallenen","herkunftsland":"Norwegen","lat":60.47,"lng":8.47,"tier":"Pferd","roemisches_pendant":null},
-  "Baldur": {"kategorie":"Nordisch","typ":"Gott","domain":"Licht, Reinheit & Schönheit","herkunftsland":"Norwegen","lat":60.47,"lng":8.47,"tier":null,"roemisches_pendant":null},
-  "Ra": {"kategorie":"Ägyptisch","typ":"Gott","domain":"Sonne & Schöpfung","herkunftsland":"Ägypten","lat":26.82,"lng":30.80,"tier":"Falke","roemisches_pendant":null},
-  "Anubis": {"kategorie":"Ägyptisch","typ":"Gott","domain":"Totenreich & Einbalsamierung","herkunftsland":"Ägypten","lat":26.82,"lng":30.80,"tier":"Schakal","roemisches_pendant":null},
-  "Isis": {"kategorie":"Ägyptisch","typ":"Göttin","domain":"Magie & Mutterschaft","herkunftsland":"Ägypten","lat":26.82,"lng":30.80,"tier":"Kuh","roemisches_pendant":null},
-  "Osiris": {"kategorie":"Ägyptisch","typ":"Gott","domain":"Unterwelt & Ernte","herkunftsland":"Ägypten","lat":26.82,"lng":30.80,"tier":"Falke","roemisches_pendant":null},
-  "Horus": {"kategorie":"Ägyptisch","typ":"Gott","domain":"Himmel & Königtum","herkunftsland":"Ägypten","lat":26.82,"lng":30.80,"tier":"Falke","roemisches_pendant":null},
-  "Thoth": {"kategorie":"Ägyptisch","typ":"Gott","domain":"Weisheit & Schrift","herkunftsland":"Ägypten","lat":26.82,"lng":30.80,"tier":"Ibis","roemisches_pendant":null},
-  "Bastet": {"kategorie":"Ägyptisch","typ":"Göttin","domain":"Schutz & Hauskatzen","herkunftsland":"Ägypten","lat":26.82,"lng":30.80,"tier":"Katze","roemisches_pendant":null},
-  "Seth": {"kategorie":"Ägyptisch","typ":"Gott","domain":"Chaos & Wüste","herkunftsland":"Ägypten","lat":26.82,"lng":30.80,"tier":"Schakal","roemisches_pendant":null},
-  "Jupiter": {"kategorie":"Römisch","typ":"Gott","domain":"Himmel & Recht","herkunftsland":"Italien","lat":41.90,"lng":12.50,"tier":"Adler","roemisches_pendant":"Zeus"},
-  "Venus": {"kategorie":"Römisch","typ":"Göttin","domain":"Liebe & Schönheit","herkunftsland":"Italien","lat":41.90,"lng":12.50,"tier":"Taube","roemisches_pendant":"Aphrodite"},
-  "Bacchus": {"kategorie":"Römisch","typ":"Gott","domain":"Wein & Ausgelassenheit","herkunftsland":"Italien","lat":41.90,"lng":12.50,"tier":"Panther","roemisches_pendant":"Dionysos"},
-  "Janus": {"kategorie":"Römisch","typ":"Gott","domain":"Anfänge & Übergänge","herkunftsland":"Italien","lat":41.90,"lng":12.50,"tier":null,"roemisches_pendant":null},
-  "Amaterasu": {"kategorie":"Japanisch","typ":"Göttin","domain":"Sonne & Schöpfung","herkunftsland":"Japan","lat":35.68,"lng":139.69,"tier":"Spiegel","roemisches_pendant":null},
-  "Susanoo": {"kategorie":"Japanisch","typ":"Gott","domain":"Sturm & Meer","herkunftsland":"Japan","lat":35.68,"lng":139.69,"tier":"Schlange","roemisches_pendant":null},
-  "Kitsune": {"kategorie":"Japanisch","typ":"Kreatur","domain":"Intelligenz & Wandlung","herkunftsland":"Japan","lat":35.68,"lng":139.69,"tier":"Fuchs","roemisches_pendant":null},
-  "Raijin": {"kategorie":"Japanisch","typ":"Gott","domain":"Donner & Blitz","herkunftsland":"Japan","lat":35.68,"lng":139.69,"tier":null,"roemisches_pendant":null},
-  "Quetzalcoatl": {"kategorie":"Aztekisch","typ":"Gott","domain":"Wind, Weisheit & Morgenröte","herkunftsland":"Mexiko","lat":19.43,"lng":-99.13,"tier":"Schlange","roemisches_pendant":null},
-  "Tlaloc": {"kategorie":"Aztekisch","typ":"Gott","domain":"Regen & Fruchtbarkeit","herkunftsland":"Mexiko","lat":19.43,"lng":-99.13,"tier":"Kröte","roemisches_pendant":null},
-  "Gilgamesh": {"kategorie":"Mesopotamisch","typ":"Halbgott","domain":"Heldentum & Unsterblichkeit","herkunftsland":"Irak","lat":33.34,"lng":44.40,"tier":"Stier","roemisches_pendant":null},
-  "Enlil": {"kategorie":"Mesopotamisch","typ":"Gott","domain":"Wind, Sturm & Luft","herkunftsland":"Irak","lat":33.34,"lng":44.40,"tier":null,"roemisches_pendant":null}
+  "Zeus": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Donner & Himmel",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Adler",
+    "roemisches_pendant": "Jupiter"
+  },
+  "Poseidon": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Meer & Erdbeben",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Pferd",
+    "roemisches_pendant": "Neptun"
+  },
+  "Hades": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Unterwelt & Tod",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Cerberus",
+    "roemisches_pendant": "Pluto"
+  },
+  "Athena": {
+    "kategorie": "Griechisch",
+    "typ": "Göttin",
+    "domain": "Weisheit & Kriegsstrategie",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Eule",
+    "roemisches_pendant": "Minerva"
+  },
+  "Aphrodite": {
+    "kategorie": "Griechisch",
+    "typ": "Göttin",
+    "domain": "Liebe & Schönheit",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Taube",
+    "roemisches_pendant": "Venus"
+  },
+  "Apollo": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Sonne, Musik & Dichtung",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Wolf",
+    "roemisches_pendant": "Apollo"
+  },
+  "Artemis": {
+    "kategorie": "Griechisch",
+    "typ": "Göttin",
+    "domain": "Jagd & Mond",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Hirsch",
+    "roemisches_pendant": "Diana"
+  },
+  "Hermes": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Handel, Boten & Diebe",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Schildkröte",
+    "roemisches_pendant": "Merkur"
+  },
+  "Ares": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Krieg & Kampf",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Geier",
+    "roemisches_pendant": "Mars"
+  },
+  "Medusa": {
+    "kategorie": "Griechisch",
+    "typ": "Kreatur",
+    "domain": "Versteinernder Blick",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Schlangen",
+    "roemisches_pendant": null
+  },
+  "Minotaurus": {
+    "kategorie": "Griechisch",
+    "typ": "Kreatur",
+    "domain": "Labyrinth von Kreta",
+    "herkunftsland": "Griechenland",
+    "lat": 35.24,
+    "lng": 25.14,
+    "tier": null,
+    "roemisches_pendant": null
+  },
+  "Prometheus": {
+    "kategorie": "Griechisch",
+    "typ": "Titan",
+    "domain": "Feuer & Menschenschöpfer",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "tier": "Adler",
+    "roemisches_pendant": null
+  },
+  "Odin": {
+    "kategorie": "Nordisch",
+    "typ": "Gott",
+    "domain": "Weisheit, Tod & Runen",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47,
+    "tier": "Rabe",
+    "roemisches_pendant": null
+  },
+  "Thor": {
+    "kategorie": "Nordisch",
+    "typ": "Gott",
+    "domain": "Donner & Stärke",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47,
+    "tier": "Ziege",
+    "roemisches_pendant": null
+  },
+  "Loki": {
+    "kategorie": "Nordisch",
+    "typ": "Gott",
+    "domain": "Täuschung & Chaos",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47,
+    "tier": "Schlange",
+    "roemisches_pendant": null
+  },
+  "Freya": {
+    "kategorie": "Nordisch",
+    "typ": "Göttin",
+    "domain": "Liebe, Fruchtbarkeit & Magie",
+    "herkunftsland": "Schweden",
+    "lat": 59.33,
+    "lng": 18.07,
+    "tier": "Katze",
+    "roemisches_pendant": null
+  },
+  "Fenrir": {
+    "kategorie": "Nordisch",
+    "typ": "Kreatur",
+    "domain": "Riesenwolf, Fessel & Ragnarök",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47,
+    "tier": null,
+    "roemisches_pendant": null
+  },
+  "Jörmungandr": {
+    "kategorie": "Nordisch",
+    "typ": "Kreatur",
+    "domain": "Midgard-Schlange, Weltende",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47,
+    "tier": "Schlange",
+    "roemisches_pendant": null
+  },
+  "Valkyrie": {
+    "kategorie": "Nordisch",
+    "typ": "Halbgott",
+    "domain": "Schicksalswähler der Gefallenen",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47,
+    "tier": "Pferd",
+    "roemisches_pendant": null
+  },
+  "Baldur": {
+    "kategorie": "Nordisch",
+    "typ": "Gott",
+    "domain": "Licht, Reinheit & Schönheit",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47,
+    "tier": null,
+    "roemisches_pendant": null
+  },
+  "Ra": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Sonne & Schöpfung",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8,
+    "tier": "Falke",
+    "roemisches_pendant": null
+  },
+  "Anubis": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Totenreich & Einbalsamierung",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8,
+    "tier": "Schakal",
+    "roemisches_pendant": null
+  },
+  "Isis": {
+    "kategorie": "Ägyptisch",
+    "typ": "Göttin",
+    "domain": "Magie & Mutterschaft",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8,
+    "tier": "Kuh",
+    "roemisches_pendant": null
+  },
+  "Osiris": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Unterwelt & Ernte",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8,
+    "tier": "Falke",
+    "roemisches_pendant": null
+  },
+  "Horus": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Himmel & Königtum",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8,
+    "tier": "Falke",
+    "roemisches_pendant": null
+  },
+  "Thoth": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Weisheit & Schrift",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8,
+    "tier": "Ibis",
+    "roemisches_pendant": null
+  },
+  "Bastet": {
+    "kategorie": "Ägyptisch",
+    "typ": "Göttin",
+    "domain": "Schutz & Hauskatzen",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8,
+    "tier": "Katze",
+    "roemisches_pendant": null
+  },
+  "Seth": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Chaos & Wüste",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8,
+    "tier": "Schakal",
+    "roemisches_pendant": null
+  },
+  "Jupiter": {
+    "kategorie": "Römisch",
+    "typ": "Gott",
+    "domain": "Himmel & Recht",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5,
+    "tier": "Adler",
+    "roemisches_pendant": "Zeus"
+  },
+  "Venus": {
+    "kategorie": "Römisch",
+    "typ": "Göttin",
+    "domain": "Liebe & Schönheit",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5,
+    "tier": "Taube",
+    "roemisches_pendant": "Aphrodite"
+  },
+  "Bacchus": {
+    "kategorie": "Römisch",
+    "typ": "Gott",
+    "domain": "Wein & Ausgelassenheit",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5,
+    "tier": "Panther",
+    "roemisches_pendant": "Dionysos"
+  },
+  "Janus": {
+    "kategorie": "Römisch",
+    "typ": "Gott",
+    "domain": "Anfänge & Übergänge",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5,
+    "tier": null,
+    "roemisches_pendant": null
+  },
+  "Amaterasu": {
+    "kategorie": "Japanisch",
+    "typ": "Göttin",
+    "domain": "Sonne & Schöpfung",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69,
+    "tier": "Spiegel",
+    "roemisches_pendant": null
+  },
+  "Susanoo": {
+    "kategorie": "Japanisch",
+    "typ": "Gott",
+    "domain": "Sturm & Meer",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69,
+    "tier": "Schlange",
+    "roemisches_pendant": null
+  },
+  "Kitsune": {
+    "kategorie": "Japanisch",
+    "typ": "Kreatur",
+    "domain": "Intelligenz & Wandlung",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69,
+    "tier": "Fuchs",
+    "roemisches_pendant": null
+  },
+  "Raijin": {
+    "kategorie": "Japanisch",
+    "typ": "Gott",
+    "domain": "Donner & Blitz",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69,
+    "tier": null,
+    "roemisches_pendant": null
+  },
+  "Quetzalcoatl": {
+    "kategorie": "Aztekisch",
+    "typ": "Gott",
+    "domain": "Wind, Weisheit & Morgenröte",
+    "herkunftsland": "Mexiko",
+    "lat": 19.43,
+    "lng": -99.13,
+    "tier": "Schlange",
+    "roemisches_pendant": null
+  },
+  "Tlaloc": {
+    "kategorie": "Aztekisch",
+    "typ": "Gott",
+    "domain": "Regen & Fruchtbarkeit",
+    "herkunftsland": "Mexiko",
+    "lat": 19.43,
+    "lng": -99.13,
+    "tier": "Kröte",
+    "roemisches_pendant": null
+  },
+  "Gilgamesh": {
+    "kategorie": "Mesopotamisch",
+    "typ": "Halbgott",
+    "domain": "Heldentum & Unsterblichkeit",
+    "herkunftsland": "Irak",
+    "lat": 33.34,
+    "lng": 44.4,
+    "tier": "Stier",
+    "roemisches_pendant": null
+  },
+  "Enlil": {
+    "kategorie": "Mesopotamisch",
+    "typ": "Gott",
+    "domain": "Wind, Sturm & Luft",
+    "herkunftsland": "Irak",
+    "lat": 33.34,
+    "lng": 44.4,
+    "tier": null,
+    "roemisches_pendant": null
+  },
+  "Hera": {
+    "kategorie": "Griechisch",
+    "typ": "Göttin",
+    "domain": "Ehe & Familie",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Juno"
+  },
+  "Demeter": {
+    "kategorie": "Griechisch",
+    "typ": "Göttin",
+    "domain": "Ackerbau & Ernte",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Ceres"
+  },
+  "Hephaistos": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Schmiedekunst & Feuer",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Vulcanus"
+  },
+  "Dionysos": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Wein & Rausch",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Bacchus"
+  },
+  "Persephone": {
+    "kategorie": "Griechisch",
+    "typ": "Göttin",
+    "domain": "Unterwelt & Frühling",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Proserpina"
+  },
+  "Kronos": {
+    "kategorie": "Griechisch",
+    "typ": "Titan",
+    "domain": "Zeit",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Saturn"
+  },
+  "Eros": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Liebe & Begehren",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Cupido"
+  },
+  "Nike": {
+    "kategorie": "Griechisch",
+    "typ": "Göttin",
+    "domain": "Sieg",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Victoria"
+  },
+  "Pan": {
+    "kategorie": "Griechisch",
+    "typ": "Gott",
+    "domain": "Natur & Hirten",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72,
+    "roemisches_pendant": "Faunus"
+  },
+  "Zerberus": {
+    "kategorie": "Griechisch",
+    "typ": "Kreatur",
+    "domain": "Wächter der Unterwelt",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72
+  },
+  "Pegasus": {
+    "kategorie": "Griechisch",
+    "typ": "Kreatur",
+    "domain": "Geflügeltes Pferd",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72
+  },
+  "Zentaur": {
+    "kategorie": "Griechisch",
+    "typ": "Kreatur",
+    "domain": "Mischwesen Mensch-Pferd",
+    "herkunftsland": "Griechenland",
+    "lat": 37.97,
+    "lng": 23.72
+  },
+  "Tyr": {
+    "kategorie": "Nordisch",
+    "typ": "Gott",
+    "domain": "Krieg & Recht",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47
+  },
+  "Heimdall": {
+    "kategorie": "Nordisch",
+    "typ": "Gott",
+    "domain": "Wächter von Asgard",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47
+  },
+  "Frigg": {
+    "kategorie": "Nordisch",
+    "typ": "Göttin",
+    "domain": "Ehe & Weissagung",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47
+  },
+  "Hel": {
+    "kategorie": "Nordisch",
+    "typ": "Göttin",
+    "domain": "Totenwelt",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47
+  },
+  "Freyr": {
+    "kategorie": "Nordisch",
+    "typ": "Gott",
+    "domain": "Fruchtbarkeit & Ernte",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47
+  },
+  "Skadi": {
+    "kategorie": "Nordisch",
+    "typ": "Göttin",
+    "domain": "Jagd & Winter",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47
+  },
+  "Sleipnir": {
+    "kategorie": "Nordisch",
+    "typ": "Kreatur",
+    "domain": "Achtbeiniges Pferd Odins",
+    "herkunftsland": "Norwegen",
+    "lat": 60.47,
+    "lng": 8.47
+  },
+  "Hathor": {
+    "kategorie": "Ägyptisch",
+    "typ": "Göttin",
+    "domain": "Liebe & Musik",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8
+  },
+  "Sobek": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Krokodil & Nil",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8
+  },
+  "Sekhmet": {
+    "kategorie": "Ägyptisch",
+    "typ": "Göttin",
+    "domain": "Krieg & Heilung",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8
+  },
+  "Geb": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Erde",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8
+  },
+  "Nut": {
+    "kategorie": "Ägyptisch",
+    "typ": "Göttin",
+    "domain": "Himmel",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8
+  },
+  "Ptah": {
+    "kategorie": "Ägyptisch",
+    "typ": "Gott",
+    "domain": "Schöpfung & Handwerk",
+    "herkunftsland": "Ägypten",
+    "lat": 26.82,
+    "lng": 30.8
+  },
+  "Mars": {
+    "kategorie": "Römisch",
+    "typ": "Gott",
+    "domain": "Krieg",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5
+  },
+  "Neptun": {
+    "kategorie": "Römisch",
+    "typ": "Gott",
+    "domain": "Meer",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5
+  },
+  "Pluto": {
+    "kategorie": "Römisch",
+    "typ": "Gott",
+    "domain": "Unterwelt",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5
+  },
+  "Minerva": {
+    "kategorie": "Römisch",
+    "typ": "Göttin",
+    "domain": "Weisheit & Handwerk",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5
+  },
+  "Diana": {
+    "kategorie": "Römisch",
+    "typ": "Göttin",
+    "domain": "Jagd & Mond",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5
+  },
+  "Merkur": {
+    "kategorie": "Römisch",
+    "typ": "Gott",
+    "domain": "Handel & Boten",
+    "herkunftsland": "Italien",
+    "lat": 41.9,
+    "lng": 12.5
+  },
+  "Tsukuyomi": {
+    "kategorie": "Japanisch",
+    "typ": "Gott",
+    "domain": "Mond",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69
+  },
+  "Izanagi": {
+    "kategorie": "Japanisch",
+    "typ": "Gott",
+    "domain": "Schöpfung",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69
+  },
+  "Izanami": {
+    "kategorie": "Japanisch",
+    "typ": "Göttin",
+    "domain": "Schöpfung & Tod",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69
+  },
+  "Inari": {
+    "kategorie": "Japanisch",
+    "typ": "Gott",
+    "domain": "Reis & Füchse",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69
+  },
+  "Ryujin": {
+    "kategorie": "Japanisch",
+    "typ": "Gott",
+    "domain": "Meer & Drachen",
+    "herkunftsland": "Japan",
+    "lat": 35.68,
+    "lng": 139.69
+  },
+  "Huitzilopochtli": {
+    "kategorie": "Aztekisch",
+    "typ": "Gott",
+    "domain": "Krieg & Sonne",
+    "herkunftsland": "Mexiko",
+    "lat": 19.43,
+    "lng": -99.13
+  },
+  "Tezcatlipoca": {
+    "kategorie": "Aztekisch",
+    "typ": "Gott",
+    "domain": "Nacht & Schicksal",
+    "herkunftsland": "Mexiko",
+    "lat": 19.43,
+    "lng": -99.13
+  },
+  "Mictlantecuhtli": {
+    "kategorie": "Aztekisch",
+    "typ": "Gott",
+    "domain": "Totenwelt",
+    "herkunftsland": "Mexiko",
+    "lat": 19.43,
+    "lng": -99.13
+  },
+  "Marduk": {
+    "kategorie": "Mesopotamisch",
+    "typ": "Gott",
+    "domain": "Schöpfung & Sturm",
+    "herkunftsland": "Irak",
+    "lat": 33.34,
+    "lng": 44.4
+  },
+  "Ishtar": {
+    "kategorie": "Mesopotamisch",
+    "typ": "Göttin",
+    "domain": "Liebe & Krieg",
+    "herkunftsland": "Irak",
+    "lat": 33.34,
+    "lng": 44.4
+  },
+  "Anu": {
+    "kategorie": "Mesopotamisch",
+    "typ": "Gott",
+    "domain": "Himmel",
+    "herkunftsland": "Irak",
+    "lat": 33.34,
+    "lng": 44.4
+  },
+  "Tiamat": {
+    "kategorie": "Mesopotamisch",
+    "typ": "Kreatur",
+    "domain": "Urmeer-Drache",
+    "herkunftsland": "Irak",
+    "lat": 33.34,
+    "lng": 44.4
+  },
+  "Lugh": {
+    "kategorie": "Keltisch",
+    "typ": "Gott",
+    "domain": "Licht & Handwerk",
+    "herkunftsland": "Irland",
+    "lat": 53.41,
+    "lng": -8.24
+  },
+  "Dagda": {
+    "kategorie": "Keltisch",
+    "typ": "Gott",
+    "domain": "Fruchtbarkeit & Magie",
+    "herkunftsland": "Irland",
+    "lat": 53.41,
+    "lng": -8.24
+  },
+  "Morrigan": {
+    "kategorie": "Keltisch",
+    "typ": "Göttin",
+    "domain": "Krieg & Schicksal",
+    "herkunftsland": "Irland",
+    "lat": 53.41,
+    "lng": -8.24
+  },
+  "Brigid": {
+    "kategorie": "Keltisch",
+    "typ": "Göttin",
+    "domain": "Feuer & Dichtung",
+    "herkunftsland": "Irland",
+    "lat": 53.41,
+    "lng": -8.24
+  },
+  "Cernunnos": {
+    "kategorie": "Keltisch",
+    "typ": "Gott",
+    "domain": "Natur & Tiere",
+    "herkunftsland": "Irland",
+    "lat": 53.41,
+    "lng": -8.24
+  }
 }

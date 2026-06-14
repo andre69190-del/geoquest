@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 568. geschichte_extended von 40 auf 66 erweitert: 26 grosse Reiche web-verifiziert (Spitzenflaeche aus Wikipedia 'List of largest empires'; Datum/Hauptstadt/Schluesselfigur stabile Fakten) - Qing, Spanisches/Franzoesisches Kolonialreich, Umayyaden, Yuan, Tang, Maurya, Sassaniden, Timuriden, Safawiden, Song, Sui u.a. Bereichert hist_match_zentrum/hl_hist_*.. verify: 196/196."
+git commit -m "Content: Phase 570. mythologie von 40 auf 88 erweitert: 48 bekannte Gottheiten/Wesen (Griechisch/Nordisch/Aegyptisch/Roemisch/Japanisch/Aztekisch/Mesopotamisch + neue Kultur Keltisch). Stabile, belegte Fakten; Koordinaten = Kultur-Region wie Bestandsdaten. Bereichert myth_match_domain/kultur/typ/land + myth_pin_herkunft.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
