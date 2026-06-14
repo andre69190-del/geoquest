@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 564. inseln + gipfel auf 8 Geo-Spiele aufgefuellt: neue Modi insel_match_land + gipfel_match_land (In welchem Land liegt diese Insel/dieser Gipfel?) via genInselnMatchExt/genGipfelMatchExt. Damit alle Geo-Rubriken >=8 ausser astronomie (7, nicht geo-mergebar). 1094->1096.. verify: 196/196."
+git commit -m "Content: Phase 566. Neues Geo-Feld (echte Daten): architektur.json um 'stadt' fuer alle 40 Bauwerke erweitert (akkurat, weltbekannt) + neues Spiel arch_match_stadt 'In welcher Stadt steht dieses Bauwerk?'. Beweis: neue Felder ermoeglichen neue interessante Geo-Spiele (nicht nur ableiten). 1096->1097.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

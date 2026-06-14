@@ -661,6 +661,7 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ "In welcher Stadt steht dieses Bauwerk?": ("In which city is this structure?", "W jakim mieście znajduje się ta budowla?"),
  'In welchem Land liegt diese Insel?': ('In which country is this island?', 'W jakim kraju leży ta wyspa?'),
  'In welchem Land liegt dieser Gipfel?': ('In which country is this peak?', 'W jakim kraju leży ten szczyt?'),
  "Spiele mit Geo-Bezug": ("Geography games", "Gry z geografią"),

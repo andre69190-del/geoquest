@@ -693,3 +693,7 @@ Neue Modi `insel_match_land` + `gipfel_match_land` („In welchem Land liegt die
 ## Phase 565 — Spielübersicht: Merge-Rubriken abbilden
 **Datum:** 2026-06-13
 `generate_spieluebersicht.py`: `CAT_MERGE`-Map remappt `m.group` der absorbierten/zusammengelegten Kinder auf ihre Sammel-Rubrik (Pop & Medien, Kunst/Kultur/Geschichte, Technik & Industrie, tiere/pflanzen/gastronomie/comparisons). Übersicht zeigt jetzt dieselben Rubriken wie die App — keine veralteten Einzel-Kategorien mehr. (Tooling-only.)
+
+## Phase 566 — Neues Geo-Feld: architektur 'stadt'
+**Datum:** 2026-06-13
+Erstes Beispiel für echte neue Geo-Felder (Aufwand statt Ableiten): `architektur.json` um **`stadt`** für alle 40 Bauwerke erweitert (akkurat, weltbekannte Strukturen) → neues Spiel `arch_match_stadt` „In welcher Stadt steht dieses Bauwerk?". Zeigt: neue Datenfelder schaffen neue, interessante Geo-Spiele über das Ableiten hinaus. 1096→1097.

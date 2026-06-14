@@ -818,7 +818,8 @@
   "Aus welchem Land stammt diese Mythologie?": "Which country does this mythology come from?",
   "Spiele mit Geo-Bezug": "Geography games",
   "In welchem Land liegt diese Insel?": "In which country is this island?",
-  "In welchem Land liegt dieser Gipfel?": "In which country is this peak?"
+  "In welchem Land liegt dieser Gipfel?": "In which country is this peak?",
+  "In welcher Stadt steht dieses Bauwerk?": "In which city is this structure?"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1639,6 +1640,7 @@
   "Aus welchem Land stammt diese Mythologie?": "Z jakiego kraju pochodzi ta mitologia?",
   "Spiele mit Geo-Bezug": "Gry z geografią",
   "In welchem Land liegt diese Insel?": "W jakim kraju leży ta wyspa?",
-  "In welchem Land liegt dieser Gipfel?": "W jakim kraju leży ten szczyt?"
+  "In welchem Land liegt dieser Gipfel?": "W jakim kraju leży ten szczyt?",
+  "In welcher Stadt steht dieses Bauwerk?": "W jakim mieście znajduje się ta budowla?"
  }
 }
