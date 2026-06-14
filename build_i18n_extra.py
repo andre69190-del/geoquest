@@ -661,6 +661,7 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ "Spiele mit Geo-Bezug": ("Geography games", "Gry z geografią"),
  "Aus welchem Land stammt diese Mythologie?": ("Which country does this mythology come from?", "Z jakiego kraju pochodzi ta mitologia?"),
  "Welche Stadt war das Zentrum dieses Reichs?": ("Which city was the center of this empire?", "Które miasto było centrum tego imperium?"),
  'Allgemeinwissen': ('General Knowledge', 'Wiedza ogólna'),

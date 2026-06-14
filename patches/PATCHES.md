@@ -657,3 +657,7 @@ Zusätzlicher Geo-Modus `myth_match_land` („Aus welchem Land stammt diese Myth
 ## Phase 556 — Geo-Hauptbereich: Recent + Empfehlungen geo-konsistent
 **Datum:** 2026-06-13
 „Zuletzt gespielt" (`renderRecentBar`) filtert nach aktueller Ansicht (Geo→nur Geo, Allgemeinwissen→nur Nicht-Geo). Kategorie-Empfehlungen (`_forYouCats`) + Spiel-Empfehlungen (`_forYouGames`) nur noch **geo-reiche** Kategorien via `_catGeoRich` (geo-Modi ≥ ⅓) → kein „Games & Hardware"/„Astronomie" mehr in der Geo-Empfehlung. Hin-/Zurück-Buttons + Labels verifiziert.
+
+## Phase 557 — Banner: Überschrift = aktueller Bereich
+**Datum:** 2026-06-13
+Banner zeigt jetzt den **aktuellen** Bereich als Überschrift und führt per Button zum **anderen**: Geo-Ansicht „🌍 GeoQuest / Spiele mit Geo-Bezug" → Button „Allgemeinwissen ›"; Allgemeinwissen „🧠 Allgemeinwissen / Spiele ohne Geo-Bezug" → Button „‹ GeoQuest". Behebt die Doppeldeutigkeit (vorher beidseitig „Allgemeinwissen").

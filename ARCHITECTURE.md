@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 556 (Stand: Juni 2026)
+**Version:** Phase 557 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.14 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1257,6 +1257,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **554** | patch_554.py | **Geo-Luecke geschichte geschlossen: neuer Geo-Modus 'hist_match_zentrum' (Reich -> Zentrumsstadt) via vorhandenem genGeschichteMatchExt(zentrum_hauptstadt). Damit hat jede geo-faehige Kategorie >=1 Geo-Modus im Hauptbereich. 1092->1093.** |
 | **555** | patch_555.py | **mythologie: zusaetzlicher Geo-Modus 'myth_match_land' (Herkunftsland, Multiple Choice) via genMythMatchExt - ergaenzt den vorhandenen Geo-Pin. 1093->1094.** |
 | **556** | patch_556.py | **Geo-Hauptbereich konsequent: 'Zuletzt gespielt'-Leiste nach Ansicht gefiltert (Geo zeigt nur Geo, Allgemeinwissen nur Nicht-Geo); Kategorie-Empfehlungen (_forYouCats/_forYouGames) nur geo-reiche Kategorien (_catGeoRich: geo>=1/3) -> kein 'Games & Hardware' mehr im Geo-Bereich. Hin/Zurueck-Buttons + Labels verifiziert.** |
+| **557** | patch_557.py | **Banner ueberarbeitet: Ueberschrift = aktueller Bereich, Button = anderer Bereich. Geo-Ansicht: 'GeoQuest / Spiele mit Geo-Bezug' + Button 'Allgemeinwissen ›'. Allgemeinwissen: 'Allgemeinwissen / Spiele ohne Geo-Bezug' + Button '‹ GeoQuest'. Kein doppeldeutiges 'Allgemeinwissen' mehr.** |
 
 ---
 
