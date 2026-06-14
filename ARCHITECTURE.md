@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 574 (Stand: Juni 2026)
+**Version:** Phase 575 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.17 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1271,6 +1271,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **572** | patch_572.py | **architektur von 40 auf 55 erweitert (>=50 erreicht): 15 weltbekannte Bauwerke web-verifiziert (Koordinaten/Hoehe/Baujahr per Subagent aus Wikipedia; Hangzhou-Bay-Bruecke ohne belegte Hoehe ausgelassen - keine Schaetzung). Inkl. eindeutiger Staedte fuer arch_match_stadt. Willis Tower, The Shard, Skytree, Chrysler, Merdeka 118, Petersdom, Brandenburger Tor, Pisa, Cheops-Pyramide, Big Ben u.a.** |
 | **573** | patch_573.py | **geschichte von 66 auf 80 (Ideal erreicht): 5 weitere Reiche (Xin, Oestliche Jin, Chagatai-Khanat, Koektuerken, Uigurisches Kaganat) + 9 bekannte Ereignisse/Schlachten/Epochen (Reformation, Dt. Wiedervereinigung, D-Day, Cannae, Issos, Gaugamela, Wiener Kongress, Mauerbau, Dampfmaschine). Stabile Fakten, ausdehnung/zentrum=null wo nicht zutreffend.** |
 | **574** | patch_574.py | **architektur von 55 auf 76: 21 weltbekannte Bauwerke web-verifiziert (Koordinaten/Hoehe/Baujahr per Subagent aus Wikipedia). 5 ausgelassen wegen unbelegter Hoehe/Jahr bzw. falscher Koordinate (Wat Arun, Goldener Tempel, Stonehenge, El Castillo, Berliner Fernsehturm) - keine Schaetzung. Ostankino, Oriental Pearl, Tokyo Tower, Koelner Dom, Notre-Dame, Potala u.a.** |
+| **575** | patch_575.py | **medizin von 6 auf 8 Spiele aufgestockt: 2 neue Modi aus Bestandsfeldern - med_match_kategorie (Organ/Knochen/Meilenstein/Krankheit) + med_match_entdecker (Wer entdeckte das?). Damit haben ALLE Rubriken >=8 Spiele (ausser astronomie 7). Non-geo -> in NON_GEO_IDS.** |
 
 ---
 

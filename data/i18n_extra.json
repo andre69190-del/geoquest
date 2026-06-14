@@ -825,7 +825,9 @@
   "Spielstand gesichert": "Progress saved",
   "Spielstand geladen": "Progress loaded",
   "Ungültige Datei": "Invalid file",
-  "Spielstand sichern/laden (für Schule/Offline)": "Save/load progress (school/offline)"
+  "Spielstand sichern/laden (für Schule/Offline)": "Save/load progress (school/offline)",
+  "Was ist das — Organ, Knochen, Meilenstein oder Krankheit?": "What is it — organ, bone, milestone or disease?",
+  "Wer hat das entdeckt oder erforscht?": "Who discovered or researched this?"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1653,6 +1655,8 @@
   "Spielstand gesichert": "Postęp zapisany",
   "Spielstand geladen": "Postęp wczytany",
   "Ungültige Datei": "Nieprawidłowy plik",
-  "Spielstand sichern/laden (für Schule/Offline)": "Zapis/wczytanie postępu (szkoła/offline)"
+  "Spielstand sichern/laden (für Schule/Offline)": "Zapis/wczytanie postępu (szkoła/offline)",
+  "Was ist das — Organ, Knochen, Meilenstein oder Krankheit?": "Co to jest — narząd, kość, kamień milowy czy choroba?",
+  "Wer hat das entdeckt oder erforscht?": "Kto to odkrył lub zbadał?"
  }
 }

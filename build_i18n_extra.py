@@ -661,6 +661,8 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Was ist das — Organ, Knochen, Meilenstein oder Krankheit?': ('What is it — organ, bone, milestone or disease?', 'Co to jest — narząd, kość, kamień milowy czy choroba?'),
+ 'Wer hat das entdeckt oder erforscht?': ('Who discovered or researched this?', 'Kto to odkrył lub zbadał?'),
  'Spielstand sichern': ('Save progress', 'Zapisz postęp'),
  'Spielstand laden': ('Load progress', 'Wczytaj postęp'),
  'Spielstand gesichert': ('Progress saved', 'Postęp zapisany'),

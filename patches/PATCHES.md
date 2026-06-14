@@ -729,3 +729,7 @@ Einstellungen: **„Spielstand sichern"** (lädt alle `gq_`/`geoquest_`-localSto
 ## Phase 574 — architektur: 55 → 76 (web-verifiziert)
 **Datum:** 2026-06-13
 +21 weltbekannte Bauwerke (Koordinaten/Höhe/Baujahr per Subagent aus Wikipedia verifiziert). 5 Kandidaten ausgelassen, weil Höhe/Jahr nicht belegbar oder Koordinate fehlerhaft (Wat Arun, Goldener Tempel, Stonehenge, El Castillo, Berliner Fernsehturm) — keine Schätzung. Eindeutige Städte ergänzt.
+
+## Phase 575 — medizin: 6 → 8 Spiele
+**Datum:** 2026-06-13
+Letzte dünne Rubrik aufgestockt: `med_match_kategorie` (Organ/Knochen/Meilenstein/Krankheit) + `med_match_entdecker` (Entdecker/Forscher) aus vorhandenen Feldern. medizin 6→8. Beide non-geo (in NON_GEO_IDS). Damit haben alle Rubriken ≥8 Spiele (Ausnahme astronomie 7 — Weltraum, nicht sinnvoll erweiterbar).
