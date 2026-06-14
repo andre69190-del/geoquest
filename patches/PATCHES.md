@@ -673,3 +673,7 @@ Geo/Allgemeinwissen-Banner sitzt jetzt **direkt unter der Begrüßungszeile** (i
 ## Phase 560 — Spielübersicht: „Datenbasis" ehrlich (kein falsches „—")
 **Datum:** 2026-06-13
 `generate_spieluebersicht.py`: Fallback-Zähler für Modi, die der statische Parser bisher als „—" zeigte. Erkennt COUNTRIES-basierte (→ 181) und Inline-Array-Generatoren (z. B. essen_land 9, tiere_kontinent 12) und ergänzt die Direktreferenz-Dispatchform `id:genFn`. Nicht statisch zählbare, aber per Smoke-Test geprüfte Modi zeigen jetzt „dyn" (grau) statt rotem „—". **0 rote „—"** (vorher 181). Legende ergänzt. (Reine Tooling-Änderung, kein App-Build betroffen.)
+
+## Phase 561 — verify.py: NON_GEO_IDS-Schutz
+**Datum:** 2026-06-13
+Neuer Check „14b. NON_GEO_IDS validity": stellt sicher, dass jede ID in `NON_GEO_IDS` noch in MODES existiert (fängt veraltete Einträge bei künftigen Umbenennungen/Entfernungen). verify 195→196 Checks. Suche (`filterGames`) bereits bereichskonform (durchsucht nur DOM-Karten, die schon geo-gefiltert sind) — keine Änderung nötig.

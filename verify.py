@@ -256,6 +256,20 @@ if dp_match:
 else:
     fail("DAILY_POOL not found in JS")
 
+# -- 14b. NON_GEO_IDS validity (Geo/Allgemeinwissen-Split) ----
+section("14b. NON_GEO_IDS validity")
+ng_match = re.search(r'const NON_GEO_IDS=new Set\(\[(.*?)\]\)', js, re.DOTALL)
+if ng_match and modes_block:
+    ng_ids = re.findall(r'"([^"]+)"', ng_match.group(1))
+    _mset = set(re.findall(r'id:"([^"]+)"', modes_block.group(1)))
+    stale = [p for p in ng_ids if p not in _mset]
+    if not stale:
+        ok("NON_GEO_IDS: " + str(len(ng_ids)) + " IDs, alle in MODES vorhanden")
+    else:
+        fail("NON_GEO_IDS veraltet (nicht in MODES): " + str(stale[:8]))
+elif not ng_match:
+    fail("NON_GEO_IDS nicht im JS gefunden")
+
 # -- 15. No biased sort() remaining ---------------------------
 section("15. No biased sort() remaining")
 biased_rng  = re.findall(r'\.sort\([^)]*rng\(\)\s*-\s*[0.]?5\s*\)', js)
