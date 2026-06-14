@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 570. mythologie von 40 auf 88 erweitert: 48 bekannte Gottheiten/Wesen (Griechisch/Nordisch/Aegyptisch/Roemisch/Japanisch/Aztekisch/Mesopotamisch + neue Kultur Keltisch). Stabile, belegte Fakten; Koordinaten = Kultur-Region wie Bestandsdaten. Bereichert myth_match_domain/kultur/typ/land + myth_pin_herkunft.. verify: 196/196."
+git commit -m "Content: Phase 571. Spielstand Export/Import (Schulen/Offline): Einstellungen -> 'Spielstand sichern' (alle gq_/geoquest_-Keys als geoquest-spielstand.json herunterladen) + 'Spielstand laden' (JSON einlesen, Keys zuruckschreiben, reload). Kein Cloud-Konto noetig - ideal fuer Kiosk-Modus, der localStorage loescht. i18n DE/EN/PL.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 570):
+Aktueller Stand (Stand: Phase 571):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 1097 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)

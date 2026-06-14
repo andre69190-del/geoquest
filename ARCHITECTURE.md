@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 570 (Stand: Juni 2026)
+**Version:** Phase 571 (Stand: Juni 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.16 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1267,6 +1267,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **567** | patch_567.py | **GENAUIGKEIT: architektur 'stadt' auf 23 eindeutige Bauwerke reduziert (mehrdeutige Tunnel/Grenz-Daemme/spannende Bruecken entfernt - kein Raten). fluss_match_muendung existierte bereits (nichts doppelt gebaut). Genauigkeits-/Anti-Halluzinations-Regel im Session-Starter verankert.** |
 | **568** | patch_568.py | **geschichte_extended von 40 auf 66 erweitert: 26 grosse Reiche web-verifiziert (Spitzenflaeche aus Wikipedia 'List of largest empires'; Datum/Hauptstadt/Schluesselfigur stabile Fakten) - Qing, Spanisches/Franzoesisches Kolonialreich, Umayyaden, Yuan, Tang, Maurya, Sassaniden, Timuriden, Safawiden, Song, Sui u.a. Bereichert hist_match_zentrum/hl_hist_*.** |
 | **570** | patch_570.py | **mythologie von 40 auf 88 erweitert: 48 bekannte Gottheiten/Wesen (Griechisch/Nordisch/Aegyptisch/Roemisch/Japanisch/Aztekisch/Mesopotamisch + neue Kultur Keltisch). Stabile, belegte Fakten; Koordinaten = Kultur-Region wie Bestandsdaten. Bereichert myth_match_domain/kultur/typ/land + myth_pin_herkunft.** |
+| **571** | patch_571.py | **Spielstand Export/Import (Schulen/Offline): Einstellungen -> 'Spielstand sichern' (alle gq_/geoquest_-Keys als geoquest-spielstand.json herunterladen) + 'Spielstand laden' (JSON einlesen, Keys zuruckschreiben, reload). Kein Cloud-Konto noetig - ideal fuer Kiosk-Modus, der localStorage loescht. i18n DE/EN/PL.** |
 
 ---
 

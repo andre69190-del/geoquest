@@ -19097,6 +19097,22 @@ function renderGuideModal(){
 }
 
 /* SETTINGS MODAL */
+function _exportProgress(){
+  try{var o={};for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&(k.indexOf("gq")===0||k.indexOf("geoquest")===0))o[k]=localStorage.getItem(k);}
+    var blob=new Blob([JSON.stringify({_geoquest:1,ts:Date.now(),data:o},null,2)],{type:"application/json"});
+    var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="geoquest-spielstand.json";document.body.appendChild(a);a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href);if(a.parentNode)a.parentNode.removeChild(a);},1000);
+    if(typeof showToast==="function")showToast(_tc("Spielstand gesichert"));}catch(e){if(typeof showToast==="function")showToast("Fehler");}
+}
+function _importProgress(input){
+  try{var f=input&&input.files&&input.files[0];if(!f)return;var r=new FileReader();
+    r.onload=function(){try{var j=JSON.parse(r.result);var data=(j&&j.data)?j.data:j;
+      if(!data||typeof data!=="object"){if(typeof showToast==="function")showToast(_tc("Ung\u00fcltige Datei"));return;}
+      Object.keys(data).forEach(function(k){if(k.indexOf("gq")===0||k.indexOf("geoquest")===0)localStorage.setItem(k,data[k]);});
+      if(typeof showToast==="function")showToast(_tc("Spielstand geladen"));setTimeout(function(){location.reload();},700);
+    }catch(e){if(typeof showToast==="function")showToast(_tc("Ung\u00fcltige Datei"));}};r.readAsText(f);}catch(e){}
+}
+window._exportProgress=_exportProgress;window._importProgress=_importProgress;
 function renderSettingsModal(){
   return`<div class="modal-overlay" onclick="if(event.target===this){S.settingsModal=false;render()}"><div class="modal-box" style="max-width:320px">
     <div style="font-size:1.1rem;font-weight:900;margin-bottom:.3rem">\u2699\ufe0f ${t('set_title')}</div>
@@ -19142,6 +19158,10 @@ function renderSettingsModal(){
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div><div style="font-weight:700">🎯 ${t('rec_setting')}</div><div style="font-size:.72rem;color:var(--text3);margin-top:2px">${t('rec_sub')}</div></div><button onclick="var on=localStorage.getItem('gq_rec_games')!=='0';localStorage.setItem('gq_rec_games',on?'0':'1');render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_rec_games')!=='0'?'An':'Aus'}</button></div>
     <button onclick="S.settingsModal=false;S.stickerModal=true;render()" class="btn-g" style="margin-bottom:.5rem;background:var(--bg3)">${t('stickers_title')}</button>
     <button onclick="S.settingsModal=false;S.guideTab=0;S.guideModal=true;render()" class="btn-g" style="margin-bottom:.5rem;background:var(--bg3)">${t('guide_open')}</button>
+    <div style="border-top:1px solid var(--border);margin:.5rem 0 .6rem"></div>
+    <div style="font-size:.72rem;color:var(--text3);margin-bottom:.35rem">\u{1F4BE} ${_tc("Spielstand sichern/laden (f\u00fcr Schule/Offline)")}</div>
+    <button onclick="_exportProgress()" class="btn-g" style="margin-bottom:.5rem;background:var(--bg3)">\u2B07\uFE0F ${_tc("Spielstand sichern")}</button>
+    <label class="btn-g" style="margin-bottom:.5rem;background:var(--bg3);display:block;text-align:center;cursor:pointer">\u2B06\uFE0F ${_tc("Spielstand laden")}<input type="file" accept="application/json,.json" style="display:none" onchange="_importProgress(this)"></label>
     <button onclick="S.settingsModal=false;render()">${t('ui_close')}</button>
   </div></div>`;
 }

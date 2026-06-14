@@ -713,3 +713,7 @@ landing.html: H1-Textextraktion „kennstdu" gefixt (Leerzeichen vor `<br>` → 
 ## Phase 570 — mythologie: +48 Gottheiten → 88
 **Datum:** 2026-06-13
 `mythologie.json` 40→88: 48 bekannte Gottheiten/Wesen (Griechisch, Nordisch, Ägyptisch, Römisch, Japanisch, Aztekisch, Mesopotamisch + **neue Kultur Keltisch**). Stabile, belegte Fakten; lat/lng = Kultur-Region (konsistent mit Bestand); röm. Pendant bei griech. Gottheiten. Ziel ~80 übertroffen.
+
+## Phase 571 — Spielstand Export/Import (Schule/Offline)
+**Datum:** 2026-06-13
+Einstellungen: **„Spielstand sichern"** (lädt alle `gq_`/`geoquest_`-localStorage-Keys als `geoquest-spielstand.json`) + **„Spielstand laden"** (liest JSON, schreibt Keys zurück, reload). Für Schul-/Kiosk-PCs, die beim Schließen den localStorage löschen — kein Cloud-Konto nötig. `_exportProgress`/`_importProgress`, i18n DE/EN/PL.

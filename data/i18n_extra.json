@@ -819,7 +819,13 @@
   "Spiele mit Geo-Bezug": "Geography games",
   "In welchem Land liegt diese Insel?": "In which country is this island?",
   "In welchem Land liegt dieser Gipfel?": "In which country is this peak?",
-  "In welcher Stadt steht dieses Bauwerk?": "In which city is this structure?"
+  "In welcher Stadt steht dieses Bauwerk?": "In which city is this structure?",
+  "Spielstand sichern": "Save progress",
+  "Spielstand laden": "Load progress",
+  "Spielstand gesichert": "Progress saved",
+  "Spielstand geladen": "Progress loaded",
+  "Ungültige Datei": "Invalid file",
+  "Spielstand sichern/laden (für Schule/Offline)": "Save/load progress (school/offline)"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1641,6 +1647,12 @@
   "Spiele mit Geo-Bezug": "Gry z geografią",
   "In welchem Land liegt diese Insel?": "W jakim kraju leży ta wyspa?",
   "In welchem Land liegt dieser Gipfel?": "W jakim kraju leży ten szczyt?",
-  "In welcher Stadt steht dieses Bauwerk?": "W jakim mieście znajduje się ta budowla?"
+  "In welcher Stadt steht dieses Bauwerk?": "W jakim mieście znajduje się ta budowla?",
+  "Spielstand sichern": "Zapisz postęp",
+  "Spielstand laden": "Wczytaj postęp",
+  "Spielstand gesichert": "Postęp zapisany",
+  "Spielstand geladen": "Postęp wczytany",
+  "Ungültige Datei": "Nieprawidłowy plik",
+  "Spielstand sichern/laden (für Schule/Offline)": "Zapis/wczytanie postępu (szkoła/offline)"
  }
 }
