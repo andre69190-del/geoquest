@@ -1,8 +1,8 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 562 (Stand: Juni 2026)
-**Build:** gen.py → 1.69 MB | GeoQuest.html → 6.14 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
+**Version:** Phase 563 (Stand: Juni 2026)
+**Build:** gen.py → 1.69 MB | GeoQuest.html → 6.15 MB | 999 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
 
@@ -1261,6 +1261,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **558** | patch_558.py | **Geo/Allgemeinwissen-Banner direkt unter die Begruessungszeile verschoben (beide Ansichten). Zurueck-Button '‹ GeoQuest' jetzt LINKS vor der Ueberschrift (back=links), Vorwaerts-Button 'Allgemeinwissen ›' rechts.** |
 | **559** | patch_559.py | **Verbesserungen: 'Zufall' (playRandomGame) respektiert Geo/Allgemeinwissen-Split; 19 alte gen.py-Backups entfernt; Session-Starter Doku-Note zum Geo-Split (NON_GEO_IDS); Spieluebersicht-Generator nach Bereichen GeoQuest(549)/Allgemeinwissen(545) getrennt + Hero-Zaehler.** |
 | **562** | patch_562.py | **Geo/Allgemeinwissen-Umschalter als Segmented Control (zwei Tabs nebeneinander: GeoQuest | Allgemeinwissen, aktiver hervorgehoben) statt Vollbreit-Balken - leichter, klar als Navigation erkennbar, spart Hoehe. Direkt unter Begruessung.** |
+| **563** | patch_563.py | **Rubrik-Merge (nicht-destruktiv): duenne Trivia-Rubriken zusammengelegt. Absorbiert: hunde->tiere, gartenbau->pflanzen, regional->gastronomie, hl_compare->comparisons, robotik/autos/wirtschaft->technologie (jetzt 'Technik & Industrie'). Neue Sammel-Rubriken: 'Pop & Medien' (filme/serien/musik/webkultur/boardgames), 'Kunst, Kultur & Geschichte' (kunst/literatur/architektur/mythologie/geschichte/sprachen). 29 Geo-Rubriken, alle >=8 ausser astronomie/inseln/gipfel(7). 0 verwaiste Modi. Per MODE_CATS-Postprocessing + _MERGED_CHILDREN-Filter, keine Modi geloescht.** |
 
 ---
 

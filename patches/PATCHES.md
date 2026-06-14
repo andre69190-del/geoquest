@@ -681,3 +681,7 @@ Neuer Check „14b. NON_GEO_IDS validity": stellt sicher, dass jede ID in `NON_G
 ## Phase 562 — Umschalter als Segmented Control
 **Datum:** 2026-06-13
 Geo/Allgemeinwissen-Umschalter von Vollbreit-Balken auf **Segmented Control** umgestellt: zwei gleich breite Tabs nebeneinander („🌍 GeoQuest" | „🧠 Allgemeinwissen"), aktiver mit Farbverlauf hervorgehoben, inaktiver dezent. Hebt sich klar als Navigation von den Aktions-Karten (Daily/Region) ab und spart vertikale Höhe. Direkt unter der Begrüßungszeile.
+
+## Phase 563 — Rubrik-Zusammenlegung (Merge)
+**Datum:** 2026-06-13
+Dünne Trivia-Rubriken nicht-destruktiv zusammengelegt (MODE_CATS-Postprocessing + `_MERGED_CHILDREN`-Renderfilter, keine Modi gelöscht). **Absorbiert:** hunde→tiere, gartenbau→pflanzen, regional→gastronomie, hl_compare→comparisons, robotik/autos/wirtschaft→technologie (Label „Technik & Industrie"). **Neue Sammel-Rubriken:** „Pop & Medien" (filme/serien/musik/webkultur/boardgames) · „Kunst, Kultur & Geschichte" (kunst/literatur/architektur/mythologie/geschichte/sprachen). Ergebnis: 29 Geo-Rubriken, alle ≥8 außer astronomie/inseln/gipfel (7). 0 verwaiste Modi. Gilt für Geo- UND Allgemeinwissen-Ansicht.

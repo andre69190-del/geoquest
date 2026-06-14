@@ -4019,7 +4019,7 @@ function _travelBanner(){
   return '<div style="position:fixed;left:12px;right:12px;bottom:70px;z-index:9000;background:var(--bg2);border:1.5px solid #6366f1;border-radius:14px;padding:.7rem .9rem;box-shadow:0 6px 24px rgba(0,0,0,.35)"><div style="font-weight:800;font-size:.9rem;margin-bottom:.5rem">'+t('travel_title')+'</div><div style="display:flex;gap:8px;align-items:center"><button onclick="_dismissTravel();S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F697 '+t('travel_plates')+'</button><button onclick="_dismissTravel();S._spotterTab=\'waggons\';S.tab=\'album\';render()" class="btn-g" style="flex:1;margin:0">\U0001F686 '+t('travel_trains')+'</button><button onclick="_dismissTravel()" aria-label="Schließen" class="btn-g" style="margin:0;background:transparent;width:auto;padding:.4rem .6rem">✕</button></div></div>';
 }
 
-function _forYouCats(){var out=[],seen={};var km=_getKidsMode();function add(arr){(arr||[]).forEach(function(k){if(k&&!seen[k]&&MODE_CATS[k]&&(!km||KIDS_CATS.has(k))&&_catGeoRich(k)){seen[k]=1;out.push(k);}});}add(_getTopCats(6));add(_getInterestCats());add(['pure_geo','tiere','games','capitals','sport','astronomie','themeparks','hunde','map_mode']);return out.slice(0,6);}
+function _forYouCats(){var out=[],seen={};var km=_getKidsMode();function add(arr){(arr||[]).forEach(function(k){if(k&&!seen[k]&&MODE_CATS[k]&&(!km||KIDS_CATS.has(k))&&_catGeoRich(k)&&_MERGED_CHILDREN.indexOf(k)<0){seen[k]=1;out.push(k);}});}add(_getTopCats(6));add(_getInterestCats());add(['pure_geo','tiere','games','capitals','sport','astronomie','themeparks','hunde','map_mode']);return out.slice(0,6);}
 function _catTint(k){var m={geo:'59,130,246',natur:'16,185,129',mint:'139,92,246',pop:'236,72,153',kultur:'245,158,11',sport:'249,115,22',alltag:'100,116,139'};var ci=CAT_META[k]&&CAT_META[k].i&&CAT_META[k].i[0];var rgb=m[ci];return rgb?{bg:'rgba('+rgb+',.10)',bd:'rgba('+rgb+',.32)'}:{bg:'var(--bg2)',bd:'var(--border)'};}
 function _forYouGames(n){try{
   if(_getTotalPlays()<5)return [];
@@ -4028,7 +4028,7 @@ function _forYouGames(n){try{
   var played=[];try{played=JSON.parse(localStorage.getItem('gq_played')||'[]');}catch(e){}
   var pset={};played.forEach(function(x){pset[x]=1;});
   var cats=[],seen={};
-  function addc(arr){(arr||[]).forEach(function(k){if(k&&!seen[k]&&MODE_CATS[k]&&(!km||KIDS_CATS.has(k))&&_catGeoRich(k)){seen[k]=1;cats.push(k);}});}
+  function addc(arr){(arr||[]).forEach(function(k){if(k&&!seen[k]&&MODE_CATS[k]&&(!km||KIDS_CATS.has(k))&&_catGeoRich(k)&&_MERGED_CHILDREN.indexOf(k)<0){seen[k]=1;cats.push(k);}});}
   addc(_getTopCats(6));addc(_getInterestCats());addc(['pure_geo','tiere','games','capitals','sport','astronomie']);
   var fresh=[],known=[],mseen={};
   cats.forEach(function(k){(MODE_CATS[k].modes||[]).forEach(function(mid){
@@ -4247,6 +4247,17 @@ const MODE_CATS={
   games:{label:"Games & Hardware",icon:"\u{1F3AE}",modes:["games_pin","games_match_land","games_match_genre","games_match_adaption","games_match_plattform","games_match_kategorie","games_match_publisher","games_match_f2p","hl_games_release","hl_games_vk","hl_games_downloads","hl_games_metacritic","hl_games_usk","hl_games_sequel","hl_games_peak","hl_games_dev_lat","games_match_protagonist","games_match_pub_is_dev","hl_games_howlong","games_match_esports","hl_games_pegi","hl_games_peak_year","hl_games_publisher_lat","games_peak_year_mc","games_baujahr_mc","timeline_konsolen_bj","hl_konsolen_verkauf","hl_konsolen_preis","match_konsolen_hersteller","match_konsolen_medium","match_konsolen_handheld","hl_konsolen_ram","hl_konsolen_cpu","match_konsolen_generation","match_konsolen_land","hw_baujahr_mc","hw_match_company","hw_match_type","hw_match_generation","hl_hw_year","hl_hw_units","hl_konsolen_erscheinungsjahr","hl_konsolen_eingestellt","konsolen_match_spiel","konsolen_match_aufloesung","games_match_publisher_land","hl_games_publisher_lng","konsole_pin_land","hw_pin_land","digital_match_plattform","hl_digital_downloads","digital_match_genre","digital_match_f2p","digital_match_land","hl_digital_vk"],cost:0},  autos:{label:"Auto-Quartett",icon:"\u{1F3CE}\uFE0F",modes:["hl_auto_ps","hl_auto_vmax","hl_auto_accel","hl_auto_ccm","hl_auto_bj","timeline_auto_bj","hl_auto_gewicht","hl_auto_drehmoment","hl_auto_cw","hl_auto_kofferraum","hl_auto_laenge","hl_auto_neupreis","hl_auto_tank","hl_auto_akku","hl_auto_reichweite","hl_auto_verbrauch_l","hl_auto_verbrauch_e","hl_auto_zylinder","auto_match_antrieb","auto_match_karosserie","auto_match_antriebsart","auto_match_motorbauart","hl_auto_wendekreis","hl_auto_zuladung","auto_match_konzern","auto_match_getriebe","auto_match_turbo","auto_match_sitze","auto_baujahr_mc","auto_match_land","hl_auto_ps_kg","hl_auto_co2","auto_match_dekade","auto_generationen_match","hl_auto_nordschleife","hl_auto_baujahr_ende","fahrzeug_match_karosserie","fahrzeug_match_konzern","hl_fahrzeug_gewicht","hl_fahrzeug_kofferraum","fahrzeug_match_sitze"],cost:0},
   regional:{label:"Regionale & EU-Kulinarik",icon:"\u{1F35E}",modes:["regional_pin","match_regional_kategorie","match_regional_land","match_regional_region","hl_regional_alkohol","hl_regional_saison"],cost:0},
 };
+/* === Rubrik-Zusammenlegung (Merge, nicht-destruktiv) === */
+(function(){
+  function _ext(t,ch){if(MODE_CATS[t]&&MODE_CATS[ch]){MODE_CATS[ch].modes.forEach(function(id){if(MODE_CATS[t].modes.indexOf(id)<0)MODE_CATS[t].modes.push(id);});}}
+  _ext('tiere','hunde');_ext('pflanzen','gartenbau');_ext('gastronomie','regional');_ext('comparisons','hl_compare');
+  _ext('technologie','robotik');_ext('technologie','autos');_ext('technologie','wirtschaft');
+  if(MODE_CATS.technologie)MODE_CATS.technologie.label='Technik & Industrie';
+  function _um(key,label,icon,interest,kinder){var ms=[];kinder.forEach(function(ch){if(MODE_CATS[ch])MODE_CATS[ch].modes.forEach(function(id){if(ms.indexOf(id)<0)ms.push(id);});});MODE_CATS[key]={label:label,icon:icon,modes:ms,cost:0};CAT_META[key]={a:['kids','teens','adults'],i:[interest]};if(typeof KIDS_CATS!=='undefined'&&KIDS_CATS.add)KIDS_CATS.add(key);}
+  _um('pop_medien','Pop & Medien','\u{1F3AC}','pop',['filme','serien','musik','webkultur','boardgames']);
+  _um('kunst_kultur','Kunst, Kultur & Geschichte','\u{1F3AD}','kultur',['kunst','literatur','architektur','mythologie','geschichte','sprachen']);
+})();
+const _MERGED_CHILDREN=['hunde','gartenbau','regional','hl_compare','robotik','autos','wirtschaft','filme','serien','musik','webkultur','boardgames','kunst','literatur','architektur','mythologie','geschichte','sprachen'];
 
 /* === Phase 227 Part 3: Tier-Wort-Schmiede (10 Tiere, words verified letter-by-letter) === */
 const TIER_WS_DATA=PLACEHOLDER_TIER_WS_DATA;
@@ -18520,7 +18531,7 @@ function genHLDigitalVK(){
 function renderHomeTab(){
   try{_initTravelHint();}catch(_e){}
   const _kidsMode=_getKidsMode();
-  const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","zuege","sport","hl_compare","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","emobilitaet","archaeologie","astronomie","geologie","sport_wissen"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));const all=fixed.concat(extra);const _vOk=id=>S.nonGeo?NON_GEO_IDS.has(id):!NON_GEO_IDS.has(id);const _catHas=k=>MODE_CATS[k]&&MODES.some(m=>MODE_CATS[k].modes.includes(m.id)&&!m.comingSoon&&!_kidHidden(m)&&_vOk(m.id));return (_kidsMode?all.filter(k=>KIDS_CATS.has(k)):all).filter(_catHas);})();
+  const _CAT_ORDER=(()=>{const fixed=["pure_geo","lifestyle","eu_plates","zuege","sport","comparisons","airports","neighbors","map_mode","tiere","pflanzen","gastronomie","technologie","pop_medien","kunst_kultur","games","emobilitaet","archaeologie","astronomie","geologie","sport_wissen"];const extra=Object.keys(MODE_CATS).filter(k=>!fixed.includes(k));const all=fixed.concat(extra);const _vOk=id=>S.nonGeo?NON_GEO_IDS.has(id):!NON_GEO_IDS.has(id);const _catHas=k=>MODE_CATS[k]&&MODES.some(m=>MODE_CATS[k].modes.includes(m.id)&&!m.comingSoon&&!_kidHidden(m)&&_vOk(m.id));return (_kidsMode?all.filter(k=>KIDS_CATS.has(k)):all).filter(_catHas).filter(k=>_MERGED_CHILDREN.indexOf(k)<0);})();
 
 
   /* Phase 414: Tab-Ansicht */
@@ -18565,7 +18576,7 @@ function renderHomeTab(){
   // Build accordion sections — Pure Geo auto-open, others closed
   const _favs=JSON.parse(localStorage.getItem('geoquest_favorites')||'[]');
   const _accordionHTML=_CAT_ORDER.map(catId=>{
-    const cat=MODE_CATS[catId];if(!cat)return'';
+    const cat=MODE_CATS[catId];if(!cat||_MERGED_CHILDREN.indexOf(catId)>=0)return'';
     const unlocked=isCategoryUnlocked(catId);
     const isDefault=catId===(S.filterCat||'pure_geo');
     const catModes=MODES.filter(m=>cat.modes.includes(m.id)&&!m.comingSoon&&!_kidHidden(m)&&(S.nonGeo?NON_GEO_IDS.has(m.id):!NON_GEO_IDS.has(m.id)));
