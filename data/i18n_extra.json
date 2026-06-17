@@ -838,7 +838,8 @@
   "Versuche": "tries left",
   "Land wählen...": "Choose country...",
   "Raten": "Guess",
-  "Gewonnen!": "You won!"
+  "Gewonnen!": "You won!",
+  "Streak": "streak"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1679,6 +1680,7 @@
   "Versuche": "prób",
   "Land wählen...": "Wybierz kraj...",
   "Raten": "Zgadnij",
-  "Gewonnen!": "Wygrana!"
+  "Gewonnen!": "Wygrana!",
+  "Streak": "seria"
  }
 }
