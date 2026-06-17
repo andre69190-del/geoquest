@@ -830,7 +830,15 @@
   "Wer hat das entdeckt oder erforscht?": "Who discovered or researched this?",
   "Schweiz": "Switzerland",
   "Belgien": "Belgium",
-  "gemeistert": "mastered"
+  "gemeistert": "mastered",
+  "Land erraten": "Guess the country",
+  "Umriss + Entfernung & Richtung": "Outline + distance & direction",
+  "Auflösung": "Answer",
+  "Neues Land": "New country",
+  "Versuche": "tries left",
+  "Land wählen...": "Choose country...",
+  "Raten": "Guess",
+  "Gewonnen!": "You won!"
  },
  "pl": {
   "Welchem Land gehört dieser Waggon?": "Do którego kraju należy ten wagon?",
@@ -1663,6 +1671,14 @@
   "Wer hat das entdeckt oder erforscht?": "Kto to odkrył lub zbadał?",
   "Schweiz": "Szwajcaria",
   "Belgien": "Belgia",
-  "gemeistert": "opanowane"
+  "gemeistert": "opanowane",
+  "Land erraten": "Zgadnij kraj",
+  "Umriss + Entfernung & Richtung": "Kontur + odległość i kierunek",
+  "Auflösung": "Rozwiązanie",
+  "Neues Land": "Nowy kraj",
+  "Versuche": "prób",
+  "Land wählen...": "Wybierz kraj...",
+  "Raten": "Zgadnij",
+  "Gewonnen!": "Wygrana!"
  }
 }

@@ -661,6 +661,14 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ 'Land erraten': ('Guess the country', 'Zgadnij kraj'),
+ 'Umriss + Entfernung & Richtung': ('Outline + distance & direction', 'Kontur + odległość i kierunek'),
+ 'Auflösung': ('Answer', 'Rozwiązanie'),
+ 'Neues Land': ('New country', 'Nowy kraj'),
+ 'Versuche': ('tries left', 'prób'),
+ 'Land wählen...': ('Choose country...', 'Wybierz kraj...'),
+ 'Raten': ('Guess', 'Zgadnij'),
+ 'Gewonnen!': ('You won!', 'Wygrana!'),
  "gemeistert": ("mastered", "opanowane"),
  'Schweiz': ('Switzerland', 'Szwajcaria'),
  'Belgien': ('Belgium', 'Belgia'),
