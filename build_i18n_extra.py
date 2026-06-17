@@ -661,6 +661,7 @@ print("data/i18n_extra.json: en=%d pl=%d"%(len(en2),len(pl2)))
 
 # --- Phase 523: zusaetzliche UI-Strings (nicht aus dem Prompt-Scan) ---
 EXTRA_UI = {
+ "gemeistert": ("mastered", "opanowane"),
  'Schweiz': ('Switzerland', 'Szwajcaria'),
  'Belgien': ('Belgium', 'Belgia'),
  'Was ist das — Organ, Knochen, Meilenstein oder Krankheit?': ('What is it — organ, bone, milestone or disease?', 'Co to jest — narząd, kość, kamień milowy czy choroba?'),

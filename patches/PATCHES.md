@@ -753,3 +753,7 @@ Inline-Items ergänzt (akkurat, eindeutig): tiere_haustier_wild 12→18 · tiere
 ## Phase 580 — Fakten-Check-Korrekturen
 **Datum:** 2026-06-13
 Unabhängiger Subagent-Faktencheck der neuen Daten (geschichte/mythologie/architektur, Stichprobe 28): **1 Fehler korrigiert** — Stephansdom baujahr 1578→1433 (Höhe 136 m = Südturm 1433; 1578 = Nordturm-Haube). Qing-Schlüsselfigur Qianlong→Hong Taiji (Gründer 1636). Tyr→Norwegen belassen (Konvention aller nordischen Gottheiten, inkl. lat/lng). Übrige Stichprobe fehlerfrei.
+
+## Phase 581 — Mastery-Anzeige (Forschung: Retention)
+**Datum:** 2026-06-13
+SRS: persistenter „Gemeistert"-Zähler (`gq_srs_mastered`) wird erhöht, sobald eine Frage Leitner-Box 5 erreicht (vorher wurde sie nur gelöscht). Anzeige im „Schwächen üben"-Hero: „N fällig · ✅ X gemeistert". i18n DE/EN/PL. — Hinweis: #3 (Farbenblind-Feedback) bereits erfüllt — Antwort-Buttons zeigen ✓/✗ zusätzlich zur Farbe.

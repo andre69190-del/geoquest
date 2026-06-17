@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 580. Fakten-Check-Korrekturen (unabhaengiger Subagent): Stephansdom baujahr 1578->1433 (136m=Suedturm 1433; 1578 war Nordturm-Haube); Qing-Dynastie Schluesselfigur Qianlong->Hong Taiji (Gruender 1636, konsistent zu start_jahr). Tyr->Norwegen belassen (Konvention aller nordischen Gottheiten).. verify: 196/196."
+git commit -m "Content: Phase 581. Mastery sichtbar (#2, forschungsbasiert): 'Gemeistert'-Zaehler (gq_srs_mastered) wird erhoeht, wenn eine Frage Leitner-Box 5 erreicht; Anzeige im Schwaechen-ueben-Hero ('n faellig . X gemeistert'). #3 (Farbenblind-Feedback) war bereits erfuellt: Antworten zeigen schon Symbole ✓/✗ zusaetzlich zur Farbe.. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
