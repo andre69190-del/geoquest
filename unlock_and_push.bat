@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 581. Mastery sichtbar (#2, forschungsbasiert): 'Gemeistert'-Zaehler (gq_srs_mastered) wird erhoeht, wenn eine Frage Leitner-Box 5 erreicht; Anzeige im Schwaechen-ueben-Hero ('n faellig . X gemeistert'). #3 (Farbenblind-Feedback) war bereits erfuellt: Antworten zeigen schon Symbole ✓/✗ zusaetzlich zur Farbe.. verify: 196/196."
+git commit -m "Content: Phase 582. Worldle-Modus 'Land erraten' (Umriss + Entfernung/Richtung/Naeherung, 6 Versuche, 50 verifizierte Centroids). verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
