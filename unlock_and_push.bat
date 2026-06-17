@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 582. Worldle-Modus 'Land erraten' (Umriss + Entfernung/Richtung/Naeherung, 6 Versuche, 50 verifizierte Centroids). verify: 196/196."
+git commit -m "Content: Phase 583. Erweitertes Teilen: Worldle-Ergebnis (Emoji-Raster) + Fortschritt-Share (Streak/Gemeistert). verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
