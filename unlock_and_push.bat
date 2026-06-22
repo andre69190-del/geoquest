@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 583. Erweitertes Teilen: Worldle-Ergebnis (Emoji-Raster) + Fortschritt-Share (Streak/Gemeistert). verify: 196/196."
+git commit -m "Fix: Login-Fehlermeldung zeigt jetzt lesbaren Text statt {} bei Serverfehlern. verify: 196/196."
 git push origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

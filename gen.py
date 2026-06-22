@@ -6349,9 +6349,9 @@ function togglePw(id,btn){const el=document.getElementById(id);if(\!el)return;co
 function _authErrMsg(err){
   if(!err)return'';
   const m=err?.message||err?.error_description||'';
-  if(m&&m.trim())return m.trim();
-  /* err exists but has no readable message (e.g. {} from 503 body) */
-  return'Verbindungsfehler zum Server.';
+  /* filter out JSON garbage like "{}" or "[]" that Supabase sends on 503/paused */
+  if(m&&m.trim()&&!/^[\[{]/.test(m.trim()))return m.trim();
+  return'Verbindungsfehler zum Server. Bitte versuche es später erneut.';
 }
 /* Phase 27: Register */
 async function doRegister(){
@@ -6430,7 +6430,8 @@ async function doLogin(){
       const _m=error?.message||"";
       S.authError=_m==="Invalid login credentials"?"E-Mail oder Passwort falsch.":
         _m.includes("Email not confirmed")?"Bitte bestätige zuerst deine E-Mail-Adresse!":
-        _m.includes("Too many requests")?"Zu viele Versuche. Bitte kurz warten.":_m||"Verbindungsfehler zum Server.";
+        _m.includes("Too many requests")?"Zu viele Versuche. Bitte kurz warten.":
+        (_m&&!/^[\[{]/.test(_m.trim()))?_m:"Verbindungsfehler zum Server. Bitte versuche es später erneut.";
       return;
     }
     sbUser=data.user;
