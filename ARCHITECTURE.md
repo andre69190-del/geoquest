@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 583 (Stand: Juni 2026)
+**Version:** Phase 584 (Stand: Juli 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.18 MB | 1099 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1279,6 +1279,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **581** | patch_581.py | **Mastery sichtbar (#2, forschungsbasiert): 'Gemeistert'-Zaehler (gq_srs_mastered) wird erhoeht, wenn eine Frage Leitner-Box 5 erreicht; Anzeige im Schwaechen-ueben-Hero ('n faellig . X gemeistert'). #3 (Farbenblind-Feedback) war bereits erfuellt: Antworten zeigen schon Symbole ✓/✗ zusaetzlich zur Farbe.** |
 | **582** | patch_582.py | **Worldle-Modus 'Land erraten' (Umriss + Entfernung/Richtung/Naeherung, 6 Versuche, 50 verifizierte Centroids)** |
 | **583** | patch_583.py | **Erweitertes Teilen: Worldle-Ergebnis (Emoji-Raster) + Fortschritt-Share (Streak/Gemeistert)** |
+| **584** | patch_584.py | **Security: XSS-Escaping Usernamen, Admin via app_metadata statt E-Mail, RLS-Fix-SQL, Security-Header, kanonische URL /play** |
 
 ---
 

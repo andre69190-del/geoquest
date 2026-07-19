@@ -15420,7 +15420,7 @@ function renderBottomNav(){
     {id:"album",  icon:"\u{1F4D4}", lbl:"Album"},
     {id:"stats",  icon:"\u{1F4CA}", lbl:"Stats"},
   ];
-  const isAdmin=sbUser?.email==="andre69190@gmail.com";
+  const isAdmin=sbUser?.app_metadata?.admin===true;
   if(isAdmin)tabs.push({id:"admin",icon:"\u{1F6E1}\uFE0F",lbl:"Admin"});
 return`<nav class="bottom-nav">${tabs.map(t=>`<button class="bn-item${S.tab===t.id?" active":""}" onclick="S.tab='${t.id}';render()"><span class="bn-icon">${t.icon}</span><span class="bn-lbl">${t.lbl}</span></button>`).join("")}</nav>`;
 }
@@ -17157,7 +17157,7 @@ function reportBug(){
   };
 }
 async function loadAdminData(){
-  if(sbUser?.email!=="andre69190@gmail.com")return;
+  if(sbUser?.app_metadata?.admin!==true)return;
   S.adminLoading=true;S.adminData=null;S.adminFeedback=null;render();
   const[{data:sessions},{data:fbRows}]=await Promise.all([
     sb.from("game_sessions").select("*").order("created_at",{ascending:false}).limit(2000),
@@ -17168,7 +17168,7 @@ async function loadAdminData(){
   S.adminLoading=false;render();
 }
 function renderAdminTab(){
-  if(sbUser?.email!=="andre69190@gmail.com")return`<div style="text-align:center;padding:3rem;color:#f87171">⛔ Kein Zugang.</div>`;
+  if(sbUser?.app_metadata?.admin!==true)return`<div style="text-align:center;padding:3rem;color:#f87171">⛔ Kein Zugang.</div>`;
   if(S.adminLoading)return`<div style="text-align:center;padding:3rem;color:var(--text3)">Lade Admin-Daten…</div>`;
   if(!S.adminData){setTimeout(loadAdminData,0);return`<div style="text-align:center;padding:3rem;color:var(--text3)">Lade…</div>`;}
   const rows=S.adminData;
@@ -18795,7 +18795,7 @@ function renderLigaTab(){
       const rc=i===0?'gold':i===1?'silver':i===2?'bronze':'';
       const isMe=sbUser&&r.user_id===sbUser.id;
       const titleBadge=r.current_title&&r.current_title\!=='Erkunder'?`<span style="font-size:.62rem;color:#a78bfa;margin-left:4px">${r.current_title}</span>`:'';
-      return`<div class="lb-row${isMe?' me':''}${i<5?' promo':''}"><span class="lb-rank ${rc}">${r.rank||i+1}</span><span class="lb-name">${r.username||'Anonym'}${titleBadge}</span><span class="lb-score">${Number(r.weekly_score||r.best_score||0).toLocaleString()}</span></div>`;
+      return`<div class="lb-row${isMe?' me':''}${i<5?' promo':''}"><span class="lb-rank ${rc}">${r.rank||i+1}</span><span class="lb-name">${esc(r.username||'Anonym')}${titleBadge}</span><span class="lb-score">${Number(r.weekly_score||r.best_score||0).toLocaleString()}</span></div>`;
     }).join('')}</div>`}`;
 }
 async function loadLiga(){
@@ -18870,12 +18870,12 @@ function renderProfilTab(){
         <button class="btn-p" onclick="doSetNewPassword()" ${S.authLoading?"disabled":""}>${S.authLoading?"Bitte warten …":"🔑 Passwort setzen"}</button>
         <button class="btn-g" style="margin-bottom:0;background:transparent;border:none;color:var(--text3);font-size:.78rem;text-decoration:underline;cursor:pointer" onclick="S.authMode='login';S.authError='';render()">Zurück zum Login</button>
       `:isForgot?`
-        <div class="auth-field"><label>E-MAIL</label><input type="email" placeholder="deine@email.de" value="${S.authEmail}" oninput="S.authEmail=this.value" onkeydown="if(event.key==='Enter')doForgotPassword()"></div>
+        <div class="auth-field"><label>E-MAIL</label><input type="email" placeholder="deine@email.de" value="${esc(S.authEmail)}" oninput="S.authEmail=this.value" onkeydown="if(event.key==='Enter')doForgotPassword()"></div>
         <button class="btn-p" onclick="doForgotPassword()" ${S.authLoading?"disabled":""}>${S.authLoading?"Bitte warten …":"📧 Reset-Link senden"}</button>
         <button class="btn-g" style="margin-bottom:0;background:transparent;border:none;color:var(--text3);font-size:.78rem;text-decoration:underline;cursor:pointer" onclick="S.authMode='login';S.authError='';render()">Zurück zum Login</button>
       `:`
-        ${isReg?`<div class="auth-field"><label>BENUTZERNAME</label><input type="text" placeholder="Dein Spielername" maxlength="20" value="${S.authUsername}" oninput="S.authUsername=this.value"></div>`:""}
-        <div class="auth-field"><label>E-MAIL</label><input type="email" placeholder="deine@email.de" value="${S.authEmail}" oninput="S.authEmail=this.value"></div>
+        ${isReg?`<div class="auth-field"><label>BENUTZERNAME</label><input type="text" placeholder="Dein Spielername" maxlength="20" value="${esc(S.authUsername)}" oninput="S.authUsername=this.value"></div>`:""}
+        <div class="auth-field"><label>E-MAIL</label><input type="email" placeholder="deine@email.de" value="${esc(S.authEmail)}" oninput="S.authEmail=this.value"></div>
         <div class="auth-field"><label>PASSWORT</label><div style="position:relative"><input id="pw-main" type="password" style="padding-right:2.4rem" placeholder="${isReg?"Mind. 6 Zeichen":"••••••"}" value="${S.authPassword}" oninput="S.authPassword=this.value" onkeydown="if(event.key==='Enter'){${isReg?"doRegister":"doLogin"}();}"><button type="button" onclick="togglePw('pw-main',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>
         ${isReg?`<div class="auth-field"><label>PASSWORT BESTÄTIGEN</label><div style="position:relative"><input id="pw-confirm" type="password" style="padding-right:2.4rem" placeholder="Passwort wiederholen" value="${S.authConfirm}" oninput="S.authConfirm=this.value" onkeydown="if(event.key==='Enter')doRegister();"><button type="button" onclick="togglePw('pw-confirm',this)" style="position:absolute;right:.55rem;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text3);font-size:1.1rem;padding:0;line-height:1">\u{1F441}</button></div></div>`:""}
         <button class="btn-p" onclick="${isReg?"doRegister":"doLogin"}()" ${S.authLoading?"disabled":""}>
@@ -18891,7 +18891,7 @@ function renderProfilTab(){
     block1=`<div class="auth-card">
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem">
         <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#10b981,#0891b2);display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:#fff;flex-shrink:0">${name?name[0].toUpperCase():"👤"}</div>
-        <div><div style="font-size:1rem;font-weight:900;color:var(--text);display:flex;align-items:center;gap:6px">${name||"Spieler"}<button onclick="promptNameChange()" title="Namen ändern" style="background:none;border:none;cursor:pointer;font-size:.8rem;color:var(--text3);padding:0;line-height:1;vertical-align:middle;opacity:.65;transition:opacity .15s" onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='.65'">✓</button></div><div style="font-size:.72rem;color:var(--text3)">${sbUser?.email||"Gast-Konto"}</div>${sbProfile?.current_title&&sbProfile.current_title\!=="Erkunder"?`<div style="display:inline-block;margin-top:3px;background:rgba(167,139,250,.15);border:1px solid #a78bfa;border-radius:20px;padding:1px 8px;font-size:.68rem;color:#a78bfa;font-weight:700">${sbProfile.current_title}</div>`:""}</div>
+        <div><div style="font-size:1rem;font-weight:900;color:var(--text);display:flex;align-items:center;gap:6px">${esc(name)||"Spieler"}<button onclick="promptNameChange()" title="Namen ändern" style="background:none;border:none;cursor:pointer;font-size:.8rem;color:var(--text3);padding:0;line-height:1;vertical-align:middle;opacity:.65;transition:opacity .15s" onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='.65'">✓</button></div><div style="font-size:.72rem;color:var(--text3)">${sbUser?.email||"Gast-Konto"}</div>${sbProfile?.current_title&&sbProfile.current_title\!=="Erkunder"?`<div style="display:inline-block;margin-top:3px;background:rgba(167,139,250,.15);border:1px solid #a78bfa;border-radius:20px;padding:1px 8px;font-size:.68rem;color:#a78bfa;font-weight:700">${sbProfile.current_title}</div>`:""}</div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;margin-bottom:.85rem">
         <div style="background:var(--bg3);border-radius:10px;padding:.6rem"><div style="color:#34d399;font-size:1.2rem;font-weight:700">${(sbProfile?.total_score||0).toLocaleString()}</div><div style="color:var(--text3);font-size:.65rem">Punkte</div></div>
@@ -19030,7 +19030,7 @@ function renderProfilTab(){
     <hr style="border:none;border-top:1px solid var(--border);margin:.65rem 0 .75rem">
     <div style="text-align:center;font-size:.62rem;color:var(--text3);line-height:1.9;margin-bottom:.75rem">
       <strong style="color:var(--text2)">GeoQuest</strong> &mdash; Das Geografie-Quiz<br>
-      <a href="mailto:kontakt@geoquest.app" style="color:var(--text3);text-decoration:none">kontakt@geoquest.app</a><br>
+      <a href="mailto:farndt691@gmail.com" style="color:var(--text3);text-decoration:none">farndt691@gmail.com</a><br>
       <span style="cursor:pointer;text-decoration:underline" onclick="showToast('Impressum folgt in Kürze')">Impressum</span> &middot; <span style="cursor:pointer;text-decoration:underline" onclick="showToast('Datenschutz: Keine Weitergabe persönlicher Daten an Dritte.')">Datenschutz</span>
     </div>
   </div>`;
@@ -19164,7 +19164,7 @@ function renderSettingsModal(){
     })()}
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div style="font-weight:700">🚗🚆 ${t('travel_setting')}</div><button onclick="var on=localStorage.getItem('gq_travel_hint')==='1';localStorage.setItem('gq_travel_hint',on?'0':'1');if(!on){_travelWatching=false;_initTravelHint();}render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_travel_hint')==='1'?'An':'Aus'}</button></div>
     <div style="margin-bottom:.75rem"><div style="font-weight:700;margin-bottom:6px">🧒 ${t('kids_grade_label')}</div><div style="display:flex;flex-wrap:wrap;gap:8px">${[['1',t('kids_grade_young')],['2',t('kids_grade_older')],['3',t('kids_grade_t3')],['4',t('kids_grade_t4')]].map(function(o){var cur=(localStorage.getItem('gq_kids_grade')||'2')===o[0];return '<button onclick="localStorage.setItem(\'gq_kids_grade\',\''+o[0]+'\');localStorage.removeItem(\'gq_kid_boost\');render()" style="flex:1 1 46%;padding:.5rem;border-radius:8px;border:none;cursor:pointer;font-weight:700;font-size:.78rem;background:'+(cur?'#10b981':'var(--bg3)')+';color:'+(cur?'#fff':'var(--text)')+'">'+o[1]+'</button>';}).join('')}</div></div>
-    ${(typeof sbUser!=='undefined'&&sbUser&&sbUser.email==='andre69190@gmail.com')?`<div style="border-top:2px solid #6366f1;margin:.5rem 0 .6rem;padding-top:.6rem"><div style="font-weight:800;margin-bottom:6px;color:#6366f1">🛠️ Admin: Altersstufen-Vorschau</div><div style="display:flex;flex-wrap:wrap;gap:6px">${[['0','Erwachsen','0',''],['1','1 · 6–8','1',''],['2','2 · 8–10','2',''],['3','3 · 11–13','3',''],['4','4 · 14–15','4',''],['16','16+ (Boost)','3','2']].map(function(s){var oc="S.settingsModal=false;localStorage.removeItem(\'gq_block_adult\');";oc+= s[0]==='0' ? "localStorage.setItem(\'gq_kids_mode\',\'0\');" : "localStorage.setItem(\'gq_kids_mode\',\'1\');localStorage.setItem(\'gq_kids_grade\',\'"+s[2]+"\');";oc+= s[3] ? "localStorage.setItem(\'gq_kid_boost\',\'"+s[3]+"\');" : "localStorage.removeItem(\'gq_kid_boost\');";oc+="render()";return '<button onclick="'+oc+'" style="flex:1 1 30%;padding:.45rem;border-radius:8px;border:1.5px solid var(--border);background:var(--bg2);color:var(--text);font-weight:700;font-size:.72rem;cursor:pointer">'+s[1]+'</button>';}).join('')}</div><div style="font-size:.66rem;color:var(--text3);margin-top:5px">Setzt Kinder-Modus + Stufe; danach Home öffnen. „16+" = Stufe 3 mit Boost auf Erwachsenen-Inhalte.</div></div>`:''}
+    ${(typeof sbUser!=='undefined'&&sbUser&&sbUser.app_metadata&&sbUser.app_metadata.admin===true)?`<div style="border-top:2px solid #6366f1;margin:.5rem 0 .6rem;padding-top:.6rem"><div style="font-weight:800;margin-bottom:6px;color:#6366f1">🛠️ Admin: Altersstufen-Vorschau</div><div style="display:flex;flex-wrap:wrap;gap:6px">${[['0','Erwachsen','0',''],['1','1 · 6–8','1',''],['2','2 · 8–10','2',''],['3','3 · 11–13','3',''],['4','4 · 14–15','4',''],['16','16+ (Boost)','3','2']].map(function(s){var oc="S.settingsModal=false;localStorage.removeItem(\'gq_block_adult\');";oc+= s[0]==='0' ? "localStorage.setItem(\'gq_kids_mode\',\'0\');" : "localStorage.setItem(\'gq_kids_mode\',\'1\');localStorage.setItem(\'gq_kids_grade\',\'"+s[2]+"\');";oc+= s[3] ? "localStorage.setItem(\'gq_kid_boost\',\'"+s[3]+"\');" : "localStorage.removeItem(\'gq_kid_boost\');";oc+="render()";return '<button onclick="'+oc+'" style="flex:1 1 30%;padding:.45rem;border-radius:8px;border:1.5px solid var(--border);background:var(--bg2);color:var(--text);font-weight:700;font-size:.72rem;cursor:pointer">'+s[1]+'</button>';}).join('')}</div><div style="font-size:.66rem;color:var(--text3);margin-top:5px">Setzt Kinder-Modus + Stufe; danach Home öffnen. „16+" = Stufe 3 mit Boost auf Erwachsenen-Inhalte.</div></div>`:''}
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem"><div><div style="font-weight:700">🔓 ${t('set_adult')}</div><div style="font-size:.72rem;color:var(--text3);margin-top:2px">${t('set_adult_sub')}</div></div><button onclick="var _hp=false;try{_hp=!!localStorage.getItem('gq_kids_pin');}catch(e){}if(_hp){S.pinMode='adultblock';S.pinErr=false;S.pinModal=true;render();}else{var ab=localStorage.getItem('gq_block_adult')==='1';localStorage.setItem('gq_block_adult',ab?'0':'1');render();}" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_block_adult')==='1'?'Aus':'An'}</button></div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div style="font-weight:700;font-size:.82rem;color:var(--text2)">${t('kid_reset')}</div><button onclick="localStorage.removeItem('gq_kid_boost');render()" aria-label="Zurücksetzen" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">↺</button></div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem"><div><div style="font-weight:700">🎯 ${t('practice_setting')}</div><div style="font-size:.72rem;color:var(--text3);margin-top:2px">${t('practice_sub')}</div></div><button onclick="var on=localStorage.getItem('gq_practice')==='1';localStorage.setItem('gq_practice',on?'0':'1');render()" class="btn-g" style="width:auto;padding:.4rem .85rem;margin-bottom:0;font-size:.8rem">${localStorage.getItem('gq_practice')==='1'?'An':'Aus'}</button></div>
@@ -19792,7 +19792,7 @@ import hashlib as _hashlib
 _data_files = sorted('./data/' + f for f in _os.listdir('data') if f.endswith('.json'))
 # Phase 476: index.html NICHT mehr vorab cachen — byte-identisch mit GeoQuest.html
 # (6 MB Duplikat sprengte das Storage-Quota -> QuotaExceededError). /play wird zur Laufzeit gecacht.
-_cache_assets = ['./GeoQuest.html', './manifest.json', './icon.svg'] + _data_files
+_cache_assets = ['/play', './manifest.json', './icon.svg'] + _data_files
 # Phase 294+: Hash basiert auf Datei-INHALTEN (nicht nur Namen) → Cache invalidiert bei jeder Änderung
 _hash_parts = []
 for _a in _cache_assets:
@@ -19813,7 +19813,7 @@ with open('index.html', 'w', encoding='utf-8') as _f_swv:
 # Phase 522: Nur App-Shell vorab cachen (Install schlank); data/*.json werden vom
 # Fetch-Handler bei Bedarf zur Laufzeit gecacht. Hash bleibt ueber ALLE Assets
 # (inkl. Daten) -> CACHE_NAME bumpt bei Datenaenderung, alte Runtime-Caches werden geloescht.
-_precache_assets = ['./GeoQuest.html', './manifest.json', './icon.svg']
+_precache_assets = ['/play', './manifest.json', './icon.svg']
 _assets_js = ',\n  '.join("'" + a + "'" for a in _precache_assets)
 _sw_content = (
     "const CACHE_NAME = '" + _cache_name + "';\n"
@@ -19876,7 +19876,7 @@ _manifest = {
     'name': 'GeoQuest',
     'short_name': 'GeoQuest',
     'description': 'Das ultimative Geographie-Quiz – Städte, Flaggen, Hauptstädte, Flüsse & Sehenswürdigkeiten',
-    'start_url': './GeoQuest.html',
+    'start_url': '/play',
     'display': 'standalone',
     'background_color': '#0f172a',
     'theme_color': '#10b981',

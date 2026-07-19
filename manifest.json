@@ -2,7 +2,7 @@
   "name": "GeoQuest",
   "short_name": "GeoQuest",
   "description": "Das ultimative Geographie-Quiz – Städte, Flaggen, Hauptstädte, Flüsse & Sehenswürdigkeiten",
-  "start_url": "./GeoQuest.html",
+  "start_url": "/play",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#10b981",

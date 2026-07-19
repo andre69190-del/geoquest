@@ -757,3 +757,7 @@ Unabhängiger Subagent-Faktencheck der neuen Daten (geschichte/mythologie/archit
 ## Phase 581 — Mastery-Anzeige (Forschung: Retention)
 **Datum:** 2026-06-13
 SRS: persistenter „Gemeistert"-Zähler (`gq_srs_mastered`) wird erhöht, sobald eine Frage Leitner-Box 5 erreicht (vorher wurde sie nur gelöscht). Anzeige im „Schwächen üben"-Hero: „N fällig · ✅ X gemeistert". i18n DE/EN/PL. — Hinweis: #3 (Farbenblind-Feedback) bereits erfüllt — Antwort-Buttons zeigen ✓/✗ zusätzlich zur Farbe.
+
+## Phase 584 — Security-Fixes (Audit)
+**Datum:** 2026-07-19
+Patch: `patch_584_security_fixes.py` + SQL `584_security_rls_fix.sql`. 1) Stored-XSS behoben: Leaderboard-Usernamen jetzt via `esc()` (dito authUsername/authEmail-Attribute, Profil-Name). 2) Admin-Gating: E-Mail-Vergleich (PII im Client) ersetzt durch `sbUser.app_metadata.admin===true`; SQL setzt Flag + bindet RLS-Admin-Policy an JWT-Claim statt Username 'Andre'. 3) RLS-Leck geschlossen: `feedback_select_own` erlaubte anonymes Lesen ALLER Einträge (`OR auth.uid() IS NULL` entfernt); Längen-Constraints message≤2000/username≤20. 4) vercel.json: Security-Header (XCTO, XFO, Referrer-Policy, Permissions-Policy, HSTS). 5) Kanonische URL: manifest start_url + SW-Precache + Landing-Links auf `/play`; tote Adressen kontakt/feedback@geoquest.app → farndt691@gmail.com. Aufgeräumt: `gen.py.phase442_patched`, leerer „Neuer Ordner", `__pycache__`. ⚠️ SQL muss manuell im Supabase SQL Editor ausgeführt werden, danach neu einloggen (JWT-Claim).
