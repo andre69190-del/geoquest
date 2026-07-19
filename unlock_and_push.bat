@@ -15,6 +15,6 @@ if errorlevel 1 (
 echo.
 git add -A
 git commit -m "Content: Phase 584. Security: XSS-Escaping Usernamen, Admin via app_metadata statt E-Mail, RLS-Fix-SQL, Security-Header, kanonische URL /play. verify: 196/196."
-git push origin main
+git push --force-with-lease origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
