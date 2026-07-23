@@ -1386,8 +1386,8 @@ document.addEventListener('keydown', function(e) {
 
 
 
-const SUPABASE_URL  = "https://lpwcqvxajahiftvwxovq.supabase.co";
-const SUPABASE_ANON = "sb_publishable_HL6cIlPOtVAdkjycaiceGQ_CBNFF-dG";
+const SUPABASE_URL  = "https://supabase.arndt-software.de";
+const SUPABASE_ANON = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NDgxMTAwMCwiZXhwIjo0OTQwNDg0NjAwLCJyb2xlIjoiYW5vbiJ9.kMAlX4dS_sXjH6dsLoICMKnwyHFLAAuEwum7zuJh2DQ";
 /* ADMIN_EMAIL removed – use Supabase trigger instead */
 
 /* PAYMENT CONFIG */
@@ -6191,7 +6191,7 @@ function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://
   }catch(e){console.warn('[GQ] zombieKiller error:',e);}
 })();
 
-const sbOK=SUPABASE_URL.includes("supabase.co");
+const sbOK=SUPABASE_URL.includes("supabase.arndt-software.de");
 let sbAuthPending=sbOK; /* Phase 81: true until getSession() resolves */
 if(sbOK){
   try{
@@ -19843,7 +19843,7 @@ _sw_content = (
     "  );\n"
     "});\n\n"
     "self.addEventListener('fetch', function(e) {\n"
-    "  if (e.request.url.includes('supabase.co')) {\n"
+    "  if (e.request.url.includes('supabase.arndt-software.de')) {\n"
     "    e.respondWith(fetch(e.request).catch(function() {\n"
     "      return new Response('', {status: 503});\n"
     "    }));\n"
