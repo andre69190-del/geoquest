@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-d2f6a852';
+const CACHE_NAME = 'geoquest-972a78b9';
 /* Phase 238/522: App-Shell-Precache (auto-versioned); Daten lazy via fetch-Handler */
 const ASSETS = [
   '/play',
@@ -32,7 +32,7 @@ self.addEventListener('activate', function(e) {
 });
 
 self.addEventListener('fetch', function(e) {
-  if (e.request.url.includes('supabase.co')) {
+  if (e.request.url.includes('supabase.arndt-software.de')) {
     e.respondWith(fetch(e.request).catch(function() {
       return new Response('', {status: 503});
     }));

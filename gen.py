@@ -12012,7 +12012,7 @@ function lq(){
   let q=null,_att=0;
   while(_att<25){
     try{const _c=(GEN[S.mode]||genCityQ)();
-    if(_c&&!S.askedLids.has(_c.lid)){q=_c;break;}}catch(_e){console.warn('[GeoQuest] generator error (mode='+S.mode+'):', _e);}
+    if(_c){var _clid=(_c.lid!=null)?_c.lid:((S.mode||"q")+"_"+(_c.subj!=null?_c.subj:(_c.question!=null?_c.question:(_c.ans!=null?_c.ans:_c.correct))));if(!S.askedLids.has(_clid)){_c.lid=_clid;q=_c;break;}}}catch(_e){console.warn('[GeoQuest] generator error (mode='+S.mode+'):', _e);}
     _att++;
   }
   /* Phase 295: Erschöpfungs-Warnung — hilft beim Debuggen neuer Modi */
