@@ -41,6 +41,25 @@ Pflicht-Workflow nach JEDER Änderung:
    - Konsistenz-Check: Sind ALLE neuen Features gleichzeitig weg, ist es der SW-Cache (eine alte
      index.html). Fehlt nur EIN Feature, ist es ein echter Code-Bug.
 
+HOSTING-STRATEGIE (Stand Phase 584 — geprüft, funktioniert):
+- Repo: GitHub andre69190-del/geoquest, Branch main. Vercel ist mit dem Repo verbunden und
+  deployed JEDEN Push auf main automatisch (~60 s) auf geoquest-web.vercel.app.
+- Statik + Routing über vercel.json (@vercel/static): "/" → landing.html, "/play" → index.html,
+  Catch-all → index.html (SPA). index.html ist eine 1:1-Kopie von GeoQuest.html (gen.py erzeugt beide).
+  Weitere ausgelieferte Dateien: sw.js, manifest.json, icon.svg, cities_data.js, *.json,
+  impressum.html, datenschutz.html, robots.txt, sitemap.xml, Google-Verify-HTML.
+- Backend: Supabase SELBST-GEHOSTET auf https://supabase.arndt-software.de (Login + Cloud-Sync).
+  Fällt der Server aus, ist NUR die Synchronisation betroffen — die App läuft offline über
+  localStorage weiter. URL/Key stecken im Build (kein Vercel-Env nötig).
+- Deploy-Befehl bleibt unlock_and_push.bat: git-Locks löschen → verify.py als Gate (Abbruch bei
+  Fehler) → git add/commit → git push --force-with-lease origin main. Die Commit-Message der .bat
+  wird von post_phase.py automatisch auf die aktuelle Phase gesetzt — nicht von Hand ändern.
+- HINWEIS: Wurde eine Phase schon IN der Session committet, meldet der git-commit-Schritt der .bat
+  "nothing to commit" (Fehlercode). Das ist harmlos — der anschließende push sendet die Commits trotzdem.
+- MUSS etwas geändert werden? Solange Repo=andre69190-del/geoquest, Vercel↔Repo verbunden und
+  supabase.arndt-software.de erreichbar ist: NEIN. Nur bei Wechsel von Domain, Repo oder Supabase-Host
+  anpassen: vercel.json (Routes), Supabase-URL/Key im gen.py-Build, Share-Links (geoquest-web.vercel.app).
+
 Wichtige Dateien zum Lesen:
 - gen.py                    → Haupt-Build-Datei (~1.5 MB JS+Python)
 - geoquest_css.txt          → ECHTE CSS-Quelle! (wird in gen.py geladen) — CSS NICHT in gen.py editieren, die dortigen .mode-card o.ä. sind tote Duplikate
