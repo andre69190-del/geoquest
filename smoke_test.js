@@ -40,7 +40,7 @@ const sandbox = {
   navigator: { language:'de', languages:['de'], onLine:true, userAgent:'node',
     geolocation:{ watchPosition(){}, getCurrentPosition(){} },
     serviceWorker:{ register(){return Promise.resolve();}, addEventListener(){}, getRegistrations(){return Promise.resolve([]);}, getRegistration(){return Promise.resolve(null);}, ready:Promise.resolve({}) } },
-  location: { href:'https://geoquest-web.vercel.app/play', search:'', hash:'', reload(){}, replace(){}, assign(){} },
+  location: { href:'https://geoquest.arndt-software.de/play', search:'', hash:'', reload(){}, replace(){}, assign(){} },
   localStorage: { getItem:k=>(lsMap.has(k)?lsMap.get(k):null), setItem:(k,v)=>lsMap.set(k,String(v)), removeItem:k=>lsMap.delete(k), clear:()=>lsMap.clear() },
   matchMedia: () => ({ matches:false, addEventListener(){}, removeEventListener(){}, addListener(){}, removeListener(){} }),
   fetch: () => Promise.reject(new Error('no-net')),

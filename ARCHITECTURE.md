@@ -1,7 +1,7 @@
 # GeoQuest — Architect's Handbook
 ## Systemdokumentation & Entwicklerhandbuch
 
-**Version:** Phase 584 (Stand: Juli 2026)
+**Version:** Phase 585 (Stand: September 2026)
 **Build:** gen.py → 1.69 MB | GeoQuest.html → 6.18 MB | 1099 Spielmodi | verify: 191/191 | data: 92 JSON
 
 ---
@@ -1280,6 +1280,7 @@ python3 validate_content.py --strict # Exit 1 bei Warnungen (CI-Modus)
 | **582** | patch_582.py | **Worldle-Modus 'Land erraten' (Umriss + Entfernung/Richtung/Naeherung, 6 Versuche, 50 verifizierte Centroids)** |
 | **583** | patch_583.py | **Erweitertes Teilen: Worldle-Ergebnis (Emoji-Raster) + Fortschritt-Share (Streak/Gemeistert)** |
 | **584** | patch_584.py | **Security: XSS-Escaping Usernamen, Admin via app_metadata statt E-Mail, RLS-Fix-SQL, Security-Header, kanonische URL /play** |
+| **585** | patch_585.py | **Self-Hosting-Umstellung auf geoquest.arndt-software.de (URLs, nginx-Config, Deploy-Skripte, Anleitung)** |
 
 ---
 

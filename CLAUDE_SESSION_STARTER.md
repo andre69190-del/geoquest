@@ -12,7 +12,7 @@
 Projekt: GeoQuest – Single-File Web-Quiz-App
 Ordner:  C:\Users\Andre\Desktop\Cowork\Geoquest
 
-Aktueller Stand (Stand: Phase 584):
+Aktueller Stand (Stand: Phase 585):
 - gen.py ist die EINZIGE Build-Quelle — aus ihr wird GeoQuest.html generiert
 - 1099 Spielmodi in MODES-Array (gen.py)
 - 74 JSON-Dateien in data/ (Spielinhalte, extern, per Placeholder geladen)
@@ -41,24 +41,24 @@ Pflicht-Workflow nach JEDER Änderung:
    - Konsistenz-Check: Sind ALLE neuen Features gleichzeitig weg, ist es der SW-Cache (eine alte
      index.html). Fehlt nur EIN Feature, ist es ein echter Code-Bug.
 
-HOSTING-STRATEGIE (Stand Phase 584 — geprüft, funktioniert):
-- Repo: GitHub andre69190-del/geoquest, Branch main. Vercel ist mit dem Repo verbunden und
-  deployed JEDEN Push auf main automatisch (~60 s) auf geoquest-web.vercel.app.
-- Statik + Routing über vercel.json (@vercel/static): "/" → landing.html, "/play" → index.html,
-  Catch-all → index.html (SPA). index.html ist eine 1:1-Kopie von GeoQuest.html (gen.py erzeugt beide).
-  Weitere ausgelieferte Dateien: sw.js, manifest.json, icon.svg, cities_data.js, *.json,
-  impressum.html, datenschutz.html, robots.txt, sitemap.xml, Google-Verify-HTML.
+HOSTING-STRATEGIE (Stand Phase 585 — SELF-HOSTING auf eigenem Server):
+- Frontend: EIGENER SERVER (159.195.159.150, dieselbe Maschine wie Supabase) unter
+  https://geoquest.arndt-software.de, ausgeliefert per nginx. KEIN Vercel mehr fuers Hosting.
 - Backend: Supabase SELBST-GEHOSTET auf https://supabase.arndt-software.de (Login + Cloud-Sync).
-  Fällt der Server aus, ist NUR die Synchronisation betroffen — die App läuft offline über
-  localStorage weiter. URL/Key stecken im Build (kein Vercel-Env nötig).
-- Deploy-Befehl bleibt unlock_and_push.bat: git-Locks löschen → verify.py als Gate (Abbruch bei
-  Fehler) → git add/commit → git push --force-with-lease origin main. Die Commit-Message der .bat
-  wird von post_phase.py automatisch auf die aktuelle Phase gesetzt — nicht von Hand ändern.
-- HINWEIS: Wurde eine Phase schon IN der Session committet, meldet der git-commit-Schritt der .bat
-  "nothing to commit" (Fehlercode). Das ist harmlos — der anschließende push sendet die Commits trotzdem.
-- MUSS etwas geändert werden? Solange Repo=andre69190-del/geoquest, Vercel↔Repo verbunden und
-  supabase.arndt-software.de erreichbar ist: NEIN. Nur bei Wechsel von Domain, Repo oder Supabase-Host
-  anpassen: vercel.json (Routes), Supabase-URL/Key im gen.py-Build, Share-Links (geoquest-web.vercel.app).
+  Faellt der Server aus, ist NUR die Sync betroffen — die App laeuft offline via localStorage weiter.
+  Supabase muss https://geoquest.arndt-software.de als SITE_URL/Redirect-URL erlauben (Auth).
+- nginx-Config, Deploy-Skripte (deploy_selfhost.ps1 / .sh) und Anleitung liegen in deploy/.
+  Routing wie zuvor: "/" -> landing.html, "/play" -> index.html (App), Catch-all -> index.html.
+  index.html = 1:1-Kopie von GeoQuest.html (gen.py erzeugt beide). Docroot: /var/www/geoquest.
+- DEPLOY-WORKFLOW (neu): 1) python3 gen.py  2) python3 verify.py (Gate)  3) Quellcode via
+  unlock_and_push.bat auf GitHub sichern (nur noch Versionierung, NICHT mehr Hosting!)  4) Dateien
+  mit deploy/deploy_selfhost.ps1 (Windows) bzw. .sh auf den Server kopieren (scp/rsync, SSH-Key noetig).
+- Erstes Setup (DNS-A-Record, nginx, certbot-TLS, Supabase-Redirect): siehe deploy/SELFHOST_SETUP.md.
+- vercel.json wird beim Self-Hosting nicht mehr gebraucht (bleibt im Repo, schadet nicht). Die alte
+  geoquest-web.vercel.app bleibt als Fallback bestehen, bis manuell abgeschaltet.
+- MUSS etwas geaendert werden bei Wechsel von Domain/Server/Supabase-Host: Share-Links im gen.py-Build,
+  sitemap.xml/robots.txt/landing/impressum/datenschutz, nginx server_name + Docroot, DNS, Supabase-Redirect,
+  Supabase-URL/Key im gen.py-Build.
 
 Wichtige Dateien zum Lesen:
 - gen.py                    → Haupt-Build-Datei (~1.5 MB JS+Python)

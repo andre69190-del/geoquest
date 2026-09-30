@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 584. Fix Frage-Wiederholungen in Ja/Nein-Modi (Dedup-lid vor Pruefung). verify: 196/196."
+git commit -m "Content: Phase 585. Self-Hosting-Umstellung auf geoquest.arndt-software.de (URLs, nginx-Config, Deploy-Skripte, Anleitung). verify: 196/196."
 git push --force-with-lease origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds
