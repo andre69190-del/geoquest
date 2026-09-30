@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://geoquest.arndt-software.de/:path*",
+      "statusCode": 301
+    }
+  ]
+}

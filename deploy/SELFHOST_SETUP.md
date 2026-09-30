@@ -104,10 +104,23 @@ starten. Beim allerersten Aufruf einmal DevTools → Application → Service Wor
 "Unregister" (alter Cache von der vercel-Domain kann sonst stoeren).
 
 ## Laufender Betrieb / neuer Deploy
-Nach jeder Aenderung wie gewohnt `python3 gen.py` + Tests, Quellcode via
-`unlock_and_push.bat` auf GitHub sichern (dient jetzt nur noch der Versionierung,
-nicht mehr dem Hosting), und zum Veroeffentlichen das Deploy-Skript aus Schritt 5
-laufen lassen.
+Nach jeder Aenderung Quellcode wie gewohnt via `unlock_and_push.bat` auf GitHub
+sichern (dient jetzt nur noch der Versionierung, nicht mehr dem Hosting).
+Zum Veroeffentlichen auf den Server gibt es zwei Wege:
+- **One-Shot (empfohlen):** `deploy_server.bat` im Projektordner doppelklicken —
+  macht Build + verify (Gate) + Upload in einem Rutsch.
+- Oder manuell: `python3 gen.py`, `python3 verify.py`, dann das Skript aus Schritt 5.
+
+## 8) (Optional, SPAETER) Alte Vercel-URL dauerhaft umleiten
+Sobald `https://geoquest.arndt-software.de` live und getestet ist, kannst du die
+alte `geoquest-web.vercel.app` per **301** auf die neue Domain umleiten (fuer alte
+Lesezeichen/Links und SEO):
+1. `deploy/vercel-redirect.json` nach `vercel.json` kopieren (die bisherige ersetzen).
+2. `unlock_and_push.bat` ausfuehren → Vercel deployt dann nur noch den Redirect.
+Danach zeigt jeder Aufruf von geoquest-web.vercel.app/... dauerhaft auf
+geoquest.arndt-software.de/... (Pfad bleibt erhalten).
+WICHTIG: erst NACH dem erfolgreichen Self-Host-Livegang anwenden — sonst leitet die
+alte Seite ins Leere.
 
 ## Rollback
 Die alte Vercel-Seite (`geoquest-web.vercel.app`) bleibt bestehen und funktioniert
