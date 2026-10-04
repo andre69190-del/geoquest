@@ -1,0 +1,8 @@
+# Build-Kontext klein halten (nur Web-Assets kommen per COPY ins Image)
+.git
+__pycache__
+*.pyc
+_archive_patches/
+*.bak_*
+GeoQuest_Spielübersicht.html
+geoquest_css.txt

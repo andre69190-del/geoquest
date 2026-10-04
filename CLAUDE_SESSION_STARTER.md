@@ -41,23 +41,29 @@ Pflicht-Workflow nach JEDER Änderung:
    - Konsistenz-Check: Sind ALLE neuen Features gleichzeitig weg, ist es der SW-Cache (eine alte
      index.html). Fehlt nur EIN Feature, ist es ein echter Code-Bug.
 
-HOSTING-STRATEGIE (Stand Phase 585 — SELF-HOSTING auf eigenem Server):
-- Frontend: EIGENER SERVER (159.195.159.150, dieselbe Maschine wie Supabase) unter
-  https://geoquest.arndt-software.de, ausgeliefert per nginx. KEIN Vercel mehr fuers Hosting.
-- Backend: Supabase SELBST-GEHOSTET auf https://supabase.arndt-software.de (Login + Cloud-Sync).
-  Faellt der Server aus, ist NUR die Sync betroffen — die App laeuft offline via localStorage weiter.
-  Supabase muss https://geoquest.arndt-software.de als SITE_URL/Redirect-URL erlauben (Auth).
-- nginx-Config, Deploy-Skripte (deploy_selfhost.ps1 / .sh) und Anleitung liegen in deploy/.
-  Routing wie zuvor: "/" -> landing.html, "/play" -> index.html (App), Catch-all -> index.html.
-  index.html = 1:1-Kopie von GeoQuest.html (gen.py erzeugt beide). Docroot: /var/www/geoquest.
-- DEPLOY-WORKFLOW (neu): 1) python3 gen.py  2) python3 verify.py (Gate)  3) Quellcode via
-  unlock_and_push.bat auf GitHub sichern (nur noch Versionierung, NICHT mehr Hosting!)  4) Dateien
-  mit deploy/deploy_selfhost.ps1 (Windows) bzw. .sh auf den Server kopieren (scp/rsync, SSH-Key noetig).
-- Erstes Setup (DNS-A-Record, nginx, certbot-TLS, Supabase-Redirect): siehe deploy/SELFHOST_SETUP.md.
-- vercel.json wird beim Self-Hosting nicht mehr gebraucht (bleibt im Repo, schadet nicht). Die alte
-  geoquest-web.vercel.app bleibt als Fallback bestehen, bis manuell abgeschaltet.
-- MUSS etwas geaendert werden bei Wechsel von Domain/Server/Supabase-Host: Share-Links im gen.py-Build,
-  sitemap.xml/robots.txt/landing/impressum/datenschutz, nginx server_name + Docroot, DNS, Supabase-Redirect,
+HOSTING-STRATEGIE (Stand Phase 586 — SELF-HOSTING via COOLIFY):
+- Server: 159.195.159.150 (Hetzner-artiger VPS), User root. Laeuft COOLIFY; der Container
+  "coolify-proxy" (Traefik) haelt Port 80/443 und macht HTTPS/Let's-Encrypt automatisch.
+  Darueber laufen bereits supabase + weitere Apps. KEIN System-nginx, NICHT selbst eins
+  installieren (Port-Konflikt -> wuerde Supabase lahmlegen).
+- Frontend: GeoQuest wird als Coolify-App aus dem GitHub-Repo gebaut (Build Pack: Dockerfile).
+  Dockerfile (Repo-Wurzel) baut ein nginx:alpine-Image mit den statischen Dateien; die
+  Container-nginx-Config liegt in deploy/nginx-container.conf (nur Port 80, Routing+Header+
+  gzip; KEIN TLS — das macht Traefik). Domain in Coolify: https://geoquest.arndt-software.de,
+  Ports Exposes 80. Routing: "/"->landing.html, "/play"->index.html, Catch-all->index.html.
+- Backend: Supabase SELBST-GEHOSTET (supabase.arndt-software.de, ebenfalls in Coolify).
+  Muss https://geoquest.arndt-software.de als SITE_URL/Redirect-URL erlauben (Auth).
+- DNS: Cloudflare; geoquest.arndt-software.de = A 159.195.159.150, "Nur DNS" (NICHT proxied),
+  damit Traefik/Let's-Encrypt sauber laufen.
+- DEPLOY-WORKFLOW: 1) python3 gen.py  2) python3 verify.py (Gate)  3) unlock_and_push.bat
+  (Push auf GitHub)  4) in Coolify "Redeploy" (oder Automatic Deployment an -> Push deployt
+  automatisch). scp/rsync-Skripte (deploy_selfhost.*, deploy_server.bat) werden fuer diesen
+  Coolify-Server NICHT gebraucht.
+- Anleitung: deploy/COOLIFY_SETUP.md (maßgeblich). deploy/SELFHOST_SETUP.md gilt nur fuer
+  Server OHNE Coolify. vercel.json/Vercel wird nicht mehr fuers Hosting gebraucht; alte
+  geoquest-web.vercel.app bleibt Fallback (optional spaeter 301 via deploy/vercel-redirect.json).
+- Bei Wechsel von Domain/Server/Supabase-Host anzupassen: Share-Links im gen.py-Build,
+  sitemap/robots/landing/impressum/datenschutz, Coolify-Domain, DNS, Supabase-Redirect,
   Supabase-URL/Key im gen.py-Build.
 
 Wichtige Dateien zum Lesen:

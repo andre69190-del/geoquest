@@ -1,5 +1,10 @@
 # GeoQuest Self-Hosting — geoquest.arndt-software.de
 
+> ⚠️ HINWEIS: Andres Server läuft mit **Coolify** (Traefik hält Port 80/443). Für diesen
+> Server gilt **`deploy/COOLIFY_SETUP.md`** — NICHT die nginx/certbot-Schritte unten.
+> Diese Datei hier ist nur für einen Server OHNE Coolify (eigenes nginx auf 80/443).
+
+
 Ziel: Die App laeuft komplett auf deinem eigenen Server (dieselbe Maschine wie
 `supabase.arndt-software.de`, IP **159.195.159.150**) unter
 **https://geoquest.arndt-software.de** — kein Vercel mehr.
