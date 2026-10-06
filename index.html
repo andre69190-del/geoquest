@@ -184875,7 +184875,7 @@ async function loadGameData(){
   const topoRaw=await safeFetch('./world-110m.json',       'Lade Weltkarte…',98);
   if(topoRaw)window.WORLD_TOPO=topoRaw;
 
-  try{fetch('./license_plates.json').then(function(r){return r.ok?r.json():null;}).then(function(p){if(p){try{PLATES_DATA=parsePlates(Array.isArray(p)?p:(p&&p.results&&p.results.bindings||[]));}catch(_e){}}}).catch(function(){});}catch(_e){} /* Phase 531: Kennzeichen nicht-blockierend */
+  try{fetch('./license_plates.json').then(function(r){return r.ok?r.json():null;}).then(function(p){if(p){try{PLATES_DATA=parsePlates(Array.isArray(p)?p:(p&&p.results&&p.results.bindings||[]));console.log('GeoQuest plates (nachgeladen):',PLATES_DATA.length);}catch(_e){}}}).catch(function(){});}catch(_e){} /* Phase 531: Kennzeichen nicht-blockierend */
   CURR_REAL   = parseCurr(cRaw);
   const _cps=parseCaps(capRaw);if(_cps.length>0)CAPS_POP=_cps; /* Phase 95: guard empty overwrite */
   RIVERS_REAL = parseRivers(rRaw);
@@ -184884,9 +184884,9 @@ async function loadGameData(){
   const _ar=parseArea(arRaw);if(_ar.length>0)AREA_DATA=_ar; /* Phase 95: guard empty overwrite */
 
   prog(100);
-  const loaded=[PLATES_DATA.length,'plates',CURR_REAL.length,'curr',CAPS_POP.length,'caps',RIVERS_REAL.length,'rivers',Object.keys(NEIGHBORS).length,'nb',AREA_DATA.length,'areas'];
+  const loaded=[CURR_REAL.length,'curr',CAPS_POP.length,'caps',RIVERS_REAL.length,'rivers',Object.keys(NEIGHBORS).length,'nb',AREA_DATA.length,'areas'];
   console.log('GeoQuest data:',loaded.join(' '));
-  if(!PLATES_DATA.length||!CURR_REAL.length||!CAPS_POP.length){
+  if(!CURR_REAL.length||!CAPS_POP.length){ /* Kennzeichen laden asynchron nach -> nicht pruefen (sonst Fehlalarm) */
     /* core files missing – show toast after render but still render */
     setTimeout(()=>showToast('Fehler beim Laden einiger Datensätze.'),800);
   }
