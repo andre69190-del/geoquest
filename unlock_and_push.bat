@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 echo.
 git add -A
-git commit -m "Content: Phase 588. Fehlalarm-Toast beim Start behoben (Kennzeichen laden async, nicht mehr in Start-Pruefung). verify: 196/196."
+git commit -m "Content: Phase 589. SW: Seiten network-first + Cache-Version ueber App-HTML/Web-Assets (alte Seiten hingen im Cache). verify: 196/196."
 git push --force-with-lease origin main
 echo.
 echo Done! Vercel will deploy in ~60 seconds

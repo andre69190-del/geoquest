@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-972a78b9';
+const CACHE_NAME = 'geoquest-6cd84f33';
 /* Phase 238/522: App-Shell-Precache (auto-versioned); Daten lazy via fetch-Handler */
 const ASSETS = [
   '/play',
@@ -38,6 +38,21 @@ self.addEventListener('fetch', function(e) {
     e.respondWith(fetch(e.request).catch(function() {
       return new Response('', {status: 503});
     }));
+    return;
+  }
+  /* Phase 589: Seitenaufrufe network-first (immer aktuelle Seite/Routing), offline aus Cache */
+  if (e.request.mode === 'navigate') {
+    e.respondWith(
+      fetch(e.request).then(function(response) {
+        if (response && response.status === 200) {
+          var copy = response.clone();
+          caches.open(CACHE_NAME).then(function(cache) { cache.put(e.request, copy).catch(function() {}); });
+        }
+        return response;
+      }).catch(function() {
+        return caches.match(e.request).then(function(r) { return r || caches.match('/play'); });
+      })
+    );
     return;
   }
   e.respondWith(

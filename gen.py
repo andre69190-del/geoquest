@@ -19802,6 +19802,13 @@ for _a in _cache_assets:
             _hash_parts.append(_f.read())
     else:
         _hash_parts.append(_a.encode())
+# Phase 589: Hash zusaetzlich ueber App-HTML (vor Versions-Injektion) + Root-Web-Assets,
+# sonst bleibt CACHE_NAME bei Seiten-/Code-Aenderungen gleich und alte Seiten haengen im SW-Cache.
+_hash_parts.append(HTML.encode('utf-8'))
+for _rf in sorted(_os.listdir('.')):
+    if _rf in ('landing.html','impressum.html','datenschutz.html','cities_data.js') or (_rf.endswith('.json') and _rf != 'vercel.json'):
+        with open(_rf, 'rb') as _f:
+            _hash_parts.append(_f.read())
 _cache_hash = _hashlib.md5(b''.join(_hash_parts)).hexdigest()[:8]
 _cache_name = 'geoquest-' + _cache_hash
 # Phase 295: SW_VER automatisch aus Cache-Hash injizieren
@@ -19849,6 +19856,21 @@ _sw_content = (
     "    e.respondWith(fetch(e.request).catch(function() {\n"
     "      return new Response('', {status: 503});\n"
     "    }));\n"
+    "    return;\n"
+    "  }\n"
+    "  /* Phase 589: Seitenaufrufe network-first (immer aktuelle Seite/Routing), offline aus Cache */\n"
+    "  if (e.request.mode === 'navigate') {\n"
+    "    e.respondWith(\n"
+    "      fetch(e.request).then(function(response) {\n"
+    "        if (response && response.status === 200) {\n"
+    "          var copy = response.clone();\n"
+    "          caches.open(CACHE_NAME).then(function(cache) { cache.put(e.request, copy).catch(function() {}); });\n"
+    "        }\n"
+    "        return response;\n"
+    "      }).catch(function() {\n"
+    "        return caches.match(e.request).then(function(r) { return r || caches.match('/play'); });\n"
+    "      })\n"
+    "    );\n"
     "    return;\n"
     "  }\n"
     "  e.respondWith(\n"

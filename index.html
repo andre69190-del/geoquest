@@ -10007,7 +10007,7 @@ function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://
 /* Phase 97-1: Zombie-SW-Killer – läuft vor Supabase-Init */
 /* Tötet veraltete Service Worker, die Updates blockieren   */
 (function _zombieKiller(){
-  var SW_VER='gq-972a78b9',LS_KEY='__gq_sw_ver'; /* Phase 295: auto-injected by gen.py */
+  var SW_VER='gq-6cd84f33',LS_KEY='__gq_sw_ver'; /* Phase 295: auto-injected by gen.py */
   try{
     if(localStorage.getItem(LS_KEY)===SW_VER)return; /* aktuell – nichts zu tun */
     if(!('serviceWorker' in navigator)){localStorage.setItem(LS_KEY,SW_VER);return;}
