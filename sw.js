@@ -32,6 +32,8 @@ self.addEventListener('activate', function(e) {
 });
 
 self.addEventListener('fetch', function(e) {
+  /* nur GET + http(s) cachen (chrome-extension:// etc. -> Cache-API wirft) */
+  if (e.request.method !== 'GET' || !/^https?:/.test(e.request.url)) return;
   if (e.request.url.includes('supabase.arndt-software.de')) {
     e.respondWith(fetch(e.request).catch(function() {
       return new Response('', {status: 503});
@@ -45,11 +47,14 @@ self.addEventListener('fetch', function(e) {
         if (!response || response.status !== 200) return response;
         var clone = response.clone();
         caches.open(CACHE_NAME).then(function(cache) {
-          cache.put(e.request, clone);
+          cache.put(e.request, clone).catch(function() {});
         });
         return response;
       }).catch(function() {
-        return caches.match('./GeoQuest.html');
+        if (e.request.mode === 'navigate') {
+          return caches.match('/play').then(function(r) { return r || caches.match('./index.html'); });
+        }
+        return new Response('', {status: 504});
       });
     })
   );

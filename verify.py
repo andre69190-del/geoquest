@@ -205,7 +205,7 @@ else:
     else:
         ok("sw.js: CACHE_NAME hash-version present")
     # Phase 522: App-Shell wird vorab gecacht; data/*.json lazy via fetch-Handler.
-    shell = ["./GeoQuest.html", "./manifest.json", "./icon.svg"]
+    shell = ["'/play'", "./manifest.json", "./icon.svg"]  # /play = App-Shell (GeoQuest.html wird nicht ausgeliefert)
     missing_shell = [a for a in shell if a not in sw]
     if missing_shell:
         fail("sw.js: App-Shell fehlt im Precache: " + str(missing_shell))

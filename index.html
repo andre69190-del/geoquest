@@ -10040,7 +10040,7 @@ let sbAuthPending=sbOK; /* Phase 81: true until getSession() resolves */
 if(sbOK){
   try{
     /* Phase 100: auth.lock bypass – verhindert navigator.locks Deadlock bei _initialize() */
-    sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON,{auth:{lock:async function(n,t,fn){return await fn();}}});
+    sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON);
     initAuth();
   }catch(e){
     console.error("Supabase init failed:",e);

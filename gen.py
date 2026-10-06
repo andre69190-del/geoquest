@@ -6196,7 +6196,7 @@ let sbAuthPending=sbOK; /* Phase 81: true until getSession() resolves */
 if(sbOK){
   try{
     /* Phase 100: auth.lock bypass – verhindert navigator.locks Deadlock bei _initialize() */
-    sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON,{auth:{lock:async function(n,t,fn){return await fn();}}});
+    sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON);
     initAuth();
   }catch(e){
     console.error("Supabase init failed:",e);
@@ -19843,6 +19843,8 @@ _sw_content = (
     "  );\n"
     "});\n\n"
     "self.addEventListener('fetch', function(e) {\n"
+    "  /* nur GET + http(s) cachen (chrome-extension:// etc. -> Cache-API wirft) */\n"
+    "  if (e.request.method !== 'GET' || !/^https?:/.test(e.request.url)) return;\n"
     "  if (e.request.url.includes('supabase.arndt-software.de')) {\n"
     "    e.respondWith(fetch(e.request).catch(function() {\n"
     "      return new Response('', {status: 503});\n"
@@ -19856,11 +19858,14 @@ _sw_content = (
     "        if (!response || response.status !== 200) return response;\n"
     "        var clone = response.clone();\n"
     "        caches.open(CACHE_NAME).then(function(cache) {\n"
-    "          cache.put(e.request, clone);\n"
+    "          cache.put(e.request, clone).catch(function() {});\n"
     "        });\n"
     "        return response;\n"
     "      }).catch(function() {\n"
-    "        return caches.match('./GeoQuest.html');\n"
+    "        if (e.request.mode === 'navigate') {\n"
+    "          return caches.match('/play').then(function(r) { return r || caches.match('./index.html'); });\n"
+    "        }\n"
+    "        return new Response('', {status: 504});\n"
     "      });\n"
     "    })\n"
     "  );\n"
