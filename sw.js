@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geoquest-6cd84f33';
+const CACHE_NAME = 'geoquest-1e9360d6';
 /* Phase 238/522: App-Shell-Precache (auto-versioned); Daten lazy via fetch-Handler */
 const ASSETS = [
   '/play',

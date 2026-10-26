@@ -761,3 +761,11 @@ SRS: persistenter „Gemeistert"-Zähler (`gq_srs_mastered`) wird erhöht, sobal
 ## Phase 584 — Security-Fixes (Audit)
 **Datum:** 2026-07-19
 Patch: `patch_584_security_fixes.py` + SQL `584_security_rls_fix.sql`. 1) Stored-XSS behoben: Leaderboard-Usernamen jetzt via `esc()` (dito authUsername/authEmail-Attribute, Profil-Name). 2) Admin-Gating: E-Mail-Vergleich (PII im Client) ersetzt durch `sbUser.app_metadata.admin===true`; SQL setzt Flag + bindet RLS-Admin-Policy an JWT-Claim statt Username 'Andre'. 3) RLS-Leck geschlossen: `feedback_select_own` erlaubte anonymes Lesen ALLER Einträge (`OR auth.uid() IS NULL` entfernt); Längen-Constraints message≤2000/username≤20. 4) vercel.json: Security-Header (XCTO, XFO, Referrer-Policy, Permissions-Policy, HSTS). 5) Kanonische URL: manifest start_url + SW-Precache + Landing-Links auf `/play`; tote Adressen kontakt/feedback@geoquest.app → farndt691@gmail.com. Aufgeräumt: `gen.py.phase442_patched`, leerer „Neuer Ordner", `__pycache__`. ⚠️ SQL muss manuell im Supabase SQL Editor ausgeführt werden, danach neu einloggen (JWT-Claim).
+
+## Phase 590 — Kennzeichen-Spotter: deutsche Altkennzeichen
+**Datum:** 2026-10-26
+Patch: `patch_590_de_kennzeichen.py` (nur `license_plates.json`). Quelle: de.wikipedia „Liste der Kfz-Kennzeichen in Deutschland" (Stand 1.12.2023) + „Liste der deutschen Kfz-Kennzeichen, die nicht mehr ausgegeben werden". +52 fehlende aktuelle Codes (u. a. AH, BOH, BE, BR, LP, NEU, Behördenkennzeichen BD/X/BWL/NRW …), +39 vollständig ausgelaufene Altkennzeichen (z. B. HÜN, LÜD, JEV, FH). 135 Phantom-Codes entfernt (Wikidata-IDs, ausländische Codes wie NIT/REZ, Seriennummern). Deutschland: 787 Codes.
+
+## Phase 591 — Kennzeichen-Spotter: Auslands-Daten bereinigt
+**Datum:** 2026-10-26
+Patch: `patch_591_ausland_kennzeichen.py`. Web-verifizierte Listen: Frankreich 101 Départements (statt Datenmüll), Kroatien 34+5 alte Codes, Slowenien 11, Bulgarien 28 Bezirke (Lateinschrift), Griechenland → nur Nationalkennzeichen (Liste war erfunden). Italien: Fremd-Codes 16/IT-AG/ROMA/I raus; Rumänien: CJ-N/RO raus; Österreich: BA (Bad Aussee) ergänzt. gen.py: Italien-Hinweis korrigiert (Provinz im blauen Feld rechts, Buchstaben links = landesweite Seriennummer; Vorschau `tp:'fr'`).

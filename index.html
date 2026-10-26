@@ -10007,7 +10007,7 @@ function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://
 /* Phase 97-1: Zombie-SW-Killer – läuft vor Supabase-Init */
 /* Tötet veraltete Service Worker, die Updates blockieren   */
 (function _zombieKiller(){
-  var SW_VER='gq-6cd84f33',LS_KEY='__gq_sw_ver'; /* Phase 295: auto-injected by gen.py */
+  var SW_VER='gq-1e9360d6',LS_KEY='__gq_sw_ver'; /* Phase 295: auto-injected by gen.py */
   try{
     if(localStorage.getItem(LS_KEY)===SW_VER)return; /* aktuell – nichts zu tun */
     if(!('serviceWorker' in navigator)){localStorage.setItem(LS_KEY,SW_VER);return;}
@@ -181040,7 +181040,7 @@ function renderCollectionScreen(){
     '\u00d6sterreich':{ph:'K\u00fcrzel (z.B. W, S, I...)',info:'1\u20133 Buchst. links = Bezirk',tp:'de',ex:'W',lbl:'Das W vorne steht f\u00fcr Stadt/Bezirk',cc:'A',nums:'12345 AB'},
     'Schweiz':{ph:'Kanton (z.B. AG, ZH, BE...)',info:'2-Buchstaben Kantonskürzel eingeben',tp:'ch',ex:'AG',lbl:'AG = Kanton Aargau',cc:'CH',nums:'123 456'},
     'Frankreich':{ph:'D\u00e9partement (z.B. 75, 13...)',info:'2-stellige D\u00e9partement-Nummer rechts',tp:'fr',ex:'75',lbl:'Die 75 rechts steht f\u00fcr das D\u00e9partement',cc:'F',nums:'AB-123-CD'},
-    'Italien':{ph:'K\u00fcrzel (z.B. RM, MI...)',info:'2 Buchst. links = Provinz',tp:'de',ex:'RM',lbl:'RM steht f\u00fcr Rom',cc:'I',nums:'RM 123 AB'},
+    'Italien':{ph:'Provinz (z.B. RM, MI...)',info:'Provinz-K\u00fcrzel im blauen Feld rechts (freiwillig) \u2013 die Buchstaben links sind eine landesweite Seriennummer',tp:'fr',ex:'RM',lbl:'RM rechts steht f\u00fcr die Provinz Rom',cc:'I',nums:'AB 123 CD'},
     'Polen':{ph:'K\u00fcrzel (z.B. W, KR...)',info:'Links = Woiwodschaft/Stadt-K\u00fcrzel',tp:'de',ex:'W',lbl:'W steht f\u00fcr Warschau',cc:'PL',nums:'KR 12345'},
     'Rum\u00e4nien':{ph:'K\u00fcrzel (z.B. B, CJ...)',info:'1\u20132 Buchst. links = Bezirk',tp:'de',ex:'B',lbl:'B steht f\u00fcr Bukarest',cc:'RO',nums:'CJ 12 ABC'},
     'Bulgarien':{ph:'K\u00fcrzel (z.B. C, PB...)',info:'Buchst. links = Region',tp:'de',ex:'C',lbl:'C steht f\u00fcr Sofia',cc:'BG',nums:'PB 1234 AB'},
