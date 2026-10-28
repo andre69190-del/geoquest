@@ -96,23 +96,23 @@
 
   <nav>
     <div class="nav-inner">
-      <a href="landing.html" class="nav-logo">🌍 GeoQuest</a>
-      <a href="landing.html" class="nav-back">← Zurück zur Startseite</a>
+      <a href="/" class="nav-logo">🌍 GeoQuest</a>
+      <a href="/" class="nav-back">← Zurück zur Startseite</a>
     </div>
   </nav>
 
   <div class="page-wrap">
     <h1 class="page-title">Datenschutzerklärung</h1>
-    <p class="page-meta">Gemäß DSGVO (EU) 2016/679 · Stand: Juni 2026</p>
+    <p class="page-meta">Gemäß DSGVO (EU) 2016/679 · Stand: Oktober 2026</p>
 
     <nav class="toc" aria-label="Inhaltsverzeichnis">
       <h2>Inhalt</h2>
       <ol>
         <li><a href="#s1">Verantwortlicher</a></li>
         <li><a href="#s2">Grundsätze der Datenverarbeitung</a></li>
-        <li><a href="#s3">Hosting & Server-Logs (Vercel)</a></li>
+        <li><a href="#s3">Hosting, Server-Logs &amp; externe Inhalte</a></li>
         <li><a href="#s4">Lokale Speicherung (localStorage)</a></li>
-        <li><a href="#s5">Optionale Cloud-Funktion (Supabase)</a></li>
+        <li><a href="#s5">Optionale Cloud-Funktion (Konto)</a></li>
         <li><a href="#s6">Keine Tracking-Cookies, kein Analytics</a></li>
         <li><a href="#s7">Deine Rechte nach DSGVO</a></li>
         <li><a href="#s8">Datensicherheit</a></li>
@@ -152,30 +152,45 @@
 
     <!-- 3 -->
     <div class="section" id="s3">
-      <h2>3. Hosting & Server-Logs (Vercel)</h2>
+      <h2>3. Hosting, Server-Logs &amp; externe Inhalte</h2>
       <p>
-        GeoQuest wird über <strong style="color:var(--text-primary);">Vercel Inc.</strong>
-        (440 N Barranca Ave #4133, Covina, CA 91723, USA) gehostet.
-        Bei jedem Seitenaufruf erfasst Vercel automatisch technische Verbindungsdaten:
+        GeoQuest läuft auf einem selbst betriebenen Server bei der
+        <strong style="color:var(--text-primary);">netcup GmbH</strong>
+        (Daimlerstraße 25, 76185 Karlsruhe, Rechenzentrum in Deutschland).
+        Bei jedem Seitenaufruf verarbeitet der Webserver technisch notwendige Verbindungsdaten:
       </p>
       <ul>
-        <li>IP-Adresse (anonymisiert gespeichert)</li>
+        <li>IP-Adresse</li>
         <li>Browsertyp und Betriebssystem</li>
         <li>Aufgerufene URL und Zeitstempel</li>
         <li>HTTP-Statuscode und übertragene Datenmenge</li>
       </ul>
       <p>
-        Diese Daten dienen ausschließlich der Gewährleistung des technischen Betriebs und werden nicht
-        an Dritte weitergegeben. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse
-        am sicheren Betrieb der Website).
+        Diese Daten dienen ausschließlich der Auslieferung und Sicherheit der Website, werden nicht
+        ausgewertet und nicht an Dritte weitergegeben. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO
+        (berechtigtes Interesse am sicheren Betrieb). Sie werden nur so lange gespeichert, wie es dafür erforderlich ist.
+      </p>
+      <h3>Nachgeladene Programmbibliotheken und Bilder</h3>
+      <p>
+        Für einige Funktionen lädt die App Dateien direkt von fremden Servern. Dabei erhält der jeweilige
+        Anbieter technisch bedingt deine IP-Adresse und Browser-Kennung; weitere Daten werden nicht übermittelt:
+      </p>
+      <ul>
+        <li><strong>jsDelivr</strong> (Programmbibliotheken für Karten und Anmeldung: d3, topojson, supabase-js) –
+          betrieben über Netzwerke von Cloudflare und Fastly (USA)</li>
+        <li><strong>flagcdn.com</strong> (Länderflaggen als Bilder)</li>
+        <li><strong>Wikimedia Commons</strong> (Wappen-Bilder im Wappen-Modus) – Wikimedia Foundation, USA</li>
+      </ul>
+      <p>
+        Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionsfähigen,
+        schnell ladenden App). Soweit dabei Daten in die USA gelangen, stützt sich die Übermittlung auf das
+        EU-US Data Privacy Framework bzw. die Standardvertragsklauseln der EU-Kommission. Du kannst dem
+        nach Art. 21 DSGVO widersprechen; die betroffenen Funktionen stehen dann nicht zur Verfügung.
       </p>
       <p>
-        Vercel ist nach dem EU-US Data Privacy Framework zertifiziert. Weitere Infos:
-        <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">vercel.com/legal/privacy-policy</a>
+        Das Herkunftsland für länderbezogene Vorschläge wird nur aus der Spracheinstellung deines Browsers
+        abgeleitet. Dafür wird kein externer Dienst aufgerufen.
       </p>
-      <div class="info-box">
-        <p><strong>Speicherdauer:</strong> Server-Logs werden automatisch nach 30 Tagen gelöscht.</p>
-      </div>
     </div>
 
     <!-- 4 -->
@@ -214,14 +229,14 @@
 
     <!-- 5 -->
     <div class="section" id="s5">
-      <h2>5. Optionale Cloud-Funktion (Supabase)</h2>
+      <h2>5. Optionale Cloud-Funktion (Konto)</h2>
       <p>
         GeoQuest bietet eine <em>freiwillige</em> Registrierungsmöglichkeit für ein globales Leaderboard
-        und geräteübergreifende Score-Synchronisation. Diese Funktion nutzt
-        <strong style="color:var(--text-primary);">Supabase</strong>
-        (Supabase Inc., 970 Toa Payoh North, Singapur / USA).
-        Die Datenübertragung in die USA erfolgt auf Basis der
-        Standardvertragsklauseln der EU-Kommission (SCC, Beschluss 2021/914/EU).
+        und geräteübergreifende Score-Synchronisation. Dafür nutzt GeoQuest eine
+        <strong style="color:var(--text-primary);">selbst betriebene Supabase-Instanz</strong>
+        (Open-Source-Software) auf unserem eigenen Server bei netcup in Deutschland
+        (supabase.arndt-software.de). Es findet keine Übermittlung an Supabase Inc. oder in Drittländer statt.
+        Das Konto gilt für alle Apps auf arndt-software.de (z.&nbsp;B. auch Polski Szlak).
       </p>
       <h3>Welche Daten werden bei Registrierung verarbeitet?</h3>
       <ul>
@@ -237,10 +252,8 @@
         <li>Dein Account kann jederzeit auf Anfrage gelöscht werden</li>
       </ul>
       <p>
-        Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch freiwillige Registrierung).
-        Supabase ist nach dem EU-US Data Privacy Framework zertifiziert.
-        Datenschutzerklärung Supabase:
-        <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der von dir gewünschten Konto-Funktion).
+        Für Bestätigungs- und Passwort-Mails wird deine E-Mail-Adresse an den von uns genutzten E-Mail-Versand übergeben.
       </p>
       <div class="info-box">
         <p>
@@ -331,12 +344,12 @@
     </div>
 
     <p style="margin-top:3rem; font-size:0.85rem; color:var(--text-secondary);">
-      Stand: Juni 2026 · <a href="impressum.html">Impressum</a>
+      Stand: Oktober 2026 · <a href="impressum.html">Impressum</a>
     </p>
   </div>
 
   <footer>
-    <p>© 2024–2026 GeoQuest · <a href="landing.html">Startseite</a> · <a href="impressum.html">Impressum</a></p>
+    <p>© 2024–2026 GeoQuest · <a href="/">Startseite</a> · <a href="impressum.html">Impressum</a></p>
   </footer>
 
 </body>

@@ -7,6 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>GeoQuest – Das Geografie-Quiz</title>
+<link rel="canonical" href="https://geoquest.arndt-software.de/play">
 <meta name="description" content="GeoQuest – Das Geografie-Quiz. Erkenne Länder an Flaggen, Kennzeichen und Hauptstädten. Sammle Stempel und steige in der Liga auf!">
 <meta property="og:title" content="GeoQuest – Das Geografie-Quiz">
 <meta property="og:description" content="Flags, Kennzeichen, Hauptstädte – teste dein Geografie-Wissen kostenlos!">
@@ -10007,7 +10008,7 @@ function flagOf(name){const cc=ccFromCountry(name);return cc?`<img src="https://
 /* Phase 97-1: Zombie-SW-Killer – läuft vor Supabase-Init */
 /* Tötet veraltete Service Worker, die Updates blockieren   */
 (function _zombieKiller(){
-  var SW_VER='gq-1e9360d6',LS_KEY='__gq_sw_ver'; /* Phase 295: auto-injected by gen.py */
+  var SW_VER='gq-c058893f',LS_KEY='__gq_sw_ver'; /* Phase 295: auto-injected by gen.py */
   try{
     if(localStorage.getItem(LS_KEY)===SW_VER)return; /* aktuell – nichts zu tun */
     if(!('serviceWorker' in navigator)){localStorage.setItem(LS_KEY,SW_VER);return;}
@@ -184481,7 +184482,7 @@ function renderProfilTab(){
     <div style="text-align:center;font-size:.62rem;color:var(--text3);line-height:1.9;margin-bottom:.75rem">
       <strong style="color:var(--text2)">GeoQuest</strong> &mdash; Das Geografie-Quiz<br>
       <a href="mailto:farndt691@gmail.com" style="color:var(--text3);text-decoration:none">farndt691@gmail.com</a><br>
-      <span style="cursor:pointer;text-decoration:underline" onclick="showToast('Impressum folgt in Kürze')">Impressum</span> &middot; <span style="cursor:pointer;text-decoration:underline" onclick="showToast('Datenschutz: Keine Weitergabe persönlicher Daten an Dritte.')">Datenschutz</span>
+      <a href="/impressum.html" style="color:inherit;text-decoration:underline">Impressum</a> &middot; <a href="/datenschutz.html" style="color:inherit;text-decoration:underline">Datenschutz</a>
     </div>
   </div>`;
 
@@ -185005,12 +185006,14 @@ window.addEventListener('online',function(){S.isOffline=false;render();syncOffli
 }
 async function detectUserCountry(){
   try{
-    const ctrl=new AbortController();
-    const tid=setTimeout(()=>ctrl.abort(),6000);
-    const res=await fetch('https://ipapi.co/json/',{signal:ctrl.signal,cache:'no-store'});
-    clearTimeout(tid);
-    if(!res.ok){console.warn('[GQ] ipapi.co HTTP '+res.status+' – Ländererkennung übersprungen');return;}
-    const d=await res.json();
+    /* Datenschutz (Okt 2026): kein externer IP-Dienst mehr – Land nur aus der Browser-Sprache */
+    const _langs=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||''];
+    let _cc0='';
+    for(const _l of _langs){const _p=String(_l||'').replace('_','-').split('-');if(_p[1]&&_p[1].length===2){_cc0=_p[1].toUpperCase();break;}}
+    if(!_cc0){const _b=String(_langs[0]||'').slice(0,2).toLowerCase();_cc0=({de:'DE',fr:'FR',es:'ES',it:'IT',nl:'NL',pt:'PT',pl:'PL',ro:'RO',hu:'HU',cs:'CZ',sk:'SK',hr:'HR',sl:'SI',bg:'BG',el:'GR',da:'DK',sv:'SE',fi:'FI',et:'EE',lv:'LV',lt:'LT',mt:'MT',en:'GB'})[_b]||'';}
+    if(!_cc0)return;
+    let _en='';try{_en=new Intl.DisplayNames(['en'],{type:'region'}).of(_cc0)||'';}catch(_e){}
+    const d={country_code:_cc0,country_name:_en};
     const enName=d.country_name||'';
     const deCountry=_GQ_IP_DE_MAP[enName]||enName;
     if(!deCountry)return;
@@ -185051,7 +185054,7 @@ async function detectUserCountry(){
     }
     if(known&&last!==deCountry){showLocationBanner(deCountry);}
   }catch(e){
-    console.warn('[GQ] detectUserCountry fehlgeschlagen (ipapi.co nicht erreichbar):',e?.message||e);
+    console.warn('[GQ] detectUserCountry fehlgeschlagen:',e?.message||e);
   }
 }
 

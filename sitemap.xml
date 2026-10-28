@@ -1,44 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Hauptseite / Landing Page -->
   <url>
     <loc>https://geoquest.arndt-software.de/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-28</lastmod>
     <priority>1.0</priority>
   </url>
-
-
-  <!-- Game App -->
   <url>
     <loc>https://geoquest.arndt-software.de/play</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
   </url>
-  <!-- Landing Page explizit -->
-  <url>
-    <loc>https://geoquest.arndt-software.de/landing.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Impressum -->
-  <url>
-    <loc>https://geoquest.arndt-software.de/impressum.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- Datenschutz -->
-  <url>
-    <loc>https://geoquest.arndt-software.de/datenschutz.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
 </urlset>
